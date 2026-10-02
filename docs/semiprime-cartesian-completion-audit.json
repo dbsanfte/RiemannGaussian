@@ -1,0 +1,1455 @@
+{
+  "status": "Cartesian detector checked; literal centre transport is unresolved",
+  "universal_sixth_root_factorisation_proved": false,
+  "seed": 2026100487,
+  "repeats": 3,
+  "timing_scope": "complete constant-centre detector including root lists and GCD; not factoring",
+  "reference_label_usage": "generation and descriptive labels only; no hidden input to detector",
+  "inputs": [
+    {
+      "kind": "fresh",
+      "n": 2829641461,
+      "bits": 32,
+      "reference_primes": [
+        52937,
+        53453
+      ],
+      "curvature": {
+        "sixth_budget": 38,
+        "step": 2,
+        "corners": [
+          [
+            29,
+            33
+          ],
+          [
+            29,
+            35
+          ],
+          [
+            31,
+            33
+          ],
+          [
+            31,
+            35
+          ]
+        ],
+        "centres": [
+          3291181,
+          3389447,
+          3402778,
+          3504375
+        ],
+        "mixed_defect": 3331,
+        "integer_correction_width_at_least": 1666,
+        "width_over_sixth_budget": 43.8421052631579,
+        "rational_defect_lower": [
+          53156,
+          19
+        ],
+        "primitive_balanced_support": true
+      }
+    },
+    {
+      "kind": "fresh",
+      "n": 743389469237,
+      "bits": 40,
+      "reference_primes": [
+        717511,
+        1036067
+      ],
+      "curvature": {
+        "sixth_budget": 96,
+        "step": 2,
+        "corners": [
+          [
+            72,
+            89
+          ],
+          [
+            72,
+            91
+          ],
+          [
+            74,
+            89
+          ],
+          [
+            74,
+            91
+          ]
+        ],
+        "centres": [
+          138038252,
+          139580627,
+          139942318,
+          141505968
+        ],
+        "mixed_defect": 21275,
+        "integer_correction_width_at_least": 10638,
+        "width_over_sixth_budget": 110.8125,
+        "rational_defect_lower": [
+          35921,
+          2
+        ],
+        "primitive_balanced_support": true
+      }
+    },
+    {
+      "kind": "fresh",
+      "n": 187057475753791,
+      "bits": 48,
+      "reference_primes": [
+        12463513,
+        15008407
+      ],
+      "curvature": {
+        "sixth_budget": 240,
+        "step": 2,
+        "corners": [
+          [
+            180,
+            227
+          ],
+          [
+            180,
+            229
+          ],
+          [
+            182,
+            227
+          ],
+          [
+            182,
+            229
+          ]
+        ],
+        "centres": [
+          5529256174,
+          5553560714,
+          5559889407,
+          5584328599
+        ],
+        "mixed_defect": 134652,
+        "integer_correction_width_at_least": 67326,
+        "width_over_sixth_budget": 280.525,
+        "rational_defect_lower": [
+          911777,
+          8
+        ],
+        "primitive_balanced_support": true
+      }
+    },
+    {
+      "kind": "fresh",
+      "n": 15868267669572088151,
+      "bits": 64,
+      "reference_primes": [
+        3882380521,
+        4087252031
+      ],
+      "curvature": {
+        "sixth_budget": 1586,
+        "step": 2,
+        "corners": [
+          [
+            1189,
+            1388
+          ],
+          [
+            1189,
+            1390
+          ],
+          [
+            1191,
+            1388
+          ],
+          [
+            1191,
+            1390
+          ]
+        ],
+        "centres": [
+          10234824848460,
+          10242195987225,
+          10243429158385,
+          10250806493989
+        ],
+        "mixed_defect": 6196839,
+        "integer_correction_width_at_least": 3098420,
+        "width_over_sixth_budget": 1953.6065573770493,
+        "rational_defect_lower": [
+          3983497839,
+          793
+        ],
+        "primitive_balanced_support": true
+      }
+    },
+    {
+      "kind": "fresh",
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "reference_primes": [
+        850169706629,
+        1093809033949
+      ],
+      "curvature": {
+        "sixth_budget": 9880,
+        "step": 2,
+        "corners": [
+          [
+            7410,
+            8657
+          ],
+          [
+            7410,
+            8659
+          ],
+          [
+            7412,
+            8657
+          ],
+          [
+            7412,
+            8659
+          ]
+        ],
+        "centres": [
+          15447079241445443,
+          15448863483928027,
+          15449163726879862,
+          15450948210134660
+        ],
+        "mixed_defect": 240772214,
+        "integer_correction_width_at_least": 120386107,
+        "width_over_sixth_budget": 12184.828643724697,
+        "rational_defect_lower": [
+          964325301153,
+          4940
+        ],
+        "primitive_balanced_support": true
+      }
+    },
+    {
+      "kind": "saved-four-rough",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "reference_primes": [
+        661911275027,
+        720957498683
+      ],
+      "curvature": {
+        "sixth_budget": 8840,
+        "step": 2,
+        "corners": [
+          [
+            6630,
+            7739
+          ],
+          [
+            6630,
+            7741
+          ],
+          [
+            6632,
+            7739
+          ],
+          [
+            6632,
+            7741
+          ]
+        ],
+        "centres": [
+          9896551848951191,
+          9897830555830221,
+          9898044428983651,
+          9899323328714937
+        ],
+        "mixed_defect": 192852256,
+        "integer_correction_width_at_least": 96426128,
+        "width_over_sixth_budget": 10907.933031674209,
+        "rational_defect_lower": [
+          345401898149,
+          2210
+        ],
+        "primitive_balanced_support": true
+      }
+    }
+  ],
+  "benchmarks": [
+    {
+      "n": 2829641461,
+      "bits": 32,
+      "width": 32,
+      "kind": "fresh",
+      "value": 1223731422,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          0.19227099255658686,
+          0.18842998542822897,
+          0.19729899941012263
+        ],
+        "implicit": [
+          0.7245249871630222,
+          0.708602019585669,
+          0.6887670024298131
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 3350824,
+          "calibrating_weights": [
+            31,
+            32
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 54,
+          "setup_inversions": 1,
+          "axis_updates": 64,
+          "input_residues": 64,
+          "represented_pairs": 1024,
+          "literal_centres": false,
+          "pair_products": 1024,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 3350824,
+          "calibrating_weights": [
+            31,
+            32
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 54,
+          "setup_inversions": 1,
+          "axis_updates": 64,
+          "input_residues": 64,
+          "represented_pairs": 1024,
+          "literal_centres": false,
+          "convolutions": 64,
+          "packed_coefficients": 480,
+          "monic_reductions": 63,
+          "pair_products": 0,
+          "point_products": 32,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 0.27133847666566174
+    },
+    {
+      "n": 743389469237,
+      "bits": 40,
+      "width": 32,
+      "kind": "fresh",
+      "value": 455983191062,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          0.20009299623779953,
+          0.20365399541333318,
+          0.19897500169463456
+        ],
+        "implicit": [
+          0.695889990311116,
+          0.6778719834983349,
+          0.6933760014362633
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 54311780,
+          "calibrating_weights": [
+            31,
+            32
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 66,
+          "setup_inversions": 1,
+          "axis_updates": 64,
+          "input_residues": 64,
+          "represented_pairs": 1024,
+          "literal_centres": false,
+          "pair_products": 1024,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 54311780,
+          "calibrating_weights": [
+            31,
+            32
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 66,
+          "setup_inversions": 1,
+          "axis_updates": 64,
+          "input_residues": 64,
+          "represented_pairs": 1024,
+          "literal_centres": false,
+          "convolutions": 64,
+          "packed_coefficients": 480,
+          "monic_reductions": 63,
+          "pair_products": 0,
+          "point_products": 32,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 0.28857790841235587
+    },
+    {
+      "n": 187057475753791,
+      "bits": 48,
+      "width": 64,
+      "kind": "fresh",
+      "value": 101831920617915,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          0.7083220116328448,
+          0.6945639906916767,
+          0.6810849881730974
+        ],
+        "implicit": [
+          1.916771987453103,
+          1.7995100060943514,
+          1.800976984668523
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 1736911906,
+          "calibrating_weights": [
+            63,
+            64
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 79,
+          "setup_inversions": 1,
+          "axis_updates": 128,
+          "input_residues": 128,
+          "represented_pairs": 4096,
+          "literal_centres": false,
+          "pair_products": 4096,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 1736911906,
+          "calibrating_weights": [
+            63,
+            64
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 79,
+          "setup_inversions": 1,
+          "axis_updates": 128,
+          "input_residues": 128,
+          "represented_pairs": 4096,
+          "literal_centres": false,
+          "convolutions": 152,
+          "packed_coefficients": 1718,
+          "monic_reductions": 127,
+          "pair_products": 0,
+          "point_products": 64,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 0.38565955956372977
+    },
+    {
+      "n": 187057475753791,
+      "bits": 48,
+      "width": 128,
+      "kind": "fresh",
+      "value": 143307056554715,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          2.8540309867821634,
+          2.7874730003532022,
+          2.778115012915805
+        ],
+        "implicit": [
+          4.585098009556532,
+          4.5070859778206795,
+          4.4329160009510815
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 3487581584,
+          "calibrating_weights": [
+            127,
+            128
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 80,
+          "setup_inversions": 1,
+          "axis_updates": 256,
+          "input_residues": 256,
+          "represented_pairs": 16384,
+          "literal_centres": false,
+          "convolutions": 332,
+          "packed_coefficients": 4962,
+          "monic_reductions": 255,
+          "pair_products": 0,
+          "point_products": 128,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 3487581584,
+          "calibrating_weights": [
+            127,
+            128
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 80,
+          "setup_inversions": 1,
+          "axis_updates": 256,
+          "input_residues": 256,
+          "represented_pairs": 16384,
+          "literal_centres": false,
+          "pair_products": 16384,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 0.6184645720251014
+    },
+    {
+      "n": 15868267669572088151,
+      "bits": 64,
+      "width": 128,
+      "kind": "fresh",
+      "value": 2579199373250313026,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          3.4351740032434464,
+          3.4205779957119375,
+          3.4326600143685937
+        ],
+        "implicit": [
+          5.005536979297176,
+          4.972085007466376,
+          4.969289992004633
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 1015784542581,
+          "calibrating_weights": [
+            127,
+            128
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 104,
+          "setup_inversions": 1,
+          "axis_updates": 256,
+          "input_residues": 256,
+          "represented_pairs": 16384,
+          "literal_centres": false,
+          "convolutions": 332,
+          "packed_coefficients": 4962,
+          "monic_reductions": 255,
+          "pair_products": 0,
+          "point_products": 128,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 1015784542581,
+          "calibrating_weights": [
+            127,
+            128
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 104,
+          "setup_inversions": 1,
+          "axis_updates": 256,
+          "input_residues": 256,
+          "represented_pairs": 16384,
+          "literal_centres": false,
+          "pair_products": 16384,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 0.6903864292774378
+    },
+    {
+      "n": 15868267669572088151,
+      "bits": 64,
+      "width": 256,
+      "kind": "fresh",
+      "value": 7133272756939427377,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          14.596102992072701,
+          13.95161499385722,
+          13.927729014540091
+        ],
+        "implicit": [
+          11.85507298214361,
+          12.277957983314991,
+          11.844598018797114
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 2035564308461,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 105,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "convolutions": 696,
+          "packed_coefficients": 12986,
+          "monic_reductions": 511,
+          "pair_products": 0,
+          "point_products": 256,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 2035564308461,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 105,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "pair_products": 65536,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 1.1768476680718432
+    },
+    {
+      "n": 15868267669572088151,
+      "bits": 64,
+      "width": 512,
+      "kind": "fresh",
+      "value": 9630271824311349707,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          56.9681880006101,
+          57.036212005186826,
+          56.97552100173198
+        ],
+        "implicit": [
+          27.467845007777214,
+          27.32977000414394,
+          27.031342004192993
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 4075117964882,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 106,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "convolutions": 1428,
+          "packed_coefficients": 32106,
+          "monic_reductions": 1023,
+          "pair_products": 0,
+          "point_products": 512,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 4075117964882,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 106,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "pair_products": 262144,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 2.084742059413341
+    },
+    {
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "width": 256,
+      "kind": "fresh",
+      "value": 325239626674901206740353,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          13.296791003085673,
+          13.309641974046826,
+          13.269832008518279
+        ],
+        "implicit": [
+          12.02744001056999,
+          11.851232993649319,
+          12.049090000800788
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 492769290370564,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 129,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "pair_products": 65536,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 492769290370564,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 129,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "convolutions": 696,
+          "packed_coefficients": 12986,
+          "monic_reductions": 511,
+          "pair_products": 0,
+          "point_products": 256,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 1.1055379192413473
+    },
+    {
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "width": 512,
+      "kind": "fresh",
+      "value": 635002381046075004286845,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          52.64673801138997,
+          52.77866599499248,
+          52.729847986483946
+        ],
+        "implicit": [
+          27.73728998727165,
+          28.01574399927631,
+          27.79763101716526
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 986504321865294,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 130,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "convolutions": 1428,
+          "packed_coefficients": 32106,
+          "monic_reductions": 1023,
+          "pair_products": 0,
+          "point_products": 512,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 986504321865294,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 130,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "pair_products": 262144,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 1.8969187681469275
+    },
+    {
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "width": 1024,
+      "kind": "fresh",
+      "value": 608428610255070121491088,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          212.42012400762178,
+          212.97088600113057,
+          211.97028100141324
+        ],
+        "implicit": [
+          63.572582992492244,
+          63.334986014524475,
+          63.04926800657995
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 1973973676140323,
+          "calibrating_weights": [
+            1023,
+            1024
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 131,
+          "setup_inversions": 1,
+          "axis_updates": 2048,
+          "input_residues": 2048,
+          "represented_pairs": 1048576,
+          "literal_centres": false,
+          "pair_products": 1048576,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 1973973676140323,
+          "calibrating_weights": [
+            1023,
+            1024
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 131,
+          "setup_inversions": 1,
+          "axis_updates": 2048,
+          "input_residues": 2048,
+          "represented_pairs": 1048576,
+          "literal_centres": false,
+          "convolutions": 2896,
+          "packed_coefficients": 76490,
+          "monic_reductions": 2047,
+          "pair_products": 0,
+          "point_products": 1024,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 3.3539144377312713
+    },
+    {
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "width": 2048,
+      "kind": "fresh",
+      "value": 252248270159466664272676,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          849.2420349793974,
+          850.5059390154202,
+          847.3323170037474
+        ],
+        "implicit": [
+          149.54454801045358,
+          145.66868002293631,
+          144.4815309951082
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 3948912030939461,
+          "calibrating_weights": [
+            2047,
+            2048
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 132,
+          "setup_inversions": 1,
+          "axis_updates": 4096,
+          "input_residues": 4096,
+          "represented_pairs": 4194304,
+          "literal_centres": false,
+          "pair_products": 4194304,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 3948912030939461,
+          "calibrating_weights": [
+            2047,
+            2048
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 132,
+          "setup_inversions": 1,
+          "axis_updates": 4096,
+          "input_residues": 4096,
+          "represented_pairs": 4194304,
+          "literal_centres": false,
+          "convolutions": 5836,
+          "packed_coefficients": 177546,
+          "monic_reductions": 4095,
+          "pair_products": 0,
+          "point_products": 2048,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 5.829956273686833
+    },
+    {
+      "n": 929923305500571231347921,
+      "bits": 80,
+      "width": 4096,
+      "kind": "fresh",
+      "value": 492984989301518608506616,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          3371.68888701126,
+          3388.562626991188,
+          3394.769280013861
+        ],
+        "implicit": [
+          323.2948319928255,
+          329.643261997262,
+          320.5872550024651
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 7898788563813502,
+          "calibrating_weights": [
+            4095,
+            4096
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 133,
+          "setup_inversions": 1,
+          "axis_updates": 8192,
+          "input_residues": 8192,
+          "represented_pairs": 16777216,
+          "literal_centres": false,
+          "pair_products": 16777216,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 7898788563813502,
+          "calibrating_weights": [
+            4095,
+            4096
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 133,
+          "setup_inversions": 1,
+          "axis_updates": 8192,
+          "input_residues": 8192,
+          "represented_pairs": 16777216,
+          "literal_centres": false,
+          "convolutions": 11720,
+          "packed_coefficients": 404234,
+          "monic_reductions": 8191,
+          "pair_products": 0,
+          "point_products": 4096,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 10.481338678084365
+    },
+    {
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 256,
+      "kind": "saved-four-rough",
+      "value": 427651374386898672008143,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          13.315788004547358,
+          13.317881996044889,
+          13.290364993736148
+        ],
+        "implicit": [
+          11.867366003571078,
+          11.619152006460354,
+          11.74744899617508
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 353000068491747,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 128,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "convolutions": 696,
+          "packed_coefficients": 12986,
+          "monic_reductions": 511,
+          "pair_products": 0,
+          "point_products": 256,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 353000068491747,
+          "calibrating_weights": [
+            255,
+            256
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 128,
+          "setup_inversions": 1,
+          "axis_updates": 512,
+          "input_residues": 512,
+          "represented_pairs": 65536,
+          "literal_centres": false,
+          "pair_products": 65536,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 1.133504645041057
+    },
+    {
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 512,
+      "kind": "saved-four-rough",
+      "value": 125314982401193868849956,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          52.56069399183616,
+          52.68982899724506,
+          52.72614597924985
+        ],
+        "implicit": [
+          27.488447027280927,
+          27.297852997435257,
+          27.243657008511946
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 706691955020123,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 129,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "pair_products": 262144,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 706691955020123,
+          "calibrating_weights": [
+            511,
+            512
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 129,
+          "setup_inversions": 1,
+          "axis_updates": 1024,
+          "input_residues": 1024,
+          "represented_pairs": 262144,
+          "literal_centres": false,
+          "convolutions": 1428,
+          "packed_coefficients": 32106,
+          "monic_reductions": 1023,
+          "pair_products": 0,
+          "point_products": 512,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 1.9301821649561772
+    },
+    {
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 1024,
+      "kind": "saved-four-rough",
+      "value": 258557590196632085633876,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          210.569349990692,
+          210.15212399652228,
+          209.8789070150815
+        ],
+        "implicit": [
+          62.49557400587946,
+          62.43383401306346,
+          63.607015006709844
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 1414075220382408,
+          "calibrating_weights": [
+            1023,
+            1024
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 130,
+          "setup_inversions": 1,
+          "axis_updates": 2048,
+          "input_residues": 2048,
+          "represented_pairs": 1048576,
+          "literal_centres": false,
+          "pair_products": 1048576,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 1414075220382408,
+          "calibrating_weights": [
+            1023,
+            1024
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 130,
+          "setup_inversions": 1,
+          "axis_updates": 2048,
+          "input_residues": 2048,
+          "represented_pairs": 1048576,
+          "literal_centres": false,
+          "convolutions": 2896,
+          "packed_coefficients": 76490,
+          "monic_reductions": 2047,
+          "pair_products": 0,
+          "point_products": 1024,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 3.362672114616494
+    },
+    {
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 2048,
+      "kind": "saved-four-rough",
+      "value": 169337145038902144451714,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          834.1202409937978,
+          834.3165630067233,
+          838.2355920039117
+        ],
+        "implicit": [
+          142.20997001393698,
+          142.429686995456,
+          149.77069199085236
+        ]
+      },
+      "metrics": {
+        "implicit": {
+          "centre": 2828841497694070,
+          "calibrating_weights": [
+            2047,
+            2048
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 131,
+          "setup_inversions": 1,
+          "axis_updates": 4096,
+          "input_residues": 4096,
+          "represented_pairs": 4194304,
+          "literal_centres": false,
+          "convolutions": 5836,
+          "packed_coefficients": 177546,
+          "monic_reductions": 4095,
+          "pair_products": 0,
+          "point_products": 2048,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        },
+        "explicit": {
+          "centre": 2828841497694070,
+          "calibrating_weights": [
+            2047,
+            2048
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 131,
+          "setup_inversions": 1,
+          "axis_updates": 4096,
+          "input_residues": 4096,
+          "represented_pairs": 4194304,
+          "literal_centres": false,
+          "pair_products": 4194304,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 5.857743428400155
+    },
+    {
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 4096,
+      "kind": "saved-four-rough",
+      "value": 430971996990408811635505,
+      "gcd": 1,
+      "elapsed_ms": {
+        "explicit": [
+          3385.430694994284,
+          3441.2717960076407,
+          3377.254605991766
+        ],
+        "implicit": [
+          328.67799600353464,
+          322.523163020378,
+          330.3084219805896
+        ]
+      },
+      "metrics": {
+        "explicit": {
+          "centre": 5658373925719272,
+          "calibrating_weights": [
+            4095,
+            4096
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 132,
+          "setup_inversions": 1,
+          "axis_updates": 8192,
+          "input_residues": 8192,
+          "represented_pairs": 16777216,
+          "literal_centres": false,
+          "pair_products": 16777216,
+          "materialized_pair_list": 0,
+          "gcd_calls": 1
+        },
+        "implicit": {
+          "centre": 5658373925719272,
+          "calibrating_weights": [
+            4095,
+            4096
+          ],
+          "setup_integer_square_roots": 1,
+          "setup_powers": 2,
+          "setup_exponent_bits": 132,
+          "setup_inversions": 1,
+          "axis_updates": 8192,
+          "input_residues": 8192,
+          "represented_pairs": 16777216,
+          "literal_centres": false,
+          "convolutions": 11720,
+          "packed_coefficients": 404234,
+          "monic_reductions": 8191,
+          "pair_products": 0,
+          "point_products": 4096,
+          "materialized_pair_list": 0,
+          "resultant_sign_negations": 0,
+          "gcd_calls": 1
+        }
+      },
+      "median_speedup": 10.300144019856676
+    }
+  ],
+  "regression": {
+    "exact_composite_ring_batches": 128,
+    "normalized_pair_checks": 11968
+  },
+  "flattening_regression": {
+    "n": 77,
+    "corners": [
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        13
+      ]
+    ],
+    "centres": [
+      165,
+      179,
+      185,
+      201
+    ],
+    "predicted_last_centre": 199,
+    "anchors": [
+      15,
+      60
+    ],
+    "original_gcd": 7,
+    "flattened_gcd": 1,
+    "sixth_budget_recovery": false,
+    "scope": "primitive-row identity counterexample, not a factoring benchmark"
+  },
+  "coherent_batch_regression": {
+    "n": 77,
+    "width": 2,
+    "aggregate_gcd": 77,
+    "proper_leaf_gcd": 7,
+    "signal": 21,
+    "weights": [
+      1,
+      2
+    ],
+    "recovery_gcds": 2,
+    "scope": "small coherent-batch regression, not a universal recovery budget"
+  },
+  "source_sha256": {
+    "scripts/probe_semiprime_cartesian_completion.py": "db981e200bf2819007780258d58c45c341b0b2bf4a08f9fe0e41c25cb2665f47",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "RiemannGaussian/SemiprimeCartesianCompletion.lean": "0aea732d093de37a87340eddaf7626f918a2fccd14decca48341947a2f9cf706"
+  },
+  "gmpy2_version": "2.3.1",
+  "focused_validation": {
+    "date": "2026-10-02",
+    "build_command": "lake build RiemannGaussian.SemiprimeCartesianCompletion --wfail",
+    "build_exit_code": 0,
+    "checker_command": "lake env lean -DwarningAsError=true scripts/CheckSemiprimeCartesianCompletion.lean",
+    "checker_exit_code": 0,
+    "public_theorems": 12,
+    "module_declarations_including_generated": 30,
+    "proof_declarations_including_generated": 27,
+    "linters": 14,
+    "linter_errors": 0,
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "validation_source_sha256": {
+      "RiemannGaussian/SemiprimeCartesianCompletion.lean": "b02fa1c2b5a884b1d760879efb6e98dfae3597ee68eb90d306cc82e298f35b39",
+      "scripts/CheckSemiprimeCartesianCompletion.lean": "70c0472a71375649bfb6ce6a079c86ad63c74757b13574663a4ed613151036ba"
+    },
+    "replay_hash_provenance": "Original replay hashes retained; runtime Python unchanged. Current Lean source validated separately.",
+    "ordinary_library_import_present": true,
+    "numerical_replay_optional": true,
+    "universal_bit_complexity_proved": false
+  }
+}

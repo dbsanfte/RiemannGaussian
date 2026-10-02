@@ -1,0 +1,363 @@
+{
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "scope": "Optional floating diagnostic on native-order constructed probable-prime subsets; no new Lean theorem or whole-floor estimate.",
+  "script": "scripts/probe_riesz_reflected_phase_gram.py",
+  "scriptSha256": "415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04",
+  "proofChanges": false,
+  "floorProved": false,
+  "newZeroExclusion": false,
+  "nativeOrderAndCountCutoffs": [
+    [
+      256,
+      8
+    ],
+    [
+      640,
+      16
+    ]
+  ],
+  "sampleSizes": [
+    24,
+    48
+  ],
+  "seeds": [
+    20261002,
+    20261003
+  ],
+  "heights": [
+    54,
+    65,
+    100
+  ],
+  "conditions": {
+    "originalMasksNumericallyChecked": true,
+    "originalMovingLengthAndAllocationRetained": true,
+    "allSelectedLabelsJoinedBeforeGramOrPeriodClipping": true,
+    "adverseCutoffsSelectedOnConstructedSubsetNotFullCore": true,
+    "commonAmplitudeRescalingUsed": true,
+    "integerPeriodBoundaryRoundingCertified": false,
+    "formalPrimalityCertificate": false,
+    "rigorousIntervalArithmetic": false,
+    "fullCorePopulationOrDensityEstimate": false,
+    "count56OrManyBinFrontierTested": false,
+    "eventualLeanOrderThresholdSatisfied": false,
+    "nativeSourceScaleBudgetComparison": false,
+    "cofinalEstimate": false
+  },
+  "observations": {
+    "factorSubsetIntegerReflectionChecks": 273312,
+    "independentDirectRieszRegressionPassed": true,
+    "remainingEnergyPositiveCases": 7,
+    "remainingEnergyNegativeCases": 5,
+    "periodSavingsBelow008PercentCases": 11,
+    "maximumPeriodSavingFraction": 0.01665433220766721,
+    "automaticWholeFloorSavingInferred": false,
+    "rigorousArithmeticCancellationNoGoProved": false
+  },
+  "verification": {
+    "probeRunsCompleted": true,
+    "pythonSyntaxCheckPassed": true,
+    "preservedExistingLeanSources": 2426,
+    "stagedSemiprimeIndexAndWorktreePreserved": true,
+    "readmeAndPublishedExplorerMetadataPreserved": true,
+    "newLeanBuildRequired": false,
+    "commitOrPushPerformed": false
+  },
+  "openTarget": "An independent whole signed estimate, e.g. E_direct <= 3/(320*(N+1)) cofinally, or the -79/1000 joint floor directly.",
+  "cases": [
+    {
+      "N": 256,
+      "height": 54,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.8977758778065,
+      "scaledJoinedReal": -145.8615977597346,
+      "scaledRemainingEnergy": 25.59524656048111,
+      "scaledReinforcingEnergy": 54.717708484757814,
+      "scaledTotalFavorableCredit": 29.122461924276692,
+      "antiphaseFractionOfAllFavorableCredit": 0.024366188272397563,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.0,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.4882767423699769,
+      "scaledAtomicCutoffCost": 148.04031559858035,
+      "scaledJoinedLogPeriodCost": 148.03312944414358,
+      "logPeriodCancellationFraction": 4.854187460834325e-05
+    },
+    {
+      "N": 256,
+      "height": 65,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.8977758778065,
+      "scaledJoinedReal": -109.13258355723062,
+      "scaledRemainingEnergy": 43.63313759902065,
+      "scaledReinforcingEnergy": 57.70375692232329,
+      "scaledTotalFavorableCredit": 14.070619323302624,
+      "antiphaseFractionOfAllFavorableCredit": 0.35855177771214897,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.00010766519628005729,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.5531577031563426,
+      "scaledAtomicCutoffCost": 122.26522285408385,
+      "scaledJoinedLogPeriodCost": 122.26081883744538,
+      "logPeriodCancellationFraction": 3.602019066140105e-05
+    },
+    {
+      "N": 256,
+      "height": 100,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.8977758778065,
+      "scaledJoinedReal": -96.41117490286705,
+      "scaledRemainingEnergy": 7.448508527530063,
+      "scaledReinforcingEnergy": 28.383170232616997,
+      "scaledTotalFavorableCredit": 20.93466170508693,
+      "antiphaseFractionOfAllFavorableCredit": 0.1399092829598502,
+      "alignedNegativeFractionOfAllFavorableCredit": -2.567927158754951e-06,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.2330883949835444,
+      "scaledAtomicCutoffCost": 96.53950617988522,
+      "scaledJoinedLogPeriodCost": 96.53837987263611,
+      "logPeriodCancellationFraction": 1.1666801433718454e-05
+    },
+    {
+      "N": 640,
+      "height": 54,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.7067703774787,
+      "scaledJoinedReal": -92.44029545628432,
+      "scaledRemainingEnergy": -2.771284961673783,
+      "scaledReinforcingEnergy": 0.20856819321766065,
+      "scaledTotalFavorableCredit": 2.9798531548914435,
+      "antiphaseFractionOfAllFavorableCredit": -6.543636416955655e-07,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.998914271770654,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.047664796621353304,
+      "scaledAtomicCutoffCost": 92.56966930968561,
+      "scaledJoinedLogPeriodCost": 92.56279817382423,
+      "logPeriodCancellationFraction": 7.422664370104748e-05
+    },
+    {
+      "N": 640,
+      "height": 65,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.7067703774787,
+      "scaledJoinedReal": -322.1063861122937,
+      "scaledRemainingEnergy": 8.965289008035155,
+      "scaledReinforcingEnergy": 11.780057432143971,
+      "scaledTotalFavorableCredit": 2.8147684241088213,
+      "antiphaseFractionOfAllFavorableCredit": 0.005580170410461778,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.00037575100211881507,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.5981603689840025,
+      "scaledAtomicCutoffCost": 322.26350657399007,
+      "scaledJoinedLogPeriodCost": 322.2602571460673,
+      "logPeriodCancellationFraction": 1.0083139593719537e-05
+    },
+    {
+      "N": 640,
+      "height": 100,
+      "labels": 24,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.7067703774787,
+      "scaledJoinedReal": -170.82422688095582,
+      "scaledRemainingEnergy": 7.5241914658444955,
+      "scaledReinforcingEnergy": 8.13927229776411,
+      "scaledTotalFavorableCredit": 0.6150808319196145,
+      "antiphaseFractionOfAllFavorableCredit": 0.00884000543038358,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.16593171688589198,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.5985369171719696,
+      "scaledAtomicCutoffCost": 170.83631716182308,
+      "scaledJoinedLogPeriodCost": 170.83617873318715,
+      "logPeriodCancellationFraction": 8.102998134695838e-07
+    },
+    {
+      "N": 256,
+      "height": 54,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.7136391527527,
+      "scaledJoinedReal": 140.6084134784374,
+      "scaledRemainingEnergy": -67.95310843190708,
+      "scaledReinforcingEnergy": 48.48537605108576,
+      "scaledTotalFavorableCredit": 116.43848448299282,
+      "antiphaseFractionOfAllFavorableCredit": 0.6720730961756284,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.021330669877986118,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.17373884828793093,
+      "scaledAtomicCutoffCost": 22.44742626023794,
+      "scaledJoinedLogPeriodCost": 22.43124782662607,
+      "logPeriodCancellationFraction": 0.0007207255488584918
+    },
+    {
+      "N": 256,
+      "height": 65,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.7136391527527,
+      "scaledJoinedReal": -82.78212664321356,
+      "scaledRemainingEnergy": 4.200729540305128,
+      "scaledReinforcingEnergy": 153.8273111409715,
+      "scaledTotalFavorableCredit": 149.62658160066638,
+      "antiphaseFractionOfAllFavorableCredit": 0.3379904887006055,
+      "alignedNegativeFractionOfAllFavorableCredit": 1.6706026405891273e-05,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.3493994766661682,
+      "scaledAtomicCutoffCost": 117.01137879345974,
+      "scaledJoinedLogPeriodCost": 116.98722708171742,
+      "logPeriodCancellationFraction": 0.00020640481285971735
+    },
+    {
+      "N": 256,
+      "height": 100,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -504.7136391527527,
+      "scaledJoinedReal": -15.177913122796419,
+      "scaledRemainingEnergy": -9.907830673855047,
+      "scaledReinforcingEnergy": 77.60343057451401,
+      "scaledTotalFavorableCredit": 87.51126124836905,
+      "antiphaseFractionOfAllFavorableCredit": 0.04301951466521893,
+      "alignedNegativeFractionOfAllFavorableCredit": 9.539710511139112e-06,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.45608458282626996,
+      "scaledAtomicCutoffCost": 63.514956445206515,
+      "scaledJoinedLogPeriodCost": 63.49805882199501,
+      "logPeriodCancellationFraction": 0.00026604164053989354
+    },
+    {
+      "N": 640,
+      "height": 54,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.2457138534676,
+      "scaledJoinedReal": -26.275420260436086,
+      "scaledRemainingEnergy": 0.7717062996851848,
+      "scaledReinforcingEnergy": 3.895748125752243,
+      "scaledTotalFavorableCredit": 3.1240418260670575,
+      "antiphaseFractionOfAllFavorableCredit": -2.4623824297911925e-07,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.8938020035455339,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.336600345154149,
+      "scaledAtomicCutoffCost": 33.72424525168703,
+      "scaledJoinedLogPeriodCost": 33.710614907754255,
+      "logPeriodCancellationFraction": 0.00040417046641227916
+    },
+    {
+      "N": 640,
+      "height": 65,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.2457138534676,
+      "scaledJoinedReal": -217.92227780823063,
+      "scaledRemainingEnergy": -7.788461679800136,
+      "scaledReinforcingEnergy": 29.409250678503973,
+      "scaledTotalFavorableCredit": 37.19771235830412,
+      "antiphaseFractionOfAllFavorableCredit": 0.07405229669212506,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.0015021186245541636,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.8450461686714811,
+      "scaledAtomicCutoffCost": 235.15965868252357,
+      "scaledJoinedLogPeriodCost": 235.15328093944822,
+      "logPeriodCancellationFraction": 2.7120906328392813e-05
+    },
+    {
+      "N": 640,
+      "height": 100,
+      "labels": 48,
+      "countsPresent": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceAmplitudeLogScale": -1256.2457138534676,
+      "scaledJoinedReal": 198.99509447515373,
+      "scaledRemainingEnergy": -1.131960344926979,
+      "scaledReinforcingEnergy": 0.3888236673457836,
+      "scaledTotalFavorableCredit": 1.5207840122727632,
+      "antiphaseFractionOfAllFavorableCredit": 0.2568974545860496,
+      "alignedNegativeFractionOfAllFavorableCredit": 0.7235724143604266,
+      "moebiusGaugeFractionOfAbsoluteGramMass": 0.6100737863829924,
+      "scaledAtomicCutoffCost": 0.6460362178951635,
+      "scaledJoinedLogPeriodCost": 0.6352769161041526,
+      "logPeriodCancellationFraction": 0.01665433220766721
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T09:35:16.366867+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszNearCriticalCountPayment",
+  "scope": "Independent geometric payment of all original selected counts with 864*omega>=K, and an original joined floor comparison at the resulting smaller count endpoint. No remaining signed energy budget proved.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+    "docs/zeta-riesz-near-critical-count-payment.md": "b33c2cb141adea811b1ccb47f34dade205035a2a77571a0b93be2b9e3357c0b7",
+    "RiemannGaussian.lean": "cb860dd9a5f63ab16e9ba892d213f1dcf8d1194b175ef7cc3cb67fa4e682d8bc",
+    "AGENTS.md": "ae0ac24a84667ba1c604eac1c489ffe17d893f36c82ada06033a380b240e94bf",
+    "docs/theorem-explorer/metadata.json": "7378455007da40e9d55169948772b7667bd07a9b9115a1ca879df456c4c6bf4c",
+    "RiemannGaussian/ZetaRieszSharperCountPayment.lean": "24733412fea971175af7b3471497300bc6ce35f6edc719fefc6d0145f17920f6",
+    "RiemannGaussian/ZetaRieszDirectPhaseFloor.lean": "263b128abfba6f00d704156501f5d3e1418a64205e013f05d951d1f14e11c3b9"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.dyadic_log_count_lower",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.nearCritical_count_power_saving",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.nearCritical_count_mass_bound",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.count_rate_bound",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_nearCritical_count_sum_bound",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_bounds",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_le_previous",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_comparison",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.allowance_nonneg",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_allowance",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_norm_core_count_change_le",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_core_count_change",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_joined_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-near-critical-count-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10440,
+      "target": "RiemannGaussian.ZetaRieszNearCriticalCountPayment",
+      "log": ".lake/riesz-near-critical-count-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-near-critical-count-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 17,
+      "generatedDeclarations": 9,
+      "publicTheoremCount": 14,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.dyadic_log_count_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.nearCritical_count_power_saving": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.nearCritical_count_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.count_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_nearCritical_count_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_le_previous": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.countCeiling_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.allowance_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_allowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_norm_core_count_change_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_core_count_change": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearCriticalCountPayment.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-near-critical-count-audit.log"
+    },
+    "exactRationalParameterAudit": {
+      "exitCode": 0,
+      "report": ".lake/riesz-near-critical-count-parameters.json",
+      "parameters": {
+        "rationalLogUpperExponent": "-280099459429/2699999994600000000",
+        "rationalLogUpperExponentFloat": -1.0374054073674034e-07,
+        "countEndpointRatioLimit": "8/9",
+        "sourceRate": "exp(-N/10000000)",
+        "effectiveEventualStartCertified": false,
+        "floatingEvidenceRequiredForProof": false
+      }
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleOnly": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "stagedWhitespaceExitCode": 0
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "baselineRecordedMathematicalSourceCount": 2781,
+    "baselineRecordedMathematicalSourcesUnchanged": true,
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "widerPublicationGatesRun": false
+  },
+  "originalScheduleRetained": true,
+  "newPhysicalCarrierIntroduced": false,
+  "allOriginalPhysicalAllocationRadialCountAndPhaseMasksRetained": true,
+  "wholeSelectedTailBoundedIndependently": true,
+  "zeroHypothesisRequired": false,
+  "cancellationHypothesisAdded": false,
+  "countTiltLogarithmicRate": "K*log(K) >= (173/2000)*N for j>=1024",
+  "selectedCountCondition": "K<=864*omega(n)",
+  "q": "499999999/1000000000",
+  "sigma": "1000000001/1000000000",
+  "eulerSlackEventually": "exp(N/100000000)",
+  "countMassNumericallyEvaluated": false,
+  "j1024AloneIsEffectiveArithmeticStart": false,
+  "sourceScaledTailAllowance": "(203/50)*radiusCeiling*(N+1)*exp(-N/10000000)",
+  "allHeightsIncludingVaryingHeightsAllowed": true,
+  "uniformRadiusRange": "0<=u<=10001/20000",
+  "retainedCountCeiling": "natural K/864+1",
+  "previousRetainedCountCeiling": "natural K/768+1",
+  "retainedCountIntervalRatioLimit": "8/9",
+  "roundedEndpointComparison": "abs(9*(new-1)-8*(previous-1))<=8",
+  "intervalReductionIsNotMassOrFloorDeficitFraction": true,
+  "decayRateSlowerByFactor": 50,
+  "actualComplexCoreDifferencePaid": true,
+  "smallerRemainingEnergyMonotonicityAsserted": false,
+  "originalJoinedFloorComparisonProved": true,
+  "originalCoreJoinedBridgeAndFourPairErrorsSpentOnce": true,
+  "favorableCountCreditOrFundingDebitSpent": false,
+  "adverseSetSelectedOnceOnEntireNewCore": true,
+  "antiphaseAndAlignedNegativeIdentitiesAvailableForAnyFiniteSupport": true,
+  "nativeReserveMassLowerBoundProved": false,
+  "remainingIndependentBudget": "nonOrbitEnergy <= 3/(320*(N+1))",
+  "remainingIndependentBudgetProved": false,
+  "newNumericalFloorMarginCertified": false,
+  "effectiveFloorStartingOrderCertified": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "committedOrPushed": false
+}

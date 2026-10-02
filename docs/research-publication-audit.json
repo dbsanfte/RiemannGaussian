@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "baseRevision": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Combined publication of accumulated Riesz whole-floor research and semiprime side-investigation algebra.",
+  "modules": {
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": {
+      "sha256": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+      "declarations": 27,
+      "theoremsIncludingGeneratedHelpers": 27
+    },
+    "RiemannGaussian/ZetaRieszSignedDensityCancellation.lean": {
+      "sha256": "61c1ecda29189f003064ae4ea97b12013cb3429cc66e7f167cf19e735137de1e",
+      "declarations": 41,
+      "theoremsIncludingGeneratedHelpers": 40
+    },
+    "RiemannGaussian/ZetaRieszOwnerHingeCancellation.lean": {
+      "sha256": "bba80c58f80a5b587a94b8ffef0bfab822da851457f953eac2ae8ccc6a6d7e25",
+      "declarations": 94,
+      "theoremsIncludingGeneratedHelpers": 88
+    },
+    "RiemannGaussian/ZetaRieszRejoinedPhaseFloor.lean": {
+      "sha256": "50fbc334595bf90fdd97b9cd26b99cbafafc63b512a7cc746db1b8f4d84a6ebe",
+      "declarations": 51,
+      "theoremsIncludingGeneratedHelpers": 47
+    },
+    "RiemannGaussian/ZetaRieszPrefixCoherenceAudit.lean": {
+      "sha256": "e1923088f9f52e647e6b0eedea3e024eaa50b7c186cdee399cfa748ecb7116ac",
+      "declarations": 14,
+      "theoremsIncludingGeneratedHelpers": 14
+    },
+    "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean": {
+      "sha256": "5542d4ee8e732f7da5d9c1eb3f5838a071b495d1c794c4056979f30876ebcde4",
+      "declarations": 36,
+      "theoremsIncludingGeneratedHelpers": 32
+    },
+    "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean": {
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "declarations": 44,
+      "theoremsIncludingGeneratedHelpers": 39
+    },
+    "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean": {
+      "sha256": "f140c5b549c83c98295517f29eaf23fba81204b899849f55a7aa794c87df3276",
+      "declarations": 20,
+      "theoremsIncludingGeneratedHelpers": 20
+    },
+    "RiemannGaussian/ZetaRieszManyBinRateAudit.lean": {
+      "sha256": "5a2a1992c10e6075c53bf4a23343bca50e01ec96e9804946126f0fb516f759a1",
+      "declarations": 10,
+      "theoremsIncludingGeneratedHelpers": 10
+    },
+    "RiemannGaussian/ZetaRieszInnerHingeTransport.lean": {
+      "sha256": "28e09e25f0fe9e279217892e53522ea3d946b36706d3844aa88cf32480820e4e",
+      "declarations": 11,
+      "theoremsIncludingGeneratedHelpers": 10
+    },
+    "RiemannGaussian/ZetaRieszOwnerPairFloor.lean": {
+      "sha256": "50be5079b632aa9214112eb6deb6a083752f3ce47d9d5df7b96c1f5d0fba3b4b",
+      "declarations": 35,
+      "theoremsIncludingGeneratedHelpers": 35
+    },
+    "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean": {
+      "sha256": "c209e00aafb6c47b00105054368f66e6bb1fab605d0d061871b324d65b6e60ad",
+      "declarations": 30,
+      "theoremsIncludingGeneratedHelpers": 28
+    },
+    "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean": {
+      "sha256": "4b0db3889c5ff604bc2680630b1c56258c7356c3873dce56bbf3f16ce226b227",
+      "declarations": 16,
+      "theoremsIncludingGeneratedHelpers": 16
+    },
+    "RiemannGaussian/ZetaRieszOpenCountFloor.lean": {
+      "sha256": "80ef0fe96a40f8fc5e7f91555a964bb55a83b6b42093dd092c4ecc573fc79d3f",
+      "declarations": 35,
+      "theoremsIncludingGeneratedHelpers": 31
+    },
+    "RiemannGaussian/ZetaRieszSignedCellFloor.lean": {
+      "sha256": "cc3ddbd698917dfadaf3b3b0789c1e8983c1d58694b2a223b46ee80111f31df8",
+      "declarations": 15,
+      "theoremsIncludingGeneratedHelpers": 14
+    },
+    "RiemannGaussian/ZetaRieszDiagonalPayment.lean": {
+      "sha256": "9d20f3cee8406004fbf94392d69709ba76e9cfc72ae633ae5900f031340bf767",
+      "declarations": 40,
+      "theoremsIncludingGeneratedHelpers": 35
+    },
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": {
+      "sha256": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+      "declarations": 41,
+      "theoremsIncludingGeneratedHelpers": 37
+    },
+    "RiemannGaussian/ZetaRieszNearLabelPayment.lean": {
+      "sha256": "e87e26dceaf6d2fcf6cce1092c5131a0d9a33b99d3891ece1e7605741ce0f8ba",
+      "declarations": 54,
+      "theoremsIncludingGeneratedHelpers": 49
+    },
+    "RiemannGaussian/ZetaRieszPostHingeEnergy.lean": {
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+      "declarations": 21,
+      "theoremsIncludingGeneratedHelpers": 21
+    },
+    "RiemannGaussian/ZetaRieszPhaseOrbitPayment.lean": {
+      "sha256": "695688e7f24a2d80f35d7974df887241eb59b73fdf2b691ea6306d05dd714d7d",
+      "declarations": 62,
+      "theoremsIncludingGeneratedHelpers": 53
+    },
+    "RiemannGaussian/ZetaRieszDirectPhaseFloor.lean": {
+      "sha256": "263b128abfba6f00d704156501f5d3e1418a64205e013f05d951d1f14e11c3b9",
+      "declarations": 13,
+      "theoremsIncludingGeneratedHelpers": 11
+    },
+    "RiemannGaussian/ZetaRieszAntiphaseCredit.lean": {
+      "sha256": "89f831a73991b7d3e66688354a9ce81e7a81640d14c569ae6a583770acf6ce4b",
+      "declarations": 67,
+      "theoremsIncludingGeneratedHelpers": 55
+    },
+    "RiemannGaussian/ZetaRieszSharperCountPayment.lean": {
+      "sha256": "24733412fea971175af7b3471497300bc6ce35f6edc719fefc6d0145f17920f6",
+      "declarations": 24,
+      "theoremsIncludingGeneratedHelpers": 21
+    },
+    "RiemannGaussian/ZetaRieszAlignedNegativeCredit.lean": {
+      "sha256": "dab8d4ccbd4982c861fe3806b6666b6317552decdedf363d2a22e5ad570e16a1",
+      "declarations": 30,
+      "theoremsIncludingGeneratedHelpers": 26
+    },
+    "RiemannGaussian/ZetaRieszNullProfileAudit.lean": {
+      "sha256": "2d754600aa3285655eb8de6a470a251f6c3e9af13065c6696d268bd8aa3a4f2e",
+      "declarations": 20,
+      "theoremsIncludingGeneratedHelpers": 19
+    },
+    "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean": {
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "declarations": 26,
+      "theoremsIncludingGeneratedHelpers": 23
+    },
+    "RiemannGaussian/ZetaRieszSmallGcdPayment.lean": {
+      "sha256": "c84d01250dfd299fd83940b736b96da0c7c87392ebe319b3ba6ea02bac608549",
+      "declarations": 33,
+      "theoremsIncludingGeneratedHelpers": 28
+    },
+    "RiemannGaussian/ZetaRieszCoprimePlateauAudit.lean": {
+      "sha256": "f31a16adb77b0ed05327b51c027a43d1987ce7270683350598403f4e5091c0ef",
+      "declarations": 10,
+      "theoremsIncludingGeneratedHelpers": 10
+    },
+    "RiemannGaussian/ZetaRieszWidePhasePayment.lean": {
+      "sha256": "c4fa88f901f710cbb45e8d27c07740bfe0765a356b2ba0367779802910d031aa",
+      "declarations": 36,
+      "theoremsIncludingGeneratedHelpers": 28
+    },
+    "RiemannGaussian/ZetaRieszEndgameSlack.lean": {
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "declarations": 16,
+      "theoremsIncludingGeneratedHelpers": 16
+    },
+    "RiemannGaussian/ZetaRieszComplexProjection.lean": {
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "declarations": 49,
+      "theoremsIncludingGeneratedHelpers": 39
+    },
+    "RiemannGaussian/NatDivisorSquareHarmonic.lean": {
+      "sha256": "61e2e5ad56be3f34aac4c42c01ea409c2e0aeadd9d960983f4a11ecd389d18d9",
+      "declarations": 11,
+      "theoremsIncludingGeneratedHelpers": 11
+    },
+    "RiemannGaussian/ZetaRieszFinitePhasePayment.lean": {
+      "sha256": "66a5b02305927e6ed5aca2267f9e7425cfc9659576ab26ab075a8a4cd13c8257",
+      "declarations": 35,
+      "theoremsIncludingGeneratedHelpers": 27
+    },
+    "RiemannGaussian/ZetaRieszJointCreditFloor.lean": {
+      "sha256": "10e6bc50def010629b9229bb6075ad0670bdd74760ac6e686210bae0da1a815a",
+      "declarations": 11,
+      "theoremsIncludingGeneratedHelpers": 9
+    },
+    "RiemannGaussian/ZetaRieszComplexNullFloor.lean": {
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "declarations": 50,
+      "theoremsIncludingGeneratedHelpers": 40
+    },
+    "RiemannGaussian/ZetaRieszClippedInsertionFloor.lean": {
+      "sha256": "47856a3c872e83c3f06e0abd4a57f61bc8d19046de13ddf2058cc81fdac627ae",
+      "declarations": 15,
+      "theoremsIncludingGeneratedHelpers": 15
+    },
+    "RiemannGaussian/ZetaRieszCenteredInsertionPayment.lean": {
+      "sha256": "747774c4ac7bb8f495244b2bd2edce8c8eab90a96a8b552133e4b1289202af02",
+      "declarations": 30,
+      "theoremsIncludingGeneratedHelpers": 25
+    },
+    "RiemannGaussian/ZetaRieszEllipticChannelAudit.lean": {
+      "sha256": "165653e03a0d9d4ab828cece69bdb117bd7e057eb1c1f1a9f18bd0da8762fe4e",
+      "declarations": 12,
+      "theoremsIncludingGeneratedHelpers": 10
+    },
+    "RiemannGaussian/ZetaRieszInsertionCapacity.lean": {
+      "sha256": "950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a",
+      "declarations": 15,
+      "theoremsIncludingGeneratedHelpers": 13
+    },
+    "RiemannGaussian/ZetaRieszInsertionRateAudit.lean": {
+      "sha256": "553242207500e5871eb97a068617b92b11bad835574d7a9b7be2e720910e1f62",
+      "declarations": 13,
+      "theoremsIncludingGeneratedHelpers": 13
+    },
+    "RiemannGaussian/ZetaRieszLayerVariance.lean": {
+      "sha256": "4064db1c1e5df9c1e7093caaed91cf00bbba7adf3e64e88a71f64a517827f334",
+      "declarations": 25,
+      "theoremsIncludingGeneratedHelpers": 22
+    },
+    "RiemannGaussian/ZetaRieszSignedCubeGeometry.lean": {
+      "sha256": "da57da6052ac2bb84f60cb8c52f5b045e37231ae8d8bd2ff5dee2628d948cdd7",
+      "declarations": 6,
+      "theoremsIncludingGeneratedHelpers": 5
+    },
+    "RiemannGaussian/ZetaRieszSignedNullGain.lean": {
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "declarations": 34,
+      "theoremsIncludingGeneratedHelpers": 26
+    },
+    "RiemannGaussian/ZetaRieszSubsetMomentBounds.lean": {
+      "sha256": "80b4bb9dbec71beb1037c6f03e57b6e335457a28fb75b65d9d05699c112e4866",
+      "declarations": 6,
+      "theoremsIncludingGeneratedHelpers": 6
+    },
+    "RiemannGaussian/SemiprimeOrderSeparation.lean": {
+      "sha256": "595c30297c6c5a9e3c64118f93c74e6851cc6a28f65cb54944dde64c76e7fde7",
+      "declarations": 48,
+      "theoremsIncludingGeneratedHelpers": 46
+    },
+    "RiemannGaussian/SemiprimeRowStructure.lean": {
+      "sha256": "4eb4abe2171eae5b6e78a4d3bb08efd47aafcacc59920a503e57f487894c9cbc",
+      "declarations": 21,
+      "theoremsIncludingGeneratedHelpers": 20
+    },
+    "RiemannGaussian/SemiprimeCartesianCompletion.lean": {
+      "sha256": "b02fa1c2b5a884b1d760879efb6e98dfae3597ee68eb90d306cc82e298f35b39",
+      "declarations": 30,
+      "theoremsIncludingGeneratedHelpers": 27
+    },
+    "RiemannGaussian/SemiprimeLongPeriodExtraction.lean": {
+      "sha256": "dfd7371fbe423bb0b63bdcd06fc5fc57bcedd562377dbae986e003d797e933a1",
+      "declarations": 43,
+      "theoremsIncludingGeneratedHelpers": 43
+    },
+    "RiemannGaussian/SemiprimeRoughProjection.lean": {
+      "sha256": "49a6e504c6e1161243b1680d9d544f9266363bec4da04f12ac5fe8702e2043f7",
+      "declarations": 84,
+      "theoremsIncludingGeneratedHelpers": 63
+    },
+    "RiemannGaussian/SemiprimeGroupSelection.lean": {
+      "sha256": "a283ef1111423cd7996811f9a7861ae8e907c47759283a634c567878d66b3987",
+      "declarations": 89,
+      "theoremsIncludingGeneratedHelpers": 51
+    },
+    "RiemannGaussian/SemiprimeGroupCoverage.lean": {
+      "sha256": "c44b1c8badd56b0a3fcb3e6b6c34e27cdc9be3843d3384d0aead794e5dd1f948",
+      "declarations": 61,
+      "theoremsIncludingGeneratedHelpers": 52
+    },
+    "RiemannGaussian/SemiprimePointRotation.lean": {
+      "sha256": "b8db04bff1394bd17d5802c8a88887c497bb9544ccc3c7253cd74d0af190a54f",
+      "declarations": 27,
+      "theoremsIncludingGeneratedHelpers": 25
+    },
+    "RiemannGaussian/SemiprimeColourCoverage.lean": {
+      "sha256": "f2c7725f444c77e6253dbc24a02ebc3b2e9e0e9004c2de5970bf3b6dd34e5dc0",
+      "declarations": 4,
+      "theoremsIncludingGeneratedHelpers": 4
+    },
+    "RiemannGaussian/SemiprimeFastDickson.lean": {
+      "sha256": "6aefe9a7503bb514f40df49f41ab5d9ab4fb994654a2d0a2abbb74c15a8c1764",
+      "declarations": 47,
+      "theoremsIncludingGeneratedHelpers": 37
+    }
+  },
+  "moduleCount": 54,
+  "theoremCountIncludingGeneratedHelpers": 1512,
+  "onlyStandardAxioms": true,
+  "localProofGates": {
+    "ordinaryWarningAsErrorBuild": true,
+    "wholeProjectDeclarationLint": true,
+    "compiledEnvironmentIntegrity": true,
+    "allNewDeclarationsAxiomAudit": true,
+    "allSourceModulesRegistered": true,
+    "optionalNumericalCertificateStillExcluded": true,
+    "changedPythonSyntaxChecked": 63
+  },
+  "presentationGates": {
+    "zeroFreeExplorerAssets": true,
+    "numericalCertificateExplorerAssets": true,
+    "zeroFreePlotAssets": true,
+    "numericalCertificatePlotAssets": true,
+    "zeroFreeExplorerDesktopMobile": true,
+    "numericalCertificateExplorerDesktopMobile": true,
+    "rhExplorerDesktopMobileAndRefreshedPreview": true,
+    "liveGitHubReadmeRendererDesktopMobile": true,
+    "rhExplorerAssetsAndPreviewFreshness": true
+  },
+  "scope": {
+    "independentNumericalFloor": false,
+    "higherMultiplicityCeiling": false,
+    "newZeroFreeRegion": false,
+    "RHClaim": false,
+    "semiprimeNumericalProbesStillOptional": true,
+    "genericFactoringExponentClaim": false
+  },
+  "logs": {
+    "PublicationAudit.lean": {
+      "path": ".lake/riesz-insertion-rate/PublicationAudit.lean",
+      "sha256": "d4eb62700a4754d7f21257f16004344ac2c53b3fcbe94a9c25f357a82af08c51"
+    },
+    "publication-axioms.json": {
+      "path": ".lake/riesz-insertion-rate/publication-axioms.json",
+      "sha256": "76fe2f5b6e24846ed04a9c7e958b294eaca9bafb0c052a2eb433ff46392a9d48"
+    },
+    "publication-axioms.log": {
+      "path": ".lake/riesz-insertion-rate/publication-axioms.log",
+      "sha256": "2075f4d6961a7824a98c823afc1cb34bbc875f79dca23ce775ceeaeb979510f3"
+    },
+    "publication-build.log": {
+      "path": ".lake/riesz-insertion-rate/publication-build.log",
+      "sha256": "8ea9ad65d71a9e8f6193b32f43104339755bf7e283c40a656f745f2f5eb96bac"
+    },
+    "publication-certificate-assets.log": {
+      "path": ".lake/riesz-insertion-rate/publication-certificate-assets.log",
+      "sha256": "c0f8ab95b9c4929beda368153c564d2c8c961451e8891ee50cc807c6f8d67d11"
+    },
+    "publication-certificate-browser.log": {
+      "path": ".lake/riesz-insertion-rate/publication-certificate-browser.log",
+      "sha256": "f7f5ab870714624d1fa7c29b1ec60c8c846e121fc08df18bd1f3b902a45a6e98"
+    },
+    "publication-certificate-plot.log": {
+      "path": ".lake/riesz-insertion-rate/publication-certificate-plot.log",
+      "sha256": "68f544ee021c6d0ea1b3db08861ead30aa9d3ca8e8dc02473dd029282c807bd5"
+    },
+    "publication-lint.log": {
+      "path": ".lake/riesz-insertion-rate/publication-lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication-readme-browser.log": {
+      "path": ".lake/riesz-insertion-rate/publication-readme-browser.log",
+      "sha256": "d7b4b9e5f4a59d0706d42f4bf5b28f64bae1eb26bc452e2e6e33e39ba7d625d4"
+    },
+    "publication-rh-assets.log": {
+      "path": ".lake/riesz-insertion-rate/publication-rh-assets.log",
+      "sha256": "b4ae83405107c0a3aa32587565e935810c4283cb89044bcacf096e00b55aa749"
+    },
+    "publication-rh-browser.log": {
+      "path": ".lake/riesz-insertion-rate/publication-rh-browser.log",
+      "sha256": "8b232438932d8d9edb9fc41ed7ecb191578cef76e386e9976b538e2a8472d427"
+    },
+    "publication-rh-graph.log": {
+      "path": ".lake/riesz-insertion-rate/publication-rh-graph.log",
+      "sha256": "7674412888475bc69b0e44fd295e551c5f9bff429d65ebdec534826f54c3da5b"
+    },
+    "publication-status.log": {
+      "path": ".lake/riesz-insertion-rate/publication-status.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication-zero-assets.log": {
+      "path": ".lake/riesz-insertion-rate/publication-zero-assets.log",
+      "sha256": "a2487e6a21b8bb5be04aeff20f0cf849af7cb31dd08c44faaee67a58c0e7563a"
+    },
+    "publication-zero-browser.log": {
+      "path": ".lake/riesz-insertion-rate/publication-zero-browser.log",
+      "sha256": "83a4cd9348d0261de49e8e3266a56662ebcc26eac496e8db0c1ae27650238f8a"
+    },
+    "publication-zero-graph.log": {
+      "path": ".lake/riesz-insertion-rate/publication-zero-graph.log",
+      "sha256": "63add4826078bf8331834b38bfb35cd48711a5698f43f6ba7cf1faf4d808298f"
+    },
+    "publication-zero-plot.log": {
+      "path": ".lake/riesz-insertion-rate/publication-zero-plot.log",
+      "sha256": "e66e40150eaf7176755129f1980b04d3093972712b897cc9df97d320f3e54188"
+    }
+  }
+}

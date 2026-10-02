@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Bound joinedPhysical through its exact full-mass two-hinge core, retaining the signed phase and every original mask. On 1/2<u<=0.50005, prioritize the independent -79/1000-o(1) floor for simple exposed zeros; the 3/2+o(1) ceiling handles higher multiplicity. Both arithmetic bounds remain open.
+Bound joinedPhysical with all counts, phase, allocation and funding retained. On 1/2<u<=0.50005, an independent cofinal -399/5000-o(1) floor excludes simple exposed zeros; a 42/25+o(1) ceiling handles higher multiplicity. Both arithmetic estimates remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Bound joinedPhysical through its exact full-mass two-hinge core, retaining the s
 
 ### Latest Update
 
-**Growing floor populations rejoined; masked comparison and owner payment checked.** Lean joins both growing-population payments with the same fixed-count funding ledger, retains the signed whole-core comparison, and pays owner shares at least 60.08% with a geometric source-scale error across all counts and correlated masks. The remaining weighted variation, signed funding balance and numerical -79/1000 floor are open; no zero exclusion follows.
-Prove joint signed cancellation across the remaining counts, share geometries and prime periods, retaining the funding debit and both cutoff hinges before any one-sided allowance.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCoreOwnerPayment.lean#L542)
-· [Proof details](docs/zeta-riesz-core-owner-payment.md).
+**Whole-floor cancellation credits checked; independent insertion rate audited.** Lean retains exact complex and cubic cancellation credits in the original whole-floor inequality, pays several correlated error sectors geometrically, and checks weaker sufficient floor/ceiling thresholds. Complete independent genuine-prime insertion matching is proved too slow. No fixed numerical bound for the remaining joint cost has been proved; semiprime side-investigation algebra is also included.
+Bound the retained correlated signed cost at source scale; the cofinal 399/5000 premise is still open and no zero exclusion follows.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSignedNullGain.lean#L347)
+· [Proof details](docs/zeta-riesz-research-publication.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

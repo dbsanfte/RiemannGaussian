@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T12:36:59.049430+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszComplexNullFloor",
+  "scope": "Exact complex null-profile signed floor and coherent-prefix cancellation for the ORIGINAL carrier. The cofinal numerical budget, floor, ceiling and zero exclusion remain OPEN.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszComplexNullFloor.lean": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+    "RiemannGaussian.lean": "31a620d67630b024bee65d98bd1e26967001b2269b29aefed80a965059847740",
+    "AGENTS.md": "827ec4d24a67fa5fd6654c478a2137e634db75c03c9058117da6b74526f4c9a4",
+    "docs/theorem-explorer/metadata.json": "b869237db4641c53c59e07d07347709afc6de93426c099d1deb8da63f5261fb0",
+    "docs/zeta-riesz-complex-null-floor.md": "ec4e7fba7c3016ec41b3991bf69388e2569dde597029fa015c644cc43a294845",
+    "scripts/probe_riesz_complex_null_profiles.py": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszComplexNullFloor.nullProfile_pairing_zero",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.complex_null_zero",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.sum_increment_eq",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.cost_floor",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.continuous_cost",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.exists_best",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.bestParameters_bound",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_nonneg",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.cost_tilt_eq",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_le_old",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.increment_orthogonal_eq",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.increment_coherent_zero",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.first_cutoff_zero",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.orthogonal_floor",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.best_floor",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.gain_nonneg",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_add_credits_le_original",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.nativeCost_le_old",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.nativeGain_nonneg",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.native_floor",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.eventually_joined_floor_with_credits",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.negative_real_le_bestCost_of_im_zero",
+    "RiemannGaussian.ZetaRieszComplexNullFloor.false_of_cofinal_nativeCost"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-complex-null-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "completedJobs": 10449,
+      "log": ".lake/riesz-complex-null-build.log"
+    },
+    "compiledCurrentRoot": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-complex-null-root-compile.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-complex-null-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "errors": 0,
+      "declarations": 38,
+      "generatedDeclarations": 12,
+      "linters": 14,
+      "publicTheoremCount": 23,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszComplexNullFloor.nullProfile_pairing_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.complex_null_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.sum_increment_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.cost_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.continuous_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.exists_best": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.bestParameters_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.cost_tilt_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_le_old": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.increment_orthogonal_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.increment_coherent_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.first_cutoff_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.orthogonal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.best_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.gain_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.bestCost_add_credits_le_original": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.nativeCost_le_old": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.nativeGain_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.native_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.eventually_joined_floor_with_credits": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.negative_real_le_bestCost_of_im_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexNullFloor.false_of_cofinal_nativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-complex-null-audit.log"
+    },
+    "sourceScan": {
+      "sorry": false,
+      "admit": false,
+      "newAxioms": false,
+      "unsafe": false
+    },
+    "pythonSyntax": {
+      "exitCode": 0
+    },
+    "whitespace": {
+      "exitCode": 0
+    }
+  },
+  "originalCarrier": {
+    "name": "ZetaRieszGammaJoint.joinedPhysical",
+    "radiusCeiling": "10001/20000",
+    "lowerRadius": "1/2",
+    "dyadicScheduleUnchanged": true,
+    "allFiniteMasksRetained": true,
+    "allCountsJoined": true,
+    "earlyCutoffsRetained": true,
+    "noCofactorCompletion": true,
+    "imaginaryError": "existing nativeError = 4*abs(Im P)+5*norm(Q-P)",
+    "earlyCoherentCancellation": "perpendicular complex null coefficients; flat Phi real-multiple-of-M increments exactly zero",
+    "signedCostNeverWorseThanPrevious": true,
+    "nativeGainMagnitudeProved": false,
+    "cofinalBudget": "new nativeCost <= 399/5000 (OPEN)",
+    "independentFloorProved": false,
+    "simpleOrMultipleExclusionProved": false
+  },
+  "numerical": {
+    "optionalOutsideCI": true,
+    "reports": [
+      ".lake/riesz-complex-null-probe.json",
+      ".lake/riesz-complex-null-larger.json"
+    ],
+    "cases": 15,
+    "orders": [
+      256,
+      640,
+      1536
+    ],
+    "joinedComplexNullImprovedCases": 8,
+    "complexNullSavingPercent": [
+      3.751090596680118,
+      32.73853761266216
+    ],
+    "coherentChannelFreeImprovedCases": 4,
+    "coherentChannelFreeSavingPercent": [
+      5.021011803120312,
+      17.483414357500372
+    ],
+    "largestOrderSavingPercent": [
+      0.0,
+      12.418620637034794,
+      0.0
+    ],
+    "largestOrderCoherentFreeSavingPercent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "noUniformRateSupported": true,
+    "maximumNullPairingRoundingError": 9.219222055373155e-12,
+    "probablePrimes": true,
+    "amplitudeRescaled": true,
+    "largePeriodEdgesInterpolated": true,
+    "fullNativePopulation": false,
+    "subsetImaginaryZeroAssumed": false,
+    "intervalArithmetic": false,
+    "sourceBudgetCertified": false,
+    "cofinalBoundCertified": false
+  },
+  "preservation": {
+    "oldLeanCount": 2791,
+    "oldLeanChanges": [],
+    "stagedIndexChanges": [],
+    "stagedExternalWorktreeChanges": [
+      "docs/semiprime-factorisation-investigation.md"
+    ],
+    "readmeUnchanged": true,
+    "publicMetadataUnchanged": true,
+    "headUnchanged": true
+  }
+}

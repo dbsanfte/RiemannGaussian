@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Exact cubic signed-cost credit for original joinedPhysical and generic joint/dual signed block detector; native credit magnitude and cofinal floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSignedNullGain.lean": {
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "snapshot": ".lake/riesz-signed-null-gain/source-908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3.lean"
+    },
+    "scripts/riesz_signed_block_geometry.py": {
+      "sha256": "fa4f09e6e387529352727951e80ccf82c87fd79fc3b2e2d31ae5b0b10ff31e6e",
+      "snapshot": ".lake/riesz-signed-null-gain/source-fa4f09e6e387529352727951e80ccf82c87fd79fc3b2e2d31ae5b0b10ff31e6e.py"
+    },
+    "scripts/probe_riesz_signed_block_geometry.py": {
+      "sha256": "c57594b14ae12ac5083ec81ddf1c2ae79645712f78cfdb5738c7f8a6d7c78975",
+      "snapshot": ".lake/riesz-signed-null-gain/source-c57594b14ae12ac5083ec81ddf1c2ae79645712f78cfdb5738c7f8a6d7c78975.py"
+    },
+    "docs/zeta-riesz-signed-null-gain.md": {
+      "sha256": "f0b4f990fc6f2469cc99ae3d99514bf5210a264ff451167288fc72158b9ca2bf",
+      "snapshot": ".lake/riesz-signed-null-gain/source-f0b4f990fc6f2469cc99ae3d99514bf5210a264ff451167288fc72158b9ca2bf.md"
+    },
+    "RiemannGaussian/ZetaRieszCubicPrimeEnergy.lean": {
+      "sha256": "1c8b3c1b349d912d91d48d413de4c64bef76c18f9ff6fcb9d958fb8dcc5677a8",
+      "snapshot": ".lake/riesz-signed-null-gain/source-1c8b3c1b349d912d91d48d413de4c64bef76c18f9ff6fcb9d958fb8dcc5677a8.lean"
+    },
+    "RiemannGaussian/ZetaRieszComplexNullFloor.lean": {
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-signed-null-gain/source-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    }
+  },
+  "publicTheorems": [
+    "cubic_pairing_zero",
+    "sum_cubicIncrement_eq_zero",
+    "blockCost_shift_eq",
+    "crossingCost_nonneg",
+    "floor_with_null_gain",
+    "boxCost_lower_bound",
+    "crossingCost_eq_zero_of_margin",
+    "floor_with_stable_null_gain",
+    "correctedCost_floor",
+    "cost_sub_correctedCost_eq",
+    "credit_nonneg",
+    "credit_le_bestCost",
+    "floor_with_credit",
+    "native_floor_with_credit",
+    "false_of_cofinal_credited_cost"
+  ],
+  "proofCount": 15,
+  "axioms": {
+    "RiemannGaussian.ZetaRieszSignedNullGain.cubic_pairing_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.sum_cubicIncrement_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.blockCost_shift_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.crossingCost_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.floor_with_null_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.boxCost_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.crossingCost_eq_zero_of_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.floor_with_stable_null_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.correctedCost_floor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.cost_sub_correctedCost_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.credit_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.credit_le_bestCost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.floor_with_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.native_floor_with_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedNullGain.false_of_cofinal_credited_cost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "validation": {
+    "focusedWarningAsErrorLean": true,
+    "focusedTargetBuild": true,
+    "ordinaryRootImportedInNamespaceAudit": true,
+    "namespaceLinters": 14,
+    "allPublicStandardAxioms": true,
+    "logs": {
+      "build.log": {
+        "path": ".lake/riesz-signed-null-gain/build.log",
+        "sha256": "ffb00c684c39d70b04a74aead2db2cdaabce5b024a0028f53b5fc47c25d6b2fb"
+      },
+      "lean-audit.log": {
+        "path": ".lake/riesz-signed-null-gain/lean-audit.log",
+        "sha256": "c7909927ecfd92f96e38f271042fba6bd2b3694f370bea663d1c030ff9d30f66"
+      },
+      "Audit.lean": {
+        "path": ".lake/riesz-signed-null-gain/Audit.lean",
+        "sha256": "69cddcc6290d4cbae1b85aa316240f36d6c194746588be76e08dd943b6e00464"
+      },
+      "detector.json": {
+        "path": ".lake/riesz-signed-null-gain/detector.json",
+        "sha256": "27d1f0cdd19bb001e2fb300f92afe26147071468565d21bd906fc8b558847c73"
+      },
+      "diagnostics.json": {
+        "path": ".lake/riesz-signed-null-gain/diagnostics.json",
+        "sha256": "61dfa48666fccea709a2565680697acb40532d8db7284f1d889c3bcf2f6ae815"
+      }
+    },
+    "protectedPublicFilesUnchanged": true,
+    "ownFilesNotStaged": true,
+    "externalIndexChangedDuringAudit": true,
+    "indexNotWrittenByThisSlice": true
+  },
+  "detector": {
+    "selfTest": {
+      "exactCrossingIdentities": 300,
+      "exactReplayedLPs": 22,
+      "jointDirectionEscapesCoordinateTrap": true,
+      "cubicCountThreeNotDiscarded": true,
+      "signedUnmatchedLowerBoundRetained": true,
+      "zeroBlocksCharged": true,
+      "nonnullDirectionRejected": true,
+      "scope": "independent unit regressions, not population scans",
+      "paidIncompleteAndNonnullGuards": 3
+    },
+    "nativeRecordsEvaluated": 0,
+    "allBlocksAndCountsJoinedBeforeClipping": true,
+    "signCrossingsAndZeroGroupsPriced": true,
+    "nonnullColumnsRejectedExactly": true,
+    "floatingOptimizerOnlyProposes": true,
+    "rationalPrimalDualReplay": true,
+    "dualResidualsExplicitlyPaid": true,
+    "activeKinkRankNotCovariance": true,
+    "declaredScopeAndCompletenessNotNativeCoverProof": true
+  },
+  "scope": {
+    "cubicCorrectionOnCountAtLeastFour": true,
+    "countThreeRetainedInBaseline": true,
+    "nativeFloorInequalityImprovedByExplicitCredit": true,
+    "sameAnalyticError": true,
+    "nativeCreditSizeBound": false,
+    "cofinal399Over5000Bound": false,
+    "additionalNativePopulationPaid": false,
+    "floorClosed": false,
+    "ceilingClosed": false,
+    "restrictedZeroExclusion": false,
+    "RHClaim": false,
+    "optionalOutsideBuildsCI": true,
+    "noCommitPushSubagentsOrWiderGates": true
+  }
+}

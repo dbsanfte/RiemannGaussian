@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T01:28:10.793598+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "independentRemainingSignedBoundProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "defaultExplorerEndpointsUnchanged": true,
+  "publicReadmeUnchanged": true,
+  "unrelatedStagedSemiprimeFilesPreserved": true,
+  "module": "RiemannGaussian.ZetaRieszManyBinCorrelationAudit",
+  "scope": "Actual common-cofactor sharp-prefix correlations at active post-hinge cutoffs, with original signed weights retained. Generic diagonalization obstruction, not a native many-bin arithmetic counterexample or a carrier cancellation bound.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean": "f140c5b549c83c98295517f29eaf23fba81204b899849f55a7aa794c87df3276",
+    "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+    "RiemannGaussian/ZetaRieszPrefixCoherenceAudit.lean": "e1923088f9f52e647e6b0eedea3e024eaa50b7c186cdee399cfa748ecb7116ac",
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "scripts/probe_riesz_post_hinge_correlations.py": "40a34f463c7289d408626bfe334637c8391c482148929d83a918219c090a3367",
+    "RiemannGaussian.lean": "eab7d05de12ebead2127a7c115b392e88e84d53b34a90ba14b19daa2170e1d2d",
+    "docs/theorem-explorer/metadata.json": "f41a2e5fa6f26085cad21c24612f7480775088a88603f5d3333dddf5f07be033",
+    "docs/zeta-riesz-many-bin-phase-audit.md": "8d4fec2d03d34c4ff47704e8c5bdc5fd0fd986f94736e060da7f98caebfdcd12",
+    "AGENTS.md": "50b8eaa6ba42ccf00fd18faa9c085afbdd759e09fc66119097b326aba2f5127f"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.sharp_prime_mul",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.sharp_owner_cell",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.owner_bins_eq",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.correlation_owner_cell",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.phaseEnergy_owner_cell_lower",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.post_hinge_active",
+    "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.diagonal_coefficient_owner_cell_lower"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-many-bin-correlation-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszManyBinCorrelationAudit",
+      "completedJobs": 10428,
+      "log": ".lake/riesz-many-bin-correlation-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-many-bin-correlation-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszManyBinCorrelationAudit",
+      "linters": 14,
+      "publicTheoremCount": 7,
+      "declarations": 9,
+      "generatedDeclarations": 11,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.sharp_prime_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.sharp_owner_cell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.owner_bins_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.correlation_owner_cell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.phaseEnergy_owner_cell_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.post_hinge_active": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinCorrelationAudit.diagonal_coefficient_owner_cell_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-many-bin-correlation-audit.log"
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+        "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean",
+        "scripts/probe_riesz_cutoff_periods.py",
+        "scripts/probe_riesz_post_hinge_correlations.py",
+        "docs/riesz-cutoff-period-floor-audit.json",
+        "docs/riesz-many-bin-correlation-audit.json"
+      ]
+    },
+    "auditJson": {
+      "parsed": true
+    }
+  },
+  "exactSharpIdentity": "sharp(k,p*a)=sharp(k,a)-sharp(floor(k/p),a), for prime p coprime to a",
+  "canonicalOwnerBinPreservationProved": true,
+  "coherentCellContribution": "((sharp(k,a)-sharp(Q,a))*sum_(p in P)w(p*a))^2/k",
+  "allSignedWeightsRetained": true,
+  "existingPhaseEnergyUsed": true,
+  "newGramCarrierIntroduced": false,
+  "genericDiagonalizationObstructionProved": true,
+  "specificCarrierCoherenceAsserted": false,
+  "nativeManyBinCounterexampleProved": false,
+  "optionalProbe": {
+    "script": "scripts/probe_riesz_post_hinge_correlations.py",
+    "runtimeArtifact": ".lake/riesz-post-hinge-correlations.json",
+    "cases": [
+      {
+        "order": 4,
+        "height": 54,
+        "labelCount": 123,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 5.5,
+        "firstPostHingeCutoff": 244,
+        "jointPhaseEnergy": 1.5370576057859464e-07,
+        "diagonalLabelEnergy": 2.2442323718318375e-07,
+        "signedOffDiagonalEnergy": -7.07174766045891e-08,
+        "jointToDiagonal": 0.6848923601130193,
+        "weightedCrossCancellationPresent": true
+      },
+      {
+        "order": 4,
+        "height": 65,
+        "labelCount": 123,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 5.5,
+        "firstPostHingeCutoff": 244,
+        "jointPhaseEnergy": 1.4033946494755465e-07,
+        "diagonalLabelEnergy": 2.0660533559733577e-07,
+        "signedOffDiagonalEnergy": -6.626587064978113e-08,
+        "jointToDiagonal": 0.6792635076040329,
+        "weightedCrossCancellationPresent": true
+      },
+      {
+        "order": 4,
+        "height": 100,
+        "labelCount": 123,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 5.5,
+        "firstPostHingeCutoff": 244,
+        "jointPhaseEnergy": 1.534761973029438e-07,
+        "diagonalLabelEnergy": 2.3034520737054552e-07,
+        "signedOffDiagonalEnergy": -7.686901006760171e-08,
+        "jointToDiagonal": 0.6662877819552541,
+        "weightedCrossCancellationPresent": true
+      },
+      {
+        "order": 5,
+        "height": 54,
+        "labelCount": 1349,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 6.875,
+        "firstPostHingeCutoff": 967,
+        "jointPhaseEnergy": 1.6132034377497563e-07,
+        "diagonalLabelEnergy": 4.5116062364601817e-08,
+        "signedOffDiagonalEnergy": 1.1620428141037382e-07,
+        "jointToDiagonal": 3.5756742791797365,
+        "weightedCrossCancellationPresent": false
+      },
+      {
+        "order": 5,
+        "height": 65,
+        "labelCount": 1349,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 6.875,
+        "firstPostHingeCutoff": 967,
+        "jointPhaseEnergy": 2.7905123025616007e-08,
+        "diagonalLabelEnergy": 4.54842235705539e-08,
+        "signedOffDiagonalEnergy": -1.7579100544937896e-08,
+        "jointToDiagonal": 0.6135121331098536,
+        "weightedCrossCancellationPresent": true
+      },
+      {
+        "order": 5,
+        "height": 100,
+        "labelCount": 1349,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 6.875,
+        "firstPostHingeCutoff": 967,
+        "jointPhaseEnergy": 9.583725937291147e-09,
+        "diagonalLabelEnergy": 4.4556955504451996e-08,
+        "signedOffDiagonalEnergy": -3.497322956716085e-08,
+        "jointToDiagonal": 0.2150893351843478,
+        "weightedCrossCancellationPresent": true
+      },
+      {
+        "order": 6,
+        "height": 54,
+        "labelCount": 13339,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 8.25,
+        "firstPostHingeCutoff": 3827,
+        "jointPhaseEnergy": 2.8808013911103776e-08,
+        "diagonalLabelEnergy": 8.362167127947686e-09,
+        "signedOffDiagonalEnergy": 2.044584678315609e-08,
+        "jointToDiagonal": 3.445041634580925,
+        "weightedCrossCancellationPresent": false
+      },
+      {
+        "order": 6,
+        "height": 65,
+        "labelCount": 13339,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 8.25,
+        "firstPostHingeCutoff": 3827,
+        "jointPhaseEnergy": 8.321173549276047e-09,
+        "diagonalLabelEnergy": 8.245975140058015e-09,
+        "signedOffDiagonalEnergy": 7.519840921803231e-11,
+        "jointToDiagonal": 1.0091194077038539,
+        "weightedCrossCancellationPresent": false
+      },
+      {
+        "order": 6,
+        "height": 100,
+        "labelCount": 13339,
+        "exactAllocationSupportEmpty": true,
+        "testLength": 8.25,
+        "firstPostHingeCutoff": 3827,
+        "jointPhaseEnergy": 3.673657686184626e-08,
+        "diagonalLabelEnergy": 8.163540118779382e-09,
+        "signedOffDiagonalEnergy": 2.8573036743066878e-08,
+        "jointToDiagonal": 4.500079172433728,
+        "weightedCrossCancellationPresent": false
+      }
+    ],
+    "ownerCell": {
+      "rows": [
+        {
+          "owner": 907,
+          "label": 190470,
+          "cofactor": 210,
+          "quotientCutoff": 6,
+          "literalSharpPrefix": 1,
+          "ownerShare": 0.5601712937425948,
+          "totalLogOverOrder": 2.0262083301387674,
+          "originalRiesz": -0.3519019193431907,
+          "phaseCosine": -0.9948669014606644
+        },
+        {
+          "owner": 911,
+          "label": 191310,
+          "cofactor": 210,
+          "quotientCutoff": 6,
+          "literalSharpPrefix": 1,
+          "ownerShare": 0.5603304368610492,
+          "totalLogOverOrder": 2.026941737996238,
+          "originalRiesz": -0.35630236648801183,
+          "phaseCosine": -0.9907311632089406
+        }
+      ],
+      "testLength": 8.25,
+      "cutoff": 5500,
+      "postHinge": true,
+      "fullPhaseSeparation": 0.23762414582037025,
+      "rawSharpJointToDiagonal": 2,
+      "manyBinHypothesisVerified": false,
+      "nativePhysicalMasksVerified": false
+    },
+    "literalUnpaidCount56SupportUsed": false,
+    "nativeMovingLengthUsed": false,
+    "nativePhysicalPrimeMasksUsed": false,
+    "fundingWitnessIncluded": false,
+    "rigorousIntervalArithmetic": false,
+    "sourceScaleSavingCertified": false,
+    "floorCertified": false,
+    "casesWithNegativeCrossTerms": 5,
+    "jointToDiagonalRange": [
+      0.2150893351843478,
+      4.500079172433728
+    ]
+  },
+  "nextArithmeticTarget": "Independently bound the actual post-hinge cross-cofactor/count/funding sum. Occupancy alone is not a signed correlation estimate.",
+  "fibreEnergyLowerBoundExtendedToWholeCarrier": false,
+  "energyMonotonicityUnderCroppingClaimed": false
+}

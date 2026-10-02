@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T02:26:19.721502+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszInnerHingeTransport",
+  "scope": "Independent finite literal opposite-count pair floor on inner-hinge geometry, retaining original allocation, full phase and arbitrary signed funding multipliers; disjoint matching comparison with signed unmatched rest. No source-scale coverage or cost bound for the native many-bin population.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszInnerHingeTransport.lean": "28e09e25f0fe9e279217892e53522ea3d946b36706d3844aa88cf32480820e4e",
+    "RiemannGaussian/ZetaRieszSignedConvolution.lean": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+    "RiemannGaussian/ZetaRieszPairBoundary.lean": "764901ad8a8b7153a8056f6df80220e4fcac42866832833a5bec8a73af65f179",
+    "RiemannGaussian/ZetaRieszReplacementPhase.lean": "f7c413be7ffe935cb6610d89a630120037ad7cbca799f1843454537fae30af74",
+    "RiemannGaussian/ZetaRieszPairMatching.lean": "02874fe0fc579fd79f519665f007a8c4d042356a400dcf6e26af9983e53e5a1c",
+    "RiemannGaussian/ZetaRieszFixedCofactor.lean": "29519078806daa2f606463c851b3982c7ba3f08f3e5cac8c2ce14f6bcc72335d",
+    "RiemannGaussian/ZetaSquarefreeRieszWindows.lean": "603a1b29d3f2d60fa6d76c868ca1342166cf2b4a937fb14796310909a842db64",
+    "scripts/probe_riesz_inner_hinge_transport.py": "e04f0cf41a4477ea79e155c6b34f565cdc6dea48c8f48b3b5075160d9dd8dd29",
+    "docs/zeta-riesz-inner-hinge-transport.md": "e01df67d0b421965699b6b07941cb5b914e217500f0c985b284d584310109b98",
+    "RiemannGaussian.lean": "0cbc5e6c5e39d7d880845085fc619e5303e3912b3083f1b83fad9ca2df9ecc61",
+    "docs/theorem-explorer/metadata.json": "9672d9f5be457fe1980de22c3fe70ee2ae5d8a162076f75ad8e5f5789722d746",
+    "AGENTS.md": "bf75127419ca3412bc785d732b270563efb5ad3ff1153939a8e5582949625aef"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.response_inner",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.literal_inner_atom",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.inserted_pair_eq",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.inserted_pair_floor",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.norm_linear_pair_le",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.cutoff_gap_eq",
+    "RiemannGaussian.ZetaRieszInnerHingeTransport.matching_floor_with_signed_rest"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-inner-hinge-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10336,
+      "target": "RiemannGaussian.ZetaRieszInnerHingeTransport",
+      "log": ".lake/riesz-inner-hinge-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-inner-hinge-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszInnerHingeTransport"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszInnerHingeTransport",
+      "linters": 14,
+      "declarations": 10,
+      "generatedDeclarations": 1,
+      "publicTheoremCount": 7,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.response_inner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.literal_inner_atom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.inserted_pair_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.inserted_pair_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.norm_linear_pair_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.cutoff_gap_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeTransport.matching_floor_with_signed_rest": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-inner-hinge-audit.log"
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "defaultExplorerEndpointsUnchanged": true,
+    "readmeUnchanged": true,
+    "unrelatedStagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "whitespace": {
+      "sourceFilesChecked": [
+        "RiemannGaussian/ZetaRieszInnerHingeTransport.lean",
+        "RiemannGaussian/ZetaRieszSignedConvolution.lean",
+        "RiemannGaussian/ZetaRieszPairBoundary.lean",
+        "RiemannGaussian/ZetaRieszReplacementPhase.lean",
+        "RiemannGaussian/ZetaRieszPairMatching.lean",
+        "RiemannGaussian/ZetaRieszFixedCofactor.lean",
+        "RiemannGaussian/ZetaSquarefreeRieszWindows.lean",
+        "scripts/probe_riesz_inner_hinge_transport.py",
+        "docs/zeta-riesz-inner-hinge-transport.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ],
+      "exitCode": 0
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_inner_hinge_transport.py",
+      "log": ".lake/riesz-inner-hinge-probe.log",
+      "runtimeArtifact": ".lake/riesz-inner-hinge-probe.json"
+    }
+  },
+  "finiteLiteralPairSignedEstimateProved": true,
+  "allOriginalSignedWeightsRetained": true,
+  "finiteNativePartnerCoverageProved": false,
+  "totalSourceScaleMatchingCostProved": false,
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "independentRemainingSignedBoundProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "exactPair": "mu(b)*(tau*W-tau_prime*W_prime), with W,W_prime retaining each original allocation, phase and signed funding multiplier",
+  "finitePairFloor": "-abs(Re(tau*W-tau_prime*W_prime)) <= Re(original weighted pair)",
+  "countFreeMismatchBound": "abs(tau-tau_prime)*norm(W)+abs(tau_prime)*norm(W-W_prime)",
+  "exactCutoffAndTotalLogGap": "log(p_prime*r)-log(p)",
+  "matchingCriterion": "Disjoint original-label matching inside the same supported set; pair costs spent once and unmatched rest retained signed",
+  "optionalProbe": {
+    "precisionDigits": 120,
+    "pairCaseCount": 114,
+    "orders": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "counts": [
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "equalWeightPairToSeparateNormRange": [
+      "0.000841310152914599783055560147489",
+      "0.0449281981332303995887153863129"
+    ],
+    "differentSignedWeightPairToSeparateNormRange": [
+      "0.999999999999999999999805387493",
+      "1.0"
+    ],
+    "finiteOwnerCells": [
+      {
+        "order": 32,
+        "originalCount": 4,
+        "insertedCount": 5,
+        "integerOwnerCellWidth": 8192,
+        "originalPrimeCount": 235,
+        "distinctOppositeParityLabels": 266,
+        "finiteCellCoverageFraction": 1.0,
+        "maxTotalLogGapInCell": "2.77638583241051331808117135283e-11",
+        "completeCellMatchingExistsNumerically": true,
+        "literalUnpaidSupportCertified": false
+      },
+      {
+        "order": 64,
+        "originalCount": 6,
+        "insertedCount": 7,
+        "integerOwnerCellWidth": 8192,
+        "originalPrimeCount": 110,
+        "distinctOppositeParityLabels": 155,
+        "finiteCellCoverageFraction": 1.0,
+        "maxTotalLogGapInCell": "1.64428053273065699724205300357e-26",
+        "completeCellMatchingExistsNumerically": true,
+        "literalUnpaidSupportCertified": false
+      }
+    ],
+    "nativeMovingLengthRetained": true,
+    "exactUnpaidFactorialOrdersRetained": true,
+    "allocationPrimeEligibilityRetained": true,
+    "completeRieszSubsetSignsRetained": true,
+    "fullComplexPhaseRetained": true,
+    "nativeCount56ManyBinPopulationEvaluated": false,
+    "originalDyadicScheduleEvaluated": false,
+    "fundingWitnessIncluded": false,
+    "sourceScaleMatchingCostCertified": false,
+    "primeTestsKernelCertified": false,
+    "floatingResultsIntervalCertified": false,
+    "floorCertified": false,
+    "oldFixedParityPacketRoughPrimeMaskSatisfied": false,
+    "nativeCoreMembershipCertified": false
+  },
+  "nextArithmeticTarget": "Prove admissible native cross-count partner coverage and the total actual allocation/funding mismatch, keeping the unmatched and supply terms signed in the original whole funded ledger. Bin occupancy alone is not such a theorem.",
+  "scopeCorrection": {
+    "checkedAt": "2026-10-02T02:51:02.731532+00:00",
+    "reason": "The previous prose/flag conflated the older fixed parity packet all-leg roughness mask with the current whole core. The current core upper cutoff does not forbid small cofactor primes; N^2 controls allocation eligibility.",
+    "currentScope": "Numerical samples still do not certify the native count56+ many-bin population, dyadic schedule or original funding witness.",
+    "proofSourceUnchanged": true,
+    "originalSourcesAreHistoricalSnapshot": true,
+    "correctedOptionalProbeExitCode": 0,
+    "correctedProbeRows": 114,
+    "correctedScopeSourceHashes": {
+      "scripts/probe_riesz_inner_hinge_transport.py": "3d4c7adb7bd046173857eebc40d097028b407086a0ddca8f9398dd779842c748",
+      "docs/zeta-riesz-inner-hinge-transport.md": "5ff868350d98e3ebacb03e67052b5f893d00ecd0cd9ffc147cade9857f152995",
+      "RiemannGaussian/ZetaRieszCentralPrimeLayers.lean": "c7680adb066a86797056f8680aa0c8c4de1e8d64699614844ab0ec4ef9f24177",
+      "RiemannGaussian/ZetaRieszMaskSupport.lean": "93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129",
+      "RiemannGaussian/ZetaRieszAnnulusJoint.lean": "d7e2bdbb21d000e6ec59ea8657bca1a3e0f9efa379b5e551ade046061455f4a5"
+    }
+  }
+}

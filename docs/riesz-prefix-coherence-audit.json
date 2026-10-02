@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T00:12:37.990788+00:00",
+  "module": "RiemannGaussian.ZetaRieszPrefixCoherenceAudit",
+  "scope": "Lower bounds on the EXISTING actual-integer prefix energy and one-sided cost. Arbitrary phases, masks, allocation and funding remain inside the common moment. This audits automatic diagonalization; it does not claim coherence of the specific carrier weights or refute a fixed-height arithmetic bound. Exact constant projection is included and its generic finite regression gives no source-scale saving.",
+  "documentation": "docs/zeta-riesz-prefix-coherence-audit.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszPrefixCoherenceAudit.lean": "e1923088f9f52e647e6b0eedea3e024eaa50b7c186cdee399cfa748ecb7116ac",
+    "RiemannGaussian.lean": "1af1efb19ce1b78eeec4188d14d40c3e0436846640c0047e2dfa7d9b70fb991c",
+    "docs/zeta-riesz-prefix-coherence-audit.md": "ba1cba10371e74aaaefd3311425b7dccb95b393f121be8acf90f3c25715ddff8",
+    "scripts/probe_riesz_prefix_coherence.py": "754c6b91f1a5840c6b639a63e15d6cbc8930dbd688e92f211ae3adeb5351e6dd",
+    "RiemannGaussian/ZetaRieszRejoinedPhaseFloor.lean": "50fbc334595bf90fdd97b9cd26b99cbafafc63b512a7cc746db1b8f4d84a6ebe",
+    "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean": "c216bfbac39595b8f48d473ad6b32da6ded27c7d1ef377add71d7e4aafef1fff",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.sharp_one",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.correlation_one",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.sharp_eq_one_of_lt_minFac",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.correlation_eq_of_rough",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.phaseEnergy_coherent_lower",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.phaseEnergy_one_lower",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.diagonal_coefficient_lower",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.negativeCost_one_lower",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.funded_correlation_one",
+    "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.constant_projection_pairing"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-prefix-coherence-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10425,
+      "target": "RiemannGaussian.ZetaRieszPrefixCoherenceAudit",
+      "log": ".lake/riesz-prefix-coherence-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-prefix-coherence-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit"
+      ],
+      "linters": 14,
+      "publicTheoremCount": 10,
+      "generatedDeclarations": 4,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.sharp_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.correlation_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.sharp_eq_one_of_lt_minFac": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.correlation_eq_of_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.phaseEnergy_coherent_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.phaseEnergy_one_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.diagonal_coefficient_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.negativeCost_one_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.funded_correlation_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPrefixCoherenceAudit.constant_projection_pairing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-prefix-coherence-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/riesz-prefix-coherence-probe.json",
+      "testCases": 9,
+      "maximumActualLabelCount": 13343,
+      "orders": [
+        4,
+        5,
+        6
+      ],
+      "heights": [
+        54,
+        65,
+        100
+      ],
+      "testLength": "11N/8, NOT rounded moving length",
+      "fullCostRatioRange": [
+        0.9975740489521534,
+        0.9999984124212183
+      ],
+      "oneSidedCostRatioRange": [
+        0.9701724559944018,
+        1.0277387505437097
+      ],
+      "maximumOriginalRieszCarrierFloatingError": 3.144186300207963e-18,
+      "maximumProjectionPairingFloatingError": 2.168404344971009e-19,
+      "literalUnpaidSupportUsed": false,
+      "fundingPopulationIncluded": false,
+      "rigorousIntervalArithmetic": false,
+      "sourceScaleSavingCertified": false,
+      "floorCertified": false
+    },
+    "placeholderScan": {
+      "matches": 0
+    },
+    "whitespace": {
+      "exitCode": 0
+    },
+    "previousLocalAuditHashes": {
+      "matches": 40,
+      "mismatches": 0
+    }
+  },
+  "actualIntegerCoherentChannelProved": true,
+  "uniformDiagonalCoefficientObstructionProved": true,
+  "exactConstantProjectionProved": true,
+  "actualCarrierCoherenceClaimed": false,
+  "globalRoughnessThresholdAssumed": false,
+  "allEnergyMethodsRefuted": false,
+  "unpaidQuantities": [
+    "actual joined one-sided prefix cost, including original funding",
+    "independent eventual -79/1000 whole-carrier floor",
+    "multiplicity ceiling"
+  ],
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false
+}

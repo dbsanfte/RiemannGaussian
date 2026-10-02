@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T12:05:58.188846+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszJointCreditFloor",
+  "modules": [
+    "RiemannGaussian.NatDivisorSquareHarmonic",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment",
+    "RiemannGaussian.ZetaRieszJointCreditFloor"
+  ],
+  "scope": "Independent finite divisor/phase-pair payment plus the actual global phase credit retained in the whole signed-energy floor. The joint numerical budget and floor are OPEN.",
+  "sources": {
+    "RiemannGaussian/NatDivisorSquareHarmonic.lean": "61e2e5ad56be3f34aac4c42c01ea409c2e0aeadd9d960983f4a11ecd389d18d9",
+    "RiemannGaussian/ZetaRieszFinitePhasePayment.lean": "66a5b02305927e6ed5aca2267f9e7425cfc9659576ab26ab075a8a4cd13c8257",
+    "RiemannGaussian/ZetaRieszJointCreditFloor.lean": "10e6bc50def010629b9229bb6075ad0670bdd74760ac6e686210bae0da1a815a",
+    "RiemannGaussian.lean": "320c85bb25e1e5c3e417950bf46d00628862ce44bd9171e110fdfcedcbf16cc6",
+    "AGENTS.md": "5530ad9cfe19e977678bdbb002a1311820a2e0dd7470a14050ff32356cc77757",
+    "docs/theorem-explorer/metadata.json": "3082df0dfd4d1c930ca48a2b0107eb6de367b945f7e083b924aece32c150d83c",
+    "docs/zeta-riesz-finite-phase-payment.md": "7100960b2cc9e0399bda95116977f78d4343f1c859e3fe19f884c2203e1c3696",
+    "docs/zeta-riesz-joint-credit-floor.md": "635851436d261b9e0d3af181e7c4d78a60f290c8535451cfcc8d3fa6a1de5876",
+    "scripts/probe_riesz_finite_phase_payment.py": "297cc5c4c829b75c13f39dbc738b661f33cec46ad03f3a9fc2c4b976afca5f23"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.sum_Icc_common_dvd_inv_le",
+    "RiemannGaussian.sum_Icc_card_divisors_sq_div_le_harmonic_four",
+    "RiemannGaussian.sum_card_divisors_sq_div_le_log_four",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.logNear_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.wideNear_subset",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.near_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.maskedEnergy_bound",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.source_rate",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.weighted_maskedEnergy_bound",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.weighted_maskedEnergy_price",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.tendsto_price",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.paidPair_outside_old",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.remainingEnergy_eq",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.cost_split",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.eventually_joined_floor",
+    "RiemannGaussian.ZetaRieszFinitePhasePayment.false_of_cofinal_remainingEnergy",
+    "RiemannGaussian.ZetaRieszJointCreditFloor.tendsto_paidPrice",
+    "RiemannGaussian.ZetaRieszJointCreditFloor.core_negativeCost_bound",
+    "RiemannGaussian.ZetaRieszJointCreditFloor.eventually_joined_floor_with_credit",
+    "RiemannGaussian.ZetaRieszJointCreditFloor.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszJointCreditFloor.false_of_cofinal_cost_sub_credit"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "logs": [
+        ".lake/riesz-divisor-harmonic-direct.log",
+        ".lake/riesz-finite-phase-direct.log",
+        ".lake/riesz-joint-credit-floor-direct.log"
+      ]
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10448,
+      "log": ".lake/riesz-joint-credit-floor-build.log"
+    },
+    "compiledCurrentRoot": {
+      "exitCode": 0,
+      "log": ".lake/riesz-finite-phase-root-compile.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-finite-phase-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "modules": [
+        {
+          "module": "RiemannGaussian.NatDivisorSquareHarmonic",
+          "errors": 0,
+          "declarations": 3,
+          "generatedDeclarations": 8,
+          "linters": 14
+        },
+        {
+          "module": "RiemannGaussian.ZetaRieszFinitePhasePayment",
+          "errors": 0,
+          "declarations": 24,
+          "generatedDeclarations": 11,
+          "linters": 14
+        },
+        {
+          "module": "RiemannGaussian.ZetaRieszJointCreditFloor",
+          "errors": 0,
+          "declarations": 9,
+          "generatedDeclarations": 2,
+          "linters": 14
+        }
+      ],
+      "publicTheoremCount": 22,
+      "axioms": {
+        "RiemannGaussian.sum_Icc_common_dvd_inv_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.sum_Icc_card_divisors_sq_div_le_harmonic_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.sum_card_divisors_sq_div_le_log_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.logNear_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.wideNear_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.near_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.maskedEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.weighted_maskedEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.weighted_maskedEnergy_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.tendsto_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.paidPair_outside_old": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.remainingEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.cost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFinitePhasePayment.false_of_cofinal_remainingEnergy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJointCreditFloor.tendsto_paidPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJointCreditFloor.core_negativeCost_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJointCreditFloor.eventually_joined_floor_with_credit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJointCreditFloor.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJointCreditFloor.false_of_cofinal_cost_sub_credit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-finite-phase-audit.log"
+    },
+    "exactRationalRateAudit": {
+      "sourceLogUpper": "1/5000",
+      "removedDivisorExponent": "3/262144",
+      "oldWidthExponent": "-1/4500",
+      "newWidthExponent": "-1/4900",
+      "newEnergyExponentUpper": "-1/245000",
+      "certifiedEnergyExponent": "-1/250000",
+      "certifiedPriceExponent": "-1/500000",
+      "finiteDivisorMass": "(1+log(X))^4",
+      "energyConstant": "20480*U^2*B^2*phaseCount(y)",
+      "energyPolynomialDegree": 8,
+      "pricePolynomialDegree": 5,
+      "criticalDenominatorFromSourceUpper": 5000,
+      "widthRatioExponent": "1/55125"
+    },
+    "exactFiniteHarmonicRegression": {
+      "limit": 256,
+      "exactRational": true,
+      "finiteMassFloat": 126.91889449349169,
+      "harmonicPowerFloat": 1406.8201495475046
+    },
+    "optionalFiniteProbe": {
+      "exitCode": 0,
+      "report": ".lake/riesz-finite-phase-probe.json",
+      "log": ".lake/riesz-finite-phase-probe.log",
+      "cases": 12,
+      "newPaidOrderedPairsRange": [
+        38,
+        232
+      ],
+      "remainingOrderedPairsRange": [
+        24486,
+        46382
+      ],
+      "positivePaidTerm": 3,
+      "negativePaidTerm": 9,
+      "adverseSelectionMadeOnce": true,
+      "allOriginalWeightsAndMasksRetained": true,
+      "fullPopulation": false,
+      "intervalArithmetic": false,
+      "sourceBudgetCompared": false,
+      "cofinalFloorCertified": false
+    },
+    "preservation": {
+      "unchangedPriorLeanModules": 2787,
+      "priorRieszLeanModulesPreserved": true,
+      "externalConcurrentLeanChangesObserved": [
+        "RiemannGaussian/SemiprimeOrderSeparation.lean"
+      ],
+      "stagedFilesAtStart": 10,
+      "externalConcurrentStagedChangesObserved": [
+        "docs/semiprime-factorisation-investigation.md"
+      ],
+      "unexpectedChanges": [],
+      "headPreserved": true,
+      "readmePreserved": true,
+      "publishedMetadataExceptModuleFamiliesPreserved": true,
+      "rootPreservedExceptThreeImports": true,
+      "externalFilesWereEditedByThisSlice": false
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "newFilesChecked": 6
+    },
+    "pythonSyntax": {
+      "exitCode": 0
+    },
+    "widerPublicationGatesRun": false,
+    "committed": false,
+    "pushed": false
+  },
+  "claims": {
+    "newIndependentGlobalSparseFamilyPayment": true,
+    "explicitFiniteDivisorMass": true,
+    "wholePhaseCreditRetainedInCurrentEnergyFloor": true,
+    "nativeCreditSizeProved": false,
+    "jointCostMinusCreditNumericalBoundProved": false,
+    "remainingSignedEnergyBudgetProved": false,
+    "arithmeticFloorProved": false,
+    "ceilingProved": false,
+    "zeroExclusion": false,
+    "energyMonotonicityAsserted": false,
+    "fractionOfFloorDeficitMeasured": false,
+    "effectiveStartCertified": false
+  },
+  "remainingTarget": {
+    "primary": "cofinally sqrt(max(remainingEnergy,0)*129*N/200)-nativeCredit <= 399/5000",
+    "energyOnlyFallback": "cofinally remainingEnergy <= 987/(100000*(N+1))",
+    "status": "open",
+    "originalCarrier": "ZetaRieszGammaJoint.joinedPhysical",
+    "unchangedRadiusCeiling": "10001/20000"
+  }
+}

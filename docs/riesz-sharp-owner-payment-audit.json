@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T00:44:01.865750+00:00",
+  "module": "RiemannGaussian.ZetaRieszSharpOwnerPayment",
+  "scope": "Absolute source-scale payment for the original core owner-share sector >=60069/100000, across all counts, bins, periods, phases and bounded complex correlated masks; spent on the same funded whole-floor ledger. This is a small sector enlargement, not a bound on the remaining joint signed cost.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean": "5542d4ee8e732f7da5d9c1eb3f5838a071b495d1c794c4056979f30876ebcde4",
+    "RiemannGaussian/ZetaRieszCoreOwnerPayment.lean": "b42b37c1211e73368e1f4f1bc080d144307f50a1934a1baf2590c4d31fb2c8bb",
+    "RiemannGaussian/ZetaRieszAllocationConcentration.lean": "8a9d9a880d3704a74f082b265dadef7b851f66eb2cb060fb33fb46fca6699668",
+    "RiemannGaussian/ZetaRieszAssignedCompanion.lean": "3ec9449705b65500ab18944cf50f0d91d06fad41534157bfd67a576bea791254",
+    "RiemannGaussian.lean": "bca0a01d78f9c4959dbbca06db5cce8589a9366d83dadbafc4b5a475e3293017",
+    "docs/theorem-explorer/metadata.json": "f896e296b3d3f2a08b039551513ab261e9b2f2edcf740d741b32469805541cc4"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.upper_tilt_log",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.missing_mass_bound",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.allowance_nonneg",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.tendsto_allowance",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.core_subset_source_bound",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.old_sector_subset",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.subset_crop_floor",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.eventually_rejoined_floor",
+    "RiemannGaussian.ZetaRieszSharpOwnerPayment.remaining_prime_share_lt"
+  ],
+  "parameters": {
+    "radiusCeiling": "10001/20000",
+    "ownerShareCut": "60069/100000",
+    "previousOwnerShareCut": "751/1250",
+    "upperTilt": "103/100",
+    "cofactorShareInterval": [
+      "7/25",
+      "39931/100000"
+    ],
+    "provedMissingMassRate": "10013/100000000",
+    "referenceExponent": "1+1/134217728",
+    "provedSourceSaving": "exp(-N/10000000)",
+    "allowance": "(9/4)*radiusCeiling*exp(-N/10000000)*zetaMoebiusLogMajorantMass(referenceExponent)",
+    "arithmeticMassConstantEvaluated": false,
+    "effectiveStartEvaluated": false,
+    "nativeCofinalCondition": "j>=32"
+  },
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-sharp-owner-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszSharpOwnerPayment",
+      "completedJobs": 10416,
+      "log": ".lake/riesz-sharp-owner-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-sharp-owner-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSharpOwnerPayment",
+      "linters": 14,
+      "publicTheoremCount": 9,
+      "declarations": 16,
+      "generatedDeclarations": 20,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.upper_tilt_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.missing_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.allowance_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.tendsto_allowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.core_subset_source_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.old_sector_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.subset_crop_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.eventually_rejoined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharpOwnerPayment.remaining_prime_share_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-sharp-owner-audit.log"
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "previousLocalAudits": {
+      "docs/riesz-many-bin-phase-audit.json": {
+        "nonRootSourcesUnchanged": true,
+        "checkedSources": 7,
+        "sharedRootAndFamilyAssignmentsUpdated": true
+      },
+      "docs/riesz-signed-density-cancellation-audit.json": {
+        "nonRootSourcesUnchanged": true,
+        "checkedSources": 6,
+        "sharedRootAndFamilyAssignmentsUpdated": true
+      },
+      "docs/riesz-owner-hinge-cancellation-audit.json": {
+        "nonRootSourcesUnchanged": true,
+        "checkedSources": 12,
+        "sharedRootAndFamilyAssignmentsUpdated": true
+      },
+      "docs/riesz-rejoined-phase-floor-audit.json": {
+        "nonRootSourcesUnchanged": true,
+        "checkedSources": 15,
+        "sharedRootAndFamilyAssignmentsUpdated": true
+      },
+      "docs/riesz-prefix-coherence-audit.json": {
+        "nonRootSourcesUnchanged": true,
+        "checkedSources": 7,
+        "sharedRootAndFamilyAssignmentsUpdated": true
+      }
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean",
+        "docs/riesz-sharp-owner-payment-audit.json"
+      ]
+    },
+    "auditJson": {
+      "parsed": true
+    }
+  },
+  "allOriginalMasksRetained": true,
+  "sameFundingWitnessRetained": true,
+  "sameCreditsAndDebitRetained": true,
+  "wholeFloorIntegrationProved": true,
+  "newSourceScalePopulationPaid": true,
+  "paidPopulation": "original core with 60069/100000<=largestPrimeLogShare<751/1250, in addition to the previously paid owner sector",
+  "binOrthogonalityClaimed": false,
+  "energyMonotonicityUnderCroppingClaimed": false,
+  "globalGapPercentageComputed": false,
+  "independentRemainingSignedBoundProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false
+}

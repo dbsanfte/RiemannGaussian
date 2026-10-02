@@ -1,0 +1,2117 @@
+{
+  "schemaVersion": 1,
+  "sideInvestigation": true,
+  "ordinaryBuildOrCIIntegration": false,
+  "newFactoringComplexityProved": false,
+  "scriptSha256": "290ea28cedf5cdd08befdf04db1d4e3fbafcdff392946f1c589d13e9c62ce65b",
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "gmpy2": "2.3.1",
+  "nativeBaseline": {
+    "executable": "/usr/bin/factor",
+    "version": "factor (GNU coreutils) 8.32"
+  },
+  "seedBase": 2026100900,
+  "repeats": 3,
+  "publicFactorRatioCeiling": 2,
+  "validation": {
+    "smallExactFactorChecks": 601,
+    "independentCRTMaskChecks": 16,
+    "lowOrderAliasRegression": {
+      "factor": 23,
+      "reason": "exact-division",
+      "wheel": 1,
+      "residues": 1,
+      "width": 1341,
+      "baby_entries": 37,
+      "giant_steps": 1,
+      "stages": 1,
+      "candidates_checked": 2
+    },
+    "explicitTableCapRegression": true
+  },
+  "protocol": [
+    "Fresh same-length prime pairs; actual product bits are reported.",
+    "Imports and sample generation excluded; per-input masks included.",
+    "Methods run sequentially in deterministically shuffled order.",
+    "Native time includes one process startup per batch.",
+    "Reference factors never enter the decoder.",
+    "All returned factors checked exactly after the timing region.",
+    "Reported statistic is median batch-average time per input.",
+    "No comparison against tuned quadratic-sieve or NFS software."
+  ],
+  "sizes": [
+    {
+      "nominalBits": 64,
+      "actualBits": [
+        63,
+        64
+      ],
+      "count": 48,
+      "batchMsPerInput": {
+        "adaptive": [
+          0.8451099583333334,
+          0.7839369166666666,
+          0.7845131041666668
+        ],
+        "prime-power": [
+          0.5821282708333334,
+          0.5789941875,
+          0.6126937083333334
+        ],
+        "native": [
+          0.9811258958333333,
+          1.0116593125,
+          0.9470611666666667
+        ]
+      },
+      "medianBatchMsPerInput": {
+        "adaptive": 0.7845131041666668,
+        "prime-power": 0.5821282708333334,
+        "native": 0.9811258958333333
+      },
+      "cases": [
+        {
+          "N": "17337558737508189421",
+          "referencePrimes": [
+            "4112169749",
+            "4216158329"
+          ],
+          "primePowerDecoder": {
+            "factor": "4112169749",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 180,
+            "width": 505158428,
+            "baby_entries": 180,
+            "giant_steps": 12,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "15682326562715913757",
+          "referencePrimes": [
+            "3832110629",
+            "4092347033"
+          ],
+          "primePowerDecoder": {
+            "factor": "3832110629",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 120,
+            "width": 480439689,
+            "baby_entries": 240,
+            "giant_steps": 39,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "14575920110062532891",
+          "referencePrimes": [
+            "3400248107",
+            "4286722513"
+          ],
+          "primePowerDecoder": {
+            "factor": "3400248107",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 45,
+            "width": 463181943,
+            "baby_entries": 900,
+            "giant_steps": 618,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6683803276847000371",
+          "referencePrimes": [
+            "2435910017",
+            "2743862963"
+          ],
+          "primePowerDecoder": {
+            "factor": "2435910017",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 144,
+            "width": 313650122,
+            "baby_entries": 288,
+            "giant_steps": 166,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6996444179760530653",
+          "referencePrimes": [
+            "2549258917",
+            "2744501209"
+          ],
+          "primePowerDecoder": {
+            "factor": "2549258917",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 192,
+            "width": 320901921,
+            "baby_entries": 192,
+            "giant_steps": 65,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6863879323883799149",
+          "referencePrimes": [
+            "2171323573",
+            "3161149913"
+          ],
+          "primePowerDecoder": {
+            "factor": "2171323573",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 144,
+            "width": 317847244,
+            "baby_entries": 1152,
+            "giant_steps": 1061,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "9361496163218613941",
+          "referencePrimes": [
+            "2511048523",
+            "3728122367"
+          ],
+          "primePowerDecoder": {
+            "factor": "2511048523",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 120,
+            "width": 371198542,
+            "baby_entries": 960,
+            "giant_steps": 1173,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "10222191396182466847",
+          "referencePrimes": [
+            "3100609937",
+            "3296832431"
+          ],
+          "primePowerDecoder": {
+            "factor": "3100609937",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 72,
+            "width": 387887366,
+            "baby_entries": 144,
+            "giant_steps": 55,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "11181438455344354277",
+          "referencePrimes": [
+            "3203639993",
+            "3490229389"
+          ],
+          "primePowerDecoder": {
+            "factor": "3203639993",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 72,
+            "width": 405678946,
+            "baby_entries": 216,
+            "giant_steps": 111,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "14039096793804791837",
+          "referencePrimes": [
+            "3680506723",
+            "3814446719"
+          ],
+          "primePowerDecoder": {
+            "factor": "3680506723",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 80,
+            "width": 454572558,
+            "baby_entries": 240,
+            "giant_steps": 22,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "12131913670175583139",
+          "referencePrimes": [
+            "3041699831",
+            "3988530869"
+          ],
+          "primePowerDecoder": {
+            "factor": "3041699831",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 144,
+            "width": 422569634,
+            "baby_entries": 1152,
+            "giant_steps": 723,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "12192648960313645231",
+          "referencePrimes": [
+            "2883147667",
+            "4228936693"
+          ],
+          "primePowerDecoder": {
+            "factor": "2883147667",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 144,
+            "width": 423626058,
+            "baby_entries": 1152,
+            "giant_steps": 1014,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8962142521957936781",
+          "referencePrimes": [
+            "2412186877",
+            "3715359953"
+          ],
+          "primePowerDecoder": {
+            "factor": "2412186877",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 120,
+            "width": 363194743,
+            "baby_entries": 960,
+            "giant_steps": 1311,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "13029208792140398063",
+          "referencePrimes": [
+            "3148547593",
+            "4138164791"
+          ],
+          "primePowerDecoder": {
+            "factor": "3148547593",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 30,
+            "width": 437917855,
+            "baby_entries": 600,
+            "giant_steps": 593,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "15468875645080391719",
+          "referencePrimes": [
+            "3630163379",
+            "4261206461"
+          ],
+          "primePowerDecoder": {
+            "factor": "3630163379",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 108,
+            "width": 477158873,
+            "baby_entries": 432,
+            "giant_steps": 337,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "5870826989151900547",
+          "referencePrimes": [
+            "2402346017",
+            "2443789091"
+          ],
+          "primePowerDecoder": {
+            "factor": "2402346017",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 80,
+            "width": 293956638,
+            "baby_entries": 160,
+            "giant_steps": 4,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "13736450000672787299",
+          "referencePrimes": [
+            "3447974209",
+            "3983919011"
+          ],
+          "primePowerDecoder": {
+            "factor": "3447974209",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 60,
+            "width": 449646156,
+            "baby_entries": 480,
+            "giant_steps": 383,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "10551319674742686617",
+          "referencePrimes": [
+            "2497722961",
+            "4224375497"
+          ],
+          "primePowerDecoder": {
+            "factor": "2497722961",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 80,
+            "width": 394082383,
+            "baby_entries": 1920,
+            "giant_steps": 1352,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "11039930527043089151",
+          "referencePrimes": [
+            "2832282701",
+            "3897891451"
+          ],
+          "primePowerDecoder": {
+            "factor": "2832282701",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 60,
+            "width": 403103715,
+            "baby_entries": 960,
+            "giant_steps": 937,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8752175477026674893",
+          "referencePrimes": [
+            "2380000991",
+            "3677383123"
+          ],
+          "primePowerDecoder": {
+            "factor": "2380000991",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 80,
+            "width": 358915025,
+            "baby_entries": 1280,
+            "giant_steps": 1039,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "13843032955061751841",
+          "referencePrimes": [
+            "3355424027",
+            "4125568883"
+          ],
+          "primePowerDecoder": {
+            "factor": "3355424027",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 288,
+            "width": 451387218,
+            "baby_entries": 576,
+            "giant_steps": 504,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "9544953676556333759",
+          "referencePrimes": [
+            "2513233039",
+            "3797878481"
+          ],
+          "primePowerDecoder": {
+            "factor": "2513233039",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 54,
+            "width": 374818090,
+            "baby_entries": 1728,
+            "giant_steps": 1206,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7984274801859190151",
+          "referencePrimes": [
+            "2418039847",
+            "3301961633"
+          ],
+          "primePowerDecoder": {
+            "factor": "2418039847",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 72,
+            "width": 342808332,
+            "baby_entries": 864,
+            "giant_steps": 946,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6146478409766153159",
+          "referencePrimes": [
+            "2424336011",
+            "2535324469"
+          ],
+          "primePowerDecoder": {
+            "factor": "2424336011",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 60,
+            "width": 300778515,
+            "baby_entries": 180,
+            "giant_steps": 45,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "5774847183495715609",
+          "referencePrimes": [
+            "2253977387",
+            "2562069707"
+          ],
+          "primePowerDecoder": {
+            "factor": "2253977387",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 288,
+            "width": 291543845,
+            "baby_entries": 288,
+            "giant_steps": 178,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6855119312336140217",
+          "referencePrimes": [
+            "2553223711",
+            "2684887847"
+          ],
+          "primePowerDecoder": {
+            "factor": "2553223711",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 96,
+            "width": 317644353,
+            "baby_entries": 192,
+            "giant_steps": 45,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8373204444612979177",
+          "referencePrimes": [
+            "2354749109",
+            "3555879653"
+          ],
+          "primePowerDecoder": {
+            "factor": "2354749109",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 120,
+            "width": 351058488,
+            "baby_entries": 960,
+            "giant_steps": 702,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "9595749951605048129",
+          "referencePrimes": [
+            "3011258513",
+            "3186624433"
+          ],
+          "primePowerDecoder": {
+            "factor": "3011258513",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 90,
+            "width": 375814119,
+            "baby_entries": 180,
+            "giant_steps": 68,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "10106544580295683249",
+          "referencePrimes": [
+            "3143540171",
+            "3215020019"
+          ],
+          "primePowerDecoder": {
+            "factor": "3143540171",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 288,
+            "width": 385686980,
+            "baby_entries": 288,
+            "giant_steps": 8,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "10936323984875798911",
+          "referencePrimes": [
+            "2863735961",
+            "3818900951"
+          ],
+          "primePowerDecoder": {
+            "factor": "2863735961",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 90,
+            "width": 401207751,
+            "baby_entries": 720,
+            "giant_steps": 582,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7975933604028472127",
+          "referencePrimes": [
+            "2713624633",
+            "2939217719"
+          ],
+          "primePowerDecoder": {
+            "factor": "2713624633",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 36,
+            "width": 342629218,
+            "baby_entries": 180,
+            "giant_steps": 98,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8058949512500699377",
+          "referencePrimes": [
+            "2423932283",
+            "3324742019"
+          ],
+          "primePowerDecoder": {
+            "factor": "2423932283",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 144,
+            "width": 344407696,
+            "baby_entries": 576,
+            "giant_steps": 539,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7188228652167322117",
+          "referencePrimes": [
+            "2437054657",
+            "2949555781"
+          ],
+          "primePowerDecoder": {
+            "factor": "2437054657",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 160,
+            "width": 325270421,
+            "baby_entries": 320,
+            "giant_steps": 302,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "9047568150356277383",
+          "referencePrimes": [
+            "2977313123",
+            "3038836621"
+          ],
+          "primePowerDecoder": {
+            "factor": "2977313123",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 40,
+            "width": 364921592,
+            "baby_entries": 160,
+            "giant_steps": 9,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7328117659273220599",
+          "referencePrimes": [
+            "2204194529",
+            "3324623831"
+          ],
+          "primePowerDecoder": {
+            "factor": "2204194529",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 108,
+            "width": 328420189,
+            "baby_entries": 864,
+            "giant_steps": 844,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7688077913647232987",
+          "referencePrimes": [
+            "2158709629",
+            "3561422903"
+          ],
+          "primePowerDecoder": {
+            "factor": "2158709629",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 40,
+            "width": 336389567,
+            "baby_entries": 1280,
+            "giant_steps": 1154,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "15675875112381304229",
+          "referencePrimes": [
+            "3790061983",
+            "4136047163"
+          ],
+          "primePowerDecoder": {
+            "factor": "3790061983",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 90,
+            "width": 480340856,
+            "baby_entries": 270,
+            "giant_steps": 137,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "7966517381595810913",
+          "referencePrimes": [
+            "2472400039",
+            "3222179767"
+          ],
+          "primePowerDecoder": {
+            "factor": "2472400039",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 160,
+            "width": 342426908,
+            "baby_entries": 640,
+            "giant_steps": 466,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8971934923625319091",
+          "referencePrimes": [
+            "2176166807",
+            "4122815813"
+          ],
+          "primePowerDecoder": {
+            "factor": "2176166807",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 90,
+            "width": 363393109,
+            "baby_entries": 1440,
+            "giant_steps": 1329,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "6439390474389143587",
+          "referencePrimes": [
+            "2383278259",
+            "2701904593"
+          ],
+          "primePowerDecoder": {
+            "factor": "2383278259",
+            "reason": "exact-division",
+            "wheel": 27720,
+            "residues": 80,
+            "width": 307861946,
+            "baby_entries": 320,
+            "giant_steps": 172,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "8295205050171167041",
+          "referencePrimes": [
+            "2462029033",
+            "3369255577"
+          ],
+          "primePowerDecoder": {
+            "factor": "2462029033",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 288,
+            "width": 349419544,
+            "baby_entries": 1152,
+            "giant_steps": 755,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "12917805348657395243",
+          "referencePrimes": [
+            "3309810797",
+            "3902883319"
+          ],
+          "primePowerDecoder": {
+            "factor": "3309810797",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 40,
+            "width": 436041675,
+            "baby_entries": 400,
+            "giant_steps": 366,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "16635470290107490621",
+          "referencePrimes": [
+            "3908388947",
+            "4256349743"
+          ],
+          "primePowerDecoder": {
+            "factor": "3908388947",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 240,
+            "width": 494824475,
+            "baby_entries": 240,
+            "giant_steps": 134,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "5548635972967185841",
+          "referencePrimes": [
+            "2214391121",
+            "2505716321"
+          ],
+          "primePowerDecoder": {
+            "factor": "2214391121",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 240,
+            "width": 285776654,
+            "baby_entries": 240,
+            "giant_steps": 163,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "11188644957031895077",
+          "referencePrimes": [
+            "3259722359",
+            "3432392003"
+          ],
+          "primePowerDecoder": {
+            "factor": "3259722359",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 160,
+            "width": 405809657,
+            "baby_entries": 160,
+            "giant_steps": 41,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "11595792998429125463",
+          "referencePrimes": [
+            "2955814181",
+            "3923045323"
+          ],
+          "primePowerDecoder": {
+            "factor": "2955814181",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 30,
+            "width": 413127264,
+            "baby_entries": 600,
+            "giant_steps": 597,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "11725158512687391341",
+          "referencePrimes": [
+            "2808409369",
+            "4175017589"
+          ],
+          "primePowerDecoder": {
+            "factor": "2808409369",
+            "reason": "exact-division",
+            "wheel": 18480,
+            "residues": 108,
+            "width": 415425347,
+            "baby_entries": 1728,
+            "giant_steps": 1216,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "16150858520336034683",
+          "referencePrimes": [
+            "4008217529",
+            "4029436627"
+          ],
+          "primePowerDecoder": {
+            "factor": "4008217529",
+            "reason": "exact-division",
+            "wheel": 9240,
+            "residues": 36,
+            "width": 487563781,
+            "baby_entries": 180,
+            "giant_steps": 1,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        }
+      ]
+    },
+    {
+      "nominalBits": 80,
+      "actualBits": [
+        79,
+        80
+      ],
+      "count": 32,
+      "batchMsPerInput": {
+        "adaptive": [
+          10.39569853125,
+          9.31123625,
+          10.41948575
+        ],
+        "prime-power": [
+          6.24033190625,
+          5.67644146875,
+          6.77240990625
+        ],
+        "native": [
+          21.178940125,
+          21.1596575,
+          21.17065078125
+        ]
+      },
+      "medianBatchMsPerInput": {
+        "adaptive": 10.39569853125,
+        "prime-power": 6.24033190625,
+        "native": 21.17065078125
+      },
+      "cases": [
+        {
+          "N": "830939251884035456136367",
+          "referencePrimes": [
+            "825579749381",
+            "1006491804707"
+          ],
+          "primePowerDecoder": {
+            "factor": "825579749381",
+            "reason": "exact-division",
+            "wheel": 360360,
+            "residues": 560,
+            "width": 110590613882,
+            "baby_entries": 6720,
+            "giant_steps": 4593,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "433521981515377769035907",
+          "referencePrimes": [
+            "577768262969",
+            "750338863003"
+          ],
+          "primePowerDecoder": {
+            "factor": "577768262969",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 240,
+            "width": 79880209095,
+            "baby_entries": 6720,
+            "giant_steps": 5870,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "392799347862611492854211",
+          "referencePrimes": [
+            "564612833243",
+            "695696811577"
+          ],
+          "primePowerDecoder": {
+            "factor": "564612833243",
+            "reason": "exact-division",
+            "wheel": 46200,
+            "residues": 105,
+            "width": 76035955971,
+            "baby_entries": 6720,
+            "giant_steps": 4834,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "771005915131513672436621",
+          "referencePrimes": [
+            "701429932667",
+            "1099191635863"
+          ],
+          "primePowerDecoder": {
+            "factor": "701429932667",
+            "reason": "exact-division",
+            "wheel": 92400,
+            "residues": 252,
+            "width": 106527684310,
+            "baby_entries": 18144,
+            "giant_steps": 14628,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "531438146709296426551223",
+          "referencePrimes": [
+            "703553486557",
+            "755362821539"
+          ],
+          "primePowerDecoder": {
+            "factor": "703553486557",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 210,
+            "width": 88442293031,
+            "baby_entries": 1680,
+            "giant_steps": 958,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "1141386283382261988243797",
+          "referencePrimes": [
+            "1062218571709",
+            "1074530528633"
+          ],
+          "primePowerDecoder": {
+            "factor": "1062218571709",
+            "reason": "exact-division",
+            "wheel": 240240,
+            "residues": 672,
+            "width": 129613415795,
+            "baby_entries": 2688,
+            "giant_steps": 37,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "521672934885996829269913",
+          "referencePrimes": [
+            "576088923899",
+            "905542379387"
+          ],
+          "primePowerDecoder": {
+            "factor": "576088923899",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 120,
+            "width": 87625959044,
+            "baby_entries": 14400,
+            "giant_steps": 11879,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "361493995524724951219103",
+          "referencePrimes": [
+            "556612726877",
+            "649453341739"
+          ],
+          "primePowerDecoder": {
+            "factor": "556612726877",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 216,
+            "width": 72943093127,
+            "baby_entries": 3024,
+            "giant_steps": 2886,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "604044680984070747342949",
+          "referencePrimes": [
+            "701380036129",
+            "861223088581"
+          ],
+          "primePowerDecoder": {
+            "factor": "701380036129",
+            "reason": "exact-division",
+            "wheel": 277200,
+            "residues": 504,
+            "width": 94290548850,
+            "baby_entries": 4032,
+            "giant_steps": 4706,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "404960163169035238785077",
+          "referencePrimes": [
+            "603055363661",
+            "671514072457"
+          ],
+          "primePowerDecoder": {
+            "factor": "603055363661",
+            "reason": "exact-division",
+            "wheel": 240240,
+            "residues": 480,
+            "width": 77203996592,
+            "baby_entries": 1920,
+            "giant_steps": 1915,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "556630474919029135728491",
+          "referencePrimes": [
+            "578086302803",
+            "962884732297"
+          ],
+          "primePowerDecoder": {
+            "factor": "578086302803",
+            "reason": "exact-division",
+            "wheel": 46200,
+            "residues": 126,
+            "width": 90514284219,
+            "baby_entries": 16128,
+            "giant_steps": 15315,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "1038605110089283803461159",
+          "referencePrimes": [
+            "1015421820359",
+            "1022831191201"
+          ],
+          "primePowerDecoder": {
+            "factor": "1015421820359",
+            "reason": "exact-division",
+            "wheel": 46200,
+            "residues": 140,
+            "width": 123639960891,
+            "baby_entries": 2520,
+            "giant_steps": 17,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "984155155910223516125839",
+          "referencePrimes": [
+            "906395642137",
+            "1085789814247"
+          ],
+          "primePowerDecoder": {
+            "factor": "906395642137",
+            "reason": "exact-division",
+            "wheel": 138600,
+            "residues": 336,
+            "width": 120355354807,
+            "baby_entries": 4704,
+            "giant_steps": 5349,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "948453422500908334612513",
+          "referencePrimes": [
+            "897986903161",
+            "1056199616233"
+          ],
+          "primePowerDecoder": {
+            "factor": "897986903161",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 160,
+            "width": 118152151812,
+            "baby_entries": 4800,
+            "giant_steps": 5059,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "922082103618259788425077",
+          "referencePrimes": [
+            "913949119969",
+            "1008898726933"
+          ],
+          "primePowerDecoder": {
+            "factor": "913949119969",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 120,
+            "width": 116497988842,
+            "baby_entries": 4080,
+            "giant_steps": 2266,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "327691155438817780038173",
+          "referencePrimes": [
+            "569333431697",
+            "575569845709"
+          ],
+          "primePowerDecoder": {
+            "factor": "569333431697",
+            "reason": "exact-division",
+            "wheel": 240240,
+            "residues": 420,
+            "width": 69448999144,
+            "baby_entries": 1680,
+            "giant_steps": 18,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "641514330513268573844311",
+          "referencePrimes": [
+            "649942807699",
+            "987031970989"
+          ],
+          "primePowerDecoder": {
+            "factor": "649942807699",
+            "reason": "exact-division",
+            "wheel": 138600,
+            "residues": 252,
+            "width": 97171031440,
+            "baby_entries": 14112,
+            "giant_steps": 10698,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "597517492916594690145049",
+          "referencePrimes": [
+            "588632263291",
+            "1015094703739"
+          ],
+          "primePowerDecoder": {
+            "factor": "588632263291",
+            "reason": "exact-division",
+            "wheel": 277200,
+            "residues": 672,
+            "width": 93779722563,
+            "baby_entries": 16128,
+            "giant_steps": 15739,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "641661655778112166770007",
+          "referencePrimes": [
+            "694583941307",
+            "923807214101"
+          ],
+          "primePowerDecoder": {
+            "factor": "694583941307",
+            "reason": "exact-division",
+            "wheel": 360360,
+            "residues": 480,
+            "width": 97182188577,
+            "baby_entries": 5760,
+            "giant_steps": 5935,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "689834825579307298136381",
+          "referencePrimes": [
+            "812256315917",
+            "849282193393"
+          ],
+          "primePowerDecoder": {
+            "factor": "812256315917",
+            "reason": "exact-division",
+            "wheel": 92400,
+            "residues": 336,
+            "width": 100764183293,
+            "baby_entries": 2688,
+            "giant_steps": 559,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "819924228258246767022049",
+          "referencePrimes": [
+            "757294424959",
+            "1082702052511"
+          ],
+          "primePowerDecoder": {
+            "factor": "757294424959",
+            "reason": "exact-division",
+            "wheel": 277200,
+            "residues": 672,
+            "width": 109855167690,
+            "baby_entries": 10752,
+            "giant_steps": 10574,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "562986328353006025018783",
+          "referencePrimes": [
+            "677948586443",
+            "830426288381"
+          ],
+          "primePowerDecoder": {
+            "factor": "677948586443",
+            "reason": "exact-division",
+            "wheel": 360360,
+            "residues": 576,
+            "width": 91029583519,
+            "baby_entries": 6912,
+            "giant_steps": 4381,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "702380916701607932736947",
+          "referencePrimes": [
+            "692494801343",
+            "1014276086029"
+          ],
+          "primePowerDecoder": {
+            "factor": "692494801343",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 210,
+            "width": 101676358386,
+            "baby_entries": 13440,
+            "giant_steps": 9865,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "725073889260516323971441",
+          "referencePrimes": [
+            "805101468169",
+            "900599387689"
+          ],
+          "primePowerDecoder": {
+            "factor": "805101468169",
+            "reason": "exact-division",
+            "wheel": 277200,
+            "residues": 504,
+            "width": 103305814092,
+            "baby_entries": 4032,
+            "giant_steps": 2216,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "1008856833813297019105421",
+          "referencePrimes": [
+            "945841763393",
+            "1066623269197"
+          ],
+          "primePowerDecoder": {
+            "factor": "945841763393",
+            "reason": "exact-division",
+            "wheel": 92400,
+            "residues": 252,
+            "width": 121856416259,
+            "baby_entries": 5040,
+            "giant_steps": 3225,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "957498926414514265611527",
+          "referencePrimes": [
+            "957019892321",
+            "1000500547687"
+          ],
+          "primePowerDecoder": {
+            "factor": "957019892321",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 252,
+            "width": 118714229832,
+            "baby_entries": 2016,
+            "giant_steps": 503,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "728321243954210194378837",
+          "referencePrimes": [
+            "685973625013",
+            "1061733596449"
+          ],
+          "primePowerDecoder": {
+            "factor": "685973625013",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 120,
+            "width": 103536891125,
+            "baby_entries": 15360,
+            "giant_steps": 12483,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "482929622221298866041817",
+          "referencePrimes": [
+            "593665271057",
+            "813471236681"
+          ],
+          "primePowerDecoder": {
+            "factor": "593665271057",
+            "reason": "exact-division",
+            "wheel": 55440,
+            "residues": 192,
+            "width": 84309313711,
+            "baby_entries": 9216,
+            "giant_steps": 9950,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "452605801445527772526899",
+          "referencePrimes": [
+            "622307587277",
+            "727302399487"
+          ],
+          "primePowerDecoder": {
+            "factor": "622307587277",
+            "reason": "exact-division",
+            "wheel": 46200,
+            "residues": 140,
+            "width": 81619454843,
+            "baby_entries": 4200,
+            "giant_steps": 4003,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "713422095929726541706223",
+          "referencePrimes": [
+            "658946781491",
+            "1082670279253"
+          ],
+          "primePowerDecoder": {
+            "factor": "658946781491",
+            "reason": "exact-division",
+            "wheel": 120120,
+            "residues": 240,
+            "width": 102472400381,
+            "baby_entries": 15360,
+            "giant_steps": 13531,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "1014281260842318494029819",
+          "referencePrimes": [
+            "923983778617",
+            "1097726263507"
+          ],
+          "primePowerDecoder": {
+            "factor": "923983778617",
+            "reason": "exact-division",
+            "wheel": 138600,
+            "residues": 252,
+            "width": 122183576208,
+            "baby_entries": 4032,
+            "giant_steps": 4382,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "1037471013289205365242871",
+          "referencePrimes": [
+            "996657749671",
+            "1040950129201"
+          ],
+          "primePowerDecoder": {
+            "factor": "996657749671",
+            "reason": "exact-division",
+            "wheel": 138600,
+            "residues": 336,
+            "width": 123572438604,
+            "baby_entries": 2352,
+            "giant_steps": 497,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        }
+      ]
+    },
+    {
+      "nominalBits": 88,
+      "actualBits": [
+        87,
+        88
+      ],
+      "count": 20,
+      "batchMsPerInput": {
+        "adaptive": [
+          25.05440035,
+          26.808941499999996,
+          25.07770945
+        ],
+        "prime-power": [
+          14.4047325,
+          14.5962143,
+          14.6007678
+        ],
+        "native": [
+          99.1035855,
+          99.30129654999999,
+          99.0202156
+        ]
+      },
+      "medianBatchMsPerInput": {
+        "adaptive": 25.07770945,
+        "prime-power": 14.5962143,
+        "native": 99.1035855
+      },
+      "cases": [
+        {
+          "N": "297623324707230822761876887",
+          "referencePrimes": [
+            "17091154227457",
+            "17413880931991"
+          ],
+          "primePowerDecoder": {
+            "factor": "17091154227457",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 3360,
+            "width": 2092989807485,
+            "baby_entries": 6720,
+            "giant_steps": 124,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "118144116542483053851022759",
+          "referencePrimes": [
+            "10196411211601",
+            "11586833258359"
+          ],
+          "primePowerDecoder": {
+            "factor": "10196411211601",
+            "reason": "exact-division",
+            "wheel": 1801800,
+            "residues": 1512,
+            "width": 1318680794317,
+            "baby_entries": 9072,
+            "giant_steps": 6378,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "204161310538075366093857289",
+          "referencePrimes": [
+            "12689060360771",
+            "16089553105859"
+          ],
+          "primePowerDecoder": {
+            "factor": "12689060360771",
+            "reason": "exact-division",
+            "wheel": 3603600,
+            "residues": 3360,
+            "width": 1733486061314,
+            "baby_entries": 26880,
+            "giant_steps": 17076,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "170113288856492878072924399",
+          "referencePrimes": [
+            "10871221764631",
+            "15648037777129"
+          ],
+          "primePowerDecoder": {
+            "factor": "10871221764631",
+            "reason": "exact-division",
+            "wheel": 1801800,
+            "residues": 2016,
+            "width": 1582350730945,
+            "baby_entries": 24192,
+            "giant_steps": 29136,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "109305268277289103443411391",
+          "referencePrimes": [
+            "10450061484839",
+            "10459772742569"
+          ],
+          "primePowerDecoder": {
+            "factor": "10450061484839",
+            "reason": "exact-division",
+            "wheel": 1801800,
+            "residues": 1470,
+            "width": 1268393999325,
+            "baby_entries": 4410,
+            "giant_steps": 1,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "207804780000650387594273903",
+          "referencePrimes": [
+            "13751960423233",
+            "15110920450991"
+          ],
+          "primePowerDecoder": {
+            "factor": "13751960423233",
+            "reason": "exact-division",
+            "wheel": 2042040,
+            "residues": 2304,
+            "width": 1748885584669,
+            "baby_entries": 6912,
+            "giant_steps": 5226,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "117773684009119015669740437",
+          "referencePrimes": [
+            "9503094036617",
+            "12393193580461"
+          ],
+          "primePowerDecoder": {
+            "factor": "9503094036617",
+            "reason": "exact-division",
+            "wheel": 4084080,
+            "residues": 3456,
+            "width": 1316611856043,
+            "baby_entries": 13824,
+            "giant_steps": 15184,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "183557709247364793280717567",
+          "referencePrimes": [
+            "11248238884907",
+            "16318795424381"
+          ],
+          "primePowerDecoder": {
+            "factor": "11248238884907",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 4032,
+            "width": 1643690125307,
+            "baby_entries": 32256,
+            "giant_steps": 21696,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "260238251279796178213153471",
+          "referencePrimes": [
+            "14915555645813",
+            "17447439268067"
+          ],
+          "primePowerDecoder": {
+            "factor": "14915555645813",
+            "reason": "exact-division",
+            "wheel": 1801800,
+            "residues": 1960,
+            "width": 1957127852081,
+            "baby_entries": 11760,
+            "giant_steps": 12117,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "135408499718582578895154431",
+          "referencePrimes": [
+            "10940007563021",
+            "12377368017211"
+          ],
+          "primePowerDecoder": {
+            "factor": "10940007563021",
+            "reason": "exact-division",
+            "wheel": 600600,
+            "residues": 630,
+            "width": 1411746093415,
+            "baby_entries": 10080,
+            "giant_steps": 7136,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "161462006570795603505011701",
+          "referencePrimes": [
+            "10582702183457",
+            "15257162468693"
+          ],
+          "primePowerDecoder": {
+            "factor": "10582702183457",
+            "reason": "exact-division",
+            "wheel": 3603600,
+            "residues": 4032,
+            "width": 1541589715003,
+            "baby_entries": 32256,
+            "giant_steps": 26887,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "156362059400135703577486759",
+          "referencePrimes": [
+            "11391245090507",
+            "13726511734037"
+          ],
+          "primePowerDecoder": {
+            "factor": "11391245090507",
+            "reason": "exact-division",
+            "wheel": 1801800,
+            "residues": 1680,
+            "width": 1517048000425,
+            "baby_entries": 10080,
+            "giant_steps": 12585,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "215484369457364510375945833",
+          "referencePrimes": [
+            "13326055046267",
+            "16170154536299"
+          ],
+          "primePowerDecoder": {
+            "factor": "13326055046267",
+            "reason": "exact-division",
+            "wheel": 720720,
+            "residues": 720,
+            "width": 1780908136732,
+            "baby_entries": 23040,
+            "giant_steps": 14602,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "178967416913813997010464683",
+          "referencePrimes": [
+            "13168494366847",
+            "13590575499989"
+          ],
+          "primePowerDecoder": {
+            "factor": "13168494366847",
+            "reason": "exact-division",
+            "wheel": 2042040,
+            "residues": 1440,
+            "width": 1623007835176,
+            "baby_entries": 4320,
+            "giant_steps": 544,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "255670952003202982243948543",
+          "referencePrimes": [
+            "15736187780123",
+            "16247324674541"
+          ],
+          "primePowerDecoder": {
+            "factor": "15736187780123",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 2880,
+            "width": 1939877589076,
+            "baby_entries": 5760,
+            "giant_steps": 334,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "157709454788785378086507407",
+          "referencePrimes": [
+            "10196687360861",
+            "15466734362587"
+          ],
+          "primePowerDecoder": {
+            "factor": "10196687360861",
+            "reason": "exact-division",
+            "wheel": 2042040,
+            "residues": 2520,
+            "width": 1523570295087,
+            "baby_entries": 30240,
+            "giant_steps": 33662,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "137301856638153737355229013",
+          "referencePrimes": [
+            "10596725799923",
+            "12957007591831"
+          ],
+          "primePowerDecoder": {
+            "factor": "10596725799923",
+            "reason": "exact-division",
+            "wheel": 4084080,
+            "residues": 5376,
+            "width": 1421581740247,
+            "baby_entries": 21504,
+            "giant_steps": 12635,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "219093303769344760720204189",
+          "referencePrimes": [
+            "13762531335779",
+            "15919549857791"
+          ],
+          "primePowerDecoder": {
+            "factor": "13762531335779",
+            "reason": "exact-division",
+            "wheel": 3603600,
+            "residues": 3528,
+            "width": 1795759545432,
+            "baby_entries": 14112,
+            "giant_steps": 8974,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "178689995292637749703459867",
+          "referencePrimes": [
+            "10313557702817",
+            "17325737678651"
+          ],
+          "primePowerDecoder": {
+            "factor": "10313557702817",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 5184,
+            "width": 1621749415915,
+            "baby_entries": 41472,
+            "giant_steps": 36599,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "304868101096432136595922717",
+          "referencePrimes": [
+            "17378782871873",
+            "17542546180829"
+          ],
+          "primePowerDecoder": {
+            "factor": "17378782871873",
+            "reason": "exact-division",
+            "wheel": 720720,
+            "residues": 1120,
+            "width": 2118310526488,
+            "baby_entries": 7840,
+            "giant_steps": 77,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        }
+      ]
+    },
+    {
+      "nominalBits": 96,
+      "actualBits": [
+        95,
+        96
+      ],
+      "count": 8,
+      "batchMsPerInput": {
+        "adaptive": [
+          96.98429875,
+          100.683986625,
+          96.340113125
+        ],
+        "prime-power": [
+          65.981633,
+          66.017372875,
+          66.38034225
+        ],
+        "native": [
+          441.495789125,
+          440.45382625,
+          442.472851125
+        ]
+      },
+      "medianBatchMsPerInput": {
+        "adaptive": 96.98429875,
+        "prime-power": 66.017372875,
+        "native": 441.495789125
+      },
+      "cases": [
+        {
+          "N": "48215639516287476923896736833",
+          "referencePrimes": [
+            "182021421946669",
+            "264889917904357"
+          ],
+          "primePowerDecoder": {
+            "factor": "182021421946669",
+            "reason": "exact-division",
+            "wheel": 720720,
+            "residues": 1120,
+            "width": 26639593726035,
+            "baby_entries": 206080,
+            "giant_steps": 148606,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "30396058294012958026579728287",
+          "referencePrimes": [
+            "162493351473491",
+            "187060319812357"
+          ],
+          "primePowerDecoder": {
+            "factor": "162493351473491",
+            "reason": "exact-division",
+            "wheel": 2042040,
+            "residues": 2240,
+            "width": 21151553291712,
+            "baby_entries": 40320,
+            "giant_steps": 33597,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "35921471998568127364687297687",
+          "referencePrimes": [
+            "175166862113627",
+            "205070020465781"
+          ],
+          "primePowerDecoder": {
+            "factor": "175166862113627",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 3240,
+            "width": 22993797058045,
+            "baby_entries": 32400,
+            "giant_steps": 27325,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "45534155751873867502320010097",
+          "referencePrimes": [
+            "202890099530179",
+            "224427686995643"
+          ],
+          "primePowerDecoder": {
+            "factor": "202890099530179",
+            "reason": "exact-division",
+            "wheel": 4084080,
+            "residues": 5376,
+            "width": 25888225081577,
+            "baby_entries": 26880,
+            "giant_steps": 26597,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "43611559608087807927958777793",
+          "referencePrimes": [
+            "166751347174849",
+            "261536475398657"
+          ],
+          "primePowerDecoder": {
+            "factor": "166751347174849",
+            "reason": "exact-division",
+            "wheel": 4084080,
+            "residues": 3456,
+            "width": 25335789404392,
+            "baby_entries": 165888,
+            "giant_steps": 126754,
+            "stages": 4,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "55637025849567506318447727869",
+          "referencePrimes": [
+            "202185834486101",
+            "275177665096969"
+          ],
+          "primePowerDecoder": {
+            "factor": "202185834486101",
+            "reason": "exact-division",
+            "wheel": 1201200,
+            "residues": 1470,
+            "width": 28616438666590,
+            "baby_entries": 94080,
+            "giant_steps": 108301,
+            "stages": 3,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "53869017312640400974136488243",
+          "referencePrimes": [
+            "226893652638977",
+            "237419675191859"
+          ],
+          "primePowerDecoder": {
+            "factor": "226893652638977",
+            "reason": "exact-division",
+            "wheel": 6126120,
+            "residues": 3360,
+            "width": 28158087753977,
+            "baby_entries": 16800,
+            "giant_steps": 3896,
+            "stages": 1,
+            "candidates_checked": 1
+          }
+        },
+        {
+          "N": "36753244657583043256326527977",
+          "referencePrimes": [
+            "179779088308511",
+            "204435593724407"
+          ],
+          "primePowerDecoder": {
+            "factor": "179779088308511",
+            "reason": "exact-division",
+            "wheel": 720720,
+            "residues": 960,
+            "width": 23258487776147,
+            "baby_entries": 44160,
+            "giant_steps": 34930,
+            "stages": 2,
+            "candidates_checked": 1
+          }
+        }
+      ]
+    }
+  ]
+}

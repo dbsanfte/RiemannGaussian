@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T09:51:11.938333+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszSmallGcdPayment",
+  "scope": "Independent global geometric payment of actual remaining cross pairs with N/4096<log(gcd)<=N/1000, and direct original joined floor comparison keeping every smaller-gcd sign. No remaining numerical signed bound.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSmallGcdPayment.lean": "c84d01250dfd299fd83940b736b96da0c7c87392ebe319b3ba6ea02bac608549",
+    "docs/zeta-riesz-small-gcd-payment.md": "cd6ae1745a3dbc5ed008a5e91136919faabf730a7a23ba670286088c28f8004f",
+    "RiemannGaussian.lean": "28fe957ce24e55eda83c08ab78ad599c51006cf2af5b663d063d4ab397317c04",
+    "AGENTS.md": "232cd2285f858490fe83fd7ed543aaa0e54306df23ab82e88a997cce2ce54218",
+    "docs/theorem-explorer/metadata.json": "32ac1c6b6df8635bedca5236132104ae3419a0cd1b1bb9dfde8c8ac1c56cc3f4",
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+    "RiemannGaussian/ZetaRieszAntiphaseCredit.lean": "89f831a73991b7d3e66688354a9ce81e7a81640d14c569ae6a583770acf6ce4b",
+    "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.large_common_factor_mass",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.maskedSharedEnergy_bound",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.shared_source_rate",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.weighted_maskedShared_bound",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.maskedSharedEnergy_eq_gram",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.paidPair_band",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.nonOrbitEnergy_eq",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.cost_split",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.weighted_maskedShared_price",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.tendsto_sharedPrice",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszSmallGcdPayment.eventually_joined_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-small-gcd-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszSmallGcdPayment",
+      "completedJobs": 10442,
+      "log": ".lake/riesz-small-gcd-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-small-gcd-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 18,
+      "generatedDeclarations": 15,
+      "publicTheoremCount": 12,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.large_common_factor_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.maskedSharedEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.shared_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.weighted_maskedShared_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.maskedSharedEnergy_eq_gram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.paidPair_band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.nonOrbitEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.cost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.weighted_maskedShared_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.tendsto_sharedPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallGcdPayment.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-small-gcd-audit.log"
+    },
+    "exactRationalParameterAudit": {
+      "exitCode": 0,
+      "report": ".lake/riesz-small-gcd-parameters.json",
+      "parameters": {
+        "upperSourceExponent": "-1541/81920000",
+        "upperSourceExponentFloat": -1.881103515625e-05,
+        "certifiedExponent": "-1/65536",
+        "newSharedThreshold": "N/4096",
+        "oldSharedThreshold": "N/1000",
+        "inverseThresholdRatio": "512/125",
+        "floorProved": false
+      },
+      "floatingEvidenceRequiredForProof": false
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleOnly": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "stagedWhitespaceExitCode": 0
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "baselineRecordedMathematicalSourceCount": 2782,
+    "baselineRecordedMathematicalSourcesUnchanged": true,
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "widerPublicationGatesRun": false
+  },
+  "originalScheduleRetained": true,
+  "newPhysicalCarrierIntroduced": false,
+  "allOriginalPhysicalAllocationRadialCountAndPhaseMasksRetained": true,
+  "remainingCountEndpoint": "natural K/864+1 from prior checked count payment",
+  "previousCommonFactorThreshold": "N/1000",
+  "newCommonFactorThreshold": "N/4096",
+  "addedActualPairBand": "N/4096<log(gcd)<=N/1000, with original retainedPair masks",
+  "logThresholdReductionFactor": "512/125=4.096",
+  "thresholdRatioIsNotFloorDeficitOrEnergyFraction": true,
+  "oldCommonFactorTailExponent": "1/2",
+  "newCommonFactorTailExponent": "99/100",
+  "summableCommonFactorMassExponent": "101/100",
+  "sharedSourceRate": "(2u)^(2(N+1))*exp((6/262144-99/409600)*N) <= 4U^2*exp(-N/65536)",
+  "maskedSharedNormBound": "C(B)*(N+1)^3*exp(-N/65536)",
+  "sharedConstant": "16U^2B^2*M(1+1/262144)^2*M(101/100)*exp(6/262144)",
+  "sharedFloorPrice": "sqrt(4*C(B))*(N+1)^2*exp(-N/131072)",
+  "sourceNormalizationRetainedInEstimate": true,
+  "arbitraryPairSelectionMasksAllowed": true,
+  "selectedSubfamilyNormDerivedFromLargerSignedNorm": false,
+  "zeroHypothesisRequired": false,
+  "cancellationHypothesisAdded": false,
+  "countwiseNormOrPrimeDensityAssumptionAdded": false,
+  "allActualPairGeometryAndPhasesRemainInBoundedSubfamily": true,
+  "sameWholeAdverseCutoffSelectionAndCutoffGramRetained": true,
+  "additionalBandDisjointFromPreviousPaidFamilies": true,
+  "exactEnergyLedger": "nonOrbitEnergy = maskedSharedEnergy(original retainedPair)+remainingEnergy",
+  "smallerRemainingEnergyMonotonicityAsserted": false,
+  "originalJoinedFloorComparisonProved": true,
+  "originalCoreJoinedBridgeFourPairErrorsAndCountPaymentSpentOnce": true,
+  "additionalSharedPriceSpentOnce": true,
+  "favorableCountCreditOrFundingDebitSpent": false,
+  "remainingAllCountSignedCorrelationsJoinedBeforePricing": true,
+  "remainingIndependentBudget": "remainingEnergy <= 3/(320*(N+1))",
+  "remainingIndependentBudgetProved": false,
+  "newNumericalFloorMarginCertified": false,
+  "convergentMassConstantsNumericallyEvaluated": false,
+  "effectiveEventualStartCertified": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "committedOrPushed": false
+}

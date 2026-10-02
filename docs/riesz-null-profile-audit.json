@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T09:29:57.834566+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszNullProfileAudit",
+  "scope": "Exact null-profile invariance, uniqueness of the flat early quadratic profile, and a necessary cost from the actual common signed moment. No new global floor saving or arithmetic moment bound.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszNullProfileAudit.lean": "2d754600aa3285655eb8de6a470a251f6c3e9af13065c6696d268bd8aa3a4f2e",
+    "docs/zeta-riesz-null-profile-audit.md": "890738f21f641d67a868dbc9578ae10bf4af4e68fbd0ae385c888c2aa889f31e",
+    "scripts/probe_riesz_profile_nulls.py": "60b5287b8289005716d8236dd031045aee0dcda6945f89095dffe93292c48537",
+    "RiemannGaussian.lean": "cb860dd9a5f63ab16e9ba892d213f1dcf8d1194b175ef7cc3cb67fa4e682d8bc",
+    "AGENTS.md": "ae0ac24a84667ba1c604eac1c489ffe17d893f36c82ada06033a380b240e94bf",
+    "docs/theorem-explorer/metadata.json": "7378455007da40e9d55169948772b7667bd07a9b9115a1ca879df456c4c6bf4c",
+    "RiemannGaussian/ZetaRieszPrefixCoherenceAudit.lean": "e1923088f9f52e647e6b0eedea3e024eaa50b7c186cdee399cfa748ecb7116ac",
+    "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszNullProfileAudit.corrected_early_difference",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.flat_early_iff",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_prefix_eq",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_step",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_step_le",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_active",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_phaseEnergy_common_lower",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_negativeCost_common_lower",
+    "RiemannGaussian.ZetaRieszNullProfileAudit.native_candidate_common_lower"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-null-profile-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszNullProfileAudit",
+      "completedJobs": 10440,
+      "log": ".lake/riesz-null-profile-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-null-profile-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 10,
+      "generatedDeclarations": 10,
+      "publicTheoremCount": 9,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszNullProfileAudit.corrected_early_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.flat_early_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_prefix_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_step_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_first_active": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_phaseEnergy_common_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.candidate_negativeCost_common_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNullProfileAudit.native_candidate_common_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-null-profile-audit.log"
+    },
+    "optionalProbe": {
+      "exitCodes": [
+        0,
+        0
+      ],
+      "pythonASTPassed": true,
+      "reports": [
+        ".lake/riesz-profile-nulls-probe.json",
+        ".lake/riesz-profile-nulls-probe-48.json"
+      ],
+      "constructedSubsetCaseCount": 12,
+      "orders": [
+        256,
+        640
+      ],
+      "heights": [
+        54,
+        65,
+        100
+      ],
+      "sampleCounts": [
+        24,
+        48
+      ],
+      "seeds": [
+        20261002,
+        20261003
+      ],
+      "optimizerOptimalityCertified": false,
+      "primeCertificatesOrIntervalBounds": false,
+      "integerEnergyComputed": false,
+      "logInterpolationUsed": true,
+      "commonUnderflowRescalingUsed": true,
+      "count56PlusOrManyBinCertificate": false,
+      "fullPopulationOrDensitySample": false,
+      "cofinalBound": false
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleOnly": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "stagedWhitespaceExitCode": 0
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "baselineRecordedMathematicalSourceCount": 2428,
+    "baselineRecordedMathematicalSourcesUnchanged": true,
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "widerPublicationGatesRun": false
+  },
+  "exactInvariance": "candidate_prefix_eq preserves the original literal Riesz atom for every squarefree count-three label",
+  "flatEarlyUniqueness": "f(1)=f(2)=f(3) iff linear=1 and quadratic=0, for X>=3 and L>=log(3)",
+  "candidateCoefficients": [
+    "4/3",
+    "-1/(3*N)"
+  ],
+  "exactEarlyStep": "f(1)-f(2)=-(1/3-log(2)/(3*N))*log(2)",
+  "nativeNecessarySignedCost": "negativeCost >= max(sum_original_core_weight,0)*log(2)/4",
+  "nativeNecessarySignedCostScope": "N>=65536, 0<u<=10001/20000, any count ceiling K and height y; nonempty original core",
+  "commonSignedMomentBoundProved": false,
+  "energyNecessaryCost": "phaseEnergy >= (sum_original_signed_weight)^2",
+  "numericalDiagnostics": {
+    "continuousProfileRatioRange": [
+      0.21891044039427418,
+      0.23076914473301738
+    ],
+    "continuousCauchyRatioRange": [
+      0.9755774837156358,
+      10.895318044177989
+    ],
+    "continuousCauchyIncreasedCases": 11,
+    "fixedCandidateCauchyRatioRange": [
+      0.9758353386411517,
+      11.252030072702375
+    ],
+    "fixedCandidateCauchyIncreasedCases": 11,
+    "optimizedAtomicRatioRange": [
+      0.9401999134563579,
+      1.0
+    ],
+    "optimizedAtomicUnchangedCases": 9
+  },
+  "originalScheduleRetained": true,
+  "newPhysicalCarrierIntroduced": false,
+  "profileAuditOnly": true,
+  "allOriginalPhysicalAllocationRadialCountAndPhaseMasksRetained": true,
+  "noAsymptoticImpossibilityInferred": true,
+  "necessaryCostIsNotFloorDeficit": true,
+  "newNumericalFloorMarginCertified": false,
+  "remainingIndependentBudgetProved": false,
+  "effectiveFloorStartingOrderCertified": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "committedOrPushed": false
+}

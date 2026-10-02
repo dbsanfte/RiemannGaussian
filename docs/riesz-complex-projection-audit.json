@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T11:30:00.107807+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszComplexProjection",
+  "scope": "Local whole-carrier bounded-phase cost inequality; all existing masks and multiplicities retained. The independent cofinal arithmetic cost bound remains OPEN.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszComplexProjection.lean": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+    "RiemannGaussian.lean": "6a2c2f433b85d651938d62972f6aaad72b5a4461bfd808e20c4d27a9f0b3c3db",
+    "AGENTS.md": "a3036933d2fa344fc95a9eb9ba21dc490e3f0a7092e7d56b37b1594df7a3a617",
+    "docs/theorem-explorer/metadata.json": "c2e7c35658a8253f7a7ae9fd8b350217f8f5bad8e118a0b0058b668c8f6604d9",
+    "docs/zeta-riesz-complex-projection.md": "de8475bd02081aa2c5839af06284922efc77310f91c88833b2b1fbe032fa77b0",
+    "scripts/probe_riesz_complex_projection.py": "0ed0342f55549602f5739a2ac76c783b3f059122396846c8bb10194341a87820"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszComplexProjection.continuous_directionalCost",
+    "RiemannGaussian.ZetaRieszComplexProjection.exists_best_tilt",
+    "RiemannGaussian.ZetaRieszComplexProjection.bestTilt_bound",
+    "RiemannGaussian.ZetaRieszComplexProjection.bestCost_le_zero",
+    "RiemannGaussian.ZetaRieszComplexProjection.credit_nonneg",
+    "RiemannGaussian.ZetaRieszComplexProjection.bestCost_nonneg",
+    "RiemannGaussian.ZetaRieszComplexProjection.tilted_pairing_eq",
+    "RiemannGaussian.ZetaRieszComplexProjection.prefix_floor",
+    "RiemannGaussian.ZetaRieszComplexProjection.prefix_floor_with_credit",
+    "RiemannGaussian.ZetaRieszComplexProjection.negative_real_le_bestCost_of_im_eq_zero",
+    "RiemannGaussian.ZetaRieszComplexProjection.bestCost_le_negativeCost",
+    "RiemannGaussian.ZetaRieszComplexProjection.bestCost_add_credit_le_negativeCost",
+    "RiemannGaussian.ZetaRieszComplexProjection.adverse_imaginary_regression",
+    "RiemannGaussian.ZetaRieszComplexProjection.joint_tilt_credit_regression",
+    "RiemannGaussian.ZetaRieszComplexProjection.sourceWeight_re",
+    "RiemannGaussian.ZetaRieszComplexProjection.native_prefix_eq",
+    "RiemannGaussian.ZetaRieszComplexProjection.nativeCredit_nonneg",
+    "RiemannGaussian.ZetaRieszComplexProjection.nativeCost_add_credit_le_original",
+    "RiemannGaussian.ZetaRieszComplexProjection.native_floor",
+    "RiemannGaussian.ZetaRieszComplexProjection.native_floor_with_credit",
+    "RiemannGaussian.ZetaRieszComplexProjection.tendsto_crop_sub_joined",
+    "RiemannGaussian.ZetaRieszComplexProjection.tendsto_nativeError",
+    "RiemannGaussian.ZetaRieszComplexProjection.false_of_cofinal_nativeCost"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-complex-projection-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10445,
+      "log": ".lake/riesz-complex-projection-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "rootSourceCompiled": true,
+      "compileLog": ".lake/riesz-complex-projection-root-compile.log",
+      "log": ".lake/riesz-complex-projection-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 34,
+      "generatedDeclarations": 15,
+      "publicTheoremCount": 23,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszComplexProjection.continuous_directionalCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.exists_best_tilt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.bestTilt_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.bestCost_le_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.credit_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.bestCost_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.tilted_pairing_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.prefix_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.prefix_floor_with_credit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.negative_real_le_bestCost_of_im_eq_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.bestCost_le_negativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.bestCost_add_credit_le_negativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.adverse_imaginary_regression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.joint_tilt_credit_regression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.sourceWeight_re": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.native_prefix_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.nativeCredit_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.nativeCost_add_credit_le_original": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.native_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.native_floor_with_credit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.tendsto_crop_sub_joined": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.tendsto_nativeError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszComplexProjection.false_of_cofinal_nativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-complex-projection-audit.log"
+    },
+    "preservation": {
+      "unchangedPriorLeanModules": 2786,
+      "originalStagedFiles": 4,
+      "allObservedStagedFilesPreserved": 10,
+      "headPreserved": true,
+      "readmePreserved": true,
+      "publishedMetadataExceptModuleFamiliesPreserved": true
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0
+    },
+    "pythonSyntax": {
+      "exitCode": 0
+    },
+    "whitespace": {
+      "exitCode": 0
+    },
+    "optionalFiniteProbe": {
+      "exitCode": 0,
+      "report": ".lake/riesz-complex-projection-probe.json",
+      "reportSha256": "1db14b0cb6faaf021b2a889ba80574211e68a883da71d19ce7de58cc4964e7a9",
+      "log": ".lake/riesz-complex-projection-probe.log",
+      "cases": 12,
+      "orders": [
+        256,
+        640
+      ],
+      "seeds": [
+        317,
+        919
+      ],
+      "heights": [
+        54,
+        65,
+        100
+      ],
+      "wholePeriodCostImprovedCases": 12,
+      "wholePeriodCostSavingRange": [
+        0.0007872238379456054,
+        0.367168206943036
+      ],
+      "coarseCauchyImprovedCases": 9,
+      "maximumCoarseCauchySaving": 0.4353277688487375,
+      "fullPSDProjectionWorseCases": 12,
+      "literalImaginaryCorrectionWorsensWholePeriodPriceCases": 2,
+      "oneCommonBoundedTiltUsed": true,
+      "allCountsJoinedBeforeAdverseSelection": true,
+      "completeCutoffPeriodsJoinedBeforeTilt": true,
+      "subsetImaginaryNullAssumed": false,
+      "fullCore": false,
+      "densitySample": false,
+      "amplitudeRescaled": true,
+      "harmonicLogInterpolation": true,
+      "intervalArithmetic": false,
+      "sourceBudgetCompared": false,
+      "eventualCountCropAppliedPrematurely": false,
+      "effectiveStartingOrderCertified": false,
+      "cofinalBoundCertified": false
+    },
+    "additionalOrder1536Probe": {
+      "exitCode": 0,
+      "cases": 3,
+      "report": ".lake/riesz-complex-projection-1536-probe.json",
+      "reportSha256": "c4faf92308966a4e596ef9bce7c322e26c8782866707055f63b1d83cadb79fe6",
+      "seed": 317,
+      "wholePeriodSavingFractions": [
+        0.25582955569527,
+        8.672691787003917e-05,
+        0.2760184727433497
+      ],
+      "uniformRateCertified": false
+    },
+    "widerPublicationGatesRun": false,
+    "committed": false,
+    "pushed": false
+  },
+  "openArithmeticTarget": {
+    "carrier": "original source-scaled joinedPhysical",
+    "cost": "nativeCost",
+    "cofinalBudget": "399/5000",
+    "phaseTiltBound": "4",
+    "nativeError": "4*abs(Im(original))+5*norm(cropped-original)",
+    "remainingOldEnergyTarget": "987/(100000*(N+1))",
+    "premiseProved": false
+  },
+  "claims": {
+    "directWholeCarrierFloorWithExplicitCostProved": true,
+    "wholeGlobalCreditNonnegativeProved": true,
+    "nativeCreditStrictlyPositiveProved": false,
+    "zeroTiltRecoversOldWeightProved": true,
+    "wholeImaginaryErrorTendsToZeroUnderExposedSourceProved": true,
+    "subsetImaginaryNullClaimed": false,
+    "independentArithmeticFloorProved": false,
+    "remainingMainEnergyBoundProved": false,
+    "percentFloorDeficitRemovedMeasured": false,
+    "zeroExclusionProved": false
+  }
+}

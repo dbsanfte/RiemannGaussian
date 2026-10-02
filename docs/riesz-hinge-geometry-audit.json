@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Generic exact signed incidence geometry for unpaid crossings; no new carrier, native prime population or arithmetic floor.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSignedCubeGeometry.lean": {
+      "sha256": "da57da6052ac2bb84f60cb8c52f5b045e37231ae8d8bd2ff5dee2628d948cdd7",
+      "snapshot": ".lake/riesz-hinge-geometry/source-da57da6052ac2bb84f60cb8c52f5b045e37231ae8d8bd2ff5dee2628d948cdd7.lean"
+    },
+    "scripts/riesz_hinge_geometry.py": {
+      "sha256": "7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3",
+      "snapshot": ".lake/riesz-hinge-geometry/source-7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3.py"
+    },
+    "scripts/probe_riesz_hinge_geometry.py": {
+      "sha256": "17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7",
+      "snapshot": ".lake/riesz-hinge-geometry/source-17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7.py"
+    },
+    "scripts/probe_riesz_generic_patterns.py": {
+      "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+      "snapshot": ".lake/riesz-hinge-geometry/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+    },
+    "scripts/probe_riesz_clipped_insertions.py": {
+      "sha256": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+      "snapshot": ".lake/riesz-hinge-geometry/source-d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454.py"
+    },
+    "scripts/riesz_subset_moments.py": {
+      "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+      "snapshot": ".lake/riesz-hinge-geometry/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+    }
+  },
+  "lean": {
+    "source": "RiemannGaussian/ZetaRieszSignedCubeGeometry.lean",
+    "publicTheorems": [
+      "signedCube_insert",
+      "signedCube_eq_zero_of_free_coordinate",
+      "signedCube_monomial_eq_zero",
+      "signedCube_polynomial_eq_zero",
+      "signedCube_real_floor_of_pairs"
+    ],
+    "scope": "complete signed Boolean cube cancellation for arbitrary low-degree incidence polynomials, and an explicit signed pair floor criterion",
+    "nativePrimeInventoryOrFloor": false
+  },
+  "backend": {
+    "signedDegreeZeroOneTwoMoments": true,
+    "allCountsAndSubsetParities": true,
+    "strictAndInclusiveBoundariesKeptSeparately": true,
+    "unsignedSubsetKnotsRetainedWhenSignedCoefficientsCancel": true,
+    "exactBooleanComplementSymmetry": true,
+    "explicitIterativeWorkStacks": true,
+    "stateAndStoredMomentBudgets": true,
+    "unfinishedMainValuesAndRanksAreNull": true,
+    "secondIncidenceMatrixIsNotHessianOrPositiveCovariance": true,
+    "exactRationalRank": true,
+    "nullDirectionsNotAutomaticallyPrimeTransport": true,
+    "arbitraryInputFamilyLabelsUsedInDiscovery": false,
+    "phaseAndRadialWeightsExplicit": true,
+    "allocationEnclosuresRecomputed": true,
+    "allocatedWeightDerivativesIncluded": false,
+    "realLogarithmIntervalsCertified": false,
+    "pythonCorrectnessFormalizedInLean": false
+  },
+  "reports": {
+    "unpaid": {
+      "path": ".lake/riesz-hinge-geometry/unpaid-final.json",
+      "sha256": "64cb78219800c1e56628b9e324402266488c110e84db67767b03e64e8ad871de",
+      "summary": {
+        "statusCounts": {
+          "skipped_paid_before_geometry_work": 12,
+          "complete_geometry": 15,
+          "unresolved_unranked": 3
+        },
+        "verifiedFiniteInputDirections": 15,
+        "nativeFloorCredit": false
+      },
+      "discovery": {
+        "exactCorrelationMotifs": [
+          {
+            "interactionRank": 0,
+            "gradientGroups": 1,
+            "activeSignedHingeWalls": 0,
+            "profiles": 4
+          },
+          {
+            "interactionRank": 1,
+            "gradientGroups": 2,
+            "activeSignedHingeWalls": 0,
+            "profiles": 11
+          }
+        ],
+        "incompleteProfilesExcluded": true,
+        "rankIsSignedIncidenceNotCurvature": true,
+        "noInferenceOfPrimeDensityOrPopulationCancellation": true
+      },
+      "reportSources": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_hinge_geometry.py": {
+          "sha256": "17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7",
+          "snapshot": ".lake/riesz-hinge-geometry/source-17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7.py"
+        },
+        "scripts/riesz_hinge_geometry.py": {
+          "sha256": "7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3",
+          "snapshot": ".lake/riesz-hinge-geometry/source-7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3.py"
+        },
+        "scripts/probe_riesz_generic_patterns.py": {
+          "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+          "snapshot": ".lake/riesz-hinge-geometry/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+        },
+        "scripts/probe_riesz_clipped_insertions.py": {
+          "sha256": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+          "snapshot": ".lake/riesz-hinge-geometry/source-d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454.py"
+        },
+        "scripts/riesz_subset_moments.py": {
+          "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+          "snapshot": ".lake/riesz-hinge-geometry/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+        }
+      }
+    },
+    "arbitrary": {
+      "path": ".lake/riesz-hinge-geometry/arbitrary-unpaid.json",
+      "sha256": "731a5ef53413d33a753fc2d2e689a72b266ccffc4815b541a8f1528c7c26d0ea",
+      "summary": {
+        "statusCounts": {
+          "skipped_paid_before_geometry_work": 7,
+          "unresolved_unranked": 8
+        },
+        "verifiedFiniteInputDirections": 0,
+        "nativeFloorCredit": false
+      },
+      "discovery": {
+        "exactCorrelationMotifs": [],
+        "incompleteProfilesExcluded": true,
+        "rankIsSignedIncidenceNotCurvature": true,
+        "noInferenceOfPrimeDensityOrPopulationCancellation": true
+      },
+      "reportSources": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_hinge_geometry.py": {
+          "sha256": "17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7",
+          "snapshot": ".lake/riesz-hinge-geometry/source-17144cfeb85dac11b6d904d534d1b8ec3b87a109ebe5da6ea62c0732993769d7.py"
+        },
+        "scripts/riesz_hinge_geometry.py": {
+          "sha256": "7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3",
+          "snapshot": ".lake/riesz-hinge-geometry/source-7be70e7bf49c375b01e4be19d5b9e79ba63f25c64bff0a7b504443d2b5ac2ef3.py"
+        },
+        "scripts/probe_riesz_generic_patterns.py": {
+          "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+          "snapshot": ".lake/riesz-hinge-geometry/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+        },
+        "scripts/probe_riesz_clipped_insertions.py": {
+          "sha256": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+          "snapshot": ".lake/riesz-hinge-geometry/source-d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454.py"
+        },
+        "scripts/riesz_subset_moments.py": {
+          "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+          "snapshot": ".lake/riesz-hinge-geometry/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+        }
+      }
+    }
+  },
+  "findings": {
+    "unpaidCompleted": 15,
+    "paidRejectedBeforeGeometry": 12,
+    "generic300LegProfilesUnresolved": 3,
+    "exactZeroProfiles": 4,
+    "rankOneProfiles": 11,
+    "rankOne300LegProfiles": 3,
+    "occupiedOriginalBinRange": [
+      49,
+      70
+    ],
+    "paidBinCeiling": 45,
+    "exactFiniteInputFixedTotalDirectionChecks": 15,
+    "arbitraryNonlatticeUnpaidProfilesUnresolved": 8,
+    "arbitraryPaidSkips": 7,
+    "unresolvedCasesPreventGenericRankOneClaim": true,
+    "nativeBudgetCredit": false
+  },
+  "validation": {
+    "backendIndependentTests": {
+      "passed": true,
+      "independentSignedTensorEnumerations": 400,
+      "independentUnsignedBoundaryComparisons": 200,
+      "completeTwoHingeEnumerations": 40,
+      "canceledSignedWallRetainsUnsignedBoundary": true,
+      "stateAndStorageExhaustionNeverProducesRank": true,
+      "complete300LegSubsetCoverage": "2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376",
+      "complete512LegComplementRegression": true,
+      "highDimensionalRecursionStates": 2406
+    },
+    "strictLeanCompilation": true,
+    "targetedLakeBuild": {
+      "passed": true,
+      "log": ".lake/riesz-insertion-capacity/geometry-build.log",
+      "sha256": "25c19649060462dfa80e332f62cd2aceacd32708e3599345712469231cf86559"
+    },
+    "ordinaryRootImportNamespaceLintAxioms": {
+      "passed": true,
+      "log": ".lake/riesz-hinge-geometry/lean-audit.log",
+      "sha256": "d02e4311d5e74642d2f38c3c1402301a24570e28a258ad6932f8cf89997d19c7",
+      "publicProofsInCombinedAudit": 20,
+      "newGeometryProofs": 5,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "pythonSyntax": true,
+    "focusedOnly": true,
+    "widerPublicationGates": false
+  },
+  "preservation": {
+    "publishedEndpointsChangedBySlice": false,
+    "previousProofsAndNoGosPreserved": true,
+    "stagingCommitsPushesOrRestorationBySlice": false,
+    "concurrentActivity": "Unrelated semiprime text/index changed externally; left untouched."
+  },
+  "endgame": {
+    "nativeFloorTarget": "cofinally nativeCost<=399/5000",
+    "nativeFloorProved": false,
+    "ceilingProved": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false,
+    "actualApplicationObligations": [
+      "native prime-partner inventory",
+      "global column capacity",
+      "literal support/allocation/funding ledger",
+      "joint signed unmatched remainder"
+    ]
+  }
+}

@@ -1,0 +1,703 @@
+{
+  "seed": 2026100541,
+  "single_checks": {
+    "geometric_order": 220,
+    "folded_identity": 567,
+    "local_order_separation": 3828,
+    "nilpotent_prefix": 1035,
+    "projection": 1035
+  },
+  "quadratic_checks": {
+    "convolution": 36,
+    "chirp": 36,
+    "real_tilt": 108,
+    "local_colour_order": 9,
+    "factor": 990,
+    "tilted_factor": 990
+  },
+  "safe_prime_controls": [
+    {
+      "N_decimal": "4897",
+      "reference_factors_decimal": [
+        "59",
+        "83"
+      ],
+      "scalar_status": "certified-large-order",
+      "quadratic_factor_decimal": "83",
+      "quadratic_stage": "geometric",
+      "budget": 5
+    },
+    {
+      "N_decimal": "2669425921",
+      "reference_factors_decimal": [
+        "45707",
+        "58403"
+      ],
+      "scalar_status": "certified-large-order",
+      "quadratic_factor_decimal": "58403",
+      "quadratic_stage": "geometric",
+      "budget": 38
+    },
+    {
+      "N_decimal": "173430022259869",
+      "reference_factors_decimal": [
+        "12907547",
+        "13436327"
+      ],
+      "scalar_status": "certified-large-order",
+      "quadratic_factor_decimal": "12907547",
+      "quadratic_stage": "smooth",
+      "budget": 237
+    },
+    {
+      "N_decimal": "8289553662950749297",
+      "reference_factors_decimal": [
+        "2189570459",
+        "3785926883"
+      ],
+      "scalar_status": "certified-large-order",
+      "quadratic_factor_decimal": "3785926883",
+      "quadratic_stage": "geometric",
+      "budget": 1423
+    },
+    {
+      "N_decimal": "525748879681339216979341",
+      "reference_factors_decimal": [
+        "615130607723",
+        "854694715367"
+      ],
+      "scalar_status": "certified-large-order",
+      "quadratic_factor_decimal": "615130607723",
+      "quadratic_stage": "geometric",
+      "budget": 8984
+    }
+  ],
+  "four_rough_controls": [
+    {
+      "N_decimal": "49065649",
+      "reference_factors_decimal": [
+        "6827",
+        "7187"
+      ],
+      "p_minus_one": {
+        "smooth": 2,
+        "rough": 3413
+      },
+      "p_plus_one": {
+        "smooth": 12,
+        "rough": 569
+      },
+      "q_minus_one": {
+        "smooth": 2,
+        "rough": 3593
+      },
+      "q_plus_one": {
+        "smooth": 12,
+        "rough": 599
+      },
+      "scalar": {
+        "bound": 20,
+        "order_limit": 400,
+        "order_divisor": 1,
+        "base": 2,
+        "base_count": 1,
+        "status": "certified-large-order",
+        "factor": null,
+        "work": 40,
+        "certified_through": 400,
+        "stage": "geometric",
+        "projected_base": 14667410,
+        "projection_count": 8,
+        "projection_exponent_bits": 99,
+        "reference_private_orders": [
+          3413,
+          3593
+        ]
+      },
+      "colours": [
+        {
+          "discriminant": -1,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            599
+          ]
+        },
+        {
+          "discriminant": 2,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            599
+          ]
+        },
+        {
+          "discriminant": 3,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            3413,
+            3593
+          ]
+        },
+        {
+          "discriminant": 5,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            599
+          ]
+        },
+        {
+          "discriminant": 7,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        },
+        {
+          "discriminant": 11,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            3413,
+            599
+          ]
+        },
+        {
+          "discriminant": 13,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            599
+          ]
+        },
+        {
+          "discriminant": 17,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        },
+        {
+          "discriminant": 19,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            599
+          ]
+        },
+        {
+          "discriminant": 23,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            3413,
+            3593
+          ]
+        },
+        {
+          "discriminant": 29,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        },
+        {
+          "discriminant": 31,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        },
+        {
+          "discriminant": 37,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        },
+        {
+          "discriminant": 41,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            3413,
+            599
+          ]
+        },
+        {
+          "discriminant": 43,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            3413,
+            599
+          ]
+        },
+        {
+          "discriminant": 47,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            569,
+            3593
+          ]
+        }
+      ]
+    },
+    {
+      "N_decimal": "8562316804979989201",
+      "reference_factors_decimal": [
+        "2346272483",
+        "3649327547"
+      ],
+      "p_minus_one": {
+        "smooth": 2,
+        "rough": 1173136241
+      },
+      "p_plus_one": {
+        "smooth": 12,
+        "rough": 195522707
+      },
+      "q_minus_one": {
+        "smooth": 2,
+        "rough": 1824663773
+      },
+      "q_plus_one": {
+        "smooth": 12,
+        "rough": 304110629
+      },
+      "scalar": {
+        "bound": 1431,
+        "order_limit": 2047761,
+        "order_divisor": 1,
+        "base": 2,
+        "base_count": 1,
+        "status": "certified-large-order",
+        "factor": null,
+        "work": 2862,
+        "certified_through": 2047761,
+        "stage": "geometric",
+        "projected_base": "291726086963367055",
+        "projection_count": 226,
+        "projection_exponent_bits": 6574,
+        "reference_private_orders": [
+          1173136241,
+          1824663773
+        ]
+      },
+      "colours": [
+        {
+          "discriminant": -1,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 2,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 3,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            1824663773
+          ]
+        },
+        {
+          "discriminant": 5,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 7,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            1824663773
+          ]
+        },
+        {
+          "discriminant": 11,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            1824663773
+          ]
+        },
+        {
+          "discriminant": 13,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 17,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 19,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 23,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 29,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 31,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 37,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            1824663773
+          ]
+        },
+        {
+          "discriminant": 41,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            1173136241,
+            1824663773
+          ]
+        },
+        {
+          "discriminant": 43,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            304110629
+          ]
+        },
+        {
+          "discriminant": 47,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            195522707,
+            1824663773
+          ]
+        }
+      ]
+    },
+    {
+      "N_decimal": "477209897193541203289441",
+      "reference_factors_decimal": [
+        "661911275027",
+        "720957498683"
+      ],
+      "p_minus_one": {
+        "smooth": 2,
+        "rough": 330955637513
+      },
+      "p_plus_one": {
+        "smooth": 12,
+        "rough": 55159272919
+      },
+      "q_minus_one": {
+        "smooth": 2,
+        "rough": 360478749341
+      },
+      "q_plus_one": {
+        "smooth": 12,
+        "rough": 60079791557
+      },
+      "scalar": {
+        "bound": 8840,
+        "order_limit": 78145600,
+        "order_divisor": 1,
+        "base": 2,
+        "base_count": 1,
+        "status": "certified-large-order",
+        "factor": null,
+        "work": 17680,
+        "certified_through": 78145600,
+        "stage": "geometric",
+        "projected_base": "36332911532059116115711",
+        "projection_count": 1102,
+        "projection_exponent_bits": 40259,
+        "reference_private_orders": [
+          330955637513,
+          360478749341
+        ]
+      },
+      "colours": [
+        {
+          "discriminant": -1,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 2,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 3,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 5,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 7,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 11,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 13,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 17,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 19,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 23,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 29,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 31,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 37,
+          "jacobi": -1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 41,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        },
+        {
+          "discriminant": 43,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            330955637513,
+            360478749341
+          ]
+        },
+        {
+          "discriminant": 47,
+          "jacobi": 1,
+          "status": "certified-large-order",
+          "factor": null,
+          "reference_private_orders": [
+            55159272919,
+            60079791557
+          ]
+        }
+      ]
+    }
+  ],
+  "formal_proof": {
+    "file": "RiemannGaussian/SemiprimeOrderSeparation.lean",
+    "sha256": "1bf1f74a3dd29378b49c030abd6f8c192d804222cc2911b34b41a6c6ab38ed2c",
+    "scope": "Structural algebra/order lemmas, not full Python or bit-complexity verification.",
+    "returncode": 0,
+    "output": ""
+  },
+  "dependencies_sha256": {
+    "scripts/probe_semiprime_order_controls.py": "7523bad9c931a3ae93afc6dc2391bd12b90d490c2ed3602b3882bb601ce7757a",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+  },
+  "interpretation": "Finite coverage counterexamples to these bounded passes only. No lower bound for arbitrary factoring algorithms; no generic one-sixth theorem."
+}

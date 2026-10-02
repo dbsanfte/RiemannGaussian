@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T01:28:10.793598+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "independentRemainingSignedBoundProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "defaultExplorerEndpointsUnchanged": true,
+  "publicReadmeUnchanged": true,
+  "unrelatedStagedSemiprimeFilesPreserved": true,
+  "module": "RiemannGaussian.ZetaRieszCutoffPeriodFloor",
+  "scope": "Exact whole-funded-carrier lower inequality with signed complete cutoff periods and two logarithmic null profiles. Same funding, credits, debit, masks and source-o(1) error; independent post-hinge price remains open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+    "RiemannGaussian/ZetaRieszRejoinedPhaseFloor.lean": "50fbc334595bf90fdd97b9cd26b99cbafafc63b512a7cc746db1b8f4d84a6ebe",
+    "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean": "5542d4ee8e732f7da5d9c1eb3f5838a071b495d1c794c4056979f30876ebcde4",
+    "RiemannGaussian/ZetaRieszSignedConvolution.lean": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+    "scripts/probe_riesz_cutoff_periods.py": "c773bbf9220c09cf25265b748db1985a2fe6deabfcfbe23504d00e73189101c6",
+    "RiemannGaussian.lean": "eab7d05de12ebead2127a7c115b392e88e84d53b34a90ba14b19daa2170e1d2d",
+    "docs/theorem-explorer/metadata.json": "f41a2e5fa6f26085cad21c24612f7480775088a88603f5d3333dddf5f07be033",
+    "AGENTS.md": "50b8eaa6ba42ccf00fd18faa9c085afbdd759e09fc66119097b326aba2f5127f"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.sum_blockTotal",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.blockCost_eq",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.block_floor",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.blockCost_le_atomic",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.block_saving_eq",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.grouped_prefix_floor",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.atomicCost_le_negativeCost",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.groupedCost_le_negativeCost",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.quadratic_divisor_zero",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.correctedProfile_flat",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.low_cutoff_inactive",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.active_cutoff_after_length",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.corrected_prefix_eq",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.weighted_corrected_eq_prefix",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.weighted_grouped_floor",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.rejoined_funding_grouped_floor",
+    "RiemannGaussian.ZetaRieszCutoffPeriodFloor.eventually_joined_period_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-cutoff-period-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszCutoffPeriodFloor",
+      "completedJobs": 10426,
+      "log": ".lake/riesz-cutoff-period-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-many-bin-correlation-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszCutoffPeriodFloor",
+      "linters": 14,
+      "publicTheoremCount": 17,
+      "declarations": 24,
+      "generatedDeclarations": 20,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.sum_blockTotal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.blockCost_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.block_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.blockCost_le_atomic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.block_saving_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.grouped_prefix_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.atomicCost_le_negativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.groupedCost_le_negativeCost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.quadratic_divisor_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.correctedProfile_flat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.low_cutoff_inactive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.active_cutoff_after_length": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.corrected_prefix_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.weighted_corrected_eq_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.weighted_grouped_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.rejoined_funding_grouped_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCutoffPeriodFloor.eventually_joined_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-cutoff-period-audit.log"
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "previousMathematics": {
+      "docs/riesz-many-bin-phase-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 5,
+        "historicalCheckDatePreserved": true
+      },
+      "docs/riesz-signed-density-cancellation-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 4,
+        "historicalCheckDatePreserved": true
+      },
+      "docs/riesz-owner-hinge-cancellation-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 10,
+        "historicalCheckDatePreserved": true
+      },
+      "docs/riesz-rejoined-phase-floor-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 13,
+        "historicalCheckDatePreserved": true
+      },
+      "docs/riesz-prefix-coherence-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 5,
+        "historicalCheckDatePreserved": true
+      },
+      "docs/riesz-sharp-owner-payment-audit.json": {
+        "mathematicsSourcesUnchanged": true,
+        "checkedMathematicsSources": 4,
+        "historicalCheckDatePreserved": true
+      }
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+        "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean",
+        "scripts/probe_riesz_cutoff_periods.py",
+        "scripts/probe_riesz_post_hinge_correlations.py",
+        "docs/riesz-cutoff-period-floor-audit.json",
+        "docs/riesz-many-bin-correlation-audit.json"
+      ]
+    },
+    "auditJson": {
+      "parsed": true
+    }
+  },
+  "allOriginalMasksRetained": true,
+  "sameFundingWitnessRetained": true,
+  "sameCreditsAndDebitRetained": true,
+  "wholeFloorIntegrationProved": true,
+  "uniformPriceComparison": "groupedCost <= atomic adverse cost <= negativeCost for SAME weights and profile",
+  "exactSaving": "one half of atomic cutoff variation minus grouped cutoff variation",
+  "nullProfiles": [
+    "log d",
+    "(log d)^2"
+  ],
+  "unitLogarithmicProfile": {
+    "linear": 1,
+    "quadratic": 0,
+    "earlyCutoffsExactlyInactive": "log(k+1)<=L",
+    "postHingeCostPaid": false,
+    "profileChangesClaimedMonotone": false
+  },
+  "fundingQuantifier": "epsilon is fixed >0; no epsilon_N or extra funding credit",
+  "optionalProbe": {
+    "script": "scripts/probe_riesz_cutoff_periods.py",
+    "runtimeArtifact": ".lake/riesz-cutoff-period-literal-probe.json",
+    "caseCount": 9,
+    "orders": [
+      4,
+      5,
+      6
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "length": "11N/8",
+    "nativeMovingLengthUsed": false,
+    "literalUnpaidCount56SupportUsed": false,
+    "nativePhysicalPrimeMasksUsed": false,
+    "fundingWitnessIncluded": false,
+    "rigorousIntervalArithmetic": false,
+    "sourceScaleSavingCertified": false,
+    "numericalFloorCertified": false,
+    "canonicalGroupedToAtomicCostRange": [
+      0.9516225697168321,
+      0.9984166392579737
+    ],
+    "canonicalGroupedToFormerCauchyCostRange": [
+      0.4975784120369358,
+      0.908477754983421
+    ],
+    "canonicalNullOptimizedToFormerCostRange": [
+      0.008101187741696176,
+      0.6411269785867625
+    ],
+    "globalGapPercentageComputed": false,
+    "caution": "Finite diagnostic price ratios are not an asymptotic floor improvement or a native population payment."
+  }
+}

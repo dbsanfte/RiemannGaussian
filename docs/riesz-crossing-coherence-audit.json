@@ -1,0 +1,926 @@
+{
+  "checkedAt": "2026-10-02T13:16:18.228084+00:00",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "scope": "Quantitative screening of a proposed whole-population coherent-prefix cancellation mechanism.",
+  "objective": "Close out the independent arithmetic floor; still unproved.",
+  "verdict": "The constructed tests leave substantial joined divisor-crossing contributions. Common-prefix cancellation alone has no supported uniform floor rate.",
+  "script": "scripts/probe_riesz_crossing_coherence.py",
+  "scriptSha256": "308fe55bb71aa28a73209743f59853e3c02a165d9764a26f08857dc0a9ca33f2",
+  "commands": [
+    "../.venv/bin/python scripts/probe_riesz_crossing_coherence.py --orders 256 640 1536 --seeds 317 --output .lake/riesz-crossing-coherence/validated317.json",
+    "../.venv/bin/python scripts/probe_riesz_crossing_coherence.py --orders 256 640 --seeds 919 --output .lake/riesz-crossing-coherence/validated919.json",
+    "../.venv/bin/python -m py_compile scripts/probe_riesz_crossing_coherence.py",
+    "git diff --check"
+  ],
+  "outputs": [
+    {
+      "path": ".lake/riesz-crossing-coherence/validated317.json",
+      "sha256": "0552366652d321eebde324609039b743f7f68b3982710b62395ec9256f57a989"
+    },
+    {
+      "path": ".lake/riesz-crossing-coherence/validated919.json",
+      "sha256": "c24f27cef326e8550ef1614ded2342b79ec9536e16a7f4dff792a0d823562692"
+    }
+  ],
+  "literalDiagnosticInvariants": {
+    "allCountsAndPeriodsJoinedBeforeActualCost": true,
+    "originalCoreMasksAndAllocationRetainedOnSelectedLabels": true,
+    "originalCountCeilingUsedAtTestOrders": true,
+    "complexNullFitRecomputedGlobally": true,
+    "exactIntegerEarlyAndLatePrefixValuesChecked": true,
+    "oneSidedCostAgreesWithRecombinedChannels": true,
+    "wholeNullMomentsCheckedNumerically": true
+  },
+  "summary": {
+    "tests": 15,
+    "orders": [
+      256,
+      640,
+      1536
+    ],
+    "selectedLabelsRange": [
+      273,
+      360
+    ],
+    "counts": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "crossingFractionOfDiagnosticComponentDiagonalEnergy": [
+      0.7543809579334245,
+      0.9803033699209766
+    ],
+    "reinforcingCrossChannelCases": 13,
+    "cancellingCrossChannelCases": 2,
+    "recombinationSavingRelativeToSeparateDiagnosticPrices": [
+      0.0015643326558390108,
+      0.49538546065485695
+    ],
+    "maximumPrefixDecompositionFloatingError": 7.580677281919084e-15,
+    "maximumNullSumFloatingError": 8.961270784730655e-12
+  },
+  "limitations": {
+    "fullNativePopulationCertified": false,
+    "nativeMassOrDeficitFractionCertified": false,
+    "count56PlusPopulationUsed": false,
+    "growingManyBinPopulationCertified": false,
+    "cofinalRateCertified": false,
+    "independentFloorCertified": false,
+    "primeCertificates": false,
+    "intervalArithmetic": false,
+    "amplitudesRescaled": true,
+    "largeCutoffsLogInterpolated": true,
+    "energyIsLogIntegralDiagnosticNotExactDiscreteNativeEnergy": true,
+    "separateComponentPricesAreAllowances": false,
+    "diagnosticOutsideOrdinaryBuildsAndCI": true
+  },
+  "existingProofReferences": [
+    "RiemannGaussian/ZetaRieszComplexNullFloor.lean:complex_null_zero",
+    "RiemannGaussian/ZetaRieszComplexNullFloor.lean:first_cutoff_zero",
+    "RiemannGaussian/ZetaRieszCoprimePlateauAudit.lean:sharp_late_plateau",
+    "RiemannGaussian/ZetaRieszPrefixCoherenceAudit.lean:sharp_eq_one_of_lt_minFac"
+  ],
+  "literature": {
+    "source": "https://arxiv.org/html/1101.5704",
+    "scope": "Bjorner: squarefree Euler characteristics and critical faces; its stated Betti-count results do not provide a bound for the present weighted parity imbalance.",
+    "alreadyRecordedInRepo": "docs/zeta-riesz-label-anatomy.md"
+  },
+  "preservation": {
+    "priorProtectedFiles": 2797,
+    "priorRieszAndRHLeanSourcesUnchanged": true,
+    "rootUnchanged": true,
+    "readmeUnchanged": true,
+    "publicMetadataUnchanged": true,
+    "stagedIndexUnchanged": true,
+    "allowedExistingFileChange": "AGENTS.md: current local numerical-audit note",
+    "concurrentExternalChanges": [
+      {
+        "path": "RiemannGaussian/SemiprimeLongPeriodExtraction.lean",
+        "beforeSha256": "3f33e1615f4623569a42802ecbc9e4667d1db63847ce9a8b8845c160fff9afcd",
+        "afterSha256": "28366374c7f0be589b7ef88cb24ffe4545c6b9dc9782c08d1e6e98ded4441244",
+        "writtenByThisPass": false,
+        "restoredOrStagedByThisPass": false
+      }
+    ]
+  },
+  "newLeanTheorems": 0,
+  "nextArithmeticTarget": "Bound the actual signed cutoff-crossing aggregate across all counts and periods, retaining its cross-covariance with the common channels.",
+  "cases": [
+    {
+      "N": 256,
+      "seed": 317,
+      "selectedLabels": 283,
+      "counts": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -503.2854587698203,
+      "excluded": {
+        "core_window": 6163
+      },
+      "maximumDecompositionError": 7.580677281919084e-15,
+      "seconds": 5.537767853005789,
+      "cases": [
+        {
+          "height": 54.0,
+          "periods": 4456,
+          "rescaledJoinedCost": 92.70626580727466,
+          "rescaledOldTiltCost": 137.82969105460143,
+          "globalParameters": [
+            0.20494110773959065,
+            0.5502701305432052,
+            0.11996677170385543,
+            -0.4176578346005908,
+            -0.09052100694103621
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 1.5700453660571183,
+            "crossing": 107.45792447188109
+          },
+          "cancellationBeforeClipping": 16.32170403066354,
+          "diagnosticChannelSignedTotals": {
+            "early": 29.260229421945432,
+            "late": 5.809145810288309,
+            "crossing": -11.515273257112188
+          },
+          "postHingeDiagnosticComplexEnergy": 1750.7566677657323,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1687.0810926340923,
+          "postHingeDiagnosticCrossChannelEnergy": 63.67557513164002,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              115.22226082608802,
+              31.837787565819994
+            ],
+            [
+              0.0,
+              31.83778756582,
+              1571.8588318080044
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 4.099037227506403e-13
+        },
+        {
+          "height": 65.0,
+          "periods": 5361,
+          "rescaledJoinedCost": 121.00224721471604,
+          "rescaledOldTiltCost": 145.8641487975449,
+          "globalParameters": [
+            0.44718062528929214,
+            0.48191118028508584,
+            0.2134510272492319,
+            -0.3867098577099005,
+            -0.17652130304171684
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 1.2180634296561328,
+            "late": 0.21227948090467094,
+            "crossing": 123.09787279324193
+          },
+          "cancellationBeforeClipping": 3.525968489086708,
+          "diagnosticChannelSignedTotals": {
+            "early": 10.208362416454118,
+            "late": 3.1728556668924544,
+            "crossing": 2.467708207779735
+          },
+          "postHingeDiagnosticComplexEnergy": 1810.9995029492875,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1682.412084265447,
+          "postHingeDiagnosticCrossChannelEnergy": 128.5874186838405,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              134.581899447439,
+              64.29370934192016
+            ],
+            [
+              0.0,
+              64.29370934192016,
+              1547.830184818008
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 5.747935010775986e-13
+        },
+        {
+          "height": 100.0,
+          "periods": 8240,
+          "rescaledJoinedCost": 140.52520558907287,
+          "rescaledOldTiltCost": 140.52520558907287,
+          "globalParameters": [
+            0.6466776317609144,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 77.39880393847778,
+            "crossing": 93.36187278473905
+          },
+          "cancellationBeforeClipping": 30.23547113414395,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": -76.50051740777398,
+            "crossing": 25.125437093359636
+          },
+          "postHingeDiagnosticComplexEnergy": 1080.0377734944739,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1068.0376912032473,
+          "postHingeDiagnosticCrossChannelEnergy": 12.00008229122659,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              87.78326430002424,
+              6.0000411456131975
+            ],
+            [
+              0.0,
+              6.000041145613206,
+              980.2544269032231
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 4.0978438619911607e-13
+        }
+      ]
+    },
+    {
+      "N": 640,
+      "seed": 317,
+      "selectedLabels": 360,
+      "counts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceAmplitudeLogScale": -1252.6690299338343,
+      "excluded": {
+        "core_window": 7674
+      },
+      "maximumDecompositionError": 6.404745667978754e-15,
+      "seconds": 25.401052275992697,
+      "cases": [
+        {
+          "height": 54.0,
+          "periods": 11153,
+          "rescaledJoinedCost": 159.6868935473923,
+          "rescaledOldTiltCost": 159.6868935473923,
+          "globalParameters": [
+            -0.8928464156902337,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 22.510941169062477,
+            "crossing": 150.1158147859747
+          },
+          "cancellationBeforeClipping": 12.939862407644881,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": -1.402169258478216,
+            "crossing": 41.44849961674657
+          },
+          "postHingeDiagnosticComplexEnergy": 1810.6321677590124,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1798.333249313428,
+          "postHingeDiagnosticCrossChannelEnergy": 12.298918445584377,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              35.42110477053492,
+              6.149459222792093
+            ],
+            [
+              0.0,
+              6.1494592227920934,
+              1762.9121445428932
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 6.267776371610327e-12
+        },
+        {
+          "height": 65.0,
+          "periods": 13423,
+          "rescaledJoinedCost": 221.13807110158845,
+          "rescaledOldTiltCost": 268.2114312920265,
+          "globalParameters": [
+            -0.0015144589975974714,
+            0.586176730170415,
+            -0.006853019017241111,
+            -0.4239351031443188,
+            0.0004885678453037357
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 13.873527493168519,
+            "late": 4.043909146589791,
+            "crossing": 208.33626008652996
+          },
+          "cancellationBeforeClipping": 5.115625624699817,
+          "diagnosticChannelSignedTotals": {
+            "early": -9.95399230754886,
+            "late": -3.6385054791847553,
+            "crossing": -6.148349246014663
+          },
+          "postHingeDiagnosticComplexEnergy": 1845.0362736669426,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1837.5974525495726,
+          "postHingeDiagnosticCrossChannelEnergy": 7.438821117370026,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              141.7392507150111,
+              3.719410558685004
+            ],
+            [
+              0.0,
+              3.719410558685004,
+              1695.8582018345614
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 4.741657763780176e-12
+        },
+        {
+          "height": 100.0,
+          "periods": 20643,
+          "rescaledJoinedCost": 182.80933522132443,
+          "rescaledOldTiltCost": 197.60361583547447,
+          "globalParameters": [
+            -0.16213360942454377,
+            0.46397445844380314,
+            -0.12468810515365683,
+            -0.3748024046666673,
+            0.08381096539069816
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 14.910373244718814,
+            "late": 2.4286823674759423,
+            "crossing": 168.80492940045255
+          },
+          "cancellationBeforeClipping": 3.3346497913228745,
+          "diagnosticChannelSignedTotals": {
+            "early": -11.735978361999011,
+            "late": -1.337140515844962,
+            "crossing": 26.545158688226305
+          },
+          "postHingeDiagnosticComplexEnergy": 2076.773005867389,
+          "postHingeDiagnosticChannelDiagonalEnergy": 2038.2648439803488,
+          "postHingeDiagnosticCrossChannelEnergy": 38.50816188704039,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              118.97682947806207,
+              19.254080943520187
+            ],
+            [
+              0.0,
+              19.254080943520187,
+              1919.2880145022868
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 1.8335857835483365e-12
+        }
+      ]
+    },
+    {
+      "N": 1536,
+      "seed": 317,
+      "selectedLabels": 360,
+      "counts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceAmplitudeLogScale": -3000.5695753273226,
+      "excluded": {
+        "core_window": 7674
+      },
+      "maximumDecompositionError": 2.2315206618374916e-15,
+      "seconds": 83.37587911001174,
+      "cases": [
+        {
+          "height": 54.0,
+          "periods": 26781,
+          "rescaledJoinedCost": 223.62826235932604,
+          "rescaledOldTiltCost": 223.62826235932604,
+          "globalParameters": [
+            0.5139269842301047,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 49.025529883802186,
+            "crossing": 178.323401549689
+          },
+          "cancellationBeforeClipping": 3.7206690741651585,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": -47.686391416184236,
+            "crossing": -10.840551960880461
+          },
+          "postHingeDiagnosticComplexEnergy": 1588.3626915283926,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1563.6051728214682,
+          "postHingeDiagnosticCrossChannelEnergy": 24.75751870692443,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              304.42571199568835,
+              12.3787593534622
+            ],
+            [
+              0.0,
+              12.378759353462204,
+              1259.1794608257799
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 8.961270784730655e-12
+        },
+        {
+          "height": 65.0,
+          "periods": 32235,
+          "rescaledJoinedCost": 262.066241926524,
+          "rescaledOldTiltCost": 299.2259814046063,
+          "globalParameters": [
+            -0.10844554070966302,
+            0.44549099274288156,
+            -0.04159782646530062,
+            -0.37793509278681026,
+            0.04299318830056909
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 48.37028846886051,
+            "late": 0.2573732541673076,
+            "crossing": 213.8491813004393
+          },
+          "cancellationBeforeClipping": 0.4106010969431395,
+          "diagnosticChannelSignedTotals": {
+            "early": -47.62847533145923,
+            "late": 0.7491169522588564,
+            "crossing": 142.67519822857892
+          },
+          "postHingeDiagnosticComplexEnergy": 2055.8234657389503,
+          "postHingeDiagnosticChannelDiagonalEnergy": 2056.552231763579,
+          "postHingeDiagnosticCrossChannelEnergy": -0.7287660246288397,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              300.7823916789404,
+              -0.3643830123143957
+            ],
+            [
+              0.0,
+              -0.3643830123143957,
+              1755.7698400846389
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 2.183852838277124e-12
+        },
+        {
+          "height": 100.0,
+          "periods": 49584,
+          "rescaledJoinedCost": 365.21364241265746,
+          "rescaledOldTiltCost": 365.21364241265746,
+          "globalParameters": [
+            0.7382859093157147,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 1.0076761577593458,
+            "crossing": 367.32051211495354
+          },
+          "cancellationBeforeClipping": 3.1145458600554434,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": 39.44534137995596,
+            "crossing": -85.90284499431344
+          },
+          "postHingeDiagnosticComplexEnergy": 2221.0272361491893,
+          "postHingeDiagnosticChannelDiagonalEnergy": 2176.408172658579,
+          "postHingeDiagnosticCrossChannelEnergy": 44.61906349061019,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              97.58259863311818,
+              22.309531745305065
+            ],
+            [
+              0.0,
+              22.30953174530506,
+              2078.825574025461
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 3.2473046838901866e-12
+        }
+      ]
+    },
+    {
+      "N": 256,
+      "seed": 919,
+      "selectedLabels": 273,
+      "counts": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sourceAmplitudeLogScale": -503.3185492308135,
+      "excluded": {
+        "core_window": 6173
+      },
+      "maximumDecompositionError": 4.965068306494546e-15,
+      "seconds": 5.1821660040004645,
+      "cases": [
+        {
+          "height": 54.0,
+          "periods": 4456,
+          "rescaledJoinedCost": 112.5460988099,
+          "rescaledOldTiltCost": 116.93233669618911,
+          "globalParameters": [
+            0.3878412881308963,
+            0.3249271365492071,
+            0.13478461016971996,
+            -0.3516116443653605,
+            -0.13900192995340768
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 4.699383354059641,
+            "late": 8.684199728018594,
+            "crossing": 106.581751853369
+          },
+          "cancellationBeforeClipping": 7.419236125547229,
+          "diagnosticChannelSignedTotals": {
+            "early": 2.694504034680264,
+            "late": -8.160987461638975,
+            "crossing": -40.23944445398843
+          },
+          "postHingeDiagnosticComplexEnergy": 925.0430511125335,
+          "postHingeDiagnosticChannelDiagonalEnergy": 914.93654835118,
+          "postHingeDiagnosticCrossChannelEnergy": 10.106502761353454,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              66.08674232142985,
+              5.053251380676742
+            ],
+            [
+              0.0,
+              5.053251380676742,
+              848.8498060297502
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 1.251362389368257e-12
+        },
+        {
+          "height": 65.0,
+          "periods": 5361,
+          "rescaledJoinedCost": 45.81726846275312,
+          "rescaledOldTiltCost": 53.06292999209501,
+          "globalParameters": [
+            0.5441742180310608,
+            0.4228460982068145,
+            0.21245953910193072,
+            -0.3708082471299166,
+            -0.20044828866132053
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 1.729532161769984,
+            "late": 0.9066097930062796,
+            "crossing": 50.6206278741884
+          },
+          "cancellationBeforeClipping": 7.439501366211545,
+          "diagnosticChannelSignedTotals": {
+            "early": 9.649157432226016,
+            "late": 11.80016749721404,
+            "crossing": 42.32210135670842
+          },
+          "postHingeDiagnosticComplexEnergy": 1103.393698622698,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1097.2267430257812,
+          "postHingeDiagnosticCrossChannelEnergy": 6.16695559691675,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              182.05896828124446,
+              3.0834777984583455
+            ],
+            [
+              0.0,
+              3.083477798458343,
+              915.1677747445368
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 6.169868057126112e-13
+        },
+        {
+          "height": 100.0,
+          "periods": 8241,
+          "rescaledJoinedCost": 29.669776415070537,
+          "rescaledOldTiltCost": 29.669776415070537,
+          "globalParameters": [
+            0.5246130012157033,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 0.06806680790947013,
+            "crossing": 58.72884469918682
+          },
+          "cancellationBeforeClipping": 29.127135092025753,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": 103.36362452150213,
+            "crossing": -2.971774718865001
+          },
+          "postHingeDiagnosticComplexEnergy": 361.9098838243233,
+          "postHingeDiagnosticChannelDiagonalEnergy": 357.410912046829,
+          "postHingeDiagnosticCrossChannelEnergy": 4.498971777494262,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              87.78692584108316,
+              2.249485888747131
+            ],
+            [
+              0.0,
+              2.2494858887471345,
+              269.62398620574584
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 9.25343817704044e-13
+        }
+      ]
+    },
+    {
+      "N": 640,
+      "seed": 919,
+      "selectedLabels": 352,
+      "counts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceAmplitudeLogScale": -1252.7537305577907,
+      "excluded": {
+        "core_window": 7682
+      },
+      "maximumDecompositionError": 4.463041323674983e-15,
+      "seconds": 23.40504806599347,
+      "cases": [
+        {
+          "height": 54.0,
+          "periods": 11154,
+          "rescaledJoinedCost": 219.51939822704463,
+          "rescaledOldTiltCost": 270.6298189511054,
+          "globalParameters": [
+            -0.33110954658318004,
+            0.4966319037376465,
+            -0.22265789658966076,
+            -0.39054165442042316,
+            0.15331113164487759
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 8.983517628422334,
+            "late": 2.5124394641402947,
+            "crossing": 212.3063534184046
+          },
+          "cancellationBeforeClipping": 4.282912283922599,
+          "diagnosticChannelSignedTotals": {
+            "early": 4.074956440097503,
+            "late": -1.6144350685622997,
+            "crossing": -38.94049545404722
+          },
+          "postHingeDiagnosticComplexEnergy": 1555.9080430855895,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1542.5044222377257,
+          "postHingeDiagnosticCrossChannelEnergy": 13.403620847863749,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              187.958125973244,
+              6.701810423931914
+            ],
+            [
+              0.0,
+              6.701810423931912,
+              1354.5462962644817
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 2.122180737853741e-12
+        },
+        {
+          "height": 65.0,
+          "periods": 13424,
+          "rescaledJoinedCost": 207.09034284826802,
+          "rescaledOldTiltCost": 207.09034284826802,
+          "globalParameters": [
+            -0.577362592276558,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 71.5621279743607,
+            "crossing": 156.0011931234973
+          },
+          "cancellationBeforeClipping": 20.47297824959,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": -69.2196602033885,
+            "crossing": -26.614230879540234
+          },
+          "postHingeDiagnosticComplexEnergy": 1138.632841437909,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1117.2291817602404,
+          "postHingeDiagnosticCrossChannelEnergy": 21.403659677668657,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              149.12881124119366,
+              10.701829838834323
+            ],
+            [
+              0.0,
+              10.701829838834323,
+              968.1003705190467
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 1.4496639098455806e-12
+        },
+        {
+          "height": 100.0,
+          "periods": 20644,
+          "rescaledJoinedCost": 221.3879495855689,
+          "rescaledOldTiltCost": 221.3879495855689,
+          "globalParameters": [
+            -0.5992770219602107,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnosticSeparateChannelCosts": {
+            "early": 0.0,
+            "late": 59.36850649718789,
+            "crossing": 183.97995920474514
+          },
+          "cancellationBeforeClipping": 21.960516116364147,
+          "diagnosticChannelSignedTotals": {
+            "early": 0.0,
+            "late": -59.23051624248097,
+            "crossing": 22.856214060295745
+          },
+          "postHingeDiagnosticComplexEnergy": 1863.525610277516,
+          "postHingeDiagnosticChannelDiagonalEnergy": 1871.898436868667,
+          "postHingeDiagnosticCrossChannelEnergy": -8.372826591150897,
+          "postHingeDiagnosticEnergyMatrix": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              223.16989579953682,
+              -4.186413295575491
+            ],
+            [
+              0.0,
+              -4.186413295575489,
+              1648.7285410691302
+            ]
+          ],
+          "channelsFirstThenClipped": false,
+          "earlyChannelActiveBaseContributionZero": true,
+          "maximumNullSumError": 6.505161357349074e-12
+        }
+      ]
+    }
+  ]
+}

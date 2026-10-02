@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Join complete crossing layers and price only their phase-weight variation by exact variance; optional numerical investigation of a common mechanism across counts.",
+  "leanSource": "RiemannGaussian/ZetaRieszLayerVariance.lean",
+  "publicTheorems": [
+    "defect_nonneg",
+    "defect_eq_zero_of_le",
+    "defect_eq_zero_of_ge",
+    "continuous_defect",
+    "integral_defect",
+    "weighted_defect_bounds",
+    "weighted_defect_sub_center_abs_le",
+    "joined_weighted_defect_floor",
+    "divisorLayerMean_sum",
+    "divisorLayer_moebius",
+    "actual_divisor_layer_integral"
+  ],
+  "provedScope": {
+    "completeLayerFirstMomentCancels": true,
+    "defectNonnegativeAndSupportedInsideCrossings": true,
+    "integralDefect": "one half of the complete sum of squared displacement from the exact mean",
+    "signedWeightedEstimate": "retain weight(mean) * varianceArea, with error at most variation * varianceArea",
+    "countsQuotasAndPeriodsJoinedBeforePricing": true,
+    "actualDivisorLayersAndMoebiusSignsIncluded": true,
+    "measure": "Lebesgue cutoff average, not an arbitrary atomic prime measure",
+    "signedCentralAggregateBounded": false,
+    "primeTransportProved": false,
+    "nativeCostBudgetProved": false,
+    "sourceScaleErrorPaid": false,
+    "independentFloorProved": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false
+  },
+  "probes": {
+    "sources": ["scripts/probe_riesz_crossing_moments.py", "scripts/probe_riesz_mean_phase.py"],
+    "optionalOutsideBuildsAndCI": true,
+    "selfTest": {"enumeratedLayerCases": 52, "clusterQuotaRegression": true, "maximumAreaResidual": 2.28597478256455e-98},
+    "allCounts": {
+      "output": ".lake/riesz-crossing-moment/all-counts.json",
+      "sourceSnapshot": ".lake/riesz-crossing-moment/source-f9caa112d4602979c893e9c268eff4a19e0fc9fe1fbca295c89b6d1637c570b4.py",
+      "N": 3584,
+      "counts": "every count 3..63",
+      "geometries": ["owner_rectangle", "two_reflected", "small_cluster", "two_clusters"],
+      "height": 65,
+      "seed": 317,
+      "quadratureNodes": [16, 32],
+      "cases": 488,
+      "unresolvedNodes": 0,
+      "resolutionComparisons": 244,
+      "maximumChangeOverModelAbsoluteIntegral": 4.073540126845892e-12,
+      "maximumCrossingRemainderOverModelAbsoluteIntegral": 7.58186237506204e-9,
+      "sourceScaleCredit": false
+    },
+    "multiCluster": {
+      "output": ".lake/riesz-crossing-moment/multi-cluster.json",
+      "sourceSnapshot": ".lake/riesz-crossing-moment/source-f9caa112d4602979c893e9c268eff4a19e0fc9fe1fbca295c89b6d1637c570b4.py",
+      "cases": 240,
+      "heights": [54, 65, 100],
+      "maximumQuotaStates": 1024,
+      "maximumRepresentedSubsets": 4611686018427387904,
+      "maximumCrossingRemainderOverModelAbsoluteIntegral": 1.1035776064622283e-8,
+      "allCrossingLayersRetained": true,
+      "uniformSignObserved": false
+    },
+    "meanPhase": {
+      "output": ".lake/riesz-crossing-moment/mean-phase.json",
+      "sourceSha256": "44c19f30965db5f0ccb83275d4211b0dd708622c0097d777e2f3da8a3c1ac4c5",
+      "helperSha256": "c8a9c1fc2b8c3554d2f89fee033205e41fe512867b56a5a180a4159ba825f7b0",
+      "cases": 90,
+      "configurations": 10,
+      "shiftsPerConfiguration": 9,
+      "signChangingConfigurations": 0,
+      "internalClusterVarianceCheck": ".lake/riesz-crossing-moment/mean-phase-invariants.json",
+      "originalDensityFactorAndAllocationRetained": true,
+      "interpretation": "This small cofactor-mean scan does not support the proposed generic sign reversal. Endpoint and central aggregate contributions remain to be controlled; no causal dominance is proved."
+    },
+    "limitations": [
+      "Continuous fixed-cofactor owner models, not actual prime populations or density estimates.",
+      "Uses the original dyadic count ceiling, not the eventual smaller K/864+1 nativeCost ceiling; compact tested orders do not satisfy the eventual count-payment hypotheses.",
+      "No interval certification of logarithms, quadrature, or reported numerical error bounds.",
+      "No source-normalized population budget, all-height bound, cofinal rate, or native floor credit.",
+      "Scale-spread populations outside the complete cluster-quota budget remain unresolved by this probe."
+    ]
+  },
+  "ellipticTraceCandidate": {
+    "userRequestedApplicabilityAudit": true,
+    "sources": [
+      "https://web.math.princeton.edu/~nmk/newratio33.pdf",
+      "https://arxiv.org/abs/1211.6043",
+      "https://arxiv.org/abs/2511.09459"
+    ],
+    "potential": "Finite-field character and trace-function correlation estimates can give fixed power savings for suitable prime, Moebius and bilinear sums.",
+    "existingEntryPoint": "ZetaRieszSignedConvolution.joint_periods_eq_bilinear",
+    "exactKernel": "mu(b) * pairHinge(L,p,b) * phaseWeight(A(p*d*b),L,N,y,d*b,p), retaining d*b support and all prime/owner masks",
+    "bridgeProved": false,
+    "missingRequirements": [
+      "An exact finite-field algebraic trace-function kernel, rather than an arbitrary added elliptic weight.",
+      "Controlled conductor or complexity, nonexceptionality or the needed monodromy hypotheses, and admissible summation ranges.",
+      "The correlated allocation and literal boundaries must be retained or paid; a constant principal channel cannot be discarded."
+    ],
+    "verdict": "Plausible targeted correlation/completion test, with no present application supplying a native floor bound. No elliptic-curve infrastructure added."
+  },
+  "validation": {
+    "strictLeanCompilation": "passed",
+    "targetedLakeBuild": "passed",
+    "ordinaryRootImportPlusNewModule": "passed",
+    "namespaceLint": "zero errors in 16 declarations plus 9 automatically generated declarations; 14 linters",
+    "publicTheoremAxioms": ["propext", "Classical.choice", "Quot.sound"],
+    "pythonSyntax": "passed",
+    "priorProtectedFileChangesBeforeDocumentation": [],
+    "concurrentIndexActivity": "Only unrelated semiprime files were staged externally; this slice ran no staging, commit, push or restoration commands.",
+    "publicEndpointsChangedBySlice": false,
+    "widerPublicationGatesRun": false
+  }
+}

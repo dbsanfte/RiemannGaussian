@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T05:58:32.438773+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszNearLabelPayment",
+  "scope": "Geometric payment of the actual near-label smaller-gcd adverse cross family. Original selection, correlated phase/allocation, support and funded overlaps retained. Native separated signed budget and floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszNearLabelPayment.lean": "e87e26dceaf6d2fcf6cce1092c5131a0d9a33b99d3891ece1e7605741ce0f8ba",
+    "scripts/probe_riesz_near_label_energy.py": "b3c946fcbce8fc934894488535c19d962e514fd37cae4b7942753b88106ef888",
+    "docs/zeta-riesz-near-label-payment.md": "92d1302b3d1fa41897f6fcf15f8b76b1ad83a259e8f45335d15f372433dfdc2e",
+    "RiemannGaussian.lean": "6f6c6b48852efcab546e4f026aaa9d37804ebd0f6d086f56d908a5ab37de1cdb",
+    "docs/theorem-explorer/metadata.json": "d6448b1b6101e4e023c0fa0ec8812b8155d66b1fe21679d73b997ddc321825d6",
+    "AGENTS.md": "c1c504cb3ebb1a8afd292c0f952cce65e45ef2d487b1ef25a4080a90d0f0cc3d",
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+    "RiemannGaussian/ZetaRieszDiagonalPayment.lean": "9d20f3cee8406004fbf94392d69709ba76e9cfc72ae633ae5900f031340bf767",
+    "RiemannGaussian/NatDivisorSquareDirichlet.lean": "1b32d615e42f17959b0f0cbb45c368134cb346409b10e192f96a833cbaabab5a",
+    "RiemannGaussian/NatDivisorSquareMean.lean": "4fa8e28f677072e5b0660c4fbfc2a9e902df0ededbb47b8d15c090be94119de0"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszNearLabelPayment.nearPair_symm",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.nearPair_card_le",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.symmetric_pair_capacity",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.near_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.smallSharedEnergy_eq",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.nearEnergy_bound",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.near_source_rate",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.weighted_nearEnergy_bound",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.near_crossCost_split",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.weighted_near_price",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.tendsto_nearPrice",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.separated_log_gap",
+    "RiemannGaussian.ZetaRieszNearLabelPayment.eventually_joined_separated_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-near-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10435,
+      "target": "RiemannGaussian.ZetaRieszNearLabelPayment",
+      "log": ".lake/riesz-near-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-near-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 21,
+      "generatedDeclarations": 33,
+      "publicTheoremCount": 13,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszNearLabelPayment.nearPair_symm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.nearPair_card_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.symmetric_pair_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.near_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.smallSharedEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.nearEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.near_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.weighted_nearEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.near_crossCost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.weighted_near_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.tendsto_nearPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.separated_log_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszNearLabelPayment.eventually_joined_separated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-near-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "astParsed": true,
+      "log": ".lake/riesz-near-label-energy-probe.log",
+      "runtimeArtifact": ".lake/riesz-near-label-energy-probe.json"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "moduleChecked": "RiemannGaussian/ZetaRieszNearLabelPayment.lean"
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszNearLabelPayment.lean",
+        "scripts/probe_riesz_near_label_energy.py",
+        "docs/zeta-riesz-near-label-payment.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "priorDiagonalAndSharedMathematicalSourcesUnchanged": true
+  },
+  "literalIntegerLabelsRetained": true,
+  "originalPhaseAndFactorialAllocationRetained": true,
+  "originalPhysicalCountSupportRetained": true,
+  "nativeWholeFloorFundingRetained": true,
+  "fundingOverlapsRetainedBeforeSquare": true,
+  "samePositiveSupplyWitnessAndDebitRetainedOnce": true,
+  "originalAdverseCutoffsRetainedForAllPartitions": true,
+  "adverseCutoffsReselectedAfterPartition": false,
+  "nearThreshold": "n != m and |n-m| <= exp(-N/1000)*min(n,m)",
+  "allCountsBinsAndPhasesCoveredByNearPayment": true,
+  "integerNeighbourCapacityBound": "degree(n) <= 2*epsilon*n",
+  "nearPairMassBound": "2*epsilon*exp(logX/262144)*M(1+1/262144)",
+  "nearEnergyBound": "nearConstant(B)*(N+1)^3*exp(-N/2000)",
+  "nearConstant": "32*radiusCeiling^2*B^2*M(1+1/262144)*exp(3/262144)",
+  "nearPrice": "sqrt(4*nearConstant(B))*(N+1)^2*exp(-N/4000) -> 0",
+  "squaredSourceGrowthIncludedInRate": true,
+  "newNearPairPriceSpentOnce": true,
+  "priorDiagonalAndSharedPricesRetained": true,
+  "largeGcdOverlapExcludedFromNearFamily": true,
+  "remainingJoinedSignedCost": "sqrt(max(separatedEnergy,0)*adverseProfileEnergy)",
+  "remainingSufficientCofinalBudget": "<= 79/1000 + o(1)",
+  "remainingPairSupport": "log(gcd(n,m)) <= N/1000; |log n-log m| > exp(-N/1000)/2",
+  "remainingFrequencyGapDecreasesWithOrder": true,
+  "fixedHeightOrthogonalityFromGapProved": false,
+  "automaticManyBinOrthogonalityProved": false,
+  "newWholeLabelPopulationPaymentProved": false,
+  "divisorMassNumericallyEvaluated": false,
+  "effectiveStartingOrderCertified": false,
+  "independentSeparatedBudgetProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "finiteProbe": {
+    "orders": [
+      4,
+      5
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "cases": 12,
+    "positiveRationalDiagnosticSeparatedCases": 2,
+    "negativeRationalDiagnosticSeparatedCases": 4,
+    "literalThresholdContainsAllSmallerGcdPairsAtTinyOrders": true,
+    "rationalDiagnosticThresholdHasNoCofinalUse": true,
+    "partitionCapacityCostInequalitiesChecked": true,
+    "nativeMovingLengthUsed": false,
+    "nativeDyadicSupportCertified": false,
+    "nativePhysicalMasksCertified": false,
+    "nativeManyBinPopulationCertified": false,
+    "nativeFundingWitnessCertified": false,
+    "floatingResultsIntervalCertified": false
+  }
+}

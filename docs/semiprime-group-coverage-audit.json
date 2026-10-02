@@ -1,0 +1,1281 @@
+{
+  "scope": "Coverage counterexample, useful-order targets and unconditional small-factor prefix; universal one-sixth guarantee open",
+  "control": 62108022589,
+  "reference_primes": [
+    248909,
+    249521
+  ],
+  "old_menu_result": {
+    "status": "group-budget-exhausted",
+    "factor": null,
+    "bound": 63,
+    "menu": [
+      6,
+      11,
+      7,
+      8
+    ],
+    "history": [
+      {
+        "sigma": 6,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 11,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 7,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 8,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 6,
+        "width": 32,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 11,
+        "width": 32,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 7,
+        "width": 32,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 8,
+        "width": 32,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 6,
+        "width": 63,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 11,
+        "width": 63,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 7,
+        "width": 63,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 8,
+        "width": 63,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      }
+    ],
+    "cost": {
+      "doubles": 2560,
+      "differential_adds": 3304,
+      "scalar_bits": 2536,
+      "coordinate_inversions": 24,
+      "coordinate_gcds": 876,
+      "projection_steps": 72,
+      "sieve_cells": 114,
+      "cover_width_sum": 444,
+      "baby_points": 432,
+      "giant_points": 444,
+      "convolutions": 948,
+      "packed_coefficients": 8936,
+      "monic_reductions": 876,
+      "coherent_targets": 0,
+      "derivative_targets": 0,
+      "curves_initialized": 4,
+      "setup_inversions": 4,
+      "probes": 12,
+      "recovery_descents": 0
+    }
+  },
+  "extended_menu": [
+    6,
+    11,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13
+  ],
+  "extended_menu_result": {
+    "status": "factor",
+    "factor": 249521,
+    "baby_index": 2,
+    "giant_index": 9,
+    "root": 20670556986,
+    "point": 56433403832,
+    "certificate_signal": 35762846846,
+    "stage": "curve-cover",
+    "projected_point": [
+      11649008609,
+      46120300893
+    ],
+    "a24": 2307493480,
+    "algorithm": "adaptive-group-tournament",
+    "sigma": 13,
+    "width": 16,
+    "bound": 63,
+    "menu": [
+      6,
+      11,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13
+    ],
+    "history": [
+      {
+        "sigma": 6,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 11,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 7,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 8,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 9,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 10,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 12,
+        "width": 16,
+        "status": "no-collision",
+        "stage": "curve-cover"
+      },
+      {
+        "sigma": 13,
+        "width": 16,
+        "status": "factor",
+        "stage": "curve-cover"
+      }
+    ],
+    "cost": {
+      "doubles": 1728,
+      "differential_adds": 1888,
+      "scalar_bits": 1712,
+      "coordinate_inversions": 16,
+      "coordinate_gcds": 248,
+      "projection_steps": 48,
+      "sieve_cells": 17,
+      "cover_width_sum": 128,
+      "baby_points": 120,
+      "giant_points": 128,
+      "convolutions": 232,
+      "packed_coefficients": 1448,
+      "monic_reductions": 248,
+      "coherent_targets": 0,
+      "derivative_targets": 0,
+      "curves_initialized": 8,
+      "setup_inversions": 8,
+      "probes": 8,
+      "recovery_descents": 0
+    }
+  },
+  "extended_menu_scope": "Added after inspecting this counterexample; not held-out evidence",
+  "public_projective_covers": {
+    "6": [
+      {
+        "width": 16,
+        "projected_point": [
+          61599219762,
+          13336598767
+        ],
+        "a24": 38576280943,
+        "projective_product": 54126249841,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 32,
+        "projected_point": [
+          29982481393,
+          18440082842
+        ],
+        "a24": 38576280943,
+        "projective_product": 10704674250,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 63,
+        "projected_point": [
+          1394815949,
+          28674647442
+        ],
+        "a24": 38576280943,
+        "projective_product": 21063516312,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      }
+    ],
+    "11": [
+      {
+        "width": 16,
+        "projected_point": [
+          30887597124,
+          13769787707
+        ],
+        "a24": 61559354920,
+        "projective_product": 7603419699,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 32,
+        "projected_point": [
+          39673358019,
+          17250823703
+        ],
+        "a24": 61559354920,
+        "projective_product": 16725173213,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 63,
+        "projected_point": [
+          43988958354,
+          61619852223
+        ],
+        "a24": 61559354920,
+        "projective_product": 8766449415,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      }
+    ],
+    "7": [
+      {
+        "width": 16,
+        "projected_point": [
+          60967888465,
+          11599577051
+        ],
+        "a24": 11792324993,
+        "projective_product": 14032781187,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 32,
+        "projected_point": [
+          35559247126,
+          45140660231
+        ],
+        "a24": 11792324993,
+        "projective_product": 33000618623,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 63,
+        "projected_point": [
+          27434299983,
+          51293304330
+        ],
+        "a24": 11792324993,
+        "projective_product": 59495310958,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      }
+    ],
+    "8": [
+      {
+        "width": 16,
+        "projected_point": [
+          49809961333,
+          19563907658
+        ],
+        "a24": 40770769015,
+        "projective_product": 17013209803,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 32,
+        "projected_point": [
+          34773382291,
+          14596547801
+        ],
+        "a24": 40770769015,
+        "projective_product": 18450640246,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      },
+      {
+        "width": 63,
+        "projected_point": [
+          13213990802,
+          50953807655
+        ],
+        "a24": 40770769015,
+        "projective_product": 25473452851,
+        "product_gcd": 1,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "no-collision"
+      }
+    ],
+    "13": [
+      {
+        "width": 16,
+        "projected_point": [
+          11649008609,
+          46120300893
+        ],
+        "a24": 2307493480,
+        "projective_product": 32933029185,
+        "product_gcd": 249521,
+        "coordinate_gcds": [
+          1
+        ],
+        "probe_status": "factor"
+      }
+    ]
+  },
+  "reference_periods": [
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 248909,
+      "sigma": 6,
+      "point_order": 62268,
+      "order_factorization": {
+        "2": 2,
+        "3": 1,
+        "5189": 1
+      },
+      "projected_point_order": 5189
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 248909,
+      "sigma": 11,
+      "point_order": 124734,
+      "order_factorization": {
+        "2": 1,
+        "3": 1,
+        "20789": 1
+      },
+      "projected_point_order": 20789
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 248909,
+      "sigma": 7,
+      "point_order": 41546,
+      "order_factorization": {
+        "2": 1,
+        "20773": 1
+      },
+      "projected_point_order": 20773
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 248909,
+      "sigma": 8,
+      "point_order": 62259,
+      "order_factorization": {
+        "3": 1,
+        "20753": 1
+      },
+      "projected_point_order": 20753
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 249521,
+      "sigma": 6,
+      "point_order": 20719,
+      "order_factorization": {
+        "20719": 1
+      },
+      "projected_point_order": 20719
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 249521,
+      "sigma": 11,
+      "point_order": 62619,
+      "order_factorization": {
+        "3": 1,
+        "20873": 1
+      },
+      "projected_point_order": 20873
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 249521,
+      "sigma": 7,
+      "point_order": 20756,
+      "order_factorization": {
+        "2": 2,
+        "5189": 1
+      },
+      "projected_point_order": 5189
+    },
+    {
+      "scope": "Known-prime group diagnostic",
+      "p": 249521,
+      "sigma": 8,
+      "point_order": 20847,
+      "order_factorization": {
+        "3": 1,
+        "6949": 1
+      },
+      "projected_point_order": 6949
+    }
+  ],
+  "reference_trap_search": {
+    "scope": "Known-prime diagnostic, never selector input",
+    "seed": 2026100299,
+    "width": 64,
+    "primes_checked": 1174,
+    "prefix_survival": [
+      1174,
+      244,
+      38,
+      6,
+      2
+    ],
+    "all_menu_miss_primes": [
+      248909,
+      249521
+    ]
+  },
+  "hasse_order_targets": [
+    {
+      "scope": "Arithmetic target, not a public curve construction",
+      "p": 248909,
+      "width": 63,
+      "dyadic_divisor": 64,
+      "cofactor": 3890,
+      "candidate_order": 248960,
+      "trace": -50
+    },
+    {
+      "scope": "Arithmetic target, not a public curve construction",
+      "p": 249521,
+      "width": 63,
+      "dyadic_divisor": 64,
+      "cofactor": 3899,
+      "candidate_order": 249536,
+      "trace": -14
+    }
+  ],
+  "small_factor_seed": 2026100307,
+  "small_factor_checks": [
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 39158365859,
+      "reference_primes": [
+        2999,
+        13057141
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 2999,
+        "baby_index": 10,
+        "giant_index": 50,
+        "root": 10,
+        "point": 3009,
+        "convolutions": 142,
+        "packed_coefficients": 1591,
+        "monic_reductions": 117,
+        "certificate_signal": 2999,
+        "algorithm": "classical-additive-prefix",
+        "width": 59,
+        "covered_integers": 3481,
+        "elapsed_ms": 1.705993985524401
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 51111629047,
+      "reference_primes": [
+        2897,
+        17642951
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 2897,
+        "baby_index": 31,
+        "giant_index": 47,
+        "root": 31,
+        "point": 2928,
+        "convolutions": 146,
+        "packed_coefficients": 1643,
+        "monic_reductions": 121,
+        "certificate_signal": 2897,
+        "algorithm": "classical-additive-prefix",
+        "width": 61,
+        "covered_integers": 3721,
+        "elapsed_ms": 1.741334010148421
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 101166561901,
+      "reference_primes": [
+        3011,
+        33598991
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 3011,
+        "baby_index": 25,
+        "giant_index": 43,
+        "root": 25,
+        "point": 3036,
+        "convolutions": 170,
+        "packed_coefficients": 2023,
+        "monic_reductions": 137,
+        "certificate_signal": 3011,
+        "algorithm": "classical-additive-prefix",
+        "width": 69,
+        "covered_integers": 4761,
+        "elapsed_ms": 2.2735880047548562
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 43353874559,
+      "reference_primes": [
+        2287,
+        18956657
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 2287,
+        "baby_index": 53,
+        "giant_index": 38,
+        "root": 53,
+        "point": 2340,
+        "convolutions": 144,
+        "packed_coefficients": 1615,
+        "monic_reductions": 119,
+        "certificate_signal": 2287,
+        "algorithm": "classical-additive-prefix",
+        "width": 60,
+        "covered_integers": 3600,
+        "elapsed_ms": 1.7042479885276407
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 111634807895431,
+      "reference_primes": [
+        36913,
+        3024268087
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 36913,
+        "baby_index": 47,
+        "giant_index": 167,
+        "root": 47,
+        "point": 36960,
+        "convolutions": 598,
+        "packed_coefficients": 10903,
+        "monic_reductions": 439,
+        "certificate_signal": 36913,
+        "algorithm": "classical-additive-prefix",
+        "width": 220,
+        "covered_integers": 48400,
+        "elapsed_ms": 9.760070010088384
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 367734989105383,
+      "reference_primes": [
+        55673,
+        6605266271
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 55673,
+        "baby_index": 71,
+        "giant_index": 207,
+        "root": 71,
+        "point": 55744,
+        "convolutions": 730,
+        "packed_coefficients": 14045,
+        "monic_reductions": 535,
+        "certificate_signal": 55673,
+        "algorithm": "classical-additive-prefix",
+        "width": 268,
+        "covered_integers": 71824,
+        "elapsed_ms": 12.555505993077531
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 41749662651821,
+      "reference_primes": [
+        33053,
+        1263112657
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 33053,
+        "baby_index": 46,
+        "giant_index": 176,
+        "root": 46,
+        "point": 33099,
+        "convolutions": 504,
+        "packed_coefficients": 8735,
+        "monic_reductions": 373,
+        "certificate_signal": 33053,
+        "algorithm": "classical-additive-prefix",
+        "width": 187,
+        "covered_integers": 34969,
+        "elapsed_ms": 7.553458999609575
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": 413689258851751,
+      "reference_primes": [
+        54779,
+        7551968069
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 54779,
+        "baby_index": 94,
+        "giant_index": 200,
+        "root": 94,
+        "point": 54873,
+        "convolutions": 760,
+        "packed_coefficients": 16151,
+        "monic_reductions": 545,
+        "certificate_signal": 54779,
+        "algorithm": "classical-additive-prefix",
+        "width": 273,
+        "covered_integers": 74529,
+        "elapsed_ms": 12.657472980208695
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": "296501141072320637",
+      "reference_primes": [
+        598669,
+        495267236273
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 598669,
+        "baby_index": 192,
+        "giant_index": 732,
+        "root": 192,
+        "point": 598861,
+        "convolutions": 2318,
+        "packed_coefficients": 60271,
+        "monic_reductions": 1633,
+        "certificate_signal": 598669,
+        "algorithm": "classical-additive-prefix",
+        "width": 817,
+        "covered_integers": 667489,
+        "elapsed_ms": 44.858549983473495
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": "1297502884483777183",
+      "reference_primes": [
+        1007767,
+        1287502849849
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 1007767,
+        "baby_index": 658,
+        "giant_index": 964,
+        "root": 658,
+        "point": 1008425,
+        "convolutions": 2972,
+        "packed_coefficients": 87481,
+        "monic_reductions": 2089,
+        "certificate_signal": 1007767,
+        "algorithm": "classical-additive-prefix",
+        "width": 1045,
+        "covered_integers": 1092025,
+        "elapsed_ms": 65.90819501434453
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": "2248171491275128229",
+      "reference_primes": [
+        1040189,
+        2161310580361
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 1040189,
+        "baby_index": 616,
+        "giant_index": 908,
+        "root": 616,
+        "point": 1040805,
+        "convolutions": 3252,
+        "packed_coefficients": 93543,
+        "monic_reductions": 2289,
+        "certificate_signal": 1040189,
+        "algorithm": "classical-additive-prefix",
+        "width": 1145,
+        "covered_integers": 1311025,
+        "elapsed_ms": 72.08007000735961
+      }
+    },
+    {
+      "scope": "Reference primes used only to verify coverage premise",
+      "N": "539048508429960511",
+      "reference_primes": [
+        551689,
+        977087649799
+      ],
+      "result": {
+        "status": "factor",
+        "factor": 551689,
+        "baby_index": 44,
+        "giant_index": 610,
+        "root": 44,
+        "point": 551733,
+        "convolutions": 2554,
+        "packed_coefficients": 66825,
+        "monic_reductions": 1805,
+        "certificate_signal": 551689,
+        "algorithm": "classical-additive-prefix",
+        "width": 903,
+        "covered_integers": 815409,
+        "elapsed_ms": 50.277543981792405
+      }
+    }
+  ],
+  "control_prefix": {
+    "status": "no-collision",
+    "factor": null,
+    "convolutions": 150,
+    "packed_coefficients": 1693,
+    "monic_reductions": 125,
+    "algorithm": "classical-additive-prefix",
+    "width": 63,
+    "covered_integers": 3969,
+    "elapsed_ms": 1.8410650081932545
+  },
+  "control_fermat": {
+    "status": "factor",
+    "factor": 248909,
+    "centre": 249215,
+    "certificate_signal": 248909,
+    "steps": 1,
+    "elapsed_ms": 0.006983987987041473
+  },
+  "separated_control": {
+    "N": 46840800959,
+    "reference_primes": [
+      203653,
+      230003
+    ],
+    "old_menu": {
+      "status": "group-budget-exhausted",
+      "factor": null,
+      "bound": 61,
+      "menu": [
+        6,
+        11,
+        7,
+        8
+      ],
+      "history": [
+        {
+          "sigma": 6,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 11,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 7,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 8,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 6,
+          "width": 32,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 11,
+          "width": 32,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 7,
+          "width": 32,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 8,
+          "width": 32,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 6,
+          "width": 61,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 11,
+          "width": 61,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 7,
+          "width": 61,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 8,
+          "width": 61,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        }
+      ],
+      "cost": {
+        "doubles": 2536,
+        "differential_adds": 3264,
+        "scalar_bits": 2512,
+        "coordinate_inversions": 24,
+        "coordinate_gcds": 860,
+        "projection_steps": 72,
+        "sieve_cells": 112,
+        "cover_width_sum": 436,
+        "baby_points": 424,
+        "giant_points": 436,
+        "convolutions": 932,
+        "packed_coefficients": 8740,
+        "monic_reductions": 860,
+        "coherent_targets": 0,
+        "derivative_targets": 0,
+        "curves_initialized": 4,
+        "setup_inversions": 4,
+        "probes": 12,
+        "recovery_descents": 0
+      }
+    },
+    "prefix": {
+      "status": "no-collision",
+      "factor": null,
+      "convolutions": 146,
+      "packed_coefficients": 1643,
+      "monic_reductions": 121,
+      "algorithm": "classical-additive-prefix",
+      "width": 61,
+      "covered_integers": 3721,
+      "elapsed_ms": 1.7098350217565894
+    },
+    "fermat": {
+      "status": "near-square-budget-exhausted",
+      "factor": null,
+      "steps": 61,
+      "elapsed_ms": 0.01683100708760321
+    },
+    "extended_menu": {
+      "status": "factor",
+      "factor": 203653,
+      "baby_index": 6,
+      "giant_index": 0,
+      "root": 36905336206,
+      "point": 10049004137,
+      "certificate_signal": 19984468890,
+      "stage": "curve-cover",
+      "projected_point": [
+        43433088799,
+        9887933299
+      ],
+      "a24": 41693329831,
+      "algorithm": "adaptive-group-tournament",
+      "sigma": 12,
+      "width": 16,
+      "bound": 61,
+      "menu": [
+        6,
+        11,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "history": [
+        {
+          "sigma": 6,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 11,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 7,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 8,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 9,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 10,
+          "width": 16,
+          "status": "no-collision",
+          "stage": "curve-cover"
+        },
+        {
+          "sigma": 12,
+          "width": 16,
+          "status": "factor",
+          "stage": "curve-cover"
+        }
+      ],
+      "cost": {
+        "doubles": 1512,
+        "differential_adds": 1652,
+        "scalar_bits": 1498,
+        "coordinate_inversions": 14,
+        "coordinate_gcds": 217,
+        "projection_steps": 42,
+        "sieve_cells": 17,
+        "cover_width_sum": 112,
+        "baby_points": 105,
+        "giant_points": 112,
+        "convolutions": 203,
+        "packed_coefficients": 1267,
+        "monic_reductions": 217,
+        "coherent_targets": 0,
+        "derivative_targets": 0,
+        "curves_initialized": 7,
+        "setup_inversions": 7,
+        "probes": 7,
+        "recovery_descents": 0
+      }
+    },
+    "public_projective_covers": {
+      "6": [
+        {
+          "width": 16,
+          "projected_point": [
+            44921245192,
+            29582083976
+          ],
+          "a24": 7597408086,
+          "projective_product": 35995896755,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 32,
+          "projected_point": [
+            19226735838,
+            42376327907
+          ],
+          "a24": 7597408086,
+          "projective_product": 8054420893,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 61,
+          "projected_point": [
+            31172957786,
+            30668099974
+          ],
+          "a24": 7597408086,
+          "projective_product": 39088595943,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        }
+      ],
+      "11": [
+        {
+          "width": 16,
+          "projected_point": [
+            42259318977,
+            16416714854
+          ],
+          "a24": 35607207820,
+          "projective_product": 44249775715,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 32,
+          "projected_point": [
+            14800167130,
+            17170632022
+          ],
+          "a24": 35607207820,
+          "projective_product": 3011509572,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 61,
+          "projected_point": [
+            37724280280,
+            32639126513
+          ],
+          "a24": 35607207820,
+          "projective_product": 43584780834,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        }
+      ],
+      "7": [
+        {
+          "width": 16,
+          "projected_point": [
+            44389585160,
+            20541596366
+          ],
+          "a24": 15338766097,
+          "projective_product": 33840378508,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 32,
+          "projected_point": [
+            4468661595,
+            44786398194
+          ],
+          "a24": 15338766097,
+          "projective_product": 31395543617,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 61,
+          "projected_point": [
+            22381856380,
+            19648918610
+          ],
+          "a24": 15338766097,
+          "projective_product": 2163412969,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        }
+      ],
+      "8": [
+        {
+          "width": 16,
+          "projected_point": [
+            39623760681,
+            20190726590
+          ],
+          "a24": 40837589380,
+          "projective_product": 12516473115,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 32,
+          "projected_point": [
+            24800082751,
+            9245570683
+          ],
+          "a24": 40837589380,
+          "projective_product": 8409406063,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        },
+        {
+          "width": 61,
+          "projected_point": [
+            8808666586,
+            1240894547
+          ],
+          "a24": 40837589380,
+          "projective_product": 28540164237,
+          "product_gcd": 1,
+          "coordinate_gcds": [
+            1
+          ],
+          "probe_status": "no-collision"
+        }
+      ]
+    },
+    "reference_trap_search": {
+      "scope": "Known-prime diagnostic, never selector input",
+      "seed": 2026100311,
+      "width": 64,
+      "primes_checked": 1708,
+      "prefix_survival": [
+        1708,
+        323,
+        58,
+        10,
+        2
+      ],
+      "all_menu_miss_primes": [
+        203653,
+        230003
+      ]
+    }
+  },
+  "source_hashes": {
+    "scripts/probe_semiprime_group_coverage.py": "202b0386cb8bf46ac388aa2e010cd196b8888c615b538b7b9b70e05cd6e913a9",
+    "scripts/probe_semiprime_group_selection.py": "0e89d387d9f855b0eb98eeef8bf324a12702156213593b17d9e86ab0bd0cc8ef",
+    "RiemannGaussian/SemiprimeGroupCoverage.lean": "df3d885d41486c7ce2865e260638b87067e1ef53e8e8db4ad52ec575480a4ee7"
+  }
+}

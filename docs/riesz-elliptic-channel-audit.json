@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Strict applicability test of direct translated elliptic-trace projection for the retained signed divisor convolution. The floor remains open.",
+  "leanSource": "RiemannGaussian/ZetaRieszEllipticChannelAudit.lean",
+  "publicTheorems": [
+    "familyTrace_sum_zero",
+    "familyTrace_shift_sum_zero",
+    "constant_twist_zero",
+    "twist_add_constant",
+    "twist_sub_mean",
+    "no_floor_from_twist_norms"
+  ],
+  "formalResult": {
+    "kernel": "K(v)=-sum_x quadraticChar(x*(x-1)*(x-v)), continued at both degenerate fibers",
+    "field": "any finite field of characteristic different from two",
+    "completeTraceMean": "exactly zero",
+    "allTranslationsRetained": true,
+    "constantChannelInvisible": true,
+    "counterexample": "the constant negative population has every translated trace correlation zero and a strictly negative joined total",
+    "exactNoGo": "No finite multiplier times the sum of trace-twist norms universally bounds the signed total from below.",
+    "scope": "Direct trace projection of an arbitrary residue population only. This does not disprove the native Riesz floor or rule out a trace kernel derived in an actual Cauchy/completion identity.",
+    "hasseBoundFormalizedOrAssumed": false
+  },
+  "literalRegression": {
+    "source": "scripts/probe_riesz_elliptic_channels.py",
+    "sourceSha256": "353943a2d9e1a9c79a2598761fb3895564f9afc23fd0e10b495ac77c76a7f00b",
+    "snapshot": ".lake/riesz-elliptic-audit/source-353943a2d9e1a9c79a2598761fb3895564f9afc23fd0e10b495ac77c76a7f00b.py",
+    "output": ".lake/riesz-elliptic-audit/probe.json",
+    "orders": [256, 640, 1536],
+    "seeds": [317, 919],
+    "heights": [54, 65, 100],
+    "moduli": [17, 31, 61, 127, 251, 503],
+    "batches": 6,
+    "retainedLabels": 1980,
+    "completeCofactorDivisorIncidences": 114672,
+    "channelAudits": 108,
+    "countsAt256": [3, 4, 5, 6, 7],
+    "countsAt640And1536": [3, 4, 5, 6, 7, 8, 9],
+    "exactOriginalConvolution": "sum_n weight(n) * sum_{b|n/largestPrime(n)} mu(b) * pairHinge(L,largestPrime(n),b)",
+    "integerResiduesAndCutoffMembership": true,
+    "allOriginalMasksAllocationAndComplexPhaseRetained": true,
+    "allSelectedLabelsAndDivisorIncidencesJoinedBeforeProjection": true,
+    "oneCommonAmplitudeRescalingPerPopulation": true,
+    "originalMovingRieszLengthRetained": true,
+    "syntheticConstantShiftRegressionDistinctFromNativePopulation": true,
+    "originalJoinedSumInPrincipalChannel": "exactly 100 percent by the finite-sum identity, not an empirical density claim",
+    "constantChannelFractionOfResidueEnergyRange": [1.233310906462496e-7, 0.0003567688201512275],
+    "maximumCenteredResidueReconstructionError": 1.068769406796455e-11,
+    "maximumTraceChangeUnderSyntheticConstantShift": 7.558251190218771e-12,
+    "puncturedTraceMean": "recorded explicitly; removing singular parameters can introduce a constant component and is not silently done",
+    "limitations": [
+      "Complete subsets of two constructed finite probable-prime universes, not the full native core or a population density sample.",
+      "Original count ceiling; compact orders do not satisfy the eventual K/864+1 count-payment hypotheses.",
+      "No count56+ or cofinal many-bin arithmetic population tested.",
+      "Transcendental weights and numerical FFT reconstruction are not interval-certified.",
+      "No source-scale floor credit or exponential rate inferred."
+    ]
+  },
+  "literatureAudit": {
+    "sources": [
+      "https://web.math.princeton.edu/~nmk/newratio33.pdf",
+      "https://arxiv.org/abs/1211.6043",
+      "https://arxiv.org/abs/2511.09459"
+    ],
+    "availableEstimates": "Power-saving prime/Moebius trace-weight estimates and bilinear trace-function bounds under explicit conductor/complexity, nonexceptionality/monodromy and range hypotheses.",
+    "unprovedBridge": "An exact algebraic correlation kernel for the literal signed convolution, with the principal channel and every correlated mask retained or independently paid.",
+    "directProjectionVerdict": "NO-GO for proving the floor from trace-twist norms alone.",
+    "allEllipticTechniquesRuledOut": false,
+    "noArbitraryTraceWeightInsertedIntoCarrier": true
+  },
+  "checks": {
+    "strictDirectLean": {"exitCode": 0, "warningAsError": true},
+    "targetedBuild": {"exitCode": 0, "jobs": 3006, "log": ".lake/riesz-elliptic-audit/build.log"},
+    "ordinaryRootImportAndNamespaceAudit": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "errors": 0,
+      "declarations": 9,
+      "generatedDeclarations": 3,
+      "linters": 14,
+      "publicTheoremAxioms": ["propext", "Classical.choice", "Quot.sound"],
+      "log": ".lake/riesz-elliptic-audit/lean-audit.log"
+    },
+    "pythonSyntax": {"exitCode": 0},
+    "selfTest": {"passed": true, "moduli": [7, 17, 31, 61, 127, 251, 503], "twoHingeRegressions": 7},
+    "optionalOutsideBuildsAndCI": true,
+    "priorSourcesAndNoGosPreserved": true,
+    "headAndIndexUnchangedBeforeDocumentation": true,
+    "publicEndpointsChanged": false,
+    "commitsPushesSubagentsOrWiderGates": false
+  },
+  "remainingTarget": {
+    "carrier": "ZetaRieszGammaJoint.joinedPhysical",
+    "independentBudget": "cofinally ZetaRieszComplexNullFloor.nativeCost u y j <= 399/5000",
+    "principalChannelSignedEstimateProved": false,
+    "floorClosed": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false
+  }
+}

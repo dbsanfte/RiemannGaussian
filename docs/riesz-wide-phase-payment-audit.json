@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T10:47:19.754539+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszWidePhasePayment",
+  "scope": "New independent geometric payment of the actual remaining pairs in the widened total-log phase-period neighbourhood, plus direct original joined floor comparison. The remaining signed numerical budget is OPEN.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszWidePhasePayment.lean": "c4fa88f901f710cbb45e8d27c07740bfe0765a356b2ba0367779802910d031aa",
+    "RiemannGaussian.lean": "8c859526720cea52c4f2f2291aa958be80a0dc962c70215de15a8d895905b882",
+    "AGENTS.md": "d37b441880b2a1b747eac37b391812641af6ea1f2d4356a47ecc8c8f270f45d7",
+    "docs/theorem-explorer/metadata.json": "c3b63eeeee8690e01d439daeff99550b4a0a2aba07a94b56a5e82c0c3bbc8517",
+    "docs/zeta-riesz-wide-phase-payment.md": "3152b2c80e584d801195395eb9a87b5d00e7d50bf2b776f412e51705348263a3",
+    "scripts/probe_riesz_wide_phase_payment.py": "7b76f567e78ef6f49fa5163b0bbc5546cc4eb89533a56461ff6f5ac29e0b4d77"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszWidePhasePayment.oldNear_subset",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.wide_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.maskedOrbitEnergy_bound",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.wide_source_rate",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.weighted_maskedOrbit_bound",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.weighted_maskedOrbit_price",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.tendsto_widePrice",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.paidPair_outside_old",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.remainingEnergy_eq",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.cost_split",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszWidePhasePayment.eventually_joined_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-wide-phase-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10443,
+      "log": ".lake/riesz-wide-phase-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-wide-phase-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 22,
+      "generatedDeclarations": 14,
+      "publicTheoremCount": 12,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszWidePhasePayment.oldNear_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.wide_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.maskedOrbitEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.wide_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.weighted_maskedOrbit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.weighted_maskedOrbit_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.tendsto_widePrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.paidPair_outside_old": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.remainingEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.cost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszWidePhasePayment.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-wide-phase-audit.log"
+    },
+    "exactRationalRateAudit": {
+      "sourceExponentUpper": "-15893/1474560000",
+      "sourceExponentUpperFloat": -1.0778130425347222e-05,
+      "certifiedEnergyExponent": "-1/100000",
+      "priceExponent": "-1/200000",
+      "oldLogWidthExponent": "-1/1000",
+      "newLogWidthExponent": "-1/4500",
+      "criticalDenominatorForThisAllowance": "163840000/34643",
+      "criticalDenominatorFloat": 4729.3825592471785,
+      "unchangedRadius": "10001/20000",
+      "widthGrowthRatioExponent": "7/9000",
+      "numericalValuesAreAllowanceAuditNotCarrierCertificate": true,
+      "fixedConstantsEvaluated": false,
+      "effectiveStartCertified": false,
+      "examples": [
+        {
+          "N": 256,
+          "logWidthRatio": 0.19911111111111113,
+          "newWidthY54": 0.01717634600171206,
+          "oldWidthY54": 0.014075308523495426
+        },
+        {
+          "N": 640,
+          "logWidthRatio": 0.4977777777777778,
+          "newWidthY54": 0.015771426785152923,
+          "oldWidthY54": 0.009587134982600883
+        },
+        {
+          "N": 65536,
+          "logWidthRatio": 50.97244444444445,
+          "newWidthY54": 8.605289705065103e-09,
+          "oldWidthY54": 6.276451026587305e-31
+        },
+        {
+          "N": 262144,
+          "logWidthRatio": 203.8897777777778,
+          "newWidthY54": 9.123260000220946e-28,
+          "oldWidthY54": 2.5819310864420927e-116
+        }
+      ]
+    },
+    "preservation": {
+      "unchangedPriorLeanModules": 2784,
+      "stagedFiles": 4,
+      "headPreserved": true,
+      "readmePreserved": true,
+      "publishedMetadataExceptModuleFamiliesPreserved": true
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0
+    },
+    "whitespace": {
+      "exitCode": 0
+    },
+    "widerPublicationGatesRun": false,
+    "committed": false,
+    "pushed": false,
+    "optionalFiniteProbe": {
+      "exitCode": 0,
+      "report": ".lake/riesz-wide-phase-probe.json",
+      "log": ".lake/riesz-wide-phase-probe.log",
+      "fullPopulation": false,
+      "intervalArithmetic": false,
+      "sourceBudgetCompared": false,
+      "cases": 12,
+      "newTermPositive": 6,
+      "newTermNegative": 6,
+      "newOrderedPairsRange": [
+        1858,
+        6830
+      ],
+      "adverseSelectionMadeOnce": true,
+      "allOriginalWeightsAndMasksRetained": true,
+      "fullEventualCountCropAppliedPrematurely": false
+    }
+  },
+  "claims": {
+    "newIndependentGlobalSparseFamilyPayment": true,
+    "remainingMainEnergyBoundProved": false,
+    "energyMonotonicityAsserted": false,
+    "fractionOfFloorDeficitMeasured": false,
+    "constantsEvaluated": false,
+    "effectiveStartCertified": false,
+    "zeroExclusion": false
+  }
+}

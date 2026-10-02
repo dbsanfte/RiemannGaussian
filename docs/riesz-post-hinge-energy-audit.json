@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T06:25:34.883706+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszPostHingeEnergy",
+  "scope": "Sharper unconditional post-hinge profile price on the SAME whole native funded signed carrier. Independent retained cross-energy bound and arithmetic floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszPostHingeEnergy.lean": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+    "scripts/probe_riesz_post_hinge_budget.py": "5b8454e0cedad70bcb72523cdab097a87917f0a5047565bd573b3241176430f2",
+    "docs/zeta-riesz-post-hinge-energy.md": "61a7c89c72b603a20daf3009ce3dfbf2fc2bc7edf9368be25962c357c708a0b4",
+    "RiemannGaussian.lean": "ed72edb4a18d0bc0ba8128b42d95de8eb185be0b0e77c574dcc1404721bb37d8",
+    "docs/theorem-explorer/metadata.json": "07703d31cc5c76567f31d39d38193ab289f8393f90a4ac8163eb8fa42488a295",
+    "AGENTS.md": "6b24ba703c2829ade939357e9f041e5c5e28a65c39014182ac27e02ce2c89467",
+    "RiemannGaussian/ZetaRieszDiagonalPayment.lean": "9d20f3cee8406004fbf94392d69709ba76e9cfc72ae633ae5900f031340bf767",
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+    "RiemannGaussian/ZetaRieszNearLabelPayment.lean": "e87e26dceaf6d2fcf6cce1092c5131a0d9a33b99d3891ece1e7605741ce0f8ba"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.corrected_step_nonpos",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.corrected_step_energy_le",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.profileEnergy_post_hinge",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.adverseProfileEnergy_post_hinge",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.core_sup_log_le",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.length_lower_bound",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.radius_log_le",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.length_ge_rational",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.core_profile_bound",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.eventually_core_profile_bound",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.cost_le_of_numeric_energy",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.real_floor_of_numeric_energy",
+    "RiemannGaussian.ZetaRieszPostHingeEnergy.eventually_joined_calibrated_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-post-hinge-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10436,
+      "target": "RiemannGaussian.ZetaRieszPostHingeEnergy",
+      "log": ".lake/riesz-post-hinge-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-post-hinge-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 15,
+      "generatedDeclarations": 6,
+      "publicTheoremCount": 13,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.corrected_step_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.corrected_step_energy_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.profileEnergy_post_hinge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.adverseProfileEnergy_post_hinge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.core_sup_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.length_lower_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.radius_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.length_ge_rational": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.core_profile_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.eventually_core_profile_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.cost_le_of_numeric_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.real_floor_of_numeric_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPostHingeEnergy.eventually_joined_calibrated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-post-hinge-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "astParsed": true,
+      "log": ".lake/riesz-post-hinge-budget-probe.log",
+      "runtimeArtifact": ".lake/riesz-post-hinge-budget-probe.json"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "moduleChecked": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean"
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+        "scripts/probe_riesz_post_hinge_budget.py",
+        "docs/zeta-riesz-post-hinge-energy.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "priorDiagonalSharedAndNearMathematicalSourcesUnchanged": true
+  },
+  "actualPostHingePrice": "adverseProfileEnergy <= max(0,log X-L)",
+  "actualMovingLengthLowerBound": "L_N >= -2N log u - 2 log(N+1)",
+  "explicitProfileOrderThreshold": 65536,
+  "profileThresholdIsNotArithmeticFloorStart": true,
+  "literalCoreEndpointCap": "log X <= 203N/100",
+  "literalMovingLengthRationalCap": "L_N >= 277N/200",
+  "wholeFundedProfilePrice": "adverseProfileEnergy <= 129N/200",
+  "nativeWholeFloor": "Re(u^(N+1)joinedPhysical) >= -sqrt((129N/200)*max(separatedEnergy,0))-err; err->0",
+  "originalAdverseSelectionRetained": true,
+  "fundedOverlapsRetained": true,
+  "sameSupplyWitnessDebitAndAllEarlierPaidErrorsRetained": true,
+  "independentSufficientEnergyTarget": "separatedEnergy <= 3/(320(N+1))",
+  "conditionalCostEndpoint": "39/500 = 0.078",
+  "conditionalFloorEndpoint": "-39/500-o(1), strictly above -79/1000",
+  "independentEnergyTargetProved": false,
+  "additionalLabelPopulationPaymentProved": false,
+  "newExponentialCancellationBoundProved": false,
+  "automaticManyBinOrthogonalityProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "finiteProbe": {
+    "orders": [
+      4,
+      5
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "cases": 6,
+    "nativeMovingLengthUsed": true,
+    "exactRationalIntegerFloorUsed": true,
+    "allocationSupportExactlyEmpty": true,
+    "nativePhysicalMasksCertified": false,
+    "nativeCount56PlusManyBinPopulationCertified": false,
+    "nativeDyadicSupportCertified": false,
+    "nativeFundingWitnessCertified": false,
+    "floatingResultsIntervalCertified": false,
+    "profileWidthChecksPassed": true,
+    "commonMeanVarianceRatioRange": [
+      0.9951621625459329,
+      0.9999968248449574
+    ],
+    "commonMeanProjectedCostIncreasedCases": 6,
+    "commonMeanProjectionUsedAsProofMechanism": false
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Exact clipped insertion coefficient, joined finite-family signed floor, and first-moment quadratic transport; no native floor payment.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszClippedInsertionFloor.lean": {
+      "sha256": "47856a3c872e83c3f06e0abd4a57f61bc8d19046de13ddf2058cc81fdac627ae",
+      "snapshot": ".lake/riesz-clipped-insertion/source-47856a3c872e83c3f06e0abd4a57f61bc8d19046de13ddf2058cc81fdac627ae.lean"
+    },
+    "scripts/probe_riesz_clipped_insertions.py": {
+      "sha256": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+      "snapshot": ".lake/riesz-clipped-insertion/source-d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454.py"
+    },
+    "scripts/probe_riesz_generic_patterns.py": {
+      "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+      "snapshot": ".lake/riesz-clipped-insertion/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+    },
+    "scripts/riesz_subset_moments.py": {
+      "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+      "snapshot": ".lake/riesz-clipped-insertion/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+    }
+  },
+  "lean": {
+    "publicTheorems": [
+      "riesz_insert_clipped",
+      "response_insert_clipped",
+      "literal_insert_clipped",
+      "joined_insertions_floor",
+      "joined_insertions_floor_of_coverage",
+      "joined_weighted_insertions_floor",
+      "joined_owner_insertions_floor",
+      "centred_transport_norm",
+      "centred_transport_norm_quadratic",
+      "centred_owner_insertions_floor",
+      "literal_insertions_floor"
+    ],
+    "scope": "Actual finite arithmetic atoms and coupled one-sided inequalities; native membership, actual partner inventory/funding/capacity and global numerical price remain obligations.",
+    "shortInsertionsRetained": true,
+    "singleJoinedComplexTransportCost": true,
+    "favorableOwnerAllocationRateReused": "2*exp(-N/25)",
+    "centeredTransportBound": "M*rho^2*sum c, under an exact zero weighted log-gap moment and bounded second derivative",
+    "differentiateHardMask": false,
+    "noNewPrimeCancellationHypothesis": "No Type-II/prime matching hypothesis is asserted proved.",
+    "independentNativeFloor": false
+  },
+  "reports": {
+    "unpaid-final": {
+      "report": ".lake/riesz-clipped-insertion/unpaid-final.json",
+      "sha256": "f8865b20656bcf2ecba1e9ff87c0ad778460e1a67370d6052a43dfb4863890cf",
+      "summary": {
+        "families": 63,
+        "completeModelFamilies": 45,
+        "skippedBeforeSubsetCalculation": 18,
+        "unfinishedFamilies": 0,
+        "exactClippedInsertions": 300,
+        "formerlyExcludedShortInsertions": 225,
+        "negativeOriginalPhaseCases": 63,
+        "nativePrimeMatchingOrFloorCertified": false
+      },
+      "sourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_clipped_insertions.py": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+        "scripts/probe_riesz_generic_patterns.py": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+        "scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+        "RiemannGaussian/ZetaRieszClippedInsertionFloor.lean": "47856a3c872e83c3f06e0abd4a57f61bc8d19046de13ddf2058cc81fdac627ae"
+      }
+    },
+    "budget-exhausted-final": {
+      "report": ".lake/riesz-clipped-insertion/budget-exhausted-final.json",
+      "sha256": "870d77cf8ed9c719c5804bbcd7c2e4eedb30131c757f3f93d4f12f9912b38a8a",
+      "summary": {
+        "families": 9,
+        "completeModelFamilies": 0,
+        "skippedBeforeSubsetCalculation": 0,
+        "unfinishedFamilies": 9,
+        "exactClippedInsertions": 0,
+        "formerlyExcludedShortInsertions": 0,
+        "negativeOriginalPhaseCases": 0,
+        "nativePrimeMatchingOrFloorCertified": false
+      },
+      "sourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_clipped_insertions.py": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+        "scripts/probe_riesz_generic_patterns.py": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+        "scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+        "RiemannGaussian/ZetaRieszClippedInsertionFloor.lean": "47856a3c872e83c3f06e0abd4a57f61bc8d19046de13ddf2058cc81fdac627ae"
+      }
+    }
+  },
+  "observations": {
+    "completeModelFamilies": 45,
+    "wholeCounts": [
+      56,
+      57,
+      64,
+      65,
+      301
+    ],
+    "occupiedCofactorBins": [
+      51,
+      70
+    ],
+    "paidFewBinCeiling": 45,
+    "exactInsertedFiniteInputResponses": 300,
+    "shortInsertionsOutsideOldInnerCondition": 225,
+    "constructedExactlyCoveredAndCenteredFamilies": 30,
+    "globalPartnerCapacityProved": false,
+    "actualPrimePartnersProved": false,
+    "phaseAndFullFactorialRatioRetained": true,
+    "numericalTransportIsUnallocatedSmoothAmplitude": true,
+    "fullAllocatedTransportNumericallyEvaluated": false,
+    "allocationChernoffEnclosureRetained": true,
+    "movingLengthErrorRetainedSeparately": true,
+    "everyActualFiniteBinaryGapRetained": true,
+    "relativeCosts": {
+      "0.001": {
+        "modelPhaseCases": 45,
+        "negativeFirstAndAllInsertedFavorable": 21,
+        "joinedRelativeCostRange": [
+          0.0014581457404772504,
+          0.004996334722015901
+        ],
+        "joinedToSeparateTransportRange": [
+          0.02700134603997434,
+          0.049981664002574124
+        ],
+        "nativeSourceCredit": false,
+        "intervalCertified": false
+      },
+      "0.000001": {
+        "modelPhaseCases": 45,
+        "negativeFirstAndAllInsertedFavorable": 21,
+        "joinedRelativeCostRange": [
+          1.458499999645706e-09,
+          5.000499995833333e-09
+        ],
+        "joinedToSeparateTransportRange": [
+          2.700462922949824e-05,
+          5.000249991666458e-05
+        ],
+        "nativeSourceCredit": false,
+        "intervalCertified": false
+      }
+    },
+    "fixedGapBeatsSourceGrowth": false
+  },
+  "validation": {
+    "strictDirectLean": "passed",
+    "targetedLakeBuildWithWarningAsError": "passed",
+    "rootImportPlusChangedModule": "passed",
+    "namespaceLint": "14 linters passed; 11 public plus 4 generated declarations",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sourcePlaceholderCheck": "passed",
+    "pythonSyntax": "passed",
+    "sourceAndWorkingTreeWhitespace": "passed",
+    "exactClippedCoefficientRegression": "300 complete all-subset finite-input checks",
+    "paidGuardBeforeSubsetComputation": "18 records skipped before recursion",
+    "deliberateRecursionBudgetExhaustion": "9 originals stay unresolved; no candidate or cost claim",
+    "focusedOnly": true,
+    "widerPublicationGates": false,
+    "logs": [
+      ".lake/riesz-clipped-insertion/direct-lean.log",
+      ".lake/riesz-clipped-insertion/build-final.log",
+      ".lake/riesz-clipped-insertion/lean-audit.log"
+    ]
+  },
+  "preservation": {
+    "changedProtectedFiles": [
+      "docs/semiprime-factorisation-investigation.md"
+    ],
+    "concurrentChangesObservedAfterInitialCheck": true,
+    "protectedFilesModifiedByThisSlice": false,
+    "publicReadmeRootMetadataUnchanged": true,
+    "indexChangedConcurrently": true,
+    "indexMutatedByThisSlice": false,
+    "sourceWhitespaceAndSyntax": true,
+    "noProofPlaceholders": true,
+    "notes": "Concurrent unrelated semiprime note/index changes were observed after the initial preservation check and left untouched. This slice made no Git staging/commit/push or public-file edits."
+  },
+  "openEndgame": {
+    "nativeTarget": "cofinal nativeCost <=399/5000",
+    "independentFloor": "OPEN",
+    "ceiling": "OPEN",
+    "zeroExclusion": false,
+    "RHContradiction": false,
+    "globalUnmatchedAndFundingTermsRetained": true,
+    "changesLocalUncommitted": true,
+    "nextArithmeticObligation": "Actual masked two-sided prime inventory and fractional capacity, with original funding and a source-scale bound for the joined transport and signed unmatched labels."
+  }
+}

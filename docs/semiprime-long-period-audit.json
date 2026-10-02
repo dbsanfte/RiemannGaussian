@@ -1,0 +1,301 @@
+{
+  "controls": [
+    {
+      "N_decimal": "49065649",
+      "reference_factors_decimal": [
+        "6827",
+        "7187"
+      ],
+      "tests": {
+        "linear_same_colour": {
+          "result": {
+            "bound": 20,
+            "order_limit": 400,
+            "discriminant": -1,
+            "jacobi": 1,
+            "separator_exponent": "49065648",
+            "parameter": 2,
+            "order_divisor": 1,
+            "status": "certified-large-order",
+            "factor": null,
+            "work": 40,
+            "certified_through": 400,
+            "stage": "geometric",
+            "projected_base": [
+              48738582,
+              11351372
+            ],
+            "projection_count": 8
+          },
+          "ms": 0.857082981383428
+        },
+        "dickson6_same_colour": {
+          "result": {
+            "status": "factor",
+            "factor": 6827,
+            "baby_index": 19,
+            "giant_index": 0,
+            "root": 17084763,
+            "point": 48680119,
+            "convolutions": 40,
+            "packed_coefficients": 284,
+            "monic_reductions": 39,
+            "bound": 20,
+            "degree": 6,
+            "parameter": 1,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "stage": "dickson-cover",
+            "projected_base": [
+              48738582,
+              11351372
+            ],
+            "linear_cover": 400,
+            "baby_count": 20,
+            "giant_count": 20,
+            "finite_difference_updates": 240,
+            "projection_count": 8,
+            "collision_exponents": [
+              "46267202",
+              "63043598"
+            ],
+            "reference_order_after_recovery": 569,
+            "order_to_old_cover_ratio": 1.4225
+          },
+          "ms": 0.8499600226059556
+        },
+        "curve": {
+          "result": {
+            "status": "factor",
+            "factor": 6827,
+            "baby_index": 10,
+            "giant_index": 8,
+            "root": 44899996,
+            "point": 27818842,
+            "convolutions": 29,
+            "packed_coefficients": 180,
+            "monic_reductions": 26,
+            "bound": 20,
+            "sigma": 6,
+            "curves_used": 1,
+            "projection_count": 8,
+            "linear_cover": 400,
+            "stage": "curve-cover",
+            "baby_count": 19,
+            "giant_count": 15,
+            "projected_point": [
+              26308960,
+              21804382
+            ],
+            "a24": 26732606,
+            "earlier_curves": [],
+            "target_batches": 4,
+            "staged": true,
+            "verified_local_annihilators": [
+              191
+            ]
+          },
+          "ms": 0.5847050051670521
+        }
+      }
+    },
+    {
+      "N_decimal": "8562316804979989201",
+      "reference_factors_decimal": [
+        "2346272483",
+        "3649327547"
+      ],
+      "tests": {
+        "linear_same_colour": {
+          "result": {
+            "bound": 1431,
+            "order_limit": 2047761,
+            "discriminant": -1,
+            "jacobi": 1,
+            "separator_exponent": "8562316804979989200",
+            "parameter": 2,
+            "order_divisor": 1,
+            "status": "certified-large-order",
+            "factor": null,
+            "work": 2862,
+            "certified_through": 2047761,
+            "stage": "geometric",
+            "projected_base": [
+              "7280553238466664292",
+              "5242033921414966205"
+            ],
+            "projection_count": 226
+          },
+          "ms": 81.25216100597754
+        },
+        "dickson6_same_colour": {
+          "result": {
+            "status": "factor",
+            "factor": 2346272483,
+            "baby_index": 1427,
+            "giant_index": 476,
+            "root": "237621801882584593",
+            "point": "6820094445240089472",
+            "convolutions": 4076,
+            "packed_coefficients": 118505,
+            "monic_reductions": 2861,
+            "bound": 1431,
+            "degree": 6,
+            "parameter": 1,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "stage": "dickson-cover",
+            "projected_base": [
+              "7280553238466664292",
+              "5242033921414966205"
+            ],
+            "linear_cover": 2047761,
+            "baby_count": 1431,
+            "giant_count": 1431,
+            "finite_difference_updates": 17172,
+            "projection_count": 226,
+            "collision_exponents": [
+              "8443889844527188802",
+              "101145851947691613918017073899850562"
+            ],
+            "reference_order_after_recovery": 195522707,
+            "order_to_old_cover_ratio": 95.48121436046492
+          },
+          "ms": 113.78424399299547
+        },
+        "curve": {
+          "result": {
+            "status": "factor",
+            "factor": 3649327547,
+            "baby_index": 1084,
+            "giant_index": 947,
+            "root": "6900300783146404387",
+            "point": "8431540451865747874",
+            "convolutions": 3248,
+            "packed_coefficients": 117024,
+            "monic_reductions": 2036,
+            "bound": 1431,
+            "sigma": 6,
+            "curves_used": 1,
+            "projection_count": 226,
+            "linear_cover": 2047761,
+            "stage": "curve-cover",
+            "baby_count": 1430,
+            "giant_count": 1023,
+            "projected_point": [
+              "2534317202681428123",
+              "4274678290480725387"
+            ],
+            "a24": "3479386520915281987",
+            "earlier_curves": [],
+            "target_batches": 10,
+            "staged": true,
+            "verified_local_annihilators": [
+              1357673
+            ]
+          },
+          "ms": 123.68987101945095
+        }
+      }
+    },
+    {
+      "N_decimal": "477209897193541203289441",
+      "reference_factors_decimal": [
+        "661911275027",
+        "720957498683"
+      ],
+      "tests": {
+        "linear_same_colour": {
+          "result": {
+            "bound": 8840,
+            "order_limit": 78145600,
+            "discriminant": -1,
+            "jacobi": 1,
+            "separator_exponent": "477209897193541203289440",
+            "parameter": 2,
+            "order_divisor": 1,
+            "status": "certified-large-order",
+            "factor": null,
+            "work": 17680,
+            "certified_through": 78145600,
+            "stage": "geometric",
+            "projected_base": [
+              "289770845241964849925877",
+              "447514273622213581710135"
+            ],
+            "projection_count": 1102
+          },
+          "ms": 610.6742819829378
+        },
+        "dickson6_same_colour": {
+          "result": {
+            "status": "no-collision",
+            "factor": null,
+            "convolutions": 25364,
+            "packed_coefficients": 1046947,
+            "monic_reductions": 17679,
+            "bound": 8840,
+            "degree": 6,
+            "parameter": 1,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "stage": "dickson-cover",
+            "projected_base": [
+              "289770845241964849925877",
+              "447514273622213581710135"
+            ],
+            "linear_cover": 78145600,
+            "baby_count": 8840,
+            "giant_count": 8840,
+            "finite_difference_updates": 106080,
+            "projection_count": 1102
+          },
+          "ms": 948.8205619854853
+        },
+        "curve": {
+          "result": {
+            "status": "factor",
+            "factor": 661911275027,
+            "baby_index": 3192,
+            "giant_index": 1,
+            "root": "379456749489938888166636",
+            "point": "167571997247235652292706",
+            "convolutions": 8839,
+            "packed_coefficients": 139321,
+            "monic_reductions": 4,
+            "bound": 8840,
+            "sigma": 6,
+            "curves_used": 1,
+            "projection_count": 1102,
+            "linear_cover": 78145600,
+            "stage": "curve-cover",
+            "baby_count": 8839,
+            "giant_count": 3,
+            "projected_point": [
+              "322523176444380798932339",
+              "117089191557391358792083"
+            ],
+            "a24": "344812348451417924247200",
+            "earlier_curves": [],
+            "target_batches": 2,
+            "staged": true,
+            "verified_local_annihilators": [
+              20873
+            ]
+          },
+          "ms": 236.95038000005297
+        }
+      }
+    }
+  ],
+  "source_hashes": {
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+  },
+  "interpretation": "Nonlinear aliases hit two controls; changing to ECM hits all three. Neither is a generic deterministic one-sixth guarantee."
+}

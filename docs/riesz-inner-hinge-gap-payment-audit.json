@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T03:31:37.952494+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszInnerHingeGapPayment",
+  "scope": "Count-free joined literal inner-hinge pair estimate and geometric total cost for any disjoint same-funded supported matching with actual exponentially small log gaps; original signed unmatched/funding rest retained. No native matching coverage or whole floor.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean": "c209e00aafb6c47b00105054368f66e6bb1fab605d0d061871b324d65b6e60ad",
+    "RiemannGaussian/ZetaRieszOwnerPairFloor.lean": "50be5079b632aa9214112eb6deb6a083752f3ce47d9d5df7b96c1f5d0fba3b4b",
+    "RiemannGaussian/ZetaRieszInnerHingeTransport.lean": "28e09e25f0fe9e279217892e53522ea3d946b36706d3844aa88cf32480820e4e",
+    "RiemannGaussian/ZetaRieszSmoothOwnerDiscrepancy.lean": "7e4411e542f8bfbd09e88b75327e2df3dbdaf83b981b30c84d169ab365d34dea",
+    "RiemannGaussian/ZetaRieszPairMatching.lean": "02874fe0fc579fd79f519665f007a8c4d042356a400dcf6e26af9983e53e5a1c",
+    "RiemannGaussian/ZetaRieszAssignedCompanion.lean": "3ec9449705b65500ab18944cf50f0d91d06fad41534157bfd67a576bea791254",
+    "RiemannGaussian/ZetaRieszWideOwnerAudit.lean": "44c7090ba590c4c3a212dc9f22cbb9be2440c8d3a8396c74df5c61e5fc9c4c3f",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+    "scripts/probe_riesz_inner_gap_payment.py": "0f4a8a614e8b90655610b6fadf251db84151c0a59ac2f73ab07e87d9d86638bb",
+    "docs/zeta-riesz-inner-hinge-gap-payment.md": "c7556e235ac4a16a22edfadef1767282f623c34cde570d1326e153cbfb353373",
+    "RiemannGaussian.lean": "06515e2d2d71bfb8bd30853a4ed65ab4e63a1b42746b5902f96b608fbc569c6c",
+    "docs/theorem-explorer/metadata.json": "f6c0e357515aecf66155bcc35b7ae5a1c71d548b0cee77c7882dfd1ddae657cc",
+    "AGENTS.md": "bcdc045fbe6c709ae680cfcef968d59e87f7b25af9dae338e3a8456bc5538026"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.inner_kernel_gap",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.inner_kernel_unit_gap",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.unallocated_inner_atom",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.opposite_inner_pair_gap",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.literal_pair_gap",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.cofactor_split_parity",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.small_gap_source_rate",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.global_literal_gap_cost",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.tendsto_gap_price",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.replacement_interval_log_gap",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.integer_log_gap_lower",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.small_gap_forces_large_local_factor",
+    "RiemannGaussian.ZetaRieszInnerHingeGapPayment.matching_original_floor_of_small_gaps"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-inner-gap-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10429,
+      "target": "RiemannGaussian.ZetaRieszInnerHingeGapPayment",
+      "log": ".lake/riesz-inner-gap-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-inner-gap-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszInnerHingeGapPayment",
+      "linters": 14,
+      "declarations": 21,
+      "generatedDeclarations": 9,
+      "publicTheoremCount": 13,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.inner_kernel_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.inner_kernel_unit_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.unallocated_inner_atom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.opposite_inner_pair_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.literal_pair_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.cofactor_split_parity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.small_gap_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.global_literal_gap_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.tendsto_gap_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.replacement_interval_log_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.integer_log_gap_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.small_gap_forces_large_local_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszInnerHingeGapPayment.matching_original_floor_of_small_gaps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-inner-gap-audit.log"
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "defaultExplorerEndpointsUnchanged": true,
+    "readmeUnchanged": true,
+    "unrelatedStagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "whitespace": {
+      "sourceFilesChecked": [
+        "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean",
+        "RiemannGaussian/ZetaRieszOwnerPairFloor.lean",
+        "RiemannGaussian/ZetaRieszInnerHingeTransport.lean",
+        "RiemannGaussian/ZetaRieszSmoothOwnerDiscrepancy.lean",
+        "RiemannGaussian/ZetaRieszPairMatching.lean",
+        "RiemannGaussian/ZetaRieszAssignedCompanion.lean",
+        "RiemannGaussian/ZetaRieszWideOwnerAudit.lean",
+        "RiemannGaussian/ZetaRieszNonownerAllocation.lean",
+        "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean",
+        "scripts/probe_riesz_inner_gap_payment.py",
+        "docs/zeta-riesz-inner-hinge-gap-payment.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ],
+      "exitCode": 0
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_inner_gap_payment.py",
+      "log": ".lake/riesz-inner-gap-probe.log",
+      "runtimeArtifact": ".lake/riesz-inner-gap-probe.json"
+    }
+  },
+  "exactInnerKernel": "mu(b) * (T-L-log(q))/L * T^(N+1)/N! * exp(-(3/2+i*y)*T), T=log(p*q*b)",
+  "exactLiteralPairCost": "<=21*(1+abs(y))*(N+1)*radialCap(N)/n * abs(log(n)-log(n_prime)), opposite cofactor Moebius signs and literal InnerHinge conditions",
+  "requiredLiteralGap": "abs(log(n)-log(n_prime)) <= exp(-N/1000)",
+  "totalSourceNormalizedCost": "<=168*radiusCeiling*B*(1+abs(y))*(N+1)^3*exp(-N/1250), 0<=u<=10001/20000",
+  "fundingCondition": "Original w(n)=w(n_prime) on every matched edge; norm(w)<=B. This equality is not derived from the eventual envelope4+abs(epsilon).",
+  "wholeOriginalSignedFloorInequalityProved": true,
+  "allOriginalComplexPhasesRetained": true,
+  "originalUnmatchedResidualRetainedSigned": true,
+  "allCofactorPrimeCountsAllowedInEstimate": true,
+  "cofactorPrimeSplittingIncluded": true,
+  "canHandleCofactorsAlreadyContainingTwo": true,
+  "existingNonownerPaymentUsedOnce": true,
+  "totalCostForEveryAdmissibleCloseMatchingProved": true,
+  "sourceGrowthBeatenByRequiredGapRateProved": true,
+  "closeMatchingCostTendsToZeroForFixedFundingAndHeight": true,
+  "manyBinHypothesisImpliesRequiredMatchingProved": false,
+  "nativeFundedPartnerEqualityProved": false,
+  "finiteNativePartnerCoverageProved": false,
+  "nativeShortIntervalPrimeTheoremProved": false,
+  "totalSourceScaleCostOfUnknownNativeMatchingProved": false,
+  "signedUnmatchedAndSupplyBoundProved": false,
+  "newSourceScalePopulationPaid": false,
+  "fullCarrierFixedPowerSavingProved": false,
+  "independentRemainingSignedFloorProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "optionalProbe": {
+    "scope": "Finite actual disjoint inner-hinge pairs at equal funding; conditional gap-price regression and frozen-cofactor capacity diagnostic only.",
+    "precisionDigits": 160,
+    "ownerCellCases": 8,
+    "negativeFirstMatchedOwnerCells": [
+      {
+        "order": 32,
+        "height": "100",
+        "negativeLabels": 57,
+        "partnerLabels": 64,
+        "matchedPairs": 57,
+        "oneInsertionPrimeHasFullCapacity": false
+      },
+      {
+        "order": 32,
+        "height": "54.25",
+        "negativeLabels": 57,
+        "partnerLabels": 64,
+        "matchedPairs": 57,
+        "oneInsertionPrimeHasFullCapacity": false
+      },
+      {
+        "order": 64,
+        "height": "54.5",
+        "negativeLabels": 28,
+        "partnerLabels": 38,
+        "matchedPairs": 28,
+        "oneInsertionPrimeHasFullCapacity": false
+      }
+    ],
+    "cofactorSplitCases": [
+      {
+        "order": 128,
+        "height": "54.25",
+        "counts": [
+          8,
+          9
+        ],
+        "commonPrimes": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
+        "originalLeastPrime": 2,
+        "ownerHeldFixed": true,
+        "secondPrimeHeldFixed": true,
+        "cofactorPrimeCellWidth": 2048,
+        "insertionPrimeCeiling": 2000,
+        "originalPrimeLabels": 111,
+        "distinctSemiprimePartnerLabels": 137,
+        "disjointMatchedPairs": 106,
+        "coverageFraction": 0.954954954954955,
+        "ownerCofactorShareOrderedInEveryPair": true,
+        "maxActualLogGap": "0.000000788780410185182865978713474881",
+        "sourceScaledRawMismatchCost": "1.07155310338804281254722666447e-116",
+        "sourceScaledOriginalAllocatedPairReal": "7.66214862637759743221242884823e-117",
+        "sourceScaledOriginalUnmatchedReal": "-1.25928588657279712739496689413e-113",
+        "nativeManyBinMembershipCertified": false,
+        "originalFundedPopulationMembershipCertified": false,
+        "allCofactorCollisionBudgetCertified": false
+      },
+      {
+        "order": 256,
+        "height": "54.0",
+        "counts": [
+          8,
+          9
+        ],
+        "commonPrimes": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
+        "originalLeastPrime": 2,
+        "ownerHeldFixed": true,
+        "secondPrimeHeldFixed": true,
+        "cofactorPrimeCellWidth": 2048,
+        "insertionPrimeCeiling": 2000,
+        "originalPrimeLabels": 27,
+        "distinctSemiprimePartnerLabels": 46,
+        "disjointMatchedPairs": 24,
+        "coverageFraction": 0.8888888888888888,
+        "ownerCofactorShareOrderedInEveryPair": true,
+        "maxActualLogGap": "7.91781746634671553678335363912e-22",
+        "sourceScaledRawMismatchCost": "6.61303254945194880084637417484e-244",
+        "sourceScaledOriginalAllocatedPairReal": "5.66692997887862320124414047652e-244",
+        "sourceScaledOriginalUnmatchedReal": "-2.77413157729775403391471717088e-225",
+        "nativeManyBinMembershipCertified": false,
+        "originalFundedPopulationMembershipCertified": false,
+        "allCofactorCollisionBudgetCertified": false
+      }
+    ],
+    "nativeMovingLengthRetained": true,
+    "originalAllocationRetained": true,
+    "fullPhaseRetained": true,
+    "allComputedLocalAndGlobalPricesPassed": true,
+    "nativeCount56ManyBinPopulationEvaluated": false,
+    "nativeDyadicSupportCertified": false,
+    "fundingWitnessCertified": false,
+    "crossCofactorCapacityCertified": false,
+    "actualPrimeTests": "Sympy deterministic below2^64 and probable-prime tests above it; not Lean prime certificates.",
+    "floatingResultsIntervalCertified": false,
+    "floorCertified": false
+  },
+  "nextArithmeticTarget": "Construct enough original same-funded opposite-parity partners with literal masks and ordered shares, pay cross-cofactor collisions and count/radial/funding boundaries, and bound the ORIGINAL signed unmatched/supply contribution. Total partner cardinality and bin occupancy are insufficient.",
+  "exactIntegerLogGapLowerBound": "abs(log(a)-log(b)) >= 1/max(a,b), distinct positive integers",
+  "requiredGapForcesLocalLogSpan": "log(max(a,b)) >= N/1000",
+  "singleFactorReplacementUniformlyCoversSublinearLocalLogs": false
+}

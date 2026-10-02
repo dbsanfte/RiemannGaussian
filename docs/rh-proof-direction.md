@@ -2,16 +2,27 @@
 
 The current arithmetic objective is the [joined physical floor](zeta-riesz-joined-physical.md)
 for `joinedPhysical`, source-equivalent to the original `J+C`, with
-sufficient threshold `-79/1000-o(1)` on
+sufficient threshold `-399/5000-o(1)` on
 `1/2<u<=10001/20000`, initially for simple exposed zeros. Separate packet
 and complement decay is unnecessary. There is a separate multiplicity
 obligation: the actual source is `-m+m^2*c_ret(u)`, which is positive for
 `m>=2`. Exposure does not imply simplicity. The checked
-[`false_of_joint_cofinal_bounds`](../RiemannGaussian/ZetaRieszJointFloor.lean)
-handles all multiplicities if the same sum has both that cofinal floor
-and an independent cofinal ceiling `3/2+o(1)`. Both whole-sum inequalities
+[relaxed floor and ceiling criteria](../RiemannGaussian/ZetaRieszEndgameSlack.lean)
+handle all multiplicities if the same sum has both that cofinal floor
+and an independent cofinal ceiling `42/25+o(1)`. Both whole-sum inequalities
 remain open; the ceiling is an additional arithmetic target, not a
 consequence of the floor or the source limit.
+
+The [accumulated local research batch](zeta-riesz-research-publication.md)
+now retains complex and cubic exact-null credits in the original whole-floor
+inequality, with the same analytic error. The [signed-null theorem](zeta-riesz-signed-null-gain.md)
+gives `Re(P)>=-nativeCost+nativeCredit-nativeError`; the numerical
+`nativeCost-nativeCredit<=399/5000` premise remains **open**. Several actual
+correlated error sectors have geometric payments, but the retained joint
+cost has not been bounded. The [genuine-prime insertion-rate audit](zeta-riesz-insertion-rate-audit.md)
+proves that complete independent reciprocal-prime matching leaves polynomial
+residual mass and cannot close by additional fixed polynomial savings.
+This is a model applicability obstruction, not a native floor impossibility.
 
 The full squarefree core now has an exact unsaturated two-hinge formula,
 with the entire factorial kernel, original phase and `1-boundedShare`.

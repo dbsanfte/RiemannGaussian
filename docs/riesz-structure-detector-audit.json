@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "User-requested numerical structure/cancellation detector for the original signed floor; not a new carrier or floor theorem.",
+  "source": "scripts/probe_riesz_structure_detector.py",
+  "currentSourceSha256": "5c5eb10a98e47b9b390b5532d8fd7cea6cd21e69e62b39a0681af9256faf8343",
+  "status": {
+    "detectorImplemented": true,
+    "newLeanProofs": 0,
+    "nativeIndependentFloorProved": false,
+    "nativeCostBudgetProved": false,
+    "cofinalRateCertified": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false
+  },
+  "scope": {
+    "continuousLogModelsNotPrimePopulations": true,
+    "nativeOrdersAndCeilings": {
+      "256": 8,
+      "640": 16,
+      "1536": 32,
+      "3584": 64
+    },
+    "primeCountRange": [
+      3,
+      63
+    ],
+    "radii": [
+      0.5,
+      0.500025,
+      0.50005
+    ],
+    "totalLogOverNSlices": [
+      1.9501,
+      1.99,
+      2.0299
+    ],
+    "seeds": [
+      317,
+      919
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "fullNativePopulationCovered": false,
+    "allHeightsCovered": false,
+    "allContinuousGeometriesCovered": false,
+    "intervalArithmetic": false,
+    "primeCertificates": false,
+    "noEmpiricalDensityOrConfidenceInterval": true
+  },
+  "broadScan": {
+    "configurations": 15552,
+    "numericallyAdmissible": 15552,
+    "resolved": 14544,
+    "unresolved": 1008,
+    "unresolvedByGeometry": {
+      "scale_spread": 1008
+    },
+    "methods": {
+      "whole_layer": 2028,
+      "finite_subsets": 6216,
+      "grouped_cardinality": 7308
+    },
+    "allUnresolvedResponsesRetainEnclosures": true,
+    "signedSubsetHingeJoinedBeforeEvaluation": true
+  },
+  "structuralLead": {
+    "principle": "Complete subset cardinality layers collapse as signed affine sums; mixed quota-crossing layers retain the unresolved response. This is elementary finite-difference/binomial algebra, not a novel theorem claim.",
+    "separatedLayerFormula": "R_c(L)=(-1)^q [choose(c-1,q) L - choose(c-2,q-1) sum_i log p_i], provided every q-subset is below L and every (q+1)-subset is above L; second term is zero for q=0.",
+    "noArithmeticPopulationTransferClaim": true,
+    "noUniformPhaseOrFloorBoundFromLayerFormula": true
+  },
+  "periodModels": {
+    "cases": 240,
+    "resolutionComparisons": 120,
+    "resolutionStable": 120,
+    "maximumChangeRelativeToModelAbsoluteIntegral": 5.646637161116235e-08,
+    "joinedCountModelCostReductionRange": [
+      0.4522093544785899,
+      0.9999225429432438
+    ],
+    "countsJoinedBeforeAdverseClipping": true,
+    "radialVariableNotFrozen": true,
+    "fullTotalLogFactorRetained": true,
+    "fixedCofactorDensityConstantRetained": true,
+    "arithmeticMatchingOrDensityEstablished": false,
+    "nativeFloorCredit": false
+  },
+  "higherCountPeriodAudit": {
+    "counts": [
+      20,
+      40,
+      55,
+      56,
+      63
+    ],
+    "cases": 10,
+    "resolutionStable": 0,
+    "unresolvedNodesByCase": [
+      {
+        "count": 20,
+        "nodes": 8,
+        "unresolvedNodes": 1
+      },
+      {
+        "count": 20,
+        "nodes": 16,
+        "unresolvedNodes": 1
+      },
+      {
+        "count": 40,
+        "nodes": 8,
+        "unresolvedNodes": 0
+      },
+      {
+        "count": 40,
+        "nodes": 16,
+        "unresolvedNodes": 2
+      },
+      {
+        "count": 55,
+        "nodes": 8,
+        "unresolvedNodes": 0
+      },
+      {
+        "count": 55,
+        "nodes": 16,
+        "unresolvedNodes": 2
+      },
+      {
+        "count": 56,
+        "nodes": 8,
+        "unresolvedNodes": 1
+      },
+      {
+        "count": 56,
+        "nodes": 16,
+        "unresolvedNodes": 1
+      },
+      {
+        "count": 63,
+        "nodes": 8,
+        "unresolvedNodes": 1
+      },
+      {
+        "count": 63,
+        "nodes": 16,
+        "unresolvedNodes": 2
+      }
+    ],
+    "incompleteJointCancellationScoresAreNull": true,
+    "notRankedAsSavings": true,
+    "noGrowthOrDecayRateInferred": true
+  },
+  "literalRegressions": {
+    "constructedProbablePrimeLabels": 15,
+    "counts": [
+      3,
+      5,
+      7,
+      12,
+      15,
+      63
+    ],
+    "selectedLabelBatches": 9,
+    "allComputedBatchesComplete": true,
+    "integerCutoffMembership": true,
+    "fullSourceNormalizedFactorialAtomsAndComplexPhase": true,
+    "duplicatesRemoved": 0,
+    "selectedSubsetOnly": true,
+    "noNativeFloorCertified": true,
+    "adapter": "--labels-json accepts arbitrary factored label lists, not only the predefined geometries"
+  },
+  "validation": {
+    "independentSelfTests": {
+      "passed": true,
+      "independentSmallEnumerationCases": 34,
+      "exactSixtyThreeFactorSubsetCoverage": 9223372036854775808,
+      "reflectionAndUnresolvedEnclosuresChecked": true,
+      "batchedHighCountCoefficientsAndAllNativeAllocationOrdersChecked": true,
+      "maximumSmallError": 6.85792434769365e-100
+    },
+    "syntax": "python -m py_compile passed",
+    "browser": {
+      "checks": [
+        {
+          "width": 1400,
+          "height": 1000,
+          "interactionCases": 144,
+          "screenshot": "/home/dbsanfte/riemann/formal/.lake/riesz-structure-detector/viewer-1400.png",
+          "passed": true
+        },
+        {
+          "width": 390,
+          "height": 850,
+          "interactionCases": 144,
+          "screenshot": "/home/dbsanfte/riemann/formal/.lake/riesz-structure-detector/viewer-390.png",
+          "passed": true
+        }
+      ]
+    },
+    "whitespaceCheck": "git diff --check passed",
+    "executionSourceSnapshotsHashChecked": true,
+    "currentNumericalFunctionsMatchEveryFinalSnapshot": true
+  },
+  "preservation": {
+    "protectedFiles": 3085,
+    "onlyProtectedFileChanged": "AGENTS.md (detector workflow note)",
+    "allPriorLeanSourcesRootReadmePublicMetadataAndAuditsUnchanged": true,
+    "existingStagedIndexUnchanged": true,
+    "noCommitsPushesSubagentsOrPublicationGates": true
+  },
+  "environment": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "mpmath": "1.3.0",
+    "mpDigits": 100
+  },
+  "recipes": [
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --self-test",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --orders 256 640 1536 3584 --output .lake/riesz-structure-detector/final-scan.json",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --orders 256 640 --counts 3 4 5 6 7 --radii 0.50005 --seeds 317 919 --taus 1.99 --geometries owner_rectangle two_clusters --periods --period-counts 3 4 5 6 7 --heights 54 65 100 --nodes 8 16 --output .lake/riesz-structure-detector/final-periods.json",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --orders 3584 --radii 0.50005 --counts 20 40 55 56 63 --seeds 317 --taus 1.99 --geometries owner_rectangle --periods --period-counts 20 40 55 56 63 --heights 65 --nodes 8 16 --output .lake/riesz-structure-detector/final-high-periods.json",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --orders 256 640 3584 --counts 5 --radii 0.50005 --seeds 317 --taus 1.99 --geometries owner_rectangle --prime-regressions --output .lake/riesz-structure-detector/final-primes.json",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --labels-json .lake/riesz-structure-detector/factored-labels.json --output .lake/riesz-structure-detector/literal-batch.json",
+    "../.venv/bin/python scripts/probe_riesz_structure_detector.py --render-report .lake/riesz-structure-detector/final-scan.json"
+  ],
+  "artifacts": {
+    "localInteractiveMap": ".lake/riesz-structure-detector/final-scan.html",
+    "executionReports": [
+      {
+        "report": ".lake/riesz-structure-detector/final-scan.json",
+        "reportSha256": "70377425dafde013c0ce5b36ac0dfe4ca4bad750e2271554685360919ab9887e",
+        "sourceSnapshot": ".lake/riesz-structure-detector/source-5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58.py",
+        "executionSourceSha256": "5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58",
+        "currentNumericalEngineMatchesSnapshot": true
+      },
+      {
+        "report": ".lake/riesz-structure-detector/final-periods.json",
+        "reportSha256": "c090a5ac03a8dd9487d59f3714d109013302d7a02d82b13a4506c56ef891ad3d",
+        "sourceSnapshot": ".lake/riesz-structure-detector/source-5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58.py",
+        "executionSourceSha256": "5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58",
+        "currentNumericalEngineMatchesSnapshot": true
+      },
+      {
+        "report": ".lake/riesz-structure-detector/final-primes.json",
+        "reportSha256": "a7c6b0cc4792ac3f2f99be64c29651d85f2183111607c719a9a08ff958514217",
+        "sourceSnapshot": ".lake/riesz-structure-detector/source-5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58.py",
+        "executionSourceSha256": "5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58",
+        "currentNumericalEngineMatchesSnapshot": true
+      },
+      {
+        "report": ".lake/riesz-structure-detector/final-high-periods.json",
+        "reportSha256": "04ef27c25e4f923540fd4bc04a2fcbcb3813e14b35656abd4ccdee24fd109309",
+        "sourceSnapshot": ".lake/riesz-structure-detector/source-5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58.py",
+        "executionSourceSha256": "5f132e1fd3643834d551623dc67650360d8e8b75499083949b65a5c0dec8da58",
+        "currentNumericalEngineMatchesSnapshot": true
+      },
+      {
+        "report": ".lake/riesz-structure-detector/literal-batch.json",
+        "reportSha256": "38559b783e80385e822a4ec9605baf24783ea588dfc0d4059dfdcc759e39dc37",
+        "sourceSnapshot": ".lake/riesz-structure-detector/source-5c5eb10a98e47b9b390b5532d8fd7cea6cd21e69e62b39a0681af9256faf8343.py",
+        "executionSourceSha256": "5c5eb10a98e47b9b390b5532d8fd7cea6cd21e69e62b39a0681af9256faf8343",
+        "currentNumericalEngineMatchesSnapshot": true
+      }
+    ]
+  },
+  "nextMathematicalTarget": "An independent signed estimate for the actual masked quota-crossing population, joining counts and phase periods with their real incidence weights; model cancellation percentages and finite subset sums cannot supply it."
+}

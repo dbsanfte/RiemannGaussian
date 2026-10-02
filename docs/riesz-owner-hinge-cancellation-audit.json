@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "status": "Passed focused warning-as-error direct/targeted/root-import checks, 14 namespace linters and all 24 public transitive standard-axiom audits.",
+  "scope": "Bounds for the SAME signed owner-hinge scalar and ORIGINAL masked carrier. The centered bound retains the common resonance with the signed first cofactor moment. The cleaned comparison extension has exactly the same squarefree unpaid rows; its variation excludes all edges wholly outside the unpaid count/bin/owner geometry. The bound is spent in the existing whole-floor ledger with the SAME vanishing error, funding and debit, and no additional arithmetic hypothesis. The actual joint main, active-edge variation, cumulative owner cost and funding remain unpaid. No numerical floor or source-scale population payment. The same raw and cleaned active-edge weights have canonical-owner periodic zeros. On core columns with log p<=N/2, the current positive exp(-N/128) variation allowance is at least exp(603N/640)/2 times the raw absolute mass. This is a majorant lower bound, not a signed-error/carrier or population-mass lower bound.",
+  "documentation": "docs/zeta-riesz-owner-hinge-cancellation.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszOwnerHingeCancellation.lean": "bba80c58f80a5b587a94b8ffef0bfab822da851457f953eac2ae8ccc6a6d7e25",
+    "docs/zeta-riesz-owner-hinge-cancellation.md": "74ac74d441ebca4f910eeff41ba3962e8a4a7834dc2ca5cfeca6294db9d873fd",
+    "scripts/probe_riesz_owner_hinge.py": "2f7cd99603712b81c0df7b1d8f6fdb6ab63e0772c3d726c8ed71870cdd96a331",
+    "RiemannGaussian/ZetaRieszSignedDensityCancellation.lean": "61c1ecda29189f003064ae4ea97b12013cb3429cc66e7f167cf19e735137de1e",
+    "RiemannGaussian/ZetaRieszSignedDensityMain.lean": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0",
+    "RiemannGaussian/ZetaRieszLongCutoffError.lean": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
+    "RiemannGaussian/ZetaRieszCoreOwnerPayment.lean": "b42b37c1211e73368e1f4f1bc080d144307f50a1934a1baf2590c4d31fb2c8bb",
+    "RiemannGaussian/ZetaRieszRejoinedPopulationFloor.lean": "98162c012392f9059e1ec01e34efbac1a9d2bc5f21d3c464fbcf878d5e627ce3",
+    "RiemannGaussian/ZetaRieszJoinedPopulationFloor.lean": "f07575d26ebb2270ccb4757f1d9c074429b42a370e07ca9c2e25566f0e9e633d",
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "RiemannGaussian/ZetaRieszLowCountRefund.lean": "b24686eeccf995e42e65974c15ff7ddae4c2b507c5eb7fba1e692351f40a0a55"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_cutoff_independent_bound",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_le_twenty_one_halves",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_main_constant_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_constant_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.densityRiesz_lipschitz",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_common_reference_error",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_nearby_bound",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_prefix_centered_error",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_prefix_signed_bound",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_main_prefix_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_prefix_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_centered_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerBand_subset",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.remainingOwnerBand_squarefree_geometry",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerBand_squarefree_eq",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.remainingOwnerBand_carrier_eq",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerWeight_zero_of_not_geometry",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerVariation_eq_active",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_remaining_centered_bounds",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.eventually_joined_centered_owner_floor",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_weight_zero_larger_prime",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_variation_lower",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_allowance_lower",
+    "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparison_owner_active_allowance_lower"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-owner-hinge-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszOwnerHingeCancellation",
+      "log": ".lake/riesz-owner-hinge-build.log",
+      "completedJobs": 10418
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-owner-hinge-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszOwnerHingeCancellation",
+      "linters": 14,
+      "publicTheoremCount": 24,
+      "declarations": 47,
+      "generatedDeclarations": 47,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_cutoff_independent_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_le_twenty_one_halves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_main_constant_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_constant_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.densityRiesz_lipschitz": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_common_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_hinge_nearby_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_prefix_centered_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_prefix_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.owner_main_prefix_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_prefix_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_whole_carrier_centered_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerBand_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.remainingOwnerBand_squarefree_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerBand_squarefree_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.remainingOwnerBand_carrier_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerWeight_zero_of_not_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparisonOwnerVariation_eq_active": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.literal_remaining_centered_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.eventually_joined_centered_owner_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_weight_zero_larger_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_variation_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.raw_owner_allowance_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszOwnerHingeCancellation.comparison_owner_active_allowance_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-owner-hinge-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/riesz-owner-hinge-probe.json",
+      "testCases": 20,
+      "floatingPhysicalPrefixCutoff": 50000,
+      "rigorousIntervalArithmetic": false,
+      "certifiesMaskedCarrier": false,
+      "certifiesSourceScaleDecay": false,
+      "certifiesNumericalFloor": false,
+      "scalarTestCases": 15,
+      "jointOwnerPrefixTestCases": 5,
+      "actualCarrierMomentsMeasured": false,
+      "jointOwnerAmplitudesPrescribed": true,
+      "maximumRecurrenceFloatingError": 1.9539925233402755e-14,
+      "coversComparisonMaskCleanup": false
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszOwnerHingeCancellation.lean",
+        "docs/zeta-riesz-owner-hinge-cancellation.md",
+        "scripts/probe_riesz_owner_hinge.py"
+      ]
+    }
+  },
+  "unpaidQuantities": [
+    "joint signed main: density*sum U_p - densityRiesz(L-log M)*sum V_p",
+    "source-normalized cumulative signed owner-prefix variation G(k)=sum_(p<=k) V_p",
+    "source-normalized inverse-prime reference cost 7*sum |V_p|/p",
+    "cleaned active-edge comparison variation with all original carrier masks retained",
+    "same original whole-floor funding debit and positive credits",
+    "independent joint -79/1000 floor"
+  ],
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "comparisonExtensionCleanupProved": true,
+  "wholeFloorIntegrationProved": true,
+  "cleanedComparisonDecayProved": false,
+  "comparisonVariationMonotonicityClaimed": false,
+  "ownershipVariationNoGoProved": true,
+  "ownershipVariationNoGo": {
+    "rawOwnerZeroCondition": "prime q>p divides cofactor a",
+    "forbiddenPrimeUpperBound": "q<=2p",
+    "coreCondition": "log(pa)>39N/20 and log p<=N/2",
+    "cofactorLowerBound": "a>=exp(29N/20) on every nonzero weight",
+    "positiveAllowanceRelativeLowerBound": "exp(603N/640)/2 times sum |w|",
+    "appliesToCleanedActiveEdges": true,
+    "retainsAllCountBinRadialPhaseAllocationMasks": true,
+    "requiresSquarefreeZeroExtension": false,
+    "provesActualSignedErrorDivergence": false,
+    "provesPopulationMassLowerBound": false,
+    "rulesOutSignedCarrierFloor": false
+  }
+}

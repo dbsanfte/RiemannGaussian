@@ -1,0 +1,835 @@
+{
+  "controls_and_existing_challenges": [
+    {
+      "N_decimal": "49065649",
+      "reference_factors_decimal": [
+        "6827",
+        "7187"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 20,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 8,
+            "status": "factor",
+            "factor": 6827,
+            "baby_index": 19,
+            "giant_index": 0,
+            "root": 17084763,
+            "point": 48680119,
+            "shared_targets": 0,
+            "convolutions": 40,
+            "packed_coefficients": 284,
+            "monic_reductions": 39,
+            "stage": "phase-cover",
+            "phase_exponent": 0,
+            "verified_channels": [
+              "equal"
+            ],
+            "collision_exponents": [
+              "46267202",
+              "63043598"
+            ],
+            "phases_used": 1,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "factor",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 883
+          },
+          "ms": 1.1646600032690912
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 20,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 8,
+            "status": "factor",
+            "factor": 7187,
+            "baby_index": 6,
+            "giant_index": 4,
+            "root": 44316677,
+            "point": 6398065,
+            "shared_targets": 0,
+            "convolutions": 30,
+            "packed_coefficients": 186,
+            "monic_reductions": 26,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "baby_exponent_index": 7,
+            "giant_exponent_index": 12,
+            "giant_count": 15,
+            "target_batches": 4,
+            "verified_channel": "equal",
+            "quadratic_multiplications": 298
+          },
+          "ms": 0.5167489871382713
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 20,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 8,
+            "status": "factor",
+            "factor": 7187,
+            "baby_index": 6,
+            "giant_index": 2,
+            "root": 44316677,
+            "point": 30560759,
+            "shared_targets": 0,
+            "convolutions": 30,
+            "packed_coefficients": 186,
+            "monic_reductions": 26,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "baby_exponent_index": 7,
+            "giant_exponent_index": 10,
+            "giant_count": 15,
+            "target_batches": 4,
+            "verified_channel": "equal",
+            "quadratic_multiplications": 313
+          },
+          "ms": 0.5082990101072937
+        },
+        "orbits_N_Nplus1": {
+          "result": {
+            "bound": 20,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 8,
+            "status": "factor",
+            "factor": 6827,
+            "baby_index": 10,
+            "giant_index": 1,
+            "root": 27056790,
+            "point": 11620943,
+            "shared_targets": 0,
+            "convolutions": 23,
+            "packed_coefficients": 148,
+            "monic_reductions": 11,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "49065649",
+              "49065650"
+            ],
+            "baby_exponent_index": 11,
+            "giant_exponent_index": 5,
+            "giant_count": 7,
+            "target_batches": 3,
+            "verified_channel": "equal",
+            "quadratic_multiplications": 1293
+          },
+          "ms": 1.0746349871624261
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-31521800",
+        "gcd_decimal": "49065649",
+        "quadratic_multiplications": 291,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "8562316804979989201",
+      "reference_factors_decimal": [
+        "2346272483",
+        "3649327547"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 1431,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 226,
+            "status": "factor",
+            "factor": 2346272483,
+            "baby_index": 1427,
+            "giant_index": 476,
+            "root": "237621801882584593",
+            "point": "6820094445240089472",
+            "shared_targets": 0,
+            "convolutions": 4076,
+            "packed_coefficients": 118505,
+            "monic_reductions": 2861,
+            "stage": "phase-cover",
+            "phase_exponent": 0,
+            "verified_channels": [
+              "equal"
+            ],
+            "collision_exponents": [
+              "8443889844527188802",
+              "101145851947691613918017073899850562"
+            ],
+            "phases_used": 1,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "factor",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 30808
+          },
+          "ms": 123.62818699330091
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 1431,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 226,
+            "convolutions": 4002,
+            "packed_coefficients": 146301,
+            "monic_reductions": 2851,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 17139
+          },
+          "ms": 139.46870499057695
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 1431,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 226,
+            "convolutions": 4002,
+            "packed_coefficients": 146301,
+            "monic_reductions": 2851,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 18570
+          },
+          "ms": 139.97204499901272
+        },
+        "orbits_N_Nplus1": {
+          "result": {
+            "bound": 1431,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 226,
+            "status": "factor",
+            "factor": 3649327547,
+            "baby_index": 120,
+            "giant_index": 2,
+            "root": "5414805659147253170",
+            "point": "2572041221111055581",
+            "shared_targets": 0,
+            "convolutions": 1511,
+            "packed_coefficients": 30545,
+            "monic_reductions": 120,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "8562316804979989201",
+              "8562316804979989202"
+            ],
+            "baby_exponent_index": 121,
+            "giant_exponent_index": 34,
+            "giant_count": 63,
+            "target_batches": 6,
+            "verified_channel": "equal",
+            "quadratic_multiplications": 154902
+          },
+          "ms": 184.27192899980582
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-4293451233518761602",
+        "gcd_decimal": "8562316804979989201",
+        "quadratic_multiplications": 10172,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "477209897193541203289441",
+      "reference_factors_decimal": [
+        "661911275027",
+        "720957498683"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 8840,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1102,
+            "convolutions": 76092,
+            "packed_coefficients": 3140841,
+            "monic_reductions": 53037,
+            "status": "phase-budget-exhausted",
+            "factor": null,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": -13,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": 15,
+                "status": "no-collision",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 220220
+          },
+          "ms": 2663.9068049844354
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 8840,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1102,
+            "convolutions": 25259,
+            "packed_coefficients": 1445570,
+            "monic_reductions": 17666,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 104345
+          },
+          "ms": 1271.4605159999337
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 8840,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1102,
+            "convolutions": 25259,
+            "packed_coefficients": 1445570,
+            "monic_reductions": 17666,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 113185
+          },
+          "ms": 1283.739519014489
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-238607209148229361575200",
+        "gcd_decimal": "477209897193541203289441",
+        "quadratic_multiplications": 60389,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "6015700395832288409",
+      "reference_factors_decimal": [
+        "2640102277",
+        "2278586117"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 1349,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 217,
+            "convolutions": 11514,
+            "packed_coefficients": 334269,
+            "monic_reductions": 8091,
+            "status": "phase-budget-exhausted",
+            "factor": null,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": -13,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": 15,
+                "status": "no-collision",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 34583
+          },
+          "ms": 302.40052699809894
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 1349,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 217,
+            "convolutions": 3764,
+            "packed_coefficients": 138148,
+            "monic_reductions": 2687,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 16248
+          },
+          "ms": 133.22880800114945
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 1349,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 217,
+            "convolutions": 3764,
+            "packed_coefficients": 138148,
+            "monic_reductions": 2687,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 17597
+          },
+          "ms": 133.86561299557798
+        },
+        "orbits_N_Nplus1": {
+          "result": {
+            "bound": 1349,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 217,
+            "status": "factor",
+            "factor": 2278586117,
+            "baby_index": 465,
+            "giant_index": 377,
+            "root": "5659890220702749075",
+            "point": "2497672720893668556",
+            "shared_targets": 0,
+            "convolutions": 3167,
+            "packed_coefficients": 114398,
+            "monic_reductions": 2036,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "6015700395832288409",
+              "6015700395832288410"
+            ],
+            "baby_exponent_index": 466,
+            "giant_exponent_index": 889,
+            "giant_count": 1023,
+            "target_batches": 10,
+            "verified_channel": "inverse",
+            "quadratic_multiplications": 225355
+          },
+          "ms": 319.88411300699227
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-3013285421687940002",
+        "gcd_decimal": "6015700395832288409",
+        "quadratic_multiplications": 9687,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "10457652412285181353",
+      "reference_factors_decimal": [
+        "2755464161",
+        "3795241673"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 1479,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 233,
+            "status": "factor",
+            "factor": 2755464161,
+            "baby_index": 1284,
+            "giant_index": 9,
+            "root": "1612342155706563143",
+            "point": "10195531739295206126",
+            "shared_targets": 0,
+            "convolutions": 12624,
+            "packed_coefficients": 366039,
+            "monic_reductions": 8871,
+            "stage": "phase-cover",
+            "phase_exponent": 15,
+            "verified_channels": [
+              "rotated-inverse"
+            ],
+            "collision_exponents": [
+              "4481140510550684302",
+              "10466682059968721380836898"
+            ],
+            "phases_used": 3,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": -13,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": 15,
+                "status": "factor",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 37767
+          },
+          "ms": 323.6022790079005
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 1479,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 233,
+            "status": "factor",
+            "factor": 2755464161,
+            "baby_index": 1024,
+            "giant_index": 193,
+            "root": "2207688921028627930",
+            "point": "1233053604466464778",
+            "shared_targets": 0,
+            "convolutions": 2360,
+            "packed_coefficients": 83674,
+            "monic_reductions": 1013,
+            "stage": "exponential-orbits",
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "baby_exponent_index": 1025,
+            "giant_exponent_index": 449,
+            "giant_count": 511,
+            "target_batches": 9,
+            "verified_channel": "equal",
+            "quadratic_multiplications": 14832
+          },
+          "ms": 87.18912801123224
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 1479,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 233,
+            "convolutions": 4134,
+            "packed_coefficients": 150436,
+            "monic_reductions": 2947,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 19215
+          },
+          "ms": 146.5326509787701
+        },
+        "orbits_N_Nplus1": {
+          "result": {
+            "bound": 1479,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 233,
+            "convolutions": 4134,
+            "packed_coefficients": 150436,
+            "monic_reductions": 2947,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "10457652412285181353",
+              "10457652412285181354"
+            ],
+            "target_batches": 11,
+            "shared_targets": 0,
+            "quadratic_multiplications": 282477
+          },
+          "ms": 400.81364900106564
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-5233326818846761602",
+        "gcd_decimal": "10457652412285181353",
+        "quadratic_multiplications": 10519,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "681744979629536288452009",
+      "reference_factors_decimal": [
+        "996183890671",
+        "684356559079"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 9382,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1160,
+            "convolutions": 80778,
+            "packed_coefficients": 3328425,
+            "monic_reductions": 56289,
+            "status": "phase-budget-exhausted",
+            "factor": null,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": -13,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": 15,
+                "status": "no-collision",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 233579
+          },
+          "ms": 2815.696906996891
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 9382,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1160,
+            "convolutions": 26819,
+            "packed_coefficients": 1543125,
+            "monic_reductions": 18750,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 110653
+          },
+          "ms": 1368.5261359787546
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 9382,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1160,
+            "convolutions": 26819,
+            "packed_coefficients": 1543125,
+            "monic_reductions": 18750,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 120035
+          },
+          "ms": 1366.1373820214067
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-340990709393046528501842",
+        "gcd_decimal": "681744979629536288452009",
+        "quadratic_multiplications": 63973,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    },
+    {
+      "N_decimal": "387911014119558410533909",
+      "reference_factors_decimal": [
+        "588556368311",
+        "659088976019"
+      ],
+      "tests": {
+        "phases_0_minus13_plus15": {
+          "result": {
+            "bound": 8540,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1065,
+            "status": "factor",
+            "factor": 588556368311,
+            "baby_index": 8055,
+            "giant_index": 2057,
+            "root": "356391776319032341151889",
+            "point": "375554412312869324458134",
+            "shared_targets": 0,
+            "convolutions": 49008,
+            "packed_coefficients": 2032122,
+            "monic_reductions": 34158,
+            "stage": "phase-cover",
+            "phase_exponent": -13,
+            "verified_channels": [
+              "rotated-inverse"
+            ],
+            "collision_exponents": [
+              "273144983229944315684098",
+              "29472667643757920819650568116231603367361598"
+            ],
+            "phases_used": 2,
+            "history": [
+              {
+                "phase_exponent": 0,
+                "status": "no-collision",
+                "shared_targets": 0
+              },
+              {
+                "phase_exponent": -13,
+                "status": "factor",
+                "shared_targets": 0
+              }
+            ],
+            "quadratic_multiplications": 195457
+          },
+          "ms": 1705.6367519835476
+        },
+        "orbits_2_3": {
+          "result": {
+            "bound": 8540,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1065,
+            "convolutions": 24397,
+            "packed_coefficients": 1384113,
+            "monic_reductions": 17066,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "3"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 100581
+          },
+          "ms": 1189.9591969850007
+        },
+        "orbits_2_5": {
+          "result": {
+            "bound": 8540,
+            "discriminant": -1,
+            "jacobi": 1,
+            "base_parameter": 2,
+            "projection_count": 1065,
+            "convolutions": 24397,
+            "packed_coefficients": 1384113,
+            "monic_reductions": 17066,
+            "status": "orbit-budget-exhausted",
+            "factor": null,
+            "bases_decimal": [
+              "2",
+              "5"
+            ],
+            "target_batches": 14,
+            "shared_targets": 0,
+            "quadratic_multiplications": 109121
+          },
+          "ms": 1186.2922230211552
+        }
+      },
+      "perfect_public_alignment": {
+        "phase_exponent_decimal": "-193962240785258740512200",
+        "gcd_decimal": "387911014119558410533909",
+        "quadratic_multiplications": 58109,
+        "interpretation": "Exact globally perfect alignment is nonseparating."
+      }
+    }
+  ],
+  "checks": {
+    "rotated_local_trace_checks": 33256,
+    "shared_target_continuation_checks": 1
+  },
+  "scope": "Selected regression/challenge inputs, not a fresh success-rate benchmark. Phases -13 and +15 were calibrated on a prior control. No algorithm consults reference factors or local orders. Timings are single full-call observations, not runtime certificates.",
+  "source_hashes": {
+    "scripts/probe_semiprime_complex_extraction.py": "63662abb16709154679cd62115b1a68e3dede9a91033510634a3b3ff3de6b39a",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "RiemannGaussian/SemiprimeLongPeriodExtraction.lean": "28366374c7f0be589b7ef88cb24ffe4545c6b9dc9782c08d1e6e98ded4441244"
+  }
+}

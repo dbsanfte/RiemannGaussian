@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T03:56:07.022167+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszFixedOwnerPairFloor",
+  "scope": "Geometric TOTAL fixed-owner matched cost without share ordering or sign orientation, on literal same-funded supported opposite-parity pairs. Original signed unmatched term retained. Native capacity/funding and independent floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean": "4b0db3889c5ff604bc2680630b1c56258c7356c3873dce56bbf3f16ce226b227",
+    "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean": "c209e00aafb6c47b00105054368f66e6bb1fab605d0d061871b324d65b6e60ad",
+    "RiemannGaussian/ZetaRieszOwnerPairFloor.lean": "50be5079b632aa9214112eb6deb6a083752f3ce47d9d5df7b96c1f5d0fba3b4b",
+    "RiemannGaussian/ZetaRieszOwnerMaximal.lean": "3efd2a5e3e8bfb17f4fb16f5655a48f737d6b5c62582714d5d106e7dbc107f8e",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszPairMatching.lean": "02874fe0fc579fd79f519665f007a8c4d042356a400dcf6e26af9983e53e5a1c",
+    "RiemannGaussian/ZetaRieszAssignedCompanion.lean": "3ec9449705b65500ab18944cf50f0d91d06fad41534157bfd67a576bea791254",
+    "RiemannGaussian/ZetaRieszCompanionWindow.lean": "e448291e6f3266a6894a9c65adda61d74c77fc03c756b9c7ded2d5f9b8ee3e91",
+    "scripts/probe_riesz_fixed_owner_pairs.py": "1fb556fec551071f80bcc9c4caae74f20efe98ff1d3f0118a74a0388a5dc7e50",
+    "docs/zeta-riesz-fixed-owner-pair-floor.md": "c4c4dc639e6b3bdc2df3443b9943e13a3e77455b517ad69d0808a6acac5838f3",
+    "RiemannGaussian.lean": "994a0d0432d151f53151c7c1992323fdab859d6fc3ef406aeec55be436d90180",
+    "docs/theorem-explorer/metadata.json": "aec4a7c85c9bac8447060189fa461642832df1048fad903b1ddb6961cdd9c3cb",
+    "AGENTS.md": "ea9032ea70f9d441dabb29030bbd4381c0296ccb4a4ddecac352bd579a830e55"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.ownerWeight_lipschitz",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.fixed_owner_share_gap",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.fixed_owner_pair_norm",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.owner_gap_source_rate",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.total_owner_gap_variation",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.global_fixed_owner_cost",
+    "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.matching_original_signed_error"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-fixed-owner-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszFixedOwnerPairFloor",
+      "completedJobs": 10430,
+      "log": ".lake/riesz-fixed-owner-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-fixed-owner-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszFixedOwnerPairFloor",
+      "linters": 14,
+      "declarations": 12,
+      "generatedDeclarations": 4,
+      "publicTheoremCount": 7,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.ownerWeight_lipschitz": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.fixed_owner_share_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.fixed_owner_pair_norm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.owner_gap_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.total_owner_gap_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.global_fixed_owner_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedOwnerPairFloor.matching_original_signed_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-fixed-owner-audit.log"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleChecked": "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_fixed_owner_pairs.py",
+      "log": ".lake/riesz-fixed-owner-probe.log",
+      "runtimeArtifact": ".lake/riesz-fixed-owner-probe.json"
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean",
+        "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean",
+        "RiemannGaussian/ZetaRieszOwnerPairFloor.lean",
+        "RiemannGaussian/ZetaRieszOwnerMaximal.lean",
+        "RiemannGaussian/ZetaRieszNonownerAllocation.lean",
+        "RiemannGaussian/ZetaRieszPairMatching.lean",
+        "RiemannGaussian/ZetaRieszAssignedCompanion.lean",
+        "RiemannGaussian/ZetaRieszCompanionWindow.lean",
+        "scripts/probe_riesz_fixed_owner_pairs.py",
+        "docs/zeta-riesz-fixed-owner-pair-floor.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "readmeUnchanged": true
+  },
+  "exactOwnerWeightLipschitz": "abs(A_N(x)-A_N(x_prime)) <= 2*(N+1)*abs(x-x_prime), N>=32, x,x_prime in[0,1]",
+  "requiredActualGap": "abs(log(n)-log(n_prime)) <= exp(-N/1000)",
+  "totalSourceNormalizedCost": "[168*radiusCeiling*B*(1+abs(y))+2*radiusCeiling*B*M(1+1/262144)]*(N+1)^3*exp(-N/1250)",
+  "originalCarrierError": "Displayed matched cost plus the existing global nonowner-allocation geometric payment once, keeping original unmatched allocation/funding/masks/phase.",
+  "fundingCondition": "Original w(n)=w(n_prime) for every pair, norm(w)<=B; eventual original envelope4+abs(epsilon) does not prove this equality.",
+  "totalFixedOwnerMatchedCostProved": true,
+  "orderedSharesRequired": false,
+  "negativeFirstRequired": false,
+  "allShareEndpointsRetained": true,
+  "allFactorialOrdersRetained": true,
+  "originalSignedUnmatchedRetained": true,
+  "allOriginalComplexPhasesRetained": true,
+  "existingNonownerPaymentUsedOnce": true,
+  "matchedCostRateBeatsSourceGrowth": true,
+  "originalFixedOwnerMaskRequired": true,
+  "nativePartnerCoverage": false,
+  "nativeFundingEquality": false,
+  "nativeCount56ManyBinCoverage": false,
+  "signedUnmatchedAndSupplyFloorProved": false,
+  "newSourceScaleWholePopulationPaid": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "optionalProbe": {
+    "scope": "Finite actual unordered fixed-owner parity pairs and pooled partner collisions; not native unpaid count56+ many-bin/funding coverage.",
+    "precisionDigits": 160,
+    "singleCofactorCells": [
+      {
+        "order": 128,
+        "originalLeastPrime": 2,
+        "counts": [
+          8,
+          9
+        ],
+        "originalLabels": 111,
+        "distinctPartnerLabels": 137,
+        "partnerIncidences": 137,
+        "unorderedMatchingPairs": 111,
+        "finiteParentCoverage": 1.0,
+        "evaluations": [
+          {
+            "height": "54",
+            "pairsSampled": 111,
+            "decreasingSharePairsInSample": 110,
+            "maxActualLogGap": "0.00000148517649954798700704476725355",
+            "sampleSourceScaledOwnerPairCost": "2.31401489212504218226257036157e-116",
+            "sampleSourceScaledRawMismatch": "2.76470668117352797227568165462e-116",
+            "sampleSourceScaledFullOriginalPairCost": "2.31401488139033054363196189493e-116",
+            "sampleSourceScaledNonownerDifference": "1.07347939543223106175053168338e-124",
+            "sampleSourceScaledCoupledPrice": "1.59614913776166223992626514851e-115",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          },
+          {
+            "height": "65",
+            "pairsSampled": 111,
+            "decreasingSharePairsInSample": 110,
+            "maxActualLogGap": "0.00000148517649954798700704476725355",
+            "sampleSourceScaledOwnerPairCost": "2.78457142726244975968373501699e-116",
+            "sampleSourceScaledRawMismatch": "3.32692360928730924975259512193e-116",
+            "sampleSourceScaledFullOriginalPairCost": "2.78457141434414540634294638402e-116",
+            "sampleSourceScaledNonownerDifference": "1.2918372795355404789216393016e-124",
+            "sampleSourceScaledCoupledPrice": "1.65237083057304036767395649524e-115",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          },
+          {
+            "height": "100",
+            "pairsSampled": 111,
+            "decreasingSharePairsInSample": 110,
+            "maxActualLogGap": "0.00000148517649954798700704476725355",
+            "sampleSourceScaledOwnerPairCost": "4.28233876390357266001405764626e-116",
+            "sampleSourceScaledRawMismatch": "5.11643532258529702636319963517e-116",
+            "sampleSourceScaledFullOriginalPairCost": "4.28233874403541080539912736327e-116",
+            "sampleSourceScaledNonownerDifference": "1.98682063893878239797479685446e-124",
+            "sampleSourceScaledCoupledPrice": "1.83132200190283914533501694657e-115",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          }
+        ],
+        "nativeManyBinFundingCoverageCertified": false
+      },
+      {
+        "order": 256,
+        "originalLeastPrime": 2,
+        "counts": [
+          8,
+          9
+        ],
+        "originalLabels": 27,
+        "distinctPartnerLabels": 46,
+        "partnerIncidences": 46,
+        "unorderedMatchingPairs": 27,
+        "finiteParentCoverage": 1.0,
+        "evaluations": [
+          {
+            "height": "54",
+            "pairsSampled": 27,
+            "decreasingSharePairsInSample": 26,
+            "maxActualLogGap": "1.61875379311977295418736867298e-21",
+            "sampleSourceScaledOwnerPairCost": "3.08436753300429819254403289162e-243",
+            "sampleSourceScaledRawMismatch": "3.35504356393778006788029515962e-243",
+            "sampleSourceScaledFullOriginalPairCost": "3.08436753300429818745350091686e-243",
+            "sampleSourceScaledNonownerDifference": "5.09056913337980590093793498636e-261",
+            "sampleSourceScaledCoupledPrice": "3.5260266893524579504439402356e-242",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          },
+          {
+            "height": "65",
+            "pairsSampled": 27,
+            "decreasingSharePairsInSample": 26,
+            "maxActualLogGap": "1.61875379311977295418736867298e-21",
+            "sampleSourceScaledOwnerPairCost": "3.7115856845350376055899720262e-243",
+            "sampleSourceScaledRawMismatch": "4.03731035862709007010110468084e-243",
+            "sampleSourceScaledFullOriginalPairCost": "3.71158568453503759946394659645e-243",
+            "sampleSourceScaledNonownerDifference": "6.12605632536918493860720874877e-261",
+            "sampleSourceScaledCoupledPrice": "3.59425336882138895066602118772e-242",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          },
+          {
+            "height": "100",
+            "pairsSampled": 27,
+            "decreasingSharePairsInSample": 26,
+            "maxActualLogGap": "1.61875379311977295418736867298e-21",
+            "sampleSourceScaledOwnerPairCost": "5.70799569291931384233491065119e-243",
+            "sampleSourceScaledRawMismatch": "6.20893424140102169473824592822e-243",
+            "sampleSourceScaledFullOriginalPairCost": "5.70799569291931383291315989658e-243",
+            "sampleSourceScaledNonownerDifference": "9.42177085802086731065388184749e-261",
+            "sampleSourceScaledCoupledPrice": "3.81141575709878211312973531246e-242",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          }
+        ],
+        "nativeManyBinFundingCoverageCertified": false
+      }
+    ],
+    "pooledCofactorCells": [
+      {
+        "order": 128,
+        "commonCofactorFamilies": 10,
+        "originalLabels": 300,
+        "partnerLabelsBeforeCrossCofactorDeduplication": 424,
+        "distinctPartnerLabels": 376,
+        "crossCofactorPartnerCollisions": 48,
+        "maxFamiliesGeneratingSamePartner": 3,
+        "unorderedMatchingPairs": 300,
+        "finiteParentCoverage": 1.0,
+        "evaluations": [
+          {
+            "height": "54",
+            "pairsSampled": 32,
+            "decreasingSharePairsInSample": 29,
+            "maxActualLogGap": "0.0000000947794507914504159689933391778",
+            "sampleSourceScaledOwnerPairCost": "3.63378572719026871766259253729e-118",
+            "sampleSourceScaledRawMismatch": "4.34152443246838527273004851986e-118",
+            "sampleSourceScaledFullOriginalPairCost": "3.63378571033312957725476397848e-118",
+            "sampleSourceScaledNonownerDifference": "1.68572684039599280806411940212e-126",
+            "sampleSourceScaledCoupledPrice": "2.50649598732447757719880873665e-117",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          }
+        ],
+        "allCandidateLabelsDeduplicated": true,
+        "exactSameOwnerAndSecondPrime": true,
+        "nativeManyBinFundingCoverageCertified": false
+      },
+      {
+        "order": 256,
+        "commonCofactorFamilies": 10,
+        "originalLabels": 93,
+        "partnerLabelsBeforeCrossCofactorDeduplication": 121,
+        "distinctPartnerLabels": 109,
+        "crossCofactorPartnerCollisions": 12,
+        "maxFamiliesGeneratingSamePartner": 3,
+        "unorderedMatchingPairs": 93,
+        "finiteParentCoverage": 1.0,
+        "evaluations": [
+          {
+            "height": "54",
+            "pairsSampled": 32,
+            "decreasingSharePairsInSample": 23,
+            "maxActualLogGap": "2.54969718007205344760866978893e-22",
+            "sampleSourceScaledOwnerPairCost": "4.17096573779393183619457958156e-244",
+            "sampleSourceScaledRawMismatch": "4.53699878638004858866616059161e-244",
+            "sampleSourceScaledFullOriginalPairCost": "4.17096573779393182931069358981e-244",
+            "sampleSourceScaledNonownerDifference": "6.88393624106045530613593924821e-262",
+            "sampleSourceScaledCoupledPrice": "4.76821790998134428661466655964e-243",
+            "allLiteralPointwisePricesPassed": true,
+            "originalFundingMultipliers": [
+              1,
+              1
+            ],
+            "fundingWitnessCertified": false
+          }
+        ],
+        "allCandidateLabelsDeduplicated": true,
+        "exactSameOwnerAndSecondPrime": true,
+        "nativeManyBinFundingCoverageCertified": false
+      }
+    ],
+    "exactMovingLengthRetained": true,
+    "fullComplexPhaseRetained": true,
+    "sampledFullOriginalAllocationRetained": true,
+    "distinctPartnerLabelsCountedOnce": true,
+    "orderingOfOwnerSharesRequired": false,
+    "negativeFirstSignRequired": false,
+    "nativeDyadicSupportCertified": false,
+    "fundingWitnessCertified": false,
+    "nativeCount56ManyBinPopulationEvaluated": false,
+    "allPrimeFactorConfigurationsCovered": false,
+    "actualPrimeTests": "Sympy deterministic below2^64, probable-prime tests above it; not Lean certificates.",
+    "floatingResultsIntervalCertified": false,
+    "floorCertified": false
+  },
+  "nextArithmeticTarget": "Establish original same-funded literal partner capacity across the native cofactor/count/radial populations, accounting for all partner collisions and bounding the original signed unmatched/supply contribution. The conditional cost no longer requires share ordering for fixed-owner pairs."
+}

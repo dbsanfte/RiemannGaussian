@@ -1,0 +1,588 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "scope": "Optional semiprime side-project probes; no Lean factoring theorem, ordinary CI integration, or single-input exponent improvement.",
+  "known_inputs": "Recovery uses only N and an independent public cache bound or the explicit q/p<=2 promise. Generated factors are used for assertions only.",
+  "metadata": {
+    "environment": {
+      "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "gmpy2": "2.3.1",
+      "numpy": "2.2.6",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0"
+    },
+    "source_sha256": {
+      "scripts/probe_semiprime_sparse_signal.py": "35aaaf4375637548f59f52e9adf92f8ceec1bdf0460939e9404db4891263345e",
+      "scripts/probe_semiprime_centre_compression.py": "a8c632fb0c49f37a3f39582b11225e12eadac9d5b6706d4be6ecf0304b44925b",
+      "scripts/probe_semiprime_factorial_jet.py": "c22ab4c02d0c95a1f29ce8031f6d53e45638f1e686f5f1ce0a9442a61f169cc3",
+      "scripts/probe_semiprime_prime_prefix_batch.py": "a9774653129fc92ba6e4cbc797e9a6619f0bbb1c01c1a3f16c2037559d6c1b68",
+      "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+    },
+    "prime_prefix_corpus": {
+      "seed": 6897333,
+      "count": 1024,
+      "input_sha256": "a3265199993b6046eb1593a522d34d54e6a258dea7b1398d13b72da64e3f41d3"
+    },
+    "weighted_corpus": {
+      "seed": 2026100447,
+      "groups": [
+        {
+          "nominal_bits": 48,
+          "inputs_decimal": [
+            "170678305342201",
+            "115531717451617",
+            "134029918506599",
+            "143410391300291",
+            "136418201050699",
+            "124495446790867"
+          ]
+        },
+        {
+          "nominal_bits": 64,
+          "inputs_decimal": [
+            "5993665493704365539",
+            "10971694478377330861",
+            "8103589873440380057",
+            "12251038489663827757",
+            "6664625487220793737",
+            "14462949890481531911"
+          ]
+        },
+        {
+          "nominal_bits": 80,
+          "inputs_decimal": [
+            "769823297740563334440259",
+            "655172882407481255191987",
+            "723153051017326482951239",
+            "623541943714374200252519",
+            "667029603684579017858281",
+            "447952268211090283689953"
+          ]
+        }
+      ]
+    },
+    "compile_checks": 5
+  },
+  "historical_in_memory_findings": {
+    "date": "2026-10-02",
+    "repo": "/home/dbsanfte/riemann/formal",
+    "scope": "Earlier in-memory exploration, preserved separately from saved-source replay.",
+    "sparseSignal": {
+      "hypotheses": "N=p*q, distinct odd primes p<q<2p; m=floor(sqrt(2N)), q<=m<2p",
+      "identity": "(1+X)^N = 1+q*X^p+p*X^q in (Z/NZ)[X]/(X^(m+1))",
+      "scalar": "S=p+q = (1-(-1)^m*binomial(N-1,m)) mod N; 0<S<N",
+      "proof": "Frobenius modulo p and q, then CRT coefficientwise; alternating binomial prefix = (-1)^m binomial(N-1,m).",
+      "derivativeWarning": "Every nonconstant derivative coefficient vanishes mod N: p*q=N. Scalar modular power cannot implement nilpotent truncation at a unit.",
+      "factorialJet": "For F_m(X)=prod_{i=1}^m(X+i), B=F_m(0)=m!, D=F'_m(0): D=(B/N)*(p+q) mod N. B/N is recovered from B mod N^2 and is a unit.",
+      "exhaustiveSparseChecks": 423,
+      "exhaustiveJetChecks": 1035,
+      "jetBranches": {
+        "gcd": 612,
+        "trace": 423
+      }
+    },
+    "primePrefixBatch": {
+      "description": "Independent Eratosthenes prime list through sqrt(X), GMP integer product tree. Sparse accumulating remainder tree computes primorial prefixes through sqrt(N_i); gcd returns smaller prime for semiprimes including squares.",
+      "sizeModel": "~O(sqrt(X)+B) total bit work up to log factors, ~O(sqrt(X)/B+1) amortized per input. X^(1/6) requires B >= X^(1/3). Does not improve single-input N^(1/5).",
+      "comparison32": {
+        "seed": 6897333,
+        "batch": 1024,
+        "cacheBuildMs": 5.6021,
+        "cachedQueryUsPerInput": 5.2566,
+        "totalUsPerInput": 10.7274,
+        "existingPlainUsPerInput": 48.7675,
+        "existingPrimePowerUsPerInput": 43.9639,
+        "valueTreeIntegerDataBytes": 165723,
+        "qualification": "Median 3 repetitions, disjoint factor pairs, prep included in total; compared only with our Python decoder, not fastest native factorers."
+      },
+      "additionalDistinctExamples": 1528,
+      "literature": "https://swc-math.github.io/aws/2026/2026HarveyNotes.pdf ; established accumulating-remainder-tree batching."
+    },
+    "quarticCentres": {
+      "signal": "c(k)=ceil(2sqrt(N*k)), k in [r,2r), r=floor(N^(1/3)).",
+      "lastProbe": {
+        "bits": 47,
+        "r": 47947,
+        "degree": 4,
+        "blockLength": 438,
+        "blocks": 110,
+        "exceptions": 15
+      },
+      "gate": "Rounding polynomial centres destroys zero high finite differences (~87% nonzero); no implicit exact modular collision-product evaluator found. Exception positions were discovered by a full scan, not cheaply.",
+      "degree3Model": "Optimizing Taylor blocks + heuristic carry exceptions yields descriptors exponent N^(1/5).",
+      "degree4Model": "Heuristic block + exception descriptors can reach N^(1/6), but neither cheap generation nor batch-product evaluation proved."
+    },
+    "lookupNoGo": {
+      "tested": "N mod 2^t = -1, t=4..16",
+      "finding": "Exact unit factor-sum mask has W/8 residues for W=2^t; larger tables retain density 1/8 on this residue class.",
+      "qualification": "This is a mask on unit residues, not a prime-specific bounded-domain impossibility theorem."
+    }
+  },
+  "fresh_saved_source_replay": {
+    "sparse_signal": {
+      "exhaustive_balanced_odd_pairs": 423,
+      "prime_bound_exclusive": 200,
+      "checked": "Exact polynomial coefficients, support, derivative annihilation, and alternating-binomial factor sum.",
+      "maximum_intermediate_density": 1,
+      "truncation_vs_scalar_example": {
+        "N": 323,
+        "truncated_at_2": 73,
+        "ordinary_pow_3_N_mod_N": 146
+      }
+    },
+    "centres_and_lookup": [
+      {
+        "centred_polynomial_probe": [
+          {
+            "bits": 30,
+            "r": 861,
+            "degree": 3,
+            "length": 30,
+            "blocks": 29,
+            "centre_corrections": 5,
+            "blocks_plus_corrections": 34,
+            "old_literal_centres": 861,
+            "max_real_taylor_error": 0.0729075797903629,
+            "nonzero_next_difference_fraction": 0.897986577181208
+          },
+          {
+            "bits": 30,
+            "r": 861,
+            "degree": 4,
+            "length": 59,
+            "blocks": 15,
+            "centre_corrections": 1,
+            "blocks_plus_corrections": 16,
+            "old_literal_centres": 861,
+            "max_real_taylor_error": 0.053599711687585996,
+            "nonzero_next_difference_fraction": 0.8562340966921119
+          },
+          {
+            "bits": 36,
+            "r": 3495,
+            "degree": 3,
+            "length": 52,
+            "blocks": 68,
+            "centre_corrections": 3,
+            "blocks_plus_corrections": 71,
+            "old_literal_centres": 3495,
+            "max_real_taylor_error": 0.04283279985602579,
+            "nonzero_next_difference_fraction": 0.9028855103940429
+          },
+          {
+            "bits": 36,
+            "r": 3495,
+            "degree": 4,
+            "length": 118,
+            "blocks": 30,
+            "centre_corrections": 2,
+            "blocks_plus_corrections": 32,
+            "old_literal_centres": 3495,
+            "max_real_taylor_error": 0.027398672527011347,
+            "nonzero_next_difference_fraction": 0.8582959641255605
+          },
+          {
+            "bits": 42,
+            "r": 15678,
+            "degree": 3,
+            "length": 95,
+            "blocks": 166,
+            "centre_corrections": 43,
+            "blocks_plus_corrections": 209,
+            "old_literal_centres": 15678,
+            "max_real_taylor_error": 0.024712844397505384,
+            "nonzero_next_difference_fraction": 0.8957042957042957
+          },
+          {
+            "bits": 42,
+            "r": 15678,
+            "degree": 4,
+            "length": 250,
+            "blocks": 63,
+            "centre_corrections": 11,
+            "blocks_plus_corrections": 74,
+            "old_literal_centres": 15678,
+            "max_real_taylor_error": 0.013424375639561162,
+            "nonzero_next_difference_fraction": 0.8715745622599753
+          },
+          {
+            "bits": 47,
+            "r": 47947,
+            "degree": 3,
+            "length": 149,
+            "blocks": 322,
+            "centre_corrections": 50,
+            "blocks_plus_corrections": 372,
+            "old_literal_centres": 47947,
+            "max_real_taylor_error": 0.016269666324518057,
+            "nonzero_next_difference_fraction": 0.8984547461368654
+          },
+          {
+            "bits": 47,
+            "r": 47947,
+            "degree": 4,
+            "length": 438,
+            "blocks": 110,
+            "centre_corrections": 15,
+            "blocks_plus_corrections": 125,
+            "old_literal_centres": 47947,
+            "max_real_taylor_error": 0.007853353779975947,
+            "nonzero_next_difference_fraction": 0.8673122771483427
+          }
+        ]
+      },
+      {
+        "binomial_factor_sum": [
+          {
+            "N": 143,
+            "m": 16,
+            "binomial_residue": 120,
+            "factor_sum_from_residue": 24,
+            "true_factor_sum": 24,
+            "values": [
+              1,
+              25,
+              49,
+              26,
+              28
+            ]
+          },
+          {
+            "N": 323,
+            "m": 25,
+            "binomial_residue": 35,
+            "factor_sum_from_residue": 36,
+            "true_factor_sum": 36,
+            "values": [
+              1,
+              37,
+              73,
+              253,
+              39
+            ]
+          },
+          {
+            "N": 1643,
+            "m": 57,
+            "binomial_residue": 83,
+            "factor_sum_from_residue": 84,
+            "true_factor_sum": 84,
+            "values": [
+              1,
+              85,
+              169,
+              589,
+              1597
+            ]
+          },
+          {
+            "N": 17473,
+            "m": 186,
+            "binomial_residue": 17200,
+            "factor_sum_from_residue": 274,
+            "true_factor_sum": 274,
+            "values": [
+              1,
+              275,
+              549,
+              1919,
+              5207
+            ]
+          }
+        ]
+      },
+      {
+        "two_adic_lookup_saturation": [
+          {
+            "t": 4,
+            "W": 16,
+            "N_residue": 15,
+            "possible_factor_sum_residues": 2,
+            "density": 0.125
+          },
+          {
+            "t": 6,
+            "W": 64,
+            "N_residue": 63,
+            "possible_factor_sum_residues": 8,
+            "density": 0.125
+          },
+          {
+            "t": 8,
+            "W": 256,
+            "N_residue": 255,
+            "possible_factor_sum_residues": 32,
+            "density": 0.125
+          },
+          {
+            "t": 10,
+            "W": 1024,
+            "N_residue": 1023,
+            "possible_factor_sum_residues": 128,
+            "density": 0.125
+          },
+          {
+            "t": 12,
+            "W": 4096,
+            "N_residue": 4095,
+            "possible_factor_sum_residues": 512,
+            "density": 0.125
+          },
+          {
+            "t": 14,
+            "W": 16384,
+            "N_residue": 16383,
+            "possible_factor_sum_residues": 2048,
+            "density": 0.125
+          },
+          {
+            "t": 16,
+            "W": 65536,
+            "N_residue": 65535,
+            "possible_factor_sum_residues": 8192,
+            "density": 0.125
+          }
+        ]
+      }
+    ],
+    "factorial_jet": [
+      {
+        "exhaustive_factorial_jet_checks": 1035,
+        "branches": {
+          "gcd": 612,
+          "trace": 423
+        },
+        "max_N": 39601
+      },
+      {
+        "batch_benchmark": [
+          {
+            "max_bits": 24,
+            "batch": 16,
+            "threshold": 5792,
+            "cache_build_ms": 7.381,
+            "query_ms": 1.721,
+            "total_us_per_input": 568.877,
+            "cached_us_per_input": 107.589,
+            "value_tree_data_bytes": 212041,
+            "visited_nodes": 132,
+            "branches": {
+              "gcd": 0,
+              "trace": 16
+            }
+          },
+          {
+            "max_bits": 24,
+            "batch": 64,
+            "threshold": 5792,
+            "cache_build_ms": 7.381,
+            "query_ms": 2.162,
+            "total_us_per_input": 149.103,
+            "cached_us_per_input": 33.781,
+            "value_tree_data_bytes": 212041,
+            "visited_nodes": 407,
+            "branches": {
+              "gcd": 0,
+              "trace": 64
+            }
+          },
+          {
+            "max_bits": 24,
+            "batch": 120,
+            "threshold": 5792,
+            "cache_build_ms": 7.381,
+            "query_ms": 2.644,
+            "total_us_per_input": 83.54,
+            "cached_us_per_input": 22.035,
+            "value_tree_data_bytes": 212041,
+            "visited_nodes": 661,
+            "branches": {
+              "gcd": 0,
+              "trace": 120
+            }
+          }
+        ]
+      },
+      {
+        "batch_benchmark": [
+          {
+            "max_bits": 28,
+            "batch": 32,
+            "threshold": 23170,
+            "cache_build_ms": 30.893,
+            "query_ms": 6.738,
+            "total_us_per_input": 1175.979,
+            "cached_us_per_input": 210.563,
+            "value_tree_data_bytes": 1150047,
+            "visited_nodes": 310,
+            "branches": {
+              "gcd": 0,
+              "trace": 32
+            }
+          },
+          {
+            "max_bits": 28,
+            "batch": 128,
+            "threshold": 23170,
+            "cache_build_ms": 30.893,
+            "query_ms": 12.085,
+            "total_us_per_input": 335.765,
+            "cached_us_per_input": 94.411,
+            "value_tree_data_bytes": 1150047,
+            "visited_nodes": 937,
+            "branches": {
+              "gcd": 0,
+              "trace": 128
+            }
+          },
+          {
+            "max_bits": 28,
+            "batch": 384,
+            "threshold": 23170,
+            "cache_build_ms": 30.893,
+            "query_ms": 10.428,
+            "total_us_per_input": 107.608,
+            "cached_us_per_input": 27.157,
+            "value_tree_data_bytes": 1150047,
+            "visited_nodes": 2188,
+            "branches": {
+              "gcd": 0,
+              "trace": 384
+            }
+          }
+        ]
+      },
+      {
+        "batch_benchmark": [
+          {
+            "max_bits": 32,
+            "batch": 64,
+            "threshold": 92681,
+            "cache_build_ms": 141.193,
+            "query_ms": 25.027,
+            "total_us_per_input": 2597.182,
+            "cached_us_per_input": 391.044,
+            "value_tree_data_bytes": 5993047,
+            "visited_nodes": 654,
+            "branches": {
+              "gcd": 0,
+              "trace": 64
+            }
+          },
+          {
+            "max_bits": 32,
+            "batch": 256,
+            "threshold": 92681,
+            "cache_build_ms": 141.193,
+            "query_ms": 32.702,
+            "total_us_per_input": 679.276,
+            "cached_us_per_input": 127.742,
+            "value_tree_data_bytes": 5993047,
+            "visited_nodes": 2149,
+            "branches": {
+              "gcd": 0,
+              "trace": 256
+            }
+          },
+          {
+            "max_bits": 32,
+            "batch": 1024,
+            "threshold": 92681,
+            "cache_build_ms": 141.193,
+            "query_ms": 58.806,
+            "total_us_per_input": 195.312,
+            "cached_us_per_input": 57.428,
+            "value_tree_data_bytes": 5993047,
+            "visited_nodes": 6598,
+            "branches": {
+              "gcd": 0,
+              "trace": 1024
+            }
+          }
+        ]
+      }
+    ],
+    "prime_prefix": {
+      "exhaustive_semiprimes_including_even_squares_unbalanced": 1081,
+      "duplicate_empty_and_bound_checks": true,
+      "seed": 6897333,
+      "independent_disjoint_input_count": 1024,
+      "repeats": 3,
+      "cache_build_ms": 5.5533,
+      "value_tree_integer_data_bytes": 165723,
+      "benchmark": [
+        {
+          "batch": 1,
+          "cached_us_per_input": 27.657,
+          "total_us_per_input": 5580.955,
+          "plain_us_per_input": 60.552,
+          "prime_power_us_per_input": 48.539
+        },
+        {
+          "batch": 64,
+          "cached_us_per_input": 9.6074,
+          "total_us_per_input": 96.3777,
+          "plain_us_per_input": 48.5686,
+          "prime_power_us_per_input": 44.9445
+        },
+        {
+          "batch": 256,
+          "cached_us_per_input": 7.6999,
+          "total_us_per_input": 29.3925,
+          "plain_us_per_input": 48.0181,
+          "prime_power_us_per_input": 43.8225
+        },
+        {
+          "batch": 1024,
+          "cached_us_per_input": 5.6134,
+          "total_us_per_input": 11.0365,
+          "plain_us_per_input": 48.5505,
+          "prime_power_us_per_input": 44.1333
+        }
+      ]
+    },
+    "weighted_batch": {
+      "order_certificate_checks": 220,
+      "exact_factor_checks": 108,
+      "seed": 2026100447,
+      "inputs_per_size": 6,
+      "repeats_per_input": 2,
+      "median_full_factor_ms": [
+        {
+          "nominal_bits": 48,
+          "baseline": 1.6705,
+          "gcd_batched": 1.8048,
+          "joint_batched": 2.0287
+        },
+        {
+          "nominal_bits": 64,
+          "baseline": 19.9638,
+          "gcd_batched": 18.051,
+          "joint_batched": 17.8604
+        },
+        {
+          "nominal_bits": 80,
+          "baseline": 206.5784,
+          "gcd_batched": 196.3529,
+          "joint_batched": 186.8431
+        }
+      ],
+      "guarantee": "Experimental fixed-base search; reports failure at global low order. Not an unconditional large-order-or-factor algorithm."
+    }
+  },
+  "timing_protocol": {
+    "prime_prefix": "32-bit public bound; same disjoint-factor corpus; method order shuffled; median of three repetitions; fresh independent sieve/product tree included in total.",
+    "weighted": "Six inputs per nominal size; method order shuffled per input; mean of two repeats followed by median across inputs; full factor-call time.",
+    "controls": "No shared-factor oracle, no target-specific factor cache, no zeta/eta coefficient oracle.",
+    "limitations": "Small Python/GMP prototype measurements, without CPU pinning. Replay jobs initially ran concurrently; timings are indicative. Comparators are our own Python decoders, not fastest native factorers. Cache integer-data bytes exclude Python overhead."
+  },
+  "interpretation": {
+    "sparse": "The factor information is exact, but obtaining the truncated coefficients or binomial residue cheaply remains open.",
+    "batching": "Standard accumulating-remainder-tree family. Total ~O(sqrt(X)+B) up to logarithms; X^(1/6) amortized needs B>=X^(1/3), with public precomputation charged.",
+    "weighted": "Measured constant-factor gains; the one-fifth target materialisation scale remains.",
+    "centre_compression": "Compact quartic descriptors do not provide cheap rounded-centre generation or collision-product evaluation; exception discovery still scans all centres.",
+    "lookup": "A unit-residue mask retains density 1/8 for N=-1 mod 2^t in the tested range; not a prime-specific impossibility result.",
+    "theorem_status": "Algebraic arguments plus exact/numerical Python checks only; none of these new identities was formalised in Lean in this slice."
+  }
+}

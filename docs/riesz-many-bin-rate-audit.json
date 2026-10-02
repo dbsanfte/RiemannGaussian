@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T01:50:18.675862+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszManyBinRateAudit",
+  "scope": "Rate obstruction for the positive source envelope, including inverse powers per actual occupied bin; exact signed off-diagonal criterion for the existing weighted phase energy. Not a bound for the literal funded carrier.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszManyBinRateAudit.lean": "5a2a1992c10e6075c53bf4a23343bca50e01ec96e9804946126f0fb516f759a1",
+    "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean": "f140c5b549c83c98295517f29eaf23fba81204b899849f55a7aa794c87df3276",
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean": "c216bfbac39595b8f48d473ad6b32da6ded27c7d1ef377add71d7e4aafef1fff",
+    "RiemannGaussian/ZetaRieszPrimeCountFrequency.lean": "c856a942291e0524d337b24d87b7abe13448aa363c1d614b79f663950163b190",
+    "scripts/probe_riesz_many_bin_rates.py": "5cd6360fe354c9e9f77a0ad5e401be9c1abe7f553a98d4440a56acf45cc685e5",
+    "RiemannGaussian.lean": "aea5e11ba50bcdf6558656c4bad74325f1328153dfed47db4dd0f625d906d6db",
+    "docs/theorem-explorer/metadata.json": "2bc827d018edc3efcd4550a0b3661c4be4e0364162539866ac18981534de2524",
+    "docs/zeta-riesz-many-bin-phase-audit.md": "44372cd026b338325f966d3c112e3ebea7dd9c57375b63226eb910f575c3fadb",
+    "AGENTS.md": "28dddaee2efd1ba6ab48020ea15ebed18ed935e2f730ba68ee62375911432819"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.logarithmic_discount_per_order",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.eventually_discounted_exponent_lower",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.discounted_source_tendsto",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.per_bin_power_source_tendsto",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.actual_bin_power_source_tendsto",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.dyadic_discounted_source_tendsto",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.radius_growth_bounds",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.phaseEnergy_eq_diagonal_cross",
+    "RiemannGaussian.ZetaRieszManyBinRateAudit.energy_saving_iff_cross"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-many-bin-rate-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10429,
+      "target": "RiemannGaussian.ZetaRieszManyBinRateAudit",
+      "log": ".lake/riesz-many-bin-rate-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-many-bin-rate-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszManyBinRateAudit"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszManyBinRateAudit",
+      "linters": 14,
+      "declarations": 9,
+      "generatedDeclarations": 1,
+      "publicTheoremCount": 9,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.logarithmic_discount_per_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.eventually_discounted_exponent_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.discounted_source_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.per_bin_power_source_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.actual_bin_power_source_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.dyadic_discounted_source_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.radius_growth_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.phaseEnergy_eq_diagonal_cross": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinRateAudit.energy_saving_iff_cross": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-many-bin-rate-audit.log"
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "familyAssignments": {
+      "checked": true,
+      "family": "arithmetic",
+      "generatedPublicationAssetsRefreshed": false
+    },
+    "defaultExplorerEndpointsUnchanged": true,
+    "readmeUnchanged": true,
+    "unrelatedStagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "whitespace": {
+      "sourceFilesChecked": [
+        "RiemannGaussian/ZetaRieszManyBinRateAudit.lean",
+        "RiemannGaussian/ZetaRieszManyBinCorrelationAudit.lean",
+        "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean",
+        "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean",
+        "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean",
+        "RiemannGaussian/ZetaRieszPrimeCountFrequency.lean",
+        "scripts/probe_riesz_many_bin_rates.py",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "docs/zeta-riesz-many-bin-phase-audit.md",
+        "AGENTS.md"
+      ],
+      "exitCode": 0
+    }
+  },
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "independentRemainingSignedBoundProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false,
+  "allOriginalSignedWeightsRetained": true,
+  "sourceEnvelopeLowerBoundTransferredToCarrier": false,
+  "noGoForAllJointCancellationMethodsClaimed": false,
+  "strongerRateObstruction": "exp(-A log(N+1)^2-B log(N+1))*(2u)^N -> +infinity for all fixed u>1/2 and A,B, also on original dyadicMomentOrder",
+  "actualBinSpecialization": "cofactorBins with existing physical prime-log support; inverse N^c discount per bin still loses against the positive envelope",
+  "exactEnergyCriterion": "E=D+C; E<=rD iff C<=-(1-r)D, with all phase/mask/funding weights retained",
+  "outerRadiusGrowthBounds": [
+    "1/10001",
+    "1/10000"
+  ],
+  "literature": {
+    "primary": "https://arxiv.org/pdf/2603.25961",
+    "theorems": [
+      "1.1",
+      "1.2"
+    ],
+    "scope": "Complete Mobius-lcm double sum; constant reference Gram bounds, not the literal masked funded carrier.",
+    "importedAsLeanArithmeticInput": false
+  },
+  "optionalProbe": {
+    "script": "scripts/probe_riesz_many_bin_rates.py",
+    "runtimeArtifact": ".lake/riesz-many-bin-rates.json",
+    "exactRationalChecksThrough": 64,
+    "completeReferenceGramCutoff": 100000,
+    "completeReferenceGramValue": 0.44074119195756745,
+    "amplitudeGrowthExponent": 9.999500033330834e-05,
+    "squaredEnergyExponentNeededBeforePolynomialFactors": 0.00019999000066661668,
+    "continuousEnvelopeCrossover": 5783320.903773878,
+    "crossoverIntervalCertified": false,
+    "nativeCount56PopulationEvaluated": false,
+    "nativePhysicalMasksEvaluated": false,
+    "fundingWitnessIncluded": false,
+    "actualEnergySavingCertified": false,
+    "floorCertified": false
+  },
+  "nextArithmeticTarget": "Independently bound the actual post-hinge cross-cofactor/count/funding sum, or its complete signed adverse periods. Occupancy and a subexponential envelope discount are not substitutes."
+}

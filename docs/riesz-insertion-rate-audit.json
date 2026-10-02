@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Rate no-go for complete independent reciprocal-prime insertion capacity; no native floor payment.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszInsertionRateAudit.lean": {
+      "sha256": "553242207500e5871eb97a068617b92b11bad835574d7a9b7be2e720910e1f62",
+      "snapshot": ".lake/riesz-insertion-rate/source-553242207500e5871eb97a068617b92b11bad835574d7a9b7be2e720910e1f62.lean"
+    },
+    "scripts/probe_riesz_prime_insertion_rate.py": {
+      "sha256": "8a9345ec39b5254a7ff8e688ec5c54f1a5bde93194a273498348fc23d5482baa",
+      "snapshot": ".lake/riesz-insertion-rate/source-8a9345ec39b5254a7ff8e688ec5c54f1a5bde93194a273498348fc23d5482baa.py"
+    },
+    "docs/zeta-riesz-insertion-rate-audit.md": {
+      "sha256": "0432d0ac955647b92cd4eef1c428647d49c0f77c88abb225a804a49ce1295687",
+      "snapshot": ".lake/riesz-insertion-rate/source-0432d0ac955647b92cd4eef1c428647d49c0f77c88abb225a804a49ce1295687.md"
+    },
+    "RiemannGaussian/ZetaRieszInsertionCapacity.lean": {
+      "sha256": "950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a",
+      "snapshot": ".lake/riesz-insertion-rate/source-950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a.lean"
+    },
+    "RiemannGaussian/ZetaRieszOwnerCountEnergy.lean": {
+      "sha256": "30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b",
+      "snapshot": ".lake/riesz-insertion-rate/source-30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b.lean"
+    }
+  },
+  "publicTheorems": [
+    "log_one_sub_inv_lower",
+    "prime_empty_mass_lower",
+    "primeHarmonic_le_eight",
+    "prime_pool_empty_mass_lower",
+    "prime_pool_empty_mass_order_lower",
+    "response_order_lower",
+    "empty_lower_source_div_pow_tendsto",
+    "empty_lower_source_tendsto",
+    "response_source_tendsto",
+    "response_source_div_pow_tendsto",
+    "not_frequently_response_source_div_pow_le",
+    "arithmetic_response_order_lower"
+  ],
+  "proofCount": 12,
+  "axioms": {
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.log_one_sub_inv_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.prime_empty_mass_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.primeHarmonic_le_eight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.prime_pool_empty_mass_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.prime_pool_empty_mass_order_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.response_order_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.empty_lower_source_div_pow_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.empty_lower_source_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.response_source_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.response_source_div_pow_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.not_frequently_response_source_div_pow_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszInsertionRateAudit.arithmetic_response_order_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "validation": {
+    "focusedWarningAsErrorLean": true,
+    "focusedTargetBuild": true,
+    "ordinaryRootImportedInNamespaceAudit": true,
+    "namespaceLinters": 14,
+    "allPublicStandardAxioms": true,
+    "logs": {
+      "build.log": {
+        "path": ".lake/riesz-insertion-rate/build.log",
+        "sha256": "b2b3501f0e43b12abe2922fd35481a23a3e9d2d04bf99c1300a878efda33a3ca"
+      },
+      "lean-audit.log": {
+        "path": ".lake/riesz-insertion-rate/lean-audit.log",
+        "sha256": "7e24027e193ad330711829c8b87eb1ee8dccbf9b9f89d0691f6524ec61c375f0"
+      },
+      "Audit.lean": {
+        "path": ".lake/riesz-insertion-rate/Audit.lean",
+        "sha256": "a80af6c342de273ffd17e36fe2dba6fbe85f81638cbf4a627c55951a7556ec24"
+      },
+      "prime-coefficients.json": {
+        "path": ".lake/riesz-insertion-rate/prime-coefficients.json",
+        "sha256": "85e24f7b6ca893beef0cc615f700bcdf446626f3e3955ed184ce7a81a7d2714a"
+      },
+      "probe.log": {
+        "path": ".lake/riesz-insertion-rate/probe.log",
+        "sha256": "b77a1df0b03a96eefe4f94ef35fd082e28faefd16ccf5af06a5895c8bddfcb25"
+      }
+    },
+    "protectedPublicFilesUnchanged": true,
+    "indexNotWrittenByThisSlice": true,
+    "externalIndexChangedDuringAudit": false
+  },
+  "quantitative": {
+    "allCountsRetained": true,
+    "actualPrimeWeightsAndLogs": true,
+    "emptyMassLowerBound": "exp(-16)/(8*(N+2))^16",
+    "physicalPoolHypothesis": "log X <= 2N+2",
+    "hingeHypothesis": "d_N > 0",
+    "polynomialDiscount": "arbitrary fixed natural v",
+    "sourceRegrowth": "(2u)^N B_Q(d)/(d*(N+2)^v) -> +infinity for every fixed u>1/2",
+    "boundedCofinalSubsequenceExcluded": true,
+    "arithmeticBridgeSquarefreeAndOldBaseHingeHypothesesExplicit": true
+  },
+  "probe": {
+    "unitRegressions": 5,
+    "completeGenuinePrimeCoefficientRows": 5,
+    "largestPoolPrimeCount": 78498,
+    "everyPositiveHingeSubsetRetained": true,
+    "countTailTruncated": false,
+    "exactPhiAndSquarefreeSieve": true,
+    "floatingLogsNotIntervalCertificate": true,
+    "nativeUnpaidRecordsEvaluated": 0,
+    "actualNativePhaseAllocationOrFundingEvaluated": false,
+    "sourceRatesAreLowerBoundEvaluationsNotPrimePools": true
+  },
+  "scope": {
+    "independentCoefficientMatchingNoGo": true,
+    "nativeCarrierLowerBound": false,
+    "nativeFloorImpossibility": false,
+    "newPopulationPaid": false,
+    "nativeCreditSizeBound": false,
+    "independentFloor": false,
+    "independentCeiling": false,
+    "restrictedZeroExclusion": false,
+    "RHClaim": false,
+    "optionalOutsideBuildsCI": true,
+    "publicationNotPartOfThisFocusedAudit": true
+  }
+}

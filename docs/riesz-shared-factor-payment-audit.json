@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T05:28:59.720951+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszSharedFactorPayment",
+  "scope": "Geometric payment of every actual funded adverse cross pair with log(gcd(n,m))>N/1000. Original selection/allocation/phase/masks/funding retained. Native signed smaller-gcd numerical cost remains open; no whole floor or new label-population payment.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+    "scripts/probe_riesz_shared_factor_energy.py": "2029f716bb75ed2cafb865f21950e93e26ab7853179c8bd24631ab088f5039ea",
+    "docs/zeta-riesz-shared-factor-payment.md": "af57ce91d32b9058934a1f702d9fea5c1cd28446ccc55e3e57f973053447118c",
+    "RiemannGaussian.lean": "e9025710cd0c43e8acb62e06389470dc01e44046ccd9b6436876c03cfab98439",
+    "docs/theorem-explorer/metadata.json": "c2407ced4bfd48fb0937a7d8722901cbe62405a7495813188772269a1ea97476",
+    "AGENTS.md": "3dde5e4c8bcb7a48a7de7d7f1585ec9d33b9c3b1cbd2ce02d06ca075dd45b414",
+    "RiemannGaussian/ZetaRieszDiagonalPayment.lean": "9d20f3cee8406004fbf94392d69709ba76e9cfc72ae633ae5900f031340bf767",
+    "RiemannGaussian/ZetaRieszSmoothOwnerDiscrepancy.lean": "7e4411e542f8bfbd09e88b75327e2df3dbdaf83b981b30c84d169ab365d34dea",
+    "RiemannGaussian/ZetaRieszOwnerPairFloor.lean": "50be5079b632aa9214112eb6deb6a083752f3ce47d9d5df7b96c1f5d0fba3b4b",
+    "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean": "5542d4ee8e732f7da5d9c1eb3f5838a071b495d1c794c4056979f30876ebcde4",
+    "RiemannGaussian/NatDivisorSquareDirichlet.lean": "1b32d615e42f17959b0f0cbb45c368134cb346409b10e192f96a833cbaabab5a",
+    "RiemannGaussian/NatDivisorSquareMean.lean": "4fa8e28f677072e5b0660c4fbfc2a9e902df0ededbb47b8d15c090be94119de0"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.adverseCrossEnergy_eq",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.common_factor_row_bound",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.large_common_factor_mass",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.largeSharedEnergy_bound",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.shared_source_rate",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.weighted_largeShared_bound",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.shared_crossCost_split",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.weighted_shared_price",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.tendsto_sharedPrice",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.common_cofactor_large",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.cropped_cofactor_large",
+    "RiemannGaussian.ZetaRieszSharedFactorPayment.eventually_joined_small_shared_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-shared-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10434,
+      "target": "RiemannGaussian.ZetaRieszSharedFactorPayment",
+      "log": ".lake/riesz-shared-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-shared-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 18,
+      "generatedDeclarations": 23,
+      "publicTheoremCount": 12,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.adverseCrossEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.common_factor_row_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.large_common_factor_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.largeSharedEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.shared_source_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.weighted_largeShared_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.shared_crossCost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.weighted_shared_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.tendsto_sharedPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.common_cofactor_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.cropped_cofactor_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSharedFactorPayment.eventually_joined_small_shared_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-shared-audit.log"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "moduleChecked": "RiemannGaussian/ZetaRieszSharedFactorPayment.lean"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_shared_factor_energy.py",
+      "astParsed": true,
+      "log": ".lake/riesz-shared-factor-energy-probe.log",
+      "runtimeArtifact": ".lake/riesz-shared-factor-energy-probe.json"
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszSharedFactorPayment.lean",
+        "scripts/probe_riesz_shared_factor_energy.py",
+        "docs/zeta-riesz-shared-factor-payment.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "priorDiagonalMathematicalSourcesUnchanged": true
+  },
+  "literalIntegerLabelsRetained": true,
+  "originalAllocationAndPhaseRetained": true,
+  "originalSupportCountAndPhysicalMasksRetained": true,
+  "nativeWholeFloorFundingRetained": true,
+  "sameOriginalSupplyDebitRetainedOnce": true,
+  "fundingOverlapsRetainedBeforeSquare": true,
+  "adverseCutoffsSelectedUsingOriginalWholeFundedPrefix": true,
+  "adverseCutoffsReselectedAfterSharedFactorPartition": false,
+  "largeSharedThreshold": "log(gcd(n,m)) > N/1000",
+  "largeSharedGeometricEnergyBound": "sharedConstant(B)*(N+1)^3*exp(-N/4000)",
+  "sharedConstant": "16*radiusCeiling^2*B^2*M(1+1/262144)^2*M(3/2)*exp(6/262144)",
+  "largeSharedGeometricPrice": "sqrt(4*sharedConstant(B))*(N+1)^2*exp(-N/8000) -> 0",
+  "divisorMassesNumericallyEvaluated": false,
+  "effectiveStartingOrderCertified": false,
+  "coherentCroppedOwnerCofactorPairsQualifyProved": true,
+  "coherentOwnerColumnsMadeOrthogonal": false,
+  "largeSharedCrossCorrelationFamilyPaid": true,
+  "largeSharedGeometricPaymentCount": 1,
+  "priorDiagonalAndPaidErrorsRetained": true,
+  "wholeRemainingSignedSmallSharedAggregateRetained": true,
+  "nativeSufficientCrossBudgetRemaining": "sqrt(max(smallSharedEnergy,0)*adverseProfileEnergy) <= 79/1000 + o(1)",
+  "nativeIndependentSmallSharedBudgetProved": false,
+  "automaticManyBinOrthogonalityProved": false,
+  "newWholeLabelPopulationArithmeticPaymentProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "finiteProbe": {
+    "orders": [
+      4,
+      5
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "labelCounts": [
+      123,
+      1349
+    ],
+    "positiveSmallSharedCases": 4,
+    "negativeSmallSharedCases": 2,
+    "sameCofactorCrossNegativeCases": 6,
+    "actualSignedCountPairMatrixRetained": true,
+    "cutoffSelectionUnchangedDuringGcdPartition": true,
+    "finitePartitionAndCostInequalitiesChecked": true,
+    "cofinalSmallSharedBoundProved": false,
+    "nativeManyBinPopulationCertified": false,
+    "nativeDyadicSupportCertified": false,
+    "nativePhysicalPrimeMasksCertified": false,
+    "originalFundingWitnessCertified": false,
+    "nativeMovingLengthUsed": false,
+    "floatingResultsIntervalCertified": false,
+    "scope": "Complete actual finite Gram pairs; test L=11N/8 and empty allocation support. Not native many-bin, physical/moving-length/funding or asymptotic evidence."
+  }
+}

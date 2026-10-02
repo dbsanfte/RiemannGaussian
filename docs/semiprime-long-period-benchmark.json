@@ -1,0 +1,5403 @@
+{
+  "seed": 2026100663,
+  "cases_per_size": 16,
+  "repeats": 3,
+  "rows": [
+    {
+      "nominal_bits": 48,
+      "samples": [
+        {
+          "N_decimal": "127715329901779",
+          "reference_factors_decimal": [
+            "10763059",
+            "11866081"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 10763059,
+              "baby_index": 16,
+              "giant_index": 0,
+              "root": 90771048470771,
+              "point": 36621894143650,
+              "convolutions": 512,
+              "packed_coefficients": 8139,
+              "monic_reductions": 449,
+              "bound": 225,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                92289314669831,
+                104481711788259
+              ],
+              "linear_cover": 50625,
+              "baby_count": 225,
+              "giant_count": 225,
+              "finite_difference_updates": 2700,
+              "projection_count": 48,
+              "collision_exponents": [
+                "16386302",
+                "129730961002498"
+              ]
+            },
+            "linear": {
+              "bound": 225,
+              "order_limit": 50625,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "127715329901780",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 11866081,
+              "work": 450,
+              "stage": "geometric",
+              "projected_base": [
+                92289314669831,
+                104481711788259
+              ],
+              "projection_count": 48
+            },
+            "curve_full": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 225,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            },
+            "curve": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 225,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.3709030081518,
+            "dickson6": 8.70695200865157,
+            "curve": 14.956982980947942,
+            "curve_full": 12.849124992499128
+          }
+        },
+        {
+          "N_decimal": "87264241977767",
+          "reference_factors_decimal": [
+            "9656069",
+            "9037243"
+          ],
+          "results": {
+            "curve": {
+              "bound": 211,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 44521,
+              "status": "factor",
+              "factor": 9037243,
+              "stage": "curve-smooth"
+            },
+            "linear": {
+              "bound": 211,
+              "order_limit": 44521,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "87264241977768",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 9037243,
+              "work": 422,
+              "stage": "geometric",
+              "projected_base": [
+                3523357177061,
+                52581919846961
+              ],
+              "projection_count": 47
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 9037243,
+              "baby_index": 11,
+              "giant_index": 0,
+              "root": 8072324818826,
+              "point": 64741640338832,
+              "convolutions": 580,
+              "packed_coefficients": 10591,
+              "monic_reductions": 421,
+              "bound": 211,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                3523357177061,
+                52581919846961
+              ],
+              "linear_cover": 44521,
+              "baby_count": 211,
+              "giant_count": 211,
+              "finite_difference_updates": 2532,
+              "projection_count": 47,
+              "collision_exponents": [
+                "1684802",
+                "88234047316802"
+              ]
+            },
+            "curve_full": {
+              "bound": 211,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 44521,
+              "status": "factor",
+              "factor": 9037243,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 9.342152014141902,
+            "dickson6": 12.200586003018543,
+            "curve": 2.1390760084614158,
+            "curve_full": 2.1362830011639744
+          }
+        },
+        {
+          "N_decimal": "130079932124369",
+          "reference_factors_decimal": [
+            "13242347",
+            "9823027"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 9823027,
+              "baby_index": 74,
+              "giant_index": 6,
+              "root": 122747416511718,
+              "point": 82061597794904,
+              "convolutions": 228,
+              "packed_coefficients": 2261,
+              "monic_reductions": 11,
+              "bound": 226,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 48,
+              "linear_cover": 51076,
+              "stage": "curve-cover",
+              "baby_count": 225,
+              "giant_count": 7,
+              "projected_point": [
+                34238195107160,
+                70474043882838
+              ],
+              "a24": 62714337261598,
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                1657
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 9823027,
+              "baby_index": 83,
+              "giant_index": 0,
+              "root": 9732060179193,
+              "point": 12484649159079,
+              "convolutions": 616,
+              "packed_coefficients": 11337,
+              "monic_reductions": 451,
+              "bound": 226,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                11412274972700,
+                46430558833291
+              ],
+              "linear_cover": 51076,
+              "baby_count": 226,
+              "giant_count": 226,
+              "finite_difference_updates": 2712,
+              "projection_count": 48,
+              "collision_exponents": [
+                "326655685442",
+                "133229260080002"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 9823027,
+              "baby_index": 74,
+              "giant_index": 6,
+              "root": 122747416511718,
+              "point": 82061597794904,
+              "convolutions": 613,
+              "packed_coefficients": 11100,
+              "monic_reductions": 451,
+              "bound": 226,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 48,
+              "linear_cover": 51076,
+              "stage": "curve-cover",
+              "baby_count": 225,
+              "giant_count": 226,
+              "projected_point": [
+                34238195107160,
+                70474043882838
+              ],
+              "a24": 62714337261598,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1657
+              ]
+            },
+            "linear": {
+              "bound": 226,
+              "order_limit": 51076,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "130079932124368",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 9823027,
+              "work": 452,
+              "stage": "geometric",
+              "projected_base": [
+                11412274972700,
+                46430558833291
+              ],
+              "projection_count": 48
+            }
+          },
+          "median_ms": {
+            "linear": 9.897593001369387,
+            "dickson6": 13.103345001582056,
+            "curve": 5.162265006219968,
+            "curve_full": 13.001796003663912
+          }
+        },
+        {
+          "N_decimal": "186116765746103",
+          "reference_factors_decimal": [
+            "14105813",
+            "13194331"
+          ],
+          "results": {
+            "curve_full": {
+              "bound": 239,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 52,
+              "linear_cover": 57121,
+              "status": "factor",
+              "factor": 14105813,
+              "stage": "curve-smooth"
+            },
+            "linear": {
+              "bound": 239,
+              "order_limit": 57121,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "186116765746104",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 13194331,
+              "work": 478,
+              "stage": "geometric",
+              "projected_base": [
+                7358585219501,
+                149774255668243
+              ],
+              "projection_count": 52
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 13194331,
+              "baby_index": 87,
+              "giant_index": 26,
+              "root": 155986969470137,
+              "point": 43586508802442,
+              "convolutions": 648,
+              "packed_coefficients": 11897,
+              "monic_reductions": 477,
+              "bound": 239,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                7358585219501,
+                149774255668243
+              ],
+              "linear_cover": 57121,
+              "baby_count": 239,
+              "giant_count": 239,
+              "finite_difference_updates": 2868,
+              "projection_count": 52,
+              "collision_exponents": [
+                "433282530562",
+                "72205441540232810573122"
+              ]
+            },
+            "curve": {
+              "bound": 239,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 52,
+              "linear_cover": 57121,
+              "status": "factor",
+              "factor": 14105813,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 10.410781018435955,
+            "dickson6": 13.625682011479512,
+            "curve": 1.9831919926218688,
+            "curve_full": 1.972786005353555
+          }
+        },
+        {
+          "N_decimal": "243874170851599",
+          "reference_factors_decimal": [
+            "14632313",
+            "16666823"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 16666823,
+              "baby_index": 202,
+              "giant_index": 4,
+              "root": 78148305910937,
+              "point": 154295803501098,
+              "convolutions": 252,
+              "packed_coefficients": 2503,
+              "monic_reductions": 11,
+              "bound": 250,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 62500,
+              "stage": "curve-cover",
+              "baby_count": 249,
+              "giant_count": 7,
+              "projected_point": [
+                199869381934802,
+                23431096167526
+              ],
+              "a24": 146699160458117,
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                1453
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 16666823,
+              "baby_index": 225,
+              "giant_index": 15,
+              "root": 197120899724750,
+              "point": 193817918743079,
+              "convolutions": 684,
+              "packed_coefficients": 12729,
+              "monic_reductions": 499,
+              "bound": 250,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                215111626552996,
+                204772240037122
+              ],
+              "linear_cover": 62500,
+              "baby_count": 250,
+              "giant_count": 250,
+              "finite_difference_updates": 3000,
+              "projection_count": 53,
+              "collision_exponents": [
+                "129730961002498",
+                "4095998464000143999998"
+              ]
+            },
+            "linear": {
+              "bound": 250,
+              "order_limit": 62500,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "243874170851600",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 16666823,
+              "work": 500,
+              "stage": "geometric",
+              "projected_base": [
+                215111626552996,
+                204772240037122
+              ],
+              "projection_count": 53
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 16666823,
+              "baby_index": 202,
+              "giant_index": 4,
+              "root": 78148305910937,
+              "point": 154295803501098,
+              "convolutions": 681,
+              "packed_coefficients": 12466,
+              "monic_reductions": 499,
+              "bound": 250,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 62500,
+              "stage": "curve-cover",
+              "baby_count": 249,
+              "giant_count": 250,
+              "projected_point": [
+                199869381934802,
+                23431096167526
+              ],
+              "a24": 146699160458117,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1453
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 11.112400010460988,
+            "dickson6": 14.414111996302381,
+            "curve": 5.726506991777569,
+            "curve_full": 14.584802993340418
+          }
+        },
+        {
+          "N_decimal": "195523396811857",
+          "reference_factors_decimal": [
+            "12764951",
+            "15317207"
+          ],
+          "results": {
+            "curve": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 241,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            },
+            "linear": {
+              "bound": 241,
+              "order_limit": 58081,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "195523396811856",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 12764951,
+              "work": 482,
+              "stage": "geometric",
+              "projected_base": [
+                93585217402504,
+                68751189580546
+              ],
+              "projection_count": 53
+            },
+            "curve_full": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 241,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 12764951,
+              "baby_index": 202,
+              "giant_index": 7,
+              "root": 13538476310287,
+              "point": 159552078827221,
+              "convolutions": 666,
+              "packed_coefficients": 12351,
+              "monic_reductions": 481,
+              "bound": 241,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                93585217402504,
+                68751189580546
+              ],
+              "linear_cover": 58081,
+              "baby_count": 241,
+              "giant_count": 241,
+              "finite_difference_updates": 2892,
+              "projection_count": 53,
+              "collision_exponents": [
+                "67927300207202",
+                "51361946766954601022"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.504019010113552,
+            "dickson6": 13.882695988286287,
+            "curve": 15.834669000469148,
+            "curve_full": 13.914473005570471
+          }
+        },
+        {
+          "N_decimal": "110616379532609",
+          "reference_factors_decimal": [
+            "9984647",
+            "11078647"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 11078647,
+              "baby_index": 26,
+              "giant_index": 33,
+              "root": 43945445872919,
+              "point": 26590977999006,
+              "convolutions": 293,
+              "packed_coefficients": 4239,
+              "monic_reductions": 120,
+              "bound": 220,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 48400,
+              "stage": "curve-cover",
+              "baby_count": 219,
+              "giant_count": 63,
+              "projected_point": [
+                103452948076736,
+                45068438932155
+              ],
+              "a24": 2647455365621,
+              "earlier_curves": [],
+              "target_batches": 6,
+              "staged": true,
+              "verified_local_annihilators": [
+                7507
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 11078647,
+              "baby_index": 26,
+              "giant_index": 33,
+              "root": 43945445872919,
+              "point": 26590977999006,
+              "convolutions": 595,
+              "packed_coefficients": 10670,
+              "monic_reductions": 439,
+              "bound": 220,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 48400,
+              "stage": "curve-cover",
+              "baby_count": 219,
+              "giant_count": 220,
+              "projected_point": [
+                103452948076736,
+                45068438932155
+              ],
+              "a24": 2647455365621,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                7507
+              ]
+            },
+            "dickson6": {
+              "bound": 220,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "status": "factor",
+              "factor": 9984647,
+              "stage": "projection"
+            },
+            "linear": {
+              "bound": 220,
+              "order_limit": 48400,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "110616379532608",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 9984647,
+              "stage": "smooth",
+              "projection_count": 34
+            }
+          },
+          "median_ms": {
+            "linear": 0.802676979219541,
+            "dickson6": 0.7963909883983433,
+            "curve": 8.037459978368133,
+            "curve_full": 12.374000012641773
+          }
+        },
+        {
+          "N_decimal": "194028769265029",
+          "reference_factors_decimal": [
+            "14383709",
+            "13489481"
+          ],
+          "results": {
+            "curve_full": {
+              "bound": 241,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58081,
+              "status": "factor",
+              "factor": 14383709,
+              "stage": "curve-smooth"
+            },
+            "curve": {
+              "bound": 241,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58081,
+              "status": "factor",
+              "factor": 14383709,
+              "stage": "curve-smooth"
+            },
+            "linear": {
+              "bound": 241,
+              "order_limit": 58081,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "194028769265028",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 14383709,
+              "work": 482,
+              "stage": "geometric",
+              "projected_base": [
+                15974715948560,
+                107512934032531
+              ],
+              "projection_count": 53
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 14383709,
+              "baby_index": 69,
+              "giant_index": 0,
+              "root": 18938115420156,
+              "point": 147371993509945,
+              "convolutions": 666,
+              "packed_coefficients": 12351,
+              "monic_reductions": 481,
+              "bound": 241,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                15974715948560,
+                107512934032531
+              ],
+              "linear_cover": 58081,
+              "baby_count": 241,
+              "giant_count": 241,
+              "finite_difference_updates": 2892,
+              "projection_count": 53,
+              "collision_exponents": [
+                "107782203202",
+                "195910354252802"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.742664017016068,
+            "dickson6": 14.010364015121013,
+            "curve": 2.8979640046600252,
+            "curve_full": 2.905017987359315
+          }
+        },
+        {
+          "N_decimal": "192387321252701",
+          "reference_factors_decimal": [
+            "13276699",
+            "14490599"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 13276699,
+              "baby_index": 222,
+              "giant_index": 9,
+              "root": 51845558747416,
+              "point": 104018086715485,
+              "convolutions": 250,
+              "packed_coefficients": 2438,
+              "monic_reductions": 26,
+              "bound": 241,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58081,
+              "stage": "curve-cover",
+              "baby_count": 240,
+              "giant_count": 15,
+              "projected_point": [
+                154724902559612,
+                49612358640661
+              ],
+              "a24": 8869371704715,
+              "earlier_curves": [],
+              "target_batches": 4,
+              "staged": true,
+              "verified_local_annihilators": [
+                2633
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 13276699,
+              "baby_index": 238,
+              "giant_index": 0,
+              "root": 152385266688099,
+              "point": 88438271658482,
+              "convolutions": 666,
+              "packed_coefficients": 12351,
+              "monic_reductions": 481,
+              "bound": 241,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                106066210316137,
+                59896078457231
+              ],
+              "linear_cover": 58081,
+              "baby_count": 241,
+              "giant_count": 241,
+              "finite_difference_updates": 2892,
+              "projection_count": 53,
+              "collision_exponents": [
+                "181725443991362",
+                "195910354252802"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 13276699,
+              "baby_index": 222,
+              "giant_index": 9,
+              "root": 51845558747416,
+              "point": 104018086715485,
+              "convolutions": 663,
+              "packed_coefficients": 12084,
+              "monic_reductions": 481,
+              "bound": 241,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58081,
+              "stage": "curve-cover",
+              "baby_count": 240,
+              "giant_count": 241,
+              "projected_point": [
+                154724902559612,
+                49612358640661
+              ],
+              "a24": 8869371704715,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                2633
+              ]
+            },
+            "linear": {
+              "bound": 241,
+              "order_limit": 58081,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "192387321252700",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 13276699,
+              "work": 482,
+              "stage": "geometric",
+              "projected_base": [
+                106066210316137,
+                59896078457231
+              ],
+              "projection_count": 53
+            }
+          },
+          "median_ms": {
+            "linear": 10.547390003921464,
+            "dickson6": 13.877527992008254,
+            "curve": 6.166570994537324,
+            "curve_full": 13.98117101052776
+          }
+        },
+        {
+          "N_decimal": "207707234693047",
+          "reference_factors_decimal": [
+            "14930821",
+            "13911307"
+          ],
+          "results": {
+            "linear": {
+              "bound": 244,
+              "order_limit": 59536,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "207707234693048",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 14930821,
+              "work": 488,
+              "stage": "geometric",
+              "projected_base": [
+                153970637536389,
+                94460546692397
+              ],
+              "projection_count": 53
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 14930821,
+              "baby_index": 51,
+              "giant_index": 0,
+              "root": 76963685267271,
+              "point": 117136776212186,
+              "convolutions": 672,
+              "packed_coefficients": 12469,
+              "monic_reductions": 487,
+              "bound": 244,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                153970637536389,
+                94460546692397
+              ],
+              "linear_cover": 59536,
+              "baby_count": 244,
+              "giant_count": 244,
+              "finite_difference_updates": 2928,
+              "projection_count": 53,
+              "collision_exponents": [
+                "17555720002",
+                "211006186706702"
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 13911307,
+              "baby_index": 104,
+              "giant_index": 0,
+              "root": 178782967085725,
+              "point": 101654312927327,
+              "convolutions": 242,
+              "packed_coefficients": 2421,
+              "monic_reductions": 1,
+              "bound": 244,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 59536,
+              "stage": "curve-cover",
+              "baby_count": 243,
+              "giant_count": 1,
+              "projected_point": [
+                59019756720421,
+                86411644672874
+              ],
+              "a24": 106719551099947,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": true,
+              "verified_local_annihilators": [
+                349
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 13911307,
+              "baby_index": 104,
+              "giant_index": 0,
+              "root": 178782967085725,
+              "point": 101654312927327,
+              "convolutions": 669,
+              "packed_coefficients": 12212,
+              "monic_reductions": 487,
+              "bound": 244,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 59536,
+              "stage": "curve-cover",
+              "baby_count": 243,
+              "giant_count": 244,
+              "projected_point": [
+                59019756720421,
+                86411644672874
+              ],
+              "a24": 106719551099947,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                349
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.62169999931939,
+            "dickson6": 13.98661799612455,
+            "curve": 4.940729995723814,
+            "curve_full": 14.278691000072286
+          }
+        },
+        {
+          "N_decimal": "146453884617151",
+          "reference_factors_decimal": [
+            "9788279",
+            "14962169"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 14962169,
+              "baby_index": 18,
+              "giant_index": 5,
+              "root": 112878019589574,
+              "point": 124544576359127,
+              "convolutions": 232,
+              "packed_coefficients": 2294,
+              "monic_reductions": 11,
+              "bound": 230,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 50,
+              "linear_cover": 52900,
+              "stage": "curve-cover",
+              "baby_count": 229,
+              "giant_count": 7,
+              "projected_point": [
+                132730350083212,
+                46041025253481
+              ],
+              "a24": 70879492606462,
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                1399
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 14962169,
+              "baby_index": 104,
+              "giant_index": 0,
+              "root": 45845698091724,
+              "point": 62148686904490,
+              "convolutions": 628,
+              "packed_coefficients": 11509,
+              "monic_reductions": 459,
+              "bound": 230,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                39768616458811,
+                120720954496636
+              ],
+              "linear_cover": 52900,
+              "baby_count": 230,
+              "giant_count": 230,
+              "finite_difference_updates": 2760,
+              "projection_count": 50,
+              "collision_exponents": [
+                "1264617200702",
+                "148019099016098"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 14962169,
+              "baby_index": 18,
+              "giant_index": 5,
+              "root": 112878019589574,
+              "point": 124544576359127,
+              "convolutions": 625,
+              "packed_coefficients": 11267,
+              "monic_reductions": 459,
+              "bound": 230,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 50,
+              "linear_cover": 52900,
+              "stage": "curve-cover",
+              "baby_count": 229,
+              "giant_count": 230,
+              "projected_point": [
+                132730350083212,
+                46041025253481
+              ],
+              "a24": 70879492606462,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1399
+              ]
+            },
+            "linear": {
+              "bound": 230,
+              "order_limit": 52900,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "146453884617152",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 14962169,
+              "work": 460,
+              "stage": "geometric",
+              "projected_base": [
+                39768616458811,
+                120720954496636
+              ],
+              "projection_count": 50
+            }
+          },
+          "median_ms": {
+            "linear": 10.038951004389673,
+            "dickson6": 13.148461992386729,
+            "curve": 5.234618991380557,
+            "curve_full": 13.23136201244779
+          }
+        },
+        {
+          "N_decimal": "84163861221641",
+          "reference_factors_decimal": [
+            "9328537",
+            "9022193"
+          ],
+          "results": {
+            "linear": {
+              "bound": 210,
+              "order_limit": 44100,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "84163861221640",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 9328537,
+              "work": 420,
+              "stage": "geometric",
+              "projected_base": [
+                82658689663656,
+                8469839675461
+              ],
+              "projection_count": 46
+            },
+            "curve": {
+              "bound": 210,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 46,
+              "linear_cover": 44100,
+              "status": "factor",
+              "factor": 9022193,
+              "stage": "curve-smooth"
+            },
+            "curve_full": {
+              "bound": 210,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 46,
+              "linear_cover": 44100,
+              "status": "factor",
+              "factor": 9022193,
+              "stage": "curve-smooth"
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 9328537,
+              "baby_index": 13,
+              "giant_index": 0,
+              "root": 51645231972910,
+              "point": 29849506399501,
+              "convolutions": 578,
+              "packed_coefficients": 10559,
+              "monic_reductions": 419,
+              "bound": 210,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                82658689663656,
+                8469839675461
+              ],
+              "linear_cover": 44100,
+              "baby_count": 210,
+              "giant_count": 210,
+              "finite_difference_updates": 2520,
+              "projection_count": 46,
+              "collision_exponents": [
+                "4656962",
+                "85754452536898"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 9.311561996582896,
+            "dickson6": 12.181239988422021,
+            "curve": 1.8803869897965342,
+            "curve_full": 1.8574789864942431
+          }
+        },
+        {
+          "N_decimal": "199272131186813",
+          "reference_factors_decimal": [
+            "16285729",
+            "12235997"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 16285729,
+              "baby_index": 92,
+              "giant_index": 1,
+              "root": 157054368869220,
+              "point": 109555053381782,
+              "convolutions": 241,
+              "packed_coefficients": 2408,
+              "monic_reductions": 4,
+              "bound": 242,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58564,
+              "stage": "curve-cover",
+              "baby_count": 241,
+              "giant_count": 3,
+              "projected_point": [
+                64010995359451,
+                129630700368517
+              ],
+              "a24": 843911973870,
+              "earlier_curves": [],
+              "target_batches": 2,
+              "staged": true,
+              "verified_local_annihilators": [
+                577
+              ]
+            },
+            "linear": {
+              "bound": 242,
+              "order_limit": 58564,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "199272131186812",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 16285729,
+              "work": 484,
+              "stage": "geometric",
+              "projected_base": [
+                147138802496436,
+                48425171443231
+              ],
+              "projection_count": 53
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 16285729,
+              "baby_index": 92,
+              "giant_index": 1,
+              "root": 157054368869220,
+              "point": 109555053381782,
+              "convolutions": 665,
+              "packed_coefficients": 12135,
+              "monic_reductions": 483,
+              "bound": 242,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 58564,
+              "stage": "curve-cover",
+              "baby_count": 241,
+              "giant_count": 242,
+              "projected_point": [
+                64010995359451,
+                129630700368517
+              ],
+              "a24": 843911973870,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                577
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 16285729,
+              "baby_index": 15,
+              "giant_index": 1,
+              "root": 70444795128969,
+              "point": 52333891908481,
+              "convolutions": 668,
+              "packed_coefficients": 12389,
+              "monic_reductions": 483,
+              "bound": 242,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                147138802496436,
+                48425171443231
+              ],
+              "linear_cover": 58564,
+              "baby_count": 242,
+              "giant_count": 242,
+              "finite_difference_updates": 2904,
+              "projection_count": 53,
+              "collision_exponents": [
+                "11088898",
+                "12854673377916302"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.968738002702594,
+            "dickson6": 14.206546009518206,
+            "curve": 5.316680995747447,
+            "curve_full": 14.398328989045694
+          }
+        },
+        {
+          "N_decimal": "137323246905329",
+          "reference_factors_decimal": [
+            "13424119",
+            "10229591"
+          ],
+          "results": {
+            "curve_full": {
+              "status": "factor",
+              "factor": 13424119,
+              "baby_index": 204,
+              "giant_index": 61,
+              "root": 82371145196927,
+              "point": 17125496897657,
+              "convolutions": 619,
+              "packed_coefficients": 11177,
+              "monic_reductions": 455,
+              "bound": 228,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 49,
+              "linear_cover": 51984,
+              "stage": "curve-cover",
+              "baby_count": 227,
+              "giant_count": 228,
+              "projected_point": [
+                23292389564804,
+                43475848465425
+              ],
+              "a24": 38391289318746,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                14341
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 13424119,
+              "baby_index": 204,
+              "giant_index": 61,
+              "root": 82371145196927,
+              "point": 17125496897657,
+              "convolutions": 301,
+              "packed_coefficients": 4372,
+              "monic_reductions": 120,
+              "bound": 228,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 49,
+              "linear_cover": 51984,
+              "stage": "curve-cover",
+              "baby_count": 227,
+              "giant_count": 63,
+              "projected_point": [
+                23292389564804,
+                43475848465425
+              ],
+              "a24": 38391289318746,
+              "earlier_curves": [],
+              "target_batches": 6,
+              "staged": true,
+              "verified_local_annihilators": [
+                14341
+              ]
+            },
+            "linear": {
+              "bound": 228,
+              "order_limit": 51984,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "137323246905328",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 13424119,
+              "work": 456,
+              "stage": "geometric",
+              "projected_base": [
+                69933862973375,
+                116729417570759
+              ],
+              "projection_count": 49
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 13424119,
+              "baby_index": 212,
+              "giant_index": 0,
+              "root": 26489990332518,
+              "point": 51507863130987,
+              "convolutions": 622,
+              "packed_coefficients": 11417,
+              "monic_reductions": 455,
+              "bound": 228,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                69933862973375,
+                116729417570759
+              ],
+              "linear_cover": 51984,
+              "baby_count": 228,
+              "giant_count": 228,
+              "finite_difference_updates": 2736,
+              "projection_count": 49,
+              "collision_exponents": [
+                "90773103810062",
+                "140462034382222"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.126949986442924,
+            "dickson6": 13.235064019681886,
+            "curve": 8.605264010839164,
+            "curve_full": 13.327463006135076
+          }
+        },
+        {
+          "N_decimal": "203760751150433",
+          "reference_factors_decimal": [
+            "15916139",
+            "12802147"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 12802147,
+              "baby_index": 87,
+              "giant_index": 4,
+              "root": 129939293533406,
+              "point": 151898509030978,
+              "convolutions": 245,
+              "packed_coefficients": 2430,
+              "monic_reductions": 11,
+              "bound": 243,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 59049,
+              "stage": "curve-cover",
+              "baby_count": 242,
+              "giant_count": 7,
+              "projected_point": [
+                83786433306422,
+                180567938453223
+              ],
+              "a24": 174170661600445,
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                1303
+              ]
+            },
+            "linear": {
+              "bound": 243,
+              "order_limit": 59049,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "203760751150432",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 486,
+              "certified_through": 59049,
+              "stage": "geometric",
+              "projected_base": [
+                151370522213019,
+                105920071240807
+              ],
+              "projection_count": 53
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 15916139,
+              "baby_index": 86,
+              "giant_index": 81,
+              "root": 156414612407111,
+              "point": 97254960389671,
+              "convolutions": 670,
+              "packed_coefficients": 12429,
+              "monic_reductions": 485,
+              "bound": 243,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                151370522213019,
+                105920071240807
+              ],
+              "linear_cover": 59049,
+              "baby_count": 243,
+              "giant_count": 243,
+              "finite_difference_updates": 2916,
+              "projection_count": 53,
+              "collision_exponents": [
+                "404239096802",
+                "62592276797942682912620002"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 12802147,
+              "baby_index": 87,
+              "giant_index": 4,
+              "root": 129939293533406,
+              "point": 151898509030978,
+              "convolutions": 667,
+              "packed_coefficients": 12173,
+              "monic_reductions": 485,
+              "bound": 243,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 53,
+              "linear_cover": 59049,
+              "stage": "curve-cover",
+              "baby_count": 242,
+              "giant_count": 243,
+              "projected_point": [
+                83786433306422,
+                180567938453223
+              ],
+              "a24": 174170661600445,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1303
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 10.81802198314108,
+            "dickson6": 13.911261019529775,
+            "curve": 5.539892008528113,
+            "curve_full": 14.140546991256997
+          }
+        },
+        {
+          "N_decimal": "117754763458799",
+          "reference_factors_decimal": [
+            "9844097",
+            "11961967"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 11961967,
+              "baby_index": 18,
+              "giant_index": 3,
+              "root": 99428600269904,
+              "point": 78793369857214,
+              "convolutions": 224,
+              "packed_coefficients": 2195,
+              "monic_reductions": 11,
+              "bound": 222,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 49284,
+              "stage": "curve-cover",
+              "baby_count": 221,
+              "giant_count": 7,
+              "projected_point": [
+                72832387444910,
+                69991855311442
+              ],
+              "a24": 10441509417702,
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                907
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 11961967,
+              "baby_index": 18,
+              "giant_index": 3,
+              "root": 99428600269904,
+              "point": 78793369857214,
+              "convolutions": 599,
+              "packed_coefficients": 10740,
+              "monic_reductions": 443,
+              "bound": 222,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 47,
+              "linear_cover": 49284,
+              "stage": "curve-cover",
+              "baby_count": 221,
+              "giant_count": 222,
+              "projected_point": [
+                72832387444910,
+                69991855311442
+              ],
+              "a24": 10441509417702,
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                907
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 9844097,
+              "baby_index": 62,
+              "giant_index": 20,
+              "root": 66717056171921,
+              "point": 70487177973272,
+              "convolutions": 602,
+              "packed_coefficients": 10975,
+              "monic_reductions": 443,
+              "bound": 222,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                63723874652536,
+                104904678939906
+              ],
+              "linear_cover": 49284,
+              "baby_count": 222,
+              "giant_count": 222,
+              "finite_difference_updates": 2664,
+              "projection_count": 47,
+              "collision_exponents": [
+                "56711612162",
+                "10266762016987294897762"
+              ]
+            },
+            "linear": {
+              "bound": 222,
+              "order_limit": 49284,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "117754763458800",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 444,
+              "certified_through": 49284,
+              "stage": "geometric",
+              "projected_base": [
+                63723874652536,
+                104904678939906
+              ],
+              "projection_count": 47
+            }
+          },
+          "median_ms": {
+            "linear": 9.90101500065066,
+            "dickson6": 12.544968980364501,
+            "curve": 4.940101993270218,
+            "curve_full": 12.67368599656038
+          }
+        }
+      ],
+      "hits": {
+        "linear": 14,
+        "dickson6": 16,
+        "curve": 14,
+        "curve_full": 14
+      },
+      "total_median_ms": {
+        "linear": 155.51751703605987,
+        "dickson6": 197.83181601087563,
+        "curve": 99.36236194334924,
+        "curve_full": 171.62701199413277
+      },
+      "nonlinear_extra_hits": 2
+    },
+    {
+      "nominal_bits": 64,
+      "samples": [
+        {
+          "N_decimal": "7813349542023166447",
+          "reference_factors_decimal": [
+            "3184810999",
+            "2453316553"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 2453316553,
+              "baby_index": 297,
+              "giant_index": 8,
+              "root": "5520650442961948875",
+              "point": "7705211996660928803",
+              "convolutions": 1418,
+              "packed_coefficients": 17846,
+              "monic_reductions": 26,
+              "bound": 1409,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 223,
+              "linear_cover": 1985281,
+              "stage": "curve-cover",
+              "baby_count": 1408,
+              "giant_count": 15,
+              "projected_point": [
+                "4468007870368661891",
+                "4346947060940743476"
+              ],
+              "a24": "2179381143511159660",
+              "earlier_curves": [],
+              "target_batches": 4,
+              "staged": true,
+              "verified_local_annihilators": [
+                12979
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 3184810999,
+              "baby_index": 1089,
+              "giant_index": 88,
+              "root": "7286095928386891595",
+              "point": "4142891742966556456",
+              "convolutions": 4006,
+              "packed_coefficients": 116467,
+              "monic_reductions": 2817,
+              "bound": 1409,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "7757058366831040562",
+                "5329643705115489823"
+              ],
+              "linear_cover": 1985281,
+              "baby_count": 1409,
+              "giant_count": 1409,
+              "finite_difference_updates": 16908,
+              "projection_count": 223,
+              "collision_exponents": [
+                "1667881076511948802",
+                "3888713952824548182741442080002"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 2453316553,
+              "baby_index": 297,
+              "giant_index": 8,
+              "root": "5520650442961948875",
+              "point": "7705211996660928803",
+              "convolutions": 4003,
+              "packed_coefficients": 114921,
+              "monic_reductions": 2817,
+              "bound": 1409,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 223,
+              "linear_cover": 1985281,
+              "stage": "curve-cover",
+              "baby_count": 1408,
+              "giant_count": 1409,
+              "projected_point": [
+                "4468007870368661891",
+                "4346947060940743476"
+              ],
+              "a24": "2179381143511159660",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                12979
+              ]
+            },
+            "linear": {
+              "bound": 1409,
+              "order_limit": 1985281,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "7813349542023166448",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 3184810999,
+              "work": 2818,
+              "stage": "geometric",
+              "projected_base": [
+                "7757058366831040562",
+                "5329643705115489823"
+              ],
+              "projection_count": 223
+            }
+          },
+          "median_ms": {
+            "linear": 81.0394829895813,
+            "dickson6": 113.84303201339208,
+            "curve": 41.72623800695874,
+            "curve_full": 116.02750499150716
+          }
+        },
+        {
+          "N_decimal": "15839348327134459681",
+          "reference_factors_decimal": [
+            "4021750259",
+            "3938421659"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 4021750259,
+              "baby_index": 328,
+              "giant_index": 443,
+              "root": "2814990902597971541",
+              "point": "7577344436787190487",
+              "convolutions": 2465,
+              "packed_coefficients": 87036,
+              "monic_reductions": 1013,
+              "bound": 1585,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 250,
+              "linear_cover": 2512225,
+              "stage": "curve-cover",
+              "baby_count": 1584,
+              "giant_count": 511,
+              "projected_point": [
+                "924768831632922466",
+                "5863234147683433424"
+              ],
+              "a24": "113385410884838685",
+              "earlier_curves": [],
+              "target_batches": 9,
+              "staged": true,
+              "verified_local_annihilators": [
+                704069
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 4021750259,
+              "baby_index": 328,
+              "giant_index": 443,
+              "root": "2814990902597971541",
+              "point": "7577344436787190487",
+              "convolutions": 4521,
+              "packed_coefficients": 134758,
+              "monic_reductions": 3169,
+              "bound": 1585,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 250,
+              "linear_cover": 2512225,
+              "stage": "curve-cover",
+              "baby_count": 1584,
+              "giant_count": 1585,
+              "projected_point": [
+                "924768831632922466",
+                "5863234147683433424"
+              ],
+              "a24": "113385410884838685",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                704069
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 3938421659,
+              "baby_index": 1382,
+              "giant_index": 113,
+              "root": "13102354591417430452",
+              "point": "10766276645459518229",
+              "convolutions": 4524,
+              "packed_coefficients": 136369,
+              "monic_reductions": 3169,
+              "bound": 1585,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "11207221733134910292",
+                "13581720067592524929"
+              ],
+              "linear_cover": 2512225,
+              "baby_count": 1585,
+              "giant_count": 1585,
+              "finite_difference_updates": 19020,
+              "projection_count": 250,
+              "collision_exponents": [
+                "6967017379455115682",
+                "34802040434265296700590013624898"
+              ]
+            },
+            "linear": {
+              "bound": 1585,
+              "order_limit": 2512225,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "15839348327134459680",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 4021750259,
+              "work": 3170,
+              "stage": "geometric",
+              "projected_base": [
+                "11207221733134910292",
+                "13581720067592524929"
+              ],
+              "projection_count": 250
+            }
+          },
+          "median_ms": {
+            "linear": 91.4650009945035,
+            "dickson6": 132.4767000041902,
+            "curve": 102.6848159963265,
+            "curve_full": 134.04776400420815
+          }
+        },
+        {
+          "N_decimal": "12417210395492075543",
+          "reference_factors_decimal": [
+            "3318820493",
+            "3741452851"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1522,
+              "order_limit": 2316484,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "12417210395492075544",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 3318820493,
+              "work": 3044,
+              "stage": "geometric",
+              "projected_base": [
+                "9199271371060339335",
+                "8641271353860705993"
+              ],
+              "projection_count": 240
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 3318820493,
+              "baby_index": 842,
+              "giant_index": 832,
+              "root": "4780608505928031648",
+              "point": "10161179027408118891",
+              "convolutions": 3339,
+              "packed_coefficients": 119984,
+              "monic_reductions": 2036,
+              "bound": 1522,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 240,
+              "linear_cover": 2316484,
+              "stage": "curve-cover",
+              "baby_count": 1521,
+              "giant_count": 1023,
+              "projected_point": [
+                "6115682024232526116",
+                "5799923119899950006"
+              ],
+              "a24": "3301060088479469261",
+              "earlier_curves": [],
+              "target_batches": 10,
+              "staged": true,
+              "verified_local_annihilators": [
+                1268669
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 3318820493,
+              "baby_index": 842,
+              "giant_index": 832,
+              "root": "4780608505928031648",
+              "point": "10161179027408118891",
+              "convolutions": 4335,
+              "packed_coefficients": 124110,
+              "monic_reductions": 3043,
+              "bound": 1522,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 240,
+              "linear_cover": 2316484,
+              "stage": "curve-cover",
+              "baby_count": 1521,
+              "giant_count": 1522,
+              "projected_point": [
+                "6115682024232526116",
+                "5799923119899950006"
+              ],
+              "a24": "3301060088479469261",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1268669
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 3318820493,
+              "baby_index": 649,
+              "giant_index": 34,
+              "root": "1676105833983072502",
+              "point": "9087247711546476516",
+              "convolutions": 4338,
+              "packed_coefficients": 125646,
+              "monic_reductions": 3043,
+              "bound": 1522,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "9199271371060339335",
+                "8641271353860705993"
+              ],
+              "linear_cover": 2316484,
+              "baby_count": 1522,
+              "giant_count": 1522,
+              "finite_difference_updates": 18264,
+              "projection_count": 240,
+              "collision_exponents": [
+                "74724323899680002",
+                "22850524851617662070365776098"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 84.08725500339642,
+            "dickson6": 121.79032698622905,
+            "curve": 128.00795200746506,
+            "curve_full": 123.65185699309222
+          }
+        },
+        {
+          "N_decimal": "10853015976985907521",
+          "reference_factors_decimal": [
+            "4085037941",
+            "2656772381"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 2656772381,
+              "baby_index": 1198,
+              "giant_index": 1,
+              "root": "1337301105824115089",
+              "point": "8720920130042240272",
+              "convolutions": 4228,
+              "packed_coefficients": 122493,
+              "monic_reductions": 2975,
+              "bound": 1488,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "7202291385118772475",
+                "10824614802022726723"
+              ],
+              "linear_cover": 2214144,
+              "baby_count": 1488,
+              "giant_count": 1488,
+              "finite_difference_updates": 17856,
+              "projection_count": 236,
+              "collision_exponents": [
+                "2956235941015156802",
+                "694699949053072917502"
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 4085037941,
+              "baby_index": 1168,
+              "giant_index": 3,
+              "root": "9759477375510517385",
+              "point": "7296804001002026565",
+              "convolutions": 1490,
+              "packed_coefficients": 18853,
+              "monic_reductions": 11,
+              "bound": 1488,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 236,
+              "linear_cover": 2214144,
+              "stage": "curve-cover",
+              "baby_count": 1487,
+              "giant_count": 7,
+              "projected_point": [
+                "7873616263983774813",
+                "9334289061883917738"
+              ],
+              "a24": "3795698642321623667",
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                7121
+              ]
+            },
+            "linear": {
+              "bound": 1488,
+              "order_limit": 2214144,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "10853015976985907520",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2656772381,
+              "work": 2976,
+              "stage": "geometric",
+              "projected_base": [
+                "7202291385118772475",
+                "10824614802022726723"
+              ],
+              "projection_count": 236
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 4085037941,
+              "baby_index": 1168,
+              "giant_index": 3,
+              "root": "9759477375510517385",
+              "point": "7296804001002026565",
+              "convolutions": 4225,
+              "packed_coefficients": 120990,
+              "monic_reductions": 2975,
+              "bound": 1488,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 236,
+              "linear_cover": 2214144,
+              "stage": "curve-cover",
+              "baby_count": 1487,
+              "giant_count": 1488,
+              "projected_point": [
+                "7873616263983774813",
+                "9334289061883917738"
+              ],
+              "a24": "3795698642321623667",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                7121
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 84.60142102558166,
+            "dickson6": 122.96790900290944,
+            "curve": 40.60948602273129,
+            "curve_full": 126.16129798698239
+          }
+        },
+        {
+          "N_decimal": "6240780400851314839",
+          "reference_factors_decimal": [
+            "2362727821",
+            "2641345459"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1357,
+              "order_limit": 1841449,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "6240780400851314840",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2641345459,
+              "work": 2714,
+              "stage": "geometric",
+              "projected_base": [
+                "1497170303903313340",
+                "5009524233347782062"
+              ],
+              "projection_count": 217
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 2362727821,
+              "baby_index": 1190,
+              "giant_index": 3,
+              "root": "2755428130884405196",
+              "point": "3527926939512412370",
+              "convolutions": 3853,
+              "packed_coefficients": 110413,
+              "monic_reductions": 2713,
+              "bound": 1357,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 217,
+              "linear_cover": 1841449,
+              "stage": "curve-cover",
+              "baby_count": 1356,
+              "giant_count": 1357,
+              "projected_point": [
+                "4075628596448781252",
+                "6024603155164341392"
+              ],
+              "a24": "5157071364027244048",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                6619
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 2362727821,
+              "baby_index": 1190,
+              "giant_index": 3,
+              "root": "2755428130884405196",
+              "point": "3527926939512412370",
+              "convolutions": 1359,
+              "packed_coefficients": 17208,
+              "monic_reductions": 11,
+              "bound": 1357,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 217,
+              "linear_cover": 1841449,
+              "stage": "curve-cover",
+              "baby_count": 1356,
+              "giant_count": 7,
+              "projected_point": [
+                "4075628596448781252",
+                "6024603155164341392"
+              ],
+              "a24": "5157071364027244048",
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                6619
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 2641345459,
+              "baby_index": 578,
+              "giant_index": 74,
+              "root": "933641376010695075",
+              "point": "2450877339828665471",
+              "convolutions": 3856,
+              "packed_coefficients": 111785,
+              "monic_reductions": 2713,
+              "bound": 1357,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "1497170303903313340",
+                "5009524233347782062"
+              ],
+              "linear_cover": 1841449,
+              "baby_count": 1357,
+              "giant_count": 1357,
+              "finite_difference_updates": 16284,
+              "projection_count": 217,
+              "collision_exponents": [
+                "37287153512997122",
+                "1111339283612366724516871402498"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 77.69398100208491,
+            "dickson6": 112.9793830041308,
+            "curve": 37.10013799718581,
+            "curve_full": 114.97786999098025
+          }
+        },
+        {
+          "N_decimal": "12551896836177587821",
+          "reference_factors_decimal": [
+            "3009082789",
+            "4171336489"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1525,
+              "order_limit": 2325625,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "12551896836177587820",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 4171336489,
+              "work": 3050,
+              "stage": "geometric",
+              "projected_base": [
+                "9883070765975328885",
+                "1518497976169332256"
+              ],
+              "projection_count": 241
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 4171336489,
+              "baby_index": 485,
+              "giant_index": 36,
+              "root": "4902922921634671765",
+              "point": "4177435307147155398",
+              "convolutions": 1604,
+              "packed_coefficients": 32079,
+              "monic_reductions": 120,
+              "bound": 1525,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 241,
+              "linear_cover": 2325625,
+              "stage": "curve-cover",
+              "baby_count": 1524,
+              "giant_count": 63,
+              "projected_point": [
+                "6023749979000954222",
+                "10328367111854879557"
+              ],
+              "a24": "8302465692308367480",
+              "earlier_curves": [],
+              "target_batches": 6,
+              "staged": true,
+              "verified_local_annihilators": [
+                56911
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 4171336489,
+              "baby_index": 39,
+              "giant_index": 0,
+              "root": "12254401544054502577",
+              "point": "1607900599496692475",
+              "convolutions": 4344,
+              "packed_coefficients": 125827,
+              "monic_reductions": 3049,
+              "bound": 1525,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "9883070765975328885",
+                "1518497976169332256"
+              ],
+              "linear_cover": 2325625,
+              "baby_count": 1525,
+              "giant_count": 1525,
+              "finite_difference_updates": 18300,
+              "projection_count": 241,
+              "collision_exponents": [
+                "3504876802",
+                "12578183945559602498"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 4171336489,
+              "baby_index": 485,
+              "giant_index": 36,
+              "root": "4902922921634671765",
+              "point": "4177435307147155398",
+              "convolutions": 4341,
+              "packed_coefficients": 124285,
+              "monic_reductions": 3049,
+              "bound": 1525,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 241,
+              "linear_cover": 2325625,
+              "stage": "curve-cover",
+              "baby_count": 1524,
+              "giant_count": 1525,
+              "projected_point": [
+                "6023749979000954222",
+                "10328367111854879557"
+              ],
+              "a24": "8302465692308367480",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                56911
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 92.94003300601617,
+            "dickson6": 126.020290015731,
+            "curve": 62.74572800612077,
+            "curve_full": 128.98271597805433
+          }
+        },
+        {
+          "N_decimal": "6015700395832288409",
+          "reference_factors_decimal": [
+            "2640102277",
+            "2278586117"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "no-collision",
+              "factor": null,
+              "convolutions": 3838,
+              "packed_coefficients": 111423,
+              "monic_reductions": 2697,
+              "bound": 1349,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "5656315290046953114",
+                "5943080506382777427"
+              ],
+              "linear_cover": 1819801,
+              "baby_count": 1349,
+              "giant_count": 1349,
+              "finite_difference_updates": 16188,
+              "projection_count": 217
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 2640102277,
+              "baby_index": 1086,
+              "giant_index": 1037,
+              "root": "1101618113576181817",
+              "point": "1739391007882293208",
+              "convolutions": 3835,
+              "packed_coefficients": 110060,
+              "monic_reductions": 2697,
+              "bound": 1349,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 217,
+              "linear_cover": 1819801,
+              "stage": "curve-cover",
+              "baby_count": 1348,
+              "giant_count": 1349,
+              "projected_point": [
+                "853219610662861882",
+                "1336989542105953528"
+              ],
+              "a24": "5611803858695923301",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                1401349
+              ]
+            },
+            "linear": {
+              "bound": 1349,
+              "order_limit": 1819801,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "6015700395832288408",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 2698,
+              "certified_through": 1819801,
+              "stage": "geometric",
+              "projected_base": [
+                "5656315290046953114",
+                "5943080506382777427"
+              ],
+              "projection_count": 217
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 2640102277,
+              "baby_index": 1086,
+              "giant_index": 1037,
+              "root": "1101618113576181817",
+              "point": "1739391007882293208",
+              "convolutions": 3763,
+              "packed_coefficients": 138114,
+              "monic_reductions": 2687,
+              "bound": 1349,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 217,
+              "linear_cover": 1819801,
+              "stage": "curve-cover",
+              "baby_count": 1348,
+              "giant_count": 1349,
+              "projected_point": [
+                "853219610662861882",
+                "1336989542105953528"
+              ],
+              "a24": "5611803858695923301",
+              "earlier_curves": [],
+              "target_batches": 11,
+              "staged": true,
+              "verified_local_annihilators": [
+                1401349
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 78.16170301521197,
+            "dickson6": 110.82102998625487,
+            "curve": 144.89742199657485,
+            "curve_full": 113.83248399943113
+          }
+        },
+        {
+          "N_decimal": "6327961582282610561",
+          "reference_factors_decimal": [
+            "2839815919",
+            "2228299919"
+          ],
+          "results": {
+            "curve": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 1361,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 2228299919,
+              "baby_index": 90,
+              "giant_index": 5,
+              "root": "1799387492977756347",
+              "point": "5710649762841794598",
+              "convolutions": 3880,
+              "packed_coefficients": 112567,
+              "monic_reductions": 2721,
+              "bound": 1361,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "38749841597326239",
+                "3523849555849385164"
+              ],
+              "linear_cover": 1852321,
+              "baby_count": 1361,
+              "giant_count": 1361,
+              "finite_difference_updates": 16332,
+              "projection_count": 218,
+              "collision_exponents": [
+                "531047412898",
+                "296521517781961926864802"
+              ]
+            },
+            "linear": {
+              "bound": 1361,
+              "order_limit": 1852321,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "6327961582282610560",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2228299919,
+              "work": 2722,
+              "stage": "geometric",
+              "projected_base": [
+                "38749841597326239",
+                "3523849555849385164"
+              ],
+              "projection_count": 218
+            },
+            "curve_full": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 1361,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 75.98519101156853,
+            "dickson6": 109.31680400972255,
+            "curve": 140.97692200448364,
+            "curve_full": 111.21660700882785
+          }
+        },
+        {
+          "N_decimal": "7546104058859756213",
+          "reference_factors_decimal": [
+            "2424273419",
+            "3112728127"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1401,
+              "order_limit": 1962801,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "7546104058859756212",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2424273419,
+              "work": 2802,
+              "stage": "geometric",
+              "projected_base": [
+                "6552034331734761632",
+                "3086101790362385648"
+              ],
+              "projection_count": 222
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 2424273419,
+              "baby_index": 998,
+              "giant_index": 5,
+              "root": "5663822789342988326",
+              "point": "114252210450638602",
+              "convolutions": 3986,
+              "packed_coefficients": 115167,
+              "monic_reductions": 2801,
+              "bound": 1401,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "6552034331734761632",
+                "3086101790362385648"
+              ],
+              "linear_cover": 1962801,
+              "baby_count": 1401,
+              "giant_count": 1401,
+              "finite_difference_updates": 16812,
+              "projection_count": 222,
+              "collision_exponents": [
+                "988053888104964002",
+                "352806255718115528991202"
+              ]
+            },
+            "curve": {
+              "bound": 1401,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 222,
+              "linear_cover": 1962801,
+              "status": "factor",
+              "factor": 2424273419,
+              "stage": "curve-smooth"
+            },
+            "curve_full": {
+              "bound": 1401,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 222,
+              "linear_cover": 1962801,
+              "status": "factor",
+              "factor": 2424273419,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 79.59755399497226,
+            "dickson6": 114.69061399111524,
+            "curve": 6.753930007107556,
+            "curve_full": 6.7836820089723915
+          }
+        },
+        {
+          "N_decimal": "14772181702550515051",
+          "reference_factors_decimal": [
+            "3750558659",
+            "3938661689"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1567,
+              "order_limit": 2455489,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "14772181702550515052",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 3134,
+              "certified_through": 2455489,
+              "stage": "geometric",
+              "projected_base": [
+                "1373748441045103869",
+                "2965447127865913499"
+              ],
+              "projection_count": 247
+            },
+            "curve": {
+              "bound": 1567,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 247,
+              "linear_cover": 2455489,
+              "status": "factor",
+              "factor": 3938661689,
+              "stage": "curve-smooth"
+            },
+            "curve_full": {
+              "bound": 1567,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 247,
+              "linear_cover": 2455489,
+              "status": "factor",
+              "factor": 3938661689,
+              "stage": "curve-smooth"
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 3750558659,
+              "baby_index": 27,
+              "giant_index": 206,
+              "root": "1990478174949697673",
+              "point": "14485511953249256360",
+              "convolutions": 4462,
+              "packed_coefficients": 134975,
+              "monic_reductions": 3133,
+              "bound": 1567,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "1373748441045103869",
+                "2965447127865913499"
+              ],
+              "linear_cover": 2455489,
+              "baby_count": 1567,
+              "giant_count": 1567,
+              "finite_difference_updates": 18804,
+              "projection_count": 247,
+              "collision_exponents": [
+                "384238402",
+                "1164758937339288345694133820339202"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 90.83643497433513,
+            "dickson6": 129.7214889782481,
+            "curve": 4.912304983008653,
+            "curve_full": 4.917124024359509
+          }
+        },
+        {
+          "N_decimal": "10086957906495591769",
+          "reference_factors_decimal": [
+            "4014278231",
+            "2512769999"
+          ],
+          "results": {
+            "curve_full": {
+              "bound": 1470,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 232,
+              "linear_cover": 2160900,
+              "status": "factor",
+              "factor": 2512769999,
+              "stage": "curve-smooth"
+            },
+            "linear": {
+              "bound": 1470,
+              "order_limit": 2160900,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "10086957906495591768",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2512769999,
+              "stage": "smooth",
+              "projection_count": 75
+            },
+            "dickson6": {
+              "bound": 1470,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "status": "factor",
+              "factor": 2512769999,
+              "stage": "projection"
+            },
+            "curve": {
+              "bound": 1470,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 232,
+              "linear_cover": 2160900,
+              "status": "factor",
+              "factor": 2512769999,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 2.635990997077897,
+            "dickson6": 2.6183220033999532,
+            "curve": 6.701828999212012,
+            "curve_full": 6.716984004015103
+          }
+        },
+        {
+          "N_decimal": "14791714004009719649",
+          "reference_factors_decimal": [
+            "3937424021",
+            "3756698269"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 3756698269,
+              "baby_index": 115,
+              "giant_index": 27,
+              "root": "11689154774848882100",
+              "point": "10141850970869221788",
+              "convolutions": 4462,
+              "packed_coefficients": 134975,
+              "monic_reductions": 3133,
+              "bound": 1567,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "5278828395077775976",
+                "5776756824809280844"
+              ],
+              "linear_cover": 2455489,
+              "baby_count": 1567,
+              "giant_count": 1567,
+              "finite_difference_updates": 18804,
+              "projection_count": 247,
+              "collision_exponents": [
+                "2312011480898",
+                "7134477382550066551696687502"
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 3756698269,
+              "baby_index": 549,
+              "giant_index": 12,
+              "root": "10195990014552725717",
+              "point": "10122134596348200639",
+              "convolutions": 1576,
+              "packed_coefficients": 20290,
+              "monic_reductions": 26,
+              "bound": 1567,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 247,
+              "linear_cover": 2455489,
+              "stage": "curve-cover",
+              "baby_count": 1566,
+              "giant_count": 15,
+              "projected_point": [
+                "13409707441484782193",
+                "5750511720323217766"
+              ],
+              "a24": "12431652272973717380",
+              "earlier_curves": [],
+              "target_batches": 4,
+              "staged": true,
+              "verified_local_annihilators": [
+                20921
+              ]
+            },
+            "linear": {
+              "bound": 1567,
+              "order_limit": 2455489,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "14791714004009719648",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 3756698269,
+              "work": 3134,
+              "stage": "geometric",
+              "projected_base": [
+                "5278828395077775976",
+                "5776756824809280844"
+              ],
+              "projection_count": 247
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 3756698269,
+              "baby_index": 549,
+              "giant_index": 12,
+              "root": "10195990014552725717",
+              "point": "10122134596348200639",
+              "convolutions": 4459,
+              "packed_coefficients": 133394,
+              "monic_reductions": 3133,
+              "bound": 1567,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 247,
+              "linear_cover": 2455489,
+              "stage": "curve-cover",
+              "baby_count": 1566,
+              "giant_count": 1567,
+              "projected_point": [
+                "13409707441484782193",
+                "5750511720323217766"
+              ],
+              "a24": "12431652272973717380",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                20921
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 87.59269100846723,
+            "dickson6": 126.99582101777196,
+            "curve": 45.51201398135163,
+            "curve_full": 131.16390502545983
+          }
+        },
+        {
+          "N_decimal": "10457652412285181353",
+          "reference_factors_decimal": [
+            "2755464161",
+            "3795241673"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "no-collision",
+              "factor": null,
+              "convolutions": 4208,
+              "packed_coefficients": 122013,
+              "monic_reductions": 2957,
+              "bound": 1479,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "2417213951593767272",
+                "6046377699860074211"
+              ],
+              "linear_cover": 2187441,
+              "baby_count": 1479,
+              "giant_count": 1479,
+              "finite_difference_updates": 17748,
+              "projection_count": 233
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 2755464161,
+              "baby_index": 673,
+              "giant_index": 4,
+              "root": "1787191964789668819",
+              "point": "4452961576288129938",
+              "convolutions": 4205,
+              "packed_coefficients": 120520,
+              "monic_reductions": 2957,
+              "bound": 1479,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 233,
+              "linear_cover": 2187441,
+              "stage": "curve-cover",
+              "baby_count": 1478,
+              "giant_count": 1479,
+              "projected_point": [
+                "3997795016547227967",
+                "9643010176761917771"
+              ],
+              "a24": "2617202177504244370",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                8069
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 2755464161,
+              "baby_index": 673,
+              "giant_index": 4,
+              "root": "1787191964789668819",
+              "point": "4452961576288129938",
+              "convolutions": 1481,
+              "packed_coefficients": 18756,
+              "monic_reductions": 11,
+              "bound": 1479,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 233,
+              "linear_cover": 2187441,
+              "stage": "curve-cover",
+              "baby_count": 1478,
+              "giant_count": 7,
+              "projected_point": [
+                "3997795016547227967",
+                "9643010176761917771"
+              ],
+              "a24": "2617202177504244370",
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                8069
+              ]
+            },
+            "linear": {
+              "bound": 1479,
+              "order_limit": 2187441,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "10457652412285181352",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 2958,
+              "certified_through": 2187441,
+              "stage": "geometric",
+              "projected_base": [
+                "2417213951593767272",
+                "6046377699860074211"
+              ],
+              "projection_count": 233
+            }
+          },
+          "median_ms": {
+            "linear": 84.82784300576895,
+            "dickson6": 121.68786898837425,
+            "curve": 39.90011601126753,
+            "curve_full": 124.11657499615103
+          }
+        },
+        {
+          "N_decimal": "6846022857951094003",
+          "reference_factors_decimal": [
+            "2516812211",
+            "2720116673"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1378,
+              "order_limit": 1898884,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "6846022857951094004",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2720116673,
+              "work": 2756,
+              "stage": "geometric",
+              "projected_base": [
+                "3125916962496478513",
+                "5861340471586457951"
+              ],
+              "projection_count": 220
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 2720116673,
+              "baby_index": 232,
+              "giant_index": 0,
+              "root": "6274297975966056218",
+              "point": "5251760445106299875",
+              "convolutions": 3920,
+              "packed_coefficients": 113562,
+              "monic_reductions": 2755,
+              "bound": 1378,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "3125916962496478513",
+                "5861340471586457951"
+              ],
+              "linear_cover": 1898884,
+              "baby_count": 1378,
+              "giant_count": 1378,
+              "finite_difference_updates": 16536,
+              "projection_count": 220,
+              "collision_exponents": [
+                "155911983006782",
+                "6846899183163688322"
+              ]
+            },
+            "curve_full": {
+              "bound": 1378,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 220,
+              "linear_cover": 1898884,
+              "status": "factor",
+              "factor": 2720116673,
+              "stage": "curve-smooth"
+            },
+            "curve": {
+              "bound": 1378,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 220,
+              "linear_cover": 1898884,
+              "status": "factor",
+              "factor": 2720116673,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 77.44555699173361,
+            "dickson6": 110.52860599011183,
+            "curve": 14.702134008985013,
+            "curve_full": 14.70597498700954
+          }
+        },
+        {
+          "N_decimal": "8296218738825958327",
+          "reference_factors_decimal": [
+            "2639466619",
+            "3143142133"
+          ],
+          "results": {
+            "curve_full": {
+              "status": "factor",
+              "factor": 2639466619,
+              "baby_index": 778,
+              "giant_index": 7,
+              "root": "1350813612088841205",
+              "point": "160738008358259553",
+              "convolutions": 4039,
+              "packed_coefficients": 115642,
+              "monic_reductions": 2845,
+              "bound": 1423,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 224,
+              "linear_cover": 2024929,
+              "stage": "curve-cover",
+              "baby_count": 1422,
+              "giant_count": 1423,
+              "projected_point": [
+                "3193643469214898734",
+                "3777476572433526990"
+              ],
+              "a24": "3422960838096792532",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                12163
+              ]
+            },
+            "linear": {
+              "bound": 1423,
+              "order_limit": 2024929,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "8296218738825958328",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 2846,
+              "certified_through": 2024929,
+              "stage": "geometric",
+              "projected_base": [
+                "8270798643911185475",
+                "5916400557979759709"
+              ],
+              "projection_count": 224
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 3143142133,
+              "baby_index": 633,
+              "giant_index": 926,
+              "root": "1678096803112454894",
+              "point": "1569439033348208558",
+              "convolutions": 4042,
+              "packed_coefficients": 117079,
+              "monic_reductions": 2845,
+              "bound": 1423,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "8270798643911185475",
+                "5916400557979759709"
+              ],
+              "linear_cover": 2024929,
+              "baby_count": 1423,
+              "giant_count": 1423,
+              "finite_difference_updates": 17076,
+              "projection_count": 224,
+              "collision_exponents": [
+                "64330326685840642",
+                "5268752588943857410427447582400435202"
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 2639466619,
+              "baby_index": 778,
+              "giant_index": 7,
+              "root": "1350813612088841205",
+              "point": "160738008358259553",
+              "convolutions": 1432,
+              "packed_coefficients": 18098,
+              "monic_reductions": 26,
+              "bound": 1423,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 224,
+              "linear_cover": 2024929,
+              "stage": "curve-cover",
+              "baby_count": 1422,
+              "giant_count": 15,
+              "projected_point": [
+                "3193643469214898734",
+                "3777476572433526990"
+              ],
+              "a24": "3422960838096792532",
+              "earlier_curves": [],
+              "target_batches": 4,
+              "staged": true,
+              "verified_local_annihilators": [
+                12163
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 87.84607201232575,
+            "dickson6": 115.40340600186028,
+            "curve": 41.629927000030875,
+            "curve_full": 117.26919701322913
+          }
+        },
+        {
+          "N_decimal": "11991557886622097431",
+          "reference_factors_decimal": [
+            "4015337441",
+            "2986438391"
+          ],
+          "results": {
+            "linear": {
+              "bound": 1513,
+              "order_limit": 2289169,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "11991557886622097432",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 2986438391,
+              "work": 3026,
+              "stage": "geometric",
+              "projected_base": [
+                "6672171264846861811",
+                "5296067711143092480"
+              ],
+              "projection_count": 240
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 2986438391,
+              "baby_index": 547,
+              "giant_index": 60,
+              "root": "369506311883009922",
+              "point": "2788336395748249081",
+              "convolutions": 4306,
+              "packed_coefficients": 124751,
+              "monic_reductions": 3025,
+              "bound": 1513,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "6672171264846861811",
+                "5296067711143092480"
+              ],
+              "linear_cover": 2289169,
+              "baby_count": 1513,
+              "giant_count": 1513,
+              "finite_difference_updates": 18156,
+              "projection_count": 240,
+              "collision_exponents": [
+                "26786455464525122",
+                "618034299190821737206051970882"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 2986438391,
+              "baby_index": 1041,
+              "giant_index": 2,
+              "root": "6660930322520900730",
+              "point": "1787897548074801320",
+              "convolutions": 4303,
+              "packed_coefficients": 123218,
+              "monic_reductions": 3025,
+              "bound": 1513,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 240,
+              "linear_cover": 2289169,
+              "stage": "curve-cover",
+              "baby_count": 1512,
+              "giant_count": 1513,
+              "projected_point": [
+                "11618850789871787615",
+                "720405728810030262"
+              ],
+              "a24": "2265722441094493490",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                5581
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 2986438391,
+              "baby_index": 1041,
+              "giant_index": 2,
+              "root": "6660930322520900730",
+              "point": "1787897548074801320",
+              "convolutions": 1512,
+              "packed_coefficients": 19154,
+              "monic_reductions": 4,
+              "bound": 1513,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 240,
+              "linear_cover": 2289169,
+              "stage": "curve-cover",
+              "baby_count": 1512,
+              "giant_count": 3,
+              "projected_point": [
+                "11618850789871787615",
+                "720405728810030262"
+              ],
+              "a24": "2265722441094493490",
+              "earlier_curves": [],
+              "target_batches": 2,
+              "staged": true,
+              "verified_local_annihilators": [
+                5581
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 84.69800799502991,
+            "dickson6": 121.93880500853993,
+            "curve": 37.53671102458611,
+            "curve_full": 124.93482598802075
+          }
+        }
+      ],
+      "hits": {
+        "linear": 12,
+        "dickson6": 14,
+        "curve": 15,
+        "curve_full": 15
+      },
+      "total_median_ms": {
+        "linear": 1261.4542190276552,
+        "dickson6": 1793.8004070019815,
+        "curve": 896.397668053396,
+        "curve_full": 1499.5063690003008
+      },
+      "nonlinear_extra_hits": 2
+    },
+    {
+      "nominal_bits": 80,
+      "samples": [
+        {
+          "N_decimal": "448618142838165990058381",
+          "reference_factors_decimal": [
+            "667359096253",
+            "672229007377"
+          ],
+          "results": {
+            "linear": {
+              "bound": 8750,
+              "order_limit": 76562500,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "448618142838165990058380",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 672229007377,
+              "work": 17500,
+              "stage": "geometric",
+              "projected_base": [
+                "394675686849286469099028",
+                "165699595520745128417298"
+              ],
+              "projection_count": 1091
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 672229007377,
+              "baby_index": 6765,
+              "giant_index": 16,
+              "root": "343475945681312255848662",
+              "point": "270777474285875623445947",
+              "convolutions": 25106,
+              "packed_coefficients": 1039495,
+              "monic_reductions": 17499,
+              "bound": 8750,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "394675686849286469099028",
+                "165699595520745128417298"
+              ],
+              "linear_cover": 76562500,
+              "baby_count": 8750,
+              "giant_count": 8750,
+              "finite_difference_updates": 105000,
+              "projection_count": 1091,
+              "collision_exponents": [
+                "95853229256117941848898",
+                "10832827966731833432816326562498"
+              ]
+            },
+            "curve_full": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 8750,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            },
+            "curve": {
+              "status": "curve-budget-exhausted",
+              "factor": null,
+              "bound": 8750,
+              "curves_used": 1,
+              "history": [
+                {
+                  "sigma": 6,
+                  "status": "no-collision"
+                }
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 586.6608229989652,
+            "dickson6": 930.7360139791854,
+            "curve": 1307.1294959809165,
+            "curve_full": 946.6692169953603
+          }
+        },
+        {
+          "N_decimal": "380307690410407004392769",
+          "reference_factors_decimal": [
+            "652293767771",
+            "583031310739"
+          ],
+          "results": {
+            "curve": {
+              "bound": 8512,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1060,
+              "linear_cover": 72454144,
+              "status": "factor",
+              "factor": 583031310739,
+              "stage": "curve-smooth"
+            },
+            "curve_full": {
+              "bound": 8512,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1060,
+              "linear_cover": 72454144,
+              "status": "factor",
+              "factor": 583031310739,
+              "stage": "curve-smooth"
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 652293767771,
+              "baby_index": 5669,
+              "giant_index": 2,
+              "root": "281777221944363503705929",
+              "point": "379304494075706451173043",
+              "convolutions": 24420,
+              "packed_coefficients": 1013677,
+              "monic_reductions": 17023,
+              "bound": 8512,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "82065837045055036133513",
+                "227632003837634201760504"
+              ],
+              "linear_cover": 72454144,
+              "baby_count": 8512,
+              "giant_count": 8512,
+              "finite_difference_updates": 102144,
+              "projection_count": 1060,
+              "collision_exponents": [
+                "33192400408891296955202",
+                "277279149991587404302946302"
+              ]
+            },
+            "linear": {
+              "bound": 8512,
+              "order_limit": 72454144,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "380307690410407004392768",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 652293767771,
+              "work": 17024,
+              "stage": "geometric",
+              "projected_base": [
+                "82065837045055036133513",
+                "227632003837634201760504"
+              ],
+              "projection_count": 1060
+            }
+          },
+          "median_ms": {
+            "linear": 590.6250280095264,
+            "dickson6": 931.2295590061694,
+            "curve": 6.651683012023568,
+            "curve_full": 6.570808996912092
+          }
+        },
+        {
+          "N_decimal": "513699397734689750848799",
+          "reference_factors_decimal": [
+            "929255400869",
+            "552807545971"
+          ],
+          "results": {
+            "curve_full": {
+              "status": "factor",
+              "factor": 552807545971,
+              "baby_index": 3246,
+              "giant_index": 3,
+              "root": "91981038603774881381768",
+              "point": "503227192083459794875377",
+              "convolutions": 25681,
+              "packed_coefficients": 1047438,
+              "monic_reductions": 17899,
+              "bound": 8950,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1112,
+              "linear_cover": 80102500,
+              "stage": "curve-cover",
+              "baby_count": 8949,
+              "giant_count": 8950,
+              "projected_point": [
+                "476982018729314993874444",
+                "417509117824323981378852"
+              ],
+              "a24": "176042481388551459722380",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                39047
+              ]
+            },
+            "linear": {
+              "bound": 8950,
+              "order_limit": 80102500,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "513699397734689750848800",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 552807545971,
+              "work": 17900,
+              "stage": "geometric",
+              "projected_base": [
+                "138504932771165659378983",
+                "286359649830114079816371"
+              ],
+              "projection_count": 1112
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 552807545971,
+              "baby_index": 3246,
+              "giant_index": 3,
+              "root": "91981038603774881381768",
+              "point": "503227192083459794875377",
+              "convolutions": 8952,
+              "packed_coefficients": 140677,
+              "monic_reductions": 11,
+              "bound": 8950,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1112,
+              "linear_cover": 80102500,
+              "stage": "curve-cover",
+              "baby_count": 8949,
+              "giant_count": 7,
+              "projected_point": [
+                "476982018729314993874444",
+                "417509117824323981378852"
+              ],
+              "a24": "176042481388551459722380",
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                39047
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 552807545971,
+              "baby_index": 1435,
+              "giant_index": 0,
+              "root": "224119561074728991681998",
+              "point": "360673434469791002592863",
+              "convolutions": 25684,
+              "packed_coefficients": 1056403,
+              "monic_reductions": 17899,
+              "bound": 8950,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "138504932771165659378983",
+                "286359649830114079816371"
+              ],
+              "linear_cover": 80102500,
+              "baby_count": 8950,
+              "giant_count": 8950,
+              "finite_difference_updates": 107400,
+              "projection_count": 1112,
+              "collision_exponents": [
+                "8731927898969944898",
+                "513970484078428308422498"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 607.0416679722257,
+            "dickson6": 960.6407999817748,
+            "curve": 259.7550820210017,
+            "curve_full": 979.5627610001247
+          }
+        },
+        {
+          "N_decimal": "627020377926326396726473",
+          "reference_factors_decimal": [
+            "586906066447",
+            "1068348776359"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 586906066447,
+              "baby_index": 4782,
+              "giant_index": 38,
+              "root": "255157344651404132408499",
+              "point": "571179215770964701967567",
+              "convolutions": 9337,
+              "packed_coefficients": 232538,
+              "monic_reductions": 120,
+              "bound": 9252,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1146,
+              "linear_cover": 85599504,
+              "stage": "curve-cover",
+              "baby_count": 9251,
+              "giant_count": 63,
+              "projected_point": [
+                "578979877164479006062485",
+                "95402178446960502737998"
+              ],
+              "a24": "371704846906480799013563",
+              "earlier_curves": [],
+              "target_batches": 6,
+              "staged": true,
+              "verified_local_annihilators": [
+                365611
+              ]
+            },
+            "linear": {
+              "bound": 9252,
+              "order_limit": 85599504,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "627020377926326396726472",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 586906066447,
+              "work": 18504,
+              "stage": "geometric",
+              "projected_base": [
+                "476141965139886504545060",
+                "229453397545176168581525"
+              ],
+              "projection_count": 1146
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 586906066447,
+              "baby_index": 2995,
+              "giant_index": 7,
+              "root": "110333195287380700566931",
+              "point": "434512082550646992771615",
+              "convolutions": 26554,
+              "packed_coefficients": 1098739,
+              "monic_reductions": 18503,
+              "bound": 9252,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "476141965139886504545060",
+                "229453397545176168581525"
+              ],
+              "linear_cover": 85599504,
+              "baby_count": 9252,
+              "giant_count": 9252,
+              "finite_difference_updates": 111024,
+              "projection_count": 1146,
+              "collision_exponents": [
+                "721739824816308492098",
+                "164419629813482061231838946302"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 586906066447,
+              "baby_index": 4782,
+              "giant_index": 38,
+              "root": "255157344651404132408499",
+              "point": "571179215770964701967567",
+              "convolutions": 26551,
+              "packed_coefficients": 1089475,
+              "monic_reductions": 18503,
+              "bound": 9252,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1146,
+              "linear_cover": 85599504,
+              "stage": "curve-cover",
+              "baby_count": 9251,
+              "giant_count": 9252,
+              "projected_point": [
+                "578979877164479006062485",
+                "95402178446960502737998"
+              ],
+              "a24": "371704846906480799013563",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                365611
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 632.6819460082334,
+            "dickson6": 993.0754310043994,
+            "curve": 401.25530399382114,
+            "curve_full": 1012.0782020094339
+          }
+        },
+        {
+          "N_decimal": "699180267783621011390591",
+          "reference_factors_decimal": [
+            "892790471717",
+            "783140378323"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 892790471717,
+              "baby_index": 6282,
+              "giant_index": 26,
+              "root": "628740615663494569404580",
+              "point": "18146307273750771361229",
+              "convolutions": 9446,
+              "packed_coefficients": 147988,
+              "monic_reductions": 57,
+              "bound": 9422,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1166,
+              "linear_cover": 88774084,
+              "stage": "curve-cover",
+              "baby_count": 9421,
+              "giant_count": 31,
+              "projected_point": [
+                "402539264924725757726794",
+                "366917911168929309575442"
+              ],
+              "a24": "111163165922972671642858",
+              "earlier_curves": [],
+              "target_batches": 5,
+              "staged": true,
+              "verified_local_annihilators": [
+                260677
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 783140378323,
+              "baby_index": 1105,
+              "giant_index": 9,
+              "root": "629661735713673832313055",
+              "point": "680599714364477784815886",
+              "convolutions": 27034,
+              "packed_coefficients": 1112534,
+              "monic_reductions": 18843,
+              "bound": 9422,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "43712917524020101978118",
+                "464492159109545517377257"
+              ],
+              "linear_cover": 88774084,
+              "baby_count": 9422,
+              "giant_count": 9422,
+              "finite_difference_updates": 113064,
+              "projection_count": 1166,
+              "collision_exponents": [
+                "1820419730963076098",
+                "699614173245268041302257315598"
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 892790471717,
+              "baby_index": 6282,
+              "giant_index": 26,
+              "root": "628740615663494569404580",
+              "point": "18146307273750771361229",
+              "convolutions": 27031,
+              "packed_coefficients": 1103098,
+              "monic_reductions": 18843,
+              "bound": 9422,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1166,
+              "linear_cover": 88774084,
+              "stage": "curve-cover",
+              "baby_count": 9421,
+              "giant_count": 9422,
+              "projected_point": [
+                "402539264924725757726794",
+                "366917911168929309575442"
+              ],
+              "a24": "111163165922972671642858",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                260677
+              ]
+            },
+            "linear": {
+              "bound": 9422,
+              "order_limit": 88774084,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "699180267783621011390592",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 783140378323,
+              "work": 18844,
+              "stage": "geometric",
+              "projected_base": [
+                "43712917524020101978118",
+                "464492159109545517377257"
+              ],
+              "projection_count": 1166
+            }
+          },
+          "median_ms": {
+            "linear": 635.3082109999377,
+            "dickson6": 1014.421198022319,
+            "curve": 349.1381900093984,
+            "curve_full": 1028.841878985986
+          }
+        },
+        {
+          "N_decimal": "782006735405175730955471",
+          "reference_factors_decimal": [
+            "946791406471",
+            "825954619001"
+          ],
+          "results": {
+            "linear": {
+              "bound": 9599,
+              "order_limit": 92140801,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "782006735405175730955472",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 946791406471,
+              "work": 19198,
+              "stage": "geometric",
+              "projected_base": [
+                "507665014647506284667621",
+                "476287104025518033897979"
+              ],
+              "projection_count": 1184
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 946791406471,
+              "baby_index": 2220,
+              "giant_index": 17,
+              "root": "304750306706178709843245",
+              "point": "67952483625251245603350",
+              "convolutions": 27539,
+              "packed_coefficients": 1120265,
+              "monic_reductions": 19197,
+              "bound": 9599,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1184,
+              "linear_cover": 92140801,
+              "stage": "curve-cover",
+              "baby_count": 9598,
+              "giant_count": 9599,
+              "projected_point": [
+                "576212058712074478421912",
+                "696766682507559202710149"
+              ],
+              "a24": "758824707019679568680440",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                175003
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 946791406471,
+              "baby_index": 2220,
+              "giant_index": 17,
+              "root": "304750306706178709843245",
+              "point": "67952483625251245603350",
+              "convolutions": 9623,
+              "packed_coefficients": 150394,
+              "monic_reductions": 57,
+              "bound": 9599,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1184,
+              "linear_cover": 92140801,
+              "stage": "curve-cover",
+              "baby_count": 9598,
+              "giant_count": 31,
+              "projected_point": [
+                "576212058712074478421912",
+                "696766682507559202710149"
+              ],
+              "a24": "758824707019679568680440",
+              "earlier_curves": [],
+              "target_batches": 5,
+              "staged": true,
+              "verified_local_annihilators": [
+                175003
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 946791406471,
+              "baby_index": 9368,
+              "giant_index": 271,
+              "root": "451231325745606142521576",
+              "point": "733917641141539993084499",
+              "convolutions": 27542,
+              "packed_coefficients": 1129881,
+              "monic_reductions": 19197,
+              "bound": 9599,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "507665014647506284667621",
+                "476287104025518033897979"
+              ],
+              "linear_cover": 92140801,
+              "baby_count": 9599,
+              "giant_count": 9599,
+              "finite_difference_updates": 115188,
+              "projection_count": 1184,
+              "collision_exponents": [
+                "675898157712238779141182",
+                "316788475732208706748028470251583777022"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 647.6500770077109,
+            "dickson6": 1034.8225110210478,
+            "curve": 356.07446799986064,
+            "curve_full": 1055.7061650033575
+          }
+        },
+        {
+          "N_decimal": "681744979629536288452009",
+          "reference_factors_decimal": [
+            "996183890671",
+            "684356559079"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 996183890671,
+              "baby_index": 1674,
+              "giant_index": 1191,
+              "root": "372993207418524228353959",
+              "point": "530296164595639204238578",
+              "convolutions": 13132,
+              "packed_coefficients": 779794,
+              "monic_reductions": 4083,
+              "bound": 9382,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1160,
+              "linear_cover": 88021924,
+              "stage": "curve-cover",
+              "baby_count": 9381,
+              "giant_count": 2047,
+              "projected_point": [
+                "138033991682417983865698",
+                "631336332964136228529337"
+              ],
+              "a24": "128991599174187344623077",
+              "earlier_curves": [],
+              "target_batches": 11,
+              "staged": true,
+              "verified_local_annihilators": [
+                11185019
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 996183890671,
+              "baby_index": 1674,
+              "giant_index": 1191,
+              "root": "372993207418524228353959",
+              "point": "530296164595639204238578",
+              "convolutions": 26923,
+              "packed_coefficients": 1100080,
+              "monic_reductions": 18763,
+              "bound": 9382,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1160,
+              "linear_cover": 88021924,
+              "stage": "curve-cover",
+              "baby_count": 9381,
+              "giant_count": 9382,
+              "projected_point": [
+                "138033991682417983865698",
+                "631336332964136228529337"
+              ],
+              "a24": "128991599174187344623077",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                11185019
+              ]
+            },
+            "linear": {
+              "bound": 9382,
+              "order_limit": 88021924,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "681744979629536288452008",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 18764,
+              "certified_through": 88021924,
+              "stage": "geometric",
+              "projected_base": [
+                "77798070561554386791202",
+                "76836117736269469447029"
+              ],
+              "projection_count": 1160
+            },
+            "dickson6": {
+              "status": "no-collision",
+              "factor": null,
+              "convolutions": 26926,
+              "packed_coefficients": 1109475,
+              "monic_reductions": 18763,
+              "bound": 9382,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "77798070561554386791202",
+                "76836117736269469447029"
+              ],
+              "linear_cover": 88021924,
+              "baby_count": 9382,
+              "giant_count": 9382,
+              "finite_difference_updates": 112584,
+              "projection_count": 1160
+            }
+          },
+          "median_ms": {
+            "linear": 654.4122400227934,
+            "dickson6": 1023.0968320101965,
+            "curve": 806.2723230104893,
+            "curve_full": 1048.8411719852593
+          }
+        },
+        {
+          "N_decimal": "1113218833687576242501913",
+          "reference_factors_decimal": [
+            "1047646226129",
+            "1062590410697"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 1062590410697,
+              "baby_index": 5654,
+              "giant_index": 0,
+              "root": "39633330819925393449150",
+              "point": "579360964326473133477444",
+              "convolutions": 29218,
+              "packed_coefficients": 1193281,
+              "monic_reductions": 20361,
+              "bound": 10181,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "41224007380244344844906",
+                "1041350109796259019331925"
+              ],
+              "linear_cover": 103652761,
+              "baby_count": 10181,
+              "giant_count": 10181,
+              "finite_difference_updates": 122172,
+              "projection_count": 1251,
+              "collision_exponents": [
+                "32668917443381852287202",
+                "1113634301972329777723202"
+              ]
+            },
+            "linear": {
+              "bound": 10181,
+              "order_limit": 103652761,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "1113218833687576242501912",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 1062590410697,
+              "work": 20362,
+              "stage": "geometric",
+              "projected_base": [
+                "41224007380244344844906",
+                "1041350109796259019331925"
+              ],
+              "projection_count": 1251
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 1062590410697,
+              "baby_index": 2574,
+              "giant_index": 1,
+              "root": "528531826454603087790209",
+              "point": "155562293902254365447972",
+              "convolutions": 29215,
+              "packed_coefficients": 1183083,
+              "monic_reductions": 20361,
+              "bound": 10181,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1251,
+              "linear_cover": 103652761,
+              "stage": "curve-cover",
+              "baby_count": 10180,
+              "giant_count": 10181,
+              "projected_point": [
+                "44514951194407301784719",
+                "582593135666742241991013"
+              ],
+              "a24": "388168145172614674591447",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                22937
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 1062590410697,
+              "baby_index": 2574,
+              "giant_index": 1,
+              "root": "528531826454603087790209",
+              "point": "155562293902254365447972",
+              "convolutions": 10180,
+              "packed_coefficients": 158890,
+              "monic_reductions": 4,
+              "bound": 10181,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1251,
+              "linear_cover": 103652761,
+              "stage": "curve-cover",
+              "baby_count": 10180,
+              "giant_count": 3,
+              "projected_point": [
+                "44514951194407301784719",
+                "582593135666742241991013"
+              ],
+              "a24": "388168145172614674591447",
+              "earlier_curves": [],
+              "target_batches": 2,
+              "staged": true,
+              "verified_local_annihilators": [
+                22937
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 699.4514169928152,
+            "dickson6": 1097.2483380173799,
+            "curve": 276.2137539975811,
+            "curve_full": 1118.3796319819521
+          }
+        },
+        {
+          "N_decimal": "789215262192639365216867",
+          "reference_factors_decimal": [
+            "890035765873",
+            "886723087379"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 886723087379,
+              "baby_index": 1034,
+              "giant_index": 0,
+              "root": "213187777937250983907494",
+              "point": "24226528099926173874839",
+              "convolutions": 27584,
+              "packed_coefficients": 1131595,
+              "monic_reductions": 19227,
+              "bound": 9614,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "247069820927398939508200",
+                "692038373872673609361508"
+              ],
+              "linear_cover": 92428996,
+              "baby_count": 9614,
+              "giant_count": 9614,
+              "finite_difference_updates": 115368,
+              "projection_count": 1186,
+              "collision_exponents": [
+                "1222139540639656802",
+                "789631888493437967044802"
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 886723087379,
+              "baby_index": 6474,
+              "giant_index": 2,
+              "root": "526101994862988638701147",
+              "point": "42909400097926813448235",
+              "convolutions": 9613,
+              "packed_coefficients": 150530,
+              "monic_reductions": 4,
+              "bound": 9614,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1186,
+              "linear_cover": 92428996,
+              "stage": "curve-cover",
+              "baby_count": 9613,
+              "giant_count": 3,
+              "projected_point": [
+                "627839632718156345662673",
+                "550907472368875758966836"
+              ],
+              "a24": "733823322007408448741320",
+              "earlier_curves": [],
+              "target_batches": 2,
+              "staged": true,
+              "verified_local_annihilators": [
+                35317
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 886723087379,
+              "baby_index": 6474,
+              "giant_index": 2,
+              "root": "526101994862988638701147",
+              "point": "42909400097926813448235",
+              "convolutions": 27581,
+              "packed_coefficients": 1121967,
+              "monic_reductions": 19227,
+              "bound": 9614,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1186,
+              "linear_cover": 92428996,
+              "stage": "curve-cover",
+              "baby_count": 9613,
+              "giant_count": 9614,
+              "projected_point": [
+                "627839632718156345662673",
+                "550907472368875758966836"
+              ],
+              "a24": "733823322007408448741320",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                35317
+              ]
+            },
+            "linear": {
+              "bound": 9614,
+              "order_limit": 92428996,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "789215262192639365216868",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 886723087379,
+              "work": 19228,
+              "stage": "geometric",
+              "projected_base": [
+                "247069820927398939508200",
+                "692038373872673609361508"
+              ],
+              "projection_count": 1186
+            }
+          },
+          "median_ms": {
+            "linear": 645.5900280270725,
+            "dickson6": 1031.3620060042012,
+            "curve": 266.0671069752425,
+            "curve_full": 1058.0556149943732
+          }
+        },
+        {
+          "N_decimal": "663613254955406923097599",
+          "reference_factors_decimal": [
+            "899834716273",
+            "737483498863"
+          ],
+          "results": {
+            "dickson6": {
+              "status": "factor",
+              "factor": 899834716273,
+              "baby_index": 3340,
+              "giant_index": 236,
+              "root": "212227788125433912641919",
+              "point": "639607587866314556020117",
+              "convolutions": 26802,
+              "packed_coefficients": 1105219,
+              "monic_reductions": 18679,
+              "bound": 9340,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "449161225192989300900285",
+                "143364922026026509476174"
+              ],
+              "linear_cover": 87235600,
+              "baby_count": 9340,
+              "giant_count": 9340,
+              "finite_difference_updates": 112080,
+              "projection_count": 1155,
+              "collision_exponents": [
+                "1388284795483248240398",
+                "117644420132577937255908185697237987598"
+              ]
+            },
+            "curve": {
+              "bound": 9340,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1155,
+              "linear_cover": 87235600,
+              "status": "factor",
+              "factor": 899834716273,
+              "stage": "curve-smooth"
+            },
+            "linear": {
+              "bound": 9340,
+              "order_limit": 87235600,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "663613254955406923097600",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 899834716273,
+              "work": 18680,
+              "stage": "geometric",
+              "projected_base": [
+                "449161225192989300900285",
+                "143364922026026509476174"
+              ],
+              "projection_count": 1155
+            },
+            "curve_full": {
+              "bound": 9340,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1155,
+              "linear_cover": 87235600,
+              "status": "factor",
+              "factor": 899834716273,
+              "stage": "curve-smooth"
+            }
+          },
+          "median_ms": {
+            "linear": 630.0098520005122,
+            "dickson6": 989.6300369873643,
+            "curve": 55.00130998552777,
+            "curve_full": 54.63374001556076
+          }
+        },
+        {
+          "N_decimal": "552732330376860462787417",
+          "reference_factors_decimal": [
+            "930049418791",
+            "594304258687"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 930049418791,
+              "baby_index": 3922,
+              "giant_index": 248,
+              "root": "230944076470647685592816",
+              "point": "425896799022561762539738",
+              "convolutions": 9495,
+              "packed_coefficients": 405081,
+              "monic_reductions": 502,
+              "bound": 9060,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1126,
+              "linear_cover": 82083600,
+              "stage": "curve-cover",
+              "baby_count": 9059,
+              "giant_count": 255,
+              "projected_point": [
+                "79354681938061261201422",
+                "82441021622973797037909"
+              ],
+              "a24": "154557999366044157401100",
+              "earlier_curves": [],
+              "target_batches": 8,
+              "staged": true,
+              "verified_local_annihilators": [
+                2259863
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 930049418791,
+              "baby_index": 3922,
+              "giant_index": 248,
+              "root": "230944076470647685592816",
+              "point": "425896799022561762539738",
+              "convolutions": 25995,
+              "packed_coefficients": 1058941,
+              "monic_reductions": 18119,
+              "bound": 9060,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1126,
+              "linear_cover": 82083600,
+              "stage": "curve-cover",
+              "baby_count": 9059,
+              "giant_count": 9060,
+              "projected_point": [
+                "79354681938061261201422",
+                "82441021622973797037909"
+              ],
+              "a24": "154557999366044157401100",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                2259863
+              ]
+            },
+            "linear": {
+              "bound": 9060,
+              "order_limit": 82083600,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "552732330376860462787416",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 930049418791,
+              "work": 18120,
+              "stage": "geometric",
+              "projected_base": [
+                "280574014137000938294837",
+                "234939112966401486231838"
+              ],
+              "projection_count": 1126
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 930049418791,
+              "baby_index": 7627,
+              "giant_index": 2719,
+              "root": "419267920468312322459917",
+              "point": "24051867909094602920648",
+              "convolutions": 25998,
+              "packed_coefficients": 1068015,
+              "monic_reductions": 18119,
+              "bound": 9060,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "280574014137000938294837",
+                "234939112966401486231838"
+              ],
+              "linear_cover": 82083600,
+              "baby_count": 9060,
+              "giant_count": 9060,
+              "finite_difference_updates": 108720,
+              "projection_count": 1126,
+              "collision_exponents": [
+                "196844114189682368712002",
+                "223966266428397088725645039002831960156159998"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 620.8413900167216,
+            "dickson6": 979.238728992641,
+            "curve": 515.5272410192993,
+            "curve_full": 996.8740250042174
+          }
+        },
+        {
+          "N_decimal": "575039824419946302258001",
+          "reference_factors_decimal": [
+            "726624412103",
+            "791385225767"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 791385225767,
+              "baby_index": 8410,
+              "giant_index": 4,
+              "root": "560714049390826505929538",
+              "point": "20039542468479028719708",
+              "convolutions": 9122,
+              "packed_coefficients": 143076,
+              "monic_reductions": 11,
+              "bound": 9120,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1130,
+              "linear_cover": 83174400,
+              "stage": "curve-cover",
+              "baby_count": 9119,
+              "giant_count": 7,
+              "projected_point": [
+                "351491411785205061702040",
+                "140611012799216514967385"
+              ],
+              "a24": "192134504541530035252890",
+              "earlier_curves": [],
+              "target_batches": 3,
+              "staged": true,
+              "verified_local_annihilators": [
+                54011
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 791385225767,
+              "baby_index": 8410,
+              "giant_index": 4,
+              "root": "560714049390826505929538",
+              "point": "20039542468479028719708",
+              "convolutions": 26163,
+              "packed_coefficients": 1064800,
+              "monic_reductions": 18239,
+              "bound": 9120,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1130,
+              "linear_cover": 83174400,
+              "stage": "curve-cover",
+              "baby_count": 9119,
+              "giant_count": 9120,
+              "projected_point": [
+                "351491411785205061702040",
+                "140611012799216514967385"
+              ],
+              "a24": "192134504541530035252890",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                54011
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 726624412103,
+              "baby_index": 4256,
+              "giant_index": 105,
+              "root": "515600027192995891912266",
+              "point": "140477565551460819350079",
+              "convolutions": 26166,
+              "packed_coefficients": 1073936,
+              "monic_reductions": 18239,
+              "bound": 9120,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "567320681907165310362950",
+                "312815228715387570725320"
+              ],
+              "linear_cover": 83174400,
+              "baby_count": 9120,
+              "giant_count": 9120,
+              "finite_difference_updates": 109440,
+              "projection_count": 1130,
+              "collision_exponents": [
+                "5943052569784127816702",
+                "816214341821904347327703979168665598"
+              ]
+            },
+            "linear": {
+              "bound": 9120,
+              "order_limit": 83174400,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "575039824419946302258000",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 726624412103,
+              "work": 18240,
+              "stage": "geometric",
+              "projected_base": [
+                "567320681907165310362950",
+                "312815228715387570725320"
+              ],
+              "projection_count": 1130
+            }
+          },
+          "median_ms": {
+            "linear": 615.6280669965781,
+            "dickson6": 970.5363800167106,
+            "curve": 257.0595540164504,
+            "curve_full": 990.1010910107289
+          }
+        },
+        {
+          "N_decimal": "472151518607846422719307",
+          "reference_factors_decimal": [
+            "769656369773",
+            "613457559959"
+          ],
+          "results": {
+            "linear": {
+              "bound": 8825,
+              "order_limit": 77880625,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "472151518607846422719308",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 17650,
+              "certified_through": 77880625,
+              "stage": "geometric",
+              "projected_base": [
+                "188228595168848937176752",
+                "357185441092254628320322"
+              ],
+              "projection_count": 1099
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 613457559959,
+              "baby_index": 8003,
+              "giant_index": 0,
+              "root": "449727116197729849292463",
+              "point": "414316688284384681033807",
+              "convolutions": 8823,
+              "packed_coefficients": 139038,
+              "monic_reductions": 1,
+              "bound": 8825,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1099,
+              "linear_cover": 77880625,
+              "stage": "curve-cover",
+              "baby_count": 8824,
+              "giant_count": 1,
+              "projected_point": [
+                "230690885295128098403127",
+                "109809635872699585563178"
+              ],
+              "a24": "343336828288162411076317",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": true,
+              "verified_local_annihilators": [
+                16829
+              ]
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 613457559959,
+              "baby_index": 8003,
+              "giant_index": 0,
+              "root": "449727116197729849292463",
+              "point": "414316688284384681033807",
+              "convolutions": 25321,
+              "packed_coefficients": 1036464,
+              "monic_reductions": 17649,
+              "bound": 8825,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1099,
+              "linear_cover": 77880625,
+              "stage": "curve-cover",
+              "baby_count": 8824,
+              "giant_count": 8825,
+              "projected_point": [
+                "230690885295128098403127",
+                "109809635872699585563178"
+              ],
+              "a24": "343336828288162411076317",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                16829
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 613457559959,
+              "baby_index": 6494,
+              "giant_index": 3233,
+              "root": "238297819921329742816835",
+              "point": "440666568093153848967975",
+              "convolutions": 25324,
+              "packed_coefficients": 1045309,
+              "monic_reductions": 17649,
+              "bound": 8825,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "188228595168848937176752",
+                "357185441092254628320322"
+              ],
+              "linear_cover": 77880625,
+              "baby_count": 8825,
+              "giant_count": 8825,
+              "finite_difference_updates": 105900,
+              "projection_count": 1099,
+              "collision_exponents": [
+                "75002138077307694019202",
+                "540416222940898793062811479493613705673522498"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 615.9787309879903,
+            "dickson6": 958.4785360202659,
+            "curve": 236.21075198752806,
+            "curve_full": 964.2155899782665
+          }
+        },
+        {
+          "N_decimal": "799478112074235918159767",
+          "reference_factors_decimal": [
+            "862089012469",
+            "927373044443"
+          ],
+          "results": {
+            "linear": {
+              "bound": 9634,
+              "order_limit": 92813956,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "799478112074235918159768",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 862089012469,
+              "work": 19268,
+              "stage": "geometric",
+              "projected_base": [
+                "76134692449932912423738",
+                "239061888237450421713091"
+              ],
+              "projection_count": 1190
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 862089012469,
+              "baby_index": 8438,
+              "giant_index": 7000,
+              "root": "322187092940130770112248",
+              "point": "718140754609306089339464",
+              "convolutions": 27645,
+              "packed_coefficients": 1124368,
+              "monic_reductions": 19267,
+              "bound": 9634,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1190,
+              "linear_cover": 92813956,
+              "stage": "curve-cover",
+              "baby_count": 9633,
+              "giant_count": 9634,
+              "projected_point": [
+                "408806313862158026309198",
+                "414329049404552872392042"
+              ],
+              "a24": "169411875178942863688357",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                67456073
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 862089012469,
+              "baby_index": 8438,
+              "giant_index": 7000,
+              "root": "322187092940130770112248",
+              "point": "718140754609306089339464",
+              "convolutions": 24850,
+              "packed_coefficients": 1409223,
+              "monic_reductions": 16369,
+              "bound": 9634,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1190,
+              "linear_cover": 92813956,
+              "stage": "curve-cover",
+              "baby_count": 9633,
+              "giant_count": 8191,
+              "projected_point": [
+                "408806313862158026309198",
+                "414329049404552872392042"
+              ],
+              "a24": "169411875178942863688357",
+              "earlier_curves": [],
+              "target_batches": 13,
+              "staged": true,
+              "verified_local_annihilators": [
+                67456073
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 862089012469,
+              "baby_index": 5958,
+              "giant_index": 56,
+              "root": "554745083976926680930243",
+              "point": "771591555077095237408903",
+              "convolutions": 27648,
+              "packed_coefficients": 1134015,
+              "monic_reductions": 19267,
+              "bound": 9634,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "76134692449932912423738",
+                "239061888237450421713091"
+              ],
+              "linear_cover": 92813956,
+              "baby_count": 9634,
+              "giant_count": 9634,
+              "finite_difference_updates": 115608,
+              "projection_count": 1190,
+              "collision_exponents": [
+                "44730414214909270161442",
+                "27421359714481599854552541374000962"
+              ]
+            }
+          },
+          "median_ms": {
+            "linear": 653.6576229846105,
+            "dickson6": 1034.8480909888167,
+            "curve": 1331.2866789929103,
+            "curve_full": 1055.7928640046157
+          }
+        },
+        {
+          "N_decimal": "573194195639374354028323",
+          "reference_factors_decimal": [
+            "752149772663",
+            "762074544821"
+          ],
+          "results": {
+            "curve_full": {
+              "status": "factor",
+              "factor": 762074544821,
+              "baby_index": 35,
+              "giant_index": 16,
+              "root": "513361230387738364536095",
+              "point": "544523087397766260818326",
+              "convolutions": 26153,
+              "packed_coefficients": 1064519,
+              "monic_reductions": 18229,
+              "bound": 9115,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1130,
+              "linear_cover": 83083225,
+              "stage": "curve-cover",
+              "baby_count": 9114,
+              "giant_count": 9115,
+              "projected_point": [
+                "517308395581463596139222",
+                "312226557920671322781904"
+              ],
+              "a24": "188221995828215480414072",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                154991
+              ]
+            },
+            "curve": {
+              "status": "factor",
+              "factor": 762074544821,
+              "baby_index": 35,
+              "giant_index": 16,
+              "root": "513361230387738364536095",
+              "point": "544523087397766260818326",
+              "convolutions": 9139,
+              "packed_coefficients": 143150,
+              "monic_reductions": 57,
+              "bound": 9115,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1130,
+              "linear_cover": 83083225,
+              "stage": "curve-cover",
+              "baby_count": 9114,
+              "giant_count": 31,
+              "projected_point": [
+                "517308395581463596139222",
+                "312226557920671322781904"
+              ],
+              "a24": "188221995828215480414072",
+              "earlier_curves": [],
+              "target_batches": 5,
+              "staged": true,
+              "verified_local_annihilators": [
+                154991
+              ]
+            },
+            "dickson6": {
+              "status": "factor",
+              "factor": 752149772663,
+              "baby_index": 3553,
+              "giant_index": 356,
+              "root": "356467582335412660826449",
+              "point": "77126464004203951408291",
+              "convolutions": 26156,
+              "packed_coefficients": 1073649,
+              "monic_reductions": 18229,
+              "bound": 9115,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": -1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "265995026330971319747221",
+                "343240840370977370744189"
+              ],
+              "linear_cover": 83083225,
+              "baby_count": 9115,
+              "giant_count": 9115,
+              "finite_difference_updates": 109380,
+              "projection_count": 1130,
+              "collision_exponents": [
+                "2011736235481945067522",
+                "1187269563831682375652246826923506724098"
+              ]
+            },
+            "linear": {
+              "bound": 9115,
+              "order_limit": 83083225,
+              "discriminant": -1,
+              "jacobi": -1,
+              "separator_exponent": "573194195639374354028324",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "factor",
+              "factor": 762074544821,
+              "work": 18230,
+              "stage": "geometric",
+              "projected_base": [
+                "265995026330971319747221",
+                "343240840370977370744189"
+              ],
+              "projection_count": 1130
+            }
+          },
+          "median_ms": {
+            "linear": 642.4115319969133,
+            "dickson6": 1006.3968609902076,
+            "curve": 338.0406200012658,
+            "curve_full": 1014.8147459840402
+          }
+        },
+        {
+          "N_decimal": "387911014119558410533909",
+          "reference_factors_decimal": [
+            "588556368311",
+            "659088976019"
+          ],
+          "results": {
+            "curve": {
+              "status": "factor",
+              "factor": 659088976019,
+              "baby_index": 3750,
+              "giant_index": 713,
+              "root": "385914808590759372875984",
+              "point": "104141016461580895680637",
+              "convolutions": 10387,
+              "packed_coefficients": 572713,
+              "monic_reductions": 2036,
+              "bound": 8540,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1065,
+              "linear_cover": 72931600,
+              "stage": "curve-cover",
+              "baby_count": 8539,
+              "giant_count": 1023,
+              "projected_point": [
+                "34332667158918297835206",
+                "48020424256948496024247"
+              ],
+              "a24": "63829032242948605326675",
+              "earlier_curves": [],
+              "target_batches": 10,
+              "staged": true,
+              "verified_local_annihilators": [
+                6101311
+              ]
+            },
+            "dickson6": {
+              "status": "no-collision",
+              "factor": null,
+              "convolutions": 24504,
+              "packed_coefficients": 1016061,
+              "monic_reductions": 17079,
+              "bound": 8540,
+              "degree": 6,
+              "parameter": 1,
+              "discriminant": -1,
+              "jacobi": 1,
+              "base_parameter": 2,
+              "stage": "dickson-cover",
+              "projected_base": [
+                "136438178041665653541557",
+                "4889106721407519627964"
+              ],
+              "linear_cover": 72931600,
+              "baby_count": 8540,
+              "giant_count": 8540,
+              "finite_difference_updates": 102480,
+              "projection_count": 1065
+            },
+            "curve_full": {
+              "status": "factor",
+              "factor": 659088976019,
+              "baby_index": 3750,
+              "giant_index": 713,
+              "root": "385914808590759372875984",
+              "point": "104141016461580895680637",
+              "convolutions": 24501,
+              "packed_coefficients": 1007507,
+              "monic_reductions": 17079,
+              "bound": 8540,
+              "sigma": 6,
+              "curves_used": 1,
+              "projection_count": 1065,
+              "linear_cover": 72931600,
+              "stage": "curve-cover",
+              "baby_count": 8539,
+              "giant_count": 8540,
+              "projected_point": [
+                "34332667158918297835206",
+                "48020424256948496024247"
+              ],
+              "a24": "63829032242948605326675",
+              "earlier_curves": [],
+              "target_batches": 1,
+              "staged": false,
+              "verified_local_annihilators": [
+                6101311
+              ]
+            },
+            "linear": {
+              "bound": 8540,
+              "order_limit": 72931600,
+              "discriminant": -1,
+              "jacobi": 1,
+              "separator_exponent": "387911014119558410533908",
+              "parameter": 2,
+              "order_divisor": 1,
+              "status": "certified-large-order",
+              "factor": null,
+              "work": 17080,
+              "certified_through": 72931600,
+              "stage": "geometric",
+              "projected_base": [
+                "136438178041665653541557",
+                "4889106721407519627964"
+              ],
+              "projection_count": 1065
+            }
+          },
+          "median_ms": {
+            "linear": 580.6060749746393,
+            "dickson6": 915.1117180008441,
+            "curve": 611.6714219970163,
+            "curve_full": 933.0578699882608
+          }
+        }
+      ],
+      "hits": {
+        "linear": 13,
+        "dickson6": 14,
+        "curve": 15,
+        "curve_full": 15
+      },
+      "total_median_ms": {
+        "linear": 10058.554707997246,
+        "dickson6": 15870.873041043524,
+        "curve": 7373.354985000333,
+        "curve_full": 14264.19537793845
+      },
+      "nonlinear_extra_hits": 1
+    }
+  ],
+  "source_hashes": {
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+  },
+  "timing_scope": "Randomized warm-module full calls; includes all query-specific projections, curves, points and polynomial work; excludes imports/sample generation/JSON."
+}

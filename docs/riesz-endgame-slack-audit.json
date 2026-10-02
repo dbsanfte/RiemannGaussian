@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T10:55:27.259967+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszEndgameSlack",
+  "scope": "Local source-threshold audit and explicit conditional arithmetic target; original carrier, radius, multiplicities and masks unchanged.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszEndgameSlack.lean": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+    "RiemannGaussian.lean": "8bd32309aac8be37c2f922580e98e288626be8f6d978b7273a2ebb8429e742cd",
+    "AGENTS.md": "b7595e3f6a3071e7d68752f4da6c1a3e57812aca97595e73cced46be77c6463d",
+    "docs/theorem-explorer/metadata.json": "4e03de1d8140e442de3d058be6ce9df8dc7ddfc95ece8ce1ebf3cf469a4e5c5b",
+    "docs/zeta-riesz-endgame-slack.md": "f70aad3bdfeae68a3e2d6492e0e9fe98aab540b47417785d623183b12bef7cbf"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszEndgameSlack.retainedCost_upper",
+    "RiemannGaussian.ZetaRieszEndgameSlack.retainedCost_lower",
+    "RiemannGaussian.ZetaRieszEndgameSlack.multiple_source_ge_double",
+    "RiemannGaussian.ZetaRieszEndgameSlack.false_of_cofinal_floor_allowance",
+    "RiemannGaussian.ZetaRieszEndgameSlack.false_of_cofinal_ceiling_allowance",
+    "RiemannGaussian.ZetaRieszEndgameSlack.false_of_relaxed_floor",
+    "RiemannGaussian.ZetaRieszEndgameSlack.false_of_relaxed_ceiling",
+    "RiemannGaussian.ZetaRieszEndgameSlack.cost_le_of_relaxed_energy",
+    "RiemannGaussian.ZetaRieszEndgameSlack.eventually_relaxed_floor_of_energy"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-endgame-slack-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10444,
+      "log": ".lake/riesz-endgame-slack-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-endgame-slack-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 9,
+      "generatedDeclarations": 7,
+      "publicTheoremCount": 9,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszEndgameSlack.retainedCost_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.retainedCost_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.multiple_source_ge_double": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.false_of_cofinal_floor_allowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.false_of_cofinal_ceiling_allowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.false_of_relaxed_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.false_of_relaxed_ceiling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.cost_le_of_relaxed_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszEndgameSlack.eventually_relaxed_floor_of_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-endgame-slack-audit.log"
+    },
+    "exactTargetAudit": {
+      "fixedSourceCostIntervalProvedInLean": {
+        "lower": "23/25",
+        "upper": "4601/5000"
+      },
+      "proposedFloor": "-399/5000",
+      "proposedCeiling": "42/25",
+      "oldFloor": "-79/1000",
+      "oldCeiling": "3/2",
+      "oldEnergyBudgetNumerator": "3/320",
+      "newEnergyBudgetNumerator": "987/100000",
+      "budgetRelaxationFactor": "658/625",
+      "budgetRelaxationPercent": 5.28,
+      "floorAllowanceRelaxationPercent": 1.0126582278481013,
+      "ceilingRelaxationPercent": 12.0,
+      "costSquaredBudget": "127323/20000000",
+      "relaxedFloorSquared": "159201/25000000",
+      "positiveSquaredMargin": "189/100000000",
+      "independentArithmeticBudgetProved": false,
+      "zeroExclusionProved": false,
+      "effectiveStartingOrderCertified": false,
+      "endpointDiagnosticsNotIntervalCertificate": [
+        {
+          "u": "0.5",
+          "retainedCost": "0.92007066015400411564764735542077033393945228167004",
+          "simpleSource": "-0.079929339845995884352352644579229666060547718329959",
+          "doubleSource": "1.6802826406160164625905894216830813357578091266802",
+          "relaxedFloorGap": "0.00012933984599588435235264457923",
+          "relaxedCeilingGap": "0.000282640616016462590589421683081"
+        },
+        {
+          "u": "0.50005",
+          "retainedCost": "0.92012820296505582209256468581638185023024481967218",
+          "simpleSource": "-0.07987179703494417790743531418361814976975518032782",
+          "doubleSource": "1.6805128118602232883702587432655274009209792786887",
+          "relaxedFloorGap": "0.0000717970349441779074353141836181",
+          "relaxedCeilingGap": "0.000512811860223288370258743265527"
+        }
+      ]
+    },
+    "preservation": {
+      "unchangedPriorLeanModules": 2785,
+      "stagedFiles": 4,
+      "headPreserved": true,
+      "readmePreserved": true,
+      "publishedMetadataExceptModuleFamiliesPreserved": true
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0
+    },
+    "whitespace": {
+      "exitCode": 0
+    },
+    "widerPublicationGatesRun": false,
+    "committed": false,
+    "pushed": false
+  },
+  "claims": {
+    "weakerSufficientFloorAndCeilingCertified": true,
+    "strictSourceGapRequired": true,
+    "analyticMultiplicityRetained": true,
+    "independentArithmeticEnergyBoundProved": false,
+    "independentArithmeticFloorProved": false,
+    "independentArithmeticCeilingProved": false,
+    "percentArithmeticProgressMeasured": false,
+    "zeroExclusion": false
+  }
+}

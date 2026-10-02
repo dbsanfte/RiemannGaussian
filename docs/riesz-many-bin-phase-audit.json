@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/targeted/root-import checks,14 namespace linters and every public transitive standard-axiom audit",
+  "scope": "No source-scale floor payment. Exact same-label occupied-bin deletion energy, owner/cofactor phase compensation, coherent cross terms, signed literal peak inequality with unpaid error, bin-discount positive-envelope rate audit, and complete tilted-period model. Cross-label arithmetic cancellation remains open. Numerical regressions are continuous log models, not certified prime populations.",
+  "documentation": "docs/zeta-riesz-many-bin-phase-audit.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+    "docs/zeta-riesz-many-bin-phase-audit.md": "4dfda3108cc5331311845cbaa2d0c057ce413878b9b1590a2dd9b076372da585",
+    "scripts/probe_riesz_many_bin_period.py": "6171d4d0816540aac74891d75fa591cc0114782c88a27a1ee0d276e2997b6451",
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean": "c216bfbac39595b8f48d473ad6b32da6ded27c7d1ef377add71d7e4aafef1fff",
+    "RiemannGaussian/ZetaRieszSignedConvolution.lean": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+    "RiemannGaussian/ZetaRieszCoreOwnerPayment.lean": "b42b37c1211e73368e1f4f1bc080d144307f50a1934a1baf2590c4d31fb2c8bb"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszManyBinPhaseAudit.bin_deletion_energy_exact",
+    "RiemannGaussian.ZetaRieszManyBinPhaseAudit.literal_signed_peak_bounds",
+    "RiemannGaussian.ZetaRieszManyBinPhaseAudit.binary_bin_discount_source_tendsto",
+    "RiemannGaussian.ZetaRieszManyBinPhaseAudit.exponential_full_period_neg"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/many-bin-phase-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszManyBinPhaseAudit",
+      "log": ".lake/many-bin-phase-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/many-bin-phase-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszManyBinPhaseAudit",
+      "linters": 14,
+      "publicTheoremCount": 20,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.recentered_owner_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.literal_owner_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.residual_atom_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.re_residual_atom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.literal_signed_peak_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.common_phase_norm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.coherent_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.unit_columns_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.cos_small_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.demodulated_sum_re": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.coherent_cell_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.binary_bin_discount_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.binary_bin_discount_source_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.odd_grid_subset_sign": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.odd_grid_layer_no_cancellation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.two_hinge_delete": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.weighted_deletion_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.bin_deletion_energy_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.exponential_full_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszManyBinPhaseAudit.exponential_full_period_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/many-bin-phase-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/riesz-many-bin-period.json",
+      "testCount": 10,
+      "certifiesNumericalFloor": false,
+      "certifiesActualPrimeLabels": false
+    },
+    "changedModulePlaceholderScan": {
+      "exitCode": 1,
+      "matches": 0
+    }
+  },
+  "unpaidQuantities": [
+    "actual cross-label weighted Moebius correlations",
+    "aggregate funding debit and credits",
+    "literal signed peak quadratic error",
+    "full independent -79/1000 floor"
+  ],
+  "newSourceScalePopulationPaid": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false
+}

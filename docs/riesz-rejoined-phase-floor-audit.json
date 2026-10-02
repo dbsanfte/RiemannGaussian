@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-01T23:46:52.628917+00:00",
+  "module": "RiemannGaussian.ZetaRieszRejoinedPhaseFloor",
+  "scope": "Unconditional signed total-label prefix inequalities on the original masked residual carrier. Counts, owners, bins, radial periods and the SAME funding debit are assembled before the square. The strongest terminal floor charges only adverse COMPLETE prefix increments; its price is uniformly no greater than the same full energy cost. No literal variation allowance, density completion, separate-leg transfer or assumed Type-II/large-sieve estimate. The actual source-normalized one-sided cost remains open.",
+  "documentation": "docs/zeta-riesz-rejoined-phase-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszRejoinedPhaseFloor.lean": "50fbc334595bf90fdd97b9cd26b99cbafafc63b512a7cc746db1b8f4d84a6ebe",
+    "docs/zeta-riesz-rejoined-phase-floor.md": "fd9c698caae55b4a36e30ef6444f10ece7f86383a2bdb9c2b46e1b3996e79573",
+    "scripts/probe_riesz_rejoined_phase.py": "05e47e94d14db71842bbf0984e9d9f395a2dbc81d5411c50161407de925e303f",
+    "RiemannGaussian/ZetaRieszOwnerHingeCancellation.lean": "bba80c58f80a5b587a94b8ffef0bfab822da851457f953eac2ae8ccc6a6d7e25",
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+    "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean": "c216bfbac39595b8f48d473ad6b32da6ded27c7d1ef377add71d7e4aafef1fff",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
+    "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
+    "RiemannGaussian/ZetaRieszCoreOwnerPayment.lean": "b42b37c1211e73368e1f4f1bc080d144307f50a1934a1baf2590c4d31fb2c8bb",
+    "RiemannGaussian/ZetaRieszRejoinedPopulationFloor.lean": "98162c012392f9059e1ec01e34efbac1a9d2bc5f21d3c464fbcf878d5e627ce3",
+    "RiemannGaussian/ZetaRieszRadialCompensation.lean": "b439591293ac28af28240b11e209180112d3806d921fffb9368b8dd25d13aba4",
+    "RiemannGaussian/ZetaRieszRoughFivePeriodFloor.lean": "c4e0a1d55f590b4c73afe30e96c13e94861b82601a96cb03f6ad9139ef1bb8dd",
+    "RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean": "d0b9c8dc5a4d704a97cffeb06eb8ad9012810d548781c31e80466da331bed902",
+    "RiemannGaussian/ZetaVaughanLogAverage.lean": "3a0f6dea963c07e13283f61ab8ec11e11dbcbac5878d6551ae9aac4e606a3962"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.primeWeight_product",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.residual_atom_total_riesz",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_residual_eq_prefix",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_signed_bounds",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.whole_signed_bounds",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.phaseEnergy_union",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.phaseEnergy_cross_bound",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.joined_cost_le",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.joined_cost_squared_saving",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.all_populations_cost_le",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.negative_signed_prefix_bound",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.negative_cost_le_full",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_negative_floor",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_weight_sum",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_funding_signed_bounds",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_funding_negative_floor",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.eventually_joined_total_phase_floor",
+    "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.eventually_joined_funded_phase_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-rejoined-phase-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszRejoinedPhaseFloor",
+      "completedJobs": 10424,
+      "log": ".lake/riesz-rejoined-phase-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-rejoined-phase-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszRejoinedPhaseFloor",
+      "linters": 14,
+      "publicTheoremCount": 18,
+      "declarations": 24,
+      "generatedDeclarations": 27,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.primeWeight_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.residual_atom_total_riesz": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_residual_eq_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.whole_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.phaseEnergy_union": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.phaseEnergy_cross_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.joined_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.joined_cost_squared_saving": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.all_populations_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.negative_signed_prefix_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.negative_cost_le_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.weighted_negative_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_weight_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_funding_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.rejoined_funding_negative_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.eventually_joined_total_phase_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRejoinedPhaseFloor.eventually_joined_funded_phase_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-rejoined-phase-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/riesz-rejoined-phase-probe.json",
+      "testCases": 12,
+      "positiveHeightCases": 9,
+      "orders": [
+        4,
+        5,
+        6
+      ],
+      "heights": [
+        0,
+        54,
+        65,
+        100
+      ],
+      "maximumActualLabelCount": 13343,
+      "actualCarrierMomentsMeasured": true,
+      "prescribedOwnerAmplitudesUsed": false,
+      "testLength": "11N/8, NOT rounded moving length",
+      "commonProfileEndpoint": "largest selected literal label",
+      "exactAllocationSupportEmpty": true,
+      "exactLiteralUnpaidSupportUsed": false,
+      "rigorousIntervalArithmetic": false,
+      "sourceScaleSavingCertified": false,
+      "numericalFloorCertified": false,
+      "positiveHeightJointToSeparateRange": [
+        0.4589288036401614,
+        0.7130441320303651
+      ],
+      "positiveHeightOneSidedToTwoSidedRange": [
+        0.26033749144256135,
+        0.6838497947830944
+      ],
+      "maximumPrefixPairingFloatingError": 1.214306433183765e-17,
+      "coversActualGrowingManyBinPopulation": false,
+      "coversActualFundingWitness": false
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszRejoinedPhaseFloor.lean",
+        "docs/zeta-riesz-rejoined-phase-floor.md",
+        "scripts/probe_riesz_rejoined_phase.py"
+      ]
+    }
+  },
+  "uniformSameProfileJoiningBoundProved": true,
+  "uniformOneSidedCostImprovementProved": true,
+  "fundingIncludedBeforeSquare": true,
+  "sameVanishingErrorAndFundingWitnessRetained": true,
+  "wholeFloorIntegrationProved": true,
+  "formerDifferentOwnerCostDominanceClaimed": false,
+  "weightedAntiConcentrationInferredFromBins": false,
+  "unpaidQuantities": [
+    "source-normalized adverse COMPLETE weighted Moebius-prefix cost with original funding correlations",
+    "independent eventual cost <=79/1000+o(1), or another sufficient one-sided aggregate floor",
+    "multiplicity ceiling after the simple-zero floor"
+  ],
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false
+}

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T07:03:22.266768+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszPhaseOrbitPayment",
+  "scope": "Actual geometric payment of exponentially close total-label phases across ALL radial periods inside the existing funded separated energy. The outside-band signed energy and final arithmetic floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszPhaseOrbitPayment.lean": "695688e7f24a2d80f35d7974df887241eb59b73fdf2b691ea6306d05dd714d7d",
+    "scripts/probe_riesz_phase_orbit_energy.py": "db6e95d901931868aee685a4214e3f5a6f42dd978350ad051163b3eafdda1856",
+    "docs/zeta-riesz-phase-orbit-payment.md": "d84024c061400fd27c74e4989c46375c16be30de6e10e9ad1f20607907976a0c",
+    "RiemannGaussian.lean": "df88c894c4a39f662a3149c7fd59631388a4a1288744ab8a0230cf118aae8a05",
+    "docs/theorem-explorer/metadata.json": "3781e9d3578b8bdea706d53860244ab385e7bedf67331a6ceed0c8b45c47381c",
+    "AGENTS.md": "d9d39511a8e2f28665fb20f532d7858cc659094a6856d54180a9fc3291d30c16",
+    "RiemannGaussian/ZetaRieszPostHingeEnergy.lean": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+    "RiemannGaussian/ZetaRieszDiagonalPayment.lean": "9d20f3cee8406004fbf94392d69709ba76e9cfc72ae633ae5900f031340bf767",
+    "RiemannGaussian/ZetaRieszSharedFactorPayment.lean": "3c3e24549a18cc90b256ccbe344806b2f7d4a82b32b21cdd7c958aaebf1d63da",
+    "RiemannGaussian/ZetaRieszNearLabelPayment.lean": "e87e26dceaf6d2fcf6cce1092c5131a0d9a33b99d3891ece1e7605741ce0f8ba"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.log_band_reciprocal",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_symm",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_row_capacity",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.symmetric_reciprocal_capacity",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseOffsets_symm",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseOffsets_card_le",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseWidth_bounds",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phase_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseNear_of_resonance",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.separatedEnergy_eq",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.orbitEnergy_bound",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.weighted_orbitEnergy_bound",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.orbit_crossCost_split",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.weighted_orbit_price",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.tendsto_orbitPrice",
+    "RiemannGaussian.ZetaRieszPhaseOrbitPayment.eventually_joined_nonOrbit_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-phase-orbit-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10437,
+      "target": "RiemannGaussian.ZetaRieszPhaseOrbitPayment",
+      "log": ".lake/riesz-phase-orbit-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-phase-orbit-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 28,
+      "generatedDeclarations": 34,
+      "publicTheoremCount": 17,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.log_band_reciprocal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_symm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_row_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.symmetric_reciprocal_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.logNear_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseOffsets_symm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseOffsets_card_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseWidth_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phase_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.phaseNear_of_resonance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.separatedEnergy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.orbitEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.weighted_orbitEnergy_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.orbit_crossCost_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.weighted_orbit_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.tendsto_orbitPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPhaseOrbitPayment.eventually_joined_nonOrbit_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-phase-orbit-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "astParsed": true,
+      "log": ".lake/riesz-phase-orbit-probe.log",
+      "runtimeArtifact": ".lake/riesz-phase-orbit-probe.json"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "moduleChecked": "RiemannGaussian/ZetaRieszPhaseOrbitPayment.lean"
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszPhaseOrbitPayment.lean",
+        "scripts/probe_riesz_phase_orbit_energy.py",
+        "docs/zeta-riesz-phase-orbit-payment.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "priorPaymentMathematicalSourcesUnchanged": true,
+    "widerPublicationGatesRun": false
+  },
+  "exactLogPhaseTolerance": "exp(-N/1000)/(1+abs y)",
+  "allPhysicalRangePhasePeriodsCovered": true,
+  "phaseIndexRadius": "4*(ceil(abs y)+1)*(N+1)",
+  "actualReciprocalIntegerEndpointRetained": true,
+  "actualSparseEnergyBound": "abs(orbitEnergy) <= C(B,y)*(N+1)^4*exp(-N/2000)",
+  "exactFiniteConstant": "80*radiusCeiling^2*B^2*(8*(ceil(abs y)+1)+1)*M(1+1/262144)*exp(3/262144)",
+  "actualFloorErrorPrice": "sqrt(4*C(B,y))*(N+1)^3*exp(-N/4000) -> 0",
+  "fixedHeightRequired": true,
+  "movingHeightUniformityClaimed": false,
+  "effectiveStartingOrderClaimed": false,
+  "originalAdverseSelectionRetained": true,
+  "fundedOverlapsRetained": true,
+  "sameSupplyWitnessDebitAndAllEarlierPaidErrorsRetainedOnce": true,
+  "newActualCorrelationFamilyGeometricallyPaid": true,
+  "additionalWholeLabelPopulationPaid": false,
+  "nativeWholeFloor": "Re(u^(N+1)*joinedPhysical) >= -sqrt((129N/200)*max(nonOrbitEnergy,0))-err; err -> 0",
+  "independentOutsideBandEnergyBudget": "nonOrbitEnergy <= 3/(320(N+1))",
+  "independentOutsideBandEnergyBudgetProved": false,
+  "outsideBandSignProved": false,
+  "fixedOrPolynomialPhaseWindowPaid": false,
+  "automaticManyBinOrthogonalityProved": false,
+  "globalNumericalFloorMarginNewlyCertified": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "finiteProbe": {
+    "orders": [
+      4,
+      5
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "cases": 6,
+    "nativeMovingLengthUsed": true,
+    "exactRationalIntegerFloorUsed": true,
+    "allocationSupportExactlyEmpty": true,
+    "nativePhysicalMasksCertified": false,
+    "nativeCount56PlusManyBinPopulationCertified": false,
+    "nativeDyadicSupportCertified": false,
+    "nativeFundingWitnessCertified": false,
+    "floatingResultsIntervalCertified": false,
+    "reciprocalCapacityAndExactSignedPartitionChecksPassed": true,
+    "originalNativeNearStripIncludesEveryTestPair": true,
+    "nontrivialRelativeDistanceThresholdIsDiagnosticOnly": "1/1000",
+    "positiveDiagnosticPhaseBandCases": 6,
+    "negativeDiagnosticOutsideBandCases": 6,
+    "strictlyImprovedDiagnosticCosts": 2,
+    "alreadyZeroDiagnosticCosts": 4,
+    "asymptoticOutsideBandSignInferred": false
+  }
+}

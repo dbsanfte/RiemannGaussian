@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Generic unlabelled signed-pattern investigation restricted by default to unpaid geometry; not a new RH carrier.",
+  "sources": {
+    "scripts/probe_riesz_generic_patterns.py": {
+      "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+      "snapshot": ".lake/riesz-generic-pattern/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+    },
+    "scripts/riesz_subset_moments.py": {
+      "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+      "snapshot": ".lake/riesz-generic-pattern/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+    },
+    "RiemannGaussian/ZetaRieszSubsetMomentBounds.lean": {
+      "sha256": "80b4bb9dbec71beb1037c6f03e57b6e335457a28fb75b65d9d05699c112e4866",
+      "snapshot": ".lake/riesz-generic-pattern/source-80b4bb9dbec71beb1037c6f03e57b6e335457a28fb75b65d9d05699c112e4866.lean"
+    }
+  },
+  "currentScriptDifferenceFromArchivedReports": "Current driver adds a negative-index guard and deterministic optional-seed fallback; numerical evaluator unchanged.",
+  "paidMaskReferences": {
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "RiemannGaussian/ZetaRieszDenseCountCoverFloor.lean": "4ff4b0e88597c706fea8a546a46f790ffb934430aeb94cca8bde43d37f5876e6",
+    "RiemannGaussian/ZetaRieszJoinedPopulationFloor.lean": "f07575d26ebb2270ccb4757f1d9c074429b42a370e07ca9c2e25566f0e9e633d",
+    "RiemannGaussian/ZetaRieszSharpOwnerPayment.lean": "5542d4ee8e732f7da5d9c1eb3f5838a071b495d1c794c4056979f30876ebcde4",
+    "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c"
+  },
+  "defaultScope": {
+    "nativeIndex": 1024,
+    "wholeCountLower": 56,
+    "wholeCountUpper": "5 log(N+1)+2",
+    "literalBinHead": "max(5000,32 log(N+1))",
+    "occupiedCofactorBins": ">floor(log(N+1)/16)",
+    "ownerShareUpper": "60069/100000",
+    "originalAndReducedCountCeilings": true,
+    "totalLogWindow": "39N/20 < log n <=203N/100",
+    "roughModelSubset": "all supplied prime logs >2 log N; not a whole-core condition",
+    "retainedAllocation": true,
+    "fullPhaseExplicit": true,
+    "paidGuardPrecedesSubsetComputation": true,
+    "includePaidDiagnosticsExplicitOptIn": true,
+    "paidDiagnosticsExcludedFromDiscovery": true,
+    "completeNativeComplementCoverage": false
+  },
+  "backend": {
+    "arbitraryPositiveFiniteBinaryInputs": true,
+    "completeAllSubsetMultiplicity": true,
+    "trueParityFirstSecondMomentsAndExtrema": true,
+    "gridChangesKnots": false,
+    "signedAggregateBeforeClipping": true,
+    "automaticSparseLatticeDiscovery": true,
+    "everyExceptionalSubsetRetained": true,
+    "exactSignedRecurrenceWithAffineSubtreeCancellation": true,
+    "budgetExhaustionKeepsFullMomentEnclosure": true,
+    "coordinateSensitivityOnExactFullLattice": true,
+    "canceledUnsignedKnotRetained": true,
+    "ambiguousProfilesExcludedFromRanking": true,
+    "logarithmsPhasesAndCdfIntervalCertified": false,
+    "primePopulation": false,
+    "countOrFeatureCorrelationsAreCandidateOnly": true,
+    "pythonImplementationFormalized": false
+  },
+  "lean": {
+    "source": "RiemannGaussian/ZetaRieszSubsetMomentBounds.lean",
+    "publicTheorems": [
+      "hinge_sum_lower",
+      "hinge_sum_upper_of_second_moment",
+      "centered_second_moment_identity",
+      "hinge_sum_upper_of_chord",
+      "signed_bin_bounds"
+    ],
+    "scope": "Complete finite-population pointwise hinge enclosures and signed joining; no prime-measure transport.",
+    "independentNativeFloor": false
+  },
+  "reports": {
+    "signed-split-final": {
+      "report": ".lake/riesz-generic-pattern/signed-split-final.json",
+      "reportSha256": "33e403bde95f351c7edafc7f1c891d9a48d7924acde3ea093c3d1cc3854a2712",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "5115324594cdf426930bbbcec22872ba7b6d3c248d6cb02f5da6c56aa0d6fc82",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 3,
+      "skippedBeforeSubsetCalculation": 0,
+      "exactTargets": 3,
+      "ambiguousProfilesNotRanked": 0,
+      "skipReasons": {}
+    },
+    "eventual-crossing-final": {
+      "report": ".lake/riesz-generic-pattern/eventual-crossing-final.json",
+      "reportSha256": "afee368588b3cbcc7530f047dca036980b67d6d208481a9420d6c6435b0e8965",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "5115324594cdf426930bbbcec22872ba7b6d3c248d6cb02f5da6c56aa0d6fc82",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 12,
+      "skippedBeforeSubsetCalculation": 0,
+      "exactTargets": 12,
+      "ambiguousProfilesNotRanked": 0,
+      "skipReasons": {}
+    },
+    "crossing-refinement": {
+      "report": ".lake/riesz-generic-pattern/crossing-refinement.json",
+      "reportSha256": "c14878155d7b3c5389bbe10cc114c26f6d89f9dd3e97b9c882b042be87a03108",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "5115324594cdf426930bbbcec22872ba7b6d3c248d6cb02f5da6c56aa0d6fc82",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 3,
+      "skippedBeforeSubsetCalculation": 0,
+      "exactTargets": 3,
+      "ambiguousProfilesNotRanked": 0,
+      "skipReasons": {}
+    },
+    "arbitrary-unpaid-final": {
+      "report": ".lake/riesz-generic-pattern/arbitrary-unpaid-final.json",
+      "reportSha256": "eadafc7c366de2568c8a343a2dc3f66341ac2aae3a1902e7ae3dd38abb36fb7f",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "5115324594cdf426930bbbcec22872ba7b6d3c248d6cb02f5da6c56aa0d6fc82",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 8,
+      "skippedBeforeSubsetCalculation": 7,
+      "exactTargets": 0,
+      "ambiguousProfilesNotRanked": 8,
+      "skipReasons": {
+        "fewBinUnpaid": 3,
+        "fixedCountUnpaid": 4
+      }
+    },
+    "scope-smoke": {
+      "report": ".lake/riesz-generic-pattern/scope-smoke.json",
+      "reportSha256": "854a31524c60fa19483bb49980893c3755e06e73a91abd23489ee4be1ab7d442",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "7ebee27677d4c98a2ea00212ad20b311123365d07bbca3a8abd943c1266f00ed",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 1,
+      "skippedBeforeSubsetCalculation": 2,
+      "exactTargets": 0,
+      "ambiguousProfilesNotRanked": 1,
+      "skipReasons": {
+        "denseCountUnpaid": 1,
+        "fixedCountUnpaid": 1
+      }
+    },
+    "paid-opt-in": {
+      "report": ".lake/riesz-generic-pattern/paid-opt-in.json",
+      "reportSha256": "1bc8d0b435838de076cbbd35696d4d6c553b293a7cdf10560db0fcc1598b80be",
+      "reportSourceHashes": {
+        "/home/dbsanfte/riemann/formal/scripts/probe_riesz_generic_patterns.py": "deac5544ebb2dac8e61b422cba7c440a3da6b91e3ef36276c34b40e8d5abef7f",
+        "/home/dbsanfte/riemann/formal/scripts/riesz_subset_moments.py": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20"
+      },
+      "complete": true,
+      "probed": 1,
+      "skippedBeforeSubsetCalculation": 0,
+      "exactTargets": 1,
+      "ambiguousProfilesNotRanked": 0,
+      "skipReasons": {}
+    }
+  },
+  "findings": {
+    "signedSplit": {
+      "nativeIndex": 64,
+      "eventualCountPaymentHypotheses": false,
+      "wholeCounts": [
+        57,
+        58
+      ],
+      "fixedTotalLogOwnerAndPhase": true,
+      "normalizedTwoHingeCoefficients": [
+        1.4432940838508506,
+        -1.2234184715795207
+      ],
+      "exactFiniteInputSignedSum": "79479270173920214854050934509692866427675793390080487813345245875143988047842262143263967814590425124601075810819508457500836582258992622661840746874657289717387540137977958352757478038286431275864598092728482289786128585/361473786714651839609485931802192366508973300717001923159475447150424810286233407987951861887389439612274926783780351561999781998832434041296198795326329101623141899709787663433296905279066051548640942013290819886814068736",
+      "joinedOverSeparateCoefficientMagnitudes": 0.08245193574522505,
+      "literalPrimePartnersProved": false,
+      "allocationFundingMatchingProved": false,
+      "sourceCredit": false
+    },
+    "eventualCrossings": {
+      "nativeIndex": 1024,
+      "wholeCounts": [
+        56,
+        64
+      ],
+      "literalBinCeiling": 45,
+      "occupiedBinRange": [
+        48,
+        53
+      ],
+      "ordinarySampleExactZeros": 4,
+      "stressedZeroResponses": 4,
+      "stressedNegativeResponses": 4,
+      "normalizedNegativeRange": [
+        -1.1275957262142718e-21,
+        -3.654489913693679e-22
+      ],
+      "maximumResolvedSignedRecurrenceStates": 143,
+      "exactGridRefinementAgreements": 3,
+      "primeDensityOrPopulationSaving": false
+    },
+    "arbitraryInputs": {
+      "survivingUnpaidProfiles": 8,
+      "unresolvedUnrankedProfiles": 8,
+      "skippedPaidOrOutOfSupport": 7,
+      "guessedSigns": 0,
+      "uniformCancellationMechanismEstablished": false
+    }
+  },
+  "validation": {
+    "strictLeanCompilation": "passed",
+    "targetedLakeBuild": "passed",
+    "ordinaryRootImportPlusModule": "passed",
+    "namespaceLint": "all 14 linters passed, 6 declarations",
+    "publicTheoremAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "exactIndependentRationalEnumerations": 213,
+    "independentSignedRecurrenceChecks": 180,
+    "independentSensitivityChecks": 15,
+    "paidScopeGuardRegressions": 4,
+    "sparseExceptionalSubsetsVerified": true,
+    "canceledUnsignedBoundaryVerified": true,
+    "deliberatelyExhaustedRecursionStaysUnresolved": true,
+    "pythonSyntax": "passed",
+    "optionalSeedDeterminism": "passed",
+    "focusedOnly": true,
+    "widerPublicationGates": false
+  },
+  "preservation": {
+    "previousLeanProofsAndNoGos": true,
+    "publicEndpointsChanged": false,
+    "noStagingCommitPushOrRestorationBySlice": true,
+    "concurrentActivity": "Unrelated semiprime group-coverage files and the index changed externally; this slice leaves them untouched."
+  },
+  "endgame": {
+    "nativeCostTarget": "cofinally nativeCost <=399/5000",
+    "nativeCostBoundProved": false,
+    "independentSignedFloor": false,
+    "ceiling": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false,
+    "nextArithmeticRequirement": "Bound the actual jointly weighted crossing aggregate, with admissible partner capacity, allocation/funding mismatch and unmatched population retained."
+  }
+}

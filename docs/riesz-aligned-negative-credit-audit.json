@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T09:11:20.304311+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszAlignedNegativeCredit",
+  "scope": "Independent one-sided upper estimate for the negative-joined-Gram aligned-phase branch, plus exact joint energy/floor comparison and an audit that exposing the credit does not supply a free native energy saving.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszAlignedNegativeCredit.lean": "dab8d4ccbd4982c861fe3806b6666b6317552decdedf363d2a22e5ad570e16a1",
+    "docs/zeta-riesz-aligned-negative-credit.md": "0debe8726d0b2dec752c461a7c5ed665fe03190e2b5d413346bcff6e28e517a8",
+    "RiemannGaussian.lean": "7dd137bc1f0657deb8370765a3c0a058eb661000632505709d5df34c48b44f00",
+    "AGENTS.md": "de4349f0177cd8cd0c3e8af6c2d5ee8fa29cf48a53dbe0de66e46a7e0aa25381",
+    "docs/theorem-explorer/metadata.json": "e10dbdecaa8afb4076c40d9a89941da242fc85f6f0c338e1dbe71f397518ae55",
+    "RiemannGaussian/ZetaRieszAntiphaseCredit.lean": "89f831a73991b7d3e66688354a9ce81e7a81640d14c569ae6a583770acf6ce4b",
+    "RiemannGaussian/ZetaRieszSharperCountPayment.lean": "24733412fea971175af7b3471497300bc6ce35f6edc719fefc6d0145f17920f6",
+    "scripts/probe_riesz_reflected_phase_gram.py": "415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedPair_not_creditedPair",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_cos_diff_bound",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedReserve_nonneg",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedLeakage_nonneg",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.signedRest_eq_remainder_sub_alignedReserve_add_leakage",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.nonOrbitEnergy_eq_remainder_sub_reserves_add_leakages",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_pair_mass_bound",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedLeakage_bound",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.weighted_alignedLeakage_bound",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.combinedMain_eq_previous_sub_leakage",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.energy_le_remainder_sub_reserves",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.previousMain_le_combinedMain_add_error",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_contribution_upper_bound",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.weighted_alignedLeakage_price",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.cost_le_remainder_sub_reserves",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.eventually_joined_floor",
+    "RiemannGaussian.ZetaRieszAlignedNegativeCredit.tendsto_joined_error"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-aligned-negative-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10441,
+      "target": "RiemannGaussian.ZetaRieszAlignedNegativeCredit",
+      "log": ".lake/riesz-aligned-negative-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-aligned-negative-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 22,
+      "generatedDeclarations": 8,
+      "publicTheoremCount": 17,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedPair_not_creditedPair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_cos_diff_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedReserve_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedLeakage_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.signedRest_eq_remainder_sub_alignedReserve_add_leakage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.nonOrbitEnergy_eq_remainder_sub_reserves_add_leakages": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_pair_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.alignedLeakage_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.weighted_alignedLeakage_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.combinedMain_eq_previous_sub_leakage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.energy_le_remainder_sub_reserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.previousMain_le_combinedMain_add_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.aligned_contribution_upper_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.weighted_alignedLeakage_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.cost_le_remainder_sub_reserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAlignedNegativeCredit.tendsto_joined_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-aligned-negative-audit.log"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleOnly": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "stagedWhitespaceExitCode": 0
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "baselineRecordedMathematicalSourceCount": 2427,
+    "baselineRecordedMathematicalSourcesUnchanged": true,
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "widerPublicationGatesRun": false
+  },
+  "originalScheduleRetained": true,
+  "newPhysicalCarrierIntroduced": false,
+  "newEnergyBookkeepingOnly": true,
+  "originalCarrierCountCeilingChanged": false,
+  "remainingCoreCountCeiling": "original K/768+1, natural division, as proved in preceding slice",
+  "allOriginalPhysicalAllocationRadialAndPhaseMasksRetained": true,
+  "adverseCutoffsSelectedOnceOnEntireRemainingCore": true,
+  "cutoffGramJoinedBeforeSignSelection": true,
+  "oldAndNewCreditsDisjointByActualGramSign": true,
+  "phaseAlignmentPeriodFamily": "all even total-log periods in the original finite window",
+  "logWidth": "exp(-N/10000)/(1+abs(y))",
+  "previousPaidThinnerPhaseBandExcluded": true,
+  "negativeGramBranchSourceBound": "signedRest-signedRemainder <= C_y*(N+1)^4*exp(-N/20000)",
+  "branchBoundOrientation": "upper only",
+  "branchNormBoundClaimed": false,
+  "nativeReserveMassLowerBoundProved": false,
+  "branchBoundRequiresZeroHypothesis": false,
+  "negativeReserveNormPaid": false,
+  "onlySquaredPhaseMismatchNormPaid": true,
+  "exactEnergyLedger": "E = signedRemainder - antiphaseReserve - alignedReserve + antiphaseLeakage + alignedLeakage",
+  "exactAuditIdentity": "newCombinedMain = previousSignedMain - alignedLeakage",
+  "previousNegativeInteractionsAlreadyRetained": true,
+  "freeNativeEnergySavingAsserted": false,
+  "reverseComparisonGeometricError": "C_y*(N+1)^4*exp(-N/20000)",
+  "pairedEnergyUpperEstimate": "E <= newCombinedMain + 2*C_y*(N+1)^4*exp(-N/20000)",
+  "nativeOriginalJoinedFloorComparisonProved": true,
+  "combinedMismatchPrice": "2*leakagePrice(y,N)",
+  "combinedMismatchPriceTendsToZeroForFixedHeight": true,
+  "allPreviouslyPaidErrorsSpentOnce": true,
+  "allPairCrossCountAndRadialTermsRetained": true,
+  "remainingIndependentBudget": "signedRemainder-antiphaseReserve-alignedReserve <= 3/(320*(N+1))",
+  "remainingIndependentBudgetProved": false,
+  "secondBandCreditAloneClosesGlobalBudget": false,
+  "newNumericalFloorMarginCertified": false,
+  "effectiveFloorStartingOrderCertified": false,
+  "constantsNumericallyEvaluated": false,
+  "newNumericalProbeRunRequired": false,
+  "priorNativeProbeIsOnlyMotivation": "constructed subset, its own adverse set, rescaled amplitudes, no density/full population/interval/cofinal estimate",
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "committedOrPushed": false
+}

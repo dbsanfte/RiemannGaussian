@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T07:32:59.103954+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszDirectPhaseFloor",
+  "scope": "Direct signed all-count floor for original coreResponse/joinedPhysical without the auxiliary supply debit. Reuses previous geometric pair payments. The actual signed energy budget and numerical floor remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszDirectPhaseFloor.lean": "263b128abfba6f00d704156501f5d3e1418a64205e013f05d951d1f14e11c3b9",
+    "scripts/probe_riesz_direct_funding_cost.py": "82c74b2bd297d296f61045b5c86d2b7b5606e72c446500a91389a9c93844d698",
+    "docs/zeta-riesz-direct-phase-floor.md": "51c4a4c493a11254eed44ad52d2343c5becb095caf38a02b051ed7966e6e8971",
+    "RiemannGaussian.lean": "16e0b790556630d30cc224b24706fdfbbd57abbf45af1e77fd5ef21781856971",
+    "AGENTS.md": "0e494f4b8ff43e29b6a8a568c005467b624f72a836ca846f750dced358711349",
+    "docs/theorem-explorer/metadata.json": "ce3dcc51f70fc05cc38a40ea8e4b59ccb7c5d1c668e74e5458c71904338644c7",
+    "RiemannGaussian/ZetaRieszPhaseOrbitPayment.lean": "695688e7f24a2d80f35d7974df887241eb59b73fdf2b691ea6306d05dd714d7d",
+    "RiemannGaussian/ZetaRieszPostHingeEnergy.lean": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+    "RiemannGaussian/ZetaRieszGlobalDebitAudit.lean": "2bf9d0bc34912c5339744f7bf792df14edff8a2e7a0a40880dd3730779be9916"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.paidPrice_nonneg",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.tendsto_paidPrice",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.core_subset_window",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.core_floor",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.joinedError_nonneg",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.tendsto_joinedError",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.joined_floor",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.joinedError_bound",
+    "RiemannGaussian.ZetaRieszDirectPhaseFloor.eventually_joined_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-direct-phase-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10438,
+      "target": "RiemannGaussian.ZetaRieszDirectPhaseFloor",
+      "log": ".lake/riesz-direct-phase-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-direct-phase-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 11,
+      "generatedDeclarations": 2,
+      "publicTheoremCount": 9,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.paidPrice_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.tendsto_paidPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.core_subset_window": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.core_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.joinedError_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.tendsto_joinedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.joinedError_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDirectPhaseFloor.eventually_joined_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-direct-phase-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "astParsed": true,
+      "nativeOrderCases": 9,
+      "artifact": ".lake/riesz-direct-phase-probe.json",
+      "log": ".lake/riesz-direct-phase-probe.log"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "newModuleOnly": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "stagedWhitespaceExitCode": 0
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true,
+    "baselineRecordedMathematicalSourcesUnchanged": true,
+    "widerPublicationGatesRun": false
+  },
+  "newPhysicalCarrierIntroduced": false,
+  "allOriginalCountsAndEntireOriginalCountTailRetained": true,
+  "originalPhysicalAllocationRadialAndPhaseMasksRetained": true,
+  "auxiliarySupplyDebitRemovedFromDirectComparison": true,
+  "oldFundingCreditsReused": false,
+  "adverseCutoffsSelectedOnceForDirectWholeSum": true,
+  "directEnergyComparedMonotonicallyToFundedEnergy": false,
+  "nativeWholeSignedComparison": "Re(u^(N+1)*joinedPhysical) >= -sqrt((129N/200)*max(E_direct,0))-joinedError",
+  "explicitError": "diagonalPrice(1,N)+sharedPrice(1,N)+nearPrice(1,N)+orbitPrice(1,y,N)+norm(u^(N+1)*(coreResponse-joinedPhysical))",
+  "bridgeErrorUpperBound": "2*(19/20)^N*M(1+1/256)",
+  "sourceNormalizedErrorTendsToZero": true,
+  "fixedHeightRequired": true,
+  "profileCapThreshold": 65536,
+  "effectiveFloorStartingOrderCertified": false,
+  "independentDirectEnergyBudget": "E_direct <= 3/(320*(N+1))",
+  "independentDirectEnergyBudgetProved": false,
+  "newGeometricCorrelationFamilyPaid": false,
+  "newGlobalSignedCancellationRateProved": false,
+  "newNumericalFloorMarginCertified": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "finiteProbe": {
+    "radius": "10001/20000",
+    "height": 54,
+    "dyadicIndices": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "isolatedOldDebitLowerBoundFormulaEvaluated": true,
+    "actualSignedCarrierOrEnergyComputed": false,
+    "finiteSlabCapacityCertified": false,
+    "intervalArithmeticCertified": false
+  }
+}

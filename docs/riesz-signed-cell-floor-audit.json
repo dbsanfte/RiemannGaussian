@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T04:36:27.689123+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszSignedCellFloor",
+  "scope": "Unconditional source-geometric price for balanced variation of actual admitted inner-hinge cells, all selected counts joined. Signed cell imbalance, original reference phase/allocation and SAME supply debit retained. No matching existence/coverage, native bin orthogonality, arithmetic imbalance bound or whole floor asserted.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSignedCellFloor.lean": "cc3ddbd698917dfadaf3b3b0789c1e8983c1d58694b2a223b46ee80111f31df8",
+    "RiemannGaussian/ZetaRieszOpenCountFloor.lean": "80ef0fe96a40f8fc5e7f91555a964bb55a83b6b42093dd092c4ecc573fc79d3f",
+    "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean": "4b0db3889c5ff604bc2680630b1c56258c7356c3873dce56bbf3f16ce226b227",
+    "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean": "c209e00aafb6c47b00105054368f66e6bb1fab605d0d061871b324d65b6e60ad",
+    "RiemannGaussian/ZetaRieszInnerHingeTransport.lean": "28e09e25f0fe9e279217892e53522ea3d946b36706d3844aa88cf32480820e4e",
+    "RiemannGaussian/ZetaRieszOwnerPairFloor.lean": "50be5079b632aa9214112eb6deb6a083752f3ce47d9d5df7b96c1f5d0fba3b4b",
+    "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean": "14aff1d79d313ffacd932596900385ab21c9441610ef8244a5a56a500d70148d",
+    "RiemannGaussian/ZetaRieszManyBinRateAudit.lean": "5a2a1992c10e6075c53bf4a23343bca50e01ec96e9804946126f0fb516f759a1",
+    "scripts/probe_riesz_joined_period_cells.py": "04989afd2aa3449c053561c14be237c87817cac851e6ce8968e7cd57d73977ce",
+    "docs/zeta-riesz-signed-cell-floor.md": "cbd8ce059c75db982238d1cc847ebe5b171d58c97fffd96176b4a37e5fa01d8d",
+    "RiemannGaussian.lean": "56cce26eca8f9878b5dcdb61bc94e24ac67b1ba6e233a51bb94520b90f971837",
+    "docs/theorem-explorer/metadata.json": "b215fab87ecb377a18caebacb33bb4137e7f556ce43e45530874788a791889f3",
+    "AGENTS.md": "124566388b6c8949babc7f9b62ec9ba9c1275696acbdddefc6dcf4b640b1ee67"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSignedCellFloor.same_logCell_gap",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.unallocated_reference_gap",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.owner_reference_gap",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.sum_cell_reference",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.global_owner_reference_error",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.original_cell_error",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.sum_cofactor_cells",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.reference_zero_of_cell_balance",
+    "RiemannGaussian.ZetaRieszSignedCellFloor.floor_after_cells"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-signed-cell-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "completedJobs": 10432,
+      "target": "RiemannGaussian.ZetaRieszSignedCellFloor",
+      "log": ".lake/riesz-signed-cell-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-signed-cell-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "linters": 14,
+      "declarations": 12,
+      "generatedDeclarations": 3,
+      "publicTheoremCount": 9,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSignedCellFloor.same_logCell_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.unallocated_reference_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.owner_reference_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.sum_cell_reference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.global_owner_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.original_cell_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.sum_cofactor_cells": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.reference_zero_of_cell_balance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedCellFloor.floor_after_cells": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-signed-cell-audit.log"
+    },
+    "sourcePlaceholderScan": {
+      "exitCode": 0,
+      "moduleChecked": "RiemannGaussian/ZetaRieszSignedCellFloor.lean"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_joined_period_cells.py",
+      "log": ".lake/riesz-joined-period-cells-probe.log",
+      "runtimeArtifact": ".lake/riesz-joined-period-cells-probe.json",
+      "astParsed": true
+    },
+    "sourceWhitespace": {
+      "exitCode": 0,
+      "filesChecked": [
+        "RiemannGaussian/ZetaRieszSignedCellFloor.lean",
+        "RiemannGaussian/ZetaRieszOpenCountFloor.lean",
+        "RiemannGaussian/ZetaRieszFixedOwnerPairFloor.lean",
+        "RiemannGaussian/ZetaRieszInnerHingeGapPayment.lean",
+        "RiemannGaussian/ZetaRieszInnerHingeTransport.lean",
+        "RiemannGaussian/ZetaRieszOwnerPairFloor.lean",
+        "RiemannGaussian/ZetaRieszManyBinPhaseAudit.lean",
+        "RiemannGaussian/ZetaRieszManyBinRateAudit.lean",
+        "scripts/probe_riesz_joined_period_cells.py",
+        "docs/zeta-riesz-signed-cell-floor.md",
+        "RiemannGaussian.lean",
+        "docs/theorem-explorer/metadata.json",
+        "AGENTS.md"
+      ]
+    },
+    "stagedSemiprimePathsPreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "readmeUnchanged": true,
+    "publicationMetadataUnchangedExceptFamilies": true
+  },
+  "literalIntegerLabelsRetained": true,
+  "originalAllocationAndPhaseRetained": true,
+  "originalSupportCountAndPhysicalMasksRetained": true,
+  "actualReferenceInSelectedSupportRequired": true,
+  "sameActualCanonicalOwnerAndSecondPrimeRequired": true,
+  "literalCompositeInnerHingeRequired": true,
+  "deterministicLogCellGap": "exp(-N/1000)",
+  "thinIntervalPrimeCountAssumed": false,
+  "continuumTransportUsed": false,
+  "matchedPartnerCapacityAssumed": false,
+  "nativeCellBalanceAssumedAsProved": false,
+  "balancedVariationGeometricSourcePriceProved": true,
+  "geometricSourcePrice": "[168*radiusCeiling*(1+abs(y))+2*radiusCeiling*M(1+1/262144)]*(N+1)^3*exp(-N/1250)+ownerPaymentError(N) -> 0",
+  "globalNonownerPaymentCount": 1,
+  "signedCellImbalanceFormula": "sum_i [sum_(n in D,c(n)=i) mu(b(n))]*mu(b(i))*originalOwnerAtom(i)",
+  "signedImbalanceNotNormPriced": true,
+  "sameOriginalSupplyDebitRetainedOnce": true,
+  "newWholePopulationArithmeticPaymentProved": false,
+  "signedCrossPeriodImbalanceBoundProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "automaticManyBinOrthogonalityProved": false,
+  "literatureAudit": {
+    "primarySources": [
+      "https://annals.math.princeton.edu/wp-content/uploads/annals-v183-n3-p06-p.pdf",
+      "https://arxiv.org/html/2607.15574v1"
+    ],
+    "observation": "Averaged/logarithmic estimates are not a fixed-height, hard-masked source-scale bound. No external theorem imported as a Lean input."
+  },
+  "completePeriodFiniteProbe": {
+    "orders": [
+      64,
+      80
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "order80SelectedIntegerLabels": 760114,
+    "order80JointOverDiagonalEnergy": [
+      3.052136532671348,
+      3.937288088409187,
+      4.780880148162499
+    ],
+    "nativeManyBinPopulationCertified": false,
+    "nativeDyadicSupportCertified": false,
+    "originalFundingWitnessCertified": false,
+    "nativeEventualLengthLowerBoundMet": false,
+    "aboveHeadOccupiedBins": 0,
+    "floatingResultsIntervalCertified": false,
+    "scope": "Complete finite cells and all observed counts, rounded L, full original allocation and actual phase. Neither native many-bin nor asymptotic evidence."
+  }
+}

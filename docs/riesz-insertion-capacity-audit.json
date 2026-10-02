@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "head": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "purpose": "Exact joined finite insertion capacity audit and a geometric source price for actually centered transport; no native population is assumed paid.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszInsertionCapacity.lean": {
+      "sha256": "950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a",
+      "snapshot": ".lake/riesz-insertion-capacity/source-950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a.lean"
+    },
+    "RiemannGaussian/ZetaRieszCenteredInsertionPayment.lean": {
+      "sha256": "747774c4ac7bb8f495244b2bd2edce8c8eab90a96a8b552133e4b1289202af02",
+      "snapshot": ".lake/riesz-insertion-capacity/source-747774c4ac7bb8f495244b2bd2edce8c8eab90a96a8b552133e4b1289202af02.lean"
+    },
+    "scripts/probe_riesz_insertion_capacity.py": {
+      "sha256": "181e5384f2d21946e251c8a14fcad14c827499c2e019f8efb576a063a542f7c2",
+      "snapshot": ".lake/riesz-insertion-capacity/source-181e5384f2d21946e251c8a14fcad14c827499c2e019f8efb576a063a542f7c2.py"
+    },
+    "scripts/probe_riesz_clipped_insertions.py": {
+      "sha256": "d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454",
+      "snapshot": ".lake/riesz-insertion-capacity/source-d0e085ab4da71fe290606eee8f313009b089ae5cba96b71fc0338f2e9e70f454.py"
+    },
+    "scripts/probe_riesz_generic_patterns.py": {
+      "sha256": "33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41",
+      "snapshot": ".lake/riesz-insertion-capacity/source-33cfb982aaa27567cd07fc28554b31dd764d41653da1c3ceba8206009984eb41.py"
+    },
+    "scripts/riesz_subset_moments.py": {
+      "sha256": "6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20",
+      "snapshot": ".lake/riesz-insertion-capacity/source-6b75b228dfa9bf1bd6e87a6792ad16ad9b43300ef5c10cbb91693fcbfd68da20.py"
+    }
+  },
+  "lean": {
+    "RiemannGaussian/ZetaRieszInsertionCapacity.lean": {
+      "publicTheorems": [
+        "response_insert",
+        "response_eq_average",
+        "response_nonneg",
+        "response_le_hinge",
+        "response_ge_mean_deficit",
+        "response_ge_empty",
+        "response_pos",
+        "reciprocal_prime_response_pos",
+        "arithmetic_response_eq",
+        "arithmetic_response_lower"
+      ],
+      "sha256": "950b086837a82f6566980f2112c49a51efc2072750a3633c2b68930a1ad8704a"
+    },
+    "RiemannGaussian/ZetaRieszCenteredInsertionPayment.lean": {
+      "publicTheorems": [
+        "centered_amplitude_cost",
+        "centered_source_rate",
+        "global_centered_cost",
+        "tendsto_centered_price",
+        "global_centered_floor"
+      ],
+      "sha256": "747774c4ac7bb8f495244b2bd2edce8c8eab90a96a8b552133e4b1289202af02"
+    }
+  },
+  "provedEstimates": {
+    "joinedProductWeightResponse": "sum_U (-1)^|U| prod_U a * H_U(d) = sum_V prod_V a * prod_(Q\\V)(1-a) * (d-sum_V x)_+",
+    "positiveResidualLowerBounds": [
+      "(d-sum_i a_i*x_i)_+",
+      "d_+ * prod_i(1-a_i)"
+    ],
+    "arithmeticRieszBridge": "squarefree old base, actual prime logs and all old base prime logs >=d; reciprocal weights retain a positive finite coefficient residual",
+    "centeredTransportSourcePrice": "72*U*(2+abs(y))^2*(N+1)^3*exp(-N/4000)",
+    "radiusCeiling": "U=10001/20000",
+    "centeredLiteralGap": "abs(t(n,i)-log n)<=exp(-N/5000)",
+    "exactFirstMoment": "sum_i c(n,i)*(t(n,i)-log n)=0",
+    "otherPriceHypotheses": [
+      "distinct original labels D subset [1,Q]",
+      "log Q<=3(N+1)",
+      "L>=1",
+      "log n>=1",
+      "c(n,i)>=0",
+      "row mass<=3(N+1)"
+    ],
+    "priceTendsToZero": true,
+    "signedFloorScope": "qualifying finite families with exact coefficient coverage and arbitrary unit complex cofactor multiplier; native capacity/funding/support remain application obligations"
+  },
+  "numericalReport": {
+    "path": ".lake/riesz-insertion-capacity/unpaid-final.json",
+    "sha256": "6fbcc95f326b95f09532ab9056e239f71aef70ba82ba7583365473d9b48a965e",
+    "summary": {
+      "families": 45,
+      "completeUnpaidModelFamilies": 27,
+      "skippedBeforeCoefficientWork": 18,
+      "independentExactSignedRegressions": 9,
+      "everyCompletedModelHasPositiveResidual": true,
+      "nativeFloorCredit": false
+    },
+    "completeWholeCountRange": [
+      56,
+      365
+    ],
+    "occupiedOldBinRange": [
+      51,
+      70
+    ],
+    "fineGridResidualOverOriginalRange": [
+      0.16651896303346964,
+      0.4655629083366207
+    ],
+    "phaseCases": 81,
+    "adverseOriginalPhaseCases": 36,
+    "allCountsRetained": true,
+    "largestCompletePoolSubsets": "18446744073709551616",
+    "specifiedReciprocalWeightsAndIntegerProbabilityNumerators": true,
+    "smallCapacityMatchesRespectEveryNode": true,
+    "fullAllocatedFamilyEvaluated": false,
+    "actualPrimePartnerInventory": false,
+    "nativeFloorDebitOrCredit": false
+  },
+  "validation": {
+    "strictLean": true,
+    "targetedLakeBuild": {
+      "passed": true,
+      "log": ".lake/riesz-insertion-capacity/build.log",
+      "sha256": "c825323177cfb5698b4025917d38d538703c7329a61e29191b467dedd062165e"
+    },
+    "rootImportNamespaceLintAndAxioms": {
+      "passed": true,
+      "log": ".lake/riesz-insertion-capacity/lean-audit.log",
+      "sha256": "8aa4a5dddab319474016b7c648d286865a91bb51d4229152685603b3fc818284"
+    },
+    "publicProofCount": 15,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pythonSyntax": true,
+    "nineIndependentExactSignedAndCapacityRegressions": true,
+    "focusedOnly": true,
+    "widerPublicationGates": false
+  },
+  "preservation": {
+    "publicREADMEandRootAndExplorerHashMatches": true,
+    "noStagingCommitPushOrRestorationBySlice": true,
+    "concurrentActivity": "Unrelated semiprime investigation text and the index changed externally; left untouched.",
+    "snapshotBefore": ".lake/riesz-insertion-capacity/preservation-before.json",
+    "snapshotAfter": ".lake/riesz-insertion-capacity/preservation-after.json"
+  },
+  "endgame": {
+    "nativeFloorTarget": "cofinally nativeCost<=399/5000",
+    "nativeFloorProved": false,
+    "ceilingProved": false,
+    "restrictedZeroExclusion": false,
+    "rhContradiction": false,
+    "remainingArithmeticObligations": [
+      "actual prime-partner inventory",
+      "global partner column capacity",
+      "original support/allocation/funding ledger",
+      "signed unmatched parity remainder"
+    ]
+  }
+}

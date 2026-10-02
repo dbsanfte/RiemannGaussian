@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/targeted/root-import checks,14 namespace linters and every public transitive standard-axiom audit",
+  "scope": "The actual signed rough-density prefix is bounded by its own density across all cutoffs/counts/exclusions. Propagated to the original masked residual sum retaining signed cofactor moments and explicit unpaid variation. No source-scale population payment or numerical floor.",
+  "documentation": "docs/zeta-riesz-signed-density-cancellation.md",
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/0908.4323",
+      "title": "A remark on partial sums involving the Möbius function",
+      "author": "Terence Tao",
+      "usedResults": [
+        "Theorem 1.1",
+        "Remark 2.1"
+      ],
+      "claimsNovelMathematics": false
+    }
+  ],
+  "sources": {
+    "RiemannGaussian/ZetaRieszSignedDensityCancellation.lean": "61c1ecda29189f003064ae4ea97b12013cb3429cc66e7f167cf19e735137de1e",
+    "docs/zeta-riesz-signed-density-cancellation.md": "4321e2c20204fc7fbd3e0789270dc82d055e2866176d8fa8254220ae1933c82a",
+    "scripts/probe_riesz_signed_density.py": "a6bbbdc780218ce701aecf94e56f2b558b8e30ab3bf3e8b3461489506967c522",
+    "RiemannGaussian/ZetaRieszLongCutoffError.lean": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+    "RiemannGaussian/ZetaRieszSignedDensityMain.lean": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0",
+    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "404a7b60908558b06f28ba3762ba3f8ead4a9073564e984217ff808876549f57"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSignedDensityCancellation.roughDensityPrefix_signed_bound",
+    "RiemannGaussian.ZetaRieszSignedDensityCancellation.owner_main_signed_bounds",
+    "RiemannGaussian.ZetaRieszSignedDensityCancellation.literal_whole_carrier_signed_bounds",
+    "RiemannGaussian.ZetaRieszSignedDensityCancellation.phase_twisted_prefix_not_bounded_by_one"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-signed-density-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszSignedDensityCancellation",
+      "log": ".lake/riesz-signed-density-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/riesz-signed-density-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSignedDensityCancellation",
+      "linters": 14,
+      "publicTheoremCount": 12,
+      "declarations": 20,
+      "generatedDeclarations": 21,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.weighted_moebius_harmonic_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.rough_coefficient_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.roughDensityPrefix_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.densityPrefix_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.rough_profile_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.rough_hinge_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.owner_hinge_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.owner_main_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.literal_whole_carrier_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.moebiusHarmonicPrefix_signed_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.phase_twisted_prefix_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSignedDensityCancellation.phase_twisted_prefix_not_bounded_by_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-signed-density-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/riesz-signed-density-probe.json",
+      "testCases": 6,
+      "exactRationalPrefixCutoff": 128,
+      "floatingPrefixCutoff": 20000,
+      "certifiesMaskedCarrier": false,
+      "certifiesSourceScaleDecay": false,
+      "certifiesNumericalFloor": false
+    },
+    "changedModulePlaceholderScan": {
+      "matches": 0
+    },
+    "whitespace": {
+      "exitCode": 0,
+      "untrackedSliceFilesChecked": [
+        "RiemannGaussian/ZetaRieszSignedDensityCancellation.lean",
+        "docs/zeta-riesz-signed-density-cancellation.md",
+        "scripts/probe_riesz_signed_density.py"
+      ]
+    }
+  },
+  "unpaidQuantities": [
+    "source-normalized signed cofactor Riesz moment U_p",
+    "source-normalized aggregate price for signed cofactor moment V_p",
+    "literal comparison variation with all masks",
+    "funding credits and debit",
+    "independent joint -79/1000 floor"
+  ],
+  "newSourceScalePopulationPaid": false,
+  "fixedPowerSavingProved": false,
+  "floorProved": false,
+  "newZeroExclusionProved": false,
+  "widePublicationGatesRun": false,
+  "committed": false
+}

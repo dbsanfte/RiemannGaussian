@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-10-02T10:21:07.888643+00:00",
+  "baseHead": "f7616600703b9a8612fd4bd84a66f5807bd28682",
+  "module": "RiemannGaussian.ZetaRieszCoprimePlateauAudit",
+  "scope": "Finite signed late-prefix identities and explicit coprime nonorthogonality regression; complete finite-universe numerical audit of actual joined masks. No new arithmetic bound on remainingEnergy.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszCoprimePlateauAudit.lean": "f31a16adb77b0ed05327b51c027a43d1987ce7270683350598403f4e5091c0ef",
+    "scripts/probe_riesz_joined_count_correlation.py": "52d3f7dcb31b8e8f37d2c2dee6e4e2a4c2f297ac802eb104bad50c4a768793d5",
+    "docs/zeta-riesz-coprime-plateau-audit.md": "fae74afc3cc4e5f071902cda36efb6bc5c0f6ccf3f8e68155df5a0320510cdbc",
+    "RiemannGaussian.lean": "8cc221eca93645296266288bbcb97a19aea565917ba0ba729dc1b2d7fb1ba3cc",
+    "AGENTS.md": "f5b124912c263741f03fc728cd7d3139f88528106624759d80a7b21525bc477d",
+    "docs/theorem-explorer/metadata.json": "d7faec0bd83c04234ab5010cf7b8373d9c7a527848dc41c8076f22cd14bb13fd"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.sharp_late_plateau",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.correlation_late_plateau",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.plateau_energy_eq",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.phaseEnergy_plateau_lower",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.plateau_pairing_eq",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.signed_plateau_floor",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.coprime_three_prime_regression",
+    "RiemannGaussian.ZetaRieszCoprimePlateauAudit.coprime_cutoff_cross_positive"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "log": ".lake/riesz-coprime-plateau-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "jobs": 10443,
+      "log": ".lake/riesz-coprime-plateau-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "log": ".lake/riesz-coprime-plateau-root.log"
+    },
+    "namespaceAudit": {
+      "exitCode": 0,
+      "declarations": 8,
+      "generatedDeclarations": 2,
+      "linters": 14,
+      "allPublicAxioms": {
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.sharp_late_plateau": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.correlation_late_plateau": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.plateau_energy_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.phaseEnergy_plateau_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.plateau_pairing_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.signed_plateau_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.coprime_three_prime_regression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoprimePlateauAudit.coprime_cutoff_cross_positive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/riesz-coprime-plateau-audit.log"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "report": ".lake/riesz-joined-count-probe.json",
+      "reportHash": "9774dc5f26a16b385788b5758054f1588aee1c9e422261d4e77df8e553e06616",
+      "log": ".lake/riesz-joined-count-probe.log",
+      "summary": {
+        "cases": 12,
+        "completeEnergyCrossCountReinforces": 7,
+        "completeEnergyCrossCountCancels": 5,
+        "remainingMaskedCrossCountReinforces": 8,
+        "remainingMaskedCrossCountCancels": 4,
+        "remainingSameCountNegative": 11,
+        "remainingJoinedNetPositive": 4,
+        "completeEnergyJoinedToCountDiagonalRatioRange": [
+          0.4763721176567546,
+          1.3948983693959935
+        ],
+        "cutoffPeriodSubsetPriceSavingRange": [
+          0.00034420083023645187,
+          0.0022794670954972007
+        ]
+      },
+      "fullPopulationUsed": false,
+      "nativeEventualOrderThresholdReached": false,
+      "intervalCertificate": false,
+      "largePrimeLeanCertificates": false,
+      "commonAmplitudeRescaling": true,
+      "allOriginalMasksNumericallyChecked": true,
+      "allSelectedUniverseSubsetsAndCountsIncluded": true,
+      "adverseCutoffsSelectedOnceOnEntireConstructedPopulation": true,
+      "sameAdverseSetUsedForAllOrderedPairAndCountTerms": true,
+      "remainingSharedFactorAndNearPhaseMasksRetained": true,
+      "completeAndRemainingMatricesDistinguished": true,
+      "eventualCountCropAppliedPrematurely": false,
+      "sourceScaleBudgetCompared": false,
+      "cofinalCount56OrManyBinPopulationCertified": false
+    },
+    "allPriorMathematicalSourcesPreserved": 2783,
+    "stagedSemiprimeBothIndexAndWorktreePreserved": [
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/semiprime-modular-signal-audit.json",
+      "scripts/probe_semiprime_modular_signal.py",
+      "scripts/probe_semiprime_partial_information.py"
+    ],
+    "READMEUnchanged": true,
+    "publicMetadataUnchangedExceptFamilies": true,
+    "HEADUnchanged": true,
+    "sourcePlaceholderScan": true,
+    "whitespaceChecksPassed": true,
+    "widerPublicationGatesRun": false
+  },
+  "weightedLatePrefixMoment": "sum n in S, mu(n)*w(n), with original signed weights retained",
+  "strictReflectedEndpointRetained": true,
+  "oneSidedFinitePlateauBoundProved": true,
+  "wholeNativeCoreCommonPlateauAsserted": false,
+  "commonMomentNativeMagnitudeBoundProved": false,
+  "coprimeRegressionUsesOriginalCarrierWeights": false,
+  "coprimeRegressionIsNativePhysicalCore": false,
+  "generalCoprimalityImpliesOrthogonality": false,
+  "weightedArithmeticCofinalEstimateRefuted": false,
+  "originalFloorComparisonChanged": false,
+  "newIndependentSourceScaleMainSavingProved": false,
+  "remainingIndependentBudget": "remainingEnergy <= 3/(320*(N+1))",
+  "remainingIndependentBudgetProved": false,
+  "floorProved": false,
+  "ceilingProved": false,
+  "newZeroExclusionProved": false,
+  "newPhysicalCarrierIntroduced": false,
+  "committedOrPushed": false
+}
