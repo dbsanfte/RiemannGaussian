@@ -1,0 +1,439 @@
+{
+  "date": "2026-10-03",
+  "module": "RiemannGaussian.ZetaRieszLowCountSelbergAudit",
+  "kind": "Negative go/no-go test for absolute Selberg completion errors",
+  "immutablePins": [
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20/ZetaRieszLowCountSelbergAudit.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_low_count_selberg_audit.py",
+      "sha256": "a7122e332672cc67b3aba15d92b448ac6ec0571214db904337e54184b8c6fa97",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/a7122e332672cc67b3aba15d92b448ac6ec0571214db904337e54184b8c6fa97/probe_riesz_low_count_selberg_audit.py"
+    },
+    {
+      "path": "docs/zeta-riesz-low-count-selberg-audit.md",
+      "sha256": "7a3637ded56a0ec7ff90ce89d26623487234402948abefa84a868c4e9a819f89",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/7a3637ded56a0ec7ff90ce89d26623487234402948abefa84a868c4e9a819f89/zeta-riesz-low-count-selberg-audit.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a4de425f209fb2bd0d48917c2c01366818a0be8fc168032d8e61382c5476696a",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/a4de425f209fb2bd0d48917c2c01366818a0be8fc168032d8e61382c5476696a/AGENTS.md"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5/ZetaRieszLowCountSignedBoundary.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadPriceAudit.lean",
+      "sha256": "96a6ae9f5d1cdbb3c20f4c24db615926032750ecc132683068673da4df2151b3",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/96a6ae9f5d1cdbb3c20f4c24db615926032750ecc132683068673da4df2151b3/ZetaRieszGlobalHeadPriceAudit.lean"
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLogarithmicConvolution.lean",
+      "sha256": "6b1d104fa1e1275bf0189d8576b376a4b60dd8f9b1420762032515610582c895",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/6b1d104fa1e1275bf0189d8576b376a4b60dd8f9b1420762032515610582c895/SuzukiLogarithmicConvolution.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimePairDiagonal.lean",
+      "sha256": "f3e235e1147764073f50263325f52aa25e3acb321eda5ec64f1175b58f707c30",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/f3e235e1147764073f50263325f52aa25e3acb321eda5ec64f1175b58f707c30/ZetaPrimePairDiagonal.lean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszLowCountSelbergAudit.olean",
+      "sha256": "12406b4a8d4706e47ceeb7559cc3cac19bc2f85b49976dddaebe8b39bf31fedc",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/12406b4a8d4706e47ceeb7559cc3cac19bc2f85b49976dddaebe8b39bf31fedc/ZetaRieszLowCountSelbergAudit.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f/RiemannGaussian.olean"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/Audit.lean",
+      "sha256": "16279e710572336af3d1f48a137398b685f06e33f57e74f4287f0f236a77f2ee",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/16279e710572336af3d1f48a137398b685f06e33f57e74f4287f0f236a77f2ee/Audit.lean"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/strict.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/build.log",
+      "sha256": "262f35e0d1da3c612f4c6c61afd31212b2440996fc930ee7affcf3397c7ddae8",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/262f35e0d1da3c612f4c6c61afd31212b2440996fc930ee7affcf3397c7ddae8/build.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/audit.log",
+      "sha256": "aa4ddfe1be1978126e1c9e408f3ff59fbc74d8906ce69b9cd036c94a094b3c55",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/aa4ddfe1be1978126e1c9e408f3ff59fbc74d8906ce69b9cd036c94a094b3c55/audit.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/axioms.json",
+      "sha256": "8100e7653598a3ebb8caa6d7e27ddb1ff011d73c3a8da456aa198a247b1934a8",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/8100e7653598a3ebb8caa6d7e27ddb1ff011d73c3a8da456aa198a247b1934a8/axioms.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/probe.json",
+      "sha256": "d4ed6451c9d5edb9b04d17efa66596beba6f1ddbeda5247b400e81581012af6f",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/d4ed6451c9d5edb9b04d17efa66596beba6f1ddbeda5247b400e81581012af6f/probe.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/unrelated-before.json",
+      "sha256": "432c79da09d31655d369f91908c1990936c6f747838427f167c5ca92e6ffe2b8",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/432c79da09d31655d369f91908c1990936c6f747838427f167c5ca92e6ffe2b8/unrelated-before.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-low-count-selberg-audit/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/diff-check.log"
+    }
+  ],
+  "validation": {
+    "strictLeanExitCode": 0,
+    "warningAsError": true,
+    "targetedBuildExitCode": 0,
+    "targetedBuild": "RiemannGaussian.ZetaRieszLowCountSelbergAudit",
+    "frozenOrdinaryRootPlusExplicitLeafAudit": true,
+    "lintExitCode": 0,
+    "linters": 14,
+    "allDeclarationTransitiveAxiomAudit": true,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 35,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefectPrice._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_not_correction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefectPrice._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.eventually_selberg_defect_price_growth",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefect_prime_eq_zero._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_pair._proof_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_eq_moebius",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.eventually_selberg_defect_price_growth._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_defect_atom_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.pair_divisors._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_8",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_defect_lower._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.pair_divisors._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.pair_divisors",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.not_frequently_native_selberg_defect_price_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_7",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime._simp_1_6",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefect.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_defect_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefectPrice_tendsto_atTop",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_pair._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_pair_data",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_pair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.pair_divisors._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.pair_divisors._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_joined_eq_completed",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergDefect_prime_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSelbergAudit.0.RiemannGaussian.ZetaRieszLowCountSelbergAudit.balanced_largest",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.selbergCoefficient_prime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSelbergAudit.balancedProducts_subset_periods",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszLowCountSelbergAudit",
+        "declarations": 38
+      }
+    ],
+    "exactRationalProbeCases": 40,
+    "probeExitCode": 0,
+    "gitDiffCheckExitCode": 0
+  },
+  "proved": {
+    "primeDefectIsExactlyZero": "selbergDefect_prime_eq_zero",
+    "actualPairSelbergCoefficient": "-2*log(p)*log(q)/log(p*q)",
+    "balancedOwnerHeadAndFullCorrectionAbsent": true,
+    "actualMovingLengthRetained": true,
+    "uniformBalancedDefectLower": "N/20 for N>=65536",
+    "balancedLabelsAreRetainedCompletePeriods": true,
+    "unsignedDefectPriceLower": "(u*exp(-9/2)/216)*(2*u)^N/(N+1)^3 eventually",
+    "unsignedDefectPriceTendsToInfinity": true,
+    "nativeDyadicCofinalFixedPriceBoundImpossible": true
+  },
+  "scope": {
+    "localOnly": true,
+    "noSubagents": true,
+    "noCommitsOrPushes": true,
+    "noRootRegistrationOrPublicEditsByThisSlice": true,
+    "noWiderGates": true,
+    "compiledOrdinaryRootUnchanged": true,
+    "noNewBudgetOrCreditSpent": true,
+    "noGenericNormBoundForSignedMain": true,
+    "noClaimSignedDefectDiverges": true,
+    "noClaimAllSelbergApproachesImpossible": true,
+    "arithmeticSignedEstimateStrengthened": false,
+    "numericalProbeIsNotPrimeEnumeration": true
+  },
+  "openTarget": {
+    "quantity": "NET signed lowCountPeriods",
+    "cofinalUpper": "399/5000+o(1)",
+    "proved": false,
+    "floorStillOpen": true,
+    "multiplicityCeiling42Over25StillOpen": true,
+    "noZeroExclusionOrRH": true
+  },
+  "preservation": {
+    "baselineFiles": 332,
+    "ownedBaselinePath": "AGENTS.md",
+    "unchangedOtherBaselineFiles": 328,
+    "concurrentExternalChangesPreserved": [
+      {
+        "path": "RiemannGaussian.lean",
+        "beforeSha256": "9aa7349eae2b51dd701b7052f0d84abc2ffb2b491cea7c18494e18493c9635f1",
+        "observedAfterSha256": "d2923931b98199e5e547ca88b6149be8aa6f666bd140ecc13a38cd510fa34ee4",
+        "reason": "Concurrent semiprime work; this slice never edited this path."
+      },
+      {
+        "path": "RiemannGaussian/SemiprimeRowPeriods.lean",
+        "beforeSha256": "15d4069d3daaaa04cc7a75b891beabdc83e16dcf9424c4e57f87c841bc5d0fe3",
+        "observedAfterSha256": "0464c581f5cd7bd163272b3d1b5dc2c607652d44ded8780cf79660b391644822",
+        "reason": "Concurrent semiprime work; this slice never edited this path."
+      },
+      {
+        "path": "docs/theorem-explorer/metadata.json",
+        "beforeSha256": "07835227789172dfe9b3157de36c636fa2addd57816a63d24389b68f2a421112",
+        "observedAfterSha256": "365a9c8d4ea8b15029c933ee79332d2343075ef6da1b3c9b204e8e1bcd3332d3",
+        "reason": "Concurrent semiprime work; this slice never edited this path."
+      }
+    ]
+  }
+}

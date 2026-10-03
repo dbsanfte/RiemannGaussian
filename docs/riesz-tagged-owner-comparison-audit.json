@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Joined signed comparison for literal one-small-prime owner rows with exact prime-head cancellation and geometric centered error.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedOwnerComparison.lean",
+      "sha256": "95be00dbcc744230d6edf419ef8e53ff5274039d5b2e6326d022aebe93ede1d1",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-95be00dbcc744230d6edf419ef8e53ff5274039d5b2e6326d022aebe93ede1d1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughOwnerComparison.lean",
+      "sha256": "7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmoothOwnerDiscrepancy.lean",
+      "sha256": "7e4411e542f8bfbd09e88b75327e2df3dbdaf83b981b30c84d169ab365d34dea",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-7e4411e542f8bfbd09e88b75327e2df3dbdaf83b981b30c84d169ab365d34dea.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLongCutoffError.lean",
+      "sha256": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCubicSieveCost.lean",
+      "sha256": "c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeWeightedSieve.lean",
+      "sha256": "725af814f98582f5ce263052d5895bff5a5fc9d2bbffa1d77942d7174b91c480",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-725af814f98582f5ce263052d5895bff5a5fc9d2bbffa1d77942d7174b91c480.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_tagged_owner_comparison.py",
+      "sha256": "e56d80591553b4067e0bda42773882e94938f93138c7e7d11fa349f58c469895",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-e56d80591553b4067e0bda42773882e94938f93138c7e7d11fa349f58c469895.py"
+    },
+    {
+      "path": "scripts/probe_riesz_rough_owner_comparison.py",
+      "sha256": "31a7a8e4567c1697aa401a6a3bf4d2dfaa5e42106b16f71411e6d10b85d00663",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-31a7a8e4567c1697aa401a6a3bf4d2dfaa5e42106b16f71411e6d10b85d00663.py"
+    },
+    {
+      "path": "docs/zeta-riesz-tagged-owner-comparison.md",
+      "sha256": "45bfa76bf854fd7ba1c75a63f09313274506f0c14f316f260af791e5a1abd6ae",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-45bfa76bf854fd7ba1c75a63f09313274506f0c14f316f260af791e5a1abd6ae.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "7634cf03bae2bb5f9a09a0644c4644893cb1d959f446671ce355779b98492848",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-7634cf03bae2bb5f9a09a0644c4644893cb1d959f446671ce355779b98492848.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; compiled ordinary root plus explicit leaf. No full-root source rebuild, wider gates, commit or push.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszTaggedOwnerComparison.lean",
+      "exitCode": 0,
+      "harmlessTacticInformationInLog": true
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszTaggedOwnerComparison --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-tagged-owner-comparison/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "rootSourceNotRebuilt": true,
+      "lintersPerNamespace": 14
+    },
+    "compiledRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "compiledLeafSha256": "19127b1a453e0165038314fbb387c45fa345085af6d3b3e6d419096fd411fbcd",
+    "publicTheorems": 13,
+    "theoremsIncludingPrivateAndGenerated": 34,
+    "onlyStandardAxioms": true,
+    "optionalProbeOutsideBuildsAndCI": true
+  },
+  "exactResults": {
+    "carrier": "Existing owner residualCoefficient times zetaPrimeLogKernel",
+    "newSourceCarrierDefined": false,
+    "radiusCeiling": "10001/20000",
+    "taggedMeasure": "sieve(S)-sieve(insert r S)",
+    "originalSquarefreeRoughDivisibilityMasksRetained": true,
+    "originalOwnerFactorialOrdersAndProductPhaseRetained": true,
+    "allCofactorCountsJoined": true,
+    "ordinaryPrimeHeadCancelsExactlyWhenTagBelowRow": true,
+    "ordinaryPrimeHeadRemovedFromUnmarkedRoughRows": false,
+    "exactTwoHinges": "R_b(a/r)-R_(b-log r)(a/r)",
+    "signedMain": "tagged Riesz density difference times signed smooth phase sum divided by L*p",
+    "signedMainNormPaid": false,
+    "retainedTagSet": "V subset T; choose V above N^2 for the physical lower mask",
+    "otherSmallPrimeSet": "T.erase r",
+    "globalTagCost": "card(V)<=N^3; charged ONLY to comparison errors",
+    "forbiddenPrimeCeiling": "N^3",
+    "sieveCostAbsorption": "eventually exp(N/1000)",
+    "geometry": [
+      "N>=32",
+      "0<M<X<=2M",
+      "X<p",
+      "N^3<=M",
+      "R<=M",
+      "R^4<=M^3",
+      "exp(N/2)<=M",
+      "0<L",
+      "owner prime p eligible",
+      "log p<=L",
+      "L-log p<=log(R+1)",
+      "log Q<=203N/100"
+    ],
+    "joinedErrorBound": "8u*C*(6+abs(y))*(N+1)*N^3*(1+(203/100)N)*exp(-3N/500)",
+    "joinedComparisonErrorTendsToZero": true,
+    "eventualStartExistential": true,
+    "physicalPrimeSupportProvedWhenAllSmallPrimesInTAndTagAboveN2": true,
+    "tagAndOwnerIncidencesInjective": true,
+    "nativeCountCropRetainedBySameExistingAllowance": true,
+    "extraCountCreditCreated": false,
+    "entireCoreMaskAlignmentProved": false,
+    "ownerSmallerThanWholeCofactorCovered": false,
+    "explicitBoundaryRates": [
+      "u*(39/20)*exp(1/40)<=exp(-1/200000)",
+      "u*(203/100)*exp(-3/200)<=exp(-1/200000)"
+    ],
+    "actualEndpointRadialBound": "u^(N+1)*radial_N(a*N)<=(N+1)*u*a*exp(-N/200000), a in {39/20,203/100}",
+    "signedInteriorSmoothIntegralBoundProved": false,
+    "signedDiscreteMainBoundProved": false,
+    "noGoAuditsAndPreviousPositiveResultsPreserved": true
+  },
+  "numericalDiagnostics": {
+    "toyCases": 12,
+    "continuousCases": 18,
+    "toysFailLargeCofactorAndOriginalCoreHypotheses": true,
+    "geometricTheoremApplied": false,
+    "nativeCofinalPoints": false,
+    "exactToyTagHeadAndTwoHingeRegressionChecked": true,
+    "allCountsAndOrdersRetained": true,
+    "floatingNotIntervalCertified": true,
+    "continuousOrders": [
+      256,
+      640,
+      1536,
+      4096,
+      8192,
+      65536
+    ],
+    "continuousOwnerLogSlopes": [
+      "1.025",
+      "1.10",
+      "1.15"
+    ],
+    "continuousHeight": 54,
+    "exactOldOwnerSelectorAndMovingTotalLogVariableRetained": true,
+    "continuousDensityScalarAndDiscreteMasksNotIncluded": true,
+    "continuousTailBoundOnlyOmittedAntiderivativeSeriesNotRoundoff": true,
+    "continuousNormNotAlreadySmallOrMonotone": true,
+    "sourceScaledToyOrModelValuesAreWholeFloorUnits": false
+  },
+  "artifacts": [
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/Audit.lean",
+      "sha256": "90756a0635aec6be16b970bfd6336bdc8818c77881555be7017cf197aa300625",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-90756a0635aec6be16b970bfd6336bdc8818c77881555be7017cf197aa300625.lean"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/axioms.json",
+      "sha256": "146cd3aab1e155690924a7c13174f6a38b232eafdb65879c542994e00249d040",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-146cd3aab1e155690924a7c13174f6a38b232eafdb65879c542994e00249d040.json"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/lean.log",
+      "sha256": "7512b1cd139ccdd3516975d5e0d371239c94baa5a8f12681c45c86e1fba030f9",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-7512b1cd139ccdd3516975d5e0d371239c94baa5a8f12681c45c86e1fba030f9.log"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/build.log",
+      "sha256": "fd85879612d4508d5b45f9353d24625588947e456a54f5c9dff7ed820c7f73c3",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-fd85879612d4508d5b45f9353d24625588947e456a54f5c9dff7ed820c7f73c3.log"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/audit.log",
+      "sha256": "64e74fac682e94e55c22bd34152b268035eeb9784e47a8faa22c3219cc89f4e1",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-64e74fac682e94e55c22bd34152b268035eeb9784e47a8faa22c3219cc89f4e1.log"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/probe.json",
+      "sha256": "26321dbd05fd47f5021bef5f0789432993c85e2b5934019830aefb20d45a4bb1",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-26321dbd05fd47f5021bef5f0789432993c85e2b5934019830aefb20d45a4bb1.json"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/probe.log",
+      "sha256": "1e97a1f6f97282ceb45803e15270062c2ceeceae819134150b690d69ad7aed76",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-1e97a1f6f97282ceb45803e15270062c2ceeceae819134150b690d69ad7aed76.log"
+    },
+    {
+      "path": ".lake/riesz-tagged-owner-comparison/write_report.py",
+      "sha256": "b74e74f83dd4aead8eff5a45f8741d2452bac69d3f208c886396b69b0f082aae",
+      "snapshot": ".lake/riesz-tagged-owner-comparison/snapshot-b74e74f83dd4aead8eff5a45f8741d2452bac69d3f208c886396b69b0f082aae.py"
+    }
+  ],
+  "remaining": {
+    "nativeIndependentFloorTarget": "-399/5000",
+    "numericalFloorProved": false,
+    "multiplicityCeilingTarget": "42/25",
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "newZeroFreeRegionProved": false,
+    "riemannHypothesisProved": false,
+    "nextEstimate": "Independent signed smooth-weight bound across complete total-log windows; retain the owner selector, exterior boundaries and actual remaining masks."
+  },
+  "publicReadmeExplorerAndEndpointsChanged": false,
+  "concurrentSemiprimeFilesModifiedByThisSlice": false,
+  "committed": false,
+  "pushed": false
+}

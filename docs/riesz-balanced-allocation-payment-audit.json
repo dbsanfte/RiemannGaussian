@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Apply the existing independent allocation-tail bound to EVERY label of the remaining balanced population and spend it in the actual joint floor; the signed main minus the same prime head has no allocation mask.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointAllocationFloor.lean",
+      "sha256": "72f3907ea23f016e0201fc0a5d3ba1d1ab6dd140108e29ce22daf255ab773666",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-72f3907ea23f016e0201fc0a5d3ba1d1ab6dd140108e29ce22daf255ab773666.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszParityShareTail.lean",
+      "sha256": "70de28a8081cfa5581e17c8b34d611f7ba686750cf6e943186c104ac28fb2ab4",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-70de28a8081cfa5581e17c8b34d611f7ba686750cf6e943186c104ac28fb2ab4.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszParityShareError.lean",
+      "sha256": "1fdda2dca0bbb2d06b5342fc020da25ee1ef51420ae296acbbf5ea909842e203",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-1fdda2dca0bbb2d06b5342fc020da25ee1ef51420ae296acbbf5ea909842e203.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPeriods.lean",
+      "sha256": "d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "sha256": "44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAssignedCompanion.lean",
+      "sha256": "3ec9449705b65500ab18944cf50f0d91d06fad41534157bfd67a576bea791254",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-3ec9449705b65500ab18944cf50f0d91d06fad41534157bfd67a576bea791254.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean",
+      "sha256": "d0b9c8dc5a4d704a97cffeb06eb8ad9012810d548781c31e80466da331bed902",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-d0b9c8dc5a4d704a97cffeb06eb8ad9012810d548781c31e80466da331bed902.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-balanced-allocation-payment.md",
+      "sha256": "6c9b8ecbd8a9ac1bdec5269ab6fd6242a4e5adcc6999139a9c0076229a75c070",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-6c9b8ecbd8a9ac1bdec5269ab6fd6242a4e5adcc6999139a9c0076229a75c070.md"
+    },
+    {
+      "path": "docs/riesz-balanced-owner-floor-audit.json",
+      "sha256": "488b162016a196c0495119347d67f4014a53ddf3dedc0626a3b4241945752fec",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-488b162016a196c0495119347d67f4014a53ddf3dedc0626a3b4241945752fec.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "336748f5993c8a0528c69937bd7d6e5fa5f4787133766a22348192118f200f8b",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-336748f5993c8a0528c69937bd7d6e5fa5f4787133766a22348192118f200f8b.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszBalancedAllocationPayment.olean",
+      "sha256": "3392c400fae086cfe50f1b71bbffdf838acc731a488b0f6a83fc31ecbbbd8005",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-3392c400fae086cfe50f1b71bbffdf838acc731a488b0f6a83fc31ecbbbd8005.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only: strict leaf source, targeted leaf build, frozen compiled ordinary root plus explicit leaf. No root-source rebuild or wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszBalancedAllocationPayment --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-balanced-allocation-payment/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "namespaces": 1,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "publicTheorems": 14,
+    "publicDefinitions": 6,
+    "compiledDeclarations": 29,
+    "compiledTheoremsIncludingPrivateAndGenerated": 23,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofAndDocumentationSourcesPreserved": true
+  },
+  "exactResults": {
+    "radiusRangeForAllocation": "0<=u<=10001/20000",
+    "phaseHeightForAllocation": "every real y; no zero/exposure hypothesis",
+    "fixedHeightForPreviousHighOwnerJointPayment": "abs(y)>=54",
+    "unchangedCoreTotalLogRange": [
+      "39N/20 strict",
+      "203N/100 closed"
+    ],
+    "unchangedNativeCountCropPhysicalSupportPhaseFactorialKernelAndRieszLength": true,
+    "exactRemainingPopulation": "native squarefree labels with log(largestPrime n)<51N/50",
+    "allPrimeLegsInsideAllocationTail": "largest share<34/65<9/16",
+    "genericAllocationTailTheoremReusedNotClaimedNew": true,
+    "actualNativeCountCropRetainedNoFixedCount39OrLeastShareRestriction": true,
+    "independentComplexNormBoundForEntireAllocationCorrection": true,
+    "normEstimateAppliesToAnySubsetOfEntireRemainder": true,
+    "allocationBudget": "4*radiusCeiling*(N+1)*allocationBoxRate^N*zetaMoebiusLogMajorantMass(1+1/262144)",
+    "rationalRateUpperBound": "allocationBoxRate<9991081/10000000<1",
+    "allocationBudgetTendsToZero": true,
+    "noSmallFiniteOrderValueOfDirichletMassAsserted": true,
+    "exactDifference": "unallocatedRest-residualRest=source-scaled assigned sum on SAME labels",
+    "signedMain": "Re(unallocatedRest)-SAME nativeHead",
+    "originalSignedMainMinusHeadSourceEquivalentToWholeNativeRealCarrier": true,
+    "noAllocationMaskInNewMainWeight": true,
+    "oldWholeNativeTangentCorrectionRetained": true,
+    "allCountsAndCutoffCrossingsJoinedBeforePeriodClipping": true,
+    "allocationBudgetActuallySpentInWholeJoinedPhysicalFloor": true,
+    "sameHighOwnerBudgetAndNativeErrorRetained": true,
+    "oldWholePricesPreservedAsAlternativesNotStackedCredits": true,
+    "clippingMonotonicityUnderAllocationRemovalNotAssumed": true,
+    "noNormPaymentForMainOrHeadSeparately": true,
+    "noCofactorCompletionOrPhaseApproximation": true,
+    "noPercentageOfGlobalFloorDeficitClaimed": true
+  },
+  "openPremises": {
+    "remainingSignedTarget": "original balanced Riesz coefficient sum minus the exact signed prime head, all counts/radial periods joined",
+    "cofinalWholePrice": "price<=399/5000 on a cofinal set of native dyadic indices",
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false,
+    "conditionalEndpointNotCountedAsPremiseProof": true
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "publicEndpointsUnchanged": true,
+    "noReadmeExplorerChanges": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-balanced-allocation-payment/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-allocation-payment/build.log",
+      "sha256": "49e80cf69c355727afd95656824fe15fbb6641186f0fdbff0719012d04440012",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-49e80cf69c355727afd95656824fe15fbb6641186f0fdbff0719012d04440012.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-allocation-payment/audit.log",
+      "sha256": "72425258987c5544c81bf5586558d2d6a2a2bd0ea5c9aab123e8c22e9c028f43",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-72425258987c5544c81bf5586558d2d6a2a2bd0ea5c9aab123e8c22e9c028f43.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-allocation-payment/Audit.lean",
+      "sha256": "7c4f76e127811d44ad9d6812c70b7b90f5bad75d8308ad498c3af03fd86c4224",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-7c4f76e127811d44ad9d6812c70b7b90f5bad75d8308ad498c3af03fd86c4224.lean"
+    },
+    {
+      "path": ".lake/riesz-balanced-allocation-payment/axioms.json",
+      "sha256": "58c5a2fe1232991c6e0e93f30fe35ade3e996f6e66eacac56b383f1eeba41448",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-58c5a2fe1232991c6e0e93f30fe35ade3e996f6e66eacac56b383f1eeba41448.json"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-allocation-payment/write_report.py",
+      "sha256": "7396aeedc3a4a5101b98bd435f4e3bd6b23971c1f1ca4c91d88be748360a54f7",
+      "snapshot": ".lake/riesz-balanced-allocation-payment/snapshot-7396aeedc3a4a5101b98bd435f4e3bd6b23971c1f1ca4c91d88be748360a54f7.py"
+    }
+  ]
+}

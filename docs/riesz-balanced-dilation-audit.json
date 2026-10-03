@@ -1,0 +1,190 @@
+{
+  "classification": "negative applicability audit; not an arithmetic floor saving",
+  "committed": false,
+  "excludedScope": [
+    "no signed outer-prime aggregate bound",
+    "no global exclusion of large-sieve arguments",
+    "no actual-prime numerical enumeration",
+    "no arithmetic density transport",
+    "no zero exclusion or RH claim"
+  ],
+  "focusedCheck": {
+    "declarations": 17,
+    "lintErrors": 0,
+    "namespaceLinters": 14,
+    "onlyStandardAxioms": true,
+    "theoremAxioms": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.literal_atom_eq"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.chi.eq_1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.relative_cross_cost_ge_one"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.weighted_cross_eq"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.phase_cross"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.balanced_cross_no_phase_saving"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.unweighted_cross_norm"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.unweighted_cross_norm._proof_1_1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.norm_weighted_cross_eq"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.norm_chi"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.balanced_amplitude_pos._proof_1_1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.balanced_amplitude_pos"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.amplitude._proof_2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.balanced_literal_cross_eq"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "RiemannGaussian.ZetaRieszBalancedDilationAudit.amplitude._proof_1"
+      }
+    ],
+    "theoremsIncludingGenerated": 15,
+    "warningsAsErrors": true
+  },
+  "frozenCompiledRoot": {
+    "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "unchanged": true
+  },
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "literature": [
+    {
+      "title": "A generalization of Katai's orthogonality criterion with applications",
+      "url": "https://www.aimsciences.org/article/doi/10.3934/dcds.2019108",
+      "usedOnlyFor": "small prime-dilation correlation hypothesis, not as a paid arithmetic premise"
+    }
+  ],
+  "localOnly": true,
+  "numericalDiagnostic": {
+    "cases": 28,
+    "isArithmeticBound": false,
+    "maximumIdentityRelativeError": 6.195359117885946e-15,
+    "minimumNormalizedRowCorrelation": 0.9999999999994891
+  },
+  "preservation": {
+    "baselinePaths": 4488,
+    "unrelatedChangedConcurrently": [],
+    "unrelatedPathsNotOverwritten": true
+  },
+  "provedScope": "actual prime-dilation correlation of the untouched balanced atom block, all real factorial weights retained",
+  "pushed": false,
+  "rootRegistrationChangedByThisSlice": false,
+  "schemaVersion": 1,
+  "sourceAndEvidencePins": {
+    ".lake/riesz-balanced-dilation-audit/axioms.json": "55788b908ef52738a6f96e271973099f5a6d50ee03d189b48f7bffc24e5a5088",
+    ".lake/riesz-balanced-dilation-audit/check.log": "9977c00986bd50e187c8c98e9e886996bed211ca3ba22b81894e83dfd55fb6fa",
+    ".lake/riesz-balanced-dilation-audit/numerics.json": "618b7f707f0d62d205120456c62a61627e79076bae87132efaca261430e2283a",
+    "RiemannGaussian/ZetaArithmeticBandCorrelation.lean": "d8ce0c573251afcdaeb14d0423b463e3a3a099a8dd2036fe84050904d7748533",
+    "RiemannGaussian/ZetaRieszGlobalHeadPriceAudit.lean": "96a6ae9f5d1cdbb3c20f4c24db615926032750ecc132683068673da4df2151b3",
+    "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20",
+    "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5",
+    "RiemannGaussian/ZetaRieszPolynomialPairPayment.lean": "df12df4daabfa594f0e23d85ad1aef6931418df230a1ab6693b6b32ef31dbaa1",
+    "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3",
+    "docs/zeta-riesz-balanced-dilation-audit.md": "e959d350792e9e6336d56d3f04b0689f66c809f0435852fbd04696a9f9366035",
+    "scripts/CheckRieszBalancedDilation.lean": "1de23a0ccce68a180a053aa978e3b25225743465763ec48f0e3ede1048a34ca9",
+    "scripts/probe_riesz_balanced_dilation.py": "8703295a183f8e59736d82686d139052a84061264accb7738d6c5991237605c0"
+  },
+  "target": {
+    "constantSavingCredited": 0,
+    "gapUnchanged": true,
+    "milestoneAchieved": false,
+    "signedUpperBound": "399/5000 + o(1)",
+    "targetQuantity": "Re literalPairDefect / surviving balanced-pair aggregate"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszBalancedDilationAudit.balanced_literal_cross_eq",
+    "RiemannGaussian.ZetaRieszBalancedDilationAudit.relative_cross_cost_ge_one",
+    "RiemannGaussian.ZetaRieszBalancedDilationAudit.unweighted_cross_norm"
+  ],
+  "wideGatesRun": false
+}

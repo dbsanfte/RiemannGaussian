@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "baseHead": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "purpose": "Improve finite-population coverage and distinguish actual phase correlation from generic aggregation/sampling gains; no new native arithmetic estimate.",
+  "sources": {
+    "scripts/probe_riesz_closed_inventory.py": {
+      "path": "scripts/probe_riesz_closed_inventory.py",
+      "sha256": "8c3dd519870aaadd351dee17db643429044d3a9ef492806e865f858ce341299c",
+      "snapshot": ".lake/riesz-population-cancellation/source-8c3dd519870aaadd351dee17db643429044d3a9ef492806e865f858ce341299c.py"
+    },
+    "scripts/probe_riesz_factored_population.py": {
+      "path": "scripts/probe_riesz_factored_population.py",
+      "sha256": "cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf",
+      "snapshot": ".lake/riesz-population-cancellation/source-cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf.py"
+    },
+    "scripts/probe_riesz_canonical_joint.py": {
+      "path": "scripts/probe_riesz_canonical_joint.py",
+      "sha256": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+      "snapshot": ".lake/riesz-population-cancellation/source-8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b.py"
+    },
+    "scripts/probe_riesz_complex_null_profiles.py": {
+      "path": "scripts/probe_riesz_complex_null_profiles.py",
+      "sha256": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2",
+      "snapshot": ".lake/riesz-population-cancellation/source-596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2.py"
+    },
+    "scripts/probe_riesz_fixed_count_period.py": {
+      "path": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b",
+      "snapshot": ".lake/riesz-population-cancellation/source-04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b.py"
+    },
+    "docs/zeta-riesz-population-cancellation-probe.md": {
+      "path": "docs/zeta-riesz-population-cancellation-probe.md",
+      "sha256": "633e343bb618129342204585af033511276a2741b320075f86fc2bc3b87e9748",
+      "snapshot": ".lake/riesz-population-cancellation/source-633e343bb618129342204585af033511276a2741b320075f86fc2bc3b87e9748.md"
+    }
+  },
+  "reports": {
+    ".lake/riesz-closed-inventory/report.json": {
+      "path": ".lake/riesz-closed-inventory/report.json",
+      "sha256": "718a525326ae0ee2cc83a223d19f0d37f0675d99c25b2142c59b744abad45055",
+      "snapshot": ".lake/riesz-population-cancellation/source-718a525326ae0ee2cc83a223d19f0d37f0675d99c25b2142c59b744abad45055.json"
+    },
+    ".lake/riesz-factored-population/phase-control-report.json": {
+      "path": ".lake/riesz-factored-population/phase-control-report.json",
+      "sha256": "079e7c713fede96a6d78345e4771f6d0f9740e390cd8c2b9bf17e3942b26fe1d",
+      "snapshot": ".lake/riesz-population-cancellation/source-079e7c713fede96a6d78345e4771f6d0f9740e390cd8c2b9bf17e3942b26fe1d.json"
+    },
+    ".lake/riesz-factored-population-phase31.log": {
+      "path": ".lake/riesz-factored-population-phase31.log",
+      "sha256": "67dec76bc5aebe43f0278a8edbac811d0ae2ce3851a760a9161bc55f5dcb8bcb",
+      "snapshot": ".lake/riesz-population-cancellation/source-67dec76bc5aebe43f0278a8edbac811d0ae2ce3851a760a9161bc55f5dcb8bcb.log"
+    }
+  },
+  "inputCaches": [
+    {
+      "path": ".lake/riesz-factored-population/inputs/N32-seed317-M512-bins16.json",
+      "sha256": "9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888",
+      "snapshot": ".lake/riesz-population-cancellation/source-9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N32-seed919-M512-bins16.json",
+      "sha256": "60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c",
+      "snapshot": ".lake/riesz-population-cancellation/source-60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N64-seed317-M512-bins16.json",
+      "sha256": "00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff",
+      "snapshot": ".lake/riesz-population-cancellation/source-00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N64-seed919-M512-bins16.json",
+      "sha256": "085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1",
+      "snapshot": ".lake/riesz-population-cancellation/source-085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1.json"
+    }
+  ],
+  "reference": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/2003-Generating_Random_Factored_Numbers_Easily-SODA.pdf",
+  "scope": {
+    "noNewLeanDeclarations": true,
+    "unchangedNativeTarget": true,
+    "nativeCofinalTarget": "nativeCost - nativeJointCredit <= 399/5000",
+    "publicEndpointsUnchanged": true,
+    "allPriorProofsAndNoGosPreserved": true,
+    "outsideBuildsCI": true,
+    "localOnlyNoPublicationGates": true,
+    "noSubagents": true,
+    "manufacturedInventoriesAreNotDensitySamples": true,
+    "idealFactoredSamplerLawRequiresExactPrimalityAndRandomness": true,
+    "largePrimalityFloatingLogsAndBinEndpointsUncertified": true,
+    "fullLiteralAllocationAndPhaseRetainedInActualRuns": true,
+    "countCropAndCofinalSourceHypothesesNotAppliedAtSmallOrders": true,
+    "randomPhaseControlsAreNotProofCarriers": true,
+    "noSignificanceOrConfidenceCertificate": true,
+    "nativeFloorProved": false,
+    "nativeCreditSizeProved": false,
+    "ceilingProved": false,
+    "zeroExclusionProved": false
+  },
+  "validation": {
+    "scriptsSyntaxChecked": true,
+    "exactRationalSamplerRegressions": {
+      "exactRationalChainLabels": 528,
+      "ceilings": [
+        1,
+        32
+      ],
+      "inclusivePrimeAndCompositeSelfLoops": true,
+      "everySubintervalAcceptanceChecked": true,
+      "leanCertificate": false
+    },
+    "allComputedPeriodPricesNumericallyRecombineToLiteralRieszSum": true,
+    "maximumLiteralIdentityError": 1.169203622808368e-15,
+    "sourceAndInputCacheHashesVerified": true,
+    "all12CountSavingsInsideControlRanges": true,
+    "sampleHalfPoolingAndCountPartitionCostsChecked": true,
+    "newLeanOrWiderGateRunNecessary": false
+  },
+  "versions": {
+    "mpmath": "1.3.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sympy": "1.14.0"
+  },
+  "closedInventoryComparisons": [
+    {
+      "N": 256,
+      "seed": 317,
+      "height": 54.0,
+      "joinedPeriodCost": 169.32641685602644,
+      "pureSubfamiliesCost": 17.065277807468824,
+      "remainingSplitCountFraction": 0.6061631689292536,
+      "mixedLabelsIncreasePrice": true
+    },
+    {
+      "N": 256,
+      "seed": 317,
+      "height": 65.0,
+      "joinedPeriodCost": 92.40993603888116,
+      "pureSubfamiliesCost": 14.24515193273666,
+      "remainingSplitCountFraction": 0.49171708432782746,
+      "mixedLabelsIncreasePrice": true
+    },
+    {
+      "N": 256,
+      "seed": 317,
+      "height": 100.0,
+      "joinedPeriodCost": 56.265720072962026,
+      "pureSubfamiliesCost": 30.22301913677826,
+      "remainingSplitCountFraction": 0.6241881328155251,
+      "mixedLabelsIncreasePrice": true
+    },
+    {
+      "N": 640,
+      "seed": 317,
+      "height": 54.0,
+      "joinedPeriodCost": 777.885478977827,
+      "pureSubfamiliesCost": 9.928678177513286,
+      "remainingSplitCountFraction": 0.6469043132528715,
+      "mixedLabelsIncreasePrice": true
+    },
+    {
+      "N": 640,
+      "seed": 317,
+      "height": 65.0,
+      "joinedPeriodCost": 388.3310262314473,
+      "pureSubfamiliesCost": 4.678509061258229,
+      "remainingSplitCountFraction": 0.4510511473297676,
+      "mixedLabelsIncreasePrice": true
+    },
+    {
+      "N": 640,
+      "seed": 317,
+      "height": 100.0,
+      "joinedPeriodCost": 816.3314701652614,
+      "pureSubfamiliesCost": 2.5232020876806223,
+      "remainingSplitCountFraction": 0.5451342305684955,
+      "mixedLabelsIncreasePrice": true
+    }
+  ],
+  "finitePopulationBatches": [
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 317,
+      "samples": 512,
+      "retainedLabels": 145,
+      "ownerShareRange": [
+        0.22819377202285454,
+        0.5911155981003552
+      ],
+      "selectedCounts": {
+        "5": 38,
+        "4": 35,
+        "6": 33,
+        "7": 16,
+        "3": 16,
+        "8": 7
+      }
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 919,
+      "samples": 512,
+      "retainedLabels": 126,
+      "ownerShareRange": [
+        0.25764798534374483,
+        0.5948635004707898
+      ],
+      "selectedCounts": {
+        "6": 24,
+        "5": 47,
+        "7": 13,
+        "3": 16,
+        "4": 24,
+        "8": 2
+      }
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 317,
+      "samples": 512,
+      "retainedLabels": 170,
+      "ownerShareRange": [
+        0.2678985136309112,
+        0.6402364807809211
+      ],
+      "selectedCounts": {
+        "7": 25,
+        "4": 26,
+        "5": 46,
+        "10": 1,
+        "6": 44,
+        "8": 11,
+        "3": 15,
+        "9": 2
+      }
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 919,
+      "samples": 512,
+      "retainedLabels": 157,
+      "ownerShareRange": [
+        0.22400015720671224,
+        0.638855290460127
+      ],
+      "selectedCounts": {
+        "8": 10,
+        "7": 27,
+        "5": 39,
+        "4": 28,
+        "10": 3,
+        "9": 4,
+        "6": 35,
+        "3": 11
+      }
+    }
+  ],
+  "controlCounts": {
+    "randomPhaseAssignments": 124,
+    "heightComparisons": 372,
+    "actualHeightCases": 12,
+    "heightComparisonsNotIndependent": true
+  },
+  "phaseControlComparisons": [
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 317,
+      "height": 54.0,
+      "signedEstimate": -0.005623995882312141,
+      "uncertifiedStandardError": 0.0069492781979053255,
+      "sampledJoinedCost": 0.019347564614154798,
+      "observedCountSavingFraction": 0.6169051713500457,
+      "controlMeanSavingFraction": 0.5778223509029299,
+      "controlSavingRange": [
+        0.40537825734096056,
+        0.719685470160204
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.0169773237384257,
+      "halfPoolingFraction": 0.8774915126012804,
+      "controlsWithCostNoGreaterThanObserved": 19
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 317,
+      "height": 65.0,
+      "signedEstimate": -0.005294967540136945,
+      "uncertifiedStandardError": 0.006918043173710954,
+      "sampledJoinedCost": 0.019451822016879054,
+      "observedCountSavingFraction": 0.6361167062356556,
+      "controlMeanSavingFraction": 0.5715190073950096,
+      "controlSavingRange": [
+        0.4217852134023421,
+        0.7525974485883817
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.007359991481459192,
+      "halfPoolingFraction": 0.3783702871161714,
+      "controlsWithCostNoGreaterThanObserved": 17
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 317,
+      "height": 100.0,
+      "signedEstimate": 0.006762345189210526,
+      "uncertifiedStandardError": 0.0063207803849312585,
+      "sampledJoinedCost": 0.016042650424919744,
+      "observedCountSavingFraction": 0.6504645925259243,
+      "controlMeanSavingFraction": 0.5652419581322701,
+      "controlSavingRange": [
+        0.41903895251236445,
+        0.6600430778637167
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.006041692459178901,
+      "halfPoolingFraction": 0.3766018892859548,
+      "controlsWithCostNoGreaterThanObserved": 7
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 919,
+      "height": 54.0,
+      "signedEstimate": 0.0027494759945867328,
+      "uncertifiedStandardError": 0.005458959856029479,
+      "sampledJoinedCost": 0.01940412461509951,
+      "observedCountSavingFraction": 0.4705399085312081,
+      "controlMeanSavingFraction": 0.575446937018202,
+      "controlSavingRange": [
+        0.3995490429875258,
+        0.7413456580625064
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.008995896649169829,
+      "halfPoolingFraction": 0.4636074457164423,
+      "controlsWithCostNoGreaterThanObserved": 23
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 919,
+      "height": 65.0,
+      "signedEstimate": -0.0063555047749417025,
+      "uncertifiedStandardError": 0.005967378016881427,
+      "sampledJoinedCost": 0.023352795330461855,
+      "observedCountSavingFraction": 0.5021213873096817,
+      "controlMeanSavingFraction": 0.5221348150559638,
+      "controlSavingRange": [
+        0.35202104552298286,
+        0.7096074273307306
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.004078420678142659,
+      "halfPoolingFraction": 0.17464378976604508,
+      "controlsWithCostNoGreaterThanObserved": 22
+    },
+    {
+      "N": 32,
+      "K": 16,
+      "seed": 919,
+      "height": 100.0,
+      "signedEstimate": -0.002361070331828765,
+      "uncertifiedStandardError": 0.005227843442923338,
+      "sampledJoinedCost": 0.025043267064234098,
+      "observedCountSavingFraction": 0.46444790507586187,
+      "controlMeanSavingFraction": 0.5589884637110379,
+      "controlSavingRange": [
+        0.41703263711108474,
+        0.7629998855195674
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.004042603148577205,
+      "halfPoolingFraction": 0.1614247509403718,
+      "controlsWithCostNoGreaterThanObserved": 28
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 317,
+      "height": 54.0,
+      "signedEstimate": 0.026284964149757055,
+      "uncertifiedStandardError": 0.01603268614514255,
+      "sampledJoinedCost": 0.023466071392340283,
+      "observedCountSavingFraction": 0.6881294191752134,
+      "controlMeanSavingFraction": 0.6078948577571461,
+      "controlSavingRange": [
+        0.5095297202654834,
+        0.7501925029546883
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.013316539917622904,
+      "halfPoolingFraction": 0.5674805848400191,
+      "controlsWithCostNoGreaterThanObserved": 1
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 317,
+      "height": 65.0,
+      "signedEstimate": -0.023692618137182854,
+      "uncertifiedStandardError": 0.01682235481500197,
+      "sampledJoinedCost": 0.059311649193016985,
+      "observedCountSavingFraction": 0.5115206935304766,
+      "controlMeanSavingFraction": 0.6170511257486194,
+      "controlSavingRange": [
+        0.47644578229054113,
+        0.7957773951676674
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.012452526568949879,
+      "halfPoolingFraction": 0.20995077254429081,
+      "controlsWithCostNoGreaterThanObserved": 30
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 317,
+      "height": 100.0,
+      "signedEstimate": -0.013411693137791367,
+      "uncertifiedStandardError": 0.013191478816653245,
+      "sampledJoinedCost": 0.040985234960022585,
+      "observedCountSavingFraction": 0.6207167187253589,
+      "controlMeanSavingFraction": 0.6129621763071553,
+      "controlSavingRange": [
+        0.4808041893649231,
+        0.7335867799814821
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.017431431773298797,
+      "halfPoolingFraction": 0.425310036414372,
+      "controlsWithCostNoGreaterThanObserved": 15
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 919,
+      "height": 54.0,
+      "signedEstimate": -0.0002002176549273692,
+      "uncertifiedStandardError": 0.012149263856217174,
+      "sampledJoinedCost": 0.04775971252775843,
+      "observedCountSavingFraction": 0.5948803318067679,
+      "controlMeanSavingFraction": 0.6174232276178898,
+      "controlSavingRange": [
+        0.4940165695223424,
+        0.7693482549487971
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.012863404962385888,
+      "halfPoolingFraction": 0.26933589591665874,
+      "controlsWithCostNoGreaterThanObserved": 17
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 919,
+      "height": 65.0,
+      "signedEstimate": 0.0021069358768323106,
+      "uncertifiedStandardError": 0.012600199987491468,
+      "sampledJoinedCost": 0.06450931477547799,
+      "observedCountSavingFraction": 0.5885771373879594,
+      "controlMeanSavingFraction": 0.6479030610470785,
+      "controlSavingRange": [
+        0.5369718300877513,
+        0.822445875098282
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.009729540751392166,
+      "halfPoolingFraction": 0.15082381180540255,
+      "controlsWithCostNoGreaterThanObserved": 31
+    },
+    {
+      "N": 64,
+      "K": 16,
+      "seed": 919,
+      "height": 100.0,
+      "signedEstimate": 0.017211729544036394,
+      "uncertifiedStandardError": 0.012867500925153437,
+      "sampledJoinedCost": 0.04107863429164124,
+      "observedCountSavingFraction": 0.6640386366120009,
+      "controlMeanSavingFraction": 0.6347558024411433,
+      "controlSavingRange": [
+        0.5486537741109948,
+        0.7050804780503814
+      ],
+      "observedInsideControlRange": true,
+      "halfPoolingGap": 0.021935836793740143,
+      "halfPoolingFraction": 0.5339962530887666,
+      "controlsWithCostNoGreaterThanObserved": 13
+    }
+  ],
+  "conclusion": "These data do not establish an exceptional arithmetic cancellation mechanism or a native/cofinal floor. Quantitative control of the actual masked signed aggregate remains open."
+}

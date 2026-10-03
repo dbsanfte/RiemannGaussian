@@ -1,0 +1,2735 @@
+{
+  "replay_id": 202610033226,
+  "parent_audit": "docs/semiprime-signed-companion-frontier-audit.json",
+  "source_sha256": {
+    "RiemannGaussian/SemiprimeBitArithmetic.lean": "c21ba7849a0279b1e3990d4b895c28c75d612403385b4ca17fcbf93e37289394",
+    "RiemannGaussian/SemiprimeBitDivision.lean": "40fe4c1fe619d069a943b98c7eb9d02df977796b57a0dfe26479e165d7969faf",
+    "RiemannGaussian/SemiprimeBitPowerWalk.lean": "231bd572afe9ce9849a4ffe8c8eb1a77a46192be1b34488af162ad51a3656c24",
+    "RiemannGaussian/SemiprimeBitPrimeScan.lean": "c3f63eed7555b6aa0c7ede625f0639cb986542c1bf3400aec3561a1da76dac97",
+    "RiemannGaussian/SemiprimeBitProductSort.lean": "842122d63a51d2d49c0a6cff4d4583f69fbe94e078049e73b86b057021308e1d",
+    "RiemannGaussian/SemiprimeBulkNorm.lean": "7d235ccdc1bb3f6138391f2fad425b104257cb51ade8e4e303238e976d971c00",
+    "RiemannGaussian/SemiprimeCartesianCompletion.lean": "4dcdf2b40f62299928c6c6c670126f3f80dbee2d7369f712b43f3b2abc9f0c57",
+    "RiemannGaussian/SemiprimeCentreFreeCover.lean": "73fbd9ee14b2118101148cf564e1e904367812a4294c20b590bafa4018cb2f88",
+    "RiemannGaussian/SemiprimeCollisionPeeling.lean": "dccbab0afc6f9586c631a1959bfe7e774a60b1ea213185e60f35c385e2f56b16",
+    "RiemannGaussian/SemiprimeCommonOrder.lean": "3891af2d7be8095e9f04e1203afc82388be3779732505fe3971300eb80c27c4a",
+    "RiemannGaussian/SemiprimeCompanionCenterSpectrum.lean": "badd6cef9893662f89630a0cec548423dc7973d2c450ecf17b13606eb574e7b6",
+    "RiemannGaussian/SemiprimeCompanionCoverage.lean": "56cffaccc0842207ae92eec1acd787ed70d083e1287a7b80381f1f0b22841d3a",
+    "RiemannGaussian/SemiprimeCompanionRows.lean": "2738429646396fd4d41980a81935625f3b400e3fe1aba853262096dc08c26f68",
+    "RiemannGaussian/SemiprimeDerivativeCoverage.lean": "b83d286e14660de60276636137b2ce76c8f2f59e6c9cb21916b0a53748a15db3",
+    "RiemannGaussian/SemiprimeEuclidRowBudget.lean": "0452feed14dcbd179d65beb9d6a0462b7886f9da9f59734660c68cba57fe6cd2",
+    "RiemannGaussian/SemiprimeEuclidRowFamily.lean": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+    "RiemannGaussian/SemiprimeFirstNorm.lean": "c15112934fa32d24b0cc2191d6be69c9082c84904b5543eea2a6e5cc91230305",
+    "RiemannGaussian/SemiprimeGeometricRows.lean": "1cb0d7217b18fc2b6f6ef58cf05fbeb1faeaeab730825a11b22c6f3bff0477f3",
+    "RiemannGaussian/SemiprimeGroupCoverage.lean": "c44b1c8badd56b0a3fcb3e6b6c34e27cdc9be3843d3384d0aead794e5dd1f948",
+    "RiemannGaussian/SemiprimeGroupSelection.lean": "a283ef1111423cd7996811f9a7861ae8e907c47759283a634c567878d66b3987",
+    "RiemannGaussian/SemiprimeGuardedTrace.lean": "c7a36dec7285bfc5e1c9970e11b562a1d297fcd5261161c9a4ead96f3fb5674a",
+    "RiemannGaussian/SemiprimeIntervalJet.lean": "883f2f359f9b4158abfe58d9a4daa572cec3af623c470f5819e1aeca4a1b3b35",
+    "RiemannGaussian/SemiprimeKernelDescent.lean": "c28f5fe34875ba6715bbc74e0d0b6c0bfd3889a771e8e3e4a0e75b4d09832f95",
+    "RiemannGaussian/SemiprimeKernelResidual.lean": "1bffac1b21201f63bf766e679f8918a9dd2410fb9bceb1e00f06f28a1eefbf36",
+    "RiemannGaussian/SemiprimeKnownBitsBudget.lean": "059a5e9c62bd6cda93159502b783e009fbff891567aaaf27c6cbeec4d1151a6b",
+    "RiemannGaussian/SemiprimeLehmanCoverage.lean": "0c027dc36d65b089750e3b85d1ed97c1d0cb8b730fa2851b54365aa6acd51dc7",
+    "RiemannGaussian/SemiprimeLocalOrderRouting.lean": "567e5bae432ad29c035c5d52f4b5a95744c400083bedf04e71d2f84c719439f4",
+    "RiemannGaussian/SemiprimeLongPeriodExtraction.lean": "dfd7371fbe423bb0b63bdcd06fc5fc57bcedd562377dbae986e003d797e933a1",
+    "RiemannGaussian/SemiprimeLongPowerRouting.lean": "6cffe761fa3082159417d3d5192457f3d6eedb1e54836eef2f841f3c4d1a7013",
+    "RiemannGaussian/SemiprimeMultiplierNorm.lean": "eca3d63c70e11c4a27e078fd7ef6ca3537dcf2d993461440a0cfc4c9ecd02189",
+    "RiemannGaussian/SemiprimeOrderSeparation.lean": "595c30297c6c5a9e3c64118f93c74e6851cc6a28f65cb54944dde64c76e7fde7",
+    "RiemannGaussian/SemiprimePrimeSieve.lean": "0a0a4e31687527011eabe3daadb42764b960713d59b954dd2e732aa3d36ba629",
+    "RiemannGaussian/SemiprimeProgressionPrefix.lean": "80f93289975f374d884a8e79cc34ad926941a43ec3c8cccc782f552013218136",
+    "RiemannGaussian/SemiprimeQAggregate.lean": "7fcba39ef486347dbed8301682c77bd59920b2ab5a6d265dc362080977ed2c81",
+    "RiemannGaussian/SemiprimeQuotientCentering.lean": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+    "RiemannGaussian/SemiprimeQuotientRows.lean": "87fb1526f2de0c692d68c70609fe5797b06a0fd42e7cd9d9e57034fe5b21b741",
+    "RiemannGaussian/SemiprimeRHCancellation.lean": "06d2f7ad4f70567afbb60bebf206e1a7b2a255d141da59fba3b7a2691022f847",
+    "RiemannGaussian/SemiprimeReciprocalRows.lean": "8534529afe8354b7ace2706c536888493262cdb7a389a01a9ffe9830d7821a82",
+    "RiemannGaussian/SemiprimeReflectedCompanions.lean": "f269c0e26614288ce7548ea7b3526eab1f601aa226874fe88b332c4108fce024",
+    "RiemannGaussian/SemiprimeRoughProjection.lean": "49a6e504c6e1161243b1680d9d544f9266363bec4da04f12ac5fe8702e2043f7",
+    "RiemannGaussian/SemiprimeRowDerivative.lean": "852fbfda0dbfb942410704b05c3686b9488af79fb402dfa5627088ee076677af",
+    "RiemannGaussian/SemiprimeRowPeriods.lean": "eef33c3b7fc87de3e0132a848a63899fd6bdff111b362c00482e8b901082615b",
+    "RiemannGaussian/SemiprimeRowStructure.lean": "4eb4abe2171eae5b6e78a4d3bb08efd47aafcacc59920a503e57f487894c9cbc",
+    "RiemannGaussian/SemiprimeSeedLcm.lean": "626d9e7b7cc2971f6a10ed8543fc666ddc0f6214b9e8273898b111aa2d08343f",
+    "RiemannGaussian/SemiprimeSharedIntervalJet.lean": "84cc111a38d5181f4c7c8555744b83f9ad349e31569ff2f5e4ff01a9f562b3e1",
+    "RiemannGaussian/SemiprimeSourceHead.lean": "f9be56a3268ad199df7e25549a30b43878544f0ea1d06853d428cc7a569f3a45",
+    "RiemannGaussian/SemiprimeSquareProductCover.lean": "48669b93df0eb98e28576639a2ff826e0ed0854676406a7be176799f84571a82",
+    "RiemannGaussian/SemiprimeStagedSeed.lean": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6",
+    "RiemannGaussian/SemiprimeStrassenPrefix.lean": "d9e51d4def2119dcee9f0cd00c41fcf028abf3a62a6ef62e4bb0806562f7a42e",
+    "RiemannGaussian/SemiprimeTaggedPooling.lean": "2b9bf857fd17b84c83b307af271503fca471df972a674131611240f585821b99",
+    "RiemannGaussian/SemiprimeTotientMultipliers.lean": "eee1ab5b4942b4ec3db1cf3aab4a7d68e195c06b5e415234c96502ea86773abf",
+    "RiemannGaussian/SemiprimeTotientResidues.lean": "be974f88525d947c44b8796943729ffebb0b2216eed88887a4aa830a69f257a2",
+    "RiemannGaussian/SemiprimeTotientWindow.lean": "a39e34c1eeaceb98de6b43973cc60665dc943b002ae0c2b829ba763b8e67122d",
+    "RiemannGaussian/SemiprimeTraceRows.lean": "39d8f15a2a1917037cf4fa457d25496fa5f8981870a140aeaa7a5234ec9f1d58",
+    "RiemannGaussian/SemiprimeWeightedRows.lean": "cde425e8dd897805acba761997846579ec15ebd50b395043a166c5cb0ffddc69",
+    "RiemannGaussian/SemiprimeWindowConstruction.lean": "927489feaf9489151c585100a55b4503c0401f9708381583d12aa3bb809226f9",
+    "RiemannGaussian/SemiprimeWindowInverse.lean": "ab34fe6879575f4f36ff69cae58b05cfd3cc4bdb1d03c15a4084de1bc448bb95",
+    "RiemannGaussian/SemiprimeWindowSqrt.lean": "3746905317f709e866c356d809ed573409557edf2cbbfdf02c6407b1abb1b7d2",
+    "docs/semiprime-augmented-row-coverage-audit.json": "120b73d4dc22ec13d8dbcb55defc40a773bcc77e1b503d762ce2ff559113253b",
+    "docs/semiprime-augmented-sorted-coverage-audit.json": "f6c3ac48a8fefb6243459c1cd87aff855e6c9a49c26e8b0c8876fd1fdb51f720",
+    "docs/semiprime-bit-arithmetic-audit.json": "038b6e413ca3206bc6274d7dbe6fa34964a1264682778a304833100be2f2a235",
+    "docs/semiprime-bit-division-audit.json": "0d5efab0f3adbbe5171198c1f92d1977be8c12d7ddf505fa6c59b5e7b3e9f033",
+    "docs/semiprime-bit-power-walk-audit.json": "6616b43038b9d982487bf9baf3d918b31b343fbdc03b7d443de1b20aa96efb8e",
+    "docs/semiprime-bit-prime-scan-audit.json": "5eff41612add68ad09f892327f2a730d318d939a8181c11df232efd02cc1755f",
+    "docs/semiprime-bit-product-sort-audit.json": "ba5e750b0262ad8f63ee86e0cef9df270fc4b81643d467b400d93ee830b2827f",
+    "docs/semiprime-bulk-norm-audit.json": "1d66f8fe5f855b1986ac3430eaebc9baee58eab6d1883dc6964fb9fe19d3a92e",
+    "docs/semiprime-collision-peeling-audit.json": "f18c9cda150ebe5994e5b902bc1d01cfc689553d4518373db1bd392854c64303",
+    "docs/semiprime-combined-row-coverage-audit.json": "2c84e215ecb0931fe2c8657f4952e92eb9b7994e4eb6f21856bb2c3ae3d46d44",
+    "docs/semiprime-common-order-audit.json": "6f9b38cde11c9fcc3cfc5ba86d0a56bf40ea5d62a426b06d5ed6d42d17fbaa3e",
+    "docs/semiprime-companion-coverage-audit.json": "859916896a05ee6ad496f63bca4503362072f109edbd5f0976194f6091084107",
+    "docs/semiprime-companion-rows-audit.json": "612c043f3ff7c093033273209b145366b1478761958139081c227f38b25482ad",
+    "docs/semiprime-derivative-coverage-certificate-audit.json": "3d73b527e08a33a9be8a5772a9f962a47aa787e6c6eec35f03df90883b831d87",
+    "docs/semiprime-euclid-family-scaling-audit.json": "a9acdc2672303868922d7fc7da8c8529f9ac1443d47ed353dc187cc1158a7a2a",
+    "docs/semiprime-euclid-row-budget-audit.json": "b7a00eaa903745a842548a3f5d14c1fbb677628363060cb908192c0ebb5acdaf",
+    "docs/semiprime-euclid-row-family-audit.json": "80ee52d0073118f76acbfa7be73fe86f0537e5d780dca298aeca73be5ff938ab",
+    "docs/semiprime-first-norm-audit.json": "49ced22fd5bedc3f8e378591770c066810d39f545e31a56e5c75eeff36118553",
+    "docs/semiprime-folded-row-coverage-audit.json": "a077aaf95174ee43171cdfedc637060ad8e7674b49f1f00a22cdefb8db67117b",
+    "docs/semiprime-guarded-trace-certificate-audit.json": "38bf6f22f3cc45ff42b472a98ce163ae0f82c6a6976508498353f79111889453",
+    "docs/semiprime-kernel-descent-audit.json": "42208b4fb507a3d1563310ae6b2feda65f8e06d3ffb8e50640633d3f5b56153f",
+    "docs/semiprime-kernel-residual-audit.json": "0385276ff39d2b74e8e3f08c558f851028cd03fbfcf3c26529c721788847d92d",
+    "docs/semiprime-known-bits-budget-audit.json": "1d58687793c6711590ca5e435f819a24f04c04b243cc8d0a2dc2789c0f8ecdab",
+    "docs/semiprime-local-order-routing-audit.json": "5f4184e15a56523e07b68d9eb7c093a266111d621d7101046fb0104604c33482",
+    "docs/semiprime-long-power-routing-audit.json": "583b37e4677e55119fc5e1d5fa5eb8d834ff8b0dd98d691b9c65a49f4d83d43e",
+    "docs/semiprime-multiplier-norm-audit.json": "b12fe34b426f155e5b5d5ad609b2df30714a756293cc9bdbe9f8aee74b6b16df",
+    "docs/semiprime-prime-sieve-audit.json": "4de8fc3d58bcdbd1cc8a8cbb250f7fbe681978352eac723254758f061476ae5b",
+    "docs/semiprime-progression-prefix-audit.json": "991ed5478ba2945bf613ee2ec05a99f962a0e8f6462a00856d30d877bd28b554",
+    "docs/semiprime-q-aggregate-audit.json": "0251435fa8cae56ed3bc72c61803fba72461372b4d446d33dd8c79e5feab05ab",
+    "docs/semiprime-quotient-centering-audit.json": "9ad1b3637c49378e0d29e1c53d3e748074b4ff7f15d9729ad625c3a4cb1a970c",
+    "docs/semiprime-quotient-rows-audit.json": "c8450d2d2129a5abdc3e911cf6303892091f8aef26baf116af66489bbaca5c19",
+    "docs/semiprime-reciprocal-rows-audit.json": "7240a1c89555df3b0d9ba128f3dac0caaaed803984dbddb9216bd66d8153c38c",
+    "docs/semiprime-reflected-companions-audit.json": "716cfd2119bbefa994d1fd520e0dccd54a26e887e8fc408dbceab3d4d6c89f3b",
+    "docs/semiprime-row-derivative-audit.json": "c991c9e4f4df2e10c95e8f2075c4607837596231f39336d5237b86a591c1880e",
+    "docs/semiprime-row-derivative-coverage-audit.json": "f97dabcdfd175c4e1b15bbfd5e5517aca9ea200ad57db9359109bfa37ce6482f",
+    "docs/semiprime-row-periods-audit.json": "9828e2163b2387d4fd940e526af54e47265646081a006467e9939d4da7bb96e4",
+    "docs/semiprime-seed-lcm-audit.json": "a91567bc1f96b6ade65c07fea934edc5e16e799ada43b18d705175d85ee86239",
+    "docs/semiprime-shared-interval-jet-audit.json": "40cebf9f2750124955531ce407187a6773812dd5395f0b15c224f31ffcbc1e6b",
+    "docs/semiprime-signed-companion-frontier-audit.json": "12d08fb72daf2c61957026320e799f0e96f5cf4a91033e2fa77009ee0d980906",
+    "docs/semiprime-source-head-audit.json": "1a7be11c28fa51de9cf42bf5e0731fe69d3a6f19e34cb91e1dbac47fe39ebfa3",
+    "docs/semiprime-staged-seed-audit.json": "1ec877ee1e53782a919418bde90d9714bf23813c9c5753eb41de03e19ac8054f",
+    "docs/semiprime-tagged-pooling-audit.json": "041e9d99edae6eba292085b7759249468e0a17d678a664209cff27a9120f6b78",
+    "docs/semiprime-totient-multipliers-audit.json": "f9e0dcd4639eba544b272ce1d277550bfd47b5636b5c0279477fd5dea92a931e",
+    "docs/semiprime-totient-residues-audit.json": "b76954168ff18691922f6e2e4d495cb95f83cd4ae41dff4abbc26503b516b3c8",
+    "docs/semiprime-totient-window-audit.json": "4ec843f1ffae4308bf4d0316b0de4feaec9436106cd21bdbc3049a2daef1f59f",
+    "docs/semiprime-trace-rows-audit.json": "507f5125e54ae69cc761b030be0569f57adc56cd4264dd09e0d6b226f09149e7",
+    "docs/semiprime-weighted-rows-audit.json": "cef09be80927b3f6732396d9e0dee33386ec8777b878a08e057fc6f758fb28a2",
+    "docs/semiprime-window-construction-audit.json": "8021df0ddd145803deb0fa12998dfbb71104f6c9c999c92f71a2d7124941d215",
+    "docs/semiprime-window-inverse-audit.json": "bb09e4cf16b90ed239f41dfd976fb72d8f5c068b2baaf0d3d390f03bf7288f44",
+    "docs/semiprime-window-sqrt-audit.json": "f22054a30bfd00c28b1be3023d9308eac9c00f86b9ed3724816167fc97a13497",
+    "lake-manifest.json": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "scripts/CheckSemiprimeBitArithmetic.lean": "b86220dfe4b7f0887500191e649318865360238e3c1cad30483798b5ba9e1707",
+    "scripts/CheckSemiprimeBitDivision.lean": "bfe796d7b162523012ee5fd5ed321875eb437a1df7d990fbd1295df2d1392ce6",
+    "scripts/CheckSemiprimeBitPowerWalk.lean": "1383b98d64453f5c8d9a63a5d872c318c65aac09826485a0841d0686cac30fc2",
+    "scripts/CheckSemiprimeBitPrimeScan.lean": "a433f610a9097d83eae53e44ec4b57c0348089fcdad97f6c72dd03ce602c8baa",
+    "scripts/CheckSemiprimeBitProductSort.lean": "95a864f40e7c5ba3fe9fad15d87a8079200ca2451b4418d1691b510e79cc4c5b",
+    "scripts/CheckSemiprimeBulkNorm.lean": "95ab5b18ffaef54d4642aa05fcdcbd0238db6c71b84dd32f8d968b3fd262a921",
+    "scripts/CheckSemiprimeCollisionPeeling.lean": "3a7e9f9aed39037bbabccc7ac67059b48c58821adff81b0465d7a9c23c6567b5",
+    "scripts/CheckSemiprimeCommonOrder.lean": "4435d9837829047902ce5a007989f09b538d406157d5ee48169d91d32ca885ba",
+    "scripts/CheckSemiprimeCompanionCenterSpectrum.lean": "eae3cdeb31255d4bb33daadb7d863f45a1a50ffc91c003cca867130ee04aac82",
+    "scripts/CheckSemiprimeCompanionCoverage.lean": "0f9c0ee611668dc5fa115e16a1bed6505c2742c06c599dad70617aaafc765102",
+    "scripts/CheckSemiprimeCompanionRows.lean": "b5a68d0b9500d9060887616fcdc759d18e8bbb8a3fe3856ded40dff99ba2c940",
+    "scripts/CheckSemiprimeDerivativeCoverage.lean": "e275a8ea0d0783b9c046e740d3e4bc229227ef02987d204021e4c0376db82209",
+    "scripts/CheckSemiprimeEuclidRowBudget.lean": "78108432fd60dfe6ce700dd4b547d08b495db159f41dfcf6ee7f1840bec7d9f5",
+    "scripts/CheckSemiprimeEuclidRowFamily.lean": "c1914f9ff373ef1a719299b401b747a7a4a0e1528302bcc58dc3fd152c1efae2",
+    "scripts/CheckSemiprimeFirstNorm.lean": "f4b120f327eb87ac8b61fd6afefd8dc9c734c7a6c9dfbaa0d98f9f5ab6f1d2b3",
+    "scripts/CheckSemiprimeGuardedTrace.lean": "f19375268fa3f746307cba57559de0ca88bf8418d47f3b1d8d0be4683f0543f2",
+    "scripts/CheckSemiprimeIntervalJet.lean": "c207a4225b5c4667d38e3bb6b06257eb5d567a9beb5f45bbed4a541d0c0f86ab",
+    "scripts/CheckSemiprimeKernelDescent.lean": "75dbc56b8427fc458ddb928840955c7b27b424e3223fa6bda46e807cebd16411",
+    "scripts/CheckSemiprimeKernelResidual.lean": "676f894dd309c94c629dc85c6ad7af212349303d6bd496f903c3dfc6572caa61",
+    "scripts/CheckSemiprimeKnownBitsBudget.lean": "b83818d35b709e7c0a52a70b34ce2f510e70cf8fd46fd2a22336a62d28cfd024",
+    "scripts/CheckSemiprimeLocalOrderRouting.lean": "9168eeb0dccbc5bb93cda2d481269a8d841b39d0d3b9a71281fd2222ff272654",
+    "scripts/CheckSemiprimeLongPowerRouting.lean": "2b7d6a40449d1b9a644bd630be736b2101fd0f360f11c504d644637ee0445dcc",
+    "scripts/CheckSemiprimeMultiplierNorm.lean": "150483d40c38d913d07f8b4d4d3e43ea546cc475b6ee2a8d65d1230dd618ccc5",
+    "scripts/CheckSemiprimePrimeSieve.lean": "d0daf6b227beb803ae247fbc619e9d50940576a50f900c0817276ed54eb9a283",
+    "scripts/CheckSemiprimeProgressionPrefix.lean": "3e64ccf6a0f873f9468af8ad3fffaf0eb8e153a89d1c269abf9fa72e18974d89",
+    "scripts/CheckSemiprimeQAggregate.lean": "954274597a90d2079fab045d48a02198d96bfdab2cbe32131631dcb5e9eddc54",
+    "scripts/CheckSemiprimeQuotientCentering.lean": "20f1514ad7d580aa85e8dc3ce0a25a99868d941a2b2358714002fe95a5a66ca6",
+    "scripts/CheckSemiprimeQuotientRows.lean": "f8b9dcaed44056eb881b77489a9399e3af3af6797a37489c984699602c37061b",
+    "scripts/CheckSemiprimeReciprocalRows.lean": "6022d6f91f1d5898b302fb2ffd8a428621778761fea45b1fcaeafafcb1eab727",
+    "scripts/CheckSemiprimeReflectedCompanions.lean": "e7888a16848201fcfeb73ce0b9011b63996e6d07f51b76f2b448070035d9c04c",
+    "scripts/CheckSemiprimeRowDerivative.lean": "120d6cb9d9d8a941861908e6a3fa99831a1d678dfde655dfd625f0cc6ad78dcd",
+    "scripts/CheckSemiprimeRowPeriods.lean": "19ca8726ee9306b18284141c83458703101ffae8005919e993bef39c57bc5178",
+    "scripts/CheckSemiprimeSeedLcm.lean": "aec03daeea1a2e0b682b59059b832006475afa4729c876f46ed8bef832a955f2",
+    "scripts/CheckSemiprimeSharedIntervalJet.lean": "86bbf1692f9ad787205528211b69316ad930895866376dc094876dd4acc3bf01",
+    "scripts/CheckSemiprimeSourceHead.lean": "2a93cd4e9da4cabe490f319da899f7de69fdf9c1f1e7bde189524f1b37a41e07",
+    "scripts/CheckSemiprimeStagedSeed.lean": "29efd92964d3547427c36303b45e59ca189314240a0f814e24bc11f282066c3a",
+    "scripts/CheckSemiprimeTaggedPooling.lean": "90141211b86764c93393c75a296a1d9a8c19ffa1c00963b5f59f7af8ca1f285e",
+    "scripts/CheckSemiprimeTotientMultipliers.lean": "01e33f45882c087f0ad46f952822f83b182ced605930d441d5cc8a89982110a9",
+    "scripts/CheckSemiprimeTotientResidues.lean": "f0d0850570ee7ac9da1916abc92c69c815d22314f54eb0f0eca5d58b34b406ad",
+    "scripts/CheckSemiprimeTotientWindow.lean": "53bcb000a6f67c24b4213817a395613ba0ebd2b47658c7a48541e973f4cf1fa5",
+    "scripts/CheckSemiprimeTraceRows.lean": "0726efe5e3307df6b9a327611cee83cf856dc014a703fc69fdd53b6ef19e63ab",
+    "scripts/CheckSemiprimeWeightedRows.lean": "130055306e59195b13e7a9bc884c46de604ebc114acef4cffce6a01a2ee864be",
+    "scripts/CheckSemiprimeWindowConstruction.lean": "d10384e191c6984c3f47f1d22b2106f1688e833a4cf68b35900b3d3da08231e5",
+    "scripts/CheckSemiprimeWindowInverse.lean": "0eae698c31e3c698a13ed7572238b007ef35a2a0e2ccd30322a3731fa95441e0",
+    "scripts/CheckSemiprimeWindowSqrt.lean": "77091c9458b3840572f1168be6189c02b05dc065e7715b0b458df25fdcead0d6",
+    "scripts/probe_semiprime_augmented_row_coverage.py": "2cf9d6bcd284e3f3b5cb4e01da674f30ea6fd78f7a62a2f0a7f20323bc2f6d8a",
+    "scripts/probe_semiprime_augmented_sorted_coverage.py": "1d08f847c96775e5e151906b0cb5014f4c622408284423eddd0f41237570afdb",
+    "scripts/probe_semiprime_batch_recovery.py": "8661bb43706c44888250bbd21caf595c720be9f22ac65885b8d5c891c3b07d36",
+    "scripts/probe_semiprime_bit_arithmetic.py": "859ef8f4ff9fe60d562b9b9df7dc957c987b4d8b3fa3d4570ca67ecdc78013e5",
+    "scripts/probe_semiprime_bit_division.py": "842be491be5f1f8b2185deadd8a37b5e37bb11af15ccf74e0c2313f2cd40ca7b",
+    "scripts/probe_semiprime_bit_power_walk.py": "f8606dc759a331b05d48f4fc4f0c61a1df6affcde055f29be63ccc42fcf13223",
+    "scripts/probe_semiprime_bit_prime_scan.py": "505e95600b4d3e740c2216be4b29441803903afd4e33adc60c6678aa40fef1e1",
+    "scripts/probe_semiprime_bit_product_sort.py": "8211dab13ceba8338510804508da79e93ba491c27dae5659a7672ff38d85b78d",
+    "scripts/probe_semiprime_bulk_norm.py": "101826779edf8cb6ef325547cc348e0e21d7581e18b2d623b411e54671a0cb98",
+    "scripts/probe_semiprime_centre_free_cover.py": "f1d2ce0590b25087daa70baed4383012ca1fe40c484eca6ca92cacc8de32ceb9",
+    "scripts/probe_semiprime_collision_peeling.py": "c2daee767fdc04f7f64c840eaa499bc1bccb50b05ab8974e665fe0698731c020",
+    "scripts/probe_semiprime_combined_row_coverage.py": "4bb3adaac59a52c9c887eee60346d4aa07645623e3b9a8fdbea7cb397532bb8a",
+    "scripts/probe_semiprime_common_order.py": "902dd6736c04c36bc71810c9090dca20e3439a794d2981e7a77e0dff0cb47156",
+    "scripts/probe_semiprime_companion_center_spectrum.py": "0136a228e42a5877ed705b48e0f7faae3199d42253b81b621792bfb83e97fdb2",
+    "scripts/probe_semiprime_companion_coverage.py": "aea3dcf4b122796e4a14cae257803098774a687bb2c8bd97881575e5217f5820",
+    "scripts/probe_semiprime_companion_rows.py": "fda6ee73d22c8a26b7879d669fdb251de3b924e77475ee3148b153cace82c2bb",
+    "scripts/probe_semiprime_derivative_coverage_certificate.py": "7057494ba317a9a1adf29826d9b2f4d432948daa791b0a0aad6df53e7564450e",
+    "scripts/probe_semiprime_euclid_family_scaling.py": "2800a02b1e97bb7b91117c5e5a911508b022a3ff3c4ec24508fbe3aaad8f891a",
+    "scripts/probe_semiprime_euclid_row_budget.py": "43e0550a4a45c5e0e686e321364af434b7603480f3fdc637a9c32c5af17b4063",
+    "scripts/probe_semiprime_euclid_row_family.py": "93b3692ab0c7316ec611bcf4445135ff753174235a458338bde0d75a7d3cf8c8",
+    "scripts/probe_semiprime_first_norm.py": "5d2dae419db347557d6054213d659f0d4fffba32463acc1781332abe6ba8e043",
+    "scripts/probe_semiprime_folded_row_coverage.py": "544cf2a0e44b92ac1c1d19892f37f84dfd3fae23685db4870576a438d613fafc",
+    "scripts/probe_semiprime_guarded_trace_certificate.py": "28ccc2f36e07f4513149df3ca98c8ff33139eef2a2b3ce90932d20dc5c26d733",
+    "scripts/probe_semiprime_interval_jet.py": "edae5423664763b1f079163f6ad8aeaacb015ac0ce98c0abb29d2cf35124d529",
+    "scripts/probe_semiprime_kernel_descent.py": "6237da6517a9c27bb314d0b0b2eb7c2c59033b4493b0e54b92e0f5bbb6066091",
+    "scripts/probe_semiprime_kernel_residual.py": "a22f2779e9101cb554e1e5a9916e3c9ab493b77c8f3fb1bfcf24fdd4c2207967",
+    "scripts/probe_semiprime_known_bits_budget.py": "d1900875b51328008d9233ee71a855330c962bf8ab9a83a00e8b3b37a4006236",
+    "scripts/probe_semiprime_lehman_coverage.py": "aed556e1ad73492a70b82dc39ac11be39117458d778fd47cf73c4f134eea26a1",
+    "scripts/probe_semiprime_local_order_routing.py": "606803421ed0db7f436816453113a1df30737cc15d1e8ec7580791f108bce977",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_long_power_routing.py": "67839bcd7ee883a8cf996fcddba3d5a8659acb7c3cd54668b4db156240ff3b2e",
+    "scripts/probe_semiprime_multiplier_norm.py": "1de60bf68e520118e5523b30c1c754991a826e66795abac31bc7479db08c29c7",
+    "scripts/probe_semiprime_prime_sieve.py": "5bf6251b24071ad7fd5db9923e62809bee776585f3a58b0eab8633a26c0cee7c",
+    "scripts/probe_semiprime_progression_prefix.py": "d4a8bf15990e27a5dc6bd6575248c4663d0b2b08c3390455f5babcdc17477e64",
+    "scripts/probe_semiprime_q_aggregate.py": "ccc613c552402845d0d169accf00a541006c933443d27030c8d9f1ec3a480815",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+    "scripts/probe_semiprime_quotient_centering.py": "b46ee43118bb95c787ed526bbddc4bf653b8105a9c1ec101616965a8d22da598",
+    "scripts/probe_semiprime_quotient_rows.py": "08afda3268ce0269cebe19ed8f1f77a6a060c7326fac3ffe30609f3c6355d5b4",
+    "scripts/probe_semiprime_reciprocal_rows.py": "13083a69ed7802e0fa8ec1555942efd63e9e78f12326a5e7f63ba5dacd1ab884",
+    "scripts/probe_semiprime_reflected_companions.py": "400b64e5e2d973cad691eeadfe8520afc1eebafd374f5fdcea0de65827d2bd7c",
+    "scripts/probe_semiprime_row_derivative.py": "1668a1510ea46ad1032f5b5010d2da4201f8d47f29ef992188c95e4a4987179f",
+    "scripts/probe_semiprime_row_derivative_coverage.py": "08736c90d96ebbbf69961d1772403b97a599e7b8252b0dfb7489ca5a8b855751",
+    "scripts/probe_semiprime_row_periods.py": "95d8217f9354855136c6d0f28f93bc902124b06e4d6336cc1f5c1193d759761f",
+    "scripts/probe_semiprime_seed_lcm.py": "8cd4a7ea5da9d82e4b5c55d561ce6a6cb7c62fbd6ddc443e5a6305ccc2ac8e82",
+    "scripts/probe_semiprime_shared_interval_jet.py": "0cd04edf32948a3d489f075c477df1f58c3822f7631cd9d089ed52c0eb634852",
+    "scripts/probe_semiprime_signed_companion_frontier.py": "0dcba823eeec772f1cb038c22da1a1bf31b2f113bb2134a5c91cd236804aa01a",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "scripts/probe_semiprime_source_head.py": "d1076e289513e77c0db524c85d182ae95b179eadba0c99f0f390d9dfa1b6eb4f",
+    "scripts/probe_semiprime_staged_seed.py": "14f3cdea1f2552e8c36aacb83d54c3c1a3e3c7c3625f019969fb4bc3f3971d7d",
+    "scripts/probe_semiprime_strassen_prefix.py": "eb680286ab0d68bdabdbf5efb8b86d2f3e7aa4f154a3eea0fd601ac3e85eabd7",
+    "scripts/probe_semiprime_tagged_pooling.py": "6f781116f5c27c1d2d985ed3b4d70bbe27124aaf0570df16709b832904bddcb3",
+    "scripts/probe_semiprime_totient_multipliers.py": "fab2e8b12eaa11f045cd0595efdf2c6ef1d09d7fc94dccfe671187f44b13511e",
+    "scripts/probe_semiprime_totient_residues.py": "7b7bfaff7009802f0a84d78700cbbdb29aae3528f263592b66dda050256477c6",
+    "scripts/probe_semiprime_totient_window.py": "865934aa4233321f590932ca1295bfcbfb6e209ef37ce8960564a5f6bbba96fb",
+    "scripts/probe_semiprime_trace_rows.py": "65b1a096708b6ae74360e92acc7a894039a111b25ce0c357c6770705d9314c4c",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_weighted_rows.py": "025a963f1238bf7814f4d5dcf21fdcb6580fd84b9f8e8def8076b4baa6e14a97",
+    "scripts/probe_semiprime_window_construction.py": "f8d1cf218844b0682209f839a95b83ffa4fdabbc8feae469bf9541eb3402efa6",
+    "scripts/probe_semiprime_window_inverse.py": "b15fc46baec470c5be44b6275edae611d02c8d100cca570fe2a31fb493433ba4",
+    "scripts/probe_semiprime_window_sqrt.py": "d1eff5f3410d394ddc14c5fea5d2fc5855de0b8c6fc11fcb3a2d0877c5ceeac4"
+  },
+  "exact_public_packet_center_oracles": [
+    {
+      "N": 4,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3,
+        "larger-factor/larger-factor": 3
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3,
+        "larger-factor/larger-factor": 3
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 25,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3,
+        "larger-factor/larger-factor": 5
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3,
+        "larger-factor/larger-factor": 5
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 49,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 5,
+        "larger-factor/larger-factor": 9
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 5,
+        "larger-factor/larger-factor": 9
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2047,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 34,
+        "larger-factor/larger-factor": 44
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 44,
+        "larger-factor/larger-factor": 58
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2304167,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 176,
+        "complete_primitive_weighted_packets": 304,
+        "smaller-factor/smaller-factor": 76,
+        "smaller-factor/larger-factor": 76,
+        "larger-factor/smaller-factor": 76,
+        "larger-factor/larger-factor": 76
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1233,
+        "larger-factor/larger-factor": 1751
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 1370,
+        "larger-factor/larger-factor": 1912
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 143,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 12,
+        "complete_primitive_weighted_packets": 16,
+        "smaller-factor/smaller-factor": 4,
+        "smaller-factor/larger-factor": 4,
+        "larger-factor/smaller-factor": 4,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 7,
+        "larger-factor/larger-factor": 13
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 11,
+        "larger-factor/larger-factor": 17
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 10403,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 83,
+        "larger-factor/larger-factor": 119
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 93,
+        "larger-factor/larger-factor": 131
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 10201,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 79,
+        "larger-factor/larger-factor": 114
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 131
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 3000009,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1351,
+        "larger-factor/larger-factor": 2046
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 1581,
+        "larger-factor/larger-factor": 2192
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 10000015,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2597,
+        "larger-factor/larger-factor": 3711
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2817,
+        "larger-factor/larger-factor": 3964
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 697,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 12,
+        "complete_primitive_weighted_packets": 16,
+        "smaller-factor/smaller-factor": 4,
+        "smaller-factor/larger-factor": 4,
+        "larger-factor/smaller-factor": 4,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 20,
+        "larger-factor/larger-factor": 29
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 25,
+        "larger-factor/larger-factor": 34
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 13468633,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2963,
+        "larger-factor/larger-factor": 4236
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3344,
+        "larger-factor/larger-factor": 4540
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 23393,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 111,
+        "larger-factor/larger-factor": 166
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 148,
+        "larger-factor/larger-factor": 204
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 27768553,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 4258,
+        "larger-factor/larger-factor": 6164
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 4666,
+        "larger-factor/larger-factor": 6595
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 13559389,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2931,
+        "larger-factor/larger-factor": 4227
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3342,
+        "larger-factor/larger-factor": 4600
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 10229753,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2639,
+        "larger-factor/larger-factor": 3760
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2861,
+        "larger-factor/larger-factor": 3966
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6543841,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2071,
+        "larger-factor/larger-factor": 2919
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2317,
+        "larger-factor/larger-factor": 3170
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 15847613,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3218,
+        "larger-factor/larger-factor": 4629
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3556,
+        "larger-factor/larger-factor": 4961
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7838161,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2204,
+        "larger-factor/larger-factor": 3240
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2520,
+        "larger-factor/larger-factor": 3526
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 18189749,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3412,
+        "larger-factor/larger-factor": 4966
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3822,
+        "larger-factor/larger-factor": 5313
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 22849711,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3931,
+        "larger-factor/larger-factor": 5677
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 4208,
+        "larger-factor/larger-factor": 5868
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 19626461,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3641,
+        "larger-factor/larger-factor": 5240
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3920,
+        "larger-factor/larger-factor": 5480
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9299881,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2511,
+        "larger-factor/larger-factor": 3618
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2744,
+        "larger-factor/larger-factor": 3845
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 19907033,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3679,
+        "larger-factor/larger-factor": 5220
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 4008,
+        "larger-factor/larger-factor": 5572
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9834311,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2488,
+        "larger-factor/larger-factor": 3668
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2849,
+        "larger-factor/larger-factor": 4004
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 27648389,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 4315,
+        "larger-factor/larger-factor": 6146
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 4796,
+        "larger-factor/larger-factor": 6620
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 266789,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 381,
+        "larger-factor/larger-factor": 568
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 499,
+        "larger-factor/larger-factor": 675
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2048069,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1128,
+        "larger-factor/larger-factor": 1635
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 1307,
+        "larger-factor/larger-factor": 1810
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 15035641,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3192,
+        "larger-factor/larger-factor": 4542
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3507,
+        "larger-factor/larger-factor": 4891
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 15927367,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3243,
+        "larger-factor/larger-factor": 4654
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3639,
+        "larger-factor/larger-factor": 5039
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2454017,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 176,
+        "complete_primitive_weighted_packets": 304,
+        "smaller-factor/smaller-factor": 76,
+        "smaller-factor/larger-factor": 76,
+        "larger-factor/smaller-factor": 76,
+        "larger-factor/larger-factor": 76
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1249,
+        "larger-factor/larger-factor": 1825
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 1412,
+        "larger-factor/larger-factor": 1984
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 19596839,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 3561,
+        "larger-factor/larger-factor": 5193
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 3953,
+        "larger-factor/larger-factor": 5517
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 473717,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 525,
+        "larger-factor/larger-factor": 756
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 652,
+        "larger-factor/larger-factor": 894
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8721887,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 2392,
+        "larger-factor/larger-factor": 3452
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 2622,
+        "larger-factor/larger-factor": 3650
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1685743,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1040,
+        "larger-factor/larger-factor": 1509
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 1154,
+        "larger-factor/larger-factor": 1623
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7303,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 97
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 78,
+        "larger-factor/larger-factor": 111
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7387,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 69,
+        "larger-factor/larger-factor": 94
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 81,
+        "larger-factor/larger-factor": 106
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8633,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 72,
+        "larger-factor/larger-factor": 102
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 84,
+        "larger-factor/larger-factor": 114
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 11413,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 87,
+        "larger-factor/larger-factor": 118
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 97,
+        "larger-factor/larger-factor": 129
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 14873,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 101,
+        "larger-factor/larger-factor": 137
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 113,
+        "larger-factor/larger-factor": 149
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 13843,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 97,
+        "larger-factor/larger-factor": 141
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 144
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 93883,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 232,
+        "larger-factor/larger-factor": 360
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 268,
+        "larger-factor/larger-factor": 398
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 98069,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 241,
+        "larger-factor/larger-factor": 356
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 293,
+        "larger-factor/larger-factor": 393
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 111047,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 261,
+        "larger-factor/larger-factor": 386
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 300,
+        "larger-factor/larger-factor": 425
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 369867514421371,
+      "modulus": 269,
+      "counts": {
+        "complete_original_packets": 14968,
+        "complete_primitive_weighted_packets": 28864,
+        "smaller-factor/smaller-factor": 7216,
+        "smaller-factor/larger-factor": 7216,
+        "larger-factor/smaller-factor": 7216,
+        "larger-factor/larger-factor": 7216
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 16358335,
+        "larger-factor/larger-factor": 23148443
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 16474787,
+        "larger-factor/larger-factor": 23274831
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4948,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 43,
+        "larger-factor/larger-factor": 62
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 80,
+        "larger-factor/larger-factor": 106
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1924,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -75,
+        "larger-factor/larger-factor": -48
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 184,
+        "larger-factor/larger-factor": 148
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8667,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -41,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 243,
+        "larger-factor/larger-factor": 242
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6135,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -34,
+        "larger-factor/larger-factor": -1
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 196,
+        "larger-factor/larger-factor": 177
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8904,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2717,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 34,
+        "larger-factor/larger-factor": 59
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 53,
+        "larger-factor/larger-factor": 69
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7595,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 9,
+        "larger-factor/larger-factor": 59
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 131,
+        "larger-factor/larger-factor": 177
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2662,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1040,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -181,
+        "larger-factor/larger-factor": -219
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 238,
+        "larger-factor/larger-factor": 276
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1760,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2276,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -211,
+        "larger-factor/larger-factor": -173
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 306,
+        "larger-factor/larger-factor": 325
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4928,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7061,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 25,
+        "larger-factor/larger-factor": 45
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 155,
+        "larger-factor/larger-factor": 144
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6161,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 57,
+        "larger-factor/larger-factor": 88
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 72,
+        "larger-factor/larger-factor": 103
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5174,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6885,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1976,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 27,
+        "larger-factor/larger-factor": 44
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 46,
+        "larger-factor/larger-factor": 63
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5502,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9519,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 76,
+        "larger-factor/larger-factor": 109
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 91,
+        "larger-factor/larger-factor": 124
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2442,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9634,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 8,
+        "larger-factor/larger-factor": 50
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 196,
+        "larger-factor/larger-factor": 213
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 3647,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8228,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 12,
+        "complete_primitive_weighted_packets": 16,
+        "smaller-factor/smaller-factor": 4,
+        "smaller-factor/larger-factor": 4,
+        "larger-factor/smaller-factor": 4,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 74,
+        "larger-factor/larger-factor": 107
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 79,
+        "larger-factor/larger-factor": 112
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4572,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 52
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 94,
+        "larger-factor/larger-factor": 178
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1766,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 26,
+        "larger-factor/larger-factor": 41
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 42,
+        "larger-factor/larger-factor": 58
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7505,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -105,
+        "larger-factor/larger-factor": -84
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 209,
+        "larger-factor/larger-factor": 320
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7505,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 12,
+        "complete_primitive_weighted_packets": 16,
+        "smaller-factor/smaller-factor": 4,
+        "smaller-factor/larger-factor": 4,
+        "larger-factor/smaller-factor": 4,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 70,
+        "larger-factor/larger-factor": 103
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 74,
+        "larger-factor/larger-factor": 107
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6332,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -8,
+        "larger-factor/larger-factor": 20
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 144,
+        "larger-factor/larger-factor": 190
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2373,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7810,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2092,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 29,
+        "larger-factor/larger-factor": 32
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 75
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9027,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 79,
+        "larger-factor/larger-factor": 111
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 83,
+        "larger-factor/larger-factor": 119
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1119,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -173,
+        "larger-factor/larger-factor": -98
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 310,
+        "larger-factor/larger-factor": 298
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5331,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -84,
+        "larger-factor/larger-factor": -37
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 178,
+        "larger-factor/larger-factor": 229
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 705,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8830,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 240,
+        "complete_primitive_weighted_packets": 416,
+        "smaller-factor/smaller-factor": 104,
+        "smaller-factor/larger-factor": 104,
+        "larger-factor/smaller-factor": 104,
+        "larger-factor/larger-factor": 104
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -49,
+        "larger-factor/larger-factor": 25
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 202,
+        "larger-factor/larger-factor": 247
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9541,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -8,
+        "larger-factor/larger-factor": 18
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 196,
+        "larger-factor/larger-factor": 188
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9958,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 27,
+        "larger-factor/larger-factor": 38
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 127,
+        "larger-factor/larger-factor": 160
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2193,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 27,
+        "larger-factor/larger-factor": 34
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 58,
+        "larger-factor/larger-factor": 64
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 8339,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 45
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 131,
+        "larger-factor/larger-factor": 173
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7595,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -9,
+        "larger-factor/larger-factor": 6
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 163,
+        "larger-factor/larger-factor": 173
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5706,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 49
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 114,
+        "larger-factor/larger-factor": 160
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7136,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -31,
+        "larger-factor/larger-factor": 8
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 161,
+        "larger-factor/larger-factor": 200
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 657,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 23,
+        "larger-factor/larger-factor": 31
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 23,
+        "larger-factor/larger-factor": 31
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5966,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 12,
+        "complete_primitive_weighted_packets": 16,
+        "smaller-factor/smaller-factor": 4,
+        "smaller-factor/larger-factor": 4,
+        "larger-factor/smaller-factor": 4,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 65,
+        "larger-factor/larger-factor": 92
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 67,
+        "larger-factor/larger-factor": 94
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6100,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 2259,
+      "modulus": 17,
+      "counts": {
+        "complete_original_packets": 360,
+        "complete_primitive_weighted_packets": 656,
+        "smaller-factor/smaller-factor": 164,
+        "smaller-factor/larger-factor": 164,
+        "larger-factor/smaller-factor": 164,
+        "larger-factor/larger-factor": 164
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -126,
+        "larger-factor/larger-factor": -164
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 232,
+        "larger-factor/larger-factor": 270
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 3355,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 47,
+        "larger-factor/larger-factor": 69
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 47,
+        "larger-factor/larger-factor": 69
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6064,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 633,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -195,
+        "larger-factor/larger-factor": -271
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 214,
+        "larger-factor/larger-factor": 293
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 92,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 32,
+        "complete_primitive_weighted_packets": 48,
+        "smaller-factor/smaller-factor": 12,
+        "smaller-factor/larger-factor": 12,
+        "larger-factor/smaller-factor": 12,
+        "larger-factor/larger-factor": 12
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -3,
+        "larger-factor/larger-factor": 4
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7294,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 216,
+        "complete_primitive_weighted_packets": 384,
+        "smaller-factor/smaller-factor": 96,
+        "smaller-factor/larger-factor": 96,
+        "larger-factor/smaller-factor": 96,
+        "larger-factor/larger-factor": 96
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -12,
+        "larger-factor/larger-factor": 6
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 187,
+        "larger-factor/larger-factor": 181
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7321,
+      "modulus": 7,
+      "counts": {
+        "complete_original_packets": 68,
+        "complete_primitive_weighted_packets": 112,
+        "smaller-factor/smaller-factor": 28,
+        "smaller-factor/larger-factor": 28,
+        "larger-factor/smaller-factor": 28,
+        "larger-factor/larger-factor": 28
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 43,
+        "larger-factor/larger-factor": 89
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 88,
+        "larger-factor/larger-factor": 132
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 3517,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 51,
+        "larger-factor/larger-factor": 71
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 51,
+        "larger-factor/larger-factor": 71
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4405,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4653,
+      "modulus": 19,
+      "counts": {
+        "complete_original_packets": 356,
+        "complete_primitive_weighted_packets": 640,
+        "smaller-factor/smaller-factor": 160,
+        "smaller-factor/larger-factor": 160,
+        "larger-factor/smaller-factor": 160,
+        "larger-factor/larger-factor": 160
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -184,
+        "larger-factor/larger-factor": -146
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 355,
+        "larger-factor/larger-factor": 229
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 1291,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -31,
+        "larger-factor/larger-factor": -20
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 86,
+        "larger-factor/larger-factor": 86
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7163,
+      "modulus": 13,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 9968,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -3,
+        "larger-factor/larger-factor": 63
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 145,
+        "larger-factor/larger-factor": 183
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 3771,
+      "modulus": 5,
+      "counts": {
+        "complete_original_packets": 40,
+        "complete_primitive_weighted_packets": 64,
+        "smaller-factor/smaller-factor": 16,
+        "smaller-factor/larger-factor": 16,
+        "larger-factor/smaller-factor": 16,
+        "larger-factor/larger-factor": 16
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 48,
+        "larger-factor/larger-factor": 62
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 54,
+        "larger-factor/larger-factor": 77
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 5275,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 4,
+        "complete_primitive_weighted_packets": 4,
+        "smaller-factor/smaller-factor": 1,
+        "smaller-factor/larger-factor": 1,
+        "larger-factor/smaller-factor": 1,
+        "larger-factor/larger-factor": 1
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": 61,
+        "larger-factor/larger-factor": 87
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 61,
+        "larger-factor/larger-factor": 87
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 7569,
+      "modulus": 3,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 4099,
+      "modulus": 11,
+      "counts": {
+        "complete_original_packets": 148,
+        "complete_primitive_weighted_packets": 256,
+        "smaller-factor/smaller-factor": 64,
+        "smaller-factor/larger-factor": 64,
+        "larger-factor/smaller-factor": 64,
+        "larger-factor/larger-factor": 64
+      },
+      "same_center_minima": {
+        "smaller-factor/smaller-factor": -12,
+        "larger-factor/larger-factor": -2
+      },
+      "same_center_maxima": {
+        "smaller-factor/smaller-factor": 134,
+        "larger-factor/larger-factor": 115
+      },
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    },
+    {
+      "N": 6466,
+      "modulus": 2,
+      "counts": {
+        "complete_original_packets": 0
+      },
+      "same_center_minima": {},
+      "same_center_maxima": {},
+      "all_exact_rank_one_and_interval_checks_passed": true,
+      "is_N_only_factorizer": false,
+      "is_factorization_runtime_measurement": false,
+      "is_Lean_proof": false
+    }
+  ],
+  "inherited_N_only_setup_inputs": 46,
+  "random_public_families": 64,
+  "inherited_complete_signed_miss": {
+    "N": 6798061565397654183415201602281,
+    "input_bits": 103,
+    "reference_p": 2245327606949267,
+    "reference_q": 3027647967431443,
+    "modulus": 137639,
+    "complete_original_packets": 28411164,
+    "companion_packets": 56271776,
+    "ordinary_roots": 41634654,
+    "ordinary_p_classes": 41634654,
+    "ordinary_q_classes": 41634654,
+    "signed_roots": 83269309,
+    "signed_p_classes": 83269309,
+    "signed_q_classes": 83269309,
+    "ordinary_exhausted": true,
+    "signed_exhausted": true,
+    "ordinary_p_collapsed_roots": 0,
+    "ordinary_q_collapsed_roots": 0,
+    "signed_p_collapsed_roots": 0,
+    "signed_q_collapsed_roots": 0,
+    "is_N_only_source": false,
+    "is_factorization_runtime_measurement": false,
+    "is_kernel_failure_certificate": false,
+    "sample_index": 2,
+    "public_sixth_width": 137636,
+    "reference_classification_milliseconds": 254880.66200900357,
+    "all_original_residues_intermediate_rows_and_four_centers_enumerated": true,
+    "whole_signed_root_set_in_both_prime_fields_checked": true
+  },
+  "large_signed_field_enumeration_repeated": false,
+  "lean_validation": {
+    "separately_completed_scoped_gates": true,
+    "strict_leaf_and_root": true,
+    "namespace_linters": 14,
+    "linter_errors": 0,
+    "all_module_declarations": 41,
+    "explicit_declarations": 24,
+    "generated_declarations": 17,
+    "theorem_and_helper_declarations": 37,
+    "permitted_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "kernel_components": {
+    "actual_public_packets_have_all_four_center_choices": true,
+    "primitive_companion_exact_signed_center_spectrum": true,
+    "mixed_center_term_has_one_explicit_arithmetic_direction": true,
+    "actual_denominator_and_signed_rounding_bounds_discharged": true,
+    "same_center_doubled_deviation_at_most_two_m_squared": true,
+    "same_center_integer_difference_at_most_two_m_squared": true,
+    "same_center_local_equality_above_two_m_squared_is_integer_equality": true,
+    "frontier_factors_prime_via_Lucas_certificates": true,
+    "frontier_balanced_semiprime_arithmetic_sixth_width_and_literal_public_modulus_checked": true
+  },
+  "verification_environment": {
+    "Lean": "4.33.1",
+    "manifest_mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "shared_mathlib_externally_replaced_during_slice": true,
+    "isolated_original_mathlib_revision_used_for_final_gates": true,
+    "final_gate_command_prefix": "/home/dbsanfte/.elan/bin/lake --packages=/tmp/semiprime-center-spectrum-4.33.1/packages.json",
+    "final_gate_commands": [
+      "build RiemannGaussian.SemiprimeCompanionCenterSpectrum --wfail",
+      "env lean -DwarningAsError=true RiemannGaussian/SemiprimeCompanionCenterSpectrum.lean",
+      "env lean -DwarningAsError=true RiemannGaussian.lean",
+      "env lean -DwarningAsError=true scripts/CheckSemiprimeCompanionCenterSpectrum.lean"
+    ],
+    "shared_mathlib_original_revision_restored_externally": true,
+    "restored_workspace_default_resolver_gates_passed": true,
+    "restored_workspace_gate_command_prefix": "/home/dbsanfte/.elan/bin/lake",
+    "project_manifest_and_external_replacement_preserved": true
+  },
+  "full_signed_frontier_exhaustion_kernel_certificate": "OPEN",
+  "fixed_signed_companion_family_universal_coverage": "CONTRADICTED_BY_NATIVE_REPLAY",
+  "guaranteed_one_sixth_factorization": "OPEN",
+  "is_complete_factorizer": false,
+  "is_complete_bit_complexity_certificate": false,
+  "limitations": "Compiled center identities and interval/separation bounds apply to the actual public primitive packets with their original rows, center choices and signed errors retained. The literal 103-bit miss has kernel-checked prime factors, balanced arithmetic, ceiling sixth root and least public modulus. Its full 83,269,309-root injectivity in both prime fields is inherited native evidence, not a Lean exhaustion theorem. It contradicts treating this fixed family as universally covering in native execution, and supplies no general factoring lower bound. The large field enumeration and polynomial/factor recovery are not replayed by this algebra probe. Original construction, memory/machine refinement, universal coverage for a sufficient amended algorithm and the deterministic every-run construction-inclusive N^(1/6) bit guarantee remain open."
+}

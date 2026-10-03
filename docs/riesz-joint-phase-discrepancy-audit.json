@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "verdict": "Finite no-go for the tested whole circular CDF Cauchy price; no new arithmetic floor saving. This does not refute every native/cofinal phase-energy method.",
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_joint_phase_discrepancy.py",
+      "sha256": "2ddcd1fab5ba2126a5905885260754ce22d5dc675bbfa603e454530abe639618",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-2ddcd1fab5ba2126a5905885260754ce22d5dc675bbfa603e454530abe639618.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_signature.py",
+      "sha256": "6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9.py"
+    },
+    {
+      "path": "scripts/probe_riesz_joint_phase_transport.py",
+      "sha256": "27c8ae4428c513dbf1da8109f22b07c0c6e5204626ee33e2a9a2e44cbd61c68e",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-27c8ae4428c513dbf1da8109f22b07c0c6e5204626ee33e2a9a2e44cbd61c68e.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointPhaseTransport.lean",
+      "sha256": "7c64e84f3169afc00d21dbf1f9d41b8e2e668b32b11c10e5a3d7278d33c72a5f",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-7c64e84f3169afc00d21dbf1f9d41b8e2e668b32b11c10e5a3d7278d33c72a5f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedConvolution.lean",
+      "sha256": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc.lean"
+    },
+    {
+      "path": "docs/riesz-owner-completion-audit.json",
+      "sha256": "b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "5c8154d3e4767997c329361ed30f6166336045951223043c53361a509148de31",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-5c8154d3e4767997c329361ed30f6166336045951223043c53361a509148de31.md"
+    }
+  ],
+  "validation": {
+    "noNewLeanDeclarations": true,
+    "noLeanBuildOrRootRebuildRun": true,
+    "previousFocusedProofValidationNotRerun": true,
+    "frozenPreviousProofProbeDocumentationAndCompiledArtifactsHashChecked": true,
+    "unrelatedWorkingFilesHashChecked": 231,
+    "closedFormFloatingAlgorithmChecks": [
+      {
+        "kind": "single atom exact sawtooth energy",
+        "phase": 0.0
+      },
+      {
+        "kind": "single atom exact sawtooth energy",
+        "phase": 0.123
+      },
+      {
+        "kind": "single atom exact sawtooth energy",
+        "phase": 3.141592653589793
+      },
+      {
+        "kind": "single atom exact sawtooth energy",
+        "phase": 6.283185297179586
+      },
+      {
+        "kind": "identical phases opposite amplitudes cancel exactly"
+      },
+      {
+        "kind": "opposite signed phases reinforce first harmonic"
+      }
+    ],
+    "intervalCertified": false
+  },
+  "algorithm": {
+    "atoms": "Every original balanced toy main label and SAME full correction joined before energy",
+    "signedMeasure": "nu = sum a_label delta_(y log(label) mod 2pi)",
+    "primitive": "F(theta) = nu([0,theta]) - nu(circle)*theta/(2pi)",
+    "centeredPrimitive": "F0 = F - mean(F)",
+    "energy": "E = integral_0^(2pi) F0(theta)^2 dtheta",
+    "signedIdentity": "Re(joint) = integral_0^(2pi) F0(theta) sin(theta) dtheta",
+    "wholeCauchyPrice": "sqrt(pi*E)",
+    "firstHarmonicEnergy": "abs(joint)^2/pi",
+    "allArithmeticSignsAndOriginalComplexPhasesRetained": true,
+    "sameFullHeadWindowAfterMainRadialPruning": true,
+    "noCountPrimeOrthogonalityOrDensityAssumed": true,
+    "noSourceHarmonicDeleted": true
+  },
+  "optionalProbe": {
+    "cases": 18,
+    "frozenComplexTotalRegressions": 18,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "mainWindows": [
+      [
+        1.95,
+        2.03
+      ],
+      [
+        1.971,
+        2.029
+      ]
+    ],
+    "fullHeadWindow": [
+      1.95,
+      2.03
+    ],
+    "previousFundedPriceComparisons": 12,
+    "previousFundedPriceImprovements": 0,
+    "previousCubicSignedPriceComparisons": 18,
+    "previousCubicSignedPriceImprovements": 0,
+    "firstHarmonicEnergyFractionRange": [
+      0.482813365767159,
+      0.9777711048682587
+    ],
+    "byOrder": [
+      {
+        "N": 6,
+        "wholeCauchyPriceRange": [
+          7.290089700335694e-05,
+          0.00026344103027776527
+        ]
+      },
+      {
+        "N": 7,
+        "wholeCauchyPriceRange": [
+          7.19169706870235e-05,
+          0.00030881765542289914
+        ]
+      },
+      {
+        "N": 8,
+        "wholeCauchyPriceRange": [
+          6.178264816642247e-05,
+          0.00020715406883335902
+        ]
+      }
+    ],
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingIntegerLength": false,
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "previousEventualBudgetsApplied": false,
+    "optionalOutsideBuildsCI": true,
+    "numericalCertificate": false,
+    "evidence": [
+      {
+        "path": ".lake/riesz-joint-phase-discrepancy/probe.json",
+        "sha256": "2558d52f93e34afc61258fbc5f6bea3180f0da49140f45471f12bf1d3af99672",
+        "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-2558d52f93e34afc61258fbc5f6bea3180f0da49140f45471f12bf1d3af99672.json"
+      },
+      {
+        "path": ".lake/riesz-joint-phase-discrepancy/probe.log",
+        "sha256": "1341714af82285294db940d48c49c93594ed3f58785734685161590379f214bb",
+        "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-1341714af82285294db940d48c49c93594ed3f58785734685161590379f214bb.log"
+      },
+      {
+        "path": ".lake/riesz-joint-phase-discrepancy/order8.json",
+        "sha256": "26cbf59e8fac951c47c026aea0fbaf1710059465652c1d14d99cfb237c7c2202",
+        "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-26cbf59e8fac951c47c026aea0fbaf1710059465652c1d14d99cfb237c7c2202.json"
+      },
+      {
+        "path": ".lake/riesz-joint-phase-discrepancy/order8.log",
+        "sha256": "9b801a53935afdec372598e54d7bfd802832594273a43c58b5a682f5a2678843",
+        "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-9b801a53935afdec372598e54d7bfd802832594273a43c58b5a682f5a2678843.log"
+      }
+    ]
+  },
+  "literatureCheck": {
+    "applicabilityConclusionIsAnInference": true,
+    "sources": [
+      {
+        "title": "Tao and Teravainen: The structure of logarithmically averaged correlations of multiplicative functions",
+        "url": "https://arxiv.org/pdf/1708.02610",
+        "location": "Corollaries 1.6 and 1.8",
+        "result": "Logarithmically averaged cancellation under fixed multiplicative-function hypotheses.",
+        "gap": "Does not state the required fixed power saving for this moving masked factorial sum."
+      },
+      {
+        "title": "Matomaki and Radziwill: Multiplicative functions in short intervals",
+        "url": "https://annals.math.princeton.edu/2016/183-3/p06",
+        "location": "Abstract and published paper",
+        "result": "Relates short and long averages, including Mobius cancellation in almost all growing short intervals.",
+        "gap": "No uniform signed source-scale estimate for the present masked packet has been derived from it."
+      }
+    ],
+    "existingRateAudits": [
+      "RiemannGaussian/ZetaRieszTypeIIRateAudit.lean",
+      "RiemannGaussian/ZetaRieszManyBinRateAudit.lean"
+    ],
+    "noUniversalLiteratureImpossibilityClaim": true
+  },
+  "nextObligation": {
+    "exactSignedBias": "Re(centralRest)-nativeHead, retaining all counts and original correlated phase weights",
+    "sufficientCofinalFloor": "-399/5000-o(1)",
+    "firstHarmonicArithmeticallyBounded": false,
+    "genericCircularL2InfrastructureNotAdded": true,
+    "higherHarmonicSmallnessDoesNotPayFirstHarmonic": true,
+    "newGlobalSavingProved": false,
+    "cofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "contradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noRootRegistration": true,
+    "noPublicEndpointUpdates": true,
+    "noSubagents": true,
+    "concurrentSemiprimeWorkNotEdited": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-joint-phase-discrepancy/unrelated-working-tree-before.json",
+      "sha256": "9716b6c7eb7b5e0c9ee84231e434200d157d81de1c28f1073a4787f8dd399568",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-9716b6c7eb7b5e0c9ee84231e434200d157d81de1c28f1073a4787f8dd399568.json"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-discrepancy/write_report.py",
+      "sha256": "e1975cfe7fb26e9ba0f250445c43c11f0c0e6f1711361f7009134469d05b73ab",
+      "snapshot": ".lake/riesz-joint-phase-discrepancy/snapshot-e1975cfe7fb26e9ba0f250445c43c11f0c0e6f1711361f7009134469d05b73ab.py"
+    }
+  ]
+}

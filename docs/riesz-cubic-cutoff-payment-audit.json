@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Independent signed canonical-crossing payment through secondPrime <= N^3.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszCubicSieveCost.lean",
+      "sha256": "c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCubicCutoffRows.lean",
+      "sha256": "bb08503beb511b32b8fcfd2c19c9a5313b1c418242dc7bdaafe18bc97a80aeae",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-bb08503beb511b32b8fcfd2c19c9a5313b1c418242dc7bdaafe18bc97a80aeae.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_cubic_cutoff.py",
+      "sha256": "39b37ef437afd4f311c3a66aa24d2713057a52a99005d747558e4a0b1b0a5f84",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-39b37ef437afd4f311c3a66aa24d2713057a52a99005d747558e4a0b1b0a5f84.py"
+    },
+    {
+      "path": "docs/zeta-riesz-cubic-cutoff-payment.md",
+      "sha256": "9e66a1c240fbfc80e4624576e17f2966d301864c0226260627c97a637c9e203d",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-9e66a1c240fbfc80e4624576e17f2966d301864c0226260627c97a637c9e203d.md"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeWeightedSieve.lean",
+      "sha256": "725af814f98582f5ce263052d5895bff5a5fc9d2bbffa1d77942d7174b91c480",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-725af814f98582f5ce263052d5895bff5a5fc9d2bbffa1d77942d7174b91c480.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean",
+      "sha256": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughCutoffRows.lean",
+      "sha256": "5d78de69744d21ab2de90e75e99cca20435d5e9b951f773587b6c78a700e08bc",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-5d78de69744d21ab2de90e75e99cca20435d5e9b951f773587b6c78a700e08bc.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszFineDivisorRows.lean",
+      "sha256": "54aa5f164bd4f58beb1e42b1a5ad89aa1eaf1f7886b63cb97dcffd5655da5800",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-54aa5f164bd4f58beb1e42b1a5ad89aa1eaf1f7886b63cb97dcffd5655da5800.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerGapRows.lean",
+      "sha256": "61f8b79d8579515016fbfe9791abea4b9d8192717e9e5fe3d713b7002c694a3b",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-61f8b79d8579515016fbfe9791abea4b9d8192717e9e5fe3d713b7002c694a3b.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean",
+      "sha256": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowerRadialPayment.lean",
+      "sha256": "753797c7d379956d27bcd3be2cb5c96cfa1e7dff88c066f1d88a84284d21a597",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-753797c7d379956d27bcd3be2cb5c96cfa1e7dff88c066f1d88a84284d21a597.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSaturatedRowFloor.lean",
+      "sha256": "c603f1c635d3fd5cc9d2dbb2554f29eb504a2f26f84ba1017408fa6f86c28003",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-c603f1c635d3fd5cc9d2dbb2554f29eb504a2f26f84ba1017408fa6f86c28003.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAnnulusJoint.lean",
+      "sha256": "d7e2bdbb21d000e6ec59ea8657bca1a3e0f9efa379b5e551ade046061455f4a5",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-d7e2bdbb21d000e6ec59ea8657bca1a3e0f9efa379b5e551ade046061455f4a5.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszParityPacket.lean",
+      "sha256": "b2689ecae41569eb0dfb3d7d929673ca781f289d1a8547339d455e378bb36de0",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-b2689ecae41569eb0dfb3d7d929673ca781f289d1a8547339d455e378bb36de0.lean"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; no full-root rebuild, CI or publication.",
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszCubicCutoffRows --wfail",
+      "exitCode": 0
+    },
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszCubicCutoffRows.lean",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-cubic-cutoff/Audit.lean",
+      "exitCode": 0,
+      "ordinaryRootImported": true,
+      "newModulesExplicitlyImported": true,
+      "lintersPerNamespace": 14
+    },
+    "publicTheorems": {
+      "RiemannGaussian/ZetaRieszCubicSieveCost.lean": 15,
+      "RiemannGaussian/ZetaRieszCubicCutoffRows.lean": 35
+    },
+    "theoremsIncludingPrivateAndGenerated": 133,
+    "onlyStandardAxioms": true,
+    "optionalProbe": {
+      "command": "../.venv/bin/python scripts/probe_riesz_cubic_cutoff.py",
+      "exitCode": 0,
+      "inOrdinaryBuildOrCI": false,
+      "diagnosticOnly": true
+    }
+  },
+  "exactResult": {
+    "radiusCeiling": "10001/20000",
+    "heightCondition": "54 <= abs(y)",
+    "oldSecondPrimeCeiling": "N^2",
+    "newSecondPrimeCeiling": "N^3",
+    "newLiteralPopulation": "cutoffRows_cubic \\ cutoffRows_quadratic; N^2 < secondPrime(B) <= N^3",
+    "sieveExponent": "23/32",
+    "actualPrimeProduct": true,
+    "prefixCostUpper": "exp((64/9)*N^(27/32))",
+    "normalizedComparisonRate": "exp(-1/125000)",
+    "eventualRetainedComparisonRate": "exp(-1/250000)",
+    "literalPacketDecayTheorem": "RiemannGaussian.ZetaRieszCubicCutoffRows.tendsto_literalCutoffPacket",
+    "extraPacketDecayTheorem": "RiemannGaussian.ZetaRieszCubicCutoffRows.tendsto_extraPacket",
+    "wholeCarrierComparisonTheorem": "RiemannGaussian.ZetaRieszCubicCutoffRows.eventually_joined_floor_with_cubicCentralRemaining",
+    "reverseCoverageTheorem": "RiemannGaussian.ZetaRieszCubicCutoffRows.eventually_cubic_crossing_paid_or_cancelled",
+    "survivingCrossingRestriction": "N^3 < secondPrime(B), under the original displayed crossing predicates",
+    "zeroHypothesisUsedForArithmeticPayment": false,
+    "movingLengthPhaseAllocationCountPhysicalRoughnessAndEndpointsRetained": true,
+    "previousCreditReplacedRatherThanAdded": true
+  },
+  "numericalRegression": {
+    "literalExamples": [
+      {
+        "N": 640,
+        "originalCount": 5,
+        "canonicalPair": [
+          409609,
+          409639
+        ],
+        "quadraticSelector": false,
+        "cubicSelector": true,
+        "eventualLengthPreconditionHolds": false,
+        "exactRowMultiplier": 1.0,
+        "sourceScaledLogNorm": -1278.4745821255988,
+        "nativeCountCropAdmitsLabel": false
+      },
+      {
+        "N": 640,
+        "originalCount": 7,
+        "canonicalPair": [
+          409609,
+          409639
+        ],
+        "quadraticSelector": false,
+        "cubicSelector": true,
+        "eventualLengthPreconditionHolds": false,
+        "exactRowMultiplier": 1.0,
+        "sourceScaledLogNorm": -1278.4745811240516,
+        "nativeCountCropAdmitsLabel": false
+      },
+      {
+        "N": 1536,
+        "originalCount": 5,
+        "canonicalPair": [
+          2359303,
+          2359307
+        ],
+        "quadraticSelector": false,
+        "cubicSelector": true,
+        "eventualLengthPreconditionHolds": true,
+        "exactRowMultiplier": 1.0,
+        "sourceScaledLogNorm": -3069.973341573299,
+        "nativeCountCropAdmitsLabel": false
+      },
+      {
+        "N": 1536,
+        "originalCount": 7,
+        "canonicalPair": [
+          2359303,
+          2359307
+        ],
+        "quadraticSelector": false,
+        "cubicSelector": true,
+        "eventualLengthPreconditionHolds": true,
+        "exactRowMultiplier": 1.0,
+        "sourceScaledLogNorm": -3069.973341573299,
+        "nativeCountCropAdmitsLabel": false
+      }
+    ],
+    "nativeCountCropEmptyAtTestedOrders": true,
+    "sufficientScalarAbsorptionLog10": 39.999215828586244,
+    "fullFiniteStartingOrderCertified": false,
+    "populationMassCertified": false,
+    "globalDeficitFractionCertified": false
+  },
+  "remaining": {
+    "wholeFloor": "OPEN: independent floor -399/5000 on the whole source-equivalent remainder",
+    "wholeCeiling": "OPEN",
+    "zeroExclusion": false,
+    "rhContradiction": false,
+    "rougherCanonicalCrossings": "secondPrime > N^3 remains unbounded by this payment",
+    "reflectedAndOtherUnselectedSignedGeometries": "Unchanged",
+    "nativeCostMinusNullOrTangentCredit": "Unchanged and OPEN",
+    "noGosPreserved": true
+  },
+  "commitsOrPushesPerformed": false,
+  "readmeOrPublicEndpointsChanged": false,
+  "artifacts": [
+    {
+      "path": ".lake/riesz-cubic-cutoff/lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/build.log",
+      "sha256": "3ccdd3f157422d3237b4262f964e3e94cfa388b96b28c05b5c30521d73989636",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-3ccdd3f157422d3237b4262f964e3e94cfa388b96b28c05b5c30521d73989636.log"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/audit.log",
+      "sha256": "c85aa42b15539815f4d6b0e2d21d12b467c070c582188ab05e3e64ebf28de67c",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-c85aa42b15539815f4d6b0e2d21d12b467c070c582188ab05e3e64ebf28de67c.log"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/Audit.lean",
+      "sha256": "c57e702e5efc7eb1d0d0e25f60ed26724bb0b0cb72d75af819847efcb21dad9c",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-c57e702e5efc7eb1d0d0e25f60ed26724bb0b0cb72d75af819847efcb21dad9c.lean"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/axioms.json",
+      "sha256": "338cfafb6c50e8eec2a709017f055a1799f4187fde31e7978db2395602a013d2",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-338cfafb6c50e8eec2a709017f055a1799f4187fde31e7978db2395602a013d2.json"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/probe.json",
+      "sha256": "7395c2c4c6d14254b6a7bfd2936bb7581b257082d6d74dfc7b0882ac186d567c",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-7395c2c4c6d14254b6a7bfd2936bb7581b257082d6d74dfc7b0882ac186d567c.json"
+    },
+    {
+      "path": ".lake/riesz-cubic-cutoff/report.json",
+      "sha256": "d5cc5f344b71402dc1c1c930c1673ce658e3b8a0b20cedaf4982a97f8f529aee",
+      "snapshot": ".lake/riesz-cubic-cutoff/snapshot-d5cc5f344b71402dc1c1c930c1673ce658e3b8a0b20cedaf4982a97f8f529aee.json"
+    }
+  ]
+}

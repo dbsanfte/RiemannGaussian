@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "All incomplete phase periods and exterior endpoints of the retained four-family signed boundary are paid at an explicit geometric source-scale rate, and the saving is spent in the native floor. The joined complete-period cofinal upper bound remains open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-global-period-edge-payment.md",
+      "sha256": "b95ce8740c87dd373e0a15fa2985e1faee95622df8eef47e9b8abf556dcf56c1",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-b95ce8740c87dd373e0a15fa2985e1faee95622df8eef47e9b8abf556dcf56c1.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "748d170d6dd2860874293d3c42bc6a0d2b0142553d9dde9bf27a76850783d618",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-748d170d6dd2860874293d3c42bc6a0d2b0142553d9dde9bf27a76850783d618.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadCentralPayment.lean",
+      "sha256": "7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBoundaryPruning.lean",
+      "sha256": "5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLargeOrderCore.lean",
+      "sha256": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_head_price_audit.py",
+      "sha256": "c8007132c841fc6fde511c612998b41b9aec88b86be3aeeaa338b4dba8340f77",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-c8007132c841fc6fde511c612998b41b9aec88b86be3aeeaa338b4dba8340f77.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaArithmeticLogWindow.lean",
+      "sha256": "6d3237cd495d7705835bca47313f35faba30d1927aba0e5c023bdcbac312d487",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-6d3237cd495d7705835bca47313f35faba30d1927aba0e5c023bdcbac312d487.lean"
+    },
+    {
+      "path": "RiemannGaussian/LogarithmicDeviation.lean",
+      "sha256": "ab64799c5a812ffcc83faa0d2d41ea225290da986ae2836667ef6be91c31ac43",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-ab64799c5a812ffcc83faa0d2d41ea225290da986ae2836667ef6be91c31ac43.lean"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.olean",
+      "sha256": "3ad11daae32059a9c504464b586d8af6f91093143ff1ec98157849d9e0a685ee",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-3ad11daae32059a9c504464b586d8af6f91093143ff1ec98157849d9e0a685ee.olean"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".lake/riesz-global-period-edge-payment/dev.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-global-period-edge-payment/build.log",
+      "sha256": "d3ed6d627f99afdaeb27774ee89f23b0705428609b1a09a433038c0cc200bbfd",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-d3ed6d627f99afdaeb27774ee89f23b0705428609b1a09a433038c0cc200bbfd.log"
+    },
+    {
+      "path": ".lake/riesz-global-period-edge-payment-audit/Audit.lean",
+      "sha256": "5f3c8ba4bd6ca2c9e633a7702de4835db105d327b6c5b454d3dc79162e0af063",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-5f3c8ba4bd6ca2c9e633a7702de4835db105d327b6c5b454d3dc79162e0af063.lean"
+    },
+    {
+      "path": ".lake/riesz-global-period-edge-payment-audit/audit.log",
+      "sha256": "7a4b42164a481d865aecac90ea295fb76b44bd6cbcd88af22fe4bca214d40b50",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-7a4b42164a481d865aecac90ea295fb76b44bd6cbcd88af22fe4bca214d40b50.log"
+    },
+    {
+      "path": ".lake/riesz-global-period-edge-payment-audit/axioms.json",
+      "sha256": "a8a6cc421ac5b61a8787c88058af14ab9e1ff3bbf8b059ea871a048a117b38ee",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-a8a6cc421ac5b61a8787c88058af14ab9e1ff3bbf8b059ea871a048a117b38ee.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit/probe.json",
+      "sha256": "2abf33673e7cfbe051d3f489eabb5f0836ad4d5383cb393b919d99e08d98f59e",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-2abf33673e7cfbe051d3f489eabb5f0836ad4d5383cb393b919d99e08d98f59e.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit/probe.log",
+      "sha256": "e938deaaa68fb8bc9998b6bdaf8f9ec560ec326be86e7642e64f8141e8ba2faf",
+      "snapshot": ".lake/riesz-global-period-edge-payment-audit/snapshot-e938deaaa68fb8bc9998b6bdaf8f9ec560ec326be86e7642e64f8141e8ba2faf.log"
+    }
+  ],
+  "theoremLines": {
+    "norm_normalized_sum_with_offset": 29,
+    "exists_displaced_edge_bound": 64,
+    "periodWidth_bounds": 150,
+    "period_log_bracket": 159,
+    "interiorLabels_subset_completePeriods": 169,
+    "exists_whole_period_edge_bound": 184,
+    "periodEdgeConstant_nonneg": 216,
+    "wholePeriodBudget_tendsto": 235,
+    "pruned_sub_wholePeriod_bound": 245,
+    "eventually_native_wholePeriod_bound": 281,
+    "tendsto_native_plus_wholePeriodBoundary": 296,
+    "eventually_native_wholePeriod_floor": 308
+  },
+  "validation": {
+    "strictWarningAsError": true,
+    "targetedBuildPassed": true,
+    "frozenCompiledRootSHA256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "all14LintersPassed": true,
+    "compiledDeclarations": 48,
+    "compiledTheoremsIncludingPrivateAndAutomatic": 40,
+    "allDeclarationsCheckedTransitively": true,
+    "onlyStandardAxioms": true,
+    "standardAxiomsAllowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "numericalCases": 9,
+    "frozenComplexRegressions": 45
+  },
+  "preservation": {
+    "baselineFiles": 291,
+    "unchanged": 290,
+    "concurrentChangesObserved": [
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "a101a9e9734fb40cdbc49b79945a52eb5127f8212f7466a93a8a4eb4a0123628",
+        "current": "dd783ec746f6a5af7dbe536c118ea85590bf70fd96a378c796b6731ce04ab910"
+      }
+    ],
+    "noneOfThosePathsEditedByThisSlice": true,
+    "frozenCompiledRootUnchanged": true
+  },
+  "localOnly": {
+    "noCommitOrPush": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noWiderGates": true,
+    "noPublicEndpointChanges": true,
+    "noProbeInBuildOrCI": true
+  },
+  "numericalScope": {
+    "optionalOutsideBuildsCI": true,
+    "diagnosticOnly": true,
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingLength": false,
+    "nativeDyadicSchedule": false,
+    "nativeDeletionMasks": false,
+    "fullHeadAndRawHighCoefficientsPreserved": true,
+    "noPositiveCountAllowanceInSignedPeriodSum": true,
+    "noEventualPaymentAppliedAtToyOrders": true,
+    "phasePeriodsRetainExteriorEndpoints": true,
+    "noCofinalFloorOrZeroExclusionClaim": true
+  },
+  "arithmetic": {
+    "radiusInterval": "1/2 <= u <= 10001/20000",
+    "heightRegime": "54 <= abs(y)",
+    "genericEdgeFiniteOrderLowerBound": 64,
+    "wholeHeadLedgerFiniteOrderLowerBound": 65536,
+    "allCountsAndMasksSimultaneously": true,
+    "fullPhasesPreserved": true,
+    "fixedDisplacementOnlyChangesFiniteTiltConstant": true,
+    "genericEdgeNormRate": "C_periods*exp(-N/1000000)",
+    "wholeNativeEdgeBudget": "4*C_periods*exp(-N_j/1000000)",
+    "finiteConstantUnevaluated": true,
+    "wholeFamilies": [
+      "central ordinary primes",
+      "central squarefree semiprimes",
+      "raw high owners at EVERY count, original unallocated coefficient",
+      "SAME full original head"
+    ],
+    "noPrimePNTZeroRHOrTypeIIHypothesisInPayment": true,
+    "noCompleteInteriorPeriodNormPriced": true,
+    "noPhaseFrozen": true,
+    "nativeSignedBound": "abs(nativeScaledCore.re+wholePeriodBoundary) <= nativePrunedBudget+wholePeriodBudget ->0",
+    "atomPriceAndHeadCreditNotDoubleSpent": true,
+    "requiredSignedCompletePeriodUpperBound": "399/5000 + o(1), independently on a cofinal native sequence",
+    "independentCompletePeriodBoundProved": false,
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "newZeroExclusionProved": false,
+    "RHProved": false
+  }
+}

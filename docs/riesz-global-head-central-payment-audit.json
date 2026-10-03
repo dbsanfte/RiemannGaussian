@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "The same full head radial mismatch is paid geometrically. Whole central semiprimes and that full head have an independent coupled norm price smaller by two full head masses, up to two radial error budgets. The saving is spent inside the original native floor, whose required cofinal threshold remains open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadCentralPayment.lean",
+      "sha256": "7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_head_central_payment.py",
+      "sha256": "81a85d5fc421b684a69208a958e8126383167f83dc566c8db904f0bf9b1a47fd",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-81a85d5fc421b684a69208a958e8126383167f83dc566c8db904f0bf9b1a47fd.py"
+    },
+    {
+      "path": "docs/zeta-riesz-global-head-central-payment.md",
+      "sha256": "68a1b0abb68f39353254747e3ea053896ff320d53a086459b5fae541f704f9c0",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-68a1b0abb68f39353254747e3ea053896ff320d53a086459b5fae541f704f9c0.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d3c3d788b652efe7279251e331e2a612034e63adc8a1f5990907daea42b68ae7",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-d3c3d788b652efe7279251e331e2a612034e63adc8a1f5990907daea42b68ae7.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBoundaryPruning.lean",
+      "sha256": "5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCompletionBoundary.lean",
+      "sha256": "3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "sha256": "22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadTransport.lean",
+      "sha256": "8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLargeOrderCore.lean",
+      "sha256": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec.lean"
+    },
+    {
+      "path": "docs/riesz-global-boundary-pruning-audit.json",
+      "sha256": "7a5fe7b2e4def4cbf20cbbcd94a3fb84a962c0eda67cfd84ffd3ab62250cbc9d",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-7a5fe7b2e4def4cbf20cbbcd94a3fb84a962c0eda67cfd84ffd3ab62250cbc9d.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalHeadCentralPayment.olean",
+      "sha256": "07b188d296c08dd4c98b5f8a7a247f10fe6e66df712f19e23615d06113b402ed",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-07b188d296c08dd4c98b5f8a7a247f10fe6e66df712f19e23615d06113b402ed.olean"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".lake/riesz-global-head-central-payment/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment/build.log",
+      "sha256": "479085f163ac239743ff61bfcd1e7cf0a22502131173c170ea920914fc20a73c",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-479085f163ac239743ff61bfcd1e7cf0a22502131173c170ea920914fc20a73c.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment-audit/Audit.lean",
+      "sha256": "2202f97ebd3f981752d15e0b5a05544a691bfc4872c021d43907020a21118aa1",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-2202f97ebd3f981752d15e0b5a05544a691bfc4872c021d43907020a21118aa1.lean"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment-audit/audit.log",
+      "sha256": "87896bc017b0563ffe0dcbf8d01aa893712007b08beab34ae814b38a942e5f2a",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-87896bc017b0563ffe0dcbf8d01aa893712007b08beab34ae814b38a942e5f2a.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment-audit/axioms.json",
+      "sha256": "83dbbc3123c6645e2b8cd26a25481a38f8181d8c4eff295ae79b1c572ab3460c",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-83dbbc3123c6645e2b8cd26a25481a38f8181d8c4eff295ae79b1c572ab3460c.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment/probe.json",
+      "sha256": "06f3395c69c614806f501fedeeb67cc85d66159cc2c564f7dd6ea06e0173ecc0",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-06f3395c69c614806f501fedeeb67cc85d66159cc2c564f7dd6ea06e0173ecc0.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-central-payment/probe.log",
+      "sha256": "baa6eb94a9c6b494987ab8fb7189deea786a97e655d74b460fa00eee26ba481e",
+      "snapshot": ".lake/riesz-global-head-central-payment-audit/snapshot-baa6eb94a9c6b494987ab8fb7189deea786a97e655d74b460fa00eee26ba481e.log"
+    }
+  ],
+  "theoremLines": {
+    "largestPrime_label": 46,
+    "label_injective": 57,
+    "originalPair_eq_label_atom": 129,
+    "originalHead_eq_label_sum": 152,
+    "headCoefficient_bounds": 174,
+    "headCoefficient_majorant": 230,
+    "full_sub_centralHead_bound": 258,
+    "tendsto_full_sub_centralHead": 270,
+    "centralHeadLabels_subset_semiprime": 281,
+    "central_semiprime_head_bound": 337,
+    "centralHeadMass_eq_zero_re": 416,
+    "fullHead_sub_centralMass_bound": 430,
+    "full_semiprime_head_bound": 443,
+    "prunedBoundary_upper": 464,
+    "eventually_native_floor_with_semiprime_credit": 486
+  },
+  "validation": {
+    "strictWarningAsError": true,
+    "targetedBuildPassed": true,
+    "frozenCompiledRootSHA256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "all14LintersPassed": true,
+    "compiledDeclarations": 53,
+    "compiledTheoremsIncludingPrivateAndAutomatic": 45,
+    "allDeclarationsCheckedTransitively": true,
+    "onlyStandardAxioms": true,
+    "standardAxiomsAllowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "numericalCases": 9,
+    "frozenComplexRegressions": 18
+  },
+  "arithmetic": {
+    "radiusInterval": "1/2 <= u <= 10001/20000",
+    "finiteOrderLowerBound": 65536,
+    "uniformAllHeights": true,
+    "headDifferenceNormBound": "radialConstant * exp(-N/1000000)",
+    "globalJoinedNormBound": "D2_N - nativeHead(u,0,N) + 2*radialConstant*exp(-N/1000000)",
+    "separatedPrice": "D2_N + nativeHead(u,0,N)",
+    "globalPriceSaving": "2*nativeHead(u,0,N) - 2*radialConstant*exp(-N/1000000)",
+    "nativeFloorLedgerConnected": true,
+    "noNumericalRadialConstantAssumed": true,
+    "fullHeadSourceRetained": true,
+    "headPairsInjectiveOnProductLabels": true,
+    "fullFactorialAllocationPreserved": true,
+    "sourceScaled": true,
+    "originalPhysicalAndPrimeSievePreserved": true,
+    "originalComplexPhasePreserved": true,
+    "projectedCentralHeadLabelsAreGenuineCentralSquarefreeSemiprimes": true,
+    "noPrimeOrRawHighOwnerSeparateNormPrice": true,
+    "rawHighOwnersRemainOriginalUnallocated": true,
+    "noDoubleSpendingHeadOrPriorNativePayments": true,
+    "cofinalBoundForResidualPriceProved": false,
+    "ordinaryPrimeAndRawHighOwnerJointBoundProved": false,
+    "requiredWholeBoundaryUpperThreshold": "399/5000",
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "newZeroExclusionProved": false,
+    "RHProved": false
+  },
+  "numericalScope": {
+    "optionalOutsideBuildsCI": true,
+    "diagnosticOnly": true,
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingLength": false,
+    "nativeDyadicSchedule": false,
+    "nativeDeletionMasks": false,
+    "noEventualBudgetAppliedAtToyOrders": true,
+    "outerHeadNotDropped": true,
+    "ordinaryPrimeAndRawHighOwnerBoundaryStillUnpaid": true,
+    "noCofinalFloorOrZeroExclusionClaim": true
+  },
+  "preservation": {
+    "baselineFiles": 282,
+    "unchanged": 278,
+    "concurrentChangesObserved": [
+      {
+        "path": "RiemannGaussian/SemiprimeDerivativeCoverage.lean",
+        "before": "2f809900fc4112bb20c667d69cf565ade9db61138a51241d217c7d1e3610526e",
+        "current": "b83d286e14660de60276636137b2ce76c8f2f59e6c9cb21916b0a53748a15db3"
+      },
+      {
+        "path": "scripts/probe_semiprime_derivative_coverage_certificate.py",
+        "before": "3f4aac8fd1593fc0ce861270c412ee3124da45bd1bca03ad1ddee968ef3d521d",
+        "current": "7057494ba317a9a1adf29826d9b2f4d432948daa791b0a0aad6df53e7564450e"
+      },
+      {
+        "path": "RiemannGaussian.lean",
+        "before": "133a76d90f38b22b6f6f535693d48e2b481c6acdb9bc234ca262fde64e7a1d18",
+        "current": "c9aae3808610fe2f35b8d64049b3ac13824f2b637574167512f45ca08df2b97c"
+      },
+      {
+        "path": "docs/theorem-explorer/metadata.json",
+        "before": "4095a0333dfae707633a49ec3a5045bc325f6b3c1ec2667e70e9527c92637644",
+        "current": "968cdc177c30aa9ca1089c7a5dc2bf8c64a366d15c8647f15006b3d85f218aa0"
+      }
+    ],
+    "noneOfThosePathsEditedByThisSlice": true,
+    "frozenCompiledRootUnchanged": true
+  },
+  "localOnly": {
+    "noCommitOrPush": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noWiderGates": true,
+    "noPublicEndpointChanges": true,
+    "noProbeInBuildOrCI": true
+  }
+}

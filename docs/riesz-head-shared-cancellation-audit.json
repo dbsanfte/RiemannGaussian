@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Exact all-count cancellation of nonowner head-prime incidences on the actual balanced main; surviving shared profile has one owner per nonzero higher-count label. Global signed floor still open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszHeadSharedCancellation.lean",
+      "sha256": "43854ce0c75664d87bcaf6be60ca6ea7ed0b9730f752ace1fd2d86da44e04175",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-43854ce0c75664d87bcaf6be60ca6ea7ed0b9730f752ace1fd2d86da44e04175.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "sha256": "22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairDiscrepancy.lean",
+      "sha256": "c1bb0cd714f0a94a6040fac3d182d38bc50c34eb0a1fe0e1f30519d4c72686d0",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-c1bb0cd714f0a94a6040fac3d182d38bc50c34eb0a1fe0e1f30519d4c72686d0.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedConvolution.lean",
+      "sha256": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_joint_interference.py",
+      "sha256": "ce62d013371867344f4662ea6ec82363e3302d8ed3c2a86daf6a1c953cf27b70",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-ce62d013371867344f4662ea6ec82363e3302d8ed3c2a86daf6a1c953cf27b70.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_signature.py",
+      "sha256": "6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9.py"
+    },
+    {
+      "path": "docs/zeta-riesz-head-shared-cancellation.md",
+      "sha256": "4101bd5f389f84cbcd3b354f0d5308ebeda77792fe3e8af4836bb2c9258716fc",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-4101bd5f389f84cbcd3b354f0d5308ebeda77792fe3e8af4836bb2c9258716fc.md"
+    },
+    {
+      "path": "docs/riesz-prime-head-pole-payment-audit.json",
+      "sha256": "26f996160de4552647b8023194beba792dfe01401d83496fa15748c7db5f5f3f",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-26f996160de4552647b8023194beba792dfe01401d83496fa15748c7db5f5f3f.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "ab02cdd683b6ee9a24ea4e15085388e0d750e684b8a7cf87705211e83b89402e",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-ab02cdd683b6ee9a24ea4e15085388e0d750e684b8a7cf87705211e83b89402e.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszHeadSharedCancellation.olean",
+      "sha256": "098967acaf447ad98383a69e5ce5f0c58bddfca55218b95b4161534aa9c62ed5",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-098967acaf447ad98383a69e5ce5f0c58bddfca55218b95b4161534aa9c62ed5.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local strict leaf/targeted build, frozen compiled ordinary root plus explicit leaf; no wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszHeadSharedCancellation.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszHeadSharedCancellation --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-head-shared-cancellation/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "rootSourceNotRebuilt": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "allNamespaceLintersPass": true,
+      "lintersPerNamespace": 14
+    },
+    "publicTheorems": 9,
+    "publicDefinitions": 2,
+    "compiledDeclarations": 17,
+    "compiledTheoremsIncludingPrivateAndGenerated": 15,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofProbeDocumentationAndArtifactsPreserved": true
+  },
+  "theoremLines": {
+    "headCofactor_log": 41,
+    "coefficient_two_large_zero": 52,
+    "central_two_large_zero": 87,
+    "central_nonowner_head_zero": 129,
+    "central_shared_incidence_eq_owner": 151,
+    "higher_count_profile_eq_owner": 190,
+    "nonownerShared_sum_eq_zero": 215,
+    "nonownerShared_source_floor": 228,
+    "centralRest_eq_without_nonownerShared": 240
+  },
+  "exactResults": {
+    "nativeRange": "1/2 <= u <= 10001/20000, N >= 65536",
+    "nativeMovingLengthAndAllMasksRetained": true,
+    "noZeroHypothesis": true,
+    "heightAndMultiplicityIndependent": true,
+    "headCofactorLogLowerBound": "log q > 7N/10",
+    "lengthBounds": [
+      "277N/200 <= L",
+      "L <= 139N/100"
+    ],
+    "centralLogUpperBound": "log n <= 2029N/1000",
+    "bothDeletionCutoffsSaturated": true,
+    "finalPairCutoffNonpositive": true,
+    "exactResponse": "R_L(pqa)=-Lambda(a)",
+    "compositeCofactorAllCountsAtLeastFourZero": true,
+    "nonownerSharedHeadPrimeOriginalCoefficientZero": true,
+    "sharedHigherCountIncidencesReduceToUniqueOwner": true,
+    "arbitraryCorrelatedComplexWeightsRetained": true,
+    "noCountMultiplicityOrSeparateCountPrice": true,
+    "noPrimeOrCofactorCompletion": true,
+    "noPhaseTransferAssumption": true,
+    "independentWholeNonownerSharedSectorFloor": "0, exactly",
+    "centralRestDeletionExact": true,
+    "sameFullSignedHeadRetained": true,
+    "appliesExistingSaturationWithoutSpendingAlreadyZeroLabelsTwice": true
+  },
+  "optionalProbe": {
+    "snapshot": {
+      "path": ".lake/riesz-joint-interference/probe.json",
+      "sha256": "c9f5312e9e2f0c9fd52599e2f9ecc54b08f884397d371152529abb01e67e84f7",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-c9f5312e9e2f0c9fd52599e2f9ecc54b08f884397d371152529abb01e67e84f7.json"
+    },
+    "summary": {
+      "path": ".lake/riesz-joint-interference/summary.json",
+      "sha256": "d37e01ac325e321c5c1b9fc701d93291b9ff626148ed7a84240cc51136ae890d",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-d37e01ac325e321c5c1b9fc701d93291b9ff626148ed7a84240cc51136ae890d.json"
+    },
+    "cases": 180,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "frozenComplexTotalRegressions": 18,
+    "exactIntegerCutoffFloatingPhasesAndSums": true,
+    "wholeCountsAndSameHeadJoinedBeforeCrossTerms": true,
+    "crossLeastPrimeTermsRetained": true,
+    "noIncidenceIndependenceAssumption": true,
+    "sharedIncidenceEnergyNotWholeEnergy": true,
+    "observedSignNotTheorem": true,
+    "sameLeastPrimeCrossNegativeCases": 180,
+    "globalCrossCountReinforcingCases": 13,
+    "byOrder": [
+      {
+        "N": 6,
+        "cases": 60,
+        "fullNonownerCancelledLabels": 0,
+        "centralNonownerCancelledLabels": 0,
+        "globalCrossCountReinforces": 6,
+        "sameLeastPrimeCrossCountCancels": 60,
+        "ownerHeadSharedPrimeReinforces": 55,
+        "minimumJointToDiagonal": 0.07672867352514617,
+        "maximumJointToDiagonal": 2.2242357185029222
+      },
+      {
+        "N": 7,
+        "cases": 60,
+        "fullNonownerCancelledLabels": 749,
+        "centralNonownerCancelledLabels": 642,
+        "globalCrossCountReinforces": 2,
+        "sameLeastPrimeCrossCountCancels": 60,
+        "ownerHeadSharedPrimeReinforces": 56,
+        "minimumJointToDiagonal": 0.03766439864947253,
+        "maximumJointToDiagonal": 1.5505309461038341
+      },
+      {
+        "N": 8,
+        "cases": 60,
+        "fullNonownerCancelledLabels": 29778,
+        "centralNonownerCancelledLabels": 24605,
+        "globalCrossCountReinforces": 5,
+        "sameLeastPrimeCrossCountCancels": 60,
+        "ownerHeadSharedPrimeReinforces": 29,
+        "minimumJointToDiagonal": 0.1090589805940692,
+        "maximumJointToDiagonal": 1.3692432027829045
+      }
+    ],
+    "stressTest": {
+      "snapshot": {
+        "path": ".lake/riesz-joint-interference/high-height-probe.json",
+        "sha256": "0f4242f0160f270132ed572ed9d2873c5788d19844c7719d1f839a69c61afd62",
+        "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-0f4242f0160f270132ed572ed9d2873c5788d19844c7719d1f839a69c61afd62.json"
+      },
+      "log": {
+        "path": ".lake/riesz-joint-interference/high-height-probe.log",
+        "sha256": "fb720bfea4f6f5055f8dc1f07f195df4017923da1fb5e6939163e27a208bbc24",
+        "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-fb720bfea4f6f5055f8dc1f07f195df4017923da1fb5e6939163e27a208bbc24.log"
+      },
+      "cases": 28,
+      "orders": [
+        6,
+        7
+      ],
+      "heights": [
+        100,
+        150,
+        250,
+        500,
+        1000,
+        5000,
+        10000
+      ],
+      "frozenRegressions": 4,
+      "sameLeastPrimeReinforcingCases": 11,
+      "scope": "Floating finite counter-indications to a universal local sign, not a native eventual no-go."
+    },
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingIntegerLength": false,
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "noPreviousNativeBudgetApplied": true,
+    "noCofinalSavingPercentClaim": true,
+    "optionalOutsideBuildsCI": true,
+    "notNumericalCertificate": true
+  },
+  "openPremises": {
+    "remainingTarget": "independent cofinal Re(centralRest)-Re(filteredHead) >= -399/5000-o(1), retaining all paid errors",
+    "survivingOwnerProfileIndependentlyBounded": false,
+    "tripleNonownerExceptionPaidByThisSlice": false,
+    "nonsharedMainPaidByThisSlice": false,
+    "globalSignedCrossGroupEstimateProved": false,
+    "wholeCofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noRootRegistration": true,
+    "noSubagents": true,
+    "noReadmeExplorerOrPublicEndpointChanges": true,
+    "concurrentSemiprimeWorkNotEdited": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-head-shared-cancellation/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-head-shared-cancellation/build.log",
+      "sha256": "6e57ac71998bf1efb303bee9d1c3582f09b3ccd3276410dce68a1247806e8132",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-6e57ac71998bf1efb303bee9d1c3582f09b3ccd3276410dce68a1247806e8132.log"
+    },
+    {
+      "path": ".lake/riesz-head-shared-cancellation/audit.log",
+      "sha256": "77d38cb6bb5e51ee6413886886e795b5954e4a7ebf3f23c92c54bcf613f1b10f",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-77d38cb6bb5e51ee6413886886e795b5954e4a7ebf3f23c92c54bcf613f1b10f.log"
+    },
+    {
+      "path": ".lake/riesz-head-shared-cancellation/Audit.lean",
+      "sha256": "51f27f139d0a41ce53f52ea5f0965ccfa5fedbd441cfc8abf6173ae5f707a7cc",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-51f27f139d0a41ce53f52ea5f0965ccfa5fedbd441cfc8abf6173ae5f707a7cc.lean"
+    },
+    {
+      "path": ".lake/riesz-head-shared-cancellation/axioms.json",
+      "sha256": "c939a5b9b95568bdbe4b808b9c816a13a81399abb28235288643108335c6fa32",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-c939a5b9b95568bdbe4b808b9c816a13a81399abb28235288643108335c6fa32.json"
+    },
+    {
+      "path": ".lake/riesz-head-shared-cancellation/write_report.py",
+      "sha256": "d9d76ae746f5a99e489953dc87f54e8b55db9d356e729d52cbbebda1b92f9de1",
+      "snapshot": ".lake/riesz-head-shared-cancellation/snapshot-d9d76ae746f5a99e489953dc87f54e8b55db9d356e729d52cbbebda1b92f9de1.py"
+    }
+  ]
+}

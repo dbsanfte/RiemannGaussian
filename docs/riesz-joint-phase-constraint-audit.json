@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "Exact all-count native prime-sign audit: arbitrary-prime-sign floor bounds must charge the fixed height-zero head. Actual fixed-height logarithmic correlation remains unbounded; no new arithmetic floor saving.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszJointPhaseConstraint.lean",
+      "sha256": "60025b75334682ab36a6a5bce5af9de92e2a081ae17b2624b2fe06d6d6e81fcd",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-60025b75334682ab36a6a5bce5af9de92e2a081ae17b2624b2fe06d6d6e81fcd.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_joint_phase_constraint.py",
+      "sha256": "1b023994a7bf84f9baf9d72378502869dd5015500c6830a2acefd212826def3b",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-1b023994a7bf84f9baf9d72378502869dd5015500c6830a2acefd212826def3b.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerCompletionAudit.lean",
+      "sha256": "45dfd03898f9b7e44aa7177e46a407a1ff9abb756d0c23fcbe1830f787792407",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-45dfd03898f9b7e44aa7177e46a407a1ff9abb756d0c23fcbe1830f787792407.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszHeadSharedCancellation.lean",
+      "sha256": "43854ce0c75664d87bcaf6be60ca6ea7ed0b9730f752ace1fd2d86da44e04175",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-43854ce0c75664d87bcaf6be60ca6ea7ed0b9730f752ace1fd2d86da44e04175.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "sha256": "22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-joint-phase-constraint.md",
+      "sha256": "aa15915e642a82320f5af0b7a0b4e2ac8fad949a52f22d7acfe417d612da316a",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-aa15915e642a82320f5af0b7a0b4e2ac8fad949a52f22d7acfe417d612da316a.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a223b22ce363f05664067992d2ec267ccbea35d8ed19903f033bebd61bff89a9",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-a223b22ce363f05664067992d2ec267ccbea35d8ed19903f033bebd61bff89a9.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "docs/riesz-owner-completion-audit.json",
+      "sha256": "b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8.json"
+    },
+    {
+      "path": "docs/riesz-joint-phase-discrepancy-audit.json",
+      "sha256": "c2bb4a3ed7bd1ba39b6ff6514ace92cd7306617baafe91197685fee9eb75faca",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-c2bb4a3ed7bd1ba39b6ff6514ace92cd7306617baafe91197685fee9eb75faca.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszJointPhaseConstraint.olean",
+      "sha256": "5c24b0812302b50a1ba77a6f3167c6500716ebaefe167e3062b0a23ec8d33fce",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-5c24b0812302b50a1ba77a6f3167c6500716ebaefe167e3062b0a23ec8d33fce.olean"
+    }
+  ],
+  "theoremLines": {
+    "sum_signCharacter_zero": 47,
+    "sum_weighted_characters_zero": 57,
+    "exists_nonpositive_signed_sum": 65,
+    "arbitrary_sign_allowance_ge_head": 80,
+    "central_has_prime_outside_head": 105,
+    "central_free_intersection": 136,
+    "head_pair_sign_one": 144,
+    "exists_joint_le_neg_head": 166
+  },
+  "validation": {
+    "scope": "Strict leaf/targeted build; frozen compiled ordinary root with explicit leaf lint and standard-axiom check. No wider gates.",
+    "strictLeanExitCode": 0,
+    "targetedBuildExitCode": 0,
+    "auditExitCode": 0,
+    "publicTheorems": 8,
+    "publicDefinitions": 2,
+    "compiledDeclarations": 15,
+    "compiledTheorems": 13,
+    "lintersPerNamespace": 14,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFocusedProofProbeDocsArtifactsPreserved": true,
+    "unchangedPriorManifestFiles": 228,
+    "unrelatedOlderBaselineDifferences": [
+      {
+        "path": "RiemannGaussian.lean",
+        "previous": "8c7f334076e3a9941000639b32efd7490f5a3a9b4f4f376812d840301212fd36",
+        "current": "0514961364a508b043062e0ed1107ae412e2e8179a3e4ec9295e44826e1fe81a"
+      },
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "previous": "b25e482a185e1de0072239609eef0eb6a7ab5cae85af53eff41f07d6490fe942",
+        "current": "98b46312aaf25eb7171a8f201dc2a23dc69571b6aba4fe1de1f9df79964a2781"
+      },
+      {
+        "path": "docs/theorem-explorer/metadata.json",
+        "previous": "7f353ac6aa532ad8bde28209bfe7cb5382bdb5799d825e1c35403e6d4d62b9aa",
+        "current": "41537f5755ee5c5423aeadee8c1fbac5200dac1057bd2b5b8687e644b277e15c"
+      }
+    ],
+    "unrelatedOlderBaselineDifferencesCurrentBytesPreserved": true,
+    "rootSourceNotRebuilt": true,
+    "frozenCompiledOrdinaryRootPreserved": true
+  },
+  "exactResults": {
+    "nativeDyadicLabelsRetained": true,
+    "originalFullHeadSupportRetained": true,
+    "headCandidateSupportIncludesZeroSievePrimePairs": true,
+    "allCountsJoinedBeforeAveraging": true,
+    "centralLargestLogStrictlyBelow51Nover50": true,
+    "headOwnerLogAtLeast51Nover50": true,
+    "headCofactorLogStrictlyAbove7Nover10": true,
+    "threeSuchCofactorsMiss2029Nover1000Core": true,
+    "everyCentralLabelHasPrimeOutsideEntireHeadSupport": true,
+    "sharedPrimeSignsMultiplicativeNotIndependentLabelPhases": true,
+    "entireCentralSignCubeAverageExactlyZero": true,
+    "bothHeadLegSignsRemainOne": true,
+    "someRelaxedJointValueAtMostNegativeHeightZeroHead": true,
+    "arbitrarySignFloorAllowanceMustCoverHeightZeroHead": true,
+    "noNormCompletionDensityPrimeEstimateOrNewFloorEndpoint": true,
+    "signChoicesNotClaimedToBeOneFixedHeightLogCharacter": true,
+    "noHeadGrowthOrActualHeightNoGoClaim": true
+  },
+  "optionalProbe": {
+    "snapshot": {
+      "path": ".lake/riesz-joint-phase-constraint/probe.json",
+      "sha256": "abd9ea6a7b1ad41ac83c7a5dd7baf5309530a0d8f916b1efa0a02b1f9ae5e39a",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-abd9ea6a7b1ad41ac83c7a5dd7baf5309530a0d8f916b1efa0a02b1f9ae5e39a.json"
+    },
+    "log": {
+      "path": ".lake/riesz-joint-phase-constraint/probe.log",
+      "sha256": "318276fe33fc13c6ac98d01309a801aae4800d4a65aad6cbb0c2d181bbdccfbc",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-318276fe33fc13c6ac98d01309a801aae4800d4a65aad6cbb0c2d181bbdccfbc.log"
+    },
+    "cases": 6,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "heightsForActualComplexRegressions": [
+      54,
+      65,
+      100
+    ],
+    "actualComplexTotalRegressions": 18,
+    "chosenSignsKeepEntireCandidateHeadFixed": true,
+    "conditionalExpectationUsesWholeSharedPrimeAssignments": true,
+    "exactIntegerDivisorCutoffFloatingKernelsAndPhases": true,
+    "syntheticExhaustiveChecks": [
+      {
+        "variables": 1,
+        "subsets": 2,
+        "mean": -0.7,
+        "chosenValue": -0.95
+      },
+      {
+        "variables": 2,
+        "subsets": 4,
+        "mean": -0.7,
+        "chosenValue": -1.52
+      },
+      {
+        "variables": 3,
+        "subsets": 8,
+        "mean": -0.7,
+        "chosenValue": -2.25
+      }
+    ],
+    "optionalOutsideBuildsCI": true,
+    "numericCertificate": false,
+    "nativeMovingLengthDyadicScheduleAndAllDeletionMasksNotApplied": true,
+    "noNativeBudgetAppliedToToyOrders": true,
+    "noCofinalOrMarginPercentClaim": true,
+    "earlierWeightedSupportExperimentPreserved": {
+      "path": ".lake/riesz-joint-phase-constraint/weighted-support-probe.json",
+      "sha256": "3d2b734496634b8248e91ff26972a09b872d820332ee2eaa0ea50df01d1a94b5",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-3d2b734496634b8248e91ff26972a09b872d820332ee2eaa0ea50df01d1a94b5.json"
+    }
+  },
+  "openPremises": {
+    "independentActualLogarithmicPrimeCorrelationBoundProved": false,
+    "newArithmeticFloorSavingProved": false,
+    "wholeCofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noReadmeExplorerOrPublicEndpointChangesByThisSlice": true,
+    "concurrentSemiprimeWorkNotEdited": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/build.log",
+      "sha256": "3617272d4f03a23334b59bc7985be3b08b9ffd6a3a92f91a49eb467d3b7b1620",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-3617272d4f03a23334b59bc7985be3b08b9ffd6a3a92f91a49eb467d3b7b1620.log"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/audit.log",
+      "sha256": "8422066c9f5dffa9b893f8e36c1b7e5761380fd94b36d00558778b64b9e43eb6",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-8422066c9f5dffa9b893f8e36c1b7e5761380fd94b36d00558778b64b9e43eb6.log"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/Audit.lean",
+      "sha256": "36e330b27dfea3a2941b994863afe9f96a52ed77cb3a34ef2ddb653cd5b38421",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-36e330b27dfea3a2941b994863afe9f96a52ed77cb3a34ef2ddb653cd5b38421.lean"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/axioms.json",
+      "sha256": "f7b599e95bb513268b1c5438b9a1c06af10ff5a2b8fef6ed68a65939a75f64ff",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-f7b599e95bb513268b1c5438b9a1c06af10ff5a2b8fef6ed68a65939a75f64ff.json"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/previous-manifest-differences.json",
+      "sha256": "23a7978e6f71348597f73ddc4ea471451055be0004455c97046405b0d7c86d7f",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-23a7978e6f71348597f73ddc4ea471451055be0004455c97046405b0d7c86d7f.json"
+    },
+    {
+      "path": ".lake/riesz-joint-phase-constraint-audit/write_report.py",
+      "sha256": "da6c187ac747773759987f4580e5bf2d3ecb29d30c808572a000764c54217b4b",
+      "snapshot": ".lake/riesz-joint-phase-constraint-audit/snapshot-da6c187ac747773759987f4580e5bf2d3ecb29d30c808572a000764c54217b4b.py"
+    }
+  ]
+}

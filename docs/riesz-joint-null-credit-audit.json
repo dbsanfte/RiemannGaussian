@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "baseHead": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "purpose": "Stronger native joinedPhysical floor with exact whole-period six-direction crossing credit; focused proof checks and exact finite floating-matrix all-coefficient/rate audit; independent cofinal native budget remains open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszJointNullCredit.lean": {
+      "path": "RiemannGaussian/ZetaRieszJointNullCredit.lean",
+      "sha256": "514748b4750d8400d3f06faf44306d16917e3d96f5f8aa054d4462081baa7fe8",
+      "snapshot": ".lake/riesz-joint-null-credit/source-514748b4750d8400d3f06faf44306d16917e3d96f5f8aa054d4462081baa7fe8.lean"
+    },
+    "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean": {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-joint-null-credit/source-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    "scripts/probe_riesz_quantitative_null_step.py": {
+      "path": "scripts/probe_riesz_quantitative_null_step.py",
+      "sha256": "d5e4283ed70b8992aa9b1023635eafc288ca151018be646c484d9dd0f0de834e",
+      "snapshot": ".lake/riesz-joint-null-credit/source-d5e4283ed70b8992aa9b1023635eafc288ca151018be646c484d9dd0f0de834e.py"
+    },
+    "docs/zeta-riesz-joint-null-credit.md": {
+      "path": "docs/zeta-riesz-joint-null-credit.md",
+      "sha256": "f24542a0605fc5d07e6b90b4d231b4a94271c3d1cb320e611836c9e8b2c5f9a0",
+      "snapshot": ".lake/riesz-joint-null-credit/source-f24542a0605fc5d07e6b90b4d231b4a94271c3d1cb320e611836c9e8b2c5f9a0.md"
+    }
+  },
+  "publicTheorems": [
+    "sum_jointIncrement_zero",
+    "jointIncrement_scaled",
+    "jointIncrement_add",
+    "nearDebit_overlap_eq",
+    "nearDebit_add_le",
+    "adverseCorrelation_add",
+    "joint_available_lower",
+    "jointIncrement_cubic",
+    "jointCredit_eq",
+    "jointCredit_nonneg",
+    "jointCredit_le_cost",
+    "signed_cost_lower_of_exact_dual",
+    "thresholdGain_le_jointCredit",
+    "prefix_floor_with_joint_credit",
+    "prefix_floor_with_joint_gain",
+    "nativeJointGain_nonneg",
+    "nativeJointGain_le_cost",
+    "nativeJointGain_cubic",
+    "native_floor_with_joint_gain",
+    "nativeJointCredit_nonneg",
+    "nativeJointCredit_le_cost",
+    "nativeJointCredit_cubic",
+    "native_floor_with_joint_credit",
+    "false_of_cofinal_joint_credit",
+    "false_of_cofinal_joint_gain"
+  ],
+  "compiledTransitiveAxiomAudit": {
+    "theoremCountIncludingGeneratedHelpers": 102,
+    "onlyStandardAxioms": true,
+    "modules": [
+      {
+        "theorems": 72,
+        "module": "RiemannGaussian.ZetaRieszQuantitativeNullStep",
+        "declarations": 86
+      },
+      {
+        "theorems": 30,
+        "module": "RiemannGaussian.ZetaRieszJointNullCredit",
+        "declarations": 36
+      }
+    ]
+  },
+  "validation": {
+    "focusedLeanWarningAsError": true,
+    "focusedLakeBuildWarningAsError": true,
+    "namespaceLintWithCompiledOrdinaryRootImported": true,
+    "namespaceLinters": 14,
+    "onlyStandardTransitiveAxioms": true,
+    "newModulesNotRegisteredInPublicRootYet": true,
+    "logs": {
+      ".lake/riesz-joint-null-credit/exact-credit-lean.log": {
+        "path": ".lake/riesz-joint-null-credit/exact-credit-lean.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "snapshot": ".lake/riesz-joint-null-credit/source-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+      },
+      ".lake/riesz-joint-null-credit/exact-credit-build.log": {
+        "path": ".lake/riesz-joint-null-credit/exact-credit-build.log",
+        "sha256": "e91740190f8bb77f3f1faaf7d57f7762de64a14a5a8f39916017ff1615a0dded",
+        "snapshot": ".lake/riesz-joint-null-credit/source-e91740190f8bb77f3f1faaf7d57f7762de64a14a5a8f39916017ff1615a0dded.log"
+      },
+      ".lake/riesz-joint-null-credit/exact-credit-audit.log": {
+        "path": ".lake/riesz-joint-null-credit/exact-credit-audit.log",
+        "sha256": "0b314d02ddeb7cdeb99dc0e77f63cfe094bcd9d13a6a7254c00ff7824d44d0f4",
+        "snapshot": ".lake/riesz-joint-null-credit/source-0b314d02ddeb7cdeb99dc0e77f63cfe094bcd9d13a6a7254c00ff7824d44d0f4.log"
+      },
+      ".lake/riesz-joint-null-credit/Audit.lean": {
+        "path": ".lake/riesz-joint-null-credit/Audit.lean",
+        "sha256": "2d55209f11bb52f4c9eae55677d4be59c92fac42e53abc928145cd3e537c96c6",
+        "snapshot": ".lake/riesz-joint-null-credit/source-2d55209f11bb52f4c9eae55677d4be59c92fac42e53abc928145cd3e537c96c6.lean"
+      },
+      ".lake/riesz-joint-null-credit/axioms.json": {
+        "path": ".lake/riesz-joint-null-credit/axioms.json",
+        "sha256": "346c1c4f84ade08961a316633513253ab419a49e125c2ac36549e40efb839b53",
+        "snapshot": ".lake/riesz-joint-null-credit/source-346c1c4f84ade08961a316633513253ab419a49e125c2ac36549e40efb839b53.json"
+      }
+    }
+  },
+  "probe": {
+    "receipt": {
+      "path": ".lake/riesz-quantitative-null-step/report.json",
+      "sha256": "36f8ccc3dc66b7b9dbd9a190557b8abda1a1ad5977a75bd76dae50a283ae7ead",
+      "snapshot": ".lake/riesz-joint-null-credit/source-36f8ccc3dc66b7b9dbd9a190557b8abda1a1ad5977a75bd76dae50a283ae7ead.json"
+    },
+    "exactUnitRegressions": 2000,
+    "unitZeroDebitCancellation": "2",
+    "constructedPrimeUniversesCases": 12,
+    "positiveJointGuaranteeCases": 12,
+    "bothIndividualMarginalsNegativeJointPositiveCases": 3,
+    "finiteRescaledGuaranteedGainFraction": {
+      "min": 0.005968137527928372,
+      "max": 0.23839434964611872
+    },
+    "finiteRescaledRecomputedGainFraction": {
+      "min": 0.09157944522965611,
+      "max": 0.4785175888031271
+    },
+    "nativePopulationRecords": 0,
+    "nativeCoverageCertified": false,
+    "floatingPhaseProbablePrimesAndLogInterpolation": true,
+    "originalEarlyCountCeilingUsed": true,
+    "eventualCanonicalCountCropApplied": false,
+    "outsideBuildsCI": true
+  },
+  "scope": {
+    "allCountsPeriodsAssembledBeforeCharges": true,
+    "countThreeNotCorrectedByCube": true,
+    "originalImaginaryTiltFixed": true,
+    "allMovingVectorsAreExactFiniteNulls": true,
+    "noNewAnalyticError": true,
+    "sameBaselinePriceFunding": true,
+    "previousNativeCubicGainRecoveredExactly": true,
+    "nativeCreditMagnitudeBound": false,
+    "cofinal399Over5000Estimate": false,
+    "newFixedPowerSaving": false,
+    "floorClosed": false,
+    "ceilingClosed": false,
+    "restrictedZeroExclusion": false,
+    "RHClaim": false,
+    "commitPushSubagentsOrBroaderGatesRun": false,
+    "unrelatedSemiprimeChangesObservedAndPreserved": true,
+    "nativeExactCrossingFloorProved": true,
+    "thresholdGuaranteeCoveredAtSameRescaledStep": true,
+    "exactStepCreditsAreAlternativesNotAdditive": true,
+    "allRealCoefficientDualTheoremProved": true,
+    "independentCofinalExactCreditedCost399Over5000Estimate": false,
+    "nativeUniformExponentialSaving": false
+  },
+  "previousLocalAudit": {
+    "path": ".lake/riesz-joint-null-credit/audit-before-exact-credit-4f33564441fbd0a8e6928c8e35ac91e259cae56bcd9da313245791bd648f20fc.json",
+    "sha256": "4f33564441fbd0a8e6928c8e35ac91e259cae56bcd9da313245791bd648f20fc"
+  },
+  "exactCrossingAndRateAudit": {
+    "receipt": {
+      "path": ".lake/riesz-joint-null-credit/exact-cost-rate.json",
+      "sha256": "baab32da21dca6a0f6e3edbbb45aafbe627c9e7fc60d40b896fa348fd387261e",
+      "snapshot": ".lake/riesz-joint-null-credit/source-baab32da21dca6a0f6e3edbbb45aafbe627c9e7fc60d40b896fa348fd387261e.json"
+    },
+    "largerOrderTwoSeedReceipt": {
+      "path": ".lake/riesz-joint-null-credit/order1536.json",
+      "sha256": "ec172f3fde81fe66ff8b21319f284652a503ff060a059e487e9681d20af5a4e8",
+      "snapshot": ".lake/riesz-joint-null-credit/source-ec172f3fde81fe66ff8b21319f284652a503ff060a059e487e9681d20af5a4e8.json"
+    },
+    "exactRationalUnitRegressions": 2000,
+    "roundMatrixCases": 9,
+    "allRealSixCoefficientVectorsCoveredForRoundedMatrices": true,
+    "largestRelativeRationalPrimalDualGap": 8.887771829434663e-09,
+    "positiveEnvelopeComparisonLogRate": 9.999500033329732e-05,
+    "envelopeComparisonIsNotNecessaryConditionForActualFloor": true,
+    "nativePopulationOrLogPhaseArithmeticCertified": false,
+    "uniformAsymptoticSavingProved": false,
+    "costRisesInTwoOfThree640To1536RelativeCurves": true,
+    "rows": [
+      {
+        "N": 256,
+        "seed": 317,
+        "height": 54.0,
+        "remainingFiniteCostFraction": 0.7887072960222621,
+        "actualStepCreditFraction": 0.21129270397773792,
+        "thresholdGuaranteeFraction": 0.0534773887004506,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 0.0,
+        "measuredRatioLogSlopeFromPreviousOrder": null,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 256,
+        "seed": 317,
+        "height": 65.0,
+        "remainingFiniteCostFraction": 0.5974285606616712,
+        "actualStepCreditFraction": 0.40257143931768724,
+        "thresholdGuaranteeFraction": 0.17050410738279845,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 3.455086914132568e-11,
+        "measuredRatioLogSlopeFromPreviousOrder": null,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 256,
+        "seed": 317,
+        "height": 100.0,
+        "remainingFiniteCostFraction": 0.8861328267156514,
+        "actualStepCreditFraction": 0.11386717327647145,
+        "thresholdGuaranteeFraction": 0.027057192694164567,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 8.889395252514034e-12,
+        "measuredRatioLogSlopeFromPreviousOrder": null,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 640,
+        "seed": 317,
+        "height": 54.0,
+        "remainingFiniteCostFraction": 0.5214824111879168,
+        "actualStepCreditFraction": 0.4785175888031271,
+        "thresholdGuaranteeFraction": 0.19424282942687995,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 1.7174001994158096e-11,
+        "measuredRatioLogSlopeFromPreviousOrder": -0.001077395115966623,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 640,
+        "seed": 317,
+        "height": 65.0,
+        "remainingFiniteCostFraction": 0.6064922679388952,
+        "actualStepCreditFraction": 0.3935077320586876,
+        "thresholdGuaranteeFraction": 0.171450023005003,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 3.985713587819779e-12,
+        "measuredRatioLogSlopeFromPreviousOrder": 3.921163211875019e-05,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 640,
+        "seed": 317,
+        "height": 100.0,
+        "remainingFiniteCostFraction": 0.5253479584021442,
+        "actualStepCreditFraction": 0.47465203692868296,
+        "thresholdGuaranteeFraction": 0.23839434964611872,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 8.887771829434663e-09,
+        "measuredRatioLogSlopeFromPreviousOrder": -0.0013614740512882951,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 1536,
+        "seed": 317,
+        "height": 54.0,
+        "remainingFiniteCostFraction": 0.6723671435963688,
+        "actualStepCreditFraction": 0.32763285636784156,
+        "thresholdGuaranteeFraction": 0.1152962003972929,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 5.322944699477649e-11,
+        "measuredRatioLogSlopeFromPreviousOrder": 0.00028362610429113393,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 1536,
+        "seed": 317,
+        "height": 65.0,
+        "remainingFiniteCostFraction": 0.5296485148986358,
+        "actualStepCreditFraction": 0.4703514847335154,
+        "thresholdGuaranteeFraction": 0.21915534179914628,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 6.945145203287213e-10,
+        "measuredRatioLogSlopeFromPreviousOrder": -0.0001512035407766935,
+        "nativeCostOrAsymptoticRateCertified": false
+      },
+      {
+        "N": 1536,
+        "seed": 317,
+        "height": 100.0,
+        "remainingFiniteCostFraction": 0.6268309040088799,
+        "actualStepCreditFraction": 0.3731690959837717,
+        "thresholdGuaranteeFraction": 0.14690777046179732,
+        "exactDualCoversEveryRealCoefficientVector": true,
+        "rationalPrimalDualRelativeGap": 1.1723014295098329e-11,
+        "measuredRatioLogSlopeFromPreviousOrder": 0.000197116063307743,
+        "nativeCostOrAsymptoticRateCertified": false
+      }
+    ],
+    "interpretation": "Exact matrix duals remove optimizer uncertainty within the six-direction test family. Changing sparse early-order inventories, probable primes/log phases and the original early count ceiling are not a native population or cofinal rate certificate.",
+    "executedDriverForNineCaseReceipt": {
+      "path": "scripts/probe_riesz_quantitative_null_step.py",
+      "sha256": "38c3a7e5014364886e30de43abdcb4baef878b7471fbdd36b0bc17054fd2c0f1",
+      "snapshot": ".lake/riesz-joint-null-credit/source-38c3a7e5014364886e30de43abdcb4baef878b7471fbdd36b0bc17054fd2c0f1.py"
+    },
+    "currentDriverMappingRegression": {
+      "path": ".lake/riesz-joint-null-credit/parameter-mapping-check.json",
+      "sha256": "b798b542577753a5f07fb5c5280a14fc86cf99a76f8ed20129b07873fbfa7137",
+      "snapshot": ".lake/riesz-joint-null-credit/source-b798b542577753a5f07fb5c5280a14fc86cf99a76f8ed20129b07873fbfa7137.json"
+    },
+    "reportedNativeCorrectionUsesBaselineDisplacement": true
+  }
+}

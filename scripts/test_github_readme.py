@@ -108,7 +108,9 @@ def run(output, published):
                 assert article.locator("h2").first.inner_text().strip() == "Proved Zero-Free Region"
                 research = article.locator("blockquote", has_text="Research agents:")
                 assert research.count() == 1
-                assert "GPT-5.6 Sol and GPT-6 Astra" in research.inner_text()
+                assert all(name in research.inner_text() for name in (
+                    "GPT-5.6 Sol", "GPT-6.1 Sol", "GPT-6 Astra",
+                ))
                 assert research.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelector('h2')) & Node.DOCUMENT_POSITION_FOLLOWING)")
                 assert research.evaluate("e => e.previousElementSibling?.tagName === 'P' && e.previousElementSibling.textContent.includes('repository’s verification gates') || e.previousElementSibling?.textContent.includes(\"repository's verification gates\")")
                 plot = article.locator("img[alt^='Zero-free region comparison:']")

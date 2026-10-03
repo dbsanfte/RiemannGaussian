@@ -1,0 +1,969 @@
+{
+  "seed": 202610021613,
+  "repeats": 3,
+  "scope": "exact arithmetic replay of a complete classical cover; no one-sixth bit bound",
+  "kernel_inputs": "N only; no factor ratio, order, curve or private weight",
+  "implementation_difference": "Python streams rows and uses a polynomial-tree prefix; Lean specifies the full candidate list and prefix product",
+  "timing_scope": "all public width setup, square checks, prefix construction/evaluation, visited centres and discriminants",
+  "construction_scope": "full materialized Lean list size charged separately even if Python returns early",
+  "regression": {
+    "small_semiprimes": 351,
+    "prime_limit": 101,
+    "candidate_count_widths": 65,
+    "stages": {
+      "finite-small-input": 138,
+      "quadratic-prefix": 18,
+      "literal-weighted-cover": 178,
+      "square": 17
+    },
+    "oracle_scope": "reference factors and factorial used only outside recovery"
+  },
+  "factoring_replay": [
+    {
+      "kind": "fresh-balanced",
+      "index": 0,
+      "n": 2576455799,
+      "bits": 32,
+      "reference_primes": [
+        50411,
+        51109
+      ],
+      "result": {
+        "factor": 51109,
+        "stage": "literal-weighted-cover",
+        "width": 38,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 1,
+          "centre_square_roots": 1,
+          "weight_product_square_roots": 1,
+          "candidate_discriminants": 3,
+          "discriminant_square_roots": 3,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 84,
+          "packed_coefficients": 707,
+          "monic_reductions": 75,
+          "algorithm": "classical-additive-prefix",
+          "width": 38,
+          "covered_integers": 1444,
+          "elapsed_ms": 1.0446049855090678
+        },
+        "weighted_witness": {
+          "k": 1,
+          "centre": 101518,
+          "offset": 2,
+          "sum": 101520,
+          "discriminant_root": 698,
+          "quadratic_root": 51109
+        },
+        "elapsed_ms": 1.0564769909251481
+      },
+      "elapsed_ms": [
+        1.0564769909251481,
+        1.0179260279983282,
+        1.0200209799222648
+      ],
+      "median_ms": 1.0200209799222648,
+      "explicit_lean_list_entries": 3906,
+      "explicit_lean_list_lower_bound": 1444,
+      "full_cover_rows": 1444
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 1,
+      "n": 2271169487,
+      "bits": 32,
+      "reference_primes": [
+        36551,
+        62137
+      ],
+      "result": {
+        "factor": 62137,
+        "stage": "literal-weighted-cover",
+        "width": 37,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 170,
+          "centre_square_roots": 170,
+          "weight_product_square_roots": 170,
+          "candidate_discriminants": 1119,
+          "discriminant_square_roots": 1119,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 82,
+          "packed_coefficients": 689,
+          "monic_reductions": 73,
+          "algorithm": "classical-additive-prefix",
+          "width": 37,
+          "covered_integers": 1369,
+          "elapsed_ms": 1.0242809948977083
+        },
+        "weighted_witness": {
+          "k": 170,
+          "centre": 1242737,
+          "offset": 0,
+          "sum": 1242737,
+          "discriminant_root": 3,
+          "quadratic_root": 621370
+        },
+        "elapsed_ms": 1.5685489925090224
+      },
+      "elapsed_ms": [
+        1.5685489925090224,
+        1.4927019947208464,
+        1.5073679969646037
+      ],
+      "median_ms": 1.5073679969646037,
+      "explicit_lean_list_entries": 3709,
+      "explicit_lean_list_lower_bound": 1369,
+      "full_cover_rows": 1369
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 2,
+      "n": 2646728723,
+      "bits": 32,
+      "reference_primes": [
+        45337,
+        58379
+      ],
+      "result": {
+        "factor": 58379,
+        "stage": "literal-weighted-cover",
+        "width": 38,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 63,
+          "centre_square_roots": 63,
+          "weight_product_square_roots": 63,
+          "candidate_discriminants": 662,
+          "discriminant_square_roots": 662,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 84,
+          "packed_coefficients": 707,
+          "monic_reductions": 75,
+          "algorithm": "classical-additive-prefix",
+          "width": 38,
+          "covered_integers": 1444,
+          "elapsed_ms": 1.009683997835964
+        },
+        "weighted_witness": {
+          "k": 63,
+          "centre": 816686,
+          "offset": 0,
+          "sum": 816686,
+          "discriminant_root": 620,
+          "quadratic_root": 408653
+        },
+        "elapsed_ms": 1.3023159990552813
+      },
+      "elapsed_ms": [
+        1.3023159990552813,
+        1.3097890187054873,
+        1.3111860025674105
+      ],
+      "median_ms": 1.3097890187054873,
+      "explicit_lean_list_entries": 3906,
+      "explicit_lean_list_lower_bound": 1444,
+      "full_cover_rows": 1444
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 3,
+      "n": 2172291997,
+      "bits": 32,
+      "reference_primes": [
+        39341,
+        55217
+      ],
+      "result": {
+        "factor": 55217,
+        "stage": "literal-weighted-cover",
+        "width": 36,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 35,
+          "centre_square_roots": 35,
+          "weight_product_square_roots": 35,
+          "candidate_discriminants": 468,
+          "discriminant_square_roots": 468,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 78,
+          "packed_coefficients": 651,
+          "monic_reductions": 71,
+          "algorithm": "classical-additive-prefix",
+          "width": 36,
+          "covered_integers": 1296,
+          "elapsed_ms": 0.8955649973358959
+        },
+        "weighted_witness": {
+          "k": 35,
+          "centre": 551472,
+          "offset": 0,
+          "sum": 551472,
+          "discriminant_root": 698,
+          "quadratic_root": 276085
+        },
+        "elapsed_ms": 1.0969160066451877
+      },
+      "elapsed_ms": [
+        1.0969160066451877,
+        1.101943984394893,
+        1.09544800943695
+      ],
+      "median_ms": 1.0969160066451877,
+      "explicit_lean_list_entries": 3560,
+      "explicit_lean_list_lower_bound": 1296,
+      "full_cover_rows": 1296
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 0,
+      "n": 747937547989,
+      "bits": 40,
+      "reference_primes": [
+        743609,
+        1005821
+      ],
+      "result": {
+        "factor": 743609,
+        "stage": "literal-weighted-cover",
+        "width": 96,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 391,
+          "centre_square_roots": 391,
+          "weight_product_square_roots": 391,
+          "candidate_discriminants": 4195,
+          "discriminant_square_roots": 4195,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 242,
+          "packed_coefficients": 3309,
+          "monic_reductions": 191,
+          "algorithm": "classical-additive-prefix",
+          "width": 96,
+          "covered_integers": 9216,
+          "elapsed_ms": 3.322522999951616
+        },
+        "weighted_witness": {
+          "k": 391,
+          "centre": 34201964,
+          "offset": 0,
+          "sum": 34201964,
+          "discriminant_root": 4050,
+          "quadratic_root": 17103007
+        },
+        "elapsed_ms": 5.245581996859983
+      },
+      "elapsed_ms": [
+        5.245581996859983,
+        5.1593289826996624,
+        5.313746019965038
+      ],
+      "median_ms": 5.245581996859983,
+      "explicit_lean_list_entries": 24797,
+      "explicit_lean_list_lower_bound": 9216,
+      "full_cover_rows": 9216
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 1,
+      "n": 860215570157,
+      "bits": 40,
+      "reference_primes": [
+        850613,
+        1011289
+      ],
+      "result": {
+        "factor": 1011289,
+        "stage": "literal-weighted-cover",
+        "width": 98,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 304,
+          "centre_square_roots": 304,
+          "weight_product_square_roots": 304,
+          "candidate_discriminants": 3733,
+          "discriminant_square_roots": 3733,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 252,
+          "packed_coefficients": 3582,
+          "monic_reductions": 195,
+          "algorithm": "classical-additive-prefix",
+          "width": 98,
+          "covered_integers": 9604,
+          "elapsed_ms": 3.401652997126803
+        },
+        "weighted_witness": {
+          "k": 304,
+          "centre": 32342266,
+          "offset": 5,
+          "sum": 32342271,
+          "discriminant_root": 18977,
+          "quadratic_root": 16180624
+        },
+        "elapsed_ms": 5.068955011665821
+      },
+      "elapsed_ms": [
+        5.068955011665821,
+        5.03152099554427,
+        5.0583390111569315
+      ],
+      "median_ms": 5.0583390111569315,
+      "explicit_lean_list_entries": 25727,
+      "explicit_lean_list_lower_bound": 9604,
+      "full_cover_rows": 9604
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 2,
+      "n": 639010082297,
+      "bits": 40,
+      "reference_primes": [
+        708199,
+        902303
+      ],
+      "result": {
+        "factor": 902303,
+        "stage": "literal-weighted-cover",
+        "width": 93,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 154,
+          "centre_square_roots": 154,
+          "weight_product_square_roots": 154,
+          "candidate_discriminants": 2497,
+          "discriminant_square_roots": 2497,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 236,
+          "packed_coefficients": 3231,
+          "monic_reductions": 185,
+          "algorithm": "classical-additive-prefix",
+          "width": 93,
+          "covered_integers": 8649,
+          "elapsed_ms": 3.08192300144583
+        },
+        "weighted_witness": {
+          "k": 154,
+          "centre": 19840117,
+          "offset": 2,
+          "sum": 19840119,
+          "discriminant_root": 10547,
+          "quadratic_root": 9925333
+        },
+        "elapsed_ms": 4.154463007580489
+      },
+      "elapsed_ms": [
+        4.154463007580489,
+        4.1671739891171455,
+        4.178698000032455
+      ],
+      "median_ms": 4.1671739891171455,
+      "explicit_lean_list_entries": 23184,
+      "explicit_lean_list_lower_bound": 8649,
+      "full_cover_rows": 8649
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 3,
+      "n": 691135870969,
+      "bits": 40,
+      "reference_primes": [
+        659669,
+        1047701
+      ],
+      "result": {
+        "factor": 659669,
+        "stage": "literal-weighted-cover",
+        "width": 95,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 459,
+          "centre_square_roots": 459,
+          "weight_product_square_roots": 459,
+          "candidate_discriminants": 4432,
+          "discriminant_square_roots": 4432,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 240,
+          "packed_coefficients": 3283,
+          "monic_reductions": 189,
+          "algorithm": "classical-additive-prefix",
+          "width": 95,
+          "covered_integers": 9025,
+          "elapsed_ms": 3.2261429878417403
+        },
+        "weighted_witness": {
+          "k": 459,
+          "centre": 35621980,
+          "offset": 0,
+          "sum": 35621980,
+          "discriminant_root": 146,
+          "quadratic_root": 17811063
+        },
+        "elapsed_ms": 5.286158993840218
+      },
+      "elapsed_ms": [
+        5.286158993840218,
+        5.272819980746135,
+        5.296983988955617
+      ],
+      "median_ms": 5.286158993840218,
+      "explicit_lean_list_entries": 24092,
+      "explicit_lean_list_lower_bound": 9025,
+      "full_cover_rows": 9025
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 0,
+      "n": 205701831119669,
+      "bits": 48,
+      "reference_primes": [
+        14059033,
+        14631293
+      ],
+      "result": {
+        "factor": 14059033,
+        "stage": "literal-weighted-cover",
+        "width": 243,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 2499,
+          "centre_square_roots": 2499,
+          "weight_product_square_roots": 2499,
+          "candidate_discriminants": 26285,
+          "discriminant_square_roots": 26285,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 670,
+          "packed_coefficients": 12429,
+          "monic_reductions": 485,
+          "algorithm": "classical-additive-prefix",
+          "width": 243,
+          "covered_integers": 59049,
+          "elapsed_ms": 10.69607600220479
+        },
+        "weighted_witness": {
+          "k": 2499,
+          "centre": 1433944038,
+          "offset": 2,
+          "sum": 1433944040,
+          "discriminant_root": 77326,
+          "quadratic_root": 717010683
+        },
+        "elapsed_ms": 23.337908001849428
+      },
+      "elapsed_ms": [
+        23.337908001849428,
+        22.951690014451742,
+        22.916699992492795
+      ],
+      "median_ms": 22.951690014451742,
+      "explicit_lean_list_entries": 157216,
+      "explicit_lean_list_lower_bound": 59049,
+      "full_cover_rows": 59049
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 1,
+      "n": 153210545957437,
+      "bits": 48,
+      "reference_primes": [
+        10144289,
+        15103133
+      ],
+      "result": {
+        "factor": 10144289,
+        "stage": "literal-weighted-cover",
+        "width": 232,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 3015,
+          "centre_square_roots": 3015,
+          "weight_product_square_roots": 3015,
+          "candidate_discriminants": 27655,
+          "discriminant_square_roots": 27655,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 632,
+          "packed_coefficients": 11585,
+          "monic_reductions": 463,
+          "algorithm": "classical-additive-prefix",
+          "width": 232,
+          "covered_integers": 53824,
+          "elapsed_ms": 9.847653011092916
+        },
+        "weighted_witness": {
+          "k": 3015,
+          "centre": 1359308348,
+          "offset": 0,
+          "sum": 1359308348,
+          "discriminant_root": 26378,
+          "quadratic_root": 679667363
+        },
+        "elapsed_ms": 23.359209997579455
+      },
+      "elapsed_ms": [
+        23.359209997579455,
+        23.171128996182233,
+        24.6425989898853
+      ],
+      "median_ms": 23.359209997579455,
+      "explicit_lean_list_entries": 143483,
+      "explicit_lean_list_lower_bound": 53824,
+      "full_cover_rows": 53824
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 2,
+      "n": 196809338071921,
+      "bits": 48,
+      "reference_primes": [
+        13310603,
+        14785907
+      ],
+      "result": {
+        "factor": 13310603,
+        "stage": "literal-weighted-cover",
+        "width": 242,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 90,
+          "centre_square_roots": 90,
+          "weight_product_square_roots": 90,
+          "candidate_discriminants": 4825,
+          "discriminant_square_roots": 4825,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 668,
+          "packed_coefficients": 12389,
+          "monic_reductions": 483,
+          "algorithm": "classical-additive-prefix",
+          "width": 242,
+          "covered_integers": 58564,
+          "elapsed_ms": 10.307552991434932
+        },
+        "weighted_witness": {
+          "k": 90,
+          "centre": 266179191,
+          "offset": 2,
+          "sum": 266179193,
+          "discriminant_root": 32867,
+          "quadratic_root": 133106030
+        },
+        "elapsed_ms": 12.300313013838604
+      },
+      "elapsed_ms": [
+        12.300313013838604,
+        12.047000986058265,
+        12.260782008524984
+      ],
+      "median_ms": 12.260782008524984,
+      "explicit_lean_list_entries": 155999,
+      "explicit_lean_list_lower_bound": 58564,
+      "full_cover_rows": 58564
+    },
+    {
+      "kind": "fresh-balanced",
+      "index": 3,
+      "n": 232272952356499,
+      "bits": 48,
+      "reference_primes": [
+        14389469,
+        16141871
+      ],
+      "result": {
+        "factor": 14389469,
+        "stage": "literal-weighted-cover",
+        "width": 248,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 1886,
+          "centre_square_roots": 1886,
+          "weight_product_square_roots": 1886,
+          "candidate_discriminants": 23100,
+          "discriminant_square_roots": 23100,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 680,
+          "packed_coefficients": 12637,
+          "monic_reductions": 495,
+          "algorithm": "classical-additive-prefix",
+          "width": 248,
+          "covered_integers": 61504,
+          "elapsed_ms": 10.190639994107187
+        },
+        "weighted_witness": {
+          "k": 1886,
+          "centre": 1323732282,
+          "offset": 3,
+          "sum": 1323732285,
+          "discriminant_root": 98863,
+          "quadratic_root": 661915574
+        },
+        "elapsed_ms": 20.961655012797564
+      },
+      "elapsed_ms": [
+        20.961655012797564,
+        20.966893003787845,
+        20.953343977453187
+      ],
+      "median_ms": 20.961655012797564,
+      "explicit_lean_list_entries": 163773,
+      "explicit_lean_list_lower_bound": 61504,
+      "full_cover_rows": 61504
+    },
+    {
+      "kind": "saved-curve-menu-control",
+      "n": 62108022589,
+      "bits": 36,
+      "reference_primes": [
+        248909,
+        249521
+      ],
+      "result": {
+        "factor": 249521,
+        "stage": "literal-weighted-cover",
+        "width": 63,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 1,
+          "centre_square_roots": 1,
+          "weight_product_square_roots": 1,
+          "candidate_discriminants": 1,
+          "discriminant_square_roots": 1,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 150,
+          "packed_coefficients": 1693,
+          "monic_reductions": 125,
+          "algorithm": "classical-additive-prefix",
+          "width": 63,
+          "covered_integers": 3969,
+          "elapsed_ms": 1.8236759933643043
+        },
+        "weighted_witness": {
+          "k": 1,
+          "centre": 498430,
+          "offset": 0,
+          "sum": 498430,
+          "discriminant_root": 612,
+          "quadratic_root": 249521
+        },
+        "elapsed_ms": 1.837782998336479
+      },
+      "elapsed_ms": [
+        1.837782998336479,
+        1.817529002437368,
+        1.831008994486183
+      ],
+      "median_ms": 1.831008994486183,
+      "explicit_lean_list_entries": 10668,
+      "explicit_lean_list_lower_bound": 3969,
+      "full_cover_rows": 3969
+    },
+    {
+      "kind": "saved-separated-control",
+      "n": 46840800959,
+      "bits": 36,
+      "reference_primes": [
+        203653,
+        230003
+      ],
+      "result": {
+        "factor": 230003,
+        "stage": "literal-weighted-cover",
+        "width": 61,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 72,
+          "centre_square_roots": 72,
+          "weight_product_square_roots": 72,
+          "candidate_discriminants": 1124,
+          "discriminant_square_roots": 1124,
+          "square_discriminant_gcds": 1
+        },
+        "prefix": {
+          "status": "no-collision",
+          "factor": null,
+          "convolutions": 146,
+          "packed_coefficients": 1643,
+          "monic_reductions": 121,
+          "algorithm": "classical-additive-prefix",
+          "width": 61,
+          "covered_integers": 3721,
+          "elapsed_ms": 1.7414040048606694
+        },
+        "weighted_witness": {
+          "k": 72,
+          "centre": 3672895,
+          "offset": 6,
+          "sum": 3672901,
+          "discriminant_root": 7147,
+          "quadratic_root": 1840024
+        },
+        "elapsed_ms": 2.221697010099888
+      },
+      "elapsed_ms": [
+        2.221697010099888,
+        2.2126880066934973,
+        2.209964004578069
+      ],
+      "median_ms": 2.2126880066934973,
+      "explicit_lean_list_entries": 10014,
+      "explicit_lean_list_lower_bound": 3721,
+      "full_cover_rows": 3721
+    },
+    {
+      "kind": "unbalanced",
+      "n": 15032385529,
+      "bits": 34,
+      "reference_primes": [
+        7,
+        2147483647
+      ],
+      "result": {
+        "factor": 7,
+        "stage": "quadratic-prefix",
+        "width": 50,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 0,
+          "centre_square_roots": 0,
+          "weight_product_square_roots": 0,
+          "candidate_discriminants": 0,
+          "discriminant_square_roots": 0,
+          "square_discriminant_gcds": 0
+        },
+        "prefix": {
+          "status": "factor",
+          "factor": 7,
+          "baby_index": 1,
+          "giant_index": 0,
+          "root": 1,
+          "point": 50,
+          "convolutions": 124,
+          "packed_coefficients": 1371,
+          "monic_reductions": 99,
+          "certificate_signal": 49,
+          "algorithm": "classical-additive-prefix",
+          "width": 50,
+          "covered_integers": 2500,
+          "elapsed_ms": 1.381515001412481
+        },
+        "weighted_witness": null,
+        "elapsed_ms": 1.3887090026400983
+      },
+      "elapsed_ms": [
+        1.3887090026400983,
+        1.3833309931214899,
+        1.3917819887865335
+      ],
+      "median_ms": 1.3887090026400983,
+      "explicit_lean_list_entries": 6767,
+      "explicit_lean_list_lower_bound": 2500,
+      "full_cover_rows": 2500
+    },
+    {
+      "kind": "prime-square",
+      "n": 4295098369,
+      "bits": 33,
+      "reference_primes": [
+        65537,
+        65537
+      ],
+      "result": {
+        "factor": 65537,
+        "stage": "square",
+        "width": 41,
+        "counts": {
+          "sixth_root_calls": 1,
+          "square_input_root_calls": 1,
+          "trial_gcds": 0,
+          "weight_product_rows_visited": 0,
+          "centre_square_roots": 0,
+          "weight_product_square_roots": 0,
+          "candidate_discriminants": 0,
+          "discriminant_square_roots": 0,
+          "square_discriminant_gcds": 0
+        },
+        "prefix": null,
+        "weighted_witness": null,
+        "elapsed_ms": 0.0037720019463449717
+      },
+      "elapsed_ms": [
+        0.0037720019463449717,
+        0.0027939968276768923,
+        0.002373999450355768
+      ],
+      "median_ms": 0.0027939968276768923,
+      "explicit_lean_list_entries": 4527,
+      "explicit_lean_list_lower_bound": 1681,
+      "full_cover_rows": 1681
+    }
+  ],
+  "public_cover_costs_without_factoring": [
+    {
+      "public_n": 4294967295,
+      "bits": 32,
+      "width": 41,
+      "full_cover_rows": 1681,
+      "explicit_candidate_list_entries": 4527
+    },
+    {
+      "public_n": 1099511627775,
+      "bits": 40,
+      "width": 102,
+      "full_cover_rows": 10404,
+      "explicit_candidate_list_entries": 27926
+    },
+    {
+      "public_n": 281474976710655,
+      "bits": 48,
+      "width": 256,
+      "full_cover_rows": 65536,
+      "explicit_candidate_list_entries": 174644
+    },
+    {
+      "public_n": 18446744073709551615,
+      "bits": 64,
+      "width": 1626,
+      "full_cover_rows": 2643876,
+      "explicit_candidate_list_entries": 7003988
+    },
+    {
+      "public_n": 1208925819614629174706175,
+      "bits": 80,
+      "width": 10322,
+      "full_cover_rows": 106543684,
+      "explicit_candidate_list_entries": 281886559
+    },
+    {
+      "public_n": 79228162514264337593543950335,
+      "bits": 96,
+      "width": 65536,
+      "full_cover_rows": 4294967296,
+      "explicit_candidate_list_entries": 11360609588
+    }
+  ],
+  "source_hashes": {
+    "scripts/probe_semiprime_lehman_coverage.py": "aed556e1ad73492a70b82dc39ac11be39117458d778fd47cf73c4f134eea26a1",
+    "scripts/probe_semiprime_group_coverage.py": "202b0386cb8bf46ac388aa2e010cd196b8888c615b538b7b9b70e05cd6e913a9",
+    "scripts/probe_semiprime_group_selection.py": "0e89d387d9f855b0eb98eeef8bf324a12702156213593b17d9e86ab0bd0cc8ef",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "RiemannGaussian/SemiprimeLehmanCoverage.lean": "0c027dc36d65b089750e3b85d1ed97c1d0cb8b730fa2851b54365aa6acd51dc7",
+    "RiemannGaussian/SemiprimeGroupCoverage.lean": "c44b1c8badd56b0a3fcb3e6b6c34e27cdc9be3843d3384d0aead794e5dd1f948",
+    "scripts/CheckSemiprimeLehmanCoverage.lean": "f736e0bea0b6994081b60609bc58c18f0e291509b58e6d5da4c0906bc0e48aa0"
+  },
+  "lean_validation": {
+    "module": "RiemannGaussian.SemiprimeLehmanCoverage",
+    "public_theorems": 26,
+    "private_theorems": 4,
+    "primary_declarations": 40,
+    "generated_helpers": 27,
+    "declarations_with_transitive_axiom_audit": 67,
+    "proof_declarations_with_transitive_axiom_audit": 55,
+    "namespace_linters": 14,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "build": {
+      "command": "lake build RiemannGaussian.SemiprimeLehmanCoverage --wfail",
+      "exit_code": 0
+    },
+    "namespace_and_axioms": {
+      "command": "lake env lean -DwarningAsError=true scripts/CheckSemiprimeLehmanCoverage.lean",
+      "exit_code": 0
+    },
+    "ordinary_root": {
+      "command": "lake env lean -DwarningAsError=true RiemannGaussian.lean",
+      "exit_code": 0
+    },
+    "root_import_registered": true,
+    "family": "semiprime",
+    "family_metadata_registered": true,
+    "universal_semiprime_correctness": "RiemannGaussian.SemiprimeLehmanCoverage.factor_semiprime",
+    "explicit_list_lower_bound": "RiemannGaussian.SemiprimeLehmanCoverage.candidatePairs_length_ge",
+    "one_sixth_bit_bound": "OPEN"
+  }
+}

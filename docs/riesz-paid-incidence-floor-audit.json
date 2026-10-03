@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Integrate independently paid cubic original incidences into the current native whole-floor period price.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "sha256": "18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCubicCutoffRows.lean",
+      "sha256": "bb08503beb511b32b8fcfd2c19c9a5313b1c418242dc7bdaafe18bc97a80aeae",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-bb08503beb511b32b8fcfd2c19c9a5313b1c418242dc7bdaafe18bc97a80aeae.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCubicSieveCost.lean",
+      "sha256": "c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-c72a9b9c64d25242d033c8347480e0e7abd72a05e5274bef2664643ba93c8568.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTangentCubicCredit.lean",
+      "sha256": "02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszUnsignedDivisorError.lean",
+      "sha256": "240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_paid_incidence_floor.py",
+      "sha256": "36fe39bddcc44f50c5d9fdf3acf77532d77de5b9834bdaee6a765520d678c408",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-36fe39bddcc44f50c5d9fdf3acf77532d77de5b9834bdaee6a765520d678c408.py"
+    },
+    {
+      "path": "scripts/probe_riesz_cubic_cutoff.py",
+      "sha256": "39b37ef437afd4f311c3a66aa24d2713057a52a99005d747558e4a0b1b0a5f84",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-39b37ef437afd4f311c3a66aa24d2713057a52a99005d747558e4a0b1b0a5f84.py"
+    },
+    {
+      "path": "scripts/probe_riesz_canonical_joint.py",
+      "sha256": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b.py"
+    },
+    {
+      "path": "scripts/probe_riesz_complex_null_profiles.py",
+      "sha256": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2.py"
+    },
+    {
+      "path": "scripts/probe_riesz_lower_radial.py",
+      "sha256": "99966ea2922edc946e2fa34c422fbcdfa5f1e31dfed10c42000497b5152e3116",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-99966ea2922edc946e2fa34c422fbcdfa5f1e31dfed10c42000497b5152e3116.py"
+    },
+    {
+      "path": "docs/zeta-riesz-paid-incidence-floor.md",
+      "sha256": "40eef04a930f1d48f29ca06113a607ba1e1b60f09033700d30f799138cb5819c",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-40eef04a930f1d48f29ca06113a607ba1e1b60f09033700d30f799138cb5819c.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; compiled ordinary root plus explicit new module; no full-root rebuild, CI or publication.",
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszPaidIncidenceFloor --wfail",
+      "exitCode": 0
+    },
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-paid-incidence/Audit.lean",
+      "exitCode": 0,
+      "ordinaryCompiledRootImported": true,
+      "newModuleExplicitlyImported": true,
+      "rootSourceNotRebuilt": true,
+      "lintersPerNamespace": 14
+    },
+    "compiledRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "publicTheorems": 32,
+    "theoremsIncludingPrivateAndGenerated": 59,
+    "onlyStandardAxioms": true,
+    "optionalProbe": {
+      "command": "../.venv/bin/python scripts/probe_riesz_paid_incidence_floor.py",
+      "exitCode": 0,
+      "inOrdinaryBuildOrCI": false,
+      "diagnosticOnly": true
+    }
+  },
+  "exactResults": {
+    "radiusCeiling": "10001/20000",
+    "heightCondition": "54 <= abs(y)",
+    "originalIncidenceMap": "(p,B,e,delta) -> (p*B*e,(e*delta,B/delta))",
+    "injectivityTheorem": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.rowIndices_incidence_injective",
+    "hingeProfileTheorem": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.pairHinge_eq_profile_diff",
+    "partialHingeMajorantReusedFrom": "RiemannGaussian.ZetaRieszUnsignedDivisorError.partial_hinge_majorant",
+    "ownerAndAllPrimeAllocationsDistinctAndRetained": true,
+    "nativeCountCrop": "dyadicPrimeCount j / 864 + 1",
+    "countCropErrorIndependentlyPaid": true,
+    "signedRealPacketDecay": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.tendsto_nativePaidPacket",
+    "absoluteCutoffVariationClaimedSmall": false,
+    "complexPacketNormDecayClaimed": false,
+    "newEarlyCutoffDebit": false,
+    "newEarlyCutoffTheorem": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.nativePaidIncrement_zero_early",
+    "wholeCarrierFloorTheorem": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.eventually_joined_floor_with_pruned_price",
+    "price": "min(previous nativeCost-nativeTangentCredit, blockCost(nativeStep-nativePaidIncrement)+nativePaidBudget)",
+    "previousPriceRetainedAsAlternative": true,
+    "fundingChargedOnce": true,
+    "arithmeticComparisonUsesZeroHypothesis": false,
+    "nativeErrorUsesZeroHypothesisForDecay": true,
+    "conditionalSimpleContradiction": "RiemannGaussian.ZetaRieszPaidIncidenceFloor.false_of_cofinal_pruned_price",
+    "cofinalNumericalPremise": "nativePrunedPrice <= 399/5000",
+    "cofinalNumericalPremiseProved": false
+  },
+  "numericalRegression": {
+    "orders": [
+      640,
+      1536
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "labelsPerInventory": 2,
+    "completeDivisorIncidencesPerInventory": 160,
+    "paidOriginalIncidencesPerInventory": 2,
+    "nativeCountCropAdmitsLabels": false,
+    "sourceAmplitudesRecordedAsLogs": true,
+    "fundedGainsAllZero": true,
+    "rawPriceReductionIsNotFundedSaving": true,
+    "eventualGeometricBudgetAppliedAtTheseOrders": false,
+    "maximumOriginalAbelResidual": 3.890100272072759e-12,
+    "maximumPaidIncidenceResidual": 2.2737367544323206e-13,
+    "earlyPaidIncrementsAllZero": true,
+    "probablePrimesFloatingLogsPhasesAndLargeEdgeInterpolation": true,
+    "nativeCoveragePopulationMassOrDeficitFractionCertified": false
+  },
+  "remaining": {
+    "wholeFloor": "OPEN: independently bound the actual joined native pruned price cofinally by 399/5000.",
+    "wholeCeiling": "OPEN",
+    "rougherCanonicalCrossings": "Second prime above N^3 remains outside the paid crossing branch.",
+    "otherUnselectedGeometries": "Unchanged and retained in the whole price.",
+    "positiveNativeAsymptoticPrunedGainProved": false,
+    "zeroExclusion": false,
+    "rhContradiction": false,
+    "allPreviousNoGosPreserved": true
+  },
+  "commitsOrPushesPerformed": false,
+  "readmeOrPublicEndpointsChanged": false,
+  "artifacts": [
+    {
+      "path": ".lake/riesz-paid-incidence/lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/build.log",
+      "sha256": "8a4dd698ebb8cb980d16269d5be4566c14c29bf00015472b0327192de1a1541c",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-8a4dd698ebb8cb980d16269d5be4566c14c29bf00015472b0327192de1a1541c.log"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/audit.log",
+      "sha256": "ff5ee4d897a3e5e94fee2cfc0626d5a67dcdc860f7da68a0abfba16d3ce870fc",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-ff5ee4d897a3e5e94fee2cfc0626d5a67dcdc860f7da68a0abfba16d3ce870fc.log"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/Audit.lean",
+      "sha256": "514d73f331b10d0519fb75c7c18fb678b3ec1b11366644cecfcac80c8f3d45b0",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-514d73f331b10d0519fb75c7c18fb678b3ec1b11366644cecfcac80c8f3d45b0.lean"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/axioms.json",
+      "sha256": "f03bb720d9f1951871abb91f40ae4306069ed9c1140aac0e13db22b68b6e9250",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-f03bb720d9f1951871abb91f40ae4306069ed9c1140aac0e13db22b68b6e9250.json"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/probe.json",
+      "sha256": "78227c3411cce36b6d08db3a8caf4d63de034e5b9c0bcac9ca02a225717069f4",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-78227c3411cce36b6d08db3a8caf4d63de034e5b9c0bcac9ca02a225717069f4.json"
+    },
+    {
+      "path": ".lake/riesz-paid-incidence/report.json",
+      "sha256": "fef79f3c3015c3a23947d4a44d5b4142013b7589024b4a2cc640c175d491ecfc",
+      "snapshot": ".lake/riesz-paid-incidence/snapshot-fef79f3c3015c3a23947d4a44d5b4142013b7589024b4a2cc640c175d491ecfc.json"
+    }
+  ]
+}

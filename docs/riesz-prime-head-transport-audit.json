@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Exact native prime-head transport into its quadratic divisor orbit, followed by signed finite-step cancellation with the old free main profiles. The resulting whole credit is spent in the current floor, with its cofinal arithmetic size still open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadTransport.lean",
+      "sha256": "8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPeriods.lean",
+      "sha256": "d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "sha256": "44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedNullGain.lean",
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedCoreWindow.lean",
+      "sha256": "985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaMoebiusDivisorBoundary.lean",
+      "sha256": "969a3a2fac08e77bdc18d8a078afe408b115fa7064b658d711551af721096b18",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-969a3a2fac08e77bdc18d8a078afe408b115fa7064b658d711551af721096b18.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_joint_head_transport.py",
+      "sha256": "da50d4afb4056e09ee37a0ee644f20aecf198c62e15170cf557a034f829a8057",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-da50d4afb4056e09ee37a0ee644f20aecf198c62e15170cf557a034f829a8057.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "docs/zeta-riesz-prime-head-transport.md",
+      "sha256": "3996366f8b035e92127e59485e29cda216344726beaa87a5aba2bdc80c048b14",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-3996366f8b035e92127e59485e29cda216344726beaa87a5aba2bdc80c048b14.md"
+    },
+    {
+      "path": "docs/riesz-balanced-radial-payment-audit.json",
+      "sha256": "3e5811647bbe05157ea056d368bb7474d33f58640362d79d51724b288c2e25ac",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-3e5811647bbe05157ea056d368bb7474d33f58640362d79d51724b288c2e25ac.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "1445dcfe97369c3c77110ecaae37fe05f22162d9e536c9697e6541a48fd85c15",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-1445dcfe97369c3c77110ecaae37fe05f22162d9e536c9697e6541a48fd85c15.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszPrimeHeadTransport.olean",
+      "sha256": "ccd3e5a7ee8098e9e98e34df7410fe3f1c3c089c36f95339743d67a0ad992f7c",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-ccd3e5a7ee8098e9e98e34df7410fe3f1c3c089c36f95339743d67a0ad992f7c.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local: strict leaf, targeted build, frozen compiled ordinary root plus explicit new leaf. No root-source rebuild or wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszPrimeHeadTransport.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszPrimeHeadTransport --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-joint-head-transport/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "namespaces": 1,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "publicTheorems": 21,
+    "publicDefinitions": 14,
+    "compiledDeclarations": 70,
+    "compiledTheoremsIncludingPrivateAndGenerated": 56,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofAndDocumentationSourcesPreserved": true
+  },
+  "exactResults": {
+    "originalSignedHeadTotalPreservedNotClaimedZero": true,
+    "originalPrimePairPhaseOwnerAllocationSieveAndFullRadialSupportRetained": true,
+    "noPrimePairIncidenceAverage": true,
+    "actualPairDivisorPrefix": "1_{1<=k}-1_{p<=k}-1_{q<=k}+1_{pq<=k}",
+    "exactQuadraticOrbitTotal": "2 log(p) log(q)/(N+1)",
+    "terminalBoundaryCancelledExactlyNotDiscarded": true,
+    "nativePairOrder": "q<p for N>=64 on original pair support",
+    "transportedHeadTotalEqualsSameNativeHead": true,
+    "oldMinusTransportedHeadHasExactZeroTotal": true,
+    "enlargedEndpointContainsAllHeadPairLabels": true,
+    "addedOldIncrementsExactlyZeroAndOldCostUnchanged": true,
+    "mathematicallyDefinedTwoOrientationCrossingSquareCreditSpent": true,
+    "oldFreeProfileAndHeadUpdatesJoinedBeforeCrossings": true,
+    "exactCoupledCredit": "max(signed adverse correlation - exact crossing cost,0)",
+    "coupledCreditEqualsActualWholeCostSaving": true,
+    "originalZeroPeriodsAndEveryAdverseCrossingRetained": true,
+    "noInverseMarginEstimateInExactCoupledCredit": true,
+    "directIndependentCentralMinusHeadLowerInequality": true,
+    "allCountsWholePeriodsPhaseAndOriginalMainMasksRetained": true,
+    "oldWholeNativeTangentColumnsRetained": true,
+    "creditActuallySpentInJoinedPhysicalFloor": true,
+    "sameHighOwnerAllocationRadialAndNativeErrorsRetainedOnce": true,
+    "noSeparateNormPaymentOfMainOrHead": true,
+    "olderFundedPricesKeptAsAlternativesNotStacked": true,
+    "positiveNativeCorrelationOrCofinalSmallCostNotAssumed": true
+  },
+  "optionalProbe": {
+    "snapshot": {
+      "path": ".lake/riesz-joint-head-transport/probe.json",
+      "sha256": "66d95dcce8d5763ec83bac0b8e9b0e0b8dc48ec7c24990f365f26b4cb527775e",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-66d95dcce8d5763ec83bac0b8e9b0e0b8dc48ec7c24990f365f26b4cb527775e.json"
+    },
+    "command": "../.venv/bin/python scripts/probe_riesz_joint_head_transport.py",
+    "exhaustiveToyCases": 12,
+    "orders": [
+      6,
+      7
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "radialWindows": [
+      [
+        1.95,
+        2.03
+      ],
+      [
+        1.971,
+        2.029
+      ]
+    ],
+    "toyLength": "-2N log u; not the native moving integer length",
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "previousNativeBudgetsApplied": false,
+    "optionalOutsideBuildsAndCI": true,
+    "fullSignedHeadUnchangedAcrossRadialWindows": true,
+    "allCountsJoinedBeforeClippingAndOnlyGlobalCoefficients": true,
+    "allFiniteLedgersAndExactCrossingIdentitiesCheckedInFloatingArithmetic": true,
+    "analyticallyZeroLogMinusHingeStepComputedWithoutSubtractiveRoundoff": true,
+    "nearZeroOptimizedGroupsNotRoundedAway": true,
+    "oldOptimizedChoiceRetainedAsFallback": true,
+    "significantBaselines": 11,
+    "significantQuadraticSavingsPositive": 11,
+    "quadraticRelativeSavingsRange": [
+      0.0010790254870652384,
+      0.4808841897996532
+    ],
+    "alreadyZeroBaselineNotReportedAsRelativeSaving": true,
+    "onlyQuadraticHeadDirectionFormalized": true,
+    "totalLabelAndBothDirectionsExploratoryOnly": true,
+    "fractionsOfNativeFloorDeficitClaimed": false,
+    "sourceScaleCofinalOrIntervalCertificates": false
+  },
+  "openPremises": {
+    "remainingSignedTarget": "whole central original Riesz sum minus SAME full signed prime head",
+    "exactRemainingNumericalTarget": "cofinal centralCost - coupledCredit + highOwnerBudget + allocationBudget + radialBudget <= 399/5000",
+    "requiredNativeCreditSizeProved": false,
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "publicEndpointsUnchangedByThisSlice": true,
+    "noReadmeExplorerChanges": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-joint-head-transport/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-joint-head-transport/build.log",
+      "sha256": "b2b507f044f487c66e01860e4a4dbdb071f392a02a1e14c05e197095d9b14fa6",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-b2b507f044f487c66e01860e4a4dbdb071f392a02a1e14c05e197095d9b14fa6.log"
+    },
+    {
+      "path": ".lake/riesz-joint-head-transport/audit.log",
+      "sha256": "fa0e32ee8c4d06191d62b13dcb51306b0d7718682e8b397e4580a7f033ae74c9",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-fa0e32ee8c4d06191d62b13dcb51306b0d7718682e8b397e4580a7f033ae74c9.log"
+    },
+    {
+      "path": ".lake/riesz-joint-head-transport/Audit.lean",
+      "sha256": "41caafe9511634de98330dac21f3343b975ca45adf11f9e1ca3aaaf567387845",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-41caafe9511634de98330dac21f3343b975ca45adf11f9e1ca3aaaf567387845.lean"
+    },
+    {
+      "path": ".lake/riesz-joint-head-transport/axioms.json",
+      "sha256": "2b31bfeacb7adf60a46e9695ae6f92a3a0a89d229b611078e978a72ebc40b166",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-2b31bfeacb7adf60a46e9695ae6f92a3a0a89d229b611078e978a72ebc40b166.json"
+    },
+    {
+      "path": ".lake/riesz-joint-head-transport/probe.log",
+      "sha256": "f8d208152c1ead80082938ae53a36e20e18dda4c6fc6f2a8b1acea7eb2fa19ce",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-f8d208152c1ead80082938ae53a36e20e18dda4c6fc6f2a8b1acea7eb2fa19ce.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-head-transport/write_report.py",
+      "sha256": "db42818feb3a584688a1e20afbc05f229971ad38ec4e53c9d106abd5b6a5301d",
+      "snapshot": ".lake/riesz-joint-head-transport/snapshot-db42818feb3a584688a1e20afbc05f229971ad38ec4e53c9d106abd5b6a5301d.py"
+    }
+  ]
+}

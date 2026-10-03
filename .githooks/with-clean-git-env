@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Hooks inherit the parent repository and staged index. Dependency tools must
+# discover their own repositories; preserve unrelated tool and auth settings.
+git_env_unset=()
+while IFS= read -r variable; do
+  git_env_unset+=(-u "$variable")
+done < <(git rev-parse --local-env-vars)
+
+exec env "${git_env_unset[@]}" "$@"

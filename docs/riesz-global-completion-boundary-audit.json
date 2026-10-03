@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "Exact native cancellation of the global semiprime boundary with the entire same signed prime head. Ordinary-prime, unmatched-semiprime and raw high-owner boundaries remain unpaid; no cofinal whole-floor saving.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCompletionBoundary.lean",
+      "sha256": "3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_squarefree_completion.py",
+      "sha256": "d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a.py"
+    },
+    {
+      "path": "scripts/probe_riesz_global_completion_boundary.py",
+      "sha256": "ae16315da835800749998bd9d973448eac156c9e1eeb5faed330373376b97491",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-ae16315da835800749998bd9d973448eac156c9e1eeb5faed330373376b97491.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerCompletionAudit.lean",
+      "sha256": "45dfd03898f9b7e44aa7177e46a407a1ff9abb756d0c23fcbe1830f787792407",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-45dfd03898f9b7e44aa7177e46a407a1ff9abb756d0c23fcbe1830f787792407.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "sha256": "22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-global-completion-boundary.md",
+      "sha256": "c31c0fb2ddb522a0f7d35774010fde38ffbed92b0472ed37ca38d2168c237984",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-c31c0fb2ddb522a0f7d35774010fde38ffbed92b0472ed37ca38d2168c237984.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "85a2750202fd2968254f4668201041b40c0c2bf089df6c8d34d11ae41a8d0d57",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-85a2750202fd2968254f4668201041b40c0c2bf089df6c8d34d11ae41a8d0d57.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "docs/riesz-joint-phase-constraint-audit.json",
+      "sha256": "e880b11504b3b646eb25bebd679aa48f72357818564a5cd15fa19074cf6fccf9",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-e880b11504b3b646eb25bebd679aa48f72357818564a5cd15fa19074cf6fccf9.json"
+    },
+    {
+      "path": "docs/riesz-owner-completion-audit.json",
+      "sha256": "b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-b3eb7c911c371370a02d6caed481ba1a89ac0b8f016a5ee2daa886b72ba634e8.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalCompletionBoundary.olean",
+      "sha256": "8394684f5b1ef139c7a5a0d360b61e141819fe043c802825f8f123f143c51145",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-8394684f5b1ef139c7a5a0d360b61e141819fe043c802825f8f123f143c51145.olean"
+    }
+  ],
+  "theoremLines": {
+    "original_pair_riesz_eq": 45,
+    "pair_response_sub_head_lower": 69,
+    "pairWeight_nonneg": 100,
+    "originalPair_eq_weight": 106,
+    "boundary_sub_head_norm": 126,
+    "boundary_re_eq_neg_literal": 158,
+    "matched_boundary_norm_bound": 206,
+    "matched_boundary_real_floor": 234
+  },
+  "validation": {
+    "scope": "Strict leaf/targeted build; frozen compiled ordinary root plus explicit-leaf lint and every-compiled-declaration standard-axiom audit. No wider gates.",
+    "strictLeanExitCode": 0,
+    "targetedBuildExitCode": 0,
+    "auditExitCode": 0,
+    "publicTheorems": 8,
+    "publicDefinitions": 2,
+    "compiledDeclarations": 24,
+    "compiledTheorems": 22,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "lintersPerNamespace": 14,
+    "rootSourceNotRebuilt": true,
+    "frozenCompiledOrdinaryRootPreserved": true,
+    "unrelatedFilesRetained": 253
+  },
+  "exactResults": {
+    "nativeRegime": {
+      "radius": [
+        "1/2",
+        "10001/20000"
+      ],
+      "minimumOrder": 65536,
+      "zeroHypothesis": false
+    },
+    "literalFullSemiprimeResponse": "log(pq)-L",
+    "allocatedHeadCoefficient": "(L-log p)*ownerWeight",
+    "differenceAtLeast": "17N/100",
+    "sameFullPrimeHeadPhysicalSieveAndFactorialOrders": true,
+    "sameFullProductPhase": true,
+    "negativeLiteralSemiprimeAtomBridge": true,
+    "matchedBoundaryNormEqualsSemiprimeNormMinusHeadNorm": true,
+    "wholeMatchedPopulationNormBound": true,
+    "wholeMatchedPopulationOneSidedBound": true,
+    "noClaimThatEarlierSmallerPrimeCompletionCancels": true,
+    "ordinaryPrimeBoundaryUnpaid": true,
+    "unmatchedSemiprimeBoundaryUnpaid": true,
+    "rawHighOwnerBoundaryUnpaid": true,
+    "signedBulkMainUnpaid": true,
+    "noNativeAllMaskCompletionTransfer": true,
+    "existingHighOwnerPaymentNotAppliedToRaw": true,
+    "noNewNativeFloorOrCeilingBound": true,
+    "noRestrictedZeroExclusionOrRHClaim": true
+  },
+  "optionalProbes": {
+    "reports": [
+      {
+        "path": ".lake/riesz-global-squarefree-completion/probe.json",
+        "sha256": "ba78afbed66321a9a6c4dc9988b16d8404b9127a3aea63e27f3a24e9c774201c",
+        "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-ba78afbed66321a9a6c4dc9988b16d8404b9127a3aea63e27f3a24e9c774201c.json"
+      },
+      {
+        "path": ".lake/riesz-global-squarefree-completion/boundary-probe.json",
+        "sha256": "2af60bcbe52d554d8e4ca4594dc1b32ba63bbc3593b731dc1ba88d9a6fe38ea2",
+        "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-2af60bcbe52d554d8e4ca4594dc1b32ba63bbc3593b731dc1ba88d9a6fe38ea2.json"
+      }
+    ],
+    "globalComplexMainHeadRegressions": 18,
+    "boundaryHeadRegressions": 18,
+    "toyOrders": [
+      6,
+      7,
+      8
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "nativeMovingLength": false,
+    "nativeDyadicSchedule": false,
+    "nativeDeletionMasks": false,
+    "noEventualBudgetApplied": true,
+    "numericalCertificate": false,
+    "optionalOutsideBuildsCI": true
+  },
+  "checks": [
+    {
+      "path": ".lake/riesz-global-squarefree-completion/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion/build.log",
+      "sha256": "ad9a0c85416e9a974c32d3bfe9a5424039797c27c221284d2110a4e0fbb1f328",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-ad9a0c85416e9a974c32d3bfe9a5424039797c27c221284d2110a4e0fbb1f328.log"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion-audit/audit.log",
+      "sha256": "f84d0ce8dc3ba18619557e68d4de6ae574df5b73b728e015f3ecd34743ab3572",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-f84d0ce8dc3ba18619557e68d4de6ae574df5b73b728e015f3ecd34743ab3572.log"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion-audit/axioms.json",
+      "sha256": "3851a60c1bca3fd101006291fb03dc866fa29cc857ae3dd15797b851ce6f1a20",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-3851a60c1bca3fd101006291fb03dc866fa29cc857ae3dd15797b851ce6f1a20.json"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion/probe.log",
+      "sha256": "d2c2eaa29ca2153006cd9f91b007ecee616ef5e9b77bd642950402f5271ccc82",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-d2c2eaa29ca2153006cd9f91b007ecee616ef5e9b77bd642950402f5271ccc82.log"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion/boundary-probe.log",
+      "sha256": "5a16add6af67b8f95deb93d1f885f09aabad6a621c2a856701402442d6d7f47a",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-5a16add6af67b8f95deb93d1f885f09aabad6a621c2a856701402442d6d7f47a.log"
+    },
+    {
+      "path": ".lake/riesz-global-squarefree-completion/unrelated-working-tree-before.json",
+      "sha256": "49790850bfda78f9e53118bd5b19362ac940513edb03e697b96faa7d42303955",
+      "snapshot": ".lake/riesz-global-squarefree-completion-audit/snapshot-49790850bfda78f9e53118bd5b19362ac940513edb03e697b96faa7d42303955.json"
+    }
+  ],
+  "publication": {
+    "localOnly": true,
+    "committed": false,
+    "pushed": false,
+    "rootRegistrationChanged": false,
+    "readmeChanged": false,
+    "explorerChanged": false,
+    "publicEndpointChanged": false
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Exact least-prime critical-shell classification and a literal signed favorable-phase payment in the balanced-minus-head floor; no cofinal allowance is inferred.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszCriticalPrimeFloor.lean",
+      "sha256": "6ca6aff3663414385d2f19edf0d812ce2b8516c4e8e4c1d5aa734b1b3bbe9e0d",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-6ca6aff3663414385d2f19edf0d812ce2b8516c4e8e4c1d5aa734b1b3bbe9e0d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSquarefreeRieszWindows.lean",
+      "sha256": "603a1b29d3f2d60fa6d76c868ca1342166cf2b4a937fb14796310909a842db64",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-603a1b29d3f2d60fa6d76c868ca1342166cf2b4a937fb14796310909a842db64.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_critical_shell.py",
+      "sha256": "9f5d5ee6f3634cebdc0d48f4a1cf2f14ec3f0f9cca02e92fe17d071f72adc55e",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-9f5d5ee6f3634cebdc0d48f4a1cf2f14ec3f0f9cca02e92fe17d071f72adc55e.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_signature.py",
+      "sha256": "6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "docs/zeta-riesz-critical-prime-floor.md",
+      "sha256": "e9e70709a744e6b8892ab4af7be2480fb678d776870fe75d3747fd75ece30b68",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-e9e70709a744e6b8892ab4af7be2480fb678d776870fe75d3747fd75ece30b68.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a8dfb33867d90a699ac264c6b04ffcc7bd69dba00a7cfd389a172ce7334cfbae",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-a8dfb33867d90a699ac264c6b04ffcc7bd69dba00a7cfd389a172ce7334cfbae.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszCriticalPrimeFloor.olean",
+      "sha256": "e564870e0cef48d192f577f30f37506f39b196eca42a02b05c19ec1feabc1fce",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-e564870e0cef48d192f577f30f37506f39b196eca42a02b05c19ec1feabc1fce.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local strict leaf, targeted build, frozen compiled ordinary root plus explicit leaf; no wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszCriticalPrimeFloor.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszCriticalPrimeFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-balanced-critical-shell/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "allNamespaceLintersPass": true,
+      "lintersPerNamespace": 14
+    },
+    "publicTheorems": 10,
+    "publicDefinitions": 4,
+    "compiledDeclarations": 27,
+    "compiledTheoremsIncludingPrivateAndGenerated": 23,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenLeafProofProbeAndDocumentationSourcesPreserved": true
+  },
+  "exactResults": {
+    "originalSquarefreeCofactorAndBothLeastPrimePairingsRetained": true,
+    "gapEndpointsAndEmptyDivisorRetained": true,
+    "allSubsetRanksJoinedBeforeSignedEvaluation": true,
+    "responseOnGap": "log(r) * sum_{L-log(r)-log(q)<log(d)<=L-log(r), d|b} mu(d)",
+    "primeCriticalBudget": "2*log(n)<3*L",
+    "primeCriticalShellExactlySingleton": true,
+    "allOtherPrimeAndCompositeCriticalDivisorsExcluded": true,
+    "exactPrimeCriticalResponse": "-log(r)",
+    "exactOriginalCoefficient": "log(n)*log(r)/L",
+    "noTotalCountParitySignAssumption": true,
+    "nativeBudgetDischargedForOrderAtLeast65536": true,
+    "nativePrimeCriticalCountAtMostFour": true,
+    "nativeHighCountPrimeCriticalPaymentNotClaimed": true,
+    "favorableOriginalPhaseSubfamilyIndependentlyNonnegative": true,
+    "favorablePaymentSpentInWholeCentralMinusSameHeadInequality": true,
+    "originalCentralPhaseCountPhysicalOwnerRadialMasksRetained": true,
+    "sameFullSignedPrimeHeadRetained": true,
+    "noCompletionDensityZeroHypothesisClippingMonotonicityOrStackedCredits": true
+  },
+  "optionalProbe": {
+    "snapshot": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/probe.json",
+      "sha256": "0724d2a51a8d3a531d95b377db160f2bf19af2e81c1286c02253a8e5081b4975",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-0724d2a51a8d3a531d95b377db160f2bf19af2e81c1286c02253a8e5081b4975.json"
+    },
+    "command": "../.venv/bin/python scripts/probe_riesz_balanced_critical_shell.py --orders 6 7 8",
+    "cases": 18,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "independentFrozenSignatureRegressions": 18,
+    "exactIntegerDivisorCutoffs": true,
+    "fullComplexPhaseAndSameFullHeadRetained": true,
+    "allCountsRetainedAndJoined": true,
+    "noFittedCountWeightsOrPhaseFreezing": true,
+    "toyLength": "-2N log(10001/20000)",
+    "movingIntegerLength": false,
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "previousEventualBudgetsApplied": false,
+    "floatingExplorationNotIntervalCertificate": true,
+    "optionalOutsideBuildsAndCI": true,
+    "nativeFloorSavingsPercentageClaimed": false,
+    "nativeSourceScaleCofinalFloorCertificate": false
+  },
+  "openPremises": {
+    "remainingTarget": "cofinal Re(centralRest) - SAME full signed nativeHead >= -399/5000-o(1)",
+    "adversePrimeCriticalPhaseBoundProved": false,
+    "globalActiveCrossingOrCompositeCriticalEstimateProved": false,
+    "wholeCofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noReadmeExplorerOrPublicEndpointUpdates": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "provenance": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/build.log",
+      "sha256": "37791c06e98cf112b4b3953a2b17e0127309b26a5acc568c3209a915dea8454d",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-37791c06e98cf112b4b3953a2b17e0127309b26a5acc568c3209a915dea8454d.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/audit.log",
+      "sha256": "c6b62b9a219ad138fc912ca82789c6587f4d32a515ea758e91fdb480c1c3de41",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-c6b62b9a219ad138fc912ca82789c6587f4d32a515ea758e91fdb480c1c3de41.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/Audit.lean",
+      "sha256": "fe77788dd434c633c25ce6eac0c1383444745c78029766cc832e0c295e6e16b3",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-fe77788dd434c633c25ce6eac0c1383444745c78029766cc832e0c295e6e16b3.lean"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/axioms.json",
+      "sha256": "f3471bf3d89ae834b0089e646c969b7d64debbd983ab0051f74e13bb28546147",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-f3471bf3d89ae834b0089e646c969b7d64debbd983ab0051f74e13bb28546147.json"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/probe.log",
+      "sha256": "075d033b3d42468e0b5352f8bb73c4bee8730646812dfe1ea9870becd5b4641f",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-075d033b3d42468e0b5352f8bb73c4bee8730646812dfe1ea9870becd5b4641f.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-critical-shell/write_report.py",
+      "sha256": "43068d072f52ccc60c2a8e5804f2b0d2bf5dcd4e3cd535d05a0037b5ff3a2c0b",
+      "snapshot": ".lake/riesz-balanced-critical-shell/snapshot-43068d072f52ccc60c2a8e5804f2b0d2bf5dcd4e3cd535d05a0037b5ff3a2c0b.py"
+    }
+  ]
+}

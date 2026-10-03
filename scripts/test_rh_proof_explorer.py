@@ -64,24 +64,26 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_rejoined_floor_without_large_owners'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_native_pairDefect_payment_simple'
                 assert all(term in data['statement'] for term in (
-                    'radiusCeiling', 'Tendsto', 'tailCost'))
-                assert 'NontrivialZetaZero' not in data['statement']
-                # Check the full literal masks and unpaid debit in the exact
-                # declaration linked by the export, as well as its statement.
+                    'radiusCeiling', 'Tendsto', 'NontrivialZetaZero',
+                    'analyticZetaZeroMultiplicity rho = 1', 'nativeSelbergBudget',
+                    'literalPairDefect', 'coreResponse'))
+                # The current endpoint spends a vanishing budget under simple
+                # exposure; it does not assume or prove the numerical pair bound.
                 floor_source = (ROOT / data['source']['path']).read_text().splitlines()
                 floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
                 assert all(term in floor_type for term in (
-                    '3 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55',
-                    'let Paid := (D ∪ Ds) ∪ Bs', 'let H := S\\(Paid ∪ wholeTail S N 0)',
-                    'let E := H\\largeOwnerSector u N K',
-                    'tailCost c N+ε+growingDebit κ N', 'hy : 54 ≤ y',
-                    'ZetaRieszGammaJoint.joinedPhysical'))
+                    'hexposed : ∀ tau : NontrivialZetaZero',
+                    'hm : analyticZetaZeroMultiplicity rho=1',
+                    'hy : 54≤|rho.1.im|', '∃ C : ℝ,1≤C ∧',
+                    'Tendsto (nativeSelbergBudget', '-(literalPairDefect',
+                    'ZetaRieszParityPacket.coreResponse'))
+                assert '399/5000' not in floor_type
                 assert all(term in page.locator('#scope-text').inner_text() for term in (
-                    'ALL counts 3 through 55', 'same four-prime funding supply included once',
-                    'every prime share <751/1250', 'all five final joint estimates remain OPEN',
-                    'old funding tail debit is proved unbounded independently'))
+                    'simple exposed-zero hypotheses', 'SAME literal complete-period support',
+                    'Balanced pairs remain', '399/5000+o(1)', 'NOT proved',
+                    'contradiction margin', 'not an estimated remaining error'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -112,6 +114,26 @@ def run(output, url=None, refresh_preview=False):
                 assert 'two-hinge' in page.locator('#details').inner_text()
                 assert 'Both independent whole-carrier bounds remain open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
+                # Keep the previous independent whole-floor endpoint audited
+                # as a supporting result after advancing the default frontier.
+                page.locator('#endpoint').select_option('whole-fixed-count-floor')
+                legacy = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
+                assert legacy['id'] == 'RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_rejoined_floor_without_large_owners'
+                assert all(term in legacy['statement'] for term in (
+                    'radiusCeiling', 'Tendsto', 'tailCost'))
+                assert 'NontrivialZetaZero' not in legacy['statement']
+                legacy_source = (ROOT / legacy['source']['path']).read_text().splitlines()
+                legacy_type = '\n'.join(legacy_source[legacy['source']['line'] - 1:]).split(':= by', 1)[0]
+                assert all(term in legacy_type for term in (
+                    '3 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55',
+                    'let Paid := (D ∪ Ds) ∪ Bs', 'let H := S\\(Paid ∪ wholeTail S N 0)',
+                    'let E := H\\largeOwnerSector u N K',
+                    'tailCost c N+ε+growingDebit κ N', 'hy : 54 ≤ y',
+                    'ZetaRieszGammaJoint.joinedPhysical'))
+                assert all(term in page.locator('#scope-text').inner_text() for term in (
+                    'ALL counts 3 through 55', 'same four-prime funding supply included once',
+                    'every prime share <751/1250', 'all five final joint estimates remain OPEN',
+                    'old funding tail debit is proved unbounded independently'))
                 page.locator('#endpoint').select_option('source-limit')
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == 'source-limit'
                 assert 'hypothetical' in page.locator('#scope-text').inner_text()

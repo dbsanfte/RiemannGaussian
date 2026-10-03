@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "scope": "Local numerical research only; no new Lean theorem or arithmetic bound.",
+  "goal": "Close out the floor.",
+  "goalStillOpen": true,
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "results": {
+    "evaluations": 244,
+    "distinctOrderHeightCases": 235,
+    "frozenRegressionsPerRepeatedScan": 27,
+    "repeatedRegressionsAreNotIndependentCertificates": true,
+    "heldOutN": 9,
+    "heldOutHeights": 52,
+    "heldOutMedianPeriodCorrelation": -0.9904909895231109,
+    "smoothQuadratureRechecks": 9,
+    "roundingCertified": false,
+    "arithmeticEstimateStrengthened": false,
+    "cofinalFloor": false,
+    "ceiling": false,
+    "zeroExclusion": false
+  },
+  "commands": [
+    "../.venv/bin/python scripts/probe_riesz_low_count_period_coupling.py --low-count-only --scan --density-diagnostic --output .lake/riesz-low-count-period-probe/probe-density.json",
+    "../.venv/bin/python scripts/probe_riesz_low_count_period_coupling.py --low-count-only --heights 54 65 100 200 400 800 1600 3200 6400 12800 25600 51200 --output .lake/riesz-low-count-period-probe/probe-height-stress.json",
+    "../.venv/bin/python scripts/probe_riesz_low_count_period_coupling.py --low-count-only --orders 9 --scan --output .lake/riesz-low-count-period-probe/probe-held-out-nine.json"
+  ],
+  "pins": [
+    {
+      "path": "scripts/probe_riesz_low_count_period_coupling.py",
+      "sha256": "bfde88d20137783cc79e5ae4fa9ba7dfd2381278512d7111f12138fe26e91740",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/bfde88d20137783cc79e5ae4fa9ba7dfd2381278512d7111f12138fe26e91740/probe_riesz_low_count_period_coupling.py"
+    },
+    {
+      "path": "scripts/probe_riesz_global_squarefree_completion.py",
+      "sha256": "d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a/probe_riesz_global_squarefree_completion.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2/probe_riesz_balanced_joint.py"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/probe.json",
+      "sha256": "f81ee12e09f9388ee15ef4dfa255a055b7d262466c6afd2f5c681438438c155a",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/f81ee12e09f9388ee15ef4dfa255a055b7d262466c6afd2f5c681438438c155a/probe.json"
+    },
+    {
+      "path": "docs/zeta-riesz-low-count-period-coupling.md",
+      "sha256": "18b7d79602da5528e90ba9c39c8d0eb280c7d38ed679cf58713219edb6bd866c",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/18b7d79602da5528e90ba9c39c8d0eb280c7d38ed679cf58713219edb6bd866c/zeta-riesz-low-count-period-coupling.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "8e8518c5c056969b40acaa2ff0dd5c02c890c719ee0e11f11e9bfd48e62c7c3a",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/8e8518c5c056969b40acaa2ff0dd5c02c890c719ee0e11f11e9bfd48e62c7c3a/AGENTS.md"
+    },
+    {
+      "path": ".lake/riesz-low-count-period-probe/baseline.json",
+      "sha256": "2dac1662ec2db1c7011ca680581b6a2a2076e57099302d42033f60f36e79ca01",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/2dac1662ec2db1c7011ca680581b6a2a2076e57099302d42033f60f36e79ca01/baseline.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-period-probe/probe-density.json",
+      "sha256": "f47bfec639ef47272f7d2c3f4ec0907fdf27f2626da420450dba361109a111d7",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/f47bfec639ef47272f7d2c3f4ec0907fdf27f2626da420450dba361109a111d7/probe-density.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-period-probe/probe-height-stress.json",
+      "sha256": "59370d1c26c86a090c22653f6c50455fce21388f208464a1c5f4a6298a7f7ff1",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/59370d1c26c86a090c22653f6c50455fce21388f208464a1c5f4a6298a7f7ff1/probe-height-stress.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-period-probe/probe-held-out-nine.json",
+      "sha256": "6a848494191002df2078e860fd702f0624f2040969dcac90b36f9eeb7eafbf0e",
+      "immutable": ".lake/riesz-low-count-period-probe/immutable/6a848494191002df2078e860fd702f0624f2040969dcac90b36f9eeb7eafbf0e/probe-held-out-nine.json"
+    }
+  ],
+  "preservation": {
+    "existingPathsChecked": 325,
+    "existingChanges": [
+      {
+        "path": "AGENTS.md",
+        "before": "8c29cdaf48266a44ec47265c813b165b1d1a64c3b1e500c2bf650ef32924b554",
+        "after": "8e8518c5c056969b40acaa2ff0dd5c02c890c719ee0e11f11e9bfd48e62c7c3a",
+        "owned": true
+      }
+    ],
+    "externalExistingPathsUnchanged": true,
+    "compiledRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "noLeanSourceChanged": true,
+    "noRootRegistration": true,
+    "noPublicFrontierChanged": true,
+    "noCommitOrPush": true,
+    "noWiderGateRun": true,
+    "noSubagents": true
+  }
+}

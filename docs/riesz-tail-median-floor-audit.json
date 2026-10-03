@@ -1,0 +1,876 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Weighted-median minimization of the actual whole-period crossing cost on the unchanged literal signed tail-feedback direction.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszTailMedianFloor.lean",
+      "sha256": "60458ff246f5754f80c6fd2fba8b3cad678156dc135afc077942e72a403f6cef",
+      "snapshot": ".lake/riesz-tail-median/snapshot-60458ff246f5754f80c6fd2fba8b3cad678156dc135afc077942e72a403f6cef.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTailFeedbackFloor.lean",
+      "sha256": "1649f7298a1ec2d8079c084cf78418e28c2f7246223f1ea1665b3d9b10b406cc",
+      "snapshot": ".lake/riesz-tail-median/snapshot-1649f7298a1ec2d8079c084cf78418e28c2f7246223f1ea1665b3d9b10b406cc.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszClosedTailFloor.lean",
+      "sha256": "cdbaa6b38b2395ed92beacedb8a9769ce8ffc4e06ae2040982daccda0319cdbe",
+      "snapshot": ".lake/riesz-tail-median/snapshot-cdbaa6b38b2395ed92beacedb8a9769ce8ffc4e06ae2040982daccda0319cdbe.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszWeightedZeroFloor.lean",
+      "sha256": "8fca168a5d433fb8196ca35789c8fc020a7c28b608ebbd68ba42e4930a09e954",
+      "snapshot": ".lake/riesz-tail-median/snapshot-8fca168a5d433fb8196ca35789c8fc020a7c28b608ebbd68ba42e4930a09e954.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "sha256": "18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3",
+      "snapshot": ".lake/riesz-tail-median/snapshot-18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-tail-median/snapshot-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedNullGain.lean",
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "snapshot": ".lake/riesz-tail-median/snapshot-908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-tail-median/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-tail-median/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_tail_median.py",
+      "sha256": "a10d4505bacedd2639919a8de784f2216201d7018688bdae6da538f8addb4098",
+      "snapshot": ".lake/riesz-tail-median/snapshot-a10d4505bacedd2639919a8de784f2216201d7018688bdae6da538f8addb4098.py"
+    },
+    {
+      "path": "scripts/probe_riesz_tail_feedback.py",
+      "sha256": "0212284d508da66a96c3e39f6063bb3374318d00ba0c60df53b5d6b97e23d8d5",
+      "snapshot": ".lake/riesz-tail-median/snapshot-0212284d508da66a96c3e39f6063bb3374318d00ba0c60df53b5d6b97e23d8d5.py"
+    },
+    {
+      "path": "scripts/probe_riesz_zero_response_floor.py",
+      "sha256": "15282e0bde2355b1b98b2c6cb5773ca6570474d06d80fe7a6b21d83f4fde37a4",
+      "snapshot": ".lake/riesz-tail-median/snapshot-15282e0bde2355b1b98b2c6cb5773ca6570474d06d80fe7a6b21d83f4fde37a4.py"
+    },
+    {
+      "path": "scripts/probe_riesz_factored_population.py",
+      "sha256": "cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf",
+      "snapshot": ".lake/riesz-tail-median/snapshot-cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf.py"
+    },
+    {
+      "path": "docs/zeta-riesz-tail-median-floor.md",
+      "sha256": "455fe0d966f10cfc53bcb18180acd82c206630f1436febbb4f80a9b04c525a2d",
+      "snapshot": ".lake/riesz-tail-median/snapshot-455fe0d966f10cfc53bcb18180acd82c206630f1436febbb4f80a9b04c525a2d.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-tail-median/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-tail-median/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; compiled ordinary root plus explicit new module. No full-root source rebuild, wider gates, commit or push.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszTailMedianFloor.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszTailMedianFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-tail-median/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "newModuleExplicitlyImported": true,
+      "rootSourceNotRebuilt": true,
+      "lintersPerNamespace": 14
+    },
+    "compiledRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "publicTheorems": 21,
+    "theoremsIncludingPrivateAndGenerated": 42,
+    "onlyStandardAxioms": true,
+    "optionalProbesOutsideBuildsAndCI": true
+  },
+  "exactResults": {
+    "carrier": "joinedPhysical",
+    "newSourceCarrierDefined": false,
+    "radiusCeiling": "10001/20000",
+    "heightCondition": "54 <= abs(y)",
+    "chosenDirection": "Existing whole signed feedback; every count and complete cutoff period assembled first",
+    "crossingRoot": "-T_c/V_c",
+    "crossingWeight": "abs(V_c)",
+    "zeroPeriodWithNonzeroDirectionIsRootZeroWithFullWeight": true,
+    "zeroDirectionHasZeroWeight": true,
+    "medianExistsForEveryFiniteNonnegativeWeightedPopulation": true,
+    "sameLineCostMinimizedOverEveryRealStep": true,
+    "minimumAlongOneLineIsNotGlobalNullSpaceMinimum": true,
+    "actualCredit": "medianStep*adverseCorrelation-crossingCost(medianStep)",
+    "sameCurrentDirectionCreditDominatesEveryPreviousQuadraticThresholdGuarantee": true,
+    "successiveCreditsTelescopeExactly": true,
+    "creditsFromDifferentTrajectoriesAdded": false,
+    "previousEntireFeedbackPriceRetainedAsAlternative": true,
+    "nativeComparisonNeedsHypotheticalZero": false,
+    "nativeErrorDecayStillNeedsExistingExposedSource": true,
+    "fullLabelsCountsMasksPhasesAndFactorialOrdersRetained": true,
+    "distinctAllPrimeAndPaidOwnerAllocationsRetained": true,
+    "previousNullsTangentOwnerBudgetAndErrorFundedOnce": true,
+    "canonicalColumnsCoverEveryOriginalNativeSquarefreeLabel": true,
+    "originalNonzeroCarrierPhaseRemoved": false,
+    "newPerLabelCoefficientFit": false,
+    "exactRegressions": [
+      {
+        "previousGuarantee": "16/41",
+        "medianCredit": "4/5",
+        "zeroFaceRetained": true
+      },
+      {
+        "previousGuarantee": "1/2",
+        "medianCredit": "1",
+        "joinedZeroFaceAnnihilatedExactly": true
+      }
+    ],
+    "totalAdversePartCannotBeRemovedByNullIterations": true,
+    "familiarMedianPrincipleClaimedHistoricallyNovel": false
+  },
+  "numericalDiagnostics": {
+    "projectedTwelve": {
+      "caseCount": 12,
+      "rebateFractionRange": [
+        0.07007832076781705,
+        0.7235641665982872
+      ],
+      "allFiniteCostsDecrease": true,
+      "summary": [
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.008175432903743274,
+          "finalPrice": 0.0022599826081660564,
+          "accumulatedActualCredit": 0.005915450295577217,
+          "creditFraction": 0.7235641665982872,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.0022599826081660564,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.009214165816809386,
+          "finalPrice": 0.00709770792046831,
+          "accumulatedActualCredit": 0.0021164578963410756,
+          "creditFraction": 0.2296960938645173,
+          "unavoidableSignedPrice": 0.0025409634148841043,
+          "excessOverSignedTotal": 0.004556744505584206,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.005417068051896364,
+          "finalPrice": 0.003420556177872368,
+          "accumulatedActualCredit": 0.001996511874023996,
+          "creditFraction": 0.3685594965573809,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.003420556177872368,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.0068150219795489065,
+          "finalPrice": 0.004334171548034127,
+          "accumulatedActualCredit": 0.0024808504315147794,
+          "creditFraction": 0.3640267689465309,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.004334171548034127,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.009568614077010967,
+          "finalPrice": 0.006175937470279126,
+          "accumulatedActualCredit": 0.003392676606731841,
+          "creditFraction": 0.35456300979709293,
+          "unavoidableSignedPrice": 0.0032859429503902526,
+          "excessOverSignedTotal": 0.002889994519888873,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.01187358087229741,
+          "finalPrice": 0.008306169610511248,
+          "accumulatedActualCredit": 0.0035674112617861617,
+          "creditFraction": 0.30044948530307236,
+          "unavoidableSignedPrice": 0.0010329058710612316,
+          "excessOverSignedTotal": 0.007273263739450016,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.0067034517978528906,
+          "finalPrice": 0.003909527025227334,
+          "accumulatedActualCredit": 0.002793924772625556,
+          "creditFraction": 0.41678897035113277,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.003909527025227334,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.03561158420875915,
+          "finalPrice": 0.0331159841875276,
+          "accumulatedActualCredit": 0.002495600021231552,
+          "creditFraction": 0.07007832076781705,
+          "unavoidableSignedPrice": 0.023742844940236263,
+          "excessOverSignedTotal": 0.009373139247291336,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.020941125473671888,
+          "finalPrice": 0.015115811946389482,
+          "accumulatedActualCredit": 0.005825313527282406,
+          "creditFraction": 0.2781757615943923,
+          "unavoidableSignedPrice": 0.007897668368236641,
+          "excessOverSignedTotal": 0.007218143578152841,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.017014936239014948,
+          "finalPrice": 0.008282405498112743,
+          "accumulatedActualCredit": 0.008732530740902205,
+          "creditFraction": 0.5132273561436372,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.008282405498112743,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.02859079918461751,
+          "finalPrice": 0.022932192648775093,
+          "accumulatedActualCredit": 0.005658606535842416,
+          "creditFraction": 0.1979170466450925,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.022932192648775093,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.016387128489776137,
+          "finalPrice": 0.008419726614102304,
+          "accumulatedActualCredit": 0.007967401875673833,
+          "creditFraction": 0.486198779770639,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.008419726614102304,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        }
+      ]
+    },
+    "restrictedCorrectionColumns": {
+      "caseCount": 12,
+      "rebateFractionRange": [
+        0.03644141745718587,
+        0.3179481127179528
+      ],
+      "allFiniteCostsDecrease": true,
+      "summary": [
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.008175432903743274,
+          "finalPrice": 0.007299177429923451,
+          "accumulatedActualCredit": 0.0008762554738198239,
+          "creditFraction": 0.10718153816889794,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.007299177429923451,
+          "retainedCorrectionLabels": 14,
+          "auditedCorrectionCounts": {
+            "4": 12,
+            "5": 2
+          }
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.009214165816809386,
+          "finalPrice": 0.008479386418866336,
+          "accumulatedActualCredit": 0.0007347793979430497,
+          "creditFraction": 0.07974453819819402,
+          "unavoidableSignedPrice": 0.0025409634148841043,
+          "excessOverSignedTotal": 0.005938423003982231,
+          "retainedCorrectionLabels": 14,
+          "auditedCorrectionCounts": {
+            "4": 12,
+            "5": 2
+          }
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.005417068051896364,
+          "finalPrice": 0.005077154758928126,
+          "accumulatedActualCredit": 0.00033991329296823806,
+          "creditFraction": 0.06274857352941024,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.005077154758928126,
+          "retainedCorrectionLabels": 14,
+          "auditedCorrectionCounts": {
+            "4": 12,
+            "5": 2
+          }
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.0068150219795489065,
+          "finalPrice": 0.006281180101643274,
+          "accumulatedActualCredit": 0.0005338418779056329,
+          "creditFraction": 0.07833311169173492,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.006281180101643274,
+          "retainedCorrectionLabels": 11,
+          "auditedCorrectionCounts": {
+            "4": 10,
+            "5": 1
+          }
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.009568614077010967,
+          "finalPrice": 0.008989049073088399,
+          "accumulatedActualCredit": 0.0005795650039225678,
+          "creditFraction": 0.06056937809990678,
+          "unavoidableSignedPrice": 0.0032859429503902526,
+          "excessOverSignedTotal": 0.005703106122698146,
+          "retainedCorrectionLabels": 11,
+          "auditedCorrectionCounts": {
+            "4": 10,
+            "5": 1
+          }
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.01187358087229741,
+          "finalPrice": 0.011440890755018363,
+          "accumulatedActualCredit": 0.00043269011727904705,
+          "creditFraction": 0.03644141745718587,
+          "unavoidableSignedPrice": 0.0010329058710612316,
+          "excessOverSignedTotal": 0.010407984883957132,
+          "retainedCorrectionLabels": 11,
+          "auditedCorrectionCounts": {
+            "4": 10,
+            "5": 1
+          }
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.0067034517978528906,
+          "finalPrice": 0.0045721019500297964,
+          "accumulatedActualCredit": 0.002131349847823094,
+          "creditFraction": 0.3179481127179528,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.0045721019500297964,
+          "retainedCorrectionLabels": 20,
+          "auditedCorrectionCounts": {
+            "4": 15,
+            "5": 5
+          }
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.03561158420875915,
+          "finalPrice": 0.03406132359811151,
+          "accumulatedActualCredit": 0.0015502606106476413,
+          "creditFraction": 0.043532480935412406,
+          "unavoidableSignedPrice": 0.023742844940236263,
+          "excessOverSignedTotal": 0.010318478657875246,
+          "retainedCorrectionLabels": 20,
+          "auditedCorrectionCounts": {
+            "4": 15,
+            "5": 5
+          }
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.020941125473671888,
+          "finalPrice": 0.018769643275337717,
+          "accumulatedActualCredit": 0.002171482198334171,
+          "creditFraction": 0.10369462716147967,
+          "unavoidableSignedPrice": 0.007897668368236641,
+          "excessOverSignedTotal": 0.010871974907101076,
+          "retainedCorrectionLabels": 20,
+          "auditedCorrectionCounts": {
+            "4": 15,
+            "5": 5
+          }
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.017014936239014948,
+          "finalPrice": 0.013870265299837698,
+          "accumulatedActualCredit": 0.0031446709391772503,
+          "creditFraction": 0.18481826173209956,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.013870265299837698,
+          "retainedCorrectionLabels": 22,
+          "auditedCorrectionCounts": {
+            "4": 14,
+            "5": 7,
+            "6": 1
+          }
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.02859079918461751,
+          "finalPrice": 0.025053933941816584,
+          "accumulatedActualCredit": 0.0035368652428009253,
+          "creditFraction": 0.12370641407966791,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.025053933941816584,
+          "retainedCorrectionLabels": 22,
+          "auditedCorrectionCounts": {
+            "4": 14,
+            "5": 7,
+            "6": 1
+          }
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.016387128489776137,
+          "finalPrice": 0.01433651319141459,
+          "accumulatedActualCredit": 0.0020506152983615477,
+          "creditFraction": 0.12513573074385292,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.01433651319141459,
+          "retainedCorrectionLabels": 22,
+          "auditedCorrectionCounts": {
+            "4": 14,
+            "5": 7,
+            "6": 1
+          }
+        }
+      ]
+    },
+    "projectedSixtyFour": {
+      "caseCount": 12,
+      "rebateFractionRange": [
+        0.07011941506677292,
+        0.7906754726189729
+      ],
+      "allFiniteCostsDecrease": true,
+      "summary": [
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.008175432903743274,
+          "finalPrice": 0.0017113186287113552,
+          "accumulatedActualCredit": 0.006464114275031916,
+          "creditFraction": 0.7906754726189729,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.0017113186287113552,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.009214165816809386,
+          "finalPrice": 0.006947138949278422,
+          "accumulatedActualCredit": 0.002267026867530964,
+          "creditFraction": 0.2460371250748745,
+          "unavoidableSignedPrice": 0.0025409634148841043,
+          "excessOverSignedTotal": 0.004406175534394317,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.005417068051896364,
+          "finalPrice": 0.0032535070057577876,
+          "accumulatedActualCredit": 0.002163561046138576,
+          "creditFraction": 0.39939705859541014,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.0032535070057577876,
+          "retainedCorrectionLabels": 129,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.0068150219795489065,
+          "finalPrice": 0.0039885481091347565,
+          "accumulatedActualCredit": 0.00282647387041415,
+          "creditFraction": 0.414741710136236,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.0039885481091347565,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.009568614077010967,
+          "finalPrice": 0.005780709519903329,
+          "accumulatedActualCredit": 0.0037879045571076377,
+          "creditFraction": 0.3958676279157555,
+          "unavoidableSignedPrice": 0.0032859429503902526,
+          "excessOverSignedTotal": 0.0024947665695130763,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 32,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.01187358087229741,
+          "finalPrice": 0.008046649637184631,
+          "accumulatedActualCredit": 0.0038269312351127786,
+          "creditFraction": 0.3223064108689823,
+          "unavoidableSignedPrice": 0.0010329058710612316,
+          "excessOverSignedTotal": 0.007013743766123399,
+          "retainedCorrectionLabels": 110,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 54.0,
+          "initialPrice": 0.0067034517978528906,
+          "finalPrice": 0.003905094720923699,
+          "accumulatedActualCredit": 0.0027983570769291918,
+          "creditFraction": 0.41745016766220394,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.003905094720923699,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 65.0,
+          "initialPrice": 0.03561158420875915,
+          "finalPrice": 0.03311452075443983,
+          "accumulatedActualCredit": 0.002497063454319319,
+          "creditFraction": 0.07011941506677292,
+          "unavoidableSignedPrice": 0.023742844940236263,
+          "excessOverSignedTotal": 0.009371675814203569,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 317,
+          "height": 100.0,
+          "initialPrice": 0.020941125473671888,
+          "finalPrice": 0.014510696156541082,
+          "accumulatedActualCredit": 0.006430429317130806,
+          "creditFraction": 0.3070718106920961,
+          "unavoidableSignedPrice": 0.007897668368236641,
+          "excessOverSignedTotal": 0.006613027788304441,
+          "retainedCorrectionLabels": 154,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 54.0,
+          "initialPrice": 0.017014936239014948,
+          "finalPrice": 0.007520998793076935,
+          "accumulatedActualCredit": 0.009493937445938017,
+          "creditFraction": 0.5579766690026488,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.007520998793076935,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 65.0,
+          "initialPrice": 0.02859079918461751,
+          "finalPrice": 0.02265964098794595,
+          "accumulatedActualCredit": 0.00593115819667156,
+          "creditFraction": 0.20744989177716502,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.02265964098794595,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        },
+        {
+          "N": 64,
+          "seed": 919,
+          "height": 100.0,
+          "initialPrice": 0.016387128489776137,
+          "finalPrice": 0.007650949145029626,
+          "accumulatedActualCredit": 0.008736179344746513,
+          "creditFraction": 0.533112274685402,
+          "unavoidableSignedPrice": 0.0,
+          "excessOverSignedTotal": 0.007650949145029626,
+          "retainedCorrectionLabels": 145,
+          "auditedCorrectionCounts": null
+        }
+      ]
+    },
+    "fixedEarlierNullCoefficientsAndImaginaryTilt": true,
+    "originalSampleImportanceWeightsRetained": true,
+    "originalFullBaseNeverDeleted": true,
+    "roughColumnSelector": "owner share <60069/100000 and second least prime >N^3; only new columns",
+    "selectorIsCompleteExclusivelyUnpaidInventory": false,
+    "selectedCounts": "4..6 only; native growing-count population is not sampled",
+    "earlierSupplyLedgersAreAlternativesNotAdditionalCredits": true,
+    "everyFloatingProjectionResidualAndZeroFacePriced": true,
+    "nativeCofinalPoints": false,
+    "nativeCountCropOrPaidOwnerBudgetApplied": false,
+    "actualNativeSupplyFunded": false,
+    "primalityPhasePeriodEdgeSVDCertificate": false,
+    "numericalRuleOrCreditIsLeanCertificate": false,
+    "rebateFractionsAreNativeGapFractions": false,
+    "populationCoverageOrCofinalRateProved": false,
+    "longerSomeCasesNearlyPlateau": true
+  },
+  "artifacts": [
+    {
+      "path": ".lake/riesz-tail-median/Audit.lean",
+      "sha256": "677e3596f8ed31242278e2b3514a1563593fbcd53858edda80199860e6f2e5e4",
+      "snapshot": ".lake/riesz-tail-median/snapshot-677e3596f8ed31242278e2b3514a1563593fbcd53858edda80199860e6f2e5e4.lean"
+    },
+    {
+      "path": ".lake/riesz-tail-median/axioms.json",
+      "sha256": "23ae65f9691acb6ba72bb8cefc095a1ab325f71fe4955c06d4672d06f4b3f571",
+      "snapshot": ".lake/riesz-tail-median/snapshot-23ae65f9691acb6ba72bb8cefc095a1ab325f71fe4955c06d4672d06f4b3f571.json"
+    },
+    {
+      "path": ".lake/riesz-tail-median/lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-tail-median/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-tail-median/build.log",
+      "sha256": "8cc209c9093fd334275b699f39900c5d15039c160171813680f519a6cb329aeb",
+      "snapshot": ".lake/riesz-tail-median/snapshot-8cc209c9093fd334275b699f39900c5d15039c160171813680f519a6cb329aeb.log"
+    },
+    {
+      "path": ".lake/riesz-tail-median/audit.log",
+      "sha256": "39bc50c3e562f4ca1bcdc2af7e3677e215443ebf5cfc2f14508a504d50c90984",
+      "snapshot": ".lake/riesz-tail-median/snapshot-39bc50c3e562f4ca1bcdc2af7e3677e215443ebf5cfc2f14508a504d50c90984.log"
+    },
+    {
+      "path": ".lake/riesz-tail-median/probe.json",
+      "sha256": "6bb8507c01ff71aec2a83846cf69af29f2b8b47fdadf47e6d19aeb44788e55fd",
+      "snapshot": ".lake/riesz-tail-median/snapshot-6bb8507c01ff71aec2a83846cf69af29f2b8b47fdadf47e6d19aeb44788e55fd.json"
+    },
+    {
+      "path": ".lake/riesz-tail-median/rough-owner.json",
+      "sha256": "a62ddba71129235471274bf11d7fca42f85cefe0c9bd9855f9b1041e8d3b918c",
+      "snapshot": ".lake/riesz-tail-median/snapshot-a62ddba71129235471274bf11d7fca42f85cefe0c9bd9855f9b1041e8d3b918c.json"
+    },
+    {
+      "path": ".lake/riesz-tail-median/long.json",
+      "sha256": "9499fafbe33e181903c8e9c90c67492f83c36a959f84672958e8e65c2f7a875a",
+      "snapshot": ".lake/riesz-tail-median/snapshot-9499fafbe33e181903c8e9c90c67492f83c36a959f84672958e8e65c2f7a875a.json"
+    },
+    {
+      "path": ".lake/riesz-tail-median/rough-owner.log",
+      "sha256": "206a3e6a2ec2d78270c95e70af857a0bc4202329becf1a2ef13f7a3d3691ca8b",
+      "snapshot": ".lake/riesz-tail-median/snapshot-206a3e6a2ec2d78270c95e70af857a0bc4202329becf1a2ef13f7a3d3691ca8b.log"
+    },
+    {
+      "path": ".lake/riesz-tail-median/long.log",
+      "sha256": "e9f1c411879a198eb47ea20790d24be917aaf7ac652c2afd19602721fc36f0bb",
+      "snapshot": ".lake/riesz-tail-median/snapshot-e9f1c411879a198eb47ea20790d24be917aaf7ac652c2afd19602721fc36f0bb.log"
+    },
+    {
+      "path": ".lake/riesz-tail-median/write_report.py",
+      "sha256": "8d399639c24429914d7524b967ab8c336512bda80a959ea8674fc0de5f1f94a7",
+      "snapshot": ".lake/riesz-tail-median/snapshot-8d399639c24429914d7524b967ab8c336512bda80a959ea8674fc0de5f1f94a7.py"
+    },
+    {
+      "path": ".lake/riesz-common-tail/median-probe.log",
+      "sha256": "8f3da31d70bb104b0eed196b83420ad117b5f2b1ff75516ea8f16656e551a085",
+      "snapshot": ".lake/riesz-tail-median/snapshot-8f3da31d70bb104b0eed196b83420ad117b5f2b1ff75516ea8f16656e551a085.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/probe.json",
+      "sha256": "e6762b7f10c1c1f85394597ba3a7c48ae68aa9ec4498cfbda6e59265587ff41b",
+      "snapshot": ".lake/riesz-tail-median/snapshot-e6762b7f10c1c1f85394597ba3a7c48ae68aa9ec4498cfbda6e59265587ff41b.json"
+    }
+  ],
+  "frozenInputs": [
+    {
+      "path": ".lake/riesz-factored-population/inputs/N32-seed317-M512-bins16.json",
+      "sha256": "9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888",
+      "snapshot": ".lake/riesz-tail-median/snapshot-9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N32-seed919-M512-bins16.json",
+      "sha256": "60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c",
+      "snapshot": ".lake/riesz-tail-median/snapshot-60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N64-seed317-M512-bins16.json",
+      "sha256": "00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff",
+      "snapshot": ".lake/riesz-tail-median/snapshot-00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff.json"
+    },
+    {
+      "path": ".lake/riesz-factored-population/inputs/N64-seed919-M512-bins16.json",
+      "sha256": "085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1",
+      "snapshot": ".lake/riesz-tail-median/snapshot-085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1.json"
+    }
+  ],
+  "frozenMatrices": [
+    {
+      "path": ".lake/riesz-common-tail/N32-seed317-y54.npz",
+      "sha256": "3eeab3200df298bd4dd13c08faf865c45b6068caf87cf240a4f6187a847ecc87",
+      "snapshot": ".lake/riesz-tail-median/snapshot-3eeab3200df298bd4dd13c08faf865c45b6068caf87cf240a4f6187a847ecc87.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N32-seed317-y65.npz",
+      "sha256": "b2ce318c2ef2683e4dc7fbf6d227c100fa6c122558abd47f701d1d76c10be9c8",
+      "snapshot": ".lake/riesz-tail-median/snapshot-b2ce318c2ef2683e4dc7fbf6d227c100fa6c122558abd47f701d1d76c10be9c8.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N32-seed317-y100.npz",
+      "sha256": "aaf03fd935a45e66d7f8a3cb78c950d1715c8bf2782fc371c8bcdb3ee35d98e8",
+      "snapshot": ".lake/riesz-tail-median/snapshot-aaf03fd935a45e66d7f8a3cb78c950d1715c8bf2782fc371c8bcdb3ee35d98e8.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N32-seed919-y54.npz",
+      "sha256": "978238f784d7d69904e69a05f8e2d67957a3c671ffe08ac849ca4376cd144a1d",
+      "snapshot": ".lake/riesz-tail-median/snapshot-978238f784d7d69904e69a05f8e2d67957a3c671ffe08ac849ca4376cd144a1d.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N32-seed919-y65.npz",
+      "sha256": "8be92a74cda51ff7f96b758840d1cd59832e9969e62cb8bd55011a93b2f008fd",
+      "snapshot": ".lake/riesz-tail-median/snapshot-8be92a74cda51ff7f96b758840d1cd59832e9969e62cb8bd55011a93b2f008fd.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N32-seed919-y100.npz",
+      "sha256": "e2ab3232a827231c39892bbc90e41da418c4ca57b805b45f2054c6148223c278",
+      "snapshot": ".lake/riesz-tail-median/snapshot-e2ab3232a827231c39892bbc90e41da418c4ca57b805b45f2054c6148223c278.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed317-y54.npz",
+      "sha256": "d50d6179c9dce482edbbded4e4c070411649393b61705474dd96bb507e884c70",
+      "snapshot": ".lake/riesz-tail-median/snapshot-d50d6179c9dce482edbbded4e4c070411649393b61705474dd96bb507e884c70.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed317-y65.npz",
+      "sha256": "696f4cb365637c162b2cba0a583aefba3250e25721b83d1b8bfadb20f7d59d1e",
+      "snapshot": ".lake/riesz-tail-median/snapshot-696f4cb365637c162b2cba0a583aefba3250e25721b83d1b8bfadb20f7d59d1e.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed317-y100.npz",
+      "sha256": "39201f239115f28643a8f22d74c80de7afdae781e123b1fe038a9531d8a0328f",
+      "snapshot": ".lake/riesz-tail-median/snapshot-39201f239115f28643a8f22d74c80de7afdae781e123b1fe038a9531d8a0328f.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed919-y54.npz",
+      "sha256": "400eb7de7a509733dd1424ae97dca0a6f36d352ad6709d9f2322e285a1a94bd4",
+      "snapshot": ".lake/riesz-tail-median/snapshot-400eb7de7a509733dd1424ae97dca0a6f36d352ad6709d9f2322e285a1a94bd4.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed919-y65.npz",
+      "sha256": "cd83ce92d81501f05e98597b05b325d4b7ac3d9062d04ab95e7809ebde861842",
+      "snapshot": ".lake/riesz-tail-median/snapshot-cd83ce92d81501f05e98597b05b325d4b7ac3d9062d04ab95e7809ebde861842.npz"
+    },
+    {
+      "path": ".lake/riesz-common-tail/N64-seed919-y100.npz",
+      "sha256": "ae1945270a031e739c7a9556a38a3a36edad2f55f207085a90c100814c302ed9",
+      "snapshot": ".lake/riesz-tail-median/snapshot-ae1945270a031e739c7a9556a38a3a36edad2f55f207085a90c100814c302ed9.npz"
+    }
+  ],
+  "remaining": {
+    "independentCofinalCanonicalMedianPriceLe": "399/5000",
+    "cofinalPricePremiseProved": false,
+    "wholeNumericalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "newZeroFreeRegionProved": false,
+    "riemannHypothesisProved": false,
+    "nextEstimate": "Bound the native signed minimum itself cofinally; further step-size optimization does not estimate its arithmetic magnitude."
+  },
+  "priorPositiveResultsAndNoGoAuditsPreserved": true,
+  "publicReadmeExplorerAndTheoremEndpointsChanged": false,
+  "concurrentSemiprimeFilesModifiedByThisSlice": false,
+  "committed": false,
+  "pushed": false
+}

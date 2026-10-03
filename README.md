@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Bound joinedPhysical with all counts, phase, allocation and funding retained. On 1/2<u<=0.50005, an independent cofinal -399/5000-o(1) floor excludes simple exposed zeros; a 42/25+o(1) ceiling handles higher multiplicity. Both arithmetic estimates remain open.
+Bound the surviving signed prime-pair defect after joined Selberg cancellation and polynomial-cofactor payment. On 1/2<u<=0.50005, an independent cofinal 399/5000+o(1) upper bound closes the simple exposed-zero floor. The pair bound and higher-multiplicity ceiling remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Bound joinedPhysical with all counts, phase, allocation and funding retained. On
 
 ### Latest Update
 
-**Whole-floor cancellation credits checked; independent insertion rate audited.** Lean retains exact complex and cubic cancellation credits in the original whole-floor inequality, pays several correlated error sectors geometrically, and checks weaker sufficient floor/ceiling thresholds. Complete independent genuine-prime insertion matching is proved too slow. No fixed numerical bound for the remaining joint cost has been proved; semiprime side-investigation algebra is also included.
-Bound the retained correlated signed cost at source scale; the cofinal 399/5000 premise is still open and no zero exclusion follows.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSignedNullGain.lean#L347)
-· [Proof details](docs/zeta-riesz-research-publication.md).
+**Signed Selberg and polynomial-cofactor payments checked; balanced pairs remain open.** The combined tree includes all local RH and semiprime modules, proof audits and optional probes. Under simple exposure, the joined Selberg prime/pair expression is paid on the literal support; polynomial-small pair cofactors are also paid. Neither result bounds the surviving balanced-pair aggregate by 0.0798. Failed sampling and dilation tests receive no floor credit.
+Prove an independent cofinal signed upper bound 399/5000+o(1) for the remaining pair defect. The 0.000071797 source-to-target difference is a contradiction margin, not a remaining-error estimate.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSignedSelbergPayment.lean#L806)
+· [Proof details](docs/zeta-riesz-signed-pair-checkpoint.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Exponential arithmetic payment for per-leg pole removal on the SAME whole signed prime correction, with all low orders; independent joint floor still open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "sha256": "22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-22cc466ff569826a646caa9c11e6acc29e53e12deb7dfe71edf8a464da5de939.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadTransport.lean",
+      "sha256": "8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszShiftedCenter.lean",
+      "sha256": "c97f4641edba8985cc4c2cca409b9db489eb601539a02913bd90d29622fc751e",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-c97f4641edba8985cc4c2cca409b9db489eb601539a02913bd90d29622fc751e.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSkewFactorial.lean",
+      "sha256": "723ff1dc18828a215e616c43f090f7ab41b12ff0dba62f7af0418fa6437d1843",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-723ff1dc18828a215e616c43f090f7ab41b12ff0dba62f7af0418fa6437d1843.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_prime_head_pole.py",
+      "sha256": "713ce0d5a6f05181ea55490d0e49b7e1e722a903da610472084ade4ba52b23b9",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-713ce0d5a6f05181ea55490d0e49b7e1e722a903da610472084ade4ba52b23b9.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "docs/zeta-riesz-prime-head-pole-payment.md",
+      "sha256": "a5e73ab430f681ca718677e63646dae0a25ee5c6f13f4db0fea56b94411024c8",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-a5e73ab430f681ca718677e63646dae0a25ee5c6f13f4db0fea56b94411024c8.md"
+    },
+    {
+      "path": "docs/riesz-joint-phase-transport-audit.json",
+      "sha256": "5af28c56d3c367c624ade61d9a4dc550ab9990395352303f48c904898a224311",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-5af28c56d3c367c624ade61d9a4dc550ab9990395352303f48c904898a224311.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "5073c16cf05af429b7266630a00a637da0f02b452ab99d677350ed432adf7037",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-5073c16cf05af429b7266630a00a637da0f02b452ab99d677350ed432adf7037.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszPrimeHeadPolePayment.olean",
+      "sha256": "c16ebbc1dbbe9578cdb1152829665d9630d27bf135ed85d36ed37457bbb76e8b",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-c16ebbc1dbbe9578cdb1152829665d9630d27bf135ed85d36ed37457bbb76e8b.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local strict leaf/targeted build, frozen compiled ordinary root plus explicit leaf; no wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszPrimeHeadPolePayment.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszPrimeHeadPolePayment --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-prime-head-pole-payment/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "allNamespaceLintersPass": true,
+      "lintersPerNamespace": 14
+    },
+    "publicTheorems": 28,
+    "publicDefinitions": 11,
+    "compiledDeclarations": 66,
+    "compiledTheoremsIncludingPrivateAndGenerated": 55,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofProbeDocumentationAndCompiledArtifactsPreserved": true
+  },
+  "exactResults": {
+    "headPrimeLogLowerBounds": [
+      "log p >= 51N/50",
+      "log q > 7N/10"
+    ],
+    "noIntegerEndpointRoundingLoss": true,
+    "originalComplementaryOrderMassEqualsOwnerWeight": true,
+    "ordersZeroAndOneRetained": true,
+    "perSlotMultiplier": "(1-C^(N+1-k)/p)*(1-C^k/q)",
+    "exactProductOfPerLegKernels": true,
+    "noTotalOrderFilter": true,
+    "noCompositeCofactorCompletion": true,
+    "originalComplexHeadRealPartEqualsNativeHead": true,
+    "sameFullOriginalPrimeHeadSupportPhaseAllocationSieveAndMovingLength": true,
+    "operatorDifferenceOnly": true,
+    "signedHeadNotNormPaid": true,
+    "perSlotDifference": "norm(multiplier-1) <= 3*exp(-2N/3)",
+    "wholeSourceScaleDifference": "norm(filteredHead-originalHead) <= 10*(N+1)^3*exp(-N/2)",
+    "range": "0 <= u <= 10001/20000, 54 < abs(y), N >= 64",
+    "heightUniform": true,
+    "sourceScaleAlreadyIncludedInHead": true,
+    "ownerLogBelowMovingLengthFromPhysicalSupport": true,
+    "positiveEnvelopeUsedOnlyOnExponentiallySmallOperatorChange": true,
+    "everyNativeOrderBudget": "budget N < 10^(-40) for N >= 256",
+    "nativeBudgetCertificateNotNumericalExtrapolation": true,
+    "budgetTendsToZero": true,
+    "exactJointSourceLedgerRetained": true,
+    "signedFloorTransferKeepsAllPaidErrorsOnce": true,
+    "noArithmeticFloorPremiseHiddenInPayment": true,
+    "noHardMaskCompleteLegPhaseTransferClaim": true,
+    "noSmallPrimeBalancedMainPaymentClaim": true,
+    "allPriorNoGosPreserved": true
+  },
+  "theoremLines": {
+    "keptOrders_support": 38,
+    "sum_kept_mass": 43,
+    "head_prime_logs": 58,
+    "owner_log_le_length": 72,
+    "legKernel_eq_multiplier": 87,
+    "logged_leg_eq": 93,
+    "slotMultiplier_error": 102,
+    "filteredMass_kernel": 152,
+    "filteredMass_error": 174,
+    "character_re": 213,
+    "norm_character": 224,
+    "originalPair_re": 240,
+    "rawAmount_bounds": 256,
+    "originalPair_norm": 297,
+    "filteredPair_error": 311,
+    "originalHead_re": 332,
+    "owner_inverse_sum": 348,
+    "head_envelope": 363,
+    "budget_nonneg": 414,
+    "filteredHead_error": 470,
+    "budget_first_native_lt": 496,
+    "budget_succ_le": 511,
+    "budget_lt_native": 535,
+    "budget_tendsto": 542,
+    "eventually_filteredHead_error": 554,
+    "tendsto_filteredHead_sub_original": 560,
+    "tendsto_central_sub_filteredHead_sub_native": 567,
+    "eventually_joined_floor_of_joint": 589
+  },
+  "optionalProbe": {
+    "snapshot": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/probe.json",
+      "sha256": "e57df6954501306553727d5e02902c211e087776287fbc26223fbe3d357c2c9b",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-e57df6954501306553727d5e02902c211e087776287fbc26223fbe3d357c2c9b.json"
+    },
+    "cases": 12,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "heights": [
+      65,
+      100
+    ],
+    "frozenComplexTotalRegressions": 12,
+    "fullOriginalComplexLedgerChecked": true,
+    "unchangedBalancedMainAndSameFullHead": true,
+    "allKeptBoundaryOrdersRetained": true,
+    "operatorCorrectionHasBothRealSigns": true,
+    "adverseJointBiasSurvives": true,
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingIntegerLength": false,
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "nativeOrEventualBudgetAtToyOrders": false,
+    "floatingNotIntervalCertificate": true,
+    "optionalOutsideBuildsCI": true,
+    "noNativeSavingsPercentOrZeroExclusionClaim": true
+  },
+  "openPremises": {
+    "remainingTarget": "independent cofinal Re(centralRest)-Re(filteredHead) >= -399/5000-o(1), with all paid budgets retained",
+    "jointIndependentSignedBoundProved": false,
+    "hardMaskedSpectralExpansionProved": false,
+    "wholeCofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noReadmeExplorerOrPublicEndpointUpdates": true,
+    "concurrentSemiprimeWorkNotEdited": true
+  },
+  "provenance": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/build.log",
+      "sha256": "9e9f7960fa90ec9c24665f0248d8093bc8b4072a396b6e8627dbe553950dab70",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-9e9f7960fa90ec9c24665f0248d8093bc8b4072a396b6e8627dbe553950dab70.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/audit.log",
+      "sha256": "1177fa8deb515dea85cebb5341f6f335a58b5dc2d3edf2280e00947afba344f1",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-1177fa8deb515dea85cebb5341f6f335a58b5dc2d3edf2280e00947afba344f1.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/Audit.lean",
+      "sha256": "ebb75fce9088f6958d1adf2b90bf175fe7f03c3089174c924ebea445f64cf2f6",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-ebb75fce9088f6958d1adf2b90bf175fe7f03c3089174c924ebea445f64cf2f6.lean"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/axioms.json",
+      "sha256": "6c744bbefc4352dfd5fd9672104be26f28466291362c8a3d6cc04894be8d88f7",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-6c744bbefc4352dfd5fd9672104be26f28466291362c8a3d6cc04894be8d88f7.json"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/probe.log",
+      "sha256": "154b549ce5424031d9cc14ec12bf76c7182817e9a17cda1e285454888b9824ea",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-154b549ce5424031d9cc14ec12bf76c7182817e9a17cda1e285454888b9824ea.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-prime-head-pole-payment/write_report.py",
+      "sha256": "b70cea5d29f0ee59d3d781042e8ba990aea23907a63f8ed09ea955178b1fe027",
+      "snapshot": ".lake/riesz-prime-head-pole-payment/snapshot-b70cea5d29f0ee59d3d781042e8ba990aea23907a63f8ed09ea955178b1fe027.py"
+    }
+  ]
+}

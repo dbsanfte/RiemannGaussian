@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "Independent geometric real payment of the entire completed all-count squarefree bulk, spent in an exact native signed completion-boundary ledger. The joined boundary upper bound and whole floor remain open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBulkPayment.lean",
+      "sha256": "846f02cdd9c59f3c91ece585120fe633ed212f8c68e82609d28d5f4040d042d6",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-846f02cdd9c59f3c91ece585120fe633ed212f8c68e82609d28d5f4040d042d6.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_bulk_phase.py",
+      "sha256": "a1ae7748deb3446c5603fc9a4d2b0ab9bbcf753ad3ff2154a552c72d27548998",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-a1ae7748deb3446c5603fc9a4d2b0ab9bbcf753ad3ff2154a552c72d27548998.py"
+    },
+    {
+      "path": "docs/zeta-riesz-global-bulk-payment.md",
+      "sha256": "0765c19b840e8bd436e927c613ff75badb88fe6f9b27eaac0a1348b2f273a3b7",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-0765c19b840e8bd436e927c613ff75badb88fe6f9b27eaac0a1348b2f273a3b7.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "45b51497ac11c0d0682d8c0964a01474c41df14893ec297ca187924adee5ee9c",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-45b51497ac11c0d0682d8c0964a01474c41df14893ec297ca187924adee5ee9c.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCompletionBoundary.lean",
+      "sha256": "3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-3a9ca87ce4f7b0054df7b229faf6acd43c4b73e0bea75aab1ce468b0b24eb19f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLongCutoffError.lean",
+      "sha256": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedDensityMain.lean",
+      "sha256": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerLatticePhase.lean",
+      "sha256": "90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerPhasePrimitive.lean",
+      "sha256": "9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLargeOrderCore.lean",
+      "sha256": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec.lean"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalBulkPayment.olean",
+      "sha256": "83cdf8a391d55fefb49037fbee2fa24528d1d7d5d85793b81dd163a2d133b9b3",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-83cdf8a391d55fefb49037fbee2fa24528d1d7d5d85793b81dd163a2d133b9b3.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalCentralPayment.olean",
+      "sha256": "1b2f7e518926389aba3a9e276379da08445cd05c74eee2e5cc2ba54b3a949faa",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-1b2f7e518926389aba3a9e276379da08445cd05c74eee2e5cc2ba54b3a949faa.olean"
+    }
+  ],
+  "theoremLines": {
+    "RiemannGaussian/ZetaRieszGlobalBulkPayment.lean": {
+      "full_lattice_phase_bound": 279,
+      "completedCore_real_bound": 670,
+      "bulkBudget_tendsto": 721,
+      "tendsto_completedCore_re": 737
+    },
+    "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean": {
+      "completedCoefficient_norm_le": 29,
+      "central_sub_full_norm_bound": 62,
+      "completedCentral_real_bound": 75,
+      "centralLabels_subset_full": 94,
+      "completedCentral_eq_native_and_boundaries": 168,
+      "native_joint_eq_completed_sub_boundary": 234,
+      "centralBulkBudget_tendsto": 246,
+      "eventually_native_joint_boundary_bound": 255,
+      "tendsto_native_joint_plus_boundary": 266,
+      "tendsto_native_plus_boundary": 278,
+      "nativeBoundaryBudget_tendsto": 296,
+      "eventually_native_boundary_bound": 307,
+      "eventually_native_floor_from_joined_boundary": 327
+    }
+  },
+  "validation": {
+    "scope": "Strict leaves and targeted builds; frozen compiled ordinary root with both explicit leaves, all14 namespace linters and transitive all-compiled-declaration standard-axiom checks.",
+    "strictLeanExitCodes": [
+      0,
+      0
+    ],
+    "targetedBuildExitCodes": [
+      0,
+      0
+    ],
+    "auditExitCode": 0,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 76,
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszGlobalBulkPayment",
+        "everyCompiledDeclarationChecked": true,
+        "declarations": 81
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 37,
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszGlobalCentralPayment",
+        "everyCompiledDeclarationChecked": true,
+        "declarations": 46
+      }
+    ],
+    "publicTheorems": 17,
+    "lintersPerNamespace": 14,
+    "rootSourceNotRebuiltOrEditedByThisSlice": true,
+    "frozenCompiledOrdinaryRootPreserved": true,
+    "allPreexistingRieszSourceAndProbeHashesPreserved": true,
+    "concurrentSemiprimeChangesRetained": [
+      {
+        "path": "RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+        "before": "b36b29485ae7a5d22dbe5c00f50cf63236bb3f338223a602f943a13071e82c03",
+        "now": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+        "disposition": "Concurrent semiprime work retained; not edited or reverted by this slice."
+      },
+      {
+        "path": "RiemannGaussian.lean",
+        "before": "8fe6c96e0e00b21e0d3ac2a2006c102bf3a4775a97e94f7a3f385dba355af2b9",
+        "now": "5922412fdeeeafb9b8b3404e1ee99567599840f38de30885bcf033741c7bbb69",
+        "disposition": "Concurrent semiprime work retained; not edited or reverted by this slice."
+      },
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "5efc90a0b9e92d6705f063e5c753659a50f381248f6a5e918902838334a23004",
+        "now": "c6cc68c02c40c3feff75f61a39c760ce36a0de07f24973994aaea3e0d5c48ac4",
+        "disposition": "Concurrent semiprime work retained; not edited or reverted by this slice."
+      },
+      {
+        "path": "docs/theorem-explorer/metadata.json",
+        "before": "a87586f2938be82bb960cdeba360bb0d8c52ad1cf32fadd963fe45e1eab2585b",
+        "now": "8b1f8d6f8ea140d3ac0ee7cddc500001e64abd17197c5d745a69f4e78a296445",
+        "disposition": "Concurrent semiprime work retained; not edited or reverted by this slice."
+      }
+    ]
+  },
+  "exactResults": {
+    "radius": "1/2 <= u <= 10001/20000",
+    "minimumBulkOrder": 64,
+    "fixedHeight": "54 <= abs(y)",
+    "zeroOrRHHypothesis": false,
+    "primeDensityOrTypeIIHypothesis": false,
+    "completedBulkIncludesEveryPrimeCount": true,
+    "completeWindow": "39N/20 < log n <= 203N/100",
+    "centralWindow": "1971N/1000 < log n <= 2029N/1000",
+    "nativeMovingIntegerFloorLengthRetained": true,
+    "allFactorialOrdersAndFullPhaseRetained": true,
+    "completedBulkRealBound": "7*ownerSamplingBudget + 2u*Ccount*(4+abs(y))*N(N+1)*exp(-N/200)",
+    "completedBulkRealTendsToZero": true,
+    "completedBulkComplexNormDecayClaimed": false,
+    "completedCentralExactLedger": "Gcentral=Mcentral+P1+P2+Rejected",
+    "joinedBoundary": "P1+P2+Rejected+SAME full wider-window signed head",
+    "everyRestoredOrRejectedLabelExplicit": true,
+    "quantitativeNativeLedger": "abs(nativeScaledCore.re+joinedBoundary.re)<=nativeBoundaryBudget -> 0",
+    "rawHighOwnerNotPaidByAllocatedResidualTheorem": true,
+    "remainingIndependentTarget": "joinedBoundary.re <= 399/5000 + o(1) cofinally",
+    "ordinaryPrimeBoundaryUnpaid": true,
+    "unmatchedSemiprimeBoundaryUnpaid": true,
+    "rawHighOwnerAndOtherRejectedMasksUnpaid": true,
+    "noSeparatePositiveBoundaryAllowancesIntroduced": true,
+    "wholeFloor": "OPEN",
+    "ceiling42Over25": "OPEN",
+    "restrictedContradiction": "OPEN",
+    "RH": "OPEN"
+  },
+  "optionalProbe": {
+    "report": {
+      "path": ".lake/riesz-global-bulk-payment/probe.json",
+      "sha256": "c0fdab2bcd395ae782671cda8c6b51b3b814ae9e1192d7987b7917f0c5512ed1",
+      "snapshot": ".lake/riesz-global-bulk-payment-audit/snapshot-c0fdab2bcd395ae782671cda8c6b51b3b814ae9e1192d7987b7917f0c5512ed1.json"
+    },
+    "scope": "Complete continuous signed integer-density phase integral",
+    "rows": 21,
+    "independent70DigitIncompleteGammaRegressions": [
+      {
+        "N": 256,
+        "height": 54,
+        "precisionDigits": 70,
+        "relativeError": 1.5519449780769086e-11
+      },
+      {
+        "N": 640,
+        "height": 65,
+        "precisionDigits": 70,
+        "relativeError": 3.0727804565880015e-13
+      },
+      {
+        "N": 1536,
+        "height": 100,
+        "precisionDigits": 70,
+        "relativeError": 5.801550490647012e-13
+      }
+    ],
+    "exactRationalFloorMovingLength": true,
+    "idealContinuousEndpointsOnlyInProbe": true,
+    "noPrimeOrLiteralMaskCarrierClaim": true,
+    "noUnspecifiedFiniteConstantSetToOne": true,
+    "outsideBuildAndCI": true
+  },
+  "regime": {
+    "localOnly": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noCommitOrPush": true,
+    "noWiderChecks": true,
+    "noPublicEndpointChangesByThisSlice": true
+  }
+}

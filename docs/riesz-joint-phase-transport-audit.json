@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Independent all-count signed cubic transport inequality for the actual balanced-minus-head sum; the cofinal signed allowance is still open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszJointPhaseTransport.lean",
+      "sha256": "7c64e84f3169afc00d21dbf1f9d41b8e2e668b32b11c10e5a3d7278d33c72a5f",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-7c64e84f3169afc00d21dbf1f9d41b8e2e668b32b11c10e5a3d7278d33c72a5f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadTransport.lean",
+      "sha256": "8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-8df24d3abad1a80ad704687e25db6c5eaf503805bf813ef20e96b7d8342de47f.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedRadialPayment.lean",
+      "sha256": "5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-5a5905e0b2ca770fc0bdb7a99f1dbcb2916e42f072bdeb17f21d3003e5453295.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedAllocationPayment.lean",
+      "sha256": "186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-186b8dd1f49b2eba0c9c6e623717f794042a9e68f2ff90d9da0ddd26b2a4af29.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCriticalPrimeFloor.lean",
+      "sha256": "6ca6aff3663414385d2f19edf0d812ce2b8516c4e8e4c1d5aa734b1b3bbe9e0d",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-6ca6aff3663414385d2f19edf0d812ce2b8516c4e8e4c1d5aa734b1b3bbe9e0d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCosineCarrier.lean",
+      "sha256": "afba38598a8aec9d1898474ee2ac5bd25b2d990da6f90191132f9e025c9f615e",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-afba38598a8aec9d1898474ee2ac5bd25b2d990da6f90191132f9e025c9f615e.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_joint_phase_transport.py",
+      "sha256": "27c8ae4428c513dbf1da8109f22b07c0c6e5204626ee33e2a9a2e44cbd61c68e",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-27c8ae4428c513dbf1da8109f22b07c0c6e5204626ee33e2a9a2e44cbd61c68e.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_joint.py",
+      "sha256": "6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-6e1ed763e84084e008a91e83abb21130dba6ec9a7693fff8fdb0d07e0ac555b2.py"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_signature.py",
+      "sha256": "6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-6c886278bc4f2985086051e1510f23dd993d2fcd3c7407ded72f0eeec68065a9.py"
+    },
+    {
+      "path": "docs/zeta-riesz-joint-phase-transport.md",
+      "sha256": "3053844594067fd5a8d6665974706c707094d4c33860e9fa5fe304a4c07eea38",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-3053844594067fd5a8d6665974706c707094d4c33860e9fa5fe304a4c07eea38.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "9e73a8ca7e2046a003ab40294fbf83fcaf929509e8ad7534186192d15e71d5ee",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-9e73a8ca7e2046a003ab40294fbf83fcaf929509e8ad7534186192d15e71d5ee.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszJointPhaseTransport.olean",
+      "sha256": "1df935003e12be31a63a292092ffd729e0844014b5594e44e8b762d1d1134dfa",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-1df935003e12be31a63a292092ffd729e0844014b5594e44e8b762d1d1134dfa.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local strict leaf/targeted build, frozen compiled ordinary root plus explicit leaf; no wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszJointPhaseTransport.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszJointPhaseTransport --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-joint-phase-transport/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "allNamespaceLintersPass": true,
+      "lintersPerNamespace": 14
+    },
+    "publicTheorems": 13,
+    "publicDefinitions": 15,
+    "compiledDeclarations": 47,
+    "compiledTheoremsIncludingPrivateAndGenerated": 30,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofProbeDocumentationAndCompiledArtifactsPreserved": true
+  },
+  "exactResults": {
+    "wholeCentralAndSameFullSignedHeadDisjointUnion": true,
+    "everyOriginalCountOwnerPhysicalRadialAllocationRoughMaskRetained": true,
+    "originalProductPhaseRetained": true,
+    "fullSignedArithmeticAmplitudesRetained": true,
+    "pairwiseCircularLiftCosineExactlyPreserved": true,
+    "exactUnmatchedRowColumnResidualRetained": true,
+    "firstCenteredPhaseMomentStaysSigned": true,
+    "wholeErrorBound": "abs(Re(centralRest)-nativeHead-(unmatched-signedMoment)) <= cubicCost",
+    "cubicCost": "sum_{a,b} w(a,b)*abs(delta(a,b))^3/24",
+    "smallGapCost": "cubicCost <= epsilon^2/24 * sum_{a,b} w(a,b)*abs(delta(a,b))",
+    "floorAndCeilingBeforeAnyCountOrUnmatchedNorm": true,
+    "explicitNativeCumulativeMassCouplingDefined": true,
+    "nativeCouplingNonnegativityProved": true,
+    "nativeCouplingCompleteMarginalIdentityClaimed": false,
+    "noFullCoverageOrNegligibleUnmatchedAssumption": true,
+    "noZeroExposureCompletionPrimeDensityOrArithmeticFloorPremise": true,
+    "nativeWholeFloorTransferRetainsAllPriorPaidErrors": true,
+    "priceMinWithPreviousFundedAlternative": true,
+    "stackedCredits": false
+  },
+  "optionalProbe": {
+    "chordSnapshot": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/probe.json",
+      "sha256": "8883dc0f65bc3085c99e4a3487857ea1371e3738d790119c5ad40d649811b790",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-8883dc0f65bc3085c99e4a3487857ea1371e3738d790119c5ad40d649811b790.json"
+    },
+    "cubicSnapshots": [
+      {
+        "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/cubic-probe.json",
+        "sha256": "e8a0341dcb63249d1d116e76a4c75b26002fad62d99933fa882de2e313f34f20",
+        "snapshot": ".lake/riesz-joint-phase-transport/snapshot-e8a0341dcb63249d1d116e76a4c75b26002fad62d99933fa882de2e313f34f20.json"
+      },
+      {
+        "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/cubic-order8.json",
+        "sha256": "8cb518343eccf0eb1df0012b6001466471adfb7c69a8d4a286c961910d39ba5d",
+        "snapshot": ".lake/riesz-joint-phase-transport/snapshot-8cb518343eccf0eb1df0012b6001466471adfb7c69a8d4a286c961910d39ba5d.json"
+      }
+    ],
+    "cases": 18,
+    "orders": [
+      6,
+      7,
+      8
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "cuts": "0,pi/2,pi,3pi/2",
+    "frozenComplexTotalRegressions": 18,
+    "allCountsOriginalComplexPhaseAndSameFullHeadRetained": true,
+    "absoluteChordPriceComparisons": 12,
+    "absoluteChordImprovesPrevious": 0,
+    "adverseSignedPriceComparisons": 8,
+    "adverseSignedPricesImproved": 8,
+    "favorableSignedFloorsPositive": 4,
+    "solverRoundoffAtAlreadyZeroPriceNotCountedAsSaving": true,
+    "cubicDefectMeasuredSmallButNoCofinalRateInferred": true,
+    "adverseUnmatchedAndSignedMomentContributionsRemain": true,
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingIntegerLength": false,
+    "nativeDyadicSchedule": false,
+    "fullNativeDeletionMasks": false,
+    "previousEventualBudgetsApplied": false,
+    "floatingNotIntervalCertificate": true,
+    "greedyExecutionEqualityToEvaluatedLeanCDFNotIntervalCertified": true,
+    "optionalOutsideBuildsCI": true,
+    "noNativeSavingsPercentOrZeroExclusionClaim": true
+  },
+  "openPremises": {
+    "remainingTarget": "cofinal Re(centralRest)-SAME full signed nativeHead >= -399/5000-o(1)",
+    "jointSignedUnmatchedMinusMomentCofinalBoundProved": false,
+    "nativeCofinalCubicErrorSmallnessProved": false,
+    "newWholeTransportPriceCofinalCapProved": false,
+    "wholeCofinalFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noReadmeExplorerOrPublicEndpointUpdates": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "provenance": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/build.log",
+      "sha256": "2e72f029abf81dc3031c4484e4692bf5a67277e8b4c0cbe0bf52458ee47f0dd9",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-2e72f029abf81dc3031c4484e4692bf5a67277e8b4c0cbe0bf52458ee47f0dd9.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/audit.log",
+      "sha256": "2501de5cde4201fa18d33df034d17d12187616283fc7c41cc04111d35b93781b",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-2501de5cde4201fa18d33df034d17d12187616283fc7c41cc04111d35b93781b.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/Audit.lean",
+      "sha256": "b2055bffed9d762ddf8a63f20ae5fd0903e923b18135adb8d10e7a4047e4cfd1",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-b2055bffed9d762ddf8a63f20ae5fd0903e923b18135adb8d10e7a4047e4cfd1.lean"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/axioms.json",
+      "sha256": "9f0bfe06a61bd99ab65c9b82868fcdebfb777aca65f7e05eb442fcc6647f94df",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-9f0bfe06a61bd99ab65c9b82868fcdebfb777aca65f7e05eb442fcc6647f94df.json"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/cubic-probe.log",
+      "sha256": "0c89498982f36072ddd666e822d9ceb3982212d34459052ae05f2394960ce1e7",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-0c89498982f36072ddd666e822d9ceb3982212d34459052ae05f2394960ce1e7.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/cubic-order8.log",
+      "sha256": "e1d80276f7b2d22f4fab036440e1f4f7c305877a5c9769239d3aedb5fcac113a",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-e1d80276f7b2d22f4fab036440e1f4f7c305877a5c9769239d3aedb5fcac113a.log"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-joint-phase-transport/write_report.py",
+      "sha256": "e1b178d2f42136be698feac85c26d7d22936e34c4ef2c38077978bf8b7c68b55",
+      "snapshot": ".lake/riesz-joint-phase-transport/snapshot-e1b178d2f42136be698feac85c26d7d22936e34c4ef2c38077978bf8b7c68b55.py"
+    }
+  ]
+}

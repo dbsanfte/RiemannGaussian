@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Exact cubic correction retaining count three, with quantitative finite-matrix gate.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszTangentCubicCredit.lean",
+      "sha256": "02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_tangent_cubic.py",
+      "sha256": "f9370ebc32bcedc8ddb923d52ca9bac8f0aa86eed4a9a1db01177e22bc0705cf",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-f9370ebc32bcedc8ddb923d52ca9bac8f0aa86eed4a9a1db01177e22bc0705cf.py"
+    },
+    {
+      "path": "docs/zeta-riesz-tangent-cubic-credit.md",
+      "sha256": "5d60f76a5fdea57201cc8e7d5354051c3d639980908fd867457e895445f1d8de",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-5d60f76a5fdea57201cc8e7d5354051c3d639980908fd867457e895445f1d8de.md"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointNullCredit.lean",
+      "sha256": "514748b4750d8400d3f06faf44306d16917e3d96f5f8aa054d4462081baa7fe8",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-514748b4750d8400d3f06faf44306d16917e3d96f5f8aa054d4462081baa7fe8.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedNullGain.lean",
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_complex_null_profiles.py",
+      "sha256": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2.py"
+    },
+    {
+      "path": "scripts/probe_riesz_joined_count_correlation.py",
+      "sha256": "52d3f7dcb31b8e8f37d2c2dee6e4e2a4c2f297ac802eb104bad50c4a768793d5",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-52d3f7dcb31b8e8f37d2c2dee6e4e2a4c2f297ac802eb104bad50c4a768793d5.py"
+    },
+    {
+      "path": "scripts/probe_riesz_quantitative_null_step.py",
+      "sha256": "d5e4283ed70b8992aa9b1023635eafc288ca151018be646c484d9dd0f0de834e",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-d5e4283ed70b8992aa9b1023635eafc288ca151018be646c484d9dd0f0de834e.py"
+    },
+    {
+      "path": "scripts/probe_riesz_canonical_joint.py",
+      "sha256": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b.py"
+    },
+    {
+      "path": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b.py"
+    },
+    {
+      "path": "scripts/probe_riesz_reflected_phase_gram.py",
+      "sha256": "415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04.py"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-tangent-cubic/lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/build.log",
+      "sha256": "becafbabfafee3965f695d451e3b69900079da1549da2994036459c3ac169012",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-becafbabfafee3965f695d451e3b69900079da1549da2994036459c3ac169012.log"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/audit.log",
+      "sha256": "bc80e2ef4e61a8a0069903b70b11eb689ca17b0a24639d95ebf028aa6b00377c",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-bc80e2ef4e61a8a0069903b70b11eb689ca17b0a24639d95ebf028aa6b00377c.log"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/Audit.lean",
+      "sha256": "791b2f90614b49d50ac4dbbe6a7c0015f998deba943527024997b71f54f70883",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-791b2f90614b49d50ac4dbbe6a7c0015f998deba943527024997b71f54f70883.lean"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/axioms.json",
+      "sha256": "3759d39197e4a8c8b79b086be9a59301e565bf958f4fcc91dcb0c6b6f8b913aa",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-3759d39197e4a8c8b79b086be9a59301e565bf958f4fcc91dcb0c6b6f8b913aa.json"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/report.json",
+      "sha256": "5b809e1d84826ccd3e9eebaf3adb72cba0b8ae9f2b179d775eba4c9d9bcaf1c0",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-5b809e1d84826ccd3e9eebaf3adb72cba0b8ae9f2b179d775eba4c9d9bcaf1c0.json"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/probe.log",
+      "sha256": "0ad8766dfd7ebcaac61c1b2c52c42d79c299b300917ba7d5af61357521c92789",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-0ad8766dfd7ebcaac61c1b2c52c42d79c299b300917ba7d5af61357521c92789.log"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/probe.py",
+      "sha256": "eeebde0dc56d7058ba60678005017520cd4f329f1d867b65253383a5abcc37cc",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-eeebde0dc56d7058ba60678005017520cd4f329f1d867b65253383a5abcc37cc.py"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/diagnostic.log",
+      "sha256": "51c9382519a1e0aa5c488a49daeb852df83001af1779c7ac07a0c7ea1b2472c2",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-51c9382519a1e0aa5c488a49daeb852df83001af1779c7ac07a0c7ea1b2472c2.log"
+    },
+    {
+      "path": ".lake/riesz-tangent-cubic/write_audit.py",
+      "sha256": "1788680c81193ba63411135b33c147e38dd67010235f57be684aa0c18934e11c",
+      "snapshot": ".lake/riesz-tangent-cubic/snapshot-1788680c81193ba63411135b33c147e38dd67010235f57be684aa0c18934e11c.py"
+    }
+  ],
+  "publicTheoremCount": 20,
+  "publicTheorems": [
+    "sum_tangentIncrement_zero",
+    "sum_profile_direction",
+    "unit_cutoff_direction",
+    "coefficients_zero_of_two_moment_constraints",
+    "no_free_unit_cutoff_direction",
+    "tangentIncrement_of_moment_zero",
+    "thirdMoment_three_primes",
+    "cubic_pairing_eq_third",
+    "cubicMoment_eq_three",
+    "sum_cubicTangent_zero",
+    "sum_extendedIncrement_zero",
+    "tangentCredit_le_cost",
+    "jointCredit_le_tangentCredit",
+    "tangentCredit_zero",
+    "prefix_floor_with_tangent_credit",
+    "nativeJointCredit_le_tangentCredit",
+    "nativeTangentCredit_zero",
+    "nativeTangentCredit_le_cost",
+    "native_floor_with_tangent_credit",
+    "false_of_cofinal_tangent_credit"
+  ],
+  "proofChecks": {
+    "strictTargetLean": true,
+    "strictTargetBuild": true,
+    "rootImportNamespaceLint": true,
+    "namespaceLinters": 14,
+    "transitiveAxioms": {
+      "theoremCountIncludingGeneratedHelpers": 34,
+      "onlyStandardAxioms": true,
+      "module": "RiemannGaussian.ZetaRieszTangentCubicCredit",
+      "declarations": 41
+    },
+    "permittedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "arithmeticScope": {
+    "wholeNativeCarrierInequality": true,
+    "allOriginalMasksPhasesAllocationsRetained": true,
+    "countThreeCubicMomentRetained": true,
+    "earlyLateZeroCrossedGroupsRetained": true,
+    "baselineImaginaryTiltUnchanged": true,
+    "nativeErrorUnchanged": true,
+    "creditsFundedByOneBaselineMaximumNotSum": true,
+    "zeroNewCoefficientRecoversOldCredit": true,
+    "determinantBoundaryHypothesisExplicit": true,
+    "nativeNoncollinearityNotAsserted": true,
+    "independentNativeCofinalBoundProved": false,
+    "sourceScaleRateProved": false,
+    "floorTarget": "nativeCost-nativeTangentCredit <= 399/5000 cofinally",
+    "previousSixDirectionTargetPreserved": true,
+    "allEarlierPositiveResultsAndNoGosPreserved": true,
+    "newIndependentFloor": false,
+    "newCeiling": false,
+    "newZeroExclusion": false,
+    "RHProved": false
+  },
+  "numericalScope": {
+    "outsideBuildsCI": true,
+    "nativeFloorProved": false,
+    "nativeCostBound": false,
+    "wholeNativePopulation": false,
+    "populationDensitySample": false,
+    "probablePrimes": true,
+    "floatingPhases": true,
+    "largeCutoffsInterpolated": true,
+    "allSelectedCountsPeriodsRetained": true,
+    "ordinaryImaginaryTiltUnchanged": true,
+    "sourceAmplitudeRescaled": true,
+    "exactReplayOnlyOfFloatingMatrix": true
+  },
+  "rationalModelRegressions": {
+    "rationalFiniteDifferenceCases": 500,
+    "counts": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "triplesRetained": true,
+    "perpendicularMomentRegressions": 500,
+    "actualPrimeLogCertificate": false
+  },
+  "finiteMatrixCases": [
+    {
+      "N": 256,
+      "height": 54.0,
+      "labels": 283,
+      "additionalFractionOfRemainingFiniteCost": 4.926662145965377e-05,
+      "exactDualLower": "121484626660966694942636425865479193286947709767720248619090109824769045056098303386363998398731085216983785480818056638935710932012117959573861245/1661566676650948357199374950455450255495247202734149105462728588292722944987032497398880155945554786304891088467912262643693377897393731061940224",
+      "exactPrimalUpper": "949098645791879644752881354597315062391510164309283435791702623921096773229562302682574020002932194444325910815954172649698942544482867207042733/12980989661335534040620116800433205121056618771360539886427567096036898007711191385928751218324646768006961628655564551903854514823388523921408",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 3.2423821561421583e-12,
+      "normalizedPhaseSeparationSine": -0.16585386354959053,
+      "firstCutoffTangent": -4.403118305412506e-06
+    },
+    {
+      "N": 256,
+      "height": 65.0,
+      "labels": 283,
+      "additionalFractionOfRemainingFiniteCost": 0.00011994024933958958,
+      "exactDualLower": "28355633851811832724413806070526679715440186953824114462930864944893770739399034947924881953796689023076147872299397906203025527677576905061963/392294334128827245215781837833400497885149688645524927967131754188239973766493844569478185221631760378666909347909746763746807163967087050752",
+      "exactPrimalUpper": "28355633852791440827828717972007449968994976738228089609696681077388394864708657323429630276863326883639911951189063365698060521937642380124107/392294334128827245215781837833400497885149688645524927967131754188239973766493844569478185221631760378666909347909746763746807163967087050752",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 3.4547212328264545e-11,
+      "normalizedPhaseSeparationSine": -0.09010566279857059,
+      "firstCutoffTangent": -2.3969617128394174e-06
+    },
+    {
+      "N": 256,
+      "height": 100.0,
+      "labels": 283,
+      "additionalFractionOfRemainingFiniteCost": 0.0006066561980554441,
+      "exactDualLower": "1376655231091595108280050341446093235496484504526894195945365190065327397997862779178210048058239076193483255526687354650453119923388504417901999/11062051656240762670017689543851266004045429650022762984334303539973373826393158402891996113822264154692697491007987613359405997823648132497408",
+      "exactPrimalUpper": "1376655231107326658854637647437786516229322296099093075860026915734979333440745930943751137824221656244654513404978540774064062255945881551063153/11062051656240762670017689543851266004045429650022762984334303539973373826393158402891996113822264154692697491007987613359405997823648132497408",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 1.1427371370196641e-11,
+      "normalizedPhaseSeparationSine": 0.6570639151204083,
+      "firstCutoffTangent": 6.7202823734324545e-06
+    },
+    {
+      "N": 640,
+      "height": 54.0,
+      "labels": 360,
+      "additionalFractionOfRemainingFiniteCost": 3.106690575804816e-05,
+      "exactDualLower": "57715366821047259589050450855244564127264496393861245169248923651056737491107674671203512958583151328749274311075077177612377252551927252111/693100186814295202664440223722783239141808925038318449611024563968983907135951874270882629445507119331454271835639630861853215666523340800",
+      "exactPrimalUpper": "16245431556380801445748957249626944820178765369078247656848827331676274366038467539986733958714826470766076647540836425308081498258362803330654424193134013/195090358941705064987588219570505474520581173367307848116651584605352482537420510057158720783839375632876534605648108047117310705018640187828632079564800",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 1.5130134246770941e-09,
+      "normalizedPhaseSeparationSine": 0.8180175789704404,
+      "firstCutoffTangent": 2.1589048078528143e-06
+    },
+    {
+      "N": 640,
+      "height": 65.0,
+      "labels": 360,
+      "additionalFractionOfRemainingFiniteCost": 1.8102167779199263e-05,
+      "exactDualLower": "1121817081451764890617534053088656500814127426639884581280497785181394206758219742815566084757601921399313982229753026582642515190748564742892931/8364521944542384256572577984014696894736763295717895596446512476547433342505935326980385119869807575823915437315288230473836783249987072950272",
+      "exactPrimalUpper": "315763437009666780404925704331358935916387705584894106710190229870287773690522704641937817018335512159587751743941892594925990598887756176098320013722654174323/2354403619535838646622256856547507171901253411405924822461984597608182133476750715471254029816683778275852750549070708126439149908822266396290873708020498432",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 4.256831446270718e-10,
+      "normalizedPhaseSeparationSine": -0.8980171220801031,
+      "firstCutoffTangent": -2.227853973568588e-06
+    },
+    {
+      "N": 640,
+      "height": 100.0,
+      "labels": 360,
+      "additionalFractionOfRemainingFiniteCost": 1.9834807528873455e-05,
+      "exactDualLower": "65852098291105604110630330516287015818202507946433813227717791133216412478626267883207870913064745524740663188108385155072560499635720820955877/685697898251940553718886740971821300632886352587078725598090521596908576017301963999597542530692806624044739611801075044754335115707580153856",
+      "exactPrimalUpper": "296571491057386798997215583540689059181297491012320354346202433864550921396652898829134321940887892560987671116241471239202916211675770789692648616936658211201/3088108799056171758265302756886572689024017746043840095711298144495263053194190510395061229145339651081082580630001526216968483033514961965007679828395032576",
+      "exactDualDirectionalCorrelationsZero": true,
+      "everyRealSevenVectorCoveredForFloatingMatrix": true,
+      "lowerAtLeast99939Over100000OfFormerSixPrice": true,
+      "relativeGap": 1.9327543262711533e-08,
+      "normalizedPhaseSeparationSine": 0.7926379607193694,
+      "firstCutoffTangent": 8.764264420887036e-07
+    }
+  ],
+  "unrestrictedFiniteMatrixRetainedPriceLower": "99939/100000",
+  "preliminary1536": {
+    "sevenFitFailed": true,
+    "solverFailureNotArithmeticObstruction": true,
+    "receipt": ".lake/riesz-tangent-cubic/diagnostic.log",
+    "usedInSuccessfulCaseConclusions": false
+  },
+  "workflow": {
+    "localOnly": true,
+    "committed": false,
+    "pushed": false,
+    "subagentsUsed": false,
+    "widerGatesRun": false,
+    "publicEndpointChanged": false,
+    "ordinaryCIProbeAdded": false
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "date": "2026-10-03",
+  "module": "RiemannGaussian.ZetaRieszPolynomialPairPayment",
+  "status": "Supporting local payment only; requested balanced-pair milestone not achieved",
+  "claims": {
+    "literalPolynomialSmallPairNormTendsToZeroUnderExposure": true,
+    "simplicityRequiredForThisPayment": false,
+    "allOriginalMasksRetained": true,
+    "allFactorialOrdersRetained": true,
+    "onlyLargerPrimeCompleted": true,
+    "independentLiteralSupportErrorGeometric": true,
+    "paymentSpentOnceInNativeFloor": true,
+    "balancedBoxesProvedUntouched": true,
+    "balancedPairSignedSaving": false,
+    "balancedPairUpperBound399Over5000": false,
+    "sourceConstantLowered": false,
+    "cofinalFloor": false,
+    "multipleZeroCeiling": false,
+    "zeroExclusion": false,
+    "RH": false
+  },
+  "parameters": {
+    "type": "exact rational rate calibration plus numerical OLD source calibration",
+    "cofactorCutoffPower": 16,
+    "worstBeta": "19999/20000",
+    "massExponentUpper": "629/5000",
+    "massExponentUpperFloat": 0.1258,
+    "massDivOrderExponentUpper": "-4371/5000",
+    "beatsMinusFourFifths": true,
+    "unchangedOldSourceAtRadiusCeiling": "0.0798717970349441779074353141836181497697551803278199904987205",
+    "unchangedGapTo399Over5000": "0.0000717970349441779074353141836181497697551803278199904987205245",
+    "actualPrimeEnumeration": false,
+    "balancedPairSignedSaving": false,
+    "cofinalFloorProved": false,
+    "sourceConstantLowered": false
+  },
+  "terminalTheorems": [
+    "exists_literalSmall_completion_bound",
+    "tendsto_literalSmall",
+    "balancedProducts_disjoint_literalSmall",
+    "eventually_native_largePairRest_floor"
+  ],
+  "openTarget": {
+    "quantity": "surviving signed large/balanced-pair aggregate",
+    "bound": "Re <=399/5000+o(1), cofinally and independently",
+    "newMilestoneMustAdvanceThisBound": true
+  },
+  "validation": {
+    "strictLeanExitCode": 0,
+    "warningAsError": true,
+    "targetedBuildExitCode": 0,
+    "targetedBuild": "RiemannGaussian.ZetaRieszPolynomialPairPayment",
+    "frozenOrdinaryRootPlusExplicitLeaf": true,
+    "lintExitCode": 0,
+    "linters": 14,
+    "allDeclarationStandardAxiomAudit": true,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 43,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.smallCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.interior_coefficient_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.eventually_small_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.norm_loggedPairLift_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.exists_cofactorMass_power_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.smallCoefficient_pair._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.literalPairDefect_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.hasSum_smallCoefficient._simp_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.interior_small_pair_eq._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.interior_small_pair_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_native_plus_largePairRest_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.hasSum_loggedPairLift",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.cofactor_power_margin",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.exists_literalSmall_completion_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.maskedSmallCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.loggedPairLift.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_cofactorMass_div_length",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.loggedPairLift._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.smallPrimes_data",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_cofactorMass_div_order",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.completedSmall._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.cofactor_incidence_card_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.norm_loggedCoefficient_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.interior_small_pair_eq._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_literalSmall",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.cofactorMass.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.smallCoefficient_pair._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_completedSmall",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.loggedPairLift_kernel._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.hasSum_smallCoefficient",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.loggedPairLift_kernel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.tendsto_completedSmall._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.balancedProducts_disjoint_literalSmall",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.smallCoefficient_pair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.loggedPairLift_kernel._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.literalSmall.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.completedSmall.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.norm_smallCoefficient_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszPolynomialPairPayment.0.RiemannGaussian.ZetaRieszPolynomialPairPayment.interior_small_pair_eq._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.norm_maskedSmallCoefficient_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.eventually_native_largePairRest_floor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.exists_literalSmall_completion_bound._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszPolynomialPairPayment.exists_literalSmall_completion_bound._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszPolynomialPairPayment",
+        "declarations": 53
+      }
+    ]
+  },
+  "workflow": {
+    "localOnly": true,
+    "committed": false,
+    "pushed": false,
+    "subagentsUsed": false,
+    "rootRegistered": false,
+    "publicReadmeChanged": false,
+    "broadGatesRun": false,
+    "compiledOrdinaryRootPreserved": true
+  },
+  "preservation": {
+    "baselinePaths": 4478,
+    "unchangedBaselinePaths": 4473,
+    "changes": [
+      {
+        "path": "RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+        "before": "97c44c2217ae2a90ec02838e62674b5918850eebba94c9665295028819efbb50",
+        "after": "0452feed14dcbd179d65beb9d6a0462b7886f9da9f59734660c68cba57fe6cd2",
+        "ownChange": false
+      },
+      {
+        "path": "AGENTS.md",
+        "before": "cb0408f4f18b2ef60778cce812e7aa0a07e0ef6312f11e1ce55cbc1a01f0c9aa",
+        "after": "bac61d707d62bec11ec00112a388a72303c3f07cbe491814f9af20b234767047",
+        "ownChange": true
+      },
+      {
+        "path": "RiemannGaussian.lean",
+        "before": "0a73bbe255e849886bbf46936ac1b82f3a50713396886bef34a4c65d7c6e0d14",
+        "after": "205c48686a618144d0473718b0683704a08ba861cca220170031b15ddfeb7a8f",
+        "ownChange": false
+      },
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "d10dfbfce6426d9937386d38b9f9daf429c89b48c5255cc552e5260addffcc9d",
+        "after": "dbe6f4cfaa56d4a96f7a21d6698f6277cdb1630e3e19d429313227ff16b9b3af",
+        "ownChange": false
+      },
+      {
+        "path": "docs/theorem-explorer/metadata.json",
+        "before": "dc4c53d4535d70e1f1cc9b7b7b79806ad98fad0ecad0c93ec02b3253d96167c3",
+        "after": "d438a7210f1326c4b223d6d3c9288805b004346d70797ec31600e12708db6fa2",
+        "ownChange": false
+      }
+    ],
+    "allChangedPathsPreserved": true
+  },
+  "pins": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPolynomialPairPayment.lean",
+      "sha256": "df12df4daabfa594f0e23d85ad1aef6931418df230a1ab6693b6b32ef31dbaa1",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/df12df4daabfa594f0e23d85ad1aef6931418df230a1ab6693b6b32ef31dbaa1/ZetaRieszPolynomialPairPayment.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-polynomial-pair-payment.md",
+      "sha256": "5c26aa754543c230caee981816fe6a3007215ef61b95ab956d6b30998079e35a",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/5c26aa754543c230caee981816fe6a3007215ef61b95ab956d6b30998079e35a/zeta-riesz-polynomial-pair-payment.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "bac61d707d62bec11ec00112a388a72303c3f07cbe491814f9af20b234767047",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/bac61d707d62bec11ec00112a388a72303c3f07cbe491814f9af20b234767047/AGENTS.md"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3/ZetaRieszSignedSelbergPayment.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20/ZetaRieszLowCountSelbergAudit.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCompletedCofactor.lean",
+      "sha256": "f4512613976290648db6e09e8d1a050ccafb49f9a31cb445d1d0d0d019c39c54",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/f4512613976290648db6e09e8d1a050ccafb49f9a31cb445d1d0d0d019c39c54/ZetaRieszCompletedCofactor.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimeCofactorCompletion.lean",
+      "sha256": "04435f89d606cc8d297e2852a1d9101ffac60c3125126606e1e8108b8c8446b4",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/04435f89d606cc8d297e2852a1d9101ffac60c3125126606e1e8108b8c8446b4/ZetaPrimeCofactorCompletion.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSemiprimeCompletion.lean",
+      "sha256": "61adcf055d5195025476515ac1a60063cc27f532e9b601356851196f7b7072c5",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/61adcf055d5195025476515ac1a60063cc27f532e9b601356851196f7b7072c5/ZetaRieszSemiprimeCompletion.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7/ZetaRieszGlobalPeriodEdgePayment.lean"
+    },
+    {
+      "path": "docs/riesz-signed-selberg-payment-audit.json",
+      "sha256": "0b4ae975ac801a498b9048955bce4a8b53ba6c6f83a7c35c46f8ecf0785f2622",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/0b4ae975ac801a498b9048955bce4a8b53ba6c6f83a7c35c46f8ecf0785f2622/riesz-signed-selberg-payment-audit.json"
+    },
+    {
+      "path": "docs/riesz-low-count-selberg-audit.json",
+      "sha256": "0e82a2c17f491752bc1b9de645f780aa75923ff9f867a199596a0470a7b18f06",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/0e82a2c17f491752bc1b9de645f780aa75923ff9f867a199596a0470a7b18f06/riesz-low-count-selberg-audit.json"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f/RiemannGaussian.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszPolynomialPairPayment.olean",
+      "sha256": "6ccc4c4efe340f4c6e0e1e0d70ed25d98c6fe799420bc5ead6af296d16c52088",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/6ccc4c4efe340f4c6e0e1e0d70ed25d98c6fe799420bc5ead6af296d16c52088/ZetaRieszPolynomialPairPayment.olean"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/Audit.lean",
+      "sha256": "f11a32c5ce323365b73062705b60d8cdb605f9dc425b153dcbf2fa4a19c92361",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/f11a32c5ce323365b73062705b60d8cdb605f9dc425b153dcbf2fa4a19c92361/Audit.lean"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/strict.log"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/build.log",
+      "sha256": "819d46ed8fb3a9d7a003f1aa38f82ef8302ce24aedb6d07dc44094d292b85c64",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/819d46ed8fb3a9d7a003f1aa38f82ef8302ce24aedb6d07dc44094d292b85c64/build.log"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/audit.log",
+      "sha256": "f08efb8822c937eaa98d33d47ba482c619a3a8e3b85629d08a5d05a5de0746b2",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/f08efb8822c937eaa98d33d47ba482c619a3a8e3b85629d08a5d05a5de0746b2/audit.log"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/axioms.json",
+      "sha256": "9fb0c667028d75dcfef6a017800e5d71d88cdacc05d72af2fa4925583fe3da94",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/9fb0c667028d75dcfef6a017800e5d71d88cdacc05d72af2fa4925583fe3da94/axioms.json"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/parameters.json",
+      "sha256": "ba9e7103c7903816c4ce0b4c45c0accfe02cc95e3fded7093bc9893629e75d5e",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/ba9e7103c7903816c4ce0b4c45c0accfe02cc95e3fded7093bc9893629e75d5e/parameters.json"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/unrelated-before.json",
+      "sha256": "b27c84dcaa7e76f40a3fe68d7b59ec124a258f11d93ca99dcb410672da458052",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/b27c84dcaa7e76f40a3fe68d7b59ec124a258f11d93ca99dcb410672da458052/unrelated-before.json"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/preservation.json",
+      "sha256": "5760159ff398498b719302ca400650d112c21cf54500ef470884dcf639e034ac",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/5760159ff398498b719302ca400650d112c21cf54500ef470884dcf639e034ac/preservation.json"
+    },
+    {
+      "path": ".lake/riesz-polynomial-pair-payment/diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-polynomial-pair-payment/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/diff-check.log"
+    }
+  ]
+}

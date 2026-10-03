@@ -13,10 +13,11 @@ if git grep --cached -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
 fi
 
 if command -v lake >/dev/null 2>&1; then
-  lake_command=(lake)
+  lake_command=("$project_root/.githooks/with-clean-git-env" lake)
 elif [[ -x "$project_root/../.lean/elan/bin/lake" ]]; then
   project_elan_home="$project_root/../.lean/elan"
-  lake_command=(env "ELAN_HOME=$project_elan_home" \
+  lake_command=("$project_root/.githooks/with-clean-git-env" \
+    env "ELAN_HOME=$project_elan_home" \
     "$project_elan_home/bin/lake")
 else
   echo 'Cannot find lake; install the pinned Lean toolchain before committing.' >&2
@@ -24,7 +25,9 @@ else
 fi
 
 echo 'pre-commit: ordinary and optional Lake configuration'
-python3 scripts/test_numerical_certificate_build_config.py
+python3 scripts/test_git_hook_environment.py
+"$project_root/.githooks/with-clean-git-env" \
+  python3 scripts/test_numerical_certificate_build_config.py
 
 echo 'pre-commit: warning-as-error Lean build'
 "${lake_command[@]}" build --wfail

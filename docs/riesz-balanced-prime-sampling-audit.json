@@ -1,0 +1,926 @@
+{
+  "agentsSpawned": false,
+  "allUncertaintyIntervalsContainZero": true,
+  "baseCommit": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "bootstrapConfidenceCertified": false,
+  "cases": 12,
+  "checks": [
+    "Six stopped-count distributions calibrated to within 1e-13 numerically",
+    "Eight independent Arb product-log/coefficient/factorial atom checks",
+    "Twenty-four independent Arb full-product phase checks including exact height 10^1800",
+    "Final source/report/sample SHA256 pins match",
+    "Frozen ordinary root .olean SHA256 unchanged"
+  ],
+  "classification": "Optional failed numerical test; zero floor credit",
+  "committed": false,
+  "conclusion": "No stable signed prime-phase effect or cofinal saving established. Stop extending this sampling branch without a provable mechanism.",
+  "concurrentSourceChangesPreserved": [
+    "RiemannGaussian.lean",
+    "docs/theorem-explorer/metadata.json"
+  ],
+  "contradictionMarginAtRadiusCeiling": 7.179703494418e-05,
+  "createdAt": "2026-10-03T15:49:52.387498+00:00",
+  "evidencePins": [
+    {
+      "path": ".lake/riesz-balanced-prime-sampling/result.json",
+      "sha256": "39e1919aeb6ae1ad371a517748cc7ce76b72838a78c94faa50e3fb6cf0850020"
+    },
+    {
+      "path": ".lake/riesz-balanced-prime-sampling/result.primes.json",
+      "sha256": "68da5ed81911894d8917068641c6dab712c63bc2be573c06fb88352fa75594b1"
+    }
+  ],
+  "existingSourcesChangedFromBaseline": [
+    "AGENTS.md",
+    "RiemannGaussian.lean",
+    "docs/theorem-explorer/metadata.json"
+  ],
+  "externalPrimalityCheck": "FLINT fmpz_is_prime through python-flint 0.9.0",
+  "frozenRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+  "marginIsRemainingErrorEstimate": false,
+  "milestoneAchieved": false,
+  "newOwnSourcePaths": [
+    "scripts/probe_riesz_balanced_prime_sampling.py",
+    "docs/zeta-riesz-balanced-prime-sampling.md",
+    "docs/riesz-balanced-prime-sampling-audit.json"
+  ],
+  "orders": [
+    256,
+    640
+  ],
+  "ordinaryRootSourceChangedByThisSlice": false,
+  "ordinaryRootSourceNotChangedByThisSliceDespiteConcurrentChanges": true,
+  "populationBoundCertified": false,
+  "primalityLeanCertified": false,
+  "proofChainAdvanced": false,
+  "publicationNote": "Historical focused-slice audit; the combined checkpoint registers and revalidates the complete local tree.",
+  "pushed": false,
+  "registeredNewLeanFiles": false,
+  "rows": [
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11925803496032,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008836011966882348,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14374
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.98173406668477,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.007700703371331555,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16493
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -7.013669255955623e-09,
+        9.55299382114278e-09
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.01357737734940312,
+        0.017561964580321485
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.024947822564293898,
+      "height": "54",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.715079749053473,
+      "marginalPrimePhaseMagnitudes": [
+        0.06441233878346714,
+        0.025201834282134163
+      ],
+      "minimumLiteralDefectOverN": 0.0035970995695600028,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.023526326032820802,
+      "rankOneSignedReal": 0.0014214965314730942,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -0.000966148805290647,
+      "relativeSignedModulus": 0.001654309508124972,
+      "relativeSignedReal": 0.0013428687332379672,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 5.059298630171874e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 8.369645828336978e-10,
+      "sourceScaledFiniteBoxRealEstimate": 6.793973942571494e-10,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11925803496032,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008836011966882348,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14374
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.98173406668477,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.007700703371331555,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16493
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -9.121434653698521e-09,
+        7.293544577169168e-09
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.01846148534722195,
+        0.015235641332765068
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.021602671046983588,
+      "height": "100",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.715079749053473,
+      "marginalPrimePhaseMagnitudes": [
+        0.07286739540864394,
+        0.023122044089025014
+      ],
+      "minimumLiteralDefectOverN": 0.0035970995695600028,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.023526326032820802,
+      "rankOneSignedReal": -0.0019236549858372147,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.001440637323055216,
+      "relativeSignedModulus": 0.0021698100897097725,
+      "relativeSignedReal": -0.001622541194801116,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 5.059298630171874e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 1.0977717214601763e-09,
+      "sourceScaledFiniteBoxRealEstimate": -8.208920444254732e-10,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11925803496032,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008836011966882348,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14374
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.98173406668477,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.007700703371331555,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16493
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -5.973473020255276e-09,
+        1.7017202244061206e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.0117248106444563,
+        0.03348259140417203
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.03139768507426395,
+      "height": "10^1800",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.715079749053473,
+      "marginalPrimePhaseMagnitudes": [
+        0.10885997630581659,
+        0.06764516518273685
+      ],
+      "minimumLiteralDefectOverN": 0.0035970995695600028,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 5.150766391878952e-78,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.023526326032820802,
+      "rankOneSignedReal": 0.007871359041443147,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.0011225138234971825,
+      "relativeSignedModulus": 0.007723241249598357,
+      "relativeSignedReal": 0.007641231452819325,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 5.059298630171874e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 3.907418387457987e-09,
+      "sourceScaledFiniteBoxRealEstimate": 3.865927182207504e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11149585030813,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008767690714532275,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14486
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.96061497122975,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.0075397767751128,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16845
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -6.938437252171521e-09,
+        1.4582450202106138e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.013645247068598343,
+        0.02940376336274773
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.03006679341162374,
+      "height": "54",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.743961029160687,
+      "marginalPrimePhaseMagnitudes": [
+        0.1124011211132031,
+        0.06942488740743645
+      ],
+      "minimumLiteralDefectOverN": 0.0037115286790396773,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.02434997187748754,
+      "rankOneSignedReal": 0.005716821534136201,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.005942073128036604,
+      "relativeSignedModulus": 0.008151646764431938,
+      "relativeSignedReal": 0.005580422198466615,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 4.741967605535855e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 3.8654844888707414e-09,
+      "sourceScaledFiniteBoxRealEstimate": 2.6462181290341874e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11149585030813,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008767690714532275,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14486
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.96061497122975,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.0075397767751128,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16845
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -2.0746883908708546e-08,
+        1.2448624883290535e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.04154995248771189,
+        0.026307844652221073
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.017962866876836847,
+      "height": "100",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.743961029160687,
+      "marginalPrimePhaseMagnitudes": [
+        0.14131881738695334,
+        0.05132940559077075
+      ],
+      "minimumLiteralDefectOverN": 0.0037115286790396773,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.02434997187748754,
+      "rankOneSignedReal": -0.006387105000650694,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.0039438769925388304,
+      "relativeSignedModulus": 0.007726389135647751,
+      "relativeSignedReal": -0.006644014098658918,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 4.741967605535855e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 3.6638286989005808e-09,
+      "sourceScaledFiniteBoxRealEstimate": -3.1505699626564095e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 256,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 16384,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.11149585030813,
+          "oddCandidatePopulation": "1298529345903418165377276917856339875664843528866177576638776533683400785551526076840939065671182033594277137884",
+          "stoppedSamplingSuccessRateEstimate": 0.008767690714532275,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 14486
+        },
+        {
+          "acceptedPrimeCount": 128,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 251.96061497122975,
+          "oddCandidatePopulation": "3529768724690071551242625343474387688625585423352480602912316226965218466081594797901755204515738694677608554042",
+          "stoppedSamplingSuccessRateEstimate": 0.0075397767751128,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 16845
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -4.911558625215998e-09,
+        1.36744619358238e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.010563057153638781,
+        0.02758884269711839
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 75,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.031141396068140224,
+      "height": "10^1800",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -9.743961029160687,
+      "marginalPrimePhaseMagnitudes": [
+        0.04777702792120594,
+        0.06845700325172334
+      ],
+      "minimumLiteralDefectOverN": 0.0037115286790396773,
+      "movingLength": 343.7420068367309,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 5.150766399922011e-78,
+      "primeSamples": 256,
+      "rankOneRemainderL1Ratio": 0.02434997187748754,
+      "rankOneSignedReal": 0.006791424190652684,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -6.450566243563736e-06,
+      "relativeSignedModulus": 0.006728060683544062,
+      "relativeSignedReal": 0.006728057591284912,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 4.741967605535855e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 3.190424580944536e-09,
+      "sourceScaledFiniteBoxRealEstimate": 3.1904231146052634e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.3175971759365,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003963687507991306,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7822
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.3045134707197,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003912165572942958,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7925
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -1.775330957627836e-07,
+        5.2199599063641224e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.1147381405787564,
+        0.04243770310837456
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": -0.03230797435179155,
+      "height": "54",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -10.696054829191098,
+      "marginalPrimePhaseMagnitudes": [
+        0.12004280374041224,
+        0.16078186996553417
+      ],
+      "minimumLiteralDefectOverN": 0.06482734797979521,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 8.722575631449524e-05,
+      "rankOneSignedReal": -0.032395200108106044,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -0.011613759561339747,
+      "relativeSignedModulus": 0.03441401876548505,
+      "relativeSignedReal": -0.032395142790896087,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 1.3915584076100074e-06,
+      "sourceScaledFiniteBoxModulusEstimate": 4.788911715275929e-08,
+      "sourceScaledFiniteBoxRealEstimate": -4.5079733316398154e-08,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.3175971759365,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003963687507991306,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7822
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.3045134707197,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003912165572942958,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7925
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -1.1623258797215424e-07,
+        7.431095361498012e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.07911462819492397,
+        0.05441597746298228
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": -0.004483080985438285,
+      "height": "100",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -10.696054829191098,
+      "marginalPrimePhaseMagnitudes": [
+        0.08205183030397163,
+        0.12671465289673206
+      ],
+      "minimumLiteralDefectOverN": 0.06482734797979521,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 8.722575631449524e-05,
+      "rankOneSignedReal": -0.00457030674175278,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -0.010482700915989455,
+      "relativeSignedModulus": 0.011435680983547164,
+      "relativeSignedReal": -0.004570315203941197,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 1.3915584076100074e-06,
+      "sourceScaledFiniteBoxModulusEstimate": 1.5913418019400935e-08,
+      "sourceScaledFiniteBoxRealEstimate": -6.359860547472216e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.3175971759365,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003963687507991306,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7822
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.3045134707197,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003912165572942958,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 7925
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -8.339502377041148e-08,
+        1.0019599813934589e-07
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.05632745262949793,
+        0.07369728167092957
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.005791664457167779,
+      "height": "10^1800",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -10.696054829191098,
+      "marginalPrimePhaseMagnitudes": [
+        0.1404864701113665,
+        0.09637472490703793
+      ],
+      "minimumLiteralDefectOverN": 0.06482734797979521,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 1.0301509989729454e-77,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 8.722575631449524e-05,
+      "rankOneSignedReal": 0.0057044387008532834,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -0.0026243753351095334,
+      "relativeSignedModulus": 0.006275215324656855,
+      "relativeSignedReal": 0.0057000860933214825,
+      "seed": 731,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 1.3915584076100074e-06,
+      "sourceScaledFiniteBoxModulusEstimate": 8.73232864458941e-09,
+      "sourceScaledFiniteBoxRealEstimate": 7.93200272726239e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.0779431875701,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003119026058959654,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 9940
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.0493783177321,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003031191942896255,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 10228
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -4.3349285291779314e-08,
+        4.737244912505004e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.04960026098638109,
+        0.05970781979319586
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.0001884765222985118,
+      "height": "54",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -11.190843970545075,
+      "marginalPrimePhaseMagnitudes": [
+        0.07422018572582904,
+        0.018282953278422415
+      ],
+      "minimumLiteralDefectOverN": 0.06488563232319393,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 0.00012807850474211922,
+      "rankOneSignedReal": 6.039801755639256e-05,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.0020489997125004026,
+      "relativeSignedModulus": 0.0020499211038331245,
+      "relativeSignedReal": 6.145494376925987e-05,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 7.362286025910074e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 1.5092105496968765e-09,
+      "sourceScaledFiniteBoxRealEstimate": 4.524488737354589e-11,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.0779431875701,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003119026058959654,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 9940
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.0493783177321,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003031191942896255,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 10228
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -6.451881815459358e-08,
+        8.50209031201098e-08
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.08402115237222825,
+        0.10558597448872721
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.005281408539349647,
+      "height": "100",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -11.190843970545075,
+      "marginalPrimePhaseMagnitudes": [
+        0.2035191285516463,
+        0.1523163193124746
+      ],
+      "minimumLiteralDefectOverN": 0.06488563232319393,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 0.0,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 0.00012807850474211922,
+      "rankOneSignedReal": 0.005153330034607528,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": 0.04381331093961285,
+      "relativeSignedModulus": 0.044115518980679946,
+      "relativeSignedReal": 0.00515488112797314,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 7.362286025910074e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 3.247910689172306e-08,
+      "sourceScaledFiniteBoxRealEstimate": 3.795170929370426e-09,
+      "strictInteriorCompletePeriodGeometry": true
+    },
+    {
+      "N": 640,
+      "bootstrapIsCertifiedConfidenceBound": false,
+      "boundForAllRetainedLabels": false,
+      "cancellationCreditedToPopulation": 0,
+      "cartesianPairs": 1024,
+      "cartesianPairsAreIndependentObservations": false,
+      "countDiagnostics": [
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 634.0779431875701,
+          "oddCandidatePopulation": "76301455009547229949352252807260677256280828103800992767554937763077272248691890828870889323503847282506557384856042580046852887248808320048518244783468221930965909029696734625048731400510971873130365010897495196477623131592304219205643397949642253281402976084779626972027009292",
+          "stoppedSamplingSuccessRateEstimate": 0.003119026058959654,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 9940
+        },
+        {
+          "acceptedPrimeCount": 32,
+          "continuousPrimeDensityUsed": false,
+          "countCertified": false,
+          "logPrimeCountEstimate": 635.0493783177321,
+          "oddCandidatePopulation": "207408858637437621052251582878456842472096182453232734328497807647679895557490547939464494612789379519715847324500444266469810231092721026946957162596940975197184974250366519531241652129561075098665447999830565763190574152838690337935821618141664764549785008068095538872978990317",
+          "stoppedSamplingSuccessRateEstimate": 0.003031191942896255,
+          "successRateEstimator": "(accepted-1)/(trials-1)",
+          "totalOddTrials": 10228
+        }
+      ],
+      "empiricalFiniteBoxPopulationBootstrap95": [
+        -6.810784055959865e-08,
+        1.3513281315931197e-07
+      ],
+      "empiricalTwoMarginalBootstrap95": [
+        -0.09063108048387519,
+        0.15129009460682888
+      ],
+      "entirelyAbovePolynomialCofactorPayment": true,
+      "estimatedPopulationIsOnlyTheTwoFinitePrimeBoxes": true,
+      "exactDampedFloorDigits": 190,
+      "factorialKernelFrozen": false,
+      "floatingSampleUpperDiagnostic": 0.02120108957245423,
+      "height": "10^1800",
+      "independentFloorBound": false,
+      "logSourcePopulationCommonScale": -11.190843970545075,
+      "marginalPrimePhaseMagnitudes": [
+        0.3354876780387907,
+        0.10272589945417217
+      ],
+      "minimumLiteralDefectOverN": 0.06488563232319393,
+      "movingLength": 874.1743386024621,
+      "normalizedByCommonPositiveFactor": true,
+      "ownerCorrectionMaskFalseOnAllSamples": true,
+      "ownerCorrectionMaskRemoved": false,
+      "ownerHeadMaskFalseOnAllSamples": true,
+      "ownerHeadMaskRemoved": false,
+      "phaseBallRadiusUpper": 1.0301509989729454e-77,
+      "primeSamples": 64,
+      "rankOneRemainderL1Ratio": 0.00012807850474211922,
+      "rankOneSignedReal": 0.02107301106771211,
+      "rectangularOrderMaskIntroduced": false,
+      "relativeSignedImag": -0.01990478906489387,
+      "relativeSignedModulus": 0.028986262560541636,
+      "relativeSignedReal": 0.021071373697762068,
+      "seed": 732,
+      "sourceScaledFiniteBoxAbsolutePriceEstimate": 7.362286025910074e-07,
+      "sourceScaledFiniteBoxModulusEstimate": 2.1340515579283606e-08,
+      "sourceScaledFiniteBoxRealEstimate": 1.5513348012176277e-08,
+      "strictInteriorCompletePeriodGeometry": true
+    }
+  ],
+  "sampledPrimes": 640,
+  "savingCreditedAgainstTarget": 0,
+  "schemaVersion": 1,
+  "seeds": [
+    731,
+    732
+  ],
+  "sourceAtRadiusCeiling": 0.07987179703494418,
+  "sourcePins": [
+    {
+      "path": "scripts/probe_riesz_balanced_prime_sampling.py",
+      "sha256": "d19402fc2ebf20cf7b8021b35520a7cd60793e5006e1cf7877b004a031ff1e7d"
+    },
+    {
+      "path": "docs/zeta-riesz-balanced-prime-sampling.md",
+      "sha256": "b113de435ef67c83d22c7d17425949597d39d61a4a075f8fe3f99f10233dce23"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "28572c7a355f6e9213787c241f069dddc60e238554928edda3281774f4afe8ef"
+    }
+  ],
+  "target": "Re literalPairDefect <= 399/5000 + o(1), cofinally",
+  "targetValue": 0.0798,
+  "widerGatesRun": false
+}

@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Signed whole-period feedback from literal closed affine tails, with successive boundary-paid quantitative credits and canonical coefficients for every native squarefree label.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszTailFeedbackFloor.lean",
+      "sha256": "1649f7298a1ec2d8079c084cf78418e28c2f7246223f1ea1665b3d9b10b406cc",
+      "snapshot": ".lake/riesz-common-tail/snapshot-1649f7298a1ec2d8079c084cf78418e28c2f7246223f1ea1665b3d9b10b406cc.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszClosedTailFloor.lean",
+      "sha256": "cdbaa6b38b2395ed92beacedb8a9769ce8ffc4e06ae2040982daccda0319cdbe",
+      "snapshot": ".lake/riesz-common-tail/snapshot-cdbaa6b38b2395ed92beacedb8a9769ce8ffc4e06ae2040982daccda0319cdbe.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszWeightedZeroFloor.lean",
+      "sha256": "8fca168a5d433fb8196ca35789c8fc020a7c28b608ebbd68ba42e4930a09e954",
+      "snapshot": ".lake/riesz-common-tail/snapshot-8fca168a5d433fb8196ca35789c8fc020a7c28b608ebbd68ba42e4930a09e954.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszZeroResponseFloor.lean",
+      "sha256": "f8a17bfe45c26b0a781b2976d14ca86c2dc5b1aaff92f2f31d2cbbc208d8cea1",
+      "snapshot": ".lake/riesz-common-tail/snapshot-f8a17bfe45c26b0a781b2976d14ca86c2dc5b1aaff92f2f31d2cbbc208d8cea1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "sha256": "18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3",
+      "snapshot": ".lake/riesz-common-tail/snapshot-18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-common-tail/snapshot-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedNullGain.lean",
+      "sha256": "908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3",
+      "snapshot": ".lake/riesz-common-tail/snapshot-908b303b8fa97d0149ad1c631859fcc22aff808430d275327b3985ea027356c3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-common-tail/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-common-tail/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-common-tail/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_common_tail_rule.py",
+      "sha256": "67616b009d08a170a42f1bde29792478889064511bc8ae31dc1d69b676487b05",
+      "snapshot": ".lake/riesz-common-tail/snapshot-67616b009d08a170a42f1bde29792478889064511bc8ae31dc1d69b676487b05.py"
+    },
+    {
+      "path": "scripts/probe_riesz_tail_feedback.py",
+      "sha256": "0212284d508da66a96c3e39f6063bb3374318d00ba0c60df53b5d6b97e23d8d5",
+      "snapshot": ".lake/riesz-common-tail/snapshot-0212284d508da66a96c3e39f6063bb3374318d00ba0c60df53b5d6b97e23d8d5.py"
+    },
+    {
+      "path": "scripts/probe_riesz_weighted_zero_floor.py",
+      "sha256": "6366a03dafddc26c2fbba1ff627e43871c3ea105b6244a2711ee3fae6882f823",
+      "snapshot": ".lake/riesz-common-tail/snapshot-6366a03dafddc26c2fbba1ff627e43871c3ea105b6244a2711ee3fae6882f823.py"
+    },
+    {
+      "path": "scripts/probe_riesz_zero_response_floor.py",
+      "sha256": "15282e0bde2355b1b98b2c6cb5773ca6570474d06d80fe7a6b21d83f4fde37a4",
+      "snapshot": ".lake/riesz-common-tail/snapshot-15282e0bde2355b1b98b2c6cb5773ca6570474d06d80fe7a6b21d83f4fde37a4.py"
+    },
+    {
+      "path": "scripts/probe_riesz_factored_population.py",
+      "sha256": "cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf",
+      "snapshot": ".lake/riesz-common-tail/snapshot-cef1c3b01b8d868db73c183d88bf136290a2a590900c53a692af0992a9aa4acf.py"
+    },
+    {
+      "path": "scripts/probe_riesz_complex_null_profiles.py",
+      "sha256": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2",
+      "snapshot": ".lake/riesz-common-tail/snapshot-596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2.py"
+    },
+    {
+      "path": "docs/zeta-riesz-tail-feedback-floor.md",
+      "sha256": "995dcb25b3df54dfd13c037c2da864ae67c1814a628fe5580619039087534a72",
+      "snapshot": ".lake/riesz-common-tail/snapshot-995dcb25b3df54dfd13c037c2da864ae67c1814a628fe5580619039087534a72.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-common-tail/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-common-tail/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; compiled ordinary root plus explicit new module. No full-root source rebuild, wider gates or publication.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszTailFeedbackFloor.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszTailFeedbackFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-common-tail/Audit.lean",
+      "exitCode": 0,
+      "ordinaryCompiledRootImported": true,
+      "newModuleExplicitlyImported": true,
+      "rootSourceNotRebuilt": true,
+      "lintersPerNamespace": 14
+    },
+    "compiledRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "publicTheorems": 27,
+    "theoremsIncludingPrivateAndGenerated": 39,
+    "onlyStandardAxioms": true,
+    "optionalProbes": [
+      {
+        "command": "../.venv/bin/python scripts/probe_riesz_common_tail_rule.py",
+        "exitCode": 0
+      },
+      {
+        "command": "OPENBLAS_NUM_THREADS=1 ../.venv/bin/python scripts/probe_riesz_tail_feedback.py",
+        "exitCode": 0
+      },
+      {
+        "command": "OPENBLAS_NUM_THREADS=1 ../.venv/bin/python scripts/probe_riesz_tail_feedback.py --steps 128 --output .lake/riesz-common-tail/feedback128.json",
+        "exitCode": 0
+      },
+      {
+        "command": "OPENBLAS_NUM_THREADS=1 ../.venv/bin/python scripts/probe_riesz_tail_feedback.py --project-near --steps 12 --output .lake/riesz-common-tail/projected-feedback.json",
+        "exitCode": 0
+      },
+      {
+        "command": "OPENBLAS_NUM_THREADS=1 ../.venv/bin/python scripts/probe_riesz_tail_feedback.py --project-near --unpaid-column-audit --steps 12 --output .lake/riesz-common-tail/rough-owner-feedback.json",
+        "exitCode": 0
+      }
+    ],
+    "probesInOrdinaryBuildOrCI": false
+  },
+  "exactResults": {
+    "carrier": "joinedPhysical",
+    "newCarrierDefined": false,
+    "radiusCeiling": "10001/20000",
+    "heightCondition": "54 <= abs(y)",
+    "column": "Original complete affine-tail null, with the whole carrier phase retained outside the null correction",
+    "wholeFeedback": "V=sum_i w_i*adverseCorrelation_i*Z_i",
+    "signedFeedbackIdentity": "adverseCorrelation(V)=sum_i w_i*adverseCorrelation_i^2",
+    "familiarGramIdentityNotClaimedNew": true,
+    "coefficientBoundOrPrimeCountRestrictionAdded": null,
+    "canonicalRule": "Every original native squarefree label; phase-aligned singleton null; inverse complete-period square norm; zero column gets zero weight",
+    "canonicalRequiresNewLabelCoefficientFit": false,
+    "originalNonzeroBasePhaseRemoved": false,
+    "originalSupportMasksAllocationAndFactorialOrdersRetained": true,
+    "distinctAllPrimeAndPaidOwnerAllocationsRetained": true,
+    "previousNullsTangentPaidRowsAndBudgetsRetainedOnce": true,
+    "nearDebit": "Full JOINED actual one-sided crossing debit; zero and near-zero periods retained",
+    "credit": "max(sum_i w_i*g_i^2-nearDebit,0)^2/(4*farPrice)",
+    "step": "max(sum_i w_i*g_i^2-nearDebit,0)/(2*farPrice)",
+    "safeStepTheorem": "cost_adjusted_add_credit_le",
+    "successiveCreditTheorem": "cost_iterate_add_credit_le",
+    "zeroTotalTheorem": "sum_iterate_eq",
+    "literalMixingTheorem": "nativeColumns_mix",
+    "exactNearCancellation": "nearDebit_feedback_zero",
+    "usefulNativeNearProjectionAssumed": false,
+    "arithmeticWholeFloor": "eventually_joined_floor_with_feedback",
+    "canonicalArithmeticWholeFloor": "eventually_joined_floor_with_canonical_feedback",
+    "arithmeticComparisonUsesZeroHypothesis": false,
+    "oldPriceAlternativeRetained": true,
+    "zeroStepsRecoverPreviousPrice": true,
+    "newFundingErrorOrBoundaryDeletion": false,
+    "errorDecayUsesExistingExposedZeroHypotheses": true,
+    "exactRationalRegressions": [
+      "16/41 with the original zero period charged",
+      "1/2 after exact joint near-period cancellation"
+    ],
+    "cofinalSimpleContradiction": "false_of_cofinal_feedback_price",
+    "cofinalPricePremise": "feedbackPrice <= 399/5000",
+    "cofinalPricePremiseProved": false
+  },
+  "numericalRegression": {
+    "orders": [
+      32,
+      64
+    ],
+    "seeds": [
+      317,
+      919
+    ],
+    "heights": [
+      54,
+      65,
+      100
+    ],
+    "frozenInputs": [
+      {
+        "path": ".lake/riesz-factored-population/inputs/N32-seed317-M512-bins16.json",
+        "sha256": "9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888",
+        "snapshot": ".lake/riesz-common-tail/snapshot-9c58e0f55cddd7c2e917fc7b6795b1e116d8f23b3ea98b92a79ae605ad227888.json"
+      },
+      {
+        "path": ".lake/riesz-factored-population/inputs/N32-seed919-M512-bins16.json",
+        "sha256": "60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c",
+        "snapshot": ".lake/riesz-common-tail/snapshot-60000c69cba45851e1c808247f55a7461be6c9cc3d3bad5a7607f9da55d6955c.json"
+      },
+      {
+        "path": ".lake/riesz-factored-population/inputs/N64-seed317-M512-bins16.json",
+        "sha256": "00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff",
+        "snapshot": ".lake/riesz-common-tail/snapshot-00465d700a199b00c10be1a3bdc0bb6c6682ec60c5a7e088b5ff23f6633d98ff.json"
+      },
+      {
+        "path": ".lake/riesz-factored-population/inputs/N64-seed919-M512-bins16.json",
+        "sha256": "085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1",
+        "snapshot": ".lake/riesz-common-tail/snapshot-085662c306d4538b3c3de47fdbd9b1ba907a8b36f2ffa2c82e2a22cc256a50c1.json"
+      }
+    ],
+    "frozenMatrices": [
+      {
+        "path": ".lake/riesz-common-tail/N32-seed317-y54.npz",
+        "sha256": "3eeab3200df298bd4dd13c08faf865c45b6068caf87cf240a4f6187a847ecc87",
+        "snapshot": ".lake/riesz-common-tail/snapshot-3eeab3200df298bd4dd13c08faf865c45b6068caf87cf240a4f6187a847ecc87.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N32-seed317-y65.npz",
+        "sha256": "b2ce318c2ef2683e4dc7fbf6d227c100fa6c122558abd47f701d1d76c10be9c8",
+        "snapshot": ".lake/riesz-common-tail/snapshot-b2ce318c2ef2683e4dc7fbf6d227c100fa6c122558abd47f701d1d76c10be9c8.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N32-seed317-y100.npz",
+        "sha256": "aaf03fd935a45e66d7f8a3cb78c950d1715c8bf2782fc371c8bcdb3ee35d98e8",
+        "snapshot": ".lake/riesz-common-tail/snapshot-aaf03fd935a45e66d7f8a3cb78c950d1715c8bf2782fc371c8bcdb3ee35d98e8.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N32-seed919-y54.npz",
+        "sha256": "978238f784d7d69904e69a05f8e2d67957a3c671ffe08ac849ca4376cd144a1d",
+        "snapshot": ".lake/riesz-common-tail/snapshot-978238f784d7d69904e69a05f8e2d67957a3c671ffe08ac849ca4376cd144a1d.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N32-seed919-y65.npz",
+        "sha256": "8be92a74cda51ff7f96b758840d1cd59832e9969e62cb8bd55011a93b2f008fd",
+        "snapshot": ".lake/riesz-common-tail/snapshot-8be92a74cda51ff7f96b758840d1cd59832e9969e62cb8bd55011a93b2f008fd.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N32-seed919-y100.npz",
+        "sha256": "e2ab3232a827231c39892bbc90e41da418c4ca57b805b45f2054c6148223c278",
+        "snapshot": ".lake/riesz-common-tail/snapshot-e2ab3232a827231c39892bbc90e41da418c4ca57b805b45f2054c6148223c278.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed317-y54.npz",
+        "sha256": "d50d6179c9dce482edbbded4e4c070411649393b61705474dd96bb507e884c70",
+        "snapshot": ".lake/riesz-common-tail/snapshot-d50d6179c9dce482edbbded4e4c070411649393b61705474dd96bb507e884c70.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed317-y65.npz",
+        "sha256": "696f4cb365637c162b2cba0a583aefba3250e25721b83d1b8bfadb20f7d59d1e",
+        "snapshot": ".lake/riesz-common-tail/snapshot-696f4cb365637c162b2cba0a583aefba3250e25721b83d1b8bfadb20f7d59d1e.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed317-y100.npz",
+        "sha256": "39201f239115f28643a8f22d74c80de7afdae781e123b1fe038a9531d8a0328f",
+        "snapshot": ".lake/riesz-common-tail/snapshot-39201f239115f28643a8f22d74c80de7afdae781e123b1fe038a9531d8a0328f.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed919-y54.npz",
+        "sha256": "400eb7de7a509733dd1424ae97dca0a6f36d352ad6709d9f2322e285a1a94bd4",
+        "snapshot": ".lake/riesz-common-tail/snapshot-400eb7de7a509733dd1424ae97dca0a6f36d352ad6709d9f2322e285a1a94bd4.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed919-y65.npz",
+        "sha256": "cd83ce92d81501f05e98597b05b325d4b7ac3d9062d04ab95e7809ebde861842",
+        "snapshot": ".lake/riesz-common-tail/snapshot-cd83ce92d81501f05e98597b05b325d4b7ac3d9062d04ab95e7809ebde861842.npz"
+      },
+      {
+        "path": ".lake/riesz-common-tail/N64-seed919-y100.npz",
+        "sha256": "ae1945270a031e739c7a9556a38a3a36edad2f55f207085a90c100814c302ed9",
+        "snapshot": ".lake/riesz-common-tail/snapshot-ae1945270a031e739c7a9556a38a3a36edad2f55f207085a90c100814c302ed9.npz"
+      }
+    ],
+    "commonRuleCrossSeed": {
+      "allEarlierNullDirectionsAndBoundsRetained": true,
+      "strictReplayImprovements": {
+        "phaseAlignedConstant": 5,
+        "originalPhaseComplex": 0,
+        "countPhaseComplex": 0,
+        "geometryPhaseComplex": 0
+      },
+      "afterEarlierOnlyRebalanceImprovements": {
+        "phaseAlignedConstant": 5,
+        "originalPhaseComplex": 9,
+        "countPhaseComplex": 9,
+        "geometryPhaseComplex": 7
+      },
+      "uniformTransferObserved": false
+    },
+    "explicitFeedback": {
+      "newLPOrPerLabelFit": false,
+      "previousNullCoefficientsAndTiltFixed": true,
+      "twelveStepPositiveCredits": 12,
+      "twelveStepActualCostSavings": 12,
+      "twelveStepFormulaCreditFractions": [
+        0.038826591559269034,
+        0.26102886827963423
+      ],
+      "projectedTwelveStepPositiveCredits": 12,
+      "projectedTwelveStepActualCostSavings": 12,
+      "projectedFormulaCreditFractions": [
+        0.03949322574535649,
+        0.4362042995094237
+      ],
+      "projectionResidualAlwaysCharged": true,
+      "hundredTwentyEightStepPositiveCredits": 12,
+      "noGenericConvergenceToZeroPriceClaim": true
+    },
+    "previouslyPaidGeometryColumnAudit": {
+      "selector": "Only new columns: owner share <60069/100000 and second least prime >N^3",
+      "sourceBasePopulationDeleted": false,
+      "earlierNullCoefficientsAndTiltFixed": true,
+      "retainedLabels": [
+        14,
+        11,
+        20,
+        22
+      ],
+      "retainedCounts": [
+        {
+          "4": 12,
+          "5": 2
+        },
+        {
+          "4": 10,
+          "5": 1
+        },
+        {
+          "4": 15,
+          "5": 5
+        },
+        {
+          "4": 14,
+          "5": 7,
+          "6": 1
+        }
+      ],
+      "positiveFormulaCredits": 12,
+      "positiveActualSavings": 12,
+      "formulaCreditFractions": [
+        0.017630111296173583,
+        0.14689159874285174
+      ],
+      "eventualPaidTheoremsAppliedAtSampleOrders": false,
+      "completeUnpaidPopulationInventory": false,
+      "ownerShareClassifierFloating": true
+    },
+    "countsAndPeriodsJoinedBeforePricing": true,
+    "originalImportanceWeightsMasksAndBasePhasesRetained": true,
+    "probablePrimalityFloatingPhasesEdgesEarlierLPAndSVD": true,
+    "nativeCofinalPoints": false,
+    "nativeCountCropApplied": false,
+    "nativePaidOwnerBudgetApplied": false,
+    "nativePopulationCoverageCostRateOrDeficitFractionCertified": false
+  },
+  "remaining": {
+    "wholeFloor": "OPEN: prove an independent cofinal bound by 399/5000 on the actual native feedbackPrice, or equivalently a sufficient signed aggregate estimate.",
+    "numericalCreditMagnitude": "No cofinal lower bound on the native computed credit / upper bound on the native residual price yet.",
+    "exactNullCannotChangeWholeSignedTotal": true,
+    "activeHingeAndPrimePhaseCorrelations": "Retained with all counts and radial periods; their remaining source-scale total is not independently bounded.",
+    "wholeCeiling": "OPEN",
+    "zeroExclusion": false,
+    "rhContradiction": false,
+    "allPriorNoGosPreserved": true
+  },
+  "commitsOrPushesPerformed": false,
+  "readmeOrPublicEndpointsChanged": false,
+  "artifacts": [
+    {
+      "path": ".lake/riesz-common-tail/lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-common-tail/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/build.log",
+      "sha256": "cb28820aace2653e0fbbb79595cfe8943871127116dcff12ebc1ceffa04eeb32",
+      "snapshot": ".lake/riesz-common-tail/snapshot-cb28820aace2653e0fbbb79595cfe8943871127116dcff12ebc1ceffa04eeb32.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/audit.log",
+      "sha256": "d836b3443aee84ce0e10b9538dd6c9e1bfd0e40ace2417e8d112309bb9a93347",
+      "snapshot": ".lake/riesz-common-tail/snapshot-d836b3443aee84ce0e10b9538dd6c9e1bfd0e40ace2417e8d112309bb9a93347.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/Audit.lean",
+      "sha256": "538d331122f8c7d9aba2f22e16688a099af47e5103d7edbd9fdbef92323e6e89",
+      "snapshot": ".lake/riesz-common-tail/snapshot-538d331122f8c7d9aba2f22e16688a099af47e5103d7edbd9fdbef92323e6e89.lean"
+    },
+    {
+      "path": ".lake/riesz-common-tail/axioms.json",
+      "sha256": "1a9dfc73ec9713033e157b27461541064af7071504dbd34a55aeab577960b6e7",
+      "snapshot": ".lake/riesz-common-tail/snapshot-1a9dfc73ec9713033e157b27461541064af7071504dbd34a55aeab577960b6e7.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/probe.log",
+      "sha256": "33712d39d3f3dc6dcf94b2d28420027f6a60604020b11fe16971dbbf473e516a",
+      "snapshot": ".lake/riesz-common-tail/snapshot-33712d39d3f3dc6dcf94b2d28420027f6a60604020b11fe16971dbbf473e516a.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/probe.json",
+      "sha256": "e6762b7f10c1c1f85394597ba3a7c48ae68aa9ec4498cfbda6e59265587ff41b",
+      "snapshot": ".lake/riesz-common-tail/snapshot-e6762b7f10c1c1f85394597ba3a7c48ae68aa9ec4498cfbda6e59265587ff41b.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/feedback.log",
+      "sha256": "132b45279f0d8ba7b43331313ee4382f65323d89198a39190d17b5b43266f5cd",
+      "snapshot": ".lake/riesz-common-tail/snapshot-132b45279f0d8ba7b43331313ee4382f65323d89198a39190d17b5b43266f5cd.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/feedback.json",
+      "sha256": "c61c5c05f9bafa91d30e03d2f193c1e23fcbadfd46bcbd48380438e4a9dcc1b4",
+      "snapshot": ".lake/riesz-common-tail/snapshot-c61c5c05f9bafa91d30e03d2f193c1e23fcbadfd46bcbd48380438e4a9dcc1b4.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/feedback128.log",
+      "sha256": "13590edb00de352379d0260d6503e21c6a43e8dbd70427d018821ca8d21efc26",
+      "snapshot": ".lake/riesz-common-tail/snapshot-13590edb00de352379d0260d6503e21c6a43e8dbd70427d018821ca8d21efc26.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/feedback128.json",
+      "sha256": "72bbe947556adc9bf2800cb7bd4a18a1c7a5dfbef7b5977c8b8c33c7fefbe0ec",
+      "snapshot": ".lake/riesz-common-tail/snapshot-72bbe947556adc9bf2800cb7bd4a18a1c7a5dfbef7b5977c8b8c33c7fefbe0ec.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/projected-feedback.log",
+      "sha256": "0b1e74e6a73820e4f730d90cbb3fa11d3b9aec1fd8e95046baadbe33eb26b909",
+      "snapshot": ".lake/riesz-common-tail/snapshot-0b1e74e6a73820e4f730d90cbb3fa11d3b9aec1fd8e95046baadbe33eb26b909.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/projected-feedback.json",
+      "sha256": "a5107a9bb11ec2d49ab4329a98f2cbe9a5ff205e9c8b6f2405a0ecca9154d0fe",
+      "snapshot": ".lake/riesz-common-tail/snapshot-a5107a9bb11ec2d49ab4329a98f2cbe9a5ff205e9c8b6f2405a0ecca9154d0fe.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/rough-owner-feedback.log",
+      "sha256": "574a72ef8214575ead14316095d72e5c4371ddb3a14d6720637bd6ca96ce4b4f",
+      "snapshot": ".lake/riesz-common-tail/snapshot-574a72ef8214575ead14316095d72e5c4371ddb3a14d6720637bd6ca96ce4b4f.log"
+    },
+    {
+      "path": ".lake/riesz-common-tail/rough-owner-feedback.json",
+      "sha256": "808374a4a1782134a60b12dfbbd82bc337653cfe020632e2b152961b56512ac0",
+      "snapshot": ".lake/riesz-common-tail/snapshot-808374a4a1782134a60b12dfbbd82bc337653cfe020632e2b152961b56512ac0.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/report.json",
+      "sha256": "89a1bc8eefe3bab24d0ce36e1e054d4766699c487b75b7432992f35069f56a6a",
+      "snapshot": ".lake/riesz-common-tail/snapshot-89a1bc8eefe3bab24d0ce36e1e054d4766699c487b75b7432992f35069f56a6a.json"
+    },
+    {
+      "path": ".lake/riesz-common-tail/write_report.py",
+      "sha256": "05c8b28f60c50104207a090176ffb90330c49ec8e1e33ee91fc578a478a0d19d",
+      "snapshot": ".lake/riesz-common-tail/snapshot-05c8b28f60c50104207a090176ffb90330c49ec8e1e33ee91fc578a478a0d19d.py"
+    }
+  ]
+}

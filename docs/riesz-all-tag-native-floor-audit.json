@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Independently pay ALL small-prime cofactors in the native owner range; join this complete owner population and its exact prime head before whole-floor period clipping.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPeriods.lean",
+      "sha256": "d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAllTagNativeFloor.lean",
+      "sha256": "e8abcd5ac68e5ce9bdada041f4f35d2eab4b1acad31192c3b225d9006ed8d6d6",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-e8abcd5ac68e5ce9bdada041f4f35d2eab4b1acad31192c3b225d9006ed8d6d6.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "sha256": "44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedCoreWindow.lean",
+      "sha256": "985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszMaskSupport.lean",
+      "sha256": "93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-prime-head-periods.md",
+      "sha256": "0101483a019e7776113fd5fcfec1191c6910d68f5ddb4647005652975f09ed0b",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-0101483a019e7776113fd5fcfec1191c6910d68f5ddb4647005652975f09ed0b.md"
+    },
+    {
+      "path": "docs/zeta-riesz-all-tag-native-floor.md",
+      "sha256": "5d041cb0ef894ecd517b0bedafe28254b54131d9769cf7a0a0d23e7dce81d3f7",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-5d041cb0ef894ecd517b0bedafe28254b54131d9769cf7a0a0d23e7dce81d3f7.md"
+    },
+    {
+      "path": "docs/riesz-rough-prime-pair-cancellation-audit.json",
+      "sha256": "435f540f25f88a4d6b2810688251ea11aedba70649839ae41add5ba74a310888",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-435f540f25f88a4d6b2810688251ea11aedba70649839ae41add5ba74a310888.json"
+    },
+    {
+      "path": "scripts/probe_riesz_prime_head_periods.py",
+      "sha256": "d116b54f7d531721af52663b2cdb502ffdbf3983cf30b29fe06a29adca3e0cc0",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-d116b54f7d531721af52663b2cdb502ffdbf3983cf30b29fe06a29adca3e0cc0.py"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "064615779b2dacd52c5a0eec1f3f7625cbea9cd8c55ec0a6bc3e33699d399498",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-064615779b2dacd52c5a0eec1f3f7625cbea9cd8c55ec0a6bc3e33699d399498.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszPrimeHeadPeriods.olean",
+      "sha256": "39e7b042cebed646b2f4e6d077490607985eb29f21b08d9f5b7622ec92aeaf2b",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-39e7b042cebed646b2f4e6d077490607985eb29f21b08d9f5b7622ec92aeaf2b.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszAllTagNativeFloor.olean",
+      "sha256": "9e983ec14da7e962cdc290f065d9b20ce8ed58b8938ef00406d899a117cc6ef8",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-9e983ec14da7e962cdc290f065d9b20ce8ed58b8938ef00406d899a117cc6ef8.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only: strict leaf source, targeted two-leaf build, frozen compiled ordinary root plus explicit leaf. No root-source rebuild or wider gates.",
+    "strictLean": [
+      {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszPrimeHeadPeriods.lean",
+        "exitCode": 0
+      },
+      {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszAllTagNativeFloor.lean",
+        "exitCode": 0
+      }
+    ],
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszPrimeHeadPeriods RiemannGaussian.ZetaRieszAllTagNativeFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-all-tag-native-floor/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeavesImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "namespaces": 2,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "modules": [
+      {
+        "module": "RiemannGaussian.ZetaRieszPrimeHeadPeriods",
+        "publicTheorems": 8,
+        "publicDefinitions": 11,
+        "compiledDeclarations": 36,
+        "compiledTheoremsIncludingPrivateAndGenerated": 25
+      },
+      {
+        "module": "RiemannGaussian.ZetaRieszAllTagNativeFloor",
+        "publicTheorems": 23,
+        "publicDefinitions": 11,
+        "compiledDeclarations": 52,
+        "compiledTheoremsIncludingPrivateAndGenerated": 41
+      }
+    ],
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenNativeAndRoughProofSourcesPreserved": true
+  },
+  "exactResults": {
+    "radiusRange": "1/2<u<=10001/20000",
+    "fixedHeight": "abs(y)>=54",
+    "ownerLogRange": [
+      "51N/50",
+      "5N/4"
+    ],
+    "coreTotalLogRange": [
+      "39N/20 strict",
+      "203N/100 closed"
+    ],
+    "originalNativeCountCutoffAndAllPhysicalDeletionMasksProved": true,
+    "originalFullAllocationProductPhaseAndFactorialWeightsRetained": true,
+    "allSmallPrimeTagsThroughNCubedRetainedIncludingBelowNSquared": true,
+    "allTagBudgetEqualsPreviousRestrictedTagBudget": true,
+    "newlyPaidLabelsExcludeAllPreviouslyPaidSmallTagLabels": true,
+    "newlyPaidSignedRealContribution": "abs(addedPacket_j)<=2*previousSmallTagBudget_j -> 0",
+    "independentOfZeroExposureAndUnprovedArithmeticHypotheses": true,
+    "exactSmallRoughPartitionCoversEverySquarefreeCompositeCofactorInOwnerCore": true,
+    "partitionIsDisjointAndHasNoAdditionalLeastOrSmallPrimeRestriction": true,
+    "completeOwnerPopulationJointBound": "abs(fullPacket_j+nativeHead(N_j))<=combinedBudget_j -> 0",
+    "combinedBudgetUnchangedFromPreviousRoughPlusRestrictedTagSlice": true,
+    "independentComplexOrSeparatePacketHeadDecayClaimed": false,
+    "primeHeadCompleteCutoffTotalExactlyIdentified": true,
+    "primeHeadSieveSmoothAllocationAndPhaseRetained": true,
+    "oldMarkedTwoPrimeZeroTheoremNotMisapplied": true,
+    "physicalEndpointAddedOnlyByZeroNativeExtension": true,
+    "entireOwnerPaymentSpentOnceInActualNativeFloor": true,
+    "signedHeadJoinedWithWholeUnpaidMainBeforePeriodClipping": true,
+    "exactPeriodCostSaving": "same-sign whole-period overlap - negative head period mass",
+    "negativeHeadCrossingsFullyRetained": true,
+    "wholeNullAndTangentDirectionsRetained": true,
+    "sameNativeErrorRetained": true,
+    "oldFloorsRetainedAsAlternativesNotStackedCredits": true,
+    "remainingOwnerExteriorAndHeadNumericalPriceOpen": true
+  },
+  "optionalProbe": {
+    "source": {
+      "path": "scripts/probe_riesz_prime_head_periods.py",
+      "sha256": "d116b54f7d531721af52663b2cdb502ffdbf3983cf30b29fe06a29adca3e0cc0",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-d116b54f7d531721af52663b2cdb502ffdbf3983cf30b29fe06a29adca3e0cc0.py"
+    },
+    "result": {
+      "path": ".lake/riesz-prime-head-periods/probe.json",
+      "sha256": "cd83aaba9621ddae2f12f3ce0b5131ac4d82a911de48b895b3fe985fd2442a4e",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-cd83aaba9621ddae2f12f3ce0b5131ac4d82a911de48b895b3fe985fd2442a4e.json"
+    },
+    "outsideBuildsAndCI": true,
+    "toyIntegerCofactorIntervalExhausted": true,
+    "actualFiniteJointErrorPaidWithoutEventualRate": true,
+    "allCountsAndPeriodsJoined": true,
+    "floatingCases": 6,
+    "casesWithPositiveFiniteImprovement": 2,
+    "finiteSavingFractions": [
+      0.036683910234665856,
+      0.0,
+      0.0,
+      0.07457749429053862,
+      0.0,
+      0.0
+    ],
+    "nativeCoreOrPopulationSample": false,
+    "finiteOrCofinalCertificate": false
+  },
+  "openPremises": {
+    "cofinalWholePrice": "price<=399/5000 on a cofinal set of dyadic indices",
+    "noUniformNativeCreditOrCostBoundProved": true,
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false,
+    "percentageOfGlobalFloorDeficitClaimed": false
+  },
+  "localOnly": {
+    "noCommitsPushesSubagentsRootRegistrationPublicEndpointsOrWiderGates": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "frozenArtifacts": [
+    {
+      "path": ".lake/riesz-prime-head-periods/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/build.log",
+      "sha256": "faf2a62a8ec279e8c4d300f9b8d8c1b93ad5814aac122a78a1ef7f6655220af4",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-faf2a62a8ec279e8c4d300f9b8d8c1b93ad5814aac122a78a1ef7f6655220af4.log"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/audit.log",
+      "sha256": "2aca94bc747c0faed58604cadbf35c3e275b981d5f0d10cdd88a1dcee66c4960",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-2aca94bc747c0faed58604cadbf35c3e275b981d5f0d10cdd88a1dcee66c4960.log"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/Audit.lean",
+      "sha256": "1a63b9e1b096c4d6f9b394fbf2306d08bc7e87f9c2ecb27b155da42856757502",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-1a63b9e1b096c4d6f9b394fbf2306d08bc7e87f9c2ecb27b155da42856757502.lean"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/axioms.json",
+      "sha256": "f5a1d1681a00f96037b138c119cfd06177c84e93b57618d208400642dd93cbfd",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-f5a1d1681a00f96037b138c119cfd06177c84e93b57618d208400642dd93cbfd.json"
+    },
+    {
+      "path": ".lake/riesz-all-tag-native-floor/write_report.py",
+      "sha256": "ac2a610da0a412067996be74ed1ed5525cd8936e880e07679f09cd873f34fe40",
+      "snapshot": ".lake/riesz-all-tag-native-floor/snapshot-ac2a610da0a412067996be74ed1ed5525cd8936e880e07679f09cd873f34fe40.py"
+    }
+  ]
+}

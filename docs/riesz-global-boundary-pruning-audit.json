@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "Every balanced completion-mask failure is either exactly zero or belongs to one independently paid high-count population. The same whole native ledger now retains only the joined prime/semiprime/raw-high-owner/head boundary; its independent upper bound remains open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBoundaryPruning.lean",
+      "sha256": "5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_boundary_pruning.py",
+      "sha256": "f64e61794d0f7401a0ae777697513162ca0aba1db88306a62cce8ada4b8d2d37",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-f64e61794d0f7401a0ae777697513162ca0aba1db88306a62cce8ada4b8d2d37.py"
+    },
+    {
+      "path": "docs/zeta-riesz-global-boundary-pruning.md",
+      "sha256": "6e8d737a8302d12001dd3890b6b6089ed1df63ed30c8edc20238382e1fcfcc62",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-6e8d737a8302d12001dd3890b6b6089ed1df63ed30c8edc20238382e1fcfcc62.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "834b641d0678d7468b47b8ab85d70284e140b4760bb58761ea05d94ec12b4926",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-834b641d0678d7468b47b8ab85d70284e140b4760bb58761ea05d94ec12b4926.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBulkPayment.lean",
+      "sha256": "846f02cdd9c59f3c91ece585120fe633ed212f8c68e82609d28d5f4040d042d6",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-846f02cdd9c59f3c91ece585120fe633ed212f8c68e82609d28d5f4040d042d6.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszMaskSupport.lean",
+      "sha256": "93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPhysicalProductBounds.lean",
+      "sha256": "688b479e4f95ca74068a187b0861a56668c9d9e9417f00aa230fa3d29ddb8df3",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-688b479e4f95ca74068a187b0861a56668c9d9e9417f00aa230fa3d29ddb8df3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNondominantCarrier.lean",
+      "sha256": "a6a9059d2a87aeee57c4b468ed93bfeb01073d9937ec79bd5b11dec494b0adb4",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-a6a9059d2a87aeee57c4b468ed93bfeb01073d9937ec79bd5b11dec494b0adb4.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCancellingSector.lean",
+      "sha256": "cd0372b8c24d7065639d77bda418ef81233cf4344a1ba2325dec3e2f2ca1468a",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-cd0372b8c24d7065639d77bda418ef81233cf4344a1ba2325dec3e2f2ca1468a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeCountFrequency.lean",
+      "sha256": "c856a942291e0524d337b24d87b7abe13448aa363c1d614b79f663950163b190",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-c856a942291e0524d337b24d87b7abe13448aa363c1d614b79f663950163b190.lean"
+    },
+    {
+      "path": "docs/riesz-global-bulk-payment-audit.json",
+      "sha256": "01e5a5d31bd0b6239d64ef89463dfddd5ec6a25069eb84ee6240f963f278c23d",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-01e5a5d31bd0b6239d64ef89463dfddd5ec6a25069eb84ee6240f963f278c23d.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalBoundaryPruning.olean",
+      "sha256": "d26ca4b0b62ca6864c6bc3aa8dcb87dc79e538e9a4fb714a03b253a10c9c33ed",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-d26ca4b0b62ca6864c6bc3aa8dcb87dc79e538e9a4fb714a03b253a10c9c33ed.olean"
+    }
+  ],
+  "theoremLines": {
+    "completedCoefficient_zero_of_physical_failure": 54,
+    "balanced_mem_native_central": 100,
+    "rawHigh_subset_rejected": 161,
+    "low_failure_coefficient_zero": 188,
+    "eventually_balanced_failures_bound": 209,
+    "joined_sub_pruned_eq_failures": 261,
+    "eventually_joined_sub_pruned_bound": 275,
+    "nativePrunedBudget_tendsto": 289,
+    "eventually_native_pruned_bound": 299,
+    "tendsto_native_plus_pruned_boundary": 315,
+    "eventually_native_pruned_floor": 327
+  },
+  "validation": {
+    "scope": "Strict leaf and targeted build; frozen compiled ordinary root plus explicit leaf, all14 namespace linters and transitive standard-axiom checks of every compiled declaration.",
+    "strictLeanExitCode": 0,
+    "targetedBuildExitCode": 0,
+    "auditExitCode": 0,
+    "lintersPerNamespace": 14,
+    "publicTheorems": 11,
+    "compiledDeclarations": 28,
+    "compiledTheorems": 23,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "rootSourceNotRebuiltOrEditedByThisSlice": true,
+    "frozenCompiledOrdinaryRootPreserved": true,
+    "allPreexistingRieszSourceAndProbeHashesPreserved": true,
+    "unrelatedFilesUnchanged": 271,
+    "concurrentChangesRetained": [
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "c6cc68c02c40c3feff75f61a39c760ce36a0de07f24973994aaea3e0d5c48ac4",
+        "now": "af057d2cb438f69e5a1fd1f47647f49f915a7a9273d84d2c312b7d4d127dc1e0"
+      }
+    ]
+  },
+  "exactResults": {
+    "radius": "1/2 < u <= 10001/20000",
+    "centralWindow": "1971N/1000 < log n <= 2029N/1000",
+    "nativeIntegerFloorLengthAndPhysicalCutoffRetained": true,
+    "allFactorialOrdersAndActualPhaseRetained": true,
+    "physicalFailureAtCountAtLeastThree": "Exactly zero once L>=5N/4; every central label is below X^2.",
+    "lowCountBalancedWithPhysicalPrimes": "Exact native central membership for j>=32 and L>=5N/4; every original mask retained.",
+    "balancedLowCountRejectedLabels": "Exactly zero, without estimating phase.",
+    "entireBalancedCompletionFailureBudget": "(203/50)*radiusCeiling*(N+1)*exp(-N/10000000)",
+    "budgetUniformInEveryHeight": true,
+    "eventualStartUnevaluated": true,
+    "existingFullPopulationCountTheoremSpentOnActualCompletionTail": true,
+    "noNativePaidDifferenceDoubleSpentAsCredit": true,
+    "prunedBoundary": "P1 + P2 + all-count rawHigh + SAME full signed head",
+    "rawHighPopulation": "Every SF central count>=3 label with ownerLog>=51N/50; no physical/count/deletion/nondominant/allocation restriction.",
+    "rawHighCoefficient": "Original unallocated completed coefficient; not paid by the old residual owner theorem.",
+    "exactDifference": "joinedBoundary-prunedBoundary=completionTerm(balancedFailures)",
+    "nativeBound": "abs(nativeScaledCore.re+prunedBoundary.re)<=nativeBoundaryBudget+countAllowance -> 0",
+    "remainingIndependentFloorTarget": "prunedBoundary.re <= 399/5000 + o(1) cofinally",
+    "restoredOrdinaryPrimeUnpaid": true,
+    "semiprimeAndRawHighOwnerUnpaid": true,
+    "sameFullHeadUnpaidSeparately": true,
+    "noCofactorCompletionOrIndependentPhaseReplacement": true,
+    "wholeFloor": "OPEN",
+    "ceiling42Over25": "OPEN",
+    "restrictedContradiction": "OPEN",
+    "RH": "OPEN"
+  },
+  "optionalProbe": {
+    "report": {
+      "path": ".lake/riesz-global-boundary-pruning/probe.json",
+      "sha256": "4534c02c6a050865e7c5b2d73f0e4852db3caf75dcb1662a0208b14d938f9c80",
+      "snapshot": ".lake/riesz-global-boundary-pruning-audit/snapshot-4534c02c6a050865e7c5b2d73f0e4852db3caf75dcb1662a0208b14d938f9c80.json"
+    },
+    "actualNativeOrder": 256,
+    "nativeExactRationalFloorSquaredPhysicalThreshold": true,
+    "exactIntegerDivisorCutoffAndSubsetSigns": true,
+    "zeroLogProfileCountClasses": 10,
+    "counts": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "semiprimeControlResponse": "log q, nonzero",
+    "restoredOrdinaryPrimeControlResponse": "log X, nonzero",
+    "allControlsInCentralWindow": true,
+    "sympyPrimesAreExploratoryNotLeanCertificates": true,
+    "noFiniteOrderCountBudgetOrNativeMembershipInferred": true,
+    "noFloorOrPercentGapClaim": true,
+    "outsideBuildAndCI": true
+  },
+  "regime": {
+    "localOnly": true,
+    "noRootRegistration": true,
+    "noSubagents": true,
+    "noCommitOrPush": true,
+    "noWiderChecks": true,
+    "noPublicEndpointChangesByThisSlice": true
+  }
+}

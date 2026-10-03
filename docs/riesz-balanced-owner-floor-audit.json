@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Independently pay ALL native high-owner labels jointly with the signed prime head; spend the disjoint geometric owner payment and exact zero labels before clipping the remaining balanced/head aggregate.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "sha256": "ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-ae539d78a8ebbe9cf9fe65d15a460d619d8055a3a697340831096930148078e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAllTagNativeFloor.lean",
+      "sha256": "e8abcd5ac68e5ce9bdada041f4f35d2eab4b1acad31192c3b225d9006ed8d6d6",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-e8abcd5ac68e5ce9bdada041f4f35d2eab4b1acad31192c3b225d9006ed8d6d6.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeHeadPeriods.lean",
+      "sha256": "d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-d5e24f6ec52d426d7eb9d1960ef36a4454a95c2ee0ecd4d287e5361acd6d933a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointOwnerEnvelope.lean",
+      "sha256": "21a1ae1e674dea9d6e7881838cfe12ccbc0556d4335b30e598e130348c7b007d",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-21a1ae1e674dea9d6e7881838cfe12ccbc0556d4335b30e598e130348c7b007d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "sha256": "44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointCountFloor.lean",
+      "sha256": "d43b78f39e73ba3bcc496859148862abc5060c656ae3c143876375c75f660ba1",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-d43b78f39e73ba3bcc496859148862abc5060c656ae3c143876375c75f660ba1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean",
+      "sha256": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszMaskSupport.lean",
+      "sha256": "93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean",
+      "sha256": "1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-1cfd743391130f72e31f9e70b4e8f45e3a40192eabdf0183753e9fec91cac38a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-balanced-owner-floor.md",
+      "sha256": "88698bbabda265c398a86752e38f715f59be9a70e06a60bdd5b29def22c5d51d",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-88698bbabda265c398a86752e38f715f59be9a70e06a60bdd5b29def22c5d51d.md"
+    },
+    {
+      "path": "docs/riesz-all-tag-native-floor-audit.json",
+      "sha256": "d7d0730db609cdd60c5260492039ecf1caf64b5bfb8453eff3828dad2233e67b",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-d7d0730db609cdd60c5260492039ecf1caf64b5bfb8453eff3828dad2233e67b.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d1273f2e3d5a8158cab3555e5afe24931dff0565322a0e33acdd93eb83a4b32b",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-d1273f2e3d5a8158cab3555e5afe24931dff0565322a0e33acdd93eb83a4b32b.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszBalancedOwnerFloor.olean",
+      "sha256": "49a64d80d664e32c67b69681301dc10fdeb138b005f4602208383c0eaf146cf2",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-49a64d80d664e32c67b69681301dc10fdeb138b005f4602208383c0eaf146cf2.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only: strict leaf source, targeted leaf build, frozen compiled ordinary root plus explicit leaf. No root-source rebuild or wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszBalancedOwnerFloor.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszBalancedOwnerFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-balanced-owner-floor/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "frozenCompiledRootMatchesPrevious": true,
+      "rootSourceNotRebuilt": true,
+      "namespaces": 1,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "publicTheorems": 16,
+    "publicDefinitions": 11,
+    "compiledDeclarations": 49,
+    "compiledTheoremsIncludingPrivateAndGenerated": 38,
+    "everyCompiledDeclarationAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "previousFrozenProofSourcesPreserved": true
+  },
+  "exactResults": {
+    "radiusRange": "1/2<u<=10001/20000",
+    "fixedHeight": "abs(y)>=54",
+    "unchangedCoreTotalLogRange": [
+      "39N/20 strict",
+      "203N/100 closed"
+    ],
+    "unchangedOriginalNativeCountCropAndPhysicalMasks": true,
+    "unchangedFullAllocationFactorialKernelAndPhase": true,
+    "geometricPaymentOnlyOnLabelsOutsidePreviousFullOwnerPayment": true,
+    "additionalBudget": "6*divisorSquareDirichletMass(1+1/262144)*(N+1)*exp(-N/25000)",
+    "arbitraryNativeMasksRetainedInLiteralPopulationInput": true,
+    "anyOtherHighOwnerResidualCoefficientExactlyZero": true,
+    "everyNativeHighOwnerLabelIncluded": "log(largestPrime n)>=51N/50",
+    "independentSignedJointBound": "abs(highPacket_j+nativeHead(N_j))<=previousCombinedBudget_j+literalErrorBudget(N_j) -> 0",
+    "independentOfZeroExposureAndUnprovedArithmeticHypotheses": true,
+    "highPopulationAndHeadSeparatelySmallClaimed": false,
+    "independentJointComplexNormDecayClaimed": false,
+    "exactRemainingPopulation": "native squarefree labels with log(largestPrime n)<51N/50",
+    "strictRemainingOwnerShare": "log(largestPrime n)/log n < 34/65",
+    "remainingBalancedSumMinusHeadSourceEquivalentToWholeNativeRealCarrier": true,
+    "noRemainingCountOrLeastPrimeSubclassDeletion": true,
+    "wholeHighOwnerPaymentActuallySpentBeforePeriodClipping": true,
+    "zeroResponseLabelsRemovedByExactTotalsNotAbsoluteVariation": true,
+    "wholeFreeNullAndTangentColumnsRetained": true,
+    "sameNativeErrorRetained": true,
+    "signedHeadJoinedWithRemainingMainBeforeClipping": true,
+    "oldWholePricesPreservedAsAlternativesNotOverlappingCredits": true,
+    "monotonicityOfClippedCostsUnderDeletionNotAssumed": true,
+    "noPercentageOfWholeFloorDeficitClaimed": true
+  },
+  "openPremises": {
+    "remainingSignedTarget": "balanced-owner real remainder minus the exact signed prime correction",
+    "cofinalWholePrice": "price<=399/5000 on a cofinal set of dyadic indices",
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "restrictedContradictionProved": false,
+    "zeroExclusionProved": false,
+    "rhProved": false,
+    "conditionalEndpointNotCountedAsPremiseProof": true
+  },
+  "publication": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "publicEndpointsUnchanged": true,
+    "noReadmeExplorerChanges": true,
+    "concurrentSemiprimeWorkPreserved": true
+  },
+  "provenance": [
+    {
+      "path": ".lake/riesz-balanced-owner-floor/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-owner-floor/build.log",
+      "sha256": "aa411b5c05e6aa08a914f0860daf8129ba93e574c8fbce6f9b30b05884184c31",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-aa411b5c05e6aa08a914f0860daf8129ba93e574c8fbce6f9b30b05884184c31.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-owner-floor/audit.log",
+      "sha256": "06fda72d10d1a6e1ea271908a544895c1b8b53822b590acc0a041a9141f1dc8f",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-06fda72d10d1a6e1ea271908a544895c1b8b53822b590acc0a041a9141f1dc8f.log"
+    },
+    {
+      "path": ".lake/riesz-balanced-owner-floor/Audit.lean",
+      "sha256": "076e1932410704da59b334bb5f5fe6b3a46648ed1c0693882e4b27ffad44b9fa",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-076e1932410704da59b334bb5f5fe6b3a46648ed1c0693882e4b27ffad44b9fa.lean"
+    },
+    {
+      "path": ".lake/riesz-balanced-owner-floor/axioms.json",
+      "sha256": "2164c076eb80a2c983e5e4cb5a3240a2a6b28f0cbe0d468f901f8ff6af58d4a7",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-2164c076eb80a2c983e5e4cb5a3240a2a6b28f0cbe0d468f901f8ff6af58d4a7.json"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/riesz-balanced-owner-floor/write_report.py",
+      "sha256": "aeb3a2dff9802b2e2865034a2423ed663cfb133c2db7d5966ee21d3d5a350b83",
+      "snapshot": ".lake/riesz-balanced-owner-floor/snapshot-aeb3a2dff9802b2e2865034a2423ed663cfb133c2db7d5966ee21d3d5a350b83.py"
+    }
+  ]
+}

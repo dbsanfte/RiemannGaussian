@@ -1616,6 +1616,1614 @@ rerun the exhaustive certificate merely for this batch. No subagents are
 authorized. After this publication, resume local floor work unless the user
 provides a further commit instruction.
 
+That publication is COMPLETE at
+`194a361762f404a8f4473298b25d96fbae0bb56e`: exact-SHA workflow
+37057705249 and Pages passed, as did deployed desktop/mobile README,
+zero-free, numerical-certificate and RH-explorer checks. Subsequent work
+is LOCAL ONLY until a new publication request; no subagents or wider gates.
+
+### Quantitative joined-null crossing payment (local, 2026-10-02)
+
+`ZetaRieszQuantitativeNullStep` gives an explicit guaranteed reduction of
+the SAME whole native cost, with every count/period assembled first. Let
+D be its signed adverse correlation, Z the exact zero-block debit, and
+H the quadratic crossing price. The mathematical step is
+`max(D-Z,0)/(2H)` and its guaranteed saving is `max(D-Z,0)^2/(4H)`;
+both are zero at H=0. Every crossing is paid; count three is retained.
+The phase-aligned higher-count direction also vanishes exactly on every
+coherent prefix and on the complete cutoff-zero period for positive y>=54.
+Do not silently extend that height statement to negative y.
+
+The finite prime probe found that almost-zero baseline blocks can make
+H huge. The new `crossingCost_le_near_far` charges those blocks linearly
+with their actual signs, and uses the quadratic price only outside the
+chosen nonnegative margin threshold. `native_floor_with_threshold_gain`
+and its best-orientation version prove a sharper floor for the original
+`joinedPhysical`, with EXACTLY the former nativeError. Threshold zero
+recovers the original guarantee. Savings are alternatives capped by the
+same nativeCost; take a maximum, never sum credits against that price.
+
+The optional `scripts/probe_riesz_quantitative_null_step.py` tests the
+inequalities by exact rational replay and enumerates complete constructed
+prime universes on request. Their masks/allocation/phases are retained,
+but they are NOT the whole native population or a density sample. The
+probable primes, floating phase and large-cutoff log interpolation are
+not certified. Several cases have ZERO gain. A finite gain fraction is
+not a cofinal cost estimate or a proved native source-scale saving.
+The early probe orders retain the original ceiling K, not the eventual
+K/864 crop; they are not current cropped-native population measurements.
+The new exact boundary test proves that D<=Z forbids improvement along
+every positive step of ONE direction; both orientations forbid every
+real step on that line. This does not forbid joint directions, whose
+zero-face debits must be recomputed after adding them, or the floor.
+
+The quantitative magnitude of the native signed correlation and the
+cofinal bound `nativeCost - paidGain <= 399/5000` remain OPEN. No new
+floor/ceiling, zero exclusion or RH claim. Continue focused Lean/namespace
+lint/transitive-axiom checks locally, preserving every older audit and the
+public default endpoint. See `docs/zeta-riesz-quantitative-null-step.md`.
+
+### Joined six-direction native credit (local, 2026-10-02)
+
+`ZetaRieszJointNullCredit` now joins the four complex log/log-square null
+directions and both cubic directions BEFORE measuring the same near/far
+crossing debit. The original imaginary tilt is fixed. Count three remains
+in the baseline and log/log-square directions, and is never corrected by
+the cube. Every new moving vector is an exact finite null, including all
+endpoints; no coefficient-size analytic error is introduced.
+`native_floor_with_joint_gain` applies to the same joinedPhysical with the
+same nativeError. `nativeJointGain_cubic` recovers the previous cubic gain,
+and `nativeJointGain_le_cost` forbids spending any credit twice.
+
+The compiled `nearDebit_overlap_eq` identifies the exact cancellation:
+Z(V)+Z(W)-Z(V+W) = sum_near (|V|+|W|-|V+W|)/2 >=0.
+All labels/counts/periods are assembled BEFORE these absolute values.
+The signed adverse correlation remains exactly additive. Thus a joint
+direction can cancel the very zero-face debit that forbids either line
+separately. This is not omission of any original zero/near block.
+
+The optional quantitative-null probe now holds the tilt fixed and tests
+all six corrections jointly. All twelve constructed-universe cases have
+positive joint guarantees, including four with no saving on the previous
+phase-aligned cubic line. The floating guarantee fraction is roughly
+0.6%-23.8% of those FINITE rescaled costs; it is NOT a native budget or
+source-scale exponential saving. Probable primes, log interpolation,
+early original count ceiling K and incomplete native-population coverage
+remain explicit. Do not extrapolate these percentages to cofinal orders.
+
+The exact remaining target is nativeCost-nativeJointGain<=399/5000
+cofinally. `false_of_cofinal_joint_gain` is a conditional endpoint only.
+No independent numerical floor, ceiling, zero exclusion or RH proof.
+Continue local scoped Lean/namespace-lint/transitive-standard-axiom work
+without commits/subagents/wider gates or public endpoint changes. See
+`docs/zeta-riesz-joint-null-credit.md` and its audit.
+
+The subsequent local exact-payment pass proves
+`native_floor_with_joint_credit`, using max(signed adverse correlation minus
+FULL actual crossing cost,0), with the SAME nativeError. It recovers the
+old exact cubic credit and dominates the threshold guarantee at its SAME
+rescaled step. These are alternative credits funded by one baseline cost;
+never add them. The independent cofinal nativeCost-nativeJointCredit bound
+399/5000 is still OPEN. No new imaginary tilt, population or error appears.
+
+The optional --cost-audit solves/replays rational primal/dual bounds for the
+FLOATING joined matrices. Nine order256/640/1536, seed317, height54/65/100
+matrices have exact dual directional correlations zero, covering EVERY
+real six-vector, with relative primal-dual gap at most8.9e-9. Their finite
+remaining fractions are about52.1%-88.6%; at1536 they are53.0%-67.2%.
+Two of three fractions rise from640 to1536. These are NOT native cost
+bounds or an asymptotic no-go: primes/logs/phases/coverage are uncertified,
+the inventories change and the early original ceiling K is retained.
+Do not extrapolate the table, equate a rounded matrix to native arithmetic,
+or keep coefficient-hunting as though it supplied the missing rate.
+The actual masked signed native aggregate still needs an independent
+quantitative bound. All previous positive results/no-gos remain unchanged.
+
+### Population-density and phase controls (local, 2026-10-02)
+
+The optional `probe_riesz_closed_inventory.py` enumerates every subset of
+ONE sixteen-prime union, including the mixed products omitted by the older
+two-pool probes. At N=256/640, seed317 it retains891/1313 labels, with
+879/1301 mixed products and largest shares up to0.564. Joining counts saves
+about35%-55% of their split price, but adding mixed products INCREASES the
+pure-pool subfamily price in all six height comparisons on that SAME
+inventory/scale. These are sparse floating/probable-prime populations,
+not density samples, native costs or asymptotic bounds. Pool closure does
+not supply free favorable credit.
+
+The optional `probe_riesz_factored_population.py` implements Kalai's
+inclusive-chain rejection sampler. Its ideal law is uniform in each
+computed integer bin, conditional on exact primality/randomness; exact
+integer bin-size weights estimate the finite literal population density.
+All original allocation/count/owner/physical/radial masks and the complex
+phase are retained. Nonsquarefree draws are sampled before the original
+mask. Finite N=32/64,K=16 inputs are NOT cofinal native dyadic points and
+do not use the eventual crop or source-limit hypotheses.
+
+Four512-draw batches retain126-170 labels, counts3-10 and owner shares
+roughly0.224-0.641. Signed sampling errors are comparable to their means.
+The sampled clipped costs are upward biased in the ideal model, not
+deterministic bounds. Exact rational chain regressions check528 labels
+at ceilings1-32 and every subinterval acceptance law; these are PYTHON
+regressions, not Lean proofs or large-prime certificates.
+
+Both half-sample pooling and independent random-phase controls are now
+required diagnostics before promoting a percentage to evidence of special
+arithmetic correlation. All twelve observed count-saving fractions lie
+within their respective31-control ranges. The four batches use124 random
+phase assignments shared across heights, giving372 comparisons, not372
+independent native populations. The controls are NOT proof carriers.
+Small sample costs and aggregation savings do not establish the independent
+native floor or refute all arithmetic cancellation at later orders.
+
+Accepted factorizations are cached in .lake with product/interval checks,
+so repeated controls avoid regenerating samples. Keep both probes outside
+ordinary builds/CI. Large primality, floating phases/weights/bin endpoints,
+allocation clipping, cutoff interpolation and sampling error remain
+uncertified. This pass adds NO Lean declaration or native credit. The
+cofinal nativeCost-nativeJointCredit<=399/5000 target is still OPEN.
+Continue locally without commits/subagents/wider gates. See
+`docs/zeta-riesz-population-cancellation-probe.md` and its audit.
+
+### Count-three tangent cubic credit and boundary gate (local, 2026-10-02)
+
+`ZetaRieszTangentCubicCredit` retains the WHOLE cubic defect rather than
+discarding count three. `cubicMoment_eq_three` identifies its exact complex
+moment with the original three-prime population; `thirdMoment_three_primes`
+gives -6log(p)log(q)log(r). The direction perpendicular to that whole moment
+has exactly zero total, including all early/late integer cutoffs. It does
+NOT vanish label by label, and no adverse-subset imaginary null is assumed.
+
+`native_floor_with_tangent_credit` improves the SAME joinedPhysical cost
+comparison with EXACTLY the old nativeError. All masks and phases remain.
+The credit is the MAXIMUM of the old six-direction credit and the new
+actual saving against ONE baseline price; never add them. Zero new
+coefficient recovers the old credit. The independent cofinal bound
+nativeCost-nativeTangentCredit<=399/5000 remains OPEN. This conditional
+endpoint is not a numerical floor, ceiling or zero exclusion.
+
+The new `no_free_unit_cutoff_direction` isolates a two-moment restriction:
+when the whole profile moment and common zeroth weight moment are
+noncollinear and the first profile difference is nonzero, no nonzero
+single profile direction can BOTH have zero whole defect and vanish at
+the first cutoff. Pay that boundary or cancel it jointly. The determinant
+condition is explicit; it is NOT asserted cofinally on native arithmetic
+and does not forbid other joined directions.
+
+The optional tangent probe checks 500 rational cubic differences and500
+exact perpendicular-moment regressions. At seed317, N256/640, heights
+54/65/100 the seventh direction gives only about0.0018%-0.0607% additional
+saving of the REMAINING FINITE rescaled price. Exact rational primal/dual
+replay is only for the floating matrices, not prime arithmetic. All six
+duals have exact zero correlations and retain at least99939/100000 of
+the former six-direction finite price for EVERY real coefficient vector;
+the relative gap is below1.94e-8. This is not an asymptotic/native no-go.
+Sparse
+two-pool coverage, probable primality, phases/logs, early original count
+ceiling and common rescaling remain uncertified. The preliminary1536
+seven-direction solve failed numerically; draw no arithmetic verdict
+from that failure. Keep the earlier population/phase-control audit and
+all prior no-gos. These tests do NOT justify further coefficient hunting
+as though it supplied the missing global rate.
+
+Work locally without commits/subagents/wider gates or public endpoint
+changes. See docs/zeta-riesz-tangent-cubic-credit.md and its source-hashed
+audit. The actual whole signed correlation bound remains the goal.
+
+### Cubic canonical-crossing payment (local, 2026-10-02)
+
+`ZetaRieszCubicSieveCost` uses the exact forbidden-prime factors at
+sigma=23/32. For primes through N^3 their product is at most
+exp((64/9)*N^(27/32)); after the unchanged all-count outer mass and source
+normalization it is eventually absorbed into exp(-N/250000).
+`ZetaRieszCubicCutoffRows` proves an INDEPENDENT bound on the SAME original
+signed complete-row packet through secondPrime(B)<=N^3, across all counts
+and radial shells. No zero, prime-density approximation, Type-II estimate
+or whole-floor premise enters. Its full literal phase, moving length,
+factorial allocation, roughness, count, physical/core masks, overflow and
+rounded endpoint remain. The signed density main is cancelled BEFORE its
+outer error costs are normed.
+
+The quadratic N^2 packet was ALREADY paid by PolynomialCutoffRows. Do not
+count its rediscovery as progress. `extraRows` is the exact set difference,
+identified by N^2<secondPrime(B)<=N^3; `extraPacket_eq_sdiff` retains its
+original integer/divisor incidence formula. Its source-normalized signed
+sum tends to zero. Incidence injectivity and non-overlap with old owner
+rows and cancelled interior/crossing/affine blocks are checked. REPLACE
+the quadratic credit; never add both complete packets. The exact affine
+rest ledger and the whole-carrier comparison retain earlier shared costs
+once. Under the original stated crossing predicates, every crossing in
+the cubic cap is paid or in a restored zero block. Unpaid crossings in
+that branch have secondPrime>N^3; this is not a claim about every remaining
+label or every Riesz-hinge configuration.
+
+The optional cubic probe constructs original-core five- and seven-prime
+labels beyond N^2 at N640/1536, retaining the actual phase/allocation and
+nonzero hinge. Those early native count crops are empty. The length bound
+fails at640 and holds at1536; the eventual decay theorem certifies neither
+finite order. The crude sufficient scalar absorption diagnostic is around
+10^40, NOT a certified packet starting index or deficit percentage.
+Record log magnitudes instead of treating floating underflow as zero.
+Keep the probe outside builds/CI. The independent WHOLE floor-399/5000,
+ceiling, zero exclusion and native cost-minus-credit bound remain OPEN.
+All earlier no-gos remain. See docs/zeta-riesz-cubic-cutoff-payment.md and
+docs/riesz-cubic-cutoff-payment-audit.json. Continue local scoped Lean,
+root-import lint/axiom validation without commits/subagents/wider gates
+or public endpoint/README changes.
+
+### Paid original incidences in the native whole-floor price (local, 2026-10-03)
+
+`ZetaRieszPaidIncidenceFloor` puts the already-paid cubic signed rows into
+the CURRENT native whole-floor inequality, before complete-period pricing.
+`pairHinge_eq_profile_diff` identifies the literal hinge with the same
+corrected cutoff profile at p*b and b. The checked incidence map is
+injective, joins original products/divisors, and retains phase, moving
+length, roughness, squarefree, physical and allocation masks.
+
+The whole native allocation uses ALL intermediate primes; the paid row
+uses the canonical OWNER allocation. Keep them distinct: this is a signed
+correction, not identical atom deletion. The original paid packet is
+restricted to the current K/864 count crop only after an independent
+factor-two partial coefficient bound pays the difference using
+NearCriticalCountPayment. The partial-hinge majorant is reused from
+UnsignedDivisorError; do not claim its wrapper as new mathematics.
+`tendsto_nativePaidPacket` proves REAL signed source-scale decay, not
+complex norm decay or small absolute cutoff variation.
+
+`nativePrunedCost` prices the joined native increment MINUS the paid
+increment, retaining the imaginary tilt and joined null/tangent terms.
+`eventually_joined_floor_pruned` funds its signed total by nativePaidBudget
+and reuses nativeError. The added increment vanishes exactly before the
+hinge, so it adds no early-cutoff debit. Subtraction may increase the
+price: `nativePrunedPrice` takes the MINIMUM of the previous credited
+price and the new price plus its payment. Charge that payment once; never
+add the alternatives as separate credits. The resulting whole-carrier
+floor is checked and cannot be weaker than the previous one.
+
+The explicit cofinal numerical premise nativePrunedPrice<=399/5000 is
+still OPEN. Its conditional contradiction endpoint does not prove a
+floor, ceiling or zero exclusion. The optional original-incidence probe
+has zero FUNDED gain in all six cases after paying the actual signed
+total, despite some raw price reductions. At N640/1536 the native count
+crop is empty, so no native population coverage, deficit percentage or
+cofinal saving can be inferred. Keep logs of source amplitudes and retain
+this negative diagnostic. The probe stays outside builds/CI.
+See docs/zeta-riesz-paid-incidence-floor.md and
+docs/riesz-paid-incidence-floor-audit.json. Keep all earlier results/no-gos
+and public endpoints; continue locally without commits/subagents/wider
+gates, using focused Lean, root-import namespace lint and axiom checks.
+
+### Exact zero-response direction in the whole floor (local, 2026-10-03)
+
+`ZetaRieszZeroResponseFloor` applies the existing all-rank spectrum-gap
+cancellation to whole labels BEFORE native complete-period pricing.
+`IntegerGap X n R` is the finite integer test R|n, count(R)>=2 and
+forall d|n/R, X<=d OR d*R<=X. Under squarefreeness it proves
+riesz(log X,n)=0. This reuses SmallCofactorCancellation; do not present
+the underlying gap identity as a new discovery. The native zeroLabels
+use the canonical two least primes, with no polynomial prime-size cap,
+and retain the current count crop, core, phase, factorial and physical
+masks. physicalCutoff agrees EXACTLY with the moving Riesz length.
+
+The COMPLETE complex zero response and sum_zeroIncrement are checked.
+An arbitrary moving signed coefficient r may multiply this direction
+without a funding price or growth condition. Orders zero/one remain;
+the added base increment vanishes before the hinge. Keep the earlier
+null/tangent directions joined with it. nativeStep and zeroIncrement
+use the ALL-prime allocation; nativePaidIncrement still has its distinct
+OWNER allocation. The independently paid rows, native count/endpoint
+budget and nativeError are charged once and unchanged.
+
+The checked whole-carrier floor uses zeroClearedPrice=min(previous
+nativePrunedPrice, blockCost(nativeStep-nativePaidIncrement-r*zeroIncrement)
++nativePaidBudget). Coefficient0 recovers the previous price exactly.
+The saving equals HALF the difference of the joined period variations;
+no prime/divisor/count is norm-priced before its group. The cofinal
+numerical price<=399/5000 is still OPEN; its conditional endpoint is not
+a zero exclusion or proved whole floor/ceiling.
+
+The probe supplies an important refinement: on four frozen finite
+integer samples, raw deletion improves 11/12 comparisons, but FORCED
+deletion after the earlier complex/cubic credits worsens ALL12. Do not
+count those raw reductions twice. Jointly rebalancing the zero direction
+with the old corrections gives further FLOATING feasible gains in all12,
+with the old tilt fixed. These are small nonnative orders, sampling
+importance weights, probable primes, floating phases/interpolation/LP;
+no cofinal rate, native credit magnitude or deficit fraction follows.
+The gap classification uses exact integers, never a small floating
+Riesz value. Keep both negative controls and the optional probe outside
+builds/CI. See docs/zeta-riesz-zero-response-floor.md and
+docs/riesz-zero-response-floor-audit.json. Continue locally without
+commits/subagents/wider gates, preserve all no-gos and public endpoints,
+and use scoped Lean, root-import lint and transitive axiom checks.
+
+### Weighted complex zeros and affine tails in the whole floor (local, 2026-10-03)
+
+`ZetaRieszWeightedZeroFloor` retains both parts of the exact complex zero
+response. Arbitrary moving LABEL-dependent complex coefficients may act
+on the zero correction, with no boundedness/growth hypothesis or funding
+cost. The original sourceWeight, masks, factorial orders and nonzero
+carrier phase are unchanged. The old real/tilted direction is an exact
+special case. The full previous price remains an alternative, and zero
+coefficients recover it. Its generic after-null API requires a PROVED
+zero total on the original native cutoff axis; never hide this premise.
+
+`ZetaRieszClosedTailFloor` extends the same principle INSIDE nonzero
+labels. Put R=the two least primes of the WHOLE label and B=n/R. Select
+complete divisor blocks (d,e) with d|B, e|R and physicalCutoff<=d. The
+checked coprime incidence injection gives each original divisor once;
+tailDivisors is a literal subset of n.divisors. On every such block the
+original corrected profile is affine in log e, so the constant and first
+Möbius moments cancel exactly. This reuses the affine moment identity;
+do not present that identity itself as newly discovered. The application
+to the actual native whole-period price, including nonzero-response
+labels, is new. No polynomial prime cap, owner/cofactor completion, mask
+deletion, factorial lower-order restriction or parity truncation appears.
+The complete complex pairing is zero before taking real parts/norms.
+tailIncrement has exact zero total and no new early-cutoff debit.
+
+The whole floor uses tailPrice=min(weightedPrice,
+blockCost(nativeStep-nativePaidIncrement-weightedIncrement-tailIncrement)
++nativePaidBudget). Every count/period is joined before pricing. The
+distinct all-prime and owner allocations, all previous null/tangent
+directions, count/endpoint payment, signed-row budget and nativeError
+are retained and charged ONCE. This is not an additive second credit.
+The cofinal native price<=399/5000 remains OPEN. The simple conditional
+contradiction endpoint is not a zero exclusion. The ceiling is also open.
+
+The optional weighted-zero probe reuses frozen order32/64 samples. All12
+prices improve after freeing the complex coefficient, all12 improve
+again with label-dependent coefficients, and all12 improve again when
+closed affine-tail blocks inside nonzero labels are available. Two
+closed-tail costs are near FLOATING zero. Old candidates are explicitly
+repriced as feasible choices with unchanged tilt/old-null bounds. The
+phase-aligned coefficient acts ONLY on an exact zero correction. Do not
+infer that the base carrier phase has been removed. Counts/masks/sample
+importance weights are retained, but these are NONNATIVE finite orders:
+no native count crop/paid-owner budget, primality/interval/LP certificate,
+cofinal rate, population coverage or native deficit fraction is proved.
+The new unpaid target remains active hinge crossings joined across counts
+and radial periods, not another positive majorant. See
+docs/zeta-riesz-weighted-zero-floor.md and
+docs/riesz-weighted-zero-floor-audit.json. Continue locally, no
+commits/pushes/subagents/wider gates; scoped Lean/lint/axiom checks apply.
+
+### Exact whole-period crossing step (local, 2026-10-03)
+
+`ZetaRieszTailMedianFloor` resolves the actual crossing price on the SAME
+joined signed feedback direction. Complete-period roots are `-T_c/V_c`,
+weighted by `abs(V_c)`; an originally zero period remains a root at zero
+with its full direction weight. Zero direction has zero weight. The
+finite weighted median minimizes the whole blockCost over EVERY real step,
+not just a small stable step. This is the standard median/L1 principle
+applied to the literal native cost, not claimed new general mathematics.
+
+`medianCredit_eq_crossing` is signed correlation minus ALL actual crossed
+groups. `medianCredit_ge_feedbackCredit` retains every quadratic threshold
+rebate on the SAME current aggregate/direction. Exact rational regressions
+raise16/41 to4/5 and1/2 to1. Credits telescope solely across successive
+repriced states. `medianAccumulated_le_excess` proves null steps cannot
+remove the adverse part of the unchanged total; iteration is no proof of
+its arithmetic size. Different successive trajectories do not necessarily
+dominate one another: `medianPrice` retains the ENTIRE old feedbackPrice
+as an alternative and spends only its own cost-funded rebate.
+
+The compiled native signed floor retains every original count, factorial
+order, support/physical/allocation mask, phase, old null/tangent and distinct
+paid owner row. It has the SAME nativePaidBudget/nativeError, charged once.
+The canonical rule acts on every original native squarefree label without
+a new per-label fit. `canonicalMedianPrice<=399/5000` COFINALLY remains OPEN;
+no numerical whole floor, ceiling, zero exclusion or RH contradiction.
+
+The optional hash-frozen order32/64 probe keeps the full original base,
+importance weights, earlier nulls and tilt. Twelve steps improve all12
+finite costs by about7%-72%. Restricting ONLY new columns to owner
+share<60069/100000 and second least>N^3 still improves all12 by3.6%-31.8%.
+Those14/11/20/22 columns span counts4-6 and are NOT a complete exclusively
+unpaid inventory. Older fixed-count supply ledgers are alternatives, not
+free extra credits. The64-step scan still nearly plateaus in some cases.
+All SVD residuals/zero faces are retained in the actual floating cost;
+these figures are not certificates, native/cofinal points, applied native
+budgets, population coverage or fractions of the endgame deficit.
+
+See docs/zeta-riesz-tail-median-floor.md and
+docs/riesz-tail-median-floor-audit.json. Continue locally without
+commits/pushes/subagents/wider gates or public endpoint changes. Use focused
+strict Lean/build, compiled ordinary root plus explicit module, namespace
+lint and transitive standard-axiom checks. The next actual obligation is
+the native minimum's signed arithmetic size, not another step-size saving.
+
+### Joined rough-owner counting comparison (local, 2026-10-03)
+
+`ZetaRieszRoughOwnerComparison` bounds the centered comparison error on
+complete ORIGINAL owner rows M<a<=X<p, with every cofactor count joined.
+The exact owner binomial selector, all factorial orders and full product
+phase are unchanged. Squarefreeness/forbidden-prime holes stay solely in
+the counting measure. The main is ONE signed rough-density scalar times
+the signed weight sum MINUS the literal ordinary-prime cofactor head.
+The unit channel is retained generically and exactly zero on these shells.
+Never discard or norm-pay that prime head: its sign changes with height.
+
+Explicit geometry is N>=32, 0<M<X<=2M, X<p, R<=M, R^4<=M^3,
+L-log p<=log(R+1), exp(N/2)<=M, eligible owner and log p<=L.
+The checked source rate is (2u)^N exp(-N/128)<=exp(-7N/1000).
+The ALREADY proved weighted sieve cost through N^3 is subexponential;
+eventually all such exclusions fit inside exp(N/1000). Owners aggregate
+with their harmonic cost. With log Q<=203N/100 the WHOLE signed comparison
+error is bounded by C_(u,y)*(N+1)*(1+203N/100)*exp(-3N/500), tending to zero.
+This pays ONLY the counting difference, NOT the signed main or whole floor.
+Do not claim the underlying counting framework is newly discovered.
+
+`owned_rows_injective` keeps each unique-owner physical label once.
+`eventually_owned_count_boundary` retains the ACTUAL native count crop
+using the existing independent allowance on the deleted incidences, with
+all supplied masks preserved. It supplies no duplicate count credit.
+Remaining physical/radial/core mask alignment and owner<whole-cofactor
+geometry are not assumed paid. The signed main needs an independent joint
+bound; nativePrice<=399/5000, whole numerical floor/ceiling and zero exclusion
+remain OPEN. The median/null floors are alternatives, not extra credits.
+
+The optional twelve TOY integer-cofactor cases check the exact divisor
+expansion and exhibit the prime-head sign. Their large-cofactor/core-window
+hypotheses FAIL; they are neither native points nor applications of the
+geometric theorem. The16–52 variation ratio is not a floor-gap saving.
+See docs/zeta-riesz-rough-owner-comparison.md and its scoped audit JSON.
+Continue locally without commits/pushes/subagents/wider gates or public
+endpoint changes. Focused strict Lean/build, compiled ordinary root plus
+explicit module, namespace lint and transitive standard-axiom checks apply.
+Next: bound the signed density-minus-prime main jointly while retaining
+the actual remaining masks; do not introduce another positive main allowance.
+
+### One-small-prime owner comparison (local, 2026-10-03)
+
+`ZetaRieszTaggedOwnerComparison` extends the same geometric centered
+comparison to actual owner rows with exactly ONE prime from T in the
+cofactor. A retained tag r is in V⊆T; all others T.erase r are forbidden.
+The tagged measure is exactly sieve(T.erase r)-sieve(T). With r<=M<a,
+the ordinary-prime cofactor heads CANCEL EXACTLY, since a tagged prime
+cofactor would equal r. This does NOT delete the head in an unmarked row.
+Keep the entire signed rough-density difference times the signed smooth
+phase sum as ONE main. Its independent bound remains OPEN.
+
+The old exact owner factorial selector, every order and product phase are
+retained. `tagged_riesz_two_hinges` retains R_b(a/r)-R_(b-log r)(a/r),
+with both signs and cutoffs. `tagged_rows_injective` proves the tags and
+owners do not duplicate physical labels. If T contains every prime through
+N³ and retained tags exceed N², `tagged_physical_prime_support` gives the
+ORIGINAL lower physical prime mask and the upper bound below the owner.
+`eventually_tagged_count_boundary` uses the SAME existing native count
+payment on actual incidences; it is not an additional count credit.
+
+On the declared complete rows, with the preceding comparison geometry
+and N³<=M, the joined centered ERROR is O_(u,y)(N^5 exp(-3N/500)),
+with an explicit eventual bound and Tendsto theorem. Only the ERROR gets
+the polynomial tag count. Neither the main nor the whole floor is paid.
+Owner<whole-cofactor, arbitrary partial rows and other core-mask alignment
+remain outside this theorem. No new native threshold or contradiction.
+
+The two actual core endpoint radial factors have checked source rate
+exp(-N/200000), including the successor factorial order. This boundary
+audit is not an interior signed integral/discrete bound. The continuous
+old-owner-selector probe has a long transient (sampled source norm about
+0.91 at N=65536); never claim the main already small from the probe.
+Its density scalar, discrete transport and original remaining masks are
+NOT proved by that model. The twelve integer toys fail the large-cofactor
+and original core hypotheses; no geometric theorem is applied to them.
+
+See docs/zeta-riesz-tagged-owner-comparison.md and its scoped audit.
+Next attack the signed smooth weight sum across complete total-log windows,
+including exterior boundaries and the exact allocation; keep both signed
+cutoff terms together. Native floor -399/5000 and ceiling42/25 stay OPEN.
+Continue LOCAL ONLY, no subagents/wider gates/public endpoints/commits/pushes.
+
+### Signed complete-core least-tag cancellation (local, 2026-10-03)
+
+`ZetaRieszOwnerPhasePrimitive`, `ZetaRieszOwnerLatticePhase`,
+`ZetaRieszTaggedOwnerPhase` and `ZetaRieszTaggedCoreWindow` now independently
+bound the SIGNED main and the LITERAL complete tagged-owner rows. This
+supersedes the preceding open-main statement ONLY on their explicit
+complete-core geometry. All factorial orders, the exact old binomial
+allocation and the full product phase remain. Sum the entire phase first:
+its finite polynomial primitive leaves only the original1.95N/2.03N
+endpoints, with checked source rate exp(-N/200000). Ordinary integer
+sampling retains both floor endpoints and has an additional exp(-N/4)
+cost. This is not generic masked prime-density/Abel transport.
+
+The SAME signed tagged Riesz density scalar joins across capped dyadic
+rows before its norm is used. The literal global bound is
+20u*C*(6+abs(y))*(N+1)^6*exp(-3N/500)
++10*(N+1)^5*ownerSamplingBudget(u,y,N), tending to zero for fixed y.
+The bound uses0<=u<=10001/20000, abs(y)>=54, N>=64 eventually, eligible
+owners with1<=log p<=4N/3 and log p<=L, log Q<=2.03N, N^3<=M_p,
+X_p<p,0<R_p<=M_p, R_p^4<=M_p^3 and L-log p<=log(R_p+1).
+M_p/X_p are the EXACT floored original core endpoints. Do not silently
+extend this saving to partial/internal-mask windows.
+
+`leastTagExclusions` forbids only primes SMALLER than the retained tag.
+The exact least-tag partition therefore covers cofactors with arbitrarily
+many small primes, instead of the former exactly-one-small restriction.
+`selectedRows_sum` joins them into disjoint literal owner/cofactor pairs.
+If T contains every prime through N^3 and retained tags exceed N^2,
+the original lower physical mask is proved; a<p gives the upper cofactor
+prime mask. Owner logs in[51N/50,5N/4] give X_p<p and nondominance
+throughout the full core. Do not claim all other original masks aligned.
+
+`eventually_cropped_selected_core_bound` retains the ACTUAL native count
+ceiling on the unchanged dyadic schedule. Its signed budget is
+taggedCoreBudget(u,y,N_j)+the SAME existing count allowance, tending to zero.
+Each label and its count payment occur once; this is not an extra count
+credit. The native cutoff-price ledger has NOT yet spent this family.
+The previous global nonowner credit is also not recreated or doubled.
+
+Fully N^3-rough cofactors have no tag, and their ordinary-prime cofactor
+head remains signed/unpaid. Owner<whole-cofactor geometry, partial rows
+and remaining native-mask alignment remain outside this payment. The
+whole floor -399/5000, ceiling42/25, zero exclusion and RH remain OPEN;
+no fraction of the floor deficit or finite native threshold is claimed.
+Do not return to divergent restAllowance or selected-mode norm payment.
+
+The optional probe has20 floating continuous cases,3 integer toys and
+an exact least-tag partition regression (352 labels,65 with several small
+primes, no duplicates). The continuous N=1048576 norm around4.98e-5 omits
+the arithmetic density/masks and is NOT a native certificate. Integer
+toys fail original core geometry; high owner slope1.30 is not claimed to
+satisfy the full nondominant mask. Preserve the earlier tracked
+probe_riesz_owner_phase.py; this slice's script is uniquely named
+probe_riesz_owner_phase_primitive.py. See docs/zeta-riesz-owner-phase.md
+and docs/riesz-owner-phase-audit.json for the scoped checks and snapshots.
+Continue LOCAL ONLY without subagents, commits/pushes, public endpoints,
+root registration or wider gates. Next apply this literal signed payment
+to the exact native mask/price ledger, then attack the fully rough and
+partial-window remainder while keeping its ordinary-prime head joined.
+
+### Native small-tag rows are now spent (local, 2026-10-03)
+
+`ZetaRieszSmallTagNativeFloor` completes the preceding mask/ledger task
+on its EXPLICIT complete-owner population. Owners are actual intermediate
+primes with51N/50<=log p<=5N/4; the complete cofactor window is the exact
+1.95N/2.03N core. The least cofactor prime is in(N^2,N^3], every larger
+small prime remains allowed, and the ACTUAL native count ceiling remains.
+`rows_injective` prevents duplicate labels. The original masks, squarefree
+labels and absence of cancelling/dominant interior pieces are proved by
+`eventually_labels_subset_native`, not assumed or completed.
+
+The comparison cutoff is explicitly floor(exp(N/2)). The stronger exact
+lower endpoint floor(exp(1.95N-log p))>=exp(2N/3), R^4<=M^3, N^3<=M
+eventually and L-log p<=log(R+1) follow from native length bounds
+5N/4<=L<=139N/100. The signed estimate is for the ORIGINAL FULL
+residualCoefficient allocation. It uses the previous signed row/count
+budget plus the existing global nonowner error ONCE on this subset.
+`eventually_packet_bound`, `budget_tendsto` and `tendsto_packet` prove
+its source-normalized REAL signed total tends to zero independently
+of any hypothetical zero. Complex norm decay is not claimed.
+
+`paidIncrement` uses the SAME native cutoff profile and complex logarithmic
+nulls; its total is exactly the paid real packet. The main null-corrected
+increment is now on the actual native squarefree labels minus this
+population. The whole free tangent correction stays joined, not paid as
+an extra credit. Remove these signed rows BEFORE complete-period clipping;
+do not charge their possibly large absolute cutoff variation.
+
+`eventually_joined_floor_pruned` is a whole-carrier floor with explicit
+remaining restCost+budget+nativeError. This alternative uses ZERO imaginary
+tilt because the independent row payment is real. The prior tilted price
+is retained as another valid alternative. `price` takes their minimum;
+`price_le_previous` and `gain_nonneg` prove no regression or double spending,
+NOT a positive percentage of the global deficit. No monotonicity of
+clipped period costs under population deletion is presumed.
+
+The cofinal numerical premise price<=399/5000 remains OPEN, as do the
+whole floor, ceiling42/25, zero exclusion and RH. The endpoint
+`false_of_cofinal_price` is CONDITIONAL. Fully N^3-rough cofactors have
+no tag and retain their ordinary-prime subtraction; other owner geometries
+and partial windows are not covered by this payment. Next keep those
+remaining counts/crossings joined while attacking their signed cost.
+Preserve all earlier positive/no-go results and concurrent semiprime work.
+
+See docs/zeta-riesz-small-tag-native-floor.md and its scoped audit JSON.
+Continue LOCAL ONLY without commits/pushes, subagents, root registration,
+public README/explorer/endpoint changes or wider gates. Strict leaf source,
+targeted build and compiled ordinary-root plus explicit-leaf namespace
+lint/transitive-axiom checks are the relevant gates for this slice.
+
+### Rough rows and prime head are now paid jointly (local, 2026-10-03)
+
+`ZetaRieszRoughPrimePairCancellation` proves an INDEPENDENT real signed
+bound for the literal fully N^3-rough population PLUS its exact ordinary-
+prime head. Owners have51N/50<=log p<=5N/4, the entire1.95N/2.03N core
+window is retained, and every native count/physical/allocation mask is
+proved. No selected-zero, exposure or unproved cancellation premise is
+used. Do not infer separate packet or head decay from this joint result.
+
+`core_joint_comparison` joins all radial shells with the SAME signed
+cutoff scalar and prime head. Only after the complete integer-lattice
+phase sum is paid is the scalar bounded. Owners aggregate harmonically.
+`jointBudget` is8uC(6+abs y)(N+1)^3 exp(-3N/500) plus8(N+1)^2 times the
+previous ownerSamplingBudget; it tends to zero. Native count and restricted
+nonowner errors are each included once on this rough population.
+`eventually_packet_joint_bound` and `tendsto_packet_add_nativeHead` keep the
+original FULL residualCoefficient allocation. Only real decay is proved.
+
+`eventually_nativeHead_eq_prime_pairs` removes the sieve EXACTLY on prime
+cofactors above N^3, exposing one weighted signed prime-pair sum with full
+cos(y(log p+log q)) phase and smooth owner allocation. It is NOT the joined
+markedWeight that vanishes on two-prime labels. That old theorem does not
+pay this head. Never drop it or take termwise absolute prime allowances.
+
+`labels_disjoint_smallTags` proves the old paid small-tag labels and these
+rough labels do not overlap. `eventually_step_sub_paid` proves the remaining
+main is exactly on native squarefree labels minus BOTH populations, with
+whole free tangent corrections joined. `eventually_joined_floor_pruned`
+spends both signed totals BEFORE complete-period clipping and retains
+restCost+nativeHead+combinedBudget+the SAME nativeError. The head is signed,
+not norm-paid. `price` keeps the better old/new price; `price_le_previous`
+proves no regression, NOT any positive percentage of the global deficit.
+
+The cofinal price<=399/5000 premise remains OPEN. No whole floor, ceiling,
+restricted contradiction, zero exclusion or RH is claimed. Next attack
+nativeHead jointly with the remaining signed cutoff periods and owner/
+window exteriors; do not separate the composite counts again. Preserve
+all previous positive/no-go results and concurrent semiprime work.
+See docs/zeta-riesz-rough-prime-pair-cancellation.md and its focused audit.
+Continue LOCAL ONLY without commits/pushes, subagents, root registration,
+public README/explorer/endpoint updates or wider gates. Use strict leaf,
+targeted build and compiled ordinary-root plus explicit-leaf lint/axiom
+checks; preserve the prior frozen proof/probe snapshots.
+
+### Every cofactor geometry in the owner window is paid jointly (local, 2026-10-03)
+
+`ZetaRieszAllTagNativeFloor` applies the existing signed counting bound to
+ALL least tags through N^3, including primes<=N^2. The previous native
+instantiation discarded those low tags unnecessarily: the exact native
+window/count theorem supplies every physical/deletion mask without that
+restriction. `budget_eq_previous` proves the quantitative error budget
+is UNCHANGED. Full boundedShare allocation, phase and count crop remain.
+`eventually_addedPacket_bound` and `tendsto_addedPacket` isolate ONLY the
+new labels (all old small-tag labels removed) and independently pay their
+real signed contribution by twice the old source-small budget. No zero,
+exposure, phase approximation or new arithmetic hypothesis is used.
+
+`owner_rows_complete` proves that all small-tag rows plus fully rough
+rows cover EVERY squarefree composite cofactor in the1.95N/2.03N core
+window and native count crop, for51N/50<=log p<=5N/4. There is no remaining
+small/rough/least-prime restriction on these rows. Disjointness is exact.
+`eventually_full_packet_joint_bound` proves abs(fullPacket+nativeHead)
+is bounded by the SAME previous combinedBudget, tending to zero. Only
+real JOINT decay is proved; never infer either summand or a complex norm
+decays separately. No bound outside the displayed owner range is given.
+
+`ZetaRieszPrimeHeadPeriods.sum_headIncrement` realizes the SAME signed
+prime correction on its actual one-sided integer hinge axis. Its smooth
+owner/prime sum remains unchanged and is NOT the markedWeight that vanishes
+on two-prime labels. Only zero native increments extend to the physical
+endpoint. `cost_eq`/`price_le_signed_overlap` prove the exact global cost
+gain is same-sign COMPLETE-period overlap MINUS negative head mass.
+Keep that full crossing cost. Do not price positive overlap alone.
+
+The all-tag `eventually_sum_fullPaidIncrement` and whole-floor theorem
+spend the entire owner population ONCE before period clipping, retaining
+all outside-owner labels, whole null/tangent columns and the SAME paid
+nativeError. Head and outside-owner remainder stay JOINTLY signed. Older
+floors are alternatives, never stacked overlapping credits. The cofinal
+price<=399/5000 remains OPEN; the conditional simple-zero endpoint is not
+a zero exclusion. Ceiling42/25 and RH also remain open. This is concrete
+population cancellation, not a claimed percentage of the global deficit.
+
+The optional prime-head period probe exhausts a TOY interval, retains its
+actual finite joint error and never applies the eventual rate. Two of six
+floating tests improve finite costs by about3.7%/7.5%, four do not. These
+are not native core/population/certification results. Preserve all old
+proof/probe snapshots, no-gos, semiprime work and public endpoints.
+See docs/zeta-riesz-all-tag-native-floor.md,
+docs/zeta-riesz-prime-head-periods.md and the combined focused audit.
+Continue LOCAL ONLY with strict leaf/targeted builds and compiled ordinary
+root plus explicit-leaf lint/axiom checks; no subagents, commits/pushes,
+root registration, public endpoints or wider gates.
+
+### All high owners paid before the balanced remainder (local, 2026-10-03)
+
+`ZetaRieszBalancedOwnerFloor` combines the complete51N/50..5N/4 owner
+payment with the existing `ZetaRieszJointOwnerEnvelope` literal geometric
+bound on ONLY the labels outside that payment. The added quantitative
+cost is6*divisorSquareDirichletMass(1+1/262144)*(N+1)*exp(-N/25000).
+`remaining_high_coefficient_eq_zero` proves every other high-owner label
+has zero ORIGINAL residual coefficient, using actual masks and the exact
+all-tag/rough cofactor coverage. No cofactor is completed.
+
+`eventually_high_packet_joint_bound` and `tendsto_high_packet_add_head`
+pay EVERY squarefree native label withlog(largestPrime n)>=51N/50,
+jointly with the SAME signed prime head. This is an INDEPENDENT real
+arithmetic bound, with all native counts, physical masks, full allocation
+and phase retained. No least-prime/roughness subclass remains. Do not
+claim either summand or its complex norm decays separately.
+
+`sum_highPaidIncrement`/`step_sub_highPaid` spend that entire payment
+ONCE on the original cutoff axis. Zero-response labels are removed by
+their exact total, not charged by cutoff variation. Whole free null and
+tangent columns remain joined. `mem_restLabels` makes the remainder
+exact: original native squarefree labels withlog(largestPrime n)<51N/50.
+`rest_owner_share_lt` proves owner share<34/65, from the39N/20 core
+lower endpoint. This is an actual reduction of the unpaid population,
+NOT a claimed percentage of the global floor deficit.
+
+`tendsto_rest_sub_head_sub_native` retains the remaining balanced real
+sum MINUS the same head as the full source-equivalent object. The
+whole-floor `eventually_joined_floor_pruned` keeps SAME nativeError and
+the new independent budget. Older prices are alternatives, not stacked
+credits. `price_le_previous` assumes no monotonicity under deletion.
+The cofinalprice<=399/5000 remains OPEN, as do the floor,42/25 ceiling,
+restricted contradiction, zero exclusion and RH. The next target is
+SIGNED cancellation in that balanced remainder-minus-head; do not
+return to an absolute head allowance or the divergent balanced-triple
+positive allowance. See docs/zeta-riesz-balanced-owner-floor.md and
+docs/riesz-balanced-owner-floor-audit.json.
+
+Preserve every previous positive/no-go proof and frozen snapshot,
+concurrent semiprime work and public endpoints. Continue LOCAL ONLY:
+strict leaf/targeted build, compiled ordinary root plus explicit-leaf
+lint and all-declaration standard-axiom audit; no subagents, root
+registration, commits/pushes, public endpoints or wider gates.
+
+### Whole balanced allocation correction paid (local, 2026-10-03)
+
+`ZetaRieszBalancedAllocationPayment` applies the EXISTING generic9/16
+allocation-tail theorem to EVERY label left by the high-owner payment.
+`rest_prime_log_le` uses largest share<34/65 to cover every prime leg.
+`assigned_subset_bound` pays the complex norm of the allocated DIFFERENCE
+on any subset of the entire balanced remainder, at all native counts and
+arbitrary phase height. Its independent budget is4*radiusCeiling*(N+1)*r^N*M,
+where r<9991081/10000000<1 and M is the finite original majorant mass at
+1+1/262144. No fixed count39, least-share band, new mask or zero hypothesis
+is used. This specializes existing arithmetic, not a newly discovered
+generic binomial theorem. No small finite-order constant is claimed.
+
+`unallocated_sub_rest_norm_bound` pays ONLY the exact allocation correction.
+`tendsto_unallocated_sub_head_sub_native` keeps the ORIGINAL balanced
+coefficient sum MINUS the SAME signed prime head source-equivalent to
+the whole native carrier. Neither main summand is paid independently.
+`sum_step`/`eventually_joined_floor_paid` spend that payment in the actual
+floor BEFORE period clipping; the main has no boundedShare allocation,
+all counts/crossings are joined and the old whole native tangent columns
+and SAME nativeError remain. The high-owner budget is retained once.
+Earlier prices remain alternatives; no clipping monotonicity or stacked
+credit is assumed. No percentage of the floor deficit is asserted.
+
+The next target remains the SIGNED original balanced sum-minus-head.
+The cofinal wholeprice<=399/5000, floor, ceiling42/25, restricted
+contradiction, zero exclusion and RH are OPEN. Never treat the conditional
+`false_of_cofinal_price` as a proved bound. See
+docs/zeta-riesz-balanced-allocation-payment.md and the focused audit.
+Preserve all old positive/no-go proofs, snapshots, semiprime work and
+public endpoints. Continue LOCAL ONLY: strict leaf/targeted build,
+frozen compiled ordinary root plus explicit-leaf lint/all-declaration
+standard-axiom audit; no subagents, root registration, commits/pushes,
+public updates or wider gates.
+
+### Paid radial strips spent on the balanced allocation-free main (local, 2026-10-03)
+
+`ZetaRieszBalancedRadialPayment` reuses the EXISTING all-mask radial bound
+from `ZetaRieszLargeOrderCore` on the ORIGINAL balanced coefficient sum.
+`central_sub_unallocated_norm_bound` independently pays ONLY the discarded
+radial difference by C*exp(-N/1000000), uniformly in all heights and retained
+counts. C is the original finite constant, not a claimed small finite-order
+value. There is no new generic phase or radial cancellation estimate.
+
+`centralLabels` retains every native mask and log(owner)<51N/50 while
+requiring1.971N<log n<=2.029N. `central_owner_share_lt` tightens every owner
+share to340/657; `central_prime_log_lt` covers every prime leg. Do not call
+the narrower window a percentage of the unpaid source/floor deficit.
+The SAME full signed nativeHead remains, with its full original radial
+support. `tendsto_central_sub_head_sub_native` keeps central-minus-head
+source-equivalent. Never infer either term or its complex norm is paid.
+
+`sum_step` and `eventually_joined_floor_paid` spend the radial difference
+ONCE before whole-period clipping, keeping the high-owner/allocation
+budgets, whole native free columns and SAME nativeError. Older funded
+prices remain alternatives; no clipping monotonicity or stacked credits.
+The cofinal signed price<=399/5000 is OPEN, as are floor, ceiling42/25,
+restricted contradiction, zero exclusion and RH.
+
+The optional balanced-joint probe uses TOY length -2N log u atN6/7, not
+native dyadic orders/moving integer length/deletion masks. Baselines show
+finite cross-count/head cancellation. All six radial-pruned tests fail to
+improve the finite price after charging their ACTUAL signed removed total.
+No eventual budget is applied at those toy orders. Preserve their prior
+source/output snapshots. The old owner-window payment requires exterior
+radial endpoints; no square-root-owner extension through an interior
+factorial-saddle endpoint is proved here. See the local doc and focused audit.
+
+Preserve old positive/no-go proofs, frozen snapshots, semiprime work and
+public endpoints. Continue LOCAL ONLY: strict leaf/targeted build, frozen
+compiled ordinary root plus explicit-leaf lint/all-declaration standard-
+axiom audit; no subagents, root registration, commits/pushes, public updates
+or wider gates.
+
+### Joint prime-head quadratic transport (local, 2026-10-03)
+
+`ZetaRieszPrimeHeadTransport` keeps the SAME nonzero signed ordinary-prime
+head. Each literal p,q atom is transported to its actual four-divisor
+quadratic prefix, whose log-square response is2*log p*log q/(N+1).
+`pair_cofactor_lt_owner`/`native_pairOrbit_eq_divisors` retain the canonical
+q<p geometry. No marked-weight two-prime vanishing is used to delete it.
+`sum_quadraticHead` preserves the original total, and `sum_direction` makes
+the old-minus-quadratic update an EXACT null. The common endpoint contains
+all pair products; the old increments added beyond its previous endpoint
+are exactly zero and do not change the original cost.
+
+`central_floor_with_gain` spends the proved crossing-square credit for
+both orientations. `coupledDirection` goes further: add the free main-
+profile update and the head update BEFORE computing any zero-face debit
+or crossing. `coupledCredit_eq_cost_saving` identifies the full signed
+correlation minus EXACT crossing cost with the actual whole cost saving.
+`central_floor_with_coupled_credit` and `eventually_joined_floor_coupled`
+spend that joint credit in the CURRENT floor. All counts, physical/owner
+and rough-prime masks, phase, head allocation, old whole native tangent
+columns and high-owner/allocation/radial/native-error budgets remain.
+No separate head norm, assumed clipping monotonicity or stacked credits.
+
+The optional N6/7 toy probe retains all signed totals and checks the exact
+finite crossing identity in FLOATING arithmetic. Joint quadratic savings
+are positive in all11 nonzero-baseline tests, up to48.1% of toy cost; this
+is NOT a percentage of the native floor deficit. Toy length -2N log u is
+not native integer length/schedule/deletion masks; no eventual budget is
+used. Preserve exact analytic zeros below the hinge with its piecewise
+formula, and preserve the old optimized choice when solver roundoff meets
+an already-zero price. Do not suppress nearly-zero optimized groups to
+claim a larger crossing-square saving. Exploratory total-label/two-column
+directions are not part of the proved quadratic transport.
+
+The cofinal bound on WHOLE cost minus coupled credit<=399/5000 remains
+OPEN, as do floor,42/25 ceiling, restricted contradiction and RH. Neither
+an exact null nor a finite LP saving proves the needed native credit size.
+Do not count a new conditional endpoint as a numerical bound. See
+docs/zeta-riesz-prime-head-transport.md and the focused audit. Preserve all
+old positive/no-go proofs, snapshots, semiprime work and public endpoints.
+Continue LOCAL ONLY: strict leaf/targeted build, frozen compiled ordinary
+root plus explicit-leaf lint/all-declaration standard-axiom audit; no
+subagents, root registration, commits/pushes, public updates or wider gates.
+
+### Least-prime critical-shell signed payment (local, 2026-10-03)
+
+`ZetaRieszCriticalPrimeFloor` pairs the actual two least primes and joins
+all subset ranks. On the exact least-prime gap, the original response is
+log(r) times the integer Mobius sum over the remaining critical divisor
+shell. `criticalDivisors_eq_singleton` proves that2*log n<3L and ANY
+prime in that shell force the entire shell to be that singleton, including
+exclusion of every composite competitor. The exact Riesz response is
+-log(r), regardless of total-count parity; no completion or density is used.
+
+`native_budget` discharges the strict budget for central native labels
+atN>=65536 using the existing length lower bound. IMPORTANT:
+`native_primeCritical_count_le_four` then limits this family to counts3/4
+on the actual balanced owner geometry. Do not call it a higher-count
+payment. Active least-prime crossings and composite-critical shells remain.
+`favorable_sum_nonneg` and `central_joint_floor_of_favorable` spend the
+nonnegative ORIGINAL-phase subfamily directly in the balanced floor,
+keeping the SAME full signed head and every original central mask.
+The adverse complement's cofinal signed allowance is still OPEN.
+
+The optional critical-shell probe uses toy length -2N log u atN6/7/8,
+full complex phase and SAME full head. All18 frozen signature regressions
+pass; this is not a native dyadic/moving-length/deletion-mask certificate.
+Do not apply eventual budgets there, infer native savings percentages, or
+count an exact null update as a change to the actual signed total.
+See docs/zeta-riesz-critical-prime-floor.md and its focused audit.
+Floor399/5000, ceiling42/25, contradiction, zero exclusion and RH remain
+OPEN. Preserve all old positive/no-go proofs/snapshots, semiprime work and
+public endpoints. Continue LOCAL ONLY with strict leaf/targeted build,
+frozen compiled root plus explicit-leaf lint/all-declaration axiom audit;
+no subagents, root registration, public updates, commits/pushes or wider gates.
+
+### Joint signed phase transport (local, 2026-10-03)
+
+`ZetaRieszJointPhaseTransport` assembles EVERY original central balanced
+label and the SAME full signed prime head before estimating paired phases.
+`joint_transport_eq` retains the complete row/column amplitude residual,
+including all unmatched phases. `central_joint_error` proves
+abs(centralRest.re-nativeHead-(U-M))<=E, where M is the SIGNED centered
+first phase moment and E=sum(w*abs(delta)^3)/24. No separate count price,
+absolute first moment, deleted unmatched contribution or prime completion.
+Every original central/head mask and the full product phase remain.
+
+`cubicCost_le_small_gap` pays at most epsilon^2/24 of the absolute angular
+transport when every nonzero pair gap<=epsilon. The deterministic native
+CDF coupling is nonnegative; no complete cover, small imbalance or
+unproved marginal identity is assumed in the floor. Its residual ledger
+remains explicit. `eventually_joined_floor_transport` spends only the
+previous funded high-owner/allocation/radial/native errors; `price` takes
+a minimum with the previous funded alternative, never stacked credits.
+
+The optional N6/7/8 floating toy probe retains all counts, original phases
+and SAME full head; all18 frozen complex-total regressions pass. The old
+absolute-chord matching improves none of12 previous optimized prices.
+Keeping the signed first moment improves all8 genuinely adverse cases;
+4 favorable cases retain positive signed lower bounds. Solver-roundoff
+improvement of an already-zero price is NOT a saving. Cubic charges are
+about1e-12 to1.2e-7, but adverse unmatched/first-moment terms survive.
+Toy length -2N log u is NOT native damped integer length, native dyadic
+schedule or all deletion masks. No eventual budgets or cofinal/native
+margin percentages are inferred. The greedy floating execution is not
+an interval-certified evaluation of the Lean CDF sums. Outside builds/CI.
+
+The actual new open obligation is the JOINT cofinal bound on U-M and the
+whole price<=399/5000; native cofinal smallness of E is also unproved. Do not pursue further chord/cubic price refinements
+as a substitute for that arithmetic estimate. A small cubic defect does
+not remove a negative signed total. Floor, ceiling42/25, contradiction,
+zero exclusion and RH remain OPEN. Preserve all old proofs/no-gos,
+frozen snapshots, semiprime work and public endpoints. Continue LOCAL
+ONLY: strict leaf/targeted build, frozen compiled ordinary root plus
+explicit-leaf lint and all-declaration standard-axiom audit; no subagents,
+root registration, commits/pushes, public updates or wider gates.
+See docs/zeta-riesz-joint-phase-transport.md and its focused audit.
+
+### Actual prime-head per-leg pole payment (local, 2026-10-03)
+
+`ZetaRieszPrimeHeadPolePayment` applies the existing shifted-center
+operator to BOTH actual prime legs, with the SAME full signed correction,
+complementary allocation and product phase. `head_prime_logs` proves
+log p>=51N/50 and log q>7N/10 from the original integer pair interval.
+All kept factorial slots, INCLUDING orders0/1, satisfy the upper-order
+multiplier estimate. `filteredMass_kernel` is the exact product of leg
+kernels, not the failed total-order filter or a cofactor completion.
+
+`filteredHead_error` pays the entire source-normalized operator CHANGE
+by10*(N+1)^3*exp(-N/2) for0<=u<=10001/20000,54<abs(y),N>=64, uniformly
+in height. `budget_lt_native` certifies this budget<10^(-40) for ALL
+N>=256. This is a DIFFERENCE estimate, not payment of the signed head
+itself. No generic relative error is multiplied by a shrinking-share
+carrier envelope; the actual two exponential prime lower bounds supply
+the saving. `tendsto_central_sub_filteredHead_sub_native` retains the
+whole source. `eventually_joined_floor_of_joint` keeps every prior
+high-owner/allocation/radial/native error plus this new budget ONCE.
+
+The optional toy probe retains the unchanged balanced main, SAME head
+and every complementary factorial order. All12 frozen complex-total
+regressions atN6/7/8,y65/100 pass. The adverse joint bias survives and
+the real operator correction can have either sign. No native/eventual
+budget is applied at toy orders; no floor improvement or cofinal/native
+margin percentage is inferred. The toy moving-length/deletion masks
+are still not native. No hard-masked complete-leg phase transfer is
+proved, and small-prime legs of the balanced main are NOT paid by this
+head-only estimate. Preserve EVERY previous modal/low-order/cutoff no-go.
+
+The independent joint signed floor399/5000, ceiling42/25, contradiction,
+zero exclusion and RH remain OPEN. See
+docs/zeta-riesz-prime-head-pole-payment.md and its focused audit.
+Continue LOCAL ONLY: strict leaf/targeted build, frozen compiled ordinary
+root plus explicit-leaf lint/all-declaration standard-axiom audit; no
+root registration, public updates, commits/pushes, subagents or wider
+gates. Preserve all prior proof/probe/doc snapshots and semiprime work.
+
+### Whole balanced/head shared-incidence cancellation (local, 2026-10-03)
+
+`ZetaRieszHeadSharedCancellation` applies exact two-prime saturation to
+the ACTUAL central native/head intersection. For1/2<=u<=10001/20000 and
+N>=65536, any two prime logs>7N/10 give original coefficient zero at
+every total count>=4. In particular a head-cofactor prime occurring below
+the main owner cancels the entire label. `higher_count_profile_eq_owner`
+joins ALL surviving higher-count shared incidences into ONE unique-owner
+profile before norms/reals, with arbitrary original correlated weights.
+`nonownerShared_source_floor` pays the corresponding whole sector by zero;
+`centralRest_eq_without_nonownerShared` removes it exactly. SAME full head,
+all original masks, low factorial orders and full phase remain.
+
+This is an application of existing saturation, not a second payment of
+already-zero labels. Do not call the owner profile bounded or infer the
+cofinal floor. Nonowner TRIPLES, the surviving higher-count owner profile,
+nonshared main labels and global cross-group correlations remain open.
+
+The optional interference probe exhausts the TOY N6/7/8 windows at180
+height/window points and checks18 frozen complex-total regressions. Count
+cross terms cancel within least-prime groups at every tested point, but
+global cross-count and owner/head correlations can REINFORCE. A separate
+28-point height stress test up to10000 also finds POSITIVE within-least-prime
+cross terms at11 points. Do not turn the first scan's negative local sign
+into a universal or eventual estimate. Its4 frozen regressions pass, but
+the toy stress test is not a native asymptotic no-go either. No uniform
+orthogonality/independence is proved. Incidence energy is NOT whole energy.
+Toy lengths/orders/deletion masks are not native; no eventual budget,
+cofinal saving percentage, floor or zero exclusion follows. Preserve all
+old proof/probe/audit snapshots and no-gos, including the operator payment
+being a DIFFERENCE estimate. See docs/zeta-riesz-head-shared-cancellation.md
+and its focused audit. Floor399/5000, ceiling42/25, contradiction and RH
+remain OPEN. Continue LOCAL ONLY: strict leaf/targeted build, frozen compiled
+root plus explicit leaf lint/all-declaration standard-axiom audit; no root
+registration, public updates, subagents, commits/pushes or wider gates.
+Preserve concurrent semiprime work.
+
+### Shared-owner completion boundary audit (local, 2026-10-03)
+
+`ZetaRieszOwnerCompletionAudit` tests the owner-free completion suggested
+by the higher-count shared-incidence cancellation. For native N>=65536,
+1/2<=u<=10001/20000, every SAME original correction pair satisfies
+log q<=101N/100 and the new ordinary-prime cofactor response is EXACTLY
+R_(L-log q)(p)=L-log q>=3N/8>0. Its amplitude is at least the original
+(L-log p)*ownerWeight, with the allocation retained. The two channels
+have the IDENTICAL product phase and reinforce before any label sum.
+`originalPair_boundary_norm_add` proves this directly with the literal
+head, radial kernel, allocation and sieve. This is NOT a bound on their
+whole signed sum, nor evidence that different labels cannot cancel.
+
+STOP the owner-free completion as an automatic payment: its count-one
+ordinary-prime boundary survives. The joined marked-weight two-prime
+zero theorem does not apply to this different literal divisor response.
+Do not charge this boundary to the squarefree counting error or move it
+into an anonymous completion correction. The SAME full original head,
+nonowner TRIPLE boundary and off-head prime pairs must stay explicit.
+The nonowner higher-count exact zeros remain available without a second
+credit. No new carrier or cofinal floor has been proved by this audit.
+
+The optional N6/7/8 audit keeps all counts and full complex phase, checks
+18 frozen-total regressions and matches every old head label in the
+tested main window exactly once. New and old positive amplitudes reinforce
+on these identical labels. The model density is SQUAREFREE INTEGER density,
+not prime density. The old head always retains its FULL radial window.
+Toy length/orders/deletion masks are not native; no eventual budget,
+cofinal rate or floor-margin percentage follows. The probe's separate
+prime/triple boundaries remain unpaid even when its counting error is small.
+
+See docs/zeta-riesz-owner-completion-audit.md and its focused audit.
+The independent whole signed floor399/5000, ceiling42/25, contradiction
+and RH remain OPEN. Preserve all previous positive/no-go proofs and frozen
+artifacts, concurrent semiprime work and public endpoints. LOCAL ONLY:
+strict leaf/targeted build, frozen compiled ordinary root plus explicit
+leaf lint/all-declaration standard-axiom audit; no root registration,
+public updates, commits/pushes, subagents or wider checks.
+
+### Joint circular phase-discrepancy test (local, 2026-10-03)
+
+`probe_riesz_joint_phase_discrepancy.py` joins ALL original balanced toy
+counts and the SAME full signed head before computing the centered circular
+CDF energy. All18 frozen complex-total regressions pass. Its whole Cauchy
+price improves0/12 previous funded prices and0/18 cubic signed prices.
+The first harmonic contributes about48%..98% of the measured energy and
+is the actual unresolved complex joint sum. Bounding only the higher
+harmonics cannot pay that signed bias. This is a failed finite candidate,
+NOT a native/cofinal no-go for every phase-energy argument. No new Lean
+infrastructure, arithmetic saving, cofinal floor or zero exclusion follows.
+Toy length/orders/deletion masks are not native; previous eventual budgets
+are not applied. Keep this probe optional, outside builds/CI, and preserve
+all original masks, phases, signed amplitudes and frozen evidence. See
+docs/riesz-joint-phase-discrepancy-audit.json. Keep the whole independent
+floor399/5000 and ceiling42/25 OPEN; continue LOCAL ONLY.
+
+### Whole joint prime-sign constraint (local, 2026-10-03)
+
+`ZetaRieszJointPhaseConstraint` proves EVERY original central label has a
+prime outside the SAME full head support. Fix head signs to one and average
+the remaining multiplicative signs jointly: the entire main averages to
+zero, while the head stays fixed. `exists_joint_le_neg_head` and
+`arbitrary_sign_allowance_ge_head` show a bound valid for arbitrary prime
+signs must pay at least the height-zero head. These signs are NOT one fixed
+logarithmic character. No fixed-height/cofinal no-go, head growth theorem,
+new arithmetic floor saving or zero exclusion follows. All18 toy complex
+regressions pass; the native geometry theorem is separate from that probe.
+The next estimate must use ACTUAL logarithmic prime correlations in the
+whole main-minus-head sum. Do not replace those with arbitrary/independent
+phases or claim the sign average bounds the actual carrier. Keep floor
+399/5000 and ceiling42/25 OPEN. Preserve earlier proofs, snapshots, semiprime
+work and public endpoints; LOCAL ONLY with focused leaf validation.
+See docs/zeta-riesz-joint-phase-constraint.md and its focused audit.
+
+### Global squarefree completion boundary test (local, 2026-10-03)
+
+`ZetaRieszGlobalCompletionBoundary` proves on EVERY original head pair at
+N>=65536 that the full semiprime response is R_L(pq)=log(pq)-L and exceeds
+the allocated head coefficient by at least17N/100. The SUBTRACTED global
+semiprime atom has the opposite sign to the SAME full head. Join before
+norms: `boundary_sub_head_norm` loses exactly the old head norm, and
+`matched_boundary_real_floor` gives its literal whole-population bound.
+`boundary_re_eq_neg_literal` checks the actual coefficient/kernel/sieve.
+No separate head payment, low-order deletion, mask replacement or exposed
+zero premise is used. This is different from the earlier smaller-prime
+cofactor completion, whose R_(L-log q)(p) boundary reinforces the head.
+
+The optional global toy completion has18 main/head complex regressions;
+its companion has18 head regressions and retains every matching pair.
+Do NOT call their finite norm-price saving a native/cofinal floor saving.
+The global ledger still retains ordinary primes, unmatched semiprimes,
+raw high-owner terms and the signed bulk main. No native all-mask global
+completion or source-o(1) payment of those boundaries is proved. The old
+high-owner payment has its allocation; do not apply it to raw high owners.
+STOP global completion as an automatic floor proof when these terms remain.
+See docs/zeta-riesz-global-completion-boundary.md and its focused audit.
+Keep floor399/5000, ceiling42/25 and RH OPEN. Preserve prior proofs/probes,
+semiprime work and public endpoints; LOCAL ONLY, focused leaf/root-compiled
+validation, no root registration, commits/pushes, subagents or wider gates.
+
+### Completed all-count bulk paid in the central native ledger (local, 2026-10-03)
+
+`ZetaRieszGlobalBulkPayment.completedCore_real_bound` independently pays
+the REAL signed completed squarefree bulk on1.95N<log n<=2.03N, for
+N>=64,1/2<=u<=10001/20000 and54<=|y|. All counts including ordinary
+primes/semiprimes are joined, with native moving floor-defined length,
+full factorial kernel and actual phase. Its explicit budget is
+7*ownerSamplingBudget+2u*Ccount*(4+|y|)*N(N+1)*exp(-N/200), tending to0.
+The full signed integer-density phase main is paid by exact exterior
+phase endpoints; no prime/PNT/Type-II/zero premise or absolute positive
+main allowance is imported. This is real-part decay, not complex norm
+decay. It supersedes ONLY the earlier status that the COMPLETED bulk was
+unpaid; no earlier negative audit or boundary obstruction is removed.
+
+`ZetaRieszGlobalCentralPayment` preserves the prime-restored coefficient
+majorant and pays the completed bulk's own strips outside1.971..2.029.
+Its exact finite ledger is Gcentral=Mcentral+P1+P2+Rejected, hence
+Mcentral-SAME full head=Gcentral-joinedBoundary. P1 is every central
+ordinary prime; P2 is every central squarefree semiprime; Rejected is
+EVERY squarefree count>=3 label failing the EXACT native central mask.
+All original count/physical/owner/deletion/nondominant failures, including
+raw high owners, retain their unallocated coefficients and full phases.
+The head retains its ORIGINAL wider radial support. No failure is dropped.
+
+`eventually_native_boundary_bound` gives
+abs(nativeScaledCore.re+joinedBoundary.re)<=nativeBoundaryBudget->0,
+spending completed bulk, old balanced radial/allocation differences and
+allocated high-owner payment ONCE each. Raw high-owner completion labels
+are NOT paid by the allocated residual theorem. Restore signs honestly:
+the earlier matched subtracted semiprime boundary equals -P2 on its
+matching labels; do not assign its saving to unmatched pairs. Keep P1,
+P2, Rejected and SAME head joined before any new price.
+
+The remaining floor requires an INDEPENDENT cofinal upper bound
+joinedBoundary.re<=399/5000+o(1). No such bound, separate prime/semiprime
+payment, whole floor, ceiling42/25, restricted exclusion or RH is proved.
+STOP completion as an automatic floor proof while this boundary remains.
+The optional full-phase primitive probe is a continuous INTEGER-density
+main diagnostic, not a prime sum or literal carrier. Its exact native
+rational-floor length and ideal endpoints are distinguished from the
+Lean-paid literal lattice; no unspecified counting/radial constant is
+numerically set to one, no percent floor-deficit saving is inferred.
+Preserve all prior snapshots/no-gos, semiprime work and public endpoints.
+Continue LOCAL ONLY: strict leaves/targeted builds, frozen compiled root
+plus explicit-leaf14-linter/all-declaration standard-axiom checks; no
+subagents, root registration, commits/pushes, public updates or wider gates.
+See docs/zeta-riesz-global-bulk-payment.md and its focused audit.
+
+### All balanced completion-mask failures paid together (local, 2026-10-03)
+
+`ZetaRieszGlobalBoundaryPruning` strengthens the SAME signed global boundary
+ledger. Below the actual count ceiling, every balanced central SF label
+with physical primes belongs to the EXACT native central population.
+All original deletion masks follow from window_mem_originalMask; ownerlog
+<51N/50 rules out BOTH cancelling and dominant sectors. For a physical
+failure, log n<=2.029N<2L and p>=X force count<=2 if its original coefficient
+is nonzero. Thus EVERY count>=3 physical failure is EXACTLY zero. Do not
+apply this zero statement to ordinary primes or semiprimes.
+
+All remaining balanced completion failures have high count. The existing
+ARBITRARY-support count theorem gives ONE uniform-height norm budget
+(203/50)*radiusCeiling*(N+1)*exp(-N/10000000)->0 for their entire sum.
+Its eventual start is unevaluated; j>=1024 is not claimed a practical
+native threshold. Spend this COMPLETION count-tail error once, keeping
+all original factorial orders, moving floor/phase and prior native budgets.
+
+The exact remaining prunedBoundary is P1+P2+rawHigh+SAME full head.
+rawHigh contains EVERY SF central label of count>=3 with ownerlog>=51N/50,
+with no count/physical/deletion/nondominant/allocation support restriction.
+Physical failures remain harmless zero slots. Its coefficient is the
+ORIGINAL unallocated one; the prior allocated-high-owner theorem does NOT
+pay it. The head keeps its wider original window; P1/P2 keep the actual
+contracted central window. `eventually_native_pruned_bound` pays all
+balanced mask failures inside the whole native ledger by adding ONLY the
+proved countAllowance to nativeBoundaryBudget. No masked carrier is
+completed at an individual cofactor and no ordinary-prime source is dropped.
+
+The required independent upper bound prunedBoundary.re<=399/5000+o(1)
+remains OPEN. Keep ordinary primes, semiprimes, raw high owners and SAME
+head joined before further signed estimates. No separate norm prices,
+whole floor,42/25 ceiling, restricted exclusion or RH is claimed.
+The optional N256 exact-divisor diagnostic uses the native rational floor
+and integer d<X comparisons, checking zero log profiles at counts3..12;
+ordinary-prime and semiprime controls remain nonzero. SymPy primes are
+exploratory, not Lean certificates; no eventual count budget or low-count
+native membership is assumed at this early order. Preserve ALL earlier
+audits/probes, including old toy physical cutoffs that differ from the
+native squared cutoff. Continue LOCAL ONLY with strict leaf/targeted
+build and frozen-root14-linter/all-declaration standard-axiom validation,
+without subagents, root/public updates, commits/pushes or wider gates.
+See docs/zeta-riesz-global-boundary-pruning.md and its focused audit.
+
+### Global central-semiprime/full-head cancellation (local, 2026-10-03)
+
+`ZetaRieszGlobalHeadCentralPayment` moves the SAME full head onto its
+unique physical product labels, with exact factorial allocation, sieve,
+physical support, native moving length and phase. Its positive coefficient
+is bounded by the opposite semiprime completion coefficient. Thus ONLY
+the head's radial strips outside1.971..2.029 are paid by the existing
+all-mask rate exp(-N/1000000), forN>=65536 and1/2<=u<=10001/20000,
+uniformly in height. The head itself is NOT a vanishing error.
+
+Every projected head label is a central SF semiprime, counted once. Join
+its opposite coefficients BEFORE norms. `full_semiprime_head_bound`
+proves norm(P2central+SAMEfullHead(y))<=D2-H0+2E_N, whereD2 is the entire
+central semiprime atom price, H0 the original full zero-height head mass,
+andE_N=radialConstant*exp(-N/1000000). Relative toD2+H0 this saves
+TWO head masses minus2E_N. The two radial uses pay actual-height transfer
+and zero-height credit transfer, not two independent head payments.
+`prunedBoundary_upper` and `eventually_native_floor_with_semiprime_credit`
+spend this cancellation inside the current whole native ledger. Ordinary
+primes and raw high owners remain ONE signed unpriced scalar; no allocated
+high-owner payment is applied to them. Original native budgets stay once.
+
+This is a genuine global same-label credit plus a new geometric radial
+mask payment, NOT a bounded cofinal allowance. NeitherD2-H0 nor the
+remaining prime/raw-owner scalar is proved small. Do not promote their
+atom price to a floor strategy or infer a percentage of the399/5000 gap.
+The independent whole-boundary upper bound, floor,42/25 ceiling,
+restricted exclusion and RH remain OPEN. The optional toy probe passes18
+frozen complex regressions, retains every outer signed head label and
+never applies theN>=65536 theorem toN6/7/8. Its length/deletion/schedule
+are distinguished from native data. Preserve all proofs/no-gos, snapshots,
+semiprime work and public endpoints. LOCAL ONLY: strict leaf, targeted
+build, frozen compiled root plus explicit-leaf14-linter/all-declaration
+standard-axiom audit; no subagents, root registration, commits/pushes,
+public updates or wider gates. See docs/zeta-riesz-global-head-central-payment.md.
+
+### Post-head positive price obstruction (local, 2026-10-03)
+
+`ZetaRieszGlobalHeadPriceAudit` proves that the EXACT global positive
+allowance D2-H0+2E from the preceding semiprime/head bound diverges,
+including on the native dyadic moment sequence. Ordinary primes in the
+disjoint boxes N<log p<=N+1 andN+1<log q<=N+2 yield distinct central SF
+semiprimes untouched by the head owner threshold. The actual moving
+length gives coefficient norm>=1. A proved fixed-width PNT LOWER count
+and full factorial normalization supply the explicit eventual envelope
+(u*exp(-9/2)/216)*(2u)^N/(N+1)^3. The PNT starting order is unevaluated.
+No cofinal subsequence of this allowance meets ANY fixed ceiling.
+
+This is a no-go for the positive PRICE ONLY, not divergence of the actual
+signed sum. Preserve the true global same-label head credit and every
+radial payment, but STOP optimizing/reusing this price to close the floor.
+All unmatched-label/cross-count/full-period cancellations must stay signed.
+The optional scalar crossing nearN472391.52 at the radius ceiling is NOT
+a certified native threshold. Its whole-boundary toy probe passes45
+frozen complex regressions and retains every raw high count, full head
+and exterior phase endpoint. ToyN6/7/8 use ideal length/deletion/schedule;
+no native eventual theorem or percentage floor saving is inferred.
+See docs/zeta-riesz-global-head-price-audit.md and its focused audit.
+
+### All incomplete phase periods paid in the native floor (local, 2026-10-03)
+
+`ZetaRieszGlobalPeriodEdgePayment` pays every partial central phase period
+and exterior endpoint, simultaneously at ALL counts. Width2*pi/|y|<=1
+for54<=|y|. A fixed additive total-log shift changes only the finite tilt
+constant; the common rate remains exp(-N/1000000). The generic theorem
+holds for everyN>=64, finite dominated support and all such heights.
+No phase is frozen or norm-paid on a complete interior period.
+
+`wholePeriodBoundary` joins complete-period selections of every central
+ordinary prime, every central SF semiprime, raw high owners at EVERY
+count with their ORIGINAL unallocated coefficient, and the SAME full
+head's physical product labels with exact owner allocation/sieve/phase.
+All other masks remain in their original support; no count restriction
+or physical removal is imposed on raw high owners. ForN>=65536 the
+head's existing majorant applies. Its real phase agrees with the old
+pruned boundary's real-cast head convention. One finite constant pays
+the four edge families by4*C*exp(-N/1000000); do NOT setC numerically.
+
+`eventually_native_wholePeriod_bound` spends this payment in the ORIGINAL
+whole native ledger: abs(nativeScaledCore.re+wholePeriodBoundary)<=
+nativePrunedBudget+wholePeriodBudget->0. This ALTERNATIVE signed ledger
+does not spend the semiprime/head atom-price saving or its two radial
+credits again. The complete-period joined signed scalar still needs an
+INDEPENDENT cofinal upper bound<=399/5000+o(1). No such bound, whole
+floor,42/25 ceiling, restricted exclusion or RH is proved. The optional
+toy probe only motivates the now-proved edge payment; its small signed
+periods are not an asymptotic arithmetic bound.
+
+Preserve ALL prior positive results/no-gos/snapshots and semiprime work.
+Continue LOCAL ONLY: strict leaves, targeted builds, frozen compiled
+root plus explicit leaf14-linter/all-declaration standard-axiom checks;
+no subagents, root registration, commits/pushes, public updates or wider
+gates. See docs/zeta-riesz-global-period-edge-payment.md and its audit.
+
+### All raw high-owner counts paid jointly (local, 2026-10-03)
+
+`ZetaRieszUnallocatedOwnerPhase` proves the FULL factorial integer phase
+payment with no owner allocation, for genuine owner logs through7N/5.
+`ZetaRieszUnallocatedOwnerPayment` joins EVERY squarefree composite
+cofactor count with its EXACT unallocated prime correction before
+estimating. Its per-owner bound is ownerBudget/p, where ownerBudget is
+7*ownerSamplingBudget plus2*u*countingConstant*(4+|y|)*N*(N+1)*exp(-N/200).
+Harmonic aggregation over ALL owners costs at most1+7N/5; the joined error
+is independently geometric times a fixed polynomial. No zero/PNT/bilinear
+hypothesis, count split, old allocated weight or rough sieve is used.
+
+`ZetaRieszGlobalHighOwnerPayment` identifies these rows with the literal
+unique-largest-prime raw labels, preserving every factorial order and
+product phase. Owners above the actual moving length contribute EXACT
+zero at allcounts>=3. The sole funded radial transfer connects the full
+wide window to native rawHighLabels. This pays rawHigh.re PLUS the exact
+highPrimeCorrection, NOT rawHigh or the original head separately.
+
+The SAME native ledger now has abs(nativeScaledCore.re+lowCountBoundary)
+<=nativePrunedBudget+radialBudget+(1+7N/5)*ownerBudget->0. The retained main
+is P1central.re+P2central.re+SAMEfullOriginalHead-highPrimeCorrection.
+Only ordinary-prime and distinct prime-pair sums remain unpaid. The new
+correction has extended owner interval throughL, unallocated coefficients
+and the original wide window; do NOT equate it to the allocated/sieved
+head or discard it. Do not spend old head-price/period credits again in
+this alternative ledger. Its independent cofinal upper bound<=399/5000
+is OPEN. No whole floor,42/25 ceiling, restricted exclusion or RH follows.
+Do not revive the proved-divergent positive semiprime/head allowance.
+
+Preserve every preceding positive/no-go theorem and snapshot, and all
+semiprime work. Continue LOCAL ONLY without subagents, root/public updates,
+commits/pushes or wider gates. Strict leaves/targeted builds and frozen-root
+14-linter/all-declaration standard-axiom checks apply. The optional exact
+row/phase probe uses frozenTOY orders6/7/8 and ideal length/old masks,
+not native data or an evaluated eventual threshold. See
+`docs/zeta-riesz-global-high-owner-payment.md` and its focused audit.
+
+### Low-count signed endpoint payment (local, 2026-10-03)
+
+`ZetaRieszLowCountSignedBoundary` joins the actual retained P1central,
+P2central, SAME original head and full unallocated highPrimeCorrection
+on their unique physical labels BEFORE estimating. Original head labels
+are a subset of the correction labels and their allocated/sieved weights
+are pointwise bounded by that full correction. On correction pairs,
+completedCoefficient-correctionCoefficient is EXACTLY
+-log(n)*log(smallerPrime)/L. The complete joined coefficient is real,
+between-log(n) and0, with no dropped phase, owner, physical, sieve,
+allocation or radial condition. Its divisor-log cap is used ONLY for edges.
+
+ONE periodEdgeConstant*rate^N payment now covers all partial-period and
+outer-window terms of the four-component low-count main jointly.
+`eventually_native_signed_period_bound` spends this once with the prior
+nativeLowCountBudget; their sum tends to zero. No previous head-price
+credit or old four-component period payment is spent again. The remaining
+target is the NET signed complete-period lowCountPeriods<=399/5000+o(1)
+cofinally. This bound is OPEN, as are the whole floor,42/25 ceiling,
+restricted zero exclusion and RH. A negative real coefficient is not
+enough: its negative-cosine phases contribute positively. Do NOT revive
+the divergent positive semiprime/head atom allowance.
+
+The optional frozenTOY orders6/7/8 probe passes27 complex regressions and
+checks the exact joined coefficient range[-log(n),0]. The small signed
+period totals are diagnostics, NOT native/eventual certificates. Preserve
+all preceding positive/no-go results, immutable snapshots, concurrent
+semiprime work and public endpoints. Continue LOCAL ONLY, no subagents,
+commits/pushes, root registration, public updates or wider checks; strict
+leaf/targeted build, frozen-root plus explicit-leaf14-linter and
+all-declaration standard-axiom audit apply. See
+`docs/zeta-riesz-low-count-signed-boundary.md` and its focused audit.
+
+### Unpaid low-count period coupling probe (local, 2026-10-03)
+
+The optional `probe_riesz_low_count_period_coupling.py --low-count-only`
+enumerates ONLY ordinary primes and distinct prime products in the current
+remaining boundary. It retains every toy log phase and older radial,
+physical, sieve and finite allocation condition. Original head and full
+unallocated correction are joined on each pair BEFORE diagnostics. All27
+frozen full-divisor regressions pass; held-out toy order9 is additional
+uncertified data. No native eventual theorem is applied to these toy orders.
+
+On52 heights per order, median prime/joined-pair period correlations are
+about-.951,-.991,-.986,-.990 forN6/7/8/9. Subtracting an uncertified smooth
+density comparison does not remove the pattern atN6/7/8. This motivates
+JOINT arithmetic cancellation; it is NOT a proved sign rule or floor.
+The stress scan through height51200 weakens local opposition while signed
+cancellation across periods still matters. Bound the NET lowCountPeriods,
+not each period or a positive-period cost. Do not spend the diagnostic
+cross-count/cross-period credits as native payments or percentages of the
+global endgame gap. An admissible sign-bias diagnostic is not a single-height
+logarithmic character and proves no arithmetic estimate.
+
+Perfect opposition alone allows the canonical simple source1-c_ret(U)
+about.0798718, still ABOVE399/5000=.0798. The remaining~7.18e-5 source gap
+is not a proved arithmetic cost saving. The current independent cofinal
+floor and42/25 ceiling remain OPEN. No new Lean theorem/axiom, zero
+exclusion, public endpoint, root registration, commit/push or wider gate
+is introduced in this numerical pass. Preserve all paid budgets/no-gos
+and concurrent semiprime work. See
+docs/zeta-riesz-low-count-period-coupling.md and its immutable numerical
+audit; keep the probe outside CI. Continue locally on the actual joined
+signed estimate, without subagents or positive atom-price optimization.
+
+### Joined low-count Selberg completion audit (local, 2026-10-03)
+
+`ZetaRieszLowCountSelbergAudit` tests the existing classical second
+logarithmic convolution against the literal joinedCoefficient. Its
+normalized Selberg coefficient agrees EXACTLY on every original central
+ordinary prime. On distinct pairs it is-2log(p)log(q)/log(pq). The mismatch
+must remain signed: the adjacent boxes N<log(p)<=N+1<log(q)<=N+2 have
+neither the original head nor the NEW unallocated correction, because
+their largest prime lies below1.02N. At the ACTUAL moving length the
+defect is T-T^2/L+2log(p)log(q)/T>=N/20 forN>=65536. Every such label lies
+on a COMPLETE interior phase period for54<=|y|, so this is bulk rather
+than an already-paid endpoint.
+
+The diagnostic ABSOLUTE defect price is eventually at least
+(u*exp(-9/2)/216)*(2u)^N/(N+1)^3 and tends to+infinity foru>1/2, including
+on the exact native dyadic sequence. No cofinal fixed allowance is
+possible for that price. This rules out ONLY Selberg completion followed
+by an absolute remainder payment. It does NOT prove signed divergence,
+an impossibility of joint Selberg cancellation, or a floor/ceiling. No
+price is added to the actual floor ledger. The NET lowCountPeriods
+cofinal upper target399/5000+o(1), whole floor and42/25 ceiling remain OPEN.
+
+The optional probe checks40 exact rational log-box/length corners at
+native-sized orders; it does not enumerate their prime sets or test the
+signed phase. Keep it outside CI. Preserve all old payments/no-gos,
+immutable snapshots and concurrent semiprime work. Continue LOCAL ONLY:
+strict leaf/targeted build, frozen compiled ordinary-root plus explicit
+leaf14-linter/all-declaration standard-axiom audit; no subagents, commits,
+pushes, root/public updates or wider gates. See
+docs/zeta-riesz-low-count-selberg-audit.md and its focused audit.
+
+### Signed Selberg coupling and cutoff calibration (local, 2026-10-03)
+
+The optional `probe_riesz_signed_selberg_coupling.py` keeps Selberg and its
+literal masked defect SIGNED on the SAME prime/semiprime labels and complete
+periods. It evaluates56 toy cases: orders6/7/8/9 and7 heights, with both
+the older ideal length and the ACTUAL damped cutoff. Nine old complex
+regressions and768 independent full-Mobius-divisor coefficient checks pass.
+This numerical pass proves NO new Lean theorem, signed arithmetic bound,
+floor,42/25 ceiling, zero exclusion or RH result. No defect price is spent.
+
+The cutoff distinction is essential. Lean uses
+L=log((floor(u^(-N)/(N+1))+2)^2), with strict physical upper prime support.
+At enumerable orders6..9, L/(2N) is about.400..441; the original head and
+NEW unallocated correction are EMPTY. The balanced log-profile Selberg
+defect there is NEGATIVE. At native-sized orders256 and above, that same
+coefficient calibration is POSITIVE again, consistent with the preceding
+proved large-order audit. These native calibration rows are CONTINUOUS
+LOG PROFILES, not actual primes, signed sums or certificates. Preserve the
+old explicitly ideal probes; do not use their finite anticorrelation to
+validate an eventual estimate at the actual cutoff. Every future unpaid
+detector must state which cutoff and physical schedule it uses.
+
+Signed opposition between Selberg and its defect is not uniform across the
+tested cases. Friedlander-Iwaniec's asymptotic-sieve theorem assumes its
+separate bilinear hypothesis(B); it does not supply that estimate for the
+present correlated complex weights. Do not import that premise as a
+payment. The NET lowCountPeriods cofinal target399/5000+o(1) remains OPEN.
+Continue LOCAL ONLY without subagents, commits/pushes, root/public changes
+or wider gates; preserve all earlier audits and concurrent semiprime work.
+See docs/zeta-riesz-signed-selberg-coupling.md and its numerical evidence.
+
+### Joined signed Selberg payment (local, 2026-10-03)
+
+`ZetaRieszSignedSelbergPayment` now proves `tendsto_literalSelberg_simple`
+on the SAME completePeriodLabels(joinedLabels): under a SIMPLE exposed zero,
+the ordinary-prime Selberg term and its exact factorial pair convolution
+cancel jointly. Every order0/1 and the repeated-prime diagonal is retained;
+ordinary-prime summability and the checked independent geometric radial-edge
+payment justify the literal support transfer. No hard-share mask is inferred
+from separate complete-leg convergence. `norm_literalSelberg_le` gives the
+explicit centered-Cesaro + square-geometric + ONE edge budget.
+
+`exists_native_pairDefect_payment_simple` spends that vanishing budget inside
+the existing whole-core ledger. The EXACT remaining target is the net signed
+literalPairDefect real upper bound399/5000+o(1), cofinally. All original head,
+owner, sieve, allocation, physical and radial masks stay in that pair defect.
+Do NOT norm-pay it: the preceding absolute-defect divergence still applies.
+No independent floor, multiple-zero ceiling, zero exclusion or RH result has
+been proved. Exposure and simplicity are essential to THIS payment.
+
+The optional native coefficient model retains the moving radial saddleT=N/u,
+finite binomial allocation and damped length enclosure. FreezingT=2N instead
+reverses the target comparison; it is not a valid floor calibration. The
+correct pure selected-zero model crosses the target late, between the tested
+native orders196608 and425984, consistently with the OLD source limit. This
+is not an actual-prime sum or certified bound; intermediate probes with the
+old frozen source header are excluded from final evidence. Continue LOCAL
+ONLY without commits, subagents, root/public changes or wider gates. See
+docs/zeta-riesz-signed-selberg-payment.md and its focused audit.
+
+### Polynomial-small pair payment and balanced-pair priority (local, 2026-10-03)
+
+`ZetaRieszPolynomialPairPayment.tendsto_literalSmall` pays the ACTUAL retained
+pair defect with uniquely smaller primeq<=N^16, under exposure in the current
+radius range. Simplicity is not needed for this payment. The full factorial
+translation/product phase is summed before completing ONLY the larger prime.
+The complete budgets are cofactorMass/L and cofactorMass/N, with exponent
+16(1-beta+1/128)<=629/5000<1/5. A separate independent geometric exterior
+theorem transfers back to the SAME literal masks and complete periods.
+The payment is spent once by `eventually_native_largePairRest_floor`.
+
+This supporting work DOES NOT meet the user's next decisive milestone:
+`balancedProducts_disjoint_literalSmall` proves the obstructive balanced boxes
+are untouched. Their signed upper bound399/5000+o(1) remains OPEN and the old
+source gap~0.000071797 remains unchanged. Do not advertise polynomial-prefix
+deletion, source equivalence or another positive majorant as progress on
+THAT inequality. The next slice must prove a signed balanced-pair inequality
+reaching0.0798 or a quantitative saving that demonstrably advances it.
+No floor,42/25 ceiling, zero exclusion or RH result is claimed. Preserve all
+prior audits/payments and concurrent semiprime work. Continue LOCAL ONLY:
+no subagents, commits/pushes, public/root registration changes or wider gates.
+See docs/zeta-riesz-polynomial-pair-payment.md and its focused audit.
+
+### Balanced-pair dilation test (local, 2026-10-03)
+
+`scripts/CheckRieszBalancedDilation.lean` is an OPTIONAL negative audit,
+not a registered proof-chain advance. `balanced_literal_cross_eq` retains
+the ACTUAL balanced selbergDefect coefficient, full factorial kernel and
+fixed logarithmic character. Its prime-dilation correlation norm is EXACTLY
+the full positive overlap mass; `relative_cross_cost_ge_one` rules out
+any strict relative phase saving in that correlation. The unweighted norm
+is exactlyX, so the phase alone does not satisfy Katai orthogonality.
+The native-sized log-profile probe is almost rank one, but is NOT an actual
+prime sum, transport or certificate. This audit does NOT rule out signed
+outer-prime cancellation, signed amplitudes or every large-sieve mechanism.
+It earns ZERO credit against399/5000. The source gap~0.000071797 and signed
+balanced-pair target remain OPEN. Do not count this failed candidate or
+another equivalent formula as the user's decisive milestone. Continue
+LOCAL ONLY without subagents, commits, root/public changes or wider gates.
+See docs/zeta-riesz-balanced-dilation-audit.md. Preserve concurrent work.
+
+### Actual-prime balanced sampling (local, 2026-10-03)
+
+The optional `probe_riesz_balanced_prime_sampling.py` retains the actual
+moving length, full phase and literal balanced pair coefficient. FLINT
+checked 640 accepted primes externally; no Lean primality/population
+certificate is supplied. Its two early orders256/640 and one finite box
+do NOT test the cofinal aggregate. All12 uncertainty intervals include
+zero, and the Cartesian pairs are not independent samples. Finite-box
+count estimates charge stopped-sampling and separate marginal uncertainty;
+no continuous prime density is substituted. This experiment earned ZERO
+credit against399/5000 and is not the user's decisive milestone. The gap
+~0.000071797 remains unchanged. Do not grow this branch without a provable
+cofinal mechanism. See docs/zeta-riesz-balanced-prime-sampling.md. Keep all
+earlier results/no-gos and concurrent work; LOCAL ONLY, no subagents,
+commits/pushes, root/public changes or wider gates.
+
+### Whole-floor signed tail feedback (local, 2026-10-03)
+
+`ZetaRieszTailFeedbackFloor` chooses coefficients from the actual adverse
+COMPLETE-period correlations of the literal affine-tail null columns.
+For V=sum_i w_i*g_i*Z_i, the checked signed correlation is exactly
+sum_i w_i*g_i^2. Nonnegative column weights may be their inverse complete
+period square norm; a zero column gets weight zero. `canonicalPrice`
+uses every native squarefree label and computes its coefficients from
+this rule. Phase alignment occurs ONLY in the exact null correction;
+the original nonzero sourceWeight is unchanged. The Gram identity is
+standard; its application to the current arithmetic price is the result.
+
+The WHOLE near-period debit and far crossing price are paid AFTER the
+columns/counts have been joined. `feedbackCredit` is the resulting
+explicit correlation-square saving; no zero face is omitted. Credits
+accumulate only across successive repriced steps, never independently
+from a fixed baseline. Column mixtures may change at each step;
+`nativeColumns_mix` preserves exact literal support. Exact joint near-row
+annihilation removes their debit, but approximate projections must charge
+their full actual residual. No useful native projection is assumed.
+
+The direct native floor subtracts tailCost, adds successive paid credits,
+and retains the SAME nativePaidBudget and nativeError. All original
+allocation/count/physical/factorial/phase masks and the distinct paid-owner
+allocation remain, charged once. The previous tailPrice remains an
+alternative; zero steps recover it. `feedbackPrice<=399/5000` COFINALLY
+is still an OPEN arithmetic premise. The conditional simple-zero endpoint
+is not a zero exclusion or RH proof. The whole ceiling also remains open.
+
+Optional common-rule cross-seed testing does not give uniform transfer;
+in-sample label-fit improvements must not be promoted to a coefficient
+principle. The explicit feedback rule lowers all12 frozen finite prices
+without a new LP/per-label fit. After12 steps its boundary-paid formula
+credits are about3.9%-26.1% of those finite starting costs, or3.9%-43.6%
+with joint near-row mixtures and every residual charged. These are NONNATIVE
+order32/64 samples: no native count crop/paid-owner budget, interval/primality/
+LP/SVD certificate, population bound, cofinal rate or fraction of the
+endgame deficit. Longer iteration nearly plateaus on some cases; an exact
+null cannot reduce the adverse total of the original signed sum.
+
+The extra `--unpaid-column-audit` restricts ONLY the new correction
+columns to owner share<60069/100000 and second least prime>N^3, preserving
+the full original signed base. It avoids two previously paid geometries,
+but is not a complete unpaid-mask inventory and asserts no eventual
+payment at these small orders. The retained14/11/20/22 labels span counts
+4-6; all12 prices still improve, with formula credits about1.8%-14.7% of
+the same finite WHOLE starting costs. Do not promote the unrestricted
+4%-44% figures to savings on the exclusively unpaid native population.
+The generic native theorem permits this column restriction with no base
+population deletion or additional paid-owner budget.
+
+See docs/zeta-riesz-tail-feedback-floor.md and
+docs/riesz-tail-feedback-floor-audit.json. Continue locally, no
+commits/pushes/subagents/wider gates or public endpoint changes. Focused
+Lean/build, compiled-root namespace lint and transitive axiom checks apply.
+
 The latest local research task works upstream of `SignedCrossing`:
 `ZetaRieszSignedConvolution` joins the literal M0, M1 and exact signed
 crossing across all selected periods/counts, then reindexes `a=d*b` with
@@ -12346,6 +13954,12 @@ pushes, or CI checks.
 
 ## Mandatory local gates
 
+Lake and other dependency commands launched from a Git hook must run through
+`.githooks/with-clean-git-env`; preserve the hook environment for the project's
+staged Git checks. The wrapper removes Git's documented repository/index
+variables so foreign dependencies discover their own repositories. Keep
+`scripts/test_git_hook_environment.py` passing for linked-worktree commits.
+
 Use the repository's pinned Lean toolchain. In environments where `lake` is
 not already on `PATH`, invoke the pinned binary through the configured
 `ELAN_HOME` rather than changing the project version.
@@ -12478,3 +14092,21 @@ remain open; do not report these identities as an arithmetic floor.
   then prove the general statement in Lean.
 - Never claim RH is proved until the completion audit reaches an unconditional
   term of `RiemannHypothesis` and all local and exact-commit remote gates pass.
+
+## Signed-pair checkpoint and margin reporting
+
+The combined checkpoint registers the locally validated RH and semiprime
+modules in the ordinary root. Historical slice audits keep their original
+local-state descriptions; publication rechecks the combined tree. The active
+simple-exposed-zero floor is reduced to the literal signed pair defect with
+a vanishing Selberg budget. Polynomial-small uniquely smaller prime
+cofactors are paid under exposure, but balanced pairs remain. The cofinal
+independent 399/5000 upper bound is OPEN, as is the multiple-zero ceiling.
+
+The approximately 0.000071797 difference between the hypothetical pair
+source at the radius ceiling and the target 0.0798 is a contradiction margin.
+Never describe it as a measured remaining error, proof completion percentage,
+or an achieved upper bound. The actual-prime sampling and prime-dilation
+audits receive zero floor credit. See
+`docs/zeta-riesz-signed-pair-checkpoint.md`. Preserve every previous positive
+result and no-go; optional probes stay outside ordinary build/CI targets.

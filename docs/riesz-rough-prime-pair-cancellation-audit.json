@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Independent joint signed bound for fully rough native composite owner rows PLUS their exact prime-pair head, spent before whole-period floor clipping.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "sha256": "44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-44c2be2fc1d89941645534ca3111dbe13a3e1bc4dd251b0bcb56c7f8f911c057.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughOwnerComparison.lean",
+      "sha256": "7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerLatticePhase.lean",
+      "sha256": "90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerPhasePrimitive.lean",
+      "sha256": "9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedCoreWindow.lean",
+      "sha256": "985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLongCutoffError.lean",
+      "sha256": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszUnsignedDivisorError.lean",
+      "sha256": "240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNonownerAllocation.lean",
+      "sha256": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "sha256": "18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-rough-prime-pair-cancellation.md",
+      "sha256": "37ba6634ec099a8bd4ec3cd2b334d8f5a3c8b2aab2be8668aa21cbb73f14b36d",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-37ba6634ec099a8bd4ec3cd2b334d8f5a3c8b2aab2be8668aa21cbb73f14b36d.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a66daf5f1209144637cf1908b178b0dedcf8262ecc8dd78a0fae265b43306015",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-a66daf5f1209144637cf1908b178b0dedcf8262ecc8dd78a0fae265b43306015.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszRoughPrimePairCancellation.olean",
+      "sha256": "82c16baad4ea4b1d38213aafe0d5f1838ec55bbff551b689b92beeb1240da639",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-82c16baad4ea4b1d38213aafe0d5f1838ec55bbff551b689b92beeb1240da639.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; strict source and targeted leaf build, frozen compiled ordinary root plus explicit leaf. No root-source rebuild or wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszRoughPrimePairCancellation --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-rough-prime-pair/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "compiledRootMatchesPreviousFrozenRoot": true,
+      "rootSourceNotRebuilt": true,
+      "namespaceCount": 1,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "publicTheorems": 27,
+    "publicDefinitions": 17,
+    "compiledDeclarations": 90,
+    "theoremsIncludingPrivateAndGenerated": 72,
+    "everyCompiledDeclarationIncludingPrivateAndGeneratedAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "harmlessTacticInformationInStrictAndBuildLogs": true,
+    "previousNativeProofAndFrozenDependenciesPreserved": true
+  },
+  "exactResults": {
+    "originalCarrier": "Original intermediatePrimes, residualCoefficient with FULL boundedShare allocation, zetaPrimeLogKernel, physical/core/count masks and phase.",
+    "radiusRange": "1/2<u<=10001/20000",
+    "fixedHeightCondition": "abs(y)>=54",
+    "ownerLogRange": [
+      "51N/50",
+      "5N/4"
+    ],
+    "coreTotalLogRange": [
+      "39N/20 strict",
+      "203N/100 closed"
+    ],
+    "roughCofactorCondition": "No prime <=N^3 divides the squarefree composite cofactor.",
+    "allCompositeCountsJoinedBeforeComparison": true,
+    "allRadialDyadicWindowsShareSameSignedScalarAndPrimeHead": true,
+    "coreCoveredByAtMostNConsecutiveDyadicWindows": true,
+    "signedDensityMainPaidByFullLatticePhaseBeforeScalarCap": true,
+    "ownersAggregateByHarmonicSumNotCardinality": true,
+    "fullWindowJointBudget": "8uC(6+abs(y))(N+1)^3 exp(-3N/500) + 8(N+1)^2 ownerSamplingBudget(u,y,N)",
+    "fullWindowJointBudgetTendsToZero": true,
+    "scalarCutoff": "floor(exp(N/2))",
+    "everyOriginalNativeMaskAndComparisonGeometryProved": true,
+    "actualNativeCountCeiling": "dyadicPrimeCount(j)/864+1",
+    "nativeCountErrorIncludedOnceOnRoughPopulation": true,
+    "existingNonownerErrorRestrictedOnceToRoughPopulation": true,
+    "originalFullAllocationRetained": true,
+    "independentRealJointBound": "abs(packet_j+nativeHead(N_j)) <= croppedBudget_j+nonownerBudget(N_j), eventually.",
+    "jointRealExpressionTendsToZero": true,
+    "zeroExposedRightmostOrUnprovedCancellationHypothesisUsed": false,
+    "separateRoughPacketDecayProved": false,
+    "separatePrimeHeadDecayProved": false,
+    "complexNormDecayClaimed": false,
+    "exactPrimeHeadIsOneWeightedOrdinaryPrimePairSum": true,
+    "primeHeadSieveExactlyOneEventually": true,
+    "primeHeadSmoothOwnerAllocationPreserved": true,
+    "joinedMarkedTwoPrimeZeroTheoremNotMisapplied": true,
+    "roughAndPreviousSmallTagLabelsDisjoint": true,
+    "paidCutoffIncrementTotalEqualsLiteralFullAllocationRealPacket": true,
+    "mainAfterPaymentsIsNativeSquarefreeLabelsMinusBothDisjointPopulations": true,
+    "wholeFreeTangentCorrectionRetainedJoined": true,
+    "bothSignedTotalsSpentBeforeWholePeriodClipping": true,
+    "sameNativeErrorRetained": true,
+    "wholeFloorInequality": "Re(source*joinedPhysical) >= -restCost - signedNativeHead - combinedBudget - nativeError, eventually.",
+    "oldAndNewWholePricesAlternativeNotStacked": true,
+    "priceNeverWorsensPreviousSmallTagPrice": true,
+    "certifiedPositivePercentageOfGlobalFloorGap": null
+  },
+  "terminalTheorems": [
+    "eventually_complete_joint_bound",
+    "eventually_packet_joint_bound",
+    "tendsto_packet_add_nativeHead",
+    "eventually_nativeHead_eq_prime_pairs",
+    "labels_disjoint_smallTags",
+    "eventually_step_sub_paid",
+    "eventually_joined_floor_pruned",
+    "eventually_joined_floor",
+    "false_of_cofinal_price"
+  ],
+  "openPremises": [
+    "Cofinal new whole price <=399/5000; the signed restCost+nativeHead must still be bounded.",
+    "Remaining owner geometries, partial-window and other native cutoff periods.",
+    "Whole independent floor, multiplicity ceiling42/25, restricted contradiction and RH."
+  ],
+  "nextStep": "Attack the exact signed prime-pair head jointly with the remaining native cutoff periods and owner/window exteriors; retain all counts assembled.",
+  "noGosPreserved": [
+    "Do not drop the ordinary-prime head or erase it with the different joined markedWeight two-prime zero theorem.",
+    "Do not take termwise absolute prime costs or separate composite counts again.",
+    "Do not infer decay of a masked subsum from a complete-row theorem; use the actual count/nonowner payments.",
+    "Do not assert clipping costs are monotone under deletion or sum alternative credits."
+  ],
+  "publication": {
+    "localOnly": true,
+    "noRootRegistration": true,
+    "noWiderGates": true,
+    "noCommitOrPush": true,
+    "noSubagents": true,
+    "noPublicReadmeExplorerEndpointChanges": true,
+    "concurrentSemiprimeWorkUntouched": true
+  },
+  "logs": [
+    {
+      "path": ".lake/riesz-rough-prime-pair/strict-lean.log",
+      "sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164.log"
+    },
+    {
+      "path": ".lake/riesz-rough-prime-pair/build.log",
+      "sha256": "d5cdecbe37e0f5fa0af993b5f0e3573ecd2f2bff3c70919810d75d4bbad1ac8b",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-d5cdecbe37e0f5fa0af993b5f0e3573ecd2f2bff3c70919810d75d4bbad1ac8b.log"
+    },
+    {
+      "path": ".lake/riesz-rough-prime-pair/audit.log",
+      "sha256": "45398aefb0f84af502217a3cdb38a74cf8afe76523d8e9d00c42b65e789e5283",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-45398aefb0f84af502217a3cdb38a74cf8afe76523d8e9d00c42b65e789e5283.log"
+    },
+    {
+      "path": ".lake/riesz-rough-prime-pair/axioms.json",
+      "sha256": "4e81a9ab9b4561e4f472e7b8d535d570cf615dd9ec0822fc8d007f4bb102ddec",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-4e81a9ab9b4561e4f472e7b8d535d570cf615dd9ec0822fc8d007f4bb102ddec.json"
+    },
+    {
+      "path": ".lake/riesz-rough-prime-pair/Audit.lean",
+      "sha256": "fd5d3f37c8ff91e9524affb3053d2cb8a56a4dd0b447f7f6d657b49d63521ea6",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-fd5d3f37c8ff91e9524affb3053d2cb8a56a4dd0b447f7f6d657b49d63521ea6.lean"
+    },
+    {
+      "path": ".lake/riesz-rough-prime-pair/write_report.py",
+      "sha256": "1fb6cb35849e933c6cec411f0f1440d095cabaee2f34b3cce5f853d18ee646e5",
+      "snapshot": ".lake/riesz-rough-prime-pair/snapshot-1fb6cb35849e933c6cec411f0f1440d095cabaee2f34b3cce5f853d18ee646e5.py"
+    }
+  ]
+}

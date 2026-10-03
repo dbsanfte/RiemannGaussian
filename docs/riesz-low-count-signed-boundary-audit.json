@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "Exact same-label cancellation joins all four low-count terms into a real coefficient in [-log n,0]. One geometric budget pays every partial-period/exterior boundary in the same native floor ledger. The signed complete-period main <=399/5000 remains open.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_low_count_signed_boundary.py",
+      "sha256": "202305eacc3f5c8f38e291236e5fbcc471696a0a2e88c37c7b2298e0167da58a",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-202305eacc3f5c8f38e291236e5fbcc471696a0a2e88c37c7b2298e0167da58a.py"
+    },
+    {
+      "path": "docs/zeta-riesz-low-count-signed-boundary.md",
+      "sha256": "183523f38fed7dcd12c074632c463b50cb5169217733cfaacf12bf8e46a989ca",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-183523f38fed7dcd12c074632c463b50cb5169217733cfaacf12bf8e46a989ca.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "8c29cdaf48266a44ec47265c813b165b1d1a64c3b1e500c2bf650ef32924b554",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-8c29cdaf48266a44ec47265c813b165b1d1a64c3b1e500c2bf650ef32924b554.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHighOwnerPayment.lean",
+      "sha256": "b0c11291e005edd1994c913aeb64d8bde63f7cdfed24698d341098e7124a899a",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-b0c11291e005edd1994c913aeb64d8bde63f7cdfed24698d341098e7124a899a.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszUnallocatedOwnerPayment.lean",
+      "sha256": "53c508b35cc1d6d155bd79c0e24c91c2f1ab35ccb8b1bb3a0a7b6d7dc77e5339",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-53c508b35cc1d6d155bd79c0e24c91c2f1ab35ccb8b1bb3a0a7b6d7dc77e5339.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadCentralPayment.lean",
+      "sha256": "7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_squarefree_completion.py",
+      "sha256": "d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-d4917b22b85f6b0406ba44383ff79de607184bd9a9c9e52066ce767ac3b5f82a.py"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszLowCountSignedBoundary.olean",
+      "sha256": "a4bce5efdb0ac98c78d5bc9e6668eedae9e334428234fbfda743ac5f43cce68f",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-a4bce5efdb0ac98c78d5bc9e6668eedae9e334428234fbfda743ac5f43cce68f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/build.log",
+      "sha256": "2027a9d970b8a59bb45da91cae95c2d36a2b3954848f7e2b9d475abd9a5be789",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-2027a9d970b8a59bb45da91cae95c2d36a2b3954848f7e2b9d475abd9a5be789.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/Audit.lean",
+      "sha256": "93debb2fc2b5782342671349647f453265bdce61f7c0923a29015f7cef7b810b",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-93debb2fc2b5782342671349647f453265bdce61f7c0923a29015f7cef7b810b.lean"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/audit.log",
+      "sha256": "94b7d51fa669d178693e5c3f8dbf7c6c132769bbd651e0b113109d59705abbee",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-94b7d51fa669d178693e5c3f8dbf7c6c132769bbd651e0b113109d59705abbee.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/axioms.json",
+      "sha256": "6751be4f006326c6f293739d2a045eb5b0a6f9d86dd9d77505e5b43417460d06",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-6751be4f006326c6f293739d2a045eb5b0a6f9d86dd9d77505e5b43417460d06.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/probe.log",
+      "sha256": "4d1748b9a12abd5f22a162fe7b01ddd88c9ba9ed259fadb0f4808b539472646e",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-4d1748b9a12abd5f22a162fe7b01ddd88c9ba9ed259fadb0f4808b539472646e.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/probe.json",
+      "sha256": "f81ee12e09f9388ee15ef4dfa255a055b7d262466c6afd2f5c681438438c155a",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-f81ee12e09f9388ee15ef4dfa255a055b7d262466c6afd2f5c681438438c155a.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/unrelated-before.json",
+      "sha256": "185c83d1efa4ab39bea47d14dca4c1dccb10ccbd86c12d67c856e324fa5383e8",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-185c83d1efa4ab39bea47d14dca4c1dccb10ccbd86c12d67c856e324fa5383e8.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-boundary/diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-low-count-signed-boundary/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    }
+  ],
+  "validation": {
+    "strictLeanExitCode": 0,
+    "targetedBuildExitCode": 0,
+    "targetedBuild": "RiemannGaussian.ZetaRieszLowCountSignedBoundary",
+    "frozenOrdinaryRootPlusExplicitLeafAudit": true,
+    "lintExitCode": 0,
+    "linters": 14,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 48,
+        "theoremAxioms": [
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_data._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_sub_correction_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.prime_semiprime_disjoint._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.eventually_native_signed_period_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.highPrimeCorrection_eq_label_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.highPrimeCorrection_eq_label_sum._simp_1_2",
+            "axioms": []
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountPeriods._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.tendsto_native_plus_lowCountPeriods",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionIncidences._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionIncidences._proof_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.joinedCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionLabels.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_bounds_of_cap",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.joined_sum_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.head_le_correction._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionProduct.eq_1",
+            "axioms": []
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionCoefficient_pair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_data",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.eventually_native_signed_period_floor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionIncidences._proof_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionIncidences._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_atom_re._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.headLabels_subset_correction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionIncidences.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.head_le_correction",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountBoundary_eq_joined._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_atom_re",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.joinedCoefficient_majorant",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.prime_semiprime_disjoint",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_sub_correction_eq._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.nativeSignedPeriodBudget_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountBoundary_sub_periods_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.joinedCoefficient_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correctionCoefficient_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.joinedCoefficient_real",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountBoundary_sub_periods_bound._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_largest",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_squarefree",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_not_prime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_injective",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.masked_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountBoundary_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.lowCountPeriods._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaRieszLowCountSignedBoundary.0.RiemannGaussian.ZetaRieszLowCountSignedBoundary.correction_atom_re._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_low_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_sub_correction_eq._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszLowCountSignedBoundary.completed_sub_correction_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszLowCountSignedBoundary",
+        "declarations": 56
+      }
+    ],
+    "probeExitCode": 0,
+    "probeCases": 9,
+    "frozenComplexRegressions": 27,
+    "gitDiffCheckExitCode": 0
+  },
+  "exactResults": [
+    "headLabels_subset_correction",
+    "head_le_correction",
+    "completed_sub_correction_eq",
+    "joinedCoefficient_bounds",
+    "lowCountBoundary_eq_joined",
+    "lowCountBoundary_sub_periods_bound",
+    "nativeSignedPeriodBudget_tendsto",
+    "eventually_native_signed_period_bound",
+    "eventually_native_signed_period_floor"
+  ],
+  "retainedTarget": {
+    "signedCofinalUpper": "lowCountPeriods <= 399/5000+o(1)",
+    "upperStillOpen": true,
+    "floorStillOpen": true,
+    "ceiling42Over25StillOpen": true,
+    "noZeroExclusionOrRH": true,
+    "noIndependentNormBoundOnCompletePeriodMain": true
+  },
+  "scope": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noPublicEndpointReadmeExplorerEdits": true,
+    "noWiderGates": true,
+    "oldHeadCreditsAndOldFourComponentPeriodBudgetNotSpentAgain": true,
+    "sourceOnlyGeometricPaymentsWithUnknownFiniteConstant": true,
+    "toyProbeNotNativeOrCofinalCertificate": true
+  },
+  "preservation": {
+    "baselineFiles": 317,
+    "ownedBaselinePath": "AGENTS.md",
+    "unchangedOtherBaselineFiles": 315,
+    "concurrentExternalChangesPreserved": [
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "beforeSha256": "02fc52c07ad5f17386bfb03ae2d7e80a158de0b0338533dacec5a628e3e4ee3d",
+        "observedAfterSha256": "52585e55c0c2aadd90937e5b3ebcdc14b5b4b805f7cdd0797d50917a43ba3af6",
+        "explanation": "Concurrent semiprime documentation update; this slice never edited this path."
+      }
+    ]
+  }
+}

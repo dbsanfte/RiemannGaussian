@@ -18,6 +18,7 @@ jobs:
           python3 scripts/numerical_certificate.py
           python3 scripts/test_numerical_certificate_build.py
           python3 scripts/test_numerical_certificate_scheduler.py
+          python3 scripts/test_git_hook_environment.py
       - name: Reject unfinished Lean proofs
         shell: bash
         run: |

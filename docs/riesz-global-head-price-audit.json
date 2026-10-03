@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalStillActive": true,
+  "verdict": "The EXACT positive semiprime-minus-full-head allowance diverges, even on the native schedule. This does not imply divergence of the signed carrier; that positive price cannot close the floor.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadPriceAudit.lean",
+      "sha256": "96a6ae9f5d1cdbb3c20f4c24db615926032750ecc132683068673da4df2151b3",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-96a6ae9f5d1cdbb3c20f4c24db615926032750ecc132683068673da4df2151b3.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-global-head-price-audit.md",
+      "sha256": "31c59aa22c106cb009c0e03673469a7f85c4fa255485dfaa0c73396d90ccccde",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-31c59aa22c106cb009c0e03673469a7f85c4fa255485dfaa0c73396d90ccccde.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "748d170d6dd2860874293d3c42bc6a0d2b0142553d9dde9bf27a76850783d618",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-748d170d6dd2860874293d3c42bc6a0d2b0142553d9dde9bf27a76850783d618.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalHeadCentralPayment.lean",
+      "sha256": "7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-7c2545516fc5137e48a5553bac87d72cad75678cf96c3840e6ca1c213d9b0404.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBoundaryPruning.lean",
+      "sha256": "5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-5950672ce7cd824ee628801739bcec88cde32c27bda7bf525b2bdcce03f7c721.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLargeOrderCore.lean",
+      "sha256": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec.lean"
+    },
+    {
+      "path": "scripts/probe_riesz_global_head_price_audit.py",
+      "sha256": "c8007132c841fc6fde511c612998b41b9aec88b86be3aeeaa338b4dba8340f77",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-c8007132c841fc6fde511c612998b41b9aec88b86be3aeeaa338b4dba8340f77.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAllowanceGrowth.lean",
+      "sha256": "c5111ce200aa25a48d49d21bc72aafdad684d9a0622308d276a670d9545664f1",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-c5111ce200aa25a48d49d21bc72aafdad684d9a0622308d276a670d9545664f1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimeWindow.lean",
+      "sha256": "1630174ee0412c8890a96b3350583a1e314d1bbd42c6161aa579986532f24d4f",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-1630174ee0412c8890a96b3350583a1e314d1bbd42c6161aa579986532f24d4f.lean"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszGlobalHeadPriceAudit.olean",
+      "sha256": "552da5f9aa75a189cacca32bb145b994c6749de0c75ab1ee965faf198cccc7d9",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-552da5f9aa75a189cacca32bb145b994c6749de0c75ab1ee965faf198cccc7d9.olean"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".lake/riesz-global-head-price-audit/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit/build.log",
+      "sha256": "ed8ffc6fb50796f3d777fe1714d0f0dbc71d434152b1cbdddcc029db9a524f81",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-ed8ffc6fb50796f3d777fe1714d0f0dbc71d434152b1cbdddcc029db9a524f81.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit-check/Audit.lean",
+      "sha256": "b77078109d73840a067bb8f4550303f08fa61686b021e3187ba7f13ff2996d02",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-b77078109d73840a067bb8f4550303f08fa61686b021e3187ba7f13ff2996d02.lean"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit-check/audit.log",
+      "sha256": "466f79a87b12f9ba825988413d22ce29c7bb5aa61f0c8a6f1fe48705d477793c",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-466f79a87b12f9ba825988413d22ce29c7bb5aa61f0c8a6f1fe48705d477793c.log"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit-check/axioms.json",
+      "sha256": "38a4c58aea2880d943747288623e8942dd619af9b5f45ed4d1ff9ac095f20870",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-38a4c58aea2880d943747288623e8942dd619af9b5f45ed4d1ff9ac095f20870.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit/probe.json",
+      "sha256": "2abf33673e7cfbe051d3f489eabb5f0836ad4d5383cb393b919d99e08d98f59e",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-2abf33673e7cfbe051d3f489eabb5f0836ad4d5383cb393b919d99e08d98f59e.json"
+    },
+    {
+      "path": ".lake/riesz-global-head-price-audit/probe.log",
+      "sha256": "e938deaaa68fb8bc9998b6bdaf8f9ec560ec326be86e7642e64f8141e8ba2faf",
+      "snapshot": ".lake/riesz-global-head-price-audit-check/snapshot-e938deaaa68fb8bc9998b6bdaf8f9ec560ec326be86e7642e64f8141e8ba2faf.log"
+    }
+  ],
+  "theoremLines": {
+    "balanced_pair_injective": 57,
+    "balancedProducts_card": 67,
+    "balancedProducts_subset_unmatched": 95,
+    "balanced_coefficient_lower": 128,
+    "eventually_explicit_prime_box_count": 166,
+    "eventually_balanced_product_count": 196,
+    "balanced_atom_lower": 212,
+    "balanced_mass_le_central_price": 242,
+    "central_price_le_full_price": 292,
+    "balanced_box_scalar_lower": 303,
+    "eventually_full_price_growth": 339,
+    "fullJoinedAtomPrice_tendsto_atTop": 366,
+    "native_full_price_tendsto_atTop": 384,
+    "not_frequently_native_full_price_le": 391
+  },
+  "validation": {
+    "strictWarningAsError": true,
+    "targetedBuildPassed": true,
+    "frozenCompiledRootSHA256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "all14LintersPassed": true,
+    "compiledDeclarations": 31,
+    "compiledTheoremsIncludingPrivateAndAutomatic": 27,
+    "allDeclarationsCheckedTransitively": true,
+    "onlyStandardAxioms": true,
+    "standardAxiomsAllowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "numericalCases": 9,
+    "frozenComplexRegressions": 45
+  },
+  "preservation": {
+    "baselineFiles": 291,
+    "unchanged": 290,
+    "concurrentChangesObserved": [
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "a101a9e9734fb40cdbc49b79945a52eb5127f8212f7466a93a8a4eb4a0123628",
+        "current": "dd783ec746f6a5af7dbe536c118ea85590bf70fd96a378c796b6731ce04ab910"
+      }
+    ],
+    "noneOfThosePathsEditedByThisSlice": true,
+    "frozenCompiledRootUnchanged": true
+  },
+  "localOnly": {
+    "noCommitOrPush": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noWiderGates": true,
+    "noPublicEndpointChanges": true,
+    "noProbeInBuildOrCI": true
+  },
+  "numericalScope": {
+    "optionalOutsideBuildsCI": true,
+    "diagnosticOnly": true,
+    "toyLength": "-2N log(10001/20000)",
+    "nativeMovingLength": false,
+    "nativeDyadicSchedule": false,
+    "nativeDeletionMasks": false,
+    "fullHeadAndRawHighCoefficientsPreserved": true,
+    "noPositiveCountAllowanceInSignedPeriodSum": true,
+    "noEventualPaymentAppliedAtToyOrders": true,
+    "phasePeriodsRetainExteriorEndpoints": true,
+    "noCofinalFloorOrZeroExclusionClaim": true
+  },
+  "arithmetic": {
+    "radiusInterval": "1/2 < u <= 10001/20000",
+    "auditedQuantity": "D2_N - nativeHead(u,0,N) + 2*radialConstant*exp(-N/1000000)",
+    "literalBalancedPrimeBoxes": [
+      "N < log p <= N+1",
+      "N+1 < log q <= N+2"
+    ],
+    "actualMovingLengthPreserved": true,
+    "distinctProductsProved": true,
+    "centralNativeSemiprimeMembershipProved": true,
+    "untouchedByHeadOwnerMaskProved": true,
+    "primeCountInput": "Existing proved fixed-width PNT, used ONLY for a positive-price lower bound",
+    "primeCountThresholdUnevaluated": true,
+    "eventualExplicitLowerEnvelope": "(u*exp(-9/2)/216)*(2u)^N/(N+1)^3",
+    "exactPositivePriceTendsToInfinity": true,
+    "nativeDyadicPriceTendsToInfinity": true,
+    "noCofinalSubsequenceBelowAnyFixedCeilingProved": true,
+    "signedCarrierDivergenceClaimed": false,
+    "trueHeadCreditAndEveryPriorPaymentPreserved": true,
+    "wholeFloorProved": false,
+    "multiplicityCeilingProved": false,
+    "newZeroExclusionProved": false,
+    "RHProved": false,
+    "noSignedCarrierBoundClaimed": true
+  },
+  "scalarExploration": {
+    "radius": "0.50005",
+    "logarithmicGrowthExponent": "0.00009999500033330833533316668095113106348206440107107551266129432164490816",
+    "growthConstant": "0.00002571784129142622853424247361194264079702875331602293370240122593098103",
+    "scalarModelCrossing": "472391.5222028929323509155291884757423251032652641349279382798927877383",
+    "samples": [
+      {
+        "N": 256,
+        "logLowerEnvelope": "-27.18995512784410946472942330387960905777375614679483747906220987687472",
+        "lowerEnvelope": "0.000000000001554363268412803906336362198676658460881779861458697610920840701781822"
+      },
+      {
+        "N": 640,
+        "logLowerEnvelope": "-29.893417163792469788406323968115408932157170418007584794605792045719",
+        "lowerEnvelope": "0.0000000000001041007553000081607976469276942977587404755596698243634073523215664399"
+      },
+      {
+        "N": 1536,
+        "logLowerEnvelope": "-32.42749650334760298443081052215130306923601122696491135463579313150019",
+        "lowerEnvelope": "0.000000000000008258804897754739824084577769462012657643120331444799876707125203753247"
+      },
+      {
+        "N": 4096,
+        "logLowerEnvelope": "-35.11277690451915928914251811449532623097484268952705087121940020038884",
+        "lowerEnvelope": "0.0000000000000005632675680760056701213983370947549808107897999499907931722985913646615"
+      },
+      {
+        "N": 8192,
+        "logLowerEnvelope": "-36.78227278093875921985695148253803934768242248049155903101210872333951",
+        "lowerEnvelope": "0.0000000000000001060869343067047244491875110102470768914810306618992485649230803131424"
+      },
+      {
+        "N": 65536,
+        "logLowerEnvelope": "-37.28616369429540187834427852907388681290407199464679188588728925469731",
+        "lowerEnvelope": "0.00000000000000006409510395149109968783883875846141136651979223311888222765842005305755"
+      },
+      {
+        "N": 100000,
+        "logLowerEnvelope": "-35.10763195467362973046503481507118902527674915487985771819094819090984",
+        "lowerEnvelope": "0.0000000000000005661730192546049405638915498119148682091143681725909767570294119552438"
+      },
+      {
+        "N": 500000,
+        "logLowerEnvelope": "0.06207844120340427099187162568297348525782913974555291471165456458547523",
+        "lowerEnvelope": "1.064045806488108619397546668763635631608142979722846850203479104586779"
+      },
+      {
+        "N": 1000000,
+        "logLowerEnvelope": "47.98014006617323601632350448689257549056358370067834722475837322102241",
+        "lowerEnvelope": "687875864590968483993.8020225234850060730923951715761737152172200451008"
+      }
+    ],
+    "scope": {
+      "eventualEnvelopeOnly": true,
+      "unevaluatedPNTStartingOrder": true,
+      "scalarModelCrossingIsNotNativeCertifiedThreshold": true,
+      "noSignedDivergenceOrCofinalFloorClaim": true
+    }
+  }
+}

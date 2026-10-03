@@ -1,0 +1,732 @@
+{
+  "date": "2026-10-03",
+  "module": "RiemannGaussian.ZetaRieszSignedSelbergPayment",
+  "kind": "Conditional signed Selberg cancellation on literal complete-period support",
+  "status": "Local only; independent pair-defect floor remains open",
+  "mathematicalClaims": {
+    "exactFiniteLoggedConvolution": true,
+    "allFactorialOrdersRetained": true,
+    "primeSquareDiagonalExactAndGeometricallyPaid": true,
+    "literalSupportCompletionErrorIndependentAndGeometric": true,
+    "literalSelbergNormBoundWithCenteredCesaroCost": true,
+    "literalSelbergTendsToZeroUnderSimpleExposedZero": true,
+    "sourceEquivalentToLiteralSignedPairDefectUnderSameHypotheses": true,
+    "nativeLedgerSpendsExplicitVanishingBudget": true,
+    "independentPairDefectUpperBound": false,
+    "cofinalFloor": false,
+    "multipleZeroCeiling": false,
+    "zeroExclusion": false,
+    "RH": false,
+    "floorConstantImproved": false,
+    "newSourceLimit": false
+  },
+  "openTarget": {
+    "quantity": "Re(literalPairDefect u y (dyadicMomentOrder j))",
+    "upperBound": "399/5000 + o(1), cofinally",
+    "radiusCeiling": "10001/20000",
+    "originalMasksRetained": true,
+    "termwiseDefectNormPaymentForbidden": true
+  },
+  "terminalTheorems": [
+    "norm_literalSelberg_le",
+    "exists_literalSelberg_completion_bound",
+    "tendsto_literalSelberg_simple",
+    "selbergBudget_tendsto_simple",
+    "literalPairDefect_eq_nonprime",
+    "eventually_native_budgeted_pairDefect_floor",
+    "exists_native_pairDefect_payment_simple",
+    "tendsto_native_plus_pairDefect_simple"
+  ],
+  "focusedValidation": {
+    "strictLeaf": true,
+    "targetedBuild": true,
+    "namespaceLinters": 14,
+    "allDeclarationStandardAxiomAudit": true,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 68,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selbergBudget_tendsto_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.scaled_squareMoment_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.literalSelberg.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.traceBudget.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.loggedDiagonal_div_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.scaled_completeSelberg_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.scaled_completeSelberg_eq._simp_1_2",
+            "axioms": []
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.traceError_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.finiteSelberg_eq._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.ordinaryLabel_eventually_prefix",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_literalSelberg_completion_bound._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.finiteSelberg_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_selbergCoefficient_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_convolutionError_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.finiteSelberg_eq_label_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.finiteLabels_ordinary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.lowCountPeriods_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.interior_ordinary_mem_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.tendsto_native_plus_pairDefect_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.nativeSelbergBudget_tendsto_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selbergCoefficient_pair_ne",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_squareTerm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.eventually_native_pairDefect_floor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.eventually_native_budgeted_pairDefect_floor._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.literalPairDefect_eq_nonprime._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.eventually_native_budgeted_pairDefect_floor._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.joinedLabels_ordinary._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.scaled_squareMoment_bound._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_literalSelberg_completion_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.squareMass._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_literalSelberg_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.pair_ordinaryLabel._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.finiteSelberg_prefix_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.convolutionError.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.squareTerm._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.squareTerm.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.traceBudget_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.cofactorMoment_prefix_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.tendsto_completeSelberg_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_literalSelberg_completion_bound._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.tendsto_literalSelberg_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.primePrefix.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_native_pairDefect_payment_simple",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.logged_ordered_convolution",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.tendsto_literalSelberg_completion_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.pair_ordinaryLabel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.tendsto_literalSelberg_completion_error._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selbergEdgeConstant_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_squareMoment_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.traceError.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.summable_squareTerm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.traceBudget._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.literalPairDefect_eq_nonprime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.eventually_native_budgeted_pairDefect_floor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.scaled_completeSelberg_eq._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.norm_traceError_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selberg_pair_kernel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.ordinaryLabel_pair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.joinedLabels_ordinary",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.loggedDiagonal.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaRieszSignedSelbergPayment.selbergEdgeConstant._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "module": "RiemannGaussian.ZetaRieszSignedSelbergPayment",
+        "declarations": 85
+      }
+    ],
+    "changedLeafPlaceholderScan": true,
+    "gitDiffCheck": true,
+    "ordinaryCompiledRootUnchanged": true,
+    "frozenRootSha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "wholeProjectBuild": false,
+    "rootRegistration": false,
+    "publicEndpointUpdate": false,
+    "commit": false,
+    "push": false,
+    "subagents": false
+  },
+  "numericalEvidence": {
+    "pureSelectedSimpleZeroChannel": true,
+    "actualPrimeEnumeration": false,
+    "arithmeticEstimate": false,
+    "primeDensityTransport": false,
+    "intervalCertificate": false,
+    "movingRadialSaddle": "N/u",
+    "finiteAllocationRetained": true,
+    "dampedLengthErrorEnclosureRetained": true,
+    "reports": [
+      ".lake/riesz-native-selberg-profile/final64.json",
+      ".lake/riesz-native-selberg-profile/final96.json",
+      ".lake/riesz-native-selberg-profile/final-height100.json"
+    ],
+    "evaluations": 18,
+    "max64vs96FloatingDifference": 9.2148511043888e-15,
+    "maxHeight100FloatingDifference": 2.220446049250313e-15,
+    "existingSourceLimit": 0.07987179703494385,
+    "independentTarget": 0.0798,
+    "existingSourceGap": 7.179703494385181e-05,
+    "forbiddenFrozenTwoNSliceLimit": 0.07974183525247697,
+    "oldIntermediateReportsExcluded": true
+  },
+  "preservation": {
+    "baselineFiles": 346,
+    "unchangedFiles": 340,
+    "changedFiles": [
+      "AGENTS.md",
+      "RiemannGaussian.lean",
+      "RiemannGaussian/SemiprimeCompanionRows.lean",
+      "docs/semiprime-factorisation-investigation.md",
+      "docs/theorem-explorer/metadata.json",
+      "scripts/probe_semiprime_companion_rows.py"
+    ],
+    "ownExistingFileChange": "AGENTS.md (new local regime entry)",
+    "otherExistingChanges": "Concurrent semiprime/root/metadata work preserved",
+    "negativeAuditsPreserved": true
+  },
+  "immutablePins": [
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3/ZetaRieszSignedSelbergPayment.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-signed-selberg-payment.md",
+      "sha256": "ff0b7e28c78d4a0d4a6e6f03511ba9334d7adffadf164a32f94a317cc5b5cfc7",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/ff0b7e28c78d4a0d4a6e6f03511ba9334d7adffadf164a32f94a317cc5b5cfc7/zeta-riesz-signed-selberg-payment.md"
+    },
+    {
+      "path": "scripts/probe_riesz_native_selberg_profile.py",
+      "sha256": "9a6a7539757274d5216a2dd728c1b2a42ac8157b21c6a665edf1b5c6368c42b6",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/9a6a7539757274d5216a2dd728c1b2a42ac8157b21c6a665edf1b5c6368c42b6/probe_riesz_native_selberg_profile.py"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cb0408f4f18b2ef60778cce812e7aa0a07e0ef6312f11e1ce55cbc1a01f0c9aa",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/cb0408f4f18b2ef60778cce812e7aa0a07e0ef6312f11e1ce55cbc1a01f0c9aa/AGENTS.md"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20/ZetaRieszLowCountSelbergAudit.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5/ZetaRieszLowCountSignedBoundary.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7/ZetaRieszGlobalPeriodEdgePayment.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimePairConvolution.lean",
+      "sha256": "a3dbc92d6d5b82c80f12d12e5397a2665a3db00cbb9bd9fedc5f49201db60dc3",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/a3dbc92d6d5b82c80f12d12e5397a2665a3db00cbb9bd9fedc5f49201db60dc3/ZetaRieszPrimePairConvolution.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean",
+      "sha256": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7/ZetaRieszPrimeCompletionPhase.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedPrimeMoments.lean",
+      "sha256": "67f7ce41450a7121ed5be4c44b0f8ad63ba463ce833de949cea56b1dc7398294",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/67f7ce41450a7121ed5be4c44b0f8ad63ba463ce833de949cea56b1dc7398294/ZetaExposedPrimeMoments.lean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszSignedSelbergPayment.olean",
+      "sha256": "3d9fe01142ce6d1eaeb39b411cc5b0e02aa5f385ea4ec801da03da31d8e79175",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/3d9fe01142ce6d1eaeb39b411cc5b0e02aa5f385ea4ec801da03da31d8e79175/ZetaRieszSignedSelbergPayment.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f/RiemannGaussian.olean"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/Audit.lean",
+      "sha256": "80c20d0cd9c83be3afaaf93c95877ff173b9e187e2312e19cd862123198791df",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/80c20d0cd9c83be3afaaf93c95877ff173b9e187e2312e19cd862123198791df/Audit.lean"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/strict.log"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/build.log",
+      "sha256": "7a6a70e7be848aad56f9d375b245f166753f3286ca68ae9c0e52dc285bb95442",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/7a6a70e7be848aad56f9d375b245f166753f3286ca68ae9c0e52dc285bb95442/build.log"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/audit.log",
+      "sha256": "f6fa060d2038e69b6388349ee5067b7284611c1ed2be9b14437ca3fbc9bc3b6d",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/f6fa060d2038e69b6388349ee5067b7284611c1ed2be9b14437ca3fbc9bc3b6d/audit.log"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/axioms.json",
+      "sha256": "8c7b98c389524fa414f5ea5285aff4387f96fb026159bc0860b56eea4c4e338d",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/8c7b98c389524fa414f5ea5285aff4387f96fb026159bc0860b56eea4c4e338d/axioms.json"
+    },
+    {
+      "path": ".lake/riesz-signed-selberg-payment/diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/diff-check.log"
+    },
+    {
+      "path": ".lake/riesz-native-selberg-profile/unrelated-before.json",
+      "sha256": "d0a1f4a213cdfe66c979e1f8c0ccf0e315d70ba31796b4c99e9b801bfa3ca784",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/d0a1f4a213cdfe66c979e1f8c0ccf0e315d70ba31796b4c99e9b801bfa3ca784/unrelated-before.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-selberg-audit/report.json",
+      "sha256": "0e82a2c17f491752bc1b9de645f780aa75923ff9f867a199596a0470a7b18f06",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/0e82a2c17f491752bc1b9de645f780aa75923ff9f867a199596a0470a7b18f06/report.json"
+    },
+    {
+      "path": ".lake/riesz-native-selberg-profile/final64.json",
+      "sha256": "a5eda1f3941f54c88dab9f275ed9fca32e082f20feeb88290d361b71f304f265",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/a5eda1f3941f54c88dab9f275ed9fca32e082f20feeb88290d361b71f304f265/final64.json"
+    },
+    {
+      "path": ".lake/riesz-native-selberg-profile/final96.json",
+      "sha256": "4f3ecfdbc79f49fb60a7c96cf69bbbd231078b89c2fc42573d756f8b0f805a11",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/4f3ecfdbc79f49fb60a7c96cf69bbbd231078b89c2fc42573d756f8b0f805a11/final96.json"
+    },
+    {
+      "path": ".lake/riesz-native-selberg-profile/final-height100.json",
+      "sha256": "dfa5b0d32ec259cd7eb8ab8487278eabc22689350a1f515fbcac9505afe45c08",
+      "snapshot": ".lake/riesz-signed-selberg-payment/immutable/dfa5b0d32ec259cd7eb8ab8487278eabc22689350a1f515fbcac9505afe45c08/final-height100.json"
+    }
+  ]
+}

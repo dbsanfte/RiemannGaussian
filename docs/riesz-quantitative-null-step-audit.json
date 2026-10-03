@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "baseHead": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "purpose": "Explicit priced gain in the original joint floor, with exact linear charges at near-zero block margins; no fixed native credit or cofinal numerical floor proved.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean": {
+      "path": "RiemannGaussian/ZetaRieszQuantitativeNullStep.lean",
+      "sha256": "a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97",
+      "snapshot": ".lake/riesz-joint-null-credit/source-a9fe375f35c1fb97de7f84daa58203f90a6fe6e27e68d76707b1303185aa8c97.lean"
+    },
+    "scripts/probe_riesz_quantitative_null_step.py": {
+      "path": "scripts/probe_riesz_quantitative_null_step.py",
+      "sha256": "4ce455bba24a8ec47d18a1a7d64a9f8b8b3c029dc50c1701ecf665c05aa7499c",
+      "snapshot": ".lake/riesz-joint-null-credit/source-4ce455bba24a8ec47d18a1a7d64a9f8b8b3c029dc50c1701ecf665c05aa7499c.py"
+    },
+    "docs/zeta-riesz-quantitative-null-step.md": {
+      "path": "docs/zeta-riesz-quantitative-null-step.md",
+      "sha256": "b298b029fb6b9f26f5010a7e0ad0f8f0e23aee25db1fc894a70f08ce334dfac4",
+      "snapshot": ".lake/riesz-joint-null-credit/source-b298b029fb6b9f26f5010a7e0ad0f8f0e23aee25db1fc894a70f08ce334dfac4.md"
+    }
+  },
+  "publicTheorems": [
+    "crossingPrice_nonneg",
+    "crossingCost_le",
+    "zeroDebit_le_crossingCost",
+    "cost_not_decreased_of_boundary",
+    "cost_not_decreased_both_orientations",
+    "cost_gain_lower",
+    "step_nonneg",
+    "guaranteedGain_nonneg",
+    "guaranteedGain_pos",
+    "guaranteedGain_le_saving",
+    "floor_with_guaranteed_gain",
+    "cubicIncrement_scaled",
+    "cubicIncrement_orthogonal_eq",
+    "cubicIncrement_coherent_zero",
+    "cubicIncrement_first_zero",
+    "cutoffPeriod_pos",
+    "cubic_zero_period",
+    "credit_ge_guaranteedGain",
+    "nativeGuaranteedGain_nonneg",
+    "nativeGuaranteedGain_le_credit",
+    "nativeGuaranteedGain_le_cost",
+    "native_floor_with_guaranteed_gain",
+    "native_floor_with_best_orientation",
+    "farPrice_nonneg",
+    "crossingCost_le_near_far",
+    "thresholdStep_nonneg",
+    "thresholdGain_nonneg",
+    "thresholdGain_le_saving",
+    "thresholdGain_zero",
+    "credit_ge_thresholdGain",
+    "nativeThresholdGain_nonneg",
+    "nativeThresholdGain_le_credit",
+    "nativeThresholdGain_le_cost",
+    "nativeThresholdGain_zero",
+    "native_floor_with_threshold_gain",
+    "native_floor_with_best_threshold_gain",
+    "threshold_tiny_margin_regression"
+  ],
+  "compiledAxiomAudit": {
+    "theoremCountIncludingGeneratedHelpers": 72,
+    "onlyStandardAxioms": true,
+    "modules": [
+      {
+        "theorems": 72,
+        "module": "RiemannGaussian.ZetaRieszQuantitativeNullStep",
+        "declarations": 86
+      }
+    ]
+  },
+  "validation": {
+    "strictLeanWarningAsError": true,
+    "focusedLakeTargetWarningAsError": true,
+    "namespaceLintWithOrdinaryRootImported": true,
+    "namespaceLinters": 14,
+    "onlyStandardTransitiveAxioms": true,
+    "logs": {
+      ".lake/riesz-insertion-rate/null-step-lean.log": {
+        "path": ".lake/riesz-insertion-rate/null-step-lean.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+      },
+      ".lake/riesz-insertion-rate/null-step-build.log": {
+        "path": ".lake/riesz-insertion-rate/null-step-build.log",
+        "sha256": "28242bc780886dfb503117bbc061654b4fdb20824262f5307dd70558bc9b0f35",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-28242bc780886dfb503117bbc061654b4fdb20824262f5307dd70558bc9b0f35.log"
+      },
+      ".lake/riesz-insertion-rate/null-step-audit.log": {
+        "path": ".lake/riesz-insertion-rate/null-step-audit.log",
+        "sha256": "3a3169d6f86be9cecf4116ceeaef6e86cc8d173ac8779159cf48a179f375551d",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-3a3169d6f86be9cecf4116ceeaef6e86cc8d173ac8779159cf48a179f375551d.log"
+      },
+      ".lake/riesz-insertion-rate/NullStepAudit.lean": {
+        "path": ".lake/riesz-insertion-rate/NullStepAudit.lean",
+        "sha256": "004828b0e1f23f89ff9b016850bdebc4e10a7ca3987ff00b80b4b47b73d0a7f3",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-004828b0e1f23f89ff9b016850bdebc4e10a7ca3987ff00b80b4b47b73d0a7f3.lean"
+      },
+      ".lake/riesz-insertion-rate/null-step-axioms.json": {
+        "path": ".lake/riesz-insertion-rate/null-step-axioms.json",
+        "sha256": "2c9e4add76b37603483b0a997f676bccd4c3b0d1e82485d9dd827629bb415e62",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-2c9e4add76b37603483b0a997f676bccd4c3b0d1e82485d9dd827629bb415e62.json"
+      }
+    },
+    "publicRootAndExplorerNotUpdated": true,
+    "localOnly": true
+  },
+  "probe": {
+    "receipt": {
+      "path": ".lake/riesz-quantitative-null-step/report.json",
+      "sha256": "36f8ccc3dc66b7b9dbd9a190557b8abda1a1ad5977a75bd76dae50a283ae7ead",
+      "snapshot": ".lake/riesz-joint-null-credit/source-36f8ccc3dc66b7b9dbd9a190557b8abda1a1ad5977a75bd76dae50a283ae7ead.json"
+    },
+    "selfTest": {
+      "exactRationalRegressions": 2000,
+      "jointZeroFaceExample": {
+        "step": "1/2",
+        "guaranteedGain": "1/2",
+        "actualGain": "1",
+        "signedCorrelation": "2",
+        "nearDebit": "0",
+        "crossingPrice": "2",
+        "threshold": "0"
+      },
+      "joinedZeroDebitCancellation": "2",
+      "individualAxesGiveNoGuarantee": true,
+      "nearZeroExample": {
+        "unthresholded": {
+          "step": "4/1000005",
+          "guaranteedGain": "4/1000005",
+          "actualGain": "1000001/200001000000",
+          "signedCorrelation": "2",
+          "nearDebit": "0",
+          "crossingPrice": "1000005/4",
+          "threshold": "0"
+        },
+        "thresholded": {
+          "step": "2/5",
+          "guaranteedGain": "1/5",
+          "actualGain": "400001/1000000",
+          "signedCorrelation": "2",
+          "nearDebit": "1",
+          "crossingPrice": "5/4",
+          "threshold": "1/1000000"
+        }
+      },
+      "zeroGroupsNotDiscarded": true,
+      "zeroPriceHandled": true,
+      "scope": "unit inputs, not native prime-population bounds"
+    },
+    "completeConstructedPrimeBatches": 4,
+    "heightCases": 12,
+    "noGuaranteedGainCases": 4,
+    "maximumFiniteRescaledGainFraction": 0.020997610390278847,
+    "nativePopulationRecords": 0,
+    "probablePrimesAndFloatingPhase": true,
+    "largeCutoffsLogInterpolated": true,
+    "nativeCreditMagnitudeCertified": false,
+    "originalCountCeilingUsedInEarlyProbe": true,
+    "eventualCanonicalCountCropApplied": false,
+    "sources": {
+      "scripts/riesz_signed_block_geometry.py": {
+        "path": "scripts/riesz_signed_block_geometry.py",
+        "sha256": "fa4f09e6e387529352727951e80ccf82c87fd79fc3b2e2d31ae5b0b10ff31e6e",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-fa4f09e6e387529352727951e80ccf82c87fd79fc3b2e2d31ae5b0b10ff31e6e.py"
+      },
+      "scripts/probe_riesz_joined_count_correlation.py": {
+        "path": "scripts/probe_riesz_joined_count_correlation.py",
+        "sha256": "52d3f7dcb31b8e8f37d2c2dee6e4e2a4c2f297ac802eb104bad50c4a768793d5",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-52d3f7dcb31b8e8f37d2c2dee6e4e2a4c2f297ac802eb104bad50c4a768793d5.py"
+      },
+      "scripts/probe_riesz_complex_null_profiles.py": {
+        "path": "scripts/probe_riesz_complex_null_profiles.py",
+        "sha256": "596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-596bef137d720307c54dc0778d4c0932465aa025cd910f09fa99dab9cc4a94e2.py"
+      },
+      "scripts/probe_riesz_complex_projection.py": {
+        "path": "scripts/probe_riesz_complex_projection.py",
+        "sha256": "0ed0342f55549602f5739a2ac76c783b3f059122396846c8bb10194341a87820",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-0ed0342f55549602f5739a2ac76c783b3f059122396846c8bb10194341a87820.py"
+      },
+      "scripts/probe_riesz_canonical_joint.py": {
+        "path": "scripts/probe_riesz_canonical_joint.py",
+        "sha256": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b.py"
+      },
+      "scripts/probe_riesz_fixed_count_period.py": {
+        "path": "scripts/probe_riesz_fixed_count_period.py",
+        "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b.py"
+      },
+      "scripts/probe_riesz_reflected_phase_gram.py": {
+        "path": "scripts/probe_riesz_reflected_phase_gram.py",
+        "sha256": "415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04",
+        "snapshot": ".lake/riesz-quantitative-null-step/source-415d11a29b26c58276b60c3e54a38fe2c7643876c493362e61aa62994d374b04.py"
+      }
+    },
+    "jointExtensionAudit": "docs/riesz-joint-null-credit-audit.json"
+  },
+  "scope": {
+    "originalCarrierAndMasksRetained": true,
+    "allCountsPeriodsJoinedBeforeClipping": true,
+    "zeroAndNearZeroMarginsFullyCharged": true,
+    "sameAnalyticError": true,
+    "sameBaselineCostFunding": true,
+    "bestOrientationsUseMaximumNotSum": true,
+    "coherentHigherCountPrefixesKilledExactly": true,
+    "entirePeriodZeroCorrectionZeroForPositiveHeightAtLeast54": true,
+    "newNativePopulationSourceScalePayment": false,
+    "cofinal399Over5000Estimate": false,
+    "floorClosed": false,
+    "ceilingClosed": false,
+    "restrictedZeroExclusion": false,
+    "RHClaim": false,
+    "commitPushOrSubagentWork": false,
+    "broaderLocalPublicationGatesRunForNewSlice": false,
+    "oneDirectionBoundaryObstructionForEveryRealStep": true,
+    "boundaryObstructionNotFloorImpossibility": true
+  },
+  "subsequentJointExactCreditAudit": {
+    "path": "docs/riesz-joint-null-credit-audit.json",
+    "sameThresholdProofSourceUnchanged": true,
+    "nativeNumericalBudgetStillOpen": true
+  }
+}

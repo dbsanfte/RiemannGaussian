@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "head": "194a361762f404a8f4473298b25d96fbae0bb56e",
+  "objective": "Close out the floor.",
+  "goalRemainsActive": true,
+  "slice": "Align and independently pay complete least-small-prime rows of the actual native full-allocation carrier; remove their signed increment before whole-period floor clipping.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-1bafd5f5060e8adf81a206960afdb71e67451ddfefe6adbab6b4108411b4d4eb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedCoreWindow.lean",
+      "sha256": "985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-985db3a9bb63307f495f64cced0ca57d218fd69fdd29a7395fbad54776fc499d.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerLatticePhase.lean",
+      "sha256": "90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-90b9afb8bece36db84398fa56055b2eccb789d5bc2a64bbabc4038f23ec0b5a0.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerPhasePrimitive.lean",
+      "sha256": "9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-9cda005ad195a1604761a056a15ddcffa1eeb193eea0ebb81578a933de6a48aa.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTaggedOwnerPhase.lean",
+      "sha256": "af39137d1561f03ff3f71aa0840bc8b8421ba6232b9aec80898c7a0cc3a323e1",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-af39137d1561f03ff3f71aa0840bc8b8421ba6232b9aec80898c7a0cc3a323e1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPaidIncidenceFloor.lean",
+      "sha256": "18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-18d28ce0b70f8172523f06fa7703603197ac0ff0bd7d3f5d8931052eabf24ff3.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNonownerAllocation.lean",
+      "sha256": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRoughOwnerComparison.lean",
+      "sha256": "7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-7cbead6582dadcf0b5797e5f1d9efc4e7e3b5bf6dce05e5efe2ae1515c7cf6d2.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszMaskSupport.lean",
+      "sha256": "93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-93be0bc4ed18be6e3aebf6cb52499ffb96b77420833c2fab7cd358b2ad4c7129.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszRetainedCarrier.lean",
+      "sha256": "74fa0fbd6199dd477f0f51b9aeecd8b6820f6f973a25faffa461fdae2ffdb74e",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-74fa0fbd6199dd477f0f51b9aeecd8b6820f6f973a25faffa461fdae2ffdb74e.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJointCountFloor.lean",
+      "sha256": "d43b78f39e73ba3bcc496859148862abc5060c656ae3c143876375c75f660ba1",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-d43b78f39e73ba3bcc496859148862abc5060c656ae3c143876375c75f660ba1.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexProjection.lean",
+      "sha256": "062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-062496b31e1090fbde31815058286374f8e0a97a8f1f39850c301e0239a52512.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszComplexNullFloor.lean",
+      "sha256": "866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-866dfa9ac81f14c500eb12d97fdf80d88165df1aedbc1bf89b893deb90956001.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszTangentCubicCredit.lean",
+      "sha256": "02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-02e11025e8657bd3be3e548d71e0127961e466f8e0e00a64d8ace7df5e706118.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade.lean"
+    },
+    {
+      "path": "docs/zeta-riesz-small-tag-native-floor.md",
+      "sha256": "29b6506f98fdfe5c6ac417e2685d83db903994ccb7e1e6937399c32649f2f6a2",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-29b6506f98fdfe5c6ac417e2685d83db903994ccb7e1e6937399c32649f2f6a2.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "571c543384f70bdca6cd6fc7caa972de0d0b9c2114ee7edd72e27bf59554eeaf",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-571c543384f70bdca6cd6fc7caa972de0d0b9c2114ee7edd72e27bf59554eeaf.md"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-361b17e2d713b06c7a60d0f0d4bb2013c1e68495bcb280a34aa41a0749e92360.json"
+    }
+  ],
+  "compiledArtifacts": [
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian/ZetaRieszSmallTagNativeFloor.olean",
+      "sha256": "e19b0344a77fee6ab4250ef35be208cab33b435389cde9b1e60379e2c698cc85",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-e19b0344a77fee6ab4250ef35be208cab33b435389cde9b1e60379e2c698cc85.olean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f.olean"
+    }
+  ],
+  "validation": {
+    "scope": "Focused local only; strict source and targeted leaf build, compiled ordinary root plus explicit leaf. No root-source rebuild or wider gates.",
+    "strictLean": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.ZetaRieszSmallTagNativeFloor --wfail",
+      "exitCode": 0
+    },
+    "audit": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true .lake/riesz-small-tag-native-floor/Audit.lean",
+      "exitCode": 0,
+      "compiledOrdinaryRootImported": true,
+      "explicitLeafImported": true,
+      "compiledRootMatchesPreviousFrozenRoot": true,
+      "rootSourceNotRebuilt": true,
+      "namespaceCount": 1,
+      "lintersPerNamespace": 14,
+      "allNamespaceLintersPass": true
+    },
+    "publicTheorems": 22,
+    "compiledDeclarations": 63,
+    "theoremsIncludingPrivateAndGenerated": 47,
+    "everyCompiledDeclarationIncludingPrivateAndGeneratedAxiomChecked": true,
+    "onlyStandardAxioms": true,
+    "harmlessDependencyTacticInformationInBuildLog": true,
+    "previousFourProofModulesAndFrozenProbePreserved": true
+  },
+  "exactResults": {
+    "originalCarrier": "Original intermediatePrimes, residualCoefficient with its FULL boundedShare allocation, zetaPrimeLogKernel, physical/core/count masks and phase.",
+    "newUnrelatedSourceCarrierDefined": false,
+    "radiusRange": "1/2<u<=10001/20000",
+    "fixedHeightCondition": "abs(y)>=54",
+    "ownerLogRange": [
+      "51N/50",
+      "5N/4"
+    ],
+    "coreTotalLogRange": [
+      "39N/20 strict",
+      "203N/100 closed"
+    ],
+    "smallPrimeMeasure": "All primes <=N^3",
+    "leastTagRange": "N^2<r<=N^3",
+    "arbitrarilyManyFurtherSmallPrimesAllowed": true,
+    "allRetainedCountsJoined": true,
+    "selectedOwnerWholeCofactorInequality": "a<p",
+    "canonicalOwnerLabelsInjective": true,
+    "everyOriginalNativeMaskAlignedAndProved": true,
+    "originalCancelDominantInteriorPiecesRuledOutByExactShareInequalities": true,
+    "actualNativeCountCeiling": "dyadicPrimeCount(j)/864+1",
+    "nativeDyadicScheduleUnchanged": true,
+    "comparisonCutoff": "floor(exp(N/2))",
+    "strongerCoreFloorLowerBound": "floor(exp(39N/20-log p))>=exp(2N/3)",
+    "comparisonR4LeM3Proved": true,
+    "comparisonN3LeMProvedEventually": true,
+    "actualLengthUpperBound": "139N/100",
+    "actualLengthLowerBound": "5N/4 eventually",
+    "translatedCutoffEndpointConditionProved": true,
+    "noArithmeticComparisonGeometryPremiseLeftOpen": true,
+    "independentFullAllocationRealSignedPacketBound": true,
+    "signedPacketBudget": "selectedNativeBudget(u,y,j)+nonownerBudget(N_j)",
+    "budgetAndRealSignedPacketTendToZero": true,
+    "noZeroOrUnprovedCancellationHypothesisInPayment": true,
+    "noComplexNormDecayClaimed": true,
+    "rowBudgetNativeCountAllowanceUsedOnce": true,
+    "existingNonownerErrorRestrictedToSubsetUsedOnce": true,
+    "previousNativeCropTransferErrorRetained": true,
+    "paidCutoffIncrementTotalEqualsLiteralFullAllocationPacket": true,
+    "sameComplexLogNullsRetainedInsidePaidIncrement": true,
+    "subtractionMainIsExactlyNativeSquarefreeLabelsMinusPaidLabels": true,
+    "wholeTangentCorrectionRetainedJoinedAndNotExtraCredit": true,
+    "signedTotalPaidBeforeCompletePeriodClipping": true,
+    "absolutePaidRowCutoffVariationNotCharged": true,
+    "allRemainingCountsGeometryAndBoundaryCutoffsRetained": true,
+    "newWholeFloor": "Re(source-scaled joinedPhysical)>=-restCost-budget-nativeError eventually",
+    "newAlternativeImaginaryTilt": "0; real payment only",
+    "previousTiltedPriceRetainedAsValidAlternative": true,
+    "price": "min(previous nativePrunedPrice,restCost+budget)",
+    "priceNoWorseThanPreviousProved": true,
+    "alternativePricesNotStackedAndNoDoubleCredits": true,
+    "gainNonnegativeProvedButMayBeZero": true,
+    "cofinalContradictionPremise": "price<=399/5000 cofinally; OPEN",
+    "conditionalEndpointProved": true,
+    "previousPositiveResultsAndNoGoAuditsPreserved": true
+  },
+  "remaining": {
+    "independentWholeFloorTarget": "-399/5000",
+    "numericalWholeFloorProved": false,
+    "multiplicityCeilingTarget": "42/25",
+    "multiplicityCeilingProved": false,
+    "cofinalWholePriceBoundProved": false,
+    "positiveFractionOfFloorDeficitCertified": false,
+    "newFiniteNativeCertificateProved": false,
+    "restrictedContradictionProved": false,
+    "newZeroFreeRegionProved": false,
+    "riemannHypothesisProved": false,
+    "unpaidIncludes": [
+      "Fully N^3-rough cofactors and their signed ordinary-prime subtraction",
+      "Owner ranges outside the stated complete geometry",
+      "Partial/internal-mask windows and remaining native cutoff costs"
+    ],
+    "nextEstimate": "Bound the joined signed remaining native cutoff cost; keep the fully rough cofactor prime head and partial-window crossings coupled."
+  },
+  "artifacts": [
+    {
+      "path": ".lake/riesz-small-tag-native-floor/Audit.lean",
+      "sha256": "f23db8371ae128171de069f72f9a65e5bb9e3e4f39b8c8248db110d5eb40a3d8",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-f23db8371ae128171de069f72f9a65e5bb9e3e4f39b8c8248db110d5eb40a3d8.lean"
+    },
+    {
+      "path": ".lake/riesz-small-tag-native-floor/axioms.json",
+      "sha256": "1d9f3446af0f5e90c1f1c04199cd3488ef94ea22ff483660a669a48aec8f9eeb",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-1d9f3446af0f5e90c1f1c04199cd3488ef94ea22ff483660a669a48aec8f9eeb.json"
+    },
+    {
+      "path": ".lake/riesz-small-tag-native-floor/strict-lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log"
+    },
+    {
+      "path": ".lake/riesz-small-tag-native-floor/build.log",
+      "sha256": "8f9d2dbd981eb6f018d938be99487c56a0fbf6339819edc359d953e1a7e019c4",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-8f9d2dbd981eb6f018d938be99487c56a0fbf6339819edc359d953e1a7e019c4.log"
+    },
+    {
+      "path": ".lake/riesz-small-tag-native-floor/audit.log",
+      "sha256": "d65de76f18fbb71130e88c45a9f99a6827c4dde120b66b1f5757857cf1bc9f68",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-d65de76f18fbb71130e88c45a9f99a6827c4dde120b66b1f5757857cf1bc9f68.log"
+    },
+    {
+      "path": ".lake/riesz-small-tag-native-floor/write_report.py",
+      "sha256": "df84134518c166b984ce92414d904aec276ea36a48c6ffe11c9de33128659b2c",
+      "snapshot": ".lake/riesz-small-tag-native-floor/snapshot-df84134518c166b984ce92414d904aec276ea36a48c6ffe11c9de33128659b2c.py"
+    }
+  ],
+  "rootRegistrationReadmeExplorerAndPublicEndpointsChangedBySlice": false,
+  "concurrentSemiprimeFilesModifiedBySlice": false,
+  "committed": false,
+  "pushed": false,
+  "subagentsUsed": false,
+  "widerGatesRun": false
+}

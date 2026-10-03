@@ -1,0 +1,2140 @@
+{
+  "seed": 202610020619,
+  "repeats": 3,
+  "scope": "recovery for supplied roots; no universal one-sixth coverage or construction bound",
+  "arithmetic": "exact integer residues and integer square roots; no floating-point centres",
+  "ordering": "deterministic sort/dedup and merge; no hash-table complexity assumption",
+  "regression": {
+    "exact_batches": 4769,
+    "summed_gcd_calls": 12274,
+    "controls": [
+      {
+        "kind": "shared-root-before-later-hit",
+        "n": 35,
+        "roots": [
+          1
+        ],
+        "points": [
+          1,
+          6
+        ],
+        "expected_factor": 5,
+        "result": {
+          "status": "factor",
+          "factor": 5,
+          "root_index": 0,
+          "point_index": 1,
+          "root": 1,
+          "point": 6,
+          "column_value": 5,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 1,
+            "input_points": 2,
+            "distinct_roots": 1,
+            "distinct_points": 2,
+            "represented_input_pairs": 2,
+            "column_gcds": 2,
+            "leaf_gcds": 0,
+            "witness_remainders": 1,
+            "pair_products": 0,
+            "derivative_coefficients": 1,
+            "recovery_pair_differences": 1,
+            "whole_modulus_columns": 0,
+            "shared_points": 1,
+            "off_diagonal_pairs": 1,
+            "convolutions": 0,
+            "packed_coefficients": 0,
+            "monic_reductions": 2,
+            "gcd_calls": 2,
+            "gcd_bound": 3
+          },
+          "signals": [
+            1,
+            5
+          ],
+          "ordered_roots": [
+            1
+          ],
+          "ordered_points": [
+            1,
+            6
+          ]
+        }
+      },
+      {
+        "kind": "full-modulus-deflated-column",
+        "n": 35,
+        "roots": [
+          1,
+          11,
+          15
+        ],
+        "points": [
+          1
+        ],
+        "expected_factor": 5,
+        "result": {
+          "status": "factor",
+          "factor": 5,
+          "root_index": 1,
+          "point_index": 0,
+          "root": 11,
+          "point": 1,
+          "column_value": 0,
+          "stage": "leaf",
+          "metrics": {
+            "input_roots": 3,
+            "input_points": 1,
+            "distinct_roots": 3,
+            "distinct_points": 1,
+            "represented_input_pairs": 3,
+            "column_gcds": 1,
+            "leaf_gcds": 1,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 3,
+            "recovery_pair_differences": 1,
+            "whole_modulus_columns": 1,
+            "shared_points": 1,
+            "off_diagonal_pairs": 2,
+            "convolutions": 2,
+            "packed_coefficients": 9,
+            "monic_reductions": 1,
+            "gcd_calls": 2,
+            "gcd_bound": 4
+          },
+          "signals": [
+            0
+          ],
+          "ordered_roots": [
+            1,
+            11,
+            15
+          ],
+          "ordered_points": [
+            1
+          ]
+        }
+      },
+      {
+        "kind": "repeated-global-root",
+        "n": 35,
+        "roots": [
+          1,
+          1,
+          6
+        ],
+        "points": [
+          1,
+          1
+        ],
+        "expected_factor": 5,
+        "result": {
+          "status": "factor",
+          "factor": 5,
+          "root_index": 2,
+          "point_index": 0,
+          "root": 6,
+          "point": 1,
+          "column_value": 30,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 3,
+            "input_points": 2,
+            "distinct_roots": 2,
+            "distinct_points": 1,
+            "represented_input_pairs": 6,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 1,
+            "pair_products": 0,
+            "derivative_coefficients": 2,
+            "recovery_pair_differences": 1,
+            "whole_modulus_columns": 0,
+            "shared_points": 1,
+            "off_diagonal_pairs": 1,
+            "convolutions": 1,
+            "packed_coefficients": 4,
+            "monic_reductions": 1,
+            "gcd_calls": 1,
+            "gcd_bound": 3
+          },
+          "signals": [
+            30
+          ],
+          "ordered_roots": [
+            1,
+            6
+          ],
+          "ordered_points": [
+            1
+          ]
+        }
+      },
+      {
+        "kind": "only-global-equalities",
+        "n": 77,
+        "roots": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "points": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "expected_factor": null,
+        "result": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 1,
+            "distinct_points": 1,
+            "represented_input_pairs": 16384,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 1,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1,
+            "off_diagonal_pairs": 0,
+            "convolutions": 0,
+            "packed_coefficients": 0,
+            "monic_reductions": 1,
+            "gcd_calls": 1,
+            "gcd_bound": 2
+          },
+          "signals": [
+            1
+          ],
+          "ordered_roots": [
+            1
+          ],
+          "ordered_points": [
+            1
+          ]
+        }
+      },
+      {
+        "kind": "prime-square-proper-hit",
+        "n": 49,
+        "roots": [
+          1,
+          8,
+          1
+        ],
+        "points": [
+          1
+        ],
+        "expected_factor": 7,
+        "result": {
+          "status": "factor",
+          "factor": 7,
+          "root_index": 1,
+          "point_index": 0,
+          "root": 8,
+          "point": 1,
+          "column_value": 42,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 3,
+            "input_points": 1,
+            "distinct_roots": 2,
+            "distinct_points": 1,
+            "represented_input_pairs": 3,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 1,
+            "pair_products": 0,
+            "derivative_coefficients": 2,
+            "recovery_pair_differences": 1,
+            "whole_modulus_columns": 0,
+            "shared_points": 1,
+            "off_diagonal_pairs": 1,
+            "convolutions": 1,
+            "packed_coefficients": 4,
+            "monic_reductions": 1,
+            "gcd_calls": 1,
+            "gcd_bound": 3
+          },
+          "signals": [
+            42
+          ],
+          "ordered_roots": [
+            1,
+            8
+          ],
+          "ordered_points": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "kind": "fresh",
+      "n": 2166097541,
+      "bits": 32,
+      "reference_primes": [
+        39199,
+        55259
+      ]
+    },
+    {
+      "kind": "fresh",
+      "n": 841127384953,
+      "bits": 40,
+      "reference_primes": [
+        893479,
+        941407
+      ]
+    },
+    {
+      "kind": "fresh",
+      "n": 166634896798691,
+      "bits": 48,
+      "reference_primes": [
+        10857631,
+        15347261
+      ]
+    },
+    {
+      "kind": "fresh",
+      "n": 9997587955895771087,
+      "bits": 64,
+      "reference_primes": [
+        2639385191,
+        3787847257
+      ]
+    },
+    {
+      "kind": "fresh",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "reference_primes": [
+        1067182749013,
+        1078467356881
+      ]
+    },
+    {
+      "kind": "saved-four-rough",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "reference_primes": [
+        661911275027,
+        720957498683
+      ]
+    }
+  ],
+  "shared_root_benchmarks": [
+    {
+      "kind": "all-points-shared",
+      "n": 2166097541,
+      "bits": 32,
+      "width": 128,
+      "elapsed_ms": {
+        "explicit": [
+          4.6492249821312726,
+          4.60941600613296,
+          4.652297997381538
+        ],
+        "implicit": [
+          4.509265010710806,
+          4.4438229815568775,
+          4.50353798805736
+        ]
+      },
+      "median_speedup": 1.0323494537983804,
+      "results": {
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 128,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "convolutions": 330,
+            "packed_coefficients": 4830,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        },
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 16256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 2166097541,
+      "bits": 32,
+      "width": 512,
+      "elapsed_ms": {
+        "explicit": [
+          75.78469402506016,
+          75.77449700329453,
+          76.12384099047631
+        ],
+        "implicit": [
+          24.46163198328577,
+          24.161178997019306,
+          24.145325005520135
+        ]
+      },
+      "median_speedup": 3.136630626941239,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 261632,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 512,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "convolutions": 1426,
+            "packed_coefficients": 31590,
+            "monic_reductions": 1023,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 2166097541,
+      "bits": 32,
+      "width": 1024,
+      "elapsed_ms": {
+        "explicit": [
+          306.55391700565815,
+          306.0866119922139,
+          308.73252599849366
+        ],
+        "implicit": [
+          61.916847014799714,
+          55.262704991037026,
+          54.83716502203606
+        ]
+      },
+      "median_speedup": 5.547211578864583,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 1047552,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 1024,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "convolutions": 2894,
+            "packed_coefficients": 75462,
+            "monic_reductions": 2047,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 2166097541,
+      "bits": 32,
+      "width": 2048,
+      "elapsed_ms": {
+        "explicit": [
+          1235.7878129987512,
+          1241.8929980194662,
+          1232.5818279932719
+        ],
+        "implicit": [
+          123.77041700528935,
+          120.12773400056176,
+          120.53294997895136
+        ]
+      },
+      "median_speedup": 10.252696986297577,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 4192256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 2048,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "convolutions": 5834,
+            "packed_coefficients": 175494,
+            "monic_reductions": 4095,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "width": 128,
+      "elapsed_ms": {
+        "explicit": [
+          4.588394018355757,
+          4.580153006827459,
+          4.574425023747608
+        ],
+        "implicit": [
+          4.823058989131823,
+          4.83597899437882,
+          4.807065008208156
+        ]
+      },
+      "median_speedup": 0.9496365309129075,
+      "results": {
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 128,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "convolutions": 330,
+            "packed_coefficients": 4830,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        },
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 16256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "width": 512,
+      "elapsed_ms": {
+        "explicit": [
+          73.93363400478847,
+          74.14832498761825,
+          75.62126498669386
+        ],
+        "implicit": [
+          26.905217993771657,
+          26.92281801137142,
+          26.90249402076006
+        ]
+      },
+      "median_speedup": 2.755908723905638,
+      "results": {
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 512,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "convolutions": 1426,
+            "packed_coefficients": 31590,
+            "monic_reductions": 1023,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        },
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 261632,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "width": 1024,
+      "elapsed_ms": {
+        "explicit": [
+          303.2588929927442,
+          298.5474409942981,
+          302.61677800444886
+        ],
+        "implicit": [
+          62.300130986841395,
+          62.25801698747091,
+          62.018881988478824
+        ]
+      },
+      "median_speedup": 4.860687709750679,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 1047552,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 1024,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "convolutions": 2894,
+            "packed_coefficients": 75462,
+            "monic_reductions": 2047,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "width": 2048,
+      "elapsed_ms": {
+        "explicit": [
+          1217.466678994242,
+          1214.5835069823079,
+          1214.4117609714158
+        ],
+        "implicit": [
+          141.14600900211371,
+          140.93781300471164,
+          146.68346499092877
+        ]
+      },
+      "median_speedup": 8.605156572043912,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 4192256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 2048,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "convolutions": 5834,
+            "packed_coefficients": 175494,
+            "monic_reductions": 4095,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 128,
+      "elapsed_ms": {
+        "explicit": [
+          4.51540999347344,
+          4.554938990622759,
+          4.528749996097758
+        ],
+        "implicit": [
+          4.8344419919885695,
+          4.80042997514829,
+          4.845477000344545
+        ]
+      },
+      "median_speedup": 0.9367678841948273,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 16256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 128,
+            "input_points": 128,
+            "distinct_roots": 128,
+            "distinct_points": 128,
+            "represented_input_pairs": 16384,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 128,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 128,
+            "off_diagonal_pairs": 16256,
+            "convolutions": 330,
+            "packed_coefficients": 4830,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 256
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 512,
+      "elapsed_ms": {
+        "explicit": [
+          74.57728401641361,
+          74.63092199759558,
+          74.74706700304523
+        ],
+        "implicit": [
+          27.138484991155565,
+          27.156714000739157,
+          27.156224998179823
+        ]
+      },
+      "median_speedup": 2.7482067924609477,
+      "results": {
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 512,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "convolutions": 1426,
+            "packed_coefficients": 31590,
+            "monic_reductions": 1023,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        },
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 512,
+            "input_points": 512,
+            "distinct_roots": 512,
+            "distinct_points": 512,
+            "represented_input_pairs": 262144,
+            "column_gcds": 512,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 261632,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 512,
+            "off_diagonal_pairs": 261632,
+            "gcd_calls": 512,
+            "gcd_bound": 1024
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 1024,
+      "elapsed_ms": {
+        "explicit": [
+          301.57069698907435,
+          301.9791939877905,
+          296.8672040151432
+        ],
+        "implicit": [
+          62.18384500243701,
+          62.33162700664252,
+          62.428985023871064
+        ]
+      },
+      "median_speedup": 4.838165013034823,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 1047552,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 1024,
+            "input_points": 1024,
+            "distinct_roots": 1024,
+            "distinct_points": 1024,
+            "represented_input_pairs": 1048576,
+            "column_gcds": 1024,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 1024,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 1024,
+            "off_diagonal_pairs": 1047552,
+            "convolutions": 2894,
+            "packed_coefficients": 75462,
+            "monic_reductions": 2047,
+            "gcd_calls": 1024,
+            "gcd_bound": 2048
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    },
+    {
+      "kind": "all-points-shared",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "width": 2048,
+      "elapsed_ms": {
+        "explicit": [
+          1214.508333010599,
+          1215.3123999887612,
+          1226.6846899874508
+        ],
+        "implicit": [
+          141.83868499821983,
+          142.0855019823648,
+          141.97578001767397
+        ]
+      },
+      "median_speedup": 8.559998049226932,
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 4192256,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2048,
+            "input_points": 2048,
+            "distinct_roots": 2048,
+            "distinct_points": 2048,
+            "represented_input_pairs": 4194304,
+            "column_gcds": 2048,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 2048,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 2048,
+            "off_diagonal_pairs": 4192256,
+            "convolutions": 5834,
+            "packed_coefficients": 175494,
+            "monic_reductions": 4095,
+            "gcd_calls": 2048,
+            "gcd_bound": 4096
+          }
+        }
+      },
+      "public_construction": "consecutive residues 0 through width-1"
+    }
+  ],
+  "literal_row_replay": [
+    {
+      "kind": "fresh",
+      "n": 2166097541,
+      "bits": 32,
+      "reference_primes": [
+        39199,
+        55259
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          2.7233680011704564,
+          2.7224599907640368,
+          2.7286760159768164
+        ],
+        "implicit": [
+          3.1910199904814363,
+          3.0206099909264594,
+          3.0425399891100824
+        ]
+      },
+      "results": {
+        "implicit": {
+          "status": "factor",
+          "factor": 39199,
+          "root_index": 138,
+          "point_index": 0,
+          "root": 301675505,
+          "point": 1,
+          "column_value": 317394303,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 199,
+            "input_points": 36,
+            "distinct_roots": 199,
+            "distinct_points": 36,
+            "represented_input_pairs": 7164,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 25,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 25,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 7164,
+            "convolutions": 257,
+            "packed_coefficients": 3933,
+            "monic_reductions": 71,
+            "gcd_calls": 1,
+            "gcd_bound": 235
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 199,
+            "candidate_weight_pairs": 360,
+            "weight_coprimality_gcds": 360,
+            "anchor_powers": 199,
+            "anchor_exponent_bits": 7071,
+            "baby_updates": 36,
+            "weight_width": 36,
+            "baby_width": 36,
+            "sixth_budget": 36,
+            "full_box_candidate_pairs_formula": 360,
+            "full_box_pair_lower_bound": 81,
+            "full_sixth_weight_box": true,
+            "full_sixth_baby_interval": true
+          },
+          "weighted_witness": [
+            22,
+            31,
+            2430867
+          ]
+        },
+        "explicit": {
+          "status": "factor",
+          "factor": 39199,
+          "root_index": 138,
+          "point_index": 0,
+          "root": 301675505,
+          "point": 1,
+          "column_value": 317394303,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 199,
+            "input_points": 36,
+            "distinct_roots": 199,
+            "distinct_points": 36,
+            "represented_input_pairs": 7164,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 25,
+            "pair_products": 7164,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 25,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 7164,
+            "gcd_calls": 1,
+            "gcd_bound": 235
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 199,
+            "candidate_weight_pairs": 360,
+            "weight_coprimality_gcds": 360,
+            "anchor_powers": 199,
+            "anchor_exponent_bits": 7071,
+            "baby_updates": 36,
+            "weight_width": 36,
+            "baby_width": 36,
+            "sixth_budget": 36,
+            "full_box_candidate_pairs_formula": 360,
+            "full_box_pair_lower_bound": 81,
+            "full_sixth_weight_box": true,
+            "full_sixth_baby_interval": true
+          },
+          "weighted_witness": [
+            22,
+            31,
+            2430867
+          ]
+        }
+      },
+      "median_speedup": 0.8950968634489563
+    },
+    {
+      "kind": "fresh",
+      "n": 841127384953,
+      "bits": 40,
+      "reference_primes": [
+        893479,
+        941407
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          49.65505201835185,
+          49.2688330123201,
+          49.39754898077808
+        ],
+        "implicit": [
+          22.187408001627773,
+          21.995556016918272,
+          22.218347992748022
+        ]
+      },
+      "results": {
+        "implicit": {
+          "status": "factor",
+          "factor": 893479,
+          "root_index": 1465,
+          "point_index": 0,
+          "root": 10430473847,
+          "point": 1,
+          "column_value": 696558015358,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 1473,
+            "input_points": 98,
+            "distinct_roots": 1473,
+            "distinct_points": 98,
+            "represented_input_pairs": 144354,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 26,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 26,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 144354,
+            "convolutions": 1649,
+            "packed_coefficients": 33664,
+            "monic_reductions": 195,
+            "gcd_calls": 1,
+            "gcd_bound": 1571
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 1473,
+            "candidate_weight_pairs": 2499,
+            "weight_coprimality_gcds": 2499,
+            "anchor_powers": 1473,
+            "anchor_exponent_bits": 67114,
+            "baby_updates": 98,
+            "weight_width": 98,
+            "baby_width": 98,
+            "sixth_budget": 98,
+            "full_box_candidate_pairs_formula": 2499,
+            "full_box_pair_lower_bound": 576,
+            "full_sixth_weight_box": true,
+            "full_sixth_baby_interval": true
+          },
+          "weighted_witness": [
+            93,
+            98,
+            175111793
+          ]
+        },
+        "explicit": {
+          "status": "factor",
+          "factor": 893479,
+          "root_index": 1465,
+          "point_index": 0,
+          "root": 10430473847,
+          "point": 1,
+          "column_value": 696558015358,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 1473,
+            "input_points": 98,
+            "distinct_roots": 1473,
+            "distinct_points": 98,
+            "represented_input_pairs": 144354,
+            "column_gcds": 1,
+            "leaf_gcds": 0,
+            "witness_remainders": 26,
+            "pair_products": 144354,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 26,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 144354,
+            "gcd_calls": 1,
+            "gcd_bound": 1571
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 1473,
+            "candidate_weight_pairs": 2499,
+            "weight_coprimality_gcds": 2499,
+            "anchor_powers": 1473,
+            "anchor_exponent_bits": 67114,
+            "baby_updates": 98,
+            "weight_width": 98,
+            "baby_width": 98,
+            "sixth_budget": 98,
+            "full_box_candidate_pairs_formula": 2499,
+            "full_box_pair_lower_bound": 576,
+            "full_sixth_weight_box": true,
+            "full_sixth_baby_interval": true
+          },
+          "weighted_witness": [
+            93,
+            98,
+            175111793
+          ]
+        }
+      },
+      "median_speedup": 2.2263776362319585
+    },
+    {
+      "kind": "fresh",
+      "n": 166634896798691,
+      "bits": 48,
+      "reference_primes": [
+        10857631,
+        15347261
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          107.2495240077842,
+          106.68409301433712,
+          107.32900199946016
+        ],
+        "implicit": [
+          40.492233994882554,
+          46.08535399893299,
+          40.37469101604074
+        ]
+      },
+      "results": {
+        "implicit": {
+          "status": "factor",
+          "factor": 10857631,
+          "root_index": 1647,
+          "point_index": 3,
+          "root": 62666087659335,
+          "point": 8,
+          "column_value": 128984465234434,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 4,
+            "leaf_gcds": 0,
+            "witness_remainders": 930,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 930,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "convolutions": 2740,
+            "packed_coefficients": 60738,
+            "monic_reductions": 255,
+            "gcd_calls": 4,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 134562,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 235,
+            "full_box_candidate_pairs_formula": 14041,
+            "full_box_pair_lower_bound": 3364,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          },
+          "weighted_witness": [
+            75,
+            106,
+            2301953458
+          ]
+        },
+        "explicit": {
+          "status": "factor",
+          "factor": 10857631,
+          "root_index": 1647,
+          "point_index": 3,
+          "root": 62666087659335,
+          "point": 8,
+          "column_value": 128984465234434,
+          "stage": "column",
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 4,
+            "leaf_gcds": 0,
+            "witness_remainders": 930,
+            "pair_products": 321536,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 930,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "gcd_calls": 4,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 134562,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 235,
+            "full_box_candidate_pairs_formula": 14041,
+            "full_box_pair_lower_bound": 3364,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          },
+          "weighted_witness": [
+            75,
+            106,
+            2301953458
+          ]
+        }
+      },
+      "median_speedup": 2.648644281304373
+    },
+    {
+      "kind": "fresh",
+      "n": 9997587955895771087,
+      "bits": 64,
+      "reference_primes": [
+        2639385191,
+        3787847257
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          116.1142619966995,
+          116.08744401019067,
+          116.60670899436809
+        ],
+        "implicit": [
+          44.63099199347198,
+          44.645518995821476,
+          44.71899202326313
+        ]
+      },
+      "results": {
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "convolutions": 2740,
+            "packed_coefficients": 60738,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 174422,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 1468,
+            "full_box_candidate_pairs_formula": 540224,
+            "full_box_pair_lower_bound": 134689,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        },
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 321536,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 174422,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 1468,
+            "full_box_candidate_pairs_formula": 540224,
+            "full_box_pair_lower_bound": 134689,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        }
+      },
+      "median_speedup": 2.6008043944469996
+    },
+    {
+      "kind": "fresh",
+      "n": 1150921758637049721508453,
+      "bits": 80,
+      "reference_primes": [
+        1067182749013,
+        1078467356881
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          121.55024200910702,
+          120.99521802156232,
+          121.26375499065034
+        ],
+        "implicit": [
+          49.98511899611913,
+          50.294443004531786,
+          55.815210012951866
+        ]
+      },
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 321536,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 216695,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 10238,
+            "full_box_candidate_pairs_formula": 26214399,
+            "full_box_pair_lower_bound": 6548481,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "convolutions": 2740,
+            "packed_coefficients": 60738,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 216695,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 10238,
+            "full_box_candidate_pairs_formula": 26214399,
+            "full_box_pair_lower_bound": 6548481,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        }
+      },
+      "median_speedup": 2.4110766070065406
+    },
+    {
+      "kind": "saved-four-rough",
+      "n": 477209897193541203289441,
+      "bits": 79,
+      "reference_primes": [
+        661911275027,
+        720957498683
+      ],
+      "elapsed_ms": {
+        "explicit": [
+          123.02751198876649,
+          122.85081500886008,
+          122.67558500752784
+        ],
+        "implicit": [
+          49.88727197633125,
+          50.35087399301119,
+          50.110762007534504
+        ]
+      },
+      "results": {
+        "explicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 321536,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 213522,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 8840,
+            "full_box_candidate_pairs_formula": 19545240,
+            "full_box_pair_lower_bound": 4884100,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        },
+        "implicit": {
+          "status": "no-proper-collision",
+          "factor": null,
+          "metrics": {
+            "input_roots": 2512,
+            "input_points": 128,
+            "distinct_roots": 2512,
+            "distinct_points": 128,
+            "represented_input_pairs": 321536,
+            "column_gcds": 128,
+            "leaf_gcds": 0,
+            "witness_remainders": 0,
+            "pair_products": 0,
+            "derivative_coefficients": 0,
+            "recovery_pair_differences": 0,
+            "whole_modulus_columns": 0,
+            "shared_points": 0,
+            "off_diagonal_pairs": 321536,
+            "convolutions": 2740,
+            "packed_coefficients": 60738,
+            "monic_reductions": 255,
+            "gcd_calls": 128,
+            "gcd_bound": 2640
+          },
+          "construction": {
+            "literal_centres": true,
+            "integer_square_roots": 2512,
+            "candidate_weight_pairs": 4224,
+            "weight_coprimality_gcds": 4224,
+            "anchor_powers": 2512,
+            "anchor_exponent_bits": 213522,
+            "baby_updates": 128,
+            "weight_width": 128,
+            "baby_width": 128,
+            "sixth_budget": 8840,
+            "full_box_candidate_pairs_formula": 19545240,
+            "full_box_pair_lower_bound": 4884100,
+            "full_sixth_weight_box": false,
+            "full_sixth_baby_interval": false
+          }
+        }
+      },
+      "median_speedup": 2.4515854496562755
+    }
+  ],
+  "source_hashes": {
+    "scripts/probe_semiprime_batch_recovery.py": "8661bb43706c44888250bbd21caf595c720be9f22ac65885b8d5c891c3b07d36",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "RiemannGaussian/SemiprimeCartesianCompletion.lean": "4dcdf2b40f62299928c6c6c670126f3f80dbee2d7369f712b43f3b2abc9f0c57",
+    "RiemannGaussian/SemiprimeRoughProjection.lean": "49a6e504c6e1161243b1680d9d544f9266363bec4da04f12ac5fe8702e2043f7"
+  },
+  "validation": {
+    "focused_build": {
+      "command": "lake build RiemannGaussian.SemiprimeCartesianCompletion --wfail",
+      "exit_code": 0
+    },
+    "focused_audit": {
+      "command": "lake env lean -DwarningAsError=true scripts/CheckSemiprimeCartesianCompletion.lean",
+      "exit_code": 0,
+      "public_theorems": 34,
+      "module_declarations_including_helpers": 120,
+      "proof_declarations_including_helpers": 90,
+      "linters": 14,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "output": "-- Found 0 errors in 46 declarations (plus 74 automatically generated ones) in RiemannGaussian.SemiprimeCartesianCompletion with 14 linters\n\n/- OK: The statements of all declarations type-check with default reducibility settings. -/\n/- OK: no definitions with an underscore in their name found. -/\n/- OK: no `deprecated` tags without `since` dates. -/\n/- OK: No definitions are missing documentation. -/\n/- OK: No instance has arguments that are impossible to infer -/\n/- OK: No instances of non-classes -/\n/- OK: No commutativity lemma is marked simp. -/\n/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/\n/- OK: no structures that should be in Prop found. -/\n/- OK: all names are correct -/\n/- OK: No declarations are syntactic tautologies. -/\n/- OK: No tactics are missing documentation. -/\n/- OK: No unused arguments. -/\n/- OK: No declarations have unused term mode have statements. -/\n-- All linting checks passed!\nChecked 120 declarations, 90 theorems; only standard axioms.\n"
+    },
+    "ordinary_root": {
+      "command": "lake env lean -DwarningAsError=true RiemannGaussian.lean",
+      "exit_code": 0
+    },
+    "source_hashes_match": true,
+    "returned_literal_factors_match_reference_labels": true,
+    "python_execution_and_full_bit_cost_formally_verified": false,
+    "universal_sixth_guarantee": false,
+    "publication": "local working tree; no commit or push"
+  }
+}

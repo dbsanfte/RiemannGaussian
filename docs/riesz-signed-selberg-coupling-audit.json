@@ -1,0 +1,338 @@
+{
+  "date": "2026-10-03",
+  "kind": "Signed numerical Selberg test and actual-cutoff calibration",
+  "newLeanTheorem": false,
+  "signedArithmeticBoundProved": false,
+  "wholeFloorProved": false,
+  "ceilingProved": false,
+  "restrictedExclusion": false,
+  "riemannHypothesisProved": false,
+  "exactRemainingTarget": "lowCountPeriods(u,y,j) <= 399/5000 + o(1), cofinally",
+  "signedDefectNotNormPaid": true,
+  "immutablePins": [
+    {
+      "path": "scripts/probe_riesz_signed_selberg_coupling.py",
+      "sha256": "312cbcc7fc8187095002f66e0e03be63959934212701f040787fd8ca940bbd18",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/312cbcc7fc8187095002f66e0e03be63959934212701f040787fd8ca940bbd18/probe_riesz_signed_selberg_coupling.py"
+    },
+    {
+      "path": "docs/zeta-riesz-signed-selberg-coupling.md",
+      "sha256": "d020dc2aa79196943c9e3dd59f05735ef72e95fae41038ed4cf65de7031588c2",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/d020dc2aa79196943c9e3dd59f05735ef72e95fae41038ed4cf65de7031588c2/zeta-riesz-signed-selberg-coupling.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "c54fd3472e50d7da8823c4a94027fcc64cf752eac6572da640fb6a3e9035e8a1",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/c54fd3472e50d7da8823c4a94027fcc64cf752eac6572da640fb6a3e9035e8a1/AGENTS.md"
+    },
+    {
+      "path": "scripts/probe_riesz_low_count_period_coupling.py",
+      "sha256": "bfde88d20137783cc79e5ae4fa9ba7dfd2381278512d7111f12138fe26e91740",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/bfde88d20137783cc79e5ae4fa9ba7dfd2381278512d7111f12138fe26e91740/probe_riesz_low_count_period_coupling.py"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20/ZetaRieszLowCountSelbergAudit.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5/ZetaRieszLowCountSignedBoundary.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean",
+      "sha256": "d0b9c8dc5a4d704a97cffeb06eb8ad9012810d548781c31e80466da331bed902",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/d0b9c8dc5a4d704a97cffeb06eb8ad9012810d548781c31e80466da331bed902/ZetaSquarefreeVaughanLogSource.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAnnulusJoint.lean",
+      "sha256": "d7e2bdbb21d000e6ec59ea8657bca1a3e0f9efa379b5e551ade046061455f4a5",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/d7e2bdbb21d000e6ec59ea8657bca1a3e0f9efa379b5e551ade046061455f4a5/ZetaRieszAnnulusJoint.lean"
+    },
+    {
+      "path": "RiemannGaussian/ZetaVaughanCutoffBudget.lean",
+      "sha256": "25c9c5beb8aaee8b4de99ad54b61b47165ef72a046b3a7f7e967ce2be6e55198",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/25c9c5beb8aaee8b4de99ad54b61b47165ef72a046b3a7f7e967ce2be6e55198/ZetaVaughanCutoffBudget.lean"
+    },
+    {
+      "path": ".lake/build/lib/lean/RiemannGaussian.olean",
+      "sha256": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f/RiemannGaussian.olean"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/probe.json",
+      "sha256": "6b8a02076d2cc6703d2f861736386309402e0f8e119cdea8d3c9e2e5ff8d4a74",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/6b8a02076d2cc6703d2f861736386309402e0f8e119cdea8d3c9e2e5ff8d4a74/probe.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/probe.log",
+      "sha256": "6e27d62689ace578e38efde24b5cf0ca835b58d03cebfbb1258c93cee7ff34ae",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/6e27d62689ace578e38efde24b5cf0ca835b58d03cebfbb1258c93cee7ff34ae/probe.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/held-out.json",
+      "sha256": "edde0b905bf9f7ff8b30d4420cc483309724b06c9cd9c7c9e8aa0f034c8a00fa",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/edde0b905bf9f7ff8b30d4420cc483309724b06c9cd9c7c9e8aa0f034c8a00fa/held-out.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/held-out.log",
+      "sha256": "99b178c8dec4b80b50613a21d12897812f848f467e41e512cf4dc67097857470",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/99b178c8dec4b80b50613a21d12897812f848f467e41e512cf4dc67097857470/held-out.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/actual-length.json",
+      "sha256": "05250777bdbc2f8183dd7561ab0c9f35c22012e7508cfe59ef01047f973c16cd",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/05250777bdbc2f8183dd7561ab0c9f35c22012e7508cfe59ef01047f973c16cd/actual-length.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/actual-length.log",
+      "sha256": "4e4457105a523e77e4607b474513867c9f990526dd27d3c90912670fc8060e96",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/4e4457105a523e77e4607b474513867c9f990526dd27d3c90912670fc8060e96/actual-length.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/actual-length-held-out.json",
+      "sha256": "52a00d5967ed3812215aa79a2e9ec42e3ed2eb941049d97bc7e2f665b4e51880",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/52a00d5967ed3812215aa79a2e9ec42e3ed2eb941049d97bc7e2f665b4e51880/actual-length-held-out.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/actual-length-held-out.log",
+      "sha256": "6753a1abfa74b433beb4d2097461dd5057f5167b37048e7dc7f0d34194683e80",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/6753a1abfa74b433beb4d2097461dd5057f5167b37048e7dc7f0d34194683e80/actual-length-held-out.log"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/DivisorRegression.py",
+      "sha256": "a9939c1ddf5f7ef29276b41874a27a584cb34977036623630951df0dbbc9465f",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/a9939c1ddf5f7ef29276b41874a27a584cb34977036623630951df0dbbc9465f/DivisorRegression.py"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/divisor-regression.json",
+      "sha256": "cdca6b37a2949c17684f87c6dce0469d02fdca2d562e3a9f7cefcbea38bce3e0",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/cdca6b37a2949c17684f87c6dce0469d02fdca2d562e3a9f7cefcbea38bce3e0/divisor-regression.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/runs.json",
+      "sha256": "c6897dc286a2593ad86fccdb9851b2be47d89e37e1e61c41aa94403b7a861c4a",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/c6897dc286a2593ad86fccdb9851b2be47d89e37e1e61c41aa94403b7a861c4a/runs.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/unrelated-before.json",
+      "sha256": "240dee9e2a989a41051b080663925ab5b4455ee585f68df1ae3fbf0c84b5a7d8",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/240dee9e2a989a41051b080663925ab5b4455ee585f68df1ae3fbf0c84b5a7d8/unrelated-before.json"
+    },
+    {
+      "path": ".lake/riesz-low-count-signed-selberg/diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": ".lake/riesz-low-count-signed-selberg/immutable/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/diff-check.log"
+    }
+  ],
+  "validation": {
+    "finiteEvaluations": 56,
+    "idealEvaluations": 28,
+    "actualDampedEvaluations": 28,
+    "frozenComplexRegressions": 9,
+    "fullMobiusDivisorRegression": {
+      "cases": [
+        {
+          "N": 6,
+          "sampledLabels": 256,
+          "actualPhysicalCutoff": 121,
+          "maxCoefficientDifference": 1.7763568394002505e-15,
+          "definition": "full Mobius divisor sum through actual physical cutoff"
+        },
+        {
+          "N": 7,
+          "sampledLabels": 256,
+          "actualPhysicalCutoff": 289,
+          "maxCoefficientDifference": 1.7763568394002505e-15,
+          "definition": "full Mobius divisor sum through actual physical cutoff"
+        },
+        {
+          "N": 8,
+          "sampledLabels": 256,
+          "actualPhysicalCutoff": 900,
+          "maxCoefficientDifference": 3.552713678800501e-15,
+          "definition": "full Mobius divisor sum through actual physical cutoff"
+        }
+      ],
+      "labels": 768,
+      "noNativeEstimate": true
+    },
+    "numericalRegressionOnly": true,
+    "intervalCertificate": false,
+    "nativeSignedSumEnumerated": false,
+    "nativeGeometryOnly": true,
+    "sourcePinChecks": 24,
+    "allSourcePinsVerified": true,
+    "gitDiffCheckExitCode": 0,
+    "scriptAndDocWhitespaceChecked": true,
+    "priorLeanAuditPreserved": "docs/riesz-low-count-selberg-audit.json",
+    "noNewLeanChecksRequired": true,
+    "noWiderGates": true,
+    "noCommitsOrPushes": true
+  },
+  "runs": [
+    {
+      "report": ".lake/riesz-low-count-signed-selberg/probe.json",
+      "cases": 21,
+      "actualDampedCutoff": false,
+      "regressions": 9,
+      "summaries": [
+        {
+          "N": 6,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 4,
+          "medianSelbergDefectCorrelation": -0.70828547258317,
+          "medianDefectSignCorrelation": 0.17022256909560526,
+          "medianSelbergPrimePairCorrelation": -0.912086245457962,
+          "maxJoinedReal": 0.00015523346039462123,
+          "maxDefectReal": 1.4579476981205818e-05
+        },
+        {
+          "N": 7,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 5,
+          "medianSelbergDefectCorrelation": 0.36083698743330805,
+          "medianDefectSignCorrelation": -0.3761805508352702,
+          "medianSelbergPrimePairCorrelation": -0.9842182912513516,
+          "maxJoinedReal": 7.577093186795738e-05,
+          "maxDefectReal": 6.743438316112764e-06
+        },
+        {
+          "N": 8,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 3,
+          "medianSelbergDefectCorrelation": -0.04898278500864781,
+          "medianDefectSignCorrelation": -0.4004776522733802,
+          "medianSelbergPrimePairCorrelation": -0.9567556413057993,
+          "maxJoinedReal": 2.0793190600839937e-05,
+          "maxDefectReal": 2.108635983898135e-06
+        }
+      ]
+    },
+    {
+      "report": ".lake/riesz-low-count-signed-selberg/held-out.json",
+      "cases": 7,
+      "actualDampedCutoff": false,
+      "regressions": 0,
+      "summaries": [
+        {
+          "N": 9,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 4,
+          "medianSelbergDefectCorrelation": 0.13924535254363402,
+          "medianDefectSignCorrelation": -0.3790529483074039,
+          "medianSelbergPrimePairCorrelation": -0.9846443908182467,
+          "maxJoinedReal": 2.1658890660838883e-06,
+          "maxDefectReal": 5.629988186034868e-07
+        }
+      ]
+    },
+    {
+      "report": ".lake/riesz-low-count-signed-selberg/actual-length.json",
+      "cases": 21,
+      "actualDampedCutoff": true,
+      "regressions": 0,
+      "summaries": [
+        {
+          "N": 6,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 2,
+          "medianSelbergDefectCorrelation": -0.5814175196845013,
+          "medianDefectSignCorrelation": null,
+          "medianSelbergPrimePairCorrelation": -0.9120862454579621,
+          "maxJoinedReal": 0.0003465477505667964,
+          "maxDefectReal": 0.0002002325974018592
+        },
+        {
+          "N": 7,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 6,
+          "medianSelbergDefectCorrelation": -0.8122367415413968,
+          "medianDefectSignCorrelation": null,
+          "medianSelbergPrimePairCorrelation": -0.9842182912513512,
+          "maxJoinedReal": 3.187691779405631e-05,
+          "maxDefectReal": 1.1265559666414715e-05
+        },
+        {
+          "N": 8,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 6,
+          "medianSelbergDefectCorrelation": -0.702819167116935,
+          "medianDefectSignCorrelation": null,
+          "medianSelbergPrimePairCorrelation": -0.9567556413057989,
+          "maxJoinedReal": 8.250728276031334e-06,
+          "maxDefectReal": 9.19402963704795e-06
+        }
+      ]
+    },
+    {
+      "report": ".lake/riesz-low-count-signed-selberg/actual-length-held-out.json",
+      "cases": 7,
+      "actualDampedCutoff": true,
+      "regressions": 0,
+      "summaries": [
+        {
+          "N": 9,
+          "heights": 7,
+          "selbergDefectOppositeTotals": 6,
+          "medianSelbergDefectCorrelation": -0.8663094642595907,
+          "medianDefectSignCorrelation": null,
+          "medianSelbergPrimePairCorrelation": -0.9846443908182485,
+          "maxJoinedReal": 6.378144670246215e-06,
+          "maxDefectReal": 8.421416304506272e-06
+        }
+      ]
+    }
+  ],
+  "findings": {
+    "actualToyLengthOver2NRange": [
+      0.399649212133,
+      0.44114354595
+    ],
+    "actualToyHeadAndCorrectionEmpty": true,
+    "idealBalancedDefectSign": "positive",
+    "actualToyBalancedDefectSign": "negative",
+    "nativeSizedBalancedGeometrySign": "positive",
+    "allNativeCalibrationRowsAreLogProfiles": true,
+    "signedOppositionNotUniform": true,
+    "noProvedNumericalFloorSaving": true
+  },
+  "literature": [
+    {
+      "title": "Friedlander–Iwaniec, Asymptotic sieve for primes",
+      "url": "https://arxiv.org/pdf/math/9811186",
+      "pages": "1043–1045",
+      "conclusion": "Theorem 1 assumes a separate bilinear hypothesis (B); no verification for these literal correlated complex weights has been supplied."
+    }
+  ],
+  "preservation": {
+    "baselinePaths": 338,
+    "unchangedUnrelatedPaths": 334,
+    "ownBaselinePath": "AGENTS.md",
+    "concurrentDifferences": [
+      {
+        "path": "RiemannGaussian/SemiprimeRowPeriods.lean",
+        "before": "540c9fd15b033f2875aa80a7acd80baa28bb642531229aec254611cd591422d8",
+        "after": "eef33c3b7fc87de3e0132a848a63899fd6bdff111b362c00482e8b901082615b",
+        "concurrentWorkPreserved": true
+      },
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before": "4132cbb198adfc7cbd07b954df6d83522505d890c8c8ccfaa11038dd3a8b117d",
+        "after": "78aea7517fb33bc5d1f4399c6fcc4d1e357744d3c4481aedccf14780bc8b3bbb",
+        "concurrentWorkPreserved": true
+      },
+      {
+        "path": "scripts/probe_semiprime_row_periods.py",
+        "before": "fced9d54f3f9fe93012aa78fe64a1a964356314c13bbd77bf3096f9fb67dcc37",
+        "after": "95d8217f9354855136c6d0f28f93bc902124b06e4d6336cc1f5c1193d759761f",
+        "concurrentWorkPreserved": true
+      }
+    ],
+    "frozenOrdinaryRootOlean": "e5e08ad8f2916f96d3fb6753f82ee7b3cabc6e427e69eef3f4b093a59157802f",
+    "rootNotRegisteredByThisSlice": true,
+    "publicFrontierNotEditedByThisSlice": true,
+    "semiprimeWorkNotModifiedByThisSlice": true
+  }
+}
