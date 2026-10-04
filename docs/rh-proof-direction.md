@@ -1,5 +1,16 @@
 # Current RH proof direction
 
+The [joined arithmetic checkpoint](zeta-riesz-coupled-checkpoint.md) adds a
+complete ordinary-prime square-budget estimate for the original energy minus
+correlation credit, retaining the full negative credit and all low orders.
+It improves the quantitative bound on existing coverage. At uncovered
+heights the full analytic radius need not exceed the source radius, and
+Lean proves the square budget nonsummable at a nonzero source radius.
+The sufficient independent cofinal `399/5000` bound remains open. Its new
+transfer theorem handles every exposed multiplicity, so proving that bound
+would make a separate multiplicity ceiling unnecessary for this endpoint.
+The earlier independent whole-carrier ceiling remains an available open route.
+
 The current arithmetic objective is the [joined physical floor](zeta-riesz-joined-physical.md)
 for `joinedPhysical`, source-equivalent to the original `J+C`, with
 sufficient threshold `-399/5000-o(1)` on

@@ -3,34 +3,34 @@
   "repository": "https://github.com/dbsanfte/RiemannGaussian",
   "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/rh-proof/",
   "title": "Current RH Proof Direction",
-  "defaultEndpoint": "signed-pair-defect",
+  "defaultEndpoint": "joined-square-budget",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The checked joint payments reduce the native simple-exposed-zero floor to the literal signed prime-pair defect on its original support. The full-mass two-hinge carrier retains every original mask. All-count, allocation, head and correction terms are joined before the low-count boundary is formed. The same-support Selberg prime/pair expression has a vanishing explicit budget under simple exposure; polynomial-small uniquely smaller prime cofactors are also paid under exposure. The remaining balanced-pair aggregate has no independent cofinal 399/5000 bound. Both independent whole-carrier bounds remain open. Earlier positive results and no-go audits remain available as supporting endpoints. Numerical sampling and prime-dilation audits provide no floor credit. The approximately 0.000071797 hypothetical source-to-target difference is a contradiction margin, not a measured remaining error or progress meter. No new zero-free region or RH proof is claimed.",
+  "contextScope": "The actual complete ordinary-prime energy minus correlation credit has an additional 1/N square-budget bound with its entire negative credit retained. A full analytic disk supplies the finite square sum; the radius may remain below the source radius at uncovered heights. On existing log(abs(y)+3)<=1800 coverage, the price decays geometrically. At an exposed nonzero source the square budget is nonsummable at its source radius. A cofinal 399/5000 bound on the actual joined quantity would exclude every exposed multiplicity, but this independent arithmetic premise remains open. All literal masks, low orders, earlier proofs and no-go audits are preserved. Finite prime probes do not certify the complete population. No new zero-free region or RH proof is claimed. The full-mass two-hinge carrier retains every original mask. Both independent whole-carrier bounds remain open.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
       "branch": "riesz-joint-floor-ceiling",
-      "statement": "Bound the original joined signed carrier on 1/2<u<=0.50005: a cofinal -399/5000 floor excludes simple exposed sources, and a 42/25 ceiling excludes higher multiplicities. Keep the balanced pair and its complement joined. Both independent constant bounds remain open.",
-      "changeReason": "The accumulated pair-source and multiplicity audits make both independent joint inequalities explicit. Exact same-mask adjacent-order cancellation and improved height-dependent ceilings do not supply either constant endgame bound."
+      "statement": "Bound the actual joined prime energy minus correlation credit on 1/2<u<=0.50005. A cofinal 399/5000 upper bound would exclude every exposed multiplicity. Keep the literal balanced pair and its complement joined; the independent bound at uncovered heights remains open.",
+      "changeReason": "The all-multiplicity transfer makes one sufficient actual arithmetic target explicit. The new complete-prime square-budget estimate retains the full signed credit, but its independent radius does not guarantee decay at uncovered heights."
     },
     "latestUpdate": {
-      "sequence": 146,
-      "id": "masked-selberg-ceiling-and-semiprime-checkpoint",
+      "sequence": 147,
+      "id": "joined-arithmetic-square-budget-checkpoint",
       "kind": "theorem",
-      "title": "Masked Selberg cancellation and height-dependent ceilings published.",
-      "body": "All 98 new Riesz and semiprime proof modules, audits and optional probes are included. The adjacent-order identity retains the literal masks; a test-height theorem joins divergent balanced and complement terms. A sublinear height price improves the whole ceiling, while the constant floor and ceiling remain open.",
-      "next": "Prove an independent signed estimate for the selected source with the whole complement retained. No new zero exclusion or constant-ceiling credit is claimed.",
+      "title": "Joined prime bounds retain the full correlation credit.",
+      "body": "Seven Lean modules add a complete-prime square-budget bound, a joined coefficient contraction and exact cutoff/curvature audits. The new 1/N price refines existing height coverage; the source-radius nonsummability audit keeps its limits explicit.",
+      "next": "Prove the independent 399/5000 bound at uncovered heights. The global floor and ceiling remain open; no new zero exclusion is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSublinearCeilingTheorem"
+        "rieszCoupledSquareBudgetTheorem"
       ],
-      "documentation": "docs/zeta-riesz-october-checkpoint.md"
+      "documentation": "docs/zeta-riesz-coupled-checkpoint.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "rieszPairDefectPaymentTheorem"
+      "rieszCoupledSquareBudgetTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -7824,6 +7824,147 @@
         "rieszSublinearCeilingScope"
       ],
       "documentation": "docs/zeta-riesz-ceiling-sublinear-height.md"
+    },
+    {
+      "id": "joined-square-budget",
+      "label": "Joined square budget · full signed credit, global bound open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledSquareBudgetTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoupledSquareScope"
+      ],
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    {
+      "id": "joined-square-budget-audits",
+      "label": "Square budget · minimum price, existing coverage and source audit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledMinimumBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledSquareCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledSquareSourceAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoupledSquareScope"
+      ],
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    {
+      "id": "joined-arithmetic-radius",
+      "label": "Actual arithmetic radius · all-multiplicity conditional endgame",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledArithmeticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledArithmeticTransferTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoupledArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-coupled-arithmetic-bound.md"
+    },
+    {
+      "id": "joined-signed-credit",
+      "label": "Joined signed bound · original pair and complement",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledSignedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledContractionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledCoherentAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoupledSignedScope"
+      ],
+      "documentation": "docs/zeta-riesz-coupled-signed-bound.md"
+    },
+    {
+      "id": "joint-second-difference",
+      "label": "Fixed-mask second difference · comparison plus curvature",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPeanoTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCollectedAtomTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointPeanoScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-second-difference.md"
+    },
+    {
+      "id": "saddle-center-source-audit",
+      "label": "Two-center comparison · signed curvature source survives",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleComparisonAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSaddleComparisonScope"
+      ],
+      "documentation": "docs/zeta-riesz-saddle-centers.md"
+    },
+    {
+      "id": "fixed-order-cutoff-audit",
+      "label": "Fixed-order cutoff · exact step and retained transition source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialCutoffStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialCutoffSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffTransitionAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffTransitionLowerTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFactorialCutoffScope"
+      ],
+      "documentation": "docs/zeta-riesz-factorial-cutoff.md"
     }
   ],
   "scopes": {
@@ -14284,6 +14425,71 @@
     "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_bin56_band_floor": {
       "label": "Whole lower few-bin population is paid disjointly from the old fixed counts",
       "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_energy_sub_credit_le_square_budget": {
+      "label": "Complete-prime square budget retains the entire signed correlation credit",
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_energy_sub_credit_le_minimum_budget": {
+      "label": "Keep the smaller joined diagonal price and spend the common credit once",
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.not_summable_squares_at_exposed_zero": {
+      "label": "Nonzero source forbids a finite square budget at its source radius",
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledArithmeticBound.false_of_cofinal_energy_sub_credit_bound": {
+      "label": "An independent cofinal energy-minus-credit bound excludes every exposed multiplicity",
+      "documentation": "docs/zeta-riesz-coupled-arithmetic-bound.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledArithmeticBound.ordinary_energy_sub_credit_le": {
+      "label": "One common analytic radius bounds the actual joined prime expression",
+      "documentation": "docs/zeta-riesz-coupled-arithmetic-bound.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSignedBound.exposed_prefix_signed_upper": {
+      "label": "The literal balanced pair and rest share one signed energy-minus-credit bound",
+      "documentation": "docs/zeta-riesz-coupled-signed-bound.md"
+    },
+    "RiemannGaussian.ZetaRieszJointSecondDifference.literal_joined_atom_collected": {
+      "label": "Collect both factorial degrees on the original prime mask before estimation",
+      "documentation": "docs/zeta-riesz-joint-second-difference.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddleCenters.not_tendsto_selected_difference_zero": {
+      "label": "The two-center signed curvature still carries the moved source",
+      "documentation": "docs/zeta-riesz-saddle-centers.md"
+    },
+    "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ": {
+      "label": "Exact adjacent cutoff transition at fixed total order and height",
+      "documentation": "docs/zeta-riesz-factorial-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_transition_tendsto": {
+      "label": "The narrow cutoff transition retains its actual multiplicity-squared source",
+      "documentation": "docs/zeta-riesz-factorial-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinarySquareBudget_summable_of_analytic_radius": {
+      "label": "A full analytic disk supplies the convergent complete-prime square sum",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_radius_square_sum_le": {
+      "label": "Bound the one finite square sum without deleting low orders",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.energy_sub_credit_le_square_budget": {
+      "label": "Join the whole correlation credit before applying the square price",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.diagonalEnergy_native_le_square_sum": {
+      "label": "Price the joined native diagonal by one square sum",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCoupledSquareEnergy.symmetricWeight_native_abs_le": {
+      "label": "Every joined native coefficient has absolute value at most 4/N",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-coupled-square-energy.md"
     }
   },
   "moduleFamilies": {

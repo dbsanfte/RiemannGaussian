@@ -15403,3 +15403,182 @@ semiprime results establish exact arithmetic and obstruction theorems, not
 a generic improved factoring exponent. See
 docs/zeta-riesz-october-checkpoint.md. After this publication, resume local
 research without additional commits or pushes until instructed.
+
+## Fixed-N factorial-cutoff audit, 2026-10-04
+
+Keep `ZetaRieszFactorialCutoff` and `ZetaRieszCutoffTransitionAudit`:
+the exact arbitrary-K evaluator, one-step centered-moment identity,
+harmonic source S_theta, proper-power payment, original native divisibility,
+and candidate-plus-transition literal ledger are checked. K1=1665N/4096
+has S1<399/5000, but the actual completed ordinary/von Mangoldt transition
+retains m^2*(S0-S1)>m^2/7000. The centered selected moment is nonzero and
+negative; the product with the other negative leg is positive. Raising the
+cutoff moves the source rather than earning floor credit. Stop automatic
+cutoff-centering savings; a strict independent transition upper bound remains
+contradiction-strength and is not disproved as an arithmetic possibility.
+See docs/zeta-riesz-factorial-cutoff.md and its scoped audit. Optional
+360/420-bit source-model controls passed165 comparisons, NOT actual-prime or
+zero samples. Preserve every prior positive/no-go result and all factorial
+orders. Both independent constant bounds and RH remain OPEN. Continue locally
+only: no commits/pushes, subagents, root registration,
+public-frontier changes or wider gates without a new user instruction.
+
+## Same-mask two-center saddle experiment, 2026-10-04
+
+Keep `ZetaRieszSaddleCenters` and the optional numerical controls. The
+two ordinates change before summing primes; the arbitrary finite prime,
+order and diagonal mask stays fixed. The exact comparison multiplies each
+old complex atom by cos(theta*(i-j)-delta*(log p-log q)); original equals
+comparison plus SIGNED curvature. All factorial orders and both original
+prefixes are retained. A nonnegative 1-cos scalar is not a real-part sign.
+The corresponding real-center multiplier is cosh>=1, so it supplies no
+pointwise absolute-amplitude saving.
+
+For delta=3/(100*sqrt(N+1)) and exact selected-pole matching
+theta=arg(u+i*delta), the CHECKED selected source model is f(u)*S0(u)<399/5000
+at unit multiplicity, but its difference from S0 remains >1/7000; both
+quadratic sources scale by m^2. This is not a genuine prime-sum bound.
+Keep the actual completedComparisonCost explicitly signed and unpaid.
+Only the old whole-mask/diagonal budgets are attached to its exact ledger.
+Do not transfer complete-leg asymptotics through a hard mask.
+
+Distinguish selected-zero saddle N/u from literal prime-density saddle2N.
+For the latter theta=2*delta, the checked accumulated selected-mode phase
+diverges for every fixed u>1/2. The optional21-row floating scan reaches
+N=10^16 and shows delayed order cancellation; it is NOT interval-certified,
+an actual-prime limit or a floor estimate. Moderate orders miss this effect,
+and the behavior is nonuniform as u approaches1/2.
+
+The separate360/420-bit replay checks source-model scalars and fixed actual
+prime atoms, including all joined factorial components before statistics.
+Its compact prime seeds are pinned in data so the ignored cache is unnecessary.
+All sampled prime controls have N=256, below native65536; test heights are
+not zero ordinates. The original full phase and prime integers remain exact.
+See docs/zeta-riesz-saddle-centers.md and its scoped audit. Both independent
+constant bounds and RH remain OPEN. Continue locally without commits/pushes,
+subagents, root registration, public-frontier updates or wider gates.
+
+
+## Joined comparison and curvature, 2026-10-04
+
+Keep `ZetaRieszJointSecondDifference`: the arbitrary same-mask original is
+EXACTLY F(1)-integral_0^1 (1-t)F''(t), including genuine derivatives and
+integrability. Its joint frequency multiplier is IDENTICALLY ONE, so this
+is not a source saving or permission to pay the comparison and curvature
+separately. Sum factorial orders first. The checked centered-binomial
+second-difference formula retains variance, detuning, phase curvature and
+BOTH cross-jump terms in Delta^2(weight*phase).
+
+The actual literal prefix/Selberg pair coefficient is collected into its
+two native factorial degrees with both prefixes and the original phase.
+Their exceptional ORDER-WEIGHT curvature has only five possible positions:
+K-1,K,N-K-1,N-K,N-K+1. This is not support of the whole response; the smooth
+-4/N curvature in degree N+1 and all phase/cross terms remain. Prime,
+radial, count and diagonal masks are not completed or changed.
+
+The optional 360/420-bit actual-prime bookkeeping replay passed4960 ball
+comparisons and4288 width checks. All controls have N=256 below native65536;
+the test heights are not zero ordinates and no population bound follows.
+See docs/zeta-riesz-joint-second-difference.md and its scoped audit.
+New global floor/ceiling credit is ZERO. Bound the WHOLE signed Peano
+aggregate independently before claiming progress on399/5000. Preserve all
+previous positive/no-go results and semiprime work. Continue locally without
+commits/pushes, subagents, root registration/public updates or wider gates.
+
+## Whole joined signed bound and actual arithmetic radius, 2026-10-04
+
+Keep `ZetaRieszCoupledSignedBound`: the actual whole `prefixPairDefect`,
+equivalently original `balancedPrefix + maskRest`, satisfies ONE signed
+upper bound `D_N-Q_N+advancePrice+wholeCompletionBudget+squareBudget`.
+Adjacent factorial degrees and swapped incidences are joined before the
+energy. Q retains the full conjugated prime correlation with its correct
+coefficient sign. All low orders, phases, native masks and multiplicities
+remain. Only the true adjacent-order difference receives a new norm price.
+Lean proves a fixed1/3 coefficient-price contraction on the ENTIRE native
+band and, under exposure, `advancePrice <=12(m+M)M/(N+1)`. These do NOT
+prove the independent0.0798 target. The coherent constant array attains the
+signed bound and has source above399/5000. Its ceiling source gap remains
+about0.0000717970349442; finite-order values below the target do not prove
+a cofinal saving. The checked model no-go is NOT a prime impossibility
+theorem. See docs/zeta-riesz-coupled-signed-bound.md and its scoped audit.
+
+Keep `ZetaRieszCoupledArithmeticBound`: ordinary-prime Cauchy bounds are
+applied to D-Q with ONE common total-order factor `(u/R_y)^(N-1)`, keeping
+the radius-matched credit negative. No exposed/source hypothesis enters
+the independent arithmetic estimate. At each fixed height `|y|>=54`, the
+proved full analytic radius is merely `R_y>1/2`; it need NOT exceed u.
+The competing exposed-mode radius omits the selected pole and MUST NOT be
+substituted for this full analytic radius.
+
+For the ALREADY PROVED height coverage `log(|y|+3)<=1800`, Lean proves
+`|D-Q|<=C_y^2*(100010/100011)^(N-1)`, uniformly on the current radius
+strip. This tends to zero and eventually reaches399/5000 independently.
+The constant and start order depend on height. This supplies NO new
+zero-free region or saving at uncovered heights. The cofinal D-Q endpoint
+transfers directly to the old all-multiplicity contradiction with existing
+errors spent ONCE; its uncovered-height bound is still a premise.
+
+Optional640/760-bit finite actual-prime controls replay96 ball and width
+checks. They have N=256 below native entry and no actual-zero ordinate
+claim. A finite-order envelope MUST NOT be extrapolated to an order-uniform
+Cauchy constant for all primes. See docs/zeta-riesz-coupled-arithmetic-bound.md
+and its scoped audit. Both global independent constant bounds and RH remain
+OPEN; no global floor credit was earned at uncovered heights. Preserve all
+previous proofs/no-gos and semiprime work. Continue locally only, without
+commits/pushes, subagents, root registration, public-frontier changes or
+wider gates unless the user instructs otherwise.
+
+## Additional joined arithmetic square-budget estimate, 2026-10-04
+
+Keep `ZetaRieszCoupledSquareEnergy`. AFTER joining both native factorial
+degrees and swapped incidences, every symmetric coefficient has absolute
+value at most4/N. The complete common-radius ordinary-prime coefficients
+have one finite square budget B_y(R), proved by enlarging the full analytic
+disk and retaining the proper-power correction. Consequently the ORIGINAL
+D-Q satisfies `(u/R)^(N-1)*(4*u^2*B_y(R)/N-Q_radius)`. The ENTIRE negative
+credit is retained. A second theorem gives the two-sided price with the
+same total order. A larger independent Cauchy disk r>R certifies
+`B_y(R)<=C^2/(1-(R/r)^2)`; numerical prime samples do not certify B_y.
+
+Keep the minimum with the preceding pointwise-envelope DIAGONAL price
+only AFTER joining the signed incidence. Both inequalities subtract the
+SAME credit once. The new price is not necessarily better at every finite
+order. On existing `log(|y|+3)<=1800` coverage, one height-dependent B gives
+`abs(D-Q)<=B/N*(100010/100011)^(N-1)` uniformly on the radius strip, and
+Lean proves even N*abs(D-Q) tends to zero. This is a quantitative refinement
+on EXISTING coverage, not new zero freeness or uncovered floor credit.
+
+The new no-go proves that ANY nonzero actual ordinary-prime source makes
+the square budget NONSUMMABLE at its source radius, for every analytic
+multiplicity. Do not assume B finite at R=u or use a competing-mode disk
+as the full analytic disk. A default real tsum at a nonsummable sequence
+is not an arithmetic budget. At uncovered heights u/R can still exceed
+one; polynomial prefactors do not close that gap.
+
+Optional640/760-bit controls retain actual integer primes and full phase.
+They include18 fixed finite-prime rows, three at native N=65536; none is
+the complete ordinary-prime population or an actual-zero ordinate claim.
+The minimum retains the old price at N=256 and selects the new price at
+N=4096,65536 on those controls. These finite-head savings earn ZERO new
+global floor/ceiling credit. See docs/zeta-riesz-coupled-square-energy.md
+and the scoped audit. Preserve every previous proof/no-go and semiprime
+file. Continue locally without commits/pushes, subagents, root registration,
+public-frontier updates or wider gates unless explicitly instructed.
+
+## Joined arithmetic checkpoint authorized on 2026-10-04
+
+The user's request to commit and push all accumulated work authorizes this
+checkpoint's root registration, evergreen metadata, publication checks and
+push. Include all seven new Riesz modules, their scoped audits, optional
+probes and independent replays. Preserve every earlier proof/no-go and all
+semiprime files. The scoped audits describe their original local-only
+validation; a separate publication audit records the wider gates. Numerical
+controls remain optional and are not complete-prime or cofinal certificates.
+
+The newest square-budget estimate retains the full correlation credit and
+the minimum with the old diagonal price. Its geometric rate applies on
+existing coverage only. Do not report new zero freeness or assume the full
+analytic radius exceeds the selected source radius. The new cofinal transfer
+criterion handles every exposed multiplicity, but its arithmetic premise
+remains open. The global floor, ceiling and RH are not proved. Resume local
+iteration after this authorized checkpoint; do not spawn subagents.

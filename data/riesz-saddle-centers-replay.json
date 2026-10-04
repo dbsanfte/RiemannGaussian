@@ -1,0 +1,15 @@
+{
+  "schema": "riesz-saddle-centers-replay-v1",
+  "precision_bits": 420,
+  "ball_comparisons": 1286,
+  "relative_width_checks": 950,
+  "source_rows": 3,
+  "finite_rows": 30,
+  "actual_prime_atoms": 96,
+  "all_order_joined_pairs": 16,
+  "independent_from_producer": true,
+  "actual_zeros_sampled": false,
+  "native_mask_completion_verified": false,
+  "arithmetic_floor_verified": false,
+  "passed": true
+}

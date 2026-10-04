@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Bound the original joined signed carrier on 1/2<u<=0.50005: a cofinal -399/5000 floor excludes simple exposed sources, and a 42/25 ceiling excludes higher multiplicities. Keep the balanced pair and its complement joined. Both independent constant bounds remain open.
+Bound the actual joined prime energy minus correlation credit on 1/2<u<=0.50005. A cofinal 399/5000 upper bound would exclude every exposed multiplicity. Keep the literal balanced pair and its complement joined; the independent bound at uncovered heights remains open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Bound the original joined signed carrier on 1/2<u<=0.50005: a cofinal -399/5000 
 
 ### Latest Update
 
-**Masked Selberg cancellation and height-dependent ceilings published.** All 98 new Riesz and semiprime proof modules, audits and optional probes are included. The adjacent-order identity retains the literal masks; a test-height theorem joins divergent balanced and complement terms. A sublinear height price improves the whole ceiling, while the constant floor and ceiling remain open.
-Prove an independent signed estimate for the selected source with the whole complement retained. No new zero exclusion or constant-ceiling credit is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCeilingSublinearHeight.lean#L173)
-· [Proof details](docs/zeta-riesz-october-checkpoint.md).
+**Joined prime bounds retain the full correlation credit.** Seven Lean modules add a complete-prime square-budget bound, a joined coefficient contraction and exact cutoff/curvature audits. The new 1/N price refines existing height coverage; the source-radius nonsummability audit keeps its limits explicit.
+Prove the independent 399/5000 bound at uncovered heights. The global floor and ceiling remain open; no new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCoupledSquareEnergy.lean#L283)
+· [Proof details](docs/zeta-riesz-coupled-checkpoint.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

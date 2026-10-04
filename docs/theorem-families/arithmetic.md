@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**868 modules.** Source links open the definitions, hypotheses and proofs.
+**875 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -248,6 +248,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCoreExtensions](../../RiemannGaussian/ZetaRieszCoreExtensions.lean)
 - [ZetaRieszCoreOwnerPayment](../../RiemannGaussian/ZetaRieszCoreOwnerPayment.lean)
 - [ZetaRieszCosineCarrier](../../RiemannGaussian/ZetaRieszCosineCarrier.lean)
+- [ZetaRieszCoupledArithmeticBound](../../RiemannGaussian/ZetaRieszCoupledArithmeticBound.lean)
+- [ZetaRieszCoupledSignedBound](../../RiemannGaussian/ZetaRieszCoupledSignedBound.lean)
+- [ZetaRieszCoupledSquareEnergy](../../RiemannGaussian/ZetaRieszCoupledSquareEnergy.lean)
 - [ZetaRieszCoupledWindow](../../RiemannGaussian/ZetaRieszCoupledWindow.lean)
 - [ZetaRieszCriticalPrimeFloor](../../RiemannGaussian/ZetaRieszCriticalPrimeFloor.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
@@ -264,6 +267,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCutoffMean](../../RiemannGaussian/ZetaRieszCutoffMean.lean)
 - [ZetaRieszCutoffPeriodFloor](../../RiemannGaussian/ZetaRieszCutoffPeriodFloor.lean)
 - [ZetaRieszCutoffProfile](../../RiemannGaussian/ZetaRieszCutoffProfile.lean)
+- [ZetaRieszCutoffTransitionAudit](../../RiemannGaussian/ZetaRieszCutoffTransitionAudit.lean)
 - [ZetaRieszCycleCapacity](../../RiemannGaussian/ZetaRieszCycleCapacity.lean)
 - [ZetaRieszCycleCore](../../RiemannGaussian/ZetaRieszCycleCore.lean)
 - [ZetaRieszCycleCorrelation](../../RiemannGaussian/ZetaRieszCycleCorrelation.lean)
@@ -303,6 +307,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszExtremeDegreeBounds](../../RiemannGaussian/ZetaRieszExtremeDegreeBounds.lean)
 - [ZetaRieszExtremePrimeCount](../../RiemannGaussian/ZetaRieszExtremePrimeCount.lean)
 - [ZetaRieszExtremePrimeProfile](../../RiemannGaussian/ZetaRieszExtremePrimeProfile.lean)
+- [ZetaRieszFactorialCutoff](../../RiemannGaussian/ZetaRieszFactorialCutoff.lean)
 - [ZetaRieszFewBinCoverFloor](../../RiemannGaussian/ZetaRieszFewBinCoverFloor.lean)
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)
 - [ZetaRieszFilteredMaskAudit](../../RiemannGaussian/ZetaRieszFilteredMaskAudit.lean)
@@ -423,6 +428,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszJointQuintupleFloor](../../RiemannGaussian/ZetaRieszJointQuintupleFloor.lean)
 - [ZetaRieszJointRadialFloor](../../RiemannGaussian/ZetaRieszJointRadialFloor.lean)
 - [ZetaRieszJointReflectionBounds](../../RiemannGaussian/ZetaRieszJointReflectionBounds.lean)
+- [ZetaRieszJointSecondDifference](../../RiemannGaussian/ZetaRieszJointSecondDifference.lean)
 - [ZetaRieszJointShare](../../RiemannGaussian/ZetaRieszJointShare.lean)
 - [ZetaRieszJointShift](../../RiemannGaussian/ZetaRieszJointShift.lean)
 - [ZetaRieszJointShiftError](../../RiemannGaussian/ZetaRieszJointShiftError.lean)
@@ -664,6 +670,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszRoughOwnerComparison](../../RiemannGaussian/ZetaRieszRoughOwnerComparison.lean)
 - [ZetaRieszRoughPrimePairCancellation](../../RiemannGaussian/ZetaRieszRoughPrimePairCancellation.lean)
 - [ZetaRieszSaddleBand](../../RiemannGaussian/ZetaRieszSaddleBand.lean)
+- [ZetaRieszSaddleCenters](../../RiemannGaussian/ZetaRieszSaddleCenters.lean)
 - [ZetaRieszSaddleCredit](../../RiemannGaussian/ZetaRieszSaddleCredit.lean)
 - [ZetaRieszSaddlePacking](../../RiemannGaussian/ZetaRieszSaddlePacking.lean)
 - [ZetaRieszSaddlePeriod](../../RiemannGaussian/ZetaRieszSaddlePeriod.lean)

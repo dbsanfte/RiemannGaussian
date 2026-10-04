@@ -1,0 +1,123 @@
+{
+  "schema": "riesz-saddle-centers-scoped-audit-v1",
+  "head": "48f975c2154fe65919f66218dab86a42ec78aa99",
+  "scope": {
+    "localOnly": true,
+    "rootRegistered": false,
+    "publicFrontierChanged": false,
+    "widerGatesRun": false,
+    "committedOrPushed": false,
+    "subagentsUsed": false,
+    "nativePrimeMaskChanged": false,
+    "nativeScheduleChanged": false,
+    "allFactorialOrdersRetained": true,
+    "fullComplexPhaseRetained": true,
+    "multiplicityRetained": true,
+    "priorProofsAndNoGosPreserved": true,
+    "semiprimeWorkPreserved": true,
+    "independentFloorProved": false,
+    "actualMovingCenterSourceTransferProved": false
+  },
+  "results": {
+    "sameMaskCosineIdentity": "checked",
+    "sameMaskOriginalComparisonCurvatureLedger": "checked",
+    "realCenterCoshAmplitudeGeOne": "checked",
+    "selectedModelGeometricArrayEvaluation": "checked, all factorial orders retained",
+    "selectedModelLimit": "m^2*exp(-(eta/u)^2/2)*S0(u)",
+    "selectedModelDifferenceLimit": "m^2*(1-exp(-(eta/u)^2/2))*S0(u)",
+    "testedEta": [
+      3,
+      100
+    ],
+    "selectedUnitModelBelowTarget": "checked: <399/5000 on [1/2,10001/20000]",
+    "selectedDifferenceNotFree": "checked: >m^2/7000 for m>0; selected model only",
+    "physicalSaddleMismatchLimit": "checked: psi/delta -> 2-1/u",
+    "physicalSaddleAccumulatedMismatch": "checked: (N+1)*psi -> +infinity for fixed u>1/2,eta>0",
+    "actualCompletedCarrierLedger": "checked with existing wholeCompletionBudget+squareBudget; signed comparison cost remains unpaid"
+  },
+  "validation": {
+    "buildWarningAsError": true,
+    "namespaceLinters": 14,
+    "declarationsIncludingGenerated": 97,
+    "theoremsIncludingPrivateHelpers": 77,
+    "onlyStandardAxioms": true,
+    "axiomReportSha256": "d2fa9b7c64e7491582e21693afd155a4014edb322cd655545c33613043b59889",
+    "buildLogSha256": "f82013087f4c1157d6504369dd6a8edc42dcb63cfa5a2ea70881c4930802706e",
+    "checkLogSha256": "9ced7bec4aaef0203b991852943c7c1699abfeea072576435fa76b4ad553f850",
+    "optionalBallReplay": {
+      "schema": "riesz-saddle-centers-replay-v1",
+      "precision_bits": 420,
+      "ball_comparisons": 1286,
+      "relative_width_checks": 950,
+      "source_rows": 3,
+      "finite_rows": 30,
+      "actual_prime_atoms": 96,
+      "all_order_joined_pairs": 16,
+      "independent_from_producer": true,
+      "actual_zeros_sampled": false,
+      "native_mask_completion_verified": false,
+      "arithmetic_floor_verified": false,
+      "passed": true
+    },
+    "optionalPhysicalSaddleScan": {
+      "rows": 21,
+      "orders": [
+        640,
+        4096,
+        65536,
+        10000000000,
+        1000000000000,
+        100000000000000,
+        10000000000000000
+      ],
+      "precisionsDecimal": [
+        75,
+        110
+      ],
+      "intervalCertified": false,
+      "actualPrimesOrZeros": false,
+      "proofDependency": false,
+      "lastRow": {
+        "u": [
+          10001,
+          20000
+        ],
+        "N": 10000000000000000,
+        "theta": "0.00000000059999999999999997000000000000000225",
+        "delta": "0.00000000029999999999999998500000000000000112",
+        "angular_mismatch": "5.9994000599940074978104349277097698e-14",
+        "accumulated_mismatch": "599.94000599940080977504409271105195",
+        "source_model_response": "-0.00023859923529382769314953835500359072",
+        "finite_sum_riemann_error_formula": "1.5423426192310582291167096913182202e-13",
+        "moderate_order_direct_sum": null,
+        "log10_floor_length_error_upper": "-3009865683871168.6537042623434315137",
+        "precision_crosscheck_absolute_error": "8.870694624e-65"
+      }
+    },
+    "ordinaryCIConsumesProbes": false
+  },
+  "preservation": {
+    "priorPins": 4980,
+    "priorFilesUnchanged": 4979,
+    "changedPriorFiles": [
+      "AGENTS.md"
+    ],
+    "missingPriorFiles": [],
+    "agentsPriorContentExactPrefix": true,
+    "beforePinDigest": "859f63c7c74d96b5b54dc5211ef1244f108985638afb8fd004b55daf7cdbf39e"
+  },
+  "hashes": {
+    "AGENTS.md": "d57a7ace3acaa9554c7a0ae9c65310ba84b04b71386dee2cea5de076688e26de",
+    "RiemannGaussian/ZetaRieszSaddleCenters.lean": "231419d84556751788039db7eab2f2d7d44b66cf6133eb22eee93378a7f3fc0b",
+    "scripts/CheckRieszSaddleCenters.lean": "88fe11883035c4996243239568e534333ec8b852c89e9eedfd679595e0195cb5",
+    "scripts/probe_riesz_saddle_centers.py": "9cb033c97f85323e407b61de782819212cce799200f43999c882a3ff90653368",
+    "scripts/replay_riesz_saddle_centers.py": "d96eb11a07a30cce6da410d4d3af3b74196b4890b4a03113d5ff477eba447e68",
+    "scripts/probe_riesz_physical_saddle.py": "0afd94a1bcb51f532757740c0f4b3323de403f2cdf73dc9f5b2d2b47accf84ec",
+    "data/riesz-saddle-centers-prime-seeds.json": "b441ff0a498bdf300fabd9e1a74056ffb3cc5c95e785c17a709c8eff78e8fc72",
+    "data/riesz-saddle-centers-probe.json": "6fb8303d1fa3688030e79a492d5f8b48cae352c6c9a785ff96822860c1e33f41",
+    "data/riesz-saddle-centers-replay.json": "5e5da1ffad7d1dd749fc924d2a6f172c6bb1e82ddcf3a5776a9385c7153808a7",
+    "data/riesz-physical-saddle-probe.json": "cc4a79e13f995fc1ed4000cfc4ac3116a16037e1aefe9bc993cbee202ceb7837",
+    "docs/zeta-riesz-saddle-centers.md": "15b553366257a82c9b9efec79099643058512721be80fc1d7d01a3c287a4b30f"
+  },
+  "nextArithmeticTarget": "Independent signed bound on same-mask comparison plus curvature, or on the exact completed comparison cost. No free source-o(1) replacement or new mask completion is claimed."
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "riesz-factorial-cutoff-replay-v1",
+  "precision_bits": 420,
+  "independent_producer_import": false,
+  "comparisons": 165,
+  "all_finite_balls_enclosed": true,
+  "scope": "scalar/source-model controls only; no actual prime sum or zero certificate",
+  "independent_floor_credit": 0,
+  "rh_proved": false
+}

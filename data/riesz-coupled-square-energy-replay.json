@@ -1,0 +1,14 @@
+{
+  "schema": "riesz-coupled-square-energy-replay-v1",
+  "precision_bits": 760,
+  "input_sha256": "65071943e86d5e662bbfba02def998ee3d686d5bc473b096059a57e1d5cfcccc",
+  "replay_sha256": "76eaa0eefe69192183d50a8295798e72b1971ab77d920c6412c668232585ee58",
+  "rows": 18,
+  "ball_checks": 234,
+  "width_checks": 234,
+  "passed": true,
+  "complete_prime_population": false,
+  "numerical_floor_proof": false,
+  "proof_dependency": false,
+  "ordinary_ci": false
+}

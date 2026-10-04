@@ -1,0 +1,15 @@
+{
+  "schema": "riesz-coupled-arithmetic-bound-replay-v1",
+  "precision_bits": 760,
+  "input_sha256": "92d125883fcae89c18e698b5c1a64edc7837c3bd2f993ee745a583409290f5e8",
+  "replay_sha256": "fdeae987f615f2b8d58247361fe84b406f4c77cddd4362c1750cd002ece6d21f",
+  "independent_from_producer": true,
+  "prime_primality_rechecked": true,
+  "direct_factorials_and_real_trigonometric_phases": true,
+  "rows": 12,
+  "ball_comparisons": 96,
+  "relative_width_checks": 96,
+  "numerical_floor_proof": false,
+  "global_floor_proved": false,
+  "passed": true
+}

@@ -64,26 +64,26 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_native_pairDefect_payment_simple'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_energy_sub_credit_le_square_budget'
                 assert all(term in data['statement'] for term in (
-                    'radiusCeiling', 'Tendsto', 'NontrivialZetaZero',
-                    'analyticZetaZeroMultiplicity rho = 1', 'nativeSelbergBudget',
-                    'literalPairDefect', 'coreResponse'))
-                # The current endpoint spends a vanishing budget under simple
-                # exposure; it does not assume or prove the numerical pair bound.
+                    'radiusCeiling', 'AnalyticOnNhd', 'ordinaryArray',
+                    'ordinarySquareBudget', 'diagonalEnergy',
+                    'correlationCredit', 'radiusArray', '65536'))
+                # The current endpoint retains the full signed credit and
+                # requires a full analytic disk. It does not assume R>u.
                 floor_source = (ROOT / data['source']['path']).read_text().splitlines()
                 floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
                 assert all(term in floor_type for term in (
-                    'hexposed : ∀ tau : NontrivialZetaZero',
-                    'hm : analyticZetaZeroMultiplicity rho=1',
-                    'hy : 54≤|rho.1.im|', '∃ C : ℝ,1≤C ∧',
-                    'Tendsto (nativeSelbergBudget', '-(literalPairDefect',
-                    'ZetaRieszParityPacket.coreResponse'))
+                    'ha : AnalyticOnNhd', 'closedBall',
+                    'ordinarySquareBudget y R', '(u/R)^(N-1)',
+                    'correlationCredit (radiusArray', 'hN : 65536 ≤ N'))
+                assert 'NontrivialZetaZero' not in floor_type
+                assert 'u < R' not in floor_type
                 assert '399/5000' not in floor_type
                 assert all(term in page.locator('#scope-text').inner_text() for term in (
-                    'simple exposed-zero hypotheses', 'SAME literal complete-period support',
-                    'Balanced pairs remain', '399/5000+o(1)', 'NOT proved',
-                    'contradiction margin', 'not an estimated remaining error'))
+                    'ENTIRE negative correlation credit', 'full analytic disk',
+                    'nonsummable at R=u', 'may be below u at uncovered heights',
+                    'not a global 399/5000 floor', 'no global credit'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -114,6 +114,28 @@ def run(output, url=None, refresh_preview=False):
                 assert 'two-hinge' in page.locator('#details').inner_text()
                 assert 'Both independent whole-carrier bounds remain open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
+                # Preserve the former default's complete literal payment audit
+                # after advancing to the additional arithmetic estimate.
+                page.locator('#endpoint').select_option('signed-pair-defect')
+                previous = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
+                assert previous['id'] == 'RiemannGaussian.ZetaRieszSignedSelbergPayment.exists_native_pairDefect_payment_simple'
+                assert all(term in previous['statement'] for term in (
+                    'radiusCeiling', 'Tendsto', 'NontrivialZetaZero',
+                    'analyticZetaZeroMultiplicity rho = 1', 'nativeSelbergBudget',
+                    'literalPairDefect', 'coreResponse'))
+                previous_source = (ROOT / previous['source']['path']).read_text().splitlines()
+                previous_type = '\n'.join(previous_source[previous['source']['line'] - 1:]).split(':= by', 1)[0]
+                assert all(term in previous_type for term in (
+                    'hexposed : ∀ tau : NontrivialZetaZero',
+                    'hm : analyticZetaZeroMultiplicity rho=1',
+                    'hy : 54≤|rho.1.im|', '∃ C : ℝ,1≤C ∧',
+                    'Tendsto (nativeSelbergBudget', '-(literalPairDefect',
+                    'ZetaRieszParityPacket.coreResponse'))
+                assert '399/5000' not in previous_type
+                assert all(term in page.locator('#scope-text').inner_text() for term in (
+                    'simple exposed-zero hypotheses', 'SAME literal complete-period support',
+                    'Balanced pairs remain', '399/5000+o(1)', 'NOT proved',
+                    'contradiction margin', 'not an estimated remaining error'))
                 # Keep the previous independent whole-floor endpoint audited
                 # as a supporting result after advancing the default frontier.
                 page.locator('#endpoint').select_option('whole-fixed-count-floor')

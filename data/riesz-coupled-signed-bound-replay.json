@@ -1,0 +1,17 @@
+{
+  "schema": "riesz-coupled-signed-bound-replay-v1",
+  "precision_bits": 420,
+  "actual_prime_control_precision_bits": 640,
+  "input_sha256": "6417f7780bfbf54de4659b24d42ec1b28efe3232884d0663c3a8f31296d7c325",
+  "replay_sha256": "c306238c43b873de515aa4352e7e0ad59ab7af121f6867b0492c02453df647df",
+  "independent_from_producer": true,
+  "piecewise_reflection_replayed": true,
+  "direct_prime_powers_and_factorials": true,
+  "ball_comparisons": 140,
+  "relative_width_checks": 140,
+  "coefficient_rows": 12,
+  "actual_prime_controls": 4,
+  "native_prime_population_bound": false,
+  "independent_floor_proved": false,
+  "passed": true
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "riesz-joint-second-difference-scoped-audit-v1",
+  "head": "48f975c2154fe65919f66218dab86a42ec78aa99",
+  "scope": {
+    "localOnly": true,
+    "rootRegistered": false,
+    "publicFrontierChanged": false,
+    "widerGatesRun": false,
+    "committedOrPushed": false,
+    "subagentsUsed": false,
+    "nativePrimeMaskChanged": false,
+    "nativeScheduleChanged": false,
+    "allFactorialOrdersRetained": true,
+    "fullComplexPhaseRetained": true,
+    "bothPrefixesRetained": true,
+    "multiplicityRetained": true,
+    "priorProofsAndNoGosPreserved": true,
+    "semiprimeWorkPreserved": true,
+    "independentFloorProved": false,
+    "newGlobalFloorCredit": 0
+  },
+  "results": {
+    "actualPathFirstAndSecondDerivative": "checked",
+    "sameMaskCentralDifference": "checked",
+    "signedJointPeanoIdentity": "F(0)=F(1)-integral_0^1 (1-t)*F_second(t)",
+    "integrability": "checked",
+    "jointFrequencyMultiplier": "identically one, checked",
+    "centeredBinomialSummationByParts": "checked, arbitrary complex weights",
+    "detuningAndVarianceRetained": true,
+    "productSecondDifference": "checked with BOTH cross jumps",
+    "literalPairKernelBridge": "checked, full phase and unchanged primes",
+    "literalPrefixSelbergCoefficientCollected": "checked, both native factorial degrees",
+    "joinedOrderWeightCurvatureBoundaries": [
+      "K-1",
+      "K",
+      "N-K-1",
+      "N-K",
+      "N-K+1"
+    ],
+    "outsideWeightBoundaryCurvature": "degree N+1: -4/N; degree N+2: 0, checked",
+    "wholeResponseSupportedOnFiveBoundaries": false,
+    "independentSignedPeanoPrimeAggregateBound": "open"
+  },
+  "validation": {
+    "buildWarningAsError": true,
+    "namespaceLinters": 14,
+    "declarationsIncludingGenerated": 113,
+    "theoremsIncludingPrivateHelpers": 102,
+    "onlyStandardAxioms": true,
+    "axiomReportSha256": "0054d3db5491eb49ae12c5593c2b773c33512d290ed8778fb7916477f3b84cee",
+    "buildLogSha256": "3a65cb5dd1f75131c11512a3d05c52cd42b0413fc240ad6d442d2479080b853c",
+    "checkLogSha256": "e5ffaa57833a56bdc00fb211be1cd4b1224160126a8d96855cb2c13cb7f8b883",
+    "optionalBallReplay": {
+      "schema": "riesz-joint-second-difference-replay-v1",
+      "precision_bits": 420,
+      "independent_from_producer": true,
+      "uncollected_prefixes_replayed": true,
+      "input_sha256": "3c2cbb5c41cdd2391641306c92fa7c4298d7c3a33be5ffca27c3e773cb1c0005",
+      "replay_sha256": "e96dd44cca81763d122064da10037dec369998027ce29b671027a864ec4796a7",
+      "ball_comparisons": 4960,
+      "relative_width_checks": 4288,
+      "rows": 32,
+      "signed_symbols": 192,
+      "native_prime_population_bound": false,
+      "independent_floor_proved": false,
+      "passed": true
+    },
+    "ordinaryCIConsumesProbes": false,
+    "controlOrder": 256,
+    "nativeEntryOrder": 65536,
+    "actualPrimeIntegersRechecked": true,
+    "actualZeroOrdinatesSampled": false
+  },
+  "preservation": {
+    "priorPins": 4991,
+    "priorFilesUnchanged": 4990,
+    "changedPriorFiles": [
+      "AGENTS.md"
+    ],
+    "missingPriorFiles": [],
+    "agentsPriorContentExactPrefix": true,
+    "beforePinDigest": "3db8e6650139653692a010014f8a2479147977b9ea6bcac709ff2fc5a65376c0"
+  },
+  "hashes": {
+    "AGENTS.md": "6d1474d57fc00a94efc2db59341825381144f8b5587075ac0ed09f1f5b808d8c",
+    "RiemannGaussian/ZetaRieszJointSecondDifference.lean": "7a47adf02d319a399732bc22148452129ea0b506d0b1039163741cef29fcc24e",
+    "scripts/CheckRieszJointSecondDifference.lean": "d77c1552888ffb1f9bc2da48dc67b6dea8677e996fbcee8dcaead8f9d9e677ae",
+    "scripts/probe_riesz_joint_second_difference.py": "ff787a41168e900d6dadf75fc9b510169aa1b52c4bb21e8966f56e1ce5ac4f02",
+    "scripts/replay_riesz_joint_second_difference.py": "e96dd44cca81763d122064da10037dec369998027ce29b671027a864ec4796a7",
+    "data/riesz-joint-second-difference-probe.json": "3c2cbb5c41cdd2391641306c92fa7c4298d7c3a33be5ffca27c3e773cb1c0005",
+    "data/riesz-joint-second-difference-replay.json": "5507fa703a8019399de3f8491e7f94a03d58368de2bfe41600123425fdb8c0c2",
+    "docs/zeta-riesz-joint-second-difference.md": "92aad383c278490f5f946d438c40965c02cdae63d07cb0ea0bd658005461c3de"
+  },
+  "nextArithmeticTarget": "Independent real-part bound on the whole signed Peano prime aggregate, retaining variance, phase curvature, both cross terms and all five structured order-weight boundaries. No separate comparison or curvature allowance."
+}

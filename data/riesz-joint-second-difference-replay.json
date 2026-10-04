@@ -1,0 +1,15 @@
+{
+  "schema": "riesz-joint-second-difference-replay-v1",
+  "precision_bits": 420,
+  "independent_from_producer": true,
+  "uncollected_prefixes_replayed": true,
+  "input_sha256": "3c2cbb5c41cdd2391641306c92fa7c4298d7c3a33be5ffca27c3e773cb1c0005",
+  "replay_sha256": "e96dd44cca81763d122064da10037dec369998027ce29b671027a864ec4796a7",
+  "ball_comparisons": 4960,
+  "relative_width_checks": 4288,
+  "rows": 32,
+  "signed_symbols": 192,
+  "native_prime_population_bound": false,
+  "independent_floor_proved": false,
+  "passed": true
+}

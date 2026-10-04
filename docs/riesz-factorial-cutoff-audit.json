@@ -1,0 +1,1184 @@
+{
+  "schemaVersion": 1,
+  "head": "48f975c2154fe65919f66218dab86a42ec78aa99",
+  "goal": "Independent signed floor for the original retained carrier; fixed-order cutoff go/no-go test",
+  "status": "coherent-selected-transition-no-independent-floor-credit",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszFactorialCutoff.lean",
+      "sha256": "089f032b0d6d5851a4c21810e6674c085c01133af258de6a5f44382ab94c423b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCutoffTransitionAudit.lean",
+      "sha256": "a544066df1439c98394672f897ec57d688c31cee48d05ec58f64866f7940123b"
+    },
+    {
+      "path": "scripts/CheckRieszFactorialCutoff.lean",
+      "sha256": "e60a71172b8da0b7a4cf72fcf73c3fff784cc12e1aba84736f9cdf437ffad8ce"
+    },
+    {
+      "path": "scripts/probe_riesz_factorial_cutoff.py",
+      "sha256": "a42482042f7948d3047d773a2a331ad8d81c1199200c670bd4ce94ba2c1d0b3e"
+    },
+    {
+      "path": "scripts/replay_riesz_factorial_cutoff.py",
+      "sha256": "e6b78ba6138c435c029ecb7b6ce792dba768a3f3b6694182de6330c52a166bc3"
+    },
+    {
+      "path": "data/riesz-factorial-cutoff-probe.json",
+      "sha256": "5bfabf67ee22b0cedcec09a0c86190d78d5b8c242f3ccedc9b6bd39c6edb0b27"
+    },
+    {
+      "path": "data/riesz-factorial-cutoff-replay.json",
+      "sha256": "b8c5f26945fe02ca75a6587a0dfb4ccc76db150ea27aa5e3f1f8a3e69af23608"
+    },
+    {
+      "path": "docs/zeta-riesz-factorial-cutoff.md",
+      "sha256": "715d35621aa5fc0a2c0723e8780a32d2bde860c1a218c2b51bfb79ee8603c316"
+    }
+  ],
+  "preservation": {
+    "baselineTrackedFiles": 4971,
+    "unchangedPublishedFiles": 4970,
+    "onlyChangedPublishedFile": "AGENTS.md",
+    "baselineManifestSha256": "b91384b5948865716daec2944c2d308b2cde488812a0d2c9e3ba1832031a483b",
+    "everyPublishedProofProbeAndSemiprimeInputPreserved": true,
+    "originalRootAndPublicMetadataUnchanged": true
+  },
+  "validation": {
+    "warningAsErrorLeavesPassed": true,
+    "namespaceLintersPerLeaf": 14,
+    "compiledAxiomAudit": {
+      "onlyStandardAxioms": true,
+      "namespaceLinters": 14,
+      "modules": [
+        {
+          "theoremsIncludingPrivateHelpers": 85,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_eq_sum._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_14",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.reciprocal_interval._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.trace_difference",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.prefix_reciprocal._proof_1_4",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.reciprocal_interval._proof_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.prefix_reciprocal._proof_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_original",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._proof_1_8",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const_tendsto._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.marginal_sums._proof_1_3",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.marginal_sums._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_9",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_selected_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_ordinary_sub_mangoldt_evaluation_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_18",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.harmonic_difference",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_10",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_12",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.reciprocal_interval._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.harmonic_difference._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_7",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_22",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.nat_atTop_of_ratio",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.marginal_sums._proof_1_4",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_eq_sum",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_8",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._proof_1_5",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._proof_1_6",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_15",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.harmonic_difference._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_21",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._simp_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._proof_1_5",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.trace_difference._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._proof_1_6",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.marginal_sums",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.reciprocal_interval._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.tendsto_ordinary_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_20",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.product_difference",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.reciprocal_interval",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.prefix_reciprocal",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_8",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_17",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.tendsto_centered_defect._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.tendsto_centered_defect",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_16",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_6",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.marginal_sums._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.prefix_reciprocal._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.prefix_reciprocal._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszFactorialCutoff.0.RiemannGaussian.ZetaRieszFactorialCutoff.length_factor_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const_tendsto._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.norm_evaluation_sub_le._proof_1_7",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_11",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.tendsto_mangoldt_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_5",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.source._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_7",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_6",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._proof_1_13",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ._simp_1_19",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.central_reciprocal._proof_1_7",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "onlyStandardAxioms": true,
+          "module": "RiemannGaussian.ZetaRieszFactorialCutoff",
+          "declarations": 88
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 61,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transition_eq_sum",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.norm_transition_sub_selected_le._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.native_divisible",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_centered_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff0_eq._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_7",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_6",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.false_of_transition_cofinal_upper",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.norm_transition_sub_selected_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.native_width",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_centered_tendsto._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.candidate_plus_transition_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.constant_transition_tendsto._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.constant_transition_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.native_width._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.candidate_ordinary_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.native_divisible._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.candidate_source_lt_target",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_transition_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource._proof_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.endpoint0_bounds._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.mangoldt_transition_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.native_divisible._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_7",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource._proof_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.tendsto_prefix_sub_candidate_transition",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff0_ratio",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.prefix_candidate_ledger",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.endpoint1_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff0_eq",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.centered_source_negative",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.transitionSource_gt",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszMaskSupport.retainedCost.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.norm_prefix_candidate_ledger_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.eventually_transition_source_lower",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff1_ratio",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_8",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_9",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.norm_transition_sub_selected_le._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.cutoff_bounds._proof_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.candidate_constant_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.endpoint0_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaRieszCutoffTransitionAudit.0.RiemannGaussian.ZetaRieszCutoffTransitionAudit.floor_ratio._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.damping_bounds._simp_1_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaRieszFactorialCutoff.source.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "onlyStandardAxioms": true,
+          "module": "RiemannGaussian.ZetaRieszCutoffTransitionAudit",
+          "declarations": 65
+        }
+      ]
+    },
+    "optionalReplay": {
+      "schema": "riesz-factorial-cutoff-replay-v1",
+      "precision_bits": 420,
+      "independent_producer_import": false,
+      "comparisons": 165,
+      "all_finite_balls_enclosed": true,
+      "scope": "scalar/source-model controls only; no actual prime sum or zero certificate",
+      "independent_floor_credit": 0,
+      "rh_proved": false
+    },
+    "wholeProjectGateRepeated": false,
+    "exhaustiveCertificateRepeated": false
+  },
+  "theorems": {
+    "exactIncrement": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_sub_succ",
+    "arbitraryConstantSource": "RiemannGaussian.ZetaRieszFactorialCutoff.evaluation_const_tendsto",
+    "candidateScalarBelowTarget": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.candidate_source_lt_target",
+    "actualOrdinaryTransitionSource": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_transition_tendsto",
+    "actualMangoldtTransitionSource": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.mangoldt_transition_tendsto",
+    "centeredMomentSource": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.ordinary_centered_tendsto",
+    "conditionalPositiveTransition": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.eventually_transition_source_lower",
+    "conditionalStrictUpperContradiction": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.false_of_transition_cofinal_upper",
+    "literalLedger": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.prefix_candidate_ledger",
+    "paidLedgerDifference": "RiemannGaussian.ZetaRieszCutoffTransitionAudit.tendsto_prefix_sub_candidate_transition"
+  },
+  "scope": {
+    "originalOrderHeightPhaseAndPrimeSupportUnchanged": true,
+    "allLowArrayOrdersRetained": true,
+    "allAnalyticMultiplicitiesRetained": true,
+    "newPhysicalMaskCompletion": false,
+    "sourceModelControlsAreActualPrimesOrZeros": false,
+    "independentFloorCredit": 0,
+    "constantCeilingCredit": 0,
+    "newZeroExclusion": false,
+    "rhProved": false,
+    "noAdditionalCommitOrPush": true,
+    "rootRegistration": false,
+    "publicFrontierUpdate": false,
+    "decision": "Stop automatic cutoff-centering route. A genuinely independent strict transition bound would still be useful, but none has been proved.",
+    "goalTrackerStatus": "paused",
+    "requestedTaskStatus": "fixed-cutoff go/no-go audit completed"
+  }
+}

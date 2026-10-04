@@ -5219,7 +5219,14 @@
     "ZetaRieszSelbergMaskCancellation": "arithmetic",
     "ZetaRieszSelbergRenewalAudit": "arithmetic",
     "ZetaRieszSelbergSignedBoundary": "arithmetic",
-    "ZetaRieszSelbergSourceAudit": "arithmetic"
+    "ZetaRieszSelbergSourceAudit": "arithmetic",
+    "ZetaRieszFactorialCutoff": "arithmetic",
+    "ZetaRieszCutoffTransitionAudit": "arithmetic",
+    "ZetaRieszSaddleCenters": "arithmetic",
+    "ZetaRieszJointSecondDifference": "arithmetic",
+    "ZetaRieszCoupledSignedBound": "arithmetic",
+    "ZetaRieszCoupledArithmeticBound": "arithmetic",
+    "ZetaRieszCoupledSquareEnergy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
