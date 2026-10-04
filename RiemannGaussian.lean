@@ -2673,3 +2673,8 @@ import RiemannGaussian.ZetaRieszJointSecondDifference
 import RiemannGaussian.ZetaRieszCoupledSignedBound
 import RiemannGaussian.ZetaRieszCoupledArithmeticBound
 import RiemannGaussian.ZetaRieszCoupledSquareEnergy
+
+/- Global prime coherence, converse residue identification and signed multi-height audit. -/
+import RiemannGaussian.ZetaRieszMultiHeightAudit
+import RiemannGaussian.ZetaPrimeMomentCoherence
+import RiemannGaussian.ZetaPrimeMomentCoherenceExposed

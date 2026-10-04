@@ -1,0 +1,15 @@
+{
+  "schema": "riesz-multi-height-replay-v1",
+  "precision_bits": 920,
+  "ball_and_width_checks": 54,
+  "actual_prime_rows": 6,
+  "native_order_rows": 2,
+  "input_sha256": "59de04378973b64c514f1650f9c275064d766130901ec68a220607d8b8128375",
+  "replay_sha256": "21841fa366c9225f412d8c10e0974fba6f1f1d414a8b75150d57297f6179cac3",
+  "finite_prime_preflight_only": true,
+  "complete_prime_inequality_disproved": false,
+  "floor_proved": false,
+  "ordinary_ci": false,
+  "proof_dependency": false,
+  "passed": true
+}

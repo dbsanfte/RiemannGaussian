@@ -1,0 +1,363 @@
+{
+  "schema": "riesz-multi-height-audit-v1",
+  "baseCommit": "8e4af4d029514b9882f912f80bba4b0a759f0db3",
+  "canonicalFrontier": "D_N-Q_N from ZetaRieszCoupledSignedBound",
+  "module": "RiemannGaussian.ZetaRieszMultiHeightAudit",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicFrontierUpdated": false,
+  "committedOrPushed": false,
+  "widerChecksRun": false,
+  "exhaustiveCertificateRun": false,
+  "validation": {
+    "warningAsErrorLeaf": true,
+    "leafBuild": true,
+    "namespaceLinters": 14,
+    "transitiveStandardAxioms": {
+      "theoremsIncludingPrivateHelpers": 31,
+      "theoremAxioms": [
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.signedPrice_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.three_height_plus_eq_signed_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.coherent_three_height_equality",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.mangoldt_three_height_eq_signed_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.degree_two_zero_constant_trivial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.no_all_safe_pointwise_comparison",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.mangoldt_array_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.negative_weight_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.ordinary_three_height_eq_signed_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszMultiHeightAudit.0.RiemannGaussian.ZetaRieszMultiHeightAudit.atom_product",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszMultiHeightAudit.0.RiemannGaussian.ZetaRieszMultiHeightAudit.phase_re",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.stechkin_factor_preserves_negative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.summable_ordinary_atoms",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszMultiHeightAudit.0.RiemannGaussian.ZetaRieszMultiHeightAudit.pair_complex_summable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.geometric_array_signedPrice._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.geometric_array_signedPrice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.ordinaryCoefficient.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.shifted_auxiliary_necessary_cost._simp_1_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.pairAmplitude_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.shifted_auxiliary_necessary_cost",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.signedPrice_eq_pair_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.three_height_eq_signed_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.amplitude_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszMultiHeightAudit.0.RiemannGaussian.ZetaRieszMultiHeightAudit.pair_sum_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.pair_phase_summable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.atom_eq_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.amplitude_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.ordinary_array_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.array.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.summable_mangoldt_atoms",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszMultiHeightAudit.minus_square_pointwise_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "onlyStandardAxioms": true,
+      "namespaceLinters": 14,
+      "module": "RiemannGaussian.ZetaRieszMultiHeightAudit",
+      "declarations": 37
+    },
+    "numericalReplay": {
+      "schema": "riesz-multi-height-replay-v1",
+      "precision_bits": 920,
+      "ball_and_width_checks": 54,
+      "actual_prime_rows": 6,
+      "native_order_rows": 2,
+      "input_sha256": "59de04378973b64c514f1650f9c275064d766130901ec68a220607d8b8128375",
+      "replay_sha256": "21841fa366c9225f412d8c10e0974fba6f1f1d414a8b75150d57297f6179cac3",
+      "finite_prime_preflight_only": true,
+      "complete_prime_inequality_disproved": false,
+      "floor_proved": false,
+      "ordinary_ci": false,
+      "proof_dependency": false,
+      "passed": true
+    },
+    "placeholders": 0,
+    "gitDiffCheckPassed": true
+  },
+  "exactResults": [
+    "Complete ordinary-prime and full von Mangoldt expansions of energy minus full correlation credit",
+    "Native signed plus/minus three-height square identities, all low orders, diagonals and proper powers retained",
+    "Exact horizontal damping of unchanged native pair amplitude",
+    "Nonnegative minus-square pointwise equivalence to nonnegative collected weight",
+    "Positive Stechkin factors preserve negative native weights",
+    "Any all-safe finite auxiliary family requires coefficient mass at least target*exp(delta*T)",
+    "No fixed all-safe auxiliary coefficients work pointwise for every nonnegative total log",
+    "Degree-two positivity with zero height-zero coefficient is trivial",
+    "Exact height-zero geometric pole-array preflight and coherent-array equality"
+  ],
+  "numericalScope": {
+    "actualPrimeControls": 6,
+    "nativeOrderControls": 2,
+    "producerPrecisionBits": 768,
+    "independentReplayPrecisionBits": 920,
+    "ballAndWidthChecks": 54,
+    "literalCoreMembershipCertified": false,
+    "completePrimePopulation": false,
+    "actualZeroOrdinates": false,
+    "proofDependency": false,
+    "ordinaryCI": false
+  },
+  "verdict": "The direct scalar multi-height/Stechkin positivity mechanism fails its pointwise signed-weight and all-safe-center gates. This does not disprove a global complete-prime inequality using additional correlations.",
+  "correlationCreditDiscarded": false,
+  "absoluteCarrierBudgetIntroduced": false,
+  "newArithmeticHypothesisIntroduced": false,
+  "fullRadiusTheoremPreserved": true,
+  "allPriorResultsAndSemiprimesPreserved": true,
+  "cofinal399over5000BoundProved": false,
+  "globalFloorProved": false,
+  "ceilingProved": false,
+  "newZeroFreeRegion": false,
+  "RHProved": false,
+  "globalFloorCreditEarned": 0,
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszMultiHeightAudit.lean": "f3406a0dd32972da39f7c80777f91c6d467662ec5d99502c91076c513f5aa135",
+    "RiemannGaussian/ZetaRieszCoupledSignedBound.lean": "c3703407453f396febd521e136b054ab98a721b1672d055091a6ca3e9bd57bf6",
+    "RiemannGaussian/ZetaRieszCoupledArithmeticBound.lean": "00345503c2d3b2ea770afba70167cc66d555c8bdad9524d8f15a9665cd32d8c9",
+    "RiemannGaussian/ZetaRieszCoupledSquareEnergy.lean": "8c4141a041098f8ab6e1c23e7c027c0ec5bc07737365243c121e6964cd8bd783",
+    "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9",
+    "RiemannGaussian/ZetaRieszJointSecondDifference.lean": "7a47adf02d319a399732bc22148452129ea0b506d0b1039163741cef29fcc24e",
+    "RiemannGaussian/ZetaStechkinZeroFree.lean": "6beec878705678040a1075883b74e149817c1a007eedba7733608e654cb320bf",
+    "RiemannGaussian/ZetaStechkinSupportFloor.lean": "97b8ef42e7d2ec094f7eb6a75919667a3ade6806166102653368d9508a9035e2",
+    "scripts/CheckRieszMultiHeightAudit.lean": "831bd3aebca2c743d1e6e1a54a8978defe641bda84315f3e12eb2ea44b6aae33",
+    "scripts/probe_riesz_multi_height.py": "66eeda64f0c33ca1a568c96668c273e6f149b7cda81332ca20f25cddceea8228",
+    "scripts/replay_riesz_multi_height.py": "21841fa366c9225f412d8c10e0974fba6f1f1d414a8b75150d57297f6179cac3",
+    "docs/zeta-riesz-multi-height-audit.md": "84b51cb76ccb7ce45e59604b9298c9980e3842dff94f833a6e8ed72373c3973c",
+    "data/riesz-multi-height-preflight.json": "59de04378973b64c514f1650f9c275064d766130901ec68a220607d8b8128375",
+    "data/riesz-multi-height-replay.json": "08420907f35afc7259dbed718bbf08ee39df208f4497dd480967fbe23727b98c",
+    "data/riesz-saddle-centers-prime-seeds.json": "b441ff0a498bdf300fabd9e1a74056ffb3cc5c95e785c17a709c8eff78e8fc72",
+    "AGENTS.md": "2cd4adc79af5f2bbda6f90fc62280041a7c5c992ba60796fa7c3bd87b9b6dd07"
+  },
+  "originalScopedValidationOnly": true,
+  "publicationAudit": "docs/prime-moment-coherence-audit.json",
+  "sourceHashesAtOriginalLocalCheck": {
+    "RiemannGaussian/ZetaRieszMultiHeightAudit.lean": "f3406a0dd32972da39f7c80777f91c6d467662ec5d99502c91076c513f5aa135",
+    "RiemannGaussian/ZetaRieszCoupledSignedBound.lean": "c3703407453f396febd521e136b054ab98a721b1672d055091a6ca3e9bd57bf6",
+    "RiemannGaussian/ZetaRieszCoupledArithmeticBound.lean": "00345503c2d3b2ea770afba70167cc66d555c8bdad9524d8f15a9665cd32d8c9",
+    "RiemannGaussian/ZetaRieszCoupledSquareEnergy.lean": "8c4141a041098f8ab6e1c23e7c027c0ec5bc07737365243c121e6964cd8bd783",
+    "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9",
+    "RiemannGaussian/ZetaRieszJointSecondDifference.lean": "7a47adf02d319a399732bc22148452129ea0b506d0b1039163741cef29fcc24e",
+    "RiemannGaussian/ZetaStechkinZeroFree.lean": "6beec878705678040a1075883b74e149817c1a007eedba7733608e654cb320bf",
+    "RiemannGaussian/ZetaStechkinSupportFloor.lean": "97b8ef42e7d2ec094f7eb6a75919667a3ade6806166102653368d9508a9035e2",
+    "scripts/CheckRieszMultiHeightAudit.lean": "831bd3aebca2c743d1e6e1a54a8978defe641bda84315f3e12eb2ea44b6aae33",
+    "scripts/probe_riesz_multi_height.py": "66eeda64f0c33ca1a568c96668c273e6f149b7cda81332ca20f25cddceea8228",
+    "scripts/replay_riesz_multi_height.py": "21841fa366c9225f412d8c10e0974fba6f1f1d414a8b75150d57297f6179cac3",
+    "docs/zeta-riesz-multi-height-audit.md": "a9089cc8be25c77f921b05d0e89a9aaf24593bb9484b886f115a1f9a7c753a08",
+    "data/riesz-multi-height-preflight.json": "59de04378973b64c514f1650f9c275064d766130901ec68a220607d8b8128375",
+    "data/riesz-multi-height-replay.json": "08420907f35afc7259dbed718bbf08ee39df208f4497dd480967fbe23727b98c",
+    "data/riesz-saddle-centers-prime-seeds.json": "b441ff0a498bdf300fabd9e1a74056ffb3cc5c95e785c17a709c8eff78e8fc72",
+    "AGENTS.md": "757e08325663a48092135e9dfb0ace2cd5dcfe27af877c41fe7634a569e1b5f1"
+  }
+}

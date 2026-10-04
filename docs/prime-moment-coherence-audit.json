@@ -1,0 +1,351 @@
+{
+  "schema": "prime-moment-coherence-audit-v1",
+  "baseCommit": "8e4af4d029514b9882f912f80bba4b0a759f0db3",
+  "rootRegistered": true,
+  "userAuthorizedPublication": true,
+  "canonicalArithmeticFrontier": "D_N-Q_N; independent cofinal 399/5000 upper bound remains open",
+  "mathematicalScope": {
+    "radius": "0<u<1",
+    "height": "any fixed real y",
+    "limitingMultiplicity": "positive integer m",
+    "candidate": "3/2-u+i*y",
+    "converseNeedsExposure": false,
+    "converseNeedsRieszFloor": false,
+    "converseProjectImportClosureHasRieszModules": false,
+    "converseProjectImportClosureModules": 561,
+    "actualMultiplicityIdentified": true,
+    "iffHasStandingExposureHypothesis": true,
+    "convergenceImpliesExposureClaimed": false,
+    "primeDirichletIdentityOnlyOnEulerSegment": true,
+    "abelContinuationAcrossEulerBoundary": "pole-cleared analytic identity on the unit disk",
+    "everyFactorialOrderRetained": true
+  },
+  "scopedValidation": {
+    "onlyStandardAxioms": true,
+    "namespaceLintersPerNamespace": 14,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 34,
+        "theoremAxioms": [
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.moment_eq_tsum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.generating_eq_primeSeries",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "FormalMultilinearSeries.ofScalarsSum.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_abel_of_tendsto._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.center.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_abel_of_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.center._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.candidate_im",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_one_sub",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.primeCoefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.candidate_re",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.analyticOnNhd_generating",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.source_forces_cleared_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_logDeriv_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.center._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.summable_of_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.generating_eq_primeSeries._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.generating_cleared",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.center_re",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.primeCoefficient_summable",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.boundary_regular_limits",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.generating.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.multiplicity_eq_of_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_abel_of_tendsto._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.isNontrivialZetaZero_of_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.primeSeries_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.candidate_ne_one_of_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.path.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.path_sub_candidate",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.tendsto_path",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.exists_zero_multiplicity_of_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.candidate.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentCoherence.0.RiemannGaussian.ZetaPrimeMomentCoherence.primeCoefficient_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.generating_eq_prime_dirichlet",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentCoherence",
+        "declarations": 40
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 1,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherenceExposed.multiplicity_iff_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentCoherenceExposed",
+        "declarations": 1
+      }
+    ]
+  },
+  "validation": {
+    "warningAsErrorFullBuild": true,
+    "fullBuildJobs": 11736,
+    "wholeProjectLint": true,
+    "compiledEnvironmentStandardAxioms": true,
+    "wholeProjectProjectDefinedAxioms": 0,
+    "ordinaryCertificateBuildConfiguration": true,
+    "theoremExplorers": true,
+    "githubReadmeRendering": true,
+    "trackedPreCommitGate": "required before publication",
+    "exhaustiveNumericalVerificationRun": false,
+    "wholeProjectCompiledDeclarations": 80658,
+    "wholeProjectTheorems": 67446,
+    "rhExplorerDesktopMobile": true,
+    "optionalCertificateFingerprintUnchanged": true,
+    "zeroFreePlotProvenance": true,
+    "certificatePlotProvenance": true
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaPrimeMomentCoherenceExposed.lean": "3675d0318d4055ca08168ae5eeebd6a29c858b5589b7df902ea38396e3904a45",
+    "RiemannGaussian/ZetaRieszMultiHeightAudit.lean": "f3406a0dd32972da39f7c80777f91c6d467662ec5d99502c91076c513f5aa135",
+    "RiemannGaussian.lean": "6d61ea0a23c928b4992c6a8267b04fce45ec6f0037caa4b860844b72ec375683",
+    "scripts/CheckPrimeMomentCoherence.lean": "0badf693bfc0a3cbc242b27f7b147fb76a28e093af26d79d1e3fb4328ad15e74",
+    "scripts/CheckRieszMultiHeightAudit.lean": "831bd3aebca2c743d1e6e1a54a8978defe641bda84315f3e12eb2ea44b6aae33",
+    "scripts/GenerateProjectStatus.lean": "2147494a5c22940cbdbb48f7e75b0bb1a6257c155240fd4517e1ae58c4e61657",
+    "docs/zeta-prime-moment-coherence.md": "256bb51c59875a5d8c2b36680032e839216834eb537571eaec9f19131f198a87",
+    "AGENTS.md": "2cd4adc79af5f2bbda6f90fc62280041a7c5c992ba60796fa7c3bd87b9b6dd07"
+  },
+  "allPriorResultsAndSemiprimeWorkPreserved": true,
+  "newArithmeticAntiCoherenceBound": false,
+  "globalFloorProved": false,
+  "globalCeilingProved": false,
+  "newZeroExclusion": false,
+  "RHProved": false,
+  "globalFloorCreditEarned": 0
+}

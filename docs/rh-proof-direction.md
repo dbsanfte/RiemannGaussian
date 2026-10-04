@@ -1,5 +1,16 @@
 # Current RH proof direction
 
+The [converse prime-moment coherence theorem](zeta-prime-moment-coherence.md)
+now identifies the source structurally: on `0<u<1`, a complete
+ordinary-prime moment limit `-m` forces a genuine zero at `3/2-u+i*y`
+of exactly multiplicity `m`, without exposure or a Riesz hypothesis.
+The forward/converse iff holds with exposure fixed. This characterizes
+the obstruction rather than bounding it. The
+[signed multi-height preflight](zeta-riesz-multi-height-audit.md) also
+keeps the full correlation credit and explains why direct scalar
+trigonometric positivity and all-safe pointwise auxiliary shifts cannot
+supply the missing estimate. The arithmetic frontier remains `D_N-Q_N`.
+
 The [joined arithmetic checkpoint](zeta-riesz-coupled-checkpoint.md) adds a
 complete ordinary-prime square-budget estimate for the original energy minus
 correlation credit, retaining the full negative credit and all low orders.

@@ -15582,3 +15582,66 @@ analytic radius exceeds the selected source radius. The new cofinal transfer
 criterion handles every exposed multiplicity, but its arithmetic premise
 remains open. The global floor, ceiling and RH are not proved. Resume local
 iteration after this authorized checkpoint; do not spawn subagents.
+
+## Native-weight multi-height preflight, 2026-10-04
+
+`D_N-Q_N` from `ZetaRieszCoupledSignedBound` is the canonical floor
+frontier. Do not optimize cutoffs, adjacent orders, Peano/two-center
+decompositions, variation or square-budget constants to chase the selected
+source. Preserve the genuine independent full-radius theorem; the
+competing-mode radius is still not a full radius.
+
+Keep `ZetaRieszMultiHeightAudit`. It expands the COMPLETE ordinary-prime
+and von Mangoldt D-Q into the actual signed pair coefficient, retaining
+all correlation credit, factorial orders, diagonals, both prefixes and
+proper powers. The exact `3 +/- 4*cos + cos(2*)` comparison is a square
+times that SIGNED coefficient, not a nonnegative prime work. Optional
+768/920-bit controls show sign changes and finite actual-prime failures of
+the unsigned minus comparison, including two native-order65536 rows.
+These are not complete-prime or literal-core counterexamples, nor actual
+zero ordinates; do not claim that a complete signed comparison is false.
+
+A positive Stechkin support factor preserves a negative native coefficient.
+The checked safe-shift audit proves that auxiliary shifts h_j>=delta>0
+require coefficient mass >=exp(delta*T) at phase zero. No fixed finite
+family of any degree works pointwise for every total log. The illustrative
+order-dependent saddle cost offsets the proposed safe-radius saving.
+Retaining an unshifted height-zero term leaves its denominator1/2 pole
+channel `(2u)^(N+1)` unpaid. Do not rescue this mechanism by replacing the
+signed kernel with absolute prime mass or dropping Q.
+
+Stop this DIRECT scalar positivity route. Any future multi-height approach
+must prove a genuinely global signed prime-pair correlation and pay its
+height-zero pole contribution jointly. The full-radius arithmetic bound
+is preserved; the independent399/5000 bound, ceiling and RH remain OPEN.
+This slice earns zero new global floor credit. See
+docs/zeta-riesz-multi-height-audit.md and its scoped audit. Continue locally
+without commits/pushes, subagents, root registration, public-frontier
+updates or wider checks unless instructed otherwise.
+
+## Prime-moment coherence checkpoint authorized on 2026-10-04
+
+The user's instruction to commit and push all work authorizes root
+registration, evergreen metadata, wider publication gates and publication
+of the converse prime-moment criterion together with the accumulated
+multi-height audit. Preserve all semiprime work and all earlier positives
+and no-gos. No subagents are authorized.
+
+`ZetaPrimeMomentCoherence` proves the converse directly from the ordinary
+prime generating series and Abel convergence, with pole-cleared analytic
+continuation before crossing the Euler boundary. For `0<u<1`, a negative
+integer limit `-m` with `m>0` identifies a genuine nontrivial zero at
+`3/2-u+i*y` and its exact analytic multiplicity `m`. This restriction is
+essential to this proof: the proper-power correction is analytic on
+`Re(s)>1/2`. Do not assert the literal prime Dirichlet series converges
+near the boundary point when `u>1/2`.
+
+`ZetaPrimeMomentCoherenceExposed` states the iff with exposure as a
+standing hypothesis. The converse itself has no exposure or Riesz floor
+premise. Coherence is not proved to imply exposure. This is a structural
+characterization, not an independent anti-coherence estimate or a new
+zero exclusion. `D_N-Q_N` and its unproved cofinal `399/5000` upper bound
+remain the arithmetic frontier. No global floor, ceiling or RH proof is
+claimed. Record validation and publication separately from the earlier
+scoped multi-height audit; optional numerical controls remain outside
+ordinary CI.

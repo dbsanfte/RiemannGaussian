@@ -149,10 +149,10 @@ Bound the actual joined prime energy minus correlation credit on 1/2<u<=0.50005.
 
 ### Latest Update
 
-**Joined prime bounds retain the full correlation credit.** Seven Lean modules add a complete-prime square-budget bound, a joined coefficient contraction and exact cutoff/curvature audits. The new 1/N price refines existing height coverage; the source-radius nonsummability audit keeps its limits explicit.
-Prove the independent 399/5000 bound at uncovered heights. The global floor and ceiling remain open; no new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCoupledSquareEnergy.lean#L283)
-· [Proof details](docs/zeta-riesz-coupled-checkpoint.md).
+**Prime coherence identifies the zero and its exact multiplicity.** For 0<u<1, a negative integer limit of complete ordinary-prime moments forces a genuine zero of that multiplicity, without exposure or a Riesz hypothesis. With exposure fixed, the forward and converse give an iff. The accumulated multi-height audit retains the full signed credit.
+The independent 399/5000 bound on D-Q remains open; this structural characterization claims no new zero exclusion, floor or ceiling.
+[Current checked endpoint](RiemannGaussian/ZetaPrimeMomentCoherence.lean#L517)
+· [Proof details](docs/zeta-prime-moment-coherence.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
