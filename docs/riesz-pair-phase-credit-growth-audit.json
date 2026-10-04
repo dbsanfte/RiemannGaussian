@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Proved cofinal independent actual-prime negative contribution in the retained joined signed sum; exact growing credit stays paired with rest; global floor open",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairPhaseCreditGrowth",
+    "publicTheorems": 12,
+    "proofDeclarationsAudited": 27,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "literalSupport": "pairProducts_subset_favorable",
+    "actualPrimeProductCount": "eventually_pairProducts_card_lower",
+    "exactFactorialMass": "pair_box_credit_lower",
+    "cofinalBenchmarkCredit": "eventually_signCredit_growth",
+    "cofinalFullCredit": "eventually_exactSignCredit_growth",
+    "literalSignedEstimate": "eventually_favorable_sum_upper",
+    "nativeCreditGrowth": "native_exactSignCredit_tendsto_atTop"
+  },
+  "estimate": {
+    "radius": "1/2<u<=10001/20000",
+    "height": "fixed abs(y)>=54",
+    "cofinalActualPrimeCredit": true,
+    "signedContributionUpper": "-c_(u,y)*(2u)^N/(N+1)^3 eventually, c_(u,y)>0",
+    "benchmarkAndExactCreditTendToPositiveInfinity": true,
+    "ordinaryPrimePopulation": true,
+    "originalSignedPrefixPopulation": true,
+    "actualPhaseRetained": true,
+    "literalMasksRetained": true,
+    "entryOrderCertified": false,
+    "heightUniformConstantCertified": false,
+    "usesExposedZeroHypothesis": false,
+    "primeCountingInput": "already-proved PNT lower bound on fixed logarithmic widths uniform in bounded translates",
+    "primeCountingIsSignedMainTransport": false,
+    "fundingWidth": "1/(8*(abs(y)+1))",
+    "maximumFundingShift": "pi/abs(y)",
+    "factorialScale": "exact N!; no continuum replacement",
+    "newGlobalCofinalThresholdImproved": false,
+    "measuredRemainingGapFraction": null
+  },
+  "jointLedger": {
+    "identity": "Re prefixPairDefect = Re signedRest - exactSignCredit",
+    "fullExactCreditRetained": true,
+    "restIndependentlyBounded": false,
+    "benchmarkExcessDiscarded": false,
+    "oldBudgetsSpentAgain": false,
+    "newCarrier": false,
+    "newMaskedCompletion": false,
+    "newPositiveMainAllowance": false
+  },
+  "validation": {
+    "numericalProbeUsedInProof": false,
+    "priorAuditPinsValidatedBeforeGuideUpdate": 230,
+    "guideAndDependentAuditPinsRefreshed": 25,
+    "priorProofAndNumericalSnapshotsPreserved": true,
+    "allPreviousNoGoAuditsPreserved": true
+  },
+  "remaining": [
+    "Bound signedRest minus the ENTIRE exactSignCredit jointly by399/5000+o(1).",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "widerGatesRun": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPhaseCreditGrowth.lean",
+      "sha256": "c075ae32c10a407e930dd51330886e31a7623544e504939ef002d4e5a793547b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPairSignCover.lean",
+      "sha256": "7ded7e3f4e08ba8a8ad0b219ef4591906811f8ac55684b406b95fa0fecd05f1a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAllowancePrimeBoxes.lean",
+      "sha256": "1954f9a365086d3c38b29e9e145cd784abbd2705cd8e529f3eed2cdaa53e3cd4"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszAllowanceGrowth.lean",
+      "sha256": "c5111ce200aa25a48d49d21bc72aafdad684d9a0622308d276a670d9545664f1"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimeIntervals.lean",
+      "sha256": "4c527f35082c7db28ca9e77d1926b6eac667a6b2bac5ca7a83542b855da31aba"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimeWindowLocalization.lean",
+      "sha256": "88ee148f32272a35ec9c72e778c2dfc682c13e7b56c2aed3163030b21861e2a3"
+    },
+    {
+      "path": "scripts/CheckRieszPairPhaseCreditGrowth.lean",
+      "sha256": "0d5f117fe2c5ce252152546491fa94cf09ff350cc1d5a730971d59fbd072262d"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-phase-credit-growth.md",
+      "sha256": "0e67e390f8de98a1d7fe663f43bf08072d6404d3052cc75079e36ab373f3a5e4"
+    },
+    {
+      "path": "docs/riesz-joined-pair-sign-cover-audit.json",
+      "sha256": "2c66bc8a00312df9677f6add64c2622a2947a4ec57e1008243cabe3d0060ccbf"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-phase-credit-growth/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-credit-growth/proof-check.log",
+      "sha256": "c948d1c9b6fd927eb0de592689108795a05c39c88f2199aea480f4b7e57f47af"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-credit-growth/axioms.json",
+      "sha256": "81d5aa3053d7bbd4cd6e45ffe734e3c4fa3af7f5595165484dd719482a2263c1"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-credit-growth/prior-pins.json",
+      "sha256": "27355a11a4543bee946fae07b6741bc77fe35afeab6e13e66a39966b01e9d64f"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-credit-growth/prior-pins-refreshed.json",
+      "sha256": "c905dfc81a8de52d0c6f97d14ebaad90e3b6ac2d90f29d881e59407428722089"
+    }
+  ]
+}

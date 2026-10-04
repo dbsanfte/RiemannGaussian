@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "activeObjective": "Bound the ceiling",
+  "classification": "Independent Gaussian multiple-zero exclusion and same-carrier ceiling payment through logarithmic height 50000; all-height ceiling remains open",
+  "unchangedIndependentTarget": "Cofinal Re(u^(N+1)*joinedPhysical)<=42/25+o(1) at all uncovered fixed heights",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingGaussianMultiplicity.lean",
+      "sha256": "0d6778d949e6c238450d44e4e2f844516ddd32324d75d35678c5b6f09e505e40"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedRegion.lean",
+      "sha256": "88fc83bcac218c993bf268ec38a46eaccd6915b9f23728264cfdba331393c63b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedScale.lean",
+      "sha256": "5965b3009e9c0ea7fb01bc2d9fd2056ef3b657377ad3b2e3ef4cd921e61ef478"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedCost.lean",
+      "sha256": "bc505cd93eb8e971dcf6caf1ff61eba81e04fcab0ff122dcf9ff75bfd5e9a457"
+    },
+    {
+      "path": "RiemannGaussian/GaussianHalfLaplaceBounds.lean",
+      "sha256": "30751388ab1923e01baea94f00c066dcecf8dc0990adbc322357986cccdf5f39"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianStripExplicit.lean",
+      "sha256": "302e2917f708cb65e7038b676ba2b86b459edd2a1985a5879bb8273a7e6d460d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSignedPoleZeroFree.lean",
+      "sha256": "60f0d7e245c3f6b99236cfb616705af919c47d2799bdb7953d52f7f841e81dd6"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhysical.lean",
+      "sha256": "ed3b39a233da33fb3065e06746cbbfe0daf1d79bad47cb773b7e73c4a13c35dc"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingGaussianMultiplicity.lean",
+      "sha256": "844b02e8989198320277fbec2abdec0b9811fdcb1bd58d3ee97f7eb4eafc27cf"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_gaussian_multiplicity.py",
+      "sha256": "14124d24f53f375377e7aef03fad00c5ab617f716d26c5ea964ed101472a7151"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-gaussian-multiplicity.md",
+      "sha256": "113c7b80ec0709687e0cac87b78757f23d9a219b3671fe886bf694adece32868"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/build-result.json",
+      "sha256": "25927883ed63de17aa077cc2865f826fd0210cc9fc2e23ded31da56986c3794f"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/proof-check.log",
+      "sha256": "19dc9af90746d57928778a4c577bb7943c730f1f394d17124353c0fb161edfce"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/axioms.json",
+      "sha256": "53b157c8bf7d3a83e07badb8ded8171f8efba770a027737f46cddef80fb47f24"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/probe.json",
+      "sha256": "dbc678b95a02443a4316009e4df3ba98c52d0a6475060711e5e03c5a4f411bdf"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/validation.json",
+      "sha256": "c37776d6294210f621658e486bf51650e093595adfa42aefd7df01be647de943"
+    }
+  ],
+  "preservedPriorPins": [
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingOrderCancellation.lean",
+      "sha256": "bf51d39b1edfbdd1aafd75397225bddf3667a374ad441dd6a58a7ac8ec61bf61"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGammaJoint.lean",
+      "sha256": "68ef5d3b0c14a2632b765e59e25f6340860b0bca30fd48662f5fa92d67944adc"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingOrderCancellation.lean",
+      "sha256": "fc3e2009c45939eac1f0c9455f840441848e87e13db5c009a6454859d4ddaffa"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_order_cancellation.py",
+      "sha256": "ab6029dfe80b042017a2b960cfaa9fef686f1425d71ab61006c416a745888326"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_order_cancellation.py",
+      "sha256": "0e8d2a3738159586a5717cc0689796d847cdcfbcbab8ce725220dfa065e7510f"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-order-cancellation.md",
+      "sha256": "024a1d329c477ff617ff8c2a369dfbd3ba8524a6bc67d76c3c467745196c41f5"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/build-result.json",
+      "sha256": "34011b099d70b7a81452e0d611602af2184aa4936f70a69f2c02255cb32c6f76"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/proof-check.log",
+      "sha256": "fe9ee40a8e5be2c07d3223e047fc6b5a09a5c00cf486dc719118ef118d24a78a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/axioms.json",
+      "sha256": "57b078cdcd5c730eeafebb467b1cf7d7ed7891bcfdc1d4571e66aff983bb10a7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/probe.json",
+      "sha256": "f3e48da2d3844e8bb5c1bb44ee8c91fe97aa69f8affb424dc4905ddcd5582fb9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/validation.json",
+      "sha256": "d23f756cbfd03a38389228056db421cb567e905c09a0610d63cc2ffed0505c6a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingDensityAudit.lean",
+      "sha256": "a8219d5e2506acae5bf99177386269e1c910ee338a1eb6ee79ecb1069dcca754"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingOrderCancellation.lean",
+      "sha256": "bf51d39b1edfbdd1aafd75397225bddf3667a374ad441dd6a58a7ac8ec61bf61"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean",
+      "sha256": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairFloorAllMultiplicity.lean",
+      "sha256": "e93169708cdd20b7d7b6a5568824390b9f6bfe38e02ef42af83e96048bf677a0"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianMultiplicityDepth.lean",
+      "sha256": "ab164cf96fd55d901243fa924bb254dc9a4b0210c6bce82f90bbd7faecd6257b"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingDensityAudit.lean",
+      "sha256": "109828f4ac8341355cc7219bfd510389a19c3d64dba04ea2abcc694c2aa92b29"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_density_gate.py",
+      "sha256": "f5c1880d0b7ac02ba43a1280c95b6a2f15754ef062c2d887b5487ac7fb615df3"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_density_gate.py",
+      "sha256": "942eb11dcabe8223b5e7cc6352845ca204beaa2d051999f8d29863aa380d363f"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-density-gate.md",
+      "sha256": "4d5d07c087dd33e9105fd93c1e8eb60754da18b0aeff3ba7e5c075beb5e25dc2"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/build-result.json",
+      "sha256": "83d85ebf05eb7826771f2bbbf4c4f812da0191273bc29e4d442493d695cabe35"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/proof-check.log",
+      "sha256": "ac8f05f28e0e083ae66d4adb49d99188eb49401befcffbf6132cfc32c32d3c2a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/axioms.json",
+      "sha256": "5347d3f599b59dea68141411075e0d32a30266e0dde83ff4f905a5862b0819f3"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/probe.json",
+      "sha256": "a38de9a6a8dfde9ea0e92de191cda0c7d7bc71b9f7976bb9339948e5f1169c9c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/validation.json",
+      "sha256": "d685411fb358f8bae8cf2ea294a1c9f2e1fc14f3e7ea157c7ef93b834f0e4264"
+    }
+  ],
+  "checkedTheorems": {
+    "exactNonzeroTangent": "halfGaussian_tangent_at_lower",
+    "rationalNormalizedSource": "normalized_source_lower",
+    "physicalSourceHomogeneity": "physical_source_lower",
+    "completeMultipleSource": "selected_multiple_source_lower",
+    "completeBudgetStrictness": "complete_cost_lt_source",
+    "actualZeroMultiplicityNoNewHypothesis": "simple_of_narrow_strip_up_to_log_height",
+    "independentMultipleZeroHorizontalRestriction": "multiple_zero_re_lt",
+    "sameCarrierCeilingInPaidRange": "eventually_joinedPhysical_ceiling_in_height_range"
+  },
+  "payment": {
+    "realPartCandidateStrip": "19999/20000 <= Re rho < 1",
+    "logHeightCeiling": "log(abs(Im rho)+2) <= 50000",
+    "lowerHeightGap": false,
+    "multipleZeroConclusion": "multiplicity>=2 implies Re rho < 19999/20000",
+    "multiplicityTheoremRequiresExposure": false,
+    "multiplicityTheoremRequiresSimplicity": false,
+    "newCancellationPremise": false,
+    "carrierCeilingRequiresOriginalExposedSourceHypotheses": true,
+    "carrierCeiling": "eventually Re(sourceScaled joinedPhysical) < 42/25",
+    "detectorSourceLower": "984028661/156250",
+    "completeDetectorBudgetUpper": "2176493/350",
+    "strictDetectorMargin": "43330001/546875",
+    "strictDetectorMarginUnits": "Gaussian detector, not the Riesz contradiction gap"
+  },
+  "verification": {
+    "kind": "Scoped proof/artifact and exact-rational replay audit; no wider gates",
+    "leafCompileExitCode": 0,
+    "namespaceLinters": 14,
+    "allNamespaceLintersPass": true,
+    "checkedTheoremsIncludingAutomaticHelpers": 15,
+    "onlyStandardAxioms": true,
+    "exactRationalGaussianDetectorMargin": "43330001/546875",
+    "previousSourceAndArtifactPinsUnchanged": 37,
+    "allHeightCeilingStillOpen": true
+  },
+  "scope": {
+    "localOnly": true,
+    "rootRegistered": false,
+    "widerChecksRun": false,
+    "subagentsUsed": false,
+    "committed": false,
+    "pushed": false,
+    "allHeightCeilingProved": false,
+    "allZeroFreeStripProved": false,
+    "multipleZeroExclusionInStatedRangeProved": true,
+    "simpleZeroFloorProved": false,
+    "nativeEntryOrderCertified": false,
+    "actualPrimeOrZeroNumericalData": false,
+    "priorPositiveAndNoGoAuditsPreserved": true,
+    "concurrentSemiprimeSourcesAndReadmeMetadataEdited": false
+  },
+  "limitations": [
+    "No ceiling beyond the explicit logarithmic height 50000 is proved.",
+    "The carrier transfer uses its original exposure hypotheses; this is not an unconditional carrier inequality at arbitrary ordinates.",
+    "Simple zeros in the candidate strip are not excluded by this multiplicity payment.",
+    "The independent arithmetic floor, full restricted contradiction and RH remain open.",
+    "The rational margin is in Gaussian detector units and is not a completion percentage.",
+    "No historical novelty, world-best comparison or maximal-height certificate is asserted."
+  ]
+}

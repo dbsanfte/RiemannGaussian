@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Local optional pair-arithmetic detector; no adjusted signal in tested actual phases",
+  "target": "Re prefixPairDefect <=399/5000+o(1), independently and cofinally",
+  "radius": "1/2 < u <=10001/20000",
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_pair_correlations.py",
+      "sha256": "a49db49b12cd8a6e7855dc2b028aed661ebfa0de38907e741de96a9617e8c54c"
+    },
+    {
+      "path": "scripts/check_riesz_pair_correlations.py",
+      "sha256": "8e35da6e042bacc37a204a9df47912f73ced5fe063da82aa0864f42eb2401df3"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_prefix.py",
+      "sha256": "a66324c006543c205622aba9dec7021ed801ac6d7d0fc553940b29ff48717e07"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_structure.py",
+      "sha256": "e5d57b2d58e9b4a47079854e98b948412bcc8c90f31f9506ec5224123983522e"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7"
+    },
+    {
+      "path": "docs/zero-free-regions/formulas.json",
+      "sha256": "c176f9ccaa02f0bb06ab9f1094b837e50f01b530d596fddedbfed5a4176c69c0"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-correlations.md",
+      "sha256": "c3012207b3d8a8ef1ed1b7bdbe0b7d9c33646d2fd1f47dae49082f1f93f02503"
+    },
+    {
+      "path": "docs/riesz-pair-prefix-payment-audit.json",
+      "sha256": "c57a69891620ba2a117d880cddfad051ed612cd6394e346ff79dedf4e385ef29"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-correlations/scan.json",
+      "sha256": "c650085ce76050160df99ce254651c00137a91f98e7d545580ec3cb94a445162"
+    },
+    {
+      "path": ".lake/riesz-pair-correlations/phase-validation.json",
+      "sha256": "20fea31cda05b1575cf2f94f4b21b5ef4a0a4cab9e64ec80540c9f50cd9711ba"
+    }
+  ],
+  "coverage": {
+    "actualPairIncidences": 9216,
+    "distinctActualPrimes": 768,
+    "sampleOrders": [
+      256
+    ],
+    "seeds": [
+      731,
+      732
+    ],
+    "regressionHeights": [
+      "54",
+      "65",
+      "100",
+      "142"
+    ],
+    "discoveryHeights": [
+      "10^10000",
+      "10^12000"
+    ],
+    "heldOutHeights": [
+      "10^20000",
+      "10^24000"
+    ],
+    "countTwoOnly": true,
+    "polynomialSmallCofactorsSkipped": true,
+    "wholePopulationEnumerated": false,
+    "sharedPrimePairsNotIndependent": true,
+    "baseStructuralFeatures": 70,
+    "genericNonlinearArithmeticFeatures": 96,
+    "factorTrialLimit": 31,
+    "factorialKernelFrozen": false,
+    "fullProductPhaseRetained": true
+  },
+  "features": {
+    "total": 166,
+    "base": 70,
+    "nonlinearPhaseFree": 96,
+    "properties": [
+      "gcds between p+-1 and q+-1",
+      "equal/opposite residues",
+      "reciprocal Legendre symbols",
+      "partial trial-factor profiles of p+-q",
+      "Euclidean remainder"
+    ],
+    "trialFactorLimit": 31
+  },
+  "heightCoverage": [
+    {
+      "height": "54",
+      "logHeight": 3.9889840465642745,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.05120310425633106,
+          "interval": "[0.05120310425633106062616648867187639090808827956496974430610575380849489577463 +/- 7.03e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.0515887554922412,
+          "interval": "[0.05158875549224119702549926504043849238301029278307854223210556254813166434387 +/- 4.13e-78]"
+        },
+        "gaussian": {
+          "mid": 0.03201404740804674,
+          "interval": "[0.03201404740804674102637452563776883676088290798927414929088777102350673262861 +/- 5.20e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.017677845814485563,
+          "interval": "[0.01767784581448556217929423710996453878799899544316131233560331569930486841619 +/- 6.24e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.0163349189883769,
+          "interval": "[0.01633491898837690057729726991463779263507466163965642857931225234400986757997 +/- 3.25e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.006606969831570482,
+          "interval": "[0.00660696983157048180685895712923661133125088591700352001537472877207682542067 +/- 2.54e-78]"
+        },
+        "vk-reported": {
+          "mid": 0.0069498013008206525,
+          "interval": "[0.00694980130082065250287516791599715540188688825597697886463375248553246747211 +/- 4.26e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "65",
+      "logHeight": 4.174387269895637,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.04892894520976686,
+          "interval": "[0.04892894520976686035159548636757609128410902700816873027607433292282937182377 +/- 2.99e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.049297467948104405,
+          "interval": "[0.04929746794810440554006904170384256141231382397662141487254803761579055118928 +/- 4.91e-78]"
+        },
+        "gaussian": {
+          "mid": 0.0303371392064403,
+          "interval": "[0.03033713920644030069171953736863984906832029980730175215460622150127391813331 +/- 6.59e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.017447396757898997,
+          "interval": "[0.01744739675789899597749150718029770435586589057819758261841207802392438300928 +/- 2.27e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.016121976375923247,
+          "interval": "[0.01612197637592324688354840912152973953101722663515455050973696466958961967890 +/- 2.56e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.006341200044520562,
+          "interval": "[0.006341200044520561588238548865803242890454214106144303254832797118938614707058 +/- 8.70e-79]"
+        },
+        "vk-reported": {
+          "mid": 0.006670240888279868,
+          "interval": "[0.00667024088827986770571162043141484863763321734686826943852727650197041193299 +/- 5.80e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "100",
+      "logHeight": 4.605170185988092,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.0443519691486164,
+          "interval": "[0.04435196914861640396763979972596048634542453082145287644142706118932441270516 +/- 7.23e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.044686019045895774,
+          "interval": "[0.04468601904589577187010010689762162842062775299457407973355288545559787722855 +/- 6.81e-78]"
+        },
+        "gaussian": {
+          "mid": 0.027020341065087817,
+          "interval": "[0.02702034106508781776301850977080254164068033076953706659392064463562874461660 +/- 3.92e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.016902285534236606,
+          "interval": "[0.01690228553423660565980559113352149938548692531702713320882460171727578726171 +/- 1.77e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.015618275428894749,
+          "interval": "[0.01561827542889474888359561522345838166736935311637886090317612610996801893631 +/- 5.35e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.005809163161909145,
+          "interval": "[0.00580916316190914529102783205964402559473167956578107588278687217971845277802 +/- 2.28e-78]"
+        },
+        "vk-reported": {
+          "mid": 0.006110596949663839,
+          "interval": "[0.00611059694966383876697832182604238329212874217511572306143401334619235145743 +/- 4.49e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "142",
+      "logHeight": 4.955827057601261,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.04121377998850771,
+          "interval": "[0.04121377998850771195345876722152508590110078857585306644684111608866802127418 +/- 4.17e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.04152419369134744,
+          "interval": "[0.04152419369134744160269459692895971119310809171242882111448617203155093883162 +/- 2.34e-78]"
+        },
+        "gaussian": {
+          "mid": 0.024795981247177648,
+          "interval": "[0.02479598124717764724919837649121524588430247023202432848994479580565324664803 +/- 5.89e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.016461064525078294,
+          "interval": "[0.01646106452507829433170952487168209556139434146123106549176668190560123328537 +/- 2.11e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.015210572504216839,
+          "interval": "[0.01521057250421683863741067573976370342931083593789636438319890260386644360472 +/- 3.07e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.005445932934640879,
+          "interval": "[0.00544593293464087923780191617957737551857418961296885896986364079272771608246 +/- 3.99e-78]"
+        },
+        "vk-reported": {
+          "mid": 0.005728518936547449,
+          "interval": "[0.00572851893654744920838049632570893236277913003230951031960490957090899063726 +/- 2.18e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^10000",
+      "logHeight": 23025.850929940458,
+      "widths": {
+        "classical-bty": {
+          "mid": 8.870393829723282e-06,
+          "interval": "[8.870393829723280793527959945192097269084906164290575288285412237864882541031e-6 +/- 5.01e-82]"
+        },
+        "classical-candidate": {
+          "mid": 8.937203809179155e-06,
+          "interval": "[8.937203809179154374020021379524325684125550598914815946710577091119575445711e-6 +/- 7.05e-82]"
+        },
+        "gaussian": {
+          "mid": 1.186023405292498e-05,
+          "interval": "[1.186023405292497998794737008925488394929876538627052233257892268155034599678e-5 +/- 3.30e-81]"
+        },
+        "littlewood-reported": {
+          "mid": 2.223351523292285e-05,
+          "interval": "[2.223351523292285020834369266745611931252964866451598453518781809510088533575e-5 +/- 6.39e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 2.0544509436723324e-05,
+          "interval": "[2.054450943672332318031852541494320448885375155643590715303466260188759809200e-5 +/- 4.91e-81]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 1.0603665136167977e-05,
+          "interval": "[1.060366513616797791765578213071336953777003611983573343135242336550152780831e-5 +/- 4.88e-81]"
+        },
+        "vk-reported": {
+          "mid": 1.1153882586942257e-05,
+          "interval": "[1.115388258694225709904719240722720702216075244673955878899018838002618830853e-5 +/- 5.98e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^12000",
+      "logHeight": 27631.02111592855,
+      "widths": {
+        "classical-bty": {
+          "mid": 7.391994858102734e-06,
+          "interval": "[7.391994858102733994606633287660081057570755136908812740237843531554068784192e-6 +/- 8.54e-82]"
+        },
+        "classical-candidate": {
+          "mid": 7.447669840982628e-06,
+          "interval": "[7.447669840982628645016684482936938070104625499095679955592147575932979538092e-6 +/- 8.67e-82]"
+        },
+        "gaussian": {
+          "mid": 1.1099161555459989e-05,
+          "interval": "[1.109916155545998912559117123022023433524029592462584343809552961944277396638e-5 +/- 2.21e-81]"
+        },
+        "littlewood-reported": {
+          "mid": 1.886424114316636e-05,
+          "interval": "[1.886424114316636102021550371244899750193181148102679711711931053694461108651e-5 +/- 2.46e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 1.7431187831626432e-05,
+          "interval": "[1.743118783162643070770160518241648994432732733281899681806060720269642864962e-5 +/- 4.88e-81]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 9.333926051484052e-06,
+          "interval": "[9.33392605148405202909198123971321302907712793030872852917412302347482997530e-6 +/- 6.55e-81]"
+        },
+        "vk-reported": {
+          "mid": 9.818257547416143e-06,
+          "interval": "[9.81825754741614230189098860283350908496846935622112535039967549200885699233e-6 +/- 4.33e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^20000",
+      "logHeight": 46051.701859880915,
+      "widths": {
+        "classical-bty": {
+          "mid": 4.435196914861641e-06,
+          "interval": "[4.435196914861640396763979972596048634542453082145287644142706118932441270515e-6 +/- 7.05e-82]"
+        },
+        "classical-candidate": {
+          "mid": 4.468601904589577e-06,
+          "interval": "[4.468601904589577187010010689762162842062775299457407973355288545559787722855e-6 +/- 6.07e-82]"
+        },
+        "gaussian": {
+          "mid": 8.871862780108459e-06,
+          "interval": "[8.87186278010845978590062115633931028858285713556818745227622274757486042156e-6 +/- 3.92e-81]"
+        },
+        "littlewood-reported": {
+          "mid": 1.1883908471874222e-05,
+          "interval": "[1.188390847187422121837607389418803169186163850519914553291100247549924029600e-5 +/- 2.96e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 1.0981127688888628e-05,
+          "interval": "[1.098112768888862715134642159864216934933006864183145270831789519000118186820e-5 +/- 1.25e-81]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 6.532944267934619e-06,
+          "interval": "[6.53294426793461901525600215819488598306667987302392345069673158107584882300e-6 +/- 4.56e-81]"
+        },
+        "vk-reported": {
+          "mid": 6.87193459769266e-06,
+          "interval": "[6.87193459769266001752795365311952907342292520184620105242357406124698363532e-6 +/- 5.58e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^24000",
+      "logHeight": 55262.0422318571,
+      "widths": {
+        "classical-bty": {
+          "mid": 3.695997429051367e-06,
+          "interval": "[3.695997429051366997303316643830040528785377568454406370118921765777034392096e-6 +/- 4.27e-82]"
+        },
+        "classical-candidate": {
+          "mid": 3.723834920491314e-06,
+          "interval": "[3.723834920491314322508342241468469035052312749547839977796073787966489769046e-6 +/- 4.34e-82]"
+        },
+        "gaussian": {
+          "mid": 8.07390932629477e-06,
+          "interval": "[8.073909326294769851687501194142941671231935091289428117842222040401252642610e-6 +/- 4.70e-82]"
+        },
+        "littlewood-reported": {
+          "mid": 1.0071412951093844e-05,
+          "interval": "[1.007141295109384393861127482327447544729658421796435961299056645842963690002e-5 +/- 2.04e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 9.306321391252353e-06,
+          "interval": "[9.306321391252353321506768333850384226249657719420747685530773508896033343306e-6 +/- 7.55e-82]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 5.7528626523137885e-06,
+          "interval": "[5.75286265231378864872808131754527602344392990844580835194237583646584131914e-6 +/- 6.44e-81]"
+        },
+        "vk-reported": {
+          "mid": 6.051375042375416e-06,
+          "interval": "[6.05137504237541570288101487091381157713412525858409494036416175832686588622e-6 +/- 3.59e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    }
+  ],
+  "conventions": {
+    "allDiscoveryFeaturesBuiltWithoutPhase": true,
+    "weightedJointMarginalAndTotalLogProjection": true,
+    "totalLogCoarseCellWidth": "1/16",
+    "marginalPermutationQuartiles": 4,
+    "permutations": 255,
+    "perBoxSignedWeightL1Normalization": true,
+    "boxesEquallyWeightedNotGlobalCarrier": true,
+    "permutationRanksNotPopulationPValues": true,
+    "maxStatisticAdjustmentAcrossAllFeatures": true
+  },
+  "finiteChecks": {
+    "gcdOfGapAndSumIdenticallyTwo": true,
+    "quadraticReciprocityVerified": true,
+    "reciprocalSymbolPopulation": [
+      {
+        "smallInLarge": -1,
+        "largeInSmall": -1,
+        "count": 3382
+      },
+      {
+        "smallInLarge": -1,
+        "largeInSmall": 1,
+        "count": 1254
+      },
+      {
+        "smallInLarge": 1,
+        "largeInSmall": -1,
+        "count": 1266
+      },
+      {
+        "smallInLarge": 1,
+        "largeInSmall": 1,
+        "count": 3314
+      }
+    ],
+    "unfactoredResidualPrimalityAsserted": false
+  },
+  "results": {
+    "seedHeightAnalyses": 16,
+    "maxStatisticFlags": 0,
+    "sameHeightReplications": [],
+    "minimumAdjustedRank": 0.0859375,
+    "minimumAdjustedRankOnNewHeights": 0.10546875,
+    "signedBoundFound": false,
+    "newAnalyticCancellationCandidate": false
+  },
+  "validation": {
+    "classification": "Independent high-precision replay of pair discovery phases; no carrier bound",
+    "count": 24,
+    "maxMidpointDifference": 0.0,
+    "geometryProjectionNormalEquationErrorMax": 6.635317295611287e-16,
+    "independentGuardDecimalDigits": 420,
+    "independentReplayDigits": 350,
+    "allReplayDecimalsContainedByArbBalls": true,
+    "mpmathNotAnIntervalCertificate": true,
+    "scanSourcePinsMatch": true,
+    "heightCoverageMatches": true,
+    "maxStatisticFlags": 0,
+    "sameHeightReplications": [],
+    "allPassed": true,
+    "syntheticCharacterSensitivityControls": [
+      {
+        "seed": 731,
+        "box": 0,
+        "phase": "chi_4(p)*chi_4(q), synthetic sensitivity control only",
+        "expectedFeature": "reciprocity_product",
+        "recoveredStandardizedEffect": 0.9292663310096817,
+        "maximumStatisticRank": 0.00390625,
+        "marginalOnlyCorrelationMax": 8.468703169284275e-16,
+        "passed": true,
+        "actualZetaPhaseUsed": false,
+        "floorCredit": 0
+      },
+      {
+        "seed": 732,
+        "box": 0,
+        "phase": "chi_4(p)*chi_4(q), synthetic sensitivity control only",
+        "expectedFeature": "reciprocity_product",
+        "recoveredStandardizedEffect": 0.9528814989047695,
+        "maximumStatisticRank": 0.00390625,
+        "marginalOnlyCorrelationMax": 5.307711735402787e-16,
+        "passed": true,
+        "actualZetaPhaseUsed": false,
+        "floorCredit": 0
+      }
+    ],
+    "floorBound": false,
+    "cofinalSaving": 0
+  },
+  "phasePrecision": {
+    "maximumBits": 80751,
+    "exactIntegerHeights": true,
+    "rigorousBallArgumentReductionBeforeTrig": true,
+    "binary64MidpointRoundingSeparate": true,
+    "directExtremeArgumentTrigGuardAvoided": true
+  },
+  "inferenceLimits": {
+    "N256BelowFormalGlobalErrorThreshold": true,
+    "sourceScaleNormalizationNotPopulationEstimated": true,
+    "phaseDeterministicGivenExactLog": true,
+    "completePeriodEdgesNotSampled": true,
+    "permutationRanksNotPopulationPValues": true,
+    "noZeroOrdinateAsserted": true,
+    "noFixedHeightLargeOrderRateInferred": true,
+    "primalityInheritedFromValidatedFLINTCacheNotLeanCertificates": true,
+    "noPartialFactorResidualDeclaredPrime": true,
+    "syntheticControlsNotZetaData": true
+  },
+  "nextTarget": "A literal signed phase/weight estimate with all unsampled labels and boundaries retained; no further feature-only search counts as a floor saving",
+  "status": {
+    "independentSignedMainBound": false,
+    "cofinalFloorCredit": 0,
+    "floor": false,
+    "multipleZeroCeiling": false,
+    "zeroExclusion": false,
+    "RH": false,
+    "previousLeanPaymentsAndNoGosPreserved": true,
+    "optionalOutsideBuildAndCI": true,
+    "rootRegistration": false,
+    "widerChecksRun": false,
+    "committed": false,
+    "pushed": false
+  },
+  "documentationMaintenance": {
+    "jointDetectorPolicyAdded": true
+  }
+}

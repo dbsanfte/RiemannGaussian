@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Negative audit of generic positive-density/common-phase factorial-moment reasoning; no arithmetic floor saving",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean",
+      "sha256": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelectedGamma.lean",
+      "sha256": "4c79c768ca014c2d2ab88f6e49ffc0f03e3f3d8b4ada830c908b9386753bf908"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "scripts/CheckRieszPositiveDensityAudit.lean",
+      "sha256": "f55aa261583f282925d0c9800a6d998e20ba336553f36e69ac80ba7a0150ece0"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_positive_density.py",
+      "sha256": "8c1b16ee756058df876ec19cfa3f8a2bc56fe15502e215ec88aeec344ee28720"
+    },
+    {
+      "path": "scripts/check_riesz_pair_positive_density.py",
+      "sha256": "f88e2021b9178f07368a39d818b4c76bde8b32c92ca220a741544f8951907909"
+    },
+    {
+      "path": "docs/zeta-riesz-positive-density-audit.md",
+      "sha256": "a10a783514c1028ca7336db07b1fa8741c926bf730c63d3e4049b3a019dfad63"
+    },
+    {
+      "path": "docs/riesz-pair-joint-quadratic-audit.json",
+      "sha256": "8b6781b8a274b2110f79df9513995ece3edf6cfac46a32b153b83f509ebb0867"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-positive-density/build.log",
+      "sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164"
+    },
+    {
+      "path": ".lake/riesz-pair-positive-density/proof-check.log",
+      "sha256": "9a2b565a9ba924f398fccc0db62e62e135b53fae603524fb47ade3e31d9bc7ae"
+    },
+    {
+      "path": ".lake/riesz-pair-positive-density/axioms.json",
+      "sha256": "082cc4621c7f6d7179256648a0d3ee62ee6f5f2a1c41886d05f173cbaf33553a"
+    },
+    {
+      "path": ".lake/riesz-pair-positive-density/probe.json",
+      "sha256": "b442c16ab3d49bd5068b04032711a43aed5ba1b8cfd54fa39a574499508c90af"
+    },
+    {
+      "path": ".lake/riesz-pair-positive-density/validation.json",
+      "sha256": "6a26bca25a417df56679b2d4b211968003cd876e623e2ef6dde80cef269f5a4f"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPositiveDensityAudit",
+    "publicTheorems": 15,
+    "proofDeclarationsAudited": 28,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "positiveModel": "density_ceiling_pos",
+    "relativeDensityBound": "relative_density_abs_le",
+    "exactCommonPhase": "density_phase_eq",
+    "exactThresholdChannels": "densityMoment_eq_channels",
+    "allMomentIntegralsIntegrable": "densityMoment_integrable",
+    "momentSource": "density_ceiling_moment_tendsto",
+    "formalQuadraticAsymptoticProved": false,
+    "rootRegistered": false
+  },
+  "model": {
+    "density": "[exp(T)-2exp((3/2-u)T)cos(yT)]/T",
+    "radius": "10001/20000",
+    "lowerLogThreshold": 20000,
+    "relativeRippleBound": "2 exp(-T/20000)",
+    "normalizedMomentLimit": "-1",
+    "limitHeightCondition": "abs(y)>=1",
+    "fullComplexPhaseRetained": true,
+    "allLowOrdersRetained": true,
+    "thresholdHeadRetained": true,
+    "actualPrimeMeasure": false,
+    "actualPrimeMeasureTransported": false,
+    "genuineZeroHypothesisUsed": false
+  },
+  "numericalValidation": {
+    "cases": 33,
+    "fixedModelHeights": [
+      55,
+      101,
+      10000
+    ],
+    "independentReplayDecimalDigits": 110,
+    "maxIndependentReplayError": 2.113059288605468e-17,
+    "firstSampledAboveTarget": 83886080,
+    "literalMovingLengthEnclosure": true,
+    "displayedValuesUseLowerEnclosureEndpoint": true,
+    "fullFourTermQuadraticRetained": true,
+    "fullOmittedTailIncludesHomogeneousMemory": true,
+    "worstLogL1TailBound": -1090.591666725736,
+    "intervalCertificate": false,
+    "cofinalArithmeticCertificate": false,
+    "floorCredit": 0,
+    "optionalOutsideCI": true
+  },
+  "conclusion": {
+    "proved": "A strictly positive common-phase continuous density can have normalized factorial moments tending to the unit negative source.",
+    "numericalEvidenceOnly": "Its complete signed four-term quadratic crosses 399/5000 at a delayed sampled order.",
+    "doesNotProve": "A failure or success of the actual ordinary-prime floor; a generic quadratic cofinal counterexample is not formalized.",
+    "nextRequiredInput": "Additional independently proved actual ordinary-prime correlations controlling the whole signed quadratic."
+  },
+  "priorGlobalSquarePaymentPreserved": true,
+  "newArithmeticFloorSaving": false,
+  "remaining": [
+    "Independent signed 399/5000 bound for the full central/successor/logged/Selberg quadratic.",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "localOnly": true,
+  "committed": false,
+  "pushed": false
+}

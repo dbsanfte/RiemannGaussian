@@ -1,0 +1,1581 @@
+{
+  "schemaVersion": 1,
+  "head": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "goal": "Bound the ceiling",
+  "status": "actual signed balanced endpoint growth proved; isolated uniform payment stopped; joint goal remains open",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSignedBoundary.lean",
+      "sha256": "94877936699b8895b9b45a8076bff434fedc1e520c3cfdfb6d0f06db8b129cb2"
+    },
+    {
+      "path": "scripts/CheckRieszSelbergSignedBoundary.lean",
+      "sha256": "e5c40d54f5b40c3e4bfb2c31fd68399c7a6f6e78eee944984e9c59b752484122"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_signed_boundary.py",
+      "sha256": "47e8fa89c38fb29063483767102113f40ef7767d6e2306c3ed314edbf22330f5"
+    },
+    {
+      "path": "scripts/check_riesz_selberg_signed_boundary.py",
+      "sha256": "4dd3dc3da3a1cb764625b4aaea95ce91f944dbc69d8059dc9fca4875ebfb0c1c"
+    },
+    {
+      "path": "docs/zeta-riesz-selberg-signed-boundary.md",
+      "sha256": "21f2d91cae0f61c3ce724ed2990e6eaea20e079790dd697a16758bf9e5eb8dca"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/AGENTS-append.txt",
+      "sha256": "9de9e3fce12da88cfbe8b75a71bfe40b3f31e948f21dee7fb44b025f9c76f388"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/AGENTS-before.txt",
+      "sha256": "b23ef7f5850be9100f0098f14f6ec310ca765764869d1d3fc5916659cdc7c3d7"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/axioms.json",
+      "sha256": "6d93c0d0293a0cebdfabc77d32bebb723a1a9f7bec29564379df3998b4c23280"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/build-result.json",
+      "sha256": "63a86b174d14ca042b93827d75afb5d393a20d469e03c38f4b2f9175e920b2c9"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/check-result.json",
+      "sha256": "49e632bc833b73c00280c7c1fa3f98191f4bacd14c80d01139e4dec822f59fa6"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/numeric-replay.json",
+      "sha256": "f651c6a6cd059b8283b20710380ca987639f9f66d71594125321c7a18702373e"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/prior-pins.json",
+      "sha256": "5719037cfde19a58e9c1fe311d251116398464259e7cec6dedf991235606c260"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/probe.json",
+      "sha256": "0d7e08592a341518e84dc8564cfac8af77d8cc6201f0ec87684e5403b74bdf06"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/proof-check.log",
+      "sha256": "39827eaedcb781adc6be35bac1b7ad0ab9532888c7c58f0706bc77a7eeff7676"
+    },
+    {
+      "path": ".lake/riesz-selberg-signed-boundary/validation.json",
+      "sha256": "da188c8133b0b7a561de454b0f2db212fc4dfc0f30c4406372fee89be31b5c12"
+    }
+  ],
+  "preservedPriorPins": [
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/axioms.json",
+      "sha256": "fb8e8e6a490415cfdfec10445c91066f61b19f8ca92d100405dfe0880e72657b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/build-result.json",
+      "sha256": "8a990e9a48ae37018f082553dd938a35144e17b0331a63d596fe0cac04217df7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/check-result.json",
+      "sha256": "d9f63aa45f91f0e9da9cad101ffebe3f3a93afa3c844ad40eec9f2918d6a2f74"
+    },
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/probe.json",
+      "sha256": "433c9ee7a7f85d8d906c4b3fabee63e4e2388164b8eca3127f844a6a8a09f999"
+    },
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/proof-check.log",
+      "sha256": "1a1da0cb193d0bd79d22b9ebaa8a617e927f11935cab8f63dfc9beec0c966573"
+    },
+    {
+      "path": ".lake/riesz-ceiling-all-height-multiplicity/validation.json",
+      "sha256": "be50b4e0b5447ae6eef9ee3b1372c133a32c25ab305ef4869008fae966ebf669"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/AGENTS-append.txt",
+      "sha256": "1849619f7f4bcf4686bb52fe4cf032cfbe1f8f2001d8609c09d11057a2347065"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/AGENTS-before.txt",
+      "sha256": "e015ae8360b57e7ff0642fe56f842bb92baf10f48ebf1f17cc5a27a4da2b37e9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/axioms.json",
+      "sha256": "4abb5e7b63c141a2ee3b6a51ee54aea2cae481a293b1aef2a1a4e07ab37f9661"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/build-result.json",
+      "sha256": "7434c2ec08aa3e5aa8dd4184337df8746ba689e2b37b7a907d0b9bdcde824500"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/check-result.json",
+      "sha256": "1f0f0ea3e0ecad547b31e3a89f6ddf755905c323d04b6d85f99aa4c0902a8b09"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/concurrent-work-observations.json",
+      "sha256": "809c0742d2a836ac6a59f6f6cd260e50f95a078c93f3c674b1d0efd97aca5c69"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/concurrent-work-prehashes.json",
+      "sha256": "42a8ca38921ee40f445f03aa8a383513ce95a4afc4ddf32a20a82f4f445bc118"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/numeric-replay.json",
+      "sha256": "3948c2439ede97cf89e750490aca67bd2e309e84c92f7848dee76dbb5c1e87a6"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/prior-pins.json",
+      "sha256": "a3123ec9179ddfb048330eeb9c6c79222aba8c787e042b8caa8a650b5ccab2fd"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/probe.json",
+      "sha256": "d3deb7a83857c32e492212be3424edca38a6cabd5bd48e37dbd61243a6f086fc"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/proof-check.log",
+      "sha256": "722a3b1051e11a61462dcabc4ec20d5aa9cab7a33d27af72f2f399e09ae05e5a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/source-pins.json",
+      "sha256": "a9c1894cc710df0cc62985a3ae42381f242a67e7b5a51dc17aa38c5140f761fe"
+    },
+    {
+      "path": ".lake/riesz-ceiling-cluster-power-audit/validation.json",
+      "sha256": "d74b880a22ebed9846a46b145c9cc18124f9dd1890acf1517b37a034be57a3e0"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/axioms.json",
+      "sha256": "5347d3f599b59dea68141411075e0d32a30266e0dde83ff4f905a5862b0819f3"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/build-result.json",
+      "sha256": "83d85ebf05eb7826771f2bbbf4c4f812da0191273bc29e4d442493d695cabe35"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/probe.json",
+      "sha256": "a38de9a6a8dfde9ea0e92de191cda0c7d7bc71b9f7976bb9339948e5f1169c9c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/proof-check.log",
+      "sha256": "ac8f05f28e0e083ae66d4adb49d99188eb49401befcffbf6132cfc32c32d3c2a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-density-audit/validation.json",
+      "sha256": "d685411fb358f8bae8cf2ea294a1c9f2e1fc14f3e7ea157c7ef93b834f0e4264"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/AGENTS-append.txt",
+      "sha256": "e52bacd10271c8a6e7a12dcc0fc6f8fb2a8716762b5eb265c4705e2f4947f7cd"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/AGENTS-before.txt",
+      "sha256": "25cc0c74a91bb980b29e30e064730d2c4ff9712e536b9aecf768de4ec3ab03be"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/axioms.json",
+      "sha256": "b441c46e3179bf888cfa1f134e6b6f3aefcb3f92da0817949a665584746d7028"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/build-result.json",
+      "sha256": "0513ecc5de20df241af878fcc8368f6851537668dd54fb1d39a84161efa99e67"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/build.log",
+      "sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/check-result.json",
+      "sha256": "b429dbf38cc9bd37f59fc58aecaec17d1bf2d400234f990e9331f65c488a8c6d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/inconclusive-trial.json",
+      "sha256": "e03516cd9a79bb45ab0fe77240ae2a0b474c5bb121b5b7781eb7d9f39ff78a03"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/numeric-replay.json",
+      "sha256": "b5acfe817bd62b4cf9605d3a005cdc7255fea7abf22a3b332eaed1c434557657"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/prior-pins.json",
+      "sha256": "16c016732d1202f37abc3ef4e4fb6fea5bc18f205aeb23b852519f8eb708bdae"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/probe-512-inconclusive.json",
+      "sha256": "0272859944217bef132a21593664ab3b497b4c0f1e821019068898c642b5c742"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/probe.json",
+      "sha256": "3d9465db9f7b6f8bfcbae82b8ef2c7e0ccc9a7d43f7ca4e8f343a88aea48fc19"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/proof-check.log",
+      "sha256": "431d1794e3ac8e0804f40c979e1962a9a9f665aa1cdfb59c4267cbe5423cf1d5"
+    },
+    {
+      "path": ".lake/riesz-ceiling-euler-jet-audit/validation.json",
+      "sha256": "0dc6a4b01ebedfd7e9d65a12cad770d102a01ba8c5a89fedbb85b64f513c2d08"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/AGENTS-append.txt",
+      "sha256": "812d30d5f6b4a8de9ee054c83b979f883acaf76484c88db3fa9da8bad4d4a191"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/AGENTS-before.txt",
+      "sha256": "6f0711e26fe81bc53257795718d6aa7b9e1843ddc3e2fa9673dfc03ad0f17999"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/axioms.json",
+      "sha256": "bb4a6a6595aa0816ed0980d90522f3ee259b62d286cf4e28d7a6fc216f09875b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/build-result.json",
+      "sha256": "c601693af07d02824f5248a426455fa7e51501b2702b8118e396f9d39468fd86"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/check-result.json",
+      "sha256": "351e480157ea253ddc25b81a3f990786445a1c84ead02110a2e003e7bf1b555c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/numeric-replay.json",
+      "sha256": "f771fc430deec0916a1e3f8817afdee5f9efc2ef6849f6de8249c3479f04c503"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/prior-pins.json",
+      "sha256": "01c056e509a17e4670f3951982b97c5ec3882ab64d033afbe9e561aef9e9f395"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/probe.json",
+      "sha256": "f16e42bbab1b4e4f8db6d7d28043368371f3ee8b6d7093fc989c15e428b97f36"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/proof-check.log",
+      "sha256": "027847f56f7b076c8cca4181c997059dda8617fd94dabc2c4b471a2af3d588f8"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-balance/validation.json",
+      "sha256": "6a62c785f47d313b6f63c51bf6d5b66020cd81b16c62285db329482d0f8043b4"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/AGENTS-append.txt",
+      "sha256": "6b2a5f4f4566be399d00f563ea1773658215d9397acc8e1e55f85e08688a8a44"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/AGENTS-before.txt",
+      "sha256": "3ce3db98d68ff8e896898be57cbfe592069e8d88e6a7bcb7d4b3cf895471dc34"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/axioms.json",
+      "sha256": "3df99e3f70540b93d48eaddd5e2c8f86941bda3982935ffe5c4f151a7cef6a5d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/build-result.json",
+      "sha256": "4742b071a0e5f872bcfc5eec042197242309baa7e20ce641a66418a783dcc3da"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/check-result.json",
+      "sha256": "e0c0113071d1b07bb1f02c67e273af2ef6f0fcb0738eac5ad8b7b89fe045455d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/numeric-replay.json",
+      "sha256": "4a880f4f59752867e938147edcec5d93a408aa54cf258f053474201044091194"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/prior-pins.json",
+      "sha256": "d0e2bc7a2abdd2534241a07918ed68f56b5edaa561ac595c56e72407aebdd030"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/probe.json",
+      "sha256": "f4b184fe4576ca258f60d6058c9197c18023ddf0b55545fb0ac193ff44a703b7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/proof-check.log",
+      "sha256": "8c48cb00a5e2edda84cee6a8c4c7cc18461eab9aaeac4bd4e37e5ef5f8e234fd"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/source-pins.json",
+      "sha256": "ec4b752c2122d5968627136b26180553c54b0bd733cbe1f8a564926219d9ca17"
+    },
+    {
+      "path": ".lake/riesz-ceiling-fejer-cluster/validation.json",
+      "sha256": "487192e47270b9c6adda0fddb006ddfc732edbe1cbab46c5786a98564ec22b2a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/axioms.json",
+      "sha256": "af962a5d6cb39273007ae9f14a654d19158be124013ade0798cbf33ff0525339"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/build-result.json",
+      "sha256": "15a545d5bae447b4f3be4aa9fd96c85866698f361b9a2e49af2be454748debe9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/check-result.json",
+      "sha256": "e43e968fc77a7d1f2e8ec22684b6b6d5e2a52a10e115bba5f1eec323e11e5e60"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/prior-pins.json",
+      "sha256": "22d1fcc47c00a843beb75a150d587d4854afff28cb91df832706c87e86deadae"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/probe.json",
+      "sha256": "7b686b452040e74e7a76a4760dd19f1b7ebb17b6f426c33ca58c884db8d8f24a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/proof-check.log",
+      "sha256": "8f71cb8b3a450bc9e2bce254091624c3032103299225178f3b5734d6adc51759"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-budget-audit/validation.json",
+      "sha256": "b9ec97a0339778ad67ba0bb7ec0da09a4215feae9c6bae37b81dbdb49fcd6604"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/axioms.json",
+      "sha256": "53b157c8bf7d3a83e07badb8ded8171f8efba770a027737f46cddef80fb47f24"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/build-result.json",
+      "sha256": "25927883ed63de17aa077cc2865f826fd0210cc9fc2e23ded31da56986c3794f"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/probe.json",
+      "sha256": "dbc678b95a02443a4316009e4df3ba98c52d0a6475060711e5e03c5a4f411bdf"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/proof-check.log",
+      "sha256": "19dc9af90746d57928778a4c577bb7943c730f1f394d17124353c0fb161edfce"
+    },
+    {
+      "path": ".lake/riesz-ceiling-gaussian-multiplicity/validation.json",
+      "sha256": "c37776d6294210f621658e486bf51650e093595adfa42aefd7df01be647de943"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/AGENTS-append.txt",
+      "sha256": "29e0c58e45764e05e56670160771c9337f322d12d8689241b801cb5ed45c2561"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/AGENTS-before.txt",
+      "sha256": "f2a2aea947cbc6c9e580f9b9ecb1e85c7da64945d3122cc94bbeee0c2894fd57"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/axioms.json",
+      "sha256": "52f5dff53f0de692e40b07fad6abbb6a81792c43fc73deff33aaf0056c1e3b40"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/build-result.json",
+      "sha256": "9d04355fd972bc856eb79fa48411cebf3d891c2cf320ea126b5710518eef1ed1"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/check-result.json",
+      "sha256": "245bfe898875fada70b9f14841b43b39a0b8bbe84213a1ff2edc90a729c4a1fa"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/numeric-replay.json",
+      "sha256": "dc48fb2c75f9f3334a03ff62374807eb5e8039b56e6b93c7b29b85b51b79d28d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/numeric-replay.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/prior-pins.json",
+      "sha256": "1055ec1b87da856b85525bbea57bfcf60f07f67c8da4ca650bbcfab32118fc7e"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/probe.json",
+      "sha256": "f79f52c40a9d323b78597be6a64fa902df0ef9963e87d76980a51c975a853697"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/proof-check.log",
+      "sha256": "33de200ff420897ed1ddc1546adc0e316548e2119389b89c55e6c39fabc42395"
+    },
+    {
+      "path": ".lake/riesz-ceiling-head-completion-audit/validation.json",
+      "sha256": "e1f968d717b76ca0cf8fc58acda1f738949c7f906e373644347282ceef035f1a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/axioms.json",
+      "sha256": "789b72e57004b5a05378a12af6a874952b4efe841d1c863a3bda83e65cf29d09"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/build-result.json",
+      "sha256": "6a9cb72c75a65a199c672b47282c5c2341fb0fc2ade1b78c3ebcd7407b550ef8"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/check-result.json",
+      "sha256": "fc518bb11620343867976c84edd24a9c712c965aec8503499e5f0adc102c810a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/numeric-replay.json",
+      "sha256": "d8a09001028b4594259b391fabb639f7b27c7bc9445fe2705e3694181f0588b6"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/prior-pins.json",
+      "sha256": "985f5e3a30aa012feddf5ee307439c792856e9e59f9ca19a8e5d54b24438f03f"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/probe.json",
+      "sha256": "47ab96500a55b415718e5081654e0cfa0e31b16495d581c6f589d255f00c8f90"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/proof-check.log",
+      "sha256": "9ef95024e8d0738827fc4f291215cc7ac4ee93692ab4f04aca6f486449a300df"
+    },
+    {
+      "path": ".lake/riesz-ceiling-integer-gate/validation.json",
+      "sha256": "8847dea6962beeefe9021022099178a729c2845bae92e9fbca6a3a06a1be4bea"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/AGENTS-append.txt",
+      "sha256": "34eff16641aa5abb144ebf40d27d18f6d2de63550b55a9aca3545545e83d0fb0"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/AGENTS-before.txt",
+      "sha256": "a68615b57203254cb750921e8a48b065c163e668f93d816f5ef63e0399a05fd8"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/axioms.json",
+      "sha256": "6a7121458b21260d7aa29f618b7d79d2ba2c4cec6d769ca9211bb86308f3e0b4"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/build-result.json",
+      "sha256": "5f19e9a072c7e14daaa474f4a817b1df70cbe20f2cb0985a5a00f1e1be25a25c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/check-result.json",
+      "sha256": "196cce15a0ed003530928380e7b782c23c32bb998f2148f75552b876bd8eacad"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/numeric-replay.json",
+      "sha256": "619e4e6a71b5dabb0692c405cf39b088c9ca47c41a96a70116114dcd71694eb7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/prior-pins.json",
+      "sha256": "b701c47be118ce3078b71df9d3dd41c5a169ef70203968bbfaf911a3f50dac29"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/probe.json",
+      "sha256": "66a080a2647bde10fe905cdb5af3c552daf3d43d5edf7988cc59ea7dbd568ac7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/proof-check.log",
+      "sha256": "7271eab582f3bf3acd70775d01a6467730969ab89d7a7d81404cb40ce1f9fbd6"
+    },
+    {
+      "path": ".lake/riesz-ceiling-joint-kernel-audit/validation.json",
+      "sha256": "c416d901a315f9da07b5844a8a0a5f968110d7b46a652f11a375b7f7c32173b2"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/axioms.json",
+      "sha256": "9b99c2015b925face4ea142fce3d0cd13f6387e5096cf96728bece738d04b028"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/build-result.json",
+      "sha256": "a1658455eaf8c98e569d39e0c0583d5ee10f12c37ba226325a0b4bfc38a143cf"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/check-result.json",
+      "sha256": "2ceae1b233d0b783f2f4af292e122dce678d0d2d157c03a14b0555721973e8ea"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/concurrent-work-observations.json",
+      "sha256": "d29aa26142a806dd6933c59906684de92e662c8a08af17473c8ce28701badc98"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/concurrent-work-prehashes.json",
+      "sha256": "a03d6a3a1b9b38a20dc1bd2aa32744a45ea6ee8cbce493dfd4c8391c8f98767e"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/numeric-replay.json",
+      "sha256": "f7109893f464f77c0f3318d58a6ab91c6267f1e712eff6de93e9144e21a54dab"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/prior-pins.json",
+      "sha256": "d3f45772eefe5d4f0c9403f1074a865c345117457f4af91ebd8b0b16a8e25a00"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/probe.json",
+      "sha256": "8cb59c00d401dcb3f73cf87977f5aeead105011a7bc010303e1a9acba2b6bb57"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/proof-check.log",
+      "sha256": "49d855bc5d08c065e7df73dc403368ad1a26332a27aa38e8a8c836203ec84ca2"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/source-pins.json",
+      "sha256": "27126448d950397a88ca84988bdb7111f490fbedd5b309d593875650055cdb12"
+    },
+    {
+      "path": ".lake/riesz-ceiling-moment-isolation/validation.json",
+      "sha256": "41de9ca66efd111ed08fb2478a191fd2db55e34c4bb7c3451b118ccceba0091c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/axioms.json",
+      "sha256": "57b078cdcd5c730eeafebb467b1cf7d7ed7891bcfdc1d4571e66aff983bb10a7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/build-result.json",
+      "sha256": "34011b099d70b7a81452e0d611602af2184aa4936f70a69f2c02255cb32c6f76"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/probe.json",
+      "sha256": "f3e48da2d3844e8bb5c1bb44ee8c91fe97aa69f8affb424dc4905ddcd5582fb9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/proof-check.log",
+      "sha256": "fe9ee40a8e5be2c07d3223e047fc6b5a09a5c00cf486dc719118ef118d24a78a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/validation.json",
+      "sha256": "d23f756cbfd03a38389228056db421cb567e905c09a0610d63cc2ffed0505c6a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/AGENTS-append.txt",
+      "sha256": "93580ee22617c23ae6c5722fc63540421f835fa31791f6051fbe59249ca805c2"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/AGENTS-before.txt",
+      "sha256": "6c63c89acf8739986d5c4b9bc1fa6aa4c067f5a9884517a4605bc3c5e81ffca1"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/axioms.json",
+      "sha256": "fa6881ee7e85417d70280034c43879e5ad221ed67a42be4959c27189cc5a5243"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/build-result.json",
+      "sha256": "1a2cab425f0dafad7d9d8d168fec151be0a0418c5cc82dd08195626d04fe6222"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/build.log",
+      "sha256": "1b0c907fc7c53e55abd94c388773fe1b7ba3189c961e5bcb4645f0cc845ac1db"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/check-result.json",
+      "sha256": "116c42cc0155ef8c4f08f7b184e87f0aff0b7a223e62bd72af3320c2d299c566"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/numeric-replay.json",
+      "sha256": "186289057c6be095281d50caf17cb48bdedf6b3a896cc382872aa0e61e6e6976"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/numeric-replay.log",
+      "sha256": "c26ffe16f676ef7236900c1d240a17a94f42a9b4881ec378aad419f3a7d32399"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/prior-pins.json",
+      "sha256": "abc8eb53a539fd2309c2fad10d7833bb4da371c07b35164a3d0c2e9c4f87b10b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/probe.json",
+      "sha256": "478d50ceecdebcb761efe02be02ce675713b1479ef9d73a7a0bc0bef553eb332"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/proof-check.log",
+      "sha256": "ffde60f2561b5d786f38a1b70e298c4523f410e90d87d3f6ac1aab06baefb90c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-phase-average/validation.json",
+      "sha256": "c080501e98f56d947f6811a65fca97be6df15e59ab96b5feb0bbb8cd3c5fdb9b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/axioms.json",
+      "sha256": "6b45603f028b05634af3e41f5d9828228a8adcce8b110af3e90d74a912159594"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/build-result.json",
+      "sha256": "d46878975b7753fb7e9d49a32f95cc954a97e04ecfe5777687edb25096a40656"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/check-result.json",
+      "sha256": "77dd347cc715ab8c25a3ebfe07d5a25ba40e5309ea8a0e7c6b370d7ec2f12dc9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/numeric-replay.json",
+      "sha256": "654fedfef76a7f3f86c1ad600b70f8aca6ec231701e1a3287243c2e5640ce43a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/prior-pins.json",
+      "sha256": "09f58c3e29cad667aeb374f0d213677817caf0cb8a847a700b9adb794a320e7c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/probe.json",
+      "sha256": "3f5bc6935a562c9810f2fd171278eaa09bd022463e2a060c72876bde5999c1e9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/proof-check.log",
+      "sha256": "eb4768e7a50077c7448eb3f9f9bce879d98c50ec3929caed2909a12c9aec49f9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/source-pins.json",
+      "sha256": "fb89cd84db196e2904a3f94a5722c10ad1fa96e9c648503ebd6fa67670a8d6ab"
+    },
+    {
+      "path": ".lake/riesz-ceiling-prime-thinning/validation.json",
+      "sha256": "360a2ddcdbc22548ffd272f624ce928f679dd75efccdcb2cc5405bd8568afb79"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/axioms.json",
+      "sha256": "b95cf3e7e34c9718647658a39817e475e0658229d24533c70278f1c5c29d7a3b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/build-result.json",
+      "sha256": "bed5ea00e70ba76be52fcd29530b77705c03aea53ae5c4ccad3ef7bc0bc70986"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/check-result.json",
+      "sha256": "1ad808aab981dc121e71886f7aa6203fa7a20134fcf7d4be1db03a2ab08e7e13"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/prior-pins.json",
+      "sha256": "039bbe85706e4086b885d54ae40723429f4139b66a359a1887d87252be1e62b7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/probe.json",
+      "sha256": "7ff46250b3484ee47621b0a3aad33f5f81a497c6c407275950259bd5730bab93"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/proof-check.log",
+      "sha256": "09ce8753662e5db6105c2eee189ac94ad563c53f5fe048eb5b679961e827b398"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sharp-multiplicity/validation.json",
+      "sha256": "b3126b391215aced15126dfd9c1025abada3fae9a3bd1347d02ac504b5358bad"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/AGENTS-append.txt",
+      "sha256": "dac59d2e408d44d067ec5c3830983c746b4633c5df8c5c15d2f7da5096da9a36"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/AGENTS-before.txt",
+      "sha256": "5600e7836affc6cf0c7f8bc6c02a3bd147cb8b78bcc112eef9e01a996358bb7e"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/axioms.json",
+      "sha256": "8253b94b1b79d9ea4c48b789dcd5ebb9f10ef5fdff88dcc321334cbd02d38809"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/build-result.json",
+      "sha256": "3b49f343cfd9b52ca37950f043fa62f286ed413f2ddeea6d378b2af1dcfa618f"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/check-result.json",
+      "sha256": "72be2fcd65672bc7230a3d75af17176c33280f6c6100669881719cd815054e7f"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/numeric-replay.json",
+      "sha256": "c73f433a26a951fa2f6bac48cf705ed462cff6f7adbae682211030b8098980e1"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/prior-pins.json",
+      "sha256": "1866ff72cbf56d82945d6e0e3f236b2ea256434c11978e640039ecd3eca73e66"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/probe.json",
+      "sha256": "13f4d98f49dc6e8813f03dece25fd365f4d03f878727c122b9bf4c5d5cc546d7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/proof-check.log",
+      "sha256": "609b93fa260b926bf3ffc6c63bf1452683c978a2b7374517d9e51b2e827020d8"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/source-pins.json",
+      "sha256": "aab66c2d20f59bcf4091a87bcf4d09db6e611cc32a1013fbdd036bbbb6cf3359"
+    },
+    {
+      "path": ".lake/riesz-ceiling-signed-cluster/validation.json",
+      "sha256": "4894310beb5179cb64825e9e1035d14514fea50a0cb1cd7eba2d17f459d31530"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/AGENTS-append.txt",
+      "sha256": "e7581bccec158ca96fa05268268004825c5610420f0c34949538bc3ac26151a1"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/AGENTS-before.txt",
+      "sha256": "604e966caa1b9ed6497c4b54b4980830adcca81e3d9b549c30e97b527e96ab8c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/axioms.json",
+      "sha256": "0a06eb722b04f587ee43d1bc2822bfe9738243e0d85467471dd314abd1e76b3a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/build-result.json",
+      "sha256": "38293f8d1fd3d7587726099fa830245604bfe936658642816a87c4ea21e27ed5"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/build.log",
+      "sha256": "beb2074b491040a2be237226585fb1d4d84cc99dfae26203f9a55863f3225f43"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/check-result.json",
+      "sha256": "82e6b6834dc6b677c49988f5980d552b3e7168b74bd54669fc1500ac9d7b2b8d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/numeric-replay.json",
+      "sha256": "00f20e9202394dc3776f2741eca87ac865217ff773accc41c145475a908f9288"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/numeric-replay.log",
+      "sha256": "72f943456c0cfb8a35db667899beb24fbd3ea690a6aa470eb226764d02be992c"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/prior-pins.json",
+      "sha256": "85c56e539b2620643ba58d3000d6cc7d72b751e9861525bcb4f2f8a6389d3f51"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/probe.json",
+      "sha256": "0fc5298873c6e54cdbdc3c19129accd24346677859e08a6765baa3c6878aef53"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/proof-check.log",
+      "sha256": "e54bd199c27dacca54951f51680644f878a2749265b55d8364034ea2976cdd37"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sparse-arithmetic/validation.json",
+      "sha256": "a81384d77519d66aa844cbb5d40f73042fdfc3ad81fb47b8b4ca0263486a3512"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/AGENTS-append.txt",
+      "sha256": "2f96811db2ddad4d0cd95f9f4efc5f04563f28846b5826f5dc3c39073c321269"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/AGENTS-before.txt",
+      "sha256": "312caad58e38ca82300a0b547c63e75df35652e33cea46ef45ddaa36cadc7ff6"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/axioms.json",
+      "sha256": "7b309f94e6ef3422c61bef896b2d676ffcf42d27020e424ad375f18271ebd3d7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/build-result.json",
+      "sha256": "45e4f843605060f259f849fe0ba76c551b1e16afa005209561328c98a019bf2b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/check-result.json",
+      "sha256": "969073a21f8352369ccf59f1ce116d211b0b71aa977a63f23a7ce9e1a28e6e5d"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/numeric-replay.json",
+      "sha256": "b6806448f87d5e36f9e69a8d9a73807adb21b3e637ab7e79cfd36ae49837d3e4"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/numeric-replay.log",
+      "sha256": "b2d4d3157988b99589904a0b3b7c2363cd9e5bde05970752fee82b8aad4922ac"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/prior-pins.json",
+      "sha256": "2c54c2d2eddd605f46fb4a4b8a6212956f615e63470388ab89e30413a2772b96"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/probe.json",
+      "sha256": "135e2ae447d91676b32aa9261c8e79ab3faea5f9c29c58d2a789fc37b40bc60e"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/probe.log",
+      "sha256": "b6b2558fed61090b66cabe001d182fc1f3fed13a4adc90a25449bf6f3659c174"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/proof-check.log",
+      "sha256": "277f33bf1e3e9dd6b21a6f181f397ebd86e620fb682343cd25f4754700d1345e"
+    },
+    {
+      "path": ".lake/riesz-ceiling-sublinear-height/validation.json",
+      "sha256": "eff0603984da384ef6e1ed8c568ed45fb93374f01980d4e25ed213af68f582a4"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/AGENTS-append.txt",
+      "sha256": "af1276f2cf8015b6c3019762d5f2a0eb3c0b2cbeaa69e0bc6019996ebc26ff66"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/AGENTS-before.txt",
+      "sha256": "bab28554684532909cd8704b9b7a1baa80dcbba6dd693a890fb46612298d27ce"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/axioms.json",
+      "sha256": "080b4558b5cb39c91b8c2d4e86380a2e9c3bf7b88faf0b85626ac97c7629d71b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/build-result.json",
+      "sha256": "b0f6cf2b7530b5b82b88df8b2c90565b1392d95a2680162d3d5ec6e3cc2c6fc0"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/build.log",
+      "sha256": "54d9b15764c5602d07c286d047d4f49e363a8b1a0e75a9a6080e8b2ce9b3d97b"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/check-result.json",
+      "sha256": "786b32714bbedac3c73b72c331f2c72eccc46d74670c45154dd3e5c10acb9e24"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/numeric-replay.json",
+      "sha256": "1dc7b6e034b814cb1da4a15fe951e03f202c365cd1e32812bbf346efea55eea3"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/numeric-replay.log",
+      "sha256": "c69a0d9731a7f02f56cfd8dbc39f784ca38d9fb588fba9ef15a6b72c43961656"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/prior-pins.json",
+      "sha256": "2f1c55f784b732d62f4198f550fd51a885c7640c6594efdc13ade4d7b7dd5238"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/probe.json",
+      "sha256": "bb47d13f2514b554f0c8c8a0859cc6ac8529ed8bae8165ba25b2f340a98297a8"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/proof-check.log",
+      "sha256": "70a7c028d8585f5302eff9df527c21557bd3131744fdf23320bec840b1f83225"
+    },
+    {
+      "path": ".lake/riesz-ceiling-whole-height-bound/validation.json",
+      "sha256": "03e0aa4c13158bd1f7ef696aaf1023bde8fcd8208fe61d38f2a8dd0769572400"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/AGENTS-append.txt",
+      "sha256": "7fa552d8a87f0fcc7e3cca0903ba6b2772269068417a7c815742c4b2330e4080"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/AGENTS-before.txt",
+      "sha256": "fdab3412a2faa3a9b1415e8eb9a0e4fa893078f1d91f4c819f8e761a0dcf67d5"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/axioms.json",
+      "sha256": "f9e05c94fe3dc7b8f2a9b5ad2ffa72348808bd2ae42a6bcf239b0acb3b2bf5c7"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/build-result.json",
+      "sha256": "f0dd4156271195651f8be35f288690db8d813a84015e3a5c40af1684565f9638"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/check-result.json",
+      "sha256": "8c0a752c0480c50a8d0059c8a936f8fa56a6e9f085daaa454cfcf67c24053c10"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/numeric-replay.json",
+      "sha256": "388f553ccbfce449a9bb7c1b931621610e83c92b855b610eca9a57f47d78406d"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/numeric-replay.log",
+      "sha256": "2d741b9f29b5c9eac6fa22139047e9535cffd547132af61bf7db036c2b2eab40"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/parked-fejer-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/prior-pins.json",
+      "sha256": "00e2604b373a3061a166153ca471c421d07b3f256d3a2c0814aa76462b84d865"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/probe.json",
+      "sha256": "da553d8d223611dc855b60e7a172c8cb9a22439ab6aa10742095dd1f3b9f02a9"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/proof-check.log",
+      "sha256": "7593188139b06f3634e7e12d401cd5d06a5b6c7e1662d3588c9cc3fa9fd943ea"
+    },
+    {
+      "path": ".lake/riesz-selberg-adjacent-order/validation.json",
+      "sha256": "60fb4291cef59f23e2753613f3cc714da78d3a639986ab6253bb6069d024755a"
+    },
+    {
+      "path": "RiemannGaussian/DerivativeOrderComparison.lean",
+      "sha256": "031c0633096c1ac975304469111fc000b7359a45ac4836633bc415a2e4c896d5"
+    },
+    {
+      "path": "RiemannGaussian/DerivativePowerExponents.lean",
+      "sha256": "dd5b4fcb73167aef9b1d3ca44230465fa4ca285e7d6c5624b560da82ba1a8b8b"
+    },
+    {
+      "path": "RiemannGaussian/DirichletPowerParameters.lean",
+      "sha256": "79bfc8ec12d584d0fd1f74602dd1a6db313c65da2c273e887d0586bd2fdfbf9e"
+    },
+    {
+      "path": "RiemannGaussian/GaussianFermiLaplaceOrder.lean",
+      "sha256": "b9371f4ddd2d4528c58a4b43415a81a7d089fa6f73ce457c9573659f8d0f5f93"
+    },
+    {
+      "path": "RiemannGaussian/GaussianHalfLaplaceBounds.lean",
+      "sha256": "30751388ab1923e01baea94f00c066dcecf8dc0990adbc322357986cccdf5f39"
+    },
+    {
+      "path": "RiemannGaussian/GaussianHalfLaplaceMoments.lean",
+      "sha256": "0d178a6b07ad4cdf617cd9f0e38af413bf241dfc4d56fcd726ca7cd5465a13b5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaClippedEulerMean.lean",
+      "sha256": "8302323f61ef6ad059ce0bc9f3b7741464c9de52892ac3a5d94f714669d58980"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedCost.lean",
+      "sha256": "bc505cd93eb8e971dcf6caf1ff61eba81e04fcab0ff122dcf9ff75bfd5e9a457"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedRegion.lean",
+      "sha256": "88fc83bcac218c993bf268ec38a46eaccd6915b9f23728264cfdba331393c63b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianExpandedScale.lean",
+      "sha256": "5965b3009e9c0ea7fb01bc2d9fd2056ef3b657377ad3b2e3ef4cd921e61ef478"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianMultiplicityDepth.lean",
+      "sha256": "ab164cf96fd55d901243fa924bb254dc9a4b0210c6bce82f90bbd7faecd6257b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianStripBound.lean",
+      "sha256": "a244aa294e48a8d4edd9e520546295be83780063027bc056526149e2bfa8c0f7"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianStripExplicit.lean",
+      "sha256": "302e2917f708cb65e7038b676ba2b86b459edd2a1985a5879bb8273a7e6d460d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaGaussianStripPhaseFamily.lean",
+      "sha256": "6c1126631f9fc059a92fc66f5f3ff569e996827961babaf70fe849c9d7f6f0a1"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingAdaptiveFejer.lean",
+      "sha256": "64256d6f9b4d2c1c1ebc20d595cc175b113ae562b7671ddcd51f8782e2329fda"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingAllHeightMultiplicity.lean",
+      "sha256": "aa46eb5687f850b9c9ac347a04f42294b08a21be2ce998daae55ef898836f263"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingClusterPowerAudit.lean",
+      "sha256": "de8aca841ca631eac201acd533d99bb493ca6755a82f28e1b50908d716404315"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingDensityAudit.lean",
+      "sha256": "a8219d5e2506acae5bf99177386269e1c910ee338a1eb6ee79ecb1069dcca754"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingEulerJetAudit.lean",
+      "sha256": "264b41814fde8bbc8a1cb605a79c3effcb2fd5326cd5a4099eadd5559d074b6f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingFejerBalance.lean",
+      "sha256": "344c1d34974d2d59e046bd25c07251ef3a0db4a963f11d34cd26f3e51413cc4b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingFejerCluster.lean",
+      "sha256": "2fbe6eefa3ea9e1266b1fea164c777176c83e45ae5a83dd505e859749833dca0"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingGaussianBudgetAudit.lean",
+      "sha256": "0db4f7450ff184fe58fec00038cfc7695bbcb63e6f9db12d8858c5e7c69e94be"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingGaussianMultiplicity.lean",
+      "sha256": "0d6778d949e6c238450d44e4e2f844516ddd32324d75d35678c5b6f09e505e40"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingHeadCompletionAudit.lean",
+      "sha256": "36f50fdf4e2d08fffe377b1d5254a0b772936d979514c42338ca1b229ba045dc"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingIntegerAudit.lean",
+      "sha256": "446ec2e76d35460fe6aa7cc2b33213ca04a1f36144b313e0451b80f0b87db744"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingJointKernelAudit.lean",
+      "sha256": "1301b30ffb0f55143b5e919be32684e75fe4bfdf32a05d3e42273ba25058b914"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingMomentIsolation.lean",
+      "sha256": "e959e80a739de5acb88683c61c06bb30f81ed97b9f2267d5afe8f719bcb12f87"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingOrderCancellation.lean",
+      "sha256": "bf51d39b1edfbdd1aafd75397225bddf3667a374ad441dd6a58a7ac8ec61bf61"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingPhaseAverage.lean",
+      "sha256": "80b74c03fe48c6fcb071413e1c373710bcf18860cd73d12ead4c9f2fd2013448"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingPrimeThinningAudit.lean",
+      "sha256": "607f3f952145b5b49dbf7f301e11d485f72032c6a7de1cdac69c7538e5a1d51a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingSharpMultiplicity.lean",
+      "sha256": "41a3b7872b235463df503a9fe53a8aabf28572ea7617992e410073251e52c78d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingSignedCluster.lean",
+      "sha256": "8acdcb3a31b291c311e0cefbadf472658066f4c6ef7c0ad83004c29eadf5b9ab"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingSparseArithmetic.lean",
+      "sha256": "6eee664cc4e914dbb1747f7c6bd80ff7c312fb8ccba4bf640ff65fa8e5dada55"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingSublinearHeight.lean",
+      "sha256": "e9f5a21508fd467cd0d765242b58fc4a9ba295491d206df3531bb73c517fd2ba"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingWholeHeightBound.lean",
+      "sha256": "caaffb196a309331061ca0e9349f63abaeb57e295fad8f43110d5224c311799e"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGammaJoint.lean",
+      "sha256": "68ef5d3b0c14a2632b765e59e25f6340860b0bca30fd48662f5fa92d67944adc"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhysical.lean",
+      "sha256": "ed3b39a233da33fb3065e06746cbbfe0daf1d79bad47cb773b7e73c4a13c35dc"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairFloorAllMultiplicity.lean",
+      "sha256": "e93169708cdd20b7d7b6a5568824390b9f6bfe38e02ef42af83e96048bf677a0"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean",
+      "sha256": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergAdjacentOrders.lean",
+      "sha256": "8ea1b94a82ead8f21291041fc8b75f75e32a8c34436d44bc844728c26238ebba"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSignedPoleZeroFree.lean",
+      "sha256": "60f0d7e245c3f6b99236cfb616705af919c47d2799bdb7953d52f7f841e81dd6"
+    },
+    {
+      "path": "docs/riesz-ceiling-all-height-multiplicity-audit.json",
+      "sha256": "42a652c2b643e59764d51e41b06552f2353f3e7d21345cdf0334e46cd5b00f0a"
+    },
+    {
+      "path": "docs/riesz-ceiling-cluster-power-audit.json",
+      "sha256": "3622a923724ebe846dc6345e62a921629fa75df45ad1e076fa1ca2d51a8bc82d"
+    },
+    {
+      "path": "docs/riesz-ceiling-euler-jet-audit.json",
+      "sha256": "b31b662e08bafbb929b7561851a4436fa010e11460f64a52fd67a6b45a83e6fd"
+    },
+    {
+      "path": "docs/riesz-ceiling-fejer-balance-audit.json",
+      "sha256": "ee33cf125164a06b59ddfbf9b8b013ee3cc7f56eb5a9a87808c427405bd0e0b7"
+    },
+    {
+      "path": "docs/riesz-ceiling-fejer-cluster-audit.json",
+      "sha256": "2e0137e57abbb46d9510070039443dd46721ea4bfdb75a8dc659df8b0bab897b"
+    },
+    {
+      "path": "docs/riesz-ceiling-gaussian-budget-audit.json",
+      "sha256": "cdce6edc6927106d0d576529bb9a905f8f8ce4a092474856917a7d9847f852d6"
+    },
+    {
+      "path": "docs/riesz-ceiling-gaussian-multiplicity-audit.json",
+      "sha256": "877aa8657ecc12a99d94e3dd718ae916f0d1aaf5dbd5d389807427e48a1fe94a"
+    },
+    {
+      "path": "docs/riesz-ceiling-head-completion-audit.json",
+      "sha256": "34d64f23d6926ba312520abfcfe2c4f42c7cc6496452eb805690167b7c2c2e53"
+    },
+    {
+      "path": "docs/riesz-ceiling-integer-gate-audit.json",
+      "sha256": "9a825ba9a4d35c2ca3974136378dce65ff6e85342cc99d1f59bea48fddff616f"
+    },
+    {
+      "path": "docs/riesz-ceiling-joint-kernel-audit.json",
+      "sha256": "941f019fa1898147b939ba5025d02ab9554ae5b4aae88168a448f952e2887c78"
+    },
+    {
+      "path": "docs/riesz-ceiling-moment-isolation-audit.json",
+      "sha256": "2a54f1f1091697033070d7bfc310091cfd0ee2c8c067b75a8d10fff9b1b2c7bb"
+    },
+    {
+      "path": "docs/riesz-ceiling-phase-average-audit.json",
+      "sha256": "0dfe411a7995e510ab8de4f8a9b14094d9c89c6eb7935651497ce0f8e96d5baa"
+    },
+    {
+      "path": "docs/riesz-ceiling-prime-thinning-audit.json",
+      "sha256": "587677af2318334ed5e5ac38428555998b3b62388047f0757b9462ead2ad53c9"
+    },
+    {
+      "path": "docs/riesz-ceiling-sharp-multiplicity-audit.json",
+      "sha256": "0b0f2a723669d17b61be12c6536fa812465cf4dfe147e0a5a92ebd6007006bd7"
+    },
+    {
+      "path": "docs/riesz-ceiling-signed-cluster-audit.json",
+      "sha256": "c6941f9c748c060bd3d6ca1b97a67386d863ab6ac5e9f9d3132c804d781dd7c4"
+    },
+    {
+      "path": "docs/riesz-ceiling-sparse-arithmetic-audit.json",
+      "sha256": "d2bbcb4872d13d4e49e8c2cf912bc8fc0cf1cffbf36426738db975678f2a9909"
+    },
+    {
+      "path": "docs/riesz-ceiling-sublinear-height-audit.json",
+      "sha256": "cdc93e8aadafab29793e7e098196f516576d2d69b773e15429abde9cc329b83a"
+    },
+    {
+      "path": "docs/riesz-ceiling-whole-height-bound-audit.json",
+      "sha256": "5ebb68e463c4ff9393c2c80e77bcd67f119481c05bf2abcc28b33378e34d34df"
+    },
+    {
+      "path": "docs/riesz-selberg-adjacent-order-audit.json",
+      "sha256": "9b984d3c3751106b855d92532e7ca90bc8ffcf339ac6ca217f5045d8e3baa211"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-all-height-multiplicity.md",
+      "sha256": "52b12906352cd479c202571fb51a4b01be17249ba27dbc5c57e3bf2500acd7ae"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-cluster-power-audit.md",
+      "sha256": "28b3078057ffb0b600abb51cc7c1655a06857bb619f94e8f495902393e43564b"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-density-gate.md",
+      "sha256": "4d5d07c087dd33e9105fd93c1e8eb60754da18b0aeff3ba7e5c075beb5e25dc2"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-euler-jet-audit.md",
+      "sha256": "59cefee087859435f0071541d725407e625706abe5aa4b353b3f8ee604f357d3"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-fejer-balance.md",
+      "sha256": "d9c376c815f0e5d978a814d44f367097461602f29b80a5b0d6f8087b3acc3446"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-fejer-cluster.md",
+      "sha256": "3390dc8fc0f29576299d75085b17c3f58fef91366194f37ac340554874ee8a06"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-gaussian-budget-audit.md",
+      "sha256": "74bd81e836fbe0a6f1ba76b5c0197114958cbd7f2b7133bf939406567a270c79"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-gaussian-multiplicity.md",
+      "sha256": "113c7b80ec0709687e0cac87b78757f23d9a219b3671fe886bf694adece32868"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-head-completion-audit.md",
+      "sha256": "b7343ac4c457f5b535b00c27171157a47b11d711c975d0ae9235b4ff0e2e95ba"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-integer-gate.md",
+      "sha256": "a36cac4d9a9de43a23cdc261247238e239f2d58376a4df3c6943e32fc84d7d51"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-joint-kernel-audit.md",
+      "sha256": "d057d6bf75192f7c4a74c41e319af6258887787c90819852eef7a401de2ff9c9"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-moment-isolation.md",
+      "sha256": "460516e49813c48816a68a77a89ca9aba4e288b772a28e18ae57c38d0b28eb48"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-order-cancellation.md",
+      "sha256": "024a1d329c477ff617ff8c2a369dfbd3ba8524a6bc67d76c3c467745196c41f5"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-phase-average.md",
+      "sha256": "da30012de89186b59167c2ce1a9317b67508a8855ca4c36ac02e53fd6a2e015f"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-prime-thinning.md",
+      "sha256": "55dbe09c9102007a1c8962f3e67c59131057695994d36016b6cc6fd47541f68b"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-sharp-multiplicity.md",
+      "sha256": "bdf5e9fc18285bfc49321bffbdd6cc1f0b7d0a6f51fc2e7e425e170c484a9b0b"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-signed-cluster.md",
+      "sha256": "317f287b49164695075ad8909e14067181d00af290f3a77aa33a0f07ae5686d5"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-sparse-arithmetic.md",
+      "sha256": "1ec7c3bb67fd3aa13092e577332d00899d5bffb93f6cb9ff7e32a54f7a11754a"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-sublinear-height.md",
+      "sha256": "be736424b077d5ff9af06d9bddfeabb604f44252f5228cfb44a1944b165b74b0"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-whole-height-bound.md",
+      "sha256": "0f7e2a292f49f97ecdfd4b6d893c4ad9fc69e27f5f0df34f24dde45b2befe8d5"
+    },
+    {
+      "path": "docs/zeta-riesz-selberg-adjacent-orders.md",
+      "sha256": "2a1bbcd2a405948d2aae72123e2efe06749b6e4f6793ee55db564bc65ed5ade5"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingAllHeightMultiplicity.lean",
+      "sha256": "a7153924843ba949d0e3f7997fc60b2eab79aeba3da85d3da5a309315e4879a0"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingClusterPowerAudit.lean",
+      "sha256": "8e2566ff475fe09a46d85adb3bd70bd8ca74b86ffb5aba432a3c49dd8f750e9a"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingDensityAudit.lean",
+      "sha256": "109828f4ac8341355cc7219bfd510389a19c3d64dba04ea2abcc694c2aa92b29"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingEulerJetAudit.lean",
+      "sha256": "2dbd6827194497cfdc057508729529a44c7b391087551fbae78b70d8d7d50d4b"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingFejerBalance.lean",
+      "sha256": "a78f21f5ba3eb84ec5b3dd98ddffae11b85a845619ca1c5de8aec4f0a46d1926"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingFejerCluster.lean",
+      "sha256": "d2fe0602bc756c0e8a42b7cce9922861dea50a743f40f3089782ac3ed08f65c4"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingGaussianBudgetAudit.lean",
+      "sha256": "d0944d563703d6139eb70a9d81250d99c433fc0c14da449b5629c4875a7d98f0"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingGaussianMultiplicity.lean",
+      "sha256": "844b02e8989198320277fbec2abdec0b9811fdcb1bd58d3ee97f7eb4eafc27cf"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingHeadCompletionAudit.lean",
+      "sha256": "ffd11e14327e6567ef4b8bf04d7fb9c7e59888aad3708c3625551660590c6df9"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingIntegerAudit.lean",
+      "sha256": "bb07d4a75a3d449e4cd602c92b3abbe19a627b05b375845510a076678d7b6992"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingJointKernelAudit.lean",
+      "sha256": "208f8f863eff39ae5a1bd49480d4f7513db0268552e4ebd1b52000c57183a5a3"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingMomentIsolation.lean",
+      "sha256": "2e68e61e39aca137e24fe33e437faf3b291df2469c4f79157fe6b68ddf4c1d20"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingOrderCancellation.lean",
+      "sha256": "fc3e2009c45939eac1f0c9455f840441848e87e13db5c009a6454859d4ddaffa"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingPhaseAverage.lean",
+      "sha256": "405d30aba53f14c9dcf091a8c1cd7885c6f207b73407aa7493161551f9357a24"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingPrimeThinningAudit.lean",
+      "sha256": "197e8f03f92a47c7cef0297ab62fb42cccf13c9fc7bd31cff9333a05a2e62984"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingSharpMultiplicity.lean",
+      "sha256": "92473441ccb1548e1836284cecff1f2fa97987218fb519b9d12b78d815456044"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingSignedCluster.lean",
+      "sha256": "7e4e8a0cbf1e53b6cfffd395ad46dd5377e8c97c1cca286cd36c23f8ac6fdc06"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingSparseArithmetic.lean",
+      "sha256": "530c27ca75d3168068dc14c6a5f12a5d3bf42a60573763aa8080a7fd95690942"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingSublinearHeight.lean",
+      "sha256": "e44529ae8cc7b247a34e2767a2ca0bb2884bfac23ed0b523b9518d9cea179932"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingWholeHeightBound.lean",
+      "sha256": "79ebfb0d3e1252d9adccbf2477e54b7721282a104a5959eb775fcaa45d8e4fe2"
+    },
+    {
+      "path": "scripts/CheckRieszSelbergAdjacentOrders.lean",
+      "sha256": "c4147c8babf0006e5f72baad56b0dc0f984f33d9b38fea9aeeb7b758d575d9f1"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_cluster_power.py",
+      "sha256": "4fad4aedf51c8d1a54733447dc946b92ca7e36d134ed01a2ca6d20d33cf97b40"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_density_gate.py",
+      "sha256": "942eb11dcabe8223b5e7cc6352845ca204beaa2d051999f8d29863aa380d363f"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_euler_jet.py",
+      "sha256": "92928ba04572977531e3dc58d73d8be55daac026333d55cc0c416c1dbe43a0f7"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_fejer_balance.py",
+      "sha256": "75596b1a62bb4f80808327ae9ad0345f19f66d78aaa089f35f3c57073ec65131"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_fejer_cluster.py",
+      "sha256": "f6b26175a9622a19f26ec9c36595f448e61e8af3794e2eedea7119fa967df0b2"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_head_completion.py",
+      "sha256": "bf32fd7954facb00af6cb815e62de488855ee8cfe2a92676264e9bce19796860"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_integer_gate.py",
+      "sha256": "cf3e6c810f565499b5d8fed697e7628430cf9b0d0ab162a6f8620fa0b7496892"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_joint_kernel.py",
+      "sha256": "d66350826686916f2d4c263fcc08e97f0bf754266b6b1b65ff253309b5897b0a"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_moment_isolation.py",
+      "sha256": "008a2d70a57924e893ddaa6c6c234d66fe600b7672b8160e6d29c43ad9d6d3c0"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_order_cancellation.py",
+      "sha256": "0e8d2a3738159586a5717cc0689796d847cdcfbcbab8ce725220dfa065e7510f"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_phase_average.py",
+      "sha256": "535d98d8b2bf7097381aa1bccf75dae931e36ffb22bfc73e367610abb66113d9"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_prime_thinning.py",
+      "sha256": "7191e6855630da458261c4854f6b0bd7026be5055865930370837185490e201e"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_signed_cluster.py",
+      "sha256": "e72bdf8b28c413008f79de0687e7f183ebd78df924dd14d422017a048e85bbb6"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_sparse_arithmetic.py",
+      "sha256": "3ccf0c193736a019e099b995e2175173d8b643dd5f993ea1cd1d54f3f12bac4b"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_sublinear_height.py",
+      "sha256": "36288846dbdc8cd2446376e9683949f797b8a7de3042cb62a005b956f7799e78"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_whole_height_bound.py",
+      "sha256": "2dde4a9a9037b9cdab281ee5b71b1387670dee0bc7570e8427d613b3b5ef110a"
+    },
+    {
+      "path": "scripts/check_riesz_selberg_adjacent_orders.py",
+      "sha256": "563ed8b57cb97334fa120c9d1409ff86c50308296ac658ee9eea729428a562d0"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_all_height_multiplicity.py",
+      "sha256": "2837ca7c40679f79653ec8a907f045d328f5c01697664f88e3ba6d31bd05eab4"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_cluster_power.py",
+      "sha256": "e1bce9601c2ddee80a4467f70d8e9a838649d0b0fd331070e2c19da7070988b4"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_density_gate.py",
+      "sha256": "f5c1880d0b7ac02ba43a1280c95b6a2f15754ef062c2d887b5487ac7fb615df3"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_euler_jet.py",
+      "sha256": "0139712c9324bce1c5b859876433044155c6b3cf25eb18aab1cf5ca85f0ba78f"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_fejer_balance.py",
+      "sha256": "f87c95d5c7e17cf1e0a6ca48ba293d1667258d112f7dd0db82f8795ac90cfee4"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_fejer_cluster.py",
+      "sha256": "5485161fa45ee9e2c5953aba2463d62f46fb976e1a540f0069ee4d2408858f71"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_gaussian_budget.py",
+      "sha256": "39bead99226f90ec6409166602c62a2a0fb864ccca575c1907b0376376b4aee5"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_gaussian_multiplicity.py",
+      "sha256": "14124d24f53f375377e7aef03fad00c5ab617f716d26c5ea964ed101472a7151"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_head_completion.py",
+      "sha256": "9b1bd81a8ab58e36dac632f9efa6b3b82ea0728e1039462ed1842c16a698cf4e"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_integer_gate.py",
+      "sha256": "d519109ac700f4e687e9f64b5d24a6190a4bd3c59adf8f1d9154db2fed6f3730"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_joint_kernel.py",
+      "sha256": "044d4bd8231c01a7d7f308a511bc9ab913b5acdf04172c3dc4891bdc7a128295"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_moment_isolation.py",
+      "sha256": "bc0e21da63fe820acc8852cceca3446aa5eeeff1bb0b697347bd8a10650ded1b"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_order_cancellation.py",
+      "sha256": "ab6029dfe80b042017a2b960cfaa9fef686f1425d71ab61006c416a745888326"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_phase_average.py",
+      "sha256": "c9b913b800f1ea05921b747e3f0113161c888ad81b8e9804d6edc96b53fd984e"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_prime_thinning.py",
+      "sha256": "3d3e9fce9e0eb991bf5236cdb59502a3d60cdbccba960b4ca95fae06db1ab177"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_sharp_multiplicity.py",
+      "sha256": "7e6a8abab6b736ff45686c8949e54f018bad40a59cd20377622c91a4dd373f04"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_signed_cluster.py",
+      "sha256": "ab9908f49c4716c31f6bfa4268a9cc697a45e0a8375ef0fd3d691f934d272065"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_sparse_arithmetic.py",
+      "sha256": "30d5634a6ede5a99e3d59b4c677d4d333bb6b5a1840c1559786b1ff84a6f7f3e"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_sublinear_height.py",
+      "sha256": "58d97aafc98ebb245acd1dc2eb1a41ab0d0a854403d7ec4f5a906dfc01fb3c5e"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_whole_height_bound.py",
+      "sha256": "927ae168c955e67e79b1143fc2a837409b18c1132d9808ce661c2d41cb742ed9"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_adjacent_orders.py",
+      "sha256": "90b17efd0ac7fde6d978af5065401dc31c0b47685a7b85e95276298f413be0e8"
+    }
+  ],
+  "newResults": {
+    "originalBalancedMaskUnchanged": true,
+    "testHeight": "19*pi; not an assumed zeta-zero ordinate",
+    "eventualActualSignedGrowth": "Re(u^(N+1)*sum_balanced selbergDefect*kernel_N) >= (u/120000)*(2*u)^N/(N+1)^2",
+    "actualSignedBalancedDefectTendsToInfinity": true,
+    "actualLiteralBalancedPrefixTendsToInfinity": true,
+    "noConstantCofinalCeilingOnOriginalDyadicScheduleForIsolatedPrefix": true,
+    "exactPrefixCorrectionPaidOnce": true,
+    "selectedSourceNormPaid": false,
+    "fullPrimeProductPhaseRetained": true,
+    "qualitativePNTUsedOnlyAtFixedRelativeAccuracy": true,
+    "proofMeshSummedOut": true,
+    "allThreeAdjacentOrdersJoinedBeforeErrorEstimate": true
+  },
+  "limitations": {
+    "noActualZeroCounterexample": true,
+    "doesNotRefuteExposedZeroSpecificBound": true,
+    "doesNotRefuteJointBoundWithSignedRest": true,
+    "fullPrefixPairDefectNotBounded": true,
+    "joinedPhysicalNotBounded": true,
+    "nativeSignedComplementStillUnpaid": true,
+    "actualPrimeSamples": 0,
+    "actualZeroSamples": 0,
+    "nativeEntryOrderCertified": false,
+    "sourceScaleDensityApproximationClaimed": false,
+    "continuumQuadratureCertified": false,
+    "newConstantCeilingCredit": 0,
+    "RHContradictionProved": false
+  },
+  "validation": {
+    "scopedLeafBuildPassed": true,
+    "warningAsError": true,
+    "linters": 14,
+    "theoremsIncludingPrivateHelpers": 49,
+    "transitiveStandardAxiomsOnly": true,
+    "independent420BitReplayPassed": true,
+    "scalarBallComparisons": 30,
+    "continuumQuadratureCertified": false,
+    "priorPinsChecked": 360,
+    "allPriorPinsUnchanged": true,
+    "agentsPrefixPreserved": true,
+    "agentsAppendExactlyRecorded": true,
+    "sourceWhitespaceCheckPassed": true,
+    "pythonSyntaxChecked": true,
+    "noNewSorryAdmitOrAxioms": true,
+    "rootRegistrationChangedByThisSlice": false,
+    "publicMetadataChangedByThisSlice": false,
+    "widerGatesRun": false,
+    "committedOrPushedByThisSlice": false,
+    "newConstantCeilingCredit": 0,
+    "fullConstantCeilingProved": false,
+    "newSimpleFloorProved": false,
+    "newZeroExclusion": false,
+    "goalStatus": "active; not achieved"
+  },
+  "scope": {
+    "localOnly": true,
+    "noCommitsOrPushes": true,
+    "noSubagents": true,
+    "noRootRegistration": true,
+    "noPublicMetadataUpdate": true,
+    "noWiderGates": true,
+    "concurrentSemiprimeWorkNotClaimed": true
+  },
+  "remainingTask": "Retain the SIGNED native mask complement or use the actual exposed-zero hypothesis to prove the joint inequality. Do not independently pay the balanced mask by neighboring-order algebra or absolute completion."
+}

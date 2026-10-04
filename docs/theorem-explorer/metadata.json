@@ -6,7 +6,7 @@
   "endpoints": [
     {
       "id": "positive-five-joint-payment",
-      "label": "Joint payment \u00b7 fixed positive-five sector across a full period",
+      "label": "Joint payment · fixed positive-five sector across a full period",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -33,7 +33,7 @@
     },
     {
       "id": "explicit-band",
-      "label": "Complete explicit region \u00b7 all heights",
+      "label": "Complete explicit region · all heights",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -48,7 +48,7 @@
     },
     {
       "id": "riesz-capacity-phase-payment",
-      "label": "Signed arithmetic \u00b7 literal capacity and phase payments",
+      "label": "Signed arithmetic · literal capacity and phase payments",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -199,7 +199,7 @@
     },
     {
       "id": "riesz-joint-floor",
-      "label": "All multiplicities \u00b7 conditional joint floor and ceiling",
+      "label": "All multiplicities · conditional joint floor and ceiling",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -215,7 +215,7 @@
     },
     {
       "id": "riesz-five-positive-head",
-      "label": "Five-prime head \u00b7 positive arithmetic coefficient",
+      "label": "Five-prime head · positive arithmetic coefficient",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -261,7 +261,7 @@
     },
     {
       "id": "riesz-head-ceiling",
-      "label": "Opposite-phase heads \u00b7 upper comparison",
+      "label": "Opposite-phase heads · upper comparison",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -287,7 +287,7 @@
     },
     {
       "id": "riesz-five-owner-credit",
-      "label": "Five-prime supply \u00b7 disjoint owner credit",
+      "label": "Five-prime supply · disjoint owner credit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -323,7 +323,7 @@
     },
     {
       "id": "riesz-central-reserve",
-      "label": "Central reserve \u00b7 source-scale margin and signed rest",
+      "label": "Central reserve · source-scale margin and signed rest",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -369,7 +369,7 @@
     },
     {
       "id": "riesz-phase-density-audit",
-      "label": "Phase-density audit \u00b7 generic error remains insufficient",
+      "label": "Phase-density audit · generic error remains insufficient",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -415,7 +415,7 @@
     },
     {
       "id": "riesz-signed-sperner",
-      "label": "Signed divisor bounds \u00b7 parity and antichains",
+      "label": "Signed divisor bounds · parity and antichains",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -481,7 +481,7 @@
     },
     {
       "id": "riesz-six-prime-head",
-      "label": "Six-prime head \u00b7 both signed comparisons",
+      "label": "Six-prime head · both signed comparisons",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -567,7 +567,7 @@
     },
     {
       "id": "riesz-five-negative-head",
-      "label": "Five-prime head \u00b7 negative arithmetic coefficient",
+      "label": "Five-prime head · negative arithmetic coefficient",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -628,7 +628,7 @@
     },
     {
       "id": "riesz-complement-window",
-      "label": "Even prime counts \u00b7 reflected-window costs",
+      "label": "Even prime counts · reflected-window costs",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -689,7 +689,7 @@
     },
     {
       "id": "riesz-log-count-tail",
-      "label": "Large prime counts \u00b7 logarithmic tail payment",
+      "label": "Large prime counts · logarithmic tail payment",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -745,7 +745,7 @@
     },
     {
       "id": "riesz-intersecting-window",
-      "label": "Odd prime counts \u00b7 intersecting-window costs",
+      "label": "Odd prime counts · intersecting-window costs",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -816,7 +816,7 @@
     },
     {
       "id": "riesz-seven-prime-head",
-      "label": "Seven-prime head \u00b7 joint count-tail payment",
+      "label": "Seven-prime head · joint count-tail payment",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -877,7 +877,7 @@
     },
     {
       "id": "riesz-reflected-prime-bounds",
-      "label": "Reflected primes \u00b7 exact zero sector and signed savings",
+      "label": "Reflected primes · exact zero sector and signed savings",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -960,7 +960,7 @@
     },
     {
       "id": "marked-prime-completion",
-      "label": "Marked-prime completion \u00b7 geometric integrated error bounds",
+      "label": "Marked-prime completion · geometric integrated error bounds",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": "vk-region",
-      "label": "Stronger Vinogradov\u2013Korobov family \u00b7 eventual",
+      "label": "Stronger Vinogradov–Korobov family · eventual",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1034,7 +1034,7 @@
     },
     {
       "id": "coverage",
-      "label": "Coverage audit \u00b7 Gaussian and older reserve retained",
+      "label": "Coverage audit · Gaussian and older reserve retained",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": "expanded-cost",
-      "label": "Smaller dilations \u00b7 tenfold width and radius gain",
+      "label": "Smaller dilations · tenfold width and radius gain",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1108,7 +1108,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov\u2013Korobov \u00b7 critical moments and actual power saving",
+      "label": "Vinogradov–Korobov · critical moments and actual power saving",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2743,7 +2743,7 @@
     },
     {
       "id": "retained-cost",
-      "label": "Improved curve \u00b7 complete cost and comparison",
+      "label": "Improved curve · complete cost and comparison",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2778,7 +2778,7 @@
     },
     {
       "id": "vaughan-factors",
-      "label": "Vaughan factors \u00b7 exact Riesz average and parity",
+      "label": "Vaughan factors · exact Riesz average and parity",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2889,7 +2889,7 @@
     },
     {
       "id": "lattice-carrier",
-      "label": "Integer lattice \u00b7 retain the linear zero source",
+      "label": "Integer lattice · retain the linear zero source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2920,7 +2920,7 @@
     },
     {
       "id": "prime-discrepancy",
-      "label": "Prime discrepancy \u00b7 signed jump work",
+      "label": "Prime discrepancy · signed jump work",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2951,7 +2951,7 @@
     },
     {
       "id": "source-support",
-      "label": "Source visibility \u00b7 retain a fixed zero",
+      "label": "Source visibility · retain a fixed zero",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2986,7 +2986,7 @@
     },
     {
       "id": "signed-budget",
-      "label": "Signed budget \u00b7 left mean remains",
+      "label": "Signed budget · left mean remains",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3009,7 +3009,7 @@
     },
     {
       "id": "prime-energy",
-      "label": "Prime energy \u00b7 decay at the current dilation",
+      "label": "Prime energy · decay at the current dilation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3036,7 +3036,7 @@
     },
     {
       "id": "prime-reduction",
-      "label": "Ordinary primes \u00b7 complete remainder paid",
+      "label": "Ordinary primes · complete remainder paid",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3059,7 +3059,7 @@
     },
     {
       "id": "prime-correlation",
-      "label": "Prime correlations \u00b7 ratios, products and signed work",
+      "label": "Prime correlations · ratios, products and signed work",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3090,7 +3090,7 @@
     },
     {
       "id": "prime-work",
-      "label": "Prime work \u00b7 disjoint blocks and their ceiling",
+      "label": "Prime work · disjoint blocks and their ceiling",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3113,7 +3113,7 @@
     },
     {
       "id": "filter-cost",
-      "label": "Filter cost \u00b7 complete coefficients and signed carrier",
+      "label": "Filter cost · complete coefficients and signed carrier",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3136,7 +3136,7 @@
     },
     {
       "id": "separation",
-      "label": "Separation \u00b7 finite Gaussian zero groups",
+      "label": "Separation · finite Gaussian zero groups",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3159,7 +3159,7 @@
     },
     {
       "id": "multiplicity",
-      "label": "Multiplicity \u00b7 boundary simplicity and eta current",
+      "label": "Multiplicity · boundary simplicity and eta current",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3197,7 +3197,7 @@
     },
     {
       "id": "union",
-      "label": "Complete union \u00b7 explicit, log-log and Vinogradov\u2013Korobov",
+      "label": "Complete union · explicit, log-log and Vinogradov–Korobov",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3212,7 +3212,7 @@
     },
     {
       "id": "eventual",
-      "label": "Eventual region \u00b7 both edges",
+      "label": "Eventual region · both edges",
       "statusPaths": [
         [
           "zetaLogLogZeroFreeToolkit",
@@ -3278,7 +3278,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier \u00b7 critical moments and negative profile",
+      "label": "Riesz carrier · critical moments and negative profile",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3509,7 +3509,7 @@
     },
     {
       "id": "ford-selected-iteration",
-      "label": "Ford high-degree moments \u00b7 prime supply open",
+      "label": "Ford high-degree moments · prime supply open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3528,7 +3528,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero masses \u00b7 complete powers 2, 3 and 4",
+      "label": "Rosser zero masses · complete powers 2, 3 and 4",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3575,7 +3575,7 @@
     },
     {
       "id": "rosser-prime-error",
-      "label": "Rosser prime error \u00b7 final large range proved",
+      "label": "Rosser prime error · final large range proved",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3610,7 +3610,7 @@
     },
     {
       "id": "rosser-finite-prime-counts",
-      "label": "Rosser prime counts \u00b7 complete through 16000",
+      "label": "Rosser prime counts · complete through 16000",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3641,7 +3641,7 @@
     },
     {
       "id": "rosser-proved-prime-ranges",
-      "label": "Rosser prime bounds \u00b7 finite and infinite ranges",
+      "label": "Rosser prime bounds · finite and infinite ranges",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3668,7 +3668,7 @@
     },
     {
       "id": "ford-unconditional-large-degree",
-      "label": "Ford moments \u00b7 actual large-degree supply",
+      "label": "Ford moments · actual large-degree supply",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3699,7 +3699,7 @@
     },
     {
       "id": "all-count-owner-joint-payment",
-      "label": "Joint payment \u00b7 all counts above the 59.5% owner share",
+      "label": "Joint payment · all counts above the 59.5% owner share",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3734,7 +3734,7 @@
     },
     {
       "id": "sharper-whole-joint-budget",
-      "label": "Whole joint estimates \u00b7 stronger phase and radial budget",
+      "label": "Whole joint estimates · stronger phase and radial budget",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3769,7 +3769,7 @@
     },
     {
       "id": "positive-five-boundary-payment",
-      "label": "Whole joint estimates \u00b7 positive-five small-prime boundary",
+      "label": "Whole joint estimates · positive-five small-prime boundary",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3796,7 +3796,7 @@
     },
     {
       "id": "factorial-saddle-joint-credit",
-      "label": "Whole joint estimates \u00b7 factorial square-root credit",
+      "label": "Whole joint estimates · factorial square-root credit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3819,7 +3819,7 @@
     },
     {
       "id": "positive-five-interior-debit",
-      "label": "Whole joint estimates \u00b7 sharper positive-five debit",
+      "label": "Whole joint estimates · sharper positive-five debit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3858,7 +3858,7 @@
     },
     {
       "id": "whole-five-prime-floor",
-      "label": "Whole joint floor \u00b7 entire five-prime sector paid",
+      "label": "Whole joint floor · entire five-prime sector paid",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3873,7 +3873,7 @@
     },
     {
       "id": "five-prime-period-payment",
-      "label": "Signed five-prime periods \u00b7 coverage and supply ledger",
+      "label": "Signed five-prime periods · coverage and supply ledger",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -4166,7 +4166,7 @@
       "id": "hybrid",
       "label": "Hybrid matrices & phase colour",
       "color": "#ce99db",
-      "description": "Continuous and finite eta representations, signed Gram matrices, heat operators and rank\u2013trace tools. Source files retain attribution for adapted results.",
+      "description": "Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results.",
       "modulePrefixes": [
         "Hybrid.",
         "HermitianRankTrace."
@@ -4174,7 +4174,7 @@
     },
     {
       "id": "arithmetic",
-      "label": "Squarefree & M\u00f6bius arithmetic",
+      "label": "Squarefree & Möbius arithmetic",
       "color": "#d6ae80",
       "description": "Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.",
       "modulePrefixes": [
@@ -4214,7 +4214,7 @@
       "id": "hilbert",
       "label": "Hilbert inequalities & sampling",
       "color": "#a6b7db",
-      "description": "The attributed Montgomery\u2013Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.",
+      "description": "The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.",
       "modulePrefixes": [
         "MontgomeryVaughan",
         "MontgomeryTaylor",
@@ -5117,11 +5117,109 @@
     "SemiprimePrimeSieve": "semiprime",
     "SemiprimeBitProductSort": "semiprime",
     "SemiprimeBitPrimeScan": "semiprime",
+    "SemiprimeCompanionCenterSpectrum": "semiprime",
+    "SemiprimeAffineRowRoots": "semiprime",
+    "SemiprimeCenteredOffsetExtractor": "semiprime",
+    "SemiprimeAnchoredRowAreas": "semiprime",
+    "SemiprimeRowAreaSpectrum": "semiprime",
+    "SemiprimeSameResidueAreas": "semiprime",
+    "SemiprimeAffinePointAreas": "semiprime",
+    "SemiprimeQuadraticPointJets": "semiprime",
+    "SemiprimeLiteralQuadraticRoots": "semiprime",
+    "SemiprimeLiteralRootControl": "semiprime",
+    "SemiprimeAffineProjectionObstruction": "semiprime",
+    "SemiprimeSymmetricRowAxes": "semiprime",
+    "SemiprimeRowPartnerOffsets": "semiprime",
+    "SemiprimePartnerRecoveryObstruction": "semiprime",
+    "SemiprimeIndexIntegrality": "semiprime",
+    "SemiprimeDenseRowCoverage": "semiprime",
+    "SemiprimeDenseRowCarries": "semiprime",
+    "SemiprimeDenseLoopObstruction": "semiprime",
+    "SemiprimeDenseCarryBoundary": "semiprime",
+    "SemiprimeDenseEuclidDescent": "semiprime",
+    "SemiprimeDenseRatioObstruction": "semiprime",
+    "SemiprimeDensePeriodForcing": "semiprime",
+    "SemiprimeWideWrapCoverage": "semiprime",
+    "SemiprimeWrapIndexRecovery": "semiprime",
+    "SemiprimeHyperbolicWrapCoverage": "semiprime",
+    "SemiprimeMergedIndexAcquisition": "semiprime",
+    "SemiprimeBitGcd": "semiprime",
+    "SemiprimeForcedRowSeparation": "semiprime",
+    "SemiprimeGlobalPhaseCancellation": "semiprime",
+    "SemiprimePhaseSumRecovery": "semiprime",
+    "SemiprimeSeedSumAcquisition": "semiprime",
+    "SemiprimeSeedPointRigidity": "semiprime",
+    "SemiprimeSeedHermiteQuotient": "semiprime",
+    "SemiprimeSeedGeometricRecurrence": "semiprime",
+    "SemiprimeSeedFiniteTransfer": "semiprime",
+    "SemiprimeSeedShiftClosureObstruction": "semiprime",
+    "SemiprimeAdaptiveSeedAcquisitionObstruction": "semiprime",
+    "SemiprimeSeedLinearStateObstruction": "semiprime",
+    "SemiprimeSeedMovingCarrierObstruction": "semiprime",
+    "SemiprimeSeedMomentCancellationObstruction": "semiprime",
+    "SemiprimeSeedMomentPrefixRigidity": "semiprime",
+    "SemiprimeSeedMomentPoleRetention": "semiprime",
+    "SemiprimeSeedMomentPeriodGapObstruction": "semiprime",
+    "SemiprimeBitInverse": "semiprime",
+    "SemiprimeIndexLattice": "semiprime",
+    "SemiprimeIndexEnumeration": "semiprime",
+    "SemiprimeIndexReader": "semiprime",
+    "SemiprimeSeedLazyJets": "semiprime",
+    "SemiprimeBitIndexRoots": "semiprime",
+    "SemiprimeBitIndexFactors": "semiprime",
+    "SemiprimeBitIndexBasis": "semiprime",
+    "SemiprimeBitIndexClipping": "semiprime",
+    "SemiprimeBitIndexGeometry": "semiprime",
+    "SemiprimeBitIndexTraversal": "semiprime",
+    "SemiprimeBitGeometricCoefficients": "semiprime",
+    "SemiprimeBitGeometricMarks": "semiprime",
+    "SemiprimeBitGeometricEvaluation": "semiprime",
+    "SemiprimeBitFermatArithmetic": "semiprime",
+    "SemiprimeBitFermatTransform": "semiprime",
+    "SemiprimeBitFermatInterpolation": "semiprime",
     "SemiprimeTotientWindow": "semiprime",
     "SemiprimeWindowConstruction": "semiprime",
     "SemiprimeWindowInverse": "semiprime",
     "SemiprimeWindowSqrt": "semiprime",
-    "SemiprimeCompanionCenterSpectrum": "semiprime"
+    "ZetaRieszCeilingAdaptiveFejer": "arithmetic",
+    "ZetaRieszCeilingAllHeightMultiplicity": "arithmetic",
+    "ZetaRieszCeilingClusterPowerAudit": "arithmetic",
+    "ZetaRieszCeilingDensityAudit": "arithmetic",
+    "ZetaRieszCeilingEulerJetAudit": "arithmetic",
+    "ZetaRieszCeilingFejerBalance": "arithmetic",
+    "ZetaRieszCeilingFejerCluster": "arithmetic",
+    "ZetaRieszCeilingGaussianBudgetAudit": "arithmetic",
+    "ZetaRieszCeilingGaussianMultiplicity": "arithmetic",
+    "ZetaRieszCeilingHeadCompletionAudit": "arithmetic",
+    "ZetaRieszCeilingIntegerAudit": "arithmetic",
+    "ZetaRieszCeilingJointKernelAudit": "arithmetic",
+    "ZetaRieszCeilingMomentIsolation": "arithmetic",
+    "ZetaRieszCeilingOrderCancellation": "arithmetic",
+    "ZetaRieszCeilingPhaseAverage": "arithmetic",
+    "ZetaRieszCeilingPrimeThinningAudit": "arithmetic",
+    "ZetaRieszCeilingSharpMultiplicity": "arithmetic",
+    "ZetaRieszCeilingSignedCluster": "arithmetic",
+    "ZetaRieszCeilingSparseArithmetic": "arithmetic",
+    "ZetaRieszCeilingSublinearHeight": "arithmetic",
+    "ZetaRieszCeilingWholeHeightBound": "arithmetic",
+    "ZetaRieszJoinedPairSignCover": "arithmetic",
+    "ZetaRieszJoinedPhaseRadius": "arithmetic",
+    "ZetaRieszJoinedSourceError": "arithmetic",
+    "ZetaRieszPairFloorAllMultiplicity": "arithmetic",
+    "ZetaRieszPairJointQuadratic": "arithmetic",
+    "ZetaRieszPairLowOrderPayment": "arithmetic",
+    "ZetaRieszPairPhaseCreditGrowth": "arithmetic",
+    "ZetaRieszPairPhaseRecurrence": "arithmetic",
+    "ZetaRieszPairPrefixConvolution": "arithmetic",
+    "ZetaRieszPairPrefixPayment": "arithmetic",
+    "ZetaRieszPairPrimePowerPayment": "arithmetic",
+    "ZetaRieszPairWholeCompletion": "arithmetic",
+    "ZetaRieszPositiveDensityAudit": "arithmetic",
+    "ZetaRieszSelbergAdjacentOrders": "arithmetic",
+    "ZetaRieszSelbergMaskCancellation": "arithmetic",
+    "ZetaRieszSelbergRenewalAudit": "arithmetic",
+    "ZetaRieszSelbergSignedBoundary": "arithmetic",
+    "ZetaRieszSelbergSourceAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -5645,11 +5743,11 @@
       "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
     },
     "RiemannGaussian.GaussianStripProfile.source_lower": {
-      "label": "Gaussian source \u2265 152000",
+      "label": "Gaussian source ≥ 152000",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianStripExplicit.gaussian_source_le_budget": {
-      "label": "Actual source \u2264 full budget",
+      "label": "Actual source ≤ full budget",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianStripPhaseFamily.source_add_mixedWork_le_exactBudget": {
@@ -5661,7 +5759,7 @@
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianSmoothedIdentity.complex_identity": {
-      "label": "Exact complex Gaussian\u2013Euler identity",
+      "label": "Exact complex Gaussian–Euler identity",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianSmoothedIdentity.prime_add_selected_le": {
@@ -5786,7 +5884,7 @@
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
     "RiemannGaussian.ZetaGaussianAllHeight.selected_source_lower": {
-      "label": "A nearby zero costs \u2265 48000q",
+      "label": "A nearby zero costs ≥ 48000q",
       "overview": true,
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
@@ -5796,7 +5894,7 @@
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
     "RiemannGaussian.ZetaGaussianScaledBandBudget.budget_le": {
-      "label": "Complete scaled cost \u2264 47500q",
+      "label": "Complete scaled cost ≤ 47500q",
       "overview": true,
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
@@ -6118,7 +6216,7 @@
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.VaughanLogAverage.riesz_reflection": {
-      "label": "Divisor reflection retains full M\u00f6bius parity",
+      "label": "Divisor reflection retains full Möbius parity",
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.VaughanLogAverage.riesz_opposite_edges": {
@@ -6134,7 +6232,7 @@
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.ZetaGaussianExpandedCost.budget_le": {
-      "label": "Complete paid cost for q \u2265 9/100",
+      "label": "Complete paid cost for q ≥ 9/100",
       "overview": true,
       "family": "heat",
       "documentation": "docs/zeta-gaussian-region-union.md"
@@ -6158,7 +6256,7 @@
       "documentation": "docs/zeta-gaussian-region-union.md"
     },
     "RiemannGaussian.ZetaGaussianRegionUnion.tenfold_previous_le": {
-      "label": "At least tenfold width for 1 \u2264 L \u2264 64",
+      "label": "At least tenfold width for 1 ≤ L ≤ 64",
       "overview": true,
       "family": "region",
       "documentation": "docs/zeta-gaussian-region-union.md"
@@ -6288,7 +6386,7 @@
       "overview": true
     },
     "RiemannGaussian.VinogradovMomentReduction.two_holder_bound": {
-      "label": "Two H\u00f6lder steps retain joint support and explicit phase weights",
+      "label": "Two Hölder steps retain joint support and explicit phase weights",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     },
@@ -7803,12 +7901,12 @@
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_strip": {
-      "label": "Proved Vinogradov\u2013Korobov region at both edges",
+      "label": "Proved Vinogradov–Korobov region at both edges",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_union": {
-      "label": "Complete explicit, log-log and Vinogradov\u2013Korobov union",
+      "label": "Complete explicit, log-log and Vinogradov–Korobov union",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
@@ -8289,7 +8387,7 @@
     },
     "RiemannGaussian.RosserSchoenfeldZetaTwo.log_derivative_upper": {
       "label": "Actual logarithmic derivative at two",
-      "summary": "Unconditionally, -Re(zeta\u2032(2)/zeta(2)) < 569960994/10^9. The finite sample, analytic tail, derivative error and exact zeta(2) value are all proved.",
+      "summary": "Unconditionally, -Re(zeta′(2)/zeta(2)) < 569960994/10^9. The finite sample, analytic tail, derivative error and exact zeta(2) value are all proved.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     },
@@ -9076,7 +9174,7 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszIntersectingWindow.intersecting_layer_card_le": {
-      "label": "Checked Erd\u0151s\u2013Ko\u2013Rado on an arbitrary finite prime universe",
+      "label": "Checked Erdős–Ko–Rado on an arbitrary finite prime universe",
       "documentation": "docs/zeta-riesz-intersecting-window.md",
       "overview": true
     },
@@ -9264,13 +9362,13 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPositiveFiveBudget.eventually_norm_mass": {
-      "label": "Literal positive-five debit \u2264 1/10000",
+      "label": "Literal positive-five debit ≤ 1/10000",
       "documentation": "docs/zeta-riesz-positive-five-payment.md",
       "summary": "Actual reciprocal prime windows with the exact cofactor endpoint, original allocation and every inherited mask.",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszJointPositiveFiveBounds.eventually_period_norm_mass": {
-      "label": "Complete-period debit \u2264 half the old surplus",
+      "label": "Complete-period debit ≤ half the old surplus",
       "documentation": "docs/zeta-riesz-positive-five-payment.md",
       "summary": "Includes every phase boundary and the original radial kernel. No prime-density or zero assumption.",
       "overview": true

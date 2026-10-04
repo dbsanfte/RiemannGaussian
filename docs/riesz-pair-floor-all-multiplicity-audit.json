@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Endgame simplification: unchanged retained-pair target suffices for every analytic multiplicity; no arithmetic saving",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "focusedProofCheck": {
+    "module": "RiemannGaussian/ZetaRieszPairFloorAllMultiplicity.lean",
+    "script": "scripts/CheckRieszPairFloorAllMultiplicity.lean",
+    "publicMathematicalTheorems": 7,
+    "theoremsIncludingPrivateHelpers": 8,
+    "strictLeafPassed": true,
+    "namespaceLintPassed": true,
+    "onlyStandardAxioms": true,
+    "rootRegisteredByThisSlice": false
+  },
+  "checkedEndpoints": {
+    "literalCarrier": "Existing prefixPairDefect, unchanged",
+    "exactSource": "m^2*(1-retainedCost u)",
+    "sourceErrorPayment": "Existing whole-source error, completion and single square budgets",
+    "simpleZeroAssumption": false,
+    "everyAnalyticMultiplicityRetained": true,
+    "cofinalOrderSequence": "Any orders tending to infinity, including the native dyadic sequence",
+    "unchangedUpperBound": "399/5000 plus a vanishing additive error",
+    "upperBoundIsExplicitUnprovedPremise": true,
+    "separateCeilingRequiredIfThisPrefixTargetProved": false,
+    "olderWholeCarrierCeilingStillUnproved": true,
+    "prefixPremiseSilentlyEquatedToOlderWholeCarrierFloor": false,
+    "candidateRegionConditionalOnly": "Re rho >=19999/20000",
+    "rightmostAssumption": false,
+    "exposedSelection": "Existing valid single controlled source-disk successor theorem",
+    "genericMixedModeRightwardChainUsed": false,
+    "heightAbove54DerivedFromExistingProof": true,
+    "newCarrierOrChangedMasks": false
+  },
+  "numericalRegression": {
+    "script": "scripts/probe_riesz_pair_multiplicity_margin.py",
+    "classification": "Source-side scalar and factorial-index regression, not prime data",
+    "precisionDigits": 100,
+    "sourceLimitRows": 24,
+    "directOriginalSlotChecks": 12,
+    "finitePureSelectedRows": 16,
+    "primeOrZetaSamples": 0,
+    "exactIntegerFactorialCutoffsRetained": true,
+    "movingLengthFloorErrorLabelled": true,
+    "literalPrimeCarrierSampled": false,
+    "numericalProofUsed": false,
+    "firstCrossingOrEntryOrderCertified": false,
+    "simpleSourceMarginUnchanged": "0.00007179703494417790743531418361815 at the radius ceiling"
+  },
+  "validation": {
+    "priorAudits": 18,
+    "priorPinsValidatedBeforeGuideUpdate": 324,
+    "priorPinsValidatedAfterGuideUpdate": 324,
+    "guideAndDependentOwnedPinsRefreshed": 36,
+    "priorProofAndProbeSnapshotsPreserved": true,
+    "foreignFilesEditedByThisSlice": false,
+    "concurrentForeignChangesObserved": [],
+    "concurrentForeignChangesRestoredOrOverwritten": false,
+    "widerGatesRun": false
+  },
+  "remaining": [
+    "The independent cofinal signed 399/5000 upper bound for the actual retained prefix pair sum."
+  ],
+  "newAllMultiplicityConditionalEndpoint": true,
+  "newIndependentArithmeticFloorBound": false,
+  "newSelectedResidueSaving": false,
+  "newZeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairFloorAllMultiplicity.lean",
+      "sha256": "e93169708cdd20b7d7b6a5568824390b9f6bfe38e02ef42af83e96048bf677a0"
+    },
+    {
+      "path": "scripts/CheckRieszPairFloorAllMultiplicity.lean",
+      "sha256": "7201beb90bcdbf20526427571c27fd9718d398c4868b544b78eaba7bbbeec5d8"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_multiplicity_margin.py",
+      "sha256": "ed5bf2bdf499ade3c1732b7b50dba94eb0a42f32e500bef933faeb2dcf1b88d1"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-floor-all-multiplicity.md",
+      "sha256": "355a7e97f6f357a1365cd4f9ed0182a7510cab921e209158fb09f4621e1a7838"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedSourceError.lean",
+      "sha256": "be23befdec2997b608cd036c59daf0e82cb47ba725f08817010788945f27ca34"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedZero.lean",
+      "sha256": "f3f0537336cc76859a92473dff8a955c655c59673cfa13ba6347a17e764dc013"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszShiftedCenter.lean",
+      "sha256": "c97f4641edba8985cc4c2cca409b9db489eb601539a02913bd90d29622fc751e"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_renewal.py",
+      "sha256": "f0c161909c1e358bda78e6e51871aa995a6185c31448764371a0e735c7b433b6"
+    },
+    {
+      "path": "docs/riesz-joined-source-error-audit.json",
+      "sha256": "e2f87921ab33146ddc7e03679e23a87775a2e30997887e17b0eec22edd4bca45"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/leaf-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/proof-check.log",
+      "sha256": "df60ebe9a08597af8c87fcbe4db9c2cc0bb000ea74166f4f5d9ec94776830ec2"
+    },
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/axioms.json",
+      "sha256": "5fdc7dd461bc4287af8cfe5143d0b4f605dc53b8df88611a3a09fa176df3becd"
+    },
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/margin-probe.json",
+      "sha256": "ac54ee4a72d37ea5972798fcf1ed4c925d194dc76bbcdcd8736f2866e2164cdd"
+    },
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/prior-pins.json",
+      "sha256": "f33f4c7a2d8b4505b70f26bd183c0aa4336868329b3ece3e5be9cf0b32036f7b"
+    },
+    {
+      "path": ".lake/riesz-pair-floor-all-multiplicity/prior-pins-refreshed.json",
+      "sha256": "76469112040cd7733f9b03460fcf9b465c2c712970ab7f34e0ce93f32fefc814"
+    }
+  ]
+}

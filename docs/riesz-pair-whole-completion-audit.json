@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent geometric payment of the entire literal symmetric pair completion boundary",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairLowOrderPayment.lean",
+      "sha256": "df25ad4de808c8379d098968c2fa1c910abaad18e903883629783787599aabda"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7"
+    },
+    {
+      "path": "RiemannGaussian/ZetaArithmeticLogWindow.lean",
+      "sha256": "6d3237cd495d7705835bca47313f35faba30d1927aba0e5c023bdcbac312d487"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLargeOrderCore.lean",
+      "sha256": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszHeadOrders.lean",
+      "sha256": "55f3b1489920b49a55c98697c8e42e778baa96c76042ecd1a224e2c23c8ac4c3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerMaximal.lean",
+      "sha256": "3efd2a5e3e8bfb17f4fb16f5655a48f737d6b5c62582714d5d106e7dbc107f8e"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalCentralPayment.lean",
+      "sha256": "2ea8ae3e6ee1aece32e239031d33eccd1e02521a3974df6943197b07edc278d9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalBulkPayment.lean",
+      "sha256": "846f02cdd9c59f3c91ece585120fe633ed212f8c68e82609d28d5f4040d042d6"
+    },
+    {
+      "path": "scripts/CheckRieszPairWholeCompletion.lean",
+      "sha256": "9d50af96459d4ad3768d94d10915eead611163fb2840c2a9fef0330adf72cf81"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_whole_completion.py",
+      "sha256": "f64a37851da8f256b2d6fcbd213edde885d43ff498ad8103333f05a5f83c7e22"
+    },
+    {
+      "path": "scripts/check_riesz_pair_whole_completion.py",
+      "sha256": "be58db22fd4d813a3c8d16ba0cd7a4d8496483e19ed3c97aac89dbb6c31d3d3f"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-whole-completion.md",
+      "sha256": "ccb0bf632efe0e9432d759ea0704530108c058d8c27eead5cabaf00ce575654e"
+    },
+    {
+      "path": "docs/riesz-pair-low-order-payment-audit.json",
+      "sha256": "301b4cace92b5883792baf7b603e2121029d12405064b351008ce3243a20ebfc"
+    },
+    {
+      "path": "docs/riesz-pair-prefix-convolution-audit.json",
+      "sha256": "7a2ebf1c0326f863555ffd1afdb3b80b82f9b0d70ccd44edd173a25ea2ade698"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-whole-completion/build.log",
+      "sha256": "a3a08dc9a91e52b017afcc19df94890520d8913025afcfa4eee2293c3dedff78"
+    },
+    {
+      "path": ".lake/riesz-pair-whole-completion/proof-check.log",
+      "sha256": "8e8b2b8b4f4ae68fd4527187ef71bbeb0bf77df04ce9d0fcb3f7702c87656efb"
+    },
+    {
+      "path": ".lake/riesz-pair-whole-completion/axioms.json",
+      "sha256": "a34c329834f5a614de08d522833ace25dee56ace9276ed7b22ec102257bf148e"
+    },
+    {
+      "path": ".lake/riesz-pair-whole-completion/probe.json",
+      "sha256": "9559f2c88a4c4735cb1f9e00d66d93238410f4e4ac436f158b72e7b97190c1e0"
+    },
+    {
+      "path": ".lake/riesz-pair-whole-completion/validation.json",
+      "sha256": "b1769f121b3e968d66821dce80c45ca8f1391d610be83e38c568fcf8ccf354aa"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairWholeCompletion",
+    "publicTheorems": 17,
+    "proofDeclarationsAudited": 51,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "independentEstimate": "exists_whole_pair_completion_bound",
+    "exactCompletedQuadratic": "finitePrefixPairDefect_eq_joined",
+    "nativeOriginalFloorLedger": "exists_native_whole_pair_payment_simple",
+    "rootRegistered": false
+  },
+  "payment": {
+    "literalSupport": "Original nonprime complete-period joined labels with exact symmetric prefix and radial endpoint flag",
+    "completion": "All distinct ordinary-prime products in every sufficiently large exhaustive finite prime prefix, at fixed N",
+    "addedLabelsHaveEmptyStrictInterior": true,
+    "physicalShareMaskAbsentFromSymmetricPrefix": true,
+    "sourceScaledBudget": "C*exp(-N/1000000)",
+    "constantUniformIn": [
+      "u",
+      "y",
+      "N",
+      "primePrefixCutoff"
+    ],
+    "constantNumericallyPriced": false,
+    "NLowerBound": 65536,
+    "radius": "1/2<=u<=10001/20000",
+    "height": "54<=abs(y)",
+    "zeroHypothesisUsed": false,
+    "successorKernelPaidByFixedPolynomial": "X",
+    "successorKernelKeepsOrderNWindow": true,
+    "radialFlagPaidExplicitly": true,
+    "retainedSignedCentralMainNormed": false,
+    "bareCofactorCompletionUsed": false,
+    "separateMaskedLegPhaseTransferUsed": false,
+    "orderZeroDiscarded": false,
+    "squareDiagonalRetainedOnce": true,
+    "oldErrorBudgetsSpentOnce": true
+  },
+  "validation": {
+    "exactRationalCoefficientChecks": 469,
+    "finitePrimeCases": 36,
+    "allSampledOrdersBelowFormalThreshold": true,
+    "finiteRegressionIsExhaustiveLiteralPopulation": false,
+    "regressionLength": "7*(N+1)/5; generic positive-length algebra only",
+    "independentPhaseAndDecimalTiltReplayPassed": true,
+    "maxIndependentReplayError": 5.802891220742409e-87,
+    "optionalOutsideNormalCI": true,
+    "tiltDiagnostics": [
+      {
+        "radialSlope": "1.971",
+        "exponent": "-0.0000059602890288498580287506241983749680980175056570869082205600001936793512562433393"
+      },
+      {
+        "radialSlope": "2.029",
+        "exponent": "-0.0000039218159343102055846874331043269227402580094022159483099452337884946322395318413"
+      }
+    ],
+    "floorCredit": 0
+  },
+  "remaining": [
+    "Independent one-sided 399/5000 bound for the complete signed central/logged pair convolution with Selberg retained.",
+    "Keep all coupled products and the square diagonal together; the completion theorem does not bound the selected resonance.",
+    "The earlier physical low-order deletion retains its own exact support and must not be spent twice or extended without proof.",
+    "The higher-multiplicity ceiling remains open."
+  ],
+  "fullSignedMainBoundProved": false,
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "localOnly": true,
+  "committed": false,
+  "pushed": false
+}

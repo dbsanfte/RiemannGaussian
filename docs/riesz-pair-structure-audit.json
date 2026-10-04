@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Local actual-prime numerical structure detection; independent floor open",
+  "target": "Re literalPairDefect <=399/5000+o(1) on the native cofinal orders",
+  "radius": {
+    "numerator": 10001,
+    "denominator": 20000
+  },
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_pair_structure.py",
+      "sha256": "e5d57b2d58e9b4a47079854e98b948412bcc8c90f31f9506ec5224123983522e"
+    },
+    {
+      "path": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_prime_sampling.py",
+      "sha256": "d19402fc2ebf20cf7b8021b35520a7cd60793e5006e1cf7877b004a031ff1e7d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPolynomialPairPayment.lean",
+      "sha256": "df12df4daabfa594f0e23d85ad1aef6931418df230a1ab6693b6b32ef31dbaa1"
+    }
+  ],
+  "documentationAndPolicySources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52883643d58d62ca201df23ed4fe81a3d6456115f7e8f994652fa318731dfe1b"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-structure-detector.md",
+      "sha256": "15138387e1b247bff9f48e1a85b68e0ba6bfab4991be02b73aacd8953eef0f5c"
+    }
+  ],
+  "independentRegressionSources": [
+    {
+      "path": "scripts/probe_riesz_low_count_period_coupling.py",
+      "sha256": "bfde88d20137783cc79e5ae4fa9ba7dfd2381278512d7111f12138fe26e91740"
+    },
+    {
+      "path": "scripts/probe_riesz_signed_selberg_coupling.py",
+      "sha256": "312cbcc7fc8187095002f66e0e03be63959934212701f040787fd8ca940bbd18"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-structure/scan.json",
+      "sha256": "9809ed1e6f25210e0cd37570effce7771b50ef33c0bc01e70b2aad36026d64de"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.html",
+      "sha256": "d0c504c305808ec21192cb01712773e0c6859405b8970ab9ae748ea79e7decde"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/browser-check.json",
+      "sha256": "7cc19cd03b11d411b8bc6e1f2dc3465ac024b7eea02d676092044448c05ffff6"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/viewer-1400.png",
+      "sha256": "31b2591f572b6b901f2ea15dc45d03c3d95e576d64370e7a7f2a32f175187a44"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/viewer-390.png",
+      "sha256": "8edd9dc0c35ad4123a1bc7964a5c39ef8a6e82403152f1e51f6d4f5e7527d042"
+    }
+  ],
+  "coverage": {
+    "exhaustiveCentralPairs": [
+      {
+        "N": 6,
+        "allCentralDistinctPairsBeforeCompletePeriods": 12367
+      },
+      {
+        "N": 7,
+        "allCentralDistinctPairsBeforeCompletePeriods": 97714
+      },
+      {
+        "N": 8,
+        "allCentralDistinctPairsBeforeCompletePeriods": 763194
+      }
+    ],
+    "totalExhaustiveCentralPairs": 873275,
+    "exhaustiveHeightCases": 12,
+    "sampledOrder": 256,
+    "sampledBoxes": 16,
+    "sampledProvenPrimeInstances": 768,
+    "primalityMethod": "FLINT proven primality; no Lean certificates",
+    "marginalSize": 24,
+    "seeds": [
+      731,
+      732
+    ],
+    "discoveryHeights": [
+      54,
+      65
+    ],
+    "heldOutHeights": [
+      100,
+      142
+    ],
+    "sampledPhaseCases": 64,
+    "joinedPartialPacketCases": 8,
+    "sampledWholePopulationCovered": false,
+    "sampledSmallerPrimesAboveNPower16": true,
+    "earlyOrderPaymentRemoved": false
+  },
+  "finiteObservations": {
+    "joinedCoefficientSignPeriodEstimatedPriceReductionRange": [
+      0.12490595090906964,
+      0.4608179810922092
+    ],
+    "exhaustiveAtomToPeriodPriceReductionRange": [
+      0.9806641921065848,
+      0.9985926199680205
+    ],
+    "sampledCoefficientMatrixRankOneEnergyRange": [
+      0.9973495741855132,
+      0.9999999972895953
+    ],
+    "signedCompressionRemainderLargerThanActualSignedValueCases": 0,
+    "sameHeightAcrossSeedReplicatedPermutationCandidates": [],
+    "allMarginalEmpiricalIntervalsIncludeZero": true,
+    "allJoinedPartialPacketEmpiricalIntervalsIncludeZero": true,
+    "noCofinalRateImplied": true,
+    "compressionInteriorBoxesDoNotTestPeriodEdgeCrossings": true
+  },
+  "validation": {
+    "pythonSyntaxParsed": true,
+    "sourceAndSamplePinsVerified": true,
+    "independentDivisorFactorialAndCoverageChecks": {
+      "independentDivisorFactorialComparisons": 15,
+      "zeroJoinedNonzeroDefectGuard": true,
+      "exhaustiveCoverageOracles": [
+        {
+          "N": 3,
+          "labels": 19,
+          "independentCoverageEquality": true
+        },
+        {
+          "N": 4,
+          "labels": 181,
+          "independentCoverageEquality": true
+        },
+        {
+          "N": 5,
+          "labels": 1516,
+          "independentCoverageEquality": true
+        }
+      ]
+    },
+    "previousOrder6EvaluatorComparison": [
+      {
+        "height": 54.0,
+        "absoluteComplexDifference": 1.0100602772991377e-17
+      },
+      {
+        "height": 65.0,
+        "absoluteComplexDifference": 1.527061931459365e-17
+      },
+      {
+        "height": 100.0,
+        "absoluteComplexDifference": 1.260004987417115e-17
+      },
+      {
+        "height": 142.0,
+        "absoluteComplexDifference": 2.4384782518354833e-17
+      }
+    ],
+    "zeroJoinedNonzeroDefectRetained": true,
+    "sampledCompressionFullSupportMaskCasesChecked": 64,
+    "sampledInteriorBoxesEntirelyInsideCompletePeriodSupport": true,
+    "interactiveBrowser": {
+      "rows": [
+        {
+          "width": 1400,
+          "views": [
+            {
+              "view": "joint",
+              "bars": 64,
+              "orders": 1
+            },
+            {
+              "view": "sample",
+              "bars": 16,
+              "orders": 1
+            },
+            {
+              "view": "exact",
+              "bars": 32,
+              "orders": 3
+            }
+          ],
+          "errors": [],
+          "horizontalOverflow": false,
+          "joinedHoverSeedAndBinCorrect": true,
+          "screenshot": ".lake/riesz-pair-structure/viewer-1400.png"
+        },
+        {
+          "width": 390,
+          "views": [
+            {
+              "view": "joint",
+              "bars": 64,
+              "orders": 1
+            },
+            {
+              "view": "sample",
+              "bars": 16,
+              "orders": 1
+            },
+            {
+              "view": "exact",
+              "bars": 32,
+              "orders": 3
+            }
+          ],
+          "errors": [],
+          "horizontalOverflow": false,
+          "joinedHoverSeedAndBinCorrect": true,
+          "screenshot": ".lake/riesz-pair-structure/viewer-390.png"
+        }
+      ]
+    },
+    "screenshotVisuallyInspected": ".lake/riesz-pair-structure/viewer-1400.png",
+    "scopedWhitespaceCheck": "passed",
+    "leanChangedByThisSlice": false,
+    "widerBuildsRunByThisSlice": false,
+    "rendererOnlyUpdate": {
+      "numericalProducerScriptSha256": "504cb7b0c1f8a772acf9573a01330f602ed746c40de4f8ff23d496184d8c9594",
+      "numericalFunctionBodiesUnchanged": true,
+      "reason": "Correct share-bin and seed attribution on joined-view hover metadata"
+    }
+  },
+  "inferenceLimits": {
+    "floatingWeightsNotCertifiedEnclosures": true,
+    "stoppedSampleCountsEstimatedNotCertified": true,
+    "cartesianPairsNotIndependentSamples": true,
+    "bootstrapIntervalsEmpiricalNotConfidenceCertificates": true,
+    "permutationReferenceDoesNotPreserveLiteralCarrier": true,
+    "noHypotheticalOffCriticalZeroHeightUsed": true,
+    "separateCompleteLegLimitTransferred": false,
+    "paidSectorCreditRespent": false,
+    "sourceScaleSavingCredited": 0,
+    "independentCofinalBoundProved": false,
+    "zeroExclusionProved": false,
+    "RHClaim": false
+  },
+  "nextMathematicalTarget": "Control the leading signed weighted prime marginals with the literal masks or obtain a joint mass/phase comparison of favorable and dangerous share bands; retain unsampled support explicitly.",
+  "workflow": {
+    "requestedNumericalDiscoveryStrategyRecorded": "AGENTS.md#numerical-discovery-at-robust-obstructions",
+    "optionalOutsideOrdinaryBuildAndCI": true,
+    "changesRemainLocal": true,
+    "publicFrontierUnchangedByThisSlice": true
+  },
+  "atlasPolicyExtension": {
+    "date": "2026-10-03",
+    "policyAndDocumentationRefreshed": true,
+    "numericalSourcesAndArtifactsUnchanged": true,
+    "note": "Add actual-prime arithmetic/phase/topology atlas workflow and cross-link; no floor credit",
+    "atlasNote": "docs/zeta-riesz-prime-atlas.md"
+  },
+  "documentationMaintenance": {
+    "date": "2026-10-03",
+    "reason": "Refresh discovery-policy pins for the pair-correlation follow-up and link to its height-coverage correction; original numerical and Lean findings/artifacts unchanged.",
+    "followup": "docs/zeta-riesz-pair-correlations.md",
+    "jointDetectorPolicyAdded": true
+  }
+}

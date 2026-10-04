@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Actual-prime fixed-order phase recurrence; supporting negative result, no arithmetic floor saving",
+  "target": "Independent cofinal fixed-height Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPhaseRecurrence.lean",
+      "sha256": "5c3b22e9dd88af7fa45809c83de368d28787c91cfdb66c1662d7c4f0969c9b0d"
+    },
+    {
+      "path": "scripts/CheckRieszPairPhaseRecurrence.lean",
+      "sha256": "6da806b51e1b8dd8d74bbdf6cbc6a9b6d141ba942f5f945e7552ff29730beab7"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_phase_recurrence.py",
+      "sha256": "15e7c24c7f110e8a5761a916a8bf4327f033a93db4f167c9f9145076155b1c47"
+    },
+    {
+      "path": "scripts/check_riesz_pair_phase_recurrence.py",
+      "sha256": "ed4737cd9333c483f3e6c2cd25eef85efbff0697ae480e8a39cbf38e34f01db1"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-phase-recurrence.md",
+      "sha256": "1ad1b2add8967b671e8dca698e2aa751a0508ecbca5329f77db289bb98acd72a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "docs/riesz-pair-source-resolution-audit.json",
+      "sha256": "803da45cecf8fb037b973817b3121d559d2927dd4968a393d72fb5696f26f5d6"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/audit.log",
+      "sha256": "6039198406f1ff2bf1f2cbb2f2760fbf55da8a5f1e9c57cbb3210fe61255e79d"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/axioms.json",
+      "sha256": "ff7e33a83deb77a941ee69e01e7a4deaa0e5884ecace91f82f4597ff0841a9e6"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/scan.json",
+      "sha256": "d197230d207903831095216196c9df26fa555b8bae513ad4a14761d87150ea6a"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/validation.json",
+      "sha256": "561b774751f6d246ca1dd26c9e89a460e3392f7399d05af87d4c183892b26e6c"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/prior-pins.json",
+      "sha256": "3ced254cd6b4b9b210a9aeaa64ef78d76b0cb9974cabcc6e67b8111f50e562d3"
+    },
+    {
+      "path": ".lake/riesz-pair-phase-recurrence/prior-pins-refreshed.json",
+      "sha256": "c221acefad67aaeefe924899f623d9746ef99cdbb620697957aa9499f3e9a116"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/new-primes.json",
+      "sha256": "c7c05118c164c1749676322a00b075e586d0e87e3067d3cd190395cea3039355"
+    }
+  ],
+  "checks": {
+    "strictFocusedLeafBuildPassed": true,
+    "namespaceLintersPassed": 14,
+    "publicTheorems": 11,
+    "allTheoremsIncludingGeneratedAudited": 15,
+    "onlyStandardTransitiveAxioms": true,
+    "numericalProducerImportsInChecker": false,
+    "frozenPrimeSamplingOrPrimalitySearchRerun": false,
+    "genuineFrozenPrimesReplayed": 8,
+    "literalUnorderedPairsReplayed": 28,
+    "originalFourSlotsAndOneDiagonalReplayed": true,
+    "priorPinsRevalidated": 364,
+    "guideAndDependentOwnedAuditPinUpdates": 42,
+    "oldProofOrProbeArtifactsChanged": false,
+    "concurrentSemiprimeOrPublicFilesChangedByThisSlice": false,
+    "foreignFilesRevalidated": 385,
+    "rootImportsChanged": false,
+    "broaderGatesOrCIExecuted": false,
+    "commitOrPushPerformed": false
+  },
+  "scope": {
+    "allIntegerLogarithmsRecurPointwise": true,
+    "completeOrdinaryPrimePopulationAtEveryFixedOrder": true,
+    "sameHeightSequenceWorksForEveryFixedOrder": true,
+    "fixedHeightCofinalOrderTargetTestedOrRefuted": false,
+    "literalHeightDependentMasksTransferred": false,
+    "independentFloorProved": false,
+    "newArithmeticFloorSaving": false,
+    "newZeroExclusion": false
+  }
+}

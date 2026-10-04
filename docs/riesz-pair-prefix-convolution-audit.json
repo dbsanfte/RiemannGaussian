@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Exact finite convolution with endpoint cancellation; algebraic detector preflight; no floor credit",
+  "target": "Re prefixPairDefect <=399/5000+o(1), independently and cofinally",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimePairConvolution.lean",
+      "sha256": "a3dbc92d6d5b82c80f12d12e5397a2665a3db00cbb9bd9fedc5f49201db60dc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSkewFactorial.lean",
+      "sha256": "723ff1dc18828a215e616c43f090f7ab41b12ff0dba62f7af0418fa6437d1843"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_algebra.py",
+      "sha256": "8e3f65652973a4eaa6144b0e5065bf7d4a8659c263ad2b725925d55877115188"
+    },
+    {
+      "path": "scripts/check_riesz_pair_algebra.py",
+      "sha256": "6b8e5b47101b4e2dc9b47a521692eacf04a4ce8872c5a429adb5fdd4dfbcf8d5"
+    },
+    {
+      "path": "scripts/CheckRieszPairPrefixConvolution.lean",
+      "sha256": "51567f3e3e5eb15910f23688b9c1c53bc39b3254903d10b2b2a8016a55112386"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_joint.py",
+      "sha256": "8820d01be2ec734def67326d7957dbeefd2e2ec1d7856668b42bd9a4131dba3c"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-prefix-convolution.md",
+      "sha256": "4b06475b13a1d8b6b2b470efdb091628a02ded6ef2717088065323482a2c9d7e"
+    },
+    {
+      "path": "docs/zeta-riesz-joint-pair-detector.md",
+      "sha256": "54bf6765471a589d3f6ee9a119d516cebaf9cf7ca4d5d2aa438cb7de2f12847f"
+    },
+    {
+      "path": "docs/riesz-pair-prefix-payment-audit.json",
+      "sha256": "c57a69891620ba2a117d880cddfad051ed612cd6394e346ff79dedf4e385ef29"
+    },
+    {
+      "path": "docs/riesz-joint-pair-detector-audit.json",
+      "sha256": "6ac471ccdaee0f588c778b0bd22ade0a79a767d89482f3e4e02052abbdff8e30"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-algebra/preflight.json",
+      "sha256": "3860aebb0261e0e5f04ecb74ccf2e51e559d2371bb11f2d3e162185e9361e0e7"
+    },
+    {
+      "path": ".lake/riesz-pair-algebra/validation.json",
+      "sha256": "7c10a5cb4db68e84ffefa10d811f33fb9c84d94d81de737b74766b4e8440c74d"
+    },
+    {
+      "path": ".lake/riesz-pair-algebra/axioms.json",
+      "sha256": "5e8de554e514adbe7f958353232759119a1348c73aa9db44896b282bfcee760b"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/scan.json",
+      "sha256": "a909235ba15095065130d4f31449a7277ef201c0d2b65033b8c08c5559bcd031"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairPrefixConvolution",
+    "publicTheorems": 15,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "allProofDeclarationsChecked": 49,
+    "onlyStandardAxioms": true,
+    "terminalTheorem": "RiemannGaussian.ZetaRieszPairPrefixConvolution.unordered_prefix_eq_central_sub_diagonal",
+    "literalPairTheorem": "RiemannGaussian.ZetaRieszPairPrefixConvolution.prefix_atom_eq_central_logged",
+    "rootRegistered": false
+  },
+  "exactCancellation": {
+    "genericCondition": "2*K<M; L!=0",
+    "repoOrders": "M=N+1, K=floor(13N/32)",
+    "allOrderZeroEndpointsCancel": true,
+    "lowOrdersNotDeletedByNorm": true,
+    "bothComplexPrimePhasesRetained": true,
+    "wholeRepeatedPrimeDiagonalSubtractedOnce": true,
+    "pointwiseCancellationPreservesEveryCommonLiteralMask": true,
+    "endpointCancellationRequiresPrimeCompletion": false,
+    "literalPopulationNotCompleted": true
+  },
+  "detector": {
+    "exactCases": 204,
+    "bookkeepingBeforeStatistics": true,
+    "differentMasksRemainUnmatched": true,
+    "originalRieszHeadCorrectionPiecesIndividuallyRecorded": true,
+    "factorialIndicesAndSwappedIncidencesRetained": true,
+    "literalCoverage": {
+      "boxes": 50,
+      "sampledPairIncidences": 48256,
+      "orders": [
+        256,
+        640,
+        1536
+      ],
+      "literalPhaseHeights": [
+        "100"
+      ],
+      "optionalSurvivorScanHeight": "100",
+      "regressionHeightAlreadyCoveredByZeroFreeRegions": true
+    },
+    "independentPrimeCoefficientRows": 50,
+    "independentFactorialRows": 200,
+    "survivorStatisticalHandoffs": [
+      {
+        "N": 256,
+        "seed": 731,
+        "height": "100",
+        "matchedFrequencyOffsets": 129,
+        "maxJoinedCurveDifference": 1.7277845820728999e-15,
+        "targetUnchanged": true
+      },
+      {
+        "N": 256,
+        "seed": 732,
+        "height": "100",
+        "matchedFrequencyOffsets": 129,
+        "maxJoinedCurveDifference": 1.0928757898653885e-15,
+        "targetUnchanged": true
+      },
+      {
+        "N": 640,
+        "seed": 731,
+        "height": "100",
+        "matchedFrequencyOffsets": 129,
+        "maxJoinedCurveDifference": 1.797173521111972e-15,
+        "targetUnchanged": true
+      },
+      {
+        "N": 640,
+        "seed": 732,
+        "height": "100",
+        "matchedFrequencyOffsets": 129,
+        "maxJoinedCurveDifference": 5.995204332975845e-15,
+        "targetUnchanged": true
+      }
+    ],
+    "maxFloatingCoefficientReplayError": 2.1373125491663814e-11,
+    "independentReplayPassed": true,
+    "optionalOutsideNormalCI": true
+  },
+  "remaining": [
+    "The endpoint identity already applies pointwise under the literal masks. A completion/boundary bridge is required only to factor the surviving masked kernels into complete prime moments.",
+    "Bound the surviving central convolutions and logged lower-order term JOINTLY with original corrections.",
+    "The independent cofinal 399/5000 upper bound and multiplicity ceiling remain open."
+  ],
+  "cofinalFloorCredit": 0,
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "literature": [
+    {
+      "title": "Series of Reciprocal Powers of k-almost Primes",
+      "url": "https://arxiv.org/abs/0803.0900",
+      "use": "Classical complete prime-zeta product identities, not a bound for the literal signed target."
+    }
+  ]
+}

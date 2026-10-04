@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent joined upper inequality with global 9/11 central coefficient-price saving; numerical ceiling remains open",
+  "activeObjective": "Bound the ceiling",
+  "unchangedIndependentTarget": "Cofinal Re(u^(N+1)*joinedPhysical)<=42/25+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszCeilingOrderCancellation.lean",
+      "sha256": "bf51d39b1edfbdd1aafd75397225bddf3667a374ad441dd6a58a7ac8ec61bf61"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszNearCriticalCountPayment.lean",
+      "sha256": "8810fa87303bbc9b759480a0de6650b97a4f028ace98db47d85df9e12bd3739c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGammaJoint.lean",
+      "sha256": "68ef5d3b0c14a2632b765e59e25f6340860b0bca30fd48662f5fa92d67944adc"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "scripts/CheckRieszCeilingOrderCancellation.lean",
+      "sha256": "fc3e2009c45939eac1f0c9455f840441848e87e13db5c009a6454859d4ddaffa"
+    },
+    {
+      "path": "scripts/probe_riesz_ceiling_order_cancellation.py",
+      "sha256": "ab6029dfe80b042017a2b960cfaa9fef686f1425d71ab61006c416a745888326"
+    },
+    {
+      "path": "scripts/check_riesz_ceiling_order_cancellation.py",
+      "sha256": "0e8d2a3738159586a5717cc0689796d847cdcfbcbab8ce725220dfa065e7510f"
+    },
+    {
+      "path": "docs/zeta-riesz-ceiling-order-cancellation.md",
+      "sha256": "024a1d329c477ff617ff8c2a369dfbd3ba8524a6bc67d76c3c467745196c41f5"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/build-result.json",
+      "sha256": "34011b099d70b7a81452e0d611602af2184aa4936f70a69f2c02255cb32c6f76"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/proof-check.log",
+      "sha256": "fe9ee40a8e5be2c07d3223e047fc6b5a09a5c00cf486dc719118ef118d24a78a"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/axioms.json",
+      "sha256": "57b078cdcd5c730eeafebb467b1cf7d7ed7891bcfdc1d4571e66aff983bb10a7"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/probe.json",
+      "sha256": "f3e48da2d3844e8bb5c1bb44ee8c91fe97aa69f8affb424dc4905ddcd5582fb9"
+    },
+    {
+      "path": ".lake/riesz-ceiling-order-cancellation/validation.json",
+      "sha256": "d23f756cbfd03a38389228056db421cb567e905c09a0610d63cc2ffed0505c6a"
+    }
+  ],
+  "checkedTheorems": {
+    "exactTraceCancellation": "complete_selberg_join",
+    "signedAdjacentOrderInequality": "central_adjacent_signed_upper",
+    "contractedCoefficientInequality": "adjacent_coefficient_price",
+    "wholeNativeUpperInequality": "eventually_native_ceiling_central_saving",
+    "actualEndgameUpperInequality": "eventually_joinedPhysical_ceiling",
+    "paidMaskBudgetLimit": "physicalCeilingBudget_tendsto",
+    "adjacentDifferenceLimit": "centralStepMass_tendsto"
+  },
+  "concreteCentralSaving": {
+    "coefficientPriceFraction": "2/11",
+    "priceReduction": "9/11",
+    "relativeTo": "Separate pricing of the two common central factorial orders ONLY",
+    "fixedNumericalCeilingSavingCertified": false,
+    "originalMovingLengthRetained": true,
+    "lambdaBounds": "1<=lambda<=13/9 at N>=65536",
+    "allSwappedOrdersAndOneDiagonalRetained": true,
+    "allCountsJoined": true,
+    "lowLoggedOrdersRetained": true,
+    "noSourceZeroHypothesisInArithmeticUpperInequality": true
+  },
+  "verification": {
+    "leafCompileExitCode": 0,
+    "namespaceLinters": 14,
+    "allNamespaceLintersPass": true,
+    "theoremsIncludingPrivateAndAutomaticHelpers": 49,
+    "onlyStandardAxioms": true,
+    "exactRationalCases": 378,
+    "independentCoefficientChecks": 47820,
+    "finiteGenuinePrimeReplays": 12,
+    "worstRelativeRawReplayError": "2.63418811697e-65",
+    "finitePrimeReplaysBelowNativeProofThreshold": true,
+    "syntheticSelectedSourceRegressions": 12
+  },
+  "unpaid": [
+    "Joint real contribution of the ordinary-prime term, combined central products and exterior prefix",
+    "Independent cofinal ceiling42/25 at uncovered fixed heights"
+  ],
+  "scope": {
+    "localOnly": true,
+    "rootRegistered": false,
+    "widerChecksRun": false,
+    "subagentsUsed": false,
+    "committed": false,
+    "pushed": false,
+    "ceilingsProvedAtTarget": false,
+    "newZeroExclusion": false,
+    "priorPositiveAndNoGoAuditsPreserved": true,
+    "concurrentSemiprimeSourcesAndReadmeMetadataEdited": false
+  },
+  "limitations": [
+    "The9/11 fraction is not a fraction of progress on the full contradiction gap.",
+    "The adjacent-order difference is retained and paid, never silently replaced by zero.",
+    "The complete Selberg source is not simple-zero paid at multiplicity>=2.",
+    "Selected constant-array regressions still tend above1.68 and give no independent arithmetic bound.",
+    "Ordinary-prime and exterior products remain signed; no termwise full-core absolute budget is proposed."
+  ]
+}

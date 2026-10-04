@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Local actual-prime arithmetic/phase/topology atlas; independent floor remains open",
+  "target": "Re literalPairDefect <=399/5000+o(1) on native cofinal orders",
+  "radius": {
+    "numerator": 10001,
+    "denominator": 20000
+  },
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_prime_atlas.py",
+      "sha256": "8c321c92aa15ac22085af9e30e182c9e0f093b363e08d1ece8643a6df4425737"
+    },
+    {
+      "path": "docs/zeta-riesz-prime-atlas.md",
+      "sha256": "9f3447eda76eab9c7dfdfe9ca35f0bb7062c2bedd55f43ca5494b60076eabf74"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    },
+    {
+      "path": "docs/riesz-pair-structure-audit.json",
+      "sha256": "e97b9646ec2a090b23f0613f0a93e174b26b2200d6985002c12d977cbb89ba8d"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.json",
+      "sha256": "9809ed1e6f25210e0cd37570effce7771b50ef33c0bc01e70b2aad36026d64de"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_structure.py",
+      "sha256": "e5d57b2d58e9b4a47079854e98b948412bcc8c90f31f9506ec5224123983522e"
+    },
+    {
+      "path": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_prime_sampling.py",
+      "sha256": "d19402fc2ebf20cf7b8021b35520a7cd60793e5006e1cf7877b004a031ff1e7d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPolynomialPairPayment.lean",
+      "sha256": "df12df4daabfa594f0e23d85ad1aef6931418df230a1ab6693b6b32ef31dbaa1"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/atlas.neighbours.json",
+      "sha256": "b034b4b5d6e31ecf35ae00195015f384ed411b06601243cd86b2991d3c64b91a"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-prime-atlas/atlas.json",
+      "sha256": "d82d7435d766681b15d45cd9a96d8f7bf5fb6c048ef7045e19bc052f7a268143"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/atlas.html",
+      "sha256": "277202dd224e4ef13b935233fd9091ea5d4f18c833666d97162ee24db47355df"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/atlas.neighbours.json",
+      "sha256": "b034b4b5d6e31ecf35ae00195015f384ed411b06601243cd86b2991d3c64b91a"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/data-check.json",
+      "sha256": "37161f9bf7e17185eb42064fb0a1b9b9e82b8ef6969e79c9ae8a26e40effdb62"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/projection-audit.json",
+      "sha256": "05d50779c074bf4d0a409c5e2f195d5d429b6c649480f8efbe4a8737ee9c2a70"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/browser-check.json",
+      "sha256": "83ecfd0a9a5e2545a55cbd5b0f55ea70c47f2c1870582f3872a65a9ad9bcf664"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/check_viewer.py",
+      "sha256": "16e035d1472734f93e05cbc06da02b956255c70c8e1ebd9664decae8474e2ba1"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/viewer-1400.png",
+      "sha256": "571f0760850c4ab92673dde16ac596eb7e0328277c6b0375ba7efd9b33bd87d5"
+    },
+    {
+      "path": ".lake/riesz-prime-atlas/viewer-390.png",
+      "sha256": "6be9c98953546724b24ec70e2ccd3a8defb4bc2a31001bfdb34ced7689d0bf4d"
+    }
+  ],
+  "coverage": {
+    "sampledOrders": [
+      256
+    ],
+    "seeds": [
+      731,
+      732
+    ],
+    "discoveryHeights": [
+      54,
+      65
+    ],
+    "heldOutHeights": [
+      100,
+      142
+    ],
+    "distinctActualPrimes": 768,
+    "pairIncidencesPerHeight": 9216,
+    "sampleBoxes": 16,
+    "literalCaseReplays": 64,
+    "arithmeticFeatures": 90,
+    "scalarInteractions": 435,
+    "structuralGraphVertices": 768,
+    "structuralGraphEdges": 5140,
+    "structuralGraphComponents": 1,
+    "provenNeighbourAnchors": 32,
+    "provenConsecutivePrimeGaps": 64,
+    "primeFactorisationTrialLimit": 257,
+    "sampleNotWholePopulation": true,
+    "interiorBoxesDoNotTestPeriodEdges": true
+  },
+  "finiteObservations": {
+    "featureMaxStatisticFlagsAt005": 0,
+    "sameHeightSeedReplications": [],
+    "discoveryAndHeldOutReplications": [],
+    "graphAgreementFlagsAt005": 0,
+    "projectionInterpretation": {
+      "classification": "Descriptive attribution of the structural projection; no phase bound",
+      "sources": [
+        {
+          "path": ".lake/riesz-prime-atlas/atlas.json",
+          "sha256": "d82d7435d766681b15d45cd9a96d8f7bf5fb6c048ef7045e19bc052f7a268143"
+        },
+        {
+          "path": "scripts/probe_riesz_prime_atlas.py",
+          "sha256": "8c321c92aa15ac22085af9e30e182c9e0f093b363e08d1ece8643a6df4425737"
+        }
+      ],
+      "axes": [
+        {
+          "projection": 1,
+          "squaredFeatureEnergyFraction": 0.10298226125769375,
+          "largestFeatureCorrelations": [
+            {
+              "feature": "minus.smallPartSquarefulExcess",
+              "correlation": 0.7878416649228573
+            },
+            {
+              "feature": "minus.knownDivisorLog",
+              "correlation": 0.7617392609425768
+            },
+            {
+              "feature": "v2(p-1)",
+              "correlation": 0.7347572907016471
+            },
+            {
+              "feature": "p mod 8 = 1",
+              "correlation": 0.7328829356138955
+            },
+            {
+              "feature": "plus.knownDivisorLog",
+              "correlation": -0.699860213372009
+            },
+            {
+              "feature": "plus.smallPartSquarefulExcess",
+              "correlation": -0.6369969565201372
+            },
+            {
+              "feature": "minus.knownLogPart",
+              "correlation": 0.5546241161309474
+            },
+            {
+              "feature": "v2(p+1)",
+              "correlation": -0.5377917510333421
+            }
+          ]
+        },
+        {
+          "projection": 2,
+          "squaredFeatureEnergyFraction": 0.08556204962843778,
+          "largestFeatureCorrelations": [
+            {
+              "feature": "Legendre(2/p)",
+              "correlation": -0.9417898569070542
+            },
+            {
+              "feature": "p mod 8 = 7",
+              "correlation": -0.7656465775402155
+            },
+            {
+              "feature": "v2(p+1)",
+              "correlation": -0.5929661851934196
+            },
+            {
+              "feature": "p mod 8 = 5",
+              "correlation": 0.5670949014779622
+            },
+            {
+              "feature": "plus.smallPartSquarefulExcess",
+              "correlation": -0.545641328290379
+            },
+            {
+              "feature": "p mod 8 = 3",
+              "correlation": 0.5231009736632788
+            },
+            {
+              "feature": "p mod 8 = 1",
+              "correlation": -0.3223966530306267
+            },
+            {
+              "feature": "plus.knownDivisorLog",
+              "correlation": -0.26785195209932533
+            }
+          ]
+        }
+      ],
+      "knownTwoAdicRelationsVerifiedOnAllSampledPrimes": true,
+      "residuesMod8": {
+        "3": 211,
+        "7": 192,
+        "1": 191,
+        "5": 174
+      },
+      "doesNotAssertNewMathematics": true,
+      "cofinalFloorCredit": 0
+    },
+    "permutationsPerSeedHeightTarget": 255
+  },
+  "validation": {
+    "dataChecks": {
+      "exactSmallFactorReconstruction": true,
+      "quadraticCharacterRegression": true,
+      "provenPrimeNeighbourRegression": true,
+      "geometryProjectionRegression": true,
+      "statisticalTestsAreDiagnostics": true,
+      "allSourceAndSamplePinsMatch": true,
+      "all1536PartialFactorReconstructions": true,
+      "allResidueRecordsMatch": true,
+      "all64ConsecutivePrimeNeighboursRevalidated": true,
+      "intermediateOddCompositesChecked": 8375,
+      "independent100DigitPhaseComparisons": 128,
+      "maxIndependentPhaseDifference": 7.362894619624496e-17,
+      "positiveArbRadiusBoundsWithoutBinary64Underflow": true,
+      "structuralGraphFiltrationCycleRanksValidated": true,
+      "MSTEdgeCountValidated": true,
+      "allSignedCommunityLedgersReconstruct": true,
+      "literalCaseReplays": 64,
+      "maxLiteralChargeReplayDifference": 5.561946577567963e-17,
+      "independentPhaseCheckCoversEverySeedBoxLegBlock": true
+    },
+    "browserChecks": [
+      {
+        "viewportWidth": 1400,
+        "pageErrors": [],
+        "horizontalOverflow": false,
+        "allCoordinateViews": true,
+        "heightSeedRoleControls": true,
+        "allColours": true,
+        "primeHoverAndSelection": true,
+        "pairSelectionAndLegInspection": true,
+        "zoomAndReset": true,
+        "passed": true
+      },
+      {
+        "viewportWidth": 390,
+        "pageErrors": [],
+        "horizontalOverflow": false,
+        "allCoordinateViews": true,
+        "heightSeedRoleControls": true,
+        "allColours": true,
+        "primeHoverAndSelection": true,
+        "pairSelectionAndLegInspection": true,
+        "zoomAndReset": true,
+        "passed": true
+      }
+    ],
+    "rendererOnlyUpdate": {
+      "originalProducerSHA256": "412c622211bded669a963578f95b7902cefbebcc0ae9aa2c697457f28b16362f",
+      "numericalFunctionBodiesUnchanged": true,
+      "reason": "Constrain the statistics card on narrow mobile viewports"
+    },
+    "onlyFocusedNumericalAndViewerChecks": true,
+    "newLeanTheorems": 0,
+    "widerBuildAndPublicationChecksNotRun": true
+  },
+  "scope": {
+    "actualPrimes": true,
+    "sampleBoxesNotFullPopulation": true,
+    "originalCoefficientAllocationPhysicalAndPeriodMasksRetained": true,
+    "allSelectedSmallerPrimesAbovePolynomialPaidRange": true,
+    "primalityMethod": "FLINT, inherited and replayed; no Lean certificates",
+    "factorisationOfPMinusPlusOne": "Partial trial division through 257; residual not declared prime",
+    "structuralGraphExcludesPhaseOutcomeSizeSeedAndRole": true,
+    "phaseColourIsNotRepositoryPrimePowerColour": true,
+    "pairIncidencesNotIndependentSamples": true,
+    "populationScaledChargesAreEstimatedPartialPopulationOnly": true,
+    "phaseDeterministicGivenLog": true,
+    "statisticsAreExploratory": true,
+    "cofinalFloorCredit": 0,
+    "buildAndOrdinaryCIIntegration": false
+  },
+  "cofinalFloorCredit": 0,
+  "independentFloorProved": false,
+  "zeroExclusionProved": false,
+  "committedOrPushed": false,
+  "documentationMaintenance": {
+    "date": "2026-10-03",
+    "reason": "Refresh discovery-policy pins for the pair-correlation follow-up and link to its height-coverage correction; original numerical and Lean findings/artifacts unchanged.",
+    "followup": "docs/zeta-riesz-pair-correlations.md",
+    "jointDetectorPolicyAdded": true
+  }
+}

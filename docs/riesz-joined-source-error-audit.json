@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Conditional quantitative whole-sum source-error payment; no independent floor saving",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "focusedProofCheck": {
+    "module": "RiemannGaussian/ZetaRieszJoinedSourceError.lean",
+    "script": "scripts/CheckRieszJoinedSourceError.lean",
+    "publicMathematicalTheorems": 8,
+    "theoremsIncludingPrivateHelpers": 14,
+    "strictLeafPassed": true,
+    "namespaceLintPassed": true,
+    "onlyStandardAxioms": true,
+    "rootRegisteredByThisSlice": false
+  },
+  "provedEstimate": {
+    "hypotheses": "Existing exposed right-half-zero hypotheses; u<=10001/20000. Literal bridge also uses abs(Im rho)>=54.",
+    "sourceErrorMass": "D_rho = tsum k, norm(ordinaryArray u (Im rho) k + analyticZetaZeroMultiplicity rho)",
+    "sourceErrorAbsolutelySummable": true,
+    "sourceErrorMajorantChannels": [
+      "competing direct modes",
+      "reflected error channels",
+      "zeta pole",
+      "analytic Cauchy residual",
+      "proper prime powers"
+    ],
+    "allLoggedOrdersRetained": true,
+    "allAnalyticMultiplicitiesRetained": true,
+    "simpleZeroAssumption": false,
+    "separateArrayBoundAssumption": false,
+    "joinedErrorPrice": "22*(m+D_rho)*D_rho/N for N>=65536",
+    "literalMain": "Existing prefixPairDefect",
+    "literalErrorPrice": "wholeCompletionBudget N + squareBudget u N + 22*(m+D_rho)*D_rho/N",
+    "twoSidedRealErrorControl": true,
+    "priceTendsToZero": true,
+    "selectedSourceEvaluationRetained": true,
+    "hardShareCompleteLegTransferUsed": false,
+    "properPowerPriceSpentAgain": false,
+    "numericalSizeOfActualErrorMassCertified": false
+  },
+  "numericalRegression": {
+    "script": "scripts/probe_riesz_joined_source_error.py",
+    "classification": "Synthetic finite-error algebra regression, not prime data",
+    "precisionDigits": 100,
+    "cases": 20,
+    "directOriginalSlotChecks": 8,
+    "primeOrZetaSamples": 0,
+    "exactComplementaryIndicesRetained": true,
+    "swappedTraceIncidencesRetained": true,
+    "lowOrderChannelsRetained": true,
+    "movingLengthFloorErrorLabelled": true,
+    "unknownActualSourceMassAssignedNumericalValue": false,
+    "universalCorrectionSignInferred": false,
+    "numericalProofUsed": false
+  },
+  "validation": {
+    "priorAudits": 17,
+    "priorPinsValidatedBeforeGuideUpdate": 303,
+    "priorPinsValidatedAfterGuideUpdate": 303,
+    "guideAndDependentOwnedPinsRefreshed": 33,
+    "priorProofAndProbeSnapshotsPreserved": true,
+    "foreignFilesEditedByThisSlice": false,
+    "concurrentForeignChangesObserved": [
+      "RiemannGaussian.lean",
+      "docs/theorem-explorer/metadata.json"
+    ],
+    "concurrentForeignChangesRestoredOrOverwritten": false,
+    "widerGatesRun": false
+  },
+  "remaining": [
+    "Independent signed estimate for the selected arithmetic residue at uncovered heights.",
+    "Higher-multiplicity ceiling."
+  ],
+  "newConditionalSourceErrorBound": true,
+  "newIndependentArithmeticFloorBound": false,
+  "newSelectedResidueSaving": false,
+  "newZeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedSourceError.lean",
+      "sha256": "be23befdec2997b608cd036c59daf0e82cb47ba725f08817010788945f27ca34"
+    },
+    {
+      "path": "scripts/CheckRieszJoinedSourceError.lean",
+      "sha256": "3b335d317499185bdf999f0d7751b7d2ebc0949e0a9f15d3cd6d1b5f935b37fb"
+    },
+    {
+      "path": "scripts/probe_riesz_joined_source_error.py",
+      "sha256": "ecd20b01fbb2fa7ef84e7b39db18b2880dd46017b2c2eb0aba7805af83670a96"
+    },
+    {
+      "path": "docs/zeta-riesz-joined-source-error.md",
+      "sha256": "3c1c2a97bb4d880288091b632386b5d40040853a98fa43fee503ff6f4cb9f9bd"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedMovingModes.lean",
+      "sha256": "4117441a295edf867ff0acdbb60fac95e42c115a637ba07641e0d78164bed336"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedPrimeFilter.lean",
+      "sha256": "58a1174b3303be823157c26bad7b55ef7225163825dc399b380974ad5ee175d8"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedPrimeMoments.lean",
+      "sha256": "67f7ce41450a7121ed5be4c44b0f8ad63ba463ce833de949cea56b1dc7398294"
+    },
+    {
+      "path": "RiemannGaussian/ZetaCanonicalMoments.lean",
+      "sha256": "c3bbe301b8df1ee9bb1587b35b3c3d3d498cca98c1db66a93d49cf4546560b46"
+    },
+    {
+      "path": "RiemannGaussian/ZetaZeroModeFilter.lean",
+      "sha256": "41dfbeb0cf67c6db51d274671bc7a8dd441edea96323467dc2899685984c43a7"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_renewal.py",
+      "sha256": "f0c161909c1e358bda78e6e51871aa995a6185c31448764371a0e735c7b433b6"
+    },
+    {
+      "path": "docs/riesz-pair-prime-power-payment-audit.json",
+      "sha256": "1d2888f5fa6a0d213844be11bfceaf7e981af1d42101daa0971c57a77bbecfc3"
+    },
+    {
+      "path": "docs/riesz-joined-phase-radius-audit.json",
+      "sha256": "7356201f72c327da39c7f5184a2d875de851205253d5b706c5d0164b6d3dfb02"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-joined-source-error/leaf-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-joined-source-error/proof-check.log",
+      "sha256": "09135be2695a85cbff356fea4ff4bd338d02c7b9a4db0ba8b37a96d2d6ad938d"
+    },
+    {
+      "path": ".lake/riesz-joined-source-error/axioms.json",
+      "sha256": "546fd4895a3fc272aa51cf5a17ce532ecb32e86fabf7161e0664976a0627049b"
+    },
+    {
+      "path": ".lake/riesz-joined-source-error/regression.json",
+      "sha256": "4c94580b00b4ed4db4718be37a0740f1dd3b5d63396dbfd6064060f13533ee5d"
+    },
+    {
+      "path": ".lake/riesz-joined-source-error/prior-pins.json",
+      "sha256": "42d367fa2d13d6aa25190924925b79c5614fcee3dc71bae17abc52316c6b8155"
+    },
+    {
+      "path": ".lake/riesz-joined-source-error/prior-pins-refreshed.json",
+      "sha256": "f9ceeaec361120da5823cae9a77a1c8a63ce7146ab1e65dbdcd639593deaccd1"
+    }
+  ]
+}

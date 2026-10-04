@@ -11,22 +11,22 @@
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
-      "branch": "riesz-harmonic-cost",
-      "statement": "Bound the surviving signed prime-pair defect after joined Selberg cancellation and polynomial-cofactor payment. On 1/2<u<=0.50005, an independent cofinal 399/5000+o(1) upper bound closes the simple exposed-zero floor. The pair bound and higher-multiplicity ceiling remain open.",
-      "changeReason": "The all-count and allocation payments now reduce the simple exposed-zero floor to the literal signed pair defect with a vanishing explicit budget. Joined Selberg cancellation is paid on the same support; balanced pairs still need an independent estimate."
+      "branch": "riesz-joint-floor-ceiling",
+      "statement": "Bound the original joined signed carrier on 1/2<u<=0.50005: a cofinal -399/5000 floor excludes simple exposed sources, and a 42/25 ceiling excludes higher multiplicities. Keep the balanced pair and its complement joined. Both independent constant bounds remain open.",
+      "changeReason": "The accumulated pair-source and multiplicity audits make both independent joint inequalities explicit. Exact same-mask adjacent-order cancellation and improved height-dependent ceilings do not supply either constant endgame bound."
     },
     "latestUpdate": {
-      "sequence": 145,
-      "id": "signed-pair-payments-and-complete-semiprime-checkpoint",
+      "sequence": 146,
+      "id": "masked-selberg-ceiling-and-semiprime-checkpoint",
       "kind": "theorem",
-      "title": "Signed Selberg and polynomial-cofactor payments checked; balanced pairs remain open.",
-      "body": "The combined tree includes all local RH and semiprime modules, proof audits and optional probes. Under simple exposure, the joined Selberg prime/pair expression is paid on the literal support; polynomial-small pair cofactors are also paid. Neither result bounds the surviving balanced-pair aggregate by 0.0798. Failed sampling and dilation tests receive no floor credit.",
-      "next": "Prove an independent cofinal signed upper bound 399/5000+o(1) for the remaining pair defect. The 0.000071797 source-to-target difference is a contradiction margin, not a remaining-error estimate.",
+      "title": "Masked Selberg cancellation and height-dependent ceilings published.",
+      "body": "All 98 new Riesz and semiprime proof modules, audits and optional probes are included. The adjacent-order identity retains the literal masks; a test-height theorem joins divergent balanced and complement terms. A sublinear height price improves the whole ceiling, while the constant floor and ceiling remain open.",
+      "next": "Prove an independent signed estimate for the selected source with the whole complement retained. No new zero exclusion or constant-ceiling credit is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPairDefectPaymentTheorem"
+        "rieszSublinearCeilingTheorem"
       ],
-      "documentation": "docs/zeta-riesz-signed-pair-checkpoint.md"
+      "documentation": "docs/zeta-riesz-october-checkpoint.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -7709,6 +7709,121 @@
         "rieszSignedNullFloorScope"
       ],
       "documentation": "docs/zeta-riesz-signed-null-gain.md"
+    },
+    {
+      "id": "masked-adjacent-orders",
+      "label": "Masked Selberg orders · exact adjacent identity",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdjacentAtomTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdjacentLedgerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdjacentPrimeOrdersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdjacentMaskPriceAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAdjacentScope"
+      ],
+      "documentation": "docs/zeta-riesz-selberg-adjacent-orders.md"
+    },
+    {
+      "id": "signed-mask-cancellation",
+      "label": "Signed mask cancellation · test height, source retained",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMaskJointIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMaskJointTestDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMaskSignedRestGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMaskSourceRadiusAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMaskJointScope"
+      ],
+      "documentation": "docs/zeta-riesz-selberg-mask-cancellation.md"
+    },
+    {
+      "id": "whole-pair-completion",
+      "label": "Whole pair completion · arbitrary-multiplicity source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholePairCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholePairSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholePairScope"
+      ],
+      "documentation": "docs/zeta-riesz-pair-whole-completion.md"
+    },
+    {
+      "id": "boundary-layer-simplicity",
+      "label": "Boundary layer · actual simplicity, shrinking width",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBoundarySimplicityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBoundaryCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszBoundarySimplicityScope"
+      ],
+      "documentation": "docs/zeta-riesz-ceiling-sharp-multiplicity.md"
+    },
+    {
+      "id": "height-dependent-ceiling",
+      "label": "Whole ceiling · sublinear height price, constant bound open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSublinearCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSublinearQuarterPriceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllDegreeCeilingPriceAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSublinearCeilingScope"
+      ],
+      "documentation": "docs/zeta-riesz-ceiling-sublinear-height.md"
     }
   ],
   "scopes": {

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Negative result for generic continuous Selberg positivity; no new ordinary-prime estimate or floor saving",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszSelbergRenewalAudit",
+    "publicTheorems": 15,
+    "proofDeclarationsAudited": 25,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "positiveSquareIdentity": "numerator_eq_squares",
+    "globalPositiveNumerator": "numerator_nonneg",
+    "exactRationalLogarithmicDerivative": "neg_logDeriv_countSymbol",
+    "genuineCommonPhaseMomentIntegrability": "phaseMoment_eq",
+    "sameArrayAtEveryFactorialOrder": "array_eq_phaseMoment",
+    "fullSelbergConvolutionPositiveKernel": "selbergKernel_nonneg",
+    "fullSelbergConvolutionIntegrableLaplaceIdentity": "selbergKernel_laplace",
+    "exactSelectedDoublePoleCancellation": "selberg_selected_double_pole_cancels",
+    "unitNegativeModelSource": "array_tendsto",
+    "normalizedTraceCancellation": "full_trace_tendsto",
+    "eventualGenericFailure": "eventually_joined_gt_target",
+    "cofinalGenericFailure": "cofinal_generic_floor_impossible",
+    "countTransformDistinction": "countSymbol_eq_one_add",
+    "countNormalizationDistinction": "count_normalization_mismatch"
+  },
+  "countertest": {
+    "continuousPositiveModelOnly": true,
+    "ordinaryPrimeMeasure": false,
+    "usesActualZetaZero": false,
+    "numerator": "exp(T)+exp((2-2u)T)-2exp((3/2-u)T)cos(yT)",
+    "density": "numerator/T, on T>0",
+    "samePhaseAtEveryOrder": true,
+    "allLoggedOrdersIncludingZeroRetained": true,
+    "fullConvolutionSymbol": "Z^2-Z_prime",
+    "selectedDoublePoleCoefficient": "0",
+    "weightedJoinedSource": "1-c_ret(u)>399/5000",
+    "literalIntegerMobiusCoefficientIdentityAsserted": false,
+    "extraRealPole": "2-2u",
+    "modelCountResidueLowerBound": "29160000",
+    "ordinaryIntegerCountResidue": "1",
+    "absenceOfExtraPoleUsedAsAFloorProof": false,
+    "countNormalizationAloneProvedSufficient": false,
+    "genericPositivityRouteRejected": true,
+    "literalIntegerSelbergRouteRejected": false
+  },
+  "numericalRegression": {
+    "script": "scripts/probe_riesz_selberg_renewal.py",
+    "decimalDigits": 100,
+    "literalPrimeSamples": 0,
+    "numericalProofUsed": false,
+    "originalFactorialSlotsBeforeStatisticalAnalysis": true,
+    "exactFactorialToHarmonicRegression": true,
+    "commonComplementaryIndices": true,
+    "geometricChannelTailSeparatedFromRoundoff": true,
+    "movingLengthFloorErrorLabelledAndBounded": true,
+    "firstThresholdCrossingCertified": false,
+    "entryOrderForLiteralPrimesCertified": false,
+    "sampledAboveTargetAtN": 425984,
+    "modelSourceAtCeiling": "0.07987179703494417790743531418361815",
+    "unchangedContradictionMarginNotProgress": "0.00007179703494417790743531418361814977",
+    "countResidueAtProbeEndpoint": "29160000.000025"
+  },
+  "literature": {
+    "primaryFormalSelbergProof": "https://isa-afp.org/browser_info/current/AFP/Prime_Distribution_Elementary/Selberg_Asymptotic_Formula.html",
+    "importedAsLeanEstimate": false,
+    "classicalO_xBoundIsFixedPowerSaving": false
+  },
+  "validation": {
+    "priorAuditPinsValidatedBeforeGuideUpdate": 267,
+    "priorAuditPinsValidatedAfterGuideUpdate": 267,
+    "guideAndDependentAuditPinsRefreshed": 29,
+    "priorProofAndNumericalSnapshotsPreserved": true,
+    "widerGatesRun": false
+  },
+  "remaining": [
+    "Independent signed weighted ordinary-prime/integer estimate for the actual central/successor residue at uncovered heights.",
+    "Higher-multiplicity ceiling."
+  ],
+  "newArithmeticEstimateProved": false,
+  "newFloorSaving": false,
+  "floorProvedAtAllHeights": false,
+  "newZeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergRenewalAudit.lean",
+      "sha256": "ac2e18b23653715f2a2285f947e06edb4fb0346a80406a8a770f16244be098e9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean",
+      "sha256": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelectedGamma.lean",
+      "sha256": "4c79c768ca014c2d2ab88f6e49ffc0f03e3f3d8b4ada830c908b9386753bf908"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLogarithmicConvolution.lean",
+      "sha256": "6b1d104fa1e1275bf0189d8576b376a4b60dd8f9b1420762032515610582c895"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "scripts/CheckRieszSelbergRenewalAudit.lean",
+      "sha256": "96e7e1a2eb0545a1e561eb5a68e1da920ad3c03ddc3035f0447b9556e3d292a9"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_renewal.py",
+      "sha256": "f0c161909c1e358bda78e6e51871aa995a6185c31448764371a0e735c7b433b6"
+    },
+    {
+      "path": "docs/zeta-riesz-selberg-renewal-audit.md",
+      "sha256": "8a4ea2a2d99fb474c9583ee8e89e243149638aa9ada80c8dc3ea2e15bf827f33"
+    },
+    {
+      "path": "docs/riesz-joined-phase-radius-audit.json",
+      "sha256": "7356201f72c327da39c7f5184a2d875de851205253d5b706c5d0164b6d3dfb02"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-selberg-renewal/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-selberg-renewal/proof-check.log",
+      "sha256": "5e499cbd90a81b6fea6afe7ce6ca33501ba88af6a56d80762891a33eef66fc9c"
+    },
+    {
+      "path": ".lake/riesz-selberg-renewal/axioms.json",
+      "sha256": "68183778de483e13f1373c290fb55a5eae79917233efeefdbfe2122b486f9a96"
+    },
+    {
+      "path": ".lake/riesz-selberg-renewal/renewal-probe.json",
+      "sha256": "bb05c4b5aca2172046870a5f3959fb9c33ff8e66c2d9c664d0abe0551d386836"
+    },
+    {
+      "path": ".lake/riesz-selberg-renewal/prior-pins.json",
+      "sha256": "3b3244c8194f864a7484f6eac42f195a3746904e01fa1f8a19d47800e1ee7d29"
+    },
+    {
+      "path": ".lake/riesz-selberg-renewal/prior-pins-refreshed.json",
+      "sha256": "bd9fd985c947d21f3d6a1b1abfe50d031cc5d7ddd27cce60b0f87f2165c248e1"
+    }
+  ]
+}

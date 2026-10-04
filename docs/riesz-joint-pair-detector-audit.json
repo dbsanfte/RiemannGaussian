@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Five joined literal-prime discovery tracks executed and independently replayed; no new floor credit",
+  "target": "Re prefixPairDefect <=399/5000+o(1), independently and cofinally",
+  "radius": "1/2 < u <=10001/20000",
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_pair_joint.py",
+      "sha256": "8820d01be2ec734def67326d7957dbeefd2e2ec1d7856668b42bd9a4131dba3c"
+    },
+    {
+      "path": "scripts/sample_riesz_pair_joint.py",
+      "sha256": "6f903edb14f11b4b7d13da572556587d09991618685e7ee55890a398905053ab"
+    },
+    {
+      "path": "scripts/check_riesz_pair_joint.py",
+      "sha256": "298b15cf147df18321730567e62792f5851533c25fadfb09248f8ed7d5c3a836"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_correlations.py",
+      "sha256": "a49db49b12cd8a6e7855dc2b028aed661ebfa0de38907e741de96a9617e8c54c"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_prefix.py",
+      "sha256": "a66324c006543c205622aba9dec7021ed801ac6d7d0fc553940b29ff48717e07"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_structure.py",
+      "sha256": "e5d57b2d58e9b4a47079854e98b948412bcc8c90f31f9506ec5224123983522e"
+    },
+    {
+      "path": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b"
+    },
+    {
+      "path": "scripts/probe_riesz_balanced_prime_sampling.py",
+      "sha256": "d19402fc2ebf20cf7b8021b35520a7cd60793e5006e1cf7877b004a031ff1e7d"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszGlobalPeriodEdgePayment.lean",
+      "sha256": "749ed98c30c229a28590d5fdc64fad234c4419cf5c04dbba9e9893504ea781e7"
+    },
+    {
+      "path": "docs/zero-free-regions/formulas.json",
+      "sha256": "c176f9ccaa02f0bb06ab9f1094b837e50f01b530d596fddedbfed5a4176c69c0"
+    },
+    {
+      "path": "docs/zeta-riesz-joint-pair-detector.md",
+      "sha256": "54bf6765471a589d3f6ee9a119d516cebaf9cf7ca4d5d2aa438cb7de2f12847f"
+    },
+    {
+      "path": "docs/riesz-pair-prefix-payment-audit.json",
+      "sha256": "c57a69891620ba2a117d880cddfad051ed612cd6394e346ff79dedf4e385ef29"
+    },
+    {
+      "path": "docs/riesz-pair-correlations-audit.json",
+      "sha256": "5a1ebe5265f5c4315f3ab54d23dd5752a7752f53a2b86b3348831520ffec015a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-joint/new-primes.json",
+      "sha256": "c7c05118c164c1749676322a00b075e586d0e87e3067d3cd190395cea3039355"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/scan.json",
+      "sha256": "a909235ba15095065130d4f31449a7277ef201c0d2b65033b8c08c5559bcd031"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/scan.html",
+      "sha256": "b2ccd5a6f86a6b2fc48d4249755233adfce3eba8ace8fae4480c53e42202e95b"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/validation.json",
+      "sha256": "16b077b5b0b7b242c905e6f84b971570c03417d5514b39b828fd24c3835bfe96"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/browser-check.json",
+      "sha256": "00dd1c1e70d92e617782e064b3fc95a3ee229d123da3e6c47bca29ae3688709d"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/check_viewer.py",
+      "sha256": "63310d4a05ae8a14c49a7e8b73e3a607ae71fceee95f3e295e296ebee22e0e3e"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/viewer-1400.png",
+      "sha256": "3485791766fb185c3319c20f7d2a336f978f4ad765f04cc5fee6b3e06a1a39ba"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/viewer-390.png",
+      "sha256": "5407e0e887821bca193213dd09d7c2c18be76a5f7fd2a2094e3a79e5bd3de933"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    },
+    {
+      "path": ".lake/riesz-balanced-prime-sampling/result.primes.json",
+      "sha256": "68da5ed81911894d8917068641c6dab712c63bc2be573c06fb88352fa75594b1"
+    }
+  ],
+  "coverage": {
+    "actualDistinctPrimes": 2080,
+    "actualSampledPairIncidences": 48256,
+    "broadBandSampledPairIncidences": 10240,
+    "orders": [
+      256,
+      640,
+      1536
+    ],
+    "boxes": 50,
+    "heights": [
+      "100",
+      "142",
+      "10^10000",
+      "10^20000"
+    ],
+    "phaseOffsets": 2049,
+    "phaseOffsetRange": [
+      -16,
+      16
+    ],
+    "dyadicPhaseOffsetStep": "1/64",
+    "factorialKernelAndMovingLengthRetained": true,
+    "polynomialSmallCofactorsSkipped": true,
+    "noPrimeDensityApproximation": true,
+    "noPopulationCompletion": true
+  },
+  "heightCoverage": [
+    {
+      "height": "100",
+      "logHeight": 4.605170185988092,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.0443519691486164,
+          "interval": "[0.04435196914861640396763979972596048634542453082145287644142706118932441270516 +/- 7.23e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.044686019045895774,
+          "interval": "[0.04468601904589577187010010689762162842062775299457407973355288545559787722855 +/- 6.81e-78]"
+        },
+        "gaussian": {
+          "mid": 0.027020341065087817,
+          "interval": "[0.02702034106508781776301850977080254164068033076953706659392064463562874461660 +/- 3.92e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.016902285534236606,
+          "interval": "[0.01690228553423660565980559113352149938548692531702713320882460171727578726171 +/- 1.77e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.015618275428894749,
+          "interval": "[0.01561827542889474888359561522345838166736935311637886090317612610996801893631 +/- 5.35e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.005809163161909145,
+          "interval": "[0.00580916316190914529102783205964402559473167956578107588278687217971845277802 +/- 2.28e-78]"
+        },
+        "vk-reported": {
+          "mid": 0.006110596949663839,
+          "interval": "[0.00611059694966383876697832182604238329212874217511572306143401334619235145743 +/- 4.49e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "142",
+      "logHeight": 4.955827057601261,
+      "widths": {
+        "classical-bty": {
+          "mid": 0.04121377998850771,
+          "interval": "[0.04121377998850771195345876722152508590110078857585306644684111608866802127418 +/- 4.17e-78]"
+        },
+        "classical-candidate": {
+          "mid": 0.04152419369134744,
+          "interval": "[0.04152419369134744160269459692895971119310809171242882111448617203155093883162 +/- 2.34e-78]"
+        },
+        "gaussian": {
+          "mid": 0.024795981247177648,
+          "interval": "[0.02479598124717764724919837649121524588430247023202432848994479580565324664803 +/- 5.89e-78]"
+        },
+        "littlewood-reported": {
+          "mid": 0.016461064525078294,
+          "interval": "[0.01646106452507829433170952487168209556139434146123106549176668190560123328537 +/- 2.11e-78]"
+        },
+        "littlewood-yang": {
+          "mid": 0.015210572504216839,
+          "interval": "[0.01521057250421683863741067573976370342931083593789636438319890260386644360472 +/- 3.07e-78]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 0.005445932934640879,
+          "interval": "[0.00544593293464087923780191617957737551857418961296885896986364079272771608246 +/- 3.99e-78]"
+        },
+        "vk-reported": {
+          "mid": 0.005728518936547449,
+          "interval": "[0.00572851893654744920838049632570893236277913003230951031960490957090899063726 +/- 2.18e-78]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": false,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^10000",
+      "logHeight": 23025.850929940458,
+      "widths": {
+        "classical-bty": {
+          "mid": 8.870393829723282e-06,
+          "interval": "[8.870393829723280793527959945192097269084906164290575288285412237864882541031e-6 +/- 5.01e-82]"
+        },
+        "classical-candidate": {
+          "mid": 8.937203809179155e-06,
+          "interval": "[8.937203809179154374020021379524325684125550598914815946710577091119575445711e-6 +/- 7.05e-82]"
+        },
+        "gaussian": {
+          "mid": 1.186023405292498e-05,
+          "interval": "[1.186023405292497998794737008925488394929876538627052233257892268155034599678e-5 +/- 3.30e-81]"
+        },
+        "littlewood-reported": {
+          "mid": 2.223351523292285e-05,
+          "interval": "[2.223351523292285020834369266745611931252964866451598453518781809510088533575e-5 +/- 6.39e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 2.0544509436723324e-05,
+          "interval": "[2.054450943672332318031852541494320448885375155643590715303466260188759809200e-5 +/- 4.91e-81]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 1.0603665136167977e-05,
+          "interval": "[1.060366513616797791765578213071336953777003611983573343135242336550152780831e-5 +/- 4.88e-81]"
+        },
+        "vk-reported": {
+          "mid": 1.1153882586942257e-05,
+          "interval": "[1.115388258694225709904719240722720702216075244673955878899018838002618830853e-5 +/- 5.98e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    },
+    {
+      "height": "10^20000",
+      "logHeight": 46051.701859880915,
+      "widths": {
+        "classical-bty": {
+          "mid": 4.435196914861641e-06,
+          "interval": "[4.435196914861640396763979972596048634542453082145287644142706118932441270515e-6 +/- 7.05e-82]"
+        },
+        "classical-candidate": {
+          "mid": 4.468601904589577e-06,
+          "interval": "[4.468601904589577187010010689762162842062775299457407973355288545559787722855e-6 +/- 6.07e-82]"
+        },
+        "gaussian": {
+          "mid": 8.871862780108459e-06,
+          "interval": "[8.87186278010845978590062115633931028858285713556818745227622274757486042156e-6 +/- 3.92e-81]"
+        },
+        "littlewood-reported": {
+          "mid": 1.1883908471874222e-05,
+          "interval": "[1.188390847187422121837607389418803169186163850519914553291100247549924029600e-5 +/- 2.96e-81]"
+        },
+        "littlewood-yang": {
+          "mid": 1.0981127688888628e-05,
+          "interval": "[1.098112768888862715134642159864216934933006864183145270831789519000118186820e-5 +/- 1.25e-81]"
+        },
+        "vk-bellotti-v1": {
+          "mid": 6.532944267934619e-06,
+          "interval": "[6.53294426793461901525600215819488598306667987302392345069673158107584882300e-6 +/- 4.56e-81]"
+        },
+        "vk-reported": {
+          "mid": 6.87193459769266e-06,
+          "interval": "[6.87193459769266001752795365311952907342292520184620105242357406124698363532e-6 +/- 5.58e-81]"
+        }
+      },
+      "allDisplayedWidthsBelowTargetBetaGap": true,
+      "targetBeta": "99995/100000",
+      "proofOfAnyNewZeroFreeRegion": false
+    }
+  ],
+  "tracks": [
+    "joint coefficient-band cancellation",
+    "correlated weighted finite prime moments",
+    "fixed-height native-order stability",
+    "opposite-weight product transport with unmatched mass",
+    "exact factorial/owner/radial transition masks"
+  ],
+  "results": {
+    "signedBandProfiles": 16,
+    "orderStabilityCases": 40,
+    "exactTransitionBoundaryCases": 48,
+    "sameHeightSeedComparisons": [
+      {
+        "N": 256,
+        "height": "100",
+        "bandCoherenceBySeed": {
+          "731": 0.13545675399874454,
+          "732": 0.2886248467602526
+        },
+        "bothSeedsOpposingOnAverage": false,
+        "maximumSeedReferenceRank": 0.90234375,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 256,
+        "height": "142",
+        "bandCoherenceBySeed": {
+          "731": -0.17829292103057198,
+          "732": -0.3648466392067289
+        },
+        "bothSeedsOpposingOnAverage": true,
+        "maximumSeedReferenceRank": 0.5859375,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 256,
+        "height": "10^10000",
+        "bandCoherenceBySeed": {
+          "731": 0.21092069355327234,
+          "732": 0.43228985156275107
+        },
+        "bothSeedsOpposingOnAverage": false,
+        "maximumSeedReferenceRank": 0.93359375,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 256,
+        "height": "10^20000",
+        "bandCoherenceBySeed": {
+          "731": -0.12771361009572216,
+          "732": -0.08521285394186674
+        },
+        "bothSeedsOpposingOnAverage": true,
+        "maximumSeedReferenceRank": 0.31640625,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 640,
+        "height": "100",
+        "bandCoherenceBySeed": {
+          "731": -0.09976836200085427,
+          "732": -0.43122884622006524
+        },
+        "bothSeedsOpposingOnAverage": true,
+        "maximumSeedReferenceRank": 0.3125,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 640,
+        "height": "142",
+        "bandCoherenceBySeed": {
+          "731": -0.01507623958491805,
+          "732": 0.18074843758597758
+        },
+        "bothSeedsOpposingOnAverage": false,
+        "maximumSeedReferenceRank": 0.84765625,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 640,
+        "height": "10^10000",
+        "bandCoherenceBySeed": {
+          "731": -0.25192390331918674,
+          "732": -0.27833683775868406
+        },
+        "bothSeedsOpposingOnAverage": true,
+        "maximumSeedReferenceRank": 0.65625,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      },
+      {
+        "N": 640,
+        "height": "10^20000",
+        "bandCoherenceBySeed": {
+          "731": -0.18016537605618776,
+          "732": 0.22924529122388526
+        },
+        "bothSeedsOpposingOnAverage": false,
+        "maximumSeedReferenceRank": 0.8984375,
+        "familyAdjustedReplicationDiagnostic": 1.0,
+        "familySize": 8,
+        "diagnosticNotPopulationPValue": true
+      }
+    ],
+    "bothSeedsOpposingCases": 4,
+    "familyAdjustedReplicationFlagsAt005": 0,
+    "weightedMomentCouplings": [
+      {
+        "N": 256,
+        "leadingSquaredEnergyFractionMinimum": 0.9972936107379525,
+        "sampledL1CouplingRemainderRange": [
+          0.011356333257429612,
+          0.011898723562839483
+        ]
+      },
+      {
+        "N": 640,
+        "leadingSquaredEnergyFractionMinimum": 0.9999992040612361,
+        "sampledL1CouplingRemainderRange": [
+          0.00012008768205880804,
+          0.00015563297469533004
+        ]
+      }
+    ],
+    "highHeightGeometricMatchingCostExhaustsTrivialCap": true,
+    "matchingCommonMass": 0.375,
+    "matchingUnmatchedAbsoluteMass": 0.25,
+    "matchingMassConvention": "Equal sampled L1 mass per box, not population or source-scale units",
+    "phaseCircleCostsOutcomeDependent": true,
+    "finiteOrderTrendProvesCofinalDecay": false,
+    "orderHeightCalibration": [
+      {
+        "height": "100",
+        "logMinimumPrimeIntegerStepTurnsLower": -1549.1578573645909,
+        "logMinimumProductIntegerStepTurnsLower": -3071.1065891344992,
+        "everyPrimeIntegerNeighbourCrossesFullPhasePeriod": false,
+        "everyProductIntegerNeighbourCrossesFullPhasePeriod": false,
+        "finiteOrdersNotAssumedAsymptoticForThisHeight": true
+      },
+      {
+        "height": "142",
+        "logMinimumPrimeIntegerStepTurnsLower": -1548.8072004929777,
+        "logMinimumProductIntegerStepTurnsLower": -3070.755932262886,
+        "everyPrimeIntegerNeighbourCrossesFullPhasePeriod": false,
+        "everyProductIntegerNeighbourCrossesFullPhasePeriod": false,
+        "finiteOrdersNotAssumedAsymptoticForThisHeight": true
+      },
+      {
+        "height": "10^10000",
+        "logMinimumPrimeIntegerStepTurnsLower": 21472.087902389878,
+        "logMinimumProductIntegerStepTurnsLower": 19950.13917061997,
+        "everyPrimeIntegerNeighbourCrossesFullPhasePeriod": true,
+        "everyProductIntegerNeighbourCrossesFullPhasePeriod": true,
+        "finiteOrdersNotAssumedAsymptoticForThisHeight": true
+      },
+      {
+        "height": "10^20000",
+        "logMinimumPrimeIntegerStepTurnsLower": 44497.938832330336,
+        "logMinimumProductIntegerStepTurnsLower": 42975.990100560426,
+        "everyPrimeIntegerNeighbourCrossesFullPhasePeriod": true,
+        "everyProductIntegerNeighbourCrossesFullPhasePeriod": true,
+        "finiteOrdersNotAssumedAsymptoticForThisHeight": true
+      }
+    ]
+  },
+  "validation": {
+    "allPassed": true,
+    "scanSourcePinsMatch": true,
+    "independentProductBoundaryChecks": 48,
+    "independentBinomialCoefficientChecks": 50,
+    "maximumIndependentCoefficientReplayError": 8.526512829121202e-13,
+    "independentShiftedHeightPhaseChecks": 24,
+    "maximumIndependentPhaseMidpointDifference": 0.0,
+    "independentReplayContainedByArbBalls": true,
+    "maximumSignedMatchingReconstructionError": 9.161245322430243e-17,
+    "allFiniteSvdModesRetained": true,
+    "mpmathReplayNotIntervalCertificate": true,
+    "phaseRadiusDoesNotIncludeFloatingGeometryOrMidpointRoundoff": true,
+    "browserChecks": [
+      {
+        "viewportWidth": 1400,
+        "pageErrors": [],
+        "horizontalOverflow": false,
+        "allFiveTabs": true,
+        "selectorsAndHover": true,
+        "passed": true
+      },
+      {
+        "viewportWidth": 390,
+        "pageErrors": [],
+        "horizontalOverflow": false,
+        "allFiveTabs": true,
+        "selectorsAndHover": true,
+        "passed": true
+      }
+    ],
+    "desktopAndMobileVisualReview": true
+  },
+  "environment": {
+    "python-flint": "0.9.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "mpmath": "1.3.0",
+    "playwright": "1.63.0"
+  },
+  "inferenceLimits": {
+    "actualPrimeCacheNotWholePopulation": true,
+    "primalityProvedByFlintNotLean": true,
+    "samplingWithReplacement": true,
+    "sharedPrimeCartesianPairsNotIndependent": true,
+    "allOrdersBelowFormalPaymentThreshold65536": true,
+    "equalBoxL1ConventionNotGlobalCarrierMeasure": true,
+    "regressionHeightsAlreadyCoveredByZeroFreeRegions": true,
+    "noZeroOrdinateAsserted": true,
+    "astronomicalHeightFiniteOrdersPrecedePhaseResolutionRegime": true,
+    "rawRadialCarrierCanAliasOnOffsetGrid": true,
+    "sampledFrequencyExtremaNotUniformBounds": true,
+    "referenceRanksNotCalibratedPopulationPValues": true,
+    "phaseCircleMatchingIsOutcomeDependent": true,
+    "noMaskCompletedOrUnmatchedMassDeleted": true
+  },
+  "nextMathematicalTarget": "An independent signed estimate of the coupled weighted prime-pair aggregate on the full literal support; finite near-separability alone supplies no bound",
+  "status": {
+    "newLeanTheorem": false,
+    "independentSignedMainBound": false,
+    "cofinalFloorCredit": 0,
+    "floor": false,
+    "multipleZeroCeiling": false,
+    "zeroExclusion": false,
+    "RH": false,
+    "previousPaymentsAndNoGosPreserved": true,
+    "optionalOutsideBuildAndCI": true,
+    "rootRegistration": false,
+    "widerChecksRun": false,
+    "committed": false,
+    "pushed": false
+  }
+}

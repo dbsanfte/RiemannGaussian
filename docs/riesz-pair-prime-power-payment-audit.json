@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Proved global proper-prime-power correction payment with all low orders retained; original signed main still unpaid",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimePowerMoments.lean",
+      "sha256": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaExposedPrimeMoments.lean",
+      "sha256": "67f7ce41450a7121ed5be4c44b0f8ad63ba463ce833de949cea56b1dc7398294"
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLogarithmicConvolution.lean",
+      "sha256": "6b1d104fa1e1275bf0189d8576b376a4b60dd8f9b1420762032515610582c895"
+    },
+    {
+      "path": "scripts/CheckRieszPairPrimePowerPayment.lean",
+      "sha256": "f105b6079d46a7277afa0a432b4571d2ee70f619590b4c29209415b455690541"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-prime-power-payment.md",
+      "sha256": "bbb7325f5a98df3dfae86c05e530fcf86fb36db26082860778aa7462a0e2a9c5"
+    },
+    {
+      "path": "docs/riesz-selberg-source-audit.json",
+      "sha256": "2271c4ed68572903ff4a8d06eca5a4cd877317a4bd34da82bdc471ca26eb06c7"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-prime-power/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-pair-prime-power/proof-check.log",
+      "sha256": "f5be6bc652a1133b5bd9e894c8a847128a920ebd1b39fef750089a5592217188"
+    },
+    {
+      "path": ".lake/riesz-pair-prime-power/axioms.json",
+      "sha256": "b405148e34599639c9a582a66b145cc0bb13d202770d23faa254f388f9468d49"
+    },
+    {
+      "path": ".lake/riesz-pair-prime-power/prior-pins.json",
+      "sha256": "3cbac0c1e4021d42e8f9a6e5e9be6fa461ee735845f3c0f9734eebcf7e70a057"
+    },
+    {
+      "path": ".lake/riesz-pair-prime-power/prior-pins-refreshed.json",
+      "sha256": "7008e39bb69ee318ef9f3fa51610c7e540022ef9dec6cc86cf7cc66cf9900001"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairPrimePowerPayment",
+    "publicTheorems": 14,
+    "proofDeclarationsAudited": 59,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "genericJoinedDifference": "norm_harmonicEvaluation_sub_le",
+    "actualArrayGeometricMajorant": "norm_array_difference_le",
+    "fullSummablePrice": "sum_norm_array_difference_le",
+    "wholeQuadraticPayment": "norm_ordinary_sub_mangoldt_quadratic_le",
+    "twoSidedRealDifference": "abs_re_ordinary_sub_mangoldt_le",
+    "conditionalBoundDerived": "exists_exposed_quadratic_power_payment",
+    "actualFiniteQuadraticMatched": "normalized_finite_quadratic_eq_harmonic",
+    "literalPrefixBridge": "norm_prefix_sub_mangoldt_le",
+    "sourceDifferenceDecay": "tendsto_prefix_sub_mangoldt",
+    "originalNativeFloorLedger": "exists_native_mangoldt_payment_simple"
+  },
+  "estimate": {
+    "radius": "1/2<=u<=10001/20000",
+    "order": "N>=65536",
+    "wholeQuadraticCost": "22*C*powerMass/N",
+    "arrayGeometricRate": "10001/15000",
+    "powerMass": "(10001/20000)*zetaProperPrimePowerExpMass(3/4)/(1-10001/15000)",
+    "properPowerArrayMajorantUnconditional": true,
+    "wholeQuadraticRequiresBothCompleteArrayBounds": true,
+    "boundsDerivedFromOriginalExposedZeroHypotheses": true,
+    "CMayDependOnSelectedZero": true,
+    "CIsCertifiedNumericallySmall": false,
+    "literalPrefixHeightCondition": "54<=abs(y)",
+    "literalPrefixCost": "wholeCompletionBudget N + squareBudget u N +22*C*powerMass/N",
+    "lowLoggedOrdersZeroAndOneRetained": true,
+    "allFourSignedSlotsRetained": true,
+    "fullComplexPhaseRetained": true,
+    "movingLengthAndIntegerCutoffsRetained": true,
+    "noTermwiseNormAllowanceForMain": true,
+    "correctionDoesNotRequireSimpleZero": true,
+    "nativeSimpleLedgerUsesPriorSelbergBudget": true,
+    "wholeCompletionAndSquareCostsSpentOnce": true,
+    "olderPhysicalLowOrderPaymentNotSpentAgain": true
+  },
+  "scope": {
+    "newCarrier": false,
+    "newPrimeFilter": false,
+    "newMaskedCofactorCompletion": false,
+    "M\u00f6biusSelbergCoefficientIdentityIsNotWeightedMainBound": true,
+    "allPreviousNoGoAuditsPreserved": true,
+    "previousProofAndNumericalSnapshotsPreserved": true,
+    "newNumericalProbeRequired": false,
+    "numericalProbeUsedInProof": false
+  },
+  "newGlobalErrorPayment": true,
+  "newIndependentArithmeticFloorSaving": false,
+  "remaining": [
+    "Independent signed 399/5000 bound for the same joined full-von-Mangoldt quadratic, exploiting actual arithmetic correlations with its literal factorial weights.",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "widerGatesRun": false
+}

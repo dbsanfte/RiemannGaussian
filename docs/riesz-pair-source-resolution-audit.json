@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Exact slot replay and source-unit numerical-detector calibration; no arithmetic saving",
+  "target": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "scripts/probe_riesz_pair_source_resolution.py",
+      "sha256": "79a886255a2946b6ad129fa2f8eaf0994520942a69ff19ffdcf3ef455300576c"
+    },
+    {
+      "path": "scripts/check_riesz_pair_source_resolution.py",
+      "sha256": "0b34663d4cb16102858a718f18c70938108e4e45e868767f491af1de85c3a65f"
+    },
+    {
+      "path": "scripts/probe_riesz_selberg_renewal.py",
+      "sha256": "f0c161909c1e358bda78e6e51871aa995a6185c31448764371a0e735c7b433b6"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairFloorAllMultiplicity.lean",
+      "sha256": "e93169708cdd20b7d7b6a5568824390b9f6bfe38e02ef42af83e96048bf677a0"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-source-resolution.md",
+      "sha256": "1889082a57e548752f55d1704b51b679c977689640ea447dbc096bf87f82b316"
+    },
+    {
+      "path": "docs/riesz-joint-pair-detector-audit.json",
+      "sha256": "6ac471ccdaee0f588c778b0bd22ade0a79a767d89482f3e4e02052abbdff8e30"
+    },
+    {
+      "path": "docs/riesz-pair-joint-quadratic-audit.json",
+      "sha256": "8b6781b8a274b2110f79df9513995ece3edf6cfac46a32b153b83f509ebb0867"
+    },
+    {
+      "path": "docs/riesz-pair-floor-all-multiplicity-audit.json",
+      "sha256": "4c80bc4d72915bec7dba378876f35d61481b5adf0373d20efdeae73969682f0c"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-source-resolution/scan.json",
+      "sha256": "481405dfce6342cc1f3fae7a5eb6c3944b8990eea486b8ab531e73cf25acf32e"
+    },
+    {
+      "path": ".lake/riesz-pair-source-resolution/validation.json",
+      "sha256": "41188fe20a298a5efbb0a34fcb262e7c148bd1b656c206d323e2528985213ecb"
+    },
+    {
+      "path": ".lake/riesz-pair-source-resolution/prior-pins.json",
+      "sha256": "01440a4df5a8843dbf9262648741be1d7daad98e89b231e5fc4a92d851394edf"
+    },
+    {
+      "path": ".lake/riesz-pair-source-resolution/prior-pins-refreshed.json",
+      "sha256": "3019aca6f84270bf15f0ff411fbce01cb3ba3d37d3f7001c74e7f42aec7d1a26"
+    },
+    {
+      "path": ".lake/riesz-pair-source-resolution/hoeffding-1963.pdf",
+      "sha256": "3021bcc097ef23a99a84d0eef8dcce2fd835c71df79a105727d3e03f8f0b8930"
+    },
+    {
+      "path": ".lake/riesz-pair-source-resolution/hoeffding-page5.png",
+      "sha256": "2e396c7d62d124e0d335760b66f03dd697e7f001afc549ca1c6ecd47524c060f"
+    },
+    {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    },
+    {
+      "path": ".lake/riesz-pair-joint/new-primes.json",
+      "sha256": "c7c05118c164c1749676322a00b075e586d0e87e3067d3cd190395cea3039355"
+    },
+    {
+      "path": ".lake/riesz-balanced-prime-sampling/result.primes.json",
+      "sha256": "68da5ed81911894d8917068641c6dab712c63bc2be573c06fb88352fa75594b1"
+    }
+  ],
+  "checks": {
+    "exactRationalSlotRegressions": 6,
+    "finitePrimeFourSlotRegressions": 12,
+    "scalarCalibrationRows": 8,
+    "priorProofOrProbeArtifactsChanged": false,
+    "priorPinsRevalidated": 344,
+    "guideAndDependentOwnedAuditPinUpdates": 38,
+    "leanSourcesChanged": false,
+    "leanChecksRequiredForThisSlice": false,
+    "rootImportsChanged": false,
+    "broaderGatesOrCIExecuted": false,
+    "commitOrPushPerformed": false
+  },
+  "coverage": {
+    "frozenInputs": [
+      {
+        "path": ".lake/riesz-pair-structure/scan.primes.json",
+        "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+      },
+      {
+        "path": ".lake/riesz-pair-joint/new-primes.json",
+        "sha256": "c7c05118c164c1749676322a00b075e586d0e87e3067d3cd190395cea3039355"
+      },
+      {
+        "path": ".lake/riesz-balanced-prime-sampling/result.primes.json",
+        "sha256": "68da5ed81911894d8917068641c6dab712c63bc2be573c06fb88352fa75594b1"
+      }
+    ],
+    "actualDistinctCachedPrimes": 2080,
+    "boxes": 50,
+    "orders": [
+      256,
+      640,
+      1536
+    ],
+    "boxesAtFormalOrderThreshold": 0,
+    "sampledCartesianPairIncidences": 48256,
+    "cartesianPairsAreIndependentObservations": false,
+    "knownCachePrimalityChecksRerun": false,
+    "newPrimeSamples": 0,
+    "completePrimePopulationCovered": false,
+    "heightRegimes": [
+      {
+        "height": "100",
+        "logAbsoluteHeight": "4.6051701859880913680359829093687284152",
+        "boxesWithHeightLargerThanEverySampledPrime": 0,
+        "boxesWithHeightSmallerThanEverySampledPrime": 50,
+        "mixedBoxes": 0,
+        "integerSpacingComparisonIsNotAPrimeGapEstimate": true
+      },
+      {
+        "height": "142",
+        "logAbsoluteHeight": "4.9558270576012607307466866539712106648",
+        "boxesWithHeightLargerThanEverySampledPrime": 0,
+        "boxesWithHeightSmallerThanEverySampledPrime": 50,
+        "mixedBoxes": 0,
+        "integerSpacingComparisonIsNotAPrimeGapEstimate": true
+      },
+      {
+        "height": "10^10000",
+        "logAbsoluteHeight": "23025.850929940456840179914546843642076",
+        "boxesWithHeightLargerThanEverySampledPrime": 50,
+        "boxesWithHeightSmallerThanEverySampledPrime": 0,
+        "mixedBoxes": 0,
+        "integerSpacingComparisonIsNotAPrimeGapEstimate": true
+      },
+      {
+        "height": "10^20000",
+        "logAbsoluteHeight": "46051.701859880913680359829093687284152",
+        "boxesWithHeightLargerThanEverySampledPrime": 50,
+        "boxesWithHeightSmallerThanEverySampledPrime": 0,
+        "mixedBoxes": 0,
+        "integerSpacingComparisonIsNotAPrimeGapEstimate": true
+      }
+    ]
+  },
+  "scopeLimits": {
+    "actualUnsignedPrimeMomentMassComputed": false,
+    "calibrationIsActualPrimeMeasureTransport": false,
+    "sufficientConfidenceCostIsNecessaryMinimum": false,
+    "currentPrimeSamplesAreBoundedIidSourceModel": false,
+    "newSignedCancellationIdentity": false,
+    "independentFloorOrMainBoundProved": false,
+    "newZeroExclusion": false,
+    "contradictionMarginIsMeasuredUnpaidMass": false,
+    "firstSourceThresholdCrossingCertified": false
+  },
+  "literature": [
+    {
+      "author": "Wassily Hoeffding",
+      "title": "Probability Inequalities for Sums of Bounded Random Variables",
+      "year": 1963,
+      "doi": "10.1080/01621459.1963.10500830",
+      "url": "https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf",
+      "checked": "Theorem 2, printed page16, PDFpage5; sufficient bounded-IID calibration only"
+    }
+  ]
+}

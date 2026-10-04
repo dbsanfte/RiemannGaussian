@@ -11565,6 +11565,7552 @@ of this fixed family cannot establish coverage. The deterministic,
 every-run, N-only, construction-inclusive `N^(1/6)` bit factorization target,
 including squares and arbitrary ratios, remains **OPEN**.
 
+## Two original coefficient channels and a kernel-certified repair (2026-10-03)
+
+The new
+[`SemiprimeAffineRowRoots`](../RiemannGaussian/SemiprimeAffineRowRoots.lean)
+extracts two additional channels from the retained original quadratic rows.
+`frontier_public_recovers` proves that its complete canonical N-only source
+returns a proper divisor on the preceding 103-bit native signed-companion
+miss. The old full companion exhaustion remains native evidence; the new
+success is a kernel-checked theorem. Neither result establishes universal
+coverage or the requested one-sixth bit bound.
+
+For an actual centered packet, retain the integer linear offset
+`L = m*b - 2*a*j`. The original factor-coordinate polynomial is
+
+```text
+F_w(Y) = a_w Y² + L_w Y + N t_w.
+```
+
+`publicPacket_relation` discharges its original quotient relation from
+literal public-family membership. `quotient_scaled_coordinate` connects
+this polynomial exactly to `m²` times the retained original quadratic at
+`Y = m*X+j`, before any reduction modulo N. The Nt term is retained at this
+integer stage. After checking that a scale is a unit modulo N, form the
+separate coordinates `r_a(w) = -L_w/a_w` and `r_t(w) = -L_w/t_w`.
+`packetRoot_coefficient` proves their exact coefficient equations;
+`publicPacket_modular_factorization` identifies `a*Y*(Y-r_a)` as the
+original coordinate polynomial modulo N. Nonunit scales go through a
+public coefficient-GCD prefix and are excluded from normalization.
+
+The extraction does not require a quadratic row-pair matrix. For two
+original packets, set
+
+```text
+D = a_w t_v - a_v t_w
+A = a_w L_v - a_v L_w
+B = L_w t_v - L_v t_w.
+```
+
+`quadratic_sylvester` identifies the literal four-by-four coefficient
+matrix with Mathlib's Sylvester matrix. `quadratic_resultant` proves the
+genuine fixed-degree (2,2) resultant formula, and `packet_resultant_exact`
+specializes it to these public rows:
+
+```text
+Res(F_w,F_v) = N * [N D² - A B].
+```
+
+For every positive N, `packet_resultant_div` proves exact integer division
+by N gives the bracketed quantity. Division happens before modular
+reduction. When all four scales are units, `normalizedResultant_mod`
+proves its reduction is exactly
+
+```text
+a_w a_v t_w t_v * [r_a(w)-r_a(v)] * [r_t(w)-r_t(v)].
+```
+
+`normalizedResultant_gcd` removes this unit phase while preserving the
+full GCD, including prime powers and saturation. Thus the two coefficient
+minor channels can be obtained from root-polynomial differences. Every
+original row, offset, denominator and shift remains available upstream.
+Whole-modulus coincident roots require deflation: a raw normalized
+resultant can be globally zero without supplying a proper factor. The
+source keeps the two root channels separately and uses the existing exact
+whole-modulus duplicate and negative-match guards.
+
+The joined ordinary source contains both coordinate root families and the
+complete original companion roots. `joinedRoots_card_le` proves at most
+`4R` distinct ordinary roots, where R is the full original packet count.
+The shared reflected polynomial then supplies endpoints, differences and
+sums without a doubled signed polynomial. `recoverJoinedAffineRows_sound`
+certifies every returned divisor, and
+`recoverJoinedAffineRows_of_proper_pair` covers every proper signed pair,
+including recovery from a saturated product column.
+`recoverJoinedAffineRows_preserves_companions` transports every prior
+signed-companion success into the amended procedure. `joinedGcdCount_le`
+includes the coefficient prefix and recovery queries, at most `14R+1`.
+`joinedGcdCount_prime_le` gives the public prime-modulus envelope
+`112*m*(log2(m)+1)²+1`. These are input-degree and GCD-query bounds, not
+polynomial or construction bit clocks.
+
+The frozen private-field search
+[`probe_semiprime_affine_frontier.py`](../scripts/probe_semiprime_affine_frontier.py)
+and its [217-pin record](semiprime-affine-frontier-audit.json), identifier
+**202610033228**, scan the leading-coefficient roots with both signs on
+the preceding frozen miss input. This is a reference prefix search, not a
+full N-only factorizer execution or affine-family exhaustion. It stops
+after 20254825 original packets, with 40509644 classes stored in each
+private field before the witness. Its checked public inverse cache has
+235178 distinct leading coefficients. The first packet comes from public
+residue 85189, vector `(-2,87345)`; the second from residue 95998, vector
+`(64004,4909)`. Both use the smaller-factor public midpoint. Their actual
+integer offsets and projected values are
+
+| Public residue / vector | L | Leading-coefficient root modulo N |
+| --- | --- | --- |
+| 85189 / (-2,87345) | -274896527429303546246 | -137448263714651773123 |
+| 95998 / (64004,4909) | -157889571041042645902 | 4222394529573440758344149827194 |
+
+`frontier_control_vectors` and `frontier_control_membership` check both
+vectors and packets in the literal full public constructor.
+`frontier_control_offsets`, `frontier_control_units` and
+`frontier_control_roots` certify their offsets, unit checks and values.
+`frontier_control_gcd` proves the GCD of their root sum with
+`N = 6798061565397654183415201602281` is exactly **2245327606949267**.
+`frontier_control_proper_sum` proves this is proper, and
+`frontier_joined_recovers` transports the pair to success of the full joined
+source. Finally, `frontier_public_recovers` uses the previously compiled
+literal public-modulus theorem to supply `m = 137639` from N alone.
+No private field, selected residue, pair or factor is an algorithm input.
+The full 103-bit native polynomial source was not executed, so the saved
+private search time is not a factorizer runtime.
+
+The separate
+[`probe_semiprime_affine_row_roots.py`](../scripts/probe_semiprime_affine_row_roots.py)
+and [221-pin record](semiprime-affine-row-roots-audit.json), seed
+**202610033230**, check 4096 arbitrary coefficient cases. These include
+128 independent SymPy Sylvester determinants, 1225 exact unit-normalized
+GCD-phase comparisons and 2871 rejected nonunit-scale pairs. Another
+192 reflected-recovery oracles include squares, global zeros and negative
+matches; 91 use selected-row saturation recovery, 69 recover directly
+from a column and 32 exhaust. All matched independent signed-pair GCD
+checks. These finite oracles supplement the generic compiled identities.
+
+All 110 inherited public N/modulus families are checked completely,
+including the 46 public setups through 49 bits and 64 seeded additional
+families. Their 29596 original packets supply 88788 exact integer
+coordinate identities, 55008 admissible normalized packet coordinates and
+4184 excluded nonunit scales. Both coordinate channels retain their
+complete original packet provenance.
+
+All 34 full N-only native controls return proper factors: 28 through
+reflected columns, three through selected-row saturation recovery, two
+through the coefficient-GCD prefix and one through the checked square
+prefix. The native controls include the inherited checked square/modulus
+prefixes and integer trial prime selector, followed by the new joined
+backend. Setup, complete original construction, scale checks, cached public
+inversions, normalization, dictionary work, packed polynomial operations
+and recovery are inside each source timer. Independent output validation
+and the algebra/reference classifiers are outside those timers.
+
+| N-only control | m | Original packets / ordinary polynomial degree | Coefficient / column GCD queries | Returned divisor | Saved source ms |
+| --- | ---: | --- | --- | ---: | ---: |
+| 7303 | 5 | 32 / 67 | 64 / 1 | 67 | 6.46304 |
+| 369867514421371 | 269 | 14968 / 36332 | 29936 / 39 | 14799739 | 10913.98502 |
+
+The 49-bit source normalizes 29936 packet coordinates using 536 cached
+coefficient inverses, retains 28864 companion packets and builds one
+ordinary polynomial. Its two streams reuse that polynomial's root tree;
+no signed-root union, modular giant powers or pair matrix is constructed.
+It records 99793 convolutions, 8337728 packed coefficients and 145326
+monic reductions. Its 29975 joined GCD queries fit `14R+1`; total integer
+GCD calls, including setup and construction, are 30245. The integer
+operand-bit traffic is 57605529, maximum integer operand size is 65 bits,
+and maximum scalar product size is 97 bits. These are individual native
+diagnostics, not a speedup comparison, exponent fit or bit certificate.
+
+The targeted `--wfail` build, strict leaf and ordinary-root elaboration,
+and root-plus-leaf
+[`CheckSemiprimeAffineRowRoots.lean`](../scripts/CheckSemiprimeAffineRowRoots.lean)
+passed on pinned Lean 4.33.1 and the restored original Mathlib baseline.
+All 65 declarations were audited, including 49 explicit and 16 generated
+declarations; 48 are theorem/helper declarations. All 14 namespace linters
+report zero errors, and transitive axioms are limited to `propext`,
+`Classical.choice` and `Quot.sound`. Root and semiprime-family registrations
+are present. The 217-pin replay preserves all 215 parent pins, and the
+221-pin replay preserves all 217 parent pins; both inventories were
+independently hash-checked after their original runs terminated.
+
+This amendment repairs the literal known miss with a compiled public
+recovery theorem and provides a linear-size matrix-free extraction of two
+original coefficient channels. Universal useful-hit coverage for the
+amended family remains **OPEN**. Complete construction, normalization,
+dictionary/memory and polynomial bit clocks, arbitrary-ratio completion
+and the deterministic every-run N-only construction-inclusive `N^(1/6)`
+bit theorem, including squares, remain **OPEN**. Further progress must
+establish sufficient coverage and its full bit price rather than infer
+the exponent from these finite successes or GCD-query counts.
+
+## Extracting the centered offset before the large constant coefficient (2026-10-03)
+
+The new [SemiprimeCenteredOffsetExtractor.lean](../RiemannGaussian/SemiprimeCenteredOffsetExtractor.lean)
+forks the original packet before constructing its large constant coefficient.
+It preserves the signed integer offset itself, rather than only its residue
+modulo N. This is a constructor identity, not a new coverage theorem or a
+complete bit-cost result.
+
+For an actual row, write L=m*b-2*a*j and retain the exact relation
+N*t+a*j²+j*L=m²*c. `quotient_offset_modEq` proves that a checked public inverse
+u of j modulo m² gives L≡-a*j-N*t*u modulo m². `quotient_residueOffset` reduces
+N modulo m² before computing this residue. The inverse is public Bezout data
+for j modulo m²; neither private prime field enters this constructor.
+
+Let A,B be the retained public midpoint coordinates, S=a*A+t*B and
+r=(-a*j-(N mod m²)*t*u) mod m². The direct centered offset is
+
+```text
+L_center = r - m² * floor((S + 2*r + m²)/(2*m²)).
+```
+
+`recenter_periodic`, `recenter_emod` and `recenter_of_modEq` prove the original
+signed floor division and tie convention are invariant under an integer
+m² period. `publicPacket_reduced_offset` therefore identifies this direct
+construction with the actual centered packet offset as an integer.
+`publicPacket_residue_coprime`, `publicPacket_original_relation` and
+`publicPacket_center_choice` discharge its residue, source and orientation
+conditions from literal public-family membership. The original packet is
+retained upstream.
+
+`publicPacket_reduced_root` transports both original affine channels through
+the same offset, with their previous unit guards still required by the
+detector. `publicPacket_companion_offset` and `publicPacket_companion_div`
+prove that every checked primitive adjacent companion is
+
+```text
+-(t_right*L_left - t_left*L_right)
+  / (t_right*a_left - t_left*a_right).
+```
+
+The division is exact over the integers, by the checked nonzero primitive
+determinant. No Nt-containing exponent or constant coefficient must be
+constructed to obtain these same companion and affine observables. This
+reduces intermediate integer sizes; no exponent improvement follows from
+the identity alone.
+
+Targeted warning-as-error build, strict leaf and ordinary-root elaboration,
+all 14 namespace linters and the complete transitive declaration audit
+passed. The checker reports 27 declarations: 17 explicit, 10 generated,
+and 24 theorem/helper declarations. Only propext, Classical.choice and
+Quot.sound occur transitively. The module is registered in the ordinary
+root and the explorer's semiprime family.
+
+The reference-only `semiprime_joined_coverage_rows.cpp` uses this direct
+offset fork, preserving every Euclidean intermediate, both centers, both
+affine channels and all four adjacent companion combinations. Its bounded
+128-bit arithmetic and private prime-field reciprocal tables are native
+reference code, not a kernel machine refinement or an N-only factorizer.
+The NumPy replay's completed preliminary oracles compare 124 complete
+small families or large-residue slices with the frozen full Nt-containing
+Python lift and whole-N inverses: 37620 original packets and 146056 joined
+coordinate records agree exactly. Another 256 signed-list checks compare
+the orbit counts with explicit whole-N sets and pair GCDs. The compiled
+generator uses undefined-behavior sanitization in these finite oracles.
+
+The large NumPy replay, seed 202610033232, remained in progress at this
+checkpoint. Its first 118-bit input is
+N=287924677746770498819378760678822563, with private reference primes
+423196074159314927 and 680357629306313869. The public sixth width is 812606
+and its least prime modulus is 812627. Complete row generation emits
+864414120 ordinary coordinate records into a 20745938880-byte scratch
+table. The completed first sort counts 535246412 global sign orbits and
+535246410 folded P classes, so this input has a native paired hit.
+The Q projection is still being counted independently. No full-family
+exhaustion result, final frozen audit or large public factorizer runtime
+is inferred from this partial checkpoint.
+
+An independent native integer sort, seed 202610033236, regenerates the
+same first input into its own scratch table. It preserves the original
+NumPy process and never reads that process's mutating file. All signed
+statistics agree with explicit whole-N sets and the NumPy classifier on
+512 arbitrary lists, including 32 full-width field cases. Its complete
+large-input classification is also pending here. These are reference
+sorting diagnostics; universal joined coverage and guaranteed one-sixth
+factorization remain OPEN.
+
+## Anchored three-row areas through one root polynomial (2026-10-03)
+
+The new [SemiprimeAnchoredRowAreas.lean](../RiemannGaussian/SemiprimeAnchoredRowAreas.lean)
+retains a correlation beyond the two separate normalized coefficient
+streams. Its source remains the actual original packet family. A public
+anchor turns all three-row areas containing that anchor into a single
+slope root axis, avoiding a list or matrix of triples. One anchor does
+not cover every triple, and universal useful-area coverage is OPEN.
+
+For coefficient rows (a,L,N*t), `original_row_area` proves the genuine
+3-by-3 determinant is N times `rowArea`, the determinant with third
+column t. `original_row_area_div` removes this known N over the integers
+before reducing modulo N. As with the preceding two-row resultant,
+reducing the original determinant first would erase the remaining data.
+
+Keep the two signed minors against anchor u separately:
+
+```text
+A(u,w) = a_u*L_w - a_w*L_u,
+D(u,w) = a_u*t_w - a_w*t_u.
+```
+
+`anchored_minor_identity` proves
+A(u,w)*D(u,v)-A(u,v)*D(u,w)=a_u*rowArea(u,w,v).
+The guarded slope is A(u,w)/D(u,w) modulo the whole N.
+`anchorSlope_difference` retains its exact unit phases, and
+`anchorSlope_area_gcd` proves that the slope difference has exactly the
+same GCD with N as the three-row area when a_u and both denominator
+minors are units. This includes prime powers and saturated outputs.
+The RH-path `unit_mul_gcd_eq` supplies the phase transport.
+
+`slopeEntry` excludes singular inverses. The separate public minor-GCD
+prefix retains their proper-factor information. `anchorRoots_card_le`
+bounds this detector's polynomial degree by the original packet count R.
+`recoverAnchorAreas_of_proper_area` transports every proper guarded area
+containing this anchor through the existing derivative and saturated-row
+recovery. `recoverAnchorAreas_sound` and `recoverChosenAnchorAreas_sound`
+prove returned divisors proper. `anchorGcdCount_le` bounds recovery GCD
+queries by 3*R; for prime m, `anchorGcdCount_prime_le` gives
+24*m*(log2(m)+1)². These bounds do not price construction, polynomial
+arithmetic, bit operations or an all-anchor search.
+
+The anchor itself is acquired from public data. `euclidPairs_has_unit`
+proves a gcd-one Euclidean stream reaches a unit numerator.
+`publicUnitAnchor_exists` discharges anchor existence from m>1 and
+gcd(m,N)=1. `publicUnitAnchor_spec` and `publicUnitAnchor_unit` prove
+the selected larger-center j=1 row belongs to the original public
+family and has unit leading coefficient. This proves acquisition,
+without assuming or proving that the selected anchor has a useful area.
+
+The literal information-separation control uses N=6396434398051 and
+public m=19. Its reference primes are 1919761 and 3331891. **This modulus
+is noncanonical**: the public sixth width and least prime modulus are
+both 137. It is an information control for the retained family, not a
+canonical-modulus counterexample or a one-sixth scaling certificate.
+
+`control_public_vectors` and `control_membership` check three actual
+public rows: the larger-center (j,a,t)=(1,1,3), and smaller-center
+(11,-9,1) and (16,1,8). `control_offsets_and_minors` checks their signed
+offsets -9529224, 16375576 and -26582115, and the anchor denominators
+28 and 5. `control_area` checks the determinant 130543748.
+`control_area_gcd` checks its exact whole-N GCD is 1919761.
+`control_public_anchor` checks the literal public selection rule chooses
+this anchor. `control_anchor_recovers` and `control_chosen_recovers`
+certify complete selected-anchor program success, with neither private
+primes nor a selected triple as algorithm inputs.
+
+The [229-pin replay](semiprime-anchored-row-areas-audit.json), seed
+202610033234, forks the frozen 221-pin affine parent. It adds the direct
+offset leaf and checker, the complete row generator and NumPy classifier
+sources, and the area leaf, checker and probe. All 229 hashes were
+independently verified after the original native process terminated
+successfully. This fork does not depend on either pending large audit.
+
+On the control, the complete N,m-only joined backend constructs all 356
+original packets and 839 ordinary roots, executes 1551 recovery GCD
+queries and exhausts every reflected column. Its separate reference
+carrier has 1675 distinct signed whole-N values, and both prime fields
+have exactly 1675 classes. The **complete joined miss remains native-only**.
+The area backend retains those same original rows, selects its public
+anchor after eight positions, checks all 356 minors, excludes four
+nonunit slopes, and normalizes 352 entries into 347 distinct slopes.
+It caches 59 denominator inverses and returns 1919761 from a derivative
+after 190 derivative GCD queries: 546 recovery queries including the
+prefix. It constructs one root polynomial and no pair or triple matrix.
+
+Saved individual native diagnostics are 117.339162 ms for the joined
+backend and 35.769418 ms for the anchor backend. They include full
+original construction, normalization, dictionaries, polynomial work
+and recovery. They are not a paired speedup claim, exponent fit or
+formal bit clock. The inputs are N and a public m; modulus acquisition
+is outside these backend timings and no N-only canonical-modulus
+success is asserted by this control.
+
+Finite algebra checks cover 4096 arbitrary coefficient triples, including
+square moduli. There are 128 independent signed 3-by-3/Nt determinant
+comparisons, 1447 exact unit area/slope GCD phases and 2649 excluded
+nonunit-phase cases. Fifteen unit cases have a globally zero area, so
+saturation is not silently discarded. Another 36 complete public N,m
+runs, including four squares, agree with an independent minor-prefix
+and explicit slope-pair GCD oracle. Their stages are 18 derivative hits,
+six selected-row hits, six minor-prefix hits and six complete selected-
+anchor exhaustions. Including the separation control gives 37 area
+backend runs. These misses also prevent treating public anchor
+acquisition as universal useful-area coverage.
+
+Targeted warning-as-error build, strict leaf and ordinary-root elaboration,
+all 14 namespace linters and the complete transitive declaration audit
+passed. There are 69 declarations: 43 explicit, 26 generated and
+52 theorem/helper declarations. Only propext, Classical.choice and
+Quot.sound occur transitively. The module is registered in the ordinary
+root and explorer's semiprime family. No broad CI, explorer regeneration,
+commit or push was performed.
+
+The next mathematical obligation is an actual guarantee that a small
+public collection of anchors, or another retained correlation, supplies
+a useful area on every eligible input. Trying all R anchors creates
+quadratically many slope entries; the one-anchor polynomial does not
+remove that source cost. Fast polynomial bit clocks, all setup and
+memory costs, arbitrary-ratio completion and the every-run construction-
+inclusive deterministic N^(1/6) bit theorem remain OPEN.
+
+## Independent complete joined-family classification at 118 bits (2026-10-03)
+
+The independent [232-pin integer-sort replay](semiprime-joined-integer-sort-audit.json),
+seed 202610033236, has now terminated successfully. It inherits the frozen
+229-pin area branch, adds that audit and the separate native integer sorter
+and probe, and regenerates the entire first 118-bit corpus in its own file.
+All 232 source hashes were independently verified after the original
+integer-sort process terminated. The 229-pin and 221-pin ancestors also
+remain unchanged.
+
+The input and canonical public modulus are the preceding
+N=287924677746770498819378760678822563 and m=812627. The complete
+constructor emits 216916156 original packets, 430581808 companions and
+433832312 original affine coordinates. The 864414120 ordinary records
+occupy 20745938880 scratch bytes. Both public center choices and all four
+adjacent companion combinations are retained, and every original scale
+is a unit because its checked nonzero magnitude is at most m, below both
+native reference primes.
+
+| Complete reference count | Whole N | P field | Q field |
+| --- | ---: | ---: | ---: |
+| Folded common-sign orbits / local classes | 535246412 | 535246410 | 535246412 |
+| Signed values / classes with zero anchor | 1070492825 | 1070492821 | 1070492825 |
+| Signed collapsed values | -- | 4 | 0 |
+
+No ordinary whole or local zero occurs; the anchor is added explicitly.
+The result is a native **paired hit**, not a complete joined-family miss.
+The complete P result agrees with the original NumPy process's completed
+P sort. The independent Q sort finds no additional collapse, even though
+the classifier fully executes it after P has already found a hit.
+
+The new sorter first orders the exact folded CRT keys by P and the
+sign-consistent Q coordinate. It then keeps one Q fold per global sign
+orbit and performs a separate scalar Q sort. This retains every Q class
+while avoiding a second sort of all duplicated three-word records.
+All statistics agree with explicit whole-N sets and the original NumPy
+classifier on 512 arbitrary signed lists, including 32 full-width field
+cases. Undefined-behavior sanitization is enabled for the sorter in these
+finite oracles. The generator is the previously frozen direct-offset fork.
+
+The saved 265206.112091 ms measures private-field generation and reference
+sorting only. No large N-only root polynomial, public factorizer or bit
+clock is executed. Neither these cardinalities nor the large input's
+primality and complete hit classification have a new kernel exhaustion
+certificate. This is a finite complete native coverage check on one input,
+not universal coverage, a factorization exponent fit or a guaranteed
+one-sixth theorem.
+
+The original NumPy process remains intact and continues its Q projection;
+its requested second case has not started at this checkpoint. Its 226-pin
+audit is still pending and has not been replaced by the independent record.
+The active goal remains the full N-only, every-run, arbitrary-ratio,
+construction-inclusive deterministic N^(1/6) bit theorem. It is OPEN.
+
+## Signed residue and center channels in actual three-row areas (2026-10-03)
+
+The new ordinary-root module `SemiprimeRowAreaSpectrum` keeps the original
+packets before taking their genuine three-row determinant. Its compiled
+`publicPacket_same_residue_scaled_area` proves, for actual public packets
+sharing one residue,
+
+\[
+ N\,\operatorname{rowArea}(u,w,v)
+   =m^3\,\operatorname{centeredCoefficientArea}(u,w,v).
+\]
+
+The right-hand determinant uses the complete **centered** `(a,b,c)` rows,
+with each original packet and shift still available upstream. It is not the
+unshifted determinant. `publicPacket_same_residue_area_dvd` removes the
+publicly checked coprime factor `N`, proving that `m³` divides the integer
+area before modular reduction. `publicPacket_residueArea_exact` connects
+the resulting integer quotient to the original area without truncation.
+
+`packet_center_equation` retains the signed equation
+`-2L=a A_side+t B_side+epsilon`, including the original floor/tie rule.
+`same_center_area` cancels the common midpoint plane exactly:
+
+\[
+ 2\operatorname{rowArea}=-\det[a,\epsilon,t].
+\]
+
+For public packets, `publicPacket_errorArea_abs_le` bounds the last
+determinant by `6m⁴`. The compiled
+`publicPacket_same_residue_center_residueArea_abs_le` therefore proves
+`|rowArea/m³|<=3m` when both residue and center agree. Its
+`publicPacket_same_residue_center_no_proper_gcd` proves no proper area GCD
+when both prime factors exceed `3m`. The primes may coincide. This is a
+restricted population obstruction, not a lower bound for factorization.
+
+The exact mixed-center carrier is kept separately. Write
+`DeltaA=A_large-A_small` and `chi=0 or 1` for each public orientation.
+`mixed_center_area` proves
+
+\[
+ 2\operatorname{rowArea}
+   =-\det[a,\epsilon,t]
+    -\Delta A\det[a,\chi(a-t),t].
+\]
+
+`mixedArea_first_center` and `mixedArea_last_center` reduce a single
+differing-center channel to a signed retained denominator minor. No
+absolute value or modular projection replaces this identity. The earlier
+actual noncanonical control has compiled signed errors `200,276,125`,
+error area `12480`, mixed area `-146` and center difference `1788356`.
+`control_mixed_center_equation` proves exactly
+`2*rowArea=146*DeltaA-12480`; the previously checked area is still
+`130543748` with GCD `1919761`. This control crosses residues.
+
+The compiled `publicPacket_area_residue_reduction` also retains an
+auxiliary-modulus Vandermonde signature:
+
+\[
+ N\operatorname{rowArea}\equiv
+ -2a_u a_w a_v(j_w-j_u)(j_v-j_u)(j_v-j_w)\pmod m.
+\]
+
+This is modulo public `m`, not modulo an unknown prime factor of `N`.
+It does not turn distinct auxiliary residue colours into a useful factor
+hit. It preserves the correlation for the next cross-residue investigation.
+
+The targeted warning-as-error build, strict leaf, ordinary root and
+`scripts/CheckSemiprimeRowAreaSpectrum.lean` all terminated successfully.
+All fourteen namespace linters passed. The audit checked all **54**
+declarations: **35** explicit and **19** generated, including **48**
+theorem/helper declarations. Every transitive axiom is one of `propext`,
+`Classical.choice` and `Quot.sound`.
+
+The separately frozen **236-pin** native record is
+`docs/semiprime-row-area-spectrum-audit.json`, replay `202610033238`, with
+independent seeds `202610033238` and `202610033239`. It includes **116**
+actual-prime cases: **60** balanced, **32** wide-ratio, **16** prime squares
+and **8** larger held-out cases, from **12** to **77** input bits. The
+corpus has **205** distinct prime labels; repeated labels and squares are
+not counted as independent shared-prime evidence. It compares **3,174,976**
+actual full-`Nt` packets with the independently reduced offset constructor,
+**14,848** exact signed center/Vandermonde triple identities, **11,153**
+same-residue `m³` divisibilities, **8,222** common-center normalized bounds
+and **7,360** eligible no-proper-GCD cases. Thirteen reverse-order controls
+preserve complete class counts. Twelve separate small `N,m` polynomial
+backend runs agree with the reference chosen-anchor classification.
+
+Every chosen anchor succeeded in this finite corpus. All useful area
+witnesses crossed residues. Both prime projections and the complete
+singular-minor prefix were counted independently, with whole-`N`
+duplicates retained. Large runs are private reference classifications,
+not public root-polynomial clocks, kernel execution certificates,
+coverage theorems or exponent fits. The source inventory was revalidated
+after terminal completion; no frozen parent was edited.
+
+## Complete native joined-family miss at the canonical 119-bit modulus (2026-10-03)
+
+The independent integer sorter completed the second frozen input:
+
+```
+N = 344480927244364494083113546915969253
+p = 526706927522612147
+q = 654027713029416199
+B = ceil(N^(1/6)) = 837262
+m = least prime >= B = 837271
+```
+
+The reference primes are distinct, satisfy `p<q<=2p`, and exceed `m`.
+Every original numerator and denominator is nonzero and smaller than both
+primes, so the original coefficient GCD prefix contains only units.
+The complete table contains **224,402,308** original packets, including
+every unit residue, every Euclidean intermediate and both centers;
+**445,455,536** adjacent companion packets, including all four center
+combinations; and **448,804,616** affine coordinates. The combined raw
+table has **894,260,152** ordinary records and **21,462,243,648** scratch
+bytes.
+
+After whole-`N` duplicates and one consistent common sign are accounted
+for, there are **553,801,139** global sign orbits. The complete folded
+`p` and `q` class counts are **both 553,801,139**. No ordinary coordinate
+is zero globally or in either field. Retaining the signed roots and the
+zero anchor gives **1,107,602,279** whole-`N` values and exactly that many
+classes in **each** field. Both proper-collapse counts are **zero**.
+
+Thus this is a **complete native exhaustion of the fixed canonical joined
+pair/endpoint family**. The first 118-bit complete replay remains a
+positive control with four signed `p` collapses; that history is preserved.
+The new miss does not exclude other moduli, additional anchors, higher
+row correlations or other factoring algorithms. It is not a Lean
+full-family execution/exhaustion certificate.
+
+The frozen **234-pin** record is
+`docs/semiprime-joined-second-integer-sort-audit.json`, replay
+`202610033240`, through
+`scripts/probe_semiprime_joined_second_integer_sort.py`. It forks explicitly
+from the completed **232-pin** integer-sort audit, preserving its **512**
+independent signed-set/NumPy oracles and finite undefined-behavior checks.
+The unchanged generator and sorter were compiled again and used a fresh
+table. Both prime projections were counted completely. The saved
+`239469.646360` milliseconds is a private reference-classification timer,
+not a public factorizer or bit-scaling measurement. The process terminated
+successfully and every frozen source hash was revalidated.
+
+The original **226-pin** NumPy replay, session `98412`, is preserved. At
+the 19:07 UTC checkpoint, its second `P` sort had independently completed
+with the same global/P counts, and its second `Q` sort was running. The
+final original two-case JSON had not yet been written. No timeout or
+partial projection is reported as terminal completion.
+
+## All same-residue centers are obstructed in the balanced hard branch (2026-10-03)
+
+The no-same-residue-hit pattern above leads to a stronger compiled theorem
+in the new ordinary-root module `SemiprimeSameResidueAreas`.
+`euclidPairs_sum_le`, `publicPairs_sum_le` and
+`publicPacket_coefficient_sum_le` prove the joint original coefficient
+envelope `|a|+t<=m`, including every intermediate and recursive vector.
+The proof retains the determinant invariant and signed numerator before
+taking this bound; it does not infer a diamond from separate box bounds.
+
+`publicPacket_minor_abs_le` proves `|D(u,w)|<=m²`.
+`publicPacket_mixedArea_abs_le` uses the signed single-center minor
+identities to prove `|det[a,chi(a-t),t]|<=m³` for all eight orientations.
+The compiled `publicPacket_same_residue_normalized_bound` then proves,
+without choosing a common center,
+
+\[
+ 2|\operatorname{rowArea}/m^3|
+   \le 6m+|\Delta A|.
+\]
+
+Only the **combined** signed area is divided by its proved `m³` factor.
+The two signed channel summands need not separately admit that division.
+`balanced_centerDifference_abs_le` derives `|DeltaA|<=p+2` from `q<=2p`,
+with all integer square-root floor errors included.
+
+The compiled terminal theorem
+`balanced_publicPacket_same_residue_no_proper_gcd` states that, for
+`N=pq` with primes `p<=q<=2p`, `m` coprime to `N`, and `6m+2<p`, **every
+actual public triple sharing one residue has no proper area GCD**. All
+public center choices are supplied by membership, and the theorem includes
+prime squares. Its companion
+`balanced_publicPacket_same_residue_zero_or_unit` gives the stronger
+integer-zero-or-modular-unit conclusion. Repeated rows are included.
+This removes the whole same-residue triple population in the balanced
+hard branch. It neither removes cross-residue triples nor applies the
+balanced center estimate to wide factor ratios.
+
+The targeted warning-as-error build, strict leaf, ordinary root and
+`scripts/CheckSemiprimeSameResidueAreas.lean` all terminated successfully.
+All fourteen namespace linters passed. All **35** declarations (**16**
+explicit and **19** generated, all theorem/helpers) were audited
+transitively and use only the three permitted standard axioms. Together
+the two new modules have **89** audited declarations.
+
+The optional **240-pin** held-out replay
+`scripts/probe_semiprime_area_anchor_frontier.py`, seed family
+`202610033242/202610033243`, was launched after those gates. At its
+19:07 UTC checkpoint it had completed an 81-bit positive chosen-anchor
+control and an **88-bit native chosen-anchor exhaustion**:
+
+```
+N = 195620725581343564404437369
+p = 10661211386827
+q = 18348827209547
+m = least prime >= ceil(N^(1/6)) = 24097
+original packets = 4000600
+distinct ordinary whole-N anchor slopes = 4000585
+p classes = q classes = 4000585
+p collapsed values = q collapsed values = 0
+```
+
+The full selected-anchor minor prefix and both field projections are
+included. This is a native counterexample to universal coverage by that
+one chosen public anchor, not a kernel execution certificate and not an
+exhaustion of other anchors or all triples. The fixed replay continues
+through its remaining independent larger inputs, squares and wide-ratio
+controls; its final JSON and terminal source-hash reconciliation remain
+pending at this checkpoint.
+
+The next unpaid information is cross-residue higher-row incidence. One
+anchor retains only its own guarded triples; trying every anchor still
+has a generic quadratic slope cost. Neither a guaranteed useful
+cross-residue incidence nor a method extracting all such information
+within the complete sixth-root bit budget has been proved. The
+construction-inclusive, every-run, N-only deterministic `N^(1/6)` bit
+factorization goal, including arbitrary ratios and squares, remains **OPEN**.
+
+## Held-out area-anchor replay completed with three native misses (2026-10-03)
+
+The **240-pin** replay above is now terminal: session `61529` completed
+successfully, wrote `docs/semiprime-area-anchor-frontier-audit.json`, and
+its full source inventory was independently revalidated. The historical
+19:07 checkpoint is preserved. All **10** inputs completed: **6** larger
+balanced held-out semiprimes, **2** prime squares and **2** wide-ratio
+controls. The full `Nt` packet/reduced-offset and joint-coefficient
+comparisons total **22,753,248** packets. There are **3,840** signed
+center/cubic-envelope/Vandermonde triple checks, **1,920** combined
+same-residue normalized bounds and **1,536** eligible balanced no-proper
+GCD checks. Wide ratios receive no balanced-obstruction credit.
+
+Exactly **three** chosen-anchor axes exhaust natively. Both prime
+projections preserve the complete distinct whole-`N` slope set in each:
+
+| Input bits | Canonical m | Original packets | Whole-N slopes = p classes = q classes |
+| --- | ---: | ---: | ---: |
+| 88 | 24097 | 4000600 | 4000585 |
+| 89 | 26237 | 4104208 | 4103386 |
+| 91 | 35521 | 5083088 | 5083078 |
+
+The 89-bit input is `N=325719652591652864525827631`, with reference
+`p=14618102127749,q=22281938499619`. The 91-bit input is
+`N=2008258667291893216564018849`, with
+`p=36001508494829,q=55782625541381`. The 88-bit input and full source
+construction are recorded in the previous checkpoint. Every chosen-axis
+minor GCD was checked; no proper minor-prefix hit repairs these three
+axes. The other seven cases are positive controls, including the 92-bit
+case, both squares and both wide-ratio cases.
+
+These are finite private reference exhaustions, not Lean execution
+certificates. They concern one deterministic chosen public anchor, not
+other anchors, the complete joined pair family on these inputs or every
+cross-residue triple. The compiled same-residue obstruction and these
+larger native misses together locate the unresolved information in
+cross-residue incidence beyond one chosen axis. Generic all-anchor work
+is still quadratic. No guaranteed sixth-root coverage or complete
+sixth-root bit factorizer is claimed. The original independent NumPy
+second-case Q sort remains running at the 19:11 UTC checkpoint.
+
+## Independent complete joined replay reconciled (2026-10-03)
+
+The original **226-pin** NumPy replay, session `98412`, terminated with
+exit code zero at the 19:31 UTC observation. Its final
+`docs/semiprime-joined-sorted-coverage-audit.json` retains two complete
+cases and stops after the first complete signed miss. All frozen sources
+were independently revalidated. Every shared non-timing field agrees
+with the separate **232-pin** first-case and **234-pin** second-case
+integer-sort audits, including all packet counts, whole-N sign orbits,
+both complete prime projections, zero flags and collapsed-value counts.
+
+The first, 118-bit, case has `535246412` global sign orbits, with
+`535246410` folded p classes and `535246412` folded q classes; its signed
+p projection collapses four values. The second, 119-bit, case has
+`553801139` global sign orbits and that same count in each folded prime
+projection. Its signed whole-N set, including the zero anchor, has
+`1107602279` values and no proper projected collision. The NumPy
+reference timers were approximately `2602293.55` and `2744223.70`
+milliseconds. They time the private reference backend only. This
+independent completion confirms the earlier native finite miss; it is
+neither a kernel exhaustion certificate nor an N-only factorizer clock.
+Earlier pending checkpoints remain historical records.
+
+## Two complete public anchor axes on the canonical miss (2026-10-03)
+
+`scripts/probe_semiprime_complete_anchor_coverage.py` and
+`scripts/semiprime_anchored_coverage_rows.cpp` provide a separate ordinary
+slope classifier. The **245-pin** replay `202610033244`, session `40243`,
+terminated successfully and wrote
+`docs/semiprime-complete-anchor-coverage-audit.json`; the source inventory
+was revalidated after completion. Unit-numerator Euclidean packets at
+the public residues `j=1` and `j=2` select the two anchors in the larger
+center. Both axes retain every original intermediate and both centers.
+They are classified **separately**, without a sign quotient.
+
+The unchanged canonical input is
+`N=344480927244364494083113546915969253`, `m=837271`, with private
+reference primes `p=526706927522612147,q=654027713029416199`.
+Each axis has `224402308` original packets, four globally singular
+denominator minors, `224402304` ordinary records and `3590436864`
+scratch bytes. The j=1 anchor has `(a,t)=(1,83010)` and
+`224402285` distinct whole-N slopes; the j=2 anchor has
+`(a,t)=(1,332040)` and `224402289` distinct whole-N slopes.
+Both complete p and q projections preserve their respective whole-N
+counts. Thus neither chosen axis has a proper slope collision.
+
+The native backend is independently checked against full-N integer lifts,
+individual whole-N inverses and classifications on **64** families,
+including **16** wide-field controls under undefined-behavior checks, and
+**eight** literal-large-input residue slices. It also reproduces all
+three prior 88/89/91-bit chosen-axis misses. For this backend,
+`m²<min(p,q)` and the compiled joint coefficient bound make every
+nonzero minor a unit; the native replay **infers** this prefix property
+from those checked private bounds rather than evaluating every whole-N
+GCD. Zero minors remain recorded. The two complete private reference
+timers were approximately `64520.82` and `66543.90` milliseconds.
+
+Cross-anchor pooling, opposed secants and endpoints were not tested by
+this audit. It does not exhaust other anchors or all cross-residue
+triples, prove native Lean refinement, or pay N-only bit costs. The
+guaranteed construction-inclusive `N^(1/6)` bit factorization goal,
+including arbitrary factor ratios and squares, remains **OPEN**.
+
+## Full affine carrier and complete centered-scalar misses (2026-10-03)
+
+`SemiprimeAffinePointAreas` now retains every original row `(a,L,t)` in
+two coordinates. Remove **one common integer midpoint plane** first:
+
+`z=-2L-a*A_small-t*B_small`.
+
+The exact source decomposition is
+`z=epsilon_side+chi_side*(a-t)*(A_large-A_small)`. Both signed channels
+remain upstream, including overlapping admissible center choices. After
+the leading-unit guard, store `rho=t/a` and `zeta=z/a` modulo the whole
+N. The genuine affine determinant of `(1,rho,zeta)` for every triple,
+multiplied by the three original leading coefficients, is exactly twice
+the original row area. `packetPoint_area_gcd` transports the **entire
+GCD**, including zeros, prime powers and whole-N saturation.
+`publicPacket_point_area_gcd` discharges the guards for actual public
+packets when `2<=m<p,q`, with no balanced-ratio or distinct-prime
+assumption. Thus all cross-residue and mixed-center triples survive;
+this is not restricted to an anchor.
+
+The previous leading-coordinate root satisfies
+`2*alpha=A_small+B_small*rho+zeta`. A chosen anchor's scalar slope is
+one secant equation through its point. A residual coordinate difference
+retains the two-row functional `-2*offsetMinor-B_small*denominatorMinor`
+up to a unit. These are exact cancellation identities; they do not
+replace an individual collision by a signed sum of different collisions.
+The full point list has R entries, with the existing prime-modulus bound
+`R<=8*m*(log2(m)+1)^2`. This is a **coordinate-storage count**, not a
+complete incidence-search or bit-complexity bound.
+
+The ordinary-root/family-registered module passed the targeted
+warnings-as-errors Lake build, strict leaf and ordinary-root source
+checks, and `scripts/CheckSemiprimeAffinePointAreas.lean`. All **14**
+namespace linters pass. All **30** module declarations (**24** explicit,
+**6** generated, **24** theorem/helper declarations) were transitively
+audited; only `propext`, `Classical.choice`, and `Quot.sound` occur.
+
+The independent **251-pin** replay `202610033246`, session `28471`,
+terminated successfully and wrote
+`docs/semiprime-centered-point-coverage-audit.json`. It is reproduced by
+`scripts/probe_semiprime_centered_point_coverage.py` and
+`scripts/semiprime_centered_point_rows.cpp`; all source pins were
+revalidated after completion. Exact full-N oracles compare **128**
+families in each of **three** scalar modes (**384** streams), including
+**32** wide-field families under undefined-behavior checks. The affine
+carrier has **3072** exact triple/GCD checks on **48** families, including
+**1536** prime-square transports and **73** globally zero or saturated
+area cases. The previously validated signed integer sorter is unchanged.
+
+For the same complete canonical 119-bit input and modulus above, every
+mode retains all **224402308** original packets. Consistent whole-N
+reflection, global duplicates, both full private prime projections and
+the zero anchor are included. The three complete outcomes are:
+
+| Scalar stream | Raw records | Global sign orbits = folded p classes = folded q classes |
+| --- | ---: | ---: |
+| Common midpoint residual divided by a | 224402308 | 224402246 |
+| Actual signed per-center error divided by a | 224402308 | 224402041 |
+| Their union | 448804616 | 336603195 |
+
+All local/global ordinary zero flags are false. The corresponding signed
+whole-N sets with zero anchor have `448804493`, `448804083`, and
+`673206391` values, respectively; neither factor projection collapses
+any value. All three fixed scalar families therefore **miss natively**.
+Private reference generation/sort timers were approximately `60006.27`,
+`58656.74`, and `113354.61` milliseconds. Scratch files had `5385655392`
+bytes for either separate stream and `10771310784` for their union.
+At the scoped observation there were about **54 GiB available RAM** and
+**699 GiB free disk**. These are resource observations, not bit bounds.
+
+The native leading-coefficient prefix is inferred from checked private
+factor bounds rather than evaluated as every whole-N GCD. The finite
+private classifications are not kernel execution/exhaustion certificates
+or factorizer runtimes. These scalar misses do not exhaust full
+two-coordinate incidence. The unresolved task is useful cross-residue
+incidence and a complete extractor whose construction, arithmetic,
+recovery and memory stay inside the sixth-root bit budget. Arbitrary
+ratio acquisition and the every-run N-only `N^(1/6)` theorem, including
+squares, remain **OPEN**.
+
+## Auxiliary conic, public prefix guards and first-coordinate obstruction (2026-10-03)
+
+`SemiprimeQuadraticPointJets` proves the exact integer discriminant
+identity for the original centered packet, before any information is
+projected:
+
+`L²-4*N*a*t=m²*(b_center²-4*a*c_center)`.
+
+The original quotient relation also gives
+`j*L+a*j²+N*t=m²*c_center`. Normalize only after the actual leading
+coefficient's auxiliary unit check. In **ZMod(m²)** put
+`rho=t/a` and `tau=-2*L/a`. The checked constraints are
+
+`tau²=16*N*rho`,
+`j*tau=2*j²+2*N*rho`,
+`(tau-4*j)²=0`.
+
+Thus each literal residue carries an auxiliary conic tangent and a
+square-zero displacement. `jetY` uses the **physical N's** two exact
+midpoints while its ring is explicitly `ZMod(m²)`. The affine plane
+removal and both signed source channels commute with that normalization.
+`publicPacket_auxiliary_leading_unit` discharges the auxiliary guard for
+every actual packet at a prime m. These constraints concern the public
+auxiliary modulus, not the whole input or its factor fields. In particular,
+a nonzero nilpotent modulo m² supplies no proper factor of N.
+
+The same module proves a separate universal obstruction for the physical
+first coordinate. Its difference has exactly the GCD of the original
+denominator minor. The existing joint envelope bounds that minor by m².
+`publicPacket_pointX_no_proper_gcd` therefore excludes **every** proper
+pair GCD from `t/a` alone when `m²<p,q`, including squares and arbitrary
+ratios in that branch. It does not exclude triples involving the second
+coordinate or all same-residue triples at wider ratios.
+
+The compiled connection to the existing **public compressed Strassen
+prefix** now avoids supplied prime factors entirely. If `m²<N` and
+`factorPrefix N m=none`, then:
+
+- Every nonzero signed integer with absolute value at most m² is a unit
+  modulo N (`prefix_none_bounded_int_unit`).
+- Every actual leading coefficient is a unit, and every possible
+  denominator minor is globally zero or unit.
+- With `2<=m`, every actual triple has exactly its original row-area GCD
+  in the two-coordinate point carrier
+  (`prefix_none_publicPacket_point_area_gcd`).
+
+These statements cover **arbitrary N** satisfying the prefix premise,
+not only a supplied balanced semiprime. One checked public prefix output
+provides the unit premises for subsequent queries, without constructing
+the minor matrix. The prior prefix represents m² integers with m roots
+and m evaluation points; its query bound excludes polynomial construction
+and evaluation. Its full bit refinement is still unproved. This new
+transport theorem does not pay that cost or produce a useful triple.
+
+The ordinary-root/family-registered module passed its targeted
+warnings-as-errors Lake build, strict leaf and ordinary-root source
+checks, and `scripts/CheckSemiprimeQuadraticPointJets.lean`. All **14**
+namespace linters pass. All **26** module declarations (**22** explicit,
+**4** generated, **24** theorem/helper declarations) were transitively
+audited using only `propext`, `Classical.choice`, and `Quot.sound`.
+Together with the point-carrier module this turn adds **56** audited
+declarations, including **48** theorem/helper declarations.
+
+The optional **255-pin** replay `202610033248`, held-out seed
+`202610033249`, session `96563`, terminated successfully. The final
+`docs/semiprime-quadratic-point-jets-audit.json` is reproduced by
+`scripts/probe_semiprime_quadratic_point_jets.py`; all pins were
+independently revalidated. Its **48** primary and **12** held-out inputs
+comprise **20** prime squares, **20** balanced distinct-prime inputs and
+**20** wide-ratio inputs. These are separate sampled inputs, not a
+shared-prime Cartesian product. Every actual intermediate and both
+centers were retained in all complete small families.
+
+The existing N-only compressed prefix was executed on all **60** complete
+small/held-out inputs and returned no factor, with m roots, m evaluation
+points and no candidate grid. The canonical 119-bit input uses **39**
+sampled complete residue slices, **11354** packets; no new large public
+prefix or full incidence classifier was run there. Together with the
+**56268** packets from the complete families, all **67622** packets pass
+the exact integer discriminant/tangent, signed physical midpoint,
+auxiliary conic/tangent/nilpotent and base-point checks. There are
+**66486** nonzero and **1136** zero auxiliary displacements, and **37094**
+negative leading coefficients. The corresponding conic expression
+modulo the **whole N** is nonzero on all 67622 packets: auxiliary
+nilpotence was not silently transferred to another modulus. The new
+physical first-coordinate obstruction has **5856** eligible finite
+pair/GCD checks. These controls are not kernel execution certificates.
+
+This slice proves how a public preliminary stage enables the complete
+row-area carrier and describes the source's auxiliary structure. The
+native centered-scalar misses remain unchanged. Useful factor-field
+cross-residue incidence, its complete efficient extraction, the priced
+public polynomial/prime-acquisition/bit backend and the every-run
+construction-inclusive N-only `N^(1/6)` factorization theorem remain
+**OPEN**. Neither the auxiliary conic nor the finite prefix controls
+receive coverage or complexity credit for those unresolved parts.
+
+## Literal quadratic roots retain the residue shift (2026-10-03)
+
+The new compiled module
+[SemiprimeLiteralQuadraticRoots.lean](../RiemannGaussian/SemiprimeLiteralQuadraticRoots.lean)
+retains the packet-specific residue before compressing the original
+quadratic. The earlier factor-coordinate change `Y=mX+j` used a different
+coordinate for each residue. In the common coordinate `T=mX`, the actual
+centered quotient quadratic is
+
+\[
+  aT^2+mbT+m^2c=a(T+j)(T-\gamma)\pmod N,
+  \qquad \gamma=\alpha-j,\quad \alpha=-L/a,\quad L=mb-2aj.
+\]
+
+`publicPacket_common_split` checks this identity for every original packet,
+under its public unit guard. `publicPacket_resultant_exact` and
+`publicPacket_resultant_gcd` identify the genuine Mathlib degree-two
+Sylvester resultant with the four root differences, up to the checked
+unit factors `m^4` and `a_u^2*a_w^2`. Original constant and linear
+coefficient GCDs also survive: they become the shifted-root endpoint and
+the known-plus-shifted root sum. These theorems include repeated roots,
+zero differences, whole-modulus saturation and prime powers. They do not
+require building a Sylvester matrix for every pair or retaining a
+quadratic-size row-pair list.
+
+The new literal carrier keeps the `m` known residue roots and all `R`
+original shifted roots before global deduplication. The augmented carrier
+also keeps the entire old joined family, with proved cardinality at most
+`5R+m`. `recoverLiteralQuadratics` uses the existing public compressed
+prefix before reflected polynomial recovery. Failed-prefix theorems
+supply the whole-`N` modulus, leading-coefficient and known-root units;
+no private factor is needed for these guards. The recovery is sound,
+retains all old successes, and recovers any proper original row-pair
+resultant. The proved GCD-query bound is `15R+5m+1`, or
+`120m(log2(m)+1)^2+5m+1` for prime `m`. This is a query count, excluding
+polynomial construction, evaluation, acquisition and bit refinement.
+
+The scoped targeted warnings-as-errors build, strict direct leaf and
+ordinary-root checks, all **14** namespace linters and the complete
+transitive standard-axiom audit passed. The checker audited **59** module
+declarations: **40** explicit and **19** generated, including **48**
+theorem/helper declarations. Only `propext`, `Classical.choice` and
+`Quot.sound` occur transitively. Ordinary root and semiprime-family
+registration are present; no publication or wider gate was run.
+
+The saved reference replay is
+[probe_semiprime_literal_quadratic_roots.py](../scripts/probe_semiprime_literal_quadratic_roots.py)
+with the new independent row generator and witness-bearing integer sorter.
+Its audit is
+[semiprime-literal-quadratic-roots-audit.json](semiprime-literal-quadratic-roots-audit.json),
+replay seed **202610033250**, with **261** immutable source pins, revalidated
+after completion and independently afterward. The generator was checked
+against full original `Nt`-containing rows and whole-`N` inverses on **128**
+families, including **32** wide-field cases, for both modes (**256** scalar
+streams). Undefined-behaviour checks cover the finite generator and sorter.
+Independent algebra controls include **3072** original-resultant GCD
+transports (**1536** prime-square), **575** zero/saturated resultants,
+**6144** constant/linear GCD transports, **3072** common-coordinate
+factorizations and **64** independently evaluated SymPy resultants.
+
+Both complete modes were replayed on the previously exhausted canonical
+119-bit input, with every residue, Euclidean intermediate and both centers:
+
+| Carrier | Raw coordinates | Whole-`N` sign orbits | Folded `p` classes | Folded `q` classes |
+| --- | ---: | ---: | ---: | ---: |
+| Known residue plus literal shifted roots | 225239579 | 225239579 | 225239578 | 225239579 |
+| Old joined plus literal shifted roots | 1119499731 | 779040718 | 779040716 | 779040718 |
+
+Both modes contain all **224402308** original packets. The augmented mode
+also contains all **445455536** old companion coordinates and **448804616**
+old affine coordinates. Both prime projections were counted in full even
+after finding a collision. The signed families have respectively **2**
+and **4** collapsed `p` values, and **0** collapsed `q` values. Both therefore
+repair this finite native miss. Private bounded generation/classification
+times were about **67.671 s** and **285.714 s**; these are not public
+factorizer clocks. Scratch files were **5405749896** and **26867993544** bytes;
+the complete `q` count used a 16-byte witness label per global sign orbit.
+
+The first collision has signed whole-input coordinates
+`217662715360117150581605711716409879` and
+`213417562227242529592818253374002359`, with exact difference GCD
+`526706927522612147`. Native scanning resolves these to larger-center
+packets `(j,a,t)=(250176,-229343,126195)` and `(704514,-32129,2647)`, the
+second with its root negated. Thus this hit uses the **sum** of the actual
+shifted roots. The ordinary original resultant has GCD **1**; reflecting
+`X` in the second quadratic gives the proper resultant GCD. The separate
+kernel source/recovery control is recorded in the following continuation;
+the classifier audit itself deliberately retains its historical
+`source_packet_membership_kernel_checked=false` flag.
+
+This supplies exact matrix-free extraction of the original quadratic
+pair information and repairs a specific full native miss. Universal
+useful-hit coverage, cross-residue triple extraction, arbitrary-ratio
+coverage and the complete public construction-inclusive deterministic
+`N^(1/6)` **bit-operation** theorem remain **OPEN**. No finite classifier
+count, signed collision or linear query bound is credited as that theorem.
+
+## Kernel source control for the literal 119-bit repair (2026-10-03)
+
+The follow-up compiled module
+[SemiprimeLiteralRootControl.lean](../RiemannGaussian/SemiprimeLiteralRootControl.lean)
+checks the candidate packets from the preceding private discovery against
+their public Euclidean source. `control_vectors` and `control_membership`
+certify both negative-numerator, larger-center packets without enumerating
+the entire 224-million-packet family in the kernel. `control_offsets` and
+`control_coefficients` check the full original integer rows; the two
+offsets are **99265048431547030603129** and **21436717488731681518960**.
+Whole-input unit checks and coefficient equations certify the affine roots
+before subtracting their actual residues. `control_gcd` then checks the
+proper shifted-root **sum** GCD **526706927522612147**.
+
+`control_resultants` and `control_resultant_gcds` evaluate the genuine
+original integer Sylvester resultants. The unsigned pair is coprime to the
+input; reflecting `X` in the second original quadratic has the same proper
+GCD as the signed shifted-root pair. `control_recovers` proves existence
+of a proper recovery at the actual `m=837271`, and
+`control_sixthWidth`, `control_public_modulus` and `control_public_recovers`
+check the input-only width **837262**, least-prime selector and recovery.
+The witnesses and private fields are not algorithm inputs. This remains
+one finite source/recovery control, not a universal coverage theorem or
+an execution-time certificate.
+
+The targeted `--wfail` build, strict leaf and ordinary-root checks,
+**14** namespace linters and complete transitive standard-axiom audit all
+passed. There are **28** audited declarations: **20** explicit and **8**
+generated, including **24** theorem/helper declarations. Ordinary-root and
+semiprime-family registration are present. The saved resolver
+[probe_semiprime_literal_root_control.py](../scripts/probe_semiprime_literal_root_control.py)
+and [audit](semiprime-literal-root-control-audit.json), replay seed
+**202610033251**, revalidate **266** frozen source pins. Its independent
+full-`Nt` finite controls cover **48** families, **1795** queries and
+**1429** exact source matches, including wide fields and signed orientation;
+the finite native resolver is also checked with UBSan. Both canonical
+source packets and both integer resultants are independently reconstructed
+and checked against SymPy. No parent audit or historical classification
+flag was rewritten.
+
+The residue correction in the exact signed numerator is
+**7034691736898430**: the old affine sum numerator has GCD **1**, whereas
+subtracting that correction gives integer **8105647840068329889113876491**
+with the proper GCD. These last integer-minor comparisons are independent
+reference computations; the source, root, resultant and recovery theorems
+above carry the kernel claims. The user has explicitly directed the next
+substantive advance toward an arithmetic forcing theorem or a failure of
+the **entire amended family**, rather than further successful controls.
+Universal hit coverage and the complete bit-complexity proof remain OPEN.
+
+## Complete amended-family native miss at 121 bits (2026-10-03)
+
+Following the user's direction, the next experiment tests for failure of
+the **entire amended family**, rather than accumulating further successful
+examples or their kernel certificates. The planned frontier contains three
+balanced 121-bit inputs, fixed by candidate seed **202610033253** before
+any complete classification. The replay stops at the first full signed
+exhaustion, after both private prime projections have been counted. The
+**first** planned input is already a complete native miss, so the remaining
+two candidates were not run.
+
+The complete input and public modulus are
+
+\[
+\begin{aligned}
+ N&=1852788902750902993555752985274134361\\
+  &=1306918229730970993\cdot1417677755655990377,\\
+ B&=1108250,\qquad m=1108253,\qquad m^2=1228224712009.
+\end{aligned}
+\]
+
+The two prime labels satisfy `p≤q≤2p` and `m^2<min(p,q)` in the external
+reference arithmetic. The width satisfies `(B-1)^6<N≤B^6`, and `m` is
+the canonical least prime at least `B`. The public prefix and all small
+denominator guards are therefore inferred clear from the private prime
+bounds; a large public prefix was **not** newly executed. These exact
+input checks are reference computations, not a new Lean certificate of
+this input's prime labels, modulus or complete exhaustion.
+
+Every original residue, Euclidean intermediate and both centers were
+enumerated, retaining all old channels and every literal root:
+
+| Retained population | Count |
+| --- | ---: |
+| Original packets, hence literal shifted roots | 308082032 |
+| Old adjacent companion coordinates | 611731056 |
+| Old leading/denominator affine coordinates | 616164064 |
+| Known residue coordinates, including zero | 1108253 |
+| Complete ordinary coordinate stream | 1537085405 |
+
+The complete whole-input sign-orbit count is **1070982500**. Both folded
+prime-field counts are **exactly 1070982500**. The ordinary family contains
+the global zero anchor, so its full signed carrier has **2141964999**
+values; **both** signed prime images have exactly that count. There are
+**zero** collapsed signed values in either field. This is a complete
+native exhaustion of the **old joined plus literal** family, not only a
+failure of the newly added roots, one sign choice, one center, one residue
+slice or one prime projection.
+
+The replay source and audit are
+[probe_semiprime_literal_inplace_frontier.py](../scripts/probe_semiprime_literal_inplace_frontier.py)
+and [semiprime-literal-inplace-frontier-audit.json](semiprime-literal-inplace-frontier-audit.json),
+replay seed **202610033252**, with **270** source pins revalidated after
+completion and independently afterward. The new native path stores each
+whole-`N` common-sign orbit in **16** bytes. After complete first-field
+sorting and global deduplication, it transforms the same table into its
+equivalent second-field orientation and sorts in place; it adds no
+separate second-field label vector. **512** arbitrary whole-`N` signed-set
+controls, including **32** wide-field cases, validate both full projection
+counts, global/sign duplicates, zero endpoints and saturation. **64**
+actual full-`Nt` source families in both modes (**128** scalar streams),
+including **16** wide-field families, independently check the exact raw
+coordinates and all counts. Both finite native components pass UBSan.
+The complete private generation/classification took about **406.696 s**
+and used a **24593366480**-byte scratch table. This is not a public
+factorizer time or a bit-complexity certificate.
+
+The mathematical meaning of the computed separation is already covered
+by compiled `recoverRows_none_iff_prime_separation` and
+`recoverReflectedRows_none_iff_signed`: injectivity of both prime images
+of the globally deduplicated signed family leaves every distinct pair
+difference a unit. The zero anchor includes endpoint tests; reflection
+includes sums; the recovery equivalence includes saturated-product
+refinement. Thus the native miss concerns the full detector, rather than
+one product GCD that might hide a recoverable proper leaf. Together with
+clear public prefix guards, this is the complete failure criterion for
+`recoverLiteralQuadratics`. **The large separation itself is not kernel
+certified.** No theorem declaring this input's recovery `none` is added.
+
+The original frozen 24-byte generator and separate-vector sorter are used
+for the independent full-data confirmation described below. The full
+amended-family miss remains a finite native finding. The preceding
+119-bit source/recovery theorem remains valid and receives no universal
+coverage credit.
+
+For shifted packet roots the exact signed arithmetic numerator is
+
+\[
+ a_u a_v(\gamma_u+\gamma_v)
+  =-a_vL_u-a_uL_v-a_u a_v(j_u+j_v)\pmod N.
+\]
+
+Unit leading coefficients preserve its full GCD. The residue correction
+can be cubic in `m`, so it changes factor-scale divisibility even though
+the known root uses a small residue. This explains how the amendment
+restored information on the previous miss, but **does not force useful
+divisibility**. The present full miss is evidence against universal
+coverage of this scalar family. The exact original pair-resultant
+transport remains valid; a scalar-family miss does not imply absence of
+proper **three-row areas** in the two-coordinate affine carrier.
+Any subsequent proposal must independently establish the useful
+arithmetic incidence and its efficient extraction. The complete public
+construction-inclusive deterministic `N^(1/6)` bit theorem remains OPEN
+even if a different family's coverage is eventually proved.
+
+## Independent full confirmation of the amended 121-bit miss (2026-10-03)
+
+The original frozen **24-byte** literal-row generator and original
+separate-`Q` integer sorter independently confirm the preceding full
+amended-family miss. The primary implementation compacts and transforms
+a **16-byte** table in place; the confirmation keeps the full original
+first-field table and builds a separate 8-byte second-field label vector.
+Both complete implementations agree on **every** source-population,
+whole-sign-orbit, folded-projection, zero-endpoint and signed-class count.
+The complete signed carrier and each prime image again have exactly
+**2141964999** values, with **zero** collapsed values in either field.
+
+The saved confirmation is
+[probe_semiprime_literal_frontier_confirmation.py](../scripts/probe_semiprime_literal_frontier_confirmation.py)
+and [semiprime-literal-frontier-confirmation-audit.json](semiprime-literal-frontier-confirmation-audit.json),
+replay seed **202610033254**. All **272** inherited and new source pins
+were revalidated after completion and independently afterward. Before
+its complete run, the confirmation checked **40** canonical residue
+slices against full original `Nt`-containing integer rows and whole-`N`
+inverses: **7926** original packets and **39550** scalar coordinates,
+including both centers, every intermediate, source-order companions,
+both private-factor residue controls, and residues near both endpoints.
+The full original generator and sorter then completed without changing
+their frozen sources. The confirmation took about **424.864 s** and used
+a **36890049720**-byte scratch table. Both prime projections were counted
+completely. These are private reference costs, not public factoring clocks.
+
+This is a **corroborated complete finite native miss** of the canonical
+amended detector. The large source enumeration and separation counts
+have **not** been checked by the Lean kernel. No large-input `none`
+theorem, universal impossibility result for other row families, or
+bit-complexity certificate is claimed. All preceding positive source,
+recovery, cancellation and query-bound theorems remain valid. This result
+localizes the unresolved coverage issue: retaining the residue shift
+repairs the old 119-bit control, but does not supply a useful scalar
+collision on every input. Further progress must establish a different
+arithmetic forcing mechanism or exploit the retained two-coordinate
+three-row incidence with a proved extraction cost; additional successful
+scalar examples would not close either gap.
+
+The active deterministic, N-only, every-run `N^(1/6)` **bit-operation**
+factorization goal remains **OPEN**, including arbitrary ratios and prime
+squares, all construction and acquisition work, recovery and memory.
+
+## Parametric obstruction to generic bounded scalar projections (2026-10-03)
+
+[SemiprimeAffineProjectionObstruction.lean](../RiemannGaussian/SemiprimeAffineProjectionObstruction.lean)
+proves a general information-loss obstruction, rather than adding successful
+factorization examples. For **every** positive integer coefficient height
+`h`, there exist distinct primes and three affine points whose area has a
+proper semiprime GCD, while the pooled values of **all** nonzero integer
+linear forms with both coefficients bounded by `h` are separated in both
+prime fields. Signs, dilated directions, global deduplication, and the zero
+anchor are included. Both the ordinary and reflected scalar recovery
+procedures return `none` on this complete projection family.
+
+The construction is explicit. Set
+
+```
+lambda = h + 1
+B = h * (lambda + 1) + 1
+H = h * (B + 1)
+u = (0,0), w = (B,1), v = (lambda*B,lambda+p)
+N = p*q
+p > 2*lambda*H
+q > 2*lambda*H + 2*h*p
+```
+
+For each bounded nonzero form `(r,s)`, its nonzero-point evaluations are
+`A = r*B+s` and `C = lambda*A+s*p`. The positional base lifts equality of
+small residuals to equality of both coefficients. Modulo `p`, every `C`
+becomes `lambda*A`. A cross-point match would require `(r,s)` to be
+`lambda` times another bounded nonzero coefficient pair. Since
+`lambda=h+1`, that exceeds the permitted height. Matches within either
+point recover the same form, and zero cannot match a nonzero evaluation.
+Thus the first prime image is injective on the **entire pooled family**.
+The ordinary integer bound `|value| <= lambda*H+h*p` proves injectivity in
+the second prime image as well. Closure under negation then covers all
+reflected sums and endpoints, without treating global matches as factors.
+
+Nevertheless, the actual three-point determinant is `B*p`. It vanishes
+in the first field and remains nonzero in the second, so its whole-`N`
+GCD is exactly the proper divisor `p`. The compiled theorem
+`projection_obstruction` states both scalar exhaustion results and that
+proper area GCD. `exists_projection_obstruction` discharges the existence
+of suitable primes for every `h>=1`, using the infinitude of primes.
+This is a parametric negative theorem, with no finite successful controls
+or numerical coverage assumptions.
+
+The scope matters. These points depend on `p`; **membership in the public
+Euclidean packet source is not asserted**. The prime pair is chosen after
+the coefficient height; the theorem does not identify `h` with the
+canonical sixth-root parameter. It establishes that useful three-row
+incidence alone does not justify replacing the faithful two-coordinate
+carrier by a bounded family of scalar linear projections. A proof about
+the actual source must exclude these configurations using its arithmetic,
+or an extractor must retain the incidence through a different observable.
+Adaptive secants, nonlinear observables, and other row sources are not
+ruled out. The preceding 121-bit amended-family miss remains corroborated
+native evidence; this theorem is **not** a kernel exhaustion certificate
+for that source enumeration.
+
+The focused warning-as-error target build, strict leaf, ordinary root
+elaboration, and
+[CheckSemiprimeAffineProjectionObstruction.lean](../scripts/CheckSemiprimeAffineProjectionObstruction.lean)
+all completed with exit status **0**. The namespace's **14** linters found
+zero errors in **50** explicit plus **37** generated declarations. The
+transitive standard-axiom audit checked all **87** declarations, including
+**74** theorem/helper declarations; there are **37** explicit proof/helper
+statements. Only `propext`, `Classical.choice`, and `Quot.sound` occur. The
+new module is registered in the ordinary root and the `semiprime` explorer
+family. The saved
+[semiprime-affine-projection-obstruction-audit.json](semiprime-affine-projection-obstruction-audit.json)
+retains **275** source pins, including all **272** unchanged parent pins
+and the new leaf and checker. No new native success controls or coverage
+searches were run for this result.
+
+The active deterministic, N-only, every-run `N^(1/6)` **bit-operation**
+goal remains **OPEN**. Arithmetic forcing for an amended actual source,
+or coverage and complete extraction cost for its retained incidence, is
+still required; arbitrary factor ratios, prime squares, construction,
+acquisition, recovery, and memory remain within the goal's scope.
+
+## 2026-10-03: two scalar axes for the signed coordinate-dual area
+
+The new
+[SemiprimeSymmetricRowAxes.lean](../RiemannGaussian/SemiprimeSymmetricRowAxes.lean)
+retains the complete preceding amended scalar pool and adds two values per
+original public packet. For a packet with coefficients `(a,L,t)`, write
+`h_plus=a+t`, `h_minus=a-t`, and `r_sign=-L/h_sign` modulo the original
+`N`. The division is used for transport only after proving its denominator
+is a unit. Zero denominators emit zero and are handled explicitly.
+
+For original packets `u,v`, the literal integer determinant of `u`, its
+signed coordinate dual, and `v` satisfies the compiled identity
+`dualCoordinateArea_factor`:
+
+```
+D_sign = -h_opposite(u) * (h_sign(u)*L(v)-h_sign(v)*L(u))
+       = -h_opposite(u)*h_sign(u)*h_sign(v)*(r_sign(u)-r_sign(v)).
+```
+
+Here the middle row is defined explicitly as `(t,L,a)` or `(t,-L,a)`.
+**Membership of this exact dual in the actual Euclidean stream is not
+asserted.** The public coefficient diamond proves `|a+t|,|a-t|<=m`.
+Consequently a failed public Strassen prefix, with `m^2<N`, makes every
+nonzero coefficient phase a unit. The theorem
+`publicPacket_dualCoordinateArea_gcd` preserves the complete whole-`N`
+GCD, including prime powers and saturation, rather than only the two
+private field zero sets. `recoverSymmetricRows_of_proper_dual_area`
+therefore recovers every proper factor supplied by this guarded channel.
+It does not prove such an area exists on every input.
+
+The amendment retains all earlier affine roots, companion roots, literal
+shifted roots and known residue roots. `recoverSymmetricRows_preserves_literal`
+proves that every success of the preceding amended extractor survives.
+`symmetricRoots_card_le` bounds the deduplicated pool by `7*R+m`, where
+`R` is the full original packet count; `symmetricGcdCount_le` bounds the
+prefix and reflected recovery queries by `21*R+5*m+1`. These are scalar
+cardinality and GCD-query statements, **not a construction, recovery or
+memory bit-complexity certificate**.
+
+The focused warning-as-error target build, strict leaf, ordinary root,
+and
+[CheckSemiprimeSymmetricRowAxes.lean](../scripts/CheckSemiprimeSymmetricRowAxes.lean)
+all completed with exit status **0**. All **38** declarations were audited:
+**26** explicit and **12** generated, with **28** theorem/helper
+declarations and **16** explicit proof/helper statements. The **14**
+namespace linters found zero errors. Only `propext`, `Classical.choice`
+and `Quot.sound` occur transitively. The leaf is registered in the
+ordinary root and the `semiprime` explorer family. Complete actual-source
+coverage of the enlarged family and the full sixth-root bit clock remain
+**OPEN**.
+
+## 2026-10-03: arithmetic reason residue-partner cancellation gives no factor
+
+The new
+[SemiprimeRowPartnerOffsets.lean](../RiemannGaussian/SemiprimeRowPartnerOffsets.lean)
+proves a source-arithmetic obstruction to the natural partner argument.
+Let `u,v` be **actual public packets**, with residues `j,k`, opposite
+public centers and oriented swapped coefficients
+
+```
+a(v)=s*t(u), t(v)=s*a(u), s in {-1,1}, N == j*k (mod m).
+delta=L(v)-s*L(u).
+```
+
+The public quotient relation first gives `m | a*j^2-N*t`. Together
+with the partner congruence and the public unit residue `j`, this forces
+`m | a*j-t*k`. The two actual tangent identities are
+
+```
+j*L(u)+a*j^2+N*t = m^2*c(u),
+k*L(v)+s*t*k^2+N*s*a = m^2*c(v).
+```
+
+Multiplying the second identity by `j` and subtracting `s*k` times the
+first gives exactly
+
+```
+j*k*delta+s*(N-j*k)*(a*j-t*k) = m^2*(j*c(v)-s*k*c(u)).
+```
+
+Both factors in the correction term are divisible by `m`; `j*k` is
+coprime to `m^2`. The compiled theorem `publicPacket_partner_delta_dvd`
+therefore proves **`m^2 | delta`**. The exact opposite-center equations
+give `2*delta=s*epsilon(u)-epsilon(v)`. Each public centering error has
+absolute value at most `m^2`, so `partner_delta_abs_le` proves
+`|delta|<=m^2`. The integer theorem `bounded_multiple` then restricts
+the correction to **`0`, `m^2` or `-m^2`**.
+
+After a failed public prefix, `m` is a unit modulo `N`. Thus the offset
+correction is zero or a unit. With `alpha(v)=-L(v)/a(v)` and
+`beta(u)=-L(u)/t(u)`, the exact identity
+`a(v)*(alpha(v)-beta(u))=-delta` transports that conclusion to the roots.
+`publicPacket_partner_root_zero_or_unit` proves the paired-root difference
+is **zero or a unit**, so its GCD with `N` is the whole modulus or one;
+this symmetry cannot supply a proper factor.
+
+The same conclusion now covers **both new signed axes**, rather than
+only the preceding affine channels. Their exact partner identities are
+
+```
+h_plus(v)*(r_plus(v)-r_plus(u)) = -delta,
+h_minus(v)*(r_minus(v)+r_minus(u)) = -delta.
+```
+
+With nonzero denominators, `publicPacket_partner_axis_zero_or_unit`
+proves each corresponding difference or reflected sum is zero or a unit.
+`publicPacket_factor_residue_axis_zero_or_unit` applies this directly
+to the true factor residues. If an axis denominator vanishes, so does
+its partner denominator; the existing explicit zero-denominator theorem
+gives zero for both roots.
+
+This includes the residues of the true factors. The theorem
+`factor_residue_product_dvd` proves `m | p*q-(p mod m)*(q mod m)`, and
+`publicPacket_factor_residue_root_zero_or_unit` applies the same
+obstruction when `j=p mod m`, `k=q mod m`. The factors select proof
+witnesses only. No primality, balance or distinct-factor assumption is
+needed by this algebraic statement. **Existence of a matching partner
+packet for every original packet is not proved**, and the conclusion
+does not exclude other pairs in the enlarged scalar pool or arbitrary
+three-row areas. It explains these whole-`N` duplicates; it supplies no
+arithmetic forcing theorem for a useful collision.
+
+The focused warning-as-error target build, strict leaf, ordinary root,
+and
+[CheckSemiprimeRowPartnerOffsets.lean](../scripts/CheckSemiprimeRowPartnerOffsets.lean)
+all completed with exit status **0**. Its **12** explicit plus **3**
+generated declarations were all audited, including **14** theorem/helper
+declarations and **11** explicit proof/helper statements. The **14**
+namespace linters found zero errors; only the three permitted standard
+axioms occur transitively. The leaf is registered in the ordinary root
+and the `semiprime` explorer family. The saved
+[semiprime-row-partner-offsets-audit.json](semiprime-row-partner-offsets-audit.json)
+retains **285** source pins, including all **282** unchanged pins of the
+completed bucket preflight and the new leaf and checker. The preflight
+tested **512** arbitrary whole-`N` signed sets and **192** complete actual
+family streams across all three modes; it supplies native-code validation
+only. No successful-input Lean certificates were added. Guaranteed
+deterministic, N-only, every-run `N^(1/6)`
+**bit-operation** factorization remains **OPEN**.
+
+## 2026-10-03: complete two-axis 121-bit failure search found no miss
+
+The complete fixed five-input search in
+[probe_semiprime_symmetric_row_axes.py](../scripts/probe_semiprime_symmetric_row_axes.py)
+finished with **zero misses**. This is a record of a failed attempt to find
+a counterexample, **not a coverage theorem or an arithmetic forcing
+advance**. No new successful-input Lean certificates were added.
+
+Replay **202610033257** fixes all candidates before classification. Its
+first three inputs come from the preceding seed **202610033253** and its
+last two from seed **202610033258**. Every input is a balanced distinct-prime
+121-bit semiprime, using the canonical least prime at the ceiling sixth
+root. The full original residue/intermediate/both-center stream retains
+all old affine and companion roots, literal shifted roots, known residue
+roots and both new axes. Signs and zero are retained. The new
+[semiprime_symmetric_axis_rows.cpp](../scripts/semiprime_symmetric_axis_rows.cpp)
+generates 16-byte common-sign whole-`N` pairs, and the unchanged
+[semiprime_literal_inplace_sort.cpp](../scripts/semiprime_literal_inplace_sort.cpp)
+counts both full private factor images, even after a hit in the first.
+
+The complete native counts were:
+
+| Fixed input index | Original packets `R` | Full signed whole-`N` values | First-factor collapsed values | Second-factor collapsed values |
+| --- | ---: | ---: | ---: | ---: |
+| 0 | 308082032 | 2758129047 | 2 | 0 |
+| 1 | 306658436 | 2741570249 | 4 | 6 |
+| 2 | 347420520 | 3112240973 | 4 | 6 |
+| 3 | 312827452 | 2801216097 | 2 | 0 |
+| 4 | 324941496 | 2912793461 | 2 | 2 |
+
+Every input has a useful native first-factor collision; thus none is a
+complete miss. The JSON retains each exact `N`, private `p,q`, canonical
+width and modulus, all global/orbit/field/zero counts, source range, raw
+stream count and storage size. Input zero is the preceding corroborated
+old-amendment 121-bit miss. The **larger** two-axis pool repairs this one
+input, as it also retains every old root. The old miss remains valid for
+its smaller algorithm; a success of this larger family does not establish
+its universal coverage.
+
+Before the large search, **64** complete actual families across all three
+modes gave **192** exact stream/count checks, including **16** wide
+families and **276** zero-axis denominator cases. The source oracle uses
+the full integer `N*t` quotient relation and whole-`N` inverses. Both
+native generator and sorter passed undefined-behavior checks. A separate
+duality oracle checked **64** complete small families and **64** canonical
+121-bit residue slices: all **53598** packets had the expected actual
+partner; **53580** had an exact signed offset match and **18** had the
+negative rounding correction `-m^2`. These finite checks do **not** prove
+universal Euclidean partner membership; the kernel obstruction above
+states that membership and the swapped-center relations explicitly.
+
+The saved
+[semiprime-symmetric-row-axes-audit.json](semiprime-symmetric-row-axes-audit.json)
+retains **280** unchanged source pins, including all **275** parent pins.
+The private reference runs took about **587.104**, **574.683**, **686.245**,
+**609.809** and **616.015** seconds. They are full packet acquisition and
+two-field native classification timings; they do not execute the large
+public Strassen/polynomial factorizer or provide an N-only bit clock.
+The scratch tables ranged from **34292817072** to **38858544016** bytes,
+reused in place without a separate Q-label vector. Large prefix and
+denominator units are inferred from private factor bounds.
+
+The independent bucket classifier's completed
+[preflight audit](semiprime-symmetric-bucket-preflight-audit.json) validates
+**512** arbitrary whole-`N` signed sets and **192** complete actual streams,
+including bucket boundaries and zero axes, with **282** source pins.
+This provides an independently validated route for further complete
+failure tests; it supplies no coverage credit. The deterministic N-only,
+every-run sixth-root **bit-operation** goal remains **OPEN**.
+
+## 2026-10-04: complete 126-bit miss of the full two-axis amendment
+
+The full two-axis amendment **still fails**. A complete native exhaustion
+in
+[probe_semiprime_symmetric_bucket_frontier.py](../scripts/probe_semiprime_symmetric_bucket_frontier.py)
+found a balanced distinct-prime counterexample after counting both full
+factor projections, all signs, zero and whole-`N` duplicates:
+
+```
+N = 52140667517124780615635954219128779853
+p = 6801359100217375963
+q = 7666212994908375031
+N = p*q, p <= q <= 2*p
+ceiling_sixth_root(N) = 1932841
+canonical least-prime modulus m = 1932841
+m^2 < p < q
+```
+
+This is a **126-bit** input with the canonical N-only parameter, rather
+than an artificially smaller row budget. Every original residue,
+Euclidean intermediate and both public centers is included. The pool
+retains all preceding affine and companion roots, literal shifted roots,
+known residue roots and **both** new signed coordinate-dual axes. No
+channel or source residue was removed to obtain the miss.
+
+The complete native stream contains **437013824** original packets,
+**866296288** companions and **3053298249** raw scalar records. Each of
+the affine and new-axis channels contributes **874027648** coordinates;
+the literal shifted channel contributes **437013824** and the known
+residue channel, including zero, **1932841**. After whole-`N` sign-orbit
+deduplication, the exact counts are
+
+```
+global sign orbits = 1952480288
+folded p classes  = 1952480288
+folded q classes  = 1952480288
+global, p and q zero flags = true
+full signed whole-N values, including zero = 3904960575
+full signed p classes, including zero      = 3904960575
+full signed q classes, including zero      = 3904960575
+p-collapsed values = q-collapsed values = 0
+```
+
+Both factor projections are injective on the complete distinct signed
+pool. Thus no retained difference, reflected sum or endpoint supplies a
+proper factor. This refutes universal coverage of **this enlarged scalar
+family**. It does not compute or exclude every physical three-row area
+of the richer two-coordinate carrier, and does not supply a lower bound
+for every possible matrix-free extractor.
+
+Replay **202610033263**, with seed **202610033262**, fixed **12** candidates
+before any classification. It screened **1374** primes congruent to one
+modulo four in `[1900000,1940000]` by their least positive quadratic
+nonresidue, then chose semiprime inputs in the canonical sixth-root
+window, retaining exactly those with `N` a quadratic nonresidue modulo
+`m`. All **25** selection trials are saved. This selects inputs only;
+the extractor still receives the canonical modulus and full unchanged
+family. The first candidate succeeded, with signed p/q class losses
+**6/4**; it received no coverage credit or new Lean certificate. The
+second candidate is the complete miss above. The search stopped there;
+the remaining **10** planned inputs were not classified.
+
+Each completed input first passed **64** canonical full-integer `N*t`
+residue-slice checks against whole-`N` inverse values, including both
+true factor residues and endpoint residues. The miss's slices contain
+**10620** original packets and **74212** scalar values. The packet
+generator passed undefined-behavior checks on these new 126-bit slices.
+The independently validated
+[semiprime_symmetric_bucket_sort.cpp](../scripts/semiprime_symmetric_bucket_sort.cpp)
+partitions whole-`N` sign pairs by the first factor label, counts all
+global and first-factor classes, then sorts separate second-factor
+labels. Equal labels always share a bucket; all eight buckets in both
+fields completed. Its preceding **512** arbitrary signed-set and
+**192** complete actual-stream oracles remain unchanged.
+
+The saved
+[semiprime-symmetric-bucket-frontier-audit.json](semiprime-symmetric-bucket-frontier-audit.json)
+retains **288** source pins, all independently verified unchanged after
+completion. The miss took about **775.621** seconds of private reference
+acquisition and classification. Its raw table is **48852771984** bytes;
+the largest mapped bucket is **8723882688** bytes and its separate Q
+labels total **15619842304** bytes. These are reference-classifier
+resources, **not an N-only factorizer or bit-complexity certificate**.
+
+The complete miss is independently corroborated by
+[probe_semiprime_symmetric_frontier_confirmation.py](../scripts/probe_semiprime_symmetric_frontier_confirmation.py)
+and its saved
+[semiprime-symmetric-frontier-confirmation-audit.json](semiprime-symmetric-frontier-confirmation-audit.json).
+Replay **202610033264** regenerated the complete stream with the same frozen
+packet generator, then used the separate frozen in-place tuple classifier
+instead of bucketed Q labels. Every global, factor, zero, signed and raw
+population count agrees. Fresh **48** full-integer `N*t` residue slices
+independently checked **7934** original packets and **55442** scalar values,
+including the true factor residues, all intermediate vectors and both
+centers on those slices. All **290** source pins, including the **288**
+primary pins, were verified unchanged after completion. The independent
+private acquisition and classification took about **1021.205** seconds.
+It reused the **48852771984**-byte table in place, with **zero** extra
+Q-label bytes. The two classifiers share the packet generator; the fresh
+full-integer slice oracles check its values independently.
+
+The exhaustion is native integer evidence, **not a large Lean `none`
+certificate**. Prefix and denominator guards on this input use the
+private bounds `m^2<p<q`; the public large prefix/polynomial factorizer
+was not executed. The actual-source partner cancellation theorem above
+remains kernel checked and explains why that pairing gives whole-`N`
+matches or unit differences. Guaranteed deterministic N-only, every-run
+`N^(1/6)` **bit-operation** factorization, including all construction,
+acquisition, recovery, memory, factor ratios and prime squares, remains
+**OPEN**.
+
+## 2026-10-04: partner quadratic elimination is identically degenerate
+
+[SemiprimePartnerRecoveryObstruction.lean](../RiemannGaussian/SemiprimePartnerRecoveryObstruction.lean)
+proves an arithmetic obstruction to using the natural residue partner as
+a second recovery equation. It works on **actual original public packets**
+with the explicit partner congruence and swapped coefficients retained:
+`m | N-j*k`, `a_v=s*t_u`, and `t_v=s*a_u`. It does not assume that every
+packet has such a partner in the public stream.
+
+The preceding divisibility theorem makes the public integer correction
+`d=(L_v-s*L_u)/m^2` exact. The new
+`publicPacket_partner_step_exact` proves `L_v=s*L_u+m^2*d` before modular
+reduction. With opposite public centers and `s=-1` or `s=1`,
+`publicPacket_partner_step_cases` proves `d` is **0, 1 or -1**.
+
+For the true factor residues, `publicPacket_factor_index` derives an
+integral index from membership and the literal quotient equation, without
+assuming a short window. `publicPacket_factor_indices_related` proves
+that the two indices satisfy **`i_v=s*i_u+d`**. These statements require
+positive factors but no primality, balance or distinct-factor assumption.
+`publicPacket_factor_partner_recovery` retains the actual roots `p` and
+`q` of both original recovery quadratics at these transported indices.
+It does not acquire either index publicly.
+
+Keep an unknown index `I` in the literal polynomial
+
+```
+Q_w(X;I)    = a_w*X^2 + (L_w-m^2*I)*X + N*t_w
+Qhat_w(X;I) = t_w*X^2 + (L_w-m^2*I)*X + N*a_w
+```
+
+`recovery_reciprocal_evaluation` proves the reciprocal interpretation
+exactly: whenever `x*y=N`, `x^2*Q_w(y;I)=N*Qhat_w(x;I)`, over every
+commutative ring. The compiled
+`publicPacket_reciprocal_recovery_eq` then proves
+
+```
+Qhat_v(X;s*I+d) = s*Q_u(X;I)
+```
+
+for **every** index and every commutative coefficient ring. In particular,
+the coefficient ring can be `Z[I]`. The genuine fixed-degree Sylvester
+resultant in the factor coordinate is therefore **identically zero**,
+proved by `publicPacket_symbolic_partner_resultant_zero` and specialized
+to the two true factor residues by
+`publicPacket_factor_partner_symbolic_resultant_zero`. This is a symbolic
+kernel theorem, not a finite successful-example certificate.
+`publicPacket_partner_resultant_saturated` proves its integer GCD is the
+whole `N` for **every candidate index**, so this paired zero/GCD test
+selects no index. The pair supplies one quadratic equation after the
+known reciprocal and index transport; it supplies no independent
+polynomial constraint from this elimination.
+
+All scoped gates completed with exit code **0**: targeted
+warnings-as-errors Lake build, strict leaf, strict ordinary root and
+[CheckSemiprimePartnerRecoveryObstruction.lean](../scripts/CheckSemiprimePartnerRecoveryObstruction.lean).
+The **14** namespace linters report zero errors. All **22** declarations
+(**17** explicit and **5** generated), including **18** theorem/helper
+declarations (**13** explicit), were transitively audited; only `propext`,
+`Classical.choice` and `Quot.sound` occur. The ordinary root import and
+`semiprime` explorer family are registered. The saved
+[semiprime-partner-recovery-obstruction-audit.json](semiprime-partner-recovery-obstruction-audit.json)
+retains **293** source pins, including all **290** unchanged pins of the
+independent complete 126-bit miss. No new native positive examples or
+success certificates were generated.
+
+This removes this partner-resultant route for finding an index without
+an index search. It does not exclude integrality or range arguments,
+other row pairings, or the full cross-residue two-coordinate incidence
+problem. The informative quadratic still recovers a factor when its
+correct index is supplied. Arithmetic forcing for a surviving source and
+a complete deterministic N-only, every-run `N^(1/6)` **bit-operation**
+proof, including construction, acquisition, recovery, memory, arbitrary
+ratios and prime squares, remain **OPEN**.
+
+## 2026-10-04: exact residue information in the integral collision index
+
+[SemiprimeIndexIntegrality.lean](../RiemannGaussian/SemiprimeIndexIntegrality.lean)
+classifies the bare integrality condition on **actual original public
+packets** for prime `m`, as used by the canonical modulus constructor.
+For an integral factor pair `N=p*q`, with positive `p`, retain the centered
+coefficients and write `F_w=a_w*p+L_w+t_w*q`. The compiled
+`publicPacket_factor_sum_square` proves exactly
+
+```
+p*F_w = a_w*(p-j)^2 + m*b_w*(p-j) + m^2*c_w
+```
+
+where `b_w,c_w` are the literal **centered** coefficients. The original
+auxiliary leading unit modulo `m^2` descends to a unit modulo `m`.
+If `m^2 | F_w`, the identity therefore forces `m | (p-j)^2`; primality
+forces `m | p-j`. Conversely, when `p mod m=j`, the existing actual-row
+quotient construction supplies an integral index automatically. Thus
+`publicPacket_index_integrality_iff_residue` proves
+
+```
+m^2 | (a_w*p+L_w+t_w*q)  <->  p mod m = w.residue
+```
+
+and `publicPacket_integer_index_iff_residue` gives the equivalent
+existence statement `exists integer i, m^2*i=F_w`. This identifies the
+information extracted by bare index integrality: on the integral factor
+hyperbola, it is the original residue modulo **m**, not another residue
+digit from the **m^2** denominator. All original intermediate vectors
+and both public centers are admitted; no primality, balance or
+distinctness assumption on the factors is used.
+
+`publicPacket_same_residue_integrality_iff` proves that adding another
+original row at the same residue gives the same bare condition,
+regardless of its coefficients or center. The compiled
+`publicPacket_distinct_residue_no_joint_integer_indices` proves that
+different-residue rows cannot both have integral physical indices for
+the same ordered factor pair `(p,q)`. Thus a useful cross-residue
+incidence needs an explanation beyond assigning integral physical
+indices to both of those rows in one factor orientation.
+
+The scope is deliberately exact: **the factor pair is already integral
+and satisfies `N=p*q` in these theorems**. This is no impossibility
+theorem for algorithms that search for such a pair using integrality.
+Actual index values, further congruences on those values, bounds on
+their size, alternate factor orientations and field incidences remain
+available arithmetic information. The theorem neither acquires the
+correct residue nor shrinks the current larger baby window.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and [CheckSemiprimeIndexIntegrality.lean](../scripts/CheckSemiprimeIndexIntegrality.lean)
+all completed with exit code **0**. All **14** namespace linters pass,
+and the transitive axiom audit checks all **7** explicit theorem/helper
+declarations, with no generated declarations and only `propext`,
+`Classical.choice` and `Quot.sound`. The root import and `semiprime`
+family are registered. The saved
+[semiprime-index-integrality-audit.json](semiprime-index-integrality-audit.json)
+retains **296** source pins, including all **293** unchanged parent pins,
+and separately records the pinned Mathlib revision and the relevant
+integer-prime and modular-cast source hashes. No new positive examples
+or success certificates were generated. Useful arithmetic forcing and
+the full deterministic N-only, every-run sixth-root **bit-operation**
+proof, including all construction, acquisition, recovery, memory,
+factor ratios and prime squares, remain **OPEN**.
+
+## 2026-10-04: arithmetic collision forcing for a dense public row source
+
+The next advance is an arithmetic existence proof, with its construction
+barrier retained explicitly. The new
+[SemiprimeDenseRowCoverage.lean](../RiemannGaussian/SemiprimeDenseRowCoverage.lean)
+defines an **N-only** source `denseRows N m`. At every public pair
+`1 <= j,t < m`, it lifts both numerators
+
+```text
+u = quotientSlope N m j,
+a = (u*t mod m) or (u*t mod m)-m.
+```
+
+The inverse, exact divisions and centered coefficient are the existing
+public quotient lift. This broader dense source has its own compiled
+coverage theorem. The complete native miss of the earlier original,
+companion and full two-axis scalar amendment remains a failure of that
+earlier source; the new theorem does not change its membership or results.
+
+The forcing mechanism retains **index values and their differences**.
+For natural `N=p*q`, `p>0`, `m>1` and `gcd(m,N)=1`, the true residue
+`j=p mod m` is a public unit residue. For proof purposes, take the **m**
+canonical representatives `t=0,...,m-1`, including the zero representative.
+Each has a literal integral index
+
+```text
+m^2*i_t = a_t*p + m*b_t - 2*a_t*j + t*q,
+g_t(p div m) = p*i_t.
+```
+
+The actual centered coefficient satisfies `abs(b_t)<=m`; the canonical
+numerator and denominator lie between zero and m. The compiled
+`representative_index_interval` keeps the resulting one-sided interval:
+
+```text
+0 <= i_t+3,
+m*(i_t+3) <= p+q+4*m.
+```
+
+Whenever a positive integer K satisfies
+`p+q+4*m < m*(m-1)*K`, the compiled `index_pigeonhole` maps those m
+integral indices into **m-1** bins of width K. Thus some `s<t<m` have
+`abs(i_t-i_s)<K`. This is the arithmetic reason a short difference must
+exist; the proof uses no supplied short vector or successful collision.
+The hidden index function is proof data, not an algorithmic acquisition
+oracle.
+
+The difference also maps to an **actual emitted row**. Its denominator
+`T=t-s` is positive and below m. Its numerator `A=a_t-a_s` lies strictly
+between `-m` and m and satisfies `A=u*T mod m`, so it is exactly one of
+the two emitted numerators at T. Coprimality of the public slope excludes
+`A=0`. The constructor emits these two possibilities directly and never
+enumerates all proof-side pairs. Re-lifting that difference with the
+actual centered coefficient gives an integral index l satisfying
+
+```text
+m*(l-(i_t-i_s)) = b_new-b_t+b_s,
+abs(l-(i_t-i_s)) <= 3,
+abs(l) <= K+3.
+```
+
+This compiled cancellation bound closes emitted-row membership and the
+centering cost. `denseRows_prime_collision_coverage` then proves, for
+**every** chosen unit base modulo prime p, the true-factor power equality
+`g^giantExponent = g^(m^2*l)`. It also proves that the executable
+`integerRoots` list for the informative recovery quadratic
+
+```text
+a*X^2 + (m*b-2*a*j-m^2*l)*X + t*N
+```
+
+contains p. For balanced `p<=q<=2*p` and the public ceiling `N<=m^6`,
+`balanced_pigeonhole_width` discharges the width with `K=3*m+11`.
+Consequently `denseRows_balanced_collision_coverage` gives the explicit
+signed baby radius **3*m+14**. No distinct-factor assumption is used;
+prime squares are included. The auxiliary modulus need not be prime.
+
+**Coverage does not supply the sixth-root factorizer.** The compiled
+`denseRows_length` proves that this literal public stream has exactly
+**2*(m-1)^2** rows, and `denseRows_output_lower_bound` proves
+`m^2 <= 2*length(denseRows N m)` for `m>1`. At `m` proportional to
+`N^(1/6)`, explicit source construction therefore has **N^(1/3) output
+scale**, despite its linear baby window. This output count is a barrier
+to emitting this stream within the target budget, not a lower bound
+against every possible compressed algorithm. Acquiring the guaranteed
+difference without writing the dense source, or proving a thinner
+public source has its own arithmetic forcing, is the next substantive
+requirement. Routing small-order or saturated power equalities, recovery,
+memory and the complete bit backend still need payment. The linear
+radius uses the balanced promise; general factor ratios retain the
+explicit `p+q` width constraint.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and [CheckSemiprimeDenseRowCoverage.lean](../scripts/CheckSemiprimeDenseRowCoverage.lean)
+all completed with exit code **0**. All **14** namespace linters pass.
+The transitive axiom audit checks all **57** declarations: **19** explicit
+declarations, including **3** definitions and **16** theorem/helpers,
+plus **38** generated theorem/helpers. All **54** proof declarations
+use only the permitted `propext`, `Classical.choice` and `Quot.sound`.
+The root import and `semiprime` family are registered. The saved
+[semiprime-dense-row-coverage-audit.json](semiprime-dense-row-coverage-audit.json)
+retains **299** source pins, including all **296** unchanged parent pins,
+and separately records the pinned Mathlib revision and pigeonhole/Fermat
+source hashes. No new numerical positive examples or success
+certificates were generated. Guaranteed deterministic N-only,
+every-run **one-sixth bit-operation factorization remains OPEN**.
+
+## 2026-10-04: exact linear cache for the collision-forcing dense source
+
+The dense forcing theorem now has an exact public cache and query
+representation in
+[SemiprimeDenseRowCarries.lean](../RiemannGaussian/SemiprimeDenseRowCarries.lean).
+The constructor `progressionSeeds g N m` stores **m-1** descriptors,
+one at each original residue, using **one lifted seed per residue**.
+Its query and recovery functions use the cached data directly, without
+lifting a quadratic for each denominator. This changes the construction
+and storage representation; the implicit parameter pool and its
+acquisition cost remain distinct obligations.
+
+For each public unit residue j, let the seed be the actual lifted
+denominator-one row `(u_j,b_j,c_j,1)`. At a requested denominator t and
+orientation `epsilon` in `{0,1}`, the compiled carry identities are
+
+```text
+kappa = floor(u_j*t/m)+epsilon,
+b_raw = t*b_j-j*kappa,
+ell   = floor((b_raw+floor(m/2))/m),
+
+a = t*u_j-m*kappa,
+b = b_raw-m*ell,
+c = t*c_j-j*ell.
+```
+
+These are identities for the **actual denseRow coefficients**, with the
+original exact divisions and centered tie convention retained. They
+hold for every public `N`, `m>0` and unit j, without factor inputs. The
+first subtraction is along the public null direction `(m,j,0)`; the
+second is the trivial linear direction `(0,m,j)`.
+
+The giant exponent has the exact decomposition
+
+```text
+E_dense   = t*E_seed-kappa*m*(1-j)-m^2*ell,
+E_reduced = t*E_seed-kappa*m*(1-j).
+```
+
+The centering carry is moved into the **target index**, rather than
+discarded. For every original integer index i, the compiled
+`denseRow_residual_transport` proves over every public commutative ring
+and unit base
+
+```text
+g^E_dense-g^(m^2*i)
+  = g^(-m^2*ell) * (g^E_reduced-g^(m^2*(i+ell))).
+```
+
+Consequently `denseRow_residual_gcd` proves equality of the **entire
+public GCD** of these two residuals, including prime powers and
+saturated hits. `denseRow_recovery_transport` proves equality of their
+complete executable `integerRoots` lists when the same index shift is
+retained. This is the target-preserving unit transport from the RH
+cancellation path, specialized to the explicit carries of the dense
+source; it does not replace collision products by additive sums.
+
+The leading carry stays in the queried power. The compiled
+`denseRow_index_carries` states that at `p=m*x+j`, with seed index
+`iSeed`, the actual dense index is
+
+```text
+i = t*iSeed-kappa*x-ell.
+```
+
+Thus the exact transport associated with removing the leading carry
+would involve **kappa times the unknown factor quotient x**. Its
+bounded public coefficient cannot simply be erased while keeping the
+same short index window. The current representation keeps it.
+
+For every emitted `0<t<m`, `j<m` and unit j, the compiled bounds give
+`kappa<m` and `abs(ell)<=2*m+1`. Transporting the previously forced
+radius `3*m+14` therefore yields the shared signed baby radius
+**5*m+15**. The cache stores only j, `u_j`, `b_j`, and two powers
+
+```text
+A_j = g^E_seed,
+B_j = g^(m*(1-j)).
+```
+
+Its literal `progressionValue` query is the floor-filtered geometric
+value
+
+```text
+A_j^t * B_j^(-floor(u_j*t/m)-epsilon).
+```
+
+`progressionValue_eq` identifies it with `g^E_reduced`.
+`progressionRecovery` computes the corresponding integer quadratic
+directly from the cached scalar coefficients and transported index I.
+No dense-row reconstruction is used in either function.
+
+The public endpoint `public_progression_balanced_coverage` uses a base
+unit **modulo the public N**, not a hidden-field base. For prime p,
+`p<=q<=2*p`, `N=p*q<=m^6`, `m>1` and `gcd(m,N)=1`, it proves that an
+actual stored descriptor, denominator `0<t<m`, orientation and
+`abs(I)<=5*m+15` give a true-prime power collision. The **public**
+cached recovery list contains p. Generic projection compatibility
+connects the stored powers to the prime-field witness; changing the
+ambient base group leaves recovery unchanged. The prime projection
+occurs only in the proof. Prime squares are included.
+
+**The sixth-root acquisition problem remains open.** The exact cache
+has linear descriptor count, but enumerating every j, t and orientation
+still visits **2*(m-1)^2** parameter pairs. At the sixth-root scale,
+the requested algorithm needs **tilde O(m) bit work**, so a merely
+subquadratic scan would not by itself close the target. A fast
+acquisition method must exploit these explicit floor-filtered
+progressions against the shared baby powers `g^(m^2*I)` while preserving
+the guaranteed hit. The current results price neither that acquisition
+nor the complete inverse, power, recovery, routing, representation and
+memory bit backend. General factor ratios remain outside the current
+linear-window promise. The earlier complete native miss of the scalar
+two-axis amendment is unchanged.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and [CheckSemiprimeDenseRowCarries.lean](../scripts/CheckSemiprimeDenseRowCarries.lean)
+all completed with exit code **0**. All **14** namespace linters pass,
+reporting **44** directly checked declarations and **36** additional
+automatically generated ones. The transitive axiom audit checks all
+**80** declarations and **53** theorem/helpers, with only the permitted
+`propext`, `Classical.choice` and `Quot.sound`. The source contains **26**
+theorem/helpers, **10** definitions and one descriptor structure; its
+constructor, projections and generated proof helpers are audited too.
+The root import and `semiprime` family are registered. The saved
+[semiprime-dense-row-carries-audit.json](semiprime-dense-row-carries-audit.json)
+retains **302** source pins, including all **299** unchanged parent pins,
+and records the pinned Mathlib revision and supporting source hashes.
+No new numerical positive examples or success certificates were
+generated. Guaranteed deterministic N-only, every-run **one-sixth
+bit-operation factorization remains OPEN**.
+
+## 2026-10-04: complete-loop compression loses the forced dense hit
+
+The new arithmetic result is a **failure of a specific proposed implicit
+shortcut**, rather than another positive example. The compiled
+[SemiprimeDenseLoopObstruction.lean](../RiemannGaussian/SemiprimeDenseLoopObstruction.lean)
+identifies the exact complete loop of the existing floor-filtered dense
+source, proves a universal gap obstruction to its short collisions, and
+checks a public balanced semiprime on which **every raw and normalized
+loop column has GCD 1**. The full dense source's earlier coverage theorem
+is preserved; this result does not refute all implicit algorithms.
+
+For an actual denominator-one seed, write `u=representative N m j 1`,
+`b=seed.b`, and `E=giantExponent` of that seed. The retained progression is
+
+```text
+F(t,epsilon) = g^(t*E-m*(1-j)*(floor(u*t/m)+epsilon)).
+```
+
+The compiled `progression_loop` proves, for every public `N`, `m>0`,
+natural denominator t and either numerator orientation,
+
+```text
+F(t+m,epsilon) = F(t,epsilon)*g^L,
+L = m*E-u*m*(1-j).
+```
+
+The loop is independent of epsilon. Define the entirely public residue
+and phase
+
+```text
+k = (u*j)%m,
+C = b-floor(u*j/m).
+```
+
+For unit residue j, `normalizedLoopExponent_eq` proves the exact identity
+
+```text
+L-m^2*C = m*(N-k).
+```
+
+`loopPhase_bound` gives `abs(C)<=2*m` for `m>1` and `j<m`. Thus the
+compressed loop keeps only a cofactor-residue power, together with a
+bounded public phase. Its exact computability does not establish that
+an intermediate short hit survives this compression.
+
+The arithmetic obstruction makes that loss explicit. Suppose the local
+base has order `p-1`, with `gcd(m,p-1)=1`, and `N=p*q`. A normalized hit
+against `g^(m^2*I)` requires
+
+```text
+(p-1) divides q-k-m*I.
+```
+
+For every `k<m` and `abs(I)<=R`, the two inequalities
+
+```text
+h*(p-1)+m*(R+1) < q,
+q+m*(R+1) < (h+1)*(p-1)
+```
+
+put `q-k-m*I` strictly between consecutive multiples of `p-1`.
+`normalized_loop_no_hit` therefore excludes **every residue** in the
+complete window, without any enumeration. `raw_seed_loop_no_hit`
+excludes the original raw loops using the same inequalities with
+`R` replaced by `R+2*m`; it explicitly transports a purported raw hit
+to normalized index `I-C`. The hypotheses concerning order and
+coprimality are retained, rather than presented as an unconditional
+obstruction for every base.
+
+The complete negative control discharges those hypotheses in both
+actual prime fields:
+
+```text
+p = 1000003, q = 1500007,
+N = 1500011500021,
+m = 107, g = 11, R = 5*m+15 = 550.
+```
+
+`control_arithmetic` checks primality, balance, `106^6<N<=107^6`,
+and coprimality. Hence 107 is exactly the first prime at or above the
+ceiling sixth root. Kernel-checked period powers and tests at **every
+prime divisor** prove the two full local orders `1000002` and `1500006`.
+Neither an order oracle nor native compiler trust enters these proofs.
+The raw phase padding gives radius 764 and margin `m*(764+1)=81855`.
+The first field uses gap bin `h=1`; the second uses `h=0` with p and q
+swapped. All four gap inequalities are checked in Lean.
+
+`control_no_hits` covers every `1<=j<107`, every signed `abs(I)<=550`,
+and both choices of compression. `control_base_left` and
+`control_base_right` connect these local orders to the **same public
+base modulo N**. `control_residual_isUnit` proves each original
+loop/baby residual is a unit in that public ring.
+`control_column_gcd_one` proves that every full product column over
+all 106 residues has GCD **1** with N, throughout the signed window,
+for both compression choices. The product retains the collision OR;
+the failure is in the shortened source itself. No full matrix or
+row-by-index scan is used to prove the miss.
+
+Two primary literature leads were checked for the remaining acquisition
+problem. [Beck–Haase–Matthews](https://arxiv.org/abs/0710.1323) provides
+floor-word reciprocity and short rational generating representations
+for additive data. No collision-preserving product detector for this
+source has been transferred. [Bostan–Yurkevich, Theorem 1](https://arxiv.org/abs/2012.08656)
+computes individual q-products in `O(M(sqrt(n)))` field operations.
+Independent square-root work for each of m residues would total about
+`m^(3/2)`, above the m budget. This budget comparison is **not a lower
+bound on joint algorithms**, and the paper's hypotheses have not been
+transferred to this floor-filtered source over the composite ring.
+Neither paper is an imported Lean proof or an axiom.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and [CheckSemiprimeDenseLoopObstruction.lean](../scripts/CheckSemiprimeDenseLoopObstruction.lean)
+all finish with exit code **0**. All **14** namespace linters pass,
+checking **30** direct declarations and **18** generated ones. The
+transitive audit covers all **48** declarations and **38** proof/helpers,
+using only `propext`, `Classical.choice`, and `Quot.sound`. The source
+contains **20** theorem/helpers and **10** definitions. Root and
+`semiprime` family registration are complete. The saved
+[semiprime-dense-loop-obstruction-audit.json](semiprime-dense-loop-obstruction-audit.json)
+retains **305** source pins, including all **302** unchanged parent
+pins, and the pinned Mathlib revision and supporting source hashes.
+No new positive numerical cases or success certificates were generated.
+
+**The guaranteed one-sixth bit-operation factorizer remains OPEN.**
+The retained dense source has arithmetic forcing, but its full
+floor-filtered union still needs collision-preserving acquisition in
+`tilde O(m)` bit work. Complete-loop replacement does not supply that
+acquisition. Full construction, routing, recovery, memory, and general
+factor-ratio bit costs remain unproved. Preserve the leading floor
+carry unless a new transport proves and pays the necessary target shift.
+
+## 2026-10-04: exact carry-boundary cancellation and its whole-source price
+
+The retained floor-filtered source now has a compiled adjacent-product
+identity and an arithmetic accounting theorem in
+[SemiprimeDenseCarryBoundary.lean](../RiemannGaussian/SemiprimeDenseCarryBoundary.lean).
+This investigates acquisition over the source that already has dense
+coverage. It does not accumulate positive examples or replace that source
+by the failed complete-loop shortcut.
+
+For cached public powers A, B, canonical numerator `u<m`, and either
+original orientation epsilon, write
+
+```text
+F_t = A^t*B^(-floor(u*t/m)-epsilon),
+delta_t = floor(u*(t+1)/m)-floor(u*t/m).
+```
+
+`progressionValue_curve` identifies this with the literal cached query.
+`curveValue_step` proves `F_(t+1)=A*F_t*B^(-delta_t)`.
+`carryJump_le_one` gives `delta_t` in `{0,1}`.
+`carryJump_sum` and `jumpSet_card` prove that the complete length-m
+curve has **exactly u jump edges**. The initial edge has no jump,
+so every jump lies among the original positive denominators `1<=t<m`.
+
+The product construction retains those denominators exactly; it excludes
+the artificial `t=0` root. Define
+
+```text
+P(X)       = product_(1<=t<m)(X-F_t),
+P_hat(X)   = product_(1<=t<m)(X-A*F_t),
+J_minus(X) = product_(delta_t=1)(X-A*F_t),
+J_plus(X)  = product_(delta_t=1)(X-F_(t+1)).
+```
+
+The compiled `adjacent_polynomial_telescoping` proves the **division-free**
+identity
+
+```text
+P_hat(X)*J_plus(X)*(X-F_1)
+  = P(X)*J_minus(X)*(X-F_m).
+```
+
+No-jump factors coincide and cancel at the polynomial source. Every
+jump factor and both actual endpoints remain in the identity.
+`shiftedPolynomial_rephase` identifies the shift as
+`P_hat(X)=A^(m-1)*P(X/A)`, with the public scalar unit made explicit.
+These statements hold over every commutative coefficient ring with
+unit A and B, for either original orientation. They do not require
+factor-field advice or a multiplicative-order oracle.
+
+Evaluation requires additional care: the boundary and endpoint factors
+can vanish modulo a hidden prime. The compiled `checked_boundary_gcd`
+allows cancellation only under the two explicit public unit premises
+
+```text
+IsUnit(J_plus(x)*(x-F_1)),
+IsUnit(J_minus(x)*(x-F_m)).
+```
+
+Under those premises, the **entire public GCD** of `P(x)` with N equals
+that of `P(x/A)` with N. This is exact over `ZMod N`, including prime
+powers and saturated outputs. It does not assume either multiplier
+is automatically a unit. Nonunit tests, saturated outcomes, peeling,
+target shifts, and recovery still need a complete implemented price.
+
+The new arithmetic price concerns the **actual public numerator map**.
+For prime auxiliary m and the public prefix `gcd(m,N)=1`,
+`numerator_square` proves `u_j*j^2=N` modulo m.
+`numerator_fiber_pair` proves that equal numerators force
+`i=j` or `i+j=m`. Hence each numerator fiber has at most **two**
+retained residues, and values below K occupy at most `2*K` residues.
+This is a universal source statement, without a sampled semiprime.
+
+Both boundary polynomials are monic and have degree exactly `u_j`,
+even if roots repeat, over any nontrivial commutative ring. The compiled
+`boundaryLoad_quadratic` and `public_before_degree_quadratic` therefore
+give, for prime `m>=8` and `gcd(m,N)=1`,
+
+```text
+m^2 <= 32*sum_(1<=j<m) u_j
+    = 32*sum_(1<=j<m) degree(J_minus,j).
+```
+
+Thus materializing one factor per carry jump retains a **quadratic
+whole-source input count**. Ordinary full coefficient arrays also
+retain quadratic total degree. This is a representation count, not
+a lower bound on minimal circuits, sparse coefficients, common-factor
+deflation, simultaneous processing, or all implicit algorithms.
+The bound does not cover a different composite auxiliary-modulus source.
+
+The same fiber arithmetic gives a useful upper bound, rather than only
+an obstruction. `numerator_weighted_bound` proves for every natural
+structural weight w
+
+```text
+sum_j w(u_j) <= 2*sum_(1<=u<m) w(u).
+```
+
+Applying it to the initial Euclidean quotient, then the checked Mathlib
+harmonic bound, `initial_quotient_log_bound` proves
+
+```text
+sum_j floor(m/u_j) <= 2*m*(1+log m).
+```
+
+The first quotient stage therefore has a **nearly linear arithmetic
+count**. This does not fund all later recursion or evaluation of the
+collision products encoded by a compact word. Those products, both
+unit-check branches, all shifted targets, and the bit backend remain
+separate obligations. The polynomial definitions are mathematical
+source products, not an implemented fast acquisition pipeline.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and [CheckSemiprimeDenseCarryBoundary.lean](../scripts/CheckSemiprimeDenseCarryBoundary.lean)
+all finish with exit code **0**. All **14** namespace linters pass,
+checking **45** direct declarations and **32** generated ones. The
+transitive audit covers all **77** declarations and **67** proof/helpers,
+using only `propext`, `Classical.choice`, and `Quot.sound`. The source
+contains **35** theorem/helpers and **10** definitions. Root and
+`semiprime` family registration are complete. The saved
+[semiprime-dense-carry-boundary-audit.json](semiprime-dense-carry-boundary-audit.json)
+retains **308** source pins, including all **305** unchanged parent
+pins, and ten supporting Mathlib source hashes at the unchanged pinned
+revision. No positive cases, success certificates, or new negative
+semiprime examples were generated.
+
+**Guaranteed deterministic N-only, every-run one-sixth bit-operation
+factorization remains OPEN.** The next required advance is a complete
+collision-preserving recursive or simultaneous acquisition over the
+retained source, with `tilde O(m)` bit work and all nonunit/saturated
+cases handled. The nearly linear first-stage bound cannot substitute
+for that acquisition proof. Full construction, routing, recovery,
+memory, and general factor-ratio bit bounds remain required.
+
+## 2026-10-04: exact Euclidean boundary descent and the retained geometric obstruction
+
+This advance tests whether complete carry-boundary cancellation actually
+reduces collision acquisition to smaller row products. It proves an exact
+Euclidean source identity and a uniform obstruction to keeping only its
+children and endpoints. No successful semiprime examples, new native
+exhaustions, or individual success certificates were generated. The full
+one-sixth bit-operation goal remains **OPEN**.
+
+The new ordinary-library leaf
+[SemiprimeDenseEuclidDescent.lean](../RiemannGaussian/SemiprimeDenseEuclidDescent.lean)
+uses the unchanged public cached curve `F_t=A^t*B^(-floor(u*t/m)-epsilon)`
+and its original denominators `1<=t<m`. For `0<u<m`, the index
+
+```text
+t_k = floor((m*k-1)/u),  1<=k<=u
+```
+
+is a bijection onto the complete jump set. Its two floors are exactly
+`k-1` and `k`, and `t_u=m-1`. At coprime m,u, the interior indices obey
+` t_k+1=floor(m/u)*k+floor((m mod u)*k/u)+1 `.
+The smaller child therefore has public parameters
+
+```text
+q=floor(m/u),  r=m mod u,
+A_child=A^q*B^(-1),  B_child=A^(-1),
+child modulus u, child slope r, child orientation false.
+alpha=A*B^(-epsilon)=F_1.
+```
+
+For every interior level `1<=k<u`, the complete after-jump root is
+`alpha*F_child(k)`, while the before-jump root is
+`(alpha*B)*F_child(k)`. The parent orientation stays in alpha. The final
+level is retained separately as `F_m`, with before value `B*F_m`.
+Let `Q_S(X)=S^(u-1)*P_child(X/S)`. The checked polynomial identities are
+
+```text
+J_plus(X)  = (X-F_m)*Q_alpha(X),
+J_minus(X) = (X-B*F_m)*Q_(alpha*B)(X),
+
+A^(m-1)*P(X/A)*Q_alpha(X)*(X-alpha)
+  = P(X)*(X-B*F_m)*Q_(alpha*B)(X).
+```
+
+The last identity cancels the common **monic polynomial** `X-F_m` before
+evaluation, using its regularity. It holds over every commutative coefficient
+ring with unit A,B; neither a coefficient domain nor a unit/nonzero premise
+on the evaluated `x-F_m` is needed. It preserves all remaining factors,
+including multiplicities and possible zeros. It does not divide away an
+evaluated child factor.
+
+The public constructor discharges these arithmetic premises directly:
+`1<m`, `gcd(m,N)=1` and `gcd(j,m)=1` imply
+`0<u_j<m` and `gcd(m,u_j)=1`. The actual cached descriptor obeys the
+complete relation for both orientations, even when the auxiliary m is
+composite. Coprimality is preserved by the Euclidean remainder. No hidden
+factor or local order enters this constructor or identity.
+
+**The shift remains necessary.** In a field, the identity yields exactly
+
+```text
+P(x)=0 ==> P(x/A)=0 or Q_alpha(x)=0 or x=alpha.
+```
+
+It does not yield a detector using just the two smaller products and the
+two endpoints left after common-endpoint cancellation. The theorem
+`geometric_interior_unseen` proves the structural obstruction: at slope
+`u=1` and orientation false, **every phased child polynomial is 1**.
+For any unit A with `m<orderOf A` and any `1<t<m`, the target `x=A^t`
+is a root of the original retained product, but both child evaluations
+are 1 and x differs from the remaining endpoints `alpha=A` and
+`B*F_m=A^m`. Its collision is carried by the shifted parent alternative.
+This is a uniform theorem conditional on the stated order bound, not a
+new exhaustive actual semiprime miss at the prescribed public baby targets.
+It does not prove that the entire amended dense family fails.
+
+The original parent still has to be acquired at its shifted targets, or
+its geometric/interior alternatives must be handled by another complete
+algorithm. Smaller descriptors and Euclidean dimension descent do not
+supply that acquisition or its cost. Exact public GCD transport also
+retains the earlier checked-unit requirement or needs a separately sound
+and priced nonunit/saturation branch. No whole-source near-linear bit
+bound follows from the identity or the previous first-quotient count.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and [CheckSemiprimeDenseEuclidDescent.lean](../scripts/CheckSemiprimeDenseEuclidDescent.lean)
+all finish with exit code **0**. All **14** namespace linters pass:
+**36** direct declarations and **37** generated declarations, with all
+**73** declarations and **67** proof/helpers audited transitively. Only
+`propext`, `Classical.choice`, and `Quot.sound` occur. The source contains
+**30** theorems/helpers and **6** definitions. Root and semiprime family
+registration are complete. The saved
+[semiprime-dense-euclid-descent-audit.json](semiprime-dense-euclid-descent-audit.json)
+retains **311** source pins, including all **308** unchanged parent pins,
+and eleven supporting Mathlib hashes at the unchanged pinned revision.
+
+**Guaranteed deterministic N-only, every-run one-sixth bit-operation
+factorization remains OPEN.** The next required advance must acquire the
+complete retained source, including shifted-parent and geometric
+alternatives, in `tilde O(m)` bit work, or prove a concrete proposed
+acquisition family fails. Full construction, routing, recovery, memory,
+nonunit/saturated handling and arbitrary factor-ratio bounds remain
+required. The new uniform obstruction closes only the child/endpoints
+shortcut; it supplies neither a full dense-family miss nor the full
+factorization complexity proof.
+
+## 2026-10-04: uniform unbalanced-cofactor failure of complete dense exact recovery
+
+**The complete dense quadratic recovery family does not provide an
+all-ratio guarantee in its prescribed linear index window.** This is now
+a proved arithmetic obstruction for the literal candidate routine,
+including its rounding, both row orientations, both returned candidates
+and candidate absolute values. It is not a successful-example campaign.
+It does not establish absence of every modular power collision or proper
+residual GCD in the same rows.
+
+The new ordinary-library leaf
+[SemiprimeDenseRatioObstruction.lean](../RiemannGaussian/SemiprimeDenseRatioObstruction.lean)
+first handles a distinction that matters to a negative proof:
+`integerRoots a L C` uses a floor square root and integer division.
+Its returned values are not automatically exact polynomial roots.
+`integerRoots_enclosure` proves, for every nonzero a and every actual
+returned integer x, the existence of a real root y satisfying
+
+```text
+abs(y-x)<=2,  a*y^2+L*y+C=0.
+```
+
+Both square-root orientations and negative denominators are included.
+The proof retains the exact integer remainder and the bracket
+`Int.sqrt(d)<=Real.sqrt(d)<Int.sqrt(d)+1`. No compiler/native trust,
+square-discriminant premise or assumed candidate soundness is used.
+
+For every row with `C=t*p*q`, `p>=2`, `1<=t<=m`,
+`1<=abs(a)<=m` and `abs(L)<=D`, the two real-root coefficient balances
+then imply the uniform rounding-safe obstruction
+
+```text
+q > m*(p+6)+2*D+8
+  ==> no returned candidate has absolute value p or q.
+```
+
+The cofactor is too large for any permitted leading coefficient, linear
+coefficient and short target index to cancel it into either factor-sized
+root. For prime p,q, every proper positive divisor of p*q is p or q.
+Consequently taking candidate absolute values and validating divisibility
+cannot recover another proper divisor in this band.
+
+This is applied to the **actual complete source**, not a supplied row.
+The original numerator orientations have `abs(a)<=m`; the public gcd
+and inverse premises exclude a=0 at every positive denominator below m.
+The cached raw linear coefficient satisfies `abs(b)<=2*m^2`. Its leading
+carry and both signs are retained. For the complete recovery coefficient
+`L=b*m-2*a*j-m^2*I`, the theorem gives
+
+```text
+abs(I)<=R  ==>  abs(L)<=(R+2*m+2)*m^2.
+```
+
+Thus `progressionRecovery_no_proper` excludes every proper-factor
+candidate in every cached query whenever
+
+```text
+q > m*(p+6)+2*(R+2*m+2)*m^2+8.
+```
+
+This theorem holds for every base in every commutative group, every unit
+residue `j<m`, every original `0<t<m`, both orientations, and the whole
+signed window. It does not assume an order of the base. The original
+centered dense rows have the tighter coefficient envelope
+`D=(R+3)*m^2`; `denseRecovery_no_proper` excludes those complete literal
+lists too. The generic source theorems need the public prefix/inverse
+premises, but do not require the auxiliary modulus to be prime.
+
+The saved counterexample verifies that the band occurs at the **actual
+N-only selector**, after an enlarged quadratic small-factor prefix:
+
+```text
+N=1,000,420,150,063=50,021*20,000,003,
+ceiling sixth root=101,  publicRowModulus(N)=101,
+m=101,  R=5*m+15=520,
+4*m^2=40,804 < p=50,021,
+gcd(N,(4*m^2)!)=1,
+D=(R+2*m+2)*m^2=7,385,524,
+m*(p+6)+2*D+8=19,823,783 < q=20,000,003.
+```
+
+Prime factors, modulus primality, `gcd(m,N)=1`, the literal ceiling-sixth
+root and the least-prime selector are kernel checked. Prefix survival is
+proved through prime-factorial coprimality, without constructing the
+factorial. The quantified `control_no_recovery` covers all **100** residues,
+all **100** positive denominators, both original signs and all **1,041**
+signed indices. These are **20,820,000** complete recovery queries,
+excluded by the uniform inequality rather than native enumeration.
+`control_dense_no_recovery` excludes all original centered candidates
+in the same larger radius; their earlier balanced radius is only
+`3*m+14=317`. Negative candidate values cannot salvage a factor through
+absolute-value normalization. No native factorization run or exhaustive
+row/target scan was performed for this result.
+
+**Scope matters:** this closes an all-ratio exact-integer recovery claim
+for the current dense family. The balanced arithmetic coverage theorem
+remains valid. Modular power equalities may hold at an index congruent
+to a much larger true index, and a proper residual GCD may still factor
+the input. The new theorem does not claim all residual GCDs are 1, does
+not exclude every preceding factor route, and is not a lower bound for
+all factoring algorithms. A separately proved and priced GCD-based
+acquisition/recovery route, or a genuinely different ratio-aware source,
+could still repair the overall method.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and [CheckSemiprimeDenseRatioObstruction.lean](../scripts/CheckSemiprimeDenseRatioObstruction.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**23** direct plus **26** generated declarations. All **49** declarations
+and **44** proof/helpers are audited transitively, with only `propext`,
+`Classical.choice` and `Quot.sound`. The source has **18** theorem/helpers
+and **5** definitions. Root and semiprime family registration are complete.
+The saved
+[semiprime-dense-ratio-obstruction-audit.json](semiprime-dense-ratio-obstruction-audit.json)
+retains **314** source pins, including every **311** unchanged parent pin,
+and sixteen supporting Mathlib hashes at the unchanged pinned revision.
+No successful semiprime examples or individual success certificates were
+added. All previous positive results and complete no-gos are preserved.
+
+**Guaranteed deterministic N-only, every-run one-sixth bit-operation
+factorization remains OPEN.** The next advance must repair this
+all-ratio arithmetic/recovery failure, or prove a complete GCD-based
+acquisition that does not require a small exact integer factor index.
+The full construction, acquisition, routing, saturation/nonunit,
+recovery and memory bit costs remain required. More compression of the
+same exact-recovery source alone cannot remove the proved failure band.
+
+## 2026-10-04: modular index forcing, its long-branch exclusion, and GCD recovery
+
+The proposed modular-period repair has a proved arithmetic forcing rule,
+but its small-period premise is **excluded by the remaining projected-long
+branch at prime public sixth-root widths** in the unchanged radius. This
+is a limitation of this specific repair, not a complete dense power/GCD
+miss. The prior all-ratio exact-decoder obstruction remains unchanged.
+No successful examples, sampled collisions or individual success
+certificates were added.
+
+The new
+[SemiprimeDensePeriodForcing.lean](../RiemannGaussian/SemiprimeDensePeriodForcing.lean)
+uses the same actual N-only centered rows and public cached progressions.
+At the true residue `j=p%m`, let `f(t)` be the exact proof-side integer
+factor index of the canonical row, for `0<=t<m`. For a positive period
+`D` and bin width `K`, the precise modular forcing premise is
+
+```text
+D <= (m-1)*K,
+(g^(m^2))^D = 1       in the retained p-field baby generator.
+```
+
+The `m` remainders `f(t)%D` fit into `m-1` bins of width `K`. A pair
+`s<t<m` therefore has remainder difference of absolute value `<K`.
+Re-lifting that same difference into an actual emitted row changes its
+true index by at most three. `denseRows_period_index_coverage` proves an
+actual positive denominator `T=t-s<m`, one original numerator sign, a
+true index `i`, and a modular index `J` satisfying
+
+```text
+abs(J) <= K+3,
+i == J (mod D),
+Q_T(p/m) = p*i.
+```
+
+The quadratic remains indexed by **i**, not J. No claim of integer-root
+recovery at J is made. A confirmed period of `g^(m^2)` suffices to replace
+the true index in the **power** equality; it need not be the exact order
+and is not an input to the public constructor. This retains any order
+reduction caused by a common factor of `m^2` and the local order.
+`public_progression_period_coverage` moves the exact public centering
+carry to `I`, giving a prime-field power hit in the literal cached source
+with `abs(I)<=K+2*m+4`. The arithmetic proof imposes no factor-ratio
+condition and works with composite auxiliary m too, under the stated
+coprimality premises. Finding that implicit hit is still unpaid.
+
+For the unchanged cache radius `R=5*m+15`, this argument uses
+`K=3*m+11`. The bin capacity is then
+
+```text
+(m-1)*(3*m+11) < (2*m)^2       for m>=8.
+```
+
+`LongData` requires both projected local orders to exceed `(2*B)^2` and
+every prime divisor of either order to exceed `B`. When **B is prime**,
+roughness forces each order to be coprime to `B^2`, so raising the local
+generator to `B^2` does not reduce its order. Every positive period of
+either projected baby generator is consequently larger than the above
+capacity. `long_branch_excludes_period_bound` proves that exclusion
+uniformly. `publicRowModulus_eq_prime_width` verifies that the actual
+least-prime selector returns `m=B` whenever the ceiling-sixth-root width
+B is itself prime; `public_long_branch_excludes_period_bound` therefore
+applies the obstruction to the literal public selector, for every such
+width `B>=8`.
+
+This cannot be read as a no-collision theorem: it excludes the sufficient
+**modular-bin premise** in that branch, not all arithmetic correlations
+of the row indices. Nor does it assert that every input has prime width
+or that every input reaches the long branch. It shows why a generic
+small-period pigeonhole cannot simply be invoked to remove the arbitrary-
+ratio gap left by exact-integer recovery.
+
+A separate proved arithmetic criterion now allows recovery by the
+original residual GCD without the failed quadratic decoder. For every
+actual cached pair, with `0<t<m`, `j<m` and `abs(I)<=R`, write
+
+```text
+e = E_reduced - m^2*I = t*N + delta,
+abs(delta) <= C_R = (R+2*m+2)*m^2+m.
+```
+
+For distinct prime factors, the global unit order divides
+`phi=(p-1)*(q-1)`. Subtracting the confirmed period multiple `t*phi`
+gives the exact identity
+
+```text
+e - t*phi = t*(p+q-1) + delta.
+```
+
+If `C_R<p+q-1` and `m*(p+q-1)+C_R<orderOf(g)`, this entire residual
+window lies strictly between zero and the global order. Thus **every
+original pair in the window is unequal modulo N**. These are explicit
+arithmetic inequalities, not an assumed successful GCD or an assumed
+other-field inequality. A p-field hit then vanishes in exactly one
+field, and `local_hit_not_global_gcd` proves its residual GCD equals p
+by CRT. `public_progression_period_gcd_coverage` combines this criterion
+with the conditional periodic forcing rule: at
+`C=(K+4*m+6)*m^2+m`, the premises are
+`D<=(m-1)*K`, `C<p+q-1`, and `m*(p+q-1)+C<orderOf(g)`.
+
+**Those quantitative premises are not universally discharged.** The
+new theorem does not close all-ratio coverage, remaining kernel/long
+routing, product saturation across different one-sided hits, compressed
+acquisition or any full bit-complexity claim. Repeated primes continue
+to use the existing square preprocessing. No local or global order is
+computed by these proof-side statements.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and
+[CheckSemiprimeDensePeriodForcing.lean](../scripts/CheckSemiprimeDensePeriodForcing.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**16** direct plus **28** generated declarations. The transitive audit
+covers all **44** declarations, all proofs/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. Root and semiprime family
+registration are complete. The saved
+[semiprime-dense-period-forcing-audit.json](semiprime-dense-period-forcing-audit.json)
+retains **317** source pins, including all **314** unchanged parent pins,
+and seventeen supporting Mathlib hashes at the unchanged pinned revision.
+There were **zero** new native factorization runs, exhaustive scans,
+positive examples, finite controls or individual success certificates.
+
+**Guaranteed deterministic N-only, every-run one-sixth bit-operation
+factorization remains OPEN.** The next substantive collision argument
+must use further arithmetic structure of the actual rows in the
+remaining branches, or establish a complete-source power/GCD failure
+there. A concrete fast acquisition and the complete construction,
+routing, nonunit/saturation, recovery and memory bit costs are still
+required. A larger library of conditional collisions does not pay them.
+
+## 2026-10-04: arbitrary-ratio exact collision forcing with wider numerator wraps
+
+The arithmetic collision gap is closed for an **explicitly amended
+source**, after the existing complete quadratic prefix. The amendment
+allows a quadratic range of numerator wraps instead of just the two
+canonical numerator representatives. The new proof forces a **short
+exact integer factor index at every factor ratio**, and that same index
+gives both a prime-field power collision and the actual factor in the
+literal integer recovery list. It assumes no small local period,
+high-order outcome, other-field inequality or nonsaturation. This is a
+uniform arithmetic proof, not a collection of successful examples.
+
+The source-cost consequence is explicit: materializing the amended
+family takes **quartic** many row records. The requested one-sixth bit
+bound remains open. The previously proved canonical dense-family failure
+and small-period-patch exclusion are preserved; neither was repaired by
+silently removing its hypotheses or changing a completed audit.
+
+The new
+[SemiprimeWideWrapCoverage.lean](../RiemannGaussian/SemiprimeWideWrapCoverage.lean)
+retains the same actual denominator-one public seed
+`(a_seed,b_seed,c_seed)` at every residue j, and constructs
+
+```text
+wrapCap(m) = 2*m^2+1,
+z(t,k) = (t*a_seed-m*k, t*b_seed-j*k, t*c_seed, t),
+0<t<m,  0<=k<=wrapCap(m).
+```
+
+These rows satisfy the unchanged exact quotient relation
+`m^2*c-j*m*b+j^2*a=N*t`. The shift `(m,j,0)` is its public null
+direction. No factor, factor residue, factor quotient or true index is
+passed to the constructor. The full `wrappedRows(N,m)` list emits every
+original positive residue, every indicated denominator and every public
+wrap in that range. The correct row occurs as an ordinary member of
+that executable list.
+
+The arithmetic reason the new source must collide is precise. At the
+true residue `j=p%m`, write `p=m*x+j`, where `x=p/m`, and let the exact
+seed identity be `Q_seed(x)=p*iSeed`. Then
+
+```text
+Q_z(x) = p*(t*iSeed-k*x).
+```
+
+Unlike the prescribed canonical carry, the widened wrap can cancel
+any required multiple of the unknown factor quotient x. That quotient
+is used only in the coverage proof. Once the quadratic prefix excludes
+small factors, the sixth-power budget and `p<=q` give
+
+```text
+p<=m^3,  q<=m^4,
+m<=x<=m^2,
+0<=iSeed<=2*m^2+1.
+```
+
+Take the m proof-side multiples `t*iSeed`, for `0<=t<m`, and reduce
+them modulo x. Since `x<=m^2<=2*m*(m-1)`, they fit into m-1 bins of
+width 2m. Two multiples therefore have remainder difference i with
+`abs(i)<2*m`. Their denominator difference T is in `(0,m)`. The
+difference of their quotient floors supplies a nonnegative wrap k,
+bounded by `iSeed` and hence by the public `wrapCap(m)`. Thus
+
+```text
+i = T*iSeed-k*x,
+Q_z(x) = p*i,
+0<T<m,  0<=k<=2*m^2+1,  abs(i)<2*m.
+```
+
+`quotient_index_pigeonhole` proves this mechanism, and
+`wrappedRows_index_coverage` places the informative row in the literal
+public source. Its leading coefficient remains nonzero: modulo m it is
+the positive denominator times the coprime seed slope, and `T<m`.
+The larger wrap allows its absolute numerator to exceed m, removing the
+restriction responsible for the prior unbalanced-cofactor obstruction.
+No modular-alias index is substituted into the recovery quadratic.
+
+For **every** unit base in the p-field, Fermat supplies the power hit at
+the same exact i. The original `integerRoots_complete` then proves p
+occurs in the literal floor-square-root/integer-division recovery list.
+The result does not assume that all returned candidates are exact roots;
+the known exact root p is proved present. A whole-modulus collision is
+allowed: the proved witness still retains its informative exact
+quadratic and recovery tag.
+
+The original public cache remains the descriptor source. It stores
+one `ProgressionSeed` per residue, and the widened query is
+
+```text
+wrappedValue(T,k,s) = s.step^T * s.carryStep^(-k).
+```
+
+`wrappedValue_eq` proves equality with the full row's giant power;
+`wrappedRecovery_eq` proves equality with its complete integer-root
+list. Both are generated from the same cached coefficients, with no
+per-query quotient lift or full matrix needed for **one query**. Group
+maps preserve the value and changing the base group does not change the
+integer recovery list. `public_wrapped_coverage` therefore gives the
+collision and actual root in the retained global N-only cache, with the
+unknown prime-field projection used only in the proof.
+
+The routine prefix premises are also discharged. When
+`factorPrefix(N,m)=none` and `m^2<N`, the existing complete Strassen
+prefix proves `p>m^2` and `gcd(m,N)=1`.
+`public_wrapped_after_prefix` connects that actual no-factor outcome to
+the new coverage. At the actual least-prime public modulus
+`m=publicRowModulus(N)`, `sixthWidth(N)>=4` gives both `m^2<N` and
+`N<=m^6`; `actual_public_wrapped_after_prefix` proves the result at that
+literal selector. Any factor ratio is permitted, including equal prime
+factors in the arithmetic/recovery theorem. Existing square and finite
+small-input preprocessing remain available. There is no factor-size,
+small-period or successful-collision oracle at this interface.
+
+**Coverage has not paid acquisition.** The source's exact expanded length
+and lower output charge are
+
+```text
+length(wrappedRows(N,m)) = (m-1)^2*(2*m^2+2),
+m^4 <= 2*length(wrappedRows(N,m))       for m>1.
+```
+
+The descriptor list still has only m-1 entries by the earlier cache
+theorem. That representation does not establish near-linear work or
+memory for finding the guaranteed `(j,T,k,i)`. The quartic output bound
+concerns constructing the literal list; it is not a lower bound for
+all compressed acquisition circuits or factoring algorithms. Brute-force
+row/target recovery would cost still more. Product norms, interval
+recovery, duplicate/global hits, nonunits and saturation must retain the
+wrap/index tag and receive a complete bit cost before this can become a
+one-sixth factorizer.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and
+[CheckSemiprimeWideWrapCoverage.lean](../scripts/CheckSemiprimeWideWrapCoverage.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**24** direct plus **40** generated declarations. The transitive audit
+covers all **64** declarations and **59** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. The source has **19**
+theorems and **5** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-wide-wrap-coverage-audit.json](semiprime-wide-wrap-coverage-audit.json)
+retains **320** source pins, including all **317** unchanged parent pins,
+and seventeen supporting Mathlib hashes at the unchanged pinned revision.
+There were **zero** new native factorization runs, exhaustive scans,
+positive examples, finite controls or individual success certificates.
+
+**Guaranteed deterministic N-only, every-run one-sixth bit-operation
+factorization remains OPEN.** The next substantive step is to acquire
+the actual guaranteed collision in these widened two-parameter cached
+progressions within a proved near-linear-in-m whole bit budget, or derive
+a smaller source with comparably complete arithmetic coverage. The
+full construction, acquisition, tagged recovery, global/saturated/nonunit
+handling, routing and memory bit costs remain required.
+
+## 2026-10-04: exact wrap recovery from three scalars, including common global roots
+
+The widened source's arithmetic guarantee now connects to a complete
+**column recovery specification** on an actual public projected-long
+outcome. A product and two marked derivatives preserve the exact wrap
+index. If the two prime fields have different wrap roots, their decoded
+indices separate a factor. If they have the same root, the controller
+retains that common original wrap and runs the actual quadratic recovery
+list. The guaranteed collision is therefore not lost merely because
+its residual, or its complete wrap product, vanishes modulo the whole N.
+These are uniform identities and recovery proofs; there are no new
+successful examples, native factorization runs or finite certificates.
+
+The new
+[SemiprimeWrapIndexRecovery.lean](../RiemannGaussian/SemiprimeWrapIndexRecovery.lean)
+uses the SAME cached descriptor and fixes one public residue j,
+denominator t and short signed index i. Write
+
+```text
+alpha = s.carryStep,
+X = s.step^t * g^(-m^2*i),
+L = wrapCap(m)+1 = 2*m^2+2.
+```
+
+The entire quadratic wrap axis is the geometric interval
+`X=alpha^k`, `0<=k<L`. Its connection to the original row is exact:
+
+```text
+wrappedValue(t,k,s) - g^(m^2*i)
+  = alpha^(-k)*g^(m^2*i) * (X-alpha^k).
+```
+
+`wrap_residual_identity` proves this equality, and `wrap_residual_gcd`
+applies the repository's earlier `SemiprimeRHCancellation` unit identity.
+The public prefactor is a unit, so every original GCD is retained,
+including saturation and a global hit. No signed sum replaces the
+product's root union, and no wrap/index tag is changed.
+
+The three column values are the existing interval product P, target
+derivative Dx and logarithmic base derivative Da. At a simple root
+`X=alpha^k`, the exact identity `Da=-k*X*Dx` gives
+
+```text
+sDecoded = -Da/(X*Dx) = k          in that prime field.
+```
+
+`recoverTaggedJet` reads only those three supplied scalars and public
+column parameters. It first checks the product GCD. At a saturated
+product, distinct local roots prove the denominator is a unit; its
+invertibility is not assumed. Two different local indices are recovered
+by the existing complete short integer-index batch. If they coincide,
+the decoded value is the literal short integer k modulo N. The controller
+checks its interval bound and the original global equation `X=alpha^k`,
+then returns that SAME wrap. `recoverTaggedInterval_preserves_root`
+proves the factor-or-original-index dichotomy for every simple local root.
+`recoverWrapColumn` feeds the common wrap to `wrappedRecovery`, and its
+checked candidate reader validates every result by a proper GCD. The
+previous uniform coverage proof puts the actual p in that literal list.
+An inexact additional candidate does not invalidate completeness.
+
+The required simple-root property is proved arithmetically from routing.
+On `LongData(g,m)`, every prime dividing a projected local order is above
+m. For `1<j<m`, that order is coprime to `m*(j-1)`, so the actual carry
+power `gProjected^(m*(1-j))` preserves it. Both local carry orders exceed
+`4*m^2`, hence the full wrap interval has distinct powers in both fields.
+The exceptional residue `j=1` has trivial carry and is excluded at the
+true smaller-factor residue: if `p%m=1`, then `m|(p-1)`. Roughness gives
+`gcd(m,d)=1` for the long order `d|(p-1)`, forcing `m*d|(p-1)`. This
+contradicts `d>4*m^2` and the proved `p<=m^3` factor bound. No generic
+position, private order or successful collision is supplied as advice.
+
+**The widths must match.** The old public refinement uses
+`B=sixthWidth(N)`, whereas the row selector may choose a larger least
+prime m. The new `routeAtRowModulus` explicitly runs the existing seed
+selection and refinement at that actual m. `seed_route_with_prefix_bound`
+proves the unchanged seed loop works when `N<=m^6`, `m>=4` and `m^2<N`,
+without requiring m to be the exact sixth-root width. All these premises
+follow at the actual row selector when `sixthWidth(N)>=4`.
+`routeAtRowModulus_semiprime` proves factor/kernel/long routing for the
+distinct-prime branch. `long_public_route_recoverable_column` derives
+the successful original column from an actual long output; it does not
+assume an unrelated matched-width certificate. Kernel and earlier
+square/small-input branches retain their existing interfaces and costs.
+
+The SAME three scalars also have a blocked construction. `wrapBlockedJet`
+uses the existing shared m-root polynomial circuit at `L/m` normalized
+points and appends its exact tail of length `L%m`. The product-rule
+combiner retains the original absolute indices and both derivatives.
+`wrapBlockedJet_exact` proves equality with P, Dx and Da over every
+commutative ring, through zero products and nonunit targets. For m>1,
+
+```text
+L/m <= 2*m+1,       L%m <= 2,
+m + L/m + L%m + 1 <= 3*m+4.
+```
+
+This is a **linear input count for one fixed column**, not a complete
+arithmetic or bit bound. `recoverBlockedWrapColumn_eq` proves the blocked
+reader equals the original tag-preserving reader, and
+`long_public_route_recoverable_blocked_column` connects it to the actual
+public long outcome and earlier arbitrary-ratio exact-index forcing.
+The subsequent existing index stage has 2m roots, 2m points and at most
+4m GCD queries. A common wrap uses at most two quadratic candidates.
+Matching the public refinement width changes its GCD bound by at most
+a constant factor, to `18*sixthWidth(N)+1`. Polynomial construction,
+multipoint evaluation, inversion and all bit costs still need payment.
+
+The obvious all-target pooling recipe is also audited. At ONE residue,
+the direct denominator/short-index grid has `r=4*m*(m-1)` target records.
+For the earlier transposed geometric norm with interval `L=2*m^2+2`,
+every positive block width s satisfies
+
+```text
+16*m^4 < qInputs(r,L,s)^2.
+```
+
+Thus that literal polynomial representation still has a quadratic
+input scale per residue. It cannot price all-column acquisition linearly
+in m. This restriction does not cover alternative arithmetic compression
+or all factoring algorithms. Pooling first jets of several zero column
+products can also erase both derivative channels by the earlier checked
+identity; a new join must preserve the successful column and its tags.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root,
+and
+[CheckSemiprimeWrapIndexRecovery.lean](../scripts/CheckSemiprimeWrapIndexRecovery.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**39** direct plus **60** generated declarations. The transitive audit
+checks all **99** declarations and **81** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. The source has **31**
+theorems and **8** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-wrap-index-recovery-audit.json](semiprime-wrap-index-recovery-audit.json)
+retains **323** source pins, including all **320** unchanged parent pins,
+and eighteen supporting Mathlib hashes at the unchanged pinned revision.
+There are zero new numerical scans or finite success certificates.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** The new readers and inherited polynomial/index circuits
+are noncomputable Lean specifications; their executable fast backend
+and full bit cost are not proved here. The remaining successful j,t,i
+must be acquired across the actual outer source within a near-linear
+total budget, rather than paying separately for cubically many columns.
+The whole construction, routing, recovery, saturation/nonunit and memory
+costs, including every other route, must then be proved in bit operations.
+Another correct single-column identity or input count would not close
+that total-cost gap.
+
+## 2026-10-04: ratio-scaled pigeonhole forces a smaller hyperbolic carry family
+
+**Classification: progress.** The next result is a uniform arithmetic
+forcing argument, rather than another collection of successful cases.
+[SemiprimeHyperbolicWrapCoverage.lean](../RiemannGaussian/SemiprimeHyperbolicWrapCoverage.lean)
+proves that the widened numerator-wrap source can be replaced by a public
+hyperbolic extra-carry family. It preserves every factor ratio after the
+original complete prefix, the short EXACT index, the original literal
+quadratic recovery roots and the existing saturation-complete reader.
+Its full explicit output count drops from quartic to quadratic times
+logarithmic in the public row modulus. The one-sixth bit bound remains
+OPEN; the smaller explicit family still has a quadratic output floor.
+No new numerical factorization runs, finite collision examples or
+successful-case Lean certificates are used.
+
+Write N=p*q, p<=q, and use the public row modulus m with N<=m^6.
+Failure of the unchanged complete quadratic prefix proves p>m^2 and
+coprimality of m with N. At the true residue j=p mod m, the seed has
+leading coefficient a, linear coefficient b and exact seed index I.
+The earlier checked identities and bounds give
+
+```text
+x = floor(p/m),       m <= x <= m^2,
+0 <= I <= 2*m^2+1,    |b| <= m,
+m^2*I = a*m*x + b*m - a*j + q.
+```
+
+The earlier quotient pigeonhole used m multiples regardless of x.
+The new `scaled_quotient_pigeonhole` uses only the number of bins needed
+for that quotient. When x<=2m, t=1 and k=floor(I/x) suffice. Otherwise
+set n=floor(x/(2m))+2. There are n multiples and n-1 bins of width 2m.
+The factor-size bounds give n<=m and (n-1)*m<=x. Two remainders land in
+the same bin; their difference yields a denominator t and full wrap k
+with all of the following bounds simultaneously:
+
+```text
+0 < t < m,          t*m <= x,
+0 <= k <= 2*m+1,    i = t*I-k*x,       |i| < 2*m.
+```
+
+These are exact integer identities. The quotient x and seed index I
+appear only in the existence proof, not as inputs to the constructor.
+The added bound t*m<=x is the arithmetic reason the cofactor can now be
+controlled at every ratio. From q*x<=m^5 it implies
+
+```text
+t^2*q <= m^3*x.
+```
+
+Let kappa=floor(a*t/m), rho=a*t mod m, and u=k-kappa. Substituting the
+exact short-index identity into the seed identity gives
+
+```text
+m^2*u*x = rho*m*x + t*b*m - t*a*j + t*q - m^2*i.
+```
+
+Multiplying by t and applying the scaled cofactor bound, |b|<=m,
+a,j,rho<=m and |i|<2m proves
+
+```text
+-4*(m^2*x) <= (m^2*x)*(t*u) <= (2*m+3)*(m^2*x),
+t*|u| <= 4*m.
+```
+
+This bound uses the input product budget and the adapted denominator,
+without a balanced-factor assumption. It replaces the previous quadratic
+wrap range by the public radius floor(4m/t) beyond the canonical carry.
+`hyperbolicRows N m` emits every j,t in 1..m-1 and every signed u in that
+radius, with full wrap `(leadingCarry(N,m,j,t,false)+u).toNat`. Negative
+public wrap expressions are clamped and can duplicate records. At the
+proved witness, the expression equals the original nonnegative k exactly.
+Neither p, q, x nor I enters this N-only constructor.
+
+`hyperbolicRows_index_coverage` proves membership in that literal list,
+a nonzero leading coefficient and Q(x)=p*i with |i|<2m.
+`hyperbolic_prime_collision_coverage` then uses the unchanged quotient
+relation and Fermat period to prove the original row-power collision
+for EVERY prime-field base. The unchanged literal `wrappedRecovery`
+list contains p. No period folding replaces the full wrap or the exact
+index. `actual_public_hyperbolic_after_prefix` discharges the size,
+inverse and prefix premises at the actual least-prime selector when
+`sixthWidth(N)>=4`, and permits p=q as well as p<q in its coverage.
+
+For distinct primes, `long_public_route_hyperbolic_recoverable_column`
+connects this SAME new-family witness to an actual matched-width public
+long output. Its rough-order certificate proves simple local carry
+roots and excludes the exceptional true residue one, as in the preceding
+leaf. The existing blocked reader then returns a checked factor through
+both saturated products and common global hits. That reader still uses
+the old interval of length 2m^2+2. The new witness's k<=2m+1 bound is not
+silently counted as an implemented shorter acquisition algorithm.
+
+The source-count theorems apply to the entire actual emitted list,
+including duplicates:
+
+```text
+length = (m-1) * sum_{t=1}^{m-1}(2*floor(4*m/t)+1),
+length <= (m-1)*((m-1)+8*m*(1+log m)),
+(m-1)^2 <= length.
+```
+
+The harmonic upper bound is a strict improvement over the preceding
+quartic literal family. The lower bound also shows that direct expansion
+of THIS smaller list cannot meet the near-linear-in-m target. It is not
+a lower bound for a compressed acquisition circuit or all factorization
+algorithms. Input/output counts do not price modular arithmetic, cached
+power acquisition, polynomial evaluation, inverses, routing or recovery.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and
+[CheckSemiprimeHyperbolicWrapCoverage.lean](../scripts/CheckSemiprimeHyperbolicWrapCoverage.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**20** direct plus **51** generated declarations. The transitive audit
+checks all **71** declarations and **67** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **16** source
+theorems and **4** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-hyperbolic-wrap-coverage-audit.json](semiprime-hyperbolic-wrap-coverage-audit.json)
+retains **326** source pins, including all **323** unchanged parent pins,
+and **20** supporting Mathlib hashes at the unchanged pinned revision.
+
+**Guaranteed deterministic classical N-only one-sixth factorization
+remains OPEN.** The arithmetic coverage is now substantially smaller,
+but the successful residue, denominator, extra carry and exact short
+index remain unknown. They must be acquired without expanding the
+quadratic family and within a proved near-linear whole budget. The fast
+executable backend, every routing branch, recovery, saturation/nonunit
+handling and memory costs still require bit-operation proofs. Another
+sampled success, a single-column identity or a source count alone would
+not close those remaining gaps.
+
+## 2026-10-04: exact index folding gives one common-base whole-source acquisition
+
+**Classification: progress.**
+[SemiprimeMergedIndexAcquisition.lean](../RiemannGaussian/SemiprimeMergedIndexAcquisition.lean)
+uses the preceding LINEAR full-wrap witness to remove the separate short
+index from the public target grid. It retains a constant-size full-wrap
+bundle, makes one base serve every residue, and proves a complete labelled
+batch scan on the actual public long branch. The entire shared root/target
+input count is quadratic in m. This is an acquisition correctness and
+dimension reduction, not the requested one-sixth bit-operation bound.
+There are no new numerical factorization runs or finite success certificates.
+
+At one original cached residue j, write A_j for its seed step and
+alpha_j for its retained carry step. Both are constructed over ZMod N.
+For the public global unit g, the new exact identities are
+
+```text
+beta = g^m,               alpha_j = beta^(1-j),
+z = m*i + (1-j)*k,
+wrappedValue(t,k,s_j) = g^(m^2*i)  iff  A_j^t = beta^z.
+```
+
+Thus beta is independent of j, t and both recovery indices. Unlike a
+period fold that discards the wrap quotient, the new decoder retains its
+literal effect on the original quadratic. The previous arithmetic forcing
+provides k<=2m+1 and |i|<2m at every factor ratio after the complete prefix.
+For 1<=j<m these imply
+
+```text
+-4*m^2 <= z < 2*m^2.
+```
+
+Two adjacent public intervals, starting at -4m^2 and -m^2, each of length
+L=3m^2, cover this whole range. At one half start h, the normalized target
+is A_j^t*beta^(-h), and its original absolute signed index is z=h+r for
+0<=r<L. The existing rough-order public route already proves both local
+projected periods exceed 4m^2 and have no prime factor at most m. They
+are coprime to m, so beta preserves BOTH periods. Each half therefore
+has simple roots without stronger routing or an unavailable order oracle.
+Two halves are retained because the whole six-m-squared range would
+exceed the existing guaranteed period threshold.
+
+At the true residue, the preceding long-route theorem excludes j=1.
+The actual selected modulus is prime; therefore j-1 has a public inverse
+w modulo m. From the exact folded relation,
+
+```text
+rWrap = (-w*z mod m).toNat = k mod m,
+full wraps = [rWrap, rWrap+m, rWrap+2*m].
+```
+
+Since k<=2m+1<3m, this list includes the SAME original full wrap. At each
+lift the decoder reconstructs i=(z-(1-j)*k)/m. At the true lift that
+integer is exactly the original short index. `mergedRecovery_preserves_root`
+keeps the original factor p in the complete literal `wrappedRecovery`
+list, and `mergedRecovery_length_le_six` bounds all checked candidates by
+six. Incorrect lifts can yield candidates, but every candidate is checked
+by a proper GCD. No private factor or successful wrap is supplied as an
+input to reconstruction.
+
+`recoverMergedHalf_succeeds_of_exact_hit` uses the preceding three-scalar
+reader. It returns a checked proper divisor when the original product is
+nonsaturated or the two local interval indices differ. If both fields
+share the same root r, the reader preserves that r; reconstruction retains
+all three full wraps rather than choosing a modular alias. The SAME
+marked derivatives and exact index survive through zero products. The
+blocked alternative `mergedJet` is the existing shared evaluator with m
+common roots and 3m normalized points; its equality with the three full
+interval scalars is proved over every commutative ring.
+
+The public target stream now stores cached seeds, every denominator
+0<t<m, and two half flags. It has EXACTLY
+
+```text
+length(mergedColumns) = 2*(m-1)^2.
+```
+
+There is no separate i axis. `long_public_route_merged_column` derives a
+successful member from an ACTUAL matched-width public long output and the
+arbitrary-ratio hyperbolic forcing theorem. `scanMergedColumns` scans this
+entire N-only stream. `long_public_route_scan_succeeds` proves it returns
+a checked proper divisor, even when earlier targets are false or globally
+shared hits. This goes beyond a successful-column existence statement.
+It applies to distinct primes, `sixthWidth(N)>=4`, and the original prefix
+returning none. Earlier square/small-input handling and the kernel branch
+retain their previous interfaces and unpaid costs.
+
+There is also a shared WHOLE-source polynomial specification. Construct
+ONCE, with this same beta and L,
+
+```text
+P(X)  = product_{0<=r<L}(X-beta^r),
+Dx(X) = derivative_X P(X),
+Da(X) = the exact marked base-derivative polynomial.
+```
+
+`mergedPolynomials_eval_exact` proves evaluation gives the original
+interval product and both original derivatives over EVERY commutative
+ring. `mergedBatchJets` retains each original target tag beside its own
+triple. The triples are neither summed nor multiplied together into a
+pooled first jet, which would lose labels when several products vanish.
+`mergedBatch_scan_exact` proves the aligned batch reader equals the
+complete blocked scan. `long_public_route_batch_succeeds` therefore
+proves the whole shared batch returns a checked factor on every remaining
+distinct-prime ratio of the actual long branch.
+
+This common base eliminates the separate per-residue root polynomial.
+The entire root/target/cache input count satisfies
+
+```text
+3*m^2 + 2*(m-1)^2 + (m-1) + 1 <= 5*m^2+m.
+```
+
+The specification does not require a root-by-target pair matrix. It does
+still emit a quadratic number of labelled triples and use a full interval
+with quadratic many roots. `common_polynomial_degree_floor` proves that
+any NONZERO p-field polynomial vanishing on the whole routed simple
+interval has degree at least 3m^2. This restricts that full-interval
+polynomial representation; it is not a no-go for compressed evaluation
+or all factorization algorithms. Evaluating every blocked target separately
+would instead involve cubically many normalized point records. No fast
+coefficient, marked-derivative or multipoint bit algorithm is silently
+inferred from the common polynomial or the input count.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and
+[CheckSemiprimeMergedIndexAcquisition.lean](../scripts/CheckSemiprimeMergedIndexAcquisition.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**54** direct plus **73** generated declarations. The transitive audit
+checks all **127** declarations and **96** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **35** source
+theorems and **19** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-merged-index-acquisition-audit.json](semiprime-merged-index-acquisition-audit.json)
+retains **329** source pins, including all **326** unchanged parent pins,
+and **22** supporting Mathlib hashes at the unchanged pinned revision.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** The polynomial evaluators and interval/index readers are
+noncomputable Lean specifications. The remaining residue/denominator
+target must be acquired without quadratic explicit target output or a full
+quadratic coefficient array, within a proved near-linear whole budget.
+The executable fast backend, all routing branches, recovery, saturation,
+nonunit handling and memory still require complete bit-operation proofs.
+The new exact whole-scan theorem and shared input count do not close those
+cost obligations.
+
+## 2026-10-04: Boolean GCD gives a charged scalar checked-factor backend
+
+**Classification: progress.**
+[SemiprimeBitGcd.lean](../RiemannGaussian/SemiprimeBitGcd.lean) implements
+Euclidean GCD and the existing checked-signal interface using Boolean
+words and the frozen restoring division/subtraction circuits. Its
+termination and composed primitive clocks are proved for every input,
+including zero values and high zero padding. This closes a scalar backend
+cost gap; it does not change the quadratic merged target stream or prove
+the whole one-sixth factorizer. No numerical factorization runs or finite
+success certificates were added.
+
+The data path never evaluates `bitValue` or calls natural GCD, modulo,
+division or natural ordering to compute an output. `buildGcdFuel` actually
+constructs a list of unit cells from the two input words. Its exact length
+is `2*(xs.length+ys.length)+1`, and all input reads, constructor tests and
+fuel writes cost at most `5*(xs.length+ys.length)+3`. The Euclidean loop
+consumes those cells and retains an explicit exhaustion flag for arbitrary
+insufficient supplied fuel.
+
+The arithmetic termination proof uses the earlier general identity
+
+```text
+b>0 and a mod b>0  imply  2*(b mod (a mod b))<b.
+```
+
+`gcdLoop_stops_pow` proves that a second input value below `2^k` needs at
+most `2*k` actual restoring-division calls and terminates with `2*k+1`
+fuel cells. Thus `gcdBits` always succeeds with its self-constructed
+budget, including padded all-zero words. Its output evaluates to the
+exact natural GCD, performs at most twice the second word's physical
+length in divisions, and never exceeds the larger input width.
+
+For physical input widths at most L, the composed clock bounds are
+
+```text
+gcdBits.clock           <= 400*(L+1)^3,
+checkedSignalBits.clock <= 500*(L+1)^3.
+```
+
+The first bound includes fuel construction, every visited fuel frame,
+the full nonzero scans and all restoring divisions, including the
+division backend's repeated divisor scan. The second also pays the
+literal one cell and both Boolean borrow comparisons. Those comparisons
+recognize exactly `1<gcd<N`. `checkedSignalBits_exact` proves that mapping
+the returned word through its mathematical value gives exactly the frozen
+`checkedSignal` result; `checkedSignalBits_sound` certifies every returned
+word as a proper divisor. Saturation and zero moduli use this same total
+routine. Clock and division-counter arithmetic is proof instrumentation
+in the established Boolean-gate/cell/test model, rather than a separate
+claim about full Lean-host execution costs.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and [CheckSemiprimeBitGcd.lean](../scripts/CheckSemiprimeBitGcd.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**36** direct plus **88** generated declarations. The transitive audit
+checks all **124** declarations and **66** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. The source has **14**
+theorems, **4** definitions and **3** report structures. Root and
+semiprime family registration are complete. The saved
+[semiprime-bit-gcd-audit.json](semiprime-bit-gcd-audit.json) retains
+**332** source pins, including all **329** unchanged parent pins, and
+the same **22** supporting Mathlib hashes at the unchanged pinned
+revision.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** The earlier arbitrary-ratio collision and complete
+merged-batch coverage are preserved. A scalar polylogarithmic clock
+still needs actual word encodings and width bounds, a total caller budget
+and composition with every route. The modular inverse/extended-GCD
+backend, successful-target acquisition within a near-linear whole
+budget, fast polynomial/jet arithmetic, bounded-index saturation
+handling and full memory and bit-operation bounds remain necessary.
+The new GCD proof does not establish those obligations.
+
+## 2026-10-04: forced rows separate after a two-seed public exception check
+
+**Classification: progress.**
+[SemiprimeForcedRowSeparation.lean](../RiemannGaussian/SemiprimeForcedRowSeparation.lean)
+proves the arithmetic reason an exact forced row must separate the two
+prime fields, apart from a short public exception menu of at most two
+cached seeds. The amended reader checks that menu first and then skips
+every common global index in the main merged batch without reconstructing
+its full wrap or quadratic. Completeness is proved for the actual public
+long-route output at every remaining distinct-prime ratio. This removes
+a recovery obligation, while the main acquisition remains quadratic.
+No numerical factorization runs, success tallies or finite Lean
+factorization certificates were added.
+
+For a row `(a,b,c,t)` with the SAME exact factor index i, its public
+exponent satisfies
+
+```text
+E - m^2*i = (p-1)*(t*q-a).
+```
+
+The projected local orders dp and dq are coprime and m-rough, with
+both greater than `4*m^2`. The smaller factor obeys `p<=m^3`. If a prime
+r divided both dq and the FULL `p-1`, then r>m and coprimality with dp
+would make `r*dp` divide `p-1`, while `r*dp>m^3`. This contradiction
+proves that dq is coprime to the FULL smaller field cardinality, without
+assuming or computing either full local order.
+
+Consequently a q-field collision of the exact forced row makes dq
+divide `t*q-a`. Since dq divides `q-1`, it divides `t-a`. Writing A for
+the actual cached seed slope, the retained full wrap gives
+
+```text
+a = t*A-m*k,
+0<t<m,  A<m,  k<=2*m+1,
+abs(t-a) <= 4*m^2 < dq.
+```
+
+Thus `a=t`. The public row modulus m is prime, so `t*(A-1)=m*k`,
+`0<t<m` and `A<m` force exactly
+
+```text
+A=1,  k=0.
+```
+
+`forced_common_hit_exception` proves this exclusion for the exact
+forced witness. It does not assert that arbitrary false common global
+power hits satisfy this exception. Those hits may still appear earlier
+in the public stream.
+
+At zero full wrap, the exact factor-index transport is `i=t*I`, where
+I is the original denominator-one seed index. The seed identity proves
+`I>=0`; the forced bound `abs(i)<2*m` then gives `I<2*m`. The public
+short trial therefore uses base `g^(m^2)`, a simple interval of length
+`2*m`, and the original quadratic at denominator one and wrap zero.
+The routed rough orders are preserved by this base. The same three-scalar
+reader catches nonsaturated products, mixed-index saturation and a
+common global original seed index, with every returned factor checked.
+
+`exceptionSeeds` filters the literal cached seed list by `slope=1`.
+The exact quotient-slope and Bezout identities imply `j^2=N (mod m)`
+at every retained residue. Over the prime field two such square roots
+are equal or negatives; the original distinct canonical residues therefore
+leave at most **two actual cached descriptors**. The short root, target
+and cache input count satisfies
+
+```text
+2*m + exceptionSeeds.length + progressionSeeds.length + 1 <= 3*m+2.
+```
+
+`forced_common_hit_seed_scan` proves that every common exact forced
+hit makes this public precheck return a proper factor. If it returns
+none, `long_after_seed_scan_factor_column` uses the actual hyperbolic
+arithmetic forcing theorem to produce a public merged column with its
+original root present modulo p and absent modulo q. The interval reader
+must return a checked factor on that column; it cannot return that SAME
+root as a common global index.
+
+The amended `recoverLongRows` first performs the short precheck and then
+uses `recoverFactorHalf` and `scanFactorColumns`, which retain only the
+factor channel. Every common global tag in the main batch is skipped
+without computing `wrapResidue`, inverting `j-1`, enumerating three wrap
+lifts or constructing their quadratic candidate lists. The public route
+theorem derives the actual selected modulus, prefix exclusion and both
+local period certificates from `routeAtRowModulus(N)=longBase a`; no
+successful private row tag is an algorithm input.
+
+The acquisition can use the UNCHANGED common-polynomial construction and
+labelled `mergedBatchJets`. `factorBatch_scan_exact` proves the aligned
+factor-only batch equals the complete original-interval scan.
+`long_public_route_factor_batch_succeeds` proves the amended whole batch
+returns a checked proper factor on every actual remaining long output.
+The proof-side counters follow the same visited seed prefix and bound
+the entire reader by **two quadratic candidate constructions** and
+**four candidate checks**. The main batch constructs no quadratic
+candidate list.
+
+This arithmetic exclusion does NOT make every interval product
+nonsaturated. The other field can hit the same interval at a DIFFERENT
+root, so both marked derivatives and the bounded-index decoder remain
+necessary. The at-most-four quadratic candidate budget does not price
+that decoder, prove its adaptive fallback count, or pay full recovery
+bit operations or memory. The main stream still has `2*(m-1)^2` labelled
+targets and a common full interval of `3*m^2` roots.
+
+The targeted warnings-as-errors build, strict leaf, strict ordinary root
+and
+[CheckSemiprimeForcedRowSeparation.lean](../scripts/CheckSemiprimeForcedRowSeparation.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**53** direct plus **117** generated declarations. The transitive audit
+checks all **170** declarations and **130** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **40** source
+theorems and **13** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-forced-row-separation-audit.json](semiprime-forced-row-separation-audit.json)
+retains **335** source pins, including all **332** unchanged parent pins,
+and **23** supporting Mathlib hashes at the unchanged pinned revision.
+
+A current primary literature lead was also checked:
+[Umans–Wang, Section 5](https://arxiv.org/html/2511.10851v1#S5)
+obtains a deterministic one-sixth exponent from a structured prefactored
+divisor conjecture. That conjecture is an additional arithmetic
+assumption and is not a theorem discharged or imported here. The new
+separation proofs use only the repository's existing forcing and routed
+order arithmetic plus ordinary Mathlib lemmas.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** Successful separating-target acquisition must still
+avoid quadratic explicit targets or coefficients within a proved
+near-linear whole budget. Executable inverse/jet/index backends,
+all remaining square/small-input/kernel route composition, saturation
+fallback charges and complete bit-operation and memory proofs remain
+necessary. The amended recovery and linear exception input count do not
+establish those costs.
+
+## 2026-10-04: all global hits share one exact phase and two public residues
+
+**Classification: progress.**
+[SemiprimeGlobalPhaseCancellation.lean](../RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean)
+proves an exact cancellation identity for EVERY verified common global
+hit in the original merged grid, including false factor-row tags. One
+verified public tag determines the complete common-global hit set by
+integer arithmetic, supported on at most two literal cached residue
+descriptors. The expanded mask has at most `2*(m-1)` tags. This is a
+general arithmetic advance; no numerical factorization runs, success
+tallies or finite Lean factorization certificates were added.
+
+Write the denominator-one seed exponent as
+
+```text
+E_j = N + delta_j,
+delta_j = A_j + m*b_j - 2*A_j*j,
+-3*m^2 <= delta_j <= m^2.
+```
+
+These are the original public slope, centered coefficient and residue,
+with the exact integer centering carry retained. On the actual matched
+long branch the CRT order is
+
+```text
+D = lcm(dp,dq) = dp*dq > 16*m^4,
+```
+
+because both routed local orders exceed `4*m^2` and are coprime. No
+numerical order is computed by the emitter. A globally verified original
+tag `(j,t,z)` gives
+
+```text
+D divides t*(N+delta_j) - m*z,
+0<t<m,   1<=j<m,   -4*m^2<=z<2*m^2.
+```
+
+For two such tags, cross-multiplication cancels the large N term:
+
+```text
+F = t*t0*(delta_j-delta_j0) - m*(t0*z-t*z0),
+D divides F,
+abs(F) <= 12*m^4 < D.
+```
+
+Thus `F=0` as an EXACT integer, giving one rational phase
+`m*z/t-delta_j` for every common global hit. This conclusion is broader
+than the preceding exact-forced-row slope-one exception: an arbitrary
+global tag need not have slope one or be the forced factor witness.
+
+Since m is prime and `0<t,t0<m`, both denominators cancel modulo m,
+so `m` divides `delta_j-delta_j0`. The original quotient-slope and
+public Bezout identities also give
+
+```text
+A_j*j^2 = N              (mod m),
+delta_j*j^2 = N*(1-2*j)  (mod m).
+```
+
+With `v=delta_j0 mod m`, every globally active residue is therefore a
+root of the SAME public polynomial
+
+```text
+v*X^2 + 2*N*X - N
+```
+
+over `ZMod(m)`. The public prefix makes N coprime to m, so its constant
+term is nonzero. Its degree is at most two even when v vanishes. Mapping
+the exact filtered cached stream to its roots is injective on canonical
+residues; the polynomial root-cardinality bound proves
+`phaseSeeds.length<=2` for the actual descriptors, rather than only an
+abstract private residue set. Filtering uses the cached small offsets.
+
+The exact phase further forces `t0` to divide `t*z0`. Both divisions in
+the public prediction formula are consequently integral:
+
+```text
+z = (t*z0)/t0 + t*((delta_j-delta_j0)/m).
+```
+
+The converse is proved as well. For a descriptor in the phase class,
+an integral prediction makes `t0` times its order residual equal to t
+times the verified anchor residual. Both local orders are m-rough, hence
+D is coprime to the short positive anchor denominator t0. Cancelling it
+proves that every emitted prediction is a genuine global hit.
+
+`predictedGlobalTags_exact` establishes membership IF AND ONLY IF the
+original bounded global equation holds. The arithmetic emitter ranges
+over the at-most-two cached descriptors and the original positive
+denominators, checks integrality and the signed interval, and performs
+no further group comparisons once supplied the cache and anchor. Its
+entire expansion has at most `2*(m-1)` entries; the two descriptors and
+one anchor also retain the implicit phase formula without expansion.
+Two supported residue rows do not mean only two target columns.
+
+`merged_reader_global_tag` connects a common index returned by the
+UNCHANGED interval reader to the exact original signed global equation.
+`long_public_route_reader_mask` derives the hypotheses from the actual
+`routeAtRowModulus(N)=longBase a`, public prefix and selected row modulus.
+Its anchor is publicly returned and verified; neither a successful
+private factor-row tag nor a local-order oracle is an algorithm input.
+
+The warnings-as-errors target build, strict leaf, strict ordinary root
+and
+[CheckSemiprimeGlobalPhaseCancellation.lean](../scripts/CheckSemiprimeGlobalPhaseCancellation.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**35** direct plus **38** generated declarations. The transitive axiom
+audit checks all **73** declarations and **65** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **27** source
+theorems and **8** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-global-phase-cancellation-audit.json](semiprime-global-phase-cancellation-audit.json)
+retains **338** source pins, including all **335** unchanged parent pins,
+and **27** selected supporting Mathlib hashes at the unchanged revision.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** The mask needs one verified global anchor; it does not
+force such a global tag to exist or acquire it within a near-linear
+budget. The existing coverage still guarantees the amended reader's
+factor outcome, while the full acquisition has `2*(m-1)^2` labelled
+targets and a common polynomial of degree `3*m^2`. The mask does not
+classify p-only/q-only hits or remove DIFFERENT-index mixed saturation;
+both marked derivatives and the saturation-complete reader remain
+necessary. Executable cache/inverse/jet/index backends, word encodings
+and widths, full adaptive fallback charges, square/small/kernel route
+composition and complete bit-operation and memory bounds are still
+unpaid. A linear common-hit mask alone does not pay any of those costs.
+
+## 2026-10-04: an integral global phase gives the sum and one trial suffices
+
+**Classification: progress.**
+[SemiprimePhaseSumRecovery.lean](../RiemannGaussian/SemiprimePhaseSumRecovery.lean)
+identifies the exact arithmetic information in an integral common global
+phase: the literal factor sum `p+q`. It proves that one trial at the FIRST
+public common index suffices for the complete original main stream. A
+failed trial makes every later global tag safe to skip, while the forced
+factor witness survives through the factor channel. The separate short
+two-seed exception acquisition is absent from this new controller.
+No numerical factorization runs, success tallies or finite successful
+Lean factorization certificates were added.
+
+For the original public seed offset delta and signed merged index z,
+the public trial first checks that t divides `m*z`, then forms
+
+```text
+S = 1-delta+(m*z)/t.
+```
+
+The full signed coefficient and index are kept. For ANY bounded globally
+verified tag with integral phase, including a false factor-row tag,
+`integral_phase_sum_bound` gives `abs(S)<=4*m^4`. The globally verified
+equation says that D divides `t*(N+delta)-m*z`, and roughness makes D
+coprime to `0<t<m`. Integral division therefore gives
+
+```text
+D divides N+1-S.
+```
+
+The SAME global order also divides the Euler period
+
+```text
+(p-1)*(q-1) = N+1-(p+q).
+```
+
+Subtracting exposes `D` dividing `p+q-S`. The existing long-order factor
+bounds give `p+q<=2*m^4`, so
+
+```text
+abs(p+q-S) <= 6*m^4 < 16*m^4 < D.
+```
+
+The integer difference must vanish: **S=p+q exactly**. This uses no
+numerical order oracle or hidden factor input in the public trial.
+`recoverPhaseSum_integral_global` then proves that the single ordinary
+quadratic sum candidate returns the smaller factor after its proper GCD
+check. On the actual long branch a failed verified trial has FRACTIONAL
+phase; it cannot be an inexact integral sum guess.
+
+The exact forced row has the true integral phase independently. The
+preceding common-hit exclusion makes its slope one and full wrap zero.
+Its SAME exact factor-index identity consequently gives
+
+```text
+m*z = t*(p+q-1+delta).
+```
+
+`forced_common_phase_sum` proves this identity with all source carries
+retained. The exact cross-row cancellation proved in the preceding leaf
+transfers the true sum equation to ANY other verified global tag. In
+particular, if a common forced witness exists, an arbitrary earlier
+public common tag must already recover p with this same sum trial.
+
+`long_informative_column` composes the actual hyperbolic integer forcing
+with the existing saturation-complete interval reader. For every
+remaining distinct-prime ratio, the original public stream has a column
+returning a checked factor or preserving its SAME true sum phase. This
+is an arithmetic witness theorem, not a supplied successful private tag.
+Different-index mixed saturation is included by the original reader.
+
+The new `scanPhaseColumns` follows this public control flow:
+
+1. Read original columns until a checked factor or the first common index.
+2. At that index, check phase integrality and try its one sum candidate.
+3. If the phase trial fails, use only `scanFactorColumns` on the remaining suffix.
+
+The complete scan proof handles false earlier global tags and all stream
+ordering. A failed first phase trial contradicts any true common sum
+witness by exact transfer. Thus the arithmetic witness must return a
+factor through its original factor channel. It cannot be an earlier
+discarded column: earlier none outcomes and the current common outcome
+exclude that alternative, leaving the successful witness in the suffix.
+`scanPhaseColumns_complete` proves the whole original list succeeds,
+without calling `scanSeedTrials` or acquiring its exceptional seed batch.
+`scanPhaseColumns_sound` retains independent proper-divisor validation
+for arbitrary inputs and incorrect phase guesses.
+
+The new `scanPhaseJetBatch` uses the UNCHANGED common polynomial and
+the original target/base marked derivatives. Its whole-source map and
+batch equivalences preserve the aligned `mergedBatchJets`; no marked
+scalar is pooled or dropped. `long_public_route_phase_batch_succeeds`
+derives all hypotheses from the actual matched-width
+`routeAtRowModulus(N)=longBase a`, public prefix and selected prime
+modulus. It proves the new shared whole batch returns a checked proper
+factor at every remaining distinct-prime ratio.
+
+The proof-side `phaseScanCandidateBudget` follows the actual visited
+prefix and proves at most **ONE quadratic sum construction and ONE
+phase candidate check** for the ENTIRE controller, regardless of how
+many common global tags occur. Once a common index is read there is no
+later sum trial. `failed_common_column_candidate_budget_zero` further
+proves that an actual failed common trial spends ZERO such constructions
+and checks: its integrality guard failed. These counts exclude the
+original interval GCDs, bounded-index decoder and adaptive fallback
+candidate queries, whose costs remain separate obligations.
+
+The warnings-as-errors target build, strict leaf, strict ordinary root
+and
+[CheckSemiprimePhaseSumRecovery.lean](../scripts/CheckSemiprimePhaseSumRecovery.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**36** direct plus **56** generated declarations. The transitive axiom
+audit checks all **92** declarations and **68** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **26** source
+theorems and **10** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-phase-sum-recovery-audit.json](semiprime-phase-sum-recovery-audit.json)
+retains **341** source pins, including all **338** unchanged parent pins,
+and **27** selected supporting Mathlib hashes at the unchanged revision.
+
+**Guaranteed classical deterministic N-only one-sixth factorization
+remains OPEN.** The main acquisition still has `2*(m-1)^2` labelled
+targets and a common polynomial of degree `3*m^2`. The complete new
+scan and jet acquisition remain noncomputable specifications through
+the existing interval backend. A near-linear successful-target
+acquisition, executable cache/inverse/jet/index backends, word encodings
+and widths, full adaptive fallback charges, square/small/kernel route
+composition and complete bit-operation and memory proofs are still
+unpaid. The new one-trial recovery and removal of the short exception
+batch do not establish any of those acquisition or whole-program costs.
+
+## 2026-10-04: original linear seeds suffice, with a shared-source cost obstruction
+
+Goal-turn classification: **progress**. The new
+[SemiprimeSeedSumAcquisition.lean](../RiemannGaussian/SemiprimeSeedSumAcquisition.lean)
+proves arithmetic forcing, exact factor-sum recovery and a complete actual
+long-branch controller using only the original **m-1 residue seeds**.
+It replaces the preceding `2*(m-1)^2` residue/denominator/half targets.
+No numerical factorization runs or finite successful Lean certificates
+were added. The guaranteed classical deterministic N-only one-sixth
+full bit-operation and memory goal remains **OPEN**.
+
+The reason a seed collision must occur is exact arithmetic. At the
+unknown smaller factor's residue `j=p mod m`, the original denominator-one
+row supplies an integer I satisfying
+
+```text
+m^2*I = a*p+b*m-2*a*j+q.
+```
+
+The row exponent is `E=N+delta_j`, with
+`delta_j=a+b*m-2*a*j`. Subtracting the SAME exact index expression gives
+
+```text
+E-m^2*I = (p-1)*(q-a).
+```
+
+Fermat therefore forces `seed.step=beta^I` modulo p, for
+`beta=h^(m^2)` and the actual projected long-branch unit h. The existing
+integer seed bounds give `0<=I<=2*m^2+1` after the public prefix, for
+every remaining factor ratio with `p*q<=m^6`. The new common padded
+interval has length `2*m^2+2<=L<=4*m^2`. Roughness makes both routed local
+orders coprime to `m^2`, so beta preserves those orders and every interval
+root remains simple in each field. `long_seed_reader_witness` composes
+this exact arithmetic forcing with the original saturation-complete
+reader: some publicly acquired original seed must return a factor or a
+common index. The theorem does not assume a supplied successful tag or
+that the collision must be common to both fields.
+
+Every common seed index is useful, including one at a different residue
+from the true private factor row. There is no fractional phase because
+the denominator is one. Its public integer signal is
+
+```text
+S = 1-delta_j+m^2*r.
+```
+
+`common_seed_sum_exact` proves that the globally verified seed equation
+gives `D` dividing `N+1-S`, where D is the global order of h. Euler gives
+the SAME D dividing `N+1-(p+q)`. Their difference is divisible by D, but
+`abs(S)<=5*m^4`, `p+q<=2*m^4` and `D>16*m^4`, so that difference must
+vanish: **S=p+q exactly**. Consequently any first common seed outcome
+already recovers p by the ordinary quadratic sum candidate and its
+independent proper-divisor check. `scanSeedSums` continues only on reader
+none and stops at its first outcome. The whole scan is sound for arbitrary
+inputs and complete on the actual remaining long branch.
+
+The acquisition shares three block polynomials: the baby root product,
+its target derivative and its marked base derivative. `seedBatchJets`
+places this construction outside BOTH the seed map and block fold.
+Normalization shifts each block's evaluation point; the exact inverse
+scaling and absolute-index derivative correction restore its original
+three channels. `sharedSeedJet_exact` proves that the fold gives the
+entire padded product and BOTH original marked derivatives over any
+commutative ring, including zero products. Seed labels and triples remain
+separate. Different-index mixed saturation and the original interval
+decoder are retained. `seedBatch_scan_exact` proves equality of the
+whole aligned acquired batch and the complete original seed scan.
+`long_public_route_seed_batch_succeeds` derives its hypotheses from the
+actual matched-width public long output, selected prime modulus and
+prefix exclusion, rather than a privately chosen good base.
+
+The explicit source now has a checked subquadratic input scale. With
+
+```text
+w = sqrt((m-1)*(3*m^2+1))+1,
+c = 3*m^2/w+1,
+T = w+(m-1)*c+(m-1)+1,
+```
+
+theorems prove `T<=4*w` and `T^2<=96*m^3+32*m+32` for `m>=4`.
+The source consists of the common block's roots, all normalized points,
+the original cache and a constant. It does not require a degree-L
+polynomial or the quadratic target grid. There is also a general
+representation-specific obstruction: `explicit_seed_source_floor`
+proves for **EVERY positive block width w** that
+
+```text
+6*m^3 < (w+(m-1)*blockCount(m,w))^2.
+```
+
+Thus the balanced explicit source has **Theta(m^(3/2))** input scale,
+nominal **Theta(N^(1/4))** at the public `m=Theta(N^(1/6))`.
+Materializing all these roots and points cannot provide a linear-in-m
+source. This is an obstruction to this explicit representation, not a
+lower bound for every implicit acquisition method or every factorizer.
+The new `seedScanCandidateBudget<=1` concerns only the one sum-candidate
+construction and its candidate check; it excludes the interval decoder,
+its GCDs and its adaptive candidate queries.
+
+The warnings-as-errors target build, strict leaf, strict ordinary root
+and
+[CheckSemiprimeSeedSumAcquisition.lean](../scripts/CheckSemiprimeSeedSumAcquisition.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**44** direct plus **64** generated declarations. The transitive axiom
+audit checks all **108** declarations and **79** proof/helpers, using
+only `propext`, `Classical.choice` and `Quot.sound`. There are **27** source
+theorems and **17** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-seed-sum-acquisition-audit.json](semiprime-seed-sum-acquisition-audit.json)
+retains **344** source pins, including all **341** unchanged parent pins,
+and **27** unchanged selected Mathlib hashes.
+
+The new arithmetic theorem removes the denominator grid and makes every
+bounded common seed hit factor immediately. The explicit shared source
+still exceeds the one-sixth construction budget. Its acquisition and
+reader remain noncomputable specifications through the existing backend.
+Further work must acquire a useful seed outcome implicitly within a
+proved near-linear whole budget, preserving saturation and exact indices.
+Fast executable cache/inverse/polynomial/index backends, full adaptive
+fallback charges, square/small/kernel route composition, encodings and
+complete bit-operation and memory proofs remain unpaid.
+
+## 2026-10-04: exact seed-point rigidity rules out deduplication as the missing saving
+
+Goal-turn classification: **progress**. The new
+[SemiprimeSeedPointRigidity.lean](../RiemannGaussian/SemiprimeSeedPointRigidity.lean)
+tests a concrete possible escape from the preceding explicit-source
+floor: normalized points from different seeds or blocks might coincide,
+allowing one evaluation to serve many original labels. General arithmetic
+now proves that such reuse saves at most a factor of **two** across the
+ENTIRE source. No new numerical runs or finite successful certificates
+were added. The full one-sixth bit-operation and memory goal remains
+**OPEN**.
+
+At the original residue j and absolute block index k, the actual
+normalized point is exactly
+
+```text
+x_(j,k) = h^(N+delta_j-m^2*w*k).
+```
+
+For `0<w<=m^2`, padding bounds each block offset by `4*m^2`.
+The difference of two full signed exponents consequently has absolute
+value at most `4*m^4+4*m^2`. Their common N cancels before estimating.
+The actual global long order D exceeds `16*m^4`, so equal normalized
+points cannot arise through modular wrapping. `seedPoint_eq_iff_offsets`
+proves the exact equivalence
+
+```text
+x_(j,k)=x_(j0,k0)
+  iff delta_j-delta_j0=m^2*w*(k-k0).
+```
+
+Thus equal values lie in the SAME original offset class modulo m.
+The existing offset-square equation puts each canonical residue in
+the roots of one nonzero degree-at-most-two public polynomial. At any
+fixed residue, the exact exponent relation also forces `k=k0`.
+`pointFiber_card_le_two` combines both facts: each actual value has at
+most TWO residue/block labels, including possible reuse BETWEEN blocks.
+`distinct_point_card_lower` therefore proves
+
+```text
+(m-1)*blockCount(m,w) <= 2*Q,
+```
+
+where Q is the number of DISTINCT normalized values, rather than the
+number of original labelled records.
+
+The offset equations expose a further public cancellation. After
+cancelling the unit N, two residues in one class satisfy
+
+```text
+j=j0 or j+j0=2*j*j0 (mod m).
+```
+
+For distinct residues this is the Möbius partner relation
+`j0*(2*j-1)=j`. It is independent of N. The checked theorem is
+`offset_class_partner_relation`; it classifies equal offset classes,
+but does not itself find a useful collision or equate the full integer
+offsets.
+
+`distinct_source_floor` now proves for EVERY positive block width that
+
+```text
+3*m^3 < (w+Q)^2.
+```
+
+For widths at most `m^2`, the proof combines the two-label bound with
+`w*blockCount(m,w)>=3*m^2+1` and the nonnegative square `(w-Q)^2`.
+For larger widths, the block root inputs alone exceed the same floor;
+no bounded-exponent argument is asserted there. Perfect deduplication
+therefore cannot make this complete common-block source linear in m.
+The source remains **Theta(m^(3/2))**, nominal **Theta(N^(1/4))** at
+the public sixth-root modulus.
+
+The finite value set is proved equal to the actual shared acquisition
+list after removing repeats, including the selected balanced batch.
+For its optimistic full count `T_unique`, retaining common roots,
+unique points, original cache and a constant, theorems give
+
+```text
+3*m^3 < T_unique^2 <= 96*m^3+32*m+32.
+```
+
+`actual_public_route_deduplicated_floor` derives both bounds from the
+actual matched-width public long output and prefix, so the obstruction
+does not rely on a supplied private high-order unit.
+
+The target build, strict leaf, strict ordinary root and
+[CheckSemiprimeSeedPointRigidity.lean](../scripts/CheckSemiprimeSeedPointRigidity.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**24** direct plus **37** generated declarations. The transitive audit
+checks all **61** declarations and **55** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **18** source
+theorems and **6** definitions. Root and semiprime family registration
+are complete. The saved
+[semiprime-seed-point-rigidity-audit.json](semiprime-seed-point-rigidity-audit.json)
+retains **347** source pins, including all **344** unchanged parent pins,
+and **27** unchanged selected Mathlib hashes.
+
+This closes a specific acquisition shortcut, not every implicit
+algorithm. The proof prices a complete common-block source containing
+all distinct normalized values; it does not show those values are
+necessary to an implicit norm, resultant, recurrence, early partial
+scan or other successful-target acquisition. The next advance must
+avoid that full distinct-value source while proving its complete
+construction and adaptive recovery budget. Exact index information,
+mixed saturation and both marked derivatives remain necessary wherever
+the existing reader is used. Executable polynomial/inverse/index
+backends, complete square/small/kernel routing and full bit-operation
+and memory composition remain unpaid.
+
+## 2026-10-04: linear Hermite output and arithmetic failure of fixed-remainder shifts
+
+Goal-turn classification: **progress**. The new
+[SemiprimeSeedHermiteQuotient.lean](../RiemannGaussian/SemiprimeSeedHermiteQuotient.lean)
+replaces the complete explicit normalized-point source with a smaller
+exact OUTPUT carrier, and tests a proposed construction shortcut against
+the actual long-order arithmetic. The output can retain every original
+seed jet in only linear coefficient capacity. A universal geometric
+shift operation on a fixed remainder is impossible on the long branch.
+Neither statement prices construction of that output. No new numerical
+factorizations, successful cases or finite success certificates were
+produced. The full one-sixth bit-operation and memory goal remains
+**OPEN**.
+
+Keep all original labelled seed targets x_s=s.step, including repeated
+values. With beta=h^(m^2) and the existing padded length L, define
+
+```text
+U(X) = product over original seeds s of (X-x_s),
+P_L(X) = product_{0<=i<L} (X-beta^i),
+H_L(X) = babyBasePolynomial(beta,L),
+A(X) = P_L(X) mod U(X)^2,
+B(X) = H_L(X) mod U(X).
+```
+
+The squared target modulus retains BOTH the detector and its target
+derivative; the second remainder retains the marked base derivative.
+For every original seed s the compiled theorem `remainderJet_exact`
+gives the literal three-channel equality
+
+```text
+(A(x_s), A'(x_s), B(x_s))
+  = (intervalProduct(beta,x_s,L),
+     targetDerivative(beta,x_s,L), baseDerivative(beta,x_s,L)).
+```
+
+The proof differentiates the full polynomial division identity and
+uses U(x_s)=0. It divides no evaluated detector or derivative, needs
+no distinct-target hypothesis, and works over arbitrary commutative
+rings. Repeated targets and mixed p/q-index saturation therefore keep
+their exact original information. The underlying Hermite remainder
+identity is standard algebra; no historical novelty is claimed.
+
+For m>=4 in the nontrivial coefficient ring, U has degree m-1 and
+
+```text
+natDegree(A) < 2*(m-1),
+natDegree(B) < m-1,
+seedRemainderSlots(h,m) <= 3*(m-1).
+```
+
+The capacity counter includes one slot for a zero polynomial. It is an
+output count, not an operation clock. `seedRemainderBatch_exact`
+identifies the ENTIRE restored labelled list with the preceding
+`seedBatchJets`, and `seedRemainderBatch_scan_exact` identifies its
+whole scan with the original seed controller.
+`actual_public_route_remainder_batch_succeeds` consequently returns a
+proper divisor for the same actual distinct-prime public long output
+and prefix-none assumptions. This changes the carrier while preserving
+the previously proved arithmetic reason for a useful seed outcome.
+
+The proposed fast construction by repeatedly shifting one reduced
+polynomial has a precise obstruction. For a monic modulus M with unit
+constant term, `shift_dvd_forces_power` proves
+
+```text
+M(X) divides M(c*X)  ==>  c^(natDegree(M)) = 1.
+```
+
+Composition has degree at most deg(M), so monic divisibility makes
+M(c*X) a constant multiple of M(X). Comparing the unchanged unit
+constant coefficient forces that constant to be one. Comparing the
+leading coefficient then forces the displayed power identity.
+When it fails, M and zero provide a uniform exact counterexample:
+they have the same remainder before shifting, but different remainders
+after shifting. Thus `no_fixed_remainder_shift` excludes EVERY function
+T of the remainder alone that would implement substitution for ALL
+original polynomials P.
+
+This generic obstruction has an arithmetic instantiation for the
+ACTUAL original seed moduli, not just a selected bad polynomial ring.
+Let M=U^e, with 1<=e<=m, and let c=beta^d, with 0<d<=4*m^2. Its
+degree is e*(m-1). For the first local order D_p of the routed h,
+the long branch gives
+
+```text
+D_p > 4*m^2,
+gcd(D_p, m^2*e*(m-1)) = 1.
+```
+
+The coprimality follows because every prime divisor of D_p exceeds m.
+The hypothetical degree-power identity would force
+D_p to divide m^2*d*e*(m-1), hence D_p to divide d, contradicting
+0<d<=4*m^2<D_p. This proves failure for every supported shift and
+multiplicity, including the ordinary e=1 and Hermite e=2 moduli.
+The inverse shift c=(beta^d)^(-1), used in geometric doubling, fails
+the same condition: inversion preserves whether a unit power is one.
+`actual_public_route_no_fixed_shift` derives both failures from the
+matched public long output. The negative result itself needs no
+prefix-none assumption.
+
+The scope of this failure is essential. Its operator quantifies over
+ALL original polynomials, and its explicit counterexample uses M and
+zero. Neither polynomial is asserted to be the actual geometric P_L.
+A specialized geometric-family recurrence, additional retained state,
+or construction using changing moduli could still work. There is no
+lower bound here for every implicit acquisition algorithm. The small
+remainder degrees also do not make their acquisition cheap: the
+noncomputable definitions can still construct the full quadratic-length
+P_L before reducing it. The prior superlinear explicit-source floor
+therefore remains relevant to that separate implementation.
+
+The target build, strict leaf, strict ordinary root and
+[CheckSemiprimeSeedHermiteQuotient.lean](../scripts/CheckSemiprimeSeedHermiteQuotient.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**35** direct plus **15** generated declarations. The transitive audit
+checks all **50** declarations and **42** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **27** source
+theorems and **8** definitions. Ordinary root and semiprime family
+registration are complete. The saved
+[semiprime-seed-hermite-quotient-audit.json](semiprime-seed-hermite-quotient-audit.json)
+retains **350** source pins, including all **347** unchanged parent pins,
+and **30** selected Mathlib hashes, including all **27** unchanged parent
+Mathlib pins. No external proof or additional axiom was imported.
+
+The next advance must construct these exact paired remainders, or
+another sufficient implicit seed outcome, in proved near-linear-in-m
+cost using additional structure. It must preserve both marked
+derivatives and exact indices, then pay adaptive saturation recovery,
+public routing, executable encodings, complete bit operations and memory.
+Coverage and a linear output representation do not discharge these costs.
+
+## 2026-10-04: actual geometric doubling has quadratic clearing cost and no sparse coefficients
+
+Goal-turn classification: **progress**. The new
+[SemiprimeSeedGeometricRecurrence.lean](../RiemannGaussian/SemiprimeSeedGeometricRecurrence.lean)
+tests construction shortcuts using the actual geometric interval family,
+rather than an arbitrary-polynomial counterexample. Its two new arithmetic
+restrictions hold at the matched public long output: a cleared rational
+doubling identity needs quadratic denominator degree, and every coefficient
+of the full geometric half polynomial is a unit. No numerical runs,
+success tallies or finite factorization certificates were added. Guaranteed
+one-sixth full bit-operation and memory factorization remains **OPEN**.
+
+Let beta=h^(m^2), L=seedLength(m), K=floor(L/2), and
+
+```text
+P_K(X) = product_{0<=u<K}(X-beta^u).
+m^2+1 <= K <= 2*m^2,
+2*K <= L, and L-2*K <= 1.
+```
+
+`rowPolynomial_doubling` first proves the exact construction formula
+over every commutative ring with a supplied unit base:
+
+```text
+P_(2K)(X) = beta^(K*K)*P_K(X)*P_K(beta^(-K)*X).
+```
+
+Only the base unit is inverted. No evaluated factor or detector is
+cancelled, so evaluated zeros remain valid. The compiled
+`rowPolynomial_doubling_remainder` also proves the reduced multiplication
+identity modulo any polynomial U, including the squared seed modulus.
+It requires BOTH the unshifted remainder and the phase-scaled shifted
+remainder as inputs. Multiplication in the quotient is valid; obtaining
+that second operand remains a separate acquisition problem.
+
+The new functional bound tests replacing the shifted polynomial by a
+short rational multiple of the original. Over a domain, provided
+L+d<=orderOf(beta), `shift_tail_denominator_degree` proves
+
+```text
+A(X)*P_L(X) = D(X)*P_L(beta^d*X), D != 0
+  ==> min(d,L) <= natDegree(D).
+```
+
+The last min(d,L) original roots are lost under the positive shift.
+Evaluating the cleared identity at each of these roots forces D to
+vanish there; the retained period makes all of them distinct. A
+nonzero polynomial with that many roots has at least that degree.
+This accounts for overlap: the adjacent d=1 endpoint identity remains
+available, while the disjoint d=L shift costs the full original degree.
+
+For inverse doubling, 2*K<=orderOf(beta) similarly makes
+P_K(beta^(-K)*X) nonzero at every original P_K root. Multiplying a
+hypothetical root equality by beta^K reduces it to an equality between
+an exponent below K and one between K and 2*K-1, which is impossible
+inside the period. Its clearing denominator therefore also has degree
+at least K.
+
+The composite ring requires care because D can have nonunit
+coefficients or even vanish entirely in one prime field. The theorem
+`nonzero_prime_polynomial_reduction` proves that any nonzero D over
+ZMod(p*q), for distinct primes, survives in at least one field. Apply
+the lost-root bound there and use natDegree(D.map)<=natDegree(D).
+No monicity, unit leading coefficient or simultaneous nonzero reduction
+hypothesis is imposed on D. The existing actual local-period theorem
+puts both periods at least L, so 2*K<=L discharges the required no-wrap
+conditions. Both actual doubling orientations consequently force
+
+```text
+m^2+1 <= natDegree(D).
+```
+
+Degree alone could leave open sparse coefficients. The new
+`geometric_coefficient_recurrence` extracts a second exact arithmetic
+identity from the cleared adjacent endpoint formula. For
+a_k=coeff(P_L,k), it proves
+
+```text
+beta^L*(beta^(k+1)-1)*a_(k+1)
+  = (beta^(k+1)-beta^(L+1))*a_k.
+```
+
+If all beta^i-1 for 0<i<=L are units, then every a_k for 0<=k<=L
+is a unit. Start with the unit constant coefficient, a product of
+unit roots. At each step the numerator factors as
+-beta^(k+1)*(beta^(L-k)-1), a unit. The recurrence then makes the next
+coefficient a factor of a unit product. This argument divides neither
+a coefficient nor a power difference.
+
+For the actual HALF length K, all required power differences are
+nonzero in both prime fields because K is strictly below both periods.
+The existing prime-reduction criterion makes them units in ZMod(N).
+`long_seedHalf_coeff_unit`, `long_seedHalf_coeff_ne_zero` and
+`long_seedHalf_dense_support` give
+
+```text
+Every coefficient of P_K from degree 0 through K is a unit in ZMod(N).
+support(P_K) = range(K+1),
+support(P_K).card = K+1 >= m^2+2.
+```
+
+Thus the full half polynomial has quadratic NONZERO coefficient support,
+not just quadratic degree. Its coefficients cannot cancel to produce a
+sparse expansion. The condition is essential: a polynomial spanning an
+entire multiplicative period can have zero interior coefficients; no
+such claim is made outside the proved power-gap range.
+
+`actual_public_route_geometric_checkpoint` derives the actual unit and
+matched row modulus from routeAtRowModulus(N)=longBase(a), then returns
+every coefficient's unit status, the exact support count and the
+quadratic clearing bound for both doubling orientations. It needs no
+prefix-none assumption for these geometric restrictions.
+
+I rechecked [Bostan–Yurkevich, Theorems 5 and 6](https://arxiv.org/html/2012.08656).
+Their parameter-dependent arithmetic bounds retain recurrence coefficient
+degree. Their multiple-term construction computes selected indices of the
+same recurrence; it does not directly provide simultaneous evaluation at
+arbitrary different seed parameters. This is literature context only,
+not an imported Lean theorem, composite-ring backend or bit certificate.
+
+The final target build, strict leaf, strict ordinary root and
+[CheckSemiprimeSeedGeometricRecurrence.lean](../scripts/CheckSemiprimeSeedGeometricRecurrence.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**26** direct plus **29** generated declarations. The transitive audit
+checks all **55** declarations and **53** proof/helpers, using only
+`propext`, `Classical.choice` and `Quot.sound`. There are **24** source
+theorems and **2** definitions. Ordinary root and semiprime family
+registration are complete. The saved
+[semiprime-seed-geometric-recurrence-audit.json](semiprime-seed-geometric-recurrence-audit.json)
+retains **353** source pins, including all **350** unchanged parent pins,
+and **34** selected Mathlib hashes, including all **30** unchanged parent
+Mathlib pins. No external proof or additional axiom was imported.
+
+These are precise representation restrictions. A functional identity
+valid for every target X differs from a formula or interpolation valid
+only at the finite original seed targets. Dense coefficients also do
+not imply a lower bound for every arithmetic circuit. The preceding
+linear Hermite remainder carrier remains exact; its construction remains
+unpaid. Further work must exploit finite seed structure, changing moduli
+or another implicit acquisition method, preserve the marked derivatives
+and exact indices, and prove near-linear construction and adaptive
+recovery costs before completing routing, bit operations and memory.
+
+## 2026-10-04: finite seed separation and forced singular half transfer
+
+Goal-turn classification: **progress**. The new
+[SemiprimeSeedFiniteTransfer.lean](../RiemannGaussian/SemiprimeSeedFiniteTransfer.lean)
+proves arithmetic properties of the finite original seed targets and a
+restriction on multiplicative reuse within that actual family. It exposes
+the existing collision mechanism as an exact integer residual, then uses
+the forced prime-field zero to obstruct a unit ratio between the two
+half-interval products. No successful examples, finite factorization
+certificates or numerical probes were added. Guaranteed one-sixth full
+bit-operation and memory factorization remains **OPEN**.
+
+For N=p*q, the post-prefix assumptions are m^2<=p<=q, m coprime to N,
+N<=m^6 and m>=4. Let j=p mod m, a=representative(N,m,j,1), and
+delta_j=seedOffset(N,m,j). `forced_seed_arithmetic` proves that some
+integer index r satisfies
+
+```text
+0 <= r <= 2*m^2+1 < seedLength(m),
+N+delta_j-m^2*r = (p-1)*(q-a).
+```
+
+The proof uses the exact original row-index equation
+m^2*r=a*p+m*b-2*a*j+q. Subtracting it from the original seed exponent
+N+delta_j cancels both m*b and -2*a*j, leaving the displayed product.
+For every unit h, Fermat's theorem therefore gives
+
+```text
+h^(N+delta_j) = (h^(m^2))^r modulo p.
+```
+
+`forced_seed_prime_hit` retains the index bound and proves that this
+target belongs to the public original seed list. Selecting p mod m is
+proof-side identification of the witness: the source still contains ALL
+original public residues and uses no factor oracle. This is a collision
+in the p-field; equality modulo the full N is not required. The forcing
+argument itself needs no long-order hypothesis. The upstream reader
+already used this arithmetic; the new explicit residual exposes its
+mechanism for the finite-transfer test.
+
+Separately, original unshifted targets have exponents N+delta_j, with
+-3*m^2<=delta_j<=m^2. Their offset differences have absolute value at
+most 4*m^2. Each actual projected local order exceeds 4*m^2. If two
+seed values agree in either prime field, that order divides their short
+offset difference, which must therefore be exactly zero. The two
+values already agree globally. Consequently
+`long_seedTargets_difference_unit` proves that EVERY pair of globally
+distinct original seed values has a unit difference modulo N.
+
+Removing exact duplicate values leaves at most m-1 targets. For the
+target polynomial U(X)=product_(x in distinct targets)(X-x), the new
+generic derivative identity is
+
+```text
+U'(x) = product_(y in distinct targets, y != x)(x-y).
+```
+
+Every factor is a unit, so `long_distinctSeedTargets_derivative_unit`
+certifies the actual finite interpolation denominators. This statement
+concerns the UNshifted original targets. It is not extended to all
+normalized block points. The polynomial for the original list can still
+have exact duplicate roots; the derivative-unit claim uses the distinct
+value set. Original labelled descriptors remain available.
+
+Now let beta=h^(m^2), L=seedLength(m), K=floor(L/2), and
+
+```text
+F(x) = product_(0<=u<K)(x-beta^u),
+G(x) = product_(K<=u<L)(x-beta^u).
+```
+
+The second half includes the final factor when L is odd. The retained
+local period is at least L. At the forced p-field root beta^r, exactly
+one of F and G is zero and the other is nonzero: powers in the two
+disjoint index intervals cannot coincide inside that period.
+`split_interval_root_separates` proves this for every domain and every
+split K<=L.
+
+At that original target, any two cleared scalar identities
+
+```text
+a*F = d*G, and b*G = e*F
+```
+
+force d to vanish modulo p if F vanishes there, or e to vanish modulo p
+if G vanishes there. Thus at least one denominator is a nonunit modulo
+N. `long_seed_finite_transfer_singular` applies this to arbitrary
+target-dependent scalars. `long_no_unit_half_transfer` further proves
+that there is NO target-dependent unit function u with u(x)*F(x)=G(x)
+at every original seed target: its inverse would supply both transfers
+with unit denominators. Unlike the preceding arbitrary-polynomial and
+whole-polynomial obstructions, this restriction uses the forced collision
+of the actual finite seed family.
+
+`actual_public_route_finite_checkpoint` connects the unit separation,
+interpolation derivative units, forced singular transfer and impossible
+unit ratio to the actual routeAtRowModulus(N)=longBase(a), after the
+public prefix returns none. It derives the matched row modulus, its
+primality, the post-prefix bounds and the actual long-order information.
+
+The final target build, strict leaf, strict ordinary root and
+[CheckSemiprimeSeedFiniteTransfer.lean](../scripts/CheckSemiprimeSeedFiniteTransfer.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**19** direct plus **22** generated declarations. All **41** declarations
+and **39** proof/helpers have been transitively audited, using only
+`propext`, `Classical.choice` and `Quot.sound`. The leaf contains **17**
+source theorems and **2** definitions. Ordinary root and semiprime family
+registration are complete. The saved
+[semiprime-seed-finite-transfer-audit.json](semiprime-seed-finite-transfer-audit.json)
+retains **356** source pins, including all **353** unchanged parent pins,
+and all **34** unchanged selected Mathlib hashes. No external proof or
+additional axiom was imported.
+
+This does not refute the amended collision family. Its collision
+coverage survives; a specific nonsingular multiplicative reuse shortcut
+fails. Finite interpolation remains algebraically available, but its
+well-defined denominators do not supply the geometric interval data.
+The exact original Hermite carrier, detector, target derivative and
+marked base derivative remain available through the frozen parents.
+Methods with additional derivative state, independently acquired halves
+or paid nonunit recovery remain open. Further work must acquire a useful
+outcome in near-linear full bit cost and memory, then complete every
+routing and recovery branch, including prime squares, before claiming
+the guaranteed one-sixth rate.
+
+## 2026-10-04: Boolean inverse and a single paid marked-index stage
+
+Goal-turn classification: **progress**. The new
+[SemiprimeBitInverse.lean](../RiemannGaussian/SemiprimeBitInverse.lean)
+implements the scalar modular inverse and marked derivative decoder with
+the frozen Boolean arithmetic circuits. It also proves that the actual
+public long seed scan enters the marked stage at most once. This removes
+an unrefined scalar inversion from recovery; it supplies no fast interval
+jet acquisition. Guaranteed one-sixth full bit-operation and memory
+factorization remains **OPEN**. No numerical runs or finite successful
+factorization certificates were added.
+
+The original saturated decoder uses the three acquired channels P,D,E,
+with D the target derivative and E the marked logarithmic base derivative.
+When P=0 on the retained simple-root branch, x*D is a unit. The decoded
+residue is -E/(x*D); its reductions give the original local root indices.
+The marked channel must therefore be retained through saturation.
+The existing counted natural-arithmetic inverse was proved correct, but
+its quotient and coefficient operations still needed a Boolean refinement.
+
+`makeInverseFrame` now computes each extended-Euclid update as follows:
+
+```text
+(q,r) = divideBits(r0,r1),
+t = modMulBits(q,c1,N),
+padded = addBits(c0,N,false),
+difference = subBits(padded,t,false),
+nextCoefficient = divideBits(difference,N).remainder.
+```
+
+Every displayed operation uses physical Boolean words. For positive N,
+t<N and c0+N>=t prove that the actual subtraction borrow is false.
+`makeInverseFrame_exact` refines the quotient, remainder and coefficient
+to the frozen arithmetic frame. The arithmetic routine is a proof-side
+specification; no native inverse, quotient, remainder or coefficient
+advice computes the Boolean outputs.
+
+`inverseLoop` consumes actual fuel cells. Its exhaustion flag equals
+that of the existing Boolean GCD loop on the same remainder words, so
+the checked two-remainder halving argument supplies sufficient fuel.
+`inverseBits` performs both initial normalizations with restoring
+division and physically constructs its own fuel. Its stopped outputs
+refine `countedInverse`; the returned coefficient satisfies
+
+```text
+coefficient*input = gcd(N,input) modulo N.
+```
+
+The GCD is retained for every nonunit input. A zero denominator does not
+become an inverse. Over a positive modulus the returned coefficient is
+canonical, and both output words have at most the modulus's physical
+width. For inputs of physical width at most ell, including high zero
+padding, `inverseBits_cost` proves the complete scalar circuit clock
+
+```text
+inverseBits.clock <= 4000*(ell+1)^3.
+```
+
+This includes normalization, fuel construction, repeated zero scans,
+Euclidean division, modular coefficient multiplication, padded addition,
+subtraction and coefficient reduction. Every update has a proved
+quadratic clock and retains bounded output widths. The clock uses the
+existing Boolean-gate/persistent-bit-cell/test model; clock arithmetic
+is instrumentation. This is not a complete machine or working-memory
+certificate for the factorizer.
+
+`decodeMarkedBits` computes x*D, its inverse coefficient, the product
+with E, and its negative normalized residue with those circuits.
+`isOneBits` checks the actual GCD word against one using two Boolean
+borrow comparisons. A candidate word is returned only if that gate is
+true. Nonunit inputs return no index candidate and retain their exact
+GCD for the caller's factor or saturation handling.
+
+`decodeMarkedBits_eq_decodedIndex` proves equality with the original
+marked index, including its negative sign. The stronger
+`decodeMarkedBits_at_local_root` proves that the actually accepted word
+reduces to the SAME original root index under every supplied coefficient
+reduction. No private factor, local order or local index is an input to
+the executable decoder. Exact supplied jet words and a unit denominator
+are hypotheses of its correctness theorem, not unpriced data assumed
+to be acquired by the decoder itself. Its composed scalar bound is
+
+```text
+decodeMarkedBits.clock <= 5000*(ell+1)^3.
+```
+
+The original seed scan stops at the first reader outcome. On the actual
+long branch, P=0 cannot coexist with a `none` reader result: reduction
+to p supplies a root in the covered simple-root interval, and the
+existing complete tagged reader either returns a factor or a common
+index. This covers equal as well as different prime-field indices.
+`long_seedMarkedAttemptBudget_le_one` therefore proves that its ENTIRE
+visited prefix enters marked-index recovery at most once, for any
+supplied list length. `actual_public_route_marked_attempt_le_one`
+derives that fact from the actual matched-width public long output.
+This count is explicitly specification-side control-flow information;
+it does not construct jets, price every signal check, or implement the
+mixed-index batch.
+
+The target build, strict leaf, strict ordinary root and
+[CheckSemiprimeBitInverse.lean](../scripts/CheckSemiprimeBitInverse.lean)
+all finish with exit code **0**. All **14** namespace linters pass on
+**79** direct plus **115** generated declarations. All **194** declarations
+and **93** proof/helpers have been transitively audited, using only
+`propext`, `Classical.choice` and `Quot.sound`. The leaf contains **34**
+source theorems, **7** definitions and **5** structures. Ordinary root
+and semiprime family registration are complete. The saved
+[semiprime-bit-inverse-audit.json](semiprime-bit-inverse-audit.json)
+retains **359** source pins, including all **356** unchanged parent pins,
+and **35** selected Mathlib hashes, including all **34** unchanged parent
+hashes. No external proof or additional axiom was imported.
+
+Near-linear acquisition of the original detector and both marked
+derivative channels is still the main open construction obligation.
+The at-most-one mixed-index batch also needs its polynomial, evaluation,
+recovery and bit costs paid. Prefix and routing construction, complete
+working-memory accounting, serialization and prime squares must be
+composed before the whole goal can be certified. The preceding finite
+unit-ratio obstruction and all earlier source restrictions remain in
+force; this scalar refinement does not bypass them.
+
+## 2026-10-04: Arithmetic separation and a short CRT-index lattice
+
+**Goal remains OPEN. This turn is progress; the preceding goal turn was
+progress.** The new universal slice is
+`RiemannGaussian/SemiprimeIndexLattice.lean`, checked by
+`scripts/CheckSemiprimeIndexLattice.lean`. It adds no successful examples,
+finite factor certificates, numerical runs, or new coverage assumptions.
+The arithmetic identities and candidate counts do not certify the full
+one-sixth bit or memory bound.
+
+The retained saturated marked index `s` reduces to distinct original
+indices `k,l<L` in the two prime fields. Its original quadratic information
+therefore satisfies
+
+`s²-(k+l)*s+k*l=0 (mod N)`.
+
+`mixed_index_coefficient_candidate` proves this congruence and the bounds
+`0<=k+l<2L`, `0<=k*l<L²`, including either zero index. The actual decoded
+word, sign and prime orientation are retained; `k,l` remain proof-side
+witnesses rather than executable inputs.
+
+The new arithmetic spacing lemma is `mixed_index_no_short_relation`. If
+`u*s=v (mod N)`, `|u|<p`, and `|u|*L+|v|<q`, reduction modulo `q` gives
+`q | u*l-v`. The integer magnitude is below `q`, so `v=u*l` exactly.
+Reduction modulo `p` then gives `u*(k-l)=0`; the bounded distinct indices
+and `|u|<p` force `u=0`, hence `v=0`. Thus **every nonzero homogeneous
+relation** pays either `p<=|u|` or `q<=|u|*L+|v|`. This is a deterministic
+arithmetic statement, with no randomness or generic lattice assumption.
+
+The public native integer specification `shortRelation N s A` stops
+Euclid when the current remainder is at most `N/(A+1)`. It carries unsigned
+alternating coefficients, retaining their sign and predecessor. Its
+conserved sum determinant proves a positive first coefficient at most
+`A` and second-coordinate magnitude at most `N/(A+1)`.
+`shortRelation_basis` proves that the **same actual predecessor** completes
+this vector to a basis of determinant `+N` or `-N`. No supplied lattice
+basis, primitive-vector oracle, factor, or local index computes it.
+`shortRelation_steps` bounds its native Euclidean division count by twice
+the initial remainder's binary length. This division count is explicitly
+not a Boolean clock or working-memory certificate.
+
+`basisCoordinates_exact` proves the concrete integer Cramer quotients,
+and `publicCoefficientCoordinates_exact` proves the affine origin
+`(0,-s²)` and exact representation of every original candidate. At `A=2L`,
+the determinant bounds the span of the second basis coordinate whenever
+`L³<=C*N`. On each basis line, the arithmetic spacing lemma bounds the
+first-coordinate span by `2+floor(3L²/q)`. Consequently
+`mixed_index_coefficient_count` proves the universal bound
+
+`candidate cardinality <= (4C+3)*(5+2*floor(3L²/q))`.
+
+The scalar `C` is discharged at the actual public matched width. For
+`m=publicRowModulus(N)` and the original padded `L=seedLength(m)`, the
+ceiling-sixth-root predecessor gives `m<=4*(sixthWidth(N)-1)`. Together
+with `L<=4m²` this proves `L³<=262144*N`. For `p<=q`, the same predecessor
+and `N<=q²` prove `floor(3L²/q)<=3072*m`. Hence
+`public_mixed_index_coefficient_count` gives the exact, conservative bound
+
+`candidate cardinality <= 1048579*(5+12288*sixthWidth(N))`.
+
+`actual_public_route_mixed_index_candidates` derives the actual long
+certificate at the public matched modulus, proves the interval lies
+below `p` using its retained local period, and connects this count to the
+**original marked decoder and original local roots**. It also proves
+that the genuine symmetric pair is a member. No prefix-none premise,
+balanced-factor assumption, guessed CRT decomposition, or factor-dependent
+executable input is introduced.
+
+`mixed_index_root_pair_unique` proves that any candidate splitting into
+two integer roots inside `[0,L)` has exactly the original unordered pair
+`{k,l}`. `mixed_index_splitting_candidate_recovers` then proves that one
+of the two original differences has GCD `p`. Candidates with zero or
+negative discriminant, nonintegral roots, or roots outside the original
+interval cannot be accepted by this splitting criterion.
+
+**The count is not spent as a construction clock.**
+`coefficientCandidates` is an explicitly noncomputable rectangle-filter
+set specification. Executing that full rectangle would cost roughly
+`L³`; its small output cardinality does not make that execution efficient.
+The present leaf proves the public short basis and arithmetic spacing
+needed by a prospective basis-line enumerator. It does **not** implement
+that enumerator, a discriminant/square-root reader, a signed Boolean
+early-Euclid refinement, or their full bit and working-memory bounds.
+Thus a polynomial batch has a new arithmetic alternative; it has not
+yet been removed from the actual factorizer or replaced by a paid stage.
+
+Near-linear acquisition of the original interval detector and both jet
+channels remains the principal open step. Public routing, serialization,
+prefix work, prime squares, complete recovery and complete working memory
+also remain in the full guarantee. Reuse the frozen Boolean inverse/GCD
+and marked-index proofs; do not relabel this cardinality theorem as a
+full `N^(1/6)` factorization theorem.
+
+The source/audit chain is recorded in
+`docs/semiprime-index-lattice-audit.json`. Every preceding source pin is
+preserved. Validation is local: strict target build, strict leaf/root,
+all namespace linters and explicit/generated declaration axiom checks,
+plus registration, JSON, placeholder/trust, pin and whitespace checks.
+Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. No
+commit, push, remote CI, graph/dashboard regeneration or publication is
+part of this slice.
+
+## 2026-10-04: Direct basis-line enumeration and actual native visit bounds
+
+**Goal remains OPEN. This turn is progress; the preceding goal turn was
+progress.** The new slice is
+`RiemannGaussian/SemiprimeIndexEnumeration.lean`, checked by
+`scripts/CheckSemiprimeIndexEnumeration.lean`. It advances the preceding
+arithmetic candidate count to an actual native enumerator. No successful
+factor samples, finite certificates or new coverage hypotheses are added.
+Full Boolean bit clocks and complete working-memory bounds remain open.
+
+`enumerateCoefficients N s L` computes the same public early-Euclid basis
+once, shares the resulting band list, and directly traverses signed
+integer basis coordinates. It does **not** construct the coefficient
+rectangle product, geometric interval, polynomial batch or pair matrix,
+and it does not execute the frozen `coefficientCandidates` filter.
+
+The affine origin remains `(0,-s²)`. For the short basis vector `(u,v)`
+and companion `(c,d)`, a visited coordinate `(i,j)` gives the original pair
+
+`a=i*u+j*c`, `b=-s²+i*v+j*d`.
+
+The short-vector determinant is `u*(b+s²)-v*a=j*(u*d-v*c)`. The public
+rectangle extrema retain the signs of `v` and the determinant. Exact
+ceiling/floor quotients compute the possible `j` interval, flipping both
+ends when the determinant is negative. Each line first clips
+`0<=i*u+j*c<=2L-1`, then clips `0<=-s²+i*v+j*d<=L²-1`. Negative slopes are
+handled through a positive denominator with both inequalities reversed;
+a zero slope is tested once and yields either the first interval or the
+explicit empty interval `[1,0]`. No singular divide is used in a proved
+positive-step branch.
+
+`mem_interval_entries`, `ceilDivide_le_iff`, `mem_positiveLinearInterval`,
+`mem_linearInterval`, `mem_bandInterval` and `mem_lineInterval` prove these
+literal signed boundaries. Entirely negative intervals and empty lines
+are covered. `enumerateCoordinates_sound` and
+`enumerateCoordinates_complete` prove that every visited point is an
+original candidate and every original candidate is visited through its
+**concrete public Cramer coordinates**. Coordinates are never supplied
+as advice. `enumerateCoefficients_points_nodup` proves no repeated point,
+and `enumerateCoefficients_finset_eq` proves exact equality with the
+frozen original set specification. The richer coordinate list and
+actual basis are retained alongside the original sum/product pairs.
+
+The native report records the actual number of initialized lines and
+visited integer coordinates. Both are bounded from the actual traversed
+interval lengths. Initialized lines are counted even when they are empty.
+`bandInterval_length_le` proves at most `2C+2` line initializations when
+`L³<=C*N`. `mixed_index_line_visits_le` uses the preceding universal
+arithmetic relation separation to prove at most
+`3+floor(3L²/q)` coordinate visits on each line. Hence
+`mixed_index_enumeration_visits_le` proves
+
+`lines <= 2C+2`,
+`visits <= (2C+2)*(3+floor(3L²/q))`.
+
+These are **executed outer/inner loop bounds**, not a conclusion drawn
+only from output cardinality. Conversely,
+`enumerateCoefficients_visits_eq_card` proves that every visit contributes
+exactly one original candidate; cardinality occurs solely in this
+proof-side identity, never in the executable enumerator.
+
+At the actual matched public modulus, all scaling assumptions are
+discharged by the frozen arithmetic parents. The checked constants are
+
+`lines <= 524290`,
+`visits <= 524290*(3+6144*sixthWidth(N))`.
+
+`public_mixed_index_iteration_budget` also bounds the exposed sum of the
+native early-Euclid division count, line initializations and coordinate
+visits by
+
+`2*clog_2(s mod N+1)+524290*(4+6144*sixthWidth(N))`.
+
+This counter is **not** a full native-instruction or Boolean gate clock.
+It does not price the initial normalizations, scalar products, signed
+quotients, comparisons, list-cell operations, serialization or peak
+working memory. Such scalar and traversal operations have not been
+quietly treated as unit-cost bit work.
+
+`actual_public_route_native_enumeration` derives the retained long data
+at `publicRowModulus(N)`, obtains `L<=p` from the original local period,
+and applies the executable enumerator to the **original marked decoder**.
+For every mixed original root pair it proves that the genuine symmetric
+pair is visited, that the output is duplicate-free, and that all exposed
+loop bounds hold. There is no balanced-factor or prefix-none premise.
+Hidden local indices remain proof witnesses rather than executable inputs.
+
+Two additional size results prepare the bit refinement. The actual
+predecessor coefficient never exceeds the returned short coefficient,
+and its remainder never exceeds the initial modulus. Thus both unsigned
+basis coefficients are at most `2L`, and both remainder words are at
+most `N`. During a continuing early-Euclid step, both the next unsigned
+coefficient and its unreduced quotient product are already at most `A`.
+These native magnitude bounds do **not** certify physical word lengths
+or complete runtime memory.
+
+The next recovery obligations are an integer-root reader for the visited
+symmetric pairs and signed Boolean refinements for early Euclid, interval
+clipping and enumeration. The frozen parent already proves that any
+candidate splitting into two short integer roots is the original pair
+and yields `p` in one of two GCDs; that correctness result still needs an
+executed, fully paid reader. The existing polynomial fallback has not yet
+been replaced in the whole tagged controller. Near-linear acquisition of
+the original interval detector and both derivative channels remains the
+principal arithmetic acquisition gap. Public routing, input/word
+serialization, prefix work, prime squares and full working memory also
+remain in the requested one-sixth guarantee.
+
+The source/audit chain is recorded in
+`docs/semiprime-index-enumeration-audit.json`. All preceding source pins
+remain unchanged. Validation is local: strict target/leaf/root checks,
+all namespace linters, every explicit/generated declaration axiom audit,
+source trust, JSON, registration, journal, pins and whitespace checks.
+Only `propext`, `Classical.choice` and `Quot.sound` are permitted. No
+commit, push, remote CI, graph/dashboard regeneration or publication is
+part of this slice.
+
+## 2026-10-04: Executed integer-root reader and one-GCD mixed recovery
+
+**Goal remains OPEN. This turn is progress; the preceding goal turn was
+progress.** The new slice is `RiemannGaussian/SemiprimeIndexReader.lean`,
+checked by `scripts/CheckSemiprimeIndexReader.lean`. It connects the frozen
+native lattice enumerator to an actual integer-root/factor reader. Every
+new mathematical claim is universal Lean arithmetic. There are no new
+successful factor samples, finite coverage certificates or factor-advice
+inputs, and no full bit or working-memory certificate is claimed.
+
+`readIntegerRoots L point` retains the original signed sum/product point.
+It rejects a negative coefficient before converting to naturals and checks
+`4*b<=a^2` before forming the natural discriminant. It calls the frozen
+restoring square root on `a^2-4*b`, then checks its exact square, subtraction
+bound, parity, both interval bounds and both original sum/product
+equations. Rejected square-root calls are retained and counted. The root
+report preserves the actual restoring frames as well as the original point.
+
+The arithmetic reason the genuine point is accepted is
+
+`(k+l)^2-4*k*l=(l-k)^2` when `k<=l`.
+
+`ordered_pair_discriminant` proves this with the original nonnegative
+discriminant inequality. `readIntegerRoots_ordered` and
+`readIntegerRoots_pair` prove that the computed roots are exactly the
+original two short indices, in the computed descending order. Either
+zero index and repeated roots are included in this generic root theorem.
+`readIntegerRoots_sound` proves that any accepted roots retain the original
+signed coefficient equations and both original interval bounds.
+
+`testIndex N s i` computes the padded canonical difference
+`(s mod N+N-i mod N) mod N`, computes its native GCD once, and returns it
+only after both strict proper-divisor checks. The padding is proved to
+prevent natural subtraction from silently discarding a negative residue.
+`modularDifference_eq_val` identifies this expression with the original
+ring difference. The report retains the tested integer index, canonical
+residue and actual GCD even for improper results. `testIndex_sound` and
+`readCoefficientFactor_sound` apply to every input, not just semiprimes.
+
+`recoverMixedIndex N s L` runs the actual frozen basis-line enumeration and
+then executes a first-success coefficient scan. Private `p,q,k,l` occur
+only in proofs. `recoverMixedIndex_complete` proves that every mixed short
+CRT pair yields an actual proper divisor: its genuine sum/product point is
+in the executed output, its computed integer roots are accepted, and one
+of the two actual original difference GCDs recovers the appropriate prime.
+The scan does not skip an earlier proper result to reach the genuine point.
+
+There is a sharper arithmetic conclusion when `L<=p` and `L<=q`.
+`accepted_candidate_pair` proves that **every** original candidate which
+splits into two accepted short roots is the original local pair, with both
+prime orientations retained. `testIndex_both_mixed` proves that testing
+the original `k` yields `p` and testing `l` yields `q`. Consequently,
+`accepted_candidate_first_gcd` proves that the first actual root test of
+any accepted candidate succeeds. A rejected root report makes no GCD call.
+`recoverMixedIndex_gcd_bound` therefore proves **at most one native GCD
+call across the entire executed mixed-index stage**. The general reader
+still tests its second root if the first is improper on an arbitrary input.
+
+`scanCoefficients_counter_sums` identifies all recorded root-call,
+restoring-step and GCD-call counters with the actual retained reports.
+`scanCoefficients_visited_prefix` proves that the retained points are
+exactly the inspected input prefix. Generic scans use at most one root
+call and two GCD calls per visited point, counting rejected calls too.
+Original rectangle membership bounds each root input by `4*L^2`.
+
+At `m=publicRowModulus(N)`, `L=seedLength(m)`, define the already checked
+native visit bound
+
+`V=524290*(3+6144*sixthWidth(N))`.
+
+`public_mixed_index_reader_counts` proves the actual reader bounds
+
+`reader.visits <= V`,
+`reader.sqrtCalls <= V`,
+`reader.sqrtSteps <= V*(2*clog_2(N+1)+3)`,
+`reader.gcdCalls <= 1`.
+
+These are **native traversal, call and restoring digit-step counts**. They
+do not price signed quotients, coefficient/discriminant products, integer
+comparisons, physical list/word cells, serialization, a complete native
+instruction clock or peak working memory. The native GCD is not silently
+identified with the existing charged Boolean GCD circuit.
+
+`actual_public_route_native_reader` derives `L<=p` from the original local
+period on the actual matched-width public long route. It proves proper
+factor recovery and these reader bounds for every mixed original root pair
+of the original marked decoder, together with the frozen enumerator's
+iteration bound. No balanced-factor or prefix-none premise is inserted.
+`marked_bits_native_reader` also proves a semantic handoff from the actual
+accepted Boolean marked-index word to this native reader, using exact
+original target and derivative words. Word interpretation/serialization
+and a Boolean refinement of the native reader remain unpriced. Neither
+handoff supplies near-linear acquisition of its original jet inputs.
+
+The existing whole tagged-controller polynomial fallback remains frozen;
+this new native stage has not been installed in a complete, fully paid
+factorizer. Near-linear original interval-detector/jet acquisition remains
+the principal acquisition gap. Signed Boolean early Euclid and line
+clipping/enumeration, integer-root reading, serialization, full working
+memory, all public routing/prefix work and prime-square handling must still
+be composed into the requested deterministic N-only one-sixth guarantee.
+
+The source/audit chain is `docs/semiprime-index-reader-audit.json`, with all
+365 preceding source pins and 41 selected Mathlib pins unchanged. The new
+chain has 368 source pins. Validation passed locally: warning-as-error
+target build, strict leaf and ordinary root, all 14 namespace linters and
+every explicit/generated declaration's axiom audit. The checker found
+zero errors in 77 direct plus 111 generated declarations, auditing all
+188 declarations and 92 theorem/proof helpers; only `propext`,
+`Classical.choice` and `Quot.sound` are allowed. The leaf has 36 source
+theorems, eight computable definitions and five structures. No commit,
+push, remote CI, graph/dashboard regeneration or publication is included.
+
+## 2026-10-04: Lazy marked acquisition and a fixed four-state geometric transfer
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeSeedLazyJets.lean`, checked by
+`scripts/CheckSemiprimeSeedLazyJets.lean`. This slice reuses the frozen
+universal arithmetic collision forcing and original long-route local
+periods. It runs no new factor samples and adds no finite success
+certificates. It reduces the marked acquisition requirement and identifies
+an exact constant-degree transfer structure, while keeping the implemented
+literal acquisition cost explicit.
+
+For the original geometric interval, retain four scalar components:
+`P=intervalProduct`, `D=targetDerivative`, `E=baseDerivative` and `H=r*P`.
+Here `E` remains the original logarithmic base derivative, with its original
+negative sign and absolute exponent mark. Starting at `(1,0,0,0)` and
+`t=1`, each literal step sets `f=x-t` and computes
+
+`P_next=f*P`,
+`D_next=P+f*D`,
+`E_next=f*E-t*H`,
+`H_next=f*(H+P)`,
+`t_next=t*alpha`.
+
+`geometricJetRun_exact` proves all original channel identities, `H=L*P`,
+`t=alpha^L` and actual `steps=L`, over every commutative ring. Zero,
+saturated and repeated-root cases are included. The scalar executor builds
+neither a pair matrix nor coefficient polynomials or a cofactor list; it
+never divides by a potentially zero product. The auxiliary mark advances
+by addition, without a supplied private root index.
+
+`jetMatrix_degree` and `matrixJetRun_channels` identify the same executor
+with an ordered four-by-four transfer whose coefficients have degree at
+most one in the current base power. Every new step multiplies on the left.
+The product retains `[P,D,E,L*P]` separately, including at saturation. The
+matrix and polynomial product are proof-side specifications, not an
+implemented fast backend or a bit clock.
+
+The computable `selectDetector` consumes already acquired, labelled
+canonical detector residues. It checks one native GCD per visited row,
+stopping at the first proper divisor or, otherwise, the first zero
+residue. Selected factors are proper on arbitrary input words; saturated
+labels come from actual source members. Its retained source list is
+exactly the executed prefix and its GCD counter equals the prefix length.
+The literal `originalDetectorRows` map still computes the original products;
+the selector's linear call count does not price that acquisition.
+
+`lazySeedRecoveryWith` bypasses marked acquisition for a proper detector
+factor. Only a saturated selection invokes its callback, once, and hands
+the original `(0,D,E)` triple to the established rich tagged reader. Its
+retained requested list has length at most one for all rows and all
+callbacks. `acquireSeedMarked` supplies the exact original derivatives from
+the computable four-state executor. The composed adapter itself remains
+noncomputable because it inherits the frozen tagged reader and its
+polynomial recovery fallback.
+
+`long_lazySeedRecovery_exact` proves equality with the original
+`scanSeedSums` for every supplied original seed list on the long route.
+Frozen `long_readSeed_saturated` discharges the needed non-failing
+saturation premise from original local periods, covering both common-root
+and mixed-root cases. `long_lazySeedRecovery_complete` then gives a proper
+factor on the original seed cache, with at most one marked request and at
+most `m-1` native detector GCD calls. `actual_public_route_lazy_acquisition`
+derives its premises from the actual matched-width public long output after
+an unsuccessful original prefix, for every remaining distinct-prime ratio.
+It also proves detector GCD calls at most `2*sixthWidth(N)`.
+
+The cost gap remains concrete. `literal_seed_marked_steps` gives
+`2*m^2+2 <= steps <= 4*m^2`. At `B=sixthWidth(N)>=4` and actual
+`m=publicRowModulus(N)`, `public_literal_seed_marked_steps` gives
+`2*B^2+2 <= steps <= 16*B^2` whenever this literal callback is requested.
+This is a conditional primitive cost, not a global worst-case lower bound
+for every public factorizer: no infinite actual public family forcing the
+callback is proved here. At-most-once marked acquisition does not supply a
+near-linear singleton implementation.
+
+The primary [Bostan--Yurkevich q-holonomic algorithms](https://arxiv.org/html/2012.08656)
+provide a fast matrix-factorial lead. The fixed four-state degree-one
+one-target transfer is a possible input structure, not a proved application
+over this composite modulus. Their multiple-index result concerns one
+recurrence; changing original seed targets changes its parameter `x`, so
+that result does not directly supply the missing detector batch. No
+external Lean source or result is imported as a proof axiom.
+
+The source/audit chain is `docs/semiprime-seed-lazy-jets-audit.json`, with
+all 368 preceding source pins and 41 selected Mathlib pins unchanged. The
+new chain has 371 source pins and 47 selected Mathlib pins. Warning-as-error
+target build, strict leaf and ordinary root, all 14 namespace linters and
+the axiom audit passed. The checker found zero errors in 65 direct plus
+122 generated declarations, auditing all 187 declarations and 79
+theorem/proof helpers; only `propext`, `Classical.choice` and `Quot.sound`
+are allowed. The leaf has 24 source proofs, eight computable definitions,
+four noncomputable definitions, four structures and one inductive type.
+
+A near-linear marked backend, or a proved way for the public controller to
+avoid requesting it, remains necessary for acquisition closure. The
+original varying-target detector batch remains unpriced. Scalar ring
+steps and native GCD call counts do not cover Boolean arithmetic,
+serialization, physical word/list writes, a complete instruction clock or
+peak memory. The native mixed-index reader still needs installation and
+full pricing in the controller; all routing, prefix work and prime-square
+handling still require composition. No full factorization complexity
+certificate, commit, push, remote CI, graph/dashboard regeneration or
+publication is included.
+
+## 2026-10-04: Boolean coefficient-root reading with complete scalar charges
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitIndexRoots.lean`, checked by
+`scripts/CheckSemiprimeBitIndexRoots.lean`. It replaces the original native
+integer-root operation with executed Boolean arithmetic on encoded original
+coefficient words, paying discriminant construction and all seven original
+acceptance conditions as well as the restoring root. No new numerical
+factor runs or finite success certificates are used.
+
+The fixed four-state transfer from the preceding slice addresses one
+original target at a time. Changing original seed targets changes its
+parameter `x`; it does not yet price the varying-target detector batch.
+Both fast acquisition gaps remain open. This slice instead closes an
+independent, required recovery arithmetic cost while preserving the full
+factorization objective and the existing universal collision forcing.
+
+`sqrtBits` consumes the actual little-endian Boolean word. Structural
+recursion removes two low cells, then restores digit pairs from the most
+significant end. A lone final input bit receives literal false as its high
+digit. One step constructs `low::high::child.remainder` and
+`true::false::child.root`, then calls the existing full-borrow subtraction
+circuit once. Borrow true retains the expanded remainder and prepends
+false to the root; borrow false retains the computed difference and
+prepends true. No native square root, quotient, ordering or integer
+subtraction computes a branch or output word.
+
+`sqrtBits_invariant` proves the exact original equation
+`root_value^2+remainder_value=input_value` and
+`remainder_value<=2*root_value` for every input word. `sqrtBits_native_outputs`
+preserves both original `countedSqrt` output values. Its physical pair
+counter is `steps=(input.length+1)/2`, equal to its root word length. All
+supplied high zero pairs are executed and charged, so the physical counter
+can exceed the old value-based native restoring count. Root and remainder
+physical widths stay at most `input.length` and `input.length+1`.
+
+Every step pays the full subtraction's gates, reads, writes and tests,
+four expanded/trial cells, one root cell and the borrow branch. Input-pair
+inspection is paid separately. Discarded comparison words are included in
+the allocation counter. `sqrtBits_cost` proves the complete scalar
+primitive bound `clock<=20*(input.length+1)^2`; every new bit-list cell is
+included in this clock.
+
+`readIntegerRootsBits` retains the original bound, sum coefficient and
+product coefficient words. It constructs `a*a` with Boolean multiplication,
+shifts the original `b` by two paid false cells and subtracts to form the
+discriminant. A borrow rejects underflow before the root call. Otherwise it
+retains the actual Boolean restoring report even when later checks fail.
+`checkRootWords` executes all original conditions:
+
+`r^2=delta`, `r<=a`, `(a+r)%2=0`, `high<bound`, `low<bound`,
+`high+low=a`, `high*low=b`.
+
+The sum, difference, products and comparisons use the existing charged
+Boolean circuits. `cutLowBit` pays inspection of one low cell and shares
+the actual tail for division by two, without a native quotient or copied
+tail. Equality checks retain the complete borrow and difference/OR scan,
+so underflow and high-zero-padded encodings cannot create false equality.
+Both ordered candidate words remain separate. Every failed check's scalar
+work and bit-list allocations are included.
+
+`readIntegerRootsBits_exact` proves outcome equality with the full original
+`readIntegerRoots` on **every unsigned coefficient input**, including
+rejected inputs. The native nonnegative coefficient domain is retained;
+the actual frozen `coefficientCandidate` domain already has nonnegative
+sum/product coordinates. Soundness keeps both short bounds and both
+original coefficient equations. Genuine-pair acceptance retains both
+explicit descending root orientations, including a zero index and repeated
+indices; it does not infer a prime orientation from symmetric coordinates.
+
+For all three physical input lengths at most `W`, the complete word reader
+satisfies `clock<=20000*(W+1)^2`. This pays original coefficient squaring,
+discriminant subtraction, restoring root, root squaring, parity, both
+bounds, original sum/product verification and output decisions. Accepted
+high/low physical words have lengths at most `3*(W+1)+1` and `3*(W+1)`.
+The allocated bit-list cell counter is at most the complete clock.
+
+`readRootWordsBatch` executes all original coefficient occurrences in
+order, retaining successful and rejected reports. Its original coefficient
+word list is exactly the supplied list; no roots or source points are
+pooled, deduplicated or relabelled. Interpreted outcomes equal the original
+native outcomes point by point. For `n` pairs of physical width at most
+`W`, its actual clock is at most
+
+`n*(20000*(W+1)^2+2)+1`.
+
+Its total created bit-list cells are bounded by that clock. This is an
+allocation bound in the existing primitive model, not a complete peak
+machine storage certificate for references, counters and serialized
+reports.
+
+`encoded_enumeration_genuine` proves that exact word encoding of the
+original executed mixed-index enumeration retains a genuine accepted root
+pair in the actual Boolean batch. The encoding premise identifies all
+original source points, not supplied successful roots or private indices.
+`public_encoded_root_batch_cost` combines the actual original enumeration
+bound at `m=publicRowModulus(N)`, `L=seedLength(m)` and
+`B=sixthWidth(N)>=4`. With `V=524290*(3+6144*B)`, it proves both the full
+root batch clock and total bit-list allocation bound
+
+`V*(20000*(W+1)^2+2)+1`.
+
+The exact-source encoding and physical `W` hypotheses remain explicit.
+Natural magnitude bounds alone do not remove physical high zeros or
+produce a priced serializer. The new reader consumes its original source
+words; it does not implement Boolean early Euclid, signed line
+clipping/enumeration or word acquisition. Native clock arithmetic remains
+proof instrumentation in the established Boolean gate/bit-cell/test model;
+a full machine instruction refinement remains separate.
+
+The source/audit chain is `docs/semiprime-bit-index-roots-audit.json`, with
+all 371 preceding source pins and 47 selected Mathlib pins unchanged. The
+new source chain has 374 pins. Warning-as-error target build, strict leaf
+and ordinary root, all 14 namespace linters and every generated declaration's
+axiom audit passed. The checker found zero errors in 80 direct plus 136
+generated declarations, auditing all 216 declarations and 113 theorem/proof
+helpers; only `propext`, `Classical.choice` and `Quot.sound` are allowed. The
+767-line leaf has 34 source proofs, six computable definitions, one
+mathematical predicate abbreviation and five structures. No external Lean
+source or proof axiom, commit, push, remote CI, graph/dashboard regeneration
+or publication is included.
+
+Next, the original modular index differences, checked GCD tests and
+first-success factor scan need Boolean refinement/composition around this
+reader. Exact physically bounded early-Euclid and signed enumeration words
+still need construction and serialization costs. The existing native
+recovery controller remains frozen. Near-linear original detector and
+singleton marked acquisition, full public routing/prefix/prime-square
+composition and complete working-memory costs still separate this result
+from the deterministic N-only guaranteed one-sixth endpoint.
+
+## 2026-10-04: Boolean mixed-index factor scan with one charged GCD
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitIndexFactors.lean`, checked by
+`scripts/CheckSemiprimeBitIndexFactors.lean`. It completes executed Boolean
+modular index differences, checked factor tests and first-success scanning
+around the frozen original word-root reader. All original candidate
+occurrences, root orientations and failed work are retained. No new factor
+examples, numerical runs or finite success certificates are used.
+
+The arithmetic collision reason remains the exact frozen residual
+`N+delta_j-m^2*r=(p-1)*(q-a)`, for `j=p mod m` and the original denominator-one
+representative `a`. Its bounded witness lies in the original seed interval;
+Fermat forces the p-field hit for every unit base. The public post-prefix
+long route supplies those arithmetic hypotheses. Coverage of the amended
+family survives. The proved impossibility of a unit ratio between its two
+half-products concerns a proposed acquisition shortcut, not collision
+coverage. This slice prices a required mixed-index recovery component; it
+does not claim a new collision theorem or a faster detector.
+
+`differenceBits` subtracts the original index word from the canonical
+decoded residue using the full Boolean borrow circuit. On underflow it
+adds the public modulus and subtracts again. The first difference and
+borrow diagnostic are retained and paid even when corrected. For canonical
+values `s,i<N`, the value equals the original native
+`(s mod N+N-i mod N) mod N`. Zero and both wrap orientations are included.
+For three physical input lengths at most `W`, the output length is at most
+`W+1`, its clock is at most `40*(W+1)`, and all its created bit-list cells
+are bounded by that clock.
+
+`testIndexBits` retains the original index, difference report and the
+actual `checkedSignalBits` GCD report. It returns a word only after the
+executed strict proper-factor checks. Every returned value is a proper
+divisor on arbitrary input words, even when those inputs are not canonical.
+Canonical inputs preserve the original native factor-test result. The
+complete test, including physical Euclidean fuel, the GCD, borrow correction
+and both proper bounds, costs at most `5000*(W+1)^3`.
+
+`readCoefficientFactorBits` retains the full original Boolean coefficient
+root report. A rejected root requests no GCD. An accepted pair first tests
+the descending root, stopping if its GCD is proper; otherwise it tests the
+second original root. Its interpreted factor and actual GCD-call count
+both equal the native reader on every unsigned coefficient point when the
+decoded residue is canonical and the original interval bound is at most
+N. All failures and early successes are included. Its clock is at most
+
+`20000*(W+1)^2 + checks.length*625000*(W+1)^3 + 5`.
+
+The cubic term bounds the full physical GCD test on the root words,
+whose widths are proved by the frozen reader. It is not a unit-cost
+arithmetic call.
+
+`scanCoefficientsBits` executes original encoded points in order and stops
+at its first proper factor. Its visited source list is exactly
+`pairs.take visits`, including the successful original occurrence.
+`scanCoefficientsBits_exact` preserves both the native returned factor
+value and native GCD-call count. For `n` physically bounded original points,
+the complete executed scalar clock is at most
+
+`n*(20000*(W+1)^2+9) + gcdCalls*625000*(W+1)^3 + 1`.
+
+The important arithmetic saving is preserved in the actual Boolean scan:
+for original mixed candidates, every accepted short-root pair must be the
+original `k,l` in one of the two orientations. Reduction modulo p and q,
+with `k,l<L<=p,q`, turns root equality in either prime field into equality
+of the actual short integers. Distinct `k,l` force a proper factor from
+the FIRST root's GCD. Rejected candidates request no GCD. Consequently
+`encoded_scan_gcd_bound` proves that the WHOLE original scan executes at
+most one Boolean GCD, rather than merely at most two per point.
+
+`encoded_scan_complete` proves a proper returned Boolean word for every
+exact encoding of the original complete mixed-index enumeration. At
+`m=publicRowModulus(N)`, `L=seedLength(m)` and `B=sixthWidth(N)>=4`, set
+`V=524290*(3+6144*B)`. `public_encoded_factor_scan` proves a proper return,
+`gcdCalls<=1`, and
+
+`clock <= V*(20000*(W+1)^2+9) + 625000*(W+1)^3 + 1`.
+
+Thus the encoded recovery scan has a fully charged `O(B*W^2+W^3)` scalar
+primitive bound. `W` is the actual physical source-width premise; it is
+not inferred for free from natural value magnitudes. Exact original
+source construction, early Euclid, signed clipping and serialization
+remain unimplemented and unpriced in this leaf.
+
+The actual accepted marked decoder word is now proved canonical and of
+exactly the original modulus's physical length. `public_marked_factor_scan`
+connects the original acquired target/target-derivative/base-derivative
+words to this actual Boolean scan through the executed marked decoder.
+It uses the two original local-root identities to certify the SAME
+computed word; no private decoded residue is supplied. The source
+callback premise identifies the original enumeration for any accepted
+word and bounds its physical coefficients. Decoder plus encoded scan
+returns a proper factor with at most one recovery-scan GCD and summed
+scalar clocks at most
+
+`V*(20000*(W+1)^2+9) + 630000*(W+1)^3 + 1`.
+
+The decoder's own inverse/GCD work is included in its cubic clock; the
+one-GCD bound concerns the subsequent factor scan. Original jet acquisition
+and source callback production are explicit separate costs. No fast
+acquisition backend is implied by supplying their correctness premises.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 61 direct
+plus 93 generated declarations: all 154 declarations and 74 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 649-line
+leaf contains 26 source proofs, four computable definitions and four
+structures. The saved `docs/semiprime-bit-index-factors-audit.json` preserves
+all 374 parent source pins and all 47 selected Mathlib pins, adding the
+parent audit, leaf and checker for 377 source pins. Only one ordinary
+root import and one semiprime family entry are added. No external Lean
+source/proof axiom, commit, push, remote check, full graph/dashboard gate
+or publication is included.
+
+These are gates, bit-cell reads/writes, tests and branches in the existing
+primitive model. Native Nat clock/counter arithmetic is proof instrumentation;
+complete machine instruction and report/reference/counter memory costs
+remain separate. The frozen GCD has a full primitive clock but no aggregate
+writes field, so this leaf does not invent a whole-scan allocation or peak
+memory certificate. Full source construction, near-linear original detector
+and singleton marked acquisition, all public routing/prefix/prime-square
+branches and complete working memory still separate this result from the
+deterministic N-only guaranteed one-sixth endpoint.
+
+## 2026-10-04: Actual Boolean early-Euclid basis with bounded coefficient words
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitIndexBasis.lean`, checked by
+`scripts/CheckSemiprimeBitIndexBasis.lean`. It constructs the original
+short index basis from the actual modulus, decoded residue and interval
+bound words. No basis vector, integer threshold, quotient or private root
+is supplied. No new factor examples, numerical runs or finite success
+certificates are used. This closes basis construction in the existing
+Boolean primitive model; complete signed enumeration and original jet
+acquisition remain separate.
+
+The arithmetic reason physical coefficient width can stay bounded is
+exact determinant conservation. For the original unsigned alternating
+state,
+
+`r0*c1+r1*c0=N`.
+
+The next full Boolean restoring division computes `quotient=r0/r1` and
+`remainder=r0 mod r1`. Boolean multiplication and addition construct
+`c_next=c0+quotient*c1`. The frozen exact Euclidean identity gives
+
+`r1*c_next+(r0 mod r1)*c1=N`.
+
+A continuing step has `r1>threshold>=0`, hence `r1>=1`. Consequently
+`coefficient_update_bound` proves `c_next<=N`, including a zero new
+remainder. Since the actual modulus word represents N and always has
+`N<2^modulus.length`, the new coefficient fits that original physical
+word. This uses N alone, with no unknown factor, local index, random
+position or coefficient-normalization advice.
+
+`basisStepBits` therefore uses the frozen, already charged `fitBits`
+circuit to copy the computed coefficient to the public physical width.
+The proof shows the copy is value-preserving; it does not assume high
+bits vanish or treat truncation as free. Full quotient/remainder work,
+coefficient multiplication, addition, all temporary padded cells and
+the copied output cells are included. The step clock is at most
+`150*(W+1)^2` when its original physical inputs have length at most W.
+
+`basisLoopBits` compares the actual current remainder against the actual
+threshold with the full borrow circuit. Borrow false stops before any
+Euclidean division. Otherwise the loop performs the computed update,
+rotates both original coefficient/remainder pairs and toggles the original
+sign. Every full comparison/update frame is retained; the final stopping
+comparison is retained separately. Supplied insufficient fuel has an
+explicit exhausted flag and retains all executed work.
+
+`basisLoopBits_stops_of_gcd` proves this early loop cannot exhaust fuel
+that suffices for the actual full Boolean GCD on the same remainders.
+The existing two-remainder halving proof therefore supplies sufficient
+literal fuel and bounds actual loop divisions. No coefficient is involved
+in this stopping certificate. Every actual division has exactly one
+retained frame. All four retained words remain physically bounded.
+For arbitrary supplied fuel, the whole loop clock is at most
+
+`fuel.length*200*(W+1)^2+1`.
+
+`basisLoopBits_exact` proves complete original native report equality
+whenever the encoded state has the exact determinant and actually stops.
+It retains BOTH basis vectors, BOTH original unsigned coefficients and
+remainders, the alternating sign and the actual loop division count.
+The interpretation abbreviation is mathematical specification only; no
+word operation evaluates it.
+
+`shortRelationBits` constructs every public input to that loop. It adds
+one to the encoded width A, computes the actual restoring threshold
+`N/(A+1)`, reduces the supplied decoded word modulo the actual N word,
+and constructs the existing physical fuel list from those input words.
+Only then does it run early Euclid, starting with literal coefficients
+zero and one. `shortRelationBits_stops` proves its own fuel suffices on
+EVERY word input, including zero modulus encodings.
+`shortRelationBits_exact` proves equality with the full original
+`shortRelation(N,s,A)` report on EVERY word input, with arbitrary high-zero
+padding. Its loop counter satisfies the original value-based bound
+`steps<=2*clog(2,s mod N+1)`. The two initial restoring calls are additional
+construction work already included in the clock; they are not counted
+as loop divisions.
+
+For positive N, the actual four output words have lengths at most the
+modulus's supplied physical width. For modulus, decoded and A input
+lengths at most W, the complete public construction satisfies
+
+`clock<=3000*(W+1)^3`.
+
+This includes actual threshold construction, input reduction, physical
+fuel allocation, every failed/accepted comparison, coefficient products
+and additions, width copying and retained loop/frame decisions. Both
+original signed index relations, the exact determinant +/-N and the
+original short-vector bounds hold for the computed report.
+
+`indexBasisBits` constructs exactly the basis used by the frozen
+`enumerateCoefficients(N,s,L)`. It supplies A=2L by creating one paid
+false low cell on the original bound word. `indexBasisBits_exact` matches
+the actual original enumerator's full basis report for every word input.
+Its four basis words fit the actual modulus word. For all original input
+lengths at most W and positive N, its complete clock is at most
+
+`25000*(W+1)^3`.
+
+`marked_basis_cost` connects an ACTUALLY accepted marked decoder word
+to this priced construction without residue re-encoding. The previous
+actual-output width theorem derives its modulus width from the decoder
+itself. Given physically bounded original jet words and original bound,
+the summed decoder plus basis clock is at most
+`30000*(W+1)^3`. Original jet acquisition is still unpriced.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 63 direct
+plus 85 generated declarations: all 148 declarations and 67 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 511-line
+leaf contains 23 source proofs, four computable definitions, one mathematical
+interpretation abbreviation and four structures. The saved
+`docs/semiprime-bit-index-basis-audit.json` preserves all 377 parent source
+pins and all 47 selected Mathlib pins, adding the parent audit, leaf and
+checker for 380 source pins. Exactly one ordinary root import and one
+semiprime family entry are added. No external Lean source/proof axiom,
+commit, push, remote check, full graph/dashboard gate or publication is
+included.
+
+The bounded-copy theorem removes a real coefficient acquisition and
+physical-width obligation. It does not construct signed determinant bands,
+ceil/floor line clipping, coordinate traversal or coefficient-point words.
+Those remaining original source operations still need actual Boolean
+construction and public-width clocks before the previous encoded factor
+scan has a fully acquired input. Public row-modulus/length word generation,
+near-linear original detector and singleton marked acquisition, all public
+routing/prefix/prime-square branches and complete instruction/working-memory
+costs remain open. Native Nat report-clock/counter arithmetic is proof
+instrumentation in the existing gate/cell/test model; the new full basis
+clock is not the complete factorizer bit or peak-memory certificate.
+
+## 2026-10-04: Actual Boolean signed clipping of original index-basis lines
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitIndexClipping.lean`, checked by
+`scripts/CheckSemiprimeBitIndexClipping.lean`. It computes the original signed
+line bounds from actual sign/magnitude words, including negative offsets,
+negative steps, both signs of zero and arbitrary high-zero padding. This is
+a construction-cost result. It adds no collision-coverage claim, factor
+examples, native factorization runs or finite success certificates.
+
+The arithmetic collision checkpoint remains the universal
+`forced_seed_arithmetic` and `forced_seed_prime_hit` in the frozen
+`SemiprimeSeedFiniteTransfer` leaf. Its bounded integer residual is a multiple
+of p-1; Fermat forces an original seed collision. The same forced root
+separates the two interval halves and disproves the proposed all-target unit
+ratio transfer. The amended original family therefore survives that coverage
+checkpoint, while the shortcut fails. The new clipping backend does not
+resolve near-linear acquisition of either the varying-target detector batch
+or the one requested marked jet.
+
+`SignedWord` stores one actual Boolean sign and the original unsigned
+magnitude word. Its integer `value` abbreviation, and interval `interpret`,
+are specification only. All eleven executable definitions use word circuits
+and Boolean flags, never native integer interpretation to construct, select
+or serialize their outputs. Exact signed addition, subtraction and
+multiplication retain and pay failed borrow work, reverse subtraction and
+full multiplication. Output-width and complete primitive clocks are proved.
+
+`leSignedBits` executes both full unsigned borrow comparisons and both
+nonzero scans. Positive zero and negative zero compare equally. Thus a zero
+step encoded with either sign takes the constant-coordinate branch. No
+normalization premise or unpaid canonicalization is supplied.
+
+The exact negative-floor correction is arithmetic: for n>=0 and d>0,
+`(-n)/d=-(n/d)` when `n mod d=0`, and `(-n)/d=-(n/d+1)` otherwise.
+`floorSignedBits` constructs the unsigned quotient/remainder, scans the
+actual remainder and denominator, and executes a quotient-plus-one circuit.
+That increment is retained and paid even when unused. The correction uses
+actual flags. Denominator zero suppresses it and matches the original total
+integer division semantics. `ceilSignedBits` uses the original
+`-floor(-numerator/denominator)` identity, paying both sign NOT gates.
+Floor and ceiling are exact on EVERY signed numerator and unsigned divisor
+encoding, including zero and padding. Their full clocks are at most
+`150*(W+1)^2` and `160*(W+1)^2`, and output magnitude widths at most W+2.
+
+`intersectIntervalsBits` computes signed max/min with actual endpoint
+comparisons and selects original words. `positiveLinearBits` executes both
+lower/upper minus offset operations, then exact signed ceiling/floor.
+`linearIntervalBits` implements every original branch: positive-step bounds,
+negative-step sign changes with exchanged/negated bounds, and both constant
+checks at a zero step. Its zero-step branch executes no rounded division.
+A failed constant check constructs the paid original impossible interval
+[1,0]; empty and reversed input intervals are allowed.
+
+`linearIntervalBits_value` proves full original signed clipping equality on
+EVERY word representation, with no valid-interval or canonicality premise.
+`mem_linearIntervalBits` proves exact inclusive membership in the clipped
+line. It specifies the produced bounds; it does not emit coordinate words.
+For all six supplied magnitude words of physical length at most W,
+`linearIntervalBits_cost_width` proves
+
+`clock<=2000*(W+1)^2`,
+
+with both produced endpoint widths at most W+3. Every executed full scan,
+comparison, sign gate, subtraction, restoring division, rounding increment,
+endpoint decision and literal empty bound is paid in the existing primitive
+model. High-zero padding is retained and charged.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 110 direct
+plus 168 generated declarations: all 278 declarations and 102 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 665-line
+leaf contains 24 source proofs, eleven computable definitions, two pure
+specification abbreviations and ten structures. The saved
+`docs/semiprime-bit-index-clipping-audit.json` preserves all 380 parent source
+pins and all 47 selected Mathlib pins, adding the parent audit, leaf and
+checker for 383 source pins. Exactly one ordinary root import, one semiprime
+family entry and this journal insertion are byte-checked against current
+pre-insertion snapshots. All concurrent work is preserved. No external Lean
+source/proof axiom, commit, push, remote check, publication or full graph/
+dashboard gate is included.
+
+Actual determinant-band and line-offset construction from the computed basis,
+coordinate traversal and original coefficient-point word emission remain
+unpriced. They must preserve original source order and physical widths before
+the encoded factor scan has a fully acquired input. Public modulus/length
+word production, fast original jet acquisition, every public routing/prefix/
+saturation/nonunit/prime-square branch and complete instruction/working-memory
+composition also remain open. Native Nat report clocks/counters are proof
+instrumentation. Endpoint-width bounds and this primitive clock are not a
+full machine or peak-memory certificate.
+
+## 2026-10-04: Actual Boolean determinant bands, line offsets and coefficient words
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitIndexGeometry.lean`, checked by
+`scripts/CheckSemiprimeBitIndexGeometry.lean`. It acquires the original basis
+and signed determinant band from public words, constructs each original line
+and coefficient point using actual Boolean arithmetic, and supplies exact
+reader magnitudes at admitted coordinates. Coordinate traversal is still
+separate. No new factor examples, native factorization runs, finite success
+certificates or new collision-coverage claim are used.
+
+`basisWordsBits` materializes BOTH original signed vectors from the computed
+basis, sharing all four original physical magnitudes. The current second
+coordinate keeps the retained basis sign; the companion uses the opposite
+sign with its actual NOT gate paid. `basisWordsBits_values` preserves the
+original vector components even for signed-zero remainders. No factor,
+private local index, relation vector or encoded native coefficient is used
+to construct the public basis or band.
+
+`rectangleBits` computes the actual squares s² and L², the signed caps
+2L-1 and L²-1, the lifted product cap s²+L²-1, and the original affine origin
+-s². It executes both full multiplications, signed subtractions and the
+lifted addition, retaining all reports. Doubling the bound pays its actual
+false low cell; the literal one and origin sign gate are included. Negative
+caps at L=0 retain the original total formulas. All six outputs are exact
+on EVERY supplied word representation. The full rectangle clock is at most
+`2000*(W+1)^2`, and every retained magnitude is at most `6*(W+1)` cells.
+
+`splitZeroBits` computes the original signed min/max with zero using the
+full order circuit. `bandIntervalBits` uses those ACTUAL extrema of the
+negative short second coordinate, four full signed products and two full
+signed sums to construct the exact rectangle determinant bounds. The
+retained basis sign chooses their original orientation before the actual
+signed floor/ceiling constructor divides by the modulus word. Its full
+clock is at most `1000000*(W+1)^2`; both produced band endpoint words have
+length at most `22*(W+1)`. `bandIntervalBits_extrema` and
+`bandIntervalBits_value` are exact on EVERY encoded input, including zero
+modulus/interval words and arbitrary high-zero padding.
+
+`lineIntervalBits` constructs the exact first offset j times the preceding
+coefficient, initializes the original sum-coordinate bounds, then constructs
+-s² plus j times the signed companion second coordinate. It clips the
+original product-coordinate condition using the original signed short second
+coordinate, before any line coordinates are visited. Positive, negative,
+zero-step and empty-line branches all refine the full original line formula.
+Given physically bounded input and coordinate words, complete line work is
+at most `500000*(W+1)^2`, and both output endpoint widths at most `12*(W+1)`.
+The already acquired rectangle and basis are shared, rather than reacquired
+as part of each line's own clock.
+
+`coefficientPointBits` executes four full signed products and three full
+signed additions in the original affine order. It retains the original
+sum/product signed words, all diagnostic reports and their actual unsigned
+magnitudes for the Boolean root reader. Every signed coordinate encoding
+refines the original point formula. Complete per-point work is at most
+`2000*(W+1)^2`, with both produced reader words at most `8*(W+1)` cells.
+These are physical widths, including output padding and discarded work.
+
+`signedWord_natAbs` and `signedWord_magnitude_of_nonneg` show that an admitted
+nonnegative point supplies EXACT original unsigned values, even when zero
+has a negative sign flag. No native serialization, sign normalization or
+candidate filter is executed. `clipped_point_magnitudes` proves this for
+all coordinates on the actually clipped line.
+
+`indexGeometryBits` acquires the original Boolean basis once, computes the
+rectangle once, then computes the signed band. `indexGeometryBits_value`
+preserves both the full original basis report and the full original band on
+EVERY input encoding. Positive N and actual input widths at most W imply
+complete construction clock at most `2000000*(W+1)^3`, with band endpoints
+at most `22*(W+1)` cells. Constructor positivity is derived from its actual
+basis; a positive encoded interval and modulus require no supplied vector
+premise. Public band/line membership certifies the produced reader magnitudes
+as a full original coefficient candidate, including rectangle bounds and
+affine congruence. Public line/point cost theorems derive their vector widths
+from the actual acquired modulus-width basis, with no encoded-basis advice.
+`marked_geometry_cost` consumes an ACTUALLY accepted decoder output and
+bounds decoder plus geometry by `2005000*(W+1)^3`, without residue re-encoding.
+Original jet acquisition is not priced by that handoff.
+
+The coordinate-width reason is also proved from ACTUAL signed endpoints.
+`interval_member_natAbs_lt` proves every admitted integer coordinate has
+absolute value below 2^K when both endpoint words fit K cells.
+`interval_member_successor_natAbs_lt` proves its successor fits K+1 cells,
+even after the last admitted endpoint. Hence every original public band
+coordinate has absolute value below `2^(22*(W+1))`. These are value bounds
+for future paid fixed-width copies; no coordinate word is serialized or
+normalized by these mathematical lemmas. They prevent the future iterator
+from assuming that repeated additions have bounded physical padding.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 110 direct
+plus 140 generated declarations: all 250 declarations and 107 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 808-line
+leaf contains 30 source proofs, ten computable definitions and seven
+structures. All executable data paths use actual Boolean/word arithmetic;
+no integer interpretation or native arithmetic oracle is called. The saved
+`docs/semiprime-bit-index-geometry-audit.json` preserves all 383 parent source
+pins and all 47 selected Mathlib pins, adding the parent audit, leaf and
+checker for 386 source pins. Exactly one ordinary root import, one semiprime
+family entry and this journal insertion are byte-checked against current
+pre-insertion snapshots. All concurrent work is preserved. No external Lean
+source/proof axiom, commit, push, remote check, publication or full graph/
+dashboard gate is included.
+
+The next source obligation is an ACTUAL word iterator over these constructed
+signed intervals, with counted/decremented words and paid fixed-width
+increments, preserving original band/line order and every point occurrence.
+Only then can the frozen native line/visit bounds price the complete original
+source of the encoded factor scan. The native source lists are not serialized
+by the new leaf. Fast varying-target detector and singleton marked acquisition,
+public modulus/length word production, every routing/prefix/saturation/
+nonunit/prime-square branch and complete instruction/working-memory
+composition remain open. Native Nat report clocks/counters are proof
+instrumentation in the primitive gate/cell/test model; no complete
+factorizer or peak-memory guarantee is claimed.
+
+## 2026-10-04: Complete actual word coefficient source and constructed marked reader
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The interrupted previous turn built
+and proved the interval iterator's exact word output; this turn finishes its
+primitive price and the FULL original nested coefficient source, then installs
+that source in the actual first-success factor reader and actual marked decoder
+handoff. The leaf is `RiemannGaussian/SemiprimeBitIndexTraversal.lean`, checked
+by `scripts/CheckSemiprimeBitIndexTraversal.lean`. No new factor examples,
+native factorization runs, finite success certificates or new collision
+coverage claim are used.
+
+`intervalCounterBits` constructs upper-minus-lower-plus-one by actual signed
+subtraction/addition and full signed comparison with zero. Actual flags select
+the computed nonnegative magnitude or literal zero. It equals the original
+positive-part inclusive interval length on EVERY representation, including
+empty/reversed intervals, negative bounds, signed zero and high-zero padding.
+All failed signed work is retained and paid; count acquisition costs at most
+`500*(W+1)`, with a count word of at most W+2 cells.
+
+`spanTemplateBits` copies both ACTUAL endpoint magnitude lists and appends one
+false cell. It has exactly `lower.length+upper.length+1` output cells and
+clock `4*(lower.length+upper.length)+4`. No native width/coordinate serializer
+or unpriced list replication is used. The arithmetic span proof covers ALL
+steps from the original lower endpoint through the final successor: every
+one fits that actual template, even after the last emitted point. For a
+negative count, the source is empty and the initial endpoint still fits.
+
+`rangeWordsBits` is controlled by full nonzero scans of the ACTUAL remaining
+counter word. Each visit performs the full counter decrement, actual signed
+coordinate-plus-one operation and existing paid `fitBits` magnitude copy,
+then emits the current word and one diagnostic frame. The final padded zero
+counter is also scanned and paid. The unused successor after the final visit
+is constructed and paid, so no last-step work is hidden. `bitValue remaining`
+appears only as the erased termination proof measure, never as an executable
+branch, integer serializer, loop-count argument or native range constructor.
+The generated termination proof is included in the axiom audit.
+
+`fitSignedBits_value` proves every copy lossless under the derived value bound;
+its clock includes all actual bit copying and zero padding. `rangeWordsBits_values`
+proves increasing consecutive output order. `rangeWordsBits_cost_width` proves
+exactly one word/frame per computed counter visit, bounded physical padding
+and full clock at most `(counter_value+1)*100*(W+1)`, including every scan,
+decrement, increment, literal cell, copy and branch. Insufficient supplied
+templates are not assumed value-preserving by the algorithm or the theorem.
+
+`intervalWordsBits` constructs its OWN count and endpoint template before
+traversal. `intervalWordsBits_values` proves the COMPLETE original signed
+entries list on EVERY input representation, without a supplied encoding.
+For endpoint physical widths at most W, full acquisition/traversal clock is
+at most `(original_entries.length+1)*1000*(W+1)`. All actual emitted words have
+length at most `3*(W+1)`, and actual word/frame counts equal the original
+entries count. Paid copying prevents physical padding growth across visits.
+
+`emitPointsBits` executes the original affine point arithmetic on each ACTUAL
+coordinate word and retains every original occurrence and diagnostic report.
+`emitLinesBits` traverses each ACTUAL band word, initializes its original line,
+constructs the line counter/template, visits its coordinates, emits the point
+words and concatenates those head lists into the complete original source.
+All initialized empty lines remain in the report. Head-list concatenation
+walks are paid explicitly; no repeated copying of the accumulated tail is
+substituted for the original order. Point/coordinate values, complete nested
+order and exact line/visit counts are proved. No rectangle product, candidate
+filter, encoded native source or source callback is used.
+
+For original inputs and actual band-coordinate words of physical width at
+most W, one initialized line's complete clipping/traversal/emission/append
+work is at most `(line_points.length+1)*4000000*(W+1)^2`. Its actual point
+words have length at most `320*(W+1)`. The whole line stream costs at most
+`(band_words.length+point_words.length+1)*4000000*(W+1)^2`. These bounds
+include actual coordinate production and all per-point arithmetic.
+
+`coefficientSourceBits` acquires the original Boolean geometry, traverses its
+computed signed band and computes the COMPLETE original nested coefficient
+stream. Coordinate order is exact on EVERY input word; reader magnitude
+values equal the full original points list for positive N and L. Its actual
+line and point counts equal the original native initialized-line and visit
+counters, so frozen native cardinality bounds now price a constructed source.
+For all original physical input widths at most W and positive N, full source
+clock is at most
+
+`2000000*(W+1)^3 + (original.lines+original.visits+1)*20000000000*(W+1)^2`.
+
+Every actually produced reader magnitude fits the public physical width
+`K=22528*(W+1)`. No encoded-point width, private factor, local index, decoded
+relation vector, source serializer or callback is supplied to construction.
+The large constants are conservative proof budgets; no optimality is claimed.
+
+`constructedFactorBits` installs the computed full source in the frozen
+Boolean first-success root/read/GCD scan. `public_constructed_factor` proves
+proper factor success and at most ONE SCAN GCD under the original public
+mixed-index hypotheses, using exactly original width/seed-length formulas.
+For `V=524290*(3+6144*sixthWidth N)`, its complete source-plus-scan clock is
+at most
+
+`2000000*(W+1)^3 + (524290+V+1)*20000000000*(W+1)^2`
+`+ V*(20000*(K+1)^2+9) + 625000*(K+1)^3+5`.
+
+This is quadratic physical work per original candidate plus once-only cubic
+source/GCD work, including actual source acquisition. The theorem removes
+the previous encoded source and per-point width premises. Every constructed
+reader success is checked proper on arbitrary word inputs, independently of
+coverage hypotheses. The original mixed-index assumptions remain arithmetic
+specification, not runtime private-root inputs.
+
+`markedConstructedFactorBits` first executes the existing actual decoder.
+Only ACTUAL inverse acceptance calls the complete source and reader on its
+computed canonical word. A rejected inverse retains the computed GCD/unit
+and all decoder diagnostics and constructs no coefficient source. Every
+returned factor is checked proper on arbitrary word inputs.
+`public_marked_constructed_factor` consumes the original acquired target/
+derivative words and original unit/simple mixed-root hypotheses, deriving
+decoder acceptance, canonical residue and physical width from the decoder.
+No decoded residue, source callback, native source encoding or per-point
+width is supplied. The complete decoder-plus-source-plus-reader bound replaces
+2000000 by 2005000 in the cubic term and the final 5 by 9 in the preceding
+formula. The scan executes at most one GCD; decoder inverse/GCD work is
+additional and already charged, not folded into that one-call statement.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 116 direct
+plus 251 generated declarations: all 367 declarations and 167 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 1127-line
+leaf contains 30 source proofs, ten computable definitions and eleven
+structures. Static review checks every executable data path for native
+value/arithmetic/range oracles and admits only the named erased termination
+proof measures. The saved `docs/semiprime-bit-index-traversal-audit.json`
+preserves all 386 parent source pins and all 47 selected Mathlib pins, adding
+the parent audit, leaf and checker for 389 source pins. Exactly one ordinary
+root import, one semiprime family entry and this journal insertion are
+byte-checked against current pre-insertion snapshots. All concurrent work is
+preserved. No external Lean source/proof axiom, commit, push, remote check,
+publication or full graph/dashboard gate is included.
+
+This closes ACTUAL source construction and complete marked extraction in
+the existing charged primitive model, conditional on acquired original jet
+words and original mixed-root/unit hypotheses. Fast varying-target detector
+and singleton marked acquisition remain open. Public row-modulus/seed-length
+word production, every prefix/routing/saturation/nonunit/prime-square branch
+and complete N-only controller composition remain separate. Native Nat clock/
+counter arithmetic is proof instrumentation. The retained reports/list
+references/counters and all machine instructions still need complete physical
+allocation and peak-memory prices. Thus this component bound does not supply
+the requested full deterministic bit-time AND working-memory one-sixth
+certificate. The next substantive target is fast ORIGINAL jet acquisition,
+with complete public controller and instruction/memory composition afterward.
+
+## 2026-10-04: Actual Boolean short geometric coefficient construction
+
+**Guaranteed deterministic one-sixth factorization: OPEN. Previous goal turn:
+progress. Current goal turn: progress.** The new leaf is
+`RiemannGaussian/SemiprimeBitGeometricCoefficients.lean`, checked by
+`scripts/CheckSemiprimeBitGeometricCoefficients.lean`. This closes the actual
+value-coefficient source of a short original geometric block, with linear
+primitive bit work in its degree. No additional semiprime examples,
+benchmarks, finite success certificates or collision-coverage assumptions
+are used.
+
+The frozen universal arithmetic forcing remains the reason original
+collisions must occur: at the true residue, the bounded index satisfies
+`N + delta_(p mod m) - m^2*r = (p-1)*(q-a)`, with
+`r <= 2*m^2+1 < seedLength(m)`. Fermat forces the original seed collision
+modulo p for every public unit after the original prefix assumptions. The
+already-proved half-transfer obstruction concerns inverses of products
+that vanish there. The construction below instead inverts short base-power
+gaps, which the retained long-route periods certify as units. It never
+inverts or removes a target collision factor.
+
+For `c_k = coeff_k(product_(u<s)(X-alpha^u))`, the original cleared identity is
+
+\[
+\alpha^s(\alpha^{k+1}-1)c_{k+1}
+  =(\alpha^{k+1}-\alpha^{s+1})c_k.
+\]
+
+`geometricInitLoop` scans and decrements the ACTUAL Boolean count, computes
+successive powers by modular Boolean multiplication, and constructs the
+constant by multiplying each computed negative power. Its integer value
+occurs only in erased termination proofs. Both the scalar constant and
+ordered power source are constructed; no expanded polynomial, power source,
+coefficient list, unit inverse or source callback is supplied. Full counter
+scans, decrements, modular negations/products and retained frames are paid.
+The complete initial loop has exact count-many powers/frames and clock at
+most `(count+1)*500*(W+1)^2`.
+
+`coefficientDifferenceBits` performs the original complete wrapped Boolean
+subtraction and a paid reduction to the actual modulus width.
+`coefficientFrameBits` constructs its gap, numerator and denominator;
+computes its own extended-Euclid report; tests the actual GCD-one word; and
+computes its prospective next coefficient. Every primitive is paid even on
+a failed unit gate. `coefficientFrameBits_gate_iff` proves acceptance exactly
+when the actual denominator is a unit. Each visited frame costs at most
+`6000*(W+1)^3`. `coefficientRunBits` retains every visited report, stops at
+its first failed inverse, and emits only the accepted original coefficients.
+It performs at most one inverse per supplied power, with every prospective
+coefficient normalized to the modulus's actual physical width.
+
+`geometricCoefficientBits` constructs its own canonical one, initial
+constant/powers, terminal power and full checked recurrence. Under the
+mathematical unit/gap conditions, `geometricCoefficientBits_exact` gives
+ALL original coefficients `c_0,...,c_s`, in order. These conditions are proof
+hypotheses, not advice passed to the executable. Exact coefficient correctness applies to every positive encoded modulus
+and every input representation, including padding, whenever the stated
+mathematical unit/gap conditions hold. The clock and unit-gate proofs also
+cover invalid base words and rejected denominators.
+`geometricCoefficientBits_cost_width` charges the entire actual construction:
+
+\[
+\text{clock}\le7000(s+1)(W+1)^3,
+\]
+
+where the original modulus, base and count words physically fit W and W>=1.
+Every accepted coefficient word has EXACTLY the modulus's physical width,
+there are exactly s+1 coefficients, and initialization has exactly s visits.
+No repeated growing polynomial multiplication is performed.
+
+`long_original_geometric_coefficients` instantiates the value source with
+the ACTUAL original seed base on every retained long route, for all
+`s <= seedHalfLength(m)`. Frozen original period bounds supply every inverse
+condition. `two_modulus_block_le_half` gives `2m <= seedHalfLength(m)` at
+m>=4. At the actual matched public row modulus m<=2B,
+`public_short_block_coefficient_cost` constructs a degree-2m block's 2m+1
+coefficients with clock at most `(4B+1)*7000*(W+1)^3`, where B=sixthWidth(N).
+The actual public N/base/count words are supplied to this component; their
+production and the surrounding controller remain separate charges.
+
+This is a near-linear SHORT BLOCK value-coefficient construction, not a
+near-linear construction of the full original degree-L interval polynomial.
+Choosing s=L still takes quadratic-in-m source work. Original logarithmic
+BASE derivative coefficients remain to be constructed and priced. Fast
+multipoint evaluation must also be implemented and priced; merely performing
+Horner evaluation independently at all block points would retain an extra
+factor. The varying-target original detector batch remains open, including
+its proved superlinear explicit block-source floor. No fast singleton
+marked acquisition or global one-sixth factorizer follows from this source
+alone. Complete public prefix/routing/nonunit/saturation/prime-square
+composition and full physical instruction/allocation/peak-memory prices
+remain open. Native Nat clock additions are proof instrumentation.
+
+Warning-as-error target build, strict leaf, strict ordinary root and all
+14 namespace linters pass with zero errors. The checker audits 74 direct
+plus 121 generated declarations: all 195 declarations and 80 theorem/proof
+helpers use only `propext`, `Classical.choice` and `Quot.sound`. The 862-line
+leaf contains 20 source proofs, five computable definitions and six
+structures. Static review checks every actual executable path and the
+compiled initializer: no native value/arithmetic/range oracle is called;
+only the named erased termination arguments contain mathematical count
+values. The saved `docs/semiprime-bit-geometric-coefficients-audit.json`
+preserves all 389 parent source pins and all 47 selected Mathlib pins,
+adding the parent audit, new leaf and checker for 392 source pins. Exactly
+one ordinary root import, one existing semiprime family entry and this
+journal insertion are byte-checked against current pre-insertion snapshots.
+All concurrent work is preserved. No external Lean source/proof axiom,
+commit, push, remote check, publication or full graph/dashboard gate is used.
+
+The next acquisition target is ACTUAL marked base-coefficient construction
+and a fully priced fast multipoint backend for the short blocks. The
+original varying-seed detector batch needs a separate near-linear method;
+relabeling singleton q-recurrence results as a batch would not close it.
+
+## 2026-10-04: Actual Boolean original three-channel short-block coefficients
+
+The previous goal turn was **progress**. This turn is **progress**: it
+constructs and prices the original short block's marked BASE coefficients
+and target-derivative coefficients, completing the three coefficient
+channels needed by a fast evaluator. It adds no successful factorization
+examples, benchmarks, finite coverage certificates or external proof
+axioms. The guaranteed one-sixth full factorizer remains **OPEN**.
+
+The frozen arithmetic reason for the original collision is unchanged:
+`SemiprimeSeedFiniteTransfer.forced_seed_arithmetic` forces the original
+p-field seed by its exact `(p-1)*(q-a)` exponent identity. The forced
+singular half-transfer obstruction is also preserved. This turn closes a
+construction cost obligation after that universal forcing proof; it does
+not claim that coefficient preparation alone completes acquisition.
+
+`RiemannGaussian/SemiprimeBitGeometricMarks.lean` retains the ORIGINAL
+short-block polynomials
+
+\[
+P_s(X)=\prod_{j=0}^{s-1}(X-\alpha^j),\qquad
+D_s(X)=\partial_XP_s(X),\qquad
+H_s(X)=\alpha\partial_\alpha P_s(X),
+\]
+
+with X held fixed in the BASE derivative. The proof-side first-order base
+is `beta=(alpha,alpha)`, with `beta^j=(alpha^j,j*alpha^j)`.
+`marked_coeff_value` and `marked_coeff_base` prove that the two projections
+of every original beta-polynomial coefficient are exactly P and H. No
+rephased or seed-dependent derivative replaces the original BASE channel.
+The cleared geometric coefficient recurrence holds in this first-order
+ring, so both original channels can be updated together.
+
+Actual `MarkedWord` states are two Boolean residue words. The executable
+product rule uses three actual modular products and a paid normalized sum.
+`markedInverseBits` computes `(a^-1,-a^-2*e)` using exactly ONE scalar
+extended-Euclid call, its actual Boolean GCD-one gate, two modular products
+and paid negation. `markedInverseBits_gate_iff` proves the first-order unit
+condition is exactly the original SCALAR unit condition, including over
+the composite ring. No marked inverse advice or additional unit hypothesis
+is introduced. The denominator remains the original short base-power gap,
+not a target collision factor. Nonunit rejection retains its actual
+inverse/GCD report, and all prospective work is charged.
+
+`markedInitLoop` constructs the marked constant product, ordered original
+powers and their absolute exponent marks. Its actual Boolean nonzero scan
+and computed decrement control the loop; only erased termination proofs
+use `bitValue remaining`. `markedGeometricCoefficientBits` constructs its
+own normalized one and zero, both initial states, terminal power and
+checked recurrence. The original value/base source has complete clock
+`20000*(s+1)*(W+1)^3`. `targetCoefficientRunBits` weights each actual
+c_(k+1) by its computed Boolean modular counter to get D's coefficient k;
+all counter updates, including the unused final successor, are paid.
+
+`threeChannelCoefficientBits_exact` gives all original (P,H) coefficient
+pairs for 0<=k<=s and all D coefficients for 0<=k<s, in order.
+`threeChannelCoefficientBits_cost_width` gives the entire actual source
+
+\[
+\text{clock}\le22000(s+1)(W+1)^3.
+\]
+
+All original modulus/base/count words physically fit W, W>=1. The clock
+covers every positive encoded modulus, padded inputs and rejected gates.
+Correctness requires only the original scalar alpha and short power-gap
+units. Every accepted scalar, marked and derivative output has EXACTLY the
+supplied modulus physical width. There are exactly s+1 pairs and s target
+words, including the zero-count case.
+
+`long_original_three_channel_coefficients` uses the ACTUAL original seed
+base on the retained long route, with the frozen gap theorem supplying
+all inverse conditions. At s=2m and the actual public row modulus m<=2B,
+`public_short_block_three_channel_cost` gives `(4B+1)*22000*(W+1)^3`,
+B=sixthWidth(N), producing 2m+1 original value/base pairs and 2m target
+words. This component receives actual modulus/base/count words; their
+public production remains a separate charge.
+
+Warning-as-error target build, strict leaf and strict ordinary root pass.
+All 14 namespace linters pass with zero errors. The checker audits all
+397 declarations (160 direct plus 237 generated), including 140 theorem
+and proof helpers, using only `propext`, `Classical.choice` and `Quot.sound`.
+The 1499-line leaf contains 40 source proofs, 11 actual computable
+definitions, 14 structures, two proof-side noncomputable interpretations
+and two Prop specification abbreviations. Static source and compiled C
+checks find no native value/range/mod/div/pow oracle in the data paths;
+recursion receives computed marked pairs, decrement and modular index
+words. Native Nat clock additions remain proof instrumentation.
+
+`docs/semiprime-bit-geometric-marks-audit.json` preserves all 392 parent
+source pins and all 47 selected Mathlib pins. It adds the parent audit,
+new leaf and checker for 395 source pins, and the dual-number and trivial
+square-zero-extension sources for 49 selected Mathlib pins. Exactly one
+ordinary root import, one existing semiprime family entry and this dated
+journal insertion are checked against current pre-insertion bytes. All
+ancestor sources/audits and concurrent work are preserved. No commit,
+push, publication, remote check or full graph/dashboard gate is used.
+
+Fast multipoint evaluation remains to be implemented and priced;
+independent Horner evaluation at all points retains an extra factor.
+Choosing s=L still constructs quadratically many coefficients in m.
+The original VARYING-SEED detector batch needs a separate near-linear
+method; a fast singleton or multiple indices of one fixed recurrence does
+not solve varying targets. Complete public input production,
+prefix/routing/nonunit/saturation/prime-square composition, physical
+instruction/counter/reference allocation and peak working memory remain
+open. Three-channel short-block preparation does not close the full
+one-sixth bit-complexity proof.
+
+## 2026-10-04: Original geometric convolution identity and actual Boolean input preparation
+
+The previous goal turn was **progress**. This turn is **progress**: it
+proves exact original geometric evaluations as three convolutions with
+one shared kernel, restores the original absolute-index block jets, and
+constructs/prices every ACTUAL convolution input from Boolean words.
+No factorization runs, benchmarks, successful examples or finite Lean
+coverage certificates are added. The full guaranteed one-sixth
+bit-time/working-memory factorizer remains **OPEN**.
+
+All frozen original arithmetic forcing, singular half-transfer and
+varying-seed explicit-source obstructions are preserved. This advance
+addresses the one geometric target progression used for a selected seed's
+lazy marked acquisition. It does not replace the separate original
+varying-seed detector batch with a fixed-target theorem.
+
+`RiemannGaussian/SemiprimeBitGeometricEvaluation.lean` proves the classical
+triangular-phase convolution identity directly over EVERY commutative
+ring. There is no novelty claim. With T(0)=0, T(n+1)=T(n)+n, its key exact
+cancellation is
+
+\[
+T(i+j)=T(i)+T(j)+ij.
+\]
+
+For a unit q and degree bound s, reverse the original weighted coefficients
+into A_(s-i)=c_i*x^i*q^(-T(i)), and form one kernel K_k=q^T(k) through
+k=s+J-1. `geometric_convolution_eval` gives
+
+\[
+q^{-T(j)}(A*K)_{s+j}=P(xq^j),\qquad 0\le j<J.
+\]
+
+Neither two, a target difference nor an evaluated detector factor is
+inverted. The starting target, coefficients and values may be zero or
+nonunits. The kernel and all original coefficient slots are retained.
+
+`original_three_channel_convolution` applies the SAME kernel to the
+original P_s, its target derivative, and its original logarithmic BASE
+derivative at fixed target. Degree bounds are proved over the composite
+ring, including for the original marked base polynomial. With
+q=(alpha^s)^(-1), `blockConvolutionJet_exact` restores precisely the
+original block product and BOTH derivatives at absolute offset j*s. The
+phase restoration retains the base derivative's offset and normalized
+point drift, including when the block product is zero. This is a universal
+algebra theorem, not a finite control or certificate.
+
+Actual `geometricKernelLoopBits` constructs triangular phases by two
+Boolean modular products per remaining-count visit. Full count scans,
+computed decrements, all final state updates and the terminal scan are
+paid. Its clock is `400*(n+1)*(W+1)^2`, with exactly n phase words and n
+visited frames. Only erased termination proofs use `bitValue remaining`.
+No quadratic exponent or kernel power is advice.
+
+Actual `geometricWeightRunBits` computes starting-target powers, inverse
+triangular phases, coefficient weights and all successor states. Every
+value/base coefficient pair is multiplied by a FROZEN scalar phase with
+zero mark. Thus the original BASE channel remains the partial derivative
+at fixed evaluation target; neither the target nor the ratio is silently
+differentiated. Weighting costs `2000*(slots+1)*(W+1)^2`, including unused
+final phase updates. `freezeTargetBits` constructs zero-mark derivative
+pairs and pads the derivative to the same s+1 slots with the source's
+already normalized zero. Its clock is `4*(targetSlots+1)`.
+`reverseCoefficientLoopBits` reverses actual lists with clock `5*slots+2`,
+paying list cells and references rather than supplying a reversed oracle.
+
+`geometricEvaluationPreparationBits` receives ONLY five Boolean words:
+modulus, original base, degree, starting target and evaluation count. It
+executes the complete original three-channel coefficient constructor,
+then inverts its own COMPUTED alpha^s word with one additional scalar
+extended-Euclid call and an actual GCD-one gate. It constructs the degree
+plus count word, every weighted coefficient, shared kernel, returned-slot
+inverse phase and reversed input list. A failed source or ratio gate
+retains its diagnostics and all work actually performed is paid.
+
+`geometricEvaluationPreparationBits_exact` proves all those ORIGINAL
+word values and every reversal. The full component resource theorem gives
+
+\[
+\text{clock}\le40000(s+J+1)(W+2)^3,
+\]
+
+when all five original physical input words fit W, W>=1. The actual kernel
+count may have W+1 bits, and its work is charged at that width. The bound
+covers every positive encoded modulus, every representation including
+padding and rejected gates. Successful inputs have exactly s+1 weighted
+value/base pairs, s+1 weighted derivative pairs, s+J shared kernel words
+and J output phase words. Every scalar, marked, kernel and phase output
+has EXACTLY the supplied modulus physical width. Unit/polynomial/index
+arguments appear only in correctness proofs, never executable inputs.
+
+At the original long-route base and ACTUAL public row modulus,
+`original_complete_block_count_le` gives
+J=floor(seedLength(m)/(2m))<=2m. `public_original_geometric_preparation`
+uses s=2m and the frozen short power-gap theorem to construct accepted
+inputs with clock `(8B+1)*40000*(W+2)^3`, B=sixthWidth(N). This prices ONE
+seed's complete-block convolution preparation. The final tail has fewer
+than 2m original factors and remains a separate implementation charge.
+Actual public input-word production remains outside this component.
+
+Warning-as-error target build, strict leaf and strict ordinary root pass.
+All 14 namespace linters pass with zero errors. The checker audits all
+285 declarations (97 direct plus 188 generated), including 120 theorem
+and proof helpers, using only `propext`, `Classical.choice` and `Quot.sound`.
+The 1158-line leaf contains 27 source proofs, six actual computable
+definitions, eight structures, five proof-side noncomputable definitions
+and no specification abbreviations. Source and compiled C checks find no
+native value/range/polynomial/triangular/mod/div/pow oracle in the actual
+data paths. Generated triangular match splitters exist in compiled C but
+are never called by an actual data path; there is no compiled triangular
+exponent constructor. Recursion receives computed phase/decrement words
+and actual coefficient tails. Native Nat clocks remain instrumentation.
+
+`docs/semiprime-bit-geometric-evaluation-audit.json` preserves all 395
+parent source pins and all 49 selected Mathlib pins. It adds the parent
+audit, new leaf and checker for 398 source pins. Exactly one ordinary
+semiprime root import, one existing family entry and this dated journal
+insertion are checked against current pre-insertion bytes. All ancestor
+sources/audits and concurrent work remain intact. No external Lean source,
+proof axiom, commit, push, publication, remote check or full graph/dashboard
+gate is used.
+
+The new executable prepares convolution INPUTS; it does not execute or
+price a fast convolution/middle product. `blockConvolutionJet` remains a
+proof-side restoration specification. Existing shift-and-add multiplication
+is quadratic in packed word size and cannot simply be relabeled near-linear.
+A complete fast bit-convolution engine is the next backend obligation,
+followed by actual original phase-restoration, block folding and tail work.
+The varying-seed detector still needs a SEPARATE near-linear acquisition
+method. Full public word production, controller/prefix/routing,
+saturation/nonunit/prime-square composition, physical instruction/counter/
+reference allocation and peak working memory remain open. No full one-sixth
+factorization certificate follows from this component.
+
+## 2026-10-04: Exact Fermat-ring cancellation and actual linear Boolean butterflies
+
+The previous goal turn was **progress**. This turn is **progress**: it
+proves exact dyadic Fourier cancellation over the composite Fermat ring,
+implements the needed canonical Boolean arithmetic and both normalized
+butterflies, and proves their actual round trip and linear primitive
+clocks. No factorization runs, benchmarks, successful examples or finite
+Lean coverage certificates are added. The full guaranteed one-sixth
+bit-time/working-memory factorizer remains **OPEN**.
+
+The frozen original arithmetic forcing, singular half-transfer and
+varying-seed explicit-source obstructions remain unchanged. In particular,
+`SemiprimeSeedFiniteTransfer.forced_seed_arithmetic` retains the exact
+identity `N+seedOffset(N,m,p%m)-m^2*r=(p-1)*(q-a)` and its original interval
+bound. This advance addresses the bit engine for the previous exact
+singleton convolution reduction, not a new collision coverage claim.
+
+`RiemannGaussian/SemiprimeBitFermatArithmetic.lean` implements the cheap
+arithmetic used by a Fermat-ring transform. The algorithmic motivation is
+the exact split/evaluate/multiply/interpolate scheme described in the
+[official GMP FFT multiplication documentation](https://gmplib.org/manual/FFT-Multiplication).
+All new claims are proved locally in Lean; no external theorem, Lean
+source or proof axiom is imported, and no novelty claim is made.
+
+For a physical template of K cells, `fermatModulusBits` actually constructs
+the word for M=2^K+1. For K>=1 the word has exactly K+1 cells and costs
+3K+2 primitives. No decoded length or power controls that construction.
+Every new executable receives only Boolean words/physical templates;
+natural values, lengths, exponents, units and ring operations occur only
+in proofs, apart from the existing Nat clock instrumentation.
+
+Actual `residueAddBits` computes a full carry sum and a subtraction of M,
+then selects with the computed borrow and pays for fixed-width copying.
+For canonical x,y<M one correction suffices, and its exact output is
+(x+y) mod M. The complete clock is at most 27W+25 when all three physical
+words fit W. Actual `residueSubBits` computes x-y, y-x and M-(y-x), selects
+with the original borrow, and pays every prospective calculation. Its
+canonical output satisfies `out+y=x+M*borrow`; the clock is at most
+40W+15. Both operations hold for every positive composite modulus and
+retain zero/equal/nonunit inputs. Neither calls the generic divider.
+
+The exact reduction identity is
+
+\[
+2^K=-1\pmod{2^K+1},\qquad
+x=\operatorname{low}+2^K\operatorname{high}
+\equiv\operatorname{low}-\operatorname{high}\pmod M.
+\]
+
+`splitTemplateBits` physically copies/pads K low cells and keeps the actual
+remaining high input suffix. Its exact radix equation and physical widths
+are proved. For a raw value at most (2^K)^2, the high value is proved at
+most 2^K before paid fitting. Thus `fermatReduceBits` discards no significant
+high bit and returns exactly x mod M with K+1 cells and clock <=56K+80.
+The bound is a correctness premise; it is never passed as executable
+advice. Producing a recursively multiplied raw word is still unimplemented.
+
+`shiftTemplateBits` prepends an actual false cell per offset-template
+cell. For t<=K, `fermatShiftBits` then executes bounded reduction, giving
+exact multiplication by 2^t with clock <=59K+85. This includes t=K, which
+is the negating boundary. For an inverse twiddle, `suffixTemplateBits`
+actually traverses the original template to obtain K-t cells. The
+computed complementary shift is canonically negated, using
+
+\[
+2^t\bigl(-2^{K-t}\bigr)=1\pmod M.
+\]
+
+`fermatInverseShiftBits` returns the exact inverse-twiddled canonical
+word, with K+1 cells and clock <=108K+155. It calls no inverse backend.
+
+`fermatHalfBits` reads the original low Boolean digit. An even residue
+uses its literal tail; an odd residue uses the literal tail of its ACTUAL
+carry sum with M. The odd carry sum is proved even before its low digit
+is dropped. The canonical output satisfies `2*out=x+M*inputParity`,
+has K+1 cells and costs <=18K+36 for an input of at most K+1 cells.
+`fermat_actual_inverse_two` uses the actual half of literal one to prove
+two is a unit. No prime-modulus premise or generic inverse call is used.
+
+`dyadic_character_cancel` proves the full character cancellation for any
+commutative ring with a negative dyadic half-period. Odd frequencies
+cancel between the two halves; even frequencies reduce to the squared
+root at the next smaller dyadic size. In particular, for K=2^d and
+n=2^(d+1), `fermat_fourier_cancellation` gives
+
+\[
+\sum_{j=0}^{n-1}2^{jk}=0\quad\text{in }\mathbb Z/(2^K+1),
+\qquad 0<k<n.
+\]
+
+`fermat_fourier_period` gives 2^n=1 in that ring. The transform length is
+a unit, proved from the computed half of one. These are universal
+cancellation/unit proofs for a composite ring, not finite controls or a
+supplied field/root/inverse oracle. The cancellation sum is proof-side;
+it is not an implemented FFT schedule.
+
+Actual `fermatButterflyBits` computes the twiddle followed by the canonical
+sum and difference. Actual `fermatInverseButterflyBits` computes both
+halves and untwists the computed contrast. Both retain every intermediate
+and every prospective correction. The forward and inverse clocks are
+<=126K+200 and <=214K+348 respectively; both outputs have exactly K+1
+cells. `fermatButterfly_roundtrip` proves that applying the ACTUAL inverse
+to the ACTUAL forward outputs recovers both ORIGINAL canonical values,
+also when those values are zero or nonunits. The composed primitive clock,
+including wrapper overhead, is <=340K+552. This is a full proof for these
+arithmetic primitives, not the complete convolution engine.
+
+Warning-as-error target build, strict leaf and strict ordinary root pass.
+All 14 namespace linters pass with zero errors. The checker audits all
+377 declarations (136 direct plus 241 generated), including 165 theorem
+and proof helpers, using only `propext`, `Classical.choice` and `Quot.sound`.
+The 1111-line leaf has 41 source proofs, 14 actual computable definitions,
+11 structures and no noncomputable definition or specification abbreviation.
+Source and compiled C checks find no value/length/range/polynomial/native
+mod/div/pow/mul/sub/inverse oracle in any of the fourteen actual data paths.
+Compiled call counts retain the computed carry, borrow, split, shift and
+halving operands. Native Nat clocks remain instrumentation.
+
+`docs/semiprime-bit-fermat-arithmetic-audit.json` preserves all 398 parent
+source pins and all 49 selected Mathlib pins. It adds the parent audit,
+new leaf and checker for 401 source pins, and pins two newly relevant
+Mathlib parity/unit sources for 51 selected Mathlib pins. Exactly one
+ordinary semiprime root import, one existing family entry and this dated
+journal insertion are checked against current pre-insertion bytes. All
+ancestor sources/audits and concurrent work remain intact. No commit,
+push, publication, remote check or full graph/dashboard gate is run.
+
+The scoped target build used 3523 jobs, took about eleven wall seconds and
+peaked at about 3.67 GiB resident memory. About 699 GiB disk and 55 GiB RAM
+were available at the resource check. These are LOCAL proof-build resource
+observations, not factorizer scaling experiments or a machine-time bound.
+
+An actual radix-two FFT schedule, bit-valued parameter/padding selection,
+recursive pointwise multiplication, exact coefficient/carry recovery and
+the near-linear bit recurrence remain OPEN. The supplied templates' dyadic
+properties/canonical operand bounds must come from that eventual producer.
+Original singleton block restoration/fold/tail, varying-seed near-linear
+detector acquisition, public input production, controller/prefix/routing,
+saturation/nonunit/prime-square composition, physical counter/reference/
+instruction pricing and complete peak working memory remain OPEN. No full
+one-sixth factorization certificate follows from these linear primitives.
+
+
+## 2026-10-04: Actual radix-two Fourier transform with exact values and full primitive recurrence
+
+The previous goal turn was **progress**. This turn is **progress**: it
+implements the forward radix-two transform on actual Boolean words,
+proves every ORIGINAL Fourier evaluation in ordinary output order, and
+proves the complete recursive primitive clock and output widths. No
+factorization runs, benchmarks, successful examples or finite Lean
+coverage certificates are added. The full guaranteed one-sixth
+bit-time/working-memory factorizer remains **OPEN**.
+
+All frozen original collision forcing, singular half-transfer and
+varying-seed explicit-source obstructions remain unchanged. In particular,
+`SemiprimeSeedFiniteTransfer.forced_seed_arithmetic` still proves
+`N+seedOffset(N,m,p%m)-m^2*r=(p-1)*(q-a)` in the original interval, forcing
+the original p-field collision for every unit under the original
+post-prefix hypotheses. This advance addresses transform execution for
+the eventual bit-convolution engine, not another finite coverage claim.
+
+`RiemannGaussian/SemiprimeBitFermatTransform.lean` implements the classical
+even/odd radix-two transform using the previous actual Fermat-ring
+butterflies. No novelty claim or external proof axiom is used. The
+executable receives only a physical modulus template and actual
+coefficient-word references. Its public entry `fermatFFTBits` supplies the
+literal one-cell step for root two. There is no executable depth, exponent,
+Fourier matrix, supplied parity list or supplied transformed child.
+
+`splitParityWordsBits` traverses actual coefficient constructors two at
+a time, retaining the original even/odd words in their original order.
+Its exact counts are ceil(n/2) and floor(n/2); the complete primitive
+reference/cell/test clock is <=6(n+1). Both lists are proved to contain
+only original words. `appendWordRefsBits` restores ordinary upper-then-
+lower Fourier order by a charged reference append, costing 6*leftSlots+1.
+References are priced in the existing primitive model; their complete
+physical address-bit/instruction costs remain a separate obligation.
+
+Actual `butterflyRowBits` receives both computed transformed children.
+Starting at the empty offset template, each next offset is constructed by
+prepending the actual step-template extent to the preceding offset. It
+executes the actual Boolean butterfly, emits both canonical words and
+retains a computed pair-shape gate. Mismatched lists return a false gate.
+Every visited twiddle is proved at most K cells from the step/half-size
+product K. The unused final offset update is actually constructed and
+paid. The row clock is <=(pairs+1)(129K+216), with exact pair counts and
+K+1 cells per canonical output.
+
+Actual `fermatFFTLoopBits` branches only on the original coefficient
+constructors. An empty input has a false gate. A singleton constructs M
+and pays for fitting its actual word to M's K+1-cell width. A larger input
+computes both parity lists and the doubled physical step, recursively
+transforms BOTH computed lists, passes BOTH actual results to the
+butterfly row, and appends its actual upper/lower outputs. The clock
+sums both children, all splitter/copy/step/row/append work and all executed
+shape tests, including false gates on malformed lists. The proved resource
+bound concerns canonical dyadic runs and pays their unused final offset
+updates. Child reports are not stored as a transform tree. `words.length` occurs
+only in the erased termination measure and its proof; constructor tags
+alone select the executable recursion.
+
+The proof-only original evaluation E(c,x) retains every coefficient in
+order. `splitParityWordsBits_evaluation` proves the universal identity
+
+\[
+E(c,x)=E(c_{\rm even},x^2)+xE(c_{\rm odd},x^2).
+\]
+
+For a dyadic child size n/2 and physical step t, the proved equality
+t*(n/2)=K gives the literal half-period
+`2^(t*(n/2))=-1 mod (2^K+1)`. Squaring the first-half point doubles the
+physical step; adding the half-size negates that point. Thus the actual
+upper and lower words are respectively the ORIGINAL polynomial evaluated
+at the first and second halves of the Fourier grid. The proof keeps both
+signs and all original zero/nonunit coefficients and evaluated values.
+The coefficient lookup and Horner-looking E specification are proof-side
+noncomputable definitions; neither executes in the transform.
+
+`fermatFFTLoopBits_words`, `fermatFFTLoopBits_values` and
+`fermatFFTLoopBits_cost` prove the recursive contracts for ANY positive
+physical K and compatible step scale. The public `fermatFFTBits_exact`
+specializes to K=2^d and n=2^(d+1)=2K. Every canonical input word list of
+n slots passes the ACTUAL shape gate. There are exactly n output words,
+each canonical and exactly K+1 cells. For every 0<=j<n,
+
+\[
+\operatorname{out}_j=E(c,2^j)\quad\text{in }\mathbb Z/(2^K+1).
+\]
+
+The complete proved primitive bound is
+
+\[
+\text{clock}\le1000\,n(d+2)(K+2)+5,
+\]
+
+including actual singleton normalization, both recursive children and
+all reference/bit-cell/twiddle/butterfly assembly. Depth d appears only in
+the theorem, never as an executable input or unpriced iteration oracle.
+Canonical input values are correctness premises proved by the eventual
+producer; actual paid fitting is proved not to discard a significant bit.
+Arbitrarily long high-zero input padding is not scanned unnecessarily,
+but its full input memory is not included in this local clock.
+
+This is O(nK log n) primitive work and n(K+1) output bits. Since this
+component has n=2K, it is O(K^2 log K), not a near-linear transform of n
+original small-width coefficients. The needed near-linear PACKED INTEGER
+convolution still requires correct chunk/padding parameters, recursively
+computed pointwise products, normalized inverse interpolation, exact
+carry/coefficient recovery and the complete bit recurrence. Existing
+schoolbook multiplication must not be substituted or relabeled fast.
+
+Warning-as-error target build, strict leaf and strict ordinary root pass.
+All 14 namespace linters pass with zero errors. The checker audits all
+217 declarations (50 direct plus 167 generated), including 127 theorem
+and proof helpers, using only `propext`, `Classical.choice` and `Quot.sound`.
+The 761-line leaf contains 19 source proofs, five actual computable
+definitions, four structures, two proof-side noncomputable definitions
+and no specification abbreviation. Source and compiled C checks find no
+natural value/length/range/index/exponent/Horner/mod/div/mul/sub/inverse
+oracle in any actual data path. C recursion receives the computed doubled
+step and actual parity words. Generated evaluation match splitters exist
+but are never called by an actual data path; no compiled mathematical
+lookup or Horner specification body exists. Nat clocks are instrumentation.
+
+`docs/semiprime-bit-fermat-transform-audit.json` preserves all 401 parent
+source pins and all 51 selected Mathlib pins. It adds the parent audit,
+new leaf and checker for 404 source pins, and the newly relevant Mathlib
+list-induction source for 52 selected Mathlib pins. Exactly one ordinary
+semiprime root import, one existing family entry and this dated journal
+insertion are checked against current pre-insertion bytes. All ancestor
+sources/audits and concurrent work remain intact. No commit, push,
+publication, remote check or full graph/dashboard gate is run.
+
+The scoped target build used 3524 jobs, took about eight wall seconds and
+peaked at about 3.68 GiB resident memory. These are local proof-build
+resource observations, not factorization scaling experiments or a
+factorizer machine-time/memory theorem. Exact resource/headroom values
+are recorded in the scoped audit.
+
+Actual normalized inverse interpolation and its coefficient recovery are
+the next transform obligations. A physical normalization-depth producer
+must derive the number of halving stages from actual dyadic template
+cells, rather than a supplied depth. Recursive pointwise bit products,
+bit-valued parameter/padding/chunk/carry production and a near-linear
+integer multiplication/convolution recurrence remain OPEN. Original
+singleton restoration/fold/tail, the SEPARATE varying-seed near-linear
+detector acquisition, full public word production, controller/prefix/
+routing/saturation/nonunit/prime-square composition, physical counter/
+reference/instruction pricing and complete peak working memory remain
+OPEN. No full one-sixth factorization certificate follows from this
+forward transform component.
+
+
+## 2026-10-04: Actual normalized inverse and universal original coefficient recovery
+
+The previous goal turn was **progress**. This turn is **progress**: the
+actual normalized inverse is implemented, its physical normalization
+levels are computed, and universal character cancellation proves exact
+recovery of every ORIGINAL coefficient. No factorization runs,
+benchmarks, successful examples or finite coverage certificates are
+added. The full guaranteed one-sixth bit-time/working-memory factorizer
+remains **OPEN**.
+
+All frozen original collision forcing, singular half-transfer and
+varying-seed explicit-source obstructions remain unchanged.
+`SemiprimeSeedFiniteTransfer.forced_seed_arithmetic` still proves
+`N+seedOffset(N,m,p%m)-m^2*r=(p-1)*(q-a)` in the original interval.
+Fermat's theorem therefore forces the original p-field collision for
+every unit under the original post-prefix hypotheses. This advance
+addresses the inverse needed by the bit-convolution engine; it does not
+claim new original row coverage or solve varying-seed acquisition.
+
+`RiemannGaussian/SemiprimeBitFermatInterpolation.lean` adds seven actual
+computable definitions. `halveTemplatePairsBits` inspects actual template
+pairs, produces one false cell per pair and computes the actual no-odd-
+tail gate, costing <=5K+4 primitives. `fermatDepthBits` recursively uses
+that COMPUTED half template until the actual singleton stop. For K=2^d,
+it produces exactly d level cells, passes its actual shape gates, and
+costs <=20K+20. Empty and odd intermediate shapes preserve false gates.
+Template length appears only in erased termination evidence. Neither a
+depth, native logarithm nor iteration count controls the executable.
+
+`reverseWordRefsBits` reverses actual list references with a full clock
+5*slots+2. `reflectFFTWordsBits` retains the actual zero slot and reverses
+its actual tail, preserving every slot and original membership. Its
+clock is <=5n+7. The proof identifies each positive reflected position j
+with ORIGINAL frequency n-j; no decoded index selects an actual word.
+
+`halveWordRunBits` executes the previous Boolean Fermat half at every
+actual source word and retains all slot positions. Canonical words of
+width <=K+1 yield exact canonical K+1-cell outputs and clock
+<=(n+1)(18K+44). The exact ring equation is 2*out_j=input_j.
+`normalizeFFTWordsBits` repeats those actual passes once per actual
+level cell. It preserves all canonical widths and positions, with clock
+<=(levels+1)(n+1)(18K+50), and proves 2^levels*out_j=input_j.
+The prospective add/carry branches inside every half remain executed
+and paid; no modular inverse word is supplied.
+
+The public `fermatInterpolationBits` executes the actual forward FFT on
+its actual frequency input, computes the physical template depth,
+reflects its actual transform result, prefixes one real extra level
+cell and normalizes the actual reflected words. Its report retains all
+four executed components and sums their clocks plus the wrapper's
+primitive costs. The computed transform and template-shape gates are
+conjoined. Its only inputs are the physical template and actual words.
+For every canonical dyadic input of n=2^(d+1)=2K words, the proved output
+has exactly n canonical K+1-cell words and an actual true gate.
+
+For w=2 in ZMod(2^K+1), k_j=0 if j=0 and k_j=n-j otherwise,
+`fermat_character_delta` proves the universal identity
+
+\[
+\sum_{r=0}^{n-1}w^{r(i+k_j)}=
+\begin{cases}n&i=j,\\0&i\ne j.\end{cases}
+\]
+
+The proof handles zero frequency, matching coefficients and both
+nonmatching wraparound cases using the frozen dyadic character
+cancellation and exact period. The Fermat modulus may be composite;
+there is no field assumption. `wordEvaluation_eq_sum` and
+`fermat_double_transform` retain the original coefficient list and
+interchange only mathematical finite sums. Every unmatched original
+coefficient cancels and the matched coefficient survives with factor n.
+These are proof-side identities, never executable Fourier sums.
+
+`fermatInterpolationBits_roundtrip_coefficients` feeds the ACTUAL
+original forward output into the ACTUAL normalized inverse. Cancellation
+and the actual normalization equation give n*out_j=n*original_j. The
+length n is a unit because the previous computed Boolean half of one
+supplies the inverse of two. Unit cancellation therefore recovers each
+ORIGINAL ring coefficient. `fermatInterpolationBits_roundtrip_values`
+uses the actual canonical bounds to prove exact natural-value recovery,
+including zeros and arbitrary high-zero padding on the original words.
+Literal padding equality is not required or claimed.
+
+`fermatInterpolationBits_cost` proves the complete inverse primitive
+bound <=2000*n*(d+2)*(K+3), including physical depth acquisition,
+reflection and all normalization passes. The entire actual forward/
+inverse roundtrip costs <=3000*n*(d+2)*(K+3)+5. This is O(n*K*log n) in
+the inherited Boolean/reference primitive model. Since n=2K here, it is
+O(K^2*log K), not yet a near-linear convolution on original small-width
+coefficient words. Recursive pointwise packed integer products, physical
+parameter/chunk/padding/carry production and the near-linear packed-bit
+recurrence remain essential. Schoolbook multiplication is not introduced
+or relabeled fast.
+
+Warning-as-error target build, strict leaf, strict ordinary root and the
+namespace/axiom checker pass. All 14 namespace linters pass with zero
+errors. All 218 declarations (59 direct plus 159 generated), including
+114 theorem/proof helpers, use only `propext`, `Classical.choice` and
+`Quot.sound`. The 728-line leaf contains 21 source proofs, seven actual
+computable definitions and five structures; it adds no noncomputable
+definition or specification abbreviation. Nested-comment/string source
+lexing and compiled C checks find no value, length, index, native
+power/mod/div/mul/sub or inverse oracle in an actual data path. Compiled
+depth recursion uses the computed paired template, and compiled public
+normalization uses the computed level word and actual reflected words.
+Nat clocks remain instrumentation, not priced physical counters.
+
+`docs/semiprime-bit-fermat-interpolation-audit.json` retains all 404
+parent source pins and all 52 selected Mathlib pins unchanged. Parent
+audit, new leaf and checker bring the source pin chain to 407. Two
+critical finite-sum Mathlib sources bring the selected pins to 54.
+Exactly one ordinary semiprime root import, one existing family entry
+and this dated journal insertion are checked against current pre-
+insertion bytes. All ancestor sources/audits and concurrent work remain
+intact. No commit, push, publication, remote check or full graph/
+dashboard gate is run. The scoped proof build used 3525 jobs, took
+8.16 wall seconds and peaked at 3824984 KiB resident memory; these are
+local proof-build observations, not factorizer performance evidence.
+
+The actual forward and normalized inverse component obligations are
+now proved. Next: correct Boolean packed parameters/chunks/padding,
+recursively computed pointwise products, exact convolution/carry
+recovery and a near-linear multiplication bit recurrence. Original
+singleton restoration/fold/tail and the SEPARATE varying-seed near-
+linear detector acquisition remain OPEN. Complete public word
+production, controller/prefix/routing/saturation/nonunit/prime-square
+composition, physical counter/reference/instruction pricing and
+complete peak working memory remain OPEN. This inverse component does
+not establish the full guaranteed one-sixth factorization certificate.
+
+
+## 2026-10-04: Whole-family obstruction to enlarging a shift-closed Hermite carrier
+
+The previous goal turn was **progress**. This turn is **progress**: after
+the user explicitly made whole-family acquisition the next substantive
+criterion, it proves a rigorous obstruction to repairing the proposed
+fixed-remainder shift route by enlarging its modulus. Earlier forward/
+inverse backend work is not credited with closing the acquisition gap.
+No factorization runs, benchmarks, successful examples or finite coverage
+certificates are added. The full guaranteed one-sixth bit-time/working-
+memory factorizer remains **OPEN**.
+
+`RiemannGaussian/SemiprimeSeedShiftClosureObstruction.lean` concerns the
+ENTIRE ORIGINAL seed family on the actual public long branch. Let h be
+the actual projected unit, alpha=h^(m^2), and c=alpha^(2^t) for ANY dyadic
+shift level t. Consider ANY monic enlarged carrier U retaining every
+original seed target as a root. The proposed repair requires a faithful
+fixed-remainder scale operator: for every polynomial P, its original
+scaled remainder must be recoverable from P mod U alone. The operator
+may be nonlinear. This is a precise acquisition-route assumption, not
+an assumption that all algorithms must implement this operator.
+
+`fixed_remainder_operator_requires_closure` compares the two
+indistinguishable fixed-remainder inputs U and zero. Their scaled
+remainders can agree only if U divides U(cX). Thus any faithful operator
+requires actual quotient closure, independently of its implementation
+cost or multiplication backend.
+
+`closure_forces_root_orbit` propagates any retained root x through ALL
+c^k*x. `closed_unit_root_degree` shows that, over a domain, a nonzero
+polynomial retaining one unit root and closed under c has degree at least
+orderOf(c). It uses the exact injectivity of powers below that order and
+the polynomial root count. No constant-term unit or simple-root
+assumption is needed.
+
+`long_dyadic_scale_order` proves that c preserves the ENTIRE original
+global order. The long branch makes both local orders m-rough. Hence
+both are coprime to m^2*2^t; their coprime product is the global order.
+The local version preserves the p-field order as well. These orders
+are proof-side arithmetic information, never numerical order advice.
+
+`original_family_enlarged_carrier_obstruction` therefore proves, for
+EVERY enlarged monic U with the required original targets and operator,
+
+\[
+\deg U>4m^2.
+\]
+
+This bound allows nonunit constant terms and extra zero roots. If U has
+unit constant term, quotient closure also implies c^(deg U)=1 directly
+in the original semiprime ring, yielding the stronger bound
+
+\[
+\deg U>16m^4.
+\]
+
+Thus merely adjoining more roots cannot repair a small fixed carrier.
+The theorem does not restrict the enlargement to powers of the original
+target polynomial; it covers arbitrary monic enlargements.
+
+A degree floor alone would not exclude a sparse modulus encoding.
+`original_family_closed_half_remains_dense` supplies the necessary
+original-source consequence: the ACTUAL half polynomial H has degree
+at most 2m^2, so the repaired degree >4m^2 leaves its canonical remainder
+unchanged, H mod U=H. The frozen geometric coefficient theorem makes
+EVERY original H coefficient a unit; consequently the remainder still
+has at least m^2+2 nonzero coefficients. This remains true even if U
+itself is sparsely encoded.
+
+`original_family_closed_remainder_source_floor` proves that ANY
+explicit coefficient slot set covering this repaired remainder has at
+least m^2+2 slots. Any clock charging at least one primitive per emitted
+slot inherits the same quadratic lower bound. Omitting zero coefficients
+cannot help because the original coefficients are all nonzero. This
+rules out soft-O(m) acquisition through this MATERIALIZED canonical
+fixed-quotient remainder route, even with a perfect backend. It is a
+representation/route lower bound, not a general circuit or factoring
+lower bound.
+
+`actual_public_route_shift_closed_carrier_obstruction` attaches the
+quadratic degree floor, optional quartic strengthening, unreduced actual
+H and its dense support to the ACTUAL N-only public long outcome and all
+its original seed labels. The proof does not substitute a target family,
+use a private factor-dependent carrier, invert a collision value, or rely
+on a successful finite example. All original collision forcing,
+singular half-transfer, and explicit point-source obstructions remain
+unchanged.
+
+Warning-as-error scoped target build, strict leaf, strict ordinary root,
+all 14 namespace linters and the transitive-axiom checker pass. All 23
+explicit/generated declarations are theorem/proof declarations and use
+only `propext`, `Classical.choice` and `Quot.sound`. The 287-line leaf has
+11 source theorems and no executable/noncomputable definition, structure
+or specification abbreviation. Source lexing rejects trust tokens and
+option disables/increases. Compiled C contains only module initialization;
+all obstruction proofs are erased and no examples or factorizer execute.
+
+`docs/semiprime-seed-shift-closure-obstruction-audit.json` retains all 407
+parent source pins and 54 selected Mathlib pins unchanged. The parent
+audit, new leaf and checker bring the source chain to 410. All critical
+finite-set cardinality, polynomial root-count and order sources are
+already included in the 54 inherited selected Mathlib pins.
+One ordinary semiprime root import, one existing family entry and this
+journal insertion are checked against current pre-insertion bytes,
+preserving the previously completed inverse component and all concurrent
+work. No commit, push, publication, remote check or full graph/dashboard
+gate is run. The local proof build used 3501 jobs, 6.04 wall seconds and
+3719644 KiB peak resident memory; these are proof-build observations,
+not factorization scaling evidence.
+
+This rules out the enlarged fixed-quotient coefficient acquisition
+repair. It does NOT rule out a recurrence specialized only to the actual
+interval family, additional coupled/derivative state, changing moduli,
+compressed circuit representations, or another implicit whole-family
+algorithm. A whole-family soft-O(m) acquisition bound remains OPEN.
+The next substantive advance must address those remaining acquisition
+possibilities or prove a clearly scoped obstruction to a concrete route.
+Recursive bit multiplication/convolution and the full public machine-
+time/memory composition also remain OPEN; more backend lemmas alone do
+not establish the required whole-family advance.
+
+
+## 2026-10-04: Adaptive whole-family acquisition retains a superlinear explicit source
+
+The previous goal turn was **progress**. This turn is **progress** against
+the user's whole-family acquisition criterion: it proves an obstruction
+to arbitrary unequal explicit block frontiers, enlarging the former
+common-width source floor. More backend components, successful runs or
+finite coverage certificates are not substituted for this advance.
+The complete guaranteed one-sixth bit-time/working-memory factorizer
+and a whole-family soft-O(m) acquisition algorithm remain **OPEN**.
+
+[SemiprimeAdaptiveSeedAcquisitionObstruction.lean](../RiemannGaussian/SemiprimeAdaptiveSeedAcquisitionObstruction.lean)
+uses ALL m-1 original seed labels and the shorter exponent core
+0 through 2m^2+1. `original_forced_collision_in_core` attaches the frozen
+arithmetic forcing identity to this core: every unit has its ORIGINAL
+p-field collision there under the original surviving-prefix assumptions.
+Thus the obstruction does not depend on charging the full old padded
+length or changing the target family.
+
+Allow each seed to choose unrelated nonnegative block starts and widths,
+with overlap, different partitions and unbalanced recursion frontiers.
+Useful starts lie in the core; every core position must lie in a leaf
+interval for the same seed. `variable_leaf_coverage` and
+`adaptive_cover_count` prove
+
+\[
+(m-1)(2m^2+2)\le TW,
+\]
+
+where T is the number of leaf labels and W bounds their actual widths.
+No common width, aligned grid or disjoint partition is required.
+
+`adaptive_distinct_point_count` proves T<=2Q, where Q counts distinct
+ACTUAL normalized points after perfect exact-value reuse. This retains
+the frozen arithmetic reason: long global order prevents exponent wrap;
+equal normalized values force equal quadratic seed-offset classes
+modulo the public prime m; a nonzero degree-two polynomial allows at
+most two original labels in each fiber. Arbitrary subsets and unequal
+block lengths do not improve that factor of two.
+
+`original_padded_power_gaps_unit` proves that the rough local orders
+exceed the ENTIRE original padded length. Consequently
+`original_leaf_coefficients_unit` makes every coefficient of each
+actual geometric leaf factory a unit for any width up to that length.
+Omitting zero coefficients cannot reduce an explicit factory source.
+`original_leaf_coefficient_source_floor` requires width+1 indexed slots.
+
+Even granting one common coefficient-index slot set across all unequal
+factories, plus perfect point reuse, `adaptive_factory_point_source_floor`
+therefore proves
+
+\[
+2m^3<C^2\le\operatorname{work}^2,
+\qquad C=\#\text{coefficient slots}+Q.
+\]
+
+This is an Omega(m^(3/2)) SOURCE floor on every instance of this
+interface. Any unbounded family reaching it would exclude soft-O(m)
+materialization regardless of its multiplication backend.
+`adaptive_no_small_linear_budget` also gives the exact integer exclusion:
+if A^2<=2m then work<=A*m is impossible.
+
+Implicit point generation alone does not repair the route.
+`adaptive_explicit_leaf_output_work_floor` replaces the explicit point
+source with a physical list covering all individual leaf labels. The
+same superlinear work floor follows if the coefficient source and these
+labelled outputs are charged. Shared payload words may be reused, but
+this interface still has an indexed output/reference visit per label.
+This does not assume that every implicit algorithm emits such a list.
+
+`actual_public_route_adaptive_source_obstruction` attaches the source
+and work floors to the ACTUAL N-only public long outcome after its
+original prefix, using the actual public prime m and projected unit.
+Since N<=m^6, it also proves 4N<work^4. This is a conditional lower bound
+for that acquisition interface on the original long branch, not a
+general factoring lower bound or an independently constructed infinite
+family of public long instances. Hidden field reductions and orders
+occur only in the necessity proof, never as executable advice.
+
+Warning-as-error strict leaf, target build and ordinary root pass.
+All 14 namespace linters report zero errors in 20 direct and 24 generated
+declarations. The transitive-axiom checker audits all 44 declarations,
+including all 41 theorem/proof declarations, with only `propext`,
+`Classical.choice` and `Quot.sound`. The 404-line leaf has 17 source
+proofs, three noncomputable proof-side finite-set models, no executable
+backend definitions, structures or specification abbreviations.
+Source lexing rejects trust tokens and option disables/increases;
+compiled C exports only module initialization. No factorization,
+example enumeration or decoded-value acquisition oracle executes.
+
+[semiprime-adaptive-seed-acquisition-obstruction-audit.json](semiprime-adaptive-seed-acquisition-obstruction-audit.json)
+keeps all 410 parent source and 54 selected Mathlib pins unchanged.
+Adding the parent audit, new leaf and strict checker yields 413 source
+pins. All needed critical finite-set, coefficient and order sources are
+already in the 54 inherited selected Mathlib pins. Exactly one ordinary
+semiprime root import, one existing family entry and this dated insertion
+are checked against current pre-insertion bytes. Concurrent work and
+all ancestor proofs/audits are preserved; no commit, push, publication,
+remote check or full graph/dashboard regeneration is performed.
+The local proof build completed 3503 jobs in 6.66 seconds with 3739056
+KiB peak resident memory. These observations measure proof building,
+not factorization time or working memory.
+
+The result requires explicit indexed geometric factory coefficients and
+either normalized-point materialization or individual leaf outputs.
+Compressed circuits, coupled state, family-specific recurrences,
+changing moduli without these sources, and direct aggregate/norm methods
+remain possible. It proves no peak-memory lower bound: streaming cannot
+remove the total emission/work floor but may reduce peak storage.
+The next substantive acquisition advance must avoid these interfaces,
+or rigorously obstruct a specific remaining route. Full recursive bit
+multiplication/convolution and public machine-time/memory composition
+also remain OPEN; backend lemmas alone do not close whole-family acquisition.
+
+
+## 2026-10-04: Specialized fixed linear state and direct aggregate obstruction
+
+The previous goal turn was **progress**. This turn is **progress** at the
+user's whole-family acquisition frontier. It obstructs a proposed small
+coupled linear shift state even when specialized to the ACTUAL original
+geometric family, and gives a separate whole-family scalar aggregate
+state dichotomy. This is not another fast backend component, finite
+success certificate or sampled factoring run. The full guaranteed
+one-sixth bit-time/working-memory factorizer remains **OPEN**.
+
+[SemiprimeSeedLinearStateObstruction.lean](../RiemannGaussian/SemiprimeSeedLinearStateObstruction.lean)
+removes the universal-polynomial and explicit-coefficient-source premises
+from this particular shift-state question. Let h be the actual projected
+unit, alpha=h^(m^2), c=alpha^(2^t), and P the ACTUAL original geometric
+factory of width w<=seedLength(m). At any original unit target x, the
+specified values are P(c^r*x). Consider a fixed linear transition T on d
+residue coordinates, an arbitrary initial vector, and a linear readout.
+All coordinates may be mixed coupled channels; they need not be
+polynomial coefficients, samples, derivatives or canonical remainders.
+The state and transition may depend on the original input and factory.
+
+`shiftAction_coeff` proves that an annihilator A acts on coefficient k
+by multiplying it by A(c^k). The action does not increase P's degree.
+If the scalar recurrence equations hold at r=0 through w, this action
+has w+1 distinct roots c^r*x, and hence is zero in the hidden prime field.
+Every original coefficient is a unit throughout the full padded range.
+Thus A vanishes at EVERY c^k, k=0 through w. Roughness preserves the local
+order under all dyadic scales, so those frequencies are distinct.
+`original_factory_annihilator_degree` proves deg(A)>=w+1.
+
+Cayley-Hamilton supplies the monic annihilator of every finite free fixed
+linear transition; no diagonal or companion form is assumed.
+`original_factory_linear_state_dimension` consequently proves
+
+\[
+d\ge w+1.
+\]
+
+It requires only correctness of the PARTICULAR factory sequence for
+r=0 through w+d. No correctness on all polynomials or on an infinite
+shift orbit is required for this dimension bound.
+
+`original_family_linear_acquisition_state_floor` applies at the FULL
+original detector width L=seedLength(m), retaining all m-1 original
+labels. It permits unrelated fixed transitions, initial vectors and
+linear readouts for each seed. Sharing a single state or transition is
+included as a special case. It proves
+
+\[
+d\ge L+1\ge 2m^2+3.
+\]
+
+A materialized coordinate state inherits this quadratic slot and work
+floor when those coordinates are charged. This is a dimension/route
+obstruction, not a lower bound on every encoding of a larger logical
+state. Large implicit vectors and nonlinear encoded transitions are not
+silently charged as materialized vectors.
+
+Direct scalar aggregation is also checked WITHOUT assuming individual
+row outputs. `seedAggregate` is the product of ALL original detectors
+at one common phase z. It allows arbitrary coefficient cancellation
+among rows. Anchor z=alpha^r/x_1, where x_1 is the original first seed.
+For every r<L, that seed contributes the exact global zero factor, so
+the ENTIRE aggregate is zero throughout this consecutive prefix.
+`monic_recurrence_zero_prefix` proves that a recurrence of degree d<=L
+then remains zero forever, over the original composite ring as well.
+
+The long branch also makes alpha generate the same subgroup as h.
+`original_seed_in_base_powers` gives alpha^r=x_1 for some proof-side r,
+so the ORIGINAL phase z=1 occurs in that orbit. No discrete-log witness
+or order is supplied to an executable algorithm. Therefore
+`original_aggregate_linear_state_dichotomy` proves
+
+\[
+d\ge L+1\quad\text{or}\quad
+\operatorname{seedAggregate}(1)=0\pmod N.
+\]
+
+In the latter case its public GCD is N. A short faithful fixed linear
+phase state yields only a saturated aggregate scalar; additional tagged
+recovery information remains a separate obligation. The theorem does
+NOT say every actual aggregate is saturated, nor forbid recovery from
+other channels. The aggregate contract requires fidelity along its
+anchored phase orbit; the detector dimension contract needs only the
+specified finite prefix.
+
+Both results attach to the ACTUAL N-only public long outcome, its
+matched public modulus and its original projected unit. All original
+collision forcing and saturation-complete recovery specifications remain
+unchanged. A new prefix-none premise is unnecessary for these state
+obstructions. Nonlinear or time-varying state, changing moduli, direct
+norm algorithms outside this linear phase contract, and interpolation
+tailored only to fewer queried positions remain open. Their acquisition
+cost cannot be inferred from the size of their output carrier.
+
+Warning-as-error strict leaf, target build and ordinary root pass.
+All 14 namespace linters report zero errors in 17 direct plus 18 generated
+declarations. All 35 declarations and 33 theorem/proof declarations are
+transitively audited with only `propext`, `Classical.choice` and
+`Quot.sound`. The 440-line leaf has 15 source proofs, two noncomputable
+proof-side polynomial/aggregate models and no executable backend,
+structures or specification abbreviations. Source lexing rejects trust
+tokens and option disables/increases. Compiled C exports only module
+initialization; no factorization, example scan or oracle executes.
+
+[semiprime-seed-linear-state-obstruction-audit.json](semiprime-seed-linear-state-obstruction-audit.json)
+retains all 413 parent source and 54 selected Mathlib pins unchanged.
+The parent audit, new leaf and checker yield 416 source pins. Eleven
+additional critical Cayley-Hamilton, polynomial evaluation, finite-rank,
+zero-product and subgroup sources yield 65 selected Mathlib pins.
+Exactly one ordinary semiprime root import, one existing family entry
+and this insertion are checked against current pre-insertion bytes.
+Concurrent work and all ancestor proof/audit bytes are preserved.
+No commit, push, publication, remote check or full graph/dashboard
+regeneration is performed. The scoped proof build completed 3505 jobs
+in 6.14 seconds with 3734836 KiB peak resident memory; these are proof-
+build observations, not factorization performance evidence.
+
+A whole-family soft-O(m) acquisition algorithm and the complete bit-time
+and peak-memory proof remain OPEN. The next substantive advance must
+acquire the original information with a concrete nonlinear/changing or
+otherwise independent route, or rigorously obstruct such a specific
+remaining route. More backend components alone do not establish it.
+
+
+## 2026-10-04: Moving root carriers force a source floor or a proper factor
+
+The previous goal turn was **progress**. This turn is **progress** on
+the user's whole-family acquisition question: it gives a rigorous
+obstruction to materialized, unit-interpolable root-carrier compression,
+and preserves the proper-factor alternative when composite-ring roots
+evade the field degree bound. This is no new backend, sampled success
+or finite collision certificate. Guaranteed one-sixth bit time and peak
+working memory remain **OPEN**.
+
+[SemiprimeSeedMovingCarrierObstruction.lean](../RiemannGaussian/SemiprimeSeedMovingCarrierObstruction.lean)
+allows arbitrary unequal original leaf frontiers and arbitrary monic
+polynomial carriers U_i over ZMod(N). Every actual normalized leaf point
+must be a root of at least one carrier. Carriers can overlap and change
+between stages; no fixed quotient modulus, linear transition, recurrence
+or correctness on every polynomial is assumed. Individual points and
+leaf labels need not be emitted as a full stream.
+
+Let T count raw leaf labels, Q count distinct actual normalized points,
+K count the optimistically shared factory coefficient slots, and
+D=sum_i deg(U_i) count the acquired quotient basis slots. The frozen
+original coefficients are units, so every leaf width is at most K.
+Coverage of the shorter original collision core therefore gives
+
+\[
+(m-1)(2m^2+2)\le TK.
+\]
+
+The original quadratic phase identity gives T<=2Q even after perfect
+cross-seed deduplication. If distinct points lying in the SAME carrier
+have unit differences, they inject into the hidden prime field. The
+carrier stays monic and nonzero there, so that carrier retains at most
+its degree in distinct points. Taking a union over arbitrary overlapping
+carriers gives Q<=D. Cross-carrier unit separation is unnecessary.
+These facts prove the whole-family source bound
+
+\[
+2m^3<4KD\le(K+D)^2.
+\]
+
+`adaptive_unit_carrier_factory_source_floor` establishes this exact
+inequality for the actual original family. It is a superlinear source
+obstruction without explicit point-stream construction. If the acquired
+factory/carrier bases are charged to work, then work^2>2m^3; at the
+original public sixth-root scale, 4N<work^4. These are conditional route
+bounds, not a general factorization or peak-memory lower bound. No
+unbounded sequence of public long instances is constructed here.
+
+The unit-separation condition cannot be silently dropped. A polynomial
+over a composite ring may have more distinct global roots than its
+degree through mixed CRT combinations. Even unit derivatives at each
+root do not guarantee pairwise unit differences. The new proofs instead
+retain the exact arithmetic alternative: exceeding the total carrier
+degree forces two distinct points x,y in the SAME carrier such that
+
+\[
+1<\gcd(N,\operatorname{val}(x-y))<N.
+\]
+
+This is a proper divisor, not a saturated scalar. Distinct global points
+ensure x-y is nonzero, and its failure to be a unit makes the gcd greater
+than one. `adaptive_carrier_factory_acquisition_dichotomy` proves the
+source/work-floor OR proper-point-difference alternative without any
+unit-separation premise. A small enough acquired carrier forest must
+therefore contain factor information that ordinary unit interpolation
+cannot discard.
+
+`short_carrier_leaf_factor_witness` proves a sharper acquisition target:
+if an already obtained monic carrier of degree at most d retains just
+2d+1 ORIGINAL raw leaf labels, those labels contain at least d+1 distinct
+points and hence a proper-factor point-difference witness. The witness
+retains its original seed and absolute-start labels. The full
+superlinear point stream is not needed for this existence implication.
+Selecting and acquiring those labels, constructing the small carrier
+and searching for the witness have NOT been given an executable bit
+bound. A short existence proof is not credited as cheap acquisition.
+
+`actual_public_route_carrier_acquisition_dichotomy` attaches the result
+to the original N-only public longBase outcome after its actual prefix.
+The public prime modulus, original projected unit and arithmetic forcing
+remain unchanged. Hidden factors enter proofs only, never executable
+inputs. The frozen forcing identity and all earlier proof/audit bytes
+are preserved.
+
+The physical work conclusion has an explicit materialization charge
+for total acquired carrier bases. A shared implicit encoding, a cheap
+update of reused storage, or a specialized reader that retains no
+root-carrier bases need not pay that charge. Nonunit CRT compression is
+also an open possible factoring route: the new theorem identifies its
+forced witness rather than proving such compression impossible. It
+does not rule out all changing state, direct aggregate algorithms,
+nonlinear encodings or every implicit acquisition method.
+
+A primary-source research check also read Harvey--Hittmeir's January
+2026 [large-order paper](https://arxiv.org/abs/2601.11131). Its improved
+large-order-or-factor subroutine does not supply the missing whole-family
+acquisition theorem. No external result is imported as a Lean axiom.
+
+Warning-as-error leaf, scoped target build and ordinary root pass.
+All 14 namespace linters report zero errors in eight direct plus four
+generated declarations. All 12 declarations are proofs, transitively
+audited with only `propext`, `Classical.choice` and `Quot.sound`. The
+296-line leaf has eight source theorems and no executable definitions,
+noncomputable definitions, structures or specification abbreviations.
+Source lexing rejects trust tokens and option changes; compiled C
+exports module initialization only. No factorization or example executes.
+
+[semiprime-seed-moving-carrier-obstruction-audit.json](semiprime-seed-moving-carrier-obstruction-audit.json)
+retains all 416 parent source and 65 selected Mathlib pins unchanged.
+The parent audit, new leaf and checker yield 419 source pins; every
+critical finite-set, root, monicity and reduction source is already in
+the inherited Mathlib pins. One ordinary semiprime root import, one
+existing family entry and this dated insertion are checked against
+current pre-insertion bytes. All concurrent work is preserved. No
+commit, push, publication, remote check or full graph/dashboard
+regeneration is performed. The proof build completed 3506 jobs in
+6.01 seconds with 3721008 KiB peak resident memory; these observations
+measure proof building, not factoring performance.
+
+The next substantive positive target is an N-only small CRT carrier
+construction with a bit-priced proper-difference search, or a rigorous
+obstruction to that construction or to a specific implicit update route.
+Whole-family soft-O(m) acquisition and complete recursive arithmetic,
+prefix/controller/routing/recovery/nonunit/prime-square and peak-memory
+composition remain OPEN. More backend lemmas alone do not establish it.
+
+
+## 2026-10-04: Whole-family moment separation and endpoint cancellation obstruction
+
+The previous goal turn was **progress**. This turn is **progress** on a
+specific implicit whole-family acquisition proposal: exact geometric
+endpoint telescoping of the aggregated moment series. Its arithmetic
+obstruction assumes no materialized carrier, endpoint-series degree,
+fixed linear transition or recurrence. The full guaranteed one-sixth
+bit-time and peak-working-memory factorizer remains **OPEN**.
+
+[SemiprimeSeedMomentCancellationObstruction.lean](../RiemannGaussian/SemiprimeSeedMomentCancellationObstruction.lean)
+first preserves a useful cancellation identity. Let h be the actual
+original projected unit, alpha=h^(m^2), beta=alpha^(-w), and x_j the
+ORIGINAL seed step for j=1 through m-1. Every actual normalized block
+point is y_jk=x_j*beta^k. For every moment index r, the complete labeled
+rectangular family satisfies
+
+\[
+B_r=\sum_{j,k}y_{jk}^r
+   =A_r\sum_{k<J}(\beta^r)^k,
+\qquad A_r=\sum_j x_j^r.
+\]
+
+This separates original seed power-sum acquisition from a geometric
+range. Repeated normalized points retain their original label weights.
+No full point stream is required by the algebraic identity. The exact
+division-free form
+
+\[
+(\beta^r-1)B_r=A_r((\beta^r)^J-1)
+\]
+
+also remains valid when the geometric denominator is zero or nonunit.
+It does not permit dividing such a denominator or recovering a moment
+from the resulting zero equation. No near-linear bit acquisition of
+the seed moments or complete carrier reconstruction is supplied.
+
+Center the moment series by removing its constant coefficient:
+A(z)=sum_(r>=1) A_r*z^r and B(z)=sum_(r>=1) B_r*z^r. Lean proves the exact
+whole-family relation
+
+\[
+B(z)=\sum_{k<J}A(\beta^kz).
+\]
+
+A proposed pure endpoint acquisition would replace this sum by
+F(beta^J*z)-F(z). F is allowed to depend on the original input, every
+original seed, width and this PARTICULAR finite block count. It can be
+an arbitrary formal power series, with no explicit coefficient source
+or degree limit. The proof does not require one universal F for every
+possible interval length.
+
+The arithmetic reason this endpoint formula fails is the surviving
+positive-period coefficient. Let D=orderOf(h), used only inside the
+proof. Every original target is h^(N+delta_j), and every normalized point
+is also a power of h. Therefore x_j^D=y_jk^D=1 and beta^D=1. Hence
+
+\[
+A_D=m-1,\qquad B_D=(m-1)J,
+\]
+
+while the D-th coefficient of EVERY F(beta^J*z)-F(z) is zero. Removing
+the constant coefficient beforehand prevents this from being merely
+the trivial constant-moment objection. The long branch gives D>16m^4.
+All reasoning holds over the ORIGINAL composite ring, without field
+division, positivity of a sum of squares or root-count assumptions.
+
+`original_grid_endpoint_obstruction` proves nonexistence of such an F
+for ANY width and block count with 0<(m-1)J<N. The actual linear-width
+proposal w=4m, J=floor(seedLength(m)/(4m))+1 covers the FULL original
+padded interval and satisfies 0<(m-1)J<m^2<N. Thus the period coefficient
+cannot vanish modulo N. `original_linear_grid_endpoint_obstruction`
+and `actual_public_route_moment_endpoint_obstruction` attach the failure
+to the original matched N-only long route. No extra prefix-none premise,
+private factor, local order or discrete-log advice is supplied.
+
+`compensated_difference_period_coeff` also identifies what an amended
+endpoint formula must retain: if an extra series C(z) compensates the
+endpoint difference, then its D-th coefficient is the actual nonzero
+family mass (m-1)J. Silently discarding that period channel loses data.
+The theorem does NOT prove that keeping it implicitly is expensive,
+nor require that an algorithm discover D as an executable input.
+
+This is an obstruction to an EXACT complete moment-series endpoint
+identity. Truncation to a short queried coefficient prefix can evade
+the contract, as can zero-sum weighted channels, additional period data,
+specialized readers and non-endpoint algorithms. A short Padé or
+recurrence reconstruction still needs a proved whole-family validity
+certificate, an advice-free acquisition method and bit-priced recovery.
+The current aggregate moments do not by themselves supply the original
+per-seed detector/derivative reader or saturation-complete controller.
+
+The primary-source research check read Chen--Singer's
+[Residues and Telescopers for Rational Functions](https://arxiv.org/abs/1203.4200).
+Its q-discrete criterion is formulated in characteristic zero with q
+not a root of unity. It is not imported or applied as a theorem for our
+finite-period composite ring. The new obstruction is proved directly
+from the actual surviving coefficient; no external result is a Lean axiom.
+
+Warning-as-error leaf, scoped target build and ordinary root pass.
+All 14 namespace linters report zero errors in 21 direct plus 11 generated
+declarations. All 32 declarations and 28 theorem/helper declarations
+are transitively audited with only `propext`, `Classical.choice` and
+`Quot.sound`. The 276-line leaf has 17 source theorems, four noncomputable
+proof-side moment/series models and no executable backend, structures
+or specification abbreviations. Source lexing rejects trust tokens and
+option changes; compiled C exports only module initialization. No
+factorization, finite success certificate or example executes.
+
+[semiprime-seed-moment-cancellation-obstruction-audit.json](semiprime-seed-moment-cancellation-obstruction-audit.json)
+keeps all 419 parent source and 65 selected Mathlib pins unchanged.
+The parent audit, new leaf and checker yield 422 source pins. Three
+additional critical power-series and geometric-sum sources yield 68
+selected Mathlib pins. One ordinary semiprime root import, one existing
+family entry and this dated insertion are checked against current
+pre-insertion bytes; all concurrent work and ancestor audits are
+preserved. No commit, push, publication, remote check or full graph/
+dashboard regeneration is performed. The scoped proof build completed
+3508 jobs in 5.94 seconds with 3718136 KiB peak resident memory; these
+observations measure proof building, not factorization performance.
+
+Whole-family soft-O(m) acquisition and the complete bit-time and
+peak-memory proof remain OPEN. The next substantive positive target is
+a finite-prefix carrier reconstruction with a cheap whole-family
+certificate and proper-difference recovery, or a rigorous obstruction
+to that precise route or to retaining the missing period channel.
+More backend lemmas alone do not establish that advance.
+
+
+## 2026-10-04: A finite-prefix certificate for the whole original moment family
+
+The requested frontier remains OPEN: this turn does not prove whole-family
+soft-O(m) acquisition or an obstruction to the finite-prefix acquisition
+route. It proves an arithmetic validation theorem that such a route would
+need. No new successful input examples, native factorization runs, backend
+implementations or coverage certificates are added.
+
+The preceding endpoint obstruction does not apply to short rational
+reconstruction. The new isolated leaf
+[SemiprimeSeedMomentPrefixRigidity.lean](../RiemannGaussian/SemiprimeSeedMomentPrefixRigidity.lean)
+therefore tests whether a SHORT genuine prefix can certify the ENTIRE
+original block family, rather than silently assuming this validity.
+
+Retain the actual original projected unit h, every original seed label
+j=1,...,m-1, width w=4m and J=floor(seedLength(m)/(4m))+1. The frozen count
+lemma proves that these blocks cover the full original padded interval
+and Q=(m-1)J<m^2. Let beta=h^(-4m^3), let A(z) be the centered original
+seed moment series and B(z) the centered original grid moment series.
+The division-free identity from the preceding leaf gives
+
+\[
+B(\beta z)-B(z)=A(\beta^Jz)-A(z).
+\]
+
+A has a rational presentation of numerator and denominator degrees at
+most M=m-1, with denominator constant one. B has such a presentation of
+degree at most Q. The full Q-label product occurs only as an existential
+proof witness. It is NEVER an executable source, candidate input or
+charged construction that the new theorem claims to avoid computing.
+
+The finite certificate consists of actual polynomials U,V of degrees at
+most d, U(0)=1, and the genuine coefficient equations
+
+\[
+[z^r](U(z)B(z))=[z^r]V(z),\qquad 0\le r\le 2(d+m-1).
+\]
+
+For d<=m^2, `original_polynomial_prefix_certificate` proves that these
+finite equations imply U(z)B(z)=V(z) at EVERY coefficient. Thus no larger
+point stream or long validation prefix is required by this arithmetic
+validity proof. When d<=m, at most 4m-1 coefficients, including the
+already-known zero constant, suffice. The more general bound allows a
+soft-linear degree when that degree remains inside the quadratic window.
+This is a coefficient-count theorem, not a bit-operation or memory bound.
+
+The proof has three parts. First construct the formal rational candidate
+F=V/U using the unit constant. Matching the finite equations gives a zero
+prefix of F-B over the COMPOSITE ring. Second clear denominators in
+F(beta*z)-F(z)-A(beta^J*z)+A(z). Its numerator degree is at most
+2d+2M, so the genuine matching prefix forces that entire residual to zero.
+Therefore H=F-B is beta-invariant. Third H has rational degree at most
+d+Q<2m^2. Roughness preserves BOTH local orders of beta because they are
+coprime to 4m^3. Both orders exceed 4m^2, so beta^r-1 is a unit for every
+1<=r<=2m^2. Invariance forces these coefficients of H to zero, and its
+rational degree bound then forces H=0. Unit cancellation replaces every
+potentially invalid field-division step.
+
+`structured_prefix_rigidity` proves the generic structured-series result.
+`structured_polynomial_prefix_certificate` states it using only the finite
+U,V certificate. `actual_public_route_prefix_certificate` attaches the
+same result to the actual N-only public long branch, with its original
+public modulus and saved base. Factors, local orders and infinite
+presentations are used only in the proof, not provided as algorithm advice.
+No new prime-prefix-none premise is required.
+
+Existence remains the decisive gap. The theorem DOES NOT assert that a
+candidate of degree d=soft-O(m) exists for every original input, that a
+short Padé algorithm over ZMod(N) finds it, or that failure reveals a
+proper factor. It does not price genuine seed/grid moment acquisition,
+solve nonunit pivots or saturation, show that U retains the roots needed
+by a factor reader, or prove proper-difference recovery. It also does
+not replace the original detector/derivative/controller contract with
+an unproved claim that aggregate moments contain all required data.
+
+Primary-source research read Neiger--Safey El Din--Tran's
+[Refined complexity bounds for rational reconstruction and XGCD through Padé approximants and Cauchy interpolants](https://arxiv.org/abs/2609.21051).
+Its cost model counts field operations and polynomial multiplication;
+it does not establish candidate existence over our composite ring or
+the complete factoring bit-time and peak-memory bounds. No external
+result is imported as a Lean axiom.
+
+The 439-line leaf has 20 source theorems, one proof-side specification
+abbreviation and no computable or noncomputable definitions, structures
+or backend algorithms. Warning-as-error leaf and scoped target build
+pass. All 14 namespace linters find zero errors in 21 direct plus 24
+generated declarations. Every one of the 45 declarations and all 44
+theorem/helper declarations are transitively audited, allowing only
+`propext`, `Classical.choice` and `Quot.sound`. Source lexing rejects
+trust tokens and option changes. Compiled C exports module initialization
+only; no factorization or finite example executes.
+
+[semiprime-seed-moment-prefix-rigidity-audit.json](semiprime-seed-moment-prefix-rigidity-audit.json)
+retains all 422 parent source pins and all 68 selected Mathlib pins.
+The parent audit, new leaf and checker yield 425 source pins. Four
+critical power-series inverse/geometric-series and finite-product-sum
+sources yield 72 selected Mathlib pins. Registration adds exactly one
+ordinary semiprime root import, one existing family metadata entry and
+this dated insertion, preserving all other current bytes and ancestor
+sources/audits. The strict ordinary root also passes. No commit, push,
+publication, remote check or dashboard/graph regeneration is performed.
+The 3520-job scoped proof build took 6.37 seconds with 3758492 KiB peak
+resident memory. These numbers describe proof building, not factoring.
+
+The next substantive advance must establish advice-free whole-family
+acquisition and recovery with complete soft-O(m) bit and peak-memory
+bounds, or prove that the proposed low-degree reconstruction route
+cannot achieve them. This validation theorem alone does not meet that
+frontier. The guaranteed one-sixth factorization goal remains active.
+
+
+## 2026-10-04: Positive moment pole retention and short public factor witnesses
+
+The preceding turn proved a finite-prefix validity certificate but left
+candidate existence and whole-family acquisition open. This turn proves
+the exact arithmetic information such a certificate must retain, an
+input-dependent obstruction to small candidates, and a short original
+public sample containing a proper-factor witness if a candidate is small.
+These are partial arithmetic advances. They do not establish the requested
+whole-family soft-O(m) acquisition or full one-sixth bit/memory theorem.
+No new backend, successful finite example or native factorization is added.
+
+The isolated leaf
+[SemiprimeSeedMomentPoleRetention.lean](../RiemannGaussian/SemiprimeSeedMomentPoleRetention.lean)
+retains the actual original projected unit, seed labels, width w=4m and
+J=floor(seedLength(m)/(4m))+1. Write Q=(m-1)J<m^2 for the full raw label
+count, retaining all duplicate contributions. The original long local
+orders exceed 4m^2 and divide p-1 and q-1, so BOTH hidden primes exceed
+4m^2. Consequently EVERY positive local point multiplicity is below its
+characteristic and remains nonzero. This uses no extra prefix-none premise.
+
+For a finite weighted moment series over a field,
+
+\[
+B(z)=\sum_{x\in S}w_x\frac{xz}{1-xz},
+\]
+
+`weighted_denominator_roots` proves that an exact polynomial presentation
+U(z)B(z)=V(z) must satisfy U(x^(-1))=0 at every nonzero x with w_x!=0.
+The proof clears denominators with a finite proof-side product and evaluates
+at x^(-1): all other summands vanish, and the surviving summand is a
+nonzero weight times nonzero distinct-point differences. The clearing
+product is never an executable source or algorithm input.
+
+`labelled_moments_group` retains the full fiber cardinality as each weight.
+`labelled_prime_denominator_roots` and the degree theorem prove that raw
+label mass below the characteristic prevents every pole cancellation.
+The ORIGINAL full-grid consequence is
+
+\[
+\deg U\;\ge\;\max\{|S_p|,|S_q|\},
+\]
+
+where S_p,S_q are the actual distinct grid-point images in the two hidden
+fields. This is a field root count after reduction, not a false root-count
+bound over the composite ring. U(0)=1 guarantees both reduced denominators
+are nonzero; no monicity or factor advice is assumed.
+
+Combine this result with the frozen finite-prefix rigidity theorem.
+`original_prefix_requires_local_collisions` proves that a degree-d
+candidate matching the first 2d+2(m-1) genuine positive moments, d<=m^2,
+requires the ENTIRE grid to have at most d distinct points in EACH field.
+Formal cancellations of the original positive weights cannot create that
+small representation. Actual arithmetic point coalescence is necessary.
+`large_local_support_excludes_prefix` proves the precise obstruction:
+if either actual local support exceeds d, NO finite U,V of the stipulated
+degrees can match the genuine validation prefix, however they are acquired.
+It does NOT assert that every input, or an infinite family, meets that
+large-support condition; no global soft-linear degree lower bound follows.
+
+The public sample also supplies an exact failure criterion.
+`no_public_sample_hit_excludes_prefix` proves that if this sample has no
+proper-factor pair, no such small valid prefix candidate exists. This
+restricts the candidate-output channel. Factor extraction from nonunit
+solver pivots, other channels and different families is not excluded.
+No infinite family of no-hit inputs or universal sample coverage is proved.
+
+There is also a constructive choice of a SHORT PUBLIC SAMPLE, with a
+proper-factor EXISTENCE conclusion rather than a priced search algorithm.
+For d<=m^2/8, choose T=floor(2d/(m-1))+1 and retain all m-1 original seed
+labels in their first T blocks. `public_short_sample_bounds` proves
+
+\[
+2d < (m-1)T\le 2d+m-1.
+\]
+
+It also proves that these blocks belong to BOTH the full new padding and
+the frozen original point domain. This matters: the original exact-value
+fiber bound is not silently applied to extra full-padding labels outside
+its proved domain. The original quadratic phase bound therefore removes
+at most a factor of two from sample cardinality, leaving more than d
+DISTINCT global points. Their p-image contains at most d points if the
+prefix candidate is valid. Two distinct global sample points must then
+have equal p-reduction; their nonzero nonunit difference has a proper
+public gcd. Complete-modulus saturation is excluded by global distinctness.
+
+`original_public_sample_proper_difference` gives this witness among at
+most 2d+m-1 original public labels. For d<=m, a simpler first-three-block
+sample of 3(m-1) labels also suffices. The proof uses only the original
+point family. `actual_public_route_prefix_proper_difference` attaches the
+short-sample conclusion to the actual N-only saved public long base and
+public prime row modulus. Large local orders already prove m.Coprime(N),
+so no private factor/order/discrete-log advice or new prefix-none premise
+is supplied to an executable algorithm.
+
+The remaining arithmetic question is sharper: why should every input
+admit the small candidate and hence exhibit the required extensive
+local point coalescence? The theorem does not answer it. It also does not
+prove that a failed small reconstruction yields a factor, compute the
+genuine prefix, implement a composite-ring Padé solver, price finding the
+short-sample witness, or finish nonunit/saturation/controller cases and
+the full construction bit-time and peak-working-memory bounds. A small
+sample count is not a full bit-operation or memory certificate.
+
+Strict leaf and scoped target build pass. The 621-line leaf contains
+26 source theorems and one noncomputable proof-side point-series model,
+with no executable definitions, structures or specification abbreviations.
+All 14 namespace linters find zero errors in 27 direct plus 20 generated
+declarations. Every one of the 47 declarations and 46 theorem/helpers
+is transitively checked with only `propext`, `Classical.choice` and
+`Quot.sound`. Source lexing rejects trust tokens and option changes.
+Compiled C exports initialization only; no finite example or factorization
+executes. No external theorem or new Lean source is imported as an axiom.
+
+[semiprime-seed-moment-pole-retention-audit.json](semiprime-seed-moment-pole-retention-audit.json)
+retains all 425 parent source pins and all 72 selected Mathlib pins.
+The parent audit, new leaf and checker yield 428 source pins; the critical
+unit/nonzero source adds one selected Mathlib pin, for 73. Exactly one
+ordinary semiprime root import, one existing family entry and this dated
+insertion are checked against fresh current pre-insertion bytes. The
+strict ordinary root also passes. All ancestor and concurrent bytes are
+preserved. No commit, push, publication, remote check or graph/dashboard
+regeneration is performed. The 3521-job scoped proof build took 7.54
+seconds with 3778112 KiB peak resident memory; these observations measure
+proof building, not factorization performance.
+
+The substantive acquisition frontier and the guaranteed one-sixth goal
+remain OPEN and active. The next advance must prove advice-free whole-family
+soft-O(m) acquisition and recovery, or an arithmetic support obstruction
+that actually excludes the proposed near-linear route on its required
+inputs. More helper or backend lemmas alone do not close this gap.
+
+
+## 2026-10-04: Infinitely many actual long inputs obstruct small moment carriers
+
+This turn supplies a classical, paper-level INFINITE arithmetic obstruction
+to the proposed small rational carrier for the whole original positive
+moment family. It does not obtain soft-O(m) acquisition or factorization.
+The elementary period-gap-to-degree bridge is kernel checked in
+[SemiprimeSeedMomentPeriodGapObstruction.lean](../RiemannGaussian/SemiprimeSeedMomentPeriodGapObstruction.lean).
+The infinitude proof below uses a published analytic number-theory theorem;
+that theorem, its asymptotics and the actual-base-selection argument below
+are NOT formalized in this leaf or imported into Lean as axioms. The full
+guaranteed one-sixth bit-time/peak-memory goal remains OPEN and active.
+
+**Precise obstruction.** There are infinitely many distinct-prime
+semiprimes N=pq, with p and q within a fixed constant factor of one another,
+for which the ACTUAL public row modulus m=publicRowModulus(N) and ACTUAL
+routeAtRowModulus(N) give the long base 2. Put g=unitOfCoprime(2),
+h=projectedUnit(g,m), and T=floor(m^(1/100)). Among all original labels
+
+\[
+1\le j<m,\qquad 0\le k<T,\qquad
+x_{j,k}=h^{\,N+\delta_j-4m^3 k},
+\]
+
+every difference is either zero globally or a unit modulo N. There are
+at least (m-1)T/2 distinct points in EACH hidden field. For the ENTIRE
+original positive moment series B(z), not merely this sample, every exact
+polynomial presentation U(z)B(z)=V(z), U(0)=1, therefore satisfies
+
+\[
+\deg U\ge\frac{(m-1)\lfloor m^{1/100}\rfloor}{2}
+             =\Omega(m^{1.01}).
+\]
+
+Consequently no O(m log^C(m)) degree guarantee, for any fixed C, holds for
+this carrier on the required actual inputs. The frozen prefix rigidity
+theorem also excludes valid degree-d numerator/denominator candidates
+matching the first 2d+2(m-1) genuine moments when
+d<(m-1)T/2 and d<=m^2. This is a failure of the low-degree candidate
+existence premise, independent of how a solver acquires that candidate.
+
+The time and retained-storage obstruction applies to the route that
+materializes such a dense carrier: it must retain at least that many
+coefficient slots. Degree alone is NOT a lower bound for arbitrary sparse
+or circuit encodings. In particular this theorem does not exclude cheap
+acquisition of a prefix by some other representation, implicit changing
+state, differently weighted observables, or extraction of a factor from
+a nonunit solver pivot. It is not a lower bound for all factorization.
+
+**Published input and balanced primes.** We use the unconditional
+Baker--Harman large-factor result in the explicit formulation of
+Kurlberg and Pomerance, *On the periods of the linear congruential and
+power generators*, Acta Arithmetica 119.2 (2005), Section 4, Lemma 19
+(which cites Baker--Harman (7.1)). A positive proportion of primes p have
+a prime factor R(p) of p-1 satisfying R(p)>p^kappa, kappa=677/1000.
+Their Lemma 20 also gives the fixed-base large-order consequence.
+Primary published source:
+[Kurlberg--Pomerance, Section 4](https://www.impan.pl/shop/en/publication/transaction/download/product/82225).
+Original publication:
+[Baker--Harman, Acta Arithmetica 83.4 (1998), 331--361](https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/83/4/110107/shifted-primes-without-large-prime-factors).
+No GRH, Artin conjecture, safe-prime infinitude or prime-gap conjecture is used.
+
+We only need the density lower bound along an unbounded sequence of X.
+Choose a sufficiently small fixed c>0. The density lower bound, after
+subtracting the ordinary upper bound for primes below cX, gives a set
+P_X of at least a X/log X such primes in [cX,X], for a fixed a>0 and
+arbitrarily large X. All constants below may depend on c and a.
+There are therefore at least a^2 X^2/log^2 X ordered pairs in P_X^2.
+Write R_0=(cX)^kappa and K=floor(X/R_0). For these primes,
+
+\[
+R(p)>R_0,\qquad p-1=u_p R(p),\qquad u_p\le K\ll X^{1-\kappa}.
+\]
+
+Since kappa>1/2, the large prime factor is unique and has exponent one.
+For p,q in this interval, the actual selected m satisfies
+
+\[
+c^{1/3}X^{1/3}\le m\le2\lceil X^{1/3}\rceil.
+\]
+
+This uses the exact sixth-root width and the repository's least-prime
+selector, with Bertrand's bound. Because kappa>2/3, for sufficiently
+large X we have u_p,u_q<=m and R(p),R(q)>4m^2, uniformly for every such
+pair. The constants in the public selector cause no exponent loss.
+
+**Base 2 survives the public projection.** Discard primes p for which
+R(p) does not divide ord_p(2). Then ord_p(2) divides u_p and is at most K,
+so p divides the positive integer product of (2^r-1), 1<=r<=K.
+The logarithm of this product is at most (log 2)K(K+1)/2. Each distinct
+p in [cX,X] contributes at least log(cX) to that logarithm. Thus only
+O(K^2/log X)=O(X^(2-2kappa)/log X) primes are discarded. The number of
+affected ordered pairs is o(X^2/log^2 X).
+
+Also discard pairs with R(p)|(q-1), or R(q)|(p-1), and pairs p=q.
+For a fixed p, the first condition allows at most X/R_0+1 integer q.
+The two cross-divisibility conditions discard at most O(X^(2-kappa)+X)
+pairs, and the diagonal at most O(X); all are negligible. For every
+remaining pair the two large prime factors are distinct and neither
+divides N-1: modulo R(p), N-1 is congruent to q-1, and conversely.
+
+Now ord_p(2) divides u_p R(p) and contains R(p). In the actual projection
+exponent (N-1)(m!)^L, L=clog_2(N+1), the factorial kills the entire u_p
+part (already u_p|m!) and is coprime to R(p). The N-1 part also preserves
+R(p). The local order of h is therefore EXACTLY R(p); similarly it is
+R(q) in the other field. Every preceding stage (N-1)(i!)^L, 0<=i<=m,
+also preserves both large prime factors. Both components at every stage
+are nonidentity, so every checked projection-stage gcd is 1.
+
+This describes the actual route, not an advised choice of g. For large X,
+p,q>m^2, so the complete small-factor prefix returns none. Distinct-prime
+pq is not a square. The first fueled seed loop is at common modulus 1,
+whose seedChoice tests 1 then 2 and selects 2. Its signal gcd is 1;
+2 is a unit; the local orders of 2 already exceed 4m^2, so the bounded
+global collision lookup returns none and routeByWidth gives largeBase 2.
+The raw recoverShort batch in refineBase also has no hit: every exponent
+distance is between 1 and 4m^2, below both local orders. The raw
+2^(N-1) is nonidentity, all staged gcds are 1, and the projected short
+batch again has no hit because its local orders are R(p),R(q)>4m^2.
+Hence routeAtRowModulus(N) is longBase 2. This argument follows the
+literal definitions, including every intermediate projection check.
+
+**The period windows are sparse for a fixed m.** Set eta=1/100 and
+T_m=floor(m^eta). Call a candidate local period R>=R_0 bad for m when
+
+\[
+|4m^3 r-aR|\le4m^2
+\quad\hbox{for some }1\le r<T_m,\ a\in\mathbb Z.
+\tag{1}
+\]
+
+Because m>1 and r>=1, (1) forces a>=1. It also forces
+a<=(4m^3 r+4m^2)/R_0=O(X^(1-kappa)r). For a fixed r and a, the allowed
+R lie in a real interval of length 8m^2/a, containing at most
+8m^2/a+1 integers. Summing this bound over a, then r, and using the
+elementary harmonic bound gives, uniformly over the actual possible m,
+
+\[
+\#\{R\text{ bad for }m\}
+ \ll m^2 T_m\log X+X^{1-\kappa}T_m^2.
+\tag{2}
+\]
+
+This upper bound counts all integer R; requiring R to be prime can only
+reduce it. Every R>=R_0 divides p-1 for at most X/R_0+1 integers p<=X.
+Thus the number E_m of candidate primes p in [cX,X] whose R(p) is bad
+for this particular m is bounded by
+
+\[
+E_m\ll
+X^{5/3-\kappa+\eta/3}\log X+
+X^{2-2\kappa+2\eta/3}=:E.
+\tag{3}
+\]
+
+An unweighted union over all possible m would lose the needed saving.
+The next step deals with the actual N-dependent selector instead.
+
+**Weight by the exact selector bins.** For a possible prime modulus m,
+let m^- be the preceding prime. The least-prime selector gives the exact
+equivalence, for positive N,
+
+\[
+\operatorname{publicRowModulus}(N)=m
+\quad\Longleftrightarrow\quad (m^-)^6<N\le m^6.
+\tag{4}
+\]
+
+For a fixed p>=cX, condition (4) restricts q to an interval of length
+
+\[
+\frac{m^6-(m^-)^6}{p}
+\le\frac{6m^5(m-m^-)}{cX}
+\ll X^{2/3}(m-m^-).
+\]
+
+It therefore permits at most C X^(2/3)(m-m^-)+1 integer q, including
+all possible prime q. Sum the bad pairs over the selected m, using (3).
+The successive gaps telescope: their sum over the possible m is
+O(X^(1/3)), and the number of possible m is also O(X^(1/3)). Hence
+the total number of ordered pairs whose R(p) is bad for THEIR ACTUAL m
+is at most
+
+\[
+\begin{aligned}
+\sum_m E_m\{C X^{2/3}(m-m^-)+1\}
+ &\ll X E\\
+ &\ll X^{8/3-\kappa+\eta/3}\log X
+       +X^{3-2\kappa+2\eta/3}\\
+ &=X^{1993/1000}O(\log X)+O(X^{2479/1500})\\
+ &=o(X^2/\log^2 X).
+\end{aligned}
+\tag{5}
+\]
+
+The same bound excludes bad R(q), by symmetry. No bound on any individual
+prime gap or any distribution of shifted primes in short intervals is
+used. Only the telescoping sum of the literal selector bins is needed.
+
+The candidate pair lower bound dominates all exclusions. For arbitrarily
+large X there remain at least b X^2/log^2 X pairs, for some fixed b>0,
+with p!=q, the actual long base 2, and neither local period bad for its
+actual m. Their least prime tends to infinity, so they yield infinitely
+many semiprimes. The same argument works for every fixed
+0<eta<3kappa-2=31/1000; eta=1/100 is a conservative concrete choice.
+
+**Transfer to the original row sample and full carrier.** A local equality
+between x_(j,k) and x_(j',k') means that the actual period R divides
+
+\[
+(\delta_j-\delta_{j'})-4m^3(k-k').
+\]
+
+The frozen original offsets satisfy |delta_j-delta_j'|<=4m^2. If k!=k',
+this divisibility would make R bad in (1), with
+1<=|k-k'|<T_m. Therefore k=k'. Since R>4m^2, equality then forces
+delta_j=delta_j' exactly, hence equality already holds modulo N.
+Both local periods avoid (1), so every distinct global pair has nonzero
+reductions in both fields and has gcd 1. Global duplicates have gcd N,
+which is excluded from proper-factor credit.
+
+For large m, T_m is inside both the frozen original block domain
+blockCount(m,4m) and the full padded moment grid J=seedLength(m)/(4m)+1.
+The original quadratic phase bound gives at most two labels per global
+value in this domain. The period gap makes each field reduction injective
+on those global values, so each field retains at least (m-1)T_m/2 points.
+The entire full grid has positive label mass Q<m^2<p,q. Thus none of its
+positive local multiplicities vanishes in either characteristic. The
+frozen pole-retention theorem forces EVERY sample inverse point to be
+a denominator root even though the representation is for the full grid.
+This proves the stated degree floor. With T_m>=m^eta/2 and m-1>=m/2,
+one may take deg U>=m^(1+eta)/8 for sufficiently large m.
+
+**Formal status and validation.** The new leaf proves the period-gap
+condition with all integer multiples retained, local equality forcing
+the same block and exact offset, unit separation and absence of proper
+gcd hits, a local-support lower bound, the full-grid denominator floor,
+and the finite-prefix degree consequence. It uses the actual original
+points and projected LongData contract. It does NOT assert the analytic
+density, construct an infinite family in Lean, or prove the actual-base-2
+branch and asymptotic selector counting in Lean. Those parts are the
+classical proof above, with its external theorem clearly identified.
+No example corpus or new backend certificate is used as evidence for
+infinitude. No external analytic fact is inserted as a Lean axiom.
+
+Strict leaf, scoped target build and strict ordinary root pass. The
+280-line leaf has seven source theorems and one proof-side Prop
+abbreviation, with no executable/noncomputable model definitions or
+structures. All 14 linters find zero errors in eight direct plus
+18 generated declarations. All 26 declarations and 25 theorem/helpers
+are transitively checked with only `propext`, `Classical.choice` and
+`Quot.sound`. Source lexing rejects trust tokens and option changes;
+compiled C exports initialization only. No factoring or finite-example
+execution is added.
+
+[semiprime-seed-moment-period-gap-obstruction-audit.json](semiprime-seed-moment-period-gap-obstruction-audit.json)
+retains every one of the 428 parent source pins and all 73 selected
+Mathlib pins. Adding the parent audit, new leaf and checker yields
+431 source pins; there are no new selected Mathlib sources. Exactly
+one root import, one ordinary semiprime metadata entry and this dated
+journal insertion are checked against fresh current snapshots, removing
+only the exact new insertions to restore those snapshots. All ancestor
+and concurrent bytes are preserved. No commit, push, publication, remote
+check or graph/dashboard regeneration is performed. The 3522-job scoped
+proof build took 6.13 seconds and 3751268 KiB peak resident memory;
+these observations measure proof building, not factoring performance.
+
+The small rational whole-moment carrier route is therefore obstructed
+classically on infinitely many actual required inputs. Completing the
+kernel-checked infinitude argument remains formalization work. The broader
+whole-family acquisition problem and the complete guaranteed one-sixth
+factorization bit-time/peak-working-memory theorem remain OPEN. A revised
+route must address another information channel or a differently charged
+representation; more arithmetic backend lemmas cannot restore this
+low-degree existence premise.
+
+
 ## Recording future progress
 
 Append dated entries with the exact observable/algorithm, known input,

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "module": "RiemannGaussian.ZetaRieszPairPrefixPayment",
+  "classification": "Independent geometric payment of the whole literal prime-pair owner-mask discrepancy",
+  "status": "Local only; the remaining signed prefix upper bound and floor are open",
+  "conditions": {
+    "radius": "1/2 <= u <= 10001/20000",
+    "height": "54 <= abs(y)",
+    "explicitOrderThreshold": 65536,
+    "zeroHypothesisForErrorPayment": false
+  },
+  "provedBounds": {
+    "coefficientError": "3*log(n)*exp(-N/1250)",
+    "sourceScaledGlobalError": "12*exp(2)*(N+1)*exp(-N/1600)",
+    "errorTendsToZero": true,
+    "sameOriginalCompletePeriodSupport": true,
+    "actualRadialEndpointFlagRetained": true,
+    "originalPhysicalAndSieveMasksProved": true,
+    "noPrimeCompletion": true,
+    "allPrefixOrdersIncludingZero": true,
+    "uniformOverRetainedDistinctPairs": true,
+    "originalFloorLedgerSpendsErrorOnce": true
+  },
+  "openTarget": {
+    "quantity": "Re(prefixPairDefect u y (dyadicMomentOrder j))",
+    "bound": "399/5000+o(1), cofinally and independently",
+    "signedMainBoundProved": false,
+    "floor": false,
+    "multipleZeroCeiling": false,
+    "zeroExclusion": false,
+    "RH": false,
+    "newFloorConstant": false,
+    "achievedSavingOnSignedMain": 0
+  },
+  "terminalTheorems": [
+    "joined_sub_prefix_log_bound",
+    "joinedCoefficient_eq_log",
+    "cube_below_core",
+    "norm_literalPairDefect_sub_prefix_le",
+    "tendsto_literalPairDefect_sub_prefix",
+    "eventually_pairDefect_re_le_prefix",
+    "eventually_native_prefix_floor",
+    "exists_native_prefix_payment_simple"
+  ],
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedDensityMain.lean",
+      "sha256": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "64a716cf69ab06058b95fe17fdac809427c9afd71adf1b2070789bbe67a6084c"
+    },
+    {
+      "path": "scripts/CheckRieszPairPrefixPayment.lean",
+      "sha256": "0eb4a24a828ffce2af4384423c02fd33cd0778a3432f2bbe873af3a5267d8e12"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_prefix.py",
+      "sha256": "a66324c006543c205622aba9dec7021ed801ac6d7d0fc553940b29ff48717e07"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_structure.py",
+      "sha256": "e5d57b2d58e9b4a47079854e98b948412bcc8c90f31f9506ec5224123983522e"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-prefix-payment.md",
+      "sha256": "b17184ad8e2c8e34e6da85ec13a11585bdc0262601262e1a874116be11b82c1c"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "focusedValidation": {
+    "strictExplicitLeaf": true,
+    "warningsAsErrors": true,
+    "rootPlusExplicitLeafNamespaceLinters": 14,
+    "namespaceLinterErrors": 0,
+    "allDeclarationStandardAxiomAudit": {
+      "theoremsIncludingPrivateHelpers": 68,
+      "theoremAxioms": [
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.alpha_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.low_owner_tail._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedLogCoefficient.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedCoefficient_eq_log._proof_1_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt._simp_1_5",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.eventually_norm_literalPairDefect_sub_prefix_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.log_upper_tilt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.norm_literalPairDefect_sub_prefix_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.canonical_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefix_tilt._simp_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.source_scaled_coefficient_error_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.upper_tail_log_rate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_6",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixBudget._proof_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.source_rate_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedLogCoefficient._proof_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.eventually_native_prefix_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.cube_below_core",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.head_lower_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedLogCoefficient._proof_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedLogCoefficient._proof_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedLogCoefficient._proof_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.eventually_pairDefect_re_le_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixCoefficient.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixBudget.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_7",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.tendsto_native_pairDefect_sub_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.source_scaled_coefficient_error_bound._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixBudget_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.low_owner_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedCoefficient_eq_log",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefixCoefficient_bound._proof_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefixCoefficient_bound._proof_1_3",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefixCoefficient_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.eventually_prefix_re_le_pairDefect",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.tendsto_literalPairDefect_sub_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.complement_tilt._proof_1_4",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.exists_native_prefix_payment_simple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefix_tilt._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedCoefficient_eq_log._proof_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixBudget._proof_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefix_tilt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joinedCoefficient_eq_log._proof_1_3",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixPairDefect._proof_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixPairDefect._proof_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.high_owner_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial._simp_1_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.prefixBudget_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.head_lower_tail._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.cube_below_core._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.joined_sub_prefix_log_bound._simp_1_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaRieszPairPrefixPayment.0.RiemannGaussian.ZetaRieszPairPrefixPayment.retained_pair_data",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaRieszPairPrefixPayment.log_kernel_radial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "onlyStandardAxioms": true,
+      "module": "RiemannGaussian.ZetaRieszPairPrefixPayment",
+      "declarations": 73
+    },
+    "rootRegistration": false,
+    "widerGatesRun": false
+  },
+  "optionalNumerics": {
+    "actualPrimeCache": {
+      "path": ".lake/riesz-pair-structure/scan.primes.json",
+      "sha256": "686d5747489ed97dec22c3977b6dfa13068f0fe045959088ff9bc30efe6847b0"
+    },
+    "actualPairIncidences": 9216,
+    "maxAlgebraReplayError": 2.2115642650533118e-13,
+    "sharedPrimesNotIndependent": true,
+    "sampleOrdersBelowFormalThreshold": true,
+    "classification": "Algebra regression only; no floor certificate",
+    "tiltExponentDiagnostics": {
+      "highOwner": 0.000942396211477084,
+      "lowOwner": 0.006387534704779825,
+      "headLowerEndpoint": 0.030094835933094463
+    },
+    "formalRatesIndependentOfNumerics": true
+  },
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-prefix-payment/axioms.json",
+      "sha256": "20049523a267b18ec8bce43be9de4899a2bedc12809155e112422a981d6f4435"
+    },
+    {
+      "path": ".lake/riesz-pair-prefix-payment/probe.json",
+      "sha256": "1094d14484228365b0be30218c77c0a5185490b21ef28979fa3be3e8aa12a1c5"
+    }
+  ],
+  "committed": false,
+  "pushed": false,
+  "documentationMaintenance": {
+    "date": "2026-10-03",
+    "reason": "Refresh discovery-policy pins for the pair-correlation follow-up and link to its height-coverage correction; original numerical and Lean findings/artifacts unchanged.",
+    "followup": "docs/zeta-riesz-pair-correlations.md",
+    "jointDetectorPolicyAdded": true
+  }
+}

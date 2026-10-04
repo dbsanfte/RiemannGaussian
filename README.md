@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Bound the surviving signed prime-pair defect after joined Selberg cancellation and polynomial-cofactor payment. On 1/2<u<=0.50005, an independent cofinal 399/5000+o(1) upper bound closes the simple exposed-zero floor. The pair bound and higher-multiplicity ceiling remain open.
+Bound the original joined signed carrier on 1/2<u<=0.50005: a cofinal -399/5000 floor excludes simple exposed sources, and a 42/25 ceiling excludes higher multiplicities. Keep the balanced pair and its complement joined. Both independent constant bounds remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Bound the surviving signed prime-pair defect after joined Selberg cancellation a
 
 ### Latest Update
 
-**Signed Selberg and polynomial-cofactor payments checked; balanced pairs remain open.** The combined tree includes all local RH and semiprime modules, proof audits and optional probes. Under simple exposure, the joined Selberg prime/pair expression is paid on the literal support; polynomial-small pair cofactors are also paid. Neither result bounds the surviving balanced-pair aggregate by 0.0798. Failed sampling and dilation tests receive no floor credit.
-Prove an independent cofinal signed upper bound 399/5000+o(1) for the remaining pair defect. The 0.000071797 source-to-target difference is a contradiction margin, not a remaining-error estimate.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSignedSelbergPayment.lean#L806)
-· [Proof details](docs/zeta-riesz-signed-pair-checkpoint.md).
+**Masked Selberg cancellation and height-dependent ceilings published.** All 98 new Riesz and semiprime proof modules, audits and optional probes are included. The adjacent-order identity retains the literal masks; a test-height theorem joins divergent balanced and complement terms. A sublinear height price improves the whole ceiling, while the constant floor and ceiling remain open.
+Prove an independent signed estimate for the selected source with the whole complement retained. No new zero exclusion or constant-ceiling credit is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCeilingSublinearHeight.lean#L173)
+· [Proof details](docs/zeta-riesz-october-checkpoint.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

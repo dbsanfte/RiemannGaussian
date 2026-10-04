@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent global geometric payment of the joined prefix/Selberg square correction; signed central quadratic retained",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimeNonlinearTail.lean",
+      "sha256": "be71b13866658a69f6273561b3416f49a9a9eb909df96ec39759790e298b4a19"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszHeadOrders.lean",
+      "sha256": "55f3b1489920b49a55c98697c8e42e778baa96c76042ecd1a224e2c23c8ac4c3"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPrimePairConvolution.lean",
+      "sha256": "a3dbc92d6d5b82c80f12d12e5397a2665a3db00cbb9bd9fedc5f49201db60dc3"
+    },
+    {
+      "path": "scripts/CheckRieszPairJointQuadratic.lean",
+      "sha256": "25ea40c6478aba08961eace6747c91b8b90faa0991eb895777b2ece9e2a8243f"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_joint_quadratic.py",
+      "sha256": "f72ca63bab0ded2bf9a04d01b71429f454582b52e387d22a187e8b3bcca4847c"
+    },
+    {
+      "path": "scripts/check_riesz_pair_joint_quadratic.py",
+      "sha256": "4469f017d443f408769b508c390d90b3a7a4a87799c4bc242c8562de1f6e27e8"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-joint-quadratic.md",
+      "sha256": "8aef219e78f36c609ff5c1da8b8d089c93510f3b5c9e6c7f5d3b0cb76e03746a"
+    },
+    {
+      "path": "docs/riesz-pair-whole-completion-audit.json",
+      "sha256": "e4bcfaa8a5655ccb124ddc020a877a9464fcfe2436435246e5472a1b89bd6d78"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-joint-quadratic/build.log",
+      "sha256": "d07bd984f601af7149e1f83775f398418aedb48837f66ac8b126e492c0390279"
+    },
+    {
+      "path": ".lake/riesz-pair-joint-quadratic/proof-check.log",
+      "sha256": "a0b7e0459fcd844ca65fe1f01ef75281a3aca57e42e348968f4c815e9b71aa44"
+    },
+    {
+      "path": ".lake/riesz-pair-joint-quadratic/axioms.json",
+      "sha256": "7c4c9a353e01c2bc32c3cb7fb5c346a241fe966e55b58b6cb0cc946586dbb964"
+    },
+    {
+      "path": ".lake/riesz-pair-joint-quadratic/probe.json",
+      "sha256": "95408dd14b931412bc2d1eae83947b71358c814996e41f37d4e23cde87e96944"
+    },
+    {
+      "path": ".lake/riesz-pair-joint-quadratic/validation.json",
+      "sha256": "f4934a3e5200769b0a8b2b6f909ae8174b6059803e413f6812c0dcbe8a200d5f"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairJointQuadratic",
+    "publicTheorems": 14,
+    "proofDeclarationsAudited": 27,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "exactJointQuadratic": "finitePrefix_eq_quadratic_add_square",
+    "unjoinedTrace": "selbergTrace_eq_weighted_orders",
+    "independentEstimate": "norm_normalized_joinedSquare_le",
+    "uniformRationalRate": "squareBudget_le_uniform",
+    "nativeOriginalFloorLedger": "exists_native_quadratic_payment_simple",
+    "rootRegistered": false
+  },
+  "payment": {
+    "support": "Whole correction for the complete finite symmetric pair convolution; no square label added to the literal carrier",
+    "sourceScaledBudget": "(17/6)*u*squareMass*(4u/3)^N",
+    "uniformRate": "10001/15000",
+    "finiteMassConstant": "tsum squareLogWeight(3/4)",
+    "constantNumericallyPriced": false,
+    "NLowerBound": 65536,
+    "radius": "1/2<=u<=10001/20000",
+    "height": "Every real height",
+    "primeUniverse": "Every finite set of genuine ordinary primes",
+    "zeroHypothesisUsed": false,
+    "squareDiagonalJoinedBeforeNorm": true,
+    "squareCorrectionSpentOnce": true,
+    "retainedSignedMainNormed": false,
+    "unjoinedSelbergPhasesAndOrdersRetained": true,
+    "scalarWeightsDoNotImplyPositiveComplexRealParts": true,
+    "oldPhysicalLowOrdersNotDeletedAgain": true
+  },
+  "validation": {
+    "exactRationalCoefficientCases": 202,
+    "finitePrimeCases": 36,
+    "allPrimeRegressionOrdersBelowFormalThreshold": true,
+    "finiteRegressionIsExhaustiveLiteralPopulation": false,
+    "regressionLength": "7*(N+1)/5; generic algebra only",
+    "syntheticModeNullTest": {
+      "cases": 20,
+      "literalMovingLength": true,
+      "actualPrimePopulation": false,
+      "belowThresholdAtN90112": true,
+      "aboveThresholdAtN425984": true,
+      "sourceAtRadiusCeiling": "0.07987179703494417790743531418361814976975518032781999",
+      "marginIsContradictionMargin": true,
+      "independentArithmeticBound": false
+    },
+    "optionalOutsideNormalCI": true,
+    "floorCredit": 0,
+    "independentReplayPassed": true,
+    "maxIndependentPrimeReplayError": 5.351721900890723e-87,
+    "syntheticModeDirectSumError": 9.262916336169776e-17
+  },
+  "remaining": [
+    "Independent one-sided 399/5000 bound for the full coupled central/successor/logged/Selberg factorial quadratic.",
+    "Do not infer cofinal success from finite-order or synthetic source models.",
+    "Use actual ordinary-prime correlations; scalar coefficient collection does not establish the signed main bound.",
+    "The higher-multiplicity ceiling remains open."
+  ],
+  "fullSignedMainBoundProved": false,
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "localOnly": true,
+  "committed": false,
+  "pushed": false
+}

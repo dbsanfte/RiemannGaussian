@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent whole-main radius bound and global relative signed cancellation; cofinal absolute bound in already-covered height/radius regions; uncovered all-height floor still open",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszJoinedPhaseRadius",
+    "publicTheorems": 20,
+    "proofDeclarationsAudited": 63,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "actualAnalyticRadius": "exists_analytic_radius",
+    "allOrdinaryLoggedOrders": "ordinary_moment_bound_of_analytic_radius",
+    "correlatedWholeEvaluatorBound": "norm_harmonicEvaluation_le_geometric",
+    "existingWholeCompletionBridge": "norm_prefix_sub_ordinary_le",
+    "independentWholeMainBound": "norm_prefix_le_radius",
+    "wholeJointRestMinusFullCreditBound": "joint_rest_sub_credit_le_radius",
+    "quantitativeRelativeCancellation": "exists_joint_credit_cancellation_rate",
+    "globalRelativeMainLimit": "prefix_div_exact_credit_tendsto_zero",
+    "literalRelativeRestLimit": "signed_rest_div_exact_credit_tendsto_one",
+    "heightLocalAbsoluteBound": "exists_height_local_joint_floor",
+    "existingRegionFullRadiusRegression": "eventually_concrete_height_joint_floor",
+    "sourceRadiusNoGo": "radius_le_of_nonzero_ordinary_source"
+  },
+  "estimate": {
+    "radius": "1/2<=u<=10001/20000",
+    "height": "every fixed abs(y)>=54",
+    "independentWholeMainNormBound": "26*C_y^2*(u/R_y)^N+wholeCompletionBudget(N)+squareBudget(u,N)",
+    "radiusGuarantee": "1/2<R_y<3/4",
+    "sourceSubcriticalRadiusGuaranteedAtEveryRequestedHeight": false,
+    "quantitativeRelativeBound": "D_(u,y)*(N+1)^3*(1/(2*R_y))^N*exactSignCredit+sameErrors",
+    "relativeRateStrictlyBelowOne": true,
+    "globalNormalizedMainOverExactCreditLimit": "0",
+    "literalSignedRestOverExactCreditLimit": "1",
+    "relativeCancellationIsAbsoluteFloor": false,
+    "usesExposedZeroHypothesis": false,
+    "genericPrimeDensityTransportUsed": false,
+    "allLoggedOrdersIncludingZeroRetained": true,
+    "correlatedTotalOrderRetained": true,
+    "literalMasksRetainedThroughExistingWholeSymmetricBridge": true,
+    "heightUniformConstantCertified": false,
+    "entryOrderCertified": false,
+    "newAllHeightCofinalThresholdImproved": false,
+    "measuredRemainingGapFraction": null
+  },
+  "scopedCofinalBound": {
+    "heightLocalNonemptyRadiusInterval": true,
+    "explicitHeightRegression": "54<=abs(y), log(abs(y)+3)<=1800",
+    "explicitRadius": "100011/200000",
+    "uniformRadiusInterval": "1/2<=u<=10001/20000",
+    "exactSourceRate": "100010/100011",
+    "cofinalRealUpper": "strictly below399/5000",
+    "heightAlreadyExcludedByExistingZeroFreeRegion": true,
+    "newZeroRegionProved": false,
+    "usesExistingSignedPoleRegion": true,
+    "cofinalConstantSizeAndEntryOrderUnknown": true
+  },
+  "jointLedger": {
+    "identity": "Re prefixPairDefect = Re literalSignedRest - exactSignCredit",
+    "entireExactCreditRetained": true,
+    "restSeparatelyNormPaid": false,
+    "benchmarkExcessDiscarded": false,
+    "allExistingErrorsSpentOnce": true,
+    "newCarrier": false,
+    "unrelatedMaskedCompletion": false
+  },
+  "negativeAudit": {
+    "theorem": "radius_le_of_nonzero_ordinary_source",
+    "statement": "A nonzero limit of the normalized actual ordinary-prime moment array together with this Cauchy bound forces R<=u.",
+    "sourceScaleRadiusChosenPastSelectedPole": false,
+    "relativeLimitCompatibleWithNonzeroSelectedSource": true,
+    "selectedSourceDiagnostic": {
+      "retainedCostAtCeiling": "9.201282029650558220925647E-1",
+      "pairSourceAtCeiling": "7.987179703494417790743531E-2",
+      "unchangedUpperTarget": "7.980000000000000000000000E-2",
+      "contradictionMarginNotMeasuredProgress": "7.179703494417790743531418E-5",
+      "radiusAtSelectedPole": "10001/20000",
+      "sourceRateAtThatRadius": "1",
+      "relativeCancellationDoesNotImplyAbsoluteFloor": true
+    },
+    "previousNoGoAuditsPreserved": true
+  },
+  "validation": {
+    "numericalProbe": "bound-factor audit only; no prime sampling",
+    "decimalDigits": 90,
+    "assumedRadiiLabelledAsScenarios": true,
+    "numericalProbeUsedInProof": false,
+    "unknownConstantsNeverCertifiedAsOne": true,
+    "priorAuditPinsValidatedBeforeGuideUpdate": 247,
+    "guideAndDependentAuditPinsRefreshed": 27,
+    "priorProofAndNumericalSnapshotsPreserved": true
+  },
+  "remaining": [
+    "Independent one-sided absolute bound on the joined source-sized residue at uncovered heights, where R<=u is possible.",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProvedAtAllHeights": false,
+  "floorProvedOnScopedAlreadyCoveredRegions": true,
+  "newZeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "widerGatesRun": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean",
+      "sha256": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPhaseCreditGrowth.lean",
+      "sha256": "c075ae32c10a407e930dd51330886e31a7623544e504939ef002d4e5a793547b"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPairSignCover.lean",
+      "sha256": "7ded7e3f4e08ba8a8ad0b219ef4591906811f8ac55684b406b95fa0fecd05f1a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairWholeCompletion.lean",
+      "sha256": "6ba09b1f92b1e95bd37f65314e33286e75a827920731582a30fcd48fcefa6afe"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaSignedPoleZeroFree.lean",
+      "sha256": "60f0d7e245c3f6b99236cfb616705af919c47d2799bdb7953d52f7f841e81dd6"
+    },
+    {
+      "path": "RiemannGaussian/ZetaPrimePowerMoments.lean",
+      "sha256": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9"
+    },
+    {
+      "path": "scripts/CheckRieszJoinedPhaseRadius.lean",
+      "sha256": "fbd36e98f130bb9c36d00eff1fd2b213272113a2eff5b13e3f95ae6fe87668e1"
+    },
+    {
+      "path": "scripts/probe_riesz_joined_radius_rates.py",
+      "sha256": "c47a99e6e4638bec82ecb1a06d3f5cc855b853569a7e581957ed2e88f85d67d7"
+    },
+    {
+      "path": "docs/zeta-riesz-joined-phase-radius.md",
+      "sha256": "6937d03bbfc574d76b79a3686a103be45630195c488f3b2e7ce86bbeec7c1fdc"
+    },
+    {
+      "path": "docs/riesz-pair-phase-credit-growth-audit.json",
+      "sha256": "b32744c0007b69778da3fc29a57a4a3125e8e778626847fbd2be5419d822cecb"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-joined-phase-radius/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-joined-phase-radius/proof-check.log",
+      "sha256": "a67f2e5d4d729efeecf10d45138be6f24e5be3a07b6a0991aaa07eefececc4e4"
+    },
+    {
+      "path": ".lake/riesz-joined-phase-radius/axioms.json",
+      "sha256": "1414007460fccab55f90759491a7aa9443b52ea05dbd68aac5611c98ac3d1b60"
+    },
+    {
+      "path": ".lake/riesz-joined-phase-radius/rate-probe.json",
+      "sha256": "9db74c662e24fc1f464193cc7b09cd28e98cb5da6be0f74b2d7fe51c6131d7d5"
+    },
+    {
+      "path": ".lake/riesz-joined-phase-radius/prior-pins.json",
+      "sha256": "0d882cb6feefb143d32b7ce882be3c005e5f414ff22451b49a92813bd670d9ac"
+    },
+    {
+      "path": ".lake/riesz-joined-phase-radius/prior-pins-refreshed.json",
+      "sha256": "49803923918da3cf4512b810ee8eae3ef7297de2206e828296a9b95de37a67d3"
+    }
+  ]
+}

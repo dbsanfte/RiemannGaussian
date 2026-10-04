@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent two-sided floor-ledger discrepancy audit; supporting negative result, no arithmetic floor saving",
+  "target": "Independent cofinal fixed-height Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "scripts/CheckRieszNoUnusedFloorCredit.lean",
+      "sha256": "a1f10c366a4ab5d35059f0d9a8fb6daa98b13f64fe3e7dd37d51cfa8603f35a0"
+    },
+    {
+      "path": "docs/zeta-riesz-joint-floor-literature-gap.md",
+      "sha256": "547d288766a8afe95d4631e1acda7eb83562be454cae18d4156806566fdfcbd1"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSignedBoundary.lean",
+      "sha256": "979d11e208c997175f91d90995a2b99534bb6350e6583e012842df97789adae5"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-floor-slack-audit/check.log",
+      "sha256": "4ec9bc187c58494b07c0b1f98c6a090d41c689a4f1bc9180b4a85f55b07572ac"
+    }
+  ],
+  "validation": {
+    "strictLeanExitCode": 0,
+    "publicAuditTheorems": 4,
+    "namespaceLinters": 14,
+    "onlyStandardTransitiveAxioms": true,
+    "previousAudits": 21,
+    "previousPinsVerified": 382,
+    "priorProofAndProbeBytesChanged": false,
+    "noRootOrCIGate": true,
+    "noCommitsOrPushes": true
+  },
+  "newArithmeticFloorCredit": 0,
+  "floorClosed": false,
+  "logicalScope": "Gap includes the exact signed Selberg term. No assertion of a nonnegative individual sector or an independent retained-pair bound.",
+  "literatureReview": {
+    "primarySource": "https://arxiv.org/html/2106.15949",
+    "finding": "Arbitrary unit multiplicative phases on ordinary primes do not suffice for the complete joined-quadratic floor; the actual fixed archimedean phase must enter an estimate.",
+    "helsonConstructionFormalized": false,
+    "literalMaskedCarrierCounterexampleClaimed": false,
+    "newLeanTheorems": 0,
+    "newArithmeticFloorCredit": 0,
+    "onlyDocumentationChanged": true,
+    "fixedMomentGramDoesNotProvideMovingOrderRate": true,
+    "fixedPhaseAloneCountertest": {
+      "source": "RiemannGaussian/ZetaRieszSelbergRenewalAudit.lean",
+      "existingTheorems": [
+        "array_eq_phaseMoment",
+        "selbergKernel_laplace",
+        "cofinal_generic_floor_impossible"
+      ],
+      "existingArtifact": ".lake/riesz-selberg-renewal/renewal-probe.json",
+      "scope": "Continuous fixed-phase model; extra real pole and incorrect ordinary-integer count normalization. Not an actual-prime counterexample.",
+      "newLeanTheorems": 0,
+      "newPrimeSamples": 0,
+      "newArithmeticFloorCredit": 0
+    }
+  }
+}

@@ -14093,6 +14093,132 @@ remain open; do not report these identities as an arithmetic floor.
 - Never claim RH is proved until the completion audit reaches an unconditional
   term of `RiemannHypothesis` and all local and exact-commit remote gates pass.
 
+## Current ceiling multiplicity payment (local, 2026-10-04)
+
+`ZetaRieszCeilingGaussianMultiplicity` uses the EXISTING complete Gaussian
+arithmetic budget with actual multiplicity retained. A nonzero-point
+exponential tangent and exact homogeneity give source >=984028661/156250
+for multiplicity>=2 in Re(rho)>=19999/20000. The full budget is strictly
+smaller for log(abs(Im(rho))+2)<=50000. The old signed-pole region pays the
+low heights, so `multiple_zero_re_lt` has no lower-height gap and assumes
+neither exposure nor simplicity. Simple zeros are NOT excluded.
+
+`eventually_joinedPhysical_ceiling_in_height_range` transfers this proved
+multiplicity restriction to the SAME carrier and42/25 target under the
+original exposed-source hypotheses. No factorial order, mask, phase,
+length, count or diagonal is changed. This is a genuine payment of a
+height range, NOT an independent all-height carrier inequality. The
+ceiling above log-height50000 and the simple-zero floor stay OPEN.
+The strict rational margin43330001/546875 is in Gaussian detector units,
+not a percentage of the Riesz contradiction gap. The scalar probe samples
+no primes/zeros and supplies no native entry-order certificate. See
+docs/zeta-riesz-ceiling-gaussian-multiplicity.md and its scoped audit.
+Preserve all earlier positive/no-go results and concurrent semiprime work;
+continue locally without commits/pushes/subagents/root registration/wider
+gates. Focused leaf/namespace/transitive-axiom checks remain optional.
+
+`ZetaRieszCeilingAllHeightMultiplicity` extends the independent multiplicity
+payment to EVERY height in the explicit simplicity layer
+min(1/20000,9/(2*(log(abs(Im rho)+2)+40000))). It joins the preceding plateau
+exactly at log-height50000. Above it, q=(L+40000)/1000000 keeps the normalized
+Gaussian damping exactly1013/500. The same complete arithmetic budget and
+actual multiplicity give source>=70000q-4, with a uniform checked surplus
+8566/175 after the global logarithmic tangent log L<=L/20000+9.
+This margin is in Gaussian detector units, NOT a Riesz completion credit.
+
+`simple_of_boundary_layer` assumes neither exposure nor simplicity and
+excludes MULTIPLE zeros only. Its new width is proved strictly greater
+than5/2 times the earlier Gaussian multiple-zero layer at every ordinate.
+`eventually_joinedPhysical_ceiling_in_boundary_layer` transfers this to the
+SAME42/25 carrier ceiling under its original exposed-source hypotheses,
+retaining all orders, masks, phase, count, moving length and one diagonal.
+The ALL-HEIGHT FIXED-STRIP ceiling is still OPEN: `unpaid_multiple_location`
+requires L>50000 and9/(2*(L+40000))<1-Re(rho)<=1/20000 for any surviving
+multiple candidate. Simple zeros, the independent floor and RH remain open.
+Do not report this simplicity layer as an all-zero-free region, a record
+comparison, a native entry-order certificate or a proof percentage.
+See docs/zeta-riesz-ceiling-all-height-multiplicity.md and its scoped audit.
+Preserve all previous positive/no-go proofs and artifact pins, as well as
+concurrent semiprime sources/root/readme metadata. Work remains local with
+no commits/pushes/subagents/root registration/wider gates.
+
+`ZetaRieszCeilingGaussianBudgetAudit` now closes the tuning escape for the
+SPECIFIED complete positive Gaussian budget at the fixed candidate boundary
+beta=19999/20000 and multiplicity two. Every derivative line reaching that
+boundary has k<=16; the exact exponent is 1/(2^(k+2)-2). For q>=9/100 in the
+existing normalized Gaussian scale family, the EXACT cotangent source with
+its full Poisson reserve is <=280000*mass(a). The LITERAL explicit budget
+itself is >=mass(a)*log(abs(t)+2)/45. Thus a strict single-double-source
+surplus requires log-height<12600000, independently of eligible summable
+coefficient/frequency families and derivative-order tuning. At13500000 the
+budget exceeds that exact source by at least20000*mass(a).
+
+This is supporting NEGATIVE evidence, with ZERO arithmetic ceiling credit.
+It lower-bounds the actual positive budget, not its upper majorant; it does
+NOT lower-bound the actual signed clipped mean or rule out the exact signed
+Gaussian formula, other scale schedules, or additional coupled zero sources.
+Necessary method ceilings do not certify surplus below them. Preserve the
+preceding all-height simplicity layer and the unchanged42/25 joinedPhysical
+target; the whole fixed-strip ceiling and simple-zero floor remain OPEN.
+Do not keep retuning this positive-budget certificate as an all-height
+closure strategy. The next useful bound must retain actual signed arithmetic
+correlations. The optional350-row scalar probe samples no primes/zeros and
+supplies no entry-order certificate. See
+docs/zeta-riesz-ceiling-gaussian-budget-audit.md and its scoped audit. Preserve
+prior positive/no-go snapshots and concurrent work; continue locally without
+commits/pushes/subagents/root registration/wider gates.
+
+`ZetaRieszCeilingSharpMultiplicity` sharpens the preceding positive payment
+using the EXACT signed Gaussian moment recurrence and nonnegative moment16.
+The kernel-checked enclosure is G_4(2701/1000)>=59/250. The new simplicity
+width is min(1/20000,6/(log(abs(Im rho)+2)+60000)), at EVERY ordinate. The
+fixed candidate plateau extends to log-height60000; beyond it this width is
+at least10/9 of the preceding all-height width, which is preserved everywhere.
+Actual multiplicity is retained: source>=67000q-4 for q=(L+60000)/1000000,
+with complete-cost surplus236431/700 after log L<=L/200000+12. These are
+Gaussian detector units, NOT a Riesz proof percentage or selected-source
+cancellation credit. Quadrature is diagnostic and does not enter Lean.
+
+The SAME joinedPhysical42/25 ceiling follows in this larger layer under the
+original exposed-source hypotheses. No phase, count, factorial order,
+moving length, physical/allocation mask or diagonal is changed. This proves
+simplicity only; simple zeros and the independent floor remain OPEN. In the
+ORIGINAL fixed strip every unpaid multiple candidate has L>60000 and
+6/(L+60000)<1-Re(rho)<=1/20000. The whole fixed-strip ceiling is still OPEN.
+Do not retune the positive budget as an all-height closure strategy: its
+prior all-family/all-order no-go remains valid. The next required bound
+must retain actual signed arithmetic correlations.
+
+See docs/zeta-riesz-ceiling-sharp-multiplicity.md and its scoped audit.
+Preserve all previous positive/no-go sources and artifacts and concurrent
+semiprime/root/readme metadata. Continue locally without commits, pushes,
+subagents, root registration or wider gates; focused leaf checks are optional.
+
+`ZetaRieszCeilingIntegerAudit` checks a possible loophole in the generic
+positive-density ceiling control. A monotone one-Lipschitz cumulative count
+has exact integer atoms in{0,1}, telescoping finite counts, and cumulative
+rounding error<2. Those finite facts are kernel-checked. The stated Abel
+moment price has geometric factor u/(3/2)<=10001/30000<1/2. A checked
+CONDITIONAL source-stability theorem says that an array satisfying that
+price still tends to-2 and its SAME joined evaluator eventually exceeds
+42/25. The comparison premise remains explicit: the infinite binary
+count-to-density Abel identification is an analytic argument in the note,
+NOT a formal witness or a theorem about the actual prime measure.
+
+The enumerable floating control uses u=3/4 OUTSIDE the target radius and
+integers up to2^20, not the complete ordinary-prime set. It selects81554
+unit atoms, retains every tested logged order including0/1, and independently
+replays32 critical floor decisions and the factorial kernels. This is not
+an all-floor ball certificate, target-population coverage, native entry-order
+certificate, zero exclusion or arithmetic ceiling credit. Target scalar
+prices are not actual-prime errors. The full42/25 ceiling remains OPEN.
+
+See docs/zeta-riesz-ceiling-integer-gate.md and its scoped audit. Mere
+integer spacing/unit weights are not a demonstrated escape; the next
+estimate must use the COMPLETE prime set or its exact signed convolution.
+Preserve prior proof/probe snapshots and concurrent work; continue locally
+without commits/pushes/subagents/root registration/wider gates.
+
 ## Signed-pair checkpoint and margin reporting
 
 The combined checkpoint registers the locally validated RH and semiprime
@@ -14110,3 +14236,1170 @@ or an achieved upper bound. The actual-prime sampling and prime-dilation
 audits receive zero floor credit. See
 `docs/zeta-riesz-signed-pair-checkpoint.md`. Preserve every previous positive
 result and no-go; optional probes stay outside ordinary build/CI targets.
+
+## Numerical discovery at robust obstructions
+
+When a checked obstruction defeats the current method, step back and design
+numerical probes and pattern/structure detectors for the literal unresolved
+quantity. Use them to search for correlations and cancellations that could
+break through the obstruction, including patterns beyond existing theorem
+families. Adapt the detector as the mathematical frontier changes; skip
+already-paid populations in discovery and retain every unpaid mask, signed
+weight, phase and moving cutoff. Preserve all positive results and no-go audits.
+
+Prefer actual-prime or exhaustive finite data where feasible. Label continuous
+models separately, report coverage and uncertainty, and validate proposed
+patterns on independent seeds, orders or held-out parameters. Shared-prime
+Cartesian products are not independent samples. Investigate the mechanism
+behind a reproducible pattern, then derive an analytic estimate and prove it
+in Lean for the original target. Numerical agreement, a model identity or a
+finite certificate supplies no cofinal floor credit without its rigorous
+transport and error bounds. Keep exploratory probes optional and outside
+ordinary builds/CI; this strategy does not itself authorize publication.
+
+When phase cancellation remains obstructed, enrich the literal-prime detector
+into an arithmetic and topology atlas. Record actual primes, full complex
+phase, exact signed coefficient/allocation masks, congruence classes,
+quadratic characters, explicit partial factor profiles of p-1 and p+1,
+and spacing where useful. Distinguish accepted-sample spacing from proven
+consecutive-prime gaps, and never declare an unfactored residual prime or
+invent an intrinsic "prime quality" ranking. Define colour precisely; a
+visual phase or character colour is not automatically the repository's
+prime-power/mixed-support arithmetic colour.
+
+Construct structural neighbourhoods without phase or the desired signed
+outcome, then map those quantities onto the graph. Label projections and
+graph cycle ranks accurately; they do not establish high-dimensional
+topology or orthogonality estimates. Join literal pair incidences before
+assigning node charges, so shared primes are not counted twice. Control
+coarse log position, report that phase is deterministic given exact log p,
+adjust exploratory feature searches for multiple comparisons, and require
+same-parameter replication on separate seeds plus held-out validation before
+promoting a pattern to an analytic conjecture. An atlas is discovery evidence,
+not an independent signed floor or authorization to alter public claims.
+The current optional implementation and its scoped findings are recorded in
+`scripts/probe_riesz_prime_atlas.py` and `docs/zeta-riesz-prime-atlas.md`.
+
+Audit a detector's height coverage against the current proved/displayed
+zero-free regions before selecting discovery parameters. Heights where the
+candidate strip is already excluded are regression cases, not evidence
+about the unresolved strip. Label astronomical heights as exact integers;
+never cast them to binary64 before evaluating phase. Allocate enough bits
+for `y*log(p)`, certify argument reduction modulo `2*pi` in ball arithmetic,
+and check phase values with an independent high-precision implementation.
+Report midpoint rounding separately from interval radius. Height coverage
+does not establish the eventual order range or identify a zero ordinate.
+
+Pair arithmetic needs its own detector: individual-prime features need not
+capture gcds between p±1 and q±1, quadratic reciprocity or factor profiles
+of p±q. Remove both shared-prime marginals and coarse total-log geometry in
+one weighted projection; verify its normal equations rather than composing
+projections that can reintroduce marginal effects. Preserve shared-incidence
+dependence in permutation diagnostics and adjust across the entire feature
+search. Validate sensitivity on a synthetic pair interaction and rejection
+of a marginal-only effect, clearly separating controls from actual phases.
+Require replication before conjecture promotion. The current
+166-feature pair scan found no adjusted flags, including at heights outside
+the plotted coverage of the candidate lower strip edge; it receives zero
+floor credit. See `docs/zeta-riesz-pair-correlations.md` and its scoped audit.
+
+The detector follow-up now has an independent GLOBAL error payment in
+`ZetaRieszPairPrefixPayment`: join the literal head/correction first, keep
+the exact binomial prefix including order zero, and pay only the owner-mask
+difference. On the same original complete-period prime-pair support,
+`norm_literalPairDefect_sub_prefix_le` gives
+`12*exp(2)*(N+1)*exp(-N/1600)` for `N>=65536`, `1/2<=u<=10001/20000`,
+and fixed `54<=|y|`, without a zero hypothesis. Original sieve/physical
+conditions and the radial endpoint flag are retained or proved automatically,
+never silently completed. `eventually_native_prefix_floor` spends this cost
+once with the prior Selberg budget in the original whole-core ledger.
+The signed `prefixPairDefect` itself is UNPAID: its independent cofinal
+upper bound `399/5000+o(1)` remains the goal. Do not norm it, report a new
+floor constant, or call the approximately `0.000071797` contradiction margin
+a measured residual. See `docs/zeta-riesz-pair-prefix-payment.md` and its
+scoped audit. Continue locally without commits/pushes/subagents/root
+registration/wider gates; the optional cached-prime regression supplies
+algebraic evidence only, with no floor credit.
+
+When the arithmetic-feature scan finds no replicated signal, test the
+actual joined weight/phase object through five coordinated views: positive
+and negative coefficient bands, coupled weighted prime moments, fixed-height
+stability across native orders, nearby opposite-weight product transport,
+and factorial/owner/radial transition boundaries. Sum complex bands before
+estimating and retain ALL finite coupling modes and unequal matching mass.
+Separate common radial demodulation from the raw real carrier; a frequency
+grid that resolves the smooth envelope may alias the radial rotation and
+does not give a uniform-height maximum. Phase-circle matching constructed
+from observed phases is outcome-dependent, not an independent arithmetic
+transport estimate.
+
+Audit phase resolution relative to integer prime/product spacing as well
+as precision. At astronomical fixed heights, small native orders can be
+far before the eventual regime: if even neighbouring integers cross many
+phase periods, an apparently smooth density cancellation is not a literal
+sample explanation. This finite-order calibration does not rule out an
+eventual theorem at the same fixed height. Keep exact moving lengths,
+factorial prefixes, full phases and literal complete-period masks at edges;
+recompute logarithms at full phase precision before deciding huge period
+indices. Replay boundary membership independently using log(product), and
+validate shifted-height phases with a separate high-precision implementation.
+
+Use independent sample seeds and held-out heights to test replication,
+preserving shared-prime dependence in reference permutations. Equal sampled
+L1 mass per box is only a discovery convention; it is not population
+weighting, source-scale calibration or a value in units of the 399/5000
+floor. Three finite native orders cannot establish cofinal decay. Every
+detector output must state its actual coverage, unmatched remainder and
+whether any rigorous signed estimate was obtained. The optional suite is
+`scripts/probe_riesz_pair_joint.py`, with the frozen proven-prime producer
+`scripts/sample_riesz_pair_joint.py` and independent checker
+`scripts/check_riesz_pair_joint.py`. See
+`docs/zeta-riesz-joint-pair-detector.md` and its scoped audit. Keep these
+outside ordinary builds/CI and preserve prior proof/numerical snapshots.
+
+Before statistical discovery, run exact algebraic bookkeeping on the
+UNJOINED components. Retain factorial indices, incidence orientation,
+integer label, coefficient, phase identity and literal support/mask
+signature. Collect identical products only after proving their phases and
+masks agree; match swapped incidences and account for the repeated-prime
+diagonal exactly once. Search for zero coefficients and telescoping
+relations before correlations with prime features. Joined samples cannot
+explain which constituent pieces cancel. Record separately every unmatched
+mask/boundary term, and spend an existing error payment only once.
+
+`ZetaRieszPairPrefixConvolution` proves exact order-zero cancellation in
+the complete finite symmetric factorial-prefix sum, retaining all complex
+phases and its single whole prime-square diagonal. Its polarized pointwise
+pair theorem also preserves any common literal radial/period/physical mask:
+endpoint cancellation needs no support completion. Factoring the surviving
+masked sum into separate complete moments still requires its own proved
+boundary bridge; the pointwise theorem does not license that step.
+Its optional preflight,
+`scripts/probe_riesz_pair_algebra.py`, collects exact rational coefficients
+before replaying cached literal-prime components. This does not complete
+the current radial/moving support, prove its remaining signed estimate,
+or give floor credit. Use the surviving joined expression for subsequent
+statistical scans. Continue locally without root registration or wider gates.
+
+The factorial bookkeeping now has an independent arithmetic payment in
+`ZetaRieszPairLowOrderPayment`. On the SAME nonprime complete-period labels
+with `log(largestPrime n)<=length u N`, both prime shares are at least `7/24`.
+The exact surviving logged orders `1..floor(17N/64)+1` are bounded by
+`8*exp(2)*(N+1)*exp(-N/1250)` AFTER source normalization for `N>=65536`.
+`low_logged_atom_eq` retains both incidences and the original phases;
+`exists_native_sub_low_payment_simple` spends the cost once in the original
+whole-core ledger. The central sums, higher logged orders and ALL pairs
+above that largest-prime cutoff remain signed and unpaid. Do not report the
+removed piece's tiny budget as a bound on the remaining main or a change
+to `399/5000`. This fixed-share payment does not license low-order deletion
+at shrinking shares/growing counts. See
+`docs/zeta-riesz-pair-low-order-payment.md` and its scoped audit. Optional
+cached-prime regressions are outside CI; continue locally without wider gates.
+
+`ZetaRieszPairWholeCompletion` now pays the ENTIRE support completion of
+the symmetric `prefixPairDefect`: for `N>=65536`, `1/2<=u<=10001/20000`
+and `54<=abs(y)`, every sufficiently large exhaustive finite prime prefix
+differs by at most `C*exp(-N/1000000)`, with one finite constant independent
+of height, radius, order and prefix. This includes the exact radial endpoint
+flag. `missing_pairs_interior_empty` proves that no added pair enters the
+strict central interior; a fixed `X` filter pays the successor kernel on
+the SAME total-log edges. The result completes the WHOLE symmetric signed
+pair sum, not a bare cofactor or an unrelated hard-share packet.
+
+`finitePrefixPairDefect_eq_joined` therefore licenses the complete finite
+factorial convolution with both central sums, the logged prefix, one whole
+square diagonal and the signed Selberg subtraction retained. The native
+floor ledger spends prior Selberg/owner budgets and this new geometric
+cost once. The constant has no numerical smallness certificate. The
+independent cofinal `399/5000` upper bound for this retained signed main is
+still OPEN, as is the multiple-zero ceiling. Do not call the boundary
+payment a floor, selected-resonance saving or proof of a zero exclusion.
+Keep the earlier physical low-order payment and its exact masks available;
+do not delete it twice or extend it to the full completed population.
+See `docs/zeta-riesz-pair-whole-completion.md` and its scoped audit. Optional
+regressions stay outside ordinary CI; continue locally without commits,
+pushes, subagents, root registration or wider checks.
+
+`ZetaRieszPairJointQuadratic` now joins the FULL Selberg trace to both
+prefix central bands and the logged prefix. `selbergTrace_eq_weighted_orders`
+retains the assigned prime and factorial order on each leg;
+`selbergTrace_order_weight_pos` concerns scalar coefficients, not the sign
+of complex real parts. The trace reinforces the order-N+1 monomials and
+does not create another order-zero cancellation. Do not subtract it or
+its phase incorrectly in the detector.
+
+The prefix and Selberg square diagonals combine into ONE correction.
+`norm_normalized_joinedSquare_le` independently pays its ENTIRE mass by
+`(17/6)*u*squareMass*(4u/3)^N` for N>=65536 and every real height. The uniform
+rational rate is `10001/15000<1`. No prime square is inserted into the
+literal carrier. `exists_native_quadratic_payment_simple` spends this cost
+once with the existing Selberg/owner/whole-completion budgets; the retained
+factorial quadratic still needs its independent cofinal 399/5000 bound.
+Do not spend the old physical low-order payment again or extend its masks.
+
+The optional unjoined detector now collects the Selberg slots BEFORE
+prime/phase evaluation, and independently checks swapped incidences and
+the single diagonal. Its synthetic selected-mode null test uses the
+literal moving length and shows delayed failure of the 0.0798 threshold:
+below it at N=90112, above it at N=425984, limit 0.079871797... at the radius
+ceiling. These are hypothetical model values, not an actual-prime bound,
+measured residual, contradiction or fraction of proof completion. Keep the
+full signed central/successor/logged/trace combination in the next estimate.
+See `docs/zeta-riesz-pair-joint-quadratic.md` and its scoped audit. Continue
+locally without commits, pushes, subagents, root registration or wider gates.
+
+`ZetaRieszPositiveDensityAudit` now tests the proposed adjacent-order route
+against a strictly positive CONTINUOUS density with the exact common phase:
+`[exp(T)-2*exp((3/2-u)*T)*cos(y*T)]/T`, `T>=20000`, `u=10001/20000`.
+The relative ripple is bounded by `2*exp(-T/20000)`, yet Lean proves its
+normalized logged factorial moments tend to `-1` at every fixed `abs(y)>=1`,
+with all low orders and lower-threshold heads retained. This is not the
+ordinary-prime measure. The leaf prohibits no actual prime configuration
+and proves no cofinal quadratic bound or arithmetic floor.
+
+The optional four-term quadratic model uses the literal moving-length
+enclosure and the exact incomplete-Gamma recurrence, not merely the pure
+selected limiting array. Independent 110-digit replay verifies 33 cases.
+It stays below 0.0798 for many orders, then crosses at the first sampled
+N=83886080 and approaches the same obstructive source numerically. The
+omitted moment-tail bound includes homogeneous channel memory as well as
+Poisson forcing; a forcing-only bound is insufficient. These model values
+and regression heights are not actual prime sums, zero ordinates, measured
+residuals, certificates, or floor credit.
+
+Keep the preceding global square payment. Generic positivity, small relative
+density error and factorial coupling alone do not eliminate the coherent
+unit moment source; the next signed estimate needs additional proved
+constraints for ACTUAL ordinary-prime correlations. Do not claim that
+discreteness alone supplies them or reuse generic Abel/PNT variation as a
+payment. See `docs/zeta-riesz-positive-density-audit.md` and its scoped
+audit. Continue locally with optional probes outside CI, without commits,
+pushes, subagents, root registration, public updates or wider gates.
+
+`ZetaRieszSelbergSourceAudit` completes the GENERIC method countertest:
+`factorialQuadratic_eq_polynomial` matches all four existing signed slots,
+and `model_polynomial_eq_harmonic` joins their exact factorial endpoints
+before taking limits. Logged order zero remains present; ordinary order
+zero was cancelled by the earlier exact identity, not discarded by a norm.
+The original moving length and actual integer cutoff `floor(13N/32)` are
+retained. No old hard-share packet is completed by this leaf.
+
+The normalized Selberg trace cancellation holds for every moment array
+tending to -1. The strictly positive, common-phase continuous density
+therefore passes that trace test, while its FULL signed quadratic is
+proved to converge to `1-retainedCost(u)` and eventually exceed `399/5000`
+at `u=10001/20000`. Even a cofinal `399/5000+o(1)` model bound is ruled out.
+This upgrades the preceding numerical delayed-crossing observation to a
+cofinal theorem, not a numerical entry-order certificate. The model also
+has relative density error below every fixed stretched exponential past
+an explicit threshold.
+
+Do not infer the desired ordinary-prime floor from generic positivity,
+common phase, factorial coupling, stretched-exponential density error and
+the normalized Selberg source trace alone. This is NOT a theorem that the
+model satisfies the literal integer Möbius/Selberg coefficient identity,
+and it does not refute a bound for ordinary primes. A further independently
+proved actual-prime constraint is required; no such bound, new floor
+margin or zero exclusion is supplied here. Beurling-prime literature in
+the note is context only and is not formalized or transferred to this
+carrier. Preserve the existing global square and completion payments.
+See `docs/zeta-riesz-selberg-source-audit.md` and its scoped audit. Continue
+locally without commits, pushes, subagents, root registration or wider
+gates; focused proof checks are optional and previous snapshots stay fixed.
+
+`ZetaRieszPairPrimePowerPayment` pays the FULL ordinary-prime/full-von-
+Mangoldt difference in the existing four-slot signed factorial quadratic.
+All logged orders, including zero and one, remain. The arithmetic proper-
+power array has one summable geometric majorant with rate `10001/15000`;
+the exact joined harmonic weights supply an inverse-order factor. For
+`N>=65536`, `1/2<=u<=10001/20000`, and BOTH complete arrays bounded by `C`,
+the entire difference costs at most `22*C*powerMass/N`. The exposed-zero
+array bounds prove existence of such a finite `C_rho`; the payment is
+conditional on those hypotheses, not an unconditional bound for the main.
+No simplicity assumption is needed for this correction.
+
+`norm_prefix_sub_mangoldt_le` links the SAME literal signed prefix to the
+full von Mangoldt quadratic through the already-paid WHOLE symmetric
+completion, ONE square correction and the new `1/N` cost. The native
+simple-zero floor ledger spends these costs once, retaining the common
+phase, actual integer order cutoffs, moving length and all low orders.
+Do not reuse the older physical low-order payment or apply this bridge to
+an unrelated masked cofactor. The integer Selberg/Möbius convolution can
+now be used without an unpaid proper-power correction, but it does not
+itself bound the actual weighted central/successor terms.
+
+The independent cofinal `399/5000` upper bound for the remaining signed
+main is still OPEN; no floor constant, selected-resonance margin or zero
+exclusion has been improved. Do not describe the `O_rho(1/N)` correction
+as decay of the source-carrying main, nor multiply a separate small
+relative error by the crude exponential carrier envelope. Preserve every
+previous no-go and proof/numerical snapshot. See
+`docs/zeta-riesz-pair-prime-power-payment.md` and its scoped audit. Continue
+locally without commits, pushes, subagents, root registration or wider
+gates; focused leaf/axiom checks remain outside ordinary CI.
+
+`ZetaRieszJoinedPairSignCover` tests the FULL joined prefix/Selberg
+coefficient before assigning signs. On the original core window and
+N>=65536, it proves coefficient >=log(n)/50 on the balanced share box
+and <=-log(n)/200 on the higher-owner box. Intersecting their favorable
+ACTUAL cosine halves with the SAME retained complete-period/semiprime
+labels gives an independent negative cos-squared credit. No exposed-zero
+hypothesis, support completion, density transport or positive main
+allowance is used in this coefficient/atom theorem.
+
+`prefix_eq_rest_sub_exact_credit` and
+`eventually_native_exact_credit_floor` keep the ENTIRE signed favorable
+contribution paired with the remaining sum. The rational `signCredit` is
+only a lower benchmark for `exactSignCredit`, not permission to discard
+its excess or call the selected population paid by o(1). Do not norm or
+bound the complementary sum separately before matching it with that exact
+credit. No cofinal credit size, global 399/5000 bound or zero exclusion is
+proved. The optional 90-case coefficient grid estimates no prime/phase
+density and supplies zero cofinal floor credit. Preserve every earlier
+payment and no-go; see `docs/zeta-riesz-joined-pair-sign-cover.md` and its
+scoped audit. Continue locally without commits, pushes, subagents, root
+registration or wider gates.
+
+`ZetaRieszPairPhaseCreditGrowth` now closes the cofinal population-size
+limitation of `ZetaRieszJoinedPairSignCover`. At every fixed abs(y)>=54,
+two fixed-width adjacent ACTUAL prime boxes are shifted a bounded distance
+from log-prime slope N so their product cosine is <=-1/2. Their injective
+product map, exact balanced shares and strict central interior retain the
+original radial/endpoint/complete-period masks. The existing fixed-width
+PNT count lower bound funds these literal labels; it is NOT transport of
+the signed main or a fixed-power prime error estimate.
+
+For 1/2<u<=10001/20000, `eventually_favorable_sum_upper` proves the source-
+scaled real favorable sum is <=-c_(u,y)*(2u)^N/(N+1)^3 eventually, for
+some c_(u,y)>0. `signCredit` and the ENTIRE `exactSignCredit` tend to
+positive infinity, including on the native dyadic sequence. No exposed-
+zero assumption, entry-order certificate or height-uniform constant is
+used or supplied. This is an independent cofinal signed-population bound,
+not a global 399/5000 bound or a numerical improvement to the floor gap.
+
+The next estimate must keep the exact identity `prefixPairDefect.re =
+signedRest.re - exactSignCredit` joined. Do not discard excess exact
+credit, pay it as o(1), replace it by a fixed allowance, or separately
+norm the rest. A growing negative contribution can be matched by a
+growing positive rest; neither growth establishes the final joint floor.
+Preserve all prior payments/no-gos. See
+`docs/zeta-riesz-pair-phase-credit-growth.md` and its scoped audit.
+The strict local build/namespace/axiom checks are optional outside CI;
+continue locally without commits, pushes, subagents, root registration or
+wider gates. Prior proof/numerical snapshots stay fixed.
+
+`ZetaRieszJoinedPhaseRadius` now supplies an independent estimate for the
+WHOLE retained `prefixPairDefect`, after the exact symmetric factorial
+convolution and Selberg join. At every fixed abs(y)>=54 it proves an actual
+radius 1/2<R_y<3/4 and C_y>0 with norm(prefix)<=26*C_y^2*(u/R_y)^N plus
+the already-paid whole-completion and single square budgets, for all
+1/2<=u<=10001/20000 and N>=65536. The two correlated logged indices are
+bounded by their TOTAL order. All order-zero channels and literal support
+payments remain; no exposed-zero hypothesis or generic density transport
+is used. This is a bound for the current sum, not a new carrier.
+
+Together with the actual cofinal favorable-prime credit, the checked
+global bound is norm(prefix)<=D_(u,y)*(N+1)^3*(1/(2R_y))^N*exactSignCredit
+plus the same errors. Since 1/(2R_y)<1, norm(prefix)/exactSignCredit tends
+to zero and the literal signedRest/exactSignCredit tends to one at EVERY
+fixed admissible height. Keep the ENTIRE credit joined; do not spend it
+again, discard its excess or separately bound the rest. Relative
+cancellation of exponentially growing populations does not imply that
+their absolute difference is below 399/5000.
+
+Absolute decay follows only for u<R_y. A concrete regression proves the
+full requested radius interval has cofinal Re(prefix)<399/5000 when
+log(abs(y)+3)<=1800, using the EXISTING signed-pole region and radius
+100011/200000. Its uniform source rate is 100010/100011. These heights
+are ALREADY excluded in the candidate strip; do not report this transfer
+as a new zero-free region or progress into the uncovered strip. The
+height-dependent nonempty interval supplied at every height likewise
+has no new zero-exclusion claim or certified entry order.
+
+`radius_le_of_nonzero_ordinary_source` proves that a nonzero normalized
+ordinary-prime source forces any such Cauchy radius R_y<=u. Do not
+silently assume a radius past the selected pole, use exposed-gap decay
+on that selected source, or call relative cancellation source-o(1).
+The unchanged 0.000071797... is a contradiction margin, not measured
+remaining mass or a fraction of floor progress. The next endgame
+estimate must control the ABSOLUTE joined signed residue at the
+uncovered heights; another norm estimate with rate>=1 does not close it.
+
+See `docs/zeta-riesz-joined-phase-radius.md`, its scoped audit and the
+optional bound-factor probe `scripts/probe_riesz_joined_radius_rates.py`.
+The probe samples no primes and labels assumed radii as scenarios; no
+unknown height-dependent constant is certified as one. Preserve all
+earlier no-go audits and proof/probe snapshots. Continue locally without
+commits, pushes, subagents, root registration or wider gates; focused
+leaf/namespace/transitive-axiom checks remain outside ordinary CI.
+
+`ZetaRieszSelbergRenewalAudit` is a strict CONTINUOUS countertest of
+generic Selberg positivity, not a new carrier or an ordinary-prime bound.
+It proves a nonnegative density numerator with an exact common phase at
+every factorial order, the rational count/logarithmic-derivative identity,
+and the genuinely integrable full second-convolution Laplace identity
+`Z^2-Z'`. The selected double pole cancels exactly. Nevertheless the
+unchanged four-slot central/successor/logged/trace functional tends to
+`1-c_ret(u)>399/5000`; even a cofinal bound with a vanishing error fails
+for this synthetic model. No arithmetic floor constant has improved.
+
+Keep the distinctions explicit: the model has an extra real pole and a
+count residue >=29160000, not ordinary integer residue one. It does not
+satisfy the literal integer Mobius/Selberg coefficient identity and does
+not refute a bound which uses actual integer counting, ordinary prime
+support or the existing zero-free regions. Do not conclude that count
+normalization alone closes the floor, or that the literal Selberg route
+is impossible, from this restricted generic test.
+
+Before statistical scans, keep the original factorial slots and their
+complementary indices; test the exact algebraic join first. The optional
+`probe_riesz_selberg_renewal.py` does this on the continuous model and
+labels geometric channel truncation separately from roundoff, moving-
+length floor error and proof claims. Its sampled threshold crossing is
+neither a first-crossing certificate nor a literal-prime entry order.
+
+The next useful arithmetic test must exploit a further proved constraint
+on the ACTUAL ordinary-prime/integer convolution with its correlated
+factorial weights and immediately target the signed upper bound 399/5000.
+Another generic positivity/trace or unweighted Selberg identity is not
+an independent floor payment. See
+`docs/zeta-riesz-selberg-renewal-audit.md` and its scoped audit. Preserve
+all earlier no-gos and snapshots. Continue locally without commits,
+pushes, subagents, root registration or wider gates.
+
+The optional Selberg spectral-rate audit now checks the next literature
+transfer before building a new framework. Tao's fixed-test convolution
+seminorm yields qualitative PNT cancellation, not a uniform estimate for
+the growing source-scaled factorial kernel. The focused
+`CheckRieszSelbergSpectralRate.lean` instantiates the existing exact Laplace
+formula and checks four synthetic rate regressions with standard axioms.
+At u=10001/20000, error exp(-T/20000) tends to zero but its normalized
+factorial average is exactly one for EVERY order. Strict decay by this
+positive-error route needs delta>1/20000; delta=1/10000 WOULD give
+10001/10002, but that arithmetic error estimate remains unproved.
+
+Do not spend the unweighted angular factor 2/pi as a source-aware
+convolution contraction, interchange fixed-test and moving-order limits,
+or count O(log N) fixed contractions as a fixed exponential saving.
+The Saidak literature input relates a supplied prime-counting error to
+the Selberg remainder; it is not an independent stronger input for the
+current complex factorial weights. Stop this unweighted seminorm
+transplant unless an actual uniform signed arithmetic estimate is found.
+The literal integer Selberg route itself is not refuted by this audit.
+
+This is supporting negative evidence only: no new arithmetic floor
+saving, 399/5000 bound or zero exclusion. The optional rate probe samples
+no primes or zeta values, labels every assumed contraction as a scenario,
+and never certifies an unknown carrier constant as one. See
+`docs/zeta-riesz-selberg-spectral-rate.md` and its scoped audit. Preserve
+all earlier source/proof/probe snapshots. Continue locally without
+commits, pushes, subagents, root registration or wider gates.
+
+`ZetaRieszJoinedSourceError` now proves absolute summability of the
+actual normalized ordinary-prime array's difference from the selected
+constant -m under the EXISTING exposed-zero hypotheses. All competing
+direct modes, reflected error channels, the pole, the analytic residual
+and proper prime powers are included. No logged order is removed and
+every analytic multiplicity remains. Define D_rho as that full norm sum;
+the same result gives the array bound m+D_rho without a separate premise.
+
+The existing whole-quadratic perturbation theorem now pays the ENTIRE
+joined four-slot source error by 22*(m+D_rho)*D_rho/N for N>=65536.
+`norm_prefix_sub_selected_le` and `abs_re_prefix_sub_selected_le` transfer
+this to the SAME literal signed retained main using the already-proved
+whole completion and one square budget. Proper powers are already in
+D_rho: do not add their separate insertion cost again. This uses the
+licensed whole symmetric completion, not a hard-masked complete-leg
+phase transfer. Orders zero and one stay in the exact evaluator.
+
+This is a conditional quantitative error payment, NOT an independent
+bound on the selected residue. The latter still tends to
+m^2*(1-c_ret(u)); the simple-source limit at the ceiling still exceeds
+399/5000. D_rho has no certified numerical size, and the synthetic
+finite-error probe supplies no prime/zeta data, entry order or floor
+saving. Its opposite-sign tests explicitly forbid inferring a universal
+one-sided correction sign. Do not spend this o(1) cost as a selected-
+resonance credit or report it as a new zero exclusion.
+
+See `docs/zeta-riesz-joined-source-error.md` and its scoped audit. The
+strict leaf/namespace/transitive-axiom checks remain optional outside CI.
+Preserve all earlier payments, no-gos, proof/probe snapshots and concurrent
+semiprime work. Continue locally without commits, pushes, subagents,
+root registration or wider gates.
+
+`ZetaRieszPairFloorAllMultiplicity` removes an unnecessary second target
+from the CURRENT retained-pair route. Its checked exact source is
+m^2*(1-c_ret(u)) for EVERY positive analytic multiplicity. The preceding
+whole-source error, whole completion and one square budget transfer this
+source to the SAME literal prefixPairDefect; all orders and masks remain.
+The existing scalar bound c_ret(u)<4601/5000 makes that source strictly
+larger than 399/5000 for every m>=1.
+
+Consequently the SAME independent cofinal upper bound
+Re(prefixPairDefect)<=399/5000+err, err->0, excludes every multiplicity.
+`false_of_prefix_cofinal_bound` accepts any cofinal order sequence;
+`false_of_native_prefix_bound` uses the original native dyadic sequence.
+`no_candidate_zero_of_independent_prefix_bounds` keeps this arithmetic
+estimate explicitly as an OPEN premise and conditionally excludes
+Re(rho)>=19999/20000. It uses the existing single controlled source-disk
+successor theorem, not a global rightmost assumption or the invalid
+generic mixed-mode chain. Height>54 is already proved, not a new premise.
+
+Do not call that conditional endpoint a zero-free theorem. No arithmetic
+floor saving, carrier change or numerical entry order is supplied here.
+The older whole-carrier ceiling remains unproved, but is NOT an additional
+requirement if the current independent retained-pair target is established.
+This is because that target itself is stronger than the older whole-carrier
+floor at higher multiplicity; do not silently equate those premises.
+
+The optional source-side scalar/factorial probe checks exact index joins
+before evaluation and samples no primes or zeta values. Its 0.000071797...
+simple-source margin is unchanged and is not measured remaining mass.
+See `docs/zeta-riesz-pair-floor-all-multiplicity.md` and its scoped audit.
+The NEXT required result is the independent signed 399/5000 bound itself;
+avoid more endpoint/source-error or separate ceiling work for this route.
+Preserve all prior payments, no-gos and snapshots. Continue locally
+without commits, pushes, subagents, root registration or wider gates.
+
+The optional `probe_riesz_pair_source_resolution.py` now calibrates the
+joined detector in declared SOURCE units after exact four-slot collection.
+No further zero coefficients were found. It reads all three frozen prime
+caches without rerunning them:2080 distinct primes,50 boxes,48256 shared-
+prime pair incidences,orders256/640/1536 and no box at the65536 proof
+threshold. Astronomical test heights exceed every cached prime; this is
+finite-regime coverage only, not a no-go for eventual fixed-height bounds.
+
+The reference array g^(k+1)*phi_k, g=2u, is SYNTHETIC and is not an exact
+ordinary-prime mass or a PNT/Abel transport. Its numerical interval price
+g^(N+1)*(P_N+g*Q_N) quantifies a conservative method's sensitivity, not
+unpaid arithmetic mass or a new majorant strategy. The bounded-IID sample
+cost is SUFFICIENT, never a minimum-cost theorem, and is not applied to
+cached prime draws. High-precision sampled phases and Cartesian pair count
+alone do not give population coverage or source-unit precision. Discovery
+must still produce an exact identity or a proved actual-prime constraint
+before receiving floor credit. Independent replay checks finite genuine-
+prime normalization as well as the scalar model. No arithmetic saving,
+new zero exclusion or new Lean endpoint is supplied. See
+docs/zeta-riesz-pair-source-resolution.md and its scoped audit. Preserve all
+prior proof/probe bytes and concurrent semiprime work. Work remains local,
+without commits/pushes/subagents/root registration/wider gates; next target
+is still the independent joint signed399/5000 estimate itself.
+
+`ZetaRieszPairPhaseRecurrence` proves recurrence for every fixed integer
+logarithm simultaneously and, by absolute convergence, for COMPLETE actual
+ordinary-prime moments and the existing signed joined evaluator at each
+FIXED order. The resulting signed lower inequality rules out a uniform
+relative height contraction when its starting real value is positive.
+It changes height; it does NOT refute or pay the fixed-height cofinal floor.
+Do not interchange these limits or transfer recurrence through a literal
+height-dependent support mask. The optional frozen-prime LLL replay retains
+the exact factorial prefix, four signed slots and one diagonal; its tiny
+incomplete population supplies no floor credit. See
+docs/zeta-riesz-pair-phase-recurrence.md. Preserve prior snapshots and all
+no-gos; continue locally without commits/pushes/subagents/root/wider gates.
+
+The optional `ZetaRieszCeilingPrimeThinningAudit` is a stronger detector
+control, not a ceiling payment. At u=10001/20000 and fixed y=54 it uses
+GENUINE ordinary primes with retained weights in [0,1]. Exact tilted-prime
+pole decomposition and finite clipping-head decay prove that the retained
+fractional moments tend to -2; the SAME joined evaluator consequently
+eventually exceeds 42/25. The removed component tends to +2. This is not
+the complete prime measure, not a counterexample to its ceiling, and not
+a new zero exclusion. Its exact completeness ledger must remain joined.
+
+Cumulative rounding on actual integer prime labels is proved binary,
+zero at composites, and within one in prefix count. The infinite binary
+factorial-moment Abel bridge is NOT formalized in this leaf. Do not upgrade
+the finite binary probe or its floating floor replays to a cofinal witness.
+Its 82,025-prime reference covers only primes through 2^20; it estimates no
+entry order and supplies zero arithmetic ceiling credit.
+
+Before statistical or geometric detector scans, collect exact terms with
+each prime leg attached to its factorial index, both swapped incidences,
+one diagonal, phase, support/mask identifier and the actual moving cutoff.
+First check endpoint cancellation; then retain the complementary population
+and every mixed retained/complement product. Genuine prime support and unit
+sample weights do not establish COMPLETE prime coverage or make omitted
+terms negligible. A discovered pattern earns floor/ceiling credit only
+after its literal signed completeness/mask error is independently paid.
+See docs/zeta-riesz-ceiling-prime-thinning.md and its scoped audit. Preserve
+all prior source/proof/probe bytes and concurrent semiprime work. Continue
+locally without commits/pushes/subagents/root registration/wider gates.
+
+`ZetaRieszCeilingMomentIsolation` now gives an independent finite-order
+multiplicity test from COMPLETE von Mangoldt moments. It keeps the
+selected -m exactly and prices the competing actual divisor ONCE by
+its total multiplicity-weighted Poisson mass <=log(abs(y)+22)+11.
+Do not replace this by cardinality times a second multiplicity bound.
+The competing-zero gap and the local Cauchy radius are separate inputs;
+exposure alone does NOT supply the concrete 11/20 gap.
+
+At order4096, original radius<=10001/20000, competing gap11/20, and
+log(abs(y)+22)<=10^150, exact rational block certificates make the test
+<2. Actual isolated candidate zeros are therefore simple, and the SAME
+joinedPhysical42/25 ceiling is paid eventually there. The optional
+400-bit scalar replay gives1.506334952..., not an actual-prime sample,
+native entry order or progress percentage. The all-height fixed-strip
+ceiling and simple-zero floor remain OPEN; the finite height/isolation
+conditions must never be suppressed in a claim.
+
+Below that finite height bound, a surviving multiple candidate forces a
+distinct actual zero within11/20 of its evaluation centre, with real
+part>=19/20 and ordinate difference<1/4. This is a local cluster, not a
+proved rightward successor or a global rightmost zero. A next signed
+test must retain those nearby modes together rather than assume they
+are separated. All logged orders0/1 remain in the general theorem.
+See docs/zeta-riesz-ceiling-moment-isolation.md and its scoped audit.
+Preserve prior positive/no-go/probe snapshots and concurrent work;
+continue locally without commits/pushes/subagents/root registration/
+wider gates. Optional leaf and scalar checks stay outside ordinary CI.
+
+The same leaf also keeps the competing actual mode sum SIGNED.
+`multiplicity_add_competing_re_le` needs NO gap and proves a complete
+finite-order bound on m+Re(Q_n), norm-paying only the arithmetic moment,
+pole, analytic remainder and reflected channels. In the original fixed
+strip through the stated finite log-height, a multiple candidate forces
+Re(Q_4096)<-1/5 by `multiple_forces_signed_counterweight`. Any cluster
+probe must preserve that signed aggregate and its actual multiplicities.
+This finite-order inequality does not pay the cofinal carrier ceiling:
+(2u)^(n+1) grows, so Q_n->0 under exposure cannot be substituted into a
+fixed-order bound to claim a contradiction. The new scalar replay checks
+the stronger test<9/5; its sharper numerical counterweight is not claimed
+as a Lean constant or an actual-zero sample.
+
+`ZetaRieszCeilingClusterPowerAudit` closes the multi-order/local-mode method
+test negatively, not the actual ceiling. A translated M=131072 root cloud
+has distinct exposed synthetic positions, selected residue -2, and negative
+integer residue -2 at every node. The retained local physical denominators
+lie in the nontrivial-zero strip and satisfy Re(D)>=u. They are NOT actual
+NontrivialZetaZero objects; no prime or global xi identification is made.
+
+Collect the exact character harmonics before numerical evaluation. The
+explicit regular correction cancels every logged power below M, including
+orders0/1. All orders pass ||a_n||<=(2u)^(n+1), but a_n->-2 and the SAME
+joined evaluator eventually exceeds42/25. The exact local ledger has an
+analytic regular representative beyond radius1, with HasSum identifying its
+coefficients. Its synthetic positive pole outside the local disk is retained;
+this is NOT a counterexample to the actual all-negative global divisor.
+
+Thus more moment windows, negative integral residues, exposure, rightmost
+half-plane geometry and a FREE local analytic remainder cannot establish the
+ceiling alone. A next proof must use the actual complete Euler/arithmetic
+measure or additional actual-remainder structure. This no-go earns ZERO new
+arithmetic ceiling credit. Preserve the prior actual isolation-sector payment
+and gap-free signed constraint; the all-height fixed-strip ceiling and the
+simple-zero floor remain OPEN. No RH/zero-free claim or native entry order.
+
+See docs/zeta-riesz-ceiling-cluster-power-audit.md and its scoped audit. The
+optional exact/420-bit replay collects matching terms before statistics and
+uses no actual prime/zero data. All source/proof/probe pins and concurrent
+semiprime work remain intact. Continue locally without commits, pushes,
+subagents, root registration, public metadata changes or wider gates.
+
+`ZetaRieszCeilingSignedCluster` pays the SAME native joinedPhysical42/25
+ceiling in additional SIGNED nearby-cluster sectors. Only the distance-
+separated exterior is norm-paid once by actual multiplicity mass with the
+explicit (u/R)^(n+1) saving. The selected source plus the entire nearby
+genuine divisor stays signed. No prime-density/thinning model is substituted.
+
+At order4096, original fixed radius, R=11/20 and log(abs(y)+22)<=10^150,
+the independent complete-arithmetic test is <9/5. A joined nearby real floor
+>=-1/5 consequently proves actual simplicity, then the native ceiling under
+original exposure. Nearby zeros need not be absent or individually positive.
+Keep the signed cluster floor as an OPEN condition for arbitrary clusters.
+
+For D.re>0, k*abs(D.im)<=D.re makes Re((u/D)^k)>=0 by a whole-power estimate.
+Thus ALL nearby genuine modes with ordinate offset<=1/8194 at power4097 are
+free constructive contributions; their count/multiplicities are not debits.
+The theorem pays this nonisolated geometry, with height/exposure kept explicit.
+A surviving multiple candidate in the stated finite height range must have
+nearby signed aggregate<-1/5 and an ACTUAL opposing-phase zero with real
+part>=19/20 and 1/8194<ordinate offset<1/4. This is not a rightward chain.
+
+The synthetic mixed-sign probe is accepted by the signed criterion, while
+the frozen root-cloud no-go remains unpaid (near profile ~-2). Preserve the
+exact common logged index and join components before taking real parts.
+Do not use finite-order signed tests together with a cofinal phase limit.
+The all-height fixed-strip ceiling and simple-zero floor remain OPEN; no
+zero exclusion or native entry order is supplied. The next needed bound
+is on the ACTUAL opposing signed profile (and unrestricted heights), not
+another absolute cluster allowance or unconstrained moment-window extension.
+
+See docs/zeta-riesz-ceiling-signed-cluster.md and its scoped audit. Optional
+leaf/14-linter/axiom and420-bit regressions remain outside CI. Preserve all
+prior source/proof/probe bytes and concurrent semiprime work. Continue locally
+without commits/pushes/subagents/root registration/public metadata/wider gates.
+
+
+`ZetaRieszCeilingFejerCluster` now joins EIGHT complete arithmetic moment
+orders by an exact radial Fejer square identity before bounding any opposing
+actual-zero phase. Exposure gives norm(v_z)<=1; no stronger distance gap or
+constructive ordinate cone is assumed. Every mode retains its exact logged
+power, integer multiplicity and order-zero endpoint in the positive kernel.
+At stride1100, degree8, original radius<=10001/20000 and
+log(abs(y)+22)<=10^150, exact rational blocks prove the WHOLE cost<107.
+The independent ACTUAL inequality is72m<9W+107, with W the selected-erased
+canonical divisor's total analytic multiplicity, counted once.
+
+Thus W<=4 proves actual simplicity and pays the SAME native42/25
+joinedPhysical ceiling under original exposure; arbitrary opposing phases
+are allowed. Any surviving actual multiple source in that finite height
+range requires W>=5, meaning five multiplicity units, not five distinct
+zeros. Do not suppress the sparse/height/exposure assumptions or use this
+sector theorem to replace the all-height fixed-strip objective.
+The dense root-cloud no-go remains unpaid; all prior no-gos are preserved.
+The simple-zero floor, zero exclusion and full ceiling remain OPEN.
+
+Before statistical scans, collect the signed kernel across both indices
+(mode AND logged order) and check exact endpoint/square bookkeeping. A
+single opposing phase need not be a separate debit. Prime Gram positivity
+alone does not replace actual divisor mass/completeness constraints.
+Next target is the actual DENSE signed divisor or stronger complete-prime
+correlations, not another absolute cluster allowance. Fixed-order tests
+must not be combined with a cofinal mode limit to claim contradiction.
+
+See docs/zeta-riesz-ceiling-fejer-cluster.md and its scoped audit. Optional
+leaf/14-linter/transitive-axiom and420-bit replay passed locally, including
+43 theorems with generated helpers and25 synthetic geometry rows. No actual
+prime/zero samples or native entry-order certificate. Preserve all prior
+source/proof/probe bytes and concurrent semiprime work. Continue locally
+without commits/pushes/subagents/root registration/public metadata/wider gates.
+
+
+`ZetaRieszCeilingJointKernelAudit` rules out bounded POSITIVE Laplace
+norm payment for ALL moving complex kernels when the selected signed
+response is preserved and a strictly separated positive price tends to
+zero. Join the full complex coefficient kernel first: the theorem still
+applies. No degree or coefficient-growth restriction is imposed on moving
+polynomial families. This strengthens the fixed-filter audit; it supplies
+ZERO new arithmetic ceiling credit, and is not a lower bound on any actual
+signed prime carrier or literal prime norm. Do not transport its price
+through PNT/Abel density or silently identify it with actual-prime mass.
+
+At the ORIGINAL upper radius, arithmetic damping1/2 and separated
+payment7/10 with exp(-N/32) cost, the kernel norm price is at least
+exp(N/255936)/2 for N>=64 and exceeds42/25 at N>=400000. These are METHOD
+price thresholds, never native carrier entry orders. The optional adjacent
+factorial regression collects both exact slots before scanning: selected
+response10001-10000=1 and real-axis pole slots10001-10001=0. Its full
+joined norm price at4096 is187.786..., despite exact signed pole
+cancellation. Keep u^(N+1), both factorial indices and the common power.
+The scalar probe samples no primes/zeros and gives no unpaid-mass estimate.
+
+Preserve the paid Fejer sparse-cluster ceiling, all signed constraints and
+all prior no-gos. Dense competing multiplicity>=5 and unrestricted heights
+remain OPEN, as does the simple-zero floor. Next work must exploit ACTUAL
+complete-prime or signed-divisor correlations, with complementary terms
+and phases retained, rather than retune a generic positive norm budget.
+All previous proof/probe pins, literal masks, diagonal and orders0/1 remain
+unchanged. See docs/zeta-riesz-ceiling-joint-kernel-audit.md and its scoped
+audit. Optional leaf/14-linter/transitive-axiom and420-bit replay remain
+outside CI. Continue locally without commits/pushes/subagents/root
+registration/public metadata/wider gates; the full goal stays active.
+
+
+`ZetaRieszCeilingFejerBalance` keeps the exact eight-order competing
+profile P=2*sum(9-j)*Re(Q_(1100j-1)), with the original stride/degree.
+The independent COMPLETE actual arithmetic inequality is72m+P<107 in
+the original fixed radius through log(abs(y)+22)<=10^150. The exact
+Fejer baseline is subtracted only AFTER joining both indices. All actual
+multiplicities, the selected residue, endpoints and complements stay joined.
+No free analytic remainder or synthetic prime measure is substituted.
+
+A mode satisfying norm(v^1100-1)<=1/8 has signed profile credit>=42;
+every remaining mode has whole-profile contribution>=-9. Define C/O
+by the EXACT complementary partition of the canonical genuine local
+divisor, counting multiplicity once. Then P>=42C-9O and the net debit
+is9O-42C, improving the old9(C+O) debit by51C. These are PROFILE units,
+not native carrier cost, measured reserves or a progress percentage.
+Coherence is at the common stride; keep INTEGER phase turns and every
+individual logged power. A single opposing moment can be constructive
+in the joined test. Never discard the residual population or norm phases.
+
+The integer balance3O<=14C+12 proves actual simplicity and pays the SAME
+native42/25 joinedPhysical ceiling under original exposure. No additional
+total-mass cap is assumed: dense balanced sectors are now covered. The
+geometry/height inputs are explicit and are NOT inferred from exposure.
+The stronger exact signed condition P>=-36 likewise pays that ceiling.
+A surviving multiple candidate forces P<-37 AND3O>=14C+13; this is the
+remaining unbalanced-profile obstruction. The full all-height fixed-strip
+ceiling and the simple-zero floor remain OPEN. Do not replace that full
+goal by the newly paid conditional sectors or claim a zero exclusion.
+
+The optional420-bit regression replays580 synthetic mode rows including
+570 distinct positions. These fail the older sparse/single-order tests
+and pass the new balance; they are NOT actual zeros or actual-prime
+samples. The frozen root-cloud no-go remains unpaid (local profile near
+-144), with its tiny excluded-radius complement retained. No native
+entry order is certified. See docs/zeta-riesz-ceiling-fejer-balance.md.
+
+Preserve every prior positive/no-go/probe pin and all literal masks,
+orders0/1, moving length and diagonal. Next discovery must target the
+ACTUAL unbalanced signed profile or stronger complete-prime correlation,
+not more conditional phase sectors or another absolute moving-kernel
+budget. Limit exploratory probes to the still-unpaid populations; use
+paid controls only as verification regressions. Continue locally without
+commits/pushes/subagents/root registration/public metadata/wider gates;
+optional leaf/14-linter/transitive-axiom/scalar checks stay outside CI.
+
+
+`ZetaRieszCeilingEulerJetAudit` closes the proposed finite-Euler-jet
+backstop as a METHOD route, with ZERO new arithmetic ceiling credit.
+For ANY finite J and ANY actual height y, the frozen exposed synthetic
+negative-integer double-source model can match the COMPLETE ordinary-prime
+array at every n<J exactly. A finite polynomial changes only its local
+analytic remainder. The source stays -2, and the SAME signed evaluator
+still tends to1.680512811860...>42/25. Its patched infinite tail is NOT
+identified with actual primes, actual zeros or the actual zeta remainder.
+
+Every order, including0/1, passes the independently proved complete Euler
+norm envelope (2u)^(n+1)+640u(n+1)(10u/7)^n. The finite signed evaluator
+also agrees exactly with actual arithmetic when N+1<J. The model retains
+its synthetic pole/zero geometry and every complement; no native mask or
+paid ledger is modified. At J=512 the patch price is<=10^77 and the
+explicit geometric regular coefficient constant is<=10^78 on the SAME
+normalized4/3 disk. These are MODEL constants, never native carrier cost.
+No unspecified regular constant is silently assumed to be an actual one.
+
+Before adding another finite complete-prime feature test, check whether
+finite polynomial interpolation can pass it while retaining the unpaid
+source. Exact finite moments and exact finite evaluator agreement alone do
+not identify the complete arithmetic tail. The next necessary estimate
+must couple the ACTUAL complete-prime/divisor/remainder across a cofinal
+order range, with its fixed-height constants retained; do not merely widen
+a finite detector window or add another conditional phase geometry.
+
+Numerical detectors must track INTERVAL WIDTH as well as their central
+values. The first512-order360-bit Taylor trial lost useful precision and
+is retained as inconclusive; its inflated norm-price upper bounds are NOT
+actual prime mass or new obstructions. The successful optional420-bit
+replay checks128 complete-Euler coefficient enclosures in64-order heads,
+ten unchanged finite evaluators and six exact synthetic zero plateaux.
+The arbitrary-J and concrete512 statements are Lean proofs, not numerical
+extrapolations. No actual zero samples or native entry orders are certified.
+
+See docs/zeta-riesz-ceiling-euler-jet-audit.md and its scoped audit.
+The leaf/14-linter/transitive-standard-axiom checks passed, including52
+theorems with generated helpers. All prior positive/no-go/probe pins stay
+unchanged, as do literal phases, moving length, factorial endpoints and
+diagonal. The full all-height fixed-strip ceiling, simple floor and zero
+exclusion remain OPEN. Continue locally without commits/pushes/subagents,
+root registration/public metadata/wider gates; the goal stays active.
+
+
+`ZetaRieszCeilingPhaseAverage` proves a cofinal geometric HEIGHT-AVERAGED
+estimate for the SAME native joinedPhysical carrier, retaining every
+original mask, allocation, complement, moving length, count, diagonal and
+factorial order. The squared joined coefficient mass is at most
+C*radiusCeiling^2*(10001/15000)^(2N), with C the COMPLETE convergent
+32*divisorSquareDirichletMass(5/4). No exposure, multiplicity, phase
+independence, prime-density or sparsity premise enters this theorem.
+
+At every translated height window the mean-square bound retains the
+EXPLICIT off-diagonal term crossingCost/T. Both incidences, original
+integer products and logarithmic spacing stay joined. The height limit
+comes FIRST at fixed N; only then does the native diagonal energy tend
+to zero over arbitrary moving counts. Do not exchange those limits,
+discard the window term or infer a fixed-height or almost-everywhere
+ceiling from the long-height average. This slice pays ZERO pointwise
+ceiling credit. The full original all-height42/25 target, simple floor
+and zero exclusion remain OPEN; the goal stays active.
+
+The optional interval regression uses48 actual squarefree labels and128
+prime factors, with literal signed divisor responses and allocation
+orders; it is NOT complete native-core enumeration. Sample core membership
+is not certified and the joined multiplier is not applied there. Lean,
+separately, proves the entire native joined-carrier theorem. Near-equal
+products in the64-order sample have log spacing about1.08e-17; different
+prime incidences can retain the SAME total-log phase over long windows.
+Track label-level signed cross correlations and interval widths before
+making statistical claims; do not randomize individual prime phases.
+
+Next work must quantitatively control the ACTUAL selected-height signed
+aggregate across cofinal orders, including its cross-label correlations.
+Finite samples and average decay alone cannot do that. Preserve all249
+prior positive/no-go/probe pins and every literal source ledger. See
+docs/zeta-riesz-ceiling-phase-average.md and the scoped audit. The leaf,
+14-linter/transitive-standard-axiom and420-bit independent replay passed.
+Continue locally without commits/pushes/subagents/root registration/public
+metadata/wider gates; no public zero-free or RH claim is authorized.
+
+
+`ZetaRieszCeilingSparseArithmetic` proves an ACTUAL POINTWISE payment of
+complete moving native residue populations, uniform in height/counts and
+with every original mask, signed complement and factorial order retained.
+At d_N=2^(N/1600+1), each whole class has price C*(N+1)^2*exp(-N/16384).
+Any union of <=exp(N/32768) classes has price C*(N+1)^2*exp(-N/32768)
+and tends to zero on any cofinal order schedule. C uses the COMPLETE
+convergent divisor-square mass at exponent1+1/100000; no sampled prime
+mass, exposure, phase independence or Type-II premise is substituted.
+
+The exact native ledger is scaledJoined=paidResidueUnion+residueRest.
+Removing these paid classes leaves the SAME exposed multiplicity source
+-m+m^2*retainedCost(u) in the literal rest. Thus this slice pays genuine
+sparse populations but gives ZERO new GLOBAL42/25 ceiling credit; the
+multiple-source gap has not decreased. Do not sum all class norm prices:
+their modulus factor has positive exponential rate. No independent
+residue phases are available. Next work must target the ACTUAL signed
+cross-class/rest correlations or a global arithmetic inequality, not
+just divide the carrier into ever more small norm-paid populations.
+
+The 360/420-bit optional controls check rates and49 exact integer
+progression endpoint rows. They do not enumerate the native core, sample
+actual zeros or certify a native entry order; the complete arithmetic
+constant is not numerically bounded. The leaf,14-linter and transitive
+standard-axiom checks passed (42 theorems including helpers). See
+docs/zeta-riesz-ceiling-sparse-arithmetic.md and its scoped audit.
+Preserve all267 prior proof/probe pins and concurrent semiprime work.
+The full fixed-strip/all-height ceiling, simple floor and zero exclusion
+remain OPEN; the goal remains active. Continue locally without commits,
+pushes, subagents, root registration, public metadata or wider gates.
+
+
+`ZetaRieszCeilingWholeHeightBound` proves an ACTUAL upper bound for the
+WHOLE unchanged native carrier at every fixed height in the ORIGINAL
+1/2<u<=10001/20000 strip. Its complete arithmetic multiplicity price is
+min(B(9/100,L)/(984028661/312500),B(1,L)/6200), where
+B(q,L)=36922q+L/35+57logL+840 and L=log(abs(Im rho)+2); retain the
+already-paid simplicity cap1 through L=60000. Exposure is used ONLY for
+the existing native source transfer, not the arithmetic multiplicity cap.
+
+The second actual Gaussian moment supplies the new dilation-one source;
+the full cotangent correction and nonnegative Poisson reserve are retained.
+For L>=10^7 the whole signed comparison price improves by at least33/49.
+This is CERTIFICATE-price saving, not measured native cancellation, global
+42/25 credit or a percentage of RH progress. The price still grows with
+height. The frozen all-family positive-Gaussian-budget no-go stays valid.
+
+Integrality also proves actual multiplicity<=2 throughout L<=160000.
+The SAME joinedPhysical carrier is consequently eventually <2101/1250
+=1.6808 there, with original masks/orders/counts/diagonal unchanged.
+Its remaining gap to42/25 is EXACTLY1/1250=0.0008 ABOVE the target.
+This does NOT prove simplicity in the added range or any zero exclusion.
+The full fixed-strip/ALL-height ceiling, simple floor and RH remain OPEN.
+Do not replace the active goal by the height price or finite-range near
+ceiling. Next work must remove that height price through ACTUAL global
+signed correlations or prove the constant bound directly; more positive
+Gaussian tuning does not close the full target.
+
+The scoped leaf/14-linter/transitive-standard-axiom checks passed, with
+360/420-bit scalar replays at17 heights through10^1000. These are COMPLETE
+certificate constants, never actual zero/prime/core samples or certified
+native entry orders. All285 prior positive/no-go/probe pins are preserved.
+See docs/zeta-riesz-ceiling-whole-height-bound.md. Continue locally without
+commits/pushes/subagents/root registration/public metadata/wider gates;
+keep concurrent semiprime work separate. The goal remains active.
+
+
+`ZetaRieszCeilingHeadCompletionAudit` closes the CHEAP full-factorial
+cofactor-completion gate negatively. For every genuine prime pair p*q,
+the old assigned share is EXACTLY ZERO because eligibleCofactor excludes
+prime cofactors; its unassigned fraction is ONE, at every order and finite
+physical selection. This is distinct from the rectangle-marked head zero.
+After rectangle/complement recombination the entire semiprime head survives.
+On max(log p,log q)<=L<log(pq), the two marked two-hinge responses both equal
+L-log(pq); swapped incidences REINFORCE with the same full product phase.
+Do not transfer markedWeight_prime_cofactor to the full factorial carrier
+or treat that completed head as a geometrically paid boundary.
+
+Separately, the SAME previously retained literal prefixPairDefect is
+eventually real>399/5000 at every positive exposed multiplicity, and
+>319/1000 at multiplicity>=2. Its source is still m^2*(1-retainedCost u),
+not zero. No arbitrary Euler quotient is identified with the literal carrier.
+This no-go gives ZERO new global42/25 credit; no zero exclusion is proved.
+The remaining estimate must control ACTUAL retained signed prime correlations.
+
+The optional algebra-first detector checks144 finite actual completion-head
+rows and four separate source scalars, with360/420-bit enclosure-width checks.
+Those head rows lie outside the native count>=3 core and have fixed-label
+factorial decay; do not infer a cofinal source or actual-zero data from them.
+The leaf,14-linter/transitive-standard-axiom check passes for13 theorems.
+All303 prior pins are preserved. See docs/zeta-riesz-ceiling-head-completion-audit.md.
+Stop this completion shortcut; preserve all positive and negative results.
+Continue locally without commits/pushes/subagents/root/public metadata/wider
+gates. The full original all-height ceiling, simple floor and RH remain OPEN;
+the goal remains active. Keep concurrent semiprime work separate.
+
+
+`ZetaRieszSelbergAdjacentOrders` proves the requested ACTUAL Selberg
+defect identity at orders N-1,N+1,N+2, retaining one COMMON literal
+balanced-pair mask and the full phase. The imbalance is also an exact
+shifted prime-order convolution. The original owner/count/head flags
+are evaluated, the two prime windows factor, and their diagonal is empty.
+Do not replace those finite masked prime moments by complete-prime limits.
+
+The ACTUAL prefixPairDefect additionally retains TWO factorial prefixes
+at the exact13N/32 endpoint. The new exact ledger pays ONLY these prefixes
+with the existing12e^2*(N+1)*exp(-N/1600) coefficient-error budget, once.
+Its remaining native mask complement stays SIGNED and unpaid.
+
+Holding the N-mask fixed gives no order-shift commutator. Replacing it
+by the native N+1 balanced box deletes the ENTIRE old box: both pair and
+product masks are disjoint, and the removed labels remain in the original
+complete interior phase periods. Its joined absolute cost is at least
+c(u)*(2u)^N/(N+1)^3 and diverges, including on the native dyadic schedule.
+STOP absolute payment of that mask replacement. This method no-go does
+NOT refute a future JOINT SIGNED fixed-mask adjacent-order estimate.
+
+The optional360/420-bit replay checks216 actual-prime atoms BELOW the
+native order threshold and four separate large-order scalar rows, with
+3248 enclosure/relative-width comparisons. The scalars are NOT prime
+labels or native entry certificates. No actual zeros/native core are
+sampled. No new global42/25 ceiling credit or independent floor is proved.
+The scoped leaves,14 linters and transitive standard-axiom audit passed;
+all321 prior pins are preserved. See docs/zeta-riesz-selberg-adjacent-orders.md.
+
+The earlier unregistered AdaptiveFejer degree-price theorem is preserved
+and checked, but optimization/native transfer is POSTPONED for this steer.
+Do not claim the optimized height price or constant ceiling from it.
+The goal remains ACTIVE and unachieved. Continue locally without commits,
+pushes, subagents, root/public metadata updates or wider gates; preserve
+every prior positive/no-go audit and concurrent semiprime work. If using
+the new identity, target the joint signed neighbouring moments on the
+UNCHANGED literal mask and its signed rest, before taking norms.
+
+
+`ZetaRieszCeilingSublinearHeight` now applies the preserved AdaptiveFejer
+inequality to the ENTIRE actual signed divisor at one global degree.
+For original1/2<u<=10001/20000 and logarithmic height L=log(abs(y)+2),
+d=floor(log(L+21)/(64log(2u))) is positive and gives the independent
+actual exposed-zero multiplicity price
+B(L)=sqrt(L+21)+(L+21)/(120log(L+21)). The exact H<=L+10 displacement
+is paid; no phase-balance, sparse-divisor, numerical zero-count or Type-II
+hypothesis is substituted. Every original mask/order/count is preserved.
+
+The new combined cap is min(oldHeightCap,B), so the SAME whole signed
+joinedPhysical has an upper bound -cap+retainedCost(u)*cap^2+epsilon
+on its ORIGINAL native dyadic schedule at every fixed eligible height.
+The new signed price is proved no worse at EVERY actual height. Since
+B(L)/L->0, one common large-height threshold gives at most ONE QUARTER
+of the old whole signed price. This75% saving is a HEIGHT-dependent
+certificate-price saving, NOT progress on the fixed42/25 gap. The
+threshold is existential and no native entry order is certified.
+
+The all-DEGREE no-go is also proved: every positive d has scalar price
+(2u)^(32d)+(5/4)*(H+11)/d >= sqrt(160*(2u-1)*(H+11)). For fixedu>1/2
+the price grows uniformly in ALL degree choices. This is a PRICE lower
+bound, NEVER an actual multiplicity lower bound or carrier divergence.
+STOP trying to close the CONSTANT target by further tuning this degree
+envelope. New actual signed arithmetic correlation is still necessary.
+
+The24 scalar certificate rows/216 independent360/420-bit comparisons
+cover logarithmic heights10^3..10^10000 and three radii. They are NOT
+actual zeros, primes or native core samples. The coarse new cap is still
+worse through testedL=10^100, so the minimum keeps the old result there;
+improvement first appears in these controls atL=10^1000. Those enormous
+log heights are not an explicit theorem threshold or an RH milestone.
+All341 prior pins and the original adjacent-mask no-go are preserved.
+See docs/zeta-riesz-ceiling-sublinear-height.md and its scoped audit.
+
+The fixed-strip/ALL-height42/25 ceiling, independent simple floor and RH
+remain OPEN; the original goal remains ACTIVE. Keep iterating locally
+without commits/pushes/subagents/root registration/public metadata/wider
+gates. Preserve all previous positive/no-go results and concurrent
+semiprime work. Neither another balanced subdivision nor scalar degree
+optimization closes the remaining actual signed prime/divisor estimate.
+
+
+`ZetaRieszSelbergSignedBoundary` strengthens the adjacent-mask audit from
+an ABSOLUTE price obstruction to ACTUAL SIGNED growth on the ENTIRE
+unchanged balanced prime box. At the fixed TEST height19*pi, the joined
+actual selbergDefect*kernel contribution has source-scaled real part
+>= (u/120000)*(2u)^N/(N+1)^2 eventually for original1/2<u<=10001/20000.
+It tends to+infinity. The exact literal prefix correction is already
+source-o(1), so the ACTUAL balanced prefix contribution also diverges,
+including on the ORIGINAL native dyadic schedule.
+
+This is NOT an actual-zero counterexample and NOT a divergence theorem
+for the whole prefixPairDefect or joinedPhysical. The test height is NOT
+asserted to be a zero ordinate. Do not weaken the exposed-zero hypothesis
+or claim that the signed native mask complement has been paid. This
+closes only the proposed isolated UNIFORM all-height adjacent-order
+payment; an exposed-zero-specific or JOINT SIGNED bound remains possible.
+
+The full prime phase and both original one-prime windows remain exact.
+Qualitative PNT is used at a fixed relative accuracy to detect a signed
+endpoint contribution. The proof mesh is summed out; it is not a new paid
+population or an unsupported source-o(1) prime-density transport. The
+PNT entry order is existential, NEVER certified by the scalar thresholds.
+All three neighboring orders are JOINED before the bounded saddle error
+is used to prove growth. The two factorial prefixes are paid ONCE using
+the existing geometric theorem, not entered again as ceiling credit.
+
+The optional360/420-bit regression replays30 scalar ball comparisons;
+no actual primes or zeros are sampled. Six FLOATING continuum quadrature
+rows retain the exact moving floor in L_N but are explicitly UNCERTIFIED.
+They motivate the sign only and cannot certify a native entry order.
+The scoped leaf,14 linters and transitive standard-axiom audit pass;
+all360 prior pins remain unchanged. See docs/zeta-riesz-selberg-signed-boundary.md.
+
+The fixed42/25 ceiling, independent simple floor and RH remain OPEN;
+new constant-ceiling credit is ZERO and the original goal stays ACTIVE.
+Continue locally without commits/pushes/subagents/root registration/public
+metadata/wider gates. Preserve every positive/no-go result and concurrent
+semiprime work. Stop another isolated balanced-box uniform payment; retain
+its SIGNED rest or exploit the actual exposed-zero hypothesis jointly.
+
+
+`ZetaRieszSelbergMaskCancellation` proves an ACTUAL signed cancellation
+between the ENTIRE unchanged balanced prefix and its ORIGINAL native mask
+complement. Their sum is EXACTLY prefixPairDefect. Both literal factorial
+prefixes stay in the balanced term; neither is paid or credited twice.
+No new prime subdivision, count restriction, diagonal deletion or mask
+completion is introduced on either piece. The full product phase remains.
+
+At the fixed TEST height19*pi, throughout the original radius interval,
+one existential C gives the joined bound
+26*C^2*(100010/100011)^N + wholeCompletionBudget N + squareBudget u N.
+It tends to zero. Yet the balanced real part tends to+infinity, the
+original complement real part tends to-infinity, and their separately
+priced norm sum tends to+infinity. The complement therefore has NO separate
+constant cofinal floor even on the original native dyadic schedule.
+This establishes the actual joint boundary cancellation to preserve.
+
+This height is ALREADY covered by a zero-free region and is NOT asserted
+to be a zero ordinate. Do not call it a new exposed-source bound or a
+new zero exclusion. A further checked LIMIT obstruction says that a
+nonzero ordinary-prime source plus a C/R^k moment bound forces R<=u.
+The joint test-height geometric payment cannot be transplanted to a
+selected exposed zero by deleting its source. Competing-mode gap bounds
+apply only after the selected mode has been kept explicitly.
+
+The scoped warning-as-error leaf,14 linters and transitive standard-axiom
+check passed (21 theorem/helper/equation declarations). All377 prior pins
+remain unchanged. No additional numerical producer is needed for these
+exact ledger and limit corollaries. The inherited PNT entry order and
+height-dependent C remain existential, not numerically certified.
+See docs/zeta-riesz-selberg-mask-cancellation.md and its scoped audit.
+
+New global42/25 ceiling credit is ZERO. The full original fixed-strip,
+ALL-height ceiling, independent simple floor and RH remain OPEN, and the
+original goal remains ACTIVE. Do not substitute this test-height result
+for the goal. Keep working on ACTUAL selected signed prime correlations
+with the whole complement joined. Continue locally without commits,
+pushes, subagents, root registration/public metadata/wider gates; preserve
+every previous positive/no-go result and concurrent semiprime work.
+
+
+## Combined publication requested on 2026-10-04
+
+The user explicitly requested committing and pushing ALL accumulated local
+work, including the semiprime investigation, before further research. This
+authorizes this checkpoint and supersedes the preceding local-only holds
+for publication. Register all39 new Riesz modules and all59 semiprime modules
+in the ordinary library and shared family index. Retain every proof, no-go,
+audit and optional numerical probe. Run the tracked pre-commit gate and
+applicable publication checks; refresh Latest Update and verify the exact
+committed SHA. Do not rerun exhaustive certificate verification. No
+subagents are authorized.
+
+The checkpoint preserves the same literal masks, native schedule, full
+complex phase, diagonal and all multiplicities. Same-mask adjacent-order
+identities and test-height signed mask cancellation are checked supporting
+results, not new exposed-source bounds. The actual simplicity layer and
+sublinear whole signed ceiling remain height-dependent. Both independent
+constant bounds, the restricted contradiction and RH remain OPEN. The
+semiprime results establish exact arithmetic and obstruction theorems, not
+a generic improved factoring exponent. See
+docs/zeta-riesz-october-checkpoint.md. After this publication, resume local
+research without additional commits or pushes until instructed.

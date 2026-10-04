@@ -13,6 +13,14 @@ and an independent cofinal ceiling `42/25+o(1)`. Both whole-sum inequalities
 remain open; the ceiling is an additional arithmetic target, not a
 consequence of the floor or the source limit.
 
+The [October checkpoint](zeta-riesz-october-checkpoint.md) registers the
+accumulated Riesz and semiprime work. Exact adjacent-order identities keep
+one literal mask; the test-height joint theorem proves cancellation between
+the divergent balanced contribution and its original signed rest. This is
+not an exposed-source payment. Actual boundary-layer simplicity and a
+sublinear height-dependent whole-carrier ceiling are also checked, but do
+not close the original fixed-strip, all-height constant target.
+
 The [accumulated local research batch](zeta-riesz-research-publication.md)
 now retains complex and cubic exact-null credits in the original whole-floor
 inequality, with the same analytic error. The [signed-null theorem](zeta-riesz-signed-null-gain.md)

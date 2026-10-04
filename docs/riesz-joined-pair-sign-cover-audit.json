@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Proved independent signed credits for two broad literal joined-coefficient regions; exact favorable mass retained; global floor still open",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszJoinedPairSignCover",
+    "publicTheorems": 9,
+    "proofDeclarationsAudited": 37,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "balancedCoefficientBound": "balanced_coefficient_lower",
+    "higherOwnerCoefficientBound": "owner_coefficient_upper",
+    "literalSignedAtomCredit": "favorable_atom_credit",
+    "signedUpperInequality": "prefix_upper_with_signed_credit",
+    "exactCreditIdentity": "prefix_eq_rest_sub_exact_credit",
+    "benchmarkNotFullPayment": "signCredit_le_exact",
+    "originalNativeFloorLedger": "eventually_native_exact_credit_floor"
+  },
+  "estimate": {
+    "order": "N>=65536",
+    "radius": "1/2<=u<=10001/20000",
+    "totalLogCore": "39*N/20<=log(n)<=203*N/100",
+    "balancedShares": "both >=12/25",
+    "balancedCoefficientLower": "log(n)/50",
+    "higherOwnerShare": "5/8<=log(largestPrime(n))/log(n)<=11/16",
+    "higherOwnerCoefficientUpper": "-log(n)/200",
+    "favorableAtomUpper": "-(log(n)/200)*norm(K_N)*cos(y*log(n))^2",
+    "benchmarkNonnegative": true,
+    "exactCreditRetained": true,
+    "actualPhaseRetained": true,
+    "literalPhysicalRadialEndpointAndCompletePeriodMasksRetained": true,
+    "originalMovingLengthAndBinomialFloorRetained": true,
+    "allFourSignedSlotsJoinedBeforeSignTest": true,
+    "coefficientAndAtomBoundUsesExposedZeroHypothesis": false,
+    "creditPopulationSizeOrDensityProved": false,
+    "cofinalCreditSizeProved": false,
+    "favorableSetMayBeEmpty": true,
+    "creditCannotBeDiscardedAsO1OrO0": true,
+    "nativeLedgerRetainsExistingSelbergAndPrefixBudgetsOnce": true
+  },
+  "numericalExploration": {
+    "cases": 90,
+    "orders": [
+      65536,
+      196608,
+      917504
+    ],
+    "coefficientProfileOnly": true,
+    "usesLengthLowerEndpointAndRecordsEnclosureWidth": true,
+    "exactIntegerBinomialCutoffEvaluatedNumerically": true,
+    "sampledBalancedMinimumApprox": 0.03429555984928501,
+    "sampledHigherOwnerMaximumApprox": -0.009893135071823544,
+    "actualPrimePopulation": false,
+    "actualZeroHeight": false,
+    "phaseOrCountDensityEstimated": false,
+    "numericalCertificate": false,
+    "usedInProof": false,
+    "floorCredit": 0
+  },
+  "scope": {
+    "newCarrier": false,
+    "newPrimeFilter": false,
+    "newMaskedCofactorCompletion": false,
+    "positiveMainAllowanceIntroduced": false,
+    "oldLowOrderPaymentSpentAgain": false,
+    "oldProperPowerPaymentSpentAgain": false,
+    "oldBudgetsSpentTwice": false,
+    "priorAuditPinsValidatedBeforeGuideUpdate": 211,
+    "priorProofAndNumericalSnapshotsPreserved": true,
+    "allPreviousNoGoAuditsPreserved": true
+  },
+  "newIndependentSignedAtomCredits": true,
+  "newGlobalCofinalThresholdImproved": false,
+  "remaining": [
+    "Bound the same signed complementary prime sum minus its exact favorable credit together by399/5000+o(1).",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "widerGatesRun": false,
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszJoinedPairSignCover.lean",
+      "sha256": "7ded7e3f4e08ba8a8ad0b219ef4591906811f8ac55684b406b95fa0fecd05f1a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrimePowerPayment.lean",
+      "sha256": "434f147cde289c80fa8189dea9bf8d80e9b4eaf1e5d57e969eaa41992dc935c9"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszOwnerMaximal.lean",
+      "sha256": "3efd2a5e3e8bfb17f4fb16f5655a48f737d6b5c62582714d5d106e7dbc107f8e"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLowCountSelbergAudit.lean",
+      "sha256": "c752abf70198aa604f0376e22c42de93093a51e3cc3bf7b6ce96d42aaf1acc20"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "64a716cf69ab06058b95fe17fdac809427c9afd71adf1b2070789bbe67a6084c"
+    },
+    {
+      "path": "scripts/CheckRieszJoinedPairSignCover.lean",
+      "sha256": "cfe70bad7b0025c30a9334646132f932c1d86cc2abece19a20f362474d883bf5"
+    },
+    {
+      "path": "scripts/probe_riesz_joined_pair_profile.py",
+      "sha256": "6540ea8ac956da354734cf4c68e8df75e39604b00080b2191f2781a93acd9449"
+    },
+    {
+      "path": "docs/zeta-riesz-joined-pair-sign-cover.md",
+      "sha256": "7ae272b2f735009116a2e60d26500e9ffa4880a7cbb0a9293443eb4d02d35708"
+    },
+    {
+      "path": "docs/riesz-pair-prime-power-payment-audit.json",
+      "sha256": "1d2888f5fa6a0d213844be11bfceaf7e981af1d42101daa0971c57a77bbecfc3"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/proof-check.log",
+      "sha256": "0584c7d9132c3d8a91bf5265eb4b83dd3da9d8edfb9ad4e92111296cb605124c"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/axioms.json",
+      "sha256": "1c1250d2c06089399e20f1f225612e8f75f1be47d83e3b988efbf24b18963bea"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/profile-grid.json",
+      "sha256": "d614eba7cf854c2f9da0dea140964146bc544b3381eb67c8abc8515dfbca1fa7"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/prior-pins.json",
+      "sha256": "3b781810d13810519f1563c22d22cbcb8d3fd263a58544adf6be06bbaf785ae0"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/prior-pins-current.json",
+      "sha256": "f043b3d07cece52897b4c993937343c432dbaeb9d5156d2877acdd7e3e041138"
+    },
+    {
+      "path": ".lake/riesz-joined-pair-sign-cover/prior-pins-refreshed.json",
+      "sha256": "cf5e300063e20640cf174c4fdc1bb0538ec50b882dea33318a5cdec1728493a7"
+    }
+  ]
+}

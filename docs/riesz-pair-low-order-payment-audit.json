@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Independent geometric payment of actual low logged orders on the physical prime-pair population",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszPairLowOrderPayment.lean",
+      "sha256": "df25ad4de808c8379d098968c2fa1c910abaad18e903883629783787599aabda"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixConvolution.lean",
+      "sha256": "f18212951018f4e08e08a668ba6065c5d188fed8927e30c1426c9130b17bc818"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairPrefixPayment.lean",
+      "sha256": "293c2ac1abc454bfd771a38d84ab94a3d7430a86c101fe804cb5d7d8ad065aac"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSmallTagNativeFloor.lean",
+      "sha256": "64a716cf69ab06058b95fe17fdac809427c9afd71adf1b2070789bbe67a6084c"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPostHingeEnergy.lean",
+      "sha256": "b71796cd4c058bf0d7965f071d9263777d67bd08bc216f0394d792a523023c3c"
+    },
+    {
+      "path": "scripts/CheckRieszPairLowOrderPayment.lean",
+      "sha256": "3d695d4f09ccfd6c2e3250685898837df1359fcbb85bbb9d5095c522be7cf3f9"
+    },
+    {
+      "path": "scripts/probe_riesz_pair_low_orders.py",
+      "sha256": "c8647047e73334493be6129113206d236600436f3130126301e515cb357137e0"
+    },
+    {
+      "path": "scripts/check_riesz_pair_low_orders.py",
+      "sha256": "a63b1f61accae7af7ec259d77748a74c5b285cb6e9a27583bcdf5ff864a08aba"
+    },
+    {
+      "path": "docs/zeta-riesz-pair-low-order-payment.md",
+      "sha256": "91357694e9043480e0629b9f26e5becf0dc03e7d19e2f9721396e11067132888"
+    },
+    {
+      "path": "docs/riesz-pair-prefix-convolution-audit.json",
+      "sha256": "7a2ebf1c0326f863555ffd1afdb3b80b82f9b0d70ccd44edd173a25ea2ade698"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-pair-low-orders/build.log",
+      "sha256": "c38c5d2aef13d60efdb4632fb805ad45ad9827533a381480749027f834a27709"
+    },
+    {
+      "path": ".lake/riesz-pair-low-orders/proof-check.log",
+      "sha256": "940e2d4552681663eac718ab95f4de1f6b41b93ba2239b7cdaf7b63698100f57"
+    },
+    {
+      "path": ".lake/riesz-pair-low-orders/axioms.json",
+      "sha256": "681f7d70125baa28cd24c978814764638595ab9d81e8bd92e5af5535da77a051"
+    },
+    {
+      "path": ".lake/riesz-pair-low-orders/probe.json",
+      "sha256": "6a185b89ec6b9606f664fe8178283e7ba1003bea29e91a2c3c749029f5e22ddf"
+    },
+    {
+      "path": ".lake/riesz-pair-low-orders/validation.json",
+      "sha256": "fbb7807e513f166720d9e0028954d272b04f6fa18eae465d9bd0b0a97f052314"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszPairLowOrderPayment",
+    "publicTheorems": 13,
+    "proofDeclarationsAudited": 37,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "independentEstimate": "norm_lowLoggedPacket_le",
+    "exactLiteralAtom": "low_logged_atom_eq",
+    "originalFloorLedger": "exists_native_sub_low_payment_simple",
+    "rootRegistered": false
+  },
+  "payment": {
+    "literalSupport": "Original nonprime complete-period joined labels, additionally log(largestPrime n)<=L_N",
+    "exactLoggedOrders": "1<=k<=floor(17N/64)+1",
+    "existingLoggedOrders": "1<=k<=floor(13N/32)",
+    "exactSubsetProved": true,
+    "minimumPrimeLogShare": "7/24",
+    "binomialTilt": "11/10",
+    "coefficientBound": "2 log(n) exp(-N/1000)",
+    "sourceScaledBudget": "8 exp(2) (N+1) exp(-N/1250)",
+    "NLowerBound": 65536,
+    "radius": "1/2<=u<=10001/20000",
+    "height": "54<=abs(y)",
+    "zeroHypothesisUsedForContributionPayment": false,
+    "allMasksAndBothPhasesRetained": true,
+    "primeCompletionUsed": false,
+    "orderZeroDiscarded": false,
+    "oldErrorBudgetsSpentOnce": true,
+    "largeOrderNumericalBudgetValues": [
+      {
+        "N": 65536,
+        "provedBudget": 6.58607960056444e-17,
+        "worstShareTailDiagnostic": 7.308398221026261e-50,
+        "diagnosticIsNotProof": true
+      },
+      {
+        "N": 90112,
+        "provedBudget": 2.620299394221972e-25,
+        "worstShareTailDiagnostic": 8.957464210900499e-68,
+        "diagnosticIsNotProof": true
+      },
+      {
+        "N": 196608,
+        "provedBudget": 5.7104028405492125e-62,
+        "worstShareTailDiagnostic": 2.9098350119447573e-145,
+        "diagnosticIsNotProof": true
+      }
+    ]
+  },
+  "validation": {
+    "coverage": {
+      "boxes": 50,
+      "incidences": 48256,
+      "physicalIncidences": 44416,
+      "retainedPhysicalIncidences": 44197,
+      "orders": [
+        256,
+        640,
+        1536
+      ],
+      "heights": [
+        "100"
+      ],
+      "regressionOnly": true
+    },
+    "maxCoefficientReplayError": 1.3774705600703954e-13,
+    "independentHighPrecisionRows": 50,
+    "maxWeightedFactorialIdentityError": 2.513455854232436e-88,
+    "independentReplayPassed": true,
+    "optionalOutsideNormalCI": true,
+    "allSamplesBelowFormalThreshold": true,
+    "sampleNormalizationIsSourceScale": false
+  },
+  "remaining": [
+    "Both signed central factorial sums, with their original correlated masks.",
+    "Logged orders floor(17N/64)+1<k<=floor(13N/32) on the paid physical population.",
+    "All logged orders on labels whose largest prime exceeds L_N.",
+    "Joint radial-flag and Selberg correlations; the prior Selberg payment is retained once.",
+    "The independent cofinal 399/5000 bound and the higher-multiplicity ceiling remain open."
+  ],
+  "fullSignedMainBoundProved": false,
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "localOnly": true,
+  "committed": false,
+  "pushed": false
+}

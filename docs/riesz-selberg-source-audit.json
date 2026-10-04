@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "sourceHead": "49db91eb2f5ea148c82b00bae9f241a836c272fe",
+  "classification": "Cofinal negative audit of the generic positive-density/common-phase/normalized-Selberg-trace method; no ordinary-prime floor saving",
+  "unchangedTarget": "Independent cofinal Re prefixPairDefect <=399/5000+o(1)",
+  "sources": [
+    {
+      "path": "RiemannGaussian/ZetaRieszSelbergSourceAudit.lean",
+      "sha256": "2233d0b6bbda96d47f4c138dacfab9ed84833625fd29829b8cc26cd974efc90f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean",
+      "sha256": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszPairJointQuadratic.lean",
+      "sha256": "96a3e3e1b7774060bf3988c3508402de60890b09dd860965528b6953ec555a92"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszSignedSelbergPayment.lean",
+      "sha256": "7ff6a7f95e67e7c61ed277ca2ec5e62d16d83c96a1b84ff9013e69d2a03c9bc3"
+    },
+    {
+      "path": "RiemannGaussian/HarmonicProductContinuity.lean",
+      "sha256": "d6324e311c0166edecc5d8c66e2fc89d23112cbe8d14ac942fa2d56257e70f39"
+    },
+    {
+      "path": "RiemannGaussian/HarmonicIntervalLimit.lean",
+      "sha256": "a3da80dc8b4afbe7eb984980c0e1a830785b56a8c829095474919f08f104058f"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszLengthAsymptotic.lean",
+      "sha256": "0ad626b451bdc4ffff1855f363da3d36f0be5c5b8abfb812cf78b68408bd233a"
+    },
+    {
+      "path": "RiemannGaussian/ZetaRieszEndgameSlack.lean",
+      "sha256": "c25578576c978317f1c7206d0daf2012f85ca0d47acf26278e89d7905b8ecade"
+    },
+    {
+      "path": "scripts/CheckRieszSelbergSourceAudit.lean",
+      "sha256": "832b02c5e218b64b45126bd4f36abe60c80c9a7198ab58500cbf94ba4de865f9"
+    },
+    {
+      "path": "docs/zeta-riesz-selberg-source-audit.md",
+      "sha256": "53899369d8a9f987332e6e57433786fe1a2bc0482945ef00fc8af61d5f943e43"
+    },
+    {
+      "path": "docs/riesz-positive-density-audit.json",
+      "sha256": "9e5631085cca7e55b5a8f98b9fbdcc080448c9ed19309a15c9a56e1aa8a680b9"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "81accc830b7c3c8650fea58f3d1eb615148d57a2c22d298e62b62ea491884204"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".lake/riesz-selberg-source/build.log",
+      "sha256": "7512b1cd139ccdd3516975d5e0d371239c94baa5a8f12681c45c86e1fba030f9"
+    },
+    {
+      "path": ".lake/riesz-selberg-source/proof-check.log",
+      "sha256": "5a1f10028aa2fe203cef3c340d4dfa6c5130d0c39dc88efe94280374deb8ec26"
+    },
+    {
+      "path": ".lake/riesz-selberg-source/axioms.json",
+      "sha256": "d689c822962528270463478e7133b7c05da381d736e866f28642429906aebce3"
+    },
+    {
+      "path": ".lake/riesz-selberg-source/prior-pins.json",
+      "sha256": "1f304fba40d86c5c718f9cb07671e137d5d93af782808bfffdb431a73f24046c"
+    },
+    {
+      "path": ".lake/riesz-selberg-source/prior-pins-refreshed.json",
+      "sha256": "7223ecef98a4ea9661ac5d36e8adf53d412fbc28c9f6c7c630b7c964d346bda2"
+    }
+  ],
+  "proof": {
+    "module": "RiemannGaussian.ZetaRieszSelbergSourceAudit",
+    "publicTheorems": 10,
+    "proofDeclarationsAudited": 122,
+    "onlyStandardAxioms": true,
+    "strictLeafBuildPassed": true,
+    "namespaceLintPassed": true,
+    "rootRegistered": false,
+    "actualFiniteQuadraticMatched": "factorialQuadratic_eq_polynomial",
+    "fourSignedSlotsCollected": "model_polynomial_eq_harmonic",
+    "genericTraceCancellation": "traceError_tendsto",
+    "modelTraceCancellation": "density_traceError_tendsto",
+    "modelQuadraticLimit": "density_polynomial_tendsto",
+    "cofinalModelViolation": "eventually_density_polynomial_gt_target",
+    "vanishingErrorCannotRescueModel": "density_cofinal_floor_impossible",
+    "relativeDensityEstimate": "relative_density_stretched_exponential"
+  },
+  "model": {
+    "density": "[exp(T)-2exp((3/2-u)T)cos(yT)]/T",
+    "radius": "10001/20000",
+    "lowerLogThreshold": 20000,
+    "fixedHeightCondition": "abs(y)>=1",
+    "strictPositivityPreviouslyProved": true,
+    "fullPhaseRetained": true,
+    "loggedOrderZeroRetained": true,
+    "finiteLowerHeadsRetained": true,
+    "fourSignedFactorialTermsRetained": true,
+    "integerOrderCutoffRetained": true,
+    "literalMovingLengthRetained": true,
+    "quadraticLimit": "1-retainedCost(10001/20000)",
+    "eventuallyRealQuadraticAbove": "399/5000",
+    "explicitEntryOrderProved": false,
+    "relativeError": "<= exp(-c sqrt(T)) for c>=0, T>=40000 and T>=(40000c)^2",
+    "ordinaryPrimeMeasure": false,
+    "literalIntegerSelbergIdentityProvedForModel": false,
+    "genuineZeroAssumed": false,
+    "transportToArithmeticProved": false
+  },
+  "previousOptionalProbe": {
+    "snapshotsPreserved": true,
+    "cofinalTheoremDoesNotUseNumericalProbe": true,
+    "firstSampledModelCrossing": 83886080,
+    "firstTrueCrossingCertified": false,
+    "newExhaustiveRun": false,
+    "floorCredit": 0
+  },
+  "literature": {
+    "primaryPaper": "Diamond\u2013Montgomery\u2013Vorhauer, Beurling primes with large oscillation (2006)",
+    "url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/46253/208_2005_Article_638.pdf",
+    "role": "Warning that generalized discreteness/Euler structure alone is insufficient; not an ordinary-prime counterexample",
+    "formalized": false
+  },
+  "priorIndependentGlobalSquareAndWholeCompletionPaymentsPreserved": true,
+  "newArithmeticFloorSaving": false,
+  "remaining": [
+    "Independent signed 399/5000 bound for the actual joined prime factorial quadratic, using additional proved ordinary-prime arithmetic information.",
+    "Higher-multiplicity ceiling."
+  ],
+  "floorProved": false,
+  "zeroExclusionProved": false,
+  "RH": false,
+  "goalStatus": "active",
+  "localOnly": true,
+  "committed": false,
+  "pushed": false,
+  "widerGatesRun": false
+}
