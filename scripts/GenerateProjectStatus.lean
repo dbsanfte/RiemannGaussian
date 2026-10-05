@@ -2939,6 +2939,17 @@ private def gaussianPhaseBandEntries8 : List (String × Json) := [
     ("rieszCoupledSquareSourceAuditTheorem", .str "RiemannGaussian.ZetaRieszCoupledSquareEnergy.not_summable_squares_at_exposed_zero"),
     ("primeMomentCoherenceConverseTheorem", .str "RiemannGaussian.ZetaPrimeMomentCoherence.exists_zero_multiplicity_of_tendsto"),
     ("primeMomentCoherenceExposedTheorem", .str "RiemannGaussian.ZetaPrimeMomentCoherenceExposed.multiplicity_iff_source"),
+    ("primeMomentCanonicalStripTheorem", .str "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaign_noncoherent_iff_nonvanishing"),
+    ("primeMomentTerminalTheorem", .str "RiemannGaussian.ZetaPrimeMomentTerminal.campaign_nonvanishing_iff_noPersistentError"),
+    ("primeMomentErrorIntegralTheorem", .str "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_psi_error_integral"),
+    ("primeMomentErrorLimitTheorem", .str "RiemannGaussian.ZetaPrimeMomentChebyshev.errorSource_tendsto_iff"),
+    ("primeMomentFiniteCoverageTheorem", .str "RiemannGaussian.ZetaPrimeMomentRegionCoverage.exists_moment_geometric_bound"),
+    ("primeMomentPntEnvelopeAuditTheorem", .str "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.positive_coherent_model_with_subexponential_error"),
+    ("primeMomentTerminalScope", .str "FROZEN Riesz reduction: nonvanishing of the entire Re(s)>=19999/20000 strip iff no negative-integer coherent ordinary-prime source at any fixed height and 1/2<u<=10001/20000, iff absence of the corresponding persistent centered factorial transform of actual psi-x at |y|>=54. Independent verified low-height completeness handles smaller heights. Exposed-zero selection is internal; no exposure or Riesz premise is assumed by the endpoint. Cutoff, saddle, scalar multi-height, PNT-envelope and generic Euler-product mechanisms are audited no-gos only in their stated scopes. The all-height arithmetic premise remains OPEN. No new zero exclusion or RH proof is claimed."),
+    ("primeMomentFiniteCoverageScope", .str "SEPARATE finite-height engineering: the existing independently proved signed-pole region supplies full radius 500051/1000000 for |y|>=54 and log(|y|+3)<=2000. Actual moments have rate 500050/500051 uniformly over 0<=u<=10001/20000, with a constant depending on fixed height. This extends the prior Cauchy transfer from 1800, not the underlying zero-free region or all-height arithmetic. Stronger modern published analytic region proofs remain unimported; width comparisons alone do not supply them."),
+    ("globalSuzukiCriterionTheorem", .str "RiemannGaussian.riemannHypothesis_of_suzuki_signal_scaled_subexponential_lower_bound"),
+    ("globalGaussianGramCriterionTheorem", .str "RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh"),
+    ("globalSuzukiCriterionScope", .str "GLOBAL literal signal S(t)=4 exp(t/2)-sum_{n<=exp(t)} Lambda(n)/sqrt(n)*(t-log(n)). For a fixed nonzero orientation a, a one-sided subexponential lower bound a*S(t)>=-C_epsilon*exp(epsilon*t) for every epsilon>0 and every t>0 implies RH, with all Laplace and arbitrary-multiplicity steps proved. The subexponential lower bound remains OPEN: no new arithmetic positivity or RH proof is claimed. Riesz reduction is frozen; finite-height coverage is separate. The complete reflected Gaussian Gram has a checked RH vanishing criterion, but independent arithmetic vanishing remains open. This signed global signal allowance is not a relative PNT envelope."),
     ("primeMomentCoherenceScope", .str "For 0<u<1 and any fixed real height y, convergence of the actual complete ordinary-prime moments u^(k+1)*P_k(3/2+i*y) to -m, with positive integer m, forces a genuine nontrivial zero at 3/2-u+i*y of exactly analytic multiplicity m. The converse uses ordinary-prime Euler generating series, Abel convergence, pole-cleared analytic continuation and the proper-power correction analytic on Re(s)>1/2. No exposure or Riesz hypothesis enters. With exposure as a standing hypothesis, actual multiplicity m is equivalent to this coherent source. Coherence is not asserted to imply exposure. This characterizes the obstruction; it does not prove an independent arithmetic bound, floor, ceiling, RH or any new zero exclusion."),
     ("rieszMultiHeightAuditTheorem", .str "RiemannGaussian.ZetaRieszMultiHeightAudit.ordinary_three_height_eq_signed_square"),
     ("rieszMultiHeightNoGoTheorem", .str "RiemannGaussian.ZetaRieszMultiHeightAudit.no_all_safe_pointwise_comparison"),
@@ -6643,9 +6654,10 @@ run_cmd do
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Independent signed Suzuki source ceiling"),
+      ("label", .str "Global Gaussian/Weil and Suzuki arithmetic"),
       ("status", .str "open"),
-      ("target", .str
+      ("target", .str "Prove a genuinely independent one-sided subexponential lower bound for the literal signed Suzuki signal, using actual integer arithmetic across growing scales. The existing Landau theorem implies RH for every multiplicity if this premise holds. Independent arithmetic vanishing of the complete reflected Gaussian Gram is the adjacent global route. Riesz is frozen at its strip/non-coherence/Chebyshev-transform equivalence; finite-height coverage is separate. No new all-height bound, zero exclusion or RH proof is claimed."),
+      ("archivedSuzukiSourceTarget", .str
         ("For every hypothetical zero right of one half, prove an independent signed inequality " ++
         "beating its source after the proved error allowances. The active smooth-area " ++
         "target is an independent signed upper bound below the positive imaginary source " ++

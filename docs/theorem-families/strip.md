@@ -6,7 +6,7 @@
 
 Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities.
 
-**73 modules.** Source links open the definitions, hypotheses and proofs.
+**76 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDiscBoundaryMoment](../../RiemannGaussian/AnalyticDiscBoundaryMoment.lean)
 - [AnalyticDiscBoundarySequence](../../RiemannGaussian/AnalyticDiscBoundarySequence.lean)
@@ -57,6 +57,9 @@ Complex analytic estimates, disc-to-strip maps, complete divisors and signed bou
 - [ZetaHorizontalBudget](../../RiemannGaussian/ZetaHorizontalBudget.lean)
 - [ZetaMultiplierRadiusBound](../../RiemannGaussian/ZetaMultiplierRadiusBound.lean)
 - [ZetaPoleReserveBootstrap](../../RiemannGaussian/ZetaPoleReserveBootstrap.lean)
+- [ZetaPrimeMomentNoncoherence](../../RiemannGaussian/ZetaPrimeMomentNoncoherence.lean)
+- [ZetaPrimeMomentNoncoherenceStrip](../../RiemannGaussian/ZetaPrimeMomentNoncoherenceStrip.lean)
+- [ZetaPrimeMomentTerminal](../../RiemannGaussian/ZetaPrimeMomentTerminal.lean)
 - [ZetaRegularizedSechMean](../../RiemannGaussian/ZetaRegularizedSechMean.lean)
 - [ZetaSechEulerBound](../../RiemannGaussian/ZetaSechEulerBound.lean)
 - [ZetaSechExactMass](../../RiemannGaussian/ZetaSechExactMass.lean)

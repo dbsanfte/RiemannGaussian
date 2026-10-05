@@ -15645,3 +15645,109 @@ remain the arithmetic frontier. No global floor, ceiling or RH proof is
 claimed. Record validation and publication separately from the earlier
 scoped multi-height audit; optional numerical controls remain outside
 ordinary CI.
+
+## Structural non-coherence criterion, 2026-10-05
+
+Keep `ZetaPrimeMomentNoncoherence` and `ZetaPrimeMomentNoncoherenceStrip`.
+The literal block is `[13N/32,19N/32] intersect Nat`, with the lower endpoint
+rounded UP. Convergence to `-m` forces mean squared block deviation to zero;
+positive limsup or a fixed positive gap on cofinally many blocks therefore
+precludes that limit. Those arithmetic lower bounds remain unproved.
+
+Do not reverse the converse: coherence implies a zero; its contrapositive
+is nonvanishing implies non-coherence. Pointwise non-coherence alone is not
+proved to exclude a zero. The pointwise reverse endpoint explicitly retains
+the missing zero-to-coherence premise. The valid strip-wide criterion uses
+the EXISTING exposed-zero selection internally: non-coherence for EVERY
+height and radius `1/2<u<=U<1` excludes zeros with `Re(s)>=3/2-U`. Its
+statement has no exposure or Riesz-floor premise. Campaign block-deviation
+criteria give the conditional `Re(s)>=19999/20000` conclusion only if their
+strip-wide arithmetic premises are supplied. No new zero-free credit or
+independent floor follows from the structural implication alone. Preserve
+all semiprime work and previous results. Continue locally without commits,
+pushes, subagents, root registration, public-frontier updates or wider gates
+unless explicitly instructed.
+
+## Canonical prime-moment arithmetic frontier, 2026-10-05
+
+The user's new direction supersedes further internal Riesz optimization.
+Treat Riesz as a checked reduction and preserve D-Q and every earlier
+positive result/no-go. Do not search for another cutoff, order, sector or
+carrier rearrangement without genuinely new arithmetic information.
+The canonical weakest useful premise is `StripNoncoherent campaignRadius`:
+for EVERY fixed height, `1/2<u<=10001/20000`, and positive integer m, the
+literal ordinary-prime moments do not converge to -m. The checked direct
+endpoint and iff select an exposed zero internally; no rightmost/exposure
+or Riesz floor premise enters. Block L2/limsup are sufficient corollaries.
+The all-height arithmetic premise remains OPEN.
+
+Keep `ZetaPrimeMomentChebyshev`. It gives a genuine signed Mellin/Laplace
+formula from actual psi-x, with the full phase and an explicit proper-power
+correction. Order zero has its boundary term retained separately. The
+normalized centered error moment has the same limit as the prime moment
+at fixed |y|>=1 and 0<=u<1. The diagnostic -m*x^rho/rho component produces
+-m exactly; this is NOT a claimed one-mode asymptotic of actual psi.
+Do not assert convergence of the literal integral below its proved domain.
+
+Keep `ZetaPrimeMomentArithmeticAudit`: the existing continuous positive,
+common-phase coherent model passes EVERY subexponential relative-error
+envelope with sublinear logarithmic loss. Generic PNT accuracy, positivity,
+Hankel structure and already-audited Selberg source identities cannot
+supply the missing input. A new proposal must use ACTUAL Lambda/prime
+arithmetic across infinitely many growing scales and fail the continuous
+or arbitrary multiplicative-phase countermodels. Record a no-go if it only
+repackages a source or supplies PNT/subexponential error against (2u)^k.
+An Euler product or generic divisor-convolution identity alone does not
+distinguish ordinary integer primes from Beurling generalized systems.
+Their published counterexamples are research controls, not Lean imports
+or counterexamples for ordinary primes; do not attribute an ordinary zeta
+functional equation or integer spacing to those models.
+Use exact bookkeeping and quantitative model probes before larger formal
+builds; finite probes never certify this all-order arithmetic premise.
+
+Keep `ZetaPrimeMomentRegionCoverage`. The transferred FULL arithmetic
+radius is 500051/1000000 through log(|y|+3)<=2000, |y|>=54, with rate
+500050/500051, uniform in the campaign radius. This extends the prior 1800
+Cauchy transfer using already-proved signed-pole coverage; it is neither a
+new zero-free region nor an all-height gap saving. Modern published width
+formulas are not analytic proofs imported into Lean. The explicit-region
+adapter keeps actual nonvanishing and whole-disk width premises visible.
+The 2026 BTY 4.896, Yang 21.233 and Bellotti 53.989 proofs remain unimported;
+thesis 19.62/51.34 are leads, and BTY 4.8594 is not adopted unconditionally.
+See docs/zeta-prime-moment-error-frontier.md and its scoped audit.
+
+Continue locally: no commits/pushes, subagents, root registration,
+public-frontier changes or wider publication checks unless instructed.
+These structural/no-go theorems earn ZERO new all-height floor credit.
+
+## Frozen Riesz publication and global architecture pivot, 2026-10-05
+
+The user now authorizes committing and publishing the complete local
+prime-moment work, with root registration, evergreen status/explorer updates
+and the applicable publication gates. Do not spawn subagents. Preserve all
+previous results and semiprime work. This authorization supersedes the local
+publication hold for this checkpoint only.
+
+Keep `ZetaPrimeMomentTerminal.campaign_nonvanishing_iff_noPersistentError`.
+It composes the exact strip-wide criterion with the signed Chebyshev-error
+transform and independently verified low-height completeness. The arithmetic
+premise remains open. Publish docs/zeta-riesz-terminal.md as the terminal
+Riesz document. The audited cutoff, saddle, scalar multi-height,
+subexponential PNT-envelope and generic Euler-product mechanisms are no-gos
+in their stated scopes; do not imply impossibility of every theorem in those
+areas. Riesz is frozen as a reduction, not a proof of RH.
+
+The main research branch is global Gaussian/Weil and Suzuki arithmetic.
+Reuse the existing literal Suzuki signal and its Landau compensator
+criterion; do not invent another local prime-moment/Riesz carrier.
+A global one-sided subexponential bound for the SIGNED canceled signal
+remains OPEN and is distinct from the insufficient relative PNT envelope.
+The complete reflected Gaussian Gram has an exact RH vanishing criterion,
+but its independent arithmetic vanishing is unproved. See
+docs/gaussian-suzuki-pivot.md. New slices need actual arithmetic information,
+not another conditional reformulation or automatic Gram nonnegativity.
+
+Keep finite-height radius engineering separate. The checked ceiling remains
+log(|y|+3)<=2000; modern published widths are import leads unless their actual
+analytic proofs and all whole-disk conditions have been discharged. After
+publishing this checkpoint, resume local work unless instructed otherwise.

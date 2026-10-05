@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Bound the actual joined prime energy minus correlation credit on 1/2<u<=0.50005. A cofinal 399/5000 upper bound would exclude every exposed multiplicity. Keep the literal balanced pair and its complement joined; the independent bound at uncovered heights remains open.
+Study the global Suzuki signal and complete Gaussian/Weil correlation using actual integer arithmetic. The first target is an independent one-sided subexponential bound for the signed Suzuki signal; the checked Landau criterion would then imply RH for all multiplicities. The Riesz branch is frozen at its terminal non-coherence reduction. Finite-height zero-free coverage remains a separate track.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Bound the actual joined prime energy minus correlation credit on 1/2<u<=0.50005.
 
 ### Latest Update
 
-**Prime coherence identifies the zero and its exact multiplicity.** For 0<u<1, a negative integer limit of complete ordinary-prime moments forces a genuine zero of that multiplicity, without exposure or a Riesz hypothesis. With exposure fixed, the forward and converse give an iff. The accumulated multi-height audit retains the full signed credit.
-The independent 399/5000 bound on D-Q remains open; this structural characterization claims no new zero exclusion, floor or ceiling.
-[Current checked endpoint](RiemannGaussian/ZetaPrimeMomentCoherence.lean#L517)
-· [Proof details](docs/zeta-prime-moment-coherence.md).
+**Riesz terminal equivalence published; global Suzuki research resumed.** Target-strip nonvanishing is equivalent to strip-wide prime non-coherence and absence of its persistent centered factorial transform of actual psi-x. All multiplicities and independently verified low heights are retained. Separate full-radius coverage now reaches logarithmic height 2000.
+The all-height arithmetic premise remains open. Main research moves to the global Suzuki signal and complete Gaussian/Weil correlation; no new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaPrimeMomentTerminal.lean#L64)
+· [Proof details](docs/zeta-riesz-terminal.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -170,7 +170,7 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Vinogradov moments and Dirichlet sums** | Explicit degree-dependent moments and actual damped Dirichlet savings feed a proved VK zero-free region. Its coefficient is conservative and its starting height unevaluated. | [moment and block bounds](docs/vinogradov-narrow-packet.md), [complete zero-free proof](docs/vinogradov-zero-free.md) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
-| **Original signed Riesz carrier bound** | Critical moments plus positive ε and a proved negative initial-energy profile bound the actual carrier. Signed correlation and sampling costs still need a combined saving. | [actual carrier bound](RiemannGaussian/ZetaRieszCriticalProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
+| **Prime-source characterization and frozen Riesz reduction** | Target-strip nonvanishing is equivalent to absence of coherent negative-integer prime moments and their actual Chebyshev-error transform. The all-height arithmetic premise remains open. | [terminal theorem](RiemannGaussian/ZetaPrimeMomentTerminal.lean), [reduction and audited no-gos](docs/zeta-riesz-terminal.md) |
 | **Montgomery–Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant 13 and bilinear constant 26. | [both inequalities](RiemannGaussian/MontgomeryVaughan/Final.lean#L28) |
 
 ## Accomplishments

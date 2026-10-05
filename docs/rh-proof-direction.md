@@ -1,5 +1,21 @@
 # Current RH proof direction
 
+The active branch is now **global Gaussian/Weil and Suzuki arithmetic**.
+The next genuine target is a one-sided subexponential bound for the actual
+Suzuki signal, with all prime-power and Archimedean terms retained. The
+existing Landau implication handles all zero multiplicities, but the
+arithmetic bound remains open. The global reflected Gaussian Gram offers
+a second complete-zero-set interface whose arithmetic vanishing is also
+unproved. See the [pivot and concrete target](gaussian-suzuki-pivot.md).
+
+The Riesz branch is [frozen at its terminal reduction](zeta-riesz-terminal.md):
+target-strip nonvanishing is equivalent to strip-wide prime non-coherence
+and absence of the persistent factorial transform of the actual Chebyshev
+error. No all-height premise has been proved. Finite-height radius coverage
+is maintained separately and is not all-height arithmetic progress.
+
+## Archived Riesz direction and checked results
+
 The [converse prime-moment coherence theorem](zeta-prime-moment-coherence.md)
 now identifies the source structurally: on `0<u<1`, a complete
 ordinary-prime moment limit `-m` forces a genuine zero at `3/2-u+i*y`

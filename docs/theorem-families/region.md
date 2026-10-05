@@ -6,7 +6,7 @@
 
 The complete budget, actual zero contradiction and its exact height scope.
 
-**27 modules.** Source links open the definitions, hypotheses and proofs.
+**28 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [RosserSchoenfeldZeroFree](../../RiemannGaussian/RosserSchoenfeldZeroFree.lean)
 - [ZetaArbitraryLogZeroFree](../../RiemannGaussian/ZetaArbitraryLogZeroFree.lean)
@@ -26,6 +26,7 @@ The complete budget, actual zero contradiction and its exact height scope.
 - [ZetaGaussianZeroSeparation](../../RiemannGaussian/ZetaGaussianZeroSeparation.lean)
 - [ZetaHalfLogZeroFree](../../RiemannGaussian/ZetaHalfLogZeroFree.lean)
 - [ZetaLogRegionBand](../../RiemannGaussian/ZetaLogRegionBand.lean)
+- [ZetaPrimeMomentRegionCoverage](../../RiemannGaussian/ZetaPrimeMomentRegionCoverage.lean)
 - [ZetaStechkinZeroFree](../../RiemannGaussian/ZetaStechkinZeroFree.lean)
 - [ZetaUnifiedZeroFree](../../RiemannGaussian/ZetaUnifiedZeroFree.lean)
 - [ZetaVinogradovAngularZeroFree](../../RiemannGaussian/ZetaVinogradovAngularZeroFree.lean)

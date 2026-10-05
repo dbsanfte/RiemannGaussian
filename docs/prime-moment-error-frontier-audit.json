@@ -1,0 +1,780 @@
+{
+  "schema": "prime-moment-error-frontier-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "f095877217d286431cd2e22924a280809cf2a80e",
+  "localOnly": false,
+  "rootRegistered": true,
+  "publicationRun": false,
+  "canonicalArithmeticFrontier": "StripNoncoherent campaignRadius: no negative-positive-integer limit at any fixed height and 1/2<u<=10001/20000; all-height arithmetic premise open",
+  "mathematicalScope": {
+    "actualArithmeticInput": "Chebyshev.psi, the literal von Mangoldt summatory function",
+    "logError": "exp(-t)*psi(exp(t))-1",
+    "integrationDomain": "t>0; Re(c)>0 for the error Laplace moments; Re(s)>1 for the zeta integral identity",
+    "logErrorAbsoluteBound": "5 (domination only)",
+    "exactPositiveOrderPrimeFormula": "a_k=u^(k+1)*[(s0-1)^(-k-1)+s0*E_k(s0-1)-E_(k-1)(s0-1)-properMoment_k(s0)], k>=1",
+    "exactActualErrorIntegral": "(s0*E_k-E_(k-1)) = integral_0^infinity (psi(exp(t))-exp(t))*exp(-s0*t)*(s0*t^k-k*t^(k-1))/k!",
+    "orderZeroBoundaryRetained": true,
+    "orderZeroElementaryTerm": "s0/(s0-1)",
+    "fullComplexPhaseRetained": true,
+    "errorSourceLimitEquivalence": "for 0<=u<1, |y|>=1, any complex limit; main-density and proper-prime-power terms tend to zero independently",
+    "exposurePremise": false,
+    "rieszFloorPremise": false,
+    "diagnosticComponent": "-m*x^rho/rho, rho=s0-u",
+    "componentResponse": "exactly -m at every positive order, provided u>0 and rho!=0",
+    "actualPsiSingleComponentAsymptoticClaimed": false,
+    "literalIntegralContinuationBelowEulerDomainClaimed": false
+  },
+  "finiteHeightCoverage": {
+    "source": "already discharged riemannZeta_ne_zero_of_signedPole_margin",
+    "sourceWidth": "792/(7625*log(|t|+2)-2000)",
+    "fullArithmeticRadius": "500051/1000000",
+    "campaignRadiusCeiling": "10001/20000",
+    "heightDomain": "|y|>=54 and log(|y|+3)<=2000",
+    "previousCauchyTransferHeightCeiling": 1800,
+    "uniformMomentRatio": "500050/500051",
+    "constantMayDependOnHeight": true,
+    "fullDiskWidthPerturbationsProved": true,
+    "actualMomentGeometricDecayProvedOnThisDomain": true,
+    "newUnderlyingRegionProved": false,
+    "allHeightArithmeticSaving": false,
+    "futureImportAdapter": "analytic_radius_of_explicit_region",
+    "adapterNonvanishingPremiseRemainsExplicit": true
+  },
+  "strengthAudit": {
+    "exponentialModeTheorem": "delta>0 and loss(t)/t->0 imply exp(-delta*t+loss(t))->0",
+    "positiveContinuousModel": "for 1/2<u<1 and |y|>=1, positive density above B=1/(u-1/2) has moment limit -1 and relative ripple vanishing against every sublinear-loss subexponential envelope",
+    "actualOrdinaryPrimeCounterexample": false,
+    "genericPntPositivityRoute": "no-go at the audited strength; not an impossibility theorem for additional actual-prime information",
+    "genericDivisorConvolutionNewSavingFound": false,
+    "sufficientFixedHeightActualPrimeConstraintFound": false,
+    "newEquivalentRieszFloorIntroduced": false
+  },
+  "primaryLiterature": [
+    {
+      "title": "Bellotti-Trudgian-Yang, Explicit zero-free regions for the Riemann zeta-function",
+      "url": "https://arxiv.org/html/2603.21490v1",
+      "input": "Theorem 1, open sigma>1-1/(4.896 log|t|), |t|>=3",
+      "analyticProofImported": false,
+      "caution": "4.8594 Theorem 2 is presented as requiring Lemma 2; not adopted unconditionally; finite verification inputs unimported"
+    },
+    {
+      "title": "Yang, Explicit bounds on zeta and a new zero-free region",
+      "url": "https://arxiv.org/abs/2301.03165",
+      "input": "Littlewood constant 21.233",
+      "analyticProofImported": false
+    },
+    {
+      "title": "Bellotti, Explicit zero-free regions for the Riemann zeta-function",
+      "url": "https://arxiv.org/abs/2306.10680",
+      "input": "published VK constant 53.989 as cited by the 2026 primary paper; original arXiv abstract gives 54.004",
+      "analyticProofImported": false
+    },
+    {
+      "title": "Yang 2025 thesis refinements as reported in BTY 2026",
+      "url": "https://doi.org/10.26190/unsworks/31825",
+      "input": "reported constants 19.62,51.34",
+      "originalThesisProofIndependentlyAudited": false,
+      "analyticProofImported": false
+    },
+    {
+      "title": "Johnston-Yang, Some explicit estimates for the error term in the prime number theorem",
+      "url": "https://arxiv.org/abs/2204.01980",
+      "input": "9.39*x*(log x)^1.515*exp(-0.8274*sqrt(log x))",
+      "audit": "sublinear log-loss does not exclude a fixed below-one power component",
+      "analyticProofImported": false
+    },
+    {
+      "title": "Bellotti, Explicit bounds on the prime counting function and related functions",
+      "url": "https://arxiv.org/abs/2508.02041",
+      "input": "VK-derived PNT error",
+      "audit": "sublinear log-loss class",
+      "analyticProofImported": false
+    },
+    {
+      "title": "Selberg 1949 elementary prime number theorem proof",
+      "url": "https://www.math.lsu.edu/~mahlburg/teaching/handouts/2014-7230/Selberg-ElemPNT1949.pdf",
+      "audit": "O(x) symmetry remainder exceeds x^beta*log x for fixed beta<1; original scale is insufficient"
+    },
+    {
+      "title": "Broucke, On the connection between zero-free regions and the error term in the Prime Number Theorem",
+      "url": "https://arxiv.org/abs/2507.13780",
+      "audit": "generalized prime systems can have prescribed zero contours and PNT error; generic Euler-product structure alone is not ordinary-integer-specific",
+      "analyticProofImported": false,
+      "ordinaryPrimeCounterexample": false
+    },
+    {
+      "title": "Revesz, Oscillation of the remainder term in the prime number theorem of Beurling, caused by a given zeta-zero",
+      "url": "https://arxiv.org/abs/2202.01837",
+      "audit": "generalized prime systems with a given zero and Chebyshev error on its power scale",
+      "analyticProofImported": false,
+      "ordinaryPrimeCounterexample": false
+    }
+  ],
+  "scopedValidation": {
+    "onlyStandardAxioms": true,
+    "namespaceLintersPerNamespace": 14,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 42,
+        "theoremAxioms": [
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.measurable_logError",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logError.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.moments.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_errorLaplace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_id",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.complex_factorial_laplace",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_error_translate._simp_1_1",
+            "axioms": []
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_linear_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_le_six_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.absolute_error_integrand",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.exponential_mellin",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.abs_logError_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_error._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.errorSource.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_error_translate",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.componentMoment_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_psi_error_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.proper_error_tendsto._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_psi_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.analytic_errorLaplace_and_moments",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.integrable_logError_exp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.errorSource_tendsto_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_psi_log_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_zero_eq_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.centered_error_eq_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.proper_error_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.reciprocal_moment",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_integrand_split",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentChebyshev",
+        "declarations": 48
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 16,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.moments.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.noncoherent_of_covered_height",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.exists_ordinary_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.tendsto_moments_zero_of_covered_height",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.exists_moment_geometric_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentRegionCoverage",
+        "declarations": 17
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 3,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.exponential_mode_below_sublinear_envelope",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.model_relative_error_below_sublinear_envelope",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.positive_coherent_model_with_subexponential_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit",
+        "declarations": 3
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 4,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.campaign_nonvanishing_iff_noPersistentError",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.NoPersistentError._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.noncoherent_iff_noPersistentError",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.NoPersistentError._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          }
+        ],
+        "module": "RiemannGaussian.ZetaPrimeMomentTerminal",
+        "declarations": 5
+      }
+    ]
+  },
+  "validation": {
+    "warningAsErrorTargetedLakeBuild": true,
+    "targets": [
+      "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip",
+      "RiemannGaussian.ZetaPrimeMomentChebyshev",
+      "RiemannGaussian.ZetaPrimeMomentRegionCoverage",
+      "RiemannGaussian.ZetaPrimeMomentArithmeticAudit",
+      "RiemannGaussian.ZetaPrimeMomentTerminal"
+    ],
+    "namespaceLinters": true,
+    "transitiveAxiomsIncludingPrivateHelpers": true,
+    "onlyStandardAxioms": true,
+    "pythonSyntaxCheck": true,
+    "optionalAnalyticProbeRun": true,
+    "fullProjectBuildRun": false,
+    "wholeProjectLintRun": false,
+    "publicFrontierUpdated": false,
+    "exhaustiveNumericalVerificationRun": false
+  },
+  "optionalProbe": {
+    "schema": "prime-moment-error-frontier-probe-v1",
+    "actualPrimeCertificate": false,
+    "cofinalArithmeticBound": false,
+    "precisionDecimalDigits": 90,
+    "u": "10001/20000",
+    "y": 54,
+    "component": "-exp((rho-1)t)/rho",
+    "momentRows": [
+      {
+        "order": 1,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "0.0",
+        "smoothSourceLogNorm": "-9.36414819445486372675044",
+        "selectedLogSaddle": "1.999800019998000199980002"
+      },
+      {
+        "order": 16,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "0.0",
+        "smoothSourceLogNorm": "-79.59525965286634167737874",
+        "selectedLogSaddle": "31.99680031996800319968003"
+      },
+      {
+        "order": 256,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "1.9675335e-93",
+        "smoothSourceLogNorm": "-1203.293042987449988887432",
+        "selectedLogSaddle": "511.9488051194880511948805"
+      },
+      {
+        "order": 640,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "0.0",
+        "smoothSourceLogNorm": "-3001.209496322783824423516",
+        "selectedLogSaddle": "1279.872012798720127987201"
+      },
+      {
+        "order": 1536,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "0.0",
+        "smoothSourceLogNorm": "-7196.347887438562774007713",
+        "selectedLogSaddle": "3071.692830716928307169283"
+      },
+      {
+        "order": 4096,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "0.0",
+        "smoothSourceLogNorm": "-19182.45757634078834424828",
+        "selectedLogSaddle": "8191.180881911808819118088"
+      },
+      {
+        "order": 65536,
+        "componentSourceRe": "-1.0",
+        "componentSourceIm": "1.3138773e-93",
+        "smoothSourceLogNorm": "-306849.0901099942020300218",
+        "selectedLogSaddle": "131058.8941105889411058894"
+      }
+    ],
+    "pntEnvelopeStrengthRows": [
+      {
+        "logX": 1000000,
+        "logRippleToPntEnvelope": "754.9230033920238985016557",
+        "rippleFitsEnvelope": false
+      },
+      {
+        "logX": 100000000,
+        "logRippleToPntEnvelope": "3244.546170560251940079081",
+        "rippleFitsEnvelope": false
+      },
+      {
+        "logX": 1000000000,
+        "logRippleToPntEnvelope": "-23868.25688562246344617336",
+        "rippleFitsEnvelope": true
+      },
+      {
+        "logX": 10000000000,
+        "logRippleToPntEnvelope": "-417296.4306622715200183435",
+        "rippleFitsEnvelope": true
+      }
+    ],
+    "regionWidthPreflight": [
+      {
+        "input": "existing discharged signed-pole",
+        "illustrativeLogHeight": 2000,
+        "width": "0.00005194123819517313746065058",
+        "radiusMargin": "0.0000009412381951731374606505771",
+        "numericalOnly": true
+      },
+      {
+        "input": "BTY2026 Theorem 1: external analytic proof not imported",
+        "illustrativeLogHeight": 3900,
+        "width": "0.00005237137590078766549354785",
+        "radiusMargin": "0.000001371375900787665493547846",
+        "numericalOnly": true
+      },
+      {
+        "input": "Yang2024 Littlewood: external analytic proof not imported",
+        "illustrativeLogHeight": 8200,
+        "width": "0.00005175956795997684507043212",
+        "radiusMargin": "0.0000007595679599768450704321185",
+        "numericalOnly": true
+      }
+    ]
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaPrimeMomentChebyshev.lean": "1634c6d9b35c57ca80f3f899a8389d17c1b4156981c663ea9e355cac632f6f1b",
+    "RiemannGaussian/ZetaPrimeMomentRegionCoverage.lean": "5dbb59fed09fb859fca1d097a47a69913a6acecf33f227b47951ea5e6869e935",
+    "RiemannGaussian/ZetaPrimeMomentArithmeticAudit.lean": "9bd7bd975d77c660a3975d1af97ea95eac99e154a5226219d73009ee1e5c6916",
+    "RiemannGaussian/ZetaPrimeMomentNoncoherence.lean": "83b782cf5816f35b05492c8e864ae5af683e7a9ea478b945e1304e2119110660",
+    "RiemannGaussian/ZetaPrimeMomentNoncoherenceStrip.lean": "199393d077e1e5d7740b2b35c17993411cca6a696c5e5329a2998fca141db085",
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaPrimeMomentCoherenceExposed.lean": "3675d0318d4055ca08168ae5eeebd6a29c858b5589b7df902ea38396e3904a45",
+    "RiemannGaussian/ZetaRieszPositiveDensityAudit.lean": "875c6e8916da1a8a2a6bf13df3501aff5b4dbed2666af6f55e5f8f31d07c904a",
+    "RiemannGaussian/ZetaRieszJoinedPhaseRadius.lean": "9378229de02b86296d7b97e0b30305a2c1ab5cdf8f983d33a66dd0ca6bd92ca5",
+    "RiemannGaussian/ZetaSignedPoleZeroFree.lean": "60f0d7e245c3f6b99236cfb616705af919c47d2799bdb7953d52f7f841e81dd6",
+    "scripts/CheckPrimeMomentErrorFrontier.lean": "cada65b8e57f83e12c6a2f1bc0ea9b2c53e5a01a8347bf0a579278012f7ec1d1",
+    "scripts/probe_prime_moment_error_frontier.py": "eeeb263cb9fce0ef6bd34e9071a01f879f07ad0bb36142609616423c5d888a4f",
+    "docs/zeta-prime-moment-error-frontier.md": "3af9040cf370a8ab5a703079ae1cf2b81b63ebfc088e08db49ee134a72024150",
+    "AGENTS.md": "2ad8b66fd212972b71297b715909f905f9a6dad6f86b3bf91c3904b3b508bcef",
+    "RiemannGaussian/ZetaPrimeMomentTerminal.lean": "1f1982b283004b821ae80f78dcf1f4f7864f61c5c2140d5277f704e20a78ad93"
+  },
+  "allPriorResultsAndSemiprimeWorkPreserved": true,
+  "globalFloorProved": false,
+  "globalCeilingProved": false,
+  "allHeightNoncoherenceProved": false,
+  "newUnderlyingZeroFreeRegion": false,
+  "RHProved": false,
+  "globalFloorCreditEarned": 0,
+  "validationScope": "original scoped leaf checks; full checkpoint publication gates recorded separately",
+  "publicationAudit": "docs/prime-moment-terminal-publication-audit.json",
+  "terminalEquivalence": "campaign nonvanishing iff NoPersistentError; independent low-height completeness retained"
+}

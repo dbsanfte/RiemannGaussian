@@ -6,7 +6,7 @@
 
 Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions.
 
-**45 modules.** Source links open the definitions, hypotheses and proofs.
+**47 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [OscillatoryPowerPrimitive](../../RiemannGaussian/OscillatoryPowerPrimitive.lean)
 - [ZetaEulerAngularBound](../../RiemannGaussian/ZetaEulerAngularBound.lean)
@@ -43,6 +43,8 @@ Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prim
 - [ZetaLogPrimeSeries](../../RiemannGaussian/ZetaLogPrimeSeries.lean)
 - [ZetaPrimeDiscrepancyWork](../../RiemannGaussian/ZetaPrimeDiscrepancyWork.lean)
 - [ZetaPrimeLatticeCarrier](../../RiemannGaussian/ZetaPrimeLatticeCarrier.lean)
+- [ZetaPrimeMomentArithmeticAudit](../../RiemannGaussian/ZetaPrimeMomentArithmeticAudit.lean)
+- [ZetaPrimeMomentChebyshev](../../RiemannGaussian/ZetaPrimeMomentChebyshev.lean)
 - [ZetaPrimeMomentCoherence](../../RiemannGaussian/ZetaPrimeMomentCoherence.lean)
 - [ZetaPrimeMomentCoherenceExposed](../../RiemannGaussian/ZetaPrimeMomentCoherenceExposed.lean)
 - [ZetaReciprocalDirichlet](../../RiemannGaussian/ZetaReciprocalDirichlet.lean)

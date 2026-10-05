@@ -42,7 +42,7 @@ def run(output, url=None, refresh_preview=False):
                 page.evaluate('document.fonts.ready')
                 assert page.locator('h1').inner_text() == 'Current RH Proof Direction'
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == meta['defaultEndpoint']
-                assert 'Both independent whole-carrier bounds remain open' in page.locator('#scope-text').inner_text()
+                assert 'subexponential lower bound remains OPEN' in page.locator('#scope-text').inner_text()
                 assert page.locator('.zone-label').count() >= 2
                 roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i].id)')
                 assert roots == [expected]
@@ -64,26 +64,22 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_energy_sub_credit_le_square_budget'
+                assert data['id'] == 'RiemannGaussian.riemannHypothesis_of_suzuki_signal_scaled_subexponential_lower_bound'
                 assert all(term in data['statement'] for term in (
-                    'radiusCeiling', 'AnalyticOnNhd', 'ordinaryArray',
-                    'ordinarySquareBudget', 'diagonalEnergy',
-                    'correlationCredit', 'radiusArray', '65536'))
-                # The current endpoint retains the full signed credit and
-                # requires a full analytic disk. It does not assume R>u.
-                floor_source = (ROOT / data['source']['path']).read_text().splitlines()
-                floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
-                assert all(term in floor_type for term in (
-                    'ha : AnalyticOnNhd', 'closedBall',
-                    'ordinarySquareBudget y R', '(u/R)^(N-1)',
-                    'correlationCredit (radiusArray', 'hN : 65536 ≤ N'))
-                assert 'NontrivialZetaZero' not in floor_type
-                assert 'u < R' not in floor_type
-                assert '399/5000' not in floor_type
+                    'suzukiChebyshevLogAverageLaplaceSignal', 'Real.exp',
+                    'RiemannHypothesis', '∀', '∃'))
+                # This is an explicit arithmetic premise, not unconditional RH.
+                target_source = (ROOT / data['source']['path']).read_text().splitlines()
+                target_type = '\n'.join(target_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
+                assert all(term in target_type for term in (
+                    '(ha : a ≠ 0)', '∀ ε : ℝ, 0 < ε', '∃ C : ℝ, 0 ≤ C',
+                    '∀ t : ℝ, 0 < t', 'suzukiChebyshevLogAverageLaplaceSignal t'))
+                assert 'NontrivialZetaZero' not in target_type
+                assert '399/5000' not in target_type
                 assert all(term in page.locator('#scope-text').inner_text() for term in (
-                    'ENTIRE negative correlation credit', 'full analytic disk',
-                    'nonsummable at R=u', 'may be below u at uncovered heights',
-                    'not a global 399/5000 floor', 'no global credit'))
+                    'GLOBAL literal signal', 'subexponential lower bound remains OPEN',
+                    'Riesz reduction is frozen', 'finite-height coverage is separate',
+                    'not a relative PNT envelope'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -110,10 +106,33 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
-                assert 'every original mask' in page.locator('#details').inner_text()
-                assert 'two-hinge' in page.locator('#details').inner_text()
-                assert 'Both independent whole-carrier bounds remain open' in page.locator('#details').inner_text()
+                assert 'Riesz reduction is frozen' in page.locator('#details').inner_text()
+                assert 'subexponential lower bound remains OPEN' in page.locator('#details').inner_text()
+                assert 'finite-height coverage is separate' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
+                # Preserve the previous full square-budget audit after the architecture pivot.
+                page.locator('#endpoint').select_option('joined-square-budget')
+                data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
+                assert data['id'] == 'RiemannGaussian.ZetaRieszCoupledSquareEnergy.ordinary_energy_sub_credit_le_square_budget'
+                assert all(term in data['statement'] for term in (
+                    'radiusCeiling', 'AnalyticOnNhd', 'ordinaryArray',
+                    'ordinarySquareBudget', 'diagonalEnergy',
+                    'correlationCredit', 'radiusArray', '65536'))
+                # The current endpoint retains the full signed credit and
+                # requires a full analytic disk. It does not assume R>u.
+                floor_source = (ROOT / data['source']['path']).read_text().splitlines()
+                floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
+                assert all(term in floor_type for term in (
+                    'ha : AnalyticOnNhd', 'closedBall',
+                    'ordinarySquareBudget y R', '(u/R)^(N-1)',
+                    'correlationCredit (radiusArray', 'hN : 65536 ≤ N'))
+                assert 'NontrivialZetaZero' not in floor_type
+                assert 'u < R' not in floor_type
+                assert '399/5000' not in floor_type
+                assert all(term in page.locator('#scope-text').inner_text() for term in (
+                    'ENTIRE negative correlation credit', 'full analytic disk',
+                    'nonsummable at R=u', 'may be below u at uncovered heights',
+                    'not a global 399/5000 floor', 'no global credit'))
                 # Preserve the former default's complete literal payment audit
                 # after advancing to the additional arithmetic estimate.
                 page.locator('#endpoint').select_option('signed-pair-defect')

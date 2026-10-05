@@ -1,0 +1,910 @@
+{
+  "schema": "prime-moment-terminal-publication-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "f095877217d286431cd2e22924a280809cf2a80e",
+  "userAuthorizedPublication": true,
+  "rootRegistered": true,
+  "frozenReduction": {
+    "terminalTheorem": "RiemannGaussian.ZetaPrimeMomentTerminal.campaign_nonvanishing_iff_noPersistentError",
+    "campaignRadius": "10001/20000",
+    "stripBoundary": "19999/20000",
+    "logicalEndpoint": "strip nonvanishing iff strip-wide no negative-integer prime coherence iff no persistent centered factorial transform of actual psi-x",
+    "errorHeightDomain": "|y|>=54; independent verified zero completeness handles smaller heights",
+    "actualMultiplicity": "every positive integer",
+    "exposureEndpointPremise": false,
+    "rieszFloorPremise": false,
+    "persistentErrorPremiseProved": false,
+    "auditedNoGos": [
+      "cutoff/adjacent-order repartition in audited masks",
+      "saddle-matched two-center comparison",
+      "scalar multi-height/all-safe shifts",
+      "PNT envelopes with sublinear logarithmic loss",
+      "generic Euler-product structure insufficient to distinguish generalized primes"
+    ],
+    "universalImpossibilityForTheseSubjectsClaimed": false
+  },
+  "separateFiniteCoverage": {
+    "heightCeiling": "log(|y|+3)<=2000, |y|>=54",
+    "fullRadius": "500051/1000000",
+    "geometricRatio": "500050/500051",
+    "newUnderlyingRegion": false,
+    "modernPublishedProofsImported": false
+  },
+  "activeArchitecture": {
+    "branch": "global-gaussian-suzuki-arithmetic",
+    "checkedFrontier": "RiemannGaussian.riemannHypothesis_of_suzuki_signal_scaled_subexponential_lower_bound",
+    "openArithmeticPremise": "a*S(t)>=-C_epsilon*exp(epsilon*t) for every epsilon>0 and t>0, with fixed nonzero a",
+    "signal": "4*exp(t/2)-sum_{n<=exp(t)} Lambda(n)/sqrt(n)*(t-log(n))",
+    "globalMultiplicityStepsDischarged": true,
+    "subexponentialSignalBoundProved": false,
+    "adjacentCriterion": "complete reflected Gaussian correlation vanishes iff RH",
+    "arithmeticGramVanishingProved": false
+  },
+  "fullCompiledSoundness": {
+    "compiledProjectModules": 2757,
+    "compiledProjectDeclarations": 80774,
+    "projectAxioms": 0,
+    "nonstandardTheoremAxioms": [],
+    "placeholderDependentDeclarations": 0,
+    "rhImplied": false
+  },
+  "scopedChecks": {
+    "noncoherence": {
+      "onlyStandardAxioms": true,
+      "namespaceLintersPerNamespace": 14,
+      "modules": [
+        {
+          "theoremsIncludingPrivateHelpers": 22,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.noncoherent_of_pos_limsup",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.blockDeviation_nonneg",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.nonvanishing_of_noncoherent_of_forward",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.not_tendsto_of_cofinalBlockDeviation",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.nonvanishing_of_pos_limsup_of_forward",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.noncoherent_of_cofinalBlockDeviation",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.mem_block._simp_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.mem_block._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.nonvanishing_of_cofinalBlockDeviation_of_forward",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.mem_block",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block_indices_eventually_ge._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.mem_block._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.nonvanishing_iff_noncoherent_of_forward",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block_nonempty._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block_indices_eventually_ge",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block_nonempty._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.blockDeviation_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.tendsto_blockDeviation_of_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.noncoherent_of_nonvanishing",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.block_nonempty",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherence.not_tendsto_of_pos_limsup_blockDeviation",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentNoncoherence",
+          "declarations": 26
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 15,
+          "theoremAxioms": [
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.0.RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.nontrivial_of_zero",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaignRadius.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.nonvanishing_of_strip_cofinalBlockDeviation",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.nonvanishing_of_strip_block_limsup",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaignRadius._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.exists_coherent_source_in_strip",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.candidate_nonvanishing_of_strip_noncoherent",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaign_nonvanishing_of_block_limsup",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.nonvanishing_of_strip_noncoherent",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.StripNoncoherent._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaignRadius._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.strip_noncoherent_iff_nonvanishing",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaign_nonvanishing_of_noncoherent",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaign_nonvanishing_of_cofinalBlockDeviation",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip.campaign_noncoherent_iff_nonvanishing",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentNoncoherenceStrip",
+          "declarations": 17
+        }
+      ]
+    },
+    "errorAndTerminal": {
+      "onlyStandardAxioms": true,
+      "namespaceLintersPerNamespace": 14,
+      "modules": [
+        {
+          "theoremsIncludingPrivateHelpers": 42,
+          "theoremAxioms": [
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_sum",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.measurable_logError",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_7",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._simp_1_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logError.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.moments.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_errorLaplace",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_id",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.complex_factorial_laplace",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_error_translate._simp_1_1",
+              "axioms": []
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_linear_mul",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_le_six_mul",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.absolute_error_integrand",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.exponential_mellin",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.abs_logError_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_error._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.errorSource.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.moment_error_translate",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.componentMoment_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_psi_error_integral",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.proper_error_tendsto._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_psi_integral",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.analytic_errorLaplace_and_moments",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.integrable_logError_exp",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.vonMangoldt_moment_eq_error._proof_1_3",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.errorSource_tendsto_iff",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.component_exact_source._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.logDeriv_eq_psi_log_integral",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_zero_eq_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.centered_error_eq_integral",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.proper_error_tendsto",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.reciprocal_moment",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentChebyshev.ordinary_moment_eq_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.ZetaPrimeMomentChebyshev.0.RiemannGaussian.ZetaPrimeMomentChebyshev.psi_integrand_split",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentChebyshev",
+          "declarations": 48
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 16,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentCoherence.moments.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_covered_radius._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.noncoherent_of_covered_height",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.exists_ordinary_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.analytic_radius_of_explicit_region._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.tendsto_moments_zero_of_covered_height",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.exists_moment_geometric_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentRegionCoverage.coveredRadius._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentRegionCoverage",
+          "declarations": 17
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 3,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.exponential_mode_below_sublinear_envelope",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.model_relative_error_below_sublinear_envelope",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit.positive_coherent_model_with_subexponential_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentArithmeticAudit",
+          "declarations": 3
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 4,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.campaign_nonvanishing_iff_noPersistentError",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.NoPersistentError._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.noncoherent_iff_noPersistentError",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.ZetaPrimeMomentTerminal.NoPersistentError._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            }
+          ],
+          "module": "RiemannGaussian.ZetaPrimeMomentTerminal",
+          "declarations": 5
+        }
+      ]
+    }
+  },
+  "publicationValidation": {
+    "ordinaryRootWarningAsErrorBuild": true,
+    "wholeProjectLint": true,
+    "compiledStatusGate": true,
+    "placeholderScan": true,
+    "explorerBrowser": true,
+    "githubReadmeRenderer": true,
+    "trackedPrecommitHookRequired": true,
+    "numericalCertificateExhaustiveRun": false,
+    "generatedExplorers": true,
+    "leanDerivedGraphPaths": true,
+    "evergreenPlots": true
+  },
+  "remoteVerification": "This precommit audit does not attest CI success; require the workflow for the exact published SHA and report it separately.",
+  "allPreviousResultsAndSemiprimeWorkPreserved": true,
+  "newAllHeightArithmeticEstimate": false,
+  "newZeroExclusion": false,
+  "RHProved": false,
+  "sourceHashes": {
+    "AGENTS.md": "2ad8b66fd212972b71297b715909f905f9a6dad6f86b3bf91c3904b3b508bcef",
+    "README.md": "56a4f3fc88098b9ffc029f7bc39a1fe87da42aa0404025143ed6a3c99a5d6e67",
+    "RiemannGaussian.lean": "640a8a7adc5d69fd41ec852d76925d98a0e0778d064938b051b62c8f3ab1b69a",
+    "RiemannGaussian/ZetaPrimeMomentTerminal.lean": "1f1982b283004b821ae80f78dcf1f4f7864f61c5c2140d5277f704e20a78ad93",
+    "docs/zeta-riesz-terminal.md": "82164f6121c28971380f0eaac23f2dfce8b5c3dbe89e0d6d750ea4ccb0edccab",
+    "docs/gaussian-suzuki-pivot.md": "b5ac5acbcfdeecec856045bc26b5ac4c116435127da6c13b0d378e7191047a68",
+    "docs/rh-proof-direction.md": "aab7d75bf73d2cae35c4d6e9d344fa44cf76632c14399534cc551baafd1106ef",
+    "docs/rh-proof-explorer/metadata.json": "d66320d2bbd024c5390d8b7aa2ea0bfc810081b0a9cbbb6682fac016e7dbe625",
+    "docs/theorem-explorer/metadata.json": "0fa70be71180f0db56060c82f4d102b6642efd622a264407dc1a8516f5d573a6",
+    "scripts/GenerateProjectStatus.lean": "faf06554fd1749c1cc6f5f8d29866b05e031bdd756c8c115d72472d64e7a71b6",
+    "scripts/CheckPrimeMomentErrorFrontier.lean": "cada65b8e57f83e12c6a2f1bc0ea9b2c53e5a01a8347bf0a579278012f7ec1d1",
+    "scripts/test_rh_proof_explorer.py": "713a4e5f859cfa4404d4d2469df233714e3ee8c847d2758fcbe1ce42c9ae99be"
+  }
+}
