@@ -19,6 +19,9 @@ import Lean.Util.CollectAxioms
 #lint+ in RiemannGaussian.SuzukiCarryDeterminantGate
 #lint+ in RiemannGaussian.SuzukiCarryPeriodicDiscrepancy
 #lint+ in RiemannGaussian.SuzukiCarryPeriodicBudgetAudit
+#lint+ in RiemannGaussian.SuzukiCarryMellinJet
+#lint+ in RiemannGaussian.SuzukiCarryMellinBranches
+#lint+ in RiemannGaussian.SuzukiCarryCollapseAudit
 
 open Lean Elab Command
 set_option maxHeartbeats 0
@@ -39,7 +42,10 @@ run_cmd do
     `RiemannGaussian.SuzukiCarryMellinRate,
     `RiemannGaussian.SuzukiCarryDeterminantGate,
     `RiemannGaussian.SuzukiCarryPeriodicDiscrepancy,
-    `RiemannGaussian.SuzukiCarryPeriodicBudgetAudit]
+    `RiemannGaussian.SuzukiCarryPeriodicBudgetAudit,
+    `RiemannGaussian.SuzukiCarryMellinJet,
+    `RiemannGaussian.SuzukiCarryMellinBranches,
+    `RiemannGaussian.SuzukiCarryCollapseAudit]
   let env ← getEnv
   let mut modules : Array Json := #[]
   for target in targets do

@@ -2,14 +2,14 @@
 
 # Theorem-family index
 
-Browse all **3,036 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **3,039 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
 | Theorem family | Modules | Contents |
 | --- | ---: | --- |
 | [Zeta & xi geometry](foundations.md) | 105 | Actual zeros, canonical products, reflection and analytic multiplicity. |
-| [Suzuki machinery](suzuki.md) | 374 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
+| [Suzuki machinery](suzuki.md) | 377 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
 | [Eta & reflection](eta.md) | 388 | Paired eta identities, continuation and exact reflected tails. |
 | [Gaussian heat](heat.md) | 119 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
 | [Phase positivity](phase.md) | 93 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |

@@ -2217,17 +2217,31 @@ def run(output, url=None, refresh_preview=False):
                         assert len(roots) == 1
                         theorem = roots[0]
                         scope = page.locator('#scope-text').inner_text()
-                        assert all(t in scope for t in (
-                            'every prime power', 'd^(-iy)',
-                            'every campaign height remains OPEN',
-                            'not signed cancellation across primes or lags',
-                            'No global arithmetic floor, new zero exclusion or RH proof'))
                         required = {
                             'suzuki-carry-low-sector': ('lowPacket', '20000', '19998', 'beta', '19999', 'Real.log'),
                             'suzuki-carry-phase-pole': ('codedRealKernel', 'poleExponent', '∫', '= 0'),
                             'suzuki-carry-mellin-gate': ('continuumDet', '≠ 0', '↔', 'nativeDet', '0 < c'),
                             'suzuki-carry-periodic-audit': ('continuumDet', '≠ 0', 'beta < 1', 'nativePeriodicBudget', 'Tendsto'),
+                            'suzuki-carry-fourth-order': ('0 < s.re', 'FourthOrderExpansion', 'continuumResponse', 'B s', 'C s'),
+                            'suzuki-carry-exceptional-equation': ('0 < beta', 'exceptional', '↔', 'poleExponent', '= 0'),
+                            'suzuki-carry-nonexceptional-source': ('¬', 'exceptional', '∃ tau', '0 < tau', 'continuumDet', 'nativeDet'),
+                            'suzuki-carry-chebyshev-collapse': ('codedStatistic', 'Chebyshev.psi', 'test', 'n + 1', '-'),
                         }
+                        if endpoint['id'] in (
+                                'suzuki-carry-fourth-order', 'suzuki-carry-exceptional-equation',
+                                'suzuki-carry-nonexceptional-source', 'suzuki-carry-chebyshev-collapse'):
+                            assert all(t in scope for t in (
+                                'actual fourth-order continuum expansion', 'certified truncation errors',
+                                'exceptional set throughout the campaign remains OPEN',
+                                'retaining all prime powers and phase', 'arbitrary denominator weights',
+                                'no independent actual-prime size constraint',
+                                'No global arithmetic floor, new zero exclusion or RH proof'))
+                        else:
+                            assert all(t in scope for t in (
+                                'every prime power', 'd^(-iy)',
+                                'every campaign height remains OPEN',
+                                'not signed cancellation across primes or lags',
+                                'No global arithmetic floor, new zero exclusion or RH proof'))
                         statement = ' '.join(theorem['statement'].split())
                         assert all(t in statement for t in required[endpoint['id']]), endpoint['id']
                         assert set(theorem['axioms']) == {'propext', 'Classical.choice', 'Quot.sound'}

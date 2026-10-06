@@ -1,5 +1,22 @@
 # Integer-carry research checkpoint
 
+The latest publication adds the actual fourth-order Mellin expansion,
+exact polynomial-cell coefficient series and a collapse audit of the whole
+signed statistic. The exceptional equation is explicit, with certified
+series truncation errors; its emptiness across the campaign remains open.
+Every nonexceptional candidate has a fixed positive modulation and a
+cofinal native source margin. This is a conditional source theorem, not an
+independent estimate for the primes.
+
+The joined carry statistic is exactly a single twisted von Mangoldt sum,
+and exactly a global signed Chebyshev test. Its row and gcd reindexings
+hold for arbitrary denominator weights. They provide no additional
+prime-specific size constraint after joining, so the present carry
+estimation route is stopped until independent arithmetic input is found.
+See the [jet and collapse details](suzuki-carry-collapse.md) and
+[focused audit](suzuki-carry-collapse-audit.json). All preceding results
+and no-gos below remain in force.
+
 This checkpoint registers the complete local carry investigation in the
 ordinary Lean root. It preserves the frozen Riesz reduction, the semiprime
 work and all preceding positive results and negative audits.

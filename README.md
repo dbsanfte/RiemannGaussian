@@ -149,10 +149,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Integer carry framework published; periodic/SBP payment ruled out.** Exact phase codes cancel the diagonal and density response. Their scaled Mellin limit and conditional cofinal source gate are checked. For every source-retaining fixed code, the fully joined periodic discrepancy norm budget exceeds the source scale.
-A working code at every height and signed cancellation across primes or lags remain open. The obstruction rules out rowwise norm payments; it gives no new zero exclusion.
-[Current checked endpoint](RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean#L530)
-· [Proof details](docs/suzuki-carry-publication.md).
+**Carry Mellin jets checked; the joined statistic is a Chebyshev test.** The actual fourth-order expansion and exact coefficient series are proved. Their explicit exceptional equation identifies when a fixed asymmetric code retains a cofinal source. The complete signed carry statistic is exactly one twisted Chebyshev test with every prime power retained.
+Universal determinant nonvanishing and an independent signed prime bound remain open. Carry and gcd reindexings alone supply no further size constraint; this estimation route is stopped pending new arithmetic input.
+[Current checked endpoint](RiemannGaussian/SuzukiCarryCollapseAudit.lean#L211)
+· [Proof details](docs/suzuki-carry-collapse.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

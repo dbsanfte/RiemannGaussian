@@ -5,7 +5,9 @@ The tent moment profiles are piecewise polynomials. Their knots are
 2*a/b with a=1,2,3; the polynomial branches depend on b modulo 2*a.
 This optional probe retains every coincident knot and derivative jump.
 The Mellin/Hurwitz identification is exploratory, not a Lean theorem
-or a numerical certificate. No actual-prime estimate is performed.
+or a numerical certificate. The actual fourth-order expansion and a
+separate elementary cell-series identification are now proved in Lean.
+No actual-prime estimate or universal wedge nonvanishing is performed.
 """
 
 import argparse
@@ -130,7 +132,10 @@ def main():
               'boundaryRows': rows, 'exactRationalMomentBranchReplays': replay_count,
               'beta': args.beta, 'samples': samples,
               'MellinBoundaryFormulaProvedInLean': False,
-              'actualContinuumFourthOrderExpansionProvedInLean': False,
+              'actualContinuumFourthOrderExpansionProvedInLean': True,
+              'elementaryPolynomialCellMellinSeriesProvedInLean': True,
+              'proofSources': ['RiemannGaussian/SuzukiCarryMellinJet.lean',
+                               'RiemannGaussian/SuzukiCarryMellinBranches.lean'],
               'allHeightNonvanishingProved': False, 'outwardRounded': False,
               'numericalCertificate': False}
     args.output.parent.mkdir(parents=True, exist_ok=True)

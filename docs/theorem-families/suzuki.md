@@ -6,7 +6,7 @@
 
 Suzuki screw functions, Landau compensation, transport, signed currents and contour identities.
 
-**374 modules.** Source links open the definitions, hypotheses and proofs.
+**377 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [PositiveDelayAveraging](../../RiemannGaussian/PositiveDelayAveraging.lean)
 - [PositiveLaplaceLandau](../../RiemannGaussian/PositiveLaplaceLandau.lean)
@@ -282,11 +282,14 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiCarrierSmoothHeatBound](../../RiemannGaussian/SuzukiCarrierSmoothHeatBound.lean)
 - [SuzukiCarrierSmoothReflection](../../RiemannGaussian/SuzukiCarrierSmoothReflection.lean)
 - [SuzukiCarrierSmoothReflectionLimit](../../RiemannGaussian/SuzukiCarrierSmoothReflectionLimit.lean)
+- [SuzukiCarryCollapseAudit](../../RiemannGaussian/SuzukiCarryCollapseAudit.lean)
 - [SuzukiCarryCorrelation](../../RiemannGaussian/SuzukiCarryCorrelation.lean)
 - [SuzukiCarryDeterminantGate](../../RiemannGaussian/SuzukiCarryDeterminantGate.lean)
 - [SuzukiCarryFejer](../../RiemannGaussian/SuzukiCarryFejer.lean)
 - [SuzukiCarryGram](../../RiemannGaussian/SuzukiCarryGram.lean)
 - [SuzukiCarryGramSource](../../RiemannGaussian/SuzukiCarryGramSource.lean)
+- [SuzukiCarryMellinBranches](../../RiemannGaussian/SuzukiCarryMellinBranches.lean)
+- [SuzukiCarryMellinJet](../../RiemannGaussian/SuzukiCarryMellinJet.lean)
 - [SuzukiCarryMellinLimit](../../RiemannGaussian/SuzukiCarryMellinLimit.lean)
 - [SuzukiCarryMellinRate](../../RiemannGaussian/SuzukiCarryMellinRate.lean)
 - [SuzukiCarryPeriodicBudgetAudit](../../RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean)

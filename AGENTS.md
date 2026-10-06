@@ -16107,3 +16107,70 @@ OPEN. No new zero-free/RH claim or top-ten accomplishment is earned.
 Local audit files retain their historical focused-validation scope; the
 publication audit separately records root registration and wider checks.
 After publishing this checkpoint, return to local scope unless instructed.
+
+## Carry determinant and global collapse checkpoint, 2026-10-06
+
+Treat the rowwise/SBP payment class as closed. The latest task is the
+actual continuum jet/source gate followed by a collapse audit, not a
+sharper componentwise allowance. Continue locally without subagents,
+commits/pushes, root registration, public metadata or wider gates.
+
+Keep `SuzukiCarryMellinJet`: the actual fourth-order expansion for every
+Re(s)>0 is now proved by a count-independent alternating Taylor estimate
+and dominated convergence. The signed densities are exactly
+M1^2-M0*M2 and M2^2/4+M0*M4/12-M1*M3/3. They are not assumed positive.
+Odd coefficients cancel before integration.
+
+Keep `SuzukiCarryMellinBranches`: all moments are exact rational
+polynomials on the common grid12/n. The elementary polynomial-cell
+series equals the actual B_s,C_s, with certified truncation errors
+279*(12/(N+1))^Re(s)/Re(s) and
+1296*(12/(N+1))^Re(s)/Re(s). Coincident knots retain their literal upper
+endpoint. The exact exceptional equation is explicitB(p)*explicitC(beta)
+=explicitC(p)*explicitB(beta), p=1-iy. Its emptiness on the campaign
+|y|>=54,19999/20000<=beta<1 remains OPEN; do not relabel the equation
+as universal nonvanishing. Nonexceptional candidates have a proved fixed
+positive code/cofinal native source bound. Changing finite modulation
+ratios cannot repair the same degenerate quadratic/quartic wedge;
+higher jets could test new minors, but an actual escape is not proved.
+
+Keep `SuzukiCarryCollapseAudit`: the complete coded statistic is exactly
+sum_(d<=3H) Lambda(d)*d^(-iy)*K_H(d), with every prime power and full phase.
+It is also exactly -sum_(n<=3H) psi(n)*(f_H(n+1)-f_H(n)); the outer
+boundary at3H+1 is zero. This is a global signed identity, not SBP
+payment. The continuum Mellin symbol is -continuumDet(p,s,tau), and
+the normalized native symbol converges to it.
+
+Both the joined-row identity and endpoint-gcd identity hold for arbitrary
+denominator weights. Delta-weight tests prove that universal annihilation
+would require a pointwise zero kernel. Existing reindexings therefore
+give no independent source-small bound for the actual prime measure.
+Literal untwisted factorization remains valid, but its twisted divisor
+observations are the same unpaid arithmetic data. This does not rule out
+new prime-specific mathematics; it closes the current carry/gcd route as
+an estimate until such input exists. Do not add another equivalent
+prime-sum carrier or revive rowwise norm payment.
+
+The all-height source gate, signed o(H^(1+beta)) statistic, Suzuki floor,
+new zero exclusion and RH remain OPEN. The optional boundary/Hurwitz
+detector is still exploratory even though the separate elementary cell
+series and actual jets are checked. Keep focused leaf, 14-namespace-linter
+and all-declaration standard-axiom checks separate from publication.
+See docs/suzuki-carry-collapse.md and its scoped audit.
+
+## Carry jet and collapse publication authorized, 2026-10-06
+
+The user explicitly requests committing and pushing this completed local
+slice. This supersedes the local publication hold for this checkpoint.
+Register all three new modules in the ordinary root and Suzuki family,
+publish their exact scope in the explorer and Latest Update, and run the
+tracked precommit hook, root/lint/axiom audits and renderer/browser gates.
+Keep the earlier local audit distinct from the publication audit.
+
+The actual fourth-order expansion, elementary coefficient series and
+global signed Chebyshev collapse are proved. Universal campaign determinant
+nonvanishing and the independent source-small arithmetic estimate remain
+OPEN. Preserve every previous positive result, no-go and semiprime file.
+Do not restart the closed rowwise/SBP or carry/gcd estimation routes without
+new prime-specific input. No subagents are authorized. After this
+publication, further research remains local until instructed otherwise.

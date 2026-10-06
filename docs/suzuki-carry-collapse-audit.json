@@ -1,0 +1,1412 @@
+{
+  "schema": "suzuki-carry-collapse-local-audit-v1",
+  "date": "2026-10-06",
+  "baseCommit": "9213afd5c8a09e58b58e8a43bd85be49b37858e5",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiCarryMellinJet.lean": "3829642833a22eb05c9e951f4f01db8e1d8270bb9df922a57de6e3e15278ba20",
+    "RiemannGaussian/SuzukiCarryMellinBranches.lean": "e0ab59d4e88eed48a3dd3b3d423666c343cbb627787b5e6416edbdaa108f4de7",
+    "RiemannGaussian/SuzukiCarryCollapseAudit.lean": "874e52d935e9f7d13fdc9b233ca50b6ef0ea126e81b89bb400f34cd877666eb7",
+    "RiemannGaussian/SuzukiCarryMellinRate.lean": "4edc8e9c02f5568d41d291f36bea43971eb4e17aa661edf201b6d92ea006e0a9",
+    "RiemannGaussian/SuzukiCarryDeterminantGate.lean": "4ba83f31bafde023830f4219eb7bfb5d6e3ba226a8a2773288f74ddd09070de6",
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean": "a756656aa2a2039d03eb68e21ff22cce11a12a66fa34bb03d886ee03bca9d4e5",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean": "3d00f7a715a41b1705be845a9f4df8cf9b175c8f7c2ee1f141ceaaeed1588ee8",
+    "scripts/CheckSuzukiCarryCollapse.lean": "ee7a4a74a6e845eca722f932d720c19a0204b3e7f55a4bd39d75d7afa0acde6d",
+    "scripts/probe_suzuki_carry_mellin_jets.py": "f0b41b268ff18bb0036ed31d8f22ae43329c62d0ff034c4d1a4d75f5911e270d",
+    "docs/suzuki-carry-collapse.md": "f8e6acc117b3a760b0a0c22f2af896a3b2fc4ea69864afc0c512721815351ba3",
+    "docs/gaussian-suzuki-pivot.md": "1e3c0dfbfe4124e9b86fa5afa9ae39895b64dc1119c05ff00b169b36173a624e",
+    "AGENTS.md": "97ce540a4f7422e41cd76a0bbbf842d923c009c10fc413b058812061c1e16ffa"
+  },
+  "actualJet": {
+    "fourthOrderExpansionForEveryPositiveRealPart": true,
+    "quadraticDensity": "M1^2-M0*M2",
+    "quarticDensity": "M2^2/4+M0*M4/12-M1*M3/3",
+    "allOddTermsCancelBeforeIntegration": true,
+    "accumulatingSmallSpacingKnotsControlled": true,
+    "arithmeticEstimateProved": false
+  },
+  "coefficientIdentification": {
+    "commonGrid": "12/n; open lower and closed upper endpoint",
+    "rationalFinitePolynomialBranchesProved": true,
+    "elementaryPolynomialCellMellinSeriesProved": true,
+    "seriesConvergenceProved": true,
+    "quadraticPrefixError": "279*(12/(N+1))^Re(s)/Re(s)",
+    "quarticPrefixError": "1296*(12/(N+1))^Re(s)/Re(s)",
+    "HurwitzProbeIdentificationProved": false
+  },
+  "determinantGate": {
+    "explicitExceptionalEquation": "explicitB(1-iy)*explicitC(beta)=explicitC(1-iy)*explicitB(beta)",
+    "equivalenceWithActualFourthOrderWedgeProved": true,
+    "nonexceptionalFixedPositiveCodeAndCofinalNativeSourceLowerBoundProved": true,
+    "universalNonvanishingOrAlternativeCodeProved": false,
+    "campaignExceptionalSetKnownEmpty": false,
+    "campaignExceptionalCandidateCertified": false,
+    "fullGatePassed": false,
+    "asymmetricQuarticPreflight": "v^2*w^2*(w^2-v^2)*wedge*tau^6; changing fixed ratios cannot repair the same degenerate wedge",
+    "sixthJetAlgebra": "12*wedge24*tau^6+60*wedge26*tau^8+48*wedge46*tau^10",
+    "actualSixthJetEscapeClaimed": false
+  },
+  "arithmeticCollapse": {
+    "literalSum": "S_H=sum_(1<=d<=3H) Lambda(d)*d^(-iy)*K_H(d)",
+    "globalChebyshevTest": "S_H=-sum_(0<=n<=3H) psi(n)*(f_H(n+1)-f_H(n))",
+    "outerBoundaryAt3HPlus1ExactlyZero": true,
+    "allPrimePowersAndFullHeightPhaseRetained": true,
+    "rowJoinHoldsForArbitraryWeights": true,
+    "endpointGcdIdentityHoldsForArbitraryWeights": true,
+    "universalAnnihilationIffPointwiseZeroKernelProved": true,
+    "genuineUntwistedMangoldtDivisorIdentityRetained": true,
+    "twistedDivisorObservationRetained": true,
+    "continuumMellinSymbol": "-continuumDet(p,s,tau)",
+    "nativeNormalizedSymbolConvergesToContinuum": true,
+    "independentSourceSmallActualPrimeBoundProved": false,
+    "impossibilityOfFutureSignedPrimeCancellationClaimed": false,
+    "routeDecision": "Stop current carry/gcd estimation until independent actual-prime arithmetic input exists; no sharper rowwise/SBP allowances or equivalent carrier proliferation."
+  },
+  "validation": {
+    "focusedBuild": "lake --wfail build RiemannGaussian.SuzukiCarryMellinBranches RiemannGaussian.SuzukiCarryCollapseAudit: passed",
+    "namespaceLintAndAxiomCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryCollapse.lean: passed",
+    "namespaceLintersPerModule": 14,
+    "allDeclarationsIncludingPrivateAndGeneratedAudited": true,
+    "allDeclarations": 199,
+    "theoremsIncludingPrivateAndGenerated": 169,
+    "report": {
+      "modules": [
+        {
+          "theoremsIncludingPrivateHelpers": 69,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.measurable_moment_exp",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.fourthOrderExpansion",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.integrable_C",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment_abs_le._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expRemainder_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.jump_chain_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profile_zero_eq_moment",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.sixth_jet_determinant",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet_eq_moments._simp_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment_complex",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.hasDerivAt_expRemainder",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_zero_above",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.weighted_remainder_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet_eq_moments",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quarticDensity_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.alternating_chain_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.clamp_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expRemainder.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.sixth_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment_abs_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet_norm_sq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.eighth_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.asymmetric_quartic_determinant",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.integrable_B",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.norm_I_tau_v",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.weighted_tent_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expJet_eq_sum",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.exists_fixed_code_of_wedge",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.measurable_moment_exp._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.integrable_normalizedRemainder",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment_zero_above._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet_eq_moments._simp_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.clamp_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet_norm_sq._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expRemainder_deriv_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.asymmetric_quartic_loss_of_wedge_zero",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.integrable_bounded_density",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.clamp.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.alternating_chain_bound._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profileJet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_7",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.clamp._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expJet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quarticDensity.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.clamped_remainder_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expJet._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quarticDensity._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.remainderConstant._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.profile_sub_jet_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quadraticDensity.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.normalizedRemainder_bound._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.mass_remainder_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.integral_normalizedRemainder",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.moment_zero_above",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quadraticDensity_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinJet.0.RiemannGaussian.SuzukiCarryMellinJet.tent_clamp_pow",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.expJet._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.quarticDensity._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.remainderConstant._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryMellinJet",
+          "declarations": 80
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 57,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.eval_cPolynomial",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.logCells_disjoint._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.exceptional_iff_wedge_zero",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.integral_B_cell",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchMoment.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.exponential_monomial",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.explicitB_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchB.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.bPolynomial.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.logCells_disjoint",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.integral_sub_prefix_cells",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.edge_strictAnti",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.explicitC_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.eval_bPolynomial",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.density_tail_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.B_prefix_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.moment_eq_prefixes._simp_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.momentPolynomial.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.C_prefix_error",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchMoment._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.prefix_range._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.integral_polynomial_cell._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.B.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.powerPrefix.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.hasSum_C_cells",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.exists_fixed_code_of_not_exceptional",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.moment_eq_branch",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.powerPrefix._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.integral_polynomial_cell",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.moment_eq_prefixes._proof_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.quadraticDensity_eq_branch",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.union_logCells._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.edge_strictAnti._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.edge.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.integral_sub_prefix_cells._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.prefix_range._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.wedge_eq_zero_iff_explicit",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.prefix_range",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.quarticDensity_eq_branch",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.eval_momentPolynomial",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchMoment._proof_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.edge_pos",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.cPolynomial.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.integral_C_cell",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.prefix_range._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.logCell.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.floor_eq_of_mem_cell",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.logCells_disjoint._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.union_logCells",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinJet.C.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.prefixPolynomial.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.hasSum_B_cells",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinBranches.0.RiemannGaussian.SuzukiCarryMellinBranches.tent_prefix",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchC.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.branchC._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.moment_eq_prefixes",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinBranches.eval_prefixPolynomial",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryMellinBranches",
+          "declarations": 71
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 43,
+          "theoremAxioms": [
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.common_divisor_weight._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test._proof_1_7",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedDivisors_mangoldt",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.mangoldt_prefix._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedRows_vanish_forall_iff",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.common_divisor_weight._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedDivisors.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.mangoldt_prefix._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test._proof_1_5",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_denominator_sum._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.mangoldt_prefix",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test._simp_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.mangoldt_prefix._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.tendsto_normalized_codedResponse",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test._simp_1_4",
+              "axioms": []
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedRealKernel.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.test.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.kernel.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd._proof_1_4",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.nativeDet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_denominator_sum",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedDivisors_twisted",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.mangoldt_prefix._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.common_divisor_weight",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.common_divisor_weight._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_denominator_sum._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.continuum_pole_symbol_eq_zero",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryCollapseAudit.0.RiemannGaussian.SuzukiCarryCollapseAudit.common_divisor_weight._simp_1_4",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedRows_eq_joined",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd._proof_1_3",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedDivisors_mangoldt._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.source_bound_iff_denominator_bound",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_denominator_sum._proof_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.integral_continuumKernel",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.weightedGram_eq_gcd._proof_1_5",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_denominator_sum._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryCollapseAudit.kernel_eq_realKernel",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryCollapseAudit",
+          "declarations": 48
+        }
+      ]
+    },
+    "optionalProbe": "240 exact rational branch replays across 8 knot-residue classes; no floating values used as proof",
+    "pythonCompilationPassed": true,
+    "wholeRepoOrPublicMetadataGatesRun": false
+  },
+  "claimsNotMade": [
+    "universal campaign determinant nonvanishing",
+    "independent signed o(H^(1+beta)) bound",
+    "arithmetic floor",
+    "new zero exclusion",
+    "RH"
+  ],
+  "scopeNote": "This records the focused local checkpoint before publication; shared documentation pins are refreshed for the published tree. Root registration and wider checks are recorded separately.",
+  "publicationAudit": "docs/suzuki-carry-publication-audit.json"
+}

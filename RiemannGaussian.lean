@@ -2704,3 +2704,6 @@ import RiemannGaussian.SuzukiCarryMellinRate
 import RiemannGaussian.SuzukiCarryDeterminantGate
 import RiemannGaussian.SuzukiCarryPeriodicDiscrepancy
 import RiemannGaussian.SuzukiCarryPeriodicBudgetAudit
+import RiemannGaussian.SuzukiCarryMellinJet
+import RiemannGaussian.SuzukiCarryMellinBranches
+import RiemannGaussian.SuzukiCarryCollapseAudit

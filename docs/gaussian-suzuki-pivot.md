@@ -875,3 +875,48 @@ theorems/private/generated proofs. The optional probe independently replays
 It is outside ordinary CI and is not an asymptotic certificate. Exact scope
 and source pins are in
 [`suzuki-carry-periodic-discrepancy-audit.json`](suzuki-carry-periodic-discrepancy-audit.json).
+
+## Actual carry jets and global collapse, 2026-10-06
+
+The actual fourth-order continuum expansion is now proved for every
+positive real-part Mellin exponent. Its signed coefficients also have
+an exact convergent elementary polynomial-cell series, with certified
+truncation errors. This discharges the earlier expansion premise.
+The all-height nonzero wedge/alternative-code claim remains open:
+the explicit exceptional equation has not been proved to have no
+solutions in the campaign strip. A nonexceptional candidate now gets
+the fixed positive modulation and cofinal source margin directly.
+
+The complete arithmetic collapse is also checked. Every row, modulation,
+lag orientation and prime power joins into one exact twisted von
+Mangoldt sum. A global signed Abel identity makes it one Chebyshev
+test with an exactly zero outer boundary. Both the row join and the
+endpoint-gcd identities hold for arbitrary denominator weights; their
+bookkeeping alone adds no prime-specific size constraint. The previous
+rowwise/SBP payment remains closed, and no independent smallness bound
+for this test is proved. Stop this carry estimation route unless new
+actual-prime arithmetic input is identified. This audit does not rule
+out future prime-specific identities and does not exclude any zero.
+
+The exact formulas, exceptional equation, arithmetic reduction and
+scoped validation are in
+[`suzuki-carry-collapse.md`](suzuki-carry-collapse.md) and its
+[local audit](suzuki-carry-collapse-audit.json). Public root/metadata
+registration and wider publication checks are not part of this local
+slice.
+
+## Publication of the carry jet and collapse checkpoint
+
+The 2026-10-06 publication registers `SuzukiCarryMellinJet`,
+`SuzukiCarryMellinBranches` and `SuzukiCarryCollapseAudit` in the ordinary
+root and Suzuki theorem family. The actual fourth-order expansion and
+elementary coefficient series are checked; universal campaign determinant
+nonvanishing is still open. The complete signed statistic collapses exactly
+to a twisted Chebyshev test, with no independent prime-specific bound
+provided by the carry/gcd reindexings. Further carry estimation is stopped
+pending genuinely new arithmetic input. The global Suzuki criterion
+remains the active endpoint, Riesz remains frozen, and no new zero
+exclusion or RH proof is claimed. See the
+[published scope](suzuki-carry-publication.md),
+[mathematical details](suzuki-carry-collapse.md) and
+[root publication audit](suzuki-carry-publication-audit.json).

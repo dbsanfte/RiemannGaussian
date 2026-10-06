@@ -16,17 +16,17 @@
       "changeReason": "The Riesz endpoint now characterizes prime coherence as the zero itself and identifies its literal Chebyshev-error transform. The user has frozen that reduction and directed a global Gaussian/Weil–Suzuki architecture pivot."
     },
     "latestUpdate": {
-      "sequence": 150,
-      "id": "publish-integer-carry-mellin-and-periodic-obstruction",
+      "sequence": 151,
+      "id": "publish-carry-mellin-jets-and-signed-collapse",
       "kind": "theorem",
-      "title": "Integer carry framework published; periodic/SBP payment ruled out.",
-      "body": "Exact phase codes cancel the diagonal and density response. Their scaled Mellin limit and conditional cofinal source gate are checked. For every source-retaining fixed code, the fully joined periodic discrepancy norm budget exceeds the source scale.",
-      "next": "A working code at every height and signed cancellation across primes or lags remain open. The obstruction rules out rowwise norm payments; it gives no new zero exclusion.",
+      "title": "Carry Mellin jets checked; the joined statistic is a Chebyshev test.",
+      "body": "The actual fourth-order expansion and exact coefficient series are proved. Their explicit exceptional equation identifies when a fixed asymmetric code retains a cofinal source. The complete signed carry statistic is exactly one twisted Chebyshev test with every prime power retained.",
+      "next": "Universal determinant nonvanishing and an independent signed prime bound remain open. Carry and gcd reindexings alone supply no further size constraint; this estimation route is stopped pending new arithmetic input.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "suzukiCarryPeriodicObstructionTheorem"
+        "suzukiCarryChebyshevCollapseTheorem"
       ],
-      "documentation": "docs/suzuki-carry-publication.md"
+      "documentation": "docs/suzuki-carry-collapse.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -8138,6 +8138,66 @@
         "suzukiCarryScope"
       ],
       "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    {
+      "id": "suzuki-carry-fourth-order",
+      "label": "Actual fourth-order Mellin expansion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryFourthOrderTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryCollapseScope"
+      ],
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    {
+      "id": "suzuki-carry-exceptional-equation",
+      "label": "Explicit determinant exception equation · campaign emptiness OPEN",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryExceptionalEquationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryCollapseScope"
+      ],
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    {
+      "id": "suzuki-carry-nonexceptional-source",
+      "label": "Nonexceptional candidates · cofinal source margin",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryNonexceptionalSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryCollapseScope"
+      ],
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    {
+      "id": "suzuki-carry-chebyshev-collapse",
+      "label": "Joined carry statistic · exact signed Chebyshev test",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryChebyshevCollapseTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryCollapseScope"
+      ],
+      "documentation": "docs/suzuki-carry-collapse.md"
     }
   ],
   "scopes": {
@@ -14758,6 +14818,26 @@
       "label": "The actual xi residue contradicts a right-half zero of any multiplicity",
       "overview": true,
       "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    "RiemannGaussian.SuzukiCarryMellinJet.fourthOrderExpansion": {
+      "label": "Actual fourth-order continuum Mellin expansion",
+      "overview": true,
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    "RiemannGaussian.SuzukiCarryMellinBranches.exceptional_iff_wedge_zero": {
+      "label": "Explicit exceptional equation; universal nonvanishing OPEN",
+      "overview": true,
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    "RiemannGaussian.SuzukiCarryMellinBranches.exists_fixed_code_of_not_exceptional": {
+      "label": "Nonexceptional candidate gives fixed code and cofinal source",
+      "overview": true,
+      "documentation": "docs/suzuki-carry-collapse.md"
+    },
+    "RiemannGaussian.SuzukiCarryCollapseAudit.codedStatistic_eq_chebyshev_test": {
+      "label": "Whole signed carry statistic equals a Chebyshev test",
+      "overview": true,
+      "documentation": "docs/suzuki-carry-collapse.md"
     }
   },
   "moduleFamilies": {
