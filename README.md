@@ -149,10 +149,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Riesz terminal equivalence published; global Suzuki research resumed.** Target-strip nonvanishing is equivalent to strip-wide prime non-coherence and absence of its persistent centered factorial transform of actual psi-x. All multiplicities and independently verified low heights are retained. Separate full-radius coverage now reaches logarithmic height 2000.
-The all-height arithmetic premise remains open. Main research moves to the global Suzuki signal and complete Gaussian/Weil correlation; no new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaPrimeMomentTerminal.lean#L64)
-· [Proof details](docs/zeta-riesz-terminal.md).
+**Integer carry framework published; periodic/SBP payment ruled out.** Exact phase codes cancel the diagonal and density response. Their scaled Mellin limit and conditional cofinal source gate are checked. For every source-retaining fixed code, the fully joined periodic discrepancy norm budget exceeds the source scale.
+A working code at every height and signed cancellation across primes or lags remain open. The obstruction rules out rowwise norm payments; it gives no new zero exclusion.
+[Current checked endpoint](RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean#L530)
+· [Proof details](docs/suzuki-carry-publication.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

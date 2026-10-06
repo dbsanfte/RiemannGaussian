@@ -6,7 +6,7 @@
 
 Suzuki screw functions, Landau compensation, transport, signed currents and contour identities.
 
-**359 modules.** Source links open the definitions, hypotheses and proofs.
+**374 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [PositiveDelayAveraging](../../RiemannGaussian/PositiveDelayAveraging.lean)
 - [PositiveLaplaceLandau](../../RiemannGaussian/PositiveLaplaceLandau.lean)
@@ -282,6 +282,18 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiCarrierSmoothHeatBound](../../RiemannGaussian/SuzukiCarrierSmoothHeatBound.lean)
 - [SuzukiCarrierSmoothReflection](../../RiemannGaussian/SuzukiCarrierSmoothReflection.lean)
 - [SuzukiCarrierSmoothReflectionLimit](../../RiemannGaussian/SuzukiCarrierSmoothReflectionLimit.lean)
+- [SuzukiCarryCorrelation](../../RiemannGaussian/SuzukiCarryCorrelation.lean)
+- [SuzukiCarryDeterminantGate](../../RiemannGaussian/SuzukiCarryDeterminantGate.lean)
+- [SuzukiCarryFejer](../../RiemannGaussian/SuzukiCarryFejer.lean)
+- [SuzukiCarryGram](../../RiemannGaussian/SuzukiCarryGram.lean)
+- [SuzukiCarryGramSource](../../RiemannGaussian/SuzukiCarryGramSource.lean)
+- [SuzukiCarryMellinLimit](../../RiemannGaussian/SuzukiCarryMellinLimit.lean)
+- [SuzukiCarryMellinRate](../../RiemannGaussian/SuzukiCarryMellinRate.lean)
+- [SuzukiCarryPeriodicBudgetAudit](../../RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean)
+- [SuzukiCarryPeriodicDiscrepancy](../../RiemannGaussian/SuzukiCarryPeriodicDiscrepancy.lean)
+- [SuzukiCarryPhaseCode](../../RiemannGaussian/SuzukiCarryPhaseCode.lean)
+- [SuzukiCarryPoleCenter](../../RiemannGaussian/SuzukiCarryPoleCenter.lean)
+- [SuzukiCarrySourceDetector](../../RiemannGaussian/SuzukiCarrySourceDetector.lean)
 - [SuzukiCompactSourceDecay](../../RiemannGaussian/SuzukiCompactSourceDecay.lean)
 - [SuzukiCompanionHeatDecay](../../RiemannGaussian/SuzukiCompanionHeatDecay.lean)
 - [SuzukiControlledRecovery](../../RiemannGaussian/SuzukiControlledRecovery.lean)
@@ -330,6 +342,9 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiGammaReflectionDecay](../../RiemannGaussian/SuzukiGammaReflectionDecay.lean)
 - [SuzukiGammaShift](../../RiemannGaussian/SuzukiGammaShift.lean)
 - [SuzukiGammaShiftSource](../../RiemannGaussian/SuzukiGammaShiftSource.lean)
+- [SuzukiIntegerCarry](../../RiemannGaussian/SuzukiIntegerCarry.lean)
+- [SuzukiIntegerCarryMellinAudit](../../RiemannGaussian/SuzukiIntegerCarryMellinAudit.lean)
+- [SuzukiJoinedExcursionAudit](../../RiemannGaussian/SuzukiJoinedExcursionAudit.lean)
 - [SuzukiLaplaceCompensator](../../RiemannGaussian/SuzukiLaplaceCompensator.lean)
 - [SuzukiLegendreDivisorDual](../../RiemannGaussian/SuzukiLegendreDivisorDual.lean)
 - [SuzukiLogarithmicConvolution](../../RiemannGaussian/SuzukiLogarithmicConvolution.lean)

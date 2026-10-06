@@ -8,6 +8,16 @@ arithmetic bound remains open. The global reflected Gaussian Gram offers
 a second complete-zero-set interface whose arithmetic vanishing is also
 unproved. See the [pivot and concrete target](gaussian-suzuki-pivot.md).
 
+The published integer-carry branch now includes exact prime-power lag
+correlations, a source-scale Fejer low-sector saving, diagonal/density
+cancellation by phase codes, and their exact scaled Mellin limit. Its
+cofinal source transfer is conditional on a nonzero continuum determinant;
+existence of a working code at every campaign height remains open. The
+periodic/SBP audit proves that paying the fully joined rows separately by
+norms is source-divergent for every fixed source-retaining code. It does
+not rule out signed cancellation across different primes or lags. See the
+[negative checkpoint](gaussian-suzuki-pivot.md#periodic-remainder-payment-negative-checkpoint-2026-10-05).
+
 The Riesz branch is [frozen at its terminal reduction](zeta-riesz-terminal.md):
 target-strip nonvanishing is equivalent to strip-wide prime non-coherence
 and absence of the persistent factorial transform of the actual Chebyshev

@@ -16,17 +16,17 @@
       "changeReason": "The Riesz endpoint now characterizes prime coherence as the zero itself and identifies its literal Chebyshev-error transform. The user has frozen that reduction and directed a global Gaussian/Weil–Suzuki architecture pivot."
     },
     "latestUpdate": {
-      "sequence": 149,
-      "id": "freeze-riesz-terminal-global-suzuki-pivot",
+      "sequence": 150,
+      "id": "publish-integer-carry-mellin-and-periodic-obstruction",
       "kind": "theorem",
-      "title": "Riesz terminal equivalence published; global Suzuki research resumed.",
-      "body": "Target-strip nonvanishing is equivalent to strip-wide prime non-coherence and absence of its persistent centered factorial transform of actual psi-x. All multiplicities and independently verified low heights are retained. Separate full-radius coverage now reaches logarithmic height 2000.",
-      "next": "The all-height arithmetic premise remains open. Main research moves to the global Suzuki signal and complete Gaussian/Weil correlation; no new zero exclusion is claimed.",
+      "title": "Integer carry framework published; periodic/SBP payment ruled out.",
+      "body": "Exact phase codes cancel the diagonal and density response. Their scaled Mellin limit and conditional cofinal source gate are checked. For every source-retaining fixed code, the fully joined periodic discrepancy norm budget exceeds the source scale.",
+      "next": "A working code at every height and signed cancellation across primes or lags remain open. The obstruction rules out rowwise norm payments; it gives no new zero exclusion.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "primeMomentTerminalTheorem"
+        "suzukiCarryPeriodicObstructionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-terminal.md"
+      "documentation": "docs/suzuki-carry-publication.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -8076,6 +8076,66 @@
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "globalSuzukiCriterionScope"
+      ],
+      "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    {
+      "id": "suzuki-carry-low-sector",
+      "label": "Integer carry Fejer low sector · source-scale saving",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryLowSectorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryScope"
+      ],
+      "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    {
+      "id": "suzuki-carry-phase-pole",
+      "label": "Same-amplitude phase code · exact density cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryPhasePoleCancellationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryScope"
+      ],
+      "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    {
+      "id": "suzuki-carry-mellin-gate",
+      "label": "Asymmetric Mellin gate · conditional cofinal source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryDeterminantGateTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryScope"
+      ],
+      "documentation": "docs/gaussian-suzuki-pivot.md"
+    },
+    {
+      "id": "suzuki-carry-periodic-audit",
+      "label": "Periodic/SBP payment · source-scale no-go",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "suzukiCarryPeriodicObstructionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "suzukiCarryScope"
       ],
       "documentation": "docs/gaussian-suzuki-pivot.md"
     }

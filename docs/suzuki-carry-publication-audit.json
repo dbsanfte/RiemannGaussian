@@ -1,0 +1,6066 @@
+{
+  "schema": "suzuki-carry-publication-audit-v1",
+  "date": "2026-10-06",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "publicationRequestedByUser": true,
+  "rootRegistered": true,
+  "preservesAllEarlierResultsAndSemiprimeWork": true,
+  "activeDirection": "global Gaussian/Weil and Suzuki arithmetic; frozen Riesz reduction retained",
+  "mathematicalScope": {
+    "literalIntegerCarryAndFullPrimePowerPhase": true,
+    "independentFejerLowSectorSaving": true,
+    "phaseCodeDiagonalAndDensityCancellation": true,
+    "explicitLocallyUniformMellinLimit": true,
+    "conditionalCofinalDeterminantTransfer": true,
+    "allHeightExistenceOfNonzeroContinuumCode": false,
+    "periodicComponentwiseNormSBPObstruction": "Every fixed source-retaining code has nativePeriodicBudget/H^(1+beta) -> +infinity for beta<1. All modulations, both lag orientations and all N rows are joined before the audit norm.",
+    "signedCancellationAcrossDifferentPrimesOrLagsRuledOut": false,
+    "diagnosticMatchedComponentIsActualPrimeSingleZeroAsymptotic": false,
+    "globalArithmeticFloorProved": false,
+    "newZeroExclusion": false,
+    "RHProved": false
+  },
+  "newRootModules": [
+    "RiemannGaussian/ZetaTwistedChebyshev.lean",
+    "RiemannGaussian/SuzukiIntegerCarry.lean",
+    "RiemannGaussian/SuzukiIntegerCarryMellinAudit.lean",
+    "RiemannGaussian/SuzukiJoinedExcursionAudit.lean",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean",
+    "RiemannGaussian/SuzukiCarrySourceDetector.lean",
+    "RiemannGaussian/SuzukiCarryGram.lean",
+    "RiemannGaussian/SuzukiCarryGramSource.lean",
+    "RiemannGaussian/SuzukiCarryFejer.lean",
+    "RiemannGaussian/SuzukiCarryPoleCenter.lean",
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean",
+    "RiemannGaussian/SuzukiCarryMellinLimit.lean",
+    "RiemannGaussian/SuzukiCarryMellinRate.lean",
+    "RiemannGaussian/SuzukiCarryDeterminantGate.lean",
+    "RiemannGaussian/SuzukiCarryPeriodicDiscrepancy.lean",
+    "RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean"
+  ],
+  "compiledRootAudit": {
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 23,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.ZetaTwistedChebyshev.0.RiemannGaussian.ZetaTwistedChebyshev.continuousOn_phase_deriv",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.cumulative_eq_chebyshev_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.zeroComponent.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase_mul",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.continuousOn_phase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.offset_component_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.matched_zeroComponent",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.coupled_components_tendsto",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.hasDerivAt_phase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.ZetaTwistedChebyshev.matched_zeroBlock",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.ZetaTwistedChebyshev",
+        "declarations": 27
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 31,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_mod_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_of_lt._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.signed_prime_carry_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.logFactorial_eq_log_factorial._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation._proof_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_adjacent_defect_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.factorialObservation_vonMangoldt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.norm_weighted_joined_carry_defect_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_of_lt",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry.eq_1",
+            "axioms": []
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_mod_two._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.logFactorial_eq_log_factorial",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.exists_factorialObservation_ne_of_ne_vonMangoldt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiIntegerCarry",
+        "declarations": 34
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 21,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_zero_of_zeta_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_actual_colour_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.logIndicator_eq_colour_all",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryCellTransform_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.power_mode_carry_response_eq_zero_of_zeta_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.exp_sub_log_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.power_mode_carry_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.integrable_power_mode_carry_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_ae_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.finite_scaled_carry_tests_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.exp_mul_logIndicator_eq_indicator",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.integrable_exp_mul_carryLogColour",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.summable_carryCellTransform",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_zeta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiIntegerCarryMellinAudit",
+        "declarations": 24
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 37,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelLogMoment._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelSignal.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.eventually_modelDensity_ge_half",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.nonnegative_even_control_has_negative_twoNodeJoined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.critical_cosine_dilation_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.eventually_modelPotential_lt_smaller_power",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.twoNodeJoined.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.critical_cosine_dilation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.arithmetic_twoNodeJoined_eq_dilation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.denominator_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.tendsto_normalized_modelPotential",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.twoNodeJoined_eq_dilation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelLogMoment",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl_pairwise_nonnegative",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelSignal_at_balancedTime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.not_eventual_modelPotential_smaller_power_floor",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelPotential_sub_eq_centeredWork_sub_entropy",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass_at_balancedTime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl_joined_negative",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelMass",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.tendsto_balancedTime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelSignal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.timeKernel.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.dilation_le_of_twoNodeJoined_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelPotential_at_balancedTime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiJoinedExcursionAudit",
+        "declarations": 47
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 71,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_correlation_le_log_separation._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_correlation_le_log_separation._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.endpointSign.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.common_divisor_sum._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_correlation_le_log_separation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_two_product._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.common_divisor_sum._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_correlation_le_gcd_budget",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.endpointSign._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_primePhase_correlation_le_log_separation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_overlap_mixed_difference",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_eq_divisorIndicators._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_two_product._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.endpoint.eq_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.endpoint._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_eq_endpoint_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_divisor_normalized._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_two_product._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_primePhase",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.common_divisor_sum._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.common_divisor_sum._simp_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_two_product",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_support",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._proof_1_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.divisorIndicator.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_eq_gcd_sum._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_support._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_two_product._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_eq_divisorIndicators._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_correlation_le_log_separation._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_eq_divisorIndicators",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.common_divisor_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.correlation_adjacent_eq._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.norm_divisorPhase_le_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence_adjacent_product_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.incidence_three_product._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_divisor_normalized",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryCorrelation.0.RiemannGaussian.SuzukiCarryCorrelation.endpoint_gcd_le_separation._proof_1_9",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryCorrelation",
+        "declarations": 79
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 13,
+        "theoremAxioms": [
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarrySourceDetector.0.RiemannGaussian.SuzukiCarrySourceDetector.measurable_colour",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.measurable_overlapColour",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.matched_mode_overlap_response._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.overlapColour._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.overlapColour_eq_one_on_cell",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.overlapColour_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.integrable_sourceKernel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.matched_mode_overlap_source_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.matched_mode_overlap_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.integrable_matched_mode_overlap",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarrySourceDetector.0.RiemannGaussian.SuzukiCarrySourceDetector.colour_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.overlapColour.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarrySourceDetector.sourceCoefficient_ge_one_tenth",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarrySourceDetector",
+        "declarations": 15
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 81,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packetMass.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.carry_add_multiple_period",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_lag_eq_short_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.primePhase_quadratic_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.quadratic_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_7",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullQuadratic_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet_interval_eq_zero_of_dvd._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_lag_eq_short_sum._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_mod._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_zero_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.carry_lt_period._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.flat_zeroHeight_mass_lower._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_mod",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet_interval_eq._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_eq_correlation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.primePhase.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.joined_atom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.flat_zeroHeight_mass_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.quadratic_zeroHeight_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.flat_zeroHeight_mass_lower._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.extended_primeCarry._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.quadratic_zeroHeight_nonneg._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.extended_primeCarry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_9",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.flat_zeroHeight_mass_lower._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.cyclic_atom_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packetMass_interval_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_11",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet_eq_residue_sums",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryCorrelation.incidence.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_10",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_9",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packetMass_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.carry_lt_period._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.carry_lt_period._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_eq_gcd_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_eq_gcd_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_10",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.extended_primeCarry._proof_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet_interval_eq_zero_of_dvd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullQuadratic_eq_joined._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_11",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_lag_eq_short_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.carry_add_multiple_period._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGram.0.RiemannGaussian.SuzukiCarryGram.carry_lt_period",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_10",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_9",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullQuadratic_eq_quadratic",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_two_spikes._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.incidence_lag_product_eq_zero._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_8",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.lagAutocorrelation_eq._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packet_interval_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.flat_zeroHeight_mass_lower._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.packetMass_interval_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGram.fullGram_lag_eq_short_sum._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryGram",
+        "declarations": 87
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 46,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_flat_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_zero_of_large",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket_on_last_cell",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.sourceCoefficient_flat_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.integrable_power_mode",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.integrable_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_flat_scale._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_eq_zero_above",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.power_mode_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_log._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_log._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGramSource.0.RiemannGaussian.SuzukiCarryGramSource.realIncidence_abs_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGramSource.0.RiemannGaussian.SuzukiCarryGramSource.realCarry_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.sourceCoefficient_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.measurable_realMass",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_flat_scale._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.sourceCoefficient_pos_of_nonzero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realMass_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGramSource.0.RiemannGaussian.SuzukiCarryGramSource.realCarry_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket_interval_eq._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.power_mode_response_re_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.flat_power_mode_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket_interval_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_mul_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realIncidence.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGramSource.0.RiemannGaussian.SuzukiCarryGramSource.measurable_realCarry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryGramSource.0.RiemannGaussian.SuzukiCarryGramSource.realCarry_eq_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket_filter_nonzero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.hasDerivAt_diagnostic_component._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_log._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realPacket_on_last_cell._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryGramSource.realCarry_one_on_cell",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryGramSource",
+        "declarations": 51
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 46,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.matched_sourceCoefficient_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.highPacket.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.abs_value_le_remainder",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.tendsto_squareScale_lowPacket._simp_1_1",
+            "axioms": []
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.cofinal_campaign_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.coefficient_first",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realMass_on_macroscopic_cell._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realMass_on_macroscopic_cell._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.tendsto_squareScale_lowPacket",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.sourceCoefficient_uniform_lower._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_zero_of_dvd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realMass_on_macroscopic_cell",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_cofinal_strip_lowPacket_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryFejer.0.RiemannGaussian.SuzukiCarryFejer.window_exchange",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryFejer.0.RiemannGaussian.SuzukiCarryFejer.packet_sum_coeff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.sourceCoefficient_uniform_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.lowPacket.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_cofinal_campaign_lowPacket_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.coefficient_first._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_lowPacket_le._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realMass_on_macroscopic_cell._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_squareScale_lowPacket_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_cofinal_strip_lowPacket_le._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryFejer.0.RiemannGaussian.SuzukiCarryFejer.packet_mul_coeff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packetMass_le_remainder",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.norm_lowPacket_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.abs_value_le_remainder._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.matched_sourceCoefficient_pos._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.packet_eq_value._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.realPacket_eq_average._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.fullQuadratic_eq_low_high._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryFejer",
+        "declarations": 50
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 57,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.mellin_ofReal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_cofinal_lowStatistic_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.scaleDefect._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.weight.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.finite_dilation_mismatch",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_pole_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.ideal_scale_factor_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lower_pole_endpoint_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.kernel_outer_band",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.kernel_outer_band._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.twisted_power_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realWeight_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.Q_eq_gcd_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.value.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_ne_zero_of_defect_gap",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_normalized_lower_endpoint_le._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_8",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_cofinal_lowStatistic_le._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.poleExponent.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_eq_scaleDefects",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integrable_mellin",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_7",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_6",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integral_realKernel_eq_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.weight_eq_value_sq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPoleCenter.0.RiemannGaussian.SuzukiCarryPoleCenter.integrable_absoluteEnvelope",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.ideal_scale_factor_norm_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_norm_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.matched_zero_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realWeight.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.absoluteEnvelope_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_normalized_lower_endpoint_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.poleExponent_re",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.C_ofReal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integral_pole_realKernel_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_log",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPoleCenter",
+        "declarations": 72
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 76,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_joined",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.symmetric_sourceDet_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packet_pi_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_coded_pole_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.conj_modulation._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_eq_zero_iff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_norm_lower_of_gap",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.Cmod_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_eq_lag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_coded_matched_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_correlated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_canonical",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.realMass_modulate_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_mul_conj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_matched_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulate_mul_conj",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_lag_fibers",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic_eq_offDiagonal_gcd",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.kernel_atom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedResponse_pole_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_pole",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_mul_conj._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulate.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic_eq_correlated",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_codedRealKernel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.conj_modulation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.norm_modulation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_offDiagonal",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.code_sum_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_pi",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedKernel_outer_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._proof_1_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.norm_modulate",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.lagFactor_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.conj_coefficient",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryFejer.coefficient.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_range_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_eq_zero_of_no_cross",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_eq_contrasts",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.surviving_incidence_le_lag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_lag",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.surviving_incidence_le_lag._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.incidence_two_eq_sign._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.incidence_two_eq_sign",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedResponse_eq_neg_det",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packet_pi_two._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packetMass_pi_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.lagFactor.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPhaseCode",
+        "declarations": 91
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 87,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_zero_of_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.jumpCount_pos",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_zero_of_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_7",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.phase_lipschitz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_chain_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_13",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_18",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_eq_zero_above",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_11",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_14",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_eq_zero_above._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_prefix_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_filter_card",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_17",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_right",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.jump_span_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_19",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_16",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_9",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_15",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.modulate_eq_amplitude",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_12",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_21",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.jumpCount._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_sub_profile_norm",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_prefix",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_10",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_22",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_zero_of_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_8",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_20",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_left",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.last_jump_ge",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_eq_zero_above._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_eq_zero_above",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_lipschitz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp_monotone",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_23",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realMass_eq_roundedProfile",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_chain_norm._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_norm_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_lipschitz",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.grid_threshold",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryMellinLimit",
+        "declarations": 94
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 28,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.normalized_nativeDet_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumResponse.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendsto_scaledResponse",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_error_two_cutoffs",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_error_uniform",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.integrable_continuumResponse",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendstoUniformlyOn_scaledResponse",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.mass_error_uniform",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.integrable_roundedResponse",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.roundedResponse.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.sourceDet_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.integrable_bounded_kernel",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumResponse_neg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendsto_normalized_nativeDet",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.continuous_amplitude",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_jumpCount_exp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumDet_ne_zero_iff_cofinal_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.mass_error_sampling",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumDet.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundUp",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundedProfile._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundedProfile",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_eq_rounded",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryMellinRate.eventually_nativeDet_source_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryMellinRate",
+        "declarations": 33
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 11,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.continuumDet_eq_contrast",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.evenJet.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.tendsto_normalized_contrastDet",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryDeterminantGate.0.RiemannGaussian.SuzukiCarryDeterminantGate.tendsto_twice",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.exists_positive_contrastDet_ne_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.normalized_contrastDet_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.exists_fixed_code_source_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet_evenJet",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryDeterminantGate.0.RiemannGaussian.SuzukiCarryDeterminantGate.reconstruct",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryDeterminantGate",
+        "declarations": 15
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 92,
+        "theoremAxioms": [
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_supported",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.mean_one_spike",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_left._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_main_band_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_10",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_left",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_12",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.coefficient_eq_weight",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_first",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_9",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.abs_zeroMean_prefix_le_one._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.abs_zeroMean_prefix_le_one._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_11",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.not_eventually_discrepancy_one_div_H._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_main_band_lower._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_11",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_supported._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_zero_right",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_zero_right._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.mean_one_spike._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.spike_prefix._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.zeroMean_one_spike",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_zeroMean_period",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.zeroMeanProduct.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_9",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_right._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.spike_prefix",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_8",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_overlap_polynomial",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_right._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap_atom._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap_atom._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap_atom._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_6",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.abs_zeroMean_prefix_le_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_13",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_zeroMean_period._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap_atom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_right",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.spike_prefix._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_zero_left",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_main_band_lower._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_main_band_lower._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_overlap_eq",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.abs_zeroMean_prefix_le_one._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_14",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_6",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.tendsto_discrepancy_diagonal_scale._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_zero_left._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap_atom._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_8",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_15",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_7",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale._simp_1_10",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.carry_product_one_spike._proof_1_5",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weight_left._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.overlap.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.weighted_product_eq_mean_add_discrepancy",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_supported._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.mean_one_spike._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_main_band_lower._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_diagonal_scale",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.not_eventually_discrepancy_one_div_H",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.mean_one_spike._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.mean_one_spike._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.0.RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.sum_supported._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy_one_spike._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy",
+        "declarations": 96
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 53,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.normalized_nativeLagPair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_geometry._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.native_row_discrepancy._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_geometry._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_in_high_sector",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.symbol_error",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.symbol.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy.discrepancy.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_nonneg",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_primeBand_lower._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.eventually_symbol_close",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_primeBand_lower._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_primeBand_lower._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.symbol._proof_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_primeBand_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.symbol._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.limitCode_ne_zero_of_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.nativePeriodicBudget_source_diverges",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_geometry",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.native_row_discrepancy",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_7",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_4",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_2",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.exp_pair",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.not_source_and_periodic_budget_decay",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_normalizedCode",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_primeBand_lower._proof_1_4",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.nativePeriodicBudget_div_H",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_geometry._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.native_row_discrepancy._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.tendsto_primeBand_mass._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.eventually_periodicBudget_linear_of_source",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.periodicBudget_source_diverges",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.analytic_symbol",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_5",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.componentwise_allowance_source_diverges",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.normalizedCode_eq_native",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.0.RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_bounds._simp_1_3",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.exists_symbol_band",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_in_high_sector._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.exists_symbol_ne_zero_on_interval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit.primeBand_in_high_sector._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "rootRegistered": true,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit",
+        "declarations": 61
+      }
+    ]
+  },
+  "validationCommands": [
+    "lake build --wfail",
+    "lake env lean -DwarningAsError=true scripts/LintProject.lean",
+    "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryPublication.lean",
+    "lake env lean -DwarningAsError=true scripts/GenerateProjectStatus.lean",
+    "lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean",
+    "THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean",
+    ".lake/browser-venv/bin/python scripts/test_theorem_explorer.py",
+    ".lake/browser-venv/bin/python scripts/test_numerical_certificate_explorer.py",
+    ".lake/browser-venv/bin/python scripts/test_rh_proof_explorer.py --refresh-preview",
+    ".lake/browser-venv/bin/python scripts/test_github_readme.py"
+  ],
+  "publicationValidation": {
+    "ordinaryRootWarningAsErrorBuild": true,
+    "wholeProjectLint": true,
+    "allNewDeclarationsIncludingPrivateAndGeneratedAxiomAudited": true,
+    "onlyStandardAxioms": true,
+    "compiledStatusGate": true,
+    "generalAndCertificateExplorerBrowser": true,
+    "githubReadmeRenderer": true,
+    "rhExplorerBrowser": true,
+    "evergreenPlots": true,
+    "cachedCertificateExplorer": true,
+    "trackedPrecommitHookRequired": true,
+    "exhaustiveNumericalCertificateRun": false
+  },
+  "optionalNumericalProbes": "Preserved outside ordinary CI; they are not asymptotic or zero-free certificates.",
+  "priorLocalAudits": "Historical focused validation remains in the eight local audit files. This audit separately records root registration and publication scope.",
+  "remoteVerification": "This precommit audit does not attest CI success. Verify the workflow and Pages deployment for the exact published SHA separately.",
+  "sourceHashes": {
+    "RiemannGaussian/ZetaTwistedChebyshev.lean": "9e4c2e31e2284dab05a898df2bb3cd609ad529272182b3b8919ef9b6ca1d272f",
+    "RiemannGaussian/SuzukiIntegerCarry.lean": "1591f653adfab3ad6be68367183806a7db34f755445a0eb9aa0ca01686bc27da",
+    "RiemannGaussian/SuzukiIntegerCarryMellinAudit.lean": "f562233b9190d2de6b91ec77c6600cc1ad00ea5dd16b2806a1c8b0fb78a11894",
+    "RiemannGaussian/SuzukiJoinedExcursionAudit.lean": "4bb477ff65834b03848d38f5c8eaf68253e5376da3668a8a99cb36205300bfd0",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean": "3d00f7a715a41b1705be845a9f4df8cf9b175c8f7c2ee1f141ceaaeed1588ee8",
+    "RiemannGaussian/SuzukiCarrySourceDetector.lean": "8dde6ee3eb1735a436a5881266a1bae8b602d1f2a74c490864b95444a34da6f5",
+    "RiemannGaussian/SuzukiCarryGram.lean": "10e812191080cc4942c8388cc6ede1cb8cc1405432229c609cfad0e5af97bac4",
+    "RiemannGaussian/SuzukiCarryGramSource.lean": "23a19fb643a87520fccb03f8344ec440514261dc8f5b3019b91bbcbd3e28315e",
+    "RiemannGaussian/SuzukiCarryFejer.lean": "497d2bdc4ef6cbcc1a5b172ed5b0d0458781ce390376fdd3fafba23bd154083d",
+    "RiemannGaussian/SuzukiCarryPoleCenter.lean": "3f7dd8a53ef594307b3da89aea723c53feb8abec27fda6765c6a9cb5a205ce0a",
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean": "a756656aa2a2039d03eb68e21ff22cce11a12a66fa34bb03d886ee03bca9d4e5",
+    "RiemannGaussian/SuzukiCarryMellinLimit.lean": "d4119315601c17180c3338f7059fe22ea4265c8900d5aeae494a81f37c1bdbeb",
+    "RiemannGaussian/SuzukiCarryMellinRate.lean": "4edc8e9c02f5568d41d291f36bea43971eb4e17aa661edf201b6d92ea006e0a9",
+    "RiemannGaussian/SuzukiCarryDeterminantGate.lean": "4ba83f31bafde023830f4219eb7bfb5d6e3ba226a8a2773288f74ddd09070de6",
+    "RiemannGaussian/SuzukiCarryPeriodicDiscrepancy.lean": "b907efd8f7344d3479000e067f3463e50c632c1e1915b5942824e060097d924b",
+    "RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean": "7a1f1831e805caba3dbd0ad8e6c2b5baba64bb6c797b54de05e670f9b7ac9336",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b",
+    "README.md": "fe91e70122db04246ea5d8bde1541b82679982b78e8d66b921f3c40b8b4bcc75",
+    "RiemannGaussian.lean": "7eec81c3310adf0e5f4cb12ca1c34acca941ffafd7f9100a5c9db56883d405ad",
+    "docs/suzuki-carry-publication.md": "671754a93279370d7a5b82f55127765ce53139aa1b154320877e7adbed6f3657",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "docs/rh-proof-direction.md": "7e64b588a6031421fde6165acdc42d0431e45fee88082c518bfb2294ae6570cd",
+    "docs/rh-proof-explorer/metadata.json": "cc9c0a182d8fa43dcd2635a333273398bfe73ccd19255f200970a29533d366ce",
+    "docs/theorem-explorer/metadata.json": "9b0dba98517aa214b3201ff70ea89eb53bb9b8a37e1f8606581d899b6f68afaa",
+    "scripts/GenerateProjectStatus.lean": "2f49540b528f41ec6a22f42e2eb270c292828d11a0d13343ea3f8d32464489a5",
+    "scripts/CheckSuzukiCarryPublication.lean": "a2f4e6616f4b3e62544cf17eaf8d1d51d1d18532a7c41721dca0aaca715d0488",
+    "scripts/test_rh_proof_explorer.py": "4f3faeb6ecb862959dc9ef6f0099c34312f8b15e9f7d5c3bbb6580751ec4cf32"
+  }
+}

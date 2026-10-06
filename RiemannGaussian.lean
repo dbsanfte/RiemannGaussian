@@ -2686,3 +2686,21 @@ import RiemannGaussian.ZetaPrimeMomentChebyshev
 import RiemannGaussian.ZetaPrimeMomentRegionCoverage
 import RiemannGaussian.ZetaPrimeMomentArithmeticAudit
 import RiemannGaussian.ZetaPrimeMomentTerminal
+
+/- Literal integer carry correlations, source gates and scoped obstruction audits. -/
+import RiemannGaussian.ZetaTwistedChebyshev
+import RiemannGaussian.SuzukiIntegerCarry
+import RiemannGaussian.SuzukiIntegerCarryMellinAudit
+import RiemannGaussian.SuzukiJoinedExcursionAudit
+import RiemannGaussian.SuzukiCarryCorrelation
+import RiemannGaussian.SuzukiCarrySourceDetector
+import RiemannGaussian.SuzukiCarryGram
+import RiemannGaussian.SuzukiCarryGramSource
+import RiemannGaussian.SuzukiCarryFejer
+import RiemannGaussian.SuzukiCarryPoleCenter
+import RiemannGaussian.SuzukiCarryPhaseCode
+import RiemannGaussian.SuzukiCarryMellinLimit
+import RiemannGaussian.SuzukiCarryMellinRate
+import RiemannGaussian.SuzukiCarryDeterminantGate
+import RiemannGaussian.SuzukiCarryPeriodicDiscrepancy
+import RiemannGaussian.SuzukiCarryPeriodicBudgetAudit

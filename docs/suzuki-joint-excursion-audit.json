@@ -1,0 +1,537 @@
+{
+  "schema": "suzuki-joined-excursion-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiJoinedExcursionAudit.lean": "4bb477ff65834b03848d38f5c8eaf68253e5376da3668a8a99cb36205300bfd0",
+    "scripts/CheckSuzukiJoinedExcursionAudit.lean": "948cc73e8d81558d264a8ca1d1899fcdcecc33aa859d3b8fdf05114307d5a324",
+    "scripts/probe_suzuki_joint_excursions.py": "e33a7e1a8b079aa1c55b6a8d84e4c61b1e7a9750b2ffa434d8a239197f7c657f",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c"
+  },
+  "checkedActualArithmetic": [
+    "exact two-node dilation identity for the full arithmetic Suzuki Psi",
+    "full existing prime-power and Archimedean definitions unchanged"
+  ],
+  "checkedControlTheorems": [
+    "eventually positive continuous tail density",
+    "common mass/log-moment derivative law",
+    "exact joined centered-work minus whole-block entropy identity",
+    "exact balance at every complete phase time",
+    "negative normalized potential source survives",
+    "every smaller-power eventual floor fails in the control",
+    "generic scalar positivity does not imply time-kernel positivity",
+    "critical cosine dilation identity",
+    "every coordinate-pair restriction can be nonnegative while the full quadratic is negative"
+  ],
+  "controlScope": {
+    "leanModel": "continuous tail model; density eventually positive, not actual integer primes",
+    "numericalDensityModel": "globally nonnegative continuous density, not actual integer primes",
+    "kernelModes": "synthetic off-axis quartets, not claimed actual zeta zeros",
+    "pairwiseMatrixControl": "abstract finite quadratic, not an actual-prime inequality",
+    "genericControlsPreserveIntegerDivisorIdentities": false,
+    "genericControlsPreserveZetaFunctionalEquation": false
+  },
+  "validation": {
+    "leafBuild": "lake build RiemannGaussian.SuzukiJoinedExcursionAudit --wfail: passed",
+    "namespaceCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiJoinedExcursionAudit.lean: passed",
+    "namespaceLinters": 14,
+    "declarations": 47,
+    "theoremsIncludingPrivateHelpers": 37,
+    "onlyStandardAxioms": true,
+    "theoremAxioms": [
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelLogMoment._proof_1",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelSignal.eq_1",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.eventually_modelDensity_ge_half",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.nonnegative_even_control_has_negative_twoNodeJoined",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.critical_cosine_dilation_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.eventually_modelPotential_lt_smaller_power",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_2",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_7",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.twoNodeJoined.eq_1",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_4",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_6",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.critical_cosine_dilation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.arithmetic_twoNodeJoined_eq_dilation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl.eq_1",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.denominator_pos",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_1",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.tendsto_normalized_modelPotential",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass._proof_1",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.twoNodeJoined_eq_dilation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_3",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelLogMoment",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl._proof_1",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "_private.RiemannGaussian.SuzukiJoinedExcursionAudit.0.RiemannGaussian.SuzukiJoinedExcursionAudit.phase_at_balancedTime._simp_1_5",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl_pairwise_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelSignal_at_balancedTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.not_eventual_modelPotential_smaller_power_floor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelPotential_sub_eq_centeredWork_sub_entropy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass_at_balancedTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.threeCoordinateControl_joined_negative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelMass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.tendsto_balancedTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.hasDerivAt_modelSignal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelMass.eq_1",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.timeKernel.eq_1",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.dilation_le_of_twoNodeJoined_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "theorem": "RiemannGaussian.SuzukiJoinedExcursionAudit.modelPotential_at_balancedTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "numericalProbe": {
+    "command": "../.venv/bin/python scripts/probe_suzuki_joint_excursions.py --limit 67108864 --output .lake/suzuki-joint-excursions/probe-final-2pow26.json",
+    "outsideOrdinaryCI": true,
+    "certificate": false,
+    "outwardRounding": false,
+    "maximumLiteralCutoff": 67108864,
+    "fullPrimePowersRetained": true,
+    "joinedBeforeNormOrSignSplit": true,
+    "reportSHA256": "7aa203c42bcac23e059ce1412683aa4d3b36b923417cdc548152a93f64b17477",
+    "vonMangoldtSHA256Float64": "5584aea20e6f1e6bc00cf486998e44ed254bc175bf0a8ad6d17ebe374b964f87",
+    "ordinaryPrimeCount": 3957809,
+    "properPrimePowerCount": 1190,
+    "precision": "numpy.longdouble prefix accumulation; no outward rounding",
+    "selfChecks": {
+      "chunkSizeReplay": true,
+      "controlGrowthReplay": true,
+      "finiteVonMangoldtIncludesProperPowers": true,
+      "directFactorizationQueryReplay": true
+    },
+    "lastDoublingBlock": {
+      "X": 67108864,
+      "balancedCutoffs": 7731,
+      "minimumPotential": 0.02149858082329675,
+      "maximumPotential": 0.06472709266237192,
+      "maximumLogAverageError": -50.31834975499668,
+      "maximumDrawdown": 0.02938257799104349,
+      "cumulativeDrawdownFromFirstBalancedCutoff": 0.047409379138144025,
+      "maximumBalancedGap": 4631945,
+      "maximumGapPower": 0.8847156281639232,
+      "negativeVariation": 0.048090905548270065,
+      "positiveVariation": 0.08728303434384803,
+      "netJoinedChange": 0.039192128795577964,
+      "centeredWorkTotal": 96.50559262589168,
+      "entropyTotal": 96.4664004970961,
+      "separatedMajorantTotal": 195.72715107261712,
+      "jointLedgerMaximumFloatingResidual": 4.6909877241332887e-14,
+      "longBlockClasses": [
+        {
+          "alpha": 0.5,
+          "longBlocks": 177,
+          "longBlockNegativeVariation": 0.04789531458103477,
+          "longBlockSignedTotal": 0.039231448733680584,
+          "longBlockSeparatedMajorant": 195.71732180658174
+        },
+        {
+          "alpha": 0.625,
+          "longBlocks": 41,
+          "longBlockNegativeVariation": 0.046692101732523375,
+          "longBlockSignedTotal": 0.03924979630517974,
+          "longBlockSeparatedMajorant": 195.46036078571237
+        },
+        {
+          "alpha": 0.75,
+          "longBlocks": 14,
+          "longBlockNegativeVariation": 0.04154586599868322,
+          "longBlockSignedTotal": 0.037822456276852656,
+          "longBlockSeparatedMajorant": 191.05363764328516
+        },
+        {
+          "alpha": 0.875,
+          "longBlocks": 1,
+          "longBlockNegativeVariation": 0.0,
+          "longBlockSignedTotal": 0.04321114491018596,
+          "longBlockSeparatedMajorant": 100.45978795184669
+        }
+      ],
+      "largestNegativeBlocks": [
+        {
+          "start": 39278404,
+          "end": 41614799,
+          "logLength": 0.057780997900980666,
+          "work": 10.648689721776417,
+          "entropy": 10.665754318327506,
+          "joinedChange": -0.017064596551089217,
+          "massRelativeErrorAtStart": 1.1877737292470684e-08
+        },
+        {
+          "start": 45281282,
+          "end": 47987194,
+          "logLength": 0.05804043743101838,
+          "work": 11.541331417700174,
+          "entropy": 11.555887554231818,
+          "joinedChange": -0.014556136531643393,
+          "massRelativeErrorAtStart": 2.7628147013473206e-09
+        },
+        {
+          "start": 51734902,
+          "end": 52582367,
+          "logLength": 0.016248194619020013,
+          "work": 0.9519256167719945,
+          "entropy": 0.9546069190658761,
+          "joinedChange": -0.0026813022938816516,
+          "massRelativeErrorAtStart": 8.389399239110236e-09
+        },
+        {
+          "start": 52582758,
+          "end": 53537897,
+          "logLength": 0.018001486946619277,
+          "work": 1.1795138393485074,
+          "entropy": 1.1819948777882174,
+          "joinedChange": -0.002481038439709954,
+          "massRelativeErrorAtStart": 5.429314779739198e-09
+        },
+        {
+          "start": 50432220,
+          "end": 51048546,
+          "logLength": 0.012146805789005042,
+          "work": 0.5242478605782414,
+          "entropy": 0.5260261861071558,
+          "joinedChange": -0.0017783255289143957,
+          "massRelativeErrorAtStart": 6.502947121699043e-10
+        }
+      ],
+      "longGapNegativeVariationFraction": 0.8639027592645886
+    },
+    "continuousControls": [
+      {
+        "kind": "continuous positive-density control; not ordinary integer primes",
+        "beta": 0.9,
+        "height": 60,
+        "multiplicity": 1,
+        "densityStartsAtLogX": 6.931471805599454,
+        "densityNonnegativeByConstruction": true,
+        "predictedGrowthExponent": 0.4,
+        "observedTailGrowthExponent": 0.3999999999996856,
+        "balancedMinima": 1509,
+        "firstMinimum": {
+          "logCutoff": 9.027244135980409,
+          "logCutoffMinusB": 2.0957723303809552,
+          "sourceNormalizedPotential": -0.18758066741300006,
+          "logAbsolutePotential": 1.937351354502402
+        },
+        "lastMinimum": {
+          "logCutoff": 166.9231785512728,
+          "logCutoffMinusB": 159.99170674567335,
+          "sourceNormalizedPotential": -0.0005555185205759867,
+          "logAbsolutePotential": 59.27366281143957
+        },
+        "negativeSourceNormalizedTailMinimum": -0.0005555185206517821,
+        "negativeSourceNormalizedTailMaximum": -0.0005555185205759846,
+        "passesMassBalance": true,
+        "passesExactJointWorkEntropyAccounting": true,
+        "passesNonnegativeDensity": true,
+        "hasSubpolynomialBalancedFloor": false,
+        "reason": "balanced minima grow negatively like X^(beta-1/2)"
+      },
+      {
+        "kind": "continuous positive-density control; not ordinary integer primes",
+        "beta": 0.99995,
+        "height": 60,
+        "multiplicity": 1,
+        "densityStartsAtLogX": 13862.943611200433,
+        "densityNonnegativeByConstruction": true,
+        "predictedGrowthExponent": 0.49995,
+        "observedTailGrowthExponent": 0.4999499999999904,
+        "balancedMinima": 1519,
+        "firstMinimum": {
+          "logCutoff": 13863.960925926778,
+          "logCutoffMinusB": 1.0173147263455045,
+          "sourceNormalizedPotential": -0.016303443145250084,
+          "logAbsolutePotential": 6927.170885959521
+        },
+        "lastMinimum": {
+          "logCutoff": 14022.917549446736,
+          "logCutoffMinusB": 159.97393824630257,
+          "sourceNormalizedPotential": -0.00055549770177952,
+          "logAbsolutePotential": 7003.261982759792
+        },
+        "negativeSourceNormalizedTailMinimum": -0.0005554977017800055,
+        "negativeSourceNormalizedTailMaximum": -0.0005554977017794652,
+        "passesMassBalance": true,
+        "passesExactJointWorkEntropyAccounting": true,
+        "passesNonnegativeDensity": true,
+        "hasSubpolynomialBalancedFloor": false,
+        "reason": "balanced minima grow negatively like X^(beta-1/2)"
+      }
+    ],
+    "collectiveKernel": {
+      "nodeFamily": "regular",
+      "halfWindow": 9.0,
+      "dimension": 64,
+      "minimumActualEigenvalue": 0.006863452811078539,
+      "unitMultiplicitySyntheticWitness": {
+        "kind": "synthetic quartet with unit multiplicity; not an actual zeta zero",
+        "height": 600,
+        "horizontalOffset": 0.49995,
+        "amplitude": 1,
+        "minimumScalarAtNonzeroSampledArguments": 0.005968595921598423,
+        "minimumTwoNodePrincipalEigenvalue": 0.005295908058860821,
+        "minimumEigenvalue": -0.0694426993106428,
+        "arithmeticArchimedeanQuadratic": 14996.606142455343,
+        "arithmeticSignedPrimeQuadratic": -14996.57552231657,
+        "arithmeticJoinedQuadratic": 0.03062013876926254,
+        "directSignedQuadratic": -0.06944269931064284
+      },
+      "fullWitnessNodesAndWeights": "saved in the optional probe report",
+      "allSampledTwoNodeTestsPassingIsNotGlobalPositivity": true,
+      "automaticHilbertGramUsed": false
+    }
+  },
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/2606.09096v3",
+      "result": "Suzuki already retains full Weil test-function correlations and localized operator structure; global arithmetic positivity remains unproved"
+    }
+  ],
+  "missingTermInSuzukiFound": false,
+  "newIndependentArithmeticFloor": false,
+  "newAllWindowKernelBound": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false,
+  "openTarget": "Bound the complete signed actual-prime quadratic against its exact Archimedean reserve on growing windows, or obtain the actual balanced-excursion floor; generic controls and finite positive matrices do not discharge either estimate"
+}

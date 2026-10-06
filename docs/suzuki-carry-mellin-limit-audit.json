@@ -1,0 +1,1489 @@
+{
+  "schema": "suzuki-carry-mellin-limit-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiCarryMellinLimit.lean": "d4119315601c17180c3338f7059fe22ea4265c8900d5aeae494a81f37c1bdbeb",
+    "RiemannGaussian/SuzukiCarryMellinRate.lean": "4edc8e9c02f5568d41d291f36bea43971eb4e17aa661edf201b6d92ea006e0a9",
+    "RiemannGaussian/SuzukiCarryDeterminantGate.lean": "4ba83f31bafde023830f4219eb7bfb5d6e3ba226a8a2773288f74ddd09070de6",
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean": "a756656aa2a2039d03eb68e21ff22cce11a12a66fa34bb03d886ee03bca9d4e5",
+    "scripts/CheckSuzukiCarryMellinLimit.lean": "93e27f74d7a402671f868c05a95caf6cf4557826e8d46bc1b4363c6334ed7996",
+    "scripts/probe_suzuki_carry_mellin_limit.py": "817c73e5e70c2a11fbaa2e2bb6ab32f4c80ea646aed2865af93e16959edc836e",
+    "scripts/probe_suzuki_carry_mellin_jets.py": "271e5f4656f5b6df0781cc3c256cda27d0b512f97e9ca4df15dddd4cbc5381c1",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b"
+  },
+  "provedUnconditionally": [
+    "exact Fejer coefficient=f((N+1)/H), with original finite support",
+    "literal modulated packet=exp(-i*tau/H)*upward-rounded alternating tent profile",
+    "all grid boundary coincidences and one-grid shift retained",
+    "genuine integrability for Re(s)>0; count-independent joined alternating bounds",
+    "scaledResponse_error_uniform: ((25+49*6^b)*(1+abs(tau))^2/a)*H^(-a/2), 0<a<=1, a<=Re(s)<=b",
+    "TendstoUniformlyOn of exact scaled Cmod on positive real-part strips and bounded tau intervals",
+    "exact continuum evenness",
+    "normalized native determinant converges to continuumDet(p,s,tau)",
+    "nonzero continuumDet iff some positive cofinal native source margin",
+    "nonzero limit gives eventually norm(nativeDet)>=norm(limit)/2*H^(Re(p)+Re(s))"
+  ],
+  "provedWithExplicitPremises": {
+    "exactEvenJetDeterminant": "12*(B*c-C*b)*tau^6",
+    "actualRemainderIdentityRetained": true,
+    "FourthOrderExpansionDefinition": "actual normalized fourth-order remainder tends to zero from positive tau",
+    "leadingTermConclusion": "contrastDet/tau^6 -> 12*(B*c-C*b)",
+    "fixedPositiveCodeConclusion": "expansions plus a nonzero wedge imply existence of fixed positive tau with cofinal native source lower bound",
+    "actualContinuumFourthOrderExpansionProved": false,
+    "allHeightNonzeroWedgeOrAlternativeCodeProved": false
+  },
+  "strictSourceGate": {
+    "finiteSamplingAndContinuumLimitProved": true,
+    "conditionalCofinalSourceTransferProved": true,
+    "existenceOfWorkingCodeAtEveryPermittedHeightProved": false,
+    "gatePassed": false,
+    "remainingTarget": "for every permitted p=1-iy!=beta, prove exists fixed tau>0 with continuumDet p beta tau != 0"
+  },
+  "remainingArithmetic": {
+    "heavyLagMeanDiscrepancyEstimateStarted": false,
+    "allPrimePowersAndFullHeightPhaseRetained": true,
+    "independentCorrelatedSector_o_H_power_beta_Proved": false,
+    "pointwiseFejerSlopeConfusedWithTotalVariation": false,
+    "oldUnmodulatedLowSectorCreditTransferred": false
+  },
+  "validation": {
+    "leafBuild": "lake --wfail build RiemannGaussian.SuzukiCarryDeterminantGate: passed (includes both new dependencies)",
+    "namespaceAxiomCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryMellinLimit.lean: passed",
+    "allDeclarationsIncludingGeneratedAndPrivateAudited": true,
+    "report": {
+      "modules": [
+        {
+          "theoremsIncludingPrivateHelpers": 87,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_zero_of_ge",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.jumpCount_pos",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_4",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_zero_of_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_7",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_4",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.phase_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_7",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_chain_norm",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_13",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_5",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_5",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_18",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_eq_zero_above",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_11",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_14",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_eq_zero_above._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_prefix_norm",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_filter_card",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_8",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_17",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_right",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_6",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_norm",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.jump_span_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_19",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_16",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_nonneg",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_9",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_15",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_3",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.modulate_eq_amplitude",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile._proof_1_2",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_12",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_21",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.jumpCount._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_sub_profile_norm",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp_bounds",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_5",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realPacket_eq_roundedProfile",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_prefix",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_10",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_22",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_4",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_3",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_zero_of_ge",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._simp_1_2",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realCarry_eq_quotientCarry._simp_1_8",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_20",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_eq_left",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.last_jump_ge",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_eq_zero_above._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_eq_zero_above",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.quotientCarry_eq_jumps._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.amplitude_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundUp_monotone",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_le_one",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_23",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_3",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.realMass_eq_roundedProfile",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.roundedProfile_norm_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.alternating_chain_norm._proof_1_1",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.profile_norm_le",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.tent_lipschitz",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.grid_threshold",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinLimit.coefficient_eq_tent._proof_1_7",
+              "axioms": [
+                "propext",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinLimit.0.RiemannGaussian.SuzukiCarryMellinLimit.rounded_jump_atom._proof_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryMellinLimit",
+          "declarations": 94
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 28,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.normalized_nativeDet_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumResponse.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendsto_scaledResponse",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_error_two_cutoffs",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_error_uniform",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.integrable_continuumResponse",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendstoUniformlyOn_scaledResponse",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.mass_error_uniform",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.integrable_roundedResponse",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.roundedResponse.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.sourceDet_scale",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile._simp_1_2",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.integrable_bounded_kernel",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumResponse_neg",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.tendsto_normalized_nativeDet",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.continuous_amplitude",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_jumpCount_exp",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumDet_ne_zero_iff_cofinal_source",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.mass_error_sampling",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.continuumDet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundUp",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundedProfile._simp_1_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_roundedProfile",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryMellinRate.0.RiemannGaussian.SuzukiCarryMellinRate.measurable_profile",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.scaledResponse_eq_rounded",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryMellinRate.eventually_nativeDet_source_lower",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryMellinRate",
+          "declarations": 33
+        },
+        {
+          "theoremsIncludingPrivateHelpers": 11,
+          "theoremAxioms": [
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.continuumDet_eq_contrast",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.evenJet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.tendsto_normalized_contrastDet",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet._proof_1",
+              "axioms": [
+                "propext"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryDeterminantGate.0.RiemannGaussian.SuzukiCarryDeterminantGate.tendsto_twice",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.exists_positive_contrastDet_ne_zero",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.normalized_contrastDet_eq",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet.eq_1",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.exists_fixed_code_source_lower",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "RiemannGaussian.SuzukiCarryDeterminantGate.contrastDet_evenJet",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            },
+            {
+              "theorem": "_private.RiemannGaussian.SuzukiCarryDeterminantGate.0.RiemannGaussian.SuzukiCarryDeterminantGate.reconstruct",
+              "axioms": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          ],
+          "rootRegistered": false,
+          "onlyStandardAxioms": true,
+          "namespaceLinters": 14,
+          "module": "RiemannGaussian.SuzukiCarryDeterminantGate",
+          "declarations": 15
+        }
+      ]
+    },
+    "pythonSyntax": "both optional probes passed py_compile",
+    "whitespace": "git diff --check passed"
+  },
+  "optionalProbes": {
+    "outsideOrdinaryCI": true,
+    "actualPrimesUsedForMellinQuadrature": false,
+    "continuumReport": {
+      "scope": "Optional continuum/Taylor preflight, not a certificate",
+      "gridPoints": 524288,
+      "algebraicReplay": {
+        "momentVsDirectResidual": 7.767120280277595e-13,
+        "geometricProfileVsDirectResidual": 1.5132610913528448e-13,
+        "literalFiniteVsRoundedJumpResidual": 2.59852080711732e-15
+      },
+      "rows": [
+        {
+          "height": 54.38832170192632,
+          "beta": 0.99995,
+          "B_p": [
+            -0.0010293594305256712,
+            0.00036539138335611255
+          ],
+          "C_p": [
+            8.950396301786959e-05,
+            -4.103518285658934e-05
+          ],
+          "B_beta": [
+            0.25450407986951756,
+            0.0
+          ],
+          "C_beta": [
+            -0.016987480032303895,
+            0.0
+          ],
+          "coefficientWedge": [
+            -5.292900980419682e-06,
+            4.2365426264558116e-06
+          ],
+          "determinants": [
+            {
+              "tau": 0.05,
+              "determinant": [
+                -9.941997361385958e-13,
+                7.946135104635459e-13
+              ],
+              "determinantOver_tau_power6": [
+                -6.36287831128701e-05,
+                5.085526466966692e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.351481176503619e-05,
+                5.083851151746974e-05
+              ]
+            },
+            {
+              "tau": 0.1,
+              "determinant": [
+                -6.39693035461414e-11,
+                5.090494969036337e-11
+              ],
+              "determinantOver_tau_power6": [
+                -6.396930354614139e-05,
+                5.090494969036335e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.351481176503619e-05,
+                5.083851151746974e-05
+              ]
+            },
+            {
+              "tau": 0.2,
+              "determinant": [
+                -4.1798555493607725e-09,
+                3.270046981846086e-09
+              ],
+              "determinantOver_tau_power6": [
+                -6.531024295876205e-05,
+                5.1094484091345076e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.351481176503619e-05,
+                5.083851151746974e-05
+              ]
+            },
+            {
+              "tau": 0.5,
+              "determinant": [
+                -1.152886992680285e-06,
+                8.130988668849112e-07
+              ],
+              "determinantOver_tau_power6": [
+                -7.378476753153824e-05,
+                5.203832748063432e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.351481176503619e-05,
+                5.083851151746974e-05
+              ]
+            },
+            {
+              "tau": 1.0,
+              "determinant": [
+                -9.283879346342933e-05,
+                5.1284463194741425e-05
+              ],
+              "determinantOver_tau_power6": [
+                -9.283879346342933e-05,
+                5.1284463194741425e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.351481176503619e-05,
+                5.083851151746974e-05
+              ]
+            }
+          ]
+        },
+        {
+          "height": 60,
+          "beta": 0.99995,
+          "B_p": [
+            0.004532650964613304,
+            -0.0005626082501010341
+          ],
+          "C_p": [
+            -0.0006287667740004813,
+            5.2247521983334e-06
+          ],
+          "B_beta": [
+            0.25450407986951756,
+            0.0
+          ],
+          "C_beta": [
+            -0.016987480032303895,
+            0.0
+          ],
+          "coefficientWedge": [
+            8.302539151474591e-05,
+            8.227575663817672e-06
+          ],
+          "determinants": [
+            {
+              "tau": 0.05,
+              "determinant": [
+                1.5553034701273636e-11,
+                1.5392115887268974e-12
+              ],
+              "determinantOver_tau_power6": [
+                0.0009953942208815124,
+                9.85095416785214e-05
+              ],
+              "leadingCoefficientTimes12": [
+                0.000996304698176951,
+                9.873090796581206e-05
+              ]
+            },
+            {
+              "tau": 0.1,
+              "determinant": [
+                9.926675872849445e-10,
+                9.784779963120954e-11
+              ],
+              "determinantOver_tau_power6": [
+                0.0009926675872849442,
+                9.78477996312095e-05
+              ],
+              "leadingCoefficientTimes12": [
+                0.000996304698176951,
+                9.873090796581206e-05
+              ]
+            },
+            {
+              "tau": 0.2,
+              "determinant": [
+                6.283729686480056e-08,
+                6.095121658885666e-09
+              ],
+              "determinantOver_tau_power6": [
+                0.0009818327635125084,
+                9.52362759200885e-05
+              ],
+              "leadingCoefficientTimes12": [
+                0.000996304698176951,
+                9.873090796581206e-05
+              ]
+            },
+            {
+              "tau": 0.5,
+              "determinant": [
+                1.4204830377794874e-05,
+                1.2259580601196168e-06
+              ],
+              "determinantOver_tau_power6": [
+                0.0009091091441788719,
+                7.846131584765548e-05
+              ],
+              "leadingCoefficientTimes12": [
+                0.000996304698176951,
+                9.873090796581206e-05
+              ]
+            },
+            {
+              "tau": 1.0,
+              "determinant": [
+                0.0006891394835714937,
+                3.6035745804117916e-05
+              ],
+              "determinantOver_tau_power6": [
+                0.0006891394835714937,
+                3.6035745804117916e-05
+              ],
+              "leadingCoefficientTimes12": [
+                0.000996304698176951,
+                9.873090796581206e-05
+              ]
+            }
+          ]
+        },
+        {
+          "height": 100,
+          "beta": 0.99995,
+          "B_p": [
+            -9.752881184796205e-06,
+            0.00031282509564434783
+          ],
+          "C_p": [
+            2.089379560823776e-05,
+            -1.5325437753376696e-05
+          ],
+          "B_beta": [
+            0.25450407986951756,
+            0.0
+          ],
+          "C_beta": [
+            -0.016987480032303895,
+            0.0
+          ],
+          "coefficientWedge": [
+            -5.15187935187216e-06,
+            -1.4137236318412125e-06
+          ],
+          "determinants": [
+            {
+              "tau": 0.05,
+              "determinant": [
+                -9.635785442478137e-13,
+                -2.647012354058317e-13
+              ],
+              "determinantOver_tau_power6": [
+                -6.166902683186005e-05,
+                -1.6940879065973223e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.182255222246592e-05,
+                -1.696468358209455e-05
+              ]
+            },
+            {
+              "tau": 0.1,
+              "determinant": [
+                -6.120984080709227e-11,
+                -1.686939117660418e-11
+              ],
+              "determinantOver_tau_power6": [
+                -6.120984080709225e-05,
+                -1.686939117660417e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.182255222246592e-05,
+                -1.696468358209455e-05
+              ]
+            },
+            {
+              "tau": 0.2,
+              "determinant": [
+                -3.801216809483523e-09,
+                -1.0612790679371427e-09
+              ],
+              "determinantOver_tau_power6": [
+                -5.939401264818003e-05,
+                -1.6582485436517848e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.182255222246592e-05,
+                -1.696468358209455e-05
+              ]
+            },
+            {
+              "tau": 0.5,
+              "determinant": [
+                -7.434838084812798e-07,
+                -2.2721095771918175e-07
+              ],
+              "determinantOver_tau_power6": [
+                -4.7582963742801905e-05,
+                -1.4541501294027632e-05
+              ],
+              "leadingCoefficientTimes12": [
+                -6.182255222246592e-05,
+                -1.696468358209455e-05
+              ]
+            },
+            {
+              "tau": 1.0,
+              "determinant": [
+                -1.6360706448332964e-05,
+                -7.2664820620961545e-06
+              ],
+              "determinantOver_tau_power6": [
+                -1.6360706448332964e-05,
+                -7.2664820620961545e-06
+              ],
+              "leadingCoefficientTimes12": [
+                -6.182255222246592e-05,
+                -1.696468358209455e-05
+              ]
+            }
+          ]
+        }
+      ],
+      "allHeightNonvanishingProved": false,
+      "uniformQuadratureErrorProof": false,
+      "outwardRounded": false
+    },
+    "comparison": [
+      {
+        "syntheticHeight": 54.38832170192632,
+        "tau1DeterminantQuadrature": [
+          -9.283879346342933e-05,
+          5.1284463194741425e-05
+        ],
+        "determinantGridRefinementDifference": 2.1574617821914502e-10,
+        "wedgeBoundaryModelVsQuadratureDifference": 6.62179293141555e-12
+      },
+      {
+        "syntheticHeight": 60,
+        "tau1DeterminantQuadrature": [
+          0.0006891394835714937,
+          3.6035745804117916e-05
+        ],
+        "determinantGridRefinementDifference": 1.7339124286147264e-10,
+        "wedgeBoundaryModelVsQuadratureDifference": 7.035846743487607e-12
+      },
+      {
+        "syntheticHeight": 100,
+        "tau1DeterminantQuadrature": [
+          -1.6360706448332964e-05,
+          -7.2664820620961545e-06
+        ],
+        "determinantGridRefinementDifference": 2.6732406330155323e-10,
+        "wedgeBoundaryModelVsQuadratureDifference": 3.608395280269013e-13
+      }
+    ],
+    "boundaryJetProbe": {
+      "exactRationalMomentBranchReplays": 240,
+      "knotFamily": "2a/b, a=1,2,3, b modulo2a: eight residue classes",
+      "allCoincidentKnotsAndDerivativeJumpsRetained": true,
+      "MellinBoundaryHurwitzIdentificationProvedInLean": false,
+      "samples": [
+        {
+          "height": "54.38832170192632",
+          "B_p": [
+            "-0.0010293598923327952555393197111803722",
+            "0.00036539145834411535020022724815506328"
+          ],
+          "C_p": [
+            "0.00008950396797738836438981812740101785",
+            "-0.000041035190715609521892471944150497424"
+          ],
+          "B_beta": [
+            "0.25450407952697371676293308486287426",
+            "0.0"
+          ],
+          "C_beta": [
+            "-0.016987480001982824112900067344250818",
+            "0.0"
+          ],
+          "coefficientWedge": [
+            "-0.0000052928943982504048114831818529268576",
+            "0.0000042365433497740196388826739739181958"
+          ]
+        },
+        {
+          "height": "60",
+          "B_p": [
+            "0.004532650971651553813031900145721808",
+            "-0.00056260839844963407076108691415604595"
+          ],
+          "C_p": [
+            "-0.00062876675212827657019975447645989026",
+            "0.0000052247778933041638876410834090237907"
+          ],
+          "B_beta": [
+            "0.25450407952697371676293308486287426",
+            "0.0"
+          ],
+          "C_beta": [
+            "-0.016987480001982824112900067344250818",
+            "0.0"
+          ],
+          "coefficientWedge": [
+            "0.000083025385750673083692209366219225484",
+            "0.0000082275716291424861601541159390342099"
+          ]
+        },
+        {
+          "height": "100",
+          "B_p": [
+            "-0.0000097532518282433352482902279383299009",
+            "0.00031282524235627899173402773517318946"
+          ],
+          "C_p": [
+            "0.000020893818957431297800363559935909586",
+            "-0.000015325447569570435804204054119281317"
+          ],
+          "B_beta": [
+            "0.25450407952697371676293308486287426",
+            "0.0"
+          ],
+          "C_beta": [
+            "-0.016987480001982824112900067344250818",
+            "0.0"
+          ],
+          "coefficientWedge": [
+            "-0.0000051518789911777000102578034224673565",
+            "-0.0000014137236216102994234002297428800481"
+          ]
+        }
+      ],
+      "derivedSymbolicRowsAvailableAt": ".lake/suzuki-carry-mellin-limit/jets.json"
+    },
+    "outwardRounded": false,
+    "uniformQuadratureErrorProved": false,
+    "numericalCertificate": false,
+    "allHeightNonvanishingProved": false
+  },
+  "newSuzukiFloor": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false,
+  "nextGate": "Prove actual continuum expansion and non-collinearity/nonzero wedge, or another analytic fixed-tau argument. Only after code existence is proved begin the signed periodic mean/zero-mean arithmetic estimate."
+}

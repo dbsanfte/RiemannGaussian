@@ -1,0 +1,528 @@
+{
+  "schema": "suzuki-integer-carry-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiIntegerCarry.lean": "1591f653adfab3ad6be68367183806a7db34f755445a0eb9aa0ca01686bc27da",
+    "RiemannGaussian/SuzukiIntegerCarryMellinAudit.lean": "f562233b9190d2de6b91ec77c6600cc1ad00ea5dd16b2806a1c8b0fb78a11894",
+    "scripts/CheckSuzukiIntegerCarry.lean": "58a9fb6dcb8332d2442fffcb60f67cb61d9ddf67b803096932e6cea194b901a4",
+    "scripts/probe_suzuki_integer_carry.py": "80f5d089f4029c1d48915b2293d5130ff55947a0e42b8ae7e457f85cfd34d93b",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b"
+  },
+  "originScope": "Classical factorial/binomial factorization newly formalized locally; no historical novelty claim.",
+  "checkedActualArithmetic": [
+    "every complete integer-factorial observation of literal Lambda equals log(N!)",
+    "all factorial observations uniquely determine Lambda for arithmetic f with f(0)=0",
+    "any different such arithmetic sequence violates at least one factorial observation",
+    "binary carry is zero or one and equals the exact quotient modulo two",
+    "full prime-power carry equals log(centralBinom N)",
+    "total carry lies between N*log4-log(2*N+1) and N*log4",
+    "adjacent signed prime-power carry has exact binomial recurrence",
+    "joined adjacent defect from log4 lies between 1/(2*N+2) and 1/(2*N+1)",
+    "complex weights in the cutoff variable preserve the reciprocal joined-defect bound"
+  ],
+  "checkedSensitivityAudit": [
+    "literal log quotient colour equals carry at every positive rational quotient, including endpoints",
+    "floor carry and translated eta colour agree almost everywhere, with countable endpoint exception proved null",
+    "actual full colour transform is integrable for Re s>0",
+    "complete carry cell series is absolutely summable for Re s>0",
+    "carryTransform(s)=((2^s-2)*zeta(s))/s for Re s>0, s!=1",
+    "the complete scale-T logarithmic power-mode integral is genuinely integrable for Re s>0",
+    "the complete scale-T power-mode response is exp(s*T)*carryTransform(s)",
+    "any genuine zeta-zero power component has zero carry response at every scale",
+    "finite combinations of dilated carry tests retain that linear source blind spot"
+  ],
+  "limitations": {
+    "estimateIsSuzukiFloor": false,
+    "estimateAllowsArbitraryPrimePhaseInsideCarryProfile": false,
+    "cutoffWeightsArePrimePhaseWeights": false,
+    "linearModeTestExcludesGenuineZero": false,
+    "entireIntegerConstraintSystemProvedUseless": false,
+    "nonlinearArithmeticConstraintsRuledOut": false,
+    "continuousControlsImposeFullFactorialConstraintSystem": false,
+    "noActualOffLineZeroAssumed": true,
+    "endpointAEEqualityUsedForLiteralPrimeSums": false
+  },
+  "validation": {
+    "leafBuild": "lake build RiemannGaussian.SuzukiIntegerCarry RiemannGaussian.SuzukiIntegerCarryMellinAudit --wfail: passed",
+    "namespaceCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiIntegerCarry.lean: passed",
+    "onlyStandardAxioms": true,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 31,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_mod_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_of_lt._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.signed_prime_carry_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.logFactorial_eq_log_factorial._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation._proof_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_adjacent_defect_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.factorialObservation_vonMangoldt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom._simp_1_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._proof_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.norm_weighted_joined_carry_defect_le",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_bounds",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_succ_sub_eq_signed_prime_sum._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_of_lt",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.eq_vonMangoldt_of_factorialObservations._proof_1_3",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry.eq_1",
+            "axioms": []
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_zero_or_one._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.carry_eq_mod_two._proof_1_1",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.logFactorial_eq_log_factorial",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.extended_factorialObservation._simp_1_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.exists_factorialObservation_ne_of_ne_vonMangoldt",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarry.primeCarry_eq_log_centralBinom._proof_1_2",
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiIntegerCarry",
+        "declarations": 34
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 21,
+        "theoremAxioms": [
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_zero_of_zeta_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_actual_colour_integral",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.logIndicator_eq_colour_all",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryCellTransform_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.power_mode_carry_response_eq_zero_of_zeta_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_log_quotient._simp_1_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour.eq_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.exp_sub_log_two",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.power_mode_carry_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.integrable_power_mode_carry_response",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour._proof_1",
+            "axioms": [
+              "propext"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryLogColour_ae_eq_eta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.finite_scaled_carry_tests_eq_zero",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "_private.RiemannGaussian.SuzukiIntegerCarryMellinAudit.0.RiemannGaussian.SuzukiIntegerCarryMellinAudit.exp_mul_logIndicator_eq_indicator",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.integrable_exp_mul_carryLogColour",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.summable_carryCellTransform",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          {
+            "theorem": "RiemannGaussian.SuzukiIntegerCarryMellinAudit.carryTransform_eq_zeta",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        ],
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiIntegerCarryMellinAudit",
+        "declarations": 24
+      }
+    ]
+  },
+  "numericalProbe": {
+    "command": "../.venv/bin/python scripts/probe_suzuki_integer_carry.py",
+    "outsideOrdinaryCI": true,
+    "certificate": false,
+    "outwardRounding": false,
+    "maximumLiteralInteger": 524290,
+    "fullPrimePowersRetained": true,
+    "joinedBeforeAbsoluteValues": true,
+    "reportSHA256": "9285e9c10834cbb9f0caf9f56fd6138e6fb0d6ffded8dbb32fc2157521b9ea9b",
+    "primePowerBasesSHA256": "9d231700d0c7382f0c8bc3f8e80c412136567b1f16a65ed6b49880b54dbad7f8",
+    "precision": "numpy.longdouble total sums; mpmath 80-digit literal joined increments and mode symbols; no outward rounding",
+    "lastLiteralRow": {
+      "N": 262144,
+      "literalPrimePowerSupport": 7,
+      "joinedSignedAdjacentSum": 1.3862924537767147,
+      "exactAdjacentDefect": 1.90734317586048e-06,
+      "defectLowerBound": 1.9073413568826414e-06,
+      "defectUpperBound": 1.9073449948406318e-06,
+      "unjoinedAbsolutePrimeIncidences": 26.339598583314725,
+      "recurrenceResidualHighPrecision": "2.1084396e-81",
+      "totalCarrySum": 363401.9383113678,
+      "totalIdentityResidualFloating": 4.2332868187125e-14,
+      "integerCarryDefect": 6.810690044801366,
+      "totalDefectUpperBound": 13.169798337985775
+    },
+    "spectralSensitivity": [
+      {
+        "kind": "synthetic density-control mode, not a zeta zero",
+        "beta": 0.9,
+        "height": 60.0,
+        "zetaAbsoluteValueHighPrecision": "0.49591672851",
+        "absoluteCarrySymbol": "0.02974390176"
+      },
+      {
+        "kind": "synthetic density-control mode, not a zeta zero",
+        "beta": 0.99995,
+        "height": 60.0,
+        "zetaAbsoluteValueHighPrecision": "0.505756427842",
+        "absoluteCarrySymbol": "0.0313806682826"
+      },
+      {
+        "kind": "known critical zero, numerical symbol-null control",
+        "beta": 0.5,
+        "height": 14.134725141734695,
+        "zetaAbsoluteValueHighPrecision": "5.28444759751e-81",
+        "absoluteCarrySymbol": "1.25422368955e-81"
+      }
+    ]
+  },
+  "claims": {
+    "newAllScaleIntegerSignedEstimate": true,
+    "newSuzukiFloor": false,
+    "newAllWindowArithmeticKernelBound": false,
+    "newNonCoherenceTheorem": false,
+    "newZeroFreeRegion": false,
+    "rhProved": false
+  }
+}

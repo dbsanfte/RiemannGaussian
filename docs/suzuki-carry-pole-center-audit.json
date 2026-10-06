@@ -1,0 +1,614 @@
+{
+  "schema": "suzuki-carry-pole-center-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiCarryPoleCenter.lean": "3f7dd8a53ef594307b3da89aea723c53feb8abec27fda6765c6a9cb5a205ce0a",
+    "RiemannGaussian/SuzukiCarryFejer.lean": "497d2bdc4ef6cbcc1a5b172ed5b0d0458781ce390376fdd3fafba23bd154083d",
+    "RiemannGaussian/SuzukiCarryGramSource.lean": "23a19fb643a87520fccb03f8344ec440514261dc8f5b3019b91bbcbd3e28315e",
+    "scripts/CheckSuzukiCarryPoleCenter.lean": "dab300ec76dd8dac70c76e111a3025e607797ad23abf40303f6a7f3edc58e2da",
+    "scripts/probe_suzuki_carry_pole_center.py": "088086c0eaae783005b31ebdf2b47d5335a96b8271528f9ed09d4030e5043f24",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b"
+  },
+  "checkedComplexResponse": [
+    "same finite triangular packet defines C_H(s)=integral exp(s*t)*realWeight(H,t)",
+    "genuine complex Mellin integrability for Re s>0",
+    "C_H(beta) equals the previous real positive source coefficient",
+    "literal phase twist subtracts i*y from a specified component exponent",
+    "density exponent is 1-i*y and matched beta+i*y exponent becomes beta",
+    "D_H(poleExponent)=0 exactly at every finite length",
+    "integral of the full joined kernel against the pole mode is zero, with integrability proved before subtraction",
+    "specified multiplicity-m component has exact response -m*D_H(beta)",
+    "finite scaleDefect is retained in response_eq_scaleDefects",
+    "ideal_scale_factor_ne_zero proves modulus separation for beta<1",
+    "response_norm_lower provides the explicit finite-length error budget",
+    "response_ne_zero_of_defect_gap retains its strict sampling-error premise",
+    "weight2 at denominator6 is1/4 while weight1 at denominator3 is1; exact finite dilation mismatch"
+  ],
+  "sourceGate": {
+    "idealFactorNonzeroForBetaBelowOne": true,
+    "finiteSamplingCorrectionDiscarded": false,
+    "finiteDefectGapConditionFormalized": true,
+    "finiteDefectGapProvedCofinallyAtAllCampaignHeights": false,
+    "limitingPoleMellinSymbolGloballyNonzeroProved": false,
+    "unconditionalLiteralDeterminantSourceLowerBoundProved": false,
+    "specifiedComponentIsActualSingleZeroAsymptotic": false,
+    "nativeDeterminantScale": "H^(1+beta) when the expected nonzero pole Mellin scaling holds",
+    "normalization": "T_H/H, no division by an unproved nonzero coefficient"
+  },
+  "checkedLiteralArithmetic": [
+    "Q_H expands into complete signed endpoint gcd/divisor-phase observations",
+    "T_H equals the full prime-power sum with combined kernel on d<=12H",
+    "every prime power and full d^(-iy) phase remains before the two-scale join",
+    "normalizedStatistic=lowStatistic+highStatistic exactly on the literal support",
+    "complex coefficient support budget norm C_H(p)<=6H",
+    "lowStatistic norm <=(27/2)*(log4+4)*D^3/H^2",
+    "at H=n^20000,D=n^19998,beta>=19999/20000, lowStatistic norm/H^beta <=(27/2)*(log4+4)/n^5",
+    "each optional denominator-one lower endpoint has norm <=1",
+    "the normalized combined lower endpoint has norm <=18",
+    "literal8H<d<9H is an unmatched doubled-packet band with joined kernel norm >=norm C_H(p)/9",
+    "genuine joined absolute-density budget >=(8*log(9/8)/9)*H*norm C_H(p)"
+  ],
+  "noGoScope": {
+    "pointwiseOrWholePositiveNormPaymentGetsAutomaticMainScaleSaving": false,
+    "normBudgetOpposesHpowBetaWhenPoleCoefficientHasLinearScale": false,
+    "everyCenteredSignedArithmeticMethodRuledOut": false,
+    "actualCenteredPrimeSumProvedSourceSized": false,
+    "highStatisticArithmeticallyPaid": false,
+    "universalSourceGatePassed": false,
+    "wholeStatisticSuccessCriterionMet": false
+  },
+  "validation": {
+    "leafBuild": "lake build RiemannGaussian.SuzukiCarryPoleCenter --wfail: passed",
+    "namespaceAndAxiomCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryPoleCenter.lean: passed",
+    "report": {
+      "theoremsIncludingPrivateHelpers": 57,
+      "theoremAxioms": [
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.mellin_ofReal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_cofinal_lowStatistic_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le._proof_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.scaleDefect._proof_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.weight.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.finite_dilation_mismatch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_pole_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.ideal_scale_factor_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lower_pole_endpoint_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.kernel_outer_band",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.kernel_outer_band._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.twisted_power_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realWeight_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.Q_eq_gcd_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryFejer.value.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_ne_zero_of_defect_gap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_normalized_lower_endpoint_le._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_cofinal_lowStatistic_le._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_outer_cell._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.poleExponent.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_eq_scaleDefects",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic_eq_joined._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integrable_mellin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_7",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high._proof_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._simp_1_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integral_realKernel_eq_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.weight_eq_value_sq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_C_pole_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.SuzukiCarryPoleCenter.0.RiemannGaussian.SuzukiCarryPoleCenter.integrable_absoluteEnvelope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.ideal_scale_factor_norm_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.response_norm_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.normalizedStatistic_eq_low_high",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.matched_zero_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realWeight.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.absoluteEnvelope_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_normalized_lower_endpoint_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.poleExponent_re",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.C_ofReal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.integral_pole_realKernel_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.statistic.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.realKernel_log",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPoleCenter.norm_lowStatistic_le._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "rootRegistered": false,
+      "onlyStandardAxioms": true,
+      "namespaceLinters": 14,
+      "module": "RiemannGaussian.SuzukiCarryPoleCenter",
+      "declarations": 72
+    }
+  },
+  "optionalProbe": {
+    "command": "../.venv/bin/python scripts/probe_suzuki_carry_pole_center.py --maximum-h 131072 --grid-points 1048576 --small-h 4",
+    "report": ".lake/suzuki-carry-pole-center/probe.json",
+    "reportSHA256": "224043e9a321fbae94e5d1043ede4505a7132fdab0176e578d8730fd4117a229",
+    "scope": "Optional noncertifying arithmetic and Mellin preflight",
+    "allPrimePowersAndPhaseRetained": true,
+    "floorSumDirectReplayMaximumResidual": 0.0,
+    "smallFiniteJumpMellinReplay": [
+      {
+        "H": 1,
+        "height": 60.0,
+        "matchedCoefficient": "3.141493398837533589252",
+        "poleCoefficient": "(0.07622978419378345567618163937880465552679 + 0.03244294888103112289232974699600550081035j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.6054906763140723949679",
+        "relativeFinitePoleScaleDefect": "0.833676499469036487",
+        "relativeFiniteMatchedScaleDefect": "0.574788841726326772"
+      },
+      {
+        "H": 1,
+        "height": 54.38832170192632,
+        "matchedCoefficient": "3.141493398837533589252",
+        "poleCoefficient": "(-0.02300602893867941948032426397300061547061 + 0.1250193198756686982977547418965999279684j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.6271935480020282982824",
+        "relativeFinitePoleScaleDefect": "0.313751760993599039",
+        "relativeFiniteMatchedScaleDefect": "0.574788841726326772"
+      },
+      {
+        "H": 2,
+        "height": 60.0,
+        "matchedCoefficient": "3.989594594048440403027",
+        "poleCoefficient": "(-0.05918596096228554251824625330971054929487 + 0.1544007716670605071299892014054448114483j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.5232067851545895938255",
+        "relativeFinitePoleScaleDefect": "0.268666257234458378",
+        "relativeFiniteMatchedScaleDefect": "0.16079338904463576"
+      },
+      {
+        "H": 2,
+        "height": 54.38832170192632,
+        "matchedCoefficient": "3.989594594048440403027",
+        "poleCoefficient": "(-0.01438033666509376914917922506521914176862 + 0.3578666480377399252575470475676353117403j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.226231299197183799504",
+        "relativeFinitePoleScaleDefect": "0.78438405812780943",
+        "relativeFiniteMatchedScaleDefect": "0.16079338904463576"
+      },
+      {
+        "H": 4,
+        "height": 60.0,
+        "matchedCoefficient": "6.873671689180856943379",
+        "poleCoefficient": "(-0.1868546894868893720201838951049420632277 - 0.2516226825374991070520081515929860883546j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.2330666659650619394687",
+        "relativeFinitePoleScaleDefect": "10.9531949620564873",
+        "relativeFiniteMatchedScaleDefect": "0.0378220830334840063"
+      },
+      {
+        "H": 4,
+        "height": 54.38832170192632,
+        "matchedCoefficient": "6.873671689180856943379",
+        "poleCoefficient": "(0.05989770185976579899178863568500292821481 + 0.4061527375699075507422288388304042533168j)",
+        "sourceDeterminantDividedBy_H_power_1_plus_beta": "0.2035107278255074183254",
+        "relativeFinitePoleScaleDefect": "1.47651017667678248",
+        "relativeFiniteMatchedScaleDefect": "0.0378220830334840063"
+      }
+    ],
+    "lastLargePacketRows": [
+      {
+        "H": 131072,
+        "height": 60.0,
+        "poleCanceledFloatingResidual": 0.0,
+        "matchedResponseNormDividedBy_H_power_beta": 0.04615179180820613,
+        "idealLimitMatchedResponseNorm": 0.0461526583638435,
+        "centeredLiteralNormDividedBy_H_power_beta": 0.00011523146311880506,
+        "centeredLiteralRealDividedBy_H_power_beta": -6.976353996729083e-05,
+        "poleMellinGridRefinementNormalizedDifference": 4.0118625245147905e-08,
+        "unresolvedLowerTailBoundNormalized": 1.1253517471925912e-07,
+        "outerCellPhasedContributionNormalized": 89.11899056059237,
+        "outerCellJoinedAbsoluteMassNormalized": 754.8051255405815,
+        "outwardRounded": false
+      },
+      {
+        "H": 131072,
+        "height": 54.38832170192632,
+        "poleCanceledFloatingResidual": 0.0,
+        "matchedResponseNormDividedBy_H_power_beta": 3.5240668830034505e-06,
+        "idealLimitMatchedResponseNorm": 1.8577986812701724e-06,
+        "centeredLiteralNormDividedBy_H_power_beta": 0.00021725509776629497,
+        "centeredLiteralRealDividedBy_H_power_beta": 6.756420760127587e-05,
+        "poleMellinGridRefinementNormalizedDifference": 1.522259062321655e-08,
+        "unresolvedLowerTailBoundNormalized": 1.1253517471925912e-07,
+        "outerCellPhasedContributionNormalized": 116.23929339198735,
+        "outerCellJoinedAbsoluteMassNormalized": 1632.1298342249502,
+        "outwardRounded": false
+      }
+    ],
+    "testedHeightsSyntheticNotClaimedActualOffLineZeroOrdinates": true,
+    "periodicHurwitzFormulaLeanImported": false,
+    "continuumKappaFormulaLeanImported": false,
+    "gridRefinementIsUniformQuadratureErrorProof": false,
+    "lowerTailBudgetIsWholeQuadratureErrorProof": false,
+    "outwardRounded": false,
+    "numericalCertificate": false,
+    "ordinaryCIRegistered": false
+  },
+  "newSuzukiFloor": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false,
+  "openTarget": "Discharge the exact finite cofinal source-defect gate, then bound the SAME joint signed highStatistic at o(H^beta) precision; pole cancellation and positive norm budgets alone do neither."
+}

@@ -1,0 +1,240 @@
+{
+  "schema": "twisted-chebyshev-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/ZetaTwistedChebyshev.lean": "9e4c2e31e2284dab05a898df2bb3cd609ad529272182b3b8919ef9b6ca1d272f",
+    "scripts/CheckTwistedChebyshev.lean": "2a4842bfb443016f663592d6b6781b4b637a1ec4e0a1624afa1a13d49553d469",
+    "scripts/probe_twisted_chebyshev.py": "9e20bd0d7c1d16ac79a59d537a68fef78cb1fa853133f8e695607af5f56c0067"
+  },
+  "checkedArithmetic": [
+    "literal fixed-height von Mangoldt cumulative sum",
+    "finite Abel identity with lower endpoint +1",
+    "full phase retained"
+  ],
+  "checkedDiagnosticIdentities": [
+    "matched zero component -m*(X^beta-1)/beta",
+    "matched logarithmic block",
+    "exact component factorial source",
+    "off-frequency geometric decay with retained matched source",
+    "exact archimedean phase multiplication"
+  ],
+  "paperLevelOnly": [
+    "infinite M_y factorial integral",
+    "global half-plane implication from a fixed-height all-X power bound",
+    "generalized-prime literature comparison"
+  ],
+  "newArithmeticNoncoherenceEstimate": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false,
+  "validation": {
+    "leafBuild": "lake build RiemannGaussian.ZetaTwistedChebyshev --wfail: passed",
+    "namespaceLint": "14 linters: passed",
+    "axioms": {
+      "theoremsIncludingPrivateHelpers": 23,
+      "theoremAxioms": [
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.ZetaTwistedChebyshev.0.RiemannGaussian.ZetaTwistedChebyshev.continuousOn_phase_deriv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.cumulative_eq_chebyshev_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.zeroComponent.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_6",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase_mul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.continuousOn_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.offset_component_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.phase.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.matched_zeroComponent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.coupled_components_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.hasDerivAt_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.component_source._simp_1_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.finite_discrepancy_eq._simp_1_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.ZetaTwistedChebyshev.matched_zeroBlock",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "onlyStandardAxioms": true,
+      "namespaceLinters": 14,
+      "module": "RiemannGaussian.ZetaTwistedChebyshev",
+      "declarations": 27
+    },
+    "pythonCompile": "passed",
+    "optionalProbe": "integer von Mangoldt through 2^22 plus separately labelled continuous controls; passed",
+    "smallProbeRegression": "limit 8192; passed",
+    "gitDiffCheck": "passed",
+    "widerChecksRun": false
+  },
+  "controlProbe": {
+    "literalLimit": 4194304,
+    "continuousModelOnly": true,
+    "coherentLimit": -1,
+    "periodVariance": [
+      {
+        "height": 60.0,
+        "variance": 0.00027513310846880837
+      },
+      {
+        "height": 100.0,
+        "variance": 0.00014349198431543736
+      }
+    ],
+    "certificationClaim": false
+  },
+  "decision": "No tested generic cross-scale candidate excludes the persistent source; stop those candidates before heavy imports. Independent literal-prime signed projection bound remains open."
+}

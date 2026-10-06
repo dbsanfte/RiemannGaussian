@@ -1,0 +1,1494 @@
+{
+  "schema": "suzuki-carry-phase-code-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean": "a756656aa2a2039d03eb68e21ff22cce11a12a66fa34bb03d886ee03bca9d4e5",
+    "RiemannGaussian/SuzukiCarryPoleCenter.lean": "3f7dd8a53ef594307b3da89aea723c53feb8abec27fda6765c6a9cb5a205ce0a",
+    "RiemannGaussian/SuzukiCarryGram.lean": "10e812191080cc4942c8388cc6ede1cb8cc1405432229c609cfad0e5af97bac4",
+    "RiemannGaussian/SuzukiCarryFejer.lean": "497d2bdc4ef6cbcc1a5b172ed5b0d0458781ce390376fdd3fafba23bd154083d",
+    "scripts/CheckSuzukiCarryPhaseCode.lean": "9e6fe014ecc12a7dba17c70cc2b26a2d98aa137c9b23b775d6ed758312a881f7",
+    "scripts/probe_suzuki_carry_phase_code.py": "199c4dcf9406769e24b1c31a4b7d16a6318223cc9a9407cb3ba15a9fc617bd57",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b"
+  },
+  "checkedExactCancellation": [
+    "same finite Fejer amplitude vector, unit complex modulations and identical coefficient norms",
+    "familyQuadratic_eq_lag_fibers: all counts joined by signed lag h=N-M",
+    "lagFactor_zero=sum(lambda); diagonal exactly removed for sum(lambda)=0",
+    "familyKernel_eq_zero_of_no_cross: every single-incidence denominator exactly zero",
+    "surviving_incidence_le_lag: each remaining off-diagonal denominator d<=2|h|+1",
+    "codedKernel_outer_eq_zero: entire literal d>3H sector zero",
+    "canonical cyclic lambda has zero sum and zero full finite pole response at p=1-iy",
+    "genuine Mellin integrability before finite-sum/interchange and exact pole integral zero",
+    "all prime powers and d^(-iy) retained in correlated denominator and endpoint-gcd formulas"
+  ],
+  "sourcePreflight": {
+    "literalComplexResponses": "Cmod H theta s = mellin range(3H) (modulate (coefficient H H) theta) s",
+    "candidate": "theta_j=j/H, j=0,1,2",
+    "canonicalVector": "(C1(p)-C2(p),C2(p)-C0(p),C0(p)-C1(p))",
+    "determinantOrientation": "lambda dot C(beta)=-det(rows1,p,beta); matched component response is +m*det",
+    "normalization": "native codedStatistic/H, no division by an unproved nonzero coefficient",
+    "exactSourceLossCriterion": "(C1(p)-C0(p))*(C2(beta)-C0(beta))=(C2(p)-C0(p))*(C1(beta)-C0(beta))",
+    "quantitativeGapCriterionProved": true,
+    "quantitativeGapHypothesesDischargedForLiteralResponses": false,
+    "cofinalLowerBoundThroughoutCampaignProved": false,
+    "target": "for each permitted fixed beta,y, eventually norm(det)>=c_beta_y*H^(1+beta) with c_beta_y>0",
+    "actualPrimeSingleZeroAsymptoticProved": false,
+    "allHeightBoundProved": false
+  },
+  "checkedNoGos": {
+    "symmetric_0_plusTheta_minusTheta": "identical squared kernels at opposite phases; source determinant exactly zero for every finite H and exponent",
+    "fixed_pi_alias": "literal packetMass at d=2 equals H^2 for every A,H",
+    "unmodulatedLowDenominatorEstimateTransfersToArbitraryModulations": false,
+    "everyAsymmetricSlowPhaseCodeRuledOut": false
+  },
+  "strictSuccessCriteria": {
+    "poleResponseCanceledExactly": true,
+    "diagonalAndSingleIncidenceCanceledExactly": true,
+    "cofinalSourceSizeProved": false,
+    "allThreeProved": false
+  },
+  "remainingArithmetic": {
+    "signedCorrelatedSumIndependentlyBoundedAtSourcePrecision": false,
+    "oldLowDenominatorCreditBorrowed": false,
+    "slowModulationLowDenominatorPaymentProved": false,
+    "oldLowerDensityEndpointCreditBorrowed": false,
+    "globalNormPaymentAttempted": false,
+    "heavyGlobalArithmeticDeferredUntilSourceGate": true
+  },
+  "validation": {
+    "leafBuild": "lake build RiemannGaussian.SuzukiCarryPhaseCode --wfail: passed",
+    "namespaceAndAxiomCheck": "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryPhaseCode.lean: passed",
+    "allDeclarationsIncludingGeneratedAndPrivateAudited": true,
+    "report": {
+      "theoremsIncludingPrivateHelpers": 76,
+      "theoremAxioms": [
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_joined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.symmetric_sourceDet_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packet_pi_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_5",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_coded_pole_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.conj_modulation._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_eq_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_norm_lower_of_gap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._proof_1_3",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.Cmod_neg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_3",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_eq_lag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_coded_matched_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_4",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_correlated",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_canonical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.realMass_modulate_neg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_mul_conj",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_matched_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_4",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulate_mul_conj",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_lag_fibers",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic_eq_offDiagonal_gcd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.kernel_atom",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedResponse_pole_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_mul_conj._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulate.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic_eq_correlated",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.integral_codedRealKernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.conj_modulation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.norm_modulation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_offDiagonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.code_sum_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedKernel_outer_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._proof_1_5",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.norm_modulate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.lagFactor_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.conj_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_6",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryFejer.coefficient.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_range_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.modulation.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sum_coefficient._simp_1_4",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyKernel_eq_zero_of_no_cross",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_5",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.sourceDet_eq_contrasts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.surviving_incidence_le_lag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.familyQuadratic_eq_lag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.surviving_incidence_le_lag._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.canonical._proof_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedStatistic.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.incidence_two_eq_sign._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "_private.RiemannGaussian.SuzukiCarryPhaseCode.0.RiemannGaussian.SuzukiCarryPhaseCode.incidence_two_eq_sign",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.codedResponse_eq_neg_det",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packet_pi_two._proof_1_1",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.packetMass_pi_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_range_no_cross._proof_1_6",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_2",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.lagFactor.eq_1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.incidence_offDiagonal_eq_zero._proof_1_3",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RiemannGaussian.SuzukiCarryPhaseCode.fullGram_offDiagonal_eq_short_sum._simp_1_2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "rootRegistered": false,
+      "onlyStandardAxioms": true,
+      "namespaceLinters": 14,
+      "module": "RiemannGaussian.SuzukiCarryPhaseCode",
+      "declarations": 91
+    }
+  },
+  "optionalProbe": {
+    "command": "../.venv/bin/python scripts/probe_suzuki_carry_phase_code.py --maximum-h 8192 --grid-points 131072 --slow-only --heights 54.38832170192632 60 100 1000 --betas 0.99995 0.999975 0.9999999 --output .lake/suzuki-carry-phase-code/slow-refined.json",
+    "reports": [
+      {
+        "path": ".lake/suzuki-carry-phase-code/probe.json",
+        "sha256": "784109ef1bd1e7c8a280e8f63b9eab13b862985a3416be797df981ea42702e97",
+        "scope": "Optional floating preflight, exact finite indices",
+        "rows": 9,
+        "algebraicReplay": {
+          "integerResidueVsDirectPacketResidual": 7.772800161809615e-16,
+          "lagExpansionResidual": 2.9164246195720474e-15,
+          "outerAbove3HResidual": 9.930136612989092e-16,
+          "piAliasMass_H_squared_Residual": 7.105427357601002e-14,
+          "singleIncidenceDenominatorsReplayed": 23
+        },
+        "lastRows": [
+          {
+            "H": 1024,
+            "frequencies": [
+              0,
+              0.0009765625,
+              0.001953125
+            ],
+            "height": 60.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                -0.007258774578267173,
+                -0.0015728649415260652
+              ],
+              [
+                -0.003313914572657544,
+                -0.0020838364787013836
+              ],
+              [
+                0.0029716102680824846,
+                -0.0034468271297528564
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6623959804112296,
+              1.900753051645181,
+              2.4547859869965007
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0006886518321727959,
+            "lambdaSumResidual": 0.0,
+            "poleResponseResidual": 5.505714157152952e-21,
+            "determinantOrientationResidual": 1.3479144839305267e-18,
+            "diagonalCancellationResidual": 2.5454143699035964e-16,
+            "singleIncidenceKernelResidual": 4.3853263937194714e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              2.7527148852361144e-05,
+              -3.936611096159522e-05
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -8.085289394206215e-10,
+              1.6986381647880683e-10
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935330424152238e-07,
+              9.854166722280266e-07
+            ],
+            "gridPoints": 65536,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 1024,
+            "frequencies": [
+              0,
+              1.5707963267948966,
+              3.141592653589793
+            ],
+            "height": 60.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                -0.007258774578267173,
+                -0.0015728649415260652
+              ],
+              [
+                1.2391232917060258,
+                -0.37694128508317065
+              ],
+              [
+                -1.2492624143387043,
+                -0.5536799941092676
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6623959804112296,
+              12.245575488928178,
+              13.480312794401616
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 27.909473940836023,
+            "lambdaSumResidual": 2.220446049250313e-16,
+            "poleResponseResidual": 2.498001805406602e-16,
+            "determinantOrientationResidual": 3.5596458096434965e-15,
+            "diagonalCancellationResidual": 5.68434188594488e-14,
+            "singleIncidenceKernelResidual": 4.47545209131181e-16,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -415.87019181771643,
+              -541.9863638052062
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -416.04400748471426,
+              -541.9017992659801
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              0.23620501557447132,
+              0.4724081103404176
+            ],
+            "gridPoints": 65536,
+            "numericalCertificate": false,
+            "family": "fixed_0_pi_half_pi"
+          },
+          {
+            "H": 1024,
+            "frequencies": [
+              0,
+              0.0009765625,
+              -0.0009765625
+            ],
+            "height": 60.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                -0.007258774578267173,
+                -0.0015728649415260652
+              ],
+              [
+                -0.003313914572657544,
+                -0.0020838364787013836
+              ],
+              [
+                -0.003313914572657544,
+                -0.0020838364787013836
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6623959804112296,
+              1.900753051645181,
+              1.900753051645181
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0,
+            "lambdaSumResidual": 0.0,
+            "poleResponseResidual": 0.0,
+            "determinantOrientationResidual": 2.0674180356730545e-19,
+            "diagonalCancellationResidual": 0.0,
+            "singleIncidenceKernelResidual": 0.0,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              0.0,
+              0.0
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              0.0,
+              0.0
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935330424152238e-07,
+              5.935330424152238e-07
+            ],
+            "gridPoints": 65536,
+            "numericalCertificate": false,
+            "family": "symmetric_control"
+          }
+        ]
+      },
+      {
+        "path": ".lake/suzuki-carry-phase-code/slow-refined.json",
+        "sha256": "8844b88b9e4155c381a11c04c2883b505404944bf977c5454e6d66f2adedec40",
+        "scope": "Optional floating preflight, exact finite indices",
+        "rows": 36,
+        "algebraicReplay": {
+          "integerResidueVsDirectPacketResidual": 7.772800161809615e-16,
+          "lagExpansionResidual": 2.9164246195720474e-15,
+          "outerAbove3HResidual": 9.930136612989092e-16,
+          "piAliasMass_H_squared_Residual": 7.105427357601002e-14,
+          "singleIncidenceDenominatorsReplayed": 23
+        },
+        "lastRows": [
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 54.38832170192632,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                0.016116755156258322,
+                -0.000328951828176662
+              ],
+              [
+                0.015176297639947591,
+                -6.242713847233604e-06
+              ],
+              [
+                0.013379862937385656,
+                0.0005299266459812156
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627464749706764,
+              1.9010582349384335,
+              2.4550182460756145
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.00010594347005437743,
+            "lambdaSumResidual": 5.421010862427522e-20,
+            "poleResponseResidual": 1.7237904146388487e-21,
+            "determinantOrientationResidual": 5.210677925098624e-19,
+            "diagonalCancellationResidual": 1.78167723311033e-15,
+            "singleIncidenceKernelResidual": 1.2515375433724304e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.625773622771802e-07,
+              -2.5541839003312807e-07
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              1.1582099151317033e-12,
+              1.7302203880974273e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935331887632444e-07,
+              9.854173748329614e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 60.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                -0.0072990382465233355,
+                -0.0015080469789722657
+              ],
+              [
+                -0.0033572655068469116,
+                -0.0020561069980938682
+              ],
+              [
+                0.0029142831567781336,
+                -0.0034846969459147027
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627464749706764,
+              1.9010582349384335,
+              2.4550182460756145
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0006899852067800979,
+            "lambdaSumResidual": 2.168404344971009e-19,
+            "poleResponseResidual": 1.8940232492426095e-21,
+            "determinantOrientationResidual": 1.5062217954494666e-18,
+            "diagonalCancellationResidual": 3.4509534263712146e-15,
+            "singleIncidenceKernelResidual": 4.8921431891086106e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.33289319586439e-06,
+              -2.29950258800999e-06
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -7.0403411843562065e-12,
+              -4.137247122400586e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935331887632444e-07,
+              9.854173748329614e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 100.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                0.004259184488756642,
+                -0.0018986112181838494
+              ],
+              [
+                0.004265660250105325,
+                -0.001601179755287865
+              ],
+              [
+                0.004349365662334405,
+                -0.0008789145018604392
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627464749706764,
+              1.9010582349384335,
+              2.4550182460756145
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 1.793959048287114e-05,
+            "lambdaSumResidual": 0.0,
+            "poleResponseResidual": 1.8555414620598177e-22,
+            "determinantOrientationResidual": 2.677320948458871e-19,
+            "diagonalCancellationResidual": 7.17360374317118e-16,
+            "singleIncidenceKernelResidual": 4.898751176553579e-19,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              6.173340261299207e-07,
+              -8.867044289475623e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              4.611861299184072e-13,
+              -2.5537749270486985e-13
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935331887632444e-07,
+              9.854173748329614e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 1000.0,
+            "beta": 0.99995,
+            "normalizedPoleCoefficients": [
+              [
+                -3.5383554306315234e-05,
+                6.277938192721377e-06
+              ],
+              [
+                -3.6082497528650546e-05,
+                8.289518218834565e-06
+              ],
+              [
+                -2.4605012084519653e-05,
+                1.837436956927095e-05
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627464749706764,
+              1.9010582349384335,
+              2.4550182460756145
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 3.378010090273226e-06,
+            "lambdaSumResidual": 8.470329472543003e-22,
+            "poleResponseResidual": 3.8908490546096205e-26,
+            "determinantOrientationResidual": 1.9523144785007108e-21,
+            "diagonalCancellationResidual": 1.0025007388794929e-17,
+            "singleIncidenceKernelResidual": 7.193549172042049e-21,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -5.25205684358441e-08,
+              -2.7503043594899613e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -2.459353707508974e-15,
+              -1.6879040330937833e-14
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.5052348169366605e-07,
+              5.935331887632444e-07,
+              9.854173748329614e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 54.38832170192632,
+            "beta": 0.999975,
+            "normalizedPoleCoefficients": [
+              [
+                0.016116755156258322,
+                -0.000328951828176662
+              ],
+              [
+                0.015176297639947591,
+                -6.242713847233604e-06
+              ],
+              [
+                0.013379862937385656,
+                0.0005299266459812156
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627973906273683,
+              1.9011132106491828,
+              2.455081063475904
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0001059437114358472,
+            "lambdaSumResidual": 5.421010862427522e-20,
+            "poleResponseResidual": 1.7237904146388487e-21,
+            "determinantOrientationResidual": 3.7880464984852187e-19,
+            "diagonalCancellationResidual": 1.78167723311033e-15,
+            "singleIncidenceKernelResidual": 1.2515375433724304e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.6251821739283735e-07,
+              -2.553608576891113e-07
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              1.157949031288248e-12,
+              1.7298306603468924e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.503320494738824e-07,
+              5.932809901976711e-07,
+              9.849986605080867e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 60.0,
+            "beta": 0.999975,
+            "normalizedPoleCoefficients": [
+              [
+                -0.0072990382465233355,
+                -0.0015080469789722657
+              ],
+              [
+                -0.0033572655068469116,
+                -0.0020561069980938682
+              ],
+              [
+                0.0029142831567781336,
+                -0.0034846969459147027
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627973906273683,
+              1.9011132106491828,
+              2.455081063475904
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0006899907265726369,
+            "lambdaSumResidual": 2.168404344971009e-19,
+            "poleResponseResidual": 1.8940232492426095e-21,
+            "determinantOrientationResidual": 2.8371431472958725e-19,
+            "diagonalCancellationResidual": 3.4509534263712146e-15,
+            "singleIncidenceKernelResidual": 4.8921431891086106e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.3323677175936926e-06,
+              -2.2989846308889554e-06
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -7.038755365375196e-12,
+              -4.136315217987997e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.503320494738824e-07,
+              5.932809901976711e-07,
+              9.849986605080867e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 100.0,
+            "beta": 0.999975,
+            "normalizedPoleCoefficients": [
+              [
+                0.004259184488756642,
+                -0.0018986112181838494
+              ],
+              [
+                0.004265660250105325,
+                -0.001601179755287865
+              ],
+              [
+                0.004349365662334405,
+                -0.0008789145018604392
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627973906273683,
+              1.9011132106491828,
+              2.455081063475904
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 1.7940100274490738e-05,
+            "lambdaSumResidual": 0.0,
+            "poleResponseResidual": 1.8555414620598177e-22,
+            "determinantOrientationResidual": 4.5084119347163584e-20,
+            "diagonalCancellationResidual": 7.17360374317118e-16,
+            "singleIncidenceKernelResidual": 4.898751176553579e-19,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              6.171949732075373e-07,
+              -8.865047010256972e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              4.610822489132893e-13,
+              -2.5531996957287245e-13
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.503320494738824e-07,
+              5.932809901976711e-07,
+              9.849986605080867e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 1000.0,
+            "beta": 0.999975,
+            "normalizedPoleCoefficients": [
+              [
+                -3.5383554306315234e-05,
+                6.277938192721377e-06
+              ],
+              [
+                -3.6082497528650546e-05,
+                8.289518218834565e-06
+              ],
+              [
+                -2.4605012084519653e-05,
+                1.837436956927095e-05
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.6627973906273683,
+              1.9011132106491828,
+              2.455081063475904
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 3.37806783450304e-06,
+            "lambdaSumResidual": 8.470329472543003e-22,
+            "poleResponseResidual": 3.8908490546096205e-26,
+            "determinantOrientationResidual": 2.117582368135751e-21,
+            "diagonalCancellationResidual": 1.0025007388794929e-17,
+            "singleIncidenceKernelResidual": 7.193549172042049e-21,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -5.2508738311118874e-08,
+              -2.7496848604141878e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -2.458799744329028e-15,
+              -1.6875238369947995e-14
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.503320494738824e-07,
+              5.932809901976711e-07,
+              9.849986605080867e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 54.38832170192632,
+            "beta": 0.9999999,
+            "normalizedPoleCoefficients": [
+              [
+                0.016116755156258322,
+                -0.000328951828176662
+              ],
+              [
+                0.015176297639947591,
+                -6.242713847233604e-06
+              ],
+              [
+                0.013379862937385656,
+                0.0005299266459812156
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.662848104292262,
+              1.9011679682066658,
+              2.455143631494468
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.00010594395184364497,
+            "lambdaSumResidual": 5.421010862427522e-20,
+            "poleResponseResidual": 1.7237904146388487e-21,
+            "determinantOrientationResidual": 1.2819859746672e-18,
+            "diagonalCancellationResidual": 1.78167723311033e-15,
+            "singleIncidenceKernelResidual": 1.2515375433724304e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.6245932233044376e-07,
+              -2.553035683558382e-07
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              1.157689249391496e-12,
+              1.7294425787665617e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.501414641168769e-07,
+              5.930299073145995e-07,
+              9.845817985024126e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 60.0,
+            "beta": 0.9999999,
+            "normalizedPoleCoefficients": [
+              [
+                -0.0072990382465233355,
+                -0.0015080469789722657
+              ],
+              [
+                -0.0033572655068469116,
+                -0.0020561069980938682
+              ],
+              [
+                0.0029142831567781336,
+                -0.0034846969459147027
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.662848104292262,
+              1.9011679682066658,
+              2.455143631494468
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 0.0006899962243412699,
+            "lambdaSumResidual": 2.168404344971009e-19,
+            "poleResponseResidual": 1.8940232492426095e-21,
+            "determinantOrientationResidual": 2.72146083825391e-18,
+            "diagonalCancellationResidual": 3.4509534263712146e-15,
+            "singleIncidenceKernelResidual": 4.8921431891086106e-18,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -2.331844458889529e-06,
+              -2.2984688615658863e-06
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -7.037176244731555e-12,
+              -4.135387249844444e-12
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.501414641168769e-07,
+              5.930299073145995e-07,
+              9.845817985024126e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 100.0,
+            "beta": 0.9999999,
+            "normalizedPoleCoefficients": [
+              [
+                0.004259184488756642,
+                -0.0018986112181838494
+              ],
+              [
+                0.004265660250105325,
+                -0.001601179755287865
+              ],
+              [
+                0.004349365662334405,
+                -0.0008789145018604392
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.662848104292262,
+              1.9011679682066658,
+              2.455143631494468
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 1.7940608048778348e-05,
+            "lambdaSumResidual": 0.0,
+            "poleResponseResidual": 1.8555414620598177e-22,
+            "determinantOrientationResidual": 3.060884556815144e-19,
+            "diagonalCancellationResidual": 7.17360374317118e-16,
+            "singleIncidenceKernelResidual": 4.898751176553579e-19,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              6.170565076304927e-07,
+              -8.863058167341704e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              4.609788066909247e-13,
+              -2.552626894127081e-13
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.501414641168769e-07,
+              5.930299073145995e-07,
+              9.845817985024126e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          },
+          {
+            "H": 8192,
+            "frequencies": [
+              0,
+              0.0001220703125,
+              0.000244140625
+            ],
+            "height": 1000.0,
+            "beta": 0.9999999,
+            "normalizedPoleCoefficients": [
+              [
+                -3.5383554306315234e-05,
+                6.277938192721377e-06
+              ],
+              [
+                -3.6082497528650546e-05,
+                8.289518218834565e-06
+              ],
+              [
+                -2.4605012084519653e-05,
+                1.837436956927095e-05
+              ]
+            ],
+            "normalizedMatchedCoefficients": [
+              1.662848104292262,
+              1.9011679682066658,
+              2.455143631494468
+            ],
+            "nativeResponseNormDividedBy_H_power_1_plus_beta": 3.3781253488810027e-06,
+            "lambdaSumResidual": 8.470329472543003e-22,
+            "poleResponseResidual": 3.8908490546096205e-26,
+            "determinantOrientationResidual": 2.1281439417242924e-21,
+            "diagonalCancellationResidual": 1.0025007388794929e-17,
+            "singleIncidenceKernelResidual": 7.193549172042049e-21,
+            "nativeStatisticDividedBy_H_power_1_plus_beta": [
+              -5.2496958155631944e-08,
+              -2.7490679780392238e-08
+            ],
+            "nativeLowSectorDividedBy_H_power_1_plus_beta": [
+              -2.4582481210329625e-15,
+              -1.6871452468052978e-14
+            ],
+            "normalizedTailBoundsOnlyNotQuadratureErrors": [
+              4.501414641168769e-07,
+              5.930299073145995e-07,
+              9.845817985024126e-07
+            ],
+            "gridPoints": 131072,
+            "numericalCertificate": false,
+            "family": "slow_0_1_2"
+          }
+        ]
+      }
+    ],
+    "gridRefinement": [
+      {
+        "H": 64,
+        "height": 60.0,
+        "beta": 0.99995,
+        "absoluteNormalizedDeterminantRefinementDifference": 4.284972251264755e-06,
+        "uniformErrorProof": false
+      },
+      {
+        "H": 256,
+        "height": 60.0,
+        "beta": 0.99995,
+        "absoluteNormalizedDeterminantRefinementDifference": 6.620187951640079e-07,
+        "uniformErrorProof": false
+      }
+    ],
+    "syntheticHeightsNotClaimedActualOffLineZeros": true,
+    "finiteIntegerAndFullPhasePreserved": true,
+    "omittedTailBudgetIsWholeQuadratureErrorProof": false,
+    "outwardRounded": false,
+    "numericalCertificate": false,
+    "ordinaryCIRegistered": false
+  },
+  "newSuzukiFloor": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false,
+  "nextGate": "Prove a cofinal literal Mellin-response determinant gap for the asymmetric slow code. Only then bound the same retained signed correlated carry/prime-power sum and independently justify transferred low-denominator and one-sided density endpoint credits."
+}

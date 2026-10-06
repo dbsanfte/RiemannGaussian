@@ -1,0 +1,174 @@
+{
+  "schema": "suzuki-carry-periodic-discrepancy-local-audit-v1",
+  "date": "2026-10-05",
+  "baseCommit": "d2b1245111a153ac3c361cc6e58b49c62204dc0f",
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "sources": {
+    "RiemannGaussian/SuzukiCarryPeriodicDiscrepancy.lean": "b907efd8f7344d3479000e067f3463e50c632c1e1915b5942824e060097d924b",
+    "RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean": "7a1f1831e805caba3dbd0ad8e6c2b5baba64bb6c797b54de05e670f9b7ac9336",
+    "RiemannGaussian/SuzukiCarryMellinLimit.lean": "d4119315601c17180c3338f7059fe22ea4265c8900d5aeae494a81f37c1bdbeb",
+    "RiemannGaussian/SuzukiCarryMellinRate.lean": "4edc8e9c02f5568d41d291f36bea43971eb4e17aa661edf201b6d92ea006e0a9",
+    "RiemannGaussian/SuzukiCarryPhaseCode.lean": "a756656aa2a2039d03eb68e21ff22cce11a12a66fa34bb03d886ee03bca9d4e5",
+    "RiemannGaussian/SuzukiCarryGram.lean": "10e812191080cc4942c8388cc6ede1cb8cc1405432229c609cfad0e5af97bac4",
+    "RiemannGaussian/ZetaPrimeWindow.lean": "1630174ee0412c8890a96b3350583a1e314d1bbd42c6161aa579986532f24d4f",
+    "scripts/CheckSuzukiCarryPeriodicDiscrepancy.lean": "964c94b457b8e8d4a56c098f8fcd7e14f59523bcc75b239675abab36065770a5",
+    "scripts/probe_suzuki_carry_periodic_discrepancy.py": "f6cfe6f05f474facef775e8535823db24167305a56f99974a4337c94ad427e36",
+    "docs/gaussian-suzuki-pivot.md": "07dd56f4b173892575fca97f58b1ade3d6bc20b79fbf71525cf5ea056959174c",
+    "AGENTS.md": "2c066b88262301f170361b5f80633bfa38e94ce1f47d7e9227b5f1466ca17f2b"
+  },
+  "checkpoint": {
+    "outcome": "structural no-go for the proposed componentwise periodic/SBP payment",
+    "negativePreflightBeforeSourceGate": true,
+    "entireSignedCarryRouteProvedImpossible": false,
+    "noPositiveGlobalArithmeticEstimateClaimed": true,
+    "nextAction": "Stop this rowwise norm payment. Any future continuation needs genuinely signed cancellation across primes/lags; do not expand the same periodic allowance."
+  },
+  "literalRow": {
+    "overlap": "a_N*a_(N+h), a_N=tent((N+1)/H)",
+    "mean": "existing exact periodic lag autocorrelation A_d(h)",
+    "centeredOddRow": "d=2h+1: 1/d-indicator(N mod d=h)",
+    "allPartialSumsBound": "<=1",
+    "exactCompletePeriodSum": 0,
+    "closedForm": "r*(r^2-1)/(6*H^2*(2h+1))-a_h*a_(2h), r=2H-h, H<=h, 2h<3H",
+    "diagonalScaleLimit": "E_(H,H,2H+1) -> 1/12",
+    "uniformMainBand": "E>=1/20 for H>=100 and H<=h<=101H/100",
+    "noFixedC_over_H_EventualBound": true
+  },
+  "joinedNativeCode": {
+    "allThreeModulationsJoinedBeforeNorm": true,
+    "bothLagOrientationsJoinedBeforeNorm": true,
+    "allNRowsJoinedBeforeNorm": true,
+    "nativeRowIdentity": "native_row_discrepancy",
+    "normalizedSymbol": "2*(c0+c1*cos(tau*h/H)+c2*cos(2*tau*h/H))",
+    "exactNativeNormalization": "nativePeriodicBudget/H=periodicBudget(normalizedCode)",
+    "allPrimePowersRetained": true,
+    "fullTwistRetained": "d^(-iy)"
+  },
+  "sourceScaleObstruction": {
+    "premises": [
+      "fixed tau>0",
+      "fixed real y",
+      "beta<1",
+      "continuumDet(1-iy,beta,tau)!=0"
+    ],
+    "scope": "every source-retaining fixed tau; tau may depend on the candidate zero",
+    "nonzeroCodeCannotVanishOnOpenMainBand": true,
+    "actualPrimeWitness": "ordinary primes d=2h+1 in fixed subband strictly between 2H and 3H",
+    "primeMassTheorem": "PrimeWindow.theta_div_tendsto_one (already proved actual-prime PNT)",
+    "normalizedBudgetLowerBound": ">=epsilon*H eventually for some fixed epsilon>0",
+    "nativeBudgetDividedBy_H_power_1_plus_beta": "tends to +infinity",
+    "anyComponentwiseDominatingAllowance": "source-normalized summed allowance tends to +infinity",
+    "lowSectorCreditCannotRemoveWitness": "all witness primes >2H, thus outside any cutoff D<=2H",
+    "signedAggregateLowerBoundProved": false,
+    "signedCrossPrimeCancellationRuledOut": false
+  },
+  "sourceGateStillOpen": {
+    "exactMellinLimitAndRatePreserved": true,
+    "conditionalCofinalDeterminantTransferPreserved": true,
+    "allHeightExistenceOfNonzeroCodeProved": false,
+    "actualContinuumFourthOrderExpansionProved": false,
+    "noGoValidEvenIfGateSucceeds": true
+  },
+  "validation": {
+    "focusedBuild": {
+      "command": "lake --wfail build RiemannGaussian.SuzukiCarryPeriodicBudgetAudit",
+      "passed": true
+    },
+    "linterAndAxiomCommand": "lake env lean -DwarningAsError=true scripts/CheckSuzukiCarryPeriodicDiscrepancy.lean",
+    "allDeclarationsIncludingPrivateAndGeneratedAudited": true,
+    "modules": [
+      {
+        "theoremsIncludingPrivateHelpers": 92,
+        "rootRegistered": false,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPeriodicDiscrepancy",
+        "declarations": 96
+      },
+      {
+        "theoremsIncludingPrivateHelpers": 53,
+        "rootRegistered": false,
+        "onlyStandardAxioms": true,
+        "namespaceLinters": 14,
+        "module": "RiemannGaussian.SuzukiCarryPeriodicBudgetAudit",
+        "declarations": 61
+      }
+    ],
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 157,
+    "theoremsIncludingPrivateAndGenerated": 145,
+    "axiomArtifact": ".lake/suzuki-carry-periodic-discrepancy/axioms.json"
+  },
+  "optionalProbe": {
+    "outsideOrdinaryCI": true,
+    "scope": "Optional literal finite regression, not an asymptotic certificate",
+    "rationalReplay": {
+      "exactRationalClosedFormReplays": 272,
+      "uniformBandReplays": 14,
+      "maximumPrefixMagnitude": "32/65",
+      "allPrefixAndPeriodChecksPassed": true
+    },
+    "joinedPhaseReplay": {
+      "allThreeModulationsAndBothOrientationsJoined": true,
+      "genericVectorNotClaimedCanonicalPoleCode": true,
+      "floatingJoinedIdentityResidual": 0.0
+    },
+    "diagonalScale": [
+      {
+        "H": 16,
+        "exactDiscrepancy": "185/8448",
+        "discrepancy": 0.021898674242424244,
+        "H_times_discrepancy": 0.3503787878787879
+      },
+      {
+        "H": 100,
+        "exactDiscrepancy": "48917/670000",
+        "discrepancy": 0.07301044776119403,
+        "H_times_discrepancy": 7.301044776119403
+      },
+      {
+        "H": 256,
+        "exactDiscrepancy": "2665345/33619968",
+        "discrepancy": 0.07927862989042703,
+        "H_times_discrepancy": 20.29532925194932
+      },
+      {
+        "H": 640,
+        "exactDiscrepancy": "14290667/174899200",
+        "discrepancy": 0.08170801810414227,
+        "H_times_discrepancy": 52.29313158665106
+      },
+      {
+        "H": 4096,
+        "exactDiscrepancy": "3806565035/45818576896",
+        "discrepancy": 0.08307907606210084,
+        "H_times_discrepancy": 340.29189555036504
+      },
+      {
+        "H": 65536,
+        "exactDiscrepancy": "46903906238465/562954248388608",
+        "discrepancy": 0.08331743897967207,
+        "H_times_discrepancy": 5460.291680971789
+      },
+      {
+        "H": 1048576,
+        "exactDiscrepancy": "192151385078759425/2305844108725321728",
+        "discrepancy": 0.08333233992343973,
+        "H_times_discrepancy": 87380.29166756074
+      }
+    ],
+    "provedLimitInLean": "1/12",
+    "cofinalDeterminantNonvanishingCertified": false,
+    "signedPrimeSumSmallnessCertified": false,
+    "numericalCertificate": false
+  },
+  "arithmeticFloorProved": false,
+  "newZeroFreeRegion": false,
+  "rhProved": false
+}

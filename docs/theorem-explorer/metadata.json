@@ -5348,7 +5348,23 @@
     "ZetaPrimeMomentChebyshev": "euler",
     "ZetaPrimeMomentRegionCoverage": "region",
     "ZetaPrimeMomentArithmeticAudit": "euler",
-    "ZetaPrimeMomentTerminal": "strip"
+    "ZetaPrimeMomentTerminal": "strip",
+    "SuzukiCarryCorrelation": "suzuki",
+    "SuzukiCarryDeterminantGate": "suzuki",
+    "SuzukiCarryFejer": "suzuki",
+    "SuzukiCarryGram": "suzuki",
+    "SuzukiCarryGramSource": "suzuki",
+    "SuzukiCarryMellinLimit": "suzuki",
+    "SuzukiCarryMellinRate": "suzuki",
+    "SuzukiCarryPeriodicBudgetAudit": "suzuki",
+    "SuzukiCarryPeriodicDiscrepancy": "suzuki",
+    "SuzukiCarryPhaseCode": "suzuki",
+    "SuzukiCarryPoleCenter": "suzuki",
+    "SuzukiCarrySourceDetector": "suzuki",
+    "SuzukiIntegerCarryMellinAudit": "suzuki",
+    "SuzukiIntegerCarry": "suzuki",
+    "SuzukiJoinedExcursionAudit": "suzuki",
+    "ZetaTwistedChebyshev": "euler"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

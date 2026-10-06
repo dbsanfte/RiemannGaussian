@@ -15751,3 +15751,359 @@ Keep finite-height radius engineering separate. The checked ceiling remains
 log(|y|+3)<=2000; modern published widths are import leads unless their actual
 analytic proofs and all whole-disk conditions have been discharged. After
 publishing this checkpoint, resume local work unless instructed otherwise.
+
+## Direct twisted Chebyshev strength audit, 2026-10-05
+
+The latest user task explicitly permits direct arithmetic research on
+`M_y(X)=sum_{n<=X} Lambda(n)n^(-iy)-integral_1^X x^(-iy)dx` while Riesz stays
+frozen. Preserve the global Gaussian/Suzuki work, all previous no-gos and
+semiprime work. No subagents, commits/pushes, root registration, public
+metadata or wider gates are authorized for this local slice.
+
+Keep `ZetaTwistedChebyshev`: its actual finite Abel identity retains the
+lower-endpoint `+1`, full phase and literal integer von Mangoldt measure.
+One specified zero component at beta+iy contributes
+`-m*(X^beta-1)/beta` after twisting; this is NOT a claimed one-zero asymptotic
+of actual M_y. Off-frequency components can have positive block variance
+yet vanish geometrically in the factorial transform while the matched
+source persists. Do not infer non-coherence from raw/block variance,
+phase spread, adjacent-scale increments, positivity, or discreteness alone.
+
+A power bound for M_y at even ONE fixed height and all sufficiently large
+X implies a GLOBAL horizontal zero-free half-plane by its Mellin transform.
+It is not merely an ordinate-specific bound. Little-o at the campaign
+boundary gives decay but not a fixed geometric rate without a power gap.
+The paper-level infinite-M_y formulas in docs/zeta-twisted-chebyshev-audit.md
+are labelled as derivations, separately from the checked Lean finite bridge
+and diagnostic component identities.
+
+Actual-prime short-interval Type-II/contagion and Gowers results were checked
+against their stated precision. The fixed n^(-iy) character is a structured
+major-arc alternative; current logarithmic/quasipolynomial savings do not
+exclude a tiny X^(-epsilon) coherent density ripple. Do not formalize a
+large import unless a new literal-integer arithmetic estimate controls the
+SIGNED persistent projection at its source precision. Generic Euler or
+divisor structure and PNT accuracy remain insufficient in their audited
+scopes. The optional scripts/probe_twisted_chebyshev.py separates literal
+finite prime data from its positive continuous controls and stays outside
+ordinary CI. No independent non-coherence theorem or new zero-free credit
+was obtained in this pass. Stop the rejected candidates, not the research
+objective; preserve the terminal open arithmetic premise.
+
+## Joined Suzuki excursion and collective-correlation audit, 2026-10-05
+
+The user authorized the global Suzuki plan and asked whether information
+was missing. Keep Riesz frozen. No subagents, commits/pushes, root
+registration, public-frontier changes or wider gates are authorized here.
+Preserve all preceding local twisted-Chebyshev work and semiprime work.
+
+Keep `SuzukiJoinedExcursionAudit`. Its continuous tail model has eventually
+positive density, exact mass/log-moment derivatives, the full work-minus-
+entropy ledger and exactly balanced phase points, but a negative
+`exp(alpha*t)` potential at those points. Every smaller-power eventual
+floor fails. This is a generic-control no-go, NOT a theorem about actual
+integer primes or a new bound. Do not claim the control has the integer
+divisor identities or the ordinary zeta completion/functional equation.
+
+The optional `probe_suzuki_joint_excursions.py` streams literal Lambda with
+all prime powers, retains joint work/entropy before measuring drawdown and
+classifies long balanced gaps. Finite measurements through 2^26 show strong
+joint cancellation, but the long intervals outside the proved local
+N^(3/4) estimate carry most of the measured negative variation. No
+all-height rate is inferred from these finite values.
+
+The detector now also evaluates the actual time kernel
+`Psi(s)+Psi(t)-Psi(s-t)` with full Archimedean and literal prime terms.
+This is DIFFERENT from an automatically positive Hilbert-vector Gram.
+Synthetic off-axis controls can pass every sampled scalar and every
+two-node principal test while failing a collective quadratic direction.
+Preserve eigenvector weights AND the separate Archimedean/prime ledger
+before statistical analysis. Fractional and unit-multiplicity controls
+are labelled synthetic; do not treat either as an actual zeta zero.
+
+Keep the exact two-node dilation identity and the three-coordinate
+pairwise-positive/jointly-negative control. These demonstrate limitations
+of finite scalar/pairwise tests; they do not contradict Suzuki's actual
+global pointwise criterion. No missing term or error in Suzuki was found.
+Full test-function correlations are already in his Weil framework; the
+scalar detector underused them. A next useful arithmetic slice must bound
+the WHOLE signed prime quadratic against its matching Archimedean reserve
+on growing windows, or prove an actual balanced excursion bound. More
+finite positive matrices, separate positive budgets, or a new conditional
+reformulation alone earns no floor or zero-free credit. See
+docs/gaussian-suzuki-pivot.md and its scoped local audit.
+
+## Literal integer-carry constraint and sensitivity audit, 2026-10-05
+
+The current user task asks for actual integer-prime structure missing from
+the continuous controls. Keep `SuzukiIntegerCarry` and its Mellin audit.
+The literal factorial observation is log(N!) at EVERY integer cutoff;
+all these observations uniquely determine Lambda among arithmetic
+sequences with f(0)=0. Binary quotient carries equal the exact floor
+parity, and their prime sum equals log(centralBinom N). The adjacent SIGNED
+prime-power sum is between log4-1/(2N+1) and log4-1/(2N+2). This is a proved
+unconditional all-scale estimate, with all proper powers retained.
+
+This is classical integer factorization, newly formalized here, not a
+claim of historically novel prime distribution. The optional literal
+probe replays through524290 and stays outside CI; floating/high-precision
+replays are not outward-rounded certificates. Keep prime incidences
+joined before norms or sign budgets. Complex cutoff-variable weights do
+NOT license inserting an arbitrary prime twist inside each carry profile.
+
+The exact carry colour transform is ((2^s-2)*zeta(s))/s on Re s>0, s!=1.
+Its full power-mode response at scale T is exp(s*T) times this transform.
+Thus every genuine zeta-zero power component is annihilated at every
+scale by this LINEAR test, as are finite combinations of its dilations.
+Do not claim that the reciprocal carry bound controls the Suzuki floor,
+the all-window arithmetic kernel or the persistent zero source. The
+synthetic beta+60i density modes have nonzero symbols; they are not actual
+off-line zeta zeros. The null response limits this linear projection,
+NOT the complete integer constraint system or all nonlinear arithmetic.
+
+Retain literal floor conventions at every quotient endpoint; use the
+countable endpoint/eta-colour AE equivalence only in proved integrals.
+Preserve all earlier audits and semiprime work. Continue locally with
+focused leaf/linter/standard-axiom checks; no subagents, commits/pushes,
+root registration, public-frontier updates or wider gates. The Suzuki
+floor and full Gaussian/Weil arithmetic bound remain OPEN. See
+docs/suzuki-integer-carry-audit.json and docs/gaussian-suzuki-pivot.md.
+
+## Lagged carry-Gram, matched source and Fejer saving, 2026-10-05
+
+Keep `SuzukiCarryCorrelation`, `SuzukiCarrySourceDetector`,
+`SuzukiCarryGram`, `SuzukiCarryGramSource` and `SuzukiCarryFejer`.
+The user requests a literal-integer quadratic that is both source-sensitive
+and independently small. Do not reopen Riesz or substitute a density model.
+Continue locally: no subagents, commits/pushes, root registration, public
+metadata or wider publication gates. Preserve preceding local work and
+semiprime results. Use focused leaf/linter/transitive-standard-axiom checks.
+
+The finite quadratic identity retains arbitrary complex coefficients,
+every prime power and the complete d^(-iy) phase before joining.
+Nonzero-height carry-Gram is generally NOT Hermitian or positive; only
+y=0 has the checked positivity theorem. Same-atom incidence Gram is
+NOT the full off-diagonal Weil/Suzuki quadratic.
+
+Every carry increment has exactly two residue spikes modulo d>=2.
+The periodic lag formula has positive residue0 and negative residues
+floor(d/2), d-floor(d/2), normalized by d. Endpoint correlations are the
+exact signed nine-term gcd/divisor-phase sum. Adjacent correlations use
+only2 and3. For lag h>0 all shared denominators satisfy d<=2h+1 and the
+entry norm is <=16log(2h+1). This does NOT pay the whole long-lag matrix.
+
+`SuzukiCarryGramSource` proves a genuinely integrable matched response
+-m*exp(beta*T)*C with C>0 for every nonzero finite packet. Flat[A,2A)
+packets have exact A^beta scaling with a fixed positive base coefficient.
+This is a diagnostic response to ONE specified Chebyshev power component,
+NOT an actual-prime one-zero asymptotic. Height matching also changes the
+linear Mellin argument to beta; do not credit all sensitivity to squaring.
+The optional unweighted squared-symbol Hurwitz/Dirichlet-beta derivation
+and known-critical-zero values are floating/paper diagnostics, not Lean
+theorems or off-line zero controls.
+
+The EXACT triangular Fejer coefficients average complete flat intervals.
+Their squared kernel obeys W(d)<=((H mod d)/H)^2, with exact zero when
+d divides H. For A=H>=2 their matched source coefficient is uniformly
+>=log(9/8)/9*H^beta; the finite kernel is not replaced by a limit profile.
+`fullQuadratic_eq_low_high` retains an explicit `highPacket`.
+The independent actual-prime bound is
+|lowPacket(A,H,D;y)|<=(log4+4)*D^3/H^2, every proper power included.
+At H=n^20000,D=n^19998 and beta>=19999/20000, its norm/H^beta is
+<=(log4+4)/n^5. This earns a REAL source-scale low-sector saving, not
+whole-statistic floor/zero-free credit. The signed highPacket, its
+density/pole centering or matching Archimedean reserve, and the global
+Suzuki/Weil bound remain OPEN.
+
+Never norm-pay the entire carry matrix: flat zero-height mass has the
+proved linear-minus-log lower bound and cannot beat an A^beta source for
+beta<1. Short-lag rigidity leaves long-lag/main-scale contributions.
+Future work must bound that same signed remainder at source precision,
+not merely add finite positive matrices or generic gcd budgets.
+Preserve exact algebraic component indices before statistical probes.
+Optional `probe_suzuki_carry_correlations.py` and
+`probe_suzuki_carry_gram.py` retain all powers and separate proof/replay
+scope. See docs/suzuki-carry-correlation-audit.json and the pivot document.
+
+## Two-scale pole-centered carry preflight, 2026-10-05
+
+Keep `SuzukiCarryPoleCenter`. The current user requests two-scale centering
+of the SAME literal finite Fejer packet before any main-range payment.
+Continue locally without subagents, commits/pushes, root/public metadata,
+or wider publication gates. Preserve all preceding local/semiprime work.
+
+Complex `C_H(s)` has genuine integrability for Re s>0 and restricts to the
+previous real source coefficient. Twisting density gives p=1-iy; twisting
+the selected component at beta+iy gives beta. Native determinant
+T=C_(2H)(p)*Q_H-C_H(p)*Q_(2H) cancels the full density mode EXACTLY.
+Use T/H for an H^beta comparison; do not divide by an unproved nonzero
+complex coefficient. The optional denominator-one lower endpoint has a
+proved normalized norm <=18 and is not a source-scale channel.
+
+Matched response is exactly -m*D_H(beta), including finite scaling
+defects E_H(s)=C_(2H)(s)-2^s*C_H(s). Ideal factor2^p-2^beta is nonzero for
+beta<1 by its modulus gap, but that is NOT a universal nondegeneracy
+proof for the literal packet. W_2(6)=1/4 versus W_1(3)=1 is a checked
+finite-dilation mismatch. Keep both errors and the strict defect-gap
+criterion visible. Cofinal nondegeneracy of the actual complex Mellin
+determinant at every fixed campaign height remains OPEN.
+
+Keep the two-scale signed kernel and exact lowStatistic+highStatistic
+ledger. Full prime powers and d^(-iy) survive the gcd/quadratic expansion.
+The normalized low sector retains the independent bound
+(27/2)*(log4+4)*D^3/H^2 and campaign cofinal saving
+norm/H^beta <=(27/2)*(log4+4)/n^5 at H=n^20000,D=n^19998.
+This does not pay the signed highStatistic or earn a zero-free credit.
+
+On literal8H<d<9H only the doubled packet survives, with weight>=1/9.
+The joined positive-density absolute budget is >=
+(8log(9/8)/9)*H*|C_H(p)|. This is a no-go for norm/pointwise main-range
+payment when the pole coefficient has its expected nonzero linear scale,
+NOT an impossibility theorem for every centered signed arithmetic bound.
+Do not drop the signed phase, norm-pay this band, or return to uncentered
+packet allowances. Any further arithmetic work must target the SAME
+joint highStatistic after the cofinal source gate is discharged.
+
+Optional `probe_suzuki_carry_pole_center.py` separates exact rational jump
+bookkeeping, high-precision special-function replay, refined finite-grid
+quadrature, and literal integer prime-power sums. Hurwitz/limiting-profile
+formulas and finite values are not Lean theorems or certificates. The
+small response near12pi/log2 needs finite sampling/tail errors retained.
+See docs/suzuki-carry-pole-center-audit.json and the pivot document.
+
+## Same-amplitude carry phase-code preflight, 2026-10-05
+
+The latest explicit user steer supersedes the two-scale-only next-step
+restriction: keep the old results but test one finite Fejer vector with
+three phase-coded copies. Keep `SuzukiCarryPhaseCode`; work locally without
+subagents, commits/pushes, root/public metadata or wider publication gates.
+
+Diagonal cancellation requires sum(lambda)=0 and is exact. The joined
+signed lag coefficient is sum(lambda_j*exp(i*theta_j*h)). Every surviving
+off-diagonal denominator obeys d<=2|h|+1; for support range(3H) the entire
+literal d>3H sector vanishes. Retain all prime powers and d^(-iy), and use
+the exact off-diagonal/gcd or lag formulas before norms. Nonzero-height
+Gram is not Hermitian positive.
+
+The canonical cyclic code also kills the FULL finite Mellin pole response
+at p=1-iy exactly. Its matched-component sign is +m*det(rows1,p,beta):
+the specified cyclic lambda is MINUS the cofactors of the last row.
+Use codedStatistic/H for the H^beta comparison. Source response means one
+specified diagnostic Chebyshev component, not an actual-prime one-zero
+asymptotic. Do not discard finite sampling or one-sided boundaries.
+
+Exact regressions: symmetric 0,+theta,-theta has zero source determinant;
+pi modulation gives mass H^2 at d=2. Thus the old unmodulated low-sector
+or lower-density-endpoint bounds cannot simply be reused. Rational slow
+codes0,1/H,2/H remain candidates. Their literal cofinal source determinant
+lower bound is OPEN: finite probes through H=8192, multiple synthetic
+heights and campaign beta samples are not a certificate or all-height
+proof. Preserve the explicit contrast/non-collinearity gate before any
+heavy independent arithmetic estimate. No whole-statistic success credit,
+Suzuki floor, zero-free result or RH claim yet. Next prove the cofinal
+source gap; only then pay the SAME correlated remainder and justify any
+transferred low-denominator/endpoint credits. See the scoped local audit
+docs/suzuki-carry-phase-code-audit.json and the pivot document.
+
+## Scaled carry Mellin limit and asymmetric determinant gate, 2026-10-05
+
+The latest steer prioritizes the cofinal determinant for codes
+0,tau/H,2tau/H; tau may depend on the candidate zero. Continue locally:
+no subagents, commits/pushes, root registration, public metadata or wider
+publication gates. Preserve every preceding no-go and semiprime file.
+
+Keep `SuzukiCarryMellinLimit`, `SuzukiCarryMellinRate` and
+`SuzukiCarryDeterminantGate`. The Fejer coefficient is exactly the tent
+at (N+1)/H, not N/H. The scaled literal packet equals the upward-rounded
+alternating tent profile, with all grid coincidences retained. The Mellin
+limit is joint uniform on any positive real-part strip and bounded tau
+interval. For 0<a<=1 and a<=Re(s)<=b the explicit response error is
+((25+49*exp(b*log6))*(1+abs(tau))^2/a)*H^(-a/2); there is no imaginary
+height cost. Sampling error is paid; the source response is retained.
+
+`tendsto_normalized_nativeDet` identifies the normalized finite source
+determinant with its continuum limit. Continuum nonvanishing is equivalent
+to some positive cofinal native source margin. A nonzero limit gives
+norm(nativeDet)>=norm(limit)/2*H^(Re(p)+Re(beta)) eventually. It does NOT
+prove that a modulation with nonzero limit exists at every campaign height.
+
+The fourth-order jet determinant is exactly
+12*(B_p*C_beta-C_p*B_beta)*tau^6. The general remainder identity and
+existence of a positive fixed code are checked UNDER explicit
+`FourthOrderExpansion` and nonzero-wedge hypotheses. The actual continuum
+fourth-order expansion and the all-height nonzero wedge/alternative code
+theorem remain OPEN. Do not silently turn those premises into results.
+
+Optional probes replay rational jump coincidences, finite Euler-polynomial
+moment sums and eight knot residue classes modulo2,4,6 before numerical
+quadrature/Hurwitz evaluation. The Mellin boundary formula is exploratory;
+neither it nor sampled nonzero wedges certify all heights. Keep probes
+outside ordinary CI. `CheckSuzukiCarryMellinLimit` runs the 14 namespace
+linters and standard-axiom audit over all declarations in the three leaves,
+including private/generated declarations. See
+docs/suzuki-carry-mellin-limit-audit.json for exact scope and source pins.
+
+Do not start the heavy periodic-mean/zero-mean arithmetic estimate until
+the source gate is discharged. Retain Lambda at all prime powers and the
+full height phase when that stage begins. Verify the normalization before
+claiming O(1/H) total variation of a Fejer overlap: O(1/H) pointwise slope
+does not imply O(1/H) accumulated variation, and rescaling the envelope
+also rescales the canonical modulation coefficients. No independent
+correlated-sector smallness, Suzuki floor, zero-free or RH claim yet.
+
+## Phase-coded periodic/SBP payment obstruction, 2026-10-05
+
+Keep `SuzukiCarryPeriodicDiscrepancy` and `SuzukiCarryPeriodicBudgetAudit`.
+This is a cheap negative preflight of the proposed periodic payment, not
+a positive global estimate bypassing the still-open determinant gate.
+The original Fejer overlaps and native canonical code are unchanged.
+
+At d=2h+1 the centered carry row is exactly 1/d-indicator(N mod d=h),
+has zero period mean and ALL partial sums bounded by1. Yet its weighted
+discrepancy tends to1/12 at h=H. It is >=1/20 uniformly for H>=100,
+H<=h<=101H/100. O(1/H) slope is not O(1/H) total variation.
+
+All three modulations, BOTH lag orientations and all N rows are joined
+before the audit norm. Every nonzero source-retaining fixed code has a
+nonvanishing cosine symbol on some main-scale open subband. Existing
+actual-prime PNT supplies linear prime log mass there, with d strictly
+between2H and3H, outside any paid low cutoff<=2H. The native audit cost
+divided by H^(1+beta) tends to+infinity for beta<1, CONDITIONALLY on the
+same continuumDet!=0 source gate. Exact native normalization is proved.
+
+Stop paying the periodic remainder by separate (d,h) norms or
+bounded-prefix/total-variation allowances. ANY allowance dominating each
+fully joined row separately inherits this source-divergent cost. Preserve
+Lambda at every prime power and full d^(-iy) phase; the proof's ordinary-
+prime subband is a lower-bound witness, not a deletion of proper powers.
+
+This no-go does NOT prove signed cancellation across primes/lags
+impossible and does NOT close the arithmetic floor. A new signed global
+correlation theorem would be required. The all-height nonzero determinant
+and actual continuum fourth-order expansion remain OPEN. Do not relabel
+the norm-budget theorem as a signed estimate or a zero-free result.
+
+Focused leaves, 14 linters, and all-declaration standard-axiom audit pass.
+The optional exact-rational regression is outside ordinary CI. See
+docs/suzuki-carry-periodic-discrepancy-audit.json and the pivot document.
+Remain local: no subagents, commits/pushes, root registration/public
+metadata or wider gates. Preserve all preceding work and semiprime files.
+
+## Integer-carry publication authorized, 2026-10-06
+
+The user explicitly requests committing and pushing ALL accumulated local
+work. This supersedes the local publication holds for this checkpoint.
+Register all16 new Lean leaves, publish the exact Mellin/source gates and
+scoped periodic/SBP obstruction, refresh Latest Update and the explorers,
+and run the tracked precommit hook and applicable publication checks.
+Preserve every earlier result/no-go and all semiprime work. Do not spawn
+subagents or run exhaustive numerical-certificate verification.
+
+Keep the global Suzuki criterion as the active endpoint. The new periodic
+audit is a structural no-go for componentwise norm/SBP payment conditional
+on a nonzero continuum source, not a bound on the signed aggregate. The
+all-height determinant gate and signed cross-prime/lag cancellation remain
+OPEN. No new zero-free/RH claim or top-ten accomplishment is earned.
+Local audit files retain their historical focused-validation scope; the
+publication audit separately records root registration and wider checks.
+After publishing this checkpoint, return to local scope unless instructed.

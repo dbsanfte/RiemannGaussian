@@ -2,19 +2,19 @@
 
 # Theorem-family index
 
-Browse all **3,020 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **3,036 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
 | Theorem family | Modules | Contents |
 | --- | ---: | --- |
 | [Zeta & xi geometry](foundations.md) | 105 | Actual zeros, canonical products, reflection and analytic multiplicity. |
-| [Suzuki machinery](suzuki.md) | 359 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
+| [Suzuki machinery](suzuki.md) | 374 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
 | [Eta & reflection](eta.md) | 388 | Paired eta identities, continuation and exact reflected tails. |
 | [Gaussian heat](heat.md) | 119 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
 | [Phase positivity](phase.md) | 93 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |
 | [Oscillatory sums](oscillation.md) | 251 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
-| [Euler & prime structure](euler.md) | 47 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
+| [Euler & prime structure](euler.md) | 48 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
 | [Signed strip geometry](strip.md) | 76 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
 | [Gamma & completion](completion.md) | 23 | Archimedean corrections, digamma/trigamma estimates and exact pole cancellation. |
 | [Order & height limits](asymptotic.md) | 21 | Joint derivative-order schedules and the eventual logarithmic zero-free component. |
