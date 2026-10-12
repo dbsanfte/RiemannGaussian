@@ -66,14 +66,13 @@ theorem dicksonOfBits_correct {R : Type*} [CommRing R] (x : R) (bits : List Bool
   | nil => simp [dicksonOfBits, degreeOfBits]; ring
   | cons bit tail ih =>
     cases bit <;> simp only [dicksonOfBits, ih, degreeOfBits,
-      Bool.false_eq_true, if_false, if_true, add_zero]
+      Bool.false_eq_true, ite_false, ite_true, add_zero]
     · apply Prod.ext
       · exact (dickson_double_eval x _).symm
       · exact (dickson_double_add_one_eval x _).symm
     · apply Prod.ext
       · exact (dickson_double_add_one_eval x _).symm
       · convert (dickson_double_eval x (degreeOfBits tail+1)).symm using 1
-        congr 1
 
 private theorem pow_eq_one_of_coprime {F : Type*} [Field F]
     {x : F} {M d : ℕ} (hM : x^M = 1) (hd : x^d = 1)

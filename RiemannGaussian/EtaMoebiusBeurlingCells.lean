@@ -186,7 +186,7 @@ theorem pairedEtaMoebiusBeurlingHarmonicPrefix_succ_sub (M L : ℕ) (w : ℕ →
   have hhead : (1 - (if L = 0 then (0 : ℝ) else 1)) * L = 0 := by
     by_cases hL : L = 0 <;> simp [hL]
   unfold pairedEtaMoebiusBeurlingHarmonicPrefix pairedEtaMoebiusBeurlingCell
-  rw [if_neg (by omega : L + 1 ≠ 0), unpaired_harmonic_succ]
+  rw [ite_eq_right (by omega : L + 1 ≠ 0), unpaired_harmonic_succ]
   push_cast
   apply (eq_div_iff (by positivity : (L + 1 : ℝ) ≠ 0)).mpr
   have hrecip : (1 / (L + 1 : ℝ)) * (L + 1 : ℝ) = 1 := by field_simp

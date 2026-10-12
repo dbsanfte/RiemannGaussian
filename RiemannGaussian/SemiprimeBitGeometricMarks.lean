@@ -87,7 +87,7 @@ theorem marked_coeff_base {R : Type*} [CommRing R] (alpha : R) (s k : ℕ) :
     by_cases hk : k=0
     · subst k
       simp only [coeff_one_zero,snd_one,coeff_zero]
-    · simp only [coeff_one,if_neg hk,coeff_zero,snd_zero]
+    · simp only [coeff_one,ite_eq_right hk,coeff_zero,snd_zero]
   | succ s ih =>
     rw [rowPolynomial_succ,babyBasePolynomial_succ]
     cases k with
@@ -160,7 +160,7 @@ theorem coefficientSumBits_value (modulus x y : List Bool) :
     (bitValue (coefficientSumBits modulus x y).reduction.remainder : ZMod (bitValue modulus))=
       (bitValue x : ZMod (bitValue modulus))+(bitValue y : ZMod (bitValue modulus)) := by
   have ha := addBits_correct x y false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at ha
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at ha
   change (bitValue (divideBits (addBits x y false).bits modulus).remainder : ZMod (bitValue modulus))=_
   rw [(divideBits_correct _ _).2,ZMod.natCast_mod,ha,Nat.cast_add]
 
@@ -544,7 +544,7 @@ theorem markedInitLoop_exact {modulus : List Bool} (hN : 0<bitValue modulus)
       rw [hi] at ht
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       refine ⟨ht.1,ht.2.1,?_⟩
       change nextPower.word.interpret modulus::
         (markedInitLoop modulus alpha nextPower.word nextConstant.word decrement.result.bits).powers.map _=_
@@ -559,7 +559,7 @@ theorem markedInitLoop_exact {modulus : List Bool} (hN : 0<bitValue modulus)
     · have hn : n=0 := by have hz := counter_zero_of_clear hs; omega
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_neg hs,hn,List.range_zero,List.map_nil,Nat.add_zero]
+      simp only [dite_eq_right hs,hn,List.range_zero,List.map_nil,Nat.add_zero]
       exact ⟨hpower,hc,trivial⟩
 
 /-- The entire marked initializer has linear-in-count quadratic work,
@@ -610,7 +610,7 @@ theorem markedInitLoop_cost_width {W : ℕ} {modulus : List Bool}
         nlinarith only [hscan,hr,hsub,hmax,hneg.1,hnextPower.1,hnextConstant.1,hW]
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_pos hs,List.length_cons]
+      simp only [dite_eq_left hs,List.length_cons]
       refine ⟨?_,ht.2.1,ht.2.2.1,?_,?_,?_⟩
       · change (nonzeroBits remaining).clock+bitCost decrement.result+negative.clock+
           nextConstant.clock+nextPower.clock+
@@ -633,7 +633,7 @@ theorem markedInitLoop_cost_width {W : ℕ} {modulus : List Bool}
     · have hn : n=0 := by have hz := counter_zero_of_clear hs; omega
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_neg hs,hn,List.length_nil]
+      simp only [dite_eq_right hs,hn,List.length_nil]
       refine ⟨?_,hp,hc,trivial,trivial,?_⟩
       · simp only [Nat.zero_add,Nat.one_mul]
         nlinarith only [hscan,hr,hW]
@@ -667,7 +667,7 @@ theorem markedInitLoop_canonical {modulus : List Bool} (hN : 0<bitValue modulus)
         hnextPower hnextConstant rfl
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       refine ⟨ht.1,ht.2.1,?_⟩
       intro word hw
       rcases List.mem_cons.mp hw with hsame|htail
@@ -676,7 +676,7 @@ theorem markedInitLoop_canonical {modulus : List Bool} (hN : 0<bitValue modulus)
       · exact ht.2.2 word htail
     · rw [markedInitLoop]
       dsimp only
-      simp only [dif_neg hs]
+      simp only [dite_eq_right hs]
       exact ⟨hp,hc,by intro word hw; cases hw⟩
 
 /-- Every actual scalar circuit in one marked coefficient recurrence. -/
@@ -842,7 +842,7 @@ theorem markedCoefficientRunBits_exact {modulus : List Bool} (hN : 0<bitValue mo
     refine ⟨(markedCoefficientFrameBits modulus one top terminal power previous).coefficient.word::coefficients,?_,?_⟩
     · rw [markedCoefficientRunBits]
       dsimp only
-      rw [if_pos hframe.1]
+      rw [ite_eq_left hframe.1]
       simp only [hout,Option.map_some]
     · rw [List.map_cons,hframe.2,he,List.length_cons,List.range_succ_eq_map,List.map_cons,List.map_map]
       simp only [Nat.add_zero]
@@ -885,7 +885,7 @@ theorem markedCoefficientRunBits_cost_width {modulus : List Bool} (hN : 0<bitVal
     rw [markedCoefficientRunBits]
     dsimp only
     by_cases hgate : frame.inverse.unit.value=true
-    · rw [if_pos hgate]
+    · rw [ite_eq_left hgate]
       dsimp only
       refine ⟨?_,?_,?_⟩
       · change frame.clock+(markedCoefficientRunBits modulus one top terminal frame.coefficient.word powers).clock+8≤_
@@ -915,7 +915,7 @@ theorem markedCoefficientRunBits_cost_width {modulus : List Bool} (hN : 0<bitVal
           · subst word
             exact ⟨hf.2.1,hf.2.2.1⟩
           · exact hh.2 word htail
-    · rw [if_neg hgate]
+    · rw [ite_eq_right hgate]
       dsimp only
       refine ⟨?_,by simp only [List.length_cons,List.length_nil]; omega,?_⟩
       · have hframeCost : frame.clock≤12000*(W+1)^3 := hf.1
@@ -963,11 +963,11 @@ theorem markedInitLoop_width_exact {modulus : List Bool} (hN : 0<bitValue modulu
         (markedMulBits_width hN _ _) (markedMulBits_width hN _ _) rfl
       rw [markedInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       exact ht
     · rw [markedInitLoop]
       dsimp only
-      simp only [dif_neg hs]
+      simp only [dite_eq_right hs]
       exact ⟨hp,hc⟩
 
 /-- Complete actual original value/base coefficient source and diagnostics. -/

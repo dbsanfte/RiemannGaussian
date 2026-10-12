@@ -76,8 +76,8 @@ theorem term_add_nearCotangent (B : ℝ) {η : ℝ} (hη : 0 < η)
       nearSource B η s ρ + farTerm B η s ρ := by
   by_cases hd : ‖s - ρ.1‖ < η
   · have hz := Complex.ne_zero_of_re_pos (ZetaGaussianPoleRemainder.re_displacement_pos hs ρ)
-    simp only [nearCotangent, nearSource, nearRestrict, hd, if_true,
-      farTerm, not_le.mpr hd, if_false, add_zero]
+    simp only [nearCotangent, nearSource, nearRestrict, hd, ite_true,
+      farTerm, not_le.mpr hd, ite_false, add_zero]
     rw [source_eq _ hη hz (by linarith)]
     simp only [ZetaGaussianPoleRemainder.term, GaussianLaplacePoleRemainder.remainder]
     ring
@@ -110,7 +110,7 @@ theorem compensated_nonneg {B η : ℝ} (hB : 0 < B) (hη : 0 < η)
       field_simp
       ring
     rw [he] at hp
-    simp only [compensated, nearSource, nearRestrict, hd, if_true, Complex.mul_re,
+    simp only [compensated, nearSource, nearRestrict, hd, ite_true, Complex.mul_re,
       Complex.natCast_re, Complex.natCast_im, zero_mul, sub_zero]
     linarith
   · simp [compensated, nearSource, nearRestrict, nearPoisson, hd]
@@ -184,7 +184,7 @@ theorem compensated_at_ordinate (B : ℝ) {η : ℝ} (hη : 0 < η)
   have hs : 1 + I * (ρ.1.im : ℂ) + (η : ℂ) = ((1 + η : ℝ) : ℂ) + I * ρ.1.im := by
     push_cast
     ring
-  simp only [compensated, nearSource, nearRestrict, hd, if_true, nearPoisson,
+  simp only [compensated, nearSource, nearRestrict, hd, ite_true, nearPoisson,
     Complex.mul_re, Complex.natCast_re, Complex.natCast_im, zero_mul, sub_zero]
   rw [he, gaussian_source_real hη B hu (by linarith), hs,
     zetaGlobalPoissonSummand_at_ordinate ρ (by linarith : 1 ≤ 1 + η)]

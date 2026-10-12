@@ -220,7 +220,7 @@ to positive infinity without an absolute value around its summands. -/
 theorem pairedEtaLeadingFluxSignedPartialSum_tendsto_atTop_of_half_lt_re
     (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
     Tendsto (pairedEtaLeadingFluxSignedPartialSum rho) atTop atTop := by
-  simpa only [pairedEtaLeadingFluxSide, if_neg (not_le.mpr hrho), one_mul] using
+  simpa only [pairedEtaLeadingFluxSide, ite_eq_right (not_le.mpr hrho), one_mul] using
     pairedEtaLeadingFluxSignedPartialSum_tendsto_side_infinity_of_re_ne_half rho (ne_of_gt hrho)
 
 /-- The finite offset is eventually absorbed by half the proved power
@@ -247,7 +247,7 @@ theorem pairedEtaLeadingFluxSignedPartialSum_tendsto_atBot_of_re_lt_half
     (rho : NontrivialZetaZero) (hrho : rho.1.re < 1 / 2) :
     Tendsto (pairedEtaLeadingFluxSignedPartialSum rho) atTop atBot := by
   have h := pairedEtaLeadingFluxSignedPartialSum_tendsto_side_infinity_of_re_ne_half rho (ne_of_lt hrho)
-  simpa only [pairedEtaLeadingFluxSide, if_pos hrho.le, neg_one_mul, Function.comp_def, neg_neg] using
+  simpa only [pairedEtaLeadingFluxSide, ite_eq_left hrho.le, neg_one_mul, Function.comp_def, neg_neg] using
     tendsto_neg_atTop_atBot.comp h
 
 /-- Bounded signed partial sums characterize the critical line for this

@@ -181,7 +181,7 @@ not depend on the largest selected prime or the number of selected primes. -/
 theorem prod_one_add_primeSquareWeight_le (Q : Finset ℕ) {σ : ℝ} (hσ : 1 / 2 < σ) :
     (∏ p ∈ Q, (1 + zetaPrimeExpWeight σ p ^ 2)) ≤ Real.exp (primeSquareWeightMass σ) := by
   calc
-    _ ≤ ∏ p ∈ Q, Real.exp (zetaPrimeExpWeight σ p ^ 2) := Finset.prod_le_prod
+    _ ≤ ∏ p ∈ Q, Real.exp (zetaPrimeExpWeight σ p ^ 2) := Finset.prod_le_prod₀
       (fun p _ ↦ by positivity)
       (fun p _ ↦ by simpa only [add_comm] using Real.add_one_le_exp (zetaPrimeExpWeight σ p ^ 2))
     _ = Real.exp (∑ p ∈ Q, zetaPrimeExpWeight σ p ^ 2) := (Real.exp_sum _ _).symm
@@ -200,17 +200,17 @@ theorem sum_primeSquareIntersection_weight_le (W Q : Finset ℕ)
       (∏ p ∈ W, (1 + w p)) * Real.exp (primeSquareWeightMass σ) := by
     calc
       _ ≤ ∏ p ∈ Q, ((if p ∈ W then 1 + w p else 1) * (1 + w p ^ 2)) := by
-        apply Finset.prod_le_prod
+        apply Finset.prod_le_prod₀
         · intro p _
           split_ifs <;> nlinarith [hw p, sq_nonneg (w p)]
         · intro p _
-          by_cases hp : p ∈ W <;> simp only [hp, if_true, if_false]
+          by_cases hp : p ∈ W <;> simp only [hp, ite_true, ite_false]
           · nlinarith [hw p, sq_nonneg (w p), mul_nonneg (hw p) (sq_nonneg (w p))]
           · simp
       _ = (∏ p ∈ Q ∩ W, (1 + w p)) * ∏ p ∈ Q, (1 + w p ^ 2) := by
         rw [Finset.prod_mul_distrib, Finset.prod_ite_mem]
       _ ≤ (∏ p ∈ W, (1 + w p)) * Real.exp (primeSquareWeightMass σ) := mul_le_mul
-        (Finset.prod_le_prod_of_subset_of_one_le Finset.inter_subset_right
+        (Finset.prod_le_prod_of_subset_of_one_le₀ Finset.inter_subset_right
           (fun p _ ↦ by linarith [hw p]) (fun p _ _ ↦ by linarith [hw p]))
         (prod_one_add_primeSquareWeight_le Q hσ)
         (Finset.prod_nonneg (fun p _ ↦ by positivity)) (Finset.prod_nonneg (fun p _ ↦ by linarith [hw p]))
@@ -284,7 +284,7 @@ theorem prod_one_add_primeSquareCorrectedWeight_le (S : Finset ℕ) (R : ℕ)
     rw [he]
     exact add_le_add hfirst (sum_primeSquareWeight_le S hσ)
   calc
-    _ ≤ ∏ p ∈ S, Real.exp (2 * primeSquareCorrectedWeight σ p) := Finset.prod_le_prod
+    _ ≤ ∏ p ∈ S, Real.exp (2 * primeSquareCorrectedWeight σ p) := Finset.prod_le_prod₀
       (fun p _ ↦ by linarith [primeSquareCorrectedWeight_nonneg σ p])
       (fun p _ ↦ by simpa only [add_comm] using Real.add_one_le_exp (2 * primeSquareCorrectedWeight σ p))
     _ = Real.exp (2 * ∑ p ∈ S, primeSquareCorrectedWeight σ p) := by rw [← Real.exp_sum, Finset.mul_sum]

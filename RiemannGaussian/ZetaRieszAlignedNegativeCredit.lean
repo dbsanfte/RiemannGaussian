@@ -130,14 +130,14 @@ theorem signedRest_eq_remainder_sub_alignedReserve_add_leakage
   intro m _
   by_cases hc : alignedPair X N S (fun n => u^(N+1)*primeWeight A L y N n 1) f y n m
   · have ha := alignedPair_not_creditedPair X N S _ f y n m hc
-    simp only [if_pos hc,if_neg ha,if_pos (Or.inr hc),if_pos hc.1]
+    simp only [ite_eq_left hc,ite_eq_right ha,ite_eq_left (Or.inr hc),ite_eq_left hc.1]
     rw [weight_eq_amplitude A L u y N n,weight_eq_amplitude A L u y N m]
     ring
   · by_cases ha : creditedPair X N S (fun n => u^(N+1)*primeWeight A L y N n 1) f y n m
-    · simp only [if_pos ha,if_neg hc,if_pos (Or.inl ha)]
+    · simp only [ite_eq_left ha,ite_eq_right hc,ite_eq_left (Or.inl ha)]
       ring
     · have hnone := not_or.mpr ⟨ha,hc⟩
-      simp only [if_neg ha,if_neg hc,if_neg hnone]
+      simp only [ite_eq_right ha,ite_eq_right hc,ite_eq_right hnone]
       split_ifs <;> ring
 
 /-- Both signs of joined Gram are handled in ONE exact whole-energy ledger. -/
@@ -207,7 +207,7 @@ theorem alignedLeakage_bound (X N : ℕ) (A S : Finset ℕ) (f : ℕ → ℝ) {y
       C*(if logNear (phaseOffsets y N) (antiphaseWidth y N) n m then
         ((n.divisors.card : ℝ)/(n : ℝ))*((m.divisors.card : ℝ)/(m : ℝ)) else 0) := by
     by_cases hc : alignedPair X N S w f y n m
-    · rw [if_pos hc,if_pos hc.2.1]
+    · rw [ite_eq_left hc,ite_eq_left hc.2.1]
       have hn0 := (Finset.mem_Icc.mp (hS hn)).1
       have hm0 := (Finset.mem_Icc.mp (hS hm)).1
       have ha0 := amplitude_nonneg A hL hu N n
@@ -232,7 +232,7 @@ theorem alignedLeakage_bound (X N : ℕ) (A S : Finset ℕ) (f : ℕ → ℝ) {y
               (mul_nonneg (mul_nonneg (mul_nonneg ha0 hb0) (neg_nonneg.mpr hc.2.2.le)) (sq_nonneg _)) (by norm_num)
         _ ≤ _ := hb
         _ = _ := by dsimp [C]; ring
-    · rw [if_neg hc]
+    · rw [ite_eq_right hc]
       split_ifs <;> positivity
   have hb : alignedLeakage X N A S L u y f ≤ C*P := by
     calc

@@ -273,7 +273,7 @@ lemma CfAnalytic {r R : ℝ} {f : ℂ → ℂ}
         filter_upwards [ hh_w_eq.2, hh_w_analytic.continuousAt.eventually_ne hh_w_w_ne_zero ] with z hz hz';
         by_cases h : z = w
         · subst h
-          rw [dif_pos w_in_zeros]
+          rw [dite_eq_left w_in_zeros]
           congr 1
           exact hh_w_eq.1
         · have z_not_in : z ∉ SetOfZeros r f := by
@@ -281,7 +281,7 @@ lemma CfAnalytic {r R : ℝ} {f : ℂ → ℂ}
             have hfz : f z = 0 := hmem.2
             rw [hz] at hfz
             exact absurd hfz (mul_ne_zero (pow_ne_zero _ (sub_ne_zero_of_ne h)) hz')
-          rw [dif_neg z_not_in, hz]
+          rw [dite_eq_right z_not_in, hz]
           have hw_mem : w ∈ finite_zeros_mono.toFinset := finite_zeros_mono.mem_toFinset.mpr w_in_zeros
           rw [Finset.prod_eq_prod_sdiff_singleton_mul hw_mem (fun ρ => (z - ρ) ^ analyticOrderNatAt f ρ)]
           rw [mul_comm ((z - w) ^ analyticOrderNatAt f w) (h_w z)]
@@ -361,7 +361,7 @@ lemma norm_fOfZero_le_norm_BlaschkeOfZero {r R : ℝ} {f : ℂ → ℂ}
   rw [BlaschkeOfZero r_pos r_lt_one r_lt_R finiteZeros hf_neq_zero_at_zero, ← mul_one ‖f 0‖]
   refine mul_le_mul (by rw[mul_one]) ?_ (zero_le_one) (mul_nonneg (norm_nonneg (f 0)) zero_le_one)
   rw [← Finset.prod_const_one (s := (finiteSetOfZeros_mono r_lt_one finiteZeros).toFinset)]
-  apply Finset.prod_le_prod
+  apply Finset.prod_le_prod₀
   · intro ρ hρ
     exact zero_le_one
   · intro ρ hρ
@@ -466,7 +466,7 @@ theorem ZerosBound {B r R : ℝ} {f : ℂ → ℂ}
       = ∏ ρ ∈ (finiteSetOfZeros_mono r_lt_one finiteZeros).toFinset, (R / r) ^ analyticOrderNatAt f ρ := by
         rw [Finset.prod_pow_eq_pow_sum]
     _ ≤ ∏ ρ ∈ (finiteSetOfZeros_mono r_lt_one finiteZeros).toFinset, (R / ‖ρ‖) ^ analyticOrderNatAt f ρ := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro ρ _
         exact pow_nonneg (div_nonneg (le_of_lt R_pos) (le_of_lt r_pos)) _
       · intro ρ hρ

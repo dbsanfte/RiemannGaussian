@@ -111,7 +111,8 @@ def build_family_index():
               "the opt-in root is [NumericalCertificate.lean](../../NumericalCertificate.lean). "
               "See [certificate status and verification](../numerical-certificate.md). "
               "External dependency sources, licenses and provenance are kept under "
-              "[vendor/zeta23](../../vendor/zeta23/); Lean and mathlib are external "
+              "[vendor/zeta23](../../vendor/zeta23/) and "
+              "[vendor/openai-quasi-rh](../../vendor/openai-quasi-rh/); Lean and mathlib are external "
               "boundary nodes in the explorer, rather than project source modules.", ""]
     outputs[target / "README.md"] = "\n".join(index).encode()
     outputs[target / "index.json"] = json_bytes({
@@ -136,14 +137,14 @@ def build_family_index():
     return outputs
 
 
-def build(*, raw_path=None, metadata=None, status_data=None):
+def build(*, raw_path=None, metadata=None, status_data=None, source_overrides=None, manifest_data=None):
     raw_bytes = (raw_path or ROOT / ".lake/theorem-explorer/lean-graph.json").read_bytes()
     raw = json.loads(raw_bytes)
     meta_bytes = json_bytes(metadata) if metadata is not None else (SITE / "metadata.json").read_bytes()
     meta = json.loads(meta_bytes)
     status_bytes = json_bytes(status_data) if status_data is not None else (ROOT / "docs/proof-status.json").read_bytes()
     status = json.loads(status_bytes)
-    manifest = json.loads((ROOT / "lake-manifest.json").read_bytes())
+    manifest = manifest_data if manifest_data is not None else json.loads((ROOT / "lake-manifest.json").read_bytes())
     assert raw["leanVersion"] == status["leanVersion"], "Lean versions differ"
     for key in ("projectAxioms", "placeholderDependentDeclarations"):
         assert status[key] == 0, f"Failed project audit: {key}"
@@ -220,7 +221,7 @@ def build(*, raw_path=None, metadata=None, status_data=None):
             path = ROOT / source_path
             assert path.is_file(), f"Missing project source: {source_path}"
             if source_path not in project_sources:
-                content = path.read_bytes()
+                content = (source_overrides or {}).get(source_path, path.read_bytes())
                 project_sources[source_path] = content.decode()
                 source_hashes[source_path] = digest(content)
             if location:
@@ -303,7 +304,7 @@ def build(*, raw_path=None, metadata=None, status_data=None):
         "toolkits": {k: v for k, v in status.items() if isinstance(v, dict)}
     }
     document_paths = {p for n in nodes for p in n["documentation"]}
-    for key in ("certificateVerification", "guideDocument", "metadataOrigin", "scopeHeading", "campaign"):
+    for key in ("certificateVerification", "guideDocument", "metadataOrigin", "scopeHeading", "campaign", "sourceRevision"):
         if key in meta:
             data[key] = meta[key]
     document_paths.update(e["documentation"] for e in endpoints)

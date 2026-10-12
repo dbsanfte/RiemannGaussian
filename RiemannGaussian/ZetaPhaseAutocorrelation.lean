@@ -38,7 +38,7 @@ theorem zetaPhaseReturnCorrelation_zero {N : ℕ} (c : Fin (N + 1) → ℝ) :
   have he (i j : Fin (N + 1)) : Nat.dist i.val j.val = 0 ↔ i = j :=
     ⟨fun h ↦ Fin.ext (Nat.eq_of_dist_eq_zero h), fun h ↦ by simp [h, Nat.dist_self]⟩
   simp only [zetaPhaseReturnCorrelation, he, Finset.sum_ite_eq, Finset.mem_univ,
-    if_true, ← pow_two]
+    ite_true, ← pow_two]
 
 /-- Exact grouping of a phase Gram by lag, before any bounds are taken. -/
 theorem zetaPhase_gram_eq_returnCorrelation (a ω : ℕ → ℝ) {N : ℕ}

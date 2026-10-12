@@ -63,7 +63,7 @@ private theorem shell_sum (M X N : ℕ) (c y : ℝ) (f : ℕ→ℝ) :
       simp only [shellWeight,hm,false_and,ite_false,zero_mul])]
   apply Finset.sum_congr rfl
   intro a ha
-  rw [shellWeight,if_pos (Finset.mem_Ioc.mp ha),ownerTest_nat]
+  rw [shellWeight,ite_eq_left (Finset.mem_Ioc.mp ha),ownerTest_nat]
 
 /-- A complete dyadic row has a signed comparison for ROW + HEAD.
 Taking separate positive costs for its composite counts is unnecessary. -/
@@ -502,8 +502,8 @@ theorem eventually_nativeHead_eq_prime_pairs {u : ℝ} (hu : 1/2<u)
       have hrp := Nat.mem_primesLE.mp hr
       have he := (Nat.prime_dvd_prime_iff_eq hrp.2 hqp).mp hrq
       omega
-    rw [if_pos hqp,sieve,if_pos ⟨hqp.squarefree,hrest⟩,mul_one,if_pos hqp,ownerTest_nat]
-  · simp only [if_neg hqp]
+    rw [ite_eq_left hqp,sieve,ite_eq_left ⟨hqp.squarefree,hrest⟩,mul_one,ite_eq_left hqp,ownerTest_nat]
+  · simp only [ite_eq_right hqp]
 
 /-- The exact original native count crop, on the same complete rows. -/
 def rows (u : ℝ) (j : ℕ) : Finset (ℕ×ℕ) :=
@@ -648,7 +648,7 @@ theorem eventually_labels_subset_native {u : ℝ} (hu : 1/2<u)
     have hqle q (hq : q∈(p*a).primeFactors) : q≤p := by
       rw [← hmax]
       have he : (p*a).primeFactors.Nonempty := ⟨q,hq⟩
-      rw [largestPrime,dif_pos he]
+      rw [largestPrime,dite_eq_left he]
       exact Finset.le_max' _ _ hq
     have hphys : ∀ q∈(p*a).primeFactors,
         q<(ZetaVaughanCutoffBudget.linearDampedCutoff u (dyadicMomentOrder j)+2)^2 :=
@@ -820,7 +820,7 @@ private theorem subset_prefix_eq (A D : Finset ℕ) (X : ℕ) (L u y : ℝ) (N :
     simp only [hp.primeFactors,Finset.card_singleton] at h
     omega
   simp only [ZetaRieszComplexProjection.sourceWeight,residualCoefficient,
-    SquarefreeVaughanLogSource.coefficient,if_pos (And.intro (hs n hn) hnp)]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro (hs n hn) hnp)]
   push_cast
   ring
 

@@ -436,10 +436,10 @@ theorem analyticMultiplicity_mul_positivePartHeat_eq_zetaUpperSummand
       zetaUpperHyperbolicHeatSummand z tau rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · rw [upperHalfPlanePositivePartHeatIntegrand_eq_of_im_pos
-      hz hupper htau, zetaUpperHyperbolicHeatSummand, if_pos hupper]
+      hz hupper htau, zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
   · rw [upperHalfPlanePositivePartHeatIntegrand_eq_zero_of_im_nonpos
       hz (le_of_not_gt hupper) htau,
-      zetaUpperHyperbolicHeatSummand, if_neg hupper]
+      zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
     simp
 
 /-- The radial sum of multiplicity-weighted positive-part heat terms is the

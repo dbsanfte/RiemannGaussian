@@ -76,7 +76,7 @@ theorem atom_hasDerivAt {P : ℕ} (hP : P ≠ 0) {s : ℂ} (hs : 0 < s.re) :
   have hdiff : DifferentiableAt ℂ (fun z ↦ atom z P) s := by
     rw [he]
     exact .fun_finsetProd hd
-  have hl := logDeriv_prod hn hd
+  have hl := logDeriv_fun_prod hn hd
   rw [← he, logDeriv_apply] at hl
   have hlocal (p : ℕ) (hp : p ∈ P.primeFactors) :
       logDeriv (fun z ↦ atom z p) s = -(Real.log p : ℂ) * (1 - atom s p) := by
@@ -97,10 +97,10 @@ theorem atom_prime_insertion {p P : ℕ} (hp : p.Prime) (s : ℂ) :
     atom s (Nat.lcm p P) =
       atom s P * (atom s p + if p ∣ P then 1 - atom s p else 0) := by
   by_cases hd : p ∣ P
-  · rw [Nat.lcm_eq_right hd, if_pos hd]
+  · rw [Nat.lcm_eq_right hd, ite_eq_left hd]
     ring
   · have hc : p.Coprime P := hp.coprime_iff_not_dvd.mpr hd
-    rw [hc.lcm_eq_mul, (atom_multiplicative s).map_mul_of_coprime hc, if_neg hd]
+    rw [hc.lcm_eq_mul, (atom_multiplicative s).map_mul_of_coprime hc, ite_eq_right hd]
     ring
 
 /-- The complete prime-inserted bilinear Euler matrix. -/

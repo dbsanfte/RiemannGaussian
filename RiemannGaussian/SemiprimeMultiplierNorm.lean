@@ -200,8 +200,8 @@ theorem recoverInterval_of_local_root {p q L b t : ℕ} (hp : p.Prime) (hq : q.P
       hcover hkl _ _ hu.unit hu.unit_spec hP hQ
     refine ⟨d,?_⟩
     simp only [recoverInterval,hz,ZMod.val_zero,Nat.gcd_zero_right]
-    rw [if_neg (by omega)]
-    simp only [ite_true,dif_pos hu]
+    rw [ite_eq_right (by omega)]
+    simp only [ite_true,dite_eq_left hu]
     exact hd
   · have hproper : ProperDivisor (p*q) ((p*q).gcd
         (intervalProduct (alpha : ZMod (p*q)) (x : ZMod (p*q)) L).val) := by
@@ -215,7 +215,7 @@ theorem recoverInterval_of_local_root {p q L b t : ℕ} (hp : p.Prime) (hq : q.P
     refine ⟨(p*q).gcd (intervalProduct (alpha : ZMod (p*q)) (x : ZMod (p*q)) L).val,?_⟩
     unfold recoverInterval
     dsimp only
-    rw [if_pos ⟨hproper.1,hproper.2.1⟩]
+    rw [ite_eq_left ⟨hproper.1,hproper.2.1⟩]
 
 /-- Every failed long quarter window has a recoverable signed centre
 using the exact norm and its two derivatives. -/

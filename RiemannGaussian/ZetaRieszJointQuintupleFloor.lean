@@ -118,7 +118,7 @@ theorem five_coefficient_bounds {p q r a b : ℕ}
     ZetaRieszSemiprimePrefixDecay.riesz_semiprime_eq_tent _ ha hb hab] at he
   have hnonprime : ¬(p*(q*(r*(a*b)))).Prime := Nat.not_prime_mul hp.ne_one
     (fun he => hq.ne_one (mul_eq_one.mp he).1)
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnonprime⟩,Complex.ofReal_re,he]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnonprime⟩,Complex.ofReal_re,he]
   have ht : 0 ≤ Real.log (p*(q*(r*(a*b))) : ℕ)/L :=
     div_nonneg (Real.log_natCast_nonneg _) hL.le
   constructor
@@ -225,7 +225,8 @@ theorem five_residual_bounds_core (j : ℕ) (hj : 64 ≤ j) {u : ℝ} (hu : 1/2 
   rw [← he] at hbound
   simp only [residualCoefficient,Complex.mul_re,Complex.ofReal_re,Complex.ofReal_im,zero_mul,sub_zero]
   constructor
-  · convert mul_le_mul_of_nonneg_left hbound.1 ht using 1 <;> first | rfl | ring
+  · convert mul_le_mul_of_nonneg_left hbound.1 ht using 1
+    first | rfl | ring
   · exact mul_nonpos_of_nonneg_of_nonpos ht hbound.2
 
 /-- The stronger literal length premise holds eventually on the

@@ -90,7 +90,6 @@ theorem pairedEtaTopPrefixFiniteZeroWindowBlock_frobSq_eq_pairCorrelationMass
       (fun rho ↦ (analyticZetaZeroMultiplicity rho : ℝ))
       (pairedEtaTopPrefixFiniteCutoffFamilyFeature cutoff)
   convert h using 1
-  all_goals norm_cast
 
 /-- The previously named coherent entrywise mass is exactly the signed
 zero-pair correlation mass. -/

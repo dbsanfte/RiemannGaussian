@@ -137,7 +137,7 @@ theorem coefficient_eq_response {k : ℕ} (hk : 2 ≤ k) {v y L : ℝ}
     Int.cast_pow,Int.cast_neg,Int.cast_one,
     riesz_prime_mul (Real.log (p*a : ℕ)-L) hpp hpd] at href
   rw [show Real.log (p*a : ℕ)-L-Real.log p = Real.log a-L by rw [hl]; ring] at href
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,href]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,href]
   congr 1
   dsimp only [response]
   ring

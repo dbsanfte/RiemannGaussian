@@ -18,6 +18,7 @@ jobs:
           python3 scripts/numerical_certificate.py
           python3 scripts/test_numerical_certificate_build.py
           python3 scripts/test_numerical_certificate_scheduler.py
+          python3 scripts/test_numerical_certificate_checkpoint.py
           python3 scripts/test_git_hook_environment.py
       - name: Reject unfinished Lean proofs
         shell: bash
@@ -35,6 +36,19 @@ jobs:
         with:
           path: vendor/zeta23/.lake/build
           key: zeta23-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/zeta23/lakefile.toml', 'vendor/zeta23/lake-manifest.json', 'vendor/zeta23/Zeta23.lean', 'vendor/zeta23/Zeta23/**/*.lean') }}
+      - name: Cache the pinned OpenAI proof closure
+        uses: actions/cache@v5
+        with:
+          path: vendor/openai-quasi-rh/.lake/build
+          key: openai-quasi-rh-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/openai-quasi-rh/lakefile.toml', 'vendor/openai-quasi-rh/upstream-pin.json') }}
+      # The cold carry-cell proof used about 5.4 GiB resident memory locally.
+      # Leave headroom for concurrent dependencies on the hosted runner.
+      - name: Provide memory headroom for cold proof builds
+        run: |
+          sudo fallocate -l 8G /swapfile-riemann
+          sudo chmod 600 /swapfile-riemann
+          sudo mkswap /swapfile-riemann
+          sudo swapon /swapfile-riemann
       # Lean source/tactic linters report warnings.  `--wfail`, together with
       # `warningAsError` in lakefile.toml, makes every such diagnostic fail CI.
       - name: Build and enforce Lean lints
@@ -45,6 +59,12 @@ jobs:
       - name: Run whole-project declaration linters
         shell: bash
         run: lake env lean -DwarningAsError=true scripts/LintProject.lean
+      - name: Verify the pinned OpenAI proof and unconditional root-chain discharge
+        shell: bash
+        run: |
+          python3 scripts/verify_openai_quasi_rh.py
+          lake build OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion --wfail
+          lake env lean -DwarningAsError=true scripts/CheckQuasiRHIntegration.lean
       - name: Check optional data ownership with tiny Lean probes
         run: python3 scripts/test_numerical_certificate_build_config.py
       - name: Verify Lean-derived project dashboard

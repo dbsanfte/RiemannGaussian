@@ -14,94 +14,35 @@ repository's verification gates count as established results.
 
 ## Proved Zero-Free Region
 
-[![Zero-free region comparison: coloured benchmark boundaries with our independently proved region overlaid, including a magnified right-edge view](docs/zero-free-regions/comparison.svg)](docs/zero-free-regions/comparison.svg)
+[![Zero-free region comparison: independent native analytic bounds with a magnified right-edge view](docs/zero-free-regions/comparison.svg)](docs/zero-free-regions/comparison.svg)
 
-**Coral shows our independently proved region.** Within the grey
-Lean-checked interval, it extends beyond the combined benchmark regions
-(blue, purple and green). Click the graph to enlarge it. Eventual components
-with unevaluated starting heights are stated below and are not plotted.
-[Graph data, sources and scope](docs/zero-free-regions/README.md)
+This comparison records the independent native analytic bounds. The stronger
+imported OpenAI half-plane is stated below.
+[Comparison data, sources and scope](docs/zero-free-regions/README.md)
 · [Graph proof audit](docs/zero-free-regions/audit.json).
 
-**Proved in Lean at every height:** every nontrivial zeta zero obeys
+**The project now imports OpenAI's all-height `7/8` nonvanishing proof**, pinned
+at revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a` and rebuilt with the
+ordinary Lean root. For the meromorphic zeta function, its region is
 
 <table>
 <tr><td>
 
 ```math
-\boxed{\begin{gathered}
-\rho=\beta+it,\qquad L(t)=\log(|t|+2),
-\\[2pt]
-C_1(L)=L+2052\log L+30240,
-\\[2pt]
-C_2(L)=L+1995\log L+29400,
-\\[4pt]
-d_1(t)=\min\!\left\{\frac{1}{450000},\frac{221}{250C_1(L(t))}\right\},
-\\[2pt]
-d_2(t)=\min\!\left\{\frac{1}{40500},\frac{1547}{1800C_2(L(t))}\right\},
-\\[2pt]
-P(L)=45750\max\{13/10,L\}-35725,
-\\[2pt]
-r_1(t)=\frac{792}{7625L(t)-2000},
-\\[2pt]
-r_2(t)=\min\!\left\{\frac{4}{39},\frac{4752}{P(L(t))}\right\},
-\\[2pt]
-d(t)=\max\{r_1(t),r_2(t),d_1(t),d_2(t)\},
-\\[4pt]
-d(t)\lt\beta\lt 1-d(t).
-\end{gathered}}
+\boxed{\Re(s)>\frac78,\quad s\ne1
+\quad\Longrightarrow\quad\zeta(s)\ne0.}
 ```
 
 </td></tr>
 </table>
 
-The complete endpoint preserves the stronger signed-pole/reserve proof at
-modest heights and both Gaussian proofs at larger heights. Literal zeta
-nonvanishing includes the closed right edge, with the pole `s = 1` excluded.
-[Lean proof: exact_strip](RiemannGaussian/ZetaUnifiedZeroFree.lean)
-· [Complete coverage and arithmetic consequences](docs/zeta-unified-zero-free.md).
-
-The [Lean comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
-now extends through **log-height 480,000**, from the earlier exact crossover.
-The [literature-frontier table](docs/zero-free-literature-frontier.md) records
-the full interval and source scope. This is a certified interval;
-coverage of every benchmark at every height remains open.
-
-**Proved eventual union, now including Vinogradov–Korobov:**
-
-<table>
-<tr><td>
-
-```math
-\boxed{\begin{gathered}
-0\lt A\lt \frac{22\pi}{1525\log 2},
-\\[2pt]
-\frac1{1150}\le C\lt\frac{3\pi}{10640},\qquad \exists\,T(A,C)\ge 4,
-\\[4pt]
-w_C(t)=\frac{C}{L(t)^{2/3}(\log L(t))^{1/3}},
-\\[4pt]
-D_{A,C}(t)=\max\!\left\{d(t),\ A\frac{\log\log|t|}{\log|t|},\ w_C(t)\right\},
-\\[4pt]
-|t|\ge T(A,C)\quad\Longrightarrow
-\\[4pt]
-D_{A,C}(t)\lt \beta\lt 1-D_{A,C}(t).
-\end{gathered}}
-```
-
-</td></tr>
-</table>
-
-Every arithmetic and analytic premise is discharged, and literal zeta
-nonvanishing includes the closed right edge. **The eventual starting height
-has not been numerically evaluated.** Summing the scale-dependent Dirichlet savings gives the classical
-two-thirds logarithmic growth factor; signed angular control and a joint
-degree and height schedule give the displayed VK family.
-It eventually exceeds every fixed earlier log-log coefficient, but its constant
-does not match published VK benchmarks. The interior strip and RH remain open.
-
-[Lean proof: complete eventual union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean)
-· [Constants, joint height schedule and scope](docs/vinogradov-zero-free.md)
-· [Explore the new VK proof](https://dbsanfte.github.io/RiemannGaussian/#endpoint=vk-region).
+The bound is strict at `7/8` and has no height threshold. This is an attributed
+external result. It discharges the exact frozen Riesz `NoPersistentError`
+condition and supplies the complete coupled geometric estimate. Full RH and
+the original native carrier floor/ceiling remain open.
+[Lean composition](RiemannGaussian/ZetaQuasiRHOpenAI.lean)
+· [Scope, source pins and verification](docs/zeta-riesz-quasi-rh-discharge.md)
+· [Explore the imported discharge](https://dbsanfte.github.io/RiemannGaussian/#endpoint=openai-quasi-rh).
 
 ### [▶ Open the interactive theorem explorer](https://dbsanfte.github.io/RiemannGaussian/)
 
@@ -112,6 +53,11 @@ Zoom, expand branches, inspect theorem metadata and open exact Lean source lines
 · [Proof audit](docs/theorem-explorer/audit.json)
 · [Reproduce locally](docs/theorem-explorer.md).
 
+The independent native explicit and eventual bounds remain documented in
+[the unified region](docs/zeta-unified-zero-free.md) and
+[the Vinogradov–Korobov union](docs/vinogradov-zero-free.md), with their exact
+threshold scopes.
+
 ## Proved Numerical Certificate: 67.31%
 
 [![Numerical certificate verification](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml)
@@ -121,6 +67,10 @@ line**, in every sufficiently large cumulative `(0, T]` and dyadic `(T, 2T]`
 window. The denominator counts analytic multiplicity; **the starting height
 is unevaluated**. This improves Anthropic/Zeta23's two-thirds certificate,
 including its stronger underlying coefficient of approximately **67.25007%**.
+
+The published checkpoint was verified with Lean 4.33.1. Its frozen input
+fingerprint remains checked; the complete optional audit under the project's
+new Lean 4.34.1 toolchain is pending.
 
 ### [▶ Explore the 67.31% certificate proof](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
 
@@ -141,7 +91,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Study the global Suzuki signal and complete Gaussian/Weil correlation using actual integer arithmetic. The first target is an independent one-sided subexponential bound for the signed Suzuki signal; the checked Landau criterion would then imply RH for all multiplicities. The Riesz branch is frozen at its terminal non-coherence reduction. Finite-height zero-free coverage remains a separate track.
+Study the global Suzuki signal and complete Gaussian/Weil correlation using actual integer arithmetic. An independent one-sided subexponential bound for the signed Suzuki signal would imply RH for all multiplicities through the checked Landau criterion. OpenAI's imported 7/8 baseline discharges the restricted Riesz terminal. The original carrier bounds and the remaining RH interval are open. Finite-height coverage remains a separate track.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +99,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Carry Mellin jets checked; the joined statistic is a Chebyshev test.** The actual fourth-order expansion and exact coefficient series are proved. Their explicit exceptional equation identifies when a fixed asymmetric code retains a cofinal source. The complete signed carry statistic is exactly one twisted Chebyshev test with every prime power retained.
-Universal determinant nonvanishing and an independent signed prime bound remain open. Carry and gcd reindexings alone supply no further size constraint; this estimation route is stopped pending new arithmetic input.
-[Current checked endpoint](RiemannGaussian/SuzukiCarryCollapseAudit.lean#L211)
-· [Proof details](docs/suzuki-carry-collapse.md).
+**Operator source audits and the OpenAI 7/8 baseline published.** In the original near-one strip, the all-jet carry source detector is closed. Native Kummer, divisor-exchange and Gaussian cofactor audits identify scoped failed estimates while preserving exact masks. OpenAI's pinned 7/8 proof discharges the restricted frozen Riesz endpoint after the Lean 4.34.1 migration.
+The remaining all-height strip is 1/2 < Re(rho) <= 7/8. An independent source-sensitive signed arithmetic estimate remains open; the new audits do not prove RH or a further zero-free region.
+[Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
+· [Proof details](docs/arithmetic-operator-research.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -162,7 +112,7 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Complete zero-free region** | The all-height region, the eventual Littlewood/VK union, both reflected edges, and the existing explicit-region arithmetic radius. Threshold scope is stated above. | [explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean), [eventual union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeUnifiedRegion.lean) |
+| **Zero-free proof chain** | The pinned OpenAI all-height `7/8` proof and frozen Riesz discharge, alongside independent native explicit and eventual Littlewood/VK bounds. | [OpenAI composition](RiemannGaussian/ZetaQuasiRHOpenAI.lean), [native explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean), [native eventual union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean) |
 | **67.31% numerical certificate** | At least 67.31% of zeros are simple and on the critical line in sufficiently large cumulative and dyadic windows. The threshold is unevaluated; exhaustive verification is optional. | [literal-count certificate](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
@@ -292,7 +242,8 @@ is trusted until it has been re-derived in Lean and passed every gate.
 
 ## Build and Check
 
-The project is pinned to Lean 4.33.1 and Mathlib 4.33.1. With
+The project is pinned to Lean 4.34.1 and Mathlib revision
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. With
 [elan](https://github.com/leanprover/elan) installed, run from the repository
 root:
 
@@ -343,5 +294,6 @@ RiemannGaussian is licensed under the [Apache License, Version 2.0](LICENSE)
 (`Apache-2.0`). Third-party source retains its original copyright and
 attribution notices; see the notices for
 [Zeta23](vendor/zeta23/NOTICE),
+[OpenAI's Quasi RH proof and analytic dependencies](vendor/openai-quasi-rh/README.md),
 [HermitianRankTrace](RiemannGaussian/HermitianRankTrace/NOTICE), and
 [MontgomeryVaughan](RiemannGaussian/MontgomeryVaughan/NOTICE).

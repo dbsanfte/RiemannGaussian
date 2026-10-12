@@ -39,8 +39,8 @@ theorem zetaMoebiusDistinctPrimeCoefficient_eq_sieve_add_remainder (D : ℕ) (S 
     have he := zetaMoebiusLogTailCoefficient_eq_primePower_add_distinct D n
     have hn' : ∃ P ∈ S, P ∣ n := ⟨P, hP, hPn⟩
     simp only [zetaMoebiusSieveCoefficient, zetaMoebiusSievedPrimeCoefficient, hn',
-      not_true_eq_false, if_true, if_false, add_zero]
-    simpa only [zetaMoebiusTailPrimePowerCoefficient, if_neg hnprime, zero_add] using he.symm
+      not_true_eq_false, ite_true, ite_false, add_zero]
+    simpa only [zetaMoebiusTailPrimePowerCoefficient, ite_eq_right hnprime, zero_add] using he.symm
   · simp [zetaMoebiusSieveCoefficient, zetaMoebiusSievedPrimeCoefficient, hn]
 
 /-- The original filtered distinct-prime sum in its multiplicative kernel form. -/
@@ -145,7 +145,7 @@ theorem zetaMoebiusSievedPrimeCoefficient_support (D H n : ℕ)
     by_contra h
     simp [zetaMoebiusSievedPrimeCoefficient, h] at hn
   have hd : zetaMoebiusDistinctPrimeCoefficient D n ≠ 0 := by
-    simpa only [zetaMoebiusSievedPrimeCoefficient, if_pos hS] using hn
+    simpa only [zetaMoebiusSievedPrimeCoefficient, ite_eq_left hS] using hn
   obtain ⟨hlarge, hprimes⟩ := zetaMoebiusDistinctPrimeCoefficient_support D n hd
   exact ⟨hlarge, hprimes, fun _ _ hp hq hpq hpn hqn ↦
     zetaMoebiusSieveHead_survivor_prime_pair hS hp hq hpq hpn hqn⟩

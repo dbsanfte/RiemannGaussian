@@ -57,7 +57,7 @@ theorem markedCount_eq_zero_of_not_squarefree (S : Finset ℕ) {P : ℕ}
     (hP : ¬Squarefree P) (N : ℕ) : markedCount S P N = 0 := by
   apply Finset.sum_eq_zero
   intro n _
-  apply if_neg
+  apply ite_eq_right
   rintro ⟨hn, _, hd⟩
   exact hP (hn.squarefree_of_dvd hd)
 
@@ -66,7 +66,7 @@ theorem markedCount_eq_zero_of_sieve_hit (S : Finset ℕ) {P : ℕ}
     (hPS : ∃ a ∈ S, a ∣ P) (N : ℕ) : markedCount S P N = 0 := by
   apply Finset.sum_eq_zero
   intro n _
-  apply if_neg
+  apply ite_eq_right
   rintro ⟨_, hn, hd⟩
   obtain ⟨a, ha, hap⟩ := hPS
   exact hn ⟨a, ha, hap.trans hd⟩
@@ -88,9 +88,9 @@ theorem markedCount_div_tendsto (S : Finset ℕ) (hS : ∀ a ∈ S, a.Prime) (P 
         (SquarefreeCounting.count_div_tendsto (P.primeFactors ∪ W) hp)
       simpa only [Function.comp_def, Complex.ofReal_div, Complex.ofReal_natCast] using h
     have h := tendsto_finsetSum S.powerset (fun W hW ↦ (ht W hW).const_mul ((-1 : ℂ) ^ W.card))
-    simpa only [markedCount_eq_subsets S hS hP, markedDensity, if_pos hP,
+    simpa only [markedCount_eq_subsets S hS hP, markedDensity, ite_eq_left hP,
       Finset.sum_div, mul_div_assoc] using h
-  · simp only [markedCount_eq_zero_of_not_squarefree S hP, markedDensity, if_neg hP, zero_div]
+  · simp only [markedCount_eq_zero_of_not_squarefree S hP, markedDensity, ite_eq_right hP, zero_div]
     exact tendsto_const_nhds
 
 /-- The signed density vanishes when the original sieve removes the
@@ -108,7 +108,7 @@ theorem markedCount_centered_eq_subsets (S : Finset ℕ) (hS : ∀ a ∈ S, a.Pr
       (-1 : ℂ) ^ W.card *
         ((SquarefreeCounting.count (P.primeFactors ∪ W) N : ℂ) -
           (SquarefreeCounting.density (P.primeFactors ∪ W) : ℂ) * N) := by
-  rw [markedCount_eq_subsets S hS hP, markedDensity, if_pos hP, Finset.sum_mul,
+  rw [markedCount_eq_subsets S hS hP, markedDensity, ite_eq_left hP, Finset.sum_mul,
     ← Finset.sum_sub_distrib]
   exact Finset.sum_congr rfl (fun _ _ ↦ by ring)
 
@@ -124,7 +124,7 @@ private theorem corrected_product_bound (S : Finset ℕ) (R : ℕ)
     (∏ a ∈ S, (1 + primeSquareCorrectedWeight σ a)) ≤
       Real.exp (2 * primeSquareWeightMass σ) * Real.exp (4 * Real.sqrt R) := by
   apply le_trans _ (prod_one_add_primeSquareCorrectedWeight_le S R hS hσ)
-  apply Finset.prod_le_prod
+  apply Finset.prod_le_prod₀
   · intro a _
     have := primeSquareCorrectedWeight_nonneg σ a
     positivity
@@ -200,7 +200,7 @@ theorem markedCount_centered_bound (S : Finset ℕ) (R : ℕ)
         markedDensity_eq_zero_of_sieve_hit S (fun a ha ↦ (hS a ha).1) hh]
       simp only [zero_mul, sub_self, norm_zero]
       exact mul_nonneg (by have := (countingCost_pos σ).le; positivity) (lcmSqrtFactorMass_nonneg P)
-  · rw [markedCount_eq_zero_of_not_squarefree S hP, markedDensity, if_neg hP]
+  · rw [markedCount_eq_zero_of_not_squarefree S hP, markedDensity, ite_eq_right hP]
     simp only [zero_mul, sub_self, norm_zero]
     exact mul_nonneg (by have := (countingCost_pos σ).le; positivity) (lcmSqrtFactorMass_nonneg P)
 

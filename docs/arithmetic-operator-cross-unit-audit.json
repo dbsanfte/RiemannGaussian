@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCrossUnitAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 140,
+    "theoremsIncludingGeneratedHelpers": 116,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "focusedLocalDependencyCompiled": "scripts/ArithmeticOperatorLucasUnitAudit.lean",
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "proved complete common row with fixed cofactor three, actual quadratic code, positive level-eight character table, odd-prime endpoint and prime-two head",
+    "actualOffLineZeroResponse": "proved every actual right-half zeta zero has residue -sourceMass, sourceMass>=m/3>0; all actual auxiliary L-multiplicities retained; no exposure or disjoint-L-divisor premise",
+    "densitySeparation": "subtract 1/(3(s-1)); genuine analytic density germ and unchanged nonzero actual zero residue; literal completion corrections analytic",
+    "collapseAudit": "exact fixed residue filter for arbitrary complex outer arrays; actual trace-one primes exist beyond every head and identity-only free-array payment fails",
+    "independentSignedEstimate": "none; stop fixed-cofactor-three identity-only route",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "row": "choose(3p-1,k) mod p, k<3p; ordinary integer prime p",
+    "upperDigitFactorRetained": true,
+    "primeTwoTrace": "2/3",
+    "oddPrimeTrace": "bulkEight(p)+threeEndpoint(p)",
+    "endpointNorm": "<=1/p",
+    "bulkProfile": {
+      "1mod8": "1",
+      "5mod8": "1/3",
+      "other": "0"
+    },
+    "ordinaryPowerLedger": "row = completed bulk - proper bulk + ordinary odd-prime endpoint + prime-two head",
+    "properAnalyticHalfPlane": "Re(s)>1/2",
+    "endpointAnalyticHalfPlane": "Re(s)>0",
+    "headEntire": true,
+    "eulerConvergenceDomain": "Re(s)>1 only",
+    "continuedResponseNotNativeCutoffAsymptotic": true,
+    "allPowersAndOriginalFixedHeightPhaseKept": true,
+    "sourceMass": "m_zeta/3 + ord(L_chi4,rho)/3 + ord(L_chi8,rho)/6 + ord(L_chiminus8,rho)/6",
+    "simultaneousAuxiliaryLZerosReinforceSource": true,
+    "exposureRequiredForResidue": false,
+    "commonLZeroExclusionRequired": false,
+    "arbitraryOuterWeightBoundRefutedBeyondEveryHead": true,
+    "noGo": "The literal fixed-cofactor-three quadratic unit code retains a source but joins exactly to an old fixed Dirichlet-character prime filter; identities alone give no independent collective prime constraint.",
+    "allFixedCofactorsClassified": false,
+    "growingCommonRowSourceGateClosed": false,
+    "growingCrossPrimeSignedOrPSDEstimateProved": false,
+    "controlsGrantedActualBinomialGammaMangoldtOrLData": false,
+    "historicalNoveltyClaimed": false
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "arithmetic": "actual integer binomials, complete upper-digit tables, exact fractions",
+    "maxPrime": 127,
+    "fixedCofactor": 3,
+    "fixedCofactorActualRows": 31,
+    "characterTableCases": 1024,
+    "symbolicProperPowerPrefixJoins": 257,
+    "literalFixedHeightPhaseInProbe": false,
+    "actualHeightPhaseRetainedByLean": true,
+    "distinctOddCrossPrimePairs": 435,
+    "directIntegerCrossRowRegressions": 45,
+    "bothCharactersOddPairs": 120,
+    "oddOddSigns": {
+      "positive": 65,
+      "zero": 19,
+      "negative": 36
+    },
+    "negativeDiagnostic": {
+      "p": 19,
+      "q": 7,
+      "joinedTrace": "-13/133"
+    },
+    "largestAbsoluteOddOddSamples": [
+      {
+        "p": 59,
+        "q": 31,
+        "trace": "688/1829"
+      },
+      {
+        "p": 107,
+        "q": 59,
+        "trace": "-1772/6313"
+      },
+      {
+        "p": 47,
+        "q": 19,
+        "trace": "5/19"
+      },
+      {
+        "p": 67,
+        "q": 23,
+        "trace": "403/1541"
+      },
+      {
+        "p": 43,
+        "q": 11,
+        "trace": "116/473"
+      },
+      {
+        "p": 47,
+        "q": 11,
+        "trace": "113/517"
+      },
+      {
+        "p": 79,
+        "q": 19,
+        "trace": "15/79"
+      },
+      {
+        "p": 103,
+        "q": 59,
+        "trace": "-1136/6077"
+      }
+    ],
+    "exactFiniteLDL": {
+      "matrixSize": 30,
+      "diagonalConvention": "actual p^2-1 aligned quadratic square trace = 1",
+      "allLeadingPivotsPositive": true,
+      "smallestPivot": "2032174211077174892908674108369247845479003602790049349070655355788567679967/2829214341434841881556221793385791199443780776894679815011750420065911267499",
+      "universalPSDClaim": false,
+      "zeroSourceGatePassed": false
+    },
+    "asymptoticOrRHClaim": false,
+    "growingCofactorSourceEstimateOpen": true
+  },
+  "literature": [
+    {
+      "title": "Character Sums and Congruences with n!",
+      "authors": "Garaev, Luca, Shparlinski",
+      "primaryURL": "https://arxiv.org/pdf/math/0403422",
+      "checked": "Theorem 1 and its shifted-ratio proof",
+      "scope": "factorial-character interval bound N^(3/4)p^(1/8)(log p)^(1/4), not an imported theorem for coupled binomial rows",
+      "appliedToRH": false
+    }
+  ],
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-lucas-unit-audit.json",
+    "all13PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "6a7ecacad743d845458391dc415aa957fe64ecfb761c7948cccb586a31f6d999",
+        "current": "27f332cb69fd3a2852b584157a66095fe68f723d1499f8a02f08b537cbe35384"
+      },
+      {
+        "path": "AGENTS.md",
+        "pinned": "7155b80336d9b8dece332693852e1d293a6eba5b97a3511ecd5a013ac878d3d5",
+        "current": "afcd74bf3a57e94142f2895513e1f77e2ddc472a472a5858cae31b1633a7e756"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorCrossUnitAudit.lean": "8a735fa73ffbe2a2d71bf4e01ecaa27da72b03725d578928a654c61da8fd42a6",
+    "scripts/probe_arithmetic_operator_cross_unit.py": "33f31a2bd6423fc62ccb8ba424818389054365532afd0470a8cd63be706b48dc",
+    "scripts/ArithmeticOperatorLucasUnitAudit.lean": "c1bc0b5677a89f8a6d05225ed601ecad861c33ffa9db093035a7b7135b6bda23",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ZetaPrimePowerMoments.lean": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": "24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/ZModChar.lean": "900e4a4f324135a0e29994b9d95605fa10bea14c5ab34b510d1d356a80c4aeaa",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LSeries/PrimesInAP.lean": "a2491d48850056b27fe6ad31cf7b210a7f6455e8e0fa4fbb714671bbffb61ca4",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/DirichletCharacter/Bounds.lean": "45e06e70aba5284faf091ed18a01cbf65135df0d511f3a7de5dbedc9aa68069c",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean": "bb6efa4fed8c2922029295d77e6050d8f28a0ad068ba40729ad38c8a54c23a93",
+    "AGENTS.md": "afcd74bf3a57e94142f2895513e1f77e2ddc472a472a5858cae31b1633a7e756",
+    "docs/arithmetic-operator-research.md": "27f332cb69fd3a2852b584157a66095fe68f723d1499f8a02f08b537cbe35384",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".lake/arithmetic-operator-cross-unit/check.log": "390b7f45254ea5b191f8a6f6716a28147ba743f93416e0fd027a8acdaeb98a79",
+    ".lake/arithmetic-operator-cross-unit/axioms.json": "70d6bfcee137dbd6d1112cce8dfe0701d70967aeff24de27e31d359c1afe9894",
+    ".lake/arithmetic-operator-cross-unit/probe.json": "02a4d16c7e7767e27228546c75bc7416eac362b25fcd84ba1bf5fcbdd3326b5a",
+    ".lake/arithmetic-operator-cross-unit/prior-pin-check-before-doc-update.json": "ba2d801f71b2018ce0b496734e072ae3a9ceeed201912e745d7e52a0c3e6d392",
+    ".lake/arithmetic-operator-cross-unit/lucas-dependency.log": "8c1b83877b36a0bf67f1c524644129386467e1b98e33c289c804f538288e55da"
+  }
+}

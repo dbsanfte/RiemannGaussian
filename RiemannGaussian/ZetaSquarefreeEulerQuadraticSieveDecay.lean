@@ -225,7 +225,7 @@ theorem exists_squarefreeEuler_uniform_quadratic_sieve_bound_of_analytic
         rintro ⟨hn, hs, hd⟩
         exact hgood ⟨hn.squarefree_of_dvd hd,
           fun a ha haS ↦ hs ⟨a, haS, (Nat.dvd_of_mem_primeFactors ha).trans hd⟩⟩
-      simp only [RoughSquarefreeBare.coefficient, if_neg hn]
+      simp only [RoughSquarefreeBare.coefficient, ite_eq_right hn]
     simp only [RoughSquarefreeBare.response, hz, zero_mul, tsum_zero, norm_zero]
     positivity
 

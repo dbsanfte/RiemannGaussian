@@ -93,7 +93,7 @@ theorem angular_pointwise_lower {lam h b : ℝ} {lo x : Fin 4 → ℝ}
       (1000001/1000000 : ℝ)^5*(lam*q*(∏ i, x i)) := by
     have he := mul_le_mul_of_nonneg_left
       (mul_le_mul hpRel
-        (Finset.prod_le_prod (fun i _ => by linarith [hlo0 i]) (fun i _ => hxRel i))
+        (Finset.prod_le_prod₀ (fun i _ => by linarith [hlo0 i]) (fun i _ => hxRel i))
         hpProd.le (by positivity)) hL0.le
     simp only [Fin.prod_univ_four] at he ⊢
     convert he using 1 <;> first | rfl | ring
@@ -105,7 +105,7 @@ theorem angular_pointwise_lower {lam h b : ℝ} {lo x : Fin 4 → ℝ}
   have hden : (17/25 : ℝ)*(1/10)*(1/200)^4 ≤ lam*p*(∏ i, (lo i+b)) := by
     have he := mul_le_mul
       (mul_le_mul hL (hqp.trans' hqlo) (by norm_num) hL0.le)
-      (Finset.prod_le_prod (s := Finset.univ) (fun _ _ => (by norm_num : (0 : ℝ) ≤ 1/200))
+      (Finset.prod_le_prod₀ (s := Finset.univ) (fun _ _ => (by norm_num : (0 : ℝ) ≤ 1/200))
         (fun i _ => (hlo i).trans (le_add_of_nonneg_right hb.le)))
       (by positivity) (by positivity)
     norm_num [Fin.prod_univ_four] at he ⊢

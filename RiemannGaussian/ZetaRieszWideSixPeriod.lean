@@ -108,7 +108,7 @@ theorem coefficient_eq_response {v y L : ℝ} (hv : 100 ≤ v) (hy : 54 ≤ |y|)
   norm_num only [Int.cast_pow,Int.cast_neg,Int.cast_one,one_mul] at href
   rw [riesz_prime_mul (Real.log (p*a : ℕ)-L) hpp hpd,
     ZetaRieszFixedCofactor.riesz_eq_zero_of_nonpos houter,sub_zero] at href
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,← href]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,← href]
   congr 1
   ring
 

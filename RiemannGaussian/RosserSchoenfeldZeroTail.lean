@@ -73,10 +73,10 @@ theorem term_le_poisson {T : ℝ} (hT : 2 ≤ T) (ρ : NontrivialZetaZero) :
   by_cases hρ : T ≤ |ρ.1.im|
   · have hh := mul_le_mul_of_nonneg_left (point_comparison hT ρ hρ)
       (Nat.cast_nonneg (analyticZetaZeroMultiplicity ρ) : (0 : ℝ) ≤ analyticZetaZeroMultiplicity ρ)
-    simp only [term, if_pos hρ, zetaGlobalPoissonSummand, Complex.ofReal_re,
+    simp only [term, ite_eq_left hρ, zetaGlobalPoissonSummand, Complex.ofReal_re,
       Complex.normSq_apply, Complex.sub_re, Complex.sub_im, Complex.ofReal_im, zero_sub]
     convert! hh using 1 <;> ring
-  · rw [term, if_neg hρ]
+  · rw [term, ite_eq_right hρ]
     exact mul_nonneg (by positivity) (zetaGlobalPoissonSummand_nonneg (by simpa using (show 1 ≤ T by linarith)) ρ)
 
 /-- An explicit upper bound for the complete xi Poisson mass on the real axis. -/

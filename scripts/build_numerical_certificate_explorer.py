@@ -16,6 +16,7 @@ import tempfile
 
 import build_theorem_explorer as explorer
 from numerical_certificate import closure, fingerprint
+from numerical_certificate_checkpoint import checked_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "docs/numerical-certificate-explorer"
@@ -39,17 +40,24 @@ def input_sources():
             for p in sorted(set(closure("NumericalCertificate").values()))}
 
 
-def checked_audit():
+def historical_checkpoint(audit):
+    return (ROOT / "lean-toolchain").read_text().strip() != f"leanprover/lean4:v{audit['leanVersion']}"
+
+
+def checked_audit(*, require_current=False):
     audit = json.loads(AUDIT.read_bytes())
     assert audit["target"] == "NumericalCertificate"
-    assert audit["inputSha256"] == fingerprint(), "Certificate inputs changed; rerun optional verification"
+    if require_current or not historical_checkpoint(audit):
+        assert audit["inputSha256"] == fingerprint(), "Certificate inputs changed; rerun optional verification"
+    else:
+        checked_inputs()
     assert audit["axiomAudit"] == "passed: only propext, Classical.choice, Quot.sound"
     assert audit["certificateStatus"] == "proved: 6731/10000 for literal simple critical-line zeros"
     return audit
 
 
 def refresh():
-    audit = checked_audit()
+    audit = checked_audit(require_current=True)
     before = fingerprint()
     # Explicitly requested refresh only: Lake validates its cached traces.
     subprocess.run(lean_command() + ["build", "NumericalCertificate", "--wfail"], cwd=ROOT, check=True)
@@ -75,7 +83,11 @@ def build():
     assert snapshot["rawGraphSha256"] == explorer.digest(raw_bytes), "Proof graph hash mismatch"
     assert snapshot["exporterSha256"] == explorer.digest(EXPORTER.read_bytes()), "Graph exporter changed; refresh explicitly"
     assert snapshot["certificateAuditSha256"] == explorer.digest(AUDIT.read_bytes()), "Optional audit changed; refresh explicitly"
-    assert snapshot["sourceSha256"] == input_sources(), "Optional proof source snapshot changed"
+    source_overrides, manifest = {}, None
+    if historical_checkpoint(audit):
+        source_overrides, manifest = checked_inputs()
+    else:
+        assert snapshot["sourceSha256"] == input_sources(), "Optional proof source snapshot changed"
     raw = json.loads(raw_bytes)
     assert raw["leanVersion"] == audit["leanVersion"]
     meta = json.loads((SITE / "metadata.json").read_bytes())
@@ -95,6 +107,12 @@ def build():
     meta["certificateVerification"] = verification
     meta["guideDocument"] = "docs/numerical-certificate.md"
     meta["metadataOrigin"] = "Read from the certificate endpoint metadata and complete optional proof audit."
+    if historical_checkpoint(audit):
+        checkpoint = (f"Published checkpoint verified with Lean {audit['leanVersion']}. "
+                      "The current compiler's optional certificate audit remains pending. ")
+        meta["certificate"]["scope"] = checkpoint + meta["certificate"]["scope"]
+        meta["verificationScope"] = checkpoint + meta.get("verificationScope", "")
+        meta["sourceRevision"] = verification["revision"]
     for n in raw["nodes"]:
         if n.get("verifiedDataBoundary"):
             label = meta["theorems"].setdefault(n["id"], {})
@@ -108,10 +126,13 @@ def build():
     with tempfile.TemporaryDirectory(prefix="riemann-certificate-graph-") as directory:
         path = Path(directory) / "graph.json"
         path.write_bytes(raw_bytes)
-        outputs = explorer.build(raw_path=path, metadata=meta, status_data=status)
+        outputs = explorer.build(raw_path=path, metadata=meta, status_data=status,
+                                 source_overrides=source_overrides, manifest_data=manifest)
     outputs["certificate-audit.json"] = AUDIT.read_bytes()
     outputs["hosted-audit.json"] = hosted_path.read_bytes()
     outputs["verification.json"] = verification_path.read_bytes()
+    if historical_checkpoint(audit):
+        outputs["lean433-inputs.json.gz"] = (SITE / "lean433-inputs.json.gz").read_bytes()
     outputs["families.json"] = explorer.json_bytes({"source": "docs/theorem-explorer/metadata.json",
         "families": taxonomy["families"], "moduleFamilies": taxonomy["moduleFamilies"]})
     # Share the complete tested interaction code instead of forking a viewer.

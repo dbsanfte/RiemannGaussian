@@ -112,7 +112,7 @@ theorem sum_localZetaCanonicalLogFactor_le (y : ℝ) (hy : 2 ≤ |y|) {z : ℂ}
     hd.subset (by intro i hi hdi; exact hi (by simp [hdi]))
   have hg : (fun i ↦ (d i : ℝ) * B).HasFiniteSupport :=
     hd.subset (by intro i hi hdi; exact hi (by simp [hdi]))
-  have hs := finsum_le_finsum' hf hg hp
+  have hs := finsum_le_finsum hf hg hp
   have hmul : (∑ᶠ i, (d i : ℝ) * B) = ((∑ᶠ i, d i : ℤ) : ℝ) * B := by
     have hsub : Function.support (fun i ↦ (d i : ℝ) * B) ⊆ (hd.toFinset : Set ℂ) := by
       intro i hi

@@ -431,13 +431,13 @@ theorem scaled_joined_eq_signal (u y : ℝ) (N K : ℕ) :
     intro n hn
     rw [ZetaRieszGammaJoint.translatedAtom_eq_original hn y,
       kernel_eq_real_mul_character]
-    simp only [joinedAmplitude, joinedMultiplier, if_pos hn, Complex.ofReal_one,
+    simp only [joinedAmplitude, joinedMultiplier, ite_eq_left hn, Complex.ofReal_one,
       one_mul, amplitude]
     ring
   · apply Finset.sum_congr rfl
     intro n hn
     rw [kernel_eq_real_mul_character]
-    simp only [joinedAmplitude, joinedMultiplier, if_neg (Finset.mem_sdiff.mp hn).2, amplitude]
+    simp only [joinedAmplitude, joinedMultiplier, ite_eq_right (Finset.mem_sdiff.mp hn).2, amplitude]
     ring
 
 /-- Squared coefficient mass of the existing joinedPhysical carrier. -/

@@ -14,12 +14,16 @@ path = "vendor/zeta23"
 [[require]]
 name = "LeanCert"
 git = "https://github.com/alerad/leancert.git"
-rev = "4ea18bb66dfcd7f18f260bc25302400f5a3cafd7"
+rev = "7f91b6eb3567437f6cfac03ed279706603ee22f4"
+
+[[require]]
+name = "OpenAIQuasiRH"
+path = "vendor/openai-quasi-rh"
 
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-rev = "v4.33.1"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [[lean_lib]]
 name = "RiemannGaussian"

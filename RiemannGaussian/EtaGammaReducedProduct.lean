@@ -53,7 +53,7 @@ theorem reducedProductCoefficient_eq (g n : ℕ) :
   change (∑ p ∈ n.divisorsAntidiagonal,
     if p.1.Coprime p.2 ∧ g.Coprime p.1 ∧ g.Coprime p.2 then μ p.1 * μ p.2 else 0) = _
   by_cases hc : Squarefree n ∧ g.Coprime n
-  · rw [if_pos hc]
+  · rw [ite_eq_left hc]
     have he (p : ℕ × ℕ) (hp : p ∈ n.divisorsAntidiagonal) :
         (if p.1.Coprime p.2 ∧ g.Coprime p.1 ∧ g.Coprime p.2 then μ p.1 * μ p.2 else 0) = μ n := by
       have hprod := (Nat.mem_divisorsAntidiagonal.mp hp).1
@@ -61,18 +61,18 @@ theorem reducedProductCoefficient_eq (g n : ℕ) :
       have hcop := Nat.coprime_of_squarefree_mul hsq
       have hg : g.Coprime p.1 ∧ g.Coprime p.2 :=
         Nat.coprime_mul_iff_right.mp (hprod.symm ▸ hc.2)
-      rw [if_pos ⟨hcop, hg⟩, ← ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hcop,
+      rw [ite_eq_left ⟨hcop, hg⟩, ← ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hcop,
         hprod]
     rw [Finset.sum_congr rfl he, Finset.sum_const, nsmul_eq_mul]
     have hcard : n.divisorsAntidiagonal.card = n.divisors.card := by
       rw [← Nat.map_div_right_divisors]
       simp
     rw [hcard, card_divisors_of_squarefree hc.1, mul_comm]
-  · rw [if_neg hc]
+  · rw [ite_eq_right hc]
     apply Finset.sum_eq_zero
     intro p hp
     by_cases hpair : p.1.Coprime p.2 ∧ g.Coprime p.1 ∧ g.Coprime p.2
-    · rw [if_pos hpair]
+    · rw [ite_eq_left hpair]
       by_contra hmu
       have ha := ArithmeticFunction.moebius_ne_zero_iff_squarefree.mp (left_ne_zero_of_mul hmu)
       have hb := ArithmeticFunction.moebius_ne_zero_iff_squarefree.mp (right_ne_zero_of_mul hmu)
@@ -81,7 +81,7 @@ theorem reducedProductCoefficient_eq (g n : ℕ) :
       rw [← hprod]
       exact ⟨(Nat.squarefree_mul_iff).mpr ⟨hpair.1, ha, hb⟩,
         Nat.coprime_mul_iff_right.mpr hpair.2⟩
-    · exact if_neg hpair
+    · exact ite_eq_right hpair
 
 /-- The complete product fibre has unit coefficient at one for every fixed gcd. -/
 theorem reducedProductCoefficient_one (g : ℕ) : reducedProductCoefficient g 1 = 1 := by
@@ -126,7 +126,7 @@ theorem reducedZetaSquareCoefficient_prime_pow {p : ℕ} (hp : p.Prime) {g : ℕ
   rw [reducedZetaSquareCoefficient, pow_two, mul_assoc, ArithmeticFunction.coe_zeta_mul_apply,
     Nat.sum_divisors_prime_pow hp, Finset.sum_range_succ']
   simp only [zeta_mul_reducedProduct_prime_pow hp hpg, Nat.add_eq_zero_iff, Nat.one_ne_zero,
-    and_false, if_false, if_true, Finset.sum_const, nsmul_eq_mul]
+    and_false, ite_false, ite_true, Finset.sum_const, nsmul_eq_mul]
   rw [Finset.card_range]
   ring
 

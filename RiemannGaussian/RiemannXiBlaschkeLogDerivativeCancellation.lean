@@ -76,7 +76,7 @@ theorem logDeriv_riemannXiUpperBlaschkeProductWindow_eq_sum
       riemannXiUpperBlaschkeLogDerivativeWindow z T := by
   unfold riemannXiUpperBlaschkeProductWindow
     riemannXiUpperBlaschkeLogDerivativeWindow
-  rw [logDeriv_prod]
+  rw [logDeriv_fun_prod]
   · apply Finset.sum_congr rfl
     intro rho hrho
     have hupper := (mem_spectralUpperZetaZeroWindow.mp hrho).2
@@ -143,7 +143,7 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_le_norm_logDerivativeSummand
     field_simp [hbne]
   unfold zetaUpperBlaschkeDerivativeVariationSummand
     zetaUpperBlaschkeLogDerivativeSummand
-  rw [if_pos hupper]
+  rw [ite_eq_left hupper]
   change (analyticZetaZeroMultiplicity rho : ℝ) * ‖deriv b z‖ ≤
     ‖(analyticZetaZeroMultiplicity rho : ℂ) *
       (1 / (z - alpha) - 1 / (z - starRingEnd ℂ alpha))‖
@@ -189,9 +189,9 @@ theorem riemannXiUpperBlaschkeDerivativeVariationWindow_le_ofReal_logDerivativeV
     apply Finset.sum_congr rfl
     intro rho _hrho
     by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-    · rw [if_pos hupper]
-    · rw [if_neg hupper,
-        zetaUpperBlaschkeDerivativeVariationSummand, if_neg hupper,
+    · rw [ite_eq_left hupper]
+    · rw [ite_eq_right hupper,
+        zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_right hupper,
         ENNReal.ofReal_zero]
   rw [hrestrict]
   apply Finset.sum_le_sum

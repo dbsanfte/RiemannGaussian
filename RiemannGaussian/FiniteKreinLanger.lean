@@ -206,7 +206,7 @@ theorem norm_upperRootBlaschkeValue_le_one
         intro v hv
         exact hall v (by simp [hv])
       simp only [Multiset.map_cons, Multiset.prod_cons, norm_mul]
-      apply mul_le_one₀
+      apply (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb)
       · rw [norm_div]
         apply (div_le_one (lt_of_le_of_lt (norm_nonneg _)
           (norm_sub_lt_norm_sub_conj_of_im_pos hz hw))).mpr
@@ -297,7 +297,7 @@ theorem norm_lowerRootInnerValue_le_one
       have hdist : ‖z - conj w‖ < ‖z - w‖ := by
         simpa using norm_sub_lt_norm_sub_conj_of_im_pos hz hconj
       simp only [Multiset.map_cons, Multiset.prod_cons, norm_mul]
-      apply mul_le_one₀
+      apply (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb)
       · rw [norm_div]
         apply (div_le_one (lt_of_le_of_lt (norm_nonneg _) hdist)).mpr
         exact hdist.le

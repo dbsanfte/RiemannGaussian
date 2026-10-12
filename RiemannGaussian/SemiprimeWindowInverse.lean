@@ -109,9 +109,9 @@ theorem euclidLoop_gcd (N r0 r1 c0 c1 : ℕ) :
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       exact (Nat.gcd_zero_right r0).symm
-    · rw [euclidLoop,dif_neg hz]
+    · rw [euclidLoop,dite_eq_right hz]
       dsimp only [makeFrame]
       rw [ih _ (Nat.mod_lt _ (Nat.pos_of_ne_zero hz))]
       exact (Nat.gcd_comm _ _).trans
@@ -127,9 +127,9 @@ theorem euclidLoop_invariant {N : ℕ} (hN : 0<N) (a r0 r1 c0 c1 : ℕ)
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       exact hc0
-    · rw [euclidLoop,dif_neg hz]
+    · rw [euclidLoop,dite_eq_right hz]
       dsimp only
       exact ih _ (Nat.mod_lt _ (Nat.pos_of_ne_zero hz)) _ _ _ hc1
         (makeFrame_invariant hN a r0 r1 c0 c1 hc0 hc1)
@@ -141,9 +141,9 @@ theorem euclidLoop_coefficient_lt {N : ℕ} (hN : 0<N) (r0 r1 c0 c1 : ℕ)
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       exact hc0
-    · rw [euclidLoop,dif_neg hz]
+    · rw [euclidLoop,dite_eq_right hz]
       dsimp only
       exact ih _ (Nat.mod_lt _ (Nat.pos_of_ne_zero hz)) _ _ _ hc1 (Nat.mod_lt _ hN)
 
@@ -157,11 +157,11 @@ theorem euclidLoop_counts (N r0 r1 c0 c1 : ℕ) :
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       simp only [Nat.mul_zero,List.length_nil,and_self]
     · have ht := ih (r0%r1) (Nat.mod_lt _ (Nat.pos_of_ne_zero hz)) r1 c1
         (makeFrame N r0 r1 c0 c1).nextCoefficient
-      rw [euclidLoop,dif_neg hz]
+      rw [euclidLoop,dite_eq_right hz]
       dsimp only [makeFrame,List.length_cons] at ht ⊢
       omega
 
@@ -184,15 +184,15 @@ theorem euclidLoop_steps (N r0 r1 c0 c1 : ℕ) :
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       exact Nat.zero_le _
     · have hp := Nat.pos_of_ne_zero hz
       have hl := clog_halving hp
       have hr := Nat.mod_lt r0 hp
-      rw [euclidLoop,dif_neg hz]
+      rw [euclidLoop,dite_eq_right hz]
       dsimp only [makeFrame]
       by_cases hc : r0%r1=0
-      · rw [euclidLoop,dif_pos hc]
+      · rw [euclidLoop,dite_eq_left hc]
         dsimp only
         omega
       · have hcp := Nat.pos_of_ne_zero hc
@@ -202,7 +202,7 @@ theorem euclidLoop_steps (N r0 r1 c0 c1 : ℕ) :
           ((c0+N-(r0/r1*c1)%N)%N)
           ((c1+N-((r1/(r0%r1))*((c0+N-(r0/r1*c1)%N)%N))%N)%N)
         have hm := Nat.clog_mono_right 2 (Nat.add_le_add_right hh 1)
-        rw [euclidLoop,dif_neg hc]
+        rw [euclidLoop,dite_eq_right hc]
         dsimp only [makeFrame]
         omega
 
@@ -274,12 +274,12 @@ theorem euclidLoop_trace_bounded {N : ℕ} (hN : 0<N) (r0 r1 c0 c1 : ℕ)
   | h r1 ih =>
     by_cases hz : r1=0
     · subst r1
-      rw [euclidLoop,dif_pos rfl]
+      rw [euclidLoop,dite_eq_left rfl]
       intro frame hf
       exact False.elim (List.not_mem_nil hf)
     · have hp := Nat.pos_of_ne_zero hz
       have hrem := Nat.mod_lt r0 hp
-      rw [euclidLoop,dif_neg hz]
+      rw [euclidLoop,dite_eq_right hz]
       dsimp only
       intro frame hf
       rcases List.mem_cons.mp hf with rfl | hf
@@ -383,7 +383,7 @@ theorem initialiseSource_unit {N : ℕ} [NeZero N] (h : (ZMod N)ˣ) (B : ℕ) :
       some (prepareSource (buildRawSource N (h : ZMod N).val
         ((h⁻¹ : (ZMod N)ˣ) : ZMod N).val B)) := by
   dsimp only [initialiseSource]
-  rw [if_pos (countedInverse_unit_gcd h),countedInverse_unit h]
+  rw [ite_eq_left (countedInverse_unit_gcd h),countedInverse_unit h]
 
 /-- The inverse is acquired once and its complete report is retained. -/
 theorem initialiseSource_inverse (N a B : ℕ) :
@@ -393,7 +393,7 @@ theorem initialiseSource_inverse (N a B : ℕ) :
 theorem initialiseSource_nonunit {N a : ℕ} (hg : Nat.gcd N a≠1) (B : ℕ) :
     (initialiseSource N a B).source=none := by
   dsimp only [initialiseSource]
-  rw [countedInverse_gcd,if_neg hg]
+  rw [countedInverse_gcd,ite_eq_right hg]
 
 /-- Every certified actual window is rebuilt from its public scalar alone,
 with identical sorted arrays, collision and checked factor. -/

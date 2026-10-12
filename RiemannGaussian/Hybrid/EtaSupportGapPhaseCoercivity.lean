@@ -24,7 +24,7 @@ theorem integral_Icc_cos_integer_heatPhase (k : ℤ) :
   rw [integral_Icc_eq_integral_Ioc, ← intervalIntegral.integral_of_le (by norm_num : (1 : ℝ) ≤ 2)]
   by_cases hk : k = 0
   · norm_num [hk]
-  · rw [if_neg hk, intervalIntegral.integral_comp_mul_left Real.cos (by
+  · rw [ite_eq_right hk, intervalIntegral.integral_comp_mul_left Real.cos (by
       exact mul_ne_zero (mul_ne_zero (by norm_num) Real.pi_ne_zero) (by exact_mod_cast hk)),
       integral_cos]
     rw [show (2 * Real.pi * (k : ℝ)) * 2 = ((4 * k : ℤ) : ℝ) * Real.pi by push_cast; ring,

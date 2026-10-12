@@ -259,10 +259,10 @@ theorem riemannHypothesis_of_suzuki_ordinaryPrime_massLog_eventually_log_lower_b
   apply Finset.sum_le_sum
   intro j hj
   by_cases hp : (j + 3).Prime
-  · simp only [if_pos hp]
+  · simp only [ite_eq_left hp]
     linarith [suzukiFirstTailTransportLinearWork_eq_massLog_add_error j,
       (suzukiFirstTailMassLogWorkError_bounds j).1]
-  · simp only [if_neg hp, le_refl]
+  · simp only [ite_eq_right hp, le_refl]
 
 /-- A hypothetical right-half zero forces ordinary-prime work below every
 prescribed logarithmic floor at arbitrarily late cutoffs. The proof includes

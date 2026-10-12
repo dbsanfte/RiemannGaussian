@@ -73,9 +73,9 @@ theorem filter_canonical_orbit {a Q e f : ℕ} (hcop : e.Coprime Q) :
     obtain ⟨d,hd,rfl⟩ := Finset.mem_image.mp hdb
     exact (hcop.of_dvd_right (Nat.dvd_of_mem_divisors hd)).dvd_mul_right
   by_cases hef : e ∣ f
-  · rw [if_pos hef]
+  · rw [ite_eq_left hef]
     exact Finset.filter_eq_self.mpr (fun db hdb => (hconstant db hdb).mpr hef)
-  · rw [if_neg hef]
+  · rw [ite_eq_right hef]
     apply Finset.filter_eq_empty_iff.mpr
     intro db hdb hh
     exact hef ((hconstant db hdb).mp hh)
@@ -114,7 +114,7 @@ theorem filtered_old_zero {u : ℝ} {N K n e : ℕ}
   constructor
   · unfold cancelledOrbitDivisors
     dsimp only
-    rw [if_pos ⟨hb.1,by omega⟩]
+    rw [ite_eq_left ⟨hb.1,by omega⟩]
     apply filtered_union_zero hb.2.2 he _ (Finset.filter_subset _ _)
     intro b hbmem
     have hg := (Finset.mem_filter.mp hbmem).2
@@ -123,7 +123,7 @@ theorem filtered_old_zero {u : ℝ} {N K n e : ℕ}
       (by omega) (by linarith [hg.2.1]) hg.2.2.1 w
   · unfold ZetaRieszCrossingOrbitCancellation.affineDivisors
     dsimp only
-    rw [if_pos ⟨hb.1,by omega⟩]
+    rw [ite_eq_left ⟨hb.1,by omega⟩]
     apply filtered_union_zero hb.2.2 he _ (Finset.filter_subset _ _)
     intro b hbmem
     have hg := (Finset.mem_filter.mp hbmem).2

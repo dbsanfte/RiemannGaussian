@@ -55,11 +55,11 @@ private theorem norm_term_le_split {T t : ℝ} (hT : 0 ≤ T) (ht : 0 ≤ t)
       Real.exp t*RosserSchoenfeldZeroTail.term T ρ := by
   have hw : 0 ≤ (analyticZetaZeroMultiplicity ρ : ℝ)/‖(ρ.1 : ℂ)‖^2 := by positivity
   by_cases hρ : T ≤ |ρ.1.im|
-  · rw [RosserSchoenfeldZeroTail.term, if_pos hρ]
+  · rw [RosserSchoenfeldZeroTail.term, ite_eq_left hρ]
     have hh := RosserSchoenfeldZeroPrimitive.norm_term_le ρ ht
     have hp := mul_nonneg (Real.exp_nonneg ((1-zetaSignedPoleZeroMargin T)*t)) hw
     nlinarith only [hh, hp]
-  · rw [RosserSchoenfeldZeroTail.term, if_neg hρ, mul_zero, add_zero]
+  · rw [RosserSchoenfeldZeroTail.term, ite_eq_right hρ, mul_zero, add_zero]
     apply (norm_term_le_actual ρ t).trans
     apply mul_le_mul_of_nonneg_right _ hw
     exact add_le_add (Real.exp_le_exp.mpr

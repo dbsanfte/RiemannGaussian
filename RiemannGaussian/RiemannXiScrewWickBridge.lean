@@ -191,16 +191,16 @@ theorem zetaUpperReflectedScrewWickSummand_eq_heightGaussian
     zetaUpperReflectedScrewWickSummand tau rho =
       (2 * zetaUpperSpectralHeightGaussianSummand tau rho : ℝ) := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperReflectedScrewWickSummand, if_pos hupper,
+  · rw [zetaUpperReflectedScrewWickSummand, ite_eq_left hupper,
       NontrivialZetaZero.spectralCoordinate_conjugatePartner,
       reflectedPairScrewWickGaussianAverage_conj htau,
       zetaUpperSpectralHeightGaussianSummand,
-      zetaUpperSpectralHeightSummand, if_pos hupper]
+      zetaUpperSpectralHeightSummand, ite_eq_left hupper]
     push_cast
     ring
-  · rw [zetaUpperReflectedScrewWickSummand, if_neg hupper,
+  · rw [zetaUpperReflectedScrewWickSummand, ite_eq_right hupper,
       zetaUpperSpectralHeightGaussianSummand,
-      zetaUpperSpectralHeightSummand, if_neg hupper]
+      zetaUpperSpectralHeightSummand, ite_eq_right hupper]
     norm_num
 
 /-- Taking half the real part recovers exactly the nonnegative Gaussian
@@ -281,10 +281,10 @@ theorem zetaUpperReflectedScrewGrowthSummand_re_div_two
       zetaUpperSpectralHeightSummand rho *
         Real.exp (2 * (zetaSpectralCoordinate rho.1).im * t) := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperReflectedScrewGrowthSummand, if_pos hupper,
+  · rw [zetaUpperReflectedScrewGrowthSummand, ite_eq_left hupper,
       NontrivialZetaZero.spectralCoordinate_conjugatePartner,
       reflectedPairScrewKernel_conj_realTime,
-      zetaUpperSpectralHeightSummand, if_pos hupper]
+      zetaUpperSpectralHeightSummand, ite_eq_left hupper]
     norm_num
     rw [show
         (2 : ℂ) * (1 / 2 - ((rho.1.re : ℝ) : ℂ)) * (t : ℂ) =
@@ -293,8 +293,8 @@ theorem zetaUpperReflectedScrewGrowthSummand_re_div_two
         ring,
       Complex.exp_ofReal_re]
     ring
-  · rw [zetaUpperReflectedScrewGrowthSummand, if_neg hupper,
-      zetaUpperSpectralHeightSummand, if_neg hupper]
+  · rw [zetaUpperReflectedScrewGrowthSummand, ite_eq_right hupper,
+      zetaUpperSpectralHeightSummand, ite_eq_right hupper]
     norm_num
 
 /-- The complete positive reflected-pair screw growth mass.  Extended values
@@ -336,7 +336,7 @@ theorem riemannXiUpperReflectedScrewGrowthMass_eq_zero_of_rh
   have him : (zetaSpectralCoordinate rho.1).im = 0 :=
     (riemannHypothesis_iff_spectralCoordinate_real.mp hRH)
       rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
-  rw [zetaUpperSpectralHeightSummand, if_neg (by linarith),
+  rw [zetaUpperSpectralHeightSummand, ite_eq_right (by linarith),
     zero_mul, ENNReal.ofReal_zero]
 
 /-- At every fixed real time, vanishing of the complete positive screw mass is
@@ -353,7 +353,7 @@ theorem riemannXiUpperReflectedScrewGrowthMass_eq_zero_iff_rh
     obtain ⟨rho, rfl⟩ :=
       (riemannXiSpectral_eq_zero_iff_exists_zetaZero w).mp hwzero
     have hsummand : 0 < zetaUpperSpectralHeightSummand rho := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper
@@ -367,7 +367,8 @@ theorem riemannXiUpperReflectedScrewGrowthMass_eq_zero_iff_rh
     have hle : ENNReal.ofReal
         ((zetaUpperReflectedScrewGrowthSummand t rho).re / 2) ≤
         riemannXiUpperReflectedScrewGrowthMass t := by
-      exact ENNReal.le_tsum rho
+      exact ENNReal.le_tsum (f := fun r : NontrivialZetaZero ↦
+        ENNReal.ofReal ((zetaUpperReflectedScrewGrowthSummand t r).re / 2)) rho
     rw [hzero] at hle
     exact (not_lt_of_ge hle) hterm
   · intro hRH
@@ -392,7 +393,7 @@ theorem riemannXiUpperReflectedScrewGrowthSubexponential_iff_rh :
       exact hwupper
     have hc : 0 < c := by
       dsimp [c]
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper

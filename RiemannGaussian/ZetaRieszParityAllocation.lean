@@ -115,7 +115,7 @@ theorem quintuple_boundedShare_le {u : ℝ} {N K n : ℕ}
       intro hp
       rw [hp.primeFactors, Finset.card_singleton] at hcard
       omega
-    rw [boundedShare, if_pos ⟨hg.squarefree, hn1, hnp⟩,
+    rw [boundedShare, ite_eq_left ⟨hg.squarefree, hn1, hnp⟩,
       share_eq_binomial_sum _ N hg.squarefree hn1]
     calc
       _ ≤ ∑ _z ∈ n.primeFactors, Real.exp (-(N : ℝ)/2200) := by

@@ -59,14 +59,14 @@ theorem residueAddBits_exact {modulus xs ys : List Bool}
       (bitValue xs+bitValue ys)%bitValue modulus ∧
     bitValue (residueAddBits modulus xs ys).output.bits<bitValue modulus := by
   have hs := addBits_correct xs ys false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hs
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hs
   have hwidth := bitValue_lt_width modulus
   unfold residueAddBits
   dsimp only
   split
   · rename_i hb
     have hsum := (subBits_borrow_iff (addBits xs ys false).bits modulus false).mp hb
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hsum
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hsum
     rw [fitBits_value (hsum.trans hwidth),hs,Nat.mod_eq_of_lt (by omega)]
     exact ⟨rfl,by omega⟩
   · rename_i hb
@@ -77,7 +77,7 @@ theorem residueAddBits_exact {modulus xs ys : List Bool}
     have hd := subBits_difference hborrow
     have hsum : bitValue modulus≤bitValue (addBits xs ys false).bits := by
       have hn := (subBits_borrow_iff (addBits xs ys false).bits modulus false).not.mp hb
-      simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hn
+      simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hn
       omega
     have hsmall : bitValue (subBits (addBits xs ys false).bits modulus false).result.bits<
         bitValue modulus := by omega
@@ -157,11 +157,11 @@ theorem residueSubBits_exact {modulus xs ys : List Bool}
   split
   · rename_i hb
     have hlt := (subBits_borrow_iff xs ys false).mp hb
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hlt
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hlt
     have hrb : (subBits ys xs false).borrow=false := by
       have hn : ¬(subBits ys xs false).borrow=true := by
         rw [subBits_borrow_iff]
-        simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero]
+        simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero]
         omega
       cases h : (subBits ys xs false).borrow with
       | false => rfl
@@ -170,7 +170,7 @@ theorem residueSubBits_exact {modulus xs ys : List Bool}
     have hcb : (subBits modulus (subBits ys xs false).result.bits false).borrow=false := by
       have hn : ¬(subBits modulus (subBits ys xs false).result.bits false).borrow=true := by
         rw [subBits_borrow_iff]
-        simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero]
+        simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero]
         omega
       cases h : (subBits modulus (subBits ys xs false).result.bits false).borrow with
       | false => rfl
@@ -179,7 +179,7 @@ theorem residueSubBits_exact {modulus xs ys : List Bool}
     have hcsmall : bitValue (subBits modulus (subBits ys xs false).result.bits false).result.bits<
         bitValue modulus := by omega
     rw [fitBits_value (hcsmall.trans hwidth)]
-    simp only [hb,bitNat,if_true,Nat.mul_one]
+    simp only [hb,bitNat,ite_true,Nat.mul_one]
     exact ⟨hcsmall,by omega⟩
   · rename_i hb
     have hdb : (subBits xs ys false).borrow=false := by
@@ -189,11 +189,11 @@ theorem residueSubBits_exact {modulus xs ys : List Bool}
     have hd := subBits_difference hdb
     have hge : bitValue ys≤bitValue xs := by
       have hn := (subBits_borrow_iff xs ys false).not.mp hb
-      simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hn
+      simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hn
       omega
     have hdsmall : bitValue (subBits xs ys false).result.bits<bitValue modulus := by omega
     rw [fitBits_value (hdsmall.trans hwidth)]
-    simp only [hdb,bitNat,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero]
+    simp only [hdb,bitNat,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero]
     exact ⟨hdsmall,by omega⟩
 
 /-- The unsigned borrow equation yields the original ring difference
@@ -240,7 +240,7 @@ theorem powerTemplateBits_exact (template : List Bool) :
   induction template with
   | nil => exact ⟨rfl,rfl,rfl⟩
   | cons b tail ih =>
-    simp only [powerTemplateBits,bitValue,bitNat,Bool.false_eq_true,if_false,
+    simp only [powerTemplateBits,bitValue,bitNat,Bool.false_eq_true,ite_false,
       Nat.zero_add,List.length_cons,pow_succ,bitCost] at ih ⊢
     constructor
     · rw [ih.1]; ring
@@ -261,7 +261,7 @@ theorem fermatModulusBits_value (template : List Bool) :
   cases template with
   | nil => rfl
   | cons b tail =>
-    simp only [fermatModulusBits,bitValue,bitNat,if_true,List.length_cons,
+    simp only [fermatModulusBits,bitValue,bitNat,ite_true,List.length_cons,
       (powerTemplateBits_exact tail).1,pow_succ]
     ring
 
@@ -314,7 +314,7 @@ theorem splitTemplateBits_exact (xs template : List Bool) :
     cases xs with
     | nil =>
       have hc := ih []
-      simp only [splitTemplateBits,bitValue,bitNat,Bool.false_eq_true,if_false,
+      simp only [splitTemplateBits,bitValue,bitNat,Bool.false_eq_true,ite_false,
         List.length_cons,List.length_nil,pow_succ] at hc ⊢
       exact ⟨by nlinarith,by omega,by omega,by omega⟩
     | cons x xs =>
@@ -454,7 +454,7 @@ theorem shiftTemplateBits_exact (offset xs : List Bool) :
   | nil => simp only [shiftTemplateBits,List.length_nil,pow_zero,Nat.one_mul,
       Nat.zero_add,bitCost,Nat.add_zero,Nat.mul_zero,and_self]
   | cons b tail ih =>
-    simp only [shiftTemplateBits,bitValue,bitNat,Bool.false_eq_true,if_false,
+    simp only [shiftTemplateBits,bitValue,bitNat,Bool.false_eq_true,ite_false,
       Nat.zero_add,List.length_cons,pow_succ,bitCost] at ih ⊢
     exact ⟨by rw [ih.1]; ring,by omega,by omega⟩
 
@@ -581,7 +581,7 @@ theorem fermatHalfBits_exact {template xs : List Bool}
   rw [hm] at hmw
   have hi := (lowBitViewBits_exact xs).1
   have hs := addBits_correct xs (fermatModulusBits template).bits false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero,hm] at hs
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero,hm] at hs
   have ha := (lowBitViewBits_exact (addBits xs (fermatModulusBits template).bits false).bits).1
   have hodd := fermat_modulus_odd hK
   unfold fermatHalfBits
@@ -592,28 +592,28 @@ theorem fermatHalfBits_exact {template xs : List Bool}
       cases h : (lowBitViewBits (addBits xs (fermatModulusBits template).bits false).bits).digit with
       | false => rfl
       | true =>
-        simp only [hb,h,bitNat,if_true] at hi ha
+        simp only [hb,h,bitNat,ite_true] at hi ha
         omega
     have htail : 2*bitValue
         (lowBitViewBits (addBits xs (fermatModulusBits template).bits false).bits).tail=
           bitValue xs+(2^template.length+1) := by
-      simp only [he,bitNat,Bool.false_eq_true,if_false,Nat.zero_add] at ha
+      simp only [he,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add] at ha
       omega
     have hsmall : bitValue
         (lowBitViewBits (addBits xs (fermatModulusBits template).bits false).bits).tail<
           2^template.length+1 := by omega
     rw [fitBits_value (hsmall.trans hmw)]
-    simp only [hb,bitNat,if_true,Nat.mul_one]
+    simp only [hb,bitNat,ite_true,Nat.mul_one]
     exact ⟨hsmall,htail⟩
   · rename_i hb
     have he : (lowBitViewBits xs).digit=false := by
       cases h : (lowBitViewBits xs).digit with
       | false => rfl
       | true => exact False.elim (hb h)
-    simp only [he,bitNat,Bool.false_eq_true,if_false,Nat.zero_add] at hi
+    simp only [he,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add] at hi
     have hsmall : bitValue (lowBitViewBits xs).tail<2^template.length+1 := by omega
     rw [fitBits_value (hsmall.trans hmw)]
-    simp only [he,bitNat,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero]
+    simp only [he,bitNat,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero]
     exact ⟨hsmall,hi.symm⟩
 
 /-- The actual canonical half solves multiplication by two in the

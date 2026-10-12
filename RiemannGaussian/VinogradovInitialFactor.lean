@@ -104,7 +104,7 @@ theorem block_polynomial_eq_conditioned (p k X : ℕ) (theta : UnitAddTorus (Fin
   apply congrArg (fun v : Fin k → ℤ => mFourier v theta)
   funext i
   simp only [tupleFrequency, blockFrequency, Finset.sum_apply, monomialFrequency,
-    VinogradovSignedCongruence.sign, if_true, one_mul, modBlockEquiv, Equiv.coe_fn_mk,
+    VinogradovSignedCongruence.sign, ite_true, one_mul, modBlockEquiv, Equiv.coe_fn_mk,
     Nat.cast_add, Nat.cast_one]
 
 /-- Modulus one imposes no restriction on the original positive interval. -/

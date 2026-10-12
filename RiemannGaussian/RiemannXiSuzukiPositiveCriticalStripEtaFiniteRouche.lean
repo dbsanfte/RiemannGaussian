@@ -101,7 +101,7 @@ theorem circleIntegral_logDeriv_eq_of_norm_sub_lt_of_analyticOnNhd
     have hquotient :
         logDeriv q z = logDeriv g z - logDeriv f z := by
       simpa [q] using
-        (logDeriv_div z (hgzero z hz) (hfzero z hz) hgdiff hfdiff)
+        (logDeriv_fun_div z (hgzero z hz) (hfzero z hz) hgdiff hfdiff)
     have hlog' : HasDerivAt (fun u => Complex.log (q u))
         (logDeriv q z) z := by
       simpa [logDeriv_apply] using hlog

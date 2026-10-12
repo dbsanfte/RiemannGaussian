@@ -255,16 +255,16 @@ theorem literal_pair_gap {p p' q r b : ℕ} (hp : p.Prime) (hp' : p'.Prime)
   have hcount : 2 ≤ (r*b).primeFactors.card := hc.trans
     (Finset.card_le_card (Nat.primeFactors_mono (dvd_mul_left b r) (mul_ne_zero hr.ne_zero hb.ne_zero)))
   exact opposite_inner_pair_gap hp hp' hq hb hsf hc hcount hqb hqr hpqb hp'qr
-    (by rw [moebius_prime_mul_eq_not_dvd hr,if_neg hrb]) hL hi hi' N y hU hgap
+    (by rw [moebius_prime_mul_eq_not_dvd hr,ite_eq_right hrb]) hL hi hi' N y hU hgap
 
 /-- Replacing one genuine cofactor prime by two gives the same parity
 flip, even when the common cofactor already contains the prime2. -/
 theorem cofactor_split_parity {v r r' b : ℕ} (hv : v.Prime) (hr : r.Prime)
     (hr' : r'.Prime) (hvb : ¬v ∣ b) (hr'b : ¬r' ∣ b) (hrr'b : ¬r ∣ r'*b) :
     μ (r*(r'*b))= -(μ (v*b)) := by
-  rw [moebius_prime_mul_eq_not_dvd hr,if_neg hrr'b,
-    moebius_prime_mul_eq_not_dvd hr',if_neg hr'b,
-    moebius_prime_mul_eq_not_dvd hv,if_neg hvb]
+  rw [moebius_prime_mul_eq_not_dvd hr,ite_eq_right hrr'b,
+    moebius_prime_mul_eq_not_dvd hr',ite_eq_right hr'b,
+    moebius_prime_mul_eq_not_dvd hv,ite_eq_right hvb]
 
 /-- The needed gap rate beats source growth at the unchanged radius.
 This does not assert existence of any prime replacement or matching. -/

@@ -87,7 +87,7 @@ private theorem prefix_delta {X d : ℕ} (hd : d∈Finset.Icc 1 X) (f : ℕ→�
   simp only [hs] at he
   have hdiff k : F k-F (k+1)=f k-f (k+1) := by dsimp [F]; ring
   simp only [hdiff,mul_ite,mul_one,mul_zero,
-    Finset.sum_ite_eq',if_pos hd] at he
+    Finset.sum_ite_eq',ite_eq_left hd] at he
   simpa only [ite_mul,one_mul,zero_mul,F] using he.symm
 
 /-- The signed quadratic orbit has exactly its semiprime divisor moment.
@@ -174,7 +174,7 @@ theorem sum_quadraticHead {u y : ℝ} {N X : ℕ} (hX : pairEndpoint u N≤X) :
     have hqX : q≤coreFloor N (log p) (203/100) := (Finset.mem_Ioc.mp hq).2
     have hprod : p*q≤X := (Nat.mul_le_mul_left p hqX).trans (hpX.trans hX)
     exact sum_pairIncrement (owners_data hp).1.one_lt hqp.one_lt hprod N _
-  · simp only [pairAmount,if_neg hqp,mul_zero,pairIncrement,zero_mul,Finset.sum_const_zero]
+  · simp only [pairAmount,ite_eq_right hqp,mul_zero,pairIncrement,zero_mul,Finset.sum_const_zero]
 
 /-- The prime-head profile move is an exact zero-total direction. -/
 def direction (u y : ℝ) (j k : ℕ) : ℝ :=
@@ -218,8 +218,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hn
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hn (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 theorem sum_joinedIncrement (u y : ℝ) (j : ℕ) (p : Fin 5→ℝ) (q : Fin 6→ℝ) (a : ℝ) :
     (∑ k∈Finset.Icc 1 (endpoint u j),joinedIncrement u y j p q a k)=
@@ -258,7 +258,7 @@ theorem joinedIncrement_eq_zero {u y : ℝ} {j k : ℕ}
         Nat.cast_pow,Nat.cast_add,Nat.cast_ofNat]
     rw [he]
     exact log_le_log (by exact_mod_cast hphysical) (by exact_mod_cast hphys)
-  simp only [joinedIncrement,if_neg hn,
+  simp only [joinedIncrement,ite_eq_right hn,
     ZetaRieszPrimeHeadPeriods.headIncrement_eq_zero hk0 hL,sub_self]
 
 private theorem blockCost_extend (X Y : ℕ) (hXY : X≤Y) (g : ℕ→ℕ) (t : ℕ→ℝ) :
@@ -275,8 +275,8 @@ private theorem blockCost_extend (X Y : ℕ) (hXY : X≤Y) (g : ℕ→ℕ) (t : 
       obtain ⟨hk,hg⟩ := Finset.mem_filter.mp hk
       have hx : ¬k≤X := fun hx => hn
         (Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨(Finset.mem_Icc.mp hk).1,hx⟩,hg⟩)
-      simp only [if_neg hx])]
-    exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp (Finset.mem_filter.mp hk).1).2)
+      simp only [ite_eq_right hx])]
+    exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp (Finset.mem_filter.mp hk).1).2)
   simp only [blockCost,hb]
   symm
   apply Finset.sum_subset (Finset.image_subset_image hK)
@@ -297,8 +297,8 @@ theorem blockCost_joinedIncrement (u y : ℝ) (j : ℕ) (p : Fin 5→ℝ)
       if k≤ZetaRieszPrimeHeadPeriods.endpoint u j then joinedIncrement u y j p q a k else 0 := by
     funext k
     by_cases hk : k≤ZetaRieszPrimeHeadPeriods.endpoint u j
-    · simp only [if_pos hk]
-    · simp only [if_neg hk,joinedIncrement_eq_zero (lt_of_not_ge hk)]
+    · simp only [ite_eq_left hk]
+    · simp only [ite_eq_right hk,joinedIncrement_eq_zero (lt_of_not_ge hk)]
   have hXY : ZetaRieszPrimeHeadPeriods.endpoint u j≤endpoint u j := le_max_left _ _
   rw [he,blockCost_extend _ _ hXY]
   rfl

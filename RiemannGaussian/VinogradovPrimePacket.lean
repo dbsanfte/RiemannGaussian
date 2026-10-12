@@ -87,7 +87,7 @@ theorem exists_uniform_avoiding_packet (M R : ℕ) (hM : 0 < M) :
   apply exists_prime_not_dvd (fun p hp => (hP p hp).1) hD
   have hprod : M ^ R ≤ ∏ p ∈ P, p := by
     rw [← hcard, ← Finset.prod_const]
-    exact Finset.prod_le_prod (fun _ _ => Nat.zero_le _) (fun p hp => (hP p hp).2.1.le)
+    exact Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _) (fun p hp => (hP p hp).2.1.le)
   exact hbound.trans_le hprod
 
 /-- The full ordered product of pairwise integer distances; no zero diagonal factors are inserted. -/
@@ -110,11 +110,11 @@ theorem separationProduct_le {k X : ℕ} (x : Fin k → ℕ) (hx : ∀ i, x i �
   unfold separationProduct
   calc
     _ ≤ ∏ _i : Fin k, X ^ (k - 1) := by
-      apply Finset.prod_le_prod (fun _ _ => Nat.zero_le _)
+      apply Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _)
       intro i hi
       calc
         _ ≤ ∏ _j ∈ (Finset.univ.erase i), X := by
-          apply Finset.prod_le_prod (fun _ _ => Nat.zero_le _)
+          apply Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _)
           intro j hj
           unfold Nat.dist
           have hiX := hx i

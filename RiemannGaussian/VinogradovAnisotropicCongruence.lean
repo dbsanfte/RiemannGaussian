@@ -75,7 +75,7 @@ theorem nonsingular_anisotropic_card_le {p k n : ℕ} [Fact p.Prime]
   apply Nat.mul_le_mul_right
   calc
     (∏ i, (T i).card) ≤ ∏ i, p ^ (n - e i) := by
-      apply Finset.prod_le_prod (fun _ _ => Nat.zero_le _)
+      apply Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _)
       intro i hi
       exact prime_power_class_card_le (p := p) (he i) (a i)
     _ = p ^ (∑ i, (n - e i)) := Finset.prod_pow_eq_pow_sum _ _ _

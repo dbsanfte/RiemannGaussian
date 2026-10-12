@@ -117,10 +117,10 @@ theorem rectangleOmittedMass_bounds {n : ℕ} (h : FullParityBox n) (N : ℕ) :
     apply Finset.sum_le_sum
     intro d hd
     by_cases hout : d ∉ rectangleAllocations N n
-    · rw [if_pos hout]
+    · rw [ite_eq_left hout]
       rcases hcover d hd hout with he | he | he | he <;>
-        simp only [if_pos he] <;> split_ifs <;> linarith [hw d]
-    · rw [if_neg hout]
+        simp only [ite_eq_left he] <;> split_ifs <;> linarith [hw d]
+    · rw [ite_eq_right hout]
       split_ifs <;> linarith [hw d]
   constructor
   · exact Finset.sum_nonneg (fun d _ => hw d)

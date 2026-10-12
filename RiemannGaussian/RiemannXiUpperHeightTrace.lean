@@ -35,9 +35,9 @@ theorem zetaUpperSpectralHeightSummand_nonneg
     (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperSpectralHeightSummand rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperSpectralHeightSummand, if_pos hupper]
+  · rw [zetaUpperSpectralHeightSummand, ite_eq_left hupper]
     exact mul_nonneg (Nat.cast_nonneg _) hupper.le
-  · rw [zetaUpperSpectralHeightSummand, if_neg hupper]
+  · rw [zetaUpperSpectralHeightSummand, ite_eq_right hupper]
 
 /-- The complete upper spectral-xi height mass.  The value is extended real
 because finiteness is neither assumed nor currently known. -/
@@ -63,7 +63,7 @@ theorem tendsto_zetaUpperHyperbolicHeatSummand_zero
   · have hheight : zetaUpperSpectralHeightSummand rho =
         (analyticZetaZeroMultiplicity rho : ℝ) *
           (zetaSpectralCoordinate rho.1).im := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hupper]
     rw [hheight]
     have hlimit :=
       (tendsto_upperHalfPlaneHyperbolicHeatIntegrand_zero z
@@ -74,16 +74,16 @@ theorem tendsto_zetaUpperHyperbolicHeatSummand_zero
           upperHalfPlaneHyperbolicHeatIntegrand z
             (zetaSpectralCoordinate rho.1) tau := by
       funext tau
-      rw [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+      rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     rw [heq]
     convert hlimit using 1
     ring_nf
   · have hheat : (fun tau ↦
         zetaUpperHyperbolicHeatSummand z tau rho) = fun _ ↦ 0 := by
       funext tau
-      rw [zetaUpperHyperbolicHeatSummand, if_neg hupper]
+      rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
     have hheight : zetaUpperSpectralHeightSummand rho = 0 := by
-      rw [zetaUpperSpectralHeightSummand, if_neg hupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_right hupper]
     rw [hheat, hheight, mul_zero]
     exact tendsto_const_nhds
 
@@ -152,14 +152,14 @@ theorem monotone_zetaUpperHyperbolicHeatSummand_reciprocal
   intro n m hnm
   apply ENNReal.ofReal_le_ofReal
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicHeatSummand, if_pos hupper,
-      zetaUpperHyperbolicHeatSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper,
+      zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     apply mul_le_mul_of_nonneg_left _ (Nat.cast_nonneg _)
     exact upperHalfPlaneHyperbolicHeatIntegrand_le_of_time_le
       hz hupper (reciprocalNatProperTime_pos m)
       (antitone_reciprocalNatProperTime hnm)
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper,
-      zetaUpperHyperbolicHeatSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper,
+      zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
 
 /-- The complete spectral-xi heat is antitone on positive proper time. -/
 theorem riemannXiUpperHyperbolicHeatSum_le_of_time_le
@@ -173,13 +173,13 @@ theorem riemannXiUpperHyperbolicHeatSum_le_of_time_le
     (summable_zetaUpperHyperbolicHeatSummand hz hs)
   intro rho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicHeatSummand, if_pos hupper,
-      zetaUpperHyperbolicHeatSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper,
+      zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     apply mul_le_mul_of_nonneg_left _ (Nat.cast_nonneg _)
     exact upperHalfPlaneHyperbolicHeatIntegrand_le_of_time_le
       hz hupper hs hst
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper,
-      zetaUpperHyperbolicHeatSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper,
+      zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
 
 /-- Lifting the convergent positive-time real series to `ℝ≥0∞` commutes
 with its sum. -/
@@ -324,7 +324,7 @@ theorem riemannXiUpperSpectralHeightMass_eq_zero_iff_riemannHypothesis :
     obtain ⟨rho, rfl⟩ :=
       (riemannXiSpectral_eq_zero_iff_exists_zetaZero w).mp hwzero
     have hsummand : 0 < zetaUpperSpectralHeightSummand rho := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper
@@ -332,7 +332,9 @@ theorem riemannXiUpperSpectralHeightMass_eq_zero_iff_riemannHypothesis :
         (zetaUpperSpectralHeightSummand rho) := ENNReal.ofReal_pos.mpr hsummand
     have hle : ENNReal.ofReal (zetaUpperSpectralHeightSummand rho) ≤
         riemannXiUpperSpectralHeightMass := by
-      exact ENNReal.le_tsum rho
+      unfold riemannXiUpperSpectralHeightMass
+      exact ENNReal.le_tsum (f := fun r : NontrivialZetaZero ↦
+        ENNReal.ofReal (zetaUpperSpectralHeightSummand r)) rho
     rw [hzero] at hle
     exact (not_lt_of_ge hle) hterm
   · intro hRH
@@ -344,7 +346,7 @@ theorem riemannXiUpperSpectralHeightMass_eq_zero_iff_riemannHypothesis :
         rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
     have hnupper : ¬0 < (zetaSpectralCoordinate rho.1).im := by
       linarith
-    rw [zetaUpperSpectralHeightSummand, if_neg hnupper,
+    rw [zetaUpperSpectralHeightSummand, ite_eq_right hnupper,
       ENNReal.ofReal_zero]
 
 end

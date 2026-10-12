@@ -145,15 +145,15 @@ theorem sum_quarticColour [Fintype ι] [DecidableEq ι]
     _ = ∏ i, ∑ r : Fin 4, quarticLocalPhase a b c d i r := hfactor
     _ = if QuarticColourBalanced a b c d then 4 ^ Fintype.card ι else 0 := by
       by_cases hbal : QuarticColourBalanced a b c d
-      · rw [if_pos hbal]
-        simp_rw [sum_quarticLocalPhase, if_pos (hbal _)]
+      · rw [ite_eq_left hbal]
+        simp_rw [sum_quarticLocalPhase, ite_eq_left (hbal _)]
         simp
-      · rw [if_neg hbal]
+      · rw [ite_eq_right hbal]
         have hnot : ¬ ∀ i, pairMultiplicity i a b = pairMultiplicity i c d := by
           simpa [QuarticColourBalanced] using hbal
         obtain ⟨i, hi⟩ := not_forall.mp hnot
         have hzero : (∑ r : Fin 4, quarticLocalPhase a b c d i r) = 0 := by
-          rw [sum_quarticLocalPhase, if_neg hi]
+          rw [sum_quarticLocalPhase, ite_eq_right hi]
         rw [Finset.prod_eq_zero (Finset.mem_univ i) hzero]
 
 /-- Pairing form of the selector: the surviving monomials are exactly the

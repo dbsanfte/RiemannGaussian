@@ -62,7 +62,7 @@ theorem central_prime_log_lt {u : ℝ} {j n p : ℕ} (hn : n∈centralLabels u j
     positivity
   have hlog : 0<log n := by linarith only [ht,hN]
   have hmax : p≤largestPrime n := by
-    rw [largestPrime,dif_pos
+    rw [largestPrime,dite_eq_left
       (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   have hl := log_le_log
@@ -190,7 +190,7 @@ theorem sum_step (u y : ℝ) (j : ℕ) (p : Fin 5→ℝ) (q : Fin 6→ℝ) (a : 
     simp only [hp.primeFactors,Finset.card_singleton] at hh
     omega
   simp only [ZetaRieszBalancedAllocationPayment.unallocatedWeight,
-    SquarefreeVaughanLogSource.coefficient,if_pos (And.intro (hs n (hd hn)) hnp)]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro (hs n (hd hn)) hnp)]
   push_cast
   ring
 
@@ -208,8 +208,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hnot
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hnot (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 /-- The radial payment is spent ONCE in the current full carrier floor.
 The only new error is geometrically vanishing and independent of zeros. -/

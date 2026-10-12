@@ -76,7 +76,7 @@ theorem coefficient_balanced_extension {p q r a : ℕ}
       if a.Prime then ((-Real.log (p*(q*(r*a)) : ℕ)*Real.log a/L : ℝ) : ℂ) else 0 := by
   have hnp : ¬(p*(q*(r*a))).Prime := Nat.not_prime_mul hp.ne_one
     (fun h => hq.ne_one (mul_eq_one.mp h).1)
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,
     riesz_balanced_extension hp hq hr hs ha1 hpq hpr hqr ht]
   split_ifs <;> simp
 
@@ -225,7 +225,7 @@ theorem norm_descendants_le (A D : Finset ℕ) (N : ℕ) (y : ℝ) {p q r : ℕ}
     obtain ⟨ha1,hs,hpq,hpr,hqr,ht,hw,_⟩ := hD a ha
     have hnp : ¬a.Prime := fun h => hout (Finset.mem_filter.mpr ⟨ha,h⟩)
     have hb := norm_residual_extension_le A N hp hq hr hs ha1 hL hpq hpr hqr ht hw
-    rw [if_neg hnp] at hb
+    rw [ite_eq_right hnp] at hb
     rw [norm_le_zero_iff.mp hb,zero_mul]
   rw [he]
   have hmass := small_factor_log_mass_le N Q (by
@@ -242,7 +242,7 @@ theorem norm_descendants_le (A D : Finset ℕ) (N : ℕ) (y : ℝ) {p q r : ℕ}
       obtain ⟨haD,hap⟩ := Finset.mem_filter.mp ha
       obtain ⟨ha1,hs,hpq,hpr,hqr,ht,hw,_⟩ := hD a haD
       have hc := norm_residual_extension_le A N hp hq hr hs ha1 hL hpq hpr hqr ht hw
-      rw [if_pos hap] at hc
+      rw [ite_eq_left hap] at hc
       have hk := norm_kernel_extension_le N y hm hap.pos hT
       rw [Nat.mul_assoc,Nat.mul_assoc] at hk
       rw [norm_mul]
@@ -261,7 +261,8 @@ theorem norm_descendants_le (A D : Finset ℕ) (N : ℕ) (y : ℝ) {p q r : ℕ}
       have h := mul_le_mul_of_nonneg_right
         (mul_le_mul_of_nonneg_left hmass (by norm_num : (0 : ℝ) ≤ 2))
         (norm_nonneg (zetaPrimeLogKernel N (3/2+Complex.I*y) (p*(q*r))))
-      convert h using 1 <;> first | rfl | ring
+      convert h using 1
+      first | rfl | ring
 
 /-- The pair and full-window hypotheses of the quantitative bound follow
 from this concrete interior chamber and the already paid smooth-factor

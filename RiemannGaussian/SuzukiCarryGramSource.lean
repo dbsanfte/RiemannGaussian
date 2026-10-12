@@ -197,7 +197,7 @@ private theorem realCarry_eq_one {N : ℕ} {t : ℝ}
   have hf : (⌊2*(N : ℝ)*Real.exp (-t)⌋ : ℤ) = 1 :=
     Int.floor_eq_iff.mpr ⟨by norm_num; linarith, by norm_num; linarith⟩
   have ho : ¬Even (1 : ℤ) := by decide
-  simp only [realCarry, hf, if_neg ho]
+  simp only [realCarry, hf, ite_eq_right ho]
 
 /-- Bounds for the exact continuous denominator carry, including endpoints. -/
 theorem realCarry_nonneg (N : ℕ) (t : ℝ) : 0 ≤ realCarry N t :=

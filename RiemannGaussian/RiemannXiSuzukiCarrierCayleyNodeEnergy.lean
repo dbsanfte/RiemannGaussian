@@ -283,11 +283,11 @@ theorem norm_sq_suzukiXiCarrierCayleyOffAxisNodeCoefficientVector
       |(zetaSpectralCoordinate rho.1).im|⁻¹ := by
   rcases lt_or_gt_of_ne hoffAxis with hlower | hupper
   · rw [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-      if_neg (not_lt_of_ge hlower.le),
+      ite_eq_right (not_lt_of_ge hlower.le),
       norm_sq_suzukiXiCarrierCayleyForwardGeometricCoefficientVector_lowerNode
         rho hlower,
       abs_of_neg hlower]
-  · rw [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector, if_pos hupper,
+  · rw [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector, ite_eq_left hupper,
       norm_sq_suzukiXiCarrierCayleyBackwardGeometricCoefficientVector_upperNode
         rho hupper,
       abs_of_pos hupper]

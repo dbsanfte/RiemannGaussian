@@ -132,10 +132,10 @@ theorem actual_resonance_le_explicit (k r s : ℕ) (hr : 0 < r) :
   have he (j : Fin k) : e j + (if 2 * k < 3 * (j.val + 1) ∧ j.val + 1 < k then 2 * (k - (j.val + 1 + 1)) else 0) =
       2 * (j.val + 1) := by
     by_cases hj : 2 * k < 3 * (j.val + 1) ∧ j.val + 1 < k
-    · simp only [e, if_pos hj]
+    · simp only [e, ite_eq_left hj]
       have hq := j.isLt
       omega
-    · simp only [e, if_neg hj, add_zero]
+    · simp only [e, ite_eq_right hj, add_zero]
   have hEsum : (∑ j : Fin k, e j) + rectangleSaving k = k * (k + 1) := by
     calc
       _ = ∑ j : Fin k, (e j + (if 2 * k < 3 * (j.val + 1) ∧ j.val + 1 < k then 2 * (k - (j.val + 1 + 1)) else 0)) := by
@@ -156,7 +156,7 @@ theorem actual_resonance_le_explicit (k r s : ℕ) (hr : 0 < r) :
   apply hbound.trans
   calc
     _ ≤ ∏ j : Fin k, W * (M : ℝ) ^ (e j) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro j _
         have hp : 0 ≤ 2 / ((a j) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j))) :=
           div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j).le _)
@@ -177,23 +177,23 @@ theorem actual_resonance_le_explicit (k r s : ℕ) (hr : 0 < r) :
           dsimp only [F]
           linarith only [hpos]
         by_cases hj : 2 * k < 3 * (j.val + 1) ∧ j.val + 1 < k
-        · rw [if_pos hj]
+        · rw [ite_eq_left hj]
           have hp : 0 ≤ 2 / ((a j) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j))) :=
             div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j).le _)
               (tail_denominator_pos (ha j)).le)
           apply (mul_le_mul_of_nonneg_left (min_le_right _ _) hp).trans
           apply (rectangle_coordinate_power_le k r hr hMr htlo hthi hzlo hzhi j hj.1.le).trans
           dsimp only [e, W]
-          rw [if_pos hj]
+          rw [ite_eq_left hj]
           apply mul_le_mul_of_nonneg_right _ (by positivity)
           have hfour : (4 : ℝ) ^ (j.val + 1) ≤ (4 : ℝ) ^ k :=
             pow_le_pow_right₀ (by norm_num) (by omega)
           exact mul_le_mul hfour (mul_le_mul_of_nonneg_left hsmall hG.le)
             (by positivity) (by positivity)
-        · rw [if_neg hj]
+        · rw [ite_eq_right hj]
           apply (full_coordinate_power_le r s hr hMr (j.val + 1)).trans
           dsimp only [e, W]
-          rw [if_neg hj]
+          rw [ite_eq_right hj]
           apply mul_le_mul_of_nonneg_right _ (by positivity)
           calc
             _ ≤ G * F := mul_le_mul_of_nonneg_left hfull hG.le

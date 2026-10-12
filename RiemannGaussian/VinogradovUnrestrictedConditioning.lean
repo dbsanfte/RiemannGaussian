@@ -57,7 +57,8 @@ theorem exists_conditioning_of_packet {m d T e P s M U r Q q : ℕ}
       ((2 * π.card : ℕ) : ℝ) * (nonsingularCount p m d P s H (monomialTail m d 1 q Q) : ℝ) := by
     exact_mod_cast hcount
   have h := hc.trans (mul_le_mul_of_nonneg_left hcondition (Nat.cast_nonneg (2 * π.card)))
-  convert h using 1 <;> try rfl
+  convert h using 1
+  try rfl
   push_cast
   ring
 

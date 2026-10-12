@@ -88,11 +88,11 @@ private theorem bare_eq_prefix (p : Polynomial ℂ) (N : ℕ) (W : Finset ℕ)
       -(zetaSquarefreeDivisibilityPrefixCoefficient 1 W n *
         zetaPrimeFilterKernel (dividedPolynomial p N) N s n) := by
   by_cases hsf : Squarefree n <;> by_cases hd : (∏ a ∈ W, a) ∣ n
-  · simp only [hsf, hd, and_self, if_true, one_mul,
+  · simp only [hsf, hd, and_self, ite_true, one_mul,
       zetaSquarefreeDivisibilityPrefixCoefficient]
     simp only [zetaDivisibilityPrefixCoefficient, Finset.Icc_self,
       Finset.sum_singleton, zetaMultipleLogCoefficient, one_dvd, hd, and_self,
-      if_true, Nat.div_one, ArithmeticFunction.moebius_apply_one,
+      ite_true, Nat.div_one, ArithmeticFunction.moebius_apply_one,
       Int.cast_one, one_smul, Pi.neg_apply, neg_mul, neg_neg]
     exact (log_mul_kernel p N s n).symm
   all_goals simp [zetaSquarefreeDivisibilityPrefixCoefficient, hsf,
@@ -164,7 +164,7 @@ theorem summable_response (p : Polynomial ℂ) (S : Finset ℕ)
   · have hz (n : ℕ) : coefficient S P n = 0 := by
       have h : ¬(Squarefree n ∧ (¬∃ a ∈ S, a ∣ n) ∧ P ∣ n) :=
         fun h ↦ hP (h.1.squarefree_of_dvd h.2.2)
-      simp only [coefficient, if_neg h]
+      simp only [coefficient, ite_eq_right h]
     simp [hz]
 
 /-- Every marked bare response has an independent bound uniform in
@@ -221,7 +221,7 @@ theorem exists_response_bound (y : ℝ) (hy : 1 < |y|)
         rw [Finset.prod_one_add, Finset.mul_sum]
         exact Finset.sum_congr rfl (fun W _ ↦ by ring)
       _ ≤ (A * 4) * ∏ a ∈ S, (1 + 2 * w a) := mul_le_mul_of_nonneg_left
-        (Finset.prod_le_prod (fun a _ ↦ by linarith [hw a])
+        (Finset.prod_le_prod₀ (fun a _ ↦ by linarith [hw a])
           (fun a _ ↦ by linarith [hw a])) (by positivity)
       _ ≤ (A * 4) * (Real.exp (2 * primeSquareWeightMass τ) * Real.exp (4 * Real.sqrt R)) :=
         mul_le_mul_of_nonneg_left
@@ -234,7 +234,7 @@ theorem exists_response_bound (y : ℝ) (hy : 1 < |y|)
         apply hgood
         exact ⟨hsf.squarefree_of_dvd hd, fun a ha haS ↦
           hs ⟨a, haS, (Nat.dvd_of_mem_primeFactors ha).trans hd⟩⟩
-      simp only [coefficient, if_neg h]
+      simp only [coefficient, ite_eq_right h]
     simpa [response, hz] using hnonneg
 
 end

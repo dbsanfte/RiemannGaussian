@@ -4,7 +4,8 @@ at commit 6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 (tag v4.32.2), file
 PrimeNumberTheoremAnd/Fourier.lean.
 Copyright the PrimeNumberTheoremAnd contributors; Apache License 2.0
 (http://www.apache.org/licenses/LICENSE-2.0).
-Local modifications: redirected the intra-project import to Zeta23.FromPNTPlus.Sobolev.
+Local modifications: redirected the intra-project import to Zeta23.FromPNTPlus.Sobolev
+and placed the historical compatibility copy in namespace Zeta23.FromPNTPlus.
 Re-ported from the
 v4.29.0 port (commit 10e1218932db7e2432aa5881d750acb819e91f19) when the project
 moved to Lean v4.32.2 / Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c.
@@ -18,6 +19,10 @@ import Mathlib.Order.Filter.ZeroAndBoundedAtFilter
 import Mathlib.Analysis.Fourier.FourierTransformDeriv
 import Zeta23.FromPNTPlus.Sobolev
 
+
+/- Keep the historical compatibility copy separate from the pinned OpenAI dependency. -/
+namespace Zeta23.FromPNTPlus
+
 open FourierTransform Real Complex MeasureTheory Filter Topology BoundedContinuousFunction
   SchwartzMap VectorFourier BigOperators
 
@@ -26,7 +31,7 @@ local instance {E : Type*} : Coe (E → ℝ) (E → ℂ) := ⟨fun f n => f n⟩
 section lemmas
 
 @[simp]
-theorem nnnorm_eq_of_mem_circle (z : Circle) : ‖z.val‖₊ = 1 := NNReal.coe_eq_one.mp (by simp [Circle.norm_coe])
+theorem nnnorm_eq_of_mem_circle (z : Circle) : ‖z.val‖₊ = 1 := NNReal.coe_eq_one.mp (by simp)
 
 @[simp]
 theorem nnnorm_circle_smul (z : Circle) (s : ℂ) : ‖z • s‖₊ = ‖s‖₊ := by
@@ -197,3 +202,5 @@ lemma norm_oscillatory_integral_le_integral_deriv_div_abs
     rw [abs_div, abs_neg, abs_of_pos htwopi_pos]
     field_simp [Real.pi_ne_zero]
   rw [hden]
+
+end Zeta23.FromPNTPlus

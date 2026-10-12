@@ -56,7 +56,7 @@ theorem assignedAmplitude_prime_pair (A : Finset ℕ) (N : ℕ)
   intro b hb
   apply Finset.sum_eq_zero
   intro k _
-  exact if_neg (fun h => prime_pair_not_eligible hp hq hb h.2)
+  exact ite_eq_right (fun h => prime_pair_not_eligible hp hq hb h.2)
 
 /-- The original old-allocation share vanishes on every semiprime.
 This concerns `boundedShare`, not the unrelated marked rectangle weight. -/

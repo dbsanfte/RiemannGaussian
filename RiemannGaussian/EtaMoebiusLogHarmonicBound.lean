@@ -102,7 +102,7 @@ theorem abs_pairedEtaMoebiusLogEulerRemainder_le {M n : ℕ} (hn : 0 < n) (hnM :
   have hu := Real.log_le_log (div_pos hMR hnR) hhi.le
   have hgamlo := (Real.eulerMascheroniSeq_lt_eulerMascheroniConstant (M / n)).le
   have hgamhi := (Real.eulerMascheroniConstant_lt_eulerMascheroniSeq' (M / n)).le
-  simp only [Real.eulerMascheroniSeq, Real.eulerMascheroniSeq', if_neg (by omega : M / n ≠ 0)] at hgamlo hgamhi
+  simp only [Real.eulerMascheroniSeq, Real.eulerMascheroniSeq', ite_eq_right (by omega : M / n ≠ 0)] at hgamlo hgamhi
   have hlogstep : Real.log ((M / n : ℕ) + 1 : ℝ) - Real.log (M / n : ℕ) ≤ 1 / ((M / n : ℕ) : ℝ) := by
     rw [← Real.log_div (by positivity) hqpos.ne']
     have h := Real.log_le_sub_one_of_pos
@@ -130,7 +130,7 @@ theorem pairedEtaMoebiusLogHarmonic_mul_log_eq_euler {M : ℕ} (hM : 1 < M) :
   apply Finset.sum_congr rfl
   intro n hn
   have hnR : (0 : ℝ) < n := by exact_mod_cast (Finset.mem_Icc.mp hn).1
-  simp only [pairedEtaMoebiusTrialLogWeight, if_pos hM, pairedEtaMoebiusLogEulerRemainder,
+  simp only [pairedEtaMoebiusTrialLogWeight, ite_eq_left hM, pairedEtaMoebiusLogEulerRemainder,
     Real.log_div hMR.ne' hnR.ne']
   field_simp
   ring

@@ -33,9 +33,9 @@ theorem pairedEtaMoebiusTrialPrimitive_eq_harmonic_difference (M : ℕ) (w : ℕ
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hnx : (n : ℝ) ≤ x
-  · rw [if_pos hnx, pairedEtaMoebiusTrialAtom_eq_zero_of_le (Finset.mem_Icc.mp hn).1 hnx]
+  · rw [ite_eq_left hnx, pairedEtaMoebiusTrialAtom_eq_zero_of_le (Finset.mem_Icc.mp hn).1 hnx]
     ring
-  · rw [if_neg hnx, pairedEtaMoebiusTrialAtom_eq_neg_div hx (lt_of_not_ge hnx)]
+  · rw [ite_eq_right hnx, pairedEtaMoebiusTrialAtom_eq_neg_div hx (lt_of_not_ge hnx)]
     ring
 
 /-- Exact arithmetic trial coefficients at the original uniform physical scales. -/
@@ -137,7 +137,7 @@ theorem pairedEtaMoebiusTrialLogWeight_bounds {M n : ℕ} (hn : n ∈ Finset.Icc
     have hle : Real.log (n : ℝ) / Real.log (M : ℝ) ≤ 1 :=
       (div_le_one hMp).mpr (Real.log_le_log (by linarith) hnM)
     have hge := div_nonneg hn0 hMp.le
-    simp only [pairedEtaMoebiusTrialLogWeight, if_pos hM]
+    simp only [pairedEtaMoebiusTrialLogWeight, ite_eq_left hM]
     constructor <;> linarith
   · simp [pairedEtaMoebiusTrialLogWeight, hM]
 

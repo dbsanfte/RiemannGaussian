@@ -456,7 +456,7 @@ theorem hasSum_digamma_series {z : ℂ} (hz : z ∈ Complex.integerComplement) :
   have hmul : logDeriv (fun s => (s * Complex.exp (γc * s)) * ∏' n : ℕ, (1 + wTerm n s)) z
       = logDeriv (fun s : ℂ => s * Complex.exp (γc * s)) z
         + logDeriv (fun s => ∏' n : ℕ, (1 + wTerm n s)) z :=
-    logDeriv_mul z hgne hPne (hgdiff z) hPdiff
+    logDeriv_fun_mul z hgne hPne (hgdiff z) hPdiff
   have hldg : logDeriv (fun s : ℂ => s * Complex.exp (γc * s)) z = 1 / z + γc := by
     have hder : HasDerivAt (fun s : ℂ => s * Complex.exp (γc * s))
         (1 * Complex.exp (γc * z) + z * (γc * Complex.exp (γc * z))) z := by

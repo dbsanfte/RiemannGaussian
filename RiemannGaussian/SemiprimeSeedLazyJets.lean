@@ -244,8 +244,8 @@ theorem selectDetector_of_member {S : Type*} {N : ℕ} {rows : List (S×ℕ)}
     | some d => simp only [ne_eq,reduceCtorEq,not_false_eq_true]
     | none =>
       by_cases hz : head.2=0
-      · simp only [if_pos hz,ne_eq,reduceCtorEq,not_false_eq_true]
-      · rw [if_neg hz]
+      · simp only [ite_eq_left hz,ne_eq,reduceCtorEq,not_false_eq_true]
+      · rw [ite_eq_right hz]
         rcases List.mem_cons.mp hrow with he | ht
         · subst head
           rcases hsuccess with hs | hs
@@ -349,7 +349,7 @@ theorem readSeed_of_detector_factor {N m d : ℕ} (g : (ZMod N)ˣ)
     unfold readSeed SemiprimeWrapIndexRecovery.recoverTaggedInterval
       SemiprimeWrapIndexRecovery.recoverTaggedJet
     dsimp only
-    rw [if_pos hp]
+    rw [ite_eq_left hp]
   · cases h
 
 /-- A clear nonzero detector makes the established reader return none,
@@ -365,12 +365,12 @@ theorem readSeed_of_clear_nonzero {N m : ℕ} (g : (ZMod N)ˣ)
       N.gcd (intervalProduct ((seedBase g m : (ZMod N)ˣ) : ZMod N)
         (s.step : ZMod N) (seedLength m)).val<N) := by
     intro hp
-    rw [checkedSignal,if_pos hp] at hclear
+    rw [checkedSignal,ite_eq_left hp] at hclear
     cases hclear
   unfold readSeed SemiprimeWrapIndexRecovery.recoverTaggedInterval
     SemiprimeWrapIndexRecovery.recoverTaggedJet
   dsimp only
-  rw [if_neg hn,if_neg hzero]
+  rw [ite_eq_right hn,ite_eq_right hzero]
 
 /-- Exact acquired original derivatives restore the original saturated
 seed reader. No divided half-product or unit ratio is used. -/
@@ -425,14 +425,14 @@ theorem lazySeedRecoveryWith_exact {N : ℕ} (hN : 0<N) (g : (ZMod N)ˣ) (m : �
         | none => exact False.elim (hread ho)
         | some outcome =>
           cases outcome <;> simp only [lazySeedRecoveryWith,originalDetectorRows,List.map_cons,
-            selectDetector,hc,if_pos hv,hr,ho,scanSeedSums]
+            selectDetector,hc,ite_eq_left hv,hr,ho,scanSeedSums]
       · have hv : ¬(intervalProduct ((seedBase g m : (ZMod N)ˣ) : ZMod N)
           (s.step : ZMod N) (seedLength m)).val=0 := by
           intro hh
           exact hz (hPiff.mp hh)
         have hr := readSeed_of_clear_nonzero g s hc hz
         simp only [lazySeedRecoveryWith,originalDetectorRows,List.map_cons,selectDetector,hc,
-          if_neg hv,scanSeedSums,hr] at ht ⊢
+          ite_eq_right hv,scanSeedSums,hr] at ht ⊢
         cases ho : (selectDetector N (tail.map (fun s =>
           (s,(intervalProduct ((seedBase g m : (ZMod N)ˣ) : ZMod N)
             (s.step : ZMod N) (seedLength m)).val)))).outcome with

@@ -59,7 +59,7 @@ theorem zetaMoebiusLogDivisorFibre_middle (D n : ℕ) {p q d : ℕ}
   have hbase : d ≤ D := (Nat.le_mul_of_pos_left d hp.pos).trans hright
   have htop : D < (p * q) * d := by nlinarith [hp.one_lt]
   rw [zetaMoebiusLogDivisorFibre_two_primes D n hp hq hpq hd,
-    if_neg (not_lt.mpr hbase), if_neg (not_lt.mpr hright), if_pos hleft, if_pos htop]
+    ite_eq_right (not_lt.mpr hbase), ite_eq_right (not_lt.mpr hright), ite_eq_left hleft, ite_eq_left htop]
   ring
 
 /-- The middle-fibre norm has no logarithm of the ambient integer. -/
@@ -79,7 +79,7 @@ theorem zetaMoebiusLogDivisorFibre_outer (D n : ℕ) {p q d : ℕ}
       -((Real.log (((p * q : ℕ) : ℝ) * n) : ℂ) - (Real.log d : ℂ)) := by
   have htop : D < (p * q) * d := by nlinarith [hp.one_lt]
   rw [zetaMoebiusLogDivisorFibre_two_primes D n hp hq hpq hd,
-    if_neg (not_lt.mpr hbase), if_pos hpD, if_pos hqD, if_pos htop]
+    ite_eq_right (not_lt.mpr hbase), ite_eq_left hpD, ite_eq_left hqD, ite_eq_left htop]
   ring
 
 /-- The first boundary range retains exactly the complementary logarithm.
@@ -91,7 +91,7 @@ theorem zetaMoebiusLogDivisorFibre_inner (D : ℕ) {p q n d : ℕ}
       (Real.log n : ℂ) - (Real.log d : ℂ) := by
   have hbase : d ≤ D := (Nat.le_mul_of_pos_left d hp.pos).trans hpD
   rw [zetaMoebiusLogDivisorFibre_two_primes D n hp hq hpq hd,
-    if_neg (not_lt.mpr hbase), if_neg (not_lt.mpr hpD), if_neg (not_lt.mpr hqD), if_pos htop]
+    ite_eq_right (not_lt.mpr hbase), ite_eq_right (not_lt.mpr hpD), ite_eq_right (not_lt.mpr hqD), ite_eq_left htop]
   rw [Real.log_mul (by exact_mod_cast (Nat.mul_pos hp.pos hq.pos).ne')
     (by exact_mod_cast hn.ne'), Nat.cast_mul,
     Real.log_mul (by exact_mod_cast hp.ne_zero) (by exact_mod_cast hq.ne_zero)]

@@ -68,10 +68,10 @@ lemma sum_sq_diff_lower {p m : ι → ℝ} (hm : ∀ i, 0 ≤ m i)
     intro i _
     rcases eq_or_ne (p i) 0 with hi | hi
     · have his : i ∉ s := by simp [hs_def, mem_filter, hi]
-      rw [if_neg his, hi]
+      rw [ite_eq_right his, hi]
       nlinarith [hm i, sq_nonneg (m i)]
     · have his : i ∈ s := by simp [hs_def, mem_filter, hi]
-      rw [if_pos his]
+      rw [ite_eq_left his]
       nlinarith [sq_ge_linear (p i - m i) c, hm i]
   have hsum := sum_le_sum hptwise
   simp only [sum_sub_distrib, ← mul_sum, sum_ite_mem, univ_inter, sum_const,
@@ -92,9 +92,9 @@ lemma sum_sq_lower_of_card_pos_le {q : ι → ℝ}
     intro i _
     rcases eq_or_ne (q i) 0 with hi | hi
     · have his : i ∉ s := by simp [hs_def, mem_filter, hi]
-      rw [if_neg his, hi]; simp
+      rw [ite_eq_right his, hi]; simp
     · have his : i ∈ s := by simp [hs_def, mem_filter, hi]
-      rw [if_pos his]; exact sq_ge_linear' (q i) c
+      rw [ite_eq_left his]; exact sq_ge_linear' (q i) c
   have hsum := sum_le_sum hptwise
   simp only [sum_sub_distrib, ← mul_sum, sum_ite_mem, univ_inter, sum_const,
     nsmul_eq_mul] at hsum

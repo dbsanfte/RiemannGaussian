@@ -124,10 +124,10 @@ theorem countedSqrt_invariant (n : ℕ) :
   | h n ih =>
     by_cases hn : n=0
     · subst n
-      rw [countedSqrt,dif_pos rfl]
+      rw [countedSqrt,dite_eq_left rfl]
       exact ⟨rfl,le_rfl⟩
     · obtain ⟨he,hu⟩ := ih (n/4) (Nat.div_lt_self (Nat.pos_of_ne_zero hn) (by decide))
-      rw [countedSqrt,dif_neg hn]
+      rw [countedSqrt,dite_eq_right hn]
       exact makeSqrtFrame_invariant he hu
 
 /-- The executable root is exactly the preceding mathematical integer root. -/
@@ -156,10 +156,10 @@ theorem countedSqrt_steps (n : ℕ) : (countedSqrt n).steps=Nat.clog 4 (n+1) := 
   | h n ih =>
     by_cases hn : n=0
     · subst n
-      rw [countedSqrt,dif_pos rfl]
+      rw [countedSqrt,dite_eq_left rfl]
       exact (Nat.clog_one_right 4).symm
     · have hc := ih (n/4) (Nat.div_lt_self (Nat.pos_of_ne_zero hn) (by decide))
-      rw [countedSqrt,dif_neg hn]
+      rw [countedSqrt,dite_eq_right hn]
       dsimp only
       rw [hc,clog_quartering (Nat.pos_of_ne_zero hn)]
 
@@ -177,10 +177,10 @@ theorem countedSqrt_counts (n : ℕ) :
   | h n ih =>
     by_cases hn : n=0
     · subst n
-      rw [countedSqrt,dif_pos rfl]
+      rw [countedSqrt,dite_eq_left rfl]
       simp only [Nat.mul_zero,Nat.zero_add,List.length_nil,le_refl,and_self]
     · have hc := ih (n/4) (Nat.div_lt_self (Nat.pos_of_ne_zero hn) (by decide))
-      rw [countedSqrt,dif_neg hn]
+      rw [countedSqrt,dite_eq_right hn]
       dsimp only [List.length_cons]
       split <;> omega
 
@@ -243,12 +243,12 @@ theorem countedSqrt_trace_bounded (n : ℕ) :
   | h n ih =>
     by_cases hn : n=0
     · subst n
-      rw [countedSqrt,dif_pos rfl]
+      rw [countedSqrt,dite_eq_left rfl]
       intro frame hf
       exact False.elim (List.not_mem_nil hf)
     · have hlt := Nat.div_lt_self (Nat.pos_of_ne_zero hn) (by decide : 1<(4 : ℕ))
       obtain ⟨he,hu⟩ := countedSqrt_invariant (n/4)
-      rw [countedSqrt,dif_neg hn]
+      rw [countedSqrt,dite_eq_right hn]
       dsimp only
       intro frame hf
       rcases List.mem_cons.mp hf with rfl | hf

@@ -96,12 +96,12 @@ theorem primePairFactors_eligible (S : Finset ℕ) (hS : ∀ p ∈ S, p.Prime) :
 private theorem prod_bool (S : Finset ℕ) (b : ℕ → Prop) [DecidablePred b] :
     (∏ p ∈ S, if b p then (1 : ℂ) else 0) = if ∀ p ∈ S, b p then 1 else 0 := by
   by_cases h : ∀ p ∈ S, b p
-  · rw [if_pos h]
-    exact Finset.prod_eq_one (fun p hp ↦ if_pos (h p hp))
-  · rw [if_neg h]
+  · rw [ite_eq_left h]
+    exact Finset.prod_eq_one (fun p hp ↦ ite_eq_left (h p hp))
+  · rw [ite_eq_right h]
     push Not at h
     obtain ⟨p, hp, hb⟩ := h
-    exact Finset.prod_eq_zero hp (if_neg hb)
+    exact Finset.prod_eq_zero hp (ite_eq_right hb)
 
 private theorem prime_pattern_eq (S T : Finset ℕ) (hT : T ⊆ S) (n : ℕ) :
     (∏ p ∈ T, if p ∣ n then (1 : ℂ) else 0) *
@@ -133,12 +133,12 @@ private theorem prime_pattern_eq (S T : Finset ℕ) (hT : T ⊆ S) (n : ℕ) :
   rw [prod_bool, prod_bool]
   by_cases heq : T = S.filter (fun p ↦ p ∣ n)
   · obtain ⟨ht, hu⟩ := he.mpr heq
-    rw [if_pos ht, if_pos hu, if_pos heq, one_mul]
-  · rw [if_neg heq]
+    rw [ite_eq_left ht, ite_eq_left hu, ite_eq_left heq, one_mul]
+  · rw [ite_eq_right heq]
     by_cases ht : ∀ p ∈ T, p ∣ n
     · have hu : ¬∀ p ∈ S \ T, ¬p ∣ n := fun hu ↦ heq (he.mp ⟨ht, hu⟩)
-      rw [if_neg hu, mul_zero]
-    · rw [if_neg ht, zero_mul]
+      rw [ite_eq_right hu, mul_zero]
+    · rw [ite_eq_right ht, zero_mul]
 
 /-- The literal at-least-two-prime mask is the full signed pattern
 expansion for every complex physical weight. No overlaps are omitted. -/
@@ -316,7 +316,7 @@ theorem primePatternSieveCost_le_exp_sqrt (S : Finset ℕ) (R : ℕ)
       _ ≤ _ := by nlinarith [sum_inv_sqrt_Icc_le R]
   have hprod : (∏ p ∈ S, (1 + 2 * lcmSqrtFactorMass p)) ≤ Real.exp (8 * Real.sqrt R) := by
     calc
-      _ ≤ ∏ p ∈ S, Real.exp (2 * lcmSqrtFactorMass p) := Finset.prod_le_prod
+      _ ≤ ∏ p ∈ S, Real.exp (2 * lcmSqrtFactorMass p) := Finset.prod_le_prod₀
         (fun p _ ↦ by linarith [lcmSqrtFactorMass_nonneg p])
         (fun p _ ↦ by simpa only [add_comm] using Real.add_one_le_exp (2 * lcmSqrtFactorMass p))
       _ = Real.exp (2 * ∑ p ∈ S, lcmSqrtFactorMass p) := by rw [← Real.exp_sum, Finset.mul_sum]

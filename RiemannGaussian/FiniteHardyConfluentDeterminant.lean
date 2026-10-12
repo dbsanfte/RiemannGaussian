@@ -211,7 +211,7 @@ theorem
           intro y hy
           exact hs y (by simp [hy])
         simp only [Multiset.map_cons, Multiset.prod_cons, norm_mul]
-        apply mul_le_one₀
+        apply (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb)
         · exact norm_lowerRootInnerValue_le_one p hz
         · exact norm_nonneg _
         · exact ih hsTail

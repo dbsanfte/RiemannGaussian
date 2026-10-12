@@ -279,7 +279,7 @@ theorem close_owner_norm_bound {k N : ℕ} (hk : 0 < k) (hku : k ≤ 53)
       zetaPrimeLogKernel N (3/2+Complex.I*y) n‖) ≤ ∑ x ∈ V, f (label x) := by
     have hh := (Finset.sum_le_sum_of_subset_of_nonneg hcover (fun n _ _ => hf n)).trans
       (Finset.sum_image_le_of_nonneg (fun n _ => hf n))
-    simpa only [f,ite_true,Finset.sum_congr rfl (fun n hn => if_pos hn)] using hh
+    simpa only [f,ite_true,Finset.sum_congr rfl (fun n hn => ite_eq_left hn)] using hh
   have hpoint (b : ℕ) (hb : b ∈ R) (p : ℕ) (_hp : p ∈ pairWindow v b)
       (q : ℕ) (_hq : q ∈ pairWindow v b) :
       f (p*(q*b)) ≤ B*(Real.log b.minFac*(b : ℝ)⁻¹)*(p : ℝ)⁻¹*(q : ℝ)⁻¹ := by
@@ -292,13 +292,13 @@ theorem close_owner_norm_bound {k N : ℕ} (hk : 0 < k) (hku : k ≤ 53)
       have hh := boundary_atom_norm A y hv0 hNv hL0 hd.1 hd.2.1 hb1
         (dvd_mul_of_dvd_right (dvd_mul_left b q) p) hnT
       dsimp only [f]
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
       convert hh using 1
       dsimp [B]
       simp only [Nat.cast_mul,div_eq_mul_inv,mul_inv_rev]
       ring
     · dsimp only [f]
-      rw [if_neg hn]
+      rw [ite_eq_right hn]
       positivity [Real.log_natCast_nonneg b.minFac]
   have hsum : (∑ x ∈ V, f (label x)) ≤
       B*(3600/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v) := by
@@ -328,7 +328,7 @@ theorem close_owner_norm_bound {k N : ℕ} (hk : 0 < k) (hku : k ≤ 53)
         ring
       rw [he]
       convert mul_le_mul_of_nonneg_left hsq
-        (show 0 ≤ B*(Real.log b.minFac*(b : ℝ)⁻¹) by positivity) using 1 <;> first | rfl | ring
+        (show 0 ≤ B*(Real.log b.minFac*(b : ℝ)⁻¹) by positivity) using 1 ; first | rfl | ring
     have hh := Finset.sum_le_sum hpairs
     have he : (∑ b ∈ R, B*(Real.log b.minFac*(b : ℝ)⁻¹)*(3600/v^2)) =
         (B*(3600/v^2))*(∑ b ∈ R, Real.log b.minFac*(b : ℝ)⁻¹) := by

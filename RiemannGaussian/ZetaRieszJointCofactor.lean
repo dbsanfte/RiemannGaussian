@@ -51,14 +51,14 @@ theorem coupling_atom_eq {p : ℕ} (hp : p.Prime) (L y : ℝ) (k l a : ℕ) :
       simp [compositeAtom, coupledCoefficient, prefixAtom, hp]
     · have hne : a ≠ p := fun he => hd (he ▸ dvd_rfl)
       have hgood : a.Prime ∧ ¬p ∣ a := ⟨ha, hd⟩
-      simp only [compositeAtom, coupledCoefficient, prefixAtom, if_neg hnot,
-        if_pos ha, if_pos hgood, if_neg hne, zero_mul, zero_add, add_zero]
+      simp only [compositeAtom, coupledCoefficient, prefixAtom, ite_eq_right hnot,
+        ite_eq_left ha, ite_eq_left hgood, ite_eq_right hne, zero_mul, zero_add, add_zero]
       push_cast
       ring
   · have hne : a ≠ p := fun he => ha (he ▸ hp)
     have hnot : ¬(a.Prime ∧ ¬p ∣ a) := fun h => ha h.1
-    simp only [compositeAtom, coupledCoefficient, prefixAtom, if_neg ha,
-      if_neg hnot, if_neg hne, mul_zero, zero_mul, add_zero]
+    simp only [compositeAtom, coupledCoefficient, prefixAtom, ite_eq_right ha,
+      ite_eq_right hnot, ite_eq_right hne, mul_zero, zero_mul, add_zero]
 
 /-- The signed composite companion is a genuinely convergent arithmetic series, with
 every prime and completion correction retained. -/

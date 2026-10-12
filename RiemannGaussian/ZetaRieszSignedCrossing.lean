@@ -27,9 +27,9 @@ including a base point exactly on the cutoff. -/
 theorem hinge_error_nonneg (z x : ℝ) :
     0 ≤ max 0 (z+x)-max 0 z-x*(if 0 < z then 1 else 0) := by
   by_cases hz : 0 < z
-  · rw [if_pos hz,max_eq_right hz.le]
+  · rw [ite_eq_left hz,max_eq_right hz.le]
     linarith [le_max_right 0 (z+x)]
-  · rw [if_neg hz,max_eq_left (le_of_not_gt hz)]
+  · rw [ite_eq_right hz,max_eq_left (le_of_not_gt hz)]
     simp
 
 /-- Only an adverse signed multiplier pays a cost on each side. -/
@@ -249,7 +249,7 @@ theorem semiprime_slope {q r : ℕ} (hq : q.Prime) (hr : r.Prime)
   have hf (d : ℕ) (hd' : d ∈ ({r,q,q*r} : Finset ℕ)) :
       (μ d : ℝ)*(if 0 < D-Real.log d then 1 else 0) = 0 := by
     simp only [Finset.mem_insert,Finset.mem_singleton] at hd'
-    rcases hd' with rfl | rfl | rfl <;> rw [if_neg (by linarith),mul_zero]
+    rcases hd' with rfl | rfl | rfl <;> rw [ite_eq_right (by linarith),mul_zero]
   unfold cutoffSlope
   have hqr1 : q*r ≠ 1 := by nlinarith [hq.two_le,hr.two_le]
   rw [hd,Finset.sum_insert (by simp [hq.ne_one,hr.ne_one,hqr1,eq_comm])]

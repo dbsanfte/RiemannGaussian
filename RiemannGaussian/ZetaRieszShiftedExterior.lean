@@ -192,7 +192,7 @@ theorem exteriorSymbol_profile {z : ℂ} (hz : z.re ≤ -(1/2 : ℝ))
       (8000010*largeCost*orderBudget N/‖z‖^2)*
         ((1+xi^2)⁻¹+(1+(xi-z.im)^2)⁻¹) := by
   by_cases he : Exterior z xi
-  · rw [exteriorSymbol,if_pos he,norm_div,norm_pow,Complex.norm_real,Real.norm_eq_abs,sq_abs]
+  · rw [exteriorSymbol,ite_eq_left he,norm_div,norm_pow,Complex.norm_real,Real.norm_eq_abs,sq_abs]
     apply (div_le_div_of_nonneg_right (shiftedSymbol_bound hz A h16 N y he hu hU) (sq_nonneg xi)).trans
     calc
       _ = (largeCost*orderBudget N)*(1/(‖Complex.I*xi-z‖^2*xi^2)) := by ring
@@ -200,7 +200,7 @@ theorem exteriorSymbol_profile {z : ℂ} (hz : z.re ≤ -(1/2 : ℝ))
         have h := mul_le_mul_of_nonneg_left (kernel_overlap_half hz he.1)
           (mul_nonneg largeCost_nonneg (orderBudget_nonneg N))
         exact h.trans_eq (by ring)
-  · simp only [exteriorSymbol,if_neg he,mul_zero,zero_div,norm_zero]
+  · simp only [exteriorSymbol,ite_eq_right he,mul_zero,zero_div,norm_zero]
     positivity [largeCost_nonneg,orderBudget_nonneg N]
 
 /-- A fixed coefficient for the paired Cauchy profile. -/
@@ -363,10 +363,10 @@ theorem edgeExteriorPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
         (exteriorPair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)) else 0
   have hi (tau : NontrivialZetaZero) : IntegrableOn (F tau) (Ioi 0) := by
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · simpa only [IntegrableOn,F,if_pos ht,mul_left_comm] using
+    · simpa only [IntegrableOn,F,ite_eq_left ht,mul_left_comm] using
         (integrable_exteriorPair (modeLocation_half y tau) A h16 N y L hu hU).const_mul
           (analyticZetaZeroMultiplicity tau : ℂ)
-    · simp only [F,if_neg ht]
+    · simp only [F,ite_eq_right ht]
       exact integrableOn_zero
   have hn (tau : NontrivialZetaZero) :
       (∫ xi : ℝ in Ioi 0, ‖F tau xi‖) ≤
@@ -375,14 +375,14 @@ theorem edgeExteriorPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
     · have he (xi : ℝ) : ‖F tau xi‖ = (analyticZetaZeroMultiplicity tau : ℝ)*
           ‖(u : ℂ)^(N+1)*(exteriorPair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)‖ := by
         dsimp only [F]
-        rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+        rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       simp_rw [he]
       rw [integral_const_mul]
       exact (mul_le_mul_of_nonneg_left
         (integral_norm_exteriorPair_bound (modeLocation_half y tau) A h16 N y L hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq
           (by unfold exteriorResponseConstant zeroWeight; ring)
-    · simp only [F,if_neg ht,norm_zero,integral_zero]
+    · simp only [F,ite_eq_right ht,norm_zero,integral_zero]
       positivity [exteriorResponseConstant_nonneg,orderBudget_nonneg N,zeroWeight_nonneg y tau]
   have hsum : Summable (fun tau : NontrivialZetaZero => ∫ xi : ℝ in Ioi 0, ‖F tau xi‖) :=
     ((summable_zeroWeight y).mul_left (exteriorResponseConstant*orderBudget N)).of_nonneg_of_le
@@ -414,9 +414,9 @@ theorem hasSum_edgeExteriorResponse (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ 
     apply hs.congr_fun
     intro tau
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · simp only [if_pos ht,integral_const_mul,exteriorResponse]
+    · simp only [ite_eq_left ht,integral_const_mul,exteriorResponse]
       ring
-    · simp only [if_neg ht,integral_zero,mul_zero]
+    · simp only [ite_eq_right ht,integral_zero,mul_zero]
   have he (xi : ℝ) : (∑' tau, F tau xi) =
       (u : ℂ)^(N+1)*(edgeExteriorPair A N y L xi/(xi : ℂ)^2) := by
     rw [edgeExteriorPair,← tsum_div_const,← tsum_mul_left]
@@ -462,11 +462,11 @@ theorem edgeExteriorResponse_bound (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p
         ((analyticZetaZeroMultiplicity tau : ℂ)*exteriorResponse (modeLocation y tau) A N y L) else 0‖ ≤
       (exteriorResponseConstant*((N : ℝ)+2)^3*(9999/10000 : ℝ)^N)*zeroWeight y tau := by
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+    · rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       exact (mul_le_mul_of_nonneg_left
         (exteriorResponse_bound (modeLocation_half y tau) A h16 N y hL hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq (by unfold zeroWeight; ring)
-    · simp only [if_neg ht,norm_zero]
+    · simp only [ite_eq_right ht,norm_zero]
       positivity [exteriorResponseConstant_nonneg,zeroWeight_nonneg y tau]
   rw [← hs.tsum_eq]
   apply (norm_tsum_le_tsum_norm hs.summable.norm).trans
@@ -538,15 +538,15 @@ theorem edgeDifference_add_exterior (y xi : ℝ) {j : ℕ} (hj : 2 ≤ j) :
     apply (hasSum_xiDifference y xi hj).summable.norm.of_norm_bounded
     intro tau
     by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-    · simp only [if_pos ht,norm_zero]
+    · simp only [ite_eq_left ht,norm_zero]
       exact norm_nonneg _
-    · simp only [if_neg ht,le_refl]
+    · simp only [ite_eq_right ht,le_refl]
   rw [edgeDifference,exteriorEdgeMark,← hd.tsum_add (summable_exteriorEdgeMark y xi hj),retainedEdgeDifference]
   apply tsum_congr
   intro tau
   by_cases ht : (999/1000 : ℝ) < tau.1.re
-  · simp only [if_pos ht,if_neg (not_le.mpr ht),← mul_add,modeDifference_add_exterior]
-  · simp only [if_neg ht,if_pos (not_lt.mp ht),add_zero]
+  · simp only [ite_eq_left ht,ite_eq_right (not_le.mpr ht),← mul_add,modeDifference_add_exterior]
+  · simp only [ite_eq_right ht,ite_eq_left (not_lt.mp ht),add_zero]
 
 /-- Summing the original rectangle commutes with this absolutely
 convergent projected zero coefficient. -/
@@ -563,9 +563,9 @@ theorem hasSum_exteriorEdgeSymbol (A : Finset ℕ) (N : ℕ) (y xi : ℝ) :
   intro tau
   by_cases ht : (999/1000 : ℝ) < tau.1.re
   · by_cases he : Exterior (modeLocation y tau) xi
-    · simp only [if_pos ht,if_pos he,exteriorSymbol,shiftedSymbol,Finset.mul_sum,mul_assoc]
-    · simp only [if_pos ht,if_neg he,exteriorSymbol,mul_zero,zero_mul,Finset.sum_const_zero]
-  · simp only [if_neg ht,zero_mul,Finset.sum_const_zero]
+    · simp only [ite_eq_left ht,ite_eq_left he,exteriorSymbol,shiftedSymbol,Finset.mul_sum,mul_assoc]
+    · simp only [ite_eq_left ht,ite_eq_right he,exteriorSymbol,mul_zero,zero_mul,Finset.sum_const_zero]
+  · simp only [ite_eq_right ht,zero_mul,Finset.sum_const_zero]
 
 /-- The genuine zeta pole has the same half-plane geometry, including
 its nonzero ordinate relative to the selected evaluation center. -/
@@ -697,7 +697,7 @@ theorem retained_shift_support {z : ℂ} {j : ℕ} {xi : ℝ}
   have he : Exterior z xi := by
     rw [not_or] at hn
     exact ⟨not_lt.mp hn.1,not_lt.mp hn.2⟩
-  exact h (by simp only [retainedDifference,if_pos he,sub_zero])
+  exact h (by simp only [retainedDifference,ite_eq_left he,sub_zero])
 
 /-- No central or mode-resonant term is included in the norm payment. -/
 theorem exteriorSymbol_zero_of_resonance (z : ℂ) (A : Finset ℕ) (N : ℕ) (y xi : ℝ)
@@ -708,7 +708,7 @@ theorem exteriorSymbol_zero_of_resonance (z : ℂ) (A : Finset ℕ) (N : ℕ) (y
     rcases h with h | h
     · exact (not_le.mpr h) he.1
     · exact (not_le.mpr h) he.2
-  exact if_neg hn
+  exact ite_eq_right hn
 
 /-- Combined error relative to the original signed log main. The full
 horizontal zero sector, Gamma correction, shifted pole exterior and

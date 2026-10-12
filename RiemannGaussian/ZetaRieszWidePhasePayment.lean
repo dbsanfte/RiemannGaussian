@@ -109,14 +109,14 @@ theorem maskedOrbitEnergy_bound (X N : ℕ) (S : Finset ℕ) (w f : ℕ → ℝ)
       (1+log X)*V^2*(if wideNear y N n m then
         ((n.divisors.card : ℝ)/(n : ℝ))*((m.divisors.card : ℝ)/(m : ℝ)) else 0) := by
     by_cases h : wideNear y N n m ∧ M n m
-    · simp only [if_pos h,if_pos h.1,abs_mul]
+    · simp only [ite_eq_left h,ite_eq_left h.1,abs_mul]
       have hb := mul_le_mul
         (mul_le_mul (hw n hn) (hw m hm) (abs_nonneg _) (by positivity))
         (ZetaRieszAntiphaseCredit.cutoffGram_bound X S w f
           (Finset.mem_Icc.mp (hS hn)).1 (Finset.mem_Icc.mp (hS hm)).1)
         (abs_nonneg _) (by positivity)
       exact hb.trans_eq (by ring)
-    · rw [if_neg h,abs_zero]
+    · rw [ite_eq_right h,abs_zero]
       split_ifs <;> positivity
   let P := ∑ n ∈ S,∑ m ∈ S,if wideNear y N n m then
     ((n.divisors.card : ℝ)/(n : ℝ))*((m.divisors.card : ℝ)/(m : ℝ)) else 0
@@ -318,11 +318,11 @@ theorem remainingEnergy_eq (X N : ℕ) (S : Finset ℕ) (w f : ℕ → ℝ) (y :
   intro m _
   by_cases hp : ZetaRieszAntiphaseCredit.retainedPair N y n m
   · by_cases hg : (N : ℝ)/4096 < log (Nat.gcd n m)
-    · simp only [hp,hg,not_true_eq_false,and_false,false_and,if_false,zero_add]
+    · simp only [hp,hg,not_true_eq_false,and_false,false_and,ite_false,zero_add]
     · by_cases hw : wideNear y N n m <;>
         simp only [hp,hg,hw,not_false_eq_true,not_true_eq_false,and_true,
-          and_false,if_true,if_false,zero_add,add_zero]
-  · simp only [hp,false_and,and_false,if_false,zero_add]
+          and_false,ite_true,ite_false,zero_add,add_zero]
+  · simp only [hp,false_and,and_false,ite_false,zero_add]
 
 /-- Price only the norm-paid difference. No energy monotonicity or
 positive lower bound on a favorable reserve is assumed. -/

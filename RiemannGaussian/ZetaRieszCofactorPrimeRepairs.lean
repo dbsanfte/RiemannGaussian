@@ -36,7 +36,7 @@ theorem prefix_atom_bound (y : ℝ) (k l p a : ℕ) {L : ℝ} (hL : 0 ≤ L) :
   have hpa : 0 ≤ zetaPrimeExpWeight (101 / 100) p := (Real.exp_pos _).le
   have haa : 0 ≤ zetaPrimeExpWeight (101 / 100) a := (Real.exp_pos _).le
   by_cases hgood : a.Prime ∧ ¬p ∣ a
-  · rw [prefixAtom, if_pos hgood]
+  · rw [prefixAtom, ite_eq_left hgood]
     by_cases hlog : L ≤ Real.log p + Real.log a
     · rw [max_eq_left (by linarith), Complex.ofReal_zero, zero_mul, zero_mul, norm_zero]
       positivity
@@ -70,7 +70,7 @@ theorem prefix_atom_bound (y : ℝ) (k l p a : ℕ) {L : ℝ} (hL : 0 ≤ L) :
             zetaPrimeExpWeight (101 / 100) p * zetaPrimeExpWeight (101 / 100) a) :=
         mul_le_mul_of_nonneg_left hex (by positivity)
       _ = _ := by ring
-  · rw [prefixAtom, if_neg hgood, norm_zero]
+  · rw [prefixAtom, ite_eq_right hgood, norm_zero]
     positivity
 
 /-- The full clipped prime prefix, summed over the actual finite distinguished-prime

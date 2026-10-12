@@ -116,15 +116,15 @@ theorem readIntegerRoots_ordered {L k l : ℕ} (hk : k<L) (hl : l<L) (hkl : k≤
   have hhi : (k+l+(l-k))/2=l := by omega
   have hlo : (k+l-(l-k))/2=k := by omega
   unfold readIntegerRoots
-  rw [if_pos hsign]
+  rw [ite_eq_left hsign]
   dsimp only
-  rw [ha,hb,if_pos hdelta]
+  rw [ha,hb,ite_eq_left hdelta]
   dsimp only
   rw [hr,hhi,hlo]
   have hcheck : (l-k)^2=(k+l)^2-4*(k*l) ∧ l-k≤k+l ∧
       (k+l+(l-k))%2=0 ∧ l<L ∧ k<L ∧ l+k=k+l ∧ l*k=k*l := by
     exact ⟨he.symm,by omega,by omega,hl,hk,by omega,Nat.mul_comm _ _⟩
-  rw [if_pos hcheck]
+  rw [ite_eq_left hcheck]
 
 /-- Both original index orientations are accepted; orientation is kept
 in this theorem rather than inferred from a lossy discriminant. -/
@@ -190,7 +190,7 @@ theorem testIndex_mixed {p q L k l s : ℕ} (hp : p.Prime) (hq : q.Prime)
     (s : ZMod (p*q)) (by simpa only [map_natCast] using hP)
     (by simpa only [map_natCast] using hQ)
   have hproper : 1<p ∧ p<p*q := ⟨hp.one_lt,by nlinarith [hq.one_lt]⟩
-  rw [testIndex_factor,modularDifference_eq_val hN,checkedSignal,hg,if_pos hproper]
+  rw [testIndex_factor,modularDifference_eq_val hN,checkedSignal,hg,ite_eq_left hproper]
 
 /-- One actual point reader retains its root report and the one or two GCD
 checks that were executed; it stops after the first proper divisor. -/
@@ -271,9 +271,9 @@ theorem readIntegerRoots_call_bound (L : ℕ) (point : ℤ×ℤ) :
     (readIntegerRoots L point).sqrtCalls≤1 := by
   by_cases hsign : 0≤point.1 ∧ 0≤point.2
   · by_cases hd : 4*point.2.toNat≤point.1.toNat^2
-    · simp only [readIntegerRoots,if_pos hsign,if_pos hd,IntegerRootReport.sqrtCalls,le_refl]
-    · simp only [readIntegerRoots,if_pos hsign,if_neg hd,IntegerRootReport.sqrtCalls,Nat.zero_le]
-  · simp only [readIntegerRoots,if_neg hsign,IntegerRootReport.sqrtCalls,Nat.zero_le]
+    · simp only [readIntegerRoots,ite_eq_left hsign,ite_eq_left hd,IntegerRootReport.sqrtCalls,le_refl]
+    · simp only [readIntegerRoots,ite_eq_left hsign,ite_eq_right hd,IntegerRootReport.sqrtCalls,Nat.zero_le]
+  · simp only [readIntegerRoots,ite_eq_right hsign,IntegerRootReport.sqrtCalls,Nat.zero_le]
 
 /-- The executed restoring call has logarithmically many native digit
 steps in the original nonnegative sum coordinate. This is not a bit clock. -/
@@ -283,9 +283,9 @@ theorem readIntegerRoots_step_bound (L : ℕ) (point : ℤ×ℤ) :
   · by_cases hd : 4*point.2.toNat≤point.1.toNat^2
     · have hs := (countedSqrt_budget (point.1.toNat^2-4*point.2.toNat)).1.trans
         (Nat.clog_mono_right 2 (by omega : point.1.toNat^2-4*point.2.toNat+1≤point.1.toNat^2+1))
-      simpa only [readIntegerRoots,if_pos hsign,if_pos hd,IntegerRootReport.sqrtSteps] using hs
-    · simp only [readIntegerRoots,if_pos hsign,if_neg hd,IntegerRootReport.sqrtSteps,Nat.zero_le]
-  · simp only [readIntegerRoots,if_neg hsign,IntegerRootReport.sqrtSteps,Nat.zero_le]
+      simpa only [readIntegerRoots,ite_eq_left hsign,ite_eq_left hd,IntegerRootReport.sqrtSteps] using hs
+    · simp only [readIntegerRoots,ite_eq_left hsign,ite_eq_right hd,IntegerRootReport.sqrtSteps,Nat.zero_le]
+  · simp only [readIntegerRoots,ite_eq_right hsign,IntegerRootReport.sqrtSteps,Nat.zero_le]
 
 /-- A point in the original coefficient rectangle bounds the actual root
 steps by one common public interval-size logarithm. -/

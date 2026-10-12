@@ -54,7 +54,7 @@ theorem cycleScale_bounds (z w v : ℂ) :
       refine ⟨mul_nonneg (inv_nonneg.mpr hM.le) ha0, ?_⟩
       rw [mul_comm, ← div_eq_mul_inv]
       exact (div_le_one hM).mpr haM
-    rw [cycleScale, if_pos h]
+    rw [cycleScale, ite_eq_left h]
     exact ⟨(bound _ ha.le hA).1, (bound _ ha.le hA).2,
       (bound _ hb.le hB).1, (bound _ hb.le hB).2,
       (bound _ hc.le hC).1, (bound _ hc.le hC).2⟩

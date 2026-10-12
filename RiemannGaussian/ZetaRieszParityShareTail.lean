@@ -84,7 +84,7 @@ theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : ℕ) {n : 
       apply Finset.sum_le_sum
       intro p hp
       by_cases hel : p ∈ A ∧ eligibleCofactor p (n/p)
-      · rw [if_pos hel]
+      · rw [ite_eq_left hel]
         have hpp := Nat.prime_of_mem_primeFactors hp
         have hpd := Nat.dvd_of_mem_primeFactors hp
         have hlog : Real.log (n/p:ℕ) = Real.log n-Real.log p := by
@@ -98,7 +98,7 @@ theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : ℕ) {n : 
         · apply (div_le_one hln).mpr
           rw [hlog]
           linarith [Real.log_natCast_nonneg p]
-      · rw [if_neg hel]
+      · rw [ite_eq_right hel]
         exact (Real.exp_pos _).le
     _ = _ := by simp
 
@@ -112,7 +112,7 @@ theorem fullParityBox_boundedShare {n : ℕ} (h : FullParityBox n) (A : Finset �
       intro p hp _ _
       have hne : n.primeFactors.Nonempty := ⟨p,hp⟩
       have hpl : p ≤ largestPrime n := by
-        rw [largestPrime, dif_pos hne]
+        rw [largestPrime, dite_eq_left hne]
         exact Finset.le_max' _ _ hp
       exact (Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
         (by exact_mod_cast hpl)).trans h.largest_upper)

@@ -79,10 +79,10 @@ theorem riesz_extreme_eq_core_cases {a b : ℕ} {L : ℝ}
   by_cases ha1 : a = 1
   · subst a
     simp [VaughanLogAverage.riesz, max_eq_right hL]
-  · rw [if_neg ha1]
+  · rw [ite_eq_right ha1]
     by_cases hap : a.Prime
-    · rw [if_pos hap, riesz_prime_of_saturated hap haL]
-    · rw [if_neg hap, ZetaRieszFixedCofactor.riesz_eq_zero_of_saturated hfull.of_mul_right ha1 hap haL]
+    · rw [ite_eq_left hap, riesz_prime_of_saturated hap haL]
+    · rw [ite_eq_right hap, ZetaRieszFixedCofactor.riesz_eq_zero_of_saturated hfull.of_mul_right ha1 hap haL]
 
 /-- The original coefficient on the complete extreme-rough class has
 an exact signed description. Prime labels remain deleted; unit and prime

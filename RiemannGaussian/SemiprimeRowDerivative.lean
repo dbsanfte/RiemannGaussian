@@ -85,7 +85,7 @@ private theorem recoverColumns_none_of_units (n : ℕ) (leaves : ℕ → List �
   | nil => rfl
   | cons c tail ih =>
     rcases c with ⟨t,v⟩
-    rw [recoverColumns, if_pos (hu (t,v) (by simp))]
+    rw [recoverColumns, ite_eq_left (hu (t,v) (by simp))]
     exact ih (fun c hc => hu c (List.mem_cons_of_mem _ hc))
 
 /-- Exhaustion is equivalent to all original off-diagonal differences
@@ -197,7 +197,7 @@ theorem publicExponent_mem_of_residue {N m j : ℕ} (hj : j<m) (hc : j.Coprime m
   apply List.mem_flatMap.mpr
   refine ⟨j,List.mem_range.mpr hj, ?_⟩
   change w ∈ (if j.Coprime m then residuePackets N m j else [])
-  rwa [if_pos hc]
+  rwa [ite_eq_left hc]
 
 theorem publicRowValues_mem_of_exponent {N m : ℕ} (g : (ZMod N)ˣ) {e : ℤ}
     (he : e ∈ publicExponents N m) :

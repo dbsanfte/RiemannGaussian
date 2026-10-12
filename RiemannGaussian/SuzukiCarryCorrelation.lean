@@ -235,7 +235,7 @@ private theorem incidence_two_product (N : ℕ) :
   have hn : (2 ∣ N+2) ↔ ¬2 ∣ N+1 := by
     simp only [Nat.dvd_iff_mod_eq_zero]
     omega
-  simp only [incidence_eq_divisorIndicators, divisorIndicator, hodd, heven, if_false, if_true, hn]
+  simp only [incidence_eq_divisorIndicators, divisorIndicator, hodd, heven, ite_false, ite_true, hn]
   by_cases h : 2 ∣ N+1 <;> norm_num [h]
 
 private theorem incidence_three_product (N : ℕ) :

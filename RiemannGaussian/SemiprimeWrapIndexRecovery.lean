@@ -212,11 +212,11 @@ theorem recoverTaggedInterval_preserves_root {p q L b k : ℕ}
       apply Or.inr
       unfold recoverTaggedInterval recoverTaggedJet
       dsimp only
-      rw [hz,ZMod.val_zero,Nat.gcd_zero_right,if_neg (by omega)]
-      simp only [ite_true,dif_pos hu]
+      rw [hz,ZMod.val_zero,Nat.gcd_zero_right,ite_eq_right (by omega)]
+      simp only [ite_true,dite_eq_left hu]
       change (if s.val<L ∧ (x : ZMod (p*q))=(alpha : ZMod (p*q))^s.val
         then some (Sum.inr s.val) else (recoverIndex s b).map Sum.inl)=_
-      rw [if_pos (by simpa only [hval] using And.intro hk hglobal),hval]
+      rw [ite_eq_left (by simpa only [hval] using And.intro hk hglobal),hval]
     · have hlarge : ¬s.val<L := by
         intro hs
         have hsk := index_eq_of_reduction (dvd_mul_right p q) s
@@ -230,11 +230,11 @@ theorem recoverTaggedInterval_preserves_root {p q L b k : ℕ}
       refine ⟨d,?_⟩
       unfold recoverTaggedInterval recoverTaggedJet
       dsimp only
-      rw [hz,ZMod.val_zero,Nat.gcd_zero_right,if_neg (by omega)]
-      simp only [ite_true,dif_pos hu]
+      rw [hz,ZMod.val_zero,Nat.gcd_zero_right,ite_eq_right (by omega)]
+      simp only [ite_true,dite_eq_left hu]
       change (if s.val<L ∧ (x : ZMod (p*q))=(alpha : ZMod (p*q))^s.val
         then some (Sum.inr s.val) else (recoverIndex s b).map Sum.inl)=_
-      rw [if_neg (fun h => hlarge h.1),hd]
+      rw [ite_eq_right (fun h => hlarge h.1),hd]
       rfl
   · have hzQ : ZMod.castHom (dvd_mul_left q p) (ZMod q)
         (intervalProduct (alpha : ZMod (p*q)) (x : ZMod (p*q)) L)≠0 := by
@@ -245,7 +245,7 @@ theorem recoverTaggedInterval_preserves_root {p q L b k : ℕ}
     refine ⟨p,?_⟩
     unfold recoverTaggedInterval recoverTaggedJet
     dsimp only
-    rw [hg,if_pos]
+    rw [hg,ite_eq_left]
     exact ⟨hp.one_lt,by nlinarith only [hq.one_lt,hp.pos]⟩
 
 /-- The public target for the geometric wrap column at a fixed signed
@@ -289,7 +289,7 @@ theorem recoverCandidates_succeeds {N p : ℕ} {xs : List ℤ}
     ∃ d, recoverCandidates N xs=some d := by
   have hc : checkedSignal N p=some p := by
     unfold checkedSignal
-    rw [Nat.gcd_eq_right hp.2.2,if_pos ⟨hp.1,hp.2.1⟩]
+    rw [Nat.gcd_eq_right hp.2.2,ite_eq_left ⟨hp.1,hp.2.1⟩]
   induction xs with
   | nil => simp only [List.not_mem_nil] at hmem
   | cons a as ih =>
@@ -505,7 +505,7 @@ theorem seed_route_with_prefix_bound {p q m : ℕ}
     (hsize : p*q≤m^6) (hcover : m^2<p*q) :
     SemiprimeSeedLcm.GoodRoute (p*q) (2*m) (SemiprimeSeedLcm.routeByWidth (p*q) m) := by
   unfold SemiprimeSeedLcm.routeByWidth
-  rw [if_neg (by omega)]
+  rw [ite_eq_right (by omega)]
   cases hsquare : SemiprimeCommonOrder.recoverSquare (p*q) with
   | some d => exact SemiprimeCommonOrder.recoverSquare_sound hsquare
   | none =>

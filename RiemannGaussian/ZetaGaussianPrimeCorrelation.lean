@@ -76,7 +76,7 @@ theorem mirrored_work {ι : Type*} [Fintype ι] (a ω : ℕ → ℝ) (u w : ι �
     work a ω (fun i : Bool × ι => if i.1 then u i.2 else -u i.2)
       (fun i => w i.2 / 2) = work a ω u w := by
   simp only [work, Fintype.sum_prod_type, Fintype.sum_bool, Bool.false_eq_true,
-    if_false, if_true, zetaPhaseKernel_neg]
+    ite_false, ite_true, zetaPhaseKernel_neg]
   simp_rw [div_mul_eq_mul_div, ← Finset.sum_div]
   ring
 
@@ -87,7 +87,7 @@ theorem mirrored_energy {ι : Type*} [Fintype ι] (a ω : ℕ → ℝ) (u w : ι
   have hneg (v z : ℝ) : zetaPhaseKernel a ω (-v - z) = zetaPhaseKernel a ω (v + z) := by
     rw [show -v - z = -(v + z) by ring, zetaPhaseKernel_neg]
   simp only [energy, productEnergy, Fintype.sum_prod_type, Fintype.sum_bool,
-    Bool.false_eq_true, if_false, if_true, sub_neg_eq_add, hneg,
+    Bool.false_eq_true, ite_false, ite_true, sub_neg_eq_add, hneg,
     Finset.sum_add_distrib]
   ring_nf
   simp_rw [← Finset.sum_mul]
@@ -120,7 +120,7 @@ theorem hasSum_cosineEnergy {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs : S
   intro n
   rw [finiteCosinePhaseEnergy_eq_squares]
   simp only [Fintype.sum_prod_type, Fintype.sum_bool, Bool.false_eq_true,
-    if_false, if_true, mul_neg, Real.cos_neg, Real.sin_neg]
+    ite_false, ite_true, mul_neg, Real.cos_neg, Real.sin_neg]
   simp_rw [div_mul_eq_mul_div, ← Finset.sum_div, Finset.sum_neg_distrib]
   ring_nf
   simp_rw [← Finset.sum_mul]

@@ -44,8 +44,8 @@ theorem eventually_central_product_errors (rho : NontrivialZetaZero)
     filter_upwards [eventually_ge_atTop 256] with N hN
     by_cases hf : f N ∈ centralOrders N
     · have hh := (Finset.mem_filter.mp (centralOrders_subset_wider N hf)).2
-      simpa only [k, if_pos hf] using hh
-    · simp only [k, if_neg hf, ZetaRieszWiderMatched.completionOrder]
+      simpa only [k, ite_eq_left hf] using hh
+    · simp only [k, ite_eq_right hf, ZetaRieszWiderMatched.completionOrder]
       omega
   have hfk := tendsto_wider_weighted_finite rho hrho hexposed huh k
     (hk.mono fun _ h => h.1)
@@ -66,8 +66,8 @@ theorem eventually_central_product_errors (rho : NontrivialZetaZero)
     hh.eventually (eventually_lt_nhds hε)] with N hpN hhN
   intro hf
   constructor
-  · simpa only [weightedFinite, k, if_pos hf] using hpN.le
-  · simpa only [weightedFinite, weightedComplete, Function.comp_def, k, if_pos hf] using hhN.le
+  · simpa only [weightedFinite, k, ite_eq_left hf] using hpN.le
+  · simpa only [weightedFinite, weightedComplete, Function.comp_def, k, ite_eq_left hf] using hhN.le
 
 end
 end RiemannGaussian.ZetaRieszCentralProductPhase

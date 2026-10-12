@@ -139,8 +139,8 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_mul_heightSummand_of_gap
       have := hgap rho
       rw [hzeroNorm] at this
       linarith
-    rw [zetaUpperHyperbolicLogDefectSummand, if_pos hupper,
-      zetaUpperSpectralHeightSummand, if_pos hupper]
+    rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper,
+      zetaUpperSpectralHeightSummand, ite_eq_left hupper]
     calc
       (analyticZetaZeroMultiplicity rho : ℝ) *
             (-2 * Real.log
@@ -156,8 +156,8 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_mul_heightSummand_of_gap
       _ = (4 * z.im / delta ^ 2) *
           ((analyticZetaZeroMultiplicity rho : ℝ) *
             (zetaSpectralCoordinate rho.1).im) := by ring
-  · rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper,
-      zetaUpperSpectralHeightSummand, if_neg hupper, mul_zero]
+  · rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper,
+      zetaUpperSpectralHeightSummand, ite_eq_right hupper, mul_zero]
 
 /-- The complete spectral logarithmic defect is bounded by the complete
 upper-height mass times the explicit common-gap coefficient. -/

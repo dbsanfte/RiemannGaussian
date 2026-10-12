@@ -83,11 +83,9 @@ theorem pairedEtaDivisorFourierSpectrum_separated {D h : ℕ} (hD : 0 < D)
     simpa only [Nat.cast_mul, ZMod.natCast_zmod_val] using hel
   have hdk' : Q ∣ 4 * d * e * k.val := by
     convert dvd_mul_of_dvd_right hdv (2 * e) using 1
-    congr 1
     ring
   have hel' : Q ∣ 4 * d * e * l.val := by
     convert dvd_mul_of_dvd_right hev (2 * d) using 1
-    congr 1
     ring
   have hgap : Q ∣ 4 * d * e * (l.val - k.val) := by
     rw [Nat.mul_sub_left_distrib]

@@ -30,7 +30,7 @@ def cofactor (f : ArithmeticFunction ℂ) : ArithmeticFunction ℂ :=
 /-- The omitted coefficients vanish below their original cutoff. -/
 theorem longMoebius_apply_of_le {U n : ℕ} (hn : n ≤ U) : longMoebius U n = 0 := by
   change (μ n : ℂ) - (if n ≤ U then (μ n : ℂ) else 0) = 0
-  rw [if_pos hn, sub_self]
+  rw [ite_eq_left hn, sub_self]
 
 /-- Every actual short coefficient has norm at most one. -/
 theorem norm_shortMoebius_le_one (U n : ℕ) : ‖shortMoebius U n‖ ≤ 1 := by
@@ -263,7 +263,7 @@ theorem hasSum_short_gamma (rho : NontrivialZetaZero) (A : ℝ) (U : ℕ) :
     intro n hn
     have hUn : ¬ n + 1 ≤ U := by simp only [Finset.mem_range] at hn; omega
     change (if n + 1 ≤ U then (μ (n + 1) : ℂ) else 0) * _ = 0
-    rw [if_neg hUn, zero_mul]
+    rw [ite_eq_right hUn, zero_mul]
   have h : HasSum (fun n : ℕ ↦ shortMoebius U (n + 1) * gammaCarrier rho A (n + 1))
       (∑ n ∈ Finset.range U, shortMoebius U (n + 1) * gammaCarrier rho A (n + 1)) :=
     hasSum_sum_of_ne_finset_zero hf
@@ -275,7 +275,7 @@ theorem hasSum_short_gamma (rho : NontrivialZetaZero) (A : ℝ) (U : ℕ) :
   have hnU : n + 1 ≤ U := by have := Finset.mem_range.mp hn; omega
   change gammaMoebiusTerm rho A (n + 1) =
     (if n + 1 ≤ U then (μ (n + 1) : ℂ) else 0) * gammaCarrier rho A (n + 1)
-  rw [if_pos hnU]
+  rw [ite_eq_left hnU]
   simp only [gammaMoebiusTerm, gammaCarrier, mul_assoc]
 
 /-- The exact smoothed quadratic identity retains both short copies and the complete omitted square. -/

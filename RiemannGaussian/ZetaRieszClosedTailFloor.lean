@@ -96,7 +96,7 @@ theorem affine_tail_block_zero {B R X D d : ℕ} (hs : Squarefree (B*R))
         ((hcop.of_dvd_left (Nat.dvd_of_mem_divisors hd)).of_dvd_right
           (Nat.dvd_of_mem_divisors he))
     rw [hmu]
-    simp only [correctedProfile,centeredProfile,if_pos hdeX,zero_mul,add_zero,
+    simp only [correctedProfile,centeredProfile,ite_eq_left hdeX,zero_mul,add_zero,
       one_mul,max_eq_left (sub_nonpos.mpr hlog)]
     rw [Nat.cast_mul,log_mul hdp.ne' hep.ne']
     dsimp only [c]

@@ -47,7 +47,7 @@ theorem zetaRightHalfCubicWindowCoefficient_support (rho : NontrivialZetaZero)
   have ha : zetaMoebiusSievedPrimeCoefficient
       (zetaMoebiusGeometricCutoff (zetaMoebiusHeadGrowth (3 / 2 - rho.1.re)) N)
       (zetaRightHalfCubicSieve rho N) n ≠ 0 := by
-    simpa only [zetaRightHalfCubicWindowCoefficient, zetaLogWindowCoefficient, if_pos hw] using hn
+    simpa only [zetaRightHalfCubicWindowCoefficient, zetaLogWindowCoefficient, ite_eq_left hw] using hn
   have hs := zetaMoebiusSievedPrimeCoefficient_support _ _ n ha
   exact ⟨hw, zetaLogWindow_gt_moebiusCutoff_sq rho hN hw, hs.2⟩
 

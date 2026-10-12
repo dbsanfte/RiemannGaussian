@@ -46,7 +46,7 @@ theorem literal_missing_skew_bound (t : ℕ) (ht : 32 ≤ t) (u : ℝ) {n q : �
   have hmiss : 1 - boundedShare A N n ≤
       1 - ∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N,
         mass (N + 1) k (Real.log (n / largestPrime n : ℕ) / Real.log n) := by
-    rw [boundedShare, if_pos ⟨hs, hn1, hnp⟩]
+    rw [boundedShare, ite_eq_left ⟨hs, hn1, hnp⟩]
     linarith
   have hcap := skewMass_bounds N hx.1 hx.2 hr.1 hr.2
   have hhigh := highMass_bounds N hx.1 hx.2

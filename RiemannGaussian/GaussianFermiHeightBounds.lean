@@ -180,7 +180,7 @@ theorem nonzero_poleUpper_le_one {γ m b : ℝ} (hγ : γ ≠ 0)
   have hs : |γ| ^ 2 ≤ ((phaseContactFrequency j : ℝ) * γ) ^ 2 := by
     simpa only [sq_abs] using pow_le_pow_left₀ (abs_nonneg γ) habs 2
   unfold poleUpper
-  rw [if_neg hv, show 2 * (1 - m) - 1 = 1 - 2 * m by ring,
+  rw [ite_eq_right hv, show 2 * (1 - m) - 1 = 1 - 2 * m by ring,
     show 1 - (1 - m) = m by ring]
   exact (div_le_one (sq_pos_of_ne_zero hv)).mpr (hc1.trans hs)
 
@@ -208,14 +208,14 @@ theorem exact_phase_cost_le {γ m b : ℝ} (hγ : γ ≠ 0)
     by_cases hj : j = 0
     · subst j
       simp only [phaseContactFrequency, Matrix.cons_val_zero, Nat.cast_zero, zero_mul,
-        poleUpper, if_true, zero_div, add_zero]
+        poleUpper, ite_true, zero_div, add_zero]
       rw [show 1 - m - 1 = -m by ring]
       nlinarith [gammaUpper_zero_le]
     · have hp := nonzero_poleUpper_le_one hγ hlog hm hmu hb hscale hml j hj
       have hg := gammaUpper_le ht1 (v := (phaseContactFrequency j : ℝ) * γ) (by
         rw [abs_mul, abs_of_nonneg (by positivity : (0 : ℝ) ≤ phaseContactFrequency j)]
         exact mul_le_mul_of_nonneg_right (by exact_mod_cast exact_frequency_le j) (abs_nonneg γ))
-      simp only [if_neg hj, zero_add]
+      simp only [ite_eq_right hj, zero_add]
       nlinarith
   have hsum := Finset.sum_le_sum (s := Finset.univ) (fun j _ => hpoint j)
   have he : (∑ j : Fin 9,
@@ -226,7 +226,7 @@ theorem exact_phase_cost_le {γ m b : ℝ} (hγ : γ ≠ 0)
         (∑ j : Fin 9, if j = 0 then 0 else phaseContactExactCoefficients j) *
           Real.log |γ| / 4 + 8 * (∑ j : Fin 9, phaseContactExactCoefficients j) := by
     rw [Finset.sum_add_distrib, Finset.sum_add_distrib]
-    simp only [Finset.sum_ite_eq', Finset.mem_univ, if_true, ← Finset.sum_div,
+    simp only [Finset.sum_ite_eq', Finset.mem_univ, ite_true, ← Finset.sum_div,
       ← Finset.sum_mul, ← Finset.mul_sum]
   rw [he] at hsum
   linarith [exact_total_mass_upper]

@@ -42,7 +42,7 @@ theorem corrected_early_difference {X k : ℕ} (hX : 1 ≤ X) (hk : k ≤ X)
     {L : ℝ} (hL0 : 0 ≤ L) (hL : log k ≤ L) (linear quadratic : ℝ) :
     correctedProfile X L linear quadratic k-correctedProfile X L linear quadratic 1 =
       (linear-1)*log k+quadratic*(log k)^2 := by
-  simp only [correctedProfile,centeredProfile,if_pos hk,if_pos hX,
+  simp only [correctedProfile,centeredProfile,ite_eq_left hk,ite_eq_left hX,
     Nat.cast_one,log_one,zero_pow (by decide : 2 ≠ 0),mul_zero,add_zero,
     sub_zero,max_eq_right hL0,max_eq_right (sub_nonneg.mpr hL)]
   ring
@@ -98,7 +98,7 @@ theorem candidate_first_step {X : ℕ} (hX : 2 ≤ X) {L : ℝ} (hL : log 2 ≤ 
       -(1/3-log 2/(3*(N : ℝ)))*log 2 := by
   have hL0 : 0 ≤ L := (log_nonneg (by norm_num : (1 : ℝ) ≤ 2)).trans hL
   simp only [candidateProfile,correctedProfile,centeredProfile,
-    if_pos (by omega : 1 ≤ X),if_pos hX,Nat.cast_one,log_one,
+    ite_eq_left (by omega : 1 ≤ X),ite_eq_left hX,Nat.cast_one,log_one,
     Nat.cast_ofNat,zero_pow (by decide : 2 ≠ 0),mul_zero,add_zero,
     sub_zero,max_eq_right hL0,max_eq_right (sub_nonneg.mpr hL)]
   ring

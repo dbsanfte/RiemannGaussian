@@ -226,7 +226,7 @@ private theorem atom_eq_weight_riesz (A : Finset ℕ) (L u y : ℝ) (N n : ℕ)
       zetaPrimeLogKernel N (3/2+Complex.I*y) n) =
         sourceWeight A L u y N n*(VaughanLogAverage.riesz L n : ℂ) := by
   simp only [sourceWeight,residualCoefficient,SquarefreeVaughanLogSource.coefficient,
-    if_pos (And.intro hsf hnp)]
+    ite_eq_left (And.intro hsf hnp)]
   push_cast
   ring
 

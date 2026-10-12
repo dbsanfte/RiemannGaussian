@@ -1347,12 +1347,12 @@ private theorem family_positive_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : 0<(SquarefreeVaughanLogSource.coefficient L n).re
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart (-1) (A n) L y N n=0 := by
       simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
         -(SquarefreeVaughanLogSource.coefficient L n).re≤0),mul_zero,zero_mul]
     rw [hz,add_zero]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,one_mul,max_eq_right (le_of_not_gt hp),mul_zero,zero_mul]
 
 private theorem family_negative_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
@@ -1364,11 +1364,11 @@ private theorem family_negative_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : (SquarefreeVaughanLogSource.coefficient L n).re<0
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart 1 (A n) L y N n=0 := by
       simp only [signedPart,one_mul,max_eq_right hp.le,mul_zero,zero_mul]
     rw [hz,zero_add]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
       -(SquarefreeVaughanLogSource.coefficient L n).re≤0),mul_zero,zero_mul]
 

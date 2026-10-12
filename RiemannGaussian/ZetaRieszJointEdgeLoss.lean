@@ -193,7 +193,7 @@ private theorem eventually_products_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 
     apply hcounts i
     · dsimp [start]; split_ifs <;> linarith
     · dsimp [start]; split_ifs <;> linarith
-  have hprod := Finset.prod_le_prod
+  have hprod := Finset.prod_le_prod₀
     (s := (Finset.univ : Finset (Fin 3)))
     (fun i _ => div_nonneg (mul_nonneg (hc i).le (Real.exp_pos _).le) (by positivity))
     (fun i _ => hj i)
@@ -258,9 +258,9 @@ private theorem eventually_unassigned : ∀ᶠ N : ℕ in atTop,
   · have hshare := ZetaRieszParityOrderTail.share_small_of_selected_primes_interior
       A N he.1 he.2.1 (fun q hq _ _ => (prime_log_bounds hN hv hw hp hq).2.2)
     rw [(tuple_extremes hN hv hw hp).1,Nat.cast_ofNat] at hshare
-    rw [boundedShare,if_pos he]
+    rw [boundedShare,ite_eq_left he]
     linarith
-  · simp only [boundedShare,if_neg he]
+  · simp only [boundedShare,ite_eq_right he]
     norm_num
 
 private theorem products_subset_core (j : ℕ) (hj : 32 ≤ j) {u h v : ℝ}

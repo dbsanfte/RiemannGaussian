@@ -247,7 +247,7 @@ private theorem moebiusTailAggregate_endpoints (rho : NontrivialZetaZero) (M : �
     rw [← sum_pairedEtaCompletedMoebiusTerm]
     simp [pairedEtaCompletedMoebiusTerm_eq_completed_prefix, pairedEtaUnpairedDirichletPrefix,
       pairedEtaDirichletSign]
-  simp only [if_neg h0, if_neg h1, sub_zero, add_zero]
+  simp only [ite_eq_right h0, ite_eq_right h1, sub_zero, add_zero]
   exact pairedEtaCompletedMoebiusTailAggregate_eq_source rho (by omega)
 
 /-- Averaging the literal full Möbius aggregate gives the two original dyadic source terms with their correct survival weights. -/

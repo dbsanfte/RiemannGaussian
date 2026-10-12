@@ -90,7 +90,7 @@ private theorem balanced_prime_log {j n p : ℕ} (hp : p∈n.primeFactors)
     (hb : log (largestPrime n)<(51/50 : ℝ)*dyadicMomentOrder j) :
     log p<(51/50 : ℝ)*dyadicMomentOrder j := by
   have hmax : p≤largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   exact (log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
     (by exact_mod_cast hmax)).trans_lt hb
@@ -226,8 +226,8 @@ theorem eventually_balanced_failures_bound {u : ℝ} (hu : 1/2<u)
     apply Finset.sum_congr rfl
     intro n hn
     by_cases hc : ZetaRieszNearCriticalCountPayment.countCeiling j≤n.primeFactors.card
-    · simp only [if_pos hc]
-    · rw [if_neg hc,low_failure_coefficient_zero hu hU hj hn (by omega) hL,zero_mul]
+    · simp only [ite_eq_left hc]
+    · rw [ite_eq_right hc,low_failure_coefficient_zero hu hU hj hn (by omega) hL,zero_mul]
   rw [he]
   apply hb (highFailures u j)
     (completedCoefficient (SquarefreeVaughanLogSource.length u (dyadicMomentOrder j)))

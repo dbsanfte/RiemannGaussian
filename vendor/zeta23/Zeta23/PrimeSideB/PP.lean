@@ -177,7 +177,7 @@ lemma sum_sum_eq_diag_add_offdiag (S : Finset ℕ) (f : ℕ → ℕ → ℝ) :
   refine Finset.sum_congr rfl fun n hn => ?_
   have e : ∀ m, f n m = (if n = m then f n m else 0) + (if n = m then 0 else f n m) := by
     intro m; split_ifs <;> simp
-  rw [Finset.sum_congr rfl (fun m _ => e m), Finset.sum_add_distrib, Finset.sum_ite_eq, if_pos hn]
+  rw [Finset.sum_congr rfl (fun m _ => e m), Finset.sum_add_distrib, Finset.sum_ite_eq, ite_eq_left hn]
 
 /-- **[eq:MPP]** (§5.4): bilinearity in the prime sum, then the per-pair decomposition:
   𝓜[P_X,P_X] = (1/2π²)·( Σ_n a_n² A⁻(y_n,y_n)  +  Σ_{n≠m} a_n a_m A⁻(y_n,y_m)  +  Σ_{n,m} a_n a_m A⁺(y_n,y_m) )

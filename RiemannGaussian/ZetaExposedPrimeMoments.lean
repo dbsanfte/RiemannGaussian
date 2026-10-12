@@ -146,7 +146,7 @@ theorem summable_ordinaryPrimeMoment {s : ℂ} (hs : 1 < s.re) (N : ℕ) :
   apply h.of_norm_bounded
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, norm_mul, ArithmeticFunction.vonMangoldt_apply_prime hp,
+  · simp only [ite_eq_left hp, norm_mul, ArithmeticFunction.vonMangoldt_apply_prime hp,
       Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg (Real.log_natCast_nonneg p)]
     have hlog : Real.log 2 ≤ Real.log p := Real.log_le_log (by norm_num) (by exact_mod_cast hp.two_le)
     apply (le_div_iff₀ (Real.log_pos (by norm_num : (1 : ℝ) < 2))).mpr
@@ -162,7 +162,7 @@ theorem ordinaryPrimeMoment_succ {s : ℂ} (hs : 1 < s.re) (N : ℕ) :
   apply h.congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, ArithmeticFunction.vonMangoldt_apply_prime hp,
+  · simp only [ite_eq_left hp, ArithmeticFunction.vonMangoldt_apply_prime hp,
       zetaPrimeLogKernel, pow_succ, Nat.factorial_succ, Nat.cast_mul]
     ring
   · simp [hp]

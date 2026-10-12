@@ -408,7 +408,7 @@ theorem sum_kc_two_nat (m : ι → ℕ) (hm : ∀ j, 1 ≤ m j) :
     · have : m j = 1 := by have := hm j; omega
       simp [this, kc_two_one]
     · have hne : m j ≠ 1 := by omega
-      rw [if_neg hne, if_pos h, kc_two_of_two_le (by exact_mod_cast h)]; ring
+      rw [ite_eq_right hne, ite_eq_left h, kc_two_of_two_le (by exact_mod_cast h)]; ring
   simp_rw [hsplit]
   rw [Finset.sum_add_distrib, Finset.sum_ite, Finset.sum_ite]
   simp [Finset.sum_const, mul_comm]
@@ -430,7 +430,7 @@ theorem sum_kc_three_nat (m : ι → ℕ) (hm : ∀ j, 1 ≤ m j) :
         simp [this, kc_three_two]
     · have h1 : m j ≠ 1 := by omega
       have h2 : m j ≠ 2 := by omega
-      rw [if_neg h1, if_neg h2, if_pos h, kc_three_of_three_le (by exact_mod_cast h)]; ring
+      rw [ite_eq_right h1, ite_eq_right h2, ite_eq_left h, kc_three_of_three_le (by exact_mod_cast h)]; ring
   simp_rw [hsplit]
   rw [Finset.sum_add_distrib, Finset.sum_add_distrib, Finset.sum_ite, Finset.sum_ite, Finset.sum_ite]
   simp [Finset.sum_const, mul_comm]

@@ -235,7 +235,7 @@ theorem suzukiProperPrimePowerMass_nat_eq (count : ℕ) :
     · intro j hj
       rfl
   rw [he, Finset.sum_range_succ']
-  simp only [Nat.zero_add, Nat.prime_two, if_true, add_zero, Nat.add_assoc, Nat.reduceAdd]
+  simp only [Nat.zero_add, Nat.prime_two, ite_true, add_zero, Nat.add_assoc, Nat.reduceAdd]
 
 private theorem sum_nonprime_abs_le_log (f : ℕ → ℝ) {C : ℝ} (hC : 0 ≤ C)
     (hf : ∀ j, |f j| ≤ C * suzukiPrimeWeight (j + 1)) (count : ℕ) :
@@ -248,7 +248,7 @@ private theorem sum_nonprime_abs_le_log (f : ℕ → ℝ) {C : ℝ} (hC : 0 ≤ 
       intro j hj
       by_cases hp : (j + 3).Prime
       · simp [hp]
-      · simpa only [if_neg hp] using hf j
+      · simpa only [ite_eq_right hp] using hf j
     _ = C * suzukiProperPrimePowerMass ((count + 2 : ℕ) : ℝ) := by
       rw [← Finset.mul_sum, suzukiProperPrimePowerMass_nat_eq]
     _ ≤ _ := mul_le_mul_of_nonneg_left

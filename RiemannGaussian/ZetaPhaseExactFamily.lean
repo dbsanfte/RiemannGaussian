@@ -52,7 +52,7 @@ theorem phaseContactFrequencyFamily_eq_zero {n : ℕ} (hn : n ∉ phaseContactFr
   unfold phaseContactFrequencyFamily
   apply Finset.sum_eq_zero
   intro i _
-  apply if_neg
+  apply ite_eq_right
   intro h
   apply hn
   rw [h]

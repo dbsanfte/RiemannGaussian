@@ -193,7 +193,7 @@ theorem additionalSymbol_profile {z : ℂ} (hz : z.re ≤ -(1/2 : ℝ))
       (8000010*largeCost*sharpOrderBudget N/‖z‖^2)*
         ((1+xi^2)⁻¹+(1+(xi-z.im)^2)⁻¹) := by
   by_cases he : Additional z xi
-  · rw [additionalSymbol,if_pos he,norm_div,norm_pow,Complex.norm_real,Real.norm_eq_abs,sq_abs]
+  · rw [additionalSymbol,ite_eq_left he,norm_div,norm_pow,Complex.norm_real,Real.norm_eq_abs,sq_abs]
     apply (div_le_div_of_nonneg_right (sharp_shiftedSymbol_bound hz A h16 N y he hu hU) (sq_nonneg xi)).trans
     calc
       _ = (largeCost*sharpOrderBudget N)*(1/(‖Complex.I*xi-z‖^2*xi^2)) := by ring
@@ -201,7 +201,7 @@ theorem additionalSymbol_profile {z : ℂ} (hz : z.re ≤ -(1/2 : ℝ))
         have h := mul_le_mul_of_nonneg_left (kernel_overlap_half hz he.1)
           (mul_nonneg largeCost_nonneg (sharpOrderBudget_nonneg N))
         exact h.trans_eq (by ring)
-  · simp only [additionalSymbol,if_neg he,mul_zero,zero_div,norm_zero]
+  · simp only [additionalSymbol,ite_eq_right he,mul_zero,zero_div,norm_zero]
     positivity [largeCost_nonneg,sharpOrderBudget_nonneg N,sharpRate_bounds.1]
 
 /-- Both phases are estimated only on their respective nonresonant
@@ -346,10 +346,10 @@ theorem edgeAdditionalPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
         (additionalPair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)) else 0
   have hi (tau : NontrivialZetaZero) : IntegrableOn (F tau) (Ioi 0) := by
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · simpa only [IntegrableOn,F,if_pos ht,mul_left_comm] using
+    · simpa only [IntegrableOn,F,ite_eq_left ht,mul_left_comm] using
         (integrable_additionalPair (modeLocation_half y tau) A h16 N y L hu hU).const_mul
           (analyticZetaZeroMultiplicity tau : ℂ)
-    · simp only [F,if_neg ht]
+    · simp only [F,ite_eq_right ht]
       exact integrableOn_zero
   have hn (tau : NontrivialZetaZero) :
       (∫ xi : ℝ in Ioi 0, ‖F tau xi‖) ≤
@@ -358,14 +358,14 @@ theorem edgeAdditionalPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
     · have he (xi : ℝ) : ‖F tau xi‖ = (analyticZetaZeroMultiplicity tau : ℝ)*
           ‖(u : ℂ)^(N+1)*(additionalPair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)‖ := by
         dsimp only [F]
-        rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+        rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       simp_rw [he]
       rw [integral_const_mul]
       exact (mul_le_mul_of_nonneg_left
         (integral_norm_additionalPair_bound (modeLocation_half y tau) A h16 N y L hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq
           (by unfold exteriorResponseConstant zeroWeight; ring)
-    · simp only [F,if_neg ht,norm_zero,integral_zero]
+    · simp only [F,ite_eq_right ht,norm_zero,integral_zero]
       positivity [exteriorResponseConstant_nonneg,sharpOrderBudget_nonneg N,zeroWeight_nonneg y tau]
   have hsum : Summable (fun tau : NontrivialZetaZero => ∫ xi : ℝ in Ioi 0, ‖F tau xi‖) :=
     ((summable_zeroWeight y).mul_left (exteriorResponseConstant*sharpOrderBudget N)).of_nonneg_of_le
@@ -397,9 +397,9 @@ theorem hasSum_edgeAdditionalResponse (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 �
     apply hs.congr_fun
     intro tau
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · simp only [if_pos ht,integral_const_mul,additionalResponse]
+    · simp only [ite_eq_left ht,integral_const_mul,additionalResponse]
       ring
-    · simp only [if_neg ht,integral_zero,mul_zero]
+    · simp only [ite_eq_right ht,integral_zero,mul_zero]
   have he (xi : ℝ) : (∑' tau, F tau xi) =
       (u : ℂ)^(N+1)*(edgeAdditionalPair A N y L xi/(xi : ℂ)^2) := by
     rw [edgeAdditionalPair,← tsum_div_const,← tsum_mul_left]
@@ -445,11 +445,11 @@ theorem edgeAdditionalResponse_bound (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤
         ((analyticZetaZeroMultiplicity tau : ℂ)*additionalResponse (modeLocation y tau) A N y L) else 0‖ ≤
       (exteriorResponseConstant*((N : ℝ)+2)^3*sharpRate^N)*zeroWeight y tau := by
     by_cases ht : (999/1000 : ℝ) < tau.1.re
-    · rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+    · rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       exact (mul_le_mul_of_nonneg_left
         (additionalResponse_bound (modeLocation_half y tau) A h16 N y hL hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq (by unfold zeroWeight; ring)
-    · simp only [if_neg ht,norm_zero]
+    · simp only [ite_eq_right ht,norm_zero]
       positivity [exteriorResponseConstant_nonneg,zeroWeight_nonneg y tau,sharpRate_bounds.1]
   rw [← hs.tsum_eq]
   apply (norm_tsum_le_tsum_norm hs.summable.norm).trans
@@ -491,7 +491,7 @@ theorem sharp_shift_support {z : ℂ} {j : ℕ} {xi : ℝ}
     by_cases he : Exterior z xi
     · exact Or.inl he
     · exact Or.inr ⟨hx,hr,he⟩
-  exact h (by rw [sharpDifference_eq,if_pos he,sub_zero])
+  exact h (by rw [sharpDifference_eq,ite_eq_left he,sub_zero])
 
 /-- Outside the central band, the remaining shifted zero must have
 real part greater than 0.9999 and lie in a narrower ordinate interval. -/

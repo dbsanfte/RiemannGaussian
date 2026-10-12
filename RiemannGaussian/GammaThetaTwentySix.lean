@@ -42,9 +42,9 @@ private theorem env_mem : envMemDyadic realEnv intervalEnv := by
   intro i
   apply IntervalDyadic.mem_ofIntervalRat (prec := cfg.precision) (hprec := by decide)
   by_cases hi : i < 9
-  · simp only [realEnv, hi, if_true]
+  · simp only [realEnv, hi, ite_true]
     exact CertifiedArctan.bounds_of_check (checked_angles ⟨i, hi⟩)
-  · simp only [realEnv, hi, if_false]
+  · simp only [realEnv, hi, ite_false]
     exact ⟨Real.pi_gt_d20.le, Real.pi_lt_d20.le⟩
 
 private def angleSum : ℕ → Expr

@@ -321,7 +321,7 @@ theorem riesz_reflection (L : ℝ) {n : ℕ} (hn : Squarefree n) (h1 : n ≠ 1)
     have h := congrArg (fun f : ArithmeticFunction ℝ ↦ f n)
       ArithmeticFunction.coe_moebius_mul_coe_zeta
     simpa only [ArithmeticFunction.coe_mul_zeta_apply, ArithmeticFunction.intCoe_apply,
-      ArithmeticFunction.one_apply, if_neg h1] using h
+      ArithmeticFunction.one_apply, ite_eq_right h1] using h
   have hLambda : ArithmeticFunction.vonMangoldt n = 0 :=
     ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr (fun h ↦
       hp (Nat.squarefree_and_prime_pow_iff_prime.mp ⟨hn, h⟩))

@@ -96,7 +96,7 @@ theorem coefficient_eq_pairDiscrepancy {p q a : ℕ}
     simp [this] at h
   have hnp : ¬(p * (q * a)).Prime :=
     Nat.not_prime_mul hp.ne_one (by nlinarith [hq.two_le])
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hn, hnp⟩,
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hn, hnp⟩,
     pairDiscrepancy_eq_neg_riesz L hp hq hpq hpa hqa]
   congr 1
   ring
@@ -196,7 +196,7 @@ theorem pairForm_eq_sum (u : ℝ) (N : ℕ) (S : Finset ℕ) (kernel : ℕ → �
   apply Finset.sum_congr rfl
   intro n hnS
   by_cases hn : Squarefree n
-  · rw [if_pos hn]
+  · rw [ite_eq_left hn]
     have hcard : (primePairs n).card ≠ 0 := by
       rw [primePairs_card]
       have hc := hS n hnS

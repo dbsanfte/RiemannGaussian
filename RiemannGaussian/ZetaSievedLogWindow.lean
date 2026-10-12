@@ -181,15 +181,15 @@ theorem zetaRightHalfWindowCoefficient_eq_neg_prefix (rho : NontrivialZetaZero)
     have he : n = 0 ∨ n = 1 := by omega
     rcases he with rfl | rfl <;> simp at hmix
   have hprime := (Nat.not_isPrimePow_iff_nontrivial_of_two_le hn2).mpr hmix
-  simp only [zetaRightHalfWindowCoefficient, zetaLogWindowCoefficient, if_pos hn,
-    zetaMoebiusSievedPrimeCoefficient, if_pos hsieve,
-    zetaMoebiusDistinctPrimeCoefficient, if_pos hmix]
+  simp only [zetaRightHalfWindowCoefficient, zetaLogWindowCoefficient, ite_eq_left hn,
+    zetaMoebiusSievedPrimeCoefficient, ite_eq_left hsieve,
+    zetaMoebiusDistinctPrimeCoefficient, ite_eq_left hmix]
   rw [zetaMoebiusLogTailCoefficient_eq_neg_prefix _ (by omega) hprime]
   congr 1
   apply Finset.sum_congr rfl
   intro d hd
   by_cases hdvd : d ∣ n
-  · rw [if_pos hdvd, if_pos
+  · rw [ite_eq_left hdvd, ite_eq_left
       ⟨hdvd, zetaLogWindow_quotient_gt_moebiusCutoff rho hN hn hdvd (Finset.mem_Icc.mp hd).2⟩]
   · simp [hdvd]
 

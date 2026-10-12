@@ -398,7 +398,7 @@ theorem suzukiChebyshevLaplaceBoundaryHeat_finiteCauchyGreen_of_selectedFinset
         if rho ∈ S then -(C * Q rho) else 0 := by
     intro rho hrho
     by_cases hs : rho ∈ S
-    · rw [if_pos hs]
+    · rw [ite_eq_left hs]
       have hi := hinside rho hs
       have hid :=
         rectangularAreaIntegral_suzukiChebyshevLaplaceBoundaryHeatWeightedSimplePoleSource_eq_boundary_sub_residue
@@ -410,7 +410,7 @@ theorem suzukiChebyshevLaplaceBoundaryHeat_finiteCauchyGreen_of_selectedFinset
       rw [hid]
       simp only [P, Q, C]
       ring
-    · rw [if_neg hs]
+    · rw [ite_eq_right hs]
       have hout := houtside rho (by simpa [W] using hrho) hs
       have hdomain : [[l, r]] ×ℂ [[b, u]] ⊆
           ({suzukiChebyshevLaplaceZeroCoordinate rho} : Set ℂ)ᶜ := by

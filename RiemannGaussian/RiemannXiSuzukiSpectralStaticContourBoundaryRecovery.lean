@@ -137,7 +137,7 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_imaginary_le_inverseS
         _ ≤ 1 / (Q / 4) :=
           one_div_le_one_div_of_le (by positivity) hAB
         _ = 4 / Q := by field_simp [hQ.ne']
-    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper,
+    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper,
       zetaUpperBlaschkeLogDerivativeSummand]
     change ‖(analyticZetaZeroMultiplicity rho : ℂ) *
         (1 / (z - alpha) - 1 / (z - starRingEnd ℂ alpha))‖ ≤ _
@@ -152,7 +152,7 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_imaginary_le_inverseS
         (analyticZetaZeroMultiplicity rho : ℝ) * (4 / Q) :=
           mul_le_mul_of_nonneg_left hfrac (Nat.cast_nonneg _)
       _ = 4 * ((analyticZetaZeroMultiplicity rho : ℝ) / Q) := by ring
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
       norm_zero]
     positivity
 

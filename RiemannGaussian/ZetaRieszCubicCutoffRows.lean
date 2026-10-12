@@ -817,9 +817,9 @@ theorem literalCutoffPacket_eq_rows (u y : ℝ) (j : ℕ) :
   obtain ⟨_,hs,_,_,hH,_,_,_,_,hc,_hsmall,_,_⟩ := Finset.mem_filter.mp hpb
   by_cases hcore : pb.1*(pb.2*e) ∈ ZetaRieszParityPacket.coreBand u
       (dyadicMomentOrder j) (dyadicPrimeCount j)
-  · simp only [if_pos hcore]
+  · simp only [ite_eq_left hcore]
     exact (ZetaRieszRoughCutoffRows.cutoff_row_atom_eq _ hs hc hH).symm
-  · simp only [if_neg hcore,mul_zero]
+  · simp only [ite_eq_right hcore,mul_zero]
 
 /-- Concrete independent signed estimate on the ORIGINAL finite prime
 and divisor sum, not a density model or a conditional sieve hypothesis. -/
@@ -1274,7 +1274,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP,dvd_mul_right _ _,hs.ne_zero⟩
   have hne : (p*(B*e)).primeFactors.Nonempty := ⟨p,hpn⟩
   have hmax' : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hmax q (hq : q ∈ B.primeFactors) : q < p := by
     have hd : B ∣ p*(B*e) := (dvd_mul_right B e).trans (dvd_mul_left _ _)
     have hqn := Nat.primeFactors_mono hd hs.ne_zero hq
@@ -1326,7 +1326,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP.coprime_iff_not_dvd.mpr hpd,hpP.squarefree,hB⟩
   rw [ZetaRieszRoughCutoffRows.sieve_forbidden,ht,mul_one,sieve_eq_product_squarefree houter]
   have hsq' : Squarefree ((p*B)*e) := by simpa only [mul_assoc] using hs
-  simp only [if_pos hsq']
+  simp only [ite_eq_left hsq']
 
 /-- Every active canonical short-cutoff crossing in the polynomial cap
 is now either independently paid or part of a restored exact zero block.
@@ -1390,7 +1390,7 @@ theorem cubic_paid_incidence_not_crossing {u : ℝ} {N K : ℕ} (hN : 32 ≤ N)
   intro hnew
   unfold crossingDivisors at hnew
   dsimp only at hnew
-  rw [if_pos ⟨hblock.1,by omega⟩] at hnew
+  rw [ite_eq_left ⟨hblock.1,by omega⟩] at hnew
   obtain ⟨f,hf,hnew⟩ := Finset.mem_biUnion.mp hnew
   have hfmem := (Finset.mem_filter.mp hf).1
   have hemost : e ∈ ((pb.1*(pb.2*e)/largestPrime (pb.1*(pb.2*e)))/
@@ -1522,7 +1522,7 @@ theorem cubic_paid_incidence_not_affine {u : ℝ} {N K : ℕ} (hN : 32 ≤ N)
   intro hnew
   unfold affineDivisors at hnew
   dsimp only at hnew
-  rw [if_pos ⟨hblock.1,by omega⟩] at hnew
+  rw [ite_eq_left ⟨hblock.1,by omega⟩] at hnew
   obtain ⟨f,hf,hnew⟩ := Finset.mem_biUnion.mp hnew
   have hfmem := (Finset.mem_filter.mp hf).1
   have hemost : e ∈ ((pb.1*(pb.2*e)/largestPrime (pb.1*(pb.2*e)))/

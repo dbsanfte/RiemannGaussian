@@ -164,12 +164,12 @@ theorem harmonicPrefix_insert (S : Finset ℕ) {p : ℕ} (hp : p.Prime)
     simp only [hsame,moebius_prime_mul_eq_not_dvd hp]
     by_cases hd : p ∣ n
     · simp [hd]
-    rw [if_neg hd,Int.cast_neg]
+    rw [ite_eq_right hd,Int.cast_neg]
     by_cases h : ∀ q ∈ S, ¬q ∣ n
-    · rw [if_pos h,if_pos ⟨hd,h⟩]
+    · rw [ite_eq_left h,ite_eq_left ⟨hd,h⟩]
       simp only [Nat.cast_mul,div_mul_eq_div_div]
       ring
-    · rw [if_neg h,if_neg (fun hh => h hh.2)]
+    · rw [ite_eq_right h,ite_eq_right (fun hh => h hh.2)]
       simp
   rw [he] at hdiv
   linarith
@@ -305,7 +305,7 @@ def smallPrimeCost : ℝ :=
 /-- The fixed small-factor cost is at least one. -/
 theorem smallPrimeCost_one_le : 1 ≤ smallPrimeCost := by
   unfold smallPrimeCost
-  apply Finset.one_le_prod
+  apply Finset.one_le_prod₀
   intro p hp
   have h := half_factor_one_le (p := (p : ℝ)) (by
     have := (Finset.mem_Icc.mp hp).1
@@ -327,7 +327,7 @@ theorem halfExclusionCost_sq_le_divisors {g : ℕ} (hg : g ≠ 0) :
     exact Finset.mem_Icc.mpr ⟨(hSp p h.1).two_le,by omega⟩
   have hU : (∏ p ∈ U, f p) ≤ smallPrimeCost := by
     change (∏ p ∈ U, f p) ≤ ∏ p ∈ Finset.Icc 2 15, f p
-    apply Finset.prod_le_prod_of_subset_of_one_le hUf
+    apply Finset.prod_le_prod_of_subset_of_one_le₀ hUf
     · intro p _
       exact sq_nonneg _
     · intro p hp _
@@ -340,16 +340,16 @@ theorem halfExclusionCost_sq_le_divisors {g : ℕ} (hg : g ≠ 0) :
       (∏ p ∈ U, f p)*(∏ p ∈ S, (1+4/Real.sqrt p)) := by
     rw [Finset.prod_filter]
     rw [← Finset.prod_mul_distrib]
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro p _
       exact sq_nonneg _
     · intro p hp
       have hp0 : 0 < Real.sqrt (p : ℝ) := by positivity [(hSp p hp).pos]
       by_cases h : p < 16
-      · simp only [if_pos h]
+      · simp only [ite_eq_left h]
         have hh : 0 ≤ f p*(4/Real.sqrt p) := mul_nonneg (sq_nonneg _) (by positivity)
         nlinarith only [hh]
-      · simp only [if_neg h,one_mul]
+      · simp only [ite_eq_right h,one_mul]
         exact half_factor_square_le (by exact_mod_cast (by omega : 16 ≤ p))
   have he := Nat.sum_divisors_filter_squarefree hg
     (f := fun d => (d.divisors.card : ℝ)^2/Real.sqrt d)
@@ -568,11 +568,11 @@ theorem harmonic_row_eq (R g : ℕ) (hg : 0 < g) :
   intro n _
   by_cases hsf : Squarefree g
   · by_cases hc : g.Coprime n
-    · rw [if_pos ((coprime_iff_excluded hg.ne' n).mp hc),
+    · rw [ite_eq_left ((coprime_iff_excluded hg.ne' n).mp hc),
         ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hc]
       simp only [Int.cast_mul,Nat.cast_mul,div_mul_eq_div_div]
       ring
-    · rw [if_neg (fun h => hc ((coprime_iff_excluded hg.ne' n).mpr h)),
+    · rw [ite_eq_right (fun h => hc ((coprime_iff_excluded hg.ne' n).mpr h)),
         ArithmeticFunction.moebius_eq_zero_of_not_squarefree
           (fun hs => hc (Nat.coprime_of_squarefree_mul hs))]
       simp

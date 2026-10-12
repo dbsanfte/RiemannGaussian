@@ -217,7 +217,7 @@ theorem previous_cancelled_subset {u : ℝ} {N K n : ℕ}
   split_ifs at hdb with h
   · unfold cancelledOrbitDivisors
     dsimp only
-    rw [if_pos ⟨h.1,h.2.1⟩]
+    rw [ite_eq_left ⟨h.1,h.2.1⟩]
     apply Finset.mem_biUnion.mpr
     refine ⟨1,Finset.mem_filter.mpr ⟨?_,?_⟩,?_⟩
     · exact Nat.mem_divisors.mpr ⟨one_dvd _,
@@ -393,7 +393,7 @@ theorem uncancelled_short_orbit_geometry {u : ℝ} {N K n e delta : ℕ}
       apply hnot
       unfold cancelledOrbitDivisors
       dsimp only
-      rw [if_pos ⟨hblock.1,by omega⟩]
+      rw [ite_eq_left ⟨hblock.1,by omega⟩]
       apply Finset.mem_biUnion.mpr
       refine ⟨e,Finset.mem_filter.mpr ⟨he,?_⟩,Finset.mem_image.mpr ⟨delta,hdelta,rfl⟩⟩
       simpa only [ShortOrbit,hpa] using ⟨hcut,hcomp,hside,hP⟩

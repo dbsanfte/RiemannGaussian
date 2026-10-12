@@ -162,7 +162,7 @@ theorem suzukiXiReflectionPairQuadratic_source_eq_neg_inv_multiplicity
   simp only [suzukiXiReflectionPairQuadratic, suzukiXiMixedContourXiSource,
     NontrivialZetaZero.spectralCoordinate_conjugatePartner, conj_conj,
     analyticZetaZeroMultiplicity_conjugatePartner, hne, Ne.symm hne, hn, hp',
-    true_and, false_and, and_self, if_false, if_true, sub_zero, zero_sub, add_zero]
+    true_and, false_and, and_self, ite_false, ite_true, sub_zero, zero_sub, add_zero]
 
 end
 end RiemannGaussian

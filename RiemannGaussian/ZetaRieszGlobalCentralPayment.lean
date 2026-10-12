@@ -31,9 +31,9 @@ theorem completedCoefficient_norm_le {L : ℝ} (hL : 0<L) (n : ℕ) :
   by_cases hp : n.Prime
   · have he := SquarefreeVaughanLogSource.coefficient_eq_completed_with_prime hL n
     have hz : SquarefreeVaughanLogSource.coefficient L n=0 := by
-      simp only [SquarefreeVaughanLogSource.coefficient,hp,not_true_eq_false,and_false,if_false]
+      simp only [SquarefreeVaughanLogSource.coefficient,hp,not_true_eq_false,and_false,ite_false]
     change SquarefreeVaughanLogSource.coefficient L n=completedCoefficient L n+_ at he
-    rw [hz,if_pos hp] at he
+    rw [hz,ite_eq_left hp] at he
     have hc : completedCoefficient L n=-((log n*min L (log n)/L : ℝ) : ℂ) := by
       linear_combination -he
     have hm : 0 ≤ min L (log n) := le_min hL.le (log_natCast_nonneg n)
@@ -177,7 +177,7 @@ theorem completedCentral_eq_native_and_boundaries (u y : ℝ) (j : ℕ) :
       completedCoefficient (SquarefreeVaughanLogSource.length u (dyadicMomentOrder j)) n := by
     intro n hn
     simp only [SquarefreeVaughanLogSource.coefficient,completedCoefficient,
-      central_squarefree hn,central_not_prime hn,not_false_eq_true,and_self,if_true]
+      central_squarefree hn,central_not_prime hn,not_false_eq_true,and_self,ite_true]
   let N := dyadicMomentOrder j
   let f := fun n => completedCoefficient (SquarefreeVaughanLogSource.length u N) n*
     zetaPrimeLogKernel N (3/2+Complex.I*y) n
@@ -185,10 +185,10 @@ theorem completedCentral_eq_native_and_boundaries (u y : ℝ) (j : ℕ) :
       (SquarefreeVaughanLogSource.length u N) n*zetaPrimeLogKernel N (3/2+Complex.I*y) n)=
       ∑ n∈centralFullLabels N,if n∈centralLabels u j then f n else 0 := by
     rw [← Finset.sum_subset (f:=fun n => if n∈centralLabels u j then f n else 0)
-      hsub (by intro n _ hn; simp only [if_neg hn])]
+      hsub (by intro n _ hn; simp only [ite_eq_right hn])]
     apply Finset.sum_congr rfl
     intro n hn
-    rw [if_pos hn,hm n hn]
+    rw [ite_eq_left hn,hm n hn]
   have ha : (∑ n∈centralFullLabels N,f n)=
       (∑ n∈centralLabels u j,SquarefreeVaughanLogSource.coefficient
         (SquarefreeVaughanLogSource.length u N) n*zetaPrimeLogKernel N (3/2+Complex.I*y) n)+
@@ -206,7 +206,7 @@ theorem completedCentral_eq_native_and_boundaries (u y : ℝ) (j : ℕ) :
       · have hno : n∉centralLabels u j := fun hm => central_not_prime hm hp
         simp only [hno,hp,hp.primeFactors,Finset.card_singleton,hs,
           show ¬(1 : ℕ)=2 by omega,show ¬(3 : ℕ)≤1 by omega,
-          and_false,false_and,if_true,if_false,zero_add,add_zero]
+          and_false,false_and,ite_true,ite_false,zero_add,add_zero]
       · by_cases hc : n.primeFactors.card=2
         · have hno : n∉centralLabels u j := by
             intro hm
@@ -218,11 +218,11 @@ theorem completedCentral_eq_native_and_boundaries (u y : ℝ) (j : ℕ) :
             omega
           by_cases hm : n∈centralLabels u j <;>
             simp only [hm,hp,hs,hc,ht,not_true_eq_false,not_false_eq_true,
-              and_true,and_false,if_true,if_false,zero_add,add_zero]
+              and_true,and_false,ite_true,ite_false,zero_add,add_zero]
     · have hp : ¬n.Prime := fun hp => hs hp.squarefree
       have hm : n∉centralLabels u j := fun hm => hs (central_squarefree hm)
-      simp only [hm,hp,hs,false_and,if_false,add_zero]
-      simp only [f,completedCoefficient,if_neg hs,zero_mul]
+      simp only [hm,hp,hs,false_and,ite_false,add_zero]
+      simp only [f,completedCoefficient,ite_eq_right hs,zero_mul]
   unfold completedCentral centralRest completionTerm
   change (u : ℂ)^(N+1)*(∑ n∈centralFullLabels N,f n)=_
   rw [ha]

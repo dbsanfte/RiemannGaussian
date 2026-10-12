@@ -36,7 +36,7 @@ theorem sum_Icc_gcd_div_mul_le_common_divisors (T : ℕ) :
         ⟨hgp, (Nat.le_of_dvd hdp (Nat.gcd_dvd_left d e)).trans (Finset.mem_Icc.mp hd).2⟩
       have h := Finset.single_le_sum (f := fun g : ℕ ↦ (g : ℝ) * w g d * w g e)
         (fun g _ ↦ mul_nonneg (mul_nonneg (Nat.cast_nonneg g) (hw g d)) (hw g e)) hgm
-      simpa only [w, if_pos (Nat.gcd_dvd_left d e), if_pos (Nat.gcd_dvd_right d e),
+      simpa only [w, ite_eq_left (Nat.gcd_dvd_left d e), ite_eq_left (Nat.gcd_dvd_right d e),
         div_eq_mul_inv, one_mul, mul_inv, mul_assoc] using h
     _ = ∑ d ∈ s, ∑ g ∈ s, ∑ e ∈ s, (g : ℝ) * w g d * w g e := by
       apply Finset.sum_congr rfl

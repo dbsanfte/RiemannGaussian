@@ -248,7 +248,7 @@ theorem phasePolynomial_ne_zero {N m : ℕ} (hm : m.Prime) (hN : m.Coprime N)
   have hc := congrArg (fun P : (ZMod m)[X] => P.coeff 0) he
   simp only [phasePolynomial,coeff_sub,coeff_add,coeff_C_mul_X_pow,
     coeff_C_mul_X,coeff_C_zero,coeff_zero,show (0 : ℕ)≠2 by decide,
-    show (0 : ℕ)≠1 by decide,if_false,zero_add,zero_sub,neg_eq_zero] at hc
+    show (0 : ℕ)≠1 by decide,ite_false,zero_add,zero_sub,neg_eq_zero] at hc
   have hd := (ZMod.natCast_eq_zero_iff N m).mp hc
   have hdiv : m∣1 := by
     simpa only [hN.gcd_eq_one] using Nat.dvd_gcd (dvd_refl m) hd
@@ -460,7 +460,7 @@ theorem predictedGlobalTags_length_le {G : Type*} [CommGroup G] (g : G)
         (predictedTag m t₀ (seedOffset N m j₀) z₀ s)).length≤m-1 := by
     intro s _
     simpa only [List.length_range] using List.length_filterMap_le _ (List.range (m-1))
-  have hh := List.sum_le_card_nsmul
+  have hh := List.sum_le_length_nsmul
     ((phaseSeeds g N m j₀).map fun s =>
       ((List.range (m-1)).filterMap
         (predictedTag m t₀ (seedOffset N m j₀) z₀ s)).length) (m-1)
@@ -562,9 +562,9 @@ theorem merged_reader_global_tag {N m j t r : ℕ} (g : (ZMod N)ˣ)
         congr 1
         omega
   refine ⟨ht,htm,hj,hjm,?_,?_,hglobal⟩
-  · cases upper <;> simp only [mergedStart,Bool.false_eq_true,if_false,if_true] <;>
+  · cases upper <;> simp only [mergedStart,Bool.false_eq_true,ite_false,ite_true] <;>
       nlinarith only [hr₀,sq_nonneg (m : ℤ)]
-  · cases upper <;> simp only [mergedStart,Bool.false_eq_true,if_false,if_true] <;>
+  · cases upper <;> simp only [mergedStart,Bool.false_eq_true,ite_false,ite_true] <;>
       nlinarith only [hrZ,sq_nonneg (m : ℤ)]
 
 /-- On the actual N-only matched-width long route, a public common index

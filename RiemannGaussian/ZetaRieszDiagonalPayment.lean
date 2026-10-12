@@ -276,7 +276,7 @@ theorem corrected_profile_step_le {X k : ℕ} (hk : k ∈ Finset.Icc 1 X) (L : �
     have hdiff : correctedProfile X L 1 0 k-correctedProfile X L 1 0 (k+1)=
         max L (log k)-max L (log (k+1 : ℕ)) := by
       simp only [correctedProfile,ZetaRieszCenteredPrimeEnergy.centeredProfile,
-        if_pos hkX,if_pos hk',zero_mul,add_zero,one_mul]
+        ite_eq_left hkX,ite_eq_left hk',zero_mul,add_zero,one_mul]
       linarith only [hinge_add_log L (log k),hinge_add_log L (log (k+1 : ℕ))]
     have hm : max L (log k) ≤ max L (log (k+1 : ℕ)) := max_le_max_left L hl
     have hgap : max L (log (k+1 : ℕ))-max L (log k) ≤ log (k+1 : ℕ)-log k := by

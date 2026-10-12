@@ -173,13 +173,13 @@ theorem finite_source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
         have h := mul_le_mul_of_nonneg_left
           (prime_add_selected_le_means k hk hB hx hx' hM t S) (ha 1)
         simp only [P, U, L, R, E, X, hω1, one_mul, tail,
-          show (1 : ℕ) ≠ 0 by norm_num, if_false, if_true, zero_add, Q, Complex.ofReal_one]
+          show (1 : ℕ) ≠ 0 by norm_num, ite_false, ite_true, zero_add, Q, Complex.ofReal_one]
         simp only [div_eq_mul_inv] at h ⊢
         nlinarith only [h]
       · have h := mul_le_mul_of_nonneg_left
           (prime_add_selected_le_means k hk hB hx hx' hM (ω n * t) ∅) (ha n)
         simp only [Finset.sum_empty, add_zero] at h
-        simp only [P, U, L, R, E, X, tail, hn0, hn1, if_false, add_zero, zero_add]
+        simp only [P, U, L, R, E, X, tail, hn0, hn1, ite_false, add_zero, zero_add]
         simp only [div_eq_mul_inv, Complex.ofReal_mul] at h ⊢
         nlinarith only [h]
   have hb := (hP.add hq).tsum_le_tsum hpoint (hc.add hU)

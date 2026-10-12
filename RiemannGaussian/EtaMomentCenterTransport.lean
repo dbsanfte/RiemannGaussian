@@ -115,7 +115,7 @@ theorem pairedEtaUnpairedCenteredMomentPrefix_endpoint_eq_shifted
   rw [hp]
   congr 1
   by_cases ho : Odd M
-  · rw [if_pos ho, if_pos ho]
+  · rw [ite_eq_left ho, ite_eq_left ho]
     have hQ : pairedEtaUnpairedOddEndpoint M = M := by
       have hm := Nat.odd_iff.mp ho
       unfold pairedEtaUnpairedOddEndpoint
@@ -124,7 +124,7 @@ theorem pairedEtaUnpairedCenteredMomentPrefix_endpoint_eq_shifted
       have hm : 0 < M := ho.pos
       exact_mod_cast hm.ne'
     rw [hQ, ← mul_assoc, ← Complex.cpow_add _ _ hM, add_neg_cancel, Complex.cpow_zero, one_mul]
-  · rw [if_neg ho, if_neg ho, mul_zero]
+  · rw [ite_eq_right ho, ite_eq_right ho, mul_zero]
 
 end
 

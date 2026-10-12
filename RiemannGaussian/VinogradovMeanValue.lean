@@ -126,7 +126,7 @@ theorem first_moment {v : ι → d → ℤ} (hv : Function.Injective v) :
   classical
   have h := weighted_gram v (fun _ => 1)
   simp only [one_mul, map_one, mul_one, hv.eq_iff] at h
-  simp only [Finset.sum_ite_eq, Finset.mem_univ, if_true, Finset.sum_const,
+  simp only [Finset.sum_ite_eq, Finset.mem_univ, ite_true, Finset.sum_const,
     Finset.card_univ, nsmul_eq_mul, mul_one] at h
   apply Complex.ofReal_injective
   simpa only [moment, mul_one, Complex.mul_conj, ← Complex.sq_norm,

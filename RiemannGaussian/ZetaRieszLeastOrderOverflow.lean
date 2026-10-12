@@ -132,7 +132,7 @@ theorem overflowWeight_bound {n p : ℕ} (hn : Squarefree n) (hn1 : 1 < n)
       all_goals ring
     simp_rw [hi]
     rw [Finset.sum_add_distrib, Finset.sum_add_distrib, hsum]
-    simp only [Finset.sum_ite_eq', if_pos hpS, if_pos hr]
+    simp only [Finset.sum_ite_eq', ite_eq_left hpS, ite_eq_left hr]
     have hh := fourteen_share hn hn1 hp hc
     change x p+13*x n.minFac ≤ 1 at hh
     linarith
@@ -148,7 +148,7 @@ theorem overflowWeight_bound {n p : ℕ} (hn : Squarefree n) (hn1 : 1 < n)
         all_goals simp
       simp_rw [hi]
       rw [Finset.prod_mul_distrib]
-      simp only [Finset.prod_ite_eq', if_pos hpS, if_pos hr]
+      simp only [Finset.prod_ite_eq', ite_eq_left hpS, ite_eq_left hr]
     simp only [allocationWeight, y, mul_pow, Finset.prod_mul_distrib]
     rw [hpv]
     ring
@@ -218,7 +218,7 @@ theorem lower_upper_filter_eq {n p : ℕ} (hn : Squarefree n) (hn1 : 1 < n)
     intro hd
     have h := (Finset.mem_filter.mp (Finset.mem_filter.mp hd).2).2
     omega
-  · simp only [lowerAllocations, if_neg hpr, Finset.mem_filter, markedAllocations]
+  · simp only [lowerAllocations, ite_eq_right hpr, Finset.mem_filter, markedAllocations]
     constructor
     · rintro ⟨⟨hd,hlo,hhi,hmin⟩,hmax⟩
       refine ⟨hd, Finset.mem_filter.mpr ⟨?_, rectangle_mem_owner hlo hhi hmax,
@@ -277,10 +277,10 @@ theorem relaxedPacket_ledger (u y : ℝ) (N K : ℕ) :
   intro n hn
   have hb := (Finset.mem_filter.mp (Finset.mem_filter.mp (Finset.mem_filter.mp hn).1).1).2
   by_cases hc : 14 ≤ n.primeFactors.card
-  · simp only [if_pos hc]
+  · simp only [ite_eq_left hc]
     have hw := Finset.sum_congr rfl (fun p hp => lowerWeight_ledger hb.1 hb.2.1 hp N)
     rw [hw, Finset.sum_add_distrib, Complex.ofReal_add, add_mul]
-  · simp only [if_neg hc, add_zero]
+  · simp only [ite_eq_right hc, add_zero]
 
 /-- The lower least-order threshold, with counts 3..55 still summed
 together. It has not been given a positive allowance. -/
@@ -307,9 +307,9 @@ theorem relaxedPacket_eq_joint_boundary (u y : ℝ) (N K : ℕ) :
   intro n hn
   have hb := (Finset.mem_filter.mp (Finset.mem_filter.mp (Finset.mem_filter.mp hn).1).1).2
   by_cases hc : 14 ≤ n.primeFactors.card
-  · simp only [if_pos hc, if_neg (not_lt.mpr hc), sub_zero]
+  · simp only [ite_eq_left hc, ite_eq_right (not_lt.mpr hc), sub_zero]
   · have hl : n.primeFactors.card < 14 := Nat.lt_of_not_ge hc
-    simp only [if_neg hc, if_pos hl]
+    simp only [ite_eq_right hc, ite_eq_left hl]
     have hw := Finset.sum_congr rfl (fun p hp => lowerWeight_ledger hb.1 hb.2.1 hp N)
     rw [hw, Finset.sum_add_distrib, Complex.ofReal_add, add_mul, add_sub_cancel_right]
 

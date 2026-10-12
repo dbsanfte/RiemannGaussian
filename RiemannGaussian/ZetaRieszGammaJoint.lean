@@ -222,7 +222,7 @@ theorem core_sub_joined (u y : ℝ) (N K : ℕ) :
     f n-((1-ZetaRieszLeastBoundary.selection u N K n : ℝ) : ℂ)*f n)]
   · apply Finset.sum_congr rfl
     intro n hn
-    rw [ZetaRieszLeastBoundary.selection,if_pos (Finset.mem_sdiff.mp hn).1,atom]
+    rw [ZetaRieszLeastBoundary.selection,ite_eq_left (Finset.mem_sdiff.mp hn).1,atom]
     dsimp only [f]
     push_cast
     ring
@@ -261,7 +261,7 @@ theorem unsaturated_count_ge_four {u : ℝ} {N K n : ℕ}
         intro p hp'
         apply Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp').pos)
         have hh : p ≤ largestPrime n := by
-          rw [largestPrime,dif_pos ⟨p,hp'⟩]
+          rw [largestPrime,dite_eq_left ⟨p,hp'⟩]
           exact Finset.le_max' _ _ hp'
         exact_mod_cast hh
       _ = _ := by rw [Finset.sum_const,nsmul_eq_mul]

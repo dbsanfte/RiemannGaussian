@@ -295,7 +295,7 @@ theorem manybin_owner_eligible {u : ℝ} {N n : ℕ} (hN : 0 < N)
     ⟨hrP,(Nat.dvd_of_mem_primeFactors hr).trans
       (Nat.div_dvd_of_dvd (Nat.dvd_of_mem_primeFactors hp)),hn0⟩
   have hmax : r ≤ largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨r,hrn⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨r,hrn⟩)]
     exact Finset.le_max' _ _ hrn
   have hlog := log_le_log (show (0 : ℝ) < r by exact_mod_cast hrP.pos)
     (show (r : ℝ) ≤ largestPrime n by exact_mod_cast hmax)

@@ -97,7 +97,7 @@ theorem norm_upperRootBlaschkeValue_le_pseudoHyperbolicDistance_of_root
           exact hs y (by simp [hy])
         have hdist := norm_sub_lt_norm_sub_conj_of_im_pos ha hw
         simp only [Multiset.map_cons, Multiset.prod_cons, norm_mul]
-        apply mul_le_one₀
+        apply (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb)
         · rw [norm_div]
           exact (div_le_one (norm_pos_iff.mpr
             (sub_conj_ne_zero_of_im_pos ha hw))).2 hdist.le

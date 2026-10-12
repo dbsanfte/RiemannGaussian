@@ -106,8 +106,8 @@ theorem pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le (rho : Non
     (∑ N ∈ Finset.range K, (2 * N + 1 : ℝ) * ‖pairedEtaLeadingCurrentLinearHeatReturn rho N‖) ≤
       pairedEtaCurrentReturnGrowthConstant rho * (K + 1 : ℝ) ^ pairedEtaCurrentHorizontalDisplacement rho := by
   by_cases hrho : rho.1.re = 1 / 2
-  · simpa only [pairedEtaCurrentReturnGrowthConstant, if_pos hrho, add_zero, pairedEtaCurrentHorizontalDisplacement,
-      hrho, if_true, show (2 : ℝ) * (1 / 2) - 1 = 0 by norm_num, abs_zero, Real.rpow_zero, mul_one] using
+  · simpa only [pairedEtaCurrentReturnGrowthConstant, ite_eq_left hrho, add_zero, pairedEtaCurrentHorizontalDisplacement,
+      hrho, ite_true, show (2 : ℝ) * (1 / 2) - 1 = 0 by norm_num, abs_zero, Real.rpow_zero, mul_one] using
         pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_of_re_eq_half rho hrho K
   · have hE := pairedEtaCurrentLinearHeatWeightedErrorBound_nonneg rho
     have hp : 1 ≤ (K + 1 : ℝ) ^ pairedEtaCurrentHorizontalDisplacement rho :=
@@ -115,7 +115,7 @@ theorem pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le (rho : Non
         (pairedEtaCurrentHorizontalDisplacement_bounds rho).1
     apply (pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le_of_re_ne_half rho hrho K).trans
     unfold pairedEtaCurrentReturnGrowthConstant
-    rw [if_neg hrho, add_mul]
+    rw [ite_eq_right hrho, add_mul]
     exact add_le_add (le_mul_of_one_le_right hE hp) le_rfl
 
 /-- Unconditionally for every actual zero, the first absolute moment of

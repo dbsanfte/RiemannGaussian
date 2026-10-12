@@ -98,7 +98,7 @@ theorem weighted_mixedMoment_le {ι κ d : Type*} [Fintype ι] [Fintype κ] [Fin
     tupleWeight r a x.1 * tupleWeight s b x.2
   have hW (x) : ‖W x‖ ≤ 1 := by
     rw [show W x = tupleWeight r a x.1 * tupleWeight s b x.2 from rfl, norm_mul]
-    exact mul_le_one₀ (tupleWeight_norm_le_one r a ha _) (norm_nonneg _)
+    exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (tupleWeight_norm_le_one r a ha _) (norm_nonneg _)
       (tupleWeight_norm_le_one s b hb _)
   have he : (∫ theta : UnitAddTorus d, ‖polynomial V W theta‖ ^ 2) ≤
       ∫ theta : UnitAddTorus d, ‖polynomial V (fun _ => 1) theta‖ ^ 2 := by

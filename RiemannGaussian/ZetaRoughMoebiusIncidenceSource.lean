@@ -122,7 +122,7 @@ theorem mask_eq_unit {Y n : ℕ} (hn : 0 < n) (hnY : n ≤ Y) :
         intro d _ hd
         have hnot : ¬d ∣ n := fun h ↦ hd (Nat.mem_divisors.mpr ⟨h, hn.ne'⟩)
         simp [hnot]
-      _ = _ := Finset.sum_congr rfl (fun d hd ↦ if_pos (Nat.dvd_of_mem_divisors hd))
+      _ = _ := Finset.sum_congr rfl (fun d hd ↦ ite_eq_left (Nat.dvd_of_mem_divisors hd))
   rw [he]
   have h := congrArg (fun f : ArithmeticFunction ℂ ↦ f n)
     (ArithmeticFunction.coe_moebius_mul_coe_zeta (R := ℂ))
@@ -162,7 +162,7 @@ vanishes after Möbius compensation, without a separate bound on that sector. -/
 theorem coefficient_large_prime_small_cofactor_zero (D Y : ℕ) (S : Finset ℕ)
     {p m : ℕ} (hp : p.Prime) (hYp : Y < p) (hm : 1 < m) (hmY : m ≤ Y) :
     coefficient D Y S (p * m) = 0 := by
-  rw [coefficient, mask_large_prime hp hYp m, mask_eq_unit (by omega) hmY, if_neg (by omega), zero_mul]
+  rw [coefficient, mask_large_prime hp hYp m, mask_eq_unit (by omega) hmY, ite_eq_right (by omega), zero_mul]
 
 /-- The logarithmic companion of the same truncated Möbius mask. -/
 def logMask (D n : ℕ) : ℂ :=
@@ -194,7 +194,7 @@ theorem roughCoefficient_eq_mask_log (D : ℕ) (hD : 1 ≤ D) (S : Finset ℕ)
   apply Finset.sum_congr rfl
   intro d hd
   by_cases hdn : d ∣ n
-  · simp only [if_pos hdn, hlog hd hdn, Complex.ofReal_sub]
+  · simp only [ite_eq_left hdn, hlog hd hdn, Complex.ofReal_sub]
     ring
   · simp [hdn]
 

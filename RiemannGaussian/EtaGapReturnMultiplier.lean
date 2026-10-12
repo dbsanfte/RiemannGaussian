@@ -99,7 +99,7 @@ theorem integrable_gapReturnMultiplier_kernel {a : ℝ} (ha : 0 < a) (h t u : �
   have hq := pairedEtaHeatTransitionProfile_bounds h (u - w)
   change ‖pairedEtaHeatTransitionProfile h (w - t) * pairedEtaHeatTransitionProfile h (u - w)‖ ≤ 1
   rw [Real.norm_eq_abs, abs_of_pos (mul_pos hp.1 hq.1)]
-  exact mul_le_one₀ hp.2 hq.1.le hq.2
+  exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) hp.2 hq.1.le hq.2
 
 /-- The normalized full gap multiplier is between zero and one. -/
 theorem pairedEtaGapReturnMultiplier_bounds {a : ℝ} (ha : 0 < a) (h t u : ℝ) :
@@ -116,7 +116,7 @@ theorem pairedEtaGapReturnMultiplier_bounds {a : ℝ} (ha : 0 < a) (h t u : ℝ)
     apply integral_mono (integrable_gapReturnMultiplier_kernel ha h t u) (integrable_rexp_neg_mul_pairedEtaLogGapMeasure ha)
     intro w
     apply mul_le_of_le_one_right (Real.exp_pos _).le
-    exact mul_le_one₀ (pairedEtaHeatTransitionProfile_bounds h (w - t)).2
+    exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (pairedEtaHeatTransitionProfile_bounds h (w - t)).2
       (pairedEtaHeatTransitionProfile_bounds h (u - w)).1.le (pairedEtaHeatTransitionProfile_bounds h (u - w)).2
 
 /-- The signed multiplier defect remains the integral of the exact signed

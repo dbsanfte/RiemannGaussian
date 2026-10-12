@@ -52,7 +52,7 @@ theorem pairedEtaLeadingCurrentMidpointMoment_eq_adjacent_arithmetic (rho : Nont
               (analyticZetaZeroMultiplicity rho - 1) (analyticZetaZeroMultiplicity rho - 1)).re +
             (pairedEtaFiniteCompletedMomentPair rho (N + 2)
               (analyticZetaZeroMultiplicity rho - 2) (analyticZetaZeroMultiplicity rho)).re) := by
-  rw [pairedEtaLeadingCurrentMidpointMoment, if_neg (show analyticZetaZeroMultiplicity rho ≠ 1 by omega)]
+  rw [pairedEtaLeadingCurrentMidpointMoment, ite_eq_right (show analyticZetaZeroMultiplicity rho ≠ 1 by omega)]
   simp_rw [pairedEtaAdjacentKernel_eq_completedMomentPair]
   have he (p : ℝ × ℝ) :
       2 * (((analyticZetaZeroMultiplicity rho - 1 : ℕ) : ℝ) * pairedEtaLogTailShiftIncrement (N + 1)) *

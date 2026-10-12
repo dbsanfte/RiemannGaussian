@@ -19111,6 +19111,10511 @@ representation; more arithmetic backend lemmas cannot restore this
 low-degree existence premise.
 
 
+## 2026-10-07: OpenAI batch review and an obstruction for arbitrary sparse block layouts
+
+The OpenAI collection supplies a concrete stronger obstruction lead. Its
+prime-predecessor manuscript, used at its stated theorem, strengthens our
+whole-positive-moment denominator floor to Omega(m^(2-epsilon)) on infinitely
+many actual inputs, for every fixed 0<epsilon<1. This is a deduction from
+that manuscript, whose full analytic proof has NOT been audited here and
+which has no catalogued Lean formalization at the pinned revision. It is
+kept separate from the unconditional published-input result below.
+
+Independently of that new manuscript, the published Baker--Harman input
+already excludes a proposed repair: placing a predetermined sparse set of
+blocks elsewhere in the original row. For EVERY m-indexed layout of at
+most m^(1/100) original block positions, infinitely many actual long-base-2
+inputs have no proper-factor difference anywhere in that sample. The
+collision partition in each hidden field is exactly the public partition
+by block position and integer seed offset. This is an arithmetic failure
+of this sampled-pair acquisition route, not just another successful
+example or a backend complexity certificate.
+
+The elementary arbitrary-layout bridge is kernel checked in
+[SemiprimeSparseBlockPeriodObstruction.lean](../RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean).
+The density, infinitude, selector-bin counting and actual-base-2 routing
+arguments remain classical, as in the October 4 checkpoint. No external
+analytic assertion is inserted as a Lean axiom. Whole-family soft-O(m)
+acquisition and the full guaranteed one-sixth bit-time/peak-memory goal
+remain OPEN and active.
+
+**Review boundary.** Upstream is pinned to
+`adc7f1241b42e322a6451854ab7e4b4c146bf78a`. The complete catalogue has
+722 distinct manuscripts in 372 families. All family titles and summaries
+were screened; source retrieval for the 14 most relevant families covers
+24 manuscripts and 262 text files, totalling 4,725,736 bytes. The review
+examines their theorem statements, computational models and selected proof
+mechanisms. It does NOT independently verify all 722 mathematical proofs.
+The whole-repository recursive GitHub tree is truncated; a separate
+preprints-subtree query is complete, with 12,785 entries. Catalogue counts
+were checked against the unique linked manuscripts, rather than inferred
+from that truncated tree.
+
+The RH work already contains a native Lean 4.34.1 integration and recorded
+standard-axiom audit of the pinned 7/8 quasi-RH proof; see
+[openai-quasi-rh-review.md](openai-quasi-rh-review.md) and
+[zeta-riesz-quasi-rh-discharge-audit.json](zeta-riesz-quasi-rh-discharge-audit.json).
+Those existing artifacts are preserved. This turn does not rerun their
+large proof closure or claim to have verified the prime-predecessor or
+primitive-root manuscripts through that integration.
+
+The most relevant findings are:
+
+| Family | Exact scope relevant to this project | Consequence for acquisition |
+| --- | --- | --- |
+| 003, quasi-RH | All-height Dirichlet nonvanishing for Re(s)>7/8; Corollary 1.2 gives a polylogarithmic least quadratic nonresidue and deterministic square roots over a supplied prime field. | Useful arithmetic input; no N-only original-detector batch construction follows. Lemma 18.1 retains a common residue character, nonunit mask, profiles and product scale through both transforms. An exact bridge to our modular outputs is still missing. |
+| 011, prime predecessors | The stated Poisson--Dirichlet law gives a positive proportion of primes with a factor of p-1 larger than p^kappa for every fixed kappa<1. | Strengthens the existing period-gap obstruction almost to quadratic degree, as proved below. No catalogued Lean proof; full analytic verification not performed here. |
+| 029, primitive roots | A fixed admissible base is primitive for at least c_a X/log^2 X primes in each sufficiently large dyad. | Provides another possible supply of long-order primes. It neither supplies a small base of a prescribed order for every hidden prime nor forces our per-input row collision. The published-input obstruction already preserves base 2 without this theorem. |
+| 142, polynomial factorization | The prime p is supplied; dense degree n has a stated uniform polynomial bit bound, with exponent 10^12. Frobenius and primary-group construction use p and field sizes explicitly. | This does not price a degree-Theta(m) operation linearly, and substituting N for an unknown characteristic does not establish the algorithm's field invariants. |
+| 107, 109, 130, fast algebra | Matrix exponent 9/4 is over C; an all-field companion has a different exponent. Integer multiplication improves a logarithmic factor in a finite-tape bit model. The DFT result uses exact complex arithmetic, supplied roots and unrestricted coefficients. | These bounds do not eliminate the m^(3/2) explicit-source floor or the moment degree floor. No bit bound for our modular whole-family acquisition is imported. |
+| 007, 012, 021, 023, 103, 116, 279 | Fixed-form correlation and distribution limits; coprime-interval guarantees; prime Gauss-sum averages; polynomial-overhead space derandomization; known-characteristic noncommutative identity testing; exact quantum factoring. | None of their stated contracts provides the missing deterministic classical per-input linear acquisition. Their proof mechanisms remain possible ingredients only after an exact source and cost bridge. |
+
+Primary pinned sources: the [catalogue](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/CONTENTS.md),
+[quasi-RH paper](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf),
+[prime-predecessor theorem](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf),
+[primitive roots](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/primitive-roots-all-integer-bases.pdf),
+[polynomial factorization](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf),
+[integer multiplication](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/paper.pdf),
+and [exact DFT](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf).
+
+**Arbitrary sparse layouts: precise published-input result.** Fix a family
+K_m of subsets of the original block domain
+`range(blockCount(m,4m))`, with |K_m|<=C m^eta. The layout may be placed
+anywhere in this domain; no consecutiveness or minimum spacing is assumed.
+Its positions depend only on m. Here C is fixed and
+
+\[
+\kappa=677/1000,\qquad 0<2\eta<3\kappa-2=31/1000.
+\tag{1}
+\]
+
+For arbitrarily large X there are at least b X^2/log^2 X ordered distinct
+prime pairs p,q in [cX,X], with constants b,c>0, for which the ACTUAL
+modulus m=publicRowModulus(pq), ACTUAL long base 2 and ACTUAL projected
+local orders R_p,R_q satisfy, for both R=R_p,R_q,
+
+\[
+|4m^3(k-k')-aR|>4m^2
+\quad(k,k'\in K_m,\ k\ne k',\ a\in\mathbb Z).
+\tag{2}
+\]
+
+Thus every sampled seed-point difference has gcd 1 or N, never a proper
+factor. The fixed choice eta=1/100 is valid. The same conclusion holds
+simultaneously for a fixed polylogarithmic number of such layouts per m:
+take the union of their forbidden-distance windows before counting. An
+input may select any one of those menus. This does not extend to arbitrary
+N-dependent layouts, exponentially many adaptive branches, or row-to-baby
+interval detector hits; those are different contracts.
+
+**Proof of infinitude for arbitrary placement.** Use the balanced sets of
+primes from the October 4 proof, with at least a X/log X elements, a
+unique prime R(p)|p-1 larger than p^kappa, and cofactor at most
+O(X^(1-kappa)). The external published input is
+[Kurlberg--Pomerance, Section 4, Lemma 19](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+which records Baker--Harman (7.1). The same elementary exclusions ensure
+R(p)|ord_p(2), remove cross-divisibility by q-1, and give projected orders
+EXACTLY R(p),R(q). Every public projection stage preserves those factors.
+The literal prefix, seed, raw-short and projected-short checks therefore
+give the actual longBase 2, exactly as in that earlier proof.
+
+Only the window count changes. Let D_m be the set of POSITIVE distances
+between positions in K_m. All original positions are O(m), so
+
+\[
+|D_m|\le |K_m|^2,\qquad
+\sum_{r\in D_m}r\ll m|K_m|^2.
+\]
+
+A bad candidate R>=(cX)^kappa obeys
+|4m^3 r-aR|<=4m^2 for some r in D_m. For m>=4 this forces a>=1, with
+a=O(X^(1-kappa)r). For fixed r,a the allowed R form an interval of length
+8m^2/a, containing at most 8m^2/a+1 integers. The harmonic bound gives
+
+\[
+\#\{R\text{ bad for }m\}
+\ll m^2|K_m|^2\log X+X^{1-\kappa}m|K_m|^2.
+\tag{3}
+\]
+
+Each such R divides p-1 for at most O(X^(1-kappa)) candidate integers p.
+Since m is Theta(X^(1/3)), the number E_m of bad candidate primes obeys
+
+\[
+E_m\ll X^{5/3-\kappa+2\eta/3}\log X
+          +X^{7/3-2\kappa+2\eta/3}=:E.
+\tag{4}
+\]
+
+Do not take an unweighted union over m. The ACTUAL least-prime selector
+has bins (m^-)^6<N<=m^6. For fixed p>=cX its q-bin contains at most
+C' X^(2/3)(m-m^-)+1 integers. Summing over the possible m telescopes the
+successive prime gaps and therefore bounds bad ordered pairs by X E:
+
+\[
+\#\text{bad pairs}\ll
+X^{8/3-\kappa+2\eta/3}\log X+
+X^{10/3-2\kappa+2\eta/3}.
+\tag{5}
+\]
+
+Both exponents are strictly below 2 under (1). At the concrete eta=1/100
+they are 5989/3000 and 993/500. Thus (5), its symmetric q version and
+the earlier base/cross/diagonal exclusions are o(X^2/log^2 X). The positive
+candidate pair mass dominates all exclusions, proving (2) on infinitely
+many actual inputs. A polylogarithmic menu multiplies (5) by only a fixed
+logarithmic power and preserves this conclusion. No individual prime-gap
+estimate, independence of the selector and periods, or distribution in a
+short prime interval is assumed.
+
+**What the sampled observations retain.** Put h=projectedUnit(2,m) and
+x_(j,k)=h^(N+delta_j-4m^3 k), with 1<=j<m. A local equality means
+R divides delta_j-delta_j'-4m^3(k-k'). The offsets have absolute
+difference at most 4m^2. Condition (2) forces k=k', and R>4m^2 then
+forces delta_j=delta_j' as integers. Conversely those two public
+equalities give the same point globally. Hence neither hidden field has
+an additional collision partition in this sample. Equal pairs have gcd N;
+all other pairs are units modulo N and have gcd 1.
+
+The original quadratic phase bounds each global fiber by two labels.
+Each field therefore retains at least (m-1)|K_m|/2 distinct points. For
+the ENTIRE original positive moment series B, its total raw label mass
+is smaller than either field characteristic. Positive pole retention
+therefore forces every exact presentation U B=V, U(0)=1, to satisfy
+
+\[
+(m-1)|K_m|\le2\deg U.
+\tag{6}
+\]
+
+This applies when the layout lies in both the frozen original block
+domain and the padded full grid; the former is contained in the latter.
+The new Lean leaf proves (6) and the corresponding finite-prefix
+consequence without assuming any low-degree candidate exists. For
+|K_m| comparable to m^(1/100), (6) is the superlinear floor at any such
+predetermined placement. For polylogarithmic |K_m|, the no-proper-hit
+result still excludes a guaranteed pair-difference factor detector,
+but that sample alone does not exclude a soft-linear carrier degree.
+
+**Stronger consequence of the new prime-predecessor theorem.** The pinned
+manuscript's Theorem 1.1 gives the Poisson--Dirichlet limit for the largest
+factor of p-1. Its largest ranked fragment is at least the first uniform
+stick fragment. For every fixed kappa<1 choose kappa' between kappa and
+1 and a nonnegative continuous test supported above kappa' with positive
+expectation. The theorem gives a positive prime proportion there; for
+sufficiently large p, (p-1)^kappa'>p^kappa. Thus it supplies the exact
+large-prime density contract used in our proof for every fixed kappa<1.
+This step requires no joint independence between the two hidden primes.
+
+For consecutive T=floor(m^eta) blocks, the October 4 count needs only
+eta<3kappa-2. Given fixed 0<epsilon<1, set
+
+\[
+\eta=1-\epsilon,\qquad \kappa=1-\epsilon/4.
+\]
+
+The bad-pair exponents become 2-epsilon/12 and 5/3-epsilon/6, both below
+2. All the same actual-routing exclusions still have lower order. Since
+T=o(m), the sample eventually fits both original domains. Equation (6)
+from the existing consecutive-sample leaf now gives
+
+\[
+\deg U\ge\frac{(m-1)\lfloor m^{1-\epsilon}\rfloor}{2}
+          \ge \frac18 m^{2-\epsilon}
+\tag{7}
+\]
+
+on infinitely many actual long-base-2 inputs. For instance kappa=99/100
+and eta=9/10 give degree Omega(m^1.9), with bad-pair exponents 593/300
+and 81/50. These are deductions from the manuscript's stated analytic
+theorem, not new independently verified unconditional Lean endpoints.
+The constants and thresholds depend on the fixed epsilon; no uniformity
+for an epsilon tending to zero with the input is inferred.
+
+For arbitrary placements, the stronger condition is 2eta<3kappa-2.
+The same manuscript therefore extends the no-proper-hit result to EVERY
+predetermined layout of size O(m^(1/2-epsilon)), for each fixed
+0<epsilon<1/2. Choose kappa=1-epsilon/3; the exponents in (5) are
+2-epsilon/3 and 5/3. Layouts of that cardinality also force degree
+Omega(m^(3/2-epsilon)) through the new bridge.
+
+These floors obstruct a retained DENSE rational carrier: writing and
+retaining its coefficient list cannot take soft-O(m) time and storage
+on the specified inputs. They are not circuit-size bounds, an obstruction
+to every sparse or implicit representation, or a proof against recovery
+through nonunit intermediate pivots. Signed row observables, unrestricted
+input-dependent layouts and other information channels remain outside
+this theorem. The full original interval detector still has arithmetic
+coverage; its whole-family acquisition price remains the central open gap.
+
+**Native verification and preservation.** The new 263-line leaf has seven
+source theorems and one proof-side Prop abbreviation, with no executable
+definitions, structures or finite factoring examples. Strict leaf
+compilation, scoped target build, namespace lint and transitive axiom audit
+pass on Lean 4.34.1. All 15 linters report zero errors in eight direct and
+14 generated declarations. All 22 declarations, including 21 theorems and
+helpers, use only propext, Classical.choice and Quot.sound. Selection uses
+imported module provenance and also checks any checker-local declarations,
+rather than assuming all compiler helpers have the authored namespace.
+Generated C exports module initialization only.
+
+The historical October 4 audit stays byte-for-byte intact. Its source pins
+describe Lean 4.33.1; after the current migration, 79 of its 431 selected
+source pins and 58 of its 73 selected Mathlib pins differ. The new audit
+records fresh native source snapshots and each historical-to-current
+change explicitly. It does not quietly refresh the parent audit or call
+it a complete 4.34 recheck. No large external batch verification, numerical
+corpus, commit, push or publication is performed in this turn.
+
+[semiprime-sparse-block-period-obstruction-audit.json](semiprime-sparse-block-period-obstruction-audit.json)
+records the proof, the exact catalogue/retrieval scope, published and
+manuscript-dependent inputs, native checks and source hashes. The new
+progress is the classical arbitrary-layout arithmetic obstruction and the
+precise stronger deduction from family 011. Neither establishes the
+requested whole-family soft-O(m) acquisition algorithm or the guaranteed
+one-sixth bit-time/peak-working-memory factorizer.
+
+
+## 2026-10-07: Sparse blocks can miss every original row-to-baby detector hit
+
+This turn gives an arithmetic obstruction for the ACTUAL denominator-one
+row-to-baby interval detector. The earlier sampled-pair obstruction did
+not cover this channel. Keeping all m-1 original rows and placing a
+predetermined sparse set of complete baby blocks anywhere in the original
+domain still need not acquire even one local detector hit. The proof is a
+classical infinite-family argument from the published Baker--Harman
+large-factor theorem, rather than additional examples or certificates.
+
+The new ingredient is a WHOLE-ROW residue-fiber bound of 4m, kernel checked
+in [SemiprimeSeedDetectorResidueObstruction.lean](../RiemannGaussian/SemiprimeSeedDetectorResidueObstruction.lean).
+This is a counting bound, NOT an acquisition-time upper bound. The analytic
+density, selector counting, infinitude and actual routing argument below
+remain classical; no external analytic assertion is imported as a Lean
+axiom. The full guaranteed one-sixth factorization bit-time and peak-memory
+goal remains OPEN and active.
+
+**Precise published-input result.** Fix C>0 and a family K_m of subsets of
+`range(blockCount(m,4m))`, depending only on m, with |K_m|<=C m^eta, where
+
+\[
+\kappa=677/1000,\qquad 0\le\eta<3\kappa-2=31/1000.
+\tag{1}
+\]
+
+For arbitrarily large X there are at least b X^2/log^2 X ordered
+distinct-prime pairs p,q in [cX,X], with fixed b,c>0, whose ACTUAL
+public modulus m=publicRowModulus(pq), ACTUAL long base 2 and ACTUAL
+projected unit h have prime local orders R_p,R_q>5m^2, and satisfy
+
+\[
+\begin{split}
+R_p&\nmid q+\delta_j(pq)-m^2(4mk+u),\\
+R_q&\nmid p+\delta_j(pq)-m^2(4mk+u)
+\end{split}
+\quad
+(1\le j<m,\ k\in K_m,\ 0\le u<4m).
+\tag{2}
+\]
+
+Thus every tested difference
+
+\[
+x_{j,k}-y_u=h^{pq+\delta_j(pq)-4m^3k}-h^{m^2u}
+\]
+
+is a UNIT modulo pq. Every sampled normalized block detector and their
+product have gcd one. The original unnormalized block detector differs
+only by the already-proved unit normalization, so it has the same gcd.
+The all-row sampled detector route acquires no hit at either hidden
+field. The fixed eta=1/100 gives a concrete example of the admissible
+exponent, but no finite-example experiment is used in the proof.
+
+The result includes any fixed polylogarithmic number of such menus per m,
+and therefore includes polylogarithmic block sampling intended to keep
+the explicit all-row batch near linear. A selected menu can depend on N
+provided it comes from this bounded predetermined list. Arbitrary
+N-dependent or adaptive layouts are not covered. Neither are other
+observables, a different implicit representation of the full interval,
+or recovery from a nonunit in some separately specified computation.
+In particular this is not a general factorization lower bound. A
+derivative sum can have accidental nonunits even when all detector factors
+are units; the theorem does not forbid every conceivable use of such sums.
+
+**The exact cofactor residue map.** Fix p,m and an original nonzero row j.
+Write u_j=publicInverse(m,j), so j*u_j=1 modulo m, and let
+
+\[
+a_j(q)=\operatorname{representative}(pq,m,j,1),\qquad
+C_j=1-u_jp,\quad S_j=1-2j+u_jj^2.
+\]
+
+The actual quotient lift, including its centered coefficient b_j, obeys
+`m^2*c_j-j*m*b_j+j^2*a_j=p*q`. Its actual offset is
+`delta_j=a_j+m*b_j-2*a_j*j`. If j*u_j-1=m*v_j, direct subtraction gives
+
+\[
+q+\delta_j(pq)-(C_jq+S_ja_j(q))
+ =m^2(u_jc_j-v_jb_j).
+\tag{3}
+\]
+
+Consequently Phi_j(q)=q+delta_j(pq) is congruent to C_j*q+S_j*a_j(q)
+modulo m^2. Canonical representatives a_j(q) agree whenever q agrees
+modulo m. Thus Phi_j is periodic MODULO m^2, including the carry; no
+equality of its integer values after a period is assumed. Reduction of
+the literal original offset identity gives
+
+\[
+j^2\Phi_j(q)\equiv
+P_jq\pmod m,\qquad P_j=j^2-2pj+p.
+\tag{4}
+\]
+
+If P_j is nonzero in F_m, equal Phi_j residues modulo m^2 force equal
+q residues modulo m. If C_j is also nonzero modulo m, it is coprime to
+m^2; (3) then cancels it and forces equality modulo m^2. Therefore each
+such row map on 0<=q<m^2 is injective.
+
+C_j vanishes only at j=p modulo m. P_j is a monic quadratic, with at
+most two roots. These exceptions are DISJOINT when p is neither 0 nor
+1 modulo m: at j=p, P_j=p*(1-p) is nonzero. At the affine exception,
+(4) traps the fiber in one cofactor class modulo m, so its size is at
+most m. At a quadratic exception, (3) is injective within each of the
+m cofactor classes, giving the same bound. Hence, even for row-specific
+targets t_j,
+
+\[
+\sum_{j=1}^{m-1}\#\{0\le q_0<m^2:
+       \Phi_j(q_0)\equiv t_j\pmod {m^2}\}\le4m.
+\tag{5}
+\]
+
+The linear AGGREGATE bound matters: using the uniform per-row upper bound
+m across all rows would lose an entire factor of m and would not prove
+the obstruction. The Lean leaf checks the lifted congruence, canonical
+representative equality, full modular periodicity, disjoint exceptions,
+good-row and exceptional-row fiber bounds, the cubic bound of three
+exceptional row positions, and (5) for arbitrary row-specific targets.
+
+**Actual long-base-2 inputs and the residue assumptions.** The balanced
+prime sets and elementary base exclusions are exactly those proved in
+the October 4 infinite-family argument. The published input is
+[Kurlberg--Pomerance, Section 4, Lemma 19](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+recording Baker--Harman (7.1): a positive proportion of primes p have a
+prime divisor R_p of p-1 larger than p^kappa. Along an unbounded sequence
+of X, restrict to [cX,X] to retain at least a X/log X primes. Write
+`p-1=v_p*R_p`, with v_p=O(X^(1-kappa)). Uniformly for the actual selected
+m=Theta(X^(1/3)), sufficiently large X gives v_p<m and R_p>5m^2.
+
+Exclude primes where R_p fails to divide ord_p(2). Such a prime divides
+the product of 2^r-1 for r<=O(X^(1-kappa)), leaving only
+O(X^(2-2kappa)/log X) exceptions. Exclude the diagonal and the pairs
+with R_p|(q-1) or R_q|(p-1); these cost O(X^(2-kappa)+X) ordered pairs.
+All these losses are negligible relative to X^2/log^2 X. The public
+projection `(N-1)*(m!)^clog_2(N+1)` kills the small order cofactors and
+preserves R_p,R_q, so its local orders are EXACTLY those distinct primes.
+Every earlier stage preserves them too. The actual prefix and raw and
+projected short searches therefore reach longBase 2, as checked against
+their literal definitions in the earlier argument.
+
+Also p>m is prime, giving p!=0 modulo m. If p=1 modulo m, then m divides
+v_p*R_p. The prime m is different from R_p>m, so it must divide
+0<v_p<m, a contradiction. Thus the nonzero, nonone conditions used in
+(5) hold uniformly on this actual family. The same reasoning applies to q.
+
+**Count hits in the exact selector bins.** Fix p and a possible actual
+prime modulus m. If m^- is the previous prime, its exact selector bin is
+`(m^-)^6<p*q<=m^6`. After intersecting with [cX,X], the interval of possible
+q has length O(X^(2/3)*(m-m^-)). Write
+
+\[
+q=q_0+m^2H,\quad 0\le q_0<m^2.
+\]
+
+The number of possible integer H is O(m-m^-+1), since m^2=Theta(X^(2/3)).
+There is no assumption about primes in that short interval. For a tested
+index r=4mk+u, put s=H-r and t=q_0+delta_j(pq). The actual p-field hit
+condition becomes
+
+\[
+t+m^2s=aR_p\quad(a\in\mathbb Z),\qquad
+-3m^2\le t<2m^2.
+\tag{6}
+\]
+
+For fixed s, R_p>5m^2 makes the multiple aR_p in this interval unique,
+so there is at most one actual t. For one selected block k, the possible
+s lie in an interval of O(m-m^-+m+1)=O(m) integers. The possible a
+therefore lie in an interval of length O(m^3/R_p+1)=O(X^(1-kappa)).
+For each a, (6) restricts s to an interval of length five, so at most
+six integer s suffice. This count is uniform in WHERE k is placed.
+For K_m blocks, there are O(|K_m|*X^(1-kappa)) possible s, each with at
+most one t.
+
+For each such s and each allowed H, modular periodicity from (3) and (5)
+permit at most 4m pairs (j,q_0): (6) implies Phi_j(q_0)=t modulo m^2.
+The actual offset may depend on H as an INTEGER; the argument only uses
+its proved modular periodicity. Overcounting possible row/cofactor pairs
+also bounds the number of bad q in this bin. Thus for fixed p,m,
+
+\[
+\#\{q\text{ with any selected p-field hit}\}
+ \ll m(m-m^-+1)|K_m|X^{1-\kappa}.
+\tag{7}
+\]
+
+The relevant successive prime gaps telescope to O(X^(1/3)), and the
+number of relevant m is at most O(X^(1/3)). Sum (7) over the ACTUAL bins,
+then over the at most X candidate p. This gives
+
+\[
+\#\{\text{bad ordered pairs}\}
+ \ll X^{8/3-\kappa+\eta/3}.
+\tag{8}
+\]
+
+The same count with p and q exchanged excludes q-field hits. Under (1)
+the exponent is below two; at eta=1/100 it is EXACTLY 1993/1000.
+Both hit exclusions, together with the base exclusions, are
+o(X^2/log^2 X), leaving the claimed positive candidate-pair mass for
+arbitrarily large X. This proves (2) on infinitely many actual inputs.
+A fixed logarithmic power of menus only multiplies the negligible bound
+by that power. No independence between selector, periods and seed offsets,
+individual prime-gap bound, or short-interval prime-density assertion is
+assumed.
+
+**What the OpenAI batch would strengthen.** At the stated theorem of the
+pinned [prime-predecessor manuscript](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf),
+the same large-factor density holds for EVERY fixed kappa<1, as derived
+from its Poisson--Dirichlet law in the preceding entry. For any fixed
+0<epsilon<1, take eta=1-epsilon and kappa=1-epsilon/4. Formula (8)
+then has exponent 2-epsilon/12. Consequently ANY predetermined family
+of O(m^(1-epsilon)) width-4m blocks can miss ALL actual original
+row-to-baby hits on infinitely many actual long-base-2 inputs. This
+nearly full-block necessity is a classical deduction from the stated
+preprint theorem, whose full analytic proof is NOT independently audited
+here and which has no catalogued Lean formalization at the pinned
+revision. It is not credited as an independently verified unconditional
+extension, and no preprint assertion is inserted as a Lean axiom.
+
+**The acquisition frontier after this obstruction.** Full-interval
+arithmetic coverage is preserved: `forced_seed_arithmetic` still proves
+an original seed hit by index 2m^2+1. Formula (2) says that these hits can
+all lie outside the sparse sampled blocks, including when every original
+row is retained. Thus sparse predetermined block acquisition cannot
+replace a paid full-family evaluator. A different source-preserving
+implicit representation, a genuinely N-dependent acquisition method or
+a separately proved useful channel must still be supplied and priced.
+Even such an advance would leave the deterministic N-only controller,
+nonunit/saturation recovery, prime-square cases and complete one-sixth
+bit-time/peak-working-memory proof to finish.
+
+**Validation and preservation.** The 442-line native Lean 4.34.1 leaf
+contains 18 source theorems and three noncomputable proof-side models.
+Strict compilation with warnings treated as errors and the scoped
+3617-job target build pass. The focused checker reports zero errors from
+15 linters on 21 direct plus 18 generated declarations; every one of its
+39 declarations and 36 theorem/helpers uses only `propext`,
+`Classical.choice` and `Quot.sound`. Declaration selection follows module
+provenance and includes any checker-local imported-definition companions;
+there are no such extra checker-local helpers in this audit. Source
+lexing rejects trust tokens and option changes. Compiled C exports
+initialization only. No factorization runs, examples or native certificates
+are added.
+
+[semiprime-seed-detector-residue-obstruction-audit.json](semiprime-seed-detector-residue-obstruction-audit.json)
+preserves the preceding native audit and all its 434 selected source pins
+and 73 selected Mathlib pins byte-for-byte. The parent audit, new leaf and
+checker give 437 selected source pins; five additional critical imported
+Mathlib sources give 78 selected Mathlib pins. Historical Lean 4.33.1
+audits and their migration differences remain historical; this focused
+check does not claim to rebuild the whole prior checkpoint after migration.
+Exactly one semiprime root import, one existing-family metadata entry and
+this dated journal insertion are checked against fresh current snapshots.
+The strict ordinary root passes. All earlier and concurrent bytes are
+preserved; no commit, push, publication, remote gate or dashboard/graph
+regeneration is performed. The 4.604-second strict leaf, 7.328-second
+scoped build and 11.374-second focused checker measure proof validation,
+not factorization bit time or memory.
+
+## 2026-10-07: Total-budget detector obstruction and low-residue adaptation
+
+The acquisition frontier advances in three precise directions. The
+published-input obstruction now allows different blocks at every original
+row and an arbitrary allocation of the TOTAL budget. Conditional on the
+stated prime-predecessor theorem in the OpenAI batch, it also allows that
+allocation and placement to depend on N modulo m squared; any total budget
+O(m^(2-epsilon)) for fixed epsilon>0 can miss every original detector hit. The natural
+square-root centers are conditionally obstructed too. Separately, a
+published-input argument rules out reducing the full baby interval to a
+low-degree polynomial carrier by a broad class of public power/Dickson
+degree schedules.
+
+These are classical infinite-family arguments with specified input and
+scope, not new successful examples or backend lemmas credited as an
+acquisition upper bound. Three read-only subagents investigated the routes;
+one independently checked both detector counts, including the repeated-root
+case and the selector-gap accounting. The new native leaf checks eight
+finite arithmetic lemmas. Analytic density, the full counting arguments,
+infinitude and the actual routing argument remain classical. The stronger
+low-residue and square-root results remain CONDITIONAL on a manuscript
+theorem whose full analytic proof has not been independently audited here.
+No analytic assertion is inserted as a Lean axiom. The full guaranteed
+one-sixth factorization bit-time and peak-working-memory goal stays OPEN.
+
+**The literal detector and actual input family.** Throughout this entry the
+channel is the original denominator-one row-to-baby detector, with
+
+\[
+x_{j,k}=h^{N+\delta_j(N)-4m^3k},\qquad y_u=h^{m^2u},
+\qquad 1\le j<m,\quad 0\le u<4m.
+\tag{1}
+\]
+
+Here m is the ACTUAL public row modulus, delta is the actual centered
+`seedOffset`, and k belongs to the original block domain, hence k=O(m).
+The preceding entry proves that a p-field hit is equivalent to
+
+\[
+R_p\mid q+\delta_j(pq)-m^2(4mk+u).
+\tag{2}
+\]
+
+The balanced candidate family has p,q in [cX,X], m comparable to
+M=X^(1/3), and positive candidate-pair mass of order X^2/log^2 X along
+an unbounded sequence. Its actual long base is 2 and its actual projected
+local orders are distinct primes R_p,R_q. Write p-1=v_p R_p and
+q-1=v_q R_q, with v_p,v_q<=V=O(X^(1-kappa)), and
+R_p,R_q>p^kappa,q^kappa respectively. For kappa>2/3, eventually
+v_p,v_q<m and R_p,R_q exceed every fixed multiple of m^2.
+In particular p,q are neither 0 nor 1 modulo m. The base-order, cross-order,
+prefix and projection exclusions are those of the preceding actual-input
+argument; their losses are negligible relative to the candidate-pair mass.
+
+For the results described as published-input, kappa=677/1000 is supplied
+by [Kurlberg--Pomerance, Section 4, Lemmas 19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+with Lemma 19 explicitly recording Baker--Harman (7.1). The conditional
+results instead use the stated theorem of the pinned
+[Poisson--Dirichlet manuscript](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf),
+which gives this positive large-factor density for every fixed kappa<1.
+The latter implication follows from a continuous test supported where the
+largest Poisson--Dirichlet part exceeds kappa; its probability is positive
+already when the first stick fragment exceeds kappa. A small fixed margin
+handles the distinction between p and p-1. The pinned source commit remains
+`adc7f1241b42e322a6451854ab7e4b4c146bf78a`; no new repository-wide catalogue
+review or full analytic audit is claimed.
+
+**Published-input TOTAL-budget theorem.** Fix row-specific sets K_(m,j),
+whose positions depend only on m and j, and let
+
+\[
+T_j=|K_{m,j}|,\qquad B_m=\sum_{j=1}^{m-1}T_j
+       \le C m^{1+\eta}.
+\tag{3}
+\]
+
+There is no per-row cap and rows may be omitted. If
+0<=eta<3*kappa-2=31/1000, infinitely many actual inputs have no hit in
+either field at ANY original row, selected block or baby position. This
+includes any total near-linear budget with a fixed logarithmic factor.
+All tested differences are units and their selected detector products have
+gcd one. This strengthens the preceding common-block-menu theorem.
+
+To prove it, fix p,m. The preceding proof shows that one block produces
+O(V) permitted target residues, each permitting O(g+1) cofactor lifts,
+where g=m-m^- and m^- is the previous prime. A good row has residue fiber
+at most one and an exceptional row has fiber at most m. Hence the bad-q
+count in this bin is at most
+
+\[
+O\!\left(V(g+1)\left[B_m+
+                  m\sum_{j\in E(p,m)}T_j\right]\right).
+\tag{4}
+\]
+
+For a FIXED row j, the exceptional p residues are the roots of
+
+\[
+(Y-j)\bigl(j^2+(1-2j)Y\bigr)
+       \quad\text{in }\mathbb F_m[Y].
+\tag{5}
+\]
+
+This polynomial has degree at most two and nonzero constant -j^3.
+Thus at most two p residues are exceptional. Each contains at most
+X/m+1 integer candidates up to X. Summing (4) over p pays
+O(X B_m), INCLUDING the m multiplier on the exceptional term. Summing
+the exact selector gaps, which telescope to O(M), gives
+
+\[
+O(X V M^{2+\eta})
+  =O(X^{8/3-\kappa+\eta/3})
+\tag{6}
+\]
+
+bad pairs per field. At eta=1/100 the exponent is 1993/1000<2.
+Exchanging p,q and removing the prior base exclusions leaves the positive
+candidate-pair mass, proving the infinite obstruction.
+
+The native leaf
+[SemiprimeRowSpecificDetectorObstruction.lean](../RiemannGaussian/SemiprimeRowSpecificDetectorObstruction.lean)
+checks (5), its at-most-two prime-residue bound, and the weighted aggregate
+estimate. For any finite prime-candidate set P whose residue classes have
+cardinality at most H and whose members are nonzero and nonone modulo m,
+any row weights W_j and even p-dependent targets,
+it proves
+
+\[
+\sum_{p\in P}\sum_{j=1}^{m-1} W_j\,\#\operatorname{fiber}_{p,j}(t_{p,j})
+  \le (|P|+2mH)\sum_{j=1}^{m-1}W_j.
+\tag{7}
+\]
+
+The weights in (7) are fixed across p; it does not itself establish an
+arbitrary N-dependent sampling theorem. The next argument supplies the
+extra arithmetic needed for that extension.
+
+**Conditional theorem for N modulo m squared.** Let n=N mod m^2 and
+allow completely arbitrary sets K_(m,n,j) in the original block domain.
+Assume only the UNIFORM TOTAL-budget bound, for every permitted n,
+
+\[
+B_m(n)=\sum_j|K_{m,n,j}|
+       \le C m^{1+\eta}\log^A(m+2),\qquad 0\le\eta<1.
+\tag{8}
+\]
+
+No per-row cap is required. At the stated manuscript density, choose any
+fixed kappa>(5+eta)/6. Infinitely many actual inputs have no selected
+detector hit in either field. In particular, for any fixed 0<epsilon<1,
+ANY such family with total budget O(m^(2-epsilon)) is obstructed.
+Placement may use every bit of the residue n; no independence between
+that residue, the selected positions and the hidden orders is assumed.
+
+First, the actual offset is exactly constant on N classes modulo m^2.
+Indeed a_j(N)=representative(N,m,j,1) depends only on N modulo m.
+In the literal lift the integer
+D=(N-j^2 a_j)/m increases by m*t under N -> N+m^2*t, so the argument
+of centered(m,-u_j D) changes by a multiple of m. Thus b_j and delta_j
+are unchanged AS INTEGERS, including the carry. Write delta=delta_j(n).
+Its reduction is
+
+\[
+\delta\equiv n(1-2j)j^{-2}\pmod m.
+\tag{9}
+\]
+
+The actual n is a unit modulo m, as are j and 1<=v<=V<m.
+For fixed p,m,n the exact selector bin (m^-)^6<pq<=m^6 restricts q
+to an interval of length O(m^2 g). Since pq=n modulo m^2 fixes one
+q residue modulo m^2, at most O(g+1) values of q occur for this p.
+This bound holds AFTER unioning all blocks and rows.
+
+A p-field hit gives an integer multiplier a satisfying
+
+\[
+q+\delta-m^2r=aR_p,\qquad r=4mk+u,\quad |a|\le C_1 v m.
+\tag{10}
+\]
+
+The bound on a uses r=O(m^2), q=O(m^3), |delta|=O(m^2) and
+R_p=(p-1)/v. It is the reason the original block domain matters.
+Eliminating q and the baby index from (10) gives
+
+\[
+F(p):=a p^2-(a+v\delta)p-vn\equiv0\pmod {m^2},
+            \qquad p\equiv1\pmod v.
+\tag{11}
+\]
+
+The new Lean leaf checks the literal divisibility implication (11)
+from (10), p-1=vR and pq=n modulo m^2.
+
+**Simple roots.** For one block and a fixed nonzero a, (10) confines p
+to an interval of length O(min(X,vX/|a|)), because q varies through
+O(X) and r through a block of length 4m. For a=0 use length O(X).
+The polynomial F has at most two simple roots modulo m, each lifting
+uniquely modulo m^2. If a=0 modulo m, it is linear or has no roots:
+its constant -vn is nonzero. There is no identically zero reduction.
+Counting p in these lifted residues, and summing over |a|<=C_1vm,
+costs O(vm log m) per block. Counting with the extra CRT condition
+modulo v is permissible but this upper bound does not require its gain.
+Each counted p then has at most O(g+1) q values as above.
+Sum over all m^2 residues n, the total budget (8), all v<=V and the
+actual selector gaps. Since sum_m(g+1)=O(M), the simple-root bad-pair
+bound is
+
+\[
+\widetilde O(V^2 M^{5+\eta})
+      =\widetilde O(X^{(11+\eta)/3-2\kappa}).
+\tag{12}
+\]
+
+**Repeated roots and arbitrary allocation.** Let x=p mod m, so x!=0,1.
+Repetition implies a!=0 modulo m and
+
+\[
+ax^2=-vn,\qquad a+v\delta=2ax.
+\tag{13}
+\]
+
+The discriminant
+
+\[
+\mathcal D(a)=(a+v\delta)^2+4avn
+\tag{14}
+\]
+
+must vanish modulo m^2. To see this, use
+D(a)=F'(p)^2-4aF(p): F(p) is zero modulo m^2 and F'(p) is zero
+modulo m. At a permitted repeated root,
+
+\[
+x\mathcal D'(a)=4vn(x-1),\qquad
+\mathcal D'(a)\ne0\pmod m.
+\tag{15}
+\]
+
+The new Lean leaf checks the completing-square identity, (15), and
+its nonzero conclusion in any field of characteristic different from two.
+Hence each permitted a residue has exactly one possible lift modulo m^2.
+The whole interval |a|<=C_1vm has length o(m^2), so each branch
+permits at most one integer a, independent of which blocks are selected.
+No uniqueness is claimed for inadmissible singular branches.
+
+Substitute (9) into (13). The two branches are
+
+\[
+x=j,\quad a\equiv-vn/j^2;\qquad
+x=j/(2j-1),\quad a\equiv-vn(2-j^{-1})^2\pmod m.
+\tag{16}
+\]
+
+The second branch requires 2j-1!=0. At j=1 the root x=1 is inadmissible;
+at j=1/2 the second a residue is zero and is absent. For fixed n,v,
+each nonzero a residue has at most two row fibers in each branch,
+since taking a square has at most two preimages in the field.
+Consequently at most eight branch positions have a given symmetric
+distance rho from zero, and |a|>=rho>=1. There are O(H) positions
+with rho<=H, uniformly in the chosen layout.
+
+For a permitted repeated branch, every p over ALL its blocks belongs to
+one class modulo m. The actual cofactor v also gives p=1 modulo v,
+and gcd(v,m)=1. CRT therefore puts p in one class modulo vm.
+One block contributes O(m^2/rho+1) candidates p, while the entire
+branch has only O(m^2/v) distinct p in [cX,X]. If its row has T_j
+blocks, their union is bounded by
+
+\[
+O\!\left(\frac{m^2}{v}\min(1,vT_j/\rho)+T_j\right).
+\tag{17}
+\]
+
+Split at rho=H, then use B=sum_j T_j to bound the remaining weights.
+The result for fixed m,n,v is
+
+\[
+O\!\left(\frac{m^2}{v}(H+vB/H)+B\right)
+       =O(m^2\sqrt{B/v}+B)
+\tag{18}
+\]
+
+on choosing H comparable to sqrt(vB); B=0 has no hits. This counts
+DISTINCT p per branch before multiplying by the O(g+1) permitted q
+values, so neither the number of blocks nor the baby positions add an
+extra q factor. It allows arbitrary concentration of the budget on rows
+whose residues have small rho, including concentration depending on n.
+
+Sum (18) over n, v and the actual selector gaps. The result is
+
+\[
+\widetilde O(M^{(11+\eta)/2}\sqrt V+VM^{4+\eta})
+=\widetilde O\!\left(X^{7/3+\eta/6-\kappa/2}
+                     +X^{(7+\eta)/3-\kappa}\right).
+\tag{19}
+\]
+
+The simple threshold kappa>(5+eta)/6 dominates the repeated threshold
+kappa>(2+eta)/3 when eta<1; it also makes the second term negligible.
+Exchanging p,q supplies the other-field bound. These losses are all
+o(X^2/log^2 X), proving the stated infinite obstruction. For
+eta=1-epsilon and kappa=1-epsilon/12, the principal exponents are
+exactly 2-epsilon/6 and 2-epsilon/8. At near-linear budget eta=0
+and kappa=19/20 they are 53/30 and 223/120.
+
+**Natural square-root centers.** The theorem also obstructs genuinely
+N-dependent affine-square-root centers of the form
+
+\[
+k(N)=\left\lfloor A_{m,n,j}\sqrt N/(4m^3)+\beta_{m,n,j}\right\rfloor,
+                       \qquad |A_{m,n,j}|\le C_2 m.
+\tag{20}
+\]
+
+The coefficients and center-list membership are fixed by m,n,j; take
+any total O(m polylog m) such centers and keep tested blocks in the
+original domain. Fixed floor/ceil variations and a fixed polylogarithmic
+menu of shifts are included. Across one selector bin,
+Delta sqrt(N)<=m^3-(m^-)^3<=3m^2 g, so each center occupies O(g+1)
+integer block positions. Replace the chosen layout by the union of these
+positions, which depends only on m,n,j and has total budget
+O(m(g+1) polylog m).
+
+The published [Baker--Harman--Pintz, Theorem 1](https://www.researchgate.net/profile/Roger-Baker-2/publication/228991240_The_Difference_Between_Consecutive_Primes_II/links/53e14c630cf2235f35296d79/The-Difference-Between-Consecutive-Primes-II.pdf)
+gives g=O(m^theta), theta=21/40. Since the gaps telescope,
+sum_m(g+1)^2=O(M^(1+theta)) and
+sum_m(g+1)^(3/2)=O(M^(1+theta/2)). Substituting the union budget
+in (12) and (19) bounds the simple and principal repeated losses by
+
+\[
+\widetilde O(X^{(11+\theta)/3-2\kappa}),\qquad
+\widetilde O(X^{7/3+\theta/6-\kappa/2}),
+\tag{21}
+\]
+
+respectively. The summed +B term is smaller at kappa=19/20. At that
+choice the two displayed exponents are 233/120 and 467/240, both
+strictly below two. Thus all these center-based detector layouts can
+miss EVERY local hit infinitely often, conditional on the stated
+prime-predecessor theorem. This includes the natural center obtained
+by replacing p,q with sqrt(N) in the literal true-row index:
+
+\[
+\frac{(a_j(N)+1)\sqrt N+mb_j(N)-2a_j(N)j}{m^2}.
+\tag{22}
+\]
+
+Here a_j,b_j freeze with n and A=a_j+1<=m. Dividing (22) by
+the block width 4m has precisely form (20). No reciprocal or derivative
+channel is inferred from this ordinary-hit obstruction.
+
+**A separate published-input degree-schedule obstruction.** For each m,
+fix a finite catalogue of nonzero polynomials f_(m,t)(T) in Z[T].
+Their coefficients may depend arbitrarily on m, but are fixed before
+inspecting N. Selection of a catalogue member may depend on N. Let
+F_m be their product, D_m its degree and H_m=log(max(2,||F_m||_1)).
+Assume, for fixed C,A,
+
+\[
+D_m+H_m\le Cm\log^A(m+2).
+\tag{23}
+\]
+
+An empty catalogue has product one. A bound on the sum of individual
+degrees and logarithmic norms suffices, since the norm is submultiplicative.
+The assumption is a DESCRIPTION constraint, not an inferred bit-runtime
+bound for arbitrary degree-producing circuits.
+
+On infinitely many actual inputs of the published kappa=677/1000 family,
+EVERY evaluated degree d_t=|f_(m,t)(N)| is positive and coprime to both
+local prime orders. To prove this, count R_p dividing F_m(pq), allowing
+every integer m comparable to M; this overcounts the actual selector.
+Since p=1 modulo R_p, F_m(pq)=F_m(q) modulo R_p. A nonzero reduction
+has at most D_m roots and hence D_m(X/R_p+1) candidates q per p,m.
+For a zero reduction, choose one nonzero integer coefficient c_m of
+F_m. There are at most H_m/log(R_0) prime divisors R>=R_0=(cX)^kappa
+of c_m. Each permits at most X/R+1 values of p=1 modulo R, after
+which every q<=X may be allowed. Thus one field's bad-pair count satisfies
+
+\[
+\#\{\text{bad pairs}\}\le X(X/R_0+1)\sum_m(D_m+H_m/\log R_0)
+ =O(X^{8/3-\kappa}\log^A X+X^{5/3}\log^A X).
+\tag{24}
+\]
+
+The leading exponent is 5969/3000<2. Exchange p,q and subtract the
+negligible losses from the actual candidate family. This proves the claim,
+including the cases where some polynomial has nonunit coefficients.
+For a fixed finite bivariate catalogue f_t(N,m), its degree in N is
+bounded, and a nonzero coefficient polynomial in m has finitely many
+integer zeros and logarithmic height O(log X). The bound improves to
+O_f(X^(7/3-kappa)+X^(4/3)), with exponent 4969/3000.
+
+Retain the FULL original baby interval of length
+L=seedLength(m), with 2m^2+2<=L<=4m^2, and alpha=h^(m^2).
+Eventually both local prime orders R exceed 2L. On the surviving inputs,
+raising to ANY catalogue degree d leaves the local order unchanged.
+The L baby points alpha^(du) are distinct in each field. Standard Dickson
+images alpha^(du)+alpha^(-du) are also distinct: equality forces
+R dividing u-v or u+v, and 0<=u+v<2L<R excludes any nontrivial
+reciprocal identification. With any supplied unit center a, the trace
+alpha^(du)+a^d alpha^(-du) has fibers of size at most two, since its
+equality factors as (x^d-y^d)((xy)^d-a^d)=0. Its image therefore has
+at least ceil(L/2) distinct roots.
+
+Any NONZERO polynomial over Z/N vanishing on all these mapped baby roots
+has degree at least L for power/standard Dickson, or at least
+ceil(L/2)>=m^2+1 for a unit-centered trace. A nonzero carrier survives
+in at least one hidden prime field, even with nonunit coefficients;
+root counting there and degree nonincrease under reduction give the bound.
+Existing kernel bridges are `interval_powers_injective`,
+`interval_annihilator_degree`, `dickson_collision_iff_of_coprime`,
+`reciprocal_trace_eq_iff`, and `nonzero_prime_polynomial_reduction`.
+This paragraph is a classical composition of those statements; no new
+full Lean formalization of (23)--(24) is claimed.
+
+This obstruction concerns LOW-DEGREE BABY ROOT CARRIERS. High degree can
+still have a short sparse or circuit encoding; no arithmetic-circuit or
+factorization bit-time lower bound follows. Arbitrary N-dependent
+coefficients, nonpolynomial degree recipes and small circuits of unbounded
+symbolic degree are outside (23). Power maps preserve ordinary hits;
+Dickson also permits reciprocal hits. Consequently the ordinary sparse
+no-hit theorem does not prove that a Dickson detector has gcd one.
+Literal detector values and derivatives require their own transport.
+
+**The remaining paid acquisition contract.** The original full interval
+still has its forced arithmetic hit by index 2m^2+1. These obstructions
+show why the specified sparse and degree-compression routes do not acquire
+that information universally. A source-preserving implicit full-family
+evaluator, a method using information about N beyond these layouts, or a
+different proved useful observable remains open.
+
+One concrete sufficient contract is a public polylogarithmic list containing
+some P comparable to the balanced factor p with |P-p|<=c_0m^2 for a
+sufficiently small fixed c_0. At the true row the function
+(a_jP+N/P+mb_j-2a_jj)/m^2 has derivative O(1/m) in this balanced
+range. Thus its error is O(m), coverable by a constant number of width-4m
+blocks. Such a list would give a near-linear target family and a common
+degree-4m baby polynomial. Obtaining it at the required deterministic
+N-only bit cost is unproved; sqrt(N) supplies it only near the diagonal.
+Even a paid acquisition advance would leave the complete controller,
+nonunit/saturation recovery, prime-square cases and full bit-time and
+peak-working-memory proof to finish.
+
+**Validation and preservation.** The 187-line native Lean 4.34.1 leaf
+contains eight source theorems and one Prop abbreviation. Strict leaf
+compilation with warnings treated as errors, the scoped 3618-job build and
+the focused checker pass. Fifteen linters find zero errors in nine direct
+and two generated declarations. All eleven declarations, including ten
+theorem/helpers, use only the standard logical axioms; module provenance
+selects the declarations and there are no checker-local helpers.
+Source lexing rejects trust tokens and option changes after removing
+nested comments and strings. Compiled C exports initialization only.
+No new factorization runs, finite certificates or imported analytic axioms
+are added. Independent mathematical review supplies no kernel credit.
+
+[semiprime-row-specific-detector-obstruction-audit.json](semiprime-row-specific-detector-obstruction-audit.json)
+preserves all 437 parent selected source pins and all 78 selected Mathlib
+pins. The parent audit, new leaf and checker give 440 selected source pins.
+Exactly one semiprime root import, one entry in the existing semiprime
+metadata family and this one dated journal insertion are checked against
+fresh current snapshots. The strict ordinary root passes. Earlier and
+concurrent bytes are preserved; no commit, push, publication, remote gate
+or dashboard/graph regeneration is performed. Leaf/build/checker timings
+measure proof validation, not a factorization algorithm's complexity.
+
+## 2026-10-07: Scalar saturation, short-ratio acquisition, stationary windows, and the cleared Gram mask
+
+Two further acquisition routes have arithmetic obstructions on infinite
+families of ACTUAL inputs, using the published large-factor density already
+used above. First, the full original scalar row product is zero modulo N
+throughout a broad balanced range, for every public unit base. Its gcd
+therefore returns N even if its evaluation could be made cheap. Second,
+short-denominator ratio roots cannot supply O(m^2)-accurate factor estimates
+on every input, even with arbitrary selection using the full N. This closes
+one proposed way to produce a small approximation list; it does not exclude
+stationary DETECTOR-INDEX windows. A separate count below obstructs the exact
+forced stationary indices unconditionally, and ALL local hits for the actual
+residue-dependent short-row stationary family conditionally on the pinned
+prime-predecessor density theorem. A precise cleared Gram transfer also loses
+the forced true-row collision instead of preserving its zero mask.
+
+These are specified-route obstructions, not a lower bound for all implicit
+circuits or all factoring algorithms. Nine finite arithmetic theorems are
+newly kernel checked. Analytic density, the infinite-family arguments and
+actual routing remain classical. The stationary all-local-hit extension is
+CONDITIONAL on an unformalized manuscript theorem whose full analytic proof
+has not been independently audited here. No new successful examples, factorization
+runs or analytic Lean axioms are added. The full guaranteed one-sixth
+bit-time and peak-working-memory goal remains OPEN.
+
+**The scalar observable and its arithmetic failure.** Let
+
+\[
+P_L(\alpha,X)=\prod_{u=0}^{L-1}(X-\alpha^u),\qquad
+A(Z)=\prod_{j=1}^{m-1}P_L(\alpha,Zx_j),
+\quad L=\operatorname{seedLength}(m),
+\tag{1}
+\]
+
+where alpha=seedBase(g,m), x_j is the LITERAL original denominator-one
+progression seed, and g is any unit modulo N=pq. The scalar under discussion
+is A(1), the existing `seedAggregate g m 1`; it keeps no row tags or jets.
+Suppose p,q are distinct primes and
+
+\[
+m\ge4,\qquad m^2\le p,q,\qquad 2p,2q\le3m^3,
+\qquad \gcd(m,pq)=1.
+\tag{2}
+\]
+
+For either ordered pair (P,Q)=(p,q) or (q,p), put j=P mod m.
+The actual row has 0<=a<=m and -m<=b<=m, and its integral index obeys
+
+\[
+m^2r=a(P-2j)+mb+Q.
+\tag{3}
+\]
+
+The lower bound follows from P-2j>=0, mb>=-m^2 and Q>=m^2.
+For the upper bound, twice the right side is at most
+3m^4+2m^2+3m^3<=4m^4+2m^2. Thus
+
+\[
+0\le r\le2m^2+1<L.
+\tag{4}
+\]
+
+The EXACT integer offset identity is
+
+\[
+N+\delta_j-m^2r=(P-1)(Q-a).
+\tag{5}
+\]
+
+Fermat's theorem turns (5) into x_j=alpha^r in the P field for every
+unit g. One row factor of A(1) is consequently zero modulo p, and one
+is zero modulo q. The row labels may coincide; the conclusion does not
+require them to be different. Therefore
+
+\[
+A(1)=0\pmod N,\qquad \gcd(N,A(1))=N.
+\tag{6}
+\]
+
+The new native leaf proves (3)--(6), including both factor orientations
+and the public gcd conclusion. Unlike the earlier linear-state dichotomy,
+this has NO fixed-state, recurrence, large-order or acquisition-cost
+premise. It obstructs the route “evaluate the full scalar norm and take
+its gcd alone.” Partial norms, tagged heads and derivative recovery are
+outside this conclusion.
+
+**Infinitely many actual inputs satisfy (2).** Use the published input
+in [Kurlberg--Pomerance, Lemmas 19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225):
+the Baker--Harman large-factor density with kappa=677/1000. After the
+previous base-2 order exclusions, an unbounded sequence of X admits
+Omega(X/log X) primes in [cX,X], each with a prime R_P>P^kappa dividing
+both P-1 and ord_P(2). Partition that interval into finitely many boxes
+with endpoint ratio at most 3/2. A winning box has Omega(X/log X)
+candidates, giving Omega(X^2/log^2 X) distinct pairs. The prior global
+cross-order exclusions remain negligible against this mass.
+
+The surviving pairs follow the existing actual long-base-2 construction,
+with the ACTUAL public m comparable to X^(1/3). In particular p,q>=m^2
+eventually. Order p<q. Since q/p<=3/2 and N<=m^6,
+q<=sqrt(3/2)*m^3<3m^3/2, so both upper bounds in (2) hold. The projected
+local orders R_p,R_q are distinct primes and exceed every fixed multiple
+of m^2; the prefix and short searches do not terminate earlier. This
+proves infinitude of the actual scalar-saturation family without a new
+prime-gap hypothesis or the conditional OpenAI prime-predecessor theorem.
+
+**Unconditional short-ratio factor-approximation obstruction.** Fix
+0<epsilon<=1 and C>0. Infinitely many actual long-base-2 inputs N=pq,
+p<q<=2p, have the following simultaneous property:
+
+\[
+\min\left(\left|\sqrt{Nt/A}-p\right|,
+          \left|\sqrt{Nt/A}-q\right|\right)
+ \gg \frac{m^{2+\epsilon}}{\log^3m}
+\quad\text{for EVERY }A,t\in\mathbb N_{>0},\quad
+t\le C m^{1-\epsilon}.
+\tag{7}
+\]
+
+A is unbounded. The choice of A,t may depend arbitrarily on the full N,
+and all such candidates may be considered together. Any uniformly
+O(m^2) correction or rounding leaves these distances larger than m^2
+by an unbounded factor.
+
+Here is a proof that also certifies the actual route. Before pairing,
+retain the preceding good base-2 primes P_X in [cX,X], with
+|P_X|>=aX/log X. If P-1=v_P R_P but R_P does not divide ord_P(2),
+that order divides v_P=O(X^(1-kappa)). Such P divides the product of
+2^r-1 for r<=O(X^(1-kappa)); its logarithm is O(X^(2-2kappa)). Thus
+the removed primes number O(X^(2-2kappa)/log X), negligible here.
+
+Set beta=(2+epsilon)/3 and H=c_0 X^beta. Partition [cX,X] into bins
+of width H. Cauchy--Schwarz, followed by subtraction of the diagonal,
+gives at least bXH/log^2 X unordered same-bin pairs. Remove gaps
+0<q-p<=H/log^3 X. The integer bound |P_X|<=X bounds their count by
+O(X(H/log^3 X+1)), negligible against XH/log^2 X. Also remove
+R_p dividing q-1 or R_q dividing p-1. For fixed p a window of width
+O(H) contains at most O(H/X^kappa+1) integers in the prohibited
+progression. The two exclusions cost O(X(H/X^kappa+1)), again negligible.
+There remain Omega(XH/log^2 X) pairs satisfying
+
+\[
+H/\log^3X<d=q-p\le H.
+\tag{8}
+\]
+
+For all of them, m is comparable to X^(1/3), v_p,v_q<m and R_p,R_q
+are much larger than m^2. The public factorial projection kills the
+small cofactors; the cross-order exclusions preserve both R's through
+the N-1 multiplier. Their distinct projected periods are exactly R_p,R_q,
+and exceed the original prefix/short-search distances. Thus they are
+actual long-base-2 inputs, rather than arbitrary prime-field surrogates.
+Choose c_0 small enough that q<=2p, also making (2) hold eventually.
+
+Take D_max=KX^((1-epsilon)/3)>=C m^(1-epsilon), with fixed K>=2
+large enough. Choosing c_0<=c/(64K) gives, for rho=q/p,
+
+\[
+0<\rho-1\le1/(64D_{\max}).
+\tag{9}
+\]
+
+For s=A/t, integer arithmetic leaves three possibilities: s=1,
+s>=1+1/D_max, or s<=1-1/D_max. When s=1, U=sqrt(N) lies between
+the factors and both distances are at least d/3. When s>=1+1/D_max,
+U/p=sqrt(rho/s) places U below p by Omega(X/D_max)=Omega(H).
+When s<=1-1/D_max,
+rho*s<=1-63/(64D_max), and U/q=1/sqrt(rho*s) places U above q by
+Omega(H). Equation (8) proves (7) in all three cases.
+
+This family's mass is Omega(X^((5+epsilon)/3)/log^2 X). It must not
+be automatically intersected with preceding obstruction families whose
+losses were only proved negligible against X^2/log^2 X. The universal
+balanced scalar statement DOES apply to this packed family.
+
+**Connection to the literal short quadratic rows.** The checked
+`publicRow_correct` bounds give 0<|a|,t<=sqrt(m), |b|<=m/2+1, and
+|ell|<=4m^2 for ell=mb-2aj. Taking epsilon=1/2 in (7) excludes
+all estimates sqrt(Nt/|a|)+O(m^2), with error at least
+Omega(m^(5/2)/log^3 m). The original unshifted zero-index recovery
+equation operates in the FACTOR coordinate P itself:
+
+\[
+aP^2+\ell P+tN=0.
+\tag{10}
+\]
+
+For a>0 its discriminant is eventually negative: ell^2=O(m^4),
+whereas atN is at least N, comparable to m^6. The literal `integerRoots`
+list is empty. For a=-A<0 its positive real root is
+(ell+sqrt(ell^2+4AtN))/(2A), within |ell|/A<=4m^2 of sqrt(Nt/A).
+The other root is negative. The literal square-root truncation and
+Euclidean integer division change either real-root candidate by less
+than two. Hence every positive zero-index candidate still misses both
+factors by Omega(m^(5/2)/log^3 m); negative or zero candidates do as well.
+This deduction uses `quotient_row_recovery_equation` and the literal
+`integerRoots` definition in `SemiprimeQuotientRows`, not roots in an
+unconverted quotient coordinate. Acquired nonzero indices and large
+public row shifts are outside this approximation obstruction.
+
+It is essential to keep the factor and detector-index questions separate.
+The index function is I(P)=(aP+tN/P+ell)/m^2. For a=t,
+
+\[
+I(p)-I(\sqrt N)
+ =t(p+q-2\sqrt N)/m^2
+ =O(tH^2/(Xm^2))=O(m^\epsilon)
+\tag{11}
+\]
+
+under the above bounds. For epsilon<1 this is o(m), even while sqrt(N)
+is farther than m^2 from either factor. Equation (11) illustrates why
+(7) does NOT exclude stationary INDEX windows; it does not assert that
+every actual public row has a=t. The next argument treats the actual
+stationary index windows directly, rather than deducing them from (7).
+
+**An unconditional obstruction for the exact forced stationary indices.**
+This subsection concerns the Euclidean SHORT row family: 0<|a|,t<=sqrt m,
+|b|=O(m), with the actual quotient relation. It is distinct from the
+denominator-one `seedRow`, whose leading coefficient can reach m.
+Write ell=mb-2aj. Fix a constant C_w and consider every integer r with
+|r-I_hat|<=C_w*m, where
+
+\[
+\widehat I=
+ \begin{cases}
+ (2\sqrt{atN}+\ell)/m^2,&a>0,\\
+ \ell/m^2,&a<0.
+ \end{cases}
+\tag{S1}
+\]
+
+For a<0 this is the center obtained when the signed weighted factor sum
+vanishes, rather than a derivative-zero stationary point. A constant
+number of width-4m blocks covers each window, so the whole family has
+O(m) blocks. Testing only nonnegative original indices is a subset.
+
+At the true tag j=p mod m, the exact index is I=(ap+tq+ell)/m^2.
+For positive a, its membership in the window implies
+(sqrt(ap)-sqrt(tq))^2<=C_w*m^3. Since p is comparable to m^3, this
+forces |a-(q/p)t|<=C_1*sqrt(t). For negative a the stronger condition
+||a|-(q/p)t|<=C_2 holds. The actual row congruence also forces
+
+\[
+ap\equiv tq\pmod m.
+\tag{S2}
+\]
+
+Let g=m-m^- be the ACTUAL selector prime gap. For fixed p,m, the
+selector ((m^-)^6,m^6] gives a q interval of length O(m^2*g), hence
+variation O(g/m) in q/p. For each t<=sqrt m the preceding bounds allow
+O(sqrt(t)+t*g/m) signed values of a. Each value fixes one q class modulo
+m by (S2), with O(m*g+1) possible q in the selector interval. Summing t
+therefore bounds the bad q by
+
+\[
+O\bigl((mg+1)(m^{3/4}+g)\bigr).
+\tag{S3}
+\]
+
+The published [Baker--Harman--Pintz Theorem 1](https://www.researchgate.net/profile/Roger-Baker-2/publication/228991240_The_Difference_Between_Consecutive_Primes_II/links/53e14c630cf2235f35296d79/The-Difference-Between-Consecutive-Primes-II.pdf)
+gives g=O(m^theta), theta=21/40. Over selector primes m comparable
+to M=X^(1/3), the gaps telescope: sum(g+1)=O(M), and
+sum(g^2)=O(M^(1+theta)). Summing (S3) gives O(M^(11/4)) bad q for
+fixed p, since 2+theta<11/4. At most X choices of p give
+
+\[
+O(XM^{11/4})=O(X^{23/12})
+\tag{S4}
+\]
+
+bad pairs. The count deliberately allows EVERY legal short vector, even
+arbitrary full-N selection; no coefficient freezing is used here.
+Its loss, and the reversed-factor loss, are negligible against the
+published-density actual long-base-2 pair mass X^2/log^2 X. Thus
+infinitely many actual inputs have no EXACT FORCED true-row index in ANY
+of these windows. This does not by itself exclude false-tag local hits.
+
+**Conditional obstruction for EVERY local stationary-window hit.**
+Now require the row packet (a_j,t_j,b_j) to be a deterministic function
+of (m,n,j), n=N mod m^2, with the same short bounds and actual quotient
+relation. The literal `publicRow` qualifies: its `quotientSlope` and
+Euclidean pair depend only on N mod m; its centered b is unchanged by
+N -> N+m^2*z. Its c may retain the full N. The centers in (S1) still
+depend on full N, and arbitrary selection of indices INSIDE those
+windows is permitted. Arbitrary full-N coefficient selection is outside
+the following all-local-hit statement.
+
+Assume the density theorem stated in the pinned
+[Poisson--Dirichlet manuscript](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf).
+Choose any fixed kappa>5/6, below 1; kappa=19/20 is concrete. This
+supplies the preceding actual long-base-2 family with p-1=vR_p,
+v<=V=O(X^(1-kappa)), R_p>p^kappa. In particular v=o(sqrt m),
+and p is neither zero nor one modulo m.
+
+Put delta=a+ell. The literal short-row target is gamma^(tN+delta)
+and the baby step is gamma^(m^2). A p-field hit at an index r is
+
+\[
+tq+\delta-m^2r=K R_p
+\tag{S5}
+\]
+
+for some integer K, because p is 1 modulo R_p. All indices in (S1)
+have |r|=O(m^(3/2)), giving |K|<=C_3*v*sqrt m. Eliminating the index
+and using pq=n modulo m^2 gives
+
+\[
+F(p)=Kp^2-(K+v\delta)p-vtn\equiv0\pmod{m^2},
+\qquad p\equiv1\pmod v.
+\tag{S6}
+\]
+
+For fixed m,n,j,v,K this is a fixed polynomial. It is nonzero modulo m
+because v,t,n are units modulo m. There are at most two SIMPLE roots
+modulo m, each with a unique lift modulo m^2. Since gcd(v,m)=1, CRT
+gives spacing v*m^2, hence O(m/v+1) possible p throughout [cX,X].
+Summing all O(v*sqrt m) K gives O(m^(3/2)) p incidences, INCLUDING
+K=0, which is linear or empty. For each p, fixed n specifies one q
+class modulo m^2, containing O(g+1) q in the selector interval.
+Summing n (at most m^2), rows (at most m), v (at most V) and selector
+m, using sum(g+1)=O(M), bounds all simple-root hit pairs by
+
+\[
+O(VM^{11/2})=O(X^{17/6-\kappa}).
+\tag{S7}
+\]
+
+This global congruence count covers all possible center positions at once;
+no freezing of the square root or uncounted block-union step is needed.
+
+Repeated roots x=p mod m have just two possible branches:
+x=j or x=j/(2j-1). Indeed tn=aj^2 modulo m and
+delta=a(1-2j) modulo m make the repeated-root equations factor as
+(x-j)((2j-1)x-j)=0. The denominator-zero second branch is absent.
+
+The first branch is EXACTLY the forced row index. Write p=j+mz.
+Since F'(j) is divisible by m,
+F(p)-F(j)=mzF'(j)+Km^2z^2 is divisible by m^2. The actual row relation
+tn=j^2*a-j*m*b modulo m^2 yields
+F(j)=(K+va)j(j-1) modulo m^2. Here j is neither zero nor one modulo
+m, so K+va=0 modulo m^2. Its integer magnitude is O(v*sqrt m)<m^2,
+forcing K=-va. Substituting into (S5) gives precisely
+m^2*r=ap+tq+ell. Its stationary-window membership is already counted
+by (S4), including negative a and every legal vector.
+
+For the second branch, K=-va(2j-1)^2 modulo m. Fix v,a,K,t in their
+allowed ranges. Since a,v are units modulo m, at most two j satisfy
+this equation; then n=aj^2/t modulo m permits at most m lifts of n
+modulo m^2. Counting the a, K and t ranges gives O(v*m^(5/2))
+incidences. The deterministic row packets select a subset of these.
+For each incidence the p's lie in one class modulo m and in the class
+1 modulo v. CRT gives spacing v*m, hence O(m^2/v) p across ALL
+blocks; each p permits O(g+1) q. Summing v and selector m gives again
+O(VM^(11/2)), the same bound as (S7).
+
+At kappa=19/20 the false-hit exponent is 113/60<2; the forced-hit
+exponent 23/12<2 is larger. Their symmetric versions and prior route
+exclusions still leave positive actual prime-pair mass. Hence,
+CONDITIONALLY on the stated manuscript density, infinitely many actual
+inputs have NO row-to-baby hits in ANY short-row stationary window,
+in EITHER hidden field. Every tested detector difference is a unit,
+and its detector product has gcd one. Larger-denominator rows,
+arbitrary full-N coefficient packets, other centers, derivative
+nonunits and implicit full-interval acquisition remain outside this
+statement. The infinite count is classical, not newly kernel checked.
+
+**The RH cancellation transfer and its lost hit mask.** The relevant
+RH identities include the common-slope cancellation in
+`SuzukiCarrierLocalCancellation` and the scalar confluent-divided-difference
+Gram compression in `RiemannXiSuzukiCarrierHerglotzAnalytic`.
+For the original finite baby product, write P=P_L and D=P'. Where
+P(x),P(z) AND z-x are units, its off-diagonal Cauchy Gram kernel is
+
+\[
+\sum_{u<L}\frac1{(x-\alpha^u)(z-\alpha^u)}
+ =\frac{D(x)/P(x)-D(z)/P(z)}{z-x}.
+\tag{12}
+\]
+
+Clearing the P denominators and taking the confluent diagonal yields
+K(x,x)=D(x)^2-P(x)P''(x). On the actual long branch, at the forced
+true-row x=alpha^r with r<L, the baby roots are distinct; P(x)=0 and
+D(x) is nonzero in that hidden field. Consequently
+
+\[
+K(x,x)=D(x)^2\ne0.
+\tag{13}
+\]
+
+The new finite theorem attaches (13) to the actual projected unit,
+literal original row and `LongData`; the second derivative is left
+arbitrary because its multiplier is already zero. This disproves an
+EXACT TAGWISE HIT-MASK-PRESERVING use of the cleared Gram diagonal.
+It does not prove that every Gram value is a unit modulo N: accidental
+zeros at other rows or in the other field could still help. Keeping
+the uncleared resolvent instead demands inversion of precisely the
+nonunit being sought. Neither version establishes whole-family acquisition.
+
+For completeness, first jets of the full norm are not proved universally
+saturated. In each hidden field let K_P count labelled original row hits.
+On the long branch the simple baby roots make A(Z) have multiplicity
+exactly K_P at Z=1. Thus A'(1)=0 exactly when K_P>=2. Nonzero row-tag
+tangent weights leave that classification unchanged. Our two forced
+rows prove K_p,K_q>=1, not >=2. A derivative gcd can give a proper factor
+if exactly one field has one hit; proving acquisition and universal
+recovery for this or higher tagged heads is still required.
+
+**A useful adaptive partial-norm acquisition contract.** The full scalar
+failure does not require returning to m independent row evaluations.
+Maintain a nonempty set S of original row tags whose scalar product is
+known to be nonunit. Original arithmetic coverage supplies this premise
+for all tags after the quadratic prefix m^2<=p and public coprimality
+checks on the remaining long branch. Split S into two halves and
+evaluate only the product over one half H. Its public gcd is either a
+proper factor (finish), N (continue inside H), or 1 (continue inside S
+minus H). In the last case the H product is a unit, so the other half
+is nonunit by the product identity. No zero divisor is inverted.
+
+After at most ceil(log_2(m-1)) such aggregate queries, a single original
+nonunit row remains. If its scalar gcd is proper, finish; if saturated,
+the existing `SemiprimeBitInverse.long_readSeed_saturated` proves that
+the reader succeeds for ANY such row on the actual long branch.
+`SemiprimeSeedSumAcquisition.readSeed_common_recovers` handles its common
+global-index result for every literal original source tag, including
+false residue tags; a returned factor is covered by the existing reader
+soundness theorem. This uses m prime, m>=4, N<=m^6 and LongData, as on
+the actual route. It needs no premise that the descent finds a preselected
+recoverable witness, and equal local indices are explicitly covered.
+
+Thus near-linear acquisition of the NESTED PARTIAL NORMS, followed by
+one original marked-row evaluation, is a sufficient acquisition contract.
+The new arithmetic obstructions do not exclude it. For the direct
+transposed geometric-product construction at a subset of J rows, form
+Q(T)=product_(j in S)(x_j-T), then product_(u<L) Q(alpha^u). Blocks
+of length s give degree Js and L/s geometric evaluations; balancing
+these gives classical arithmetic size Otilde(sqrt(LJ)+J). At J comparable
+to m this is m^(3/2), and the geometrically shrinking descent sizes still
+sum to Otilde(m^(3/2)). This is an acquisition-cost analysis, not a
+new native bit implementation or a general complexity lower bound.
+The needed improvement is a shared evaluator for these large partial
+products; the number of independent final marked-row evaluations is ONE.
+
+**A cheaper scattered-column selector remains open.** Build the degree-m
+polynomial U(T)=product_j(T-x_j) once, then evaluate it at m selected
+original baby powers alpha^r, with 0<=r<L. Monic remainder-tree evaluation
+works over Z/N without zero-divisor inverses. Standard packed polynomial
+arithmetic gives a classical Otilde(m*log N) bit acquisition bound and
+linear coefficient storage, batching m^2 primitive comparisons. A nonunit
+column either yields a proper gcd or can be scanned through its m original
+residuals; a saturated global residual has a KNOWN original index r and
+permits the existing factor-sum recovery. This physical fast backend is
+not newly implemented or Lean-priced here. More importantly, no arithmetic
+coverage theorem or rigorous obstruction is established for a SCATTERED
+menu of m columns. Such a menu cannot automatically be charged as O(m)
+full width-4m row blocks by the preceding obstructions. Contiguous menus
+are covered by those block arguments; scattered columns need their own
+arithmetic proof. This is an open alternative to pricing large partial norms.
+
+**Single-target evaluation is not a whole-family bound.**
+[Bostan--Yurkevich's q-holonomic algorithm](https://arxiv.org/html/2012.08656)
+motivates a sqrt(L)-scale single-target product evaluator. For this product
+one can use a rank-three first-order jet ring, with alpha replaced by
+alpha*(1+eta), x by x+epsilon, and all pairwise nilpotent products zero.
+The three coefficients are the original product, target derivative and
+logarithmic base derivative. Splitting L into blocks of length s comparable
+to sqrt(L), build B_s(T)=product_(u<s)(x-alpha^u*T), evaluate it at the
+geometric block starts and fold the blocks plus the short tail. Product
+construction and geometric evaluation use only inverses of the unit alpha,
+not inverses of zero divisors. Fast packed polynomial arithmetic gives
+a classical Otilde(m log N)-bit SINGLE-target bound. A full low-level
+Lean bit implementation is not supplied here, and the existing geometric
+backend contracts remain unpaid. Repeating this for m targets costs
+Otilde(m^2), so this is not credited as the requested acquisition advance.
+[Johansson's parametric rectangular splitting](https://www3.risc.jku.at/publications/download/risc_4881/1310.3741v1.pdf)
+likewise reduces nonscalar multiplication counts while retaining scalar
+work; passing to an m-wide algebra does not remove its representation cost.
+
+**Validation and preservation.** The new 242-line native Lean 4.34.1 leaf
+contains nine source theorems and one noncomputable proof-side Gram model.
+Strict leaf compilation with warnings treated as errors and the scoped
+3619-job target build pass. Fifteen linters find zero errors in ten direct
+and nineteen generated declarations; all 29 audited declarations,
+including 28 theorem/helpers, use only the standard logical axioms,
+with zero checker-local helpers. The final
+[semiprime-balanced-acquisition-obstruction-audit.json](semiprime-balanced-acquisition-obstruction-audit.json)
+records those results and the strict ordinary-root check. Analytic
+density and infinitude are not included in the kernel credit. Compiled C
+exports initialization only; no new factoring algorithm is executed.
+
+The audit preserves all 440 selected parent source pins and all 78 selected
+Mathlib pins, and adds the parent audit, native leaf and checker for 443
+selected source pins. One root import, one entry in the existing semiprime
+metadata family and this dated journal insertion are checked by exact
+removal against fresh current snapshots, preserving all other bytes.
+No commit, push, publication, remote gate or dashboard/graph regeneration
+is performed. The active goal still needs whole-family Otilde(m) acquisition,
+controller and nonunit/saturation recovery, prime-square handling, and the
+full deterministic bit-time and peak-working-memory proof.
+
+## 2026-10-07: Scattered-column acquisition fails for menus using one residue digit
+
+There is now an UNCONDITIONAL arithmetic obstruction for the scattered
+original-column route left open in the preceding entry. Fix any shared menu
+family
+
+\[
+C_{m,s}\subseteq\{0,\ldots,L-1\},\qquad
+s=N\bmod m,\qquad |C_{m,s}|\le C m(\log m)^A,
+\tag{C1}
+\]
+
+with fixed constants C,A and L=`seedLength(m)`=Theta(m^2). On infinitely
+many ACTUAL long-base-2 balanced semiprime inputs, NO original denominator-one
+row hits ANY selected baby column, in EITHER hidden prime field. All tested
+row-to-baby differences and their column products are units; their public
+gcds are one. The menu may scatter arbitrarily across the full original
+interval. This includes m-only menus, and is not a consequence of charging
+scattered columns as contiguous width-4m row blocks.
+
+The quantifier is: for EACH fixed family satisfying (C1), there are
+infinitely many failures, possibly depending on that family. It is not one
+input avoiding every conceivable family. Arbitrary menus selected from the
+full N, or even from n=N mod m^2, are not covered by this all-hit theorem.
+For two-digit menus we do prove that the selected true-tag hits can all be
+absent, and that false repeated-root hits in the second branch can all be
+absent. Their false SIMPLE-root hits remain open.
+
+The infinite-family proof below uses the published Baker--Harman density
+exponent kappa=677/1000, recorded in
+[Kurlberg--Pomerance, Lemmas 19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225).
+It uses neither the stated OpenAI Poisson--Dirichlet density theorem nor
+a quantitative prime-gap theorem. Analytic density, interval estimates,
+asymptotic counting and infinitude remain CLASSICAL mathematical arguments.
+The new [SemiprimeScatteredColumnObstruction.lean](../RiemannGaussian/SemiprimeScatteredColumnObstruction.lean)
+kernel-checks twelve finite arithmetic lemmas, including exact carry
+periodicity, the two-hit fiber bound and the cleared multiplier identities.
+There is no new native factoring run or finite-example corpus.
+
+**The actual family and notation.** As in the preceding published-input
+obstructions, retain a positive proportion of primes P in [cX,X] with
+P-1=v_P R_P, R_P prime, R_P>P^kappa, v_P<=V=O(X^(1-kappa)), and
+R_P dividing the order of base 2. Removing the existing small-order and
+cross-order route exceptions leaves Omega(X^2/log^2 X) prime pairs along
+unbounded X. A winning box in a fixed finite multiplicative partition
+can also impose p<q<=3p/2. Its positive pair mass is preserved.
+
+Write M=X^(1/3) and take the literal selector m, the least prime with
+N=pq<=m^6. Then m is comparable to M, p,q are comparable to m^3, and
+the exact selector strip is
+
+\[
+(m^-)^6<pq\le m^6,\quad g=m-m^-,\quad
+0\le m^6-pq\le6m^5g.
+\tag{C2}
+\]
+
+Here m^- is the preceding prime. Over the relevant selector range,
+sum_m(g+1)=O(M) by telescoping; in particular sum_m sqrt(g)=O(M).
+No pointwise small-gap estimate is used. Since kappa>2/3, V=o(m) and
+R_P is much larger than m^2. Consequently p,q are neither zero nor one
+modulo m, and the existing projected base-2 actual route has both large
+local periods. The balance inequalities m^2<=p,q and 2p,2q<=3m^3 hold
+for all sufficiently large retained inputs.
+
+For the original row j in {1,...,m-1}, write
+
+\[
+a_j=(N j^{-2}\bmod m)\in\{1,\ldots,m-1\},\quad
+\ell_j=mb_j-2a_jj,\quad \delta_j=a_j+\ell_j.
+\tag{C3}
+\]
+
+Both a_j and the centered b_j are fixed by (m,n,j), n=N mod m^2.
+The row relation is n=a_jj^2-jmb_j modulo m^2 and
+-3m^2<=delta_j<=m^2. Put x_j=gamma^(N+delta_j) and
+alpha=gamma^(m^2), with gamma the actual projected unit. An original
+p-field collision at column r necessarily gives
+
+\[
+q+\delta_j-m^2r=K R_p,\qquad p-1=vR_p.
+\tag{C4}
+\]
+
+The q-field version reverses p,q. Counting solutions of this necessary
+condition gives an upper bound on all genuine collisions.
+
+**Exact carry periodicity removes an entire lift factor.** The centered
+offset satisfies the INTEGER identity
+
+\[
+\delta_j(p(q+m^2h))=\delta_j(pq)
+\tag{C5}
+\]
+
+whenever j is coprime to m and both cofactors are natural numbers.
+The leading representative is unchanged. Subtracting the two literal
+quotient-row relations gives b_j equal modulo m; centering makes the
+integers equal. Thus Phi_j(q)=q+delta_j(pq) advances by exactly m^2h.
+At a fixed exact target T it has at most one integer solution per
+q-residue modulo m^2, even in an arbitrary finite cofactor set.
+
+The existing `detector_whole_family_fiber_bound` and the new exact-to-residue
+injection imply
+
+\[
+\sum_{1\le j<m}\#\{q:\Phi_j(q)=T_j\}\le4m
+\tag{C6}
+\]
+
+for arbitrary exact targets T_j, provided p is neither zero nor one
+modulo m. Therefore a fixed (p,K,r) in (C4) has at most 4m cofactor/row
+incidences. There is NO additional g-sized lift multiplicity in this
+exact equation. This is the saving needed by m-only menus.
+
+**All small columns can be excluded at once.** Choose a fixed sufficiently
+large C_*, and first ignore the menus and test the WHOLE prefix r<=C_*m.
+For fixed p,m, write q=q_0+m^2H, 0<=q_0<m^2. The selector lets H vary
+over O(g+1) consecutive integers. By (C5), condition (C4) becomes
+
+\[
+q_0+\delta_j(pq_0)+m^2(H-r)=K R_p.
+\tag{C7}
+\]
+
+The first two terms lie in [-3m^2,2m^2). The possible H-r range has
+length O(m), so K lies in an interval with O(m^3/R_p+1)=O(v) integers.
+For fixed K, the bounded first term allows only O(1) values of H-r.
+For each of those, (C6) allows at most 4m pairs (j,q_0); each q_0 has
+O(g+1) admitted H. Thus fixed p,m permits O(m(g+1)v) bad cofactors.
+Summing the selector gaps and at most X primes p gives
+
+\[
+O(VM^5)=O(X^{8/3-\kappa})
+\tag{C8}
+\]
+
+bad pairs. Reversing p,q costs only a constant factor. This excludes
+the entire prefix irrespective of how either menu is chosen.
+
+**A large column puts the hidden prime in a short interval.** For r>C_*m,
+(C4) has K<0 and |K| comparable to vr/m. Define on the fixed prime box
+
+\[
+E_K(P)=m^6/P-m^2r-K(P-1)/v.
+\tag{C9}
+\]
+
+At a hit, E_K(p)=(m^6-pq)/p-delta_j, hence |E_K(p)|<=C_1m^2g.
+Choosing C_* using only the fixed box constants gives
+E_K'(P)=|K|/v-m^6/P^2>=c_1r/m throughout that box. For fixed K,
+the admitted p lie in one interval of length O(m^3g/r). The additional
+p=1 mod v condition gives O(m^3g/(vr)+1) possible integers.
+There are O(vr/m) admitted K. Therefore the TOTAL number of (p,K)
+incidences for fixed (m,v,r) is
+
+\[
+O(m^2g+vr/m).
+\tag{C10}
+\]
+
+This is already a sum over K: multiplying by a second K-range factor
+would be an error. The new native envelope identity clears all denominators
+and verifies the exact signs in (C9).
+
+For an m-only menu of O(m log^A m) columns, combine (C10) with (C6).
+The per-(m,v) cost is Otilde(m^4g+v m^3). Summing v<=V and the actual
+selector gaps bounds ALL hits in those scattered columns by
+
+\[
+\widetilde O(VM^5+V^2M^4).
+\tag{C11}
+\]
+
+An arbitrary full-N-adaptive controller restricted to a fixed m-only
+accessible envelope of Otilde(m) columns is also covered, by taking
+that envelope as the menu. The union of a polylogarithmic number of
+uniform near-linear m-only catalog menus has this property. An unrestricted
+full-N controller need not have such a small envelope.
+
+**One residue digit improves the false fiber from 4m to TWO.** Now let
+s=N mod m determine the menu. For fixed p,m,s, every cofactor has the
+same nonzero residue qbar=s/p modulo m. At fixed K,r set
+T=m^2r+K(p-1)/v. Reducing a hit modulo m forces
+
+\[
+(\bar q-T)j^2-2sj+s=0\quad\hbox{in }\mathbb F_m.
+\tag{C12}
+\]
+
+This nonzero polynomial has at most two row labels. For a FALSE tag
+j!=p mod m, the same-class cofactor map modulo m^2 is affine with
+unit coefficient 1-p/j. Once q mod m is fixed, it has at most one
+q residue modulo m^2 solving the target equation. Exact periodicity
+(C5) then permits at most one integer q for that row. This includes
+the previously exceptional quadratic-fiber rows; no exception is dropped.
+Thus fixed (p,K,r,s) admits at most TWO false-row/cofactor incidences.
+
+Multiply (C10) by that constant, then sum the m possible states s and
+Otilde(m) columns in each state. The per-(m,v) bound is again
+Otilde(m^4g+v m^3), giving exactly (C11). Although the selected indices
+can change with s, their O(m^2) upper bound is uniform. The case of
+the true tag j=p mod m must be counted separately, as follows.
+
+**True-tag coverage fails even for TWO-digit menus.** Fix ANY uniform
+Otilde(m) menu C_(m,n), n=N mod m^2. On the retained balanced family
+the original true-tag forced index r_* lies below L, by the preceding
+native balanced theorem. Since R_p is much larger than L and m is
+coprime to R_p, a true-tag p-field hit at r<L has r=r_* exactly.
+Writing the frozen coefficients of that row, it therefore requires
+
+\[
+q=m^2r-\ell_j-a_jp,\qquad p=j\pmod m,\quad p=1\pmod v.
+\tag{C13}
+\]
+
+For fixed m,n,r,j,v the p values have spacing vm. The selector constrains
+the parabola p(m^2r-ell_j-a_jp) to a strip of width O(m^5g).
+When a_j is at least a fixed box-dependent constant A_0, its derivative
+q-a_jp is negative with magnitude at least c_2a_jm^3 throughout the
+admitted p,q box. Its p preimage has length O(m^2g/a_j), giving
+O(mg/(v a_j)+1) integers. For each of the bounded small positive
+a_j<A_0, a parabola strip has at most two preimage intervals, each
+of length O(m^(5/2)sqrt(g)); their p count is
+O(m^(3/2)sqrt(g)/v+1).
+
+For fixed n, the relation a_j=n j^(-2) modulo m has at most two j
+for each nonzero a_j. Hence sum_j 1/a_j=O(log m), and only O(1)
+rows use the bounded small coefficients. Summing j, then Otilde(m)
+selected r and at most m^2 states n, gives the per-(m,v) bound
+
+\[
+\widetilde O(m^4g/v+m^{9/2}\sqrt g/v+m^4).
+\tag{C14}
+\]
+
+Summing v harmonically and using sum g=O(M), sum sqrt(g)=O(M) yields
+
+\[
+\widetilde O(M^{11/2}+VM^5).
+\tag{C15}
+\]
+
+Both true-tag orientations are included. The one-digit family (C1) is
+a subclass of these two-digit families, so (C15) supplies its missing
+true-tag bound without claiming every local collision has a true tag.
+
+Combining (C8), (C11) and (C15), all bad pairs for (C1) number at most
+
+\[
+\widetilde O\left(X^{11/6}+X^{8/3-\kappa}
+                         +X^{10/3-2\kappa}\right).
+\tag{C16}
+\]
+
+At kappa=677/1000 the exponents are 11/6, 5969/3000 and 2969/1500,
+all strictly below two. These losses and the previous actual-route
+exceptions leave positive mass against Omega(X^2/log^2 X). This proves
+the stated infinite actual-input ALL-hit failure, and the unit/gcd-one
+conclusion. In those inputs both forced full-interval field collisions
+still exist elsewhere; the original full scalar is saturated. The theorem
+concerns missing the collisions through the restricted acquisition menu.
+
+**For full n menus, the second repeated branch also has a power saving.**
+There is a useful additional narrowing of their remaining case. Eliminating
+r from (C4) gives
+
+\[
+F(p)=Kp^2-(K+v\delta_j)p-vn=0\pmod{m^2},\quad |K|\le C_2vm.
+\tag{C17}
+\]
+
+The repeated branches modulo m are x=j and x=j/(2j-1). The first
+branch gives K=-va_j exactly and is already (C13). In the second branch
+put d=2j-1 and take x_0=j/d modulo m^2. Here j,j-1,d are units,
+since the actual p residue is neither zero nor one. Taylor expansion
+at a repeated root gives F(x_0)=F(p)=0 modulo m^2. The exact cleared
+identity, now also kernel-checked, is
+
+\[
+d^2F(x_0)=-j(j-1)\,[K+va_jd^2-2vmb_jd].
+\tag{C18}
+\]
+
+Thus K=-va_jd^2+2vmb_jd modulo m^2. For fixed a_j,j, the m lifts
+of n=a_jj^2 mod m make b_j mod m traverse all residues bijectively,
+by the literal row relation. The corresponding K classes traverse all
+m lifts of one NONZERO class modulo m. Since |K|<=C_2vm=o(m^2),
+only O(v) such carries admit any integer K in that range.
+
+The total number of (n,j,K) incidences for fixed m,v is consequently
+O(v m^2). The p class has spacing vm and permits O(m^2/v) p values;
+fixed n,p permits O(g+1) q values. This counts all possible r at once,
+without multiplying by a menu size. Summing v and the selector gaps
+gives O(VM^5), a power saving at the PUBLISHED kappa. Therefore full
+n menus can miss the true-tag hits AND all second-branch repeated hits
+simultaneously on an infinite actual family. FALSE SIMPLE ROOTS in
+(C17) remain unresolved, so we make no gcd-one or all-hit claim for
+arbitrary n-dependent menus.
+
+**Global common roots need not exist anywhere in the full matrix.**
+The existing common-seed recovery theorem, and the new literal-index bridge,
+give for every global original hit, including false source tags,
+
+\[
+m^2r=p+q-1+\delta_j.
+\tag{C19}
+\]
+
+On the balanced range p+q<=3m^3 and delta_j<=m^2, so r<=3m+1<4m.
+The unconditional whole-prefix count (C8) can exclude every field hit
+there on infinitely many actual inputs. Such inputs have NO global
+common original root at any row or column below L, although their
+separate forced p-field and q-field collisions make the full scalar zero.
+An acquisition argument cannot require a globally identical row/column
+witness without additional arithmetic. Existing saturated-row recovery
+already accommodates distinct local indices and remains a possible route.
+
+**Cost and the constructive route that remains.** For a genuinely covered
+set of Otilde(m) selected columns, form U(T)=product_j(T-x_j) and evaluate
+it at alpha^r. Ordinary product/remainder trees are valid over Z/N:
+every divisor is monic. In fast reversed division the reversed divisor
+has constant coefficient one, and Newton H -> H(2-GH) requires no
+inverse of an unknown unit or of two. With degree d and W-bit modulus,
+Kronecker packing with digit width 2W+ceil(log_2 d)+1 prevents convolution
+carries; fast integer multiplication and coefficient reductions give
+classical Otilde(dW) polynomial costs in the relevant log d=O(W) range.
+The standard quasi-linear commutative-ring operations are also recorded
+in the introduction of
+[Neiger--Salvy--Schost--Villard, Faster Modular Composition](https://cs.uwaterloo.ca/~eschost/publications/NSSV24.pdf).
+Their new Las Vegas field-composition result is a different computation.
+
+Thus selected-column arithmetic can cost Otilde(m log N) bits and
+Otilde(m log N) peak storage, including binary powering of the selected
+indices. This physical fast bit backend is not newly implemented or
+Lean-priced here. The arithmetic obstruction (C16), not backend evidence,
+is the substantive advance: one-digit menus cannot give the required
+universal coverage. Full-n menu selection, full-N adaptive selection,
+tagged aggregate jets and the previous O(log m) nested partial-norm
+contract remain open. The direct transposed partial-norm cost is still
+Otilde(m^(3/2)); a near-linear shared evaluator has not been supplied.
+
+**Validation and preservation.** The new 265-line native Lean 4.34.1 leaf
+contains twelve source theorems and one noncomputable exact-fiber proof
+model. Strict compilation with warnings treated as errors, the scoped
+3620-job target build, and the focused provenance checker all pass.
+Fifteen linters report zero errors in thirteen direct and seventeen
+generated declarations. All thirty audited declarations, including
+twenty-nine theorem/helpers, use only standard logical axioms, with zero
+checker-local helpers. Compiled C exports initialization only.
+
+The [semiprime-scattered-column-obstruction-audit.json](semiprime-scattered-column-obstruction-audit.json)
+records those checks, a strict ordinary-root check, and the distinction
+between finite kernel proofs and classical infinitude. It preserves all
+443 selected parent source pins and all 78 selected Mathlib pins, adding
+the parent audit, new leaf and checker for 446 selected source pins.
+One root import, one existing semiprime-family metadata entry and this
+dated journal insertion are verified by exact removal against fresh
+current snapshots; all other bytes are preserved. No publication, commit,
+push, full graph rebuild or generated dashboard update is performed.
+The guaranteed 1/6 factorization goal remains ACTIVE: unrestricted
+whole-family acquisition, the full controller and recovery analysis,
+prime-square handling, and total deterministic bit-time and peak-memory
+proofs remain to be completed.
+
+## 2026-10-07: Cleared Cauchy determinants erase collisions; two-digit menus need a centered energy bound
+
+There is a new, fully KERNEL-CHECKED arithmetic obstruction to a concrete
+cancellation route. Take any square Cauchy block of original row targets
+and distinct original baby indices, and clear each row using exactly the
+baby nodes in that block. On the actual long branch, the resulting
+determinant has gcd ONE if the public integer offsets are distinct, and
+gcd N if an offset repeats. It never has a proper-factor gcd, even when
+the original block contains genuine local collisions. Arbitrarily cheap
+access to these determinant scalars therefore cannot supply acquisition
+THROUGH THEIR SCALAR GCDS. This is a signal obstruction independent of a
+matrix materialization or operation-count lower bound.
+
+The new [SemiprimeCauchyAcquisitionObstruction.lean](../RiemannGaussian/SemiprimeCauchyAcquisitionObstruction.lean)
+proves the matrix statement over arbitrary commutative rings with unit
+within-set differences, and connects it to the literal original targets,
+actual `LongData`, baby interval and public gcd. It also proves that
+retaining outside-column row factors leaves precisely a norm channel:
+such a full rectangular clearing is NOT excluded, but acquiring its
+remaining partial norm is the same unresolved arithmetic computation.
+
+**The exact matrix and why clearing loses its hit mask.** Assume p,q prime,
+m>=4, m prime, g a unit modulo pq, and the actual `LongData(g,m)`.
+Put R=Z/(pq), h=`projectedUnit(g,m)`, alpha=h^(m^2), and
+
+\[
+x_i=h^{N+\delta_{j_i}},\qquad y_k=\alpha^{r_k},\quad
+0\le r_k<L,\quad L=\texttt{seedLength}(m).
+\tag{D1}
+\]
+
+All tags obey 1<=j_i<m and m is prime. The original scalar norm uses
+the CROSS differences x_i-y_k. Its local zero mask records the desired
+collisions. The row-cleared s-by-s Cauchy matrix is instead
+
+\[
+B_{ik}=\prod_{\ell\ne k}(x_i-y_\ell).
+\tag{D2}
+\]
+
+This is defined without any inverse, including at a local collision.
+For a matrix A with actual reciprocal certificates
+(x_i-y_k)A_ik=1, the new theorem gives
+
+\[
+B=\operatorname{diag}\left(\prod_k(x_i-y_k)\right)A,
+\quad
+\det B=\left(\prod_{i,k}(x_i-y_k)\right)\det A.
+\tag{D3}
+\]
+
+The certificate premise is essential. A nonunit cross difference has no
+reciprocal. Lean's total notation for an inverse cannot be treated as
+such a certificate at a zero divisor.
+
+To evaluate the cleared mask, define the deleted-node polynomials and
+their coefficient matrix
+
+\[
+Q_k(T)=\prod_{\ell\ne k}(T-y_\ell),\qquad
+H_{ak}=[T^a]Q_k(T),\quad 0\le a<s.
+\tag{D4}
+\]
+
+Each Q_k has degree s-1. Writing V(z) for the Vandermonde MATRIX at z,
+the checked common-degree evaluation factorization gives
+
+\[
+B=V(x)H,\qquad
+V(y)H=\operatorname{diag}\left(\prod_{\ell\ne k}(y_k-y_\ell)\right).
+\tag{D5}
+\]
+
+If all distinct within-x and within-y differences are units, both
+Vandermonde determinants and the right-hand diagonal determinant are
+units. Taking determinants in the second equation shows det H is a
+unit; the first then shows det B is a unit. No CROSS difference is
+assumed invertible or cancelled in this proof. In the usual Vandermonde
+product convention the classical closed formula is
+det B=(-1)^(s(s-1)/2)*prod_(i<k)(x_k-x_i)*prod_(i<k)(y_k-y_i).
+The native proof checks the unit conclusion directly and does not need
+this sign formula.
+
+**The actual long branch supplies the needed unit gaps.** The source-exact
+bounds are -3m^2<=delta_j<=m^2, and `LongData` gives both local orders
+of h strictly greater than 4m^2. A field equality x_i=x_k would make
+that local order divide delta_(j_i)-delta_(j_k). Its absolute value is
+at most 4m^2; hence it is zero as an INTEGER. Therefore different
+integer offsets give nonzero differences in both hidden fields, and
+`isUnit_of_prime_reductions` certifies a unit over R.
+
+The existing `long_seed_interval_periods` gives
+L<=ord_p(alpha),ord_q(alpha). Distinct baby indices below L are thus
+also different in BOTH fields, and y_k-y_l is a unit. These conclusions
+do not require N<=m^6, balance or any analytic density input. Negative
+signed exponents are handled as powers in the unit group. Empty blocks
+have determinant one; singleton deleted-node blocks also have determinant
+one, including at a cross collision.
+
+If offsets repeat, the original x targets are equal globally; their
+cleared rows are identical and det B=0. With distinct baby indices,
+the native `actual_clearedCauchy_gcd_dichotomy` therefore proves
+
+\[
+\gcd(N,(\det B).\mathrm{val})\in\{1,N\}.
+\tag{D6}
+\]
+
+The branch is determined by public INTEGER-offset repetition. Removing
+duplicates cheaply makes every such scalar a unit. Products of these
+scalars, and multiplication by unit row or column normalizations, cannot
+change their unit/zero classification. On the previously proved balanced
+range the ORIGINAL full norm is saturated by the separate forced local
+collisions. Replacing it by these cleared determinants discards that
+zero mask; it does not implement the nested partial-norm contract.
+
+This obstruction is limited to scalar gcd acquisition from square Cauchy
+blocks cleared with their OWN selected baby set. It does not exclude gcds
+of differences from other constants, entries, derivatives, nonseparable
+masks, richer outputs or a different implicit circuit.
+
+**Full rectangular clearing retains the unpaid norm.** A square minor
+of a rectangular matrix cleared using ALL L original babies is different
+from (D2). If its selected column set is J, its entries contain the
+additional row factors
+
+\[
+c_i=\prod_{\ell\notin J}(x_i-y_\ell).
+\tag{D7}
+\]
+
+That minor is diag(c) B_J, so
+det(diag(c) B_J)=(prod_i c_i)*det B_J. The new native theorem proves
+IsUnit(det(diag(c) B_J)) IFF IsUnit(prod_i c_i) when the two selected
+node sets have unit gaps. Thus this observation preserves exactly the
+outside-column partial norm, up to a known-unit factor. Its availability
+has not been priced near-linearly. Ignoring c_i would erase the sought
+information; retaining it leaves the original acquisition problem.
+The genuine Sylvester resultant likewise retains the partial norm:
+Res(U_S,P_L)=prod_(j in S)P_L(x_j), for monic U_S(T)=prod_(j in S)(T-x_j).
+It is not ruled out by
+(D6); acquiring P_L mod U_S in the needed bit budget remains open.
+
+**Nilpotent extensions do not repair forbidden reciprocals.** For ANY
+ring homomorphism pi:A->R, the native specialization theorem proves
+that pi(z) nonunit implies z has no reciprocal in A. Apply this to
+constant-term specialization in a truncated jet algebra: a lift of a
+nonunit cross difference remains noninvertible. Consequently replacing
+the forbidden denominator by d+epsilon cannot justify the uncleared
+Cauchy identity. Other jet observables, including existing derivative
+readers that use certified units, are not excluded by this argument.
+
+**A quantitative extension of the scattered-menu obstruction.** The
+previous entry's classical counting proof extends beyond linear menus.
+For a fixed family C_(m,s), s=N mod m, allow
+|C_(m,s)|<=C m^beta (log m)^A, with beta>=1. Replacing the menu-size
+factor in its false and true counts gives
+
+\[
+\widetilde O\left(M^{\beta+9/2}
+                   +VM^{\beta+4}+V^2M^{\beta+3}\right),
+\quad M=X^{1/3},\quad V=O(X^{1-\kappa}).
+\tag{D8}
+\]
+
+The whole small-prefix loss VM^5 is absorbed for beta>=1. The three
+strict inequalities needed against X^2/log^2 X are
+beta<3/2, beta<3kappa-1, beta<6kappa-3. For kappa>2/3 the last is
+weaker than the second. Using the published
+[Baker--Harman exponent recorded in Kurlberg--Pomerance, Lemma 19](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+kappa=677/1000, every fixed beta<1031/1000 therefore gives an infinite
+ACTUAL long-base-2 family with no selected hit in either hidden field.
+This is a classical all-hit obstruction, not newly formalized infinitude.
+
+It also covers a controller that chooses a menu using full n=N mod m^2,
+full N, or earlier original-detector responses, IF the union of every
+column it can access for fixed (m,s), across ALL inputs and branches,
+has size Otilde(m^beta). In particular, Otilde(m)-sized menus drawn from
+at most m^eta variants per (m,s) fail when eta<31/1000. The statement
+is about total accessible columns/menu supports, not a general lower
+bound on how many bits of N must be read.
+
+Conditionally on the UNFORMALIZED density theorem stated in the pinned
+[OpenAI Poisson--Dirichlet manuscript](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf),
+take any fixed kappa>5/6. Then the same proof excludes beta<3/2, or
+eta<1/2 in the variant corollary. Its full analytic proof is not newly
+audited here, and it is not inserted as a Lean axiom. The Cauchy
+obstruction (D6) needs NONE of these analytic inputs.
+
+**The precise cancellation gate for unrestricted two-digit menus.**
+Let B_(m,n,r) count admissible FALSE SIMPLE p-field hit incidences among
+the retained actual prime pairs, at selector m, state n=N mod m^2 and
+original column r<L. Counts deliberately include their original row and
+multiplier labels. Define the per-state mean and centered energy
+
+\[
+T_m=\sum_{n,r}B_{m,n,r},\quad
+\mu_{m,n}=L^{-1}\sum_r B_{m,n,r},\quad
+E_m=\sum_{n,r}(B_{m,n,r}-\mu_{m,n})^2.
+\tag{D9}
+\]
+
+The present global simple-root overcount gives only
+T_m<=Otilde(V m^5(g+1)). For any full-n menu with at most W=Otilde(m)
+selected columns per state, exact centering and Cauchy--Schwarz give
+
+\[
+\sum_n\sum_{r\in C_{m,n}}B_{m,n,r}
+ \le (W/L)T_m+\sqrt{m^2W E_m}.
+\tag{D10}
+\]
+
+An independently proved arithmetic estimate
+
+\[
+E_m\le\widetilde O(Vm^6(g+1))
+\tag{D11}
+\]
+
+would therefore bound the selected false-simple pairs globally by
+Otilde(VM^5+sqrt(V)M^(11/2)). The exponents are 8/3-kappa and
+7/3-kappa/2; at the published kappa they are 5969/3000 and
+11969/6000, both below two. Together with the existing true-tag and
+second-repeated-branch bounds, (D11) would CLOSE the full-n menu
+obstruction unconditionally. Both factor orientations must satisfy
+the analogous estimate.
+
+NO estimate (D11) is proved in this turn. Carry bijectivity is not
+statistical independence. Within a fixed false simple root packet,
+the second carry of n and the second lift of p are related by an affine
+BIJECTION with nonzero slope. A carry-dependent menu can correlate with
+that lift. The needed new cancellation concerns overlaps of entire
+root packets after their per-state mean is subtracted.
+
+**Why a pointwise lattice-density shortcut is invalid.** The simple root
+CRT class has spacing vm^2. The selector envelope restricts p to an
+interval of length O(m^3g/r), so its elementary count is
+O(mg/(vr)+1). Removing the '+1' uniformly is false even if p and its
+large period factor R_p are genuinely prime.
+
+For any sufficiently large published good p with p-1=vR_p, take m the
+least prime at least p^(1/3). Choose a row j outside the true and second
+repeated residues and outside the at most two roots of the quadratic
+detector exception. The exact cofactor map Phi_j(q)=q+delta_j(pq) is
+a residue permutation modulo m^2 with exact m^2 periodicity. Its inverse
+exists at every sufficiently large integer target. Put
+K_0=-floor(m^4/R_p), and choose K among K_0,K_0-1 so that m does not
+divide K. The selector cofactor strip
+
+\[
+((m^-)^6/p,\ m^6/p]
+\tag{D12}
+\]
+
+has width at least (12-o(1))m^2, since p<=m^3 and m^-<=m-2.
+Its interior obtained by deleting 2m^2 on the left and 4m^2 on the
+right contains several consecutive targets T=m^2r+KR_p. Their unique
+inverse cofactors obey q=T-delta_j(pq), lie strictly inside (D12), and
+have r=m^2+O(m)<L. They are units modulo m, and the constructed hidden
+prime root of F is simple. Adjacent targets change q by exactly m^2;
+an odd q with q!=1 mod R_p can also be chosen, preserving the genuine
+projected p-field base-2 period.
+
+Qualitative prime asymptotics give g=o(m). The envelope length at
+r comparable to m^2 is O(mg)=o(vm^2), yet its CRT class contains the
+actual p. Thus a uniform count O(length/(vm^2)) is impossible. The
+constructed q is an INTEGER, not asserted prime: this is a rigorous
+limitation of the existing integer-cofactor overcount, not an actual
+semiprime counterfamily or a proof that full-n menus fail. Primality
+of q, joint packet correlations or a source-specific sieve may still
+yield (D11). No successful examples are used as proof input.
+
+**Validation and preservation.** The new 261-line native leaf has thirteen
+source theorems and one noncomputable cleared-matrix proof model. Strict
+Lean 4.34.1 compilation, the scoped 3621-job target build, fifteen focused
+linters and the strict ordinary root check pass. The provenance checker
+audits all 24 declarations, including 23 theorem/helpers and zero local
+checker helpers, using only standard logical axioms; lint reports zero
+errors in fourteen direct and ten generated declarations. Compiled C
+exports initialization only. Native credit
+covers the universal actual Cauchy gcd obstruction and row-factor unit
+equivalence; it does not cover the generalized infinite counts or prove
+the proposed centered-energy estimate.
+
+The [semiprime-cauchy-acquisition-obstruction-audit.json](semiprime-cauchy-acquisition-obstruction-audit.json)
+retains all 446 selected parent source pins and all 78 selected parent
+Mathlib pins, adding the parent audit, leaf and checker for 449 source
+pins and five explicitly used Mathlib sources for 83 selected Mathlib
+pins. One root import, one entry in the existing semiprime metadata family
+and this dated journal insertion are checked by exact removal against
+fresh current snapshots. Historical entries and audits are preserved.
+No commit, push, publication, dashboard regeneration or full graph rebuild
+is performed. The guaranteed 1/6 goal remains ACTIVE: unrestricted
+whole-family acquisition and its full deterministic bit-time/peak-memory
+proof are still open, including controller, recovery and prime squares.
+
+## 2026-10-07: Actual reduced doubling loses a correction; endpoint cancellation leaves saturation
+
+The previous goal turn was **progress**. This turn is **progress**: it
+excludes two specified acquisition updates using the original arithmetic
+source. It supplies no near-linear whole-family algorithm and no complete
+one-sixth bit-time or peak-memory factorizer. No successful examples or
+finite coverage certificates are used as evidence.
+
+The new [SemiprimeNormCancellationObstruction.lean](../RiemannGaussian/SemiprimeNormCancellationObstruction.lean)
+proves that naive reduce-then-shift doubling is wrong for the ACTUAL
+geometric product on the prefix-unit branch, including the original
+whole-family value and squared Hermite carriers. It also proves that
+removing only unit cross differences cannot desaturate the literal
+balanced whole-family norm. The previous arithmetic counterfamily
+supplies those unit premises classically; its infinitude is not newly
+formalized or assumed as a Lean axiom.
+
+**The actual product, rather than an arbitrary test polynomial.** Let
+P_d(T)=prod_(r<d)(T-alpha^r), with the original alpha=seedBase(h,m),
+h=projectedUnit(g,m). Let U be a monic target carrier of degree d with
+unit constant coefficient. Since P_d and U are monic of equal degree,
+
+\[
+R_d=P_d\bmod U=P_d-U.
+\tag{N1}
+\]
+
+Put c=alpha^(-d) and v=alpha^(d^2). The exact doubling formula and the
+proposed reduced substitute are
+
+\[
+P_{2d}=vP_d(T)P_d(cT),\qquad
+\widehat R_{2d}=vR_d(T)R_d(cT)\bmod U.
+\tag{N2}
+\]
+
+Their actual difference retains the correction
+
+\[
+P_{2d}-vR_d(T)R_d(cT)
+=vP_d(T)U(cT)+vU(T)R_d(cT).
+\tag{N3}
+\]
+
+Assume every original cross difference x-alpha^r is a UNIT for all
+selected targets x and r<d. Pairwise linear-factor Bezout certificates
+then show IsCoprime(U,P_d), including repeated targets and carrier
+powers. If the two canonical remainders in (N2) were equal, (N3) would
+give U dividing vP_d(T)U(cT). The unit v and this coprimality cancel in
+DIVISIBILITY, so U divides U(cT). The already checked unit-constant
+coefficient argument forces c^d=1, equivalently alpha^(d^2)=1.
+
+On actual LongData with p,q distinct primes, the native original alpha
+preserves the global projected order, which is greater than 16m^4.
+For 0<d<=2m, d^2<=4m^2 is smaller than that order. Therefore this
+correction cannot vanish modulo U. The new native
+`original_family_doubling_fails` uses the literal original target list
+and U=(targetPolynomial(seedTargets(h,m)))^e for e=1 or e=2, so
+d=e(m-1). It covers both a value carrier and the squared Hermite carrier.
+No deduplication, distinct-target premise or forbidden evaluated inverse
+is needed for this composite-ring coprime proof.
+
+The fixed prefix C_m=[0,2m) has near-linear size and lies inside the
+original interval on m>=4. The previous scattered-column counting
+argument therefore gives infinitely many ACTUAL long-base-2 inputs with
+the unit-cross premise for both carriers. This closes the loophole that
+the earlier fixed-remainder shift counterexample used an arbitrary
+polynomial U rather than the specialized geometric family.
+
+This statement concerns the update at length d=degree U. That length is
+the first original prefix whose reduction discards a coefficient. It
+need not be an executed power-of-two stage of a particular algorithm.
+The inequality of canonical remainders also does NOT assert that an
+incorrect final scalar gcd or jet must result. Corrected recurrences,
+additional state and specialized algorithms remain separate possibilities.
+
+**Moving quotient ideals describe, but do not acquire, the extra query.**
+For a selected target carrier U_S of degree J, define
+U_b(T)=alpha^(-bJ)U_S(alpha^b T), whose roots are alpha^(-b)x_j,
+and R_(t,b)=P_t mod U_b. The valid update is
+
+\[
+R_{2t,b}=\alpha^{t^2}R_{t,b}(T)
+ R_{t,b+t}(\alpha^{-t}T)\bmod U_b.
+\tag{N4}
+\]
+
+The known scaling isomorphism maps the polynomial as well as the
+quotient ideal. It does not turn R_(t,b) into the missing R_(t,b+t).
+No cost bound for obtaining that shifted remainder is established.
+Explicit evaluation frontiers still meet the previously proved source
+obstruction; arbitrary implicit coupled states are not excluded.
+The parameter-dependent q-holonomic bound in
+[Bostan--Yurkevich, Theorem 5](https://arxiv.org/html/2012.08656)
+likewise retains sqrt(LJ) work for the direct scalar product with a
+degree-J recurrence coefficient. At L comparable to m^2 and J comparable
+to m this is the existing m^(3/2) route, not the requested whole-family
+near-linear acquisition bound. The cited theorem is an upper bound,
+not a general lower bound.
+
+**Unit-only deletions cannot expose an interior factor.** Fix any
+accessible menu family C_(m,s) contained in [0,L), s=N mod m,
+with |C_(m,s)|=Otilde(m). The previous all-hit counting argument provides
+infinitely many actual balanced long-base-2 inputs, DEPENDING ON THIS
+FIXED FAMILY, with
+
+\[
+x_j-\alpha^r\text{ a unit for every original }j, r\in C_{m,s},
+\qquad F=\prod_j\prod_{r<L}(x_j-\alpha^r)=0.
+\tag{N5}
+\]
+
+Allow arbitrary row-specific deletion sets D_j contained in C_(m,s),
+including choices made using full N or earlier responses. The exact
+disjoint product identity gives
+
+\[
+U_D=\prod_j\prod_{r\in D_j}(x_j-\alpha^r)\text{ a unit},\qquad
+F=U_DH_D,\quad
+H_D=\prod_j\prod_{r\in[0,L)\setminus D_j}(x_j-\alpha^r).
+\tag{N6}
+\]
+
+Hence EVERY such H_D is zero, not a proper-factor scalar. The native
+`complement_norm_zero` proves this over any commutative ring, permitting
+different D_j for different rows. The native balanced-source wrapper
+connects it to all m-1 literal original tags and the already proved
+balanced seedAggregate saturation. It does not claim that individual
+row norms or individual matrix entries vanish globally.
+
+Multiplication by unit phases, products, and division by CERTIFIED
+units leave these observed scalars either units or zero. Their gcds
+with N are consequently 1 or N. Adding observables, subtracting other
+constants, matrix entries or kernels, derivatives, partial-ROW norms
+and larger accessible column families are outside this exact route.
+The accessible family may also use the preceding quantitative menu
+extension beta<1031/1000, but no new density estimate is needed here.
+
+**Small shifts kept inside the original interval also remain saturated.**
+Choose K=Otilde(m)<L/4, I=[K,L-K), and the fixed m-only envelope
+C=[0,2K) union [L-2K,L). For arbitrary signed per-row shifts
+|t_j|<=K, the exact unit-phase identity is
+
+\[
+P_I(\alpha^{t_j}x_j)=\alpha^{t_j|I|}P_{I-t_j}(x_j).
+\tag{N7}
+\]
+
+Every shifted interval stays inside [0,L), and every deleted complement
+lies in C. Equations (N5)--(N6) thus force the WHOLE-family shifted
+scalar to be zero for every choice of these shifts on that counterfamily,
+even choices based on full N. No negative or outside-original baby
+collision estimate is used. This shift identity and its infinite-family
+application are classical consequences recorded here; the native credit
+is the exact complement saturation implication.
+
+Endpoint polynomial cancellation leaves a ratio of unit boundary
+products. It preserves a row's entire gcd when both boundaries are
+units: an interior local collision remains until a genuine nonunit
+boundary is crossed. Direct division by a saturated long product has
+no reciprocal. Canceling polynomial factors first is valid but does
+not acquire the interior collision signal.
+
+**Whole-family rectangular Cauchy minors close the previous loophole.**
+Select all original rows and a square column set J contained in C.
+Clearing those rows using ALL L babies gives diag(c)B_J, where
+c_j=prod_(r notin J)(x_j-alpha^r). Its determinant is
+
+\[
+\det(\operatorname{diag}(c)B_J)
+=\left(\prod_jc_j\right)\det B_J=H_J\det B_J=0.
+\tag{N8}
+\]
+
+The new native diagonal determinant theorem proves this zero conclusion
+without within-set unit-gap assumptions. Thus retaining the outside
+norm does not rescue scalar gcd acquisition from these WHOLE-row-family
+minors on the same actual input family, even if the scalar is supplied
+for free. Minors with a proper subset of rows, nested partial-row norms
+and unrestricted selection families remain open.
+
+**The energy gate now isolates distinct-prime covariance.** For the
+previous false-simple count B_(m,n,r), write b_p(n,r) for one p packet
+and T_(p,n)=sum_r b_p(n,r). The retained n is a unit modulo m.
+At fixed p,m,n,r, the selector cofactor strip
+restricts K to an interval of length O(m^2(g+1)/R_p). Each K admits at
+most five integer offset lifts in [-3m^2,m^2] modulo m^2, and each
+offset has at most two row tags by the nonzero quadratic offset equation
+modulo m. Since R_p=(p-1)/v_p and p is comparable to m^3,
+
+\[
+b_p(n,r)\ll 1+v_p(g+1)/m.
+\tag{N9}
+\]
+
+Center each p packet separately with mean mu_(p,n)=T_(p,n)/L,
+giving energy E_p. Positivity and
+b_p^2<=max(b_p)b_p imply
+
+\[
+\sum_pE_p\ll(1+V(g+1)/m)T_m\ll mT_m.
+\tag{N10}
+\]
+
+This already fits the proposed D11 scale, using the existing elementary
+V=O(m), g=O(m) bounds. What is still unpaid is exactly
+
+\[
+E_m=\sum_pE_p+2\sum_{p<p'}\left[
+ \sum_{n,r}b_p(n,r)b_{p'}(n,r)
+ -L^{-1}\sum_nT_{p,n}T_{p',n}\right].
+\tag{N11}
+\]
+
+No estimate for the distinct-prime centered correlations is proved.
+An integer-cofactor majorant cannot by itself supply that estimate:
+centered variance is not monotone under deleting incidences. The bound
+must apply to actual prime-cofactor packets, or use a justified separate
+error/background estimate. These counting reductions remain classical;
+they are not new native bit algorithms or a proof of D11.
+
+**Validation and preservation.** The 249-line native leaf contains nine source theorems and no
+algorithm or proof-model definition. Strict native leaf compilation, the
+scoped 3622-job target build, the focused lint/all-declaration standard-axiom
+checker and the strict registered ordinary root check pass. Fifteen
+linters report zero errors in nine direct and five generated declarations.
+All fourteen declarations use only standard logical axioms, with no
+checker-local helpers; compiled C exports initialization only. The native
+credit is the actual-product remainder failure and complement/minor
+saturation, not new infinitude, shift-family counting or energy bounds.
+The [semiprime-norm-cancellation-obstruction-audit.json](semiprime-norm-cancellation-obstruction-audit.json)
+retains the selected parent source/Mathlib pins, the exact original
+arithmetic source, and fresh current snapshots for one root import,
+one existing semiprime metadata-family entry and this dated insertion.
+Historical journals and audits are preserved. No commit, push,
+publication, full graph rebuild or generated dashboard update is made.
+The goal remains ACTIVE: genuine whole-family near-linear acquisition,
+controller/recovery/prime-square handling and full deterministic bit-time
+and peak-working-memory proofs remain open.
+
+## 2026-10-07: The residue square factor disappears under the exact carry lift
+
+The proposed reuse of the quadratic residue product now has an arithmetic
+obstruction on infinitely many ACTUAL balanced long-base-2 inputs. The
+lower-digit polynomial admits `S^2` as a factor with `S` monic and
+`deg S=(m-3)/2`, but every monic `A` with `A^2` dividing the literal,
+UNPOWERED exponential target carrier satisfies `deg A<(log m)^3` on
+this family. This is a failure
+of transferring that exact polynomial square structure, not a general
+factoring or arithmetic-circuit lower bound. No additional successful
+factorization examples were accumulated.
+
+The new native leaf is
+[RiemannGaussian/SemiprimeOffsetCarryObstruction.lean](../RiemannGaussian/SemiprimeOffsetCarryObstruction.lean).
+It proves the exact offset lift, fixed-row carry injectivity, uniqueness
+of a duplicate pair's second carry, a whole-family finite duplicate-mass
+bound and its threshold bound. It also preserves the literal source
+through the hidden-field polynomial reduction and bounds every monic
+square divisor by the exact original duplicate-pair count. The hidden
+field is proof-side information and is not an algorithmic oracle.
+
+The following residue identity, published density input, selector counts
+and infinitude argument are CLASSICAL. They are not new Lean axioms or
+native asymptotic theorems. The native carry-mass theorem uses the slightly
+looser bound `m-1`, which already gives the same asymptotic conclusion;
+the exact `(m-3)/2` classical bound follows from the residue identity.
+
+**Statement and exact objects**
+
+For the original denominator-one row at tag \(1\le j<m\), write
+
+\[
+a_j(N)=\operatorname{representative}(N,m,j,1),\qquad
+b_j(N)=(\operatorname{seedRow}(N,m,j)).b,
+\]
+
+\[
+\delta_j(N)=a_j(N)+m b_j(N)-2a_j(N)j.
+\tag{1}
+\]
+
+These are the literal repository coefficients, including the centered
+integer carry. Their quotient relation is
+
+\[
+N=m^2c_j-jm b_j+j^2a_j.
+\tag{2}
+\]
+
+Assume that \(m\) is prime and \(m\nmid N\). Let \(s=N\bmod m\), viewed
+as a nonzero element of \(\mathbb F_m\), and put
+
+\[
+d_j=s(j^{-2}-2j^{-1})\in\mathbb F_m.
+\tag{3}
+\]
+
+The exact integer offsets satisfy \(\delta_j(N)\bmod m=d_j\).
+Define the number of unordered exact duplicate pairs
+
+\[
+D(N,m)=\#\{(j,k):1\le j<k<m,\ \delta_j(N)=\delta_k(N)\}.
+\tag{4}
+\]
+
+The actual long-branch projected unit is denoted by \(\gamma\), to avoid
+confusing it with the half-size parameter used below. Its unpowered original
+value carrier is
+
+\[
+U_{N,m,\gamma}(T)=
+\prod_{j=1}^{m-1}\bigl(T-\gamma^{N+\delta_j(N)}\bigr)
+\quad\text{over }\mathbb Z/N\mathbb Z.
+\tag{5}
+\]
+
+Signed powers in (5) are powers of a unit.
+
+**Classical actual-input conclusion.** There are infinitely many balanced
+distinct-prime semiprimes \(N=pq\) whose literal public route returns
+longBase 2, with the literal least-prime selector \(m\), for which
+
+\[
+D(N,m)<(\log m)^3.
+\tag{6}
+\]
+
+On each such input, every monic polynomial \(A\) satisfying
+
+\[
+A(T)^2\mid U_{N,m,\gamma}(T)
+\tag{7}
+\]
+
+has
+
+\[
+\deg A<(\log m)^3.
+\tag{8}
+\]
+
+In contrast, the residue polynomial from (3) admits \(S^2\) as a factor
+with \(S\) monic of degree \((m-3)/2\). No monic polynomial of that degree
+can have its square divide the literal exponential value carrier.
+The conclusion concerns (5), not the intentionally squared Hermite carrier
+\(U_{N,m,\gamma}^2\).
+
+**Exact residue polynomial formula, with exceptional cases**
+
+Let \(m\) be an odd prime, \(s\in\mathbb F_m^\times\), and
+\(h=(m-1)/2\). Set \(Z=T+s\) and
+
+\[
+S_{m,s}(T)=
+\sum_{a=0}^{h-1}(T+s)^{h-1-a}s^a.
+\tag{9}
+\]
+
+Then, as a polynomial identity in \(\mathbb F_m[T]\),
+
+\[
+\boxed{
+F_{m,s}(T):=
+\prod_{j\in\mathbb F_m^\times}
+\left(T-s(j^{-2}-2j^{-1})\right)
+=T(T+s)S_{m,s}(T)^2.}
+\tag{10}
+\]
+
+The polynomial \(S_{m,s}\) is monic of degree \(h-1=(m-3)/2\).
+
+To prove this, put \(t=j^{-1}\), then \(u=t-1\). As \(j\) runs through
+\(\mathbb F_m^\times\), \(u\) runs through
+\(\mathbb F_m\setminus\{-1\}\), and the corresponding factor is
+\(Z-su^2\). The nonzero squares form a set of size \(h\), each with
+two square roots. Consequently
+
+\[
+\prod_{u\in\mathbb F_m}(Z-su^2)
+=Z(Z^h-s^h)^2.
+\tag{11}
+\]
+
+Removing \(u=-1\) removes the factor \(Z-s=T\), so
+\(T F_{m,s}=Z(Z^h-s^h)^2\). The geometric identity
+\(Z^h-s^h=(Z-s)S_{m,s}=T S_{m,s}\), followed by cancellation of
+the nonzero polynomial \(T\) in the domain \(\mathbb F_m[T]\), proves
+(10). This is polynomial cancellation, not division by a possibly zero
+evaluated scalar.
+
+More explicitly, the roots \(d=0\) and \(d=-s\) each have one row
+label. Every other image value has two labels. There are exactly
+\(h-1=(m-3)/2\) unordered residue-alias pairs.
+Equivalently, for any \(d\in\mathbb F_m\), its labels satisfy
+
+\[
+d j^2+2s j-s=0.
+\tag{12}
+\]
+
+The constant coefficient is nonzero, so each fiber has at most two
+labels, including when \(d=0\).
+
+If \(s=0\), all the residue offsets are zero and
+\(F_{m,0}(T)=T^{m-1}\). Formula (10) still agrees with this for odd
+\(m\) when (9) is interpreted as a polynomial, but the two-label
+fiber bound and the later carry argument do not apply. The actual
+coprime selector inputs considered here have \(s\ne0\).
+
+If \(m=2\), there is one row and
+\(F_{2,s}(T)=T-s=T+s\). The \(h=0\) version of (9) must not be used
+to assert (10). The actual infinite family below has \(m\to\infty\),
+so \(m=2\) is excluded. For \(m=3\), (10) is valid with \(S=1\)
+and no nonconstant squared factor.
+
+**A residue-alias pair can duplicate at only one second carry**
+
+For fixed \(s\in\{1,\ldots,m-1\}\), let
+
+\[
+n_u=s+mu,\qquad 0\le u<m.
+\tag{13}
+\]
+
+The leading representative \(a_j(n_u)\) is constant as \(u\) varies:
+it is the canonical residue \(s j^{-2}\bmod m\).
+Equation (2) and (1) give the exact lifted congruence
+
+\[
+j\delta_j(n_u)\equiv a_j j(1-j)-n_u\pmod{m^2},
+\]
+
+hence
+
+\[
+\delta_j(n_u)\equiv a_j(1-j)-n_u j^{-1}\pmod{m^2},
+\tag{14}
+\]
+
+where this inverse is an inverse modulo \(m^2\).
+
+Take distinct tags \(j,k\) with \(d_j=d_k\). The difference
+\(\delta_j(n_u)-\delta_k(n_u)\) is divisible by \(m\).
+By (14), its quotient by \(m\), modulo \(m\), depends affinely on
+\(u\) with coefficient
+
+\[
+-(j^{-1}-k^{-1})\in\mathbb F_m^\times.
+\tag{15}
+\]
+
+Thus exactly one congruence class of \(u\) can make this difference
+zero modulo \(m^2\), and at most one can make the offsets equal
+as integers. Exact equality is a stronger condition than the
+congruence; no claim is made that the unique congruence solution
+necessarily yields exact equality.
+
+All exact duplicate pairs must already be residue aliases. Summing
+over the carries and over the \((m-3)/2\) possible pairs gives the
+finite inequality
+
+\[
+\boxed{\ \sum_{u=0}^{m-1}D(n_u,m)\le (m-3)/2.\ }
+\tag{16}
+\]
+
+Therefore, for every real threshold \(B>0\),
+
+\[
+\#\{u:D(n_u,m)\ge B\}\le \frac{m-3}{2B}
+\le\frac{m}{2B}.
+\tag{17}
+\]
+
+The centered offset depends exactly on \(N\bmod m^2\), as an INTEGER,
+not only as a congruence class. Thus (16)--(17) also control arbitrary
+positive \(N\) with the corresponding residues \(s,u\).
+
+**Actual long-base-2 prime-pair supply**
+
+The only analytic density input is the published Baker--Harman
+large-prime-factor theorem, in the explicit formulation of
+Kurlberg--Pomerance, Section 4, Lemma 19. It supplies a positive
+proportion of primes \(P\) with a prime factor
+
+\[
+R_P\mid P-1,\qquad R_P>P^\kappa,\qquad
+\kappa=677/1000>2/3.
+\tag{18}
+\]
+
+It suffices to use this lower bound along an unbounded sequence of
+\(X\). Ordinary prime counting lets us choose fixed \(c,a>0\) so
+that at least \(aX/\log X\) such primes lie in \([cX,X]\).
+A fixed finite multiplicative partition has a bin containing a
+positive fraction of them. Choose its ratio at most \(3/2\).
+Pairs inside a winning bin have \(p/q\) and \(q/p\) at most \(3/2\)
+and supply \(\Omega(X^2/\log^2X)\) ordered prime pairs.
+
+For sufficiently large \(X\), write
+\(P-1=v_P R_P\). The factor \(R_P\) is unique and occurs to exponent
+one, since \(\kappa>1/2\), and
+
+\[
+v_P\le V:=c^{-\kappa}X^{1-\kappa}.
+\tag{19}
+\]
+
+Discard primes for which \(R_P\nmid\operatorname{ord}_P(2)\).
+Their orders are at most \(V\), so each such prime divides
+\(\prod_{r\le V}(2^r-1)\). Comparing logarithms bounds their number by
+\(O(V^2/\log X)\), which is negligible relative to \(X/\log X\).
+Discard pairs with \(R_p\mid q-1\), \(R_q\mid p-1\), or \(p=q\).
+Counting integers in the relevant progressions gives at most
+\(O(X^{2-\kappa}+X)\) discarded pairs, also negligible.
+
+The remaining pairs still have mass
+\(\Omega(X^2/\log^2X)\). They have distinct \(R_p,R_q\);
+neither divides \(N-1\). If \(m\) is the literal least prime with
+\(pq\le m^6\), then \(m\asymp X^{1/3}\), \(v_p,v_q<m\), and
+\(R_p,R_q\gg m^2\). The actual factorial projection kills the
+small cofactor portions of the two orders and preserves both large
+prime factors. The projected local orders are exactly \(R_p,R_q\).
+All prior factorial stages preserve those factors as well.
+
+The literal public base-selection and refinement route therefore
+returns longBase 2: the small-factor prefix and square test do not
+finish, 2 is selected, all short collision batches have exponent
+distances below both local orders, and the intermediate projection
+gcds are one. The source-exact routing argument is already recorded
+in the investigation journal, as referenced in Section 8 below.
+No private base, advised period, safe-prime infinitude, GRH, PD law,
+or prime-gap conjecture is used here.
+
+Balance also gives the existing native bounds
+\(m^2\le p,q\) and \(2p,2q\le3m^3\) for all sufficiently large
+retained inputs: \(m\ge(pq)^{1/6}\) and the factor ratio is at most
+\(3/2\). Thus both original forced field hits lie in the original
+baby interval. Their existence is compatible with (6), which
+concerns duplicate row targets rather than missing all collisions.
+
+**Exact selector count and the polylogarithmic threshold**
+
+Put \(M=X^{1/3}\). We can take fixed selector constants
+
+\[
+a_0=c^{1/3},\qquad b_0=4,\qquad
+a_0M\le m\le b_0M
+\tag{20}
+\]
+
+for all large \(X\). The lower bound follows from \(p,q\ge cX\);
+the upper bound follows from Bertrand's bound applied to the
+literal least-prime selector.
+
+For a selector prime \(m\), let \(m^-\) be its predecessor and
+\(g=m-m^-\). The exact bin is
+
+\[
+(m^-)^6<pq\le m^6.
+\tag{21}
+\]
+
+For a fixed \(p\ge cX\), the admitted integer cofactors form an
+interval of width at most
+
+\[
+\Delta=\frac{m^6-(m^-)^6}{p}
+\le\frac{6m^5g}{cX}.
+\tag{22}
+\]
+
+Dividing by \(m^2\) and using (20) gives
+\(\Delta/m^2\le A_0g\), where \(A_0=6b_0^3/c\).
+Every fixed residue class of \(q\bmod m^2\) consequently admits at
+most
+
+\[
+(A_0+1)(g+1)=:A_1(g+1)
+\tag{23}
+\]
+
+integer cofactors in the bin. Requiring \(q\) to be prime can only
+reduce this upper bound.
+
+For fixed \(p,m\), multiplication by \(p\) permutes the unit
+residues modulo \(m^2\), since the large prime \(p\) is not \(m\).
+For each fixed nonzero state \(s=pq\bmod m\), (17) allows at most
+\(m/(2B(m))\) bad second carries. These correspond to that many
+classes of \(q\bmod m^2\). Summing over the at most \(m\) states
+and using (23) bounds the bad \(q\) count per \((p,m)\) by
+
+\[
+\frac{A_1m^2(g+1)}{2B(m)}.
+\tag{24}
+\]
+
+The possible selector primes form a consecutive prime range.
+Their gaps telescope, and their number is at most \(b_0M\):
+
+\[
+\sum_mg\le b_0M,\qquad
+\sum_m(g+1)\le2b_0M.
+\tag{25}
+\]
+
+Using the elementary bound of at most \(X\) choices for \(p\),
+(24)--(25) show that the total number of candidate ordered pairs
+with \(D(pq,m)\ge B(m)\) is at most
+
+\[
+A_1b_0^3
+\frac{M^6}{\inf_{a_0M\le m\le b_0M}B(m)}.
+\tag{26}
+\]
+
+This counts integer \(q\), so it rigorously bounds the actual prime
+pairs without any assertion about primes in a short selector bin.
+No individual prime-gap bound is used.
+
+Take \(B(m)=(\log m)^3\). For all sufficiently large \(M\),
+\(\log m\ge\frac12\log M\) throughout (20), so (26) is
+
+\[
+O(M^6/\log^3M)
+=o(M^6/\log^2M).
+\tag{27}
+\]
+
+The actual long-base-2 pair supply from Section 4 has
+\(\Omega(M^6/\log^2M)\) mass, and therefore dominates (27).
+A positive mass remains satisfying (6) along unbounded \(X\).
+Its factors tend to infinity, so it gives infinitely many distinct
+actual inputs.
+
+More generally any positive threshold satisfying
+\[
+\frac{\inf_{a_0M\le m\le b_0M}B(m)}{\log^2M}\longrightarrow\infty
+\tag{28}
+\]
+works. Fixed \(B(m)=(\log m)^{2+\epsilon}\), \(\epsilon>0\),
+and fixed powers \(m^\beta\), \(0<\beta<1\), are examples.
+The latter gives the simpler exceptional bound \(O(M^{6-\beta})\).
+
+**Transfer to the actual exponential carrier**
+
+The original integer offset bound is
+\(-3m^2\le\delta_j\le m^2\).
+On actual LongData both projected local orders exceed \(4m^2\).
+Consequently in either hidden field,
+
+\[
+\gamma^{N+\delta_j}=\gamma^{N+\delta_k}
+\quad\Longleftrightarrow\quad
+\delta_j=\delta_k\ \text{as integers}.
+\tag{29}
+\]
+
+Indeed equality makes the local order divide \(\delta_j-\delta_k\),
+whose absolute value is at most \(4m^2\).
+
+Every exact offset fiber has at most two labels by (12).
+Thus in either hidden field the carrier (5) has exactly \(D(N,m)\)
+double roots and \(m-1-2D(N,m)\) simple roots. Its number of
+distinct roots is \(m-1-D(N,m)\).
+
+If a monic \(A\) over \(\mathbb Z/N\mathbb Z\) satisfies (7),
+reduce to either prime field. Its monic leading coefficient stays
+one, so its degree is preserved. Unique factorization in the field
+polynomial ring implies that a square divisor can use only the
+double roots, once each. Hence \(\deg A\le D(N,m)\), proving (8).
+No claim about nonmonic factors over a zero-divisor ring is needed.
+
+For large \(m\), \((m-3)/2>(\log m)^3\). Therefore no monic polynomial
+of the same degree as \(S_{m,s}\) in (10) can have its square divide the
+exact exponential carrier on this actual family.
+
+**What this does and does not obstruct**
+
+A direct additive-character exponent lift of \(\mathbb F_m\) is
+also unavailable on the actual long branch. If a homomorphism from
+the additive group of \(\mathbb F_m\) to the unit group sent \(1\)
+to \(\gamma\), it would satisfy \(\gamma^m=1\), because \(m\cdot1=0\).
+The actual local orders exceed \(4m^2\), so this is impossible.
+The canonical map \(d\mapsto\gamma^{\operatorname{rep}(d)}\)
+does not respect wraparound addition.
+
+This is only a necessary-condition obstruction to that direct
+character-substitution interpretation. The substantive statement
+above is the specific failure of the large polynomial square
+factor after the literal centered carry is restored. The residue
+identity (10) itself is valid and inexpensive.
+
+The result does NOT rule out unrelated low-cost resultant circuits,
+weighted observables, corrected recurrences, moving carriers,
+partial-row norms, or arbitrary implicit acquisition algorithms.
+It is not a lower bound on general semiprime factorization.
+It does not say that candidate one-digit lift tables have no false
+hits elsewhere. Nor does it exclude a scalar equality that happens
+after specialization: the full original scalar norm is saturated
+zero on the balanced range and is trivially a square as a scalar.
+The carrier obstruction concerns an exact polynomial factorization,
+before this saturation loses the root-label information.
+
+Constructing the actual \(m-1\) target nodes or their monic carrier
+already has a near-linear classical cost. The unresolved task is
+acquiring collision-preserving partial products or resultants in
+near-linear total bit time, with recovery and certified divisions.
+The theorem supplies no new bit backend or complete factoring bound.
+
+
+**Source and validation scope.** The published density input is
+[Kurlberg--Pomerance, Section 4, Lemmas 19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+which records the Baker--Harman prime-factor exponent `677/1000` and the
+negligible base-2 exceptions. It was rechecked against the primary PDF.
+The source-exact long-base-2 routing and the previous selector/counting
+chain are preserved by the parent
+[semiprime-norm-cancellation-obstruction-audit.json](semiprime-norm-cancellation-obstruction-audit.json).
+All 452 selected source pins and 85 selected Mathlib pins were freshly
+revalidated before the new registration, with zero mismatches.
+
+The focused checker is
+[scripts/CheckSemiprimeOffsetCarryObstruction.lean](../scripts/CheckSemiprimeOffsetCarryObstruction.lean);
+the new selected-source and validation record is
+[semiprime-offset-carry-obstruction-audit.json](semiprime-offset-carry-obstruction-audit.json).
+Strict native compilation, the target build, ordinary registered root,
+leaf lint and the all-declaration axiom audit passed. The axiom checker
+selects the leaf's constants by module provenance, including generated
+helpers, and permits only `propext`, `Classical.choice` and `Quot.sound`.
+Nested comments and strings are stripped before the source trust scan.
+No manuscript was imported as a new Lean axiom. Exactly one root import,
+one existing semiprime metadata family entry and this dated journal
+insertion were added; removing each insertion restores its fresh byte
+snapshot exactly. Existing source and historical audit bytes are retained.
+
+**What remains.** This rules out the reuse of the large residue square
+factor as an exact squared factor of the original exponential value
+carrier, even with unrestricted relabeling of the paired roots. It does
+not rule out a different norm identity, derivatives or other jet readers,
+corrected quotient recurrences, nested partial-row resultants or a more
+general compressed circuit. In particular the deliberately squared
+Hermite carrier is outside the conclusion. There is still no proved
+whole-family near-linear acquisition algorithm or guaranteed one-sixth
+factorization bit bound. Acquisition, controller and recovery branches,
+prime squares, deterministic bit time and peak working memory remain
+part of the unfinished goal.
+
+### 2026-10-07: Two-digit shifted-norm menus miss every cross; geometric-block compression also fails
+
+This turn is **progress** on the acquisition frontier. It proves an
+arithmetic obstruction to a specific near-linear detector route, including
+menus that use both public residue digits. It also proves an independent
+obstruction to compressing the original carrier into a polylogarithmic
+number of geometric blocks. Neither argument proves a general factoring
+lower bound or completes deterministic \(\widetilde O(N^{1/6})\) bit time
+and peak working memory.
+
+The principal classical conclusion has the following quantifiers. For
+**each fixed accessible catalog family**
+\(\mathcal T_{m,n}\subset[8,L]\), indexed by
+\(n=N\bmod m^2\), with
+\(\sup_n|\mathcal T_{m,n}|\le C m^\eta(\log(2m))^A\) and
+\(\eta<31/1000\), infinitely many actual balanced long-base-2 inputs have
+**every original-target versus shifted-original-target cross difference
+unit in both hidden fields at every catalog shift**. In particular this
+covers all dyadic shifts of size at least eight. Scalar resultant gcds and
+their individual component gcds cannot acquire a factor on that family,
+even if their values are supplied free. Full-input adaptivity within the
+fixed catalog is allowed; unrestricted full-input choices outside its
+accessible union are outside this theorem.
+
+The native source bridge is
+`RiemannGaussian/SemiprimeShiftedNormAcquisitionObstruction.lean`. It proves
+that the scalar is the **exact original resultant**, with no omitted sign
+or leading-coefficient factor, its product of literal cross differences,
+the positive local-period envelope, and global separation. If the scalar
+is nonunit on an actual LongData input, the proof retains an individual
+cross difference with proper gcd even when the aggregate gcd is \(N\).
+The same module proves failure of the naive reduce-then-shift remainder
+update at its first degree overrun under the prefix-unit and
+shifted-carrier-unit hypotheses, and arithmetic-progression uniqueness
+across carries. These are finite kernel-checked statements. The infinite
+prime supply, selector counts, asymptotic acquisition obstruction and
+geometric-block counts below remain **classical proofs**, not new Lean
+axioms or native complexity theorems.
+
+On the cross-unit branch, the corrected update's required inverse is
+constructible in \(\widetilde O(km)\) modular ring operations. Its extra
+shifted geometric-product query remains unpaid: the available independent
+evaluator costs \(\widetilde O(m^{3/2})\) for all dyadic stages when
+\(k\) is polylogarithmic and \(L\asymp m^2\). This is an upper bound for
+that evaluator, not a lower bound for a new coupled recurrence.
+
+The published prime-supply input was rechecked at Section 4, Lemmas 19--20
+of [Kurlberg--Pomerance](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+using Baker--Harman's exponent \(677/1000\). Neither this result nor the
+block obstruction requires the OpenAI quasi-RH or Poisson--Dirichlet law.
+The previously selected 455 repository-source pins, 94 Mathlib pins and
+27 parent artifact pins were freshly rechecked with no mismatch. The
+parent audit's byte content is preserved.
+
+**Complete shifted-norm catalog proof.**
+
+**1. Literal source and catalog contract.**
+
+For an actual semiprime input \(N=pq\), let
+\(m=\operatorname{publicRowModulus}(N)\) be the literal least prime with
+\(N\le m^6\), and let \(L=L(m)\) be the original baby length. We use only
+the native bound \(L\le4m^2\). For the original denominator-one row labels
+\(1\le j<m\), define the literal centered integer offsets
+
+\[
+\delta_j(N)=a_j(N)+m b_j(N)-2a_j(N)j,
+\qquad -3m^2\le\delta_j(N)\le m^2.
+\tag{1}
+\]
+
+For the actual routed projected unit \(\gamma\), write
+
+\[
+x_j=\gamma^{N+\delta_j(N)},\qquad \alpha=\gamma^{m^2},\qquad
+U(T)=\prod_{j=1}^{m-1}(T-x_j).
+\tag{2}
+\]
+
+On actual LongData the local orders of \(\gamma\) exceed \(4m^2\), and
+its global order exceeds \(16m^4\). The actual infinite family used below
+has local orders exactly two distinct large primes \(R_p,R_q\).
+
+Fix, in advance, arbitrary finite accessible shift catalogs
+
+\[
+\mathcal T_{m,n}\subseteq\{8,9,\ldots,L(m)\},\qquad
+n\in(\mathbb Z/m^2\mathbb Z)^\times.
+\tag{3}
+\]
+
+They may depend arbitrarily on both residue digits of \(n\). The catalog
+contract is a bound on the union of all permitted shifts for that
+\((m,n)\), not just on the number of shifts chosen in one execution.
+An algorithm may choose entries, reorder them, or stop adaptively using
+the full input \(N\), provided every selected shift remains in
+\(\mathcal T_{m,N\bmod m^2}\). No effectiveness assumption on these fixed
+catalogs is needed for the obstruction.
+
+Suppose that, for fixed constants \(C,A\) and \(\eta\ge0\),
+
+\[
+|\mathcal T_{m,n}|\le C m^\eta(\log(2m))^A,
+\qquad \eta<3\kappa-2,
+\qquad \kappa=677/1000.
+\tag{4}
+\]
+
+In particular, every polylogarithmic catalog satisfies (4).
+
+**Theorem.** For every fixed family of catalogs satisfying (3)--(4),
+there are infinitely many balanced distinct-prime semiprimes whose
+literal public route returns longBase 2 such that, for every permitted
+shift \(t\), every original pair of labels \(i,j\) satisfies
+
+\[
+\gcd\bigl(N,x_i-\alpha^{-t}x_j\bigr)=1.
+\tag{5}
+\]
+
+Consequently every shifted cross resultant in Section 2 is a unit and
+has scalar-output gcd one. This is an ALL-cross absence statement;
+it does not merely remove selected true row labels.
+
+**2. Exact resultant normalization and additive cancellation.**
+
+Put \(d=m-1\). Because \(U\) is monic, the root-product formula gives
+
+\[
+\begin{aligned}
+\mathcal R_t
+&:=\operatorname{Res}\bigl(U(T),U(\alpha^{-t}T)\bigr)\\
+&=\prod_i U(\alpha^{-t}x_i)
+=\prod_{i,j}(\alpha^{-t}x_i-x_j)\\
+&=(-1)^{d^2}\prod_{i,j}(x_i-\alpha^{-t}x_j).
+\end{aligned}
+\tag{6}
+\]
+
+The last equality swaps the two labels in the entire Cartesian product.
+Thus there is only the displayed sign, with no missing leading-coefficient
+power. The leading coefficient of \(U(\alpha^{-t}T)\) is the unit
+\(\alpha^{-td}\), which is already present in the evaluation formula.
+
+In either hidden field with local order \(R\), a cross collision is
+equivalent to
+
+\[
+R\mid m^2t+\delta_i-\delta_j.
+\tag{7}
+\]
+
+This is the desired additive cancellation of the large \(N\) term.
+By (1), every such collision necessarily obeys
+
+\[
+|m^2t-kR|\le4m^2
+\quad\text{for an integer }k\ge1.
+\tag{8}
+\]
+
+The positivity follows from \(t\ge8\): the residual in (7) is at least
+\(4m^2>0\). The proof below counts the whole envelope (8), and therefore
+does not depend on the row labels or on an assumption about offset
+equidistribution.
+
+There is also no global collision at any shift in (3), on any actual
+LongData input. Indeed the residual satisfies
+
+\[
+0<m^2(t-4)\le m^2t+\delta_i-\delta_j
+\le4m^4+4m^2\le8m^4<16m^4.
+\tag{9}
+\]
+
+It cannot be a multiple of the global order. Since \(N=pq\) is squarefree,
+an individual nonunit cross difference would therefore have proper gcd
+\(p\) or \(q\). A full cross resultant can nevertheless be saturated by
+different hidden hits; (5) avoids all of them, rather than relying on
+absence of global equality alone.
+
+**3. Finite envelope count, with uniform constants.**
+
+Fix \(0<c\le1\), a large scale \(X\), and \(M=X^{1/3}\). Let
+
+\[
+cX\le p,q\le X,\qquad
+a_0M\le m\le b_0M,\qquad a_0=c^{1/3},\quad b_0=4.
+\tag{10}
+\]
+
+Assume that the projected p-field order is a prime \(R_p\) with
+
+\[
+p=1+vR_p,\qquad1\le v\le V,\qquad V\le m.
+\tag{11}
+\]
+
+Here \(V\) is an integer upper bound, uniform over the scale. For
+\(X\ge2/c\), (10)--(11) imply
+
+\[
+\frac{cX}{2v}\le R_p\le\frac Xv.
+\tag{12}
+\]
+
+Fix \(m,t,v\), where \(8\le t\le4m^2\). If (8) holds, the integer \(k\)
+lies in the positive interval
+
+\[
+A:=\frac{v m^2(t-4)}X\le k\le
+B:=\frac{2v m^2(t+4)}{cX}.
+\tag{13}
+\]
+
+Its endpoint ratio is bounded uniformly:
+
+\[
+\frac BA\le\frac6c.
+\tag{14}
+\]
+
+Let \(C_h=1+\log(6/c)\). The elementary integral bound on harmonic sums
+gives
+
+\[
+\sum_{k\in[A,B]\cap\mathbb Z_{>0}}\frac1k\le C_h.
+\tag{15}
+\]
+
+This remains valid when \(A<1\): then \(B<6/c\), so the same bound holds
+by the harmonic sum from one to \(B\). There is no divergent small-k
+tail. Since \(t+4\le3t/2\) and \(m^3\le b_0^3X\), the number of
+admissible integers \(k\) is at most
+
+\[
+B+1\le C_k\frac{vt}{m}+1,
+\qquad C_k=\frac{3b_0^3}{c}.
+\tag{16}
+\]
+
+For a fixed \(k\), condition (8) restricts \(R_p\) to an interval of
+length \(8m^2/k\). The number of integer \(R_p\) in it is at most
+\(8m^2/k+1\). Each \(R_p\) gives one \(p=1+vR_p\) for fixed \(v\).
+Ignoring primality and any duplicate counts is a valid upper bound.
+Therefore (15)--(16) give, for fixed \(m,t,v\), at most
+
+\[
+8C_h m^2+C_k\frac{vt}{m}+1
+\tag{17}
+\]
+
+admissible p-values. Sum over \(1\le v\le V\), using \(t\le4m^2\),
+\(V\le m\), and \(V+1\le2m\). With
+\(C_p=8C_h+4C_k+1\), the result is
+
+\[
+\#\{p:\text{the envelope holds for some }v\le V\}
+\le C_p V m^2.
+\tag{18}
+\]
+
+This bound is uniform in the shift and independent of \(n\).
+
+**4. Two-digit freezing and exact selector summation.**
+
+Let \(m^-\) be the preceding prime and \(g=m-m^-\). A literal-selector
+pair obeys
+
+\[
+(m^-)^6<pq\le m^6.
+\tag{19}
+\]
+
+For fixed \(p\ge cX\), its cofactor strip has length at most
+
+\[
+\Delta\le\frac{6m^5g}{cX}.
+\tag{20}
+\]
+
+Set \(A_0=6b_0^3/c\) and \(A_1=A_0+1\). Dividing (20) by \(m^2\)
+gives \(\Delta/m^2\le A_0g\). Hence a fixed cofactor residue class
+modulo \(m^2\) has at most \(A_1(g+1)\) integer representatives in the
+selector strip. This is an integer count, requiring no prime distribution
+inside a short interval.
+
+Fix now \(m,n\), and one shift \(t\in\mathcal T_{m,n}\). The envelope
+provides at most \(C_pVm^2\) p-values. Every retained large prime \(p\)
+is a unit modulo \(m^2\), and the condition \(pq\equiv n\pmod{m^2}\)
+fixes the unique cofactor class
+
+\[
+q\equiv n p^{-1}\pmod{m^2}.
+\tag{21}
+\]
+
+Combining (18)--(21), the number of candidate ordered pairs for this
+\((m,n,t)\) is at most
+
+\[
+A_1 C_p V m^2(g+1).
+\tag{22}
+\]
+
+Let \(H_X\) bound every catalog size with \(a_0M\le m\le b_0M\).
+There are fewer than \(m^2\) states \(n\), so summing (22) over all
+states and permitted shifts gives at most
+
+\[
+A_1 C_p V H_X m^4(g+1)
+\tag{23}
+\]
+
+p-field bad pairs for a fixed selector. The possible selector primes
+lie in one consecutive prime range. Their gaps telescope, and the
+number of them is at most \(b_0M\), so
+
+\[
+\sum_m(g+1)\le2b_0M.
+\tag{24}
+\]
+
+Thus the total p-field count is at most
+\(2A_1C_p b_0^5 V H_X M^5\). Exchange the ordered factors to bound
+q-field hits by the same quantity. The union bound proves the precise
+finite estimate
+
+\[
+\boxed{\#\text{pairs with ANY selected hidden cross hit}
+\le4 A_1 C_p b_0^5\,V H_X M^5.}
+\tag{25}
+\]
+
+The same fixed catalog is indexed by the symmetric public input
+\(N=pq\), so exchanging factors does not change it. The state factor
+\(m^2\) is exactly compensated by fixing \(q\bmod m^2\); no independent
+uniformity or carry-randomness assertion has been used.
+
+**5. Actual long-base-2 supply and infinite counterfamily.**
+
+The published Baker--Harman large-prime-factor result, in the formulation
+of Kurlberg--Pomerance, Section 4, Lemma 19, supplies along an unbounded
+sequence of \(X\) a positive proportion of primes with
+
+\[
+R_P\mid P-1,\qquad R_P>P^\kappa,\qquad \kappa=677/1000.
+\tag{26}
+\]
+
+Elementary prime counting gives fixed \(c,a>0\) and at least
+\(aX/\log X\) such primes in \([cX,X]\). Split this interval into finitely
+many multiplicative bins of ratio at most \(3/2\), and select a bin
+with a positive fraction of the primes. Ordered pairs from it supply
+\(\Omega(X^2/\log^2X)=\Omega(M^6/\log^2M)\) balanced pairs.
+
+For such a prime, the large factor is unique and has exponent one, as
+\(\kappa>1/2\). Write \(P-1=v_PR_P\), and take
+
+\[
+V=\lceil c^{-\kappa}X^{1-\kappa}\rceil
+=O(M^{3-3\kappa}).
+\tag{27}
+\]
+
+Discard primes for which \(R_P\nmid\operatorname{ord}_P(2)\). Their
+orders are at most \(V\), so every such prime divides
+\(\prod_{r\le V}(2^r-1)\); taking logarithms gives
+\(O(V^2/\log X)=o(X/\log X)\) bad primes. Discard diagonal pairs and
+pairs with \(R_p\mid q-1\) or \(R_q\mid p-1\). Counting their relevant
+integer progressions loses only \(O(X^{2-\kappa}+X)\) pairs.
+Consequently the balanced surviving mass is still
+\(\Omega(M^6/\log^2M)\).
+
+For their literal selectors, (10) holds, \(v_p,v_q<m\), and
+\(R_p,R_q\gg m^2\), because \(3\kappa>2\). The actual factorial
+projection kills each small cofactor part but preserves its large prime
+factor. The cross exclusions ensure that neither \(R_p\) nor \(R_q\)
+divides \(N-1\), so the final actual projected local orders are exactly
+the distinct primes \(R_p,R_q\). The small-factor prefix, square test,
+base-2 selection, short collision batches, and intermediate projection
+gcds therefore follow the already audited literal longBase-2 route.
+No advised base/order, safe-prime infinitude, prime-gap theorem, GRH,
+or Poisson--Dirichlet hypothesis is used. This actual-source transfer
+is the same one pinned in the previous offset-carry proof, Section 4.
+
+Condition (4) implies
+\(H_X=O(M^\eta(\log M)^A)\). The ratio of (25) to the actual surviving
+mass is at most a constant times
+
+\[
+H_X M^{2-3\kappa}(\log M)^2,
+\tag{28}
+\]
+
+which tends to zero whenever \(\eta<3\kappa-2=31/1000\). Remove these
+cross-hit pairs. A positive actual balanced long-base-2 mass remains
+at unbounded scales, proving the theorem.
+
+More generally the exact sufficient catalog condition is that the
+quantity in (28) tends to zero; the power bound (4) is convenient rather
+than necessary. The finite bound also works with a nonuniform total
+catalog budget \(\sum_n|\mathcal T_{m,n}|\), replacing
+\(m^2H_X\) at (23).
+
+**6. All dyadic stages and the inherited first-overrun gates.**
+
+For every \(m\), the fixed menu
+
+\[
+\{2^a:8\le2^a\le L(m)\}
+\tag{29}
+\]
+
+has \(O(\log m)\) entries and does not depend on \(n\). The theorem
+therefore produces actual inputs on which every cross norm at every
+dyadic shift of size at least eight is a unit. The same holds for any
+polylogarithmic enlargement or full-N adaptive choice inside a fixed
+catalog obeying (4).
+
+One may simultaneously remove the pairs that have an original row-to-baby
+hit in the fixed prefix \([0,4m)\). The previously audited shared-menu
+obstruction bounds that loss by
+
+\[
+\widetilde O(M^{11/2}+VM^5+V^2M^4),
+\tag{30}
+\]
+
+which is also \(o(M^6/\log^2M)\) at \(\kappa=677/1000\). This is an
+inherited arithmetic result, not a new claim proved by (8).
+The intersection is still a positive actual infinite family. On it all
+original crosses \(x_j-\alpha^r\), \(0\le r<4m\), are units, and all
+selected shifted-target crosses are units.
+
+For the unpowered original carrier of degree \(d=m-1\), the first
+power-of-two prefix length \(D\) with \(D\ge d\) obeys
+\(d\le D<2d\). For large \(m\), \(8\le D\le L\) and the executed
+doubling prefix lies within \([0,2D)\subset[0,4m)\). Thus both source
+unit gates needed for the audited first reduce-then-shift overrun
+obstruction can be supplied on actual inputs, at the first overrun of the proposed standard dyadic
+recurrence. No theorem about an existing executable caller is asserted. For a deliberately squared carrier, the corresponding first
+overrun uses a larger prefix; (30) extends to any fixed constant multiple
+of \(m\), but the interval and stage must be restated accordingly.
+
+**7. Exact scope.**
+
+On the counterfamily, the following outputs all have gcd one with \(N\):
+each selected shifted cross norm, each individual selected cross
+difference, and any products of those units. Extracting the scalar norm
+or locating its individual cross factors therefore cannot provide a
+proper factor at these selected shifts.
+
+This does not rule out factoring through an internal Euclidean pivot,
+a nonunit subresultant coefficient, an auxiliary polynomial coefficient,
+an additive combination of units, or another observable encountered by
+an algorithm computing the norm. It does not lower-bound arithmetic
+circuit size. It does not exclude arbitrary full-N shift catalogs with
+unbounded accessible unions, a single joint construction handling a much
+larger shift family, or shifts outside the range (3). The actual original
+forced row-to-baby hits still exist elsewhere in their original interval.
+
+Each standard fast-polynomial scalar cross resultant has near-linear
+cost in the number of target nodes, up to modular bit factors. The theorem
+shows that polylogarithmically many such output detectors, even selected
+using both public residue digits, cannot guarantee coverage. It does not
+deduce a cost lower bound for every possible structured reuse among more
+shifts.
+
+
+**Why the first dyadic remainder overrun fails.**
+
+Let \(V=U^k\) have degree \(D=k(m-1)\), let
+\(P_t(T)=\prod_{r<t}(T-\alpha^r)\), and write its monic division as
+\(P_t=A_t+VQ_t\). At the first dyadic prefix crossing the carrier degree,
+\(D\le t<2D\). Thus \(Q_t\) is monic, nonzero and has degree
+\(t-D<D\). Set \(c=\alpha^{-t}\) and \(v=\alpha^{t^2}\), both units.
+The genuine geometric product recurrence is
+
+\[
+P_{2t}(T)=vP_t(T)P_t(cT).
+\]
+
+Modulo \(V\), its discrepancy from the naive update
+\(vA_t(T)A_t(cT)\) is
+
+\[
+vP_t(T)V(cT)Q_t(cT)\pmod V.
+\]
+
+If the prefix crosses \(x_j-\alpha^r\), \(r<t\), are units, then
+\(P_t\) is invertible modulo \(V\). If all shifted-target crosses are
+units, \(V(cT)\) is also invertible modulo \(V\), including repeated
+source labels and their powers. Equality of the two remainders would
+therefore force \(V\mid Q_t(cT)\), contradicting its nonzero leading
+coefficient and degree below \(D\).
+
+The theorems `first_overrun_reduce_then_shift_fails`,
+`actual_geometric_unit_cross_first_overrun_fails` and
+`original_no_envelope_first_overrun_fails` prove these conclusions, the last
+for the literal modulus-\(pq\) source with both local envelope exclusions.
+For \(k=1\), the classical simultaneous removal in (30) supplies the
+prefix gate, and the new dyadic crossnorm theorem supplies the shifted
+carrier gate, on an actual infinite family. Fixed constant \(k\) uses a
+fixed larger linear prefix; a polylogarithmic \(k\) uses the inherited
+fixed near-linear prefix envelope with its parameters restated. This is a
+failure of the proposed naive dyadic recurrence. No existing executable
+caller's control flow is proved here. A corrected recurrence acquiring
+\(Q_t(cT)\) remains possible; indeed at this first stage the quotient is
+still short. Remainder inequality does not imply a scalar-gcd inequality
+or first-Hermite-jet inequality.
+
+**Independent geometric-block compression obstruction.**
+
+**Exact source and finite carry bound.**
+
+Let m be an odd prime, N coprime to m, and let delta_j(N) be the ORIGINAL
+denominator-one seedOffset, 1 <= j < m. Write s=N mod m and n=s+mu,
+0 <= u < m. The exact centered offsets depend on n as integers. With
+t_j=j^(-1) in F_m their lower residues are
+
+    d_j = s(t_j^2 - 2t_j).
+
+For fixed s, the representative a_j is fixed across the carries, and
+
+    delta_j(s+mu)-delta_j(s) = -m*u*j^(-1) (mod m^2).
+
+Define Q(n,m) to count triples (j,k,l) with 1 <= j < k < m,
+1 <= l < m, and
+
+    delta_j(n) + delta_k(n) = 2 delta_l(n)
+
+AS INTEGERS. We permit l=j or l=k and equal endpoint offsets, making Q
+an upper count for proper three-term progressions of distinct target nodes.
+
+For a fixed triple of tags j<k,l, the carry slope of its left-minus-right
+difference, after division by m, is
+
+    -(t_j+t_k-2t_l) (mod m).
+
+Only triples satisfying d_j+d_k=2d_l can ever contribute. For such a
+triple the slope is nonzero: if t_j+t_k=2t_l, then the lower-residue equation
+also gives t_j^2+t_k^2=2t_l^2, hence (t_j-t_k)^2=0. Since m is odd and a
+field, t_j=t_k and thus j=k, a contradiction.
+
+Consequently every candidate triple contributes at AT MOST ONE carry u.
+For fixed j,l, the residue equation is a degree-two equation in t_k with
+nonzero leading coefficient s, so it has at most two solutions. Bounding
+the j<k restriction by all j,k gives at most 2(m-1)^2 candidates. Therefore
+
+    sum_{u=0}^{m-1} Q(s+mu,m) <= 2(m-1)^2.                 (AP1)
+
+No claim is made that every unique congruence-zero carry gives integer
+equality. This difference is why the argument is an upper bound.
+
+**Actual-prime selector count.**
+
+Use the previously established published Baker--Harman / base-2 family:
+along unbounded X, retained balanced distinct prime pairs p,q in [cX,X]
+have mass Omega(X^2/log^2 X), actual selector m comparable to M=X^(1/3),
+actual public route longBase 2, and projected local prime orders R_p,R_q
+greater than p^kappa,q^kappa, kappa=677/1000>2/3.
+
+For the EXACT least-prime selector bin, with predecessor m^- and gap
+g=m-m^-,
+
+    (m^-)^6 < pq <= m^6.
+
+For fixed p>=cX, each q residue class modulo m^2 has O(g+1) integer
+members in this bin. This follows from its width O(m^5g/X)=O(m^2g).
+Also sum_m(g+1)=O(M); no individual prime-gap bound is used.
+
+By AP1 and Markov, for fixed lower state s, at most 2m^2/B(m) carries
+have Q>=B(m). Multiplication by the prime p permutes states modulo m^2.
+Summing over the at most m lower states, the number of bad integer q per
+(p,m) is at most
+
+    O(m^3(g+1)/B(m)).
+
+Summing over at most X=M^3 choices of p and all selector primes gives
+
+    O(M^7 / inf_{m~M} B(m)).                            (AP2)
+
+Set B(m)=m(log m)^3. The loss is O(M^6/log^3 M), negligible compared
+with the actual prime-pair supply Omega(M^6/log^2 M). Hence infinitely
+many actual balanced long-base-2 inputs satisfy
+
+    Q(N,m) < m(log m)^3.                               (AP3)
+
+Both local orders also exceed 8m^2 uniformly for all sufficiently large
+retained pairs, because R_p,R_q >> m^(3kappa), 3kappa>2. If desired, remove
+the duplicate-pair exceptional set from the previous carry argument as
+well; its loss has the same smaller order. Then D(N,m)<(log m)^3 and the
+carrier has m-1-D distinct roots in either field. This simultaneous
+removal is optional for the exact-product conclusion below.
+
+**Geometric progressions lift to integer arithmetic progressions.**
+
+In either hidden field write gamma for the actual projected element and
+R for its prime order, R>8m^2. Every original target is
+
+    x_j = gamma^(N+delta_j),    -3m^2 <= delta_j <= m^2.
+
+Suppose a geometric block z*b^r, 0<=r<ell, consists of original targets,
+and ell>=2. Since its first two nodes lie in the subgroup generated by
+gamma, so do z and b. Thus b=gamma^a for some exponent a modulo R.
+
+For every adjacent pair the corresponding offset difference is in
+[-4m^2,4m^2] and congruent to a modulo R. Since R>8m^2, at most one
+integer in this interval represents a. Therefore all these differences
+are the SAME integer d, and the entire geometric block lifts, in its
+given order, to an exact integer offset arithmetic progression.
+
+If b!=1 then d!=0 and all nodes in a block of length ell<=m-1<R are
+distinct. If b=1 then the block is constant; original exact root fibers
+have size at most two, so such a block has length at most two in any
+exact product factorization.
+
+**Exact product decomposition lower bound.**
+
+Let U be the UNPOWERED original target polynomial in either hidden field,
+of degree m-1. Consider ANY exact decomposition
+
+    U(T) = product_{i=1}^H product_{r=0}^{ell_i-1}(T-z_i*b_i^r),
+
+with ell_i>=1 and z_i,b_i nonzero. The same statement holds with nonzero
+scalar factors whose product is one. It permits independently chosen
+ratios and starting nodes in different blocks; they need not be public
+or efficiently found.
+
+Root-multiset equality assigns disjoint original row tags to the factor
+occurrences. Every nonconstant block of length ell contributes
+
+    P(ell) = floor((ell-1)^2/4)
+
+distinct unordered-endpoint/middle AP triples: choose symmetric positions
+around a center. Different blocks cannot use the same triple of tags.
+Thus sum_i P(ell_i)<=Q. Constant blocks have ell_i<=2 and contribute zero.
+For every nonconstant block, and also for constant blocks of length <=2,
+
+    ell_i^2 <= 8 P(ell_i) + 4.
+
+It follows, since sum ell_i=m-1, that
+
+    (m-1)^2 <= H sum_i ell_i^2 <= 8H Q + 4H^2.           (AP4)
+
+There are no empty factors, so H<=m-1. Combining AP3 with AP4 gives
+
+    H >= (m-1)^2 / (8m(log m)^3 + 4m)
+      = Omega(m/(log m)^3).                            (AP5)
+
+An exact composite-ring factorization into geometric root blocks would
+reduce to such a factorization in either prime field. Nonzero unit
+starts and ratios stay nonzero. Hence AP5 also obstructs an exact
+source-preserving geometric-block decomposition over Z/NZ.
+
+**Arbitrary overlapping covers: weaker but still nonconstant bound.**
+
+Here every progression in the cover must itself be contained entirely in
+the original distinct target set: extraneous nodes are not allowed. With
+that source constraint, an arbitrary cover has no root-multiplicity budget
+and AP triples may be reused. AP4 must NOT be applied to it. However every individual nonconstant
+progression has length at most 2+2 sqrt(Q). Constant progressions cover
+one distinct node. When D<(log m)^3, a cover of all m-1-D distinct nodes
+therefore requires at least
+
+    (m-1-D)/(2+2 sqrt(Q))
+      = Omega(sqrt(m)/(log m)^(3/2))
+
+progressions on the simultaneous actual family. This separately excludes
+a polylogarithmic overlapping cover.
+
+**Scope and acquisition contract.**
+
+The result excludes acquiring the exact ORIGINAL unpowered carrier by
+first representing its entire source as only polylogarithmically many
+geometric root blocks, then using separate q-shift-factorial formulas.
+It is not a lower bound on arbitrary circuit representations, resultants,
+moment identities, generic factoring, or algorithms sharing state among
+many blocks. It does not apply to the artificially squared Hermite
+carrier without changing its source multiplicity analysis. It does not
+prove that field-operation upper bounds are algorithmic lower bounds.
+The D11 actual-prime centered covariance question remains open.
+
+
+**Constructive corrected-acquisition contract.**
+
+Let J=m-1, U the literal original target polynomial, V=U^k, D=kJ,
+P_t(T)=prod_(r<t)(T-alpha^r), c=alpha^(-t), v=alpha^(t^2). Set
+
+    A_t=P_t mod V,   Q_t=P_t div V,
+    B_t=P_t(cT) mod V,
+    A_c=A_t(cT) mod V,   V_c=V(cT) mod V,
+    Q_c=Q_t(cT) mod V.
+
+The exact corrected recurrence is
+
+    A_(2t)=v*A_t*B_t mod V,
+    B_t=A_c+V_c*Q_c mod V.                         (C1)
+
+The shifted-target scalar is
+
+    Z_t=prod_i U(c*x_i).
+
+It is exactly the product of all ordered original cross differences
+c*x_i-x_j. If Z_t is a unit, every cross difference is a unit. Hence V_c
+is invertible modulo V, including original repeated target labels:
+
+    Q_c=V_c^(-1)*(B_t-A_c) mod V.                  (C2)
+
+Thus, given A_t, acquiring the missing quotient correction Q_c and acquiring
+the missing original shifted geometric remainder B_t are algebraically
+equivalent through computable unit multiplications. C2 is not a complexity
+lower bound: the actual geometric family may have an undiscovered cheap
+coupled acquisition identity.
+
+**The inverse is constructible in near-linear work.**
+
+Distinct original integer offsets have unit target differences on LongData.
+An original exact offset occurs at most twice. Deduplicate public offsets;
+use Hermite multiplicity k times the original occurrence count, at most 2k.
+Form V(cT), evaluate its truncated Taylor expansions at all distinct original
+targets, and invert each series using its certified unit constant term.
+Fast Hermite CRT reconstructs V_c^(-1) mod V. All interpolation gaps are
+known units. Monic polynomial division uses no unknown coefficient inverse.
+
+For k=polylog(m), this uses Otilde(km) ring operations, Otilde(km*log N) bit
+work and peak storage, with modular coefficients kept reduced. This is a
+classical constructive upper bound; a physical Lean backend is not added.
+The result does not imply arbitrary Euclidean pivots or subresultant
+coefficients are units. An implementation using those pivots could have
+additional factor signals outside the scalar/component-gcd contract.
+
+**CRT supplies a second component contract, not its value.**
+
+The monic carrier for the required shifted query is
+
+    W_t(T)=c^D*V(c^(-1)T),
+
+whose roots are c*x_i with the original multiplicities. Since
+W_t(cT)=c^D V(T), knowing P_t mod W_t supplies B_t after scaling. On the
+cross-unit branch V and W_t are coprime. Their CRT isomorphism separates the
+known P_t mod V and the still-needed P_t mod W_t. It does not compute the
+second component from the first. This distinction alone is not an
+actual-family runtime obstruction.
+
+**Paid existing acquisition route.**
+
+A standard exact geometric product evaluator obtains P_t at J targets with
+k Hermite channels using a baby polynomial of width
+
+    w approximately sqrt(D*t)
+
+and at most D*t/w scalar channel queries. Its polynomial/multipoint work is
+
+    Otilde(w + D*t/w + D)=Otilde(sqrt(D*t)),         (C3)
+
+when t>=D; shorter prefixes are obtained explicitly in Otilde(D) work.
+The original long local orders exceed the entire baby interval, so short
+base-power differences needed by geometric coefficients are certified
+units. Multipoint division remains monic. This applies to shifted targets
+as well as original targets. Duplicate source labels are retained by their
+Hermite multiplicities. Bit work and peak storage are the corresponding
+Otilde(sqrt(D*t)*log N) classical bounds.
+
+Over dyadic t<=L, sum sqrt(t)=O(sqrt(L)). Cross-norm tests and local inverse
+construction cost only Otilde(D) per stage, but independent acquisition of
+B_t in C1 costs a total
+
+    Otilde(sqrt(D*L)*log N)
+      =Otilde(m^(3/2)*log N)                       (C4)
+
+for L=Theta(m^2), k=polylog(m). C4 is an upper bound for this implementation,
+not a lower bound for all corrections. Whole-family Otilde(m) acquisition
+remains open.
+
+**What the new arithmetic counterfamily excludes.**
+
+The parent full-residue counting argument considers a fixed public menu
+T_(m,n), n=N mod m^2, with polylogarithmically many shifts 8<=t<=L. Its
+actual balanced long-base-2 counterfamily has every ordered cross
+difference a unit for every menu shift. Therefore Z_t and every component
+U(c*x_i) have gcd one for all those shifts. Adaptive choices within that
+fixed envelope still encounter only units. Standalone norm/component gcds,
+their products and certified unit divisions supply no proper factor there.
+Unrestricted full-N menus, differences of unit outputs, additional
+observables and internal coefficient/pivot gcds are outside this claim.
+
+For arbitrary actual LongData inputs and 8<=t<=L, all global cross
+differences are nonzero: the signed h-exponent gap has magnitude between
+4m^2 and 4m^4+4m^2, below global order >16m^4. If Z_t is nonunit, its own gcd
+may be N. Monic multipoint evaluation already yields all J component values;
+scan them for a nonunit component, then scan that one row's J pair
+differences if necessary. A nonunit pair difference has a proper gcd
+because it is globally nonzero. This adds at most 2J scalar gcd checks and
+Otilde(J*log N) bit work, including saturated aggregate recovery.
+
+The native period bridge is necessary, not sufficient: any local pair hit
+forces a POSITIVE natural k with |m^2*t-k*R|<=4m^2 for that local order R.
+Excluding this envelope in both fields proves the unit branch. It does not
+assert that every envelope multiple realizes an original row collision.
+
+
+**Source registration, validation and remaining frontier.**
+
+The new leaf imports the previous offset-carry obstruction and retains the
+literal original row labels. It has 666 lines, 27 source theorems, three
+noncomputable scalar definitions and one proposition-valued definition.
+The focused checker selects declarations by module provenance: all 83
+leaf declarations, including 79 theorems and all generated helpers, use
+only `propext`, `Classical.choice` and `Quot.sound`; it has zero
+checker-local helpers. Fifteen linters report zero errors in 31 direct
+and 52 generated declarations. Strict Lean compilation with warnings as
+errors, target build, focused checker and the ordinary registered root
+check all pass. Its generated C exports initialization only; no native
+factorization algorithm or finite factorization example was added.
+
+Registration adds exactly one root import, one module entry in the
+existing `semiprime` metadata family and this one dated journal insertion.
+Fresh snapshots and byte removal checks preserve all preexisting content.
+The source pins, proof artifacts, timings, complete declaration axiom
+audit and exact registration checks are recorded in
+`docs/semiprime-shifted-norm-acquisition-obstruction-audit.json`.
+
+The native arithmetic-progression theorem `actual_ap_unique_carry` is the
+finite uniqueness step of AP1. The quadratic root count, sum over carries,
+actual-prime selector loss, block decomposition and all infinite-family
+conclusions remain classical. The individual loss bounds can be added:
+the crossnorm-bad mass, AP-bad mass, prior duplicate-bad mass and inherited
+linear-prefix bad mass are each little-o of the actual retained mass.
+Their simultaneous complement is still an actual infinite family. No
+independence assumption is made.
+
+Internal Euclidean pivots, subresultant coefficients, additive
+combinations of unit outputs, unrestricted full-input shift selection and
+shared computations over many shifts or blocks remain possible sources
+of progress. A unit norm does not make its internal polynomial
+coefficients units. Original forced row-to-baby collisions still exist
+elsewhere in their original interval. The actual-prime distinct-prime
+centered covariance estimate D11 remains unproved and unrefuted; no energy
+bound on a containing integer population is transferred to its prime
+subset.
+
+The next acquisition obligation is a proved near-linear coupled method
+for the shifted geometric query/correction, or another original-collision
+observable outside these failed scalar and geometric-block routes. The
+controller, partial-norm recovery, prime-square cases and full bit-time
+and peak-working-memory proofs remain necessary for the guaranteed
+one-sixth goal. The goal stays active.
+
+### 2026-10-07: Four-tag carry energy gives an all-width obstruction to dense moment acquisition
+
+This turn is **progress** on the requested acquisition frontier. It
+proves an arithmetic obstruction to a specified whole-family acquisition
+route, across **every public or advised block width** on the same actual
+infinite family. The obstruction concerns a dense baby polynomial plus
+an exact positive-moment denominator, and also excludes near-linear-degree
+validated rational candidates at the original linear width. It does not
+complete the guaranteed one-sixth factorization goal.
+
+The new conclusion is that infinitely many actual balanced inputs on the
+literal public long-base-2 route have, simultaneously for all
+\(1\le w\le L=\operatorname{seedLength}(m)\),
+
+\[
+wD_w^2>\frac{m^4}{24(\log m)^3},\qquad
+w+D_w=\Omega\!\left(\frac{m^{4/3}}{\log m}\right),
+\]
+
+where \(D_w\) is the degree of any exact normalized denominator for the
+entire original positive grid-moment series at width \(w\). A route
+materializing both the degree-\(w\) baby polynomial and that denominator
+as dense coefficient lists therefore cannot achieve
+\(\widetilde O(m)\) work or peak coefficient storage by changing width.
+The lower bound is for that representation contract; degree alone is not
+an arbitrary sparse-representation or circuit-size lower bound.
+
+At \(w=4m\), the original grid has
+\(\Omega(m^{3/2}/(\log m)^{3/2})\) distinct points in **both** hidden
+fields on the same family. The frozen finite-prefix rigidity theorem
+then excludes every degree-\(\widetilde O(m)\) rational candidate matching
+its genuine validation prefix. This strengthens the previously recorded
+actual-family degree floor and proves failure of the small-candidate
+existence premise. It does not merely validate additional examples.
+
+The arithmetic mechanism is a four-tag carry uniqueness theorem. Equal
+lower-residue quadratic pair values and zero carry slope would force the
+unordered inverse-tag pairs to coincide. Every **nontrivial** original
+pair-sum equality therefore occurs at at most one second carry. The
+whole carry mass and its Markov threshold bound are now kernel checked:
+
+\[
+\sum_{u<m} E_{\mathrm{nontrivial}}(s+mu,m)\le2(m-1)^3.
+\]
+
+The count explicitly excludes the trivial ordered-pair matches, which
+occur at every carry; those contribute \(2(m-1)^2-(m-1)\) per input.
+They are restored before transferring full energy to the original
+multiplicative seed family. Duplicate original row values remain weighted.
+
+There is also a positive acquisition result: a genuine
+\(\widetilde O(m)\)-length whole-family **moment prefix** can be computed
+in near-linear classical modular work and storage, without constructing
+the grid. The denominator obstruction shows why a short acquired prefix
+cannot be silently replaced by a correct small rational description of
+all future moments. Proper-factor coverage through moment or polynomial
+coefficient gcds remains open.
+
+The new leaf is
+`RiemannGaussian/SemiprimeSeedEnergyAcquisitionObstruction.lean`. It
+proves the exact finite carry mass/threshold, full tagged source-energy
+bridge, group support-energy inequalities, per-row positive-pole
+retention and literal original-source width/degree tradeoff. The actual
+infinite-family selector count, published prime density, asymptotic
+constants and algorithmic cost statements below remain **classical**.
+They are not analytic Lean axioms or an implemented factoring clock.
+
+**Complete arithmetic energy and all-width proof.**
+
+**1. Exact source energy.**
+
+Let m be an odd prime, let N be coprime to m, and put d=m-1. For the
+literal original denominator-one offsets, write
+
+    delta_j(N)=a_j(N)+m b_j(N)-2 a_j(N)j,  1<=j<m.
+
+They satisfy -3m²<=delta_j<=m² and depend on N modm² as exact integers.
+Write n=s+mu with 1<=s<m and 0<=u<m, and put t_j=j^(-1) in F_m. The
+source identities are
+
+    delta_j(n) modm = s(t_j²-2t_j),
+    delta_j(s+mu)-delta_j(s) = -m u t_j (modm²).
+
+For each n define E_not(n,m) to count ordered quadruples (i,j,k,l) of
+original tags such that
+
+    delta_i(n)+delta_j(n)=delta_k(n)+delta_l(n)
+
+as integers, and the unordered tag multisets {i,j} and {k,l} differ.
+Repeated tags are permitted; the condition is multiset equality, not
+ordinary set equality.
+
+For a fixed quadruple, a necessary lower-residue equation is
+
+    t_i²+t_j²-2(t_i+t_j)=t_k²+t_l²-2(t_k+t_l).           (E1)
+
+The coefficient of u in the residual divided by m, modulo m, is
+
+    -(t_i+t_j-t_k-t_l).                                (E2)
+
+If this coefficient were zero, (E1) would also give equality of the
+squared sums. Since the sums are equal and 2 is invertible, the products
+t_i t_j and t_k t_l would be equal. The monic quadratics having these
+pairs as roots would coincide. Therefore their unordered root multisets
+would coincide, and injectivity of inversion gives {i,j}={k,l} as tag
+multisets. This contradicts the nontrivial condition. Hence (E2) is a
+unit for every quadruple counted by E_not.
+
+Consequently a candidate nontrivial quadruple can contribute at at most
+one carry u. Fixing (i,j,k), equation (E1) is a degree-two equation in
+t_l with nonzero leading coefficient, so there are at most two l. Thus
+
+    sum_(u=0)^(m-1) E_not(s+mu,m) <= 2d³.               (E3)
+
+This bounds integer equalities by congruence equalities. It does not
+assert that the unique congruence-zero carry gives integer equality.
+
+The trivial ordered quadruples have cardinal exactly
+
+    E_triv=2d(d-1)+d=2d²-d.                            (E4)
+
+Indeed an ordered pair with two different tags allows two orders on
+the right; a repeated-tag pair allows one. Define total integer tagged
+additive energy E_delta=E_not+E_triv. Formula (E4) remains valid even if
+two different original tags happen to have equal integer offsets:
+those additional quadruples are included in E_not.
+
+**2. Actual-prime selector loss.**
+
+Use the previously audited published Baker--Harman/base-2 supply at
+kappa=677/1000. Along unbounded X it gives balanced actual distinct-prime
+pairs p,q in [cX,X] of mass Omega(X²/log²X), with literal public selector
+m comparable to M=X^(1/3), literal route longBase 2, and actual projected
+local prime orders R_p>p^kappa and R_q>q^kappa. Here c>0 is fixed.
+The construction removes base-2 small-order exceptions, cross-order
+divisibilities and the diagonal before this energy argument.
+
+For each selector prime, let m^- be its predecessor and g=m-m^-.
+The exact selector bin is
+
+    (m^-)^6 < pq <= m^6.
+
+For fixed p>=cX, the cofactor strip has width <=6m^5g/(cX). Fixed q
+classes modulo m² therefore have at most A_1(g+1) representatives,
+where A_1 is a fixed selector constant. Multiplication by the retained
+prime p is a bijection on unit classes modulo m². Also m lies in
+[a_0M,b_0M] for fixed positive a_0,b_0, and sum_m(g+1)<=2b_0M.
+
+Let B(m)>0. By (E3), for fixed s at most 2d³/B(m) carries have
+E_not>=B(m). Summing over d lower states and using the q-class bound,
+the bad integer q count per(p,m) is at most
+
+    2 A_1 d^4(g+1)/B(m) <= 2 A_1 m^4(g+1)/B(m).        (E5)
+
+No short-interval prime-density assertion is used. Sum over at most
+X=M³ choices of p and telescope the selector gaps. The total bad
+ordered-pair count is at most
+
+    4 A_1 b_0^5 M^8 / inf_(m~M) B(m).                  (E6)
+
+Take B(m)=m²(logm)^3. Then (E6) is O(M^6/log³M), which is little-o of
+the retained actual prime-pair mass Omega(M^6/log²M). A positive actual
+balanced long-base-2 family remains at arbitrarily large scales, with
+
+    E_not(N,m)<m²(logm)^3,
+    E_delta(N,m)<3m²(logm)^3                          (E7)
+
+for all sufficiently large m. The second inequality follows from (E4)
+and logm>=1. This family can be intersected with any previously audited
+little-o exceptional complements by adding their losses. Independence
+is not needed.
+
+The bounds R_p,R_q >> m^(3kappa), with 3kappa>2, imply that both orders
+exceed 8m² uniformly on this actual family for all sufficiently large
+scales. No Poisson--Dirichlet hypothesis or prime-gap input is needed.
+
+**3. From exact offset energy to multiplicative source energy.**
+
+Work in either hidden field and write R for the actual projected order,
+gamma for its actual projected element. The original target multiset is
+
+    A=(x_j)_(1<=j<m),  x_j=gamma^(N+delta_j).
+
+Its tagged multiplicative energy is
+
+    E_A=#{(i,j,k,l): x_i x_j=x_k x_l}.
+
+The common 2N phase cancels. The integer residual
+delta_i+delta_j-delta_k-delta_l has absolute value at most 8m². Since
+R>8m², equality in this field is equivalent to integer equality. Thus
+
+    E_A=E_delta(N,m)<3m²(logm)^3.                       (E8)
+
+This identity counts labels and duplicates exactly. No deduplication
+of the source multiset is performed.
+
+**4. Mixed energy of the original grid.**
+
+Take the literal linear width w=4m and original padded block count
+
+    J=floor(seedLength(m)/(4m))+1.
+
+The native baby-length bounds give J comparable to m, and the existing
+linear_moment_grid_count theorem gives 0<dJ<m². In particular, J>=m/2
+and J<=m+1 for large m. Put
+
+    alpha=gamma^(m²), beta=alpha^(-4m),
+    B=(beta^h)_(0<=h<J), y_(j,h)=x_j beta^h.
+
+Since R is prime and R>8m²>m, the factor 4m³ is coprime to R. Hence
+beta has order R. With 2(J-1)<R, its tagged multiplicative energy is
+the ordinary interval additive energy:
+
+    E_B=#{(h_1,h_2,h_3,h_4): h_1+h_2=h_3+h_4}
+       =(2J³+J)/3 <= J³.                              (E9)
+
+Let G be the number of ordered collisions between all original grid
+labels (j,h). For each multiplicative ratio z define
+
+    r_A(z)=#{(i,j): x_i/x_j=z},
+    r_B(z)=#{(h,k): beta^h/beta^k=z}.
+
+Swapping the B labels if necessary gives
+
+    G=sum_z r_A(z)r_B(z)
+     <=sqrt(sum_z r_A(z)² * sum_z r_B(z)²)
+     =sqrt(E_A E_B).                                  (E10)
+
+If S is the number of distinct hidden-field grid points, their positive
+label multiplicities have total dJ, so Cauchy--Schwarz gives
+
+    S >= (dJ)²/G >= d² J^(1/2)/sqrt(E_A).              (E11)
+
+Using d>=m/2, J>=m/2 and (E8), one explicit large-m bound is
+
+    S > m^(3/2)/(4 sqrt(6) (logm)^(3/2)).              (E12)
+
+The same argument holds in each hidden field simultaneously, with the
+same public integer energy and the same J. It does not assert absence
+of original grid collisions; it bounds their aggregate multiplicity.
+
+**5. Whole positive-moment denominator floor.**
+
+Consider the ENTIRE original centered positive moment series
+
+    C(z)=sum_(j,h) y_(j,h) z/(1-y_(j,h)z),
+
+as a formal power series over Z/NZ, retaining every original label.
+For any polynomials H,K over Z/NZ with H(0)=1 and H C=K, reduce to
+either hidden prime field. Every y is nonzero. Every grouped point
+weight is an integer in [1,dJ], and dJ<m²<p,q on the actual family;
+therefore none of those weights vanishes in either field.
+
+The existing labelled-prime pole-retention theorem then forces H to
+vanish at the inverse of every distinct local grid point. Reduction
+cannot increase degree and the constant coefficient remains one. Hence
+
+    degree(H) >= S
+              =Omega(m^(3/2)/(logm)^(3/2)).            (E13)
+
+This is a rigorous unconditional strengthening of the prior recorded
+classical Omega(m^1.01) actual-family degree floor. In particular an exact rational
+carrier with a denominator of degree O(m log^A m), for any fixed A,
+does not exist on this actual family. A route storing that denominator
+densely requires this many coefficient slots; no arbitrary circuit or
+sparse-encoding lower bound follows from degree alone.
+
+For THIS width w=4m, the inherited native finite-prefix theorem supplies
+a further candidate-existence obstruction. Let h<=m², and let H,K be
+polynomials over Z/NZ with H(0)=1 and degrees at most h. If their literal
+prefix certificate matches the genuine original series through the
+inclusive coefficient index 2(h+m-1), namely
+
+    coeff_r(H C)=coeff_r(K) for every 0<=r<=2(h+m-1),
+
+then original_prefix_requires_local_collisions forces the entire local
+grid support in each hidden field to have cardinal at most h. Therefore
+the energy-small actual family forces h>=S and the lower bound (E13)
+also applies to every such validated finite-prefix rational candidate.
+No near-linear-degree matching candidate exists there. This does NOT
+exclude acquiring the short prefix itself by another method or extracting
+a nonunit pivot during a failed candidate construction. This prefix
+consequence is inherited only for w=4m; no all-width finite-prefix
+certificate theorem is asserted in Section6.
+
+The argument concerns the whole original positive-multiplicity grid
+series. It does not exclude differently signed row weights, isolated
+coefficients or acquisition of short prefixes, subresultant coefficient gcds, internal
+Euclidean pivots, unrelated moment families, shared circuit encodings,
+or all near-linear factorization methods. It proves an arithmetic
+existence-premise obstruction, not a full factoring complexity theorem.
+
+**6. Simultaneous all-width carrier tradeoff.**
+
+The same actual family admits a stronger statement for EVERY width,
+without a catalog restriction or a union bound over widths. Increase
+the scale so that both actual prime local orders exceed 16m². For an
+arbitrary integer 1<=w<=L=seedLength(m), put
+
+    J_w=floor(L/w)+1, beta_w=gamma^(-m²w).
+
+Since R is prime, R>16m², and w<=L<=4m²<R, the integer m²w is coprime
+to R. Thus beta_w has order R. Also J_w<=L+1<R/2 for large m, so the
+orbit is injective and its sum-energy has no modular wraparound:
+
+    E_(B_w)=(2J_w³+J_w)/3 <= J_w³.
+
+The source energy E_A from (E8) does not depend on w. The mixed-energy
+argument (E10)--(E11) therefore gives, in each field,
+
+    S_w > m sqrt(J_w)/(4 sqrt(3) (logm)^(3/2)).          (E14)
+
+For small widths the total raw label mass dJ_w may exceed the field
+characteristic, so the raw-mass shortcut from Section5 must NOT be used.
+Instead fix a grid value y. In every fixed row j, orbit injectivity
+allows at most one index h with x_j beta_w^h=y. Its grouped positive
+label multiplicity is consequently at most d=m-1<p,q, and at least one.
+Hence this weight is nonzero in either field at every width. The general
+weighted_denominator_degree theorem applies to each exact whole positive
+moment representation H_w C_w=K_w with H_w(0)=1, and yields
+
+    D_w:=degree(H_w) >= S_w.                            (E15)
+
+The block count satisfies w J_w>L, and the native lower baby bound gives
+L>=2m². Square (E14)--(E15), then multiply by w:
+
+    w D_w² > m² w J_w/(48(logm)^3)
+            > m^4/(24(logm)^3).                        (E16)
+
+It follows that
+
+    w+D_w = Omega(m^(4/3)/logm).                        (E17)
+
+For example, wD_w²<=(w+D_w)^3 already gives (E17); optimizing that
+elementary product only changes the constant. This theorem holds for
+all widths on the SAME actual infinite family, including widths chosen
+using the complete public N after other computation. No independence,
+uniform distribution, or additional analytic input has been assumed.
+
+An acquisition route that materializes the degree-w baby polynomial
+and an exact positive-moment denominator densely must write at least
+Omega(w+D_w) coefficient slots over its execution and retain at least
+Omega(max(w,D_w)) slots at its largest stage, even if the two arrays are
+not simultaneously live. Thus this specified dense-carrier route cannot
+achieve Otilde(m) time or peak coefficient storage by choosing another
+width. This is a representation-specific cost obstruction. It does not
+lower-bound implicit/sparse/circuit representations, differently signed
+weights, partial moment information, or general semiprime factoring.
+
+
+**Constructive genuine-prefix acquisition contract.**
+
+**Source and output.**
+
+Work over the actual ring R=Z/NZ. Let gamma be the actual projected unit,
+m the actual public row modulus, and x_j=gamma^(N+delta_j(N)), 1<=j<m,
+the ORIGINAL denominator-one targets. For a public width w and block count
+J, put beta=gamma^(-m²w). The original normalized grid points are exactly
+
+    y_(j,h)=x_j beta^h,   1<=j<m, 0<=h<J.
+
+For an arbitrary requested K>=0 the output is the genuine sequence
+
+    M_r=sum_(j,h) y_(j,h)^r,   1<=r<=K,
+
+retaining every original tag and every grid multiplicity. Repeated points
+are not deduplicated. K is the length of the requested prefix, not the
+number of distinct points in the full grid.
+
+**Exact seed moment evaluator.**
+
+Build the degree-(m-1) polynomial
+
+    A(z)=product_j(1-x_j z),   A(0)=1.
+
+The product rule and the formal geometric series give the identity
+
+    -z A'(z)/A(z)
+      =sum_j x_j z/(1-x_j z)
+      =sum_(r>=1) S_r z^r,     S_r=sum_j x_j^r.          (P1)
+
+Here the slash means multiplication by the UNIQUE formal-series inverse
+of A, whose constant coefficient is one. It does not invert an evaluated
+zero or nonunit, and no division by r is used. P1 is valid in arbitrary
+characteristic, including indices divisible by the characteristic.
+
+Compute A by a balanced polynomial product tree, then A^(-1) modulo
+z^(K+1) by Newton iteration Q -> Q(2-AQ), truncating at the doubled
+precision. The identity
+
+    1-A*Q(2-AQ)=(1-AQ)^2
+
+proves the precision doubling over ANY commutative coefficient ring.
+Multiplication by -z A' and truncation then produces every S_r, r<=K.
+This is an executable algebraic prescription with certified constant-one
+inversions, not an appeal to a power-sum oracle or to unknown factors.
+
+**Exact grid multiplier without division.**
+
+Define G_J(v)=sum_(h=0)^(J-1) v^h. The separability identity is
+
+    M_r=S_r G_J(beta^r).                               (P2)
+
+For J=0, return G_0=0 and v^0=1. To evaluate a positive J, recursively
+return the PAIR (G_a(v),v^a), then use
+
+    G_(2a)(v)=G_a(v)(1+v^a),
+    G_(2a+1)(v)=G_a(v)(1+v^a)+v^(2a).                 (P3)
+
+The returned power is v^(2a)=(v^a)^2 in the even case, and
+v^(2a+1)=(v^a)^2 v in the odd case. Each binary digit uses a constant
+number of ring additions and multiplications. Thus G_J(v) is evaluated
+in O(log(J+1)) operations without any denominator, for every v.
+
+Generate beta,beta²,...,beta^K successively in O(K) multiplications.
+Apply P3 to each value and multiply by S_r. The integer exponents are
+represented in binary; every ring operation is reduced modulo N. There
+is no machine-integer overflow premise and no need to form beta^(rJ)
+as a giant integer. Signed powers use the supplied unit gamma and its
+certified modular inverse.
+
+**Classical cost and storage contract.**
+
+Once the original target nodes are available, fast polynomial arithmetic
+over Z/NZ gives
+
+    Otilde(m+K)+O(K log(J+1))                           (P4)
+
+coefficient-ring operations, and Otilde(m+K) coefficient slots. The product
+tree and Newton reciprocal use constant-one normalization throughout.
+Fast modular polynomial multiplication can be implemented by integer
+packing and fast integer multiplication; no field-only FFT roots or
+unverified coefficient inverses are assumed in this classical cost.
+
+The actual nodes are also obtainable without materializing the grid:
+the offsets depend on N modm² and satisfy -3m²<=delta_j<=m². Compute
+gamma^N once, then gamma^delta_j by binary signed powering for each tag.
+This costs O(logN+m logm) modular multiplications, plus the ordinary
+polylogarithmic cost per original modular quotient/centered carry.
+All integer modular coefficients have O(logN) bits. These arithmetic
+costs give a classical modular bit bound with the usual multiplication
+and logarithmic factors. They are not a new Lean implementation or a
+bound for the public controller, projection, recovery, or whole factorizer.
+
+In particular, for K=Otilde(m) and polynomially bounded J, the genuine
+WHOLE-FAMILY moment prefix is acquired in Otilde(m) classical modular
+work and coefficient storage. Constructing the full mJ point stream is
+unnecessary. This statement concerns the queried prefix only.
+
+**Exact unit multiplier criterion.**
+
+In a hidden prime field suppose beta has PRIME order R, and
+
+    0<r<R,   0<J<R.
+
+Then beta^r-1 and beta^(rJ)-1 are both nonzero: primality of R and
+r,J<R imply R does not divide rJ, even if rJ>=R. The division-free
+geometric identity
+
+    (beta^r-1)G_J(beta^r)=beta^(rJ)-1
+
+therefore proves G_J(beta^r) is nonzero. For a semiprime N, if the
+criterion holds in BOTH hidden fields, the multiplier in P2 is a unit,
+and consequently
+
+    gcd(N,M_r)=gcd(N,S_r).                              (P5)
+
+On the published actual long-base-2 family, projected local orders are
+the large primes R_p,R_q. For every width 1<=w<=L and sufficiently large
+inputs they exceed 16m²; since w<=L<=4m², both orders are preserved in
+beta=gamma^(-m²w). With J=floor(L/w)+1, one has J<R_p,R_q. Every prefix
+K=Otilde(m) also eventually lies below both local orders. Thus P5 applies
+to this entire prefix on that family.
+
+For other parameters P1--P4 remain exact even when the geometric factor
+is zero or the denominator beta^r-1 vanishes. At a period, for example,
+G_J(1)=J is returned correctly. The order condition is used solely for
+the unit/gcd conclusion P5, not for the acquisition algorithm.
+
+**Coverage and representation limits.**
+
+No theorem here guarantees a proper gcd among S_1,...,S_K or among the
+grid moments M_r. Their values can contain additional information not
+present in the shifted cross-resultant output; that coverage question
+must be proved arithmetically.
+
+The new low-energy support theorem implies that on an actual infinite
+family the ENTIRE positive grid moment series needs a much larger
+denominator. The existing validated-prefix rigidity theorem can also
+exclude low-degree rational CANDIDATES matching its specified prefix.
+Neither conclusion prevents computing that prefix by P1--P4. A small
+queried prefix must not be identified with a correct rational description
+of all future moments, a collision-preserving detector, or a full interval
+product. The complete guaranteed one-sixth factoring objective remains open.
+
+
+**What the coefficient and pivot investigation actually establishes.**
+
+The scalar crossnorm obstruction from the preceding turn cannot be
+extended by assuming that a unit resultant has only unit internal pivots.
+For \(U(T)=T^d+a_1T^{d-1}+a_2T^{d-2}+\cdots\), normalize the shifted
+polynomial as \(V(T)=q^dU(q^{-1}T)\), with \(q=\alpha^t\). The first
+difference has depth-\(r\) coefficient \((q^r-1)a_r\). On the actual
+prime-period family, every such scale factor is a unit for
+\(1\le t\le L\) and \(1\le r\le d\): a prime local order greater
+than \(L,d,m\) cannot divide \(m^2tr\). Thus varying shifts in this
+range does not add a first-remainder coefficient-gcd channel beyond the
+original coefficient gcds.
+
+The next principal Bezout minor already contains an additive observable:
+
+\[
+\det B_{[2]}=-(q-1)^2\bigl((q+1)^2a_2^2-q a_1^2a_2
+ -(q^2+q+1)a_1a_3\bigr).
+\]
+
+Known unit factors do not control cancellations in the parenthesis.
+Neither guaranteed factor coverage nor an actual-input all-pivot-unit
+counterfamily is proved. This subsidiary symbolic calculation is
+classical and is not a new registered pivot or coverage theorem.
+
+**Finite native scope and exact source registration.**
+
+The leaf's `actual_pair_unique_carry` permits repeated individual tags
+and requires precisely that the two unordered tag multisets differ.
+`residuePairCandidates_card_le` and
+`nontrivialOffsetEnergy_carry_mass_le` prove the cubic whole-family mass;
+`nontrivialOffsetEnergy_threshold_bound` is the finite threshold theorem
+used by the classical selector loss. `offsetEnergy_le_nontrivial_add`
+proves the full tagged energy is at most the nontrivial count plus
+\(2(m-1)^2\), by an explicit `Fin.val` cardinal bijection and two
+trivial diagonal images.
+
+`originalSeedEnergy_eq_offsetEnergy` cancels the common \(2N\) phase and
+uses the actual short four-offset residual below the local order.
+`original_seed_fiber_card_le_two` derives the original local source fiber
+bound from the public quadratic phase polynomial. No source label is
+silently deduplicated or assigned weight zero.
+
+`geometric_grid_denominator_degree` uses fiber multiplicity at most the
+number of rows, independent of the total raw label mass. The finite
+original-source consequence, `literal_original_moment_energy_tradeoff`,
+proves
+
+\[
+(m-1)^4 L\le16w\,\deg(H)^2
+ \bigl(E_{\mathrm{nontrivial}}(N,m)+2(m-1)^2\bigr)
+\]
+
+under the explicitly stated local-order, row-characteristic, block-cover
+and exact positive-moment hypotheses. Its factor 16 comes from a
+set-energy proof that deduplicates source values while retaining their
+labelled-energy upper bound. The sharper classical constants (E12) and
+(E16) use labelled mixed-energy Cauchy--Schwarz directly. The asymptotic
+obstruction follows with either constant; no stronger constant is falsely
+credited to the kernel.
+
+The native leaf has 911 lines, 33 source theorems, nine noncomputable
+proof-side count definitions and two proposition-valued abbreviations.
+All 100 declarations, including all 89 theorem/helper declarations, use
+only `propext`, `Classical.choice` and `Quot.sound`. The focused checker
+selects by module provenance and has zero checker-local helpers. Fifteen
+linters find zero errors in 44 direct and 56 generated declarations.
+Strict warning-as-error compilation, the focused target build, focused
+checker and ordinary registered root check pass. Generated C exports
+module initialization only. No new factorization example, native factoring
+run, backend algorithm or full bit-time theorem was added.
+
+The preceding shifted-norm audit was freshly rechecked: all 458 selected
+repository-source pins, 95 selected Mathlib pins and 29 artifact pins
+match. The new audit
+`docs/semiprime-seed-energy-acquisition-obstruction-audit.json` pins the
+selected source chain, complete finite axiom/lint checks, classical proofs,
+research prototypes and exact registration snapshots. Registration adds
+exactly one ordinary root import, one module entry in the existing
+`semiprime` family and this one dated journal insertion, preserving all
+preexisting bytes by exact removal checks.
+
+The sole analytic supply is the published Baker--Harman exponent
+\(677/1000\), as formulated in Section 4, Lemmas 19--20 of
+[Kurlberg--Pomerance](https://www.impan.pl/shop/en/publication/transaction/download/product/82225).
+The literal long-base-2 transfer and exact least-prime selector gap
+summation are inherited from the preserved parent source chain. No
+quasi-RH, GRH, Poisson--Dirichlet law, short-bin prime equidistribution or
+individual prime-gap estimate is required. Adding previously audited
+little-o exceptional losses can intersect this energy family with the
+previous scalar-catalog, low-AP and low-duplicate families; no independence
+assumption is used.
+
+**Remaining acquisition obligation.**
+
+The new count is uncentered energy of the original **tagged offset
+family** and a selector upper count. It is not the actual-prime centered
+covariance estimate D11, which remains unproved and unrefuted. No variance
+bound on a containing integer population is transferred to a prime
+subset. The validated finite-prefix consequence is asserted for
+\(w=4m\); the same prefix certificate is not claimed for every width.
+The all-width statement concerns exact positive-moment presentations.
+
+Signed weights, internal Euclidean or subresultant pivots, nonunit
+coefficient combinations, partial norms and coupled implicit
+representations remain possible acquisition channels. Their arithmetic
+coverage and total work must be proved. Acquiring a cheap genuine prefix
+alone does not supply a factor. The full deterministic one-sixth goal
+still requires whole-family factor acquisition, controller and recovery
+proofs, prime-square handling, and complete bit-time and peak-working-
+memory bounds. The goal remains active.
+
+### 2026-10-07: Signed filter acquisition: pole budgets and endpoint detector obstructions
+
+This turn is **progress** on the arithmetic acquisition frontier. It
+examines two concrete signed-cancellation repairs to the preceding
+positive-moment obstruction, and gives different rigorous outcomes for
+them. No successful factorization examples or backend lemmas alone are
+counted as the advance.
+
+For common-point polynomial weights, the new arithmetic theorem is
+
+\[
+w(D+F)^2>\frac{m^4}{24(\log m)^3},\qquad
+w+D+F=\Omega\!\left(\frac{m^{4/3}}{\log m}\right).
+\]
+
+Here \(D\) is the actual degree of an exact normalized whole-series
+denominator after signed filtering, and \(F\) is the actual degree of the
+nonzero filter polynomial, which may be evaluated in an injective common
+character of the grid points. The same actual infinite low-energy input
+family works simultaneously for **every** width and every such full-input
+adaptive filter. Signed cancellations can remove at most \(F\) original
+poles. Dense baby/filter/denominator acquisition therefore still cannot
+achieve \(\widetilde O(m)\) work or peak coefficient storage. A filter
+encoded by a high-degree sparse polynomial or circuit is outside that
+dense storage contract.
+
+By contrast, an exact first difference in the **block shift** does
+produce a whole signed endpoint series with a degree-\(2(m-1)\) carrier
+in \(\widetilde O(m)\) classical modular work and storage. This is a real
+compression, so it must not be excluded by conflating the two filter
+contracts. It changes the observable: interior grid contributions cancel
+and a nonzero period coefficient is lost. Its low-index moment gcds are
+exactly those of the genuine original seed moments.
+
+For every fixed accessible width catalog of size
+\(O(m^\eta(\log m)^A)\), \(\eta<31/1000\), a new constant-range
+arithmetic count gives infinitely many actual balanced long-base-2 inputs
+with **all** selected endpoint cross differences units. The exact signed
+endpoint rank is then identical in the two hidden fields. Every
+consecutive Hankel determinant at the full support size is a unit, and
+every larger one is zero; neither scalar gcd returns a proper factor.
+The original seed full-support Hankel detector has an even stronger
+pointwise unit/zero obstruction under its stated actual long-branch,
+quadratic-fiber and characteristic hypotheses. Smaller internal minors,
+additive coefficient combinations and their coverage remain open.
+
+The finite signed-pole/source-energy theorem and exact filter identities
+are kernel checked in
+`RiemannGaussian/SemiprimeSignedMomentAcquisitionObstruction.lean`.
+The actual infinitude, asymptotic constants, matrix determinant arguments
+and modular cost bounds below are **classical**, not new analytic Lean
+axioms or an implemented factoring clock. The guaranteed one-sixth
+factorization objective remains open.
+
+**All-width common-point filter theorem and arithmetic proof.**
+
+**1. Frozen actual arithmetic family.**
+
+Retain the exact source from the parent energy audit. N=pq is an actual
+balanced distinct-prime semiprime, m is the literal least prime satisfying
+N<=m^6, L=seedLength(m), and gamma is the literal projected long-base-2
+unit. The published Baker--Harman prime-order supply and the native
+four-tag carry mass select infinitely many actual inputs with
+
+    E_delta < 3 m^2 (log m)^3,
+    R_p,R_q > 16m^2,
+    2m^2+2 <= L <= 4m^2.
+
+The local gamma orders R_p,R_q are distinct primes. The exact selector
+count, carry loss, and all-width support proof are inherited with their
+source pins unchanged; they require no quasi-RH or new prime-distribution
+assumption. All analytic infinitude and asymptotic consequences in this
+report remain classical, not native Lean axioms.
+
+For ANY integer width1<=w<=L, define J=floor(L/w)+1 and
+
+    x_j=gamma^(N+delta_j(N)),  1<=j<m,
+    beta=gamma^(-m^2w),
+    y_(j,h)=x_j beta^h,  0<=h<J.
+
+In either hidden field, beta has prime order R, J<R/2, and the distinct
+original grid support S_w obeys the simultaneous bound
+
+    |S_w| > m sqrt(J)/(4 sqrt(3) (log m)^(3/2)).       (S1)
+
+The same actual inputs work for every width, including a width selected
+using all of N or preceding arithmetic observations. The positive
+multiplicity mu(y) of each supported point is between1 andm-1, by
+injectivity within each row orbit. Since m-1<p,q, mu(y) is nonzero locally,
+even if the TOTAL raw label count (m-1)J exceeds a hidden prime.
+
+**2. Filter contract and finite pole budget.**
+
+Choose an arbitrary polynomial W(T) over Z/NZ, degree at most F, and a
+positive integer e. In a hidden field let W_bar denote its projection.
+Assume W_bar is nonzero and the map y->y^e is injective on S_w. A sufficient
+uniform condition on this family is1<=e<=L: the points lie in the cyclic
+group generated by gamma, whose prime order R exceeds L, so gcd(e,R)=1.
+More generally e may be any integer coprime to BOTH local orders; those
+orders are proof-side hypotheses, never supplied algorithmic advice.
+
+The signed weighted moments are
+
+    P_r = sum_(j,h) W(y_(j,h)^e) y_(j,h)^r,  r>=1,   (S2)
+
+with zero constant term in the centered series. Coefficients of W may be
+positive, negative, zero, or arbitrary modular values. W and e may depend
+on the full actual input and all earlier responses. No catalog bound or
+independence of W from the unknown local points is used.
+
+After grouping labels, the residue weight at y is
+
+    mu(y) W_bar(y^e).
+
+Because mu(y) is nonzero, this vanishes exactly at roots of W_bar after
+the injective character map. A nonzero polynomial of degree at most F has
+at most F distinct roots. Hence at most F original support points can
+be removed. If an exact rational relation H(z) P(z)=K(z) has H(0)=1,
+the weighted pole theorem forces H(y^-1)=0 at every retained point.
+Distinct inverse points are distinct roots. Therefore
+
+    |S_w| <= deg H + deg W_bar <= D+F.                (S3)
+
+Here D can be the degree of a composite-ring denominator: projection can
+only lower its degree. The numerator need not have any stated degree
+bound. This proof permits arbitrary signed cancellations in W; the
+nonzero local residue criterion and the polynomial root bound account
+for ALL canceled poles.
+
+The injective-character form matters. W(T^e) can have ambient polynomial
+degree eF, but it removes at most F points from this cyclic support. Thus
+encoding a large power e in binary does not evade this support budget as
+long as the required powering is injective. Arbitrary unrelated row and
+column weights are not claimed to have the form(S2).
+
+**3. Arithmetic cost obstruction for the signed route.**
+
+Combining(S1)--(S3), and wJ>L>=2m^2, gives on the SAME actual infinite
+family, simultaneously for every permitted w,e and nonzero filter,
+
+    w (D+F)^2 > m^4/(24 (log m)^3).                   (S4)
+
+In particular
+
+    w+D+F = Omega(m^(4/3)/log m).                     (S5)
+
+For instance w(D+F)^2 <= (w+D+F)^3 immediately yields(S5).
+At the linear width w=4m,
+
+    D+F = Omega(m^(3/2)/(log m)^(3/2)).                (S6)
+
+For this storage statement take D and F to be the ACTUAL composite-ring
+degrees of the stored denominator and filter, rather than loose degree
+upper bounds. A route materializing the degree-w baby polynomial, that
+degree-F common-character filter, and that exact degree-D denominator as
+dense coefficient lists cannot achieve Otilde(m) work or peak coefficient storage. Each
+list requires its degree plus one slots. Total written slots are at
+least proportional to w+D+F; even if the lists are constructed at
+separate times, peak slots are at least max(w,D,F)>=(w+D+F)/3.
+
+A high-degree sparse filter or implicit filter circuit does NOT pay F
+coefficient slots merely because its degree is F. This is a dense-
+representation obstruction, not a general circuit lower bound. At fixed
+w=4m the theorem also excludes a normalized exact denominator of degree
+Otilde(m) after ANY filter with F=Otilde(m), regardless how that small-degree
+filter was found. It does not exclude acquiring a short prefix of(S2).
+
+**4. Signed moment shifts are included, with a paid prefix bound.**
+
+Write W(T)=sum_(a=0)^F c_a T^a. Expanding(S2) gives the exact identity
+
+    P_r = sum_(a=0)^F c_a M_(r+ea),                   (S7)
+
+where M_r is the genuine full original positive grid moment. Thus the
+barrier includes finite signed linear combinations of shifted moment
+indices and their common-character variants. It includes polynomial
+weights chosen to annihilate particular original nodes, if their degree
+is paid; each eliminated node spends one of the F available roots.
+
+For e=1 a prefix P_1,...,P_K can be obtained from the genuine grid prefix
+through K+F by one coefficient convolution, using reversed coefficients
+of W. The earlier division-free seed/log-derivative/geometric evaluator
+plus fast convolution costs Otilde(m+K+F) modular work and coefficient
+slots (with log J factors). This is a meaningful cheap PREFIX acquisition
+result when K,F=Otilde(m). Formula(S6) explains why that queried prefix
+cannot be promoted to a small exact rational description of all future
+filtered moments. For e>1, this argument pays for the full prefix through
+K+eF; no Otilde(m) bound is asserted when eF is larger.
+
+**5. Nonzero filter normalization is checkable.**
+
+A modular W can be nonzero over Z/NZ but project to the zero polynomial
+in one hidden field. In that case the content gcd
+
+    g=gcd(N,c_0,...,c_F)
+
+is a proper factor when the other projection is nonzero. Computing this
+gcd costs at most F+1 ordinary integer gcds on O(log N)-bit coefficients.
+If g=1, both local projections are nonzero and(S3)--(S6) apply. If g=N,
+all coefficients are zero in the composite ring and the filter returns
+only zeros. A monic filter automatically satisfies the nonzero condition
+in both fields. These alternatives exclude an artificial escape obtained
+by annihilating one entire field with filter coefficients containing a
+factor already available to the algorithm.
+
+**6. Difference in block shifts is a different signed construction.**
+
+A COLUMN mask b_h changes moments to
+
+    S_r sum_h b_h beta^(rh).
+
+The weight depends on the row/block LABEL h, rather than only on the
+point y through a common polynomial. Such masks are not covered by(S3)
+unless their weights really coincide with the common-point contract.
+In particular the exact first block difference gives
+
+    E_r=(1-beta^r)M_r=(1-beta^(Jr))S_r.
+
+It has only the two endpoint families, and therefore a denominator of
+degree at most2(m-1). This is a real signed compression; it is not ruled
+out by(S4). On the actual prime-order family its low-index scalar gcds
+are identical to the original seed moment gcds. The separate endpoint
+catalog/Hankel audit examines what collision data this compression loses.
+Coverage through arbitrary additive seed coefficients or smaller internal
+pivots remains open. No general signed-cancellation impossibility or
+whole factorization complexity theorem is claimed.
+
+**Signed endpoint acquisition and determinant obstruction.**
+
+**1. Literal signed endpoint identity.**
+
+Let N=pq be an actual balanced distinct-prime input. Its original public
+modulus is the least prime m with N<=m^6; put d=m-1. Let L be the literal
+original baby length, for which 2m^2+2<=L<=4m^2. In the actual ring Z/NZ
+let gamma be the routed projected unit, and put
+
+    delta_j=a_j+m b_j-2a_j j,       -3m^2<=delta_j<=m^2,
+    x_j=gamma^(N+delta_j),         1<=j<m,
+    alpha=gamma^(m^2).
+
+The offsets depend only on n=N modm^2. Fix any width 1<=w<=L and set
+
+    J=floor(L/w)+1,   beta=alpha^(-w),   c_w=beta^J,
+    S_r=sum_j x_j^r,
+    M_r=sum_j sum_(0<=h<J) (x_j beta^h)^r,
+    E_r=sum_j (x_j^r-(c_w x_j)^r).
+
+For every r>=0 the division-free identities are
+
+    M_r=S_r G_J(beta^r),
+    E_r=(1-beta^(Jr))S_r=(1-beta^r)M_r,                 (S1)
+
+where G_J(v)=sum_(0<=h<J)v^h. The second identity is literal telescoping:
+subtract the h+1 grid from the h grid and all interior tagged terms
+cancel. It retains each original row's two endpoint terms.
+
+Suppose the actual local orders R_p,R_q of gamma are primes exceeding
+16m^2. As neither prime divides m or w, beta also has these orders. If
+0<r<R_p,R_q, then 0<J<R_p,R_q and primality implies that neither local
+order divides Jr. Consequently 1-beta^r and 1-beta^(Jr) are units in
+Z/NZ, even when Jr exceeds a local order. Thus
+
+    gcd(N,E_r)=gcd(N,M_r)=gcd(N,S_r).                   (S2)
+
+In particular, this holds simultaneously for every width and every
+prefix length K=Otilde(m), on sufficiently large inputs in the published
+actual prime-order family. Signed short moments introduce no new scalar
+gcd signal beyond the genuine seed moments. This does not establish that
+all these gcds are trivial, or rule out combinations of their values.
+
+The entire endpoint series nevertheless has a small explicit carrier.
+For A(z)=product_j(1-x_j z), with A(0)=1, one has
+
+    sum_(r>=0) E_r z^r
+      = -z A'(z)/A(z) + c_w z A'(c_w z)/A(c_w z).       (S3)
+
+Its denominator A(z)A(c_w z) has degree 2d, and its numerator is
+
+    z[-A'(z)A(c_w z)+c_w A'(c_w z)A(z)].
+
+These are formal constant-one inversions and polynomial identities over
+the composite ring; no evaluated denominator is inverted. A balanced
+product tree, polynomial scaling, differentiation, and multiplication
+give this entire signed endpoint representation in Otilde(m) classical
+modular arithmetic and coefficient storage once the original x_j are
+available. Node acquisition costs O(log N+m log m) modular
+multiplications. A genuine length-K endpoint prefix follows in
+Otilde(m+K) operations, or by (S1) from a genuine seed prefix. No full
+mJ-point stream is materialized.
+
+This is genuine near-linear acquisition of the signed endpoint series,
+not of the entire positive grid series. At either hidden period R,
+
+    E_R=0,       M_R=dJ != 0 in the hidden field.        (S4)
+
+Indeed x_j^R=beta^R=1. In the corresponding hidden field F_P one has
+d<P and J<R<P individually, so their product is nonzero even if the
+integer dJ exceeds the characteristic.
+Thus the endpoint difference loses a real periodic channel. Interior
+positive-grid nodes have canceled in (S3); original start-node poles can
+still remain, and must not be claimed to have all disappeared. The
+operator in (S1) is not invertible on the full periodic moment stream.
+
+**2. Fixed width catalogs and the constant-range cross count.**
+
+Fix in advance any family of finite accessible width catalogs
+
+    W_(m,n) subset {1,...,L(m)},   n unit modulo m^2.
+
+For fixed C,A and eta>=0 suppose their accessible UNION satisfies
+
+    |W_(m,n)| <= C m^eta log(2m)^A,
+    eta < 3kappa-2 = 31/1000,   kappa=677/1000.         (S5)
+
+Catalogs may depend arbitrarily on both residue digits and need not be
+computable. Full-N adaptive selection, reordering, and stopping are
+allowed inside the fixed accessible union for (m,N modm^2). A cap only
+on the number of widths used in one execution is insufficient.
+
+Associate the endpoint shift
+
+    t(w)=w J(w),       L<t(w)<=L+w<=2L<=8m^2.          (S6)
+
+The induced shift catalog has no more entries than the width catalog.
+We now reproduce the arithmetic count with this enlarged constant range.
+
+Take c_0 X<=p,q<=X, M=X^(1/3), and
+c_0^(1/3)M<=m<=b_0 M, where b_0=4. On the actual published supply write
+
+    p=1+v R_p,   1<=v<=V=O(X^(1-kappa)),   V<=m.
+
+For a hidden-field cross collision x_i=c_w x_j, the large N term cancels
+and
+
+    |m^2 t-k R_p|<=4m^2,   k>=1.                     (S7)
+
+Positivity follows from t>=8, which (S6) implies for large m. For fixed
+m,t,v, the possible positive k satisfy
+
+    A_0=v m^2(t-4)/X <= k <=
+    B_0=2v m^2(t+4)/(c_0 X),
+    B_0/A_0<=6/c_0.
+
+Hence their reciprocal sum is at most C_h=1+log(6/c_0), including when
+A_0<1. Their number is at most C_k v t/m+1, with
+C_k=3 b_0^3/c_0. For each k, (S7) restricts the integer R_p to an interval
+of length 8m^2/k. Ignoring primality and duplicate counts yields at most
+
+    8 C_h m^2+C_k v t/m+1
+
+p-values for fixed m,t,v. Since t<=8m^2 and V<=m, summation over v<=V
+gives at most
+
+    C_p V m^2,       C_p=8 C_h+8 C_k+1.              (S8)
+
+Only the constant changes from the earlier t<=4m^2 proof. No row count,
+carry equidistribution, or prime distribution in short strips is used.
+
+Let m^- be the preceding prime and g=m-m^-. The literal selector bin is
+
+    (m^-)^6<pq<=m^6.
+
+For fixed p>=c_0 X its q-strip has length <=6m^5 g/(c_0 X). A fixed
+q-class modulo m^2 therefore has O(g+1) integer representatives, with
+constants depending only on c_0,b_0. Fixed n and a retained prime p fix
+q=n p^(-1) modulo m^2. Combining this with (S8) bounds p-field bad pairs
+for each (m,n,t) by O(Vm^2(g+1)). Sum over fewer than m^2 states n and at
+most H_X catalog entries per state to obtain
+
+    O(H_X V m^4(g+1))
+
+for each selector. The relevant prime gaps telescope:
+sum_m(g+1)=O(M). Exchanging ordered factors gives the q-field bound with
+the same public catalog. Therefore
+
+    #pairs with any selected endpoint cross hit
+       = O(H_X V M^5).                              (S9)
+
+The already audited published Baker--Harman/Kurlberg--Pomerance prime
+supply and literal long-base-2 transfer provide, along unbounded scales,
+Omega(M^6/log^2 M) balanced actual prime pairs with local projected orders
+the distinct primes R_p,R_q>M^(3kappa) times a fixed constant. The
+discarded base-2-order and cross-order pairs have smaller mass. For large
+inputs both local orders exceed 16m^2. This is the same actual-source
+transfer used in the pinned shifted-norm proof, not an advised-order or
+conditional prime-gap hypothesis.
+
+By (S5), the ratio of (S9) to this actual surviving mass is
+
+    O(M^(eta+2-3kappa) log(M)^(A+2))=o(1).
+
+Thus for every fixed catalog family satisfying (S5), infinitely many
+actual balanced long-base-2 inputs satisfy, simultaneously in both fields,
+
+    x_i-c_w x_j is a unit for all i,j and every
+    permitted width w.                              (S10)
+
+This is ALL selected endpoint-cross absence. It does not assert absence
+of all original row-to-baby hits or all possible width choices. Original
+forced hits elsewhere remain available. Even absence of a global
+cross equality alone would not suffice: (S9) removes both local hit types.
+For completeness, here a positive global residual is at most
+8m^4+4m^2<16m^4, so the inherited global-order bound also excludes
+global cross equality. That observation is not substituted for (S9).
+
+**3. Exact node grouping and maximal consecutive Hankel outputs.**
+
+There is first a stronger pointwise obstruction for the ORIGINAL seed
+moments, without endpoint shifts, catalogs, or infinitude. Suppose
+N=pq with distinct primes p,q>2, m is prime and m>=4, gcd(N,m)=1,
+gamma is a unit, and both projected local orders exceed4m^2. These are
+the source premises used below on the actual long branch; the native
+original_target_difference_isUnit theorem supplies the distinct-offset
+unit-gap conclusion from actual LongData. The gcd premise supplies the
+two-point fiber bound from the original public residue quadratic.
+
+Group the exact INTEGER offsets into a set Delta of size r_0, with
+multiplicities tau_delta in{1,2}. Put z_delta=gamma^(N+delta). These
+nodes and their weights are units, and every pair of different nodes has
+unit difference. For ANY a>=0, the original seed Hankel
+
+    K_h^(a)=(S_(a+i+j))_(0<=i,j<h)
+
+therefore satisfies
+
+    det K_r_0^(a)
+       =(product_delta tau_delta z_delta^a)
+        product_(delta<epsilon)(z_epsilon-z_delta)^2,
+    gcd(N,det K_r_0^(a))=1,
+    det K_h^(a)=0 for every h>r_0.                    (S11a)
+
+The ordering of the public offset classes is arbitrary. The first
+formula is the exact square Vandermonde factorization; the larger-matrix
+claim follows from rank at most r_0 in both fields and CRT. Thus the
+maximal consecutive seed-Hankel scalar determinant detector already
+fails POINTWISE on every input satisfying these actual source premises.
+This is not a counterfamily assertion or a claim about all smaller
+seed minors. In particular it leaves cheap additive seed-moment and
+internal-pivot coverage open.
+
+For the endpoint determinant statement, the extra cross-sign unit gaps
+require the catalog counterfamily from Section2. We now specialize to
+that family.
+
+Work on any input supplied by (S10), for one permitted width. Group rows
+by their exact centered INTEGER offsets. Let Delta be the set of distinct
+offsets and r_0=|Delta|. The public lower-residue quadratic has fibers of
+size at most two: for s=n modm !=0, delta_j modm equals
+s(j^(-2)-2j^(-1)). Thus every exact offset multiplicity tau_delta lies in
+{1,2}. The grouping uses only the original public offsets, with no hidden
+factor oracle. Distinct offsets have differences of absolute value at
+most 4m^2<R_p,R_q. Therefore their x-values have unit differences.
+
+The endpoint nodes are the following s_0=2r_0 labeled values:
+
+    z_delta,+ = gamma^(N+delta),   weight +tau_delta,
+    z_delta,- = c_w gamma^(N+delta), weight -tau_delta.
+
+Within either sign the differences are units; between signs (S10) gives
+unit differences. Thus all s_0 nodes are units and are pairwise separated
+by units in Z/NZ. All weights are units because p,q>2. In both hidden
+fields these are exactly s_0 distinct nodes with nonzero signed weights,
+and
+
+    E_r=sum_(ell=1)^s_0 weight_ell z_ell^r.            (S11)
+
+In particular the minimal normalized denominator of the entire signed
+series has degree exactly s_0 in each hidden field. Clearing the candidate
+identity and evaluating at each inverse node proves this directly: the
+corresponding nonzero weight times all other unit gaps survives. The
+grouped carrier product_(ell)(1-z_ell z) attains this degree, which is
+at most 2(m-1). This does not constrain the much larger positive-grid
+carrier.
+
+For ANY starting index a>=0 define the consecutive square Hankel
+
+    H_h^(a)=(E_(a+i+j))_(0<=i,j<h).
+
+At h=s_0 it factors exactly over the composite ring as
+
+    H_s_0^(a)=V diag(weight_ell z_ell^a) V^transpose,
+    V_(i,ell)=z_ell^i,   0<=i<s_0.
+
+The Vandermonde determinant gives
+
+    det H_s_0^(a)
+       =(product_ell weight_ell z_ell^a)
+        product_(ell<k)(z_k-z_ell)^2,                 (S12)
+
+which is a unit. This includes a=0 although E_0=0; a zero entry does not
+force a zero determinant. No positivity argument is used.
+
+For every h>s_0 the matrix has rank at most s_0 in each hidden field, by
+the rectangular Vandermonde factorization. Its determinant is therefore
+zero in both fields and zero modulo N. Equivalently the monic node
+polynomial yields an exact degree-s_0 recurrence over the composite ring.
+Consequently
+
+    gcd(N,det H_h^(a)) = 1 if h=s_0,
+                        N if h>s_0.                 (S13)
+
+The same family and grouping work simultaneously for every width in the
+fixed catalog and every a>=0. A free oracle returning these maximal and
+larger consecutive determinants still cannot return a proper factor via
+their scalar gcds. Products of the maximal units also remain units.
+The DEDUPLICATED degree-s_0 endpoint carrier's discriminant and the
+start/end scalar cross norms are units for the same pair-gap reason.
+The original degree-2d carrier A(z)A(c_w z) can have repeated roots from
+offset multiplicity two; its discriminant is not claimed to be a unit.
+
+**4. Precise detector and cost boundary.**
+
+The endpoint series is a successful Otilde(m)-size signed representation.
+The theorem shows that the specified maximal consecutive-Hankel/rank
+determinant outputs do not guarantee factor acquisition, even on actual
+inputs and even when their computation is free. It does not assert a
+general lower bound for signed circuits or for the evaluator producing
+the representation.
+
+In particular, (S12) does NOT imply that smaller Hankel minors, internal
+Euclidean pivots, principal subresultant coefficients, carrier
+coefficients, or additive combinations are units. Their cancellations
+may expose a factor. An algorithm computing one of the unit determinants
+could observe such an internal value; this theorem concerns only its
+specified final scalar outputs. Arbitrary nonconsecutive maximal Hankel
+minors also lie outside (S12), since extra Schur factors can appear.
+
+The result covers full-N adaptive widths only inside the fixed catalog
+union in (S5); it makes no all-width endpoint-cross absence claim. It
+also does not establish a guaranteed gcd among the cheap short genuine
+seed moments. A substantive acquisition theorem for these smaller
+additive observables remains open.
+
+Some first coefficient and smaller-Hankel outputs nevertheless have an
+exact all-width equivalence to existing seed observables. Write
+A(z)=sum_i a_i z^i, a_0=1, c=c_w, and extend a_i by zero outside[0,d].
+For Q=A(z)A(cz) and the numerator B in(S3), direct multiplication and
+pairing(i,j) with(j,i) give
+
+    Q_k=sum_(i+j=k) c^j a_i a_j,
+    B_k=sum_(i<j,i+j=k) (j-i)(c^j-c^i)a_i a_j.        (S14)
+
+In particular
+
+    B_1=(c-1)a_1,
+    B_2=2(c^2-1)a_2,
+    B_3=3(c^3-1)a_3+(c^2-c)a_1 a_2,
+    Q_1=(1+c)a_1,
+    Q_2=(1+c^2)a_2+c a_1^2.                         (S15)
+
+The local orders of c are the same odd primes R_p,R_q: both are prime
+and 0<J<R_p,R_q. The scalars c-1,c^2-1,1+c,1+c^2 and2 are consequently
+units. Therefore, simultaneously for EVERY width on the prime-order
+family, even without a catalog bound,
+
+    gcd(N,B_1)=gcd(N,Q_1)=gcd(N,a_1),
+    gcd(N,B_2)=gcd(N,a_2).                           (S16)
+
+Furthermore E_0=0 and
+
+    det H_2^(0)=-E_1^2=-(1-c)^2 S_1^2.
+
+Squarefreeness of N gives
+
+    gcd(N,det H_2^(0))=gcd(N,S_1)=gcd(N,a_1).         (S17)
+
+This first nontrivial consecutive-Hankel output adds no new gcd channel.
+The signed numerator coefficient B_3 and the carrier coefficient Q_2
+already contain genuine additive combinations. Their individual unit
+factors do not determine whether the sums are nonunits. The maximal
+determinant obstruction cannot be extrapolated to them. These are
+concrete early unpaid additive observables, not a claimed coverage
+theorem or counterfamily for the internal-pivot route.
+
+The common-point polynomial-filter theorem is separate: if a degree-F
+nonzero polynomial W weights each distinct genuine grid point through
+an injective point coordinate, it kills at most F points. A denominator
+of degree D for the surviving entire moment series must have D+F at
+least the original support. The existing low-energy actual family then
+gives w(D+F)^2=Omega(m^4/log^3 m), and dense explicit
+w+D+F=Omega(m^(4/3)/log m). The index multiplier in (S1) is not such a
+pointwise polynomial weight: it subtracts a translated support and
+cancels interior points. These two contracts must not be conflated.
+
+
+**Shared cyclotomic column-mask closure.**
+
+**1. Literal observable and the two different filter meanings.**
+
+Let N=pq with distinct primes, m the literal public row modulus, gamma
+the actual long-branch projected unit, and
+
+    x_j=gamma^(N+delta_j(N)),  1<=j<m,
+    alpha=gamma^(m²), beta=alpha^(-w).
+
+For the genuine original seed moments put
+
+    S_r=sum_(j=1)^(m-1) x_j^r.
+
+Let I be a finite set of integer column indices and let a_h in Z/NZ be
+SHARED across every original row. Negative indices are permitted using
+the supplied unit beta. Define the Laurent column mask and its actual
+weighted grid moment by
+
+    W(T)=sum_(h in I) a_h T^h,
+    C_(W,r)=sum_j sum_(h in I) a_h (x_j beta^h)^r.
+
+For every nonnegative moment index r, distributivity gives the exact
+division-free identity
+
+    C_(W,r)=S_r W(beta^r).                             (F1)
+
+All original tags, their exact centered carries, and their duplicate
+multiplicities remain present in S_r. No hidden factor or advised order
+is supplied to the computation.
+
+This is a COLUMN mask: W(beta^r) multiplies an original moment without
+changing its index. It differs from a POINT mask P(y), which weights
+each underlying grid value y and forms sums of shifted moments such as
+sum_h b_h M_(r+h). A point-mask polynomial may cancel grid poles. None of
+the unit conclusions below applies automatically to that different
+observable, or to row-specific masks W_j that remain inside the row sum.
+
+**2. Finite cyclotomic unit theorem.**
+
+Let beta have prime order R in a field. Let 0<r<R. For every integer
+1<=d<R,
+
+    Phi_d(beta^r) != 0.                                (F2)
+
+Proof: the integer cyclotomic polynomial Phi_d divides T^d-1 over Z,
+so its image over the field divides the same polynomial. If its value
+at beta^r were zero, then beta^(rd)=1 and R would divide rd. Since R is
+prime, it would divide r or d, contradicting their positive bounds.
+This proof needs no irreducibility assertion and no additive-character
+homomorphism from the auxiliary row field. It also needs no field-
+characteristic restriction: divisibility by T^d-1 is enough.
+
+More generally ANY polynomial factor P of T^d-1 has P(beta^r)!=0 under
+the same conditions. Over a commutative coefficient ring, the stronger
+finite statement is: if P divides T^d-1 and beta^(rd)-1 is a unit, then
+P(beta^r) is a unit. Evaluation converts the divisibility identity to
+a product equal to a unit, and each factor of a unit is a unit.
+
+Apply (F2) in the two hidden fields, where beta has prime orders R_p,R_q.
+Every Phi_d(beta^r) is then a unit modulo N for
+
+    0<r<min(R_p,R_q),  1<=d<min(R_p,R_q).                (F3)
+
+Consequently the value of every mask of the form
+
+    epsilon T^a prod_d Phi_d(T)^(e_d)                   (F4)
+
+is a unit at T=beta^r, provided epsilon is a certified unit, a is an
+integer, the e_d are integers with finite support, and every d in that
+support satisfies (F3). Negative e_d denote inversion of the now-proved
+unit values. If (F4) is a Laurent polynomial, it is a literal finite
+column mask from Section1. Otherwise it defines a normalized multiplier
+observable rather than a finite column sum; the same unit statement
+still holds after certified divisions.
+
+No bound on the magnitudes or number of e_d is needed for this finite
+algebraic assertion. No cost claim for evaluating arbitrarily large
+cyclotomic masks is inferred from it.
+
+**3. Exact gcd equivalence.**
+
+On conditions (F3)--(F4), (F1) has a unit multiplier, hence
+
+    gcd(N,C_(W,r))=gcd(N,S_r).                          (F5)
+
+The gcd is well defined using any integer representative of the modular
+value. Multiplication by a unit preserves exactly the p- and q-zero
+statuses. The same is true for normalized multipliers defined by (F4).
+
+Thus if the original moment gives gcd one, every permitted filtered
+version gives gcd one. If the original moment is zero globally, each
+filtered version is also zero globally. A proper gcd occurs for a
+filtered version exactly when it already occurs for that S_r.
+
+The conclusion permits unrestricted FULL-N adaptive selection of the
+mask, its scalar, and its exponents, as long as its factorization and
+local order inequalities remain valid. There is no fixed-catalog union
+restriction here: the result holds simultaneously for every mask in
+the stated algebraic class. The order inequalities are proof-side
+conditions, not advice to the proposed N-only algorithm.
+
+It does NOT say arbitrary sums of these filtered outputs have the same
+gcd. An additive combination of unit multiples of S_r can introduce a
+new nonunit. Nor does it cover coefficients of their rational carriers,
+internal Euclidean pivots, row-specific masks, arbitrary signed column
+polynomials outside (F4), or point filters P(y).
+
+**4. Concrete cancellation masks.**
+
+Finite differences have masks
+
+    T^a prod_i (1-T^(h_i))^(b_i),   b_i>=0,
+
+where each h_i is positive and below both prime orders. Every factor
+1-T^(h_i) is a sign times a product of cyclotomic factors whose indices
+divide h_i. All their positive-index evaluated multipliers are units.
+For example the d-th step-h binomial difference is exactly
+
+    sum_(k=0)^d (-1)^k binom(d,k) (beta^(hk))^r
+      =(1-beta^(hr))^d.                               (F6)
+
+For a finite arithmetic-progression column sum use
+
+    G_J(T^h)=sum_(k=0)^(J-1) T^(hk)
+            =(T^(hJ)-1)/(T^h-1).                      (F7)
+
+If R_p,R_q are prime and r,h,J are individually positive and below
+both orders, both evaluated binomials in (F7) are units. Their product
+exponents may exceed an order; primality still forbids divisibility
+of rhJ, because none of its factors is divisible by that order. Thus
+G_J(beta^(hr)) is a unit. This useful version of (F7) does NOT require
+hJ<min(R_p,R_q), even though a direct cyclotomic-index bound from (F4)
+would impose that stronger condition.
+
+For the whole ordinary grid,
+
+    M_r=S_r G_J(beta^r).
+
+The first signed endpoint difference is the exact identity
+
+    (1-beta^r) M_r=S_r(1-beta^(rJ)).                   (F8)
+
+Its right side is the signed moment of only the two endpoint families
+x_j and beta^J x_j. It therefore has an exact rational presentation
+with at most 2(m-1) denominator factors, after grouping any duplicate
+endpoints. This low-degree signed carrier is perfectly consistent with
+the much larger positive-moment denominator floor: the observable has
+changed by canceling interior positive contributions.
+
+Under the prime-order conditions r,J<R_p,R_q, both multipliers appearing
+in (F8) are units and all three moment gcds equal gcd(N,S_r). The signed
+low-degree presentation alone does not certify an original interior
+row-to-baby collision or proper-factor gcd. Coefficient/pivot information
+inside that signed carrier is outside the present unit-multiplier theorem.
+
+**5. Actual selector and actual long-base-2 application.**
+
+Use the previously audited unconditional Baker--Harman/base-2 family,
+with exponent kappa=677/1000. It contains infinitely many balanced
+distinct-prime semiprimes, literal selector m comparable to X^(1/3),
+actual public route longBase 2, and projected local prime orders
+
+    R_p>p^kappa, R_q>q^kappa, p,q comparable to X.
+
+Uniformly at large scales, R_p,R_q>16m², since 3kappa>2. For EVERY
+width 1<=w<=L<=4m², w and m are below both prime orders, so
+beta=gamma^(-m²w) preserves those local orders. The ordinary block
+count J=floor(L/w)+1 satisfies J<=L+1<R_p,R_q.
+
+For every fixed cheap prefix budget K=O(m(logm)^A), K<R_p,R_q eventually.
+Thus (F3)--(F5) apply simultaneously to every r in [1,K], every such
+width, and every cyclotomic mask with indices at most L. The binomial
+and geometric variant also applies when h,J are individually at most
+L+1, even if hJ is larger than either order.
+
+This is an actual-source application: delta_j is the original public
+integer offset, m is the literal selector, gamma is the actual projected
+base-2 unit. No substitute one-digit offset, private base, or advised
+period is used. The analytic supply and literal routing transfer are
+inherited from the preserved source chain; they are classical results,
+not new Lean axioms in this report.
+
+**6. Cost and remaining arithmetic contract.**
+
+The original S_1,...,S_K are already constructible in Otilde(m+K)
+modular work through the original carrier's reversed logarithmic
+derivative. A shared polynomial mask of degree Otilde(m) can be evaluated
+at beta,beta²,...,beta^K by monic multipoint evaluation in Otilde(m+K)
+work. A polylogarithmic number of factored binomial/geometric masks can
+instead be evaluated by binary powers and division-free geometric sums,
+with only polylogarithmic overhead per index. Every claimed inverse
+here is explicitly a proved unit; no hidden Euclidean pivot is assumed.
+
+These are constructive upper bounds for the indicated representations.
+The unit theorem itself does not charge arbitrary factored masks as
+free or prove near-linear construction of a huge cyclotomic polynomial.
+
+The exact remaining coverage contract for these observations is:
+
+    For every required actual input, prove that some genuinely acquired
+    S_r, r in the permitted cheap index family, has proper gcd with N.
+
+The signed cyclotomic column masks neither establish nor refute that
+contract. They do not add a gcd detector beyond the acquired S_r, even
+when they produce a much smaller signed rational carrier. Arbitrary
+additive combinations and internal coefficient signals still require
+their own source-exact arithmetic coverage proof.
+
+
+**Intersection, source review and finite native scope.**
+
+The energy-small family and endpoint-catalog-unit family use the same
+published actual prime-order supply. Their discarded masses are
+\(O(M^6/(\log M)^3)\) and
+\(O(M^{5.969+\eta}(\log M)^A)\), respectively, while the retained
+actual mass is \(\Omega(M^6/(\log M)^2)\). For each fixed catalog with
+\(\eta<0.031\), the union of these losses is little-o of that mass.
+Their intersection is therefore an actual infinite family. No
+independence assumption is needed. Common-point filtering holds at all
+widths on that intersection; endpoint cross absence is claimed only
+inside the fixed accessible width union. A bound on widths selected in
+one execution is not substituted for the union condition.
+
+The analytic supply is the published Baker--Harman exponent
+\(677/1000\), in Section 4, Lemmas 19--20 of
+[Kurlberg--Pomerance](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+with the preserved literal selector/projection transfer. No quasi-RH,
+GRH, short-bin prime equidistribution, or individual prime-gap estimate
+is required for these obstructions.
+
+A further primary manuscript from the user's OpenAI repository was
+read at the pinned commit
+`adc7f1241b42e322a6451854ab7e4b4c146bf78a`:
+[Deterministic Polynomial Factorization over Prime Fields](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf).
+It takes the prime characteristic as input and constructs the
+corresponding Frobenius-fixed algebra (Section 9.1). Its cost is
+polynomial in the degree and the characteristic's bit length, with a
+large fixed exponent. That stated theorem does not supply either an
+unknown-factor Frobenius map modulo a semiprime or a near-linear
+whole-family acquisition bound. Its dynamic-evaluation zero tests may
+suggest internal observables, but importing the field algorithm does not
+prove that those tests separate the two unknown prime components.
+The literal substitution of exponent \(N=pq\) for exponent \(p\) also
+fails as a generic Frobenius construction: over \(\mathbb F_p[X,Y]\),
+\((X+Y)^{pq}=(X^p+Y^p)^q\) has the mixed term
+\(qX^{p(q-1)}Y^p\) with nonzero coefficient, since \(p\ne q\).
+This is our algebraic transfer check, not a claim made by the manuscript.
+A different factoring adaptation would require its own proof. No
+manuscript claim is used as a new premise here; the PDF, extracted text
+and source provenance are pinned by the new audit.
+
+The new native leaf has 348 lines and 13 source theorems. All 15
+declarations, including two generated helpers, use only `propext`,
+`Classical.choice` and `Quot.sound`. Fifteen linters find zero errors in
+13 direct plus two generated declarations; the checker selects by module
+provenance and has zero checker-local helpers. Strict warning-as-error
+compilation, the focused build, focused checker and ordinary registered
+root check pass. Generated C exports module initialization only. There
+are no new definitions, new factorization examples or executable
+factorization runs.
+
+`injective_filter_denominator_degree` proves the exact canceled-pole
+budget. `weighted_labelled_moments_group` preserves the original positive
+multiplicities before applying arbitrary signed point weights.
+`geometric_grid_filtered_denominator_degree` requires only the row count
+below the characteristic and injectivity within each row, not a bound on
+the total raw label mass. `power_injective_on_periodic_points` proves the
+common-character gate from coprimality with a finite period.
+
+`literal_original_filtered_energy_tradeoff` connects the result to the
+actual original centered offsets and the native four-tag energy bound:
+
+\[
+(m-1)^4L\le16w\,\bigl(\deg H+\deg W\bigr)^2
+ \bigl(E_{\mathrm{nontrivial}}(N,m)+2(m-1)^2\bigr).
+\]
+
+Its finite factor16 is inherited from the parent set-energy argument;
+the sharper classical constant24 in the all-width inequality uses the
+already audited direct labelled energy proof. Neither the analytic
+infinitude nor that sharper constant is falsely credited to the kernel.
+The numerator is unrestricted in degree. The shifted-index, finite
+nonnegative-column and cyclotomic-unit identities are also native;
+Laurent columns, determinant formulas and asymptotic bit bounds remain
+classical.
+
+All 461 selected repository-source pins, 97 selected Mathlib pins and
+33 artifact pins of the preceding energy audit were freshly rechecked
+with zero mismatches. The new audit
+`docs/semiprime-signed-moment-acquisition-obstruction-audit.json`
+preserves that entire parent chain, adds the focused source/checker and
+critical Mathlib source pins, and records the three reviewed arithmetic
+proofs and exact registration snapshots. Registration adds exactly one
+ordinary root import, one module entry in the existing `semiprime`
+family, and this one dated journal insertion. Exact removal restores
+all preexisting root, metadata and journal bytes.
+
+**Remaining substantive acquisition obligation.**
+
+These results close the specified dense common-point signed filter and
+maximal-rank scalar detector routes. They do not claim that every signed
+method fails. Endpoint carriers and genuine short moments are cheap;
+the first unpaid endpoint observables already include
+\(B_3=3(c^3-1)a_3+(c^2-c)a_1a_2\) and
+\(Q_2=(1+c^2)a_2+c a_1^2\), whose additive cancellations are not
+controlled by their unit factors. Coverage through these combinations,
+smaller minors, Euclidean/subresultant pivots, unrelated row/column masks,
+partial norms and coupled implicit representations remains unproved.
+
+The actual-prime centered covariance estimate D11 is unchanged: neither
+new uncentered source energy nor a determinant rank formula supplies it.
+The full deterministic one-sixth goal still needs guaranteed factor
+acquisition, public controller/projection/recovery, nonunit and saturated
+cases, prime-square handling, and complete bit-time and peak-working-
+memory bounds. The goal remains active.
+
+### 2026-10-07: Almost all original rows are isolated at linear width
+
+This turn is **progress** on the whole-family acquisition frontier: it
+proves a stronger arithmetic obstruction for the specified exact signed
+carrier route. At the literal width \(w=4m\), infinitely many actual
+balanced long-base-2 inputs have \(m-o(m)\) original rows whose entire
+shifted orbits are isolated from every other original row in both hidden
+fields. Consequently arbitrary per-label weights, even chosen using all
+of N, cannot cancel those poles if the weights there remain nonzero.
+
+For an exact normalized whole-series denominator H this gives
+
+\[
+\deg H\ge |G|\left(\lfloor L/(4m)\rfloor+1\right)
+       =\Omega(m^2).
+\]
+
+A route materializing this carrier densely therefore cannot acquire or
+store it in \(\widetilde O(m)\). This improves the preceding positive
+energy bound at this width and covers arbitrary nonseparable nonzero
+signed label weights. It proves the arithmetic source of the obstruction:
+almost all original source rows have nobody else with whom to cancel.
+Original row-to-baby forced hits remain present; source-row isolation
+does not remove those hits.
+
+The new finite arithmetic input is the exact prescribed-difference bound
+
+\[
+\sum_{s=1}^{m-1}\sum_{u=0}^{m-1}
+ \#\{(i,j):1\le i,j<m,\ i\ne j,
+   \delta_i(s+mu)-\delta_j(s+mu)=D\}
+ \le 2(m-1)^2
+\]
+
+for **every prescribed integer D**. The quadratic lower residue gives
+at most two partners per row, and the second carry is unique for every
+distinct pair. The existing harmonic prime envelope counts incidences,
+so it can be combined with this bound before summing exact selector gaps.
+The resulting small interaction load, together with the zero-shift alias
+bound, yields a common isolated row set in both fields.
+
+The finite difference count and arbitrary signed singleton-pole/edge
+bound are kernel checked in
+`RiemannGaussian/SemiprimeIsolatedRowAcquisitionObstruction.lean`.
+The actual infinite-family transfer, published prime density, selector
+summation, asymptotics and cost consequences below remain **classical**.
+They introduce no Lean axioms. No new successful factoring examples,
+algorithm timing runs or backend-only progress is credited. The full
+guaranteed one-sixth bit-time and peak-memory factorization goal remains
+open.
+
+**1. Literal source and theorem**
+
+Let N=pq be an actual balanced distinct-prime input. Let m be its literal
+public selector, the least prime satisfying N<=m^6, and let L=L(m) be the
+original padded baby length. For m>=4 the source proves
+
+    2m^2 <= L <= 4m^2.
+
+Put d=m-1 and retain every original denominator-one label 1<=j<m.
+Their literal centered integer offsets are
+
+    delta_j(N)=a_j(N)+m b_j(N)-2a_j(N)j,
+    -3m^2 <= delta_j(N) <= m^2.
+
+These offsets depend on N mod m^2 as EXACT integers. If n=s+mu with
+1<=s<m, 0<=u<m, and t_j=j^(-1) in F_m, their source identities are
+
+    delta_j(s+mu) mod m = s(t_j^2-2t_j),              (I1)
+    delta_j(s+mu)-delta_j(s) = -m u t_j (mod m^2).   (I2)
+
+Let gamma be the actual routed projected unit, and put
+
+    x_j=gamma^(N+delta_j(N)),
+    beta_w=gamma^(-m^2 w),
+    J_w=floor(L/w)+1,
+    y_(j,h,w)=x_j beta_w^h,  0<=h<J_w.              (I3)
+
+For the literal width w=4m, there are infinitely many balanced actual
+inputs whose literal route returns longBase 2, with both projected local
+orders distinct primes exceeding 16m^2, for which a common set G of
+original labels has cardinal m-o(m), and every point of every row j in G
+is different from every other original grid point in BOTH hidden fields.
+Within a fixed row, the only equal point is the identical label h.
+
+The theorem also holds simultaneously for a fixed per-m accessible
+catalog of widths W_m, provided fixed constants c_*,C_*,C,A,eta satisfy
+
+    W_m subset {w: 1<=w<=L(m), c_*m<=w<=C_*m},
+    |W_m| <= C m^eta (log(2m))^A,
+    0<c_*<=C_*<infinity,
+    eta<3kappa-2=31/1000,
+    kappa=677/1000.                                 (I4)
+
+The catalog is fixed independently of the input beyond m. Its entries
+can be chosen or revisited adaptively using the complete public N, but
+the union of accessible widths must remain W_m. The theorem does NOT
+allow an arbitrary separate catalog W_(m,n) for each n=N mod m^2, and
+does not assert simultaneous isolation at every width 1<=w<=L.
+
+**2. Fixed integer differences retain a unique second carry**
+
+For every integer D, define the labelled fixed-difference load
+
+    A_m(D)=sum_(s=1)^(m-1) sum_(u=0)^(m-1)
+      #{(i,j): 1<=i,j<m, i!=j,
+                    delta_i(s+mu)-delta_j(s+mu)=D as integers}.
+
+Then
+
+    A_m(D) <= 2(m-1)^2.                              (I5)
+
+Proof: fix s and i. Reduction of the equality modulo m gives
+
+    s(t_i^2-2t_i)-s(t_j^2-2t_j)=D mod m.
+
+This is a polynomial equation of degree two in t_j with nonzero leading
+coefficient -s. It has at most two solutions, and inversion is injective
+on the nonzero tag residues. Thus at most 2d ordered pairs (i,j) can be
+candidates for this fixed s. Excluding i=j only reduces this count.
+
+For a fixed distinct pair (i,j), subtract (I2) for the two tags. Its
+second-carry variation modulo m^2 is
+
+    [delta_i(s+mu)-delta_j(s+mu)]
+       -[delta_i(s)-delta_j(s)]
+      =-m u(t_i-t_j) mod m^2.                       (I6)
+
+If two carries u,v realized the same integer D, (I6) would imply
+(u-v)(t_i-t_j)=0 in F_m. Since i!=j, the coefficient is a unit, hence
+u=v in F_m and therefore as the canonical integers 0<=u,v<m.
+Each candidate ordered pair contributes at most once. Sum over d
+lower states to obtain (I5). This bounds exact integer equalities by
+congruence equalities; no existence or uniformity of the unique carry
+is asserted. Repeated indices have been explicitly excluded.
+
+**3. The envelope counts labelled (p,v,k) incidences**
+
+Use fixed c>0 and a large scale X, put M=X^(1/3), and assume
+
+    cX<=p,q<=X,
+    a_0M<=m<=b_0M,  a_0=c^(1/3), b_0=4,
+    p=1+v R_p,  1<=v<=V<=m.                         (I7)
+
+Here R_p is the actual projected p-field order, a prime. Temporarily
+discarding primality of p and R_p is allowed in an upper count. For
+X>=2/c,
+
+    cX/(2v)<=R_p<=X/v.                              (I8)
+
+Suppose two distinct rows meet at orbit indices whose positive difference
+is a, 1<=a<J_w. Reversing both rows and indices handles a negative
+difference. The exact local equality is
+
+    delta_i(N)-delta_j(N)=m^2 w a-k R_p.             (I9)
+
+Write t=w a. Since w>=c_*m, for large m we have t>=8, and
+t<=w(J_w-1)<=L<=4m^2. The offset bounds imply
+
+    |m^2 t-k R_p|<=4m^2.                            (I10)
+
+Because t>=8 and R_p>0, k is a positive integer. For fixed (m,t,v),
+(I8)--(I10) put k in the interval
+
+    A=v m^2(t-4)/X <= k <= B=2v m^2(t+4)/(cX),
+    B/A <=6/c.                                    (I11)
+
+Set C_h=1+log(6/c) and C_k=3b_0^3/c. The elementary harmonic bound and
+m^3<=b_0^3X give
+
+    sum_(k in [A,B], k>=1) 1/k <= C_h,
+    #{such k} <= C_k v t/m+1.                      (I12)
+
+The harmonic bound is uniform even if A<1: then B<6/c, so the interval
+has only a bounded initial harmonic sum. If A>=1, compare the sum to
+the integral on a bounded-ratio interval.
+
+For each k, (I10) restricts R_p to an interval of length 8m^2/k, with
+at most 8m^2/k+1 integer values. Each gives one p=1+vR_p. Consequently
+the number of labelled (p,v,k) incidences for this fixed (m,t,v) is at
+most
+
+    8 C_h m^2+C_k v t/m+1.
+
+Sum over v<=V. Using t<=4m^2 and V<=m gives, with
+C_p=8C_h+4C_k+1,
+
+    #{(p,v,k): (I7)--(I10)} <= C_p V m^2.            (I13)
+
+This is an INCIDENCE count, not merely the size of the union of the p
+values. It pays separately for every admissible k and every v; this is
+essential because the integer difference D=m^2t-kR_p depends on that
+incidence. Counting some actual p more than once remains an upper bound.
+
+**4. Simultaneous carry and exact selector summation**
+
+Let m^- be the predecessor prime and g_m=m-m^-. The literal selector
+bin is
+
+    (m^-)^6 < pq <= m^6.                            (I14)
+
+For fixed p>=cX, the admitted q strip has length at most
+
+    Delta <=6m^5 g_m/(cX).
+
+Set A_0=6b_0^3/c and A_1=A_0+1. A fixed residue class of q modulo m^2
+has at most A_1(g_m+1) integer representatives in this strip. Actual
+prime p>m is a unit modulo m^2, so each unit state n=pq mod m^2 fixes
+one q class. These are integer counts, not estimates for primes in
+short intervals.
+
+Fix now m,w,a and one incidence (p,v,k) from (I13). It fixes the actual
+integer D=m^2wa-kR_p. By (I5), summing over all unit states n and all
+ordered distinct row pairs gives at most 2d^2 matches. For each matching
+state, the selector allows at most A_1(g_m+1) integer q values. Thus
+
+    sum_(literal pairs p,q with selector m)
+       #{(i,j): i!=j, delta_i-delta_j=m^2wa-kR_p
+                         for their actual positive integer k}
+       <=2 A_1 C_p V m^4(g_m+1).                   (I15)
+
+Primality and the actual projection conditions on q were discarded only
+after restricting p to an actual prime with the stated R_p. This is a
+valid upper bound for actual inputs. In particular, this argument does
+not replace the actual q-dependent projected gamma by a different unit:
+it uses only its genuine prime period and a necessary exact congruence.
+
+Define C_p(N,m,w) to count the ordered triples (i,j,a), i!=j,
+1<=a<J_w, for which (I9) holds modulo the actual p-field prime period;
+the integer k, when it exists, is unique. Define C_q analogously, and
+put C_p^all=sum_(w in W_m) C_p(N,m,w), with C_q^all similar.
+For w=4m there is just that one width.
+
+For a linear width in (I4),
+
+    J_w<=C_J m,  C_J=4/c_*+1.
+
+Write H_X=max_(a_0M<=m<=b_0M)|W_m|. The selector primes form a consecutive
+prime range, and elementary telescoping gives
+
+    sum_m(g_m+1)<=2b_0M.
+
+Sum (I15) over w and a and then over m. Including both hidden-field
+orientations gives the explicit aggregate bound
+
+    sum_(actual ordered pairs in the scale)
+          (C_p^all+C_q^all)
+      <= 8 A_1 C_p C_J b_0^6 H_X V M^6.             (I16)
+
+No individual prime-gap theorem, independence assumption, or offset
+equidistribution is used. The freedom of the complete second residue
+digit has already been paid by the exact fixed-D bound (I5). A width
+depending freely on n would make D depend on n inside that bound; it
+is precisely why (I16) does not cover two-digit-dependent width catalogs.
+
+**5. Actual long-base-2 supply and small interaction load**
+
+Use the previously audited published Baker--Harman/base-2 supply at
+kappa=677/1000. Along an unbounded sequence of X it supplies balanced
+distinct prime pairs p,q in [cX,X] of mass
+
+    Omega(X^2/log^2X)=Omega(M^6/log^2M).
+
+Each prime has a unique prime factor R_P>P^kappa of P-1, with
+
+    P-1=v_P R_P,
+    v_P<=V=ceil(c^(-kappa)X^(1-kappa))
+       =O(M^(3-3kappa))=o(m).                       (I17)
+
+Discarding primes whose base-2 order omits R_P costs O(V^2/log X): such
+a prime divides prod_(r<=V)(2^r-1), and logarithms give the count.
+Discarding diagonal pairs or R_p|(q-1) or R_q|(p-1) costs only
+O(X^(2-kappa)+X) pairs by integer progression counts. The balanced mass
+remains Omega(M^6/log^2M). The actual factorial projection kills both
+small cofactor parts but preserves R_p,R_q. The cross exclusions preserve
+them under the N-1 projection; the projected periods are exactly those
+distinct primes. The already audited literal base-selection, short-order
+and projection-gcd routing then returns longBase 2.
+
+This is actual input supply, not an advised-period family. As 3kappa>2,
+both actual local prime periods exceed 16m^2 at large scales. No GRH,
+safe-prime infinitude, Poisson--Dirichlet assumption, or OpenAI manuscript
+claim is used for this unconditional theorem.
+
+Set
+
+    B(m)=m/(log m)^3.
+
+Markov applied to (I16) shows that the number of actual pairs with
+C_p^all+C_q^all>=B(m) is
+
+    O(H_X V M^5 (log M)^3).                         (I18)
+
+Relative to the retained actual mass, the upper ratio is
+
+    O(H_X M^(2-3kappa) (log M)^5).                  (I19)
+
+This tends to zero under (I4), since eta<3kappa-2. More generally (I19)
+tending to zero is the exact sufficient accessible-catalog condition.
+
+Let D_0(N,m) count unordered distinct tag pairs with equal exact integer
+offsets. The previously audited duplicate-carry theorem gives
+
+    sum_(u=0)^(m-1) D_0(s+mu,m)<=(m-3)/2.
+
+The same selector-class argument, summed over p,m, bounds pairs with
+D_0(N,m)>=B_0(m) by O(M^6/inf_(m~M) B_0(m)). Taking B_0(m)=(log m)^3
+loses only O(M^6/log^3M), which is also negligible. This statement can
+alternatively be proved with the weaker fixed-D bound (I5) at D=0;
+the inherited sharper alias count only improves the constant.
+
+Remove both exceptional sets. A positive actual infinite family remains
+with
+
+    C_p^all+C_q^all < m/(log m)^3,
+    D_0(N,m) < (log m)^3.                           (I20)
+
+The two exclusions need not be independent: their upper counts add.
+
+**6. From counted interactions to isolated original rows**
+
+In either field, beta_w has order R: R is prime, m<R, w<=C_*m<R, and
+R does not divide m^2w. Moreover J_w<R. Thus every single row orbit is
+injective. If two distinct rows meet at equal orbit indices, equality
+reduces to delta_i=delta_j modulo R; the offset gap has absolute value
+at most 4m^2<R, so it is exactly an integer duplicate counted by D_0.
+
+If they meet at unequal orbit indices, reorder the two rows so their
+positive difference a lies in [1,J_w-1]. Equation (I9) is then counted
+by C_p or C_q. This accounts for every possible interaction between
+distinct original rows, including all false rows and both orientations.
+There is no assumption about which rows furnish the original forced hits.
+
+Mark both row endpoints of every counted nonzero interaction and every
+integer duplicate pair. Across both fields and all widths the number of
+marked rows is at most
+
+    2(C_p^all+C_q^all)+2D_0
+       < 2m/(log m)^3+2(log m)^3=o(m).              (I21)
+
+The unmarked common row set G has cardinal
+
+    |G|>=m-1-2m/(log m)^3-2(log m)^3=m-o(m).         (I22)
+
+For every permitted width and in BOTH hidden fields, each original point
+y_(j,h,w) with j in G occurs at exactly one label among the full original
+grid. All these |G|J_w points are consequently distinct. This proves
+isolation against every original row, not merely against the other
+unmarked rows.
+
+For w=4m the source bounds give
+
+    m/2<=J_w<=m+1,
+
+so |G|J_w=(1-o(1))dJ_w and in particular |G|J_w>=m^2/4 for all
+sufficiently large m. For the catalogs in (I4), J_w>2m/C_* and therefore
+the same uniform Omega(m^2) lower bound holds, with a constant depending
+on C_*.
+
+**7. Arbitrary nonzero signed weights cannot cancel isolated poles**
+
+For a permitted width consider the genuine whole-grid formal series
+
+    F_lambda(z)=sum_(j,h) lambda_(j,h)
+                      y_(j,h,w) z/(1-y_(j,h,w)z).   (I23)
+
+The weights may depend arbitrarily on the complete public N, on the row,
+and on the orbit index. They need not be positive or separable. Assume
+each weight on the isolated labels j in G is nonzero after reduction to
+the hidden field under consideration. A simple public sufficient gate
+for both fields is that those weights are units modulo N. Weights at all
+other grid labels may be arbitrary, including zero.
+
+After grouping equal field points, the weight at every isolated point
+is exactly its one nonzero original weight. No sum with another label
+can cancel it. If polynomials H,K over Z/NZ satisfy
+
+    H(0)=1,  H F_lambda=K as ENTIRE formal series,
+
+then in either hidden field H must vanish at the inverse of each of
+these isolated points. To see this, clear the product of the linear
+denominator factors over ALL DISTINCT local grid points, including the
+nonisolated points, and evaluate the resulting polynomial identity at one
+isolated reciprocal node. All other grouped summands vanish there, and
+the surviving nonzero coefficient and distinct-node factors force H to
+vanish. This product is a proof device, not an algorithmic construction.
+Reduction preserves the constant coefficient 1
+and cannot increase degree. Therefore
+
+    degree H>=|G|J_w=Omega(m^2).                     (I24)
+
+This includes every separable row/column choice lambda_(j,h)=r_j c_h
+with all relevant r_j,c_h units, every choice of signs +/-1, and arbitrary
+nonseparable unit weights. It is stronger than a positivity argument:
+even deliberately chosen additive cancellations cannot affect a uniquely
+labelled pole. Signed recurrence representations that multiply by unit
+or monomial phases are covered by the same exact pole argument.
+
+If instead a common point filter P(y) of degree e is used for the weights,
+at most e isolated points can have zero weight in a field, provided P
+reduces to a nonzero polynomial there. Hence the corresponding exact
+denominator degree is at least |G|J_w-e. This optional consequence is a
+root-count statement, not a claim that evaluating an arbitrary P is free.
+
+**8. Exact cost scope and limits**
+
+For the fixed width 4m, and more generally every linear width in the
+per-m catalog, an exact whole signed-moment carrier with all isolated
+labels retained at nonzero local weight requires denominator degree
+Omega(m^2). A route materializing this denominator densely must write
+and store Omega(m^2) coefficient slots. Thus this specified exact dense
+carrier route cannot have near-linear Otilde(m) acquisition time or
+coefficient memory on this actual infinite family.
+
+This does NOT obstruct computing a cheap genuine moment prefix,
+extracting gcds of low coefficients or smaller/internal Hankel or
+subresultant pivots, or a sparse/implicit circuit representation. It
+does not forbid choosing zero weights that erase the isolated labels,
+nor prove coverage or failure for the resulting reduced source. It does
+not assert a finite-prefix candidate obstruction for arbitrary signed
+weights: only exact equality of the entire series is used in (I24).
+It does not cover arbitrary full-N width selection outside a fixed
+per-m accessible catalog, arbitrary n-dependent width catalogs, or all
+widths at once. Original forced row-to-baby hits remain present in their
+original interval; isolation concerns overlaps of the shifted source
+rows with each other, rather than absence of those genuine collisions.
+
+**9. Source hooks and analytic references**
+
+- RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean: literal
+  seedOffset, integer bounds and the exact target exponent.
+- RiemannGaussian/SemiprimeScatteredColumnObstruction.lean: exact
+  offset periodicity in the complete public state N mod m^2.
+- RiemannGaussian/SemiprimeOffsetCarryObstruction.lean:
+  offset_difference_modEq, duplicate_pair_unique_carry, residue partner
+  uniqueness, and duplicate_carry_mass_le; these provide the literal
+  second-digit identities and the inherited zero-shift alias count.
+- RiemannGaussian/SemiprimeSeedMomentCancellationObstruction.lean:
+  seedPoint_geometric and linear_moment_grid_count.
+- docs/semiprime-shifted-norm-acquisition-obstruction-audit.json and
+  /tmp/semiprime-corrected-acquisition-20261007/crossnorm-classical-proof.md:
+  prior harmonic envelope constants, literal selector and actual
+  long-base-2 supply. That pinned artifact was read only for this proof.
+- /tmp/semiprime-offset-carry-20261007/classical-proof.md: previously
+  audited duplicate-carry selector loss and actual projection transfer.
+  That pinned artifact was read only for this proof.
+- Published analytic input, Kurlberg--Pomerance Section 4 Lemma 19:
+  https://www.impan.pl/shop/en/publication/transaction/download/product/82225
+- Baker--Harman large-prime-factor source:
+  https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/83/4/110107/shifted-primes-without-large-prime-factors
+
+The finite arithmetic is proved here. Published density and the actual
+infinite-family transfer remain classical statements, not additional
+Lean axioms. No OpenAI batch result is needed for this theorem.
+
+**Cheap prefixes and the signed endpoint information contract.**
+
+The whole-series degree obstruction does not obstruct genuine short
+prefixes. For separable weights \(\lambda_{j,h}=a_jb_h\), define
+
+    T_r=sum_j a_j x_j^r,
+    B(T)=sum_(h=0)^(J-1) b_h T^h.
+
+Then the genuine weighted grid coefficient is exactly
+
+    F_r=T_r B(beta^r).
+
+A balanced rational sum tree for
+`sum_j a_j*x_j*z/(1-x_j*z)` gives T_1,...,T_K in
+Otilde(m+K) modular work. Every formal denominator has constant term one.
+Monic multipoint evaluation of B at beta,...,beta^K gives the other
+factor in Otilde(J+K), over Z/NZ without unknown-factor inversions. Thus
+the complete genuine prefix costs Otilde(m+J+K) work and coefficient
+storage; at w=4m and K=Otilde(m) this is near-linear. This claim assumes
+the supplied separable row and column weight lists. Arbitrary unrelated
+per-label tensor weights have (m-1)J input entries and do not share this
+input-cost guarantee. Acquiring this prefix does not prove factor coverage.
+
+The endpoint repair from the parent audit is source preserving at low
+indices. With c=beta^J it has E_r=(1-c^r)S_r. For K below both actual
+prime periods, every1-c^r is a unit: complete endpoint and seed prefixes
+are reversibly equivalent with O(K) modular multiplications and one
+batch inverse. Grid prefixes are likewise reversible with O(K logJ)
+overhead. Full-N adaptation and additive pivots can be simulated exactly;
+this is a reduction to the original cheap source, not their coverage or
+failure theorem.
+
+The literal norm carrier Q(z)=A(z)A(cz) is also reversible in near-linear
+classical cost. Odd local order makes1+c^k a unit for every k. If
+B(z)B(cz)=Q modz^n, compute at precision2n
+
+    T=Q/[B(z)B(cz)]-1,
+    Y_k=T_k/(1+c^k),
+    B_new=B(1+Y).
+
+Here T,Y vanish below n, so Y(z)Y(cz) vanishes below2n and the precision
+doubles. Coefficient uniqueness identifies B_new with A at this
+precision. All polynomial-series inverses are constant-one inverses,
+and the scalar gates can be batch-inverted. First-d endpoint moments
+recover even the tagged A from a reduced endpoint representation using
+Newton identities; divisions are restricted to integers<=d<p,q.
+
+The preceding endpoint coefficient loss at a hidden period is a literal
+loss on unrestricted periodic streams. It is **not** information loss
+on the constrained original degree-d source class: the invertibly scaled
+first d moments determine A. This clarification does not acquire the
+full shifted interval product or prove a factor collision. Complete
+proofs are pinned in `endpoint-source-equivalence.md` and
+`signed-prefix-acquisition.md` in this turn's artifact directory.
+
+**A narrow degree-two remainder-pivot obstruction.**
+
+There is a subsidiary actual-input obstruction for ordinary two-source
+subcarrier Euclidean remainder pivots. For any original powers x,y of
+the odd-order routed unit, s=x+y is a unit in both fields, including
+duplicate source nodes. At an allowed shift c with c-1 unit, set
+
+    U=T^2-sT+b, V=T^2-csT+c^2b, b=xy.
+
+Their first remainder is
+`-(c-1)s*T+(c^2-1)b`, with both coefficients units. Dividing U by it
+leaves `b(x-cy)(y-cx)/s^2`. The inherited actual all-cross-unit catalog
+family therefore makes every leading remainder pivot a unit, for ANY
+pair of original rows chosen adaptively. Its catalog condition belongs
+to the earlier shifted-cross theorem, which permits fixed catalogs per
+(m,Nmodm^2); it is distinct from the per-m-only isolation theorem above.
+This does not control quotient constants, larger carriers, sums of pair
+detectors or arbitrary internal additive pivots. The finite algebra and
+precise transfer are pinned in `two-source-pivot-closure.md`.
+
+**Primary modular-composition result examined.**
+
+Van der Hoeven and Lecerf's
+[Fast modular composition using spiroids](https://www.texmacs.org/joris/fftcomp/fftcomp.pdf)
+does allow composition over Z/rZ for arbitrary r, so unknown semiprime
+coefficients are within its ring contract. Theorem1 takes dense
+degree-D input polynomials and gives
+`D^(5/sqrt(logD))*Otilde(D log r)` bit cost. That subpower factor is
+larger than a polylogarithmic overhead. It does not presently acquire
+the compact interval product P_L from its q-product specification or
+provide the corrected moving-ideal query in Otilde(m). No new external
+result is used as a premise of the row-isolation theorem. The primary
+PDF and a narrow transfer audit are pinned in this turn's directory.
+
+**Native trust boundary, validation and registration.**
+
+The new source contains9 theorems,2 noncomputable finite-set definitions
+and1 computable finite-set helper. Its31 module declarations, including
+28 theorems with generated helpers, have only propext, Classical.choice
+and Quot.sound as transitive axioms. The15 focused linters report zero
+errors in12 direct declarations plus19 generated declarations. The
+checker contributes no local helpers. The computable isolatedRows helper
+only deletes finite edge endpoints; generated C is initialization plus
+that finite-set helper and its standard list specializations. No new
+factoring algorithm was executed.
+
+Strict warning-as-error compilation, the focused lake build and the
+focused checker all pass. Their GNU-time measurements are recorded below;
+these are proof-validation resources, not acquisition-algorithm timings.
+
+| Check | Seconds | Peak RSS (KiB) | Exit |
+| --- | ---: | ---: | ---: |
+| strict | 3.51 | 3878204 | 0 |
+| build | 5.69 | 3904620 | 0 |
+| checker | 10.29 | 3884124 | 0 |
+
+An ordinary root-import check is separately recorded in the audit. No
+theorem-explorer graph/dashboard regeneration, whole-worktree build,
+commit or publication is performed. Registration consists of exactly
+one root import, one semiprime module-family metadata entry and this one
+dated journal insertion. Exact removal of each insertion restores its
+fresh before-snapshot byte for byte.
+
+The parent464 selected source pins,102 selected Mathlib pins and43
+parent artifacts were rechecked with zero mismatches; the earlier33
+energy artifacts were also rechecked. Prior proof and audit bytes remain
+unchanged. The new audit is
+`docs/semiprime-isolated-row-acquisition-obstruction-audit.json`.
+It distinguishes native finite arithmetic from classical analytic
+supply/infinitude and from dense acquisition-cost consequences.
+
+The next substantive frontier is guaranteed proper-factor coverage from
+genuine near-linear source observations or a proved cheap implicit
+interval query. A zero-weight mask must pay for acquiring its weights
+and prove it preserves enough forced information; it cannot rely on
+cancellation at the isolated retained labels. Smaller/internal additive
+pivots remain open beyond the explicitly scoped two-source remainder
+channel. The full guaranteed N^(1/6) factorization and full bit-complexity
+proof remain unfinished, and the goal remains active.
+
+### 2026-10-08: Sparse row masks miss every hit; honest Gauss punctures stay units
+
+This turn is **progress** on the arithmetic acquisition frontier. The
+preceding completed turn proved actual row isolation at linear width;
+the interrupted continuation left classical mask/cyclic/Gauss drafts.
+This turn checks those drafts independently, strengthens the Gauss
+argument, and attaches finite source arithmetic and mask forcing to Lean.
+No successful factorization examples or backend lemmas alone are counted
+as the advance. The full guaranteed one-sixth factorization objective
+remains open.
+
+The new all-hit theorem concerns a concrete potentially near-linear
+channel: polylogarithmically many full original row-norm queries. Fix an
+accessible row catalog for each public selector m and complete state
+n=N modm^2, with size O(m^eta log^A m), eta<31/1000. There are infinitely
+many actual balanced long-base-2 inputs on which EVERY original interval
+factor of EVERY accessible row is a unit in both hidden fields. Hence
+all selected scalar row norms have gcd1; their original complementary
+norms have gcdN. These tests cannot guarantee a proper factor.
+
+The catalog bounds the union of every row accessible for that fixed
+(m,n), across all higher input digits and branches. It is not a lower
+bound on the number of queries by an arbitrary full-N algorithm.
+Individual executions may inspect all of N and adapt inside the fixed
+union. Arbitrary full-N row selection with a large accessible union,
+additive intermediate values and large implicit partial norms remain
+outside the obstruction.
+
+The decisive arithmetic gain is that the original baby index disappears
+from a necessary polynomial modulo m^2. Its simple roots contribute only
+O(H_X V M^5) actual pairs, with no extra original interval-length factor.
+The true repeated branch costs O(H_X M^5); the second repeated branch
+costs O(V M^5) even across every original row. Here V=O(M^.969) and
+actual retained supply is Omega(M^6/log^2M). The exceptional ratio tends
+to zero under the stated catalog bound.
+
+A complementary positive certificate is public: the involution
+j -> (N modm)/j pairs the two factor tags. An orbit-cover row mask
+contains at least one forced tag on the balanced gates, and thus its
+original masked norm is necessarily nonunit. Every cover needs at least
+half the tags. On the prior isolated-row family, retaining this cover
+with nonzero local weights keeps Omega(m^2) exact signed-series poles.
+Acquiring the guaranteed nonunit partial norm implicitly remains open.
+
+Finally, the honest auxiliary quadratic-character replacement does not
+repair scalar coverage. The actual prime/cofactor supply has no
+nontrivial m-th root in either hidden base field. This forces the public
+Gauss gate epsilon*m^m-1 to be a unit pointwise, and therefore every
+complete or single-root-punctured Gauss norm remains a unit. Its trace
+is explicitly unit or globally zero. No further exceptional-set removal
+is needed; the conclusion is uniform over all comparable auxiliary
+primes, even chosen using all of N. This replacement is not the original
+integer-carry source, whose genuinely cheap multirow moments remain open.
+
+The finite hit polynomial, simple-lift uniqueness, repeated branches,
+public mask forcing/size, masked pole bounds and Gauss unit gates are
+kernel checked in
+`RiemannGaussian/SemiprimeMaskAcquisitionObstruction.lean`.
+Published density, actual infinite-family transfer, the incidence counts,
+cyclic-norm identities, cyclotomic Gauss construction/trace/norm and bit
+cost consequences below are **classical**. No analytic fact is added as
+a Lean axiom, and no factoring clock is inferred from compilation.
+
+**1. Literal original source and catalog theorem**
+
+For N=pq let m be the literal least-prime selector with N<=m^6. Let
+L=L(m) be the original padded baby length. For m>=4,
+
+    2m^2+2<=L<=4m^2.
+
+For every original denominator-one row 1<=j<m, let a_j be its public
+representative and b_j,c_j its literal centered row coefficients:
+
+    N=m^2 c_j-jm b_j+j^2 a_j,
+    delta_j=a_j+mb_j-2a_jj,
+    -3m^2<=delta_j<=m^2.                             (M1)
+
+The representative and exact integer offset depend only on n=N modm^2.
+In the unit states n, 1<=a_j<m. With the ACTUAL routed projected unit
+gamma, put
+
+    x_j=gamma^(N+delta_j(N)), alpha=gamma^(m^2),
+    A_S=product_(j in S) product_(0<=r<L)(x_j-alpha^r).
+                                                               (M2)
+
+Fix, in advance, arbitrary accessible row catalogs
+
+    S_(m,n) subset {1,...,m-1},
+    n in (Z/m^2 Z)^times,
+    |S_(m,n)|<=C m^eta (log(2m))^A,
+    0<=eta<3kappa-2=31/1000,
+    kappa=677/1000.                                  (M3)
+
+They may depend arbitrarily on BOTH residue digits. Their size bounds
+the union of every row an execution can access in that state, not just
+the number queried on one input. Full-N adaptation, intermediate
+observations, reordering and stopping are permitted inside these fixed
+catalogs. No effectiveness assumption on the catalog family is needed.
+
+**Theorem.** For every fixed catalog family (M3), there are infinitely
+many balanced actual distinct-prime inputs whose literal route returns
+longBase 2, with projected local orders exactly distinct primes R_p,R_q,
+such that
+
+    gcd(N,x_j-alpha^r)=1
+    for every j in S_(m,N modm^2) and EVERY 0<=r<L.    (M4)
+
+This is an ALL-hit miss, including every false row and all original
+baby columns. In particular, for every selected subset S of the
+accessible catalog, A_S is a unit. Both true full-interval forced hits
+remain in other original rows, so the full original A_all is zero
+modulo N and A_(all minus S) is zero modulo N. Selected scalar norms
+and their complementary scalar norms therefore give gcd one and N,
+respectively, rather than a proper factor.
+
+**2. Scale, selector constants and actual prime-period supply**
+
+Fix c>0, X large and M=X^(1/3). Work on the previously audited actual
+balanced long-base-2 supply with
+
+    cX<=p,q<=X,
+    a_0M<=m<=b_0M, a_0=c^(1/3), b_0=4,
+    p-1=vR_p, 1<=v<=V,
+    V=ceil(c^(-kappa)X^(1-kappa))
+       =O(M^(3-3kappa))=o(m),
+    R_p>p^kappa,
+
+and analogously for q. This supply has ordered-pair mass
+Omega(M^6/log^2 M) along unbounded X. The literal projected periods are
+distinct primes; both exceed 16m^2 eventually. No advised base or period
+is used. The supply is recalled in Section 8 with its published input.
+
+For the selector prime m, let m^- be its predecessor and g=m-m^-.
+Literal selection gives
+
+    (m^-)^6<pq<=m^6.
+
+At fixed p>=cX, the q strip has length at most 6m^5g/(cX). Consequently
+each fixed q class modulo m^2 has at most A_1(g+1) representatives, where
+
+    A_0=6b_0^3/c, A_1=A_0+1.
+
+An actual large prime p>m is a unit modulo m^2, so a fixed state
+n=pq modm^2 fixes exactly one q class. These are INTEGER cofactor counts;
+no assertion about prime density in a short selector interval is used.
+
+The possible m form a consecutive prime range, hence
+
+    sum_m(g_m+1)<=2b_0M.                              (M5)
+
+Also p modm is neither zero nor one. The first follows from p>m. For
+the second, p-1=vR_p with v<m and prime R_p>m implies m does not divide
+p-1. This excludes the otherwise degenerate j=1 repeated branch.
+
+**3. Necessary polynomial and the global multiplier bound**
+
+In the p-field, a genuine original hit is equivalent to
+
+    q+delta_j-m^2 r=K R_p                             (M6)
+
+for an integer K, because N=pq equals q modulo the actual exponent
+period R_p. This uses the actual gamma, including its dependence on q.
+
+Uniformly for 0<=r<L<=4m^2, p,q in [cX,X], we have
+
+    |q+delta_j-m^2r|<=X+3m^2+4m^4,
+    R_p=(p-1)/v>=cX/(2v),
+    |K|<=C_2 v m, C_2=(2/c)(1+7b_0^3).              (M7)
+
+For the last inequality use m^3<=b_0^3X and m>=1. Set
+
+    C_K=2C_2+1, C_3=a_0^(-3)+1.
+
+There are at most C_K v m integer K in (M7). Since v<=V=o(m),
+(C_2+1)vm<m^2 uniformly at sufficiently large scales.
+
+Multiply (M6) by vp, use vR_p=p-1, and reduce modulo m^2. It gives
+
+    F(p)=Kp^2-(K+v delta_j(n))p-vn=0 modm^2,
+    p=1 modv.                                        (M8)
+
+For fixed (m,n,j,v,K), this is a fixed polynomial. Its reduction modulo
+m is not identically zero because its constant coefficient -vn is a
+unit. The original index r has disappeared; no independent factor L
+will be inserted in any count below.
+
+**4. Simple roots: sparse rows pay for the remaining two-digit freedom**
+
+Suppose p modm is a simple root of F modm. A nonzero degree-at-most-two
+polynomial has at most two roots, and every simple root has exactly one
+lift modulo m^2. This includes K=0: the polynomial is linear or has no
+roots, and cannot have a repeated root because -vn is a unit.
+
+The condition p=1 modv combines by CRT with each root class modulo m^2,
+as v<m and m prime. Its spacing is vm^2. Throughout [cX,X], each class
+therefore admits at most
+
+    X/(vm^2)+1<=C_3 m/v
+
+integer p values. Summing over the at most C_K vm possible K bounds
+the p/K incidences per fixed (m,n,j,v) by
+
+    2 C_3 C_K m^2.                                   (M9)
+
+For each such p, state n fixes a q class modulo m^2, with at most
+A_1(g+1) integer q in the selector strip. All potential indices r in
+the original interval have already been covered by (M7)--(M9). In fact
+fixed p,q,j,K makes r unique in (M6), but uniqueness is not needed
+after counting each q only once per incidence.
+
+Put H_X=max_(m~M,n)|S_(m,n)|. Sum (M9) over at most m^2 states n,
+at most H_X selected rows, v<=V, and all selector primes using (M5).
+For one hidden-field orientation, the total simple-root bad pairs are
+at most
+
+    4 A_1 C_3 C_K b_0^5 H_X V M^5.                  (M10)
+
+This is the key sparse-ROW gain. With ALL m original rows, the same
+congruence overcount is O(V M^6), insufficient at kappa<1; retaining
+only a small accessible row union replaces that m factor by H_X.
+No unproved carry equidistribution or false-simple centered-energy
+estimate is being assumed.
+
+**5. Repeated-root classification and the true branch**
+
+Let x=p modm. At a repeated root, F(x)=F'(x)=0 gives
+
+    Kx^2=-vn, K(2x-1)=v delta_j modm.
+
+Thus K and x are units. From (M1), n=a_j j^2 and
+delta_j=a_j(1-2j) modulo m. Eliminating K gives
+
+    (x-j)((2j-1)x-j)=0 modm.                         (M11)
+
+There are only two branches: x=j and x=j/(2j-1). The second exists
+only when 2j-1 is nonzero. This argument uses that m is an odd prime,
+as on the large literal selector inputs.
+
+For the first branch x=j, write p=j+mz. Repeatedness gives
+F'(j)=0 modm, so Taylor expansion proves F(p)=F(j) modm^2. The literal
+row relation (M1) yields the exact congruence
+
+    F(j)=(K+v a_j)j(j-1) modm^2.                    (M12)
+
+Both j and j-1 are units, because x is neither zero nor one. Hence
+K+v a_j=0 modm^2. Its integer absolute value is at most
+(C_2+1)vm<m^2 by (M7), forcing
+
+    K=-v a_j as an INTEGER.                          (M13)
+
+Substitution in (M6) gives the literal forced index
+
+    m^2r=a_j p+mb_j-2a_jj+q.
+
+For counting, the decisive condition is simply j=p modm. At fixed
+m,n and a selected j, there are at most
+
+    X/m+1<=C_3 m^2
+
+integer p values. State n fixes the same q class as before. Summing
+over n, the H_X selected rows and selector m bounds this branch in
+one orientation by
+
+    2 A_1 C_3 b_0^5 H_X M^5.                         (M14)
+
+There is no v summation in (M14): all actual p in the residue class
+were counted once, after discarding primality and order restrictions.
+
+**6. The second repeated branch across the entire row family**
+
+This part deliberately bounds all original rows, irrespective of their
+catalog. Put d_j=2j-1 and let x_0=j/d_j in Z/m^2 Z. In this branch
+j,j-1,d_j are units, again since x is neither zero nor one. Taylor
+expansion at a repeated residue gives F(x_0)=F(p)=0 modulo m^2.
+Using the literal relation (M1), direct clearing yields
+
+    d_j^2 F(x_0)
+      =-j(j-1)[K+v a_j d_j^2-2vmb_jd_j] modm^2.
+                                                               (M15)
+
+For verification, substitute x_0=j/d_j into F, replace
+delta_j=-a_jd_j+mb_j and n=a_jj^2-jmb_j modulo m^2, and expand.
+The factors j,j-1,d_j are invertible, so
+
+    K=-v a_j d_j^2+2vmb_jd_j modm^2.                (M16)
+
+Fix a_j and j. Their lower state is fixed at s=a_jj^2 modm. As the
+m second carries n=s+mu vary, the row relation implies
+
+    u-u_0=-j(b_j(n)-b_j(n_0)) modm.
+
+Thus b_j modm traverses every residue once. Since 2,v,d_j are units,
+(M16) traverses all m lifts of the fixed NONZERO K class
+
+    K=-v a_jd_j^2 modm.
+
+An integer K in |K|<=C_2vm with this fixed modm class has at most
+C_K v possible values. Each such integer specifies at most one carry
+u through (M16). Therefore, for fixed (a_j,j), there are at most
+C_K v incidences (n,K). Summing the fewer than m^2 possible (a_j,j)
+gives at most C_K v m^2 incidences (n,j,K) for fixed m,v.
+
+In this branch p occupies one class modulo m and the class 1 modulo v.
+CRT spacing vm gives at most
+
+    X/(vm)+1<=C_3 m^2/v
+
+integer p values per incidence; state n and p then allow at most
+A_1(g+1) q values. The v factor cancels. Summing v<=V and the selector
+gaps bounds ALL second-branch repeated hit pairs in one orientation by
+
+    2 A_1 C_3 C_K b_0^5 V M^5.                     (M17)
+
+All original r<L are covered at once, with no column or row menu factor.
+This is the previously audited second-repeat arithmetic, written here
+in full to make the new sparse-row theorem independent of an omitted
+branch. The cleared identity (M15) also has a native source theorem
+second_branch_cleared_multiplier_identity.
+
+**7. Total count and actual infinite counterfamily**
+
+Combine (M10),(M14),(M17), and include the symmetric q-field orientation.
+The total number of actual ordered pairs with ANY original interval hit
+in ANY accessible row is at most
+
+    4 A_1 C_3 b_0^5
+      [2C_K H_X V+H_X+C_K V] M^5
+       =O((H_X+1)V M^5).                            (M18)
+
+All counts include integer cofactors, so they rigorously bound actual
+prime pairs without unproved short-interval estimates. They count
+incidences before taking their union; duplicate counting only helps the
+upper bound. The three branches exhaust the possibilities, including
+the linear K=0 case.
+
+Against the actual supply Omega(M^6/log^2M), the ratio is
+
+    O((H_X+1) M^(2-3kappa) (log M)^2).               (M19)
+
+Under (M3), H_X=O(M^eta (log M)^A), so (M19) tends to zero because
+eta<3kappa-2. Remove these hit-containing pairs. Positive actual balanced
+long-base-2 mass remains at unbounded scales, proving (M4). More
+generally (M19) tending to zero is the exact sufficient accessible-union
+condition; the power bound is convenient rather than necessary.
+
+For a polylogarithmic row catalog, every selected FULL original row is
+therefore hit-free in both hidden fields on this family. This statement
+is stronger than missing their true tags or particular cropped columns.
+
+**8. Published actual-source transfer, rather than advised periods**
+
+The published Baker--Harman result, formulated in Kurlberg--Pomerance
+Section 4 Lemma 19, supplies a positive proportion of primes P with a
+prime factor R_P>P^kappa of P-1 at kappa=677/1000. Ordinary prime
+counting places a positive fraction in [cX,X], along unbounded X.
+A finite multiplicative partition has a bin of ratio at most 3/2
+containing a positive fraction. Pairs within it give balanced mass
+Omega(X^2/log^2X).
+
+As kappa>1/2, R_P is unique and has exponent one in P-1. The small
+cofactor is bounded by V in Section 2. Primes whose base-2 order omits
+R_P have order at most V; logarithms of prod_(r<=V)(2^r-1) bound them
+by O(V^2/logX), negligible against X/logX. Integer progression counts
+discard diagonal pairs and cross cases R_p|(q-1) or R_q|(p-1) at cost
+O(X^(2-kappa)+X), negligible against X^2/log^2X.
+
+The literal public selector satisfies m comparable to M. Since v_P<m,
+the actual factorial projection kills each small cofactor portion while
+preserving R_P>m. The cross exclusions ensure R_p,R_q do not divide
+N-1, so the actual final projected orders are precisely these distinct
+large primes. All intermediate short collision and projection-gcd
+stages preserve them. The already audited native route therefore returns
+longBase 2 with its actual public unit. Both periods exceed 16m^2
+eventually because 3kappa>2.
+
+The balanced inputs also satisfy the native gates m^2<=p,q and
+2p,2q<=3m^3 at large scales. Each genuine forced residue row j=p modm
+or j=q modm consequently has its original forced hit below L. Their
+two separate hidden-field zeros make A_all=0 modulo N. No globally
+identical row/column index is assumed.
+
+No safe-prime infinitude, GRH, Poisson--Dirichlet theorem, or OpenAI
+manuscript result is used for this unconditional theorem. Analytic
+density and infinitude remain classical; they are not inserted as
+additional Lean axioms.
+
+**9. Zero masks, complements, and exact observation scope**
+
+For every S inside the accessible row catalog on the counterfamily,
+all factors of A_S are units, so A_S is a unit. The exact identity
+
+    A_all=A_S A_(all minus S)=0 modulo N
+
+and inversion of the certified unit A_S force
+
+    A_(all minus S)=0 modulo N.                      (M20)
+
+Thus cropping to ANY selected original row subset gives unit scalar
+norm, and retaining its complement gives a saturated scalar norm.
+Products, certified-unit multiplicative normalizations and boundary
+ratios with certified unit denominators remain units or zero. Their scalar gcds
+cannot yield a proper factor. A controller choosing subsets inside the
+fixed accessible catalog cannot repair this by changing which of its
+small rows are erased. The masked source contains no original local
+collision at all.
+
+This does not imply all ADDITIVE coefficients or internal pivots of a
+masked computation are units. A sum of units may be a nonunit. It does
+not control a richer partial-row complement query, a nonunit subresultant
+coefficient, or any circuit discovering another useful observable.
+It does not cover full-N masks whose accessible union for fixed (m,n)
+has size m, even if each individual execution retains one row. Small
+executed support and small accessible support are different contracts.
+
+The known classical single-target original interval-product construction
+has Otilde(sqrt L)=Otilde(m) arithmetic size. Thus polylogarithmically
+many full-row norm queries are a concrete near-linear acquisition channel
+that the theorem obstructs arithmetically. No new low-level bit-price
+implementation is supplied here, and the theorem does not assert a
+general lower bound on computing larger partial norms implicitly.
+
+**10. A cheap guaranteed balanced mask, and its dense-carrier tradeoff**
+
+There is also a genuinely public positive forcing certificate for a
+larger ROW-only zero mask. Put s=N modm, a nonzero residue, and define
+
+    sigma_s(j)=s j^(-1) modm in {1,...,m-1}.
+
+It is an involution. The actual two factor tags satisfy
+
+    sigma_s(p modm)=q modm.
+
+A row set S that meets every sigma_s orbit and contains each fixed tag
+therefore contains at least one of the actual forced factor tags.
+On the balanced gates where BOTH forced indices are below L, its
+original partial norm A_S is necessarily nonunit. This is a whole
+balanced-family forcing statement acquired from public N and m.
+
+For example, retain the smaller canonical endpoint of every two-tag
+orbit and every fixed point. Computing all inverses, the orbit pairs
+and the Boolean mask costs Otilde(m) bit operations by ordinary modular
+arithmetic. If f_s is the number of roots of j^2=s modm, then f_s is
+zero or two and every such orbit-cover certificate requires
+
+    |S|>=(m-1+f_s)/2.                               (M21)
+
+The minimum is attained by this canonical mask. If s is a quadratic
+nonresidue, the quadratic-residue tag set is another minimum cover:
+sigma_s reverses the Legendre sign. This is purely public residue
+information; no symbol at an unknown factor is evaluated.
+
+The previous actual isolated-row family has a common set G of
+m-o(m) rows whose w=4m grid points are each unique in both hidden
+fields. Hence ANY orbit-cover set S, even with endpoints chosen using
+the complete N, contains at least |S|-o(m)=Theta(m) isolated rows.
+For arbitrary locally nonzero weights on those retained labels, its
+exact whole signed grid series has Omega(m^2) unavoidable poles.
+Every normalized exact polynomial denominator therefore has degree
+Omega(m^2). More generally a family of row masks whose UNION is an
+orbit cover has TOTAL denominator degrees Omega(m^2), because the
+sum of their retained isolated-row counts is at least the isolated-row
+count in that union. For separately materialized dense carriers this is a total degree
+write charge. It does not imply the same peak-memory lower bound for a
+sequence of small masks, or charge shared implicit views and reused
+encodings. It is not a cost lower bound for implicit partial norms.
+
+The orbit-cover gate is a sufficient forcing certificate, not a proved
+necessary condition for actual-input success of every mask algorithm.
+Without an additional argument identifying which residue or block may
+contain the true factor, replacing this gate by a sparse full-N mask
+is precisely the unpaid acquisition problem.
+
+There is a further whole-family scope limit. On unbalanced remaining
+inputs only the SMALLER factor's original row is known to have its
+forced index below L. The canonical involution mask may retain only
+the larger factor tag. No full unbalanced-family forcing theorem for
+this half-row mask is asserted. Likewise no theorem here gives a cheap
+implicit evaluator for the guaranteed nonunit half-row partial norm or
+its nested descendants; that remains an explicit promising contract.
+
+**Completing the whole orbit erases the interval predicate.**
+
+There is a separate specified-route obstruction to completing the
+q-product cycle. In a field, for a unit a of odd order R, direct finite
+product interchange gives
+
+    product_(s<R) P_L(a^s T)=(T^R-1)^L,
+    P_L(T)=product_(r<L)(T-a^r).
+
+Every original target belongs to that cyclic subgroup, so all Hasse jets
+below L vanish there, whether or not it lies in the original baby
+interval. The first nonzero Hasse jet is a unit when the characteristic
+does not divide R. This completion replaces the original interval mask
+by a predicate true on all source targets.
+
+A known global order is not enough to substitute one binomial over the
+unknown composite ring. If the local odd coprime orders are A,B, the
+global order is H=AB and the completed baby-root product reduces to
+(T^A-1)^B and (T^B-1)^A. The completed interval product has exponents
+LB and LA respectively. These are not reductions of T^H-1: in the
+larger prime field the former has repeated roots, whereas the latter
+has nonzero derivative at them.
+
+More directly relevant, for a nonempty original row subset S of size d,
+the global cyclic completion of U_S(T)=product_(j in S)(T-x_j) reduces to
+
+    (T^A-1)^(dB) and (T^B-1)^(dA).
+
+At T=1 every jet below d*min(A,B) is globally zero. Actual LongData gives
+min(A,B)>4m^2, so even one retained original row has a saturated
+Otilde(m)-length jet head after this global completion. Original finite
+interval partial norms are different and are not ruled out. Supplying
+a local prime period already permits a proper power-minus-one gcd;
+supplying the exact global order permits existing factor-sum recovery.
+Neither period is a free N-only acquisition input.
+
+The following count additionally rules out two-digit-dependent short
+public annihilator recipes; it does not rule out full-N exponent recipes
+or a coupled nonlinear interval evaluator.
+
+**4. Arbitrary short exponents based on BOTH public residue digits fail**
+
+There is a classical arithmetic obstruction to supplying a short public
+annihilator using only m and n=N mod m^2. Unlike the earlier polynomial
+degree-catalogue theorem, the exponent recipes below may be arbitrary
+functions of both residue digits; they need not be polynomials or have
+small algebraic degree. Full-N dependence remains outside the statement.
+
+At scale X, set M=X^(1/3). Use the already audited actual balanced
+long-base-2 family of ordered distinct-prime pairs p,q in [cX,X], of mass
+Omega(M^6/log^2 M), on which the projected local orders are distinct
+primes R_p>p^kappa, R_q>q^kappa, kappa=677/1000. Every literal public
+selector lies in a fixed range a_0 M<=m<=b_0 M. Put
+
+    R_0=(cX)^kappa,   V=X/R_0=O(M^(3-3kappa)).
+
+For EVERY allowed integer m and EVERY integer n in [0,m^2), fix a
+catalogue E_(m,n,t) of nonzero integers. The recipe is fixed before the
+higher digits of N are inspected. Allow selecting any member using N,
+but assume the per-selector total logarithmic size satisfies
+
+    sum_t log(max(2,|E_(m,n,t)|)) <= T_X.           (C4)
+
+Negative exponents are treated by their absolute value. A zero exponent
+is excluded: it gives the trivial identity a^0=1 and is not a positive
+orbit length. An empty catalogue has zero sum. A single exponent of
+Otilde(m) bits, or polylogarithmically many such exponents with soft-linear
+total bit size, is covered by T_X=Otilde(M).
+
+For fixed m,n, at most T_X/log R_0 distinct primes R>=R_0 can divide ANY
+catalogued exponent: their product divides the product of all nonzero
+exponents, and taking logarithms proves this bound. For each such R,
+at most floor(X/R)<=V possible primes p<=X satisfy p=1 modulo R.
+For any one eligible p, p is coprime to m once X is large, since p>=cX
+while m<=b_0M. Thus pq=n modulo m^2 fixes q to ONE residue class modulo
+m^2. There are at most
+
+    X/m^2+1 <= M/a_0^2+1
+
+integers q in [cX,X] in that class. We do not use a prime distribution
+estimate for q. Counting all m and n only overcounts the actual selector.
+For one hidden-field orientation the number of bad actual pairs is at
+most
+
+    (b_0M+1)*b_0^2*M^2*(M/a_0^2+1)*V*T_X/log R_0,
+
+and the two orientations multiply this by at most two. Therefore
+
+    #bad pairs = O(V*T_X*M^4/log M).               (C5)
+
+For T_X=O(M^tau log^a M), the leading exponent is 7-3kappa+tau.
+This is strictly smaller than 6 whenever
+
+    tau < 3kappa-1 = 1031/1000.                   (C6)
+
+In particular with soft-linear bit budget tau=1, the exponent is
+5969/1000=5.969. Dividing (C5) by the actual supply gives
+O(M^(tau+1-3kappa) log^(a+1) M), which tends to zero under (C6).
+Remove this exceptional set from the inherited actual family. Infinitely
+many actual inputs remain such that EVERY catalogued nonzero exponent
+is coprime to both actual local prime periods. Since alpha has those
+prime orders, every public scalar alpha^E-1 is a unit modulo N.
+
+Consequently these two-digit-dependent short exponent catalogues cannot
+provide even one local annihilator, much less the positive complete
+orbit needed for a binomial or full-period cancellation. Gcds of their
+power-minus-one outputs all equal one. This is an arithmetic obstruction
+to the specified public short-annihilator/cyclic-norm route; it is not
+a lower bound for arbitrary bit algorithms, arbitrary full-N-dependent
+recipes, or circuits that compute other observables.
+
+If an exponent is provided by a pure multiplication/inversion straight
+line program in one group generator, g multiplication gates allow an
+integer exponent of absolute value at most 2^g (up to constant-one/input
+conventions). A polylogarithmic output catalogue produced by an
+Otilde(m)-gate program based only on m,n therefore also has total size
+Otilde(m) and is covered. This optional consequence excludes that narrow
+group-power model; additions in the coefficient ring and other inputs
+are outside it. Reuse does not imply a total-bit bound for arbitrarily
+many outputs, and that bound is required explicitly in (C4).
+
+The analytic input is only the previously audited family. Its prime
+source is Baker--Harman as recorded in Kurlberg--Pomerance, Section4,
+Lemmas19--20, which supply the .677 large prime divisor and retention in
+fixed-base multiplicative orders:
+https://www.impan.pl/shop/en/publication/transaction/download/product/82225
+The prime density and infinitude remain classical; no new Lean theorem
+or OpenAI-manuscript hypothesis is inserted here.
+
+**Honest character replacement: a pointwise scalar obstruction.**
+
+The actual gamma powers cannot be treated as a nontrivial additive
+character of F_m. Their prime period exceeds m; the existing native
+no_residue_exponent_hom proves the incompatibility. An honest character
+can instead be supplied in the cyclotomic algebra
+A_N=(Z/NZ)[T]/Phi_m(T). For m odd prime, nonzero s, primitive root zeta,
+and epsilon=chi(-1), its exact finite Gauss identities are
+
+    G(s)=sum_(u in F_m)zeta^(s*u^2),
+    Q_s=sum_(j in F_m^*)zeta^(s*(1-2j)/j^2),
+    G(s)^2=epsilon*m, Q_s=zeta^(-s)*G(s)-1.
+
+These are identities for the honest replacement of LOWER residues; they
+do not evaluate the actual gamma powers with their centered integer
+carry. The classical derivation is preserved in the earlier honest
+Gauss draft, independently reviewed here. The strengthened source gate
+below eliminates its earlier need to remove B_m-divisible pairs.
+
+**2. Stronger pointwise gate on the current actual source**
+
+The exceptional-set removal is unnecessary on the present actual
+longBase2 supply. Let P be one hidden prime, assume
+
+    P-1 = v*R,
+    m prime, 0<v<m<R, R prime,
+    m odd and m+1<P.
+
+Then m does not divide P-1. Indeed if m divides vR, primality forces
+m to divide v or R. The first is impossible because 0<v<m; the second
+would force m=R, impossible because m<R. Thus the only m-th root of
+unity in the base field F_P is one: the order of any m-th root divides
+both m and P-1, and so is one.
+
+Put a=epsilon*m in F_P. The scalar a is not one. If epsilon=+1,
+that would require P to divide m-1; if epsilon=-1, it would require P
+to divide m+1. The positive integers m-1 and m+1 are below P.
+Consequently
+
+    a^m != 1,
+    a^m-1 = epsilon*m^m-1 != 0.                (PG1)
+
+The second identity uses m odd and epsilon in {+1,-1}. Thus the exact
+older integer gate B_m is ALREADY a unit in each hidden base field.
+For N=PQ satisfying the same premises at P and Q,
+
+    gcd(N, B_m)=1                              (PG2)
+
+holds pointwise, with no analytic exception loss.
+
+There is an equally direct explanation for the original puncture.
+If Q_s vanished in a hidden extension, then G(s)=zeta^s, and squaring
+would put zeta^(2s)=epsilon*m in the base field. Since m is odd prime
+and s nonzero, zeta^(2s) is a nontrivial m-th root, contradicting the
+base-field no-root fact. This argument explains the arithmetic source
+of the obstruction independently of its geometric inverse formula.
+
+More generally, if u is ANY m-th root in a hidden extension and
+G(s)^2=epsilon*m, then neither G(s)-u nor G(s)+u can vanish. If either
+vanished, the equality of squares would give
+
+    (epsilon*m)^m = (u^2)^m = (u^m)^2 = 1,
+
+contradicting (PG1). This also covers u=1. Therefore adaptive choices
+of a single omitted m-th-root term, its phase, or its sign remain
+inside the pointwise unit obstruction. This is not an assertion about
+arbitrary combinations of coefficients or two-or-more-term punctures.
+
+**3. Simultaneous actual-input scope**
+
+The inherited actual family already has, for its literal selector m,
+P-1=v_P R_P, Q-1=v_Q R_Q with v_P,v_Q<m and prime R_P,R_Q>16m^2.
+Its hidden primes are odd and exceed m, hence exceed m+1 because both
+m and the hidden primes are odd. Every such actual supplied input
+satisfies (PG2), without further removal.
+
+The strengthening also holds simultaneously for every auxiliary prime
+m in any fixed scale-comparable range [aM,bM], a>0. On the published
+supply v_P,v_Q=O(M^0.969) and R_P,R_Q=Omega(M^2.031), while P,Q are
+of size M^3. For sufficiently large M, these bounds force
+v_P,v_Q<aM<=m<=bM<R_P,R_Q and m+1<P,Q uniformly over that range.
+Thus choosing an auxiliary prime adaptively using all of N within
+that range does not evade the pointwise gate. No fixed auxiliary catalog
+is needed for this statement.
+
+In A_N=(Z/NZ)[T]/Phi_m(T), once the classical finite Gauss identities
+are supplied, (PG2) and the geometric identity give explicit inverses
+for every nonzero-phase Q_s. Complete G(s) is a unit from its unit
+square. Determinant norms therefore have gcd one. The explicit traces
+remain one or zero as above. At a positive index r divisible by m,
+the phase becomes zero, and the constant elements m-1 and m and their
+traces/norms are units because P,Q>m. Hence all positive moment indices
+and all honest primitive-root realizations are covered simultaneously.
+
+**Scope of cheap pair cancellation and remaining additive channels.**
+
+On the actual prime-period family, original row ratios are gamma to
+delta_i-delta_j. For every positive index below both prime periods,
+distinct integer offsets give unit power differences; duplicate offsets
+give globally zero differences. Every pair sum is a unit by odd order.
+Short geometric/cyclotomic ratio masks are likewise units apart from
+the publicly synchronized zero duplicate case. This closes those pure
+pair scalar channels even for arbitrary adaptive row-pair choices.
+Their multiplicative closure does not control sums of three or more
+terms or arbitrary relative weights. A sum of units can be a nonunit.
+The complete proof is preserved in `gauss-pair-channel-obstruction.md`.
+
+The new native semiprime bridge goes beyond the standalone Gauss
+prototype's original boundary: both hidden-field scalar gates prove
+IsUnit(epsilon*m^m-1) over Z/(pq), and its image proves both puncture
+signs unit in ANY commutative extension ring. The Gauss square identity
+is still an explicit premise. Construction of the cyclotomic element,
+trace formulas and a concrete norm implementation are not silently
+credited to this finite native gate.
+
+The full-n centered prime covariance estimate D11 is unchanged. The
+new sparse-row theorem gains its H factor before the simple-root count;
+it does not prove prime-subset variance from an integer majorant. No
+whole-family near-linear implicit interval norm evaluator, guaranteed
+proper gcd from genuine short multirow moments, or general smaller-pivot
+coverage/failure theorem is supplied. Full-N sparse selection with a
+large accessible union and paid nested partial norms remain genuine
+frontiers. Public selector/controller, routing, nonunits, saturation,
+prime squares, and complete bit-time/peak-memory composition still
+belong to the unchanged full one-sixth objective.
+
+**Validation, review and byte-preserving registration.**
+
+The520-line native leaf contains30 source theorems,2 noncomputable
+proof-side definitions and1 computable generic rowPartner helper.
+All44 module declarations, including41 theorems with generated helpers,
+have only propext, Classical.choice and Quot.sound as transitive axioms.
+The15 focused linters find zero errors in33 direct declarations plus11
+generated declarations, with zero checker-local helpers. Source lexing
+strips nested comments and strings and rejects trust tokens. Generated
+C contains initialization and the generic multiplication/inversion
+rowPartner helper; no new factoring algorithm is executed.
+
+Strict warning-as-error source compilation, the focused build and checker
+pass. The ordinary root-import check is recorded separately in the
+audit. GNU-time resources below measure proof validation, not factoring.
+
+| Check | Seconds | Peak RSS (KiB) | Exit |
+| --- | ---: | ---: | ---: |
+| strict | 3.9 | 3890316 | 0 |
+| build | 6.2 | 3925488 | 0 |
+| checker | 12.33 | 3889268 | 0 |
+
+Independent reviews cover every hit branch, literal selector, published
+actual long-base-2 transfer, both-field all-hit absence, balanced mask
+forcing/size, total-degree versus peak-memory scope, cyclic-norm
+identities, bit-size exponent catalogs, Gauss pointwise gate and the
+finite native source contracts. The primary published analytic input is
+[Kurlberg--Pomerance Section4 Lemmas19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225).
+No new OpenAI manuscript or other analytic premise is needed.
+
+The parent467 selected source pins,102 selected Mathlib pins and44
+artifacts are rechecked with zero mismatches; the earlier43 signed-stage
+artifacts are also preserved. The new audit adds only the parent audit,
+native leaf and checker to the selected source chain. Exactly one root
+import, one entry in the existing semiprime module-family metadata and
+this dated journal insertion are registered; removal restores the fresh
+before-snapshots byte for byte. No commit, publication or graph/dashboard
+regeneration occurs.
+
+The detailed reports and validation artifacts are pinned by
+`docs/semiprime-mask-acquisition-obstruction-audit.json`. Native finite
+arithmetic, classical actual-family/counting arguments and bit-cost
+consequences remain explicitly distinct. The guaranteed N^(1/6)
+factorizer is unproved and the goal remains active.
+
+### 2026-10-08: Partner folding fails; same-tag recovery and all double-Gauss misses
+
+This turn is **progress**, following the completed sparse-row/all-hit
+obstruction turn. Its advances are arithmetic and acquisition results,
+not successful factorization examples or additional backend lemmas:
+
+* A fresh infinite actual-input family has coinciding factor tags at the
+  LITERAL selector. Every public partner-orbit cover is saturated there.
+  This thinner family is proved directly and is not intersected with the
+  earlier majority counterfamilies.
+* That saturation branch has useful public structure: its original row
+  representative is exactly one. Balanced inputs are recovered by an
+  executable checked factor-sum scanner with at most8m candidate trials.
+  A classical cropped progression-product method extends soft-linear
+  recovery to unbalanced distinct-prime inputs with the same tag.
+* The ORIGINAL partner targets cannot fold through few reciprocal
+  centers. Each center matches at most four tags, even with full-input
+  and hidden-field advice. A monic quartic and an exact integer lift
+  explain the obstruction; a shared scalar evaluator is not ruled out.
+* Every honest complete Gauss sum with ANY TWO m-th-root terms omitted
+  has unit norm on another actual infinite family at the literal
+  selector. Galois normalization reduces all phase choices to O(m)
+  integer norms; their selector-strip exceptional count is O(M^5),
+  below the retained Omega(M^6/log^2M) supply. Full-N adaptive phase
+  choices do not evade this catalog.
+
+The finite actual-source quartic, same-tag scanner and saturation
+contracts are kernel checked in
+`RiemannGaussian/SemiprimePartnerAcquisitionObstruction.lean`.
+Prime density/infinitude, cyclotomic norms and the full algorithmic bit
+costs remain classical. The guaranteed one-sixth factorizer is unproved.
+
+**1. Complete hit supports determine mask coverage**
+
+Let N=pq, p and q distinct primes, and let m be the literal least prime
+with N<=m^6. The original target and baby base are
+
+    x_j=gamma^(N+delta_j), alpha=gamma^(m^2),
+    delta_j=seedOffset(N,m,j), -3m^2<=delta_j<=m^2,
+    L=seedLength(m), 2m^2+2<=L<=4m^2.
+
+Define H_p as ALL nonzero original tags j with x_j=alpha^r modulo p
+for some0<=r<L; define H_q similarly. For the whole-row masked norm
+A_S=product_(j in S) product_(r<L)(x_j-alpha^r),
+
+    p divides A_S iff S meets H_p,
+    q divides A_S iff S meets H_q.                    (PT1)
+
+Thus a proper scalar gcd requires meeting exactly one COMPLETE support.
+Separating the two true factor tags does not suffice if a selected
+false tag has a hit in the opposite field.
+
+The public involution sigma_s(j)=s/j, s=N modm, pairs the true tags.
+On balanced gates both true tags hit the original interval. If those
+tags are distinct, a transversal with proper gcd p exists precisely
+when H_q contains no fixedpoint and no complete nontrivial sigma orbit.
+Necessity follows because every transversal meets such an orbit;
+sufficiency chooses an endpoint outside H_q in every orbit, forcing
+the true p tag in the true-tag orbit. Reverse the fields for gcd q.
+Every transversal is saturated precisely when both supports contain
+a fixedpoint or a complete nontrivial orbit.
+
+For both polarities of each fixed bit mask, only gcd1/N appear exactly
+when H_p,H_q attain the same bit values at every bit. Distinct true tags
+do not establish the required support-projection difference. Neither
+the current upper incidence bounds nor the public pairing give an
+arithmetic coverage theorem for these remaining masks.
+
+**2. A fresh actual same-tag family saturates every cover**
+
+Set M=X^(1/3), kappa=677/1000. The preserved published
+Baker--Harman/Kurlberg--Pomerance supply gives, at unbounded scales,
+Omega(X/logX) primes P in[cX,X] with
+
+    P-1=v_P R_P, R_P prime>P^kappa,
+    1<=v_P<=V=O(M^.969).
+
+The large divisor has exponent one and is unique because kappa>1/2.
+If ord_P(2) omits R_P, that order is at most V. Such primes divide the
+nonzero integer product_(1<=r<=V)(2^r-1), whose logarithm is O(V^2).
+At most O(V^2/logX)=O(M^1.938/logM) primes in[cX,X] are lost. Remove
+these individual primes BEFORE forming pairs. The pool still has
+Omega(M^3/logM) primes with actual base-2 order retaining R_P.
+
+For each retained P use its least prime cube-boundary m, and partition
+the prime pool into cells
+
+    C_(m,j)={P:(mminus)^3<P<=m^3 and P=j modm},
+    a_(m,j)=|C_(m,j)|.
+
+There are O(M^2) cells: occurring m lie in a fixed comparable range
+and summing all integer m bounds summing the selector primes. By
+Cauchy--Schwarz the same-cell ordered DISTINCT pair mass is
+
+    sum_(m,j) a_(m,j)(a_(m,j)-1)
+      >= (sum a_(m,j))^2/O(M^2)-sum a_(m,j)
+      =Omega(M^4/log^2M).                            (PT2)
+
+Both factors in one cube bin imply (mminus)^6<pq<=m^6, so this m is
+EXACTLY the literal product selector. Same-cell membership gives
+p modm=q modm. Diagonal pairs cost only O(M^3/logM).
+
+Remove cross-period pairs R_p|(q-1) or R_q|(p-1). For fixed p, at most
+X/R_p positive integer q>1 have q=1 modulo R_p. Both orientations
+over at most X choices p cost
+
+    O(X^(2-kappa))=O(M^3.969)=o(M^4/log^2M).          (PT3)
+
+Equal periods are already among these cross cases. No energy,
+row-isolation, Gauss-norm or other larger pair-exception set is removed
+from this thinner family. Positive same-cell mass survives at unbounded
+scales. The literal N-1 projection preserves each retained large
+period after (PT3); the actual factorial projection kills the cofactor
+v_P<m while preserving R_P>16m^2. The projected periods are the distinct
+primes R_p,R_q and the inherited pointwise routing returns longBase2.
+The selector and periods are obtained from the actual public route,
+rather than supplied to an algorithm as advice.
+
+The cube bin gives p,q<=m^3, and p,q>=cX give m^2<=p,q eventually.
+Thus the native balanced gates hold. Let j=p modm=q modm. Then
+s=j^2, sigma_s(j)=j, and every orbit cover MUST contain j. The literal
+representative a_j is exactly one: its residue is N/j^2=1 in F_m and
+its canonical value lies below m. The original forced identity becomes
+
+    m^2*r=p+q+mb_j-2j,
+    N+delta_j-m^2*r=(p-1)(q-1).                      (PT4)
+
+The index satisfies r<4m, hence r<L. For any public unit gamma, Euler's
+theorem makes (PT4) a genuine GLOBAL original interval hit. Consequently
+the retained row norm and every covering masked norm are zero modulo N:
+
+    A_S=0, gcd(N,A_S)=N                             (PT5)
+
+simultaneously for every cover, including full-N adaptive choices.
+False hits cannot repair a selected factor that is already globally zero.
+The native cover-zero and exact-gcd theorems also prove (PT5) directly
+from both original forced-row reductions.
+
+**3. Paid positive recovery for the same-tag branch**
+
+Public fixedpoint tags satisfy j^2=N modm. Over prime m there are at most
+two such nonzero tags. Scanning1<=j<m finds them in soft O(m) bit work.
+For a true same tag, (PT4) determines the exact factor sum:
+
+    p+q=m^2*r+1-delta_j, 0<=r<4m.                   (PT6)
+
+The original centered bound |b_j|<=m and the balanced upper gates
+2p,2q<=3m^3 give r<=3m+1<4m. Nonnegativity comes from the inherited
+original forced-index arithmetic, not an assumed factor-sum oracle.
+For each public fixedpoint tag, scan the4m candidate sums in (PT6).
+The existing factorSumCandidate is exact at p+q; checkedSignal returns
+only an independently verified proper divisor. An earlier successful
+wrong-index trial is therefore also safe.
+
+The new executable recoverSameTagSum N m accepts only public inputs.
+Its actual fixedPointRows list stores tags minus one, has length<=2,
+and its actual sameTagMenu length is <=8m. Lean proves soundness on
+every input and completeness on ALL balanced same-tag distinct-prime
+inputs satisfying the displayed gates. Gamma, local periods and hidden
+factors are not algorithm inputs. The native count is not a bit clock.
+The eager lists use O(m) entries; no constant-space streaming claim is
+made for this literal implementation.
+
+The public row data and candidate integers have O(logN) bits. Ordinary
+fast integer arithmetic gives a classical soft O(m logN) bit-time and
+O(m logN) working-bit bound for this finite menu. A separately streamed
+implementation could use less space; it is not needed for the claimed
+soft-linear branch. No timing of proof compilation proves this cost.
+
+For UNBALANCED same-tag distinct primes, a classical offset-j Strassen
+construction gives the same target bound without gamma or balanced
+forced-index gates. Let p<q and U=floor(sqrt N). At the true smaller
+factor's public fixedpoint tag, take the exact positive progression
+
+    C_j=product_(k>=0:j+mk<=U)(j+mk).                (PT7)
+
+It includes p. Every term is positive and <=U<q, so q divides none.
+Thus gcd(N,C_j)=p, an exact proper gcd without saturation. Wrong tags
+also give only unit or proper-p outputs because all terms lie below q.
+The literal bound N<=m^6 gives at most m^2+1 progression members.
+
+Build the monic baby polynomial F_B(T)=product_(i<B)(T+mi), B=m+1,
+and evaluate at the O(m) block starts j+mBh by a monic multipoint
+remainder tree. CROP the last block to its exact length: padding past
+U would invalidate the no-q argument. Product/remainder trees give
+soft O(m) modular work and slots, hence soft O(m logN) bit time and
+working bits for at most two tags. No evaluated denominator is inverted.
+This unbalanced offset-j backend and its bit price remain classical;
+the native balanced scanner does not silently implement them.
+
+**4. The exact public carry cancellation stops at fixedpoints**
+
+For formal lifts p=j+mu, q=k+mv, the two-digit product state
+n=jk+mC modulo m^2 is exactly equivalent to
+
+    jv+ku=C modulo m.                               (PT8)
+
+The native integer theorem proves the expansion and cancellation of m.
+If j=k!=0, this fixes u+v=C/j, hence p+q modulo m^2. If j!=k, EVERY
+prescribed sum carry w has exactly one compatible pair:
+
+    u=(C-jw)/(k-j), v=w-u.                          (PT9)
+
+Lean proves this existence and uniqueness over the public field. Thus
+the same two-digit state and nonfixed paired orbit leave every sum lift
+available. This concerns FORMAL residue lifts, not positive prime factors
+of the same complete N; higher digits, sizes and further observations
+remain available. It is not a general factoring information bound.
+
+The genuine weighted lower cancellation j(delta_j+1)=k(delta_k+1)
+modulo m also survives, and j delta_j-k delta_k is invariant modulo
+m^2 under changing the second input digit at fixed lower state. Neither
+identity supplies the unknown actual interval-hit supports or the
+distinct-tag factor sum. The fixedpoint scan therefore has no general
+paired-tag extension from this public information alone.
+
+**5. Pointwise reciprocal folding has a quartic obstruction**
+
+Write d_j=delta_j modm=s/j^2-2s/j. For sigma_s(j)=s/j,
+d_sigma=j^2/s-2j. A phase template d_sigma-e*d_j=D implies, after
+multiplying by nonzero s*j^2,
+
+    j^4-2s*j^3-Ds*j^2+2e*s^2*j-e*s^2=0.            (PT10)
+
+This polynomial is MONIC of degree four in every characteristic, hence
+has at most four roots. The native lower-phase theorem uses the literal
+original seedOffset and inherited offset_square_residue, not a new
+synthetic source.
+
+In either hidden field suppose x_sigma(j)=C*x_j^e, e=1 or -1. Choose
+one matching reference tag. Dividing its equation into another matching
+equation cancels C and the common N term. The local period R divides
+the difference of two integer partner phases. For e=-1 each phase sum
+lies in[-6m^2,2m^2]; for e=1 each difference lies in[-4m^2,4m^2].
+The compared difference has absolute value<=8m^2. If R>8m^2, it must
+be ZERO AS AN INTEGER before reduction modulo m invokes (PT10).
+No congruence modulo hidden R is reduced directly modulo public m.
+
+Thus EVERY advised actual reciprocal or ratio center matches at most
+four tags, and the products x_j*x_sigma(j) have at least(m-1)/4 distinct
+values. The native product-fiber and center-count theorems are pointwise;
+full-N and hidden-field advice do not change them. The ratio extension
+is classical in the frozen report. Even covering a half-row transversal
+needs Omega(m) such centers. Allowing individual corrections alpha^h_j,
+|h_j|<=B, gives the same quartic when R>(8+2B)m^2; their contribution
+vanishes modulo m only AFTER the stronger integer lift. Arbitrarily
+large shifts are outside the result.
+
+The exact baby-interval reversal is
+
+    P_L(alpha^(L-1)/x)
+      =(-1)^L*x^(-L)*alpha^(L(L-1)/2)*P_L(x).       (PT11)
+
+This would reuse values through a shared reciprocal center, but (PT10)
+excludes folding the actual partners through few centers. A linear center
+count does not itself lower-bound a shared scalar evaluator's cost.
+
+**6. A paid rectangular evaluator and its precise representation floor**
+
+For d=|S|, define F_S(T)=product_(j in S)(T-x_j) and
+B_b(T)=product_(r<b) F_S(alpha^r*T), a degree-db polynomial with unit
+leading coefficient. Evaluate it at the geometric block starts
+alpha^(bh) for ceil(L/b) blocks and crop the final block exactly.
+The folded product is (-1)^(dL)*A_S. Monic polynomial product and
+remainder trees give soft O(db+L/b+d) ring work; at d=Theta(m),
+L=Theta(m^2), optimizing b gives soft O(m^(3/2)), or N^(1/4) under
+the literal selector scale. This is a concrete paid algorithm, rather
+than a cheap-query oracle assumption.
+
+For the specific contract that WRITES B_b densely and EMITS all block
+values before folding, its total coefficient/value writes satisfy
+
+    db+ceil(L/b)>=db+L/b>=2sqrt(dL).                 (PT12)
+
+It cannot give soft O(m) acquisition when d~m,L~m^2. This is a TOTAL
+write bound for that representation. Streamed values do not force that
+peak memory; a scalar circuit or shared implicit encoding is outside
+(PT12). Nor may the earlier whole-series denominator degree floor be
+substituted for a scalar-resultant complexity lower bound.
+
+The remaining doubled-product query is concrete. If A_t=P_t modF_S,
+c=alpha^(-t) and P_t=A_t+F_S*Q_t, then
+
+    P_(2t)(T)=alpha^(t^2)*P_t(T)*P_t(cT),
+    P_t(cT) modF_S
+      =A_t(cT)+F_S(cT)*Q_t(cT) modF_S.              (PT13)
+
+Discarding Q_t loses the actual source information. A fixed quotient
+substitution is valid only if F_S divides F_S(cT); in a field the equal
+degrees force its nonzero roots to contain a full dilation orbit. On
+the actual prime-period family,0<t<=L<R and c has order R>16m^2,
+whereas degF_S=Theta(m). The fixed small-quotient shortcut is therefore
+excluded. Coupled moving quotients or a direct scalar-only evaluator
+remain possible mathematical frontiers.
+
+**7. All honest double-puncture norms miss another actual family**
+
+This concerns an honest auxiliary character in Z[zeta], with zeta a
+primitive m-th root, and not the original full-carry gamma. Let m>=5
+be prime, epsilon=chi(-1), and
+
+    g=sum_(t in F_m) zeta^(t^2), g^2=epsilon*m,
+    G(s)=chi(s)*g,
+    sigma_k(g)=chi(k)*g.                             (PT14)
+
+For arbitrary nonzero phases a,b, applying sigma_(a^-1) maps
+G(s)-zeta^a-zeta^b to tau*g-zeta-zeta^r, where
+tau=chi(s)*chi(a) and r=b/a. All pairs therefore normalize to the
+2(m-1) fixed integer determinant norms
+
+    D_(m,tau,r)=Norm(tau*g-zeta-zeta^r).              (PT15)
+
+Four more norms Norm(tau*g-1-zeta), Norm(tau*g-2) cover zero phases.
+Duplicate phases are included. For actual quadratic tags tau=1 and
+r is a square; allowing both signs/all ratios safely overcounts them.
+Every complex conjugate of g has magnitude sqrt(m)>2. Consequently
+each norm integer is NONZERO and
+
+    |D|<=(sqrt(m)+2)^(m-1),
+    log|product(all catalog D)|=O(m^2 logm).         (PT16)
+
+The complex estimate supplies an integer-size bound only. Reduction
+of the monic cyclotomic power-basis multiplication matrix modulo P
+reduces its determinant EXACTLY. If P does not divide its integer norm,
+the reduced element is a unit in F_P[T]/Phi_m. No complex linear
+independence is specialized into finite characteristic. Both hidden
+prime nondivisibilities make the norm and element units modulo N.
+
+For P in[cX,X], m~M, the integer product (PT16) has at most O(m^2)
+such prime divisors. Retain the LITERAL selector dependence. For fixed
+P and m, all possible Q satisfy
+
+    (mminus)^6<PQ<=m^6,
+    number of integer Q=O(m^2*(g_m+1)),
+    g_m=m-mminus.                                  (PT17)
+
+This follows by dividing the selector-strip length
+m^6-(mminus)^6<=6m^5*g_m by P>=cX. Thus per selector the exceptional
+pair count is O(m^4*(g_m+1)). Since sum_m(g_m+1)=O(M), including both
+field orientations costs only
+
+    O(M^5)=o(M^6/log^2M).                           (PT18)
+
+Positive mass remains from the inherited actual longBase2 supply.
+On infinitely many actual inputs, EVERY two-root puncture norm at the
+literal selector is unit, uniformly for all phases, lower states,
+primitive-root realizations and complete-N adaptive choices. Complete
+and single-root norms are already pointwise units on that supply.
+This is free-oracle COVERAGE failure, independent of norm acquisition.
+
+All positive TERMWISE moment indices are covered: a nonzero effective
+phase is already in the normalized catalog; a multiple of m gives the
+constant m-2, which is unit because P,Q>m. This is not a statement
+about powers of a previously punctured element. Lower honest Q_s is
+a unit-root normalization of a complete Gauss sum with one term removed,
+so deleting ONE further Q_s term is covered. Two further Q_s deletions
+remove THREE complete-sum terms and remain outside the theorem.
+Trace is not invariant under that root normalization.
+
+The standard O(M^6/log^2M) family can share other previously quantified
+lower-order deletions. It is NOT intersected with the fresh O(M^4/log^2M)
+same-tag family of Section2: the O(M^5) loss could exhaust that thinner
+family. These are different arithmetic advances with their own scopes.
+
+For k independent nonzero omitted phases, the same normalization leaves
+O(m^(k-1)) norm entries and the unrefined exceptional count is
+O(M^(k+3)). At k=3 it reaches O(M^6) and does not beat the supplied
+mass. This is failure of that overcount, not a proof of triple-norm
+coverage or a general algorithm obstruction. Arbitrary weighted
+punctures, additions/coefficient pivots and unrestricted full-N choices
+of a different auxiliary prime are also outside this literal-selector
+double-puncture theorem.
+
+**8. Remaining full-family acquisition and validation scope**
+
+A nested original partial-norm oracle would still suffice: split a
+saturated row set dyadically, acquire both child norms, return a proper
+gcd or descend a saturated child. The field-product algebra handles
+every false hit and reaches a singleton after logarithmically many
+splits. Its SATURATED SINGLETON READER fallback requires the inherited
+LongData gates, as `long_readSeed_saturated` explicitly assumes; the
+dyadic algebra itself is general. Logarithmically many queries do not
+price the large queried norms. Their acquisition remains unpaid.
+
+After fixedpoint preprocessing, actual distinct-tag support separation,
+genuinely cheap original multirow moments and a shared implicit interval
+norm/resultant evaluator remain substantive frontiers. The quartic
+excludes few-center reciprocal folding and (PT12) excludes the specified
+dense rectangular query, while neither excludes arbitrary implicit
+acquisition. D11 centered prime covariance is unchanged. Public
+controller/selector, routing, nonunits, saturation, prime squares and
+complete bit-time/peak-memory composition remain part of the unchanged
+full guaranteed one-sixth objective.
+
+The465-line native leaf has20 source theorems,
+6 computable definitions and1 noncomputable proof-side polynomial.
+All63 module declarations, including
+56 theorems with generated helpers,
+have only propext, Classical.choice and Quot.sound as transitive axioms.
+The15 focused linters report zero errors in27 direct declarations plus36
+generated declarations, with zero checker-local helpers. Five missing
+definition docstrings found in the first lint pass were added to the
+integrated source; the final focused validation passes. Frozen prototypes
+remain unchanged. Source lexing removes nested comments/strings and
+rejects trust tokens. Generated C includes the executable checked scanner
+and generic phase helpers; this is not an initialization-only module.
+No new factorization examples or native factoring run are performed.
+
+| Check | Seconds | Peak RSS (KiB) | Exit |
+| --- | ---: | ---: | ---: |
+| strict | 4.38 | 3909580 | 0 |
+| build | 7.06 | 3935572 | 0 |
+| checker | 15.28 | 3890444 | 0 |
+
+The ordinary root-import check is recorded separately in the audit.
+GNU-time measurements above concern proof validation, not factoring.
+Independent reviews cover the complete-support criteria, thin actual
+same-tag supply and projection losses, literal fixedpoint recovery,
+formal carry scope, actual quartic/template lift, dense-query versus
+shared-scalar cost, and the double-Gauss normalization/determinant count.
+The analytic input remains the preserved published
+[Kurlberg--Pomerance Section4 Lemmas19--20](https://www.impan.pl/shop/en/publication/transaction/download/product/82225).
+No new OpenAI manuscript or analytic premise is inserted.
+
+The parent470 selected source pins,102 selected Mathlib pins and45
+artifacts are rechecked without mismatches. The new source chain adds
+only the parent audit, leaf and focused checker. Exactly one root import,
+one semiprime module-family metadata entry and this dated journal entry
+are registered; removing each insertion restores its fresh before
+snapshot byte for byte with parent-after continuity. No graph/dashboard
+rebuild, commit or publication is performed.
+
+Detailed frozen reports, reviews and validation evidence are pinned in
+`docs/semiprime-partner-acquisition-obstruction-audit.json`. The new
+balanced same-tag executable is a proved conditional recovery branch,
+not the full all-semiprime factorizer. Classical bit costs, analytic
+infinite families and native finite contracts remain explicit. The full
+guaranteed N^(1/6) objective is still open and the goal remains active.
+
+## Distinct-tag acquisition: all small-weight hits fail and residue degree closes triple norms (2026-10-08)
+
+**Progress classification: substantive arithmetic obstruction.** The previous
+partner acquisition checkpoint remains preserved. Two independently reviewed
+classical theorems now eliminate specified acquisition routes on actual
+infinite input families. First, the COMPLETE small-weight truncation of the
+literal quotient rows can miss every original local hit, including false
+rows. This defeats a concrete whole-family norm route whose proposed cost
+is soft O(m). Second, charging the residue degree in every norm-dividing
+prime closes ALL honest three-term quadratic Gauss punctures. Neither result
+is a finite success example, a coverage theorem or a full factoring lower
+bound. The complete deterministic N-only guaranteed sixth-root Lean theorem
+and its full bit-time and peak-memory composition remain OPEN.
+
+The fixed previous audit is
+`docs/semiprime-partner-acquisition-obstruction-audit.json`, SHA256
+`e0c1b3b9fed78486661e8480af95d0c79a463f735c145fa10d8a6072c960fcc1`.
+Its 473 selected source pins, 102 selected Mathlib pins and 38 artifact
+pins were revalidated with zero mismatches. Preserve those bytes and the
+thin same-tag positive branch separately; no arbitrary intersection of
+infinite families is used here. The two new majority-family exceptional
+losses can be deleted simultaneously from the standard balanced
+Omega(M^6/log^2 M) supply.
+
+### Exact weighted information and an actual all-hit counterfamily
+
+#### 1. The public weighted sum is already the quotient-row information
+
+Let N=pq, m an odd prime coprime to N, j=p mod m and k=q mod m,
+represented in {1,...,m-1}. Put n=N mod m^2. For signed a!=0 and positive
+t, the public quotient-row condition is
+
+    a*j^2 = t*n (mod m), equivalently a*j = t*k (mod m).       (W1)
+
+The literal source in SemiprimeQuotientRows constructs
+
+    D=(t*N-a*j^2)/m,
+    b=centered(m,-publicInverse(m,j)*D),
+    c=(D+j*b)/m,
+    t*N=m^2*c-j*m*b+a*j^2.                                  (W2)
+
+Thus a,t,j and n fix the integer b; c retains the full input N. In
+particular b is unchanged under N -> N+z*m^2, because D changes by
+t*z*m and the source's centered representative is periodic modulo m.
+The bound |b|<=m/2+1 and the exact relation are existing native theorems.
+
+For the true factor tag j, the weighted sum W=a*p+t*q obeys
+
+    W = m^2*i + 2*a*j-m*b                                   (W3)
+
+for an integer i. This is the existing exact factor-sum identity, not
+new factor advice. To display the carry information directly, write
+p=j+m*u, q=k+m*v and n=j*k+m*C modulo m^2. Then
+
+    k*u+j*v=C (mod m),
+    a*u+t*v=(t/j)*C (mod m).                                (W4)
+
+For d=(a*j-t*k)/m, (W2) gives b=d-(t/j)*C modulo m. Substitution
+in W=a*j+t*k+m*(a*u+t*v) proves (W3) modulo m^2. The actual integer
+i contains the remaining acquisition information.
+
+An acquired i yields the genuine recovery equation
+
+    a*p^2-W*p+t*N=0,
+    W^2-4*a*t*N=(a*p-t*q)^2.                                (W5)
+
+For negative a the discriminant remains nonnegative; both integer root
+orientations must be retained before checking proper divisibility. A
+known residue of W modulo m^2 does not supply its integer lift.
+
+The public partner k=s/j, s=N mod m, replaces (a,t) by (t,a) when
+a>0, or by (-t,-a) when a<0. Its true weighted sum is W or -W.
+The source's reciprocal slopes satisfy a_j*a_k=1 modulo m. These
+identities synchronize the same unknown weighted sum; they do not
+independently determine its lift. Existing SemiprimeRowPartnerOffsets
+proves that matched original opposite-center scalar roots differ by
+zero or a unit (the offset correction is 0 or +/-m^2), so this pairing
+does not itself create a proper divisor. Universal partner membership
+in the full intermediate stream is not being asserted.
+
+#### 2. The COMPLETE small-height source, including full-input selection
+
+Fix a constant C>=4 and an integer height H(m)>=1 with H(m)<m. For
+EVERY public input N and unit tag 1<=j<m include ALL pairs
+
+    0<|a|<=H(m), 1<=t<=H(m), a*j^2=t*N (mod m),              (W6)
+
+and their literal liftRow coefficients b,c from (W2). This family
+contains the subset emitted by ANY Euclidean or rational-approximation
+constructor with these height bounds. It allows arbitrary full-N
+selection among its rows, rays, signs, indices and public centers.
+Neither primality nor effectivity of a catalog is needed in the count.
+It is also exactly the coordinate-box truncation of denseRows: for
+each j,t the dense source emits the canonical numerator modulo m and
+that numerator minus m, and every legal nonzero a with |a|<m is one
+of these representatives. The publicRow and intermediate-row lifts
+use the same centered b constructor.
+
+Put ell=m*b-2*a*j, delta=a+ell. The ORIGINAL giant target is exactly
+
+    x_(j,a,t)=gamma^(t*N+delta), alpha=gamma^(m^2),
+    |i|<=C*H(m)*m.                                         (W7)
+
+These are signed ORIGINAL indices. Transporting a centered packet and
+its baby target by the same public phase preserves this observation.
+The source's two balanced rectangle centers, stationary positive center
+(2*sqrt(a*t*N)+ell)/m^2, and negative cancellation center ell/m^2 all
+have size O(H*m) at the scales below. Their O(H*m) windows therefore
+fall under (W7) after changing the fixed constant C. Cropping or
+adaptive selection within (W7) is allowed; unbounded shifts or indices
+are outside the theorem.
+Under the inherited balanced gates 2*p,2*q<=3*m^3 and |b|<=m,
+every legal true-row index satisfies |i|<=3*H*m+1+2*H/m<=4*H*m
+for m>=3. Thus C>=4 includes every such actual forced index.
+
+For each fixed unit state n modulo m^2 and each (a,t), equation (W6)
+has at most two j, since a and t are nonzero modulo prime m. There are
+at most 2*H^2 signed pairs, hence at most 4*H^2 source packets at that
+state. Across ALL n the legal packet mass is O(H^2*m^2). Equivalently,
+fixing j,a,t fixes the lower n digit and permits m upper digits. This
+count preserves all legal source rows rather than choosing one row.
+
+#### 3. Actual semiprime and actual base-2 supply
+
+Set kappa=677/1000, M=X^(1/3), and use the published positive-proportion
+prime supply with a prime R_P>P^kappa dividing P-1. A fixed multiplicative
+bin inside [cX,X] supplies Omega(X/log X) such primes and balanced
+ordered pair mass Omega(M^6/log^2 M) along unbounded X. This analytic
+input is [Kurlberg--Pomerance, Section 4, Lemma 19](https://www.impan.pl/shop/en/publication/transaction/download/product/82225),
+attributed there to [Baker--Harman](https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/83/4/110107/shifted-primes-without-large-prime-factors).
+
+Since kappa>1/2, R_P is unique and occurs to exponent one. Write
+
+    P-1=v_P*R_P, 1<=v_P<=V=O(M^(3-3*kappa))=O(M^.969).       (W8)
+
+If ord_P(2) omits R_P, the prime divides one of 2^r-1, r<=V. The
+logarithm of their product is O(V^2), losing only O(V^2/log X)
+individual primes. Remove them before forming pairs. Removing diagonal
+pairs and the cross cases R_p|(q-1) or R_q|(p-1) costs
+O(X+X^(2-kappa)), negligible against the balanced pair mass.
+
+Now choose the literal public selector m, the least prime at least
+ceil(N^(1/6)). Bertrand gives fixed constants a_0,b_0>0 such that
+a_0*M<=m<=b_0*M. The actual factorial projection kills the small
+cofactors v_p,v_q<m and preserves R_p,R_q>16*m^2 eventually. The cross
+exclusions preserve them through the N-1 projection. The already
+audited source-faithful routing consequently returns longBase 2 and
+its actual gamma has local orders EXACTLY the distinct primes R_p,R_q.
+No period or private base is supplied as algorithm advice.
+
+For either actual factor P, P mod m is neither zero nor one: P>m,
+and m|(P-1)=v_P*R_P would contradict v_P<m<R_P with m,R_P prime.
+Also gcd(v_P,m)=1. These gates will be used explicitly in the repeated
+root branches.
+
+Let mminus be the previous prime and g=m-mminus. Literal selection gives
+
+    mminus^6 < p*q <= m^6.
+
+For fixed p in [cX,X], the q strip has length O(m^2*g). A fixed q
+class modulo m^2 therefore has O(g+1) representatives, and a fixed
+class modulo m has O(m*g+1). These are INTEGER counts, without prime
+density estimates in the selector strips. Selector gaps telescope:
+
+    sum_(m comparable to M)(g+1)=O(M).                      (W9)
+
+No Baker--Harman--Pintz small-gap bound, GRH, safe-prime infinitude or
+unpublished OpenAI density theorem is needed below.
+
+#### 4. Exact necessary polynomial and multiplier range
+
+In the p field, an original weighted hit in (W7) is equivalent to
+
+    t*q+delta-m^2*i = K*R_p                                 (W10)
+
+for an integer K, since p=1 modulo the exact order R_p. Here
+|delta|<=H+m*(m/2+1)+2*H*(m-1)=O(m^2+H*m). Therefore, at the actual
+scales p,q comparable to m^3 and |i|<=C*H*m,
+
+    |K| <= C_K*v*H, v=v_p.                                 (W11)
+
+C_K is a fixed constant determined only by the fixed scale constants
+and C. In particular there are O(v*H) integer K. For the height bounds
+used in the theorem, V*H=o(m^2) uniformly.
+
+Multiplying (W10) by v*p, using v*R_p=p-1, and reducing modulo m^2
+gives the necessary conditions
+
+    F(p)=K*p^2-(K+v*delta)*p-v*t*n=0 (mod m^2),
+    p=1 (mod v).                                           (W12)
+
+For fixed m,n,j,a,t,v,K this polynomial is fixed. Its reduction modulo
+m is nonzero, since -v*t*n is a unit. The original index has been
+eliminated; no factor for the length 2*C*H*m+1 will reappear in any
+count. The identical argument with p,q reversed treats the q field.
+
+#### 5. Every simple-root hit, including every false row
+
+A nonzero degree-at-most-two polynomial has at most two simple roots
+modulo m; each has a unique lift modulo m^2. K=0 gives a linear
+polynomial or no roots, and cannot create a repeated root because
+-v*t*n is a unit. CRT with p=1 modulo v gives spacing v*m^2. Each
+root class has O(m/v) integer p in [cX,X], because v<m.
+
+Summing all O(v*H) multipliers bounds p/K incidences per legal packet
+and v by O(H*m). For each p, state n fixes one q class modulo m^2,
+with O(g+1) representatives in the selector strip. Sum over the
+O(H^2*m^2) legal source packets, v<=V, and selector m using (W9).
+For one hidden-field orientation this gives
+
+    simple-root bad pairs = O(V*H_X^3*M^4),                 (W13)
+
+where H_X=max_(m comparable to M) H(m). All n digits, all source
+packets, all original indices, K=0, and every false row are included.
+
+#### 6. The repeated true-tag branch
+
+Let x=p mod m be a repeated root of F. Then
+
+    K*x^2=-v*t*n, K*(2*x-1)=v*delta (mod m).
+
+Using t*n=a*j^2 and delta=a*(1-2*j) modulo m, elimination factors as
+
+    (x-j)*((2*j-1)*x-j)=0 (mod m).                          (W14)
+
+There are two possible branches, with the second absent if 2*j-1=0.
+For the first branch x=j, Taylor expansion at the repeated root gives
+F(p)=F(j) modulo m^2. The exact quotient relation yields
+
+    F(j)=(K+v*a)*j*(j-1) (mod m^2).                         (W15)
+
+The factors j,j-1 are units by Section 3. Thus K+v*a=0 modulo m^2.
+Its magnitude is at most (C_K+1)*V*H_X=o(m^2), so
+
+    K=-v*a as an INTEGER,
+    m^2*i=a*p+t*q+m*b-2*a*j.                               (W16)
+
+This is exactly the forced true-row weighted index. For counting it
+suffices to allow EVERY legal low-height pair at the true tag, without
+requiring (W7). At fixed p,m,a,t, equation a*p=t*q modulo m fixes one
+q class, containing O(m*g+1) q in the literal selector strip. Sum
+over O(H_X^2) signed pairs, at most X choices p, and all selector m:
+
+    true-tag legal-row bad pairs = O(H_X^2*M^5).            (W17)
+
+No v factor is needed. This stronger deletion removes every input
+having a legal height-H ray at either true tag, even if its forced
+index falls outside (W7). In particular it removes every same-tag
+pair, since a=t=1 is then legal; the surviving family has distinct
+factor tags. Independently the same-tag pairs cost only O(M^5).
+
+#### 7. The second repeated branch and the exact upper-carry bijection
+
+Put d=2*j-1 and x0=j/d modulo m^2. In this branch d is a unit, and
+j,j-1 are units because x=p mod m is neither zero nor one. Repeatedness
+and p=x0 modulo m give F(p)=F(x0) modulo m^2. Direct expansion using
+t*n=a*j^2-j*m*b modulo m^2 gives
+
+    d^2*F(x0)=-j*(j-1)*(K+v*a*d^2-2*v*m*b*d) (mod m^2).
+
+Consequently
+
+    K=-v*a*d^2+2*v*m*b*d (mod m^2).                         (W18)
+
+Fix m,v,a,t,K. Reducing (W18) modulo m gives
+
+    (2*j-1)^2=-K/(v*a) (mod m),
+
+so at most two j occur. For each such j, legal n has one fixed lower
+digit s=a*j^2/t modulo m. As its upper carry runs through n=s+m*u,
+the literal quotient lift satisfies
+
+    t*(u-u0)=-j*(b(n)-b(n0)) (mod m).                       (W19)
+
+Since t,j are units, b modulo m traverses all m residues exactly once.
+For each fixed K,j, equation (W18), after division by m, fixes b
+modulo m uniquely because 2*v*d is a unit. Therefore (W18) permits
+at most ONE n modulo m^2 for each j. This explicitly prices the
+upper-carry freedom; no equidistribution is assumed.
+
+There are O(H_X^2) choices (a,t) and O(v*H_X) choices K, hence
+O(v*H_X^3) possible incidences (n,j,a,t,K) for fixed m,v. In each,
+p lies in the prescribed class x modulo m and class 1 modulo v.
+CRT spacing v*m gives O(m^2/v) p; each permits O(g+1) q. Sum v and
+selector gaps to obtain the stronger bound
+
+    second-repeat bad pairs = O(V*H_X^3*M^3).               (W20)
+
+The weaker O(V*H_X^3*M^4) bound follows even without (W19), by
+allowing all m upper states. Either suffices below. The upper-carry
+bijection is valid for the ACTUAL centered lift with signed a and
+positive t, not an artificial choice of linear coefficients.
+
+#### 8. All-hit absence theorem and concrete exponents
+
+Let C>=4 be fixed. Suppose
+
+    H(m)=O(m^eta*(log(2*m))^A),
+    0<=eta<kappa-1/3=1031/3000.                             (W21)
+
+Combining both orientations of (W13), (W17), and (W20) bounds all
+ordered pairs having ANY weighted hit in (W7), or any legal low-height
+ray at a true tag, by
+
+    O(V*H_X^3*M^4 + H_X^2*M^5).                            (W22)
+
+The ratio to the actual supply Omega(M^6/log^2 M) is
+
+    O(H_X^3*M^(1-3*kappa)*log^2 M
+      +H_X^2*M^(-1)*log^2 M),                              (W23)
+
+which tends to zero under (W21). The second condition is weaker because
+kappa-1/3<1/2. Also V*H_X=o(m^2), as required in Section 6.
+
+Thus infinitely many ACTUAL balanced distinct-prime, DISTINCT-TAG
+inputs have the literal longBase 2 route and simultaneously
+
+    gcd(N, gamma^(t*N+delta)-gamma^(m^2*i))=1
+
+for EVERY legal original weighted row (W6) and EVERY signed index in
+(W7). This includes all false rows, not just failure to retain the true
+tags. Any subset, product or certified-unit multiplicative cancellation
+of these residuals is a unit. Every exact scanned quadratic with these
+indices also lacks a proper p/q root: an actual factor root would imply
+a local hit by the original exact weighted factor identity.
+
+For the concrete complete family H(m)=floor(m^(1/3)), the simple-root
+loss is O(M^5.969), the legal true-tag loss O(M^(17/3)), and the
+strong second-repeat loss O(M^4.969). Each is o(M^6/log^2 M). A
+counterfamily for this maximal family also obstructs every lower-height
+subfamily and every full-N adaptive selection within it.
+
+This is a weight-truncation obstruction. At the native short-row
+height sqrt(m), (W13) only supplies O(M^6.469), so the proof does NOT
+establish all-hit failure or a time lower bound for the full Euclidean
+intermediate family.
+
+#### 9. The concrete near-linear acquisition route that fails
+
+A known single-target geometric interval-product construction evaluates
+a signed interval of length O(H*m) using soft O(sqrt(H*m)) modular
+arithmetic operations: divide into baby blocks, construct the monic baby
+polynomial, and multipoint-evaluate it at the shifted target points.
+It requires only a unit alpha and monic polynomial arithmetic; no
+division by an unknown nonunit is introduced. With at most 4*H^2
+legal source packets, querying ALL scalar row norms therefore costs
+
+    soft O(H^2*sqrt(H*m))=soft O(m^(1/2)*H^(5/2)).           (W24)
+
+Constructing the public tags and literal rows also fits this budget.
+Precompute and sort a table of all O(H^2) ray ratios a/t modulo m,
+retaining every ray in each equal-ratio bucket. Scan m tags once,
+compute s/j^2, and look up its bucket, retaining all matches;
+its construction cost is soft O(m+H^2), including inverses and row
+lifts. This is a classical modular/bit estimate, not a new native clock.
+
+At H=floor(m^(1/5)), (W24) is soft O(m), giving a specific tempting
+whole-family near-linear norm-acquisition route. The theorem proves it
+cannot guarantee even one original local collision on the actual
+infinite family. Its mask, paired slopes, exact centering and geometric
+block telescoping cannot repair the missing zero factors.
+
+For comparison, merely retaining a low-height ray for EVERY unit tag
+requires 4*H^2>=m-1 by the quadratic-fiber count in Section 2, hence
+H=Omega(sqrt m). That is a finite residue-state obstruction rather
+than a prime-family lower bound; (W22) is the separate actual-family
+all-hit result. Faster implicit evaluation of many higher-height rows,
+different additive observations, internal Euclidean pivots and new
+arithmetic forcing mechanisms remain open.
+
+
+The preceding global density and infinitude proof is CLASSICAL. The source
+is the full coordinate-box truncation of denseRows and literal liftRow;
+arbitrary full-N adaptive selection inside that family is included. This
+does not establish unconditional all-local-hit failure at sqrt(m) height.
+Earlier forced-index and conditional all-local-hit results keep their
+separate scopes and analytic premises. Arbitrary shifted windows outside
+|i|<=CHm, new additive observations, internal pivots, or implicit queries
+over the full higher-height family are not ruled out.
+
+### Residue-degree multiplicity and every honest triple puncture
+
+#### 1. New actual-input theorem
+
+There are infinitely many actual balanced distinct-prime longBase2 inputs
+with their LITERAL auxiliary selector m such that EVERY honest complete
+quadratic Gauss element with ANY THREE m-th-root terms removed has unit
+determinant norm modulo N. The phases, effective nonzero lower state,
+primitive-root realization and moment index may be chosen adaptively
+using the complete N. In fact the triple-punctured element itself is a
+unit in the honest cyclotomic algebra on these inputs.
+
+The new arithmetic ingredient is residue-degree charging. Let
+f_m(P)=ord_m(P). If a nonzero INTEGER cyclotomic norm vanishes modulo
+P, then P^(f_m(P)) divides that integer. Thus large residue degrees cost
+more than one prime-divisor incidence. Small residue degrees are covered
+separately by a genuinely sparse set of public residue classes.
+
+Triple normalization gives O(m^2) norm integers with total logarithmic
+size O(m^3 logm). The earlier unweighted prime-divisor count gave O(M^6)
+exceptional actual pairs, too large. The new degree split gives instead
+
+    O(M^5*T^2 + M^6/T).
+
+Taking T=M^(1/3) yields O(M^(17/3)), which is o(M^6/log^2M), the retained
+actual supply. With the standard elementary divisor-count refinement,
+T=M^(1/2) gives O_epsilon(M^(11/2+epsilon)) for every fixed epsilon>0.
+The elementary 17/3 bound alone already proves the theorem and requires
+no divisor-asymptotic input.
+
+This is a specified scalar-channel coverage obstruction. It supplies no
+factor-coverage theorem or acquisition lower bound for the original
+centered-carry moments, general weighted punctures, internal pivots,
+or implicit original interval norms.
+
+#### 2. Literal honest source and uniform triple normalization
+
+Let m>9 be prime, zeta a primitive m-th root in
+O_m=Z[zeta]=Z[T]/Phi_m(T), finite free of rank m-1. Let chi denote the
+quadratic character modulo m, with chi(0)=0, and put
+
+    g=sum_(u in F_m) zeta^(u^2),
+    epsilon=chi(-1), g^2=epsilon*m,
+    G(s)=chi(s)*g for s!=0.
+
+The integer cyclotomic automorphism sigma_k sends zeta to zeta^k and
+sends g to chi(k)*g. These are the preserved finite character identities,
+not an identification of zeta with the actual routed gamma.
+
+For arbitrary phases a,b,c in F_m, consider
+
+    alpha=G(s)-zeta^a-zeta^b-zeta^c.
+
+If at least one exponent is nonzero, reorder so a!=0 and apply
+sigma_(a^(-1)). Its image is
+
+    tau*g-zeta-zeta^r-zeta^t,
+    tau=chi(s)*chi(a), r=b/a, t=c/a.             (T1)
+
+Here r,t are allowed to be ZERO. If all exponents are zero, alpha is
+chi(s)*g-3. Therefore every triple norm is one of
+
+    D_(m,tau,r,t)=Norm(tau*g-zeta-zeta^r-zeta^t),
+    tau in {+1,-1}, r,t in F_m,
+    D_(m,tau,zero)=Norm(tau*g-3).                (T2)
+
+There are at most 2m^2+2 catalog entries. Duplicate phases and arbitrary
+phase choices are included; actual quadratic tags occupy a smaller set.
+For all three actual tags nonzero, tau=+1 and the ratios are squares,
+but no saving from that restriction is needed.
+
+Every complex conjugate of g has absolute value sqrt m, whereas a sum
+of three roots has absolute value at most three. Since m>9, each catalog
+norm is a NONZERO INTEGER and
+
+    |D|<=(sqrt m+3)^(m-1).
+
+Let C_m be the product of every catalog norm. Then
+
+    C_m!=0, log|C_m|<=C m^3 log(2m)              (T3)
+
+with an absolute constant C. The complex estimate bounds an explicit
+integer; it is never used to infer finite-field nonvanishing directly.
+
+#### 3. Exact residue-degree determinant divisibility
+
+The following elementary integer-matrix lemma is sufficient; no number-
+field prime-ideal computation or factorization algorithm is needed.
+
+**Matrix lemma.** Let A be an n-by-n integer matrix and P prime. If its
+reduction modulo P has nullity at least h, then P^h divides det(A).
+
+Proof: over F_P choose an invertible row-change matrix U such that the
+last h rows of U*(A modP) are zero. This is possible because row rank
+equals n minus nullity. Lift every entry of U to an integer matrix Uhat.
+Its determinant is nonzero modulo P, so it is coprime to P. The last h
+rows of Uhat*A have all entries divisible by P. Factoring P from each
+of those rows shows that P^h divides det(Uhat)*det(A). Since det(Uhat)
+is coprime to P, Euclid cancellation gives P^h divides det(A). This
+also covers det(A)=0, although our catalog determinants are nonzero.
+
+Now suppose P>m and alpha is an algebraic integer in O_m. Let M_alpha
+be its integer multiplication matrix in the monic power basis. Every
+irreducible factor of Phi_m over F_P has degree
+
+    f=f_m(P)=ord_m(P).                            (T4)
+
+This is the exact finite-field cyclotomic factor-degree theorem, with
+P coprime to m. Phi_m is separable because it divides X^m-1 and P!=m.
+Consequently F_P[T]/Phi_m is a product of finite fields, each with
+dimension f over F_P.
+
+If P divides Norm(alpha)=det(M_alpha), the reduced multiplication map
+is not invertible. In the finite product of fields this means that the
+component of alpha is zero in at least one field factor. Multiplication
+is then zero on that ENTIRE f-dimensional CRT summand. Its nullity is
+at least f. The matrix lemma proves the strengthened gate
+
+    P divides Norm(alpha) ==> P^f divides Norm(alpha).     (T5)
+
+Conversely, nondivisibility of the integer determinant means alpha is a
+unit after reduction. These conclusions use exact matrix reduction and
+finite-field factor degrees. They make no characteristic-zero linear-
+independence assumption about root sums in characteristic P.
+
+Mathlib already proves (T4) in
+Mathlib/RingTheory/Polynomial/Cyclotomic/Factorization.lean, theorem
+Polynomial.natDegree_of_dvd_cyclotomic_of_irreducible: specialize its
+field cardinality to P^1 and cyclotomic index to m. The frozen report stated this determinant valuation lemma classically.
+The new finite Lean leaf now proves the complete integer matrix lemma,
+with transformations and integer lifts constructed internally.
+The cyclotomic CRT-to-kernel transfer and norm catalog remain classical.
+
+#### 4. Large residue degrees receive a weighted prime-divisor count
+
+Fix a selector m~M at scale X=M^3 and let T>=1. If P in[cX,X] divides
+ANY catalog norm, one relevant norm receives the full divisor P^f by
+(T5). Thus P^f divides the product C_m. For distinct such primes, the
+product of their prime powers divides C_m, and therefore
+
+    sum_(P divides C_m) f_m(P)*logP <= log|C_m|.       (T6)
+
+In particular the number of eligible prime divisors with f_m(P)>T is
+at most
+
+    log|C_m|/(T*log(cX)) = O(m^3/T),                 (T7)
+
+uniformly because m lies in a fixed scale-comparable range. This is the
+new factor that the earlier O(M^6) overcount did not charge.
+
+#### 5. Small residue degrees occupy few integer progression classes
+
+For prime m the nonzero residue classes form F_m^*. If f_m(P)<=T,
+the nonzero residue P modm is a root of X^d-1 for some integer 1<=d<=T.
+For each d there are at most d roots over F_m. The union therefore has
+at most
+
+    sum_(1<=d<=floorT) d <=T(T+1)/2=O(T^2)            (T8)
+
+residue classes. This elementary polynomial-root bound does not require
+any equidistribution of actual primes among those classes.
+
+Each class has at most X/m+1=O(m^2) INTEGER representatives P in[cX,X],
+using m~M. Thus the number of eligible P with small degree is at most
+
+    O(m^2*T^2).                                     (T9)
+
+For this branch we discard the norm-divisibility condition altogether;
+counting all integers in the small-degree classes is a valid upper bound
+for actual norm-dividing primes.
+
+Optionally, the exact order count is
+
+    sum_(d divides m-1, d<=T) phi(d)
+      <=T*tau(m-1).
+
+For every fixed epsilon>0, the standard elementary divisor bound gives
+tau(n)<=C_epsilon*n^epsilon. For completeness: for every sufficiently
+large prime l, l^epsilon>=2 and a+1<=2^a<=l^(epsilon*a) for a>=1.
+For each of the finitely many smaller primes, the ratios
+(a+1)/l^(epsilon*a) have a finite supremum. Multiplying those finitely
+many constants and then the prime-power inequalities proves the bound.
+Hence the small-degree count improves to O_epsilon(m^(2+epsilon)*T).
+This uses no new prime-density hypothesis; the elementary T^2 route is
+enough if that refinement is not included in a future formalization.
+
+#### 6. Whole-family selector-strip count
+
+Use the preserved actual balanced longBase2 supply of ordered distinct
+primes P,Q in[cX,X], with mass Omega(M^6/log^2M) along unbounded X.
+Its literal prime selector m lies in[a_0M,b_0M]. Write mminus for the
+previous prime and g_m=m-mminus. Literal selection gives
+
+    (mminus)^6<PQ<=m^6.
+
+For fixed P>=cX, the integer cofactor strip has length at most
+
+    (m^6-(mminus)^6)/P <=6m^5*g_m/(cX)
+      <=C_0*m^2*g_m.
+
+It contains at most C_1*m^2*(g_m+1) INTEGER values Q. Over the consecutive
+allowed selector primes, sum_m(g_m+1)=O(M).
+
+Multiply the small-degree P count (T9) by this strip count, sum over
+selectors, and include both hidden-field orientations. Its loss is
+
+    O(M^5*T^2).                                     (T10)
+
+The large-degree count (T7) analogously costs
+
+    O(M^6/T).                                       (T11)
+
+Choose the proof-side cutoff T=floor(M^(1/3)), asymptotic to M^(1/3).
+The sum of (T10)--(T11) is
+
+    O(M^(17/3))=o(M^6/log^2M).                       (T12)
+
+Positive actual mass remains at unbounded scales. On every retained
+input neither hidden prime divides ANY catalog norm. Thus all triple
+norms and all triple-punctured elements are units simultaneously.
+The uniform norm catalog is independent of the full input's high digits,
+so adaptive phase/tag choices do not evade the theorem.
+
+With the optional divisor refinement, choose T=floor(M^(1/2)); (T10)
+becomes O_epsilon(M^(11/2+epsilon)) and (T11) becomes O(M^(11/2)).
+For any fixed epsilon<1/2 this also tends to zero relative to the actual
+supply. Equivalently the loss is O(M^(11/2+o(1))). It is not asserted
+to be soft O(M^(11/2)) with only logarithmic factors.
+
+This is a deletion from the STANDARD M^6/log^2M actual supply. It must
+NOT be imposed on the fresh thin M^4/log^2M same-tag family: this larger
+exceptional bound could exhaust that family. The result can share other
+previous majority-family deletions whose union still has lower order
+than the standard supply, but no arbitrary infinite-family intersection
+is claimed.
+
+#### 7. All-index and lower-source interpretation
+
+For a positive TERMWISE moment index r with r nonzero modulo m, replace
+s by its effective nonzero phase rs; the same normalized catalog already
+covers it. If r is divisible by m, the complete honest quadratic sum is
+m and every omitted root term is one. The triple puncture is m-3, a
+unit because P,Q>m>9. This does not control powers of a previously
+punctured element.
+
+The honest lower-residue source Q_s is a root-unit normalization of G(s)
+with one term removed. Therefore TWO additional lower-source deletions
+remove THREE complete-sum terms and are covered by this theorem. Three
+additional lower-source deletions remove FOUR complete-sum terms and
+remain outside it. Norms of the root normalization are units; trace is
+not treated as invariant under it.
+
+Complete and one-root norms are already pointwise units on the inherited
+actual source. The older all-double norm exception has size O(M^5), so
+it can be included without changing (T12). Consequently all up-to-three
+complete-sum puncture norms miss proper gcd coverage on a single actual
+infinite family. Products and certified-unit quotients retain unit
+status; general additions of different outputs remain outside closure.
+
+Unrestricted full-N choice of a DIFFERENT auxiliary prime among Theta(M)
+possible primes is not covered by this literal-selector count. The earlier
+pointwise one-root theorem keeps its separate all-comparable-auxiliary
+prime scope.
+
+#### 8. Correlated triples and the next genuine norm frontier
+
+There is a narrower O(m)-norm catalog for three quadratic TAGS in an
+arithmetic progression u-h,u,u+h. If u!=0, normalize by (s*u^2)^(-1).
+The three phases become (1-h/u)^2,1,(1+h/u)^2 and the Gauss sign is +1.
+Only h/u varies. If u=0, the phases are s*h^2,0,s*h^2, also a one-
+parameter or fixed normalized pattern. Such correlated triple norms
+already have the earlier O(M^5) direct prime-divisor loss. The new
+residue-degree count does not assume this correlation and covers EVERY
+three-phase choice.
+
+For k fixed independent nonzero omitted phases, the normalized norm
+catalog has O(m^(k-1)) entries and total logarithmic size O(m^k logm).
+The degree-split losses are, unrefined,
+
+    O(M^5*T^2 + M^(k+3)/T),
+
+and with the optional divisor bound,
+
+    O_epsilon(M^(5+epsilon)*T + M^(k+3)/T).
+
+For k=3 the above choices produce a genuine power saving. At k=4,
+multiplicative orders never exceed m-1, so a usable cutoff has T=O(M).
+The large-degree term then reaches O(M^6) at its smallest possible
+unrefined power scale, and the refined low-degree term is also at that
+boundary. Thus this argument does NOT establish an all-four norm
+counterfamily or four-root factor coverage. Extra correlations may still
+reduce a particular four-root catalog; arbitrary weighted outputs,
+additional coefficients and internal pivots remain separate channels.
+
+
+The four-term boundary above is a limitation of this catalog count,
+not a four-term coverage or impossibility theorem. Full-input choice
+among DIFFERENT auxiliary primes is not transferred from the literal
+selector result. Original centered-carry moments and arbitrary weighted
+root sums remain separate acquisition channels.
+
+### Native proof boundary and verification
+
+`RiemannGaussian/SemiprimeDistinctAcquisitionObstruction.lean` imports
+the preserved partner leaf, `Mathlib.LinearAlgebra.Matrix.Rank` and
+`Mathlib.RingTheory.Polynomial.Cyclotomic.Factorization`. Its exact native
+content is:
+
+- Prime-divisible rows supply their full determinant multiplicity;
+  coprime lifted transformations permit cancellation back to the
+  ORIGINAL determinant.
+- For ANY integer square matrix A and prime p,
+  p^(n-rank(A mod p)) divides det A. Mathlib's residue-field rank normal
+  form and canonical integer lifts are constructed inside the proof;
+  neither transform existence nor already divisible rows is an extra
+  premise. Kernel dimension at least f gives p^f dividing det A.
+- A public union of roots of X^d-1 for 1<=d<=T has at most T^2 residues
+  and includes every unit of order at most T. This is a noncomputable
+  proof catalog, not a newly paid enumerator.
+- Every irreducible factor of the actual prime-field cyclotomic
+  polynomial has degree equal to the hidden prime's unit order modulo m.
+- The weighted quotient-row source exponent, necessary hit polynomial,
+  exact true-tag specialization and literal centered upper-carry identity
+  are proved as integer identities or two-digit congruences.
+
+The Gauss/cyclotomic norm construction, finite CRT summand-to-kernel
+dimension implication, logarithmic norm size, prime supply, selector
+strip counts and actual-family infinitude remain CLASSICAL. A determinant
+prime-power kernel and a cyclotomic factor degree theorem do not by
+themselves formalize this global proof or implement a fast norm evaluator.
+
+The integrated leaf has 284 lines,
+15 source theorems,
+3 computable definitions and
+1 noncomputable definition.
+The module-provenance audit checks ALL 23 declarations,
+including 19 theorems and generated
+helpers, with 0 checker-local helpers. Only
+`propext`, `Classical.choice` and `Quot.sound` occur transitively; no local
+axiom, `sorry`, unsafe replacement, external evaluator or native_decide is
+introduced. All 15 focused linters pass. Strict warning-as-error compilation,
+the focused leaf build and the provenance checker pass; a focused root
+import check follows the isolated registration and is recorded in the new
+audit. Generated C exports are limited to generic matrix lifts and exact
+row-offset helpers; no factoring run, norm implementation or bit clock is
+credited from this compilation.
+
+The independent reviews pin the full weighted argument, full triple
+argument, native determinant bridge and finite residue catalog. A separate
+review checks the final integrated leaf and these journal claims. Fresh
+registration adds exactly one root import, one semiprime metadata entry
+and this dated section; exact removal restores the parent-after snapshots.
+Historical modules, audits, generated dashboards, committed endpoints and
+the dirty migration are preserved. No commit, push or whole historical
+graph rebuild is included.
+
+### OpenAI/math assessment and next frontier
+
+The targeted read-only search of the preserved OpenAI/math catalog and
+NumberTheory snapshot at commit adc7f1241b42e322a6451854ab7e4b4c146bf78a
+found no original variable-m sparse-cyclotomic resultant or geometric
+interval evaluator supplying the missing acquisition bound. The prime-field
+polynomial factoring result assumes its prime modulus is supplied. This is
+a targeted search assessment, not a full review or re-proof of all hundreds
+of manuscripts. The new arithmetic uses the installed standard finite-field
+cyclotomic theorem and previously pinned published prime supply; no new
+OpenAI manuscript or analytic premise is introduced.
+
+The failed near-linear truncation and all honest up-to-three Gauss norm
+punctures are now explicit closed routes on a common actual majority
+counterfamily. The next genuine advance must supply complete original
+higher-height hit-support acquisition in soft O(m), a new cheap additive
+observation with proper-factor coverage, or a scoped arithmetic obstruction
+to a concrete alternative. Arbitrary implicit shared scalar queries are
+not subject to the earlier dense-write floor. The original D11 centered
+prime covariance is unchanged. Full arbitrary-ratio coverage, prime
+squares, proper-gcd recovery through saturation/nonunits, routing and
+controller costs, bit time and peak working memory remain to compose.
+The original guaranteed one-sixth goal remains active.
+
+## 2026-10-08 — Whole-family soft-linear centered acquisition fails at full square-root weights
+
+This is an arithmetic advance on the stated acquisition frontier. The
+complete square-root-weight source in the specified original linear
+windows has a CLASSICAL soft O(m) whole-family acquisition algorithm,
+without a row/baby matrix. Nevertheless, infinitely many actual balanced
+distinct-prime literal-selector longBase2 inputs have EVERY original
+residual a unit in BOTH hidden fields. The obstruction includes false
+tags and all local aliases, both public rectangle centers, and the
+stationary and negative-cancellation centers. Fixed polylogarithmic
+padding of both weight height and window width does not repair it.
+
+The new count fixes the prime BEFORE counting the public tag: each
+center-correlated multiplier allows at most two tags, and a false tag
+fixes one complete two-digit input state. Published prime-gap control
+then saves the required power. No new OpenAI/math analytic premise is
+used. The six new native results prove the finite source elimination,
+tag bound and carry/state uniqueness; the infinite-family counting
+argument and asymptotic acquisition cost remain classical. This is a
+scoped obstruction to the proposed centered acquisition route. The full
+guaranteed one-sixth factorization and bit-complexity goal remains active.
+
+No factorization samples or additional successful certificates are used
+as evidence. All prior frozen sources, audits, classical reports and the
+dirty migration remain preserved. The authoritative immediate parent is
+`docs/semiprime-distinct-acquisition-obstruction-audit.json`, SHA256
+`fd53795aa3db33199b91b1e51797057363ba8b210c20ffae03b39aff9a2ec6c5`:
+476 selected source pins, 107 selected Mathlib pins and 39 artifact pins.
+They were revalidated read only, with zero mismatches.
+
+### 1. Source and theorem
+
+For N=PQ let m be the LITERAL least prime at least ceil(N^(1/6)). Fix
+C>0. Let H=floor(sqrt m), and include EVERY unit tag 1<=j<m and pair
+
+    0<|a|<=H, 1<=t<=H, a*j^2=t*N (mod m).                  (F1)
+
+Use exactly the original liftRow with publicInverse and centered b:
+
+    D=(t*N-a*j^2)/m, b=centered(m,-publicInverse(m,j)*D),
+    c=(D+j*b)/m, t*N=m^2*c-j*m*b+a*j^2.                    (F2)
+
+Thus this source is exactly the coordinate-box truncation of denseRows,
+and contains the actual publicRow at every tag, and EVERY actual
+Euclidean intermediate packet whose two coordinates lie in this box.
+No hidden factor selects a vector. For ell=m*b-2*a*j, delta=a+ell,
+the original target and baby step are
+
+    gamma^(t*N+delta), alpha=gamma^(m^2).                  (F3)
+
+Retain all integer ORIGINAL indices i in any of these windows:
+
+    |i-publicShift(N,m,j,a,b,t)| <= C*m,
+    |i-reflectedShift(N,m,j,a,b,t)| <= C*m,                 (F4)
+
+and optionally the positive stationary and negative cancellation windows
+
+    |i-(2*sqrt(a*t*N)+ell)/m^2| <= C*m  when a>0,
+    |i-ell/m^2| <= C*m                     when a<0.        (F5)
+
+Real centers in (F5) may be rounded by a bounded amount without
+changing the result. Center transport shifts the target and baby index
+together; (F4) always refers to their retained ORIGINAL index.
+
+**Theorem.** There are infinitely many actual balanced distinct-prime
+inputs N with their literal longBase2 route and actual gamma such that
+
+    gcd(N, gamma^(t*N+delta)-gamma^(m^2*i))=1              (F6)
+
+for EVERY legal boxed row (F1), EVERY index in (F4)--(F5), and BOTH
+hidden-field orientations. These inputs also have distinct factor tags.
+The all-false-hit loss is O(M^5.994), and the own-tag loss is
+O(M^(23/4)), both negligible against actual mass Omega(M^6/log^2 M).
+No GRH, unpublished density result or advised order is used.
+
+The new gain is to count P first: the center determines a short interval
+of integer multipliers K INDEPENDENT of the tag and its upper carry.
+The modular source relation then gives at most two tags per K, and a
+false tag determines one upper state. This avoids the earlier
+O(V*H^3*M^4) global multiplier overcount at H=sqrt m.
+
+### 2. Exact analytic inputs and actual route
+
+Put kappa=677/1000, theta=21/40, M=X^(1/3). The published positive-
+proportion large-divisor theorem supplies Omega(X/log X) primes P in a
+fixed multiplicative bin in [cX,X], with R_P prime>P^kappa dividing P-1.
+The bin can have ratio at most 3/2, so pairs are balanced. See
+[Kurlberg--Pomerance, Section 4 Lemma 19](https://www.impan.pl/shop/en/publication/transaction/download/product/82225)
+and its cited Baker--Harman source. The same paper's order-omission
+argument, or the logarithm of product_(r<=V)(2^r-1), removes only
+O(V^2/log X) individual primes whose actual base-2 order omits R_P.
+
+As kappa>1/2, R_P is unique and occurs once. Write
+
+    P-1=v_P*R_P, 1<=v_P<=V=O(M^(3-3*kappa))=O(M^.969).      (F7)
+
+Remove diagonal and cross-period pairs R_P|(Q-1) or R_Q|(P-1), at cost
+O(X+X^(2-kappa)). Positive balanced ordered-pair mass
+Omega(M^6/log^2 M) remains at unbounded scales. The preserved factorial
+and N-1 projections give EXACT distinct local prime orders R_P,R_Q
+for the literal actual longBase2 gamma. Here m is comparable to M,
+v_P,v_Q<m and R_P,R_Q>16*m^2 eventually. These are properties of the
+actual route, not private inputs to a factoring algorithm.
+
+For actual P, P mod m is neither zero nor one: P>m, and m|(P-1)=v_P R_P
+would contradict v_P<m<R_P with m,R_P prime. Thus P and P-1 are units
+modulo m^2, and v_P is a unit modulo m. These gates are indispensable.
+
+Let mminus be the preceding prime and g=m-mminus. Literal selection is
+
+    mminus^6 < P*Q <= m^6.                                (F8)
+
+At fixed P>=cX, its Q strip has length O(m^2*g). A prescribed Q class
+modulo m^2 has O(g+1) representatives, and a class modulo m has
+O(m*g+1). The consecutive selector gaps satisfy
+
+    sum_m(g+1)=O(M).                                      (F9)
+
+The published [Baker--Harman--Pintz Theorem 1](https://www.cs.umd.edu/~gasarch/BLOGPAPERS/BakerHarmanPintz.pdf)
+gives g=O(m^theta) for large selector primes. To exclude the trivial
+endpoint m itself when using its backward interval, take x=m-1;
+the guaranteed prime is below m and within O(m^theta). Consequently
+
+    sum_m g^2 <= (max_m g)*sum_m g = O(M^(1+theta)).         (F10)
+
+This is the ONLY new analytic input beyond the preceding actual supply.
+Every cofactor count below permits INTEGER Q, without prime distribution
+inside a selector strip or residue class.
+
+### 3. All four literal centers have a tag-independent coefficient
+
+Define fixed real constants
+
+    A=(1+1/sqrt 2)/2, B=(1+sqrt 2)/2,
+    A*B=(4+3*sqrt 2)/8>1.                                (F11)
+
+The source's lowerSum/upperSum retain the sign of a, but their sum is
+
+    a*(sqrtFloor(N/2)+sqrtFloor N)
+      +t*(sqrtFloor N+sqrtFloor(2*N))+2*ell.
+
+Thus the literal publicShift satisfies
+
+    |m^2*publicShift-ell-(A*a+B*t)*sqrt N|=O(m^2+H).        (F12)
+
+This includes negative a: changing its rectangle orientation does not
+change its midpoint. Integer division rounds to the nearest shift with
+error at most m^2/2; floor square roots add only O(H), including the
+inner floor of N/2. The reflected source similarly satisfies (F12)
+with A*a+B*t replaced by B*a+A*t. The two other centers have exactly
+beta=2*sqrt(a*t) for a>0 and beta=0 for a<0.
+
+Therefore every window in (F4)--(F5) admits a beta depending ONLY on
+(a,t,center type), with |beta|<=C_beta*H, such that
+
+    |m^2*i-ell-beta*sqrt N|<=C_0*m^3.                     (F13)
+
+C_0 is fixed once C is fixed. A constant number of center types is
+included. The centered linear coefficient has canceled from the
+nontrivial part of the hit; it has not been silently discarded.
+
+### 4. Exact original hit and the selector-correlated K interval
+
+In the P field a genuine original hit is equivalent to
+
+    t*Q+delta-m^2*i=K*R_P                                (F14)
+
+for an integer K, since P=1 modulo the exact order R_P. From (F13),
+
+    |K*R_P-(t*Q+a-beta*sqrt(P*Q))|<=C_0*m^3.              (F15)
+
+For Q0=m^6/P, literal selection gives
+
+    |Q-Q0|=O(m^2*g), |sqrt(P*Q)-m^3|<=3*m^2*g.
+
+Substitution in (F15) puts K in an interval centered at
+
+    K0= v/(P-1)*(t*m^6/P+a-beta*m^3), v=v_P,             (F16)
+
+of radius O(v*(1+H*g/m)). In particular the number of integer K is
+
+    O(v*(1+H*g/m)).                                      (F17)
+
+Crucially this interval is independent of j,b,c and n=N mod m^2.
+P appears only as a proof-side counting variable, not algorithm advice.
+Both signs of a and of K are retained. The center position is not frozen
+independently of full N: (F16) prices its entire allowed selector-strip
+variation. Also |K|=O(v*H), uniformly, so V*H=o(m^2) at H=sqrt m.
+
+### 5. Source elimination determines two tags and one upper state
+
+Clearing (F14) gives the existing necessary original polynomial
+
+    F(P)=K*P^2-(K+v*delta)*P-v*t*n=0 (mod m^2),
+    P=1 (mod v).                                         (F18)
+
+Substitute the ACTUAL quotient relation t*n=a*j^2-j*m*b modulo m^2:
+
+    F(P)=K*P*(P-1)-v*a*(P-2*j*P+j^2)+v*m*b*(j-P)
+        =(K+v*a)*P*(P-1)-v*a*(P-j)^2-v*m*b*(P-j)
+       modulo m^2.                                      (F19)
+
+Fix P,m,a,t,v,K. Modulo m this is a quadratic polynomial in j,
+with nonzero leading coefficient -v*a. Therefore at most TWO legal
+tags can occur, even when K is zero or the tag polynomial has a
+repeated root. No simple-root lifting in the variable P is needed.
+
+For every FALSE tag j!=P mod m, the coefficient v*m*(j-P) of b in
+(F19), after division by m, is a unit modulo m. The lower tag equation
+already makes the remaining numerator divisible by m. Hence (F19)
+fixes b modulo m uniquely. The literal source relation then fixes
+
+    n=t^(-1)*(a*j^2-j*m*b) modulo m^2                    (F20)
+
+uniquely, since 1<=t<m makes t a unit modulo m^2. This step is also
+the existing literal centered upper-carry bijection. Since P is a
+unit modulo m^2, (F20) fixes ONE Q class modulo m^2, containing
+O(g+1) integer Q in (F8).
+
+This simultaneously treats every false simple root and every false
+repeated root of the older P-polynomial. There is no division by
+j-P in the OWN-tag case; that case is handled separately below.
+
+### 6. Every false hit at full square-root height
+
+For fixed selector m and cofactor v, there are O(X/v) integers P in
+[cX,X] satisfying P=1 modulo v. This upper bound is valid for the
+actual prime/order subset. For each P there are O(H^2) signed pairs
+(a,t), O(v*(1+H*g/m)) multipliers by (F17), at most two tags per
+multiplier by (F19), and O(g+1) Q per false tag by (F20).
+
+The cofactor v CANCELS against the count of admissible P. Summing v<=V
+and the selector gaps gives all false-hit ordered pairs in one field:
+
+    O(V*X*H_X^2 * sum_m (1+H_X*g/m)*(g+1))
+     =O(V*H_X^2*M^4 + V*H_X^3*M^(3+theta)),               (F21)
+
+where H_X=max_(m comparable to M) floor(sqrt m)=O(sqrt M).
+The term with g in the second summand is controlled by (F10); terms
+with g instead of g^2 are smaller. The reversed hidden-field count
+has the same bound.
+
+At H_X=O(sqrt M), the two exponents are
+
+    (3-3*kappa)+5 = 5969/1000 = 5.969,
+    (3-3*kappa)+9/2+theta = 2997/500 = 5.994.              (F22)
+
+They are strictly below six. The second is the critical new saving:
+kappa>(3/2+theta)/3=27/40=.675, while the published supply gives .677.
+No uniformity in a shrinking analytic epsilon is assumed.
+
+### 7. Every own-tag hit is the exact forced index
+
+If j=P mod m, then P-j is divisible by m. Equation (F19) reduces to
+
+    F(P)=(K+v*a)*P*(P-1) modulo m^2.
+
+Both P and P-1 are units modulo m^2. Hence K+v*a=0 modulo m^2.
+The absolute bound O(V*H)=o(m^2) proves the INTEGER equality K=-v*a.
+Substituting in (F14) yields exactly
+
+    m^2*i=a*P+t*Q+ell.                                  (F23)
+
+Thus no separate false-column local alias remains at the own tag.
+Its inclusion in the chosen windows must satisfy actual real weighted-
+sum closeness. That geometry is counted next without freezing a vector
+or assuming equidistribution of a carry.
+
+### 8. Own-tag stationary and negative-cancellation windows
+
+For a>0, (F23) and the stationary window imply
+
+    0<=a*P+t*Q-2*sqrt(a*t*P*Q)<=C_1*m^3,
+    (sqrt(a*P)-sqrt(t*Q))^2<=C_1*m^3.
+
+As P is comparable to m^3 and rho=Q/P lies in [1/2,2] on either
+balanced hidden-field orientation, this forces
+
+    |a-rho*t|<=C_2*sqrt t.                               (F24)
+
+For a=-A0<0 the cancellation window gives the stronger
+|A0-rho*t|<=C_3. At fixed P,m, rho varies by O(g/m) in the selector
+strip. For each t<=H_X the number of possible a is therefore
+O(sqrt t+t*g/m). Summing t bounds all eligible signed vectors by
+
+    O(H_X^(3/2)+H_X^2*g/m).                              (F25)
+
+At the true tag, the legal congruence is a*P=t*Q modulo m, which
+fixes one Q class modulo m. It contains O(m*g+1) Q. Sum (F25) over
+at most X choices P and selector gaps using (F9)--(F10):
+
+    own stationary/cancellation loss
+      =O(H_X^(3/2)*M^5 + H_X^2*M^(4+theta)).              (F26)
+
+At H_X=O(sqrt M), this is O(M^(23/4)+M^(221/40)), whose largest
+exponent is 23/4=5.75. All legal vectors, both signs and both actual
+factor orientations are included; factors select proof witnesses only.
+
+### 9. Own-tag literal publicShift and reflectedShift windows
+
+From (F12), (F23) and a literal rectangle window, with
+u=P/sqrt(P*Q), one obtains
+
+    |a*(u-A)+t*(1/u-B)|<=C_4,                            (F27)
+
+or the same inequality with A,B swapped for reflectedShift. The
+integer square-root and midpoint rounding errors are absorbed in C_4.
+Balanced orientations have u in [1/sqrt 2,sqrt 2]. Freeze
+u0=P/m^3 instead; selector variation changes both coefficients by
+O(g/m). Thus the frozen strip is widened only to
+
+    |a*U+t*W|<=C_5*(1+H_X*g/m),                         (F28)
+
+with U=u0-A,W=1/u0-B (or the reflected pair).
+
+These two coefficients cannot vanish together. More quantitatively,
+
+    |1-A*B|=|u0*(1/u0-B)+B*(u0-A)|
+       <=(sqrt 2+B)*max(|U|,|W|),
+
+because 0<u0<=sqrt 2. For the reflected pair replace B by A. Since
+A*B>1, one coefficient has a FIXED positive lower bound. If it is U,
+fix each t and count a; if it is W, fix each signed a and count t.
+In either case (F28) permits only
+
+    O(H_X+H_X^2*g/m) signed integer vectors.             (F29)
+
+Each vector fixes a Q class modulo m, just as in Section 8. The
+resulting own-tag loss for BOTH rectangle centers is
+
+    O(H_X*M^5+H_X^2*M^(4+theta))=O(M^(221/40))             (F30)
+
+at square-root height (the two exponents are 5.5 and 5.525).
+This argument covers positive and negative a uniformly. It does not
+approximate an unconverted quotient root or use a hidden factor-ratio
+oracle. The strict inequality A*B>1 is the arithmetic reason that
+the literal rectangle midpoint admits this uniform strip count.
+
+### 10. Total actual-family theorem and scope
+
+Combining both field orientations of (F21), (F26) and (F30), the total
+hit-containing ordered pairs have cardinality
+
+    O(M^5.994+M^5.75)=O(M^5.994)=o(M^6/log^2 M).           (F31)
+
+Remove them from the standard actual balanced longBase2 supply. Positive
+mass survives along unbounded X, proving (F6). The same-tag pairs cost
+O(M^5) by the integer Q-class count and may also be removed; no thin
+M^4 same-tag family is intersected. All preceding majority-family
+deletions of strictly smaller order can be combined by their union.
+
+The complete source contains every legal boxed ray, so arbitrary full-N
+selection, adaptive reordering, subsets, crops inside these windows,
+and choice among the four specified centers cannot evade the result.
+Every such residual and every row norm is a unit in both fields;
+products and certified-unit multiplicative cancellations stay units.
+An exact scanned quadratic cannot have proper P/Q roots in these
+windows, since such a root would imply the same genuine local hit.
+General additions and internal pivots are not covered by this closure.
+
+This upgrades the earlier CONDITIONAL all-local stationary-window
+obstruction to an UNCONDITIONAL full square-root-box theorem and extends
+it to both literal public rectangle centers. It leaves the previous
+unconditional forced-index theorem and all earlier pinned reports intact.
+The old global O(VH^3M^4) estimate was insufficient at square-root height;
+it was not a proof that the sharper center-correlated count was impossible.
+
+There are at most 4*H^2=O(m) legal boxed packets at fixed N. The source
+is constructible via the deterministic sorted table of a/t modulo m,
+retaining all equal-ratio buckets, and one tag scan of s/j^2, s=N mod m,
+in soft O(m) bit work. All integer lifts use the full public N. No prime-
+field root algorithm or expected hash-table cost is being assumed.
+
+For each specified integer center w_l (round (F5) if needed), transport
+the ORIGINAL target to
+
+    y_l=gamma^(t_l*N+delta_l-m^2*w_l).
+
+Let I={-L,...,L}, L=ceil(Cm)+2, adjusting the fixed C for rounding.
+The literal residual with i=w_l+h factors EXACTLY as
+
+    gamma^(t_l*N+delta_l)-alpha^(w_l+h)
+      =alpha^w_l*(y_l-alpha^h).                          (F32)
+
+The extracted phase is a known unit. With R=O(m) source rows, form
+the monic TARGET polynomial
+
+    F(T)=product_(l=1)^R (T-y_l),
+    B=product_(h in I) F(alpha^h)
+      =(-1)^(R*|I|)*product_l product_(h in I)(y_l-alpha^h).
+                                                               (F33)
+
+Thus gcd(N,B) is exactly the gcd of the full centered original residual
+product; known unit phases and the displayed sign preserve saturation
+as well as proper factors. Cropped boundary candidates can be retained
+or excluded consistently; the all-hit absence applies to the larger
+constant-width interval itself. The theorem makes B a unit.
+
+Build the monic polynomial of degree O(m), generate O(m) consecutive
+baby powers from the public unit alpha, and multipoint-evaluate F at
+those points using monic division. Fast modular polynomial arithmetic
+costs soft O(m) ring operations and soft O(m*log N) bit work; the latter
+is soft O(m) in the target convention. Each target phase uses O(log N)
+modular powering steps. Both signs of h use the computed inverse unit.
+A constant number of center families preserves the same bound. There
+is no row/baby matrix of Theta(m^2) entries in this algorithm.
+
+The theorem therefore defeats a specifically PAID whole-family linear
+acquisition route at FULL square-root weights. The missing ingredient is
+proper-factor coverage, even though the scalar norm can be acquired in
+the desired classical budget. This is not a new native full bit-clock
+proof or a lower bound on richer observations.
+
+Unrestricted original index ranges of size H*m, arbitrary row-specific
+centers not of the four displayed forms, unbounded Euclidean intermediate
+coordinates and unbalanced inputs remain outside (F31). In particular
+this is not an exhaustion theorem for the full amended scalar-root
+families, all intermediate rows, or implicit full original interval
+norms. Guaranteed all-semiprime N^(1/6) acquisition, proper recovery,
+bit-time and peak-memory composition remain open.
+
+### Fixed polylogarithmic padding preserves the obstruction
+
+Fix nonnegative real constants A,B. At the literal selector m put
+
+    H(m) <= C_H sqrt(m) (log(2m))^A,
+    W(m) <= C_W m (log(2m))^B,
+    E(m)=1+W(m)/m.
+
+Include ALL legal original signed rays 0<|a|,t<=H(m), with positive t,
+literal centered liftRow and all original indices within W(m) of any
+of the four specified centers. Rounding the stationary centers by a
+bounded amount is permitted. Eventually H<m and E=o(H) if H is chosen
+comparable to the displayed upper bound. Smaller heights are subsets
+of that maximal family, so no lower height assumption is needed.
+
+Use maximal H_X=O(sqrt(M) log^A M), E_X=O(log^B M+1), at selector
+scale m comparable to M. The full-height proof gives the following
+parameter-dependent bounds.
+
+The center residual inequality (F13) now has tolerance O(E_X*m^3).
+At fixed P,m,a,t,v, the independent K interval (F17) therefore has
+O(v*(E_X+H_X*g/m)) integers. The two-tag bound and unique false-tag
+upper state are unchanged. Counting integers P=1 modv cancels v
+and yields the complete false-hit loss
+
+    O(V*E_X*H_X^2*M^4 + V*H_X^3*M^(3+theta)).              (P1)
+
+Global |K|=O(v*(H_X+E_X)) is still o(m^2). Thus every own-tag hit
+still forces the INTEGER identity K=-va; no alias is reintroduced.
+
+For the positive stationary center, the own-tag geometric inequality is
+
+    (sqrt(a)-sqrt(rho*t))^2 <= C*E_X, rho=Q/P.
+
+Since rho stays between fixed positive constants, it implies
+
+    |a-rho*t| <= C'*(sqrt(E_X*t)+E_X).
+
+This follows by bounding sqrt(a) by sqrt(rho*t)+sqrt(C*E_X)
+and expanding the difference of squares. The negative cancellation
+center has the stronger bound ||a|-rho*t|<=C''*E_X. Selector variation
+widens the per-t strip by O(t*g/m). All signed vectors at the true tag
+are therefore bounded in number by
+
+    O(sqrt(E_X)*H_X^(3/2)+E_X*H_X+H_X^2*g/m).
+
+Each vector fixes one Q class modm, containing O(m*g+1) integers.
+Summing selector gaps gives the own stationary/cancellation loss
+
+    O((sqrt(E_X)*H_X^(3/2)+E_X*H_X)*M^5
+      +H_X^2*M^(4+theta)).                                (P2)
+
+For either literal rectangle midpoint, the exact b/ell cancellation
+and the fixed separation A_rect*B_rect>1 from (F11) remain valid.
+The widened strip (F28) has width O(E_X+H_X*g/m). One coefficient
+is uniformly bounded away from zero, so the vector count is
+O(E_X*H_X+H_X^2*g/m). The own rectangle loss is
+
+    O(E_X*H_X*M^5+H_X^2*M^(4+theta)).                      (P3)
+
+With V=O(M^.969), theta=.525 and the above maximal H_X,E_X,
+(P1)--(P3) total at most M^5.994 times a fixed power of logM.
+This is o(M^6/log^2 M). The previous actual balanced literal-selector
+longBase2 supply therefore leaves infinitely many inputs on which
+EVERY residual in the entire padded family is a unit in both fields.
+Both hidden-field orientations and removal of same-tag pairs retain
+the original proof's majority-family scope.
+
+The padded family has O(H^2)=soft O(m) legal rows. Its deterministic
+sorted ratio-table/tag scan, actual integer lifts and modular phase
+construction cost soft O(m). After exact phase transport there are
+O(W)=soft O(m) common signed baby points. Building the monic target
+polynomial of degree soft O(m), evaluating it at all those points by
+monic division, and multiplying the results still costs soft O(m)
+modular/bit work. Hence the actual obstruction persists under fixed
+polylogarithmic padding of BOTH source height and linear window width.
+The reference implementation of this classical cost bound need not
+materialize the full row/baby matrix.
+
+This is not a native asymptotic theorem or a lower bound for arbitrary
+implicit scalar queries. Wider polynomial windows, original arbitrary
+centers, unbounded Euclidean intermediate coordinates, new additive
+observations and the full guaranteed one-sixth bit theorem remain open.
+
+### Exact Euclidean progression: a useful carry cancellation
+
+The separate frozen Euclidean derivation retains every intermediate
+vector in an actual frame. With signed affine coordinates
+`a_k=a0+k*a1`, `t_k=t0+k*t1`, the literal centered lift satisfies
+
+    b_k=b0+k*beta-m*ell_k,
+    x_k=x0*x1^k*alpha^(-ell_k).
+
+Here x1 is the current-vector target, not the first intermediate target.
+For the literal public/reflected packet shift, exact midpoint rounding
+gives
+
+    shift_k=floor((H0+k*H1)/(2*m^2))-ell_k,
+    y_k=x0*x1^k*alpha^(-floor((H0+k*H1)/(2*m^2))).
+
+Thus the centered-b wrap cancels EXACTLY against the public packet
+shift. It must not be charged as an independent obstruction. The
+remaining midpoint carry gives two explicit consecutive ratios. The
+existing native full Euclidean source budget includes all intermediate
+vectors and both centers in soft O(m) emitted packets; their target and
+center data are classically constructible in that budget. A uniform
+short endpoint stride or faster implicit full-interval norm evaluator
+does not follow from this source compression alone.
+
+For an actual local alpha of prime order R>2L, the length-L geometric
+baby polynomial P_L has an overlapping root with P_L(eta*T) precisely
+when eta=alpha^d for some ORIGINAL |d|<=L-1. The reduced numerator and
+denominator then have degree |d|; otherwise both have degree L. Being
+an alpha power modulo a hidden order supplies neither a short d nor its
+public computation. Original and transported steps must retain the
+correct center shift when applying this criterion.
+
+The specified dense grouped evaluator charges d*b coefficients and
+L/b evaluation outputs, at least 2*sqrt(d*L). The actual uncentered
+first-current target union has at least (m-1)/2 distinct targets in
+either field, by its quadratic lower-phase fiber and an integer phase
+band shorter than R. Hence this dense contract has Omega(m^(3/2))
+charged writes for its common ORIGINAL length-m^2 seed interval.
+This is neither a centered deduplication bound nor a lower bound for
+arbitrary scalar algorithms or implicit representations.
+
+### Universal moving menus and the correctly priced scalar recurrence
+
+The full original shared query already has the scalar recurrence
+
+    F(T)=product_j(x_j-T), degree d,
+    u_0=1, u_(r+1)=F(alpha^r)*u_r,
+    u_L=product_j product_(0<=r<L)(x_j-alpha^r).
+
+The coefficient degree is d. The parameter-sensitive Theorem 5 of
+[Bostan--Yurkevich](https://arxiv.org/pdf/2012.08656) retains the bound
+soft O(sqrt(d*L)); the abstract's fixed-degree soft O(sqrt L) does not
+permit discarding a varying d. An explicit composite-ring monic block
+construction forms product_(r<b) F(alpha^r*T), degree d*b, evaluates
+at alpha^(b*k), and retains the shorter tail. Its cost is
+soft O(d*b+L/b+d), hence soft O(d+sqrt(d*L)). This is a paid upper
+bound. For d=O(m), it gives soft O(m^(3/2)) at the seed/half-mask
+length L=Theta(m^2), and soft O(m^(5/4)) for full square-root-weight
+original length O(m^(3/2)). The width-O(m) centered family has the
+different coverage contract proved to fail above.
+
+The independently reviewed new moving-menu result is exact and scoped.
+A universal substitution K[T]/F_s -> K[T]/F_t, [P] -> [P(alpha*T)],
+exists if and only if the TARGET F_t divides the dilated SOURCE
+F_s(alpha*T). Universal bilinear product transport requires this gate
+on BOTH input edges; setting the other input to one proves necessity.
+On an ell-edge cycle the degrees are equal, and any nonzero retained
+root gives
+
+    degree(F_s)>=R/gcd(R,ell),
+    sum_(s on cycle) degree(F_s)>=R.
+
+For prime R and ell<R each cycle carrier has degree at least R. The
+actual source has nonzero unit roots and actual R>16*m^2. Thus a small
+finite periodic menu of universal quotient transports cannot evade the
+orbit-degree obstruction. On a finite path of fewer than R constant
+alpha steps, a root-retaining carrier of degree<R cannot repeat.
+Unequal-degree divisibility alone may lose roots; root retention must
+be separately imposed on such a path.
+
+The same bound holds for a universal scalar resultant transport law
+Res(G,P)=c(deg P)*Res(F,P(alpha*T)), with formal coefficient identity.
+Testing P=T-Z forces equal degree d, c(1)=1, and
+G(T)=alpha^d*F(alpha^(-1)*T); cyclic root orbits give the bound.
+Equality of arbitrary-degree functions over a finite field alone is
+insufficient, though field probes suffice when both degrees<R.
+
+For variable edge shifts alpha^(e_s), the cycle bound depends on the
+SUM of e_s. A +1,-1 cycle has sum zero and admits small carriers.
+Time-dependent dyadic substitutions, symbolic moving families,
+nonperiodic computations and corrections specific to P_t therefore
+remain open. The universal scalar norm law does not rule out arbitrary
+scalar resultants or source-specialized implicit algorithms.
+
+The exact normalized endpoint identity for
+D(z)=product_j product_(r<L)(1-z*x_j*alpha^(-r)) preserves its endpoints
+of degree O(m), but does not supply the value D(1). D(0)=1 lies on a
+different multiplicative orbit. On a hit D(1) may be a nonunit, so
+formal power-series division cannot simply be specialized there. The
+RH-path Moebius quotient-block and Suzuki/Abel cancellation identities
+retain source coefficients, unpaired endpoints or error remainders;
+none inspected here supplies a paid composite-ring anchor for D(1).
+
+### Native proof boundary, validation and preservation
+
+`RiemannGaussian/SemiprimeCenteredAcquisitionObstruction.lean` imports
+only the preserved `SemiprimeDistinctAcquisitionObstruction` leaf.
+It has 124 lines, six source theorems, zero computable definitions and
+one noncomputable finite tag catalog. The exact native claims are:
+
+- The finite candidate tag catalog has cardinality at most two and
+  includes every tag satisfying the reduced original hit equation
+  when v*a is nonzero modulo the prime selector.
+- The ORIGINAL integer source relation eliminates the public state
+  from the weighted hit polynomial, retaining its discarded term
+  -v*m^2*c exactly.
+- At a fixed false tag, two original necessary polynomial hits have
+  the same b modulo m, using IsCoprime m (v*(p-j)) and m nonzero.
+  No derivative/simple-root condition or Hensel lifting is assumed.
+- Equal carry and IsCoprime m t imply equal COMPLETE input state
+  N modulo m^2. The combined false-tag theorem discharges both
+  cancellations from the exact original source internally.
+
+The actual prime/order and selector-strip counts, geometric center
+estimates, literal-route prime supply, global infinitude, monic
+whole-family norm construction, asymptotic arithmetic/bit cost and
+moving-menu argument remain CLASSICAL. Neither the hidden prime in a
+proof catalog nor an analytic theorem is supplied as algorithm advice
+or inserted as a Lean axiom. The tag catalog is not a paid enumerator.
+
+Strict warning-as-error compilation, focused leaf build and the
+module-provenance checker pass. All 15 focused linters report zero
+errors across seven declarations, six theorems, zero generated helpers
+and zero checker-local helpers. The full transitive axiom audit admits
+only propext, Classical.choice and Quot.sound. Generated C contains
+ONLY module initialization; it implements no norm or factorization
+runtime. The focused ordinary-root check after registration is recorded
+in `docs/semiprime-centered-acquisition-obstruction-audit.json`.
+
+Independent reviews pin the full-height proof, polylogarithmic extension,
+finite source arithmetic, integrated native declarations and this journal
+entry. The moving-menu argument has a separate pinned arithmetic review;
+the Euclidean progression has a frozen source-faithful audit. Primary
+published PDFs are freshly fetched and hash-pinned in the new artifact
+directory `/tmp/semiprime-full-acquisition-20261008`. Exact registration
+adds one root import, one semiprime metadata entry and this dated section;
+removing those exact insertions restores the parent-after snapshots.
+No earlier audit, source, artifact or report is rewritten. No commit,
+push, public dashboard update or whole historical graph build is included.
+
+### Literature boundary and next arithmetic frontier
+
+The selected OpenAI/math catalog and NumberTheory search remains a
+targeted assessment, not a review of every manuscript. No divisor-cover
+or original interval evaluator closing the missing coverage/acquisition
+contract was identified in the inspected results. The Quasi-Riemann
+Hypothesis manuscript is not used as a premise of this obstruction.
+
+The separate published
+[Umans--Wang framework, Section 5](https://arxiv.org/html/2511.10851v1)
+does conditionally target N^(1/6+o(1)) factorization. Its strong
+prefactored structured divisibility-cover conjecture is an additional
+arithmetic requirement: short difference-cover sets alone do not
+supply paid construction, interval products and factored singleton
+recovery. This is a lead to a different acquisition channel, not a
+proved construction or the strict soft N^(1/6), all-N Lean theorem.
+
+The specifically paid soft-linear linear-window route is now closed by
+an actual infinite counterfamily at the FULL square-root box, including
+polylogarithmic padding. This does not exhaust all amended row families.
+Arbitrary original centers, polynomially wider windows, all unbounded
+Euclidean intermediate weights, source-specialized moving corrections,
+new additive pivots and general implicit scalar queries remain open.
+The next substantive advance must provide a new paid covered channel or
+a scoped arithmetic obstruction to a concrete alternative. The original
+D11 centered prime covariance is unchanged. Full arbitrary-ratio and
+prime-square coverage, proper recovery through saturation/nonunits,
+routing/controller costs, bit time and peak memory remain to compose.
+The full guaranteed one-sixth goal remains active and unproved.
+
+## 2026-10-08 — Full Euclidean source: paid soft-linear centered norm and unconditional all-hit failure
+
+The previous goal turn was progress: it supplied an actual all-hit
+obstruction at full square-root-box height and a classically paid
+soft-linear collision norm, with exact finite identities in Lean. Its
+authoritative audit is `docs/semiprime-centered-acquisition-obstruction-audit.json`,
+SHA256 `de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03`.
+Its 479 source, 107 selected Mathlib and 48 artifact pins were freshly
+revalidated, with zero mismatches and exact registration continuity.
+
+This turn removes the square-root truncation for the ACTUAL Euclidean
+source. Every current vector and every intermediate division slot,
+including coordinates up to m-1, is now covered by a CLASSICAL actual
+infinite all-hit obstruction in the four specified original centered
+windows. The resulting hit-containing input bound is soft O(M^5.969),
+strictly below the actual supply Omega(M^6/log^2 M). Fixed polylogarithmic
+window padding also fails. The whole-family scalar norm is paid soft O(m)
+without constructing a matrix, so its coverage failure is arithmetic.
+
+The new reason is a universal SET catalog of all Euclidean rays,
+independent of N. Two square classes cover every slope and bound its
+cardinality by soft O(m), now proved as a finite native theorem. Split
+each prime-fixed selector strip into width-m^2 subboxes before counting
+false multipliers. For own tags reverse the ray/prime incidence count;
+weighted catalog sums and rectangle discriminant transversality supply
+the saving. Neither large intermediate height nor a false-row alias
+evades these counts.
+
+A separate source-specific advance prices all midpoint carry corrections
+in soft O(m), including the complete signed interval. This removes a
+carry obstacle but leaves the long pure-stride scalar norm unpaid.
+The old unqualified unit claim after arbitrary origin normalization was
+corrected explicitly; the revised signed-half argument is recorded below.
+No finite success examples or backend runs supply the mathematical evidence.
+The complete guaranteed one-sixth Lean factorization and bit/memory goal
+remains active and unproved.
+
+### 1. Exact source and new theorem
+
+Let N=P*Q be a balanced distinct-prime input, and let m be the literal
+least prime at least ceil(N^(1/6)), namely publicRowModulus N. For each
+unit tag 1<=j<m, take ALL vectors emitted by publicPairs N m j:
+
+    euclidPairs(m, (N*j^(-2) mod m), 0, 1, false).
+
+Here the displayed slope is the exact representative of quotientSlope
+modulo m; the inverse is the actual public Bezout inverse. The literal
+source retains every current Euclidean vector and every intermediate
+division vector. For each emitted signed pair (a,t), apply exactly
+
+    D=(t*N-a*j^2)/m,
+    b=centered(m,-publicInverse(m,j)*D), c=(D+j*b)/m,
+    t*N=m^2*c-j*m*b+a*j^2.                              (E1)
+
+Write ell=m*b-2*a*j and delta=a+ell. The actual original target is
+gamma^(t*N+delta), and alpha=gamma^(m^2). For a fixed C>0 retain EVERY
+original integer index in the two literal rectangle windows
+
+    |i-publicShift(N,m,j,a,b,t)|<=C*m,
+    |i-reflectedShift(N,m,j,a,b,t)|<=C*m,                (E2)
+
+and optionally in BOTH applicable additional windows
+
+    |i-(2*sqrt(a*t*N)+ell)/m^2|<=C*m       if a>0,
+    |i-ell/m^2|<=C*m                     if a<0.        (E3)
+
+Rounding the real centers in (E3) by a bounded amount is harmless.
+Targets and indices are transported together; (E2)-(E3) always refer
+to the ORIGINAL index and full N-dependent source lift.
+
+**Theorem.** Infinitely many actual balanced distinct-prime inputs,
+with the literal selector, actual longBase2 route and its actual gamma,
+have
+
+    gcd(N,gamma^(t*N+delta)-gamma^(m^2*i))=1            (E4)
+
+for EVERY actual public Euclidean current/intermediate row, EVERY
+index in (E2)-(E3), and BOTH hidden-field orientations. The factors can
+also be required to have distinct tags modulo m. No advised order,
+prime-field toy input, GRH or unpublished prime-density premise is used.
+
+The whole-family source and scalar norm in these linear windows are
+paid soft O(m) classically. The theorem therefore defeats a complete
+source-faithful acquisition with that cost; constructing a matrix or
+more backend identities cannot recover a nonexistent local collision.
+The result also holds for every width W<=C*m*(log m)^B with fixed
+C,B>=0, as proved in Section 9.1 below.
+
+Two new counting steps are essential. A universal SET of all possible
+Euclidean rays across all nonzero slopes has soft O(m) members and is
+independent of the full input. Partitioning each P-fixed selector strip
+into width-m^2 boxes removes the former weighted-height/gap-squared loss.
+For own tags, count admissible P intervals separately for each ray,
+instead of seeking a uniform short-height bound for the whole source.
+
+### 2. Authoritative source and published actual supply
+
+The preceding centered audit was revalidated read only: all 479 source,
+107 selected Mathlib and 48 artifact pins match. Its SHA256 is
+de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03.
+The source formulas and native finite hit/uniqueness contracts are the
+same ones used by the frozen full-height-centered report.
+
+Put M=X^(1/3), kappa=677/1000 and theta=21/40. The published
+[Kurlberg--Pomerance Lemma 19 and its cited large-divisor input](https://www.impan.pl/shop/en/publication/transaction/download/product/82225)
+give Omega(X/log X) primes in a fixed multiplicative bin in [cX,X]
+whose P-1 has a prime divisor R_P>P^kappa. The bin can have ratio <=3/2,
+so all ordered pairs are balanced. Write
+
+    P-1=v_P*R_P,
+    1<=v_P<=V=O(M^(3-3*kappa))=O(M^.969).              (E5)
+
+The large divisor is unique and has exponent one. Removing base-2
+orders that omit R_P costs O(V^2/log X) individual primes, by the
+logarithm of product_(r<=V)(2^r-1), or the same primary paper's
+order-omission argument. Remove diagonal and cross-period pairs at cost
+O(X+X^(2-kappa)), ensuring R_P!=R_Q, R_P does not divide Q-1 and
+R_Q does not divide P-1. The retained actual ordered-pair supply is
+
+    Omega(M^6/log^2 M).                               (E6)
+
+The literal public projected base is
+
+    gamma=(2^(N-1))^((m!)^ceil(log_2(N+1))) mod N,
+
+with staged public powering available. Its two EXACT local orders on
+this supply are R_P and R_Q: the factorial power kills each cofactor
+v, while R>m and the cross-period exclusions preserve the large prime
+through both public projections. The preserved route proofs give the
+actual longBase2 outcome; these hidden primes and periods are proof-side
+counting facts, never algorithm input. Eventually, uniformly,
+
+    m is comparable to M, v_P,v_Q<m, R_P,R_Q>16*m^2,
+    P,P-1,Q,Q-1 are units modulo m^2.                 (E7)
+
+For example m cannot divide P-1=v_P R_P because m is prime and
+v_P<m<R_P. The source denominators below will also be units.
+
+For mminus the preceding prime and g=m-mminus, the LITERAL selector is
+
+    mminus^6<P*Q<=m^6.                                (E8)
+
+At fixed P in [cX,X], the possible Q form a strip of length O(m^2*g).
+It contains O(m*g+1) integers in any prescribed class modulo m.
+Consecutive selector gaps telescope:
+
+    sum_m(g+1)=O(M).                                  (E9)
+
+[Baker--Harman--Pintz, Theorem 1](https://www.cs.umd.edu/~gasarch/BLOGPAPERS/BakerHarmanPintz.pdf)
+gives g=O(M^theta). Apply the backward prime interval at x=m-1 to
+avoid selecting m itself. Hence
+
+    sum_m g^2=O(M^(1+theta)).                         (E10)
+
+All cofactor/prime counts below allow integer P or Q wherever stated.
+No prime distribution inside the selector strips or residue classes is
+needed. The published inputs and actual route are the previously frozen
+ones; this turn adds arithmetic counting rather than an analytic premise.
+
+### 3. One universal soft-linear Euclidean ray SET
+
+For a nonzero slope lambda in {1,...,m-1}, define its exact coordinate
+list euclidPairs(m,lambda,0,1,false). Let C_m be the SET union of these
+lists, with repeated coordinate pairs removed. It depends only on m.
+Every actual row at every tag and every coprime full input has its
+signed pair (a,t) in C_m, since the actual slope is nonzero modulo m.
+
+Here is a direct derivation of the cardinal bound from the authoritative
+native complete source budget; no new generic lattice count is assumed.
+Choose any nonresidue eta modulo the odd prime m. In the two public
+inputs N=1 and N=eta, the slopes N/j^2 as j scans units cover respectively
+the two square classes of all nonzero slopes. Thus EVERY lambda is a
+slope of one of those two literal public inputs. The native theorem
+publicPackets_length_le includes every intermediate and both rectangle
+centers and bounds its length by 8*m*(floor(log_2 m)+1)^2 for each N.
+Dropping centers divides the coordinate occurrence count by two; taking
+a SET union and dropping duplicates can only decrease it. Consequently
+
+    |C_m|<=8*m*(floor(log_2 m)+1)^2=soft O(m).           (E11)
+
+The nonresidue is only a catalog-existence/counting witness. It does
+not select a factor or supply an actual input to the factoring algorithm.
+Equivalently the source's determinant/quotient charges prove this bound
+across all slopes using a unique linear slope fiber rather than the
+at-most-two quadratic tag fiber. No construction of the charge envelope
+is required.
+
+Every catalog ray satisfies
+
+    0<|a|<m, 1<=t<m.                                  (E12)
+
+Indeed each division frame has r0>r>0,y>0,x>=0 and r0*y+r*x=m.
+The current ray has |a|=r<m and t=y<m. Each intermediate k with
+1<=k<floor(r0/r) has |a|=r0-k*r>0,t=x+k*y>0 and
+
+    |a|*y+r*t=m,
+
+which bounds both coordinates strictly below m. Because m is prime,
+a and t are units modulo m^2. These bounds retain the ACTUAL largest
+intermediate coordinates; this is not a square-root truncation.
+
+Since C_m is a SET, three elementary dyadic weighted bounds will be
+used. For any fixed C1>0,
+
+    sum_((a,t) in C_m, 0<a<=C1*t) t^(-1/2)=soft O(m^(3/4)),
+    sum_((a,t) in C_m, 0<|a|<=C1*t) t^(-1)=soft O(m^(1/2)),
+    sum_((a,t) in C_m) (|a|+t)^(-1)=soft O(m^(1/2)).     (E13)
+
+For the first two sums, t in [T,2T) and |a|<=C1*t give at most O(T^2)
+distinct integer pairs, as well as at most |C_m|. Summing
+min(O(T^2),soft O(m))*T^(-s) over dyadic T and splitting at sqrt(m),
+with logarithms absorbed, gives exponents 1-s/2 for s=1/2 and s=1.
+The third sum uses U=|a|+t in [T,2T), with the same O(T^2) envelope
+and s=1. These estimates would not be justified by an occurrence
+multiset with arbitrary repetitions; the set convention is essential.
+
+### 4. Literal centers and exact local hit kernel
+
+Let
+
+    A=(1+1/sqrt(2))/2, B=(1+sqrt(2))/2,
+    A*B=(4+3*sqrt(2))/8>1.                             (E14)
+
+For BOTH signs of a the original public rectangle midpoint satisfies
+
+    m^2*publicShift=ell+(A*a+B*t)*sqrt N+O(m^2+|a|+t),
+
+and reflectedShift swaps A and B. The source floor square roots and
+integer midpoint division contribute exactly the displayed error.
+The other centers have beta=2*sqrt(a*t) for a>0 and beta=0 for a<0.
+Thus every chosen index has
+
+    |m^2*i-ell-beta*sqrt N|<=C0*m^3, |beta|=O(m),        (E15)
+
+where beta depends only on (a,t,center type), not on j,b,c or N.
+The centered b has canceled only after the target and index have both
+been transported; the original quotient relation still retains it.
+
+In the P field an actual original collision is exactly
+
+    t*Q+delta-m^2*i=K*R_P, K an integer.                (E16)
+
+Combining (E15)-(E16) gives
+
+    |K*R_P-(t*Q+a-beta*sqrt(P*Q))|<=C0*m^3,
+    |K|=O(v*m).                                       (E17)
+
+The cleared hit polynomial and ACTUAL source elimination are
+
+    F(P)=K*P^2-(K+v*delta)*P-v*t*N=0 mod m^2,
+    F(P)=(K+v*a)*P*(P-1)-v*a*(P-j)^2-v*m*b*(P-j)
+         modulo m^2.                                  (E18)
+
+The complete integer identity also retains the discarded -v*m^2*c.
+The authoritative finite Lean leaf already proves this exact identity.
+For fixed P,m,a,t,v,K the reduction modulo m is a quadratic in j with
+unit leading coefficient -v*a, so it gives at most TWO tags.
+At every false tag j!=P mod m, the coefficient of b after canceling m
+is a unit; b modulo m is unique. The original quotient relation fixes
+the entire N modulo m^2, hence ONE Q class modulo m^2. The native
+false_tag_input_state_unique proves these cancellations with their
+explicit coprime gates and without any derivative/Hensel premise.
+They cover every false repeated-root branch as well as simple roots.
+
+### 5. Width-m-squared subboxes price EVERY false hit
+
+At fixed actual P,m partition the selector Q strip into half-open
+subboxes of length at most m^2. There are O(g+1) of them. For each
+catalog ray and center define the real function
+
+    Phi(Q)=(t*Q+a-beta*sqrt(P*Q))/R_P.
+
+On the balanced range, (E12) and |beta|=O(m) give
+
+    |Phi'(Q)|=|t-(beta/2)*sqrt(P/Q)|/R_P
+             =O(m/R_P)=O(v/m^2).                      (E19)
+
+Thus Phi varies by O(v) within ONE subbox. The error in (E17), divided
+by R_P, is also O(m^3/R_P)=O(v). Consequently each subbox has an
+interval containing only O(v) possible integer K, INDEPENDENT of
+j,b,c and the two-digit public state. Each K yields at most two tags;
+each false tag gives one Q class modulo m^2, containing at most one
+integer in a half-open width-m^2 subbox. The endpoint convention can
+also be relaxed at a constant cost.
+
+For fixed m,v, there are O(X/v) integers P in [cX,X] with P=1 modulo v.
+This upper bound applies to the actual prime/order subset. Catalog size,
+subbox count, K count and state uniqueness give
+
+    false pairs at fixed m,v
+      <=soft O((X/v)*m*(g+1)*v)=soft O(X*m*(g+1)).      (E20)
+
+The cofactor v cancels. Sum v<=V and sum_m(g+1)=O(M):
+
+    ALL false-hit pairs in either field=soft O(V*M^5)
+      =soft O(M^(5969/1000))=soft O(M^5.969).           (E21)
+
+This replaces the old whole-strip bound that charged both a large
+K variation and O(g+1) representatives of its residue class. After
+subdivision, the class has only one representative; charging that
+second gap factor would double-count strip length. No average-prime-gap
+estimate or unproved source/phase equidistribution is needed.
+
+### 6. EVERY own-tag hit is the exact forced index
+
+If j=P modulo m, (E18) becomes (K+v*a)*P*(P-1)=0 modulo m^2.
+Both P and P-1 are units. Hence m^2 divides K+v*a. By (E17),
+
+    |K+v*a|=O(V*m)=O(M^1.969)=o(m^2),
+
+so the integer multiple must vanish: K=-v*a. Substitute this into
+(E16), using v*R_P=P-1, to get the EXACT original index equation
+
+    m^2*i=a*P+t*Q+ell.                                (E22)
+
+No other local alias remains at the own tag, despite the full unbounded
+Euclidean weights. Its inclusion in a chosen window is now real
+weighted-sum geometry. The legal true-tag relation is
+
+    a*P=t*Q modulo m,                                 (E23)
+
+which fixes one Q class modulo m, since 1<=t<m.
+
+### 7. Own stationary and cancellation hits: reverse the ray/P count
+
+For a positive stationary ray, (E15) and (E22) imply
+
+    (sqrt(a*P)-sqrt(t*Q))^2<=C2*m^3,
+    |sqrt(a/t)-sqrt(rho)|<=C3/sqrt(t), rho=Q/P.          (E24)
+
+Balanced rho lies in [1/2,2], so necessarily a<=C4*t for a FIXED C4.
+For each fixed catalog ray, its admissible rho form an interval of
+width O(t^(-1/2)); this follows by squaring the interval in (E24), whose
+center sqrt(a/t) is now uniformly bounded.
+
+Freeze rho0=m^6/P^2. By literal selection, |rho-rho0|=O(g/m), so the
+admissible rho0 interval has width O(t^(-1/2)+g/m). On the fixed balanced
+scale, P->rho0 is monotone with derivative comparable to 1/X. Therefore
+the number of admissible INTEGER P in [cX,X] for this one ray is
+
+    O(X*(t^(-1/2)+g/m)+1).                            (E25)
+
+This reverses the former counting order: neither a vector frozen across
+inputs nor a universal small-height promise for Euclid is required.
+Each such P has only O(m*g+1) possible Q in its true-tag class (E23).
+Using the first weighted sum (E13) and the catalog cardinality,
+
+    own stationary pairs at fixed m
+      =soft O((m*g+1)*(X*m^(3/4)+X*g+m)).              (E26)
+
+Sum the selector gaps (E9)-(E10), with X=M^3:
+
+    ALL own stationary pairs
+      =soft O(M^(23/4)+M^(4+1+theta))
+      =soft O(M^5.75+M^5.525).                        (E27)
+
+For a=-a0<0 the cancellation center yields |a0-rho*t|<=C5. Then
+a0<=C6*t and the rho interval has width O(t^(-1)). The second weighted
+sum (E13) changes m^(3/4) in (E26) to m^(1/2), giving
+
+    ALL own negative-cancellation pairs
+      =soft O(M^5.5+M^5.525).                         (E28)
+
+All +1 integer-endpoint terms are smaller: for example catalog-size
+times (m*g+1) summed in m is soft O(M^3). Both hidden-field
+orientations are counted by the same argument, with rho in [1/2,2].
+
+### 8. Own rectangle hits: the AB>1 discriminant gap
+
+For the literal public center, (E15) and (E22), divided by sqrt(N),
+give for u=P/sqrt(N) in a fixed positive compact interval
+
+    |f(u)|<=C7,
+    f(u)=a*(u-A)+t*(1/u-B).                            (E29)
+
+ReflectedShift swaps A and B. Put U=|a|+t, and freeze u0=P/m^3.
+Literal selection gives |u-u0|=O(g/m), so a necessary frozen condition
+is |f(u0)|<=E, where E=C8*(1+U*g/m).
+
+For a>0 set
+
+    Delta=(A*a+B*t)^2-4*a*t.
+
+The matrix of this quadratic form has positive leading principal minor
+A^2 and determinant 4*(A*B-1)>0. Thus Delta>=c8*(a+t)^2 for a FIXED
+positive c8. The reflected form has the same positive-definite gate.
+The exact derivative identity is
+
+    (u*f'(u))^2=(A*a+B*t+f(u))^2-4*a*t.               (E30)
+
+Since g/m=o(1), for all sufficiently large U the frozen level band
+|f(u0)|<=E has |f'(u0)|>=c9*U: the perturbation from Delta in (E30)
+is O(U*E+E^2), and E/U=O(1/U+g/m) is smaller than a fixed discriminant
+gap. f''(u)=2*t/u^3>0, so the level band has at most TWO components.
+Each has length O(E/U)=O(U^(-1)+g/m). The finitely many rays with U
+below the fixed threshold satisfy the same P-count upper bound after
+enlarging its fixed constant.
+
+For a<0 the derivative f'(u)=a-t/u^2 has absolute value >=c10*U
+everywhere on the compact interval. The band is monotone and has the
+same length bound, without a discriminant argument. The same reasoning
+applies to the reflected constants. Since P=m^3*u0, each fixed ray
+therefore admits at most
+
+    O(X*(U^(-1)+g/m)+1)                               (E31)
+
+integer P. There is no exceptional real-ratio exclusion around a
+coefficient zero: the discriminant/derivative argument controls those
+positions directly and uniformly.
+
+Combine (E31) with (E23), the third weighted sum (E13), and (E9)-(E10):
+
+    ALL own rectangle pairs, BOTH literal centers
+      =soft O(M^5.5+M^5.525).                         (E32)
+
+The strict AB>1 inequality is the arithmetic reason that positive-ray
+near-zero bands remain transverse at full source height.
+
+### 9. Actual infinite ALL-hit absence and the paid norm it defeats
+
+Summing both fields and all center types, (E21), (E27), (E28) and (E32)
+give the complete hit-containing actual-pair loss
+
+    soft O(M^5.969+M^5.75+M^5.525)
+      =soft O(M^5.969)=o(M^6/log^2 M).                 (E33)
+
+Remove these pairs from (E6). Positive actual mass survives at unbounded
+scales. Same-tag pairs can separately be removed at cost O(M^5), by one
+Q class modulo m and (E9); no thin same-tag supply is intersected.
+Every remaining actual input satisfies (E4) for ALL actual source
+packets and ALL original indices in ALL four stated windows. On both
+fields each residual is nonzero, so it is a unit modulo the actual
+squarefree N. This proves the theorem, including every false-row alias.
+
+The whole-family norm route is concretely paid. The existing complete
+source budget gives soft O(m) emitted rows with both rectangle centers;
+adding the two applicable extra centers multiplies the count by a
+constant. Euclidean frames, public inverse tags, exact lifts and integer
+centers require soft O(m) classical bit work at log(N)=O(log m).
+Alternatively the known exact frame recurrences generate target phases
+incrementally; no matrix is constructed. The original source is generated
+from full N, rather than substituting the universal catalog's two proof
+inputs for the actual rows.
+
+For each integer center w_l, transport the actual target to
+
+    y_l=gamma^(t_l*N+delta_l-m^2*w_l).
+
+For common I={-L,...,L}, L=ceil(Cm)+2, the exact residual is
+
+    gamma^(t_l*N+delta_l)-alpha^(w_l+h)
+      =alpha^w_l*(y_l-alpha^h).                       (E34)
+
+Build the monic target polynomial F(T)=product_l(T-y_l), of degree
+soft O(m), evaluate it at the O(m) points alpha^h, and multiply:
+
+    B=product_(h in I) F(alpha^h)
+      =(-1)^(R*|I|)*product_l product_(h in I)(y_l-alpha^h),
+      R=number of retained centered targets.          (E35)
+
+Fast product trees and multipoint evaluation divide only by monic
+polynomials and work over Z/N without nonunit inversions. The work is
+soft O(m) ring operations, or soft O(m*log N) bits, hence soft O(m) in
+the standard N^(1/6) convention. Target unit powers, common baby powers,
+and the public gamma projection add only soft O(m) bit work. Deterministic
+Euclidean arithmetic and sorted lists suffice; no expected hashing,
+hidden order, private factor, or interpolation through a nonunit is used.
+
+On the actual infinite counterfamily every B in (E35) is a unit and
+gcd(N,B)=1. All corresponding row norms are units too. This is a paid
+acquisition with a rigorously false coverage contract, not a failure
+merely to price source construction.
+
+#### 9.1. Fixed polylogarithmic width padding at the COMPLETE source
+
+All source coordinates are already fully retained in (E12); no further
+height padding is needed or claimed. Allow the windows to have width
+W<=C*m*(log m)^B for fixed C,B, and put E=1+W/m=soft O(1).
+The error in (E15) becomes O(E*m^3). In each width-m^2 Q subbox, the
+K interval contains O(v*E) integers; the derivative variation remains
+O(v). Thus (E21) is multiplied only by E. The global bound becomes
+|K|=O(v*(m+E))=O(v*m), so own-tag integer forcing (E22) still holds.
+
+For positive stationary own tags the squared defect is now O(E).
+Consequently a<=C*(t+E) and the rho interval has width
+
+    O(sqrt(E)/sqrt(t)+E/t).
+
+The required weighted catalog estimates, with this enlarged cone, are
+
+    sum t^(-1/2)=soft O(m^(3/4)+E*m^(1/4)),
+    sum t^(-1)=soft O(m^(1/2)+E).                      (E36)
+
+To prove them, split dyadic t at sqrt(m). Below that split, the distinct
+integer-pair envelope is O(T^2+E*T); above it use the soft O(m) catalog
+bound. For exponent 1/2 the low terms sum to O(m^(3/4)+E*m^(1/4));
+for exponent 1 the E contribution is O(E*log m). The upper tail gives
+respectively soft O(m^(3/4)) and soft O(m^(1/2)).
+
+Multiplying (E36) by sqrt(E) and E respectively still gives soft
+O(m^(3/4)); the +g/m term uses the same catalog cardinality. Hence
+the positive stationary bound remains (E27) up to logarithms. Negative
+cancellation has |a0-rho*t|<=C*E, the same cone and rho width O(E/t),
+so (E28) is unchanged up to logarithms.
+
+For rectangles, the level tolerance in (E29) becomes O(E). Rays with
+U<=C*E number only O(E^2), and permitting every P for those rays costs
+soft O(M^5), using their one Q class modulo m and (E9). For larger U,
+the frozen band has tolerance O(E+U*g/m), and the discriminant argument
+gives derivative >=c*U once the fixed threshold C*E is large enough.
+The admissible P intervals have length O(X*(E/U+g/m)), plus a constant
+integer endpoint count. The third estimate (E13) makes their weighted
+sum soft O(sqrt(m)); thus (E32) also remains valid up to logarithms.
+
+These bounds prove (E33) for every fixed polylogarithmic width padding.
+For the paid norm use L=ceil(W)+2 in (E34)-(E35); both the number of
+target factors and common evaluation points remain soft O(m). The
+arithmetic failure therefore persists throughout this padded complete
+Euclidean-source acquisition contract.
+
+### 10. Exact scope and remaining frontier
+
+The result includes the FULL native actual public Euclidean source,
+all convergents and intermediate division slots, both signs, original
+centered lifts, literal m, all false tags, arbitrary full-N adaptive
+selection/reordering/subsets within that source, and both hidden fields.
+All actual coordinate sizes up to m-1 are covered. Finite products and
+certified-unit multiplicative cancellations among these residuals remain
+units. A true quadratic root in these original windows would imply the
+same actual collision, so exact per-row quadratic extraction cannot
+restore covered factor information there.
+
+The universal catalog is the precise source restriction. The complete
+height-m coordinate BOX has Theta(m^2) distinct rays and is NOT covered
+by the soft-linear catalog argument. Arbitrary legal rays not emitted
+by actual Euclid, polynomially wider windows, arbitrary new centers,
+new additive pivots, companion differences and source-specialized
+implicit scalar queries remain outside this theorem. The source-specific
+carry-correction channel under parallel investigation needs its own
+long-interval acquisition and coverage proof.
+
+The preceding native hit leaf proves finite hit identities, two-tag
+roots and false carry/state uniqueness. The fresh finite universal-ray
+leaf proves nine source theorems with two computable finite catalog
+definitions, including the two-input slope cover and the bound
+|C_m|<=16*m*(floor(log_2 m)+1)^2. This checked bound is slightly looser
+than the classical constant 8 in (E11), which additionally divides the
+two-center packet occurrence count by two; both give the same soft-linear
+catalog bound. The catalog constructors supply no factorization runtime.
+This full asymptotic theorem and paid norm cost remain classical; no
+published analytic assertion was imported as a Lean axiom. This closes
+one further concrete full-source acquisition route and does not prove a
+guaranteed one-sixth factorization algorithm, the all-input bit-time/memory
+composition, or a general factoring no-go.
+
+
+### Paid source-specific midpoint carry correction
+
+The final mathematical authority for this secondary route is
+`implicit-carry-correction-v4.md`, SHA256
+`4e286bf3e597dbe078b2907760445fab10a3e9596c64b910628060b917a3a1a1`.
+It preserves the original gamma, the full source shift and every index.
+The initial report `implicit-carry-correction.md` and its first review
+remain frozen as historical artifacts. The explicit origin-correction
+addendum supersedes that review's unqualified unit conclusion; v2, v3 and
+final v4 are separately named, and the final v4 reviews govern this entry.
+
+The final notation distinguishes the ring unit beta=alpha^-1 from the
+integer current coefficient b1 in the midpoint source; no integer b
+coefficient is replaced by a ring unit.
+
+For an actual Euclidean frame with division quotient q, the retained
+intermediate targets, after the exact b-wrap/public-shift cancellation,
+have
+
+    y_k=z0*eta^k*alpha^(-h_k),
+    h_k=floor((rho0+k*rho1)/(2*m^2)),
+    0<=rho0,rho1<2*m^2, 0<=h_k<=k<q.
+
+The current ray is emitted separately. Its literal midpoint gives
+y_current=eta*alpha^(-epsilon), epsilon in {0,1}. This singleton is
+retained as a separate supplied pure target, not placed into the
+intermediate progression without a source identity. Each frame therefore
+has at most q supplied targets and carries at most q.
+
+For P_L(T)=product_(0<=r<L)(T-alpha^r), ANY h>=0 and unit alpha have
+the exact ALL-ring cleared identity
+
+    P_h(z)*P_L(alpha^-h*z)
+      =alpha^(-h*L)*P_L(z)*product_(L<=r<L+h)(z-alpha^r).
+
+This is an identity of finite products, even when h>L or a product
+vanishes. Over a retained target set define the aggregate actual norm A,
+the pure-target norm B, and left/right corrections C_left,C_right.
+Then
+
+    C_left*A=alpha^(-L*sum h)*B*C_right.
+
+The left and right corrections are ragged prefix norms. Given d
+supplied targets and prefix lengths 0<=h_i<=H, binary prefix decomposition
+partitions each [0,h_i) into blocks [s,s+b), b a power of two. A row
+contributes at most one block at each level; targets with a common start
+are grouped. At that level sum d_s<=d and the number of nonempty starts
+is at most 2H/b. The existing monic common-interval scalar block evaluator
+costs soft O(d_s+sqrt(d_s*b)); Cauchy--Schwarz gives
+
+    sum_s sqrt(d_s*b)<=sqrt(2*d*H),
+    aggregate ragged prefix cost=soft O(d+sqrt(d*H)).
+
+The divisions are monic, and alpha's inverse is known. Target collisions,
+zero values and composite moduli are permitted. This computes ONE
+aggregate scalar, not every row's correction. Right corrections reduce
+to the same algorithm by U_h(z)=alpha^(L*h)*P_h(alpha^-L*z); the large L
+appears in logarithmic-length exponents, not a loop of length L.
+
+For a frame d,H<=q, the cost is soft O(q). The preserved native full
+Euclidean charge counts q slots per frame and sums to soft O(m), so
+BOTH aggregate endpoints are paid for the complete actual source.
+A fixed or polylogarithmic number of retained masks preserves this bound;
+an arbitrary nested-mask query tree and all individual row products are
+not declared free.
+
+The unit conclusion requires the ORIGINAL index. With an arbitrary
+normalization y'=alpha^-lo*y, a left-correction factor has original
+centered index lo+r-h. The earlier report dropped lo when transferring
+the short-window miss theorem. That transfer is valid only when those
+actual translated indices lie in the proved window. This error is now
+explicitly corrected, with the original report and review preserved.
+
+For the complete signed interval [-L_minus,L_plus), split around the
+ACTUAL source center. The nonnegative half starts at zero and has
+left-correction indices r-h in [-q,-1]. For the negative half set
+beta=alpha^-1 and use exactly
+
+    product_(1<=n<=L_minus)(y-alpha^-n)
+      =alpha^-L_minus * P_L_minus^(beta)(alpha*y).
+
+For intermediate slots choose h'_k=k-h_k and
+z'_k=alpha*z0*(eta*alpha^-1)^k. Then alpha*y_k=z'_k*beta^-h'_k,
+0<=h'_k<=k<q. For the current singleton choose pure target eta and
+carry h'=1-epsilon, since alpha*y_current=eta*beta^(-(1-epsilon)).
+The negative-half left factors correspond exactly to ORIGINAL centered
+indices h'-r-1 in [0,q-1]. Thus FOUR endpoint corrections pay the
+complete signed interval, including every current and intermediate slot,
+with the same soft O(m) total cost. No zero-index factor is duplicated.
+
+On the new COMPLETE actual Euclidean miss family above, both left
+corrections for each original center are units: q<=m, and every target involved is an actual
+emitted row whose indices lie within m of its source rectangle center.
+This extends the final v4 report's earlier bounded-height unit premise
+using the independently proved new full-source theorem. No arbitrary
+origin claim or un-emitted tall difference ray is imported.
+
+Only the left correction needs to be inverted to recover the exact
+actual norm from the paid endpoints and the still-unpaid pure norm B.
+The right correction may be nonunit and cannot be canceled gratuitously.
+Its factors lie near the full interval endpoint, outside the centered
+window obstruction, and still require their own coverage analysis.
+On general inputs a nonunit left correction may yield a proper gcd or N;
+the cleared identity alone does not recover a proper divisor from a
+saturated correction.
+
+### Actual stride obstruction and the precise remaining scalar query
+
+The current midpoint source gives eta=y_current*alpha^epsilon,
+epsilon in {0,1}. The new full-source theorem therefore excludes
+eta=alpha^d for all ORIGINAL |d|<=W-1 on the same actual counterfamily,
+for any prescribed fixed polylogarithmic width W. For the negative half
+the stride is eta*alpha^-1, with the analogous one-step adjustment.
+
+In a local field alpha has exact prime order R>16*m^2. For any L with
+2L<R, the roots of P_L are distinct. The root-overlap criterion for
+P_L(eta*T) and P_L(T) is exactly eta=alpha^d, |d|<=L-1; then the
+overlap has L-|d| elements. Otherwise there is no overlap. The reduced
+numerator and denominator of their ratio thus have degree |d| or L.
+If L>W, the current source identity and actual miss imply both reduced
+degrees exceed W-1. A formal rational endpoint patch of degree<=W-1
+for this SPECIAL P_L therefore cannot exist on that actual family.
+This directly addresses source-specialized polynomial transport rather
+than relying solely on the older universal quotient-menu obstruction.
+
+The earlier complete legal BOX theorem also gives the skipped-step
+refinement for two bounded retained intermediate positions k<l.
+The difference ray (l-k)*(a1,t1) has coordinates <=2H,H and is legal;
+its literal centered target differs from y_l/y_k by at most one baby
+step. This excludes a short endpoint patch for that ratio on the old
+boxed miss family. Such a scaled ray need not be emitted by full Euclid.
+Hence the new full-source-only theorem supports current strides at all
+heights, while the skipped-position assertion retains its old bounded
+ALL-legal-box premise. The two majority families can be intersected by
+summing their lower-order losses; no thin same-tag family is used.
+
+The long scalar query still consists of pure intermediate geometric
+progressions AND separately retained current singleton targets. Their
+source construction and all carry endpoints are paid; their complete
+long norms are not. The known generic evaluator costs
+soft O(d+sqrt(d*L)), with varying d included: at d=O(m), it gives
+soft O(m^(5/4)) for full short-weight length L=O(m^(3/2)), and
+soft O(m^(3/2)) for the specified full/seed length-m^2 interval.
+These are constructive upper bounds, not scalar-circuit lower bounds.
+Specialized scalar anchors, implicit large-degree circuits, additive
+observations and alternative exact norm algorithms remain open.
+
+The separate frozen geometry report proves source-state restrictions
+on uniform stationary cover height and independent all-slope/all-ratio
+ray catalogs. It supplies no additional prime realization, all-false-hit
+counterfamily or lower bound for the actual N-only factoring problem;
+the full actual incidence theorem above is the substantive arithmetic
+advance.
+
+### Native proof boundary, validation and exact preservation
+
+`RiemannGaussian/SemiprimeFullEuclidAcquisitionObstruction.lean` imports
+the preserved centered leaf and the complete Euclidean row-budget leaf.
+It has 200 lines, nine source theorems, two computable finite catalog
+definitions and no noncomputable definitions. The exact new native claims
+are:
+
+- Two square classes cover every nonzero slope at an odd prime; a
+  nonsquare witness is constructed inside the finite proof.
+- The field inverse solution yields the literal Bezout quotient slope,
+  its canonical representative and a public unit tag.
+- Each actual Euclidean ray is retained in its packet coordinate
+  projection and in the universal all-slope catalog.
+- Two literal source projections cover the entire universal catalog.
+  Its cardinality is at most 16*m*(log2(m)+1)^2, independent of N and
+  including every intermediate. The classical constant8 in (E11)
+  additionally divides the two-center occurrence count; native16 is
+  sufficient for every asymptotic argument above.
+
+The source coordinate bounds, real center estimates, selector subboxes,
+weighted dyadic sums, density counts, actual infinitude, norm cost and
+carry-cost/stride arguments remain CLASSICAL. The earlier native hit
+polynomial, tag roots and false carry/state uniqueness are preserved.
+No published analytic theorem or coverage assertion becomes a Lean axiom.
+
+Strict warning-as-error compilation, the focused leaf build and checker
+all pass. All 15 linters report zero errors in eleven direct declarations
+plus four generated ones. Module-provenance selection checks all fifteen
+declarations, including thirteen theorems, with zero checker-local helpers;
+one generated publicPairs equation lies outside the new namespace but is
+correctly selected by its defining module. Only propext, Classical.choice
+and Quot.sound occur transitively. The generated C exports finite source
+projection/catalog enumerations and their standard helpers; no factoring
+run, norm runtime or asymptotic bit clock is credited.
+
+The focused ordinary-root check after isolated registration is recorded
+in `docs/semiprime-full-euclid-acquisition-obstruction-audit.json`.
+Independent reviews pin the full arithmetic proof, universal catalog,
+integrated native evidence, corrected final carry derivation and this
+journal entry. The origin-correction addendum explicitly supersedes the
+old carry review; it is not counted as an outstanding objection to v4.
+Exactly one root import, one semiprime metadata entry and this dated entry
+are inserted. Exact removal restores the parent-after snapshots. All
+prior sources, frozen reports/reviews/audits, dashboards and the dirty
+migration are preserved. No commit, push or wider graph build is included.
+
+The specifically paid complete Euclidean centered acquisition route now
+has a rigorous all-hit arithmetic obstruction, even with polylogarithmic
+windows. The long interval's carries can be eliminated within the target
+budget, so the next scalar frontier is its pure-stride norm or a new
+covered observation. Polynomially wider windows, new centers, legal
+non-Euclidean ray combinations, companion/additive channels and different
+auxiliary-prime menus are not exhausted. Original D11 centered prime
+covariance is unchanged. Full arbitrary-ratio/prime-square coverage,
+saturation/nonunit proper recovery, routing/controller costs, bit time
+and peak memory remain to compose. The full goal remains active.
+
+## 2026-10-08 — Long norm frontier: charged skipped rays, actual dense-backend floor and recurrence degree rigidity
+
+The preceding goal turn was progress. It removed the square-root height
+truncation for every actual Euclidean current/intermediate and proved an
+infinite actual all-hit miss family in the four specified centered
+soft-linear windows, even though the centered scalar norm is paid soft
+O(m). Its authoritative audit is
+`docs/semiprime-full-euclid-acquisition-obstruction-audit.json`, SHA256
+`bf6893219305096e499650f82c52a5141ee697b93fe62d3adfbda1c5e997b96c`.
+All 482 selected source, 109 selected Mathlib and 48 artifact pins were
+freshly revalidated with zero mismatches. The interrupted continuation
+also made mathematical progress: its separately frozen reports and
+focused native validation were inspected before resuming; no missing
+process was assumed live or restarted.
+
+This entry supplies three further substantive arithmetic obstructions.
+The determinant charge gives a paid soft-linear amended legal ray
+family covering EVERY skipped current multiplier within a full-height
+Euclidean frame. That amended family still misses every local collision
+in the specified four centered windows on an actual infinite family.
+Separately, an elementary square-class count forces a linear population
+of long first-current singleton queries. It proves a sharp actual
+soft m^(3/2) write-charge floor for the globally shared/ragged DENSE
+backend, surviving numeric target deduplication and a fixed nontrivial
+half-tag mask. Finally a finite-field polynomial-degree argument rules
+out lowering the target coefficient degree by replacing the original
+first-order scalar recurrence with bounded/polylogarithmic order.
+
+The midpoint carry endpoints remain paid soft O(m); their complete long
+pure scalar norms remain unpaid at that rate. These are arithmetic and
+charged-route proofs, not additional examples or backend-only claims.
+The full deterministic classical N-only all-semiprime one-sixth Lean
+factorization, proper recovery, bit-time and peak-memory goal stays
+active and unproved.
+
+### Exact source, charge-derived amendment and paid norm
+
+For the literal prime selector m=publicRowModulus N, at each original
+unit tag j use the actual public inverse and quotientSlope modulo m.
+The complete stream is euclidPairs(m,lambda,0,1,false), retaining every
+current and all q-1 intermediate slots in each division. An actual
+frame has r0>r>0, y>0, x>=0, q=floor(r0/r), and
+
+    r0*y+r*x=m,    r*y*q<=m.                         (G1)
+
+Its signed current is (a1,t1)=(s*r,y), s in {-1,1}. Let C_m be the
+preserved universal SET of every original current/intermediate across
+all nonzero slopes. Adjoin the universal SET
+
+    D_m={(s*e*r,e*y): r,y,e>0, r*y*e<m, s=+-1}.       (G2)
+
+The triple occurrence count is at most
+
+    2*sum_(r,y>=1) floor((m-1)/(r*y))
+      <=2*(m-1)*(sum_(r<=m-1) 1/r)^2=soft O(m).       (G3)
+
+The bounded nested loops r<m, y<=floor((m-1)/r),
+e<=floor((m-1)/(r*y)) pay this enumeration and their loop prefixes
+within the same harmonic bound; they do not visit the full cubic box.
+Deduplicate to a SET. Every pair has 0<|a|<m and 0<t<m, hence both
+coordinates are units modulo m^2. The union C_m union D_m has soft
+O(m) members and is independent of the full N state.
+
+For every 1<=e<q, positivity and (G1) give r*y*e<m. Thus e*(a1,t1)
+lies in D_m, including EVERY difference between intermediate positions
+in that frame, at full height. For q=1 there are no such skipped
+multipliers; its current remains in C_m. Arbitrary differences across
+distinct tags or nonadjacent frames are not included by this statement.
+
+To construct actual amended rows for a given public N, retain each
+candidate at every unit tag satisfying
+
+    a*j^2=t*N modulo m.                              (G4)
+
+There are at most two tags per candidate. Sort the actual input's
+quotientSlope table and bucket a/t modulo m to find all matches in
+soft O(m) work. Apply the ORIGINAL full-N liftRow, not an advised
+field lift or primitive-ray normalization:
+
+    D=(t*N-a*j^2)/m,
+    b=centered(m,-publicInverse(m,j)*D),
+    c=(D+j*b)/m,
+    t*N=m^2*c-j*m*b+a*j^2.                           (G5)
+
+At each match retain the actual public/reflected rectangle centers and
+applicable positive stationary or negative cancellation centers.
+Original indices, source a,t and full N-dependent b,c are unchanged.
+No hidden factor, local period or nonresidue witness supplies algorithmic
+advice. Source enumeration, inversion, sorted matching, full lifts and
+target powering are paid soft O(m) classically.
+
+The preserved full-source all-hit proof uses its catalog only through
+its input-independent SET cardinality soft O(m), coordinate bounds
+0<|a|,t<m, exact legal lift (G5), and original window width
+W<=C*m*log(2m)^B for fixed C,B. The union has every one of these
+properties. The same proof therefore applies to ALL legal amended rows,
+not merely the original emitted rows. Nonprimitive scaled rays are
+allowed: the hit polynomial and unique carry/state gates need coordinate
+units, not primitiveness.
+
+In the actual balanced longBase2 supply with selector m comparable to M,
+the published constants kappa=677/1000 and theta=21/40 give
+V=O(M^.969). For fixed P,m, split its selector Q strip into O(g+1)
+half-open subboxes of width m^2. Each ray/cofactor has O(v*(1+W/m))
+possible integer hit multipliers per subbox; each multiplier has at
+most two tags, and each false tag fixes one carry and one N modulo
+m^2, hence at most ONE integer Q per subbox. The P=1 modv count
+O(X/v) cancels the factor v. Summing the amended catalog and selector
+gaps gives all false hits soft O(V*M^5)=soft O(M^5.969).
+
+For own tags, m^2 divides K+v*a and |K+v*a|=O(v*m)=o(m^2), so
+K=-v*a exactly. Reversing ray/prime incidence and using SET shells gives
+
+    sum_(0<a<=C*t) t^-1/2=soft O(m^3/4),
+    sum_(0<|a|<=C*t) t^-1=soft O(m^1/2),
+    sum (|a|+t)^-1=soft O(m^1/2).                     (G6)
+
+The own stationary loss is soft O(M^5.75+M^5.525); rectangle and
+negative-cancellation losses are soft O(M^5.5+M^5.525). The rectangle
+transversality still follows from its literal A*B>1 discriminant.
+Polylogarithmic tolerance E=1+W/m changes only logarithmic factors:
+the cone shell envelope is O(T^2+E*T), and the low-U rectangle
+exception has O(E^2) rays. The total amended hit loss remains
+soft O(M^5.969), below actual supply Omega(M^6/log^2 M).
+Distinct-tag deletion O(M^5) and the preserved distinct-prime local
+order/cross-period deletions remain smaller. No thin same-tag or
+unrelated sparse family is intersected.
+
+Consequently an infinite actual balanced distinct-prime literal-selector
+family survives on which EVERY original residual of EVERY amended row
+is nonzero in BOTH fields throughout ALL four specified windows.
+Its complete amended norm is a unit. For each center w_l, phase
+transport gives y_l=gamma^(t_l*N+delta_l-m^2*w_l), alpha=gamma^(m^2),
+and the norm is, up to an exact known unit/sign,
+
+    product_h F(alpha^h),  F(T)=product_l(T-y_l).      (G7)
+
+There are soft O(m) targets and signed baby indices. Monic product-tree
+and multipoint arithmetic over Z/N acquires (G7) in soft O(m) bit
+work classically, without a matrix or nonunit inverse. Coverage of this
+paid enlarged centered family is therefore FALSE, including all tall
+within-frame skipped-current rays and fixed polylogarithmic width.
+
+### Actual skipped and adjacent ratios do not give short endpoint transport
+
+For either literal rectangle center let A_int,B_int be the two integer
+square-root sums, swapped for the reflected center. Twice the midpoint
+is A_int*a+B_int*t+2*(m*b-2*a*j), for BOTH signs of a. Lower/upper
+choices exchange before summation, so this expression is linear in a,t.
+
+For the actual current put x1=gamma^(t1*N+a1+m*b1-2*a1*j),
+
+    H1=A_int*a1+B_int*t1+2*(m*b1-2*a1*j),
+    z1=floor(H1/(2*m^2)), xi=H1/(2*m^2)-z1 in [0,1),
+    eta=x1*alpha^-z1.                                (G8)
+
+Relift e*(a1,t1) literally. Its b_e=e*b1-m*B_e for an integer
+B_e; that carry cancels with its original midpoint shift. Its centered
+target w_e satisfies exactly
+
+    eta^e=w_e*alpha^h_e,
+    h_e=floor(e*xi+1/2), 0<=h_e<=e.                   (G9)
+
+For intermediate positions k<l, e=l-k<q, the original centered targets
+have y_l/y_k=w_e*alpha^epsilon with epsilon in {-1,0,1}; this is the
+integer floor-increment/rounded-floor difference, including signed H1.
+Applying the amended miss to w_e gives in BOTH fields
+
+    eta^e != alpha^d for |d|<=W-e, hence |d|<=W-m,
+    y_l/y_k != alpha^d for |d|<=W-1.                 (G10)
+
+The negative-half stride eta_minus=eta*alpha^-1 and baby base
+beta=alpha^-1 obey eta_minus^e != beta^d for |d|<=W-m, since its
+carry is h_e-e in [-e,0]. Width constants or fixed logarithmic padding
+may be enlarged to make W-m any prescribed soft-linear budget. This
+closes the earlier TALL skipped-difference gap by constructing and
+pricing the enlarged legal source, rather than asserting every scaled
+difference was emitted by the original Euclid list.
+
+Literal adjacency has an independent, stronger cross-frame support
+identity requiring only the original emitted source. For legal rays
+v,w, linearity before b-centering gives
+b(v+w)=b(v)+b(w)-m*ell. This same ell cancels in original giant
+exponent and public center. With R(x)=floor(x+1/2),
+
+    y(v+w)=y(v)*y(w)*alpha^epsilon,
+    epsilon=R(H(v)/(2m^2))+R(H(w)/(2m^2))
+                   -R((H(v)+H(w))/(2m^2)),
+    epsilon in {-1,0,1}.                            (G11)
+
+This includes opposite a signs, ties, reflected center and the giant
+exponent's linear extra +a. Only target units are divided, even when
+residuals or norms are nonunits.
+
+An actual frame emits v1,v0+v1,...,v0+(q-1)*v1, then, if nonzero,
+the next current v2=v0+q*v1. Its first difference is v0 and all later
+differences through the next current are v1; when q=1 its only tail
+difference is v0. In later frames v0 is the preceding emitted current.
+Thus every consecutive difference is an emitted current, except the
+first edge of each tag, whose difference is initial (-m,0). Terminal
+zero rays and omitted full-step duplicates create no fictitious edge.
+For odd prime m, a tag stream has at least three slots: its terminal
+quotient is >=2 if there are multiple frames, and the one-frame case
+has slope1 and quotientm>=3. There are therefore at least m-1
+certified EDGE INSTANCES per original center, without asserting their
+numeric parameters are distinct or unreusable. From (G11), every
+certified adjacent ratio misses alpha^d for |d|<=W-1 in both fields,
+even across frame boundaries and after any COMMON origin shift.
+
+If alpha has prime local order R and 2L<R, P_L(T)=product_(i<L)
+(T-alpha^i) has distinct roots. The overlap of P_L(rho*T) and P_L(T)
+is L-|d| if rho=alpha^d with |d|<=L-1, and zero otherwise. Hence
+their reduced ratio degrees are |d| or L. Relations (G10)-(G11)
+exclude degree<=W-m endpoint templates for full-frame skips, and
+degree<=W-1 templates for certified adjacency, when the respective
+L exceeds that threshold. The actual complete intervals have L=O(m^2),
+whereas local R grows as a positive power m^2.031; 2L<R eventually.
+Inverse baby orientation obeys the same criterion.
+
+This rules out the concrete short-commensurability and low-degree
+P_L transport mechanisms, including block advances and adjacent frame
+transports. A separately materialized dense template for every certified
+edge writes Omega(m*W) coefficients per center; shared templates,
+joint implicit circuits and point-specialized identities are outside
+that separate-edge contract. A complementary independent-variable
+Laurent-factor calculation shows neighboring-frame factors
+X*Y^k-A^r and Y*(X*Y^q)^l-A^s have incompatible primitive directions
+for 1<=k<q, l>=1, and cannot cancel directly. That diagnostic treats
+X,Y,A as independent; an actual common-gamma specialization or a large
+implicit endpoint polynomial is expressly outside it. The actual
+long rectangle scalar remains unpaid soft O(m).
+
+### Long current population and the actual generic-backend charge floor
+
+Let n=(m-1)/2, a0=floor(m/4), and S=N*(F_m^*)^2 in canonical
+integers, with |S|=n. Each actual slope lambda=N/j^2 has exactly two
+tags j,-j. Set h=|S intersect {n+1,...,m-1}|. Multiplication by2
+preserves S or swaps it with its complementary square class.
+If it preserves S, doubling S in (a0,n] injects into the upper half,
+so n-h<=a0+h. If it swaps classes, doubling S in [1,a0] injects
+into the complementary lower half, whose size is h, so
+n-h<=h+(n-a0). In either case
+
+    h>=a0/2>=(m-3)/8.                               (G12)
+
+No character-sum or prime-distribution theorem is needed. Thus uniformly
+for EVERY unit N modulo EVERY odd prime m, Omega(m) actual first
+frames have lambda>m/2, q=1 and sole CURRENT ray (lambda,1).
+They have no intermediate slot; their long singleton query is retained.
+
+The exact original rectangle width is |a|*D1+t*D2, with
+D1=sqrt(N)-sqrt(floor(N/2)), D2=sqrt(2N)-sqrt(N), and all square
+roots literal integer roots. The reflected width swaps D1,D2.
+Both D_i=Theta(sqrt N). The literal selector B0=sixthWidth N has
+(B0-1)^6<N<=B0^6 and B0<=m<=2B0; hence sqrt N=Theta(m^3).
+For the (lambda,1) witnesses both rectangle widths are Theta(m^4),
+and EACH centered signed half has Theta(m^2) columns. Every full
+source half has O(m^2) columns. These are COMPLETE original intervals;
+the failed soft-linear windows are not substituted. The existing
+native centeredLength uses the short sqrt(m) envelope; it is NOT a
+definition of this full-height interval. Use the exact integer
+rectangle or the proved rounded symmetric radius
+floor((width+m^2)/(2m^2))+2; either preserves these bounds.
+
+The generic common-interval algorithm builds the degree d*b dense
+baby polynomial product_(r<b)F(alpha^r*T) and evaluates all
+ceil(L/b) giant outputs using monic division. Its constructive bound
+is soft O(d+sqrt(d*L)). A prescribed implementation writing all those
+coefficients/outputs has at least
+
+    d*b+ceil(L/b)>=2*sqrt(d*L)                       (G13)
+
+charged writes, with unit leading coefficient preventing degree loss.
+This is a MATERIALIZATION contract, never a lower bound on arbitrary
+scalar algorithms or peak memory.
+
+For separate frame evaluations the advertised expression is
+sum_frames(q+sqrt(q*L_frame)), including the current singleton
+separately or together with the q-1 intermediates. Complete source
+budget sumq<=4*m*(log2m+1)^2 and O(m logm) frame count give
+sum sqrtq=O(m*(log2m+1)^1.5). With L_frame=O(m^2), its upper
+bound is soft O(m^2); the Omega(m) q1 witnesses each contribute
+Omega(m), giving matching Omega(m^2) uniformly in every unit N.
+Separate-frame determinant charges cannot turn this expression into
+soft O(m).
+
+Global dense sharing requires an ACTUAL numeric-target count after
+centering, which the old unshifted-target argument did not supply.
+For either center write A_int,B_int for its integer midpoint coefficients.
+At first current (lambda,1), original b/tag offsets cancel to bounded
+rounding noise:
+
+    E_y=N+(1-A_int/2)*lambda-B_int/2+u_y,
+                    -m^2/2<=u_y<m^2/2,
+    E_eta=N+(1-A_int/2)*lambda-B_int/2+u_eta,
+                     0<=u_eta<m^2.                 (G14)
+
+The pure current eta=y*alpha^epsilon, epsilon0/1, is retained as
+a separate input. Since A_int=Theta(m^3), different slopes have
+exponent separation >=A_int/2-1-m^2=Omega(m^3). All these exponents
+lie in a band of diameter O(m*sqrt N+m^2)=O(N^2/3).
+
+On the actual retained longBase2 supply, the projected gamma has
+distinct PRIME local orders R_P>P^.677 and R_Q>Q^.677. The earlier
+theorem already removes equal/cross-period pairs; an independent
+crude equal-order deletion O(X*V^2)=O(M^4.938) is also negligible.
+CRT gives exact RING order R_P*R_Q>N^.677, eventually larger than
+the entire O(N^2/3) exponent band. Thus the nonzero differences in
+(G14) cannot be periods. Omega(m) DISTINCT numeric centered and
+pure-current targets survive ring deduplication for each center.
+This uses BOTH hidden fields together; separate local injectivity is
+not claimed, and no order/factor is given to the algorithm.
+
+For d=soft O(m) supplied targets with ragged half lengths h_i<=H=O(m^2),
+the already proved binary-prefix construction costs
+soft O(d+sqrt(d*H))=soft O(m^1.5), including every current and both
+signed halves/centers. Carry endpoints add only soft O(m). For the
+Omega(m) large singleton lengths, each top binary bit b_i has size
+Theta(m^2), only O(1) sizes occur, and its block START IS ZERO.
+Some one group therefore has Omega(m) distinct original/pure ring
+targets and length Theta(m^2), without an unproved phase-shift dedup
+claim. Equation (G13) gives Omega(m^1.5) writes for that exact ragged
+block, even after further partition, because
+sum_g sqrt(d_g*L)>=sqrt(L*sum_g d_g).
+
+The same theorem holds for the FIXED NONTRIVIAL PUBLIC half-tag mask
+J={1,...,(m-1)/2}. Exactly one of each pair j,m-j is retained and
+equal slopes have only this sign pair. Every slope in S therefore
+survives once with its OWN actual lift and center, including (G12).
+The centered/pure ring distinctness and start-zero ragged floor apply
+unchanged. This mask uses neither private factors nor input-dependent
+transversal advice. It is not proved factor-separating: both true tags,
+one, or neither can lie in it, and false hits can affect its norm.
+
+Accordingly the specified globally shared/ragged dense route has a
+matching soft O(m^1.5) constructive upper budget and actual
+Omega(m^1.5) coefficient/output charge, even after target deduplication
+and this public mask. At m~N^1/6 that is N^1/4, not the required
+N^1/6. Its separate-frame expression is soft Theta(m^2)=soft Theta(N^1/3).
+An unmasked covered aggregate may saturate to zero; no scalar hardness,
+proper-gcd recovery, arbitrary early-stop or search-tree mask guarantee
+is inferred from these charged-route floors.
+
+### A bounded-order recurrence cannot lower the target degree
+
+Here is a finite-field argument for a different proposed escape. Let
+k be any field, theta nonzero, F in k[X] of exact degree d>=1 and
+nonzero leading coefficient. Put U_0=1 and
+U_n=product_(i<n)F(theta^i). Let polynomial coefficients c_0,...,c_h
+have degree<=delta<d with c_h nonzero; h is the ACTUAL maximal
+nonzero order. If theta^0,...,theta^(K-1) are distinct, U_n!=0 for
+n<K, and
+
+    sum_(j<=h)c_j(theta^n)*U_(n+j)=0 for all n<K,
+
+then necessarily
+
+    K<=h*d+delta.                                   (G15)
+
+To prove it define Q_j(X)=product_(r<j)F(theta^r*X) and
+Lambda(X)=sum_(j<=h)c_j(X)*Q_j(X). Finite products give
+U_(n+j)=U_n*Q_j(theta^n), without division. Nonzero theta/lc(F)
+give exact degree j*d for Q_j. The last nonzero summand has
+degree h*d+deg(c_h)>=h*d; all earlier summands have degree at
+most (h-1)*d+delta<h*d. Thus Lambda is nonzero with degree
+<=h*d+delta; the same statement for h=0 is Lambda=c_0.
+Dividing by U_n in the FIELD gives K distinct roots of Lambda,
+proving (G15). Coefficients can depend arbitrarily on actual targets,
+input or hidden-field constants; there is no generic-parameter premise.
+
+For actual pure targets w_j in either signed half, exact carry removal
+gives w_j=y_j*alpha^c_j with |c_j|<=m+1. Theta=alpha or alpha^-1;
+currents use |c_j|<=1. If w_j=theta^i, the ORIGINAL centered target
+y_j would equal alpha^(+-i-c_j). Choose the amended miss width
+
+    W>=K+h+m+1.                                    (G16)
+
+Then every F(theta^i) is nonzero for i<K+h and all U_n through
+K+h are nonzero. The supplied product F=product_j(w_j-X) retains
+degree EXACTLY d in each hidden field, even with repeated local roots,
+because its leading coefficient is the unit (-1)^d.
+
+For prescribed H_m=O(log^A m) maximal order and deterministic
+D_m=O(m log^2m) supplied degree bound, set
+K=(H_m+1)*D_m+1 and W=K+H_m+m+1. This W is a fixed polylog
+multiple of m, so use the amended actual majority miss theorem at
+THIS width directly. The actual prime order grows faster than any
+fixed polylog multiple of m, hence the K nodes are distinct and
+K>h*d+delta for every h<=H_m, d<=D_m, delta<d. Equation (G15)
+excludes ALL such nonzero recurrences on that actual infinite family.
+Over Z/N any nonzero coefficient survives in some CRT field; choose
+its largest surviving index and apply the same theorem there, without
+dividing by a nonunit in the ring.
+
+This reaches an EXACT long-query component: the start-zero ragged q1
+group above has common block b=Theta(m^2) and d=Omega(m) distinct
+ring targets (including the fixed half-tag mask). Its scalar is U_b.
+K+h=soft O(m)<b eventually, so every excluded recurrence equation
+lies INSIDE the genuine unpaid long query. No arbitrary ragged norm
+is freely replaced by a common padded interval, and local repeated
+roots do not reduce its supplied polynomial degree.
+
+The primary [Bostan--Yurkevich Theorem5](https://arxiv.org/html/2012.08656)
+keeps coefficient degree and recurrence order in its cost. Our first-order
+sequence has coefficient degree d; treating it as fixed would remove
+real work. The new argument shows that trading for prescribed bounded
+or polylog order cannot lower that coefficient degree below d on the
+retained inputs. Its published algorithm gives an UPPER bound, not a
+general scalar lower bound. Rational coefficients enter only after
+common-denominator clearing, with the resulting polynomial degree and
+nonzero-evaluation conditions paid. High order, degree>=d, arbitrary
+additional dependence on n, other sequences, multivariate encodings,
+implicit resultants and point-only algorithms remain outside (G15).
+
+### Native finite core, validation and remaining goal
+
+The new isolated leaf is
+`RiemannGaussian/SemiprimeChargedAcquisitionObstruction.lean`.
+Its 147 lines contain nine source theorems, two computable finite
+catalog definitions and no noncomputable definition:
+
+- strict positive triple membership and coordinate bounds 0<|a|,t<m;
+- chargedRayCatalog cardinality <=2*m*(log2m+1)^2;
+- strict determinant budget for every e<q in actual residueFrames;
+- membership of every actual full-height skipped multiplier;
+- amendedRayCatalog preserving every original publicPair and skipped
+  multiplier, with cardinality <=18*m*(log2m+1)^2.
+
+The classical stronger union constant10 uses the earlier two-center
+occurrence division; native18 suffices for all counts. Native catalogs
+are finite CUBE/IMAGE proof envelopes, not the classically paid nested
+harmonic enumeration. Their generated C exports finite constructors,
+images and union/deduplication. No scalar norm, factoring run or
+asymptotic time/memory clock is credited to those exports.
+
+Strict warning-as-error compile, focused leaf build and provenance
+checker pass. Fifteen linters find zero errors in eleven direct
+declarations plus three generated ones. The module audit covers all
+fourteen declarations, twelve theorem declarations including generated
+proofs, and zero checker-local helpers. Only propext, Classical.choice
+and Quot.sound occur. The nine finite source claims do not formalize
+global prime supply, actual infinitude, norm bit costs, square-class
+population, CRT deduplication, adjacency cocycle or recurrence rigidity;
+those remain independently reviewed CLASSICAL arguments.
+
+Exactly one root import, one semiprime metadata entry and this dated
+journal entry are registered. Exact removal restores the immediate
+parent-after snapshots; all prior frozen sources, reports, reviews,
+audits, dashboards and dirty migration bytes are preserved. The focused
+ordinary-root warning-as-error check and all final preservation evidence
+are recorded in
+`docs/semiprime-charged-acquisition-obstruction-audit.json`.
+No commit, push or wider graph build is included.
+
+The frozen standalone authorities are `charged-skipped-ray-obstruction.md`,
+`adjacent-frame-obstruction.md`, `long-frame-charge-obstruction.md`,
+`half-tag-mask-charge-extension.md` and `recurrence-degree-obstruction.md`
+under `/tmp/semiprime-long-norm-frontier-20261008`, with independent
+source-pinned reviews in the same directory. The earlier final carry-v4
+authority and explicit origin correction stay preserved; no earlier
+incorrect arbitrary-origin unit conclusion is revived. Fresh primary
+literature downloads of Harvey--Hittmeir and He--Sahai are corroborating
+checks of already recorded results, not a new sixth-root theorem or a
+new premise for these arithmetic proofs. The targeted OpenAI/math scan
+remains targeted, not an independent exhaustive verification of the batch.
+
+The next positive frontier is an implicit long scalar evaluator, a
+covered observation beyond these centers, or a separately paid exploitation
+of large common-gamma relations. The charged amendment closes short
+within-frame relations and the generic dense and bounded-order recurrence
+escapes, not arbitrary algorithms. Polynomially wider windows, new
+centers, other ray combinations, multiplicity-aware local compression,
+new auxiliary-prime menus and different observations remain open.
+Full arbitrary-ratio/prime-square coverage, proper saturation/nonunit
+recovery, routing/controller, strict-soft bit time and peak working
+memory still need to compose. Original D11 centered prime covariance
+is unchanged; the full guaranteed one-sixth goal remains active.
+
+## 2026-10-08 — Actual long-current root support remains linear in each hidden field
+
+The preceding investigation made substantive progress: it identified exact
+actual Euclidean long-norm costs and ruled out bounded-degree finite-prefix
+recurrence compression. This continuation closes a remaining arithmetic
+escape through root multiplicities after projection to a hidden field.
+The full guaranteed one-sixth semiprime factorization goal remains active.
+
+On the SAME actual balanced distinct-prime supply, the first q=1 current
+queries have Omega(m) distinct projected targets in EACH hidden field,
+for both literal rectangle centers and both centered and pure-current
+phases. The prior theorem only established numeric ring distinctness using
+the PRODUCT of the two periods. The new proof counts projected colliding
+tag pairs and deletes the inputs with a sublinear but unusually large
+collision count; it does not presume separate field injectivity.
+
+### Literal source, phases and actual prime supply
+
+Write N=P*Q, m=publicRowModulus(N), X=M^3, P,Q comparable to X and
+m comparable to M. The preserved published large-divisor supply and
+actual longBase2 projection give exact local prime orders R_P,R_Q of
+the PUBLIC gamma, with P-1=v_P*R_P and Q-1=v_Q*R_Q. Uniformly,
+v_P,v_Q<=V=O(M^.969) and R_P,R_Q>16*m^2. These are proof-side
+facts; the factors, local orders and cofactors are not algorithm inputs.
+The original supply has Omega(M^6/log^2 M) ordered balanced prime pairs.
+
+The actual public slope is a_j=N*j^(-2) mod m, canonically in 1..m-1.
+For every actual unit tag with a_j>m/2 the FIRST literal frame has q=1
+and emits the current (a_j,1), with no intermediates. The preserved
+elementary square-class argument gives at least floor(m/4) such tags.
+Their separately retained current singleton queries cannot be omitted.
+
+For either original center let A,B be the integer midpoint coefficients:
+A=floor(sqrt(floor(N/2)))+floor(sqrt N),
+B=floor(sqrt N)+floor(sqrt(2*N)), or swap A,B for reflectedShift.
+For the literal inverse I_j=publicInverse(m,j), retain the original lift
+
+    D_j=(N-a_j*j^2)/m, b_j=centered(m,-I_j*D_j),
+    ell_j=m*b_j-2*a_j*j, H_j=A*a_j+B+2*ell_j.
+
+The exact centered and pure-current exponents are
+
+    E_y(j)=N+a_j+ell_j-m^2*floor((H_j+m^2)/(2*m^2)),
+    E_eta(j)=N+a_j+ell_j-m^2*floor(H_j/(2*m^2)).
+
+Both have the exact form E(j)=N+(1-A/2)*a_j-B/2+u_j.
+For centered y, -m^2/2<=u_j<m^2/2; for pure eta, 0<=u_j<m^2.
+Thus two u values differ by less than m^2. No b/tag dependence has
+been dropped. For fixed slopes a,a',
+
+    E(j)-E(k)=beta*sqrt(P*Q)+O(m^2),
+    beta=-c_A*(a-a'), |beta|=O(m),
+
+where c_A=(1+1/sqrt(2))/2 or (1+sqrt(2))/2 depends only on center.
+The common N and B terms cancel in this exact two-current difference.
+
+### Two-tag elimination and complete input-state uniqueness
+
+Distinct tags with the SAME slope are j and -j modulo m. Their exponent
+difference has absolute value <m^2<R_P and residue -4*a*j!=0 mod m.
+It therefore cannot be a multiple of R_P; the same proof applies to R_Q.
+This handles both actual tags per slope without presuming deduplication.
+
+For distinct slopes a,a', fix P,m,v,R=(P-1)/v and an integer K.
+A P-field target equality forces the ORIGINAL equation E(j)-E(k)=K*R.
+Its reduction modulo m and the two actual source qualifications give
+
+    K*R=a-a'-2*a*j+2*a'*k mod m,
+    N=a*j^2=a'*k^2 mod m.
+
+Set C0=K*R-a+a'. The first relation gives 2*a'*k=2*a*j+C0.
+Eliminating k from the second gives
+
+    (2*a*j+C0)^2-4*a*a'*j^2=0 mod m.
+
+Its leading coefficient 4*a*(a-a') is nonzero over the odd prime
+selector. Hence there are at most TWO j roots and one k per root.
+No derivative, Hensel or prime-distribution premise is used.
+
+Fix one such tag pair. For two qualifying inputs N,N', write N-N'=m*d.
+The literal lift gives b_j(N)-b_j(N')=-I_j*d mod m and likewise for k.
+The collision equation reduced modulo m^2 retains exactly
+
+    K*R=(a-a')+m*(b_j-b_k)-2*a*j+2*a'*k mod m^2.
+
+Subtracting it at N,N' yields (I_j-I_k)*d=0 mod m. Since distinct
+slopes force j!=k, I_j-I_k is a unit. Therefore N=N' mod m^2.
+Since P is a unit modulo m^2, Q has ONE fixed residue modulo m^2.
+A half-open real box of width m^2 contains at most one integer Q.
+
+### Selector boxes, the cofactor sum and the actual deletion
+
+For mminus the preceding prime and g=m-mminus, the literal selector
+strip mminus^6<P*Q<=m^6 has Q length O(m^2*g) at fixed P,m.
+Partition it into O(g+1) half-open boxes of width at most m^2.
+The intervals for actual selectors satisfy sum_m(g+1)=O(M).
+This argument uses telescoping gaps, with no new small-gap assumption.
+
+Within one box Phi(Q)=beta*sqrt(P*Q)/R varies by O(v), because
+|Phi'(Q)|=O(m/R)=O(v/m^2). Every actual collision has
+|K-Phi(Q)|=O(m^2/R)=O(v/m). Thus there are O(v) integer K choices
+per box, independently of j,k and their input-dependent qualifications.
+The two-tag cap and complete-state uniqueness give O(v) collision
+instances per box for each fixed pair of canonical slopes.
+
+There are O(m^2) ordered distinct-slope pairs. At fixed v, the necessary
+P=1 mod v relation leaves O(X/v+1) INTEGER P candidates. Thus the
+total projected collision mass for one center, phase and orientation is
+
+    O(sum_m m^2*(g+1)*sum_(v<=V) v*(X/v+1))
+      =O(M^3*(X*V+V^2))=O(M^6.969).
+
+The sum over v is paid; omitting it would incorrectly give exponent 6.
+Both fields, both centers and both centered/pure phases add a fixed factor.
+Delete inputs with at least M^tau collisions in any collection, where
+tau=.985. Their count is O(M^(6.969-.985))=O(M^5.984), negligible
+against Omega(M^6/log^2 M). More generally, a local-period exponent
+kappa gives V=O(M^(3-3*kappa)) and collision mass O(M^(9-3*kappa)).
+A sublinear threshold is available exactly when kappa>2/3: choose
+3-3*kappa<tau<1. Published kappa=.677 supplies that margin.
+
+On the survivors the colliding-pair count is o(m). For multiplicities r_l,
+sum_l(r_l-1)<=sum_l binom(r_l,2), and the number of targets in repeated
+fibers is at most twice that pair count. Hence each actual q=1 collection
+has Omega(m) distinct projected roots and Omega(m) simple roots.
+The O(M^5.984) deletion combines directly with prior soft O(M^5.969)
+charged/full-source short-window losses on the ORIGINAL supply, retaining
+Omega(M^6/log^2 M) actual pairs at any fixed polylogarithmic padded width.
+
+### The original unpaid subgroup and precise frontier
+
+The actual complete signed-half lengths of these currents are Theta(m^2).
+Their exact binary top-bit query blocks start zero and have O(1) possible
+lengths. One genuine ragged-query group retains Omega(m) targets, hence
+Omega(m) distinct/simple roots in BOTH fields after the new deletion.
+Common alpha phases and the negative half's alpha^-1 base preserve support.
+No free common-length padding or private root relabeling is introduced.
+
+A polynomial retaining that group's root support must have degree Omega(m),
+even with private-field advice. THIS q=1 start-zero monic group polynomial is
+not a nontrivial perfect polynomial power because it has simple roots.
+Adding other source-row factors can change those multiplicities; no such
+power claim is made for the entire source product. Repeated-root compression
+therefore cannot supply a polylogarithmic support carrier for this query.
+
+The new pair-elimination/deletion proof is classical and independently
+reviewed. No new Lean, scalar bit-clock, full long-norm evaluation, proper-gcd
+recovery or guaranteed sixth-rate theorem is claimed. Large-degree implicit
+circuits, nontransport scalar resultants and new covered observations remain
+open. The frozen report and eight-source manifest are under
+/tmp/semiprime-local-root-frontier-20261008; the immediately preceding
+registered audit is 3b6b3eaf2624314471b8f9aa7a2d47a842edce876f25153a7ebc984b59ce5164.
+
+## 2026-10-08 — Adaptive small seeds and consecutive auxiliary primes still miss
+
+The previous goal turn was progress: it registered the paid charge-amended
+actual source obstruction, the sharp specified dense long-query charge,
+and the new Omega(m) distinct/simple root support in EACH hidden field.
+Its latest authoritative audit is
+docs/semiprime-local-root-support-obstruction-audit.json, SHA256
+d3755bddc26ad7e275693f880bec90406b4cccbb48d5cded56c8aeca5b2ccbe6.
+Its486 selected sources,109 selected Mathlib sources and9 artifacts
+were revalidated with zero mismatches before this continuation.
+
+This turn closes concrete remaining repairs by changing small seeds and
+trying consecutive nearby auxiliary primes. It proves a SINGLE actual
+majority counterfamily simultaneously defeats all these choices. These
+are classical arithmetic advances, not more successful examples or
+backend-only lemmas. The full deterministic N-only all-semiprime
+guaranteed one-sixth goal remains active and unproved.
+
+### A whole seed menu has the same two projected prime periods
+
+Use the preserved actual balanced prime-pair supply at X=M^3:
+P,Q comparable to X, prime periods R_P>P^.677,R_Q>Q^.677,
+P-1=v_P R_P,Q-1=v_Q R_Q, v_P,v_Q<=V=O(M^.969).
+The original published supply is Omega(M^6/log^2 M), with diagonal,
+equal-period and cross-period pairs already removed.
+
+For one positive integer seed h>=2, if its raw local order omits R_P,
+Lagrange forces ord_P(h)|v_P. Hence P divides the NONZERO integer
+
+    T_h=product_(1<=r<=ceil V)(h^r-1).
+
+Counting its distinct prime divisors P>=cX by logarithms bounds the
+bad-prime count by O(V^2 logh/logX). Take the union BEFORE adaptive
+selection over every h<=A=O(M^beta log^b M), beta<1.062. The losses are
+
+    bad primes: soft O(M^(beta+1.938)),
+    ordered input pairs: soft O(M^(beta+4.938)).       (J1)
+
+For beta=1.05 the pair loss is soft M^5.988, negligible against the
+original supply. The proof uses the product only for counting; it grants
+no factor, period, integer product or exponent certificate to an algorithm.
+
+Uniformly for EVERY positive auxiliary modulus mu comparable to M,
+the original public projection is
+
+    Gamma_(h,mu)=h^((N-1)*(mu!)^ceil(log_2(N+1))) modN.
+
+Its raw order has the form d_P R_P with d_P|v_P. Since
+v_P<mu<R_P, the factorial kills d_P and preserves R_P. The original
+cross-period exclusion makes N-1=Q-1 modR_P nonzero. Thus the EXACT
+projected orders are R_P,R_Q for EVERY permitted seed and modulus.
+For ANY integer exponents E,F, positive or negative,
+
+    Gamma_(h,mu)^E=Gamma_(h,mu)^F modP iff R_P|(E-F),  (J2)
+
+and likewise modulo Q. Consequently the squarefree-N gcd of the power
+difference is independent of the seed and projection modulus for the
+SAME exponent labels. Products, retained masks and known-unit factors
+have the same zero pattern as well. No zero-pattern invariance is
+asserted for arbitrary new additive or mixed-exponent observations.
+
+This includes N-only adaptive selection even if finding the seed is free.
+Changing the modulus can change the row's exponent labels; period
+invariance alone is not a coverage theorem for those new labels.
+The new menu count below supplies that missing step.
+
+### Bounded rational seeds and common-exponent mixed-base comparisons
+
+Let H=O(M^rho log^b M), rho<.531, and include EVERY reduced positive
+u/w with1<=u,w<=H,u!=w. Numerator and denominator are units eventually.
+If its raw order omits R_P, P divides
+
+    product_(1<=r<=ceil V)(u^r-w^r),
+
+a NONZERO integer. The same logarithmic bound and H^2-menu union give
+pair loss soft O(M^(2rho+4.938)); rho=.525 costs soft M^5.988.
+All projected rational seeds have the SAME exact R_P,R_Q uniformly
+over comparable mu. Their selection needs no private field inverse:
+extended gcd computes the modular denominator inverse publicly.
+
+Projection is a group homomorphism, so for every common integer E,
+
+    Gamma_(u,mu)^E-Gamma_(w,mu)^E
+      =Gamma_(w,mu)^E*(Gamma_(u/w,mu)^E-1).            (J3)
+
+Its two zero indicators are exactly R_P|E and R_Q|E. Thus common-exponent
+comparisons among these small seeds do not supply new short separating
+collisions; every such gap is a unit when0<|E|<min(R_P,R_Q).
+At rho=.5 the full rational candidate menu has soft O(M) members.
+Trivial signed ratios +/-1 project to1 in both fields and give saturated
+power-gap gcdN; seed0 is a separate nonunit case. These trivial outcomes
+do not themselves pay proper-factor recovery.
+
+### All consecutive auxiliary-prime choices are counted on the same supply
+
+Put B=ceil(N^(1/6)) and allow the first K(N) primes m>=B, where
+
+    1<=K(N)<=floor(B^.020).
+
+At each m retain the full exact public Euclidean source and its
+charge-derived legal amendment C_m union D_m. Test every original
+index in fixed polylogarithmically padded near-linear windows around
+publicShift, reflectedShift, positive stationary and negative
+cancellation centers. All adaptive subsets and candidate choices
+INSIDE this observation contract are allowed.
+
+Choose a fixed dyadic K_*=O(M^.020) dominating every input's K(N).
+If m is a candidate and p_{-K_*}(m) is its K_*th preceding prime, then
+
+    p_{-K_*}(m)^6<N<=m^6.
+
+Write G_m=m-p_{-K_*}(m). The preserved BHP gap exponent theta=.525
+keeps all candidates and predecessors comparable to M, because
+K_*M^theta=O(M^.545)=o(M). Each ordinary prime gap appears in at most
+K_* of these consecutive sums, so
+
+    sum(G_m+1)=O(K_*M),
+    max G_m=O(K_*M^.525)=o(M),
+    sum G_m^2=O(K_*^2 M^1.525).                       (J4)
+
+The source-faithful full-hit proof uses the least-prime selector only
+through these strip/gap estimates. At fixed P,m, divide its Q strip
+of length O(m^2 G_m) into O(G_m+1) width-m^2 half-open boxes.
+In each box the phase multiplier has soft O(v) choices, each giving at
+most two actual tags and one complete Q state at a false tag.
+The necessary O(X/v) P candidates cancel the multiplier's v charge.
+Own-tag integer forcing is unchanged; reverse ray/P geometry uses
+(J4) with the actual discriminant AB>1 and G_m/m=o(1). This yields
+
+    false hit loss: soft O(K_*M^5.969),
+    own stationary: soft O(K_*M^5.75+K_*^2 M^5.525),
+    own rectangle/cancellation:
+                   soft O(K_*M^5.5+K_*^2 M^5.525).      (J5)
+
+Thus all hit-containing inputs at ANY menu modulus total soft M^5.989.
+Every false alias, actual legal full-N lift, signed/reflected case and
+both hidden fields is retained. Distinct P,Q tags at every candidate
+modulus can also be imposed at extra loss O(K_*M^5).
+
+### Root support and the joint adaptive counterfamily
+
+The reviewed two-tag quadratic and complete-state uniqueness proof
+also applies at each menu modulus. Replacing its ordinary gap by G_m
+bounds the ENTIRE menu's projected pair-collision mass by
+
+    O(K_*M^6.969).
+
+Delete inputs with at least M^.995 collisions in ANY one candidate
+collection. The bad INPUT count is O(M^5.994). Every surviving q=1
+collection therefore has o(m) collisions and Omega(m) distinct and
+simple targets in EACH field, for both centers and centered/pure phases.
+One actual start-zero top-bit ragged group and a fixed half-tag mask
+retain the same linear support.
+
+Unite (J1), the rational loss, (J5) and this local-support deletion
+DIRECTLY on the ORIGINAL supply. The total loss is soft O(M^5.994),
+strictly smaller than Omega(M^6/log^2 M). The SAME surviving family
+therefore defeats EVERY allowed seed AND EVERY candidate modulus.
+There is NO multiplication by the number of seeds in (J5) or the
+root count: (J2) makes their exact zero and root-equality partitions
+identical to base2 for each resulting row/exponent label.
+
+In input-scale terms one may choose an integer seed up to
+C*m^1.05 log^b m, or rational numerator/denominator up to
+C*m^.525 log^b m, and m among the first B^.020 candidate primes.
+Arbitrary adaptive N-only choices within those domains cannot restore
+a hit in the stated centered source windows. The prescribed dense
+long evaluator still has its Omega(m^(3/2)) coefficient/output charge
+at every selected m, including separate-field root deduplication.
+
+For a FIXED POLYLOGARITHMIC modulus menu, all its tested sources and
+norms are acquired in soft O(B) classically. Deterministic primality
+testing and the BHP-bounded search interval also fit this budget.
+The larger polynomial menu receives FREE coverage access in the
+obstruction; no near-linear acquisition of that full menu is claimed.
+Nor is simultaneous acquisition of every seed's distinct numeric
+scalar norm claimed: it is zero-pattern invariance that avoids that cost.
+
+### Precise proof status and remaining positive frontier
+
+The positive-integer seed report has22 independent PASS checks,
+the rational appendix18, and the prime-menu proof25. Their frozen
+reports/manifests/reviews are under
+/tmp/semiprime-covered-observation-20261008 and
+/tmp/semiprime-prime-menu-20261008. This joint proof is reviewed separately.
+All earlier proof/audit bytes and dirty migration work are preserved.
+This journal-only continuation adds NO Lean theorem, source import,
+metadata entry, checker run or global native bit clock. The existing
+nine finite charged-catalog theorems and four successful focused
+validation records retain their original scope.
+
+A distinct attempted positive reduction pairs antipodal tags and
+normalizes by common-gamma units, reducing reciprocal trace centers
+to1 or alpha. It moves the work into row-dependent baby origins; an
+implicit scalar evaluator for that joint query remains unproved.
+The working trace and explicit-lattice notes are not authorities for
+a new acquisition bound in this entry.
+
+All auxiliary primes in [B,2B], unrelated selectors, larger seed/rational
+heights, different mixed exponents, new additive observations, larger
+projection exponents, new centers and polynomially wider windows remain
+outside the proved obstruction. A covered new observation or genuinely
+near-linear implicit scalar evaluator is still required. Prime-square,
+nonunit/saturation recovery, routing/controller, total bit-time and
+peak-memory composition remain unfinished. The complete guaranteed
+one-sixth factorization goal remains active.
+
+## 2026-10-08 — Hensel phase masks stay invertible; cheap unequal-exponent grids still miss
+
+The previous goal turn was progress. Its authoritative audit is
+docs/semiprime-adaptive-seed-prime-menu-obstruction-audit.json, SHA256
+e90a1bd344d8dce1bf22ab83cd7fcbebd4bd16f1a7e1bd7a22fcd18493068642.
+The current continuation proves two new arithmetic route obstructions.
+It does not establish a near-linear evaluator for the actual long row norm
+or the guaranteed all-semiprime sixth-rate algorithm.
+
+### The actual phases have a full prime-square Hensel relation
+
+Every original lifted ray satisfies
+
+    tN=m^2*c-j*m*b+j^2*a, ell=m*b-2*a*j,
+    ell^2-4*a*t*N=m^2*(b^2-4*a*c).                  (H1)
+
+This is an exact integer identity, including signed intermediate rays.
+It retains the quadratic discriminant as its quotient. Exponentiating
+gives a global identity with its alpha carry; it does not turn the
+ordinary ring square of gamma^ell into gamma^(ell^2).
+
+For first currents, t=1 and a_j=N*j^(-2) modm. The exact antipodal
+normalization uses a common public unit for each pair and gives
+
+    x_j=gamma^r_j, -m^2<r_j<3*m^2/2,
+    r_j^2=4*N*a_j modm^2,
+    r_j=-2*N*j^(-1) modm.                          (H2)
+
+The statements hold for both literal rectangle centers and centered/pure
+singleton phases. The low digits are distinct and nonzero. Since each
+actual local order exceeds 3*m^2 eventually, the normalized targets are
+injective in EACH hidden field without a collision deletion. This is a
+different, row-dependently normalized collection; it does not replace
+the registered support theorem for the original targets. Normalization
+still moves the long query into variable baby origins.
+
+### Fourier cancellation and a corrected mask norm both fail
+
+Let s_j be r_j reduced to [0,m^2), choose any nonempty first-current
+submask, and form F(T)=sum_j w_j*T^s_j with public-unit coefficients.
+There is at most one occupied position in each low-digit stack u modulo m,
+and every occupied u is nonzero. This includes signed-unit weights and
+the source-faithful weights gamma^r_j.
+
+On the SAME actual prime-pair supply, delete an input if either hidden
+prime p satisfies p^(m-1)=1 modm^2 at ANY candidate auxiliary prime.
+At fixed m there are only m-1 exceptional residue classes modulo m^2,
+so O(M^2) possible p in the X=M^3 factor bin. The literal selector strip
+allows O(M^2*(G_m+1)) partners. The already proved first-K gap sum gives
+
+    additional input loss O(K_* M^5)=O(M^5.020).    (H3)
+
+This remains smaller than the previous soft M^5.994 joint deletion;
+Omega(M^6/log^2 M) actual inputs survive all conditions simultaneously.
+
+For either surviving hidden prime p, put f=ord_m(p). The new condition
+forces ord_(m^2)(p)=m*f. If zeta is any primitive m^2 root, omega=zeta^m,
+then 1,zeta,...,zeta^(m-1) are independent over F_p(omega). The graph
+mask has one nonzero monomial coefficient in every occupied low digit.
+Therefore F(zeta) cannot vanish. More strongly, for ANY polynomial G
+over Z/N, even chosen adaptively and supplied for free,
+
+    F(zeta)-G(zeta^m) != 0 in BOTH hidden fields.    (H4)
+
+The correction affects only basis coefficient u=0 and cannot cancel
+an occupied u!=0 coefficient. This includes every scalar shift or mean
+subtraction, and every correction in the coarser public m-period algebra.
+
+Thus F and F-G(T^m) are UNITS in
+A_N=(Z/N)[T]/Phi_(m^2)(T). Their multiplication determinant norms satisfy
+
+    gcd(N, Norm_(A_N/(Z/N))(F-G(T^m)))=1.           (H5)
+
+This new phase-mask norm observation cannot guarantee a factor, EVEN
+WITH FREE evaluation. It is not the original long residual norm.
+Convolution by F preserves each primitive component's zero status and
+multiplies its determinant norm by a unit.
+
+Every one of the m^2-m primitive Fourier channels is nonzero. A proposed
+acquisition route that explicitly lists these channels must therefore
+write Omega(m^2) records. Reciprocal-symmetric pairing saves at most a
+factor two. Arbitrary even-part projections may discard the source;
+their nonvanishing is not asserted. Keeping gamma phases as unit weights
+does not create spectral zeros, while declaring gamma periodic is not
+source-faithful. This is a rigorous obstruction to the specified explicit
+Fourier representation and mask-norm query, not an arbitrary scalar
+circuit lower bound. Sparse or implicit scalar evaluators remain open.
+
+### The mask norm's gcd information is cheap, but changes ANY into ALL
+
+A separate reviewed corollary permits ARBITRARY coefficients w_j, including
+zero and nonunits. The same field basis gives exactly
+
+    gcd(N, Norm_A(sum_j w_j*T^s_j))=gcd(N,w_1,...,w_J). (H5a)
+
+The mask vanishes at a primitive root precisely when ALL coefficients
+vanish in that hidden field. A streaming coefficient gcd therefore
+acquires its exact gcd information in soft O(m), without computing the
+numerical norm. A coarse-corrected norm's gcd divides this common gcd.
+If the source is zero globally, the correction may carry separate
+information of its own; that case is not ruled out.
+
+For row residuals w_j(x)=Y_j-x, the entire column query has the public
+implicit representation
+
+    D0=gcd(N,Y_j-Y_j0 for j!=j0),
+    maskNormGcd(x)=gcd(D0,Y_j0-x).                   (H5b)
+
+The registered original q=1 group has at least two distinct targets in
+EACH field; normalized targets are injective. For either such collection,
+D0=1, so the mask norm misses EVERY common baby column, including genuine
+individual row collisions anywhere on the FULL baby axis. The original
+residual PRODUCT detects ANY zero, whereas this proposed row merger
+requires ALL zeros. The near-linear information query thus cannot supply
+the required acquisition of the original collision predicate. Different
+row-specific baby origins are not silently replaced by a common column.
+
+### A new unequal-exponent observation is cheap enough, but misses
+
+Fix a finite catalog of positive integer bases. At each public m take
+L_m=ceil(C*m^(1/3)*polylogm) and test ALL signed |E|,|F|<=L_m in
+
+    Gamma_(u,m)^E-Gamma_(w,m)^F,
+    Gamma_(u,m)=u^((N-1)*(m!)^ceil(log2(N+1))) modN.  (H6)
+
+For a nonidentity rational ratio A/B=u^E/w^F, a projected zero in p
+forces its raw order to divide v_p. Thus p divides the NONZERO proof-side
+product prod_(1<=r<=ceil V)(A^r-B^r), where V=O(M^.969).
+Its logarithmic size is O(V^2*L_m); the entire tuple menu has O(L_m^2)
+members. The bad input-pair count is consequently soft O(M^5.938).
+This set is uniform over EVERY comparable positive projection modulus;
+there is no extra modulus-menu factor.
+
+After this deletion every nonidentity difference is a unit in BOTH
+fields. Rational perfect-power identities are zero globally and give
+gcd N. Products and localization within these same leaves yield only
+gcd 1 or N. Unequal exponents do escape the earlier equal-order invariant,
+but this bounded whole family still lacks arithmetic factor coverage.
+
+This observation family IS acquired classically in soft O(m): a fixed
+number of projections have soft O(m)-bit exponents, and cached signed
+powers leave only soft O(m^(2/3)) residue/gcd probes. A balanced factorial
+product tree and streaming evaluation fit soft O(m) time and space.
+A fixed polylogarithmic auxiliary-prime menu remains soft O(B). No such
+complete acquisition clock is claimed for the polynomial-size menu.
+The report also proves the growing-base envelope
+2*rho+3*lambda<1.062; its numerical acquisition is granted free.
+
+Unite (H3) and this new loss directly with the earlier deletions on the
+ORIGINAL supply. The joint loss is still soft O(M^5.994); the SAME
+majority counterfamily defeats both new observations and all earlier
+registered seed/menu/center repairs. No successful examples are premises.
+
+### Proof status and remaining substantive gate
+
+The Hensel/Fourier and unequal-exponent reports, source manifests and
+independent reviews are frozen under /tmp/semiprime-implicit-followup-20261008.
+The separately reviewed arbitrary-coefficient gcd appendix is frozen under
+/tmp/semiprime-hensel-spectrum-20261008.
+Their exact pins and the journal-only registration are recorded in
+docs/semiprime-hensel-spectrum-obstruction-audit.json. All inherited
+selected sources, Mathlib pins, reviews and validation evidence remain
+preserved. Root imports and public metadata are unchanged.
+
+The new arguments remain classical: no Lean source, checker or broader
+build was added. The separately inspected q-factorial fallback retains
+its growing degree and soft m^(3/2) cost; it is not a new near-linear
+algorithm or a premise of these arithmetic obstructions.
+
+A positive route must retain genuinely nonzero low-digit components,
+evaluate the original long residual query implicitly, or prove coverage
+for a different observation. Three-term sums, large mixed exponents,
+new residuals and implicit scalar methods remain open. Proper recovery,
+prime squares/nonunits/saturation, routing/controller, total bit time
+and peak memory still require proof. The guaranteed one-sixth goal
+remains active and unproved.
+
+## 2026-10-08 — Faithful ANY carrier is cheap; cyclic, base-squaring and paid additive repairs still fail
+
+The preceding goal turn was progress. Its frozen authority is
+docs/semiprime-hensel-spectrum-obstruction-audit.json, SHA256
+1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec.
+Its 488 selected source, 109 Mathlib and 17 artifact pins were revalidated.
+This continuation proves three scoped arithmetic advances and gives an
+exact, cheaply acquired collision carrier. It does not acquire the long
+residual scalar or prove the guaranteed all-semiprime sixth-rate algorithm.
+
+### Public cyclic carriers have too few independent collision components
+
+Use the SAME original balanced prime-pair supply, P,Q=Theta(M^3), whose
+mass is Omega(M^6/log^2 M). Every allowed first-K auxiliary prime satisfies
+m=Theta(M), K<=B^.020, B=ceil(N^(1/6)). The reviewed predecessor envelopes
+obey sum_m(G_m+1)=O(K_*M), K_*=O(M^.020). At fixed P,m the literal selector
+strip has O(M^2*(G_m+1)) partner integers.
+
+Delete an input if either hidden prime p has f_p=ord_m(p)<=F=ceil(M^.96)
+at any allowed candidate. There are at most F*tau(m-1) bad residue classes
+modulo m. The elementary divisor bound tau(n)<=C_epsilon*n^epsilon,
+with epsilon=.01, gives the simultaneous additional pair loss
+
+    O(K_* M^5 F M^.01)=O(M^5.990).                 (A1)
+
+Thus f_P,f_Q>M^.96 at EVERY candidate on the retained majority. The earlier
+non-Teichmuller condition also gives ord_(m^2)(p)=m*f_p. For t=(m-1)/f_p,
+the numbers of simple field factors of the four public cyclic carriers are
+
+    Phi_m: t; Phi_(m^2): t;
+    T^m-1: 1+t; T^(m^2)-1: 1+2*t.                (A2)
+
+All counts are O(M^.04), even where the algebra dimension is Theta(m^2).
+Nonzero orthogonal idempotents have disjoint component supports. There
+cannot be J=Omega(m) independent row selectors in any such carrier.
+
+A stronger theorem needs no idempotents. Let L:F_p^J->product_s E_s be a
+homogeneous linear merger, with t<p field components. Require ANY w_j=0
+to imply Norm(L(w))=0 for EVERY tuple, and require a nonzero norm at some
+all-nonzero tuple. Each coordinate hyperplane must then be one component
+kernel: fewer than p proper subspaces cannot cover that hyperplane. Distinct
+coordinate hyperplanes require distinct components. Therefore t>=J.
+This excludes arbitrary input-dependent linear coefficients under those
+semantics, rather than only the previous Hensel mask.
+
+Dropping the nonzero baseline forces LOCAL source blindness. It need not
+force gcd N: the other CRT field might behave differently. Such a separate
+local separator would need its own N-only acquisition and coverage proof.
+
+For the actual common-baby curve w_j(x)=Y_j-x, a fixed affine merger has
+at most t local zeros unless its norm is identically zero locally. More
+generally a degree-D payload V(X) in the carrier has at most t*D DISTINCT
+base-field norm zeros if its norm is nonzero somewhere. The registered
+original first-current/top-bit groups have Omega(m) distinct local targets;
+the normalized first-current targets are independently injective. An exact
+ANY representation over the COMPLETE common-baby period consequently needs
+
+    D=Omega(M^.96).                               (A3)
+
+This counts distinct zeros, not the larger extension-degree multiplicity
+of the norm polynomial. It does NOT establish Omega(m) hits inside an
+actual length-Theta(m^2) baby prefix. That intersection remains open, as
+do different row-specific origins and unrestricted implicit circuits.
+
+### A faithful source carrier has near-linear construction
+
+For any public list Y_1,...,Y_J over R=Z/N, define
+
+    H_Y(U)=product_j(U-Y_j), A_Y=R[U]/H_Y(U).
+    Norm_(A_Y/R)(U-x)=product_j(Y_j-x)=(-1)^J H_Y(x). (A4)
+
+The companion-matrix determinant proves (A4) over EVERY commutative ring,
+including repeated roots and zero divisors. This carrier faithfully detects
+ANY individual row zero. It repairs the earlier mask's ALL-zero semantics.
+Its source-specific root factors place it outside the public cyclic-carrier
+obstruction; no hidden prime or interpolation oracle is needed.
+
+A balanced polynomial product tree and carry-free Kronecker packing,
+using unconditional fast integer multiplication, acquire H_Y in
+soft O(J*logN) bit time. The actual first-current targets and carrier are
+therefore acquired in soft O(m). A dense table of J Lagrange idempotents
+is not supplied for free; the common payload U-x needs no such table.
+
+The unpaid scalar is still product_(i<L) H_Y(u*rho^i), with L=Theta(m^2),
+or its actual variable-origin/source-cocycle analogue. Near-linear carrier
+construction alone is not whole-family near-linear residual acquisition.
+Field extensions can increase the cyclic component count by at most their
+degree h; J selectors need h>=J/t=Omega(M^.96). Dense J-by-h field output
+then costs Omega(J*h) coordinates. This is only a representation charge;
+sparse or implicit extension methods remain outside it.
+
+### Base-changing q-product recursion needs a large fixed invariant algebra
+
+The original residual query admits the exact ANY-preserving rewrite
+
+    P_L(X,Q)=product_(0<=i<L)(1-X*Q^i),
+    product_j product_(i<L_j)(Y_j-u_j*q^i)
+      =product_j Y_j^L_j * product_j P_(L_j)(u_j/Y_j,q),
+    P_(2t)(X,Q)=P_t(X,Q^2)*P_t(X*Q,Q^2).           (A5)
+
+Only supplied units Y_j are inverted. Unequal lengths and signed starts
+remain exact, and the odd endpoint is handled without residual division.
+
+Consider a SINGLE finite free R-algebra containing abstract Qbar, with an
+R-algebra endomorphism Qbar->Qbar^2 and an actual evaluation Qbar->alpha
+after reduction to each hidden field. This is a specific invariant-quotient
+contract. Numerical scalar q-squaring fixes no such abstract carrier and
+is OUTSIDE this contract; moving quotients and corrected maps are also open.
+
+Here alpha has exact prime local order R_p, with p-1=v_p*R_p,
+R_p>p^.677 and v_p=O(M^.969). Exceptional ord_(R_p)(2)<=T=floor(M^1.010)
+forces R_p to divide the nonzero integer product_(k<=T)(2^k-1). Its logarithm
+is O(T^2). Counting exceptional primes R_p, possible v_p and partners gives
+
+    additional pair loss O(M^5.989/logM).          (A6)
+
+There is no modulus or seed multiplier: the same R_p serves every candidate.
+On survivors ord_(R_P)(2),ord_(R_Q)(2)>M^1.010-1.
+
+If R does not divide b, sigma(g)=g^b, and a field-valued character takes g to a prime-order-R
+element, the characters phi composed with sigma^k have ord_R(b) distinct
+maximal kernels. CRT then proves dim B>=ord_R(b). No reducedness or
+invertibility premise is needed. Applied to (A5), the fixed algebra rank is
+greater than M^1.010-1. Dense acquisition exceeds soft O(m) even when all
+algebra operations are free. A fixed polylogarithmic INPUT-INDEPENDENT
+library 2<=b<=ceil((logM)^C) has the same obstruction and soft M^5.989 loss.
+This is no lower bound for ordinary numerical q-products, implicit states,
+arbitrary input-dependent radices or scalar algorithms.
+
+### Two paid three-term families still have no proper-factor coverage
+
+Fix a finite integer-base catalog and a constant finite library of monic
+polynomials h_m with bounded degree, O(logm)-bit coefficients fixed as N
+varies at m, and a polylogarithmic coefficient-generation recipe. Put
+
+    Gamma_u=u^((N-1)*(m!)^ceil(log2(N+1))) modN,
+    theta_u=Gamma_u^h_m(N) modN.                   (A7)
+
+The library includes h=1, h(T)=T and h(T)=T-1. Test the complete signed
+same-base family theta_u^e+theta_u^f-1 for |e|,|f|<=soft O(sqrt m), and the
+mixed family theta_u^E+theta_v^F-theta_w^G for |E|,|F|,|G|<=soft O(m^.15).
+Any common public unit origin may multiply a same-base residual. Relative
+labels and the fixed coefficient/library contracts remain essential.
+
+At fixed P,m the exact logarithmic exponent has O(1) values on the factor
+bin. Freeze it on each piece and write z_u=u^((m!)^ell) modP. Each z_u has
+order 1 or R_P. The full N-dependent post-exponent remains exact:
+
+    theta_u=z_u^k_h(Q),
+    k_h(Q)=(Q-1)*h_m(Q) modR_P.                   (A8)
+
+The polynomial k_h is monic of bounded positive degree, so each exponent
+class has only boundedly many Q preimages. Same-base zeros are roots of
+the nonzero Laurent polynomial Z^e+Z^f-1, giving at most 2L classes.
+
+For mixed bases, divide by theta_w^G. The condition is a^k+b^k=1 in the
+prime-order subgroup. All degeneracies have zero or at most one solution.
+Otherwise two solutions k,k+d uniquely determine k from the nonzero
+determinant a^d-b^d. Every nonzero difference occurs at most once, proving
+s*(s-1)<=R_P-1 and s<=sqrt(R_P)+1. This supplies the full Sidon proof;
+no discrete logarithm is an algorithm input.
+
+Counting the literal partner strips and separating sum G_m from #m gives
+
+    same-base loss soft O(M^5.5+K_*M^5.469),
+    mixed-base loss soft O(M^5.950+K_*M^5.4345).   (A9)
+
+Thus the new dominant loss is soft M^5.950. Complete acquisition of EACH
+new observation family costs soft O(m) time and space: constant many
+factorial projections, cached signed powers, and at most soft O(m) scalar
+ring/gcd probes. Fixed polylogarithmic prime menus cost soft O(B). The
+polynomial prime menu is granted free for coverage only, not acquired in
+that clock. Growing seed catalogs and unrelated N-dependent exponent or
+coefficient libraries are not covered. The old two-term seed invariant is
+NOT used to infer additive behavior.
+
+After these deletions EVERY new three-term residual is a unit in BOTH
+hidden fields. Products and localization cannot yield a factor. This
+defeats the stated paid families without relying on global saturation.
+
+### Joint proof status and the next arithmetic gate
+
+Unite (A1), (A6) and (A9) directly with the old deletions on the ORIGINAL
+supply. The dominant joint loss remains soft O(M^5.994), preserving
+Omega(M^6/log^2 M) actual inputs satisfying every new obstruction and
+every previously registered repair failure simultaneously.
+
+The three reports, their manifests and independent reviews are frozen in
+/tmp/semiprime-any-zero-frontier-20261008. Their final pins, joint journal
+review and exact journal-only insertion are recorded in
+docs/semiprime-any-zero-acquisition-obstruction-audit.json. The preserved
+five-authority chain contains 27 earlier PASS reviews. Root imports,
+metadata, all frozen earlier artifacts and the dirty migration are preserved.
+
+Fresh primary inspections cover unconditional integer multiplication,
+Kedlaya--Umans modular composition and Kelley--Owen's subgroup bound. None
+supplies a paid long scalar evaluator here; no new OpenAI/math, QRH or GRH
+premise is used. The current advances are classical, with no new Lean
+source, checker, native certificate, C export, example or validation run.
+
+The substantive remaining acquisition gate is an implicit evaluator of
+the faithful long ANY product, or a different N-only observation with
+proved whole-family cost AND arithmetic coverage. Actual bounded-prefix
+intersections, variable-origin methods and moving carriers remain open.
+Proper recovery, prime squares/nonunits/saturation, routing/controller,
+full bit time and peak working memory still require proof. The guaranteed
+one-sixth factorization goal remains active and unproved.
+
 ## Recording future progress
 
 Append dated entries with the exact observable/algorithm, known input,

@@ -238,13 +238,13 @@ theorem joined_weight_overlap {N K i : ℕ} {b : ℝ} (hi : i < N) (hb : 1 ≤ b
   have hsum : ((N+1-i : ℕ) : ℝ) ≤ ((N+1 : ℕ) : ℝ) := by exact_mod_cast (show N+1-i ≤ N+1 by omega)
   have hp : 1/((N+1 : ℕ) : ℝ) ≤ positiveWeight N K i := by
     unfold positiveWeight
-    rw [if_pos hcentral]
+    rw [ite_eq_left hcentral]
     have he : (1 : ℝ)/((N+1 : ℕ) : ℝ) ≤ 1/(N : ℝ) :=
       one_div_le_one_div_of_le hnR (by norm_cast; omega)
     exact he.trans (le_add_of_nonneg_right (by positivity))
   have hv : 1/((N+1 : ℕ) : ℝ) ≤ b*successorWeight N K i := by
     unfold successorWeight
-    rw [if_pos (by omega : i ≤ N-K)]
+    rw [ite_eq_left (by omega : i ≤ N-K)]
     exact (one_div_le_one_div_of_le hnr hsum).trans
       (le_mul_of_one_le_left (by positivity) hb)
   unfold joinedWeight

@@ -55,7 +55,7 @@ theorem integrable_suzukiXiRegularizedGramChannel (rho sigma : NontrivialZetaZer
         suzukiXiRealNodeRegularizedChannel sigma := by
       funext x
       unfold suzukiXiRegularizedGramChannel suzukiXiGramRealCounterterm
-      rw [if_pos h, h.1, ← pow_two]
+      rw [ite_eq_left h, h.1, ← pow_two]
       rfl
     rw [heq]
     exact integrable_suzukiXiRealNodeRegularizedChannel sigma h.2
@@ -64,7 +64,7 @@ theorem integrable_suzukiXiRegularizedGramChannel (rho sigma : NontrivialZetaZer
       rw [NontrivialZetaZero.spectralCoordinate_conjugatePartner]
       tauto
     unfold suzukiXiRegularizedGramChannel suzukiXiGramRealCounterterm
-    simp only [if_neg h, sub_zero]
+    simp only [ite_eq_right h, sub_zero]
     simpa only [NontrivialZetaZero.spectralCoordinate_conjugatePartner] using
       integrable_suzukiXiCarrier_two_resolvents_of_no_real_collision
         (NontrivialZetaZero.conjugatePartner rho) sigma hp
@@ -80,7 +80,7 @@ theorem integrable_suzukiXiRegularizedGramSharpChannel (rho sigma : NontrivialZe
           ((x : ℂ) - zetaSpectralCoordinate sigma.1) ^ 2 - suzukiXiRealNodeCounterterm sigma x := by
       funext x
       unfold suzukiXiRegularizedGramSharpChannel suzukiXiGramRealCounterterm
-      rw [if_pos h, h.1, ← pow_two]
+      rw [ite_eq_left h, h.1, ← pow_two]
     rw [heq]
     exact integrable_suzukiXiRealNodeRegularizedSharpChannel sigma h.2
   · have hp : zetaSpectralCoordinate (NontrivialZetaZero.conjugatePartner rho).1 ≠
@@ -88,7 +88,7 @@ theorem integrable_suzukiXiRegularizedGramSharpChannel (rho sigma : NontrivialZe
       rw [NontrivialZetaZero.spectralCoordinate_conjugatePartner]
       tauto
     unfold suzukiXiRegularizedGramSharpChannel suzukiXiGramRealCounterterm
-    simp only [if_neg h, sub_zero]
+    simp only [ite_eq_right h, sub_zero]
     simpa only [NontrivialZetaZero.spectralCoordinate_conjugatePartner] using
       integrable_suzukiXiSharpCarrier_two_resolvents_of_no_real_collision
         (NontrivialZetaZero.conjugatePartner rho) sigma hp

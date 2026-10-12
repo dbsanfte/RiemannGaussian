@@ -81,7 +81,7 @@ theorem sum_pair_lcmSqrtFactorMass_le_gcd (D : ℕ) :
       have h := Finset.single_le_sum
         (f := fun g ↦ lcmSqrtFactorMass g * w g d * w g e)
         (fun g _ ↦ mul_nonneg (mul_nonneg (lcmSqrtFactorMass_nonneg g) (hw g d)) (hw g e)) hg
-      simp only [w, if_pos (Nat.gcd_dvd_left d e), if_pos (Nat.gcd_dvd_right d e)] at h
+      simp only [w, ite_eq_left (Nat.gcd_dvd_left d e), ite_eq_left (Nat.gcd_dvd_right d e)] at h
       exact (lcmSqrtFactorMass_lcm_le_gcd hd0).trans h
     _ = ∑ d ∈ s, ∑ g ∈ s, ∑ e ∈ s, lcmSqrtFactorMass g * w g d * w g e := by
       apply Finset.sum_congr rfl
@@ -200,12 +200,12 @@ theorem sum_pair_prime_lcm_eq (f : ℕ → ℝ) (D : ℕ) :
         (if d = 1 then ∑ e ∈ Finset.Icc 1 D, if e.Prime then f e else 0 else 0) := by
     simp_rw [prime_lcm_eq_three_entries, Finset.sum_add_distrib]
     simp only [Finset.sum_ite_irrel, Finset.sum_ite_eq, Finset.sum_ite_eq',
-      Finset.mem_Icc, le_refl, true_and, hD1, Finset.mem_Icc.mp hd, if_true,
+      Finset.mem_Icc, le_refl, true_and, hD1, Finset.mem_Icc.mp hd, ite_true,
       Finset.sum_const_zero]
     ring
   rw [Finset.sum_congr rfl hrow, Finset.sum_add_distrib, ← Finset.mul_sum]
   simp only [Finset.sum_ite_eq', Finset.mem_Icc, le_refl, true_and,
-    hD1, if_true]
+    hD1, ite_true]
   ring
 
 namespace RoughDivisorLinear
@@ -278,7 +278,7 @@ theorem exists_bounded_remainder_bound (y : ℝ) (hy : 1 < |y|)
       have he1 : a.2 = 1 := Nat.eq_one_of_dvd_one (h ▸ Nat.dvd_lcm_right a.1 a.2)
       exact hne (Prod.ext hd1 he1)
     have hmass : ‖w a.1‖ * ‖v a.2‖ ≤ 1 :=
-      mul_le_one₀ (hw a.1 hd) (norm_nonneg _) (hv a.2 he)
+      (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (hw a.1 hd) (norm_nonneg _) (hv a.2 he)
     rw [norm_mul, norm_neg, norm_mul, norm_star]
     apply (mul_le_mul_of_nonneg_right hmass (norm_nonneg _)).trans
     simpa only [one_mul, E, B, L, mul_assoc] using hb p N R S (Nat.lcm a.1 a.2) hS hP1

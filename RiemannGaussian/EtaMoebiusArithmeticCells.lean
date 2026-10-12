@@ -52,7 +52,7 @@ private theorem primitive_div_on_cell (M : ℕ) (w : ℕ → ℝ) {L m : ℕ}
   apply Finset.sum_congr rfl
   intro n _
   unfold pairedEtaMoebiusContinuumAtom
-  rw [if_pos hx]
+  rw [ite_eq_left hx]
   simp only [htest]
   split_ifs <;> ring
 

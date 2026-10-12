@@ -84,7 +84,7 @@ theorem literal_inner_atom {p q b : ℕ} (hp : p.Prime) (hq : q.Prime)
   have hcount : 2 ≤ (q*b).primeFactors.card := hc.trans
     (Finset.card_le_card (Nat.primeFactors_mono (dvd_mul_left b q) (mul_ne_zero hq.ne_zero hb.ne_zero)))
   rw [residual_atom_eq_parity_response hsf hcount hp hpqb,
-    response_inner hp hq hb hc hqb hi,moebius_prime_mul_eq_not_dvd hq,if_neg hqb]
+    response_inner hp hq hb hc hqb hi,moebius_prime_mul_eq_not_dvd hq,ite_eq_right hqb]
   push_cast
   ring
 
@@ -111,7 +111,7 @@ theorem inserted_pair_eq {p p' q r b : ℕ} (hp : p.Prime) (hp' : p'.Prime)
     (Finset.card_le_card (Nat.primeFactors_mono (dvd_mul_left b r) (mul_ne_zero hr.ne_zero hb.ne_zero)))
   rw [literal_inner_atom hp hq hb hc hqb hpqb hi,
     literal_inner_atom hp' hq hsf hcount hqr hp'qr hi',
-    moebius_prime_mul_eq_not_dvd hr,if_neg hrb]
+    moebius_prime_mul_eq_not_dvd hr,ite_eq_right hrb]
   push_cast
   ring
 

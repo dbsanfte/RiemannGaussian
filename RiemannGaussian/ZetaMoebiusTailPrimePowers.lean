@@ -36,7 +36,7 @@ theorem zetaMoebiusLogTailCoefficient_prime_pow (D : ℕ) (hD : 1 ≤ D)
     split_ifs <;> ring
   · intro a ha hne
     by_cases hd : D < a.1
-    · rw [if_pos hd]
+    · rw [ite_eq_left hd]
       have hprod := (Nat.mem_divisorsAntidiagonal.mp ha).1
       have hdvd : a.1 ∣ p ^ (k + 1) := ⟨a.2, hprod.symm⟩
       obtain ⟨j, _, hj⟩ := (Nat.dvd_prime_pow hp).mp hdvd
@@ -49,9 +49,9 @@ theorem zetaMoebiusLogTailCoefficient_prime_pow (D : ℕ) (hD : 1 ≤ D)
             apply Nat.eq_of_mul_eq_mul_left hp.pos
             simpa only [ha1, pow_succ', Nat.add_comm 1 k] using hprod
           exact (hne (Prod.ext ha1 ha2)).elim
-        · rw [hj, ArithmeticFunction.moebius_apply_prime_pow hp (Nat.succ_ne_zero j), if_neg hj1]
+        · rw [hj, ArithmeticFunction.moebius_apply_prime_pow hp (Nat.succ_ne_zero j), ite_eq_right hj1]
           simp
-    · rw [if_neg hd]
+    · rw [ite_eq_right hd]
   · intro h
     exact (h (Nat.mem_divisorsAntidiagonal.mpr
       ⟨(pow_succ' p k).symm, pow_ne_zero _ hp.ne_zero⟩)).elim
@@ -77,7 +77,7 @@ majorant independent of the divisor cutoff. -/
 theorem norm_zetaMoebiusTailPrimePowerCoefficient_le (D : ℕ) (hD : 1 ≤ D) (n : ℕ) :
     ‖zetaMoebiusTailPrimePowerCoefficient D n‖ ≤ zetaMoebiusTailPrimePowerMajorant n := by
   by_cases hn : IsPrimePow n
-  · rw [zetaMoebiusTailPrimePowerCoefficient, if_pos hn]
+  · rw [zetaMoebiusTailPrimePowerCoefficient, ite_eq_left hn]
     by_cases hnp : n.Prime
     · rw [zetaMoebiusLogTailCoefficient_prime D hD hnp, norm_zero]
       exact zetaMoebiusTailPrimePowerMajorant_nonneg n
@@ -85,7 +85,7 @@ theorem norm_zetaMoebiusTailPrimePowerCoefficient_le (D : ℕ) (hD : 1 ≤ D) (n
     obtain ⟨k, rfl⟩ := Nat.exists_eq_succ_of_ne_zero hk.ne'
     rw [zetaMoebiusLogTailCoefficient_prime_pow D hD hp]
     by_cases hd : D < p
-    · rw [if_pos hd, norm_mul, norm_neg, Complex.norm_natCast, Complex.norm_real,
+    · rw [ite_eq_left hd, norm_mul, norm_neg, Complex.norm_natCast, Complex.norm_real,
         Real.norm_eq_abs, abs_of_nonneg (Real.log_natCast_nonneg p)]
       have hlp : Real.log 2 ≤ Real.log p :=
         Real.log_le_log (by norm_num) (by exact_mod_cast hp.two_le)
@@ -94,7 +94,7 @@ theorem norm_zetaMoebiusTailPrimePowerCoefficient_le (D : ℕ) (hD : 1 ≤ D) (n
         push_cast
         rfl
       have hv : zetaProperPrimePowerCoefficient (p ^ (k + 1)) = Real.log p := by
-        rw [zetaProperPrimePowerCoefficient, if_neg hnp,
+        rw [zetaProperPrimePowerCoefficient, ite_eq_right hnp,
           ArithmeticFunction.vonMangoldt_apply_pow (Nat.succ_ne_zero k),
           ArithmeticFunction.vonMangoldt_apply_prime hp]
       rw [zetaMoebiusTailPrimePowerMajorant, hv, hlog]
@@ -106,9 +106,9 @@ theorem norm_zetaMoebiusTailPrimePowerCoefficient_le (D : ℕ) (hD : 1 ≤ D) (n
       calc
         _ ≤ ((k + 1 : ℝ) * Real.log p) * 1 := by nlinarith [Real.log_natCast_nonneg p]
         _ ≤ _ := mul_le_mul_of_nonneg_left h1 (by positivity)
-    · rw [if_neg hd, norm_zero]
+    · rw [ite_eq_right hd, norm_zero]
       exact zetaMoebiusTailPrimePowerMajorant_nonneg _
-  · rw [zetaMoebiusTailPrimePowerCoefficient, if_neg hn, norm_zero]
+  · rw [zetaMoebiusTailPrimePowerCoefficient, ite_eq_right hn, norm_zero]
     exact zetaMoebiusTailPrimePowerMajorant_nonneg n
 
 /-- The existing proper-prime-power series converges absolutely past

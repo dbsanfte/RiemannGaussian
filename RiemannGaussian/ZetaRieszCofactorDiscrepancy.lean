@@ -32,7 +32,7 @@ theorem count_eq_marks (X D : ℕ) :
   have he n : (if Squarefree n then sharp D n else 0) =
       ∑ d ∈ Finset.Icc 1 D, (μ d : ℝ)*(if Squarefree n ∧ d ∣ n then 1 else 0) := by
     by_cases hn : Squarefree n
-    · simp only [hn,if_true,true_and,sharp,mul_ite,mul_one,mul_zero]
+    · simp only [hn,ite_true,true_and,sharp,mul_ite,mul_one,mul_zero]
     · simp [hn]
   simp_rw [he]
   rw [Finset.sum_comm]
@@ -58,7 +58,7 @@ private theorem corrected_mark_le {d : ℕ} (hd : Squarefree d) :
     nlinarith [log_natCast_nonneg p]
   calc
     _ ≤ ∏ p ∈ d.primeFactors, (2 : ℝ)*zetaPrimeExpWeight (3/4) p := by
-      apply Finset.prod_le_prod (fun p _ => primeSquareCorrectedWeight_nonneg _ _)
+      apply Finset.prod_le_prod₀ (fun p _ => primeSquareCorrectedWeight_nonneg _ _)
       intro p _
       unfold primeSquareCorrectedWeight
       have hp0 : 0 ≤ zetaPrimeExpWeight (3/4) p := (exp_pos _).le
@@ -375,7 +375,7 @@ theorem compositeModel_prime_extension (X D : ℕ) (w : ℕ → ℝ) (a : ℝ)
   have hprime : q ∈ (Finset.Icc 1 X).filter (fun p => p.Prime ∧ D < p) :=
     Finset.mem_filter.mpr ⟨hmem,hq,hDq⟩
   simp only [compositeModel,Finset.sum_add_distrib,Finset.sum_ite_eq',
-    if_pos hmem,if_pos hprime,if_neg hq.ne_one.symm,add_zero]
+    ite_eq_left hmem,ite_eq_left hprime,ite_eq_right hq.ne_one.symm,add_zero]
   ring
 
 /-- Quantitative conservation of the purported main-term improvement:

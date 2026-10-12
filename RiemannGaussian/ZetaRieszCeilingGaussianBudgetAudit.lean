@@ -62,7 +62,7 @@ theorem halfGaussian_le_recip {b x : ℝ} (hb : 0 < b) (hx : 0 < x) :
 nonconstant mass, even for an infinite eligible family. -/
 theorem first_le_mass {a : ℕ -> ℝ} (ha : ∀ n, 0 <= a n) (hs : Summable a) :
     a 1 <= mass a := by
-  simpa only [tail, if_false, show (1 : ℕ) ≠ 0 by omega, mass] using
+  simpa only [tail, ite_false, show (1 : ℕ) ≠ 0 by omega, mass] using
     (tail_summable ha hs).le_tsum 1 (fun n _ => tail_nonneg ha n)
 
 /-- The full nonconstant logarithmic frequency cost is nonnegative.

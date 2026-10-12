@@ -358,10 +358,10 @@ theorem suzukiXiUpperCircleProjectionWindow_eq_restricted
       apply Finset.sum_congr rfl
       intro rho _hrho
       by_cases hupper : 0 < (zetaSpectralCoordinate rho.1.1).im
-      · simp only [if_pos hupper]
+      · simp only [ite_eq_left hupper]
         rw [suzukiXiSpectralPWindowCircleResidue_eq_coefficient t R hR rho]
         rfl
-      · simp only [if_neg hupper]
+      · simp only [ite_eq_right hupper]
     _ = ∑ rho ∈ spectralZetaZeroWindow T,
         if 0 < (zetaSpectralCoordinate rho.1).im then
           zetaSuzukiSpectralPSummand t z rho
@@ -394,10 +394,10 @@ theorem suzukiXiLowerCircleProjectionWindow_eq_restricted
       apply Finset.sum_congr rfl
       intro rho _hrho
       by_cases hlower : (zetaSpectralCoordinate rho.1.1).im < 0
-      · simp only [if_pos hlower]
+      · simp only [ite_eq_left hlower]
         rw [suzukiXiSpectralPWindowCircleResidue_eq_coefficient t R hR rho]
         rfl
-      · simp only [if_neg hlower]
+      · simp only [ite_eq_right hlower]
     _ = ∑ rho ∈ spectralZetaZeroWindow T,
         if (zetaSpectralCoordinate rho.1).im < 0 then
           zetaSuzukiSpectralPSummand t z rho

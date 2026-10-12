@@ -77,7 +77,7 @@ theorem pairedEtaLeadingCurrent_firstMoment_le_growthConstant (rho : NontrivialZ
   · have hc : pairedEtaCurrentGrowthAmplitude rho / pairedEtaCurrentHorizontalDisplacement rho ≤
         pairedEtaCurrentReturnGrowthConstant rho := by
       unfold pairedEtaCurrentReturnGrowthConstant
-      rw [if_neg hrho]
+      rw [ite_eq_right hrho]
       linarith [pairedEtaCurrentLinearHeatWeightedErrorBound_nonneg rho]
     exact (pairedEtaLeadingCurrent_firstMoment_growth_le_of_re_ne_half rho hrho K).trans
       (mul_le_mul_of_nonneg_right hc (by positivity))

@@ -67,7 +67,7 @@ theorem hasSum_zetaOnePrimeSquarefreeFilter (p : Polynomial ℂ) (D N : ℕ) (hD
     (by intro n hn; simp [hn])
   have he : (∑ n ∈ S, (if n ∈ S then (Real.log n : ℂ) else 0) * zetaPrimeFilterKernel p N s n) =
       ∑ n ∈ S, (Real.log n : ℂ) * zetaPrimeFilterKernel p N s n :=
-    Finset.sum_congr rfl (fun n hn ↦ by rw [if_pos hn])
+    Finset.sum_congr rfl (fun n hn ↦ by rw [ite_eq_left hn])
   rw [he] at hf
   have h := (hasSum_zetaOnePrimeSquarefreePrefixFilter p D N S hS hs).summable.hasSum.add hf
   apply h.congr_fun

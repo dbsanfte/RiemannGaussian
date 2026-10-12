@@ -62,7 +62,7 @@ theorem makeInverseFrame_no_borrow {modulus : List Bool}
     (makeInverseFrame modulus r₀ r₁ c₀ c₁).difference.borrow=false := by
   have hp := makeInverseFrame_product modulus r₀ r₁ c₀ c₁
   have ha : bitValue (addBits c₀ modulus false).bits=bitValue c₀+bitValue modulus := by
-    simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using
+    simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using
       addBits_correct c₀ modulus false
   have hm := Nat.mod_lt (bitValue r₀/bitValue r₁*bitValue c₁) hN
   cases hb : (makeInverseFrame modulus r₀ r₁ c₀ c₁).difference.borrow with
@@ -70,7 +70,7 @@ theorem makeInverseFrame_no_borrow {modulus : List Bool}
   | true =>
     have hl := (subBits_borrow_iff (addBits c₀ modulus false).bits
       (modMulBits (divideBits r₀ r₁).quotient c₁ modulus).division.remainder false).mp hb
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero,ha] at hl
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero,ha] at hl
     change bitValue c₀+bitValue modulus<
       bitValue (makeInverseFrame modulus r₀ r₁ c₀ c₁).product.division.remainder at hl
     rw [hp] at hl
@@ -91,7 +91,7 @@ theorem makeInverseFrame_exact {modulus : List Bool} (hN : 0<bitValue modulus)
     bitValue (addBits c₀ modulus false).bits-
       bitValue (makeInverseFrame modulus r₀ r₁ c₀ c₁).product.division.remainder at hs
   have ha : bitValue (addBits c₀ modulus false).bits=bitValue c₀+bitValue modulus := by
-    simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using
+    simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using
       addBits_correct c₀ modulus false
   have hp := makeInverseFrame_product modulus r₀ r₁ c₀ c₁
   change bitValue (divideBits
@@ -134,9 +134,9 @@ theorem inverseLoop_exhausted (modulus r₀ r₁ c₀ c₁ : List Bool) (fuel : 
   | nil => rfl
   | cons cell fuel ih =>
     by_cases hb : (nonzeroBits r₁).nonzero=true
-    · simp only [inverseLoop,gcdLoop,if_pos hb,makeInverseFrame]
+    · simp only [inverseLoop,gcdLoop,ite_eq_left hb,makeInverseFrame]
       exact ih _ _ _ _
-    · simp only [inverseLoop,gcdLoop,if_neg hb]
+    · simp only [inverseLoop,gcdLoop,ite_eq_right hb]
 
 /-- A stopped bit loop returns exactly the GCD and coefficient of the
 verified arithmetic loop. No coefficient advice is supplied as input. -/
@@ -155,19 +155,19 @@ theorem inverseLoop_refines {modulus : List Bool} (hN : 0<bitValue modulus)
       have hc : (inverseLoop modulus r₁
           (makeInverseFrame modulus r₀ r₁ c₀ c₁).division.remainder c₁
           (makeInverseFrame modulus r₀ r₁ c₀ c₁).reduction.remainder fuel).exhausted=false := by
-        simpa only [inverseLoop,if_pos hb] using hstop
+        simpa only [inverseLoop,ite_eq_left hb] using hstop
       have ht := ih _ _ _ _ hc
       obtain ⟨_,hr,he⟩ := makeInverseFrame_exact hN r₀ r₁ c₀ c₁
       rw [hr,he] at ht
-      rw [inverseLoop,if_pos hb,euclidLoop,dif_neg (by omega : bitValue r₁≠0)]
+      rw [inverseLoop,ite_eq_left hb,euclidLoop,dite_eq_right (by omega : bitValue r₁≠0)]
       exact ht
     · have hz : bitValue r₁=0 := by
         have hn : ¬0<bitValue r₁ := by
           intro hp
           exact hb ((nonzeroBits_correct r₁).mpr hp)
         omega
-      simp only [inverseLoop,if_neg hb]
-      rw [euclidLoop,dif_pos hz]
+      simp only [inverseLoop,ite_eq_right hb]
+      rw [euclidLoop,dite_eq_left hz]
       exact ⟨rfl,rfl⟩
 
 /-- Public inversion normalizes its input and literal one with charged
@@ -200,7 +200,7 @@ theorem inverseBits_refines {modulus : List Bool} (hN : 0<bitValue modulus) (inp
     inverseBits_stops modulus input
   have he := inverseLoop_refines hN _ _ _ _ _ hstop
   rw [(divideBits_correct input modulus).2,(divideBits_correct [true] modulus).2] at he
-  simpa only [inverseBits,countedInverse,bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero] using he
+  simpa only [inverseBits,countedInverse,bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero] using he
 
 /-- The returned Boolean GCD is the original input's GCD, including nonunits. -/
 theorem inverseBits_gcd {modulus : List Bool} (hN : 0<bitValue modulus) (input : List Bool) :
@@ -279,8 +279,8 @@ theorem inverseLoop_width {L : ℕ} {modulus : List Bool} (hN : 0<bitValue modul
       have ht := ih r₁ (makeInverseFrame modulus r₀ r₁ c₀ c₁).division.remainder c₁
         (makeInverseFrame modulus r₀ r₁ c₀ c₁).reduction.remainder
         h₁ (by omega) hc₁ (by omega)
-      simpa only [inverseLoop,if_pos hb] using ht
-    · simpa only [inverseLoop,if_neg hb] using And.intro h₀ hc₀
+      simpa only [inverseLoop,ite_eq_left hb] using ht
+    · simpa only [inverseLoop,ite_eq_right hb] using And.intro h₀ hc₀
 
 /-- Every visited frame pays its Boolean test and coefficient update.
 Arbitrary insufficient fuel also satisfies this physical-work bound. -/
@@ -300,9 +300,9 @@ theorem inverseLoop_cost {L : ℕ} {modulus : List Bool} (hN : 0<bitValue modulu
         (makeInverseFrame modulus r₀ r₁ c₀ c₁).reduction.remainder
         h₁ (by omega) hc₁ (by omega)
       have hf := makeInverseFrame_cost hN hpos hm h₀ h₁ hc₀ hc₁
-      simp only [inverseLoop,if_pos hb,List.length_cons]
+      simp only [inverseLoop,ite_eq_left hb,List.length_cons]
       nlinarith
-    · simp only [inverseLoop,if_neg hb,List.length_cons]
+    · simp only [inverseLoop,ite_eq_right hb,List.length_cons]
       nlinarith
 
 /-- Public outputs occupy at most the actual modulus width, independently
@@ -377,7 +377,7 @@ theorem isOneBits_correct (bits : List Bool) :
     (isOneBits bits).value=true ↔ bitValue bits=1 := by
   have hlo := subBits_borrow_iff [true] bits false
   have hhi := subBits_borrow_iff bits [true] false
-  simp only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,Nat.mul_zero,
+  simp only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,Nat.mul_zero,
     Nat.add_zero] at hlo hhi
   simp only [isOneBits,Bool.and_eq_true,Bool.not_eq_true_eq_eq_false]
   have hlf : (subBits [true] bits false).borrow=false ↔ ¬1<bitValue bits := by
@@ -421,7 +421,7 @@ theorem negateResidueBits_no_borrow {modulus residue : List Bool}
   apply Bool.eq_false_iff.mpr
   intro hb
   have hl := (subBits_borrow_iff modulus residue false).mp hb
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hl
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hl
   omega
 
 /-- The actual bit residue is the additive inverse in the composite ring. -/
@@ -512,7 +512,7 @@ theorem decodeMarkedBits_nonunit {modulus : List Bool} (hN : 0<bitValue modulus)
     exact hg ((decodeMarkedBits_unit_iff hN target targetD baseD).mp he)
   change (if (decodeMarkedBits modulus target targetD baseD).unit.value=true then
     some (decodeMarkedBits modulus target targetD baseD).negative.reduction.remainder else none)=none
-  rw [if_neg hb]
+  rw [ite_eq_right hb]
 
 /-- A unit denominator certifies the actual decoded residue, including
 the original negative sign and the complete marked derivative channel. -/
@@ -593,7 +593,7 @@ theorem decodeMarkedBits_at_local_root {modulus : List Bool} (hN : 0<bitValue mo
   refine ⟨(decodeMarkedBits modulus target targetD baseD).negative.reduction.remainder,?_,?_⟩
   · change (if (decodeMarkedBits modulus target targetD baseD).unit.value=true then
       some (decodeMarkedBits modulus target targetD baseD).negative.reduction.remainder else none)=_
-    rw [if_pos hh.1]
+    rw [ite_eq_left hh.1]
   · rw [hh.2]
     exact SemiprimeIntervalJet.decodedIndex_map_root f _ _ L denom hdenom hk hroot
 
@@ -687,7 +687,7 @@ theorem long_seedMarkedAttemptBudget_le_one {p q m : ℕ}
             (SemiprimeSeedSumAcquisition.seedLength m)≠0 := by
         intro hzero
         exact long_readSeed_saturated hp hq hpq hm g hlong s hzero he
-      simpa only [seedMarkedAttemptBudget,he,if_neg hz,Nat.zero_add] using ih
+      simpa only [seedMarkedAttemptBudget,he,ite_eq_right hz,Nat.zero_add] using ih
     | some outcome =>
       simp only [seedMarkedAttemptBudget,he]
       split <;> omega

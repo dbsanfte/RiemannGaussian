@@ -210,7 +210,7 @@ theorem multiplicity_le_heightCap (rho : NontrivialZetaZero)
       change Real.log (|rho.1.im|+2) <= 20
       linarith
     linarith
-  rw [heightCap,if_neg hL,le_min_iff]
+  rw [heightCap,ite_eq_right hL,le_min_iff]
   constructor
   · apply (le_div_iff₀ (by norm_num [smallUnit] : 0 < smallUnit)).mpr
     simpa only [mul_comm] using small_price rho ht hnear
@@ -310,10 +310,10 @@ theorem signedCeiling_le_reduced_small {u L : ℝ} (hu : 1/2 <= u)
     unfold cost wideUnit
     linarith only [hL,hl]
   have hcap : 1 <= heightCap L := by
-    rw [heightCap,if_neg (show ¬ L <= 60000 by linarith),le_min_iff]
+    rw [heightCap,ite_eq_right (show ¬ L <= 60000 by linarith),le_min_iff]
     exact ⟨hsmall,hwide⟩
   have hcapu : heightCap L <= (4/7)*(cost (9/100) L/smallUnit) := by
-    rw [heightCap,if_neg (show ¬ L <= 60000 by linarith)]
+    rw [heightCap,ite_eq_right (show ¬ L <= 60000 by linarith)]
     exact min_le_right _ _ |>.trans (wideCap_le_four_sevenths_small hL)
   have hs : 2 <= heightCap L+(4/7)*(cost (9/100) L/smallUnit) := by linarith
   have hcoef := mul_le_mul_of_nonneg_left hs
@@ -359,7 +359,7 @@ theorem heightCap_lt_three {L : ℝ} (hLu : L <= 160000) : heightCap L < 3 := by
     apply (div_lt_iff₀ (by norm_num [smallUnit] : 0 < smallUnit)).mpr
     unfold cost smallUnit
     linarith only [hLu,hl]
-  rw [heightCap,if_neg hL]
+  rw [heightCap,ite_eq_right hL]
   exact (min_le_left _ _).trans_lt hp
 
 /-- Every actual candidate in the ORIGINAL fixed strip has multiplicity

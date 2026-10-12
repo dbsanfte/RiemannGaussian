@@ -47,7 +47,7 @@ theorem integral_etaMomentPair_re {μ : Measure (ℝ × ℝ)} {f : ℝ × ℝ �
   integral_re hf
 
 /-- Integrable features give a genuinely integrable signed completed product. -/
-theorem integrable_etaSignedCompletedPair {μ ν : Measure ℝ}
+theorem integrable_etaSignedCompletedPair {μ ν : Measure ℝ} [SFinite ν]
     {fp gp f g : ℝ → ℂ} (hfp : Integrable fp μ) (hgp : Integrable gp ν)
     (hf : Integrable f μ) (hg : Integrable g ν) :
     Integrable (fun p : ℝ × ℝ ↦ etaSignedCompletedPair (fp p.1) (gp p.2) (f p.1) (g p.2))

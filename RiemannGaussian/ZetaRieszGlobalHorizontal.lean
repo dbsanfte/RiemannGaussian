@@ -474,10 +474,10 @@ theorem globalPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
         (modePair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)) else 0
   have hi (tau : NontrivialZetaZero) : IntegrableOn (F tau) (Ioi 0) := by
     by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-    · simpa only [IntegrableOn,F,if_pos ht,mul_left_comm] using
+    · simpa only [IntegrableOn,F,ite_eq_left ht,mul_left_comm] using
         (integrable_horizontal_pair (modeLocation_horizontal y ht) A h16 N y L hu hU).const_mul
           (analyticZetaZeroMultiplicity tau : ℂ)
-    · simp only [F,if_neg ht]
+    · simp only [F,ite_eq_right ht]
       exact integrableOn_zero
   have hn (tau : NontrivialZetaZero) :
       (∫ xi : ℝ in Ioi 0, ‖F tau xi‖) ≤
@@ -486,14 +486,14 @@ theorem globalPair_L1 (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
     · have he (xi : ℝ) : ‖F tau xi‖ = (analyticZetaZeroMultiplicity tau : ℝ)*
           ‖(u : ℂ)^(N+1)*(modePair (modeLocation y tau) A N y L xi/(xi : ℂ)^2)‖ := by
         dsimp only [F]
-        rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+        rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       simp_rw [he]
       rw [integral_const_mul]
       exact (mul_le_mul_of_nonneg_left
         (integral_norm_modePair_bound (modeLocation_horizontal y ht) A h16 N y L hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq
           (by unfold responseConstant zeroWeight; ring)
-    · simp only [F,if_neg ht,norm_zero,integral_zero]
+    · simp only [F,ite_eq_right ht,norm_zero,integral_zero]
       positivity [responseConstant_nonneg,orderBudget_nonneg N,zeroWeight_nonneg y tau]
   have hsum : Summable (fun tau : NontrivialZetaZero => ∫ xi : ℝ in Ioi 0, ‖F tau xi‖) :=
     ((summable_zeroWeight y).mul_left (responseConstant*orderBudget N)).of_nonneg_of_le
@@ -525,9 +525,9 @@ theorem hasSum_globalResponse (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
     apply hs.congr_fun
     intro tau
     by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-    · simp only [if_pos ht,integral_const_mul,horizontalResponse]
+    · simp only [ite_eq_left ht,integral_const_mul,horizontalResponse]
       ring
-    · simp only [if_neg ht,integral_zero,mul_zero]
+    · simp only [ite_eq_right ht,integral_zero,mul_zero]
   have he (xi : ℝ) : (∑' tau, F tau xi) =
       (u : ℂ)^(N+1)*(globalPair A N y L xi/(xi : ℂ)^2) := by
     rw [globalPair,← tsum_div_const,← tsum_mul_left]
@@ -590,11 +590,11 @@ theorem globalResponse_bound (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
         ((analyticZetaZeroMultiplicity tau : ℂ)*horizontalResponse (modeLocation y tau) A N y L) else 0‖ ≤
       (responseConstant*((N : ℝ)+2)^3*(9999/10000 : ℝ)^N)*zeroWeight y tau := by
     by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-    · rw [if_pos ht,mul_left_comm,norm_mul,Complex.norm_natCast]
+    · rw [ite_eq_left ht,mul_left_comm,norm_mul,Complex.norm_natCast]
       exact (mul_le_mul_of_nonneg_left
         (horizontalResponse_weighted_bound (modeLocation_horizontal y ht) A h16 N y hL hu hU)
         (Nat.cast_nonneg (analyticZetaZeroMultiplicity tau))).trans_eq (by unfold zeroWeight; ring)
-    · simp only [if_neg ht,norm_zero]
+    · simp only [ite_eq_right ht,norm_zero]
       positivity [responseConstant_nonneg,zeroWeight_nonneg y tau]
   rw [← hs.tsum_eq]
   apply (norm_tsum_le_tsum_norm hs.summable.norm).trans
@@ -656,9 +656,9 @@ theorem xiDifference_split (y xi : ℝ) {j : ℕ} (hj : 2 ≤ j) :
     apply (hasSum_xiDifference y xi hj).summable.norm.of_norm_bounded
     intro tau
     by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-    · simp only [if_pos ht,norm_zero]
+    · simp only [ite_eq_left ht,norm_zero]
       exact norm_nonneg _
-    · simp only [if_neg ht,le_refl]
+    · simp only [ite_eq_right ht,le_refl]
   rw [horizontalDifference,edgeDifference,← hh.tsum_add he,← (hasSum_xiDifference y xi hj).tsum_eq]
   apply tsum_congr
   intro tau
@@ -678,8 +678,8 @@ theorem hasSum_horizontalSymbol (A : Finset ℕ) (N : ℕ) (y xi : ℝ) :
   apply hs.congr_fun
   intro tau
   by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-  · simp only [if_pos ht,modeSymbol,Finset.mul_sum,mul_assoc]
-  · simp only [if_neg ht,zero_mul,Finset.sum_const_zero]
+  · simp only [ite_eq_left ht,modeSymbol,Finset.mul_sum,mul_assoc]
+  · simp only [ite_eq_right ht,zero_mul,Finset.sum_const_zero]
 
 /-- The surviving symbol contains the original pole and the unpaid
 right-edge zero divisor. The Gamma correction is left explicit. -/
@@ -732,8 +732,8 @@ theorem globalPair_eq (A : Finset ℕ) (N : ℕ) (y L xi : ℝ) :
   apply tsum_congr
   intro tau
   by_cases ht : tau.1.re ≤ (999/1000 : ℝ)
-  · simp only [if_pos ht,modePair]; ring
-  · simp only [if_neg ht,mul_zero,add_zero]
+  · simp only [ite_eq_left ht,modePair]; ring
+  · simp only [ite_eq_right ht,mul_zero,add_zero]
 
 /-- The same integral, after the actual globally summable zero sector
 is removed, with its original retained symbol. -/

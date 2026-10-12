@@ -102,7 +102,7 @@ theorem descend_certified {p q fuel : ℕ} (hp : p.Prime) (hq : q.Prime)
         (ZMod.unitOfCoprime k hc) hdata
       unfold descend
       dsimp only
-      rw [dif_pos hc]
+      rw [dite_eq_left hc]
       cases hk : kernelRoute (ZMod.unitOfCoprime k hc)
           (SemiprimeLehmanCoverage.sixthWidth (p*q)) with
       | factor d =>

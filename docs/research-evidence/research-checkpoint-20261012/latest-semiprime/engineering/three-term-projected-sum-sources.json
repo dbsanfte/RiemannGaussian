@@ -1,0 +1,59 @@
+{
+  "scope": "Classical paid same-base and mixed-three-term arithmetic coverage obstruction on exact original supply; common bounded-degree monic post-exponents included; no native or arbitrary scalar claim.",
+  "sources": [
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+      "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac",
+      "lines": 301
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.pdf",
+      "sha256": "ed4bc9cf6b25de57f61b74e8b82d2462be11103de323b463e91a0c5320ddcda3"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.txt",
+      "sha256": "ee97eab1d2568e720700c9dad1ff6265481b5e5713b33c11eb526f91cb635cc1",
+      "lines": 771
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+      "lines": 2129
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+      "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082",
+      "lines": 119
+    },
+    {
+      "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "lines": 527
+    },
+    {
+      "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+      "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0",
+      "lines": 186
+    },
+    {
+      "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+      "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e",
+      "lines": 226
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStagedSeed.lean",
+      "sha256": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6",
+      "lines": 380
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+      "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28",
+      "lines": 520
+    }
+  ],
+  "primary_inspection": {
+    "url": "https://arxiv.org/pdf/1510.01758v4",
+    "date": "2026-10-08",
+    "sections": "Kelley\u2013Owen Lemmas 2.2\u20132.3 and their subgroup-root counting proof. Only proved square-root bound is used as primary precedent; report includes full direct difference proof. No heuristic logarithmic claim is used."
+  }
+}

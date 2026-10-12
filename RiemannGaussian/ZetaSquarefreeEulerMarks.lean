@@ -46,7 +46,7 @@ private theorem bare_one (S : Finset ℕ) (hS : ∀ a ∈ S, a.Prime) :
     RoughSquarefreeBare.coefficient S 1 1 = 1 := by
   have h : ¬∃ a ∈ S, a ∣ 1 := fun ⟨a, ha, hd⟩ ↦ (hS a ha).not_dvd_one hd
   simp only [RoughSquarefreeBare.coefficient, h, not_false_eq_true, one_dvd,
-    and_self, if_true, squarefree_one]
+    and_self, ite_true, squarefree_one]
 
 private theorem bare_prime (S : Finset ℕ) (hS : ∀ a ∈ S, a.Prime)
     {p : ℕ} (hp : p.Prime) :
@@ -126,7 +126,7 @@ theorem LSeriesHasSum_roughSquarefreeEuler (S : Finset ℕ) (hS : ∀ a ∈ S, a
     (by
       intro p hp
       have hn : p.val ∉ S := fun hm ↦ hp (Finset.mem_subtype.mpr hm)
-      simp only [hn, if_false])
+      simp only [hn, ite_false])
   have ht : (∏ p ∈ T,
       if p.val ∈ S then (1 : ℂ) else 1 + (p : ℂ) ^ (-s)) = 1 := by
     apply Finset.prod_eq_one
@@ -179,7 +179,7 @@ theorem squarefreeEuler_coefficient_eq_dilation (S : Finset ℕ)
         refine ⟨hsfn, ?_⟩
         rw [← hmul, avoidance_mul S hS]
         exact ⟨hpavoid, fun ⟨a, ha, had⟩ ↦ hrough ⟨a, Finset.mem_union_left _ ha, had⟩⟩
-    simp only [RoughSquarefreeBare.coefficient, zetaDilationCoefficient, hd, if_true,
+    simp only [RoughSquarefreeBare.coefficient, zetaDilationCoefficient, hd, ite_true,
       one_dvd, and_true, he]
   · simp [RoughSquarefreeBare.coefficient, zetaDilationCoefficient, hd]
 
@@ -270,7 +270,7 @@ theorem norm_squarefreeEulerMultiplier_le (S : Finset ℕ)
     · exact Nat.prime_of_mem_primeFactors ha
   rw [squarefreeEulerMultiplier, norm_mul, norm_prod, squarefreeEulerBudget]
   apply mul_le_mul (feature_weight_le hs P)
-    (Finset.prod_le_prod (fun _ _ ↦ norm_nonneg _) (fun a ha ↦ local_inverse_bound hσ hs (hpr a ha)))
+    (Finset.prod_le_prod₀ (fun _ _ ↦ norm_nonneg _) (fun a ha ↦ local_inverse_bound hσ hs (hpr a ha)))
     (Finset.prod_nonneg (fun _ _ ↦ norm_nonneg _)) (Real.exp_pos _).le
 
 /-- Each marked factorial moment remains the literal convergent

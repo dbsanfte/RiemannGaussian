@@ -28,9 +28,9 @@ theorem continuous_zetaUpperHyperbolicBoundaryHeatSummand
     Continuous (fun tau : ℝ ↦
       zetaUpperHyperbolicBoundaryHeatSummand x tau rho) := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
+  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
     fun_prop
-  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
     fun_prop
 
 /-- A positive-rate exponential integrates to the inverse rate over positive
@@ -90,7 +90,7 @@ theorem lintegral_ofReal_zetaUpperHyperbolicBoundaryHeatSummand
         apply lintegral_congr
         intro tau
         congr 1
-        rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
+        rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
         dsimp [C, D, alpha]
         ring
       _ = ENNReal.ofReal
@@ -100,10 +100,10 @@ theorem lintegral_ofReal_zetaUpperHyperbolicBoundaryHeatSummand
         congr 1
         rw [MeasureTheory.integral_const_mul,
           integral_exp_neg_mul_Ioi_zero hD,
-          zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+          zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
         dsimp [C, D, alpha]
         ring
-  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper,
+  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper,
       zetaUpperBlaschkeBoundaryDensitySummand, ENNReal.ofReal_zero,
       lintegral_zero]
 

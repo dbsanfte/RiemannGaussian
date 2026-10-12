@@ -234,13 +234,13 @@ theorem rectangularBoundaryIntegral_suzukiXiWeilSpectralPrincipalPart_upper
   change rectangularBoundaryIntegral (-T) T eta 1
       (simplePoleKernel (suzukiXiWeilSpectralResidue t z rho) a) = _
   by_cases hupper : 0 < a.im
-  · rw [if_pos hupper]
+  · rw [ite_eq_left hupper]
     apply rectangularBoundaryIntegral_simplePoleKernel_of_mem
       (suzukiXiWeilSpectralResidue t z rho) a
       hre.1 hre.2 (heta.2.2 rho hrho hupper)
     have hle : a.im ≤ |a.im| := le_abs_self _
     linarith
-  · rw [if_neg hupper]
+  · rw [ite_eq_right hupper]
     apply rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_above
       (suzukiXiWeilSpectralResidue t z rho) a heta.2.1.le
     have himNonpos : a.im ≤ 0 := le_of_not_gt hupper
@@ -355,13 +355,13 @@ theorem rectangularBoundaryIntegral_suzukiXiWeilWindowPrincipalSum_upper
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     rw [two_pi_I_mul_suzukiXiWeilSpectralResidue]
     unfold zetaSuzukiSpectralPSummand
       suzukiXiUpperEvaluationDenominator
     push_cast
     ring
-  · simp only [if_neg hupper, mul_zero]
+  · simp only [ite_eq_right hupper, mul_zero]
 
 /-! ## The actual transformed logarithmic derivative -/
 

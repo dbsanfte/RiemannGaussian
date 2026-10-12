@@ -100,7 +100,7 @@ theorem coordinates_pairRotate (I P : Finset ℕ) (O : ℕ → ℕ → ℝ)
   intro p hp q hq
   rw [sum_changed_two I (fun i => O i p*O i q) _ ha hb hab
     (fun i _ hia hib => by simp [pairRotate,hia,hib])]
-  simp only [pairRotate,ite_true,if_neg (Ne.symm hab)]
+  simp only [pairRotate,ite_true,ite_eq_right (Ne.symm hab)]
   rw [hO p hp q hq]
   have he : (c*O a p+s*O b p)*(c*O a q+s*O b q)+
       (-s*O a p+c*O b p)*(-s*O a q+c*O b q) = O a p*O a q+O b p*O b q := by

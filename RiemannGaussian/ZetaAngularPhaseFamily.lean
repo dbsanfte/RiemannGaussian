@@ -74,7 +74,7 @@ theorem source_le_budget {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs : Summ
       · subst n
         have hz := mul_le_mul_of_nonneg_left
           (ZetaNearOneAngularBound.neg_logDeriv_re_le_sub_zero k hk ρ ht hx hx' hnear) (ha 1)
-        simp only [D, S, hω1, one_mul, tail, if_true, if_false,
+        simp only [D, S, hω1, one_mul, tail, ite_true, ite_false,
           show (1 : ℕ) ≠ 0 by norm_num, zero_add] at hz ⊢
         simp only [div_eq_mul_inv] at hz ⊢
         nlinarith only [hz]
@@ -84,7 +84,7 @@ theorem source_le_budget {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs : Summ
           nlinarith
         have hz := mul_le_mul_of_nonneg_left
           (ZetaNearOneAngularBound.neg_logDeriv_re_le k hk hfreq hx hx') (ha n)
-        simp only [D, tail, hn0, hn1, if_false, add_zero, zero_add]
+        simp only [D, tail, hn0, hn1, ite_false, add_zero, zero_add]
         simp only [div_eq_mul_inv] at hz ⊢
         nlinarith only [hz]
   have hb := (hD.add hsingle).tsum_le_tsum hpoint (hrealSingle.add hU)

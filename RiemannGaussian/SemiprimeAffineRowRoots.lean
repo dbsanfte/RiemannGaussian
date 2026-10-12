@@ -118,7 +118,7 @@ theorem publicPacket_modular_factorization {N m : ℕ} (hm : 0<m) {w : FamilyPac
   have h := quotient_scaled_coordinate (publicPacket_relation hm hw) X
   have hc := congrArg (fun z : ℤ => (z : ZMod N)) h
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   simp only [centeredPacketRow,shiftRow] at hc
   push_cast at hc
   simp only [ZMod.natCast_self,zero_mul,add_zero] at hc
@@ -185,7 +185,7 @@ theorem normalizedResultant_mod {N m : ℕ} (w v : FamilyPacket)
         (packetRoot N m w true-packetRoot N m v true) := by
   have ha := packetRoot_cross_difference (m:=m) w v false hwa hva
   have ht := packetRoot_cross_difference (m:=m) w v true hwt hvt
-  simp only [packetScale,Bool.false_eq_true,if_false,if_true] at ha ht
+  simp only [packetScale,Bool.false_eq_true,ite_false,ite_true] at ha ht
   calc
     _ = ((w.original.a : ZMod N)*(packetOffset m v : ZMod N)-
           (v.original.a : ZMod N)*(packetOffset m w : ZMod N))*
@@ -231,7 +231,7 @@ theorem coordinateRoots_mem {N m : ℕ} {w : FamilyPacket} (hw : w∈publicPacke
   classical
   apply List.mem_toFinset.mpr
   apply List.mem_filterMap.mpr
-  exact ⟨w,hw,by simp only [coordinateEntry,if_pos hu]⟩
+  exact ⟨w,hw,by simp only [coordinateEntry,ite_eq_left hu]⟩
 
 theorem coordinateRoots_card_le (N m : ℕ) (side : Bool) :
     (coordinateRoots N m side).card≤(publicPackets N m).length := by
@@ -375,7 +375,7 @@ theorem smallerPacket_mem_of_pair {N m j : ℕ} (hj : j<m) (hc : j.Coprime m)
   apply List.mem_flatMap.mpr
   refine ⟨j,List.mem_range.mpr hj,?_⟩
   change smallerPacket N m j v∈(if j.Coprime m then residuePackets N m j else [])
-  rw [if_pos hc]
+  rw [ite_eq_left hc]
   apply List.mem_flatMap.mpr
   exact ⟨v,hv,List.mem_cons_self⟩
 

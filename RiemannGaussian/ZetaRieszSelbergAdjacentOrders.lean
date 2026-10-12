@@ -84,7 +84,7 @@ theorem balanced_selbergDefect_eq {u : ℝ} (hu : 1/2 <= u)
     rw [ht]
     ring
   rw [selbergDefect,balanced_joined_eq_completed hN hn,selbergCoefficient_pair hp hq hpq]
-  simp only [completedCoefficient,if_pos hs,<-Complex.ofReal_sub]
+  simp only [completedCoefficient,ite_eq_left hs,<-Complex.ofReal_sub]
   congr 1
   change -log (p*q : ℕ)*VaughanLogAverage.riesz L (p*q)/L-
     (-2*log p*log q/log (p*q : ℕ)) = _
@@ -258,7 +258,7 @@ private theorem balanced_prefixCoefficient {u : ℝ} {N p q : ℕ}
   have hco : ZetaRieszOwnedCells.ownerCofactor (p*q) = p := by
     rw [mul_comm p q]
     exact ZetaRieszPrimeIntervals.ownerCofactor_mul q p hq hp.ne_zero hm
-  rw [prefixCoefficient,hmax,hco,if_pos (Finset.mem_union.mpr (Or.inr hs)),sub_zero]
+  rw [prefixCoefficient,hmax,hco,ite_eq_left (Finset.mem_union.mpr (Or.inr hs)),sub_zero]
   congr 1
   unfold prefixLogCoefficient
   rw [add_comm (log q) (log p)]

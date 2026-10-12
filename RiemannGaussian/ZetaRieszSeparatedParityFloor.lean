@@ -168,7 +168,7 @@ theorem separated_two_hinge_floor (E : Finset ℕ) (σ : ℕ→ℤ)
   have hh := mul_le_mul_of_nonneg_left hB (abs_nonneg w.re)
   rw [← abs_mul] at hh
   have hl := (neg_le_neg hh).trans (neg_abs_le (w.re*B))
-  convert hl using 1 <;> first | rfl | ring
+  convert hl using 1 ; first | rfl | ring
 
 private theorem two_prime_riesz {r s : ℕ} (hr : r.Prime) (hs : s.Prime)
     (hrs : r≠s) (D : ℝ) :

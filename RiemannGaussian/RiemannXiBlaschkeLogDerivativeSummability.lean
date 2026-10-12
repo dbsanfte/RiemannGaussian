@@ -137,8 +137,8 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_le_variation
       unfold logDeriv
       simp only [Pi.div_apply]
       field_simp [hbne]
-    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper,
-      zetaUpperBlaschkeDerivativeVariationSummand, if_pos hupper]
+    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_left hupper]
     unfold zetaUpperBlaschkeLogDerivativeSummand
     change ‖(analyticZetaZeroMultiplicity rho : ℂ) *
         (1 / (z - alpha) - 1 / (z - starRingEnd ℂ alpha))‖ ≤
@@ -155,8 +155,8 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_le_variation
         mul_le_mul_of_nonneg_left hlogBound (Nat.cast_nonneg _)
       _ = C * ((analyticZetaZeroMultiplicity rho : ℝ) *
           (‖b z‖ * ‖logDeriv b z‖)) := by ring
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
-      norm_zero, zetaUpperBlaschkeDerivativeVariationSummand, if_neg hupper,
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
+      norm_zero, zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_right hupper,
       mul_zero]
 
 /-- At every noncolliding upper point, the complete selected signed Blaschke

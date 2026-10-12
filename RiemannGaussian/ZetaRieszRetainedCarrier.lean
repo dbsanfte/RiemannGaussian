@@ -67,7 +67,7 @@ theorem residualMask_eq_retained (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
   have hnS := (Finset.mem_sdiff.mp hn).1
   have hc : finiteCoefficient u N K n = residualCoefficient
       (ZetaRieszAnnulusJoint.intermediatePrimes u N) (SquarefreeVaughanLogSource.length u N) N n := by
-    rw [finiteCoefficient_eq_mask_sub_assigned,if_pos hnS]
+    rw [finiteCoefficient_eq_mask_sub_assigned,ite_eq_left hnS]
     unfold residualCoefficient assignedCoefficient
     push_cast
     ring
@@ -168,7 +168,7 @@ theorem eventually_all_heights_arithmetic_error {u ε : ℝ}
       ε ≤ ‖ZetaRieszJointCofactor.arithmeticRemainder u (y j) j - retainedRemainder u (y j) j‖ := by
     apply hf.mono
     intro j hj
-    simpa only [y, dif_pos hj] using Classical.choose_spec hj
+    simpa only [y, dite_eq_left hj] using Classical.choose_spec hj
   have ht := (tendsto_arithmetic_sub_retained_moving y hu huh).norm
   simp only [norm_zero] at ht
   have hsmall : ∀ᶠ j in atTop,

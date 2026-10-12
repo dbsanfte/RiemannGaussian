@@ -96,13 +96,13 @@ def fullSystem {m : ℕ} (d : ℕ) (F : Fin m → ℤ[X]) (n : ℕ) : ℤ[X] :=
 theorem fullSystem_low {m d n : ℕ} (F : Fin m → ℤ[X]) (hn : n ≤ d) :
     fullSystem d F n = 0 := by
   unfold fullSystem
-  exact dif_neg (by omega)
+  exact dite_eq_right (by omega)
 
 /-- Every active original row is recovered without changing its index. -/
 theorem fullSystem_active {m : ℕ} (d : ℕ) (F : Fin m → ℤ[X]) (i : Fin m) :
     fullSystem d F (d + i.val + 1) = F i := by
   unfold fullSystem
-  rw [dif_pos (by have := i.isLt; omega)]
+  rw [dite_eq_left (by have := i.isLt; omega)]
   congr 1
   apply Fin.ext
   change d + i.val + 1 - d - 1 = i.val

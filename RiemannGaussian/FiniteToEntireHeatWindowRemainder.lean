@@ -60,7 +60,7 @@ theorem finset_sum_filter_le_of_pairwiseDisjoint
           exact hother j hj (Multiset.mem_filter.mp hxfilter).2
         rw [htailzero]
         simp [hxi]
-      · rw [Multiset.count_filter, if_neg hxi, zero_add]
+      · rw [Multiset.count_filter, ite_eq_right hxi, zero_add]
         exact ih htail
 
 /-- The multiplicity-counted complex roots of a real polynomial in an open

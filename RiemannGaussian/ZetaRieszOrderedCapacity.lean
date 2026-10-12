@@ -112,7 +112,7 @@ theorem positive_four_eq_cap {p q a r : ℕ}
   have he : (p*(q*(a*r))).primeFactors.erase p = {q,a,r} := by
     simp [hpf,hpq,hpa,hpr]
   rw [← ZetaRieszFourPrimeExact.positiveAllowance_eq hc hL hLhi hLlo,
-    ZetaRieszFourPrimeExact.positiveAllowance,if_pos hs,hmax,he]
+    ZetaRieszFourPrimeExact.positiveAllowance,ite_eq_left hs,hmax,he]
   simp only [Finset.sum_insert,Finset.mem_insert,Finset.mem_singleton,hqa,hqr,har,
     or_self,not_false_eq_true,Finset.sum_singleton]
   have hlog := log_product_four hp hq ha hr
@@ -226,7 +226,7 @@ theorem re_five_atom_eq_three_tents (A : Finset ℕ) (N : ℕ) {p q a b r : ℕ}
   have hnp : ¬(p*(q*(a*(b*r)))).Prime := Nat.not_prime_mul hp.ne_one
     (fun he => hq.ne_one (mul_eq_one.mp he).1)
   rw [re_residual_atom,SquarefreeVaughanLogSource.coefficient,
-    if_pos ⟨hs,hnp⟩,Complex.ofReal_re,hR]
+    ite_eq_left ⟨hs,hnp⟩,Complex.ofReal_re,hR]
   ring
 
 /-- An explicit favorable credit uniform across a cutoff interval,
@@ -702,7 +702,7 @@ theorem log_rational_bounds_sharp {x : ℝ} (hx : 1 ≤ x) (n : ℕ) :
   change Real.log x ≤ 2*((∑ j ∈ Finset.range n, z^(2*j+1)/(2*(j : ℝ)+1))+
     z^(2*n+1)/((2*(n : ℝ)+1)*(1-z^2)))
   rw [div_mul_eq_div_div]
-  convert sub_le_iff_le_add.mp ht using 1 <;> first | rfl | ring
+  convert sub_le_iff_le_add.mp ht using 1 ; first | rfl | ring
 
 /-- The remaining pair of large-prime harmonic denominators can also
 be integrated exactly. The ordered five-prime three-tent symmetry can

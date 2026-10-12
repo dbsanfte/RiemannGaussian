@@ -47,11 +47,11 @@ theorem sieve_eq_product_squarefree {m : ℕ} (hm : Squarefree m) (d : ℕ) :
   unfold sieve
   by_cases hs : Squarefree (m*d)
   · have hh := Nat.squarefree_mul_iff.mp hs
-    rw [if_pos ⟨hh.2.2,hc.mpr hh.1⟩,if_pos hs]
+    rw [ite_eq_left ⟨hh.2.2,hc.mpr hh.1⟩,ite_eq_left hs]
   · have hh : ¬(Squarefree d ∧ ¬∃ p ∈ m.primeFactors, p ∣ d) := by
       rintro ⟨hd,hn⟩
       exact hs (Nat.squarefree_mul_iff.mpr ⟨hc.mp hn,hm,hd⟩)
-    rw [if_neg hh,if_neg hs]
+    rw [ite_eq_right hh,ite_eq_right hs]
 
 /-- The complete squarefree coprimality density, including every
 intersection. It remains inside the signed arithmetic main. -/
@@ -120,7 +120,7 @@ theorem prefix_error_at (S : Finset ℕ) (hS : ∀ p ∈ S, p.Prime)
   have hprod : (∏ p ∈ S, (1+primeSquareCorrectedWeight σ p)) ≤ (3 : ℝ)^S.card := by
     calc
       _ ≤ ∏ _p ∈ S, (3 : ℝ) := by
-        apply Finset.prod_le_prod
+        apply Finset.prod_le_prod₀
         · intro p _
           positivity [primeSquareCorrectedWeight_nonneg σ p]
         · intro p _
@@ -181,7 +181,7 @@ theorem prefix_error (S : Finset ℕ) (hS : ∀ p ∈ S, p.Prime) (X : ℕ) :
       (3 : ℝ)^S.card := by
     calc
       _ ≤ ∏ _p ∈ S, (3 : ℝ) := by
-        apply Finset.prod_le_prod
+        apply Finset.prod_le_prod₀
         · intro p _
           positivity [primeSquareCorrectedWeight_nonneg (3/4) p]
         · intro p _
@@ -970,7 +970,7 @@ theorem ownedShellDiscrepancy_eq_literal (A : Finset ℕ) (N : ℕ) (L y : ℝ)
     have hw : w d=ownedAmplitude N (log p) (log (p*b : ℕ)) d*
         cos (y*(log (p*b : ℕ)+log d))/d := by
       simp only [w,ZetaRieszCofactorDiscrepancy.shellWeight,
-        if_pos (Finset.mem_Ioc.mp hd)]
+        ite_eq_left (Finset.mem_Ioc.mp hd)]
     rw [hw]
     simp only [div_eq_mul_inv,mul_inv_rev]
     ring

@@ -65,18 +65,18 @@ private theorem crossing_term_le (t v a : ℝ) (ha : 0 ≤ a) :
       a*(if t=0 then max (-v) 0 else 0)+a^2*(v^2/(4*|t|)) := by
   by_cases ht0 : t=0
   · subst t
-    simp only [lt_self_iff_false,if_false,if_true,zero_add,abs_zero,mul_zero,
+    simp only [lt_self_iff_false,ite_false,ite_true,zero_add,abs_zero,mul_zero,
       div_zero,add_zero]
     exact le_of_eq (max_neg_mul a v ha)
-  · simp only [if_neg ht0,mul_zero,zero_add]
+  · simp only [ite_eq_right ht0,mul_zero,zero_add]
     by_cases ht : t < 0
-    · rw [if_pos ht,abs_of_neg ht]
+    · rw [ite_eq_left ht,abs_of_neg ht]
       have h := hinge_le_square (a*v) (-t) (by linarith)
       have he : a*v- -t=t+a*v := by ring
       rw [he] at h
       exact h.trans_eq (by ring)
     · have htpos : 0 < t := lt_of_le_of_ne (le_of_not_gt ht) (Ne.symm ht0)
-      rw [if_neg ht,abs_of_pos htpos]
+      rw [ite_eq_right ht,abs_of_pos htpos]
       have h := hinge_le_square (-a*v) t htpos
       have he : -a*v-t=-(t+a*v) := by ring
       rw [he] at h
@@ -102,9 +102,9 @@ theorem zeroDebit_le_crossingCost (K : Finset ℕ) (g : ℕ → ℕ)
   apply Finset.sum_le_sum
   intro c _
   by_cases ht : blockTotal K g t c=0
-  · simp only [ht,if_true,lt_self_iff_false,if_false,zero_add]
+  · simp only [ht,ite_true,lt_self_iff_false,ite_false,zero_add]
     exact le_of_eq (max_neg_mul a _ ha).symm
-  · simp only [if_neg ht,mul_zero]
+  · simp only [ite_eq_right ht,mul_zero]
     split_ifs <;> exact le_max_right _ _
 
 /-- If the signed correlation cannot pay the actual zero-face debit,
@@ -416,11 +416,11 @@ private theorem crossing_term_linear_le (t v a : ℝ) (ha : 0 ≤ a) :
     (if t < 0 then max (t+a*v) 0 else max (-(t+a*v)) 0) ≤
       a*(if t < 0 then max v 0 else max (-v) 0) := by
   by_cases ht : t < 0
-  · simp only [if_pos ht]
+  · simp only [ite_eq_left ht]
     calc
       _ ≤ max (a*v) 0 := max_le_max (by linarith only [ht]) le_rfl
       _ = _ := by simpa only [mul_neg,neg_neg] using max_neg_mul a (-v) ha
-  · simp only [if_neg ht]
+  · simp only [ite_eq_right ht]
     calc
       _ ≤ max (-(a*v)) 0 := max_le_max (by linarith only [ht]) le_rfl
       _ = _ := max_neg_mul a v ha
@@ -435,16 +435,16 @@ theorem crossingCost_le_near_far (K : Finset ℕ) (g : ℕ → ℕ)
   apply Finset.sum_le_sum
   intro c _
   by_cases hn : |blockTotal K g t c| ≤ τ
-  · simp only [if_pos hn,if_neg (not_lt.mpr hn),mul_zero,add_zero]
+  · simp only [ite_eq_left hn,ite_eq_right (not_lt.mpr hn),mul_zero,add_zero]
     exact crossing_term_linear_le _ _ _ ha
   · have hf : τ < |blockTotal K g t c| := lt_of_not_ge hn
     have ht : blockTotal K g t c ≠ 0 := by
       intro h
       rw [h,abs_zero] at hf
       exact (not_lt_of_ge hτ) hf
-    simp only [if_neg hn,if_pos hf,mul_zero,zero_add]
+    simp only [ite_eq_right hn,ite_eq_left hf,mul_zero,zero_add]
     have h := crossing_term_le (blockTotal K g t c) (blockTotal K g v c) a ha
-    simpa only [if_neg ht,mul_zero,zero_add] using h
+    simpa only [ite_eq_right ht,mul_zero,zero_add] using h
 
 /-- Signed correlation AFTER paying every near-margin block. -/
 def thresholdAvailable (K : Finset ℕ) (g : ℕ → ℕ)

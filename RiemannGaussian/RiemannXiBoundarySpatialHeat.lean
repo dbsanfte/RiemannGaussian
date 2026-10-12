@@ -51,9 +51,9 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_eq_heightGaussian
       2 * zetaUpperSpectralHeightGaussianSummand tau rho *
         translatedGaussian tau (zetaSpectralCoordinate rho.1).re x := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper,
+  · rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper,
       zetaUpperSpectralHeightGaussianSummand,
-      zetaUpperSpectralHeightSummand, if_pos hupper,
+      zetaUpperSpectralHeightSummand, ite_eq_left hupper,
       translatedGaussian, Complex.normSq_apply]
     simp only [Complex.sub_re, Complex.ofReal_re, Complex.sub_im,
       Complex.ofReal_im, zero_sub]
@@ -67,9 +67,9 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_eq_heightGaussian
       ring
     rw [hexponent, Real.exp_add]
     ring
-  · rw [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper,
+  · rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper,
       zetaUpperSpectralHeightGaussianSummand,
-      zetaUpperSpectralHeightSummand, if_neg hupper]
+      zetaUpperSpectralHeightSummand, ite_eq_right hupper]
     simp
 
 /-- One boundary heat summand is integrable over its real observation
@@ -130,9 +130,9 @@ theorem continuous_zetaUpperHyperbolicBoundaryHeatSummand_center
     Continuous (fun x : ℝ ↦
       zetaUpperHyperbolicBoundaryHeatSummand x tau rho) := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
+  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
     fun_prop
-  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+  · simp only [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
     fun_prop
 
 /-- The complete transverse Gaussian transform of the upper spectral height

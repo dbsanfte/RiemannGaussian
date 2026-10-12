@@ -62,15 +62,15 @@ theorem selected_cons (S : Finset ℕ) (p : ℕ) (hp : p ∉ S) {r : ℕ}
   have hdp : d p = 0 := by
     by_contra h
     exact hp ((Finset.mem_piAntidiag.mp hd).2 p h)
-  simp only [addRightEmbedding_apply, Pi.add_apply, if_true, hdp, zero_add,
-    if_neg hrp, add_zero]
+  simp only [addRightEmbedding_apply, Pi.add_apply, ite_true, hdp, zero_add,
+    ite_eq_right hrp, add_zero]
   split_ifs with hE
   · rw [Finset.prod_cons]
-    simp only [if_true, hdp, zero_add]
+    simp only [ite_true, hdp, zero_add]
     congr 1
     apply Finset.prod_congr rfl
     intro q hq
-    rw [if_neg (ne_of_mem_of_not_mem hq hp), add_zero]
+    rw [ite_eq_right (ne_of_mem_of_not_mem hq hp), add_zero]
   · simp
 
 theorem selected_single (S : Finset ℕ) {p : ℕ} (hp : p ∈ S)
@@ -88,8 +88,8 @@ theorem selected_single (S : Finset ℕ) {p : ℕ} (hp : p ∈ S)
   apply Finset.sum_congr rfl
   intro j _hj
   by_cases hj : E j
-  · simp only [if_pos hj, coeff_prod_pi]
-  · simp only [if_neg hj, Finset.sum_const_zero, mul_zero]
+  · simp only [ite_eq_left hj, coeff_prod_pi]
+  · simp only [ite_eq_right hj, Finset.sum_const_zero, mul_zero]
 
 /-- Two-coordinate coefficient extraction is exactly the old factorial
 rectangle, not its limiting log-share indicator. -/
@@ -276,7 +276,7 @@ theorem marked_atom_eq_integral {n : ℕ} (hn : Squarefree n) (hn1 : 1 < n)
       SquarefreeVaughanLogSource.coefficient L n*
         (((∑ p ∈ n.primeFactors, markedWeight N n p : ℝ) : ℂ)*
           zetaPrimeLogKernel N s n) by ring, hk,
-    coefficient_eq_primePair_integral L n, if_pos ⟨hn,by omega,hnp⟩]
+    coefficient_eq_primePair_integral L n, ite_eq_left ⟨hn,by omega,hnp⟩]
   simp_rw [labelPair_eq _ _ _ _ _ hr, mul_div_assoc]
   rw [MeasureTheory.integral_const_mul]
   field_simp

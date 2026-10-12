@@ -92,14 +92,14 @@ theorem combinedIndex_half {m : ℕ} {z : ℤ}
       unfold mergedLength
       push_cast
       nlinarith only [hr,hz]
-    exact ⟨false,r,by exact_mod_cast hr₁,by simp only [mergedStart,Bool.false_eq_true,if_false]; omega⟩
+    exact ⟨false,r,by exact_mod_cast hr₁,by simp only [mergedStart,Bool.false_eq_true,ite_false]; omega⟩
   · let r := (z+(m : ℤ)^2).toNat
     have hr : (r : ℤ)=z+(m : ℤ)^2 := Int.toNat_of_nonneg (by omega)
     have hr₁ : (r : ℤ)<(mergedLength m : ℤ) := by
       unfold mergedLength
       push_cast
       nlinarith only [hr,hz₁]
-    exact ⟨true,r,by exact_mod_cast hr₁,by simp only [mergedStart,if_true]; omega⟩
+    exact ⟨true,r,by exact_mod_cast hr₁,by simp only [mergedStart,ite_true]; omega⟩
 
 /-- Invert the known coefficient 1-j modulo the public modulus. -/
 def wrapResidue (m j : ℕ) (z : ℤ) : ℕ :=
@@ -181,7 +181,7 @@ theorem mergedRecovery_length_le_six {G : Type*} (N m t : ℕ)
       (wrappedRecovery N m t k s (unmergeIndex m s.residue k z)).length≤2 := by
     intro k _
     exact wrappedRecovery_length_le_two _ _ _ _ _ _
-  have hh := List.sum_le_card_nsmul
+  have hh := List.sum_le_length_nsmul
     ((mergedWraps m s.residue z).map fun k =>
       (wrappedRecovery N m t k s (unmergeIndex m s.residue k z)).length) 2
     (by intro n hn; obtain ⟨k,hk,rfl⟩ := List.mem_map.mp hn; exact hb k hk)

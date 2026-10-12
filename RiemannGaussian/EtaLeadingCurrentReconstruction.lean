@@ -66,7 +66,7 @@ theorem pairedEtaLeadingCurrentNormalizedGapReturn_tendsto
     apply (normalized_integral_current_gapReturn_tendsto
       (integrable_topPrefixFiniteEnergyHeadKernel rho N) (measurable_fst.add_const _) hpos ha).congr'
     filter_upwards [heq] with h hh
-    simp only [pairedEtaLeadingCurrentNormalizedGapReturn, hh, if_pos hm]
+    simp only [pairedEtaLeadingCurrentNormalizedGapReturn, hh, ite_eq_left hm]
   · have hpos : ∀ᵐ p : ℝ × ℝ ∂(pairedEtaFiniteLogMeasure (N + 2)).prod (pairedEtaFiniteLogMeasure (N + 2)),
         0 ≤ p.1 ∧ 0 ≤ p.2 := by
       filter_upwards [ae_pair_mem_pairedEtaLogSupport_finiteLogMeasure (N + 2)] with p hp
@@ -74,7 +74,7 @@ theorem pairedEtaLeadingCurrentNormalizedGapReturn_tendsto
     apply (normalized_integral_current_gapReturn_tendsto
       (integrable_topPrefixFiniteEnergyFactoredAdjacentMomentKernel rho N) measurable_fst hpos ha).congr'
     filter_upwards [heq] with h hh
-    simp only [pairedEtaLeadingCurrentNormalizedGapReturn, hh, if_neg hm]
+    simp only [pairedEtaLeadingCurrentNormalizedGapReturn, hh, ite_eq_right hm]
 
 /-- Positive endpoint damping preserves genuine integrability of a current. -/
 theorem integrable_current_endpointTilt {μ : Measure (ℝ × ℝ)} {f : ℝ × ℝ → ℝ}

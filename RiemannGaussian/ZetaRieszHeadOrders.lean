@@ -46,7 +46,7 @@ theorem completedMoment_eq_convolution {s : ℂ} (hs : 1 < s.re)
     ((N + 1 : ℕ) : ℂ)).congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, log_mul_kernel]
+  · simp only [ite_eq_left hp, log_mul_kernel]
   · simp [hp]
 
 /-- Exact head convolution: the finite cofactor phases are summed
@@ -137,8 +137,8 @@ theorem norm_ordinaryPrimeMoment_le_euler (m : ℕ) (y : ℝ)
     (by linarith : 1 < (3 / 2 : ℝ) - q)).mul_left (q⁻¹ ^ m)
   have hb (n : ℕ) : ‖f n‖ ≤ w n := by
     by_cases hn : n.Prime
-    · simpa only [f, w, if_pos hn, hs] using norm_zetaPrimeLogKernel_le m s n hq
-    · simp only [f, if_neg hn, norm_zero, w]
+    · simpa only [f, w, ite_eq_left hn, hs] using norm_zetaPrimeLogKernel_le m s n hq
+    · simp only [f, ite_eq_right hn, norm_zero, w]
       unfold zetaPrimeExpWeight
       positivity
   calc

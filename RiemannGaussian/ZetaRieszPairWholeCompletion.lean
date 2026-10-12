@@ -375,7 +375,7 @@ theorem exists_whole_pair_completion_bound :
     obtain ⟨hn,hl,hh⟩ := Finset.mem_filter.mp hn
     obtain ⟨ho,hnot⟩ := hS n hn
     have hi := interior_pair_mem_semiprime ho hnot hl hh
-    simp only [r,Finset.mem_union.mpr (Or.inr hi),if_true,zero_mul]
+    simp only [r,Finset.mem_union.mpr (Or.inr hi),ite_true,zero_mul]
   have hr := hb N S r (by omega : 64≤N) hrmaj y u hu0 hU
   rw [hrzero,sub_zero] at hr
   have hratio : ‖((N+1 : ℕ) : ℂ)/(SquarefreeVaughanLogSource.length u N : ℂ)‖≤1 := by

@@ -45,13 +45,13 @@ theorem pairedEtaCompletedMoebiusCompleteQuotientAggregate_eq_shells
     _ = ∑ q ∈ Finset.Icc 1 (M / (D + 1)), pairedEtaCompletedMoebiusLargeQuotientFamily rho D M q := by
       apply Finset.sum_congr rfl
       intro q hq
-      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, if_pos (Finset.mem_Icc.mp hq).2]
+      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, ite_eq_left (Finset.mem_Icc.mp hq).2]
     _ = ∑ q ∈ Finset.Ico 1 (2 ^ J), pairedEtaCompletedMoebiusLargeQuotientFamily rho D M q := by
       apply Finset.sum_subset hs
       intro q hq hn
       have hl := (Finset.mem_Ico.mp hq).1
       have hnot : ¬q ≤ M / (D + 1) := by simpa only [Finset.mem_Icc, hl, true_and] using hn
-      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, if_neg hnot]
+      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, ite_eq_right hnot]
     _ = _ := (sum_dyadicIntervals _ J).symm
 
 /-- On the cubic dyadic schedule, exactly `k+1` dyadic shells suffice for every retained complete quotient block. -/

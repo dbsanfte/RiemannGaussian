@@ -155,15 +155,15 @@ theorem eventually_uniform_reserve_phase (rho : NontrivialZetaZero)
   have hk : ∀ᶠ N : ℕ in atTop, N ≤ 3 * k N ∧ 5 * k N ≤ 3 * N := by
     filter_upwards [eventually_ge_atTop 2] with N hN
     by_cases hf : N ≤ 3 * f N ∧ 5 * f N ≤ 3 * N
-    · simpa only [k, if_pos hf] using hf
-    · simp only [k, if_neg hf]
+    · simpa only [k, ite_eq_left hf] using hf
+    · simp only [k, ite_eq_right hf]
       omega
   have h := ((tendsto_reserve_weighted_finite rho hrho hexposed huh k hk).add_const
     (analyticZetaZeroMultiplicity rho : ℂ)).norm
   simp only [neg_add_cancel, norm_zero] at h
   filter_upwards [h.eventually (eventually_lt_nhds hε)] with N hN
   intro hlow hhigh
-  simpa only [k, if_pos (And.intro hlow hhigh)] using hN.le
+  simpa only [k, ite_eq_left (And.intro hlow hhigh)] using hN.le
 
 /-- A fixed interior interval of the actual tapered-wing orders. -/
 def reserveOrders (N : ℕ) : Finset ℕ :=

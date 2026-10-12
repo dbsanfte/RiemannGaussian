@@ -231,8 +231,8 @@ theorem recoverPhaseSum_of_equation {G : Type*} {p q m t : ℕ}
     rw [he,Int.mul_ediv_cancel_left _ (by exact_mod_cast ht.ne' : (t : ℤ)≠0)]
     ring
   unfold recoverPhaseSum
-  rw [if_pos hd,hsum,factorSumCandidate_exact hpq,checkedSignal,
-    Nat.gcd_eq_right (dvd_mul_right p q),if_pos]
+  rw [ite_eq_left hd,hsum,factorSumCandidate_exact hpq,checkedSignal,
+    Nat.gcd_eq_right (dvd_mul_right p q),ite_eq_left]
   exact ⟨hp.one_lt,by nlinarith only [hp.pos,hq.one_lt]⟩
 
 /-- Every integral globally verified tag recovers the smaller factor,
@@ -245,8 +245,8 @@ theorem recoverPhaseSum_integral_global {p q m j t : ℕ} {z : ℤ}
     recoverPhaseSum (p*q) m t (progressionSeed (projectedUnit g m) (p*q) m j) z=some p := by
   have hs := phaseSum_eq_sum hp hq hpq.ne hm hsize g hlong hhit hd
   unfold recoverPhaseSum
-  rw [if_pos hd,cachedOffset_seed,hs,factorSumCandidate_exact hpq.le,checkedSignal,
-    Nat.gcd_eq_right (dvd_mul_right p q),if_pos]
+  rw [ite_eq_left hd,cachedOffset_seed,hs,factorSumCandidate_exact hpq.le,checkedSignal,
+    Nat.gcd_eq_right (dvd_mul_right p q),ite_eq_left]
   exact ⟨hp.one_lt,by nlinarith only [hp.pos,hq.one_lt]⟩
 
 /-- A failed phase trial at a verified global tag has fractional phase
@@ -638,7 +638,7 @@ theorem failed_common_column_candidate_budget_zero {p q m r : ℕ}
   have hs := mergedColumn_source hc
   rw [hs.2.2.2.2] at hfail
   have hfrac := failed_phase_nonintegral hp hq hpq hm hsize g hlong hglobal hfail
-  simp only [phaseTrialCandidateBudget,if_neg hfrac]
+  simp only [phaseTrialCandidateBudget,ite_eq_right hfrac]
 
 /-- Follow the actual visited prefix of the once-only controller. Its
 factor-only tail contains no additional quadratic sum candidate calls. -/

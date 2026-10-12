@@ -53,7 +53,7 @@ theorem mem_annulusBand {u : ℝ} {N n : ℕ} (hu : u < Real.exp (-(2 / 3 : ℝ)
     n ∈ annulusBand u N ↔ n ∈ degreeResidualBand u N ∧
       (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 < n ∧
       n < ((ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2) ^ 2 := by
-  simp only [annulusBand, if_pos hu, Finset.mem_filter]
+  simp only [annulusBand, ite_eq_left hu, Finset.mem_filter]
 
 /-- Deleting the lower physical prefix is an exact equality, so the
 annular response equals the upper-truncated original response. -/
@@ -68,7 +68,7 @@ theorem annulusResponse_eq_upper (P : Polynomial ℂ) (N : ℕ) (y : ℝ) {u : �
     ((degreeResidualBand u N).filter (fun n =>
       n < ((ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2) ^ 2))
     (fun n => zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n) u N
-  simpa only [annulusResponse, annulusBand, if_pos hu, Finset.filter_filter, and_comm] using h
+  simpa only [annulusResponse, annulusBand, ite_eq_left hu, Finset.filter_filter, and_comm] using h
 
 /-- The actual full annulus deletion has independently vanishing error
 at source scale. No zero premise is used, and the fallback is unchanged. -/
@@ -92,7 +92,7 @@ theorem tendsto_degree_sub_annulus (P : Polynomial ℂ) (y : ℝ) {u : ℝ} (hu 
     unfold degreeResidualResponse
     rw [← he]
     ring
-  · simpa only [annulusResponse, annulusBand, if_neg huh, degreeResidualResponse,
+  · simpa only [annulusResponse, annulusBand, ite_eq_right huh, degreeResidualResponse,
       sub_self, mul_zero] using (tendsto_const_nhds : Tendsto (fun _ : ℕ => (0 : ℂ)) atTop (𝓝 0))
 
 /-- The complete annular carrier keeps the original source normalization. -/

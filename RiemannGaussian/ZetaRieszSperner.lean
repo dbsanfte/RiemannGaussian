@@ -238,7 +238,6 @@ theorem norm_coefficient_le_middle_layer {L : ℝ} (hL : 0 < L) {n : ℕ}
     have hh := mul_le_mul_of_nonneg_left (abs_riesz_le_middle_layer L hn hcard)
       (div_nonneg hlog hL.le)
     convert hh using 1
-    · rfl
     · ring
     · ring
   · simp only [norm_zero]
@@ -306,7 +305,7 @@ theorem norm_coefficient_le_allowance {L : ℝ} (hL : 0 < L) (n : ℕ) :
   · rw [hc, norm_zero]
     exact middleLayerAllowance_nonneg hL n
   · obtain ⟨hs, hk⟩ := coefficient_ne_zero_support hc
-    rw [middleLayerAllowance, if_pos ⟨hs, hk⟩]
+    rw [middleLayerAllowance, ite_eq_left ⟨hs, hk⟩]
     exact norm_coefficient_le_middle_layer hL hs hk
 
 /-- The complete original signed carrier has a finite antichain

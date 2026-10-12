@@ -184,7 +184,7 @@ theorem residueEnergy_eq_differences {d : Type*} [Fintype d]
   have hg (i j : ℕ) : g i j = g j i := by
     dsimp [g]
     by_cases h : i % q = j % q
-    · simp only [h, if_true]
+    · simp only [h, ite_true]
       simp only [Complex.mul_re, Complex.conj_re, Complex.conj_im]
       ring
     · simp [h, Ne.symm h]
@@ -196,7 +196,7 @@ theorem residueEnergy_eq_differences {d : Type*} [Fintype d]
     simp_rw [Fin.sum_univ_eq_sum_range]
     exact Fin.sum_univ_eq_sum_range (fun i => ∑ j ∈ Finset.range P, g i j) P
   have hdiag : (∑ i ∈ Finset.range P, g i i) = (P : ℝ) := by
-    simp only [g, if_true, Complex.mul_conj, Complex.ofReal_re, ← Complex.sq_norm,
+    simp only [g, ite_true, Complex.mul_conj, Complex.ofReal_re, ← Complex.sq_norm,
       f, norm_mFourier_apply, one_pow, Finset.sum_const, Finset.card_range,
       nsmul_eq_mul, mul_one]
   have hrow (i : ℕ) :
@@ -232,8 +232,8 @@ theorem residueEnergy_eq_differences {d : Type*} [Fintype d]
   apply Finset.sum_congr rfl
   intro i hi
   by_cases hb : i + (h + 1) * q < P
-  · simp only [hb, if_true, one_mul, sub_eq_add_neg, mFourier_add, mFourier_neg, f]
-  · simp only [hb, if_false, zero_mul, Complex.zero_re]
+  · simp only [hb, ite_true, one_mul, sub_eq_add_neg, mFourier_add, mFourier_neg, f]
+  · simp only [hb, ite_false, zero_mul, Complex.zero_re]
 
 /-- Taking the norm only after each full difference sum yields the
 pointwise estimate used by the quantitative mixed-moment step. -/

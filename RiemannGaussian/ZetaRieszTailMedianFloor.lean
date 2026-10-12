@@ -85,11 +85,11 @@ theorem exists_weightedMedian (C : Finset ℕ) (x w : ℕ→ℝ)
 private theorem abs_right_lower (a b x : ℝ) (hab : a≤b) :
     |a-x|+(b-a)*(if x≤a then 1 else -1)≤|b-x| := by
   by_cases hxa : x≤a
-  · rw [if_pos hxa,abs_of_nonneg (sub_nonneg.mpr hxa),
+  · rw [ite_eq_left hxa,abs_of_nonneg (sub_nonneg.mpr hxa),
       abs_of_nonneg (sub_nonneg.mpr (hxa.trans hab))]
     ring_nf
     exact le_rfl
-  · rw [if_neg hxa]
+  · rw [ite_eq_right hxa]
     have h := abs_add_le (a-b) (b-x)
     rw [show a-b+(b-x)=a-x by ring,abs_of_nonpos (sub_nonpos.mpr hab)] at h
     linarith only [h]
@@ -97,11 +97,11 @@ private theorem abs_right_lower (a b x : ℝ) (hab : a≤b) :
 private theorem abs_left_lower (a b x : ℝ) (hba : b≤a) :
     |a-x|+(a-b)*(if a≤x then 1 else -1)≤|b-x| := by
   by_cases hax : a≤x
-  · rw [if_pos hax,abs_of_nonpos (sub_nonpos.mpr hax),
+  · rw [ite_eq_left hax,abs_of_nonpos (sub_nonpos.mpr hax),
       abs_of_nonpos (sub_nonpos.mpr (hba.trans hax))]
     ring_nf
     exact le_rfl
-  · rw [if_neg hax]
+  · rw [ite_eq_right hax]
     have h := abs_add_le (a-b) (b-x)
     rw [show a-b+(b-x)=a-x by ring,abs_of_nonneg (sub_nonneg.mpr hba)] at h
     linarith only [h]
@@ -158,7 +158,7 @@ def weightedMedian (C : Finset ℕ) (x w : ℕ→ℝ) : ℝ :=
 theorem weightedMedian_spec (C : Finset ℕ) (x w : ℕ→ℝ)
     (hw : ∀ i∈C,0≤w i) : IsWeightedMedian C x w (weightedMedian C x w) := by
   by_cases hC : C.Nonempty
-  · rw [weightedMedian,dif_pos ⟨hC,hw⟩]
+  · rw [weightedMedian,dite_eq_left ⟨hC,hw⟩]
     exact (Classical.choose_spec (exists_weightedMedian C x w hC hw)).2
   · have he := Finset.not_nonempty_iff_eq_empty.mp hC
     simp [IsWeightedMedian,he]
@@ -184,7 +184,7 @@ private theorem abs_affine_eq (T V a : ℝ) :
     |T+a*V|=|V| * |a-(-T/V)|+(if V=0 then |T| else 0) := by
   by_cases hV : V=0
   · simp [hV]
-  · rw [if_neg hV,add_zero]
+  · rw [ite_eq_right hV,add_zero]
     have he : T+a*V=V*(a-(-T/V)) := by field_simp; ring
     rw [he,abs_mul]
 

@@ -74,7 +74,7 @@ theorem coefficient_three_pair_saturated {p q r : ℕ}
     (hbc : Real.log q+Real.log r ≤ L) (ht : L ≤ Real.log (p*(q*r) : ℕ)) :
     SquarefreeVaughanLogSource.coefficient L (p*(q*r)) =
       ((Real.log (p*(q*r) : ℕ)/L*(Real.log (p*(q*r) : ℕ)-L) : ℝ) : ℂ) := by
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos (product_data hp hq hr hpq hpr hqr),
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left (product_data hp hq hr hpq hpr hqr),
     riesz_three_primes_eq_difference L hp hq hr hpq hpr hqr,
     tripleDifference_eq_lower_gap (Real.log_natCast_nonneg p) (Real.log_natCast_nonneg q)
       (Real.log_natCast_nonneg r) hab hac hbc (by rwa [log_product hp hq hr] at ht),

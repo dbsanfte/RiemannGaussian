@@ -80,7 +80,7 @@ theorem O1_bound {C : ℝ} (hMV : Zeta23.MVHilbert C) (hC : 0 ≤ C) {Φ : ℝ �
     refine Finset.sum_congr rfl fun n hn => Finset.sum_congr rfl fun m hm => ?_
     by_cases hnm : n = m
     · simp [hnm]
-    · simp only [if_neg hnm]
+    · simp only [ite_eq_right hnm]
       have hθ : Real.log n - Real.log m ≠ 0 := by
         have hn1 := one_le_of_mem_primeRange hn
         have hm1 := one_le_of_mem_primeRange hm

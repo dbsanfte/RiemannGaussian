@@ -198,7 +198,7 @@ private theorem recoverColumns_none_of_units (N : ℕ) (leaves : ℕ → List �
   | nil => rfl
   | cons c tail ih =>
     rcases c with ⟨j, v⟩
-    rw [recoverColumns, if_pos (hu (j, v) (by simp))]
+    rw [recoverColumns, ite_eq_left (hu (j, v) (by simp))]
     exact ih (fun c hc => hu c (List.mem_cons_of_mem _ hc))
 
 /-- The compressed prefix has exactly the same complete no-small-factor
@@ -293,7 +293,7 @@ theorem factorByBatchCover_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
     ∃ d, factorByBatchCover (p*q) B = some d := by
   by_cases hearly : B < 4 ∨ (p*q).sqrt^2 = p*q
   · obtain ⟨d, hd⟩ := SemiprimeLehmanCoverage.factorByCover_semiprime hp hq hpq hbudget hlower
-    exact ⟨d, by simpa only [factorByBatchCover, if_pos hearly] using hd⟩
+    exact ⟨d, by simpa only [factorByBatchCover, ite_eq_left hearly] using hd⟩
   · have hB : 4 ≤ B := by omega
     have hsquare : (p*q).sqrt^2 ≠ p*q := fun h => hearly (Or.inr h)
     have hstrict : p < q := by
@@ -303,12 +303,12 @@ theorem factorByBatchCover_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
       rw [← heq]
       simp [← pow_two]
     cases hprefix : factorPrefix (p*q) B with
-    | some d => exact ⟨d, by simp only [factorByBatchCover, if_neg hearly, hprefix]⟩
+    | some d => exact ⟨d, by simp only [factorByBatchCover, ite_eq_right hearly, hprefix]⟩
     | none =>
       have hclear := prefix_none_implies_clear (sixth_budget_prefix_below_input hB hlower) hprefix
       obtain ⟨d, hd⟩ := SemiprimeLehmanCoverage.factorAfterPrefix_succeeds
         hp hq hstrict (by omega) hbudget hclear
-      exact ⟨d, by simpa only [factorByBatchCover, if_neg hearly, hprefix] using hd⟩
+      exact ⟨d, by simpa only [factorByBatchCover, ite_eq_right hearly, hprefix] using hd⟩
 
 /-- One public input; the width is obtained solely from its sixth-power
 budget. The centre-coupled complement still exceeds the target work. -/

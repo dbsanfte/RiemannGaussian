@@ -47,8 +47,8 @@ theorem pairedEtaMoebiusArithmeticDivisor_log_eq {M l : ℕ} (hM : 1 < M)
       intro p hp
       have hp1 : p.1 ≤ l := Nat.le_of_dvd (Finset.mem_Icc.mp hl).1
         ⟨p.2, (Nat.mem_divisorsAntidiagonal.mp hp).1.symm⟩
-      rw [if_pos (hp1.trans (Finset.mem_Icc.mp hl).2)]
-      simp only [pairedEtaMoebiusTrialLogWeight, if_pos hM]
+      rw [ite_eq_left (hp1.trans (Finset.mem_Icc.mp hl).2)]
+      simp only [pairedEtaMoebiusTrialLogWeight, ite_eq_left hM]
       ring
     _ = _ := by
       rw [Finset.sum_sub_distrib, ← Finset.sum_div, real_moebius_eta_source (Finset.mem_Icc.mp hl).1]

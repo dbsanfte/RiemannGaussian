@@ -264,7 +264,7 @@ theorem normalized_residual_of_missing_kernel (A : Finset ℕ) (N : ℕ) (y : �
     linarith
   have hc : ‖residualCoefficient A L N n‖ ≤ β * zetaMoebiusLogMajorant n := by
     rw [residualCoefficient, norm_mul, Complex.norm_real, Real.norm_eq_abs,
-      boundedShare, if_pos ⟨hn, hn1, hnp⟩, abs_of_nonneg hβ]
+      boundedShare, ite_eq_left ⟨hn, hn1, hnp⟩, abs_of_nonneg hβ]
     exact mul_le_mul_of_nonneg_left (SquarefreeVaughanLogSource.norm_coefficient_le hL0 n) hβ
   have hb : u ^ (N + 1) * β * ‖zetaPrimeLogKernel N (3 / 2 + Complex.I * y) n‖ ≤
       (r^N + lowerRate ^ N) * zetaPrimeExpWeight (1+1/262144) n := by

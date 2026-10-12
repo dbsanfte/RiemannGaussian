@@ -30,7 +30,7 @@ theorem summable_vonMangoldt_div_sq :
   rw [LSeries.norm_term_eq]
   by_cases hn : n = 0
   · simp [hn]
-  · rw [if_neg hn]
+  · rw [ite_eq_right hn]
     simp only [Complex.norm_real, Real.norm_eq_abs,
       abs_of_nonneg ArithmeticFunction.vonMangoldt_nonneg]
     norm_num [Real.rpow_two]

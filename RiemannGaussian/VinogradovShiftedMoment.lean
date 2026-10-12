@@ -186,7 +186,7 @@ omit [Fintype ι] in
 theorem tupleWeight_norm_le_one (s : ℕ) (w : ι → ℂ) (hw : ∀ i, ‖w i‖ ≤ 1)
     (x : Fin s → ι) : ‖tupleWeight s w x‖ ≤ 1 := by
   rw [tupleWeight, norm_prod]
-  exact Finset.prod_le_one (fun _ _ => norm_nonneg _) (fun j _ => hw (x j))
+  exact Finset.prod_le_one₀ (fun _ _ => norm_nonneg _) (fun j _ => hw (x j))
 
 /-- The shifted Fourier coefficient of an actual even weighted moment is
 exactly its full tuple Gram coefficient. -/

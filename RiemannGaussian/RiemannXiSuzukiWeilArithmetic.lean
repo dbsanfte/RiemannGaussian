@@ -407,9 +407,9 @@ theorem suzukiWeilPositivePrimeSample_eq
   · subst n
     simp [ht, suzukiArithmeticPrimeWindow]
   · by_cases hn : n ∈ suzukiArithmeticPrimeWindow t
-    · rw [if_pos hn]
+    · rw [ite_eq_left hn]
       exact suzukiWeilPositivePrimeSample_of_mem hz hn
-    · rw [if_neg hn, sub_zero]
+    · rw [ite_eq_right hn, sub_zero]
       exact suzukiWeilPositivePrimeSample_of_not_mem ht z hn0 hn
 
 /-- The exponential Dirichlet term is literally the `n`th von Mangoldt

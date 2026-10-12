@@ -90,7 +90,7 @@ theorem response_eq_unit_add_remainder (p : Polynomial ℂ) (D : ℕ) (hD : 1 �
         remainder p D S w v N s := by
   have h1 : (1, 1) ∈ pairs D := by simp [pairs, hD]
   have hf : fibre p 1 S N s 1 = -zetaRoughSquarefreeCompositeLogFilter p S N s := by
-    simp only [fibre, fibreCoefficient, one_dvd, if_true]
+    simp only [fibre, fibreCoefficient, one_dvd, ite_true]
     exact zetaRoughSquarefreeFilter_one p S hS N s
   rw [response, (hasSum_response p D S hS w v N hs).tsum_eq,
     ← Finset.add_sum_erase _ _ h1]

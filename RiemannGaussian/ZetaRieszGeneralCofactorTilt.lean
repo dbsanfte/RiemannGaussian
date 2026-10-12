@@ -599,9 +599,9 @@ theorem tendsto_optimized_composite_band (P : Polynomial ℂ) (y : ℝ)
       SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N) n *
         zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n) atTop (𝓝 0) := by
   by_cases h : u = Real.exp (-(1 / 2 : ℝ))
-  · simpa only [optimizedCompositeBand, if_pos h] using
+  · simpa only [optimizedCompositeBand, ite_eq_left h] using
       tendsto_growing_composite_band P y (show 0 < u by linarith) hu1
-  · simpa only [optimizedCompositeBand, if_neg h] using
+  · simpa only [optimizedCompositeBand, ite_eq_right h] using
       tendsto_optimal_composite_band P y hu hu1 h
 
 /-- The optimized class and its complement partition the original
@@ -615,9 +615,9 @@ theorem actual_band_eq_optimized_add_reduced (P : Polynomial ℂ) (N : ℕ) (y L
         SquarefreeVaughanLogSource.coefficient L n *
           zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n := by
   by_cases h : u = Real.exp (-(1 / 2 : ℝ))
-  · simpa only [optimizedCompositeBand, optimizedReducedBand, if_pos h] using
+  · simpa only [optimizedCompositeBand, optimizedReducedBand, ite_eq_left h] using
       actual_band_eq_growing_add_reduced P N y L
-  · simpa only [optimizedCompositeBand, optimizedReducedBand, if_neg h] using
+  · simpa only [optimizedCompositeBand, optimizedReducedBand, ite_eq_right h] using
       actual_band_eq_tilted_add_reduced P N y L u (ZetaRieszCofactorTiltRate.optimalTilt u)
 
 /-- Every hypothetical right-half zero retains its full negative

@@ -71,7 +71,7 @@ theorem inverse_product_bound {σ : ℝ} (hσ : 1 / 2 ≤ σ) (P : ℕ) :
     exact Finset.mem_range.mpr (Finset.mem_filter.mp ha).2
   calc
     _ ≤ ∏ a ∈ P.primeFactors, (2 : ℝ) * (if a < 4 then 2 else 1) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
         (fun a ha => (inverse_le_four hσ (Nat.prime_of_mem_primeFactors ha)).1)
       intro a ha
       split_ifs with h
@@ -174,7 +174,7 @@ theorem cofactorCoefficient_eq_marks (p : ℕ) (T : ℝ) {D : ℕ}
           RoughSquarefreeBare.coefficient {p} d n := by
   rw [Finset.sum_filter]
   by_cases hn : Squarefree n ∧ ¬p ∣ n
-  · rw [cofactorCoefficient, if_pos hn,
+  · rw [cofactorCoefficient, ite_eq_left hn,
       ZetaSquarefreeRieszCompletion.riesz_eq_finite_divisor_cutoff T hD hn.1.ne_zero,
       Complex.ofReal_sum]
     apply Finset.sum_congr rfl

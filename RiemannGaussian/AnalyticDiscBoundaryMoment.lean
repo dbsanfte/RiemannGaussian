@@ -53,9 +53,15 @@ theorem extension_re {f : ℂ → ℂ} {R : ℝ}
     (extension f R w).re = Real.log ‖f w‖ := by
   have hh : InnerProductSpace.HarmonicOnNhd (fun z ↦ Real.log ‖f z‖) (closedBall 0 R) :=
     fun z hz ↦ (hf z hz).harmonicAt_log_norm (hne z hz)
+  have hw' : w ∉ sphere (0 : ℂ) |R| := by
+    intro hs
+    have hlt : dist w 0 < R := hw
+    have heq : dist w 0 = |R| := hs
+    rw [abs_of_pos (pos_of_mem_ball hw)] at heq
+    linarith
   simpa only [extension, smul_eq_mul] using
     (re_circleAverage_herglotzRieszKernel_smul
-      (circleIntegrable_log_norm (pos_of_mem_ball hw).le hf hne) hw).trans
+      (circleIntegrable_log_norm (pos_of_mem_ball hw).le hf hne) hw').trans
       (hh.circleAverage_re_herglotzRieszKernel_smul hw)
 
 /-- The entire complex logarithmic derivative equals the first
@@ -64,6 +70,12 @@ theorem logDeriv_eq_moment {g : ℂ → ℂ} {R : ℝ} (hR : 0 < R)
     (hg : AnalyticOnNhd ℂ g (closedBall 0 R))
     (hne : ∀ z ∈ closedBall 0 R, g z ≠ 0) : logDeriv g 0 = moment g R := by
   have hzero : (0 : ℂ) ∈ ball 0 R := mem_ball_self hR
+  have hnot : ∀ w ∈ ball (0 : ℂ) R, w ∉ sphere (0 : ℂ) |R| := by
+    intro w hw hs
+    have hlt : dist w 0 < R := hw
+    have heq : dist w 0 = |R| := hs
+    rw [abs_of_pos hR] at heq
+    linarith
   have hcc : CircleIntegrable (fun z ↦ (Real.log ‖g z‖ : ℂ)) 0 R := by
     exact ContinuousOn.circleIntegrable hR.le
       ((Complex.ofRealCLM.continuous.comp_continuousOn
@@ -71,10 +83,10 @@ theorem logDeriv_eq_moment {g : ℂ → ℂ} {R : ℝ} (hR : 0 < R)
         sphere_subset_closedBall)
   have hH : HasDerivAt (extension g R) (moment g R) 0 := by
     simpa only [extension, moment, sub_zero, smul_eq_mul] using!
-      hasDerivAt_circleAverage_herglotzRieszKernel_smul hcc hzero
+      hasDerivAt_circleAverage_herglotzRieszKernel_smul hcc (hnot 0 hzero)
   have hHa : AnalyticOnNhd ℂ (extension g R) (ball 0 R) := by
     simpa only [extension, smul_eq_mul] using!
-      analyticOnNhd_circleAverage_herglotzRieszKernel_smul hcc
+      (analyticOnNhd_circleAverage_herglotzRieszKernel_smul hcc).mono hnot
   obtain ⟨L, hL0, hL⟩ := AnalyticDiscLogarithm.exists_logarithm hg hne
   have hLa : AnalyticOnNhd ℂ L (ball 0 R) :=
     (show DifferentiableOn ℂ L (ball 0 R) from

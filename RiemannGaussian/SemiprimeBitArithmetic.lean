@@ -90,7 +90,7 @@ theorem addBits_correct (xs ys : List Bool) (carry : Bool) :
       dsimp only
       simp only [bitValue]
       rw [ih]
-      simp only [bitValue,bitNat,Bool.false_eq_true,if_false] at hc ⊢
+      simp only [bitValue,bitNat,Bool.false_eq_true,ite_false] at hc ⊢
       omega
   | cons x xs ih =>
     cases ys with
@@ -100,7 +100,7 @@ theorem addBits_correct (xs ys : List Bool) (carry : Bool) :
       dsimp only
       simp only [bitValue]
       rw [ih]
-      simp only [bitValue,bitNat,Bool.false_eq_true,if_false] at hc ⊢
+      simp only [bitValue,bitNat,Bool.false_eq_true,ite_false] at hc ⊢
       omega
     | cons y ys =>
       have hc := fullAdder_correct x y carry
@@ -171,9 +171,9 @@ theorem mulBits_correct (xs ys : List Bool) :
   | nil => simp only [mulBits,bitValue,Nat.zero_mul]
   | cons x xs ih =>
     cases x <;> rw [mulBits] <;> dsimp only
-    · simp only [Bool.false_eq_true,if_false,bitValue,bitNat,ih]
+    · simp only [Bool.false_eq_true,ite_false,bitValue,bitNat,ih]
       ring
-    · simp only [if_true,addBits_correct,bitValue,bitNat,ih,Bool.false_eq_true,if_false]
+    · simp only [ite_true,addBits_correct,bitValue,bitNat,ih,Bool.false_eq_true,ite_false]
       ring
 
 /-- Actual intermediate bit-list widths remain linear despite high-zero
@@ -215,7 +215,7 @@ theorem bitValue_lt_width (bits : List Bool) : bitValue bits<2^bits.length := by
   induction bits with
   | nil => simp only [bitValue,List.length_nil,pow_zero,Nat.zero_lt_one]
   | cons bit bits ih =>
-    cases bit <;> simp only [bitValue,bitNat,Bool.false_eq_true,if_false,if_true,
+    cases bit <;> simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,ite_true,
       List.length_cons,pow_succ] <;> omega
 
 /-- Canonical value width never exceeds the physical list length; high

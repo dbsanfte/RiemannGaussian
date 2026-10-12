@@ -37,9 +37,9 @@ theorem zetaSquarefreeDistinctCoefficient_eq_prefix_add_prime (D : ℕ) (hD : 1 
       · rfl
     have ht := zetaMoebiusLogTailCoefficient_eq_primePower_add_distinct D n
     rw [zetaMoebiusLogTailCoefficient_eq_vonMangoldt_add_prefix, hz, zero_add] at ht
-    rw [if_pos hn, zetaSquarefreeDivisibilityPrefixCoefficient, if_pos hn, Finset.prod_empty, ← ht]
+    rw [ite_eq_left hn, zetaSquarefreeDivisibilityPrefixCoefficient, ite_eq_left hn, Finset.prod_empty, ← ht]
     by_cases hp : n.Prime
-    · rw [if_pos hp, ArithmeticFunction.vonMangoldt_apply_prime hp]
+    · rw [ite_eq_left hp, ArithmeticFunction.vonMangoldt_apply_prime hp]
       ring
     · have hpp : ¬IsPrimePow n := fun h ↦ hp (Nat.squarefree_and_prime_pow_iff_prime.mp ⟨hn, h⟩)
       simp [hp, ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hpp]

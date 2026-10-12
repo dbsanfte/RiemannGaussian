@@ -172,7 +172,7 @@ theorem eventually_active_leaf_mass_upper {lo hi owner : ℚ} {B : Cover.Box} {w
     change t*d i+h*(B i).2 ≤ _
     nlinarith only [hlasti i]
   have hprod : (∏ i, outerWidth B t h i/outerLower B t i) ≤ (1+η)^3*V := by
-    have h := Finset.prod_le_prod (s := Finset.univ) (fun i _ => div_nonneg
+    have h := Finset.prod_le_prod₀ (s := Finset.univ) (fun i _ => div_nonneg
       ((mul_pos hβ hNr).le.trans (hwidth' i)) ((mul_pos hα hNr).le.trans (hlower i)))
       (fun i _ => hratio i)
     simpa only [Finset.prod_mul_distrib,Finset.prod_const,Finset.card_univ,Fintype.card_fin] using h

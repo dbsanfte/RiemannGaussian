@@ -94,7 +94,7 @@ theorem quintupleBand_coefficient_nonpos {u : ℝ} {N K n : ℕ}
 /-- The triple fraction and five-prime indicator have disjoint supports. -/
 theorem tripleFraction_eq_zero_on_quintuple {u : ℝ} {N K n : ℕ}
     (hn : n ∈ quintupleBand u N K) : tripleFraction u N K n = 0 := by
-  exact if_neg (Finset.mem_sdiff.mp (quintupleBand_subset_nontriple u N K hn)).2
+  exact ite_eq_right (Finset.mem_sdiff.mp (quintupleBand_subset_nontriple u N K hn)).2
 
 /-- A single suballocation in the actual finite carrier. -/
 def packetSelection (u : ℝ) (N K n : ℕ) : ℝ :=
@@ -174,7 +174,7 @@ theorem tripleDensity_nonneg (u : ℝ) (N K n : ℕ) : 0 ≤ tripleDensity u N K
         omega
       have hcoeff : 0 ≤ (SquarefreeVaughanLogSource.coefficient
           (SquarefreeVaughanLogSource.length u N) n).re := by
-        rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hs, hnp⟩, Complex.ofReal_re,
+        rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hs, hnp⟩, Complex.ofReal_re,
           show -Real.log n*VaughanLogAverage.riesz (SquarefreeVaughanLogSource.length u N) n =
             Real.log n*(-VaughanLogAverage.riesz (SquarefreeVaughanLogSource.length u N) n) by ring,
           hr]
@@ -192,9 +192,9 @@ theorem packetDensity_eq_difference (u : ℝ) (N K n : ℕ) :
     packetDensity u N K n = tripleDensity u N K n-quintupleDensity u N K n := by
   unfold packetDensity tripleDensity quintupleDensity packetSelection
   by_cases hn : n ∈ quintupleBand u N K
-  · rw [if_pos hn, if_pos hn, tripleFraction_eq_zero_on_quintuple hn]
+  · rw [ite_eq_left hn, ite_eq_left hn, tripleFraction_eq_zero_on_quintuple hn]
     ring
-  · rw [if_neg hn, if_neg hn, sub_zero]
+  · rw [ite_eq_right hn, ite_eq_right hn, sub_zero]
 
 private theorem coefficient_real (L : ℝ) (n : ℕ) :
     ((SquarefreeVaughanLogSource.coefficient L n).re : ℂ) =

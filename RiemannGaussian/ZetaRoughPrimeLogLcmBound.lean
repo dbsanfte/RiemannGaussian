@@ -77,7 +77,7 @@ theorem exists_response_lcm_bound (y : ℝ) (hy : 1 < |y|)
         rw [Finset.prod_one_add, Finset.mul_sum]
         exact Finset.sum_congr rfl (fun W _ ↦ by ring)
       _ ≤ (A * lcmSqrtFactorMass P) * ∏ a ∈ S, (1 + 2 * w a) := mul_le_mul_of_nonneg_left
-        (Finset.prod_le_prod (fun a _ ↦ by linarith [hw a])
+        (Finset.prod_le_prod₀ (fun a _ ↦ by linarith [hw a])
           (fun a _ ↦ by linarith [hw a])) (by positivity)
       _ ≤ (A * lcmSqrtFactorMass P) * (Real.exp (2 * primeSquareWeightMass τ) * Real.exp (4 * Real.sqrt R)) :=
         mul_le_mul_of_nonneg_left
@@ -90,7 +90,7 @@ theorem exists_response_lcm_bound (y : ℝ) (hy : 1 < |y|)
         apply hgood
         exact ⟨hsf.squarefree_of_dvd hd, fun a ha haS ↦
           hs ⟨a, haS, (Nat.dvd_of_mem_primeFactors ha).trans hd⟩⟩
-      simp only [coefficient, if_neg h]
+      simp only [coefficient, ite_eq_right h]
     simpa [response, hz] using hnonneg
 
 
@@ -104,9 +104,9 @@ theorem mass_prime_lcm {a : ℕ} (ha : a.Prime) (P : ℕ) :
     lcmSqrtFactorMass (Nat.lcm a P) =
       if a ∣ P then lcmSqrtFactorMass P else lcmSqrtFactorMass a * lcmSqrtFactorMass P := by
   by_cases h : a ∣ P
-  · rw [if_pos h, Nat.lcm_eq_right_iff_dvd.mpr h]
+  · rw [ite_eq_left h, Nat.lcm_eq_right_iff_dvd.mpr h]
   · have hc := ha.coprime_iff_not_dvd.mpr h
-    rw [if_neg h, hc.lcm_eq_mul, lcmSqrtFactorMass_mul hc]
+    rw [ite_eq_right h, hc.lcm_eq_mul, lcmSqrtFactorMass_mul hc]
 
 /-- The logarithm of any selected set of distinct prime divisors is
 bounded by the logarithm of the original positive integer. -/
@@ -165,9 +165,9 @@ theorem sum_prime_log_lcm_mass_le (D : ℕ) {P : ℕ} (hP : 0 < P) :
       have hl := Real.log_natCast_nonneg a
       rw [mass_prime_lcm hap P]
       by_cases hd : a ∣ P
-      · simp only [if_pos hd]
+      · simp only [ite_eq_left hd]
         nlinarith [mul_nonneg hm (mul_nonneg hl haM)]
-      · simp only [if_neg hd, add_zero]
+      · simp only [ite_eq_right hd, add_zero]
         exact le_of_eq (by ring)
     _ = lcmSqrtFactorMass P *
         ((∑ a ∈ zetaSquarePrimesThrough D, Real.log a * lcmSqrtFactorMass a) +
@@ -268,7 +268,7 @@ theorem exists_smallResponse_bound (y : ℝ) (hy : 1 < |y|)
       rw [norm_mul, norm_mul, norm_mul, Complex.norm_real,
         Real.norm_of_nonneg (Real.log_natCast_nonneg a)]
       have hw : ‖(μ d : ℂ)‖ * ‖(μ e : ℂ)‖ * Real.log a ≤ Real.log a := by
-        have h := mul_le_one₀ (hmu d) (norm_nonneg _) (hmu e)
+        have h := (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (hmu d) (norm_nonneg _) (hmu e)
         exact (mul_le_mul_of_nonneg_right h (Real.log_natCast_nonneg a)).trans_eq (one_mul _)
       apply (mul_le_mul hw (hb p N R S (Nat.lcm a (Nat.lcm d e)) hS)
         (norm_nonneg _) (Real.log_natCast_nonneg a)).trans_eq
@@ -441,8 +441,8 @@ theorem response_eq_square_tail (p : Polynomial ℂ) (D : ℕ) (S : Finset ℕ) 
   apply tsum_congr
   intro n
   by_cases h : D ^ 2 < n
-  · simp only [if_pos h]
-  · rw [if_neg h, coefficient_eq_zero_of_le_square D S (by omega), zero_mul]
+  · simp only [ite_eq_left h]
+  · rw [ite_eq_right h, coefficient_eq_zero_of_le_square D S (by omega), zero_mul]
 
 /-- The exact square-cutoff tail is genuinely summable at every positive
 moment order in the original absolute-convergence half-plane. -/
@@ -453,8 +453,8 @@ theorem summable_square_tail (p : Polynomial ℂ) (D : ℕ) (hD : 1 ≤ D)
   apply (RoughPrimeLog.hasSum_response p D hD S hS N hs).summable.congr
   intro n
   by_cases h : D ^ 2 < n
-  · simp only [if_pos h]
-  · rw [if_neg h, coefficient_eq_zero_of_le_square D S (by omega), zero_mul]
+  · simp only [ite_eq_left h]
+  · rw [ite_eq_right h, coefficient_eq_zero_of_le_square D S (by omega), zero_mul]
 
 /-- At the squared divisor schedule the entire normalized source is
 exactly the product tail beyond the fourth power of the original cutoff. -/

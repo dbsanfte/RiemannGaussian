@@ -51,7 +51,7 @@ theorem common_linear_roots {N m : ℕ} (w : FamilyPacket)
   have h := congrArg (fun z : ℤ => (z : ZMod N)) (common_linear_integer m w)
   push_cast at h
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   unfold knownRoot shiftedRoot
   linear_combination h+hr
 
@@ -64,7 +64,7 @@ theorem common_constant_roots {N m : ℕ} (hm : 0<m) {w : FamilyPacket}
   push_cast at h
   simp only [ZMod.natCast_self,zero_mul,add_zero] at h
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   unfold knownRoot shiftedRoot
   linear_combination -h+(w.residue : ZMod N)*hr
 
@@ -382,7 +382,7 @@ theorem prefix_none_coefficient_scan {N m : ℕ} (hm : 0<m) (hcover : m^2<N)
     have hcop := SemiprimeStrassenPrefix.prefix_none_coprime_integer hcover hnone
       (Nat.pos_of_ne_zero hz) hbound
     simp only [SemiprimeGroupSelection.checkedSignal,show N.gcd k=1 from hcop,
-      lt_self_iff_false,false_and,if_false]
+      lt_self_iff_false,false_and,ite_false]
 
 /-- Enlarging the original detector preserves all old successful coefficient and root branches. -/
 theorem recoverLiteralQuadratics_preserves_joined {N m d : ℕ} (hm : 0<m)

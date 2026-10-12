@@ -2,6 +2,7 @@
 const fs = require("node:fs"), vm = require("node:vm"), zlib = require("node:zlib");
 const assert = require("node:assert/strict");
 const crypto = require("node:crypto");
+const pathUtil = require("node:path"), childProcess = require("node:child_process");
 const core = require("../docs/theorem-explorer/graph-core.js");
 const base = (process.argv[2] || "docs/theorem-explorer").replace(/\/$/, "") + "/", context = {window: {}};
 vm.runInNewContext(fs.readFileSync(base + "data.js", "utf8"), context);
@@ -56,5 +57,16 @@ for (const endpoint of data.endpoints) {
   endpoint.roots.forEach(i => all.add(i));
   checked += checkView(all, scope);
 }
-for (const [path, hash] of Object.entries(audit.sourceSha256)) assert.equal(crypto.createHash("sha256").update(fs.readFileSync(path)).digest("hex"), hash, "Source snapshot changed");
+let archivedText = {};
+const archivalInputs = base + "lean433-inputs.json.gz";
+if (fs.existsSync(archivalInputs) && fs.readFileSync("lean-toolchain", "utf8").trim() !== `leanprover/lean4:v${audit.leanVersion}`) {
+  // The complete historical fingerprint is checked before using frozen text.
+  // Ordinary current-root graphs continue to check their actual source files.
+  childProcess.execFileSync("python3", [pathUtil.join(__dirname, "numerical_certificate_checkpoint.py")]);
+  archivedText = JSON.parse(zlib.gunzipSync(fs.readFileSync(archivalInputs))).archivedText;
+}
+for (const [path, hash] of Object.entries(audit.sourceSha256)) {
+  const content = Object.hasOwn(archivedText, path) ? Buffer.from(archivedText[path]) : fs.readFileSync(path);
+  assert.equal(crypto.createHash("sha256").update(content).digest("hex"), hash, "Source snapshot changed");
+}
 console.log(`Checked ${data.endpoints.length} endpoints, ${data.nodes.length} declarations and ${checked} displayed paths against the Lean export.`);

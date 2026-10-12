@@ -360,7 +360,7 @@ theorem publicWeightedExponent_mem_of_residue {N m j : ℕ} (hj : j<m) (hc : j.C
   apply List.mem_flatMap.mpr
   refine ⟨j,List.mem_range.mpr hj,?_⟩
   change w∈(if j.Coprime m then weightedResiduePackets N m j else [])
-  rwa [if_pos hc]
+  rwa [ite_eq_left hc]
 
 theorem recoverWeightedRows_succeeds_of_pair {N m : ℕ} [NeZero N]
     (g : (ZMod N)ˣ) {e f : ℤ}

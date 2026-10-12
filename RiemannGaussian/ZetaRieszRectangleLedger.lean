@@ -66,11 +66,11 @@ theorem rectangleMass_le_owner (N : ℕ) (hN : 1000 ≤ N) {x c : ℝ}
   intro j _
   have hm := mass_nonneg (N + 1) j (by linarith : 0 ≤ 1 - x) (by linarith : 1 - x ≤ 1)
   by_cases hj : N + 1 - j ∈ ownerOrders N
-  · rw [if_pos hj]
+  · rw [ite_eq_left hj]
     apply mul_le_of_le_one_right hm
     exact (Finset.sum_le_sum_of_subset_of_nonneg (Finset.filter_subset _ _)
       (fun h _ _ => mass_nonneg _ _ hc hc1)).trans_eq (mass_total _ _)
-  · rw [if_neg hj]
+  · rw [ite_eq_right hj]
     have he : rectangleOrders N j = ∅ := by
       apply Finset.eq_empty_iff_forall_notMem.mpr
       intro h hh

@@ -59,8 +59,8 @@ theorem riesz_eq_finite_divisor_cutoff (L : ℝ) {D n : ℕ}
       apply Finset.sum_congr rfl
       intro d _
       by_cases hd : d ≤ D
-      · rw [if_pos hd]
-      · rw [if_neg hd, hz d (by omega), mul_zero]
+      · rw [ite_eq_left hd]
+      · rw [ite_eq_right hd, hz d (by omega), mul_zero]
     _ = _ := by
       rw [← Finset.sum_filter, ← Finset.sum_filter]
       congr 1
@@ -81,7 +81,7 @@ theorem completed_riesz_eq_finite_marks (L : ℝ) {D : ℕ}
           RoughSquarefreeBare.coefficient ∅ d n := by
   rw [Finset.sum_filter]
   by_cases hn : Squarefree n
-  · rw [if_pos hn, riesz_eq_finite_divisor_cutoff L hL hn.ne_zero,
+  · rw [ite_eq_left hn, riesz_eq_finite_divisor_cutoff L hL hn.ne_zero,
       Complex.ofReal_sum]
     apply Finset.sum_congr rfl
     intro d _
@@ -127,7 +127,7 @@ theorem original_riesz_eq_finite_marks_add_prime (L : ℝ) (hL0 : 0 < L) {D : �
     SquarefreeVaughanLogSource.coefficient_eq_completed_with_prime hL0]
   congr 1
   by_cases hn : Squarefree n
-  · simp only [if_pos hn, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
+  · simp only [ite_eq_left hn, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
     ring
   · simp [hn]
 

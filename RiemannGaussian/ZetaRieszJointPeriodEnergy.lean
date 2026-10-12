@@ -67,9 +67,9 @@ theorem joint_tail_bound (I : Finset ℕ) (P : ℕ → Finset ℕ)
       |tail (P i) (c i) (x i) L t| ≤
         |∑ p ∈ P i, c i p|+(if t ∈ Ioc (L-hi i) (L-lo i) then B else 0) := by
     by_cases ht : t ∈ Ioc (L-hi i) (L-lo i)
-    · rw [if_pos ht]
+    · rw [ite_eq_left ht]
       exact (hpartial i hiI ht).trans (by linarith [abs_nonneg (∑ p ∈ P i, c i p)])
-    · rw [if_neg ht,add_zero]
+    · rw [ite_eq_right ht,add_zero]
       rcases tail_outside_transition (P i) (c i) (x i) L t (lo i) (hi i) (hx i hiI) ht with he | he
       · rw [he,abs_zero]; exact abs_nonneg _
       · rw [he]
@@ -427,7 +427,7 @@ theorem exists_literal_joint_period_bounds :
     have hb := (hcoef n hn j hjN).2.trans
       (mul_le_mul_of_nonneg_left (pow_le_pow_left₀ (Real.log_natCast_nonneg n) hlog' _) (Nat.cast_nonneg _))
     dsimp only [w,V]
-    rw [dif_pos hn,abs_of_nonneg (by positivity)]
+    rw [dite_eq_left hn,abs_of_nonneg (by positivity)]
     apply div_le_div_of_nonneg_right _ hn0.le
     simpa only [mul_assoc] using mul_le_mul
       (Real.exp_le_exp.mpr (show -Real.log n/2 ≤ -Real.log M/2 by linarith))
@@ -446,7 +446,7 @@ theorem exists_literal_joint_period_bounds :
     apply Finset.sum_congr rfl
     intro j _
     dsimp only [weightedResponse,w]
-    rw [dif_pos hn,Finset.mul_sum]
+    rw [dite_eq_left hn,Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro p _
     ring

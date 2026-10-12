@@ -139,7 +139,7 @@ theorem prefixCoefficient_mixed (A : Finset ℕ) (u : ℝ) (N : ℕ)
   unfold prefixCoefficient
   rw [Finset.sum_eq_single a]
   · rw [Nat.mul_div_cancel_left _ (hA a ha).1.pos,
-      if_pos (hpN.trans_lt ((hA a ha).2.1.trans (hA a ha).2.2))]
+      ite_eq_left (hpN.trans_lt ((hA a ha).2.1.trans (hA a ha).2.2))]
   · intro b hb hba
     have hnd : ¬ b ∣ a * p := by
       intro hd
@@ -149,7 +149,7 @@ theorem prefixCoefficient_mixed (A : Finset ℕ) (u : ℝ) (N : ℕ)
         have hlarge := (hA b hb).2.1
         omega
     have hz : pairLift (SquarefreeVaughanLogSource.length u N) b (a * p) = 0 :=
-      if_neg (fun h => hnd h.1)
+      ite_eq_right (fun h => hnd h.1)
     simp only [hz, ite_self]
   · exact fun h => (h ha).elim
 
@@ -168,7 +168,7 @@ theorem norm_prefixCoefficient_mixed_le (A : Finset ℕ) (u : ℝ) (N : ℕ)
   have hlog : Real.log a ≤ SquarefreeVaughanLogSource.length u N := by
     apply Real.log_le_log (by exact_mod_cast (hA a ha).1.pos)
     exact_mod_cast (hA a ha).2.2.le
-  rw [pairLift, if_pos ⟨dvd_mul_right a p, by
+  rw [pairLift, ite_eq_left ⟨dvd_mul_right a p, by
     simpa only [Nat.mul_div_cancel_left _ (hA a ha).1.pos] using hp⟩,
     Complex.norm_real, Real.norm_eq_abs, abs_div, abs_mul, abs_neg,
     abs_of_nonneg (Real.log_natCast_nonneg (a * p)),

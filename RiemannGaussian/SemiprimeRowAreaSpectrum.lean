@@ -290,14 +290,14 @@ def centerDifference (N : ℕ) : ℤ := centerA N true-centerA N false
 
 theorem centerA_split (N : ℕ) (side : Bool) :
     centerA N side=centerA N false+centerFlag side*centerDifference N := by
-  cases side <;> simp only [centerFlag,centerDifference,Bool.false_eq_true,if_false,if_true]
+  cases side <;> simp only [centerFlag,centerDifference,Bool.false_eq_true,ite_false,ite_true]
   · ring
   · ring
 
 theorem centerB_split (N : ℕ) (side : Bool) :
     centerB N side=centerB N false-centerFlag side*centerDifference N := by
   cases side <;> simp only [centerFlag,centerDifference,centerB,Bool.not_false,
-    Bool.not_true,Bool.false_eq_true,if_false,if_true]
+    Bool.not_true,Bool.false_eq_true,ite_false,ite_true]
   · ring
   · ring
 

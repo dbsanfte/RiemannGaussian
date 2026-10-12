@@ -44,7 +44,7 @@ theorem allocation_tilt {ι : Type*} [DecidableEq ι] (S : Finset ι) (x : ι �
   have hw (d : ι → ℕ) : q^(d p)*allocationWeight S x d = allocationWeight S y d := by
     unfold allocationWeight
     simp only [y, mul_pow, Finset.prod_mul_distrib, ite_pow, one_pow,
-      Finset.prod_ite_eq', if_pos hp]
+      Finset.prod_ite_eq', ite_eq_left hp]
     ring
   simp_rw [hw]
   rw [show (∑ d ∈ Finset.piAntidiag S M, allocationWeight S y d) =
@@ -120,14 +120,14 @@ theorem badAllocationMass_le {ι : Type*} [DecidableEq ι] (S : Finset ι) (x : 
       apply Finset.sum_le_sum
       intro d _
       by_cases hg : GoodAllocation S N d
-      · rw [if_neg (not_not.mpr hg)]
+      · rw [ite_eq_right (not_not.mpr hg)]
         exact Finset.sum_nonneg (fun p _ => by split_ifs <;> first | exact hw d | exact le_rfl)
-      · rw [if_pos hg]
+      · rw [ite_eq_left hg]
         simp only [GoodAllocation, not_forall] at hg
         obtain ⟨p, hp, hbad⟩ := hg
         have hh : 200*d p < N := Nat.lt_of_not_ge hbad
         exact (show allocationWeight S x d =
-          (if 200*d p < N then allocationWeight S x d else 0) from (if_pos hh).symm).trans_le
+          (if 200*d p < N then allocationWeight S x d else 0) from (ite_eq_left hh).symm).trans_le
             (Finset.single_le_sum (f := fun i =>
               if 200*d i < N then allocationWeight S x d else 0)
               (fun i _ => by split_ifs <;> first | exact hw d | exact le_rfl) hp)

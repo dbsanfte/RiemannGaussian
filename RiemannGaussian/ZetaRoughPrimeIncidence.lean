@@ -70,7 +70,7 @@ private theorem marked_prefix_eq (D : ℕ) (S : Finset ℕ)
     congrArg (fun z : ℂ ↦ (-1 : ℂ) ^ W.card * z) (he W hW))
   rw [hsum]
   by_cases han : a ∣ n
-  · simp only [han, if_true]
+  · simp only [han, ite_true]
     exact zetaRoughSquarefreePrefixCoefficient_eq_subsets D S hS n
   · simp [han]
 
@@ -181,7 +181,7 @@ theorem exists_fibre_bound (y : ℝ) (hy : 1 < |y|) {r : ℝ} (hr : 0 < r) (hr1 
       rw [Finset.prod_one_add, Finset.mul_sum]
       exact Finset.sum_congr rfl (fun W _ ↦ by ring)
     _ ≤ (A * w a) * ∏ b ∈ S, (1 + 2 * w b) := mul_le_mul_of_nonneg_left
-      (Finset.prod_le_prod (fun b _ ↦ by linarith [hw b])
+      (Finset.prod_le_prod₀ (fun b _ ↦ by linarith [hw b])
         (fun b _ ↦ by linarith [hw b])) (mul_nonneg hA (hw a))
     _ ≤ (A * w a) *
         (Real.exp (2 * primeSquareWeightMass τ) * Real.exp (4 * Real.sqrt R)) :=

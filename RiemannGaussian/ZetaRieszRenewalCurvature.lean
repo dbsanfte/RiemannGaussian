@@ -83,7 +83,7 @@ theorem factorial_lower_smooth {ell : ℕ} (hell : 2 ≤ ell) (n : ℕ) :
       (f := fun m : Fin (n+1) => if n+1 < (m : ℕ)+ell then smoothCoeff ell m else 0)
       (fun m _ => by split_ifs; exact smoothCoeff_nonneg _ _; rfl) hmem
     have hn : n+1 < n+ell := by omega
-    simp only [if_pos hn] at hsum
+    simp only [ite_eq_left hn] at hsum
     rw [smoothCoeff]
     have hn0 : (0 : ℝ) < n+1 := by positivity
     apply (div_le_div_of_nonneg_right (ih.trans hsum) hn0.le).trans_eq'
@@ -125,13 +125,13 @@ theorem signedCoeff_scaled {ell : ℕ} (hell : 1 ≤ ell) (n : ℕ) :
   by_cases he : ell ≤ n+1
   · have hn : n+1+1-ell = (n+1-ell)+1 := by omega
     rw [hn, Finset.sum_range_succ] at h₁
-    rw [if_pos he, signedCoeff]
+    rw [ite_eq_left he, signedCoeff]
     linarith
   · have hn₀ : n+1-ell = 0 := by omega
     have hn₁ : n+1+1-ell = 0 := by omega
     simp only [hn₀, Finset.sum_range_zero, sub_zero] at h₀
     simp only [hn₁, Finset.sum_range_zero, sub_zero] at h₁
-    rw [if_neg he, signedCoeff]
+    rw [ite_eq_right he, signedCoeff]
     linarith
 
 theorem signedCoeff_nonpos {ell n : ℕ} (hell : 1 ≤ ell) (hn : 0 < n) :
@@ -150,7 +150,7 @@ theorem signedCoeff_strict {ell n : ℕ} (hell : 2 ≤ ell) (hn : ell ≤ n) :
   have hn0 : 0 < n := by omega
   obtain ⟨n,rfl⟩ := Nat.exists_eq_succ_of_ne_zero hn0.ne'
   have hs := signedCoeff_scaled (by omega : 1 ≤ ell) n
-  rw [if_pos hn] at hs
+  rw [ite_eq_left hn] at hs
   have hp : 0 < smoothCoeff ell (n+1-ell) :=
     lt_of_lt_of_le (by positivity) (factorial_lower_smooth hell _)
   have hnn : (0 : ℝ) < n+1 := by positivity
@@ -173,7 +173,7 @@ theorem signedCoeff_euler {ell : ℕ} (hell : 1 ≤ ell) (n : ℕ) :
       -(∑ m ∈ Finset.range (n+2-ell), signedCoeff ell m) := by
   rw [signedCoeff_scaled hell]
   by_cases he : ell ≤ n+1
-  · rw [if_pos he]
+  · rw [ite_eq_left he]
     have hn : n+2-ell = (n+1-ell)+1 := by omega
     rw [hn,sum_signedCoeff]
   · have hn : n+2-ell = 0 := by omega
@@ -210,7 +210,7 @@ theorem roughCoeff_lower {ell n : ℕ} (hell : 1 ≤ ell) (hn : ell ≤ n) :
   have hsum := Finset.single_le_sum
     (f := fun m : Fin (n+1) => if (m : ℕ)+ell ≤ n+1 then roughCoeff ell m else 0)
     (fun m _ => by split_ifs; exact roughCoeff_nonneg _ _; rfl) hmem
-  simp only [zero_add, if_pos hn, roughCoeff] at hsum
+  simp only [zero_add, ite_eq_left hn, roughCoeff] at hsum
   rw [roughCoeff, Nat.cast_succ]
   exact div_le_div_of_nonneg_right hsum (by positivity)
 

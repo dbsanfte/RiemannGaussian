@@ -102,7 +102,7 @@ theorem allowance_eq (m : ℕ) :
     simp [hj])]
   apply Finset.sum_congr rfl
   intro j hj
-  rw [hc, if_pos (by simpa using hj), abs_div]
+  rw [hc, ite_eq_left (by simpa using hj), abs_div]
   simp only [abs_of_nonneg (Nat.cast_nonneg m.factorial : (0 : ℝ) ≤ m.factorial)]
 
 /-- A checked polynomial bound on the actual closed unit cell. -/

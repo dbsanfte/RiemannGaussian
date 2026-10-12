@@ -62,8 +62,8 @@ theorem interior_supply_count {M : ℕ} {lo hi t h b y : ℝ} (ht : 0 < t)
       rw [mul_add,mul_div_cancel₀ _ ht.ne'] at hs
       nlinarith
     exact ZetaRieszFivePrimeCells.cell_products_count ho hqp hm
-      (by simpa only [ZetaRieszJointPrimeCells.supplyCell,if_pos hp] using hn)
-  · simp only [ZetaRieszJointPrimeCells.supplyCell,if_neg hp,Finset.notMem_empty] at hn
+      (by simpa only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_left hp] using hn)
+  · simp only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_right hp,Finset.notMem_empty] at hn
 
 /-- The complete selected adverse population is disjoint from the whole
 favorable family, including ordering and phase boundaries. -/
@@ -162,14 +162,14 @@ theorem supplyCell_log_bounds {t h y : ℝ} {lo H : Fin 4 → ℝ} {n : ℕ}
     (hn : n ∈ ZetaRieszJointPrimeCells.supplyCell t h y lo H) :
     t < Real.log n ∧ Real.log n ≤ t+h := by
   by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
-  · simp only [ZetaRieszJointPrimeCells.supplyCell,if_pos hp] at hn
+  · simp only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_left hp] at hn
     obtain ⟨m,hm,hn⟩ := Finset.mem_biUnion.mp hn
     obtain ⟨p,hp,rfl⟩ := Finset.mem_image.mp hn
     obtain ⟨v,hv,rfl⟩ := Finset.mem_image.mp hm
     have hv0 : (∏ i, v i : ℕ) ≠ 0 := Finset.prod_ne_zero_iff.mpr (fun i _ =>
       (ZetaRieszAllowancePrimeBoxes.logPrimes_bounds (Fintype.mem_piFinset.mp hv i)).1.ne_zero)
     exact (ZetaRieszCoupledWindow.product_log_bounds hv0 hp).2
-  · simp only [ZetaRieszJointPrimeCells.supplyCell,if_neg hp,Finset.notMem_empty] at hn
+  · simp only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_right hp,Finset.notMem_empty] at hn
 
 /-- Both sides of the joint capacity inequality lie in the same literal
 total-log interval; the complete union therefore respects interval disjointness. -/

@@ -71,7 +71,7 @@ theorem pairLift_eq_coefficient_of_cross (A : Finset ℕ) (u : ℝ) (N n : ℕ)
     exact_mod_cast hpX
   have h := ZetaRieszFixedCofactor.coefficient_prime_pair_above_cutoff ha'.1 hp hpa hLa hLp
   rw [Nat.div_mul_cancel had] at h
-  rw [pairLift, if_pos (show a ∣ n ∧ (n / a).Prime from ⟨had, hp⟩)]
+  rw [pairLift, ite_eq_left (show a ∣ n ∧ (n / a).Prime from ⟨had, hp⟩)]
   exact h.symm
 
 /-- The finite incidence sum is an exact mask of the ORIGINAL coefficient,
@@ -88,9 +88,9 @@ theorem sum_crossIncidences_eq_coefficient (A : Finset ℕ) (u : ℝ) (N n : ℕ
       ext b
       simp only [Finset.mem_singleton]
       exact ⟨fun hb => crossIncidences_unique A u N n hA hb ha, fun hb => hb ▸ ha⟩
-    rw [if_pos ⟨a, ha⟩, he, Finset.sum_singleton]
+    rw [ite_eq_left ⟨a, ha⟩, he, Finset.sum_singleton]
     exact pairLift_eq_coefficient_of_cross A u N n hA ha
-  · rw [if_neg hS, Finset.not_nonempty_iff_eq_empty.mp hS, Finset.sum_empty]
+  · rw [ite_eq_right hS, Finset.not_nonempty_iff_eq_empty.mp hS, Finset.sum_empty]
 
 /-- The cross-cutoff series is a literal mask of the original signed
 coefficient. Each actual integer appears only once. -/
@@ -118,10 +118,10 @@ theorem integerCoefficient_eq_cross_add_prefix (A : Finset ℕ) (u : ℝ) (N n :
   intro a _
   by_cases hd : a ∣ n ∧ (n / a).Prime
   · by_cases hX : (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 ≤ n / a
-    · simp only [hd.1, hd.2, hX, true_and, if_true, Nat.not_lt.mpr hX, if_false, add_zero]
-    · simp only [hd.1, hd.2, hX, true_and, if_false, lt_of_not_ge hX, if_true, zero_add]
+    · simp only [hd.1, hd.2, hX, true_and, ite_true, Nat.not_lt.mpr hX, ite_false, add_zero]
+    · simp only [hd.1, hd.2, hX, true_and, ite_false, lt_of_not_ge hX, ite_true, zero_add]
   · have hz : pairLift (SquarefreeVaughanLogSource.length u N) a n = 0 := by
-      simp only [pairLift, if_neg hd]
+      simp only [pairLift, ite_eq_right hd]
     rw [hz]
     split_ifs <;> simp
 
@@ -134,7 +134,7 @@ theorem prefixCoefficient_eq_zero_above (A : Finset ℕ) (u : ℝ) (N n : ℕ)
   apply Finset.sum_eq_zero
   intro a ha
   by_cases hX : n / a < (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2
-  · rw [if_pos hX]
+  · rw [ite_eq_left hX]
     by_cases hd : a ∣ n ∧ (n / a).Prime
     · have he := Nat.mul_div_cancel' hd.1
       have haX := (hA a ha).2
@@ -143,8 +143,8 @@ theorem prefixCoefficient_eq_zero_above (A : Finset ℕ) (u : ℝ) (N n : ℕ)
         (Nat.mul_lt_mul_of_pos_right haX hX0)
       rw [he] at hh
       nlinarith
-    · exact if_neg hd
-  · exact if_neg hX
+    · exact ite_eq_right hd
+  · exact ite_eq_right hX
 
 /-- The exact cross-cutoff integer series converges to the completed prime
 head minus its actual finite prefix. No estimate on that prefix is assumed. -/

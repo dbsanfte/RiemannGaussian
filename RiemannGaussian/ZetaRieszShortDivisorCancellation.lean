@@ -55,11 +55,11 @@ theorem block_hinge_affine {a p R d : ℕ} (ha : Squarefree a)
   have hl := cofactor_log ha hp hda
   unfold pairHinge
   by_cases hs : log (p*a : ℕ)-L ≤ log p
-  · rw [if_pos hs,max_eq_right (by linarith : 0 ≤ log p+log (a/d : ℕ)-L),
+  · rw [ite_eq_left hs,max_eq_right (by linarith : 0 ≤ log p+log (a/d : ℕ)-L),
       max_eq_left (by linarith [log_natCast_nonneg d] : log (a/d : ℕ)-L ≤ 0)]
     linarith
   · have hh := hside.resolve_left hs
-    rw [if_neg hs,max_eq_right (by linarith : 0 ≤ log p+log (a/d : ℕ)-L),
+    rw [ite_eq_right hs,max_eq_right (by linarith : 0 ≤ log p+log (a/d : ℕ)-L),
       max_eq_right (by linarith : 0 ≤ log (a/d : ℕ)-L)]
     ring
 
@@ -348,7 +348,7 @@ theorem unsigned_unit_mem_cancelled {u : ℝ} {N n : ℕ}
     intro hz
     have hc := h.2.1
     simp [hz] at hc
-  rw [cancelledDivisors,if_pos h,blockDivisors]
+  rw [cancelledDivisors,ite_eq_left h,blockDivisors]
   apply Finset.mem_image.mpr
   exact ⟨1,Nat.mem_divisors.mpr ⟨one_dvd _,hR0⟩,by simp⟩
 

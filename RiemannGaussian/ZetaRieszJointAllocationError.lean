@@ -70,7 +70,7 @@ theorem old_allocation_weight_card (A : Finset ℕ) {n : ℕ}
     rw [howner]
     field_simp
   apply (mul_le_mul_of_nonneg_left hm (boundedShare_bounds A N n).1).trans
-  rw [boundedShare, if_pos ⟨hn, hn1, hnp⟩,
+  rw [boundedShare, ite_eq_left ⟨hn, hn1, hnp⟩,
     share_eq_binomial_sum A N hn hn1, Finset.sum_mul]
   calc
     _ ≤ ∑ _p ∈ n.primeFactors, Real.exp (-(N : ℝ)/3200) := by
@@ -82,7 +82,7 @@ theorem old_allocation_weight_card (A : Finset ℕ) {n : ℕ}
           rw [Nat.cast_div (Nat.dvd_of_mem_primeFactors hp') (by exact_mod_cast hpp.ne_zero),
             Real.log_div (by exact_mod_cast hn.ne_zero) (by exact_mod_cast hpp.ne_zero)]
         have hmax : p ≤ largestPrime n := by
-          rw [largestPrime, dif_pos (show n.primeFactors.Nonempty from ⟨p,hp'⟩)]
+          rw [largestPrime, dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp'⟩)]
           exact Finset.le_max' _ _ hp'
         have hl : Real.log p ≤ Real.log (largestPrime n) :=
           Real.log_le_log (by exact_mod_cast hpp.pos) (by exact_mod_cast hmax)
@@ -261,7 +261,7 @@ theorem rawMarkedPacket_riesz_expansion (u y : ℝ) (N K : ℕ) :
       SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N) n*
         ((markedWeight N n p : ℂ)*zetaPrimeLogKernel N (3/2+Complex.I*y) n) by ring,
     marked_kernel hb.squarefree hb.nontrivial,
-    SquarefreeVaughanLogSource.coefficient, if_pos ⟨hb.squarefree, hnp⟩]
+    SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hb.squarefree, hnp⟩]
   simp only [Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
   field_simp [hlog, hL]
 

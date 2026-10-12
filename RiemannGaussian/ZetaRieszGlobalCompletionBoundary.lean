@@ -180,8 +180,8 @@ theorem boundary_re_eq_neg_literal (u y : ℝ) (N : ℕ) {p q : ℕ}
       -log (p*q : ℕ)/2+-log (p*q : ℕ) by ring,exp_add,exp_neg,
         exp_log (by exact_mod_cast Nat.mul_pos hp.pos hq.pos)]
     ring
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩]
-  simp only [semiprimeBoundary,pairWeight,if_pos hq,
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩]
+  simp only [semiprimeBoundary,pairWeight,ite_eq_left hq,
     ← Complex.ofReal_pow,← Complex.ofReal_mul,
     Complex.mul_re,Complex.ofReal_re,Complex.ofReal_im,
     zero_mul,sub_zero,character_re]

@@ -42,7 +42,7 @@ theorem suzukiXiCarrierCayleyBackwardGeometricCoefficientVector_apply_neg
   ext n
   by_cases hnm : n = m
   · subst n
-    simp only [lp.single_apply_self, if_pos]
+    simp only [lp.single_apply_self, ite_eq_left]
   · rw [lp.single_apply_ne]
     · simp [hnm]
     · intro h
@@ -161,7 +161,7 @@ theorem suzukiXiCarrierCayleyForwardGeometricCoefficientVector_apply_pos
   ext n
   by_cases hnm : n = m
   · subst n
-    simp only [lp.single_apply_self, if_pos]
+    simp only [lp.single_apply_self, ite_eq_left]
   · rw [lp.single_apply_ne]
     · simp [hnm]
     · intro h
@@ -351,8 +351,8 @@ theorem inner_suzukiXiCarrierCayleyOffAxisNodeCoefficientVector
         (norm_suzukiXiCarrierCayleyNodeParameter_lt_one_iff sigma).2
           hsigmaUpper
       simp only [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-        suzukiXiCarrierCayleyOffAxisCoefficientKernel, if_pos hrhoUpper,
-        if_pos hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisCoefficientKernel, ite_eq_left hrhoUpper,
+        ite_eq_left hsigmaUpper]
       exact inner_suzukiXiCarrierCayleyBackwardGeometricCoefficientVector
         harho hasigma
     · have hsigmaLower : (zetaSpectralCoordinate sigma.1).im < 0 :=
@@ -365,8 +365,8 @@ theorem inner_suzukiXiCarrierCayleyOffAxisNodeCoefficientVector
         rw [norm_inv]
         exact inv_lt_one_of_one_lt₀ ha
       simp only [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-        suzukiXiCarrierCayleyOffAxisCoefficientKernel, if_pos hrhoUpper,
-        if_neg hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisCoefficientKernel, ite_eq_left hrhoUpper,
+        ite_eq_right hsigmaUpper]
       exact
         inner_suzukiXiCarrierCayleyBackwardGeometricCoefficientVector_forward
           harho hasigmaInv
@@ -382,8 +382,8 @@ theorem inner_suzukiXiCarrierCayleyOffAxisNodeCoefficientVector
         (norm_suzukiXiCarrierCayleyNodeParameter_lt_one_iff sigma).2
           hsigmaUpper
       simp only [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-        suzukiXiCarrierCayleyOffAxisCoefficientKernel, if_neg hrhoUpper,
-        if_pos hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisCoefficientKernel, ite_eq_right hrhoUpper,
+        ite_eq_left hsigmaUpper]
       exact
         inner_suzukiXiCarrierCayleyForwardGeometricCoefficientVector_backward
           harhoInv hasigma
@@ -397,8 +397,8 @@ theorem inner_suzukiXiCarrierCayleyOffAxisNodeCoefficientVector
         rw [norm_inv]
         exact inv_lt_one_of_one_lt₀ hasigmaNorm
       simp only [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-        suzukiXiCarrierCayleyOffAxisCoefficientKernel, if_neg hrhoUpper,
-        if_neg hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisCoefficientKernel, ite_eq_right hrhoUpper,
+        ite_eq_right hsigmaUpper]
       exact inner_suzukiXiCarrierCayleyForwardGeometricCoefficientVector
         harhoInv hasigmaInv
 

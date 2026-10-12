@@ -80,7 +80,7 @@ theorem reciprocalRiesz_bound (t : ℝ) : |reciprocalRiesz t| ≤ 7 := by
       apply le_trans (le_of_eq ?_) hh
       congr 1
       simp only [pairedEtaMoebiusLogHarmonic,pairedEtaMoebiusTrialLogWeight,
-        if_pos hX2,Finset.sum_mul]
+        ite_eq_left hX2,Finset.sum_mul]
       apply Finset.sum_congr rfl
       intro n hn
       field_simp
@@ -137,7 +137,7 @@ theorem finiteDensity_marks (W Q : Finset ℕ)
       SquarefreeCounting.finiteDensity ∅ Q * ∏ p ∈ W, ((p : ℝ)+1)⁻¹ := by
   rw [finiteDensity_product W Q hW hQ,
     finiteDensity_product ∅ Q (by simp) hQ]
-  simp only [Finset.prod_empty,Finset.notMem_empty,if_false,one_mul]
+  simp only [Finset.prod_empty,Finset.notMem_empty,ite_false,one_mul]
   calc
     _ = ∏ p ∈ Q, (if p ∈ W then (p : ℝ)⁻¹ else 1)*
         (1-if p ∈ W then (p : ℝ)⁻¹ else (p : ℝ)⁻¹^2) := by
@@ -147,7 +147,7 @@ theorem finiteDensity_marks (W Q : Finset ℕ)
       apply Finset.prod_congr rfl
       intro p hp
       by_cases hm : p ∈ W
-      · simp only [if_pos hm]
+      · simp only [ite_eq_left hm]
         have hp0 : (p : ℝ) ≠ 0 := by exact_mod_cast (hQ p hp).ne_zero
         have hp1 : (p : ℝ)+1 ≠ 0 := by positivity
         field_simp
@@ -264,7 +264,7 @@ theorem density_convolution :
       field_simp
       ring
     | succ k =>
-      rw [ArithmeticFunction.moebius_apply_prime_pow hp (by omega),if_neg (by omega)]
+      rw [ArithmeticFunction.moebius_apply_prime_pow hp (by omega),ite_eq_right (by omega)]
       simp only [Int.cast_zero,zero_mul,correction,ArithmeticFunction.pdiv_apply,
         ArithmeticFunction.natCoe_apply,ArithmeticFunction.id_apply,mark_prime_power hp,
         Nat.cast_pow]
@@ -279,12 +279,12 @@ theorem markArith_le_inv {a n : ℕ} (ha : Squarefree a) (hd : a ∣ n)
   have hs : a.primeFactors ⊆ n.primeFactors := Nat.primeFactors_mono hd hn
   calc
     _ ≤ ∏ p ∈ a.primeFactors, ((p : ℝ)+1)⁻¹ := by
-      apply Finset.prod_le_prod_of_subset_of_le_one hs
+      apply Finset.prod_le_prod_of_subset_of_le_one₀ hs
       · intro p _; positivity
       · intro p hp _
         exact inv_le_one_of_one_le₀ (by have := Nat.cast_nonneg (α := ℝ) p; linarith)
     _ ≤ ∏ p ∈ a.primeFactors, (p : ℝ)⁻¹ := by
-      apply Finset.prod_le_prod (fun _ _ => by positivity)
+      apply Finset.prod_le_prod₀ (fun _ _ => by positivity)
       intro p hp
       exact inv_anti₀ (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos) (by linarith)
     _ = _ := by
@@ -421,7 +421,7 @@ theorem density_correction_mass :
   have hid K : SquarefreeCounting.finiteDensity ∅ (zetaSquarePrimesThrough K)*
       (∏ p ∈ Nat.primesBelow (K+1), ∑' k : ℕ, correction (p^k)) = 1 := by
     rw [finiteDensity_product ∅ _ (by simp) (zetaSquarePrimesThrough_prime K),hP]
-    simp only [Finset.prod_empty,Finset.notMem_empty,if_false,one_mul]
+    simp only [Finset.prod_empty,Finset.notMem_empty,ite_false,one_mul]
     rw [← Finset.prod_mul_distrib]
     apply Finset.prod_eq_one
     intro p hp
@@ -781,7 +781,7 @@ theorem literal_weight_mass_bound (A B : Finset ℕ)
     have he : (∑ p ∈ ownerPrimes B, |maskedWeight A (ownerRows B) L y scale N n p|) =
         ∑ p ∈ ownerRows B n, |scale*primeWeight A L y N n p| := by
       rw [← Finset.sum_subset hs]
-      · exact Finset.sum_congr rfl (fun p hp => by simp only [maskedWeight,if_pos hp])
+      · exact Finset.sum_congr rfl (fun p hp => by simp only [maskedWeight,ite_eq_left hp])
       · intro p _ hp
         simp [maskedWeight,hp]
     rw [he,Finset.mul_sum]

@@ -889,8 +889,8 @@ private theorem endpoint_atom_bound {u : ℝ} {N : ℕ} (hN : 32 ≤ N)
   have hsieve : sieve (pb.1*pb.2).primeFactors d=1 := by
     rw [sieve_eq_product_squarefree houter] at hz ⊢
     by_cases hs : Squarefree ((pb.1*pb.2)*d)
-    · simp only [if_pos hs]
-    · simp only [if_neg hs,not_true_eq_false] at hz
+    · simp only [ite_eq_left hs]
+    · simp only [ite_eq_right hs,not_true_eq_false] at hz
   have hT : 1 ≤ log (pb.1*pb.2 : ℕ)+log d := by
     have hlo := hg.2.2.2.2.2.2.2.1
     change (39/20 : ℝ)*N ≤ log (pb.1*pb.2 : ℕ)+log d at hlo

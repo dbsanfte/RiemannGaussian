@@ -46,7 +46,7 @@ private theorem population_covered (S : Finset ℕ) (L t h : ℝ) :
   obtain ⟨_,hs,hc,ht,hth,_,hshare⟩ := Finset.mem_filter.mp hn
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hP : largestPrime n ∈ n.primeFactors := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have hpP := Nat.prime_of_mem_primeFactors hP
   have hcard : (n.primeFactors.erase (largestPrime n)).card = 4 := by
@@ -163,7 +163,7 @@ private theorem amplitude_le_window {n : ℕ} (hn : n ≠ 0) {t h : ℝ}
   have hm := mul_le_mul_of_nonneg_right hr (inv_nonneg.mpr hnR.le)
   unfold amplitude
   rw [he]
-  convert hm using 1 <;> first | rfl | ring
+  convert hm using 1 ; first | rfl | ring
 
 /-- The actual positive coefficient costs less than one sixth of the
 window centre. Every original allocation factor is still bounded by one. -/
@@ -174,7 +174,7 @@ theorem coefficient_le {S : Finset ℕ} {L t h : ℝ} (ht : 1 ≤ t) (hhu : h �
   obtain ⟨_,_,hc,htn,hnt,hpos,hshare⟩ := Finset.mem_filter.mp hn
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hP : largestPrime n ∈ n.primeFactors := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have hcard : (n.primeFactors.erase (largestPrime n)).card = 4 := by
     rw [Finset.card_erase_of_mem hP,hc]
@@ -219,7 +219,7 @@ theorem eventually_norm_mass {h : ℝ} (hh : 0 < h) (hhu : h ≤ 1/100000) :
       ((ZetaRieszJointCountFloor.norm_residual_le A L N n).trans (coefficient_le ht hhu hL hLu hn))
       (amplitude_le_window hs.ne_zero htn.le hnt N)
       (by unfold amplitude; positivity) (by positivity : 0 ≤ t/6)
-    convert hb using 1 <;> first | rfl | ring
+    convert hb using 1 ; first | rfl | ring
   have hs := Finset.sum_le_sum hpoint
   rw [← Finset.mul_sum] at hs
   have hb := mul_le_mul_of_nonneg_left (hmass S L t hNt) (by positivity : 0 ≤ t/6*V)

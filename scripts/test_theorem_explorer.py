@@ -271,6 +271,23 @@ def run(output):
             riesz_source.close()
             page.locator("#close-details").click()
             checks.append("Riesz bridge exposes the literal mixed-moment bound, retained source, open scope and exact Lean source line")
+            page.locator("#endpoint").select_option("openai-quasi-rh")
+            external_roots = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])")
+            terminal = next(n for n in external_roots if n["id"] == "RiemannGaussian.ZetaQuasiRHOpenAI.noPersistentError")
+            assert "NoPersistentError" in terminal["statement"]
+            assert "SevenEighthsNonvanishing" not in terminal["statement"]
+            assert all(set(n["axioms"]) <= {"propext", "Classical.choice", "Quot.sound"} for n in external_roots)
+            page.locator("#search").fill(terminal["id"])
+            page.locator(".search-result").first.click()
+            assert terminal["statement"].strip() == page.locator("#details pre").inner_text().strip()
+            with page.expect_popup() as discharge_opened:
+                page.locator("#details .source-button").click()
+            discharge_source = discharge_opened.value
+            discharge_source.wait_for_selector(".source-line:target")
+            assert "theorem noPersistentError" in discharge_source.locator(".source-line:target").inner_text()
+            discharge_source.close()
+            page.locator("#close-details").click()
+            checks.append("integrated OpenAI endpoint exposes the unconditional frozen terminal, standard axioms and exact Lean source")
             page.locator("#endpoint").select_option("union")
             page.locator("#overview").click()
             page.locator("#help-button").click()

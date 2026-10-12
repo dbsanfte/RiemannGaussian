@@ -103,7 +103,7 @@ theorem norm_farTerm_le_reserve {B η : ℝ} (hB : 0 < B) (hη : 0 < η)
       (zetaGlobalPoissonSummand (s + (η : ℂ)) ρ - nearPoisson η s ρ) := by
   by_cases hd : ‖s - ρ.1‖ < η
   · simp [farTerm, nearPoisson, hd, not_le.mpr hd]
-  · simpa only [nearPoisson, hd, if_false, sub_zero] using norm_farTerm_le hB hη hs ρ
+  · simpa only [nearPoisson, hd, ite_false, sub_zero] using norm_farTerm_le hB hη hs ρ
 
 /-- The genuine nearby Poisson reserve is summable as part of the same
 complete positive xi mass, with its original distance cutoff unchanged. -/
@@ -184,7 +184,7 @@ theorem nearPoisson_lower {η : ℝ} (hη : 0 < η) {s : ℂ} (hs : 1 ≤ s.re)
   have hh := mul_le_mul_of_nonneg_left hp (Nat.cast_nonneg (α := ℝ) (analyticZetaZeroMultiplicity ρ))
   have he : s - ρ.1 + (η : ℂ) = s + (η : ℂ) - ρ.1 := by ring
   simp only [Complex.sub_re, he] at hh
-  rw [nearPoisson, if_pos hd]
+  rw [nearPoisson, ite_eq_left hd]
   convert! hh using 1
   · ring
   · simp only [zetaGlobalPoissonSummand, Complex.add_re, Complex.ofReal_re]

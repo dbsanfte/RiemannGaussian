@@ -123,9 +123,9 @@ theorem core_floor_without_saturated_charge (u y : ℝ) (N K : ℕ) :
   have hc := (Finset.mem_filter.mp hn).1
   have hs := (Finset.mem_filter.mp hn).2
   by_cases hz : SaturatedActive (SquarefreeVaughanLogSource.length u N) n
-  · rw [if_neg (not_not.mpr hz),fullTranslatedAtom_eq_zero hc hz y]
+  · rw [ite_eq_right (not_not.mpr hz),fullTranslatedAtom_eq_zero hc hz y]
     norm_num
-  · rw [if_pos hz,fullTranslatedAtom_eq_original hc hs y]
+  · rw [ite_eq_left hz,fullTranslatedAtom_eq_original hc hs y]
     exact (ZetaRieszSignedSperner.residual_atom_retained_bounds (intermediatePrimes u N)
       (SquarefreeVaughanLogSource.length_pos u N) y N n).1
 
@@ -332,7 +332,7 @@ theorem innerFloorCost_le_quarter {L : ℝ} (hL : 0 < L) (y : ℝ) {n : ℕ}
   have hs : Squarefree n ∧ 2 ≤ n.primeFactors.card := ⟨h.1,by have := h.2.1; omega⟩
   have hb : (Real.log n/L)*max 0 (L-Real.log (outerPart (Real.log n-L) n)) ≤
       (1/4 : ℝ)*ZetaRieszSignedSperner.signedAllowance L n 0 := by
-    rw [ZetaRieszSignedSperner.signedAllowance,if_pos hs]
+    rw [ZetaRieszSignedSperner.signedAllowance,ite_eq_left hs]
     have hg := mul_le_mul_of_nonneg_left hgap ht
     have hh := mul_le_mul_of_nonneg_left hcap (mul_nonneg ht hm)
     nlinarith
@@ -545,8 +545,8 @@ theorem floorCost_eq_zero_of_prefix_credit {L : ℝ} (hL : 0 < L) (y : ℝ) {n :
     (h : TwoOuterPrimePrefix L n) (hcredit : primePrefixResponse L n ≤ 0)
     (hphase : 0 ≤ Real.cos (y*Real.log n)) : floorCost L y n = 0 := by
   by_cases hs : SaturatedActive L n ∨ ReflectedPrefixSaturated L n
-  · simp only [floorCost,if_pos hs]
-  · rw [floorCost,if_neg hs,if_pos h]
+  · simp only [floorCost,ite_eq_left hs]
+  · rw [floorCost,ite_eq_right hs,ite_eq_left h]
     exact max_eq_right (mul_nonpos_of_nonpos_of_nonneg
       (mul_nonpos_of_nonneg_of_nonpos
         (div_nonneg (Real.log_natCast_nonneg n) hL.le) hcredit) hphase)

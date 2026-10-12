@@ -104,15 +104,15 @@ theorem eventually_unpaired_eq_three_add_higher (P : Polynomial ℂ) (y : ℝ)
   intro n hn
   by_cases h3 : n.primeFactors.card = 3
   · have h4 : ¬ 4 ≤ n.primeFactors.card := by omega
-    simp only [if_pos h3, if_neg h4, add_zero]
+    simp only [ite_eq_left h3, ite_eq_right h4, add_zero]
   · by_cases h4 : 4 ≤ n.primeFactors.card
-    · simp only [if_neg h3, if_pos h4, zero_add]
+    · simp only [ite_eq_right h3, ite_eq_left h4, zero_add]
     · have hc : SquarefreeVaughanLogSource.coefficient
           (SquarefreeVaughanLogSource.length u N) n = 0 := by
         by_contra hc
         have := hdegree n hn hc
         omega
-      simp only [if_neg h3, if_neg h4, hc, zero_mul, zero_add]
+      simp only [ite_eq_right h3, ite_eq_right h4, hc, zero_mul, zero_add]
 
 /-- The complete head and explicit pair correction remain coupled with
 both actual higher-degree classes. The new partition is a literal identity,

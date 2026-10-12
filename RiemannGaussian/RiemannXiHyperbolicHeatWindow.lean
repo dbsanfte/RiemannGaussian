@@ -26,10 +26,10 @@ theorem zetaUpperHyperbolicHeatSummand_nonneg
     (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperHyperbolicHeatSummand z tau rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     exact mul_nonneg (Nat.cast_nonneg _)
       (upperHalfPlaneHyperbolicHeatIntegrand_pos hz hupper htau).le
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
 
 /-- A selected upper zero contributes strictly positively. -/
 theorem zetaUpperHyperbolicHeatSummand_pos
@@ -37,7 +37,7 @@ theorem zetaUpperHyperbolicHeatSummand_pos
     (rho : NontrivialZetaZero)
     (hupper : 0 < (zetaSpectralCoordinate rho.1).im) :
     0 < zetaUpperHyperbolicHeatSummand z tau rho := by
-  rw [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+  rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
   exact mul_pos (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
     (upperHalfPlaneHyperbolicHeatIntegrand_pos hz hupper htau)
 
@@ -103,7 +103,7 @@ theorem riemannXiUpperHyperbolicHeatWindow_eq_zero_iff
   · intro hupper
     apply (Finset.sum_eq_zero_iff_of_nonneg hnonneg).mpr
     intro rho hrho
-    rw [zetaUpperHyperbolicHeatSummand, if_neg (hupper rho hrho)]
+    rw [zetaUpperHyperbolicHeatSummand, ite_eq_right (hupper rho hrho)]
 
 /-- Once a window contains one upper zero, its heat sum is strictly
 positive. -/

@@ -21,13 +21,13 @@ noncomputable section
 theorem moebius_prime_mul_eq_not_dvd {p : ℕ} (hp : p.Prime) (d : ℕ) :
     μ (p * d) = if p ∣ d then 0 else -μ d := by
   by_cases hd : p ∣ d
-  · rw [if_pos hd]
+  · rw [ite_eq_left hd]
     apply ArithmeticFunction.moebius_eq_zero_of_not_squarefree
     intro hs
     apply (Nat.squarefree_iff_prime_squarefree.mp hs) p hp
     obtain ⟨k, rfl⟩ := hd
     exact ⟨k, by ring⟩
-  · rw [if_neg hd, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime
+  · rw [ite_eq_right hd, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime
       (hp.coprime_iff_not_dvd.mpr hd), ArithmeticFunction.moebius_apply_prime hp]
     ring
 

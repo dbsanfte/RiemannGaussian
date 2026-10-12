@@ -1047,9 +1047,9 @@ theorem literalCutoffPacket_eq_rows (u y : ℝ) (j : ℕ) :
   obtain ⟨_,hs,_,_,hH,_,_,_,_,hc,_hsmall,_,_⟩ := Finset.mem_filter.mp hpb
   by_cases hcore : pb.1*(pb.2*e) ∈ ZetaRieszParityPacket.coreBand u
       (dyadicMomentOrder j) (dyadicPrimeCount j)
-  · simp only [if_pos hcore]
+  · simp only [ite_eq_left hcore]
     exact (ZetaRieszRoughCutoffRows.cutoff_row_atom_eq _ hs hc hH).symm
-  · simp only [if_neg hcore,mul_zero]
+  · simp only [ite_eq_right hcore,mul_zero]
 
 /-- Concrete independent signed estimate on the ORIGINAL finite prime
 and divisor sum, not a density model or a conditional sieve hypothesis. -/
@@ -1407,7 +1407,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP,dvd_mul_right _ _,hs.ne_zero⟩
   have hne : (p*(B*e)).primeFactors.Nonempty := ⟨p,hpn⟩
   have hmax' : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hmax q (hq : q ∈ B.primeFactors) : q < p := by
     have hd : B ∣ p*(B*e) := (dvd_mul_right B e).trans (dvd_mul_left _ _)
     have hqn := Nat.primeFactors_mono hd hs.ne_zero hq
@@ -1459,7 +1459,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP.coprime_iff_not_dvd.mpr hpd,hpP.squarefree,hB⟩
   rw [ZetaRieszRoughCutoffRows.sieve_forbidden,ht,mul_one,sieve_eq_product_squarefree houter]
   have hsq' : Squarefree ((p*B)*e) := by simpa only [mul_assoc] using hs
-  simp only [if_pos hsq']
+  simp only [ite_eq_left hsq']
 
 /-- Low total count forces the whole-row owner gap. Such crossings are
 included in the same joined all-count payment, not paid by a separate
@@ -1488,7 +1488,7 @@ theorem cutoff_crossing_covered_of_count_le {u : ℝ} {N K p B e δ : ℕ}
   have hcc := ZetaRieszJointPrimeEnergy.core_count hn
   have hne : (p*(B*e)).primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hmax : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hlogcount : log (p*(B*e) : ℕ) ≤ (24 : ℝ)*log p := by
     calc
       _ = ∑ q ∈ (p*(B*e)).primeFactors, log q :=

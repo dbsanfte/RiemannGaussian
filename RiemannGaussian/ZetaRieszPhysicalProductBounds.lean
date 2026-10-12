@@ -118,7 +118,7 @@ theorem coefficient_eq_zero_below_physical {u : ℝ} {N n : ℕ}
       · have hL : Real.log n ≤ SquarefreeVaughanLogSource.length u N := by
           apply Real.log_le_log (by exact_mod_cast Nat.pos_of_ne_zero hs.ne_zero)
           exact_mod_cast hn
-        rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hs, hp⟩,
+        rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hs, hp⟩,
           ZetaRieszFixedCofactor.riesz_eq_zero_of_saturated hs h1 hp hL]
         simp
   · simp [SquarefreeVaughanLogSource.coefficient, hs]
@@ -133,8 +133,8 @@ theorem sum_filter_physical_lower (S : Finset ℕ) (f : ℕ → ℂ) (u : ℝ) (
   apply Finset.sum_congr rfl
   intro n _
   by_cases hn : (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 < n
-  · simp only [if_pos hn]
-  · rw [if_neg hn, coefficient_eq_zero_below_physical (le_of_not_gt hn), zero_mul]
+  · simp only [ite_eq_left hn]
+  · rw [ite_eq_right hn, coefficient_eq_zero_below_physical (le_of_not_gt hn), zero_mul]
 
 /-- A nonzero actual label below X_N^2 with an extreme prime factor
 must be a semiprime. The entire cofactor is forced to be a prime below X_N. -/

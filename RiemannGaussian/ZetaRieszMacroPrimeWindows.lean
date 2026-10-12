@@ -192,14 +192,14 @@ theorem eventually_macro_tuple_bounds {α β : ℝ} (hα : 0 < α) (hβ : 0 < β
   have hH0 (i : Fin k) : 0 < H i := by nlinarith [hH i]
   have hlo : (∏ i, (4999/5000 : ℝ)*(H i/(a i+H i))) ≤
       ∏ i, ∑ p ∈ logPrimes (a i) (H i), (p : ℝ)⁻¹ := by
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro i _
       exact mul_nonneg (by norm_num) (div_nonneg (hH0 i).le (by linarith [ha0 i,hH0 i]))
     · intro i _
       simpa only [mul_div_assoc] using (hN (a i) (H i) (ha i) (hH i)).1
   have hhi : (∏ i, ∑ p ∈ logPrimes (a i) (H i), (p : ℝ)⁻¹) ≤
       ∏ i, (5001/5000 : ℝ)*(H i/a i) := by
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro i _
       exact Finset.sum_nonneg (fun p _ => inv_nonneg.mpr (Nat.cast_nonneg p))
     · intro i _
@@ -250,7 +250,7 @@ theorem ordered_prime_product_eq {k : ℕ} {p q : Fin k → ℕ}
     (hp : ∀ i, (p i).Prime) (hq : ∀ i, (q i).Prime)
     (hpm : StrictMono p) (hqm : StrictMono q)
     (he : (∏ i, p i) = ∏ i, q i) : p = q := by
-  apply hpm.range_inj hqm |>.mp
+  apply hpm.range_inj_of_wellFoundedLT hqm |>.mp
   ext x
   constructor
   · rintro ⟨i,rfl⟩

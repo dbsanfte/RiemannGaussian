@@ -84,7 +84,7 @@ theorem sieveCost_small_primes_bound {N : ℕ} (hN : 0 < N) (S : Finset ℕ)
 theorem sieveCost_union_le (σ : ℝ) (S T : Finset ℕ) :
     sieveCost σ (S ∪ T) ≤ sieveCost σ S*sieveCost σ T := by
   have hi : 1 ≤ sieveCost σ (S ∩ T) :=
-    Finset.one_le_prod (fun p _ => by linarith [primeSquareCorrectedWeight_nonneg σ p])
+    Finset.one_le_prod₀ (fun p _ => by linarith [primeSquareCorrectedWeight_nonneg σ p])
   have hu : 0 ≤ sieveCost σ (S ∪ T) := by
     unfold sieveCost
     exact Finset.prod_nonneg (fun p _ => by linarith [primeSquareCorrectedWeight_nonneg σ p])
@@ -96,7 +96,7 @@ theorem sieveCost_le_three_pow {σ : ℝ} (hσ : 0 ≤ σ) (S : Finset ℕ) :
     sieveCost σ S ≤ (3 : ℝ)^S.card := by
   calc
     _ ≤ ∏ _p ∈ S, (3 : ℝ) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro p _
         linarith [primeSquareCorrectedWeight_nonneg σ p]
       · intro p _

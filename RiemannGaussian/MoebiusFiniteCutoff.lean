@@ -93,10 +93,10 @@ theorem moebiusLogPrefix_eq_tsum (a : ℝ) :
   · unfold moebiusLogPrefix moebiusFinitePrefix
     apply Finset.sum_congr rfl
     intro n hn
-    simp only [Finset.mem_range.mp hn, if_true]
+    simp only [Finset.mem_range.mp hn, ite_true]
   · intro n hn
     simp only [Finset.mem_range] at hn
-    simp only [hn, if_false]
+    simp only [hn, ite_false]
 
 end
 

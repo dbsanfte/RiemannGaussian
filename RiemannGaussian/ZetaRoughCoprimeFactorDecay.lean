@@ -108,7 +108,7 @@ theorem card_semiprimes_le_mass_of_coverage_one (S T : Finset ℕ) (w : ℕ → 
     have h := hcover n hn
     rw [heq, coverage_semiprime S w hS hp hq] at h
     by_cases hmem : p * q ∈ S
-    · rw [if_pos hmem] at h
+    · rw [ite_eq_left hmem] at h
       exact ⟨by simpa only [heq] using hmem, by simpa only [heq] using h⟩
     · simp [hmem] at h
   calc

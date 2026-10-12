@@ -372,7 +372,7 @@ theorem AnalyticAt.tendsto_sub_mul_logDeriv_analyticOrderNatAt
         self_mem_nhdsWithin] with z hzlog hgz hzAnalytic (hza : z ≠ a)
     have hza0 : z - a ≠ 0 := sub_ne_zero.mpr hza
     rw [hzlog]
-    rw [logDeriv_mul (f := fun w : ℂ => (w - a) ^ m) (g := g) z
+    rw [logDeriv_fun_mul (f := fun w : ℂ => (w - a) ^ m) (g := g) z
       (pow_ne_zero m hza0) hgz (by fun_prop) hzAnalytic.differentiableAt]
     rw [logDeriv_fun_pow (f := fun w : ℂ => w - a) (by fun_prop) m]
     have hlinear : logDeriv (fun w : ℂ => w - a) z = 1 / (z - a) := by
@@ -425,7 +425,7 @@ theorem AnalyticAt.exists_logDeriv_eq_principalPart_add_analytic
       self_mem_nhdsWithin] with z hzlog hgz hzAnalytic (hza : z ≠ a)
   have hza0 : z - a ≠ 0 := sub_ne_zero.mpr hza
   rw [hzlog]
-  rw [logDeriv_mul (f := fun w : ℂ => (w - a) ^ m) (g := g) z
+  rw [logDeriv_fun_mul (f := fun w : ℂ => (w - a) ^ m) (g := g) z
     (pow_ne_zero m hza0) hgz (by fun_prop) hzAnalytic.differentiableAt]
   rw [logDeriv_fun_pow (f := fun w : ℂ => w - a) (by fun_prop) m]
   have hlinear : logDeriv (fun w : ℂ => w - a) z = 1 / (z - a) := by

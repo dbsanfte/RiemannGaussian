@@ -91,7 +91,7 @@ theorem deformation_coeff_below {R ι : Type*} [CommRing R] [DecidableEq ι]
     (S : Finset ι) (r v : ι → R) {n : ℕ} (hn : n<(zeroIndices S r).card) :
     (deformation S r v).coeff n=0 := by
   rw [deformation_zero_factorization, coeff_X_pow_mul']
-  exact if_neg (by omega)
+  exact ite_eq_right (by omega)
 
 /-- The first surviving coefficient retains each zero slope and every
 nonzero original residual, over any commutative ring. -/
@@ -99,7 +99,7 @@ theorem deformation_head_coeff {R ι : Type*} [CommRing R] [DecidableEq ι]
     (S : Finset ι) (r v : ι → R) :
     (deformation S r v).coeff (zeroIndices S r).card=
       (∏ i ∈ zeroIndices S r, v i)*(∏ i ∈ S \ zeroIndices S r, r i) := by
-  rw [deformation_zero_factorization, coeff_X_pow_mul', if_pos (le_refl _),
+  rw [deformation_zero_factorization, coeff_X_pow_mul', ite_eq_left (le_refl _),
     Nat.sub_self, coeff_C_mul, deformation_coeff_zero]
 
 /-- Removing an index removes it from the proof-side zero set too. -/

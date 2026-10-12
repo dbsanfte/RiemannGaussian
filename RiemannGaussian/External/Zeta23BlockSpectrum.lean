@@ -139,7 +139,7 @@ theorem sumGc_blocks_le_sumGc_eigenvalues
         rw [Finset.sum_eq_single b]
         · simp
         · intro b' _ hb'
-          rw [if_neg hb']
+          rw [ite_eq_right hb']
           simp
         · simp
       simp_rw [hinner]

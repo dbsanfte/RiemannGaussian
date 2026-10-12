@@ -69,7 +69,7 @@ theorem owner_above_cofactor {N m : ℕ} (hm : m ∈ arithmeticBand N) :
     exact ⟨largestPrime m, by simpa only [Nat.mul_comm] using hprod.symm⟩
   have hqm := Nat.primeFactors_mono hdiv hsf.ne_zero hq
   have hle : q ≤ largestPrime m := by
-    rw [largestPrime, dif_pos hne]
+    rw [largestPrime, dite_eq_left hne]
     exact Finset.le_max' _ q hqm
   have hneq : q ≠ largestPrime m := by
     intro he

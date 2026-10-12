@@ -54,7 +54,7 @@ theorem dividedForm_mixed_coeff (B : ℕ) (A C₀ D : ℤ) :
   have hxy : (C (B : ℤ)*X 0*X 1 : Bivariate)=monomial mixedExponent (B : ℤ) := by
     rw [C_mul_X_eq_monomial]
     change monomial (Finsupp.single 0 1) (B : ℤ)*monomial (Finsupp.single 1 1) 1=_
-    rw [monomial_mul,mul_one]
+    rw [monomial_mul_monomial,mul_one]
     rfl
   have h0 : Finsupp.single (0 : Fin 2) 1≠mixedExponent := by
     intro he
@@ -69,7 +69,8 @@ theorem dividedForm_mixed_coeff (B : ℕ) (A C₀ D : ℤ) :
     have h := congrArg (fun m : Fin 2 →₀ ℕ => m 0) he
     norm_num [mixedExponent,Finsupp.single_apply] at h
   rw [dividedForm,hxy,C_mul_X_eq_monomial,C_mul_X_eq_monomial]
-  simp only [coeff_add,coeff_monomial,coeff_C,if_true,if_neg h0,if_neg h1,if_neg hz,add_zero]
+  simp only [AddMonoidAlgebra.coeff_add,Finsupp.add_apply,coeff_monomial,coeff_C,
+    ite_true,ite_eq_right h0,ite_eq_right h1,ite_eq_right hz,add_zero]
 
 /-- The mixed monomial is not the constant monomial. -/
 theorem mixedExponent_ne_zero : mixedExponent≠0 := by
@@ -84,7 +85,7 @@ theorem dividedForm_not_unit {B : ℕ} (hB : 0<B) (A C₀ D : ℤ) :
   obtain ⟨z,_,he⟩ := isUnit_iff_eq_C_of_isReduced.mp hu
   have hc := congrArg (fun p : Bivariate => p.coeff mixedExponent) he
   rw [dividedForm_mixed_coeff] at hc
-  simp only [coeff_C,Ne.symm mixedExponent_ne_zero,if_false] at hc
+  simp only [coeff_C,Ne.symm mixedExponent_ne_zero,ite_false] at hc
   have hn : B=0 := by exact_mod_cast hc
   omega
 

@@ -279,7 +279,7 @@ theorem activeOriginalBand_support (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t :
   obtain ⟨hb, hc⟩ := Finset.mem_filter.mp hn
   have hf : SquarefreeVaughanLogSource.coefficient L n *
       zetaPrimeFilterKernel P N (3 / 2 + Complex.I * t) n ≠ 0 := by
-    simpa only [ZetaRieszConditionedEnergy.bandWeight, if_pos hb] using hc
+    simpa only [ZetaRieszConditionedEnergy.bandWeight, ite_eq_left hb] using hc
   exact ZetaRieszSperner.coefficient_ne_zero_support (left_ne_zero_of_mul hf)
 
 /-- The nonzero support sums to exactly the full original carrier,
@@ -291,7 +291,7 @@ theorem sum_activeOriginalBand (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t : ℝ
   unfold zetaArithmeticBand
   apply Finset.sum_congr rfl
   intro n hn
-  simp only [ZetaRieszConditionedEnergy.bandWeight, if_pos hn]
+  simp only [ZetaRieszConditionedEnergy.bandWeight, ite_eq_left hn]
   split_ifs with h
   · rfl
   · exact (not_ne_iff.mp h).symm

@@ -240,8 +240,8 @@ theorem atom_split (u y : ℝ) (N n : ℕ) :
         (cofactor_data hn.1 hn.2 hp).2.2.2
       simpa only [Nat.mul_div_cancel' (Nat.dvd_of_mem_primeFactors hp)] using h
     rw [ZetaRieszPhysicalCompletion.atom,ZetaRieszPhysicalCompletion.markedCoefficient,
-      if_pos hn,unshiftedAtom,reflectedAtom,if_pos hn,if_pos hn,
-      SquarefreeVaughanLogSource.coefficient,if_pos ⟨hn.1,hnp⟩,markedMass]
+      ite_eq_left hn,unshiftedAtom,reflectedAtom,ite_eq_left hn,ite_eq_left hn,
+      SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hn.1,hnp⟩,markedMass]
     simp only [Complex.ofReal_sum,Complex.ofReal_div,Complex.ofReal_mul,Complex.ofReal_neg,
       Finset.sum_mul,Finset.mul_sum,← Finset.sum_add_distrib]
     apply Finset.sum_congr rfl
@@ -308,7 +308,7 @@ theorem unshiftedAtom_bound (N n : ℕ) (y : ℝ) {L : ℝ}
     push_cast
     exact div_le_self (by positivity) hL
   by_cases hn : ZetaRieszPhysicalCompletion.validLabel n
-  · rw [unshiftedAtom,if_pos hn,norm_mul]
+  · rw [unshiftedAtom,ite_eq_left hn,norm_mul]
     have hB : 0 ≤ (5/4 : ℝ)*safeRadius⁻¹^(N+1)*Real.exp (-(N : ℝ)/100) := by positivity
     have hi : ‖∑ p ∈ n.primeFactors, (VaughanLogAverage.riesz L (n/p) : ℂ)*
         (markedWeight N n p : ℂ)*zetaPrimeLogKernel (N+1) (3/2+Complex.I*y) n‖ ≤
@@ -322,7 +322,7 @@ theorem unshiftedAtom_bound (N n : ℕ) (y : ℝ) {L : ℝ}
       (mul_nonneg (mul_nonneg (by positivity : 0 ≤ (N : ℝ)+1) hB)
         (zetaMoebiusLogMajorant_nonneg n))
     convert hc using 1 <;> ring
-  · rw [unshiftedAtom,if_neg hn,norm_zero]
+  · rw [unshiftedAtom,ite_eq_right hn,norm_zero]
     exact mul_nonneg (by positivity)
       (mul_nonneg (zetaMoebiusLogMajorant_nonneg n) (Real.exp_pos _).le)
 

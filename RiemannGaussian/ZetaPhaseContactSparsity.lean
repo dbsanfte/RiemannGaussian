@@ -45,7 +45,7 @@ private theorem one_le_phaseContactCost (n : ℕ) : 1 ≤ phaseContactCost n := 
   by_cases hn : n = 0
   · simp [phaseContactCost, hn]
   · have h : (1 : ℝ) ≤ n := by exact_mod_cast Nat.one_le_iff_ne_zero.mpr hn
-    simp only [phaseContactCost, if_neg hn]
+    simp only [phaseContactCost, ite_eq_right hn]
     linarith
 
 /-- Finite height budget implies absolute summability of all nonnegative
@@ -161,9 +161,9 @@ theorem phaseContact_offSupport_mass_le_sixtyFour_mul_deficit {a : ℕ → ℝ}
       (if n ∈ phaseContactFrequencies then 0 else a n) ≤
         64 * (a n * phaseContactPenalty n) from by
     by_cases hn : n ∈ phaseContactFrequencies
-    · simp only [if_pos hn]
+    · simp only [ite_eq_left hn]
       exact mul_nonneg (by norm_num) (mul_nonneg (ha n) (phaseContactPenalty_nonneg n))
-    · simp only [if_neg hn]
+    · simp only [ite_eq_right hn]
       have h := mul_le_mul_of_nonneg_left (one_div_sixtyFour_le_phaseContactPenalty hn) (ha n)
       nlinarith only [h]) (hf.mul_left 64)
   rw [tsum_mul_left] at hle

@@ -153,15 +153,15 @@ theorem eventually_uniform_wide_phase (rho : NontrivialZetaZero)
   have hk : ∀ᶠ N : ℕ in atTop, N ≤ 4 * k N ∧ 250 * k N ≤ 169 * N := by
     filter_upwards [eventually_ge_atTop 2] with N hN
     by_cases hf : N ≤ 4 * f N ∧ 250 * f N ≤ 169 * N
-    · simpa only [k, if_pos hf] using hf
-    · simp only [k, if_neg hf]
+    · simpa only [k, ite_eq_left hf] using hf
+    · simp only [k, ite_eq_right hf]
       omega
   have h := ((tendsto_wide_weighted_finite rho hrho hexposed huU k hk).add_const
     (analyticZetaZeroMultiplicity rho : ℂ)).norm
   simp only [neg_add_cancel, norm_zero] at h
   filter_upwards [h.eventually (eventually_lt_nhds hε)] with N hN
   intro hlow hhigh
-  simpa only [k, if_pos (And.intro hlow hhigh)] using hN.le
+  simpa only [k, ite_eq_left (And.intro hlow hhigh)] using hN.le
 
 private theorem complete_phase_quarter (rho : NontrivialZetaZero)
     (hrho : 1 / 2 < rho.1.re)

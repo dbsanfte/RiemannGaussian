@@ -43,7 +43,7 @@ theorem unassigned_multinomial (A : Finset ℕ) (N : ℕ) {n : ℕ}
   have hel p (hp : p ∈ S) : eligibleCofactor p (n/p) :=
     ZetaRieszMarkedSaturation.cofactor_data hn hc hp
   have hnorm : boundedShare A N n*Real.log n^M = assignedAmplitude A N n*M.factorial := by
-    rw [boundedShare,if_pos ⟨hn,hn1,hnp⟩,allocationShare]
+    rw [boundedShare,ite_eq_left ⟨hn,hn1,hnp⟩,allocationShare]
     dsimp [M]
     field_simp
   have hmarked p (hp : p ∈ S) :
@@ -69,8 +69,8 @@ theorem unassigned_multinomial (A : Finset ℕ) (N : ℕ) {n : ℕ}
     intro p hp
     simp only [hel p hp,and_true]
     by_cases hpA : p ∈ A
-    · simpa only [if_pos hpA] using hmarked p hp
-    · simp only [if_neg hpA,Finset.sum_const_zero,zero_mul]
+    · simpa only [ite_eq_left hpA] using hmarked p hp
+    · simp only [ite_eq_right hpA,Finset.sum_const_zero,zero_mul]
   have hfull : Real.log n^M = ∑ d ∈ Finset.piAntidiag S M, w d := by
     rw [CoprimeEulerPhase.squarefree_log_eq_prime_sum hn]
     exact Finset.sum_pow_eq_sum_piAntidiag S (fun p : ℕ => Real.log p) M
@@ -81,7 +81,7 @@ theorem unassigned_multinomial (A : Finset ℕ) (N : ℕ) {n : ℕ}
       (Finset.card_le_card (Finset.filter_subset_filter _ (Finset.filter_subset _ _))).trans
         (selected_card_le_one S U M (unpaid_orders_submajority N) hd)
     by_cases hnone : ∀ p ∈ I, M-d p ∉ U
-    · rw [if_pos hnone,Finset.sum_eq_zero (fun p hp => if_neg (hnone p hp)),sub_zero]
+    · rw [ite_eq_left hnone,Finset.sum_eq_zero (fun p hp => ite_eq_right (hnone p hp)),sub_zero]
     · have hnonempty : (I.filter (fun p => M-d p ∈ U)).Nonempty := by
         push Not at hnone
         obtain ⟨p,hp,hpu⟩ := hnone
@@ -89,7 +89,7 @@ theorem unassigned_multinomial (A : Finset ℕ) (N : ℕ) {n : ℕ}
       have hcard1 : (I.filter (fun p => M-d p ∈ U)).card=1 := by
         have := Finset.card_pos.mpr hnonempty
         omega
-      rw [if_neg hnone,← Finset.sum_filter,Finset.sum_const,hcard1]
+      rw [ite_eq_right hnone,← Finset.sum_filter,Finset.sum_const,hcard1]
       simp
   calc
     _ = Real.log n^M-assignedAmplitude A N n*M.factorial := by
@@ -111,17 +111,17 @@ private theorem split_weight (S : Finset ℕ) {p : ℕ} (hp : p ∉ S)
   have hdp : d p=0 := by by_contra h; exact hp (hdm.2 p h)
   unfold allocationWeight
   rw [Nat.multinomial_cons,Finset.prod_cons]
-  simp only [Pi.add_apply,if_true,hdp,zero_add]
+  simp only [Pi.add_apply,ite_true,hdp,zero_add]
   have hsum : (∑ q ∈ S, (d q+if q=p then j else 0))=k := by
-    simpa only [Finset.sum_add_distrib,Finset.sum_ite_eq',hp,if_false,add_zero] using hdm.1
+    simpa only [Finset.sum_add_distrib,Finset.sum_ite_eq',hp,ite_false,add_zero] using hdm.1
   have hm : Nat.multinomial S (d+fun q => if q=p then j else 0)=Nat.multinomial S d := by
     apply Nat.multinomial_congr
     intro q hq
-    simp only [Pi.add_apply,if_neg (ne_of_mem_of_not_mem hq hp),add_zero]
+    simp only [Pi.add_apply,ite_eq_right (ne_of_mem_of_not_mem hq hp),add_zero]
   have hprod : (∏ q ∈ S, x q^(d q+if q=p then j else 0)) = ∏ q ∈ S, x q^d q := by
     apply Finset.prod_congr rfl
     intro q hq
-    rw [if_neg (ne_of_mem_of_not_mem hq hp),add_zero]
+    rw [ite_eq_right (ne_of_mem_of_not_mem hq hp),add_zero]
   rw [hsum,hjk,hm,hprod,Nat.cast_mul]
   ring
 
@@ -145,7 +145,7 @@ private theorem retained_cons (S A U : Finset ℕ) {p : ℕ} (hp : p ∉ S) (hpA
           if ∀ q ∈ S.filter (· ∈ A), M-d q ∉ U then allocationWeight S x d else 0 else 0) := by
     have hbM := Finset.HasAntidiagonal.mem_antidiagonal.mp hb
     by_cases hmark : M-b.1 ∉ U
-    · rw [if_pos hmark,Finset.mul_sum]
+    · rw [ite_eq_left hmark,Finset.mul_sum]
       apply Finset.sum_congr rfl
       intro d hd
       have hdp : d p=0 := by
@@ -159,26 +159,26 @@ private theorem retained_cons (S A U : Finset ℕ) {p : ℕ} (hp : p ∉ S) (hpA
           have hqs := (Finset.mem_filter.mp hq).1
           have hqA := (Finset.mem_filter.mp hq).2
           have hv := h q (Finset.mem_filter.mpr ⟨Finset.mem_cons.mpr (Or.inr hqs),hqA⟩)
-          simpa only [Pi.add_apply,if_neg (ne_of_mem_of_not_mem hqs hp),add_zero] using hv
+          simpa only [Pi.add_apply,ite_eq_right (ne_of_mem_of_not_mem hqs hp),add_zero] using hv
         · intro h q hq
           obtain ⟨hqS,hqA⟩ := Finset.mem_filter.mp hq
           rcases Finset.mem_cons.mp hqS with rfl | hqS
-          · simpa only [Pi.add_apply,if_true,hdp,zero_add] using hmark
-          · simpa only [Pi.add_apply,if_neg (ne_of_mem_of_not_mem hqS hp),add_zero] using
+          · simpa only [Pi.add_apply,ite_true,hdp,zero_add] using hmark
+          · simpa only [Pi.add_apply,ite_eq_right (ne_of_mem_of_not_mem hqS hp),add_zero] using
               h q (Finset.mem_filter.mpr ⟨hqS,hqA⟩)
       simp only [he]
       split_ifs
       · exact split_weight S hp x hbM hd
       · ring
-    · rw [if_neg hmark,mul_zero]
+    · rw [ite_eq_right hmark,mul_zero]
       apply Finset.sum_eq_zero
       intro d hd
-      apply if_neg
+      apply ite_eq_right
       intro h
       have hdp : d p=0 := by by_contra hn; exact hp ((Finset.mem_piAntidiag.mp hd).2 p hn)
       have hv := h p (Finset.mem_filter.mpr ⟨Finset.mem_cons.mpr (Or.inl rfl),hpA⟩)
       apply hmark
-      simpa only [Pi.add_apply,if_true,hdp,zero_add] using hv
+      simpa only [Pi.add_apply,ite_true,hdp,zero_add] using hv
   simp only [Finset.sum_map,addRightEmbedding_apply]
   rw [Finset.sum_congr rfl hpairs,Finset.Nat.antidiagonal_eq_map,Finset.sum_map]
   rfl
@@ -207,7 +207,7 @@ theorem exists_retained_coefficients (A : Finset ℕ) (N : ℕ) {n : ℕ}
       exact Finset.sum_pow_eq_sum_piAntidiag S _ _
     dsimp only [C]
     by_cases hmark : M-j ∉ U
-    · rw [if_pos hmark]
+    · rw [ite_eq_left hmark]
       constructor
       · apply Finset.sum_nonneg
         intro d _
@@ -221,7 +221,7 @@ theorem exists_retained_coefficients (A : Finset ℕ) (N : ℕ) {n : ℕ}
         split_ifs
         · rfl
         · dsimp [allocationWeight]; positivity
-    · rw [if_neg hmark]
+    · rw [ite_eq_right hmark]
       exact ⟨le_rfl,pow_nonneg (Real.log_natCast_nonneg n) _⟩
   refine ⟨fun j => (M.choose j : ℝ)*C j,fun j _ =>
     ⟨mul_nonneg (Nat.cast_nonneg _) (hC j).1,
@@ -333,7 +333,7 @@ theorem exists_literal_period_bounds :
     have hb := (hcoef n hn j hjN).2.trans
       (mul_le_mul_of_nonneg_left (pow_le_pow_left₀ (Real.log_natCast_nonneg n) hlog' _) (Nat.cast_nonneg _))
     dsimp only [w,V]
-    rw [dif_pos hn,abs_of_nonneg (by positivity)]
+    rw [dite_eq_left hn,abs_of_nonneg (by positivity)]
     apply div_le_div_of_nonneg_right _ hn0.le
     simpa only [mul_assoc] using
       (mul_le_mul
@@ -352,7 +352,7 @@ theorem exists_literal_period_bounds :
     apply Finset.sum_congr rfl
     intro j _
     dsimp only [weightedResponse,w]
-    rw [dif_pos hn,Finset.mul_sum]
+    rw [dite_eq_left hn,Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro p _
     ring

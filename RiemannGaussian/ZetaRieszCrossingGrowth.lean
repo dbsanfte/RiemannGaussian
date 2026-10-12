@@ -162,7 +162,7 @@ theorem eventually_box_count {w : ℝ} (hw : 0 < w) (hwu : w ≤ 1/100) :
   have hprod : (∏ i : Fin 3, c*Real.exp (starts L v w i)/((N : ℝ)+1)) ≤
       ((primeTuples L v w).card : ℝ) := by
     rw [primeTuples,Fintype.card_piFinset,Nat.cast_prod]
-    exact Finset.prod_le_prod (fun i _ => by positivity) (fun i _ => hb i)
+    exact Finset.prod_le_prod₀ (fun i _ => by positivity) (fun i _ => hb i)
   have he : (∏ i : Fin 3, c*Real.exp (starts L v w i)/((N : ℝ)+1)) =
       c^3*Real.exp (v+3*w)/((N : ℝ)+1)^3 := by
     rw [Fin.prod_univ_three]

@@ -125,7 +125,7 @@ theorem nearDebit_feedback_zero (K : Finset ℕ) (g : ℕ→ℕ) (I : Finset ℕ
       rw [blockTotal_feedback]
       exact Finset.sum_eq_zero (fun i hi=>by rw [hnear c hc hn i hi,mul_zero])
     simp [hz]
-  · simp [if_neg hn]
+  · simp [ite_eq_right hn]
 
 /-- Once the near rows are annihilated jointly, ALL of the correlation
 square enters the safe credit. This is a direct quantitative inequality,

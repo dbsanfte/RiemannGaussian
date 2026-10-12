@@ -66,7 +66,7 @@ theorem coefficient_eq_subcutoff_add_cross {u : ℝ} {N n : ℕ}
       have hn0 : n ≠ 0 := by rw [← he]; exact mul_ne_zero hp.ne_zero ha'.1.ne_zero
       have hd : n / a ∣ n := (dvd_mul_right (n / a) a).trans (dvd_of_eq he)
       exact (hs (n / a) (Nat.mem_primeFactors.mpr ⟨hp, hd, hn0⟩)).not_ge hXp
-    simp only [if_pos hs, crossCoefficient, if_neg hcross, add_zero]
+    simp only [ite_eq_left hs, crossCoefficient, ite_eq_right hcross, add_zero]
   · obtain ⟨a, p, ha, hp, hNa, haX, hXp, he, _⟩ :=
       (annulus_support_dichotomy hu hNX hn hc).resolve_left hs
     have haA := (mem_intermediatePrimes u N a).mpr ⟨ha, hNa, haX⟩
@@ -74,7 +74,7 @@ theorem coefficient_eq_subcutoff_add_cross {u : ℝ} {N n : ℕ}
     have hquot : n / a = p := by rw [he, mul_comm p a, Nat.mul_div_cancel_left _ ha.pos]
     have hcross : (crossIncidences (intermediatePrimes u N) u N n).Nonempty := by
       refine ⟨a, Finset.mem_filter.mpr ⟨haA, had, ?_, ?_⟩⟩ <;> simpa only [hquot]
-    simp only [if_neg hs, crossCoefficient, if_pos hcross, zero_add]
+    simp only [ite_eq_right hs, crossCoefficient, ite_eq_left hcross, zero_add]
 
 /-- The surviving all-subcutoff contribution keeps every prior support
 cut, the original coefficient and the full phase of its actual integer. -/

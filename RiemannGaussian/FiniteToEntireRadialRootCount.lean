@@ -41,7 +41,7 @@ theorem multiset_card_filter_eq_sum_card_filter_of_partition
       have hhead :
           (if p a then 1 else 0) = ∑ i, if q i a then 1 else 0 := by
         by_cases hpa : p a
-        · rw [if_pos hpa]
+        · rw [ite_eq_left hpa]
           obtain ⟨i, hi⟩ := (hcover a ha).mp hpa
           have hfilter :
               Finset.univ.filter (fun j ↦ q j a) = {i} := by
@@ -58,7 +58,7 @@ theorem multiset_card_filter_eq_sum_card_filter_of_partition
           rw [hfilter] at hsum
           change (∑ j : ι, if q j a then 1 else 0) = 1 at hsum
           exact hsum.symm
-        · rw [if_neg hpa]
+        · rw [ite_eq_right hpa]
           have hnone : ∀ i, ¬q i a := by
             intro i hi
             exact hpa ((hcover a ha).mpr ⟨i, hi⟩)

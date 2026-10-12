@@ -37,7 +37,7 @@ def population (S : Finset ℕ) (L t h : ℝ) : Finset ℕ :=
 private theorem largest_mem {n : ℕ} (hc : n.primeFactors.card = 5) :
     largestPrime n ∈ n.primeFactors := by
   have hn : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-  rw [largestPrime,dif_pos hn]
+  rw [largestPrime,dite_eq_left hn]
   exact Finset.max'_mem _ _
 
 private theorem largest_log {n : ℕ} (hs : Squarefree n) (hc : n.primeFactors.card = 5) :
@@ -46,7 +46,7 @@ private theorem largest_log {n : ℕ} (hs : Squarefree n) (hc : n.primeFactors.c
     have hn : n.primeFactors.Nonempty := ⟨p,hp⟩
     apply Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
     have hp' := Finset.le_max' n.primeFactors p hp
-    rw [largestPrime,dif_pos hn]
+    rw [largestPrime,dite_eq_left hn]
     exact_mod_cast hp'
   have hsum := Finset.sum_le_sum hm
   rw [← CoprimeEulerPhase.squarefree_log_eq_prime_sum hs,Finset.sum_const,hc,nsmul_eq_mul] at hsum
@@ -157,7 +157,7 @@ private theorem population_covered (S : Finset ℕ) {L t h : ℝ} (ht : 1 ≤ t)
   apply Finset.mem_biUnion.mpr
   refine ⟨(r,v),Finset.mem_product.mpr ⟨hrmem,Fintype.mem_piFinset.mpr hvmem⟩,
     Finset.mem_image.mpr ⟨largestPrime n,?_,rfl⟩⟩
-  rw [lastPrimes,if_pos hlast]
+  rw [lastPrimes,ite_eq_left hlast]
   exact (mem_logPrimes_iff _ _ _).mpr ⟨hPp,by linarith,by linarith⟩
 
 private theorem small_log_mass {t : ℝ} (ht : 1 ≤ headShare*t) :
@@ -197,7 +197,7 @@ private theorem amplitude_le_window {n : ℕ} (hn : n ≠ 0) {t h : ℝ}
   have hm := mul_le_mul_of_nonneg_right hr (inv_nonneg.mpr hnR.le)
   unfold amplitude
   rw [he]
-  convert hm using 1 <;> first | rfl | ring
+  convert hm using 1 ; first | rfl | ring
 
 
 private theorem atom_norm_le {S A : Finset ℕ} {L t h : ℝ} (ht : 1 ≤ t)
@@ -224,7 +224,7 @@ private theorem atom_norm_le {S A : Finset ℕ} {L t h : ℝ} (ht : 1 ≤ t)
   have he := mul_le_mul ((ZetaRieszJointCountFloor.norm_residual_le A L N n).trans hc')
     (amplitude_le_window hs.ne_zero htn.le hnt N)
     (by unfold amplitude; positivity) (by positivity : 0 ≤ 2*Real.log r)
-  convert he using 1 <;> first | rfl | ring
+  convert he using 1 ; first | rfl | ring
 
 /-- The complete literal least-prime boundary costs at most `3/40000`
 of the original short-cell radial scale. No order, phase, or support mask
@@ -277,7 +277,7 @@ theorem eventually_norm_mass_sharp {h : ℝ} (hh : 0 < h) (hhu : h ≤ 1/100000)
       have hr := Nat.mem_primeFactors.mpr ⟨hrp,hrd,hn0⟩
       have he := atom_norm_le ht hhu hL hLu hn hr y (N := N) (A := A)
       dsimp only [g,f,V]
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
       simpa only [Nat.cast_mul,mul_inv_rev,mul_assoc,mul_comm,mul_left_comm] using he
     · rw [show g (cofactor v*p) = 0 by simp [g,hn]]
       exact mul_nonneg (mul_nonneg (mul_nonneg (by norm_num) hV)

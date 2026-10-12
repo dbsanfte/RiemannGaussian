@@ -57,11 +57,11 @@ theorem shareBoxPacket_eq (u y : ℝ) (N K : ℕ) :
     apply Finset.sum_subset (Finset.filter_subset _ _)
     intro n _ hn
     change n ∉ fullParityBand u N K at hn
-    rw [fullParitySelection, if_neg hn, Complex.ofReal_zero, zero_mul]
+    rw [fullParitySelection, ite_eq_right hn, Complex.ofReal_zero, zero_mul]
   rw [he, shareBoxPacket, rectangleOrderError, ← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro n hn
-  rw [fullParitySelection, if_pos hn, ← add_mul, ← Complex.ofReal_add,
+  rw [fullParitySelection, ite_eq_left hn, ← add_mul, ← Complex.ofReal_add,
     rectangleMass_add_omitted (Finset.mem_filter.mp hn).2.1, Complex.ofReal_one, one_mul]
 
 theorem rectangleOrderError_atom_bound (N K n : ℕ) (y : ℝ) {u : ℝ}

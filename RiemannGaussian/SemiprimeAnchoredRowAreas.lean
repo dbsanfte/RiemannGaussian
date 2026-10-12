@@ -113,7 +113,7 @@ theorem anchorRoots_mem {N m : ℕ} (u : FamilyPacket) {w : FamilyPacket}
   classical
   apply List.mem_toFinset.mpr
   apply List.mem_filterMap.mpr
-  exact ⟨w,hw,by simp only [slopeEntry,if_pos hu]⟩
+  exact ⟨w,hw,by simp only [slopeEntry,ite_eq_left hu]⟩
 
 theorem anchorRoots_card_le (N m : ℕ) (u : FamilyPacket) :
     (anchorRoots N m u).card≤(publicPackets N m).length := by
@@ -198,7 +198,7 @@ theorem largerPacket_mem_of_pair {N m j : ℕ} (hj : j<m) (hc : j.Coprime m)
   apply List.mem_flatMap.mpr
   refine ⟨j,List.mem_range.mpr hj,?_⟩
   change largerPacket N m j v∈(if j.Coprime m then residuePackets N m j else [])
-  rw [if_pos hc]
+  rw [ite_eq_left hc]
   apply List.mem_flatMap.mpr
   exact ⟨v,hv,List.mem_cons_of_mem _ List.mem_cons_self⟩
 
@@ -209,7 +209,7 @@ theorem euclidPairs_has_unit {r₀ r₁ x y : ℕ} (negative : Bool) (hr : 0<r�
     ∃ v∈euclidPairs r₀ r₁ x y negative, v.1.natAbs=1 := by
   by_cases h₁ : r₁=1
   · refine ⟨(signed negative r₁,y),?_,?_⟩
-    · rw [euclidPairs,if_neg (by omega : r₁≠0)]
+    · rw [euclidPairs,ite_eq_right (by omega : r₁≠0)]
       exact List.mem_cons_self
     · simpa only [signed_natAbs] using h₁
   · have hg' : Nat.gcd r₁ (r₀%r₁)=1 := by
@@ -222,7 +222,7 @@ theorem euclidPairs_has_unit {r₀ r₁ x y : ℕ} (negative : Bool) (hr : 0<r�
       contradiction
     obtain ⟨v,hv,hu⟩ := euclidPairs_has_unit (!negative) hr' hg'
     refine ⟨v,?_,hu⟩
-    rw [euclidPairs,if_neg hr.ne']
+    rw [euclidPairs,ite_eq_right hr.ne']
     exact List.mem_cons_of_mem _ (List.mem_append_right _ hv)
 termination_by r₁
 decreasing_by exact Nat.mod_lt _ hr

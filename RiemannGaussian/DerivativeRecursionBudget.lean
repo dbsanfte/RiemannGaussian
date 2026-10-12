@@ -88,9 +88,9 @@ theorem base_le (κ : Cutoffs) (L : ℕ) {ℓ A : ℝ} (hℓ : 0 < ℓ) (hA : 1 
         (3 + 2 * Real.pi) := by
   rw [budget]
   by_cases hℓ1 : ℓ ≤ 1
-  · rw [if_pos ⟨hℓ, hℓ1⟩]
+  · rw [ite_eq_left ⟨hℓ, hℓ1⟩]
     exact min_le_right _ _
-  · rw [if_neg (fun h ↦ hℓ1 h.2)]
+  · rw [ite_eq_right (fun h ↦ hℓ1 h.2)]
     have hs1 : 1 ≤ Real.sqrt ℓ := Real.one_le_sqrt.mpr (by linarith)
     have hA0 : 0 ≤ A := by linarith
     have hL : (L : ℝ) ≤ A * L := by nlinarith [Nat.cast_nonneg (α := ℝ) L]

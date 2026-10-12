@@ -72,7 +72,7 @@ theorem zetaRightHalfRoughSquarefreeWindowCoefficient_support (rho : NontrivialZ
   have hs : ¬∃ p ∈ zetaRightHalfPrimePatternPrimes rho N, p ∣ n := by
     intro h
     simp [h] at hn
-  rw [if_neg hs] at hn
+  rw [ite_eq_right hs] at hn
   obtain ⟨hw, hD, hsq, hprimes, _⟩ := zetaRightHalfSquarefreeWindowCoefficient_support rho hN hn
   refine ⟨hw, hD, hsq, hprimes, fun p hp hpn ↦ ?_⟩
   by_contra h

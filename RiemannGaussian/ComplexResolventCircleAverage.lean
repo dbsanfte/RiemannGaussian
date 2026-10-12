@@ -89,8 +89,8 @@ theorem circleAverage_parameterResolvent (c : ℂ) {b : ℂ} (hb : ‖b‖ ≠ 1
     circleAverage (fun u : ℂ => c / (1 - u * b)) 0 1 =
       if ‖b‖ < 1 then c else 0 := by
   by_cases h : ‖b‖ < 1
-  · rw [if_pos h, circleAverage_parameterResolvent_of_norm_lt c h]
-  · rw [if_neg h, circleAverage_parameterResolvent_of_one_lt_norm c
+  · rw [ite_eq_left h, circleAverage_parameterResolvent_of_norm_lt c h]
+  · rw [ite_eq_right h, circleAverage_parameterResolvent_of_one_lt_norm c
       (lt_of_le_of_ne (le_of_not_gt h) hb.symm)]
 
 end

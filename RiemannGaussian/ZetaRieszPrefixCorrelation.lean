@@ -48,7 +48,7 @@ theorem coefficient_semiprime_inner {a p : ℕ} (ha : a.Prime) (hp : p.Prime)
       ((-Real.log (p * a : ℕ) * (Real.log (p * a : ℕ) - L) / L : ℝ) : ℂ) := by
   have hsf : Squarefree (p * a) := Nat.squarefree_mul_iff.mpr
     ⟨hp.coprime_iff_not_dvd.mpr hpa, hp.squarefree, ha.squarefree⟩
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hsf, Nat.not_prime_mul hp.ne_one ha.ne_one⟩,
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hsf, Nat.not_prime_mul hp.ne_one ha.ne_one⟩,
     riesz_semiprime_inner ha hp hpa haL hpL hLn]
 
 /-- Retaining BOTH completed prime incidences cancels the cutoff-dependent
@@ -62,9 +62,9 @@ theorem coefficient_sub_two_prime_lifts {a p : ℕ} (ha : a.Prime) (hp : p.Prime
       pairLift L a (p * a) - pairLift L p (p * a) = (Real.log (p * a : ℕ) : ℂ) := by
   have hq : p * a / a = p := by rw [mul_comm p a, Nat.mul_div_cancel_left _ ha.pos]
   have hpaLift : pairLift L a (p * a) = ((-Real.log (p * a : ℕ) * Real.log a / L : ℝ) : ℂ) := by
-    rw [pairLift, if_pos ⟨dvd_mul_left a p, by simpa only [hq] using hp⟩]
+    rw [pairLift, ite_eq_left ⟨dvd_mul_left a p, by simpa only [hq] using hp⟩]
   have hppLift : pairLift L p (p * a) = ((-Real.log (p * a : ℕ) * Real.log p / L : ℝ) : ℂ) := by
-    rw [pairLift, if_pos ⟨dvd_mul_right p a, by simpa only [Nat.mul_div_cancel_left _ hp.pos] using ha⟩]
+    rw [pairLift, ite_eq_left ⟨dvd_mul_right p a, by simpa only [Nat.mul_div_cancel_left _ hp.pos] using ha⟩]
   rw [coefficient_semiprime_inner ha hp hpa haL hpL hLn, hpaLift, hppLift]
   have hlog : Real.log (p * a : ℕ) = Real.log p + Real.log a := by
     rw [Nat.cast_mul, Real.log_mul (by exact_mod_cast hp.ne_zero) (by exact_mod_cast ha.ne_zero)]
@@ -98,14 +98,14 @@ theorem prefixCoefficient_prime_pair (A : Finset ℕ) (u : ℝ) (N : ℕ)
       · have he := (Nat.prime_dvd_prime_iff_eq (hA b hb) ha).mp hd
         exact hnot (by simp [he])
     have hz : pairLift (SquarefreeVaughanLogSource.length u N) b (p * a) = 0 := by
-      exact if_neg (fun h => hnd h.1)
+      exact ite_eq_right (fun h => hnd h.1)
     simp only [f, hz, ite_self]
   have hap : a ≠ p := by
     intro he
     exact hpa (he ▸ dvd_refl p)
   have hqa : p * a / a = p := by rw [mul_comm p a, Nat.mul_div_cancel_left _ ha.pos]
   have hqp : p * a / p = a := Nat.mul_div_cancel_left _ hp.pos
-  simpa only [Finset.sum_pair hap, f, hqa, hqp, if_pos haX, if_pos hpX,
+  simpa only [Finset.sum_pair hap, f, hqa, hqp, ite_eq_left haX, ite_eq_left hpX,
     ZetaRieszCrossCompletion.prefixCoefficient] using hsum.symm
 
 /-- The actual coefficient minus its complete selected-prime prefix
@@ -167,8 +167,8 @@ theorem prefixCoefficient_prime_pair_eq_log_square (A : Finset ℕ) (u : ℝ) (N
   rw [prefixCoefficient_prime_pair A u N hA ha hp hpa haA hpA haX hpX]
   have hqa : p * a / a = p := by rw [mul_comm p a, Nat.mul_div_cancel_left _ ha.pos]
   have hqp : p * a / p = a := Nat.mul_div_cancel_left _ hp.pos
-  rw [pairLift, if_pos ⟨dvd_mul_left a p, by simpa only [hqa] using hp⟩,
-    pairLift, if_pos ⟨dvd_mul_right p a, by simpa only [hqp] using ha⟩]
+  rw [pairLift, ite_eq_left ⟨dvd_mul_left a p, by simpa only [hqa] using hp⟩,
+    pairLift, ite_eq_left ⟨dvd_mul_right p a, by simpa only [hqp] using ha⟩]
   rw [← Complex.ofReal_add]
   congr 1
   rw [Nat.cast_mul, Real.log_mul (by exact_mod_cast hp.ne_zero) (by exact_mod_cast ha.ne_zero)]

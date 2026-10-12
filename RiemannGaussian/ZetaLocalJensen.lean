@@ -82,11 +82,11 @@ theorem sum_divisor_localZetaPoleRemoved_canonicalBall_le (y : ℝ) :
       rw [hmer.divisor_apply hi, han.meromorphicOn.divisor_apply hi']
     · have hdi : d i = 0 := by
         change (if MeromorphicOn f (ball 0 R) ∧ i ∈ ball 0 R then _ else 0) = 0
-        rw [if_neg (fun h ↦ hi h.2)]
+        rw [ite_eq_right (fun h ↦ hi h.2)]
       rw [hdi]
       exact han.divisor_nonneg i
   have hs : ((∑ᶠ i, d i : ℤ) : ℝ) ≤ ((∑ᶠ i, e i : ℤ) : ℝ) := by
-    exact_mod_cast finsum_le_finsum' hd he hp
+    exact_mod_cast finsum_le_finsum hd he hp
   exact hs.trans (sum_divisor_localZetaPoleRemoved_innerDisc_le y)
 
 end

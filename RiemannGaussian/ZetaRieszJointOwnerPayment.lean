@@ -155,7 +155,7 @@ theorem residual_coefficient_bound (A : Finset ℕ) (N : ℕ) (hN : 320 ≤ N)
       allocationShare A N n at hmass
     linarith
   rw [residualCoefficient,norm_mul,Complex.norm_real,Real.norm_eq_abs,
-    boundedShare,if_pos ⟨hn,hn1,hnp⟩,abs_of_nonneg hβ]
+    boundedShare,ite_eq_left ⟨hn,hn1,hnp⟩,abs_of_nonneg hβ]
   exact mul_le_mul hβle (SquarefreeVaughanLogSource.norm_coefficient_le hL n)
     (norm_nonneg _) (by positivity)
 

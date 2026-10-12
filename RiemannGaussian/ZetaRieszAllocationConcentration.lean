@@ -246,7 +246,7 @@ theorem single_prime_mass_le_share (A : Finset ℕ) (N : ℕ) {n p : ℕ}
       Real.log (n/q:ℕ)^k / (k.factorial:ℝ) *
         (Real.log q^(N+1-k) / ((N+1-k).factorial:ℝ)) else 0)
     (fun q _ => Finset.sum_nonneg (fun k _ => by split_ifs <;> positivity)) hp
-  simpa only [if_pos (show p ∈ A ∧ eligibleCofactor p (n/p) from ⟨hpA, hel⟩)] using h
+  simpa only [ite_eq_left (show p ∈ A ∧ eligibleCofactor p (n/p) from ⟨hpA, hel⟩)] using h
 
 /-- The original companion cancels all but an exponentially small fraction on the selected prime-log sector. -/
 theorem allocation_missing_exponential (A : Finset ℕ) (N : ℕ) (hN : 320 ≤ N) {n p : ℕ}
@@ -275,7 +275,7 @@ theorem finite_coefficient_sector_bound (u : ℝ) (N K : ℕ) (hN : 320 ≤ N) {
   have hb := allocation_missing_exponential _ N hN hn hn1 hp hpA hel hlo hhi
   have he : finiteWeight u N K n =
       1-allocationShare (ZetaRieszAnnulusJoint.intermediatePrimes u N) N n := by
-    rw [finiteWeight, if_pos hnS, boundedShare, if_pos ⟨hn, hn1, hnp⟩]
+    rw [finiteWeight, ite_eq_left hnS, boundedShare, ite_eq_left ⟨hn, hn1, hnp⟩]
   rw [finiteCoefficient, norm_mul, Complex.norm_real, Real.norm_eq_abs, he, abs_of_nonneg hb.1]
   exact mul_le_mul hb.2
     (SquarefreeVaughanLogSource.norm_coefficient_le (SquarefreeVaughanLogSource.length_pos u N) n)

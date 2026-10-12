@@ -121,7 +121,8 @@ theorem normalized_loop_no_hit {G : Type*} [CommGroup G] (g : G)
     rw [Nat.cast_sub hp.le,Nat.cast_one]
     ring
   have hdiv : ((p-1 : ℕ) : ℤ)∣(q : ℤ)-k-m*I := by
-    convert hc.sub hN using 1 <;> first | rfl | ring
+    convert hc.sub hN using 1
+    first | rfl | ring
   have hIb : -(R : ℤ)≤I ∧ I≤R := by
     apply abs_le.mp
     rw [←Int.natCast_natAbs]

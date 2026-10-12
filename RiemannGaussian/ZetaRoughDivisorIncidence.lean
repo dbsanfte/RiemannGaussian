@@ -34,7 +34,7 @@ theorem sum_lcmSqrtFactorMass_le (X : ℕ) :
     have hP0 : P ≠ 0 := by have := (Finset.mem_Icc.mp hP).1; omega
     calc
       _ = ∑ d ∈ P.divisors, if d ∣ P then 1 / Real.sqrt d else 0 :=
-        Finset.sum_congr rfl (fun d hd ↦ (if_pos (Nat.dvd_of_mem_divisors hd)).symm)
+        Finset.sum_congr rfl (fun d hd ↦ (ite_eq_left (Nat.dvd_of_mem_divisors hd)).symm)
       _ = _ := Finset.sum_subset (fun d hd ↦ Finset.mem_Icc.mpr
         ⟨Nat.pos_of_mem_divisors hd, (Nat.le_of_dvd (by omega) (Nat.dvd_of_mem_divisors hd)).trans
           (Finset.mem_Icc.mp hP).2⟩) (by
@@ -102,7 +102,7 @@ theorem prod_correctedWeight_le_lcmSqrtFactorMass {P : ℕ} (hP : Squarefree P)
   have hp : ∀ a ∈ P.primeFactors, a.Prime := fun _ ha ↦ Nat.prime_of_mem_primeFactors ha
   calc
     _ ≤ ∏ a ∈ P.primeFactors, lcmSqrtFactorMass a := by
-      apply Finset.prod_le_prod (fun a _ ↦ primeSquareCorrectedWeight_nonneg σ a)
+      apply Finset.prod_le_prod₀ (fun a _ ↦ primeSquareCorrectedWeight_nonneg σ a)
       intro a ha
       have hw : zetaPrimeExpWeight σ a ≤ 1 / Real.sqrt a := by
         simpa only [norm_zetaPrimeFeature, Complex.ofReal_re] using
@@ -140,7 +140,7 @@ private theorem marked_prefix_eq (D : ℕ) (S : Finset ℕ)
     congrArg (fun z : ℂ ↦ (-1 : ℂ) ^ W.card * z) (he W hW))
   rw [hsum]
   by_cases hPn : P ∣ n
-  · simp only [hPn, if_true]
+  · simp only [hPn, ite_true]
     exact zetaRoughSquarefreePrefixCoefficient_eq_subsets D S hS n
   · simp [hPn]
 
@@ -194,7 +194,7 @@ theorem hasSum_fibre (p : Polynomial ℂ) (D N : ℕ) (hD : 1 ≤ D)
       (if n = P then (Real.log P : ℂ) * zetaPrimeFilterKernel p N s P else 0) else 0)
       (if P.Prime then (Real.log P : ℂ) * zetaPrimeFilterKernel p N s P else 0) := by
     by_cases hprime : P.Prime
-    · simpa only [if_pos hprime] using hasSum_ite_eq P ((Real.log P : ℂ) * zetaPrimeFilterKernel p N s P)
+    · simpa only [ite_eq_left hprime] using hasSum_ite_eq P ((Real.log P : ℂ) * zetaPrimeFilterKernel p N s P)
     · simp [hprime]
   apply (h.add hp).congr_fun
   intro n
@@ -228,9 +228,9 @@ theorem exists_fibre_bound (y : ℝ) (hy : 1 < |y|) {r : ℝ} (hr : 0 < r) (hr1 
   have hp : ‖(if P.Prime then (Real.log P : ℂ) * zetaPrimeFilterKernel p N (3 / 2 + I * y) P else 0)‖ =
       if P.Prime then Real.log P * ‖zetaPrimeFilterKernel p N (3 / 2 + I * y) P‖ else 0 := by
     by_cases hprime : P.Prime
-    · simp only [if_pos hprime, norm_mul, Complex.norm_real,
+    · simp only [ite_eq_left hprime, norm_mul, Complex.norm_real,
         Real.norm_of_nonneg (Real.log_natCast_nonneg P)]
-    · simp only [if_neg hprime, norm_zero]
+    · simp only [ite_eq_right hprime, norm_zero]
   rw [hp]
   apply add_le_add _ le_rfl
   calc
@@ -256,7 +256,7 @@ theorem exists_fibre_bound (y : ℝ) (hy : 1 < |y|) {r : ℝ} (hr : 0 < r) (hr1 
       rw [Finset.prod_one_add, Finset.mul_sum]
       exact Finset.sum_congr rfl (fun W _ ↦ by ring)
     _ ≤ (A * lcmSqrtFactorMass P) * ∏ a ∈ S, (1 + 2 * w a) := mul_le_mul_of_nonneg_left
-      (Finset.prod_le_prod (fun a _ ↦ by linarith [hw a])
+      (Finset.prod_le_prod₀ (fun a _ ↦ by linarith [hw a])
         (fun a _ ↦ by linarith [hw a])) (mul_nonneg hA hM)
     _ ≤ (A * lcmSqrtFactorMass P) *
         (Real.exp (2 * primeSquareWeightMass τ) * Real.exp (4 * Real.sqrt R)) :=

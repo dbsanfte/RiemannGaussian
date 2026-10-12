@@ -16,7 +16,7 @@
   {"theorem":
    "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gain",
    "axioms": ["propext", "Classical.choice", "Quot.sound"]}],
- "leanVersion": "4.33.1",
+ "leanVersion": "4.34.1",
  "intervalConvention": "strict lower and upper enclosures",
  "improved": [[1682763999, 2500000000], [3365527999, 5000000000]],
  "generator": "scripts/ExportNumericalCertificatePlot.lean",

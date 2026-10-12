@@ -205,8 +205,8 @@ theorem abs_sum_primePairTent_le {ι : Type*} (S : Finset ι) (c x : ι → ℝ)
     apply Finset.sum_congr rfl
     intro i _
     by_cases hi : L - a - b < x i ∧ x i < L
-    · simp only [if_pos hi]
-    · rw [if_neg hi, primePairTent_eq_zero_of_outside ha hb, mul_zero]
+    · simp only [ite_eq_left hi]
+    · rw [ite_eq_right hi, primePairTent_eq_zero_of_outside ha hb, mul_zero]
       by_cases hx : x i < L
       · right
         have hn : ¬ L - a - b < x i := fun h => hi ⟨h, hx⟩
@@ -425,7 +425,7 @@ theorem signedDivisorWindow_eq_one_of_rough {b v : ℝ} (hv : 0 < v) (hvb : v < 
   rw [signedDivisorWindow, Finset.sum_eq_single 1]
   · simp [sub_neg.mpr hvb, hv]
   · intro d hd hd1
-    simp only [not_lt.mpr (hrough d hd hd1), and_false, if_false]
+    simp only [not_lt.mpr (hrough d hd hd1), and_false, ite_false]
   · exact fun h => False.elim (h (Nat.mem_divisors.mpr ⟨one_dvd m, hm.ne'⟩))
 
 /-- At logarithms of positive integers, the window membership test is
@@ -473,9 +473,9 @@ theorem riesz_log_eq_log_prod {X : ℝ} (hX : 0 < X) (n : ℕ) :
   intro d hd
   have hdR : (0 : ℝ) < d := by exact_mod_cast Nat.pos_of_mem_divisors hd
   by_cases hdX : (d : ℝ) < X
-  · rw [if_pos hdX, Real.log_zpow, Real.log_div hX.ne' hdR.ne',
+  · rw [ite_eq_left hdX, Real.log_zpow, Real.log_div hX.ne' hdR.ne',
       max_eq_right (sub_nonneg.mpr (Real.log_le_log hdR hdX.le))]
-  · rw [if_neg hdX,
+  · rw [ite_eq_right hdX,
       max_eq_left (sub_nonpos.mpr (Real.log_le_log hX (le_of_not_gt hdX))), mul_zero]
 
 /-- The integrated three-prime cluster is an exact rational logarithm;

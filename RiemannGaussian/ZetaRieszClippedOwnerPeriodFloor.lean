@@ -48,7 +48,7 @@ theorem canonical_owner_data {n : ℕ} (hs : Squarefree n)
           fun h => ha.2.2.2 (Nat.dvd_of_mem_primeFactors h))]
   have hmax (q : ℕ) (hq : q ∈ n.primeFactors) : q ≤ largestPrime n := by
     have hne : n.primeFactors.Nonempty := ⟨q,hq⟩
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.le_max' _ q hq
   exact ⟨hpp,he,ha.1,hcard,hmax,ha.2.2.2⟩
 
@@ -256,7 +256,7 @@ theorem close_owner_cofactor_shell_norm_bound {k N : ℕ} (hk : 0 < k)
       zetaPrimeLogKernel N (3/2+Complex.I*y) n‖) ≤ ∑ x ∈ V, f (label x) := by
     have hh := (Finset.sum_le_sum_of_subset_of_nonneg hcover (fun n _ _ => hf n)).trans
       (Finset.sum_image_le_of_nonneg (fun n _ => hf n))
-    simpa only [f,ite_true,Finset.sum_congr rfl (fun n hn => if_pos hn)] using hh
+    simpa only [f,ite_true,Finset.sum_congr rfl (fun n hn => ite_eq_left hn)] using hh
   have hpoint (b : ℕ) (hb : b ∈ R) (p q : ℕ) :
       f (p*(q*b)) ≤ B*(4*H*(b : ℝ)⁻¹)*(p : ℝ)⁻¹*(q : ℝ)⁻¹ := by
     obtain ⟨_,hbs,hbc,hbsub,_⟩ := Finset.mem_filter.mp hb
@@ -270,7 +270,7 @@ theorem close_owner_cofactor_shell_norm_bound {k N : ℕ} (hk : 0 < k)
       have hh := ZetaRieszOwnerTieFloor.boundary_atom_norm A y hv hNv hL0 hd.1 hd.2.1
         hb1 (dvd_mul_of_dvd_right (dvd_mul_left b q) p) hT
       dsimp only [f]
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
       have hle := mul_le_mul_of_nonneg_left hm (by positivity :
         0 ≤ B*(b : ℝ)⁻¹*(p : ℝ)⁻¹*(q : ℝ)⁻¹)
       have heq : B*(log b.minFac/(p*(q*b) : ℕ)) =
@@ -281,7 +281,7 @@ theorem close_owner_cofactor_shell_norm_bound {k N : ℕ} (hk : 0 < k)
       rw [heq] at hh
       exact hh.trans (by convert hle using 1; ring)
     · dsimp only [f]
-      rw [if_neg hn]
+      rw [ite_eq_right hn]
       positivity
   have hrec := shell_cofactor_mass_le R k (by linarith : 1 ≤ H) (by
     intro b hb

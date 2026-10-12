@@ -202,7 +202,7 @@ theorem zetaUpperVerticalLogDefectSummand_eq_hyperbolic
         (upperBoundaryApproachPoint x y) rho := by
   unfold zetaUpperVerticalLogDefectSummand
     zetaUpperHyperbolicLogDefectSummand
-  rw [if_pos hupper,
+  rw [ite_eq_left hupper,
     upperHalfPlaneVerticalLogDefect_eq_neg_two_log_distance
       hy hupper hne]
 
@@ -223,12 +223,12 @@ theorem riemannXiUpperVerticalLogDefectWindow_eq_hyperbolicRealWindow
   apply Finset.sum_congr rfl
   intro rho hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [if_pos hupper]
+  · rw [ite_eq_left hupper]
     exact zetaUpperVerticalLogDefectSummand_eq_hyperbolic
       rho hy hupper
         (hne rho (mem_spectralUpperZetaZeroWindow.mpr ⟨hrho, hupper⟩))
-  · rw [if_neg hupper, zetaUpperHyperbolicLogDefectSummand,
-      if_neg hupper]
+  · rw [ite_eq_right hupper, zetaUpperHyperbolicLogDefectSummand,
+      ite_eq_right hupper]
 
 /-- Taking `ofReal` of the finite real hyperbolic window recovers exactly
 the established `ℝ≥0∞` window whenever selected upper zeros do not collide
@@ -246,7 +246,7 @@ theorem ofReal_riemannXiUpperHyperbolicLogDefectRealWindow_eq
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · apply zetaUpperHyperbolicLogDefectSummand_nonneg hz rho
     exact hne rho (mem_spectralUpperZetaZeroWindow.mpr ⟨hrho, hupper⟩)
-  · rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper]
 
 /-- Finite Tonelli identity: the positive-proper-time action of a finite
 spectral heat window is exactly its finite hyperbolic log-defect window. -/

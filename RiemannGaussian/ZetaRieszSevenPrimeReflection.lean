@@ -269,7 +269,7 @@ theorem coefficient_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
     rw [min_eq_right (le_of_not_ge hle)]
     by_cases hs : Squarefree n
     · exact (coefficient_seven_two_outer_sharp hL hs h.1 htwo h.2).1
-    · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,if_false,Complex.zero_re]
+    · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,ite_false,Complex.zero_re]
       exact neg_nonpos.mpr (mul_nonneg (div_nonneg (Real.log_natCast_nonneg n) hL.le)
         (Real.log_natCast_nonneg n.minFac))
   · exact hh.1
@@ -318,7 +318,7 @@ theorem seven_lowerAllowance_eq {L : ℝ} (hL : 0 < L) {n : ℕ}
     lowerAllowance L n = Real.log n/L*Real.log n.minFac := by
   have hb : 0 ≤ Real.log n/L*Real.log n.minFac :=
     mul_nonneg (div_nonneg (Real.log_natCast_nonneg n) hL.le) (Real.log_natCast_nonneg n.minFac)
-  rw [lowerAllowance,if_pos ⟨hc,ho⟩,(previous_seven_allowances hL hn hc ho).1]
+  rw [lowerAllowance,ite_eq_left ⟨hc,ho⟩,(previous_seven_allowances hL hn hc ho).1]
   exact min_eq_right (by linarith)
 
 /-- Exact savings on each of the two original cosine orientations.

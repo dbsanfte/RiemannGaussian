@@ -403,10 +403,10 @@ private theorem leastTag_sum (T : Finset ℕ) (a : ℕ) (F : ℝ) :
         exact (leastTag_unique T hr.1 hq hr.2 h.2 hrest h.1).symm
       · rintro rfl
         exact ⟨hrest,hr.2⟩
-    rw [if_pos he]
+    rw [ite_eq_left he]
     simp_rw [Finset.sum_congr rfl (fun q hq => if_congr (hi q hq) rfl rfl)]
-    simp only [Finset.sum_ite_eq',if_pos hr.1]
-  · rw [if_neg he]
+    simp only [Finset.sum_ite_eq',ite_eq_left hr.1]
+  · rw [ite_eq_right he]
     apply Finset.sum_eq_zero
     intro r hr
     have hnot : ¬r∣a := fun hd => he ⟨r,hr,hd⟩
@@ -447,21 +447,21 @@ private theorem selectedTag_sum (T V : Finset ℕ) (hV : V⊆T) (a : ℕ) (F : �
       if ∃ r∈V, (¬∃ q∈leastTagExclusions T r, q∣a) ∧ r∣a then F else 0 := by
   by_cases he : ∃ r∈V, (¬∃ q∈leastTagExclusions T r, q∣a) ∧ r∣a
   · obtain ⟨r,hr,hrest,hra⟩ := he
-    rw [if_pos ⟨r,hr,hrest,hra⟩]
+    rw [ite_eq_left ⟨r,hr,hrest,hra⟩]
     rw [Finset.sum_eq_single_of_mem r hr (by
       intro q hq hqr
       have hn : ¬((¬∃ z∈leastTagExclusions T q, z∣a) ∧ q∣a) := by
         intro h
         exact hqr (leastTag_unique T (hV hq) (hV hr) h.2 hra h.1 hrest)
-      simp only [if_neg hn])]
+      simp only [ite_eq_right hn])]
     have hrr : (¬∃ q∈leastTagExclusions T r, q∣a) ∧ r∣a := ⟨hrest,hra⟩
-    simp only [if_pos hrr]
-  · rw [if_neg he]
+    simp only [ite_eq_left hrr]
+  · rw [ite_eq_right he]
     apply Finset.sum_eq_zero
     intro r hr
     have hn : ¬((¬∃ q∈leastTagExclusions T r, q∣a) ∧ r∣a) :=
       fun h => he ⟨r,hr,h⟩
-    simp only [if_neg hn]
+    simp only [ite_eq_right hn]
 
 /-- Exact physical labels of the joined least-tag family. A retained tag
 may be selected above N², but every larger small prime remains allowed. -/

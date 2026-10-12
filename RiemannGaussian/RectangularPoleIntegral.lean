@@ -159,19 +159,19 @@ theorem rectangularBoundaryIntegral_poleTaylorPrincipalPart (m : ℕ) (F : ℂ �
         (iteratedDeriv k F c / (k.factorial : ℂ)) * (z - c) ^ ((k : ℤ) - (m : ℤ))) =
         if k = m - 1 then (2 * Real.pi : ℝ) * I * poleTaylorResidue m F c else 0 := by
     by_cases hkm : k = m - 1
-    · rw [if_pos hkm]
+    · rw [ite_eq_left hkm]
       have hexp : (k : ℤ) - (m : ℤ) = -1 := by omega
       simp only [hexp, zpow_neg_one, ← div_eq_mul_inv]
       exact (rectangularBoundaryIntegral_simplePoleKernel_of_mem
         (iteratedDeriv k F c / (k.factorial : ℂ)) c hl hr hb hu).trans (by
-          simp only [poleTaylorResidue, if_neg hm, hkm])
-    · rw [if_neg hkm, rectangularBoundaryIntegral_const_mul,
+          simp only [poleTaylorResidue, ite_eq_right hm, hkm])
+    · rw [ite_eq_right hkm, rectangularBoundaryIntegral_const_mul,
         rectangularBoundaryIntegral_sub_zpow_eq_zero (by
           have hkm' := Finset.mem_range.mp hk
           omega) c hl hr hb hu, mul_zero]
   rw [Finset.sum_congr rfl hterm]
   have hmem : m - 1 ∈ Finset.range m := Finset.mem_range.mpr (by omega)
-  simp only [Finset.sum_ite_eq' (Finset.range m) (m - 1), if_pos hmem]
+  simp only [Finset.sum_ite_eq' (Finset.range m) (m - 1), ite_eq_left hmem]
 
 /-- The full Laurent principal part is integrable on every side of a
 rectangle strictly enclosing its center. -/

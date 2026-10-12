@@ -290,12 +290,12 @@ theorem dvd_cachedPairRelationGcd {G : Type*} [DecidableEq G]
         rows.flatMap (fun a => rows.map fun b =>
           if a.value=b.value then a.exponent-b.exponent else 0) :=
       List.mem_flatMap.mpr ⟨x,hx,List.mem_map.mpr ⟨y,hy,rfl⟩⟩
-    simpa only [if_pos he] using h _ hm
+    simpa only [ite_eq_left he] using h _ hm
   · intro h v hv
     obtain ⟨x,hx,hv⟩ := List.mem_flatMap.mp hv
     obtain ⟨y,hy,rfl⟩ := List.mem_map.mp hv
     by_cases he : x.value=y.value
-    · simpa only [if_pos he] using h x hx y hy he
+    · simpa only [ite_eq_left he] using h x hx y hy he
     · simp [he]
 
 /-- Exact equality to the full pair matrix's relation GCD for the
@@ -402,7 +402,7 @@ theorem adjacentRelationGcd_divisibility (k : ℕ) (rows : List (TaggedPower ℕ
       have htail := (List.pairwise_cons.mp hs).2
       have hih := ih htail
       by_cases he : x.value=y.value
-      · rw [adjacentRelationGcd,if_pos he,Nat.dvd_gcd_iff,nat_dvd_absolute_iff,hih,
+      · rw [adjacentRelationGcd,ite_eq_left he,Nat.dvd_gcd_iff,nat_dvd_absolute_iff,hih,
           cachedRelationCongruent_cons_iff k x y (y::rest) (by simp) he]
         tauto
       · have hn : ∀ z∈y::rest, x.value≠z.value := by
@@ -413,7 +413,7 @@ theorem adjacentRelationGcd_divisibility (k : ℕ) (rows : List (TaggedPower ℕ
             · subst z; exact le_refl _
             · exact (List.pairwise_cons.mp htail).1 z hz
           omega
-        rw [adjacentRelationGcd,if_neg he,hih,cachedRelationCongruent_cons_fresh k x (y::rest) hn]
+        rw [adjacentRelationGcd,ite_eq_right he,hih,cachedRelationCongruent_cons_fresh k x (y::rest) hn]
 
 /-- Sort complete tags by their cached natural values, retaining exponents. -/
 def sortedTags (rows : List (TaggedPower ℕ)) : List (TaggedPower ℕ) :=
@@ -586,14 +586,14 @@ theorem recoverWrapped_balanced {p q d B : ℕ} (hp : p.Prime) (hq : q.Prime)
   | none =>
     have hn : scanProper (p*q)
         ((List.range (2*(2*B))).map (SemiprimeCommonOrder.wrappedCandidate (p*q) d))=none := by
-      simpa only [SemiprimeCommonOrder.recoverWrapped,if_pos hd] using hs
+      simpa only [SemiprimeCommonOrder.recoverWrapped,ite_eq_left hd] using hs
     have hmem : p∈(List.range (2*(2*B))).map
         (SemiprimeCommonOrder.wrappedCandidate (p*q) d) :=
       List.mem_map.mpr ⟨(a+b)/d,List.mem_range.mpr ht4,hc⟩
     have he := (scanProper_none_iff _ _).mp hn p hmem
     have hproper : 1<p ∧ p<p*q := ⟨hp.one_lt,by have hh:=hq.one_lt; nlinarith⟩
     rw [SemiprimeGroupSelection.checkedSignal,Nat.gcd_eq_right (dvd_mul_right p q),
-      if_pos hproper] at he
+      ite_eq_left hproper] at he
     contradiction
 
 /-- Reconstruct from the actual retained cache certificate, keeping

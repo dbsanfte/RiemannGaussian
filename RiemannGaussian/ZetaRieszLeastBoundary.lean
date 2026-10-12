@@ -209,9 +209,9 @@ theorem core_ledger (u y : ℝ) (N K : ℕ) :
         (SquarefreeVaughanLogSource.length u N) N n*zetaPrimeLogKernel N (3/2+Complex.I*y) n))]
     · apply Finset.sum_congr rfl
       intro n hn
-      rw [selection, if_pos hn, atom]
+      rw [selection, ite_eq_left hn, atom]
     · intro n _ hn
-      rw [selection, if_neg hn, Complex.ofReal_zero, zero_mul]
+      rw [selection, ite_eq_right hn, Complex.ofReal_zero, zero_mul]
   rw [hp, rest, ← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro n _
@@ -417,7 +417,7 @@ theorem rawInteriorPacket_riesz_expansion (u y : ℝ) (N K : ℕ) :
       SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N) n*
         ((markedWeight N n p : ℂ)*zetaPrimeLogKernel N (3/2+Complex.I*y) n) by ring,
     marked_kernel hb.1 hb.2.1,
-    SquarefreeVaughanLogSource.coefficient, if_pos ⟨hb.1, hnp⟩]
+    SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hb.1, hnp⟩]
   simp only [Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
   field_simp [hlog, hL]
 
@@ -739,7 +739,7 @@ theorem markedWeight_joint_count_tail {n p : ℕ} (hn : Squarefree n) (hn1 : 1 <
       all_goals ring
     simp_rw [hi]
     rw [Finset.sum_add_distrib, Finset.sum_add_distrib, hsum]
-    simp only [Finset.sum_ite_eq', if_pos hpS, if_pos hr]
+    simp only [Finset.sum_ite_eq', ite_eq_left hpS, ite_eq_left hr]
     have hh := prime_least_joint_share hn hn1 hp hc
     change x p+55*x n.minFac ≤ 1 at hh
     linarith
@@ -755,7 +755,7 @@ theorem markedWeight_joint_count_tail {n p : ℕ} (hn : Squarefree n) (hn1 : 1 <
         all_goals simp
       simp_rw [hi]
       rw [Finset.prod_mul_distrib]
-      simp only [Finset.prod_ite_eq', if_pos hpS, if_pos hr]
+      simp only [Finset.prod_ite_eq', ite_eq_left hpS, ite_eq_left hr]
     simp only [allocationWeight, y, mul_pow, Finset.prod_mul_distrib]
     rw [hpv]
     ring

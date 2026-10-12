@@ -97,7 +97,7 @@ theorem zetaRoughSquarefreeCoefficient_add_compositeLog_eq_nonunit
   · by_cases hn : Squarefree n
     · have hsum := Finset.sum_Ioc_add_eq_sum_Icc (f := fun d : ℕ ↦
         if d ∣ n then (μ d : ℂ) * (Real.log (n / d : ℕ) : ℂ) else 0) hD
-      simp only [one_dvd, if_true, ArithmeticFunction.moebius_apply_one,
+      simp only [one_dvd, ite_true, ArithmeticFunction.moebius_apply_one,
         Int.cast_one, one_mul, Nat.div_one] at hsum
       simp [zetaRoughSquarefreePrefixCoefficient, zetaSquarefreeDivisibilityPrefixCoefficient,
         zetaDivisibilityPrefixCoefficient, zetaMultipleLogCoefficient, hs, hn,

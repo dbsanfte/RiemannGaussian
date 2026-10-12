@@ -241,13 +241,13 @@ theorem etaUnitIntervalMismatch_small_shift {d : ℝ} (hd : d ∈ Icc (0 : ℝ) 
   · have hnext : x + d ∈ Ioc (((⌈x⌉ + 1 : ℤ) : ℝ) - 1) ((⌈x⌉ + 1 : ℤ) : ℝ) := by
       push_cast
       constructor <;> linarith [hx.2, hd.2]
-    rw [if_pos hcross]
+    rw [ite_eq_left hcross]
     unfold etaUnitIntervalMismatch
     rw [etaUnitIntervalColour_eq_on_cell hnext, etaUnitIntervalColour_eq_on_cell hx]
     by_cases he : Even (⌈x⌉ : ℤ) <;> simp [he]
   · have hsame : x + d ∈ Ioc ((⌈x⌉ : ℝ) - 1) (⌈x⌉ : ℝ) :=
       ⟨by linarith [hx.1, hd.1], le_of_not_gt hcross⟩
-    simp only [if_neg hcross, etaUnitIntervalMismatch,
+    simp only [ite_eq_right hcross, etaUnitIntervalMismatch,
       etaUnitIntervalColour_eq_on_cell hsame, etaUnitIntervalColour_eq_on_cell hx,
       sub_self, zero_pow (by norm_num : (2 : ℕ) ≠ 0)]
 

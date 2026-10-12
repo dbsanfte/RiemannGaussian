@@ -30,7 +30,6 @@ theorem aestronglyMeasurable_normalizedGaussianMoebius_heat (s : ℂ) (a : ℝ) 
       (normalizedGaussianMoebius (a + v) : ℂ) * complexGaussianMoebiusHeatKernel s v) := by
   convert (aestronglyMeasurable_normalizedGaussianMoebius_add a).mul
     (integrable_complexGaussianMoebiusHeatKernel s).aestronglyMeasurable using 1
-  rfl
 
 /-- The proved global arithmetic bound supplies an integrable dominator for each fixed full complex phase. -/
 theorem integrable_normalizedGaussianMoebius_heat (s : ℂ) (a : ℝ) :

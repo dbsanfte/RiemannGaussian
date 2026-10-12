@@ -166,11 +166,11 @@ theorem norm_zetaMoebiusLogTailMoment_sub_band_le (D N k : ℕ) (y : ℝ) :
       apply Summable.tsum_le_tsum _ ht.norm hmajor
       intro n
       by_cases hn : n ∈ zetaPrimeLogBand N
-      · rw [if_pos hn, norm_zero]
+      · rw [ite_eq_left hn, norm_zero]
         exact mul_nonneg (by positivity) (add_nonneg
           (mul_nonneg (by positivity) (mul_nonneg (zetaMoebiusLogMajorant_nonneg n) (Real.exp_pos _).le))
           (mul_nonneg (by positivity) (mul_nonneg (zetaMoebiusLogMajorant_nonneg n) (Real.exp_pos _).le)))
-      · rw [if_neg hn]
+      · rw [ite_eq_right hn]
         exact norm_atom_le_outside D N k n y hn
     _ = _ := by
       rw [tsum_mul_left, (h1.mul_left _).tsum_add (h2.mul_left _), tsum_mul_left, tsum_mul_left]

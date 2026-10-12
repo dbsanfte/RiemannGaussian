@@ -175,10 +175,10 @@ theorem surviving_two_large_primes {u L : ℝ} {N n : ℕ}
   have hm := residualBand_subset u N hn
   have hprev : n ∈ ZetaRieszLargeSmoothDeletion.previousBand u N := by
     by_cases h : 2 * u ^ 2 < 1
-    · rw [adaptiveBand, if_pos h] at hm
+    · rw [adaptiveBand, ite_eq_left h] at hm
       exact (Finset.mem_sdiff.mp hm).1
-    · simpa only [adaptiveBand, if_neg h] using hm
-  rw [ZetaRieszLargeSmoothDeletion.previousBand, if_pos hcontact] at hprev
+    · simpa only [adaptiveBand, ite_eq_right h] using hm
+  rw [ZetaRieszLargeSmoothDeletion.previousBand, ite_eq_left hcontact] at hprev
   rcases ZetaRieszCompositeDeletion.surviving_support_dichotomy hprev hc with hs | hs
   · obtain ⟨a, p, ha, haN, hp, hXp, he⟩ := hs
     exact False.elim (surviving_not_small_semiprime hn ⟨a, p, ha, haN, hp, hNX.trans hXp, he⟩)
@@ -192,7 +192,7 @@ theorem surviving_small_smooth_factor {u L : ℝ} {N n : ℕ} (hu2 : 2 * u ^ 2 <
       Squarefree b ∧ (∀ p ∈ b.primeFactors, N ^ 2 < p) ∧ n = b * a ∧
       a < (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 := by
   have hm := residualBand_subset u N hn
-  rw [adaptiveBand, if_pos hu2] at hm
+  rw [adaptiveBand, ite_eq_left hu2] at hm
   exact ZetaRieszLargeSmoothDeletion.surviving_support_with_small_smooth_factor hm hc
 
 /-- A strict cofinal floor for the whole new residual contradicts its

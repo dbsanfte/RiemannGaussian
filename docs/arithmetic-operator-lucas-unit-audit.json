@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorLucasUnitAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 57,
+    "theoremsIncludingGeneratedHelpers": 48,
+    "authoredDeclarations": 26,
+    "automaticallyGeneratedDeclarations": 31,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "proved for every aligned prime-power row, including prime two and exponent zero; common unaligned first-digit identity also proved",
+    "actualOffLineZeroResponse": "uncentered constant code exactly equals ordinary prime moments and retains every exposed multiplicity; any bounded alphabet-centered code is uniformly source-blind",
+    "densitySeparation": "alphabet centering leaves only the explicit inverse-length endpoint and removes all positive-power sources, not just density",
+    "collapseAudit": "arbitrary scalar profiles against any array realized by constant codes; controls are not granted actual Gamma/binomial or Mangoldt compatibility",
+    "independentSignedEstimate": "no new source-sensitive estimate; stop aligned complete residue-code class",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "row": "choose(p^r-1,k) mod p, k<p^r",
+    "exactAlphabet": "(-1)^k",
+    "allBoundedComplexCodes": true,
+    "movingCodesAndHeightsPermitted": true,
+    "properPowersAndLiteralPrimePhaseRetained": true,
+    "centeredEndpointNorm": "<=1/p^r",
+    "joinedActualCenteredNorm": "<=log(X)*(1+log(X))",
+    "centeredDyadicSourceDecay": "at every beta>0, uniformly for moving bounded codes and heights",
+    "constantCompletePrimeMomentExactlyOriginal": true,
+    "freeScalarProfilesRealizable": true,
+    "unalignedCommonRowFormula": "choose(p*a-1,k) mod p = (-1)^(k mod p)*choose(a-1,k/p) mod p",
+    "upperCofactorResidueDiscardRefuted": {
+      "p": 3,
+      "a": 5,
+      "k": 6,
+      "actual": 0,
+      "signOnly": 1
+    },
+    "crossPrimeSourceGateClosed": false,
+    "crossPrimeCancellationEstimateProved": false,
+    "controlsGrantedActualBinomialGammaOrMangoldtData": false,
+    "historicalNoveltyClaimed": false,
+    "noGo": "Complete aligned unit coding either reconstructs arbitrary scalar prime profiles or kills every positive-power source after alphabet centering. It does not supply new independent arithmetic control."
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "scope": "complete aligned unit rows and literal common-row Lucas upper factors",
+    "arithmetic": "integer binomials, rational complex codes, symbolic log(prime)",
+    "fixedHeightPhaseNumericallyApproximated": false,
+    "gaussianRationalOuterPhaseControlsOnly": true,
+    "maxAlignedRowLength": 256,
+    "maxPrime": 31,
+    "alignedRows": 38,
+    "alignedResidues": 1528,
+    "exactCodeTraceCases": 114,
+    "symbolicPrimePowerJoins": 387,
+    "commonRowDigitCases": 84480,
+    "distinctCrossPrimeRows": 55,
+    "droppingUpperFactorFailureAtoms": 8618,
+    "nonindependentQuadraticCodeRows": 46,
+    "crossPrimeSamples": [
+      {
+        "p": 3,
+        "q": 2,
+        "rowLength": 6,
+        "quadraticMeanLargest": "1/3",
+        "quadraticMeanSmallest": "2/3",
+        "joinedQuadraticMean": "0",
+        "covariance": "-2/9",
+        "zeroCountSmallest": 2,
+        "distinctJointResidues": 3
+      },
+      {
+        "p": 5,
+        "q": 3,
+        "rowLength": 15,
+        "quadraticMeanLargest": "1/3",
+        "quadraticMeanSmallest": "4/15",
+        "joinedQuadraticMean": "0",
+        "covariance": "-4/45",
+        "zeroCountSmallest": 3,
+        "distinctJointResidues": 7
+      },
+      {
+        "p": 7,
+        "q": 2,
+        "rowLength": 14,
+        "quadraticMeanLargest": "1/7",
+        "quadraticMeanSmallest": "4/7",
+        "joinedQuadraticMean": "0",
+        "covariance": "-4/49",
+        "zeroCountSmallest": 6,
+        "distinctJointResidues": 4
+      },
+      {
+        "p": 7,
+        "q": 3,
+        "rowLength": 21,
+        "quadraticMeanLargest": "1/7",
+        "quadraticMeanSmallest": "1/21",
+        "joinedQuadraticMean": "1/7",
+        "covariance": "20/147",
+        "zeroCountSmallest": 12,
+        "distinctJointResidues": 8
+      },
+      {
+        "p": 7,
+        "q": 5,
+        "rowLength": 35,
+        "quadraticMeanLargest": "3/35",
+        "quadraticMeanSmallest": "4/7",
+        "joinedQuadraticMean": "4/35",
+        "covariance": "16/245",
+        "zeroCountSmallest": 15,
+        "distinctJointResidues": 10
+      },
+      {
+        "p": 11,
+        "q": 2,
+        "rowLength": 22,
+        "quadraticMeanLargest": "1/11",
+        "quadraticMeanSmallest": "4/11",
+        "joinedQuadraticMean": "0",
+        "covariance": "-4/121",
+        "zeroCountSmallest": 14,
+        "distinctJointResidues": 4
+      },
+      {
+        "p": 11,
+        "q": 3,
+        "rowLength": 33,
+        "quadraticMeanLargest": "1/33",
+        "quadraticMeanSmallest": "4/33",
+        "joinedQuadraticMean": "0",
+        "covariance": "-4/1089",
+        "zeroCountSmallest": 21,
+        "distinctJointResidues": 8
+      },
+      {
+        "p": 11,
+        "q": 5,
+        "rowLength": 55,
+        "quadraticMeanLargest": "3/55",
+        "quadraticMeanSmallest": "1/11",
+        "joinedQuadraticMean": "1/55",
+        "covariance": "8/605",
+        "zeroCountSmallest": 40,
+        "distinctJointResidues": 10
+      },
+      {
+        "p": 13,
+        "q": 3,
+        "rowLength": 39,
+        "quadraticMeanLargest": "1/3",
+        "quadraticMeanSmallest": "4/39",
+        "joinedQuadraticMean": "4/39",
+        "covariance": "8/117",
+        "zeroCountSmallest": 27,
+        "distinctJointResidues": 8
+      },
+      {
+        "p": 13,
+        "q": 5,
+        "rowLength": 65,
+        "quadraticMeanLargest": "3/5",
+        "quadraticMeanSmallest": "1/13",
+        "joinedQuadraticMean": "11/65",
+        "covariance": "8/65",
+        "zeroCountSmallest": 20,
+        "distinctJointResidues": 13
+      }
+    ],
+    "asymptoticSourceOrCancellationClaim": false,
+    "sourceSensitiveCrossPrimeEstimateProved": false,
+    "regressionCounterexample": {
+      "p": 3,
+      "q": 5,
+      "k": 6,
+      "actualResidue": 0,
+      "lowerSignOnly": 1
+    }
+  },
+  "literature": [
+    {
+      "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Choose/Lucas.html",
+      "role": "primary official documentation for the Lucas finite-digit congruence; no external axiom introduced"
+    }
+  ],
+  "historicalSourceDrift": {
+    "record": "docs/arithmetic-operator-kummer-maximum-audit.json",
+    "changedPinnedFiles": [
+      "docs/arithmetic-operator-research.md",
+      "AGENTS.md"
+    ],
+    "historicalPinsRefreshed": false,
+    "newLeafRechecked": true,
+    "oldLeafChanged": false
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorLucasUnitAudit.lean": "c1bc0b5677a89f8a6d05225ed601ecad861c33ffa9db093035a7b7135b6bda23",
+    "scripts/probe_arithmetic_operator_lucas_unit.py": "d4aca640fa1f31f5a9d97c667179aa8208fbc64d81f568dcf5350cbab4fe7c26",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ArithmeticOperatorFloorInverseAudit.lean": "65eec48dc303c0d57e8e854596e9d71d9c4d862b21ccba8ba673c2a4e3e79383",
+    "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+    "RiemannGaussian/ZetaPrimePowerMoments.lean": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    "docs/arithmetic-operator-research.md": "6a7ecacad743d845458391dc415aa957fe64ecfb761c7948cccb586a31f6d999",
+    "AGENTS.md": "7155b80336d9b8dece332693852e1d293a6eba5b97a3511ecd5a013ac878d3d5",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".lake/arithmetic-operator-lucas-unit/check.log": "8c1b83877b36a0bf67f1c524644129386467e1b98e33c289c804f538288e55da",
+    ".lake/arithmetic-operator-lucas-unit/axioms.json": "23bc4925ecdfdf4b511ecc9ac57d6d59d4d70e7e4f27d71082aa233912d83edb",
+    ".lake/arithmetic-operator-lucas-unit/probe.json": "7aacd6e4f7180eb4fd7d7b130dad1940210a72a73a60f8993a6b68db2a3b1b4f"
+  }
+}

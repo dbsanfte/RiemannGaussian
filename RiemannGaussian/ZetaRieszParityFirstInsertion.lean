@@ -130,7 +130,7 @@ theorem firstIntegrand_bounds {g : ℝ} (hg : (289/1000 : ℝ) < g) {x : Fin 11 
     0 ≤ firstIntegrand g x ∧ firstIntegrand g x ≤ ∏ i, firstDensity (x i) := by
   unfold firstIntegrand
   by_cases hs : g ≤ ∑ i, x i
-  · rw [if_pos hs, mul_one]
+  · rw [ite_eq_left hs, mul_one]
     constructor
     · exact Finset.prod_nonneg (fun i _ => inv_nonneg.mpr (hx i).1.le)
     · apply le_of_eq
@@ -139,7 +139,7 @@ theorem firstIntegrand_bounds {g : ℝ} (hg : (289/1000 : ℝ) < g) {x : Fin 11 
       change (x i)⁻¹ = (Ioc (9/1000 : ℝ) (7/250)).indicator (fun t : ℝ => t⁻¹) (x i)
       rw [indicator_of_mem (show x i ∈ Ioc (9/1000 : ℝ) (7/250) from
         ⟨first_support_each_share (fun i => (hx i).2) hg hs i, (hx i).2⟩)]
-  · simp only [if_neg hs, mul_zero]
+  · simp only [ite_eq_right hs, mul_zero]
     exact ⟨le_rfl, Finset.prod_nonneg (fun i _ => firstDensity_nonneg _)⟩
 
 /-- The first nonzero density integral has a completely explicit small

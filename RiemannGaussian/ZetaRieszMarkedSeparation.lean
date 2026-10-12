@@ -285,10 +285,10 @@ theorem incidence_difference_bound (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p
   have htail : ∀ q ∈ tailPrimes A r, 16 ≤ q := fun q hq => h16 q (Finset.mem_filter.mp hq).1
   unfold incidenceDifference
   by_cases hpr : r < p
-  · rw [if_pos hpr,middle_eq_erase,rectangle_erase_ledger _ htail N p r (by linarith) xi,
+  · rw [ite_eq_left hpr,middle_eq_erase,rectangle_erase_ledger _ htail N p r (by linarith) xi,
       add_sub_cancel_left]
     exact collision_rectangle_bound _ htail (Finset.mem_filter.mpr ⟨hp,hpr⟩) N r (hhead p hp) hR hs xi
-  · rw [if_neg hpr,zero_sub,norm_neg]
+  · rw [ite_eq_right hpr,zero_sub,norm_neg]
     apply (wrong_order_rectangle _ htail N p r (by have := h16 p hp; omega)
       (Nat.le_of_not_gt hpr) hR hs xi).trans
     have he : Real.exp (-(N : ℝ)/10) ≤ Real.exp (-(N : ℝ)/220) :=

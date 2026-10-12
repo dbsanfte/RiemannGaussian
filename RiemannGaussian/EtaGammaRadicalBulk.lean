@@ -45,10 +45,10 @@ theorem hasSum_coefficient_gamma (rho : NontrivialZetaZero) {T : ℝ} (hT : 0 < 
         (if a.Coprime b ∧ g.Coprime a ∧ g.Coprime b then
           (μ a : ℂ) * (μ b : ℂ) * gammaRow rho T (a * b) else 0) := by
     by_cases hc : a.Coprime b ∧ g.Coprime a ∧ g.Coprime b
-    · simp only [if_pos hc]
+    · simp only [ite_eq_left hc]
       exact (hasSum_dvd_gammaRow rho hT
         (Nat.mul_pos (Finset.mem_Icc.mp ha).1 (Finset.mem_Icc.mp hb).1)).mul_left _
-    · simp only [if_neg hc]
+    · simp only [ite_eq_right hc]
       exact hasSum_zero
   have hs := hasSum_sum (s := Finset.Icc 1 N) (fun a ha ↦
     hasSum_sum (s := Finset.Icc 1 N) (fun b hb ↦ hrow a ha b hb))

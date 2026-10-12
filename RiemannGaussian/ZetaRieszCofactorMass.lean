@@ -79,7 +79,7 @@ theorem minimum_le_product {k : ℕ} (hk : 0 < k) {t : ℝ} (ht : 0 < t)
       rw [← Real.rpow_mul_natCast ht.le]
       simp [hkR.ne']
     _ = ∏ _ : Fin k, t^(1/(k : ℝ)) := by simp
-    _ ≤ _ := Finset.prod_le_prod (fun _ _ => by positivity)
+    _ ≤ _ := Finset.prod_le_prod₀ (fun _ _ => by positivity)
       (fun i _ => Real.rpow_le_rpow ht.le (hx i) (by positivity))
 
 /-- Every subset of the literal product cover has linear least-prime

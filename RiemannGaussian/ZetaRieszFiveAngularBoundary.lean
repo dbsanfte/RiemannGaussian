@@ -60,13 +60,13 @@ theorem volume_affine_slab_le (S : Set (Fin 4 → ℝ)) (a : Fin 4 → ℝ)
     intro x hx
     have hg := hS x hx
     constructor <;> intro j <;> rw [hmap] <;> by_cases hj : j = i
-    · simp only [hj,if_true]
+    · simp only [hj,ite_true]
       exact hg.2.1
-    · simp only [hj,if_false]
+    · simp only [hj,ite_false]
       exact (hg.1 j).1
-    · simp only [hj,if_true]
+    · simp only [hj,ite_true]
       exact hg.2.2
-    · simp only [hj,if_false]
+    · simp only [hj,ite_false]
       exact (hg.1 j).2
   have hB : volume B = ENNReal.ofReal w := by
     rw [Real.volume_Icc_pi]
@@ -95,7 +95,7 @@ theorem density_bounds {lam : ℝ} {x : Fin 4 → ℝ}
     linarith
   have hden : (17/25 : ℝ)*(1/10)*(1/200)^4 ≤ lam*(1-∑ i, x i)*(∏ i, x i) := by
     have he := mul_le_mul (mul_le_mul hL hp (by norm_num) hL0.le)
-      (Finset.prod_le_prod (s := Finset.univ)
+      (Finset.prod_le_prod₀ (s := Finset.univ)
         (fun _ _ => (by norm_num : (0 : ℝ) ≤ 1/200)) (fun i _ => hx i))
       (by positivity) (by positivity)
     norm_num [Fin.prod_univ_four] at he ⊢

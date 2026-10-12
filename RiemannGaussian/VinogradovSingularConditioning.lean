@@ -78,7 +78,7 @@ theorem palette_weight_eq_tuple {p k a b xi eta X s : ℕ} (S : Finset (ZMod p))
     simp [h, tupleWeight, hj]
   · have hj := mt he.mpr h
     obtain ⟨j, hj⟩ := not_forall.mp hj
-    simp only [h, if_false, tupleWeight]
+    simp only [h, ite_false, tupleWeight]
     symm
     exact Finset.prod_eq_zero (Finset.mem_univ j) (by simp [hj])
 
@@ -143,7 +143,7 @@ theorem mixedMoment_eq_full_count {p k a b xi eta X s : ℕ} [NeZero p]
   have he := restricted_energy_eq_count
     (frequency (p := p) (a := a) (b := b) (xi := xi) (eta := eta) (X := X) (s := s) colour)
     (fun _ => True)
-  simp only [if_true, and_true] at he
+  simp only [ite_true, and_true] at he
   have hn (theta : UnitAddTorus (Fin k)) :
       ‖polynomial (frequency (p := p) (a := a) (b := b) (xi := xi) (eta := eta) (X := X) (s := s) colour)
         (fun _ => 1) theta‖ ^ 2 =
@@ -151,7 +151,7 @@ theorem mixedMoment_eq_full_count {p k a b xi eta X s : ℕ} [NeZero p]
         ‖VinogradovCongruenceEnergy.residuePolynomial (p ^ b) eta X k 1 theta‖ ^ (2 * s) := by
     have hp := palette_configuration_eq_product (p := p) (a := a) (b := b) (xi := xi)
       (eta := eta) (X := X) (s := s) colour Finset.univ theta
-    simp only [Finset.subset_univ, if_true, palettePolynomial_univ] at hp
+    simp only [Finset.subset_univ, ite_true, palettePolynomial_univ] at hp
     rw [hp, norm_mul, mul_pow, norm_pow, ← pow_mul, Nat.mul_comm s 2]
   simp_rw [hn] at he
   exact he

@@ -416,10 +416,10 @@ theorem measurable_moment_exp (n : ℕ) :
           (((k+1 : ℕ) : ℝ)*Real.exp t/2)^n else 0) := by
     funext t
     rw [tsum_eq_sum (s := Finset.range (jumpCount (Real.exp t)))
-      (fun k hk => by rw [if_neg (by simpa only [Finset.mem_range] using hk)])]
+      (fun k hk => by rw [ite_eq_right (by simpa only [Finset.mem_range] using hk)])]
     apply Finset.sum_congr rfl
     intro k hk
-    simp only [if_pos (Finset.mem_range.mp hk)]
+    simp only [ite_eq_left (Finset.mem_range.mp hk)]
   rw [he]
   apply Measurable.tsum
   intro k

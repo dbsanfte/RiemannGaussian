@@ -235,7 +235,7 @@ theorem owner_data {m : ℕ} (hm : Squarefree m) (hc : 3 ≤ m.primeFactors.card
   have hrm : r ∈ m.primeFactors := Nat.mem_primeFactors.mpr ⟨hr,hrd.trans hdiv,hm.ne_zero⟩
   have hne : m.primeFactors.Nonempty := ⟨largestPrime m,hp⟩
   have hle : r ≤ largestPrime m := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.le_max' _ r hrm
   exact lt_of_le_of_ne hle (fun h => hnot (h ▸ hrd))
 

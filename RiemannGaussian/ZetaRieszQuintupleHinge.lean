@@ -151,7 +151,7 @@ theorem quintuple_coefficient {L : ℝ} {n p a b c r : ℕ}
     have : 1 < a*(b*(c*r)) := h.ha.one_lt.trans_le
       (Nat.le_mul_of_pos_right _ (Nat.mul_pos h.hb.pos (Nat.mul_pos h.hc.pos h.hr.pos)))
     omega
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨h.squarefree, hnp⟩, quintuple_riesz h]
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨h.squarefree, hnp⟩, quintuple_riesz h]
   congr 1
   ring
 

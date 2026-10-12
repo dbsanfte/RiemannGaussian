@@ -80,9 +80,9 @@ theorem divisorTail_le_majorant_tail {A : ℝ} (hA : 1 ≤ A)
     apply (summable_divisorTail_terms H).tsum_le_tsum ?_ (hf.mul_left 2)
     intro ρ
     by_cases hρ : H < |ρ.1.im|
-    · simp only [if_pos hρ, f, if_pos (index_gt_of_height_gt hH ρ hρ)]
+    · simp only [ite_eq_left hρ, f, ite_eq_left (index_gt_of_height_gt hH ρ hρ)]
       exact divisorWeight_le_twice_normWeight ρ
-    · simp only [if_neg hρ, f]
+    · simp only [ite_eq_right hρ, f]
       split_ifs <;> positivity [normWeight_nonneg ρ]
   have hpart := hf.hasSum.tsum_fiberwise zetaZeroNormDyadicIndex
   have hparts : (∑' ρ : NontrivialZetaZero, f ρ) ≤ ∑' n : ℕ,
@@ -91,23 +91,23 @@ theorem divisorTail_le_majorant_tail {A : ℝ} (hA : 1 ≤ A)
     apply hpart.summable.tsum_le_tsum ?_ (summable_majorant_tail A N)
     intro n
     by_cases hn : N < n
-    · rw [if_pos hn]
+    · rw [ite_eq_left hn]
       calc
         _ = ∑' ρ : {ρ : NontrivialZetaZero | zetaZeroNormDyadicIndex ρ = n},
             normWeight ρ.1 := by
           apply tsum_congr
           intro ρ
           have hρ : zetaZeroNormDyadicIndex ρ.1 = n := ρ.2
-          simp only [f, hρ, if_pos hn]
+          simp only [f, hρ, ite_eq_left hn]
         _ ≤ _ := tsum_zetaZeroNormDyadicShell_inverseSquare_le hA hbound n
-    · rw [if_neg hn]
+    · rw [ite_eq_right hn]
       apply le_of_eq
       calc
         _ = ∑' ρ : zetaZeroNormDyadicIndex ⁻¹' {n}, (0 : ℝ) := by
           apply tsum_congr
           intro ρ
           have hρ : zetaZeroNormDyadicIndex ρ.1 = n := ρ.2
-          simp only [f, hρ, if_neg hn]
+          simp only [f, hρ, ite_eq_right hn]
         _ = 0 := tsum_zero
   exact hfirst.trans (mul_le_mul_of_nonneg_left hparts (by norm_num))
 
@@ -119,12 +119,12 @@ private theorem majorant_tail_eq_shift (A : ℝ) (N : ℕ) :
       if N < n then riemannXiInverseSquareDyadicMajorant A n else 0) = 0 := by
     apply Finset.sum_eq_zero
     intro n hn
-    rw [if_neg (by have := Finset.mem_range.mp hn; omega)]
+    rw [ite_eq_right (by have := Finset.mem_range.mp hn; omega)]
   rw [hzero, zero_add] at hs
   rw [← hs]
   apply tsum_congr
   intro k
-  rw [if_pos (by omega)]
+  rw [ite_eq_left (by omega)]
 
 /-- Translation of the complete shell tail exposes its exact geometric
 factor, with a fixed finite coefficient independent of the height. -/

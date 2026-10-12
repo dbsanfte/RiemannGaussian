@@ -130,11 +130,11 @@ theorem antichain_quota_bound {ι : Type*} [Fintype ι] {b j : ℕ}
       (1 : ℝ) ≤ B*((k.choose S.card : ℕ) : ℝ)⁻¹+
         (if S.card = j then 1-B/C else 0) := by
     by_cases hm : S.card = j
-    · rw [if_pos hm,hm]
+    · rw [ite_eq_left hm,hm]
       change 1 ≤ B*C⁻¹+(1-B/C)
       simp only [div_eq_mul_inv]
       linarith
-    · rw [if_neg hm,add_zero]
+    · rw [ite_eq_right hm,add_zero]
       have hpos : (0 : ℝ) < k.choose S.card := by exact_mod_cast Nat.choose_pos S.card_le_univ
       have hle : k.choose S.card ≤ offRankCapacity k b j :=
         Finset.le_sup (f := fun i => k.choose i)
@@ -426,7 +426,7 @@ theorem coefficient_odd_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
   have hlo := mul_le_mul_of_nonneg_left hh.1 hscale
   have hhi := mul_le_mul_of_nonneg_left hh.2 hscale
   have hsupport : Squarefree n ∧ ¬ n.Prime := ⟨hn,hnp⟩
-  simp only [SquarefreeVaughanLogSource.coefficient,if_pos hsupport,Complex.ofReal_re]
+  simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hsupport,Complex.ofReal_re]
   have he : -Real.log n*VaughanLogAverage.riesz L n/L =
       -(Real.log n/L)*VaughanLogAverage.riesz L n := by ring
   rw [he]
@@ -541,8 +541,8 @@ theorem coefficient_allowance_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
       (SquarefreeVaughanLogSource.coefficient L n).re ≤ allowance L n 1 := by
   by_cases hn : Squarefree n
   · have hs : Squarefree n ∧ 2 ≤ n.primeFactors.card := ⟨hn,hc⟩
-    simpa only [allowance,if_pos hs,Nat.sub_zero,Nat.sub_self] using coefficient_odd_bounds hL hn hc hodd hcut
-  · simp only [allowance,SquarefreeVaughanLogSource.coefficient,hn,false_and,if_false,
+    simpa only [allowance,ite_eq_left hs,Nat.sub_zero,Nat.sub_self] using coefficient_odd_bounds hL hn hc hodd hcut
+  · simp only [allowance,SquarefreeVaughanLogSource.coefficient,hn,false_and,ite_false,
       Complex.zero_re,neg_zero,le_refl,and_self]
 
 /-- The lower charge assigns the two improved capacities to the two

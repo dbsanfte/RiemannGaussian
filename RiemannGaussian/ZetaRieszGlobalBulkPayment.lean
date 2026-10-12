@@ -316,7 +316,7 @@ private theorem riesz_eq_hinge_profile (c : ℝ) {n : ℕ} (hn : 0 < n) :
   have hdl : log d ≤ c := by simpa only [log_exp] using log_le_log hd0 hdx
   rw [max_eq_right (sub_nonneg.mpr hdl)]
   by_cases hdn : d ∣ n
-  · simp only [hdn,if_true,log_div (exp_pos c).ne' hd0.ne',log_exp]
+  · simp only [hdn,ite_true,log_div (exp_pos c).ne' hd0.ne',log_exp]
     ring
   · simp [hdn]
 
@@ -354,10 +354,6 @@ private theorem radial_amplitude_variation {M X : ℕ} (hM : 0<M)
       _ ≤ radialCap N := mul_le_of_le_one_right (radialCap_nonneg N) hlen
   rw [Finset.sum_Ico_eq_sum_range]
   convert hb using 1
-  apply Finset.sum_congr rfl
-  intro i _
-  simp only [v]
-  congr 2
 
 /-- The entire signed hinge is compared on a full integer shell.
 Squarefreeness is in the counting measure; no prime/count deletion occurs. -/
@@ -398,10 +394,10 @@ private theorem full_shell_compare {N M X : ℕ} (hM : 0<M) (hMX : M<X)
         (if Squarefree n then VaughanLogAverage.riesz L n else 0)=
           ∑ D∈Finset.Icc 1 R,(f D-f (D+1))*(if Squarefree n then sharp D n else 0) := by
       by_cases hs : Squarefree n
-      · rw [if_pos hs,riesz_eq_hinge_profile L (Finset.mem_Icc.mp hn).1]
+      · rw [ite_eq_left hs,riesz_eq_hinge_profile L (Finset.mem_Icc.mp hn).1]
         rw [ZetaRieszSignedCutoffEnergy.abel_profile R f
           (fun d => if d∣n then (μ d : ℝ) else 0) (hinge_profile_end L)]
-        simp only [if_pos hs,sharp]
+        simp only [ite_eq_left hs,sharp]
       · simp [hs]
     rw [Finset.sum_congr rfl (fun n hn' => congrArg (w n*·) (hn n hn'))]
     simp only [Finset.mul_sum]
@@ -641,7 +637,7 @@ private theorem completed_atom_re (u y L : ℝ) (N : ℕ) {n : ℕ} (hn : 0<n) :
       rw [show -(3/2 : ℝ)*log n=-log n/2+-log n by ring,exp_add,exp_neg,
         exp_log (by exact_mod_cast hn)]
       ring
-    simp only [completedCoefficient,if_pos hs,← Complex.ofReal_pow,← Complex.ofReal_mul,
+    simp only [completedCoefficient,ite_eq_left hs,← Complex.ofReal_pow,← Complex.ofReal_mul,
       Complex.mul_re,Complex.ofReal_re,Complex.ofReal_im,zero_mul,sub_zero]
     rw [hk',he]
     unfold radial

@@ -60,7 +60,7 @@ theorem coefficient_two_large {p q r : ℕ} (hp : p.Prime) (hq : q.Prime)
       max_eq_right (by linarith : 0 ≤ L-Real.log q-Real.log r),
       max_eq_left (by linarith : L-Real.log p-Real.log q-Real.log r ≤ 0)]
     ring
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,hR]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,hR]
   congr 1
   ring
 

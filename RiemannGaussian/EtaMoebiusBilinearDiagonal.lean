@@ -41,8 +41,8 @@ theorem sum_sq_pairedEtaMoebiusHighProductCoefficient_mul_rpow_neg_le
       apply Finset.sum_congr rfl
       intro n _
       by_cases hn : D < n
-      · rw [if_pos hn]
-      · rw [if_neg hn, pairedEtaMoebiusHighProductCoefficient_eq_zero (by omega)]
+      · rw [ite_eq_left hn]
+      · rw [ite_eq_right hn, pairedEtaMoebiusHighProductCoefficient_eq_zero (by omega)]
         simp
     _ ≤ ∑ n ∈ Finset.Ioc D M, (n.divisors.card : ℝ) ^ 2 * (n : ℝ) ^ (-s) := by
       apply Finset.sum_le_sum

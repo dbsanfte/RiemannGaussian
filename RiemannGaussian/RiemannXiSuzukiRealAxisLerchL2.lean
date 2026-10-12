@@ -488,8 +488,8 @@ def suzukiRealAxisCarrierLerchContribution (t x : ℝ) : ℂ :=
 theorem memLp_two_suzukiRealAxisCarrierLerchContribution
     {t : ℝ} (ht : 0 < t) :
     MemLp (suzukiRealAxisCarrierLerchContribution t) 2 := by
-  exact (memLp_two_suzukiRealAxisLerchContribution ht).mul'
-    memLp_top_suzukiRealAxisXiZeroCarrier
+  exact memLp_top_suzukiRealAxisXiZeroCarrier.fun_mul (r := 2)
+    (memLp_two_suzukiRealAxisLerchContribution ht)
 
 end
 

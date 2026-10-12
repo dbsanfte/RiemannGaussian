@@ -200,7 +200,7 @@ private theorem profileEnergy_centered (X : ℕ) (f : ℕ → ℝ) (a : ℝ) :
       centeredProfile X f a k-centeredProfile X f a (k+1) = f k-f (k+1)-a*logStep k := by
     intro k hk
     have hk' := Finset.mem_Ico.mp hk
-    simp only [centeredProfile,if_pos (by omega : k ≤ X),if_pos (by omega : k+1 ≤ X),logStep]
+    simp only [centeredProfile,ite_eq_left (by omega : k ≤ X),ite_eq_left (by omega : k+1 ≤ X),logStep]
     ring
   have hx : centeredProfile X f a X=0 := by simp [centeredProfile]
   have hx' : centeredProfile X f a (X+1)=0 := by simp [centeredProfile]

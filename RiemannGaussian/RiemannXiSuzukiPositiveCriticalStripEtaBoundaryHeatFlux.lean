@@ -273,7 +273,7 @@ theorem tendsto_pairedEtaBoundaryHeatNormalizedNumeratorRadialFlux_selected
     tendsto_pairedEtaBoundaryHeatNormalizedNumeratorRadialFlux
       x tau rho
   convert h using 1
-  rw [suzukiChebyshevLaplaceBoundaryHeatResidue, if_pos hp,
+  rw [suzukiChebyshevLaplaceBoundaryHeatResidue, ite_eq_left hp,
     Complex.mul_re,
     suzukiChebyshevLaplaceBoundaryHeatKernel_im]
   norm_num
@@ -314,7 +314,7 @@ theorem tendsto_pairedEtaBoundaryHeatNormalizedNumeratorRadialFluxWindow
     apply Finset.sum_congr rfl
     intro rho hrho
     rw [suzukiChebyshevLaplaceBoundaryHeatResidue,
-      if_pos
+      ite_eq_left
         ((suzukiChebyshevLaplaceZeroCoordinate_re_neg_iff_upper rho).mpr
           (mem_spectralUpperZetaZeroWindow.mp hrho).2)]
   convert hsum using 1
@@ -353,7 +353,8 @@ theorem tendsto_pairedEtaBoundaryHeatNormalizedNumeratorRadialFluxWindowLimit
     tendsto_suzukiChebyshevLaplaceBoundaryHeatResidueWindow x htau
   have hre := Complex.continuous_re.continuousAt.tendsto.comp hwindow
   have hscaled := hre.const_mul (2 * Real.pi)
-  convert hscaled using 1 <;> norm_num
+  convert hscaled using 1
+  norm_num
 
 /-- The complete fixed-time RH detector is a checked two-stage limit of
 literal, convergent, normalized-bilinear paired-eta `L¹` fluxes: first shrink

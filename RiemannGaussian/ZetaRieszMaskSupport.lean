@@ -61,7 +61,7 @@ theorem window_mem_originalMask (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
       rw [he, Nat.cast_mul, Real.log_mul (by exact_mod_cast hpp.ne_zero) (by exact_mod_cast Nat.ne_of_gt ha0)]
     linarith [hW.1]
   have hred : n ∈ ZetaRieszGeneralCofactorTilt.optimizedReducedBand u N := by
-    rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, if_neg (ne_of_lt huc), tiltedReducedBand]
+    rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, ite_eq_right (ne_of_lt huc), tiltedReducedBand]
     refine Finset.mem_filter.mpr ⟨hband, ?_⟩
     rintro ⟨a,p,ha1,haA,has,_hap,hpp,_hpa,he⟩
     exact hnoFactor a p (by omega) hpp he (tiltedSchedule_log_le_quarter hu huh (by omega) haA)
@@ -88,7 +88,7 @@ theorem window_mem_originalMask (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     exact hnoFactor a p (Nat.pos_of_ne_zero has.ne_zero) hpp he
       (hsmooth a (he ▸ dvd_mul_left a p) ha)
   have hprevious : n ∈ ZetaRieszLargeSmoothDeletion.previousBand u N := by
-    simpa only [ZetaRieszLargeSmoothDeletion.previousBand, if_pos huc] using hcomp
+    simpa only [ZetaRieszLargeSmoothDeletion.previousBand, ite_eq_left huc] using hcomp
   have hlarge : n ∈ ZetaRieszLargeSmoothDeletion.largeSmoothResidualBand u N := by
     refine Finset.mem_sdiff.mpr ⟨hprevious, ?_⟩
     intro hm
@@ -101,7 +101,7 @@ theorem window_mem_originalMask (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     have huu : 2*u^2<1 := by
       have h := huh.trans radius_ceiling
       nlinarith
-    simpa only [ZetaRieszSemiprimeSupport.adaptiveBand, if_pos huu] using hlarge
+    simpa only [ZetaRieszSemiprimeSupport.adaptiveBand, ite_eq_left huu] using hlarge
   have hsemi : n ∈ ZetaRieszSemiprimeDeletion.residualBand u N := by
     refine Finset.mem_sdiff.mpr ⟨hadapt, ?_⟩
     intro hm
@@ -122,13 +122,13 @@ theorem window_mem_originalMask (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     obtain ⟨hpn,hpx⟩ := Finset.mem_filter.mp hp
     exact (hpX p hpn).not_ge hpx
   have hfour : n ∈ ZetaRieszFourExtremeDeletion.fourResidualBand u N := by
-    rw [ZetaRieszFourExtremeDeletion.fourResidualBand, if_pos huc]
+    rw [ZetaRieszFourExtremeDeletion.fourResidualBand, ite_eq_left huc]
     exact Finset.mem_filter.mpr ⟨hnarrow, by simp [hext]⟩
   have hdegree : n ∈ ZetaRieszLowerDegreeDeletion.degreeResidualBand u N := by
-    rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, if_pos hu2]
+    rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, ite_eq_left hu2]
     exact Finset.mem_filter.mpr ⟨hfour, by simp [hext]⟩
   have hannulus : n ∈ ZetaRieszPhysicalAnnulus.annulusBand u N := by
-    rw [ZetaRieszPhysicalAnnulus.annulusBand, if_pos hu2]
+    rw [ZetaRieszPhysicalAnnulus.annulusBand, ite_eq_left hu2]
     refine Finset.mem_filter.mpr ⟨hdegree, ?_, ?_⟩
     · have hl : Real.log X < Real.log n := by rw [hlogX]; linarith [hW.1]
       exact_mod_cast (Real.log_lt_log_iff (by exact_mod_cast hX) hn0).mp hl
@@ -192,7 +192,7 @@ theorem assigned_zero_of_count_lt_three (A : Finset ℕ) (L : ℝ) (N n : ℕ)
       have h := eligible_product_count_ge_three (Nat.prime_of_mem_primeFactors hp) hel
       rw [Nat.mul_div_cancel' (Nat.dvd_of_mem_primeFactors hp)] at h
       omega
-    exact if_neg hg
+    exact ite_eq_right hg
   unfold assignedCoefficient boundedShare allocationShare
   rw [ha0, zero_div]
   simp
@@ -215,7 +215,7 @@ theorem coefficient_zero_of_count_lt_three (u : ℝ) (N K n : ℕ)
     intro h
     have h := (Finset.mem_filter.mp (Finset.mem_filter.mp h).1).2.1
     omega
-  rw [finiteCoefficient_eq_mask_sub_assigned, if_neg hnS, assigned_zero_of_count_lt_three _ _ N n hc]
+  rw [finiteCoefficient_eq_mask_sub_assigned, ite_eq_right hnS, assigned_zero_of_count_lt_three _ _ N n hc]
   simp
 
 /-- An unselected prime carrying at least half the logarithm forces every eligible selected prime to be balanced. -/

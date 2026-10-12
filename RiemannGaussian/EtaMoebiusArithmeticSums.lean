@@ -70,7 +70,7 @@ private theorem sum_product_cutoff {d : ℕ} (hd : 1 ≤ d) (L : ℕ) (f : ℕ �
       apply Finset.sum_congr rfl
       intro m hm
       have hp := (Nat.le_div_iff_mul_le hd).mp (Finset.mem_Icc.mp hm).2
-      simp only [if_pos (show d * m ≤ L by simpa only [mul_comm] using hp)]
+      simp only [ite_eq_left (show d * m ≤ L by simpa only [mul_comm] using hp)]
 
 /-- The whole finite rectangular product sum is exactly the divisor-fiber sum with its original Möbius cutoff retained, on either side of that cutoff. -/
 theorem sum_rectangle_product_cutoff_eq_divisors (M L : ℕ) (f : ℕ → ℕ → ℝ) :
@@ -90,7 +90,7 @@ theorem sum_rectangle_product_cutoff_eq_divisors (M L : ℕ) (f : ℕ → ℕ �
       _ = ∑ d ∈ Finset.Icc 1 M, ∑ m ∈ Finset.Icc 1 (L / d), if d ≤ M then f d m else 0 := by
         apply Finset.sum_congr rfl
         intro d hd
-        simp only [if_pos (Finset.mem_Icc.mp hd).2]
+        simp only [ite_eq_left (Finset.mem_Icc.mp hd).2]
       _ = _ := by
         apply Finset.sum_subset (Finset.Icc_subset_Icc le_rfl hML)
         intro d hd hnot
@@ -108,7 +108,7 @@ theorem sum_rectangle_product_cutoff_eq_divisors (M L : ℕ) (f : ℕ → ℕ �
       _ = _ := by
         apply Finset.sum_congr rfl
         intro d hd
-        simp only [if_pos ((Finset.mem_Icc.mp hd).2.trans hLM)]
+        simp only [ite_eq_left ((Finset.mem_Icc.mp hd).2.trans hLM)]
 
 /-- The full signed harmonic divisor prefix is exactly the product-cutoff harmonic rectangle; both arithmetic signs and the truncated divisor are retained. -/
 theorem sum_pairedEtaMoebiusArithmeticDivisor_div_eq_rectangle (M L : ℕ) (w : ℕ → ℝ) :

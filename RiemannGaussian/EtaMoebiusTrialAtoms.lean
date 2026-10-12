@@ -46,10 +46,10 @@ theorem pairedEtaMoebiusTrialRamp_monotone {n : ℕ} (hn : 1 ≤ n) :
   have hnp : (0 : ℝ) < n := by exact_mod_cast hn
   intro x y hxy
   by_cases hx : (1 : ℝ) ≤ x
-  · simp only [pairedEtaMoebiusTrialRamp, if_pos hx, if_pos (hx.trans hxy)]
+  · simp only [pairedEtaMoebiusTrialRamp, ite_eq_left hx, ite_eq_left (hx.trans hxy)]
     exact div_le_div_of_nonneg_right (min_le_min hxy le_rfl) hnp.le
   · by_cases hy : (1 : ℝ) ≤ y
-    · simp only [pairedEtaMoebiusTrialRamp, if_neg hx, if_pos hy]
+    · simp only [pairedEtaMoebiusTrialRamp, ite_eq_right hx, ite_eq_left hy]
       exact div_nonneg (le_min (by linarith) hnp.le) hnp.le
     · simp [pairedEtaMoebiusTrialRamp, hx, hy]
 
@@ -58,7 +58,7 @@ theorem pairedEtaMoebiusTrialRamp_bounds {n : ℕ} (hn : 1 ≤ n) (x : ℝ) :
     0 ≤ pairedEtaMoebiusTrialRamp n x ∧ pairedEtaMoebiusTrialRamp n x ≤ 1 := by
   have hnp : (0 : ℝ) < n := by exact_mod_cast hn
   by_cases hx : (1 : ℝ) ≤ x
-  · simp only [pairedEtaMoebiusTrialRamp, if_pos hx]
+  · simp only [pairedEtaMoebiusTrialRamp, ite_eq_left hx]
     exact ⟨div_nonneg (le_min (by linarith) hnp.le) hnp.le,
       (div_le_one hnp).mpr (min_le_right _ _)⟩
   · simp [pairedEtaMoebiusTrialRamp, hx]

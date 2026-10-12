@@ -75,10 +75,10 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_nonneg
     (x : ℝ) (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperBlaschkeBoundaryDensitySummand x rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+  · rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     exact mul_nonneg (Nat.cast_nonneg _)
       (div_nonneg (by positivity) (Complex.normSq_nonneg _))
-  · rw [zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+  · rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
 
 /-- One selected upper zero contributes strictly positive boundary density. -/
 theorem zetaUpperBlaschkeBoundaryDensitySummand_pos
@@ -90,7 +90,7 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_pos
     have him := congrArg Complex.im heq
     simp only [ofReal_im] at him
     linarith
-  rw [zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+  rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
   apply mul_pos
   · exact_mod_cast analyticZetaZeroMultiplicity_positive rho
   · exact div_pos (by positivity)
@@ -137,7 +137,7 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_le_inverseSquare
       have habs := NontrivialZetaZero.abs_spectralCoordinate_im_lt_half rho
       exact (le_abs_self _).trans habs.le
     have hnum : 2 * alpha.im ≤ 1 := by linarith
-    rw [zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+    rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     change (analyticZetaZeroMultiplicity rho : ℝ) *
         (2 * alpha.im / D) ≤
       C * ((analyticZetaZeroMultiplicity rho : ℝ) / Q)
@@ -149,7 +149,7 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_le_inverseSquare
       _ ≤ (analyticZetaZeroMultiplicity rho : ℝ) * (C / Q) :=
         mul_le_mul_of_nonneg_left hrecip (Nat.cast_nonneg _)
       _ = C * ((analyticZetaZeroMultiplicity rho : ℝ) / Q) := by ring
-  · rw [zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+  · rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
     exact mul_nonneg
       (by
         unfold realBoundaryInverseSquareCoefficient
@@ -272,7 +272,7 @@ theorem riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh
       have him : (zetaSpectralCoordinate rho.1).im = 0 :=
         (riemannHypothesis_iff_spectralCoordinate_real.mp hRH)
           rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
-      rw [zetaUpperBlaschkeBoundaryDensitySummand, if_neg]
+      rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right]
       linarith
     rw [hzero, tsum_zero]
 
@@ -331,14 +331,14 @@ theorem zetaUpperBlaschkeSelectedLogDerivativeSummand_real_eq_density_mul_I
     zetaUpperBlaschkeSelectedLogDerivativeSummand (x : ℂ) rho =
       (zetaUpperBlaschkeBoundaryDensitySummand x rho : ℂ) * Complex.I := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     unfold zetaUpperBlaschkeLogDerivativeSummand
     rw [one_div_real_sub_sub_one_div_real_sub_conj hupper]
     push_cast
     ring
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
     simp
 
 /-- The selected complete logarithmic-derivative series has sum `I` times

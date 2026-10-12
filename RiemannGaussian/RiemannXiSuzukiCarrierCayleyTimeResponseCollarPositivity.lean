@@ -159,7 +159,7 @@ theorem re_neg_I_mul_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_pos
   have hsecond : 0 < Complex.normSq (z - starRingEnd ℂ alpha) := by
     apply Complex.normSq_pos.mpr
     exact sub_conj_ne_zero_of_im_pos (by simpa [z] using hy) hupper
-  rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper,
+  rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper,
     re_neg_I_mul_zetaUpperBlaschkeLogDerivativeSummand_approach_eq
       x y rho hradial]
   have hradialPos :
@@ -193,7 +193,7 @@ theorem re_neg_I_mul_zetaUpperBlaschkeLogDerivativeSummand_approach_pos
     re_neg_I_mul_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_pos
       hdelta hgap hy hySmall rho hupper
   rw [zetaUpperBlaschkeSelectedLogDerivativeSummand,
-    if_pos hupper] at hpositive
+    ite_eq_left hupper] at hpositive
   exact hpositive
 
 /-- Without selecting an upper zero explicitly, every selected summand has
@@ -212,7 +212,7 @@ theorem re_neg_I_mul_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_nonn
   · exact
       (re_neg_I_mul_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_pos
         hdelta hgap hy hySmall rho hupper).le
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
       mul_zero, zero_re]
 
 /-- Every finite signed Suzuki initial-velocity window has nonnegative real

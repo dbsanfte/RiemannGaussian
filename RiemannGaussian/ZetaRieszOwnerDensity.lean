@@ -85,7 +85,7 @@ theorem exists_density_mean_bound {h : ℝ} (hh : 0 < h) :
     exact Finset.exists_max_image _ _ ⟨lo n,Finset.mem_Icc.mpr ⟨le_rfl,(hr n hn).1⟩⟩
   choose j hj hjmax using hm
   let endpoint := fun n => if hn : n ∈ S then j n hn else 0
-  have he n (hn : n ∈ S) : endpoint n = j n hn := dif_pos hn
+  have he n (hn : n ∈ S) : endpoint n = j n hn := dite_eq_left hn
   have hr' n (hn : n ∈ S) : lo n ≤ endpoint n ∧ endpoint n ≤ 2^b := by
     rw [he n hn]
     exact ⟨(Finset.mem_Icc.mp (hj n hn)).1,

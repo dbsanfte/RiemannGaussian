@@ -62,7 +62,7 @@ theorem peelOrder_eq_order {G : Type*} [Group G] [DecidableEq G] (g : G)
     {m : ℕ} (hpos : 0<m) (hpow : g^m=1) : peelOrder g m=orderOf g := by
   induction m using Nat.strong_induction_on with
   | h m ih =>
-    rw [peelOrder, dif_pos hpos]
+    rw [peelOrder, dite_eq_left hpos]
     cases hrem : removablePrime g m with
     | none =>
       change m=orderOf g
@@ -80,7 +80,7 @@ theorem peelOrder_pos_dvd {G : Type*} [Group G] [DecidableEq G] (g : G)
     {m : ℕ} (hpos : 0<m) : 0<peelOrder g m ∧ peelOrder g m∣m := by
   induction m using Nat.strong_induction_on with
   | h m ih =>
-    rw [peelOrder, dif_pos hpos]
+    rw [peelOrder, dite_eq_left hpos]
     cases hrem : removablePrime g m with
     | none => exact ⟨hpos, dvd_refl m⟩
     | some r =>
@@ -106,7 +106,7 @@ theorem peelRounds_pow_le {G : Type*} [Group G] [DecidableEq G] (g : G)
     {m : ℕ} (hpos : 0<m) : 2^(peelRounds g m)≤m := by
   induction m using Nat.strong_induction_on with
   | h m ih =>
-    rw [peelRounds, dif_pos hpos]
+    rw [peelRounds, dite_eq_left hpos]
     cases hrem : removablePrime g m with
     | none => change (1 : ℕ)≤m; omega
     | some r =>
@@ -169,7 +169,7 @@ theorem peelPowerCount_le {G : Type*} [Group G] [DecidableEq G] (g : G)
     peelPowerCount g m≤(peelRounds g m+1)*m.primeFactorsList.length := by
   induction m using Nat.strong_induction_on with
   | h m ih =>
-    rw [peelPowerCount, peelRounds, dif_pos hpos, dif_pos hpos]
+    rw [peelPowerCount, peelRounds, dite_eq_left hpos, dite_eq_left hpos]
     cases hrem : removablePrime g m with
     | none =>
       simpa only [add_zero, zero_add, one_mul] using
@@ -203,7 +203,7 @@ theorem primePowerValues_clear_none {N m : ℕ} (g : (ZMod N)ˣ)
   obtain ⟨r, hr, rfl⟩ := List.mem_map.mp hv
   have hc := hclear r (Nat.prime_of_mem_primeFactorsList hr)
     (Nat.dvd_of_mem_primeFactorsList hr)
-  simp only [checkedSignal, hc, lt_self_iff_false, false_and, if_false]
+  simp only [checkedSignal, hc, lt_self_iff_false, false_and, ite_false]
 
 /-- For an exact positive order, a failed proper-factor scan is itself
 a clear prime-divisor certificate; whole-modulus tests are excluded. -/
@@ -227,7 +227,7 @@ theorem primePowerValues_none_clear {N m : ℕ} [NeZero N] (g : (ZMod N)ˣ)
   by_contra he
   have hproper : 1<N.gcd z.val ∧ N.gcd z.val<N := by omega
   have hsome : checkedSignal N z.val=some (N.gcd z.val) := by
-    simp only [checkedSignal, if_pos hproper]
+    simp only [checkedSignal, ite_eq_left hproper]
   rw [hsome] at hn
   contradiction
 
@@ -304,7 +304,7 @@ theorem factorAnnihilator_semiprime {p q B e : ℕ} (hp : p.Prime) (hq : q.Prime
     | some d' => exact ⟨d', by simp only [factorAnnihilator, hs]⟩
     | none =>
       refine ⟨d, ?_⟩
-      simpa only [factorAnnihilator, hs, if_pos (hm ▸ hsize)] using hd
+      simpa only [factorAnnihilator, hs, ite_eq_left (hm ▸ hsize)] using hd
 
 /-- A complete bounded collision branch: retain labels, derive their
 annihilator, reduce it and attempt the certified public factor tests. -/
@@ -359,7 +359,7 @@ theorem control_nonexact_factor (g : (ZMod 2929)ˣ)
   have hpeel := control_nonexact_peeling g hg
   have hclear := (control_small_common_certificate g hg).2
   have hscan := primePowerValues_clear_none g hclear
-  simpa only [factorAnnihilator, hpeel, hscan, show (4 : ℕ)≤4 from le_rfl, if_true] using
+  simpa only [factorAnnihilator, hpeel, hscan, show (4 : ℕ)≤4 from le_rfl, ite_true] using
     control_small_progression_result
 
 /-- The formerly unknown rough control now passes through the actual

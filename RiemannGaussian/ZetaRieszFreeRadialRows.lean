@@ -1019,7 +1019,7 @@ theorem density_bounds (S : Finset ℕ) (hS : ∀ p ∈ S, p.Prime) :
   exact ⟨mul_nonneg ZetaRieszSignedDensityMain.base_density_bounds.1
       (Finset.prod_nonneg hn),
     (mul_le_of_le_one_right ZetaRieszSignedDensityMain.base_density_bounds.1
-      (Finset.prod_le_one hn hu)).trans ZetaRieszSignedDensityMain.base_density_bounds.2⟩
+      (Finset.prod_le_one₀ hn hu)).trans ZetaRieszSignedDensityMain.base_density_bounds.2⟩
 
 private theorem physical_window_source_bound {u : ℝ} (hu : 0 ≤ u)
     (hU : u ≤ ZetaRieszWideOwnerAudit.radiusCeiling) {N : ℕ} (hN : 32 ≤ N)

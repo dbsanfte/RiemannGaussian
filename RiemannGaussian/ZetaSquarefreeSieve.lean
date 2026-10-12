@@ -69,8 +69,8 @@ theorem tendsto_zetaPrimeSquareCoefficient (D : ℕ) (S : Finset ℕ)
     filter_upwards [eventually_ge_atTop p] with K hK
     have hq : ∃ a ∈ zetaSquarePrimesThrough K, a ^ 2 ∣ n :=
       ⟨p, Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨hp.pos, hK⟩, hp⟩, hpn⟩
-    rw [zetaPrimeSquareCoefficient_eq_sieved D S _ hS n, if_pos hq,
-      zetaNonsquarefreeCoefficient, if_neg hn]
+    rw [zetaPrimeSquareCoefficient_eq_sieved D S _ hS n, ite_eq_left hq,
+      zetaNonsquarefreeCoefficient, ite_eq_right hn]
 
 /-- The full nonsquarefree arithmetic response, including every
 prime square and arbitrary further prime valuations. -/

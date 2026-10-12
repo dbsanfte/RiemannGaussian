@@ -76,8 +76,8 @@ theorem psi_measurable : Measurable (psiC c L w) := by
     funext r
     unfold psiC
     by_cases hr : r = 0
-    · rw [if_pos hr, Set.piecewise_eq_of_mem _ _ _ (by simp [hr])]
-    · rw [if_neg hr, Set.piecewise_eq_of_notMem _ _ _ (by simp [hr])]
+    · rw [ite_eq_left hr, Set.piecewise_eq_of_mem _ _ _ (by simp [hr])]
+    · rw [ite_eq_right hr, Set.piecewise_eq_of_notMem _ _ _ (by simp [hr])]
   rw [this]
   exact Measurable.piecewise (measurableSet_singleton 0) measurable_const h1
 

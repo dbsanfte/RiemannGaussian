@@ -127,12 +127,12 @@ noncomputable def centredGridSeries {N : ℕ} (g : (ZMod N)ˣ) (m w J : ℕ) :
 /-- Exact coefficients of the centered original seed moment series. -/
 theorem centredSeedSeries_coeff {N : ℕ} (g : (ZMod N)ˣ) (m r : ℕ) (hr : 0<r) :
     PowerSeries.coeff r (centredSeedSeries g m)=seedMoment g m r := by
-  simp only [centredSeedSeries,PowerSeries.coeff_mk,if_neg (Nat.ne_of_gt hr)]
+  simp only [centredSeedSeries,PowerSeries.coeff_mk,ite_eq_right (Nat.ne_of_gt hr)]
 
 /-- Exact coefficients of the centered whole-family block series. -/
 theorem centredGridSeries_coeff {N : ℕ} (g : (ZMod N)ˣ) (m w J r : ℕ) (hr : 0<r) :
     PowerSeries.coeff r (centredGridSeries g m w J)=gridMoment g m w J r := by
-  simp only [centredGridSeries,PowerSeries.coeff_mk,if_neg (Nat.ne_of_gt hr)]
+  simp only [centredGridSeries,PowerSeries.coeff_mk,ite_eq_right (Nat.ne_of_gt hr)]
 
 /-- The entire finite block family is the sum of geometric shifts of
 the original seed series. This is the exact input to the proposed
@@ -147,7 +147,7 @@ theorem centredGridSeries_shifts {N : ℕ} (g : (ZMod N)ˣ) (m w J : ℕ) :
     centredSeedSeries,PowerSeries.coeff_mk]
   by_cases hr : r=0
   · simp [hr]
-  · simp only [if_neg hr]
+  · simp only [ite_eq_right hr]
     rw [gridMoment_separable,Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro k _

@@ -216,7 +216,7 @@ theorem zero_filter_measure_bound (ρ : NontrivialZetaZero) (hρ : 1 / 2 < ρ.1.
     · exact zero_factor_bound ρ hρ ht hdepth hj hji
   change (∏ j ∈ S.erase i, Lagrange.basisDivisor (-i⁻¹) (-j⁻¹)).mahlerMeasure ≤ _
   rw [measure_prod]
-  have h := Finset.prod_le_prod (fun j _ => (Lagrange.basisDivisor (-i⁻¹) (-j⁻¹)).mahlerMeasure_nonneg) hf
+  have h := Finset.prod_le_prod₀ (fun j _ => (Lagrange.basisDivisor (-i⁻¹) (-j⁻¹)).mahlerMeasure_nonneg) hf
   simpa only [Finset.prod_const, hcard] using h
 
 /-- A complete unit-disc zero count is paid by the actual global Poisson

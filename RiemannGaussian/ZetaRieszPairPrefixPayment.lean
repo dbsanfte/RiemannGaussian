@@ -265,7 +265,7 @@ theorem joined_sub_prefix_log_bound {N : ℕ} (hN : 32≤N) {L x z : ℝ}
       have he : joinedLogCoefficient N L x z-Q=alpha*F := by
         have hnh : ¬((51/50 : ℝ)*N≤x ∧ x≤(5/4 : ℝ)*N) := fun h => (not_le_of_gt hxlo) h.1
         have hnc : ¬((51/50 : ℝ)*N≤x ∧ x≤L) := fun h => (not_le_of_gt hxlo) h.1
-        simp only [joinedLogCoefficient,if_neg hnh,if_neg hnc,
+        simp only [joinedLogCoefficient,ite_eq_right hnh,ite_eq_right hnc,
           max_eq_right (sub_nonneg.mpr hxL),max_eq_right (sub_nonneg.mpr hzL),
           max_eq_left (by linarith only [hLT] : L-x-z≤0)]
         dsimp [Q,alpha,T]
@@ -285,7 +285,7 @@ theorem joined_sub_prefix_log_bound {N : ℕ} (hN : 32≤N) {L x z : ℝ}
         have hg := head_lower_tail N hs hs1
         have hG0 := (lowerMass_bounds (N+1) (N/5+1) hs0 hs1).1
         have he : joinedLogCoefficient N L x z-Q=alpha*G := by
-          simp only [joinedLogCoefficient,if_pos (And.intro hlo' hxhi),if_pos (And.intro hlo' hxL),
+          simp only [joinedLogCoefficient,ite_eq_left (And.intro hlo' hxhi),ite_eq_left (And.intro hlo' hxL),
             max_eq_right (sub_nonneg.mpr hxL),max_eq_right (sub_nonneg.mpr hzL),
             max_eq_left (by linarith only [hLT] : L-x-z≤0)]
           rw [show ownerWeight N (z/(x+z))=1-F+G from hw]
@@ -304,13 +304,13 @@ theorem joined_sub_prefix_log_bound {N : ℕ} (hN : 32≤N) {L x z : ℝ}
         have he : joinedLogCoefficient N L x z-Q=alpha*(F-1) := by
           have hnh : ¬((51/50 : ℝ)*N≤x ∧ x≤(5/4 : ℝ)*N) := fun h => hxhi h.2
           by_cases hxL : x≤L
-          · simp only [joinedLogCoefficient,if_neg hnh,if_pos (And.intro hlo' hxL),
+          · simp only [joinedLogCoefficient,ite_eq_right hnh,ite_eq_left (And.intro hlo' hxL),
               max_eq_right (sub_nonneg.mpr hxL),max_eq_right (sub_nonneg.mpr hzL),
               max_eq_left (by linarith only [hLT] : L-x-z≤0)]
             dsimp [Q,alpha,T]
             field_simp [hLp.ne']
             ring
-          · simp only [joinedLogCoefficient,if_neg hnh,if_neg (fun h :
+          · simp only [joinedLogCoefficient,ite_eq_right hnh,ite_eq_right (fun h :
                 (51/50 : ℝ)*N≤x ∧ x≤L => hxL h.2),
               max_eq_left (by linarith : L-x≤0),max_eq_right (sub_nonneg.mpr hzL),
               max_eq_left (by linarith only [hLT] : L-x-z≤0)]
@@ -439,17 +439,17 @@ theorem joinedCoefficient_eq_log {u : ℝ} (hu : 1/2≤u)
         have he : r=q := (Nat.prime_dvd_prime_iff_eq hd.2 hq).mp hrq
         omega
       have hS : ZetaRieszUnsignedDivisorError.sieve (smallPrimes N) q=1 := by
-        simp only [ZetaRieszUnsignedDivisorError.sieve,if_pos (And.intro hq.squarefree hnone)]
-      simp only [if_pos hh,if_pos (hhead.mpr hh),headCoefficient,hlarge,hco,hlog,hS,mul_one,L]
-    · simp only [if_neg hh,if_neg (fun h => hh (hhead.mp h)),Complex.ofReal_zero]
+        simp only [ZetaRieszUnsignedDivisorError.sieve,ite_eq_left (And.intro hq.squarefree hnone)]
+      simp only [ite_eq_left hh,ite_eq_left (hhead.mpr hh),headCoefficient,hlarge,hco,hlog,hS,mul_one,L]
+    · simp only [ite_eq_right hh,ite_eq_right (fun h => hh (hhead.mp h)),Complex.ofReal_zero]
   have hcorrval : (if p*q∈correctionLabels u N then correctionCoefficient u N (p*q) else 0)=
       (((if (51/50 : ℝ)*N≤log p ∧ log p≤L then (log p+log q)/L*(L-log p) else 0) : ℝ) : ℂ) := by
     by_cases hh : (51/50 : ℝ)*N≤log p ∧ log p≤L
-    · simp only [if_pos hh,if_pos (hcorr.mpr hh),correctionCoefficient,hlarge,hlog,L]
-    · simp only [if_neg hh,if_neg (fun h => hh (hcorr.mp h)),Complex.ofReal_zero]
+    · simp only [ite_eq_left hh,ite_eq_left (hcorr.mpr hh),correctionCoefficient,hlarge,hlog,L]
+    · simp only [ite_eq_right hh,ite_eq_right (fun h => hh (hcorr.mp h)),Complex.ofReal_zero]
   have hbase : completedCoefficient L (p*q)=
       ((-(log p+log q)/L*(L-max 0 (L-log p)-max 0 (L-log q)+max 0 (L-log p-log q)) : ℝ) : ℂ) := by
-    rw [completedCoefficient,if_pos hs,
+    rw [completedCoefficient,ite_eq_left hs,
       ZetaRieszSemiprimePrefixDecay.riesz_semiprime_eq_tent L hp hq hpq.ne',hlog]
     unfold ZetaSquarefreeRieszWindows.primePairTent
     rw [max_eq_right hL.le]
@@ -458,12 +458,12 @@ theorem joinedCoefficient_eq_log {u : ℝ} (hu : 1/2≤u)
   unfold joinedCoefficient
   rw [hheadval,hcorrval]
   by_cases hn : p*q∈primeLabels N∪semiprimeLabels N
-  · simp only [if_pos hn,sub_zero]
+  · simp only [ite_eq_left hn,sub_zero]
     rw [hbase]
     unfold joinedLogCoefficient
     push_cast
     ring
-  · simp only [if_neg hn,zero_add]
+  · simp only [ite_eq_right hn,zero_add]
     rw [hbase]
     unfold joinedLogCoefficient
     push_cast

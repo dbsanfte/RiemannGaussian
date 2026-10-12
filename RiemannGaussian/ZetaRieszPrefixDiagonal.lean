@@ -31,13 +31,13 @@ theorem prefixCoefficient_square (A : Finset ℕ) (u : ℝ) (N : ℕ)
   unfold ZetaRieszCrossCompletion.prefixCoefficient
   rw [Finset.sum_eq_single p]
   · have he : p ^ 2 / p = p := by rw [pow_two, Nat.mul_div_cancel_left _ hp.pos]
-    rw [he, if_pos hpX]
+    rw [he, ite_eq_left hpX]
   · intro a ha hap
     have hnd : ¬ a ∣ p ^ 2 := by
       intro hd
       exact hap ((Nat.prime_dvd_prime_iff_eq (hA a ha) hp).mp ((hA a ha).dvd_of_dvd_pow hd))
     have hz : pairLift (SquarefreeVaughanLogSource.length u N) a (p ^ 2) = 0 :=
-      if_neg (fun h => hnd h.1)
+      ite_eq_right (fun h => hnd h.1)
     simp only [hz, ite_self]
   · exact fun h => (h hpA).elim
 
@@ -52,7 +52,7 @@ theorem norm_pairLift_square_le (u : ℝ) (N : ℕ) {p : ℕ} (hp : p.Prime)
     exact_mod_cast hpX.le
   have he : p ^ 2 / p = p := by rw [pow_two, Nat.mul_div_cancel_left _ hp.pos]
   have hd : p ∣ p ^ 2 := by rw [pow_two]; exact dvd_mul_right p p
-  rw [pairLift, if_pos ⟨hd, by simpa only [he] using hp⟩,
+  rw [pairLift, ite_eq_left ⟨hd, by simpa only [he] using hp⟩,
     Complex.norm_real, Real.norm_eq_abs, abs_div, abs_mul, abs_neg,
     abs_of_nonneg (Real.log_natCast_nonneg (p ^ 2)),
     abs_of_nonneg (Real.log_natCast_nonneg p), abs_of_pos hL]

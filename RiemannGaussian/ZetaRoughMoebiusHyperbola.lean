@@ -103,7 +103,7 @@ theorem mask_reflection (D : ℕ) {n : ℕ} (hsf : Squarefree n) (hn1 : n ≠ 1)
       have h := congrArg (fun f : ArithmeticFunction ℂ ↦ f n)
         (ArithmeticFunction.coe_moebius_mul_coe_zeta (R := ℂ))
       simpa only [ArithmeticFunction.coe_mul_zeta_apply, ArithmeticFunction.intCoe_apply,
-        ArithmeticFunction.one_apply, if_neg hn1] using h
+        ArithmeticFunction.one_apply, ite_eq_right hn1] using h
 
 /-- The original rough squarefree tail is the complementary
 logarithmic mask with its exact total Möbius sign. -/
@@ -143,7 +143,7 @@ theorem compensatedCoefficient_reflection (D : ℕ) (hD : 1 ≤ D) (S : Finset �
         exact_mod_cast ArithmeticFunction.moebius_sq_eq_one_of_squarefree hsf
       rw [RoughMoebiusIncidence.coefficient, roughCoefficient_reflection D hD S hS hsf hp hs]
       simp only [RoughMoebiusMixed.coefficient, RoughSquarefreeBare.coefficient,
-        if_pos (show Squarefree n ∧ (¬∃ a ∈ S, a ∣ n) ∧ 1 ∣ n from ⟨hsf, hs, one_dvd n⟩), one_mul]
+        ite_eq_left (show Squarefree n ∧ (¬∃ a ∈ S, a ∣ n) ∧ 1 ∣ n from ⟨hsf, hs, one_dvd n⟩), one_mul]
       linear_combination (μ n : ℂ) * logMask (n / (D + 1)) n * hm -
         mask (n / (D + 1)) n * logMask (n / (D + 1)) n * hμ
   · simp [RoughMoebiusIncidence.coefficient, zetaRoughSquarefreeCoefficient,

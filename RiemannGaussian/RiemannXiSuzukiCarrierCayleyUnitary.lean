@@ -225,6 +225,9 @@ theorem suzukiXiCarrierCayleyLpLinearMap_norm
       eLpNorm_congr_ae (suzukiXiCarrierCayleyLpLinearMap_ae f)
     _ = eLpNorm f 2 suzukiXiCarrierNevanlinnaMeasure := by
       apply eLpNorm_congr_norm_ae
+        (suzukiXiCarrierCayleyBoundaryCoordinate_mul_memLp
+          (Lp.memLp f)).aestronglyMeasurable
+        (Lp.memLp f).aestronglyMeasurable
       exact Eventually.of_forall fun x ↦ by simp
 
 /-- The Cayley multiplier as a complex-linear isometry. -/

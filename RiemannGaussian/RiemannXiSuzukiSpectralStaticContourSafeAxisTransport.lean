@@ -348,9 +348,7 @@ theorem tendsto_upperHalfPlaneVerticalLogDefect_safeAxis_atTop_zero
           (D / y ^ 2 + 1 - (2 * h) / y))
       atTop (nhds 1) := by
     convert hnum.div hden (by norm_num) using 1
-    · ext y
-      rfl
-    · norm_num
+    norm_num
   have hlog : Tendsto
       (fun y : ℝ ↦ Real.log
         ((D / y ^ 2 + 1 + (2 * h) / y) /

@@ -64,7 +64,7 @@ theorem basisStepBits_value {template r0 r1 c0 c1 : List Bool}
   have ha : bitValue (addBits c0 (mulBits (divideBits r0 r1).quotient c1).bits false).bits=
       bitValue c0+(bitValue r0/bitValue r1)*bitValue c1 := by
     rw [addBits_correct,mulBits_correct,(divideBits_correct r0 r1).1]
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero]
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero]
   have hb := coefficient_update_bound hdet hr1
   have hw : bitValue (addBits c0 (mulBits (divideBits r0 r1).quotient c1).bits false).bits<
       2^template.length := by
@@ -178,7 +178,7 @@ theorem basisLoopBits_stops_of_gcd (template threshold r0 r1 c0 c1 : List Bool)
   | nil => cases hstop
   | cons cell fuel ih =>
     by_cases hb : (subBits threshold r1 false).borrow=false
-    · simp only [basisLoopBits,if_pos hb]
+    · simp only [basisLoopBits,ite_eq_left hb]
       exact ⟨trivial,Nat.zero_le _⟩
     · have hr1 : 0<bitValue r1 := by
         have hh := subBits_borrow_false threshold r1
@@ -186,10 +186,10 @@ theorem basisLoopBits_stops_of_gcd (template threshold r0 r1 c0 c1 : List Bool)
         omega
       have hg := (nonzeroBits_correct r1).mpr hr1
       have hcstop : (gcdLoop r1 (divideBits r0 r1).remainder fuel).exhausted=false := by
-        simpa only [gcdLoop,if_pos hg] using hstop
+        simpa only [gcdLoop,ite_eq_left hg] using hstop
       have hc := ih r1 (divideBits r0 r1).remainder c1
         (basisStepBits template r0 r1 c0 c1).coefficient.bits (!negative) hcstop
-      simp only [basisLoopBits,if_neg hb,gcdLoop,if_pos hg,basisStepBits]
+      simp only [basisLoopBits,ite_eq_right hb,gcdLoop,ite_eq_left hg,basisStepBits]
       exact ⟨hc.1,Nat.add_le_add_right hc.2 1⟩
 
 /-- The same proved two-remainder halving pays sufficient literal fuel
@@ -218,21 +218,21 @@ theorem basisLoopBits_exact (template threshold r0 r1 c0 c1 : List Bool)
   | cons cell fuel ih =>
     by_cases hb : (subBits threshold r1 false).borrow=false
     · have hs := (subBits_borrow_false threshold r1).mp hb
-      rw [basisLoopBits,if_pos hb,shortRelationLoop,dif_pos hs]
+      rw [basisLoopBits,ite_eq_left hb,shortRelationLoop,dite_eq_left hs]
     · have hs : ¬bitValue r1≤bitValue threshold :=
         fun h => hb ((subBits_borrow_false threshold r1).mpr h)
       have hr1 : 0<bitValue r1 := by omega
       have hcstop : (basisLoopBits template threshold r1
           (basisStepBits template r0 r1 c0 c1).division.remainder
           c1 (basisStepBits template r0 r1 c0 c1).coefficient.bits (!negative) fuel).exhausted=false := by
-        simpa only [basisLoopBits,if_neg hb] using hstop
+        simpa only [basisLoopBits,ite_eq_right hb] using hstop
       have hc := ih r1 (basisStepBits template r0 r1 c0 c1).division.remainder
         c1 (basisStepBits template r0 r1 c0 c1).coefficient.bits (!negative)
         (basisStepBits_determinant hdet hr1) hcstop
       have hrem : bitValue (basisStepBits template r0 r1 c0 c1).division.remainder=
           bitValue r0%bitValue r1 := (divideBits_correct r0 r1).2
       rw [basisStepBits_value hdet hr1,hrem] at hc
-      rw [basisLoopBits,if_neg hb,shortRelationLoop,dif_neg hs]
+      rw [basisLoopBits,ite_eq_right hb,shortRelationLoop,dite_eq_right hs]
       exact congrArg (fun report : ShortRelationReport => {report with steps := report.steps+1}) hc
 
 /-- Every actual division has one retained frame; exhausted supplied
@@ -265,7 +265,7 @@ theorem basisLoopBits_width {W : ℕ} {template threshold r0 r1 c0 c1 : List Boo
   | nil => exact ⟨hc1,h1,hc0,h0⟩
   | cons cell fuel ih =>
     by_cases hb : (subBits threshold r1 false).borrow=false
-    · simpa only [basisLoopBits,if_pos hb] using And.intro hc1 (And.intro h1 (And.intro hc0 h0))
+    · simpa only [basisLoopBits,ite_eq_left hb] using And.intro hc1 (And.intro h1 (And.intro hc0 h0))
     · have hr1 : 0<bitValue r1 := by
         have hs : ¬bitValue r1≤bitValue threshold :=
           fun h => hb ((subBits_borrow_false threshold r1).mpr h)
@@ -274,7 +274,7 @@ theorem basisLoopBits_width {W : ℕ} {template threshold r0 r1 c0 c1 : List Boo
       have hc := ih (r0:=r1) (r1:=(basisStepBits template r0 r1 c0 c1).division.remainder)
         (c0:=c1) (c1:=(basisStepBits template r0 r1 c0 c1).coefficient.bits)
         (!negative) h1 hw.2.1 hc1 hw.2.2
-      simpa only [basisLoopBits,if_neg hb] using hc
+      simpa only [basisLoopBits,ite_eq_right hb] using hc
 
 /-- All threshold comparisons, coefficient products/additions, copied
 cells, failed first work and frame decisions are paid on every fuel path. -/
@@ -291,7 +291,7 @@ theorem basisLoopBits_cost {W : ℕ} {template threshold r0 r1 c0 c1 : List Bool
       have hc := subBits_cost threshold r1 false
       omega
     by_cases hb : (subBits threshold r1 false).borrow=false
-    · simp only [basisLoopBits,if_pos hb,List.length_cons]
+    · simp only [basisLoopBits,ite_eq_left hb,List.length_cons]
       nlinarith
     · have hr1 : 0<bitValue r1 := by
         have hs : ¬bitValue r1≤bitValue threshold :=
@@ -302,7 +302,7 @@ theorem basisLoopBits_cost {W : ℕ} {template threshold r0 r1 c0 c1 : List Bool
       have hc := ih (r0:=r1) (r1:=(basisStepBits template r0 r1 c0 c1).division.remainder)
         (c0:=c1) (c1:=(basisStepBits template r0 r1 c0 c1).coefficient.bits)
         (!negative) h1 hw.2.1 hc1 hw.2.2
-      simp only [basisLoopBits,if_neg hb,List.length_cons]
+      simp only [basisLoopBits,ite_eq_right hb,List.length_cons]
       nlinarith
 
 /-- Actual public threshold construction, input reduction, fuel and basis. -/
@@ -337,7 +337,7 @@ def shortRelationBits (modulus decoded width : List Bool) : BasisWordReport :=
 theorem widthIncrement_value (width : List Bool) :
     bitValue (addBits width [true] false).bits=bitValue width+1 := by
   rw [addBits_correct]
-  simp only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,
+  simp only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,
     Nat.mul_zero,Nat.add_zero]
 
 /-- The physically constructed public fuel always suffices, even on
@@ -359,7 +359,7 @@ theorem shortRelationBits_exact (modulus decoded width : List Bool) :
       shortRelation (bitValue modulus) (bitValue decoded) (bitValue width) := by
   have hdet : bitValue modulus*bitValue [true]+
       bitValue (divideBits decoded modulus).remainder*bitValue []=bitValue modulus := by
-    simp only [bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero,Nat.mul_one]
+    simp only [bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero,Nat.mul_one]
   have hs := shortRelationBits_stops modulus decoded width
   have hc := basisLoopBits_exact modulus
     (divideBits modulus (addBits width [true] false).bits).quotient modulus
@@ -368,7 +368,7 @@ theorem shortRelationBits_exact (modulus decoded width : List Bool) :
   change (basisLoopBits _ _ _ _ _ _ _ _).interpret=_
   rw [hc,(divideBits_correct modulus (addBits width [true] false).bits).1,
     widthIncrement_value,(divideBits_correct decoded modulus).2]
-  simp only [shortRelation,bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero]
+  simp only [shortRelation,bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero]
 
 /-- The actual basis division count respects the original value-based
 bound, independently of supplied high-zero padding. -/
@@ -463,7 +463,7 @@ theorem indexBasisBits_exact (modulus decoded bound : List Bool) :
       (SemiprimeIndexEnumeration.enumerateCoefficients
         (bitValue modulus) (bitValue decoded) (bitValue bound)).basis := by
   have he := shortRelationBits_exact modulus decoded (false::bound)
-  simp only [bitValue,bitNat,Bool.false_eq_true,if_false,Nat.zero_add] at he
+  simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add] at he
   exact he
 
 /-- The four original basis words fit the actual modulus word even

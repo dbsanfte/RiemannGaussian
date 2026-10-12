@@ -57,7 +57,7 @@ theorem lowCount_sub_mask (u y : ℝ) (N K : ℕ) :
     intro n hn
     have hnS := (Finset.mem_filter.mp hn).2.1
     change n ∉ LogarithmicDeviation.deviationBand (ZetaRieszHarmonicWindow.fewBand u N K) (7/4) (9/4) N at hnS
-    simp only [finiteCoefficient, finiteWeight, if_neg hnS, zero_sub,
+    simp only [finiteCoefficient, finiteWeight, ite_eq_right hnS, zero_sub,
       assignedCoefficient, Complex.ofReal_neg, neg_mul]
   dsimp only [lowCountResponse, residualMaskResponse, residualMaskBand]
   linear_combination -hs + he

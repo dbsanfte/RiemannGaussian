@@ -24,7 +24,7 @@ theorem cycleScale_exhausts {z w v : ℂ} (h : positiveCycle z w v) :
     cycleScale z w v * area w v = 1 ∨
     cycleScale z w v * area v z = 1 ∨
     cycleScale z w v * area z w = 1 := by
-  rw [cycleScale, if_pos h]
+  rw [cycleScale, ite_eq_left h]
   rcases le_total (area w v) (max (area v z) (area z w)) with hm | hm
   · rw [max_eq_right hm]
     rcases le_total (area v z) (area z w) with ha | ha

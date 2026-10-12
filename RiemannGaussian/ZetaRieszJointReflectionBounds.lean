@@ -39,13 +39,13 @@ theorem cost_savings_exact {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
   · by_cases h : n.primeFactors.card = 7 ∧ (outerPrimes (Real.log n-L) n).card = 2
     · have hh : Squarefree n ∧ n.primeFactors.card = 7 ∧
           (outerPrimes (Real.log n-L) n).card = 2 := ⟨hs,h⟩
-      simp only [if_pos hh]
+      simp only [ite_eq_left hh]
       exact ZetaRieszSevenPrimeReflection.seven_cost_savings hL y hs h.1 h.2
     · have hh : ¬ (Squarefree n ∧ n.primeFactors.card = 7 ∧
           (outerPrimes (Real.log n-L) n).card = 2) := fun ha => h ha.2
-      simp only [if_neg hh,ZetaRieszSevenPrimeReflection.floorCost,
+      simp only [ite_eq_right hh,ZetaRieszSevenPrimeReflection.floorCost,
         ZetaRieszSevenPrimeReflection.ceilingCost,ZetaRieszSevenPrimeReflection.lowerAllowance,
-        if_neg h,ZetaRieszReflectedPrimeBounds.floorCost,ZetaRieszReflectedPrimeBounds.ceilingCost,sub_self]
+        ite_eq_right h,ZetaRieszReflectedPrimeBounds.floorCost,ZetaRieszReflectedPrimeBounds.ceilingCost,sub_self]
       exact ⟨trivial,trivial⟩
   · have hz (b : ℕ) : ZetaRieszReflectedPrimeBounds.allowance L n b = 0 := by
       simp [ZetaRieszReflectedPrimeBounds.allowance,previousAllowance,activeAllowance,
@@ -55,7 +55,7 @@ theorem cost_savings_exact {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
     have hnew : ZetaRieszSevenPrimeReflection.lowerAllowance L n = 0 := by
       simp only [ZetaRieszSevenPrimeReflection.lowerAllowance,hz,min_eq_left hb]
       split_ifs <;> rfl
-    simp only [hs,false_and,if_false,ZetaRieszSevenPrimeReflection.floorCost,
+    simp only [hs,false_and,ite_false,ZetaRieszSevenPrimeReflection.floorCost,
       ZetaRieszSevenPrimeReflection.ceilingCost,ZetaRieszReflectedPrimeBounds.floorCost,
       ZetaRieszReflectedPrimeBounds.ceilingCost,hnew,hz,zero_mul,zero_add,sub_self,and_self]
 
@@ -85,9 +85,9 @@ theorem sum_observation_savings (S A : Finset ℕ) {L : ℝ} (hL : 0 < L)
     have hh := congrArg (fun x : ℝ => weight A N n*x) (cost_savings_exact hL y n).1
     by_cases h : Squarefree n ∧ n.primeFactors.card = 7 ∧ (outerPrimes (Real.log n-L) n).card = 2
     · have hc : 7 ≤ n.primeFactors.card := by omega
-      simp only [if_pos h,if_pos hc] at hh ⊢
+      simp only [ite_eq_left h,ite_eq_left hc] at hh ⊢
       nlinarith only [hh]
-    · simp only [if_neg h,mul_zero] at hh ⊢
+    · simp only [ite_eq_right h,mul_zero] at hh ⊢
       split_ifs <;> linarith only [hh]
   · rw [← Finset.sum_sub_distrib]
     apply Finset.sum_congr rfl
@@ -95,9 +95,9 @@ theorem sum_observation_savings (S A : Finset ℕ) {L : ℝ} (hL : 0 < L)
     have hh := congrArg (fun x : ℝ => weight A N n*x) (cost_savings_exact hL y n).2
     by_cases h : Squarefree n ∧ n.primeFactors.card = 7 ∧ (outerPrimes (Real.log n-L) n).card = 2
     · have hc : 7 ≤ n.primeFactors.card := by omega
-      simp only [if_pos h,if_pos hc] at hh ⊢
+      simp only [ite_eq_left h,ite_eq_left hc] at hh ⊢
       nlinarith only [hh]
-    · simp only [if_neg h,mul_zero] at hh ⊢
+    · simp only [ite_eq_right h,mul_zero] at hh ⊢
       split_ifs <;> linarith only [hh]
 
 /-- The same old paid boundary error transports both signs from the

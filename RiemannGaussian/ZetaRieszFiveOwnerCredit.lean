@@ -64,7 +64,7 @@ theorem density_lower {l u lam : ℝ} {a b x : Fin 4 → ℝ}
       (le_min (ha 0).le (le_max_left _ _))) (le_min (ha 0).le (le_max_left _ _))
   have hden : lam*(1-∑ i, x i)*(∏ i, x i) ≤ u*(1-∑ i, a i)*(∏ i, b i) :=
     mul_le_mul (mul_le_mul hu hxa hxp.le (hL.le.trans hu))
-      (Finset.prod_le_prod (fun i _ => (hx0 i).le) (fun i _ => (hx i).2))
+      (Finset.prod_le_prod₀ (fun i _ => (hx0 i).le) (fun i _ => (hx i).2))
       (Finset.prod_nonneg (fun i _ => (hx0 i).le))
       (mul_nonneg (hL.le.trans hu) (hxp.le.trans hxa))
   have hd0 : 0 < lam*(1-∑ i, x i)*(∏ i, x i) :=

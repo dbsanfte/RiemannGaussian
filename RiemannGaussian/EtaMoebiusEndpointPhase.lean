@@ -57,14 +57,14 @@ theorem pairedEtaUnpairedDirichletPrefix_endpoint_phase_error (rho : NontrivialZ
       unfold pairedEtaUnpairedOddEndpoint
       omega
     have he : ¬ Even m := by simpa only [Nat.not_even_iff_odd] using hm
-    rw [if_pos hm, pairedEtaDirichletSign, if_neg he]
+    rw [ite_eq_left hm, pairedEtaDirichletSign, ite_eq_right he]
     have hmPow : (m : ℂ) ^ (-rho.1) = (pairedEtaUnpairedOddEndpoint m : ℂ) ^ (-rho.1) :=
       congrArg (fun n : ℕ ↦ (n : ℂ) ^ (-rho.1)) hqm.symm
     rw [hmPow]
     push_cast
     ring
   · have he : Even m := Nat.not_odd_iff_even.mp hm
-    rw [if_neg hm, pairedEtaDirichletSign, if_pos he]
+    rw [ite_eq_right hm, pairedEtaDirichletSign, ite_eq_left he]
     push_cast
     linear_combination -hcancel
 

@@ -110,7 +110,7 @@ theorem rectangleBits_values (decoded bound : List Bool) :
       (rectangleBits decoded bound).origin.value= -(bitValue decoded : ℤ)^2 := by
   simp only [rectangleBits,subSignedBits_value,addSignedBits_value,negateWord_value,
     positiveWord_value,oneWord_value,mulBits_correct,pow_two]
-  simp only [bitValue,bitNat,Bool.false_eq_true,if_false,Nat.zero_add]
+  simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add]
   push_cast
   constructor
   · trivial
@@ -223,10 +223,10 @@ theorem bandIntervalBits_value (modulus decoded bound : List Bool)
   dsimp only
   split <;> rw [positiveLinearBits_value]
   · simp only [zeroWord_value,he.1,he.2,bandInterval,BasisLoopWordReport.interpret]
-    rw [if_pos (by assumption)]
+    rw [ite_eq_left (by assumption)]
   · rw [negateWord_value,negateWord_value]
     simp only [zeroWord_value,he.1,he.2,bandInterval,BasisLoopWordReport.interpret]
-    rw [if_neg (by assumption)]
+    rw [ite_eq_right (by assumption)]
 
 /-- Every computed original offset and both stages of line clipping. -/
 structure LineWordReport where

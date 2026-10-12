@@ -39,8 +39,8 @@ theorem riesz_eq_active (L : ℝ) (n : ℕ) (x : ℝ) :
   apply Finset.sum_congr rfl
   intro d hd
   by_cases h : Real.log d < L - x
-  · rw [if_pos h, max_eq_right (by linarith : 0 ≤ L - x - Real.log d)]
-  · rw [if_neg h, max_eq_left (by linarith : L - x - Real.log d ≤ 0), mul_zero]
+  · rw [ite_eq_left h, max_eq_right (by linarith : 0 ≤ L - x - Real.log d)]
+  · rw [ite_eq_right h, max_eq_left (by linarith : L - x - Real.log d ≤ 0), mul_zero]
 
 /-- On one divisor cell the exact profile is affine, with its signed
 slope retained instead of charged to a Lipschitz error. -/

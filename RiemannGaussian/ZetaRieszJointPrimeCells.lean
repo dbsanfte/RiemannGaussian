@@ -58,10 +58,10 @@ theorem eventually_supply_cell_lower {h α β : ℝ}
   filter_upwards [ZetaRieszFivePrimeCells.eventually_five_cell_lower hh hhu hα hβ]
     with N hN lo H A L t y hlo hH horder hL hmin hqp hmax hsat htriple
   by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
-  · simpa only [cellCredit,supplyCell,if_pos hp,max_eq_right (show
+  · simpa only [cellCredit,supplyCell,ite_eq_left hp,max_eq_right (show
       0 ≤ -Real.cos (y*t)-|y| * h by linarith)] using
       hN lo H A L t y hlo hH horder hL hmin hqp hmax hsat htriple hp
-  · simp only [cellCredit,supplyCell,if_neg hp,max_eq_left (show
+  · simp only [cellCredit,supplyCell,ite_eq_right hp,max_eq_left (show
       -Real.cos (y*t)-|y| * h ≤ 0 by linarith),mul_zero,zero_mul,Finset.sum_empty,Complex.zero_re]
     rfl
 
@@ -97,9 +97,9 @@ theorem adverse_supply_disjoint (S : Finset ℕ) (L t h y : ℝ)
     intro n hn hn'
     have hc4 := adverseCell_count S L t h y ho4 hp4 hn
     have hc5 := ZetaRieszFivePrimeCells.cell_products_count ho5 hp5 hm5
-      (by simpa only [supplyCell,if_pos hp] using hn')
+      (by simpa only [supplyCell,ite_eq_left hp] using hn')
     omega
-  · simp only [supplyCell,if_neg hp,Finset.disjoint_empty_right]
+  · simp only [supplyCell,ite_eq_right hp,Finset.disjoint_empty_right]
 
 /-- A whole finite family of literal four-prime debits is paired with
 geometrically disjoint five-prime credits. Only explicit cell geometry is
@@ -179,19 +179,19 @@ theorem eventually_joint_cell_family_floor {u h α β : ℝ}
     intro i hi
     by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
     · obtain ⟨_hlo,_hH,ho,_hmin,hqp,hmax,_hsat,_htriple⟩ := h5 i hi
-      simpa only [F5,supplyCell,if_pos hp] using
+      simpa only [F5,supplyCell,ite_eq_left hp] using
         (ZetaRieszFivePrimeCells.cell_products_subset_core j hj hu hU (by linarith)
           ho hqp hmax htlo hthi)
-    · simp only [F5,supplyCell,if_neg hp,Finset.empty_subset]
+    · simp only [F5,supplyCell,ite_eq_right hp,Finset.empty_subset]
   have hdis5 : Set.PairwiseDisjoint (↑J) F5 := by
     intro i hi v hv hiv
     by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
     · obtain ⟨_,_,hiorder,_,hiqp,himax,_,_⟩ := h5 i hi
       obtain ⟨_,_,hvorder,_,hvqp,hvmax,_,_⟩ := h5 v hv
-      simpa only [F5,supplyCell,if_pos hp] using
+      simpa only [F5,supplyCell,ite_eq_left hp] using
         (ZetaRieszFivePrimeCells.cell_products_disjoint hiorder hvorder hiqp hvqp
           himax hvmax (hsep i hi v hv hiv))
-    · simp only [F5,supplyCell,if_neg hp,Finset.disjoint_empty_left]
+    · simp only [F5,supplyCell,ite_eq_right hp,Finset.disjoint_empty_left]
   have hdis45 : Disjoint D4 D5 := by
     apply (Finset.disjoint_biUnion_left I F4 D5).mpr
     intro i hi
@@ -232,9 +232,9 @@ theorem boundary_supply_disjoint (S : Finset ℕ) (L t h y : ℝ)
     intro n hn hn'
     have hc4 := boundaryCell_count S L t h y hn
     have hc5 := ZetaRieszFivePrimeCells.cell_products_count ho5 hp5 hm5
-      (by simpa only [supplyCell,if_pos hp] using hn')
+      (by simpa only [supplyCell,ite_eq_left hp] using hn')
     omega
-  · simp only [supplyCell,if_neg hp,Finset.disjoint_empty_right]
+  · simp only [supplyCell,ite_eq_right hp,Finset.disjoint_empty_right]
 
 /-- The joint signed floor now accepts adverse cells with overlapping
 cofactor windows. Only their positive prime-log and final-window bounds
@@ -313,19 +313,19 @@ theorem eventually_joint_boundary_family_floor {u h α β : ℝ}
     intro i hi
     by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
     · obtain ⟨_hlo,_hH,ho,_hmin,hqp,hmax,_hsat,_htriple⟩ := h5 i hi
-      simpa only [F5,supplyCell,if_pos hp] using
+      simpa only [F5,supplyCell,ite_eq_left hp] using
         (ZetaRieszFivePrimeCells.cell_products_subset_core j hj hu hU (by linarith)
           ho hqp hmax htlo hthi)
-    · simp only [F5,supplyCell,if_neg hp,Finset.empty_subset]
+    · simp only [F5,supplyCell,ite_eq_right hp,Finset.empty_subset]
   have hdis5 : Set.PairwiseDisjoint (↑J) F5 := by
     intro i hi v hv hiv
     by_cases hp : Real.cos (y*t)+|y| * h ≤ 0
     · obtain ⟨_,_,hiorder,_,hiqp,himax,_,_⟩ := h5 i hi
       obtain ⟨_,_,hvorder,_,hvqp,hvmax,_,_⟩ := h5 v hv
-      simpa only [F5,supplyCell,if_pos hp] using
+      simpa only [F5,supplyCell,ite_eq_left hp] using
         (ZetaRieszFivePrimeCells.cell_products_disjoint hiorder hvorder hiqp hvqp
           himax hvmax (hsep i hi v hv hiv))
-    · simp only [F5,supplyCell,if_neg hp,Finset.disjoint_empty_left]
+    · simp only [F5,supplyCell,ite_eq_right hp,Finset.disjoint_empty_left]
   have hdis45 : Disjoint D4 D5 := by
     apply (Finset.disjoint_biUnion_left I F4 D5).mpr
     intro i _hi

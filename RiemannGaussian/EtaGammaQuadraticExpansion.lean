@@ -19,7 +19,7 @@ noncomputable section
 
 private theorem short_ne_zero_cutoff {U n : ℕ} (h : shortMoebius U n ≠ 0) : n ≤ U := by
   by_contra hn
-  exact h (if_neg hn)
+  exact h (ite_eq_right hn)
 
 /-- The original short cofactor is exactly the finite double divisor indicator, including every coefficient. -/
 theorem cofactor_short_eq_sum_dvd (U : ℕ) {n : ℕ} (hn : 1 ≤ n) :
@@ -46,15 +46,15 @@ theorem cofactor_short_eq_sum_dvd (U : ℕ) {n : ℕ} (hn : 1 ≤ n) :
     obtain ⟨ha, hb⟩ := Finset.mem_product.mp hp
     have hdiv : p.1 * p.2 ∣ n := by
       by_contra h
-      exact hp0 (if_neg h)
+      exact hp0 (ite_eq_right h)
     have hmul : 0 < p.1 * p.2 := Nat.mul_pos (Finset.mem_Icc.mp ha).1 (Finset.mem_Icc.mp hb).1
     have hx : (⟨p.1 * p.2, p⟩ : Σ m : ℕ, ℕ × ℕ) ∈
         n.divisors.sigma (fun m ↦ m.divisorsAntidiagonal) :=
       Finset.mem_sigma.mpr ⟨Nat.mem_divisors.mpr ⟨hdiv, by omega⟩,
         Nat.mem_divisorsAntidiagonal.mpr ⟨rfl, hmul.ne'⟩⟩
     refine ⟨⟨p.1 * p.2, p⟩, hx, ?_, rfl⟩
-    simpa only [shortMoebius, ArithmeticFunction.coe_mk, if_pos (Finset.mem_Icc.mp ha).2,
-      if_pos (Finset.mem_Icc.mp hb).2, if_pos hdiv] using hp0
+    simpa only [shortMoebius, ArithmeticFunction.coe_mk, ite_eq_left (Finset.mem_Icc.mp ha).2,
+      ite_eq_left (Finset.mem_Icc.mp hb).2, ite_eq_left hdiv] using hp0
   · intro x hx hx0
     have hprod := (Nat.mem_divisorsAntidiagonal.mp (Finset.mem_sigma.mp hx).2).1
     have hdiv : x.2.1 * x.2.2 ∣ n := by
@@ -62,7 +62,7 @@ theorem cofactor_short_eq_sum_dvd (U : ℕ) {n : ℕ} (hn : 1 ≤ n) :
       exact (Nat.mem_divisors.mp (Finset.mem_sigma.mp hx).1).1
     have ha := short_ne_zero_cutoff (left_ne_zero_of_mul hx0)
     have hb := short_ne_zero_cutoff (right_ne_zero_of_mul hx0)
-    simp only [shortMoebius, ArithmeticFunction.coe_mk, if_pos ha, if_pos hb, if_pos hdiv]
+    simp only [shortMoebius, ArithmeticFunction.coe_mk, ite_eq_left ha, ite_eq_left hb, ite_eq_left hdiv]
 
 /-- The complete infinite zeta cofactor of one positive product. -/
 def gammaRow (rho : NontrivialZetaZero) (A : ℝ) (m : ℕ) : ℂ :=
@@ -102,7 +102,7 @@ theorem hasSum_dvd_gammaRow (rho : NontrivialZetaZero) {A : ℝ} (hA : 0 < A)
     have h := Nat.eq_of_mul_eq_mul_left hm he
     omega
   have hz (n : ℕ) (hn : n ∉ Set.range (fun k : ℕ ↦ m * (k + 1) - 1)) : f n = 0 := by
-    apply if_neg
+    apply ite_eq_right
     rintro ⟨k, hk⟩
     have hkpos : 1 ≤ k := by
       by_contra h
@@ -117,7 +117,7 @@ theorem hasSum_dvd_gammaRow (rho : NontrivialZetaZero) {A : ℝ} (hA : 0 < A)
   convert! (summable_norm_gammaRow rho hA hm).of_norm.hasSum using 1
   ext k
   have hk : 1 ≤ m * (k + 1) := Nat.mul_pos hm (by omega)
-  simp only [Function.comp_apply, f, Nat.sub_add_cancel hk, dvd_mul_right, if_true]
+  simp only [Function.comp_apply, f, Nat.sub_add_cancel hk, dvd_mul_right, ite_true]
 
 /-- The full original quadratic is the exact finite Moebius square of complete infinite cofactor rows. -/
 theorem smoothQuadratic_eq_sum_gammaRow (rho : NontrivialZetaZero) {A : ℝ} (hA : 0 < A)
@@ -204,22 +204,22 @@ theorem moebius_common_factor (g r s : ℕ) :
       if g.Coprime r ∧ g.Coprime s then (μ g : ℂ) ^ 2 * ((μ r : ℂ) * (μ s : ℂ)) else 0 := by
   by_cases hgr : g.Coprime r
   · by_cases hgs : g.Coprime s
-    · rw [if_pos ⟨hgr, hgs⟩, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hgr,
+    · rw [ite_eq_left ⟨hgr, hgs⟩, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hgr,
         ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hgs]
       push_cast
       ring
     · have hs : ¬ Squarefree (g * s) := fun h ↦ hgs (Nat.coprime_of_squarefree_mul h)
-      rw [if_neg (by tauto), ArithmeticFunction.moebius_eq_zero_of_not_squarefree hs]
+      rw [ite_eq_right (by tauto), ArithmeticFunction.moebius_eq_zero_of_not_squarefree hs]
       simp
   · have hr : ¬ Squarefree (g * r) := fun h ↦ hgr (Nat.coprime_of_squarefree_mul h)
-    rw [if_neg (by tauto), ArithmeticFunction.moebius_eq_zero_of_not_squarefree hr]
+    rw [ite_eq_right (by tauto), ArithmeticFunction.moebius_eq_zero_of_not_squarefree hr]
     simp
 
 /-- At a supported squarefree common factor, only the two reduced Moebius signs remain. -/
 theorem moebius_common_factor_of_squarefree {g r s : ℕ} (hg : Squarefree g)
     (hgr : g.Coprime r) (hgs : g.Coprime s) :
     (μ (g * r) : ℂ) * (μ (g * s) : ℂ) = (μ r : ℂ) * (μ s : ℂ) := by
-  rw [moebius_common_factor, if_pos ⟨hgr, hgs⟩]
+  rw [moebius_common_factor, ite_eq_left ⟨hgr, hgs⟩]
   have hm : (μ g : ℂ) ^ 2 = 1 := by
     exact_mod_cast ArithmeticFunction.moebius_sq_eq_one_of_squarefree hg
   rw [hm, one_mul]

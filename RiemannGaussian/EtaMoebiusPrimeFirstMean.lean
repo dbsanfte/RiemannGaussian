@@ -37,7 +37,7 @@ theorem pairedEtaCompletedMoebiusPrimeProductAggregate_eq_original_annulus
   have hpd := (Finset.mem_filter.mp hd).2
   rw [pairedEtaCompletedMoebiusTerm_eq_completed_prefix,
     pairedEtaCompletedMoebiusTerm_eq_completed_prefix, moebius_prime_mul_eq_not_dvd hp,
-    if_neg hpd, Int.cast_neg, Nat.cast_mul, Complex.natCast_mul_natCast_cpow,
+    ite_eq_right hpd, Int.cast_neg, Nat.cast_mul, Complex.natCast_mul_natCast_cpow,
     Nat.div_div_eq_div_mul]
   ring
 

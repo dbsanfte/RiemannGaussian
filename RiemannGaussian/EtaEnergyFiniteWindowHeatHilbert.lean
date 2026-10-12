@@ -126,7 +126,7 @@ theorem finiteGaussianOddHeatKernelIntegral_eq
   unfold finiteGaussianOddHeatKernelIntegral
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq, if_neg hfreq]
+  · rw [ite_eq_right hfreq, ite_eq_right hfreq]
     unfold finiteGaussianProperTimeKernelMatrix
     simpa using gaussianOddHeatIntegral_mul_eq_inv_mul
       (sub_ne_zero.mpr hfreq) 1
@@ -143,7 +143,7 @@ theorem finiteGaussianOddHeatKernelIntegral_swap
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
   · have hrev : frequency j ≠ frequency i := Ne.symm hfreq
-    rw [if_neg hrev, if_neg hfreq]
+    rw [ite_eq_right hrev, ite_eq_right hfreq]
     push_cast
     rw [show ((frequency j : ℝ) : ℂ) - ((frequency i : ℝ) : ℂ) =
         -(((frequency i : ℝ) : ℂ) - ((frequency j : ℝ) : ℂ)) by ring,
@@ -169,7 +169,7 @@ theorem finiteGaussianOddHeatTransform_apply
   unfold finiteGaussianOddHeatTransform
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq, if_neg hfreq]
+  · rw [ite_eq_right hfreq, ite_eq_right hfreq]
     simp only [finiteGaussianProperTimeCompression, Matrix.hadamard_apply,
       finiteGaussianProperTimeKernelMatrix]
     simp_rw [← mul_assoc]
@@ -219,7 +219,7 @@ theorem finiteGaussianOddHeatTransform_apply_eq_integral_current
   unfold finiteGaussianOddHeatTransform finiteGaussianOddHeatCurrent
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq]
+  · rw [ite_eq_right hfreq]
 
 /-- Every entry of the full odd heat trajectory is genuinely integrable over
 positive proper time. -/
@@ -317,7 +317,7 @@ theorem finiteGaussianOrientedSqrtHeatKernelIntegral_eq
   unfold finiteGaussianOrientedSqrtHeatKernelIntegral
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq, if_neg hfreq]
+  · rw [ite_eq_right hfreq, ite_eq_right hfreq]
     unfold finiteGaussianProperTimeKernelMatrix
     simpa using gaussianSqrtHeatIntegral_sign_mul_eq_inv_mul
       (sub_ne_zero.mpr hfreq) 1
@@ -353,7 +353,7 @@ theorem finiteGaussianOrientedSqrtHeatTransform_apply
   unfold finiteGaussianOrientedSqrtHeatTransform
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq, if_neg hfreq]
+  · rw [ite_eq_right hfreq, ite_eq_right hfreq]
     change
       (((2 / Real.sqrt Real.pi) *
           (SignType.sign (frequency i - frequency j) : ℝ) : ℝ) : ℂ) *
@@ -387,7 +387,7 @@ theorem finiteGaussianOddHeatTransform_transpose_of_isSymm
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
   · have hrev : frequency j ≠ frequency i := Ne.symm hfreq
-    rw [if_neg hrev, if_neg hfreq, hA.apply i j]
+    rw [ite_eq_right hrev, ite_eq_right hfreq, hA.apply i j]
     push_cast
     rw [show ((frequency j : ℝ) : ℂ) - ((frequency i : ℝ) : ℂ) =
         -(((frequency i : ℝ) : ℂ) - ((frequency j : ℝ) : ℂ)) by ring,
@@ -484,7 +484,7 @@ theorem finiteGaussianOrientedSqrtHeatBilinear_eq_frequencyOffDiag
   rw [finiteGaussianOrientedSqrtHeatKernelIntegral_eq]
   by_cases hfreq : frequency i = frequency j
   · simp [hfreq]
-  · rw [if_neg hfreq, if_neg hfreq, div_eq_mul_inv,
+  · rw [ite_eq_right hfreq, ite_eq_right hfreq, div_eq_mul_inv,
       ← Complex.ofReal_inv]
 
 /-- For an injective frequency family, the heat bilinear form is literally

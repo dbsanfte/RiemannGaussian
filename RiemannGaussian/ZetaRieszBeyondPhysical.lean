@@ -95,7 +95,7 @@ theorem pairResponse_eq_large_of_beyond (keep : ℕ → Prop) (A Q : Finset ℕ)
   intro a ha
   by_cases hx : (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 ≤ a
   · simp only [hx, ite_true]
-  · rw [if_neg hx]
+  · rw [ite_eq_right hx]
     apply Finset.sum_eq_zero
     intro p hp
     split_ifs

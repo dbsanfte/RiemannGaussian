@@ -10,7 +10,7 @@ The source is Apache-2.0 licensed; see `LICENSE` and `NOTICE`. It is retained
 under the upstream `Zeta23` namespace and is not original RiemannGaussian
 research.
 
-Compatibility-only changes for this repository's Lean 4.33.1 gate:
+Compatibility-only changes made for the earlier Lean 4.33.1 gate:
 
 - deprecated set/extended-natural lemma aliases were replaced by their stated
   successors;
@@ -24,6 +24,20 @@ Compatibility-only changes for this repository's Lean 4.33.1 gate:
 - unused-binder, unused-section-variable, and unused-simp diagnostics in the
   multiplicity-aware closure were repaired without changing theorem
   statements.
+
+The current Lean 4.34.1 migration pins Mathlib to
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. It updates deprecated conditional,
+finite-product and logarithmic-derivative lemma aliases and removes a
+redundant circle-norm simplification argument. Both the package configuration
+and its standalone lockfile use the matching dependency revision.
+
+The historical `FromPNTPlus/Sobolev.lean` and `FromPNTPlus/Fourier.lean`
+copies now place their declarations in namespace `Zeta23.FromPNTPlus`.
+Their mathematical definitions and theorem statements are preserved, with
+qualified helper names. This isolates 152 overlapping global declarations
+from OpenAI's separately pinned PrimeNumberTheoremAnd compatibility port.
+OpenAI's sources remain unchanged, and this package still builds independently
+with its existing Mathlib dependency.
 
 The vendored package itself enables `warningAsError`. RiemannGaussian wrapper
 theorems are independently audited for their complete transitive axiom sets.

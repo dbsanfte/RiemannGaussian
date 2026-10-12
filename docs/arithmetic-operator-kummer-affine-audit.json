@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorKummerAffineSourceAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 41,
+    "theoremsIncludingGeneratedHelpers": 34,
+    "authoredNamespaceDeclarations": 27,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "unchangedDependenciesCompiledIntoNativeCache": [
+      "scripts.ArithmeticOperatorKummerParityAudit",
+      "RiemannGaussian.ArithmeticOperatorTwistSourceAudit",
+      "RiemannGaussian.ArithmeticOperatorSuccessorSourceAudit",
+      "RiemannGaussian.ArithmeticOperatorNonlinearSourceAudit"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "IFF literal same-row large-prime incidences and q,2q-1 both prime; both valuations ONE; exact whole native masked join; mod-three constraint with (5,3) head",
+    "actualNonlinearZeroResponse": "OPEN; NOT inferred from old linear moment/residue theorem",
+    "densitySeparation": "diagnostic at every beta+i*y has prescribed exact nonzero residue and analytic response at one",
+    "collapseAudit": "linear residue, Euler convergence and divisor incidence do not force any affine pair response; parity model kills all joined packets",
+    "independentSignedEstimate": "not attempted after failed source-INFERENCE gate; actual prime-specific nonlinear estimate remains open",
+    "endpointTransfer": "no open RH arithmetic premise discharged"
+  },
+  "scope": {
+    "selectedSector": "n even,n>=4,p>q>2 actual primes,n<p^2,n<q^2,p|G_even(n),q|G_even(n)",
+    "equivalentPrimeCurve": "n=2q,p=2q-1,q>2,both q and p prime",
+    "actualValuations": "v_p=v_q=1",
+    "wholeFiniteMasksAndPhysicalPhaseRetained": true,
+    "coefficient": "log(p)*log(q) with original row valuations before exact simplification",
+    "naturalCastInsideLogExplicit": true,
+    "localPrimeConstraint": "q=3 OR q mod 3=1",
+    "higherPowerComplementPaid": false,
+    "diagnosticRow": "g(0)=0; 2*v*n^(beta-1+i*y) on positive EVEN n, zero otherwise",
+    "genuineEulerDomain": "Re(s)>beta only",
+    "diagnosticResidue": "exact arbitrary v!=0 at beta+i*y",
+    "diagnosticDensityRemoved": "analytic at one for beta<1",
+    "invisiblePackets": "every q,2q-1 product, every finite correlated W/mask, every zero-preserving leg operation",
+    "ordinaryZeroResidueAndMultiplicityMatchedExactly": true,
+    "countermodelGrantedActualPrimesOrBinomialGammaCompatibility": false,
+    "countermodelIsGeneralizedPrimeEulerProduct": false,
+    "sourceInferenceOnlyNoGo": true,
+    "actualNonlinearAffinePrimeSourceRuledOut": false,
+    "actualPrimePairBoundEquivalentToRHClaimed": false,
+    "noGo": "a prescribed linear complex Mellin residue is insufficient to certify this nonlinear affine prime-pair detector",
+    "missingInput": "actual prime-specific nonlinear zero-response theorem for the exact prescribed masked packet, then independent signed estimate",
+    "nextAction": "move to next ranked operator interaction; do not refine affine packet or build its bound from linear source alone"
+  },
+  "literature": {
+    "GreenTaoLinearEquations": {
+      "url": "https://arxiv.org/pdf/math/0606088",
+      "access": "primary full paper opened; Lemma 1.6 and binary/infinite-complexity discussion read",
+      "relevance": "q and 2q-1 have proportional linear parts, excluded from finite-complexity asymptotic; no estimate imported"
+    },
+    "FordMaynardSieve": {
+      "url": "https://arxiv.org/html/2407.14368v1",
+      "access": "primary text opened; introduction, Type I/II hypotheses and minimum range theorem read",
+      "relevance": "requires additional Type I/II information, not an unconditional complex masked-prime-pair payment; no axioms imported"
+    }
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "literalEvenRows": 255,
+    "ceiling": 512,
+    "nativeOrderedLargePairChecks": 356349,
+    "literalPairCount": 12,
+    "actualValuationsRetained": true,
+    "allFinitePhysicalMasksRetained": true,
+    "exactRationalMaskedLedgerChecks": 20,
+    "rationalMasksAreNotActualHeightPhases": true,
+    "literalPairExamples": [
+      {
+        "n": 6,
+        "p": 5,
+        "q": 3
+      },
+      {
+        "n": 14,
+        "p": 13,
+        "q": 7
+      },
+      {
+        "n": 38,
+        "p": 37,
+        "q": 19
+      },
+      {
+        "n": 62,
+        "p": 61,
+        "q": 31
+      },
+      {
+        "n": 74,
+        "p": 73,
+        "q": 37
+      },
+      {
+        "n": 158,
+        "p": 157,
+        "q": 79
+      },
+      {
+        "n": 194,
+        "p": 193,
+        "q": 97
+      },
+      {
+        "n": 278,
+        "p": 277,
+        "q": 139
+      },
+      {
+        "n": 314,
+        "p": 313,
+        "q": 157
+      },
+      {
+        "n": 398,
+        "p": 397,
+        "q": 199
+      },
+      {
+        "n": 422,
+        "p": 421,
+        "q": 211
+      },
+      {
+        "n": 458,
+        "p": 457,
+        "q": 229
+      }
+    ],
+    "exactParityCountermodelPairChecks": 20001,
+    "exactCountermodelPacketChecks": 12,
+    "countermodelIsActualPrimeRow": false,
+    "countermodelGrantedBinomialGammaCompatibility": false,
+    "countermodelEulerSourceProof": "Lean phased_source/phased_has_source",
+    "floatingWholeHeightRegressions": [
+      {
+        "diagnosticHeight": 54,
+        "wholeLabelPhase": true,
+        "nativePacketReal": -89.25778213266597,
+        "nativePacketImag": -39.92247740976543,
+        "residualNorm": 0.0
+      },
+      {
+        "diagnosticHeight": 65,
+        "wholeLabelPhase": true,
+        "nativePacketReal": -120.79905437804896,
+        "nativePacketImag": -29.977931150622446,
+        "residualNorm": 0.0
+      },
+      {
+        "diagnosticHeight": 100,
+        "wholeLabelPhase": true,
+        "nativePacketReal": -101.0927652072646,
+        "nativePacketImag": 2.039099611193519,
+        "residualNorm": 0.0
+      },
+      {
+        "diagnosticHeight": 350,
+        "wholeLabelPhase": true,
+        "nativePacketReal": -64.23388309639333,
+        "nativePacketImag": -14.430493191272035,
+        "residualNorm": 0.0
+      }
+    ],
+    "finitePrimeMap": [
+      {
+        "qCeiling": 1000,
+        "ordinaryOddPrimes": 167,
+        "affinePrimePairs": 34,
+        "primesBlockedByModThree": 86,
+        "nonlinearActualZeroSourceInferred": false
+      },
+      {
+        "qCeiling": 10000,
+        "ordinaryOddPrimes": 1228,
+        "affinePrimePairs": 188,
+        "primesBlockedByModThree": 616,
+        "nonlinearActualZeroSourceInferred": false
+      },
+      {
+        "qCeiling": 100000,
+        "ordinaryOddPrimes": 9591,
+        "affinePrimePairs": 1165,
+        "primesBlockedByModThree": 4806,
+        "nonlinearActualZeroSourceInferred": false
+      },
+      {
+        "qCeiling": 200000,
+        "ordinaryOddPrimes": 17983,
+        "affinePrimePairs": 2025,
+        "primesBlockedByModThree": 8994,
+        "nonlinearActualZeroSourceInferred": false
+      }
+    ],
+    "wholeHigherPowerComplementPaid": false,
+    "newArithmeticEstimateOrZeroExclusion": false,
+    "nextGate": "actual nonlinear prime-specific source, not linear residue alone"
+  },
+  "historicalPinPolicy": {
+    "priorMetadata": "docs/arithmetic-operator-kummer-parity-audit.json",
+    "priorCount": 26,
+    "allPriorPinsMatchedBeforeDocumentationUpdate": true,
+    "oldPinsRewritten": false,
+    "afterwardDrift": [
+      "AGENTS.md",
+      "docs/arithmetic-operator-research.md"
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorKummerAffineSourceAudit.lean": "0ff3e6ce5c6c0902572a944b97360625a4885dd6cef5cf03da4acf467cc2c93f",
+    "scripts/probe_arithmetic_operator_kummer_affine.py": "8266f8e0df65b580289c52e3628bfe6d7a7f4dc2deca806fcfb6a3641b81ea67",
+    "scripts/ArithmeticOperatorKummerParityAudit.lean": "fbf7773d9bc10e6d162b985fa6c7d42d3929ad9217c65df13f1d4e6941bc0f17",
+    "scripts/ArithmeticOperatorKummerMinimumAudit.lean": "a4d63cbdb2e6ecfd88b3095d270cac274e0a7073940411222edfee819387ac65",
+    "RiemannGaussian/ArithmeticOperatorNonlinearSourceAudit.lean": "d8a73d0348c8143662e8cb579368e4557f6ea7b4ea0bf3cc06ef7bf1b8a20477",
+    "RiemannGaussian/ArithmeticOperatorSuccessorSourceAudit.lean": "5c1619f2647ee9bb408fddd2375a483f1fed5d31edebafa5150f114a05ed3f8a",
+    "RiemannGaussian/ArithmeticOperatorTwistSourceAudit.lean": "abbb497679676ecda642600f76b93554401311f8067d2e371f3890398d448fd2",
+    "RiemannGaussian/ArithmeticOperatorSuccessorGammaAudit.lean": "ca0ee7ef73cdfef18c8ad6ede496a180f631fe1547400ce8d5c8f706cafceabb",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ArithmeticOperatorIncidenceFreedom.lean": "52301a84d02be192ab0b0024a6dc7fff732bc42b106d353ac616fa083ace292d",
+    "RiemannGaussian/ArithmeticOperatorKummerCutoff.lean": "32df8867fa00fae9888226cc780053b8c0905c5fda52cec26a2b5ec37ae8d21e",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean": "b3b24f12111b2132e3b20c47f852de5a1c07be68f1c323f61b265ba4f8b5206b",
+    "RiemannGaussian/ZetaFiniteDirichlet.lean": "5e79ac38204ca04577c8aa96a2ca703090f991a609c7e105de577aafad69ff54",
+    "RiemannGaussian/ZetaSignedPoleControl.lean": "9bc3c95456be9e771c2c0fa666556ed4c645117dab08a265c72e9bd28ff7f61b",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Prime/Basic.lean": "b71a7d5f51c626ae6b70cbe36bab7b77a691f9a214373cfb98e170bd7e6f9aeb",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Factorization.lean": "f7e4d90e1d3d74af322feb3731f98186b4f701c747d66d822bef8a799d6d5f38",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LSeries/Basic.lean": "a8a5e0f3f9f1a5aeca34960f5f53741088dc3a394dcef28f0f9768c5450fc6c8",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LSeries/Linearity.lean": "b31eb8cb4add17c7abb65ef4490de048acd4d4d543d4d4d8ab4dad1b4c432bec",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "fd5e216b3bc2194eb71f8a45331adfb676518692aebfa88065f4e935550c514e",
+    "docs/arithmetic-operator-research.md": "08092a62fccb1a72a0d91163ed65a76cd271162c920925efb430ea0cc84a67d4",
+    ".lake/arithmetic-operator-kummer-affine/check.log": "c6fc40fbdff6c63f610d62a1a9440b6c991aa41d6e8ca50988fb3c6d29116d04",
+    ".lake/arithmetic-operator-kummer-affine/axioms.json": "8c1198021810f4cf12ae1fccd9d1c798ea2c3f4cfd4e876f432c9c8209418dbb",
+    ".lake/arithmetic-operator-kummer-affine/probe.json": "e4fb472a4ef58884b4d75042a9b2128ce1ffdbcca71c300bf085cb2bca551c5b",
+    ".lake/arithmetic-operator-kummer-affine/prior-parity-pin-check-before-doc-update.json": "1f79fd614a0fe9d414f9b96847b9cf26473508241ff738676700e9b27f639bac",
+    ".lake/arithmetic-operator-kummer-affine/prior-parity-pin-check-after-doc-update.json": "eaa587af348ce0b2dc2b797da3477ed6380a4e9d5a76e2ef5ef03caae0a005e9",
+    ".lake/arithmetic-operator-kummer-affine/ArithmeticOperatorTwistSourceAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-kummer-affine/ArithmeticOperatorSuccessorSourceAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-kummer-affine/ArithmeticOperatorNonlinearSourceAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-kummer-parity/cache.log": "238216472db294ba06bfda0863508ca1045ce24e4548d217d9be48059dc16037"
+  }
+}

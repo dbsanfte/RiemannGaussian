@@ -1,0 +1,290 @@
+{
+  "created_utc": "2026-10-08",
+  "reviewer": "/root/long_norm_escape",
+  "verdict": "PASS",
+  "report": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+    "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac",
+    "lines": 301
+  },
+  "manifest": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json",
+    "sha256": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885"
+  },
+  "pin_count": 13,
+  "pins": [
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+      "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json",
+      "sha256": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.pdf",
+      "sha256": "ed4bc9cf6b25de57f61b74e8b82d2462be11103de323b463e91a0c5320ddcda3"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.txt",
+      "sha256": "ee97eab1d2568e720700c9dad1ff6265481b5e5713b33c11eb526f91cb635cc1"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+      "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082"
+    },
+    {
+      "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+      "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0"
+    },
+    {
+      "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+      "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStagedSeed.lean",
+      "sha256": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+      "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+      "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813"
+    },
+    {
+      "path": "/tmp/semiprime-full-acquisition-20261008/kurlberg-pomerance-2005.pdf",
+      "sha256": "9d6dad98f354c8df181bda2ff04cbce74f17dd204cef10d1ea38b5223fb9c0b3"
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual_N_only_projection",
+      "verdict": "PASS",
+      "reason": "Exact original ell_N and (N\u22121)*(m!)^ell_N retained."
+    },
+    {
+      "name": "fixed_base_catalog",
+      "verdict": "PASS",
+      "reason": "Positive constant U is independent of N; all its bases are eventual units on actual factor bins."
+    },
+    {
+      "name": "fixed_monic_library",
+      "verdict": "PASS",
+      "reason": "Constant H_m has monic bounded degree, m-only O(logm)-bit coefficients and explicit polylog-bit generation."
+    },
+    {
+      "name": "post_exponent_bit_bound",
+      "verdict": "PASS",
+      "reason": "Bounded h_m(N) has O(logN) bits and is acquired in polylogN time, despite large magnitude."
+    },
+    {
+      "name": "signed_powers",
+      "verdict": "PASS",
+      "reason": "Negative exponents/post-exponents use only public known-unit inverses."
+    },
+    {
+      "name": "same_base_origin",
+      "verdict": "PASS",
+      "reason": "Unit common-origin removal preserves gcd; actual target not silently replaced."
+    },
+    {
+      "name": "complete_mixed_grid",
+      "verdict": "PASS",
+      "reason": "Coincident bases and all zero/negative exponent labels included in complete triple menu."
+    },
+    {
+      "name": "additive_identity_values",
+      "verdict": "PASS",
+      "reason": "At identity elements coefficient pattern1,1,\u22121 gives1; no globally saturated additive identity excluded."
+    },
+    {
+      "name": "same_actual_supply",
+      "verdict": "PASS",
+      "reason": "Frozen actual balanced P Q large-period/cross-period input supply retained."
+    },
+    {
+      "name": "selector_strip",
+      "verdict": "PASS",
+      "reason": "First-K predecessor implication confines Q in lengthO(M\u00b2G_m); no advised modular selector."
+    },
+    {
+      "name": "gap_vs_prime_count",
+      "verdict": "PASS",
+      "reason": "\u03a3(G+1)=O(KM) and #m=O(M) remain separate in endpoint and interval terms."
+    },
+    {
+      "name": "ell_piece_partition",
+      "verdict": "PASS",
+      "reason": "N~M6 fixed multiplicative bin allows O1 literal ell_N values; Q partitioned before z_u fixed."
+    },
+    {
+      "name": "Fermat_projection",
+      "verdict": "PASS",
+      "reason": "Within each ell piece \u0393_u=z_u^(Q\u22121) modP exactly."
+    },
+    {
+      "name": "cofactor_kill",
+      "verdict": "PASS",
+      "reason": "v_P<m gives v_P|m!, so z_u has order1 or primeR; no unsupported seed order assumption."
+    },
+    {
+      "name": "order_one_case",
+      "verdict": "PASS",
+      "reason": "z_u1 makes same-base residual1; all trivial base cases covered."
+    },
+    {
+      "name": "monic_Q_map",
+      "verdict": "PASS",
+      "reason": "(Q\u22121)h_m(Q) is monic degree1..D+1 moduloR, asP\u22611."
+    },
+    {
+      "name": "bounded_preimages",
+      "verdict": "PASS",
+      "reason": "Each k_h class has at mostD+1 Q residues by monicity; fixed coefficients essential."
+    },
+    {
+      "name": "nonzero_Laurent",
+      "verdict": "PASS",
+      "reason": "Z^L(Z^e+Z^f\u22121) degree\u22642L and value1 at1 for every exponent coincidence."
+    },
+    {
+      "name": "generator_index_roots",
+      "verdict": "PASS",
+      "reason": "At most2L subgroup roots correspond to at most2L k classes, thenO(L) Q classes."
+    },
+    {
+      "name": "interval_endpoints",
+      "verdict": "PASS",
+      "reason": "D/R+1 captures residue wraps and integer endpoints; O1 ell pieces add constants."
+    },
+    {
+      "name": "same_base_full_tuple_cost",
+      "verdict": "PASS",
+      "reason": "O(L\u00b2) pairs andO(L) roots produceL\u00b3, not an uncharged tuple union."
+    },
+    {
+      "name": "same_base_sharp_exponents",
+      "verdict": "PASS",
+      "reason": "L\u00b3(KM3.969+M4) at\u03bb.5 is KM5.469+M5.5."
+    },
+    {
+      "name": "mixed_normalization",
+      "verdict": "PASS",
+      "reason": "Dividing by \u03b8_w^G makes a,b Q-independent on fixed P,m,ell pieces, with common k_h."
+    },
+    {
+      "name": "mixed_degeneracies",
+      "verdict": "PASS",
+      "reason": "a1/b1 gives no roots; a=b\u22601 gives\u22641 root using oddP and exactR."
+    },
+    {
+      "name": "Sidon_determinant",
+      "verdict": "PASS",
+      "reason": "Distinct nonidentity a,b imply a/b exactR, so a^h\u2212b^h\u22600 for nonzeroh."
+    },
+    {
+      "name": "ordered_difference_injection",
+      "verdict": "PASS",
+      "reason": "Fixed nonzero difference determinesU=a^k and thereforek uniquely."
+    },
+    {
+      "name": "Sidon_cardinality",
+      "verdict": "PASS",
+      "reason": "s(s\u22121)\u2264R\u22121 ands\u2264sqrtR+1 follow from all ordered distinct pairs."
+    },
+    {
+      "name": "primary_subgroup_bound",
+      "verdict": "PASS",
+      "reason": "Fresh primary Kelley\u2013Owen v4 Lemma2.3 verified; direct supplied proof uses no heuristic logarithmic claim."
+    },
+    {
+      "name": "mixed_strip_split",
+      "verdict": "PASS",
+      "reason": "Per tuple M\u00b2G/sqrtR+sqrtR+1 separates interval and endpoint contributions."
+    },
+    {
+      "name": "mixed_R_bounds",
+      "verdict": "PASS",
+      "reason": "LowerR\u2265cM2.031 controls reciprocal term; upperR<P\u2264M3 controls sqrt term."
+    },
+    {
+      "name": "mixed_sharp_exponents",
+      "verdict": "PASS",
+      "reason": "One tuple KM4.9845+M5.5, \u03bb.15 full grid KM5.4345+M5.950."
+    },
+    {
+      "name": "fixed_field_library_factors",
+      "verdict": "PASS",
+      "reason": "Two field orientations and constant libraries/degree introduce only fixed factors."
+    },
+    {
+      "name": "large_tuple_scope",
+      "verdict": "PASS",
+      "reason": "Abstract Q-independent lists pay cardinality and separate bit acquisition; unrelated adaptive exponents not free."
+    },
+    {
+      "name": "same_supply_union",
+      "verdict": "PASS",
+      "reason": "New5.5/5.950 deletions unite on original supply; oldsoft5.994 remains dominant."
+    },
+    {
+      "name": "projection_acquisition",
+      "verdict": "PASS",
+      "reason": "Balanced factorial tree, logarithmic scalar power and constant \u0393 powers fit softm bits/time."
+    },
+    {
+      "name": "same_base_complete_cost",
+      "verdict": "PASS",
+      "reason": "Cached powers, all softm leaves/gcds and optional output storage fit softm."
+    },
+    {
+      "name": "mixed_complete_cost",
+      "verdict": "PASS",
+      "reason": "Cached powers and all softm^.45 triple leaves/gcds fit softm."
+    },
+    {
+      "name": "prime_menu_cost_scope",
+      "verdict": "PASS",
+      "reason": "Fixed polylog menu and inherited prime generation softB; polynomial firstK gets free coverage only."
+    },
+    {
+      "name": "unit_leaf_union",
+      "verdict": "PASS",
+      "reason": "Every survivor residual and all same-leaf products/masks/localization are units in both fields."
+    },
+    {
+      "name": "growing_seed_boundary",
+      "verdict": "PASS",
+      "reason": "No additive common-order zero invariant or free growing/adaptive seed union asserted."
+    },
+    {
+      "name": "full_frontier_scope",
+      "verdict": "PASS",
+      "reason": "Original long ANY norm, unrestricted circuits/coefficients, proper recovery and guaranteed sixth-rate full clock remain open; classical only."
+    }
+  ],
+  "required_corrections": [],
+  "source_manifest_mismatches": 0,
+  "primary_web_verification": {
+    "url": "https://arxiv.org/pdf/1510.01758v4",
+    "freshly_verified_utc": "2026-10-08",
+    "inspected": "Kelley\u2013Owen Lemmas2.2/2.3 and exact subgroup root-count proof.",
+    "fast_integer_multiplication": "Official Harvey\u2013van der Hoeven Annals2021 statement freshly opened on2026-10-08."
+  },
+  "line_count_convention": "Logical CR/LF byte lines; PDF-extracted form feeds do not add lines.",
+  "classical_only": true,
+  "new_lean_claim": false,
+  "full_goal_complete": false,
+  "arbitrary_scalar_lower_bound": false,
+  "source_and_report_bytes_unchanged_by_reviewer": true
+}

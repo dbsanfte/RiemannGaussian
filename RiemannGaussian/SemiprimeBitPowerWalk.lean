@@ -66,7 +66,7 @@ theorem powerBits_correct (modulus a exponent : List Bool) :
       (bitValue a^bitValue exponent)%bitValue modulus := by
   induction exponent with
   | nil =>
-    simpa only [powerBits,bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero,pow_zero]
+    simpa only [powerBits,bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero,pow_zero]
       using (divideBits_correct [true] modulus).2
   | cons bit exponent ih =>
     have hs : bitValue (modMulBits (powerBits modulus a exponent).bits
@@ -75,14 +75,14 @@ theorem powerBits_correct (modulus a exponent : List Bool) :
       rw [modMulBits_correct,ih,←Nat.mul_mod]
     cases bit with
     | false =>
-      simp only [powerBits,Bool.false_eq_true,if_false]
+      simp only [powerBits,Bool.false_eq_true,ite_false]
       rw [hs]
-      simp only [bitValue,bitNat,Bool.false_eq_true,if_false,Nat.zero_add]
+      simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add]
       rw [Nat.mul_comm 2 _,pow_mul,pow_two]
     | true =>
-      simp only [powerBits,if_true]
+      simp only [powerBits,ite_true]
       rw [modMulBits_correct,hs,(divideBits_correct a modulus).2,←Nat.mul_mod]
-      simp only [bitValue,bitNat,if_true]
+      simp only [bitValue,bitNat,ite_true]
       have he : 1+2*bitValue exponent=bitValue exponent+bitValue exponent+1 := by omega
       rw [he,pow_succ,pow_add]
 
@@ -335,7 +335,7 @@ theorem powerBits_countedPower_counts (modulus a exponent : List Bool)
   | nil =>
     intro _hc
     have hz : countedPower (bitValue modulus) (bitValue a) 0=
-        ⟨1%bitValue modulus,0,0,1⟩ := by rw [countedPower,dif_pos rfl]
+        ⟨1%bitValue modulus,0,0,1⟩ := by rw [countedPower,dite_eq_left rfl]
     simp only [powerBits,bitValue,hz,and_self]
   | cons bit exponent ih =>
     intro hc
@@ -345,29 +345,29 @@ theorem powerBits_countedPower_counts (modulus a exponent : List Bool)
       simp only [hz,Nat.zero_add,List.length_cons] at hc
       norm_num at hc
     have hd : bitValue (bit::exponent)/2=bitValue exponent := by
-      cases bit <;> simp only [bitValue,bitNat,Bool.false_eq_true,if_false,if_true] <;> omega
+      cases bit <;> simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,ite_true] <;> omega
     have hh := clog_halving he
     rw [hd] at hh
     have ht : exponent.length=Nat.clog 2 (bitValue exponent+1) := by
       simp only [List.length_cons] at hc
       omega
     have hi := ih ht
-    rw [powerBits,countedPower,dif_neg (Nat.ne_of_gt he),hd]
+    rw [powerBits,countedPower,dite_eq_right (Nat.ne_of_gt he),hd]
     dsimp only
     cases bit with
     | false =>
       have hp : bitValue (false::exponent)%2=0 := by
-        simp only [bitValue,bitNat,Bool.false_eq_true,if_false]
+        simp only [bitValue,bitNat,Bool.false_eq_true,ite_false]
         omega
-      rw [if_pos hp]
-      simp only [Bool.false_eq_true,if_false]
+      rw [ite_eq_left hp]
+      simp only [Bool.false_eq_true,ite_false]
       omega
     | true =>
       have hp : ¬bitValue (true::exponent)%2=0 := by
-        simp only [bitValue,bitNat,if_true]
+        simp only [bitValue,bitNat,ite_true]
         omega
-      rw [if_neg hp]
-      simp only [if_true]
+      rw [ite_eq_right hp]
+      simp only [ite_true]
       omega
 
 /-- The earlier natural binary power's positive-modulus result is the
@@ -399,7 +399,7 @@ theorem constructBitRows_raw_values {modulus active inverse centre block : List 
       (countedPower (bitValue modulus) (bitValue inverse) (2*B)).value := by
     rw [powerBits_correct,hb,countedPower_mod_value hN]
   constructor
-  · simpa only [constructBitRows,buildRawSource,ht,bitValue,bitNat,if_true,
+  · simpa only [constructBitRows,buildRawSource,ht,bitValue,bitNat,ite_true,
       Nat.mul_zero,Nat.add_zero] using walkBits_values modulus [true] active template 0
   · simpa only [constructBitRows,buildRawSource,ht,hp,hq] using
       walkBits_values modulus (powerBits modulus active centre).bits

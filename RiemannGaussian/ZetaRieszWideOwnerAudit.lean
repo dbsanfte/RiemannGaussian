@@ -259,7 +259,7 @@ private theorem owner_log_data {n : ℕ} (hn : Squarefree n)
         apply Finset.sum_le_sum
         intro p hp'
         have hpmax : p ≤ largestPrime n := by
-          rw [largestPrime, dif_pos (show n.primeFactors.Nonempty from ⟨p, hp'⟩)]
+          rw [largestPrime, dite_eq_left (show n.primeFactors.Nonempty from ⟨p, hp'⟩)]
           exact Finset.le_max' _ _ hp'
         exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp').pos)
           (by exact_mod_cast hpmax)
@@ -309,7 +309,7 @@ private theorem owner_mass_atom {L : ℝ} (hL : 0 < L) (y : ℝ) (N k : ℕ)
   rw [hm, originalAtom_eq_phase hL y N hn hnp]
   unfold ZetaRieszJointCofactor.compositeAtom
   dsimp only [eligibleCofactor] at hel
-  rw [if_pos hel, he]
+  rw [ite_eq_left hel, he]
   rw [mul_assoc (-(VaughanLogAverage.riesz L n : ℂ)),
     kernel_split_phase hpp (Nat.pos_of_ne_zero hn.ne_zero) hpd]
   simp only [Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_pow, Complex.ofReal_natCast]

@@ -44,7 +44,7 @@ theorem wrong_owner_share {n p : ℕ} (hn : Squarefree n) (hn1 : 1 < n)
     (hl : largestPrime n ∈ n.primeFactors) (hp : p ∈ n.primeFactors)
     (hne : p ≠ largestPrime n) : Real.log p/Real.log n ≤ 1/2 := by
   have hmax : p ≤ largestPrime n := by
-    rw [largestPrime, dif_pos (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
+    rw [largestPrime, dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   have hlog : Real.log p ≤ Real.log (largestPrime n) := Real.log_le_log
     (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos) (by exact_mod_cast hmax)
@@ -310,7 +310,7 @@ theorem markedPacket_riesz_expansion (u y : ℝ) (N K : ℕ) :
     Complex.ofReal_ne_zero.mpr (Real.log_pos (by exact_mod_cast hb.nontrivial)).ne'
   have hL : (SquarefreeVaughanLogSource.length u N : ℂ) ≠ 0 :=
     Complex.ofReal_ne_zero.mpr (SquarefreeVaughanLogSource.length_pos u N).ne'
-  rw [residualCoefficient, SquarefreeVaughanLogSource.coefficient, if_pos ⟨hb.squarefree, hnp⟩]
+  rw [residualCoefficient, SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hb.squarefree, hnp⟩]
   simp only [Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
   field_simp [hlog, hL]
 

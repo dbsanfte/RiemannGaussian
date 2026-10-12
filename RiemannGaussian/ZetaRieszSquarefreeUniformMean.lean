@@ -176,7 +176,7 @@ private theorem moving_main_le (E : ℝ)
         apply Finset.sum_congr rfl
         intro d _
         by_cases hd : R*d < n <;> simp only [mul_max,max_lt_iff,ite_and,hd,
-          if_true,if_false,Finset.sum_const_zero]
+          ite_true,ite_false,Finset.sum_const_zero]
       _ = ∑ d ∈ Finset.Icc 1 ((n-1)/R), ∑ e ∈ Finset.Icc 1 ((n-1)/R),
           (μ d : ℝ)*(μ e : ℝ)/(Nat.lcm d e : ℝ) := by
         rw [moving_prefix_eq R (X/R) n hR hn0 hk]

@@ -16174,3 +16174,2210 @@ OPEN. Preserve every previous positive result, no-go and semiprime file.
 Do not restart the closed rowwise/SBP or carry/gcd estimation routes without
 new prime-specific input. No subagents are authorized. After this
 publication, further research remains local until instructed otherwise.
+
+## Exceptional carry determinant follow-up, 2026-10-06
+
+The current user prioritizes the exceptional analytic equation before any
+further prime/carry estimates. Keep rowwise/SBP payment and carry/gcd
+estimation closed. Work locally without subagents, commits/pushes, root
+registration, public metadata or wider checks until instructed otherwise.
+
+Preserve `SuzukiCarryExceptionalPhase`, `SuzukiCarryPhaseScaleGate`,
+`SuzukiCarrySmallCell`, `SuzukiCarryCellCertificate`, `SuzukiCarryRealJet`
+and `SuzukiCarryExceptionalGate`. The real-exponent jet has a proved
+uniform lower bound B_beta>=1/2000 for beta>=15/16, from exact rational
+Bernstein certificates. No numerical beta-denominator premise remains.
+
+The alternative four-response code uses same-amplitude phase contrasts
+at H and2H, each with its own zero coefficient sum, then cancels the pole
+exactly. Its normalized source determinant is
+(2^p-2^beta)*(F(p,tau)-F(p,0))*(F(beta,tau)-F(beta,0)). Re(p)=1>beta
+proves the scale factor nonzero. Actual jet expansions provide a common
+fixed positive tau and cofinal native source lower bound whenever
+(B_(1-iy),C_(1-iy)) is nonzero, without a nonzero-wedge premise. Different
+leading jet orders are allowed. This is a proved escape from proportional
+nonzero quartic jets, not universal all-height source-detector closure.
+
+The sole remaining jet-based gate is simultaneous complex coefficient
+vanishing B_(1-iy)=C_(1-iy)=0. Its emptiness at |y|>=54 is NOT proved.
+The exact quartic exceptional locus is the common-zero case, or, when
+B_(1-iy)!=0, a real ratio C_(1-iy)/B_(1-iy)=C_beta/B_beta. Do not call
+this equation an enumeration or a proof of emptiness.
+
+The literal small-cell bounds |gB(x)|<=10*x^2, |gC(x)|<=24*x^2 improve
+the actual cell tails to constants10,24 times
+(12/(N+1))^(Re(s)+2)/(Re(s)+2), forN>=11. Tail precision below10^-18
+atRe(s)=1 after32,000,000 cells is checked; the finite prefix has not
+thereby been evaluated or outward rounded.
+
+Optional exceptional detectors find a suspected point near height
+202268.98326694675, beta0.9999785531654. Arb brackets prove a root only
+for the explicit boundary/Hurwitz model. Its identification with literal
+Mellin coefficients remains unproved in Lean; the separate million-cell
+floating cross-check is diagnostic. Never promote that model root or
+prefix to a certified actual quartic exception or a zeta zero.
+
+Use scripts/CheckSuzukiCarryExceptional.lean for focused namespace and
+all-declaration standard-axiom checks. Source detector statements remain
+separate from the independent signed prime estimate. No new zero-free or
+RH conclusion follows. See docs/suzuki-carry-collapse.md and the separate
+local exceptional audit; preserve the historical/publication audits.
+
+## All-jet carry source-detector closure, 2026-10-06
+
+The user explicitly permits an all-jet bypass of the literal B/C common-zero
+question. `SuzukiCarryAllJetGate` now proves that bypass for the unchanged
+continuum response and four-response phase/scale code. For every y!=0 and
+19999/20000<=beta<1, a fixed positive modulation has a nonzero limiting
+determinant and a cofinal native lower bound of order H^(1+beta). There is
+no nonzero B/C/wedge, exposed-zero or floating certificate premise.
+
+The exact ordinary lag quadrature retains every endpoint and bounds its
+remainder by2*v/h. The signed small-lag spectrum has leading coefficient
+-2*eta(-iy)/3, proved nonzero at every nonzero height. Eta here is its
+entire continuation, not a divergent ordinary series on Re=0. The actual
+spectral integral is established first in the absolute-convergence domain,
+then by analytic continuation with bulk and correction joined. Integrable
+source density, entire bounded-coordinate cosine transform and finite
+measure characteristic-function uniqueness prove nonzero literal contrasts
+arbitrarily close to positive zero. The real jet margin chooses a common
+modulation; exact native Mellin convergence transfers the determinant.
+
+This supersedes the earlier OPEN common-zero alternative only as a source
+detector gate. The literal question B_(1-iy)=C_(1-iy)=0 is still unresolved;
+do not claim either coefficient is universally nonzero. The former quartic
+exceptional equation and all exploratory model-root caveats remain valid.
+
+The independent signed prime/Chebyshev estimate, Suzuki floor, zero exclusion
+and RH remain OPEN. Rowwise/SBP and generic carry/gcd reindexing alone give
+no such estimate. Do not reopen those payment classes or add another
+equivalent prime carrier without new arithmetic input.
+
+Continue locally: no subagents, commits/pushes, root registration, public
+metadata or wider gates until instructed otherwise. Preserve prior positive
+results, no-gos and semiprime work. Use the expanded
+scripts/CheckSuzukiCarryExceptional.lean for14 namespace linters per module
+and standard-axiom checks of all declarations, including private/generated
+ones. See docs/suzuki-carry-collapse.md and the local exceptional audit.
+
+## Arithmetic operator roadmap goal, 2026-10-06
+
+The user has explicitly started the goal in
+`/home/dbsanfte/riemann/arithmetic_operator_research_roadmap.md`. Follow its
+Tier-1 recommended order, beginning with Kummer/Gamma/cutoff geometry.
+Every candidate requires: exact finite integer identity; nonzero zero-mode
+response; density/pole cancellation preserving that source; arbitrary-weight,
+smooth-density and generalized-prime audits; only then an independent signed
+or PSD estimate. A new carrier/determinant/Gram or equivalent RH criterion
+is not arithmetic progress. Freeze a failed candidate at its precise scope
+and move to the next interaction. Do not declare all nonlinear versions of
+an interaction impossible from one linear or shared-column no-go.
+
+The goal remains active: no RH premise has been discharged. Work locally
+without subagents, commits/pushes, root registration, public README/explorer
+metadata or broader gates until instructed otherwise. Preserve all prior
+positive results, no-gos, all-jet source closure and semiprime work.
+
+Keep the `ArithmeticOperator*` audit leaves. The complete finite balanced
+linear floor/Gamma Mellin observation annihilates an actual zeta-zero mode;
+the physical boundary has a uniform `1/Re(s)` diagnostic bound. This does
+NOT bound a literal height-twisted Mangoldt sum: twisting removes the known
+Gamma evaluation. An unrestricted all-height twisted Kummer/GCD PSD claim
+has an actual-prime negative diagonal above height54; this head example
+does not refute a paid-head cofinal bulk theorem at a hypothetical ordinate.
+
+For FIXED positive Ramanujan moduli, use the stated divisor convention.
+Principal centering kills every coprime prime power. The exceptional powers
+below2^J embed in divisors ofq^J and have mass at mostJ*log(q). Their phased
+correction is source-small for every positive power exponent; the entire
+centered code thus loses the matched source. Growing moduli and shifted
+prime correlations are not covered. Primitive-character identification and
+infinite Ramanujan convergence must not be assumed.
+
+The growing coprime-channel prototype is now audited through moduli
+`q <= X^(1/4)` with code coefficients of norm at most one. Exact principal
+centering makes the full literal statistic `o(X^beta)` for every
+`beta > 3/4`; this loses the campaign source. Do not reopen that class.
+Faster/larger/nonprincipal modular codes and shifted-prime correlations
+remain separate, untested mechanisms. Neither this nor the fixed-modulus
+result assumes a convergent infinite Ramanujan expansion.
+
+The complete cutoff GCD quadratic is an arbitrary-weight incidence Gram.
+Its usual PSD holds for any nonnegative column measure. Cancellation of a
+strictly positive REAL density by one PSD quadratic kills all its columns
+and all signed sources; do not apply this lemma to a complex twisted pole
+density. Shared-column successor correlations are unit-supported and fixed
+lags see only divisors of the lag. Different-prime-column correlations remain
+separate candidates. The natural logarithmic LCM quadratic is also audited:
+on zero-mean row coefficients it is exactly minus the GCD Gram. Its
+conditional sign and positive-real-density cancellation supply no further
+source-sensitive restriction. Nonlinear LCM kernels are outside this claim.
+Keep the earlier rowwise/SBP carry route closed.
+
+Crucial countermodel distinction: all exact integer Gamma observations are
+NOT free-weight data. `ArithmeticOperatorFactorialUniqueness` proves finite
+prefix injectivity and uniqueness of the actual Mangoldt coefficients from
+those observations. A counterfeit/smooth/generalized measure need not
+satisfy them. The missing theorem is source-sensitive quantitative control
+using the exact constraints, not another identity determining the sequence.
+
+Two additional Kummer/Gamma gates are now checked. Bounded same-base
+cross-power covariance below cutoff `X` costs at most
+`O(sqrt(X) log^3(X))`; the literal Fejer specialization retains every
+prime-power phase, and has the SAME campaign source as its old signed
+diagonal. Correlations between DIFFERENT prime columns are not covered.
+The exact phased Gamma evaluation requires the cofactor phase as well:
+its coefficient series is `-zeta'(s+i*y)`, so it annihilates the zero
+residue. Prime-leg-only twisting leaves the exact `twistCommutator`
+unpaid. Do not silently use the Gamma evaluation for that commutator.
+
+`ArithmeticOperatorFloorInverseAudit` proves that at a diagnostic strip
+zero no inverse allowance polynomial in logarithmic scale recovers the
+power source from the bounded physical floor response. This distinguishes
+exact finite uniqueness from stable source-sensitive inversion; it does
+not construct a counterfeit measure satisfying every Gamma observation.
+
+Keep the six follow-up audit leaves as well. `ArithmeticOperatorLcmCutoffAudit`
+retains distinct divisor columns and the exact common-multiple floor kernel;
+its squared-row PSD is free for every complex column array. Complete Gamma
+cofactor twisting makes that quadratic height independent, so centered height
+codes delete the entire response. Signed prime-specific LCM discrepancies
+remain separate. `ArithmeticOperatorGcdMinorAudit` has actual negative ordered
+prime minors beyond every fixed head; do not upgrade global PSD to total
+nonnegativity or pretend a fixed head payment cures this.
+
+`ArithmeticOperatorMovingFloorCode` allows growing row sets and arbitrary
+physical cutoffs. The zero-mode response is source-small when its total complex
+coefficient budget has an exponential rate strictly below the source rate,
+with arbitrary polynomial overhead. It does not bound a literal prime sum or
+nonlinear products. `ArithmeticOperatorSmoothGramAudit` reuses the exact smooth
+density control: its FULL factorial moments tend to -m while its density is
+positive on the tail and all fixed inverse-log envelopes/free Grams hold.
+This control does not satisfy the complete exact integer Gamma observations.
+
+`ArithmeticOperatorSuccessorGammaAudit` keeps both successor divisor rows and
+all prime-power phases. The cofactor-twisted Gamma correlation minus its integer
+reference costs only O_y(log^3 X), hence is source-blind at every positive power
+scale. Its exact signed difference from the prime-leg-only correlation remains
+UNPAID. Do not count its bookkeeping or the paid Gamma estimate as an RH bound;
+any attack on the discrepancy must first prove a nonzero actual zero response
+and an endpoint connection.
+
+`ArithmeticOperatorCharacterSourceAudit` tests fixed nonprincipal character
+codes, with exact finite and genuine Euler-domain joining. Both residue density
+and the pole cancel. A retained nonzero matched source at an actual zeta zero
+forces a common zero of a retained nonprincipal L-function. Neither existence
+nor absence of these common zeros is proved. This is NOT unconditional decay
+of every nonprincipal code; uniform growing-modulus source information remains
+open. Do not assume a convergent infinite expansion or a common-zero conjecture.
+
+`ArithmeticOperatorCrtBoundaryAudit` retains the complete successor
+cross-column join and proves `gcd(d,e)|h` at every nonzero incidence.
+Its actual-prime cofinal no-go is stronger than an arbitrary-array
+counterexample: at `X=4*2^J`, the full absolute CRT completion debit is
+at least `X/64` eventually, and its `X^beta` normalization diverges for
+every `beta<1`, at every height. All prime powers remain in that debit;
+two disjoint large-prime bands give its lower bound. Do not reopen
+termwise CRT-boundary payment. The JOINED SIGNED boundary, its zero
+source response and its endpoint connection remain separate open tasks.
+Do not infer a fixed-shift prime estimate from an almost-all-shifts
+theorem or differentiate an integer-order divisor theorem in an
+unstated complex parameter.
+
+`ArithmeticOperatorTwistSourceAudit` gives the LINEAR prime-leg-only
+commutator's genuine Euler response and actual matched residue
+`-m*zeta(beta) != 0`, without exposure or simplicity. Its finite cubic
+dilation code cancels both diagnostic density exponents (including the
+logarithmic companion) and retains the selected source. But every native
+quotient/mask joins to an arbitrary-weight scalar kernel; the delta-weight
+bound criterion supplies no prime-specific signed estimate. Freeze the
+linear bookkeeping route. Do not call the discrepancy paid, infer a
+literal cutoff asymptotic from its local meromorphic residue, or apply
+this linear collapse to the NONLINEAR successor statistic. The full
+actual Gamma constraints remain special, not free-weight data.
+
+`ArithmeticOperatorTwistedBulkAudit` strengthens the twisted GCD/Gaussian
+PSD audit beyond the earlier head example. At EVERY fixed nonzero height
+and after EVERY fixed head there are negative actual-prime diagonals.
+This includes each nontrivial-zero ordinate; usual unit-diagonal Gaussian
+Schur factors preserve the obstruction. Freeze unrestricted bulk twisted
+GCD PSD. Do not extend this claim to a particular signed projection or a
+different Kummer Hessian.
+
+`ArithmeticOperatorGammaHierarchyAudit` closes all FIXED FINITE
+Dirichlet-convolution hierarchies of complete Gamma-compatible legs.
+Their genuine Euler response is a product of shifted zeta derivatives,
+analytic throughout the open strip. Fixed finite codes with analytic
+transform coefficients are source-blind. Do not reopen by increasing the
+fixed convolution degree; literal masks, inverse-zeta factors, pointwise
+products and prime-only successor discrepancies are outside the theorem.
+
+`ArithmeticOperatorIncidenceFreedom` proves finite Möbius surjectivity:
+every positive-index row vector comes from a finite complex divisor-column
+array. All-weight row PSD is just ordinary matrix PSD, and successor
+correlations have both unbounded signs even with unit column zero.
+Those arrays are NOT positive actual-prime measures or exact Gamma data.
+Freeze free-weight rank/PSD claims; a genuine prime-specific signed
+constraint remains open and cannot be inferred from this collapse.
+
+`ArithmeticOperatorFullRamanujanAudit` audits growing prime moduli through
+the entire physical cutoff. The normalized correction `(c_p(n)+1)/p`
+is exactly `1[p|n]`. A retained unit-modulus term makes the common coprime
+coefficient zero, but every actual Mangoldt label is restored exactly,
+including proper powers and ANY phase/mask/factorial weight. Its complete
+Euler response is the original shifted negative logarithmic derivative:
+both pole and nonzero multiplicity source remain. Freeze this full-scale
+normalized prime-modulus prototype. Principal centering is not density
+separation when the exceptional set itself covers every prime. Other
+intermediate codes and growing nonprincipal source gates remain open.
+
+`ArithmeticOperatorSuccessorPowerAudit` proves a genuine but source-blind
+integer-prime fact: if both consecutive raw labels have nonzero Mangoldt
+weight, the even endpoint is a power of two. With EVERY proper power,
+literal endpoint and both phases retained, the full raw successor sum at
+`X=2^J` has norm at most `16*log(2)^2*(J+1)^3`. It is `o(X^beta)` for
+EVERY `beta>0`. Freeze this raw-successor detector after the failed
+source gate. Do not apply its sparse bound to dense divisor-convolution
+rows (`primeCross` or `signedDiscrepancy`), or to even-lag prime pairs.
+
+Use `scripts/CheckArithmeticOperatorRoadmap.lean` for focused warning-free
+leaf checks,14 namespace linters and standard-axiom audits of all declarations.
+Record exact source pins and scope in `docs/arithmetic-operator-audit.json`.
+The scorecard and precise remaining coverage are in
+`docs/arithmetic-operator-research.md`. Do not mark the research goal complete
+merely because several prototypes have failed; richer Tier-1 cross-column
+and growing-modulus interactions still require their own gates.
+
+`ArithmeticOperatorSuccessorSourceAudit` keeps the exact Gamma-subtracted
+successor join: two mixed linear kernels (different `X`/`X+1` endpoints)
+plus the pure commutator quadratic. Its positive power-mode shell is a
+DIAGNOSTIC, not an actual arithmetic quadratic asymptotic.
+`ArithmeticOperatorNonlinearSourceAudit` refutes inference of that
+quadratic source from a linear Mellin pole alone: the even-row model has
+the SAME nonzero residue, genuine Euler convergence and no density pole,
+yet successor response is identically zero. The model does NOT satisfy
+all exact actual Gamma data or a generalized-prime Euler product. Freeze
+that shortcut; a nonlinear source theorem using actual prime correlations
+is separate required input. Do not call the actual discrepancy paid.
+
+`ArithmeticOperatorRamanujanFreedom` covers arbitrary weighted
+prime-modulus codes at EVERY finite scale. With unit modulus retained,
+principal centering permits every finite prime-tower profile; at actual
+Mangoldt weights the entire code is just scalar base-prime reweighting,
+with any original phase/mask/factorial kernel retained. Freeze coefficient
+tuning in that prototype. This does NOT cover arbitrary composite-modulus
+codes or the nonprincipal common-L-zero/uniform source gate.
+
+`ArithmeticOperatorCofactorParityAudit` distinguishes COFACTOR coding
+from a character on the prime leg. Its exact period-four dyadic cofactor
+retains actual `-m*G_y(beta) != 0` and cancels both density residues,
+with true punctured limits. No common nonprincipal L-zero is needed.
+But its complete cutoff is a nonzero arbitrary-weight scalar kernel;
+there is no all-weight bound at ANY positive cutoff. Freeze this linear
+cofactor-code prototype. Do not turn its source/pole identities into a
+paid discrepancy or generalize the prime-leg common-zero gate to it.
+
+`ArithmeticOperatorCompositeRamanujanFreedom` now covers all finite
+DIVISOR-FORM composite moduli through the physical cutoff with unrestricted
+coefficients. The exact integer sum `sum_(q|d)c_q(n)=d*1[d|n]`, followed
+by finite Möbius inversion, realizes EVERY profile `g(1)=0` while retaining
+principal centering. Proper prime-power exponents and all native phases
+and masks remain exact. One code restores the WHOLE Mangoldt sum for
+every test weight. Freeze coefficient tuning in this unrestricted class.
+Useful intermediate coefficient budgets, nonprincipal character source
+gates and nonlinear cross-column arithmetic are not covered. The prior
+prime-only freedom leaf remains valid but is no longer the widest scope.
+No free-profile countermodel is claimed to satisfy exact actual Gamma data.
+
+`ArithmeticOperatorGammaInverseAudit` covers the same-phase complete
+Gamma/divisor forward row followed by the same-phase Möbius inverse.
+Its exact round trip restores `w(n)*n^(-i*y)` for ANY positive-index
+array. The dyadic cofactor code retains the source and cancels both poles,
+but its cutoff is the SAME original scalar packet. Actual integer inverse
+norm payment has `fullDebit(4H,y)>=H*log(2)`, hence diverges after every
+strip-source normalization `X^beta`, `beta<1`. Freeze this round trip and
+absolute inverse-fiber payment. Mixed-height inverses, nonlinear masks
+and signed cross-column arithmetic are outside the claim.
+
+`ArithmeticOperatorFixedLagSourceAudit` refutes nonlinear source inference
+from a linear Mellin pole for ANY finite fixed off-diagonal lag family,
+and even all additive patterns in one fixed finite offset set. A periodic
+integer row keeps the EXACT nonzero matched residue and has no density
+pole, yet every such pattern vanishes at every cutoff with arbitrary
+correlated masks/phases and zero-preserving leg functions. Its divisor
+incidence realization is exact. This model is NOT actual Mangoldt,
+does NOT satisfy all exact actual Gamma data, and is NOT a generalized
+prime Euler product. Growing unbounded offsets, diagonal-only statistics
+and actual-prime nonlinear source theorems remain separate. Do not try
+more finite lag modulations using the LINEAR residue alone as their source
+proof; the entire class has this counterexample.
+
+`ArithmeticOperatorPrimeTowerControl` extends the existing genuine-prime
+fractional thinning to EVERY power of the same base. Full factorial
+moments retain sources -1 and -2 unconditionally at the target radius
+and height 54. The simple-source profile has base weights in [1/2,1].
+Proper powers are independently paid by a geometric bound; none is
+discarded. Nonnegative actual-prime-power support, same-base consistency,
+all free feature Grams and the Gamma UPPER inequality therefore do not
+imply non-coherence. The -2 control provably fails complete exact Gamma
+equalities. Freeze this support/positivity/valuation-only shortcut. The
+control is a deliberately reweighted prime measure, NOT actual Mangoldt,
+NOT an actual-zero asymptotic and NOT a generalized-prime Euler product.
+Signed constraints using the UNALTERED actual Gamma data, mixed-height
+operators and distinct prime columns remain separate open tasks.
+
+`ArithmeticOperatorBinaryPrimeControl` and `ArithmeticOperatorBinaryEulerControl`
+strengthen the collapse audit to a LITERAL unit-weight subset of ordinary
+primes. The infinite factorial rounding transfer is PROVED: exact prefix
+error below one plus full complex summable variation gives a linear-in-order
+budget, which is source-o(1). Every proper power is retained with the same
+binary base weight. The selected integer monoid has a genuine convergent
+Euler product on Re(s)>1, with unit local prime factors, and its full moments
+converge to -2 at the campaign radius/height 54. All free feature Grams and
+Gamma UPPER inequalities remain compatible; complete exact Gamma equalities
+provably fail. Freeze unit-support/positivity/Euler-product-only coherence
+arguments. This does NOT estimate the UNALTERED actual Mangoldt sequence,
+establish a meromorphic continuation for the control, or supply an actual
+nonlinear zero-source theorem. Earlier fractional/periodic controls keep
+their original non-Euler scope. New work must exploit actual signed
+cross-column/Gamma constraints which the binary control lacks.
+
+`ArithmeticOperatorNormalizedRamanujanAudit` closes EVERY rational
+sub-source modulus exponent for the bounded normalized divisor-form
+prototype `eta(q)/q`, `norm(eta(q))<=1`. Exact finite joining and the full
+hyperbola divisor count give `norm(contrast)<=J*log(M)*M*(2+log(M))` at
+`X=2^J`, retaining every proper prime power and the complete height phase.
+Every power of a prime above M has correction coefficient exactly zero.
+At `X=2^(A*J)`, `M=2^(B*J)`, the source-normalized correction tends to zero
+whenever `B<A*beta`; `A=20000,B=19998` covers the entire campaign through
+moduli `X^0.9999`. Principal centering thus kills the WHOLE source, not
+only the pole. Freeze this bounded normalized sub-source family. Critical
+all-code payment is audited separately below; specifically constrained
+critical codes, other coefficient budgets, nonprincipal codes and
+shifted-prime correlations remain open. Growing factorial amplitudes are
+not paid by this physical-cutoff estimate. Do not promote the rejection
+theorem to an RH bound or a convergent infinite Ramanujan expansion.
+
+`ArithmeticOperatorGammaConeStability` distinguishes SIGNED Mellin inverse
+instability from one-sided coefficient losses. If `w(n)<=Lambda(n)`, the
+literal Gamma deficit satisfies `D_w(X)/X >= (Lambda(n)-w(n))/(2*n)`
+for `X>=2*n`. Thus `D_w(X_j)/X_j -> 0` on ANY cofinal integer sequence
+forces every positive-index coefficient to equal actual Mangoldt. The
+coherent binary Euler control instead has a strictly positive LINEAR
+Gamma deficit on every cofinal sequence. Its upper inequalities are not
+sublinear Gamma agreement. Freeze that dominated-cone countermodel
+shortcut, preserving the SIGNED inverse no-go. This is not actual-prime
+non-coherence: complex/sign-changing source errors lie outside domination,
+and exact identification of the actual sequence leaves its RH question
+open. Do not infer the missing signed estimate from this rigidity result.
+
+`ArithmeticOperatorCriticalRamanujanAudit` closes the UNIFORM-payment
+shortcut at every rational CAMPAIGN critical/super-source normalized cutoff.
+A literal prime band `(2H,3H]`, inverse height-phase coefficients and its
+unit modulus give a code `eta(q)/q` with `norm(eta(q))<=1` (unit coefficient
+norm at most one half), exact principal centering, and actual observation
+EQUAL to positive prime log mass whenever `3H<=X<(2H)^2`. Every proper
+power is excluded by an exact cutoff theorem. At dyadic exponents
+`B<=A<2B`, source-normalized norm tends to one when `B=A*beta` and grows
+geometrically when `B>A*beta`. This refutes uniform all-code source-o(1)
+allowances, not a specific constrained code. Principal centering is NOT
+actual density cancellation on a growing exceptional population. Freeze
+plain normalized-budget tuning throughout this range; nonprincipal,
+growing-amplitude/factorial, and genuinely signed cross-column constraints
+remain separate. Do not present the positive PNT counterexample lower
+mass as an independent RH estimate or a zero-mode source calculation.
+
+`ArithmeticOperatorGrowingLagSourceAudit` closes LINEAR-residue-only
+nonlinear source inference for EVERY rational polynomial sublinear
+positive-lag range. A single fixed perfect-r-th-power row has a genuinely
+convergent series `r*v*zeta(r*(s-beta)+1)`, exact residue v and no density
+pole for beta<1. Exact integer spacing kills every pair and every finite
+zero-preserving additive hyperedge of lag at most H^(r-1) in the bulk
+n>=H^r, with all correlated masks and phases. For B<A, r=2A kills every
+lag through 2^(2B*J) at every cutoff 4*2^(2A*J). The amplitude can be the
+exact actual multiplicity-weighted commutator source. This is NOT the
+actual prime row, does NOT have all exact actual Gamma data, and is NOT
+a generalized-prime Euler product. Freeze lag-growth-only rescue of that
+linear source gate; an actual nonlinear source theorem remains necessary.
+Nearly linear non-polynomial ranges, diagonal statistics and constraints
+using unaltered actual Gamma data are outside the no-go. Do not claim an
+actual prime correlation is small or zero from this diagnostic model.
+
+
+`ArithmeticOperatorKummerPolynomialAudit` closes the fixed polynomial,
+SINGLE-BINOMIAL/SINGLE-PRIME extra-channel prototype. At a+b<=2^(2J),
+actual valuation is at most 2J, and every prime above 2^J has valuation
+zero or one. The exact difference nu^D-nu therefore has norm at most
+2^J*(2J)^(D+1)*log(2), with EVERY Kummer order and any moving bounded
+modular/height phase retained. It is source-o(1) for beta>1/2. Every fixed
+complex-coefficient polynomial with zero constant term conserves only its
+value-at-one multiple of the old UNPAID linear packet. Freeze increasing
+fixed degree in that prototype. Multiple binomial-row Boolean products,
+distinct prime columns, growing degree/amplitude and the signed linear
+packet are NOT closed or paid.
+
+`ArithmeticOperatorMixedHeightInverseAudit` closes COMPLETE LINEAR
+mixed-height Gamma/Mobius bookkeeping. Exact finite joining retains all
+integer fibers, actual proper powers and both phases; the genuine Euler
+response is -zeta'(s+i*y)/zeta(s+i*z). At the original selected zero,
+nonzero matched residue from a finite height code requires an additional
+vertically translated denominator zero. No common-zero theorem is assumed.
+Every sufficiently small NONZERO displacement at ANY actual zero with
+Re(rho)<1 kills the original matched residue, while zero displacement
+retains full -m_rho. Even source-retaining finite codes join to arbitrary-
+weight scalar kernels, with an exact all-weight bound iff the kernel
+vanishes. Freeze complete mixed-height bookkeeping as an independent
+estimate. Do not infer density cancellation, an actual prime-sum allowance,
+or an RH exclusion. Nonlinear inverse masks, genuine constrained translated-
+zero information and actual signed cross-prime-column estimates remain open.
+
+
+`ArithmeticOperatorGammaPatternAudit` freezes fixed-degree POINTWISE
+products of COMPLETE Gamma-compatible divisor rows at moving endpoints.
+Their exact join is the product of phased logarithms, with all proper
+powers retained. After subtracting the explicit common-endpoint reference,
+any bounded correlated row code and endpoint shifts H have total norm
+at most |S|*(1+Y)*H*(1+log(X+H))^(|S|+1)*(1+log(X)). At dyadic rational
+exponents B<A*beta this extra interaction is source-o(1). Do not reopen
+by increasing a FIXED degree or by bounded external modular/Gaussian row
+coding. The reference, prime-leg-only commutators, incomplete divisor
+rows, growing degree/amplitude and source-bearing row masks are NOT paid.
+
+`ArithmeticOperatorPrimeGcdContrast` freezes the polynomial-logarithmic
+NONSEPARABLE prime-power matrix class that is zero on coprime arguments.
+All positive prime powers are retained; the exact interaction is diagonal
+plus unequal powers of one base. The latter has small-prime support and
+norm at most B*(2J)^4*log(2)^2*2^J at cutoff 2^(2J), hence source-o(1)
+for beta>1/2. The complete diagonal remains UNPAID. Do not generalize
+this to coprime distinct-prime CRT/order terms, power-growing amplitudes
+or an independent signed diagonal estimate. These are scoped source-gate
+audits, not RH or zero-free results. Continue locally without commits,
+pushes, subagents, root registration, public metadata updates or wider gates.
+
+
+`ArithmeticOperatorDilationPowerAudit` freezes the polynomial-logarithmic
+raw prime-LABEL dilation prototype across ALL ordinary factors together.
+The exact full hyperbola at ab<=2^(2J) is both unit boundaries plus all
+a,b>1 incidences. Every active nontrivial factorization has a=p^r,b=p^s
+with r,s>0 and p<=2^J; equal powers and every proper power are included.
+Its norm is at most B*(2J)^3*log(2)*2^J. Full and unit-boundary source
+limits are equivalent for every beta>1/2. Do not reopen by adding more
+bounded multipliers or correlated matrix masks. Both original unit
+prime sums remain UNPAID. Products of SEPARATE Mangoldt coefficients,
+dense divisor rows and faster-growing amplitudes are NOT closed.
+This fails the extra-source gate; it is not a density cancellation, RH
+floor or independent estimate for the old source. Keep local-only work
+and all earlier no-gos, carry and semiprime changes.
+
+`ArithmeticOperatorKummerGcdAudit` consolidates FIXED finite products of
+different binomial rows at ONE prime. Every actual positive carry order
+is retained. At top<=2^(2J), the full valuation product equals the exact
+common-GCD divisibility indicator plus a nonnegative increment supported
+on primes<=2^J. Its norm is at most 2^J*(2J)^(rows+1)*log(2), for arbitrary
+moving row/prime masks and unit-bounded BASE-PRIME phases. Full product
+and common-GCD packet have the SAME normalized source for beta>1/2.
+Freeze attempts to harvest higher multiplicity from this fixed-row class.
+The common-GCD packet stays UNPAID. Literal binomial selectors recover
+every arbitrary weighted prime profile and the old exposed -m source;
+negative phased selector diagonals persist beyond every fixed head.
+Do not claim that constrained balanced-row GCD packets, distinct prime
+columns, growing row count/degree/amplitude or phase weights INSIDE each
+separate prime-power carry have been estimated. The optional Kummer-GCD
+probe is exact only for carry/support bookkeeping; its complex sums are
+floating diagnostics, not certificates. Keep local-only iteration, all
+earlier no-gos, carry and semiprime changes; no new RH or zero-free claim.
+
+`ArithmeticOperatorBinaryDensityAudit` adds full qualitative PNT to the
+literal unit-prime coherent control: its complete prefix divided by X
+tends to one at EVERY integer endpoint while full moments still tend to
+-2. The exact dyadic deletion budget is geometrically small relative to
+X, even after fixed polylogarithmic amplification, with every proper
+power retained. Arbitrary moving bounded one-column masks agree at scale
+X; bounded NONSEPARABLE two-column kernels agree at scale X^2 through
+the exact joined quadratic loss ledger. Freeze density-only/PNT plus
+free-matrix feature rescues. This is NOT source-scale o(X^beta) payment,
+NOT an estimate for actual Mangoldt and NOT a nonlinear actual-zero
+source theorem. The control still fails complete exact Gamma data.
+Signed CRT boundaries, actual full-population/Gamma constraints and
+genuinely source-sensitive distinct-prime correlations remain open.
+Keep the goal active and local-only; no commits, pushes, subagents, public
+metadata or broader gates are authorized by this audit.
+
+`ArithmeticOperatorGammaDilationAudit` freezes FIXED FINITE products of
+COMPLETE cofactor-phased Gamma/divisor rows at arbitrary positive integer
+dilation scales. All actual proper powers and literal prefixes are
+retained. The exact join is one total-height phase times a polynomial in
+log(n); its genuine convergent Euler response is a finite combination of
+zeta derivatives, analytic at every point with real part different from
+one. Every actual off-line-zero matched residue therefore vanishes,
+including every finite analytic transform-level code. This closes the
+source gate without an estimate; do not refine this complete-row class.
+Incomplete/prime-only rows, moving degree or scales with uniform source
+control, singular coefficients and literal correlated masks are NOT
+covered. Complete Gamma dilation is not a bound on their commutator.
+Keep local-only work and the goal active; no RH or zero-free claim.
+
+`ArithmeticOperatorKummerThresholdAudit` and `...ThresholdSource` freeze
+BOOKKEEPING/FREE-PSD-ONLY intersections of consecutive BALANCED binomial
+rows. Every quotient endpoint is exact: product_(k=1..r) firstCarry(kN,N,d)
+=1[r*d<=(r+1)*(N mod d)]. Complete actual valuation products, with ALL
+positive Kummer orders and the original bounded BASE-PRIME phase, are
+source-equivalent to that threshold for beta>1/2. The common-GCD/threshold
+correction is explicitly at most 2^J*(2J)*log(2). The threshold sum is UNPAID.
+The correct prime-leg twist has matched REAL exponent beta, with strictly
+positive convergent Mellin response. Its two-scale density code retains a
+fixed nonzero source; both lower physical boundaries are explicitly bounded.
+Do not replace this by the untwisted complex Gamma/Hurwitz observation or
+infer an actual-prime asymptotic from the diagnostic integral. Native joining
+still gives one arbitrary-weight scalar kernel, including smooth/control
+substitutions. This supplies no additional arithmetic inequality. Exact
+actual Gamma data are NOT free and the binary Euler control still fails them.
+Independent signed constrained-threshold/Gamma estimates, distinct prime
+columns, growing complexity and phases inside separate carry orders remain
+open. Do not call the whole constrained common-GCD interaction impossible
+or the campaign source paid. Keep local-only work, goal active and prior
+carry/semiprime changes; no commits, public metadata or wider gates.
+
+`ArithmeticOperatorSelbergControlAudit` and `...SelbergSourceAudit` freeze
+SUPPORT/POSITIVITY/COMPLETE-CONVOLUTION-ONLY rescues of the separate-leg
+Selberg word. Completely multiplicative integer-prime selection commutes
+with every literal divisor incidence, even with arbitrary correlated masks.
+Both ordered legs, the diagonal, every proper power and the phase remain.
+The MINUS word has genuine Euler response `(logDeriv zeta)'-(logDeriv zeta)^2`
+and ACTUAL double-zero source `-m-m^2`, including simple zeros. Multiplication
+by `s-1` analytically removes the density pole while retaining
+`(rho-1)*(-m-m^2)`. The complete factorial convolution keeps every endpoint;
+any array tending to ell gives trace source ell-ell^2, and geometric density
+arrays cancel exactly. The coherent unit-prime Euler control still has
+source -6 and a nonzero pole-centered source, preserving the positive PLUS
+coefficient and free pair-divisibility ledger. It EXPLICITLY FAILS the
+unaltered actual Mobius log-square constraint at a deleted ordinary prime,
+as well as complete actual Gamma data. Do not mistake its selected RHS for
+the actual RHS or infer a native hard-mask source/completion estimate from
+the complete coefficient identity. Actual signed Mobius/Gamma constraints,
+distinct-prime CRT/order boundaries and constrained nonlinear source
+estimates remain OPEN. No RH endpoint or zero exclusion is discharged.
+Keep local-only work, the active goal and all prior carry/semiprime changes;
+no commits, pushes, subagents, public metadata or broader gates.
+
+`ArithmeticOperatorPeriodicGammaAudit` freezes arbitrary FIXED periodic
+WHOLE-LABEL codes of the complete cofactor-phased Gamma row. No
+multiplicativity is required. Exact joining and genuine Euler continuation
+give a periodic L-function DERIVATIVE, analytic at every actual off-line
+zero; every fixed finite analytic code family loses the matched residue.
+Zero-mean codes lose density too. The prime-phase-only commutator remains
+exact and UNPAID. Moving moduli, singular codes and incomplete masks are
+not covered.
+
+`ArithmeticOperatorPeriodicInverseAudit` closes unrestricted periodic coding
+BETWEEN actual Gamma and actual Mobius inverse as a free-bookkeeping rescue.
+The zero-mean period-two code gives EXACTLY the original Mangoldt dyadic
+dilation plus its explicit head. Its actual source is
+`-m*(2*2^(-rho)-1)`, nonzero at EVERY multiplicity, while density residue
+cancels. At modulus X+2, zero-mean unbudgeted codes realize every decoded
+prefix with zero unit; their quadratic criterion is free matrix PSD and
+even the first nonunit value has no uniform all-code allowance. Actual
+Gamma rows/Mobius coefficients remain unaltered, but decoded outputs are
+NOT claimed to obey actual Gamma equalities. Freeze this unrestricted-code
+scope, not constrained fixed codes, bounded amplitudes, signed prime
+estimates or literal correlated mask boundaries. Keep the active goal,
+local-only policy and all prior carry/semiprime changes. No RH endpoint or
+zero exclusion is discharged; no commits, pushes, subagents, public metadata
+or broader gates.
+
+`ArithmeticOperatorCarryOrderAudit` closes bounded correlated codes INSIDE
+every separate positive prime-power carry order at ONE base prime. The
+code can depend on the full row-order tuple without factorization. At
+row tops<=2^(2J), all active orders above p=2^J are one; the EXACT extra
+packet has norm<=2^J*(2J)^(D+1)*log(2). It is source-small for any fixed
+D and beta>1/2. Growing D is covered only under (2J)^D<=exp(J/4), giving
+campaign normalized cost<=2*log(2)*J*(3/4)^J. Full packet and first-carry
+packet have identical normalized limits; the latter is UNPAID. Centering
+the first tuple kills the whole matched source, not merely density.
+Freeze this extra-order source-gate candidate. Do not reopen by adding
+more unit-bounded correlated phases/masks within that exact budget.
+Constrained signed first-carry/Gamma/common-GCD estimates, distinct prime
+columns, larger growing row complexity and unbounded amplitudes remain
+OPEN. Historical statements about separate-order phases now have this
+narrow exception, not a claim that all growing complexity has been paid.
+Keep local-only iteration and the active goal, with all earlier carry and
+semiprime work; no RH endpoint, zero exclusion, commits, pushes, subagents,
+public metadata or wider gates.
+
+`ArithmeticOperatorKummerCrtAudit` freezes COMPLETE CRT PERIOD/FREE-CODE
+joining for distinct prime-power Kummer columns. The exact finite common
+period is the literal integer carry sum over 0<=N<d*e. Raw carry means
+factor; every d>=2 has positive mean. Mean-normalized actual product fibers
+give exactly the distinct-prime pair coefficient, with every proper power,
+ordered incidence and complex phase. The genuine Euler response has
+ACTUAL source m_rho^2 for every right-half zero, and analytic pole centering
+retains (rho-1)^2*m_rho^2 at every multiplicity. Arbitrary NONSEPARABLE
+residue codes still join to Cartesian means, and arbitrary weights satisfy
+the same full pair identity. Freeze that free-bookkeeping prototype after
+collapse; do not try to extract an independent bound from complete CRT
+averaging alone. No native short period is completed or norm-paid here.
+Signed literal incomplete-period/CRT-order boundaries and constraints using
+the unaltered actual Gamma/Mobius data remain OPEN. Do not claim control
+arrays obey actual Gamma equalities, or that all distinct-prime matrices
+have been exhausted. Preserve the previous absolute-boundary obstruction,
+active goal and local-only policy; no RH endpoint or zero exclusion,
+commits, pushes, subagents, root/public metadata or wider gates.
+
+`ArithmeticOperatorCrtLagAudit` freezes COMPLETE FLAT ADDITIVE-LAG averaging,
+with the original row cutoff retained. Over 0<=h<e, every first-row integer
+meets the second divisor exactly once. All prime powers, shared-base pairs,
+the diagonal and endpoints remain. The correct general-lag compatible mean
+is X/lcm(d,e) if gcd(d,e)|h, zero otherwise; its period sum is X/d.
+The signed boundary sum is EXACTLY floor(X/d)-X/d. Arbitrary nonseparable
+pair codes still join to one signed scalar profile. A flat separable
+second column conserves the UNPAID first packet, including the genuine
+actual twist-commutator residue and every multiplicity. Centering by the
+literal first-column count instead gives ZERO for every complex row
+kernel, annihilating all sources together with density. Freeze this early
+source/collapse failure, not all additive correlations. Do not complete
+the N period or norm-pay the old X/64 CRT boundary. A nonconstant code is
+evaluated exactly at h=-(n mod e), not at its mean; the actual second-row
+cofactor phase may depend on this selected lag and is NOT removed here.
+Nonflat/incomplete lag masks, signed constrained CRT boundaries and
+unaltered actual Gamma/Mobius estimates remain OPEN. Keep goal active,
+local-only iteration and all prior carry/semiprime work; no RH endpoint,
+zero exclusion, commits, pushes, subagents, root/public metadata or wider
+gates.
+
+`ArithmeticOperatorRamanujanInverseAudit` freezes FIXED DIVISOR-CODE /
+DILATION-ONLY rescues between unaltered actual Gamma and actual Mobius.
+Every finite positive divisor mask decodes exactly to the OLD Mangoldt
+dilation plus its explicit single-label log head. The native cutoff,
+arbitrary correlated row mask, full phase and every proper power stay
+literal. The nonconstant CRT lag/divisor-code bridge is exact too.
+For every squarefree Ramanujan modulus the actual source is
+-m_rho*multiplier_q(rho), nonzero at every multiplicity, without exposure.
+Every nonunit modulus removes density as a full analytic germ, not just
+a residue. Coded holomorphy on 0<Re(s)<1 is EXACTLY zeta nonvanishing.
+Even one fixed prime-modulus Ramanujan word remains surjective on FREE
+input rows; such controls are NOT claimed to obey actual Gamma equalities
+or to be generalized-prime Euler systems. At actual Mangoldt input the
+same word is precisely the classified Gamma inverse. This supplies NO
+independent bound on the retained signed dilated prime sums. Do not
+discard heads/native boundaries or call them paid by this classification.
+Composite squarefree moduli are auxiliary modular codes, not nonzero
+Mangoldt columns at those labels. Non-divisor residue codes, growing
+uniform rates, nonlinear/masked inverses and genuine signed constrained
+CRT/Gamma/Mobius information remain OPEN. Earlier references to all
+constrained fixed codes being open now have this narrow exception; do not
+claim every periodic mechanism impossible. Keep goal active, local-only
+work and all prior carry/semiprime changes; no RH endpoint, zero exclusion,
+commits, pushes, subagents, public/root metadata or wider gates.
+
+
+`ArithmeticOperatorCofactorLagAudit` freezes FIXED finite second-column,
+COMPLETE additive-lag, actual COFACTOR-PHASE-ONLY rescues. At the unique
+compatible lag, the actual prime-power leg and its literal quotient give
+phase_b(next multiple of e), not phase_b(n). Original cutoffs, the zero
+lag and every chosen proper prime power remain. For actual Mangoldt
+second weights the exact lifted-phase correction is bounded by
+2*|b|*sum(e Lambda(e))*log(n)/n. Its whole native cutoff is polylogarithmic
+and source-small at EVERY positive dyadic power exponent; its genuine
+Dirichlet series is analytic on Re(s)>0. The main signed commutator is
+NOT estimated. The exact actual residue is the old -m*zeta(Re rho) times
+the second Mangoldt mass, with arbitrary second height and every analytic
+multiplicity. The existing diagnostic power-mode density code survives;
+this is NOT a proved literal cutoff asymptotic. Complete free first-column
+joining is still scalar, and a universal free allowance forces that
+kernel to vanish. Those free rows are NOT actual Gamma-compatible data
+or a generalized-prime Euler construction. Freeze this cofactor-phase-only
+class without declaring actual signed bounds impossible. Growing supports
+and amplitudes, incomplete lags, genuinely nonseparable two-column masks
+and unaltered actual Gamma/Mobius estimates remain OPEN. Do not norm-pay
+the old CRT boundary or claim the campaign source has been bounded.
+Keep goal active, local-only work and all prior carry/semiprime changes;
+no RH endpoint, zero exclusion, commits, pushes, subagents, public/root
+metadata or wider gates.
+
+
+
+
+
+`ArithmeticOperatorCharacterCofactorAudit` freezes FIXED COPRIME CRT /
+character-bookkeeping rescues of the prime-only Gamma commutator. The
+exact native arithmetic-progression projection retains arbitrary outer
+masks, every allowed Mangoldt proper power, the character on BOTH divisor
+and cofactor, every quotient and the original height. Its genuine Euler
+response is L(z-iy)*(-logDeriv L(z))+L'(z). For a nonprincipal character
+its exact residue is -analyticOrderNatAt(L,z)*L(z-iy); finiteness of that
+actual order is proved, not assumed. Principal deletion makes both density
+coordinates analytic, but a nonzero residue at an actual zeta zero forces
+an ADDITIONAL common nonprincipal L-zero, nonzero code coefficient and
+nonzero cofactor value. No common-zero absence or existence is proved.
+The principal character retains every actual zeta multiplicity with a
+nonzero real-strip cofactor value; no-common-zero progression residues
+are stated with that premise EXPLICIT. No native cutoff asymptotic or
+independent signed prime bound follows. Arbitrary-column joining is one
+scalar kernel; free controls are NOT actual Gamma-compatible rows or a
+generalized-prime Euler construction. Do not refine fixed character
+bookkeeping as an estimate. Nonunit residues, growing moduli, nonlinear
+or nonseparable correlated two-column masks and actual signed CRT/Gamma/
+Mobius constraints remain OPEN. No native row period or old absolute CRT
+boundary is completed or norm-paid. Keep local-only work, active goal,
+all prior no-gos and carry/semiprime changes; no RH endpoint, zero exclusion,
+commits, pushes, subagents, public/root metadata or wider gates.
+
+
+`ArithmeticOperatorMoebiusCoprimeAudit` freezes UNRESTRICTED phased
+actual-Möbius coprimality PSD, including its exact added diagonal credit.
+Both native integer rows join to mu(d)*d^(-iy)*floor(X/d)*(floor(X/d)+1),
+and exactly to the prefix of mu_y*(2*index). The genuine Euler response
+2*zeta(z-iy-1)/zeta(z) has a nonzero pole of EVERY actual zeta multiplicity
+at the matched ordinate. The density pole is removed as an analytic germ
+without killing that source. These are continuation identities, NOT
+native-cutoff asymptotics or a signed arithmetic bound. Complete coprime
+GCD observations uniquely force actual Möbius at positive indices; free,
+smooth or generalized-prime controls are NOT assumed to satisfy them.
+Nevertheless, at EVERY fixed nonzero height and after EVERY finite head,
+two actual prime rows yield a quadratic with real part <=-3/2, including
+the native packet's diagonal credit. The existing PNT window is used only
+to locate counterexample rows. This includes every actual zero ordinate,
+without exposure or simplicity. Do not refine unrestricted PSD or infer
+that a head deletion cures it. Restricted signed packets, different
+Gaussian couplings and genuine unaltered Möbius/Gamma estimates remain
+OPEN. No Gaussian rescue, cutoff asymptotic, RH endpoint or zero exclusion
+is proved. Keep local-only work, active goal and every prior carry/semiprime
+change; no commits, pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorResidueInverseAudit` freezes FIXED PERIODIC complete-
+Gamma/actual-Möbius inverse BOOKKEEPING and absolute inverse-fiber payment,
+now beyond divisor-form codes. Every actual logarithmic row, proper-power
+fiber, quotient, correlated outer test and full phase remains literal.
+The genuine Euler response is -L_Phi'(s)/zeta(s). A finite numerator order
+ell gives exact response order ell-m at each actual multiplicity m,
+removable iff ell>=m, with a proved nonzero leading coefficient otherwise.
+Zero mean removes density as an analytic germ. Two bounded modulus-three
+codes (2,0,-2) and (2,-2,0) are genuinely non-divisor: neither is a gcd(3,n)
+function. At least one retains a genuine pole at EVERY actual zero,
+without exposure, simplicity or common-L-zero assumptions. BOTH coded
+responses admitting removable extensions is EXACTLY strip nonvanishing.
+This is source-detection/strength auditing, NOT a new zero-free theorem.
+The actual full inverse joins to one signed Mobius kernel against log(a);
+free-row inputs are NOT assumed actual Gamma or generalized-prime data.
+Untouched actual unit fibers at n=3a give full absolute debit>=2H log(3)
+at cutoff3H, so every beta<1 dyadic source-scaled norm payment diverges.
+Do not refine these fixed-code norms, source-detector coefficients or
+internal inversion words as if they discharged an arithmetic estimate.
+A constrained SIGNED kernel estimate, growing codes, nonlinear masks and
+literal incomplete cross-column boundaries remain OPEN. No native cutoff
+asymptotic, independent signed bound, RH endpoint or zero exclusion is
+proved. Keep active goal, local-only workflow and all prior carry/semiprime
+changes; no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorUnitaryInverseAudit` freezes SQUAREFREE coprime-
+inverse bookkeeping and unrestricted POINTWISE phased positivity only.
+The actual ordinary Mobius/logarithmic inverse has gcd(d,a)=1 INSIDE
+its literal antidiagonal; no unitary-Mobius substitution is allowed.
+Constant/logarithmic coordinates factor together. At p^k, k>0, the
+constant coordinate is zero only at k=1 and the logarithmic coordinate
+is k*log(p), with EVERY proper power retained. On every positive label,
+no exponent-one primes leaves log(n), exactly one leaves log(p), and
+at least two annihilate the entire response. Untwisted coefficients
+are nonnegative; a coprime powerful cofactor preserves the prime row.
+The SQUAREFREE restriction is EXACTLY ordinary-prime Mangoldt at every
+label/cutoff with arbitrary outer masks and the full original phase.
+Its complete factorial moments have the original actual multiplicity
+source with exact pole-jet removal, no exposure or simplicity needed.
+Do not refine that squarefree identity as a new prime estimate. FULL
+inverse pointwise twisted positivity fails at actual primes beyond
+EVERY head at every fixed nonzero height, including zero ordinates.
+The full finite native sum joins to one signed coprime inverse kernel;
+free-row controls are NOT actual Gamma or generalized-prime systems.
+At this module's checkpoint the FULL NONSQUAREFREE Euler/source/pole
+preflight was open; `ArithmeticOperatorUnitarySourceAudit` below now
+proves it directly. An independent constrained signed estimate remains
+OPEN and is not inferred from coefficient positivity or from a complete
+source theorem. No full cutoff asymptotic, new prime bound, RH endpoint
+or zero exclusion is proved. Preserve all earlier no-gos and all local
+carry/semiprime work; keep the goal active and local-only. No commits,
+pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorUnitarySourceAudit` freezes FULL NONSQUAREFREE
+coprime-inverse BOOKKEEPING as a rescue. On EVERY integer label, the
+actual inverse equals the ordinary convolution of the powerful-label
+indicator B with a prime-power row whose exponent-mod-six weights are
+0,1,2,2,1,0. Its correction to actual Mangoldt vanishes on ordinary
+primes and is bounded by the existing proper-power coefficient at every
+label. The genuine B series is zeta(2s)*zeta(3s)/zeta(6s) on Re(s)>1;
+that factor is analytic and NONZERO on Re(s)>1/2. The full response is
+G(s)*(-logDeriv zeta(s)+E(s)), with E analytic on Re(s)>1/2. EVERY actual
+right-half zero has nonzero residue -multiplicity*G(rho); no exposure or
+simplicity is assumed. Multiplying by s-1 removes density as an actual
+analytic germ without killing that source. At every Re(s)>1/2, s!=1,
+response removability is EXACTLY zeta nonvanishing. This is a strength
+audit, NOT a new bound or zero-free theorem. The full finite native join
+keeps every correlated outer mask, divided cutoff and whole-label phase
+as one signed powerful-cofactor kernel against Lambda+the explicit
+correction. Free-column bounds require that entire kernel to vanish;
+those inputs are NOT claimed actual Gamma, smooth compatible data or a
+generalized-prime Euler system. Do not promote the analytic proper-power
+correction to a payment of hard native masks. Independent constrained
+SIGNED estimates, nonlinear/growing masks and literal incomplete cross-
+column boundaries remain OPEN. No full native-cutoff asymptotic, new
+arithmetic inequality, RH endpoint or zero exclusion is proved. Preserve
+all prior no-gos and carry/semiprime work. Keep the goal active and work
+locally: no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorGaussianCoprimeAudit` freezes UNRESTRICTED phased
+actual-Mobius coprimality PSD with ANY FIXED continuous REAL stationary
+logarithmic Schur damping g(log(m)-log(n)), g(0)=1. This includes every
+fixed logarithmic Gaussian exp(-c*(log(m)-log(n))^2), c>=0. The exact
+native diagonal credit and both ordered incidences are retained. At
+EVERY fixed nonzero height and after EVERY finite head, two distinct
+ACTUAL prime rows in an arbitrarily narrow fixed log phase window give
+a real quadratic at most -1. The existing PNT is used only to locate
+the rows; no signed source-scale payment is extracted from it. The same
+counterexample occurs at EVERY actual zero ordinate without exposure,
+simplicity or a free/smooth/generalized-prime countermodel. No source
+asymptotic for the Gaussian-weighted packet is inferred from the old
+unweighted Euler response: the proposed PSD premise itself is false.
+Do not refine fixed Gaussian widths, replace them by another fixed
+continuous stationary real log kernel, or infer that deleting a head
+cures this obstruction. Restricted SIGNED packets remain OPEN; the next
+semiprime audit below closes moving/nonstationary/additive UNIT-DIAGONAL
+Schur PSD rescues for the FULL row population. The complete Gaussian/Weil
+endpoint is not refuted or discharged. Keep
+the active goal, local-only scope and all prior carry/semiprime work.
+No RH/zero-free claim, commits/pushes, subagents, root/public metadata or
+wider gates.
+
+
+`ArithmeticOperatorCoprimeDiagonalAudit` freezes ALL UNIT-DIAGONAL Schur
+rescues of unrestricted phased actual-Mobius coprimality PSD. Its exact
+squarefree-semiprime diagonal is 2*(1-p^(-iy))*(1-q^(-iy)), including the
+native diagonal credit and complete actual divisor fibers. At EVERY
+fixed nonzero height, two genuine primes BOTH beyond EVERY prescribed
+head occupy one small positive log-phase band and give real diagonal
+at most -1/25. Every actual zero ordinate is covered without exposure
+or simplicity. Qualitative PNT locates the rows only; floating probes
+are not proof input. ANY Schur factor with diagonal one preserves this
+negative singleton, including moving-width/nonstationary/additive
+Gaussians. Do not tune such kernels as an unrestricted PSD escape.
+Restricted SIGNED packets, changed diagonal/row geometry and genuinely
+different arithmetic Gaussian coupling remain OPEN. No weighted native
+source asymptotic, signed floor/ceiling, Gaussian/Weil endpoint, RH or
+zero exclusion is proved. Preserve all earlier no-gos and local carry/
+semiprime work; keep the goal active and scope local. No commits/pushes,
+subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorNonunitCrtAudit` freezes FIXED NONUNIT-UNION row
+coding as a bookkeeping-only escape. The literal condition is NOT
+Coprime(n,q), with every actual Mangoldt power, divided cutoff, outer
+mask, cofactor and both phases retained. It is exactly original minus
+principal-character commutator. At every actual zero the residue is
+-m*zeta(beta)*(1-product_(p|q)(1-p^(-beta))), nonzero for EVERY fixed q>1
+and every multiplicity. No exposure, simplicity or common-L-zero input
+is assumed. The symbol (z-1)^2*(z-(1+iy)) removes BOTH actual density
+germs at y!=0 while retaining that source. Response removability at
+every matched 0<beta<1 point is EXACTLY original zeta nonvanishing.
+The native join remains a scalar signed prime test for every arbitrary
+input array; free/smooth/generalized inputs are NOT asserted actual
+Gamma-compatible or entitled to the actual-zero source theorem. Do not
+refine fixed nonunit-union coding as a new arithmetic inequality.
+Individual nonunit residues, growing moduli, constrained SIGNED kernels
+and literal incomplete two-column boundaries remain OPEN. No native
+cutoff source asymptotic, independent signed estimate, RH endpoint or
+zero exclusion is proved. Preserve all earlier audits and carry/
+semiprime work; keep goal active and local-only. No commits/pushes,
+subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorCoprimeRepairAudit` freezes NONNEGATIVE-DIAGONAL
+corrections paid by their native trace as a repair of the full phased
+actual-Mobius coprimality PSD premise. Two DISJOINT genuine-prime phase
+windows yield DISTINCT squarefree semiprime rows; each native diagonal
+is at most -1/25, with all divisor fibers and the original credit kept.
+At every fixed y!=0 and beyond every head, corrected PSD singleton
+tests force repair >=1/25 on each such row. Moving unit-diagonal Schur
+factors and arbitrary coupled correction off-diagonals are covered.
+Actual PNT is used ONLY to count rows. At cofinal literal floor cutoffs,
+trace >= c_y^2*X_J^2/(25*(J+1)^2), c_y>0; trace / cutoff^beta tends to
+INFINITY for EVERY 0<beta<1. This includes every actual zero scale
+without exposure or simplicity. Do not refine positive trace-budget
+repairs as a source-affordable rescue. A separately centered SIGNED
+correction, restricted population, changed row geometry or genuinely
+different arithmetic Gaussian/Weil coupling needs separate gates.
+No correction-density payment, weighted native source asymptotic,
+independent signed bound, RH endpoint or zero exclusion is proved.
+Preserve all prior no-gos and carry/semiprime work. Keep the goal active
+and work locally: no commits/pushes, subagents, root/public metadata or
+wider gates.
+
+
+`ArithmeticOperatorPoleProjectionAudit` freezes PSD on the WHOLE
+mean-zero finite-codimension row space of the UNCHANGED native augmented
+actual-Mobius coprimality matrix. On distinct actual prime rows the full
+complex off-diagonal joins to |sum alpha|^2. At EVERY fixed y!=0, genuine
+primes beyond EVERY head with cos(y*log p)>=7/8 leave, after density
+centering, Re Q <= -(3/4)*sum |alpha|^2. For any FIXED number m of further
+complex linear profiles, m+2 distinct such rows leave a nonzero negative
+test. Inside EVERY sufficiently large native cutoff, this holds for
+EVERY choice of those profiles, including cutoff-dependent ones. Every
+actual zero ordinate is covered without exposure or simplicity. PNT
+locates rows ONLY; floating regressions are not proof input. Do not
+refine finite pole/jet/density projections as a whole-space PSD rescue
+of this unchanged matrix. A PRESCRIBED signed packet, source-budget
+lower bound, nonlinear restriction, GROWING codimension, changed row or
+diagonal, and Schur damping COMBINED with projection need separate gates.
+No projected-packet source limit, bulk negative source estimate,
+Gaussian/Weil endpoint, independent floor, RH or zero exclusion is
+proved. Preserve every prior audit and carry/semiprime change. Keep the
+goal active and scope local: no commits/pushes, subagents, root/public
+metadata or wider gates.
+
+
+`ArithmeticOperatorHeatFloorAudit` freezes ADMISSIBLE ALL-SCALE LINEAR
+cutoff convolution/heat smoothing as a rescue of the centered-floor
+source blind spot. The literal floor endpoints and density subtraction
+are unchanged. For 0<Re(s)<1 and any measurable COMPLEX row weight with
+finite integral |w(h)|*exp(Re(s)*h), joint absolute integrability and the
+outer transform's integrability are PROVED before Fubini. The exact
+joined transform is (integral w(h)*exp(s*h))*zeta(s)/s. For every positive
+Gaussian width and arbitrary complex linear row phase, the multiplier is
+explicit and NONZERO, so the smoothed transform has EXACTLY the original
+zeta-zero set. Every actual strip zero is covered without exposure or
+simplicity. Do not tune linear Gaussian widths, phases or admissible
+infinite row convolutions to restore that lost source. The failed gate
+is source sensitivity, not a new prime estimate. NONLINEAR co-Poisson
+approximation, inverse codes, coupled additive lattice/prime constraints
+and the full Gaussian/Weil endpoint remain OPEN. Literature approximation
+criteria are strength checks, not imported axioms; the cited compact-
+support sufficiency theorem must not be silently applied to a Gaussian.
+No independent signed bound, RH or zero exclusion is proved. Preserve
+all prior audits and carry/semiprime work; keep the goal active and scope
+local: no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorSelbergHierarchyAudit` freezes ALL-ORDER POSITIVE
+Selberg recursion, convolution-power comparisons and integer Gamma UPPER
+bounds as sufficient input for non-coherence or centered signed-trace
+decay. The ACTUAL hierarchy is mu*log^[k]; every finite divisor identity,
+prime power, quotient and literal complex masked test is retained. One
+fixed genuine UNIT-prime Euler control satisfies every order at once,
+yet its full factorial moments tend to -2 and its pole-centered signed
+trace does not decay. The actual retained signed-word source -m-m^2 and
+density removal are reused from the previous source audit, NOT inferred
+for every individual positive word. The same deleted genuine prime
+violates the UNALTERED actual Mobius/log-power equality at EVERY positive
+order; each such order also has an exact Gamma-prefix failure. This
+control is NOT actual Gamma-compatible. Do not refine positive-order
+upper constraints alone as a new arithmetic escape or treat literature
+RH-conditional twisted asymptotics as unconditional payment. Independent
+SIGNED use of actual unchanged Gamma/Mobius equalities, nonlinear/growing
+constraints and incomplete cross-column boundaries remain OPEN. No native
+mask completion, independent arithmetic inequality, RH endpoint or zero
+exclusion is proved. Preserve all earlier audits and carry/semiprime work;
+keep the goal active and local-only: no commits/pushes, subagents,
+root/public metadata or wider gates.
+
+
+`ArithmeticOperatorSchurProjectionAudit` freezes WHOLE-POPULATION phased
+native PSD after BOTH unit-diagonal POSITIVE Schur damping AND constant
+density centering. At every fixed y!=0 and beyond every head, 27 pairwise
+coprime ACTUAL squarefree semiprime rows retain native diagonals <=-1/25
+and off-diagonals exactly one. All ordered antisymmetric two-row tests
+join to 2*(26*sum nativeDiagonal+27-sum SchurEntries), at most -54/25.
+Each test has exact coefficient sum zero. Only the damping's constant-
+vector PSD test is used. Inside EVERY sufficiently large native cutoff,
+EVERY such damping has a negative centered native test; it may be complex,
+nonstationary, additive or cutoff-dependent. Every actual zero ordinate
+is covered without exposure, simplicity, a source asymptotic inference
+or floating proof input. This is stronger than the old uncentered
+negative singleton and closes the density-only combined rescue. Extra
+finite jet/profile constraints COMBINED with Schur damping are covered by
+`ArithmeticOperatorSchurJetAudit` below. Growing codimension,
+prescribed SIGNED packets, changed diagonals and genuinely different
+Gaussian/Weil coupling remain OPEN. Do not promote a mean-zero matrix
+vector to a pole-germ/source payment. No independent signed bound, bulk
+source estimate, RH endpoint or zero exclusion is proved. Preserve all
+earlier audits and carry/semiprime work; keep the goal active and scope
+local: no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorFareyFourierAudit` freezes COMPLETE primitive-residue
+Fourier projection as an independent arithmetic escape. The identification
+with the actual divisor-form Ramanujan row is PROVED from literal complex
+primitive roots, grid orthogonality and actual Mobius inversion; it is not
+an assumed character identity. All denominators, nonsquarefree rows and
+unit endpoints are retained. Frequency one recovers the original actual
+Mobius test with EVERY correlated complex denominator weight unchanged.
+Any finite complete frequency code joins to a signed scalar inverse-weight
+kernel; the same algebra holds for free complex arrays, which are NOT
+asserted actual primitive counts, Gamma-compatible or generalized primes.
+The genuine Euler response is 1/zeta(s), with the original fixed height
+phase preserved. Its density-pole value tends to zero, yet EVERY actual
+zero has a nonzero multiplicity-order source without exposure or simplicity.
+Punctured analytic removability on the strip is EXACTLY original zeta
+nonvanishing. Do not treat generic Fourier/Gram positivity, qualitative
+Farey equidistribution or BCZ weak mixing as a source-scale payment. Native
+ORDERED adjacent gaps, incomplete arcs, multi-point boundaries and a
+source-sensitive additional integer-prime constraint remain OPEN and need
+their own gates. No native cutoff source asymptotic, independent signed
+bound, RH endpoint or zero exclusion is proved. Preserve every earlier
+audit and carry/semiprime change; keep the goal active and scope local:
+no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorSchurJetAudit` closes the EXTRA finite jet/profile
+case left open by `ArithmeticOperatorSchurProjectionAudit`: whole-native
+PSD fails cofinally after ANY positive unit-diagonal Schur damping AND
+ANY fixed finite number of arbitrary complex linear constraints, including
+exact density centering. The actual coprime semiprime matrix is K plus
+the native diagonal excess; Re D<=-1/25 requires 26/25 per surviving
+dimension, while the positive damping's total real trace is the row count
+L. Orthonormal extension and rank-nullity prove the NECESSARY budget
+L<=26*r for r constraints. Choosing 27*(m+1) actual rows defeats density
+plus m extra profiles; rows precede the profiles and damping, which may
+both vary with the original cutoff. No Hermitian/stationary/real
+restriction, discarded phase, floating input or source-limit inference
+is used. Every actual zero ordinate is covered without exposure or
+simplicity. Do not refine fixed-finite-projection Schur PSD as a rescue.
+Growing codimension beyond the stated row budget, prescribed constrained
+SIGNED packets, changed diagonals and genuinely different Gaussian/Weil
+coupling remain OPEN. No projected source asymptotic, independent signed
+carrier bound, RH endpoint or zero exclusion is proved. Preserve all
+previous audits and carry/semiprime changes; goal active, local-only:
+no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorIncompleteArcAudit` freezes hard LINEAR ONE-POINT
+primitive masks as an extra identity-only arithmetic constraint from
+projection/inversion. Actual reduced integer fractions and every endpoint
+are proved to match the complex-root row. ANY point profile may be hard,
+discontinuous, denominator/cutoff/phase/factorial-dependent; exact Mobius
+inversion keeps it at the ORIGINAL physical denominator f(a*d). The whole
+cutoff joins to one signed inverse-weight kernel with its literal quotient.
+The same identity holds for free inverse arrays, NOT asserted actual
+primitive counts, Gamma-compatible or generalized-prime Euler products;
+a uniform all-free-array bound requires the whole joined kernel to vanish.
+For the actual hard upper half-circle, reflection and the ONLY real-axis
+endpoints q=1,2 recover exactly mu(q) before any norm, with every exterior
+weight and height phase unchanged. The genuine inverse-zeta Euler response
+retains EVERY actual zero of its full multiplicity and removes the density
+pole. Removability is exactly original strip nonvanishing. Arbitrary
+asymmetric profiles do NOT acquire a source theorem from this paired test.
+No native cutoff source asymptotic or new signed prime bound is claimed.
+Do not refine one-point arc bookkeeping or generic Fourier positivity as
+an independent saving. Ordered ADJACENT gaps, inverse-residue correlations,
+nonlinear multi-point masks and independently proved actual signed kernels
+remain OPEN. No complete family exhaustion, RH endpoint or zero exclusion
+is proved. Preserve previous audits and carry/semiprime work; goal active,
+local-only: no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorKloostermanPsdAudit` freezes the WHOLE-SPACE PSD
+shortcut for the actual two-point modular-inverse Fourier matrix, even
+after constant-density centering. Every original ordinary unit and its
+unique inverse, composite modulus, proper prime-power denominator,
+complex coefficient and both incidences are retained. The full Fourier
+quadratic is the inverse-permutation pairing, real but not a Gram square.
+PSD on ALL zero-frequency-free vectors holds IFF inversion fixes every
+unit. Every genuine prime denominator p>3 has an EXACT centered test -2,
+beyond every head. No floating calculation is proof input. Every actual
+nontrivial zero's rho/2 scattering coordinate has NONREAL Laplace value;
+Lean excludes it as an eigenvalue of ANY symmetric complex Hilbert-space
+linear operator, NOT as a scattering resonance. Kuznetsov continuation,
+full native zero-source/cutoff asymptotics and density subtraction are
+NOT imported or claimed. Arbitrary input Fourier algebra does not turn
+smooth/generalized controls into actual inverse-residue groups. Do not
+refine generic native inverse PSD or identify a scattering pole with an
+L2 eigenvector. Prescribed SIGNED packets, inverse-even projections with
+a separate source gate, ordered adjacent gaps, nonlinear multipoint masks
+and joint spectral/scattering estimates remain OPEN. No independent
+signed prime bound, RH endpoint, complete-family exhaustion or zero
+exclusion is proved. Preserve prior audits and carry/semiprime work;
+goal active, local-only: no commits/pushes, subagents, root/public metadata
+or wider gates.
+
+
+`ArithmeticOperatorFloorApproximationAudit` quantifies the source barrier
+for density-balanced literal floor approximation. Rows are
+floor(exp(t+h))-exp(h)*floor(exp(t)), h<=0, including EVERY positive
+integer divisor scale h=-log d and every cutoff endpoint. Their actual
+integrable Mellin transform is (exp(s*h)-exp(h))*zeta(s)/s. At every
+genuine right-half zero rho, the complete constant-target error retains
+EXACT response 1/rho and critical squared energy at least
+(2*Re(rho)-1)/norm(rho)^2>0. Arbitrary complex coefficients, arbitrarily
+growing row sets and nonlinear/moving coefficient selection are covered;
+no exposure or simplicity enters. Do not infer approximation decay from
+Gram positivity, row coding or coefficient optimization alone. This is
+a classical quantitative NECESSITY / strength audit, NOT novel prime
+information and NOT a refutation of genuine Nyman--Beurling/co-Poisson
+approximation with independent arithmetic input. Smooth density gives
+zero balanced rows; free/generalized controls are NOT granted actual
+floor/zeta identities. The sufficient decay premise remains unproved.
+Nonlinear profile products, coupled lattice/prime constraints and native
+ordered gaps remain OPEN. No independent signed prime bound, RH endpoint,
+complete-family exhaustion or zero exclusion is proved. Preserve prior
+audits and carry/semiprime work; goal active, local-only: no commits/pushes,
+subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorPrimitiveCountAudit` freezes global UNSMOOTHED
+complete primitive-count norm payment. Frequency zero is actual phi(q).
+Every original denominator, prime power, unit endpoint and fixed-height
+phase remains in sum_(q<=N)(phi(q)-c*q)*q^(-iy). For ANY c<=2/3,
+the exact jump at every prime p>=12 has norm >=p/4; beyond EVERY head
+one native prefix has norm >=N/8. This includes c=6/pi^2 and EVERY y.
+Thus o(N) and EVERY eventual global C*N^beta envelope with beta<1
+are rigorously false. Only actual infinitude of primes is used; floating
+regressions are NOT proof input. Do not replace the literal totient
+endpoint by continuous density or grant actual reduced residues to
+free/generalized controls. This is an EARLY false-premise gate, not a
+new density-germ payment, totient continuation, zero-source asymptotic
+or reuse of the FIRST-frequency inverse-zeta source at frequency ZERO.
+It does NOT refute selected cofinal subsequences, signed period sums,
+boundary-aware smoothing, incomplete masks or nonlinear ordered gaps.
+Those retain their separate source/estimate gates. No independent signed
+prime bound, RH endpoint, complete-family exhaustion or zero exclusion
+is proved. Preserve earlier audits and carry/semiprime work; goal active,
+local-only: no commits/pushes, subagents, root/public metadata or wider gates.
+
+
+`ArithmeticOperatorFiniteGammaControl` and
+`ArithmeticOperatorGammaToleranceAudit` freeze finite-calibration plus
+FIXED-relative-Gamma-tolerance non-coherence inference. For EVERY finite
+head and EVERY epsilon>0 a coherent binary control can restore ALL towers
+of the head primes, match actual Mangoldt and ALL actual Gamma observations
+on that integer prefix exactly, retain genuine UNIT ordinary-prime Euler
+factors on Re(s)>1, PNT density one, and complete factorial source -2.
+Its Gamma deficit is between 0 and epsilon*X at EVERY integer cutoff X.
+The proof uses summability of the complete inverse-weighted deletion,
+actual Nat.log(4,n) shell grouping and exact floor multiplicities, not
+floating probes or a hypothetical zero. Every finite nonlinear/phased
+prefix observation is matched too. Do not refine fixed-small-relative
+Gamma calibration or finite heads as an independent non-coherence input.
+The quantifiers are NOT one control matching all prefixes or every
+epsilon: its repair depends on the head and tolerance. EVERY fixed repair
+still deletes primes beyond every head and has a positive LINEAR Gamma
+deficit on ANY cofinal scales. Cofinal o(X) positive-cone rigidity remains
+valid. Actual ALL-scale exact/signed Gamma constraints, nonlinear profile
+products and coupled prime/lattice or ordered-gap mechanisms remain OPEN.
+No selected Euler continuation outside Re(s)>1, actual-prime signed bound,
+RH endpoint or zero exclusion is claimed. Preserve every prior audit and
+carry/semiprime change; goal active, local-only: no commits/pushes, subagents,
+root/public metadata or wider gates. Use the focused explicit-leaf lint
+and all-declaration standard-axiom check before refreshing source pins.
+
+
+`ArithmeticOperatorNonlinearFloorAudit` and
+`ArithmeticOperatorPolynomialFloorInverseAudit` freeze fixed nonlinear
+integer quotient-profile/free-code inference. Every positive integer row
+is EXACTLY -(N mod d)/d, including all endpoints; its physical log row
+matches at N=floor(exp(t)) for EVERY real t. ANY fixed nonlinear functional
+of shifted rows with one finite common period is ONE periodic code; every
+finite positive integer-scale family has such a period. Conversely EVERY
+periodic code is a polynomial of ONE native row, degree <period. Direct
+complete actual Gamma evaluation of the entire class kills EVERY actual
+zero residue, with all multiplicities, powers and both phases retained.
+Code-mean centering removes density too and does not restore source.
+
+Coding BEFORE actual Mobius inversion differs. A fixed degree-one parity
+polynomial retains every actual source and cancels density, but decodes
+EXACTLY to old actual Mangoldt/dyadic weights plus the explicit head. The
+convergent Euler identity stays on Re(s)>1; its analytic residue theorem
+is NOT a native cutoff source asymptotic. At unrestricted growing period,
+degree <X+2 and arbitrary coefficients, zero-mean polynomials prescribe
+EVERY nonunit decoded prefix. All-code joined norm payment holds IFF the
+WHOLE literal kernel is zero; all-code PSD is ordinary free-vector PSD.
+The obstruction persists beyond EVERY head with its decoded rows zero.
+Actual Gamma logarithms, all inverse fibers and full fixed-height phase
+are kept. Arbitrary decoded profiles are NOT asserted actual Mangoldt or
+Gamma-compatible weights. Smooth/generalized/free controls are NOT granted
+the actual Gamma or native remainder identities. Freeze this complete
+unrestricted class rather than refining polynomial coding indefinitely.
+
+Only FIXED common-period nonlinear profiles and UNRESTRICTED inverse
+codes are covered. Prescribed signed codes with actual coefficient/degree
+budgets, moving periods with proved quantitative input, noncommensurate
+real-scale products, native ordered multipoint geometry and genuinely
+coupled prime-column constraints remain OPEN. No independent signed prime
+estimate, family exhaustion, RH endpoint or zero exclusion is proved.
+Preserve earlier audits and carry/semiprime work; goal active and local:
+no commits/pushes, subagents, root/public metadata or wider gates. Use the
+focused explicit-leaf lint/all-declaration standard-axiom check before
+refreshing source pins.
+
+
+`ArithmeticOperatorOrderedGapGeometry` proves the native Farey dictionary
+from actual adjacent reduced fractions, WITHOUT assuming determinant one
+in adjacency: unique numerators iff q,r<=N<q+r and gcd(q,r)=1; the actual
+gap is 1/(q*r). Unit endpoints, N=1 and every cutoff remain literal.
+`ArithmeticOperatorOrderedGapAudit` freezes the COMPLETE one-step count
+and identity-only whole-mask inference. The count is EXACTLY sum phi(q);
+its phased cutoff increments have genuine zeta(z-1)/zeta(z) response,
+all actual zero multiplicities retained. Density pole two is removable
+without cancelling those sources. Strip removability of the centered
+response is IFF original nonvanishing, NOT a new estimate or a native
+cutoff source asymptotic.
+
+ALL complex masks/weights remain at the original denominator pair before
+the actual Mobius reindexing, including the strict q+r>N boundary. The
+same finite identity holds for free inverse arrays; their whole joined
+norm bound requires the ENTIRE scalar kernel zero. Free/smooth/generalized
+controls are NOT granted actual rational adjacency, primitive counts or
+Gamma compatibility. Complete unsmoothed phased count discrepancy is
+exactly the old totient error: beyond EVERY head norm>=N/8 for c<=2/3,
+at EVERY fixed height. Global C*N^beta, beta<1, payment is false.
+Do not refine one-step count norms or mask bookkeeping as a new prime
+constraint. Prescribed SIGNED gap kernels with independent input,
+higher native multipoint order and boundary-aware smoothing remain OPEN.
+No family exhaustion, RH endpoint or zero exclusion is proved. Preserve
+all prior audits and carry/semiprime changes; goal active, local-only:
+no commits/pushes, subagents, root/public metadata or wider gates. Use
+focused explicit-leaf lint and all-declaration standard-axiom checks
+before refreshing source pins.
+
+
+`scripts/ArithmeticOperatorFareyWalkAudit.lean` freezes the native
+finite-word/count identity-only gate. Actual triples force
+t=floor((N+q)/r)*r-q=N-((N+q) mod r), with the terminal r=1 removed;
+the inverse is exact. Their increments are actual phi(n)*n^(-iy) minus
+the unit delta. The convergent Euler response zeta(z-1)/zeta(z)-1 retains
+EVERY actual zero multiplicity after density centering. This is NOT a
+native-cutoff asymptotic. Arbitrary finite cyclic denominator words,
+even with growing length and every correlated complex/endpoint mask,
+pull back to ONE signed actual inverse-Mobius kernel. All-free-array
+norm payment still requires that whole kernel to vanish. Free/smooth/
+generalized controls are not granted actual adjacency or Gamma data.
+Conversely EVERY pair mask is a first-pair word mask, so those
+unrestricted native classes coincide exactly for every finite length.
+Do not refine the recurrence/reindexing as independent cancellation;
+effective prescribed signed orbit or coupled-prime estimates remain OPEN.
+Keep cyclic continuation distinct from non-wrapping actual triples.
+
+The 86-module Lean 4.33 checkpoint is historical after source migration.
+Do not silently refresh its pins or advertise it as a full native 4.34
+recheck. The native finite-word leaf and three dependencies have their
+own focused 60-linter/all-declaration audit with only standard axioms.
+No family exhaustion, new independent RH estimate or zero exclusion.
+Goal active; retain all earlier audits and carry/semiprime work. Local-only:
+no subagents, commits/pushes, root/public metadata or wider gates.
+
+`scripts/ArithmeticOperatorKummerMaximumAudit.lean` freezes the all-split
+Kummer maximum ALONE. At every positive denominator its exact value is
+1_(d<=N+1 and d does not divide N+1). For EACH actual prime the literal
+split p^(log_p(N+1))-1 maximizes ALL nested carry orders simultaneously,
+and attains the actual binomial valuation maximum. No common split across
+different primes or full binomial-row LCM theorem is asserted.
+
+Joining ALL maxima at X=N+1 is exactly the arbitrary-weight prefix minus
+the divisor endpoint. At actual Lambda*d^(-iy), every proper prime power
+and phase remain; ONLY that explicit endpoint has norm<=log X. Its actual
+floor-log Laplace transform is analytic on Re z>-1, with source-scale
+Cauchy bound B_y*(4u/5)^k for 0<=u<1. The maximal-row error source has
+EXACTLY the original prime-moment convergence criterion for |y|>=1;
+every actual exposed multiplicity survives, and the reverse zero/source
+criterion requires no exposure. Existing density/proper-power payments
+are reused. This is a rigorous scoped no-go, NOT a new prime estimate.
+All-free-array bounds fail at every X>2. Free/smooth/generalized controls
+are NOT granted actual integer binomial/Gamma or Mangoldt compatibility.
+
+Do not refine this maximum or equivalent scalar coherence criteria as new
+arithmetic input. Constrained DIFFERENT-prime/row-choice correlations and
+independently proved signed estimates remain OPEN. The isolated native
+leaf passed 15 linters and an all-declaration standard-axiom audit; its
+exact integer probe is diagnostic only. Keep earlier no-gos, carry and
+semiprime changes, the active goal and local-only policy; no commits/pushes,
+subagents, root/public metadata or wider checks. Families visited remains
+8, exhausted remains 0; no RH endpoint or zero exclusion is discharged.
+
+For isolated native research leaves, select axiom-audit declarations by
+module provenance (`env.isImportedConst n` is false), not only by the
+authored namespace string. This includes on-demand equation companions
+of imported definitions generated in the current leaf. The maximal-Kummer
+gate checks 115 local declarations/104 theorems this way (113/102 belong
+to its authored namespace). Do not turn this focused gate into a claim
+that the historical 86-module checkpoint was rerun after migration.
+
+`scripts/ArithmeticOperatorLucasUnitAudit.lean` freezes COMPLETE ALIGNED
+binomial-unit codes. For every actual prime power p^r, the row p^r-1 has
+exact residues (-1)^k mod p. Any bounded complex code splits into its
+two-letter mean plus a norm<=1/p^r endpoint. Joining the centered code
+against actual Lambda*d^(-iy) is <=log(X)*(1+log(X)), with all proper powers
+and the full literal phase. It is source-small at EVERY positive power
+scale even with moving bounded codes/heights. Uncentered constant codes
+realize arbitrary scalar profiles and reproduce the old prime moments
+and every exposed multiplicity exactly. Do not refine this class as new
+source-sensitive arithmetic input; source centering has removed the signal.
+
+Common UNALIGNED rows retain another factor:
+choose(p*a-1,k) mod p = (-1)^(k mod p)*choose(a-1,k/p) mod p.
+The upper residue is evaluated modulo p. Discarding it is formally false
+already at p=3,a=5,k=6. Constrained different-prime upper-digit correlations
+remain OPEN; exact finite covariance samples do not prove a zeta-source
+response, an asymptotic estimate or an RH bound. Run that source gate
+before investing in a new residue carrier. Smooth/free/generalized-prime
+controls are not granted literal binomial/Gamma or Mangoldt compatibility.
+
+The native leaf passed 15 linters and all 57 local declarations/48 theorems
+including helpers use only standard axioms. Probe arithmetic is exact but
+diagnostic only; its rational outer-phase controls are distinct from the
+actual phase kept by the formal theorem. Preserve all previous no-gos and
+carry/semiprime changes; goal active, 8 families visited, 0 exhausted.
+Local only: no commits/pushes, subagents, root/public metadata or wider
+checks. Historical checkpoint pins stay historical when these local
+research instructions change; do not silently refresh them.
+
+`scripts/ArithmeticOperatorCrossUnitAudit.lean` freezes ONLY the common
+binomial row with FIXED cofactor three. Its actual quadratic code is
+exactly a mod-eight profile plus a norm<=1/p endpoint; prime two has
+trace 2/3. The ordinary-prime Euler bridge retains every proper power,
+the endpoint, head, actual binomial upper residue and full height phase.
+Euler convergence is stated only on Re(s)>1. The corrected continuation
+has every actual right-half zero residue with magnitude>=m/3, even at
+simultaneous auxiliary L-zeros; exposure and common-zero exclusion are
+not assumed. Pole subtraction removes density without deleting source.
+
+The joined expression is EXACTLY the fixed actual Dirichlet-character
+filter for arbitrary outer arrays. Trace one occurs at ordinary primes
+beyond every finite head. This gives a scoped identity-only collapse,
+NOT a new independent signed prime estimate or a native source limit.
+Do not refine that fixed filter as RH arithmetic progress. Growing
+cofactors and constrained different-prime upper-digit correlations
+remain OPEN and require their actual zero-source gate before substantial
+estimation. Negative finite trace entries do not disprove matrix PSD;
+positive finite LDL pivots do not prove it globally. Factorial-character
+literature is not automatically a coupled binomial or RH estimate.
+
+The leaf passed 15 native linters; all 140 local declarations/116
+theorems including generated helpers use only standard axioms. Preserve
+all earlier audits and carry/semiprime work. Smooth/free/generalized
+controls are not granted actual binomial/Gamma/Mangoldt or L data.
+Goal active: 8 families visited, 0 exhausted. Local only: no subagents,
+commits/pushes, root/public metadata or wider checks. Historical Lucas
+pins stay unchanged when this note and research documentation evolve.
+
+`scripts/ArithmeticOperatorCrossUnitCancellation.lean` freezes ONLY the
+COMPLETE opposite-parity shared-row detector with bounded OUTSIDE masks.
+Its exact signed row is the final unit endpoint plus literal adjacent
+quotient crossings; both Lucas upper residues remain. Norm payment is
+taken only AFTER this cancellation and gives 1/D+2/p+2/q at every odd
+common multiple D, including ALL positive pair prime-power lengths.
+For actual quadratic columns the two primes are 3 and 1 modulo four.
+
+The balanced ORDINARY prime-pair packet, with full (pq)^(-iy) and arbitrary
+bounded outside masks, is <=20*(J+1)^2*2^J on dyadic base scale 2^J.
+Its (4^J)^(-beta) normalization tends to zero for EVERY beta>1/2, even
+with moving heights/masks. Source and density are BOTH killed; do not
+call this an independent RH estimate or spend effort refining its norms.
+The finite all-power-length theorem does NOT imply a terminal sum bound
+over all proper-power populations. No nonlinear zero-source limit or
+matrix PSD assertion is inferred from finite trace samples.
+
+Weights INSIDE the native row are outside the theorem. The exact probe
+shows one bounded internal code defeats the outside-mask bound. Same-
+parity rows and prescribed inside-row geometry remain OPEN and require
+their ACTUAL zero-source gate before an estimation framework. Free,
+smooth and generalized controls are not granted binomial/Gamma/Mangoldt
+compatibility. The source-gate failure is already proved for the genuine
+integer packet. Keep all preceding no-gos and carry/semiprime changes.
+
+The leaf passed 15 native linters and all 44 local declarations/37
+theorems, including generated helpers, use only standard axioms. Exact
+probe regressions are diagnostic only. Preserve historical checkpoint
+pins when these local notes change. Goal active: 8 Tier-1 families
+visited, 0 exhausted; no endpoint or zero exclusion. Local only: no
+commits/pushes, subagents, root/public metadata or wider gates.
+
+`scripts/ArithmeticOperatorCrossUnitPsdAudit.lean` freezes ONLY the
+unrestricted PSD shortcuts for the original coupled product-phase rows.
+The COMPLETE literal p^2-1 quadratic square row has trace one, so its
+actual diagonal is log(p)^2*p^(-2iy). Actual negative prime tests persist
+beyond EVERY head at EVERY fixed y!=0, including each hypothetical-zero
+height. Unit-diagonal Schur damping cannot change them. Positive finite
+UNTWISTED LDL pivots do not prove positivity of this phased packet.
+
+Do not replace the product phase by a conjugate/difference phase; the
+checked theorem proves they differ at actual primes beyond every head.
+Complete diagonal deletion has an exact retained ledger, and unrestricted
+positivity of ANY symmetric zero-diagonal form forces ALL permitted real
+off-diagonal coefficients, and the entire joined real sum, to vanish.
+Such a positivity assumption cannot also supply a nonzero real source.
+
+No genuine nonlinear distinct-prime source is inferred from these tests
+or the existing linear prime-moment theorem. UNTWISTED shared-row PSD,
+source-safe NONZERO diagonal repairs, growing constrained projections
+and prescribed signed packets remain OPEN. A negative diagonal alone
+does NOT prove its summed repair cost super-source. Free/smooth/
+generalized controls are not granted literal binomial/Gamma/Mangoldt or
+actual prime-window compatibility. Do not import factorial-character or
+two-term-polynomial “binomial” bounds as coupled binomial-row estimates.
+
+The native leaf passed 15 linters and audits all 26 local declarations/23
+theorems including generated helpers against standard axioms only. Its
+exact/rational and floating diagnostics are labelled separately and are
+not proof input. Keep historical checkpoint pins unchanged when notes
+evolve; preserve all prior no-gos and carry/semiprime work. Goal active:
+8 Tier-1 families visited, 0 exhausted. Local only: no subagents,
+commits/pushes, root/public metadata or wider gates.
+
+`scripts/ArithmeticOperatorInverseEvenAudit.lean` freezes ONLY the
+inverse-even modular PSD shortcut followed by discarding or absolute
+payment of its added primitive-residue Gram. On ALL actual integer unit
+groups, including q=1 and every proper-power modulus, the exact ledger is
+Q(P_even f) = E(P_even f) = (E(f)+Q(f))/2. The projection identity holds
+for ANY finite involution; this positivity is not prime-specific input.
+All original Fourier coefficients and inverse incidences remain.
+
+The added Gram diagonal is phi(q), with debit
+phi(q)*sum_m |alpha(m)|^2/2. Its single-frequency response is exactly
+zeta(s-1)/(2*zeta(s)); the defining Euler sum is only asserted Re(s)>2.
+Every actual zero multiplicity survives even after the s-2 density-pole
+factor. Analytic regularization in 0<Re(s)<1 is equivalent to original
+zeta nonvanishing. Half the original matched-phase discrete totient
+error fails EVERY global sublinear-power norm payment. Do not call this
+cost paid or infer a source for the WHOLE projected packet from its
+diagonal; full Gram/inverse cancellation is still a separate source gate.
+
+Prescribed signed inverse-even packets, genuine source-sensitive
+smoothing and independent coupled arithmetic estimates remain OPEN.
+No Kuznetsov/source continuation or RH estimate is imported as an axiom.
+Free/smooth/generalized-prime controls are not granted actual unit/Gamma/
+Mobius/Mangoldt compatibility. The strict leaf passed 15 linters and all
+36 local declarations/27 theorems, including generated helpers, use only
+standard axioms. Exact rational and floating probes are diagnostic only.
+Keep all prior no-gos, carry/semiprime work and historical pins. Goal
+active: 8 Tier-1 families visited, 0 exhausted. Local only: no subagents,
+commits/pushes, root/public metadata or wider checks.
+
+`scripts/ArithmeticOperatorKummerMinimumAudit.lean` freezes ONLY complete
+binomial-row minimum/GCD observation shortcuts. The literal row including
+unit endpoints has GCD ONE, hence an identically zero logarithmic source.
+The normalized interior GCD is exactly p for every p^r, r>=1, and one
+otherwise; its log is the FULL actual Mangoldt coefficient. Mathlib's
+classic Lucas/GCD theorem is reused, not presented as new mathematics.
+Both small heads, all proper powers, actual binomial cutoffs, moving
+complex masks and full height phases remain explicit.
+
+Complete interior factorial-source coherence is IFF old ordinary-prime
+moment coherence, after ONLY the existing geometric proper-power
+payment. Every exposed multiplicity survives; convergence to -m recovers
+the actual zero and exact multiplicity without exposure. The scalar
+Euler response -zeta'/zeta and density subtraction 1/(s-1) retain every
+actual nontrivial-zero residue. The difference from the endpoint-complete
+source carries -m and is NOT source-small. Do not silently drop the unit
+splits or count another minimum source formulation as an arithmetic bound.
+
+The actual integer GCD/Gamma identities are NOT granted to free, smooth
+or generalized-prime controls. Whole masked two-row joins still equal
+the original Mangoldt pair and supply no automatic nonlinear source.
+Incomplete constrained split families, different-prime common-divisor
+constraints and genuinely new signed Gamma estimates remain OPEN with
+their own source gates. The new strict leaf passed 15 linters; all 43
+local declarations/35 theorems, including generated helpers, use only
+standard axioms. Probes are diagnostic only. Preserve historical pins,
+all previous no-gos and carry/semiprime work. Goal active: 8 Tier-1
+families visited, 0 exhausted. Local only: no subagents, commits/pushes,
+root/public metadata or wider checks.
+
+`scripts/ArithmeticOperatorKummerPrefixAudit.lean` freezes ONLY the
+constrained PREFIX-GCD observation shortcut. At EVERY literal nonempty
+prefix 1<=H<=n the binomial GCD is n/gcd(n,lcm(1,...,H)); its log is
+exactly sum_(d|n,d>H) Lambda(d). Every valuation order and its power-split
+Lucas unit witness is retained. Different-prime witnesses are NOT claimed
+to coincide. Empty prefix zero and unit-endpoint GCD one are explicit.
+
+Fixed H>0 gives a derivative response analytic at all actual nontrivial
+zeros, hence fails the source gate. H=floor(n/3) instead retains the
+actual source -m*(1+2^(-rho)), with proved nonzero factor for Re(rho)>0.
+All proper powers, the n=2 head and the full cofactor/height phase remain.
+Density removal preserves the source; analytic regularization and paying
+its centered residue to zero are impossible at an actual right-half zero.
+Do not promote this residue gate to a native-cutoff asymptotic or RH bound.
+
+After the WHOLE moving-mask join, the packet is exactly one Mangoldt
+divisor-kernel test. The same incidence identity holds for arbitrary
+arrays; smooth/free/generalized-prime controls are NOT granted actual
+binomial/Gamma compatibility. Retained actual primes refute free outer-
+weight bounds. Do not keep retuning a prefix and count its old source as
+independent arithmetic progress. Non-prefix corridors excluding the power
+witnesses, simultaneous different-prime constraints and genuinely new
+prescribed signed Gamma/divisor estimates remain OPEN with source gates.
+
+The strict leaf passed 15 linters; all 105 local declarations/97 theorems,
+including generated helpers, use only standard axioms. Exact and floating
+probes are diagnostic only. Keep historical pins and all prior no-gos,
+carry/semiprime work. Goal active: 8 Tier-1 families visited, 0 exhausted.
+Local only: no subagents, commits/pushes, root/public metadata or wider gates.
+
+`scripts/ArithmeticOperatorKummerParityAudit.lean` freezes ONLY the
+scalar-observation/marked-dilation shortcut for a NON-prefix even split
+mask. For every even n>=4 the actual GCD is squarefree: odd p divides
+exactly when n=p^i+p^j; binary support is n=2^(j+1). EVERY higher power,
+actual Lucas upper digit, proper even one-carry witness and n=4 binary
+head is retained. Raw n=2 GCD is zero. Different-prime witnesses are
+NOT asserted to coincide. This CLASSICAL classification is not new math.
+
+The WHOLE moving-mask join is exactly one base-prime incidence kernel,
+and the same finite join holds for arbitrary arrays. Smooth/free/
+generalized-prime controls are NOT granted literal binomial/Gamma data.
+The MARKED ordinary 2p channel is an exact old-prime dilation with full
+2p phase. Its actual residue is -m*2^(-rho), nonzero, including after
+analytic density removal. Every proper-power subtraction and the prime-
+two head is kept. This is NOT a source limit for the whole GCD or pair.
+
+Above sqrt(n), the only odd-prime incidences are n=p+1 and n=2p.
+Distinct large primes p>q in the SAME row therefore force n=p+1=2q,
+p=2q-1. This simultaneous-prime curve is genuinely arithmetic, but its
+nonlinear zero source is OPEN: do not infer it from separate linear
+prime limits or start an estimate before that gate. All other powers
+have p^2<=n; this SUPPORT fact does NOT pay their aggregate over labels.
+Do not multiply a pointwise sqrt(n) bound by X and call it source-small.
+
+Prescribed signed Gamma estimates, nonlinear simultaneous-prime packets
+and other constrained masks remain OPEN. No new arithmetic saving or RH
+endpoint was discharged. The isolated native leaf passed 15 linters;
+all 173 local declarations/162 theorems (including generated/private
+helpers) have standard axioms only. Diagnostic probes are not proof
+input. All 24 previous prefix pins matched BEFORE these notes changed;
+keep those historical pins unchanged. Goal active: 8 Tier-1 families
+visited, 0 exhausted. Local only: no subagents, commits/pushes,
+root/public metadata or broader gates. Preserve every prior no-go,
+carry/semiprime proof and the dirty native migration.
+
+`scripts/ArithmeticOperatorKummerAffineSourceAudit.lean` freezes ONLY
+inferring the nonlinear affine pair source from the old linear Mellin
+residue. The SAME-row above-square-root pair condition is IFF n=2q,
+p=2q-1 with both ordered primes, q>2; both literal valuations are ONE.
+Its finite join retains every label/prime mask and full physical phase.
+Except the (5,3) head, the actual q is 1 mod 3. All other power
+intersections remain outside this sector and are NOT paid.
+
+A density-free diagnostic integer array at ANY beta+i*y has exactly
+the prescribed nonzero complex residue, including -m at an actual zero,
+but kills ALL q,2q-1 products. Arbitrary correlated moving weights,
+masks and zero-preserving leg operations do not repair the source.
+Literal divisor incidence also holds for that array. This extends the
+fixed/sublinear-lag audit to an unbounded affine lag; it is NOT an actual
+prime/Mangoldt array or a generalized-prime Euler product and is NOT
+granted binomial/Gamma compatibility. Do NOT assert the actual affine
+prime source is zero, ruled out, or infer it from separate prime moments.
+
+The actual nonlinear source and independent signed prime estimate remain
+OPEN. Do not build more packet infrastructure or import a binary prime-
+tuple conjecture as an assumption to get past that gate. Green--Tao's
+finite-complexity class excludes proportional linear parts; Type I/II
+sieve estimates are separate inputs, not payments supplied by an exact
+GCD identity. Preserve the constraint for reuse and move to the next
+ranked interaction after this scoped source-inference audit.
+
+The new native leaf passes 15 linters; all 41 local declarations/34
+theorems, including generated companions, have standard axioms only.
+Exact integer/rational and floating probes remain separately labelled
+and are not proof input. All 26 prior parity pins matched before these
+notes changed; keep historical pins unchanged. Goal active: 8 Tier-1
+families visited, 0 exhausted. Local only: no subagents, commits/pushes,
+root/public metadata or broader gates. Preserve every prior no-go,
+all carry/semiprime work and the dirty native migration.
+
+`scripts/ArithmeticOperatorGrowingSchurAudit.lean` freezes ONLY the
+unit-diagonal PSD Schur repair with a growing projection budget
+r(X)=o(sqrt(X)/log(X+1)), including EVERY fixed polylogarithmic schedule.
+The earlier fixed-finite-row theorem did NOT by itself establish this.
+Actual primes in ONE native small-phase band provide enough disjoint
+coprime squarefree semiprime rows; their literal full phased diagonals
+are <=-1/25. The physical cutoff is the ORIGINAL integer ceil(A*x)^2.
+The exact partial-trace deficit then leaves a negative mean-zero vector
+satisfying every arbitrary complex profile, even when profiles and
+damping depend on the cutoff. All actual zero ordinates are covered.
+
+PNT is used ONLY to locate these actual counterexample rows; do NOT call
+it a signed prime payment, source-size bound, uniform-height theorem or
+short-interval theorem. No projected nonlinear source is inferred from
+complete prime moments. Smooth/free/generalized controls are NOT granted
+actual prime, binomial or Gamma compatibility. The failed gate is the
+whole-space PSD premise, not a prescribed signed packet or RH endpoint.
+Do not keep increasing a sub-sqrt/log jet budget to rescue it. Larger
+codimension, changed diagonals, prescribed signed packets and different
+Gaussian/Weil couplings remain OPEN with their own actual-source gates.
+
+The new native leaf passes 15 linters; all 36 local declarations/33
+theorems (including generated helpers) have standard axioms only. Probe
+integer/rational and floating checks are diagnostic and separate. ONE
+notation-only migration in the existing Schur-jet dependency replaces
+`←Submodule.coe_norm` by `Submodule.norm_coe`; that cache is strict-green.
+All 30 previous affine pins matched BEFORE these notes changed; preserve
+historical pins. Goal active: 8 Tier-1 families visited, 0 exhausted.
+Local only: no subagents, commits/pushes, root/public metadata, broader
+gates. Preserve the dirty native migration and all carry/semiprime work.
+
+`scripts/ArithmeticOperatorSignedCrtAudit.lean` freezes ONLY uniform
+unrenormalized SIGNED CRT-boundary payment over ALL bounded correlated
+masks. At each fixed |y|>=1, adjacent actual prime phase bands have zero
+literal successor incidence, positive complete-period CRT mean, and
+original relative phase with real part >=1/2. Their exact masked boundary
+has -Re(B)>=c_y*X at cofinal ORIGINAL even cutoffs, c_y>0, so every
+X^beta, beta<1, signed allowance fails. This is stronger than the old
+absolute-debit test because no original phase is discarded.
+
+Do NOT infer a nonlinear hypothetical-zero source, a bound for the
+unmasked sum or a prescribed RH packet, or a global impossibility of
+signed CRT/sieve arguments. The retained linear term is NOT called a
+zero-mode contribution. Finite periodic-mean subtraction does NOT prove
+analytic density-pole cancellation. Prescribed boundary partners,
+density/source renormalization and extra constrained actual-prime
+information remain OPEN. Prime powers outside this literal mask are
+filtered out, not paid. The arbitrary-array identity grants no actual
+prime, binomial or Gamma compatibility to smooth/generalized controls.
+Move on rather than recasting a failed all-mask norm budget as a failed
+all-mask signed budget again.
+
+The new native leaf passes 15 linters; all 48 local declarations/38
+theorems including generated helpers have standard axioms only. Exact
+incidence/rational and floating phase checks are separately labelled
+diagnostics, never proof input. All 31 previous growing-Schur pins
+matched BEFORE these notes changed; preserve historical pins. Goal
+active: 8 Tier-1 families visited, 0 exhausted. Local only: no subagents,
+commits/pushes, root/public metadata or broader gates. Preserve every
+prior no-go, all carry/semiprime work and the dirty native migration.
+
+`scripts/ArithmeticOperatorDenseSchurAudit.lean` freezes ONLY
+unit-diagonal GENUINELY HERMITIAN PSD Schur repair followed by a
+power-sublinear O(X^theta), theta<1, number of arbitrary linear profiles.
+Actual prime bands just below a quarter-turn provide ALL squarefree p*q
+rows, including shared-prime incidences, at the ORIGINAL floor(A^3*x^2)
+cutoff. The exact joined matrix is K minus two nonnegative Hermitian
+prime-incidence blocks plus diagonal <=-9/8. Partial trace requires
+9*r>=L; the actual row population has fixed-height scale X/log(X)^2.
+It defeats EVERY power-sublinear budget cofinally, including each actual
+zero's source-power budget, after exact mean-zero centering and finite
+head deletion, with profiles and damping allowed to move arbitrarily.
+
+The additional `HermitianSchur` hypothesis is MANDATORY. The older
+`PositiveSchur` definition asserts only nonnegative REAL quadratic values;
+it does NOT control imaginary blocks times complex prime phases. Keep
+the earlier broader real-PSD sqrt/log theorem separate. The new theorem
+does NOT claim all o(X/log(X)^2) schedules or near-linear codimension.
+PNT is used ONLY to locate/count actual counterexample rows, not to pay a
+signed prime source. No nonlinear projected-zero source, analytic density
+pole cancellation, source-sensitive arithmetic estimate or zero exclusion
+is inferred. Proper-power rows outside the selected mask are not paid.
+
+Prescribed signed packets, changed diagonals, near-linear/full projections,
+non-Hermitian repair beyond the old budget and different arithmetic
+Gaussian/Weil couplings remain OPEN with their own source/density gates.
+Do not refine the closed power-sublinear Hermitian repair class. Free,
+smooth and generalized controls are NOT granted actual prime, binomial
+or Gamma compatibility. Preserve every previous scoped no-go and all
+carry/semiprime work; a rejected whole-space PSD premise is NOT family
+exhaustion or an independent estimate of a prescribed RH packet.
+
+The strict native leaf passes 15 linters; all 76 local declarations/62
+theorems including private/generated helpers use standard axioms only.
+Exact integer GCD/rational and floating phase/quadratic probe checks are
+separately labelled diagnostics, never proof input. All 28 prior signed-
+CRT source/evidence pins matched BEFORE these notes changed; keep the
+historical pins unchanged. Goal active: 8 Tier-1 families visited, 0
+exhausted. Local only: no subagents, commits/pushes, root/public metadata
+or broader gates. Preserve the dirty native migration.
+
+`scripts/ArithmeticOperatorKummerCorridorAudit.lean` freezes ONLY the
+broad symmetric corridor OBSERVATION shortcut, with exact native mask
+`a<k<n-a`, `3*a<n`. At EVERY positive denominator its first-carry
+intersection is exactly `d<=n<=d+a`. On genuine primes with n<p^2
+this is the full GCD valuation; all other valuations remain in the exact
+correction. At n<=2^(2J), that correction is at most
+`2^J*(2J+1)^2*log(2)` for bounded phases. Native GCD and literal prime
+window source-limits are therefore IFF for every beta>1/2, including
+actual base-prime phases and moving valid corridors. The validity
+hypotheses are EVENTUAL, not inconsistent all-J dyadic assumptions.
+
+The square-root correction is POINTWISE per moving label; it does NOT
+pay a further sum over X labels. Complete untwisted prime support gives
+the literal GCD logarithm. Base-prime phase and whole-label phase are
+different conventions; no implicit substitution between them is allowed.
+
+The ASSOCIATED CONTINUOUS log-window Mellin response is separately
+checked. Its multiplier `(1-exp(-v*log(3/2)))/v` is nonzero at the matched
+real exponent. Exact density removal preserves every actual right-half
+zero's analytic multiplicity, without exposure or simplicity. Do NOT
+call this the native integer-cutoff Mellin transform or infer native
+masked/cofinal source from it. No floor bridge or signed window payment
+has been proved. The arbitrary-array joined identity supplies no new
+arithmetic constraint; free/smooth/generalized controls are NOT granted
+actual binomial or Gamma compatibility.
+
+The corridor GCD has classical literature background. The leaf proves
+the large-prime specialization directly; it does not import or claim
+novelty of the stronger published all-prime formula. Narrower corridors,
+simultaneous different-prime geometry, prescribed nonlinear packets or
+independent signed Gamma/prime-window inequalities remain OPEN. Move
+on from the closed observation-only shortcut; this is not exhaustion of
+the whole Kummer family or proof that every coupled inequality fails.
+
+The leaf passes 15 linters; all 103 local declarations/91 theorems,
+including generated/private helpers, use standard axioms only. Millions
+of native integer/carry/GCD probe checks are exact; Mellin samples are
+separate floating diagnostics, never proof input. All 30 prior dense-
+Schur pins matched BEFORE these notes changed; preserve historical pins.
+Goal active: 8 Tier-1 families visited, 0 exhausted. No new RH estimate
+or exclusion. Local only: no subagents, commits/pushes, root/public
+metadata or broader gates. Preserve every prior no-go, carry/semiprime
+work and the dirty native migration.
+
+Current user authorization (2026-10-08) ALLOWS subagents to accelerate
+this local research. This overrides the earlier no-subagent checkpoint
+instructions; those are historical records, not a new approval gate.
+Assign isolated leaf/probe/evidence ownership and integrate shared notes
+at the root. All other local restrictions persist: no commits/pushes,
+root/public metadata or broader gates unless subsequently authorized.
+Preserve the dirty migration and every existing proof/no-go.
+
+The three focused parallel gates are recorded in
+`docs/arithmetic-operator-parallel-gates-audit.json` and the new section
+of `docs/arithmetic-operator-research.md`.
+
+`scripts/ArithmeticOperatorCenteredKummerAudit.lean` freezes ONLY
+fixed SCALAR mean subtraction on COMPLETE coprime CRT carry periods.
+The native distinct-base prime-power row and genuine Euler response
+are multiplied by (1-eta)*(1-xi). The SAME factor multiplies the
+actual density double pole and EVERY actual right-half zero's m_rho^2
+source. Density removal iff eta=1 or xi=1 kills the source identically;
+the original-minus-centered analytic response retains the whole source.
+Every prime-power order, unit endpoint, same-base diagonal and arbitrary
+correlated outer mask remains exact. No incomplete native source limit
+or source-small boundary bridge is inferred. S-dependent analytic
+renormalization, incomplete partners and independent signed packets
+remain OPEN; this is NOT a global centering impossibility theorem.
+
+`scripts/ArithmeticOperatorJointConstraintAudit.lean` extends the native
+common binomial-row recurrence to BOTH character parities. Every Lucas
+upper digit, actual p/q crossing and two unit endpoints remains. Its
+Fourier trace is bounded by (2/D+2/p+2/q)/g, with the ACTUAL gap
+g=norm(1-chi(-1)*eta(-1)*exp(i*theta)), never a heuristic frequency gap.
+For ordinary prime pairs in [2^J,2^(J+1)), the whole full-phase packet
+with bounded correlated OUTER masks is <=24*(J+1)^2*2^J/g_J. Eventual
+g_J>=exp(-eta*log(2))^J, 1+eta<2*beta, gives geometric source-zero.
+Thus fixed codes away from BOTH parity resonances exp(i*theta)=+/-1
+are source-blind for beta>1/2; this cancellation is NOT an RH payment.
+Finite row identities retain all positive prime-power exponents; the
+terminal aggregate is explicitly ORDINARY pairs. Summed proper-power
+complements, resonant/microscopic codes, arbitrary INNER row masks and
+fixed actual p with growing unaligned cofactor remain OPEN. Do not
+transfer a growing-p saving to the nonshrinking fixed-p jump density.
+
+`scripts/ArithmeticOperatorShiftedDivisorAudit.lean` freezes ONLY an
+exact finite ordinary-divisor log-jet import. Native row equality
+through X>=2 forces P(log n)=Lambda(n); the multiples of six supply
+floor(X/6) distinct roots and log(2) is nonzero. Therefore degree(P)
+>=floor(X/6), and no fixed finite parameter jet gives the actual row.
+This is NOT an approximate/growing-degree or universal spectral no-go.
+The exact same-height Mobius inverse of the all-divisor log proxy is
+the actual prime-leg row, with all powers, signs, endpoints and masks
+on the product fibers retained. The proxy is regular at every actual
+matched zero; the inverse restores the full nonzero residue
+-m_rho*zeta(Re rho). No source-small inverse or arithmetic bound is
+transferred from the proxy. Published additive-DIVISOR estimates do
+not grant Mangoldt-only coefficients, principal characters, inverse
+stability or the current literal correlated cutoff weights.
+
+The literature follow-up identifies p-free binomial UNIT parts as
+distinct data: they do not vanish when p divides the binomial. Raw
+residue support/Lucas savings MUST NOT be applied to p-free extraction.
+The fixed-p spatial automaton results do not supply a growing-prime
+rate or actual prime-index matched-zero residue. Before formalizing
+large automata/prime estimates, specify a literal code and prove its
+nonzero actual source AFTER density removal; neither a fixed residue
+character L-series nor a smooth toy mode supplies that theorem for a
+growing unaligned digit trace. The fixed-p raw support-count estimates
+in the literature note are PAPER-LEVEL only at this checkpoint.
+
+Keep using exact component/factorial-index/product-phase bookkeeping
+BEFORE statistical/topological probes. The new integer/rational and
+symbolic full-height tests are diagnostics, not proof input; floating
+samples are separate. Free/smooth/generalized-prime controls are NOT
+granted the actual binomial, Gamma or inverse compatibility.
+
+All THREE leaves pass 15 linters EACH with standard axioms only on all
+local declarations by module provenance: 93/82 centered, 40/32 Fourier,
+44/40 divisor (177 declarations / 154 theorems including helpers).
+Imported/historical dependencies are not freshly relinted. All 24
+previous corridor pins matched BEFORE shared notes changed; keep
+historical pins, recording only expected AGENTS/research-note drift.
+Goal active: 8 Tier-1 families visited, 0 exhausted. No independent
+source-sensitive RH estimate or zero exclusion. Local work only.
+
+Current p-free checkpoint: `scripts/ArithmeticOperatorPFreeUnitAudit.lean`
+proves the exact full unit/valuation recurrence on native binomial rows.
+Removing all p powers produces a unit even where the raw residue is zero.
+Never apply raw Lucas-support allowances to this extraction. Its checked
+gap-separated whole ordinary-pair cancellation is SOURCE-BLIND; all
+proper-power common rows are finite identities, not a paid summed-power
+complement. Resonant/microscopic and prescribed valuation marks stay open.
+
+`ArithmeticOperatorPFreeResonanceAudit` checks the actual resonant trace
+as sigma^(D-1) minus the FIRST spatially weighted crossing moment / D.
+Zeroth jump cancellation is only conservation, not a bound on that mean.
+Even-D endpoints must remain exact. Every unit atom has norm ONE; its
+absolute row mass is D. Actual principal characters have trace one and
+collapse the complete exterior packet to its arbitrary original pair
+weight. This closes ONLY all-character/zeroth-only uniform row-saving
+inferences; do not extend that counterexample to prescribed nonprincipal
+or valuation-marked populations.
+
+`ArithmeticOperatorPFreeUpperAudit` proves for actual p<q and every k<pq
+that the larger-q valuation is ZERO. Its extraction is exactly the raw
+binomial; all genuine carry remains on the smaller-p leg. No nonlinear
+prime-index source follows merely from this finite simplification.
+
+`ArithmeticOperatorPFreeTwoAudit` proves the UNMARKED ordinary odd-q
+cofactor-two trace is exactly (1+eta(-1))/2 at resonance; the uncoded
+trace adds (1-eta(-1))/(2q). Both complete q-blocks, endpoints and arbitrary
+outside physical/factorial/phase masks survive. This is a character
+selector collapse, not new integer information. Explicit nonconstant
+valuation marks, q-power extensions and growing smaller primes are
+outside this narrow frozen class.
+
+The deeper p^r/q^s staircase and fixed-p=3 level24 counterexample are
+EXACT PROBES only unless named in a Lean theorem. The marked base-two
+probe reduces linear marks to a fixed-base factorial/dyadic weight and
+parity marks to a Thue--Morse convolution. Neither has a proved actual
+prime-index matched-zero residue. Do NOT build large automata or more
+estimates before supplying that source gate; missing input does NOT
+exhaust all unit mechanisms. Fixed-base valuation is not the all-prime
+Archimedean Gamma identity. Free/smooth/generalized controls have no
+automatic actual unit/carry/Gamma compatibility.
+
+The read-only pinned OpenAI budget audit leaves the >7/8 endpoint intact.
+The actual low/source exponents are 3/16 and beta-11/16. Existing native
+calibration shows full sixth-frequency deletion saves only1/96, while
+the critical-line target needs >3/8. A bounded unit/code insertion into
+the arbitrary-slot norm estimate does not change that budget or prove
+its source bridge. The next distinct Tier-1 joint target is the actual
+additive/Gaussian row paired with its actual inverse-theta row BEFORE
+Cauchy, retaining noncommon arithmetic slots and nonzero principal
+multiplier. Common scalar centering and blanket matching-period
+cancellation remain audited no-gos.
+
+The separate `ArithmeticOperatorPFreeTwoSourceAudit` passes the ACTUAL
+ordinary-prime source and density gates for the unmarked quadratic
+selector. Its genuine Euler response is -1/2*(logDeriv principal8+
+logDeriv chi4). Every actual right-half-zero residue is
+-(m_zeta+analyticOrderNatAt L4)/2 !=0, with true multiplicity and no
+exposure/common-L-zero assumption. Exact half-density-pole removal
+preserves it; the literal proper-power correction is analytic on Re>1/2
+and excluded q2head is explicit. This is a continued Laurent theorem,
+NOT a native cofinal cutoff source or a paid native q-power extension.
+Source/density pass, but all-mask finite collapse fails Stage4: no extra
+binomial arithmetic remains in that ordinary character prime sum.
+Freeze this unmarked prototype; nonconstant marks are different gates.
+
+Five strict leaves: 52/45 unit, 28/27 resonance, 21/21 upper, 35/35
+cofactor-two and 64/54 actual source declarations/theorems; 200/182 total,
+15 linters EACH, standard axioms only for ALL local declarations by
+module provenance. Older CrossUnitAudit was cache-compiled strictly
+without source changes; its140/116 are not counted as new results.
+All 32 prior parallel-gate pins matched BEFORE shared notes changed.
+No imported root/public registration, broader checks, commits/pushes
+or new RH estimate/exclusion. Subagents remain authorized, isolated
+ownership required. Goal active: 8 Tier-1 families visited, 0 exhausted.
+
+Current coupled-Gaussian checkpoint: `scripts/QuasiRHCoupledSummandAudit.lean`
+retains the ACTUAL completed squarefree/cube summand and its complete row
+factor at I*J^3. Squarefree I has a Gauss coefficient, NOT mu(I); the
+Mobius variable is the outer H. Matching I=P,J=P^(2t) leaves a nonzero
+actual Gauss phase times ONE signed punctured numerator mass. Removing
+a matching shared prime from P^(6t+1)B leaves all cofactor phases of B.
+Do not infer whole-row cancellation from separate additive/inverse means,
+coprimality zeros, Gaussian window or the additive-square classification.
+
+`QuasiRHInverseMatchingAudit` joins every finite cube order BEFORE norms.
+The actual outer-prime Mobius inverse cancels positive J orders but keeps
+the ordinary-prime J=1 matching column. Numerator-dependent base rows and
+cube coefficients are retained. Its normalized full period has exact mass
+1-1/Norm(P)>=1/2. Equal unshifted cutoff lengths retain an explicit LAST
+BOUNDARY, unpaid. These are local automatic-cancellation no-gos, NOT a
+global physical cutoff/source estimate or a proof that prescribed signed
+cross-prime/cofactor/numerator correlations cannot help.
+
+`QuasiRHCuspidalInputAudit` checks the genuine I*J^3 Fourier-coefficient
+bridge and nonzero cusp average of the raw/projected/normalized base
+Eisenstein residual. A zero-average subtraction leaves that nonzero
+average in its remainder. Dunn's published cuspidal bilinear estimate
+cannot be applied directly to this base function. Do NOT claim that
+every translated/character-twisted/compensated row is noncuspidal, or that
+an unproved projection kills/preserves the target-zero residue. First
+prove a source-preserving decomposition of the ACTUAL coupled row.
+The stronger Dunn--Radziwill dispersion requires an unproved coefficient
+twisted-cancellation condition; never add it as an RH-campaign assumption.
+Their cube completion and the usual separate sieve norms are already used.
+
+The native principal multiplier is the prime-slot factor at w=1,z=1/6.
+Prime-only slot reweighting gives no automatic matching orthogonality.
+The checked centered moving-slot estimate only covers Re(s)>=7/8; do not
+extend it silently to the surviving 1/2<beta<=7/8 source gate. No local
+Gauss correlation replaces that actual continued principal source proof.
+
+Faithful quantitative probes require actual primary ideals, CRT/rays,
+calibration/Gauss tables, inverse I*J^3 coefficients, all physical/mark/
+height corrections and certified Gaussian tails. Current finite-field
+scripts are LOCAL tests, not that carrier. No random B, squarefree-only J
+or unsupported gauge/zero-source substitutions. The distinct next gate is
+coupled cusp/main-term source accounting or a signed NONCUSPIDAL kernel
+estimate, not more separate norms or repeated matching/scalar centering.
+
+Three new strict leaves: 10/7 summand, 38/30 inverse, 28/22 cusp-input;
+76/59 all-local declarations/theorems, 15 linters EACH, standard axioms
+only by module provenance including private/generated helpers. Historical
+dependency is unchanged and excluded from new counts. All 39 prior p-free
+pins matched BEFORE shared notes changed; preserve historical pins and
+record expected AGENTS/research-note drift. Current metadata is
+docs/arithmetic-operator-gaussian-inverse-gates-audit.json. Local only;
+no root/public registration, broader migration checks, commits/pushes,
+new RH estimate or exclusion. Goal active: 8 Tier-1 families visited,
+0 exhausted; pinned OpenAI Re(s)>7/8 endpoint unchanged.
+
+Current calibrated/source checkpoint: `QuasiRHCalibratedMatchingAudit`
+joins ACTUAL C.residueMonoid(m) before the matching period. Its nonempty
+calibration gives complete-period ZERO mean, including cofactor B=1.
+Do not infer a nonzero actual calibrated mean from the earlier arbitrary
+weight/punctured-mass example. The exact native puncture is
+U_B(Q)-chi_B(p)*U_B(Q/Norm(p)); neither term nor B=1 is deleted. The
+honest reduced period keeps calibration, B and p. Fixed B=1 has growing
+window/period, while the nominal J=1 Gaussian-centered B population has
+ratio Z^(-1/3-d)->0. This is a scale obstruction to uniform complete-period
+Poisson payment, NOT a signed lower bound or impossibility of collective
+prescribed cofactor cancellation. Existing physical/spectral Poisson
+already retains the needed joined sum; do not invent another carrier.
+The honest period is NOT a proved minimal conductor for every cofactor;
+no actual cofinal population count or signed noncancellation is inferred.
+Imported PrimeRecurrence.cubeSourceDifference_eq_zero kills the whole
+native residual, not just cusp constants, so it cannot supply a
+source-preserving cuspidal remainder. Twist/mask-first commutators and
+calibration-specific ALL-cusp cuspidality remain distinct unproved gates;
+complete numerator zero-frequency alone does not establish them.
+
+`QuasiRHLowerStripSlotAudit` checks the exact native compensated slot at
+w1,z1/6. Its leading centered modulus is Q^(3-5 Re(s)), NOT Q^(3-6 Re(s)).
+The slot tends to -1 above3/5, its centered norm tends to1 at3/5 (unit
+phases), and diverges below3/5, for fixed Re(s)>1/2. Explicit local
+upper/lower guards are retained. Finite supported-window nonvanishing
+does not by itself extend a global principal contour/source theorem.
+
+`QuasiRHAngularPeriodAudit` proves the actual angular-six coefficient
+cannot equal ANY finite ray idealCoeff, even outside any fixed nonzero
+excluded modulus. The witness is a genuine primary principal ideal,
+not a synthetic phase. Do not silently apply finite-character >7/8 to
+this infinity-type channel. Independent angular continuation is NOT
+ruled out. Existing extraction is principalCorrection=residual*L_ang(6s-3),
+not division by L_ang; angular zeros CAN cancel a reciprocal target
+source. Actual missing gate is ord L_ang(6rho-3)<ord L_eta(rho), with
+other factors nonzero. Mere analyticity and finite Euler compensators
+do not imply it; accidental norm-fiber series identities are not ruled
+out by the coefficient mismatch theorem.
+
+All new leaves are isolated warning-as-error, all15-linter, all-local
+module-provenance standard-axiom checks, including private/generated
+helpers. Preserve all earlier audits/pins and record expected shared
+note drift rather than rewrite history. Current metadata is
+docs/arithmetic-operator-calibrated-source-gates-audit.json. Local only:
+no root/public/CI registration, broader migration checks, commits or
+pushes, new RH inequality or zero exclusion. The next gate is an ACTUAL
+source-preserving signed growing-cofactor estimate or genuinely distinct
+operator interaction, not more separate norms or period centering.
+Goal active:8 Tier-1 families visited,0 exhausted; imported >7/8 intact.
+
+Current cube/period checkpoint is
+`docs/arithmetic-operator-cube-period-gates-audit.json`. Preserve every
+earlier result and scoped no-go. `QuasiRHCubeTwistAudit` retains the actual
+numerator row, cubic Gauss column, every cube order, full phase and native
+total-index mark. Correct cube shifting rescales BOTH the completed length
+and mark and is the existing native inverse. Fixed length retains its
+explicit signed window jump. Do NOT delete that boundary or infer all-cusp
+cuspidality from a twist. For prime P marks the jump is1-1_(P|A).
+
+`QuasiRHCubeSourceGateAudit` follows the actual all-power coefficients:
+the jump selects e=l=0, with source1/(1-V)+W/(1-W). The actual Euler
+series is the SAME reciprocal-L source times the local ratio
+(1-R)/[1-tR-(1-t)D]. It is finite nonzero under explicit guards and tends
+to ONE for fixed Re(s)>1/2. Bare norm-payment is disproved. Do not call
+this a global density-separated lower-strip source theorem or conflate
+it with the separate compensated-slot3/5/angular continuation gates.
+
+`QuasiRHMatchingCubeGeometryAudit` proves exact compact-annulus vanishing
+for P|I and P|J once2X<=Norm(P)^4. Native exponent gap is>=1/4 through
+d<=1/6, with explicit fixed annular constants retained. The exact finite
+column keeps EVERY J not divisible by P. It does NOT reduce all J to1,
+pay the J=1 endpoint, bound an infinite Gaussian tail, or give a whole-row
+source saving. Phases and masks remain before support deletion.
+
+`QuasiRHMinimalPeriodAudit` retains the genuine calibrated matching row
+and its nonunit zeros. For a genuine good PRIME cofactor b, puncture prime
+p and explicit mutual coprimality, every unrestricted full-row additive
+period r satisfies b*p|r, and Norm(r)>=Norm(b)Norm(p) ifr!=0. This lower
+bound prevents a shorter true period from removing either growing factor
+in this class. It is NOT the full calibration conductor, a theorem for
+every composite B, an incomplete annular estimate, a population count or
+a no-go for collective prescribed cofactor cancellation. Full character
+period and compact annular support are different objects.
+
+Read-only Gram preflight: calibration becomes an actual unit mask after
+conjugate joining, not a mean-zero phase. Relative sextic characters give
+ordinary complete-period orthogonality; diagonal/sixth-equivalent blocks
+survive. Arbitrary matching factorization does not force the remaining
+cofactor coprime to the matching prime; state that condition explicitly.
+No source-preserving projection deletes these blocks. Do not invent a new
+Gram carrier or claim the paper-level full supported mean wrapper was
+newly Lean-compiled.
+
+The Gauss/Jacobi matching product is cubic times sextic, NOT sextic
+squared; its corrected coprime normalization is ALREADY imported and
+leaves the calibrated annulus unchanged. Recent residual-separated theta
+estimates require an exact native coefficient/profile bridge; the2026
+cubic large-sieve lower bound is a generic norm barrier, not a no-go for
+the prescribed signed row. Each exact puncture cofactor sum has conductor
+C*B rather than automatically C*B*p. Prospective Burgess rate arithmetic
+is diagnostic only: recent prime/finite-field estimates do not prove the
+needed CRT-composite Eisenstein bound, and per-row savings cannot be
+silently subtracted from the global low3/16 budget.
+
+Safe z=1/3 or1/2 improves a pointwise angular Euler domain, but the actual
+Gaussian contour recovers leftovers AND z=1/6 source. Slice nonvanishing
+does not prove integrated-source nonvanishing. Freeze fixed-slice
+normalization as an arithmetic shortcut unless a new exact integrated
+source gate and independent signed budget are supplied.
+
+Four isolated leaves:102 local declarations/82 theorems,15 linters EACH,
+standard axioms only by module provenance including private/generated
+helpers. Prior135 pins matched before shared notes changed; keep historic
+pins and record expected AGENTS/research-note drift. Local only: no
+root/public/CI registration, broader migration checks, commits or pushes,
+new independent RH inequality or zero exclusion. Goal active;8 Tier-1
+families visited,0 exhausted. Next work needs a genuinely source-preserving
+signed growing-cofactor constraint or a distinct native interaction with
+its actual source/density/collapse gates; no more period-only centering.
+
+Current radial/frequency checkpoint is
+`docs/arithmetic-operator-unit-frequency-gates-audit.json`. Preserve the
+new exact `QuasiRHRadialUnitAudit`: lattice-unit rotation kills every
+unit-forbidden actual radial annulus/puncture BEFORE norms, with calibration,
+Gauss constants, all powers and height phase retained. The six-unit projector
+is exactly the neutral indicator. On supported B neutrality depends on
+Norm(B) mod36; its surviving value is1. Do not infer a population fraction,
+global exponent saving, or an individual B zero source. The high-source
+calibration/conjugate unit mask is a different action.
+
+`QuasiRHHigherSixthFrequencyAudit` joins actual native frequency rows.
+actualACube squared is actualAPhase. At density axis z=1/(6ell), both
+density and angular coordinates move: the standard absolute-Euler
+sufficient test stays Re(s)>2/3, while the local exponent threshold is
+(4ell-1)/(6ell). The retained m=0 ordinary channel does NOT prove a global
+restricted reciprocal-L pole. Restricted rational summation and the changed
+OLD-geometry source scale are preflights, not new continuation/residue
+theorems. Freeze frequency thinning unless both aggregate source and a
+stronger independent arithmetic budget are proved.
+
+Complete actual Gamma and coprimality constraints force actual Lambda and
+mu; old parity/free controls are NOT granted those constraints. Existing
+complete Selberg/Gamma words are source-blind or retain the same unresolved
+source. Their native mask commutator remains source-sensitive and unpaid.
+Do not duplicate those reconstructions or transfer the ordinary source to
+the affine prime-pair mask. Imported calibrated Poisson/heat reciprocity is
+generic residue-table transport; common-profile centering kills the entire
+target source. Cross-B prescribed signed correlations remain open.
+
+These are isolated strict leaves and scoped preflights, not a new RH
+inequality or zero exclusion. Local only; preserve prior224 historical pins
+and record expected shared-note drift. No root/public/CI registration,
+broader migration checks, commits or pushes. Goal active:8 Tier-1 families
+visited,0 exhausted; imported >7/8 remains unchanged.
+
+New read-only cube/source link: odd J valuations vanish only AFTER the
+principal local frequency join; that source has J=V². Do not delete
+nonsquare J from the literal finite carrier or declare J=1 equivalent.
+The imported parity decomposition gives B=I0 U³V⁶, retaining overlaps;
+V⁶ is the actual coprimality mask, while the exterior V angular-six phase
+remains. Full radical periods retain nonunit zeros. On principal U=1
+the nominal short-window/period gain is -1/3-d+5v, v=log_Z NormV;
+worstdepth d1/6 permits v>1/10 up to11/96. This is an opportunity, not an
+arithmetic/source credit: above2/3 growing-V source tails vanish, leaving
+smallV and V1 unpaid; below2/3 no source fraction follows from absolute
+Euler counting. Next work must join actual I0/V/m coefficients, not
+norm-pay individual rows or silently drop the coprimality mask.
+
+Generic Schwartz/angular-annular lattice Poisson is already available;
+the angular-cube gate lacks an actual uniform growing-mask source/estimate
+bridge, not merely a Poisson identity. Finite-ray radial theta cannot be
+silently substituted for angular-six. Harmonic continuation alone leaves
+ordLang(6rho-3)<ordLeta(rho) unpaid. Do not build a new harmonic library
+as a substitute for this source gate or the prescribed joined inequality.
+
+Current native carry/exchange checkpoint is
+`docs/arithmetic-operator-carry-exchange-gates-audit.json`. Preserve the
+strict `ArithmeticOperatorKummerDilationSupport` leaf: the actual
+divisibility-times-upper-carry interaction requires p²<=n and p³<=X at
+literal pn<=X, separately at every order with all complex codes retained.
+This is not collective decay or an actual-zero source theorem. The
+deflated cofactor-successor block retains its masks and order-phase shift;
+read-only recurrence regressions are not additional Lean endpoints.
+
+Keep divisor operators DISTINCT: E=M(T_y+T_-y)Z−2I has nonzero diagonal;
+C=M(T_y+T_-y)Z−(T_y+T_-y) has zero diagonal. The new strict native exchange
+leaf proves actual prime-fiber indefiniteness at head0 and one campaign
+height, not after every head. E's actual Lambda tower is nonpositive
+exactly, but its negative double-pole source has the permitted sign.
+C's Lambda quadratic has only proper powers and loses the ordinary-prime
+source. Freeze universal PSD/prescribed-diagonal shortcuts; do not infer
+failure of all actual cross-column signed constraints. Half-plane
+analyticity of the quadratic uses a pinned read-only majorant, not a new
+compiled declaration.
+
+Bare native I0 is an angular/Gauss column, not mu. Actual dual gamma1
+joining gives mu(I0)*fixedRay; outer inverse mu(H), shifted length and
+total mark stay separate. Reciprocity supplies no conjugate amplitude
+square. The exact all-variable join is the existing reciprocal-Hecke
+source, leaving prescribed mu/CRT/dual-Gaussian covariance unpaid.
+
+The primary unconditional cubic-Gauss first-moment paper has a genuine
+Type-I1/100 saving and structured rough-bilinear input. Current and vendor
+PDFs are identical. Do not assign this saving to the native sextic row:
+first bridge its growing character, moving divisibility mark, puncture,
+coefficient class and model source. Exact Gaussian Mellin separation is
+already available; discrete arithmetic masks are not smooth profiles.
+Fixed angular6 twist of the paper kernel is allowed; powers of Gauss sums
+divisible by3 are a different consequence. Raw cubeDifference=0 does not
+settle this cubic-model source. Nominal range checks are diagnostics, not
+an independent native bound; no additional proof import was made.
+
+Native Type-I profile evidence is separate from its coefficient gate.
+For the candidate G(P*I0) embedding only, the exact range calculation is
+w+(153/100)h+(153/50)v<=139/1200+(49/100)d. With full remaining mark
+w=1/6-d,H=V=1 it requires d>=61/1788. This is conditional on actual
+cubic orientation/factoring; a different legitimate extraction of P
+changes the range. Do not promote it to a universal native no-go. Gaussian
+profile separation itself is already compatible; arithmetic masks remain.
+
+Local only. Two new strict leaves:96 local declarations/84 theorem
+declarations including generated helpers,15 linters each, standard axioms
+only by module provenance. All316 prior pins matched BEFORE shared-note
+edits; preserve historical records and record expected AGENTS/note drift.
+No root/public/CI registration, broad migration gates, commit or push.
+Goal active:8 Tier-1 families visited,0 exhausted; >7/8 unchanged and the
+all-height1/2<beta<=7/8 gap remains.
+
+## Complete checkpoint publication authorized, 2026-10-12
+
+The user explicitly requested committing ALL local work and pushing it.
+This supersedes local-only publication holds for this batch and includes
+the Lean4.34/Mathlib migration, pinned OpenAI closure, arithmetic-operator
+audits and all semiprime work. Ordinary proof modules are registered and
+family-indexed; isolated scripts remain reproducible audit leaves. Preserve
+historical hash records rather than rewriting them as current checks.
+Publish portable research evidence separately from ignored build caches.
+Run the tracked hook and applicable generated-asset/README gates; do not
+rerun the exhaustive optional certificate. Its4.33 published checkpoint
+remains distinct from the pending complete4.34 optional audit. Record the
+exact pushed SHA and distinguish pending remote CI from local success.
+No new independent RH arithmetic estimate or exclusion beyond the imported
+strict>7/8 baseline is claimed. The operator roadmap goal remains active.

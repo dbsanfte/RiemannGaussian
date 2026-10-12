@@ -75,7 +75,7 @@ theorem remaining_positive_five_coefficient_eq_zero (j : ℕ) (hj : 32 ≤ j) (u
     ((Finset.sdiff_subset : S\I ⊆ S).trans hS) hnD hcoef
   have hP : largestPrime n ∈ n.primeFactors := by
     have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have howner := hp _ hP
   have hnH : n ∈ (S\(I ∪ D))\H := Finset.mem_sdiff.mpr

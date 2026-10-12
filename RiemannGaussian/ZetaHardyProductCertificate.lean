@@ -100,9 +100,9 @@ private theorem phaseEnv_mem {cfg : DyadicConfig} (hp : cfg.precision ≤ 0)
   intro i
   apply IntervalDyadic.mem_ofIntervalRat (prec := cfg.precision) (hprec := hp)
   by_cases hi : i = 0
-  · simp only [phaseRealEnv, hi, if_true]
+  · simp only [phaseRealEnv, hi, ite_true]
     exact CertifiedArctan.bounds_of_check hc
-  · simp only [phaseRealEnv, hi, if_false]
+  · simp only [phaseRealEnv, hi, ite_false]
     exact ⟨Real.pi_gt_d20.le, Real.pi_lt_d20.le⟩
 
 /-- Evaluate the bounded Hardy rotation. The angle bracket is a checked input,

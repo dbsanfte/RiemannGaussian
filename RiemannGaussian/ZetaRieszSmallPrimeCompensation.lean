@@ -241,7 +241,7 @@ theorem small_triples_norm_upper (S A : Finset ℕ) {N M Q : ℕ}
   have hb : ‖∑ n ∈ V, f n‖ ≤ ∑ x ∈ D, H*Real.log x.1 := by
     calc
       _ ≤ ∑ n ∈ V, ‖f n‖ := norm_sum_le _ _
-      _ = ∑ n ∈ V, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,if_pos hn])
+      _ = ∑ n ∈ V, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,ite_eq_left hn])
       _ ≤ ∑ n ∈ D.image product, g n :=
         Finset.sum_le_sum_of_subset_of_nonneg hsub (by intro n _ _; exact ite_nonneg (norm_nonneg _) le_rfl)
       _ ≤ ∑ x ∈ D, g (product x) :=

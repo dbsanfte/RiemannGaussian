@@ -63,7 +63,7 @@ theorem zetaMoebiusBandFilter_eq_weighted_pair (p : Polynomial ℂ) (D N : ℕ) 
         have h := (Finset.mem_Icc.mp (Finset.mem_filter.mp hj).1).1
         omega
       simp only [zetaMoebiusWeightedBandSamples, zetaLogBandSamples, zetaQuarterKernelSamples,
-        if_pos hj, if_neg hj0, mul_assoc, zetaPrimeFeature_mul_quarterKernel]
+        ite_eq_left hj, ite_eq_right hj0, mul_assoc, zetaPrimeFeature_mul_quarterKernel]
     · simp [zetaMoebiusWeightedBandSamples, zetaLogBandSamples, hj]
   simp_rw [he]
   rw [sum_zetaLogBandSamples, zetaMoebiusBandFilter_eq_sum]

@@ -33,7 +33,7 @@ theorem canonical_pair_log_le_twice_owner {u : ℝ} {N K n : ℕ}
     (by have := ZetaRieszJointPrimeEnergy.core_count hn; omega : 2 ≤ n.primeFactors.card)
   have hne : n.primeFactors.Nonempty := ⟨largestPrime n,hp⟩
   have hm : n.primeFactors.max' hne=largestPrime n := by
-    simp only [largestPrime,dif_pos hne]
+    simp only [largestPrime,dite_eq_left hne]
   have hmax q (hq : q ∈ (n/largestPrime n).primeFactors) : q ≤ largestPrime n :=
     (Finset.le_max' _ q (Nat.primeFactors_mono
       (Nat.div_dvd_of_dvd (Nat.dvd_of_mem_primeFactors hp)) hs.ne_zero hq)).trans_eq hm
@@ -193,7 +193,7 @@ theorem crossing_orbit_membership {u : ℝ} {N K n e δ : ℕ}
   have hblock := canonical_block_data hn hs
   unfold crossingDivisors
   dsimp only
-  rw [if_pos ⟨hblock.1,by omega⟩]
+  rw [ite_eq_left ⟨hblock.1,by omega⟩]
   exact Finset.mem_biUnion.mpr ⟨e,Finset.mem_filter.mpr ⟨he,h⟩,
     Finset.mem_image.mpr ⟨δ,hδ,rfl⟩⟩
 
@@ -205,7 +205,7 @@ theorem crossing_disjoint_old_cancelled {u : ℝ} {N K n : ℕ}
   have hblock := canonical_block_data hn hs
   unfold crossingDivisors cancelledOrbitDivisors
   dsimp only
-  rw [if_pos ⟨hblock.1,by omega⟩,if_pos ⟨hblock.1,by omega⟩]
+  rw [ite_eq_left ⟨hblock.1,by omega⟩,ite_eq_left ⟨hblock.1,by omega⟩]
   apply Finset.disjoint_left.mpr
   intro db hnew hold
   obtain ⟨e,he,hnew⟩ := Finset.mem_biUnion.mp hnew
@@ -361,7 +361,7 @@ theorem polynomial_paid_incidence_not_crossing {u : ℝ} {N K : ℕ} (hN : 32 �
   intro hnew
   unfold crossingDivisors at hnew
   dsimp only at hnew
-  rw [if_pos ⟨hblock.1,by omega⟩] at hnew
+  rw [ite_eq_left ⟨hblock.1,by omega⟩] at hnew
   obtain ⟨f,hf,hnew⟩ := Finset.mem_biUnion.mp hnew
   have hfmem := (Finset.mem_filter.mp hf).1
   have hemost : e ∈ ((pb.1*(pb.2*e)/largestPrime (pb.1*(pb.2*e)))/
@@ -568,7 +568,7 @@ theorem affine_disjoint_old_cancelled {u : ℝ} {N K n : ℕ}
   have hblock := canonical_block_data hn hs
   unfold affineDivisors cancelledOrbitDivisors
   dsimp only
-  rw [if_pos ⟨hblock.1,by omega⟩,if_pos ⟨hblock.1,by omega⟩]
+  rw [ite_eq_left ⟨hblock.1,by omega⟩,ite_eq_left ⟨hblock.1,by omega⟩]
   apply Finset.disjoint_left.mpr
   intro db hnew hold
   obtain ⟨e,he,hnew⟩ := Finset.mem_biUnion.mp hnew
@@ -589,7 +589,7 @@ theorem crossingDivisors_subset_affine {u : ℝ} (hu : 1/2 ≤ u) {N K n : ℕ}
   have hblock := canonical_block_data hn hs
   unfold crossingDivisors affineDivisors
   dsimp only
-  rw [if_pos ⟨hblock.1,by omega⟩,if_pos ⟨hblock.1,by omega⟩]
+  rw [ite_eq_left ⟨hblock.1,by omega⟩,ite_eq_left ⟨hblock.1,by omega⟩]
   intro db hdb
   obtain ⟨e,he,hdb⟩ := Finset.mem_biUnion.mp hdb
   obtain ⟨he,hgeom⟩ := Finset.mem_filter.mp he
@@ -682,7 +682,7 @@ theorem polynomial_paid_incidence_not_affine {u : ℝ} {N K : ℕ} (hN : 32 ≤ 
   intro hnew
   unfold affineDivisors at hnew
   dsimp only at hnew
-  rw [if_pos ⟨hblock.1,by omega⟩] at hnew
+  rw [ite_eq_left ⟨hblock.1,by omega⟩] at hnew
   obtain ⟨f,hf,hnew⟩ := Finset.mem_biUnion.mp hnew
   have hfmem := (Finset.mem_filter.mp hf).1
   have hemost : e ∈ ((pb.1*(pb.2*e)/largestPrime (pb.1*(pb.2*e)))/
@@ -746,13 +746,13 @@ theorem affine_membership_or_old {u : ℝ} {N K n e δ : ℕ}
   · apply Finset.mem_union_left
     unfold cancelledOrbitDivisors
     dsimp only
-    rw [if_pos ⟨hblock.1,by omega⟩]
+    rw [ite_eq_left ⟨hblock.1,by omega⟩]
     exact Finset.mem_biUnion.mpr ⟨e,Finset.mem_filter.mpr ⟨he,hshort⟩,
       Finset.mem_image.mpr ⟨δ,hδ,rfl⟩⟩
   · apply Finset.mem_union_right
     unfold affineDivisors
     dsimp only
-    rw [if_pos ⟨hblock.1,by omega⟩]
+    rw [ite_eq_left ⟨hblock.1,by omega⟩]
     exact Finset.mem_biUnion.mpr ⟨e,
       Finset.mem_filter.mpr ⟨he,⟨hR,hside,hP,hgap,hshort⟩⟩,
       Finset.mem_image.mpr ⟨δ,hδ,rfl⟩⟩

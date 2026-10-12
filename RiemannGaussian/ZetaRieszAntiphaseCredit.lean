@@ -277,10 +277,10 @@ theorem nonOrbitEnergy_eq_rest_sub_reserve_add_leakage (X N : ℕ) (A S : Finset
   apply Finset.sum_congr rfl
   intro m _
   by_cases hc : creditedPair X N S (fun n => u^(N+1)*primeWeight A L y N n 1) f y n m
-  · simp only [if_pos hc,if_pos hc.1]
+  · simp only [ite_eq_left hc,ite_eq_left hc.1]
     rw [weight_eq_amplitude A L u y N n,weight_eq_amplitude A L u y N m]
     ring
-  · simp only [if_neg hc]
+  · simp only [ite_eq_right hc]
     split_ifs <;> ring
 
 /-- Used only on leakage. The reserve keeps the actual joined Gram. -/
@@ -363,7 +363,7 @@ theorem leakage_bound (X N : ℕ) (A S : Finset ℕ) (f : ℕ → ℝ) {y L u : 
       C*(if logNear (antiphaseOffsets y N) (antiphaseWidth y N) n m then
         ((n.divisors.card : ℝ)/(n : ℝ))*((m.divisors.card : ℝ)/(m : ℝ)) else 0) := by
     by_cases hc : creditedPair X N S w f y n m
-    · rw [if_pos hc,if_pos hc.2.1]
+    · rw [ite_eq_left hc,ite_eq_left hc.2.1]
       have hn0 := (Finset.mem_Icc.mp (hS hn)).1
       have hm0 := (Finset.mem_Icc.mp (hS hm)).1
       have ha0 := amplitude_nonneg A hL hu N n
@@ -388,7 +388,7 @@ theorem leakage_bound (X N : ℕ) (A S : Finset ℕ) (f : ℕ → ℝ) {y L u : 
               (mul_nonneg (mul_nonneg (mul_nonneg ha0 hb0) hc.2.2) (sq_nonneg _)) (by norm_num)
         _ ≤ _ := hb
         _ = _ := by dsimp [C]; ring
-    · rw [if_neg hc]
+    · rw [ite_eq_right hc]
       split_ifs <;> positivity
   have hb : leakage X N A S L u y f ≤ C*P := by
     calc

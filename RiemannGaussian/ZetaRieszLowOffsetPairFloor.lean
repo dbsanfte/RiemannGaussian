@@ -264,14 +264,14 @@ theorem first_hinge_orbit_disjoint {u : ℝ} {N K n e : ℕ}
   rcases Finset.mem_union.mp hpaid with hpaid | hpaid
   · unfold cancelledOrbitDivisors at hpaid
     dsimp only at hpaid
-    rw [if_pos ⟨hb.1,by omega⟩] at hpaid
+    rw [ite_eq_left ⟨hb.1,by omega⟩] at hpaid
     obtain ⟨f,hf,hmatch⟩ := Finset.mem_biUnion.mp hpaid
     have hgeom := (Finset.mem_filter.mp hf).2
     rw [hsame (Finset.mem_filter.mp hf).1 hmatch] at hgeom
     linarith [hgeom.2.1]
   · unfold ZetaRieszCrossingOrbitCancellation.affineDivisors at hpaid
     dsimp only at hpaid
-    rw [if_pos ⟨hb.1,by omega⟩] at hpaid
+    rw [ite_eq_left ⟨hb.1,by omega⟩] at hpaid
     obtain ⟨f,hf,hmatch⟩ := Finset.mem_biUnion.mp hpaid
     have hgeom := (Finset.mem_filter.mp hf).2
     rw [hsame (Finset.mem_filter.mp hf).1 hmatch] at hgeom

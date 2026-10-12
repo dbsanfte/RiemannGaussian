@@ -173,7 +173,7 @@ theorem bandAmplitude_eq_logAmplitude (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (
     {n : ℕ} (hn : n ∈ zetaPrimeLogBand N ∧ Squarefree n ∧ ¬ n.Prime) :
     bandAmplitude L P N t n = logAmplitude L P N (3 / 2 + Complex.I * t) (Real.log n) := by
   have hn0 : (0 : ℝ) < n := by exact_mod_cast Nat.pos_of_ne_zero hn.2.1.ne_zero
-  simp only [bandAmplitude, if_pos hn, logAmplitude, Real.exp_log hn0]
+  simp only [bandAmplitude, ite_eq_left hn, logAmplitude, Real.exp_log hn0]
 
 /-- The derivative of the full factorial kernel in logarithmic
 coordinates keeps both adjacent orders and the exact complex rotation. -/

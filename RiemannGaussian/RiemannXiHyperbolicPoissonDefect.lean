@@ -166,10 +166,10 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_nonneg
     {z : ℂ} (hz : 0 < z.im) (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperHyperbolicPoissonDefectSummand z rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper]
     exact mul_nonneg (Nat.cast_nonneg _)
       (div_nonneg (by positivity) (Complex.normSq_nonneg _))
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hupper]
 
 /-- An upper spectral zero contributes a strictly positive Poisson defect at
 every upper observation point.  Unlike the logarithmic defect, this expression
@@ -189,7 +189,7 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_pos
   have hden :
       0 < Complex.normSq (z - starRingEnd ℂ alpha) :=
     Complex.normSq_pos.mpr (sub_ne_zero.mpr hneConj)
-  rw [zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper]
+  rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper]
   apply mul_pos
   · exact_mod_cast analyticZetaZeroMultiplicity_positive rho
   · apply div_pos
@@ -203,14 +203,14 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_le_logDefectSummand
     zetaUpperHyperbolicPoissonDefectSummand z rho ≤
       zetaUpperHyperbolicLogDefectSummand z rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper,
-      zetaUpperHyperbolicLogDefectSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper,
+      zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper]
     exact mul_le_mul_of_nonneg_left
       (height_div_conjugate_normSq_le_neg_two_log_upperHalfPlaneDistance
         hz hupper hne)
       (Nat.cast_nonneg _)
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper,
-      zetaUpperHyperbolicLogDefectSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hupper,
+      zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper]
 
 /-- The complete extended Poisson defect of the upper spectral-xi divisor. -/
 def riemannXiUpperHyperbolicPoissonDefectMass (z : ℂ) : ℝ≥0∞ :=
@@ -299,7 +299,8 @@ theorem riemannXiUpperHyperbolicPoissonDefectMass_eq_zero_iff_riemannHypothesis
         ENNReal.ofReal
             (zetaUpperHyperbolicPoissonDefectSummand z rho) ≤
           riemannXiUpperHyperbolicPoissonDefectMass z :=
-      ENNReal.le_tsum rho
+      ENNReal.le_tsum (f := fun r : NontrivialZetaZero ↦
+        ENNReal.ofReal (zetaUpperHyperbolicPoissonDefectSummand z r)) rho
     rw [hzero] at hle
     exact (not_lt_of_ge hle) hterm
   · intro hRH
@@ -311,7 +312,7 @@ theorem riemannXiUpperHyperbolicPoissonDefectMass_eq_zero_iff_riemannHypothesis
         rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
     have hnupper : ¬0 < (zetaSpectralCoordinate rho.1).im := by
       linarith
-    rw [zetaUpperHyperbolicPoissonDefectSummand, if_neg hnupper,
+    rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hnupper,
       ENNReal.ofReal_zero]
 
 /-- The Poisson-weighted divisor statistic and the full absolute

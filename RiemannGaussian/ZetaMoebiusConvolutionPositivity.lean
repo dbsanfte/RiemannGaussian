@@ -97,7 +97,7 @@ theorem zetaMixedPrimeArithmetic_nonneg (n : ℕ) : 0 ≤ zetaMixedPrimeArithmet
     rw [ArithmeticFunction.vonMangoldt_apply_pow hk.ne', ArithmeticFunction.vonMangoldt_apply_prime hp]
     have hmem : p ∈ (p ^ k).divisors :=
       Nat.mem_divisors.mpr ⟨dvd_pow_self p hk.ne', pow_ne_zero _ hp.ne_zero⟩
-    simpa only [zetaPrimeLogArithmetic, ArithmeticFunction.coe_mk, if_pos hp] using
+    simpa only [zetaPrimeLogArithmetic, ArithmeticFunction.coe_mk, ite_eq_left hp] using
       (Finset.single_le_sum (fun d _ ↦ prime_log_nonneg d) hmem)
   · rw [ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hn]
     exact Finset.sum_nonneg (fun d _ ↦ prime_log_nonneg d)

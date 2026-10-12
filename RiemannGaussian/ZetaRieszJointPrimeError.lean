@@ -596,7 +596,7 @@ theorem eventually_retained_interval_error :
   have hB n (hn : n ∈ S) j (hj : j ≤ N+1) :
       0 ≤ B' n j ∧ B' n j ≤ ((N+1).choose j : ℝ)*(log n)^(N+1-j) := by
     dsimp only [B']
-    rw [dif_pos hn]
+    rw [dite_eq_left hn]
     exact hcoef n hn j hj
   have hId n (hn : n ∈ S) p (hp : p ∈ P) :
       (1-ZetaRieszJointAllocation.boundedShare A N (p*n))*(log p+log n)^(N+1) =
@@ -605,7 +605,7 @@ theorem eventually_retained_interval_error :
       rw [Nat.cast_mul,log_mul
         (by exact_mod_cast (Finset.mem_filter.mp hp).2.ne_zero)
         (by exact_mod_cast (hSF n hn).1.ne_zero)]
-    simpa only [B',dif_pos hn,hl] using
+    simpa only [B',dite_eq_left hn,hl] using
       hid n hn p (Finset.mem_filter.mp hp).2 (hPA hp) (hcop n hn p hp)
   refine ⟨B',hB,hId,?_⟩
   let F := fun n j => ∑ p ∈ P, ZetaRieszWeightedPrimeTail.factorialAmplitude j (log p)*

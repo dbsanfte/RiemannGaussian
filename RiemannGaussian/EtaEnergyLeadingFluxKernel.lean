@@ -573,9 +573,9 @@ theorem topPrefixFiniteEnergyLeadingFlux_eq_leadingKernelIntegral (rho : Nontriv
     pairedEtaTopPrefixFiniteEnergyLeadingFlux rho N =
       pairedEtaTopPrefixFiniteEnergyLeadingKernelIntegral rho N := by
   by_cases hm : analyticZetaZeroMultiplicity rho = 1
-  · rw [pairedEtaTopPrefixFiniteEnergyLeadingKernelIntegral, if_pos hm]
+  · rw [pairedEtaTopPrefixFiniteEnergyLeadingKernelIntegral, ite_eq_left hm]
     exact topPrefixFiniteEnergyLeadingFlux_eq_integral_headKernel_of_multiplicity_eq_one rho hm N
-  · rw [pairedEtaTopPrefixFiniteEnergyLeadingKernelIntegral, if_neg hm]
+  · rw [pairedEtaTopPrefixFiniteEnergyLeadingKernelIntegral, ite_eq_right hm]
     apply topPrefixFiniteEnergyLeadingFlux_eq_integral_adjacentMomentKernel_of_two_le_multiplicity rho
     have hmpos := analyticZetaZeroMultiplicity_positive rho
     omega

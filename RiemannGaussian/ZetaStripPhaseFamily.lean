@@ -88,7 +88,7 @@ theorem source_le_exactBudget {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs :
       · subst n
         have hz := mul_le_mul_of_nonneg_left
           (selected_source_le_means k hk ρ hx hx' ht hM hnear) (ha 1)
-        simp only [D, S, hω1, one_mul, tail, if_true, if_false,
+        simp only [D, S, hω1, one_mul, tail, ite_true, ite_false,
           show (1 : ℕ) ≠ 0 by norm_num, zero_add] at hz ⊢
         simp only [div_eq_mul_inv] at hz ⊢
         nlinarith only [hz]
@@ -98,7 +98,7 @@ theorem source_le_exactBudget {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs :
           nlinarith
         have hz := mul_le_mul_of_nonneg_left
           (logDeriv_le_means k hk hx hx' hfreq hM) (ha n)
-        simp only [D, tail, hn0, hn1, if_false, add_zero, zero_add]
+        simp only [D, tail, hn0, hn1, ite_false, add_zero, zero_add]
         simp only [div_eq_mul_inv] at hz ⊢
         nlinarith only [hz]
   have hb := (hD.add hsingle).tsum_le_tsum hpoint (hrealSingle.add hU)

@@ -138,7 +138,7 @@ theorem norm_actual_band_le_packet_total (L : ℝ) (P : Polynomial ℂ) (N : ℕ
   have hs : (∑ n ∈ zetaPrimeLogBand N, bandWeight L P N t n) =
       zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     unfold bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   rw [← hs]
   exact norm_sum_le_packet_total _ _ es he
 
@@ -158,7 +158,7 @@ theorem tendsto_full_packet_source (rho : NontrivialZetaZero) (hrho : 1 / 2 < rh
         zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     rw [sum_packetResidual _ _ _ (he N)]
     unfold bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   have h := SquarefreeVaughanLogSource.tendsto_actual_riesz_band rho hrho
   apply h.congr'
   filter_upwards [] with N

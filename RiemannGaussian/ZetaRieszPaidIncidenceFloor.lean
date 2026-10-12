@@ -72,7 +72,7 @@ theorem pairHinge_eq_profile_diff {p b X : ℕ} (hp : 0<p) (hb : 0<b)
   have hl : log (p*b : ℕ)=log p+log b := by
     rw [Nat.cast_mul,log_mul (by exact_mod_cast hp.ne') (by exact_mod_cast hb.ne')]
   simp only [pairHinge,correctedProfile,ZetaRieszCenteredPrimeEnergy.centeredProfile,
-    if_pos hpb,if_pos hbX,zero_mul,add_zero,one_mul,hl]
+    ite_eq_left hpb,ite_eq_left hbX,zero_mul,add_zero,one_mul,hl]
   have hf x : max 0 (x-L)=max 0 (L-x)+x-L := by
     rcases le_total L x with h | h
     · rw [max_eq_right (by linarith),max_eq_left (by linarith)]
@@ -100,7 +100,7 @@ private theorem prefix_delta (X d : ℕ) (f : ℕ→ℝ) (hd : d∈Finset.Icc 1 
     · simp [h,Finset.mem_Icc]
   simp only [hs] at he
   simpa only [mul_ite,ite_mul,mul_one,one_mul,mul_zero,zero_mul,
-    Finset.sum_ite_eq',if_pos hd] using he.symm
+    Finset.sum_ite_eq',ite_eq_left hd] using he.symm
 
 theorem sum_hingeIncrement {p b X : ℕ} (hp : 0<p) (hb : 0<b)
     (hpb : p*b≤X) (L : ℝ) :
@@ -251,11 +251,11 @@ theorem literalCutoffPacket_eq_incidences (u y : ℝ) (j : ℕ) :
   apply Finset.sum_congr rfl
   intro e he
   by_cases hcore : pb.1*(pb.2*e)∈coreBand u (dyadicMomentOrder j) (dyadicPrimeCount j)
-  · simp only [if_pos hcore]
+  · simp only [ite_eq_left hcore]
     apply Finset.sum_congr rfl
     intro δ hδ
     by_cases hs : sieve (ZetaRieszRoughCutoffRows.forbidden pb.1 pb.2) e=0
-    · simp only [hs,ne_eq,not_true_eq_false,and_false,if_false,mul_zero]
+    · simp only [hs,ne_eq,not_true_eq_false,and_false,ite_false,mul_zero]
     · have hd := ZetaRieszCubicCutoffRows.cutoff_original_incidence (moment_ge_32 j)
         hpb he hs hδ
       have hg := ZetaRieszCubicCutoffRows.cutoff_row_geometry hpb

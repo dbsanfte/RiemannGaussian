@@ -74,8 +74,8 @@ theorem pairedEtaCompletedMoebiusSelectedAggregate_eq_products
         apply Finset.sum_congr rfl
         intro d _
         by_cases hd : d ∈ S
-        · simp only [if_pos hd, pairedEtaUnpairedDirichletPrefix, Finset.mul_sum]
-        · simp only [if_neg hd, Finset.sum_const_zero]
+        · simp only [ite_eq_left hd, pairedEtaUnpairedDirichletPrefix, Finset.mul_sum]
+        · simp only [ite_eq_right hd, Finset.sum_const_zero]
       _ = _ := by rw [← Finset.sum_filter, hsel]
   rw [he, pairedEtaCompletedMoebiusSelectedAggregate, Finset.mul_sum]
   apply Finset.sum_congr rfl
@@ -179,7 +179,7 @@ theorem pairedEtaCompletedMoebiusSelectedAggregate_meanSquare_le_window
         apply Finset.sum_le_sum
         intro d _
         by_cases hd : d ∈ S
-        · simp only [w, if_pos hd]
+        · simp only [w, ite_eq_left hd]
           have hm : |(μ d : ℝ)| ≤ 1 := by exact_mod_cast ArithmeticFunction.abs_moebius_le_one (n := d)
           simpa only [sq_abs, one_pow] using (sq_le_sq₀ (abs_nonneg _) (by norm_num)).mpr hm
         · simp [w, hd]

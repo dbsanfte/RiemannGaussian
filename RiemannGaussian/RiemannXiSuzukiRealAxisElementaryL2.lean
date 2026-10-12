@@ -232,8 +232,8 @@ theorem memLp_two_suzukiRealAxisCarrierPrimeContribution (t : ℝ) :
   change MemLp (fun x : ℝ ↦
     suzukiRealAxisXiZeroCarrier x *
       suzukiArithmeticPrimeContribution t (x : ℂ)) 2
-  exact (memLp_two_suzukiArithmeticPrimeContribution_ofReal t).mul'
-    memLp_top_suzukiRealAxisXiZeroCarrier
+  exact memLp_top_suzukiRealAxisXiZeroCarrier.fun_mul (r := 2)
+    (memLp_two_suzukiArithmeticPrimeContribution_ofReal t)
 
 /-- The upper completed-zeta pole kernel is in `L²(ℝ)`. -/
 theorem memLp_two_suzukiRealAxisUpperPoleKernel :
@@ -310,8 +310,8 @@ theorem memLp_two_suzukiRealAxisCarrierPoleContribution (t : ℝ) :
   change MemLp (fun x : ℝ ↦
     suzukiRealAxisXiZeroCarrier x *
       suzukiArithmeticPoleContribution t (x : ℂ)) 2
-  exact (memLp_two_suzukiArithmeticPoleContribution_ofReal t).mul'
-    memLp_top_suzukiRealAxisXiZeroCarrier
+  exact memLp_top_suzukiRealAxisXiZeroCarrier.fun_mul (r := 2)
+    (memLp_two_suzukiArithmeticPoleContribution_ofReal t)
 
 /-- The carrier-weighted pole-plus-prime block of Suzuki's arithmetic signal. -/
 def suzukiRealAxisCarrierPolePrimeContribution (t x : ℝ) : ℂ :=

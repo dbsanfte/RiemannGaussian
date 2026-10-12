@@ -278,8 +278,8 @@ theorem suzukiXiCarrierCayleyFinsuppCoefficientVector_apply
   simp only [lp.coeFn_sum, Finset.sum_apply, lp.single_apply,
     Finset.sum_pi_single]
   by_cases hk : k ∈ c.support
-  · rw [if_pos hk]
-  · rw [if_neg hk, Finsupp.notMem_support_iff.mp hk]
+  · rw [ite_eq_left hk]
+  · rw [ite_eq_right hk, Finsupp.notMem_support_iff.mp hk]
 
 /-- The finite `ℓ²` embedding preserves squared coefficient energy. -/
 theorem norm_sq_suzukiXiCarrierCayleyFinsuppCoefficientVector

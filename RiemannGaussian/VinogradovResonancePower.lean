@@ -73,7 +73,7 @@ theorem exists_actual_resonance_power_saving (k r s : ℕ) (hk : 4 ≤ k) (hr : 
     · subst j
       simp only [e, ite_true, j₀]
       omega
-    · simp only [e, if_neg hj, add_zero]
+    · simp only [e, ite_eq_right hj, add_zero]
   have hEsum : (∑ j : Fin k, e j) + 2 = k * (k + 1) := by
     calc
       _ = ∑ j : Fin k, (e j + (if j = j₀ then 2 else 0)) := by simp [Finset.sum_add_distrib]
@@ -93,7 +93,7 @@ theorem exists_actual_resonance_power_saving (k r s : ℕ) (hk : 4 ≤ k) (hr : 
   apply hbound.trans
   calc
     _ ≤ ∏ j : Fin k, W * (M : ℝ) ^ (e j) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro j _
         have hp : 0 ≤ 2 / ((a j) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j))) :=
           div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j).le _)
@@ -115,19 +115,19 @@ theorem exists_actual_resonance_power_saving (k r s : ℕ) (hk : 4 ≤ k) (hr : 
           linarith only [hpos]
         by_cases hj : j = j₀
         · subst j
-          rw [if_pos rfl]
+          rw [ite_eq_left rfl]
           have hp : 0 ≤ 2 / ((a j₀) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j₀))) :=
             div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j₀).le _)
               (tail_denominator_pos (ha j₀)).le)
           apply (mul_le_mul_of_nonneg_left (min_le_right _ _) hp).trans
           apply (selected_coordinate_power_le k r hr hMr j₀ hwin.le).trans
           dsimp only [e, W]
-          rw [if_pos rfl]
+          rw [ite_eq_left rfl]
           exact mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hsmall hG.le) (by positivity)
-        · rw [if_neg hj]
+        · rw [ite_eq_right hj]
           apply (full_coordinate_power_le r s hr hMr (j.val + 1)).trans
           dsimp only [e, W]
-          rw [if_neg hj]
+          rw [ite_eq_right hj]
           exact mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hfull hG.le) (by positivity)
     _ = _ := by rw [Finset.prod_mul_distrib]; simp only [Finset.prod_const, Finset.card_univ,
       Fintype.card_fin, Finset.prod_pow_eq_pow_sum, hE]

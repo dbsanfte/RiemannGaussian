@@ -62,7 +62,7 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_approach_eq
           Complex.normSq
             (upperBoundaryApproachPoint x y -
               starRingEnd ℂ (zetaSpectralCoordinate rho.1))) := by
-  rw [zetaUpperBlaschkeDerivativeVariationSummand, if_pos hupper,
+  rw [zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_left hupper,
     norm_deriv_elementaryUpperHalfPlaneBlaschke
       (by simpa using hy) hupper]
 
@@ -75,7 +75,7 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_approach_le_boundary
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · rw [zetaUpperBlaschkeDerivativeVariationSummand_approach_eq
       x hy rho hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     have hboundary :
         0 < Complex.normSq
           ((x : ℂ) - zetaSpectralCoordinate rho.1) := by
@@ -102,8 +102,8 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_approach_le_boundary
     rw [div_le_div_iff₀ happ hboundary]
     exact mul_le_mul_of_nonneg_left hden (by positivity)
   · rw [zetaUpperBlaschkeDerivativeVariationSummand,
-      if_neg hupper, zetaUpperBlaschkeBoundaryDensitySummand,
-      if_neg hupper]
+      ite_eq_right hupper, zetaUpperBlaschkeBoundaryDensitySummand,
+      ite_eq_right hupper]
 
 /-- Each elementary derivative-variation summand tends to its positive
 boundary density along `y -> 0+`. -/
@@ -136,7 +136,7 @@ theorem tendsto_zetaUpperBlaschkeDerivativeVariationSummand_approach
       exact hcontinuous.tendsto.mono_left nhdsWithin_le_nhds
     have hvalue : f 0 = zetaUpperBlaschkeBoundaryDensitySummand x rho := by
       dsimp [f]
-      rw [zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+      rw [zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
       norm_num
     rw [← hvalue]
     apply hf.congr'
@@ -146,7 +146,7 @@ theorem tendsto_zetaUpperBlaschkeDerivativeVariationSummand_approach
     dsimp [f]
     rw [normSq_upperBoundaryApproachPoint_sub_conj]
   · simp only [zetaUpperBlaschkeDerivativeVariationSummand,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
     exact tendsto_const_nhds
 
 /-- Tannery's theorem passes the vertical boundary limit through the complete

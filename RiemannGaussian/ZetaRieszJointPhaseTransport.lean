@@ -182,7 +182,7 @@ theorem central_joint_floor (u y : ℝ) (j : ℕ)
     have h := mul_le_mul_of_nonneg_left
       (centered_cosine_bounds (leftAngle y k x z) (phase y z)).1 (hw x hx z hz)
     simp only [leftAngle,cos_sub_int_mul_two_pi] at h ⊢
-    convert h using 1 <;> first | rfl | ring
+    convert h using 1 ; first | rfl | ring
   have h := Finset.sum_le_sum (fun x hx => Finset.sum_le_sum (fun z hz => hh x hx z hz))
   simp_rw [Finset.sum_sub_distrib,Finset.sum_neg_distrib] at h
   rw [joint_transport_eq u y j w]
@@ -205,7 +205,7 @@ theorem central_joint_ceiling (u y : ℝ) (j : ℕ)
     have h := mul_le_mul_of_nonneg_left
       (centered_cosine_bounds (leftAngle y k x z) (phase y z)).2 (hw x hx z hz)
     simp only [leftAngle,cos_sub_int_mul_two_pi] at h ⊢
-    convert h using 1 <;> first | rfl | ring
+    convert h using 1 ; first | rfl | ring
   have h := Finset.sum_le_sum (fun x hx => Finset.sum_le_sum (fun z hz => hh x hx z hz))
   simp_rw [Finset.sum_add_distrib,Finset.sum_neg_distrib] at h
   rw [joint_transport_eq u y j w]

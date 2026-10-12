@@ -100,7 +100,7 @@ theorem integrable_base {B : ℝ} (hB : 0 < B) (σ t : ℝ) (n : ℕ) :
 theorem average_base {B : ℝ} (hB : 0 < B) (σ t : ℝ) (n : ℕ) :
     average B (fun y => base σ (t - y) n) = term σ B t n := by
   simp only [base_shift]
-  rw [average_const_mul, average_phase hB]
+  rw [GaussianVerticalAverage.average_const_mul, average_phase hB]
   rfl
 
 /-- The full integrated absolute mass of one Euler term is its original amplitude. -/

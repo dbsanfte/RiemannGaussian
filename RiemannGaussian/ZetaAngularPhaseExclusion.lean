@@ -93,7 +93,7 @@ theorem exists_eventual_margin_of_optimal_shift {a ω : ℕ → ℝ}
       width C |ρ.1.im| < 1 - ρ.1.re := by
   have hM : 0 < mass a := by
     apply (tail_summable ha hs).tsum_pos (tail_nonneg ha) 1
-    simpa only [tail, show (1 : ℕ) ≠ 0 by norm_num, if_false] using h₀.trans h₁
+    simpa only [tail, show (1 : ℕ) ≠ 0 by norm_num, ite_false] using h₀.trans h₁
   apply exists_eventual_margin ha hs hp hω0 hω1 hω hlog hM hC
     (PhasePoleMargin.optimalShift_pos h₀ h₁)
   rwa [PhasePoleMargin.margin_optimalShift h₀ h₁]

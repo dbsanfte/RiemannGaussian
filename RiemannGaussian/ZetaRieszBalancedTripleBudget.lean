@@ -70,9 +70,9 @@ theorem joint_population_log_bounds (S : Finset ℕ)
   rcases Finset.mem_union.mp hn with hn | hn
   · exact population_log_bounds hn
   · by_cases hp : spend
-    · simp only [if_pos hp] at hn
+    · simp only [ite_eq_left hp] at hn
       exact ZetaRieszJointCapacityFloor.joint_population_log_bounds _ hn
-    · simp only [if_neg hp,Finset.union_empty] at hn
+    · simp only [ite_eq_right hp,Finset.union_empty] at hn
       exact ⟨(Finset.mem_filter.mp hn).2.2.2.2.1,
         (Finset.mem_filter.mp hn).2.2.2.2.2.1⟩
 
@@ -228,7 +228,7 @@ private theorem amplitude_le_window {n : ℕ} (hn : n ≠ 0) {t h : ℝ}
   have hm := mul_le_mul_of_nonneg_right hr (inv_nonneg.mpr hnR.le)
   unfold amplitude
   rw [he]
-  convert hm using 1 <;> first | rfl | ring
+  convert hm using 1 ; first | rfl | ring
 
 /-- The original coefficient and factorial allocation are controlled on
 the explicit balanced band by a fixed local mass budget. This is used
@@ -260,7 +260,7 @@ theorem eventually_coefficient_mass {h : ℝ} (hh : 0 < h) (hhu : h ≤ 1/100000
     change weight A N n ≤ amplitude N n at hw
     have hbnd := mul_le_mul (hw.trans haw) hu hb.1
       (show 0 ≤ V*(n : ℝ)⁻¹ by positivity)
-    convert hbnd using 1 <;> first | rfl | ring
+    convert hbnd using 1 ; first | rfl | ring
   have hsum := Finset.sum_le_sum hpoint
   rw [← Finset.mul_sum] at hsum
   have hscaled := mul_le_mul_of_nonneg_left (hmass S t hNt)

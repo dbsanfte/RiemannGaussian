@@ -1,0 +1,1094 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorGrowingSchurAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 36,
+    "theoremsIncludingGeneratedHelpers": 33,
+    "authoredNamespaceDeclarations": 23,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "unchangedDependenciesCompiledIntoNativeCache": [
+      "RiemannGaussian.ArithmeticOperatorGaussianCoprimeAudit",
+      "RiemannGaussian.ArithmeticOperatorCoprimeDiagonalAudit",
+      "RiemannGaussian.ArithmeticOperatorPoleProjectionAudit",
+      "RiemannGaussian.ArithmeticOperatorSchurProjectionAudit"
+    ],
+    "notationOnlyMigratedDependencyCompiledWithWarningsFatal": "RiemannGaussian.ArithmeticOperatorSchurJetAudit",
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "nativeCompatibilityChange": {
+    "path": "RiemannGaussian/ArithmeticOperatorSchurJetAudit.lean",
+    "from": "[v,\u2190Submodule.coe_norm,b.norm_eq_one,one_pow,mul_one]",
+    "to": "[v,Submodule.norm_coe,b.norm_eq_one,one_pow,mul_one]",
+    "proofBehaviorChanged": false,
+    "beforeThisTurnSha256": "79b62f82a1ccfdf94b4fa4e912f7591256c8dfc81d3c9ac90133003b8a7487ca",
+    "afterSha256": "5b3672aef853c97ec8d9a7bb3c60a36f4f17be6c0930d7bd2d8c2a138a0c9dbc"
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "native phase-band prime pairing; squarefree coprime rows; full damped matrix and both complex incidences; integer ceil cutoff",
+    "hypotheticalZeroResponse": "no projected nonlinear source inferred; actual PSD premise false at every actual zero ordinate before any new source estimate",
+    "densitySeparation": "exact mean-zero profile plus all moving complex constraints; not asserted analytic pole-germ cancellation",
+    "collapseAudit": "actual integer primes already refute the PSD premise; smooth/free/generalized controls not granted prime or binomial/Gamma data",
+    "independentSignedEstimate": "none; PNT counts locate actual negative tests ONLY, not signed source-scale payments",
+    "endpointTransfer": "no open RH arithmetic premise discharged"
+  },
+  "scope": {
+    "actualNativePhaseScale": "exp((2*pi*J+1/4)/abs(y))",
+    "bandWidth": "exp(1/(4*abs(y)))",
+    "physicalPrimeBand": "x_J<p<=A_y*x_J",
+    "originalIntegerCutoff": "X_J=ceil(A_y*x_J)^2",
+    "fullNativeKernel": "actual phased Mobius divisor kernel with original diagonal credit",
+    "diagonalRealMargin": "<=-1/25",
+    "offDiagonalBeforeDamping": "exactly one on disjoint coprime rows",
+    "qualitativePNTRole": "prime LOCATION/counterexample population, never signed estimate or source payment",
+    "primeLogMass": "eventually >=((A_y-1)/2)*x_J; <=card(P_J)*log(A_y*x_J)",
+    "budgetCondition": "(r(X)+1)*log(X+1)/sqrt(X+1)->0",
+    "finiteRowBudget": "54*(r+1) primes give L=27*(r+1) coprime rows; L>26*(r+1)",
+    "polylogCorollary": "every eventually r(X)+1<=C*log(X+1)^d for fixed natural d",
+    "constraintProfilesAndDampingMayDependOnCutoff": true,
+    "unitDiagonalAndPositiveSchurOnly": true,
+    "fullPhaseAndOrderedIncidencesRetained": true,
+    "squarefreeAndHeadAndPhysicalCutoffRetained": true,
+    "wholeConstrainedSpacePSDRefuted": true,
+    "noSourceHypothesisNeeded": true,
+    "allActualNontrivialZeroOrdinatesCovered": true,
+    "analyticMultiplicitiesNotAltered": true,
+    "projectedPacketSourceLimitInferred": false,
+    "fixedHeadMayBeAnyNatural": true,
+    "noGo": "sub-sqrt/log growing profile count cannot make this actual native whole-space Schur quadratic cofinally PSD",
+    "notRuledOut": [
+      "larger-codimension projection",
+      "changed diagonal with separately paid cost",
+      "prescribed constrained signed arithmetic packet",
+      "different Gaussian/Weil operator coupling"
+    ],
+    "nextAction": "move to next ranked interaction; do not refine this failed whole-space unit-diagonal PSD rescue"
+  },
+  "regression": {
+    "scope": "actual finite native negative rows and growing projection-budget regression",
+    "proofInput": false,
+    "checksPassed": true,
+    "integerPrimeCeiling": 2000000,
+    "ordinaryPrimeCount": 148933,
+    "exact": {
+      "literalSemiprimeRows": 1663,
+      "pairwiseCoprimeChecks": 138752,
+      "densityAndPolynomialConstraintJoins": 374,
+      "unitEndpointsRetainedInNativeDivisorFiber": true
+    },
+    "floatingDiagnosticOnly": {
+      "diagonalChecks": 1663,
+      "joinedQuadraticChecks": 288,
+      "maximumDivisorFactorizationResidual": 3.637986872451087e-12,
+      "cases": [
+        {
+          "diagnosticHeight": 54.0,
+          "J": 98,
+          "bandStart": 89989.42202289596,
+          "bandEnd": 90407.0056002425,
+          "nativeIntegerCutoff": 8173606464,
+          "primeCount": 42,
+          "disjointSquarefreeRows": 21,
+          "largestNativeDiagonalReal": -0.12871590419716594,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.1316092770047923,
+              "constantReal": -1.1316092770047923,
+              "gaussianReal": -0.49948871817623464
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13422470756590565,
+              "constantReal": -1.1342247075659058,
+              "gaussianReal": -1.045957691010665
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.13690187396699907,
+              "constantReal": -1.1369018739669992,
+              "gaussianReal": -1.1247454037947122
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.14584823461442986,
+              "constantReal": -1.1458482346144299,
+              "gaussianReal": -1.1391127273213317
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.16812766419160957,
+              "constantReal": -1.1681276641916096,
+              "gaussianReal": -1.1668250779463862
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 54.0,
+          "J": 108,
+          "bandStart": 288081.9432980288,
+          "bandEnd": 289418.7480662684,
+          "nativeIntegerCutoff": 83763357561,
+          "primeCount": 112,
+          "disjointSquarefreeRows": 56,
+          "largestNativeDiagonalReal": -0.12346097730336925,
+          "traceBudgetSufficientR": 1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12873067445339736,
+              "constantReal": -1.1287306744533974,
+              "gaussianReal": -0.4966101156248397
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13310568244635057,
+              "constantReal": -1.1331056824463506,
+              "gaussianReal": -1.032440513656009
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.13619855703101735,
+              "constantReal": -1.1361985570310171,
+              "gaussianReal": -1.1198423153308343
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.14033964296840887,
+              "constantReal": -1.1403396429684092,
+              "gaussianReal": -1.139848289995238
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.14801382362864354,
+              "constantReal": -1.1480138236286435,
+              "gaussianReal": -1.1479145518985259
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 54.0,
+          "J": 116,
+          "bandStart": 730761.566947406,
+          "bandEnd": 734152.5658276479,
+          "nativeIntegerCutoff": 538980627409,
+          "primeCount": 253,
+          "disjointSquarefreeRows": 126,
+          "largestNativeDiagonalReal": -0.12168269685135469,
+          "traceBudgetSufficientR": 3,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12192395444927961,
+              "constantReal": -1.1219239544492796,
+              "gaussianReal": -0.48980339562072195
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12230374963982822,
+              "constantReal": -1.1223037496398283,
+              "gaussianReal": -1.0105587103331122
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12285353858748267,
+              "constantReal": -1.1228535385874827,
+              "gaussianReal": -1.0900329621393816
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12403960371897736,
+              "constantReal": -1.1240396037189775,
+              "gaussianReal": -1.1232984495323481
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12669113207470717,
+              "constantReal": -1.1266911320747073,
+              "gaussianReal": -1.126623470178568
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 54.0,
+          "J": 123,
+          "bandStart": 1650072.024247429,
+          "bandEnd": 1657728.95728773,
+          "nativeIntegerCutoff": 2748065437441,
+          "primeCount": 549,
+          "disjointSquarefreeRows": 274,
+          "largestNativeDiagonalReal": -0.12075730485516267,
+          "traceBudgetSufficientR": 9,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12095505706891108,
+              "constantReal": -1.120955057068911,
+              "gaussianReal": -0.4888344982403534
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12113766301865751,
+              "constantReal": -1.1211376630186576,
+              "gaussianReal": -1.0347045791132494
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12131126504470999,
+              "constantReal": -1.12131126504471,
+              "gaussianReal": -1.118166337131068
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12176881734116046,
+              "constantReal": -1.1217688173411602,
+              "gaussianReal": -1.1211037647007436
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12317715934128308,
+              "constantReal": -1.1231771593412834,
+              "gaussianReal": -1.1228255782458294
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": -54.0,
+          "J": 98,
+          "bandStart": 89989.42202289596,
+          "bandEnd": 90407.0056002425,
+          "nativeIntegerCutoff": 8173606464,
+          "primeCount": 42,
+          "disjointSquarefreeRows": 21,
+          "largestNativeDiagonalReal": -0.12871590419716594,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.1316092770047923,
+              "constantReal": -1.1316092770047923,
+              "gaussianReal": -0.49948871817623464
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13422470756590565,
+              "constantReal": -1.1342247075659058,
+              "gaussianReal": -1.045957691010665
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.13690187396699907,
+              "constantReal": -1.1369018739669992,
+              "gaussianReal": -1.1247454037947122
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.14584823461442986,
+              "constantReal": -1.1458482346144299,
+              "gaussianReal": -1.1391127273213317
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.16812766419160957,
+              "constantReal": -1.1681276641916096,
+              "gaussianReal": -1.1668250779463862
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": -54.0,
+          "J": 108,
+          "bandStart": 288081.9432980288,
+          "bandEnd": 289418.7480662684,
+          "nativeIntegerCutoff": 83763357561,
+          "primeCount": 112,
+          "disjointSquarefreeRows": 56,
+          "largestNativeDiagonalReal": -0.12346097730336925,
+          "traceBudgetSufficientR": 1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12873067445339736,
+              "constantReal": -1.1287306744533974,
+              "gaussianReal": -0.4966101156248397
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13310568244635057,
+              "constantReal": -1.1331056824463506,
+              "gaussianReal": -1.032440513656009
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.13619855703101735,
+              "constantReal": -1.1361985570310171,
+              "gaussianReal": -1.1198423153308343
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.14033964296840887,
+              "constantReal": -1.1403396429684092,
+              "gaussianReal": -1.139848289995238
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.14801382362864354,
+              "constantReal": -1.1480138236286435,
+              "gaussianReal": -1.1479145518985259
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": -54.0,
+          "J": 116,
+          "bandStart": 730761.566947406,
+          "bandEnd": 734152.5658276479,
+          "nativeIntegerCutoff": 538980627409,
+          "primeCount": 253,
+          "disjointSquarefreeRows": 126,
+          "largestNativeDiagonalReal": -0.12168269685135469,
+          "traceBudgetSufficientR": 3,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12192395444927961,
+              "constantReal": -1.1219239544492796,
+              "gaussianReal": -0.48980339562072195
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12230374963982822,
+              "constantReal": -1.1223037496398283,
+              "gaussianReal": -1.0105587103331122
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12285353858748267,
+              "constantReal": -1.1228535385874827,
+              "gaussianReal": -1.0900329621393816
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12403960371897736,
+              "constantReal": -1.1240396037189775,
+              "gaussianReal": -1.1232984495323481
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12669113207470717,
+              "constantReal": -1.1266911320747073,
+              "gaussianReal": -1.126623470178568
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": -54.0,
+          "J": 123,
+          "bandStart": 1650072.024247429,
+          "bandEnd": 1657728.95728773,
+          "nativeIntegerCutoff": 2748065437441,
+          "primeCount": 549,
+          "disjointSquarefreeRows": 274,
+          "largestNativeDiagonalReal": -0.12075730485516267,
+          "traceBudgetSufficientR": 9,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12095505706891108,
+              "constantReal": -1.120955057068911,
+              "gaussianReal": -0.4888344982403534
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12113766301865751,
+              "constantReal": -1.1211376630186576,
+              "gaussianReal": -1.0347045791132494
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12131126504470999,
+              "constantReal": -1.12131126504471,
+              "gaussianReal": -1.118166337131068
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12176881734116046,
+              "constantReal": -1.1217688173411602,
+              "gaussianReal": -1.1211037647007436
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12317715934128308,
+              "constantReal": -1.1231771593412834,
+              "gaussianReal": -1.1228255782458294
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 65.0,
+          "J": 119,
+          "bandStart": 99400.10862509425,
+          "bandEnd": 99783.15288657606,
+          "nativeIntegerCutoff": 9956846656,
+          "primeCount": 32,
+          "disjointSquarefreeRows": 16,
+          "largestNativeDiagonalReal": -0.12345580534001876,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.13295186828336336,
+              "constantReal": -1.1329518682833633,
+              "gaussianReal": -0.5008313094548057
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.14414034424715041,
+              "constantReal": -1.1441403442471503,
+              "gaussianReal": -1.0558096338545138
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.15722567402264173,
+              "constantReal": -1.1572256740226419,
+              "gaussianReal": -1.1398021329821526
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.18154493939096933,
+              "constantReal": -1.1815449393909694,
+              "gaussianReal": -1.1802258755536574
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.2176915419186112,
+              "constantReal": -1.2176915419186114,
+              "gaussianReal": -1.2169631142825126
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 65.0,
+          "J": 130,
+          "bandStart": 287856.3264660009,
+          "bandEnd": 288965.5980302796,
+          "nativeIntegerCutoff": 83501349156,
+          "primeCount": 81,
+          "disjointSquarefreeRows": 40,
+          "largestNativeDiagonalReal": -0.12125460408793653,
+          "traceBudgetSufficientR": 0,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12230935315087743,
+              "constantReal": -1.1223093531508774,
+              "gaussianReal": -0.49018879432231977
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12422297369562425,
+              "constantReal": -1.1242229736956242,
+              "gaussianReal": -1.0016408427194685
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.1272426829493662,
+              "constantReal": -1.1272426829493662,
+              "gaussianReal": -1.0912140735671871
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.13474206977564476,
+              "constantReal": -1.1347420697756447,
+              "gaussianReal": -1.1322900387741877
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.1541350247984664,
+              "constantReal": -1.1541350247984665,
+              "gaussianReal": -1.1539667199539236
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 65.0,
+          "J": 140,
+          "bandStart": 756804.8169699581,
+          "bandEnd": 759721.2095797037,
+          "nativeIntegerCutoff": 577177517284,
+          "primeCount": 217,
+          "disjointSquarefreeRows": 108,
+          "largestNativeDiagonalReal": -0.12282022706265394,
+          "traceBudgetSufficientR": 3,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12390929745937695,
+              "constantReal": -1.123909297459377,
+              "gaussianReal": -0.4917887386308193
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12494698754088489,
+              "constantReal": -1.1249469875408848,
+              "gaussianReal": -1.0398906267539016
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12597599350547903,
+              "constantReal": -1.1259759935054792,
+              "gaussianReal": -1.1227651585779448
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12856050699451857,
+              "constantReal": -1.1285605069945188,
+              "gaussianReal": -1.1275957409241897
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.13496794492194505,
+              "constantReal": -1.134967944921945,
+              "gaussianReal": -1.1338006799798261
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 65.0,
+          "J": 148,
+          "bandStart": 1639949.1223262597,
+          "bandEnd": 1646268.7643177838,
+          "nativeIntegerCutoff": 2710201620361,
+          "primeCount": 440,
+          "disjointSquarefreeRows": 220,
+          "largestNativeDiagonalReal": -0.12195535915699618,
+          "traceBudgetSufficientR": 7,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.1223070016781409,
+              "constantReal": -1.122307001678141,
+              "gaussianReal": -0.49018644284958324
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12265900069461429,
+              "constantReal": -1.1226590006946144,
+              "gaussianReal": -1.038433564396332
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12302832599782576,
+              "constantReal": -1.1230283259978258,
+              "gaussianReal": -1.1189390125379226
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12385056451230458,
+              "constantReal": -1.1238505645123047,
+              "gaussianReal": -1.1162820277098187
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12538922535759892,
+              "constantReal": -1.1253892253575988,
+              "gaussianReal": -1.1236595239004457
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 100.0,
+          "J": 183,
+          "bandStart": 98787.77212293271,
+          "bandEnd": 99035.05052244863,
+          "nativeIntegerCutoff": 9808129296,
+          "primeCount": 26,
+          "disjointSquarefreeRows": 13,
+          "largestNativeDiagonalReal": -0.136130418789852,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.14563275128140363,
+              "constantReal": -1.1456327512814037,
+              "gaussianReal": -0.513512192452846
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.15841132307418493,
+              "constantReal": -1.158411323074185,
+              "gaussianReal": -1.0628190743244044
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.17427963379856207,
+              "constantReal": -1.174279633798562,
+              "gaussianReal": -1.125619836853836
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.19976842494131095,
+              "constantReal": -1.1997684249413112,
+              "gaussianReal": -1.1910779754194185
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.23573782366444287,
+              "constantReal": -1.235737823664443,
+              "gaussianReal": -1.2349536786080328
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 100.0,
+          "J": 200,
+          "bandStart": 287469.0882645639,
+          "bandEnd": 288188.66007521166,
+          "nativeIntegerCutoff": 83052899721,
+          "primeCount": 44,
+          "disjointSquarefreeRows": 22,
+          "largestNativeDiagonalReal": -0.1293035571287804,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.1333213197644345,
+              "constantReal": -1.1333213197644345,
+              "gaussianReal": -0.5012007609358768
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13792308244187393,
+              "constantReal": -1.137923082441874,
+              "gaussianReal": -1.0504646329312752
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.1433359392586917,
+              "constantReal": -1.1433359392586917,
+              "gaussianReal": -1.1332151677916782
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.15524712170503183,
+              "constantReal": -1.1552471217050317,
+              "gaussianReal": -1.1549961640875033
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.1819448066890614,
+              "constantReal": -1.1819448066890614,
+              "gaussianReal": -1.1798370043707462
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 100.0,
+          "J": 216,
+          "bandStart": 785582.110116318,
+          "bandEnd": 787548.5223827689,
+          "nativeIntegerCutoff": 620233427401,
+          "primeCount": 140,
+          "disjointSquarefreeRows": 70,
+          "largestNativeDiagonalReal": -0.1218925377900415,
+          "traceBudgetSufficientR": 1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12374526673726527,
+              "constantReal": -1.1237452667372652,
+              "gaussianReal": -0.4916247079087076
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12540322283112712,
+              "constantReal": -1.125403222831127,
+              "gaussianReal": -1.0363804073971785
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.12690103739551536,
+              "constantReal": -1.1269010373955155,
+              "gaussianReal": -1.1238429970805908
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.13060622892075788,
+              "constantReal": -1.1306062289207581,
+              "gaussianReal": -1.1288305868270652
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.13875519874994746,
+              "constantReal": -1.1387551987499474,
+              "gaussianReal": -1.137518667016777
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 100.0,
+          "J": 228,
+          "bandStart": 1669713.3122913376,
+          "bandEnd": 1673892.817777098,
+          "nativeIntegerCutoff": 2801917775449,
+          "primeCount": 282,
+          "disjointSquarefreeRows": 141,
+          "largestNativeDiagonalReal": -0.12163652324022589,
+          "traceBudgetSufficientR": 4,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.12205593010991622,
+              "constantReal": -1.1220559301099162,
+              "gaussianReal": -0.48993537128135856
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12255054387993987,
+              "constantReal": -1.12255054387994,
+              "gaussianReal": -1.0325779118530243
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.1231235076547756,
+              "constantReal": -1.1231235076547754,
+              "gaussianReal": -1.1021962516834993
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.12419217488668195,
+              "constantReal": -1.124192174886682,
+              "gaussianReal": -1.1233044857111847
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.12681033189036411,
+              "constantReal": -1.126810331890364,
+              "gaussianReal": -1.1263987395371509
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 350.0,
+          "J": 641,
+          "bandStart": 99500.64214686399,
+          "bandEnd": 99571.73942297323,
+          "nativeIntegerCutoff": 9914583184,
+          "primeCount": 7,
+          "disjointSquarefreeRows": 3,
+          "largestNativeDiagonalReal": -0.21068793526000773,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.24184078027915812,
+              "constantReal": -1.241840780279158,
+              "gaussianReal": -0.6097202214506005
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.279718201262444,
+              "constantReal": -1.279718201262444,
+              "gaussianReal": -1.1918916946501046
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 350.0,
+          "J": 702,
+          "bandStart": 297446.25021974463,
+          "bandEnd": 297658.7877242596,
+          "nativeIntegerCutoff": 88600880281,
+          "primeCount": 18,
+          "disjointSquarefreeRows": 9,
+          "largestNativeDiagonalReal": -0.1381499277935303,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.145844417511936,
+              "constantReal": -1.145844417511936,
+              "gaussianReal": -0.5137238586833783
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.15513453890079823,
+              "constantReal": -1.1551345389007983,
+              "gaussianReal": -1.0650757108029703
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.16664817416181715,
+              "constantReal": -1.1666481741618173,
+              "gaussianReal": -1.1540063426486258
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.19600260086679652,
+              "constantReal": -1.1960026008667963,
+              "gaussianReal": -1.1938084700456377
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 350.0,
+          "J": 757,
+          "bandStart": 798385.2323420069,
+          "bandEnd": 798955.711226169,
+          "nativeIntegerCutoff": 638330689936,
+          "primeCount": 39,
+          "disjointSquarefreeRows": 19,
+          "largestNativeDiagonalReal": -0.12655511472953718,
+          "traceBudgetSufficientR": -1,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.13200726991399525,
+              "constantReal": -1.1320072699139954,
+              "gaussianReal": -0.4998867110854376
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.13785641403861915,
+              "constantReal": -1.137856414038619,
+              "gaussianReal": -1.052969013042256
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.14419590153056647,
+              "constantReal": -1.1441959015305665,
+              "gaussianReal": -1.1356593677150821
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.15700498514566452,
+              "constantReal": -1.1570049851456643,
+              "gaussianReal": -1.1569227261605768
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.1797275071845269,
+              "constantReal": -1.179727507184527,
+              "gaussianReal": -1.1795942341445793
+            }
+          ]
+        },
+        {
+          "diagnosticHeight": 350.0,
+          "J": 799,
+          "bandStart": 1696925.6728375324,
+          "bandEnd": 1698138.1955961343,
+          "nativeIntegerCutoff": 2883676063321,
+          "primeCount": 97,
+          "disjointSquarefreeRows": 48,
+          "largestNativeDiagonalReal": -0.12459605564875198,
+          "traceBudgetSufficientR": 0,
+          "profileTests": [
+            {
+              "r": 0,
+              "exactDensityAndProfiles": 1,
+              "identityReal": -0.1269466727285845,
+              "constantReal": -1.1269466727285846,
+              "gaussianReal": -0.49482611390002684
+            },
+            {
+              "r": 1,
+              "exactDensityAndProfiles": 2,
+              "identityReal": -0.12956995191030807,
+              "constantReal": -1.129569951910308,
+              "gaussianReal": -1.0426970632499177
+            },
+            {
+              "r": 2,
+              "exactDensityAndProfiles": 3,
+              "identityReal": -0.13261050568258795,
+              "constantReal": -1.132610505682588,
+              "gaussianReal": -1.1238965147060032
+            },
+            {
+              "r": 4,
+              "exactDensityAndProfiles": 5,
+              "identityReal": -0.1390894218371925,
+              "constantReal": -1.1390894218371925,
+              "gaussianReal": -1.134300946288573
+            },
+            {
+              "r": 8,
+              "exactDensityAndProfiles": 9,
+              "identityReal": -0.14760420072459524,
+              "constantReal": -1.1476042007245952,
+              "gaussianReal": -1.1467993826944427
+            }
+          ]
+        }
+      ]
+    },
+    "growthOrSourceInferredFromNumerics": false,
+    "nativePNTPrimeLocationTheoremUsedAsSignedPayment": false,
+    "actualZeroModeResponseOrRHBoundClaimed": false,
+    "scopeNotRuledOut": [
+      "prescribed signed packet",
+      "large-codimension projection",
+      "nonunit diagonal repair",
+      "other operator interactions"
+    ]
+  },
+  "historicalPinPolicy": {
+    "priorMetadata": "docs/arithmetic-operator-kummer-affine-audit.json",
+    "priorCount": 30,
+    "allPriorPinsMatchedBeforeDocumentationUpdate": true,
+    "oldPinsRewritten": false,
+    "afterwardDrift": [
+      "AGENTS.md",
+      "docs/arithmetic-operator-research.md"
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorGrowingSchurAudit.lean": "cff23f9ae3e5c9f18ab707477fde4d89fcfbe1b908cc7106359e98b2e80be4e3",
+    "scripts/probe_arithmetic_operator_growing_schur.py": "6f8e06e0d6ee60c74d07b74648305be51dbe1f807caa6c26d1f62a69b36c41b8",
+    "RiemannGaussian/ArithmeticOperatorSchurJetAudit.lean": "5b3672aef853c97ec8d9a7bb3c60a36f4f17be6c0930d7bd2d8c2a138a0c9dbc",
+    "RiemannGaussian/ArithmeticOperatorSchurProjectionAudit.lean": "9cd2771eed7a8ed4fd99f8773326829fbbd69aff8887bf1c1cdca5b35b407af6",
+    "RiemannGaussian/ArithmeticOperatorPoleProjectionAudit.lean": "99fb8d50d4da269e6a6b07fb71e9fddff5f7b43b637f8a02f7d57b346e80f4f9",
+    "RiemannGaussian/ArithmeticOperatorCoprimeDiagonalAudit.lean": "764149df5c30e9079f814a45bcff3cad5eacf1b320a1bb3f8247a91a73718ad6",
+    "RiemannGaussian/ArithmeticOperatorGaussianCoprimeAudit.lean": "46651eeb9bf87e60d49fd389792ffa2ce4901109c7cc489f07fb99aa4c34665a",
+    "RiemannGaussian/ArithmeticOperatorMoebiusCoprimeAudit.lean": "29d80541c98b85c8e68106cd204ff4cbed4c3e229bc6810b25ec3057bca61803",
+    "RiemannGaussian/ArithmeticOperatorGcdAudit.lean": "e72351f18fa46011458c8c67269df84e232ed2e3d4d67bb4f6b255d9265980f5",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ZetaPrimeWindow.lean": "1630174ee0412c8890a96b3350583a1e314d1bbd42c6161aa579986532f24d4f",
+    "RiemannGaussian/ChebyshevMoebiusCancellation.lean": "464025a52584edc6e7e1f044548f7eb3bc564e9c1024dfe51a264fd627a80886",
+    "RiemannGaussian/SuzukiProperPrimePowerWork.lean": "4b531c30b9cc15d6bd67d84c823056b954dfbeecca48aaa0648c30bee041a750",
+    ".lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Trace.lean": "220aaaefdf1c03061afd6055e7419dc5fe5b656993ba2d93b412d09922822f9e",
+    ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Asymptotics.lean": "f1b03c18e31b061d41e690ac92908039b1454737c7803d6269dd5c1f9cc1f3cc",
+    ".lake/packages/mathlib/Mathlib/Data/Fintype/EquivFin.lean": "891fdb687fc067b1511701992301e28de0d4fd6ab53d74a96f51be39d5aa8f92",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Squarefree.lean": "c4d421a3b9874809348fe23bc02eda4e380b9204f72ec9ea6bd16001f54cab91",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "0177dcbc3220b6b991556cd47668a8ffc478846b512435e700c51a0b8f3272f3",
+    "docs/arithmetic-operator-research.md": "24416f9ed390e7a834e368413e815e371b1c74840dc52d33f9a105dcc3ea5e51",
+    ".lake/arithmetic-operator-growing-schur/check.log": "99f0ade0f1a64342e584b66bc8d07b550a68b0fb7da67209cf353965dc0d4a6c",
+    ".lake/arithmetic-operator-growing-schur/axioms.json": "c9d89386280041510ccae3110906d668f2e93c811e927ec1a7bd34b994807bc7",
+    ".lake/arithmetic-operator-growing-schur/probe.json": "609235b16159497433162f1ccbd85d5bde874eef99881f1c790ceda910b44da0",
+    ".lake/arithmetic-operator-growing-schur/probe.log": "b316ca388c575d93f9837270bba50fe4f4b64548b7fe3d9e8128c9c4c3c40b04",
+    ".lake/arithmetic-operator-growing-schur/prior-affine-pin-check-before-doc-update.json": "1ad909f28502e0a435038dfd298ee800574826e91fa1961aa56ffb7ddfb05948",
+    ".lake/arithmetic-operator-growing-schur/prior-affine-pin-check-after-doc-update.json": "509d685d31b4140f3a6802d080f846d34a9b5b8003b19ff26abc63c2b98e0224",
+    ".lake/arithmetic-operator-growing-schur/ArithmeticOperatorGaussianCoprimeAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-growing-schur/ArithmeticOperatorCoprimeDiagonalAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-growing-schur/ArithmeticOperatorPoleProjectionAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-growing-schur/ArithmeticOperatorSchurProjectionAudit-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".lake/arithmetic-operator-growing-schur/SchurJet-cache.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

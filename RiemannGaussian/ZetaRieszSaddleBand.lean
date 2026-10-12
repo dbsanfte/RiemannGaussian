@@ -282,7 +282,7 @@ theorem sourceCredit_le_scaled_margin {u y : ℝ} (hu : 0 ≤ u) (hy : y ≠ 0)
     (show 0 ≤ u^(N+1)*(m : ℝ)*(Real.pi/(4*m*|y|))/1000 by positivity)
   convert hs using 1 <;>
     (try simp only [ZetaRieszCentralReserve.sourceCredit]) <;>
-    (try rw [pow_succ,mul_pow]) <;> (try field_simp) <;> first | rfl | ring
+    (try rw [pow_succ,mul_pow]) <;> (try field_simp) ; first | rfl | ring
 
 
 open ZetaRieszTransitionSixPeriod

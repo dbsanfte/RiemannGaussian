@@ -44,7 +44,7 @@ theorem intersectionCost_le_three (S : Finset ℕ) :
     nlinarith [log_natCast_nonneg p]
   calc
     _ ≤ ∏ _p ∈ S, (3 : ℝ) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro p _
         linarith [primeSquareCorrectedWeight_nonneg (23/32) p]
       · intro p _
@@ -86,7 +86,7 @@ theorem intersectionCost_cutoff_bound (S : Finset ℕ) (Q : ℕ)
       _ = _ := by ring
   calc
     _ ≤ ∏ p ∈ S, exp (primeSquareCorrectedWeight (23/32) p) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro p _
         linarith [primeSquareCorrectedWeight_nonneg (23/32) p]
       · intro p _
@@ -113,7 +113,7 @@ theorem intersectionCost_union (S T : Finset ℕ) :
   have he : S ∪ T=S ∪ (T \ S) := by ext p; simp
   rw [he,intersectionCost,Finset.prod_union (Finset.disjoint_left.mpr (fun p hp hpt => (Finset.mem_sdiff.mp hpt).2 hp))]
   apply mul_le_mul_of_nonneg_left ?_ (intersectionCost_nonneg S)
-  exact Finset.prod_le_prod_of_subset_of_one_le
+  exact Finset.prod_le_prod_of_subset_of_one_le₀
     (Finset.sdiff_subset : T \ S ⊆ T)
     (fun p _ => by linarith [primeSquareCorrectedWeight_nonneg (23/32) p])
     (fun p _ _ => by linarith [primeSquareCorrectedWeight_nonneg (23/32) p])

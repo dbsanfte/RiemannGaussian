@@ -67,7 +67,7 @@ theorem early_coefficient_le {k J : ℕ} (hk : 1000 ≤ k)
       have hj : (j : ℝ) + 1 ≤ (197 / 100) * (k : ℝ) := by simpa only [Nat.cast_add_one] using hJ
       have ha : (k : ℝ) - 1 < selectedDefect k j := by linarith [early_active hk hj]
       have hi := ih (show (j : ℝ) ≤ (197 / 100) * (k : ℝ) by linarith)
-      rw [selectedCoefficient, if_pos ha]
+      rw [selectedCoefficient, ite_eq_left ha]
       calc
         _ ≤ selectedCoefficient k (3 / 50) j * coefficientScale k ^
             (selectedDefect k j - selectedDefect k (j + 1)) :=
@@ -86,11 +86,11 @@ theorem coefficient_step_le {k : ℕ} (hk : 1000 ≤ k) (j : ℕ) :
   have hc := (selectedCoefficient_pos (by omega : 0 < k)
     (by norm_num : (0 : ℝ) < 3 / 50) j).le
   by_cases ha : (k : ℝ) - 1 < selectedDefect k j
-  · rw [selectedCoefficient, if_pos ha]
+  · rw [selectedCoefficient, ite_eq_left ha]
     exact mul_le_mul_of_nonneg_left (step_le_product hk j) hc
   · have hd : selectedDefect k (j + 1) = selectedDefect k j := by
-      rw [selectedDefect, if_neg ha]
-    rw [selectedCoefficient, if_neg ha, hd, sub_self, Real.rpow_zero, mul_one]
+      rw [selectedDefect, ite_eq_right ha]
+    rw [selectedCoefficient, ite_eq_right ha, hd, sub_self, Real.rpow_zero, mul_one]
     exact le_mul_of_one_le_right hc (packetCost_ge_one hk j)
 
 /-- The exact remaining packet product in real exponents. -/

@@ -111,8 +111,8 @@ theorem headCorrection_bound (J : ℕ) (a : ℕ → ℂ) (n : ℕ) :
     have hc : (4/3 : ℝ)^(n+1)*(3/4 : ℝ)^(n+1) = 1 := by
       rw [<-mul_pow]
       norm_num
-    simpa only [headCorrection, if_pos hn, mul_assoc, hc, mul_one] using hh
-  · simp only [headCorrection, if_neg hn, norm_zero]
+    simpa only [headCorrection, ite_eq_left hn, mul_assoc, hc, mul_one] using hh
+  · simp only [headCorrection, ite_eq_right hn, norm_zero]
     exact mul_nonneg (headPrice_nonneg J a) (by positivity)
 
 /-- Matching a finite Euler jet preserves an explicit geometric local
@@ -139,7 +139,7 @@ theorem hasSum_headCorrection (J : ℕ) (a : ℕ → ℂ) (t : ℂ) :
   have he : (∑ n ∈ Finset.range J, headCorrection J a n*t^n) = headPolynomial J a t := by
     apply Finset.sum_congr rfl
     intro n hn
-    simp only [headCorrection, if_pos (Finset.mem_range.mp hn)]
+    simp only [headCorrection, ite_eq_left (Finset.mem_range.mp hn)]
   rwa [he] at hh
 
 /-- Exact inverse-series bookkeeping preserves every regular endpoint. -/
@@ -259,9 +259,9 @@ theorem ordinary_moment_le_real_axis (y : ℝ) (n : ℕ) :
   apply Summable.tsum_le_tsum _ hs.norm hsumf.summable
   intro m
   by_cases hp : m.Prime
-  · simp only [if_pos hp, hnorm]
+  · simp only [ite_eq_left hp, hnorm]
     exact le_rfl
-  · simp only [if_neg hp, norm_zero]
+  · simp only [ite_eq_right hp, norm_zero]
     exact mul_nonneg (div_nonneg (mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
       (pow_nonneg (Real.log_natCast_nonneg _) _)) (Nat.cast_nonneg _)) (Real.exp_pos _).le
 

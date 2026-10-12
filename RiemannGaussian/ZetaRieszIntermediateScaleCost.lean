@@ -101,11 +101,11 @@ theorem intermediate_population_mass_le (D U E : Finset ℕ) (m : ℕ) {t : ℝ}
     have hh : (∑ p∈E,markerWeight E t p)=∑ p∈E,4*(p : ℝ)⁻¹*t⁻¹ := by
       apply Finset.sum_congr rfl
       intro p hp
-      simp only [markerWeight,if_pos hp]
+      simp only [markerWeight,ite_eq_left hp]
     have he : (∑ p∈U\E,markerWeight E t p)=∑ p∈U\E,4*(p : ℝ)⁻¹ := by
       apply Finset.sum_congr rfl
       intro p hp
-      simp only [markerWeight,if_neg (Finset.mem_sdiff.mp hp).2,mul_one]
+      simp only [markerWeight,ite_eq_right (Finset.mem_sdiff.mp hp).2,mul_one]
     rw [hh,he]
     simp only [← Finset.mul_sum,← Finset.sum_mul,div_eq_mul_inv]
     ring
@@ -313,7 +313,7 @@ theorem sparse_intermediate_clipped_norm_bound (A : ℕ→Finset ℕ)
       zetaPrimeLogKernel N (3/2+Complex.I*y) n‖)≤∑ x∈V,f (label x) := by
     have hh := (Finset.sum_le_sum_of_subset_of_nonneg hcover (fun n _ _ => hf n)).trans
       (Finset.sum_image_le_of_nonneg (fun n _ => hf n))
-    simpa only [f,if_true,Finset.sum_congr rfl (fun n hn => if_pos hn)] using hh
+    simpa only [f,ite_true,Finset.sum_congr rfl (fun n hn => ite_eq_left hn)] using hh
   have hpoint (b : ℕ) (hb : b∈R) (p : ℕ)
       (hp : p∈ZetaRieszOwnerTieFloor.pairWindow v b) (q : ℕ)
       (hq : q∈ZetaRieszOwnerTieFloor.pairWindow v b) :
@@ -344,7 +344,7 @@ theorem sparse_intermediate_clipped_norm_bound (A : ℕ→Finset ℕ)
       have hh := ZetaRieszOwnerTieFloor.boundary_atom_norm (A (p*(q*b))) y hv hNv hL0
         hd.1 hcard hb1 (dvd_mul_of_dvd_right (dvd_mul_left b q) p) hT
       dsimp only [f]
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
       have hle := mul_le_mul_of_nonneg_left hm
         (by dsimp [C]; positivity [responseConstant_pos (b.primeFactors.card+2),amplitude_nonneg N hv.le] :
           0≤C b*(b : ℝ)⁻¹*(p : ℝ)⁻¹*(q : ℝ)⁻¹)
@@ -356,7 +356,7 @@ theorem sparse_intermediate_clipped_norm_bound (A : ℕ→Finset ℕ)
       rw [heq] at hh
       exact hh.trans (by convert hle using 1; ring)
     · dsimp only [f]
-      rw [if_neg hn]
+      rw [ite_eq_right hn]
       dsimp [C]
       positivity [responseConstant_pos (b.primeFactors.card+2),amplitude_nonneg N hv.le]
   have hrow (b : ℕ) (hb : b∈R) :
@@ -385,7 +385,7 @@ theorem sparse_intermediate_clipped_norm_bound (A : ℕ→Finset ℕ)
         (by positivity [amplitude_nonneg N hv.le,responseConstant_pos (b.primeFactors.card+2)] :
           0≤2*amplitude N v*responseConstant (b.primeFactors.card+2))
         (by positivity : 0<v/2) hL
-      convert hh using 1 <;> first | rfl | ring
+      convert hh using 1 ; first | rfl | ring
     have hrc : responseConstant (b.primeFactors.card+2)≤24*(2 : ℝ)^b.primeFactors.card := by
       have hh := response_count_bound (b.primeFactors.card+2)
       norm_num [pow_add] at hh
@@ -408,7 +408,7 @@ theorem sparse_intermediate_clipped_norm_bound (A : ℕ→Finset ℕ)
         convert hr' using 1; first | rfl | (field_simp; ring))
       convert hp' using 1 <;> first | rfl | ring
     have hsq' : (∑ p∈ZetaRieszOwnerTieFloor.pairWindow v b,(p : ℝ)⁻¹)^2≤4/H^2 := by
-      convert hsq using 1 <;> first | rfl | (field_simp; ring)
+      convert hsq using 1 ; first | rfl | (field_simp; ring)
     exact hh.trans ((mul_le_mul_of_nonneg_left hsq'
       (by dsimp [C]; positivity [amplitude_nonneg N hv.le,responseConstant_pos (b.primeFactors.card+2)])).trans hcost)
   have hmass := general_intermediate_mass_le R U E m hB hW hJ ht hE

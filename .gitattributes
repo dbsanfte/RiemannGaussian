@@ -1,0 +1,3 @@
+# Preserve the exact upstream compatibility patches checked by source hashes.
+# Whitespace inside a diff is part of its payload, not project formatting.
+vendor/openai-quasi-rh/patches/*.patch -whitespace

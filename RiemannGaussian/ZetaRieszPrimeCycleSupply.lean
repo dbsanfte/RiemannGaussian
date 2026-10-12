@@ -82,7 +82,7 @@ its signed Riesz profile, on the actual squarefree composite band. -/
 theorem realBandOne_eq_profile {L : ℝ} {N n : ℕ}
     (hb : n ∈ zetaPrimeLogBand N) (hs : Squarefree n ∧ ¬ n.Prime) :
     realBandOne L N n = -positiveBandAmplitude L N n * VaughanLogAverage.riesz L n := by
-  rw [realBandOne, if_pos hb, SquarefreeVaughanLogSource.coefficient, if_pos hs,
+  rw [realBandOne, ite_eq_left hb, SquarefreeVaughanLogSource.coefficient, ite_eq_left hs,
     Complex.ofReal_re]
   unfold positiveBandAmplitude
   ring

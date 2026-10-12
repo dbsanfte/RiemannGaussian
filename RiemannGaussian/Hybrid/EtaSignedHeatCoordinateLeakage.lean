@@ -138,7 +138,7 @@ theorem crossScaleProjectionLeakage_coordinateProjection_apply
     noncomm_ring]
   rw [compressedMatrix_coordinateProjection_apply]
   by_cases hij : keep i ∧ keep j
-  · simp only [if_pos hij]
+  · simp only [ite_eq_left hij]
     exact mul_coordinateProjection_mul_apply (fun k ↦ ¬ keep k) H₁ H₂ i j
   · simp [hij]
 

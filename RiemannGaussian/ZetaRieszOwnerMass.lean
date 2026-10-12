@@ -90,10 +90,10 @@ theorem norm_owner_sum_le_of_length (P : Polynomial ℂ) (N : ℕ) (t : ℝ)
     apply Finset.sum_congr rfl
     intro m hm
     have hb := (Finset.mem_filter.mp (Finset.mem_filter.mp hm).1).1
-    rw [bandWeight, if_pos hb]
+    rw [bandWeight, ite_eq_left hb]
     by_cases hc : SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N) m = 0
     · simp [hc]
-    · simp only [if_pos hc, mul_assoc]
+    · simp only [ite_eq_left hc, mul_assoc]
   rw [he]
   refine norm_window_sum_le S _ ?_ P N t hu hq hσ ?_
   · intro m hm

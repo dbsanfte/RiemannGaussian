@@ -40,7 +40,7 @@ theorem pairProduct_le {m P : ℕ} (x : Fin m → ℕ) (hx : ∀ i, x i ≤ P) :
       Finset.card_product_filter_lt (s := (Finset.univ : Finset (Fin m)))
   unfold pairProduct
   rw [← hc, ← Finset.prod_const]
-  apply Finset.prod_le_prod (fun _ _ => Nat.zero_le _)
+  apply Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _)
   intro ij hij
   have hi := hx ij.1
   have hj := hx ij.2
@@ -140,7 +140,7 @@ theorem exists_uniform_two_block_packet (M R m d P : ℕ) (hM : 0 < M)
   obtain ⟨π, hcard, hπ⟩ := exists_prime_packet M R hM
   have hprod : M ^ R ≤ ∏ p ∈ π, p := by
     rw [← hcard, ← Finset.prod_const]
-    exact Finset.prod_le_prod (fun _ _ => Nat.zero_le _) (fun p hp => (hπ p hp).2.1.le)
+    exact Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _) (fun p hp => (hπ p hp).2.1.le)
   have hb := hbudget.trans_le hprod
   refine ⟨π, hcard, hπ, hb, ?_⟩
   exact packet_separates_blocks (fun p hp => (hπ p hp).1) hb

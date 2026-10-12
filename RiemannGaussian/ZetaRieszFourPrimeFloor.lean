@@ -148,7 +148,7 @@ theorem coefficient_four_signed_gap {n P : ℕ} (hs : Squarefree n)
   have hr := riesz_four_signed_gap hs hc hP hmax hLhi hLlo
   have hnp : ¬n.Prime := by intro h; rw [h.primeFactors,Finset.card_singleton] at hc; omega
   have hgood : Squarefree n ∧ ¬n.Prime := ⟨hs,hnp⟩
-  simp only [SquarefreeVaughanLogSource.coefficient,if_pos hgood,Complex.ofReal_re]
+  simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hgood,Complex.ofReal_re]
   rw [show -Real.log n*VaughanLogAverage.riesz L n/L =
     -(Real.log n/L)*VaughanLogAverage.riesz L n by ring]
   have hscale : 0 ≤ Real.log n/L := div_nonneg (Real.log_natCast_nonneg n) hL.le
@@ -161,7 +161,7 @@ theorem coefficient_four_signed_gap {n P : ℕ} (hs : Squarefree n)
 theorem largestPrime_mem_of_four {n : ℕ} (hc : n.primeFactors.card = 4) :
     largestPrime n ∈ n.primeFactors := by
   have hn : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-  rw [largestPrime,dif_pos hn]
+  rw [largestPrime,dite_eq_left hn]
   exact Finset.max'_mem _ _
 
 /-- The canonical largest-prime choice discharges the ordering hypotheses.
@@ -177,7 +177,7 @@ theorem actual_four_signed_gap {n : ℕ} (hc : n.primeFactors.card = 4)
     intro p hp
     have hn : n.primeFactors.Nonempty := ⟨p,hp⟩
     have hmax : p ≤ largestPrime n := by
-      rw [largestPrime,dif_pos hn]
+      rw [largestPrime,dite_eq_left hn]
       exact Finset.le_max' _ _ hp
     exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
       (by exact_mod_cast hmax)

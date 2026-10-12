@@ -84,7 +84,8 @@ theorem norm_term_le (ρ : NontrivialZetaZero) {t : ℝ} (ht : 0 ≤ t) :
   rw [term, norm_mul, Complex.norm_natCast]
   have hh := mul_le_mul_of_nonneg_left (norm_atom_le (NontrivialZetaZero.re_lt_one ρ).le ht)
     (Nat.cast_nonneg (analyticZetaZeroMultiplicity ρ))
-  convert hh using 1 <;> first | rfl | ring
+  convert hh using 1
+  first | rfl | ring
 
 /-- The complete complex zero primitive is absolutely summable. -/
 theorem summable_norm_term {t : ℝ} (ht : 0 ≤ t) :

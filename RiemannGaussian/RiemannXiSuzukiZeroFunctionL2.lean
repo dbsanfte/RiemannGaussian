@@ -189,7 +189,7 @@ theorem memLp_two_suzukiRealAxisZeroFunction_of_im_ne_zero
   have hproduct : MemLp (fun x : ℝ ↦
       suzukiRealAxisXiZeroCarrier x *
         ((1 : ℂ) / ((x : ℂ) - zetaSpectralCoordinate rho.1))) 2 :=
-    hcauchy.mul' memLp_top_suzukiRealAxisXiZeroCarrier
+    memLp_top_suzukiRealAxisXiZeroCarrier.fun_mul (r := 2) hcauchy
   have hscaled := hproduct.const_mul
     (suzukiXiZeroNormalization rho : ℂ)
   convert hscaled using 1
@@ -304,9 +304,7 @@ theorem norm_suzukiRealAxisZeroFunction_le_div_abs_of_im_eq_zero
 theorem integrable_suzukiShiftedCauchyDensity (a : ℝ) :
     Integrable (fun x : ℝ ↦ (1 + (x - a) ^ 2)⁻¹) := by
   have h := integrable_inv_one_add_sq.comp_add_right (-a)
-  convert h using 1
-  funext x
-  congr 2
+  simpa only [sub_eq_add_neg] using h
 
 /-- A compact bound plus a shifted Cauchy tail for the squared norm of one
 real-axis zero function. -/

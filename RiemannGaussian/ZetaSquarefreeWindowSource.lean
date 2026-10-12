@@ -71,7 +71,7 @@ theorem zetaRightHalfSquarefreeWindowCoefficient_support (rho : NontrivialZetaZe
   have hs : Squarefree n := by
     by_contra h
     simp [h] at hn
-  rw [if_pos hs] at hn
+  rw [ite_eq_left hs] at hn
   obtain ⟨hw, hD, hprimes, hsmall⟩ := zetaRightHalfQuadraticWindowCoefficient_support rho hN hn
   exact ⟨hw, hD, hs, hprimes, hsmall⟩
 

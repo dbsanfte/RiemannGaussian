@@ -35,18 +35,18 @@ theorem finite_windowed (a : ℤ) (N : ℕ) (b : ℤ → ℂ) :
   (Finset.Ico a (a + N)).finite_toSet.subset (by
     intro n hn
     by_contra h
-    exact hn (if_neg h))
+    exact hn (ite_eq_right h))
 
 /-- Every original summand is unchanged inside the block. -/
 theorem windowed_on (a : ℤ) (N : ℕ) (b : ℤ → ℂ) {n : ℤ}
     (hn : n ∈ Finset.Ico a (a + N)) : windowed a N b n = b n := by
-  simp only [windowed, if_pos hn]
+  simp only [windowed, ite_eq_left hn]
 
 /-- The extension vanishes at every point outside the actual block. -/
 theorem windowed_outside (a : ℤ) (N : ℕ) (b : ℤ → ℂ) :
     ∀ n ∉ Finset.Ico a (a + N), windowed a N b n = 0 := by
   intro n hn
-  simp only [windowed, if_neg hn]
+  simp only [windowed, ite_eq_right hn]
 
 /-- The finite sum of the extension is the original finite sum. -/
 theorem sum_windowed (a : ℤ) (N : ℕ) (b : ℤ → ℂ) :
@@ -74,8 +74,8 @@ theorem correlation_windowed (a : ℤ) (N : ℕ) (b : ℤ → ℂ) {h : ℤ} (hh
       · have hs : n + h ∉ Finset.Ico a (a + N) := by
           simp only [Finset.mem_Ico] at hb hn ⊢
           omega
-        simp only [windowed, if_neg hs, zero_mul]
-      · simp only [windowed, if_neg hb, map_zero, mul_zero]
+        simp only [windowed, ite_eq_right hs, zero_mul]
+      · simp only [windowed, ite_eq_right hb, map_zero, mul_zero]
     _ = _ := by
       apply Finset.sum_congr rfl
       intro n hn

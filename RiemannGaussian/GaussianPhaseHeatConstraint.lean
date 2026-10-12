@@ -186,7 +186,7 @@ theorem tendsto_heatWeight (x : ℝ) :
       simpa only [Function.comp_def, id_eq, mul_neg, neg_mul] using h
     have hf : (fun c : ℝ => heatWeight c x) =
         (fun c : ℝ => Real.exp (-c * x ^ 2) * heatWeight 0 x) := funext fun c => heatWeight_factor c x
-    rw [hf, if_neg hx]
+    rw [hf, ite_eq_right hx]
     simpa only [zero_mul] using he.mul_const (heatWeight 0 x)
 
 /-- The total coefficient mass at one exact real frequency. Repeated
@@ -302,11 +302,11 @@ theorem opposite_frequencyMass_le_nonconstantMass {a ω : ℕ → ℝ}
   by_cases hpos : ω n = ξ
   · have hneg : ω n ≠ -ξ := by intro h; rw [hpos] at h; apply hξ; linarith
     have hz : ω n ≠ 0 := by rwa [hpos]
-    rw [if_pos hpos, if_neg hneg, if_pos hz, add_zero]
+    rw [ite_eq_left hpos, ite_eq_right hneg, ite_eq_left hz, add_zero]
   · by_cases hneg : ω n = -ξ
     · have hz : ω n ≠ 0 := by rw [hneg]; exact neg_ne_zero.mpr hξ
-      rw [if_neg hpos, if_pos hneg, if_pos hz, zero_add]
-    · rw [if_neg hpos, if_neg hneg, zero_add]
+      rw [ite_eq_right hpos, ite_eq_left hneg, ite_eq_left hz, zero_add]
+    · rw [ite_eq_right hpos, ite_eq_right hneg, zero_add]
       split_ifs
       · exact ha n
       · exact le_rfl

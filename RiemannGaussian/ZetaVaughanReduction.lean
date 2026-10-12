@@ -98,7 +98,7 @@ theorem cofactor_eq_primePower_sum (V n : ℕ) :
   apply Finset.sum_congr rfl
   intro d _
   by_cases hd : IsPrimePow d
-  · rw [if_pos hd]
+  · rw [ite_eq_left hd]
   · simp [hd, ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hd]
 
 /-- Coprime multiplication preserves the full additive prime structure of
@@ -114,7 +114,7 @@ theorem cofactor_eq_zero {V n : ℕ} (hn : n ≤ V) : cofactor V n = 0 := by
   rw [cofactor_eq]
   apply Finset.sum_eq_zero
   intro d hd
-  exact if_neg (not_lt.mpr ((Nat.le_of_dvd (Nat.pos_of_ne_zero (Nat.mem_divisors.mp hd).2)
+  exact ite_eq_right (not_lt.mpr ((Nat.le_of_dvd (Nat.pos_of_ne_zero (Nat.mem_divisors.mp hd).2)
     (Nat.dvd_of_mem_divisors hd)).trans hn))
 
 /-- Every product keeps the Möbius sign and the same full cofactor. -/
@@ -134,12 +134,12 @@ theorem bilinear_eq_zero {U V n : ℕ} (hn : n < (U + 1) * (V + 1)) :
   apply Finset.sum_eq_zero
   intro a ha
   by_cases hU : U < a.1
-  · rw [if_pos hU, cofactor_eq_zero, mul_zero]
+  · rw [ite_eq_left hU, cofactor_eq_zero, mul_zero]
     have hprod := (Nat.mem_divisorsAntidiagonal.mp ha).1
     by_contra hV
     exact (not_le.mpr hn) (hprod ▸ Nat.mul_le_mul (by omega : U + 1 ≤ a.1)
       (by omega : V + 1 ≤ a.2))
-  · exact if_neg hU
+  · exact ite_eq_right hU
 
 /-- The original divisor-log majorant bounds every cutoff simultaneously. -/
 theorem norm_bilinear_le (U V n : ℕ) :
@@ -511,9 +511,9 @@ theorem band_eq_product_sum (p : Polynomial ℂ) (U V N : ℕ) (y : ℝ) :
   intro a ha
   rw [(Nat.mem_divisorsAntidiagonal.mp ha).1]
   by_cases hU : U < a.1
-  · rw [if_pos hU, Complex.ofReal_mul, Complex.ofReal_intCast]
+  · rw [ite_eq_left hU, Complex.ofReal_mul, Complex.ofReal_intCast]
     by_cases hV : V < a.2
-    · rw [if_pos ⟨hU, hV⟩]
+    · rw [ite_eq_left ⟨hU, hV⟩]
     · simp [hV, cofactor_eq_zero (not_lt.mp hV)]
   · simp [hU]
 

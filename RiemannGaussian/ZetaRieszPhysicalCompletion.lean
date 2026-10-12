@@ -56,7 +56,7 @@ theorem interior_physical {u : ℝ} {N n : ℕ}
   have hminlog : Real.log n.minFac ≤ Real.log p :=
     Real.log_le_log (by exact_mod_cast (Nat.minFac_prime hn1.ne').pos) (by exact_mod_cast hmin)
   have hmax : p ≤ largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   have hmaxlog : Real.log p ≤ Real.log (largestPrime n) :=
     Real.log_le_log hplog (by exact_mod_cast hmax)
@@ -107,12 +107,12 @@ theorem markedCoefficient_norm_le (u : ℝ) (N : ℕ) (hN : 21 ≤ N) (n : ℕ) 
   by_cases hn : validLabel n
   · have hw : 0 ≤ markedMass N n :=
       Finset.sum_nonneg (fun p _ => markedWeight_nonneg N n p)
-    rw [markedCoefficient,if_pos hn,norm_mul,Complex.norm_real,Real.norm_of_nonneg hw]
+    rw [markedCoefficient,ite_eq_left hn,norm_mul,Complex.norm_real,Real.norm_of_nonneg hw]
     exact (mul_le_of_le_one_left (norm_nonneg _)
       (marked_mass_le_one hn.1 (validLabel_one_lt hn) N hN)).trans
       (SquarefreeVaughanLogSource.norm_coefficient_le
         (SquarefreeVaughanLogSource.length_pos u N) n)
-  · simp only [markedCoefficient,if_neg hn,norm_zero]
+  · simp only [markedCoefficient,ite_eq_right hn,norm_zero]
     exact zetaMoebiusLogMajorant_nonneg n
 
 /-- Absolute convergence at the safe axis, for every fixed height and
@@ -139,9 +139,9 @@ theorem summable_missingAtom (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
   apply (summable_atom u y N hN).norm.of_norm_bounded
   intro n
   by_cases hn : n ∈ completeBand (intermediatePrimes u N)
-  · simp only [missingAtom,if_pos hn,norm_zero]
+  · simp only [missingAtom,ite_eq_left hn,norm_zero]
     exact norm_nonneg _
-  · simp only [missingAtom,if_neg hn,le_refl]
+  · simp only [missingAtom,ite_eq_right hn,le_refl]
 
 /-- Every physical subset atom agrees exactly with the original finite
 completed packet. -/
@@ -151,7 +151,7 @@ theorem sum_atom_completeBand (u y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n hn
   obtain ⟨hs,_h1,hc,_hp⟩ := completeBand_data hn
-  rw [atom,markedCoefficient,if_pos (show validLabel n from ⟨hs,hc⟩)]
+  rw [atom,markedCoefficient,ite_eq_left (show validLabel n from ⟨hs,hc⟩)]
   ring
 
 /-- The physical-cutoff error is the genuinely convergent sum of
@@ -160,16 +160,16 @@ theorem packet_sub_complete (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
     packet u y N-completePacket u y N = ∑' n, missingAtom u y N n := by
   let B := completeBand (intermediatePrimes u N)
   have hs : Summable (fun n => if n ∈ B then atom u y N n else 0) := by
-    exact summable_of_ne_finset_zero (s := B) (fun n hn => if_neg hn)
+    exact summable_of_ne_finset_zero (s := B) (fun n hn => ite_eq_right hn)
   have he (n : ℕ) : atom u y N n =
       (if n ∈ B then atom u y N n else 0)+missingAtom u y N n := by
     change atom u y N n = (if n ∈ B then atom u y N n else 0)+
       (if n ∈ B then 0 else atom u y N n)
     by_cases hn : n ∈ B <;> simp [hn]
   have hf : (∑' n, if n ∈ B then atom u y N n else 0) = completePacket u y N := by
-    rw [tsum_eq_sum (s := B) (fun n hn => if_neg hn)]
+    rw [tsum_eq_sum (s := B) (fun n hn => ite_eq_right hn)]
     calc
-      _ = ∑ n ∈ B, atom u y N n := Finset.sum_congr rfl (fun n hn => if_pos hn)
+      _ = ∑ n ∈ B, atom u y N n := Finset.sum_congr rfl (fun n hn => ite_eq_left hn)
       _ = _ := sum_atom_completeBand u y N
   have ht : packet u y N = completePacket u y N+∑' n, missingAtom u y N n := by
     calc
@@ -206,7 +206,7 @@ theorem scaled_exterior_atom_le {u : ℝ} (hu : 0 ≤ u) (hU : u ≤ radiusCeili
     norm_num
   have hexp : Real.exp (-(N : ℝ)/1600) = Real.exp (-(1/1600 : ℝ))^N := by
     rw [← Real.exp_nat_mul]; congr 1; ring
-  rw [atom,markedCoefficient,if_pos hn,norm_mul,norm_pow,Complex.norm_real,
+  rw [atom,markedCoefficient,ite_eq_left hn,norm_mul,norm_pow,Complex.norm_real,
     Real.norm_of_nonneg hu,norm_mul,norm_mul,Complex.norm_real,Real.norm_of_nonneg hw.1]
   calc
     _ ≤ radiusCeiling^(N+1)*
@@ -292,11 +292,11 @@ theorem exists_finite_physical_bound :
     apply Finset.sum_congr rfl
     intro n _hn
     by_cases hb : n ∈ completeBand (intermediatePrimes u N)
-    · simp only [missingAtom,hb,not_true_eq_false,and_false,if_true,if_false]
+    · simp only [missingAtom,hb,not_true_eq_false,and_false,ite_true,ite_false]
     · by_cases hv : validLabel n
-      · simp only [missingAtom,if_neg hb,if_pos (show validLabel n ∧
+      · simp only [missingAtom,ite_eq_right hb,ite_eq_left (show validLabel n ∧
           n ∉ completeBand (intermediatePrimes u N) from ⟨hv,hb⟩)]
-      · simp only [missingAtom,if_neg hb,hv,false_and,if_false,atom,markedCoefficient,
+      · simp only [missingAtom,ite_eq_right hb,hv,false_and,ite_false,atom,markedCoefficient,
           zero_mul]
   let D := LogarithmicDeviation.deviationBand T (39/20) (203/100) N
   have hrad : ‖(u : ℂ)^(N+1)*
@@ -401,7 +401,7 @@ theorem prefixEuler_eq_sum (u y : ℝ) (N X : ℕ) :
     omega
   rw [← ZetaRieszMarkedEuler.marked_atom_eq_integral hs (validLabel_one_lt ⟨hs,hc⟩) hnp
     N _ (SquarefreeVaughanLogSource.length_pos u N),atom,markedCoefficient,
-    if_pos (show validLabel n from ⟨hs,hc⟩)]
+    ite_eq_left (show validLabel n from ⟨hs,hc⟩)]
   change (markedMass N n : ℂ)*_ = _
   ring
 
@@ -422,8 +422,8 @@ theorem tendsto_prefixEuler (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
         exact Nat.mem_primesLE.mpr
           ⟨(Nat.le_of_dvd (Nat.pos_of_ne_zero hv.1.ne_zero) (Nat.dvd_of_mem_primeFactors hp)).trans hX,
             Nat.prime_of_mem_primeFactors hp⟩
-      exact (if_pos hn).symm
-    · have ha : atom u y N n = 0 := by simp only [atom,markedCoefficient,if_neg hv,zero_mul]
+      exact (ite_eq_left hn).symm
+    · have ha : atom u y N n = 0 := by simp only [atom,markedCoefficient,ite_eq_right hv,zero_mul]
       rw [ha]
       have hf : (fun X => f X n) = fun _ => 0 := by
         funext X
@@ -434,16 +434,16 @@ theorem tendsto_prefixEuler (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
     apply Eventually.of_forall
     intro X n
     by_cases hn : n ∈ completeBand (Nat.primesLE X)
-    · simp only [f,if_pos hn,le_refl]
-    · simpa only [f,if_neg hn,norm_zero] using norm_nonneg (atom u y N n)
+    · simp only [f,ite_eq_left hn,le_refl]
+    · simpa only [f,ite_eq_right hn,norm_zero] using norm_nonneg (atom u y N n)
   have ht := tendsto_tsum_of_dominated_convergence (summable_atom u y N hN).norm hp hd
   apply ht.congr'
   apply Eventually.of_forall
   intro X
   rw [prefixEuler_eq_sum]
   change (∑' n, if n ∈ completeBand (Nat.primesLE X) then atom u y N n else 0) = _
-  rw [tsum_eq_sum (s := completeBand (Nat.primesLE X)) (fun n hn => if_neg hn)]
-  exact Finset.sum_congr rfl (fun n hn => if_pos hn)
+  rw [tsum_eq_sum (s := completeBand (Nat.primesLE X)) (fun n hn => ite_eq_right hn)]
+  exact Finset.sum_congr rfl (fun n hn => ite_eq_left hn)
 
 end
 end RiemannGaussian.ZetaRieszPhysicalCompletion

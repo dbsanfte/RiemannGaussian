@@ -318,7 +318,7 @@ theorem coefficient_prime_pair_above_cutoff {a p : ℕ} (ha : a.Prime) (hp : p.P
   have hsf := Nat.squarefree_mul_iff.mpr
     ⟨hp.coprime_iff_not_dvd.mpr hpa, hp.squarefree, ha.squarefree⟩
   rw [SquarefreeVaughanLogSource.coefficient,
-    if_pos ⟨hsf, Nat.not_prime_mul hp.ne_one ha.ne_one⟩, hr]
+    ite_eq_left ⟨hsf, Nat.not_prime_mul hp.ne_one ha.ne_one⟩, hr]
 
 /-- Despite its damping, the canonical integer cutoff tends to infinity. -/
 theorem tendsto_linearDampedCutoff {u : ℝ} (hu : 0 < u) (hu1 : u < 1) :
@@ -372,8 +372,8 @@ theorem composite_cofactor_band_eq_clipped {a : ℕ} (ha : Squarefree a)
   by_cases hp : ∃ p : ℕ, p.Prime ∧ ¬ p ∣ a ∧ n = p * a
   · obtain ⟨p, hpp, hpa, rfl⟩ := hp
     by_cases hc : p * a ≤ a * (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2
-    · rw [if_pos ⟨p, hpp, hpa, rfl⟩, if_pos ⟨⟨p, hpp, hpa, rfl⟩, hc⟩]
-    · rw [if_pos ⟨p, hpp, hpa, rfl⟩, if_neg (fun h => hc h.2)]
+    · rw [ite_eq_left ⟨p, hpp, hpa, rfl⟩, ite_eq_left ⟨⟨p, hpp, hpa, rfl⟩, hc⟩]
+    · rw [ite_eq_left ⟨p, hpp, hpa, rfl⟩, ite_eq_right (fun h => hc h.2)]
       have hgt : (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 < p := by
         have hnle := Nat.lt_of_not_ge hc
         nlinarith [Nat.pos_of_ne_zero ha.ne_zero]
@@ -381,7 +381,7 @@ theorem composite_cofactor_band_eq_clipped {a : ℕ} (ha : Squarefree a)
         apply Real.log_le_log (by positivity)
         exact_mod_cast hgt.le
       rw [coefficient_prime_mul_eq_zero_of_large ha ha1 hap hpp hpa hLa hlp, zero_mul]
-  · rw [if_neg hp, if_neg (fun h => hp h.1)]
+  · rw [ite_eq_right hp, ite_eq_right (fun h => hp h.1)]
 
 /-- An entire fixed squarefree composite-cofactor prime class is
 arithmetically negligible at the original source scale. The genuine band,

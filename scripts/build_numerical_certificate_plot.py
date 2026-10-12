@@ -33,7 +33,9 @@ def inputs():
     audit = checked_audit()
     graph_path = ROOT / "docs/numerical-certificate-explorer/audit.json"
     graph = json.loads(graph_path.read_bytes())
-    assert coefficients["leanVersion"] == audit["leanVersion"] == graph["leanVersion"]
+    current_version = (ROOT / "lean-toolchain").read_text().strip().rsplit(":v", 1)[1]
+    assert coefficients["leanVersion"] == current_version, "Re-export coefficient proofs with the pinned compiler"
+    assert audit["leanVersion"] == graph["leanVersion"], "Certificate graph must match its verified checkpoint"
     assert coefficients["schemaVersion"] == meta["schemaVersion"] == 1
     assert meta["endpoint"] in graph["endpointAxioms"]
     assert meta["gainTheorem"] in graph["endpointAxioms"]
@@ -132,6 +134,9 @@ def build(png=None):
     audit = {"schemaVersion": 1, "leanVersion": coefficients["leanVersion"],
              "scope": meta["scope"], "drawingIsProof": False,
              "matplotlibVersion": matplotlib.__version__, "formulaProofs": coefficients["proofs"],
+             "coefficientLeanVersion": coefficients["leanVersion"],
+             "certificateCheckpointLeanVersion": certificate["leanVersion"],
+             "completeCurrentCompilerCertificateVerified": coefficients["leanVersion"] == certificate["leanVersion"],
              "certificateInputSha256": certificate["inputSha256"],
              "certificateAuditSha256": digest((ROOT / "docs/numerical-certificate-audit.json").read_bytes()),
              "graphAuditSha256": digest(graph_path.read_bytes()),

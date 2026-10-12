@@ -226,7 +226,7 @@ theorem coefficient_bounds_minFac {L : ℝ} (hL : 0 < L) {n : ℕ}
   have hlo := mul_le_mul_of_nonneg_left hh.1 ha
   have hhi := mul_le_mul_of_nonneg_left hh.2 ha
   have hs : Squarefree n ∧ ¬ n.Prime := ⟨hn,hnp⟩
-  simp only [SquarefreeVaughanLogSource.coefficient, if_pos hs, Complex.ofReal_re]
+  simp only [SquarefreeVaughanLogSource.coefficient, ite_eq_left hs, Complex.ofReal_re]
   have he : -Real.log n * VaughanLogAverage.riesz L n / L =
       -(Real.log n/L)*VaughanLogAverage.riesz L n := by ring
   rw [he]
@@ -279,8 +279,8 @@ theorem coefficient_bounds {L : ℝ} (hL : 0 < L) (n : ℕ) :
     have hhi := mul_le_mul_of_nonneg_left hh.2 ha
     have hs : Squarefree n ∧ 2 ≤ n.primeFactors.card := ⟨hn,hcard⟩
     have hs' : Squarefree n ∧ ¬ n.Prime := ⟨hn,hnp⟩
-    simp only [signedAllowance, if_pos hs, SquarefreeVaughanLogSource.coefficient,
-      if_pos hs', Complex.ofReal_re]
+    simp only [signedAllowance, ite_eq_left hs, SquarefreeVaughanLogSource.coefficient,
+      ite_eq_left hs', Complex.ofReal_re]
     have he : -Real.log n * VaughanLogAverage.riesz L n / L =
         -(Real.log n/L)*VaughanLogAverage.riesz L n := by ring
     rw [he]

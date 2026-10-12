@@ -177,7 +177,7 @@ private theorem coverProducts_card_upper {N i j : ℕ} {η : ℝ}
       (6*Real.log 4)^3*Real.exp 6*Real.exp (2*(N : ℝ))/((N : ℝ)+1)^3 := by
   have hc : ((coverProducts N η i j).card : ℝ) ≤
       ((coverTuples N η i j).card : ℝ) := by exact_mod_cast Finset.card_image_le
-  have hp := Finset.prod_le_prod (s := (Finset.univ : Finset (Fin 3)))
+  have hp := Finset.prod_le_prod₀ (s := (Finset.univ : Finset (Fin 3)))
     (fun a _ => Nat.cast_nonneg (α := ℝ) ((logPrimes (coverStart N η i j a) (coverWidth a)).card))
     (fun a _ => interval_card_upper_uniform (show 1 ≤ N by omega)
       (coverStart_bounds hη hηu hN hi hj a).1 (by unfold coverWidth; split_ifs <;> norm_num))
@@ -328,7 +328,7 @@ theorem slab_norm_upper (S A : Finset ℕ) {N M : ℕ} {η L : ℝ}
     obtain ⟨_,hs,hk,hlo,hhi,_⟩ := Finset.mem_filter.mp hn
     have hm : (20 : ℝ) ≤ M := by exact_mod_cast hM
     have hb := ZetaRieszSperner.norm_coefficient_le_allowance hL0 n
-    rw [ZetaRieszSperner.middleLayerAllowance,if_pos ⟨hs,by omega⟩,hk] at hb
+    rw [ZetaRieszSperner.middleLayerAllowance,ite_eq_left ⟨hs,by omega⟩,hk] at hb
     norm_num at hb
     have hratio : Real.log n/L ≤ 3 := (div_le_iff₀ hL0).mpr (by linarith)
     have hcost : ‖SquarefreeVaughanLogSource.coefficient L n‖ ≤ 3*(M : ℝ) := by

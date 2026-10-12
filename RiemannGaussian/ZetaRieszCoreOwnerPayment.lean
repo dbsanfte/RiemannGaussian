@@ -145,7 +145,7 @@ theorem residual_coefficient_bound (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
   have hm := missing_mass_bound hN hx hx1
   have hb := boundedShare_bounds A N n
   have hsmall : 1-boundedShare A N n ≤ (9/4 : ℝ)*exp (-(1033/10000000 : ℝ)*N) := by
-    rw [boundedShare,if_pos ⟨hn,hn1,hnp⟩]
+    rw [boundedShare,ite_eq_left ⟨hn,hn1,hnp⟩]
     linarith
   rw [residualCoefficient,norm_mul,Complex.norm_real,Real.norm_eq_abs,
     abs_of_nonneg (by linarith only [hb.2])]
@@ -449,7 +449,7 @@ theorem remaining_prime_share_lt {u : ℝ} {N K n p : ℕ}
     exact hnnot (Finset.mem_filter.mpr ⟨hn,le_of_not_gt hh⟩)
   have hpf : n.primeFactors.Nonempty := ⟨p,hp⟩
   have hmax : p ≤ largestPrime n := by
-    rw [largestPrime,dif_pos hpf]
+    rw [largestPrime,dite_eq_left hpf]
     exact Finset.le_max' _ _ hp
   exact (log_le_log (show (0 : ℝ) < p by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
     (show (p : ℝ) ≤ largestPrime n by exact_mod_cast hmax)).trans_lt hlo

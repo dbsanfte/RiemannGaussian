@@ -96,12 +96,12 @@ theorem riesz_difference_eq_prefix (R : ℕ) {A B : ℝ} (hAB : A ≤ B)
   apply Finset.sum_congr rfl
   intro d _
   by_cases hdR : d ≤ R
-  · rw [if_pos hdR]
+  · rw [ite_eq_left hdR]
     ring
   · have hdx : Real.exp B < d := hhi.trans_le (by exact_mod_cast (by omega : R+1 ≤ d))
     have hlog : B < Real.log d := by
       simpa only [Real.log_exp] using Real.log_lt_log (Real.exp_pos B) hdx
-    rw [if_neg hdR,max_eq_left (by linarith : B-Real.log d ≤ 0),
+    rw [ite_eq_right hdR,max_eq_left (by linarith : B-Real.log d ≤ 0),
       max_eq_left (by linarith : A-Real.log d ≤ 0)]
     ring
 

@@ -161,14 +161,14 @@ theorem zetaUpperResolventScrewWeight_le_inverseSquare
     simpa only [one_mul] using hden
   have hheight : zetaUpperSpectralHeightSummand rho ≤ m / 2 := by
     by_cases hupper : 0 < h
-    · rw [zetaUpperSpectralHeightSummand, if_pos hupper]
+    · rw [zetaUpperSpectralHeightSummand, ite_eq_left hupper]
       have habs := NontrivialZetaZero.abs_spectralCoordinate_im_lt_half rho
       have hm : 0 ≤ m := Nat.cast_nonneg _
       have hhalf : h ≤ 1 / 2 := by
         exact (le_abs_self h).trans habs.le
       dsimp [h, m] at hm hhalf ⊢
       nlinarith
-    · rw [zetaUpperSpectralHeightSummand, if_neg hupper]
+    · rw [zetaUpperSpectralHeightSummand, ite_eq_right hupper]
       dsimp [m]
       positivity
   have hm : 0 ≤ m := Nat.cast_nonneg _
@@ -314,7 +314,7 @@ theorem zetaUpperResolventScrewGrowthSummand_le_inverseSquare
             (1 + (zetaSpectralCoordinate rho.1).re ^ 2)) := by ring
   · rw [zetaUpperResolventScrewGrowthSummand,
       zetaUpperResolventScrewWeight,
-      zetaUpperSpectralHeightSummand, if_neg hupper, zero_div, zero_mul]
+      zetaUpperSpectralHeightSummand, ite_eq_right hupper, zero_div, zero_mul]
     positivity
 
 /-- The positive resolvent screw growth series is summable at every real
@@ -438,7 +438,7 @@ theorem riemannXiUpperResolventScrewGrowthMass_eq_zero_of_rh
         rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
     rw [zetaUpperResolventScrewGrowthSummand,
       zetaUpperResolventScrewWeight,
-      zetaUpperSpectralHeightSummand, if_neg (by linarith),
+      zetaUpperSpectralHeightSummand, ite_eq_right (by linarith),
       zero_div, zero_mul]
     rfl
   rw [hzero]
@@ -458,7 +458,7 @@ theorem riemannXiUpperResolventScrewGrowthMass_eq_zero_iff_rh
     obtain ⟨rho, rfl⟩ :=
       (riemannXiSpectral_eq_zero_iff_exists_zetaZero w).mp hwzero
     have hsummand : 0 < zetaUpperSpectralHeightSummand rho := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper
@@ -517,7 +517,7 @@ theorem riemannXiUpperResolventScrewGrowthSubexponential_iff_rh :
     let c : ℝ := zetaUpperResolventScrewWeight rho
     have ha : 0 < a := hwupper
     have hsummand : 0 < zetaUpperSpectralHeightSummand rho := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper
@@ -673,7 +673,7 @@ theorem riemannXiUpperResolventScrewWickMass_eq_zero_iff_rh
     obtain ⟨rho, rfl⟩ :=
       (riemannXiSpectral_eq_zero_iff_exists_zetaZero w).mp hwzero
     have hsummand : 0 < zetaUpperSpectralHeightSummand rho := by
-      rw [zetaUpperSpectralHeightSummand, if_pos hwupper]
+      rw [zetaUpperSpectralHeightSummand, ite_eq_left hwupper]
       exact mul_pos
         (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
         hwupper
@@ -700,7 +700,7 @@ theorem riemannXiUpperResolventScrewWickMass_eq_zero_iff_rh
           rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
       rw [zetaUpperResolventScrewWickSummand,
         zetaUpperResolventScrewWeight,
-        zetaUpperSpectralHeightSummand, if_neg (by linarith),
+        zetaUpperSpectralHeightSummand, ite_eq_right (by linarith),
         zero_div, zero_mul]
       rfl
     rw [hzero]

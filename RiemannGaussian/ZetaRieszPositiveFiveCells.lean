@@ -44,7 +44,7 @@ theorem exists_ordered_cofactor {n : ℕ} (hc : n.primeFactors.card = 5) :
       r < b ∧ b < a ∧ a < q := by
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hP : largestPrime n ∈ n.primeFactors := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have hcard : (n.primeFactors.erase (largestPrime n)).card = 4 := by
     rw [Finset.card_erase_of_mem hP,hc]
@@ -71,7 +71,7 @@ theorem cofactor_data {n q a b r : ℕ} (hs : Squarefree n)
     Real.log n = Real.log (largestPrime n)+Real.log q+Real.log a+Real.log b+Real.log r := by
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hP : largestPrime n ∈ n.primeFactors := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have hqp : q.Prime := Nat.prime_of_mem_primeFactors
     (Finset.mem_of_mem_erase (by rw [he]; simp))

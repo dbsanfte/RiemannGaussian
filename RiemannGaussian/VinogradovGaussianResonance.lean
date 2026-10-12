@@ -47,9 +47,9 @@ theorem sum_weightedShift {d ι : Type*} [Fintype d] [Fintype ι]
       intro c hc
       by_cases hbc : v b = v c + h
       · have hd : v b - v c = h := sub_eq_iff_eq_add'.mpr hbc
-        rw [if_pos hbc, if_pos hd, hd]
+        rw [ite_eq_left hbc, ite_eq_left hd, hd]
       · have hd : v b - v c ≠ h := fun he => hbc (sub_eq_iff_eq_add'.mp he)
-        rw [if_neg hbc, if_neg hd, zero_mul]
+        rw [ite_eq_right hbc, ite_eq_right hd, zero_mul]
     _ = ∑ p : ι × ι, (w p.1 * conj (w p.2)) * F (v p.1 - v p.2) := by
       unfold differenceSupport
       exact Finset.sum_fiberwise_of_maps_to (s := Finset.univ)

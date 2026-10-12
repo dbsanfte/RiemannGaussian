@@ -110,19 +110,18 @@ theorem zetaUpperSafeAxisPoissonSummand_le_four_div_mul_height
     rw [zetaUpperHyperbolicPoissonDefectSummand,
       zetaUpperSpectralHeightSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_pos hupper, if_pos hupper,
+    rw [ite_eq_left hupper, ite_eq_left hupper,
       normSq_imaginary_sub_conj_zetaSpectralCoordinate]
     have hmul := mul_le_mul_of_nonneg_left hcore
       (Nat.cast_nonneg (analyticZetaZeroMultiplicity rho))
     convert hmul using 1
-    · rfl
     · simp [alpha]
     · simp only [alpha]
       ring
   · rw [zetaUpperHyperbolicPoissonDefectSummand,
       zetaUpperSpectralHeightSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_neg hupper, if_neg hupper, mul_zero]
+    rw [ite_eq_right hupper, ite_eq_right hupper, mul_zero]
 
 /-- Inside the central ordinate window `|gamma| <= y`, and above safe height
 one, the upper-height contribution divided by `y` is bounded by its Poisson
@@ -186,19 +185,18 @@ theorem zetaUpperHeight_div_le_safeAxisPoissonSummand
     rw [zetaUpperSpectralHeightSummand,
       zetaUpperHyperbolicPoissonDefectSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_pos hupper, if_pos hupper,
+    rw [ite_eq_left hupper, ite_eq_left hupper,
       normSq_imaginary_sub_conj_zetaSpectralCoordinate]
     have hmul := mul_le_mul_of_nonneg_left hcore
       (Nat.cast_nonneg (analyticZetaZeroMultiplicity rho))
     convert hmul using 1
-    · rfl
     · simp only [alpha]
       ring
     · simp [alpha]
   · rw [zetaUpperSpectralHeightSummand,
       zetaUpperHyperbolicPoissonDefectSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_neg hupper, if_neg hupper, zero_div]
+    rw [ite_eq_right hupper, ite_eq_right hupper, zero_div]
 
 /-- Outside an ordinate radius `r`, one Poisson contribution is bounded by
 `4 y / r^2` times its upper-height contribution. -/
@@ -234,19 +232,18 @@ theorem zetaUpperSafeAxisPoissonSummand_le_of_ordinate_ge
     rw [zetaUpperHyperbolicPoissonDefectSummand,
       zetaUpperSpectralHeightSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_pos hupper, if_pos hupper,
+    rw [ite_eq_left hupper, ite_eq_left hupper,
       normSq_imaginary_sub_conj_zetaSpectralCoordinate]
     have hmul := mul_le_mul_of_nonneg_left hcore
       (Nat.cast_nonneg (analyticZetaZeroMultiplicity rho))
     convert hmul using 1
-    · rfl
     · simp [alpha]
     · simp only [alpha]
       ring
   · rw [zetaUpperHyperbolicPoissonDefectSummand,
       zetaUpperSpectralHeightSummand]
     simp only [alpha] at hupper ⊢
-    rw [if_neg hupper, if_neg hupper, mul_zero]
+    rw [ite_eq_right hupper, ite_eq_right hupper, mul_zero]
 
 /-- The central cumulative height divided by `y` is bounded by the central
 Poisson window. -/

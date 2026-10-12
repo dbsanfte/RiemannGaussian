@@ -102,7 +102,7 @@ theorem eventually_labels_subset_native {u : ℝ} (hu : 1/2<u)
     have hqle q (hq : q∈(p*a).primeFactors) : q≤p := by
       rw [← hmax]
       have he : (p*a).primeFactors.Nonempty := ⟨q,hq⟩
-      rw [largestPrime,dif_pos he]
+      rw [largestPrime,dite_eq_left he]
       exact Finset.le_max' _ _ hq
     have hphys : ∀ q∈(p*a).primeFactors,
         q<(ZetaVaughanCutoffBudget.linearDampedCutoff u (dyadicMomentOrder j)+2)^2 :=
@@ -493,7 +493,7 @@ theorem eventually_sum_fullPaidIncrement {u : ℝ} (hu : 1/2<u)
     simp only [hp.primeFactors,Finset.card_singleton] at h
     omega
   simp only [ZetaRieszComplexProjection.sourceWeight,residualCoefficient,
-    SquarefreeVaughanLogSource.coefficient,if_pos (And.intro (hj.2 n hn) hnp)]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro (hj.2 n hn) hnp)]
   push_cast
   ring
 
@@ -512,8 +512,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hnot
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hnot (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 /-- The new entire-band arithmetic payment is ACTUALLY spent in the
 floor. Every outside owner and all free null/tangent columns remain. -/

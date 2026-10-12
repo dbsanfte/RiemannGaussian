@@ -181,8 +181,8 @@ theorem highPrimeCorrection_eq_label_sum {u : ℝ} (hu : 1/2≤u)
   apply Finset.sum_congr rfl
   intro q _hq
   by_cases hq : q.Prime
-  · simp only [if_pos hq]
-  · simp only [if_neg hq,mul_zero]
+  · simp only [ite_eq_left hq]
+  · simp only [ite_eq_right hq,mul_zero]
 
 /-- Every slot in the SAME original head also occurs in the new full
 correction. This statement retains its exact owner and cofactor masks. -/
@@ -253,7 +253,7 @@ private theorem completed_bounds_of_cap {L : ℝ} (hL : 0<L) {n : ℕ}
     calc
       _ ≤ log n/L*L := mul_le_mul_of_nonneg_left hRL hfac
       _ = _ := div_mul_cancel₀ _ hL.ne'
-  simp only [completedCoefficient,if_pos hs,Complex.ofReal_re]
+  simp only [completedCoefficient,ite_eq_left hs,Complex.ofReal_re]
   rw [show -log n*VaughanLogAverage.riesz L n/L=
     -(log n/L*VaughanLogAverage.riesz L n) by ring]
   constructor <;> nlinarith only [hprod,mul_nonneg hfac hR]
@@ -266,9 +266,9 @@ theorem completed_low_bounds {L : ℝ} (hL : 0<L) {n : ℕ}
   rcases hn with hp | ⟨hs,hc⟩
   · have he := SquarefreeVaughanLogSource.coefficient_eq_completed_with_prime hL n
     have hz : SquarefreeVaughanLogSource.coefficient L n=0 := by
-      simp only [SquarefreeVaughanLogSource.coefficient,hp,not_true_eq_false,and_false,if_false]
+      simp only [SquarefreeVaughanLogSource.coefficient,hp,not_true_eq_false,and_false,ite_false]
     change SquarefreeVaughanLogSource.coefficient L n=completedCoefficient L n+_ at he
-    rw [hz,if_pos hp] at he
+    rw [hz,ite_eq_left hp] at he
     have hcc : completedCoefficient L n=-((log n*min L (log n)/L : ℝ) : ℂ) := by
       linear_combination -he
     rw [hcc,Complex.neg_re,Complex.ofReal_re]
@@ -332,7 +332,7 @@ theorem completed_sub_correction_eq {u : ℝ} (hu : 1/2≤u)
     dsimp only [L]
     ring
   rw [correctionCoefficient_pair hu hU hN he]
-  simp only [completedCoefficient,if_pos hs,←Complex.ofReal_sub]
+  simp only [completedCoefficient,ite_eq_left hs,←Complex.ofReal_sub]
   change ((-log (correctionProduct e)*VaughanLogAverage.riesz L (correctionProduct e)/L-
     log (correctionProduct e)/L*(L-log e.1) : ℝ) : ℂ)=_
   rw [hr,hlog]
@@ -394,23 +394,23 @@ theorem joinedCoefficient_bounds {u : ℝ} (hu : 1/2≤u)
   have hh : 0≤h ∧ h≤c := by
     dsimp only [h,c]
     by_cases hn : n∈headLabels u N
-    · rw [if_pos hn,if_pos (headLabels_subset_correction u N hn)]
+    · rw [ite_eq_left hn,ite_eq_left (headLabels_subset_correction u N hn)]
       exact head_le_correction hu hU hN hn
-    · rw [if_neg hn]
+    · rw [ite_eq_right hn]
       split_ifs with hc
       · exact ⟨le_refl _,(correctionCoefficient_bounds hu hU hN hc).1⟩
       · exact ⟨le_refl _,le_refl _⟩
   have hbc : -log n≤b-c := by
     dsimp only [b,c]
     by_cases hc : n∈correctionLabels u N
-    · rw [if_pos hc]
+    · rw [ite_eq_left hc]
       by_cases hn : n∈primeLabels N∪semiprimeLabels N
-      · rw [if_pos hn]
+      · rw [ite_eq_left hn]
         simpa only [L,Complex.sub_re] using (completed_sub_correction_bounds hu hU hN hc).1
-      · rw [if_neg hn]
+      · rw [ite_eq_right hn]
         have hbnd := (correctionCoefficient_bounds hu hU hN hc).2
         linarith only [hbnd]
-    · rw [if_neg hc,sub_zero]
+    · rw [ite_eq_right hc,sub_zero]
       exact hb.1
   have he : (joinedCoefficient u N n).re=b+h-c := by
     unfold joinedCoefficient
@@ -446,8 +446,8 @@ private theorem masked_sum {S T : Finset ℕ} (hST : S⊆T) (f : ℕ→ℂ) :
     (∑ n∈T,if n∈S then f n else 0)=∑ n∈S,f n := by
   rw [←Finset.sum_subset (f:=fun n => if n∈S then f n else 0) hST (by
     intro n _hn hns
-    exact if_neg hns)]
-  exact Finset.sum_congr rfl (fun n hn => if_pos hn)
+    exact ite_eq_right hns)]
+  exact Finset.sum_congr rfl (fun n hn => ite_eq_left hn)
 
 private theorem prime_semiprime_disjoint (N : ℕ) :
     Disjoint (primeLabels N) (semiprimeLabels N) := by

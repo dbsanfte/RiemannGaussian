@@ -39,10 +39,10 @@ theorem riesz_eq_log_prefix (R : ℕ) {x : ℝ} (hx : 0 < x)
   have hdR : (0 : ℝ) < d := by exact_mod_cast Nat.pos_of_mem_divisors hd
   by_cases hdM : d ≤ R
   · have hdx : (d : ℝ) ≤ x := (by exact_mod_cast hdM : (d : ℝ) ≤ R).trans hlo
-    rw [if_pos hdM,Real.log_div hx.ne' hdR.ne',max_eq_right
+    rw [ite_eq_left hdM,Real.log_div hx.ne' hdR.ne',max_eq_right
       (sub_nonneg.mpr (Real.log_le_log hdR hdx))]
   · have hdx : x < d := hhi.trans_le (by exact_mod_cast (by omega : R+1 ≤ d))
-    rw [if_neg hdM,max_eq_left (sub_nonpos.mpr (Real.log_le_log hx hdx.le)),mul_zero]
+    rw [ite_eq_right hdM,max_eq_left (sub_nonpos.mpr (Real.log_le_log hx hdx.le)),mul_zero]
 
 /-- Exact second moment of a finite divisor sum, with the integer
 least-common-multiple quotient retained. -/
@@ -195,7 +195,7 @@ theorem re_residual_eq_weight (A : Finset ℕ) (L y : ℝ) (N n : ℕ)
       zetaPrimeLogKernel N (3/2+Complex.I*y) n).re =
       literalWeight A L y N n*VaughanLogAverage.riesz L n := by
   rw [ZetaRieszJointAllocation.residualCoefficient,
-    SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hn⟩,← Complex.ofReal_mul,Complex.mul_re]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hn⟩,← Complex.ofReal_mul,Complex.mul_re]
   simp only [Complex.ofReal_re,Complex.ofReal_im,zero_mul,sub_zero,literalWeight]
   ring
 

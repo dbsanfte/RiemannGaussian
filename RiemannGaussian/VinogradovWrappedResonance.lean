@@ -195,13 +195,13 @@ theorem actual_resonance_le (k r s : ℕ) (hr : 0 < r)
         exact (mul_le_mul_of_nonneg_left (hs j n hn) (abs_nonneg _)).trans hnowrap)
       apply hbound.trans
       apply (rectangle_coordinate_power_le k r hr hMr htlo hthi hzlo hzhi j hhigh.1.le).trans
-      simp only [coordinateExponent, if_pos hhigh]
+      simp only [coordinateExponent, ite_eq_left hhigh]
       apply mul_le_mul_of_nonneg_right _ (by positivity)
       exact (mul_le_mul hfour (mul_le_mul_of_nonneg_left hw hG.le)
         (by positivity) (by positivity)).trans hW
     · by_cases hmid : k + 1 ≤ 2 * (j.val + 1) ∧ 3 * (j.val + 1) ≤ 2 * k
       · apply (middle_coordinate_le k r s hr hMr htlo hthi hzlo hzhi j hmid.2 (S j) (hs j)).trans
-        simp only [coordinateExponent, if_neg hhigh, if_pos hmid]
+        simp only [coordinateExponent, ite_eq_right hhigh, ite_eq_left hmid]
         apply mul_le_mul_of_nonneg_right _ (by positivity)
         have hb := mul_le_mul hfour (mul_le_mul_of_nonneg_left hw hG.le)
           (by positivity : 0 ≤ G * (1 + 2 * Real.pi * (j.val + 1) / (r : ℝ)))
@@ -222,7 +222,7 @@ theorem actual_resonance_le (k r s : ℕ) (hr : 0 < r)
               ring
         apply hraw.trans
         apply (VinogradovResonancePower.full_coordinate_power_le r s hr hMr (j.val + 1)).trans
-        simp only [coordinateExponent, if_neg hhigh, if_neg hmid]
+        simp only [coordinateExponent, ite_eq_right hhigh, ite_eq_right hmid]
         apply mul_le_mul_of_nonneg_right _ (by positivity)
         have hfull : 2 * (s : ℝ) + 1 ≤ F := by
           have hh : 0 ≤ 2 * Real.pi * (k : ℝ) / (r : ℝ) := by positivity
@@ -235,7 +235,7 @@ theorem actual_resonance_le (k r s : ℕ) (hr : 0 < r)
     (fun h hh => actual_difference_in_box k s M B hB hh)).trans
   calc
     _ ≤ ∏ j : Fin k, W * (M : ℝ) ^ coordinateExponent k j :=
-      Finset.prod_le_prod (fun j _ => Finset.sum_nonneg (fun _ _ => (tailEnvelope_pos (ha j) _).le))
+      Finset.prod_le_prod₀ (fun j _ => Finset.sum_nonneg (fun _ _ => (tailEnvelope_pos (ha j) _).le))
         (fun j _ => hcoord j)
     _ = _ := by
       have he : (∑ j : Fin k, coordinateExponent k j) = k * (k + 1) - wrappedSaving k := by

@@ -90,11 +90,11 @@ private theorem orbit_inter_union {a Q e : ℕ} (hcop : Q.Coprime (a/Q))
     orbitDivisors a Q e ∩ E.biUnion (orbitDivisors a Q) =
       if e ∈ E then orbitDivisors a Q e else ∅ := by
   by_cases heE : e ∈ E
-  · rw [if_pos heE]
+  · rw [ite_eq_left heE]
     apply Finset.inter_eq_left.mpr
     intro db hdb
     exact Finset.mem_biUnion.mpr ⟨e,heE,hdb⟩
-  · rw [if_neg heE]
+  · rw [ite_eq_right heE]
     apply Finset.eq_empty_iff_forall_notMem.mpr
     intro db hdb
     obtain ⟨hde,hh⟩ := Finset.mem_inter.mp hdb
@@ -130,7 +130,7 @@ theorem retained_canonical_orbit_eq_full {u : ℝ} {N K n e : ℕ}
   have hz₁ : (∑ db ∈ O ∩ cancelledOrbitDivisors u N n, f db)=0 := by
     unfold cancelledOrbitDivisors
     dsimp only
-    rw [if_pos ⟨hb.1,by omega⟩]
+    rw [ite_eq_left ⟨hb.1,by omega⟩]
     rw [orbit_inter_union hb.2.2 he _ (Finset.filter_subset _ _)]
     split_ifs with h
     · have hg := (Finset.mem_filter.mp h).2
@@ -140,7 +140,7 @@ theorem retained_canonical_orbit_eq_full {u : ℝ} {N K n e : ℕ}
   have hz₂ : (∑ db ∈ O ∩ ZetaRieszCrossingOrbitCancellation.affineDivisors u N n, f db)=0 := by
     unfold ZetaRieszCrossingOrbitCancellation.affineDivisors
     dsimp only
-    rw [if_pos ⟨hb.1,by omega⟩]
+    rw [ite_eq_left ⟨hb.1,by omega⟩]
     rw [orbit_inter_union hb.2.2 he _ (Finset.filter_subset _ _)]
     split_ifs with h
     · have hg := (Finset.mem_filter.mp h).2
@@ -347,7 +347,7 @@ theorem flat_unallocated_fibre_floor {k N : ℕ} (hk : 2≤k) {e : ℝ} (he : |e
     dsimp only [c]
     rw [abs_mul,he,one_mul]
   rw [hcabs] at hh
-  convert hh using 1 <;> first | rfl | (simp only [jointPeriodCost,div_eq_mul_inv,mul_inv_rev]; ring)
+  convert hh using 1; first | rfl | (simp only [jointPeriodCost,div_eq_mul_inv,mul_inv_rev]; ring)
 
 /-- The clustered log conditions imply the improved ORIGINAL prime-row
 floor directly. There is no analytic cancellation hypothesis in the gap. -/
@@ -470,8 +470,8 @@ theorem flat_all_counts_floor (I : Finset ℕ) (N : ℕ) (e : ℝ)
   rw [Finset.sum_neg_distrib,← Finset.sum_mul] at hh
   have hc0 : 0≤120*b/H^2 := by positivity
   have hp := mul_le_mul_of_nonneg_right (sum_count_price_le I hM hc0) hf0
-  convert (neg_le_neg hp).trans hh using 1 <;>
-    first | rfl | (simp only [div_eq_mul_inv]; ring)
+  convert (neg_le_neg hp).trans hh using 1
+  first | rfl | (simp only [div_eq_mul_inv]; ring)
 
 /-- The finite small-prime head is kept exactly, rather than assuming a
 roughness cutoff on the cofactor. Its size is not numerically evaluated. -/

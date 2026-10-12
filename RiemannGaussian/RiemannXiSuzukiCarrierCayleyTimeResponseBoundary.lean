@@ -42,9 +42,9 @@ theorem tendsto_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach
   · rw [show zetaUpperBlaschkeSelectedLogDerivativeSummand
           (x : ℂ) rho =
         zetaUpperBlaschkeLogDerivativeSummand (x : ℂ) rho by
-      rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper]]
+      rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper]]
     simp only [zetaUpperBlaschkeSelectedLogDerivativeSummand,
-      if_pos hupper]
+      ite_eq_left hupper]
     have hupperDen :
         (x : ℂ) - zetaSpectralCoordinate rho.1 ≠ 0 := by
       intro hzero
@@ -87,7 +87,7 @@ theorem tendsto_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach
       hcontinuous.tendsto.mono_left nhdsWithin_le_nhds
     simpa only [Function.comp_apply, upperBoundaryApproachPoint_zero] using ht
   · simp only [zetaUpperBlaschkeSelectedLogDerivativeSummand,
-      if_neg hupper]
+      ite_eq_right hupper]
     exact tendsto_const_nhds
 
 /-- Along a sufficiently short positive vertical approach, the norm of one
@@ -173,8 +173,8 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_le
       have hrSq : 0 < r ^ 2 := sq_pos_of_pos hr
       rw [div_le_div_iff₀ hAB hrSq]
       nlinarith
-    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+    rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     unfold zetaUpperBlaschkeLogDerivativeSummand
     rw [hdiff, norm_mul, norm_div, norm_mul, Complex.norm_natCast,
       hnum, Complex.normSq_eq_norm_sq]
@@ -193,8 +193,8 @@ theorem norm_zetaUpperBlaschkeSelectedLogDerivativeSummand_approach_le
         mul_le_mul_of_nonneg_left hinv (by positivity)
       _ = 2 * ((analyticZetaZeroMultiplicity rho : ℝ) *
           (2 * alpha.im / r ^ 2)) := by ring
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
-      norm_zero, zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper,
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
+      norm_zero, zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper,
       mul_zero]
 
 /-- The complete signed Blaschke logarithmic derivative converges to its

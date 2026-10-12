@@ -410,7 +410,7 @@ private theorem blockFloorCost_le (R : ℕ → ℕ) (a : ℕ → ℝ) (o m : ℕ
         apply Finset.sum_le_sum
         intro i _
         by_cases hdi : d ≤ R i
-        · simp only [if_pos hdi,abs_mul]
+        · simp only [ite_eq_left hdi,abs_mul]
           simpa only [mul_one] using mul_le_mul_of_nonneg_left
             (abs_real_moebius_le_one d) (abs_nonneg (a i))
         · simp [hdi]

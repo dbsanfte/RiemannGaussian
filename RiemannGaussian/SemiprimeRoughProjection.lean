@@ -76,7 +76,7 @@ theorem quadratic_projector_le (B : ℕ) :
     quadraticProjector B ≤ (B^2+5)^(4*B) := by
   calc
     quadraticProjector B ≤ ∏ _i ∈ Finset.Icc 1 B, (B^2+5)^4 := by
-      exact Finset.prod_le_prod (fun _ _ => Nat.zero_le _) fun _ hi =>
+      exact Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _) fun _ hi =>
         quadratic_projection_term_le (Finset.mem_Icc.mp hi).2
     _ = (B^2+5)^(4*B) := by simp [pow_mul]
 

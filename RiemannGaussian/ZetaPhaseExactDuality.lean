@@ -130,9 +130,9 @@ theorem phaseContactExact_offSupport_mass_le {a : ℕ → ℝ}
       (if n ∈ phaseContactFrequencies then 0 else a n) ≤
         10000 * (a n * phaseContactExactPenalty n) from by
     by_cases hn : n ∈ phaseContactFrequencies
-    · simp only [if_pos hn]
+    · simp only [ite_eq_left hn]
       exact mul_nonneg (by norm_num) (mul_nonneg (ha n) (phaseContactExactPenalty_nonneg n))
-    · simp only [if_neg hn]
+    · simp only [ite_eq_right hn]
       have h := mul_le_mul_of_nonneg_left (one_div_tenThousand_le_phaseContactExactPenalty hn) (ha n)
       nlinarith only [h]) (hf.mul_left 10000)
   rw [tsum_mul_left] at hle

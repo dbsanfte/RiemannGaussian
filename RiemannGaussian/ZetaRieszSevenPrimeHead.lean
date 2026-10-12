@@ -320,7 +320,7 @@ theorem small_seven_fractional_norm_upper (S A : Finset ℕ) {N M Q : ℕ}
   have hb : ‖∑ n ∈ S, f n‖ ≤ ∑ x ∈ D, B x := by
     calc
       _ ≤ ∑ n ∈ S, ‖f n‖ := norm_sum_le _ _
-      _ = ∑ n ∈ S, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,if_pos hn])
+      _ = ∑ n ∈ S, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,ite_eq_left hn])
       _ ≤ ∑ n ∈ D.image prod, g n := Finset.sum_le_sum_of_subset_of_nonneg hsub
         (by intro n _ _; exact ite_nonneg (norm_nonneg _) le_rfl)
       _ ≤ ∑ x ∈ D, g (prod x) := Finset.sum_image_le_of_nonneg

@@ -90,8 +90,8 @@ theorem denseRow_a_ne_zero {N m j t : ℕ} (hm : 1<m)
     have hdt := hc.dvd_of_dvd_mul_left hd
     exact (not_le_of_gt htm) (Nat.le_of_dvd ht hdt)
   have hb : representative N m j t<m := Nat.mod_lt _ (by omega)
-  cases negative <;> simp only [denseRow,liftRow,Bool.false_eq_true,if_false,
-    if_true,sub_zero]
+  cases negative <;> simp only [denseRow,liftRow,Bool.false_eq_true,ite_false,
+    ite_true,sub_zero]
   · exact_mod_cast hr
   · omega
 
@@ -258,13 +258,13 @@ theorem representative_difference {N m j s t : ℕ} (hm : 0<m)
     nlinarith only [hk,hr₁,ha₀,hmz,hn']
   by_cases hz : k=0
   · refine ⟨false,?_⟩
-    simp only [denseRow,liftRow,Bool.false_eq_true,if_false,sub_zero]
+    simp only [denseRow,liftRow,Bool.false_eq_true,ite_false,sub_zero]
     dsimp only [A,R] at hk
     rw [hz] at hk
     linarith only [hk]
   · have ho : k=1 := by omega
     refine ⟨true,?_⟩
-    simp only [denseRow,liftRow,if_true,Bool.false_eq_true,if_false,sub_zero]
+    simp only [denseRow,liftRow,ite_true,Bool.false_eq_true,ite_false,sub_zero]
     dsimp only [A,R] at hk
     rw [ho] at hk
     linarith only [hk]

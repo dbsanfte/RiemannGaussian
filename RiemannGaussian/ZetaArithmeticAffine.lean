@@ -215,7 +215,7 @@ theorem pairing_affine_eq_zero_of_divisor {a b c d q : ℤ}
   intro x hx
   apply Finset.sum_eq_zero
   intro y hy
-  exact if_neg (fun h => hshift (collision_divisibility hb hd h))
+  exact ite_eq_right (fun h => hshift (collision_divisibility hb hd h))
 
 /-- The complete common-divisor obstruction is visible in a single exact
 Gram entry, before any norm or unweighted energy bound. -/

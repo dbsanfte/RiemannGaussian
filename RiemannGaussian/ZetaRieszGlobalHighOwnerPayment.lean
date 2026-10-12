@@ -192,8 +192,8 @@ theorem fullRaw_term_eq_bounded {u : ℝ} (hu : 1/2≤u)
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hpL : log (largestPrime n)≤SquarefreeVaughanLogSource.length u N
-  · simp only [if_pos hpL]
-  · rw [if_neg hpL,fullRaw_coefficient_zero_of_large hu hU hN hn (le_of_not_ge hpL),zero_mul]
+  · simp only [ite_eq_left hpL]
+  · rw [ite_eq_right hpL,fullRaw_coefficient_zero_of_large hu hU hN hn (le_of_not_ge hpL),zero_mul]
 
 /-- EXACT native-to-row connection. Every raw count>=3 physical label
 has one largest-prime incidence; no duplicated pair or phase is used. -/

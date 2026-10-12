@@ -62,7 +62,7 @@ theorem reflectedColumn_eq_cached {R : Type*} [CommRing R] [DecidableEq R]
     reflectedColumn S t=guardedEndpoint t*(rootPolynomial S id).derivative.eval t*
       (if -t∈S then (rootPolynomial S id).derivative.eval (-t)
         else ((rootPolynomial S id).comp (-X)).eval t) := by
-  simp only [reflectedColumn,deflatedColumn,if_pos ht,reflectedPolynomial_eval]
+  simp only [reflectedColumn,deflatedColumn,ite_eq_left ht,reflectedPolynomial_eval]
 
 /-- Each channel preserves its complete unit test, with zero guarded. -/
 theorem guardedEndpoint_isUnit_iff {R : Type*} [CommRing R] [DecidableEq R] (t : R) :
@@ -141,7 +141,7 @@ theorem reflectedLeaves_bounds {n : ℕ} [NeZero n]
   · rcases List.mem_append.mp hv with hv|hv
     · by_cases ht : t=0
       · simp [endpointLeaves,ht] at hv
-      · have he : v=t.val := by simpa only [endpointLeaves,if_neg ht,List.mem_singleton] using hv
+      · have he : v=t.val := by simpa only [endpointLeaves,ite_eq_right ht,List.mem_singleton] using hv
         rw [he]
         exact ⟨ZMod.val_pos.mpr ht,ZMod.val_lt _⟩
     · exact residueLeaves_bounds S t v hv
@@ -204,7 +204,7 @@ private theorem recoverColumns_none_of_units (n : ℕ) (leaves : ℕ→List ℕ)
   | nil => rfl
   | cons c tail ih =>
     rcases c with ⟨t,v⟩
-    rw [recoverColumns,if_pos (hu (t,v) (by simp))]
+    rw [recoverColumns,ite_eq_left (hu (t,v) (by simp))]
     exact ih (fun c hc => hu c (List.mem_cons_of_mem _ hc))
 
 /-- Exhaustion is the complete unit test of the retained columns. -/

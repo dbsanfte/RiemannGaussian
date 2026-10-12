@@ -4,7 +4,7 @@ at commit 6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 (tag v4.32.2), file
 PrimeNumberTheoremAnd/Sobolev.lean.
 Copyright the PrimeNumberTheoremAnd contributors; Apache License 2.0
 (http://www.apache.org/licenses/LICENSE-2.0).
-Local modifications: none besides this header.
+Local modifications: compatibility aliases and the Zeta23.FromPNTPlus namespace.
 Re-ported from the
 v4.29.0 port (commit 10e1218932db7e2432aa5881d750acb819e91f19) when the project
 moved to Lean v4.32.2 / Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c.
@@ -13,6 +13,10 @@ Modified 2026 by Anthropic PBC.
 import Mathlib.Analysis.Calculus.Deriv.Support
 import Mathlib.Analysis.Distribution.SchwartzSpace.Deriv
 import Mathlib.Order.Filter.ZeroAndBoundedAtFilter
+
+
+/- Keep the historical compatibility copy separate from the pinned OpenAI dependency. -/
+namespace Zeta23.FromPNTPlus
 
 open Real Complex MeasureTheory Filter Topology BoundedContinuousFunction SchwartzMap  BigOperators
 open scoped ContDiff
@@ -369,3 +373,5 @@ theorem W21_approximation (f : W21) (g : trunc) :
         filter_upwards [eh' v] with R hR ; simp [hR]
       · simpa [h] using! ((g.tendsto_scale v).const_sub 1).ofReal.mul tendsto_const_nhds
     simpa [F] using tendsto_integral_filter_of_dominated_convergence bound e1 e2 e3 e4
+
+end Zeta23.FromPNTPlus

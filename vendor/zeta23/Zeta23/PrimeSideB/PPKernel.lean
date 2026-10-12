@@ -254,8 +254,8 @@ is continuous. -/
 lemma continuous_Jker_offset (θ y T : ℝ) :
     Continuous fun x : ℝ => Jker θ (x * y) (max (T - x) T) (min (2 * T - x) (2 * T)) := by
   by_cases hθ : θ = 0
-  · simp only [Jker, hθ, if_true]; fun_prop
-  · simp only [Jker, hθ, if_false]; fun_prop
+  · simp only [Jker, hθ, ite_true]; fun_prop
+  · simp only [Jker, hθ, ite_false]; fun_prop
 
 variable {T : ℝ}
 

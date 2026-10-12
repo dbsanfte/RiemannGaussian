@@ -54,7 +54,7 @@ theorem coefficient_eq_response {a p : ℕ} (hs : Squarefree a)
     Int.cast_pow,Int.cast_neg,Int.cast_one,
     ZetaSquarefreeRieszWindows.riesz_prime_mul (Real.log (p*a : ℕ)-L) hp hpd] at href
   rw [show Real.log (p*a : ℕ)-L-Real.log p = Real.log a-L by rw [hl]; ring] at href
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hsq,hnp⟩,href]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hsq,hnp⟩,href]
   congr 1
   dsimp only [response]
   ring

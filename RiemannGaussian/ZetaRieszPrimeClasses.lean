@@ -91,11 +91,11 @@ theorem actual_band_eq_two_prime_classes (P : Polynomial ℂ) (N : ℕ)
   by_cases hg : Squarefree n ∧ n ≠ 1 ∧ ¬ n.Prime
   · have hc := largePrimeCount_pos_of_mem_band hN hg.1 hn
     by_cases h1 : largePrimeCount n = 1
-    · rw [if_pos ⟨hg, h1⟩, if_neg (by rintro ⟨_hg, h2⟩; omega), add_zero]
+    · rw [ite_eq_left ⟨hg, h1⟩, ite_eq_right (by rintro ⟨_hg, h2⟩; omega), add_zero]
     · have h2 : 2 ≤ largePrimeCount n := by omega
-      rw [if_neg (by rintro ⟨_hg, h1'⟩; exact h1 h1'), if_pos ⟨hg, h2⟩, zero_add]
+      rw [ite_eq_right (by rintro ⟨_hg, h1'⟩; exact h1 h1'), ite_eq_left ⟨hg, h2⟩, zero_add]
   · have hz : SquarefreeVaughanLogSource.coefficient L n = 0 := by
-      rw [ZetaRieszPrimeFourier.coefficient_eq_primePair_integral, if_neg hg]
+      rw [ZetaRieszPrimeFourier.coefficient_eq_primePair_integral, ite_eq_right hg]
     simp only [hz, zero_mul, ite_self, zero_add]
 
 /-- Every all-small squarefree cofactor divides the fixed six-prime product. -/

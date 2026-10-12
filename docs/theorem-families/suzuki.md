@@ -6,7 +6,7 @@
 
 Suzuki screw functions, Landau compensation, transport, signed currents and contour identities.
 
-**377 modules.** Source links open the definitions, hypotheses and proofs.
+**394 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [PositiveDelayAveraging](../../RiemannGaussian/PositiveDelayAveraging.lean)
 - [PositiveLaplaceLandau](../../RiemannGaussian/PositiveLaplaceLandau.lean)
@@ -282,9 +282,13 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiCarrierSmoothHeatBound](../../RiemannGaussian/SuzukiCarrierSmoothHeatBound.lean)
 - [SuzukiCarrierSmoothReflection](../../RiemannGaussian/SuzukiCarrierSmoothReflection.lean)
 - [SuzukiCarrierSmoothReflectionLimit](../../RiemannGaussian/SuzukiCarrierSmoothReflectionLimit.lean)
+- [SuzukiCarryAllJetGate](../../RiemannGaussian/SuzukiCarryAllJetGate.lean)
+- [SuzukiCarryCellCertificate](../../RiemannGaussian/SuzukiCarryCellCertificate.lean)
 - [SuzukiCarryCollapseAudit](../../RiemannGaussian/SuzukiCarryCollapseAudit.lean)
 - [SuzukiCarryCorrelation](../../RiemannGaussian/SuzukiCarryCorrelation.lean)
 - [SuzukiCarryDeterminantGate](../../RiemannGaussian/SuzukiCarryDeterminantGate.lean)
+- [SuzukiCarryExceptionalGate](../../RiemannGaussian/SuzukiCarryExceptionalGate.lean)
+- [SuzukiCarryExceptionalPhase](../../RiemannGaussian/SuzukiCarryExceptionalPhase.lean)
 - [SuzukiCarryFejer](../../RiemannGaussian/SuzukiCarryFejer.lean)
 - [SuzukiCarryGram](../../RiemannGaussian/SuzukiCarryGram.lean)
 - [SuzukiCarryGramSource](../../RiemannGaussian/SuzukiCarryGramSource.lean)
@@ -295,7 +299,20 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiCarryPeriodicBudgetAudit](../../RiemannGaussian/SuzukiCarryPeriodicBudgetAudit.lean)
 - [SuzukiCarryPeriodicDiscrepancy](../../RiemannGaussian/SuzukiCarryPeriodicDiscrepancy.lean)
 - [SuzukiCarryPhaseCode](../../RiemannGaussian/SuzukiCarryPhaseCode.lean)
+- [SuzukiCarryPhaseContinuation](../../RiemannGaussian/SuzukiCarryPhaseContinuation.lean)
+- [SuzukiCarryPhaseCosine](../../RiemannGaussian/SuzukiCarryPhaseCosine.lean)
+- [SuzukiCarryPhaseDensity](../../RiemannGaussian/SuzukiCarryPhaseDensity.lean)
+- [SuzukiCarryPhaseEta](../../RiemannGaussian/SuzukiCarryPhaseEta.lean)
+- [SuzukiCarryPhaseHolomorphy](../../RiemannGaussian/SuzukiCarryPhaseHolomorphy.lean)
+- [SuzukiCarryPhaseInjectivity](../../RiemannGaussian/SuzukiCarryPhaseInjectivity.lean)
+- [SuzukiCarryPhaseLag](../../RiemannGaussian/SuzukiCarryPhaseLag.lean)
+- [SuzukiCarryPhaseQuadrature](../../RiemannGaussian/SuzukiCarryPhaseQuadrature.lean)
+- [SuzukiCarryPhaseScaleGate](../../RiemannGaussian/SuzukiCarryPhaseScaleGate.lean)
+- [SuzukiCarryPhaseSpectrum](../../RiemannGaussian/SuzukiCarryPhaseSpectrum.lean)
+- [SuzukiCarryPhaseTransform](../../RiemannGaussian/SuzukiCarryPhaseTransform.lean)
 - [SuzukiCarryPoleCenter](../../RiemannGaussian/SuzukiCarryPoleCenter.lean)
+- [SuzukiCarryRealJet](../../RiemannGaussian/SuzukiCarryRealJet.lean)
+- [SuzukiCarrySmallCell](../../RiemannGaussian/SuzukiCarrySmallCell.lean)
 - [SuzukiCarrySourceDetector](../../RiemannGaussian/SuzukiCarrySourceDetector.lean)
 - [SuzukiCompactSourceDecay](../../RiemannGaussian/SuzukiCompactSourceDecay.lean)
 - [SuzukiCompanionHeatDecay](../../RiemannGaussian/SuzukiCompanionHeatDecay.lean)

@@ -135,7 +135,7 @@ theorem palettePolynomial_eq_sum {p b eta X k : ℕ} [NeZero p]
 theorem palettePolynomial_univ (p b eta X k : ℕ) [NeZero p] (theta : UnitAddTorus (Fin k)) :
     palettePolynomial p b eta X k Finset.univ theta =
       VinogradovCongruenceEnergy.residuePolynomial (p ^ b) eta X k 1 theta := by
-  simp only [palettePolynomial, polynomial, Finset.mem_univ, if_true, one_mul,
+  simp only [palettePolynomial, polynomial, Finset.mem_univ, ite_true, one_mul,
     VinogradovCongruenceEnergy.residuePolynomial]
 
 end

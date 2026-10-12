@@ -37,7 +37,7 @@ theorem pairedEtaCurrentEulerExpression_eq_adjacent_endpoints (rho : NontrivialZ
               Real.exp (-2 * (NontrivialZetaZero.conjugatePartner rho).1.re * pairedEtaLogTailCutoff (N + 2)) -
           pairedEtaCurrentEulerAdjacentCoefficient rho (analyticZetaZeroMultiplicity rho - 2) *
               Real.exp (-2 * rho.1.re * pairedEtaLogTailCutoff (N + 2))) := by
-  rw [pairedEtaCurrentEulerExpression, if_neg (show analyticZetaZeroMultiplicity rho ≠ 1 by omega),
+  rw [pairedEtaCurrentEulerExpression, ite_eq_right (show analyticZetaZeroMultiplicity rho ≠ 1 by omega),
     show analyticZetaZeroMultiplicity rho - 1 = analyticZetaZeroMultiplicity rho - 2 + 1 by omega,
     pairedEtaCurrentEulerMomentPair_adjacent_re]
 
@@ -80,7 +80,7 @@ theorem abs_pairedEtaLeadingCurrent_sub_euler_le (rho : NontrivialZetaZero) (N :
       2 * pairedEtaLogTailShiftIncrement (N + 1) * pairedEtaCurrentEulerErrorEnvelope rho N := by
   have hd := (pairedEtaLogTailShiftIncrement_pos (N + 1)).le
   by_cases hm : analyticZetaZeroMultiplicity rho = 1
-  · rw [pairedEtaCurrentEulerExpression, if_pos hm, pairedEtaLeadingCurrent_eq_headCompletedMomentPair rho hm,
+  · rw [pairedEtaCurrentEulerExpression, ite_eq_left hm, pairedEtaLeadingCurrent_eq_headCompletedMomentPair rho hm,
       ← mul_sub, ← Complex.sub_re, abs_mul, abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
     calc
       _ ≤ 2 * ‖pairedEtaHeadCompletedMomentPair rho N 0 0 - pairedEtaCurrentEulerHeadPair rho N‖ :=
@@ -88,9 +88,9 @@ theorem abs_pairedEtaLeadingCurrent_sub_euler_le (rho : NontrivialZetaZero) (N :
       _ ≤ _ := by
         have h := mul_le_mul_of_nonneg_left (norm_pairedEtaHeadCompletedMomentPair_sub_euler_le rho N)
           (by norm_num : (0 : ℝ) ≤ 2)
-        simpa only [pairedEtaCurrentEulerErrorEnvelope, if_pos hm, mul_assoc] using h
+        simpa only [pairedEtaCurrentEulerErrorEnvelope, ite_eq_left hm, mul_assoc] using h
   · have hm2 : 2 ≤ analyticZetaZeroMultiplicity rho := by have := analyticZetaZeroMultiplicity_positive rho; omega
-    rw [pairedEtaCurrentEulerExpression, if_neg hm, pairedEtaLeadingCurrent_eq_completedMomentPair rho hm2,
+    rw [pairedEtaCurrentEulerExpression, ite_eq_right hm, pairedEtaLeadingCurrent_eq_completedMomentPair rho hm2,
       ← mul_sub, ← Complex.sub_re, abs_mul, abs_of_nonneg (by positivity)]
     calc
       _ ≤ 2 * (((analyticZetaZeroMultiplicity rho - 1 : ℕ) : ℝ) * pairedEtaLogTailShiftIncrement (N + 1)) *
@@ -104,7 +104,7 @@ theorem abs_pairedEtaLeadingCurrent_sub_euler_le (rho : NontrivialZetaZero) (N :
             (by omega : analyticZetaZeroMultiplicity rho - 1 < _) N)
           (by positivity : 0 ≤ 2 * (((analyticZetaZeroMultiplicity rho - 1 : ℕ) : ℝ) * pairedEtaLogTailShiftIncrement (N + 1)))
         unfold pairedEtaCurrentEulerErrorEnvelope
-        rw [if_neg hm]
+        rw [ite_eq_right hm]
         exact h.trans_eq (by ring)
 
 /-- The original odd endpoint weight absorbs one actual successor cutoff shift. -/
@@ -139,12 +139,12 @@ theorem summable_pairedEtaCurrentEulerErrorEnvelope (rho : NontrivialZetaZero) :
     simpa only [pow_zero, one_mul] using summable_pairedEtaCurrent_logPower_mul_decay_div z 0
   change Summable (fun N ↦ pairedEtaCurrentEulerErrorEnvelope rho N)
   by_cases hm : analyticZetaZeroMultiplicity rho = 1
-  · simpa only [pairedEtaCurrentEulerErrorEnvelope, if_pos hm, mul_div_assoc] using
+  · simpa only [pairedEtaCurrentEulerErrorEnvelope, ite_eq_left hm, mul_div_assoc] using
       ((hs (NontrivialZetaZero.conjugatePartner rho)).mul_left
         (pairedEtaCurrentMomentConstant (NontrivialZetaZero.conjugatePartner rho) *
           pairedEtaCurrentEulerMomentErrorConstant (NontrivialZetaZero.conjugatePartner rho) 0)).add
       ((hs rho).mul_left (pairedEtaCurrentMomentConstant rho * pairedEtaCurrentEulerMomentErrorConstant rho 0))
-  · simpa only [pairedEtaCurrentEulerErrorEnvelope, if_neg hm, mul_div_assoc] using
+  · simpa only [pairedEtaCurrentEulerErrorEnvelope, ite_eq_right hm, mul_div_assoc] using
       (((hs (NontrivialZetaZero.conjugatePartner rho)).mul_left
         (pairedEtaCurrentEulerPairErrorConstant (NontrivialZetaZero.conjugatePartner rho)
           (analyticZetaZeroMultiplicity rho - 2) (analyticZetaZeroMultiplicity rho - 1))).add

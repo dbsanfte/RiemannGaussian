@@ -184,12 +184,12 @@ theorem seedLoop_progress {p q B b fuel M : ℕ} (hp : p.Prime) (hq : q.Prime)
   | zero =>
     have hsize : B≤M := by simpa only [pow_zero, one_mul] using hpay
     obtain ⟨d, hd⟩ := factorProgression_semiprime hp hq hpq hB hsize hpB hbudget hmp hmq
-    simp only [seedLoop, if_pos hsize, hd, factorRoute, GoodRoute]
+    simp only [seedLoop, ite_eq_left hsize, hd, factorRoute, GoodRoute]
     exact factorProgression_sound hd
   | succ fuel ih =>
     by_cases hsize : B≤M
     · obtain ⟨d, hd⟩ := factorProgression_semiprime hp hq hpq hB hsize hpB hbudget hmp hmq
-      simp only [seedLoop, if_pos hsize, hd, factorRoute, GoodRoute]
+      simp only [seedLoop, ite_eq_left hsize, hd, factorRoute, GoodRoute]
       exact factorProgression_sound hd
     · have hMB : M<B := by omega
       have hsmall : M+1<p :=
@@ -206,7 +206,7 @@ theorem seedLoop_progress {p q B b fuel M : ℕ} (hp : p.Prime) (hq : q.Prime)
           simpa only [Units.val_pow_eq_pow_val, hg, Units.val_one] using hv)
       cases hsignal : checkedSignal (p*q) ((k : ZMod (p*q))^M-1).val with
       | some d =>
-        simp only [seedLoop, if_neg hsize, hseed, hsignal, GoodRoute]
+        simp only [seedLoop, ite_eq_right hsize, hseed, hsignal, GoodRoute]
         exact checkedSignal_sound hsignal
       | none =>
         have hstep : seedLoop (p*q) B b (fuel+1) M=
@@ -216,7 +216,7 @@ theorem seedLoop_progress {p q B b fuel M : ℕ} (hp : p.Prime) (hq : q.Prime)
               match scanProper (p*q) (primePowerValues (p*q) (peelOrder g (j*b-i)) g) with
               | some d => .factor d
               | none => seedLoop (p*q) B b fuel (Nat.lcm M (peelOrder g (j*b-i)))) := by
-          simp only [seedLoop, if_neg hsize, hseed, hsignal, dif_pos hunit]
+          simp only [seedLoop, ite_eq_right hsize, hseed, hsignal, dite_eq_left hunit]
           rfl
         rw [hstep]
         cases hcollision : boundedCollision (p*q) b g with

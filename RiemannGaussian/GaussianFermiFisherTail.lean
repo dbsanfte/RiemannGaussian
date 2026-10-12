@@ -315,7 +315,7 @@ theorem selected_zero_sum_le_full_add_uniform {B m H t : ℝ} (hB : 0 < B) (hBu 
       _ = ∑ ρ ∈ S, inside B (1 - m) t H ρ := by
         apply Finset.sum_congr rfl
         intro ρ hρ
-        simp only [inside, if_pos (hS ρ hρ)]
+        simp only [inside, ite_eq_left (hS ρ hρ)]
       _ ≤ _ := hin.sum_le_tsum S (fun ρ _ => hn ρ)
   have htail := (abs_le.mp (abs_tsum_outside_le_uniform hB hBu hσ hσu hscale ht hH)).1
   have hsplit := zero_sum_eq_inside_add_outside hB hσ.le hσu hscale ht hH

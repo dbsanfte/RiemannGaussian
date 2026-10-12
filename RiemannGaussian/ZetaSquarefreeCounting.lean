@@ -203,7 +203,7 @@ theorem finiteCount_antitone_squares (W : Finset ℕ) {Q Q' : Finset ℕ}
   · have h' : (∏ p ∈ W, p) ∣ n ∧ (¬∃ p ∈ Q, p ^ 2 ∣ n) :=
       ⟨h.1, fun ⟨p, hp, hd⟩ ↦ h.2 ⟨p, hQQ hp, hd⟩⟩
     simp [finiteCoefficient, h, h']
-  · simp only [finiteCoefficient, if_neg h]
+  · simp only [finiteCoefficient, ite_eq_right h]
     split_ifs <;> norm_num
 
 /-- The signed finite density is nonnegative because it is the limit

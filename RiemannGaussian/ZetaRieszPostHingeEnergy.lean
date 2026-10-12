@@ -55,7 +55,7 @@ theorem corrected_step_nonpos {X k : ℕ} (hk : k ∈ Finset.Icc 1 X) (L : ℝ) 
       (by exact_mod_cast hk0 : (0 : ℝ) < k) (by exact_mod_cast Nat.le_succ k)
     have hd : correctedProfile X L 1 0 k-correctedProfile X L 1 0 (k+1)=
         max L (log k)-max L (log (k+1 : ℕ)) := by
-      simp only [correctedProfile,centeredProfile,if_pos hkX,if_pos hk',
+      simp only [correctedProfile,centeredProfile,ite_eq_left hkX,ite_eq_left hk',
         zero_mul,add_zero,one_mul]
       linarith only [hinge_add_log L (log k),hinge_add_log L (log (k+1 : ℕ))]
     rw [hd]
@@ -94,7 +94,7 @@ theorem profileEnergy_post_hinge {X : ℕ} (hX : 0 < X) {L : ℝ} (hL : 0 ≤ L)
     _ = max 0 (log X-L) := by
       have hX1 : 1 ≤ X := by omega
       simp only [f,correctedProfile,centeredProfile,
-        if_neg (by omega : ¬X+1 ≤ X),if_pos hX1,Nat.cast_one,log_one,
+        ite_eq_right (by omega : ¬X+1 ≤ X),ite_eq_left hX1,Nat.cast_one,log_one,
         zero_mul,one_mul,add_zero,sub_zero,max_eq_right hL]
       by_cases h : L ≤ log X
       · rw [max_eq_left (sub_nonpos.mpr h),max_eq_right (sub_nonneg.mpr h)]

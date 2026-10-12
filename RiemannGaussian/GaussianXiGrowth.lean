@@ -112,7 +112,7 @@ theorem riemann_f_modif_eq_upper_add_reflection (x : ℝ) :
         Set.indicator_of_notMem (notMem_Ioi.mpr hx1.le), zero_add,
         Set.indicator_of_mem (mem_Ioo.mpr ⟨hx, hx1⟩)]
       simp only [HurwitzZeta.hurwitzEvenFEPair, Function.comp_apply,
-        if_pos, one_mul]
+        ite_eq_left, one_mul]
       rw [HurwitzZeta.evenKernel_functional_equation]
       push_cast
       rw [Complex.ofReal_cpow hx.le, Complex.ofReal_div,

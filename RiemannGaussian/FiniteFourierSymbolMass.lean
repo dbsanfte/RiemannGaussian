@@ -142,7 +142,7 @@ theorem sum_inv_sq_cyclicDifferenceSymbol_le {δ : ℝ} (hδ : 0 < δ)
     have hkR : (0 : ℝ) < k.val := by exact_mod_cast hk0
     by_cases hl : k.val ≤ K
     · exact (min_le_left _ _).trans_eq (by simp [f, hl])
-    · simp only [f, if_neg hl]
+    · simp only [f, ite_eq_right hl]
       apply (min_le_right _ _).trans
       have hi : ‖cyclicDifferenceSymbol k‖⁻¹ ≤ (4 * (k.val : ℝ) / q)⁻¹ := by
         simpa only [one_div] using one_div_le_one_div_of_le (by positivity)

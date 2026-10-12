@@ -229,7 +229,7 @@ theorem publicCompanion_mem_of_residue {N m j : ℕ} (hj : j<m) (hc : j.Coprime 
   apply List.mem_flatMap.mpr
   refine ⟨j,List.mem_range.mpr hj,?_⟩
   change w∈(if j.Coprime m then weightedResiduePackets N m j else [])
-  rwa [if_pos hc]
+  rwa [ite_eq_left hc]
 
 /-- Whole-modulus deduplication forks the retained original integer list. -/
 def publicCompanionRoots (N m : ℕ) : Finset (ZMod N) :=
@@ -282,7 +282,7 @@ theorem recoverCompanionRows_of_endpoint {N m : ℕ} {c : ℤ}
       List.mem_map.mpr ⟨(c : ZMod N),Finset.mem_toList.mpr (publicCompanionRoots_mem hc),rfl⟩
     have he := (scanProper_none_iff _ _).mp hf _ hm
     have hproper : 1<N.gcd (c : ZMod N).val ∧ N.gcd (c : ZMod N).val<N := ⟨hp.1,hp.2.1⟩
-    rw [SemiprimeGroupSelection.checkedSignal,if_pos hproper] at he
+    rw [SemiprimeGroupSelection.checkedSignal,ite_eq_left hproper] at he
     contradiction
 
 theorem publicCompanions_length_le (N m : ℕ) :

@@ -33,12 +33,12 @@ def primeSquareSurvivorMask (S Q : Finset ℕ) (n : ℕ) : ℂ :=
 private theorem prod_bool (S : Finset ℕ) (b : ℕ → Prop) [DecidablePred b] :
     (∏ p ∈ S, if b p then (1 : ℂ) else 0) = if ∀ p ∈ S, b p then 1 else 0 := by
   by_cases h : ∀ p ∈ S, b p
-  · rw [if_pos h]
-    exact Finset.prod_eq_one (fun p hp ↦ if_pos (h p hp))
-  · rw [if_neg h]
+  · rw [ite_eq_left h]
+    exact Finset.prod_eq_one (fun p hp ↦ ite_eq_left (h p hp))
+  · rw [ite_eq_right h]
     push Not at h
     obtain ⟨p, hp, hb⟩ := h
-    exact Finset.prod_eq_zero hp (if_neg hb)
+    exact Finset.prod_eq_zero hp (ite_eq_right hb)
 
 private theorem square_complement (Q : Finset ℕ) (hQ : ∀ p ∈ Q, p.Prime) (n : ℕ) :
     (∑ V ∈ Q.powerset, (-1 : ℂ) ^ V.card * (if (∏ p ∈ V, p) ^ 2 ∣ n then 1 else 0)) =
@@ -63,9 +63,9 @@ private theorem square_complement (Q : Finset ℕ) (hQ : ∀ p ∈ Q, p.Prime) (
       · have hf : ¬∀ p ∈ Q, ¬p ^ 2 ∣ n := by
           obtain ⟨p, hp, hpn⟩ := h
           exact fun hh ↦ hh p hp hpn
-        rw [if_neg hf, if_pos h]
+        rw [ite_eq_right hf, ite_eq_left h]
       · have hf : ∀ p ∈ Q, ¬p ^ 2 ∣ n := fun p hp hpn ↦ h ⟨p, hp, hpn⟩
-        rw [if_pos hf, if_neg h]
+        rw [ite_eq_left hf, ite_eq_right h]
 
 /-- Exact signed inclusion-exclusion for every selected square inside
 an arbitrary first-power prime multiple, retaining all shared primes. -/
@@ -105,11 +105,11 @@ theorem primeSquareSurvivorMask_mul_eq (S Q : Finset ℕ)
         (-1 : ℂ) ^ U.card * (primeSquareMultipleMask (T ∪ U) Q n * F n) := by
   by_cases hq : ∃ p ∈ Q, p ^ 2 ∣ n
   · simp only [primeSquareSurvivorMask, primeSquareMultipleMask, hq, and_true,
-      Finset.prod_empty, one_dvd, if_true, ite_mul, one_mul, zero_mul]
+      Finset.prod_empty, one_dvd, ite_true, ite_mul, one_mul, zero_mul]
     rw [← primePairSieve_eq_signed_patterns S hS F n]
     by_cases hc : (S.filter (fun p ↦ p ∣ n)).card ≤ 1
-    · rw [if_pos hc, if_neg (by omega), sub_zero]
-    · rw [if_neg hc, if_pos (by omega), sub_self]
+    · rw [ite_eq_left hc, ite_eq_right (by omega), sub_zero]
+    · rw [ite_eq_right hc, ite_eq_left (by omega), sub_self]
   · simp [primeSquareSurvivorMask, primeSquareMultipleMask, hq]
 
 /-- A selected repeated-prime term is not squarefree. -/

@@ -54,7 +54,8 @@ def run(output, url=None):
                 source_url = page.locator("#details .source-button").get_attribute("href")
                 assert source_url.endswith(f"#L{data['source']['line']}")
                 if published:
-                    assert f"/blob/{revision}/{data['source']['path']}" in source_url
+                    source_revision = page.evaluate("PROOF_DATA.sourceRevision || PROOF_RELEASE.revision")
+                    assert f"/blob/{source_revision}/{data['source']['path']}" in source_url
                 else:
                     with page.expect_popup() as opened:
                         page.locator("#details .source-button").click()

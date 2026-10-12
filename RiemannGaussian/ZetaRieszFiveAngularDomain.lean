@@ -102,7 +102,7 @@ theorem coordinates_preserving : MeasurePreserving coordinates := by
       fin_cases i <;> fin_cases j <;> rfl
     rw [Matrix.det_succ_column M 1]
     simp_rw [hcol,mul_ite,ite_mul,mul_zero,zero_mul]
-    simp only [Finset.sum_ite_eq',Finset.mem_univ,if_true]
+    simp only [Finset.sum_ite_eq',Finset.mem_univ,ite_true]
     rw [hminor,Matrix.det_fin_three]
     change (-1 : ℝ)^(1+1)*(-1)*(0*0*0-0*0*1-1*1*0+1*0*0+1*1*1-1*0*0) = -1
     norm_num
@@ -349,12 +349,12 @@ theorem half_integral_fibre_eq (B : ZetaRieszCapacityCover.Box) {lo hi : ℝ}
               Set.indicator_of_notMem (fun hv => hr ⟨hv.2.2.1,hv.2.2.2.1⟩) _
             simp_rw [hz,integral_zero,mul_zero]
         rw [he,integral_indicator measurableSet_Ioc,integral_div]
-        exact (if_pos hA).symm
+        exact (ite_eq_left hA).symm
       · have hz (r a : ℝ) : f ((x,r),a) = 0 :=
           Set.indicator_of_notMem (fun hv => hA hv.2.1) _
         simp_rw [hz,integral_zero,mul_zero]
         rw [integral_zero]
-        exact (if_neg hA).symm
+        exact (ite_eq_right hA).symm
     · rw [Set.indicator_of_notMem hx]
       have hz (r a : ℝ) : f ((x,r),a) = 0 :=
         Set.indicator_of_notMem (fun hv => hx hv.1) _

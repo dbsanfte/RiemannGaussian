@@ -265,9 +265,9 @@ theorem jointPeriodCost_shell_le {N : ℕ} {v y b H : ℝ}
   have hy2 : 1 ≤ y^2 := by nlinarith
   have hinvy : (y^2)⁻¹ ≤ 1 := (inv_le_one₀ (sq_pos_of_pos hy0)).mpr hy2
   have hfirst : (2*Real.pi/y)*(((N : ℝ)+1)/(v-Real.pi/y)) ≤ 1 :=
-    mul_le_one₀ hwidth (by positivity) hratio
+    (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) hwidth (by positivity) hratio
   have hfactor : ((2*Real.pi/y)*(((N : ℝ)+1)/(v-Real.pi/y)))*(y^2)⁻¹ ≤ 1 :=
-    mul_le_one₀ hfirst (by positivity) hinvy
+    (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) hfirst (by positivity) hinvy
   have heq : jointPeriodCost N v y b =
       (((2*Real.pi/y)*(((N : ℝ)+1)/(v-Real.pi/y)))*(y^2)⁻¹+4)/
         (v-Real.pi/y-b)^2 := by

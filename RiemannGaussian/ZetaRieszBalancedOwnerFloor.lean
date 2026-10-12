@@ -319,7 +319,7 @@ theorem native_real_eq_rest_high (u y : ℝ) (j : ℕ) :
     intro n hn hnot
     have hs : ¬Squarefree n := fun hs => hnot (Finset.mem_filter.mpr ⟨hn,hs⟩)
     simp only [f,residualCoefficient,SquarefreeVaughanLogSource.coefficient,
-      hs,false_and,if_false,mul_zero,zero_mul]
+      hs,false_and,ite_false,mul_zero,zero_mul]
   have hh : highLabels u j⊆nativeSF u j := Finset.filter_subset _ _
   change (((u : ℂ)^(dyadicMomentOrder j+1)*
     (∑ n∈ZetaRieszPaidIncidenceFloor.nativeLabels u j,f n)).re)=
@@ -382,7 +382,7 @@ theorem sum_highPaidIncrement (u y : ℝ) (j : ℕ) (p : Fin 5→ℝ) :
     simp only [hp.primeFactors,Finset.card_singleton] at hh
     omega
   simp only [ZetaRieszComplexProjection.sourceWeight,residualCoefficient,
-    SquarefreeVaughanLogSource.coefficient,if_pos (And.intro (hs n h) hnp)]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro (hs n h) hnp)]
   push_cast
   ring
 
@@ -432,8 +432,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hnot
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hnot (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 /-- Spend the entire high-owner/head payment ONCE in the actual whole
 floor. The only main labels left have owner share below `34/65`. -/

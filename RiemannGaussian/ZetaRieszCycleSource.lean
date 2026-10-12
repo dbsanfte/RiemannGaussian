@@ -30,7 +30,7 @@ theorem actual_band_eq_cycle_sum (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t : �
         cycleResidual (bandWeight L P N t) (actualCycles N).toList n := by
   rw [sum_cycleResidual _ _ _ (fun _ he => actualCycles_valid (Finset.mem_toList.mp he))]
   unfold bandWeight zetaArithmeticBand
-  exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+  exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
 
 /-- Pair transport can be applied after the exact cancellations. Every
 remaining sent chord and unmatched amplitude is still charged. -/

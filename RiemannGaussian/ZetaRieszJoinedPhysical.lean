@@ -127,7 +127,7 @@ theorem residual_atom_two_hinges (A : Finset ℕ) (L : ℝ) (N : ℕ) (s : ℂ)
   have hpn : ¬p ∣ a := hp.coprime_iff_not_dvd.mp (Nat.coprime_of_squarefree_mul hsf)
   have hnp : ¬(p*a).Prime := Nat.not_prime_mul hp.ne_one ha1
   simp only [residualCoefficient,SquarefreeVaughanLogSource.coefficient,
-    if_pos (And.intro hsf hnp),ZetaSquarefreeRieszWindows.riesz_prime_mul L hp hpn]
+    ite_eq_left (And.intro hsf hnp),ZetaSquarefreeRieszWindows.riesz_prime_mul L hp hpn]
   push_cast
   calc
     _ = ((1-boundedShare A N (p*a) : ℝ) : ℂ)*

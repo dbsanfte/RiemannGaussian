@@ -84,7 +84,7 @@ theorem norm_primeFermiCorrectionSummand_le (a : ℝ) (p : Polynomial ℂ)
         zetaPhasePrimeWeight (s.re + a - q) n := by
   rw [primeCorrectionCoefficient_eq_prime_tail hD S hS]
   by_cases hn : n.Prime ∧ D < n ∧ n ∉ S
-  · rw [if_pos hn, norm_mul, norm_mul, Complex.norm_real, Complex.norm_real,
+  · rw [ite_eq_left hn, norm_mul, norm_mul, Complex.norm_real, Complex.norm_real,
       Real.norm_of_nonneg (Real.log_natCast_nonneg n), Real.norm_of_nonneg (fermi_bounds _).1.le]
     have hk := norm_zetaPrimeFilterKernel_le_tilt p N s
       (by exact_mod_cast hn.1.one_le : (1 : ℝ) ≤ n) hq
@@ -108,7 +108,7 @@ theorem norm_primeFermiCorrectionSummand_le (a : ℝ) (p : Polynomial ℂ)
         unfold zetaPhasePrimeWeight
         rw [ArithmeticFunction.vonMangoldt_apply_prime hn.1, ← he]
         ring
-  · rw [if_neg hn, zero_mul, zero_mul, norm_zero]
+  · rw [ite_eq_right hn, zero_mul, zero_mul, norm_zero]
     exact mul_nonneg (mul_nonneg (by positivity)
       (Finset.sum_nonneg fun _ _ => mul_nonneg (norm_nonneg _) (by positivity)))
       (zetaPhasePrimeWeight_nonneg _ _)

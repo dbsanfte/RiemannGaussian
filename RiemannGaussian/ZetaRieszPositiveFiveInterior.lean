@@ -187,7 +187,7 @@ theorem positive_coefficient_eq_cap {n q a b r : ℕ} (hs : Squarefree n)
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hP : P ∈ n.primeFactors := by
     dsimp [P]
-    rw [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne]
+    rw [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne]
     exact Finset.max'_mem _ _
   have hq : q ≠ a := by omega
   have hqb : q ≠ b := by omega
@@ -220,7 +220,7 @@ theorem positive_coefficient_eq_cap {n q a b r : ℕ} (hs : Squarefree n)
   rw [htotal] at hbalance
   conv_lhs at hbalance => rw [hm,hm,hm,hm]
   rw [← ZetaRieszFivePrimeReserve.positiveAllowance_eq hcount hL hLlo hLhi]
-  simp only [ZetaRieszFivePrimeReserve.positiveAllowance,if_pos hs,hcofactor,
+  simp only [ZetaRieszFivePrimeReserve.positiveAllowance,ite_eq_left hs,hcofactor,
     Finset.sum_insert,Finset.sum_singleton,Finset.mem_insert,Finset.mem_singleton,
     hq,hqb,hqr,hab,har,hbr,or_self,not_false_eq_true]
   congr 1

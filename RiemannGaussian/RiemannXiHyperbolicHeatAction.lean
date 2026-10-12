@@ -181,14 +181,14 @@ theorem zetaUpperHyperbolicLogDefectSummand_nonneg
     (hne : z ≠ zetaSpectralCoordinate rho.1) :
     0 ≤ zetaUpperHyperbolicLogDefectSummand z rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicLogDefectSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper]
     apply mul_nonneg (Nat.cast_nonneg _)
     have hrpos := upperHalfPlanePseudoHyperbolicDistance_pos_of_ne
       hz hupper hne
     have hrlt := upperHalfPlanePseudoHyperbolicDistance_lt_one hz hupper
     have hlog := Real.log_neg hrpos hrlt
     linarith
-  · rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper]
 
 /-- An upper spectral zero contributes a strictly positive logarithmic
 defect at every distinct upper observation point. -/
@@ -197,7 +197,7 @@ theorem zetaUpperHyperbolicLogDefectSummand_pos
     (hupper : 0 < (zetaSpectralCoordinate rho.1).im)
     (hne : z ≠ zetaSpectralCoordinate rho.1) :
     0 < zetaUpperHyperbolicLogDefectSummand z rho := by
-  rw [zetaUpperHyperbolicLogDefectSummand, if_pos hupper]
+  rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper]
   apply mul_pos
   · exact_mod_cast analyticZetaZeroMultiplicity_positive rho
   · have hrpos := upperHalfPlanePseudoHyperbolicDistance_pos_of_ne
@@ -220,10 +220,10 @@ theorem aemeasurable_ofReal_zetaUpperHyperbolicHeatSummand
         (volume.restrict (Ioi (0 : ℝ))) :=
       (continuousOn_upperHalfPlaneHyperbolicHeatIntegrand_Ioi z
         (zetaSpectralCoordinate rho.1)).aemeasurable measurableSet_Ioi
-    simpa only [zetaUpperHyperbolicHeatSummand, if_pos hupper] using
+    simpa only [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper] using
       (hkernel.const_mul
         (analyticZetaZeroMultiplicity rho : ℝ)).ennreal_ofReal
-  · simp only [zetaUpperHyperbolicHeatSummand, if_neg hupper]
+  · simp only [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
     exact aemeasurable_const
 
 /-- Integrating one genuine spectral heat residue gives exactly its
@@ -255,13 +255,13 @@ theorem lintegral_ofReal_zetaUpperHyperbolicHeatSummand
           upperHalfPlaneHyperbolicHeatIntegrand z
             (zetaSpectralCoordinate rho.1) tau := by
       funext tau
-      rw [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+      rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     have hdefect : zetaUpperHyperbolicLogDefectSummand z rho =
         (analyticZetaZeroMultiplicity rho : ℝ) *
           (-2 * Real.log
             (upperHalfPlanePseudoHyperbolicDistance z
               (zetaSpectralCoordinate rho.1))) := by
-      rw [zetaUpperHyperbolicLogDefectSummand, if_pos hupper]
+      rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper]
     have hintegral :
         (∫⁻ tau in Ioi (0 : ℝ), ENNReal.ofReal
           (zetaUpperHyperbolicHeatSummand z tau rho)) =
@@ -302,9 +302,9 @@ theorem lintegral_ofReal_zetaUpperHyperbolicHeatSummand
   · have hheat : (fun tau : ℝ ↦
         zetaUpperHyperbolicHeatSummand z tau rho) = fun _ ↦ 0 := by
       funext tau
-      rw [zetaUpperHyperbolicHeatSummand, if_neg hupper]
+      rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
     have hdefect : zetaUpperHyperbolicLogDefectSummand z rho = 0 := by
-      rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper]
+      rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper]
     have hintegral :
         (∫⁻ tau in Ioi (0 : ℝ), ENNReal.ofReal
           (zetaUpperHyperbolicHeatSummand z tau rho)) =
@@ -386,7 +386,8 @@ theorem riemannXiUpperHyperbolicLogDefectMass_eq_zero_iff_riemannHypothesis
     have hle : ENNReal.ofReal
           (zetaUpperHyperbolicLogDefectSummand z rho) ≤
         riemannXiUpperHyperbolicLogDefectMass z :=
-      ENNReal.le_tsum rho
+      ENNReal.le_tsum (f := fun r : NontrivialZetaZero ↦
+        ENNReal.ofReal (zetaUpperHyperbolicLogDefectSummand z r)) rho
     rw [hzero] at hle
     exact (not_lt_of_ge hle) hterm
   · intro hRH
@@ -398,7 +399,7 @@ theorem riemannXiUpperHyperbolicLogDefectMass_eq_zero_iff_riemannHypothesis
         rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
     have hnupper : ¬0 < (zetaSpectralCoordinate rho.1).im := by
       linarith
-    rw [zetaUpperHyperbolicLogDefectSummand, if_neg hnupper,
+    rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hnupper,
       ENNReal.ofReal_zero]
 
 /-- Equivalently, the complete extended proper-time heat action vanishes

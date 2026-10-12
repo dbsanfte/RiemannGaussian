@@ -91,7 +91,7 @@ theorem norm_quotient_le (Q : Finset ℕ) (h16 : ∀ p ∈ Q, 16 ≤ p)
   rw [norm_prod]
   calc
     _ ≤ ∏ p ∈ Q, (1+4*‖zetaPrimeFeature s p‖) :=
-      Finset.prod_le_prod (fun _ _ => norm_nonneg _) (fun p hp =>
+      Finset.prod_le_prod₀ (fun _ _ => norm_nonneg _) (fun p hp =>
         norm_local_quotient_le
           (ZetaSquarefreeSignedTail.norm_primeFeature_le_quarter (by linarith) (h16 p hp))
           (norm_character_phase xi p).le)

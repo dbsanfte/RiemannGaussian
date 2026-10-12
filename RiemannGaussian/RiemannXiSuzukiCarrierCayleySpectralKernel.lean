@@ -180,27 +180,27 @@ theorem suzukiXiCarrierCayleyOffAxisCoefficientKernel_eq_spectralKernel
   by_cases hrhoUpper : 0 < (zetaSpectralCoordinate rho.1).im
   · by_cases hsigmaUpper : 0 < (zetaSpectralCoordinate sigma.1).im
     · simp only [suzukiXiCarrierCayleyOffAxisCoefficientKernel,
-        suzukiXiCarrierCayleyOffAxisSpectralKernel, if_pos hrhoUpper,
-        if_pos hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisSpectralKernel, ite_eq_left hrhoUpper,
+        ite_eq_left hsigmaUpper]
       unfold suzukiXiCarrierCayleyNodeParameter
       exact suzukiXiCarrierCayleyBackwardKernel_eq_spectral
         (zetaSpectralCoordinate_add_I_ne_zero rho)
         (zetaSpectralCoordinate_add_I_ne_zero sigma)
         hrhoUpper hsigmaUpper
     · simp only [suzukiXiCarrierCayleyOffAxisCoefficientKernel,
-        suzukiXiCarrierCayleyOffAxisSpectralKernel, if_pos hrhoUpper,
-        if_neg hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisSpectralKernel, ite_eq_left hrhoUpper,
+        ite_eq_right hsigmaUpper]
   · have hrhoLower : (zetaSpectralCoordinate rho.1).im < 0 :=
       lt_of_le_of_ne (not_lt.mp hrhoUpper) hrho
     by_cases hsigmaUpper : 0 < (zetaSpectralCoordinate sigma.1).im
     · simp only [suzukiXiCarrierCayleyOffAxisCoefficientKernel,
-        suzukiXiCarrierCayleyOffAxisSpectralKernel, if_neg hrhoUpper,
-        if_pos hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisSpectralKernel, ite_eq_right hrhoUpper,
+        ite_eq_left hsigmaUpper]
     · have hsigmaLower : (zetaSpectralCoordinate sigma.1).im < 0 :=
         lt_of_le_of_ne (not_lt.mp hsigmaUpper) hsigma
       simp only [suzukiXiCarrierCayleyOffAxisCoefficientKernel,
-        suzukiXiCarrierCayleyOffAxisSpectralKernel, if_neg hrhoUpper,
-        if_neg hsigmaUpper]
+        suzukiXiCarrierCayleyOffAxisSpectralKernel, ite_eq_right hrhoUpper,
+        ite_eq_right hsigmaUpper]
       unfold suzukiXiCarrierCayleyNodeParameter
       exact suzukiXiCarrierCayleyForwardKernel_eq_spectral
         (zetaSpectralCoordinate_sub_I_ne_zero rho)

@@ -573,7 +573,7 @@ theorem exists_separated_mean_bound {h : ℝ} (hh : 0 < h) :
         apply Finset.sum_le_sum
         intro i _
         by_cases hd : d ≤ R i
-        · simp only [if_pos hd,abs_mul]
+        · simp only [ite_eq_left hd,abs_mul]
           simpa only [mul_one] using mul_le_mul_of_nonneg_left
             (abs_real_moebius_le_one d) (abs_nonneg (a i))
         · simp [hd]
@@ -677,11 +677,11 @@ theorem cutoffSlope_eq_prefix (R : ℕ) (D : ℝ)
   · have hdx : (d : ℝ) < Real.exp D := (by exact_mod_cast hdR : (d : ℝ) ≤ R).trans_lt hlo
     have hlog : Real.log d < D := by
       simpa only [Real.log_exp] using Real.log_lt_log hd0 hdx
-    rw [if_pos hdR,if_pos (sub_pos.mpr hlog),mul_one]
+    rw [ite_eq_left hdR,ite_eq_left (sub_pos.mpr hlog),mul_one]
   · have hdx : Real.exp D ≤ d := hhi.trans (by exact_mod_cast (by omega : R+1 ≤ d))
     have hlog : D ≤ Real.log d := by
       simpa only [Real.log_exp] using Real.log_le_log (Real.exp_pos D) hdx
-    rw [if_neg hdR,if_neg (not_lt.mpr (sub_nonpos.mpr hlog)),mul_zero]
+    rw [ite_eq_right hdR,ite_eq_right (not_lt.mpr (sub_nonpos.mpr hlog)),mul_zero]
 
 /-- The joint signed estimate applies directly to the original retained
 cutoff slopes, with strict endpoints and arbitrary population masks. It

@@ -101,7 +101,7 @@ theorem abs_pairedEtaMoebiusArithmeticCellResidual_sub_quotientLeading_le
               (abs_nonneg _) (by norm_num)
           _ ≤ _ := by simpa only [one_mul] using div_le_div_of_nonneg_right hnM (by positivity : 0 ≤ 2 * (L : ℝ) ^ 2)
       _ = _ := by simp; ring
-  rw [pairedEtaMoebiusArithmeticCellResidual_sub_quotientLeading_eq, if_neg (by omega : L ≠ 1), zero_add]
+  rw [pairedEtaMoebiusArithmeticCellResidual_sub_quotientLeading_eq, ite_eq_right (by omega : L ≠ 1), zero_add]
   apply (abs_sub _ _).trans ((add_le_add hend hsum).trans _)
   calc
     _ = ((M : ℝ) + M ^ 2) / (2 * (L : ℝ) ^ 2) := by ring

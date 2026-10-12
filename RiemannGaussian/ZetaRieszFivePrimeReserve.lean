@@ -52,7 +52,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 5)
     have hn1 : n ≠ 1 := by intro hn; simp [hn] at hc
     have hscale : 0 ≤ Real.log n/L := div_nonneg (Real.log_natCast_nonneg n) hL.le
     change (if Squarefree n then (Real.log n/L)*max 0 F else 0) = _
-    rw [if_pos hs]
+    rw [ite_eq_left hs]
     by_cases hgate : 2*Real.log P+Real.log n ≤ 3*L
     · have hnonpos := ZetaRieszFivePrimeFloor.coefficient_five_nonpos hc hL hLlo hLhi (Or.inl hgate)
       have hF : F ≤ 0 := by dsimp [F]; linarith
@@ -60,7 +60,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 5)
     have hP : P ∈ n.primeFactors := by
       have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
       dsimp [P]
-      rw [largestPrime,dif_pos hne]
+      rw [largestPrime,dite_eq_left hne]
       exact Finset.max'_mem _ _
     let a := ∏ p ∈ n.primeFactors.erase P, p
     have hpa (p : ℕ) (hp : p ∈ n.primeFactors.erase P) : p.Prime :=
@@ -91,7 +91,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 5)
           (by linarith : D-Real.log P ≤ 0),sub_zero]
     have hcR : (SquarefreeVaughanLogSource.coefficient L n).re =
         (Real.log n/L)*VaughanLogAverage.riesz D a := by
-      simp only [SquarefreeVaughanLogSource.coefficient,if_pos (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),
+      simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),
         Complex.ofReal_re]
       rw [show -Real.log n*VaughanLogAverage.riesz L n/L =
         (Real.log n/L)*(-VaughanLogAverage.riesz L n) by ring,hR]
@@ -118,7 +118,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 5)
             Real.log p ≤ Real.log (largestPrime a) := by
           have hne : a.primeFactors.Nonempty := ⟨p,hp'⟩
           have hle : p ≤ largestPrime a := by
-            rw [largestPrime,dif_pos hne]
+            rw [largestPrime,dite_eq_left hne]
             exact Finset.le_max' _ _ hp'
           exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp').pos)
             (by exact_mod_cast hle)

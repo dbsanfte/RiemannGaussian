@@ -83,6 +83,16 @@ Only `propext`, `Classical.choice` and `Quot.sound` are permitted by the
 
 ## Optional, cached verification
 
+The ordinary project now uses Lean 4.34.1. The published complete certificate
+checkpoint remains verified with Lean 4.33.1; a new complete optional audit
+under 4.34.1 has not been run. Its frozen sources, dependency pins and exact
+recorded input fingerprint remain checked through
+`scripts/numerical_certificate_checkpoint.py` and the small
+`numerical-certificate-explorer/lean433-inputs.json.gz` compatibility archive.
+The explorer labels this historical compiler scope and displays its frozen
+sources. A fresh `--refresh` requires the current fingerprint and complete
+optional audit; the archive cannot satisfy that requirement.
+
 Ordinary `lake build --wfail`, push/PR CI and the pre-commit gate build
 `RiemannGaussian`. They include the reusable analytic work, while the
 generated certificate data and every module importing it belong to the

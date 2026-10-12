@@ -131,15 +131,15 @@ private theorem sum_coprime_product_prefix (P M : ℕ) (f : ℕ → ℕ → ℂ)
           (a.1.Coprime P ∧ a.2.Coprime P) ↔ n.Coprime P := by
         rw [← (Nat.mem_divisorsAntidiagonal.mp ha).1, Nat.coprime_mul_iff_left]
       by_cases hn : n.Coprime P
-      · rw [if_pos hn]
+      · rw [ite_eq_left hn]
         apply Finset.sum_congr rfl
         intro a ha
-        rw [if_pos ((he a ha).mpr hn)]
-      · rw [if_neg hn]
+        rw [ite_eq_left ((he a ha).mpr hn)]
+      · rw [ite_eq_right hn]
         symm
         apply Finset.sum_eq_zero
         intro a ha
-        exact if_neg (fun h ↦ hn ((he a ha).mp h))
+        exact ite_eq_right (fun h ↦ hn ((he a ha).mp h))
     _ = ∑ n ∈ Finset.Icc 1 M, ∑ a ∈ n.divisorsAntidiagonal,
         if a.2.Coprime P ∧ a.1.Coprime P then f a.2 a.1 else 0 := by
       apply Finset.sum_congr rfl
@@ -155,13 +155,13 @@ private theorem sum_coprime_product_prefix (P M : ℕ) (f : ℕ → ℕ → ℂ)
       apply Finset.sum_congr rfl
       intro d _
       by_cases hd : d.Coprime P
-      · rw [if_pos hd]
+      · rw [ite_eq_left hd]
         apply Finset.sum_congr rfl
         intro q _
         by_cases hq : q.Coprime P
-        · exact (if_pos ⟨hq, hd⟩).trans (if_pos hq).symm
-        · exact (if_neg (fun h ↦ hq h.1)).trans (if_neg hq).symm
-      · simp only [hd, and_false, if_false, Finset.sum_const_zero]
+        · exact (ite_eq_left ⟨hq, hd⟩).trans (ite_eq_left hq).symm
+        · exact (ite_eq_right (fun h ↦ hq h.1)).trans (ite_eq_right hq).symm
+      · simp only [hd, and_false, ite_false, Finset.sum_const_zero]
 
 private theorem coprime_low_eq_product_prefix
     (rho : NontrivialZetaZero) (P : ℕ) {D M : ℕ} (hDM : D ≤ M) :
@@ -190,7 +190,7 @@ private theorem coprime_low_eq_product_prefix
       apply Finset.sum_congr rfl
       intro d _
       by_cases hd : d ≤ D
-      · simp only [if_pos hd, Finset.mul_sum, Nat.cast_mul, Complex.natCast_mul_natCast_cpow]
+      · simp only [ite_eq_left hd, Finset.mul_sum, Nat.cast_mul, Complex.natCast_mul_natCast_cpow]
         apply Finset.sum_congr rfl
         intro q _
         ring

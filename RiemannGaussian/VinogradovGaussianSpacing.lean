@@ -158,7 +158,7 @@ theorem resonanceEnvelope_le_selected_widths {k : ℕ} {ι : Type*} [Fintype ι]
           else ((S j).card : ℝ) := by
   classical
   apply (resonanceEnvelope_le_coordinate_sums s ha gamma v S hsupport).trans
-  apply Finset.prod_le_prod
+  apply Finset.prod_le_prod₀
   · intro j _
     exact Finset.sum_nonneg (fun _ _ => (tailEnvelope_pos (ha j) _).le)
   · intro j _

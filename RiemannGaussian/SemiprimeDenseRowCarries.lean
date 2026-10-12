@@ -236,7 +236,7 @@ theorem leadingCarry_bound {N m j t : ℕ} (hm : 0<m) (ht : 0<t)
   have hprod : representative N m j 1*t<t*m := by
     simpa only [Nat.mul_comm] using Nat.mul_lt_mul_of_pos_right hu ht
   have hd : representative N m j 1*t/m<t := (Nat.div_lt_iff_lt_mul hm).mpr hprod
-  cases negative <;> simp only [leadingCarry,Bool.false_eq_true,if_false,if_true]
+  cases negative <;> simp only [leadingCarry,Bool.false_eq_true,ite_false,ite_true]
   · omega
   · omega
 

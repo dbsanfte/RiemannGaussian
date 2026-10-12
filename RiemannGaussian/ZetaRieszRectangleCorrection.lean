@@ -166,10 +166,10 @@ theorem rectangle_row_partition (u y : ℝ) (N q k : ℕ) {n : ℕ}
       y k (N + 1 - k) q (n / q) = rectangleRowRest u y N n q k +
         if q ∈ rectangleIncidences u N n then rectangleRow y N n q k else 0 := by
   by_cases hq : q ∈ rectangleIncidences u N n
-  · rw [rectangleRowRest, if_pos hq, if_pos hq,
+  · rw [rectangleRowRest, ite_eq_left hq, ite_eq_left hq,
       second_composite_convolution hn hc (Finset.mem_filter.mp hq).1]
     exact (Finset.sum_sdiff (Finset.filter_subset _ _)).symm
-  · simp only [rectangleRowRest, if_neg hq, add_zero]
+  · simp only [rectangleRowRest, ite_eq_right hq, add_zero]
 
 /-- What the completion correction still contains after harvesting
 the rectangle: all completion/off-mask/allocation differences, all other

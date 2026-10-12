@@ -8,7 +8,7 @@
     ]
   },
   "drawingIsProof": false,
-  "formulaExportSha256": "c176f9ccaa02f0bb06ab9f1094b837e50f01b530d596fddedbfed5a4176c69c0",
+  "formulaExportSha256": "5844ddb70cc4603e9b6eec04c8567387bfbf5d1c52c985f4d8e76d631ae67c80",
   "formulaProofs": [
     {
       "axioms": [
@@ -157,24 +157,24 @@
   ],
   "generator": "scripts/build_zero_free_plot.py",
   "inputs": {
-    "docs/proof-status.json": "2ede6dd435bfc32e08839e514fe28efc3c82ee4da22bcca9e726b7c4d3715675",
+    "docs/proof-status.json": "880281106a760d6a86249c235f19d4c59469ff28aeac72fe8b2962967af18ddc",
     "docs/zero-free-literature-frontier.md": "6b9eb1ab9ba2cca67850ac8f541020fecc98640bcc08e0a9a38c55438ca9acd0",
     "docs/zero-free-regions/metadata.json": "4d2332c61060c8e85b0d58213001b98448bc08b8bb2532d589a1d81198325f0d",
     "scripts/ExportZeroFreePlot.lean": "bf4c47386c829827ad223399e313c7dfeb733137d48025ea3658d67c4e7c8163",
     "scripts/build_zero_free_plot.py": "c8918cf142c0c7a63bd420bd8dfb44d7af837b0ab16bc3c63d2b9ba3945dade6",
     "scripts/requirements-plots.txt": "aac8d3d47be837d322ee3686a0e79b3f62ea6dc9d58ca818dc4087bfdeeb2b45"
   },
-  "leanVersion": "4.33.1",
+  "leanVersion": "4.34.1",
   "matplotlibVersion": "3.10.6",
   "minimumHeight": 3,
   "numpyVersion": "2.2.6",
-  "proofGraphNodes": 25824,
+  "proofGraphNodes": 25905,
   "schemaVersion": 1,
   "scope": "Selected explicit benchmark families, not an exhaustive world-record comparison. External analytic proofs are not imported into the Lean union.",
   "sourceAuditDate": "2026-09-13",
   "svgSha256": "7290d4604cdc2a543065ea073b961d02b44559a868f448c84be18ba2c513b94d",
   "theoremExplorerAudit": "docs/theorem-explorer/audit.json",
-  "theoremExplorerAuditSha256": "70789a85b5c958926fa4f6124981a8c7936c3d4c74f85a12a77896946e320721",
+  "theoremExplorerAuditSha256": "ad22c3e64e3f830e526dda554c4bb84e13b22da442dcea0286c2d04a57b4b755",
   "theorems": {
     "comparisonTheorem": {
       "axioms": [

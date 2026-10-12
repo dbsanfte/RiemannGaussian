@@ -104,7 +104,7 @@ theorem logDeriv_center_eq {f g : ℂ → ℂ} {R : ℝ} (hR : 0 < R)
       (fun a ha ↦ hfactor_ne ha) (fun a ha ↦ hfactor_diff ha)
   have hlog : logDeriv g 0 = logDeriv P 0 + logDeriv f 0 := by
     rw [(logDeriv_congr_nhds hfactorEq).self_of_nhds]
-    exact logDeriv_mul (f := P) (g := f) 0 hP0 hf0 hP.differentiableAt
+    exact logDeriv_fun_mul (f := P) (g := f) 0 hP0 hf0 hP.differentiableAt
       (hf 0 (mem_closedBall_self hR.le)).differentiableAt
   have he : (∑ᶠ a, d a • logDeriv (Complex.canonicalFactor R a) 0) =
       -(∑ᶠ a, d a • kernel R a) := by

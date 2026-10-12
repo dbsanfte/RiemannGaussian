@@ -214,7 +214,7 @@ theorem literature_packet_budget {d m P M : ℕ} (hm : 2 ≤ m) (hM : 0 < M)
     _ ≤ M ^ (k ^ 3) := Nat.pow_le_pow_right hM hexp
     _ < _ := by
       rw [← hcard, ← Finset.prod_const]
-      exact Finset.prod_lt_prod_of_nonempty (fun _ _ => hM) hπ hne
+      exact Finset.prod_lt_prod_of_nonempty₀ (fun _ _ => hM) hπ hne
 
 /-- Real prime scales retain the packet budget even at the exact root
 endpoint. Rounding the scale down before taking its power is unnecessary. -/
@@ -232,7 +232,7 @@ theorem literature_packet_budget_real {d m P : ℕ} {M : ℝ} (hm : 2 ≤ m) (hM
       _ ≤ M ^ ((d + m) ^ 3) := pow_le_pow_right₀ hM (packet_exponent_le_cube hm)
       _ < _ := by
         rw [← hcard, ← Finset.prod_const]
-        exact Finset.prod_lt_prod_of_nonempty (fun _ _ => by linarith) hπ hne
+        exact Finset.prod_lt_prod_of_nonempty₀ (fun _ _ => by linarith) hπ hne
   rw [← Nat.cast_prod] at hr
   exact_mod_cast hr
 

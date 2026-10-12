@@ -147,8 +147,8 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
     have hhalf : (zetaSpectralCoordinate rho.1).im ≤ 1 / 2 := by
       have habs := NontrivialZetaZero.abs_spectralCoordinate_im_lt_half rho
       exact (le_abs_self _).trans habs.le
-    rw [zetaUpperHyperbolicLogDefectSummand, if_pos hupper,
-      zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper]
+    rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper,
+      zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper]
     calc
       (analyticZetaZeroMultiplicity rho : ℝ) *
           (-2 * Real.log
@@ -170,8 +170,8 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
               Complex.normSq
                 (z - starRingEnd ℂ
                   (zetaSpectralCoordinate rho.1)))) := by ring
-  · rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper,
-      zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper, mul_zero]
+  · rw [zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper,
+      zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hupper, mul_zero]
 
 /-- The complete logarithmic defect is bounded by a finite upper-divisor gap
 coefficient times the complete Poisson defect. -/

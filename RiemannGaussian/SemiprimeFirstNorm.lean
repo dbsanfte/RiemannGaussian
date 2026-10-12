@@ -41,23 +41,23 @@ theorem indexedPoint_signedIndex {G : Type*} [Group G] (z : G)
   have hr1 : (2*(k-1)+1)%2=1 := by omega
   cases negative with
   | false =>
-    simp only [signedIndex,Bool.false_eq_true,if_false,Nat.add_zero,indexedPoint]
+    simp only [signedIndex,Bool.false_eq_true,ite_false,Nat.add_zero,indexedPoint]
     rw [h0,hr0]
     rfl
   | true =>
-    simp only [signedIndex,if_true,indexedPoint]
+    simp only [signedIndex,ite_true,indexedPoint]
     rw [h1,hr1]
     rfl
 
 /-- Both orientations fit inside the public cache. -/
 theorem signedIndex_lt {k B : ℕ} (hk : 0<k) (hkB : k≤B) (negative : Bool) :
     signedIndex k negative<2*B := by
-  cases negative <;> simp only [signedIndex,Bool.false_eq_true,if_false,if_true] <;> omega
+  cases negative <;> simp only [signedIndex,Bool.false_eq_true,ite_false,ite_true] <;> omega
 
 /-- Earlier public indices have no larger multiplier. -/
 theorem indexed_multiplier_le {i k : ℕ} (negative : Bool)
     (hk : 0<k) (hi : i≤signedIndex k negative) : i/2+1≤k := by
-  cases negative <;> simp only [signedIndex,Bool.false_eq_true,if_false,if_true] at hi <;> omega
+  cases negative <;> simp only [signedIndex,Bool.false_eq_true,ite_false,ite_true] at hi <;> omega
 
 /-- An offset block computed from one shared scalar baby polynomial.
 The definition contains no derivative or jet construction. -/
@@ -180,8 +180,8 @@ theorem scanFrom_exists_le {N : ℕ} (value : ℕ → ZMod N) {start fuel w : �
     by_cases hg : N.gcd (value start).val=1
     · have hwne : w≠start := by intro he; subst w; exact hw hg
       obtain ⟨i,d,hs,hi⟩ := ih (start:=start+1) (by omega) (by omega)
-      exact ⟨i,d,by simp only [scanFrom,hg,if_true,hs],hi⟩
-    · exact ⟨start,N.gcd (value start).val,by simp only [scanFrom,hg,if_false],hwlo⟩
+      exact ⟨i,d,by simp only [scanFrom,hg,ite_true,hs],hi⟩
+    · exact ⟨start,N.gcd (value start).val,by simp only [scanFrom,hg,ite_false],hwlo⟩
 
 /-- The GCD trace counts at most one query per available norm. -/
 theorem scanFrom_gcd_bound {N : ℕ} (value : ℕ → ZMod N) (start fuel : ℕ) :

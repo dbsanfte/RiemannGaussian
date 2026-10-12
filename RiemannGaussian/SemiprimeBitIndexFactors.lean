@@ -58,7 +58,7 @@ theorem modularDifference_short {N s i : ℕ} (hs : s<N) (hi : i<N) :
     have hlt : s-i<N := by omega
     simp [h,he,Nat.mod_eq_of_lt hlt]
   · have hlt : s+N-i<N := by omega
-    rw [if_neg h,Nat.mod_eq_of_lt hlt]
+    rw [ite_eq_right h,Nat.mod_eq_of_lt hlt]
 
 /-- Canonical decoded and original short index words give the exact
 original modular difference, including zero and the wrapped orientation. -/
@@ -67,25 +67,25 @@ theorem differenceBits_exact {modulus decoded index : List Bool}
     bitValue (differenceBits modulus decoded index).bits=
       modularDifference (bitValue modulus) (bitValue decoded) (bitValue index) := by
   have hcompare := subBits_borrow_iff decoded index false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hcompare
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hcompare
   rw [modularDifference_short hs hi]
   by_cases hb : (subBits decoded index false).borrow=true
   · have hlt := hcompare.mp hb
     have hsum := addBits_correct decoded modulus false
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hsum
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hsum
     have hbound : bitValue index≤bitValue (addBits decoded modulus false).bits := by
       rw [hsum]
       omega
     have hc := subBits_difference ((subBits_borrow_false _ _).mpr hbound)
     rw [hsum] at hc
-    simp only [differenceBits,if_pos hb,if_neg (by omega : ¬bitValue index≤bitValue decoded),hc]
+    simp only [differenceBits,ite_eq_left hb,ite_eq_right (by omega : ¬bitValue index≤bitValue decoded),hc]
   · have hfalse : (subBits decoded index false).borrow=false := by
       cases he : (subBits decoded index false).borrow with
       | false => rfl
       | true => exact False.elim (hb he)
     have hge := (subBits_borrow_false decoded index).mp hfalse
     have hd := subBits_difference hfalse
-    simp only [differenceBits,if_neg hb,if_pos hge,hd]
+    simp only [differenceBits,ite_eq_right hb,ite_eq_left hge,hd]
 
 /-- All created difference/wrap cells appear in the complete primitive clock. -/
 theorem differenceBits_writes_le_clock (modulus decoded index : List Bool) :

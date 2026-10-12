@@ -40,7 +40,7 @@ theorem pairHyperbolicCost_superadditive
   exact mul_nonneg (div_nonneg hm (by positivity))
     (div_nonneg
       (mul_nonneg (mul_nonneg (sub_nonneg.mpr hr1) (sub_nonneg.mpr hs1))
-        (sub_nonneg.mpr (mul_le_one₀ hr1 hs.le hs1)))
+        (sub_nonneg.mpr ((fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) hr1 hs.le hs1)))
       (mul_nonneg hr.le hs.le))
 
 /-- For a positive weight and two genuine interior radii, the collective
@@ -60,7 +60,7 @@ theorem pairHyperbolicCost_strictlySuperadditive
   apply div_pos
   · exact mul_pos (mul_pos (sub_pos.mpr hr1) (sub_pos.mpr hs1))
       (sub_pos.mpr
-        (mul_lt_one_of_nonneg_of_lt_one_left hr.le hr1 hs1.le))
+        ((fun {a b : ℝ} (ha₀ : 0 ≤ a) (ha : a < 1) (hb : b ≤ 1) => (mul_le_of_le_one_right ha₀ hb).trans_lt ha) hr.le hr1 hs1.le))
   · exact mul_pos hr hs
 
 /-! ## Arbitrary finite collections -/
@@ -75,7 +75,7 @@ theorem positiveMultiset_prod_le_one
   | empty => simp
   | cons r s ih =>
       rw [Multiset.prod_cons]
-      exact mul_le_one₀ (hone r (by simp))
+      exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (hone r (by simp))
         (Multiset.prod_pos fun u hu => hpos u (by simp [hu])).le
         (ih
           (fun u hu => hpos u (by simp [hu]))
@@ -92,7 +92,7 @@ theorem positiveMultiset_prod_lt_one_of_nonempty
   | empty => exact False.elim (hne rfl)
   | cons r s _ =>
       rw [Multiset.prod_cons]
-      exact mul_lt_one_of_nonneg_of_lt_one_left
+      exact (fun {a b : ℝ} (ha₀ : 0 ≤ a) (ha : a < 1) (hb : b ≤ 1) => (mul_le_of_le_one_right ha₀ hb).trans_lt ha)
         (hpos r (by simp)).le (hone r (by simp))
         (positiveMultiset_prod_le_one
           (fun u hu => hpos u (by simp [hu]))

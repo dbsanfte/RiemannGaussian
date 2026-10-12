@@ -135,11 +135,11 @@ theorem eventually_semiprimeBand_sum_eq_full_pairs (A : ℕ → Finset ℕ)
   apply Finset.sum_congr rfl
   intro p _hp
   by_cases hp : N ^ 2 < p
-  · simp only [if_pos hp]
+  · simp only [ite_eq_left hp]
   · have hsmall : a * p ≤ N ^ 4 := by
       have h := Nat.mul_le_mul (hA N a ha).2 (le_of_not_gt hp)
       simpa only [← pow_add, show (2 : ℕ) + 2 = 4 by rfl] using h
-    simp only [if_neg hp, if_neg (hN (a * p) hsmall)]
+    simp only [ite_eq_right hp, ite_eq_right (hN (a * p) hsmall)]
 
 /-- The ACTUAL, uniquely counted, original-band semiprime class
 with a prime factor at most N squared vanishes at every exposed right-half

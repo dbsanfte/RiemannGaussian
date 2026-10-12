@@ -95,13 +95,13 @@ theorem nearDebit_overlap_eq (K : Finset ℕ) (g : ℕ → ℕ)
   intro c _
   rw [hb]
   by_cases hn : |blockTotal K g t c| ≤ τ
-  · simp only [if_pos hn]
+  · simp only [ite_eq_left hn]
     by_cases ht : blockTotal K g t c < 0
-    · simp only [if_pos ht,positivePart_eq]
+    · simp only [ite_eq_left ht,positivePart_eq]
       ring
-    · simp only [if_neg ht,positivePart_eq,abs_neg]
+    · simp only [ite_eq_right ht,positivePart_eq,abs_neg]
       ring
-  · simp only [if_neg hn,zero_add,sub_zero]
+  · simp only [ite_eq_right hn,zero_add,sub_zero]
 
 /-- Combining corrections never increases their near-face charge beyond
 the separately charged sum. Opposite increments can strictly reduce it. -/

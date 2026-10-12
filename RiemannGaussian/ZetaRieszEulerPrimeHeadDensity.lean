@@ -26,7 +26,7 @@ theorem head_product_le_exp_mass (S : Finset ℕ) (sigma : ℝ) :
       Real.exp (2 * ∑ p ∈ S, Real.exp (-sigma * Real.log p)) := by
   calc
     _ ≤ ∏ p ∈ S, Real.exp (2 * Real.exp (-sigma * Real.log p)) := by
-      apply Finset.prod_le_prod (fun _ _ => by positivity)
+      apply Finset.prod_le_prod₀ (fun _ _ => by positivity)
       intro p _hp
       have h := Real.add_one_le_exp (2 * Real.exp (-sigma * Real.log p))
       linarith

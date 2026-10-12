@@ -27,7 +27,7 @@ theorem sum_odd_divisorsAntidiagonal_moebius (n : ℕ) :
         apply Finset.sum_congr rfl
         intro p hp
         have hprod := (Nat.mem_divisorsAntidiagonal.mp hp).1
-        exact if_pos (Nat.odd_mul.mp (hprod ▸ hn))
+        exact ite_eq_left (Nat.odd_mul.mp (hprod ▸ hn))
       _ = _ := by
         rw [Nat.sum_divisorsAntidiagonal' (fun _ k ↦ (μ k : ℂ))]
         simpa only [ArithmeticFunction.coe_zeta_mul_apply, ArithmeticFunction.intCoe_apply,
@@ -35,10 +35,10 @@ theorem sum_odd_divisorsAntidiagonal_moebius (n : ℕ) :
             congrArg (fun f : ArithmeticFunction ℂ ↦ f n)
               (ArithmeticFunction.coe_zeta_mul_coe_moebius (R := ℂ))
   · have hn1 : n ≠ 1 := by intro h; apply hn; simpa only [h] using (show Odd (1 : ℕ) by decide)
-    rw [if_neg hn1]
+    rw [ite_eq_right hn1]
     apply Finset.sum_eq_zero
     intro p hp
-    apply if_neg
+    apply ite_eq_right
     intro hpodd
     apply hn
     rw [← (Nat.mem_divisorsAntidiagonal.mp hp).1]
@@ -70,7 +70,7 @@ theorem sum_odd_divided_moebius_inverse (s : ℂ) (f : ℕ → ℂ) (hf : f 0 = 
     apply Finset.sum_congr rfl
     intro d hd
     by_cases hdo : Odd d
-    · rw [if_pos hdo, if_pos hdo, Finset.mul_sum]
+    · rw [ite_eq_left hdo, ite_eq_left hdo, Finset.mul_sum]
       apply Finset.sum_congr rfl
       intro e he
       rw [Nat.div_div_eq_div_mul]

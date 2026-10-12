@@ -75,8 +75,8 @@ theorem sharp_reflection {n R : ℕ} (hn : Squarefree n) (hn1 : n ≠ 1)
         have ht : R*d < (n/d)*d := by rw [heq]; omega
         exact (Nat.mul_lt_mul_right hd0).mp ht
     by_cases h : R < n/d
-    · simp only [if_pos h,if_pos (hi.mp h),hm]
-    · simp only [if_neg h,if_neg (fun h' => h (hi.mpr h')),mul_zero]
+    · simp only [ite_eq_left h,ite_eq_left (hi.mp h),hm]
+    · simp only [ite_eq_right h,ite_eq_right (fun h' => h (hi.mpr h')),mul_zero]
   rw [he] at hs
   linarith only [hs]
 

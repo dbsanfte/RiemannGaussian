@@ -66,7 +66,7 @@ theorem autocorr_le_of_support (v : ℝ → ℝ) {M : ℝ} (h0 : ∀ u, 0 ≤ v 
     intro u
     by_cases hu : u ∈ S
     · rw [indicator_of_mem hu, Pi.one_apply]
-      exact mul_le_one₀ (h1 u) (h0 _) (h1 _)
+      exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (h1 u) (h0 _) (h1 _)
     · rw [indicator_of_notMem hu]
       simp only [hS, mem_inter_iff, mem_Icc, not_and_or, not_le] at hu
       rcases hu with (hu | hu) | (hu | hu)
@@ -438,8 +438,8 @@ theorem psi_measurable : Measurable (psi ϱ L w) := by
     funext r
     unfold psi
     by_cases hr : r = 0
-    · rw [if_pos hr, Set.piecewise_eq_of_mem _ _ _ (by simp [hr])]
-    · rw [if_neg hr, Set.piecewise_eq_of_notMem _ _ _ (by simp [hr])]
+    · rw [ite_eq_left hr, Set.piecewise_eq_of_mem _ _ _ (by simp [hr])]
+    · rw [ite_eq_right hr, Set.piecewise_eq_of_notMem _ _ _ (by simp [hr])]
   rw [this]
   exact Measurable.piecewise (measurableSet_singleton 0) measurable_const h1
 

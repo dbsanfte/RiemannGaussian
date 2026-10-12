@@ -243,7 +243,7 @@ theorem density_bounds {lo hi v z : ℝ} (hhi : 1/100 ≤ hi)
     exact hprod
   have hden0 : 0 < hi*v*z := by linarith
   by_cases hA : admissible lo hi v z
-  · simp only [density,Matrix.cons_val_zero,Matrix.cons_val_one,hA,if_true]
+  · simp only [density,Matrix.cons_val_zero,Matrix.cons_val_one,hA,ite_true]
     change 0 ≤ (∫ r in Set.Ioc a b, fibre lo hi v z r)/(hi*v*z) ∧ _
     by_cases hab : a ≤ b
     · have hc := continuousOn_fibre (lo := lo) (hi := hi) (eps := (1/100 : ℝ))
@@ -290,7 +290,7 @@ theorem sum_fibres_le_density {lo hi eps v z : ℝ}
     rw [Set.uIcc_of_le hii,Set.uIcc_of_le hbase]
     exact Set.Icc_subset_Icc (hleft.trans h0i) (hin.trans hright)
   rw [intervalIntegral.sum_integral_adjacent_intervals hs]
-  simp only [density,Matrix.cons_val_zero,Matrix.cons_val_one,hA,if_true]
+  simp only [density,Matrix.cons_val_zero,Matrix.cons_val_one,hA,ite_true]
   rw [← intervalIntegral.integral_of_le hbase]
   apply div_le_div_of_nonneg_right _ (mul_nonneg (mul_nonneg hhi.le hv.1.le) hz.le)
   apply intervalIntegral.integral_mono_interval hleft hab hright _ hint
@@ -456,7 +456,7 @@ theorem fibreExpression_le {lo hi : ℚ} {B : Box} (hB : valid lo hi B)
     exact fibre_nonneg (by norm_num) hv1 hgeom ⟨ha'.trans hri.1,hri.2.trans hb'⟩
   unfold fibreExpression
   by_cases hd : 2*pairEndpoint lo B i < (B 0).1
-  · rw [if_pos hd]
+  · rw [ite_eq_left hd]
     have hd₁ : 1-v-z-(point B i : ℝ) ≤ (pairEndpoint lo B i : ℝ) := by
       simp only [pairEndpoint,Rat.cast_max,Rat.cast_sub,Rat.cast_div,Rat.cast_ofNat,Rat.cast_one]
       apply le_trans _ (le_max_left _ _)
@@ -482,7 +482,7 @@ theorem fibreExpression_le {lo hi : ℚ} {B : Box} (hB : valid lo hi B)
     simp only [Expr.eval,Rat.cast_div,Rat.cast_one,Rat.cast_sub,Rat.cast_mul,hc]
     rw [one_div,mul_comm,← div_eq_mul_inv]
     exact div_le_div₀ hraw0 hnum (by positivity) hden
-  · rw [if_neg hd]
+  · rw [ite_eq_right hd]
     simp only [Expr.eval,Rat.cast_zero]
     exact div_nonneg hraw0 (by positivity)
 
@@ -553,7 +553,7 @@ theorem check_sound {lo hi : ℚ} {B : Box} {w : ℚ × ℚ}
   · by_cases hw : w.1 = 0
     · simpa only [hw,Rat.cast_zero] using hb.1
     · have hc' := hc.2
-      rw [if_neg hw] at hc'
+      rw [ite_eq_right hw] at hc'
       split_ifs at hc' with hA
       · cases he : evalIntervalDyadicChecked (expressionSum lo hi B 8) (fun _ => default)
           config with

@@ -307,7 +307,7 @@ theorem eventually_supply_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) :
         ((logPrimes (start N h v ij.1 ij.2 a) h).card : ℝ) := by
       have hs := start_bounds hh hi hj hv hw a
       exact hcount _ (by linarith) (by linarith)
-    have hp := Finset.prod_le_prod (s := (Finset.univ : Finset (Fin 4)))
+    have hp := Finset.prod_le_prod₀ (s := (Finset.univ : Finset (Fin 4)))
       (fun a _ => by positivity : ∀ a ∈ (Finset.univ : Finset (Fin 4)),
         0 ≤ c*Real.exp (start N h v ij.1 ij.2 a)/((N : ℝ)+1))
       (fun a _ => he a)
@@ -534,7 +534,7 @@ theorem triple_atom_norm_upper (A : Finset ℕ) {N n : ℕ} (hN : 0 < N)
       3*(N : ℝ)*Real.exp (D/2)*saddleEnvelope N := by
   have hn : (0 : ℝ) < N := by exact_mod_cast hN
   have hb := ZetaRieszSperner.norm_coefficient_le_allowance hL0 n
-  rw [ZetaRieszSperner.middleLayerAllowance,if_pos ⟨hs,by omega⟩,hk] at hb
+  rw [ZetaRieszSperner.middleLayerAllowance,ite_eq_left ⟨hs,by omega⟩,hk] at hb
   norm_num at hb
   have hratio : Real.log n/L ≤ 3 := (div_le_iff₀ hL0).mpr (by linarith)
   have hcost : ‖SquarefreeVaughanLogSource.coefficient L n‖ ≤ 3*(N : ℝ) := by

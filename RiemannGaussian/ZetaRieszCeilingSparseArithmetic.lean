@@ -303,7 +303,7 @@ theorem norm_residue_signal_le {u : ℝ} (hu : 0<=u) (hU : u<=radiusCeiling)
     calc
       _ <= 45*u^2*(N : ℝ)^2*(3*N+1)*arithmeticMass*
           ((2*u)^(2*N)*Real.exp (-(37/100000 : ℝ)*N)) := by
-        convert hsq using 1 <;> first | rfl | ring
+        convert hsq using 1 ; first | rfl | ring
       _ <= 45*u^2*(N : ℝ)^2*(3*N+1)*arithmeticMass*
           Real.exp (-(17/100000 : ℝ)*N) :=
         mul_le_mul_of_nonneg_left (source_sparse_rate hu hU N) (by positivity)

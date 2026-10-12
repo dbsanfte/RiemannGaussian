@@ -235,13 +235,13 @@ theorem eventually_joint_slabs_upper_log_head_with_scale {y : ℝ} (hy : 16 ≤ 
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb3
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1; first | rfl | ring
   · have hh := mul_le_mul_of_nonneg_left hpos (by norm_num : (0 : ℝ) ≤ 1/8)
     apply hsm4.trans
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb4
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1; first | rfl | ring
 
   · have hh := mul_le_mul_of_nonneg_left hpos (by norm_num : (0 : ℝ) ≤ 1/8)
     apply hsm5.trans

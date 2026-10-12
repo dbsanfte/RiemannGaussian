@@ -48,9 +48,9 @@ theorem completedCross_sub_range_eq_upper (A : Finset ℕ) (P : Polynomial ℂ) 
         (∑ n ∈ Finset.range M, if n < M then f n else 0) := by
       apply hasSum_sum_of_ne_finset_zero
       intro n hn
-      exact if_neg (by simpa only [Finset.mem_range] using hn)
+      exact ite_eq_right (by simpa only [Finset.mem_range] using hn)
     convert h using 1
-    exact (Finset.sum_congr rfl (fun n hn => if_pos (Finset.mem_range.mp hn))).symm
+    exact (Finset.sum_congr rfl (fun n hn => ite_eq_left (Finset.mem_range.mp hn))).symm
   have hfull : HasSum f (completedCross A P u y N) :=
     hasSum_crossCoefficient A u N P hA (by norm_num)
   have hupper : HasSum (fun n => upperCoefficient
@@ -60,13 +60,13 @@ theorem completedCross_sub_range_eq_upper (A : Finset ℕ) (P : Polynomial ℂ) 
     apply (hfull.sub hsmall).congr_fun
     intro n
     by_cases hn : n < M
-    · simp only [if_pos hn, sub_self, upperCoefficient]
-      rw [if_neg (fun h => (not_le_of_gt hn) h.2), zero_mul]
-    · simp only [if_neg hn, sub_zero, f, crossCoefficient, upperCoefficient]
+    · simp only [ite_eq_left hn, sub_self, upperCoefficient]
+      rw [ite_eq_right (fun h => (not_le_of_gt hn) h.2), zero_mul]
+    · simp only [ite_eq_right hn, sub_zero, f, crossCoefficient, upperCoefficient]
       have hMn : M ≤ n := le_of_not_gt hn
       by_cases hc : (crossIncidences A u N n).Nonempty
-      · rw [if_pos hc, if_pos ⟨hc, hMn⟩]
-      · rw [if_neg hc, if_neg (fun h => hc h.1)]
+      · rw [ite_eq_left hc, ite_eq_left ⟨hc, hMn⟩]
+      · rw [ite_eq_right hc, ite_eq_right (fun h => hc h.1)]
   exact hupper.tsum_eq.symm
 
 /-- The actual annular cross-prime response is eventually precisely the
@@ -93,7 +93,7 @@ theorem eventually_sum_cross_annulus_eq_range (A : ℕ → Finset ℕ) (P : Poly
       have hm := hN a (n / a) (hA N a haA).1 hp (hA N a haA).2.1
         (hA N a haA).2.2 hXp (by rw [he]; exact Finset.mem_range.mp hn)
       exact hnot (he ▸ hm)
-    simp only [crossCoefficient, if_neg hz, zero_mul]
+    simp only [crossCoefficient, ite_eq_right hz, zero_mul]
 
 /-- A fully independent geometric allowance now pays the entire prime
 completion error of the actual annular cross class. The finite physical

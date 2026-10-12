@@ -86,7 +86,7 @@ theorem selected_zero_sum_le_full_add_allowance {B m H t : ℝ} (hB : 0 < B)
       _ = ∑ ρ ∈ S, inside B σ t H ρ := by
         apply Finset.sum_congr rfl
         intro ρ hρ
-        simp only [inside, if_pos (hS ρ hρ)]
+        simp only [inside, ite_eq_left (hS ρ hρ)]
       _ ≤ _ := hin.sum_le_tsum S (fun ρ _ => hn ρ)
   have htail := (abs_le.mp (abs_tsum_outside_le hB hσ0 hσ1 hscale' ht hH)).1
   have hcost : 4 * integralCost (2 * σ - 1) B (1 - σ) * divisorTail H ≤ allowance B H := by

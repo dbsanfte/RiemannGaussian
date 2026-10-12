@@ -302,7 +302,7 @@ theorem costs_le_centered {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
     have hLn := mul_le_mul_of_nonneg_right ha.2.1 hn
     have hUp := mul_le_mul_of_nonneg_right ha.2.2.2 hp
     have hUn := mul_le_mul_of_nonneg_right ha.2.2.2 hn
-    simp only [floorCost,ceilingCost,ZetaRieszSixPrimeCentered.centeredSixCost,if_pos ho]
+    simp only [floorCost,ceilingCost,ZetaRieszSixPrimeCentered.centeredSixCost,ite_eq_left ho]
     change 0 ≤ lowerAmplitude L n*max (Real.cos (y*Real.log n)) 0+
         upperAmplitude L n*max (-Real.cos (y*Real.log n)) 0 ∧
       lowerAmplitude L n*max (Real.cos (y*Real.log n)) 0+
@@ -317,7 +317,7 @@ theorem costs_le_centered {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
       by nlinarith only [hLp,hUn],
       add_nonneg (mul_nonneg ha.2.2.1 hp) (mul_nonneg ha.1 hn),
       by nlinarith only [hUp,hLn]⟩
-  · simp only [floorCost,ceilingCost,if_neg ho,le_refl,and_true]
+  · simp only [floorCost,ceilingCost,ite_eq_right ho,le_refl,and_true]
     exact ⟨centered_nonneg hL y n,True.intro,centered_nonneg hL y n⟩
 
 /-- The same original residual atom keeps every favorable observation,
@@ -350,13 +350,13 @@ theorem residual_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
       by_cases hp : 0 ≤ Real.cos (y*Real.log n)
       · have hl := mul_le_mul_of_nonneg_right hb.1 hp
         have hu := mul_le_mul_of_nonneg_right hb.2 hp
-        simp only [floorCost,ceilingCost,if_pos ho₁,max_eq_left hp,
+        simp only [floorCost,ceilingCost,ite_eq_left ho₁,max_eq_left hp,
           max_eq_right (neg_nonpos.mpr hp),mul_zero,add_zero]
         constructor <;> nlinarith only [hl,hu]
       · have hp' := le_of_not_ge hp
         have hl := mul_le_mul_of_nonpos_right hb.2 hp'
         have hu := mul_le_mul_of_nonpos_right hb.1 hp'
-        simp only [floorCost,ceilingCost,if_pos ho₁,max_eq_right hp',
+        simp only [floorCost,ceilingCost,ite_eq_left ho₁,max_eq_right hp',
           max_eq_left (neg_nonneg.mpr hp'),mul_zero,zero_add]
         constructor <;> nlinarith only [hl,hu]
     dsimp only
@@ -368,7 +368,7 @@ theorem residual_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
     · have hv' := le_of_not_ge hv
       rw [max_eq_right hv',min_eq_left hv']
       constructor <;> linarith only [raw.1,hun]
-  · simpa only [floorCost,ceilingCost,if_neg ho₁] using
+  · simpa only [floorCost,ceilingCost,ite_eq_right ho₁] using
       ZetaRieszSixPrimeCentered.residual_centered_retained_bounds A hL y N hs hc hD ho
 
 open ZetaRieszParityPacket ZetaRieszAnnulusJoint

@@ -177,7 +177,7 @@ private theorem literal_pair_coefficient {p q : ℕ} (hp : p.Prime) (hq : q.Prim
   have hc : ZetaRieszOwnedCells.ownerCofactor (p*q)=p := by
     rw [ZetaRieszOwnedCells.ownerCofactor,hl,Nat.mul_div_left _ hq.pos]
   rw [prefixCoefficient,hl,hc,
-    if_pos (Finset.mem_union.mpr (Or.inr hn)),sub_zero,selbergCoefficient_pair hp hq hpq]
+    ite_eq_left (Finset.mem_union.mpr (Or.inr hn)),sub_zero,selbergCoefficient_pair hp hq hpq]
   push_cast
   ring
 

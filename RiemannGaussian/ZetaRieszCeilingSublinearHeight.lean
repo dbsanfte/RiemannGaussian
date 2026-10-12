@@ -231,7 +231,7 @@ theorem heightCap_lower {L : ℝ} (hL : 60001 <= L) :
     L/217000 <= heightCap L := by
   have hg : 0 <= log L := log_nonneg (by linarith only [hL])
   unfold heightCap
-  rw [if_neg (by linarith only [hL] : ¬ L <= 60000),le_min_iff]
+  rw [ite_eq_right (by linarith only [hL] : ¬ L <= 60000),le_min_iff]
   constructor
   · unfold cost smallUnit
     nlinarith only [hL,hg]

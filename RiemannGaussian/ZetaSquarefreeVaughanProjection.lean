@@ -91,7 +91,7 @@ theorem inverse_product_le_divisor_sum {s : ℂ} (hs : 1 / 2 ≤ s.re)
       (Nat.prime_of_mem_primeFactors hp).primeFactors, Finset.prod_singleton]
   calc
     _ ≤ ∏ p ∈ n.primeFactors, (1 + 4 / Real.sqrt p) :=
-      Finset.prod_le_prod (fun _ _ ↦ norm_nonneg _)
+      Finset.prod_le_prod₀ (fun _ _ ↦ norm_nonneg _)
         (fun _ hp ↦ norm_inverse_local_le hs (Nat.prime_of_mem_primeFactors hp))
     _ = ∏ p ∈ n.primeFactors, (1 + localMajorant p) :=
       Finset.prod_congr rfl (fun p hp' ↦ by rw [hp p hp'])
@@ -123,7 +123,7 @@ theorem sum_divisor_majorant_le (U : ℕ) :
     have hn0 : n ≠ 0 := by have := (Finset.mem_Icc.mp hn).1; omega
     calc
       _ = ∑ d ∈ n.divisors, if d ∣ n then w d else 0 :=
-        Finset.sum_congr rfl (fun d hd ↦ (if_pos (Nat.dvd_of_mem_divisors hd)).symm)
+        Finset.sum_congr rfl (fun d hd ↦ (ite_eq_left (Nat.dvd_of_mem_divisors hd)).symm)
       _ = _ := Finset.sum_subset (fun d hd ↦ Finset.mem_Icc.mpr
         ⟨Nat.pos_of_mem_divisors hd, (Nat.le_of_dvd (by omega) (Nat.dvd_of_mem_divisors hd)).trans
           (Finset.mem_Icc.mp hn).2⟩) (by
@@ -244,14 +244,14 @@ theorem norm_prefix_le (U V : ℕ) (w : ℕ → ℂ)
       apply Finset.sum_le_sum
       intro p _
       by_cases hcop : a.Coprime p
-      · rw [if_pos hcop, (SquarefreeEulerQuadratic.atom_multiplicative s).map_mul_of_coprime hcop,
+      · rw [ite_eq_left hcop, (SquarefreeEulerQuadratic.atom_multiplicative s).map_mul_of_coprime hcop,
           norm_mul, norm_mul, norm_mul, Complex.norm_real,
           Real.norm_of_nonneg (Real.log_natCast_nonneg p)]
         have h := mul_le_mul_of_nonneg_right (hw a ha)
           (show 0 ≤ Real.log p * (‖SquarefreeEulerQuadratic.atom s a‖ *
             ‖SquarefreeEulerQuadratic.atom s p‖) by positivity)
         nlinarith only [h]
-      · rw [if_neg hcop, norm_zero]
+      · rw [ite_eq_right hcop, norm_zero]
         positivity
     _ ≤ ∑ a ∈ (Finset.Icc 1 U).filter Squarefree,
         ‖SquarefreeEulerQuadratic.atom s a‖ * (12 * Real.sqrt V) :=
@@ -276,7 +276,7 @@ theorem analyticAt_prefix (U V : ℕ) (w : ℕ → ℂ) {s : ℂ} (hs : 0 < s.re
   apply Finset.analyticAt_fun_sum
   intro p hp
   by_cases hcop : a.Coprime p
-  · simp only [if_pos hcop]
+  · simp only [ite_eq_left hcop]
     have hsf : Squarefree (a * p) := (Nat.squarefree_mul hcop).mpr
       ⟨(Finset.mem_filter.mp ha).2, (show p.Prime from (Finset.mem_filter.mp hp).2).squarefree⟩
     have he : (fun z ↦ SquarefreeEulerQuadratic.atom z (a * p)) =
@@ -284,7 +284,7 @@ theorem analyticAt_prefix (U V : ℕ) (w : ℕ → ℂ) {s : ℂ} (hs : 0 < s.re
     apply analyticAt_const.mul
     rw [he]
     exact analyticAt_squarefreeEulerMultiplier ∅ (by simp) (a * p) hs
-  · simp only [if_neg hcop]
+  · simp only [ite_eq_right hcop]
     exact analyticAt_const
 
 private theorem re_half_of_mem_unit_disc {y : ℝ} {s : ℂ}
@@ -480,7 +480,7 @@ theorem coprimeCoefficient_eq_projected_convolution (U V : ℕ)
         ZetaVaughanReduction.head V ArithmeticFunction.vonMangoldt *
           (ArithmeticFunction.zeta : ArithmeticFunction ℝ)) n : ℂ) else 0 := by
   by_cases hn : Squarefree n
-  · rw [if_pos hn]
+  · rw [ite_eq_left hn]
     have hconv : (ZetaVaughanReduction.head U f *
         ZetaVaughanReduction.head V ArithmeticFunction.vonMangoldt *
           (ArithmeticFunction.zeta : ArithmeticFunction ℝ)) n =
@@ -507,7 +507,7 @@ theorem coprimeCoefficient_eq_projected_convolution (U V : ℕ)
     intro a _
     by_cases ha : a ∣ n
     · have hsf := hn.squarefree_of_dvd ha
-      simp only [if_pos hsf, if_pos ha, Complex.ofReal_mul, Complex.ofReal_sum, Finset.mul_sum]
+      simp only [ite_eq_left hsf, ite_eq_left ha, Complex.ofReal_mul, Complex.ofReal_sum, Finset.mul_sum]
       apply Finset.sum_congr rfl
       intro p _
       have hd : p ∣ n / a ↔ a * p ∣ n := by
@@ -566,7 +566,7 @@ theorem projected_head_log_eq (U : ℕ) (f : ArithmeticFunction ℝ) (n : ℕ) :
       else 0) = ∑ a ∈ Finset.Icc 1 U, (f a : ℂ) *
         RoughSquarefreeBare.coefficient ∅ a n * ((Real.log n : ℂ) - (Real.log a : ℂ)) := by
   by_cases hn : Squarefree n
-  · rw [if_pos hn, ArithmeticFunction.mul_apply, Nat.sum_divisorsAntidiagonal
+  · rw [ite_eq_left hn, ArithmeticFunction.mul_apply, Nat.sum_divisorsAntidiagonal
       (fun a b ↦ ZetaVaughanReduction.head U f a * ArithmeticFunction.log b)]
     simp only [ZetaVaughanReduction.head, ArithmeticFunction.coe_mk,
       ArithmeticFunction.log_apply, ite_mul, zero_mul]
@@ -578,7 +578,7 @@ theorem projected_head_log_eq (U : ℕ) (f : ArithmeticFunction ℝ) (n : ℕ) :
       have hlog : Real.log (n / a : ℕ) = Real.log n - Real.log a := by
         rw [Nat.cast_div hd (by exact_mod_cast ha0.ne'),
           Real.log_div (by exact_mod_cast hn.ne_zero) (by exact_mod_cast ha0.ne')]
-      simp only [if_pos hd, hlog, Complex.ofReal_mul, Complex.ofReal_sub]
+      simp only [ite_eq_left hd, hlog, Complex.ofReal_mul, Complex.ofReal_sub]
       simp [RoughSquarefreeBare.coefficient, hn, hd]
     · simp [RoughSquarefreeBare.coefficient, hn, hd]
   · simp [RoughSquarefreeBare.coefficient, hn]
@@ -760,7 +760,7 @@ theorem hasSum_projected_head_prime (V : ℕ) (p : Polynomial ℂ) (N : ℕ) (s 
         rw [squarefree_vonMangoldt_eq]
         simp [zetaProperPrimePowerCoefficient, hp]
       by_cases hn : Squarefree n
-      · simp only [squarefreePart, if_pos hn] at hz
+      · simp only [squarefreePart, ite_eq_left hn] at hz
         simp [squarefreePart, hn, ZetaVaughanReduction.head, zetaSquarePrimesThrough, hp,
           Complex.ofReal_eq_zero.mp hz]
       · simp [squarefreePart, hn, zetaSquarePrimesThrough, hp]
@@ -775,7 +775,7 @@ theorem hasSum_projected_head_prime (V : ℕ) (p : Polynomial ℂ) (N : ℕ) (s 
   convert h using 1
   apply Finset.sum_congr rfl
   intro n hn
-  rw [if_pos hn]
+  rw [ite_eq_left hn]
 
 /-- The finite projected head keeps the square-root prime-density cost
 uniformly in the factorial order and the ordinate. -/
@@ -844,7 +844,7 @@ theorem hasSum_projected_small (U V : ℕ) (p : Polynomial ℂ) (N : ℕ)
   apply h.congr_fun
   intro n
   by_cases hn : Squarefree n
-  · simp only [squarefreePart, if_pos hn]
+  · simp only [squarefreePart, ite_eq_left hn]
     change ((ZetaVaughanReduction.head V ArithmeticFunction.vonMangoldt n +
       (ZetaVaughanReduction.head U (μ : ArithmeticFunction ℝ) * ArithmeticFunction.log) n -
       (ZetaVaughanReduction.head U (μ : ArithmeticFunction ℝ) *
@@ -910,7 +910,7 @@ theorem hasSum_projected_bilinear (U V : ℕ) (p : Polynomial ℂ) (N : ℕ)
   apply h.congr_fun
   intro n
   by_cases hn : Squarefree n
-  · simp only [squarefreePart, if_pos hn]
+  · simp only [squarefreePart, ite_eq_left hn]
     have he := congrArg (fun f : ArithmeticFunction ℝ ↦ f n) (ZetaVaughanReduction.vaughan U V)
     rw [ArithmeticFunction.add_apply] at he
     rw [he, Complex.ofReal_add]
@@ -992,8 +992,8 @@ theorem tendsto_actual_squarefree_band (rho : NontrivialZetaZero)
   have hb (N n : ℕ) : ‖squarefreePart (ZetaVaughanReduction.bilinear (D N) (D N)) n‖ ≤
       zetaMoebiusLogMajorant n := by
     by_cases hn : Squarefree n
-    · simpa only [squarefreePart, if_pos hn] using ZetaVaughanReduction.norm_bilinear_le (D N) (D N) n
-    · simpa only [squarefreePart, if_neg hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
+    · simpa only [squarefreePart, ite_eq_left hn] using ZetaVaughanReduction.norm_bilinear_le (D N) (D N) n
+    · simpa only [squarefreePart, ite_eq_right hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
   have herr := tendsto_zetaDominatedFilter_sub_band
     (fun N ↦ squarefreePart (ZetaVaughanReduction.bilinear (D N) (D N))) hb p rho.1.im
   have hpow : Tendsto (fun N : ℕ ↦ (u : ℂ) ^ (N + 1)) atTop (𝓝 0) :=
@@ -1022,8 +1022,8 @@ theorem tendsto_nonsquarefree_band (p : Polynomial ℂ) (y : ℝ)
   have hb (N n : ℕ) : ‖squarefreePart (ZetaVaughanReduction.bilinear (D N) (D N)) n‖ ≤
       zetaMoebiusLogMajorant n := by
     by_cases hn : Squarefree n
-    · simpa only [squarefreePart, if_pos hn] using ZetaVaughanReduction.norm_bilinear_le (D N) (D N) n
-    · simpa only [squarefreePart, if_neg hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
+    · simpa only [squarefreePart, ite_eq_left hn] using ZetaVaughanReduction.norm_bilinear_le (D N) (D N) n
+    · simpa only [squarefreePart, ite_eq_right hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
   have hfull := tendsto_zetaDominatedFilter_sub_band
     (fun N n ↦ (ZetaVaughanReduction.bilinear (D N) (D N) n : ℂ))
       (fun N ↦ ZetaVaughanReduction.norm_bilinear_le (D N) (D N)) p y

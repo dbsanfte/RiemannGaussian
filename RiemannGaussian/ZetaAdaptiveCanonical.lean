@@ -84,7 +84,7 @@ theorem divisor_adaptiveZetaPoleRemoved_sphere_eq_zero (y : ℝ) :
     simp [ho]
   · change (if MeromorphicOn (localZetaPoleRemoved y) (sphere 0 (adaptiveZetaCanonicalRadius r y)) ∧
         z ∈ sphere 0 (adaptiveZetaCanonicalRadius r y) then _ else 0) = 0
-    rw [if_neg (fun h ↦ hz h.2)]
+    rw [ite_eq_right (fun h ↦ hz h.2)]
 
 /-- The actual local function admits a finite canonical decomposition
 with a residual nonvanishing throughout the complete closed disc. -/

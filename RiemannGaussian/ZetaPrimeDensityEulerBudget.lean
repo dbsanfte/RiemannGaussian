@@ -102,10 +102,10 @@ private theorem sum_prime_inv_sqrt_split (R : ℕ) {x : ℝ} (hx : 1 < x) :
     have hp : a.Prime := (Finset.mem_filter.mp ha).2
     have hs : 0 < Real.sqrt a := Real.sqrt_pos.2 (by exact_mod_cast hp.pos)
     by_cases hax : (a : ℝ) ≤ x
-    · rw [if_pos hax]
+    · rw [ite_eq_left hax]
       have : 0 ≤ (Real.log a / Real.sqrt a) / Real.log x := by positivity
       linarith
-    · rw [if_neg hax, zero_add]
+    · rw [ite_eq_right hax, zero_add]
       have hlog : Real.log x ≤ Real.log a := Real.log_le_log hx0 (by linarith)
       apply (le_div_iff₀ hl).mpr
       apply (le_div_iff₀ hs).mpr
@@ -202,7 +202,7 @@ private theorem budget_antitone {σ τ : ℝ} (hσ : 0 < σ) (h : σ ≤ τ)
     · exact hS a ha
     · exact Nat.prime_of_mem_primeFactors ha
   apply mul_le_mul (expWeight_antitone h P)
-    (Finset.prod_le_prod (fun a ha ↦ inv_nonneg.mpr
+    (Finset.prod_le_prod₀ (fun a ha ↦ inv_nonneg.mpr
       (sub_nonneg.mpr (expWeight_lt_one (hσ.trans_le h) (hp a ha)).le))
       (fun a ha ↦ inv_anti₀ (sub_pos.mpr (expWeight_lt_one hσ (hp a ha)))
         (by linarith [expWeight_antitone h a])))
@@ -260,10 +260,10 @@ theorem exists_squarefreeEulerBudget_prime_mass_bound :
     have hqK : (1 - zetaPrimeExpWeight σ a)⁻¹ ≤ K :=
       inv_anti₀ hden (by linarith)
     by_cases haM : a < M
-    · rw [if_pos haM]
+    · rw [ite_eq_left haM]
       exact hqK.trans (le_mul_of_one_le_right (zero_lt_one.trans_le hK).le
         (Real.one_le_exp (by positivity)))
-    · rw [if_neg haM, one_mul]
+    · rw [ite_eq_right haM, one_mul]
       have ht : zetaPrimeExpWeight σ a ≤ 1 / 5 :=
         (expWeight_antitone hσ a).trans (hM a (by omega)).le
       have hd : 0 < 1 - zetaPrimeExpWeight σ a := by linarith
@@ -284,7 +284,7 @@ theorem exists_squarefreeEulerBudget_prime_mass_bound :
       K ^ M * Real.exp (5 / 4 * ∑ a ∈ S, zetaPrimeExpWeight σ a) := by
     calc
       _ ≤ ∏ a ∈ S, (if a < M then K else 1) * Real.exp (5 / 4 * zetaPrimeExpWeight σ a) :=
-        Finset.prod_le_prod (fun a ha ↦ inv_nonneg.mpr
+        Finset.prod_le_prod₀ (fun a ha ↦ inv_nonneg.mpr
           (sub_nonneg.mpr (expWeight_lt_one hσ0 (hS a ha)).le)) (fun a ha ↦ hlocal a (hS a ha))
       _ = K ^ (S.filter (fun a ↦ a < M)).card *
           Real.exp (5 / 4 * ∑ a ∈ S, zetaPrimeExpWeight σ a) := by

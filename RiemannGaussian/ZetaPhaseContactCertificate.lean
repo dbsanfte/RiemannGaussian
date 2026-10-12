@@ -40,7 +40,7 @@ theorem phaseContactCost_controls_logHeight (n : ℕ) (y : ℝ) :
     have hl := Real.log_le_sub_one_of_pos (show (0 : ℝ) < n by linarith)
     have hp := mul_nonneg (show (0 : ℝ) ≤ n - 1 by linarith)
       (show 0 ≤ localZetaLogHeight y - 2 by linarith [two_lt_localZetaLogHeight y])
-    simp only [phaseContactCost, if_neg hn]
+    simp only [phaseContactCost, ite_eq_right hn]
     nlinarith
 
 /-- The exact cosines of five contact angles, chosen from the numerical
@@ -151,7 +151,7 @@ private theorem phaseContactPenalty_large {n : ℕ} (hn : 38 ≤ n) :
   have h0 : n ≠ 0 := by omega
   have h1 : n ≠ 1 := by omega
   simp only [phaseContactPenalty, phaseContactCost, phaseContactSourceCoeff,
-    if_neg h0, if_neg h1]
+    ite_eq_right h0, ite_eq_right h1]
   linarith
 
 /-- Every coefficient penalty in the exact contact certificate is
@@ -174,7 +174,7 @@ theorem one_div_sixtyFour_le_phaseContactPenalty {n : ℕ}
     (hn : n ∉ phaseContactFrequencies) : (1 / 64 : ℝ) ≤ phaseContactPenalty n := by
   by_cases hsmall : n < 38
   · have h := phaseContactPenaltyQ_small n hsmall
-    rw [if_neg hn] at h
+    rw [ite_eq_right hn] at h
     rw [← phaseContactPenaltyQ_cast]
     have h' : ((1 / 64 : ℚ) : ℝ) ≤ (phaseContactPenaltyQ n : ℝ) := Rat.cast_le.mpr h
     norm_num at h'

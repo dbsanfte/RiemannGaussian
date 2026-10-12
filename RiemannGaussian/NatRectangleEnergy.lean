@@ -38,7 +38,7 @@ theorem sum_Icc_gcd_div_le_harmonic_sq (E : ℕ) :
         ⟨hgp, (Nat.le_of_dvd hap (Nat.gcd_dvd_left a c)).trans (Finset.mem_Icc.mp ha).2⟩
       have h := Finset.single_le_sum (f := fun g : ℕ ↦ (g : ℝ) * w g a * v g c)
         (fun g _ ↦ mul_nonneg (mul_nonneg (Nat.cast_nonneg g) (hw g a)) (hv g c)) hgm
-      simpa only [w, v, if_pos (Nat.gcd_dvd_left a c), if_pos (Nat.gcd_dvd_right a c),
+      simpa only [w, v, ite_eq_left (Nat.gcd_dvd_left a c), ite_eq_left (Nat.gcd_dvd_right a c),
         mul_one, div_eq_mul_inv, one_mul] using h
     _ = ∑ a ∈ s, ∑ g ∈ s, ∑ c ∈ s, (g : ℝ) * w g a * v g c := by
       apply Finset.sum_congr rfl

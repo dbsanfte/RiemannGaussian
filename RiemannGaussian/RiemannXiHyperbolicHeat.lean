@@ -85,11 +85,11 @@ def riemannXiUpperHyperbolicHeatResidue
       (zetaUpperHyperbolicHeatSummand z tau rho : ℂ) := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · rw [riemannXiUpperHyperbolicHeatResidue,
-      zetaUpperHyperbolicHeatSummand, if_pos hupper, if_pos hupper]
+      zetaUpperHyperbolicHeatSummand, ite_eq_left hupper, ite_eq_left hupper]
     push_cast
     ring
   · rw [riemannXiUpperHyperbolicHeatResidue,
-      zetaUpperHyperbolicHeatSummand, if_neg hupper, if_neg hupper]
+      zetaUpperHyperbolicHeatSummand, ite_eq_right hupper, ite_eq_right hupper]
     simp
 
 /-- Each selected heat residue is derived directly from the local spectral-xi
@@ -118,7 +118,7 @@ theorem tendsto_upperHyperbolicHeat_mul_logDeriv_riemannXiSpectral
     tendsto_const_nhds
   have hlocal := hweight.mul
     (tendsto_zetaSpectralCoordinate_mul_logDeriv_riemannXiSpectral rho)
-  rw [riemannXiUpperHyperbolicHeatResidue, if_pos hupper]
+  rw [riemannXiUpperHyperbolicHeatResidue, ite_eq_left hupper]
   exact hlocal
 
 /-- Every fixed-positive-time upper heat series is absolutely summable. -/
@@ -143,7 +143,7 @@ theorem summable_zetaUpperHyperbolicHeatSummand
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · have hheatPos := upperHalfPlaneHyperbolicHeatIntegrand_pos
       hz hupper htau
-    rw [zetaUpperHyperbolicHeatSummand, if_pos hupper,
+    rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper,
       Real.norm_eq_abs,
       abs_of_nonneg (mul_nonneg (Nat.cast_nonneg _) hheatPos.le)]
     calc
@@ -164,7 +164,7 @@ theorem summable_zetaUpperHyperbolicHeatSummand
               (tau * (zetaSpectralCoordinate rho.1).im ^ 2 -
                 tau * ((zetaSpectralCoordinate rho.1).re - z.re) ^ 2)) := by
         ring
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper, Real.norm_eq_abs,
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper, Real.norm_eq_abs,
       abs_zero]
     positivity
 
@@ -194,10 +194,10 @@ theorem riemannXiUpperHyperbolicHeatSum_nonneg
   apply tsum_nonneg
   intro rho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+  · simp only [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     exact mul_nonneg (Nat.cast_nonneg _)
       (upperHalfPlaneHyperbolicHeatIntegrand_pos hz hupper htau).le
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
 
 /-- A single upper spectral-xi zero makes every positive-time upper heat sum
 strictly positive. -/
@@ -210,11 +210,11 @@ theorem riemannXiUpperHyperbolicHeatSum_pos_of_upper_zero
   refine (summable_zetaUpperHyperbolicHeatSummand hz htau).tsum_pos ?_ rho ?_
   · intro sigma
     by_cases hsigma : 0 < (zetaSpectralCoordinate sigma.1).im
-    · simp only [zetaUpperHyperbolicHeatSummand, if_pos hsigma]
+    · simp only [zetaUpperHyperbolicHeatSummand, ite_eq_left hsigma]
       exact mul_nonneg (Nat.cast_nonneg _)
         (upperHalfPlaneHyperbolicHeatIntegrand_pos hz hsigma htau).le
-    · rw [zetaUpperHyperbolicHeatSummand, if_neg hsigma]
-  · simp only [zetaUpperHyperbolicHeatSummand, if_pos hupper]
+    · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hsigma]
+  · simp only [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
     exact mul_pos (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
       (upperHalfPlaneHyperbolicHeatIntegrand_pos hz hupper htau)
 
@@ -242,7 +242,7 @@ theorem riemannXiUpperHyperbolicHeatSum_eq_zero_iff_riemannHypothesis
           rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
       have hnot : ¬0 < (zetaSpectralCoordinate rho.1).im := by
         linarith
-      rw [zetaUpperHyperbolicHeatSummand, if_neg hnot]
+      rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hnot]
     rw [hzero, tsum_zero]
 
 /-- Vanishing of the complete upper heat divisor at every positive proper

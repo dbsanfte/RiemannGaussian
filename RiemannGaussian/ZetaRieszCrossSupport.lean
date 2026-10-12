@@ -159,7 +159,7 @@ theorem cross_semiprime_mem_annulus {a p N : ℕ} {u : ℝ}
     · exact hnarrow
   apply (ZetaRieszPhysicalAnnulus.mem_annulusBand hu).mpr
   refine ⟨?_, ?_, hproduct⟩
-  · rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, if_pos hu]
+  · rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, ite_eq_left hu]
     exact Finset.mem_filter.mpr ⟨hfour, by simp [hext]⟩
   · exact hXp.trans_lt (by simpa only [mul_one] using Nat.mul_lt_mul_of_pos_left ha.one_lt hp.pos)
 

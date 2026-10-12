@@ -213,7 +213,7 @@ def squareMoment (N : ℕ) (y : ℝ) : ℂ := ∑' p,squareTerm N y p
 theorem norm_squareTerm_le (N : ℕ) (y : ℝ) (p : ℕ) :
     ‖squareTerm N y p‖≤(4/3 : ℝ)^N*ZetaPrimeNonlinearTail.squareLogWeight (3/4) p := by
   by_cases hp : p.Prime
-  · rw [squareTerm,if_pos hp,norm_mul,Complex.norm_real,
+  · rw [squareTerm,ite_eq_left hp,norm_mul,Complex.norm_real,
       Real.norm_of_nonneg (Real.log_natCast_nonneg p)]
     have hk := norm_zetaPrimeLogKernel_le N (3/2+Complex.I*(y : ℂ)) (p^2)
       (by norm_num : (0 : ℝ)<3/4)
@@ -227,7 +227,7 @@ theorem norm_squareTerm_le (N : ℕ) (y : ℝ) (p : ℕ) :
     dsimp only [ZetaPrimeNonlinearTail.squareLogWeight,zetaPrimeExpWeight]
     rw [show -(3/4 : ℝ)*(2*Real.log p)=-(2*(3/4 : ℝ))*Real.log p by ring]
     ring
-  · rw [squareTerm,if_neg hp,norm_zero]
+  · rw [squareTerm,ite_eq_right hp,norm_zero]
     exact mul_nonneg (by positivity)
       (mul_nonneg (Real.exp_pos _).le (Real.log_natCast_nonneg p))
 
@@ -285,8 +285,8 @@ theorem cofactorMoment_prefix_tendsto (N : ℕ) {s : ℂ} (hs : 1<s.re) :
   apply Finset.sum_congr rfl
   intro p _hp
   by_cases hp : p.Prime
-  · simp only [if_pos hp,ArithmeticFunction.vonMangoldt_apply_prime hp]
-  · simp only [if_neg hp]
+  · simp only [ite_eq_left hp,ArithmeticFunction.vonMangoldt_apply_prime hp]
+  · simp only [ite_eq_right hp]
 
 theorem finiteSelberg_prefix_tendsto (N : ℕ) (y : ℝ) :
     Tendsto (fun P => finiteSelberg (primePrefix P) N (3/2+Complex.I*y)) atTop
@@ -673,8 +673,8 @@ theorem literalPairDefect_eq_nonprime {u : ℝ} (hu : 1/2≤u)
           omega
       · exact (correction_not_prime hu hU hN he hp).elim
     rw [selbergDefect_prime_eq_zero hu hU hN hprime]
-    simp only [hp,not_true_eq_false,if_false,zero_mul]
-  · simp only [hp,not_false_eq_true,if_true]
+    simp only [hp,not_true_eq_false,ite_false,zero_mul]
+  · simp only [hp,not_false_eq_true,ite_true]
 
 /-- The current floor scalar is split EXACTLY into the paid joined
 Selberg term and its still-signed literal pair defect. No allocation,

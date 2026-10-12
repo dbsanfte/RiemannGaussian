@@ -72,18 +72,18 @@ complex argument. No singular zero-index term is introduced. -/
 theorem LSeriesHasSum_zetaFiniteCoefficient (S : Finset ℕ) (a : ℕ → ℂ)
     (hS : 0 ∉ S) (s : ℂ) :
     LSeriesHasSum (zetaFiniteCoefficient S a) s (zetaFiniteDirichletSeries S a s) := by
-  have ha0 : zetaFiniteCoefficient S a 0 = 0 := if_neg hS
+  have ha0 : zetaFiniteCoefficient S a 0 = 0 := ite_eq_right hS
   have h : HasSum (LSeries.term (zetaFiniteCoefficient S a) s)
       (∑ n ∈ S, LSeries.term (zetaFiniteCoefficient S a) s n) :=
     hasSum_sum_of_ne_finset_zero (s := S)
     (f := LSeries.term (zetaFiniteCoefficient S a) s) (by
       intro n hn
-      rw [LSeries_term_eq_zetaPrimeFeature _ ha0, zetaFiniteCoefficient, if_neg hn, zero_mul])
+      rw [LSeries_term_eq_zetaPrimeFeature _ ha0, zetaFiniteCoefficient, ite_eq_right hn, zero_mul])
   have he : (∑ n ∈ S, LSeries.term (zetaFiniteCoefficient S a) s n) =
       zetaFiniteDirichletSeries S a s := by
     apply Finset.sum_congr rfl
     intro n hn
-    rw [LSeries_term_eq_zetaPrimeFeature _ ha0, zetaFiniteCoefficient, if_pos hn]
+    rw [LSeries_term_eq_zetaPrimeFeature _ ha0, zetaFiniteCoefficient, ite_eq_left hn]
   exact he ▸ h
 
 /-- A finitely supported coefficient is identified with its original
@@ -94,8 +94,8 @@ theorem LSeriesHasSum_of_support_Icc (a : ℕ → ℂ) (D : ℕ) (ha0 : a 0 = 0)
   have he : zetaFiniteCoefficient (Finset.Icc 1 D) a = a := by
     funext n
     by_cases hn : n ∈ Finset.Icc 1 D
-    · exact if_pos hn
-    · rw [zetaFiniteCoefficient, if_neg hn]
+    · exact ite_eq_left hn
+    · rw [zetaFiniteCoefficient, ite_eq_right hn]
       by_cases hn0 : n = 0
       · simp [hn0, ha0]
       · exact (hD n (by have hn' := hn; simp only [Finset.mem_Icc] at hn'; omega)).symm

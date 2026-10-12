@@ -106,7 +106,7 @@ theorem subBits_equation (xs ys : List Bool) (borrow : Bool) :
       rw [subBits]
       dsimp only
       simp only [bitValue,List.length_nil,List.length_cons,Nat.zero_max,pow_succ,
-        bitNat,Bool.false_eq_true,if_false] at hc ht ⊢
+        bitNat,Bool.false_eq_true,ite_false] at hc ht ⊢
       nlinarith
   | cons x xs ih =>
     cases ys with
@@ -116,7 +116,7 @@ theorem subBits_equation (xs ys : List Bool) (borrow : Bool) :
       rw [subBits]
       dsimp only
       simp only [bitValue,List.length_nil,List.length_cons,Nat.max_zero,pow_succ,
-        bitNat,Bool.false_eq_true,if_false] at hc ht ⊢
+        bitNat,Bool.false_eq_true,ite_false] at hc ht ⊢
       nlinarith
     | cons y ys =>
       have hc := fullSubtractor_correct x y borrow
@@ -138,7 +138,7 @@ theorem subBits_borrow_iff (xs ys : List Bool) (borrow : Bool) :
   constructor
   · intro hb
     rw [hb] at he
-    simp only [bitNat,if_true,Nat.mul_one] at he ⊢
+    simp only [bitNat,ite_true,Nat.mul_one] at he ⊢
     omega
   · intro hless
     by_contra hn
@@ -147,7 +147,7 @@ theorem subBits_borrow_iff (xs ys : List Bool) (borrow : Bool) :
       | false => rfl
       | true => exact False.elim (hn h)
     rw [hb] at he
-    simp only [bitNat,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero] at he hless
+    simp only [bitNat,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero] at he hless
     omega
 
 /-- A subtraction with no final borrow returns the literal natural difference. -/
@@ -155,7 +155,7 @@ theorem subBits_difference {xs ys : List Bool}
     (hb : (subBits xs ys false).borrow=false) :
     bitValue (subBits xs ys false).result.bits=bitValue xs-bitValue ys := by
   have he := subBits_equation xs ys false
-  simp only [hb,bitNat,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero] at he
+  simp only [hb,bitNat,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero] at he
   omega
 
 /-- The complete gate/cell/test clock of subtraction is linear in the
@@ -206,7 +206,7 @@ theorem fitBits_cost (xs ys : List Bool) : bitCost (fitBits xs ys)≤4*ys.length
 theorem fitBits_zero_value (ys : List Bool) : bitValue (fitBits [] ys).bits=0 := by
   induction ys with
   | nil => rfl
-  | cons y ys ih => simp only [fitBits,bitValue,bitNat,Bool.false_eq_true,if_false,ih,
+  | cons y ys ih => simp only [fitBits,bitValue,bitNat,Bool.false_eq_true,ite_false,ih,
       Nat.mul_zero,Nat.zero_add]
 
 /-- Fitting preserves every value that actually fits the template width.
@@ -330,15 +330,15 @@ theorem divideLoop_invariant (xs ys : List Bool) (hD : 0<bitValue ys) :
     by_cases hb : difference.borrow=true
     · have hsmall : bitValue expanded<bitValue ys := by
         have h := (subBits_borrow_iff expanded ys false).mp hb
-        simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using h
+        simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using h
       have hf := fitBits_value (lt_trans hsmall hword)
       rw [divideLoop]
       dsimp only
-      rw [if_pos hb]
+      rw [ite_eq_left hb]
       dsimp only
       rw [hf]
       constructor
-      · simp only [bitValue,bitNat,Bool.false_eq_true,if_false,Nat.zero_add]
+      · simp only [bitValue,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add]
         change bitValue ys*(2*bitValue child.quotient)+bitValue expanded=
           bitNat bit+2*bitValue xs
         have hvalue : bitValue expanded=bitNat bit+2*bitValue child.remainder := rfl
@@ -348,16 +348,16 @@ theorem divideLoop_invariant (xs ys : List Bool) (hD : 0<bitValue ys) :
       have hs := subBits_equation expanded ys false
       change bitValue expanded+2^(max expanded.length ys.length)*bitNat difference.borrow=
         bitValue ys+bitNat false+bitValue difference.result.bits at hs
-      simp only [hfalse,bitNat,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero] at hs
+      simp only [hfalse,bitNat,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero] at hs
       have hsmall : bitValue difference.result.bits<bitValue ys := by omega
       have hf := fitBits_value (lt_trans hsmall hword)
       rw [divideLoop]
       dsimp only
-      rw [if_neg hb]
+      rw [ite_eq_right hb]
       dsimp only
       rw [hf]
       constructor
-      · simp only [bitValue,bitNat,if_true]
+      · simp only [bitValue,bitNat,ite_true]
         dsimp only [expanded] at hs
         simp only [bitValue] at hs
         change bitValue ys*(1+2*bitValue child.quotient)+bitValue difference.result.bits=
@@ -412,12 +412,12 @@ theorem divideBits_correct (xs ys : List Bool) :
       rw [hn,Nat.add_mul_div_left _ _ hD,Nat.div_eq_of_lt hr,Nat.zero_add]
     have hm : bitValue xs%bitValue ys=bitValue (divideLoop xs ys).remainder := by
       rw [hn,Nat.add_mul_mod_self_left,Nat.mod_eq_of_lt hr]
-    simp only [divideBits,if_pos hb]
+    simp only [divideBits,ite_eq_left hb]
     exact ⟨hq.symm,hm.symm⟩
   · have hz : bitValue ys=0 := by
       have hn : ¬0<bitValue ys := by intro hp; exact hb ((nonzeroBits_correct ys).mpr hp)
       omega
-    simp only [divideBits,if_neg hb,hz,Nat.div_zero,Nat.mod_zero,bitValue,and_self]
+    simp only [divideBits,ite_eq_right hb,hz,Nat.div_zero,Nat.mod_zero,bitValue,and_self]
 
 /-- Positive division returns a fixed divisor-width remainder and at most
 the literal input width of quotient, without free canonicalization. -/
@@ -425,7 +425,7 @@ theorem divideBits_widths {xs ys : List Bool} (hD : 0<bitValue ys) :
     (divideBits xs ys).remainder.length=ys.length ∧
       (divideBits xs ys).quotient.length=xs.length := by
   have hb := (nonzeroBits_correct ys).mpr hD
-  simp only [divideBits,if_pos hb]
+  simp only [divideBits,ite_eq_left hb]
   exact ⟨(divideLoop_widths xs ys).1,(divideLoop_widths xs ys).2.1⟩
 
 /-- Total division's composed clock includes the actual zero-divisor scan

@@ -210,7 +210,7 @@ theorem projectionCubicFirstGapPath_coordinateProjection_apply
     noncomm_ring]
   rw [compressedMatrix_coordinateProjection_apply]
   by_cases hij : keep i ∧ keep j
-  · simp only [if_pos hij]
+  · simp only [ite_eq_left hij]
     exact mul_coordinateProjection_mul_coordinateProjection_mul_apply
       (fun a ↦ ¬ keep a) keep H₁ H₂ H₃ i j
   · simp [hij]
@@ -236,7 +236,7 @@ theorem projectionCubicSecondGapPath_coordinateProjection_apply
     noncomm_ring]
   rw [compressedMatrix_coordinateProjection_apply]
   by_cases hij : keep i ∧ keep j
-  · simp only [if_pos hij]
+  · simp only [ite_eq_left hij]
     exact mul_coordinateProjection_mul_coordinateProjection_mul_apply
       keep (fun b ↦ ¬ keep b) H₁ H₂ H₃ i j
   · simp [hij]
@@ -262,7 +262,7 @@ theorem projectionCubicTwoGapPath_coordinateProjection_apply
     noncomm_ring]
   rw [compressedMatrix_coordinateProjection_apply]
   by_cases hij : keep i ∧ keep j
-  · simp only [if_pos hij]
+  · simp only [ite_eq_left hij]
     exact mul_coordinateProjection_mul_coordinateProjection_mul_apply
       (fun a ↦ ¬ keep a) (fun b ↦ ¬ keep b) H₁ H₂ H₃ i j
   · simp [hij]

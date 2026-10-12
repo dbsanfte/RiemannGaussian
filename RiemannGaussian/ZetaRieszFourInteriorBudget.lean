@@ -97,7 +97,7 @@ theorem angular_pointwise_le {lam h b : ℝ} {lo x : Fin 3 → ℝ}
   have hd : lam*q*(∏ i, x i) ≤
       (1000001/1000000 : ℝ)^4*(lam*p*(∏ i, lo i)) := by
     have hp' := mul_le_mul hqrel
-      (Finset.prod_le_prod (fun i _ => (hx0 i).le) (fun i _ => hxrel i))
+      (Finset.prod_le_prod₀ (fun i _ => (hx0 i).le) (fun i _ => hxrel i))
       hxProd.le (by positivity)
     have he := mul_le_mul_of_nonneg_left hp' hL0.le
     simp only [Fin.prod_univ_three] at he ⊢

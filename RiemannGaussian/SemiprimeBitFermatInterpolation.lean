@@ -444,17 +444,17 @@ theorem fermat_character_delta (d : ℕ) {i j : ℕ}
     · subst i
       simp only [ite_true,Nat.mul_zero,pow_zero,Finset.sum_const,Finset.card_range,
         nsmul_eq_mul,mul_one]
-    · rw [if_neg hi0]
+    · rw [ite_eq_right hi0]
       exact fermat_fourier_cancellation d ⟨by omega,hi⟩
-  · rw [if_neg hj0]
+  · rw [ite_eq_right hj0]
     by_cases hij : i=j
     · subst i
-      rw [if_pos rfl]
+      rw [ite_eq_left rfl]
       have he : j+(2^(d+1)-j)=2^(d+1) := by omega
       rw [he]
       simp only [Nat.mul_comm _ (2^(d+1)),pow_mul,fermat_fourier_period,
         one_pow,Finset.sum_const,Finset.card_range,nsmul_eq_mul,mul_one]
-    · rw [if_neg hij]
+    · rw [ite_eq_right hij]
       by_cases hlt : i<j
       · exact fermat_fourier_cancellation d ⟨by omega,by omega⟩
       · have he : i+(2^(d+1)-j)=(i-j)+2^(d+1) := by omega
@@ -525,9 +525,9 @@ theorem fermatInterpolationBits_exact {template : List Bool} (d : ℕ)
     rw [hscaled]
     by_cases hj0 : j=0
     · subst j
-      rw [if_pos rfl,reflectFFTWordsBits_zero,hf.2.2.2.2 0 (by positivity)]
+      rw [ite_eq_left rfl,reflectFFTWordsBits_zero,hf.2.2.2.2 0 (by positivity)]
       simp only [Nat.cast_pow,Nat.cast_ofNat]
-    · rw [if_neg hj0,reflectFFTWordsBits_positive _ _ ⟨by omega,by rw [hf.2.1]; exact hj⟩]
+    · rw [ite_eq_right hj0,reflectFFTWordsBits_positive _ _ ⟨by omega,by rw [hf.2.1]; exact hj⟩]
       rw [hf.2.1,hf.2.2.2.2 (2^(d+1)-j) (by omega)]
       simp only [Nat.cast_pow,Nat.cast_ofNat]
 

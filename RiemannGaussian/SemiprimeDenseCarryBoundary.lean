@@ -379,8 +379,8 @@ theorem filtered_product_swap {R : Type*} [CommRing R] {ι : Type*}
   apply Finset.prod_congr rfl
   intro t ht
   by_cases hp : p t
-  · simp only [if_pos hp,mul_comm]
-  · simp only [if_neg hp,mul_one,he t ht hp]
+  · simp only [ite_eq_left hp,mul_comm]
+  · simp only [ite_eq_right hp,mul_one,he t ht hp]
 
 /-- Exact adjacent shift of the actual floor-filtered product, before
 discarding or dividing by any evaluated boundary factor. -/

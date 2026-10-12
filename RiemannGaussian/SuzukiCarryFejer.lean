@@ -62,8 +62,8 @@ theorem packet_eq_value (A H d : ℕ) :
     apply Finset.sum_congr rfl
     intro N _
     by_cases hn : A+t ≤ N ∧ N < A+t+H
-    · simp only [if_pos hn, one_mul]
-    · simp only [if_neg hn, zero_mul]
+    · simp only [ite_eq_left hn, one_mul]
+    · simp only [ite_eq_right hn, zero_mul]
   change packet (Finset.range (A+2*H))
     (fun N => (H : ℂ)⁻¹ * ∑ t ∈ Finset.range H,
       if A+t ≤ N ∧ N < A+t+H then 1 else 0) d = _
@@ -161,7 +161,7 @@ theorem coefficient_first {H : ℕ} (hH : 0 < H) (A : ℕ) :
   · simp [hH]
   · intro t _ ht
     have hh : ¬(A+t ≤ A ∧ A < A+t+H) := by omega
-    rw [if_neg hh]
+    rw [ite_eq_right hh]
   · intro hnot
     exact False.elim (hnot (Finset.mem_range.mpr hH))
 

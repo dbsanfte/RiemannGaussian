@@ -105,7 +105,7 @@ theorem exists_companion_window_error :
     · exact norm_assignedCoefficient_le A hL N n
   have hz : ∀ (n : ℕ), (7 / 4 : ℝ) * N < Real.log n → Real.log n ≤ (9 / 4 : ℝ) * N → a n = 0 := by
     intro n hnlo hnhi
-    exact if_pos ((mem_literalWindow N n).mpr ⟨hnlo, hnhi⟩)
+    exact ite_eq_left ((mem_literalWindow N n).mpr ⟨hnlo, hnhi⟩)
   have h := hb N a ha hz y u hu huU
   let f : ℕ → ℂ := fun n => assignedAtom A L y N n
   let g : ℕ → ℂ := fun n => if n ∈ literalWindow N then f n else 0
@@ -119,8 +119,8 @@ theorem exists_companion_window_error :
     · exact (norm_zero : ‖(0 : ℂ)‖ = 0).trans_le (norm_nonneg _)
   have hgts : (∑' n, g n) = ∑ n ∈ literalWindow N, f n := by
     calc
-      _ = ∑ n ∈ literalWindow N, g n := tsum_eq_sum (fun n hn => if_neg hn)
-      _ = _ := Finset.sum_congr rfl (fun n hn => if_pos hn)
+      _ = ∑ n ∈ literalWindow N, g n := tsum_eq_sum (fun n hn => ite_eq_right hn)
+      _ = _ := Finset.sum_congr rfl (fun n hn => ite_eq_left hn)
   have hts : (∑' n, a n * zetaPrimeLogKernel N (3 / 2 + Complex.I * y) n) =
       compositeWing u y N - ∑ n ∈ literalWindow N, f n := by
     rw [← hf.tsum_eq, ← hgts, ← hf.summable.tsum_sub hg]
@@ -128,7 +128,7 @@ theorem exists_companion_window_error :
     intro n
     by_cases hn : n ∈ literalWindow N
     · simp [a, g, hn]
-    · simp only [a, g, if_neg hn, sub_zero]
+    · simp only [a, g, ite_eq_right hn, sub_zero]
       dsimp only [f, assignedCoefficient]
       rw [assignedAtom_eq_boundedShare A hL y N n]
       ring
@@ -188,8 +188,8 @@ theorem finiteResponse_eq (u y : ℝ) (N K : ℕ) :
       ZetaRieszHarmonicWindow.windowResponse 1 u y (7 / 4) (9 / 4) N K := by
     calc
       _ = ∑ n ∈ S, if n ∈ S then f n else 0 :=
-        (Finset.sum_subset hSW (fun n _ hn => if_neg hn)).symm
-      _ = ∑ n ∈ S, f n := Finset.sum_congr rfl (fun n hn => if_pos hn)
+        (Finset.sum_subset hSW (fun n _ hn => ite_eq_right hn)).symm
+      _ = ∑ n ∈ S, f n := Finset.sum_congr rfl (fun n hn => ite_eq_left hn)
       _ = _ := by simp only [ZetaRieszHarmonicWindow.windowResponse, filter_one_eq, S, f]
   rw [← hsum, ← Finset.sum_sub_distrib]
   unfold finiteResponse
@@ -199,9 +199,9 @@ theorem finiteResponse_eq (u y : ℝ) (N K : ℕ) :
   unfold finiteCoefficient finiteWeight
   change (((if n ∈ S then (1 : ℝ) else 0) - boundedShare _ N n : ℝ) : ℂ) * _ * _ = _
   by_cases hnS : n ∈ S
-  · simp only [if_pos hnS, Complex.ofReal_sub, Complex.ofReal_one, f]
+  · simp only [ite_eq_left hnS, Complex.ofReal_sub, Complex.ofReal_one, f]
     ring
-  · simp only [if_neg hnS, Complex.ofReal_sub, Complex.ofReal_zero, f]
+  · simp only [ite_eq_right hnS, Complex.ofReal_sub, Complex.ofReal_zero, f]
     ring
 
 /-- The whole arithmetic difference has a single finite representation with a geometric error uniform in height, count threshold and radius. -/

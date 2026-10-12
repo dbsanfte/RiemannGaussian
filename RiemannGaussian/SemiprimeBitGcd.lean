@@ -102,9 +102,9 @@ theorem gcdLoop_correct_of_stopped (xs ys : List Bool) (fuel : List Unit)
   | cons cell fuel ih =>
     by_cases hb : (nonzeroBits ys).nonzero=true
     · have hc : (gcdLoop ys (divideBits xs ys).remainder fuel).exhausted=false := by
-        simpa only [gcdLoop,if_pos hb] using hstop
+        simpa only [gcdLoop,ite_eq_left hb] using hstop
       have he := ih ys (divideBits xs ys).remainder hc
-      simp only [gcdLoop,if_pos hb]
+      simp only [gcdLoop,ite_eq_left hb]
       rw [he,(divideBits_correct xs ys).2]
       calc
         (bitValue ys).gcd (bitValue xs%bitValue ys)=
@@ -116,7 +116,7 @@ theorem gcdLoop_correct_of_stopped (xs ys : List Bool) (fuel : List Unit)
           intro hp
           exact hb ((nonzeroBits_correct ys).mpr hp)
         omega
-      simp only [gcdLoop,if_neg hb,hz,Nat.gcd_zero_right]
+      simp only [gcdLoop,ite_eq_right hb,hz,Nat.gcd_zero_right]
 
 /-- Every two positive Euclidean steps halve the divisor. The theorem
 bounds the actual division calls and proves that literal fuel suffices. -/
@@ -160,17 +160,17 @@ theorem gcdLoop_stops_pow (k : ℕ) (xs ys : List Bool) (fuel : List Unit)
               simp only [List.length_cons] at hf
               omega
             have hc := ih remainder (divideBits ys remainder).remainder fuel hn hremaining
-            simp only [gcdLoop,if_pos hb]
+            simp only [gcdLoop,ite_eq_left hb]
             change (gcdLoop ys remainder (other::fuel)).exhausted=false ∧
               (gcdLoop ys remainder (other::fuel)).divisions+1≤2*(k+1)
-            simp only [gcdLoop,if_pos hr]
+            simp only [gcdLoop,ite_eq_left hr]
             constructor
             · exact hc.1
             · omega
-          · simp only [gcdLoop,if_pos hb]
+          · simp only [gcdLoop,ite_eq_left hb]
             change (gcdLoop ys remainder (other::fuel)).exhausted=false ∧
               (gcdLoop ys remainder (other::fuel)).divisions+1≤2*(k+1)
-            simp only [gcdLoop,if_neg hr]
+            simp only [gcdLoop,ite_eq_right hr]
             constructor
             · trivial
             · omega
@@ -188,8 +188,8 @@ theorem gcdLoop_width {L : ℕ} {xs ys : List Bool} (fuel : List Unit)
     · have hpos := (nonzeroBits_correct ys).mp hb
       have hw := (divideBits_widths (xs:=xs) hpos).1
       have hc := ih hy (by omega : (divideBits xs ys).remainder.length≤L)
-      simpa only [gcdLoop,if_pos hb] using hc
-    · simpa only [gcdLoop,if_neg hb] using hx
+      simpa only [gcdLoop,ite_eq_left hb] using hc
+    · simpa only [gcdLoop,ite_eq_right hb] using hx
 
 /-- Complete loop clock, including repeated divisor scans and every
 physical frame. This bound also applies to insufficient supplied fuel. -/
@@ -206,9 +206,9 @@ theorem gcdLoop_cost {L : ℕ} {xs ys : List Bool} (fuel : List Unit)
       have hw := (divideBits_widths (xs:=xs) hpos).1
       have hc := ih hy (by omega : (divideBits xs ys).remainder.length≤L)
       have hd := bounded_divideBits (by omega : xs.length≤3*L) hy
-      simp only [gcdLoop,if_pos hb,List.length_cons]
+      simp only [gcdLoop,ite_eq_left hb,List.length_cons]
       nlinarith
-    · simp only [gcdLoop,if_neg hb,List.length_cons]
+    · simp only [gcdLoop,ite_eq_right hb,List.length_cons]
       nlinarith
 
 /-- Public GCD constructs its own sufficient physical fuel. -/
@@ -287,9 +287,9 @@ theorem checkedSignalBits_condition (modulus signal : List Bool) :
         (bitValue modulus).gcd (bitValue signal)<bitValue modulus := by
   have hlo := subBits_borrow_iff [true] (gcdBits modulus signal).bits false
   have hhi := subBits_borrow_iff (gcdBits modulus signal).bits modulus false
-  simp only [bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero,
-    Bool.false_eq_true,if_false] at hlo
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hhi
+  simp only [bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero,
+    Bool.false_eq_true,ite_false] at hlo
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hhi
   rw [Bool.and_eq_true,hlo,hhi,(gcdBits_correct modulus signal).1]
 
 /-- The executable word routine returns exactly the established checked
@@ -302,12 +302,12 @@ theorem checkedSignalBits_exact (modulus signal : List Bool) :
   by_cases hb : Bool.and (subBits [true] (gcdBits modulus signal).bits false).borrow
       (subBits (gcdBits modulus signal).bits modulus false).borrow=true
   · have hd := hc.mp hb
-    simp only [checkedSignalBits,if_pos hb,Option.map_some,hg,checkedSignal,if_pos hd]
+    simp only [checkedSignalBits,ite_eq_left hb,Option.map_some,hg,checkedSignal,ite_eq_left hd]
   · have hd : ¬(1<(bitValue modulus).gcd (bitValue signal) ∧
         (bitValue modulus).gcd (bitValue signal)<bitValue modulus) := by
       intro hp
       exact hb (hc.mpr hp)
-    simp only [checkedSignalBits,if_neg hb,Option.map_none,checkedSignal,if_neg hd]
+    simp only [checkedSignalBits,ite_eq_right hb,Option.map_none,checkedSignal,ite_eq_right hd]
 
 /-- Every returned Boolean word evaluates to a checked proper divisor. -/
 theorem checkedSignalBits_sound {modulus signal divisor : List Bool}

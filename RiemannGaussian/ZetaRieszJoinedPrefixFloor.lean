@@ -51,7 +51,7 @@ theorem cutoffSaving_eq_previous_of_saturation {L : ℝ} (hL : 0 < L)
     (h : ZetaRieszSaturatedCoreFloor.SaturatedActive L n ∨
       ZetaRieszSaturatedCoreFloor.ReflectedPrefixSaturated L n) :
     cutoffSaving L y n = ZetaRieszSevenPrimeReflection.floorCost L y n := by
-  rw [cutoffSaving,ZetaRieszSaturatedCoreFloor.floorCost,if_pos h,sub_zero]
+  rw [cutoffSaving,ZetaRieszSaturatedCoreFloor.floorCost,ite_eq_left h,sub_zero]
   apply max_eq_left
   unfold ZetaRieszSevenPrimeReflection.floorCost
   positivity [ZetaRieszSevenPrimeReflection.lowerAllowance_nonneg hL n,

@@ -83,13 +83,13 @@ theorem logDeriv_pairedEtaXiCompletionNumerator_of_re_pos {s : ℂ}
       1 / s + 1 / (s - 1) := by
     have hd : deriv (fun z : ℂ => 1 - z) s = -1 :=
       ((hasDerivAt_const s 1).sub (hasDerivAt_id s)).deriv.trans (by ring)
-    rw [logDeriv_mul (f := fun z : ℂ => z) (g := fun z : ℂ => 1 - z)
+    rw [logDeriv_fun_mul (f := fun z : ℂ => z) (g := fun z : ℂ => 1 - z)
       s h0 h1s (by fun_prop) (by fun_prop)]
     simp only [logDeriv_apply, deriv_id'', hd]
     field_simp [h0, h1]
     ring
   unfold pairedEtaXiCompletionNumerator
-  rw [logDeriv_mul (f := fun z : ℂ => z * (1 - z)) (g := Complex.Gammaℝ)
+  rw [logDeriv_fun_mul (f := fun z : ℂ => z * (1 - z)) (g := Complex.Gammaℝ)
     s (mul_ne_zero h0 h1s) (Gammaℝ_ne_zero_of_re_pos hpos)
     (by fun_prop) (differentiableAt_Gammaℝ_of_re_pos hpos),
     hlinear, logDeriv_Gammaℝ hpos]
@@ -101,7 +101,7 @@ theorem logDeriv_pairedEtaXiCompletionFactor_on_completionDomain {s : ℂ}
     (hs : s ∈ pairedEtaCompletionDomain) :
     logDeriv pairedEtaXiCompletionFactor s = pairedEtaArithmeticXiRegularCorrection s := by
   unfold pairedEtaXiCompletionFactor
-  rw [logDeriv_div s (pairedEtaXiCompletionNumerator_ne_zero_of_re_pos hs.1 hs.2.1)
+  rw [logDeriv_fun_div s (pairedEtaXiCompletionNumerator_ne_zero_of_re_pos hs.1 hs.2.1)
     hs.2.2 (differentiableAt_pairedEtaXiCompletionNumerator hs.1)
     (hasDerivAt_pairedEtaFactor s).differentiableAt,
     logDeriv_pairedEtaXiCompletionNumerator_of_re_pos hs.1 hs.2.1, logDeriv_pairedEtaFactor]

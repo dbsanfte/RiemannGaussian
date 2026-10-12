@@ -196,11 +196,11 @@ theorem suzukiXiCarrierCayleyBilateralSynthesisOperator_offAxisNode
       suzukiXiCarrierNevanlinnaNodeFeatureLp rho := by
   rcases lt_or_gt_of_ne hoffAxis with hlower | hupper
   · rw [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-      if_neg (not_lt_of_ge hlower.le)]
+      ite_eq_right (not_lt_of_ge hlower.le)]
     exact suzukiXiCarrierCayleyBilateralSynthesisOperator_forwardNode
       rho hlower
   · rw [suzukiXiCarrierCayleyOffAxisNodeCoefficientVector,
-      if_pos hupper]
+      ite_eq_left hupper]
     exact suzukiXiCarrierCayleyBilateralSynthesisOperator_backwardNode
       rho hupper
 

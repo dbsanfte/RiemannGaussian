@@ -68,7 +68,7 @@ theorem paired_frequency {p k a b xi eta X s : ℕ}
       (fun i => ∑ j, ((xy.2.2 j).val.val + 1 : ℤ) ^ (i.val + 1)) := by
   funext i
   simp only [Fintype.sum_sum_type, pairedColour, pairedTail, Sum.elim_inl, Sum.elim_inr,
-    VinogradovSignedCongruence.sign, if_true, Bool.false_eq_true, if_false, one_mul, neg_mul,
+    VinogradovSignedCongruence.sign, ite_true, Bool.false_eq_true, ite_false, one_mul, neg_mul,
     Finset.sum_neg_distrib, Pi.sub_apply, sub_eq_add_neg]
 
 /-- Select an actual block from both tails while retaining induced signs and every complementary frequency. -/

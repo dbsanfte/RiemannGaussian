@@ -210,7 +210,7 @@ theorem logDeriv_pairedEtaCore_eq_factor_add_riemannZeta
       pairedEtaCore_eq_factor_riemannZeta_of_re_pos_of_ne_one
         hwre (by simpa using hwone)
   rw [(logDeriv_congr_nhds hevent).self_of_nhds]
-  rw [logDeriv_mul s hfactor hzeta
+  rw [logDeriv_fun_mul s hfactor hzeta
     (hasDerivAt_pairedEtaFactor s).differentiableAt
     (differentiableAt_riemannZeta hsone)]
   rw [logDeriv_pairedEtaFactor]

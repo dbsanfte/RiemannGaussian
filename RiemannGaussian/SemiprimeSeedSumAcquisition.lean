@@ -168,7 +168,7 @@ theorem recoverSeedSum_common {p q m j r : ℕ}
     recoverSeedSum (p*q) m (progressionSeed (projectedUnit g m) (p*q) m j) r=some p := by
   have hs := common_seed_sum_exact hp hq hpq.ne hm hmprime hsize g hlong hj hjm hr hhit
   unfold recoverSeedSum
-  rw [hs,factorSumCandidate_exact hpq.le,checkedSignal,Nat.gcd_eq_right (dvd_mul_right p q),if_pos]
+  rw [hs,factorSumCandidate_exact hpq.le,checkedSignal,Nat.gcd_eq_right (dvd_mul_right p q),ite_eq_left]
   exact ⟨hp.one_lt,by nlinarith only [hp.pos,hq.one_lt]⟩
 
 /-- Read one original seed over the common padded absolute index range. -/

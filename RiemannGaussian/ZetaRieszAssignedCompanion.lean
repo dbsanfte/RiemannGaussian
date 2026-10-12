@@ -82,22 +82,22 @@ theorem assignedAtom_eq_phase (A : Finset ℕ) (L y : ℝ) (N : ℕ) {n : ℕ}
   have hpd := Nat.dvd_of_mem_primeFactors hp
   have hpn : p * (n / p) = n := Nat.mul_div_cancel' hpd
   by_cases hpa : p ∈ A
-  · rw [if_pos hpa]
+  · rw [ite_eq_left hpa]
     by_cases hg : eligibleCofactor p (n / p)
     · have ht : p ∈ A ∧ eligibleCofactor p (n / p) := ⟨hpa, hg⟩
-      rw [if_pos ht, compositeAtom]
+      rw [ite_eq_left ht, compositeAtom]
       dsimp only [eligibleCofactor] at hg
-      rw [if_pos hg, hpn]
+      rw [ite_eq_left hg, hpn]
       rw [mul_assoc (-(VaughanLogAverage.riesz L n : ℂ)), kernel_split_phase hpp hn hpd]
       push_cast
       ring
     · have ht : ¬(p ∈ A ∧ eligibleCofactor p (n / p)) := fun h => hg h.2
-      rw [if_neg ht, compositeAtom]
+      rw [ite_eq_right ht, compositeAtom]
       dsimp only [eligibleCofactor] at hg
-      rw [if_neg hg]
+      rw [ite_eq_right hg]
       simp
   · have ht : ¬(p ∈ A ∧ eligibleCofactor p (n / p)) := fun h => hpa h.1
-    rw [if_neg hpa, if_neg ht]
+    rw [ite_eq_right hpa, ite_eq_right ht]
     simp
 
 
@@ -121,7 +121,7 @@ theorem originalAtom_eq_phase {L : ℝ} (hL : 0 < L) (y : ℝ) (N : ℕ) {n : �
         ((Real.log n ^ (N + 1) / ((N + 1).factorial : ℝ) : ℝ) : ℂ) *
           zetaPrimeFeature (3 / 2 + Complex.I * y) n := by
   have hLc : (L : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr hL.ne'
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos (show Squarefree n ∧ ¬ n.Prime from ⟨hn, hnp⟩)]
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left (show Squarefree n ∧ ¬ n.Prime from ⟨hn, hnp⟩)]
   simp only [zetaPrimeLogKernel,
     Nat.factorial_succ, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg,
     Complex.ofReal_pow, Complex.ofReal_natCast, Nat.cast_mul, pow_succ]
@@ -177,9 +177,9 @@ theorem hasSum_mul_lift {p : ℕ} (hp : 0 < p) (f : ℕ → ℂ) {v : ℂ} (h : 
       intro hd
       obtain ⟨a, ha⟩ := hd
       exact hn ⟨a, ha.symm⟩
-    exact if_neg hd
+    exact ite_eq_right hd
   apply (hi.hasSum_iff hz).mp
-  simpa only [Function.comp_def, dvd_mul_right, if_true, Nat.mul_div_cancel_left _ hp] using h
+  simpa only [Function.comp_def, dvd_mul_right, ite_true, Nat.mul_div_cancel_left _ hp] using h
 
 /-- The complete cofactor atom lifted to its integer product label. -/
 def liftedAtom (L y : ℝ) (k l p n : ℕ) : ℂ :=
@@ -286,9 +286,9 @@ theorem assignedAtom_eq_boundedShare (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
     assignedAtom A L y N n = (boundedShare A N n : ℂ) *
       (SquarefreeVaughanLogSource.coefficient L n * zetaPrimeLogKernel N (3 / 2 + Complex.I * y) n) := by
   by_cases hn : Squarefree n ∧ 1 < n ∧ ¬ n.Prime
-  · rw [boundedShare, if_pos hn]
+  · rw [boundedShare, ite_eq_left hn]
     exact assignedAtom_eq_share A hL y N hn.1 hn.2.1 hn.2.2
-  · rw [boundedShare, if_neg hn, assignedAtom_eq_zero A L y N n hn]
+  · rw [boundedShare, ite_eq_right hn, assignedAtom_eq_zero A L y N n hn]
     simp
 
 /-- The original signed coefficient multiplied by its assigned companion fraction. -/

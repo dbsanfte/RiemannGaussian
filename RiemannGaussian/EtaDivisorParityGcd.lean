@@ -136,9 +136,9 @@ theorem sum_range_pairedEtaDivisorParity_coprime {d e : ℕ}
     (∑ M ∈ Finset.range (2 * d * e), pairedEtaDivisorParityProduct d e M) =
       if Odd d ∧ Odd e then 2 else 0 := by
   by_cases hodd : Odd d ∧ Odd e
-  · rw [if_pos hodd]
+  · rw [ite_eq_left hodd]
     exact sum_range_pairedEtaDivisorParity_coprime_odd_full hodd.1 hodd.2 hde
-  · rw [if_neg hodd]
+  · rw [ite_eq_right hodd]
     apply sum_range_pairedEtaDivisorParity_of_opposite_sign hd he
     by_cases hdo : Odd d
     · have hee : Even e := Nat.not_odd_iff_even.mp (fun heo ↦ hodd ⟨hdo, heo⟩)

@@ -29,14 +29,14 @@ open ZetaRieszRadialCompensation ZetaRieszTriplePrime
 private theorem largest_mem {n : ℕ} (hc : n.primeFactors.card = 5) :
     largestPrime n ∈ n.primeFactors := by
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-  rw [largestPrime,dif_pos hne]
+  rw [largestPrime,dite_eq_left hne]
   exact Finset.max'_mem _ _
 
 private theorem log_le_largest {n p : ℕ} (hp : p ∈ n.primeFactors) :
     Real.log p ≤ Real.log (largestPrime n) := by
   have hne : n.primeFactors.Nonempty := ⟨p,hp⟩
   have hle : p ≤ largestPrime n := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.le_max' _ _ hp
   exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
     (by exact_mod_cast hle)
@@ -72,11 +72,11 @@ theorem positiveAllowance_le_cofactor_log {n r : ℕ} (hc : n.primeFactors.card 
       rw [Finset.card_erase_of_mem hr,Finset.card_erase_of_mem (largest_mem hc),hc]
     simp only [Finset.sum_const,nsmul_eq_mul,hcard,Nat.cast_ofNat] at hb
     unfold positiveAllowance
-    rw [if_pos hs,balance_eq_min hs hc L]
+    rw [ite_eq_left hs,balance_eq_min hs hc L]
     apply mul_le_mul_of_nonneg_left _ (div_nonneg (Real.log_natCast_nonneg n) hL.le)
     exact max_le (Real.log_natCast_nonneg r)
       (by linarith [min_le_right (L-Real.log (largestPrime n)) (Real.log r)])
-  · simp only [positiveAllowance,if_neg hs]
+  · simp only [positiveAllowance,ite_eq_right hs]
     positivity
 
 /-- The marked-prime bound includes the largest prime as well. -/
@@ -121,8 +121,8 @@ theorem positiveAllowance_eq_zero_of_pair {n r q : ℕ}
       linarith [min_le_right (L-Real.log (largestPrime n)) (Real.log r),
         min_le_right (L-Real.log (largestPrime n)) (Real.log q)]
     unfold positiveAllowance
-    rw [if_pos hs,balance_eq_min hs hc L,max_eq_left hbal,mul_zero]
-  · simp only [positiveAllowance,if_neg hs]
+    rw [ite_eq_left hs,balance_eq_min hs hc L,max_eq_left hbal,mul_zero]
+  · simp only [positiveAllowance,ite_eq_right hs]
 
 /-- In the original radial length range, two small primes leave no
 positive five-prime coefficient. This does not discard a negative coefficient. -/
@@ -359,7 +359,7 @@ theorem small_five_positive_norm_upper (S A : Finset ℕ) {N M Q : ℕ}
   have hb : ‖∑ n ∈ S, f n‖ ≤ ∑ x ∈ D, H*Real.log x.1 := by
     calc
       _ ≤ ∑ n ∈ S, ‖f n‖ := norm_sum_le _ _
-      _ = ∑ n ∈ S, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,if_pos hn])
+      _ = ∑ n ∈ S, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,ite_eq_left hn])
       _ ≤ ∑ n ∈ D.image prod, g n := Finset.sum_le_sum_of_subset_of_nonneg hsub
         (by intro n _ _; exact ite_nonneg (norm_nonneg _) le_rfl)
       _ ≤ ∑ x ∈ D, g (prod x) := Finset.sum_image_le_of_nonneg
@@ -934,13 +934,13 @@ theorem eventually_joint_slabs_spending_log_head_with_scale {y : ℝ} (hy : 16 �
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb3
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1 ; first | rfl | ring
   · have hh := mul_le_mul_of_nonneg_left hpos (by norm_num : (0 : ℝ) ≤ 1/8)
     apply hsm4.trans
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb4
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1 ; first | rfl | ring
 
   · have hh := mul_le_mul_of_nonneg_left hpos (by norm_num : (0 : ℝ) ≤ 1/8)
     apply hsm5.trans

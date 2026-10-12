@@ -153,7 +153,7 @@ theorem balanced_coefficient_lower {u : ℝ} (hu : 1/2≤u)
     dsimp only [L]
     rw [ht]
     nlinarith only [hLu,hpl,hql,hNr]
-  simp only [completedCoefficient,if_pos hs,Complex.norm_real,Real.norm_eq_abs]
+  simp only [completedCoefficient,ite_eq_left hs,Complex.norm_real,Real.norm_eq_abs]
   change 1≤|-log (p*q : ℕ)*VaughanLogAverage.riesz L (p*q)/L|
   rw [hr,abs_div,abs_mul,abs_neg,abs_of_nonneg (log_natCast_nonneg _),
     abs_of_nonneg (by linarith only [hg] : 0≤log (p*q : ℕ)-L),abs_of_pos hL]

@@ -195,14 +195,14 @@ private theorem exactPenalty_large {n : ℕ} (hn : 36 ≤ n) :
   have hnR : (36 : ℝ) ≤ n := by exact_mod_cast hn
   have hc : (37 / 2 : ℝ) ≤ phaseContactCost n := by
     have h0 : n ≠ 0 := by omega
-    simp only [phaseContactCost, if_neg h0]
+    simp only [phaseContactCost, ite_eq_right h0]
     linarith
   have hp := mul_le_mul exactRoot_efficiency_lower hc (by norm_num : (0 : ℝ) ≤ 37 / 2)
     ((show (0 : ℝ) ≤ 11 / 625 by norm_num).trans exactRoot_efficiency_lower)
   have h0 : n ≠ 0 := by omega
   have h1 : n ≠ 1 := by omega
   unfold phaseContactExactPenalty phaseContactPolynomialPenalty
-  simp only [phaseContactSourceCoeff, if_neg h0, if_neg h1, sub_zero]
+  simp only [phaseContactSourceCoeff, ite_eq_right h0, ite_eq_right h1, sub_zero]
   linarith
 
 private theorem phaseContactFrequency_exists {n : ℕ} (hn : n ∈ phaseContactFrequencies) :

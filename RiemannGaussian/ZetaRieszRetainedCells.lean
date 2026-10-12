@@ -99,7 +99,7 @@ theorem cycle_cells_sum_eq_actual (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t : 
   simp only [ZetaRieszRetainedFraction.cycleResidual_eq_retainedFraction, Complex.real_smul] at hs
   rw [hs]
   unfold bandWeight zetaArithmeticBand
-  exact Finset.sum_congr rfl (fun m hm => by rw [if_pos hm])
+  exact Finset.sum_congr rfl (fun m hm => by rw [ite_eq_left hm])
 
 /-- Every actual arithmetic cycle list can be followed by exact cell
 cancellation, with a full-band bound and no new analytic premise. -/

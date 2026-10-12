@@ -191,7 +191,7 @@ theorem incidence_range_no_cross {B N M d : ℕ} (hN : N < B) (hM : M < B)
     Nat.mod_eq_of_lt (by omega : N < d), Nat.mod_eq_of_lt (by omega : M < d)]
   have hn : N ≠ d-1 := by omega
   have hm : M ≠ d-1 := by omega
-  simp only [if_neg hn, if_neg hm, sub_zero]
+  simp only [ite_eq_right hn, ite_eq_right hm, sub_zero]
   by_cases hp : N = (d-1)/2
   · have hq : M ≠ (d-1)/2 := by omega
     simp [hq]

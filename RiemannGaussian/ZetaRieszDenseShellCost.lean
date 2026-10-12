@@ -54,7 +54,7 @@ theorem exists_unique_log_shell {B x : ℝ} (hB : 0<B) (hx : B<x) :
   have hupp : x≤2*(B*(2 : ℝ)^(n-1)) := by
     have hh := (div_le_iff₀ hB).mp hn
     rw [← hpred,pow_succ] at hh
-    convert hh using 1 <;> first | rfl | ring
+    convert hh using 1 ; first | rfl | ring
   refine ⟨n-1,⟨hlow,hupp⟩,?_⟩
   intro j hj
   rcases lt_trichotomy j (n-1) with h | h | h
@@ -116,7 +116,7 @@ theorem reciprocal_mass_shell_cover (E I : Finset ℕ) (α : ℕ→ℝ)
     have hh := Finset.single_le_sum
       (fun j (_hj : j∈I) => show 0≤(if α j<log p ∧ log p≤2*α j then (p : ℝ)⁻¹ else 0) by
         split_ifs <;> positivity) hi
-    simpa only [if_pos hpi] using hh
+    simpa only [ite_eq_left hpi] using hh
   have hh := Finset.sum_le_sum hpoint
   rw [Finset.sum_comm] at hh
   have hrow i (hi : i∈I) :
@@ -163,7 +163,7 @@ theorem dense_shell_mass_budget (E I : Finset ℕ) (α : ℕ→ℝ) (N : ℕ)
     (mul_le_mul_of_nonneg_left hl2 (by positivity)).trans (by simpa using hcard)
   have herror : (I.card : ℝ)/(32*log ((N : ℝ)+1))≤1/256 := by
     apply (div_le_iff₀ hB0).mpr
-    convert hcard using 1 <;> first | rfl | ring
+    convert hcard using 1 ; first | rfl | ring
   have hbound : (I.card : ℝ)*(log 2+1/(32*log ((N : ℝ)+1)))≤
       log ((N : ℝ)+1)/8+1/4 := by
     rw [mul_add,mul_one_div]
@@ -243,7 +243,7 @@ theorem global_uncapped_mass_cost_le (V : Finset ℕ) (O : ℕ→Finset ℕ)
         (show 0≤221440*gappedHeadCost*(32*log ((N : ℝ)+1))^8 by positivity [gappedHeadCost_pos])) hv.le
     have ht := mul_le_mul_of_nonneg_right hh
       (div_nonneg (amplitude_nonneg N hv.le) hv.le)
-    convert ht using 1 <;> first | rfl | ring
+    convert ht using 1 ; first | rfl | ring
   have hh := Finset.sum_le_sum (fun i hi => Finset.sum_le_sum (hpoint i hi))
   exact hh.trans (global_sparse_cost_le V O N v (fun _ _ => 1) hH (sqrt_pos.mpr hx)
     hNv hvG hO (by
@@ -347,14 +347,14 @@ theorem sum_occupied_pattern_partition {M : Type*} [AddCommMonoid M]
   apply Finset.sum_congr rfl
   intro a ha
   by_cases hc : (occupiedShells a E bin).card≤h
-  · simp only [hc,if_true]
+  · simp only [hc,ite_true]
     have hmem : occupiedShells a E bin∈I.powerset := Finset.mem_powerset.mpr (hI a ha)
     rw [Finset.sum_eq_single (occupiedShells a E bin)]
     · simp [hc]
     · intro K _hK hneq
       simp [Ne.symm hneq]
     · exact fun h => False.elim (h hmem)
-  · simp only [hc,if_false]
+  · simp only [hc,ite_false]
     symm
     apply Finset.sum_eq_zero
     intro K hK
@@ -420,7 +420,7 @@ theorem truncated_pattern_price_le (I : Finset ℕ) (h : ℕ) {x : ℝ}
     rw [hp] at hh
     have he := Real.prod_one_add_le_exp_sum I (fun _ => show (0 : ℝ)≤1/32 by norm_num)
     simp only [Finset.sum_const,nsmul_eq_mul] at he
-    exact hh.trans (by convert he using 1 <;> first | rfl | ring)
+    exact hh.trans (by convert he using 1 ; first | rfl | ring)
   have hsum := (Finset.sum_le_sum hpoint).trans
     (by simpa only [← Finset.mul_sum] using (mul_le_mul_of_nonneg_left hfull
       (show 0≤(1024 : ℝ)^h by positivity)))

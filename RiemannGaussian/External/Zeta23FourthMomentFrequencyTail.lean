@@ -63,7 +63,7 @@ lemma fourthMomentArcSplitMass_eq_mass (q : ℕ) :
         intro e he
         have hedvd : e ∣ q := (Nat.mem_divisors.mp he).1
         have hesq : Squarefree e := hq.squarefree_of_dvd hedvd
-        rw [ArithmeticFunction.abs_moebius, if_pos hesq]
+        rw [ArithmeticFunction.abs_moebius, ite_eq_left hesq]
         norm_num
       _ = (#q.divisors : ℝ) * fourthMomentArcBeta q := by simp
       _ = fourthMomentArcMass q := by
@@ -102,7 +102,7 @@ lemma fourthMomentArcMass_prime_le (p : Nat.Primes) :
   have hsq : ((p : ℕ) : ℝ) ^ 2 ≤ 4 * (((p : ℕ) : ℝ) - 1) ^ 2 := by
     nlinarith [mul_nonneg hpR.le (sub_nonneg.mpr hp2R),
       sq_nonneg (((p : ℕ) : ℝ) - 2)]
-  rw [fourthMomentArcMass, if_pos hp.squarefree, hp.divisors,
+  rw [fourthMomentArcMass, ite_eq_left hp.squarefree, hp.divisors,
     Finset.card_pair hp.ne_one.symm, Nat.cast_ofNat, Nat.totient_prime hp]
   rw [Nat.cast_sub (by omega : 1 ≤ (p : ℕ)), Real.rpow_two]
   simp only [inv_eq_one_div, one_div_pow, mul_one_div, Nat.cast_one]
@@ -192,7 +192,7 @@ private theorem summable_of_squarefree_multiplicative_prime_sum
       rw [← hsubtype]
       exact ge_of_tendsto hmult.hasProd (Filter.eventually_atTop.mpr
         ⟨primes.subtype (fun p : ℕ => p.Prime), fun s hs =>
-          Finset.prod_le_prod_of_subset_of_one_le hs
+          Finset.prod_le_prod_of_subset_of_one_le₀ hs
             (fun i _ => by linarith [hge1 i])
             (fun i _ _ => hge1 i)⟩)
 

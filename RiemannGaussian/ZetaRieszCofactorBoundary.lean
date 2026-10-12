@@ -80,7 +80,7 @@ theorem boundary_atom_bound (p a k : ℕ) (y : ℝ) {L : ℝ} (hL : 0 ≤ L) :
       rw [zetaPrimeExpWeight, Real.rpow_def_of_pos ha0, ← Real.exp_add]
       apply Real.exp_le_exp.mpr
       linarith
-    rw [boundaryCoefficient, if_pos ha, norm_mul, Complex.norm_real, Real.norm_eq_abs]
+    rw [boundaryCoefficient, ite_eq_left ha, norm_mul, Complex.norm_real, Real.norm_eq_abs]
     calc
       _ ≤ (L * (a.divisors.card : ℝ)) *
           ((1024 / 255 : ℝ) ^ k * zetaPrimeExpWeight (1281 / 1024) a) :=
@@ -90,7 +90,7 @@ theorem boundary_atom_bound (p a k : ℕ) (y : ℝ) {L : ℝ} (hL : 0 ≤ L) :
         have hw0 : 0 ≤ zetaPrimeExpWeight (1281 / 1024) a := (Real.exp_pos _).le
         gcongr
       _ = _ := by ring
-  · simp only [boundaryCoefficient, if_neg ha, zero_mul, norm_zero]
+  · simp only [boundaryCoefficient, ite_eq_right ha, zero_mul, norm_zero]
     positivity
 
 /-- The complete saturation-correction series has an independent height-uniform norm
@@ -294,8 +294,8 @@ theorem cofactorCoefficient_eq_coupled {p : ℕ} (hp : p.Prime) {L : ℝ}
         ha.1, ha.2, ha1, hprime, hr]
     · have hgood : Squarefree a ∧ a ≠ 1 ∧ ¬a.Prime ∧ ¬p ∣ a := ⟨ha.1, ha1, hprime, ha.2⟩
       have hbad : ¬(a.Prime ∧ ¬p ∣ a) := fun h => hprime h.1
-      rw [cofactorCoefficient, if_pos ha, coupledCoefficient, if_pos hgood,
-        if_neg hbad, boundaryCoefficient, if_pos hgood, if_neg ha1, add_zero, add_zero]
+      rw [cofactorCoefficient, ite_eq_left ha, coupledCoefficient, ite_eq_left hgood,
+        ite_eq_right hbad, boundaryCoefficient, ite_eq_left hgood, ite_eq_right ha1, add_zero, add_zero]
       rw [ZetaSquarefreeRieszWindows.riesz_prime_mul L hp ha.2]
       push_cast
       ring
@@ -303,7 +303,7 @@ theorem cofactorCoefficient_eq_coupled {p : ℕ} (hp : p.Prime) {L : ℝ}
       fun h => ha ⟨h.1, h.2.2.2⟩
     have hprime : ¬(a.Prime ∧ ¬p ∣ a) := fun h => ha ⟨h.1.squarefree, h.2⟩
     simp only [cofactorCoefficient, coupledCoefficient, boundaryCoefficient,
-      if_neg ha, if_neg hc, if_neg hprime, if_neg ha1, add_zero]
+      ite_eq_right ha, ite_eq_right hc, ite_eq_right hprime, ite_eq_right ha1, add_zero]
 
 /-- For every eligible composite cofactor, the coupled coefficient with its physical
 logarithmic factor is precisely the original carrier coefficient. -/
@@ -318,8 +318,8 @@ theorem coupledCoefficient_eq_original {p a : ℕ} (hp : p.Prime)
   have hbad : ¬(a.Prime ∧ ¬p ∣ a) := fun h => hprime h.1
   have hpacom : Squarefree (p * a) ∧ ¬(p * a).Prime :=
     ⟨hsf, Nat.not_prime_mul hp.ne_one ha1⟩
-  rw [coupledCoefficient, if_pos hgood, if_neg hbad, add_zero,
-    SquarefreeVaughanLogSource.coefficient, if_pos hpacom]
+  rw [coupledCoefficient, ite_eq_left hgood, ite_eq_right hbad, add_zero,
+    SquarefreeVaughanLogSource.coefficient, ite_eq_left hpacom]
   push_cast
   ring
 
@@ -356,7 +356,7 @@ theorem hasSum_coupledResponse {p : ℕ} (hp : p.Prime) {L : ℝ}
   rw [cofactorCoefficient_eq_coupled hp hpL]
   by_cases ha : a = 1
   · simp [ha, zetaPrimeLogKernel, hk.ne']
-  · rw [if_neg ha]
+  · rw [ite_eq_right ha]
     ring
 
 /-- The complete coupled response is the difference of the two independently bounded

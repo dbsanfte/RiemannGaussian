@@ -261,7 +261,7 @@ theorem orderFromPrimes_eq_order {G : Type*} [Group G] [Finite G] [DecidableEq G
     have hr := hprimes r (by simp)
     have htail : ∀ s∈tail, s.Prime := fun s hs => hprimes s (List.mem_cons_of_mem _ hs)
     by_cases he : g^tail.prod=1
-    · simp only [orderFromPrimes, if_pos he]
+    · simp only [orderFromPrimes, ite_eq_left he]
       exact ih g htail he
     · have hnext : (g^r)^tail.prod=1 := by
         simpa only [List.prod_cons, pow_mul] using hpow
@@ -271,7 +271,7 @@ theorem orderFromPrimes_eq_order {G : Type*} [Group G] [Finite G] [DecidableEq G
         have hd := orderOf_dvd_of_pow_eq_one hpow
         rw [List.prod_cons] at hd
         exact he (orderOf_dvd_iff_pow_eq_one.mp (hc.dvd_of_dvd_mul_left hd))
-      simp only [orderFromPrimes, if_neg he]
+      simp only [orderFromPrimes, ite_eq_right he]
       rw [ih (g^r) htail hnext, orderOf_pow, Nat.gcd_eq_right hdiv,
         Nat.mul_div_cancel' hdiv]
 
@@ -648,14 +648,14 @@ theorem kernelRoute_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
   dsimp only
   rw [← activeUnit]
   by_cases hsmooth : activeUnit g B=1
-  · rw [if_pos hsmooth]
+  · rw [ite_eq_left hsmooth]
     obtain ⟨d, hd⟩ := smooth_kernel_recovers hp hq hbudget g hdata hsmooth
     rw [hd]
     exact SemiprimeCommonOrder.recoverCommon_sound hd
-  · rw [if_neg hsmooth]
+  · rw [ite_eq_right hsmooth]
     have hactive := activeUnit_certificate hp hq hB hbudget g hdata hsmooth
     by_cases hsmall : (splitSmall (p*q-1) B).1≤B^4
-    · rw [if_pos hsmall]
+    · rw [ite_eq_left hsmall]
       have hR1 : 1<(splitSmall (p*q-1) B).1 := by
         have hnot : (splitSmall (p*q-1) B).1≠1 := by
           intro he
@@ -672,7 +672,7 @@ theorem kernelRoute_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
         (he ▸ hactive.2.2.2.2.2.2)
       rw [hf]
       exact SemiprimeCommonOrder.recoverCommon_sound hf
-    · rw [if_neg hsmall]
+    · rw [ite_eq_right hsmall]
       obtain ⟨u,v,hu,hv,hR⟩ := active_large_residual_semiprime hp hq hB hbudget g hdata
         hsmooth (by omega)
       have hhalf := splitSmall_half_bound (show 2<p*q by omega)
@@ -757,7 +757,7 @@ theorem publicRoute_semiprime {p q : ℕ} (hp : p.Prime) (hq : q.Prime) :
     rw [hr] at hprevious
     obtain ⟨hc,hdata⟩ := hprevious
     dsimp only
-    rw [dif_pos hc]
+    rw [dite_eq_left hc]
     exact kernelRoute_semiprime hp hq hB hbudget _ hdata
   | longBase k =>
     rw [hr] at hprevious
@@ -796,7 +796,7 @@ theorem control_residual_selected (g : (ZMod (29759*119033))ˣ)
       (u : ZMod (29759*119033))) he
     simp only [Units.val_pow_eq_pow_val, hg, Units.val_one] at hv
     exact control_residual_powers.2 hv
-  rw [selectedOrder, if_neg hnot]
+  rw [selectedOrder, ite_eq_right hnot]
 
 /-- The selected common order recovers the original proper factor from a
 single quadratic candidate. The child routing computation remains charged. -/

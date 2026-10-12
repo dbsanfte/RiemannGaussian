@@ -52,7 +52,7 @@ theorem second_original_kernel {u : ℝ} {N n q : ℕ} (hn : Squarefree n)
   calc
     _ = ((Real.log (smallPrime n q) : ℂ) / (SquarefreeVaughanLogSource.length u N : ℂ)) *
         ((Real.log n : ℂ) * zetaPrimeLogKernel N (3 / 2 + Complex.I * y) n) := by
-      rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hn, hnp⟩, hr]
+      rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hn, hnp⟩, hr]
       push_cast
       ring
     _ = _ := by rw [ZetaRieszHeadOrders.log_mul_kernel]; ring
@@ -163,7 +163,7 @@ theorem second_composite_convolution {u : ℝ} {N n q : ℕ} (hn : Squarefree n)
   have hcoef : -(VaughanLogAverage.riesz (SquarefreeVaughanLogSource.length u N) n : ℂ) =
       (Real.log (smallPrime n q) : ℂ) := by exact_mod_cast second_neg_riesz hn hc hq
   change Squarefree (n / q) ∧ n / q ≠ 1 ∧ ¬Nat.Prime (n / q) ∧ ¬q ∣ n / q at hel
-  rw [ZetaRieszJointCofactor.compositeAtom, if_pos hel, he, hcoef,
+  rw [ZetaRieszJointCofactor.compositeAtom, ite_eq_left hel, he, hcoef,
     (second_factorization hn hq).2, log_kernel_convolution _ _ _ hp.pos hr.pos,
     Finset.sum_mul]
   exact Finset.sum_congr rfl (fun j _ => by ring)

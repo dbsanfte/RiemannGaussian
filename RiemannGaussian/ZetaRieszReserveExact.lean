@@ -43,8 +43,8 @@ theorem eventually_reserve_product_errors (rho : NontrivialZetaZero)
     filter_upwards [eventually_ge_atTop 320] with N hN
     by_cases hf : f N ∈ reserveOrders N
     · obtain ⟨_, _, _, _, hk, hl, hls⟩ := reserveOrders_bounds hN hf
-      simpa only [k, if_pos hf] using And.intro hk (And.intro hl hls)
-    · simp only [k, if_neg hf]
+      simpa only [k, ite_eq_left hf] using And.intro hk (And.intro hl hls)
+    · simp only [k, ite_eq_right hf]
       omega
   have hkt : Tendsto k atTop atTop := by
     refine tendsto_atTop.2 (fun b => ?_)
@@ -63,8 +63,8 @@ theorem eventually_reserve_product_errors (rho : NontrivialZetaZero)
     hs.eventually (eventually_lt_nhds hε)] with N hpN hsN
   intro hmem
   constructor
-  · simpa only [weightedComplete, Function.comp_def, k, if_pos hmem] using hpN.le
-  · simpa only [weightedComplete, Function.comp_def, k, if_pos hmem] using hsN.le
+  · simpa only [weightedComplete, Function.comp_def, k, ite_eq_left hmem] using hpN.le
+  · simpa only [weightedComplete, Function.comp_def, k, ite_eq_left hmem] using hsN.le
 
 /-- The reserve's positive mass after its exact endpoint subtraction. -/
 def reserveMass (u : ℝ) : ℝ :=

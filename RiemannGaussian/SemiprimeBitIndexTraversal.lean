@@ -30,11 +30,11 @@ theorem decrementBits_value {remaining : List Bool} (hp : 0<bitValue remaining) 
       bitValue (subBits remaining [true] false).result.bits=bitValue remaining-1 := by
   have hb : (subBits remaining [true] false).borrow=false :=
     (subBits_borrow_false _ _).mpr (by
-      simp only [bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero]
+      simp only [bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero]
       omega)
   refine ⟨hb,?_⟩
   have he := subBits_difference hb
-  simpa only [bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero] using he
+  simpa only [bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero] using he
 
 /-- Actual paid magnitude copy and its retained original sign. -/
 structure SignedCopyWordReport where
@@ -146,7 +146,7 @@ theorem rangeWordsBits_values (template : List Bool) (current : SignedWord) (rem
       have hchild := ih (bitValue decrement.result.bits) hsmall fitting.word
         decrement.result.bits rfl hchildFit
       have hcount : n=bitValue decrement.result.bits+1 := by dsimp only [decrement]; omega
-      rw [rangeWordsBits,dif_pos hn]
+      rw [rangeWordsBits,dite_eq_left hn]
       dsimp only
       rw [List.map_cons,hchild,hcount,List.range_succ_eq_map,List.map_cons,List.map_map]
       simp only [Nat.cast_zero,add_zero]
@@ -158,7 +158,7 @@ theorem rangeWordsBits_values (template : List Bool) (current : SignedWord) (rem
       ring
     · have hz := (nonzeroBits_false_iff remaining).mp (Bool.eq_false_of_not_eq_true hn)
       have hn0 : n=0 := by omega
-      rw [rangeWordsBits,dif_neg hn,hn0]
+      rw [rangeWordsBits,dite_eq_right hn,hn0]
       rfl
 
 /-- Compute a physical endpoint template by actual bit copying, finishing
@@ -247,7 +247,7 @@ theorem intervalCounterBits_value (bounds : WordInterval) :
     have ht := congrArg Int.toNat hm
     unfold intervalCounterBits
     dsimp only
-    rw [if_pos hn]
+    rw [ite_eq_left hn]
     simpa only [Int.toNat_natCast,hv] using ht
   · have hnegative : (addSignedBits (subSignedBits bounds.upper bounds.lower).word oneWord).word.value<0 := by
       have hh : ¬zeroWord.value≤
@@ -257,7 +257,7 @@ theorem intervalCounterBits_value (bounds : WordInterval) :
       omega
     unfold intervalCounterBits
     dsimp only
-    rw [if_neg hn]
+    rw [ite_eq_right hn]
     change 0=(bounds.upper.value+1-bounds.lower.value).toNat
     rw [hv] at hnegative
     omega
@@ -406,7 +406,7 @@ theorem rangeWordsBits_cost_width {W : ℕ} (hW : 1≤W) {template : List Bool}
         dsimp only [decrement,increment,fitting] at *
         simp only [List.length_cons,List.length_nil] at hdecrementCost
         omega
-      rw [rangeWordsBits,dif_pos hn]
+      rw [rangeWordsBits,dite_eq_left hn]
       dsimp only
       refine ⟨?_,?_,?_,?_⟩
       · change child.words.length+1=n
@@ -425,7 +425,7 @@ theorem rangeWordsBits_cost_width {W : ℕ} (hW : 1≤W) {template : List Bool}
         · exact hchild.2.2.2 word hw
     · have hz := (nonzeroBits_false_iff remaining).mp (Bool.eq_false_of_not_eq_true hn)
       have hn0 : n=0 := by omega
-      rw [rangeWordsBits,dif_neg hn]
+      rw [rangeWordsBits,dite_eq_right hn]
       dsimp only
       refine ⟨by simp only [List.length_nil]; omega,
         by simp only [List.length_nil]; omega,?_,?_⟩

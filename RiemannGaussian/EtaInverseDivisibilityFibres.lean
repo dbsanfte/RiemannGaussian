@@ -41,7 +41,7 @@ theorem pairedEtaInverseRegionCoefficient_complement_eq_neg
     pairedEtaInverseRegionCoefficient (pairedEtaInverseHyperbolicRegion T \ S) n =
       -pairedEtaInverseRegionCoefficient S n := by
   have h := pairedEtaInverseRegionCoefficient_complement_add hS n
-  rw [pairedEtaInverseRegionCoefficient_full_product hn, if_neg hn1] at h
+  rw [pairedEtaInverseRegionCoefficient_full_product hn, ite_eq_right hn1] at h
   exact eq_neg_of_add_eq_zero_left h
 
 /-- The literal inverse region cut by divisibility of its outer divisor. -/

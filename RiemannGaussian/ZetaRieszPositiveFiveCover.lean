@@ -375,7 +375,7 @@ private theorem cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
     else ZetaRieszCapacityCheck.check c &&
       ZetaRieszCapacityCheck.check {c with height := offset lo B,lower := w.1,upper := 1000000}) = true
     at hnum
-  rw [if_neg hn] at hnum
+  rw [ite_eq_right hn] at hnum
   have hbig : ZetaRieszCapacityCheck.check c = true := by
     split_ifs at hnum with h
     · simp only [Bool.and_eq_true] at hnum
@@ -393,7 +393,7 @@ private theorem cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
     ring
   rw [← hpay]
   by_cases hr0 : offset lo B = 0
-  · rw [if_pos hr0] at hnum
+  · rw [ite_eq_left hr0] at hnum
     simp only [Bool.and_eq_true,decide_eq_true_eq] at hnum
     have hw0 : (w.1 : ℝ) = 0 := by exact_mod_cast hnum.1
     have hh : (0 : ℝ) ≤ c.height := by exact_mod_cast hg.2.2.2.le
@@ -411,7 +411,7 @@ private theorem cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
         rw [sub_zero,max_eq_right (le_min hr.1 hh)]
       _ ≤ _ := by simpa only [c,cap,Rat.cast_zero,sub_zero] using
           (ZetaRieszCapacityCheck.check_sound hbig).2
-  · rw [if_neg hr0] at hnum
+  · rw [ite_eq_right hr0] at hnum
     simp only [Bool.and_eq_true] at hnum
     have hs := hnum.2
     have hrc : offset lo B ≤ c.height := by
@@ -454,7 +454,7 @@ theorem check_sound {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × ℚ}
   have hd : 0 < lam*x 0*x 1*x 2 := mul_pos (mul_pos (mul_pos hl hp) hb) ha
   unfold density
   by_cases horder : x 1 < x 2
-  · rw [if_pos horder]
+  · rw [ite_eq_left horder]
     change 0 ≤ (∫ v in Set.Ioc 0 R, max 0 (min (v-r) m)/(v*(Q-v)))/_ ∧ _
     by_cases hR0 : 0 ≤ R
     · rw [← intervalIntegral.integral_of_le hR0]
@@ -490,7 +490,7 @@ theorem check_sound {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × ℚ}
     · have he : Set.Ioc (0 : ℝ) R = ∅ := Set.Ioc_eq_empty_of_le (le_of_not_ge hR0)
       rw [he,setIntegral_empty,zero_div]
       exact ⟨le_rfl,hw⟩
-  · rw [if_neg horder]
+  · rw [ite_eq_right horder]
     exact ⟨le_rfl,hw⟩
 
 /-- An exhaustive accepted cover proves the complete positive-five

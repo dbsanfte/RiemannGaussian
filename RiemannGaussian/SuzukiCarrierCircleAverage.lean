@@ -122,7 +122,7 @@ theorem suzukiXiParameterCircleAverage_eq_of_safe {r : ℝ}
     (mul_le_mul_of_nonneg_left (norm_suzukiXiZeroCarrier_le_one_of_half_le_im hz) hr).trans_lt
       (by simpa using hr1)
   rw [suzukiXiParameterCircleAverage_eq_projection hr
-    (suzukiXiEValue_ne_zero_of_half_le_im hz) hs.ne, suzukiXiCircleProjection, if_pos hs]
+    (suzukiXiEValue_ne_zero_of_half_le_im hz) hs.ne, suzukiXiCircleProjection, ite_eq_left hs]
 
 /-- Every xi zero has a punctured neighborhood on which the averaged
 carrier agrees exactly with the original one. The original denominator
@@ -143,7 +143,7 @@ theorem suzukiXiParameterCircleAverage_eventuallyEq_at_zero
   filter_upwards [hlocal, hsmall.filter_mono nhdsWithin_le_nhds] with z hz hs
   have hbound : r * ‖suzukiXiZeroCarrier z‖ < 1 := by rwa [hz.2.2.1]
   have hp : suzukiXiCircleProjection r z = suzukiXiZeroCarrier z := by
-    simp only [suzukiXiCircleProjection, if_pos hbound]
+    simp only [suzukiXiCircleProjection, ite_eq_left hbound]
   exact ⟨hz.1, circleIntegrable_suzukiXiAffineCarrier hr.le hz.1 hbound.ne,
     (suzukiXiParameterCircleAverage_eq_projection hr.le hz.1 hbound.ne).trans hp, hp⟩
 

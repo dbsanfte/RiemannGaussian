@@ -99,8 +99,8 @@ theorem literal_insert_clipped {p q r b : ℕ} (hp : p.Prime)
       (show b ∣ q*(r*b) from dvd_mul_of_dvd_right (dvd_mul_left b r) q) hsfq.ne_zero))
   rw [residual_atom_eq_parity_response hsfq hcount hp hpqr,
     response_insert_clipped hp hq hr hb hc hrb hqr hsat hfull hD hhead,
-    moebius_prime_mul_eq_not_dvd hq,if_neg hqr,
-    moebius_prime_mul_eq_not_dvd hr,if_neg hrb]
+    moebius_prime_mul_eq_not_dvd hq,ite_eq_right hqr,
+    moebius_prime_mul_eq_not_dvd hr,ite_eq_right hrb]
   push_cast
   ring
 

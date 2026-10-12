@@ -90,13 +90,13 @@ theorem optimized_sum_eq_smooth_add_rough (P : Polynomial ℂ) (N : ℕ) (y L u 
     · have hnlarge : ¬ ∃ p ∈ n.primeFactors, N ^ 2 < p := by
         rintro ⟨p, hpn, hpb⟩
         exact (hp p hpn).not_gt hpb
-      rw [if_pos ⟨hs, hp⟩, if_neg (fun h => hnlarge h.2), add_zero]
+      rw [ite_eq_left ⟨hs, hp⟩, ite_eq_right (fun h => hnlarge h.2), add_zero]
     · have hlarge : ∃ p ∈ n.primeFactors, N ^ 2 < p := by
         by_contra hh
         apply hp
         intro p hpn
         exact le_of_not_gt (fun hpb => hh ⟨p, hpn, hpb⟩)
-      rw [if_neg (fun h => hp h.2), if_pos ⟨hs, hlarge⟩, zero_add]
+      rw [ite_eq_right (fun h => hp h.2), ite_eq_left ⟨hs, hlarge⟩, zero_add]
   · have hc : SquarefreeVaughanLogSource.coefficient L n = 0 := by
       simp [SquarefreeVaughanLogSource.coefficient, hs]
     simp only [hc, zero_mul, ite_self, zero_add]
@@ -142,11 +142,11 @@ theorem optimizedRoughBand_cofactor_gt {u : ℝ} {N n a p : ℕ}
     optimizedCofactorThreshold u N < a := by
   have hm := (Finset.mem_filter.mp hn).1
   by_cases hc : u = Real.exp (-(1 / 2 : ℝ))
-  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, if_pos hc] at hm
-    simpa only [optimizedCofactorThreshold, if_pos hc] using
+  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, ite_eq_left hc] at hm
+    simpa only [optimizedCofactorThreshold, ite_eq_left hc] using
       ZetaRieszGrowingCofactor.surviving_composite_cofactor_gt hm ha1 hasf hap hp hpa he
-  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, if_neg hc] at hm
-    simpa only [optimizedCofactorThreshold, if_neg hc] using
+  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, ite_eq_right hc] at hm
+    simpa only [optimizedCofactorThreshold, ite_eq_right hc] using
       ZetaRieszGeneralCofactorTilt.surviving_tilted_cofactor_gt hm ha1 hasf hap hp hpa he
 
 /-- The exact original source normalization on the class satisfying

@@ -50,7 +50,7 @@ theorem coefficient_one_intermediate_composite {a b p : ℕ} {L : ℝ}
   have hn : ¬ (b * (p * a)).Prime := by
     rw [← Nat.mul_assoc]
     exact Nat.not_prime_mul hbp ha1
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hfull, hn⟩,
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hfull, hn⟩,
     riesz_one_intermediate_composite hfull hp ha1 hap haL hlarge]
   congr 1
   ring
@@ -149,7 +149,7 @@ theorem coefficient_extreme_composite_eq_divisor_window {a b q : ℕ} {L : ℝ}
     rcases (Nat.dvd_prime hn).mp hd with h | h
     · exact ha1 h
     · exact hap (h ▸ hn)
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hfull, hn⟩,
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hfull, hn⟩,
     riesz_extreme_composite_eq_divisor_window hfull ha1 hap hlarge]
   congr 1
   ring

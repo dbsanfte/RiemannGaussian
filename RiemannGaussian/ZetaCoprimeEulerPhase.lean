@@ -45,8 +45,8 @@ private theorem arithmeticFeature_multiplicative (s : ℂ) :
   rw [ArithmeticFunction.IsMultiplicative.iff_ne_zero]
   refine ⟨by simp [arithmeticFeature, zetaPrimeFeature], ?_⟩
   intro m n hm hn _
-  simp only [arithmeticFeature, ArithmeticFunction.coe_mk, if_neg hm, if_neg hn,
-    if_neg (Nat.mul_ne_zero hm hn)]
+  simp only [arithmeticFeature, ArithmeticFunction.coe_mk, ite_eq_right hm, ite_eq_right hn,
+    ite_eq_right (Nat.mul_ne_zero hm hn)]
   exact feature_mul s (Nat.pos_of_ne_zero hm) (Nat.pos_of_ne_zero hn)
 
 /-- The literal finite divisor sum equals the complete prime-factor
@@ -59,13 +59,13 @@ theorem coprimeEuler_eq_product {P : ℕ} (hP : Squarefree P) (s : ℂ) :
   have he1 : (∏ p ∈ P.primeFactors, (1 - if p = 0 then 0 else zetaPrimeFeature s p)) =
       ∏ p ∈ P.primeFactors, (1 - zetaPrimeFeature s p) := by
     exact Finset.prod_congr rfl (fun p hp ↦ by
-      rw [if_neg (Nat.prime_of_mem_primeFactors hp).ne_zero])
+      rw [ite_eq_right (Nat.prime_of_mem_primeFactors hp).ne_zero])
   rw [he1] at h
   rw [h]
   unfold zetaCoprimeEulerFactor zetaFiniteDirichletSeries
   apply Finset.sum_congr rfl
   intro d hd
-  rw [if_neg (Nat.pos_of_mem_divisors hd).ne']
+  rw [ite_eq_right (Nat.pos_of_mem_divisors hd).ne']
 
 /-- The exact original prime multiplier is its two divisor terms. -/
 theorem coprimeEuler_prime {p : ℕ} (hp : p.Prime) (s : ℂ) :
@@ -133,7 +133,7 @@ theorem norm_coprimeEuler_le_with_phase {P : ℕ} (hP : Squarefree P) (s : ℂ) 
   calc
     _ ≤ ∏ p ∈ P.primeFactors,
         (1 + zetaPrimeExpWeight s.re p) * Real.exp (-phaseGain s p) :=
-      Finset.prod_le_prod (fun _ _ ↦ norm_nonneg _) (fun p _ ↦ norm_factor_le_with_phase s p)
+      Finset.prod_le_prod₀ (fun _ _ ↦ norm_nonneg _) (fun p _ ↦ norm_factor_le_with_phase s p)
     _ = _ := by rw [Finset.prod_mul_distrib, ← Real.exp_sum, Finset.sum_neg_distrib]
 
 /-- Distinct primes cannot have a positive integral logarithmic relation. -/

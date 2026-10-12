@@ -110,20 +110,20 @@ theorem sum_positiveSpectralZetaZeroWindow_eq_upper_add_critical_add_lower
     have hyzero : (zetaSpectralCoordinate rho.1).im ≠ 0 := ne_of_gt hypos
     have hyneg : ¬(zetaSpectralCoordinate rho.1).im < 0 :=
       not_lt_of_ge hypos.le
-    rw [if_pos hypos, if_neg hyzero, if_neg hyneg]
+    rw [ite_eq_left hypos, ite_eq_right hyzero, ite_eq_right hyneg]
     simp
   · by_cases hyzero : y = 0
     · change ¬0 < (zetaSpectralCoordinate rho.1).im at hypos
       change (zetaSpectralCoordinate rho.1).im = 0 at hyzero
       have hyneg : ¬(zetaSpectralCoordinate rho.1).im < 0 := by
         linarith
-      rw [if_neg hypos, if_pos hyzero, if_neg hyneg]
+      rw [ite_eq_right hypos, ite_eq_left hyzero, ite_eq_right hyneg]
       simp
     · have hyneg : y < 0 := lt_of_le_of_ne (not_lt.mp hypos) hyzero
       change ¬0 < (zetaSpectralCoordinate rho.1).im at hypos
       change (zetaSpectralCoordinate rho.1).im ≠ 0 at hyzero
       change (zetaSpectralCoordinate rho.1).im < 0 at hyneg
-      rw [if_neg hypos, if_neg hyzero, if_pos hyneg]
+      rw [ite_eq_right hypos, ite_eq_right hyzero, ite_eq_left hyneg]
       simp
 
 /-- Reflection bijects the upper and lower spectral colours of an arbitrary

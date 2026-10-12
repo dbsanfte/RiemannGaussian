@@ -53,7 +53,7 @@ theorem minimumTail_le_product {s : ℕ} (hs : 1 ≤ s) (U : ℕ → ℕ)
   | zero => simpa [minimumTail] using hD
   | succ n ih =>
     have hprod : 1 ≤ ∏ i ∈ Finset.range n, U (d + 1 + i + 1) :=
-      Finset.one_le_prod (fun i hi => hU _ (by have := Finset.mem_range.mp hi; omega))
+      Finset.one_le_prod₀ (fun i hi => hU _ (by have := Finset.mem_range.mp hi; omega))
     have hconst : 16 * s ^ 2 ≤ 16 * s ^ 2 * ∏ i ∈ Finset.range n, U (d + 1 + i + 1) :=
       Nat.le_mul_of_pos_right _ (by omega)
     have hinner := max_le hconst (ih (d + 1) (fun i hi => hU i (by omega)))
@@ -137,7 +137,7 @@ theorem packet_product_le {P r j : ℕ} {eta : ℝ}
   rw [Nat.cast_prod]
   calc
     _ ≤ ∏ _i ∈ Finset.range j, eta * (P : ℝ) ^ (1 / (r : ℝ)) :=
-      Finset.prod_le_prod (fun _ _ => Nat.cast_nonneg _) (fun i hi => hU i (Finset.mem_range.mp hi))
+      Finset.prod_le_prod₀ (fun _ _ => Nat.cast_nonneg _) (fun i hi => hU i (Finset.mem_range.mp hi))
     _ = (eta * (P : ℝ) ^ (1 / (r : ℝ))) ^ j := by simp
     _ = _ := by
       rw [mul_pow, ← Real.rpow_natCast ((P : ℝ) ^ (1 / (r : ℝ))) j,
@@ -183,7 +183,7 @@ theorem tail_conditions {k s r n P : ℕ} (hk : 26 ≤ k) (hs1 : 1 ≤ s) (hs : 
     rw [Finset.prod_range_succ']
     exact Nat.le_mul_of_pos_left _ (by
       have hp : 1 ≤ ∏ i ∈ Finset.range n, U (i + 1) :=
-        Finset.one_le_prod (fun i hi => hU1 _ (by have := Finset.mem_range.mp hi; omega))
+        Finset.one_le_prod₀ (fun i hi => hU1 _ (by have := Finset.mem_range.mp hi; omega))
       omega)
   · exact (initial_minimum_le_product hs1 U n hU1).trans hwhole
 

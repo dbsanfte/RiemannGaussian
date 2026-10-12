@@ -40,7 +40,7 @@ theorem prime_log_reciprocal_le (M : ℕ) :
       ∑ i ∈ Finset.range M, ((i+1 : ℕ) : ℝ)⁻¹*g i := by
     rw [Nat.primesLE_eq_filter_Icc_zero, Finset.sum_filter,
       ← Nat.range_succ_eq_Icc_zero, Finset.sum_range_succ']
-    simp only [Nat.not_prime_zero, if_false, add_zero]
+    simp only [Nat.not_prime_zero, ite_false, add_zero]
     apply Finset.sum_congr rfl
     intro i _
     dsimp [g]
@@ -264,7 +264,7 @@ private theorem norm_core_extensions_of_kernel (A D : Finset ℕ) {N : ℕ}
   split_ifs at hc ⊢ with hap
   · rw [norm_mul]
     have h := mul_le_mul hc (hkernel a haD hap) (norm_nonneg _) (by positivity)
-    convert h using 1 <;> first | rfl | ring
+    convert h using 1 ; first | rfl | ring
   · rw [norm_le_zero_iff.mp hc, zero_mul, norm_zero]
 
 /-- The complete selected in-core extension sum has a two-scale budget.

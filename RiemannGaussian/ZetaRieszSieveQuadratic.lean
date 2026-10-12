@@ -41,11 +41,11 @@ theorem logPrefix_empty_integer (M : ℕ) : |logPrefix ∅ M M| ≤ 5 := by
   have he : logPrefix ∅ (M+1+1) (M+1+1 : ℕ) =
       pairedEtaMoebiusLogHarmonic (M+1+1)*Real.log (M+1+1 : ℕ) := by
     unfold logPrefix pairedEtaMoebiusLogHarmonic
-    simp only [Finset.notMem_empty,forall_false,implies_true,if_true,Finset.sum_mul]
+    simp only [Finset.notMem_empty,forall_false,implies_true,ite_true,Finset.sum_mul]
     apply Finset.sum_congr rfl
     intro n hn
     have hnR : (0 : ℝ) < n := by exact_mod_cast (Finset.mem_Icc.mp hn).1
-    simp only [pairedEtaMoebiusTrialLogWeight,if_pos hM,Real.log_div hMR.ne' hnR.ne']
+    simp only [pairedEtaMoebiusTrialLogWeight,ite_eq_left hM,Real.log_div hMR.ne' hnR.ne']
     field_simp
   rw [he,abs_mul,abs_of_pos hlog]
   exact (le_div_iff₀ hlog).mp (abs_pairedEtaMoebiusLogHarmonic_le_five_div_log hM)
@@ -61,7 +61,7 @@ theorem logPrefix_empty_bound (M : ℕ) {x : ℝ} (hlo : (M : ℝ) ≤ x)
   have he : logPrefix ∅ M x = logPrefix ∅ M M+
       Real.log (x/M)*moebiusHarmonicPrefix M := by
     unfold logPrefix moebiusHarmonicPrefix
-    simp only [Finset.notMem_empty,forall_false,implies_true,if_true,Finset.mul_sum,
+    simp only [Finset.notMem_empty,forall_false,implies_true,ite_true,Finset.mul_sum,
       ← Finset.sum_add_distrib]
     apply Finset.sum_congr rfl
     intro n hn
@@ -115,12 +115,12 @@ theorem logPrefix_insert (S : Finset ℕ) {p : ℕ} (hp : p.Prime)
     simp only [hsame,moebius_prime_mul_eq_not_dvd hp]
     by_cases hd : p ∣ n
     · simp [hd]
-    rw [if_neg hd,Int.cast_neg]
+    rw [ite_eq_right hd,Int.cast_neg]
     by_cases h : ∀ q ∈ S, ¬q ∣ n
-    · rw [if_pos h,if_pos ⟨hd,h⟩]
+    · rw [ite_eq_left h,ite_eq_left ⟨hd,h⟩]
       simp only [Nat.cast_mul,div_mul_eq_div_div]
       ring
-    · rw [if_neg h,if_neg (fun hh => h hh.2)]
+    · rw [ite_eq_right h,ite_eq_right (fun hh => h hh.2)]
       simp
   rw [he] at hdiv
   linarith
@@ -232,11 +232,11 @@ theorem divisor_log_row_bound (R g : ℕ) (hg : 0 < g) {x : ℝ}
     apply Finset.sum_congr rfl
     intro n _
     by_cases hc : g.Coprime n
-    · rw [if_pos ((coprime_iff_primeFactors hg.ne' n).mp hc),
+    · rw [ite_eq_left ((coprime_iff_primeFactors hg.ne' n).mp hc),
         ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hc]
       simp only [Int.cast_mul,Nat.cast_mul,div_mul_eq_div_div]
       ring
-    · rw [if_neg (fun h => hc ((coprime_iff_primeFactors hg.ne' n).mpr h)),
+    · rw [ite_eq_right (fun h => hc ((coprime_iff_primeFactors hg.ne' n).mpr h)),
         ArithmeticFunction.moebius_eq_zero_of_not_squarefree
           (fun hs => hc (Nat.coprime_of_squarefree_mul hs))]
       simp
@@ -284,7 +284,7 @@ private theorem exclusionCost_le_divisor_sum {g : ℕ} (hg : g ≠ 0) :
       Nat.cast_prod]
   calc
     _ ≤ ∏ p ∈ g.primeFactors, (1+2/(p : ℝ)) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro p hp
         have hp : (2 : ℝ) ≤ p := by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).two_le
         exact div_nonneg (by linarith) (by linarith)

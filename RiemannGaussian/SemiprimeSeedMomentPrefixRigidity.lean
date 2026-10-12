@@ -218,7 +218,7 @@ theorem original_seed_rational {N : ℕ} (g : (ZMod N)ˣ) (m : ℕ) :
     simp only [centredSeedSeries,PowerSeries.coeff_mk,map_sum]
     by_cases hr : r=0
     · simp [hr]
-    · simp only [if_neg hr,seedMoment]
+    · simp only [ite_eq_right hr,seedMoment]
   rw [he]
   simpa only [Finset.card_range] using finite_moments_rational (Finset.range (m-1))
     (fun j => ((progressionSeed g N m (j+1)).step : ZMod N))
@@ -234,7 +234,7 @@ theorem original_grid_rational {N : ℕ} (g : (ZMod N)ˣ) (m w J : ℕ) :
     simp only [centredGridSeries,PowerSeries.coeff_mk,map_sum]
     by_cases hr : r=0
     · simp [hr]
-    · simp only [if_neg hr,gridMoment,Finset.sum_product]
+    · simp only [ite_eq_right hr,gridMoment,Finset.sum_product]
   rw [he]
   simpa only [Finset.card_product,Finset.card_range] using
     finite_moments_rational ((Finset.range (m-1)) ×ˢ (Finset.range J))

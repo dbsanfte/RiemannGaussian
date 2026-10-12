@@ -51,7 +51,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 4)
     have hn1 : n ≠ 1 := by intro hn; simp [hn] at hc
     have hscale : 0 ≤ Real.log n/L := div_nonneg (Real.log_natCast_nonneg n) hL.le
     change (if Squarefree n then (Real.log n/L)*max 0 F else 0) = _
-    rw [if_pos hs]
+    rw [ite_eq_left hs]
     by_cases hgate : Real.log P+Real.log n ≤ 2*L
     · have hnonpos := (actual_four_signed_gap hc hL hLhi hLlo).2
       have hgap : max 0 (Real.log (largestPrime n)+Real.log n-2*L) = 0 :=
@@ -98,7 +98,7 @@ theorem positiveAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 4)
     have hcR : (SquarefreeVaughanLogSource.coefficient L n).re =
         (Real.log n/L)*VaughanLogAverage.riesz (L-Real.log P) a := by
       simp only [SquarefreeVaughanLogSource.coefficient,
-        if_pos (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),Complex.ofReal_re]
+        ite_eq_left (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),Complex.ofReal_re]
       rw [show -Real.log n*VaughanLogAverage.riesz L n/L =
         (Real.log n/L)*(-VaughanLogAverage.riesz L n) by ring,hR]
     have hpos : max 0 (VaughanLogAverage.riesz (L-Real.log P) a) = max 0 F := by
@@ -153,10 +153,10 @@ theorem positiveAllowance_le_cofactor_gap {n q : ℕ}
       (fun _ _ => le_max_left _ _) hq
     have hterm := le_max_right 0 (Real.log q-(L-Real.log (largestPrime n)))
     unfold positiveAllowance
-    rw [if_pos hs]
+    rw [ite_eq_left hs]
     apply mul_le_mul_of_nonneg_left _ (div_nonneg (Real.log_natCast_nonneg n) hL.le)
     exact max_le_max le_rfl (by linarith)
-  · simp only [positiveAllowance,if_neg hs]
+  · simp only [positiveAllowance,ite_eq_right hs]
     positivity
 
 /-- No adverse negative-cosine charge remains on the entire two
@@ -206,10 +206,10 @@ theorem positiveAllowance_le_cofactor_log {n r : ℕ} (hc : n.primeFactors.card 
     rw [hcard] at hb
     norm_num at hb
     unfold positiveAllowance
-    rw [if_pos hs,positive_balance_eq_clipped hs hP L]
+    rw [ite_eq_left hs,positive_balance_eq_clipped hs hP L]
     apply mul_le_mul_of_nonneg_left _ (div_nonneg (Real.log_natCast_nonneg n) hL.le)
     exact max_le (Real.log_natCast_nonneg r) (by linarith)
-  · simp only [positiveAllowance,if_neg hs]
+  · simp only [positiveAllowance,ite_eq_right hs]
     positivity
 
 /-- The marked-prime bound also includes the largest prime. -/
@@ -224,7 +224,7 @@ theorem positiveAllowance_le_marked_log {n r : ℕ} (hc : n.primeFactors.card = 
     have hq' := Finset.mem_of_mem_erase hq
     have hne : n.primeFactors.Nonempty := ⟨q,hq'⟩
     have hqp : q ≤ largestPrime n := by
-      rw [largestPrime,dif_pos hne]
+      rw [largestPrime,dite_eq_left hne]
       exact Finset.le_max' _ _ hq'
     have hlog : Real.log q ≤ Real.log (largestPrime n) :=
       Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hq').pos)
@@ -244,10 +244,10 @@ theorem negativeAllowance_le_marked_log {n r : ℕ} (hc : n.primeFactors.card = 
     rw [Finset.card_erase_of_mem hr,hc] at hb
     norm_num at hb
     unfold negativeAllowance
-    rw [if_pos hs,← clipped_sum_eq_excess hs L]
+    rw [ite_eq_left hs,← clipped_sum_eq_excess hs L]
     apply mul_le_mul_of_nonneg_left _ (div_nonneg (Real.log_natCast_nonneg n) hL.le)
     exact max_le (Real.log_natCast_nonneg r) (by linarith)
-  · simp only [negativeAllowance,if_neg hs]
+  · simp only [negativeAllowance,ite_eq_right hs]
     positivity
 
 /-- A uniform norm budget for every original four-prime coefficient, in

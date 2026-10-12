@@ -83,7 +83,7 @@ theorem meromorphicOrderAt_pairCleared_nonneg {f g : ℂ → ℂ} {K : Set ℂ}
   have hd : divisor f K s = n := by
     rw [hf.divisor_apply hs, ← hn]
     rfl
-  simp only [meromorphicPairClearingExponent, if_neg ha, hd]
+  simp only [meromorphicPairClearingExponent, ite_eq_right ha, hd]
   change ((0 : ℤ) : WithTop ℤ) ≤
     ((max 0 (max (-n) (-divisor g K s)) : ℤ) : WithTop ℤ) + (n : WithTop ℤ)
   rw [← WithTop.coe_add, WithTop.coe_le_coe]
@@ -105,7 +105,7 @@ theorem meromorphicOrderAt_pairQuadraticCleared_nonneg {f g : ℂ → ℂ} {K : 
     rw [meromorphicOrderAt_pow (by fun_prop), meromorphicOrderAt_id_sub_const,
       meromorphicOrderAt_mul hw (hf a hs),
       meromorphicOrderAt_meromorphicPairClearingWeight f g hK,
-      meromorphicPairClearingExponent, if_pos rfl, WithTop.coe_zero, zero_add, mul_one]
+      meromorphicPairClearingExponent, ite_eq_left rfl, WithTop.coe_zero, zero_add, mul_one]
     by_cases ht : meromorphicOrderAt f a = ⊤
     · simp [ht]
     lift meromorphicOrderAt f a to ℤ using ht with n hn
@@ -160,7 +160,7 @@ private theorem order_regular_selected {f g : ℂ → ℂ} {K : Set ℂ} (hK : I
     meromorphicOrderAt_pow (by fun_prop), meromorphicOrderAt_id_sub_const,
     meromorphicOrderAt_mul (analyticAt_meromorphicPairClearingWeight f g K a a).meromorphicAt (hf a ha),
     meromorphicOrderAt_meromorphicPairClearingWeight f g hK, meromorphicPairClearingExponent,
-    if_pos rfl, WithTop.coe_zero, zero_add, mul_one]
+    ite_eq_left rfl, WithTop.coe_zero, zero_add, mul_one]
   norm_num
 
 /-- A selected double pole becomes a nonzero analytic value after

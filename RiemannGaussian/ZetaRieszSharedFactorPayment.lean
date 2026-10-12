@@ -166,7 +166,7 @@ theorem large_common_factor_mass (X N : ℕ) (S : Finset ℕ) (hX : 0 < X)
       have hgm : Nat.gcd n m ∈ G := Finset.mem_filter.mpr
         ⟨Finset.mem_Icc.mpr ⟨hgp,
           (Nat.le_of_dvd hnp (Nat.gcd_dvd_left n m)).trans (Finset.mem_Icc.mp (hS hn)).2⟩,hl⟩
-      simpa only [z,if_pos (Nat.gcd_dvd_left n m),if_pos (Nat.gcd_dvd_right n m)] using
+      simpa only [z,ite_eq_left (Nat.gcd_dvd_left n m),ite_eq_left (Nat.gcd_dvd_right n m)] using
         Finset.single_le_sum (fun g (_ : g ∈ G) => mul_nonneg (hz g n) (hz g m)) hgm
     · exact Finset.sum_nonneg (fun g _ => mul_nonneg (hz g n) (hz g m))
   have hrows : (∑ n ∈ S,∑ m ∈ S,∑ g ∈ G,z g n*z g m) =

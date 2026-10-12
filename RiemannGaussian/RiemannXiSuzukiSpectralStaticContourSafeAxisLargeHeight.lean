@@ -115,7 +115,7 @@ theorem norm_zetaUpperSafeAxisNormalizedLogDefectSummand_le_majorant
     rw [zetaUpperSafeAxisNormalizedLogDefectSummand,
       Real.norm_eq_abs, abs_of_nonneg (div_nonneg hdefectNonneg hyPos.le),
       zetaUpperSafeAxisNormalizedLogDefectMajorant,
-      zetaUpperHyperbolicLogDefectSummand, if_pos hupper]
+      zetaUpperHyperbolicLogDefectSummand, ite_eq_left hupper]
     change
       ((analyticZetaZeroMultiplicity rho : ℝ) *
           (-2 * Real.log
@@ -135,7 +135,7 @@ theorem norm_zetaUpperSafeAxisNormalizedLogDefectSummand_le_majorant
         mul_le_mul_of_nonneg_left hfrac (Nat.cast_nonneg _)
       _ = 8 * ((analyticZetaZeroMultiplicity rho : ℝ) / Q) := by ring
   · rw [zetaUpperSafeAxisNormalizedLogDefectSummand,
-      zetaUpperHyperbolicLogDefectSummand, if_neg hupper, zero_div,
+      zetaUpperHyperbolicLogDefectSummand, ite_eq_right hupper, zero_div,
       norm_zero]
     unfold zetaUpperSafeAxisNormalizedLogDefectMajorant
     positivity
@@ -175,7 +175,7 @@ theorem tendsto_zetaUpperSafeAxisNormalizedLogDefectSummand_atTop_zero
       intro y
       unfold zetaUpperSafeAxisNormalizedLogDefectSummand
         zetaUpperHyperbolicLogDefectSummand
-      rw [if_neg hupper, zero_div]
+      rw [ite_eq_right hupper, zero_div]
     simpa only [hzero] using
       (tendsto_const_nhds : Tendsto (fun _ : ℝ ↦ (0 : ℝ)) atTop (nhds 0))
 

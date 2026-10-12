@@ -365,13 +365,13 @@ private theorem signedPart_eq_indicator {e : ℝ} (he : |e| = 1)
     rw [he] at hh
     nlinarith only [hh]
   by_cases h : 0 ≤ e*(SquarefreeVaughanLogSource.coefficient L n).re
-  · simp only [signedPart,if_pos h,one_mul,max_eq_left h,
+  · simp only [signedPart,ite_eq_left h,one_mul,max_eq_left h,
       ZetaRieszOneSidedArithmetic.re_residual_atom]
     calc
       _ = ZetaRieszOneSidedArithmetic.weight A N n*
         ((SquarefreeVaughanLogSource.coefficient L n).re*Real.cos (y*Real.log n))*(e*e) := by ring
       _ = _ := by rw [heSq,mul_one]
-  · simp only [signedPart,if_neg h,zero_mul,Complex.zero_re,
+  · simp only [signedPart,ite_eq_right h,zero_mul,Complex.zero_re,
       max_eq_right (le_of_not_ge h),mul_zero]
 
 /-- A single source-geometric payment transfers ANY literal signed part

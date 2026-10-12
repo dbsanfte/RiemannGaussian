@@ -2178,7 +2178,7 @@ lemma deriv_fun_re {t : ℝ} {f : ℂ → ℂ} (diff : ∀ (σ : ℝ), Different
     (deriv fun {σ₂ : ℝ} ↦ f (σ₂ + t * I)) = fun (σ : ℝ) ↦ deriv f (σ + t * I) := by
   ext σ
   have := deriv_comp (h := fun (σ : ℝ) ↦ σ + t * I) (h₂ := f) σ (diff σ) ?_
-  · simp only [deriv_add_const', _root_.deriv_ofReal, mul_one] at this
+  · simp only [deriv_add_const', Zeta23.FromPNTPlus.deriv_ofReal, mul_one] at this
     exact this
   · apply DifferentiableAt.add_const _ <| differentiableAt_ofReal σ
 

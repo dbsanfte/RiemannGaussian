@@ -62,7 +62,7 @@ private theorem tent_eq_plateau_of_gap {a b D L : ℝ}
     (hg : L≤D ∨ D+a≤L) (hgb : L≤D+b ∨ D+b+a≤L) :
     primePairTent a b (L-D)=if L-a-b<D ∧ D+a≤L then a else 0 := by
   by_cases h : L-a-b<D ∧ D+a≤L
-  · rw [if_pos h]
+  · rw [ite_eq_left h]
     have hx : a≤L-D := by linarith only [h.2]
     have hxb : L-D≤b := by
       rcases hgb with hgb | hgb
@@ -74,7 +74,7 @@ private theorem tent_eq_plateau_of_gap {a b D L : ℝ}
       max_eq_left (by linarith : L-D-b≤0),
       max_eq_left (by linarith : L-D-a-b≤0)]
     ring
-  · rw [if_neg h]
+  · rw [ite_eq_right h]
     apply primePairTent_eq_zero_of_outside ha (ha.trans hab)
     rcases hg with hg | hg
     · exact Or.inl (by linarith)
@@ -226,7 +226,7 @@ theorem coefficient_eq_least_log {r q b p : ℕ} (hr : r.Prime)
       ((log (r*(q*b) : ℕ)*log r/L : ℝ) : ℂ) := by
   have hqb1 : q*b≠1 := fun he => hq.ne_one (mul_eq_one.mp he).1
   have hnp : ¬(r*(q*b)).Prime := Nat.not_prime_mul hr.ne_one hqb1
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,
     riesz_eq_neg_least_log hr hq hrq hs hmin hp hg hbudget hpc]
   congr 1
   ring
@@ -280,7 +280,7 @@ theorem native_primeCritical_count_le_four {u : ℝ} (hu : 0<u)
     exact Nat.primeFactors_mono
       (show b∣r*(q*b) from ⟨r*q,by ring⟩) hs.ne_zero hp
   have hpmax : p≤largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨p,hpN⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hpN⟩)]
     exact Finset.le_max' _ _ hpN
   have hplog : log p<(51/50 : ℝ)*dyadicMomentOrder j :=
     (log_le_log (by exact_mod_cast hpp.pos)

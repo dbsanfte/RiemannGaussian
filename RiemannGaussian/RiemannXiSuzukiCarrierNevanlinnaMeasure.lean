@@ -160,7 +160,7 @@ theorem suzukiXiCarrierNevanlinnaWeight_pos_of_xi_ne_zero
     · simpa using riemannXiSpectral_ofReal_im x
   have hdensity : 0 < suzukiXiRealAxisArithmeticCarrierDensity x := by
     unfold suzukiXiRealAxisArithmeticCarrierDensity
-    rw [if_neg hE]
+    rw [ite_eq_right hE]
     exact div_pos (sq_pos_of_ne_zero hxiRe)
       (suzukiXiRealAxisSpectralEnergy_pos_of_E_ne_zero x hE)
   unfold suzukiXiCarrierNevanlinnaWeight

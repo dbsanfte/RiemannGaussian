@@ -93,7 +93,7 @@ private theorem shell_sum_eq (M X : ℕ) (a : ℕ→ℝ) (y c : ℝ) :
   rw [← hsub]
   apply Finset.sum_congr rfl
   intro n hn
-  rw [shellWeight,if_pos (Finset.mem_Ioc.mp hn)]
+  rw [shellWeight,ite_eq_left (Finset.mem_Ioc.mp hn)]
 
 /-- The main is an interval sum with no artificial shell-end dependence. -/
 theorem taggedOwnerMain_eq_sum (S : Finset ℕ) (N M X R r p : ℕ) (L y : ℝ) :

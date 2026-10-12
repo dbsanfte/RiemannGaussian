@@ -35,14 +35,14 @@ theorem pairedEtaLeadingCurrent_eq_channelProducts (rho : NontrivialZetaZero) (N
   by_cases hm : analyticZetaZeroMultiplicity rho = 1
   · rw [pairedEtaLeadingCurrent_eq_headCompletedMomentPair rho hm]
     simp only [pairedEtaCurrentChannelProduct, analyticZetaZeroMultiplicity_conjugatePartner,
-      hm, if_true, pairedEtaHeadCompletedMomentPair, etaSignedCompletedPair, map_mul,
+      hm, ite_true, pairedEtaHeadCompletedMomentPair, etaSignedCompletedPair, map_mul,
       starRingEnd_apply, star_star]
   · have hm2 : 2 ≤ analyticZetaZeroMultiplicity rho := by
       have := analyticZetaZeroMultiplicity_positive rho
       omega
     rw [pairedEtaLeadingCurrent_eq_completedMomentPair rho hm2]
     simp only [pairedEtaCurrentChannelProduct, analyticZetaZeroMultiplicity_conjugatePartner,
-      if_neg hm, pairedEtaFiniteCompletedMomentPair, etaSignedCompletedPair, map_mul,
+      ite_eq_right hm, pairedEtaFiniteCompletedMomentPair, etaSignedCompletedPair, map_mul,
       Complex.conj_ofReal, starRingEnd_self_apply, Complex.sub_re, Complex.mul_re,
       Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero]
     ring
@@ -115,7 +115,7 @@ theorem pairedEtaCurrentChannelProduct_sub_zeroEnergy_simple (rho : NontrivialZe
         pairedEtaFiniteCompletedMoment rho (N + 2) 0) *
           starRingEnd ℂ (pairedEtaFiniteCompletedMoment rho (N + 2) 0) := by
   simp only [pairedEtaCurrentChannelProduct, pairedEtaCurrentZeroEnergyChannel,
-    pairedEtaCurrentZeroEnergyCoefficient, if_pos hm, ← Complex.mul_conj']
+    pairedEtaCurrentZeroEnergyCoefficient, ite_eq_left hm, ← Complex.mul_conj']
   ring
 
 /-- At a repeated zero the full complex product error retains its original multiplicity and step. -/
@@ -130,7 +130,7 @@ theorem pairedEtaCurrentChannelProduct_sub_zeroEnergy_multiple (rho : Nontrivial
               (‖pairedEtaFiniteCompletedMoment rho (N + 2) 0‖ : ℂ) ^ 2) := by
   have hm1 : analyticZetaZeroMultiplicity rho ≠ 1 := by omega
   simp only [pairedEtaCurrentChannelProduct, pairedEtaCurrentZeroEnergyChannel,
-    pairedEtaCurrentZeroEnergyCoefficient, if_neg hm1, Complex.ofReal_mul, Complex.ofReal_natCast]
+    pairedEtaCurrentZeroEnergyCoefficient, ite_eq_right hm1, Complex.ofReal_mul, Complex.ofReal_natCast]
   ring
 
 /-- The actual multiplicity chooses the finite coefficient in one channel's weighted transport error. -/
@@ -170,7 +170,7 @@ theorem pairedEtaCurrentChannelProduct_weighted_zeroEnergy_error_le (rho : Nontr
           (norm_nonneg _) (by positivity)) hw
       _ ≤ _ := by
         unfold pairedEtaCurrentZeroEnergyErrorConstant
-        rw [if_pos hm]
+        rw [ite_eq_left hm]
         have hweight : (2 * N + 1 : ℝ) ≤ 2 * (N + 1 : ℝ) := by linarith
         have h := mul_le_mul_of_nonneg_right hweight
           (show 0 ≤ pairedEtaCurrentZeroHeadErrorConstant rho * pairedEtaCurrentMomentDecay rho N /
@@ -197,7 +197,7 @@ theorem pairedEtaCurrentChannelProduct_weighted_zeroEnergy_error_le (rho : Nontr
           (show 0 ≤ ((analyticZetaZeroMultiplicity rho - 1 : ℕ) : ℝ) *
             pairedEtaCurrentZeroPairErrorConstant rho (analyticZetaZeroMultiplicity rho - 2)
               (analyticZetaZeroMultiplicity rho - 1) * pairedEtaCurrentMomentDecay rho N / (N + 1 : ℝ) by positivity)
-        simpa only [pairedEtaCurrentZeroEnergyErrorConstant, if_neg hm, mul_div_assoc,
+        simpa only [pairedEtaCurrentZeroEnergyErrorConstant, ite_eq_right hm, mul_div_assoc,
           mul_assoc, mul_left_comm, mul_comm] using h
 
 /-- The sum of the two proved channel envelopes, including the current's factor two. -/

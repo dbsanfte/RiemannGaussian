@@ -137,7 +137,7 @@ theorem summable_prime_leg {s : ℂ} (hs : 1 < s.re) (j : ℕ) (xi : ℝ) :
   have ht : 1 < (s+Complex.I*xi).re := by simpa using hs
   apply ((summable_ordinaryPrimeMoment hs j).sub (summable_ordinaryPrimeMoment ht j)).congr
   intro p
-  by_cases hp : p.Prime <;> simp only [hp,if_true,if_false,sub_zero,coeff_leg_difference]
+  by_cases hp : p.Prime <;> simp only [hp,ite_true,ite_false,sub_zero,coeff_leg_difference]
 
 /-- Completing this difference has only the literal omitted primes as
 its error. No cofactor or phase has been completed. -/
@@ -151,12 +151,12 @@ theorem difference_split (A : Finset ℕ) (hA : ∀ p ∈ A, p.Prime)
       ← (summable_ordinaryPrimeMoment hs j).tsum_sub (summable_ordinaryPrimeMoment ht j)]
     apply tsum_congr
     intro p
-    by_cases hp : p.Prime <;> simp only [hp,if_true,if_false,sub_zero,coeff_leg_difference]
+    by_cases hp : p.Prime <;> simp only [hp,ite_true,ite_false,sub_zero,coeff_leg_difference]
   rw [hc,← (summable_prime_leg hs j xi).sum_add_tsum_compl (s := A)]
   congr 1
   · apply Finset.sum_congr rfl
     intro p hp
-    simp only [if_pos (hA p hp),coeff_leg_difference]
+    simp only [ite_eq_left (hA p hp),coeff_leg_difference]
   · unfold missingDifference
     rw [tsum_subtype (f := fun p : ℕ => if p.Prime then PowerSeries.coeff j (leg s xi p) else 0)]
     apply tsum_congr
@@ -183,11 +183,11 @@ theorem missing_bound (A : Finset ℕ) (N j h : ℕ)
       ‖if p.Prime ∧ p ∉ A then PowerSeries.coeff j (leg s xi p) else 0‖ ≤
         C*(zetaPrimeExpWeight (s.re-safeRadius) p*f p) := by
     by_cases hp : p.Prime ∧ p ∉ A
-    · rw [if_pos hp,coeff_leg,norm_mul]
+    · rw [ite_eq_left hp,coeff_leg,norm_mul]
       have hb := mul_le_mul (hphase p) (omitted_kernel_bound N j h p hh (hgap p hp.1 hp.2) s)
         (norm_nonneg _) (hf p)
       exact hb.trans_eq (by dsimp [C]; ring)
-    · rw [if_neg hp,norm_zero]
+    · rw [ite_eq_right hp,norm_zero]
       exact mul_nonneg hC (mul_nonneg (Real.exp_pos _).le (hf p))
   have hs := (hw.mul_left C).of_norm_bounded ha
   exact (norm_tsum_le_tsum_norm hs.norm).trans
@@ -405,9 +405,9 @@ theorem measurable_missingDifference (A : Finset ℕ) (j : ℕ) (s : ℂ) :
   apply Measurable.tsum
   intro p
   by_cases hp : p.Prime ∧ p ∉ A
-  · simp only [if_pos hp,coeff_leg,zetaPrimeLogKernel,zetaPrimeFeature]
+  · simp only [ite_eq_left hp,coeff_leg,zetaPrimeLogKernel,zetaPrimeFeature]
     fun_prop
-  · simp only [if_neg hp]
+  · simp only [ite_eq_right hp]
     exact measurable_const
 
 theorem measurable_cofactor (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)

@@ -73,7 +73,7 @@ theorem weighted_source_coeff_below {R ι : Type*} [CommRing R] [DecidableEq ι]
       (W*((∏ i ∈ zeroIndices S (fun i => (P i).coeff 0), (P i).divX)*
         sourceProduct (S \ zeroIndices S (fun i => (P i).coeff 0)) P)) by ring]
   rw [coeff_X_pow_mul']
-  exact if_neg (by omega)
+  exact ite_eq_right (by omega)
 
 /-- At the first possible order, only linear zero-row terms and constant
 nonzero-row terms survive. The entire source and scale are retained. -/
@@ -89,7 +89,7 @@ theorem weighted_source_head_coeff {R ι : Type*} [CommRing R] [DecidableEq ι]
       X^(zeroIndices S (fun i => (P i).coeff 0)).card*
       (W*((∏ i ∈ zeroIndices S (fun i => (P i).coeff 0), (P i).divX)*
         sourceProduct (S \ zeroIndices S (fun i => (P i).coeff 0)) P)) by ring]
-  rw [coeff_X_pow_mul', if_pos (le_refl _), Nat.sub_self]
+  rw [coeff_X_pow_mul', ite_eq_left (le_refl _), Nat.sub_self]
   simp only [mul_coeff_zero, sourceProduct, coeff_zero_prod, coeff_divX, zero_add]
   ring
 

@@ -66,9 +66,9 @@ theorem suzukiXiMixedCarrierLocalPrincipalPart_eq_zero_ofReal
     · exact him (by rw [hb]; rfl)
   have hn : suzukiXiMixedCarrierLocalNumerator rho sigma (x : ℂ) (x : ℂ) = 0 := by
     have hr := suzukiXiMixedCarrierLocalResidue_at_xi_node rho sigma hx
-    simpa only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, if_pos hx,
-      poleTaylorResidue, one_ne_zero, if_false, Nat.sub_self, iteratedDeriv_zero,
-      Nat.factorial_zero, Nat.cast_one, div_one, suzukiXiMixedXiNodeResidue, if_neg hcollision] using hr
+    simpa only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, ite_eq_left hx,
+      poleTaylorResidue, one_ne_zero, ite_false, Nat.sub_self, iteratedDeriv_zero,
+      Nat.factorial_zero, Nat.cast_one, div_one, suzukiXiMixedXiNodeResidue, ite_eq_right hcollision] using hr
   simp [suzukiXiMixedCarrierLocalOrder, hx, poleTaylorPrincipalPart, hn]
 
 /-- Every actual noncolliding mixed channel has an analytic representative

@@ -129,17 +129,17 @@ private lemma xi_node_sum (rho sigma : NontrivialZetaZero) (S : Finset ℂ) :
         if c = zetaSpectralCoordinate sigma.1 then (analyticZetaZeroMultiplicity sigma : ℂ)⁻¹ else 0 := by
       by_cases hc : c = zetaSpectralCoordinate sigma.1
       · subst c
-        simp only [suzukiXiMixedXiNodeResidue, hpair, and_self, if_true,
+        simp only [suzukiXiMixedXiNodeResidue, hpair, and_self, ite_true,
           analyticOrderNatAt_riemannXiSpectral_zetaSpectralCoordinate]
-      · simp only [suzukiXiMixedXiNodeResidue, hpair, and_self, if_neg hc, if_neg (Ne.symm hc)]
+      · simp only [suzukiXiMixedXiNodeResidue, hpair, and_self, ite_eq_right hc, ite_eq_right (Ne.symm hc)]
     simp_rw [hterm]
     rw [Finset.sum_ite_eq']
     simp only [hpair, true_and]
   · have hterm (c : ℂ) : suzukiXiMixedXiNodeResidue rho sigma c = 0 := by
-      apply if_neg
+      apply ite_eq_right
       intro h
       exact hpair (h.1.trans h.2.symm)
-    simp only [hterm, Finset.sum_const_zero, hpair, false_and, if_false]
+    simp only [hterm, Finset.sum_const_zero, hpair, false_and, ite_false]
 
 private lemma local_residue_split (rho sigma : NontrivialZetaZero) {c : ℂ}
     (hc : c ∈ suzukiXiCarrierSingularSet) :
@@ -148,13 +148,13 @@ private lemma local_residue_split (rho sigma : NontrivialZetaZero) {c : ℂ}
         if riemannXiSpectral c ≠ 0 then suzukiXiMixedCarrierPoleResidue rho sigma c else 0 := by
   by_cases hxi : riemannXiSpectral c = 0
   · simp only [suzukiXiMixedCarrierLocalResidue_at_xi_node rho sigma hxi, hxi,
-      ne_eq, not_true_eq_false, if_false, add_zero]
+      ne_eq, not_true_eq_false, ite_false, add_zero]
   · have hE : suzukiXiEValue c = 0 := hc.resolve_left hxi
     have hsource : suzukiXiMixedXiNodeResidue rho sigma c = 0 := by
-      apply if_neg
+      apply ite_eq_right
       intro h
       exact hxi ((riemannXiSpectral_eq_zero_iff_exists_zetaZero c).mpr ⟨sigma, h.2.symm⟩)
-    rw [suzukiXiMixedCarrierLocalResidue_at_E_pole rho sigma hE hxi, hsource, if_pos hxi, zero_add]
+    rw [suzukiXiMixedCarrierLocalResidue_at_E_pole rho sigma hE hxi, hsource, ite_eq_left hxi, zero_add]
 
 /-- The complete finite residue sum splits into the reflected xi source
 and every genuine carrier pole, independently of boundary admissibility. -/

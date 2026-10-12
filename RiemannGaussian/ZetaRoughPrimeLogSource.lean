@@ -366,7 +366,7 @@ theorem exists_prime_cofactor_of_coefficient_ne_zero (D : ℕ) (S : Finset ℕ) 
     ∃ a m : ℕ, a.Prime ∧ D < a ∧ D < m ∧ n = a * m := by
   have hg : Squarefree n ∧ (¬∃ a ∈ S, a ∣ n) ∧ ¬n.Prime := by
     by_contra h
-    exact hn (by rw [coefficient, if_neg h])
+    exact hn (by rw [coefficient, ite_eq_right h])
   obtain ⟨a, ha, hDa⟩ := exists_large_prime_of_coefficient_ne_zero D S hn
   have hp := Nat.prime_of_mem_primeFactors ha
   have had := Nat.dvd_of_mem_primeFactors ha
@@ -381,7 +381,7 @@ theorem exists_prime_cofactor_of_coefficient_ne_zero (D : ℕ) (S : Finset ℕ) 
     by_contra h
     have hle : n / a ≤ D := by omega
     have hz : mask D n = 0 := by
-      rw [← he, mask_large_prime hp hDa, mask_eq_unit hm0 hle, if_neg hm1]
+      rw [← he, mask_large_prime hp hDa, mask_eq_unit hm0 hle, ite_eq_right hm1]
     exact hn (by simp [coefficient, hz])
   exact ⟨a, n / a, hp, hDa, hDm, he.symm⟩
 
@@ -620,7 +620,7 @@ theorem coefficient_eq_large_prime_fibres (D : ℕ) (S : Finset ℕ) (n : ℕ) :
       if Squarefree n ∧ (¬∃ p ∈ S, p ∣ n) ∧ ¬n.Prime then
         mask D (n / a) ^ 2 * (Real.log a : ℂ) else 0 := by
   by_cases hg : Squarefree n ∧ (¬∃ p ∈ S, p ∣ n) ∧ ¬n.Prime
-  · rw [coefficient, if_pos hg, largeLog, Finset.mul_sum]
+  · rw [coefficient, ite_eq_left hg, largeLog, Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro a ha
     have hf := Finset.mem_filter.mp ha
@@ -629,12 +629,12 @@ theorem coefficient_eq_large_prime_fibres (D : ℕ) (S : Finset ℕ) (n : ℕ) :
     have hm : mask D n = mask D (n / a) := by
       conv_lhs => rw [← Nat.mul_div_cancel' had]
       exact mask_large_prime hp hf.2 _
-    rw [if_pos hg, hm]
-  · rw [coefficient, if_neg hg]
+    rw [ite_eq_left hg, hm]
+  · rw [coefficient, ite_eq_right hg]
     symm
     apply Finset.sum_eq_zero
     intro a _
-    exact if_neg hg
+    exact ite_eq_right hg
 
 
 /-- The complete error relative to the square carrier tends independently

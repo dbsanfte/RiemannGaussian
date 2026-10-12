@@ -63,8 +63,8 @@ theorem summable_headAtom (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
   apply (summable_atom u y N hN).norm.of_norm_bounded
   intro n
   by_cases hn : Real.log n.minFac ≤ (N : ℝ)/110
-  · simp only [headAtom,if_pos hn,le_refl]
-  · simp only [headAtom,if_neg hn,norm_zero]
+  · simp only [headAtom,ite_eq_left hn,le_refl]
+  · simp only [headAtom,ite_eq_right hn,norm_zero]
     exact norm_nonneg _
 
 /-- One common radial-plus-share allowance pays every finite partial
@@ -88,11 +88,11 @@ theorem exists_finite_head_bound :
     intro n _hn
     by_cases hs : Real.log n.minFac ≤ (N : ℝ)/110
     · by_cases hv : validLabel n
-      · simp only [headAtom,if_pos hs,if_pos (show validLabel n ∧
+      · simp only [headAtom,ite_eq_left hs,ite_eq_left (show validLabel n ∧
           Real.log n.minFac ≤ (N : ℝ)/110 from ⟨hv,hs⟩)]
-      · simp only [headAtom,if_pos hs,hv,false_and,if_false,atom,markedCoefficient,
+      · simp only [headAtom,ite_eq_left hs,hv,false_and,ite_false,atom,markedCoefficient,
           zero_mul]
-    · simp only [headAtom,hs,and_false,if_false]
+    · simp only [headAtom,hs,and_false,ite_false]
   let D := LogarithmicDeviation.deviationBand T (39/20) (203/100) N
   have hrad : ‖(u : ℂ)^(N+1)*
       ((∑ n ∈ T, atom u y N n)-∑ n ∈ D, atom u y N n)‖ ≤ r^N*C := by

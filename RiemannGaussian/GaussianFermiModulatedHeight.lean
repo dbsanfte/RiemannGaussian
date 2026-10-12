@@ -119,7 +119,7 @@ theorem exact_average_phase_cost_le {γ m b c δ : ℝ} (hγ : γ ≠ 0)
     by_cases hj : j = 0
     · subst j
       simp only [phaseContactFrequency, Matrix.cons_val_zero, Nat.cast_zero, zero_mul,
-        if_true, zero_div, add_zero]
+        ite_true, zero_div, add_zero]
       have hp := average_pole_zero_le (add_pos hb hc) δ (show 1 - m ≤ 1 by linarith)
       rw [show 1 - m - 1 = -m by ring] at hp
       change average δ (polePair (b + c) (1 - m)) 0 ≤ halfModulated (b + c) δ (-m) at hp
@@ -146,7 +146,7 @@ theorem exact_average_phase_cost_le {γ m b c δ : ℝ} (hγ : γ ≠ 0)
       have hp := hbound δ hδ
       have hn := hbound (-δ) (by simpa using hδ)
       simp only [add_zero, ← sub_eq_add_neg] at h0 hp hn
-      simp only [if_neg hj, zero_add, average]
+      simp only [ite_eq_right hj, zero_add, average]
       nlinarith
   have hsum := Finset.sum_le_sum (s := Finset.univ) (fun j _ ↦ hpoint j)
   have he : (∑ j : Fin 9,
@@ -157,7 +157,7 @@ theorem exact_average_phase_cost_le {γ m b c δ : ℝ} (hγ : γ ≠ 0)
         (∑ j : Fin 9, if j = 0 then 0 else phaseContactExactCoefficients j) * Real.log |γ| / 4 +
           9 * (∑ j : Fin 9, phaseContactExactCoefficients j) := by
     rw [Finset.sum_add_distrib, Finset.sum_add_distrib]
-    simp only [Finset.sum_ite_eq', Finset.mem_univ, if_true, ← Finset.sum_div,
+    simp only [Finset.sum_ite_eq', Finset.mem_univ, ite_true, ← Finset.sum_div,
       ← Finset.sum_mul, ← Finset.mul_sum]
   rw [he] at hsum
   linarith [exact_total_mass_upper]

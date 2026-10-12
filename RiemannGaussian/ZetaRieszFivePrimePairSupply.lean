@@ -117,7 +117,7 @@ theorem neg_coefficient_eq_pair_balance_add_triples {n : ℕ} (hs : Squarefree n
         (∑ A ∈ n.primeFactors.powersetCard 3, max 0 (Real.log n-L-∑ p ∈ A, Real.log p)) := by
     linarith
   simp only [SquarefreeVaughanLogSource.coefficient,
-    if_pos (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),Complex.ofReal_re,hR]
+    ite_eq_left (show Squarefree n ∧ ¬n.Prime from ⟨hs,hnp⟩),Complex.ofReal_re,hR]
   ring
 
 /-- A lower bound for the favorable arithmetic magnitude of every
@@ -153,7 +153,7 @@ theorem re_atom_ge_pair_credit (A : Finset ℕ) (N : ℕ) {n : ℕ}
   have ht : 0 ≤ Real.log n := Real.log_natCast_nonneg n
   have hP : largestPrime n ∈ n.primeFactors := by
     have hn : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-    rw [largestPrime,dif_pos hn]
+    rw [largestPrime,dite_eq_left hn]
     exact Finset.max'_mem _ _
   have hnonpos := ZetaRieszFivePrimeFloor.coefficient_five_nonpos hc hL hLlo hLhi
     (Or.inl (by linarith [hmax _ hP]))
@@ -189,9 +189,9 @@ theorem eventually_unassigned_ge (k : ℕ) {ε : ℝ} (hε : 0 < ε) :
       (fun p hp _ _ => hbal p hp)
     have hcard : (n.primeFactors.card : ℝ) ≤ k := by exact_mod_cast hc
     have hb' := hb.trans (mul_le_mul_of_nonneg_right hcard (Real.exp_nonneg _))
-    rw [boundedShare,if_pos h]
+    rw [boundedShare,ite_eq_left h]
     linarith
-  · rw [boundedShare,if_neg h]
+  · rw [boundedShare,ite_eq_right h]
     linarith
 
 /-- The explicit pair credit pays the literal old allocation with an

@@ -252,7 +252,7 @@ private theorem local_two_resolvent_polar_model
           ((analyticAt_id.sub analyticAt_const).mul (analyticAt_id.sub analyticAt_const))
           (mul_ne_zero (sub_ne_zero.mpr (Ne.symm hu)) (sub_ne_zero.mpr (Ne.symm hv))), ?_⟩
       filter_upwards [he] with z hz
-      simp only [if_neg (show ¬(u = c ∧ v = c) from fun h ↦ hu h.1), zero_div, zero_add, hz]
+      simp only [ite_eq_right (show ¬(u = c ∧ v = c) from fun h ↦ hu h.1), zero_div, zero_add, hz]
 
 /-- At any genuine xi node, the full mixed channels have the same polar
 coefficient. It survives exactly for the reflected pairing of the two

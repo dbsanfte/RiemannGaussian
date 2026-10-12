@@ -109,7 +109,7 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_le_inverseSquare
         _ ≤ (2 * z.im) * (C / Q) :=
           mul_le_mul_of_nonneg_left hrecip (by positivity)
         _ = (2 * z.im * C) / Q := by ring
-    rw [zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper]
+    rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper]
     change (analyticZetaZeroMultiplicity rho : ℝ) *
         (4 * z.im * alpha.im / D) ≤
       (2 * z.im * C) *
@@ -122,7 +122,7 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_le_inverseSquare
         mul_le_mul_of_nonneg_left hcore (Nat.cast_nonneg _)
       _ = (2 * z.im * C) *
           ((analyticZetaZeroMultiplicity rho : ℝ) / Q) := by ring
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hupper]
     apply mul_nonneg
     · exact mul_nonneg (mul_nonneg (by norm_num) hz.le)
         (upperHalfPlaneInverseSquareCoefficient_pos hz).le

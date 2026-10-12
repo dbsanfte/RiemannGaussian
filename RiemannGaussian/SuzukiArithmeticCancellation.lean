@@ -240,10 +240,10 @@ theorem exists_suzukiMassLogWork_absolute_mass_remainder {e : ℝ} (he : 0 < e) 
   have hterm (j : ℕ) : |suzukiFirstTailMassLogWork j| ≤
       e * suzukiPrimeWeight (j + 1) + if j < A then |suzukiFirstTailMassLogWork j| else 0 := by
     by_cases hj : j < A
-    · rw [if_pos hj]
+    · rw [ite_eq_left hj]
       have hn := mul_nonneg he.le (suzukiPrimeWeight_nonnegative (j + 1))
       linarith
-    · rw [if_neg hj, add_zero, suzukiFirstTailMassLogWork_eq_neg_two_mul_log_ratio, abs_mul,
+    · rw [ite_eq_right hj, add_zero, suzukiFirstTailMassLogWork_eq_neg_two_mul_log_ratio, abs_mul,
         abs_mul, abs_of_nonneg (suzukiPrimeWeight_nonnegative _)]
       norm_num only [abs_neg, abs_of_nonneg (show (0 : ℝ) ≤ 2 by norm_num)]
       have h := hA j (le_of_not_gt hj)

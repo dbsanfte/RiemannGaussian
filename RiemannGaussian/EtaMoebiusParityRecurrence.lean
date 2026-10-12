@@ -21,10 +21,10 @@ even index introduces the square factor four and gives zero. -/
 theorem moebius_two_mul_eq_odd (d : ℕ) :
     μ (2 * d) = if Odd d then -μ d else 0 := by
   by_cases hd : Odd d
-  · rw [if_pos hd, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime
+  · rw [ite_eq_left hd, ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime
       (Nat.coprime_two_left.mpr hd), ArithmeticFunction.moebius_apply_prime Nat.prime_two]
     ring
-  · rw [if_neg hd]
+  · rw [ite_eq_right hd]
     apply ArithmeticFunction.moebius_eq_zero_of_not_squarefree
     intro hsq
     apply (Nat.squarefree_iff_prime_squarefree.mp hsq) 2 Nat.prime_two

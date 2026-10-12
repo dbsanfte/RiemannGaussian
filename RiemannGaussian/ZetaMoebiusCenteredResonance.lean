@@ -36,7 +36,7 @@ theorem sum_norm_zetaMoebiusWeightedBandSamples_mul_rpow_le (D N : ℕ)
     by_cases hj : j.val ∈ zetaPrimeLogBand N
     · have hj1 := (Finset.mem_Icc.mp (Finset.mem_filter.mp hj).1).1
       have hj0 : (0 : ℝ) < j.val := by exact_mod_cast (show 0 < j.val by omega)
-      simp only [zetaMoebiusWeightedBandSamples, zetaLogBandSamples, if_pos hj,
+      simp only [zetaMoebiusWeightedBandSamples, zetaLogBandSamples, ite_eq_left hj,
         norm_mul, norm_zetaPrimeFeature, zetaPrimeExpWeight, Real.rpow_def_of_pos hj0,
         mul_assoc, ← Real.exp_add, show (5 / 4 : ℂ).re = (5 / 4 : ℝ) by norm_num]
       congr 2

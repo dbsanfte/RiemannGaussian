@@ -210,7 +210,7 @@ private theorem high_owner_data {k n : ℕ} (hk : 6 ≤ k) (hs : Squarefree n)
     omega
   have hmax q (hq : q ∈ n.primeFactors) : q ≤ p := by
     dsimp [p,ZetaRieszPrimeEndpoint.largestPrime]
-    rw [dif_pos (Finset.card_pos.mp (by omega : 0 < n.primeFactors.card))]
+    rw [dite_eq_left (Finset.card_pos.mp (by omega : 0 < n.primeFactors.card))]
     exact Finset.le_max' _ q hq
   exact ⟨hpp,he,ha,hcard,hp,hmax,hnot⟩
 
@@ -243,14 +243,14 @@ theorem unpaid_high_rough (S : Finset ℕ) {k : ℕ} (_hk : 6 ≤ k) {N n Q P V 
     ∀ r ∈ n.primeFactors, headThreshold k R < r := by
   intro r hr
   by_cases hk6 : k = 6
-  · simp only [headThreshold,if_pos hk6]
+  · simp only [headThreshold,ite_eq_left hk6]
     by_contra hn
     have hT := ZetaRieszSevenCountTail.mem_radialTail_of_geometry
       (R := R) hN hnS hs hlo hhi (Or.inr ⟨by omega,r,hr,le_of_not_gt hn⟩)
     apply hnot
     simp only [spent,Finset.mem_union]
     tauto
-  · simpa only [headThreshold,if_neg hk6] using (Nat.prime_of_mem_primeFactors hr).pos
+  · simpa only [headThreshold,ite_eq_right hk6] using (Nat.prime_of_mem_primeFactors hr).pos
 
 private theorem sign_parts_zero_of_residual (A : Finset ℕ) (L y : ℝ) (N n : ℕ)
     (hres : residualCoefficient A L N n = 0) :
@@ -463,12 +463,12 @@ private theorem positive_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : 0 < (SquarefreeVaughanLogSource.coefficient L n).re
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart (-1) A L y N n = 0 := by
       simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
         -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
     rw [hz,add_zero]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,one_mul,max_eq_right (le_of_not_gt hp),mul_zero,zero_mul]
 
 private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
@@ -479,11 +479,11 @@ private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : (SquarefreeVaughanLogSource.coefficient L n).re < 0
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart 1 A L y N n = 0 := by
       simp only [signedPart,one_mul,max_eq_right hp.le,mul_zero,zero_mul]
     rw [hz,zero_add]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
       -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
 
@@ -711,18 +711,18 @@ theorem sum_high_parts (E : Finset ℕ) (f : ℕ → ℝ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hc : 7 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55
-  · rw [if_pos hc]
+  · rw [ite_eq_left hc]
     rw [Finset.sum_eq_single (n.primeFactors.card-1)]
-    · rw [if_pos (by omega)]
+    · rw [ite_eq_left (by omega)]
     · intro k _ hk
-      exact if_neg (by omega)
+      exact ite_eq_right (by omega)
     · intro hn
       exact False.elim (hn (Finset.mem_Icc.mpr (by omega)))
-  · rw [if_neg hc]
+  · rw [ite_eq_right hc]
     apply Finset.sum_eq_zero
     intro k hk
     have hb := Finset.mem_Icc.mp hk
-    exact if_neg (by omega)
+    exact ite_eq_right (by omega)
 
 /-- The entire originally unpaid band seven through fifty-five costs any
 chosen positive radial fraction, plus an error tending to zero. This is a
@@ -855,7 +855,7 @@ private theorem paid_parts (E : Finset ℕ) (f : ℕ → ℂ) :
   · simp [h5]
   by_cases h6 : n.primeFactors.card = 6
   · simp [h6]
-  simp only [h3,h5,h6,if_false,false_or,zero_add]
+  simp only [h3,h5,h6,ite_false,false_or,zero_add]
 
 open ZetaRieszThreeSignCoverFloor (tripleRestSpent nontriple_rest_filter_eq
   tripleRestSpent_eq eventually_core_full_floor_with_triples_rejoined)

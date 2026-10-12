@@ -160,7 +160,8 @@ theorem profile_nonneg (k : ℕ) (y : ℝ) : 0 ≤ profile k y := by
 on the whole vertical line, including at its zeros. -/
 theorem posLog_bound (k : ℕ) (hk : 1 ≤ k) {s : ℂ} (hline : s.re = line k) :
     Real.posLog ‖riemannZeta s‖ ≤ profile k s.im := by
-  have h := Real.posLog_le_posLog (norm_nonneg _) (all_height_bound k hk hline)
+  have h := Real.posLog_le_posLog (neg_one_lt_zero.le.trans (norm_nonneg _))
+    (all_height_bound k hk hline)
   have hm := one_le_majorant k s.im
   have hn : 0 ≤ 32768 / delta k * height s.im ^ alpha k * Real.log (height s.im) := by
     linarith

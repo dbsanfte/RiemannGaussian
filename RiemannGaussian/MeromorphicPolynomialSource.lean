@@ -72,7 +72,7 @@ theorem meromorphicOrderAt_pairLinearCleared_nonneg {f g : ℂ → ℂ} {K : Set
   · subst s
     rw [meromorphicOrderAt_id_sub_const, meromorphicOrderAt_mul hw (hf a hs),
       meromorphicOrderAt_meromorphicPairClearingWeight f g hK,
-      meromorphicPairClearingExponent, if_pos rfl, WithTop.coe_zero, zero_add]
+      meromorphicPairClearingExponent, ite_eq_left rfl, WithTop.coe_zero, zero_add]
     by_cases ht : meromorphicOrderAt f a = ⊤
     · simp [ht]
     lift meromorphicOrderAt f a to ℤ using ht with n hn
@@ -129,7 +129,7 @@ theorem meromorphicPairSimpleRegular_ne_zero {f g : ℂ → ℂ} {K : Set ℂ}
     meromorphicOrderAt_id_sub_const,
     meromorphicOrderAt_mul (analyticAt_meromorphicPairClearingWeight f g K a a).meromorphicAt (hf a ha),
     meromorphicOrderAt_meromorphicPairClearingWeight f g hK, meromorphicPairClearingExponent,
-    if_pos rfl, WithTop.coe_zero, zero_add, ho]
+    ite_eq_left rfl, WithTop.coe_zero, zero_add, ho]
   change ((1 : ℤ) : WithTop ℤ) + ((-1 : ℤ) : WithTop ℤ) = ((0 : ℤ) : WithTop ℤ)
   rw [← WithTop.coe_add]
   rfl

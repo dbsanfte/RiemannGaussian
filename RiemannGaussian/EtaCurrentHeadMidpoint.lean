@@ -170,7 +170,7 @@ theorem pairedEtaLeadingCurrentMidpointMoment_eq_head_arithmetic (rho : Nontrivi
           pairedEtaTopPrefixFiniteEnergyLeadingFlux rho N +
         (pairedEtaHeadCompletedMomentPair rho N 1 0).re +
           (pairedEtaHeadCompletedMomentPair rho N 0 1).re := by
-  rw [pairedEtaLeadingCurrentMidpointMoment, if_pos hm]
+  rw [pairedEtaLeadingCurrentMidpointMoment, ite_eq_left hm]
   simp_rw [pairedEtaHeadKernel_eq_completedMomentPair, hm, Nat.sub_self]
   have he (p : ℝ × ℝ) :
       2 * (pairedEtaHeadCompletedMomentPairKernel rho N 0 0 p).re *

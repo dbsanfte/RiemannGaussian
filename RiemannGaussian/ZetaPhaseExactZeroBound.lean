@@ -106,11 +106,11 @@ private theorem exact_log_le (i : Fin 9) :
   fin_cases i <;> norm_num [phaseContactFrequency, exact_log_ceiling]
   · linarith [Real.log_two_lt_d9]
   · linarith [Real.log_three_lt_d9]
-  · convert log_le_power_majorant (n := 4) (a := 2) (b := 0) (by decide) (by decide) using 1 <;> norm_num
-  · convert log_le_power_majorant (n := 7) (a := 3) (b := 0) (by decide) (by decide) using 1 <;> norm_num
-  · convert log_le_power_majorant (n := 10) (a := 2) (b := 1) (by decide) (by decide) using 1 <;> norm_num
-  · convert log_le_power_majorant (n := 13) (a := 4) (b := 0) (by decide) (by decide) using 1 <;> norm_num
-  · convert log_le_power_majorant (n := 24) (a := 3) (b := 1) (by decide) (by decide) using 1 <;> norm_num
+  · convert log_le_power_majorant (n := 4) (a := 2) (b := 0) (by decide) (by decide) using 1; norm_num
+  · convert log_le_power_majorant (n := 7) (a := 3) (b := 0) (by decide) (by decide) using 1; norm_num
+  · convert log_le_power_majorant (n := 10) (a := 2) (b := 1) (by decide) (by decide) using 1; norm_num
+  · convert log_le_power_majorant (n := 13) (a := 4) (b := 0) (by decide) (by decide) using 1; norm_num
+  · convert log_le_power_majorant (n := 24) (a := 3) (b := 1) (by decide) (by decide) using 1; norm_num
 
 /-- The complete logarithmic frequency overhead of the exact family is
 at most `1/4`, despite its separated high frequencies. -/

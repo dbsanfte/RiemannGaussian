@@ -263,11 +263,11 @@ theorem suzukiXiBoundaryCarrierGramKernel_eq_herglotzConfluent
   by_cases hcollision : zetaSpectralCoordinate sigma.1 =
       starRingEnd ℂ (zetaSpectralCoordinate rho.1)
   · rw [suzukiXiCarrierHerglotzConfluentDividedDifference,
-      if_pos hcollision]
+      ite_eq_left hcollision]
     exact suzukiXiBoundaryCarrierGramKernel_eq_herglotzDeriv_of_collision
       rho sigma hsigma hcollision
   · rw [suzukiXiCarrierHerglotzConfluentDividedDifference,
-      if_neg hcollision]
+      ite_eq_right hcollision]
     have hidentity := suzukiXiCarrierHerglotzTransform_node_sub
       rho sigma hrho hsigma
     rw [hidentity]

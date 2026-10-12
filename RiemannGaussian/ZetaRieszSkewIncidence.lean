@@ -131,9 +131,9 @@ theorem skewMass_bounds (N : ℕ) {x c : ℝ} (hx : 0 ≤ x) (hx1 : x ≤ 1)
   apply Finset.sum_le_sum
   intro j hj
   by_cases hjh : 121 * N ≤ 200 * j
-  · rw [if_pos hjh]
+  · rw [ite_eq_left hjh]
     exact mul_le_of_le_one_right (hm j) (hb j)
-  · rw [if_neg hjh]
+  · rw [ite_eq_right hjh]
     have he : skewOrders N j = ∅ := by
       apply Finset.eq_empty_iff_forall_notMem.mpr
       intro h hh

@@ -76,13 +76,13 @@ theorem neg_logDeriv_countSymbol {u y : ℝ} {s : ℂ}
     (h3 : s-testZero u y≠0) (h4 : s-star (testZero u y)≠0) :
     -logDeriv (countSymbol u y) s=logSymbol u y s := by
   unfold countSymbol
-  rw [logDeriv_div (f := fun z : ℂ => (z-testZero u y)*(z-star (testZero u y)))
+  rw [logDeriv_fun_div (f := fun z : ℂ => (z-testZero u y)*(z-star (testZero u y)))
     (g := fun z : ℂ => (z-1)*(z-extraPole u)) s
     (mul_ne_zero h3 h4) (mul_ne_zero h1 h2)
     (by fun_prop) (by fun_prop),
-    logDeriv_mul (f := fun z : ℂ => z-testZero u y)
+    logDeriv_fun_mul (f := fun z : ℂ => z-testZero u y)
       (g := fun z : ℂ => z-star (testZero u y)) s h3 h4 (by fun_prop) (by fun_prop),
-    logDeriv_mul (f := fun z : ℂ => z-1)
+    logDeriv_fun_mul (f := fun z : ℂ => z-1)
       (g := fun z : ℂ => z-extraPole u) s h1 h2 (by fun_prop) (by fun_prop)]
   simp only [logDeriv_linear,logSymbol]
   ring

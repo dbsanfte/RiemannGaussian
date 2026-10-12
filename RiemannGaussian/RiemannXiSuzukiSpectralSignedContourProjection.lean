@@ -100,7 +100,7 @@ theorem rectangularBoundaryIntegral_suzukiXiWeilSpectralPrincipalPart_lower
   change rectangularBoundaryIntegral (-T) T (-1) (-eta)
       (simplePoleKernel (suzukiXiWeilSpectralResidue t z rho) a) = _
   by_cases hlower : a.im < 0
-  · rw [if_pos hlower]
+  · rw [ite_eq_left hlower]
     apply rectangularBoundaryIntegral_simplePoleKernel_of_mem
       (suzukiXiWeilSpectralResidue t z rho) a hre.1 hre.2
     · have hnegAbs : -|a.im| ≤ a.im := neg_abs_le _
@@ -108,7 +108,7 @@ theorem rectangularBoundaryIntegral_suzukiXiWeilSpectralPrincipalPart_lower
     · exact
         zetaSpectralCoordinate_im_lt_neg_of_upperContourBottomAdmissible
           hT heta rho hrho hlower
-  · rw [if_neg hlower]
+  · rw [ite_eq_right hlower]
     apply rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_below
       (suzukiXiWeilSpectralResidue t z rho) a
     · linarith [heta.2.1]
@@ -227,13 +227,13 @@ theorem rectangularBoundaryIntegral_suzukiXiWeilWindowPrincipalSum_lower
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     rw [two_pi_I_mul_suzukiXiWeilSpectralResidue]
     unfold zetaSuzukiSpectralPSummand
       suzukiXiUpperEvaluationDenominator
     push_cast
     ring
-  · simp only [if_neg hlower, mul_zero]
+  · simp only [ite_eq_right hlower, mul_zero]
 
 /-! ## The actual transformed logarithmic derivative -/
 

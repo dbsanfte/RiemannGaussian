@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "date": "2026-10-08",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "parallelAgentsExplicitlyAuthorizedByUser": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "commitsOrPushesRun": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "newNativeSourceBlindCodedPacketEstimateProved": true,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "activeGap": "1/2 < Re rho <= 7/8; imported OpenAI all-height baseline unchanged",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "leaves": [
+      {
+        "leaf": "scripts/ArithmeticOperatorCenteredKummerAudit.lean",
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCenteredKummerAudit.lean",
+        "passed": true,
+        "exitCode": 0,
+        "warningsFatal": true,
+        "namespaceLinterRuns": 15,
+        "allLocalDeclarationsByModuleProvenance": true,
+        "privateAndGeneratedHelpersChecked": true,
+        "declarations": 93,
+        "theoremsIncludingGeneratedHelpers": 82,
+        "onlyStandardAxioms": true,
+        "probe": "scripts/probe_arithmetic_operator_centered_kummer.py",
+        "probeIsProofInput": false,
+        "evidenceDirectory": ".lake/arithmetic-operator-centered-kummer"
+      },
+      {
+        "leaf": "scripts/ArithmeticOperatorJointConstraintAudit.lean",
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/ArithmeticOperatorJointConstraintAudit.lean",
+        "passed": true,
+        "exitCode": 0,
+        "warningsFatal": true,
+        "namespaceLinterRuns": 15,
+        "allLocalDeclarationsByModuleProvenance": true,
+        "privateAndGeneratedHelpersChecked": true,
+        "declarations": 40,
+        "theoremsIncludingGeneratedHelpers": 32,
+        "onlyStandardAxioms": true,
+        "probe": "scripts/probe_arithmetic_operator_joint_constraint.py",
+        "probeIsProofInput": false,
+        "evidenceDirectory": ".lake/arithmetic-operator-joint-constraint"
+      },
+      {
+        "leaf": "scripts/ArithmeticOperatorShiftedDivisorAudit.lean",
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/ArithmeticOperatorShiftedDivisorAudit.lean",
+        "passed": true,
+        "exitCode": 0,
+        "warningsFatal": true,
+        "namespaceLinterRuns": 15,
+        "allLocalDeclarationsByModuleProvenance": true,
+        "privateAndGeneratedHelpersChecked": true,
+        "declarations": 44,
+        "theoremsIncludingGeneratedHelpers": 40,
+        "onlyStandardAxioms": true,
+        "probe": "scripts/probe_arithmetic_operator_shifted_divisor.py",
+        "probeIsProofInput": false,
+        "evidenceDirectory": ".lake/arithmetic-operator-shifted-divisor"
+      }
+    ],
+    "totalDeclarations": 177,
+    "totalTheoremsIncludingGeneratedHelpers": 154,
+    "namespaceLinterRuns": 45,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false,
+    "sourceCompatibilityChangesThisCheckpoint": false
+  },
+  "scope": {
+    "centeredKummer": {
+      "closedClass": "fixed SCALAR column-mean subtraction over COMPLETE coprime CRT periods",
+      "nativeIdentity": "all distinct-base Mangoldt prime-power divisor rows multiplied by (1-eta)(1-xi), arbitrary outside masks retained",
+      "actualZeroSource": "same factor times m_rho^2; all actual right-half zeros, analytic multiplicity retained",
+      "densitySource": "same scalar factor at the actual density double pole",
+      "noGo": "density cancellation iff eta=1 or xi=1; then entire source killed; original-to-centered analytic discrepancy has full m_rho^2 residue",
+      "notInferred": [
+        "incomplete-period source or payment",
+        "native cofinal source from analytic pole",
+        "impossibility of s-dependent analytic renormalization",
+        "independent RH signed estimate"
+      ]
+    },
+    "jointConstraint": {
+      "closedClass": "gap-separated internal Fourier codes on native common binomial rows with both prime columns growing",
+      "finiteIdentity": "both upper Lucas digits, actual p/q quotient crossings, two unit endpoints and all positive prime-power row exponents retained",
+      "gap": "norm(1-chi(-1)*eta(-1)*exp(i theta)), literal actual complex gap",
+      "packetBound": "24*(J+1)^2*2^J/g_J; ordinary prime pairs 2^J<=p,q<2^(J+1), original height phase and arbitrary bounded correlated OUTER masks",
+      "sourceSmallCondition": "eventually g_J>=exp(-eta log 2)^J and 1+eta<2 beta",
+      "sourceGate": "fixed exp(i theta) not +/-1 codes are source-zero for every beta>1/2, not RH payments",
+      "notCovered": [
+        "resonant or microscopic-gap codes",
+        "arbitrary internal row masks",
+        "summed proper-prime-power aggregate",
+        "fixed actual p with growing unaligned cofactor",
+        "genuine p-free-unit extraction"
+      ]
+    },
+    "shiftedDivisor": {
+      "closedClass": "exact fixed finite polynomial of ordinary shifted-divisor log jets",
+      "nativeIdentity": "finite-prefix inversion gives P(log n)=Lambda(n); actual multiples of six are distinct roots while value at two is log two",
+      "quantitativeNoGo": "for X>=2 exact equality on 1<=n<=X forces floor(X/6)<=natDegree P",
+      "exactInverse": "target_y=mu_y*logProxy_y, all product-fiber masks and proper powers retained",
+      "proxySource": "logarithmic all-divisor proxy analytic at every actual matched zero",
+      "targetSource": "-m_rho*zeta(Re rho) != 0; restored exactly by reciprocal zeta, without exposure or simplicity",
+      "notInferred": [
+        "estimate transferred across Mobius inverse",
+        "approximate or growing-degree jet no-go",
+        "general spectral/additive-divisor impossibility",
+        "literal cofinal source from analytic residue"
+      ]
+    }
+  },
+  "literature": {
+    "Cowan": {
+      "primary": "https://arxiv.org/pdf/2304.12572",
+      "claimScope": "Theorem 1.1 twisted additive DIVISOR coefficients; fixed prime level, nontrivial even characters with nontrivial product; pure imaginary shifts give 2/3+epsilon",
+      "importedIntoLean": false,
+      "MangoldtOrInverseEstimateGranted": false
+    },
+    "BaratGrabner": {
+      "primary": "https://www.math.tugraz.at/~grabner/Publications/Binomial-spatial.pdf",
+      "claimScope": "fixed-p, fixed modulus exponent spatial p-free-unit/carry limits; no campaign prime-index actual-zero residue or growing-prime rate imported",
+      "importedIntoLean": false
+    },
+    "MauduitRivat": {
+      "primary": "https://ems.press/content/serial-article-files/32075?nt=1",
+      "claimScope": "digital-prime power saving conditional on exact carry/Fourier properties; smooth-source blindness preflight is paper-level here",
+      "importedIntoLean": false
+    },
+    "nextFixedPrimeGate": {
+      "rawLucasSupportBound": "PAPER-LEVEL U_p(pq-1)=p U_p(q-1), normalized trace <= U_p(q-1)/q; candidate exponent log_p((p+1)/2)",
+      "notFormalizedAtThisCheckpoint": true,
+      "differentPFreeCandidate": "actual nonzero prime-index residue and density separation needed before heavy automaton estimates",
+      "wholeRegimeClosed": false
+    }
+  },
+  "nextGate": "literal fixed-p p-free-unit/carry source response, without granting fixed-character or smooth-mode source to a growing unaligned trace; or genuinely new prescribed resonant/cross-column arithmetic input",
+  "controls": "free/smooth/generalized-prime controls are not granted actual binomial/Gamma/inverse compatibility",
+  "priorCheckpoint": {
+    "priorMetadata": "docs/arithmetic-operator-kummer-corridor-audit.json",
+    "pinsMatchedBeforeDocumentationUpdate": 24,
+    "onlyExpectedDocumentationDriftAfterUpdate": [
+      "AGENTS.md",
+      "docs/arithmetic-operator-research.md"
+    ],
+    "oldPinsRewritten": false
+  },
+  "sourcePins": {
+    "AGENTS.md": "835ebcef81320b6c7896fca077ac67af21d4ecb8d272e31942bd5ddfb4c17954",
+    "docs/arithmetic-operator-research.md": "127a2291e15f79e4b397de19edb5c59ba32c84acdcf0ec1dbd04127ac3384d9e",
+    "../arithmetic_operator_research_roadmap.md": "5b49b252edd9158051fd3fd738c1f091799ea61f78605dbc3670c46f4d13ab8f",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "docs/arithmetic-operator-kummer-corridor-audit.json": "515ee9739939e4abc913ac99b4bf357aa74927e95e4d415347de88d36a2325c5",
+    "scripts/ArithmeticOperatorCrossUnitCancellation.lean": "e0b522d4c22f882dc1c4bf84b69ec79d0ae7f02ddcebb142799f0ba12da7f9a7",
+    "scripts/ArithmeticOperatorLucasUnitAudit.lean": "c1bc0b5677a89f8a6d05225ed601ecad861c33ffa9db093035a7b7135b6bda23",
+    "RiemannGaussian/ArithmeticOperatorKummerCutoff.lean": "32df8867fa00fae9888226cc780053b8c0905c5fda52cec26a2b5ec37ae8d21e",
+    "RiemannGaussian/ZetaPrimePairDiagonal.lean": "80bcf59802f06b9334450d56ffa274d483feea72c35b563bbddf24b2266de5fa",
+    "RiemannGaussian/ArithmeticOperatorTwistSourceAudit.lean": "abbb497679676ecda642600f76b93554401311f8067d2e371f3890398d448fd2",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ArithmeticOperatorGammaInverseAudit.lean": "3ac095fc98274ca6c4be72540dbe322e504db25029448cce260ec307b26e8318",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean": "b3b24f12111b2132e3b20c47f852de5a1c07be68f1c323f61b265ba4f8b5206b",
+    "scripts/ArithmeticOperatorCenteredKummerAudit.lean": "a94f456cc9e469bc2b6c59d10c3dceb62578b599264a499e38ebef1a76f212a4",
+    "scripts/probe_arithmetic_operator_centered_kummer.py": "5705010725a5d84b1d406d67096b3cde6fcddb02f73ed2c7166b28531654f01c",
+    ".lake/arithmetic-operator-centered-kummer/check.log": "e3cc20bafec7410969e24703d7417fc43bd8ef6782ce789e390172ae17b676e4",
+    ".lake/arithmetic-operator-centered-kummer/axioms.json": "4e14ae91ad823cf2cbd9753befbb4b1d67c783334939ad03720c8af9dda8a0a2",
+    ".lake/arithmetic-operator-centered-kummer/probe.json": "7f7fb62556e56b5cd77edbb2cc0a7449a58251d8bcb77c9609816e8fe03920a5",
+    "scripts/ArithmeticOperatorJointConstraintAudit.lean": "2579706196468ca3929148948be4bd3af07348085eb6bcadd0fddcb9d8164855",
+    "scripts/probe_arithmetic_operator_joint_constraint.py": "76bbc11f321778b31ec789ece513bff707ec2a4b7aacb36630210bc361ab9ffb",
+    ".lake/arithmetic-operator-joint-constraint/check.log": "ee1f5f501aa892f1e96df56cc38eba308484371697d00df1e319b36e6f8d127f",
+    ".lake/arithmetic-operator-joint-constraint/axioms.json": "ece44c65f12318e752fa4522ceb32c9f77d8c489bc78e37d060405be852c45e8",
+    ".lake/arithmetic-operator-joint-constraint/probe.json": "8b475e1fe899356d9f5beb532339cca8e136db94f2d3dc7278398b0fa0c4e076",
+    "scripts/ArithmeticOperatorShiftedDivisorAudit.lean": "e84e2a06b39353f3bf298a51e04162adbafd68bbf1e4e79216c187a94d35d871",
+    "scripts/probe_arithmetic_operator_shifted_divisor.py": "aa7d625359863bd719faa098f854cdb1ff0c23fa376c3e9b2db5cfdc455602b4",
+    ".lake/arithmetic-operator-shifted-divisor/check.log": "17cc400731a0913ecca666fe6f5e454c60f28ede10cddddcd23884f1bff8a17c",
+    ".lake/arithmetic-operator-shifted-divisor/axioms.json": "a4db7484a3144edc21fd4b7f0ccb41e9816b600834715fa215921bc8d8087df4",
+    ".lake/arithmetic-operator-shifted-divisor/probe.json": "4f63ef1802744adae87e8a41df331f8bb8da1aa87483d574daaf90ad12d31704",
+    ".lake/arithmetic-operator-literature/primary-operator-gates.md": "48a95b9711d66f2eb2680900928c76eeccad4c59f9f7bf660d2cb6d088e96824",
+    ".lake/arithmetic-operator-literature/fixed-prime-unaligned-source-gate.md": "987a711c4cbbe12a248eec3f7d24add0b991daf1821238d3eed29fcb32e6b74d",
+    ".lake/arithmetic-operator-shifted-divisor/prior-corridor-pins-before-doc-update.json": "b6620a73090514938c05b6353b3114de0261508657f55a6954b6e05cafba590e",
+    ".lake/arithmetic-operator-shifted-divisor/prior-corridor-pins-after-doc-update.json": "d77cf6293b59f5826ba1e0db35f3d25cb9853fa95051787e412b47d89b9ca63f"
+  }
+}

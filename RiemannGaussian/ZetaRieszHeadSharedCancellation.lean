@@ -137,7 +137,7 @@ theorem central_nonowner_head_zero {u : ℝ} (hu : 1/2≤u)
   obtain ⟨hne,hq⟩ := Finset.mem_erase.mp hq
   have hp := ZetaRieszOwnedCells.largestPrime_mem_of_two (by omega : 2≤n.primeFactors.card)
   have hmax : q≤largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨q,hq⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨q,hq⟩)]
     exact Finset.le_max' _ _ hq
   have hlog := log_le_log
     (by exact_mod_cast (Nat.prime_of_mem_primeFactors hq).pos : (0 : ℝ)<q)
@@ -171,12 +171,12 @@ theorem central_shared_incidence_eq_owner {u : ℝ} (hu : 1/2≤u)
   rw [Finset.sum_mul]
   change (∑ q∈S,c q*a)=_
   by_cases hpH : largestPrime n∈headCofactors u (dyadicMomentOrder j)
-  · rw [if_pos hpH]
+  · rw [ite_eq_left hpH]
     have hpS : largestPrime n∈S := Finset.mem_inter.mpr
       ⟨ZetaRieszOwnedCells.largestPrime_mem_of_two (by omega),hpH⟩
     exact Finset.sum_eq_single (largestPrime n) (fun q hq hne => hz q hq hne)
       (fun h => (h hpS).elim)
-  · rw [if_neg hpH,zero_mul]
+  · rw [ite_eq_right hpH,zero_mul]
     apply Finset.sum_eq_zero
     intro q hq
     apply hz q hq

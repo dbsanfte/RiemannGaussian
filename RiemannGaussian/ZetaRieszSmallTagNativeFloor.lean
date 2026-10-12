@@ -211,7 +211,7 @@ theorem eventually_labels_subset_native {u : ℝ} (hu : 1/2<u)
     have hqle q (hq : q∈(p*a).primeFactors) : q≤p := by
       rw [← hmax]
       have he : (p*a).primeFactors.Nonempty := ⟨q,hq⟩
-      rw [largestPrime,dif_pos he]
+      rw [largestPrime,dite_eq_left he]
       exact Finset.le_max' _ _ hq
     have hphys : ∀ q∈(p*a).primeFactors,
         q<(ZetaVaughanCutoffBudget.linearDampedCutoff u (dyadicMomentOrder j)+2)^2 :=
@@ -470,7 +470,7 @@ private theorem subset_prefix_eq (A D : Finset ℕ) (X : ℕ) (L u y : ℝ) (N :
     simp only [hp.primeFactors,Finset.card_singleton] at h
     omega
   simp only [ZetaRieszComplexProjection.sourceWeight,residualCoefficient,
-    SquarefreeVaughanLogSource.coefficient,if_pos (And.intro (hs n hn) hnp)]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro (hs n hn) hnp)]
   push_cast
   ring
 

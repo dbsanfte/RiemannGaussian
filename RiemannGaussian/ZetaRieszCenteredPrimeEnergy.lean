@@ -117,7 +117,7 @@ theorem divisor_centering {n X : ℕ} (hn : Squarefree n) (hp : ¬n.Prime)
     exact_mod_cast ZetaRieszPrimeFourier.sum_moebius_log_eq_zero hn hp
   have he d (hd : d ∈ n.divisors) : centeredProfile X f a d =
       f d+a*log d-(f X+a*log X) := by
-    apply if_pos
+    apply ite_eq_left
     exact (Nat.le_of_dvd (Nat.pos_of_ne_zero hn.ne_zero) (Nat.dvd_of_mem_divisors hd)).trans hX
   simp_rw [Finset.sum_congr rfl (fun d hd => congrArg (fun x : ℝ => (μ d : ℝ)*x) (he d hd))]
   simp only [mul_sub,mul_add,Finset.sum_sub_distrib,Finset.sum_add_distrib]
@@ -149,7 +149,7 @@ private theorem centeredProfile_energy (X : ℕ) (f : ℕ → ℝ) (a : ℝ) :
       centeredProfile X f a k-centeredProfile X f a (k+1) = f k-f (k+1)-a*logStep k := by
     intro k hk
     have hk' := Finset.mem_Ico.mp hk
-    simp only [centeredProfile,if_pos (by omega : k ≤ X),if_pos (by omega : k+1 ≤ X),logStep]
+    simp only [centeredProfile,ite_eq_left (by omega : k ≤ X),ite_eq_left (by omega : k+1 ≤ X),logStep]
     ring
   have hx : centeredProfile X f a X=0 := by simp [centeredProfile]
   have hx' : centeredProfile X f a (X+1)=0 := by simp [centeredProfile]
@@ -342,12 +342,12 @@ theorem exists_literal_centered_bounds :
   let B' := fun n j => if hn : n ∈ S then B n hn j else 0
   have hcoef' n (hn : n ∈ S) j (hj : j ≤ N+1) :
       0 ≤ B' n j ∧ B' n j ≤ ((N+1).choose j : ℝ)*log n^(N+1-j) := by
-    simpa only [B',dif_pos hn] using hcoef n hn j hj
+    simpa only [B',dite_eq_left hn] using hcoef n hn j hj
   have hid' n (hn : n ∈ S) i (hi : i ∈ Finset.Ico (lo n) (hi n)) p (hp : p ∈ P i) :
       (1-boundedShare A N (p*n))*log (p*n : ℕ)^(N+1) =
         ∑ j ∈ Finset.range (N+2), B' n j*log p^j := by
     have hp' := hprime n hn i hi p hp
-    simpa only [B',dif_pos hn] using hid n hn p hp'.1 hp'.2.1 hp'.2.2
+    simpa only [B',dite_eq_left hn] using hid n hn p hp'.1 hp'.2.1 hp'.2.2
   refine ⟨B',hcoef',hid',?_⟩
   let w := fun j (n : ℕ) => exp (-log n/2)*B' n j/(n : ℝ)
   have hi' n (hn : n ∈ S) :
@@ -530,16 +530,16 @@ theorem exists_literal_centered_family_bounds :
   let B' := fun i n j => if hi : i ∈ I then B i hi n j else 0
   refine ⟨B',?_,?_,?_⟩
   · intro i hi n hn j hj
-    simpa only [B',dif_pos hi] using hcoef i hi n hn j hj
+    simpa only [B',dite_eq_left hi] using hcoef i hi n hn j hj
   · intro i hi n hn t ht p hp'
-    simpa only [B',dif_pos hi] using hid i hi n hn t ht p hp'
+    simpa only [B',dite_eq_left hi] using hid i hi n hn t ht p hp'
   · let J := fun i => (∑ n ∈ S i, ∑ t ∈ Finset.Ico (lo i n) (hi i n), ∑ p ∈ P i t,
         residualCoefficient (A i) (L i) (N i) (p*n)*
           zetaPrimeLogKernel (N i) (3/2+Complex.I*y i) (p*n)).re
     have hbi i (hI : i ∈ I) :
         -retainedCenteredCost E (P i) (S i) (B' i) (N i) (X i) (b i) (y i) (L i) ≤ J i ∧
         J i ≤ retainedCenteredCost E (P i) (S i) (B' i) (N i) (X i) (b i) (y i) (L i) := by
-      simpa only [J,B',dif_pos hI] using hb i hI
+      simpa only [J,B',dite_eq_left hI] using hb i hI
     have hl := Finset.sum_le_sum (fun i (hI : i ∈ I) => (hbi i hI).1)
     have hu := Finset.sum_le_sum (fun i (hI : i ∈ I) => (hbi i hI).2)
     rw [Finset.sum_neg_distrib] at hl

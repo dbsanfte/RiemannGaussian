@@ -411,14 +411,14 @@ theorem eventually_phase_tuple_mass {h α : ℝ}
   have hprod : 0 ≤ ∏ i, h/a i := Finset.prod_nonneg (fun i _ => div_nonneg hh.le (ha0 i).le)
   have hlo : (∏ i, (9999/10000 : ℝ)*(h/a i)) ≤
       ∏ i, ∑ p ∈ logPrimes (a i) h, (p : ℝ)⁻¹ := by
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro i _
       exact mul_nonneg (by norm_num) (div_nonneg hh.le (ha0 i).le)
     · intro i _
       simpa only [mul_div_assoc] using (hN (a i) (ha i)).1
   have hhi : (∏ i, ∑ p ∈ logPrimes (a i) h, (p : ℝ)⁻¹) ≤
       ∏ i, (10001/10000 : ℝ)*(h/a i) := by
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro i _
       exact Finset.sum_nonneg (fun p _ => inv_nonneg.mpr (Nat.cast_nonneg p))
     · intro i _

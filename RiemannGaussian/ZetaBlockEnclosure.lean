@@ -195,7 +195,7 @@ theorem mem_momentTable {prec : ℤ} (hp : prec ≤ 0) {q : ℂ} (hq : q ≠ 1)
         Rat.cast_one, Rat.cast_pow, Rat.cast_neg, Rat.cast_add, sub_eq_add_neg, div_eq_mul_inv] using hh
     · have hjm : j < m := by omega
       simpa only [lookup, Array.getD_eq_getD_getElem?, momentTable, Array.getElem?_push,
-        size_momentTable, if_neg hje] using ih j hjm
+        size_momentTable, ite_eq_right hje] using ih j hjm
 
 /-- Use compressed moments when the reciprocal enclosure is reasonably small;
 otherwise use the exact direct polynomial sum. The threshold affects speed

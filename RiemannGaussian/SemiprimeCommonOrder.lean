@@ -41,7 +41,7 @@ theorem recoverSquare_semiprime_square {p : ℕ} (hp : p.Prime) :
     recoverSquare (p^2)=some p := by
   have hg : (p^2).gcd p=p := Nat.gcd_eq_right (by exact ⟨p, by ring⟩)
   have hproper : 1<p ∧ p<p^2 := ⟨hp.one_lt, by nlinarith [hp.one_lt]⟩
-  simp only [recoverSquare, Nat.sqrt_eq', checkedSignal, hg, if_pos hproper, ite_true]
+  simp only [recoverSquare, Nat.sqrt_eq', checkedSignal, hg, ite_eq_left hproper, ite_true]
 
 /-- The public quotient retains both coefficient channels. -/
 def orderQuotient (N m : ℕ) : ℕ := (N-1)/m
@@ -153,7 +153,7 @@ theorem recoverCommon_semiprime {p q m : ℕ} (hp : p.Prime) (hq : q.Prime)
   have hpN : p<p*q := by have hh := hq.one_lt; nlinarith [hp.pos]
   have hg : (p*q).gcd p=p := Nat.gcd_eq_right (dvd_mul_right p q)
   have hproper : 1<p ∧ p<p*q := ⟨hp.one_lt, hpN⟩
-  rw [recoverCommon, if_pos hm, hc, checkedSignal, hg, if_pos hproper]
+  rw [recoverCommon, ite_eq_left hm, hc, checkedSignal, hg, ite_eq_left hproper]
 
 /-- Literal public power-divisor checks certify the local order at
 each prime factor. The order value is derived, not hidden advice. -/
@@ -627,12 +627,12 @@ theorem recoverWrapped_semiprime {p q m B : ℕ} (hp : p.Prime) (hq : q.Prime)
   | none =>
     have hn : SemiprimeCartesianCompletion.scanProper (p*q)
         ((List.range (2*B)).map (wrappedCandidate (p*q) m))=none := by
-      simpa only [recoverWrapped, if_pos hm] using hs
+      simpa only [recoverWrapped, ite_eq_left hm] using hs
     have hmem : p ∈ (List.range (2*B)).map (wrappedCandidate (p*q) m) :=
       List.mem_map.mpr ⟨(a+b)/m, List.mem_range.mpr ht, hc⟩
     have he := (SemiprimeCartesianCompletion.scanProper_none_iff _ _).mp hn p hmem
     have hproper : 1<p ∧ p<p*q := ⟨hp.one_lt, by have hh := hq.one_lt; nlinarith⟩
-    rw [checkedSignal, Nat.gcd_eq_right (dvd_mul_right p q), if_pos hproper] at he
+    rw [checkedSignal, Nat.gcd_eq_right (dvd_mul_right p q), ite_eq_left hproper] at he
     contradiction
 
 /-- Failed prefix recovery and an actual known raw-kernel order

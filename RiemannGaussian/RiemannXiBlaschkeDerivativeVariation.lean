@@ -69,9 +69,9 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_nonneg
     (z : ℂ) (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperBlaschkeDerivativeVariationSummand z rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBlaschkeDerivativeVariationSummand, if_pos hupper]
+  · rw [zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_left hupper]
     positivity
-  · rw [zetaUpperBlaschkeDerivativeVariationSummand, if_neg hupper]
+  · rw [zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_right hupper]
 
 /-- Per spectral zero, Poisson defect is exactly observation height times
 twice the elementary Blaschke derivative variation. -/
@@ -80,12 +80,12 @@ theorem zetaUpperHyperbolicPoissonDefectSummand_eq_two_mul_im_mul_variation
     zetaUpperHyperbolicPoissonDefectSummand z rho =
       2 * z.im * zetaUpperBlaschkeDerivativeVariationSummand z rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_pos hupper,
-      zetaUpperBlaschkeDerivativeVariationSummand, if_pos hupper,
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_left hupper,
       norm_deriv_elementaryUpperHalfPlaneBlaschke hz hupper]
     ring
-  · rw [zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper,
-      zetaUpperBlaschkeDerivativeVariationSummand, if_neg hupper, mul_zero]
+  · rw [zetaUpperHyperbolicPoissonDefectSummand, ite_eq_right hupper,
+      zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_right hupper, mul_zero]
 
 /-- The complete extended total variation of the elementary Blaschke
 derivatives belonging to upper spectral-xi zeros. -/

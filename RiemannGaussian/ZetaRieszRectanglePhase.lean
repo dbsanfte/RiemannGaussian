@@ -138,15 +138,15 @@ theorem eventually_uniform_rectangle_phase (rho : NontrivialZetaZero)
   have hk : ∀ᶠ N : ℕ in atTop, N ≤ 100 * k N ∧ 40 * k N ≤ 27 * N := by
     filter_upwards [eventually_ge_atTop 2] with N hN
     by_cases hf : N ≤ 100 * f N ∧ 40 * f N ≤ 27 * N
-    · simpa only [k, if_pos hf] using hf
-    · simp only [k, if_neg hf]
+    · simpa only [k, ite_eq_left hf] using hf
+    · simp only [k, ite_eq_right hf]
       omega
   have h := ((tendsto_rectangle_weighted_finite rho hrho hexposed huU k hk).add_const
     (analyticZetaZeroMultiplicity rho : ℂ)).norm
   simp only [neg_add_cancel, norm_zero] at h
   filter_upwards [h.eventually (eventually_lt_nhds hε)] with N hN
   intro hlow hhigh
-  simpa only [k, if_pos (And.intro hlow hhigh)] using hN.le
+  simpa only [k, ite_eq_left (And.intro hlow hhigh)] using hN.le
 
 /-- All three orders, including h+1, lie in the independently completable
 band and tend to infinity. The total-order correlation is unchanged. -/

@@ -176,7 +176,7 @@ theorem norm_actual_band_le_arithmetic_list (L : ℝ) (P : Polynomial ℂ) (N : 
   have hs : (∑ n ∈ zetaPrimeLogBand N, bandWeight L P N t n) =
       zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     unfold bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   rw [← hs]
   exact norm_actual_subset_le_arithmetic_list L P N t (zetaPrimeLogBand N) es
     (fun e he' => ZetaRieszCycleIteration.actualCycles_valid (he e he'))
@@ -227,7 +227,7 @@ theorem tendsto_available_arithmetic_cycle_source (rho : NontrivialZetaZero) (hr
       ZetaRieszCycleIteration.actualCycles_valid
         (availableArithmeticCycles_valid (Finset.mem_toList.mp he)).1)]
     unfold bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   have h := SquarefreeVaughanLogSource.tendsto_actual_riesz_band rho hrho
   apply h.congr'
   filter_upwards [] with N

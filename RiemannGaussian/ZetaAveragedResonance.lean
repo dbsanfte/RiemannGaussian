@@ -53,11 +53,11 @@ theorem sum_norm_zetaArithmeticWindowSamples_le (a : ℕ → ℂ)
         unfold zetaPrimeExpWeight
         rw [← Real.exp_add]
         exact Real.exp_le_exp.mpr (by nlinarith [hn.1])
-      simp only [zetaLogWindowCoefficient, if_pos hn]
+      simp only [zetaLogWindowCoefficient, ite_eq_left hn]
       have h := mul_le_mul (ha n) (hw.trans (mul_le_mul_of_nonneg_right hpow (Real.exp_pos _).le))
         (Real.exp_pos _).le (zetaMoebiusLogMajorant_nonneg n)
       exact h.trans_eq (by ring)
-    · simp only [zetaLogWindowCoefficient, if_neg hn, norm_zero, zero_mul]
+    · simp only [zetaLogWindowCoefficient, ite_eq_right hn, norm_zero, zero_mul]
       exact mul_nonneg (by positivity)
         (mul_nonneg (zetaMoebiusLogMajorant_nonneg n) (Real.exp_pos _).le)
   calc

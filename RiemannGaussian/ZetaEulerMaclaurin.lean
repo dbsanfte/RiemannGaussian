@@ -114,7 +114,7 @@ theorem norm_rising_le {s : ℂ} {T : ℝ} (hT : ‖s‖ ≤ T) (m : ℕ) :
   rw [rising, norm_prod]
   calc
     _ ≤ ∏ _j ∈ Finset.range m, (T + m) := by
-      apply Finset.prod_le_prod (fun _ _ ↦ norm_nonneg _)
+      apply Finset.prod_le_prod₀ (fun _ _ ↦ norm_nonneg _)
       intro j hj
       have hjR : (j : ℝ) ≤ m := by exact_mod_cast (Finset.mem_range.mp hj).le
       calc

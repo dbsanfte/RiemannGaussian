@@ -113,16 +113,16 @@ theorem ordinary_log_recurrence (H : ℕ → ℕ)
     (summable_zetaOrdinaryPrimeLogMoment k (by norm_num)).norm
   have hl (m : ℕ) : Tendsto (fun n => f n m) atTop (𝓝 (g m)) := by
     by_cases hm : m.Prime
-    · simpa only [f,g,if_pos hm,Complex.ofReal_div,Complex.ofReal_ofNat] using (kernel_recurrence H hp k m (3/2) y).const_mul
+    · simpa only [f,g,ite_eq_left hm,Complex.ofReal_div,Complex.ofReal_ofNat] using (kernel_recurrence H hp k m (3/2) y).const_mul
         (ArithmeticFunction.vonMangoldt m : ℂ)
-    · simpa only [f,g,if_neg hm] using (tendsto_const_nhds (x := (0 : ℂ)))
+    · simpa only [f,g,ite_eq_right hm] using (tendsto_const_nhds (x := (0 : ℂ)))
   have hb : ∀ᶠ n in atTop, ∀ m, ‖f n m‖ ≤ ‖g m‖ := by
     apply Eventually.of_forall
     intro n m
     by_cases hm : m.Prime
-    · simp only [f,g,if_pos hm,norm_mul,norm_zetaPrimeLogKernel]
+    · simp only [f,g,ite_eq_left hm,norm_mul,norm_zetaPrimeLogKernel]
       norm_num
-    · simp only [f,g,if_neg hm,norm_zero,le_refl]
+    · simp only [f,g,ite_eq_right hm,norm_zero,le_refl]
   exact tendsto_tsum_of_dominated_convergence hs hl hb
 
 /-- The already-defined finite exhaustive pair evaluator recurs with all signed coefficients, integer factorial cutoffs and the moving length unchanged. -/

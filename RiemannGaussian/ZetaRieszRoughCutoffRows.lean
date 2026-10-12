@@ -223,7 +223,7 @@ private theorem ownedShellDiscrepancy_eq_literal (A : Finset ℕ) (N : ℕ) (L y
     rw [owner_phase_eq_amplitude A N L y hp hb hd0 hh.1 hh.2.1 hh.2.2 hpA]
     have hw : w d=ownedAmplitude N (log p) (log (p*b : ℕ)) d*
         cos (y*(log (p*b : ℕ)+log d))/d := by
-      simp only [w,ZetaRieszCofactorDiscrepancy.shellWeight,if_pos (Finset.mem_Ioc.mp hd)]
+      simp only [w,ZetaRieszCofactorDiscrepancy.shellWeight,ite_eq_left (Finset.mem_Ioc.mp hd)]
     rw [hw]
     ring
   · ring
@@ -256,8 +256,8 @@ theorem coreRow_add_overflow_of_geometry (j : ℕ) (hj : 32 ≤ j) {u y : ℝ}
     · simp [rowAtom_eq,hz]
     have hc := row_mem_core_iff_of_geometry j hj hu hU hL hg hd (sieve_base_nonzero hz)
     by_cases hk : (p*(b*d)).primeFactors.card < dyadicPrimeCount j
-    · rw [if_pos (hc.mpr hk),if_neg (by omega),add_zero]
-    · rw [if_neg (fun h => hk (hc.mp h)),if_pos (by omega),zero_add]
+    · rw [ite_eq_left (hc.mpr hk),ite_eq_right (by omega),add_zero]
+    · rw [ite_eq_right (fun h => hk (hc.mp h)),ite_eq_left (by omega),zero_add]
   rw [hs]
   ring
 
@@ -998,8 +998,8 @@ theorem restricted_overflow_bound (B : Finset (ℕ×ℕ)) (M X : ℕ×ℕ → �
   apply Finset.sum_congr rfl
   intro d _
   by_cases hk : dyadicPrimeCount j ≤ (pb.1*(pb.2*d)).primeFactors.card
-  · simp only [if_pos hk,rowAtom]; ring
-  · simp only [if_neg hk,mul_zero]
+  · simp only [ite_eq_left hk,rowAtom]; ring
+  · simp only [ite_eq_right hk,mul_zero]
 
 /-- Joined literal rough high-count shells, independently of the pair-size cutoff. -/
 theorem weighted_overflow_shells_bound {ι : Type*} (I : Finset ι)
@@ -1436,9 +1436,9 @@ theorem literalCutoffPacket_eq_rows (u y : ℝ) (j : ℕ) :
   obtain ⟨_,hs,_,_,hH,_,_,_,_,hc,_hsmall,_,_⟩ := Finset.mem_filter.mp hpb
   by_cases hcore : pb.1*(pb.2*e) ∈ ZetaRieszParityPacket.coreBand u
       (dyadicMomentOrder j) (dyadicPrimeCount j)
-  · simp only [if_pos hcore]
+  · simp only [ite_eq_left hcore]
     exact (cutoff_row_atom_eq _ hs hc hH).symm
-  · simp only [if_neg hcore,mul_zero]
+  · simp only [ite_eq_right hcore,mul_zero]
 
 /-- Concrete independent signed estimate on the ORIGINAL finite prime
 and divisor sum, not a density model or a conditional sieve hypothesis. -/
@@ -1755,7 +1755,7 @@ theorem roughTag_eq_one_of_original_pair {B e : ℕ}
     rw [hr]
     exact Nat.minFac_le_of_dvd hx.2.2.2.1.two_le hsB
   unfold roughTag
-  rw [if_pos]
+  rw [ite_eq_left]
   rintro ⟨q,hq,hqe⟩
   have hp := (Finset.mem_filter.mp hq).2
   have hle := (Finset.mem_Icc.mp (Finset.mem_filter.mp hq).1).2
@@ -1912,7 +1912,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP,dvd_mul_right _ _,hs.ne_zero⟩
   have hne : (p*(B*e)).primeFactors.Nonempty := ⟨p,hpn⟩
   have hmax' : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hmax q (hq : q ∈ B.primeFactors) : q < p := by
     have hd : B ∣ p*(B*e) := (dvd_mul_right B e).trans (dvd_mul_left _ _)
     have hqn := Nat.primeFactors_mono hd hs.ne_zero hq
@@ -1962,7 +1962,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP.coprime_iff_not_dvd.mpr hpd,hpP.squarefree,hB⟩
   rw [sieve_forbidden,ht,mul_one,sieve_eq_product_squarefree houter]
   have hsq' : Squarefree ((p*B)*e) := by simpa only [mul_assoc] using hs
-  simp only [if_pos hsq']
+  simp only [ite_eq_left hsq']
 
 /-- Low total count forces the whole-row owner gap. Such crossings are
 included in the same joined all-count payment, not paid by a separate
@@ -1991,7 +1991,7 @@ theorem cutoff_crossing_covered_of_count_le {u : ℝ} {N K p B e δ : ℕ}
   have hcc := ZetaRieszJointPrimeEnergy.core_count hn
   have hne : (p*(B*e)).primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hmax : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hlogcount : log (p*(B*e) : ℕ) ≤ (24 : ℝ)*log p := by
     calc
       _ = ∑ q ∈ (p*(B*e)).primeFactors, log q :=
@@ -2240,12 +2240,12 @@ theorem literal_middle_cutoff_population_eq_zero
     intro v hv
     obtain ⟨hp,hs,howner,hcount,_hR,hP,hlo,hhi⟩ := hI v hv
     by_cases hcore : v.1.1*(v.1.2*v.2) ∈ ZetaRieszParityPacket.coreBand u N K
-    · rw [if_pos hcore,howner]
+    · rw [ite_eq_left hcore,howner]
       have hB := (Nat.squarefree_mul_iff.mp (Nat.squarefree_mul_iff.mp hs).2.2).2.1
       exact small_owner_middle_block_eq_zero hu hN
         ((ZetaRieszAnnulusJoint.mem_intermediatePrimes _ _ _).mp hp).1
         hB hcount hP hlo hhi _
-    · rw [if_neg hcore]
+    · rw [ite_eq_right hcore]
   rw [hz,mul_zero]
 
 end RiemannGaussian.ZetaRieszRoughCutoffRows

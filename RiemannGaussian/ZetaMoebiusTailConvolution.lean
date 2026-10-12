@@ -53,14 +53,14 @@ theorem LSeriesHasSum_zetaMoebiusHeadCoefficient (D : ℕ) (s : ℂ) :
     hasSum_sum_of_ne_finset_zero (s := Finset.range (D + 1))
     (f := LSeries.term (zetaMoebiusHeadCoefficient D) s) (by
       intro n hn
-      rw [head_term, if_neg (by simpa using hn)])
+      rw [head_term, ite_eq_right (by simpa using hn)])
   have he : (∑ n ∈ Finset.range (D + 1), LSeries.term (zetaMoebiusHeadCoefficient D) s n) =
       zetaMoebiusDirichletHead D s := by
     rw [Finset.sum_range_succ']
     simp only [LSeries.term_zero, add_zero, zetaMoebiusDirichletHead]
     apply Finset.sum_congr rfl
     intro n hn
-    rw [head_term, if_pos (by simpa using hn), moebius_LSeries_term_eq_exp s (Nat.succ_ne_zero n)]
+    rw [head_term, ite_eq_left (by simpa using hn), moebius_LSeries_term_eq_exp s (Nat.succ_ne_zero n)]
     congr 2
     ring
   exact he ▸ h
@@ -117,7 +117,7 @@ theorem zetaMoebiusLogTailCoefficient_eq_zero_of_lt (D n : ℕ) (hn : n < 2 * (D
   apply Finset.sum_eq_zero
   intro a ha
   by_cases hd : D < a.1
-  · rw [if_pos hd]
+  · rw [ite_eq_left hd]
     have hk : a.2 = 1 := by
       have hprod := (Nat.mem_divisorsAntidiagonal.mp ha).1
       have hk0 := Nat.right_ne_zero_of_mem_divisorsAntidiagonal ha
@@ -125,7 +125,7 @@ theorem zetaMoebiusLogTailCoefficient_eq_zero_of_lt (D n : ℕ) (hn : n < 2 * (D
       have hk2 : 2 ≤ a.2 := by omega
       nlinarith
     simp [hk]
-  · rw [if_neg hd]
+  · rw [ite_eq_right hd]
 
 /-- Once divisor one is removed, this convolution vanishes on every
 prime. Its surviving source is carried by composite products. -/

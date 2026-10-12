@@ -55,7 +55,7 @@ private theorem measurable_profile (tau : ℝ) :
             (-1 : ℂ)^k*amplitude tau (((k+1 : ℕ) : ℝ)*Real.exp t/2) = 0))]
     apply Finset.sum_congr rfl
     intro k hk
-    simp only [if_pos (Finset.mem_range.mp hk)]
+    simp only [ite_eq_left (Finset.mem_range.mp hk)]
   rw [he]
   apply Measurable.tsum
   intro k
@@ -72,10 +72,10 @@ private theorem measurable_roundedProfile (H : ℕ) (tau : ℝ) :
         (-1 : ℂ)^k*amplitude tau (roundUp H (((k+1 : ℕ) : ℝ)*Real.exp t/2)) else 0) := by
     funext t
     rw [tsum_eq_sum (s := Finset.range (jumpCount (Real.exp t)))
-      (fun k hk => by rw [if_neg (by simpa only [Finset.mem_range] using hk)])]
+      (fun k hk => by rw [ite_eq_right (by simpa only [Finset.mem_range] using hk)])]
     apply Finset.sum_congr rfl
     intro k hk
-    simp only [if_pos (Finset.mem_range.mp hk)]
+    simp only [ite_eq_left (Finset.mem_range.mp hk)]
   rw [he]
   apply Measurable.tsum
   intro k

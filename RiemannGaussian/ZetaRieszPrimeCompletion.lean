@@ -29,7 +29,7 @@ theorem upper_atom_le (Q : ℕ → Prop) (k : ℕ) (y L : ℝ)
     ‖if Q n then zetaPrimeLogKernel k (3 / 2 + Complex.I * y) n else 0‖ ≤
       (q⁻¹ ^ k * Real.exp (-(3 / 2 - q - σ) * L)) * zetaPrimeExpWeight σ n := by
   by_cases hn : Q n
-  · rw [if_pos hn]
+  · rw [ite_eq_left hn]
     have hb := norm_zetaPrimeLogKernel_le k (3 / 2 + Complex.I * (y : ℂ)) n hq
     have hs : (3 / 2 + Complex.I * (y : ℂ)).re = (3 / 2 : ℝ) := by norm_num
     rw [hs] at hb
@@ -46,7 +46,7 @@ theorem upper_atom_le (Q : ℕ → Prop) (k : ℕ) (y L : ℝ)
       (mul_le_mul_of_nonneg_right hx (Real.exp_pos _).le) (by positivity)).trans_eq (by
         unfold zetaPrimeExpWeight
         ring))
-  · rw [if_neg hn, norm_zero]
+  · rw [ite_eq_right hn, norm_zero]
     unfold zetaPrimeExpWeight
     positivity
 
@@ -227,9 +227,9 @@ theorem hasSum_finiteMoment (A : Finset ℕ) (k : ℕ) (y : ℝ) :
       (ZetaRieszPrimePairConvolution.finiteMoment A k (3 / 2 + Complex.I * y)) := by
   have h : HasSum (fun p => if p ∈ A then zetaPrimeLogKernel k (3 / 2 + Complex.I * y) p else 0)
       (∑ p ∈ A, if p ∈ A then zetaPrimeLogKernel k (3 / 2 + Complex.I * y) p else 0) :=
-    hasSum_sum_of_ne_finset_zero (s := A) (by intro p hp; exact if_neg hp)
+    hasSum_sum_of_ne_finset_zero (s := A) (by intro p hp; exact ite_eq_right hp)
   convert h using 1
-  exact (Finset.sum_congr rfl (fun p hp => if_pos hp)).symm
+  exact (Finset.sum_congr rfl (fun p hp => ite_eq_left hp)).symm
 
 /-- The entire prime series splits at both actual endpoints. No prime
 mask is completed before its two exact omitted pieces are recorded. -/

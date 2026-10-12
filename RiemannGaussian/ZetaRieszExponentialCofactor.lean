@@ -475,9 +475,9 @@ theorem tendsto_adaptive_composite_band (P : Polynomial ℂ) (y : ℝ)
       SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N) n *
         zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n) atTop (𝓝 0) := by
   by_cases h : 2 / 3 < u
-  · simpa only [adaptiveCompositeBand, if_pos h] using
+  · simpa only [adaptiveCompositeBand, ite_eq_left h] using
       tendsto_exponential_composite_band P y h hu1
-  · simpa only [adaptiveCompositeBand, if_neg h] using
+  · simpa only [adaptiveCompositeBand, ite_eq_right h] using
       tendsto_growing_composite_band P y hu hu1
 
 /-- The two actual bands partition the original carrier exactly at
@@ -491,9 +491,9 @@ theorem actual_band_eq_adaptive_add_reduced (P : Polynomial ℂ) (N : ℕ) (y L 
         SquarefreeVaughanLogSource.coefficient L n *
           zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n := by
   by_cases h : 2 / 3 < u
-  · simpa only [adaptiveCompositeBand, adaptiveReducedBand, if_pos h] using
+  · simpa only [adaptiveCompositeBand, adaptiveReducedBand, ite_eq_left h] using
       actual_band_eq_exponential_add_reduced P N y L u
-  · simpa only [adaptiveCompositeBand, adaptiveReducedBand, if_neg h] using
+  · simpa only [adaptiveCompositeBand, adaptiveReducedBand, ite_eq_right h] using
       actual_band_eq_growing_add_reduced P N y L
 
 /-- Every hypothetical right-half zero retains the same source after

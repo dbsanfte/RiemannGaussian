@@ -58,17 +58,17 @@ theorem countedPower_correct (N a e : ℕ) :
   | h e ih =>
     by_cases he : e=0
     · subst e
-      rw [countedPower,dif_pos rfl]
+      rw [countedPower,dite_eq_left rfl]
       simp only [ZMod.natCast_mod,Nat.cast_one,pow_zero]
     · have hsmall := Nat.div_lt_self (Nat.pos_of_ne_zero he) (by decide : 1<(2 : ℕ))
       have hc := ih (e/2) hsmall
-      rw [countedPower,dif_neg he]
+      rw [countedPower,dite_eq_right he]
       by_cases hp : e%2=0
-      · rw [if_pos hp]
+      · rw [ite_eq_left hp]
         simp only [ZMod.natCast_mod,Nat.cast_mul,hc]
         have hd : e/2+e/2=e := by omega
         rw [←pow_add,hd]
-      · rw [if_neg hp]
+      · rw [ite_eq_right hp]
         simp only [ZMod.natCast_mod,Nat.cast_mul,hc]
         have hd : e/2+e/2+1=e := by omega
         rw [←pow_add,←pow_succ,hd]
@@ -88,12 +88,12 @@ theorem countedPower_halvings (N a e : ℕ) :
   | h e ih =>
     by_cases he : e=0
     · subst e
-      rw [countedPower,dif_pos rfl]
+      rw [countedPower,dite_eq_left rfl]
       simp
     · have hsmall := Nat.div_lt_self (Nat.pos_of_ne_zero he) (by decide : 1<(2 : ℕ))
       have hc := ih (e/2) hsmall
       have hlog := clog_halving (Nat.pos_of_ne_zero he)
-      rw [countedPower,dif_neg he]
+      rw [countedPower,dite_eq_right he]
       split <;> simpa only [hc] using hlog.symm
 
 /-- At most two explicit modular multiplications per actual halving. -/
@@ -103,12 +103,12 @@ theorem countedPower_multiplications (N a e : ℕ) :
   | h e ih =>
     by_cases he : e=0
     · subst e
-      rw [countedPower,dif_pos rfl]
+      rw [countedPower,dite_eq_left rfl]
       simp
     · have hsmall := Nat.div_lt_self (Nat.pos_of_ne_zero he) (by decide : 1<(2 : ℕ))
       have hc := ih (e/2) hsmall
       have hlog := clog_halving (Nat.pos_of_ne_zero he)
-      rw [countedPower,dif_neg he]
+      rw [countedPower,dite_eq_right he]
       split <;> dsimp only <;> omega
 
 /-- Residue reductions are charged separately from exponent halvings:
@@ -119,12 +119,12 @@ theorem countedPower_reductions (N a e : ℕ) :
   | h e ih =>
     by_cases he : e=0
     · subst e
-      rw [countedPower,dif_pos rfl]
+      rw [countedPower,dite_eq_left rfl]
       simp
     · have hsmall := Nat.div_lt_self (Nat.pos_of_ne_zero he) (by decide : 1<(2 : ℕ))
       have hc := ih (e/2) hsmall
       have hlog := clog_halving (Nat.pos_of_ne_zero he)
-      rw [countedPower,dif_neg he]
+      rw [countedPower,dite_eq_right he]
       split <;> dsimp only <;> omega
 
 /-- Actual labelled geometric records and their multiplication counter. -/

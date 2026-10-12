@@ -241,11 +241,11 @@ theorem fullParityPacket_eq_atoms (u y : ℝ) (N K : ℕ) :
     apply Finset.sum_subset (Finset.filter_subset _ _)
     intro n _ hn
     change n ∉ fullParityBand u N K at hn
-    rw [fullParitySelection, if_neg hn, Complex.ofReal_zero, zero_mul]
+    rw [fullParitySelection, ite_eq_right hn, Complex.ofReal_zero, zero_mul]
   rw [he]
   apply Finset.sum_congr rfl
   intro n hn
-  rw [atom, weight_eq_rectangle (Finset.mem_filter.mp hn).2.1, fullParitySelection, if_pos hn]
+  rw [atom, weight_eq_rectangle (Finset.mem_filter.mp hn).2.1, fullParitySelection, ite_eq_left hn]
 
 /-- These exact neighbors are taken from the old unpaid rest, not added
 as a free reserve and not estimated separately by positive allowances. -/
@@ -287,10 +287,10 @@ theorem core_ledger (u y : ℝ) (N K : ℕ) :
       (f := fun n =>
       (selection u N K n : ℂ)*(residualCoefficient (intermediatePrimes u N)
         (SquarefreeVaughanLogSource.length u N) N n*zetaPrimeLogKernel N (3/2+Complex.I*y) n))]
-    · exact Finset.sum_congr rfl (fun n hn => by rw [selection, if_pos hn]; rfl)
+    · exact Finset.sum_congr rfl (fun n hn => by rw [selection, ite_eq_left hn]; rfl)
     · intro n _ hn
       change n ∉ band u N K at hn
-      rw [selection, if_neg hn, Complex.ofReal_zero, zero_mul]
+      rw [selection, ite_eq_right hn, Complex.ofReal_zero, zero_mul]
   rw [he, rest, ← Finset.sum_add_distrib, coreResponse]
   exact Finset.sum_congr rfl (fun n _ => by push_cast; ring)
 

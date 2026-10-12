@@ -223,7 +223,7 @@ theorem costs_save_least_prime_units {L : ℝ} (hL : 0 < L) (y : ℝ) {n : ℕ}
       (Nat.dvd_of_mem_primeFactors hp))
   have hb := mul_le_mul_of_nonneg_left hm (div_nonneg (Real.log_natCast_nonneg n) hL.le)
   have he : middleLayerAllowance L n = 6*(Real.log n/L*(Real.log n/n.primeFactors.card)) := by
-    rw [middleLayerAllowance,if_pos ⟨hs,(by omega : 2 ≤ n.primeFactors.card)⟩,hc]
+    rw [middleLayerAllowance,ite_eq_left ⟨hs,(by omega : 2 ≤ n.primeFactors.card)⟩,hc]
     norm_num [Nat.choose]
     ring
   have hp := mul_le_mul_of_nonneg_right hb (le_max_right (Real.cos (y*Real.log n)) 0)
@@ -326,7 +326,7 @@ theorem residual_reflected_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < 
         have h₁ := mul_le_mul_of_nonpos_right hlo hx'
         simp only [twoOuterCost,max_eq_right hx',max_eq_left (neg_nonneg.mpr hx'),zero_add]
         constructor <;> nlinarith only [h₀,h₁]
-    rw [reflectedSixCost,if_pos ho₁]
+    rw [reflectedSixCost,ite_eq_left ho₁]
     have hd : 0 ≤ weight A N n*(3*twoOuterCost L y n) := by positivity
     by_cases hv : 0 ≤ (residualCoefficient A L N n*zetaPrimeLogKernel N (3/2+Complex.I*y) n).re
     · rw [max_eq_left hv,min_eq_right hv]
@@ -335,11 +335,11 @@ theorem residual_reflected_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < 
       rw [max_eq_right hv',min_eq_left hv']
       constructor <;> linarith only [bounds.1,hd]
   · by_cases ho₂ : (outerPrimes (Real.log n-L) n).card = 2
-    · simpa only [reflectedSixCost,if_neg ho₁,if_pos ho₂,one_mul] using
+    · simpa only [reflectedSixCost,ite_eq_right ho₁,ite_eq_left ho₂,one_mul] using
         residual_retained_bounds A hL y N hs hc hD ho₂
     · have hz := coefficient_eq_zero_of_three_outer hs (by omega : 5 ≤ n.primeFactors.card)
         hquarter (by omega : 3 ≤ (outerPrimes (Real.log n-L) n).card)
-      simp only [reflectedSixCost,if_neg ho₁,if_neg ho₂,zero_mul,mul_zero,re_residual_atom,
+      simp only [reflectedSixCost,ite_eq_right ho₁,ite_eq_right ho₂,zero_mul,mul_zero,re_residual_atom,
         hz,Complex.zero_re,max_self,min_self,sub_zero,add_zero,le_refl,and_self]
 
 /-- Every unpaid subset of the literal core inherits both six-prime

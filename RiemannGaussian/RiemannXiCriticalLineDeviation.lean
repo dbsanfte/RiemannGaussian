@@ -73,8 +73,8 @@ theorem upperHeight_add_conjugatePartner_eq_absoluteSpectralHeight
           (NontrivialZetaZero.conjugatePartner rho).1).im := by
       rw [hpartnerIm]
       linarith
-    rw [zetaUpperSpectralHeightSummand, if_pos hy,
-      zetaUpperSpectralHeightSummand, if_neg hnpartner, add_zero]
+    rw [zetaUpperSpectralHeightSummand, ite_eq_left hy,
+      zetaUpperSpectralHeightSummand, ite_eq_right hnpartner, add_zero]
     unfold zetaAbsoluteSpectralHeightSummand
     rw [show (zetaSpectralCoordinate rho.1).im = y by rfl,
       abs_of_pos hy]
@@ -86,9 +86,9 @@ theorem upperHeight_add_conjugatePartner_eq_absoluteSpectralHeight
             (NontrivialZetaZero.conjugatePartner rho).1).im = 0 := by
         rw [hpartnerIm, hyzero, neg_zero]
       rw [zetaUpperSpectralHeightSummand,
-        if_neg (by linarith : ¬0 < (zetaSpectralCoordinate rho.1).im),
+        ite_eq_right (by linarith : ¬0 < (zetaSpectralCoordinate rho.1).im),
         zetaUpperSpectralHeightSummand,
-        if_neg (by linarith : ¬0 <
+        ite_eq_right (by linarith : ¬0 <
           (zetaSpectralCoordinate
             (NontrivialZetaZero.conjugatePartner rho).1).im)]
       rw [zero_add, zetaAbsoluteSpectralHeightSummand,
@@ -99,8 +99,8 @@ theorem upperHeight_add_conjugatePartner_eq_absoluteSpectralHeight
             (NontrivialZetaZero.conjugatePartner rho).1).im := by
         rw [hpartnerIm]
         linarith
-      rw [zetaUpperSpectralHeightSummand, if_neg hy,
-        zetaUpperSpectralHeightSummand, if_pos hpartnerPos,
+      rw [zetaUpperSpectralHeightSummand, ite_eq_right hy,
+        zetaUpperSpectralHeightSummand, ite_eq_left hpartnerPos,
         analyticZetaZeroMultiplicity_conjugatePartner, zero_add,
         hpartnerIm]
       unfold zetaAbsoluteSpectralHeightSummand

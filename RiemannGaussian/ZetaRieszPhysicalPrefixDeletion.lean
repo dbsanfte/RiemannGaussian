@@ -123,8 +123,8 @@ theorem tendsto_actual_band_sub_adaptivePrefix (P : Polynomial ℂ) (y : ℝ)
         adaptivePrefixResponse P N y (SquarefreeVaughanLogSource.length u N) u))
       atTop (nhds 0) := by
   by_cases h : u < Real.exp (-(1 / 2 : ℝ))
-  · simpa only [adaptivePrefixResponse, if_pos h] using tendsto_actual_band_sub_prefixResidual P y hu h
-  · simpa only [adaptivePrefixResponse, if_neg h] using
+  · simpa only [adaptivePrefixResponse, ite_eq_left h] using tendsto_actual_band_sub_prefixResidual P y hu h
+  · simpa only [adaptivePrefixResponse, ite_eq_right h] using
       ZetaRieszSmoothCofactor.tendsto_actual_band_sub_optimizedRoughResponse P y hu hu1
 
 /-- The exact original hypothetical-zero normalization on the adaptive

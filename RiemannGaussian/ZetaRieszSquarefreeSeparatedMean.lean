@@ -314,7 +314,7 @@ theorem exists_small_gram_bound :
         apply Finset.sum_congr rfl
         intro n hn
         have hn0 : 0 < n := (Finset.mem_Icc.mp hn).1
-        simp only [max_self,hn0,if_true,Q]
+        simp only [max_self,hn0,ite_true,Q]
       _ = _ := by simp
   rw [he,hm] at hc
   have hq : |(X : ℝ)*Q| ≤ (X : ℝ)*(C/(4+|Real.log R-Real.log S|)^2) := by
@@ -371,7 +371,7 @@ theorem exists_large_gram_bound :
         apply Finset.sum_congr rfl
         intro d _
         by_cases hd : R*d < n <;> simp only [max_lt_iff,ite_and,hd,
-          if_true,if_false,Finset.sum_const_zero]
+          ite_true,ite_false,Finset.sum_const_zero]
       _ = _ := by
         rw [moving_prefix_eq R (X/R) n hR hn0 (Nat.div_le_div_right hnX)]
         apply Finset.sum_congr rfl

@@ -43,7 +43,7 @@ theorem norm_transportStep_le (f : ℕ → ℂ) (e : ℕ × ℕ) (n : ℕ) :
     linarith
   · by_cases hj : n = e.2
     · subst n
-      simp only [transportStep, if_neg hi, ite_true]
+      simp only [transportStep, ite_eq_right hi, ite_true]
       rw [norm_remainder hm (min_le_right _ _)]
       linarith
     · simp [transportStep, hi, hj]
@@ -135,7 +135,7 @@ theorem actual_remaining_mass_sq_le (P : Polynomial ℂ) (N : ℕ) (t : ℝ)
         zetaPrimeFilterKernel P N (3 / 2 + Complex.I * t) n‖ ^ 2 := by
     apply Finset.sum_congr rfl
     intro n hn
-    rw [ZetaRieszConditionedEnergy.bandWeight, if_pos hn]
+    rw [ZetaRieszConditionedEnergy.bandWeight, ite_eq_left hn]
   rw [he]
   exact sum_norm_zetaArithmeticKernel_sq_le _ (SquarefreeVaughanLogSource.norm_coefficient_le hL)
     P N t _ hr hr1

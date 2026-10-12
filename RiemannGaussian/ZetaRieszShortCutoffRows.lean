@@ -946,8 +946,8 @@ private theorem endpoint_atom_bound {u : ℝ} {N : ℕ} (hN : 32 ≤ N)
   have hsieve : sieve (pb.1*pb.2).primeFactors d=1 := by
     rw [sieve_eq_product_squarefree houter] at hz ⊢
     by_cases hs : Squarefree ((pb.1*pb.2)*d)
-    · simp only [if_pos hs]
-    · simp only [if_neg hs,not_true_eq_false] at hz
+    · simp only [ite_eq_left hs]
+    · simp only [ite_eq_right hs,not_true_eq_false] at hz
   have hT : 1 ≤ log (pb.1*pb.2 : ℕ)+log d := by
     have hlo := hg.2.2.2.2.2.2.2.1
     change (39/20 : ℝ)*N ≤ log (pb.1*pb.2 : ℕ)+log d at hlo
@@ -1142,9 +1142,9 @@ theorem literalCutoffPacket_eq_rows (u y : ℝ) (j : ℕ) :
   obtain ⟨_,hs,_,_,hH,_,_,_,_,h6,_,_⟩ := Finset.mem_filter.mp hpb
   by_cases hcore : pb.1*(pb.2*e) ∈ ZetaRieszParityPacket.coreBand u
       (dyadicMomentOrder j) (dyadicPrimeCount j)
-  · simp only [if_pos hcore]
+  · simp only [ite_eq_left hcore]
     exact (cutoff_row_atom_eq _ hs h6 hH).symm
-  · simp only [if_neg hcore,mul_zero]
+  · simp only [ite_eq_right hcore,mul_zero]
 
 /-- Concrete independent signed estimate on the ORIGINAL finite prime
 and divisor sum, not a density model or a conditional sieve hypothesis. -/
@@ -1522,7 +1522,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP,dvd_mul_right _ _,hs.ne_zero⟩
   have hne : (p*(B*e)).primeFactors.Nonempty := ⟨p,hpn⟩
   have hmax' : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hmax q (hq : q ∈ B.primeFactors) : q < p := by
     have hd : B ∣ p*(B*e) := (dvd_mul_right B e).trans (dvd_mul_left _ _)
     have hqn := Nat.primeFactors_mono hd hs.ne_zero hq
@@ -1557,7 +1557,7 @@ theorem cutoff_crossing_covered {u : ℝ} {N K p B e δ : ℕ}
     ⟨hpP.coprime_iff_not_dvd.mpr hpd,hpP.squarefree,hB⟩
   rw [sieve_eq_product_squarefree houter]
   have hsq' : Squarefree ((p*B)*e) := by simpa only [mul_assoc] using hs
-  simp only [if_pos hsq']
+  simp only [ite_eq_left hsq']
 
 /-- Low total count forces the whole-window owner gap, so every such
 fixed-block crossing belongs to the SAME paid all-count packet. This is
@@ -1584,7 +1584,7 @@ theorem cutoff_crossing_covered_of_count_le {u : ℝ} {N K p B e δ : ℕ}
   have hcc := ZetaRieszJointPrimeEnergy.core_count hn
   have hne : (p*(B*e)).primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hmax : (p*(B*e)).primeFactors.max' hne=p := by
-    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dif_pos hne] using howner
+    simpa only [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left hne] using howner
   have hlogcount : log (p*(B*e) : ℕ) ≤ (24 : ℝ)*log p := by
     calc
       _ = ∑ q ∈ (p*(B*e)).primeFactors, log q :=
@@ -1780,11 +1780,11 @@ theorem literal_middle_cutoff_population_eq_zero
     intro v hv
     obtain ⟨hp,hs,howner,h6,hP,hlo,hhi⟩ := hI v hv
     by_cases hcore : v.1.1*(v.1.2*v.2) ∈ ZetaRieszParityPacket.coreBand u N K
-    · rw [if_pos hcore,howner]
+    · rw [ite_eq_left hcore,howner]
       have hB := (Nat.squarefree_mul_iff.mp (Nat.squarefree_mul_iff.mp hs).2.2).2.1
       exact small_owner_middle_block_eq_zero hu hN
         ((ZetaRieszAnnulusJoint.mem_intermediatePrimes _ _ _).mp hp).1 hB h6 hP hlo hhi _
-    · rw [if_neg hcore]
+    · rw [ite_eq_right hcore]
   rw [hz,mul_zero]
 
 end RiemannGaussian.ZetaRieszShortCutoffRows

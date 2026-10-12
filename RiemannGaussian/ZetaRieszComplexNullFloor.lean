@@ -46,9 +46,9 @@ theorem nullProfile_pairing_zero {n X : ℕ} (hs : Squarefree n)
     (∑ d ∈ Finset.Icc 1 X,nullProfile X N L q d*
       (if d ∣ n then (μ d : ℝ) else 0))=0 := by
   cases q
-  · simp only [nullProfile,Bool.false_eq_true,if_false,sub_mul,Finset.sum_sub_distrib]
+  · simp only [nullProfile,Bool.false_eq_true,ite_false,sub_mul,Finset.sum_sub_distrib]
     rw [corrected_prefix_eq hs hc hX,corrected_prefix_eq hs hc hX,sub_self]
-  · simp only [nullProfile,if_true,div_mul_eq_mul_div,sub_mul]
+  · simp only [nullProfile,ite_true,div_mul_eq_mul_div,sub_mul]
     rw [← Finset.sum_div,Finset.sum_sub_distrib]
     rw [corrected_prefix_eq hs hc hX,corrected_prefix_eq hs hc hX,sub_self,zero_div]
 
@@ -224,9 +224,9 @@ theorem cost_tilt_eq (X N : ℕ) (S : Finset ℕ) (W : ℕ → ℂ) (L : ℝ)
   have hi : increment X N S W L (tiltParameters v)=
       (fun k => correlation S (tilt W v) k*(f k-f (k+1))) := by
     funext k
-    simp only [increment,tiltParameters,ite_true,if_neg (by decide : (1 : Fin 5) ≠ 0),
-      if_neg (by decide : (2 : Fin 5) ≠ 0),if_neg (by decide : (3 : Fin 5) ≠ 0),
-        if_neg (by decide : (4 : Fin 5) ≠ 0),zero_mul,sub_zero,add_zero]
+    simp only [increment,tiltParameters,ite_true,ite_eq_right (by decide : (1 : Fin 5) ≠ 0),
+      ite_eq_right (by decide : (2 : Fin 5) ≠ 0),ite_eq_right (by decide : (3 : Fin 5) ≠ 0),
+        ite_eq_right (by decide : (4 : Fin 5) ≠ 0),zero_mul,sub_zero,add_zero]
     simp only [correlation,tilt,sub_mul,mul_assoc,Finset.sum_sub_distrib,← Finset.mul_sum,f]
   rw [cost,hi]
   exact blockCost_support (Finset.Icc 1 X) (activeCutoffs X f) g _
@@ -249,12 +249,12 @@ theorem bestCost_le_old (X N : ℕ) (S : Finset ℕ) (W : ℕ → ℂ) (L : ℝ)
     · intro i
       by_cases hi : i=0
       · simpa only [tiltParameters,hi,ite_true] using hv.1
-      · simp only [tiltParameters,if_neg hi]
+      · simp only [tiltParameters,ite_eq_right hi]
         linarith only [abs_nonneg B]
     · intro i
       by_cases hi : i=0
       · simpa only [tiltParameters,hi,ite_true] using hv.2
-      · simp only [tiltParameters,if_neg hi]
+      · simp only [tiltParameters,ite_eq_right hi]
         exact abs_nonneg B
   have hh := (Classical.choose_spec (exists_best X N S W L g B)).2 (tiltParameters v) hp
   rw [cost_tilt_eq] at hh

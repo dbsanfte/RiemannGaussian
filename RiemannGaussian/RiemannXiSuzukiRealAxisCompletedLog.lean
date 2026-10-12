@@ -75,7 +75,7 @@ theorem logDeriv_riemannXi_of_re_pos_of_riemannZeta_ne_zero
         1 / s + 1 / (s - 1) := by
     have hderivSub : deriv (fun z : ℂ ↦ 1 - z) s = -1 :=
       ((hasDerivAt_const s 1).sub (hasDerivAt_id s)).deriv.trans (by ring)
-    rw [logDeriv_mul (f := fun z : ℂ ↦ z)
+    rw [logDeriv_fun_mul (f := fun z : ℂ ↦ z)
       (g := fun z : ℂ ↦ 1 - z) s hs0 h1s
       (by fun_prop) (by fun_prop)]
     simp only [logDeriv_apply, deriv_id'', hderivSub]
@@ -86,14 +86,14 @@ theorem logDeriv_riemannXi_of_re_pos_of_riemannZeta_ne_zero
           (fun z : ℂ ↦ z * (1 - z) * Complex.Gammaℝ z) s =
         1 / s + 1 / (s - 1) - Complex.log Real.pi / 2 +
           Complex.digamma (s / 2) / 2 := by
-    rw [logDeriv_mul (f := fun z : ℂ ↦ z * (1 - z))
+    rw [logDeriv_fun_mul (f := fun z : ℂ ↦ z * (1 - z))
       (g := Complex.Gammaℝ) s (mul_ne_zero hs0 h1s) hGammaℝ
       ((by fun_prop) :
         DifferentiableAt ℂ (fun z : ℂ ↦ z * (1 - z)) s)
       hGammaℝDiff]
     rw [hlinear, logDeriv_Gammaℝ hs]
     ring
-  rw [logDeriv_mul
+  rw [logDeriv_fun_mul
     (f := fun z : ℂ ↦ z * (1 - z) * Complex.Gammaℝ z)
     (g := riemannZeta) s
     (mul_ne_zero (mul_ne_zero hs0 h1s) hGammaℝ)

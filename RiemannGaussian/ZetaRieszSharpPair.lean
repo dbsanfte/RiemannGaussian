@@ -57,9 +57,9 @@ theorem norm_bandWeight_pair_le_descending (P : Polynomial ℂ) (N : ℕ) (t : �
         ‖bandAmplitude L P N t (p * n) + bandAmplitude L P N t (q * n)‖ * Real.log q) *
         (∑ d ∈ n.divisors, |((ArithmeticFunction.moebius d : ℤ) : ℝ)|) / d := by
     by_cases hPrime : n.Prime
-    · simpa only [d, gap, if_pos hPrime] using
+    · simpa only [d, gap, ite_eq_left hPrime] using
         norm_bandWeight_prime_pair_centered L P N t hp hq hpn hqn hn1
-    · simpa only [d, gap, if_neg hPrime] using
+    · simpa only [d, gap, ite_eq_right hPrime] using
         norm_bandWeight_prime_pair_quarter L P N t hp hq hpn hqn hn
           (two_le_prime_count hn hn1 hPrime)
   have hA : 0 ≤ A := le_min (Real.log_natCast_nonneg _) (Real.log_natCast_nonneg _)

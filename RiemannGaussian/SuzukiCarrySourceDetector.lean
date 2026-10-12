@@ -60,7 +60,7 @@ theorem overlapColour_eq_one_on_cell {t : ℝ} (ht : t ∈ Ico (-1/10 : ℝ) 0) 
     constructor <;> linarith
   have ho1 : ¬Even (1 : ℤ) := by decide
   have ho3 : ¬Even (3 : ℤ) := by decide
-  simp only [overlapColour, carryLogColour, h1, h3, if_neg ho1, if_neg ho3, one_mul]
+  simp only [overlapColour, carryLogColour, h1, h3, ite_eq_right ho1, ite_eq_right ho3, one_mul]
 
 /-- Source-coefficient integrability is proved, so its positivity is not
 a formal or totalized-integral assertion. -/

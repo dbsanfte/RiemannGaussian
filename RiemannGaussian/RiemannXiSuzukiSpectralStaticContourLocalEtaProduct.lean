@@ -102,11 +102,11 @@ theorem sum_divisor_staticContourLocalEta_canonicalBall_le_log (n : ℕ) :
         change (if MeromorphicOn f (ball 0 R) ∧
             i ∈ ball 0 R then
               (meromorphicOrderAt f i).untop₀ else 0) = 0
-        rw [if_neg (fun h => hi h.2)]
+        rw [ite_eq_right (fun h => hi h.2)]
       rw [hdZero]
       exact hanalyticInner.divisor_nonneg i
   have hsumInt : (∑ᶠ i, d i) ≤ ∑ᶠ i, e i :=
-    finsum_le_finsum' hdFinite heFinite hpoint
+    finsum_le_finsum hdFinite heFinite hpoint
   have hsumReal : ((∑ᶠ i, d i : ℤ) : ℝ) ≤
       ((∑ᶠ i, e i : ℤ) : ℝ) := by
     exact_mod_cast hsumInt

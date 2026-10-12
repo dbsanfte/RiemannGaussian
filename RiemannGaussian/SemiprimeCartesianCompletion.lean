@@ -244,7 +244,7 @@ theorem deflatedColumn_eq_product {R : Type*} [CommRing R] [DecidableEq R]
   by_cases ht : t ∈ S
   · simpa [deflatedColumn, ht, rootPolynomial, SemiprimeRoughProjection.collisionPolynomial]
       using SemiprimeRoughProjection.derivative_strips_shared_root S ht
-  · rw [deflatedColumn, if_neg ht, Finset.erase_eq_of_notMem ht]
+  · rw [deflatedColumn, ite_eq_right ht, Finset.erase_eq_of_notMem ht]
     simp only [rootPolynomial, eval_prod, eval_sub, eval_X, eval_C, id_eq]
 
 /-- After reduction to either prime field, the deflated column vanishes
@@ -444,9 +444,9 @@ theorem recoveryGcdCount_le {n cap : ℕ} {leaves : ℕ → List ℕ}
     have ht := ih (fun c hc => hb c (List.mem_cons_of_mem _ hc))
     have hl := (scanGcdCount_le n (leaves t)).trans (hb (t, v) (by simp))
     by_cases hu : n.gcd v = 1
-    · simp only [recoveryGcdCount, hu, if_true, List.length_cons]
+    · simp only [recoveryGcdCount, hu, ite_true, List.length_cons]
       omega
-    · rw [recoveryGcdCount, if_neg hu]
+    · rw [recoveryGcdCount, ite_eq_right hu]
       split_ifs with hp
       · simp only [List.length_cons]
         omega

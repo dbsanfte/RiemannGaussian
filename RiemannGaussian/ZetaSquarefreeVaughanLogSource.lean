@@ -46,7 +46,7 @@ theorem coefficient_eq_mixture {L : ℝ} (hL : 0 < L) (n : ℕ) :
     coefficient L n = mixture (cutoffPairs L) (cellWeight L) Prod.fst Prod.snd n := by
   rw [coefficient_eq_average hL, mixture]
   by_cases hn : Squarefree n
-  · simp only [if_pos hn, logarithmicAverage_div_eq_mixture hL,
+  · simp only [ite_eq_left hn, logarithmicAverage_div_eq_mixture hL,
       Complex.ofReal_sum, Complex.ofReal_mul, squarefreePart]
   · simp [hn, squarefreePart]
 
@@ -67,13 +67,13 @@ theorem coefficient_eq_completed_with_prime {L : ℝ} (hL : 0 < L) (n : ℕ) :
   by_cases hp : n.Prime
   · have he := logarithmicAverage_eq_riesz hL.le n
     rw [logarithmicAverage_prime hL.le hp, ArithmeticFunction.vonMangoldt_apply_prime hp] at he
-    simp only [if_pos hp.squarefree, if_pos hp, logarithmicAverage_prime hL.le hp,
+    simp only [ite_eq_left hp.squarefree, ite_eq_left hp, logarithmicAverage_prime hL.le hp,
       zero_div, Complex.ofReal_zero, ← Complex.ofReal_add]
     have he' : -Real.log n * riesz L n / L + Real.log n * min L (Real.log n) / L = 0 := by
       rw [← add_div, ← he, zero_div]
     rw [he', Complex.ofReal_zero]
   · by_cases hn : Squarefree n
-    · simp only [if_pos hn, if_neg hp, add_zero,
+    · simp only [ite_eq_left hn, ite_eq_right hp, add_zero,
         logarithmicAverage_eq_riesz_of_squarefree_composite hL.le hn hp]
     · simp [hn, hp]
 

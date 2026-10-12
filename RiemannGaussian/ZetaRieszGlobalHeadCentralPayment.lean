@@ -143,7 +143,7 @@ theorem originalPair_eq_label_atom {u : ℝ} {N : ℕ} (hN : 64≤N)
       exp_log (by exact_mod_cast Nat.mul_pos hpp.pos hqp.pos)]
     ring
   rw [coefficient_pair hN he,kernel_phase,hExp,ht]
-  simp only [originalPair,rawAmount,if_pos hqp,character,
+  simp only [originalPair,rawAmount,ite_eq_left hqp,character,
     ZetaRieszSmoothOwnerDiscrepancy.radial,label,Nat.cast_mul,pow_succ]
   push_cast
   ring
@@ -162,8 +162,8 @@ theorem originalHead_eq_label_sum {u : ℝ} {N : ℕ} (hN : 64≤N) (y : ℝ) :
     apply Finset.sum_congr rfl
     intro q _
     by_cases hq : q.Prime
-    · simp only [if_pos hq]
-    · simp only [originalPair,rawAmount,if_neg hq,mul_zero,
+    · simp only [ite_eq_left hq]
+    · simp only [originalPair,rawAmount,ite_eq_right hq,mul_zero,
         Complex.ofReal_zero,zero_mul]
   rw [← he]
   exact Finset.sum_congr rfl (fun e he => originalPair_eq_label_atom hN he y)
@@ -203,7 +203,7 @@ theorem headCoefficient_bounds {u : ℝ} (hu : 1/2≤u)
     split_ifs <;> norm_num
   have hfac : 0≤log (label e)/L := div_nonneg (log_natCast_nonneg _) hL.le
   rw [coefficient_pair (by omega : 64≤N) he]
-  simp only [completedCoefficient,if_pos hs,Complex.ofReal_re]
+  simp only [completedCoefficient,ite_eq_left hs,Complex.ofReal_re]
   rw [show log (label e)/SquarefreeVaughanLogSource.length u N*
     (SquarefreeVaughanLogSource.length u N-log e.1)*
     ownerWeight N (log e.2/log (label e))=log (label e)/L*H by dsimp [L,H]; ring]

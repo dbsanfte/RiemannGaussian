@@ -567,20 +567,20 @@ private theorem sum_maskedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M
     intro d hd
     by_cases hs : sieve (pb.1*pb.2).primeFactors d=0
     · simp [rowAtom,hs]
-    rw [if_pos hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
+    rw [ite_eq_left hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
   rw [hrows,sum_rows_eq_incidences B M X hg f,sum_incidences_eq_fibers]
   rw [Complex.re_sum,Finset.sum_filter]
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hk : χ n
-  · simp only [f,if_pos hk]
+  · simp only [f,ite_eq_left hk]
     have he : ZetaRieszPrimeEndpoint.largestPrime n*(n/ZetaRieszPrimeEndpoint.largestPrime n)=n := by
       obtain ⟨v,hv,hnv⟩ := Finset.mem_image.mp hn
       have ho := incidence_owner hg hv
       rw [← hnv,← ho.2.2]
       simpa only [mul_comm v.2.1 v.2.2] using ho.2.1
     exact sum_incidenceWeight_eq_partial A N n L y _ he
-  · simp only [f,if_neg hk,Finset.sum_const_zero]
+  · simp only [f,ite_eq_right hk,Finset.sum_const_zero]
 
 private theorem sum_overflow_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M X : ℕ×ℕ → ℕ)
     (u y : ℝ) (j : ℕ) (ℒ : (ℕ×ℕ) → ℝ)
@@ -947,8 +947,8 @@ private theorem endpoint_atom_bound {u : ℝ} {N : ℕ} (hN : 32 ≤ N)
   have hsieve : sieve (pb.1*pb.2).primeFactors d=1 := by
     rw [sieve_eq_product_squarefree houter] at hz ⊢
     by_cases hs : Squarefree ((pb.1*pb.2)*d)
-    · simp only [if_pos hs]
-    · simp only [if_neg hs,not_true_eq_false] at hz
+    · simp only [ite_eq_left hs]
+    · simp only [ite_eq_right hs,not_true_eq_false] at hz
   have hT : 1 ≤ log (pb.1*pb.2 : ℕ)+log d := by
     have hlo := hg.2.2.2.2.2.2.2.1
     change (39/20 : ℝ)*N ≤ log (pb.1*pb.2 : ℕ)+log d at hlo
@@ -1414,7 +1414,7 @@ theorem sum_weightedMaskedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M
     intro d hd
     by_cases hs : sieve (pb.1*pb.2).primeFactors d=0
     · simp [rowAtom,hs]
-    rw [if_pos hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
+    rw [ite_eq_left hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
     have hco := row_cofactor_geometry (hg pb hpb) hd hs
     have ho := ZetaRieszPrimeIntervals.largestPrime_mul pb.1 (pb.2*d)
       (hg pb hpb).1 hco.1.ne_zero hco.2.2
@@ -1426,7 +1426,7 @@ theorem sum_weightedMaskedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hk : χ n
-  · simp only [f,if_pos hk]
+  · simp only [f,ite_eq_left hk]
     have he : ZetaRieszPrimeEndpoint.largestPrime n*(n/ZetaRieszPrimeEndpoint.largestPrime n)=n := by
       obtain ⟨v,hv,hnv⟩ := Finset.mem_image.mp hn
       have ho := incidence_owner hg hv
@@ -1438,7 +1438,7 @@ theorem sum_weightedMaskedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M
     apply Finset.sum_congr rfl
     intro db _
     ring
-  · simp only [f,if_neg hk,Finset.sum_const_zero]
+  · simp only [f,ite_eq_right hk,Finset.sum_const_zero]
 
 private theorem selected_multiplier_bound {B : Finset (ℕ×ℕ)}
     {M X : ℕ×ℕ → ℕ} {N : ℕ} {ℒ : ℕ×ℕ → ℝ}
@@ -1633,7 +1633,7 @@ theorem sum_incidenceWeightedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ))
     intro d hd
     by_cases hs : sieve (pb.1*pb.2).primeFactors d=0
     · simp [rowAtom,hs]
-    rw [if_pos hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
+    rw [ite_eq_left hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
     have hco := row_cofactor_geometry (hg pb hpb) hd hs
     have ho := ZetaRieszPrimeIntervals.largestPrime_mul pb.1 (pb.2*d)
       (hg pb hpb).1 hco.1.ne_zero hco.2.2
@@ -1645,7 +1645,7 @@ theorem sum_incidenceWeightedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ))
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hk : χ n
-  · simp only [f,if_pos hk]
+  · simp only [f,ite_eq_left hk]
     have he : ZetaRieszPrimeEndpoint.largestPrime n*(n/ZetaRieszPrimeEndpoint.largestPrime n)=n := by
       obtain ⟨v,hv,hnv⟩ := Finset.mem_image.mp hn
       have ho := incidence_owner hg hv
@@ -1657,7 +1657,7 @@ theorem sum_incidenceWeightedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ))
     apply Finset.sum_congr rfl
     intro db _
     ring
-  · simp only [f,if_neg hk,Finset.sum_const_zero]
+  · simp only [f,ite_eq_right hk,Finset.sum_const_zero]
 
 private theorem selected_incidence_multiplier_bound {B : Finset (ℕ×ℕ)}
     {M X : ℕ×ℕ → ℕ} {N : ℕ} {ℒ : ℕ×ℕ → ℝ}

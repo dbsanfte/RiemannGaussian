@@ -102,7 +102,7 @@ theorem bandWeight_eq_amplitude_mul_riesz (L : ℝ) (P : Polynomial ℂ)
   by_cases hb : n ∈ zetaPrimeLogBand N
   · by_cases ha : Squarefree n ∧ ¬ n.Prime
     · simp only [ZetaRieszConditionedEnergy.bandWeight, bandAmplitude,
-        SquarefreeVaughanLogSource.coefficient, hb, ha, true_and, if_true,
+        SquarefreeVaughanLogSource.coefficient, hb, ha, true_and, ite_true,
         not_false_eq_true, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
       ring
     · simp [ZetaRieszConditionedEnergy.bandWeight, bandAmplitude,
@@ -234,7 +234,7 @@ theorem bandWeight_phase (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t : ℝ) (n :
     ZetaRieszConditionedEnergy.bandWeight L P N t n =
       ZetaRieszConditionedEnergy.bandWeight L P N 0 n * unitPhase (-t * Real.log n) := by
   by_cases hb : n ∈ zetaPrimeLogBand N
-  · simp only [ZetaRieszConditionedEnergy.bandWeight, hb, if_true, Complex.ofReal_zero,
+  · simp only [ZetaRieszConditionedEnergy.bandWeight, hb, ite_true, Complex.ofReal_zero,
       mul_zero, add_zero, filterKernel_phase, mul_assoc]
   · simp [ZetaRieszConditionedEnergy.bandWeight, hb]
 

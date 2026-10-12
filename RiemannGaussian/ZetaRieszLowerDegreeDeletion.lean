@@ -50,7 +50,7 @@ theorem degreeResidualBand_subset (u : ℝ) (N : ℕ) :
 theorem surviving_extreme_count_le_one {u : ℝ} {N n : ℕ}
     (hu : u < Real.exp (-(2 / 3 : ℝ))) (hn : n ∈ degreeResidualBand u N) :
     (extremePrimes u N n).card ≤ 1 := by
-  rw [degreeResidualBand, if_pos hu] at hn
+  rw [degreeResidualBand, ite_eq_left hu] at hn
   have h := (Finset.mem_filter.mp hn).2
   omega
 
@@ -60,7 +60,7 @@ theorem surviving_extreme_count_le_two {u : ℝ} {N n : ℕ}
     (extremePrimes u N n).card ≤ 2 := by
   by_cases htwo : u < Real.exp (-(2 / 3 : ℝ))
   · exact (surviving_extreme_count_le_one htwo hn).trans (by norm_num)
-  · rw [degreeResidualBand, if_neg htwo, if_pos hu] at hn
+  · rw [degreeResidualBand, ite_eq_right htwo, ite_eq_left hu] at hn
     have h := (Finset.mem_filter.mp hn).2
     omega
 
@@ -84,7 +84,7 @@ theorem tendsto_four_sub_degreeResidual (P : Polynomial ℂ) (y : ℝ)
         zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n)
     simp only [not_lt] at he
     dsimp only [ZetaRieszFourExtremeDeletion.fourResidualResponse, degreeResidualResponse, degreeResidualBand]
-    rw [if_pos htwo]
+    rw [ite_eq_left htwo]
     rw [← he]
     ring
   · by_cases hthree : u < Real.exp (-(9 / 16 : ℝ))
@@ -100,10 +100,10 @@ theorem tendsto_four_sub_degreeResidual (P : Polynomial ℂ) (y : ℝ)
           zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n)
       simp only [not_lt] at he
       dsimp only [ZetaRieszFourExtremeDeletion.fourResidualResponse, degreeResidualResponse, degreeResidualBand]
-      rw [if_neg htwo, if_pos hthree]
+      rw [ite_eq_right htwo, ite_eq_left hthree]
       rw [← he]
       ring
-    · simpa only [degreeResidualResponse, degreeResidualBand, if_neg htwo, if_neg hthree,
+    · simpa only [degreeResidualResponse, degreeResidualBand, ite_eq_right htwo, ite_eq_right hthree,
         ZetaRieszFourExtremeDeletion.fourResidualResponse, sub_self, mul_zero] using
         (tendsto_const_nhds : Tendsto (fun _ : ℕ => (0 : ℂ)) atTop (𝓝 0))
 

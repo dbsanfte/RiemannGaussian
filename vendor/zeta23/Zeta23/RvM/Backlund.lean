@@ -120,7 +120,7 @@ lemma im_integral_le_two_pi (hT : T ≠ 0)
     by_cases h : 0 < (w m).re
     · simp [hεdef, h]
     · have h' : (w m).re < 0 := lt_of_le_of_ne (not_lt.mp h) (hno m hm)
-      simp only [hεdef, if_neg h]; linarith
+      simp only [hεdef, ite_eq_right h]; linarith
   -- g := ε · Re w is continuous and, by the IVT, positive on all of (u,v)
   set g : ℝ → ℝ := fun x => ε * (w x).re with hgdef
   have hg : Continuous g := continuous_const.mul (Complex.continuous_re.comp hwc)

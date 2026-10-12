@@ -231,9 +231,9 @@ theorem logDeriv_GammaSeq {s : ℂ} (hs : 0 < s.re)
     intro j hj
     exact add_natCast_ne_zero_of_re_pos hs j
   unfold GammaSeq
-  rw [logDeriv_div s]
-  · rw [logDeriv_mul s]
-    · rw [logDeriv_prod hfactor]
+  rw [logDeriv_fun_div s]
+  · rw [logDeriv_fun_mul s]
+    · rw [logDeriv_fun_prod hfactor]
       · simp only [logDeriv_apply]
         rw [((hasStrictDerivAt_const_cpow (x := (n : ℂ)) (y := s)
           (Or.inl hnC)).hasDerivAt.deriv)]

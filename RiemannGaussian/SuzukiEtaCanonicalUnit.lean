@@ -174,7 +174,7 @@ theorem divisor_suzukiEtaCleared_sphere_canonicalRadius_eq_zero
   · change (if MeromorphicOn f (sphere 0 R) ∧
         z ∈ sphere 0 R then
           (meromorphicOrderAt f z).untop₀ else 0) = 0
-    rw [if_neg (fun h => hz h.2)]
+    rw [ite_eq_right (fun h => hz h.2)]
 
 /-- Extended canonical decomposition of the translated cleared denominator on its selected local
 circle. -/

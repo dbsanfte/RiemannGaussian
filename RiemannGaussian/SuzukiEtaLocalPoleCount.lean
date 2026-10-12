@@ -175,7 +175,7 @@ theorem sum_divisor_suzukiXiLocalDenominator_le_log {T : ℝ} (hT : 2 ≤ T) :
     · rw [divisor_suzukiEtaLocalClearedDenominator_eq hT hw]
       split_ifs <;> omega
     · simp [hw]
-  have hf := finsum_le_finsum'
+  have hf := finsum_le_finsum
     ((divisor (suzukiXiLocalDenominator T) (closedBall 0 (17 / 16))).finiteSupport (isCompact_closedBall _ _))
     ((divisor (suzukiEtaLocalClearedDenominator T) (closedBall 0 (17 / 16))).finiteSupport
       (isCompact_closedBall _ _)) hp

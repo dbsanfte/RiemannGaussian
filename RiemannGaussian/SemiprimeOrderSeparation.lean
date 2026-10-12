@@ -102,7 +102,7 @@ theorem colour_gcd_separator {p q : ℕ} (hp : 0 < p) (hq : 0 < q)
       (colourCardinality p left).gcd (colourCardinality q right) := by
   cases left <;> cases right <;>
     simp only [colourCardinality,colourExponent,Bool.false_eq_true,Bool.true_eq_false,
-      if_false,if_true] <;>
+      ite_false,ite_true] <;>
     first | exact gcd_plus_plus hp hq | exact gcd_plus_minus hq |
       exact gcd_minus_plus hp | exact gcd_sub_one_mul hp hq
 

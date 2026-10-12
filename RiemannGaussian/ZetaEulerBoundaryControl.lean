@@ -70,10 +70,10 @@ theorem logDeriv_riemannXi_eq_regular_add_poleRemoved {s : ℂ} (hs : 0 < s.re)
       ring
   rw [(logDeriv_congr_nhds hlocal).self_of_nhds,
     logDeriv_const_mul s (-1) (by norm_num),
-    logDeriv_mul (f := fun z : ℂ => z * Complex.Gammaℝ z) (g := riemannZeta₁)
+    logDeriv_fun_mul (f := fun z : ℂ => z * Complex.Gammaℝ z) (g := riemannZeta₁)
       s (mul_ne_zero hs0 hg) hz (((by fun_prop) : DifferentiableAt ℂ (fun z : ℂ => z) s).mul hd)
       differentiable_riemannZeta₁.differentiableAt,
-    logDeriv_mul (f := fun z : ℂ => z) (g := Complex.Gammaℝ) s hs0 hg (by fun_prop) hd,
+    logDeriv_fun_mul (f := fun z : ℂ => z) (g := Complex.Gammaℝ) s hs0 hg (by fun_prop) hd,
     logDeriv_id', logDeriv_Gammaℝ hs]
   unfold zetaGlobalRegularCorrection
   ring

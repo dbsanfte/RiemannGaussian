@@ -96,7 +96,7 @@ theorem sum_Icc_inv_sqrt_lcm_le (D : ℕ) {P : ℕ} (hP : 0 < P) :
     have h := Finset.single_le_sum
       (f := fun g : ℕ ↦ Real.sqrt g * (if g ∣ d then 1 / Real.sqrt d else 0))
       (fun g _ ↦ by split_ifs <;> positivity) hmem
-    rw [if_pos (Nat.gcd_dvd_left d P)] at h
+    rw [ite_eq_left (Nat.gcd_dvd_left d P)] at h
     rw [inv_sqrt_lcm_eq hd0 hP]
     calc
       _ = (1 / Real.sqrt P) * (Real.sqrt (Nat.gcd d P) * (1 / Real.sqrt d)) := by ring
@@ -170,13 +170,13 @@ theorem sum_divisors_inv_sqrt_le_four_mul_fourthRoot {P : ℕ} (hP : 0 < P) :
   have hf (d : ℕ) : 0 ≤ f d := by dsimp [f]; split_ifs <;> positivity
   have hpoint (d : ℕ) (hd : d ∈ P.divisors) : 1 / Real.sqrt d ≤ f d + f (P / d) := by
     by_cases hdR : d ≤ R
-    · simpa only [f, if_pos hdR] using le_add_of_nonneg_right (hf (P / d))
+    · simpa only [f, ite_eq_left hdR] using le_add_of_nonneg_right (hf (P / d))
     · have hprod : P = d * (P / d) := (Nat.mul_div_cancel' (Nat.dvd_of_mem_divisors hd)).symm
       have hqR : P / d ≤ R := (Nat.le_sqrt_of_eq_mul hprod).resolve_left hdR
       have hqd : P / d ≤ d := by omega
       have hqpos : 0 < P / d := (Nat.one_le_div_iff (Nat.pos_of_mem_divisors hd)).mpr
         (Nat.le_of_dvd hP (Nat.dvd_of_mem_divisors hd))
-      simp only [f, if_neg hdR, if_pos hqR, zero_add]
+      simp only [f, ite_eq_right hdR, ite_eq_left hqR, zero_add]
       exact one_div_le_one_div_of_le (Real.sqrt_pos.mpr (by exact_mod_cast hqpos))
         (Real.sqrt_le_sqrt (by exact_mod_cast hqd))
   have hsmall : (∑ d ∈ P.divisors, f d) ≤ ∑ d ∈ Finset.Icc 1 R, 1 / Real.sqrt d := by

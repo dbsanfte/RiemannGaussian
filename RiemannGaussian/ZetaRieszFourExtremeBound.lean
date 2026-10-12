@@ -71,7 +71,7 @@ theorem eventually_norm_four_extreme_sum_le (S : ℕ → Finset ℕ) (P : Polyno
     apply Finset.sum_congr rfl
     intro n _
     by_cases hs : Squarefree n
-    · simp only [hs, if_true]
+    · simp only [hs, ite_true]
     · simp [SquarefreeVaughanLogSource.coefficient, hs]
   have hb := ZetaArithmeticLogWindow.norm_sum_filter_of_log_bound ((S N).filter Squarefree)
     (SquarefreeVaughanLogSource.coefficient (SquarefreeVaughanLogSource.length u N))

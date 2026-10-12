@@ -49,7 +49,7 @@ lemma kfun_antisymm (freq δ : ι → ℝ) (r s : ι) : kfun freq δ s r = -kfun
   unfold kfun
   by_cases h : r = s
   · subst h; simp
-  · rw [if_neg (Ne.symm h), if_neg h, ← neg_div_neg_eq, neg_sub]; ring
+  · rw [ite_eq_right (Ne.symm h), ite_eq_right h, ← neg_div_neg_eq, neg_sub]; ring
 
 /-- `M := i·K`, a Hermitian complex matrix. -/
 def Mmat (freq δ : ι → ℝ) : Matrix ι ι ℂ := fun r s => (kfun freq δ r s : ℂ) * Complex.I
@@ -129,7 +129,7 @@ lemma abs_eigenvalue_le {C : ℝ} (hb : EigenBound C) {freq δ : ι → ℝ} (h 
         = Complex.I * (((Real.sqrt (δ m) * Real.sqrt (δ s) / (freq m - freq s) : ℝ) : ℂ) * v s) := by
       intro s hs
       have hsm : m ≠ s := fun e => (Finset.mem_erase.mp hs).1 e.symm
-      simp only [kfun, if_neg hsm]; ring
+      simp only [kfun, ite_eq_right hsm]; ring
     rw [Finset.sum_congr rfl hk, ← Finset.mul_sum] at hm
     -- I * X = ν v_m  ⇒  X = (−ν) I v_m
     have hI : Complex.I ≠ 0 := Complex.I_ne_zero
@@ -176,8 +176,8 @@ theorem mvDiag_of_eigenBound {C : ℝ} (hb : EigenBound C) : MVDiag C := by
     intro r s
     by_cases hrs : r = s
     · simp [hrs, kfun]
-    · rw [if_neg hrs]
-      simp only [kfun, if_neg hrs, hxy r, hxy s, map_mul, Complex.conj_ofReal]
+    · rw [ite_eq_right hrs]
+      simp only [kfun, ite_eq_right hrs, hxy r, hxy s, map_mul, Complex.conj_ofReal]
       have hf : ((freq r - freq s : ℝ) : ℂ) ≠ 0 := by
         exact_mod_cast sub_ne_zero.mpr (fun e => hrs (hinj e))
       push_cast

@@ -97,7 +97,7 @@ private theorem swapOwner_preserving : MeasurePreserving swapOwner := by
     change (![0,0,1,0] : Fin 4 → ℝ) i+Matrix.toLin' M x i =
       (![x 0,x 1,owner x,x 3] : Fin 4 → ℝ) i
     rw [hmap]
-    fin_cases i <;> norm_num [owner,Fin.sum_univ_four,Fin.ext_iff] <;> first | rfl | ring
+    fin_cases i <;> norm_num [owner,Fin.sum_univ_four,Fin.ext_iff] ; first | rfl | ring
   rw [hf] at he
   exact he
 

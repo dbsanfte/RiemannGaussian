@@ -83,7 +83,7 @@ theorem mem_powerState {prec : ℤ} (hp : prec ≤ 0) {x : ℂ} {X : Box}
         simpa only [powerState, lookup, Array.getD_eq_getD_getElem?, Array.getElem?_push,
           size_powerState, ↓reduceIte, Option.getD_some] using ih.1
       · simpa only [powerState, lookup, Array.getD_eq_getD_getElem?, Array.getElem?_push,
-          size_powerState, if_neg hje] using ih.2 j (by omega)
+          size_powerState, ite_eq_right hje] using ih.2 j (by omega)
 
 /-- Direct fallback retains the current geometric power and thirteen weighted sums. -/
 def directState (prec : ℤ) (C : ℕ → Box) (Q : Box) (h : ℚ) : ℕ → Box × Array Box

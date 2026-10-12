@@ -459,17 +459,17 @@ theorem secondOrderWeight_second_difference_zero {N K i : ℕ}
   have hlo (j : ℕ) (hj : j ≤ K) :
       secondOrderWeight N K L j=-(N+1 : ℂ)/L*(j : ℂ) := by
     unfold secondOrderWeight
-    rw [if_neg (by omega),Nat.min_eq_left (by omega)]
+    rw [ite_eq_right (by omega),Nat.min_eq_left (by omega)]
   have hhi (j : ℕ) (hj : N+2-K ≤ j) (hjN : j ≤ N+2) :
       secondOrderWeight N K L j=-(N+1 : ℂ)/L*((N+2 : ℂ)-(j : ℂ)) := by
     unfold secondOrderWeight
-    rw [if_neg (by omega),Nat.min_eq_right (by omega),Nat.cast_sub hjN]
+    rw [ite_eq_right (by omega),Nat.min_eq_right (by omega),Nat.cast_sub hjN]
     push_cast
     rfl
   have hmid (j : ℕ) (hj : K < j) (hjN : j < N+2-K) :
       secondOrderWeight N K L j=-(N+1 : ℂ)/L*(N+2) := by
     unfold secondOrderWeight
-    rw [if_pos (by omega)]
+    rw [ite_eq_left (by omega)]
   rcases hcases with hl|hh|hm
   · unfold orderSecondDifference
     rw [hlo (i+2) hl,hlo (i+1) (by omega),hlo i (by omega)]

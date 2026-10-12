@@ -185,7 +185,7 @@ its genuine prime support, discharging the choice premise of the floor. -/
 theorem largestPrime_mem_of_three {n : ℕ} (hcard : n.primeFactors.card = 3) :
     largestPrime n ∈ n.primeFactors := by
   have h : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-  rw [largestPrime, dif_pos h]
+  rw [largestPrime, dite_eq_left h]
   exact Finset.max'_mem _ _
 
 /-- The canonical largest-prime floor bounds the complete actual signed
@@ -213,7 +213,7 @@ theorem largest_prime_taper_le {n p : ℕ} (hp : p ∈ n.primeFactors)
       Real.log n * ZetaRieszEndpointTaper.endpointWeight L (Real.log p) := by
   have hne : n.primeFactors.Nonempty := ⟨p, hp⟩
   have hpn : p ≤ largestPrime n := by
-    rw [largestPrime, dif_pos hne]
+    rw [largestPrime, dite_eq_left hne]
     exact Finset.le_max' _ _ hp
   have hlog : Real.log p ≤ Real.log (largestPrime n) := by
     apply Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)

@@ -36,9 +36,9 @@ theorem exceptionalCount_le_pairCount {ι d : Type*} [Fintype ι] (s : ℕ) (v :
       tupleFrequency (s + 2) v xy.1 = tupleFrequency (s + 2) v xy.2) else ∅
   have hc (ij : Fin k × Fin k) (_ : ij ∈ Finset.univ) : (B ij).card ≤ repeatedPairCount s v := by
     by_cases hij : ij.1 ≠ ij.2
-    · simpa only [B, if_pos hij, pairCollisionCount] using
+    · simpa only [B, ite_eq_left hij, pairCollisionCount] using
         pairCollisionCount_le_first s v (e ij.1) (e ij.2) (e.injective.ne hij)
-    · simp only [B, if_neg hij, Finset.card_empty, Nat.zero_le]
+    · simp only [B, ite_eq_right hij, Finset.card_empty, Nat.zero_le]
   have hs : Finset.univ.filter (fun xy : (Fin (s + 2) → ι) × (Fin (s + 2) → ι) =>
       ¬ Function.Injective (xy.1 ∘ e) ∧
       tupleFrequency (s + 2) v xy.1 = tupleFrequency (s + 2) v xy.2) ⊆
@@ -54,7 +54,7 @@ theorem exceptionalCount_le_pairCount {ι d : Type*} [Fintype ι] (s : ℕ) (v :
     obtain ⟨i, j, hij, heq⟩ := hex
     apply Finset.mem_biUnion.mpr
     refine ⟨(i, j), Finset.mem_univ _, ?_⟩
-    simp only [B, if_pos hij, Finset.mem_filter, Finset.mem_univ, true_and]
+    simp only [B, ite_eq_left hij, Finset.mem_filter, Finset.mem_univ, true_and]
     exact ⟨heq, hx.2⟩
   apply (Finset.card_le_card hs).trans
   simpa only [Finset.card_univ, Fintype.card_prod, Fintype.card_fin, pow_two] using

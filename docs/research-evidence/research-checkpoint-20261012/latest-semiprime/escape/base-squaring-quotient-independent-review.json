@@ -1,0 +1,266 @@
+{
+  "created_utc": "2026-10-08",
+  "reviewer": "/root/long_norm_escape",
+  "verdict": "PASS",
+  "report": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md",
+    "sha256": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56",
+    "lines": 200
+  },
+  "manifest": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json",
+    "sha256": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d"
+  },
+  "pin_count": 16,
+  "pins": [
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md",
+      "sha256": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json",
+      "sha256": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+      "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934"
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+      "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082"
+    },
+    {
+      "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+      "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e"
+    },
+    {
+      "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+      "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-scalar-20261008/antipodal-trace-candidate.md",
+      "sha256": "a67c02ed0746321c59dd18f8484918711e77b114e7e15c8ed6954fae0cbdd54a"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-scalar-20261008/inverse-indexed-normalized-current-candidate.md",
+      "sha256": "af98fbc1bf39a1d2a617d1294a80621377345d3f4e52e01dfa2ea282cd87f17a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-partner-acquisition-obstruction-audit.json",
+      "sha256": "e0c1b3b9fed78486661e8480af95d0c79a463f735c145fa10d8a6072c960fcc1"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-centered-acquisition-obstruction-audit.json",
+      "sha256": "de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedShiftClosureObstruction.lean",
+      "sha256": "47c4b50b47fde5d6f4a273a2d8267fef7cccda11d2de522748dbf5067f236de1"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedFiniteTransfer.lean",
+      "sha256": "a1433e4ef5217f6a2d1b1be8d202dc336598efaaa10a4c9703f8c558906b1864"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean",
+      "sha256": "56366a6eb457bf39fe190de5dee083fb2287cb3259ea80184596f711ae9ba1d1"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedLinearStateObstruction.lean",
+      "sha256": "1676dfa7d20c5d14a96bf37c8aec7cc6bf2d0959c7228908eca42e9274115767"
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/review/kedlaya-umans-2008-primary.pdf",
+      "sha256": "6cc1b371b8f3cd7746db3efaadab9e01a41768f099a7db98e20ee8d05c9ad1a5"
+    }
+  ],
+  "checks": [
+    {
+      "name": "source_residual_factorization",
+      "verdict": "PASS",
+      "reason": "Each residual Y\u2212u q^i=Y(1\u2212(u/Y)q^i); product B1 preserves all original leaves and their field zero union."
+    },
+    {
+      "name": "unit_division_scope",
+      "verdict": "PASS",
+      "reason": "Only known unit Y_j is inverted; residuals and complete norms can be nonunits."
+    },
+    {
+      "name": "ragged_lengths_starts",
+      "verdict": "PASS",
+      "reason": "Unequal literal lengths and signed starts are retained through u_j, without free common padding."
+    },
+    {
+      "name": "normalization_origins",
+      "verdict": "PASS",
+      "reason": "Antipodal normalization changes origins but does not identify distinct row-specific origins."
+    },
+    {
+      "name": "even_odd_identity",
+      "verdict": "PASS",
+      "reason": "B2 partitions even/odd i and includes the odd endpoint as an exact commutative-ring polynomial identity."
+    },
+    {
+      "name": "base_changes",
+      "verdict": "PASS",
+      "reason": "Recursion changes abstract Q to Q\u00b2 and shifts origin, distinct from inherited fixed-q dilation."
+    },
+    {
+      "name": "fixed_algebra_contract",
+      "verdict": "PASS",
+      "reason": "One finite free commutative R-algebra and a representative-independent unital R-algebra endomorphism are explicitly required."
+    },
+    {
+      "name": "actual_evaluation_character",
+      "verdict": "PASS",
+      "reason": "Reduction has an F_p-character with Qbar mapping to the actual alpha; hidden reductions are proof-side, not algorithmic oracles."
+    },
+    {
+      "name": "abstract_vs_scalar",
+      "verdict": "PASS",
+      "reason": "Numerical alpha is fixed as a ground scalar by R-endomorphisms; ordinary numeric repeated squaring is explicitly outside the contract."
+    },
+    {
+      "name": "single_branch_suffices",
+      "verdict": "PASS",
+      "reason": "Only sigma0(Qbar)=Qbar\u00b2 is used; adding odd branch or extra variables cannot weaken this stated hypothesis."
+    },
+    {
+      "name": "same_prime_supply",
+      "verdict": "PASS",
+      "reason": "Uses the frozen actual P Q supply and exact local prime periods, not advised fields or guessed orders."
+    },
+    {
+      "name": "period_uniformity",
+      "verdict": "PASS",
+      "reason": "Exact same R_P,R_Q survive all old seeds and comparable candidate m; new order-of-two condition has no new menu factor."
+    },
+    {
+      "name": "large_period_log",
+      "verdict": "PASS",
+      "reason": "R_p>p^.677 in M\u00b3 bin gives logR\u22652.031logM+O1."
+    },
+    {
+      "name": "doubling_omission_capture",
+      "verdict": "PASS",
+      "reason": "ord_R(2)\u2264T implies R divides some2^k\u22121 and hence the nonzero proof product."
+    },
+    {
+      "name": "product_log_size",
+      "verdict": "PASS",
+      "reason": "Log Z_T\u2264log2*T(T+1)/2 gives O(T\u00b2/logM) distinct admissible bad periods."
+    },
+    {
+      "name": "cofactor_prime_count",
+      "verdict": "PASS",
+      "reason": "Each bad R has at most V possible p=vR+1; using all integers is a valid overcount."
+    },
+    {
+      "name": "partner_pair_count",
+      "verdict": "PASS",
+      "reason": "O(M\u00b3) partners and both orientations give M\u00b3 V T\u00b2/logM."
+    },
+    {
+      "name": "exponent_and_margin",
+      "verdict": "PASS",
+      "reason": "tau1.010 yields3+.969+2.020=5.989; thresholdtau<1.0155 is correct."
+    },
+    {
+      "name": "joint_retained_supply",
+      "verdict": "PASS",
+      "reason": "New loss is directly united on the original supply; existing soft5.994 stays dominant."
+    },
+    {
+      "name": "character_iterates",
+      "verdict": "PASS",
+      "reason": "phi\u2218sigma^k are unital K-characters with g values z^(b^k), by endomorphism iteration."
+    },
+    {
+      "name": "orbit_distinctness",
+      "verdict": "PASS",
+      "reason": "Orderh=ord_R(b) gives h distinct character values; R\u2224b is explicit."
+    },
+    {
+      "name": "distinct_maximal_kernels",
+      "verdict": "PASS",
+      "reason": "Characters fix K and are surjective to K; distinct values imply distinct maximal kernels."
+    },
+    {
+      "name": "CRT_rank",
+      "verdict": "PASS",
+      "reason": "Pairwise comaximal maximal ideals give B\u21a0K^h and dimB\u2265h, without reducedness or invertibility of sigma."
+    },
+    {
+      "name": "no_unit_g_assumption",
+      "verdict": "PASS",
+      "reason": "Only phi(g)=z must be a unit; the finite algebra lemma does not silently assume g invertible."
+    },
+    {
+      "name": "free_base_change",
+      "verdict": "PASS",
+      "reason": "Rankd finite-free R-algebra reduces to dimensiond in either hidden field."
+    },
+    {
+      "name": "both_field_rank_bound",
+      "verdict": "PASS",
+      "reason": "Applying the lemma givesd\u2265max local doubling orders>M1.010\u22121, uniformly on retained family."
+    },
+    {
+      "name": "dense_acquisition_contract",
+      "verdict": "PASS",
+      "reason": "Writing complete dense rankd elements costs at leastd slots; only this specified representation incurs the new lower bound."
+    },
+    {
+      "name": "implicit_boundary",
+      "verdict": "PASS",
+      "reason": "No lower bound for sparse/implicit circuits, moving quotients, corrected maps or numeric scalar squaring is asserted."
+    },
+    {
+      "name": "novelty_scope",
+      "verdict": "PASS",
+      "reason": "Old fixed-q target-dilation obstruction is identified as inherited, not counted as this new base-changing result."
+    },
+    {
+      "name": "radix_library_correction",
+      "verdict": "PASS",
+      "reason": "Final paragraph fixes an input-independent polylog-sized entire library with b<R eventually; exceptions are united before adaptation."
+    },
+    {
+      "name": "radix_count",
+      "verdict": "PASS",
+      "reason": "Summing product log bounds over the predetermined library keeps softM5.989 deletion; arbitrary large/input-dependent libraries stay open."
+    },
+    {
+      "name": "primary_modular_composition",
+      "verdict": "PASS",
+      "reason": "Fresh online primary KU section1.1/Theorems7.1/7.7 confirms supplied degree and unit-difference interpolation hypotheses; no strict-soft q-product claim imported."
+    },
+    {
+      "name": "no_hidden_composite_division",
+      "verdict": "PASS",
+      "reason": "B1 known-unit divisions, B2 polynomial splitting and B7 field proof are cleanly separated."
+    },
+    {
+      "name": "frontier_scope",
+      "verdict": "PASS",
+      "reason": "Numerical long scalar, genuine different observations, recovery, all-semiprime clock and sixth-rate theorem remain open; no examples/native certificates or old bytes changed."
+    }
+  ],
+  "required_corrections": [],
+  "source_manifest_mismatches": 0,
+  "resolved_draft_correction": "Optional radix menu was restricted to a predetermined polylog-sized dyadic library; b<R holds and union precedes adaptation. Final report pinned after this correction.",
+  "primary_web_verification": {
+    "url": "https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol08381/DagSemProc.08381.5/DagSemProc.08381.5.pdf",
+    "freshly_verified_utc": "2026-10-08",
+    "inspected": "Section1.1 definition, Theorems7.1 and7.7 with remark on lower-order factors."
+  },
+  "classical_only": true,
+  "new_lean_claim": false,
+  "full_goal_complete": false,
+  "arbitrary_scalar_lower_bound": false,
+  "source_and_report_bytes_unchanged_by_reviewer": true
+}

@@ -327,7 +327,7 @@ private theorem paid_parts (E : Finset ℕ) (f : ℕ → ℂ) (N : ℕ) (L : ℝ
   · simp [h6]
   by_cases h4 : n.primeFactors.card = 4
   · simp [h4]
-  simp only [h3,h5,h6,h4,if_false,false_or,false_and,or_false,zero_add,add_zero]
+  simp only [h3,h5,h6,h4,ite_false,false_or,false_and,or_false,zero_add,add_zero]
 
 set_option maxHeartbeats 1600000 in
 /-- Rejoin every old low-count head before using the signed period

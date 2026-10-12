@@ -172,7 +172,7 @@ theorem balancedSeven_previous_cost {L : ℝ} (hL : 0 < L) (y : ℝ) {n : ℕ}
       ZetaRieszIntersectingWindow.oddWindowCapacity_five.1]
     ring
   rw [ZetaRieszSevenPrimeReflection.floorCost,ZetaRieszSevenPrimeReflection.lowerAllowance,
-    if_neg (by omega),ha₀,ha₁]
+    ite_eq_right (by omega),ha₀,ha₁]
   ring
 
 /-- Joint prime/pair cancellation saves at least a quarter of the already
@@ -211,7 +211,7 @@ theorem balancedSeven_savings_ge_quarter {L : ℝ} (hL : 0 < L) (y : ℝ) {n : �
       ZetaRieszJoinedPrefixFloor.cutoffSaving L y n+pairSaving L y n := by
   have hb := balancedSeven_cost_le_three_quarters hL y h
   have hh : PairChamber L n := balancedSeven_pair h
-  rw [pairSaving,if_pos hh]
+  rw [pairSaving,ite_eq_left hh]
   have hs := le_max_left
     (min (ZetaRieszSevenPrimeReflection.floorCost L y n)
       (ZetaRieszSaturatedCoreFloor.floorCost L y n)-pairCost L y n) 0
@@ -270,9 +270,9 @@ theorem balancedSeven_old_saving_eq_zero {L : ℝ} (hL : 0 < L) (y : ℝ) {n : �
   have hnext := (ZetaRieszReflectedPrimeBounds.costs_le_previous L y n).1
   have hodd : n.primeFactors.card%2 = 1 := by rw [h.2.1]
   have hlast := (ZetaRieszIntersectingWindow.costs_le_previous hL y n hodd).1
-  rw [if_neg (by omega : ¬n.primeFactors.card%2 = 0)] at hnext
+  rw [ite_eq_right (by omega : ¬n.primeFactors.card%2 = 0)] at hnext
   rw [ZetaRieszJoinedPrefixFloor.cutoffSaving,ZetaRieszSaturatedCoreFloor.floorCost,
-    if_neg hsat,if_neg hprefix]
+    ite_eq_right hsat,ite_eq_right hprefix]
   apply max_eq_right
   linarith
 

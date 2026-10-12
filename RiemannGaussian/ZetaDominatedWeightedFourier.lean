@@ -43,7 +43,7 @@ theorem zetaArithmeticBand_eq_weighted_pair (a : ℕ → ℂ)
         have h := (Finset.mem_Icc.mp (Finset.mem_filter.mp hj).1).1
         omega
       simp only [zetaArithmeticWeightedSamples, zetaLogBandSamples, zetaQuarterKernelSamples,
-        if_pos hj, if_neg hj0, mul_assoc, zetaPrimeFeature_mul_quarterKernel]
+        ite_eq_left hj, ite_eq_right hj0, mul_assoc, zetaPrimeFeature_mul_quarterKernel]
     · simp [zetaArithmeticWeightedSamples, zetaLogBandSamples, hj]
   simp_rw [he]
   rw [sum_zetaLogBandSamples]

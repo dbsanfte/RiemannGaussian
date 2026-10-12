@@ -91,7 +91,7 @@ theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : ℕ) {n : 
       apply Finset.sum_le_sum
       intro p hp
       by_cases hel : p ∈ A ∧ eligibleCofactor p (n/p)
-      · rw [if_pos hel]
+      · rw [ite_eq_left hel]
         have hpp := Nat.prime_of_mem_primeFactors hp
         have hpd := Nat.dvd_of_mem_primeFactors hp
         have hlog : Real.log (n/p:ℕ) = Real.log n-Real.log p := by
@@ -105,7 +105,7 @@ theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : ℕ) {n : 
         · apply (div_le_one hln).mpr
           rw [hlog]
           linarith [Real.log_natCast_nonneg p]
-      · rw [if_neg hel]
+      · rw [ite_eq_right hel]
         exact (Real.exp_pos _).le
     _ = _ := by simp
 
@@ -120,7 +120,7 @@ theorem boundedShare_six_le (A : Finset ℕ) (N : ℕ) {n : ℕ}
     have hne : n ≠ 1 := by intro h; simp [h] at hc
     omega
   have hnp : ¬ n.Prime := by intro h; simp [h.primeFactors] at hc
-  rw [boundedShare,if_pos ⟨hs,hn1,hnp⟩]
+  rw [boundedShare,ite_eq_left ⟨hs,hn1,hnp⟩]
   simpa only [hc,Nat.cast_ofNat] using
     share_small_of_selected_primes_interior A N hs hn1 (fun p hp _ _ => hmax p hp)
 

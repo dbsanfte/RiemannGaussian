@@ -76,7 +76,7 @@ theorem saving_ge_ratio {k : ℕ} (hk : 48 ≤ k) {v : ℝ} (hv : 0 ≤ v)
   have hkpos : (0 : ℝ) < k := by exact_mod_cast (show 0 < k by omega)
   have hsq : ((k : ℝ) * v) ^ 2 ≤ (9 / 4 : ℝ) ^ 2 :=
     pow_le_pow_left₀ (mul_nonneg hkpos.le hv) hkv 2
-  simp only [saving, if_pos hk]
+  simp only [saving, ite_eq_left hk]
   rw [div_div]
   apply (div_le_div_iff₀ (by norm_num) (by positivity)).mpr
   nlinarith

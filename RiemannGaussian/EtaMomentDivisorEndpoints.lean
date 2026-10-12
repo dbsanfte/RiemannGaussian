@@ -124,7 +124,7 @@ theorem pairedEtaUnpairedCenteredMomentPrefix_eq_paired_add_endpoint
   · have he : M = 2 * (M / 2) + 1 := by omega
     conv_lhs => rw [he]
     rw [pairedEtaUnpairedCenteredMomentPrefix_odd k hs,
-      if_pos (Nat.odd_iff.mpr hM)]
+      ite_eq_left (Nat.odd_iff.mpr hM)]
     have hc : (2 * ((M / 2 : ℕ) : ℂ) + 1) = (M : ℂ) := by exact_mod_cast he.symm
     have hr : (2 * ((M / 2 : ℕ) : ℝ) + 1) = (M : ℝ) := by exact_mod_cast he.symm
     rw [hc, hr]

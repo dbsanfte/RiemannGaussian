@@ -72,11 +72,11 @@ private theorem rounded_step_tendsto (r t : ℝ) :
     Tendsto (fun d : ℕ ↦ if r ≤ pairedEtaMoebiusTrialHeadCoordinate d t then (1 : ℝ) else 0)
       atTop (𝓝 (if r < Real.exp t then 1 else 0)) := by
   by_cases hr : r < Real.exp t
-  · rw [if_pos hr]
+  · rw [ite_eq_left hr]
     apply tendsto_const_nhds.congr'
     filter_upwards [(pairedEtaMoebiusTrialHeadCoordinate_tendsto t).eventually (lt_mem_nhds hr)] with d hd
     simp [hd.le]
-  · rw [if_neg hr]
+  · rw [ite_eq_right hr]
     apply tendsto_const_nhds.congr'
     exact Eventually.of_forall fun d ↦ by
       have h := (pairedEtaMoebiusTrialHeadCoordinate_lt_exp d t).trans_le (le_of_not_gt hr)

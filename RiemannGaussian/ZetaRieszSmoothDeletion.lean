@@ -60,13 +60,13 @@ theorem actual_band_eq_smooth_add_rough (P : Polynomial ℂ) (N b : ℕ) (y L : 
     · have hnlarge : ¬ ∃ p ∈ n.primeFactors, b < p := by
         rintro ⟨p, hpn, hpb⟩
         exact (hp p hpn).not_gt hpb
-      rw [if_pos ⟨hs, hp⟩, if_neg (fun h => hnlarge h.2), add_zero]
+      rw [ite_eq_left ⟨hs, hp⟩, ite_eq_right (fun h => hnlarge h.2), add_zero]
     · have hlarge : ∃ p ∈ n.primeFactors, b < p := by
         by_contra hh
         apply hp
         intro p hpn
         exact le_of_not_gt (fun hpb => hh ⟨p, hpn, hpb⟩)
-      rw [if_neg (fun h => hp h.2), if_pos ⟨hs, hlarge⟩, zero_add]
+      rw [ite_eq_right (fun h => hp h.2), ite_eq_left ⟨hs, hlarge⟩, zero_add]
   · have hc : SquarefreeVaughanLogSource.coefficient L n = 0 := by
       simp [SquarefreeVaughanLogSource.coefficient, hs]
     simp only [hc, zero_mul, ite_self, zero_add]

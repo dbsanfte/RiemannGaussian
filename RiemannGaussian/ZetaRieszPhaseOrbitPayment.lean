@@ -115,7 +115,7 @@ theorem logNear_row_capacity (P : Finset ℝ) (S : Finset ℕ) (n : ℕ)
         have hh := Finset.single_le_sum (s := P)
           (f := fun a : ℝ => if |log m-(log n-a)| ≤ ε then (m : ℝ)⁻¹ else 0)
           (fun _ _ => by split_ifs <;> positivity) ha
-        simpa only [if_pos he'] using hh
+        simpa only [ite_eq_left he'] using hh
       · exact Finset.sum_nonneg (fun _ _ => by split_ifs <;> positivity)
     _ = ∑ a ∈ P,∑ m ∈ S.filter (fun m : ℕ => |log m-(log n-a)| ≤ ε),(m : ℝ)⁻¹ := by
       rw [Finset.sum_comm]

@@ -218,7 +218,7 @@ theorem five_coefficient_window_lower {p q a b r : ℕ}
     linarith only [h₁,h₂,h₃]
   have hnp : ¬(p*(q*(a*(b*r)))).Prime := Nat.not_prime_mul hp.ne_one
     (fun he => hq.ne_one (mul_eq_one.mp he).1)
-  rw [SquarefreeVaughanLogSource.coefficient,if_pos ⟨hs,hnp⟩,Complex.ofReal_re]
+  rw [SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hs,hnp⟩,Complex.ofReal_re]
   have hh := mul_le_mul
     (div_le_div_of_nonneg_right htn hL.le) hc
     (fiveWindowCap_nonneg L v h q a b r)

@@ -54,7 +54,7 @@ def orderWords (left right : List Bool) : WordOrder :=
 
 theorem orderWords_less (left right : List Bool) :
     (orderWords left right).difference.borrow=true ↔ bitValue left<bitValue right := by
-  simpa only [orderWords,bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using
+  simpa only [orderWords,bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using
     subBits_borrow_iff left right false
 
 /-- Equality is proved from the retained borrow and full difference word;
@@ -189,7 +189,7 @@ decreasing_by
 /-- The increment data path is Boolean addition of literal one. -/
 theorem incrementBits_value (candidate : List Bool) :
     bitValue (addBits candidate [true] false).bits=bitValue candidate+1 := by
-  simpa only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,Nat.mul_zero,Nat.add_zero] using
+  simpa only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,Nat.mul_zero,Nat.add_zero] using
     addBits_correct candidate [true] false
 
 /-- One extra limit bit suffices for the next candidate even at the upper
@@ -213,7 +213,7 @@ theorem fittedIncrement_width (candidate limit : List Bool) :
 /-- A false upper-limit borrow is the exact downstream window condition. -/
 theorem withinLimit_iff (candidate limit : List Bool) :
     ¬(subBits limit candidate false).borrow=true ↔ bitValue candidate≤bitValue limit := by
-  simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero,Nat.not_lt] using
+  simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero,Nat.not_lt] using
     not_congr (subBits_borrow_iff limit candidate false)
 
 /-- The actual Boolean scan equals the full previous first-gap recurrence,
@@ -228,7 +228,7 @@ theorem scanWordGaps_correct (candidate limit : List Bool) (products : List BitR
     split_ifs with hb
     · have hlt := (subBits_borrow_iff limit candidate false).mp hb
       have hz : bitValue limit+1-bitValue candidate=0 := by
-        simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hlt
+        simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hlt
         omega
       simp only [Option.map_none,hz,firstGap]
     · have hle := (withinLimit_iff candidate limit).mp hb
@@ -239,7 +239,7 @@ theorem scanWordGaps_correct (candidate limit : List Bool) (products : List BitR
     split_ifs with hb
     · have hlt := (subBits_borrow_iff limit candidate false).mp hb
       have hz : bitValue limit+1-bitValue candidate=0 := by
-        simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hlt
+        simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hlt
         omega
       simp only [Option.map_none,hz,firstGap]
     · have hle := (withinLimit_iff candidate limit).mp hb
@@ -250,13 +250,13 @@ theorem scanWordGaps_correct (candidate limit : List Bool) (products : List BitR
         have hnlt : ¬bitValue product.bits<bitValue candidate := by omega
         have hneq : ¬bitValue product.bits=bitValue candidate := by omega
         simp only [Option.map_some,fitBits_self,productValues_cons,hc,firstGap,
-          if_neg hnlt,if_neg hneq]
+          ite_eq_right hnlt,ite_eq_right hneq]
       · have he := (orderWords_equal candidate product.bits).mp heq
         have hnlt : ¬bitValue product.bits<bitValue candidate := by omega
         have hep : bitValue product.bits=bitValue candidate := he.symm
         dsimp only
         rw [ih,fittedIncrement_value hle]
-        simp only [productValues_cons,hc,firstGap,if_neg hnlt,if_pos hep]
+        simp only [productValues_cons,hc,firstGap,ite_eq_right hnlt,ite_eq_left hep]
         congr 1
         omega
       · have hnlt : ¬bitValue candidate<bitValue product.bits :=
@@ -266,7 +266,7 @@ theorem scanWordGaps_correct (candidate limit : List Bool) (products : List BitR
         have hlt : bitValue product.bits<bitValue candidate := by omega
         dsimp only
         rw [ih]
-        simp only [productValues_cons,hc,firstGap,if_pos hlt]
+        simp only [productValues_cons,hc,firstGap,ite_eq_left hlt]
 
 /-- Every scan frame has bounded physical words; all recursive calls consume
 a product. Both terminal and repeated-product work are in the actual clock. -/

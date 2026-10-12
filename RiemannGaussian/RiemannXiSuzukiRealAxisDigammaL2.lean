@@ -355,8 +355,8 @@ def suzukiRealAxisCarrierDigammaContribution (x : ℝ) : ℂ :=
 /-- The carrier-weighted standalone digamma contribution is in `L²(ℝ)`. -/
 theorem memLp_two_suzukiRealAxisCarrierDigammaContribution :
     MemLp suzukiRealAxisCarrierDigammaContribution 2 := by
-  exact memLp_two_suzukiRealAxisDigammaContribution.mul'
-    memLp_top_suzukiRealAxisXiZeroCarrier
+  exact memLp_top_suzukiRealAxisXiZeroCarrier.fun_mul (r := 2)
+    memLp_two_suzukiRealAxisDigammaContribution
 
 end
 

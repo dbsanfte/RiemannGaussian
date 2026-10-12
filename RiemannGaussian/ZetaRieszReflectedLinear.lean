@@ -117,7 +117,7 @@ theorem coefficient_eq_linear {L : ℝ} {n : ℕ} (hn : LinearClass L n) :
   have hr := VaughanLogAverage.riesz_reflection (Real.log n - L) hs h1 hnp
   rw [sub_sub_cancel] at hr
   rw [riesz_eq_linear hs hD hp] at hr
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos ⟨hs, hnp⟩, hr]
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hs, hnp⟩, hr]
   congr 1
   unfold linearCoefficient
   ring

@@ -30,7 +30,7 @@ theorem triple_allowance_ge_one {u : ℝ} (hu : 1/2 ≤ u) {N n : ℕ}
   have hLu : SquarefreeVaughanLogSource.length u N ≤ (3/2:ℝ)*N := by
     have := ZetaRieszHeadOrders.length_le_two_log_two hu hN
     nlinarith [Real.log_two_lt_d9, Nat.cast_nonneg (α := ℝ) N]
-  rw [middleLayerAllowance, if_pos ⟨hs,by omega⟩, hk]
+  rw [middleLayerAllowance, ite_eq_left ⟨hs,by omega⟩, hk]
   norm_num
   have hNR : (2:ℝ) ≤ N := by exact_mod_cast hN
   rw [show Real.log n / SquarefreeVaughanLogSource.length u N * (Real.log n / 3) =

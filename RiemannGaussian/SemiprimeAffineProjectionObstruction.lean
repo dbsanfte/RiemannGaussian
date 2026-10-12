@@ -168,9 +168,9 @@ theorem scaledFirst_abs_le {h : ℤ} (hh : 1≤h) {z : ℤ×ℤ}
   have hl' : 1≤projectionDilation h := by unfold projectionDilation; omega
   have hH := mul_le_mul_of_nonneg_right hl' hp
   cases side
-  · simpa only [scaledFirst,Bool.false_eq_true,if_false] using
+  · simpa only [scaledFirst,Bool.false_eq_true,ite_false] using
       ha.trans (by simpa only [one_mul] using hH)
-  · simpa only [scaledFirst,if_true,abs_mul,abs_of_pos hl] using hm
+  · simpa only [scaledFirst,ite_true,abs_mul,abs_of_pos hl] using hm
 
 theorem scaledFirst_ne_zero {h : ℤ} (hh : 1≤h) {z : ℤ×ℤ}
     (hz : z∈boundedForms h) (side : Bool) : scaledFirst h side z≠0 := by
@@ -281,7 +281,7 @@ theorem projectedValue_abs_le {p : ℕ} {h : ℤ} (hh : 1≤h) {z : ℤ×ℤ}
   · have hb := abs_add_le (projectionDilation h*firstValue h z) (z.2*p)
     simp only [abs_mul,abs_of_pos hl,abs_of_nonneg (Int.natCast_nonneg p)] at hb
     unfold projectedValue secondValue
-    simp only [if_true]
+    simp only [ite_true]
     nlinarith
 
 theorem integerRoots_abs_le {p : ℕ} {h : ℤ} (hh : 1≤h) {a : ℤ}

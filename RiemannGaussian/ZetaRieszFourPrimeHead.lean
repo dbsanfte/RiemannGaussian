@@ -264,7 +264,7 @@ theorem small_four_norm_upper (S A : Finset ℕ) {N M Q : ℕ}
     rw [← hsum]
     calc
       _ ≤ ∑ n ∈ V, ‖f n‖ := norm_sum_le _ _
-      _ = ∑ n ∈ V, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,if_pos hn])
+      _ = ∑ n ∈ V, g n := Finset.sum_congr rfl (fun n hn => by simp only [g,ite_eq_left hn])
       _ ≤ ∑ n ∈ D.image prod, g n := Finset.sum_le_sum_of_subset_of_nonneg hsub
         (by intro n _ _; exact ite_nonneg (norm_nonneg _) le_rfl)
       _ ≤ ∑ x ∈ D, g (prod x) := Finset.sum_image_le_of_nonneg
@@ -785,13 +785,13 @@ theorem eventually_joint_slabs_spending_log_head {y : ℝ} (hy : 16 ≤ |y|) :
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb3
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1 ; first | rfl | ring
   · have hh := mul_le_mul_of_nonneg_left hpos (by norm_num : (0 : ℝ) ≤ 1/8)
     apply hsm4.trans
     calc
       _ ≤ (c/8*M)*(Real.exp (2*(M : ℝ))/((M : ℝ)+1)*radialEnvelope N M) := by
         simpa only [div_eq_mul_inv,mul_assoc] using hb4
-      _ ≤ _ := by convert hh using 1 <;> first | rfl | ring
+      _ ≤ _ := by convert hh using 1 ; first | rfl | ring
 
 private theorem log_floor_exp_le {x : ℝ} (hx : 0 ≤ x) :
     Real.log (⌊Real.exp x⌋₊ : ℕ) ≤ x := by

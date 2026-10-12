@@ -298,8 +298,6 @@ theorem continuous_uncurry_xiSpectralBlaschkeRightFoldedVerticalKernel_quantitat
     xiSpectralNegativeLogDerivative (w p.2) *
       (1 / (z p.1 - w p.2) - 1 / (z p.1 + w p.2)))
   convert hproduct using 1
-  ext p
-  rfl
 
 /-- The real folded vertical integral is continuous in the safe-axis
 observation height at every quantitative cutoff. -/

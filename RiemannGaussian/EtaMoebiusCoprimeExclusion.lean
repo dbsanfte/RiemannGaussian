@@ -192,9 +192,8 @@ theorem pairedEtaMoebiusLargeMeanSquare_sub_growingCoprime_tendsto_zero
       (pairedEtaOddSieveModulus v) (pairedEtaCoprimeScale rho v)).re) atTop (𝓝 0) := by
     convert Complex.continuous_re.continuousAt.tendsto.comp
       (pairedEtaMoebiusCoprimeMixedCubicCorrelation_growing_tendsto_zero rho hrho) using 1
-    · ext v
-      rfl
-    · rfl
+    ext v
+    rfl
   have hz := (hm.const_mul 2).sub hr
   simp only [mul_zero, sub_zero] at hz
   convert hz using 1

@@ -41,7 +41,7 @@ theorem checked_cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
     else ZetaRieszCapacityCheck.check c &&
       ZetaRieszCapacityCheck.check {c with height := offset lo B,lower := w.1,upper := 1000000}) = true
     at hnum
-  rw [if_neg hn] at hnum
+  rw [ite_eq_right hn] at hnum
   have hbig : ZetaRieszCapacityCheck.check c = true := by
     split_ifs at hnum with h
     · simp only [Bool.and_eq_true] at hnum
@@ -59,7 +59,7 @@ theorem checked_cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
     ring
   rw [← hpay]
   by_cases hr0 : offset lo B = 0
-  · rw [if_pos hr0] at hnum
+  · rw [ite_eq_left hr0] at hnum
     simp only [Bool.and_eq_true,decide_eq_true_eq] at hnum
     have hw0 : (w.1 : ℝ) = 0 := by exact_mod_cast hnum.1
     have hh : (0 : ℝ) ≤ c.height := by exact_mod_cast hg.2.2.2.le
@@ -77,7 +77,7 @@ theorem checked_cap_integral_le {lo hi owner : ℚ} {B : Cover.Box} {w : ℚ × 
         rw [sub_zero,max_eq_right (le_min hr.1 hh)]
       _ ≤ _ := by simpa only [c,cap,Rat.cast_zero,sub_zero] using
           (ZetaRieszCapacityCheck.check_sound hbig).2
-  · rw [if_neg hr0] at hnum
+  · rw [ite_eq_right hr0] at hnum
     simp only [Bool.and_eq_true] at hnum
     have hs := hnum.2
     have hrc : offset lo B ≤ c.height := by

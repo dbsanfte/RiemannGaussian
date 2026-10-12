@@ -336,12 +336,12 @@ theorem mem_polynomialPencilBadParameterFinset_of_not_separable
   refine ⟨a, Multiset.mem_toFinset.mpr haRoot, ?_⟩
   rw [polynomialPencilBadParameter]
   by_cases hQa : aeval a Q = 0
-  · rw [if_pos hQa]
+  · rw [ite_eq_left hQa]
     have hQda : aeval a Q.derivative ≠ 0 :=
       hQ.aeval_derivative_ne_zero hQa
     apply (div_eq_iff hQda).2
     linear_combination -hpda'
-  · rw [if_neg hQa]
+  · rw [ite_eq_right hQa]
     apply (div_eq_iff hQa).2
     linear_combination -hpa'
 

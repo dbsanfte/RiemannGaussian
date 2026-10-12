@@ -40,18 +40,18 @@ theorem sum_adaptiveBand_eq_response (P : Polynomial ℂ) (N : ℕ) (y L u : ℝ
       zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n) =
       ZetaRieszLargeSmoothDeletion.adaptiveSmoothResponse P N y L u := by
   by_cases h : 2 * u ^ 2 < 1
-  · simp only [adaptiveBand, ZetaRieszLargeSmoothDeletion.adaptiveSmoothResponse, if_pos h,
+  · simp only [adaptiveBand, ZetaRieszLargeSmoothDeletion.adaptiveSmoothResponse, ite_eq_left h,
       ZetaRieszLargeSmoothDeletion.largeSmoothResidualResponse]
-  · simp only [adaptiveBand, ZetaRieszLargeSmoothDeletion.adaptiveSmoothResponse, if_neg h]
+  · simp only [adaptiveBand, ZetaRieszLargeSmoothDeletion.adaptiveSmoothResponse, ite_eq_right h]
     exact ZetaRieszLargeSmoothDeletion.sum_previousBand_eq_response P N y L u
 
 /-- Every retained adaptive label lies in the original band. -/
 theorem adaptiveBand_subset (u : ℝ) (N : ℕ) : adaptiveBand u N ⊆ zetaPrimeLogBand N := by
   intro n hn
   by_cases h : 2 * u ^ 2 < 1
-  · rw [adaptiveBand, if_pos h] at hn
+  · rw [adaptiveBand, ite_eq_left h] at hn
     exact ZetaRieszLargeSmoothDeletion.previousBand_subset u N (Finset.mem_sdiff.mp hn).1
-  · rw [adaptiveBand, if_neg h] at hn
+  · rw [adaptiveBand, ite_eq_right h] at hn
     exact ZetaRieszLargeSmoothDeletion.previousBand_subset u N hn
 
 /-- Removing a prime from a product of two primes leaves a prime. -/
@@ -74,12 +74,12 @@ theorem semiprime_mem_optimizedReducedBand {a p N : ℕ} (ha : a.Prime) (hp : p.
     (hb : p * a ∈ zetaPrimeLogBand N) (u : ℝ) :
     p * a ∈ ZetaRieszGeneralCofactorTilt.optimizedReducedBand u N := by
   by_cases h : u = Real.exp (-(1 / 2 : ℝ))
-  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, if_pos h]
+  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, ite_eq_left h]
     apply Finset.mem_filter.mpr
     refine ⟨hb, ?_⟩
     rintro ⟨b, r, _hb1, _hbound, _hsf, hnp, hr, _hcop, he⟩
     exact hnp (prime_cofactor_of_semiprime ha hp hr he)
-  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, if_neg h]
+  · rw [ZetaRieszGeneralCofactorTilt.optimizedReducedBand, ite_eq_right h]
     apply Finset.mem_filter.mpr
     refine ⟨hb, ?_⟩
     rintro ⟨b, r, _hb1, _hbound, _hsf, hnp, hr, _hcop, he⟩
@@ -152,12 +152,12 @@ theorem semiprime_mem_adaptiveBand_above {a p N : ℕ} {u : ℝ}
     p * a ∈ adaptiveBand u N := by
   have hprev : p * a ∈ ZetaRieszLargeSmoothDeletion.previousBand u N := by
     by_cases h : u < Real.exp (-(1 / 2 : ℝ))
-    · rw [ZetaRieszLargeSmoothDeletion.previousBand, if_pos h]
+    · rw [ZetaRieszLargeSmoothDeletion.previousBand, ite_eq_left h]
       exact semiprime_mem_compositeResidualBand ha hp haN hNp hb hXp
-    · rw [ZetaRieszLargeSmoothDeletion.previousBand, if_neg h]
+    · rw [ZetaRieszLargeSmoothDeletion.previousBand, ite_eq_right h]
       exact semiprime_mem_optimizedRoughBand ha hp haN hNp hb u
   by_cases h : 2 * u ^ 2 < 1
-  · rw [adaptiveBand, if_pos h]
+  · rw [adaptiveBand, ite_eq_left h]
     apply Finset.mem_sdiff.mpr
     refine ⟨hprev, ?_⟩
     intro hm
@@ -165,7 +165,7 @@ theorem semiprime_mem_adaptiveBand_above {a p N : ℕ} {u : ℝ}
       (ZetaRieszLargeSmoothClass.mem_largeSmoothFactorBand_iff _ u N (p * a)).mp hm
     have hba := Nat.le_of_dvd ha.pos (smooth_factor_dvd_small_prime hp hNp hbs hsmall he)
     omega
-  · simpa only [adaptiveBand, if_neg h] using hprev
+  · simpa only [adaptiveBand, ite_eq_right h] using hprev
 
 /-- The exact damped physical cutoff eventually exceeds the quadratic head. -/
 theorem eventually_quadratic_head_lt_physical {u : ℝ} (hu : 0 < u) (hu1 : u < 1) :
@@ -225,7 +225,7 @@ theorem semiprime_outside_adaptive_eq_prefix (A : Finset ℕ) (P : Polynomial �
     intro p hp
     by_cases hNp : N ^ 2 < p
     · by_cases hXp : p ≤ (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2
-      · simp only [hNp, hXp, and_self, if_true, ite_mul, zero_mul]
+      · simp only [hNp, hXp, and_self, ite_true, ite_mul, zero_mul]
         congr!
       · have hnot : ¬ (a * p ∈ zetaPrimeLogBand N ∧ a * p ∉ adaptiveBand u N) := by
           rintro ⟨hb, ho⟩
@@ -233,8 +233,8 @@ theorem semiprime_outside_adaptive_eq_prefix (A : Finset ℕ) (P : Polynomial �
           simpa only [Nat.mul_comm] using semiprime_mem_adaptiveBand_above
             (hA a ha).1 (Nat.mem_primesLE.mp hp).2 (hA a ha).2 hNp
             (by simpa only [Nat.mul_comm] using hb) hNX (lt_of_not_ge hXp)
-        simp only [hNp, hXp, and_false, if_true, if_false, if_neg hnot]
-    · simp only [hNp, false_and, if_false]
+        simp only [hNp, hXp, and_false, ite_true, ite_false, ite_eq_right hnot]
+    · simp only [hNp, false_and, ite_false]
 
 /-- The semiprime overlap with previous deletions vanishes independently
 at every source scale below one, even with arbitrary selected small primes. -/

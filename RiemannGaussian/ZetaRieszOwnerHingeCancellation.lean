@@ -72,7 +72,7 @@ private theorem excluded_coefficient_recurrence {p n : ℕ} (hp : p.Prime)
   · obtain ⟨m,rfl⟩ := hpn
     have hm : m ≠ 0 := by intro h; simp [h] at hn
     have hpdiv : p ∣ p*m := dvd_mul_right _ _
-    rw [if_pos hpdiv, Nat.mul_div_cancel_left _ hp.pos]
+    rw [ite_eq_left hpdiv, Nat.mul_div_cancel_left _ hp.pos]
     by_cases hpm : p ∣ m
     · have hsf : ¬Squarefree (p*m) := by
         intro h
@@ -144,7 +144,7 @@ private theorem excluded_riesz_recurrence {p : ℕ} (hp : p.Prime) (t : ℝ) :
                 (Nat.mul_div_cancel' hd).symm
               _ = _ := by rw [Nat.cast_mul,
                 log_mul (by exact_mod_cast hp.ne_zero) (by exact_mod_cast hnp.ne')]
-          rw [if_pos hd, if_pos hd, hl]
+          rw [ite_eq_left hd, ite_eq_left hd, hl]
           congr 2
           ring
         · simp [hd]
@@ -202,14 +202,14 @@ private theorem normalized_marked_coefficient {p n : ℕ} (hp : p.Prime) :
     have hmark : RoughSquarefreeCounting.markedDensity {p} n =
         ((SquarefreeCounting.density n.primeFactors -
           SquarefreeCounting.density (insert p n.primeFactors) : ℝ) : ℂ) := by
-      rw [RoughSquarefreeCounting.markedDensity, if_pos hsf]
+      rw [RoughSquarefreeCounting.markedDensity, ite_eq_left hsf]
       rw [show ({p} : Finset ℕ) = insert p ∅ from rfl, Finset.powerset_insert]
       simp [Finset.union_comm]
       ring
     have hpr : (p : ℝ) ≠ 0 := by exact_mod_cast hp.ne_zero
     have hc : (μ n : ℂ) = ((μ n : ℝ) : ℂ) := by norm_cast
     rw [hmark, hc, ← Complex.ofReal_mul, Complex.ofReal_re, hmarks,
-      excludedCoefficient, if_neg hpd, coefficient]
+      excludedCoefficient, ite_eq_right hpd, coefficient]
     field_simp
     ring
   · have hm : (μ n : ℝ) = 0 := by
@@ -862,7 +862,7 @@ theorem comparisonOwnerWeight_zero_of_not_geometry (u L y scale : ℝ)
       (ZetaRieszJointPrimeEnergy.ownerRows (comparisonOwnerBand u N K))
         L y scale N a p = 0 := by
   unfold ZetaRieszJointPrimeEnergy.maskedWeight
-  apply if_neg
+  apply ite_eq_right
   intro hp
   obtain ⟨m,hm,rfl⟩ := Finset.mem_image.mp hp
   obtain ⟨hm,he⟩ := Finset.mem_filter.mp hm
@@ -1107,7 +1107,7 @@ theorem raw_owner_weight_zero_larger_prime (B A : Finset ℕ)
     ZetaRieszJointPrimeEnergy.maskedWeight A (ZetaRieszJointPrimeEnergy.ownerRows B)
       L y scale N a p = 0 := by
   unfold ZetaRieszJointPrimeEnergy.maskedWeight
-  apply if_neg
+  apply ite_eq_right
   intro hp
   obtain ⟨m,hm,rfl⟩ := Finset.mem_image.mp hp
   obtain ⟨hm,he⟩ := Finset.mem_filter.mp hm
@@ -1117,7 +1117,7 @@ theorem raw_owner_weight_zero_larger_prime (B A : Finset ℕ)
     (hqa.trans (by rw [← he]; exact Nat.div_dvd_of_dvd (Nat.dvd_of_mem_primeFactors hpf))) hm0
   have hne : m.primeFactors.Nonempty := ⟨q,hqm⟩
   have hle : q ≤ largestPrime m := by
-    rw [largestPrime,dif_pos hne]
+    rw [largestPrime,dite_eq_left hne]
     exact Finset.le_max' _ _ hqm
   exact (not_lt_of_ge hle) hqp
 
@@ -1126,7 +1126,7 @@ private theorem raw_owner_weight_outside (B A : Finset ℕ) (L y scale : ℝ)
     ZetaRieszJointPrimeEnergy.maskedWeight A (ZetaRieszJointPrimeEnergy.ownerRows B)
       L y scale N a p = 0 := by
   unfold ZetaRieszJointPrimeEnergy.maskedWeight
-  apply if_neg
+  apply ite_eq_right
   intro hp
   obtain ⟨m,hm,_⟩ := Finset.mem_image.mp hp
   obtain ⟨hm,he⟩ := Finset.mem_filter.mp hm

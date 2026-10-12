@@ -46,11 +46,11 @@ theorem weightedResiduePacket_center_choices {N m j : ℕ} {w : WeightedPacket}
   have hsmall (z : QuotientRow) :
       CenterChoice N m ⟨j,z,publicShift N m j z.a z.b z.t⟩ false := by
     simpa only [CenterChoice,centerA,centerB,Bool.not_false,Bool.false_eq_true,
-      if_false,if_true] using publicShift_midpoint N m j z
+      ite_false,ite_true] using publicShift_midpoint N m j z
   have hlarge (z : QuotientRow) :
       CenterChoice N m ⟨j,z,reflectedShift N m j z.a z.b z.t⟩ true := by
     simpa only [CenterChoice,centerA,centerB,Bool.not_true,Bool.false_eq_true,
-      if_false,if_true] using reflectedShift_midpoint N m j z
+      ite_false,ite_true] using reflectedShift_midpoint N m j z
   rcases hw with rfl|rfl|rfl|rfl
   · exact ⟨false,false,hsmall left,hsmall right⟩
   · exact ⟨false,true,hsmall left,hlarge right⟩
@@ -146,7 +146,7 @@ theorem publicPacket_denominators {N m : ℕ} (hm : 0<m) {w : WeightedPacket}
 theorem center_complement_difference (N : ℕ) (ls rs : Bool) :
     centerB N rs-centerB N ls=-(centerA N rs-centerA N ls) := by
   cases ls <;> cases rs <;> simp only [centerA,centerB,Bool.not_true,Bool.not_false,
-    Bool.false_eq_true,if_false,if_true] <;> ring
+    Bool.false_eq_true,ite_false,ite_true] <;> ring
 
 /-- The mixed-center contribution is one retained arithmetic direction. -/
 theorem publicPacket_center_spectrum_rankOne {N m : ℕ} {w : WeightedPacket}

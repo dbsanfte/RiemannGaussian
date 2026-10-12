@@ -92,7 +92,7 @@ theorem phaseContactPrimalRow_contact {u : Fin 9 → ℝ} (hJ : IsUnit (phaseCon
     dsimp [phaseContactMassCoordinate] at this
     omega
   have h := phaseContactPrimalRow_identity hJ (phaseContactMassCoordinate j)
-  simp only [phaseContactJacobian_mass_column, mul_neg, Finset.sum_neg_distrib, if_neg hne,
+  simp only [phaseContactJacobian_mass_column, mul_neg, Finset.sum_neg_distrib, ite_eq_right hne,
     neg_eq_zero] at h
   exact h
 
@@ -108,7 +108,7 @@ theorem phaseContactPrimalRow_contact_slope {u : Fin 9 → ℝ} (hJ : IsUnit (ph
     dsimp [phaseContactCosineCoordinate] at this
     omega
   have h := phaseContactPrimalRow_identity hJ (phaseContactCosineCoordinate j)
-  simp only [phaseContactJacobian_cosine_column, if_neg hne] at h
+  simp only [phaseContactJacobian_cosine_column, ite_eq_right hne] at h
   have he : (∑ i : Fin 9, phaseContactPrimalRow u i *
       (-u (phaseContactMassCoordinate j) * phaseChebyshevSecant
         (u (phaseContactCosineCoordinate j)) (u (phaseContactCosineCoordinate j))

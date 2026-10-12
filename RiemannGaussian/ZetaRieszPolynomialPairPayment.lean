@@ -142,7 +142,7 @@ theorem loggedPairLift_kernel {q p : ℕ} (hq : 0<q) (hp : p.Prime)
     simpa only [show N-1+1=N by omega,mul_comm] using
       (ZetaRieszHeadOrders.log_mul_kernel (N-1) (q*p) s).symm
   simp only [loggedPairLift,dvd_mul_right,Nat.mul_div_right _ hq,hp,and_self,
-    if_true,ArithmeticFunction.vonMangoldt_apply_prime hp]
+    ite_true,ArithmeticFunction.vonMangoldt_apply_prime hp]
   rw [hk]
   simp only [Complex.ofReal_div,Complex.ofReal_mul,Complex.ofReal_ofNat]
   have htC : (log (q*p : ℕ) : ℂ)≠0 := Complex.ofReal_ne_zero.mpr ht
@@ -169,7 +169,7 @@ theorem hasSum_loggedPairLift {q : ℕ} (hq : 0<q) {N : ℕ} (hN : 0<N)
     ((2/(N : ℂ))*(log q : ℂ))).congr_fun
   intro p
   by_cases hp : p.Prime
-  · simpa only [Function.comp_apply,if_pos hp,mul_assoc] using loggedPairLift_kernel hq hp hN s
+  · simpa only [Function.comp_apply,ite_eq_left hp,mul_assoc] using loggedPairLift_kernel hq hp hN s
   · simp [Function.comp_apply,loggedPairLift,Nat.mul_div_right _ hq,hp]
 
 theorem hasSum_smallCoefficient (u y : ℝ) {N : ℕ} (hN : 0<N) :
@@ -292,11 +292,11 @@ theorem norm_loggedPairLift_le {q : ℕ} (hq : q.Prime) (n : ℕ) :
     have hpos : 0<log n := log_pos (by exact_mod_cast
       (show 1<n by rw [←he]; nlinarith only [hq.two_le,hp.two_le]))
     have h0 : 0≤2*log q*log p/log n := by positivity
-    rw [loggedPairLift,if_pos hd,Complex.norm_real,Real.norm_of_nonneg h0]
+    rw [loggedPairLift,ite_eq_left hd,Complex.norm_real,Real.norm_of_nonneg h0]
     apply (div_le_iff₀ hpos).mpr
     rw [ht]
     nlinarith [sq_nonneg (log q),sq_nonneg (log p)]
-  · simp only [loggedPairLift,if_neg hd,norm_zero]
+  · simp only [loggedPairLift,ite_eq_right hd,norm_zero]
     exact log_natCast_nonneg n
 
 theorem norm_loggedCoefficient_le (A : Finset ℕ)
@@ -394,7 +394,7 @@ private theorem smallCoefficient_pair {u : ℝ} {N p q : ℕ}
       intro a ha hne
       simp [loggedPairLift,hother a ha hne]) (by exact fun h => (h hq).elim)]
   simp only [pairLift,loggedPairLift,dvd_mul_right,Nat.mul_div_right _ hqP.pos,hp,
-    and_self,if_true,←Complex.ofReal_add]
+    and_self,ite_true,←Complex.ofReal_add]
 
 /-- Canonical masks disappear only by their exact support conditions:
 the large prime exceeds the physical length on this interior population. -/
@@ -463,10 +463,10 @@ private theorem interior_small_pair_eq {u y : ℝ} (hu : 1/2≤u)
       max_eq_left (by linarith only [hpL,log_natCast_nonneg q])]
     ring
   refine ⟨hsmall,?_⟩
-  rw [smallCoefficient_pair hq hp hpn,selbergDefect,joinedCoefficient,if_pos hc,
-    if_neg hnothead,if_neg hnotcorr,add_zero,sub_zero,
+  rw [smallCoefficient_pair hq hp hpn,selbergDefect,joinedCoefficient,ite_eq_left hc,
+    ite_eq_right hnothead,ite_eq_right hnotcorr,add_zero,sub_zero,
     selbergCoefficient_pair_ne hqP hp hpq.ne]
-  simp only [completedCoefficient,if_pos hs,hR,←Complex.ofReal_sub]
+  simp only [completedCoefficient,ite_eq_left hs,hR,←Complex.ofReal_sub]
   congr 1
   ring
 
@@ -483,7 +483,7 @@ theorem interior_coefficient_eq {u y : ℝ} (hu : 1/2≤u)
     have he : q*(n/q)=n := Nat.mul_div_cancel' hqd
     have h := interior_small_pair_eq hu hU hy hN hcut hq hp (he.symm ▸ hl) (he.symm ▸ hh)
     rw [he] at h
-    simpa only [maskedSmallCoefficient,if_pos h.1] using h.2
+    simpa only [maskedSmallCoefficient,ite_eq_left h.1] using h.2
   · have hzero : smallCoefficient u N n=0 := by
       have hnot (q : ℕ) (hq : q∈smallPrimes N) : ¬(q∣n ∧ (n/q).Prime) :=
         fun h => hex ⟨q,hq,h⟩
@@ -549,7 +549,7 @@ theorem exists_literalSmall_completion_bound :
     have hs : (∑ n∈literalSmallLabels u y N,maskedSmallCoefficient u y N n*
         zetaPrimeLogKernel N (3/2+Complex.I*y) n)=
         ∑ n∈literalSmallLabels u y N,selbergDefect u N n*zetaPrimeLogKernel N (3/2+Complex.I*y) n :=
-      Finset.sum_congr rfl (fun n hn => by simp only [maskedSmallCoefficient,if_pos hn])
+      Finset.sum_congr rfl (fun n hn => by simp only [maskedSmallCoefficient,ite_eq_left hn])
     rw [hs] at h
     exact h
   have ht := (((hasSum_smallCoefficient u y (by omega : 0<N)).sub hm).tendsto_sum_nat.const_mul

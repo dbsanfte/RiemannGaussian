@@ -160,7 +160,7 @@ private theorem exists_raw_mean :
         exact ⟨⟨Nat.pos_of_dvd_of_pos hd (by omega),(Nat.le_of_dvd (by omega) hd).trans hx.2⟩,hd⟩
     simp only [mul_ite,mul_zero,← Finset.sum_filter,hdiv]
     have hg d (hd : d ∈ n.divisors) : g d=f d-f X :=
-      if_pos ((Nat.le_of_dvd (by omega) (Nat.dvd_of_mem_divisors hd)).trans hx.2)
+      ite_eq_left ((Nat.le_of_dvd (by omega) (Nat.dvd_of_mem_divisors hd)).trans hx.2)
     have hm : (∑ d ∈ n.divisors, (μ d : ℝ))=0 := by
       exact_mod_cast ZetaRieszPrimeFourier.sum_moebius_eq_zero (by omega : n ≠ 1)
     simp_rw [Finset.sum_congr rfl (fun d hd => congrArg (fun z : ℝ => z*(μ d : ℝ)) (hg d hd))]
@@ -175,7 +175,7 @@ private theorem exists_raw_mean :
         apply Finset.sum_congr rfl
         intro k hk
         have hx := Finset.mem_Ico.mp hk
-        simp only [g,if_pos (by omega : k ≤ X),if_pos (by omega : k+1 ≤ X)]
+        simp only [g,ite_eq_left (by omega : k ≤ X),ite_eq_left (by omega : k+1 ≤ X)]
         ring
       _ = _ := by
         apply Finset.sum_subset (fun k hk => Finset.mem_Icc.mpr
@@ -367,7 +367,7 @@ theorem exists_whole_difference_bounds :
     apply Finset.sum_congr rfl
     intro m hm
     have hmem : baseCofactor m ∈ S := Finset.mem_image.mpr ⟨m,hm,rfl⟩
-    simp only [W,ite_mul,zero_mul,Finset.sum_ite_eq,hmem,if_true,F]
+    simp only [W,ite_mul,zero_mul,Finset.sum_ite_eq,hmem,ite_true,F]
     rw [atom_pulse (hB m hm).1 (hB m hm).2]
     ring
   rw [he] at hb

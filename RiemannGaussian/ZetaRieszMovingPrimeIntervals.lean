@@ -238,12 +238,12 @@ theorem exists_literal_moving_bounds :
   let B' := fun n j => if hn : n ∈ S then B n hn j else 0
   have hcoef' n (hn : n ∈ S) j (hj : j ≤ N+1) :
       0 ≤ B' n j ∧ B' n j ≤ ((N+1).choose j : ℝ)*log n^(N+1-j) := by
-    simpa only [B',dif_pos hn] using hcoef n hn j hj
+    simpa only [B',dite_eq_left hn] using hcoef n hn j hj
   have hid' n (hn : n ∈ S) i (hi : i ∈ Finset.Ico (lo n) (hi n)) p (hp : p ∈ P i) :
       (1-boundedShare A N (p*n))*log (p*n : ℕ)^(N+1) =
         ∑ j ∈ Finset.range (N+2), B' n j*log p^j := by
     have hp' := hprime n hn i hi p hp
-    simpa only [B',dif_pos hn] using hid n hn p hp'.1 hp'.2.1 hp'.2.2
+    simpa only [B',dite_eq_left hn] using hid n hn p hp'.1 hp'.2.1 hp'.2.2
   refine ⟨B',hcoef',hid',?_⟩
   let w := fun j (n : ℕ) => exp (-log n/2)*B' n j/(n : ℝ)
   have hi' n (hn : n ∈ S) :
@@ -364,16 +364,16 @@ theorem exists_literal_moving_family_bounds :
   let B' := fun i n j => if hi : i ∈ I then B i hi n j else 0
   refine ⟨B',?_,?_,?_⟩
   · intro i hi n hn j hj
-    simpa only [B',dif_pos hi] using hcoef i hi n hn j hj
+    simpa only [B',dite_eq_left hi] using hcoef i hi n hn j hj
   · intro i hi n hn t ht p hp'
-    simpa only [B',dif_pos hi] using hid i hi n hn t ht p hp'
+    simpa only [B',dite_eq_left hi] using hid i hi n hn t ht p hp'
   · let J := fun i => (∑ n ∈ S i, ∑ t ∈ Finset.Ico (lo i n) (hi i n), ∑ p ∈ P i t,
         residualCoefficient (A i) (L i) (N i) (p*n)*
           zetaPrimeLogKernel (N i) (3/2+Complex.I*y i) (p*n)).re
     have hbi i (hI : i ∈ I) :
         -retainedMovingCost E (P i) (S i) (B' i) (N i) (X i) (R i) (b i) (y i) (L i) ≤ J i ∧
         J i ≤ retainedMovingCost E (P i) (S i) (B' i) (N i) (X i) (R i) (b i) (y i) (L i) := by
-      simpa only [J,B',dif_pos hI] using hb i hI
+      simpa only [J,B',dite_eq_left hI] using hb i hI
     have hl := Finset.sum_le_sum (fun i (hI : i ∈ I) => (hbi i hI).1)
     have hu := Finset.sum_le_sum (fun i (hI : i ∈ I) => (hbi i hI).2)
     rw [Finset.sum_neg_distrib] at hl

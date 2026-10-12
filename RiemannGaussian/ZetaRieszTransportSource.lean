@@ -41,7 +41,7 @@ theorem actual_band_le_transportCost (L : ℝ) (P : Polynomial ℂ) (N : ℕ) (t
   have hs : (∑ n ∈ zetaPrimeLogBand N, ZetaRieszConditionedEnergy.bandWeight L P N t n) =
       zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     unfold ZetaRieszConditionedEnergy.bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   rw [← hs]
   exact norm_sum_le_transportCost _ _ _ (prime_edges_valid es he)
 
@@ -64,7 +64,7 @@ theorem actual_band_le_supported_transport (L : ℝ) (P : Polynomial ℂ) (N : �
   have hs : (∑ n ∈ zetaPrimeLogBand N, ZetaRieszConditionedEnergy.bandWeight L P N t n) =
       zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     unfold ZetaRieszConditionedEnergy.bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   rw [← hs]
   exact norm_sum_le_transportCost _ _ _ he
 
@@ -107,7 +107,7 @@ theorem tendsto_actual_band_sub_sent (P : Polynomial ℂ) (height : ℕ → ℝ)
   have hs : (∑ n ∈ S, f n) = zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient
       (SquarefreeVaughanLogSource.length u N)) P N (height N) := by
     unfold f S ZetaRieszConditionedEnergy.bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   have hid := sum_eq_sent_add_remaining S f es hv
   rw [hs] at hid
   have hd : zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient

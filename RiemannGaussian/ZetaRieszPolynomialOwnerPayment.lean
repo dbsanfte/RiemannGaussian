@@ -222,7 +222,7 @@ at the integer level needed for the finite Euler support. -/
 theorem prime_le_largestPrime {n p : ℕ} (hp : p ∈ n.primeFactors) :
     p ≤ largestPrime n := by
   have hne : n.primeFactors.Nonempty := ⟨p,hp⟩
-  rw [largestPrime,dif_pos hne]
+  rw [largestPrime,dite_eq_left hne]
   exact Finset.le_max' _ p hp
 
 /-- The paid population is a literal subset of the current central

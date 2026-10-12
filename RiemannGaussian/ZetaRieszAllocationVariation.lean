@@ -257,7 +257,7 @@ theorem boundedShare_prime_fibre (A : Finset ℕ) (N : ℕ) {a p : ℕ}
   have hl : 0 < Real.log (p*a : ℕ) := Real.log_pos (by exact_mod_cast hn1)
   have hel (q : ℕ) (hq : q ∈ (p*a).primeFactors) : eligibleCofactor q (p*a/q) :=
     ZetaRieszMarkedSaturation.cofactor_data hsf hcount hq
-  rw [boundedShare,if_pos ⟨hsf,hn1,hnp⟩,
+  rw [boundedShare,ite_eq_left ⟨hsf,hn1,hnp⟩,
     ZetaRieszBalancedCompanion.share_eq_binomial_sum A N hsf hn1]
   have he : (∑ q ∈ (p*a).primeFactors,
       if q ∈ A ∧ eligibleCofactor q (p*a/q) then
@@ -269,7 +269,7 @@ theorem boundedShare_prime_fibre (A : Finset ℕ) (N : ℕ) {a p : ℕ}
     apply Finset.sum_congr rfl
     intro q hq
     simp only [hel q hq,and_true]
-  rw [he,hpf,Finset.sum_insert hpm,if_pos hpA,Nat.mul_div_cancel_left a hp.pos]
+  rw [he,hpf,Finset.sum_insert hpm,ite_eq_left hpA,Nat.mul_div_cancel_left a hp.pos]
   congr 1
   rw [Finset.sum_filter]
   apply Finset.sum_congr rfl

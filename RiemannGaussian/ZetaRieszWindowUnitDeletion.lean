@@ -62,7 +62,7 @@ theorem unit_primeWindowAtom_eq_zero (L : ℝ) (p q : ℕ → ℕ) (n : ℕ)
     intro h
     linarith [hv.2, h.1]
   simp only [primeWindowLower, primeWindowUpper, Nat.cast_one, Real.log_one, sub_zero,
-    intervalAtom, indicator_apply, mem_Ioo, if_neg hnot]
+    intervalAtom, indicator_apply, mem_Ioo, ite_eq_right hnot]
 
 /-- The unit divisor is independently absent for every actual central
 atom with at least four prime factors. Prime selection, ordering and the

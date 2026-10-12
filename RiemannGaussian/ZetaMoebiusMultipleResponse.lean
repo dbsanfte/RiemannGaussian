@@ -50,7 +50,7 @@ theorem zetaMoebiusLogTailCoefficient_eq_neg_prefix (D : ℕ) {n : ℕ}
         intro d hd
         rw [log_nat_quotient (Nat.dvd_of_mem_divisors hd) hn, Complex.ofReal_sub]
       _ = 0 := by
-        rw [sum_moebius_log_affine, if_neg hn1, ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hmix]
+        rw [sum_moebius_log_affine, ite_eq_right hn1, ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hmix]
         simp
   have hsplit : zetaMoebiusLogTailCoefficient D n +
       (∑ d ∈ n.divisors, if d ≤ D then (μ d : ℂ) * (Real.log (n / d : ℕ) : ℂ) else 0) = 0 := by
@@ -82,7 +82,7 @@ theorem zetaMoebiusMultipleCoefficient_eq_prefix (D : ℕ) {P : ℕ}
   · have hn1 : n ≠ 1 := fun hn ↦ hP1 (Nat.eq_one_of_dvd_one (hn ▸ hPn))
     have hnprime : ¬IsPrimePow n := fun h ↦ hmix (h.dvd hPn hP1)
     simp only [zetaMoebiusMultipleCoefficient, Pi.neg_apply, Finset.sum_apply,
-      Pi.smul_apply, smul_eq_mul, zetaMultipleLogCoefficient, hPn, and_true, if_true]
+      Pi.smul_apply, smul_eq_mul, zetaMultipleLogCoefficient, hPn, and_true, ite_true]
     rw [zetaMoebiusLogTailCoefficient_eq_neg_prefix D hn1 hnprime]
     simp only [mul_ite, mul_zero]
   · simp [zetaMoebiusMultipleCoefficient, zetaMultipleLogCoefficient, hPn]
@@ -103,7 +103,7 @@ theorem zetaMultipleLogCoefficient_eq_dilation {d P : ℕ} (hd : 0 < d) (hP : 0 
   · have hds := Nat.lcm_dvd_iff.mp hdiv
     have hr : n / Nat.lcm d P ≠ 0 := (Nat.div_pos
       (Nat.le_of_dvd (Nat.pos_of_ne_zero hn) hdiv) hL).ne'
-    rw [zetaMultipleLogCoefficient, if_pos hds, zetaDilationCoefficient, if_pos hdiv]
+    rw [zetaMultipleLogCoefficient, ite_eq_left hds, zetaDilationCoefficient, ite_eq_left hdiv]
     have hOne : zetaCoprimeCoefficient 1 (n / Nat.lcm d P) = 1 := by
       simp [zetaCoprimeCoefficient, hr]
     rw [hOne, mul_one, zetaMultipleLogOffset]

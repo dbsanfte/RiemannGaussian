@@ -134,7 +134,7 @@ or projecting any coordinate of the phase. -/
 theorem latticeKernel_le_envelope {k : ℕ} {a : Fin k → ℝ}
     (ha : ∀ j, 0 < a j) (x : Fin k → ℝ) :
     latticeKernel a x ≤ latticeEnvelope a x := by
-  exact Finset.prod_le_prod (fun j _ => kernel_nonneg (ha j) (x j))
+  exact Finset.prod_le_prod₀ (fun j _ => kernel_nonneg (ha j) (x j))
     (fun j _ => kernel_le_tailEnvelope (ha j) (x j))
 
 /-- A finite explicit exponential envelope on the complete attainable

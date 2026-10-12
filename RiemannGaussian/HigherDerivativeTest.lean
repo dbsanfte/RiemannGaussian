@@ -38,12 +38,12 @@ theorem bound (κ : Cutoffs) (k L : ℕ) (F : ℕ → ℝ → ℝ) (a : ℝ) (N 
     have ht := (NatPhaseDifferencing.trivial_bound (fun n ↦ F 0 (a + n)) N).trans hNLr
     rw [budget]
     by_cases hℓ1 : ℓ ≤ 1
-    · rw [if_pos ⟨hℓ, hℓ1⟩]
+    · rw [ite_eq_left ⟨hℓ, hℓ1⟩]
       apply le_min ht
       apply (SecondDerivativeTest.square_root_bound (F 0) (F 1) (F 2) a N hℓ hℓ1 hA
         (hd 0 (by omega)) (hd 1 (by omega)) hr).trans
       gcongr
-    · rw [if_neg (fun h ↦ hℓ1 h.2)]
+    · rw [ite_eq_right (fun h ↦ hℓ1 h.2)]
       exact ht
   | succ k ih =>
     have hNLr : (N : ℝ) ≤ L := by exact_mod_cast hNL

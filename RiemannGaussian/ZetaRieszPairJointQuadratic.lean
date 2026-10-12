@@ -158,7 +158,7 @@ theorem norm_finiteSquare_le (A : Finset ℕ) (hA : ∀ p∈A,p.Prime) (N : ℕ)
     _ ≤ ∑ p∈A,(4/3 : ℝ)^N*ZetaPrimeNonlinearTail.squareLogWeight (3/4) p := by
       apply Finset.sum_le_sum
       intro p hp
-      simpa only [squareTerm,if_pos (hA p hp)] using norm_squareTerm_le N y p
+      simpa only [squareTerm,ite_eq_left (hA p hp)] using norm_squareTerm_le N y p
     _ = (4/3 : ℝ)^N*∑ p∈A,ZetaPrimeNonlinearTail.squareLogWeight (3/4) p := by
       rw [Finset.mul_sum]
     _ ≤ _ := mul_le_mul_of_nonneg_left

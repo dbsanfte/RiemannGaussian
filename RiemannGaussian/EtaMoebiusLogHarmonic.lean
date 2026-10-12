@@ -53,7 +53,7 @@ theorem pairedEtaMoebiusLogHarmonic_eq_log_average {M : ℕ} (hM : 1 < M) :
       ← Finset.sum_sub_distrib]
     apply Finset.sum_congr rfl
     intro n hn
-    simp only [pairedEtaMoebiusTrialLogWeight, if_pos hM]
+    simp only [pairedEtaMoebiusTrialLogWeight, ite_eq_left hM]
     ring
   rw [hsum, hab]
   simp_rw [mul_comm (Real.log (_ + 1 : ℝ) - Real.log (_ : ℝ))]
@@ -83,9 +83,9 @@ theorem abs_pairedEtaMoebiusLogHarmonic_le {M N : ℕ} (hM : 1 < M) (hNM : N ≤
         (if n < N then |moebiusHarmonicPrefix n| *
           (Real.log (n + 1 : ℝ) - Real.log (n : ℝ)) else 0) := by
     by_cases hn : n < N
-    · rw [if_pos hn]
+    · rw [ite_eq_left hn]
       linarith [mul_nonneg he (log_step_nonneg n)]
-    · rw [if_neg hn, add_zero]
+    · rw [ite_eq_right hn, add_zero]
       exact mul_le_mul_of_nonneg_right (hH n (by omega)) (log_step_nonneg n)
   have hs := Finset.sum_le_sum (s := Finset.range M) (fun n _ ↦ hpoint n)
   rw [Finset.sum_add_distrib, ← Finset.mul_sum, sum_log_steps] at hs

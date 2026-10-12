@@ -193,7 +193,7 @@ theorem known_totient_divisor_recovers {p q t : ℕ} (hp : 1<p) (hq : 1<q)
   have hc := sumCandidate_of_sum hpq (sumSignal_eq_sum hp hq ht hs)
   have hg : (p*q).gcd p=p := Nat.gcd_eq_right (dvd_mul_right p q)
   unfold recoverKnownOrder
-  rw [hc,checkedSignal,hg,if_pos]
+  rw [hc,checkedSignal,hg,ite_eq_left]
   exact ⟨hp,by nlinarith⟩
 
 /-- Search only the public quarter-centre window, preserving offset

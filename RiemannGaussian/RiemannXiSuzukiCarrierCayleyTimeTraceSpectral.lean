@@ -131,10 +131,10 @@ theorem suzukiXiCarrierCayleyUpperTimeTraceWindow_eq_screwTrace_add_negI
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     rw [suzukiXiCarrierCayleyTimeCoefficient_eq_screwTrace_add_negI]
     ring
-  · simp only [if_neg hupper, mul_zero, add_zero]
+  · simp only [ite_eq_right hupper, mul_zero, add_zero]
 
 /-- The finite lower Cayley trace is the normalized sum of its lower screw
 trace and twice its lower restricted `P_t(-i)` window. -/
@@ -155,10 +155,10 @@ theorem suzukiXiCarrierCayleyLowerTimeTraceWindow_eq_screwTrace_add_negI
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     rw [suzukiXiCarrierCayleyTimeCoefficient_eq_screwTrace_add_negI]
     ring
-  · simp only [if_neg hlower, mul_zero, add_zero]
+  · simp only [ite_eq_right hlower, mul_zero, add_zero]
 
 /-- Functional-equation reflection changes an unregularized screw-trace
 summand by time reversal and one minus sign. -/
@@ -254,7 +254,7 @@ theorem suzukiXiLowerScrewTraceWindow_eq_neg_upper
       intro rho _hrho
       by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
       · simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
-          neg_im, neg_lt_zero, if_pos hupper]
+          neg_im, neg_lt_zero, ite_eq_left hupper]
         rw [zetaSuzukiSpectralScrewTraceSummand_functionalPartner]
       · have hnotLower :
             ¬(zetaSpectralCoordinate
@@ -262,7 +262,7 @@ theorem suzukiXiLowerScrewTraceWindow_eq_neg_upper
           simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
             neg_im, neg_lt_zero]
           exact hupper
-        simp only [if_neg hnotLower, if_neg hupper, neg_zero]
+        simp only [ite_eq_right hnotLower, ite_eq_right hupper, neg_zero]
     _ = -(∑ rho ∈ spectralZetaZeroWindow T,
           if 0 < (zetaSpectralCoordinate rho.1).im then
             zetaSuzukiSpectralScrewTraceSummand (-t) rho
@@ -303,7 +303,7 @@ theorem suzukiXiUpperRestrictedSpectralPWindow_negI_eq_lower_atI
       intro rho _hrho
       by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
       · simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
-          neg_im, neg_pos, if_pos hlower]
+          neg_im, neg_pos, ite_eq_left hlower]
         rw [zetaSuzukiSpectralPSummand_negI_functionalPartner]
       · have hnotUpper :
             ¬0 < (zetaSpectralCoordinate
@@ -311,7 +311,7 @@ theorem suzukiXiUpperRestrictedSpectralPWindow_negI_eq_lower_atI
           simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
             neg_im, neg_pos]
           exact hlower
-        simp only [if_neg hnotUpper, if_neg hlower]
+        simp only [ite_eq_right hnotUpper, ite_eq_right hlower]
 
 /-- The lower restricted `P_t(-i)` window is exactly the reflected upper
 restricted window at the safe point `i`. -/
@@ -347,7 +347,7 @@ theorem suzukiXiLowerRestrictedSpectralPWindow_negI_eq_upper_atI
       intro rho _hrho
       by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
       · simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
-          neg_im, neg_lt_zero, if_pos hupper]
+          neg_im, neg_lt_zero, ite_eq_left hupper]
         rw [zetaSuzukiSpectralPSummand_negI_functionalPartner]
       · have hnotLower :
             ¬(zetaSpectralCoordinate
@@ -355,7 +355,7 @@ theorem suzukiXiLowerRestrictedSpectralPWindow_negI_eq_upper_atI
           simp only [NontrivialZetaZero.spectralCoordinate_functionalPartner,
             neg_im, neg_lt_zero]
           exact hupper
-        simp only [if_neg hnotLower, if_neg hupper]
+        simp only [ite_eq_right hnotLower, ite_eq_right hupper]
 
 /-- The upper finite Cayley trace uses only an upper screw trace and a lower
 restricted `P` window at the safe point `i`. -/

@@ -119,22 +119,22 @@ theorem pairCost_real_phases (a b x y : ℝ) :
   · rcases lt_trichotomy b 0 with hb | hb | hb
     · rw [ray_real_neg ha, ray_real_neg hb, neg_one_mul, neg_one_mul,
         ← neg_add, norm_neg, ZetaRieszOppositePrimes.norm_unitPhase_add_eq]
-      rw [signedChord, if_pos (mul_nonneg_of_nonpos_of_nonpos ha.le hb.le)]
+      rw [signedChord, ite_eq_left (mul_nonneg_of_nonpos_of_nonpos ha.le hb.le)]
     · simp [hb, ray, signedChord]
     · rw [ray_real_neg ha, ray_real_pos hb, neg_one_mul, one_mul]
       have he : -ZetaArithmeticBandCorrelation.unitPhase x + ZetaArithmeticBandCorrelation.unitPhase y =
           -(ZetaArithmeticBandCorrelation.unitPhase x - ZetaArithmeticBandCorrelation.unitPhase y) := by ring
       rw [he, norm_neg, ZetaRieszReplacementPhase.norm_unitPhase_sub_eq,
-        signedChord, if_neg (not_le.mpr (mul_neg_of_neg_of_pos ha hb))]
+        signedChord, ite_eq_right (not_le.mpr (mul_neg_of_neg_of_pos ha hb))]
   · simp [ha, ray, signedChord]
   · rcases lt_trichotomy b 0 with hb | hb | hb
     · rw [ray_real_pos ha, ray_real_neg hb, one_mul, neg_one_mul, ← sub_eq_add_neg,
         ZetaRieszReplacementPhase.norm_unitPhase_sub_eq,
-        signedChord, if_neg (not_le.mpr (mul_neg_of_pos_of_neg ha hb))]
+        signedChord, ite_eq_right (not_le.mpr (mul_neg_of_pos_of_neg ha hb))]
     · simp [hb, ray, signedChord]
     · rw [ray_real_pos ha, ray_real_pos hb, one_mul, one_mul,
         ZetaRieszOppositePrimes.norm_unitPhase_add_eq,
-        signedChord, if_pos (mul_nonneg ha.le hb.le)]
+        signedChord, ite_eq_left (mul_nonneg ha.le hb.le)]
 
 /-- The literal unfiltered zero-height weight, including the original
 support, Riesz sign and positive factorial envelope. -/

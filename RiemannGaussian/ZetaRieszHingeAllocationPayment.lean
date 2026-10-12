@@ -71,7 +71,7 @@ theorem hinge_all_primes_log_le_sixth {u : ℝ} {N K n e : ℕ}
   have hP := hinge_owner_log_le hcore hs he hhinge hgap hL
   have hne : n.primeFactors.Nonempty := ⟨q,hq⟩
   have hm : n.primeFactors.max' hne=largestPrime n := by
-    simp only [largestPrime,dif_pos hne]
+    simp only [largestPrime,dite_eq_left hne]
   have hqP : log q ≤ log (largestPrime n) :=
     log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hq).pos)
       (by exact_mod_cast (Finset.le_max' _ q hq).trans_eq hm)
@@ -93,7 +93,7 @@ theorem hinge_count_ge_seven {u : ℝ} {N K n e : ℕ}
   have hc := ZetaRieszJointPrimeEnergy.core_count (Finset.mem_filter.mp hn).1
   have hne : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
   have hm : n.primeFactors.max' hne=largestPrime n := by
-    simp only [largestPrime,dif_pos hne]
+    simp only [largestPrime,dite_eq_left hne]
   have hlog : log n ≤ (n.primeFactors.card : ℝ)*log (largestPrime n) := by
     calc
       _ = ∑ q ∈ n.primeFactors, log q := CoprimeEulerPhase.squarefree_log_eq_prime_sum hs
@@ -171,10 +171,10 @@ theorem owner_share_le (A : Finset ℕ) (N : ℕ) {n p : ℕ}
     (hp : p ∈ n.primeFactors) (hbal : log p ≤ log n/6) :
     boundedShare (A ∩ {p}) N n ≤ exp (-(N : ℝ)/8) := by
   by_cases hs : Squarefree n ∧ 1<n ∧ ¬n.Prime
-  · rw [boundedShare,if_pos hs,share_eq_binomial_sum _ N hs.1 hs.2.1]
+  · rw [boundedShare,ite_eq_left hs,share_eq_binomial_sum _ N hs.1 hs.2.1]
     rw [Finset.sum_eq_single p]
     · by_cases hel : p ∈ A ∩ {p} ∧ eligibleCofactor p (n/p)
-      · rw [if_pos hel]
+      · rw [ite_eq_left hel]
         have hpp := Nat.prime_of_mem_primeFactors hp
         have hlog : log (n/p : ℕ)=log n-log p := by
           rw [Nat.cast_div (Nat.dvd_of_mem_primeFactors hp)
@@ -188,13 +188,13 @@ theorem owner_share_le (A : Finset ℕ) (N : ℕ) {n p : ℕ}
         · apply (div_le_one hln).mpr
           rw [hlog]
           linarith [log_natCast_nonneg p]
-      · rw [if_neg hel]
+      · rw [ite_eq_right hel]
         exact (exp_pos _).le
     · intro q _ hqp
       simp [Finset.mem_inter,Finset.mem_singleton,hqp]
     · intro hnot
       exact (hnot hp).elim
-  · rw [boundedShare,if_neg hs]
+  · rw [boundedShare,ite_eq_right hs]
     exact (exp_pos _).le
 
 /-- The exact allocation correction of an arbitrary original incidence
@@ -512,7 +512,7 @@ theorem central_hinge_allocation_bound (N K : ℕ) (y : ℝ) {u : ℝ}
           ZetaRieszAnnulusJoint.intermediatePrimes u N ∩ {largestPrime n})
         (SquarefreeVaughanLogSource.length u N) N y (n/largestPrime n) (largestPrime n))*
           (μ db.2 : ℂ)*(pairHinge (SquarefreeVaughanLogSource.length u N) (largestPrime n) db.2 : ℂ))
-    (by intro n _ hnot; simp only [if_neg hnot,sub_self,zero_mul,Finset.sum_const_zero])
+    (by intro n _ hnot; simp only [ite_eq_right hnot,sub_self,zero_mul,Finset.sum_const_zero])
   rw [← heq]
   calc
     _ = ‖(u : ℂ)^(N+1)*∑ n ∈ hingeLabels u N K,
@@ -525,7 +525,7 @@ theorem central_hinge_allocation_bound (N K : ℕ) (y : ℝ) {u : ℝ}
       apply congrArg (fun z : ℂ => ‖(u : ℂ)^(N+1)*z‖)
       apply Finset.sum_congr rfl
       intro n hn
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
     _ ≤ _ := retained_hinge_allocation_bound N K y hu hU hL
 
 /-- A DIRECT two-sided inequality for the authoritative remaining floor

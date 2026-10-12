@@ -116,8 +116,8 @@ theorem post_hinge_active {X k : ℕ} (hk : 0 < k) (hkX : k < X)
   apply Finset.mem_filter.mpr
   refine ⟨Finset.mem_Icc.mpr ⟨hk,le_of_lt hkX⟩,?_⟩
   simp only [correctedProfile,zero_mul,add_zero,
-    ZetaRieszCenteredPrimeEnergy.centeredProfile,if_pos (le_of_lt hkX),
-    if_pos hnext,one_mul,max_eq_left (sub_nonpos.mpr hL),
+    ZetaRieszCenteredPrimeEnergy.centeredProfile,ite_eq_left (le_of_lt hkX),
+    ite_eq_left hnext,one_mul,max_eq_left (sub_nonpos.mpr hL),
     max_eq_left (sub_nonpos.mpr (hL.trans hlog.le)),zero_add]
   linarith
 

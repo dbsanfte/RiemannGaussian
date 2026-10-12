@@ -359,7 +359,7 @@ private theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : �
       apply Finset.sum_le_sum
       intro p hp
       by_cases hel : p ∈ A ∧ eligibleCofactor p (n/p)
-      · rw [if_pos hel]
+      · rw [ite_eq_left hel]
         have hpp := Nat.prime_of_mem_primeFactors hp
         have hpd := Nat.dvd_of_mem_primeFactors hp
         have hlog : Real.log (n/p:ℕ) = Real.log n-Real.log p := by
@@ -373,7 +373,7 @@ private theorem share_small_of_selected_primes_interior (A : Finset ℕ) (N : �
         · apply (div_le_one hln).mpr
           rw [hlog]
           linarith [Real.log_natCast_nonneg p]
-      · rw [if_neg hel]
+      · rw [ite_eq_right hel]
         exact (Real.exp_pos _).le
     _ = _ := by simp
 
@@ -391,10 +391,10 @@ private theorem norm_assigned_interior_le (A : Finset ℕ) {L : ℝ} (hL : 0 < L
     have hshare : allocationShare A N n ≤ 4*((N : ℝ)+1)*Real.exp (-(N : ℝ)/35000) := by
       nlinarith [Real.exp_pos (-(N : ℝ)/35000)]
     rw [assignedCoefficient,norm_mul,Complex.norm_real,Real.norm_eq_abs,
-      abs_of_nonneg (boundedShare_bounds A N n).1,boundedShare,if_pos hn]
+      abs_of_nonneg (boundedShare_bounds A N n).1,boundedShare,ite_eq_left hn]
     exact mul_le_mul hshare (SquarefreeVaughanLogSource.norm_coefficient_le hL n)
       (norm_nonneg _) (by positivity)
-  · simp only [assignedCoefficient,boundedShare,if_neg hn,Complex.ofReal_zero,zero_mul,norm_zero]
+  · simp only [assignedCoefficient,boundedShare,ite_eq_right hn,Complex.ofReal_zero,zero_mul,norm_zero]
     exact mul_nonneg (by positivity) (zetaMoebiusLogMajorant_nonneg n)
 
 /-- The original assigned sum is independently paid up to 59% prime

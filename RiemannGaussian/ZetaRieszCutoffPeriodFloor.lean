@@ -195,7 +195,7 @@ def correctedProfile (X : ℕ) (L linear quadratic : ℝ) : ℕ → ℝ :=
 No roughness, count, phase or funding assumption enters this identity. -/
 theorem correctedProfile_flat {X k : ℕ} (hk : k ≤ X) {L : ℝ} (hL : log k ≤ L) :
     correctedProfile X L 1 0 k = L-(max 0 (L-log X)+log X) := by
-  simp only [correctedProfile,zero_mul,add_zero,centeredProfile,if_pos hk,one_mul,
+  simp only [correctedProfile,zero_mul,add_zero,centeredProfile,ite_eq_left hk,one_mul,
     max_eq_right (sub_nonneg.mpr hL)]
   ring
 

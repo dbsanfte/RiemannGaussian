@@ -207,7 +207,7 @@ theorem numerical_face_budget {t b : ℝ} (ht : 0 < t) (hb : 0 < b)
   have hw : b/t ≤ (1/249600 : ℝ) := (div_le_iff₀ ht).mpr (by linarith)
   have hscaled : (⌈t/(3*b)⌉₊ : ℝ)*(b/t) ≤ 1/3+b/t := by
     have h := mul_le_mul_of_nonneg_right hceil hw0
-    convert h using 1 <;> first | rfl | field_simp
+    convert h using 1 ; first | rfl | field_simp
   calc
     _ = 1600*((⌈t/(3*b)⌉₊ : ℝ)*(b/t))^2*(b/t) := by ring
     _ ≤ 1600*(1/3+b/t)^2*(b/t) := by gcongr

@@ -97,7 +97,7 @@ def rowPhase {N : ℕ} (window : SemiprimeTotientWindow.Source N) (B m i : ℕ) 
 theorem row_rephase {N : ℕ} (window : SemiprimeTotientWindow.Source N) (B m i : ℕ) :
     rowValue window B i=(rowPhase window B m i : ZMod N)*normalizedRow window B m i := by
   by_cases hi : i<2*B
-  · simp only [rowValue,rowPhase,normalizedRow,hi,if_true,normProduct_exact]
+  · simp only [rowValue,rowPhase,normalizedRow,hi,ite_true,normProduct_exact]
     exact normalizedInterval_rephase _ _ _ _
   · simp [rowValue,rowPhase,normalizedRow,hi]
 
@@ -442,7 +442,7 @@ theorem factorFromAnswer_inr_exact {N B i : ℕ} (window : SemiprimeTotientWindo
     (hi : i<2*B) :
     factorFromAnswer N (2*B) (some (.inr i)) (treeLateJet window B (some (.inr i)))=
       recoverInterval window.active (indexedPoint window.target i) (normLength B) (2*B) := by
-  simp only [factorFromAnswer,treeLateJet,hi,if_true,Option.bind_some]
+  simp only [factorFromAnswer,treeLateJet,hi,ite_true,Option.bind_some]
   rw [exactSharedJet_exact _ _ _ (normWidth_pos B 1),recoverNormJet_exact]
 
 /-- On the remaining core, the concrete forest either already factors
@@ -460,7 +460,7 @@ theorem bulk_norm_complete {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
   obtain ⟨hi,hd,hne⟩ := scanCache_sound _ hs
   have hni : (p*q).gcd (normProduct (buildSource h B) B i).val≠1 := by omega
   have hir : rowValue (buildSource h B) B i=normProduct (buildSource h B) B i := by
-    simp only [rowValue,hi,if_true]
+    simp only [rowValue,hi,ite_true]
   have hispan : i<0+forestSpan 0 (publicDepth B) := by
     have hcover := publicDepth_covers (by omega : 0<B)
     omega
@@ -472,13 +472,13 @@ theorem bulk_norm_complete {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
   cases answer with
   | inl e =>
     have he : 1<e ∧ e<p*q := ⟨hv.1,hv.2.1⟩
-    exact ⟨.inl e,e,hans,by dsimp only [factorFromAnswer]; rw [if_pos he]⟩
+    exact ⟨.inl e,e,hans,by dsimp only [factorFromAnswer]; rw [ite_eq_left he]⟩
   | inr j =>
     obtain ⟨_,_,hz,hfirst⟩ := hv
     have hji : j ≤ i := hfirst i (by omega) hispan (by rwa [hir])
     have hj : j<2*B := by omega
     have hjz : normProduct (buildSource h B) B j=0 := by
-      simpa only [rowValue,hj,if_true] using hz
+      simpa only [rowValue,hj,ite_true] using hz
     have hnj : (p*q).gcd (normProduct (buildSource h B) B j).val≠1 := by
       simp only [hjz,ZMod.val_zero,Nat.gcd_zero_right]
       omega

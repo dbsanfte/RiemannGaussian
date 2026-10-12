@@ -98,7 +98,7 @@ theorem logDeriv_localZetaPoleRemoved_eq_residual_sub_canonical_sum
     dsimp [P]
     exact logDeriv_finprod_zpow_apply_of_finite hdFinite
       (fun i hi ↦ hfactorNe hi) (fun i hi ↦ hfactorDiff hi)
-  have hmul := logDeriv_mul (f := P) (g := f) z hPne hf
+  have hmul := logDeriv_fun_mul (f := P) (g := f) z hPne hf
     hPAnalytic.differentiableAt (differentiable_localZetaPoleRemoved y z)
   have hlog : logDeriv g z = logDeriv P z + logDeriv f z := by
     rw [(logDeriv_congr_nhds hfactorEq).self_of_nhds]

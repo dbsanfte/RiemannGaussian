@@ -65,7 +65,7 @@ theorem low_degree_reserve {n k : ℕ} (hn : 48 ≤ n) (hk : 12 ≤ k) (hk' : k 
     apply one_div_le_one_div_of_le (by norm_num)
     nlinarith
   have hs : (1 / (6400 * 48 ^ 2 : ℝ)) ≤ VinogradovShortResonance.saving k / 4 := by
-    rw [VinogradovShortResonance.saving, if_neg (by omega : ¬48 ≤ k), div_div]
+    rw [VinogradovShortResonance.saving, ite_eq_right (by omega : ¬48 ≤ k), div_div]
     apply one_div_le_one_div_of_le (by positivity)
     nlinarith [sq_nonneg ((k : ℝ) - 48)]
   norm_num at hd hs ⊢

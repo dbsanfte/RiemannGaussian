@@ -27,10 +27,10 @@ def hingeRemainder (a x y : ℝ) : ℝ :=
 theorem hingeRemainder_nonneg (a x y : ℝ) : 0 ≤ hingeRemainder a x y := by
   unfold hingeRemainder
   by_cases hx : x < a
-  · rw [if_pos hx, max_eq_right (by linarith : 0 ≤ a - x), mul_one]
+  · rw [ite_eq_left hx, max_eq_right (by linarith : 0 ≤ a - x), mul_one]
     have h := le_max_right 0 (a - y)
     linarith
-  · rw [if_neg hx, max_eq_left (by linarith : a - x ≤ 0), mul_zero, sub_zero, add_zero]
+  · rw [ite_eq_right hx, max_eq_left (by linarith : a - x ≤ 0), mul_zero, sub_zero, add_zero]
     exact le_max_left _ _
 
 /-- No boundary remainder occurs without a change in the active hinge. -/
@@ -39,11 +39,11 @@ theorem hingeRemainder_eq_zero {a x y : ℝ} (h : (x < a ↔ y < a)) :
   unfold hingeRemainder
   by_cases hx : x < a
   · have hy := h.mp hx
-    rw [if_pos hx, max_eq_right (by linarith : 0 ≤ a - x),
+    rw [ite_eq_left hx, max_eq_right (by linarith : 0 ≤ a - x),
       max_eq_right (by linarith : 0 ≤ a - y), mul_one]
     ring
   · have hy : ¬ y < a := fun hy => hx (h.mpr hy)
-    rw [if_neg hx, max_eq_left (by linarith : a - x ≤ 0),
+    rw [ite_eq_right hx, max_eq_left (by linarith : a - x ≤ 0),
       max_eq_left (by linarith : a - y ≤ 0)]
     ring
 
@@ -51,17 +51,17 @@ theorem hingeRemainder_eq_zero {a x y : ℝ} (h : (x < a ↔ y < a)) :
 theorem hingeRemainder_le_gap (a x y : ℝ) : hingeRemainder a x y ≤ |y - x| := by
   unfold hingeRemainder
   by_cases hx : x < a <;> by_cases hy : y < a
-  · rw [if_pos hx, max_eq_right (by linarith : 0 ≤ a - x),
+  · rw [ite_eq_left hx, max_eq_right (by linarith : 0 ≤ a - x),
       max_eq_right (by linarith : 0 ≤ a - y), mul_one]
     have := abs_nonneg (y - x)
     linarith
-  · rw [if_pos hx, max_eq_right (by linarith : 0 ≤ a - x),
+  · rw [ite_eq_left hx, max_eq_right (by linarith : 0 ≤ a - x),
       max_eq_left (by linarith : a - y ≤ 0), mul_one, abs_of_nonneg (by linarith : 0 ≤ y - x)]
     linarith
-  · rw [if_neg hx, max_eq_left (by linarith : a - x ≤ 0),
+  · rw [ite_eq_right hx, max_eq_left (by linarith : a - x ≤ 0),
       max_eq_right (by linarith : 0 ≤ a - y), mul_zero, abs_of_nonpos (by linarith : y - x ≤ 0)]
     linarith
-  · rw [if_neg hx, max_eq_left (by linarith : a - x ≤ 0),
+  · rw [ite_eq_right hx, max_eq_left (by linarith : a - x ≤ 0),
       max_eq_left (by linarith : a - y ≤ 0), mul_zero]
     have := abs_nonneg (y - x)
     linarith
@@ -86,8 +86,8 @@ theorem boundaryCorrection_eq_crossed (L : ℝ) (n : ℕ) (x y : ℝ) :
   apply Finset.sum_congr rfl
   intro d hd
   by_cases h : x < L - Real.log d ↔ y < L - Real.log d
-  · simp only [h, not_true_eq_false, if_false, hingeRemainder_eq_zero h, mul_zero]
-  · rw [if_pos h]
+  · simp only [h, not_true_eq_false, ite_false, hingeRemainder_eq_zero h, mul_zero]
+  · rw [ite_eq_left h]
 
 /-- A local absolute relaxation charges only crossed divisors and the
 actual gap; the stronger preceding identity retains their Mobius signs. -/

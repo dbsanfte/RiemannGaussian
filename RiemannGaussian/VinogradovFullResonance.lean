@@ -46,10 +46,10 @@ theorem exists_full_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
   have he (j : Fin k) : e j + (if 2 * k < 3 * (j.val + 1) then 2 * (k - (j.val + 1)) else 0) =
       2 * (j.val + 1) := by
     by_cases hj : 2 * k < 3 * (j.val + 1)
-    · simp only [e, if_pos hj]
+    · simp only [e, ite_eq_left hj]
       have hq := j.isLt
       omega
-    · simp only [e, if_neg hj, add_zero]
+    · simp only [e, ite_eq_right hj, add_zero]
   have hEsum : (∑ j : Fin k, e j) + windowSaving k = k * (k + 1) := by
     calc
       _ = ∑ j : Fin k, (e j + (if 2 * k < 3 * (j.val + 1) then 2 * (k - (j.val + 1)) else 0)) := by
@@ -69,7 +69,7 @@ theorem exists_full_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
   apply hbound.trans
   calc
     _ ≤ ∏ j : Fin k, W * (M : ℝ) ^ (e j) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro j _
         have hp : 0 ≤ 2 / ((a j) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j))) :=
           div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j).le _)
@@ -90,19 +90,19 @@ theorem exists_full_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
           dsimp only [F]
           linarith only [hpos]
         by_cases hj : 2 * k < 3 * (j.val + 1)
-        · rw [if_pos hj]
+        · rw [ite_eq_left hj]
           have hp : 0 ≤ 2 / ((a j) ^ (1 / 2 : ℝ) * (1 - Real.exp (-Real.pi / a j))) :=
             div_nonneg (by norm_num) (mul_nonneg (Real.rpow_nonneg (ha j).le _)
               (tail_denominator_pos (ha j)).le)
           apply (mul_le_mul_of_nonneg_left (min_le_right _ _) hp).trans
           apply (selected_coordinate_power_le k r hr hMr j hj.le).trans
           dsimp only [e, W]
-          rw [if_pos hj]
+          rw [ite_eq_left hj]
           exact mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hsmall hG.le) (by positivity)
-        · rw [if_neg hj]
+        · rw [ite_eq_right hj]
           apply (full_coordinate_power_le r s hr hMr (j.val + 1)).trans
           dsimp only [e, W]
-          rw [if_neg hj]
+          rw [ite_eq_right hj]
           exact mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hfull hG.le) (by positivity)
     _ = _ := by rw [Finset.prod_mul_distrib]; simp only [Finset.prod_const, Finset.card_univ,
       Fintype.card_fin, Finset.prod_pow_eq_pow_sum, hE]

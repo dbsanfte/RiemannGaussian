@@ -65,9 +65,9 @@ theorem rectangleMass_bounds (N : ℕ) {x c : ℝ}
   apply Finset.sum_le_sum
   intro j _
   by_cases hj : 40 * j ≤ 23 * N
-  · rw [if_pos hj]
+  · rw [ite_eq_left hj]
     exact mul_le_of_le_one_right (hm j) (hb j)
-  · rw [if_neg hj]
+  · rw [ite_eq_right hj]
     have he : rectangleOrders N j = ∅ := by
       apply Finset.eq_empty_iff_forall_notMem.mpr
       intro h hh

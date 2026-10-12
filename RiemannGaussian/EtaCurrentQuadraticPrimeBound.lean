@@ -85,7 +85,7 @@ theorem pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime (rho : NontrivialZ
   · have hc : pairedEtaCurrentGrowthAmplitude rho / pairedEtaCurrentHorizontalDisplacement rho ≤
         pairedEtaCurrentReturnGrowthConstant rho := by
       unfold pairedEtaCurrentReturnGrowthConstant
-      rw [if_neg hrho]
+      rw [ite_eq_right hrho]
       linarith [pairedEtaCurrentLinearHeatWeightedErrorBound_nonneg rho]
     calc
       _ ≤ (pairedEtaCurrentGrowthAmplitude rho / pairedEtaCurrentHorizontalDisplacement rho) *

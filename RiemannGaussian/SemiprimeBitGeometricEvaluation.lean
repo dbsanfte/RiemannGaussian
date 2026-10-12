@@ -223,7 +223,7 @@ theorem geometricKernelLoopBits_exact (modulus ratio power step remaining : List
       rw [hi] at ht
       rw [geometricKernelLoopBits]
       dsimp only
-      simp only [dif_pos hscan]
+      simp only [dite_eq_left hscan]
       refine ⟨ht.1,ht.2.1,?_⟩
       change (bitValue power : ZMod (bitValue modulus))::
         (geometricKernelLoopBits modulus ratio nextPower.division.remainder nextStep.division.remainder
@@ -240,7 +240,7 @@ theorem geometricKernelLoopBits_exact (modulus ratio power step remaining : List
     · have hn : n=0 := by have hz := counter_zero_of_clear hscan; omega
       rw [geometricKernelLoopBits]
       dsimp only
-      simp only [dif_neg hscan,hn,List.range_zero,List.map_nil,Nat.add_zero]
+      simp only [dite_eq_right hscan,hn,List.range_zero,List.map_nil,Nat.add_zero]
       exact ⟨hp,hs,trivial⟩
 
 /-- Every actual kernel visit is paid, output counts are exact, and
@@ -285,7 +285,7 @@ theorem geometricKernelLoopBits_cost_width {W : ℕ} {modulus : List Bool}
         nlinarith only [hscanCost,hr,hsub,hmax,hnp,hns,hW]
       rw [geometricKernelLoopBits]
       dsimp only
-      simp only [dif_pos hscan,List.length_cons]
+      simp only [dite_eq_left hscan,List.length_cons]
       refine ⟨?_,ht.2.1,ht.2.2.1,?_,?_,?_⟩
       · change (nonzeroBits remaining).clock+bitCost decrement.result+nextPower.clock+nextStep.clock+
           (geometricKernelLoopBits modulus ratio nextPower.division.remainder nextStep.division.remainder
@@ -306,7 +306,7 @@ theorem geometricKernelLoopBits_cost_width {W : ℕ} {modulus : List Bool}
     · have hn : n=0 := by have hz := counter_zero_of_clear hscan; omega
       rw [geometricKernelLoopBits]
       dsimp only
-      simp only [dif_neg hscan,hn,List.length_nil]
+      simp only [dite_eq_right hscan,hn,List.length_nil]
       refine ⟨?_,hp,hs,trivial,trivial,?_⟩
       · simp only [Nat.zero_add,Nat.one_mul]
         nlinarith only [hscanCost,hr,hW]
@@ -787,7 +787,7 @@ theorem geometricEvaluationPreparationBits_exact {modulus : List Bool} (hN : 0<b
       (((a^bitValue degree)⁻¹ : (ZMod (bitValue modulus))ˣ) : ZMod (bitValue modulus)) := hinverse.2
   have hcount : bitValue count.bits=bitValue degree+bitValue evaluations := by
     have hh := addBits_correct degree evaluations false
-    simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using hh
+    simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using hh
   have hstartPower : (bitValue one : ZMod (bitValue modulus))=(bitValue start : ZMod (bitValue modulus))^0 := by
     rw [hone,pow_zero]
   have hstartChirp : (bitValue one : ZMod (bitValue modulus))=
@@ -843,7 +843,7 @@ theorem geometricEvaluationPreparationBits_exact {modulus : List Bool} (hN : 0<b
     dsimp only
     have hgate : (isOneBits (inverseBits modulus
       (threeChannelCoefficientBits modulus alpha degree).source.initialization.power.scalar).gcd).value=true := hinverse.1
-    rw [if_pos hgate]
+    rw [ite_eq_left hgate]
   · simpa only [Nat.zero_add,hlen,hstep] using hv
   · simpa only [Nat.zero_add,hfLength,hstep] using ht
   · simpa only [Nat.zero_add,hcount,hq] using hk.2.2
@@ -947,7 +947,7 @@ theorem geometricEvaluationPreparationBits_cost_width {modulus : List Bool} (hN 
       let reversedTarget := reverseCoefficientLoopBits target.words []
       have hcount : bitValue count.bits=bitValue degree+bitValue evaluations := by
         have hh := addBits_correct degree evaluations false
-        simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] using hh
+        simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] using hh
       have hcountWidth : count.bits.length≤W+1 := (bounded_addBits hd hJ false).2
       have hcountCost := (bounded_addBits hd hJ false).1
       have hcc : ∀ word∈coefficients, word.Bounded W := by
@@ -1014,7 +1014,7 @@ theorem geometricEvaluationPreparationBits_cost_width {modulus : List Bool} (hN 
         dsimp only
         rw [hout']
         dsimp only
-        rw [if_pos hpass']
+        rw [ite_eq_left hpass']
       refine ⟨?_,?_⟩
       · rw [hclock]
         change _≤B*(40000*Q)
@@ -1025,7 +1025,7 @@ theorem geometricEvaluationPreparationBits_cost_width {modulus : List Bool} (hN 
         dsimp only at hi
         rw [hout'] at hi
         dsimp only at hi
-        rw [if_pos hpass'] at hi
+        rw [ite_eq_left hpass'] at hi
         cases hi
         exact ⟨hvl,htl,hk.2.2.2.1.trans hcount,hp.2.2.2.1,hv.2.2.2,ht.2.2.2,hk.2.2.2.2.2,hp.2.2.2.2.2⟩
     · have hpass' : ¬(isOneBits (inverseBits modulus
@@ -1036,7 +1036,7 @@ theorem geometricEvaluationPreparationBits_cost_width {modulus : List Bool} (hN 
         dsimp only
         rw [hout']
         dsimp only
-        rw [if_neg hpass']
+        rw [ite_eq_right hpass']
       refine ⟨?_,?_⟩
       · rw [hclock]
         change _≤B*(40000*Q)
@@ -1046,7 +1046,7 @@ theorem geometricEvaluationPreparationBits_cost_width {modulus : List Bool} (hN 
         dsimp only at hi
         rw [hout'] at hi
         dsimp only at hi
-        rw [if_neg hpass'] at hi
+        rw [ite_eq_right hpass'] at hi
         cases hi
 
 /-- Proof-side restoration of the three convolution outputs to the

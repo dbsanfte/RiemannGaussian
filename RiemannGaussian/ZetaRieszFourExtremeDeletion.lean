@@ -52,7 +52,7 @@ three primes at or above the physical cutoff, at every moment order. -/
 theorem surviving_extreme_count_le_three {u : ℝ} {N n : ℕ}
     (hcontact : u < Real.exp (-(1 / 2 : ℝ))) (hn : n ∈ fourResidualBand u N) :
     (extremePrimes u N n).card ≤ 3 := by
-  rw [fourResidualBand, if_pos hcontact] at hn
+  rw [fourResidualBand, ite_eq_left hcontact] at hn
   have hh := (Finset.mem_filter.mp hn).2
   omega
 
@@ -76,10 +76,10 @@ theorem tendsto_narrow_sub_fourResidual (P : Polynomial ℂ) (y : ℝ)
         zetaPrimeFilterKernel P N (3 / 2 + Complex.I * y) n)
     simp only [not_lt] at he
     dsimp only [ZetaRieszNarrowCarrier.residualResponse, fourResidualResponse, fourResidualBand]
-    rw [if_pos hcontact]
+    rw [ite_eq_left hcontact]
     rw [← he]
     ring
-  · simpa only [fourResidualResponse, fourResidualBand, if_neg hcontact,
+  · simpa only [fourResidualResponse, fourResidualBand, ite_eq_right hcontact,
       ZetaRieszNarrowCarrier.residualResponse, sub_self, mul_zero] using
       (tendsto_const_nhds : Tendsto (fun _ : ℕ => (0 : ℂ)) atTop (𝓝 0))
 

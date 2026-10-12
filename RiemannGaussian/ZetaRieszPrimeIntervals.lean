@@ -76,7 +76,7 @@ canonical largest prime. -/
 theorem largestPrime_eq_of_max {m p : ℕ} (hp : p ∈ m.primeFactors)
     (hmax : ∀ q ∈ m.primeFactors, q ≤ p) : largestPrime m = p := by
   have hm : m.primeFactors.Nonempty := ⟨p, hp⟩
-  rw [largestPrime, dif_pos hm]
+  rw [largestPrime, dite_eq_left hm]
   exact le_antisymm (Finset.max'_le _ _ _ hmax) (Finset.le_max' _ p hp)
 
 /-- Every prime above the cofactor support is the canonical owner of

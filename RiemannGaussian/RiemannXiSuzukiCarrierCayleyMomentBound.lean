@@ -102,7 +102,7 @@ theorem integral_Ioo_fourier_pi (k : ℤ) :
   · have hcoeff := congrFun
       (fourierCoeff_fourier (T := Real.pi) k) 0
     rw [fourierCoeff_eq_intervalIntegral _ _ 0] at hcoeff
-    simp only [hk, if_false]
+    simp only [hk, ite_false]
     simpa [Pi.single_apply, hk] using hcoeff
 
 /-- The exact reference moment: nonzero Cayley characters integrate to zero,
@@ -175,14 +175,14 @@ theorem orthonormal_suzukiXiCarrierCayleyNormalizedReferenceOrbit :
   rw [inner_smul_left, inner_smul_right,
     inner_suzukiXiCarrierCayleyReferenceOrbit]
   by_cases hmn : m = n
-  · simp only [hmn, if_true]
+  · simp only [hmn, ite_true]
     rw [map_inv₀]
     simp only [conj_ofReal]
     have hsqrtComplex : (Real.sqrt Real.pi : ℂ) ≠ 0 := by
       exact_mod_cast (Real.sqrt_ne_zero'.mpr Real.pi_pos)
     field_simp [hsqrtComplex]
     exact_mod_cast (Real.sq_sqrt Real.pi_pos.le).symm
-  · simp only [hmn, if_false, mul_zero]
+  · simp only [hmn, ite_false, mul_zero]
 
 /-- Finite synthesis in the normalized reference orbit. -/
 def suzukiXiCarrierCayleyNormalizedReferenceFiniteSynthesis

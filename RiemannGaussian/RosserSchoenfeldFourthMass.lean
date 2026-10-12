@@ -54,7 +54,8 @@ theorem hasSum_difference : HasSum
     (fun ρ : NontrivialZetaZero => (analyticZetaZeroMultiplicity ρ : ℝ)*difference ρ)
     (massConstant - (2 * (logDeriv riemannXi 2).re)/3) := by
   have hh := hasSum_poisson.sub (hasSum_two.div_const 3)
-  convert hh using 1 <;> first | rfl | (ext ρ; dsimp [difference]; ring)
+  convert hh using 1
+  first | rfl | (ext ρ; dsimp [difference]; ring)
 
 /-- A positive lower bound uniform across the entire critical strip. -/
 private lemma high_lower {b t : ℝ} (hb0 : 0 ≤ b) (hb1 : b ≤ 1) (ht : 0 < t) :

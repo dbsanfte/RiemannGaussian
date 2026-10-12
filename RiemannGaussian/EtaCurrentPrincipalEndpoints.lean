@@ -64,7 +64,7 @@ theorem pairedEtaCurrentPrincipalEndpoint_eq_halfStep (rho : NontrivialZetaZero)
     pairedEtaCurrentPrincipalEndpoint rho N = 2 * (pairedEtaCurrentHalfStepHeadPair rho N).re := by
   rw [pairedEtaCurrentHalfStepHeadPair_re]
   simp only [pairedEtaCurrentPrincipalEndpoint, pairedEtaCurrentPrincipalCoefficient,
-    analyticZetaZeroMultiplicity_conjugatePartner, hm, if_true]
+    analyticZetaZeroMultiplicity_conjugatePartner, hm, ite_true]
 
 /-- At a repeated zero no further approximation is needed: the actual
 Euler expression already equals the common principal endpoint term. -/
@@ -74,7 +74,7 @@ theorem pairedEtaCurrentEulerExpression_eq_principal_of_multiple (rho : Nontrivi
   have hm1 : analyticZetaZeroMultiplicity rho ≠ 1 := by omega
   rw [pairedEtaCurrentEulerExpression_eq_adjacent_endpoints rho hm N]
   simp only [pairedEtaCurrentPrincipalEndpoint, pairedEtaCurrentPrincipalCoefficient,
-    analyticZetaZeroMultiplicity_conjugatePartner, if_neg hm1]
+    analyticZetaZeroMultiplicity_conjugatePartner, ite_eq_right hm1]
   ring
 
 /-- The Euler expression has only the summable head correction left
@@ -83,7 +83,7 @@ theorem pairedEtaCurrentEulerExpression_weighted_principal_error_le (rho : Nontr
     (2 * N + 1 : ℝ) * |pairedEtaCurrentEulerExpression rho N - pairedEtaCurrentPrincipalEndpoint rho N| ≤
       4 * pairedEtaCurrentHalfStepErrorEnvelope rho N := by
   by_cases hm : analyticZetaZeroMultiplicity rho = 1
-  · rw [pairedEtaCurrentEulerExpression, if_pos hm, pairedEtaCurrentPrincipalEndpoint_eq_halfStep rho hm N]
+  · rw [pairedEtaCurrentEulerExpression, ite_eq_left hm, pairedEtaCurrentPrincipalEndpoint_eq_halfStep rho hm N]
     exact pairedEtaCurrentEulerHeadPair_weighted_halfStep_error_le rho N
   · have hm2 : 2 ≤ analyticZetaZeroMultiplicity rho := by
       have := analyticZetaZeroMultiplicity_positive rho

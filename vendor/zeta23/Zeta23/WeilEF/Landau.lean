@@ -35,7 +35,7 @@ lemma Cf_ne_zero {f : ℂ → ℂ} (hfa : AnalyticOnNhd ℂ f (Metric.closedBall
   · -- regularized value: ZeroFactor f z ≠ 0 over a nonvanishing finite product
     obtain ⟨h_ρ, _, hρ0, hZF, _⟩ := ZeroFactorization hr1 hfa hf0 hmem
     unfold Cf
-    rw [dif_pos hfinr, dif_pos hmem, hZF]
+    rw [dite_eq_left hfinr, dite_eq_left hmem, hZF]
     apply div_ne_zero hρ0
     refine Finset.prod_ne_zero_iff.mpr fun ρ hρ => ?_
     have hne : z ≠ ρ := by
@@ -44,7 +44,7 @@ lemma Cf_ne_zero {f : ℂ → ℂ} (hfa : AnalyticOnNhd ℂ f (Metric.closedBall
       exact hρ.2 h.symm
     exact pow_ne_zero _ (sub_ne_zero.mpr hne)
   · unfold Cf
-    rw [dif_pos hfinr, dif_neg hmem]
+    rw [dite_eq_left hfinr, dite_eq_right hmem]
     have hfz : f z ≠ 0 := by
       intro h
       exact hmem ⟨hz, h⟩
@@ -63,7 +63,7 @@ lemma f_eq_prod_mul_Cf {f : ℂ → ℂ} {r : ℝ} (hr1 : r < 1) (hfin : (SetOfZ
       * Cf r f z := by
   have hfinr := finiteSetOfZeros_mono hr1 hfin
   unfold Cf
-  rw [dif_pos hfinr, dif_neg hz]
+  rw [dite_eq_left hfinr, dite_eq_right hz]
   rw [mul_div_cancel₀]
   refine Finset.prod_ne_zero_iff.mpr fun ρ hρ => ?_
   have hρ' := hfinr.mem_toFinset.mp hρ
@@ -73,10 +73,10 @@ lemma f_eq_prod_mul_Cf {f : ℂ → ℂ} {r : ℝ} (hr1 : r < 1) (hfin : (SetOfZ
   exact pow_ne_zero _ (sub_ne_zero.mpr hne)
 
 /-- logDeriv of the finite zero product: `logDeriv (Π (·−ρ)^{m_ρ}) z = Σ m_ρ/(z−ρ)`
-(Mathlib's `logDeriv_prod` + `logDeriv_fun_pow`). -/
+(Mathlib's `logDeriv_fun_prod` + `logDeriv_fun_pow`). -/
 lemma logDeriv_zero_prod {s : Finset ℂ} {m : ℂ → ℕ} {z : ℂ} (hz : ∀ ρ ∈ s, z ≠ ρ) :
     logDeriv (fun w => ∏ ρ ∈ s, (w - ρ) ^ m ρ) z = ∑ ρ ∈ s, (m ρ : ℂ) / (z - ρ) := by
-  rw [logDeriv_prod (f := fun ρ w => (w - ρ) ^ m ρ)
+  rw [logDeriv_fun_prod (f := fun ρ w => (w - ρ) ^ m ρ)
     (fun ρ hρ => pow_ne_zero _ (sub_ne_zero.mpr (hz ρ hρ))) (fun ρ _ => by fun_prop)]
   refine Finset.sum_congr rfl fun ρ _ => ?_
   have hd : HasDerivAt (fun w : ℂ => w - ρ) 1 z := (hasDerivAt_id z).sub_const ρ
@@ -120,7 +120,7 @@ lemma logDeriv_split {f : ℂ → ℂ} (hfa : AnalyticOnNhd ℂ f (Metric.closed
         unfold logDeriv
         simp only [Pi.div_apply]
         rw [heq.deriv_eq, heq.eq_of_nhds]
-    _ = logDeriv P0 z + logDeriv (Cf r f) z := logDeriv_mul z hP0z hCfz hdP0 hdCf
+    _ = logDeriv P0 z + logDeriv (Cf r f) z := logDeriv_fun_mul z hP0z hCfz hdP0 hdCf
     _ = _ := by rw [hP0, logDeriv_zero_prod hzne]
 
 /-- Borel–Carathéodory bound for the regular part: with zeros divided over ‖ρ‖ ≤ 22/25 and
@@ -162,11 +162,11 @@ lemma norm_logDeriv_Cf_le {f : ℂ → ℂ} {B : ℝ}
         _ ≤ ‖w - ρ‖ := norm_sub_norm_le w ρ
     have hprod_lb : ((2/25 : ℝ)) ^ K ≤ ‖∏ ρ ∈ hfinr34.toFinset, (w - ρ) ^ analyticOrderNatAt f ρ‖ := by
       rw [norm_prod, hK, ← Finset.prod_pow_eq_pow_sum]
-      refine Finset.prod_le_prod (fun ρ _ => by positivity) (fun ρ hρ => ?_)
+      refine Finset.prod_le_prod₀ (fun ρ _ => by positivity) (fun ρ hρ => ?_)
       rw [norm_pow]
       exact pow_le_pow_left₀ (by norm_num) (hdist ρ hρ) _
     unfold Cf
-    rw [dif_pos hfinr34, dif_neg hwmem]
+    rw [dite_eq_left hfinr34, dite_eq_right hwmem]
     rw [norm_div]
     have hprod_pos : (0:ℝ) < ‖∏ ρ ∈ hfinr34.toFinset, (w - ρ) ^ analyticOrderNatAt f ρ‖ :=
       lt_of_lt_of_le (by positivity) hprod_lb
@@ -194,10 +194,10 @@ lemma norm_logDeriv_Cf_le {f : ℂ → ℂ} {B : ℝ}
     have h0mem : (0:ℂ) ∉ SetOfZeros (22/25) f := fun h => hf0' h.2
     have hfinr34 := finiteSetOfZeros_mono (by norm_num : (22/25 : ℝ) < 1) hfin
     unfold Cf
-    rw [dif_pos hfinr34, dif_neg h0mem, norm_div, hf0, norm_one]
+    rw [dite_eq_left hfinr34, dite_eq_right h0mem, norm_div, hf0, norm_one]
     rw [le_div_iff₀]
     · rw [one_mul, norm_prod]
-      refine Finset.prod_le_one (fun ρ _ => by positivity) (fun ρ hρ => ?_)
+      refine Finset.prod_le_one₀ (fun ρ _ => by positivity) (fun ρ hρ => ?_)
       have hρ' := hfinr34.mem_toFinset.mp hρ
       rw [norm_pow]
       refine pow_le_one₀ (norm_nonneg _) ?_

@@ -67,7 +67,7 @@ theorem logDeriv_regularized {c : ℂ} (hc : 1 < c.re) :
   have hd := add_one_ne_zero (s := c) (by linarith)
   have hc1 : c ≠ 1 := by intro h; rw [h] at hc; norm_num at hc
   have hp := neg_logDeriv_riemannZeta_eq_pole_sub hc1 (riemannZeta_ne_zero_of_one_le_re hc.le)
-  have h := logDeriv_div (f := riemannZeta₁) (g := fun z : ℂ => z + 1) c hn hd
+  have h := logDeriv_fun_div (f := riemannZeta₁) (g := fun z : ℂ => z + 1) c hn hd
     (differentiable_riemannZeta₁ c) (by fun_prop)
   change logDeriv regularized c = _ at h
   rw [h]

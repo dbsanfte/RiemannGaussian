@@ -256,7 +256,7 @@ theorem known_order_factor_or_progression {p q m B : ℕ} (hp : p.Prime) (hq : q
       change (p*q).gcd z.val≠1 at hnotone
       omega
     refine ⟨r, hr, hrm, (p*q).gcd z.val, ?_⟩
-    exact if_pos hproper
+    exact ite_eq_left hproper
 
 /-- Retain equal residue labels before any deflation. Ordered merge
 uses one comparison per visited pair, without a Cartesian pair scan. -/
@@ -289,15 +289,15 @@ theorem matchSorted_sound {xs ys : List (ℕ×ℕ)} {i j : ℕ}
     | nil => simp [matchSorted] at hs
     | cons y ys ihy =>
       by_cases he : x.1=y.1
-      · have hh : (x.2,y.2)=(i,j) := by simpa only [matchSorted, if_pos he,
+      · have hh : (x.2,y.2)=(i,j) := by simpa only [matchSorted, ite_eq_left he,
           Option.some.injEq] using hs
         exact ⟨x, by simp, y, by simp, he, (Prod.mk.inj hh).1, (Prod.mk.inj hh).2⟩
       · by_cases hlt : x.1<y.1
         · obtain ⟨u, hu, v, hv, heq, hi, hj⟩ := ih
-            (by simpa only [matchSorted, if_neg he, if_pos hlt] using hs)
+            (by simpa only [matchSorted, ite_eq_right he, ite_eq_left hlt] using hs)
           exact ⟨u, List.mem_cons_of_mem _ hu, v, hv, heq, hi, hj⟩
         · obtain ⟨u, hu, v, hv, heq, hi, hj⟩ := ihy
-            (by simpa only [matchSorted, if_neg he, if_neg hlt] using hs)
+            (by simpa only [matchSorted, ite_eq_right he, ite_eq_right hlt] using hs)
           exact ⟨u, hu, v, List.mem_cons_of_mem _ hv, heq, hi, hj⟩
 
 /-- Sorted merge cannot miss an equal retained residue, including
@@ -315,11 +315,11 @@ theorem matchSorted_none_no_common {xs ys : List (ℕ×ℕ)}
       obtain ⟨hxt, hxsorted⟩ := List.pairwise_cons.mp hx
       obtain ⟨hyt, hysorted⟩ := List.pairwise_cons.mp hy
       by_cases he : x.1=y.1
-      · simp only [matchSorted, if_pos he] at hn
+      · simp only [matchSorted, ite_eq_left he] at hn
         contradiction
       · by_cases hlt : x.1<y.1
         · have ht : matchSorted xs (y::ys)=none := by
-            simpa only [matchSorted, if_neg he, if_pos hlt] using hn
+            simpa only [matchSorted, ite_eq_right he, ite_eq_left hlt] using hn
           intro u hu v hv huv
           rcases List.mem_cons.mp hu with rfl | hu
           · have hle : y.1≤v.1 := by
@@ -329,7 +329,7 @@ theorem matchSorted_none_no_common {xs ys : List (ℕ×ℕ)}
             omega
           · exact ih hxsorted hy ht u hu v hv huv
         · have ht : matchSorted (x::xs) ys=none := by
-            simpa only [matchSorted, if_neg he, if_neg hlt] using hn
+            simpa only [matchSorted, ite_eq_right he, ite_eq_right hlt] using hn
           intro u hu v hv huv
           rcases List.mem_cons.mp hv with rfl | hv
           · have hle : x.1≤u.1 := by

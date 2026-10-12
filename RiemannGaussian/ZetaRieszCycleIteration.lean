@@ -84,7 +84,7 @@ theorem sum_removed_eq_zero (S : Finset ℕ) (f : ℕ → ℂ) {e : ℕ × ℕ �
     (∑ n ∈ S, removedFraction f e n • f n) = 0 := by
   simp_rw [removedFraction_eq_add f he]
   simp only [add_smul, ite_smul, zero_smul, Finset.sum_add_distrib,
-    Finset.sum_ite_eq', if_pos hi, if_pos hj, if_pos hk]
+    Finset.sum_ite_eq', ite_eq_left hi, ite_eq_left hj, ite_eq_left hk]
   exact sent_cycle_eq_zero _ _ _
 
 /-- Every original summand is accounted for after the exact cycle. -/
@@ -104,7 +104,7 @@ theorem mass_cycleStep (S : Finset ℕ) (f : ℕ → ℂ) {e : ℕ × ℕ × ℕ
   congr 1
   simp_rw [removedFraction_eq_add f he]
   simp only [add_mul, ite_mul, zero_mul, Finset.sum_add_distrib,
-    Finset.sum_ite_eq', if_pos hi, if_pos hj, if_pos hk]
+    Finset.sum_ite_eq', ite_eq_left hi, ite_eq_left hj, ite_eq_left hk]
   unfold cycleSaving
   ring
 
@@ -196,7 +196,7 @@ theorem norm_actual_band_le_exact_cycles (L : ℝ) (P : Polynomial ℂ) (N : ℕ
   have hs : (∑ n ∈ zetaPrimeLogBand N, ZetaRieszConditionedEnergy.bandWeight L P N t n) =
       zetaArithmeticBand (SquarefreeVaughanLogSource.coefficient L) P N t := by
     unfold ZetaRieszConditionedEnergy.bandWeight zetaArithmeticBand
-    exact Finset.sum_congr rfl (fun n hn => by rw [if_pos hn])
+    exact Finset.sum_congr rfl (fun n hn => by rw [ite_eq_left hn])
   rw [← hs]
   exact norm_sum_le_total_saving _ _ _ (fun _ he => actualCycles_valid (Finset.mem_toList.mp he))
 end

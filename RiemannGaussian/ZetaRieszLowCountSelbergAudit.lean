@@ -121,9 +121,9 @@ theorem selbergDefect_prime_eq_zero {u : ℝ} (hu : 1/2≤u)
       max_eq_right hL.le,max_eq_left (by linarith only [hLp] :
         SquarefreeVaughanLogSource.length u N-log p≤0)]
   rw [selbergDefect,joinedCoefficient,
-    if_pos (Finset.mem_union.mpr (Or.inl hpN)),if_neg hh,if_neg hc,
+    ite_eq_left (Finset.mem_union.mpr (Or.inl hpN)),ite_eq_right hh,ite_eq_right hc,
     add_zero,sub_zero,selbergCoefficient_prime hp]
-  simp only [completedCoefficient,if_pos hp.squarefree,hr]
+  simp only [completedCoefficient,ite_eq_left hp.squarefree,hr]
   have hLc : (SquarefreeVaughanLogSource.length u N : ℂ)≠0 :=
     Complex.ofReal_ne_zero.mpr hL.ne'
   push_cast
@@ -177,8 +177,8 @@ theorem balanced_joined_eq_completed {u : ℝ} {N n : ℕ} (hN : 65536≤N)
   have hs := (Finset.mem_sdiff.mp (balancedProducts_subset_unmatched (u:=u) hN hn)).1
   have hc := balanced_not_correction (u:=u) hN hn
   have hh : n∉headLabels u N := fun h => hc (headLabels_subset_correction u N h)
-  simp only [joinedCoefficient,if_pos (Finset.mem_union.mpr (Or.inr hs)),
-    if_neg hh,if_neg hc,add_zero,sub_zero]
+  simp only [joinedCoefficient,ite_eq_left (Finset.mem_union.mpr (Or.inr hs)),
+    ite_eq_right hh,ite_eq_right hc,add_zero,sub_zero]
 
 /-- On balanced pairs the residual is a BULK coefficient, not an
 endpoint term: it is at least N/20 at the actual moving length. -/
@@ -227,7 +227,7 @@ theorem balanced_defect_lower {u : ℝ} (hu : 1/2≤u)
     change (277/200 : ℝ)*N≤L at hLl
     nlinarith only [hsq,hLl,hNr]
   rw [selbergDefect,balanced_joined_eq_completed hN hn,selbergCoefficient_pair hp hq hpq]
-  simp only [completedCoefficient,if_pos hs,Complex.sub_re,Complex.ofReal_re]
+  simp only [completedCoefficient,ite_eq_left hs,Complex.sub_re,Complex.ofReal_re]
   rw [hr]
   change (N : ℝ)/20≤ -T*(T-L)/L-(-2*log p*log q/T)
   have he : -T*(T-L)/L-(-2*log p*log q/T)=T-T^2/L+2*log p*log q/T := by

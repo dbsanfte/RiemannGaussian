@@ -84,9 +84,9 @@ theorem LSeriesHasSum_squarefreeEuler {s : ℂ} (hs : 1 < s.re) :
     apply ((summable_riemannZetaSummand hs).of_norm.indicator {n | Squarefree n}).congr
     intro n
     by_cases hn : Squarefree n
-    · rw [Set.indicator_of_mem hn, if_pos hn]
+    · rw [Set.indicator_of_mem hn, ite_eq_left hn]
       rfl
-    · rw [Set.indicator_of_notMem hn, if_neg hn]
+    · rw [Set.indicator_of_notMem hn, ite_eq_right hn]
   have hprod := (squarefree_euler_hasProd hs).mul (riemannZeta_eulerProduct_hasProd hs2)
   simp only [prime_inverse_factor_mul hs] at hprod
   have he := hprod.unique (riemannZeta_eulerProduct_hasProd hs)

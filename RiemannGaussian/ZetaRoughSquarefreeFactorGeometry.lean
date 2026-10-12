@@ -93,7 +93,7 @@ theorem zetaRoughSquarefreeCoefficient_large_prime_composite_zero (S : Finset �
     zetaRoughSquarefreeCoefficient D S (p * m) = 0 := by
   by_cases hrough : ∃ a ∈ S, a ∣ p * m
   · simp [zetaRoughSquarefreeCoefficient, hrough]
-  rw [zetaRoughSquarefreeCoefficient_large_prime_squarefree_cofactor S hS hp hDp hm hmD hsf hrough, if_neg hcomp]
+  rw [zetaRoughSquarefreeCoefficient_large_prime_squarefree_cofactor S hS hp hDp hm hmD hsf hrough, ite_eq_right hcomp]
 
 /-- The surviving small-cofactor weights have a bound involving only
 the original divisor cutoff, independent of the arbitrarily large prime. -/
@@ -213,7 +213,7 @@ theorem zetaRoughSquarefreeCoefficient_balanced_or_semiprime (D : ℕ) (hD : 1 �
     exact hc (by simp [zetaRoughSquarefreeCoefficient, h])
   refine Or.inr ⟨p, q, hp, hqprime, hqD, hDp, rfl, ?_⟩
   rw [zetaRoughSquarefreeCoefficient_large_prime_squarefree_cofactor S hS hp hDp hq hqD hqsf hrough,
-    if_pos hqprime]
+    ite_eq_left hqprime]
 
 /-- Squarefreeness gives coprime squarefree factors in the balanced arm,
 so no overlap is discarded when moving to a two-factor representation. -/

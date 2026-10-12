@@ -92,8 +92,8 @@ private theorem featureArithmetic_multiplicative (s : ℂ) :
   rw [ArithmeticFunction.IsMultiplicative.iff_ne_zero]
   refine ⟨by simp [featureArithmetic, zetaPrimeFeature], ?_⟩
   intro m n hm hn _
-  simp only [featureArithmetic, ArithmeticFunction.coe_mk, if_neg hm, if_neg hn,
-    if_neg (Nat.mul_ne_zero hm hn)]
+  simp only [featureArithmetic, ArithmeticFunction.coe_mk, ite_eq_right hm, ite_eq_right hn,
+    ite_eq_right (Nat.mul_ne_zero hm hn)]
   exact CoprimeEulerPhase.feature_mul s (Nat.pos_of_ne_zero hm) (Nat.pos_of_ne_zero hn)
 
 /-- The reciprocal squarefree local weight is the exact divisor sum
@@ -106,11 +106,11 @@ theorem atom_inv_eq_divisor_sum {P : ℕ} (hP : Squarefree P) (s : ℂ) :
     apply Finset.prod_congr rfl
     intro p hp
     simp only [featureArithmetic, ArithmeticFunction.coe_mk,
-      if_neg (Nat.prime_of_mem_primeFactors hp).ne_zero]
+      ite_eq_right (Nat.prime_of_mem_primeFactors hp).ne_zero]
   have hr : (∑ q ∈ P.divisors, featureArithmetic (-s) q) =
       ∑ q ∈ P.divisors, zetaPrimeFeature (-s) q := by
     exact Finset.sum_congr rfl (fun q hq ↦ by
-      simp only [featureArithmetic, ArithmeticFunction.coe_mk, if_neg (Nat.pos_of_mem_divisors hq).ne'])
+      simp only [featureArithmetic, ArithmeticFunction.coe_mk, ite_eq_right (Nat.pos_of_mem_divisors hq).ne'])
   rw [hl, hr] at h
   rw [← h, atom, ArithmeticFunction.prodPrimeFactors_apply hP.ne_zero, ← Finset.prod_inv_distrib]
   apply Finset.prod_congr rfl
@@ -286,7 +286,7 @@ theorem coefficient_eq_eligible (S T : Finset ℕ) (w v : ℕ → ℂ) :
       · simp [hd]
     rw [coefficient, coefficient, hw w, hw v]
   · have hz : RoughSquarefreeBare.coefficient S 1 n = 0 := by
-      simp only [RoughSquarefreeBare.coefficient, one_dvd, and_true, if_neg hg]
+      simp only [RoughSquarefreeBare.coefficient, one_dvd, and_true, ite_eq_right hg]
     simp only [coefficient, hz, zero_mul]
 
 /-- The actual inclusive divisor cutoff with exactly its impossible
@@ -388,7 +388,7 @@ theorem squareCoefficient_eq_log_sub_prime (D : ℕ) (S : Finset ℕ) (n : ℕ) 
   rw [primeCorrectionCoefficient]
   by_cases hp : n.Prime
   · simp [hp, RoughMoebiusMixed.squareCoefficient, zetaRoughSquarefreeCompositeLogWeight]
-  · rw [if_neg hp, sub_zero, coefficient_moebius_self]
+  · rw [ite_eq_right hp, sub_zero, coefficient_moebius_self]
     by_cases hsf : Squarefree n <;> by_cases hrough : ∃ a ∈ S, a ∣ n <;>
       simp [RoughMoebiusMixed.squareCoefficient, zetaRoughSquarefreeCompositeLogWeight,
         RoughSquarefreeBare.coefficient, hp, hsf, hrough]
@@ -399,10 +399,10 @@ theorem mask_on_prime {D p : ℕ} (hD : 1 ≤ D) (hp : p.Prime) :
     RoughMoebiusIncidence.mask D p = if p ≤ D then 0 else 1 := by
   by_cases h : p ≤ D
   · simp [h, RoughMoebiusIncidence.mask_eq_unit hp.pos h, hp.ne_one]
-  · rw [if_neg h]
+  · rw [ite_eq_right h]
     have he := RoughMoebiusIncidence.mask_large_prime hp (by omega : D < p) 1
     simpa only [mul_one, RoughMoebiusIncidence.mask_eq_unit (by norm_num : 0 < 1) hD,
-      if_true] using he
+      ite_true] using he
 
 /-- The ordinary-prime correction is precisely the primes beyond
 the divisor cutoff, with the original roughness and logarithm retained. -/
@@ -411,7 +411,7 @@ theorem primeCorrectionCoefficient_eq_tail {D : ℕ} (hD : 1 ≤ D)
     primeCorrectionCoefficient D S n =
       if n.Prime ∧ D < n then RoughSquarefreeBare.coefficient S 1 n * (Real.log n : ℂ) else 0 := by
   by_cases hp : n.Prime
-  · rw [primeCorrectionCoefficient, if_pos hp, coefficient_moebius_self, mask_on_prime hD hp]
+  · rw [primeCorrectionCoefficient, ite_eq_left hp, coefficient_moebius_self, mask_on_prime hD hp]
     by_cases hnD : n ≤ D <;> simp [hp, hnD, Nat.not_lt_of_ge, Nat.lt_of_not_ge]
   · simp [primeCorrectionCoefficient, hp]
 

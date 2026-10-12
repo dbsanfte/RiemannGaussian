@@ -196,14 +196,14 @@ theorem shortRelationLoop_bounds {N A T r0 r1 c0 c1 : ℕ}
   | h r1 ih =>
     dsimp only
     by_cases hs : r1≤T
-    · rw [shortRelationLoop, dif_pos hs]
+    · rw [shortRelationLoop, dite_eq_left hs]
       dsimp only
       refine ⟨hc, ?_, hs⟩
       have hdiv := Nat.mod_lt N (show 0<A+1 by omega)
       have hsum := Nat.mod_add_div N (A+1)
       subst T
       nlinarith
-    · rw [shortRelationLoop, dif_neg hs]
+    · rw [shortRelationLoop, dite_eq_right hs]
       dsimp only
       apply ih _ (Nat.mod_lt _ (by omega))
       · exact shortRelation_step_determinant _ _ _ _ |>.trans hdet
@@ -223,9 +223,9 @@ theorem shortRelationLoop_correct {N : ℕ} (s : ZMod N)
   induction r1 using Nat.strong_induction_on generalizing r0 c0 c1 negative with
   | h r1 ih =>
     by_cases hs : r1≤T
-    · rw [shortRelationLoop, dif_pos hs]
+    · rw [shortRelationLoop, dite_eq_left hs]
       cases negative <;> simpa [indexRelation, ShortRelationReport.second] using hc1
-    · rw [shortRelationLoop, dif_neg hs]
+    · rw [shortRelationLoop, dite_eq_right hs]
       dsimp only [indexRelation, ShortRelationReport.second]
       apply ih _ (Nat.mod_lt _ (by omega))
       · cases negative <;> simpa only [Bool.not_false, Bool.not_true,
@@ -266,10 +266,10 @@ theorem shortRelationLoop_steps (T N r0 r1 c0 c1 : ℕ) (negative : Bool) :
   induction r1 using Nat.strong_induction_on generalizing r0 c0 c1 negative with
   | h r1 ih =>
     by_cases hs : r1≤T
-    · rw [shortRelationLoop, dif_pos hs]
+    · rw [shortRelationLoop, dite_eq_left hs]
       exact Nat.zero_le _
     · have hr : r1≠0 := by omega
-      rw [shortRelationLoop, dif_neg hs, SemiprimeWindowInverse.euclidLoop, dif_neg hr]
+      rw [shortRelationLoop, dite_eq_right hs, SemiprimeWindowInverse.euclidLoop, dite_eq_right hr]
       dsimp only [SemiprimeWindowInverse.makeFrame]
       have ht := ih (r0%r1) (Nat.mod_lt r0 (by omega)) r1 c1 (c0+(r0/r1)*c1) (!negative)
       have he : ((0+N-(r0/r1*0)%N)%N)=0 := by simp
@@ -294,12 +294,12 @@ theorem shortRelationLoop_determinant {N : ℕ}
   | h r1 ih =>
     dsimp only
     by_cases hs : r1≤T
-    · rw [shortRelationLoop, dif_pos hs]
+    · rw [shortRelationLoop, dite_eq_left hs]
       have hd : (r0 : ℤ)*c1+(r1 : ℤ)*c0=N := by exact_mod_cast hdet
       cases negative <;> simp only [ShortRelationReport.second,
         ShortRelationReport.companionSecond, Bool.false_eq_true, reduceIte] <;>
         nlinarith
-    · rw [shortRelationLoop, dif_neg hs]
+    · rw [shortRelationLoop, dite_eq_right hs]
       dsimp only
       exact ih (r0%r1) (Nat.mod_lt r0 (by omega)) r1 c1 (c0+(r0/r1)*c1)
         (!negative) ((shortRelation_step_determinant _ _ _ _).trans hdet)
@@ -314,9 +314,9 @@ theorem shortRelationLoop_companion {N : ℕ} (s : ZMod N)
   induction r1 using Nat.strong_induction_on generalizing r0 c0 c1 negative with
   | h r1 ih =>
     by_cases hs : r1≤T
-    · rw [shortRelationLoop, dif_pos hs]
+    · rw [shortRelationLoop, dite_eq_left hs]
       cases negative <;> simpa [indexRelation, ShortRelationReport.companionSecond] using hc0
-    · rw [shortRelationLoop, dif_neg hs]
+    · rw [shortRelationLoop, dite_eq_right hs]
       dsimp only [indexRelation, ShortRelationReport.companionSecond]
       apply ih (r0%r1) (Nat.mod_lt r0 (by omega))
       · cases negative <;> simpa only [Bool.not_false, Bool.not_true,

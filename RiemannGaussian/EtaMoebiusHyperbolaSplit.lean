@@ -133,14 +133,14 @@ theorem pairedEtaCompletedMoebiusLargeAggregate_eq_fixedQuotientFamily
         pairedEtaCompletedMoebiusLargeQuotientFamily rho D M q := by
       apply Finset.sum_congr rfl
       intro q hmem
-      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, if_pos (Finset.mem_Icc.mp hmem).2]
+      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, ite_eq_left (Finset.mem_Icc.mp hmem).2]
     _ = _ := by
       apply Finset.sum_subset hs
       intro q hmem hn
       have hnot : ¬q ≤ M / (D + 1) := by
         have := (Finset.mem_Icc.mp hmem).1
         simpa only [Finset.mem_Icc, this, true_and] using hn
-      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, if_neg hnot]
+      simp only [pairedEtaCompletedMoebiusLargeQuotientFamily, ite_eq_right hnot]
 
 end
 

@@ -155,12 +155,12 @@ theorem shiftedPacket_ledger (u y : ℝ) (N K : ℕ) :
     apply Finset.sum_subset (Finset.filter_subset _ _)
     intro n _ hn
     change n ∉ fullParityBand u N K at hn
-    rw [fullParitySelection, if_neg hn, Complex.ofReal_zero, zero_mul]
+    rw [fullParitySelection, ite_eq_right hn, Complex.ofReal_zero, zero_mul]
   rw [he, shiftedPacket, correctionPacket, ← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro n hn
   rw [shiftedWeight_ledger (Finset.mem_filter.mp hn).2.1,
-    fullParitySelection, if_pos hn]
+    fullParitySelection, ite_eq_left hn]
   ring
 
 /-- The strict geometric rate after paying the arithmetic majorant. -/

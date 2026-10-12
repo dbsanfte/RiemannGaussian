@@ -113,7 +113,7 @@ theorem compensated_at_ordinate {σ η : ℝ} (hσ : 1 ≤ σ) (hη : 0 < η) (B
   have hs : (σ : ℂ) + I * (ρ.1.im : ℂ) + (η : ℂ) = ((σ + η : ℝ) : ℂ) + I * ρ.1.im := by
     push_cast
     ring
-  simp only [compensated, nearSource, nearRestrict, hd, if_true,
+  simp only [compensated, nearSource, nearRestrict, hd, ite_true,
     ZetaGaussianDistanceRemainder.nearPoisson, Complex.mul_re, Complex.natCast_re,
     Complex.natCast_im, zero_mul, sub_zero]
   rw [he, SmoothedCotangentSource.gaussian_source_real hη B hu (by linarith), hs,

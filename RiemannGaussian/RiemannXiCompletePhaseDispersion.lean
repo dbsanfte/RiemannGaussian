@@ -156,7 +156,7 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_le_norm_selected
     zetaUpperBlaschkeDerivativeVariationSummand z rho ≤
       ‖zetaUpperBlaschkeSelectedLogDerivativeSummand z rho‖ := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_pos hupper]
+  · rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_left hupper]
     apply
       zetaUpperBlaschkeDerivativeVariationSummand_le_norm_logDerivativeSummand
         hz rho hupper
@@ -164,8 +164,8 @@ theorem zetaUpperBlaschkeDerivativeVariationSummand_le_norm_selected
     apply hxi
     rw [heq]
     exact (riemannXiSpectral_eq_zero_iff_exists_zetaZero _).2 ⟨rho, rfl⟩
-  · rw [zetaUpperBlaschkeDerivativeVariationSummand, if_neg hupper,
-      zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg hupper,
+  · rw [zetaUpperBlaschkeDerivativeVariationSummand, ite_eq_right hupper,
+      zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right hupper,
       norm_zero]
 
 /-- The actual finite elementary derivative-variation total is bounded by
@@ -222,7 +222,7 @@ theorem zetaUpperBlaschkeSelectedLogDerivativeSummand_eq_zero_of_rh
   have him : (zetaSpectralCoordinate rho.1).im = 0 :=
     (riemannHypothesis_iff_spectralCoordinate_real.mp hRH)
       rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
-  rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, if_neg]
+  rw [zetaUpperBlaschkeSelectedLogDerivativeSummand, ite_eq_right]
   linarith
 
 /-- Under RH the complete signed upper Blaschke resultant vanishes. -/

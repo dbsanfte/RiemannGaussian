@@ -116,7 +116,7 @@ theorem packetPoint_original_root {N m : ℕ} (w : FamilyPacket)
   have hx := pointX_coefficient w hu
   have hy := pointY_coefficient (m:=m) w hu
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   unfold pointResidual at hy
   push_cast at hy
   have hprod : (w.original.a : ZMod N)*

@@ -42,8 +42,8 @@ theorem sum_zetaLogBandSamples {E : Type*} [AddCommMonoid E] (N : ℕ) (a : ℕ 
     exact Finset.mem_range.mpr (by omega)
   calc
     _ = ∑ n ∈ zetaPrimeLogBand N, if n ∈ zetaPrimeLogBand N then a n else 0 := by
-      exact (Finset.sum_subset hsub (fun n _ hn ↦ if_neg hn)).symm
-    _ = _ := Finset.sum_congr rfl (fun n hn ↦ if_pos hn)
+      exact (Finset.sum_subset hsub (fun n _ hn ↦ ite_eq_right hn)).symm
+    _ = _ := Finset.sum_congr rfl (fun n hn ↦ ite_eq_left hn)
 
 /-- The actual signed divisor coefficients on the finite band. -/
 def zetaMoebiusBandSamples (D N : ℕ) : ZMod (2 ^ (32 * N) + 1) → ℂ :=

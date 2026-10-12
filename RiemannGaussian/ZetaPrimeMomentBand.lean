@@ -137,7 +137,7 @@ private theorem ordinary_atom_norm_le_outside (N k m : ℕ) (y : ℝ)
   have hw (σ : ℝ) : 0 ≤ ArithmeticFunction.vonMangoldt m * zetaPrimeExpWeight σ m :=
     mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (Real.exp_pos _).le
   by_cases hp : m.Prime
-  · rw [if_pos hp, norm_mul, Complex.norm_real, Real.norm_eq_abs,
+  · rw [ite_eq_left hp, norm_mul, Complex.norm_real, Real.norm_eq_abs,
       abs_of_nonneg ArithmeticFunction.vonMangoldt_nonneg]
     rcases zetaPrimeLogBand_complement N hp.ne_zero hm with hl | hu
     · have h := mul_le_mul_of_nonneg_left
@@ -149,7 +149,7 @@ private theorem ordinary_atom_norm_le_outside (N k m : ℕ) (y : ℝ)
     · have h := mul_le_mul_of_nonneg_left (norm_zetaPrimeLogKernel_le_upper_band N k m y hu)
         (ArithmeticFunction.vonMangoldt_nonneg (n := m))
       nlinarith [mul_nonneg (show (0 : ℝ) ≤ (1 / 2) ^ N * (1 / 4) ^ k by positivity) (hw (3 / 2))]
-  · rw [if_neg hp, norm_zero]
+  · rw [ite_eq_right hp, norm_zero]
     exact mul_nonneg (by positivity)
       (add_nonneg (mul_nonneg (by positivity) (hw (3 / 2))) (mul_nonneg (by positivity) (hw (5 / 4))))
 
@@ -189,11 +189,11 @@ theorem norm_zetaOrdinaryPrimeLogMoment_sub_band_le (N k : ℕ) (y : ℝ) :
       apply Summable.tsum_le_tsum _ ht.norm hmajor
       intro m
       by_cases hm : m ∈ zetaPrimeLogBand N
-      · rw [if_pos hm, norm_zero]
+      · rw [ite_eq_left hm, norm_zero]
         exact mul_nonneg (by positivity) (add_nonneg
           (mul_nonneg (by positivity) (mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (Real.exp_pos _).le))
           (mul_nonneg (by positivity) (mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (Real.exp_pos _).le)))
-      · rw [if_neg hm]
+      · rw [ite_eq_right hm]
         exact ordinary_atom_norm_le_outside N k m y hm
     _ = _ := by
       rw [tsum_mul_left, (h1.mul_left _).tsum_add (h2.mul_left _), tsum_mul_left, tsum_mul_left]
@@ -216,12 +216,12 @@ theorem zetaOrdinaryPrimeBandFilter_eq_prime_sum (p : Polynomial ℂ) (N : ℕ) 
   apply Finset.sum_congr rfl
   intro m _
   by_cases hm : m.Prime
-  · simp only [if_pos hm, ArithmeticFunction.vonMangoldt_apply_prime hm,
+  · simp only [ite_eq_left hm, ArithmeticFunction.vonMangoldt_apply_prime hm,
       zetaPrimeLogKernel]
     apply Finset.sum_congr rfl
     intro k _
     ring
-  · simp only [if_neg hm, mul_zero, Finset.sum_const_zero]
+  · simp only [ite_eq_right hm, mul_zero, Finset.sum_const_zero]
 
 /-- The filter's fixed arithmetic tail constant, independent of the ordinate. -/
 def zetaPrimeBandTailConstant (p : Polynomial ℂ) : ℝ :=

@@ -212,7 +212,7 @@ theorem single_prime_share (A : Finset ℕ) (N : ℕ) {n p : ℕ}
     omega
   have hnp : ¬n.Prime := by intro h; simp [h.primeFactors] at hc
   have he : eligibleCofactor p (n/p) := ZetaRieszMarkedSaturation.cofactor_data hs hc hp
-  rw [boundedShare,if_pos ⟨hs,hn1,hnp⟩,share_eq_binomial_sum _ N hs hn1]
+  rw [boundedShare,ite_eq_left ⟨hs,hn1,hnp⟩,share_eq_binomial_sum _ N hs hn1]
   rw [Finset.sum_eq_single p]
   · simp [hpA,he]
   · intro q _ hqp

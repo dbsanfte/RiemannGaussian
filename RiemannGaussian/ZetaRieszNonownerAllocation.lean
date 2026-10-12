@@ -32,10 +32,10 @@ theorem nonowner_log_le_half {n q : ℕ} (hq : q ∈ n.primeFactors)
     (hne : q ≠ largestPrime n) : Real.log q ≤ Real.log n / 2 := by
   have hpf : n.primeFactors.Nonempty := ⟨q,hq⟩
   have hp : largestPrime n ∈ n.primeFactors := by
-    rw [largestPrime,dif_pos hpf]
+    rw [largestPrime,dite_eq_left hpf]
     exact Finset.max'_mem _ _
   have hqp : q ≤ largestPrime n := by
-    rw [largestPrime,dif_pos hpf]
+    rw [largestPrime,dite_eq_left hpf]
     exact Finset.le_max' _ _ hq
   have hqP := Nat.prime_of_mem_primeFactors hq
   have hpP := Nat.prime_of_mem_primeFactors hp

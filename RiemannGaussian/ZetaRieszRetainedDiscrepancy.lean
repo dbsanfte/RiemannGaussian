@@ -312,11 +312,11 @@ theorem exists_literal_retained_error :
   let B' := fun n j => if hn : n ∈ S then B n hn j else 0
   have hcoef' n (hn : n ∈ S) j (hj : j ≤ N+1) :
       0 ≤ B' n j ∧ B' n j ≤ ((N+1).choose j : ℝ)*log n^(N+1-j) := by
-    simpa only [B',dif_pos hn] using hcoef n hn j hj
+    simpa only [B',dite_eq_left hn] using hcoef n hn j hj
   have hid' n (hn : n ∈ S) p (hp : p ∈ P) :
       (1-boundedShare A N (p*n))*log (p*n : ℕ)^(N+1) =
         ∑ j ∈ Finset.range (N+2), B' n j*log p^j := by
-    simpa only [B',dif_pos hn] using
+    simpa only [B',dite_eq_left hn] using
       hid n hn p (Finset.mem_filter.mp hp).2 (hPA hp) (hcop n hn p hp)
   refine ⟨B',hcoef',hid',?_⟩
   let w := fun j (n : ℕ) => exp (-log n/2)*B' n j/(n : ℝ)
@@ -424,9 +424,9 @@ theorem exists_literal_family_error :
   let B' := fun i n j => if hi : i ∈ I then B i hi n j else 0
   refine ⟨B',?_,?_,?_⟩
   · intro i hi n hn j hj
-    simpa only [B',dif_pos hi] using hcoef i hi n hn j hj
+    simpa only [B',dite_eq_left hi] using hcoef i hi n hn j hj
   · intro i hi n hn p hp
-    simpa only [B',dif_pos hi] using hid i hi n hn p hp
+    simpa only [B',dite_eq_left hi] using hid i hi n hn p hp
   · let J := fun i => (∑ n ∈ S i,
         ∑ p ∈ (Finset.Ioc ⌊exp (a i)⌋₊ ⌊exp (b i)⌋₊).filter Nat.Prime,
           residualCoefficient (A i) (L i) (N i) (p*n)*
@@ -437,7 +437,7 @@ theorem exists_literal_family_error :
     have hbi i (hi : i ∈ I) :
         H i-sqrt E*retainedErrorCost (N i) (M i) (a i) (b i) (y i) (L i) ≤ J i ∧
         J i ≤ H i+sqrt E*retainedErrorCost (N i) (M i) (a i) (b i) (y i) (L i) := by
-      simpa only [H,J,B',dif_pos hi] using hb i hi
+      simpa only [H,J,B',dite_eq_left hi] using hb i hi
     have hlow := Finset.sum_le_sum (fun i (hi : i ∈ I) => (hbi i hi).1)
     have hhigh := Finset.sum_le_sum (fun i (hi : i ∈ I) => (hbi i hi).2)
     simp only [Finset.sum_sub_distrib,Finset.sum_add_distrib,← Finset.mul_sum] at hlow hhigh

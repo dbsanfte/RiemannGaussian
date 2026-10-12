@@ -62,7 +62,7 @@ theorem pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor (rho : NontrivialZe
       ring
     have hslow : -2 * rho.1.re = pairedEtaCurrentHorizontalDisplacement rho - 1 := by rw [he]; ring
     rw [hfast, hslow]
-    simp only [pairedEtaCurrentDominantCoefficient, pairedEtaCurrentRecessiveCoefficient, if_pos hs]
+    simp only [pairedEtaCurrentDominantCoefficient, pairedEtaCurrentRecessiveCoefficient, ite_eq_left hs]
     ring
   · have he : pairedEtaCurrentHorizontalDisplacement rho = 2 * rho.1.re - 1 := by
       unfold pairedEtaCurrentHorizontalDisplacement
@@ -75,7 +75,7 @@ theorem pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor (rho : NontrivialZe
       ring
     have hslow : -2 * (1 - rho.1.re) = pairedEtaCurrentHorizontalDisplacement rho - 1 := by rw [he]; ring
     rw [hfast, hslow]
-    simp only [pairedEtaCurrentDominantCoefficient, pairedEtaCurrentRecessiveCoefficient, if_neg hs]
+    simp only [pairedEtaCurrentDominantCoefficient, pairedEtaCurrentRecessiveCoefficient, ite_eq_right hs]
     ring
 
 /-- Taking the absolute value loses only the explicitly retained side

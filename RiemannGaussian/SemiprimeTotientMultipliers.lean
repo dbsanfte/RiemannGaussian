@@ -160,7 +160,7 @@ def signedOrbitPoint {G : Type*} [Group G] (z : G) (k : ℕ) (negative : Bool) :
 theorem signedOrbitPoint_map {G H : Type*} [Group G] [Group H]
     (φ : G →* H) (z : G) (k : ℕ) (negative : Bool) :
     φ (signedOrbitPoint z k negative)=signedOrbitPoint (φ z) k negative := by
-  cases negative <;> simp only [signedOrbitPoint,Bool.false_eq_true,if_false,if_true,
+  cases negative <;> simp only [signedOrbitPoint,Bool.false_eq_true,ite_false,ite_true,
     map_pow,map_inv]
 
 /-- The cached centre point uses the literal offset power when their
@@ -178,13 +178,13 @@ theorem signed_relation_power {G : Type*} [Group G] (h : G) (k d t : ℕ)
   rcases hrel with hmod|hdiv
   · refine ⟨false,?_⟩
     rw [signedOrbitPoint_power]
-    simp only [Bool.false_eq_true,if_false]
+    simp only [Bool.false_eq_true,ite_false]
     have he := pow_mod_orderOf h (k*d)
     rw [hmod] at he
     exact he.symm
   · refine ⟨true,?_⟩
     rw [signedOrbitPoint_power]
-    simp only [if_true]
+    simp only [ite_true]
     have he : h^(k*d)*h^t=1 := by
       rw [←pow_add]
       exact orderOf_dvd_iff_pow_eq_one.mp hdiv
@@ -224,12 +224,12 @@ theorem signed_global_ne {G : Type*} [Group G] (h : G) {B k d t : ℕ}
   rw [signedOrbitPoint_power]
   cases negative with
   | false =>
-    simp only [Bool.false_eq_true,if_false]
+    simp only [Bool.false_eq_true,ite_false]
     intro he
     have hi := pow_injOn_Iio_orderOf (x:=h) hkdM htM he
     omega
   | true =>
-    simp only [if_true]
+    simp only [ite_true]
     intro he
     have hp : h^(k*d+t)=1 := by
       rw [pow_add,←he,mul_inv_cancel]

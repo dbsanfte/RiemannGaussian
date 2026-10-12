@@ -90,7 +90,7 @@ theorem exists_squarefreeEulerBudget_card_bound {σ : ℝ} (hσ : 0 < σ) :
   have hmark : (∏ a ∈ P.primeFactors, q a * (1 - q a)⁻¹) ≤ K ^ M := by
     calc
       _ ≤ ∏ a ∈ P.primeFactors, if a < M then K else 1 := by
-        apply Finset.prod_le_prod hlocal
+        apply Finset.prod_le_prod₀ hlocal
         intro a ha
         split_ifs with haM
         · exact hratio (Nat.prime_of_mem_primeFactors ha)
@@ -106,7 +106,7 @@ theorem exists_squarefreeEulerBudget_card_bound {σ : ℝ} (hσ : 0 < σ) :
         simpa using Finset.card_le_card hsub
   have hsieve : (∏ a ∈ S, (1 - q a)⁻¹) ≤ K ^ S.card := by
     calc
-      _ ≤ ∏ _a ∈ S, K := Finset.prod_le_prod
+      _ ≤ ∏ _a ∈ S, K := Finset.prod_le_prod₀
         (fun a ha ↦ inv_nonneg.mpr (sub_nonneg.mpr (weight_lt_one hσ (hS a ha)).le))
         (fun a ha ↦ hinv (hS a ha))
       _ = _ := by simp
@@ -151,7 +151,7 @@ theorem exists_squarefreeEuler_uniform_mark_filter_bound (y : ℝ) (hy : 1 < |y|
         rintro ⟨hsf, hrough, hd⟩
         exact hgood ⟨hsf.squarefree_of_dvd hd, fun a ha haS ↦
           hrough ⟨a, haS, (Nat.dvd_of_mem_primeFactors ha).trans hd⟩⟩
-      simp only [RoughSquarefreeBare.coefficient, if_neg h]
+      simp only [RoughSquarefreeBare.coefficient, ite_eq_right h]
     simpa [RoughSquarefreeBare.response, hz] using hn
 
 private theorem eventually_card_geometric_bound {K r : ℝ} (hK : 1 < K) (hr : 1 < r)

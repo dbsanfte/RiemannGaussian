@@ -232,12 +232,12 @@ theorem coefficient_six_lower {L : ℝ} (hL : 0 < L) {n : ℕ}
     have hscale := mul_le_mul_of_nonneg_left hh
       (div_nonneg (Real.log_natCast_nonneg n) hL.le)
     have hs : Squarefree n ∧ ¬ n.Prime := ⟨hn,hnp⟩
-    simp only [SquarefreeVaughanLogSource.coefficient,if_pos hs,Complex.ofReal_re]
+    simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hs,Complex.ofReal_re]
     have he : -Real.log n*VaughanLogAverage.riesz L n/L =
         -(Real.log n/L)*VaughanLogAverage.riesz L n := by ring
     rw [he]
     nlinarith only [hscale]
-  · simp only [SquarefreeVaughanLogSource.coefficient,hn,false_and,if_false,Complex.zero_re]
+  · simp only [SquarefreeVaughanLogSource.coefficient,hn,false_and,ite_false,Complex.zero_re]
     exact neg_nonpos.mpr (by positivity [Real.log_natCast_nonneg n,Real.log_natCast_nonneg n.minFac])
 
 /-- The original six-prime interval is now [-3,4] in least-prime units
@@ -251,7 +251,7 @@ theorem coefficient_six_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
   refine ⟨coefficient_six_lower hL hc hcut,?_⟩
   by_cases hn : Squarefree n
   · exact (ZetaRieszSignedSperner.coefficient_six_bounds hL hn hc).2
-  · simp only [SquarefreeVaughanLogSource.coefficient,hn,false_and,if_false,Complex.zero_re]
+  · simp only [SquarefreeVaughanLogSource.coefficient,hn,false_and,ite_false,Complex.zero_re]
     positivity [Real.log_natCast_nonneg n,Real.log_natCast_nonneg n.minFac]
 
 /-- Relative to the original mean-prime antichain allowance, the two
@@ -271,7 +271,7 @@ theorem coefficient_six_relative_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
       have hs : Squarefree n ∧ 2 ≤ n.primeFactors.card := ⟨hn,by omega⟩
       have he : (1/2 : ℝ)*middleLayerAllowance L n =
           3*(Real.log n/L)*(Real.log n/n.primeFactors.card) := by
-        rw [middleLayerAllowance,if_pos hs,hc]
+        rw [middleLayerAllowance,ite_eq_left hs,hc]
         norm_num [Nat.choose]
         ring
       rw [he]

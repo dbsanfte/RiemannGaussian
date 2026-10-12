@@ -189,7 +189,7 @@ theorem joinedFunding_one_above_four {N : ℕ} (hN : 1000 ≤ N) {h : ℝ}
     intro hy
     have ht := ZetaRieszRoughFivePeriodFloor.radialSupply_count hN hh hhu w hw hy
     omega
-  simp only [joinedFunding,if_pos hn,if_neg hY,mul_zero,sub_zero]
+  simp only [joinedFunding,ite_eq_left hn,ite_eq_right hY,mul_zero,sub_zero]
 
 /-- The actual funding supply has all prime logarithms below3N/5.
 This is a literal tuple bound and does not approximate prime density. -/
@@ -254,7 +254,7 @@ theorem joinedFunding_one_innerHinge {N p q b : ℕ} (hN : 1000 ≤ N) {h L : �
     (hL : (11/8 : ℝ)*N ≤ L) (hT : log (p*(q*b) : ℕ) ≤ (203/100 : ℝ)*N) :
     joinedFunding R (radialSupply N h w) debit (p*(q*b))=1 := by
   have hY := innerHinge_not_radialSupply hN hh hhu w hw hp hb hi hL hT
-  simp only [joinedFunding,if_pos hn,if_neg hY,mul_zero,sub_zero]
+  simp only [joinedFunding,ite_eq_left hn,ite_eq_right hY,mul_zero,sub_zero]
 
 /-- One absolute matched price for the newly joined original support.
 The funding constant is1, not the old4+abs(epsilon) envelope. -/

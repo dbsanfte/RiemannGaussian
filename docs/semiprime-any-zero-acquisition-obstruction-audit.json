@@ -1,0 +1,2666 @@
+{
+  "audit_kind": "faithful-source-any-zero-carrier-with-public-cyclic-and-base-squaring-obstructions-and-paid-three-term-coverage-failure",
+  "created_utc": "2026-10-08",
+  "goal_turn_classification": "progress",
+  "classification_evidence": "New actual-family auxiliary-order bounds exclude nondegenerate linear ANY mergers in the specified public cyclic carriers; an exact companion carrier preserves ANY and has paid near-linear construction but no paid long scalar. New hidden doubling-order bounds exclude near-linear dense fixed algebras implementing abstract q-base squaring. New same-base and mixed three-term observation families have complete near-linear acquisition but lack proper-factor coverage. All failures coexist on the same original actual semiprime supply. No new examples or backend-only claims.",
+  "parent_source_audit": "docs/semiprime-hensel-spectrum-obstruction-audit.json",
+  "parent_audit_sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+  "parent_audit_bytes_preserved": true,
+  "parent_selected_source_pins_preserved": 488,
+  "parent_selected_mathlib_pins_preserved": 109,
+  "parent_artifact_pins_rechecked_and_preserved": 17,
+  "ancestor_authority_revalidation": [
+    {
+      "audit_path": "docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "audit_sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+      "source_count": 488,
+      "mathlib_count": 109,
+      "artifact_count": 17,
+      "PASS_review_count": 4
+    },
+    {
+      "audit_path": "docs/semiprime-adaptive-seed-prime-menu-obstruction-audit.json",
+      "audit_sha256": "e90a1bd344d8dce1bf22ab83cd7fcbebd4bd16f1a7e1bd7a22fcd18493068642",
+      "source_count": 487,
+      "mathlib_count": 109,
+      "artifact_count": 16,
+      "PASS_review_count": 4
+    },
+    {
+      "audit_path": "docs/semiprime-local-root-support-obstruction-audit.json",
+      "audit_sha256": "d3755bddc26ad7e275693f880bec90406b4cccbb48d5cded56c8aeca5b2ccbe6",
+      "source_count": 486,
+      "mathlib_count": 109,
+      "artifact_count": 9,
+      "PASS_review_count": 2
+    },
+    {
+      "audit_path": "docs/semiprime-charged-acquisition-obstruction-audit.json",
+      "audit_sha256": "3b6b3eaf2624314471b8f9aa7a2d47a842edce876f25153a7ebc984b59ce5164",
+      "source_count": 485,
+      "mathlib_count": 109,
+      "artifact_count": 53,
+      "PASS_review_count": 10
+    },
+    {
+      "audit_path": "docs/semiprime-full-euclid-acquisition-obstruction-audit.json",
+      "audit_sha256": "bf6893219305096e499650f82c52a5141ee697b93fe62d3adfbda1c5e997b96c",
+      "source_count": 482,
+      "mathlib_count": 109,
+      "artifact_count": 48,
+      "PASS_review_count": 7
+    }
+  ],
+  "source_sha256": {
+    "RiemannGaussian/SemiprimeAdaptiveSeedAcquisitionObstruction.lean": "3f35fa2dffe26e2589f872f502f2e43e6dc2631bdc70cbcafa47e97320ce6782",
+    "RiemannGaussian/SemiprimeAffinePointAreas.lean": "fd447ed84b475540b782617f5529cd79011c511d9286838a989029ab121f894c",
+    "RiemannGaussian/SemiprimeAffineProjectionObstruction.lean": "05d6124a3cae0abfb2a5a6df92b4dbb88c025ee411476ccfff4941d1687cfc4f",
+    "RiemannGaussian/SemiprimeAffineRowRoots.lean": "902f457ebc197f65aa7f25ee9bc758b8c4f7a175638f12b5631d33b160d00f45",
+    "RiemannGaussian/SemiprimeAnchoredRowAreas.lean": "637a1eaedcd90cc9c99387b86ec4d58f334bb7fc8cc1231db26e2ff6a85a6739",
+    "RiemannGaussian/SemiprimeBalancedAcquisitionObstruction.lean": "c20f8296e48f634af19f29dd45c0ab4736486c8fb3fcefbd9a9a51d1524a11f3",
+    "RiemannGaussian/SemiprimeBitArithmetic.lean": "7ae36a242a5c9f62e0d76b0ef93badc1965290fb2ea6ce3b439bdde793aff71c",
+    "RiemannGaussian/SemiprimeBitDivision.lean": "eaa620d5e6f01e448f9cad46e62695a6890dc2d5e8c2d1134d85749f2ec47af9",
+    "RiemannGaussian/SemiprimeBitFermatArithmetic.lean": "68f78038f20467e2d167ac9cf61a5eb5e4b5753e72af5ffed3b0d38a1e17624b",
+    "RiemannGaussian/SemiprimeBitFermatInterpolation.lean": "dbbe82005baa69ac2ff338c9d676586268feaf0d040cebcb66fd6eb6a5edda2b",
+    "RiemannGaussian/SemiprimeBitFermatTransform.lean": "2074efce2b9c8c02a4370bdcfaf4fbbc931db822338bb41d4511671c1cb8d26c",
+    "RiemannGaussian/SemiprimeBitGcd.lean": "81041acf559bb29c57e4cb49eacbf646e74292bd750ea038d5aeedf27d13ec1e",
+    "RiemannGaussian/SemiprimeBitGeometricCoefficients.lean": "77ba568e757dc0643ee0a062c51552a6c9ddea98056b52625bf99f6272dc56ef",
+    "RiemannGaussian/SemiprimeBitGeometricEvaluation.lean": "fd77b1d698f9835ede7d5494155f05a05e7fe9aa2a7bda90b17fced689bfb43e",
+    "RiemannGaussian/SemiprimeBitGeometricMarks.lean": "20eada663abcbce4257cde814bca13d86be9ec49208fdb58d0c100cffa02738b",
+    "RiemannGaussian/SemiprimeBitIndexBasis.lean": "02c6a3acae80e2f297b3d7025e2e48c72387c2a37da7771a977c61a74198c78c",
+    "RiemannGaussian/SemiprimeBitIndexClipping.lean": "421ebe3b60c7c6188678c643c5b21dfff5be7a4cfba2573024babdf1d48cbb72",
+    "RiemannGaussian/SemiprimeBitIndexFactors.lean": "97ddc6c3cb87539e306f7fe1ec3737443977df8edbc39775ab9bc40e14f403d3",
+    "RiemannGaussian/SemiprimeBitIndexGeometry.lean": "3303a58cd3234494e08a097f6d83e5a13398e7c7179bb23c3f677072de63db10",
+    "RiemannGaussian/SemiprimeBitIndexRoots.lean": "2ab9041f2c9de99ccad613e9dfbbad57dcc6998ecd9b8eeb67fc985ef474164f",
+    "RiemannGaussian/SemiprimeBitIndexTraversal.lean": "aebfde41d3c09abda878f5fb7c3948a3de301a819926c88cebe7f6453fe610e1",
+    "RiemannGaussian/SemiprimeBitInverse.lean": "0bb675642f30b408aa71e256cafcc5f8773192dfa8c5bdcfcce576159440821f",
+    "RiemannGaussian/SemiprimeBitPowerWalk.lean": "38b9d5c7bcd88b85a475de460c80fb0c4d6d5cc8c03f63f92020d2f453855216",
+    "RiemannGaussian/SemiprimeBitPrimeScan.lean": "6173a60afeae0fd8098d09081457162c70f6e2325f0bf84eb1d68e0ecc63d195",
+    "RiemannGaussian/SemiprimeBitProductSort.lean": "842122d63a51d2d49c0a6cff4d4583f69fbe94e078049e73b86b057021308e1d",
+    "RiemannGaussian/SemiprimeBulkNorm.lean": "17d27d439a419f643bdea05287e44a6e4a0ac8ffbe4af3c2fe8d59ed8812c9fb",
+    "RiemannGaussian/SemiprimeCartesianCompletion.lean": "9582d31039efb33726084636ea6e796d09da996b209d5b71b5abda6ae6237854",
+    "RiemannGaussian/SemiprimeCauchyAcquisitionObstruction.lean": "19603c0dbe16cf6bcc1af0251426214959a1b453b50bd9e37bdfce8fc2c387b3",
+    "RiemannGaussian/SemiprimeCenteredOffsetExtractor.lean": "797da72a6062878e303b098c39c28a3a9505083d825919068d80f3cf51c90539",
+    "RiemannGaussian/SemiprimeCentreFreeCover.lean": "73fbd9ee14b2118101148cf564e1e904367812a4294c20b590bafa4018cb2f88",
+    "RiemannGaussian/SemiprimeCollisionPeeling.lean": "9a1a8ae05e34e33206691e89b6180a8cdc9735e158e1e16bc9cad33a962857c1",
+    "RiemannGaussian/SemiprimeCommonOrder.lean": "1b3a2cf76a6d3af7c68e8da80fe52939a8cf13628e830b9d1c72fa9fceccecf4",
+    "RiemannGaussian/SemiprimeCompanionCenterSpectrum.lean": "1af747ebaa8a540d303c76287aef2162c10d80985fd0f8c7607af385c3013230",
+    "RiemannGaussian/SemiprimeCompanionCoverage.lean": "56cffaccc0842207ae92eec1acd787ed70d083e1287a7b80381f1f0b22841d3a",
+    "RiemannGaussian/SemiprimeCompanionRows.lean": "581c2e2340372c4880e9d49ab8c646086b1fc4c0d46be5d8280b5b377fea861b",
+    "RiemannGaussian/SemiprimeDenseCarryBoundary.lean": "ec8e7446d9c55a3d3c1df9170762a83aedc98beeb2210740dabd65764d2f2a42",
+    "RiemannGaussian/SemiprimeDenseEuclidDescent.lean": "aae116dd1e9214c6a3d4b1d468de8cb003b240cc355c05cc3cdf4dad81033198",
+    "RiemannGaussian/SemiprimeDenseLoopObstruction.lean": "66644ef3ab7ff60942a97fa929b7cd77ec8582f77cd6fa6326157b32767ad23e",
+    "RiemannGaussian/SemiprimeDensePeriodForcing.lean": "824efe356fae733c31fc9e405147e2deb9e42c1fda7773598e565fb4ec5bd378",
+    "RiemannGaussian/SemiprimeDenseRatioObstruction.lean": "3a6ac08dd189d81380149a83397e241351ffa633166a9c463f4e24619960f7cc",
+    "RiemannGaussian/SemiprimeDenseRowCarries.lean": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e",
+    "RiemannGaussian/SemiprimeDenseRowCoverage.lean": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440",
+    "RiemannGaussian/SemiprimeDerivativeCoverage.lean": "b83d286e14660de60276636137b2ce76c8f2f59e6c9cb21916b0a53748a15db3",
+    "RiemannGaussian/SemiprimeEuclidRowBudget.lean": "47da050cb8019ccb1b1595ce197b5ca1aa62a82c6e8845d5cbd9f5a27a32d540",
+    "RiemannGaussian/SemiprimeEuclidRowFamily.lean": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+    "RiemannGaussian/SemiprimeFirstNorm.lean": "2be8a1992412aa5dc5c498ff161a73fc51178a5bfd01acaec27d739cc754b7f4",
+    "RiemannGaussian/SemiprimeForcedRowSeparation.lean": "1ef22b8ee7e89d1ff3e976c1e566342073b281369fdb58755c9b509cb27b4e8e",
+    "RiemannGaussian/SemiprimeGeometricRows.lean": "1cb0d7217b18fc2b6f6ef58cf05fbeb1faeaeab730825a11b22c6f3bff0477f3",
+    "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+    "RiemannGaussian/SemiprimeGroupCoverage.lean": "c44b1c8badd56b0a3fcb3e6b6c34e27cdc9be3843d3384d0aead794e5dd1f948",
+    "RiemannGaussian/SemiprimeGroupSelection.lean": "a283ef1111423cd7996811f9a7861ae8e907c47759283a634c567878d66b3987",
+    "RiemannGaussian/SemiprimeGuardedTrace.lean": "c7a36dec7285bfc5e1c9970e11b562a1d297fcd5261161c9a4ead96f3fb5674a",
+    "RiemannGaussian/SemiprimeHyperbolicWrapCoverage.lean": "f2021513bc730940bfd8338cf93fedca9d75c4d8fc14c432c537554bea5b8b10",
+    "RiemannGaussian/SemiprimeIndexEnumeration.lean": "1d4e7d40a152d885a56233dd9af388ce78bc4133a58b6a194c14fc42734e32c9",
+    "RiemannGaussian/SemiprimeIndexIntegrality.lean": "4b5fbf77deb250caacac12852c144c5f7325daede4ba4f4e52527cbef332dc36",
+    "RiemannGaussian/SemiprimeIndexLattice.lean": "dc1fdb7b569142f3b5432e69ea3148a676037f726079c63e2f0956c29c3b2280",
+    "RiemannGaussian/SemiprimeIndexReader.lean": "77a113009c1b6f5f4607b22ba3996a92fa466b4a92f7c83bef6e42c65ef69109",
+    "RiemannGaussian/SemiprimeIntervalJet.lean": "dd11888269efc517aef536a982c007943b913840b8b15025a218879c45a1f85b",
+    "RiemannGaussian/SemiprimeKernelDescent.lean": "8ca2a9150bc45cc8adba170d91bd86652bd636de89571750fd5d7f61e88e8aef",
+    "RiemannGaussian/SemiprimeKernelResidual.lean": "877b827d5f546bdeb4934d1e4c44e2ac9c7864ab5b71b47bb783558ad9e3fb76",
+    "RiemannGaussian/SemiprimeKnownBitsBudget.lean": "b04236f4b4353b150d55d9552de7890e44d3b12189ab3701bcc219140ee1ca1b",
+    "RiemannGaussian/SemiprimeLehmanCoverage.lean": "119441239f25408f3e66c814f271a2675b95acfae517904638ef138eb1296b93",
+    "RiemannGaussian/SemiprimeLiteralQuadraticRoots.lean": "142d622bfff9551f31dcf8b025e04bb31bb8a7f7c1db011a4070339121315fd5",
+    "RiemannGaussian/SemiprimeLiteralRootControl.lean": "bb88b451b5674d13d2f6abf195b696a65651fd8b26c81e9e3f84888b252be0df",
+    "RiemannGaussian/SemiprimeLocalOrderRouting.lean": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28",
+    "RiemannGaussian/SemiprimeLongPeriodExtraction.lean": "dfd7371fbe423bb0b63bdcd06fc5fc57bcedd562377dbae986e003d797e933a1",
+    "RiemannGaussian/SemiprimeLongPowerRouting.lean": "e4e3d0385e600eb5b8d229135a301d874bb527e6353e3c5f32d646df430fc784",
+    "RiemannGaussian/SemiprimeMergedIndexAcquisition.lean": "f1f1b02df077e40d25722ce8a4d456ff1a212e2203baa229ef1149dc726b707a",
+    "RiemannGaussian/SemiprimeMultiplierNorm.lean": "5febabd5f97831c1e9665f6ff007b3ea3237fa3d1420fe4c42ca7facd64b5479",
+    "RiemannGaussian/SemiprimeOrderSeparation.lean": "877b827b378e604be3896d5572b8c4dea882b69c96103a8d56d957a3666a9563",
+    "RiemannGaussian/SemiprimePartnerRecoveryObstruction.lean": "b12617b593196e90f5b34ebb8d14d53e3b81af01f6b2303c5be8405b622b733f",
+    "RiemannGaussian/SemiprimePhaseSumRecovery.lean": "11203cb383bca90cfadac1fa49cbeb4fcf0941d7d228625b6eaf9a7ffe860ee0",
+    "RiemannGaussian/SemiprimePrimeSieve.lean": "b101011f39676da9e3bae68b493f2a48a814fecd108f5476567766c238cb6a1c",
+    "RiemannGaussian/SemiprimeProgressionPrefix.lean": "2bfb61b73bae37139a22e906688a5b58563d16320a708ecc2b929930065b673e",
+    "RiemannGaussian/SemiprimeQAggregate.lean": "7fcba39ef486347dbed8301682c77bd59920b2ab5a6d265dc362080977ed2c81",
+    "RiemannGaussian/SemiprimeQuadraticPointJets.lean": "7e1c05d14c9eafe4b76a94994fb17f481e1f250875d0aae3513953a55f895075",
+    "RiemannGaussian/SemiprimeQuotientCentering.lean": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+    "RiemannGaussian/SemiprimeQuotientRows.lean": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+    "RiemannGaussian/SemiprimeRHCancellation.lean": "06d2f7ad4f70567afbb60bebf206e1a7b2a255d141da59fba3b7a2691022f847",
+    "RiemannGaussian/SemiprimeReciprocalRows.lean": "8534529afe8354b7ace2706c536888493262cdb7a389a01a9ffe9830d7821a82",
+    "RiemannGaussian/SemiprimeReflectedCompanions.lean": "2cd81c59d523256704b2bd1befebbc9b63051f2fbd16bd726f3b0dff47c26582",
+    "RiemannGaussian/SemiprimeRoughProjection.lean": "7e9ec19945a091d8e6e14387c1cec1dcd866d971b2f64d5c4124b9e137c42e0f",
+    "RiemannGaussian/SemiprimeRowAreaSpectrum.lean": "891218ffa967eb04786e4231fd3467b370cf714bbe402123d454e10b2f8b853c",
+    "RiemannGaussian/SemiprimeRowDerivative.lean": "812cfe3af01c1f8bd23716a4acfb374aca19b9998745d70d1e0a884334d8886b",
+    "RiemannGaussian/SemiprimeRowPartnerOffsets.lean": "e590dbb5ca634919bc57adfd8468553df3c8e94474861e49a4f7ccc026150cad",
+    "RiemannGaussian/SemiprimeRowPeriods.lean": "f508ed49b2a1e3cace5cfa3fb187704add98e8cb024d909be26c3b0637d44cc7",
+    "RiemannGaussian/SemiprimeRowSpecificDetectorObstruction.lean": "da20f794b15a15317362b26b9fc5440f954137a92617c9f8b2581cfb611535b2",
+    "RiemannGaussian/SemiprimeRowStructure.lean": "4eb4abe2171eae5b6e78a4d3bb08efd47aafcacc59920a503e57f487894c9cbc",
+    "RiemannGaussian/SemiprimeSameResidueAreas.lean": "faf101ba996111c062c8089d046c3351ead3eb34542f814e1ad91136605edf6e",
+    "RiemannGaussian/SemiprimeScatteredColumnObstruction.lean": "a4b22b5452ff2b1eb3e4b03b678f8c4974ea023408df87af91abed41fb6874f4",
+    "RiemannGaussian/SemiprimeSeedDetectorResidueObstruction.lean": "5b400758aeefd5d2432dfd58b3a4886734a732a3cc85427daa6824717e39b919",
+    "RiemannGaussian/SemiprimeSeedFiniteTransfer.lean": "a1433e4ef5217f6a2d1b1be8d202dc336598efaaa10a4c9703f8c558906b1864",
+    "RiemannGaussian/SemiprimeSeedGeometricRecurrence.lean": "a75fe0b41bb1a586191afb51ac20c36f2efc6dbdf865d11fa71ecb093822fc8d",
+    "RiemannGaussian/SemiprimeSeedHermiteQuotient.lean": "cdc4a533208103dab4d5a9d93bae0ce44ecb48713de1a7641aee5c8e990f69db",
+    "RiemannGaussian/SemiprimeSeedLazyJets.lean": "ffc870883ccccb5d2237f40ecb87774b0b79328536e28a9e9591bb2530e0ef6d",
+    "RiemannGaussian/SemiprimeSeedLcm.lean": "360dffac147ee328687248acb6dae49277fd8c6f0aaa9c7839a4f36cee197c84",
+    "RiemannGaussian/SemiprimeSeedLinearStateObstruction.lean": "1676dfa7d20c5d14a96bf37c8aec7cc6bf2d0959c7228908eca42e9274115767",
+    "RiemannGaussian/SemiprimeSeedMomentCancellationObstruction.lean": "618504d7980efb8d05d84bc52eeade22098289d2cd1f8a297fdf0891e4ad0c7b",
+    "RiemannGaussian/SemiprimeSeedMomentPeriodGapObstruction.lean": "3f695cc4e05e23f4a71739416dfd4adbbd36269136fde4fb62e00ceb144ee71e",
+    "RiemannGaussian/SemiprimeSeedMomentPoleRetention.lean": "ec5077da426920618795068c0b9db16912e10fa8ffeb2f5f4587d050a04158f1",
+    "RiemannGaussian/SemiprimeSeedMomentPrefixRigidity.lean": "d9e76395687b8ba7451c1342f2f190e0e8d562aa7fee2d865cc9fdf8fd62cff1",
+    "RiemannGaussian/SemiprimeSeedMovingCarrierObstruction.lean": "5bcd145938a8469240274c54de00a19ddf73e3559e98f4f46a4246b6e824ffcd",
+    "RiemannGaussian/SemiprimeSeedPointRigidity.lean": "5983727969292fcda7ad959932a62bcf23eed67d86abe5727600955fc2dbd463",
+    "RiemannGaussian/SemiprimeSeedShiftClosureObstruction.lean": "47c4b50b47fde5d6f4a273a2d8267fef7cccda11d2de522748dbf5067f236de1",
+    "RiemannGaussian/SemiprimeSeedSumAcquisition.lean": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+    "RiemannGaussian/SemiprimeSharedIntervalJet.lean": "84cc111a38d5181f4c7c8555744b83f9ad349e31569ff2f5e4ff01a9f562b3e1",
+    "RiemannGaussian/SemiprimeSourceHead.lean": "719e1e9f88699bedc1a0f2a2339c947a9a1c6684da257d71de93a50b068cc246",
+    "RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean": "56366a6eb457bf39fe190de5dee083fb2287cb3259ea80184596f711ae9ba1d1",
+    "RiemannGaussian/SemiprimeSquareProductCover.lean": "48669b93df0eb98e28576639a2ff826e0ed0854676406a7be176799f84571a82",
+    "RiemannGaussian/SemiprimeStagedSeed.lean": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6",
+    "RiemannGaussian/SemiprimeStrassenPrefix.lean": "66f3a9b128761101e16b3943828dbbe60499a2c8b97f5d878a2a7c794b59e489",
+    "RiemannGaussian/SemiprimeSymmetricRowAxes.lean": "bcd3e68d3e5dd3030e0861b5b873380a5f9683e4dc5692ebbc4e3a2c0247b975",
+    "RiemannGaussian/SemiprimeTaggedPooling.lean": "df8d6cc14b0d28bcabdf3e30c64f7b00c5ace303976b563ca28e5fcdb8df5165",
+    "RiemannGaussian/SemiprimeTotientMultipliers.lean": "858d47915d57f2cc8ca1001d2ad0c90145e286f7140d77ad07a1876925b124f4",
+    "RiemannGaussian/SemiprimeTotientResidues.lean": "be974f88525d947c44b8796943729ffebb0b2216eed88887a4aa830a69f257a2",
+    "RiemannGaussian/SemiprimeTotientWindow.lean": "8a0b99a8069e46229fc5512e40ce2bd54691f29c79a01ee11b0c0a85733703a0",
+    "RiemannGaussian/SemiprimeTraceRows.lean": "39d8f15a2a1917037cf4fa457d25496fa5f8981870a140aeaa7a5234ec9f1d58",
+    "RiemannGaussian/SemiprimeWeightedRows.lean": "0ba7462afbccf163f67bef8698c963d97c685d180923b95c8a0e2aab4e06b3aa",
+    "RiemannGaussian/SemiprimeWideWrapCoverage.lean": "7bd39ec0bff02d72e8fa0ca22dc7b0e210b125fec55a95fdc3f5ea466e4e65f7",
+    "RiemannGaussian/SemiprimeWindowConstruction.lean": "73ec59d744f1002d56145a5ed74831b432331cd8f5f24da59464e3d5972ed765",
+    "RiemannGaussian/SemiprimeWindowInverse.lean": "5dd9d74d4659321eb3510e7b3fe3d43cde3b4ddea36192a14c723b2449005bc1",
+    "RiemannGaussian/SemiprimeWindowSqrt.lean": "9d15cfd46efb9022c870df70a6ccfda2388f4c4d35dae70de93bbed6d4c1829f",
+    "RiemannGaussian/SemiprimeWrapIndexRecovery.lean": "86d956152e3c2775e9a1d26308bbce1bb7afdad9d91008680578f7dcf9d269b6",
+    "docs/semiprime-adaptive-seed-acquisition-obstruction-audit.json": "cb1db05d79c385a844290d32effdd3e4ddace06792e36eb0f5a2a57d8747ea99",
+    "docs/semiprime-affine-frontier-audit.json": "3c54a2b7837083d9b3a463a444af1ded86565c8a3d76b322a22a7f3227ed3cc9",
+    "docs/semiprime-affine-projection-obstruction-audit.json": "8f2f101076b60a45849ef201fc523e5fed6d31e6d21b2c04cbf2882bfaa482f5",
+    "docs/semiprime-affine-row-roots-audit.json": "cb627707bf65c4c6fb2c0292e443cfbe523e214d6328ff651203229545fb77a8",
+    "docs/semiprime-anchored-row-areas-audit.json": "0bce7d505ebb248b41e43bd56d3cbbb9db56fa58e2eb281f09dc39d9da635788",
+    "docs/semiprime-area-anchor-frontier-audit.json": "b22ed5f30223d8d36f742b2949f8528d2a9a931b23c9dd22c14a00028362888e",
+    "docs/semiprime-augmented-row-coverage-audit.json": "120b73d4dc22ec13d8dbcb55defc40a773bcc77e1b503d762ce2ff559113253b",
+    "docs/semiprime-augmented-sorted-coverage-audit.json": "f6c3ac48a8fefb6243459c1cd87aff855e6c9a49c26e8b0c8876fd1fdb51f720",
+    "docs/semiprime-balanced-acquisition-obstruction-audit.json": "925652248f8f36273cafbad6307926bd2dbfdd835c76a351bfad458c4a8970cd",
+    "docs/semiprime-bit-arithmetic-audit.json": "038b6e413ca3206bc6274d7dbe6fa34964a1264682778a304833100be2f2a235",
+    "docs/semiprime-bit-division-audit.json": "0d5efab0f3adbbe5171198c1f92d1977be8c12d7ddf505fa6c59b5e7b3e9f033",
+    "docs/semiprime-bit-fermat-arithmetic-audit.json": "89faa7438ba7712e6445b96e7b489582a75cf182517dbffd1d37619fbe08a0d2",
+    "docs/semiprime-bit-fermat-interpolation-audit.json": "f65b7f1832b8da97e6ec60f726f2616d301d93b8cd9f9946b3d7d8d15bfcaa92",
+    "docs/semiprime-bit-fermat-transform-audit.json": "ca03f428a625787e5077fb31ec582ab68f80f8e0b2bd3836fb8d4b68393e0656",
+    "docs/semiprime-bit-gcd-audit.json": "9eea4e27a0a1fc8d5bb17616aa89c1ee9c0f9e0206a6c2f4bd900743921c9785",
+    "docs/semiprime-bit-geometric-coefficients-audit.json": "b0d576857fb5764d2db1a7d2da34b5e35f3178cdc50774b03aeba0fb82d289f5",
+    "docs/semiprime-bit-geometric-evaluation-audit.json": "e52f2bf3056592b409d44fa2de7b5c72b1fe054be028b9d707f598d04a747a99",
+    "docs/semiprime-bit-geometric-marks-audit.json": "53e0636740ac30f80711c0e06f4211a78bcccb350691268a7cb63794b7c6a15d",
+    "docs/semiprime-bit-index-basis-audit.json": "17c72564213e41e58c1d2e01acabf204212f106b375d879e5adfb7038e057175",
+    "docs/semiprime-bit-index-clipping-audit.json": "2db9d21224c2512509789eed8f27b6a49447f48ee44054f6ae8e3f63b49a807e",
+    "docs/semiprime-bit-index-factors-audit.json": "65d2cdf8a425dfa3cb0b466931ea48ab5cd2000f195f977926d8519dcc93b578",
+    "docs/semiprime-bit-index-geometry-audit.json": "50637f2112adc700756294c560c36912b2dc09df90d1fa2de374bad5f9409f57",
+    "docs/semiprime-bit-index-roots-audit.json": "c4fd811d72fd5144a54ccceeed8d4665b20f45a0b45ed4a653424af25efae4ee",
+    "docs/semiprime-bit-index-traversal-audit.json": "dc7a07ae9a52344c75e7d9bc50c0f4119df71f39576d0431c3d63fc13e3af398",
+    "docs/semiprime-bit-inverse-audit.json": "60355054c8086ec49f3fff0dffb5210d8197403f2bdb98c1bc4646329a03adde",
+    "docs/semiprime-bit-power-walk-audit.json": "6616b43038b9d982487bf9baf3d918b31b343fbdc03b7d443de1b20aa96efb8e",
+    "docs/semiprime-bit-prime-scan-audit.json": "5eff41612add68ad09f892327f2a730d318d939a8181c11df232efd02cc1755f",
+    "docs/semiprime-bit-product-sort-audit.json": "ba5e750b0262ad8f63ee86e0cef9df270fc4b81643d467b400d93ee830b2827f",
+    "docs/semiprime-bulk-norm-audit.json": "1d66f8fe5f855b1986ac3430eaebc9baee58eab6d1883dc6964fb9fe19d3a92e",
+    "docs/semiprime-centered-point-coverage-audit.json": "b1e669549b06bcfa3a55b2d3285ff0085dc38e96e62336ccbb56f9f03d0b6137",
+    "docs/semiprime-collision-peeling-audit.json": "f18c9cda150ebe5994e5b902bc1d01cfc689553d4518373db1bd392854c64303",
+    "docs/semiprime-combined-row-coverage-audit.json": "2c84e215ecb0931fe2c8657f4952e92eb9b7994e4eb6f21856bb2c3ae3d46d44",
+    "docs/semiprime-common-order-audit.json": "6f9b38cde11c9fcc3cfc5ba86d0a56bf40ea5d62a426b06d5ed6d42d17fbaa3e",
+    "docs/semiprime-companion-center-spectrum-audit.json": "f076966af20b41cfe5c3cb0f28ddf5bfaf6be3f55d51cd65d3145775233714c2",
+    "docs/semiprime-companion-coverage-audit.json": "859916896a05ee6ad496f63bca4503362072f109edbd5f0976194f6091084107",
+    "docs/semiprime-companion-rows-audit.json": "612c043f3ff7c093033273209b145366b1478761958139081c227f38b25482ad",
+    "docs/semiprime-complete-anchor-coverage-audit.json": "57243f71d003988c8b4cb17254c3a5a9a331696d339c89a1648e658e5f17a25f",
+    "docs/semiprime-dense-carry-boundary-audit.json": "1c631fbb2fa12cd742672e398992016334c30f04d3548f1b9a30be2ed6c436d5",
+    "docs/semiprime-dense-euclid-descent-audit.json": "b88c5440d7af1da403c8add115c500e45203d1ec4779ce3dd71e693350ee36f3",
+    "docs/semiprime-dense-loop-obstruction-audit.json": "322453b3654d764831ba8a2e817bda23724a2d8918462c063b4e69b6c1e9a30b",
+    "docs/semiprime-dense-period-forcing-audit.json": "19fe2f3f126cd33571927ebd221f39a6d48ace69505d8723dbe21876183c779a",
+    "docs/semiprime-dense-ratio-obstruction-audit.json": "458524b6025b4c037032fb24ef63e67d3fdc00646b82318845a4c8d802a8abb3",
+    "docs/semiprime-dense-row-carries-audit.json": "aeab6e673d878b4f4231d1ef81095b874eadb23c116790c6ff5a807fac903ca6",
+    "docs/semiprime-dense-row-coverage-audit.json": "50bb9ea76aa8bd1cc4ed20c594e7ceed947ced72c24448d4f07618e4e453c09d",
+    "docs/semiprime-derivative-coverage-certificate-audit.json": "3d73b527e08a33a9be8a5772a9f962a47aa787e6c6eec35f03df90883b831d87",
+    "docs/semiprime-euclid-family-scaling-audit.json": "a9acdc2672303868922d7fc7da8c8529f9ac1443d47ed353dc187cc1158a7a2a",
+    "docs/semiprime-euclid-row-budget-audit.json": "b7a00eaa903745a842548a3f5d14c1fbb677628363060cb908192c0ebb5acdaf",
+    "docs/semiprime-euclid-row-family-audit.json": "80ee52d0073118f76acbfa7be73fe86f0537e5d780dca298aeca73be5ff938ab",
+    "docs/semiprime-first-norm-audit.json": "49ced22fd5bedc3f8e378591770c066810d39f545e31a56e5c75eeff36118553",
+    "docs/semiprime-folded-row-coverage-audit.json": "a077aaf95174ee43171cdfedc637060ad8e7674b49f1f00a22cdefb8db67117b",
+    "docs/semiprime-forced-row-separation-audit.json": "f70a7b622efacc11e0e7e9695657e72794e96c6b8e90c72f2dd625e6c91867a4",
+    "docs/semiprime-global-phase-cancellation-audit.json": "fe434ab94e5168d35ebfc1767679b587eae6aff1e267047e4dc16ce070bbcb3f",
+    "docs/semiprime-guarded-trace-certificate-audit.json": "38bf6f22f3cc45ff42b472a98ce163ae0f82c6a6976508498353f79111889453",
+    "docs/semiprime-hyperbolic-wrap-coverage-audit.json": "fb6705e62303dbc6193fdd7123e8b1b57acb8d1056360c58d7660af4a064fa48",
+    "docs/semiprime-index-enumeration-audit.json": "2ae09295221cedbbce290de19428a108f49d47ef42bc757b8b88d8fc948319c3",
+    "docs/semiprime-index-integrality-audit.json": "5320520a20d1863f0373cd366c40ddcfc7f3f55b47894314eda4bdae27d61636",
+    "docs/semiprime-index-lattice-audit.json": "370aa4503f6ed8c52796bc466d44750f80a063d73573440148bf56880912f158",
+    "docs/semiprime-index-reader-audit.json": "4b38ee4afb5b3140c4930a3fd7f20a9054a256d40081b69473ef72696377e32c",
+    "docs/semiprime-joined-integer-sort-audit.json": "6c28cccac5b668e7292fe6accf41b9719fe099d9f604c80831255006b79e9115",
+    "docs/semiprime-joined-second-integer-sort-audit.json": "f0522c3a3277d0a25af1aa97db98a35a7b20a57ed6077010b13721d22f6b8f4a",
+    "docs/semiprime-joined-sorted-coverage-audit.json": "52e83135a07f7db8c6f16805900c144ad41c86e6a9dd444edb5d493d2602249a",
+    "docs/semiprime-kernel-descent-audit.json": "42208b4fb507a3d1563310ae6b2feda65f8e06d3ffb8e50640633d3f5b56153f",
+    "docs/semiprime-kernel-residual-audit.json": "0385276ff39d2b74e8e3f08c558f851028cd03fbfcf3c26529c721788847d92d",
+    "docs/semiprime-known-bits-budget-audit.json": "1d58687793c6711590ca5e435f819a24f04c04b243cc8d0a2dc2789c0f8ecdab",
+    "docs/semiprime-literal-frontier-confirmation-audit.json": "d0fb7239aa6b3b17be051da65152cd94581fe5985d8def1a05fd5fc856d7d82f",
+    "docs/semiprime-literal-inplace-frontier-audit.json": "3ebe0bb3a56e84f3408eb84b9a856fc60613b859df7bd05d5fdd530a666c839e",
+    "docs/semiprime-literal-quadratic-roots-audit.json": "b4a7dfce47846a045ec704844acb4c597f42079bf648d88ec167d9943929f1eb",
+    "docs/semiprime-literal-root-control-audit.json": "b95613850a55f8afc646125229cd3a03467ef783eb0bded94641de147d2de2a4",
+    "docs/semiprime-local-order-routing-audit.json": "5f4184e15a56523e07b68d9eb7c093a266111d621d7101046fb0104604c33482",
+    "docs/semiprime-long-power-routing-audit.json": "583b37e4677e55119fc5e1d5fa5eb8d834ff8b0dd98d691b9c65a49f4d83d43e",
+    "docs/semiprime-merged-index-acquisition-audit.json": "ab8620345eb876591655c3a99c352cbe68be48c262edcb1a68a0d31b0c3c6541",
+    "docs/semiprime-multiplier-norm-audit.json": "b12fe34b426f155e5b5d5ad609b2df30714a756293cc9bdbe9f8aee74b6b16df",
+    "docs/semiprime-partner-recovery-obstruction-audit.json": "fcd64d01db523fca080d3cb2bdc7940af0c145f2939908d2b3d7075b3837ccd9",
+    "docs/semiprime-phase-sum-recovery-audit.json": "b1a8b8c643d6e4bf735e14066a1c374d2b71671e23baa6d6f5a887e54ab20990",
+    "docs/semiprime-prime-sieve-audit.json": "4de8fc3d58bcdbd1cc8a8cbb250f7fbe681978352eac723254758f061476ae5b",
+    "docs/semiprime-progression-prefix-audit.json": "991ed5478ba2945bf613ee2ec05a99f962a0e8f6462a00856d30d877bd28b554",
+    "docs/semiprime-q-aggregate-audit.json": "0251435fa8cae56ed3bc72c61803fba72461372b4d446d33dd8c79e5feab05ab",
+    "docs/semiprime-quadratic-point-jets-audit.json": "05a168d0b848fd4fdd971d977f4f253640bca4dd18d2754c7b44179c9d39f525",
+    "docs/semiprime-quotient-centering-audit.json": "9ad1b3637c49378e0d29e1c53d3e748074b4ff7f15d9729ad625c3a4cb1a970c",
+    "docs/semiprime-quotient-rows-audit.json": "c8450d2d2129a5abdc3e911cf6303892091f8aef26baf116af66489bbaca5c19",
+    "docs/semiprime-reciprocal-rows-audit.json": "7240a1c89555df3b0d9ba128f3dac0caaaed803984dbddb9216bd66d8153c38c",
+    "docs/semiprime-reflected-companions-audit.json": "716cfd2119bbefa994d1fd520e0dccd54a26e887e8fc408dbceab3d4d6c89f3b",
+    "docs/semiprime-row-area-spectrum-audit.json": "94ff857ccebf51aebfb5468aa1fceeea2dd55878416f940f45516548d3ebf1bb",
+    "docs/semiprime-row-derivative-audit.json": "c991c9e4f4df2e10c95e8f2075c4607837596231f39336d5237b86a591c1880e",
+    "docs/semiprime-row-derivative-coverage-audit.json": "f97dabcdfd175c4e1b15bbfd5e5517aca9ea200ad57db9359109bfa37ce6482f",
+    "docs/semiprime-row-partner-offsets-audit.json": "33550daa4916b1635dbbe5625954323353f223e5230b42fd78af746ec5642068",
+    "docs/semiprime-row-periods-audit.json": "9828e2163b2387d4fd940e526af54e47265646081a006467e9939d4da7bb96e4",
+    "docs/semiprime-row-specific-detector-obstruction-audit.json": "dad5f8148ca37850c0c6d6a4a10f5f826f48b00af45201a8711f9d2460ea3b5b",
+    "docs/semiprime-scattered-column-obstruction-audit.json": "65bfc05535b70737b7b0dab765d592d93086a8b5418f8bddc341c935aeb881ae",
+    "docs/semiprime-seed-detector-residue-obstruction-audit.json": "1091fb2fca464d49200d11932da47ae33215f05146e840bb5034a8e86f614a1b",
+    "docs/semiprime-seed-finite-transfer-audit.json": "4d133c2973b79d3dd790a11bcffc764457fcf84d6d61389258f17ebc43cde5fb",
+    "docs/semiprime-seed-geometric-recurrence-audit.json": "2d961c4163fbb089579ccb463ddbf801132adeda86c1c922c11238bc7d8863b5",
+    "docs/semiprime-seed-hermite-quotient-audit.json": "4643837f358f65dab868f5bfef037bca4fccaa989328cc0732384cd0994859ce",
+    "docs/semiprime-seed-lazy-jets-audit.json": "d27f9a3401b42e575136b9f578593c7a78440292437ec9a337da37ceb0e1fd6f",
+    "docs/semiprime-seed-lcm-audit.json": "a91567bc1f96b6ade65c07fea934edc5e16e799ada43b18d705175d85ee86239",
+    "docs/semiprime-seed-linear-state-obstruction-audit.json": "78d7910c4ceef06e5be706581425e6accc7102cec0dec135acb24b0ad6b1a6a0",
+    "docs/semiprime-seed-moment-cancellation-obstruction-audit.json": "9f8f79b4c65ced0eff1025f54474a40987927cfb28f97bfe1f2b88af12bfa490",
+    "docs/semiprime-seed-moment-period-gap-obstruction-audit.json": "7427a6e2956fad9224684f8426db047154efab7848308129f4a1a736a572d9d1",
+    "docs/semiprime-seed-moment-pole-retention-audit.json": "a4d13796fc072ec5743fbb8926a43c4f589c0531f010c08bc63eaee6bb0efe99",
+    "docs/semiprime-seed-moment-prefix-rigidity-audit.json": "b108f9855ffb593034cd25d587eaa021c805581ae55d64dd216715c349f81a2b",
+    "docs/semiprime-seed-moving-carrier-obstruction-audit.json": "eefdce506327c1c2281952eb4c2107f0511e6689f821b500523fac2258b4de6d",
+    "docs/semiprime-seed-point-rigidity-audit.json": "4f7b44d30152096e035509e73905f5615c1bb577f250bbac4af6e2821c4dac87",
+    "docs/semiprime-seed-shift-closure-obstruction-audit.json": "6d9a2b7faab3613ed61f8864b0a09f9596a2b58f80948a1bebd7887c11ddd00b",
+    "docs/semiprime-seed-sum-acquisition-audit.json": "da82da32bdebbc2cb9f50951623011116516dfe4b2d2af4c810827dc33d2aa98",
+    "docs/semiprime-shared-interval-jet-audit.json": "40cebf9f2750124955531ce407187a6773812dd5395f0b15c224f31ffcbc1e6b",
+    "docs/semiprime-signed-companion-frontier-audit.json": "12d08fb72daf2c61957026320e799f0e96f5cf4a91033e2fa77009ee0d980906",
+    "docs/semiprime-source-head-audit.json": "1a7be11c28fa51de9cf42bf5e0731fe69d3a6f19e34cb91e1dbac47fe39ebfa3",
+    "docs/semiprime-sparse-block-period-obstruction-audit.json": "4bbbddf0bef898cf16d3b32e81b307ae3b13e14c9ce8a6bf2ec2b75203b00c2b",
+    "docs/semiprime-staged-seed-audit.json": "1ec877ee1e53782a919418bde90d9714bf23813c9c5753eb41de03e19ac8054f",
+    "docs/semiprime-symmetric-bucket-frontier-audit.json": "10194e6a343248bfd6e61b58e790aec63fb0d5f93d893e4ccd9f086c70d3008c",
+    "docs/semiprime-symmetric-bucket-preflight-audit.json": "4a59bc9961d8f7a87287b3dae024cd6ae3d7e12bf39c621d03afc4d24497ba66",
+    "docs/semiprime-symmetric-frontier-confirmation-audit.json": "0ef6ca00c573acbf0c50189bec367d88d868f4593f9c2c2fb9bcf9ca2a6ba284",
+    "docs/semiprime-symmetric-row-axes-audit.json": "2d3e709cf562abe6a6297837ea1720477d967f08b8a93056627dc55fb14fcae6",
+    "docs/semiprime-tagged-pooling-audit.json": "041e9d99edae6eba292085b7759249468e0a17d678a664209cff27a9120f6b78",
+    "docs/semiprime-totient-multipliers-audit.json": "f9e0dcd4639eba544b272ce1d277550bfd47b5636b5c0279477fd5dea92a931e",
+    "docs/semiprime-totient-residues-audit.json": "b76954168ff18691922f6e2e4d495cb95f83cd4ae41dff4abbc26503b516b3c8",
+    "docs/semiprime-totient-window-audit.json": "4ec843f1ffae4308bf4d0316b0de4feaec9436106cd21bdbc3049a2daef1f59f",
+    "docs/semiprime-trace-rows-audit.json": "507f5125e54ae69cc761b030be0569f57adc56cd4264dd09e0d6b226f09149e7",
+    "docs/semiprime-weighted-rows-audit.json": "cef09be80927b3f6732396d9e0dee33386ec8777b878a08e057fc6f758fb28a2",
+    "docs/semiprime-wide-wrap-coverage-audit.json": "909b46829445d19441a1dc253c9abbb6a68459c122a1755033f2f7d24838ed33",
+    "docs/semiprime-window-construction-audit.json": "8021df0ddd145803deb0fa12998dfbb71104f6c9c999c92f71a2d7124941d215",
+    "docs/semiprime-window-inverse-audit.json": "bb09e4cf16b90ed239f41dfd976fb72d8f5c068b2baaf0d3d390f03bf7288f44",
+    "docs/semiprime-window-sqrt-audit.json": "f22054a30bfd00c28b1be3023d9308eac9c00f86b9ed3724816167fc97a13497",
+    "docs/semiprime-wrap-index-recovery-audit.json": "c74b287cd206cb26ed5ac292b98d504c836b00b96a05b36971241ee1305d4095",
+    "lake-manifest.json": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "scripts/CheckSemiprimeAdaptiveSeedAcquisitionObstruction.lean": "0b39907d3a188476160c56b9d70501b7bd3ca47d511679da03320e2eb5395e29",
+    "scripts/CheckSemiprimeAffinePointAreas.lean": "5181997e19cd004cc89e18642745d85b3767762d3661b0b69fb79a8f9ca6e362",
+    "scripts/CheckSemiprimeAffineProjectionObstruction.lean": "9387b2d7ab3556a8639118341f270fbe34857e4ff0c49b275d1ed3d5e98a1b77",
+    "scripts/CheckSemiprimeAffineRowRoots.lean": "625c90087a70a40b587931a02b950b6443db80903bcbf1e6ce19d489c1f47cf7",
+    "scripts/CheckSemiprimeAnchoredRowAreas.lean": "0a676c1b26e835340bba8db3cd9f06959b18193d0897fc5ab4bc3df5f819bab4",
+    "scripts/CheckSemiprimeBalancedAcquisitionObstruction.lean": "ef79141e57f68ad8ca84004ccee6ad2501b824461ad586841f46ff254f96bb81",
+    "scripts/CheckSemiprimeBitArithmetic.lean": "b86220dfe4b7f0887500191e649318865360238e3c1cad30483798b5ba9e1707",
+    "scripts/CheckSemiprimeBitDivision.lean": "bfe796d7b162523012ee5fd5ed321875eb437a1df7d990fbd1295df2d1392ce6",
+    "scripts/CheckSemiprimeBitFermatArithmetic.lean": "5f618c3dce4e24ebafc5c7bc4c61d90e3785a389d5d48f1ed9c127bb6166b01d",
+    "scripts/CheckSemiprimeBitFermatInterpolation.lean": "cd7e5a5869221fa0792546eda4c5888ae930c588b40df0b7ac59aa0b1d5d2ced",
+    "scripts/CheckSemiprimeBitFermatTransform.lean": "3953cfd28e8fe334a6688f72d678ab1aec00c60e2a292e688b7828db4f559b97",
+    "scripts/CheckSemiprimeBitGcd.lean": "0cf1a74c6a209cc2583630312a2b6361e914c8707426c62b14551ef37718b147",
+    "scripts/CheckSemiprimeBitGeometricCoefficients.lean": "e87f769bb4b3eaf0a288dce5075f74e8735b4224f53f962f0c185286daf1f601",
+    "scripts/CheckSemiprimeBitGeometricEvaluation.lean": "1ffbc6a6c16ad85218442800cb231b5ee5e4939559fad2f2103b520cc1cf689e",
+    "scripts/CheckSemiprimeBitGeometricMarks.lean": "c039661d11fd9d9d5e066201663afb7ab56e5b3ea88372e09a779594f98eb517",
+    "scripts/CheckSemiprimeBitIndexBasis.lean": "ab14dfcc61dd8679190742b6b6e0ee550a7452879d932276950c5d5b672bc5df",
+    "scripts/CheckSemiprimeBitIndexClipping.lean": "b7b92bea2c80b1a0612840c7204395ad8cfd99e22d6b7db3e784c090dd3cc8cb",
+    "scripts/CheckSemiprimeBitIndexFactors.lean": "a6c2879a87c1fea13e6870b35217eff0bc218eee4ff9ee9bb0f95134d56022c5",
+    "scripts/CheckSemiprimeBitIndexGeometry.lean": "76eba59b786272d3268023117a415978dc5eac9e265478db6799ff8c544ae7dd",
+    "scripts/CheckSemiprimeBitIndexRoots.lean": "4028b6b7d2231ff7356b77c1676a00d98f76db9a4e80a7696d127704c891a5e8",
+    "scripts/CheckSemiprimeBitIndexTraversal.lean": "27d0789c06cba3d0cc95b4b2315e183dcf68978b80a5b0623baf4069fb431398",
+    "scripts/CheckSemiprimeBitInverse.lean": "556906233d3ffe5ef1fc4636deaf5b5aef0111e5612fe0bbba77aaf27a7a43d5",
+    "scripts/CheckSemiprimeBitPowerWalk.lean": "1383b98d64453f5c8d9a63a5d872c318c65aac09826485a0841d0686cac30fc2",
+    "scripts/CheckSemiprimeBitPrimeScan.lean": "a433f610a9097d83eae53e44ec4b57c0348089fcdad97f6c72dd03ce602c8baa",
+    "scripts/CheckSemiprimeBitProductSort.lean": "95a864f40e7c5ba3fe9fad15d87a8079200ca2451b4418d1691b510e79cc4c5b",
+    "scripts/CheckSemiprimeBulkNorm.lean": "95ab5b18ffaef54d4642aa05fcdcbd0238db6c71b84dd32f8d968b3fd262a921",
+    "scripts/CheckSemiprimeCauchyAcquisitionObstruction.lean": "fe89977886771a1c0b886e7665db1708e20c42e7c683f7699ed595e062fe1426",
+    "scripts/CheckSemiprimeCenteredOffsetExtractor.lean": "fb87241a6eedbf650ca4d1f160c3ff3cd20e2f7c4a80a9050f90308660d02491",
+    "scripts/CheckSemiprimeCollisionPeeling.lean": "3a7e9f9aed39037bbabccc7ac67059b48c58821adff81b0465d7a9c23c6567b5",
+    "scripts/CheckSemiprimeCommonOrder.lean": "4435d9837829047902ce5a007989f09b538d406157d5ee48169d91d32ca885ba",
+    "scripts/CheckSemiprimeCompanionCenterSpectrum.lean": "eae3cdeb31255d4bb33daadb7d863f45a1a50ffc91c003cca867130ee04aac82",
+    "scripts/CheckSemiprimeCompanionCoverage.lean": "0f9c0ee611668dc5fa115e16a1bed6505c2742c06c599dad70617aaafc765102",
+    "scripts/CheckSemiprimeCompanionRows.lean": "b5a68d0b9500d9060887616fcdc759d18e8bbb8a3fe3856ded40dff99ba2c940",
+    "scripts/CheckSemiprimeDenseCarryBoundary.lean": "278d9d1acae58ee53e4a900beb75ee78aba54228e2b1e69e747a319bce2ab44d",
+    "scripts/CheckSemiprimeDenseEuclidDescent.lean": "bb3159cbcefc7718a8c4970c5a12826fe59d931466c83498a60d9a58e5fd80e8",
+    "scripts/CheckSemiprimeDenseLoopObstruction.lean": "17d494d4c54f65877d5ef0723ecb1166a1e67c8f929724bdcf28de8ca01bd822",
+    "scripts/CheckSemiprimeDensePeriodForcing.lean": "7887803a912960f6c8cb79671ff2d23655e9a715198ac6cf53d316ff9d9ada2c",
+    "scripts/CheckSemiprimeDenseRatioObstruction.lean": "2f2dfe9f5914efcc6cf3200f75e010de394d8abc78c70aee816af80368c1182b",
+    "scripts/CheckSemiprimeDenseRowCarries.lean": "5ff622b80f0cf4247520e2444633746b1a9f6dac4d40e331d99e3f63a3043ea2",
+    "scripts/CheckSemiprimeDenseRowCoverage.lean": "16f10f5c53bb6e51e029239ef0cae47f644d00b498919dae8bf2d8d663e42f33",
+    "scripts/CheckSemiprimeDerivativeCoverage.lean": "e275a8ea0d0783b9c046e740d3e4bc229227ef02987d204021e4c0376db82209",
+    "scripts/CheckSemiprimeEuclidRowBudget.lean": "78108432fd60dfe6ce700dd4b547d08b495db159f41dfcf6ee7f1840bec7d9f5",
+    "scripts/CheckSemiprimeEuclidRowFamily.lean": "c1914f9ff373ef1a719299b401b747a7a4a0e1528302bcc58dc3fd152c1efae2",
+    "scripts/CheckSemiprimeFirstNorm.lean": "f4b120f327eb87ac8b61fd6afefd8dc9c734c7a6c9dfbaa0d98f9f5ab6f1d2b3",
+    "scripts/CheckSemiprimeForcedRowSeparation.lean": "b6dbc28abc16dcf4ce6c0b115f1197faf324681e1a5e20971a6baf62d18361dd",
+    "scripts/CheckSemiprimeGlobalPhaseCancellation.lean": "24c69202f974b64f34b94f599fc196e2c374685db4c06281c57f0cbfd43ef44d",
+    "scripts/CheckSemiprimeGuardedTrace.lean": "f19375268fa3f746307cba57559de0ca88bf8418d47f3b1d8d0be4683f0543f2",
+    "scripts/CheckSemiprimeHyperbolicWrapCoverage.lean": "08bb7a1ad0f570f724731de3343084c70f289e2f724387b05ece703d15ee0ce7",
+    "scripts/CheckSemiprimeIndexEnumeration.lean": "d9afe372bca704e1173c2e4c754f0f1b78dc049d724bb82fd55121487f1dfd7f",
+    "scripts/CheckSemiprimeIndexIntegrality.lean": "4eb44746a46e3fde7ba16537da3172f03da75c2c774a3597685c57fa4ee81e9a",
+    "scripts/CheckSemiprimeIndexLattice.lean": "901201e3d54e1dee9fb4a42445c4794d573552e75af17171dd66306ea8b16dc3",
+    "scripts/CheckSemiprimeIndexReader.lean": "37da72c0e31bfaf50b142e61ef825daaac8fcd79c88f3d57a02e2867ce86e8ae",
+    "scripts/CheckSemiprimeIntervalJet.lean": "c207a4225b5c4667d38e3bb6b06257eb5d567a9beb5f45bbed4a541d0c0f86ab",
+    "scripts/CheckSemiprimeKernelDescent.lean": "75dbc56b8427fc458ddb928840955c7b27b424e3223fa6bda46e807cebd16411",
+    "scripts/CheckSemiprimeKernelResidual.lean": "676f894dd309c94c629dc85c6ad7af212349303d6bd496f903c3dfc6572caa61",
+    "scripts/CheckSemiprimeKnownBitsBudget.lean": "b83818d35b709e7c0a52a70b34ce2f510e70cf8fd46fd2a22336a62d28cfd024",
+    "scripts/CheckSemiprimeLiteralQuadraticRoots.lean": "ceb9bdda86c056b9cb3ee4cfc1dc31435d610ba39834d7126589a6e5b8efd0a3",
+    "scripts/CheckSemiprimeLiteralRootControl.lean": "8b81ea0e7839be6f664abeb6bbab275d86c02b118484a369c0aac09d2fe014c6",
+    "scripts/CheckSemiprimeLocalOrderRouting.lean": "9168eeb0dccbc5bb93cda2d481269a8d841b39d0d3b9a71281fd2222ff272654",
+    "scripts/CheckSemiprimeLongPowerRouting.lean": "2b7d6a40449d1b9a644bd630be736b2101fd0f360f11c504d644637ee0445dcc",
+    "scripts/CheckSemiprimeMergedIndexAcquisition.lean": "d78b5b9d35529a5d3d0740f74a354242987c0506ccc493a3057a5f881325583d",
+    "scripts/CheckSemiprimeMultiplierNorm.lean": "150483d40c38d913d07f8b4d4d3e43ea546cc475b6ee2a8d65d1230dd618ccc5",
+    "scripts/CheckSemiprimePartnerRecoveryObstruction.lean": "0065fb79ae3b1a8d9fe2982d1eb647a35464fd3878eb02991564864e2230af2c",
+    "scripts/CheckSemiprimePhaseSumRecovery.lean": "ce404d0db905f377ea9f52882ba238c9772cb0c6f3a3c0665210551df93432fa",
+    "scripts/CheckSemiprimePrimeSieve.lean": "d0daf6b227beb803ae247fbc619e9d50940576a50f900c0817276ed54eb9a283",
+    "scripts/CheckSemiprimeProgressionPrefix.lean": "3e64ccf6a0f873f9468af8ad3fffaf0eb8e153a89d1c269abf9fa72e18974d89",
+    "scripts/CheckSemiprimeQAggregate.lean": "954274597a90d2079fab045d48a02198d96bfdab2cbe32131631dcb5e9eddc54",
+    "scripts/CheckSemiprimeQuadraticPointJets.lean": "df7e122534f1a726c37963fe23f38311aa45b0bec04115d0cd6fe74c026931ef",
+    "scripts/CheckSemiprimeQuotientCentering.lean": "20f1514ad7d580aa85e8dc3ce0a25a99868d941a2b2358714002fe95a5a66ca6",
+    "scripts/CheckSemiprimeQuotientRows.lean": "f8b9dcaed44056eb881b77489a9399e3af3af6797a37489c984699602c37061b",
+    "scripts/CheckSemiprimeReciprocalRows.lean": "6022d6f91f1d5898b302fb2ffd8a428621778761fea45b1fcaeafafcb1eab727",
+    "scripts/CheckSemiprimeReflectedCompanions.lean": "e7888a16848201fcfeb73ce0b9011b63996e6d07f51b76f2b448070035d9c04c",
+    "scripts/CheckSemiprimeRowAreaSpectrum.lean": "c26d4623e99af9200fcda6e68042d7c181cae4be73cd10d110dde68667cdb720",
+    "scripts/CheckSemiprimeRowDerivative.lean": "120d6cb9d9d8a941861908e6a3fa99831a1d678dfde655dfd625f0cc6ad78dcd",
+    "scripts/CheckSemiprimeRowPartnerOffsets.lean": "9d009a12bae60f1c4f2973ae4e4775fd517494d8a86ef9fa8bfcffaaf1021a0f",
+    "scripts/CheckSemiprimeRowPeriods.lean": "19ca8726ee9306b18284141c83458703101ffae8005919e993bef39c57bc5178",
+    "scripts/CheckSemiprimeRowSpecificDetectorObstruction.lean": "d8c25bd8508f4f84c4fb91e7fbe2acb3ddbca0b4ef3202abc5522a7b4eb821dd",
+    "scripts/CheckSemiprimeSameResidueAreas.lean": "9bc32c3b144d59f75409aebb1a18767327f232e8c7993565fb2bb7414fdc6ee7",
+    "scripts/CheckSemiprimeScatteredColumnObstruction.lean": "638e9e1eecad36a7e541f102f84d2cbb6ade74177923725a8305c80d256fff95",
+    "scripts/CheckSemiprimeSeedDetectorResidueObstruction.lean": "acd0d679e29559d7ecc6ecbd06b7a8bd9077d3e10bd7ea8d9472ee34913e23bd",
+    "scripts/CheckSemiprimeSeedFiniteTransfer.lean": "ab836e0e8e8469a62ffd48c34ec62400bfbb776f3a1e26fcde7c52a053c37aaa",
+    "scripts/CheckSemiprimeSeedGeometricRecurrence.lean": "b046f13891a83d5431a09ea8b950c6ac99b0fd65c20a25d1e40c39271dc152df",
+    "scripts/CheckSemiprimeSeedHermiteQuotient.lean": "d43c00d52b504539e4652b06353b471c0287a62f7491af405ab94201c8a3e5f3",
+    "scripts/CheckSemiprimeSeedLazyJets.lean": "9e4d0bdceef6afd4dfd35dd3d6438c07a620880c6aa292ca21da42588027ee33",
+    "scripts/CheckSemiprimeSeedLcm.lean": "aec03daeea1a2e0b682b59059b832006475afa4729c876f46ed8bef832a955f2",
+    "scripts/CheckSemiprimeSeedLinearStateObstruction.lean": "e85daa22824718893c6e4081349da0607cbd2399ea309cf41765fa3db8d27a02",
+    "scripts/CheckSemiprimeSeedMomentCancellationObstruction.lean": "01e07ef7a2d5a66d6a5f2db024e890f6b979fb6a40c677c8ce0bc48cf7214633",
+    "scripts/CheckSemiprimeSeedMomentPeriodGapObstruction.lean": "90e30e5fc0b7e48896fdc6bc019807a577b0e9f1a4c77ba2035e5097da3db7ca",
+    "scripts/CheckSemiprimeSeedMomentPoleRetention.lean": "a23550a08724aa557ed9a815b1c31cc83b2a700f2507c5bc4b7d22ef15304a23",
+    "scripts/CheckSemiprimeSeedMomentPrefixRigidity.lean": "e65e71a60471545512c2c5a2783ffef11a7d8e5dc48de122ae5a6c7f32b0d6ec",
+    "scripts/CheckSemiprimeSeedMovingCarrierObstruction.lean": "025e0e241b8b96c63c6e80f7df0237d4efa10a4a71ce83dcfe83afad2ad2b089",
+    "scripts/CheckSemiprimeSeedPointRigidity.lean": "2dbdd1145be57a98defc9b73777bca9d7ca56d6425fe5820e382f6193625e99b",
+    "scripts/CheckSemiprimeSeedShiftClosureObstruction.lean": "c9f0a968ba3a2fff20d5b0192ba5bcc08c11dcb8d62617ec875246eb75644456",
+    "scripts/CheckSemiprimeSeedSumAcquisition.lean": "9c4e5dd05398864353a8b1afad0f1d691e1f903c4fcf73803d187b158e00ed4c",
+    "scripts/CheckSemiprimeSharedIntervalJet.lean": "86bbf1692f9ad787205528211b69316ad930895866376dc094876dd4acc3bf01",
+    "scripts/CheckSemiprimeSourceHead.lean": "2a93cd4e9da4cabe490f319da899f7de69fdf9c1f1e7bde189524f1b37a41e07",
+    "scripts/CheckSemiprimeSparseBlockPeriodObstruction.lean": "134551e05e851a79dc4c4dafcd35488ac05b953fb54dbd4537377e947ab0c1b0",
+    "scripts/CheckSemiprimeStagedSeed.lean": "29efd92964d3547427c36303b45e59ca189314240a0f814e24bc11f282066c3a",
+    "scripts/CheckSemiprimeSymmetricRowAxes.lean": "e58e4d69ae0f2bf135ea0945576755b93aa090a3819ccbab1f22b8e82ff43282",
+    "scripts/CheckSemiprimeTaggedPooling.lean": "90141211b86764c93393c75a296a1d9a8c19ffa1c00963b5f59f7af8ca1f285e",
+    "scripts/CheckSemiprimeTotientMultipliers.lean": "01e33f45882c087f0ad46f952822f83b182ced605930d441d5cc8a89982110a9",
+    "scripts/CheckSemiprimeTotientResidues.lean": "f0d0850570ee7ac9da1916abc92c69c815d22314f54eb0f0eca5d58b34b406ad",
+    "scripts/CheckSemiprimeTotientWindow.lean": "53bcb000a6f67c24b4213817a395613ba0ebd2b47658c7a48541e973f4cf1fa5",
+    "scripts/CheckSemiprimeTraceRows.lean": "0726efe5e3307df6b9a327611cee83cf856dc014a703fc69fdd53b6ef19e63ab",
+    "scripts/CheckSemiprimeWeightedRows.lean": "130055306e59195b13e7a9bc884c46de604ebc114acef4cffce6a01a2ee864be",
+    "scripts/CheckSemiprimeWideWrapCoverage.lean": "86d6bf440ffc3926dd643d8f441578cefa3c5e4c50c5606aa10bb045e75c0cb4",
+    "scripts/CheckSemiprimeWindowConstruction.lean": "d10384e191c6984c3f47f1d22b2106f1688e833a4cf68b35900b3d3da08231e5",
+    "scripts/CheckSemiprimeWindowInverse.lean": "0eae698c31e3c698a13ed7572238b007ef35a2a0e2ccd30322a3731fa95441e0",
+    "scripts/CheckSemiprimeWindowSqrt.lean": "77091c9458b3840572f1168be6189c02b05dc065e7715b0b458df25fdcead0d6",
+    "scripts/CheckSemiprimeWrapIndexRecovery.lean": "f654a0976dc23a748b3326bc70c94ef15c91b123d5f2becf0fa69ad9822237ea",
+    "scripts/probe_semiprime_affine_frontier.py": "526abd84a962f69e211735f3185b29e842720ab229e5c047c56d123ea4cea331",
+    "scripts/probe_semiprime_affine_row_roots.py": "ad1ba3d149a16963e73d8c40c4d296973e1ba0b52e22384aad3dc7e6066ef7cd",
+    "scripts/probe_semiprime_anchored_row_areas.py": "746bfb4161c85111c0de44a9dbd4ccc8dc957f82f8816b8b7cd0dae0fab50f97",
+    "scripts/probe_semiprime_area_anchor_frontier.py": "af9cc0f65e2634da93a6f1d0bf378e961ef8c52b23d1ec9971c103b29a61acb9",
+    "scripts/probe_semiprime_augmented_row_coverage.py": "2cf9d6bcd284e3f3b5cb4e01da674f30ea6fd78f7a62a2f0a7f20323bc2f6d8a",
+    "scripts/probe_semiprime_augmented_sorted_coverage.py": "1d08f847c96775e5e151906b0cb5014f4c622408284423eddd0f41237570afdb",
+    "scripts/probe_semiprime_batch_recovery.py": "8661bb43706c44888250bbd21caf595c720be9f22ac65885b8d5c891c3b07d36",
+    "scripts/probe_semiprime_bit_arithmetic.py": "859ef8f4ff9fe60d562b9b9df7dc957c987b4d8b3fa3d4570ca67ecdc78013e5",
+    "scripts/probe_semiprime_bit_division.py": "842be491be5f1f8b2185deadd8a37b5e37bb11af15ccf74e0c2313f2cd40ca7b",
+    "scripts/probe_semiprime_bit_power_walk.py": "f8606dc759a331b05d48f4fc4f0c61a1df6affcde055f29be63ccc42fcf13223",
+    "scripts/probe_semiprime_bit_prime_scan.py": "505e95600b4d3e740c2216be4b29441803903afd4e33adc60c6678aa40fef1e1",
+    "scripts/probe_semiprime_bit_product_sort.py": "8211dab13ceba8338510804508da79e93ba491c27dae5659a7672ff38d85b78d",
+    "scripts/probe_semiprime_bulk_norm.py": "101826779edf8cb6ef325547cc348e0e21d7581e18b2d623b411e54671a0cb98",
+    "scripts/probe_semiprime_centered_point_coverage.py": "9db187fd6583108aacc7601fab30a003ff065325e1cb81e73099abeedc5dd1c6",
+    "scripts/probe_semiprime_centre_free_cover.py": "f1d2ce0590b25087daa70baed4383012ca1fe40c484eca6ca92cacc8de32ceb9",
+    "scripts/probe_semiprime_collision_peeling.py": "c2daee767fdc04f7f64c840eaa499bc1bccb50b05ab8974e665fe0698731c020",
+    "scripts/probe_semiprime_combined_row_coverage.py": "4bb3adaac59a52c9c887eee60346d4aa07645623e3b9a8fdbea7cb397532bb8a",
+    "scripts/probe_semiprime_common_order.py": "902dd6736c04c36bc71810c9090dca20e3439a794d2981e7a77e0dff0cb47156",
+    "scripts/probe_semiprime_companion_center_spectrum.py": "0136a228e42a5877ed705b48e0f7faae3199d42253b81b621792bfb83e97fdb2",
+    "scripts/probe_semiprime_companion_coverage.py": "aea3dcf4b122796e4a14cae257803098774a687bb2c8bd97881575e5217f5820",
+    "scripts/probe_semiprime_companion_rows.py": "fda6ee73d22c8a26b7879d669fdb251de3b924e77475ee3148b153cace82c2bb",
+    "scripts/probe_semiprime_complete_anchor_coverage.py": "3258afe7195c32edcd5d0ae6a6c67478b3d20b3513fdd6c73cdd0e739308996d",
+    "scripts/probe_semiprime_derivative_coverage_certificate.py": "7057494ba317a9a1adf29826d9b2f4d432948daa791b0a0aad6df53e7564450e",
+    "scripts/probe_semiprime_euclid_family_scaling.py": "2800a02b1e97bb7b91117c5e5a911508b022a3ff3c4ec24508fbe3aaad8f891a",
+    "scripts/probe_semiprime_euclid_row_budget.py": "43e0550a4a45c5e0e686e321364af434b7603480f3fdc637a9c32c5af17b4063",
+    "scripts/probe_semiprime_euclid_row_family.py": "93b3692ab0c7316ec611bcf4445135ff753174235a458338bde0d75a7d3cf8c8",
+    "scripts/probe_semiprime_first_norm.py": "5d2dae419db347557d6054213d659f0d4fffba32463acc1781332abe6ba8e043",
+    "scripts/probe_semiprime_folded_row_coverage.py": "544cf2a0e44b92ac1c1d19892f37f84dfd3fae23685db4870576a438d613fafc",
+    "scripts/probe_semiprime_guarded_trace_certificate.py": "28ccc2f36e07f4513149df3ca98c8ff33139eef2a2b3ce90932d20dc5c26d733",
+    "scripts/probe_semiprime_interval_jet.py": "edae5423664763b1f079163f6ad8aeaacb015ac0ce98c0abb29d2cf35124d529",
+    "scripts/probe_semiprime_joined_integer_sort.py": "2a9a27be422989709b1e7c9c2c7d570f478e5d0a041ebbe13a94a79eeecf99c2",
+    "scripts/probe_semiprime_joined_second_integer_sort.py": "be7c2e1693753ba9b507e58cec0a7639243500fc491350ad1b11d3425f6fc68c",
+    "scripts/probe_semiprime_joined_sorted_coverage.py": "d35b61d9319b227bb9fda8fecfe5b8eef82558bd2de34c00251a7576de6e1f58",
+    "scripts/probe_semiprime_kernel_descent.py": "6237da6517a9c27bb314d0b0b2eb7c2c59033b4493b0e54b92e0f5bbb6066091",
+    "scripts/probe_semiprime_kernel_residual.py": "a22f2779e9101cb554e1e5a9916e3c9ab493b77c8f3fb1bfcf24fdd4c2207967",
+    "scripts/probe_semiprime_known_bits_budget.py": "d1900875b51328008d9233ee71a855330c962bf8ab9a83a00e8b3b37a4006236",
+    "scripts/probe_semiprime_lehman_coverage.py": "aed556e1ad73492a70b82dc39ac11be39117458d778fd47cf73c4f134eea26a1",
+    "scripts/probe_semiprime_literal_frontier_confirmation.py": "44081732516ff8fee15956519b1ca88fbc28b4fdd0cf6cabce4860c377335193",
+    "scripts/probe_semiprime_literal_inplace_frontier.py": "2bd07506b6e39d7be2e408ece5a9b5964c1cf99d33c3e5e322986165c4c18a9a",
+    "scripts/probe_semiprime_literal_quadratic_roots.py": "91064cdc320315f37fd106f06776bbcbf951ace0dfcfd4d8e59dc4af2675e952",
+    "scripts/probe_semiprime_literal_root_control.py": "d6596ac137e60b0f3756bfd8bd6726901e2d89167b09c14db5def1fc45a11bb9",
+    "scripts/probe_semiprime_local_order_routing.py": "606803421ed0db7f436816453113a1df30737cc15d1e8ec7580791f108bce977",
+    "scripts/probe_semiprime_long_period.py": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+    "scripts/probe_semiprime_long_power_routing.py": "67839bcd7ee883a8cf996fcddba3d5a8659acb7c3cd54668b4db156240ff3b2e",
+    "scripts/probe_semiprime_multiplier_norm.py": "1de60bf68e520118e5523b30c1c754991a826e66795abac31bc7479db08c29c7",
+    "scripts/probe_semiprime_prime_sieve.py": "5bf6251b24071ad7fd5db9923e62809bee776585f3a58b0eab8633a26c0cee7c",
+    "scripts/probe_semiprime_progression_prefix.py": "d4a8bf15990e27a5dc6bd6575248c4663d0b2b08c3390455f5babcdc17477e64",
+    "scripts/probe_semiprime_q_aggregate.py": "ccc613c552402845d0d169accf00a541006c933443d27030c8d9f1ec3a480815",
+    "scripts/probe_semiprime_quadratic_extraction.py": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+    "scripts/probe_semiprime_quadratic_point_jets.py": "82be63d8c92eb0be8c8d2b76e5ab354e4c69151a94b3201d20527f5c546a48da",
+    "scripts/probe_semiprime_quotient_centering.py": "b46ee43118bb95c787ed526bbddc4bf653b8105a9c1ec101616965a8d22da598",
+    "scripts/probe_semiprime_quotient_rows.py": "08afda3268ce0269cebe19ed8f1f77a6a060c7326fac3ffe30609f3c6355d5b4",
+    "scripts/probe_semiprime_reciprocal_rows.py": "13083a69ed7802e0fa8ec1555942efd63e9e78f12326a5e7f63ba5dacd1ab884",
+    "scripts/probe_semiprime_reflected_companions.py": "400b64e5e2d973cad691eeadfe8520afc1eebafd374f5fdcea0de65827d2bd7c",
+    "scripts/probe_semiprime_row_area_spectrum.py": "fd4280cac9157575f85c2e88817086a9f97ce48d77b51abde3c845f4954ebd2d",
+    "scripts/probe_semiprime_row_derivative.py": "1668a1510ea46ad1032f5b5010d2da4201f8d47f29ef992188c95e4a4987179f",
+    "scripts/probe_semiprime_row_derivative_coverage.py": "08736c90d96ebbbf69961d1772403b97a599e7b8252b0dfb7489ca5a8b855751",
+    "scripts/probe_semiprime_row_periods.py": "95d8217f9354855136c6d0f28f93bc902124b06e4d6336cc1f5c1193d759761f",
+    "scripts/probe_semiprime_seed_lcm.py": "8cd4a7ea5da9d82e4b5c55d561ce6a6cb7c62fbd6ddc443e5a6305ccc2ac8e82",
+    "scripts/probe_semiprime_shared_interval_jet.py": "0cd04edf32948a3d489f075c477df1f58c3822f7631cd9d089ed52c0eb634852",
+    "scripts/probe_semiprime_signed_companion_frontier.py": "0dcba823eeec772f1cb038c22da1a1bf31b2f113bb2134a5c91cd236804aa01a",
+    "scripts/probe_semiprime_single_extraction.py": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+    "scripts/probe_semiprime_source_head.py": "d1076e289513e77c0db524c85d182ae95b179eadba0c99f0f390d9dfa1b6eb4f",
+    "scripts/probe_semiprime_staged_seed.py": "14f3cdea1f2552e8c36aacb83d54c3c1a3e3c7c3625f019969fb4bc3f3971d7d",
+    "scripts/probe_semiprime_strassen_prefix.py": "eb680286ab0d68bdabdbf5efb8b86d2f3e7aa4f154a3eea0fd601ac3e85eabd7",
+    "scripts/probe_semiprime_symmetric_bucket_confirmation.py": "814bb3d26a777f0fad96d5b30e372edde1db59687f0a003f51921b1c3f925460",
+    "scripts/probe_semiprime_symmetric_bucket_frontier.py": "848479e53b05edde13c4d55f43ae8e23ffebbc25a2ca2f7cf7f8a0c87c433ca1",
+    "scripts/probe_semiprime_symmetric_frontier_confirmation.py": "c819f2ce1426d766675e997f330a25dc3abdae009afe2de8d1c08f77e3f10a0f",
+    "scripts/probe_semiprime_symmetric_row_axes.py": "a4b80b3edf257768b8c73db91710f253c1f83f19ed4075ae5173c6fd83fecc22",
+    "scripts/probe_semiprime_tagged_pooling.py": "6f781116f5c27c1d2d985ed3b4d70bbe27124aaf0570df16709b832904bddcb3",
+    "scripts/probe_semiprime_totient_multipliers.py": "fab2e8b12eaa11f045cd0595efdf2c6ef1d09d7fc94dccfe671187f44b13511e",
+    "scripts/probe_semiprime_totient_residues.py": "7b7bfaff7009802f0a84d78700cbbdb29aae3528f263592b66dda050256477c6",
+    "scripts/probe_semiprime_totient_window.py": "865934aa4233321f590932ca1295bfcbfb6e209ef37ce8960564a5f6bbba96fb",
+    "scripts/probe_semiprime_trace_rows.py": "65b1a096708b6ae74360e92acc7a894039a111b25ce0c357c6770705d9314c4c",
+    "scripts/probe_semiprime_weighted_batch.py": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+    "scripts/probe_semiprime_weighted_rows.py": "025a963f1238bf7814f4d5dcf21fdcb6580fd84b9f8e8def8076b4baa6e14a97",
+    "scripts/probe_semiprime_window_construction.py": "f8d1cf218844b0682209f839a95b83ffa4fdabbc8feae469bf9541eb3402efa6",
+    "scripts/probe_semiprime_window_inverse.py": "b15fc46baec470c5be44b6275edae611d02c8d100cca570fe2a31fb493433ba4",
+    "scripts/probe_semiprime_window_sqrt.py": "d1eff5f3410d394ddc14c5fea5d2fc5855de0b8c6fc11fcb3a2d0877c5ceeac4",
+    "scripts/semiprime_anchored_coverage_rows.cpp": "9c2192b1a8fad466cf819df80923c38c623c53bee91dc14b0a7c838230308d44",
+    "scripts/semiprime_centered_point_rows.cpp": "821106cc2ad03281aef9014831da520333f7adfc93d24bb163ddabb910799215",
+    "scripts/semiprime_joined_coverage_rows.cpp": "ffc352ae1f87b1f898a9fb948182ae42ba2fd88f93706dc72de252bf6b665ddc",
+    "scripts/semiprime_joined_coverage_sort.cpp": "da0e210378d1ada815b0f36de13789d55a979af3931a07e6a49652b3dcae1065",
+    "scripts/semiprime_literal_inplace_rows.cpp": "cf7418ede35bcf0cf418ce8772607a16dbb235e2cb23416e7e6cf8c37abcfa3a",
+    "scripts/semiprime_literal_inplace_sort.cpp": "9234cb390c4089027256244addd0d537d67871df938fdaed2600719720f004e6",
+    "scripts/semiprime_literal_quotient_rows.cpp": "9f35d2ee5bc72f737aeddfab399e2e42b8a5bebe6e653f9ca0e689c06067f3d4",
+    "scripts/semiprime_literal_quotient_sort.cpp": "f616624ddb5609ba5005de7f57fcd4949a0787b956e7ce44a762750682c4e8ba",
+    "scripts/semiprime_literal_root_witness.cpp": "fa29e711e9fa946501bf40363f77640093ad0ca43269a28d96ae9742418e6007",
+    "scripts/semiprime_symmetric_axis_rows.cpp": "e65468beeec019e4172d79ce58e2a0e787959ee16fb28e2dffb9676d3f25771d",
+    "scripts/semiprime_symmetric_bucket_sort.cpp": "17da6c577a868bdcacfce51db66c30e13c4fd27f337b980f53ca27b7984af64f",
+    "docs/semiprime-cauchy-acquisition-obstruction-audit.json": "a65f3880b45f87fe70bcf55b4c05f81296a97e42906fb9daa0618c2333d4238b",
+    "RiemannGaussian/SemiprimeNormCancellationObstruction.lean": "d697d4330ba3d24d930ff656856c232bfbdabebbee15b7ab6864030d5748c879",
+    "scripts/CheckSemiprimeNormCancellationObstruction.lean": "d1f6f601e44e3b110a56232bb52b8f7eab921a23934b3ba826c247f1e2c81a9c",
+    "docs/semiprime-norm-cancellation-obstruction-audit.json": "019ee39c25c2371595ea5794d04bb24fc179888afa0034892e5a44a0c42f98f4",
+    "RiemannGaussian/SemiprimeOffsetCarryObstruction.lean": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+    "scripts/CheckSemiprimeOffsetCarryObstruction.lean": "044bf8ba47ba7920f621306d77fb2e5c8c5121a2e2f3745bd8ed90f80e37842a",
+    "docs/semiprime-offset-carry-obstruction-audit.json": "8c67377c8773196dc2d119225751b9a75845cb5c1cd6859a0192b4c8b6b5f12e",
+    "RiemannGaussian/SemiprimeShiftedNormAcquisitionObstruction.lean": "ab38dba4bc422a3c88ffcd967d3d0e816d698b9af0402368d8070e17631241c9",
+    "scripts/CheckSemiprimeShiftedNormAcquisitionObstruction.lean": "b895fa245214914990434b3fe58164d639e6128749e725ac33c502985bdf8eda",
+    "docs/semiprime-shifted-norm-acquisition-obstruction-audit.json": "e6ad1214290449aeb35ddce3c49ea5df28b3a0132aff7ebb43578062a5def103",
+    "RiemannGaussian/SemiprimeSeedEnergyAcquisitionObstruction.lean": "78d6f728625b556f0354596406a4c67967df9f4c8a582bf42b1c5a8fa75fc492",
+    "scripts/CheckSemiprimeSeedEnergyAcquisitionObstruction.lean": "30d6e2f1d8339881880ac73216aa1fe56b98421e55fbb0107d6037602c0c88ba",
+    "docs/semiprime-seed-energy-acquisition-obstruction-audit.json": "7ebc1646f9a44cfe29b0637e5db6319d0fbeb8564c833b0e983245f4c99dd86d",
+    "RiemannGaussian/SemiprimeSignedMomentAcquisitionObstruction.lean": "a6b8887204fa7bd3a01f62fa40edf853074cca7ef46d67f2a3292dc32c969413",
+    "scripts/CheckSemiprimeSignedMomentAcquisitionObstruction.lean": "7dfd1384061de754fa89f5571470e5ce6c97de387fbf01bd2bdcd2e59c39d385",
+    "docs/semiprime-signed-moment-acquisition-obstruction-audit.json": "6774e1f488eaae935994ae439ee822f6d598bc8579313755e74ad332c0641179",
+    "RiemannGaussian/SemiprimeIsolatedRowAcquisitionObstruction.lean": "f5c5a10d02017f60755ad8230302a34ef3d6427ac4152d5c9fb1310dbf10af6f",
+    "scripts/CheckSemiprimeIsolatedRowAcquisitionObstruction.lean": "3c70cd48a483a456169a852b5f92a83ac2f877a7cce4fc5d1b4afe5009260306",
+    "docs/semiprime-isolated-row-acquisition-obstruction-audit.json": "137387d4d9804037b8258147c341f5dfca9f6af3b183b18d4a268c220cb0235e",
+    "RiemannGaussian/SemiprimeMaskAcquisitionObstruction.lean": "ab1735e1bec01038c2461209e889765bb953bf6f070cdad5f249ab8104eb1001",
+    "scripts/CheckSemiprimeMaskAcquisitionObstruction.lean": "65c7947e085f78ef78b30d871555940f7dfde3378e7a7ca4ee48f32c11814b09",
+    "docs/semiprime-mask-acquisition-obstruction-audit.json": "978d0563317a8277b5e8671ffa7c4b726745c9b8cf7b0eb5c13de526bbdbd47e",
+    "RiemannGaussian/SemiprimePartnerAcquisitionObstruction.lean": "b3a706efb9754a3df36712dc82f47bf8903ad4602432f54fce745d3ec17a8bfc",
+    "scripts/CheckSemiprimePartnerAcquisitionObstruction.lean": "b6074fd52ccdba2bbecda1702d04945390241797fbfcf5f54acb5dd99afe8f53",
+    "docs/semiprime-partner-acquisition-obstruction-audit.json": "e0c1b3b9fed78486661e8480af95d0c79a463f735c145fa10d8a6072c960fcc1",
+    "RiemannGaussian/SemiprimeDistinctAcquisitionObstruction.lean": "fb553a63d55125c605b62f1a495d1c81e32c81d8878973910347c5ef61ba375d",
+    "scripts/CheckSemiprimeDistinctAcquisitionObstruction.lean": "17909df0a23d0abc39f938092cdc3ee54d5b96af0c24f4494290fd61c68030eb",
+    "docs/semiprime-distinct-acquisition-obstruction-audit.json": "fd53795aa3db33199b91b1e51797057363ba8b210c20ffae03b39aff9a2ec6c5",
+    "RiemannGaussian/SemiprimeCenteredAcquisitionObstruction.lean": "58dd96906ebc3932424c1f82936283f948403c30a3f16eae528b8e1380b85257",
+    "scripts/CheckSemiprimeCenteredAcquisitionObstruction.lean": "f2b6e634e705e241ca12172a35b7925b2c121ea3ef09b478dd649e62bd06330e",
+    "docs/semiprime-centered-acquisition-obstruction-audit.json": "de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03",
+    "RiemannGaussian/SemiprimeFullEuclidAcquisitionObstruction.lean": "1ae1d2a897ca1ff230e86c7752f5e825b1b880a2f34f66aeb285d697dd835916",
+    "scripts/CheckSemiprimeFullEuclidAcquisitionObstruction.lean": "d05f31815b07f510027c1d609a8cce51a9eccdc11555f257ad3cf093e6ec4061",
+    "docs/semiprime-full-euclid-acquisition-obstruction-audit.json": "bf6893219305096e499650f82c52a5141ee697b93fe62d3adfbda1c5e997b96c",
+    "RiemannGaussian/SemiprimeChargedAcquisitionObstruction.lean": "82886c4b6f8ca6aac0f70e1b76c3fbee9db0aa0fd35474ce207f0dcd6c9ace94",
+    "scripts/CheckSemiprimeChargedAcquisitionObstruction.lean": "0eb31930a9f59ed2f1e0df600e323574cc2ed5ad76b26907b7357f8b8adc86c6",
+    "docs/semiprime-charged-acquisition-obstruction-audit.json": "3b6b3eaf2624314471b8f9aa7a2d47a842edce876f25153a7ebc984b59ce5164",
+    "docs/semiprime-local-root-support-obstruction-audit.json": "d3755bddc26ad7e275693f880bec90406b4cccbb48d5cded56c8aeca5b2ccbe6",
+    "docs/semiprime-adaptive-seed-prime-menu-obstruction-audit.json": "e90a1bd344d8dce1bf22ab83cd7fcbebd4bd16f1a7e1bd7a22fcd18493068642",
+    "docs/semiprime-hensel-spectrum-obstruction-audit.json": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+  },
+  "source_pin_count": 489,
+  "mathlib_import_source_sha256": {
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Fin.lean": "798914333dd97eada9032afc50a9106cc5cf481b57477c4a6f198220ffd17304",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean": "273036de3d36eda43082685a3ebc998900735e96c3f4b18f1546b39a4f765af0",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Piecewise.lean": "779ebdd8b88d494a840fead5fb43ab2143e2121d4df7502de63a20d049c7b763",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.lean": "28b9560a240b13e9458dcb4f48515071c1649917b4742fcce3359dec9ee536fb",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Group/List/Basic.lean": "d94cdd202de4740f3c568f6cca706baf09d7c21a50f1bb4faf7187841288e5f5",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/GroupWithZero/Finset.lean": "1180cc3ff3c7a035204deb7444a53e9a280d6e7fb98e5cd83653b0023853c34a",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/NatAntidiagonal.lean": "ea4e66466923a84957f293745b7207a1f6fa838606d2f2a980f4ef51fce90044",
+    ".lake/packages/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.lean": "3260deb025880a9c56b258bc0d9c53106aab2452599141b1e1c8f5bb0f589aa3",
+    ".lake/packages/mathlib/Mathlib/Algebra/DualNumber.lean": "356b76d6bd478701fac4d067e7c5dff59cf53c1425b5c73465eb8e37ab99320a",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Hom/Defs.lean": "d52664f316c2cc3b8323f05b428ddfb4df5b48dc50b0d5e318f70c385255deeb",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Subgroup/Defs.lean": "ae64d40cb9d2c4b237125558e31521efab2d2cfd817abfe619470916e94ded85",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Subgroup/ZPowers/Basic.lean": "f89ba7ae44ad3d36d581858dc6d1186bf5c0a3ddc8d293792cc3d50858d89a01",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Units/Basic.lean": "6c230b50a819ce94ec59e685a7a8365190fa629ecc0fb53072fa733e5b2e0f4f",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Units/Defs.lean": "f35090c081e7903c719d1d77033bd1b443cc70a99ee4fb711dcaa2384508c77e",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Units/Hom.lean": "b1ffc13bd4c6adcc882de5014ca832bb5c1038b14ecce2f679ac2ccef9097181",
+    ".lake/packages/mathlib/Mathlib/Algebra/GroupWithZero/Units/Basic.lean": "7a7b5c40f914ff08c6d363d455aaba017714e7c23ae8d5ecdf898301a02c9429",
+    ".lake/packages/mathlib/Mathlib/Algebra/Module/LinearMap/End.lean": "2ad29f87f6f306f5e39f5081607749a66b94b447bdba9dea0c354defcc54ddb4",
+    ".lake/packages/mathlib/Mathlib/Algebra/Order/BigOperators/Group/List.lean": "2dea99ce674678de983ae69c73b6d4c8bdfab1b4b5804da15f32d4cf8f4d0eb7",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/AlgebraMap.lean": "85aee8b4c29f9643eb574158dbb8e3cb36528b30191b593232f6fa6257843c4d",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/BigOperators.lean": "86e34ab59b407dfaf08303662cde3fbefa794a90463a0a250fc4a566625833f6",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Coeff.lean": "762255ed3f7a2128ea3561b3bf79a4bde39eb0e54e27d2ca54f786dd0daf9ecc",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Degree/Defs.lean": "d42eb484a3c896fb6de7d48403f6660c0aefc7aca797aefea963574fee122bd7",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Degree/Lemmas.lean": "70e1ffe5c24fbf372293c2853dd3168169c023cf0d36e91402b5273f803181dc",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Degree/Operations.lean": "a710c4645713c0edfbc29215f0501ef6907b1fe00c01371b6ae770982f710e8b",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Derivative.lean": "ab04d4335576e18032f8ed2c15f5bea04a9e0f44bcf15e5ac398a78a3056a5bb",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean": "755f958b2ae34a593310e6cc3d3316d48258a8cfb51bb58c0ffb58a2e4892849",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Eval/Coeff.lean": "615908481d1050ab457a4a96ecaaf9e2b4aec639035ead4d34f57d33fd0ffb3d",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Eval/Defs.lean": "324a019feeb6134861ed550dcbdff5425ff062b8894024ef852643d5dc873a7b",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Eval/Degree.lean": "81f41446155dd6c8a79d8090cd080bacfc6529e11b32a8dbf54d4399e5fc43c0",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Monic.lean": "6d71b7b0c3ee79b9a07a377e390fefd0f10dea8a0fe0eebbad8c96b2f8207e1c",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Roots.lean": "e5815d23fc2708bb154206034e61070854fddcb3708cedbd1ce3e7e2821c4116",
+    ".lake/packages/mathlib/Mathlib/Algebra/Ring/Commute.lean": "f014978acc8de1fbb2792c5d3fb0ef801ff7fc5983ff4498e574a02a4d02b76b",
+    ".lake/packages/mathlib/Mathlib/Algebra/Ring/GeomSum.lean": "fa716192e3640a250181738b02d8be769b66d6dfb72fd955942cb158138134b4",
+    ".lake/packages/mathlib/Mathlib/Algebra/Ring/Hom/Defs.lean": "6be3688d1e9972f8b170ad9fd8696806a68d98eef8d3fcf342a6ba3b9bd68adc",
+    ".lake/packages/mathlib/Mathlib/Algebra/Ring/Parity.lean": "ba777f16c09858dc2cb0fe4c46b81cf88ff7eab7401dfb25136d85513ec6e31c",
+    ".lake/packages/mathlib/Mathlib/Algebra/TrivSqZeroExt/Basic.lean": "c0d0fe06681fe12e647b319e55bbcaa256b68de1e7dbdf0c64aa91d75042c39e",
+    ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Sqrt.lean": "38c916b763ade8ed7174488bad31aee40735d03877a1bf9e540c1cf0107ec1ab",
+    ".lake/packages/mathlib/Mathlib/Data/Bool/Basic.lean": "3ce3bd75ab40d3b03752e1f268dbb2ee1a3c9646de141ebabcad900c2a9df96c",
+    ".lake/packages/mathlib/Mathlib/Data/Fin/VecNotation.lean": "1faae2e1fac67fe9cfaf441f63467e73d315f93e388323971fa2083addda8581",
+    ".lake/packages/mathlib/Mathlib/Data/Finset/Card.lean": "64bcf8d1632513cb27a30c2cc151b544ace823bb88cf8ede997665f990c559b8",
+    ".lake/packages/mathlib/Mathlib/Data/Finset/NatAntidiagonal.lean": "b31b937894116044759339d87e6c0a160b917ba0058f625fd8e43b459f9f51b8",
+    ".lake/packages/mathlib/Mathlib/Data/Finset/Prod.lean": "13c8756add2710072abee567b38e3447ddb798a2cdac3c9e67a72ac896feec92",
+    ".lake/packages/mathlib/Mathlib/Data/Int/Basic.lean": "c524836299f9abaa2622e907d6bf008e6c6ce25f386948cb8fda17690bc25095",
+    ".lake/packages/mathlib/Mathlib/Data/Int/DivMod.lean": "a5a4bac3f05fc6c6a3dfe3e39e44be07e5584f4d5d3fabcd753878317d501e9d",
+    ".lake/packages/mathlib/Mathlib/Data/Int/Interval.lean": "aa48ad0047fc178dbd4c51ff9485392c85e1ed139b66e886897e22b1af80a8e6",
+    ".lake/packages/mathlib/Mathlib/Data/Int/ModEq.lean": "85fdd5da9b8faba86f6841344965b472b52e406d5ffcae1e07e3256b288d1a7c",
+    ".lake/packages/mathlib/Mathlib/Data/Int/Sqrt.lean": "239af5ae3394db94073365c668fe4ce33cddb84feb592375eddcce6c0e44d167",
+    ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "9808333bd8309d8b77e3eee8fd984d59159086c9ffa0685e26aa47e98a34c9ba",
+    ".lake/packages/mathlib/Mathlib/Data/List/Defs.lean": "b2ce214c2a3e255535f3c319d705368d4a2894fc92b7cf77f8c80efed4cc408c",
+    ".lake/packages/mathlib/Mathlib/Data/List/Induction.lean": "16f7725635c5a3d3614cc3bda36c3a3c7089fbd5a940d1fa61fac42ef29e47b4",
+    ".lake/packages/mathlib/Mathlib/Data/List/Nodup.lean": "28692ae2a68f3ba6e8a826bfe15cf3ef8397ff4f284347d0829872cd7056f81e",
+    ".lake/packages/mathlib/Mathlib/Data/Matrix/Diagonal.lean": "837abd03df4ef487dc49aa3708deb16a789c6b4e75ecd20731effc66c05a2f7e",
+    ".lake/packages/mathlib/Mathlib/Data/Matrix/Mul.lean": "389814a6174e73b69048066a00d5f6429812c62d40b0da09086ca6b3ac2b6f66",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Cast/Order/Field.lean": "fc9a5b94982bffd9ecc57ed2362091e1ad67d21a0d6e7eac96656a50d191e6e6",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/GCD/Basic.lean": "93d254fd345ac037198d7a24027a45e44ba82af80fd50124da7fc0d0f03b42ec",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Prime/Basic.lean": "b71a7d5f51c626ae6b70cbe36bab7b77a691f9a214373cfb98e170bd7e6f9aeb",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Prime/Factorial.lean": "caa753877be8d9ab5a656e6b95f9819dd590bda428e472749d6103423edf4993",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Sqrt.lean": "3ba3c0be75f7d9c912f8f74e24710d1ce771e692b79dd4cbb0dd6bf638ae1414",
+    ".lake/packages/mathlib/Mathlib/Data/ZMod/Basic.lean": "fbe19ea6fc95105cf596e1ef3c730e32dffdf9f53b74a17eaab5c668e03d1b0f",
+    ".lake/packages/mathlib/Mathlib/Data/ZMod/Units.lean": "c5d9c1b859dfc038ca423bb7edc46f2c66698f312d69fd9d0adcc0dea4fa11e5",
+    ".lake/packages/mathlib/Mathlib/FieldTheory/Finite/Basic.lean": "5e92972b7030c2b6a27bf66ea79de25a7a24e7b2110a840f7fb877fb8c7268c5",
+    ".lake/packages/mathlib/Mathlib/GroupTheory/OrderOfElement.lean": "338cd8fd86078ff1c852185399474d85bd2d11218c7c8c79a229cf21296e4650",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Charpoly/Basic.lean": "46b0cf44b0ea659c6f881a87771da4400e0e807cff76365da1895d73338904ca",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Determinant.lean": "53f430b28c7c5b1dd09711ffae37ac8455eb4ea053bf4713da7c8141ad61cc47",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Dimension/Constructions.lean": "ba705b4a5e12709dfbd792ddd9946aafdcc276daf1a8778de760ec2f4e660363",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/FreeModule/StrongRankCondition.lean": "5e08e3adccbb7786d9cee448270ccd0e50b0408e4411ac397e81edb1ea694582",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.lean": "27999a02f480995bda68950253125f44cefcfaff12b25cd837e6dd9b16f8d506",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Charpoly/Coeff.lean": "4fc1ee06ff76b13dd6e641e7b284e9e925f2cc259784bed14dd6828296e39d09",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Defs.lean": "42cf62056a34210624acadeec32077eb22259619303cabc6678887b51262d6e3",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean": "870291a8544ad9297e0c17f3531bea11607a1f0d83b775b13a31981777c30f2e",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Notation.lean": "0a5b11bff151565fa33a4b7faf0e20d4bf2d27075f98f88a0a9e9e25b40e2940",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/RowCol.lean": "77cfd0e96742d75f0c0757c2a668d77a2cb96d77d78bd5b4dc6c168dd4241d8f",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Vandermonde.lean": "132f71d1c931c61cceac4770d5ea1ddabd71d2f0f7657b40e2a90cd9e846c58c",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/Harmonic/Bounds.lean": "c5f418513f5ca500c0c02527ebf65fe2554c22b47c39e7e7b28e6f1402bdf848",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/Harmonic/Defs.lean": "7f51e807c25be865d66ff82a292b24c3dcfc51d694f7aa2797e07663c083f83e",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Coprime/Basic.lean": "06ffa17f0f7a140fb0082504dab515d6c60c0b1818720c5e4211f431c98d981a",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Coprime/Lemmas.lean": "406ffe2fb9f644cf67c7aae6c95f386ccc322807a8708eb4b4e8f52811f9bc77",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Int/Basic.lean": "c35204fe93e22d960b9e0f1d04e2f2f5f2bf73b540a7e7fec0bfcf5bf1349499",
+    ".lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Basic.lean": "fb6303b35ede9edf896a799d46d5656faca3e55f7f05cbfb02b86e3c7bb9b865",
+    ".lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Inverse.lean": "1ba2ceae223445c00c50e37bb2d79c90b98deff3eee603935713b9bc5786e048",
+    ".lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Basic.lean": "e1ffb78495bc745361591aa02a1d2d24abcd3749e9180f810cee7958db08e896",
+    ".lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Inverse.lean": "2471a7e23b47aea8bbf55374ad691cad3a104944da63df90d753477837f1770e",
+    ".lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/WellKnown.lean": "f91bf57e173fe19b6b56c024e1facf5014106459fa87fa7d74bfc16f9fd96fa7",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/RingDivision.lean": "df4efea17d794d79fe46161ccf7b3434189a86e1b24eef6ceab3a8885e3abe0e",
+    ".lake/packages/mathlib/Mathlib/Data/Fintype/BigOperators.lean": "b9a6354ebff5fcd22fb1ddb7992682a404ec44c8ee42d519177f17d1d5a239e9",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/Splits.lean": "4fb1e2341c7333660cd2e5468569d9dfa4ce5e7985edb6afd695e8da6e13f042",
+    ".lake/packages/mathlib/Mathlib/Algebra/Polynomial/FieldDivision.lean": "be6ce05e85d9fc85537bc8a56f3fa07c3be27f81b8e48151c32ba116ca32d5fb",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/TypeTags/Basic.lean": "7cc44af75709b67805a8a6c22ee07d904497dc342bd27e13aded169c275dca46",
+    ".lake/packages/mathlib/Mathlib/Data/Multiset/Dedup.lean": "d033a1183a0a6266b2daad38efcb36420edcadcd9387e98c5e2d48e245339f30",
+    ".lake/packages/mathlib/Mathlib/Data/Multiset/FinsetOps.lean": "6f0955956933081804aa30ca9d96becdf112d46c1bf901e93b62792cdc4c1124",
+    ".lake/packages/mathlib/Mathlib/Data/Multiset/MapFold.lean": "32b9f96c7a2d091c3709e851f9badfbcec9d3a24904c312da70d94ea37f80f51",
+    ".lake/packages/mathlib/Mathlib/Data/Multiset/UnionInter.lean": "d4abb0514be911bd7b510e7be4394e5f719098d9ccd51ac0ec0156951146b191",
+    ".lake/packages/mathlib/Mathlib/Data/List/Dedup.lean": "29100fe0b2284ee17522ad3a500afc6f98189cf7f01f80ff17fb25158926bed7",
+    ".lake/packages/mathlib/Mathlib/Data/Finset/Range.lean": "558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean": "01932c13555664ece196527b1776fe30e4354721e509b8620d2723d0be373be5",
+    ".lake/packages/mathlib/Mathlib/Combinatorics/Additive/Energy.lean": "cae1b5c3e605db63615a7cf9f0f7604183c14d09767d40366df6b6680fb8dbf0",
+    ".lake/packages/mathlib/Mathlib/Algebra/Order/BigOperators/Ring/Finset.lean": "440f582cbd2e05fb6d2bbafdcc0c8fb45cc5b0b152204d90876f87ebbee3588f",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/Cyclotomic/Basic.lean": "e38f0e0cbb9f0c47fcd418c2a6e5ed49e1ebb6d6466d39ac243b6557cd09823f",
+    ".lake/packages/mathlib/Mathlib/Data/Int/GCD.lean": "3ea1ccc0fdea836908d84bfa5811e34fe9463e41a1925e86da41c2fb08a3c065",
+    ".lake/packages/mathlib/Mathlib/FieldTheory/RatFunc/AsPolynomial.lean": "188b752a89c044eaf44315fb02409c870d25c609857af40735cffe00130996e2",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean": "1d7379bb0f4dee4580f1dc4141575e3459108af202a03d04fcef2ecbb2e8e149",
+    ".lake/packages/mathlib/Mathlib/RingTheory/RootsOfUnity/Complex.lean": "a403d79d20137cc03f3e8899594a4c5c63333a690cfb4b77b066018dc3925a53",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Rank.lean": "4ce457849b67eca2d37842f1ebcac1dea88f16a202f5c6dfceb4bb6c6047e262",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Transvection.lean": "bbccf75870906be1d90d309cacec6fb748d513fbc59a2a71b21fa526ef4a7286",
+    ".lake/packages/mathlib/Mathlib/LinearAlgebra/FiniteDimensional/Lemmas.lean": "fd2f40b42aac48256b11c2a395db0544cd441b04a9f75350d7c46f353fc7d912",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/Cyclotomic/Factorization.lean": "075ebd490eab7d02e63581d578d62e3e1fd288b713326bd714d24d1dd6a29303",
+    ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/Cyclotomic/Roots.lean": "10f63e7b0c3061d1a04d613ab97720c9c090bc96690ac3d703ef0419db8d58a7",
+    ".lake/packages/mathlib/Mathlib/Algebra/CharP/Defs.lean": "266f6310fa620a777cb8020e24812a4b70382e53784e11cd557c571b3ecdcae3",
+    ".lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630"
+  },
+  "selected_mathlib_pin_count": 109,
+  "artifact_sha256": {
+    "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.pdf": "ed4bc9cf6b25de57f61b74e8b82d2462be11103de323b463e91a0c5320ddcda3",
+    "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.txt": "ee97eab1d2568e720700c9dad1ff6265481b5e5713b33c11eb526f91cb635cc1",
+    "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac",
+    "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885",
+    "/tmp/semiprime-any-zero-frontier-20261008/escape/base-squaring-quotient-independent-review.json": "c3acbc598416e666ae517da992f1715e6d851cb1730e900fba896c4d242bfa83",
+    "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+    "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+    "/tmp/semiprime-any-zero-frontier-20261008/escape/three-term-projected-sum-independent-review.json": "e6687d081f8ed95afca473fb1eb6295e9c2e0f8c7baa822e74d0648838498cf1",
+    "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56",
+    "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d",
+    "/tmp/semiprime-any-zero-frontier-20261008/review/cyclotomic-any-zero-independent-review.json": "8846c68b9da0167f06fc484c9dff56bd410f7520635439813601fcb28b74acbb",
+    "/tmp/semiprime-any-zero-frontier-20261008/review/journal-independent-review.json": "6df7d7849f60efbde43daf3c0eaff0692b0b228cea3e5f8d7f3e8dad3d41e285",
+    "/tmp/semiprime-any-zero-frontier-20261008/review/kedlaya-umans-2008-primary.pdf": "6cc1b371b8f3cd7746db3efaadab9e01a41768f099a7db98e20ee8d05c9ad1a5",
+    "/tmp/semiprime-any-zero-registration-20261008/draft-execution-manifest-format.md": "561afce3df0d1d3f3105eef0b507ab2fb5bbe94d1e4d367f4156860a1bfef916",
+    "/tmp/semiprime-any-zero-registration-20261008/execution-manifest.json": "8f88529a5951f71510801f1ebf49a268b664b459700530f34b21859ff5250c65",
+    "/tmp/semiprime-any-zero-registration-20261008/journal-entry.md": "0b7a7f5ca17d556b5abcf2c77aa4ecae55f3007d90ffc2f42737c0e61ec7b864",
+    "/tmp/semiprime-any-zero-registration-20261008/register.py": "02a6123bcd5dfee0f4e1c573addc6490ef8ef74b68f1050fcf536e0f1f97b842",
+    "/tmp/semiprime-any-zero-registration-20261008/registration-before/docs/semiprime-factorisation-investigation.md": "131ee393db7bfa3dfa85e3e51fa367223730f3699e2889a9f770bcf6a0bac576",
+    "/tmp/semiprime-any-zero-registration-20261008/registration.json": "130377d8768fd011720deb9a8d84c0eb31d856a8d139aed6430295f9401f7061",
+    "/tmp/semiprime-any-zero-registration-20261008/write_audit.py": "467a9c5e94037f222b15752fa0a0e7d91c0a27f4094cd90d713f3828e4e5b043"
+  },
+  "artifact_pin_count": 20,
+  "artifact_snapshot_scope": "Manifest-designated evidence plus exact journal registration and scripts; final revalidation self-cycle paths excluded.",
+  "source_snapshot_scope": "Immediate parent and preserved selected chain; journal-only exact insertion, unchanged root/metadata; no whole graph audit.",
+  "new_native_source_theorem_count": 0,
+  "new_native_source_or_checker_or_C_exports": false,
+  "native_validation_scope": "No native source changes or validation reruns; prior charged finite source/checker/root evidence retained.",
+  "inherited_lean_validation": {
+    "strict": {
+      "command": [
+        "/home/dbsanfte/.elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "-c",
+        "/tmp/semiprime-long-norm-frontier-20261008/leaf.c",
+        "RiemannGaussian/SemiprimeChargedAcquisitionObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.48,
+      "peak_rss_kib": 3871672,
+      "peak_rss_scope": "Per-command maximum resident set size reported by GNU time."
+    },
+    "build": {
+      "command": [
+        "/home/dbsanfte/.elan/bin/lake",
+        "build",
+        "RiemannGaussian.SemiprimeChargedAcquisitionObstruction"
+      ],
+      "exit_code": 0,
+      "seconds": 6.04,
+      "peak_rss_kib": 3903708,
+      "peak_rss_scope": "Per-command maximum resident set size reported by GNU time."
+    },
+    "checker": {
+      "command": [
+        "/home/dbsanfte/.elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/CheckSemiprimeChargedAcquisitionObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.39,
+      "peak_rss_kib": 3887848,
+      "peak_rss_scope": "Per-command maximum resident set size reported by GNU time."
+    },
+    "root": {
+      "command": [
+        "/home/dbsanfte/.elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "RiemannGaussian.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.93,
+      "peak_rss_kib": 9708988,
+      "peak_rss_scope": "Per-command maximum resident set size reported by GNU time."
+    }
+  },
+  "inherited_all_declaration_axiom_audit": {
+    "theoremsIncludingGeneratedHelpers": 12,
+    "onlyStandardAxioms": true,
+    "moduleProvenanceSelection": true,
+    "importedLeafDeclarations": 14,
+    "declarations": 14,
+    "declarationAxioms": [
+      {
+        "isTheorem": false,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.chargedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.actual_pair_mem_amendedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.actual_skipped_mem_amendedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.mem_chargedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": false,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.amendedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.actual_skipped_mem_chargedRayCatalog",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.frame_skipped_product_lt",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.mem_chargedRayCatalog._proof_1_1",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.chargedRayCatalog_bounds._proof_1_2",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.chargedRayCatalog_bounds",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.amendedRayCatalog_card_le",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.chargedRayCatalog_card_le",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.chargedRayCatalog_bounds._proof_1_1",
+        "checkerLocal": false,
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "isTheorem": true,
+        "declaration": "RiemannGaussian.SemiprimeChargedAcquisitionObstruction.triple_factors_le",
+        "checkerLocal": false,
+        "axioms": []
+      }
+    ],
+    "checkerLocalHelpers": 0
+  },
+  "inherited_finite_native_source_theorem_count": 9,
+  "inherited_parent_arithmetic_claims": {
+    "classical_new_observation_claims": {
+      "exact_all_ray_discriminant": "ell\u00b2-4atN=m\u00b2(b\u00b2-4ac), including original signed intermediate rays; this is an exponent relation and retains its quotient.",
+      "normalized_first_current_phases": "Both centers and centered/pure phases satisfy -m\u00b2<r_j<3m\u00b2/2, r_j\u00b2=4Na_j modm\u00b2, r_j=-2N/j modm. At-most-one support per nonzero low digit; targets injective in each retained field when R>3m\u00b2.",
+      "extra_non_teichmueller_input_loss": "O(K_*M^5)=O(M^5.020), simultaneously at all first-B^.020 candidate primes; no seed multiplier.",
+      "same_joint_actual_supply": "Union directly with earlier soft M^5.994 and new bounded-comparison losses on original supply; dominant loss remains soft M^5.994, retaining Omega(M^6/log\u00b2M) actual balanced distinct-prime inputs.",
+      "primitive_fourier_nonvanishing": "All m\u00b2-m primitive-frequency channels nonzero in BOTH hidden fields for every nonempty graph mask with public-unit coefficients, including signed/carry/actual-gamma weights. Basis degree m over F_p(zeta^m).",
+      "explicit_spectrum_acquisition": "Omega(m\u00b2) channel-record writes for the specified full nonzero-spectrum contract; reciprocal-symmetric pairing only saves two. No arbitrary implicit scalar or Fourier circuit lower bound.",
+      "coarse_corrected_mask_norm": "F-G(T^m) is a unit in (Z/N)[T]/Phi_m\u00b2 for arbitrary adaptive/free coarse G and nonempty unit-weighted source masks; determinant norm gcd is1 even with free evaluation. This is a different query from the original long residual norm.",
+      "primitive_convolution": "Multiplication by the unit mask preserves primitive-component zeros and changes the primitive determinant norm only by a unit.",
+      "arbitrary_coefficient_norm_gcd": "gcd(N,Norm F)=gcd(N,w_1,...,w_J) exactly on retained squarefree family. Corrected norm gcd divides the common coefficient gcd. All-zero source permits separate information in G; no exclusion asserted there.",
+      "paid_mask_gcd_information": "Streaming coefficient gcd computes exact mask-norm gcd information in soft O(J logN) time and soft O(logN) auxiliary bits once coefficients are acquired. For a soft-linear acquired source this is soft O(m); no numerical norm value or original long residual acquisition claim.",
+      "complete_common_baby_axis_failure": "For w_j=Y_j-x, entire gcd-valued query is gcd(D0,Y_j0-x), D0=gcd(N,Y_j-Y_j0). At least two distinct targets in each field giveD0=1 and unit mask norms at EVERY common baby column, including individual proper collisions. The mask tests ALL coefficient zeros; original residual product tests ANY.",
+      "unequal_exponent_general_envelope": "All integer bases<=M^rho polylog and signed exponents<=M^lambda polylog with2rho+3lambda<1.062: nonidentity ratios are units after soft M^(2rho+3lambda+4.938) pair deletion, uniformly for all comparable positive projection moduli. Perfect-power rational identities saturate globally.",
+      "paid_fixed_base_comparison_family": "Constant finite bases and all signed |E|,|F|<=ceil(C*m^(1/3)*polylogm): soft m^(2/3) probes, soft O(m) complete acquisition time and space, soft M^5.938 bad-pair deletion, only gcd1 orN. Fixed-polylog prime menus soft O(B); polynomial menus granted free for coverage only.",
+      "unchanged_native_scope": "All new arithmetic remains classical. No Lean source/checker/root import/metadata edit or validation rerun. Existing finite catalog and its four focused successful checks remain inherited.",
+      "not_acquired": "Numerical mask norm scalar, original long zero-union norm, arbitrary factorization acquisition, full all-semiprime bit clock and peak memory remain unproved."
+    },
+    "classical_global_count_and_asymptotic_acquisition_formalized": false
+  },
+  "classical_new_observation_claims": {
+    "original_joint_supply": "Unite every additional exceptional set directly with the preserved original Omega(M^6/log^2M) actual balanced distinct-prime supply; dominant joint pair loss remains soft O(M^5.994). Same retained inputs satisfy all new and earlier specified repair failures.",
+    "stronger_auxiliary_orders": "At every first-K candidate, K<=B^.020, ord_m(P),ord_m(Q)>ceil(M^.96); additional loss O(M^5.990) from F*tau(m-1) classes and literal selector strips with summed predecessor gaps. Non-Teichmueller condition inherited.",
+    "public_cyclic_component_counts": "For f=ord_m(p), t=(m-1)/f: Phi_m has t simple field components, Phi_(m^2) has t, T^m-1 has1+t, T^(m^2)-1 has1+2t. Every count O(M^.04), independently of the larger algebra dimension.",
+    "arbitrary_linear_any_merger": "For t<p components, a homogeneous F_p-linear map whose norm vanishes on every coordinate-zero tuple and is nonzero at some all-nonzero tuple needs t>=J. Independent orthogonal selectors also require J<=t. Applies to arbitrary input-dependent coefficients under those semantics.",
+    "local_degeneracy_boundary": "A one-way linear ANY query with J>t is locally identically zero; the opposite CRT field can differ, so no global gcd-N conclusion. Any separate local separator needs its own N-only coverage and acquisition proof.",
+    "actual_common_axis": "Nondegenerate affine carrier payload has at most t local zeros; degree-D payload has at most tD distinct base-field zeros. Exact ANY representation of actual Omega(m) distinct targets over COMPLETE common-baby period needs D=Omega(M^.96). No Omega(m) intersection with a bounded length-Theta(m^2) prefix is asserted.",
+    "faithful_source_carrier": "H_Y(U)=product_j(U-Y_j), A_Y=(Z/N)[U]/H_Y; Norm(U-x)=product_j(Y_j-x)=(-1)^J H_Y(x) over every commutative ring, including repeated roots/nonunits. It retains ANY and is outside the public cyclic component obstruction.",
+    "paid_carrier_construction": "Balanced product tree plus carry-free Kronecker packing and unconditional fast integer multiplication acquire H_Y in soft O(J logN) bit time; actual first-current carrier and targets soft O(m). No free dense interpolation table. Long geometric product and actual variable-origin/source-cocycle query remain unpaid.",
+    "field_extension_contract": "An extension of degree h creates at most th component slots; J selectors require h>=J/t=Omega(M^.96). Explicit dense J field entries cost Omega(Jh) output coordinates. Sparse/implicit data and arbitrary circuits remain outside this representation charge.",
+    "zero_union_q_rewrite": "Original product equals product_j Y_j^L_j times product_j P_L_j(u_j/Y_j,q); P_2t(X,Q)=P_t(X,Q^2)P_t(XQ,Q^2), with an exact odd endpoint. Unequal lengths/signed starts retained, only supplied units inverted.",
+    "longer_hidden_doubling_order": "ord_R_P(2),ord_R_Q(2)>M^1.010-1 after O(M^5.989/logM) pair deletion. Exceptional R divides product_(k<=floor M^1.010)(2^k-1); no modulus/seed multiplier.",
+    "fixed_invariant_algebra_obstruction": "A finite free algebra with abstract Qbar, ground-ring endomorphism Qbar->Qbar^2 and actual field evaluation needs rank at least ord_R_p(2), hence >M^1.010-1. Distinct iterated-character kernels give CRT dimension bound. Dense state acquisition exceeds soft O(m); ordinary numerical scalar squaring, moving quotients/corrected maps and arbitrary implicit states are outside the contract.",
+    "fixed_radix_library": "Every 2<=b<=ceil((logM)^C) in a fixed input-independent polylogarithmic library satisfies the same order/rank obstruction, with additional soft M^5.989 loss. R does not divide b eventually. No arbitrary full-input radix library or b=1/-1 claim.",
+    "paid_three_term_menu": "Fixed finite integer bases and fixed constant monic bounded-degree h_m libraries with O(logm)-bit Q-independent coefficients and polylogarithmic generation. Same-base all signed e,f<=soft sqrtm; mixed all signed E,F,G<=soft m^.15. Common post-exponents h=1,N,N-1 included; arbitrary common same-base unit origin preserves gcd.",
+    "exact_full_input_post_exponents": "Exact ell_N has O(1) values in the dyadic input bin. Within each piece z_u=u^((m!)^ell) has order1 orR; theta_u=z_u^((Q-1)h_m(Q)) modP. Monic bounded-degree exponent map has boundedly many preimages per R-residue. Hidden quantities are proof-side only.",
+    "mixed_sidon_mechanism": "After unit normalization a^k+b^k=1 in prime-order subgroup. Degeneracies give no or at most one zero. Otherwise each nonzero difference between zero indices occurs at most once, so s(s-1)<=R-1 and s<=sqrtR+1; no discrete logarithm algorithm input.",
+    "three_term_pair_losses": "Same-base soft O(M^5.5+K_*M^5.469); mixed soft O(M^5.950+K_*M^5.4345). Separate #m from summed gaps; K_*=O(M^.020). New dominant loss soft M^5.950, below old5.994.",
+    "full_menu_bit_acquisition": "At a selected m both complete new additive families acquired in soft O(m) time/space: balanced factorial projection for constant many bases, bounded-degree h(N) powering, signed caches and at most soft m residue/gcd probes. Fixed polylogarithmic prime menus soft O(B); polynomial prime menus given free coverage access only.",
+    "paid_additive_failure": "Every retained three-term residual is a unit in BOTH hidden fields, so products, masks and localization also unit. Fixed catalogs essential; old equal-order seed invariance is not applied to additive sums, and growing adaptive seed/library families remain outside.",
+    "status_scope": "All new arithmetic and clocks classical; no new Lean source/checker/C export/import/metadata edit or validation rerun. Prior finite source and four focused zero-exit checks inherited. No arbitrary scalar lower bound, paid original long scalar, proper coverage theorem or full all-semiprime clock/memory proof."
+  },
+  "classical_global_count_and_asymptotic_acquisition_formalized": false,
+  "isolated_registration": {
+    "snapshot_directory": "/tmp/semiprime-any-zero-registration-20261008/registration-before",
+    "exactly_one_dated_journal_insertion": true,
+    "new_root_import_or_metadata_entry": false,
+    "files": [
+      {
+        "path": "docs/semiprime-factorisation-investigation.md",
+        "before_sha256": "131ee393db7bfa3dfa85e3e51fa367223730f3699e2889a9f770bcf6a0bac576",
+        "after_sha256": "933a6614cedc5433cbea16c6f795fc4c6552cee772c02d85cedc8d07188076dc",
+        "insertion_sha256": "0b7a7f5ca17d556b5abcf2c77aa4ecae55f3007d90ffc2f42737c0e61ec7b864",
+        "insertion_bytes": 11170,
+        "insertion_lines": 208,
+        "exact_removal_restores_snapshot": true
+      }
+    ],
+    "unchanged_registration_files": {
+      "RiemannGaussian.lean": "f640d3355a431f47e136706d3ba932b3805847ed77f923d6659d9be831aa5032",
+      "docs/theorem-explorer/metadata.json": "24c0c7204086315522dfbc98be07cf701263a0789f91284dd501ef3187da895d"
+    }
+  },
+  "historical_mutable_pin_resolutions": {
+    "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md@851234154b91468df976d251a79e6619c19d9273fa8ae8230caa02c52949830d": {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md",
+      "historical_sha256": "851234154b91468df976d251a79e6619c19d9273fa8ae8230caa02c52949830d",
+      "preserved_snapshot_path": "/tmp/semiprime-next-covered-acquisition-20261008/registration-before/docs/semiprime-factorisation-investigation.md"
+    },
+    "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md@3b4817d8561bfd483af0696938b3ebc8a8202e6848b4ab0c1f838f95cc4fc4b0": {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md",
+      "historical_sha256": "3b4817d8561bfd483af0696938b3ebc8a8202e6848b4ab0c1f838f95cc4fc4b0",
+      "preserved_snapshot_path": "/tmp/semiprime-local-root-frontier-20261008/registration-before/docs/semiprime-factorisation-investigation.md"
+    }
+  },
+  "parent_final_revalidation_path": "/tmp/semiprime-hensel-spectrum-20261008/final-revalidation.json",
+  "parent_final_revalidation_sha256": "ef6f095812b95bb1a53b4835f8f897a58f0a53357efef0b64f3e70f61327c533",
+  "parent_final_revalidation_scope": "Frozen parent current-after evidence; new exact before snapshot preserves parent journal bytes.",
+  "independent_reviews": {
+    "cyclotomic-any-zero-independent-review.json": {
+      "schema": "independent-classical-cyclotomic-any-zero-review-v1",
+      "reviewer": "/root/long_norm_review",
+      "created_utc": "2026-10-08T17:45:01.769109+00:00",
+      "status": "PASS",
+      "report": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+        "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+        "matches": true
+      },
+      "report_lines": 270,
+      "manifest": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json",
+        "sha256": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+        "matches": true
+      },
+      "check_count": 39,
+      "pin_count": 15,
+      "pin_mismatches": 0,
+      "required_corrections": [],
+      "checks": [
+        {
+          "id": "frozen_final_bytes",
+          "status": "PASS",
+          "detail": "Final 270-line report and 13-source manifest independently read; all 15 pins match preserved current authorities."
+        },
+        {
+          "id": "same_actual_supply",
+          "status": "PASS",
+          "detail": "Retains the current 1b3e901b Hensel majority, prime-period and non-Teichmuller conditions; new deletion is on original supply."
+        },
+        {
+          "id": "correct_actual_selector",
+          "status": "PASS",
+          "detail": "Uses the actual first-K prime-menu selector and folded predecessor gap mass, not a chosen hidden modulus or arbitrary rectangle."
+        },
+        {
+          "id": "all_candidate_union",
+          "status": "PASS",
+          "detail": "Deletion is over every candidate before N-adaptive selection; no seed-axis factor added."
+        },
+        {
+          "id": "small_order_classes",
+          "status": "PASS",
+          "detail": "Possible orders divide m\u22121; counting roots of X^d\u22121 yields at most F*tau(m\u22121) exceptional nonzero classes."
+        },
+        {
+          "id": "elementary_divisor_bound",
+          "status": "PASS",
+          "detail": "Displayed small/large-prime factor argument proves tau(n)<=Cepsilon n^epsilon, including uniform finite constants for small primes."
+        },
+        {
+          "id": "exceptional_prime_count",
+          "status": "PASS",
+          "detail": "Each class supplies O(M\u00b2) factor-bin integers; F=M^.96 and epsilon=.01 give O(M^2.97) exceptional p per m."
+        },
+        {
+          "id": "exceptional_pair_mass",
+          "status": "PASS",
+          "detail": "Multiplying selector Q width O(M\u00b2(G+1)) and summing gap mass O(K_*M) gives O(M^5.990), both factor orientations included."
+        },
+        {
+          "id": "joint_majority",
+          "status": "PASS",
+          "detail": "New5.990 is strictly below earlier soft5.994; union on original supply retains \u03a9(M\u2076/log\u00b2M) actual pairs."
+        },
+        {
+          "id": "non_teich_retained",
+          "status": "PASS",
+          "detail": "Additional order thinning does not disturb p^(m\u22121)\u22601 modm\u00b2 or ord_m\u00b2(p)=m ord_m(p)."
+        },
+        {
+          "id": "cyclotomic_separability",
+          "status": "PASS",
+          "detail": "p\u2260m makes all four cyclic carrier polynomials separable, so their local algebras are products of fields."
+        },
+        {
+          "id": "frobenius_factor_counts",
+          "status": "PASS",
+          "detail": "Primitive m roots have orbit length f, primitive m\u00b2 roots mf; counts t,t,1+t,1+2t are exact."
+        },
+        {
+          "id": "scarce_component_slots",
+          "status": "PASS",
+          "detail": "f>ceilM^.96 and m~M imply t=O(M^.04), despite carrier vector dimensions m or m\u00b2."
+        },
+        {
+          "id": "orthogonal_selectors",
+          "status": "PASS",
+          "detail": "Nonzero orthogonal idempotents in products of fields have disjoint nonempty component supports; at most one selector per component."
+        },
+        {
+          "id": "embedding_scope",
+          "status": "PASS",
+          "detail": "An injective unital R-linear algebra embedding R^J would remain injective in each squarefree CRT component and force J nonzero local selectors."
+        },
+        {
+          "id": "linear_kernel_zero_set",
+          "status": "PASS",
+          "detail": "A fixed homogeneous linear map has norm zero iff at least one local component map vanishes; nonzero norm baseline excludes identically-zero components."
+        },
+        {
+          "id": "hyperplane_cover",
+          "status": "PASS",
+          "detail": "With t<p, J>=2, proper kernel intersections have \u2264p^(J\u22122) points and cannot cover a coordinate hyperplane of p^(J\u22121) points."
+        },
+        {
+          "id": "different_coordinates_different_components",
+          "status": "PASS",
+          "detail": "A nonzero linear map whose kernel contains a coordinate hyperplane has exactly that kernel; distinct coordinate hyperplanes require distinct components."
+        },
+        {
+          "id": "J_one_case",
+          "status": "PASS",
+          "detail": "J=1 is correctly separated; no unwarranted J<p hypothesis appears."
+        },
+        {
+          "id": "one_way_degenerate_exception",
+          "status": "PASS",
+          "detail": "One-way ANY semantics with J>t forces local norm blindness; report correctly does not equate this with globally saturated gcd N."
+        },
+        {
+          "id": "source_independent_separator_open",
+          "status": "PASS",
+          "detail": "A locally blind but asymmetric CRT query could reveal a factor; its independent paid acquisition and coverage remain outside the nondegenerate theorem."
+        },
+        {
+          "id": "common_curve_affine_payload",
+          "status": "PASS",
+          "detail": "Fixed linear residual merger on w_j(x)=Y_j\u2212x gives A\u2212xB; each nonzero field component has at most one base-field root."
+        },
+        {
+          "id": "affine_component_degeneracy",
+          "status": "PASS",
+          "detail": "An identically-zero component makes the entire local norm identically zero; nondegenerate baseline excludes it."
+        },
+        {
+          "id": "bounded_polynomial_payload",
+          "status": "PASS",
+          "detail": "For V(X) degreeD with some nonzero norm value, every component polynomial is nonzero and contributes at mostD base-field roots."
+        },
+        {
+          "id": "degree_capacity",
+          "status": "PASS",
+          "detail": "Norm zero count\u2264tD implies D\u2265d/t=\u03a9(M^.96) to cover d=\u03a9m actual distinct targets."
+        },
+        {
+          "id": "actual_targets_separate",
+          "status": "PASS",
+          "detail": "Uses separately reviewed original q1/top-bit local support and normalized-current injection; one is not substituted for the other."
+        },
+        {
+          "id": "complete_period_source_faithful",
+          "status": "PASS",
+          "detail": "Alpha and gamma generate the same local prime-order group, and every actual Y_j is a gamma power, so each target occurs on the complete baby period."
+        },
+        {
+          "id": "nonzero_axis_baseline",
+          "status": "PASS",
+          "detail": "R_p>d ensures an exact ANY test on the complete period has an all-nonzero residual point."
+        },
+        {
+          "id": "prefix_boundary",
+          "status": "PASS",
+          "detail": "No d-hit count inside a lengthTheta(m\u00b2) prefix is assumed; fixed-prefix obstruction requires independently established >tD hits."
+        },
+        {
+          "id": "variable_origin_boundary",
+          "status": "PASS",
+          "detail": "Different row-specific baby origins are expressly not replaced by a common x."
+        },
+        {
+          "id": "source_specific_companion_norm",
+          "status": "PASS",
+          "detail": "For monic H_Y, companion characteristic polynomial gives Norm(U\u2212x)=(-1)^J H_Y(x)=product(Y_j\u2212x) over every commutative ring."
+        },
+        {
+          "id": "no_distinctness_or_unit_needed_for_norm",
+          "status": "PASS",
+          "detail": "Positive carrier identity is valid with repeated targets, nonunits and zero divisors; no interpolation denominator is introduced."
+        },
+        {
+          "id": "nearlinear_product_tree",
+          "status": "PASS",
+          "detail": "Packed residue polynomial multiplication with coefficient digit width exceeding degree*N\u00b2 bound plus fast binary multiplication yields soft O(JlogN) carrier acquisition."
+        },
+        {
+          "id": "primary_integer_algorithm",
+          "status": "PASS",
+          "detail": "Freshly opened official Annals primary statement verifies unconditional O(nlogn) binary multitape multiplication; only this input-independent algorithm is used."
+        },
+        {
+          "id": "idempotent_dense_array_cost",
+          "status": "PASS",
+          "detail": "Optional Lagrange selectors require unit differences and their full dense J-by-J array is not granted free."
+        },
+        {
+          "id": "original_long_query_unpaid",
+          "status": "PASS",
+          "detail": "Source carrier repairs ANY but still leaves product_i H_Y(u rho^i), variable origins and source cocycle acquisition unpaid."
+        },
+        {
+          "id": "extension_splitting",
+          "status": "PASS",
+          "detail": "Degreeh scalar extension splits an orbit of lengthn into gcd(n,h) components; t*h capacity and h\u2265J/t follow."
+        },
+        {
+          "id": "explicit_extension_output_scope",
+          "status": "PASS",
+          "detail": "\u03a9(Jh) is only the contract writing J dense h-coordinate field entries, not a lower bound on sparse/implicit extensions or scalar circuits."
+        },
+        {
+          "id": "native_and_goal_scope",
+          "status": "PASS",
+          "detail": "All new results remain classical; no source edits, backend tests, complete clock, proper recovery or guaranteed sixth-rate algorithm is asserted."
+        }
+      ],
+      "pins": [
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+          "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json",
+          "sha256": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+          "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+          "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-sources.json",
+          "sha256": "6f0a79e44848d4fd93e42d9fabcc152ba344d6bf76641a92c5f5652bcf1c059a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/review/hensel-fourier-independent-review.json",
+          "sha256": "3a4d4b293290c0a1d7f900c37296ed69f36766ae1db5decd648d88b0ae6a6f19",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+          "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information-sources.json",
+          "sha256": "b119a66a95a36e18b58b6f7b2bdf7d31f288139e07cb759717e3b6ee6e0c3d75",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/mask-norm-gcd-information-independent-review.json",
+          "sha256": "2bc94749848f3eb0d6f769eac48ee2b3c09bd9ad74205564c7af6a1a454ee51f",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+          "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support.md",
+          "sha256": "b48a1419c82689eff91bed7ed09a5d4486c6fee7ab01367909c9879be6b3181a",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+          "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+          "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientCentering.lean",
+          "sha256": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+          "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813",
+          "matches": true
+        }
+      ],
+      "scope_verdict": "PASS for new actual-family high auxiliary Frobenius-order thinning, scarce public cyclic component counts, universal nondegenerate linear ANY-merger impossibility and source-specific complete-common-axis degree capacity, with exact paid near-linear source carrier acquisition but unpaid original long scalar query. Local degeneracy, incomplete prefixes, variable origins, sparse/implicit algorithms, proper factor coverage and universal lower bounds are expressly outside.",
+      "classical_only": true,
+      "new_lean_claim": false,
+      "original_long_scalar_nearlinear_acquired": false,
+      "full_goal_complete": false,
+      "frozen_bytes_unchanged_by_reviewer": true,
+      "overall_verdict": "PASS"
+    },
+    "base-squaring-quotient-independent-review.json": {
+      "created_utc": "2026-10-08",
+      "reviewer": "/root/long_norm_escape",
+      "verdict": "PASS",
+      "report": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md",
+        "sha256": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56",
+        "lines": 200
+      },
+      "manifest": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json",
+        "sha256": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d"
+      },
+      "pin_count": 16,
+      "pins": [
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md",
+          "sha256": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56"
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json",
+          "sha256": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+          "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+          "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934"
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+          "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082"
+        },
+        {
+          "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+          "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e"
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+          "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0"
+        },
+        {
+          "path": "/tmp/semiprime-implicit-scalar-20261008/antipodal-trace-candidate.md",
+          "sha256": "a67c02ed0746321c59dd18f8484918711e77b114e7e15c8ed6954fae0cbdd54a"
+        },
+        {
+          "path": "/tmp/semiprime-implicit-scalar-20261008/inverse-indexed-normalized-current-candidate.md",
+          "sha256": "af98fbc1bf39a1d2a617d1294a80621377345d3f4e52e01dfa2ea282cd87f17a"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-partner-acquisition-obstruction-audit.json",
+          "sha256": "e0c1b3b9fed78486661e8480af95d0c79a463f735c145fa10d8a6072c960fcc1"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-centered-acquisition-obstruction-audit.json",
+          "sha256": "de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedShiftClosureObstruction.lean",
+          "sha256": "47c4b50b47fde5d6f4a273a2d8267fef7cccda11d2de522748dbf5067f236de1"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedFiniteTransfer.lean",
+          "sha256": "a1433e4ef5217f6a2d1b1be8d202dc336598efaaa10a4c9703f8c558906b1864"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean",
+          "sha256": "56366a6eb457bf39fe190de5dee083fb2287cb3259ea80184596f711ae9ba1d1"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedLinearStateObstruction.lean",
+          "sha256": "1676dfa7d20c5d14a96bf37c8aec7cc6bf2d0959c7228908eca42e9274115767"
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/kedlaya-umans-2008-primary.pdf",
+          "sha256": "6cc1b371b8f3cd7746db3efaadab9e01a41768f099a7db98e20ee8d05c9ad1a5"
+        }
+      ],
+      "checks": [
+        {
+          "name": "source_residual_factorization",
+          "verdict": "PASS",
+          "reason": "Each residual Y\u2212u q^i=Y(1\u2212(u/Y)q^i); product B1 preserves all original leaves and their field zero union."
+        },
+        {
+          "name": "unit_division_scope",
+          "verdict": "PASS",
+          "reason": "Only known unit Y_j is inverted; residuals and complete norms can be nonunits."
+        },
+        {
+          "name": "ragged_lengths_starts",
+          "verdict": "PASS",
+          "reason": "Unequal literal lengths and signed starts are retained through u_j, without free common padding."
+        },
+        {
+          "name": "normalization_origins",
+          "verdict": "PASS",
+          "reason": "Antipodal normalization changes origins but does not identify distinct row-specific origins."
+        },
+        {
+          "name": "even_odd_identity",
+          "verdict": "PASS",
+          "reason": "B2 partitions even/odd i and includes the odd endpoint as an exact commutative-ring polynomial identity."
+        },
+        {
+          "name": "base_changes",
+          "verdict": "PASS",
+          "reason": "Recursion changes abstract Q to Q\u00b2 and shifts origin, distinct from inherited fixed-q dilation."
+        },
+        {
+          "name": "fixed_algebra_contract",
+          "verdict": "PASS",
+          "reason": "One finite free commutative R-algebra and a representative-independent unital R-algebra endomorphism are explicitly required."
+        },
+        {
+          "name": "actual_evaluation_character",
+          "verdict": "PASS",
+          "reason": "Reduction has an F_p-character with Qbar mapping to the actual alpha; hidden reductions are proof-side, not algorithmic oracles."
+        },
+        {
+          "name": "abstract_vs_scalar",
+          "verdict": "PASS",
+          "reason": "Numerical alpha is fixed as a ground scalar by R-endomorphisms; ordinary numeric repeated squaring is explicitly outside the contract."
+        },
+        {
+          "name": "single_branch_suffices",
+          "verdict": "PASS",
+          "reason": "Only sigma0(Qbar)=Qbar\u00b2 is used; adding odd branch or extra variables cannot weaken this stated hypothesis."
+        },
+        {
+          "name": "same_prime_supply",
+          "verdict": "PASS",
+          "reason": "Uses the frozen actual P Q supply and exact local prime periods, not advised fields or guessed orders."
+        },
+        {
+          "name": "period_uniformity",
+          "verdict": "PASS",
+          "reason": "Exact same R_P,R_Q survive all old seeds and comparable candidate m; new order-of-two condition has no new menu factor."
+        },
+        {
+          "name": "large_period_log",
+          "verdict": "PASS",
+          "reason": "R_p>p^.677 in M\u00b3 bin gives logR\u22652.031logM+O1."
+        },
+        {
+          "name": "doubling_omission_capture",
+          "verdict": "PASS",
+          "reason": "ord_R(2)\u2264T implies R divides some2^k\u22121 and hence the nonzero proof product."
+        },
+        {
+          "name": "product_log_size",
+          "verdict": "PASS",
+          "reason": "Log Z_T\u2264log2*T(T+1)/2 gives O(T\u00b2/logM) distinct admissible bad periods."
+        },
+        {
+          "name": "cofactor_prime_count",
+          "verdict": "PASS",
+          "reason": "Each bad R has at most V possible p=vR+1; using all integers is a valid overcount."
+        },
+        {
+          "name": "partner_pair_count",
+          "verdict": "PASS",
+          "reason": "O(M\u00b3) partners and both orientations give M\u00b3 V T\u00b2/logM."
+        },
+        {
+          "name": "exponent_and_margin",
+          "verdict": "PASS",
+          "reason": "tau1.010 yields3+.969+2.020=5.989; thresholdtau<1.0155 is correct."
+        },
+        {
+          "name": "joint_retained_supply",
+          "verdict": "PASS",
+          "reason": "New loss is directly united on the original supply; existing soft5.994 stays dominant."
+        },
+        {
+          "name": "character_iterates",
+          "verdict": "PASS",
+          "reason": "phi\u2218sigma^k are unital K-characters with g values z^(b^k), by endomorphism iteration."
+        },
+        {
+          "name": "orbit_distinctness",
+          "verdict": "PASS",
+          "reason": "Orderh=ord_R(b) gives h distinct character values; R\u2224b is explicit."
+        },
+        {
+          "name": "distinct_maximal_kernels",
+          "verdict": "PASS",
+          "reason": "Characters fix K and are surjective to K; distinct values imply distinct maximal kernels."
+        },
+        {
+          "name": "CRT_rank",
+          "verdict": "PASS",
+          "reason": "Pairwise comaximal maximal ideals give B\u21a0K^h and dimB\u2265h, without reducedness or invertibility of sigma."
+        },
+        {
+          "name": "no_unit_g_assumption",
+          "verdict": "PASS",
+          "reason": "Only phi(g)=z must be a unit; the finite algebra lemma does not silently assume g invertible."
+        },
+        {
+          "name": "free_base_change",
+          "verdict": "PASS",
+          "reason": "Rankd finite-free R-algebra reduces to dimensiond in either hidden field."
+        },
+        {
+          "name": "both_field_rank_bound",
+          "verdict": "PASS",
+          "reason": "Applying the lemma givesd\u2265max local doubling orders>M1.010\u22121, uniformly on retained family."
+        },
+        {
+          "name": "dense_acquisition_contract",
+          "verdict": "PASS",
+          "reason": "Writing complete dense rankd elements costs at leastd slots; only this specified representation incurs the new lower bound."
+        },
+        {
+          "name": "implicit_boundary",
+          "verdict": "PASS",
+          "reason": "No lower bound for sparse/implicit circuits, moving quotients, corrected maps or numeric scalar squaring is asserted."
+        },
+        {
+          "name": "novelty_scope",
+          "verdict": "PASS",
+          "reason": "Old fixed-q target-dilation obstruction is identified as inherited, not counted as this new base-changing result."
+        },
+        {
+          "name": "radix_library_correction",
+          "verdict": "PASS",
+          "reason": "Final paragraph fixes an input-independent polylog-sized entire library with b<R eventually; exceptions are united before adaptation."
+        },
+        {
+          "name": "radix_count",
+          "verdict": "PASS",
+          "reason": "Summing product log bounds over the predetermined library keeps softM5.989 deletion; arbitrary large/input-dependent libraries stay open."
+        },
+        {
+          "name": "primary_modular_composition",
+          "verdict": "PASS",
+          "reason": "Fresh online primary KU section1.1/Theorems7.1/7.7 confirms supplied degree and unit-difference interpolation hypotheses; no strict-soft q-product claim imported."
+        },
+        {
+          "name": "no_hidden_composite_division",
+          "verdict": "PASS",
+          "reason": "B1 known-unit divisions, B2 polynomial splitting and B7 field proof are cleanly separated."
+        },
+        {
+          "name": "frontier_scope",
+          "verdict": "PASS",
+          "reason": "Numerical long scalar, genuine different observations, recovery, all-semiprime clock and sixth-rate theorem remain open; no examples/native certificates or old bytes changed."
+        }
+      ],
+      "required_corrections": [],
+      "source_manifest_mismatches": 0,
+      "resolved_draft_correction": "Optional radix menu was restricted to a predetermined polylog-sized dyadic library; b<R holds and union precedes adaptation. Final report pinned after this correction.",
+      "primary_web_verification": {
+        "url": "https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol08381/DagSemProc.08381.5/DagSemProc.08381.5.pdf",
+        "freshly_verified_utc": "2026-10-08",
+        "inspected": "Section1.1 definition, Theorems7.1 and7.7 with remark on lower-order factors."
+      },
+      "classical_only": true,
+      "new_lean_claim": false,
+      "full_goal_complete": false,
+      "arbitrary_scalar_lower_bound": false,
+      "source_and_report_bytes_unchanged_by_reviewer": true,
+      "overall_verdict": "PASS"
+    },
+    "three-term-projected-sum-independent-review.json": {
+      "created_utc": "2026-10-08",
+      "reviewer": "/root/long_norm_escape",
+      "verdict": "PASS",
+      "report": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+        "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac",
+        "lines": 301
+      },
+      "manifest": {
+        "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json",
+        "sha256": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885"
+      },
+      "pin_count": 13,
+      "pins": [
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+          "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac"
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json",
+          "sha256": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885"
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.pdf",
+          "sha256": "ed4bc9cf6b25de57f61b74e8b82d2462be11103de323b463e91a0c5320ddcda3"
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.txt",
+          "sha256": "ee97eab1d2568e720700c9dad1ff6265481b5e5713b33c11eb526f91cb635cc1"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+          "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+          "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082"
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+          "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+          "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0"
+        },
+        {
+          "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+          "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStagedSeed.lean",
+          "sha256": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+          "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28"
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+          "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813"
+        },
+        {
+          "path": "/tmp/semiprime-full-acquisition-20261008/kurlberg-pomerance-2005.pdf",
+          "sha256": "9d6dad98f354c8df181bda2ff04cbce74f17dd204cef10d1ea38b5223fb9c0b3"
+        }
+      ],
+      "checks": [
+        {
+          "name": "actual_N_only_projection",
+          "verdict": "PASS",
+          "reason": "Exact original ell_N and (N\u22121)*(m!)^ell_N retained."
+        },
+        {
+          "name": "fixed_base_catalog",
+          "verdict": "PASS",
+          "reason": "Positive constant U is independent of N; all its bases are eventual units on actual factor bins."
+        },
+        {
+          "name": "fixed_monic_library",
+          "verdict": "PASS",
+          "reason": "Constant H_m has monic bounded degree, m-only O(logm)-bit coefficients and explicit polylog-bit generation."
+        },
+        {
+          "name": "post_exponent_bit_bound",
+          "verdict": "PASS",
+          "reason": "Bounded h_m(N) has O(logN) bits and is acquired in polylogN time, despite large magnitude."
+        },
+        {
+          "name": "signed_powers",
+          "verdict": "PASS",
+          "reason": "Negative exponents/post-exponents use only public known-unit inverses."
+        },
+        {
+          "name": "same_base_origin",
+          "verdict": "PASS",
+          "reason": "Unit common-origin removal preserves gcd; actual target not silently replaced."
+        },
+        {
+          "name": "complete_mixed_grid",
+          "verdict": "PASS",
+          "reason": "Coincident bases and all zero/negative exponent labels included in complete triple menu."
+        },
+        {
+          "name": "additive_identity_values",
+          "verdict": "PASS",
+          "reason": "At identity elements coefficient pattern1,1,\u22121 gives1; no globally saturated additive identity excluded."
+        },
+        {
+          "name": "same_actual_supply",
+          "verdict": "PASS",
+          "reason": "Frozen actual balanced P Q large-period/cross-period input supply retained."
+        },
+        {
+          "name": "selector_strip",
+          "verdict": "PASS",
+          "reason": "First-K predecessor implication confines Q in lengthO(M\u00b2G_m); no advised modular selector."
+        },
+        {
+          "name": "gap_vs_prime_count",
+          "verdict": "PASS",
+          "reason": "\u03a3(G+1)=O(KM) and #m=O(M) remain separate in endpoint and interval terms."
+        },
+        {
+          "name": "ell_piece_partition",
+          "verdict": "PASS",
+          "reason": "N~M6 fixed multiplicative bin allows O1 literal ell_N values; Q partitioned before z_u fixed."
+        },
+        {
+          "name": "Fermat_projection",
+          "verdict": "PASS",
+          "reason": "Within each ell piece \u0393_u=z_u^(Q\u22121) modP exactly."
+        },
+        {
+          "name": "cofactor_kill",
+          "verdict": "PASS",
+          "reason": "v_P<m gives v_P|m!, so z_u has order1 or primeR; no unsupported seed order assumption."
+        },
+        {
+          "name": "order_one_case",
+          "verdict": "PASS",
+          "reason": "z_u1 makes same-base residual1; all trivial base cases covered."
+        },
+        {
+          "name": "monic_Q_map",
+          "verdict": "PASS",
+          "reason": "(Q\u22121)h_m(Q) is monic degree1..D+1 moduloR, asP\u22611."
+        },
+        {
+          "name": "bounded_preimages",
+          "verdict": "PASS",
+          "reason": "Each k_h class has at mostD+1 Q residues by monicity; fixed coefficients essential."
+        },
+        {
+          "name": "nonzero_Laurent",
+          "verdict": "PASS",
+          "reason": "Z^L(Z^e+Z^f\u22121) degree\u22642L and value1 at1 for every exponent coincidence."
+        },
+        {
+          "name": "generator_index_roots",
+          "verdict": "PASS",
+          "reason": "At most2L subgroup roots correspond to at most2L k classes, thenO(L) Q classes."
+        },
+        {
+          "name": "interval_endpoints",
+          "verdict": "PASS",
+          "reason": "D/R+1 captures residue wraps and integer endpoints; O1 ell pieces add constants."
+        },
+        {
+          "name": "same_base_full_tuple_cost",
+          "verdict": "PASS",
+          "reason": "O(L\u00b2) pairs andO(L) roots produceL\u00b3, not an uncharged tuple union."
+        },
+        {
+          "name": "same_base_sharp_exponents",
+          "verdict": "PASS",
+          "reason": "L\u00b3(KM3.969+M4) at\u03bb.5 is KM5.469+M5.5."
+        },
+        {
+          "name": "mixed_normalization",
+          "verdict": "PASS",
+          "reason": "Dividing by \u03b8_w^G makes a,b Q-independent on fixed P,m,ell pieces, with common k_h."
+        },
+        {
+          "name": "mixed_degeneracies",
+          "verdict": "PASS",
+          "reason": "a1/b1 gives no roots; a=b\u22601 gives\u22641 root using oddP and exactR."
+        },
+        {
+          "name": "Sidon_determinant",
+          "verdict": "PASS",
+          "reason": "Distinct nonidentity a,b imply a/b exactR, so a^h\u2212b^h\u22600 for nonzeroh."
+        },
+        {
+          "name": "ordered_difference_injection",
+          "verdict": "PASS",
+          "reason": "Fixed nonzero difference determinesU=a^k and thereforek uniquely."
+        },
+        {
+          "name": "Sidon_cardinality",
+          "verdict": "PASS",
+          "reason": "s(s\u22121)\u2264R\u22121 ands\u2264sqrtR+1 follow from all ordered distinct pairs."
+        },
+        {
+          "name": "primary_subgroup_bound",
+          "verdict": "PASS",
+          "reason": "Fresh primary Kelley\u2013Owen v4 Lemma2.3 verified; direct supplied proof uses no heuristic logarithmic claim."
+        },
+        {
+          "name": "mixed_strip_split",
+          "verdict": "PASS",
+          "reason": "Per tuple M\u00b2G/sqrtR+sqrtR+1 separates interval and endpoint contributions."
+        },
+        {
+          "name": "mixed_R_bounds",
+          "verdict": "PASS",
+          "reason": "LowerR\u2265cM2.031 controls reciprocal term; upperR<P\u2264M3 controls sqrt term."
+        },
+        {
+          "name": "mixed_sharp_exponents",
+          "verdict": "PASS",
+          "reason": "One tuple KM4.9845+M5.5, \u03bb.15 full grid KM5.4345+M5.950."
+        },
+        {
+          "name": "fixed_field_library_factors",
+          "verdict": "PASS",
+          "reason": "Two field orientations and constant libraries/degree introduce only fixed factors."
+        },
+        {
+          "name": "large_tuple_scope",
+          "verdict": "PASS",
+          "reason": "Abstract Q-independent lists pay cardinality and separate bit acquisition; unrelated adaptive exponents not free."
+        },
+        {
+          "name": "same_supply_union",
+          "verdict": "PASS",
+          "reason": "New5.5/5.950 deletions unite on original supply; oldsoft5.994 remains dominant."
+        },
+        {
+          "name": "projection_acquisition",
+          "verdict": "PASS",
+          "reason": "Balanced factorial tree, logarithmic scalar power and constant \u0393 powers fit softm bits/time."
+        },
+        {
+          "name": "same_base_complete_cost",
+          "verdict": "PASS",
+          "reason": "Cached powers, all softm leaves/gcds and optional output storage fit softm."
+        },
+        {
+          "name": "mixed_complete_cost",
+          "verdict": "PASS",
+          "reason": "Cached powers and all softm^.45 triple leaves/gcds fit softm."
+        },
+        {
+          "name": "prime_menu_cost_scope",
+          "verdict": "PASS",
+          "reason": "Fixed polylog menu and inherited prime generation softB; polynomial firstK gets free coverage only."
+        },
+        {
+          "name": "unit_leaf_union",
+          "verdict": "PASS",
+          "reason": "Every survivor residual and all same-leaf products/masks/localization are units in both fields."
+        },
+        {
+          "name": "growing_seed_boundary",
+          "verdict": "PASS",
+          "reason": "No additive common-order zero invariant or free growing/adaptive seed union asserted."
+        },
+        {
+          "name": "full_frontier_scope",
+          "verdict": "PASS",
+          "reason": "Original long ANY norm, unrestricted circuits/coefficients, proper recovery and guaranteed sixth-rate full clock remain open; classical only."
+        }
+      ],
+      "required_corrections": [],
+      "source_manifest_mismatches": 0,
+      "primary_web_verification": {
+        "url": "https://arxiv.org/pdf/1510.01758v4",
+        "freshly_verified_utc": "2026-10-08",
+        "inspected": "Kelley\u2013Owen Lemmas2.2/2.3 and exact subgroup root-count proof.",
+        "fast_integer_multiplication": "Official Harvey\u2013van der Hoeven Annals2021 statement freshly opened on2026-10-08."
+      },
+      "line_count_convention": "Logical CR/LF byte lines; PDF-extracted form feeds do not add lines.",
+      "classical_only": true,
+      "new_lean_claim": false,
+      "full_goal_complete": false,
+      "arbitrary_scalar_lower_bound": false,
+      "source_and_report_bytes_unchanged_by_reviewer": true,
+      "overall_verdict": "PASS"
+    },
+    "journal-independent-review.json": {
+      "schema": "independent-classical-any-zero-journal-review-v1",
+      "reviewer": "/root/long_norm_review",
+      "created_utc": "2026-10-08T17:58:07.772918+00:00",
+      "status": "PASS",
+      "journal": {
+        "path": "/tmp/semiprime-any-zero-registration-20261008/journal-entry.md",
+        "sha256": "0b7a7f5ca17d556b5abcf2c77aa4ecae55f3007d90ffc2f42737c0e61ec7b864",
+        "bytes": 11170,
+        "lines": 208,
+        "exactly_two_terminal_newlines": true
+      },
+      "check_count": 48,
+      "pin_count": 70,
+      "pin_mismatches": 0,
+      "required_corrections": [],
+      "checks": [
+        {
+          "id": "final_journal_bytes",
+          "status": "PASS",
+          "detail": "Reviewed only final journal 0b7a7f5c: 11170 bytes, 208 lines and exactly two terminal newlines. The old 79b4 draft was superseded."
+        },
+        {
+          "id": "final_three_reports_and_reviews",
+          "status": "PASS",
+          "detail": "Pins the final cyclotomic c5fd, base-squaring 7396 and additive 01c3 reports, their manifests and three frozen PASS reviews with 39, 34 and 41 checks."
+        },
+        {
+          "id": "parent_native_authority",
+          "status": "PASS",
+          "detail": "Current parent 1b3e901b audit has 488 source, 109 Mathlib and 17 artifact hashes independently revalidated unchanged. No backend checks were rerun."
+        },
+        {
+          "id": "earlier_PASS_chain",
+          "status": "PASS",
+          "detail": "Five preserved authorities contain 27 earlier pinned PASS reviews: 4+4+2+10+7."
+        },
+        {
+          "id": "same_original_supply",
+          "status": "PASS",
+          "detail": "Every new deletion is bounded on the SAME original balanced prime-pair supply and united before adaptive selection, not a new density assertion after thinning."
+        },
+        {
+          "id": "selector_uniformity",
+          "status": "PASS",
+          "detail": "Actual first-K predecessor implication, m~M and \u03a3(G+1)=O(K_*M) hold uniformly across candidate auxiliary primes."
+        },
+        {
+          "id": "auxiliary_order_class_bound",
+          "status": "PASS",
+          "detail": "Orders divide m\u22121. The F*tau(m\u22121) class count and elementary divisor bound with epsilon .01 prove the high-order thinning."
+        },
+        {
+          "id": "auxiliary_order_pair_loss",
+          "status": "PASS",
+          "detail": "Factor-bin representatives and actual partner strips give O(K_* M^5 F M^.01)=O(M^5.990), including both factor orientations."
+        },
+        {
+          "id": "four_cyclic_factor_counts",
+          "status": "PASS",
+          "detail": "Retained non-Teich condition and Frobenius orbit lengths give t,t,1+t,1+2t simple factors; all O(M^.04)."
+        },
+        {
+          "id": "orthogonal_selector_capacity",
+          "status": "PASS",
+          "detail": "Nonzero orthogonal selectors require distinct components, so J=\u03a9m cannot fit in the four public cyclic carriers."
+        },
+        {
+          "id": "universal_linear_ANY_contract",
+          "status": "PASS",
+          "detail": "For each fixed input and source, the coefficients define a homogeneous linear map in residual coordinates. ANY implication is required for every tuple, with a nonzero all-unit baseline."
+        },
+        {
+          "id": "hyperplane_cover_proof",
+          "status": "PASS",
+          "detail": "With t<p, fewer thanp proper subspaces cannot cover a coordinate hyperplane; each coordinate requires a distinct component kernel."
+        },
+        {
+          "id": "local_blindness_scope",
+          "status": "PASS",
+          "detail": "Dropping baseline can force local blindness without implying global gcdN; independently acquired asymmetric separators remain outside."
+        },
+        {
+          "id": "actual_common_curve_capacity",
+          "status": "PASS",
+          "detail": "An affine payload has\u2264t local zeros when nondegenerate; degreeD component root bounds give\u2264tD distinct base-field zeros."
+        },
+        {
+          "id": "actual_distinct_target_support",
+          "status": "PASS",
+          "detail": "Original q1/top-bit support and normalized injection are separately imported; neither substitutes for the other."
+        },
+        {
+          "id": "complete_period_only",
+          "status": "PASS",
+          "detail": "Alpha generates the same prime-order subgroup as gamma, so actual targets occur on the complete period; no \u03a9m intersection with a shortm\u00b2 prefix is assumed."
+        },
+        {
+          "id": "degree_lower_bound_scope",
+          "status": "PASS",
+          "detail": "Exact complete-axis nondegenerate ANY representation needsD\u2265d/t=\u03a9(M^.96); variable row origins and implicit high-degree payloads remain open."
+        },
+        {
+          "id": "faithful_source_companion_norm",
+          "status": "PASS",
+          "detail": "For monic H_Y, Norm(U\u2212x)=product(Y_j\u2212x)=(-1)^J H_Y(x) over arbitrary commutative rings, repeated roots and zero divisors."
+        },
+        {
+          "id": "carrier_acquisition_paid",
+          "status": "PASS",
+          "detail": "A balanced polynomial tree, carry-free Kronecker packing and unconditional binary multiplication give soft O(J logN) carrier construction. Paid first-current targets make this soft O(m)."
+        },
+        {
+          "id": "carrier_vs_long_scalar",
+          "status": "PASS",
+          "detail": "Paid faithful carrier construction preservesANY but does not acquire product_i H_Y(u rho^i), its variable-origin analogue or full source cocycle."
+        },
+        {
+          "id": "idempotent_and_extension_charges",
+          "status": "PASS",
+          "detail": "Dense Lagrange selector tables are not free; extension component growth\u2264h givesh\u2265J/t and \u03a9(Jh) only for the specified dense output contract."
+        },
+        {
+          "id": "exact_q_product_rewrite",
+          "status": "PASS",
+          "detail": "A5 uses known-unit normalization only and retains each signed start/unequal length; even/odd identities remain division-free in residuals."
+        },
+        {
+          "id": "abstract_Q_contract",
+          "status": "PASS",
+          "detail": "Qbar is an abstract algebra element with actual local evaluation; R-algebra endomorphism fixes ground scalars, so ordinary numerical scalar q-squaring is outside."
+        },
+        {
+          "id": "doubling_order_divisor_count",
+          "status": "PASS",
+          "detail": "Small ord_R(2) implies R divides the nonzero product of 2^k\u22121. Its logarithm is O(T^2); v\u2264M^.969 and O(M^3) partners give O(M^5.989/logM) input loss."
+        },
+        {
+          "id": "doubling_all_choices_uniform",
+          "status": "PASS",
+          "detail": "The same intrinsic prime R persists across registered seed and modulus choices. No extra choice-axis multiplier appears."
+        },
+        {
+          "id": "character_CRT_rank",
+          "status": "PASS",
+          "detail": "With R not dividing b, phi composed with sigma^k has ord_R(b) distinct maximal kernels. CRT surjects onto that many copies of the base field."
+        },
+        {
+          "id": "dense_invariant_rank_boundary",
+          "status": "PASS",
+          "detail": "Rank > M^1.010\u22121 excludes a dense fixed invariant algebra of soft O(m) size. Moving quotients, implicit states and arbitrary scalar methods remain open."
+        },
+        {
+          "id": "fixed_radix_library",
+          "status": "PASS",
+          "detail": "The entire library 2\u2264b\u2264ceil((log M)^C) is input-independent, has polylogarithmic size and satisfies b<R eventually. The union precedes adaptive choice."
+        },
+        {
+          "id": "additive_fixed_catalogs",
+          "status": "PASS",
+          "detail": "Finite positive bases and a constant finite monic polynomial library are fixed as N varies at each m. Bounded coefficient bits and polylogarithmic generation are explicit."
+        },
+        {
+          "id": "additive_unit_origins",
+          "status": "PASS",
+          "detail": "Common public unit rephasing preserves the exact gcd and bounded relative labels. Actual row targets are not silently replaced."
+        },
+        {
+          "id": "literal_ell_partition",
+          "status": "PASS",
+          "detail": "Exact ell_N has O(1) values on the balanced input bin. It is frozen only within the corresponding Q pieces."
+        },
+        {
+          "id": "literal_cofactor_projection",
+          "status": "PASS",
+          "detail": "The explicit z_u=u^((m!)^ell) has order 1 or R after the cofactor is killed. Gamma_u=z_u^(Q\u22121) modulo P is exact; no additional seed-order premise is required."
+        },
+        {
+          "id": "monic_post_exponent",
+          "status": "PASS",
+          "detail": "Since P\u22611 modulo R, k_h(Q)=(Q\u22121)h_m(Q). It is monic of bounded positive degree, so each exponent class has boundedly many Q preimages."
+        },
+        {
+          "id": "large_h_N_cost",
+          "status": "PASS",
+          "detail": "The full magnitude of h(N) is retained. Its bit length and deterministic acquisition are polylogarithmic in N; h=1, h(T)=T and h(T)=T\u22121 are valid examples."
+        },
+        {
+          "id": "nonzero_same_base_Laurent",
+          "status": "PASS",
+          "detail": "Z^L(Z^e+Z^f\u22121) is nonzero because its value at Z=1 is 1, including coincident, zero and negative labels. It has at most 2L subgroup zero classes."
+        },
+        {
+          "id": "mixed_Q_independent_labels",
+          "status": "PASS",
+          "detail": "After division by theta_w^G, a and b are independent of Q within each fixed P,m,ell piece and share the same exponent k_h."
+        },
+        {
+          "id": "mixed_degeneracies",
+          "status": "PASS",
+          "detail": "If a or b is 1, there are no zeros. Equal nonidentity a=b gives at most one zero because P is odd and R is prime."
+        },
+        {
+          "id": "mixed_Sidon_difference",
+          "status": "PASS",
+          "detail": "The prime order of a/b makes a^d\u2212b^d nonzero for every nonzero d. A fixed difference determines a^k and then k uniquely."
+        },
+        {
+          "id": "mixed_cardinality",
+          "status": "PASS",
+          "detail": "Ordered distinct zero pairs inject into the R\u22121 nonzero differences, giving s(s\u22121)\u2264R\u22121 and s\u2264sqrt(R)+1 without a discrete-log oracle."
+        },
+        {
+          "id": "sharp_gap_vs_prime_count",
+          "status": "PASS",
+          "detail": "Same-base loss is L^3(K M^3.969+M^4); mixed loss is L^3(K M^4.9845+M^5.5). Interval terms use the gap sum, while endpoint terms use #m=O(M)."
+        },
+        {
+          "id": "displayed_additive_exponents",
+          "status": "PASS",
+          "detail": "At lambda .5 and .15, the journal correctly gives soft O(M^5.5+K M^5.469) and soft O(M^5.950+K M^5.4345)."
+        },
+        {
+          "id": "paid_additive_grid_cost",
+          "status": "PASS",
+          "detail": "Constant many projections have soft O(m)-bit exponents. Cached signed powers and the complete same-base or mixed probes cost soft O(m) time and space at each selected m."
+        },
+        {
+          "id": "menu_total_cost_scope",
+          "status": "PASS",
+          "detail": "Fixed polylogarithmic prime menus cost soft O(B) with inherited paid prime generation. The polynomial first-K menu is granted free only for arithmetic coverage failure."
+        },
+        {
+          "id": "all_additive_leaves_units",
+          "status": "PASS",
+          "detail": "After deletion in both fields, every new residual is a unit. Products, masks, known unit rephasing and localization within the same leaves cannot yield a proper factor."
+        },
+        {
+          "id": "combined_dominant_loss",
+          "status": "PASS",
+          "detail": "The new exponents 5.990, 5.989 and 5.950 are below the old 5.994 bound. Union on the original supply preserves Omega(M^6/log^2 M) inputs satisfying every registered obstruction."
+        },
+        {
+          "id": "primary_scope",
+          "status": "PASS",
+          "detail": "Primary multiplication, Kedlaya\u2013Umans composition and Kelley\u2013Owen Lemma 2.3 were inspected. No heuristic logarithmic bound, QRH, GRH or new OpenAI/math premise is used."
+        },
+        {
+          "id": "root_metadata_and_registration_scope",
+          "status": "PASS",
+          "detail": "Rootimports/publicmetadata hashes unchanged; this review authorizes mathematical journal integration, not a claim that registration already occurred."
+        },
+        {
+          "id": "classical_goal_boundary",
+          "status": "PASS",
+          "detail": "No new Lean source, checker, C export, native certificate, example, build or test is asserted. The long ANY scalar, recovery, prime squares, controller, full bit time and peak memory remain open."
+        }
+      ],
+      "pins": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian.lean",
+          "sha256": "f640d3355a431f47e136706d3ba932b3805847ed77f923d6659d9be831aa5032",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+          "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+          "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientCentering.lean",
+          "sha256": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+          "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedFiniteTransfer.lean",
+          "sha256": "a1433e4ef5217f6a2d1b1be8d202dc336598efaaa10a4c9703f8c558906b1864",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedLinearStateObstruction.lean",
+          "sha256": "1676dfa7d20c5d14a96bf37c8aec7cc6bf2d0959c7228908eca42e9274115767",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedShiftClosureObstruction.lean",
+          "sha256": "47c4b50b47fde5d6f4a273a2d8267fef7cccda11d2de522748dbf5067f236de1",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean",
+          "sha256": "56366a6eb457bf39fe190de5dee083fb2287cb3259ea80184596f711ae9ba1d1",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStagedSeed.lean",
+          "sha256": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-adaptive-seed-prime-menu-obstruction-audit.json",
+          "sha256": "e90a1bd344d8dce1bf22ab83cd7fcbebd4bd16f1a7e1bd7a22fcd18493068642",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-centered-acquisition-obstruction-audit.json",
+          "sha256": "de11da69ec0086d3cd8ba1c982a32e06f05cb3b4fdbb520c4056c004ba18da03",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-charged-acquisition-obstruction-audit.json",
+          "sha256": "3b6b3eaf2624314471b8f9aa7a2d47a842edce876f25153a7ebc984b59ce5164",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-full-euclid-acquisition-obstruction-audit.json",
+          "sha256": "bf6893219305096e499650f82c52a5141ee697b93fe62d3adfbda1c5e997b96c",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+          "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-local-root-support-obstruction-audit.json",
+          "sha256": "d3755bddc26ad7e275693f880bec90406b4cccbb48d5cded56c8aeca5b2ccbe6",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/semiprime-partner-acquisition-obstruction-audit.json",
+          "sha256": "e0c1b3b9fed78486661e8480af95d0c79a463f735c145fa10d8a6072c960fcc1",
+          "matches": true
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/docs/theorem-explorer/metadata.json",
+          "sha256": "24c0c7204086315522dfbc98be07cf701263a0789f91284dd501ef3187da895d",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.pdf",
+          "sha256": "ed4bc9cf6b25de57f61b74e8b82d2462be11103de323b463e91a0c5320ddcda3",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/kelley-owen-1510.01758v4.txt",
+          "sha256": "ee97eab1d2568e720700c9dad1ff6265481b5e5713b33c11eb526f91cb635cc1",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-obstruction.md",
+          "sha256": "01c302afd247f3441d6fe86f02a78220d640f764e03cef6d499ff3c6c31557ac",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/engineering/three-term-projected-sum-sources.json",
+          "sha256": "9c5862f2e8e4e49f1dfaccd08c6e1b09ebaa325c59622b69d8fb19d9cda1a885",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/base-squaring-quotient-independent-review.json",
+          "sha256": "c3acbc598416e666ae517da992f1715e6d851cb1730e900fba896c4d242bfa83",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+          "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json",
+          "sha256": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/three-term-projected-sum-independent-review.json",
+          "sha256": "e6687d081f8ed95afca473fb1eb6295e9c2e0f8c7baa822e74d0648838498cf1",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-obstruction.md",
+          "sha256": "73967fbeeeca4b373297efef762a43976b1b8e2985b0e642c8e6d417d415ef56",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/base-squaring-quotient-sources.json",
+          "sha256": "06c25ff1d185f48cca80af9aad79796c8e985206fe6fea47abc7d6a97428525d",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/cyclotomic-any-zero-independent-review.json",
+          "sha256": "8846c68b9da0167f06fc484c9dff56bd410f7520635439813601fcb28b74acbb",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-frontier-20261008/review/kedlaya-umans-2008-primary.pdf",
+          "sha256": "6cc1b371b8f3cd7746db3efaadab9e01a41768f099a7db98e20ee8d05c9ad1a5",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-any-zero-registration-20261008/journal-entry.md",
+          "sha256": "0b7a7f5ca17d556b5abcf2c77aa4ecae55f3007d90ffc2f42737c0e61ec7b864",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-independent-review.json",
+          "sha256": "5695c482e58a7a5330ed9ed1f28c850357fae26fa74388de2c81ef5aa46dd41d",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-obstruction.md",
+          "sha256": "11d9550b5122e9b5c2cf2fe10e564f132ffa66e06535672738e45432d4e2c26e",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-covered-observation-20261008/small-rational-projection-independent-review.json",
+          "sha256": "90eff65ef4dd13fbb1cb72c2f40aed40a04d444f45e2e487d6748ffafaae04ec",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-full-acquisition-20261008/kurlberg-pomerance-2005.pdf",
+          "sha256": "9d6dad98f354c8df181bda2ff04cbce74f17dd204cef10d1ea38b5223fb9c0b3",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information-sources.json",
+          "sha256": "b119a66a95a36e18b58b6f7b2bdf7d31f288139e07cb759717e3b6ee6e0c3d75",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+          "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/bounded-unequal-exponent-independent-review.json",
+          "sha256": "db39ab9fc77c5b4b4000e4987c0f4b3c38f0c3d42664016e5d44aba43fd4d7b0",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+          "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-sources.json",
+          "sha256": "6f0a79e44848d4fd93e42d9fabcc152ba344d6bf76641a92c5f5652bcf1c059a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/escape/mask-norm-gcd-information-independent-review.json",
+          "sha256": "2bc94749848f3eb0d6f769eac48ee2b3c09bd9ad74205564c7af6a1a454ee51f",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+          "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/review/hensel-fourier-independent-review.json",
+          "sha256": "3a4d4b293290c0a1d7f900c37296ed69f36766ae1db5decd648d88b0ae6a6f19",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-followup-20261008/review/journal-independent-review.json",
+          "sha256": "b7d48307b57cfa6a46287f37dfa367c562f206fa334214d914b17f0fd3deffb9",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-scalar-20261008/antipodal-trace-candidate.md",
+          "sha256": "a67c02ed0746321c59dd18f8484918711e77b114e7e15c8ed6954fae0cbdd54a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-implicit-scalar-20261008/inverse-indexed-normalized-current-candidate.md",
+          "sha256": "af98fbc1bf39a1d2a617d1294a80621377345d3f4e52e01dfa2ea282cd87f17a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-journal-independent-review.json",
+          "sha256": "c54fa8e316e4704208069d149c22e65d242845edbdcdddc84e59b7cd5775fc63",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support-independent-review.json",
+          "sha256": "6b1826964a8d62050dacbcf36de62f1201e16d33fd7f522f858e8f4478805bc5",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support.md",
+          "sha256": "b48a1419c82689eff91bed7ed09a5d4486c6fee7ab01367909c9879be6b3181a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/adjacent-frame-independent-review.json",
+          "sha256": "2e76b27dd00ad7ffb49ac880c7d6bbc868b7006a7de9ad3eba5dd7e8febcbd5f",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/charge-catalog-independent-review.json",
+          "sha256": "03578f1d8bfea69b8ab3cc8f1d0235833e8a9671681a19b7f738cf7048d6120f",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/charged-skipped-ray-independent-review.json",
+          "sha256": "67410c99d4466c7c7eb5ee18e2523b38c22105b81691b74eeb6478dfa821f055",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/half-tag-mask-charge-gauss-review.json",
+          "sha256": "dfab5ec290a5ccd5dfd4a0eb10301268eb180fb52483f2e1208256cd5a2e7ba3",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/integrated-charged-native-independent-review.json",
+          "sha256": "ad8adfaea1fe1ad9f85623c5044120ab26f7b39c25e3df4b7aca9129dd4766b5",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/journal-independent-review.json",
+          "sha256": "73b9d9af0a0189f52957d53bf6b74d27cbde05102a94dcd2f3c8eddeba40d8cc",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/journal-native-scope-review.json",
+          "sha256": "d130e0037950c393cc1e38db6521508a861520889d7a67af1dc0a8f5811e3d3a",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/long-frame-charge-gauss-review.json",
+          "sha256": "1e835c650fa40ae7fd8a209cdb5750be349fb1057077260de43c05a4aee64734",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/long-frame-charge-independent-review.json",
+          "sha256": "e3c99608be96b4667c53dd49a88d9417f67d16479b0592998e81738d16f530b3",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-long-norm-frontier-20261008/recurrence-degree-independent-review.json",
+          "sha256": "dae094ad027ebc9b8d9b04cfb44e22ef996efc9f92dd88cf5109ec3a51633417",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+          "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-independent-review.json",
+          "sha256": "d241ae84c9643eab16edcca3f15483670e8d13ba8a7e9ee1086a57ce484395b7",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/implicit-carry-v4-arithmetic-review.json",
+          "sha256": "9fa34c8bd6e31a571ad458f2eda887c81fbd38d2a7b4d2b86fdc53d2300b6829",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/implicit-carry-v4-independent-review.json",
+          "sha256": "bfffc6a8379b7e87ff61edad980c04372bf0aedd61347af9d9ee83141a235bcb",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/integrated-native-independent-review.json",
+          "sha256": "4c275cafee054c600a50dccaef9824a3510c858ae7c0f20a00d070fec5c9e694",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/journal-independent-review.json",
+          "sha256": "385bd4879fafa2bc729f3b7e923ae24521f5133933888c0cb024c89c0d37bd20",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/journal-native-scope-review.json",
+          "sha256": "ca5a6702e98ba24ec5d97deca10f20abd57b3070b321063b81460af3a5fb0178",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-next-covered-acquisition-20261008/universal-catalog-independent-review.json",
+          "sha256": "759f19cd3d5e734adac56a8cb8395268496eed012546cf8942d39449595a3f9e",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/journal-independent-review.json",
+          "sha256": "3ed4634b93b71f06467c0eb9b7c29ad1ed7ea5f6756ff07ea2f52abb37e0db54",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-independent-review.json",
+          "sha256": "d96e34956b1c4b3b5883ade7963e371eb88fb2a41ffa9c31fb79f5500f7ac3e8",
+          "matches": true
+        },
+        {
+          "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+          "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0",
+          "matches": true
+        }
+      ],
+      "parent_authority_revalidation": {
+        "source_sha256": {
+          "count": 488,
+          "mismatches": 0
+        },
+        "mathlib_import_source_sha256": {
+          "count": 109,
+          "mismatches": 0
+        },
+        "artifact_sha256": {
+          "count": 17,
+          "mismatches": 0
+        }
+      },
+      "prior_authority_reviews": [
+        {
+          "audit": {
+            "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+            "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+          },
+          "PASS_review_count": 4,
+          "review_pins": [
+            {
+              "path": "/tmp/semiprime-implicit-followup-20261008/review/hensel-fourier-independent-review.json",
+              "sha256": "3a4d4b293290c0a1d7f900c37296ed69f36766ae1db5decd648d88b0ae6a6f19",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-implicit-followup-20261008/escape/bounded-unequal-exponent-independent-review.json",
+              "sha256": "db39ab9fc77c5b4b4000e4987c0f4b3c38f0c3d42664016e5d44aba43fd4d7b0",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-implicit-followup-20261008/escape/mask-norm-gcd-information-independent-review.json",
+              "sha256": "2bc94749848f3eb0d6f769eac48ee2b3c09bd9ad74205564c7af6a1a454ee51f",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-implicit-followup-20261008/review/journal-independent-review.json",
+              "sha256": "b7d48307b57cfa6a46287f37dfa367c562f206fa334214d914b17f0fd3deffb9",
+              "verdict": "PASS"
+            }
+          ]
+        },
+        {
+          "audit": {
+            "path": "/home/dbsanfte/riemann/formal/docs/semiprime-adaptive-seed-prime-menu-obstruction-audit.json",
+            "sha256": "e90a1bd344d8dce1bf22ab83cd7fcbebd4bd16f1a7e1bd7a22fcd18493068642"
+          },
+          "PASS_review_count": 4,
+          "review_pins": [
+            {
+              "path": "/tmp/semiprime-covered-observation-20261008/small-base-projection-independent-review.json",
+              "sha256": "5695c482e58a7a5330ed9ed1f28c850357fae26fa74388de2c81ef5aa46dd41d",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-covered-observation-20261008/small-rational-projection-independent-review.json",
+              "sha256": "90eff65ef4dd13fbb1cb72c2f40aed40a04d444f45e2e487d6748ffafaae04ec",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-independent-review.json",
+              "sha256": "d96e34956b1c4b3b5883ade7963e371eb88fb2a41ffa9c31fb79f5500f7ac3e8",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-prime-menu-20261008/journal-independent-review.json",
+              "sha256": "3ed4634b93b71f06467c0eb9b7c29ad1ed7ea5f6756ff07ea2f52abb37e0db54",
+              "verdict": "PASS"
+            }
+          ]
+        },
+        {
+          "audit": {
+            "path": "/home/dbsanfte/riemann/formal/docs/semiprime-local-root-support-obstruction-audit.json",
+            "sha256": "d3755bddc26ad7e275693f880bec90406b4cccbb48d5cded56c8aeca5b2ccbe6"
+          },
+          "PASS_review_count": 2,
+          "review_pins": [
+            {
+              "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support-independent-review.json",
+              "sha256": "6b1826964a8d62050dacbcf36de62f1201e16d33fd7f522f858e8f4478805bc5",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-journal-independent-review.json",
+              "sha256": "c54fa8e316e4704208069d149c22e65d242845edbdcdddc84e59b7cd5775fc63",
+              "verdict": "PASS"
+            }
+          ]
+        },
+        {
+          "audit": {
+            "path": "/home/dbsanfte/riemann/formal/docs/semiprime-charged-acquisition-obstruction-audit.json",
+            "sha256": "3b6b3eaf2624314471b8f9aa7a2d47a842edce876f25153a7ebc984b59ce5164"
+          },
+          "PASS_review_count": 10,
+          "review_pins": [
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/charge-catalog-independent-review.json",
+              "sha256": "03578f1d8bfea69b8ab3cc8f1d0235833e8a9671681a19b7f738cf7048d6120f",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/integrated-charged-native-independent-review.json",
+              "sha256": "ad8adfaea1fe1ad9f85623c5044120ab26f7b39c25e3df4b7aca9129dd4766b5",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/charged-skipped-ray-independent-review.json",
+              "sha256": "67410c99d4466c7c7eb5ee18e2523b38c22105b81691b74eeb6478dfa821f055",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/adjacent-frame-independent-review.json",
+              "sha256": "2e76b27dd00ad7ffb49ac880c7d6bbc868b7006a7de9ad3eba5dd7e8febcbd5f",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/long-frame-charge-independent-review.json",
+              "sha256": "e3c99608be96b4667c53dd49a88d9417f67d16479b0592998e81738d16f530b3",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/long-frame-charge-gauss-review.json",
+              "sha256": "1e835c650fa40ae7fd8a209cdb5750be349fb1057077260de43c05a4aee64734",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/half-tag-mask-charge-gauss-review.json",
+              "sha256": "dfab5ec290a5ccd5dfd4a0eb10301268eb180fb52483f2e1208256cd5a2e7ba3",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/recurrence-degree-independent-review.json",
+              "sha256": "dae094ad027ebc9b8d9b04cfb44e22ef996efc9f92dd88cf5109ec3a51633417",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/journal-independent-review.json",
+              "sha256": "73b9d9af0a0189f52957d53bf6b74d27cbde05102a94dcd2f3c8eddeba40d8cc",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-long-norm-frontier-20261008/journal-native-scope-review.json",
+              "sha256": "d130e0037950c393cc1e38db6521508a861520889d7a67af1dc0a8f5811e3d3a",
+              "verdict": "PASS"
+            }
+          ]
+        },
+        {
+          "audit": {
+            "path": "/home/dbsanfte/riemann/formal/docs/semiprime-full-euclid-acquisition-obstruction-audit.json",
+            "sha256": "bf6893219305096e499650f82c52a5141ee697b93fe62d3adfbda1c5e997b96c"
+          },
+          "PASS_review_count": 7,
+          "review_pins": [
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/universal-catalog-independent-review.json",
+              "sha256": "759f19cd3d5e734adac56a8cb8395268496eed012546cf8942d39449595a3f9e",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/integrated-native-independent-review.json",
+              "sha256": "4c275cafee054c600a50dccaef9824a3510c858ae7c0f20a00d070fec5c9e694",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-independent-review.json",
+              "sha256": "d241ae84c9643eab16edcca3f15483670e8d13ba8a7e9ee1086a57ce484395b7",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/implicit-carry-v4-independent-review.json",
+              "sha256": "bfffc6a8379b7e87ff61edad980c04372bf0aedd61347af9d9ee83141a235bcb",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/implicit-carry-v4-arithmetic-review.json",
+              "sha256": "9fa34c8bd6e31a571ad458f2eda887c81fbd38d2a7b4d2b86fdc53d2300b6829",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/journal-independent-review.json",
+              "sha256": "385bd4879fafa2bc729f3b7e923ae24521f5133933888c0cb024c89c0d37bd20",
+              "verdict": "PASS"
+            },
+            {
+              "path": "/tmp/semiprime-next-covered-acquisition-20261008/journal-native-scope-review.json",
+              "sha256": "ca5a6702e98ba24ec5d97deca10f20abd57b3070b321063b81460af3a5fb0178",
+              "verdict": "PASS"
+            }
+          ]
+        }
+      ],
+      "earlier_PASS_review_count": 27,
+      "three_new_proof_reviews_PASS": true,
+      "total_new_reviews_including_this": 4,
+      "new_lean_or_backend_validation": false,
+      "faithful_carrier_nearlinear_construction": true,
+      "original_long_ANY_scalar_nearlinear_acquisition": false,
+      "arbitrary_scalar_lower_bound": false,
+      "full_goal_complete": false,
+      "repository_and_author_bytes_unchanged_by_reviewer": true,
+      "scope_verdict": "PASS for the final integration of near-linear faithful ANY carrier construction with its unpaid long scalar, actual-family cyclic linear and bounded-degree repair failure, abstract base-squaring invariant-algebra acquisition obstruction, and paid fixed-catalog three-term arithmetic failure. The joint original-supply loss remains soft O(M^5.994). Complete-axis, local-degeneracy, numerical q updates, fixed-library, prime-menu clock and implicit-method boundaries are preserved. Guaranteed sixth-rate factorization remains open.",
+      "overall_verdict": "PASS"
+    }
+  },
+  "independent_review_paths": {
+    "cyclotomic-any-zero-independent-review.json": "/tmp/semiprime-any-zero-frontier-20261008/review/cyclotomic-any-zero-independent-review.json",
+    "base-squaring-quotient-independent-review.json": "/tmp/semiprime-any-zero-frontier-20261008/escape/base-squaring-quotient-independent-review.json",
+    "three-term-projected-sum-independent-review.json": "/tmp/semiprime-any-zero-frontier-20261008/escape/three-term-projected-sum-independent-review.json",
+    "journal-independent-review.json": "/tmp/semiprime-any-zero-frontier-20261008/review/journal-independent-review.json"
+  },
+  "parent_independent_reviews_rechecked": 4,
+  "ancestor_independent_reviews_rechecked": 23,
+  "literature_assessment": "Preserves the prior targeted OpenAI/math catalogue assessment. Fresh primary statements inspected for Harvey--van der Hoeven unconditional integer multiplication, Kedlaya--Umans modular composition, and Kelley--Owen subgroup trinomial root bounds; none supplies a near-linear long ANY scalar evaluator here. The Sidon bound has a self-contained proof. No new OpenAI/math, QRH, GRH or prime-density hypothesis.",
+  "historical_carry_review_correction": {
+    "old_report_and_old_unqualified_PASS_bytes_preserved": true,
+    "old_PASS_is_current_authority": false,
+    "origin_addendum_verdict": "CORRECTION REQUIRED",
+    "origin_error_resolved_by_final_v4_and_two_independent_PASS_reviews": true,
+    "v2_v3_v4_and_all_prior_reviews_retained": true
+  },
+  "new_factorization_examples_or_backend_runs": false,
+  "arbitrary_scalar_lower_bound": false,
+  "whole_family_nearlinear_factorization_acquisition_proved": false,
+  "full_guaranteed_one_sixth_factorization_proved": false,
+  "full_bit_time_or_peak_working_memory_proof_added": false,
+  "D11_centered_prime_covariance_resolved": false,
+  "goal_remains_active": true,
+  "next_arithmetic_frontier": "A paid implicit evaluator for the source-specific long ANY product or a different N-only observation with both whole-family acquisition and proved arithmetic coverage. Actual bounded-prefix target intersections, variable-origin queries, ordinary numerical q-recursions and moving/implicit carriers remain open. Proper recovery, prime squares/nonunits/saturation, routing/controller, full bit time and peak memory still require proof."
+}

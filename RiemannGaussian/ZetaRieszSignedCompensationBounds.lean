@@ -298,7 +298,8 @@ theorem re_atom_ge_signed_compensation {P r a b : ℕ}
       (SquarefreeVaughanLogSource.coefficient L (P*(r*(a*b)))*z).re := by
   have h := coefficient_le_gap_sub_prime_tents hP hr ha hs hL hsat hpairs
   rw [Complex.mul_re,ZetaRieszCosineCarrier.coefficient_im_eq_zero,zero_mul,sub_zero]
-  convert mul_le_mul_of_nonpos_right h hz using 1 <;> first | rfl | ring
+  convert mul_le_mul_of_nonpos_right h hz using 1
+  first | rfl | ring
 
 /-- The signed compensation inequality summed on any literal finite
 label mask. Each label keeps its complete complex observation and

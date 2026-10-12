@@ -107,15 +107,15 @@ proper prime powers, whose convergence threshold is one half. -/
 theorem zetaPrimeDiagonalCoefficient_le (n : ℕ) :
     zetaPrimeDiagonalCoefficient n ≤ Real.log n * zetaProperPrimePowerCoefficient n := by
   by_cases hn : IsPrimePow n
-  · rw [zetaPrimeDiagonalCoefficient, if_pos hn]
+  · rw [zetaPrimeDiagonalCoefficient, ite_eq_left hn]
     by_cases hnp : n.Prime
     · rw [zetaPrimePairArithmetic_prime hnp]
       exact mul_nonneg (Real.log_natCast_nonneg n) (zetaProperPrimePowerCoefficient_nonneg n)
     obtain ⟨p, k, hp, hk, rfl⟩ := (isPrimePow_nat_iff n).mp hn
-    rw [zetaProperPrimePowerCoefficient, if_neg hnp, ArithmeticFunction.vonMangoldt_apply_pow hk.ne',
+    rw [zetaProperPrimePowerCoefficient, ite_eq_right hnp, ArithmeticFunction.vonMangoldt_apply_pow hk.ne',
       ArithmeticFunction.vonMangoldt_apply_prime hp]
     exact prime_pair_prime_pow_le hp
-  · rw [zetaPrimeDiagonalCoefficient, if_neg hn]
+  · rw [zetaPrimeDiagonalCoefficient, ite_eq_right hn]
     exact mul_nonneg (Real.log_natCast_nonneg n) (zetaProperPrimePowerCoefficient_nonneg n)
 
 /-- The single-prime pair series converges absolutely throughout

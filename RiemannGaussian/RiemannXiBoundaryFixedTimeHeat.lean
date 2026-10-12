@@ -259,9 +259,9 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_nonneg
     (x tau : ℝ) (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperHyperbolicBoundaryHeatSummand x tau rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
+  · rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
     positivity
-  · rw [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
 
 /-- At positive proper time the boundary heat density is bounded by
 `tau⁻¹` times the already summable boundary Poisson density. -/
@@ -292,8 +292,8 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_le_inv_mul_density
       have hscaled := mul_le_mul_of_nonneg_left hgauss
         (show 0 ≤ 2 * alpha.im by positivity)
       nlinarith
-    rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+    rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     change (analyticZetaZeroMultiplicity rho : ℝ) *
         (2 * alpha.im * Real.exp (-(D * tau))) ≤
       tau⁻¹ * ((analyticZetaZeroMultiplicity rho : ℝ) *
@@ -303,8 +303,8 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_le_inv_mul_density
           (tau⁻¹ * (2 * alpha.im / D)) :=
         mul_le_mul_of_nonneg_left hkernel (Nat.cast_nonneg _)
       _ = _ := by ring
-  · rw [zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
     positivity
 
 /-- Every positive-time boundary heat series is absolutely summable. -/
@@ -377,8 +377,8 @@ theorem zetaUpperHyperbolicHeatSummand_boundaryQuotient_le_density
   · have hkernel :=
       upperHalfPlaneHyperbolicHeatIntegrand_boundaryQuotient_le_density
         hdelta (hgap rho hupper) hy hySmall hupper htau
-    rw [zetaUpperHyperbolicHeatSummand, if_pos hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_pos hupper]
+    rw [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_left hupper]
     calc
       (analyticZetaZeroMultiplicity rho : ℝ) *
             upperHalfPlaneHyperbolicHeatIntegrand
@@ -399,8 +399,8 @@ theorem zetaUpperHyperbolicHeatSummand_boundaryQuotient_le_density
             (2 * (zetaSpectralCoordinate rho.1).im /
               Complex.normSq
                 ((x : ℂ) - zetaSpectralCoordinate rho.1))) := by ring
-  · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper,
-      zetaUpperBlaschkeBoundaryDensitySummand, if_neg hupper]
+  · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper,
+      zetaUpperBlaschkeBoundaryDensitySummand, ite_eq_right hupper]
     norm_num
 
 /-- Each normalized spectral heat term converges to its fixed-time boundary
@@ -417,11 +417,11 @@ theorem tendsto_zetaUpperHyperbolicHeatSummand_boundaryQuotient
   · have hlimit :=
       tendsto_upperHalfPlaneHyperbolicHeatIntegrand_boundaryQuotient
         x (zetaSpectralCoordinate rho.1) htau
-    rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
-    simpa only [zetaUpperHyperbolicHeatSummand, if_pos hupper,
+    rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
+    simpa only [zetaUpperHyperbolicHeatSummand, ite_eq_left hupper,
       mul_div_assoc] using
         hlimit.const_mul (analyticZetaZeroMultiplicity rho : ℝ)
-  · simp only [zetaUpperHyperbolicHeatSummand, if_neg hupper,
+  · simp only [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper,
       zetaUpperHyperbolicBoundaryHeatSummand, zero_div]
     exact tendsto_const_nhds
 
@@ -490,7 +490,7 @@ theorem zetaUpperHyperbolicBoundaryHeatSummand_pos
     (rho : NontrivialZetaZero)
     (hupper : 0 < (zetaSpectralCoordinate rho.1).im) :
     0 < zetaUpperHyperbolicBoundaryHeatSummand x tau rho := by
-  rw [zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper]
+  rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper]
   exact mul_pos
     (by exact_mod_cast analyticZetaZeroMultiplicity_positive rho)
     (mul_pos (by positivity) (Real.exp_pos _))
@@ -533,7 +533,7 @@ theorem riemannXiUpperHyperbolicBoundaryHeatTotal_eq_zero_iff_rh
       have him : (zetaSpectralCoordinate rho.1).im = 0 :=
         (riemannHypothesis_iff_spectralCoordinate_real.mp hRH)
           rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
-      rw [zetaUpperHyperbolicBoundaryHeatSummand, if_neg]
+      rw [zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right]
       linarith
     rw [hzero, tsum_zero]
 

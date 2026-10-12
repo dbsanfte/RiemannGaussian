@@ -227,7 +227,7 @@ theorem selectedDefect_rate {k j : ℕ} (hk : 1000 ≤ k)
       d * (1 - (2 - d) / (2 - d ^ 2) *
         (2 / k - 32 / (21 * (k : ℝ) ^ 2) - 16 / (7 * d * (k : ℝ) ^ 3))) := by
   have hcontinue : (k : ℝ) - 1 < selectedDefect k j := by linarith
-  simpa only [selectedDefect, if_pos hcontinue] using
+  simpa only [selectedDefect, ite_eq_left hcontinue] using
     normalized_defect_rate hk hactive.le (selectedDefect_bounds (by omega) j).2
 
 end

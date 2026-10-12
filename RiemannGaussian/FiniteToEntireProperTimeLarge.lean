@@ -140,15 +140,15 @@ theorem tendsto_riemannXiUpperHyperbolicHeatSum_atTop_zero_of_ne_zero
         (upperHalfPlaneHyperbolicHeatIntegrand_pos
           hz hupper htauPos).le
       rw [zetaUpperHyperbolicHeatSummand,
-        if_pos hupper, Real.norm_eq_abs,
+        ite_eq_left hupper, Real.norm_eq_abs,
         abs_of_nonneg (mul_nonneg (Nat.cast_nonneg _) hheatNonneg),
-        zetaUpperHyperbolicHeatSummand, if_pos hupper]
+        zetaUpperHyperbolicHeatSummand, ite_eq_left hupper]
       exact mul_le_mul_of_nonneg_left
         (upperHalfPlaneHyperbolicHeatIntegrand_le_of_time_le
           hz hupper zero_lt_one htau)
         (Nat.cast_nonneg _)
-    · rw [zetaUpperHyperbolicHeatSummand, if_neg hupper,
-        zetaUpperHyperbolicHeatSummand, if_neg hupper]
+    · rw [zetaUpperHyperbolicHeatSummand, ite_eq_right hupper,
+        zetaUpperHyperbolicHeatSummand, ite_eq_right hupper]
       simp
   have hlimit := tendsto_tsum_of_dominated_convergence
     hboundSummable hterm hbound

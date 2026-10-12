@@ -98,7 +98,7 @@ theorem hasSum_prime_log_product {s : ℂ} (hs : 1 < s.re) (N : ℕ)
   apply h.congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, logKernel_product N s ha hp.pos, Finset.mul_sum]
+  · simp only [ite_eq_left hp, logKernel_product N s ha hp.pos, Finset.mul_sum]
     exact Finset.sum_congr rfl (fun k _ => by ring)
   · simp [hp]
 
@@ -157,7 +157,7 @@ theorem hasSum_unlogged_prime_product {s : ℂ} (hs : 1 < s.re) (N : ℕ)
   apply h.congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, logKernel_product N s ha hp.pos, Finset.mul_sum]
+  · simp only [ite_eq_left hp, logKernel_product N s ha hp.pos, Finset.mul_sum]
   · simp [hp]
 
 /-- At an exposed zero, completing an unlogged prime factor costs only the
@@ -220,7 +220,7 @@ theorem hasSum_completedPrimeProductMoment {s : ℂ} (hs : 1 < s.re)
   apply h.congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, Nat.cast_mul, Real.log_mul (by positivity : (a : ℝ) ≠ 0)
+  · simp only [ite_eq_left hp, Nat.cast_mul, Real.log_mul (by positivity : (a : ℝ) ≠ 0)
       (show (p : ℝ) ≠ 0 by exact_mod_cast hp.ne_zero), Complex.ofReal_add, ArithmeticFunction.vonMangoldt_apply_prime hp]
     ring
   · simp [hp]
@@ -358,7 +358,7 @@ theorem hasSum_completedPrimeProductFilter {s : ℂ} (hs : 1 < s.re)
   apply h.congr_fun
   intro p
   by_cases hp : p.Prime
-  · simp only [if_pos hp, zetaPrimeFilterKernel_nat, Finset.mul_sum, zetaPrimeLogKernel]
+  · simp only [ite_eq_left hp, zetaPrimeFilterKernel_nat, Finset.mul_sum, zetaPrimeLogKernel]
     exact Finset.sum_congr rfl (fun k _ => by ring)
   · simp [hp]
 

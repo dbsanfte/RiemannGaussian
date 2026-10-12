@@ -113,15 +113,15 @@ theorem sum_transportStep (S : Finset ℕ) (f : ℕ → ℂ) {e : ℕ × ℕ}
       (if n = e.2 then m • ray (f e.2) else 0) := by
     by_cases hn : n = e.1
     · subst n
-      simp only [transportStep, ite_true, if_neg hne, add_zero]
+      simp only [transportStep, ite_true, ite_eq_right hne, add_zero]
       exact (add_comm _ _).trans (sent_add_remainder m (f e.1)) |>.symm
     · by_cases hn' : n = e.2
       · subst n
-        simp only [transportStep, if_neg hn, ite_true, add_zero]
+        simp only [transportStep, ite_eq_right hn, ite_true, add_zero]
         exact (add_comm _ _).trans (sent_add_remainder m (f e.2)) |>.symm
       · simp [transportStep, hn, hn']
   have hs := Finset.sum_congr (s₁ := S) rfl (fun n _ => he n)
-  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', if_pos hi, if_pos hj] at hs
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', ite_eq_left hi, ite_eq_left hj] at hs
   rw [smul_add]
   dsimp [m] at hs
   simp only [Complex.real_smul]
@@ -138,19 +138,19 @@ theorem mass_transportStep (S : Finset ℕ) (f : ℕ → ℂ) {e : ℕ × ℕ}
       (if n = e.1 then m else 0) + (if n = e.2 then m else 0) := by
     by_cases hn : n = e.1
     · subst n
-      simp only [transportStep, ite_true, if_neg hne, add_zero]
+      simp only [transportStep, ite_true, ite_eq_right hne, add_zero]
       rw [norm_remainder hm (min_le_left _ _)]
       dsimp [m]
       ring
     · by_cases hn' : n = e.2
       · subst n
-        simp only [transportStep, if_neg hn, ite_true, add_zero]
+        simp only [transportStep, ite_eq_right hn, ite_true, add_zero]
         rw [norm_remainder hm (min_le_right _ _)]
         dsimp [m]
         ring
       · simp [transportStep, hn, hn']
   have hs := Finset.sum_congr (s₁ := S) rfl (fun n _ => he n)
-  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', if_pos hi, if_pos hj] at hs
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', ite_eq_left hi, ite_eq_left hj] at hs
   dsimp [m] at hs
   linarith
 

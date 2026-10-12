@@ -178,7 +178,7 @@ theorem norm_bandMoebius_le_one (W L n : ℕ) : ‖bandMoebius W L n‖ ≤ 1 :=
 /-- The whole outer interval is supported above its lower endpoint. -/
 theorem bandMoebius_apply_of_le (W L n : ℕ) (hn : n ≤ W) : bandMoebius W L n = 0 := by
   change (if W < n ∧ n ≤ L then (μ n : ℂ) else 0) = 0
-  rw [if_neg (by omega)]
+  rw [ite_eq_right (by omega)]
 
 /-- The finite outer coefficient evaluation is exactly the original selected gamma sum. -/
 theorem hasSum_band_gamma (rho : NontrivialZetaZero) (A : ℝ) (W L : ℕ) :
@@ -189,7 +189,7 @@ theorem hasSum_band_gamma (rho : NontrivialZetaZero) (A : ℝ) (W L : ℕ) :
     intro n hn
     have hh : ¬ (W < n + 1 ∧ n + 1 ≤ L) := by simp only [Finset.mem_Ico] at hn; omega
     change (if W < n + 1 ∧ n + 1 ≤ L then (μ (n + 1) : ℂ) else 0) * _ = 0
-    rw [if_neg hh, zero_mul]
+    rw [ite_eq_right hh, zero_mul]
   have hs : HasSum (fun n : ℕ ↦ bandMoebius W L (n + 1) * gammaCarrier rho A (n + 1))
       (∑ n ∈ Finset.Ico W L, bandMoebius W L (n + 1) * gammaCarrier rho A (n + 1)) :=
     hasSum_sum_of_ne_finset_zero hf
@@ -208,7 +208,7 @@ theorem hasSum_band_gamma (rho : NontrivialZetaZero) (A : ℝ) (W L : ℕ) :
   · intro n hn
     have hh : W < n + 1 ∧ n + 1 ≤ L := by have := Finset.mem_Ico.mp hn; omega
     change (if W < n + 1 ∧ n + 1 ≤ L then (μ (n + 1) : ℂ) else 0) * _ = _
-    rw [if_pos hh]
+    rw [ite_eq_left hh]
     simp only [gammaCarrier, gammaMoebiusTerm, mul_assoc]
 
 /-- Completing the inner Möbius sum gives the exact original outer coefficients minus the complementary cofactor. -/
@@ -404,10 +404,10 @@ theorem bandMoebius_eq_sub_short {W L : ℕ} (hWL : W ≤ L) :
   change (if W < n ∧ n ≤ L then (μ n : ℂ) else 0) =
     (if n ≤ L then (μ n : ℂ) else 0) - (if n ≤ W then (μ n : ℂ) else 0)
   by_cases hnW : n ≤ W
-  · rw [if_neg (by omega), if_pos (hnW.trans hWL), if_pos hnW, sub_self]
+  · rw [ite_eq_right (by omega), ite_eq_left (hnW.trans hWL), ite_eq_left hnW, sub_self]
   · by_cases hnL : n ≤ L
-    · rw [if_pos ⟨by omega, hnL⟩, if_pos hnL, if_neg hnW, sub_zero]
-    · rw [if_neg (by omega), if_neg hnL, if_neg hnW, sub_self]
+    · rw [ite_eq_left ⟨by omega, hnL⟩, ite_eq_left hnL, ite_eq_right hnW, sub_zero]
+    · rw [ite_eq_right (by omega), ite_eq_right hnL, ite_eq_right hnW, sub_self]
 
 /-- Removing the bounded outer strip leaves exactly the shorter rectangle, with every cross term retained. -/
 theorem smoothRectangle_sub_eq_foldedOuterBand (rho : NontrivialZetaZero)

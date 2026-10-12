@@ -79,14 +79,14 @@ theorem sqrtStep_invariant (low high : Bool) (child : BitSqrtReport)
         2*bitValue (sqrtStep low high child).root := by
   have hcompare := subBits_borrow_iff (low::high::child.remainder)
     (true::false::child.root) false
-  simp only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,
+  simp only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,
     Nat.add_zero,Nat.zero_add] at hcompare
   have hdigit := digitPair_bound low high
   simp only [bitNat] at hdigit
   by_cases hb : (subBits (low::high::child.remainder)
       (true::false::child.root) false).borrow=true
   · have hless := hcompare.mp hb
-    simp only [sqrtStep,if_pos hb,bitValue,bitNat,Bool.false_eq_true,if_false,Nat.zero_add]
+    simp only [sqrtStep,ite_eq_left hb,bitValue,bitNat,Bool.false_eq_true,ite_false,Nat.zero_add]
     constructor <;> nlinarith
   · have hfalse : (subBits (low::high::child.remainder)
         (true::false::child.root) false).borrow=false := by
@@ -96,14 +96,14 @@ theorem sqrtStep_invariant (low high : Bool) (child : BitSqrtReport)
       | true => exact False.elim (hb he)
     have hge : bitValue (true::false::child.root)≤bitValue (low::high::child.remainder) := by
       by_contra hn
-      exact hb (hcompare.mpr (by simpa only [bitValue,bitNat,if_true,Bool.false_eq_true,
-        if_false,Nat.add_zero,Nat.zero_add] using (show
+      exact hb (hcompare.mpr (by simpa only [bitValue,bitNat,ite_true,Bool.false_eq_true,
+        ite_false,Nat.add_zero,Nat.zero_add] using (show
           bitValue (low::high::child.remainder)<bitValue (true::false::child.root) by omega)))
     have hdiff := subBits_difference hfalse
     have he := Nat.sub_add_cancel hge
-    simp only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,
+    simp only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,
       Nat.zero_add] at hdiff he
-    simp only [sqrtStep,if_neg hb,bitValue,bitNat,if_true]
+    simp only [sqrtStep,ite_eq_right hb,bitValue,bitNat,ite_true]
     constructor <;> nlinarith
 
 /-- The complete actual Boolean run computes the original input's square
@@ -262,7 +262,7 @@ including unequal widths and arbitrary high zero padding. -/
 theorem subBits_borrow_false (left right : List Bool) :
     (subBits left right false).borrow=false ↔ bitValue right≤bitValue left := by
   have h := subBits_borrow_iff left right false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at h
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at h
   constructor
   · intro hb
     by_contra! hless
@@ -372,7 +372,7 @@ theorem checkRootWords_condition (bound a b delta root : List Bool) :
     have hge := (subBits_borrow_false a root).mp hb
     simp only [checkRootWords,Bool.and_eq_true,Bool.not_eq_true_eq_eq_false,
       hb,orderWords_equal,cutLowBit_even,cutLowBit_value,subBits_borrow_iff,
-      addBits_correct,mulBits_correct,hd,bitNat,Bool.false_eq_true,if_false,
+      addBits_correct,mulBits_correct,hd,bitNat,Bool.false_eq_true,ite_false,
       Nat.add_zero,originalRootCondition,pow_two,hge,true_and]
     simp only [and_true,and_assoc]
   · have hge : ¬bitValue root≤bitValue a := by
@@ -397,15 +397,15 @@ theorem checkRootWords_roots (bound a b delta root : List Bool) :
     change (if (checkRootWords bound a b delta root).accepted=true then
       some ((checkRootWords bound a b delta root).high,
         (checkRootWords bound a b delta root).low) else none).map _=_
-    rw [if_pos h,if_pos hp]
+    rw [ite_eq_left h,ite_eq_left hp]
     simp only [Option.map_some,checkRootWords,
-      cutLowBit_value,addBits_correct,hd,bitNat,Bool.false_eq_true,if_false,Nat.add_zero]
+      cutLowBit_value,addBits_correct,hd,bitNat,Bool.false_eq_true,ite_false,Nat.add_zero]
   · have hp : ¬originalRootCondition (bitValue bound) (bitValue a) (bitValue b)
         (bitValue delta) (bitValue root) := fun hh => h (hc.mpr hh)
     change (if (checkRootWords bound a b delta root).accepted=true then
       some ((cutLowBit (addBits a root false).bits).rest,
         (cutLowBit (subBits a root false).result.bits).rest) else none).map _=_
-    rw [if_neg h,if_neg hp,Option.map_none]
+    rw [ite_eq_right h,ite_eq_right hp,Option.map_none]
 
 /-- Original coefficient words, actual optional restoring run and checked
 root pair, with all scalar execution and bit-list allocations charged. -/
@@ -461,13 +461,13 @@ theorem readIntegerRootsBits_exact (bound a b : List Bool) :
       (readIntegerRoots (bitValue bound) ((bitValue a : ℤ),(bitValue b : ℤ))).roots := by
   have hsign : 0≤(bitValue a : ℤ) ∧ 0≤(bitValue b : ℤ) := ⟨by positivity,by positivity⟩
   have hc := subBits_borrow_iff (mulBits a a).bits (false::false::b) false
-  simp only [mulBits_correct,bitValue,bitNat,Bool.false_eq_true,if_false,
+  simp only [mulBits_correct,bitValue,bitNat,Bool.false_eq_true,ite_false,
     Nat.zero_add,Nat.add_zero,←pow_two] at hc
   by_cases hb : (subBits (mulBits a a).bits (false::false::b) false).borrow=true
   · have hsmall := hc.mp hb
     have hbad : ¬4*bitValue b≤(bitValue a)^2 := by omega
-    simp only [readIntegerRootsBits,if_pos hb,Option.map_none,readIntegerRoots,
-      if_pos hsign,Int.toNat_natCast,if_neg hbad]
+    simp only [readIntegerRootsBits,ite_eq_left hb,Option.map_none,readIntegerRoots,
+      ite_eq_left hsign,Int.toNat_natCast,ite_eq_right hbad]
   · have hfalse : (subBits (mulBits a a).bits (false::false::b) false).borrow=false := by
       cases he : (subBits (mulBits a a).bits (false::false::b) false).borrow with
       | false => rfl
@@ -476,14 +476,14 @@ theorem readIntegerRootsBits_exact (bound a b : List Bool) :
       by_contra hn
       exact hb (hc.mpr (by omega))
     have hd := subBits_difference hfalse
-    simp only [mulBits_correct,bitValue,bitNat,Bool.false_eq_true,if_false,
+    simp only [mulBits_correct,bitValue,bitNat,Bool.false_eq_true,ite_false,
       Nat.zero_add,←pow_two] at hd
     have hfour : 2*(2*bitValue b)=4*bitValue b := by omega
     rw [hfour] at hd
     have hr := sqrtBits_correct (subBits (mulBits a a).bits (false::false::b) false).result.bits
     rw [hd] at hr
-    simp only [readIntegerRootsBits,if_neg hb,checkRootWords_roots,hd,hr,
-      readIntegerRoots,if_pos hsign,Int.toNat_natCast,if_pos hge,countedSqrt_correct,
+    simp only [readIntegerRootsBits,ite_eq_right hb,checkRootWords_roots,hd,hr,
+      readIntegerRoots,ite_eq_left hsign,Int.toNat_natCast,ite_eq_left hge,countedSqrt_correct,
       originalRootCondition]
 
 /-- Every accepted Boolean pair satisfies the original short bounds and

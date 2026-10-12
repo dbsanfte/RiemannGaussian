@@ -223,7 +223,7 @@ theorem chebyshevPsi_div_eq_moebiusFactorialCorrection {N : ℕ} (hN : 1 < N) :
   intro d hd
   have hdR : (0 : ℝ) < d := by exact_mod_cast (Finset.mem_Icc.mp hd).1
   have hlog : Real.log (N : ℝ) ≠ 0 := (Real.log_pos (by exact_mod_cast hN)).ne'
-  simp only [pairedEtaMoebiusTrialLogWeight, if_pos hN, moebiusFactorialRemainder,
+  simp only [pairedEtaMoebiusTrialLogWeight, ite_eq_left hN, moebiusFactorialRemainder,
     Real.log_div hNR.ne' hdR.ne']
   field_simp
   ring

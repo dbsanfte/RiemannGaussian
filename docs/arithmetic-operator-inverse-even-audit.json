@@ -1,0 +1,404 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorInverseEvenAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 36,
+    "theoremsIncludingGeneratedHelpers": 27,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "focusedDependencyCompiled": "RiemannGaussian/ArithmeticOperatorKloostermanPsdAudit.lean",
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "proved every actual unit modulus and complete Fourier identity; inverse-even form is half original inverse pairing plus full unit Gram",
+    "actualOffLineZeroResponse": "proved only for the added diagonal debit at every actual multiplicity; source of COMPLETE projected nonzero-frequency packet remains unproved",
+    "densitySeparation": "s-2 factor regularizes added diagonal density pole without cancelling actual zero source; no source inferred for complete projection",
+    "collapseAudit": "finite positivity holds for ANY involution; arbitrary outer-array bound only if joined kernel zero; dropping analytic/norm debit is not a valid free estimate",
+    "independentSignedEstimate": "none; current unpaid projection-source and coupled signed estimate are kept explicit",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "allActualPositiveModuliAndPrimePowersRetained": true,
+    "unitModulusEndpointRetained": true,
+    "originalFrequencyCoefficientsAndInverseIncidencesRetained": true,
+    "exactLedger": "Q(P_even f) = E(P_even f) = (E(f)+Q(f))/2",
+    "unitGramDiagonal": "phi(q)",
+    "diagonalDebit": "phi(q)*sum_m |alpha(m)|^2/2",
+    "sourceContinuation": "zeta(s-1)/(2*zeta(s))",
+    "EulerDomain": "Re(s)>2 only",
+    "allActualZeroMultiplicitiesDetectedByDebit": true,
+    "densityPoleFactor": "s-2",
+    "analyticRegularizationOfCenteredDebitEquivalentToNonvanishing": true,
+    "fullProjectedPacketActualSourceGateClosed": false,
+    "fullProjectedNonzeroFrequencySourceInferredFromDiagonal": false,
+    "genericInvolutionPSDIsNotArithmeticInput": true,
+    "fullHeightPhaseRetainedInDiagonalEulerAndNormAudit": true,
+    "phasedSumPSDPremiseClaimed": false,
+    "unsmoothedDebitNormPaymentRefuted": "every c<=2/3, fixed height, C and beta<1; not eventual C*N^beta",
+    "signedOrSmoothedPacketsRuledOut": false,
+    "spectrumContinuationImported": false,
+    "controlsGrantedActualUnitGammaMoebiusMangoldtData": false,
+    "noGo": "inverse-even PSD then discard/pole-regularize or globally norm-pay its added primitive Gram diagonal",
+    "remaining": "actual source response of COMPLETE projected nonzero-frequency packet and independent joint signed arithmetic estimate with added Gram retained"
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "exactModuliIncludingProperPowers": 256,
+    "exactRationalProjectionLedgers": 768,
+    "exactCenteredProjectionTests": 256,
+    "nontrivialOddProfilesRemoved": 496,
+    "rationalAmplitudesAreNotActualPrimeHeightPhases": true,
+    "exactCenteredExamples": [
+      {
+        "modulus": 1,
+        "unitCount": 1,
+        "oldInverseQuadratic": [
+          "0",
+          "0"
+        ],
+        "addedGram": [
+          "0",
+          "0"
+        ],
+        "projectedPositive": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "modulus": 2,
+        "unitCount": 1,
+        "oldInverseQuadratic": [
+          "0",
+          "0"
+        ],
+        "addedGram": [
+          "0",
+          "0"
+        ],
+        "projectedPositive": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "modulus": 5,
+        "unitCount": 4,
+        "oldInverseQuadratic": [
+          "1193/2450",
+          "0"
+        ],
+        "addedGram": [
+          "115/98",
+          "0"
+        ],
+        "projectedPositive": [
+          "1017/1225",
+          "0"
+        ]
+      },
+      {
+        "modulus": 8,
+        "unitCount": 4,
+        "oldInverseQuadratic": [
+          "611/980",
+          "0"
+        ],
+        "addedGram": [
+          "611/980",
+          "0"
+        ],
+        "projectedPositive": [
+          "611/980",
+          "0"
+        ]
+      },
+      {
+        "modulus": 9,
+        "unitCount": 6,
+        "oldInverseQuadratic": [
+          "-233/294",
+          "0"
+        ],
+        "addedGram": [
+          "13501/7350",
+          "0"
+        ],
+        "projectedPositive": [
+          "1919/3675",
+          "0"
+        ]
+      },
+      {
+        "modulus": 12,
+        "unitCount": 4,
+        "oldInverseQuadratic": [
+          "3183/2450",
+          "0"
+        ],
+        "addedGram": [
+          "3183/2450",
+          "0"
+        ],
+        "projectedPositive": [
+          "3183/2450",
+          "0"
+        ]
+      },
+      {
+        "modulus": 25,
+        "unitCount": 20,
+        "oldInverseQuadratic": [
+          "697/875",
+          "0"
+        ],
+        "addedGram": [
+          "41889/6125",
+          "0"
+        ],
+        "projectedPositive": [
+          "23384/6125",
+          "0"
+        ]
+      },
+      {
+        "modulus": 27,
+        "unitCount": 18,
+        "oldInverseQuadratic": [
+          "43/630",
+          "0"
+        ],
+        "addedGram": [
+          "123257/22050",
+          "0"
+        ],
+        "projectedPositive": [
+          "62381/22050",
+          "0"
+        ]
+      },
+      {
+        "modulus": 49,
+        "unitCount": 42,
+        "oldInverseQuadratic": [
+          "-14888/3675",
+          "0"
+        ],
+        "addedGram": [
+          "9332/735",
+          "0"
+        ],
+        "projectedPositive": [
+          "15886/3675",
+          "0"
+        ]
+      },
+      {
+        "modulus": 64,
+        "unitCount": 32,
+        "oldInverseQuadratic": [
+          "-38741/9800",
+          "0"
+        ],
+        "addedGram": [
+          "95707/9800",
+          "0"
+        ],
+        "projectedPositive": [
+          "4069/1400",
+          "0"
+        ]
+      }
+    ],
+    "floatingFourierTests": [
+      {
+        "modulus": 1,
+        "maxLedgerError": 0.0,
+        "projectedReal": 6.25
+      },
+      {
+        "modulus": 2,
+        "maxLedgerError": 0.0,
+        "projectedReal": 6.25
+      },
+      {
+        "modulus": 4,
+        "maxLedgerError": 1.7763568394002505e-15,
+        "projectedReal": 12.5
+      },
+      {
+        "modulus": 5,
+        "maxLedgerError": 7.105427357601002e-15,
+        "projectedReal": 19.283813728906054
+      },
+      {
+        "modulus": 8,
+        "maxLedgerError": 3.552713678800501e-15,
+        "projectedReal": 25.000000000000004
+      },
+      {
+        "modulus": 9,
+        "maxLedgerError": 7.699258597052291e-15,
+        "projectedReal": 18.75
+      },
+      {
+        "modulus": 12,
+        "maxLedgerError": 0.0,
+        "projectedReal": 25.0
+      },
+      {
+        "modulus": 25,
+        "maxLedgerError": 1.4210854715202004e-14,
+        "projectedReal": 43.81164177417754
+      },
+      {
+        "modulus": 27,
+        "maxLedgerError": 1.4238583238573986e-14,
+        "projectedReal": 56.250000000000014
+      },
+      {
+        "modulus": 49,
+        "maxLedgerError": 5.684341886080802e-14,
+        "projectedReal": 131.25000000000003
+      },
+      {
+        "modulus": 64,
+        "maxLedgerError": 2.842170943040401e-14,
+        "projectedReal": 100.0
+      },
+      {
+        "modulus": 81,
+        "maxLedgerError": 1.1368683772161603e-13,
+        "projectedReal": 168.75
+      }
+    ],
+    "floatingActualDenominatorHeightTests": [
+      {
+        "height": 54,
+        "density": 0.6079271018540267,
+        "snapshots": [
+          {
+            "cutoff": 512,
+            "norm": 66.62538993611327,
+            "normOverCutoff": 0.13012771471897122
+          },
+          {
+            "cutoff": 2048,
+            "norm": 117.32065717608275,
+            "normOverCutoff": 0.057285477136759154
+          },
+          {
+            "cutoff": 8192,
+            "norm": 147.6813939465234,
+            "normOverCutoff": 0.01802751390948772
+          }
+        ]
+      },
+      {
+        "height": 65,
+        "density": 0.6079271018540267,
+        "snapshots": [
+          {
+            "cutoff": 512,
+            "norm": 95.38157751151047,
+            "normOverCutoff": 0.1862921435771689
+          },
+          {
+            "cutoff": 2048,
+            "norm": 146.81042598590162,
+            "normOverCutoff": 0.07168477831342852
+          },
+          {
+            "cutoff": 8192,
+            "norm": 573.8796992570486,
+            "normOverCutoff": 0.07005367422571394
+          }
+        ]
+      },
+      {
+        "height": 100,
+        "density": 0.6079271018540267,
+        "snapshots": [
+          {
+            "cutoff": 512,
+            "norm": 105.1727150594972,
+            "normOverCutoff": 0.20541545910058046
+          },
+          {
+            "cutoff": 2048,
+            "norm": 102.43234941904007,
+            "normOverCutoff": 0.05001579561476566
+          },
+          {
+            "cutoff": 8192,
+            "norm": 183.2749446810281,
+            "normOverCutoff": 0.022372429770633313
+          }
+        ]
+      }
+    ],
+    "actualZeroSourceOfWholeProjectedPacketEstablished": false,
+    "asymptoticOrRHProofClaimed": false,
+    "scope": "inverse-even projection adds full unit Gram; diagnostic all-modulus ledgers retain diagonal, density and endpoints"
+  },
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-cross-psd-audit.json",
+    "all19PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "bc1e142802ed8d889b2c92c0db76d8a7c7bdbe46c8cfe5e3e95b21fd5f521410",
+        "current": "5567b837a96bd87e979aef40fea2a11320668ff17b649fe54427bb6ba0b4b928"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "f1e73d370b6295eb27d93e6c0e4f2f9e4967eeb00e20292ede7cac4d75791cad",
+        "current": "1fc5c297c21d8b159c736a90a8da8d9ab3f08598b32bca7ff28533f83d989638"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorInverseEvenAudit.lean": "f79c76a4ae515d508251fc9d528f9e6c934a95eb9bed4c21b947843e65fab002",
+    "scripts/probe_arithmetic_operator_inverse_even.py": "1cc0cdda6b483c80229bf00c186f3186ba69069bb2d7bf1de4a2136de3e2e2ee",
+    "RiemannGaussian/ArithmeticOperatorKloostermanPsdAudit.lean": "2b727775521ca009bc392a9c851199cb54ae89a1ae83bf99f16bc5ad0864c3ff",
+    "RiemannGaussian/ArithmeticOperatorOrderedGapAudit.lean": "f8f504f00e61413fe44fef281141cb7caad723cc8b652485574cf65774a9c0a2",
+    "RiemannGaussian/ArithmeticOperatorPrimitiveCountAudit.lean": "43bc8ffbee5dcf269ef77563a98600ab61b303dbb47cb51f86b4eb18b3826df5",
+    "RiemannGaussian/ArithmeticOperatorFareyFourierAudit.lean": "2d8e3545ed4aa3cfd2a81a6824e04f3271403e64252a015b54f504bdf66bbe11",
+    "RiemannGaussian/ArithmeticOperatorGramAudit.lean": "326b31eeb50cde636af9dad3c5d7d23ec9dcac47f0f9953c5e64f443d595191b",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    ".lake/packages/mathlib/Mathlib/Analysis/Fourier/ZMod.lean": "0735a2370e6a0fb62fed50660757914a01400c19b6f66a1d768c71b907d972c9",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/Misc.lean": "9d58d157fb8753fc6142a809cbc1db5e91d7b9ae3efa1f174ccac6d9cdbb6f92",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "5567b837a96bd87e979aef40fea2a11320668ff17b649fe54427bb6ba0b4b928",
+    "docs/arithmetic-operator-research.md": "1fc5c297c21d8b159c736a90a8da8d9ab3f08598b32bca7ff28533f83d989638",
+    ".lake/arithmetic-operator-inverse-even/check.log": "1b5bcf54022ba0fe712acd93e7032a0cc0d4cf9c42cc90308a5f6464f73144d6",
+    ".lake/arithmetic-operator-inverse-even/axioms.json": "df45df8bdf621331bed4959f187233b6e7a4ec77e9252d4b54c224cfcffb6821",
+    ".lake/arithmetic-operator-inverse-even/probe.json": "889a9b6ebd6cabc2c24fd461b80ea1036fd6327018ef8bedd877b0d6a18f5140",
+    ".lake/arithmetic-operator-inverse-even/prior-pin-check-before-doc-update.json": "8bd7081c2a6c5a6ec466e2f3a8689c45edc58500753cf1cb13afed122f5eec66"
+  }
+}

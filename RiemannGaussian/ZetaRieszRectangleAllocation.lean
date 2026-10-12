@@ -155,7 +155,7 @@ theorem boundedShare_mul_rectangleMass (A : Finset ℕ) (N : ℕ) {n : ℕ}
   have hnp : ¬n.Prime := by intro h; rw [h.primeFactors, Finset.card_singleton] at hc; omega
   have hb := (rectangleMass_bounds N hx hx1 hc0 hc1).2
   apply (mul_le_mul_of_nonneg_left hb (boundedShare_bounds A N n).1).trans
-  rw [boundedShare, if_pos ⟨hn, hn1, hnp⟩, share_eq_binomial_sum A N hn hn1,
+  rw [boundedShare, ite_eq_left ⟨hn, hn1, hnp⟩, share_eq_binomial_sum A N hn hn1,
     Finset.sum_mul]
   have hs : (∑ p ∈ n.primeFactors,
       (if p ∈ A ∧ eligibleCofactor p (n / p) then
@@ -172,7 +172,7 @@ theorem boundedShare_mul_rectangleMass (A : Finset ℕ) (N : ℕ) {n : ℕ}
         rw [Nat.cast_div hpd (by exact_mod_cast hpp.ne_zero),
           Real.log_div (by exact_mod_cast hn.ne_zero) (by exact_mod_cast hpp.ne_zero)]
       have hmax : p ≤ largestPrime n := by
-        rw [largestPrime, dif_pos (show n.primeFactors.Nonempty from ⟨p, hp'⟩)]
+        rw [largestPrime, dite_eq_left (show n.primeFactors.Nonempty from ⟨p, hp'⟩)]
         exact Finset.le_max' _ _ hp'
       have hl : Real.log (p : ℝ) ≤ Real.log (largestPrime n) :=
         Real.log_le_log (by exact_mod_cast hpp.pos) (by exact_mod_cast hmax)

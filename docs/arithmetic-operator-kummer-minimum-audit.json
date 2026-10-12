@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorKummerMinimumAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 43,
+    "theoremsIncludingGeneratedHelpers": 35,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "complete actual binomial row GCD one; normalized interior GCD prime-power classification at every integer cutoff",
+    "actualOffLineZeroResponse": "complete endpoint row is identically source-blind; interior log is actual Mangoldt with exact negative multiplicity residue and exposed factorial source",
+    "densitySeparation": "subtract 1/(s-1); actual analytic density germ and unchanged nontrivial-zero residues proved",
+    "collapseAudit": "full scalar/masked/two-row observations equal original Mangoldt tests; complete interior moment coherence IFF original prime-moment coherence; controls not granted literal binomial or Gamma data",
+    "independentSignedEstimate": "none; stop complete-row minimum prototype after its checked source/collapse gates",
+    "endpointTransfer": "no new arithmetic premise discharged; structural actual-zero/multiplicity recovery only"
+  },
+  "scope": {
+    "completeRow": "gcd choose(n,k), 0<=k<=n",
+    "interiorRow": "max(1,gcd choose(n,k), 1<=k<n)",
+    "unitEndpointSourceAnnihilationProved": true,
+    "bothSmallHeadsExplicit": true,
+    "allProperPrimePowersRetained": true,
+    "interiorClassification": "p on n=p^r, r>=1; one otherwise",
+    "classicMathlibGcdTheoremNoveltyClaimed": false,
+    "exactLogCoefficient": "actual Lambda(n)",
+    "movingComplexMasksAndFullHeightRetained": true,
+    "joinedTwoRowMaskPreserved": true,
+    "nonlinearPairSourceInferred": false,
+    "EulerDomain": "Re(s)>1 only",
+    "scalarResponse": "-logDeriv zeta",
+    "densitySubtraction": "1/(s-1)",
+    "allActualMultiplicitiesRetainedByAnalyticResidue": true,
+    "factorialSourceRadius": "0<=u<1 for source equivalence; 0<u<1 for reverse actual-zero recovery",
+    "independentlyPaidLimitError": "existing proper-prime-power geometric theorem only",
+    "endpointDeletionPaid": false,
+    "endpointDeletionNondecayProvedAtExposedZeros": true,
+    "exposureRequiredForReverse": false,
+    "newFloorOrCeilingProved": false,
+    "countermodelsGrantedActualBinomialGammaMangoldtCompatibility": false,
+    "incompleteSplitFamiliesRuledOut": false,
+    "differentPrimeConstraintsRuledOut": false,
+    "noGo": "complete endpoints annihilate source; normalized complete interior minimum is exactly old detector and unit deletion restores full exposed source rather than a paid error",
+    "remaining": "prescribed incomplete split geometry or genuinely new signed/PSD Gamma/common-divisor estimate retaining actual data, with its own source and collapse gate"
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "exactLiteralRows": 513,
+    "exactInteriorGcdClassifications": 513,
+    "exactEndpointRowGcdClassifications": 513,
+    "properPowerRowsRetained": [
+      4,
+      8,
+      9,
+      16,
+      25,
+      27,
+      32,
+      49,
+      64,
+      81,
+      121,
+      125,
+      128,
+      169,
+      243,
+      256,
+      289,
+      343,
+      361,
+      512
+    ],
+    "symbolicMaskedLogLedgers": 24,
+    "symbolicJoinedTwoRowLedgers": 3,
+    "rationalMasksAreNotActualHeightPhases": true,
+    "floatingActualHeightRegressions": [
+      {
+        "height": 54,
+        "order": 0,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.3651343630047608,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 54,
+        "order": 1,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.5004388141787124,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 54,
+        "order": 4,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.3295084881124265,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 54,
+        "order": 8,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.2377854981345639,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 65,
+        "order": 0,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.43600229350615066,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 65,
+        "order": 1,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.6977600987463394,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 65,
+        "order": 4,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.781136765080706,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 65,
+        "order": 8,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.2231713207676145,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 100,
+        "order": 0,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.27433342605041755,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 100,
+        "order": 1,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.45315425253052904,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 100,
+        "order": 4,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.18424983824538516,
+        "completeEndpointMoment": 0
+      },
+      {
+        "height": 100,
+        "order": 8,
+        "finiteMomentError": 0.0,
+        "interiorMomentNorm": 0.2149119061808025,
+        "completeEndpointMoment": 0
+      }
+    ],
+    "countermodelsGrantedActualBinomialGcdData": false,
+    "newAsymptoticZeroOrRHClaimed": false,
+    "scope": "full literal GCD with endpoints is one; interior GCD logarithm is exactly actual Mangoldt, including all proper powers"
+  },
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-inverse-even-audit.json",
+    "all17PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "5567b837a96bd87e979aef40fea2a11320668ff17b649fe54427bb6ba0b4b928",
+        "current": "00e1748ecfe64cfe569c095e2c8140f9e07f3cf92700f116715efa0722a92d73"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "1fc5c297c21d8b159c736a90a8da8d9ab3f08598b32bca7ff28533f83d989638",
+        "current": "8de5f08cdb869c5a12e9f89169c3e4891a08bdab62339fef2598825f12beae96"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorKummerMinimumAudit.lean": "a4d63cbdb2e6ecfd88b3095d270cac274e0a7073940411222edfee819387ac65",
+    "scripts/probe_arithmetic_operator_kummer_minimum.py": "fb4727f0d9b778a0000982bb349bc1be7d38eb98360d1ff2087ed95ba92dbe82",
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+    "RiemannGaussian/ZetaPrimeLogMoments.lean": "b5591348519602d11221d4d27fd043bd04c8b439d37f3bfc8498ea7245546887",
+    "RiemannGaussian/ZetaPrimePowerMoments.lean": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9",
+    "RiemannGaussian/ZetaPrimeMomentEnvelope.lean": "fa365028df97a9587baad8cafd84f787df047d9330ff4e9b183b1a475a7fe07e",
+    "RiemannGaussian/ZetaSignedPoleControl.lean": "9bc3c95456be9e771c2c0fa666556ed4c645117dab08a265c72e9bd28ff7f61b",
+    "RiemannGaussian/ArithmeticOperatorGramAudit.lean": "326b31eeb50cde636af9dad3c5d7d23ec9dcac47f0f9953c5e64f443d595191b",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/GaussianXiDivisorContour.lean": "3dc82129edc711d62f6528d2d5032d1c49440b9da0c43df308c651a61a93b4f6",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean": "0eaa8af946dc26bf04adb966c84e808318e7ec61d050a8ce7c981d480e0c2ea1",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "00e1748ecfe64cfe569c095e2c8140f9e07f3cf92700f116715efa0722a92d73",
+    "docs/arithmetic-operator-research.md": "8de5f08cdb869c5a12e9f89169c3e4891a08bdab62339fef2598825f12beae96",
+    ".lake/arithmetic-operator-kummer-minimum/check.log": "1cdd9ea48ec0e1490deab397518eebe9d7bf9726130be3c9e81fc007676fb79e",
+    ".lake/arithmetic-operator-kummer-minimum/axioms.json": "a1234092bee048dac4448b117e79858803858992fbde307d9d4e751e0e1a4666",
+    ".lake/arithmetic-operator-kummer-minimum/probe.json": "e1d94097a6aeed3688c75f33fe85d3f6966cfe296e76c5a2ec8534e9d5877dce",
+    ".lake/arithmetic-operator-kummer-minimum/prior-pin-check-before-doc-update.json": "483b823787a119ba407a5aa4e8d67fb3d885ab9e8817ce7ff5b639a0aee472de"
+  }
+}

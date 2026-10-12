@@ -75,7 +75,7 @@ theorem eventually_paired_above_mem_annulus {u : ℝ} (hu : 1 / 2 ≤ u)
     · exact hnarrow
   apply (ZetaRieszPhysicalAnnulus.mem_annulusBand huh).mpr
   refine ⟨?_, hnX, hnXX⟩
-  rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, if_pos huh]
+  rw [ZetaRieszLowerDegreeDeletion.degreeResidualBand, ite_eq_left huh]
   exact Finset.mem_filter.mpr ⟨hfour, by simp [hext]⟩
 
 /-- The original all-subcutoff carrier with just the selected distinct-prime

@@ -31,7 +31,7 @@ theorem weighted_triple_eq (s : ℂ) (r q p : ℕ) :
   by_cases hpq : p<q ∧ q<r
   · by_cases hp : p.Prime <;> by_cases hq : q.Prime <;> by_cases hr : r.Prime
     all_goals simp only [tripleWeight, tripleLabel, primeAtom, hpq, hp, hq, hr,
-      and_self, and_true, and_false, if_true, if_false, zero_mul, mul_zero, one_mul]
+      and_self, and_true, and_false, ite_true, ite_false, zero_mul, mul_zero, one_mul]
     rw [CoprimeEulerPhase.feature_mul s hp.pos (Nat.mul_pos hq.pos hr.pos),
       CoprimeEulerPhase.feature_mul s hq.pos hr.pos]
     ring
@@ -66,13 +66,13 @@ theorem threeSeries_eq_moment_zero {s : ℂ} (hs : 1 < s.re) :
     · rw [Finset.sum_mul]
       apply Finset.sum_congr rfl
       intro p hp
-      rw [weighted_triple_eq, if_pos ⟨Finset.mem_range.mp hp,Finset.mem_range.mp hq⟩]
+      rw [weighted_triple_eq, ite_eq_left ⟨Finset.mem_range.mp hp,Finset.mem_range.mp hq⟩]
       ring
     · intro p hp
-      rw [weighted_triple_eq, if_neg (fun h => hp (Finset.mem_range.mpr h.1))]
+      rw [weighted_triple_eq, ite_eq_right (fun h => hp (Finset.mem_range.mpr h.1))]
   · intro q hq
     have hz (p : ℕ) : tripleWeight (r,q,p)*zetaPrimeFeature s (tripleLabel (r,q,p)) = 0 := by
-      rw [weighted_triple_eq, if_neg (fun h => hq (Finset.mem_range.mpr h.2))]
+      rw [weighted_triple_eq, ite_eq_right (fun h => hq (Finset.mem_range.mpr h.2))]
     simp only [hz, tsum_zero]
 
 /-- The actual E₃ factorial moment; each squarefree increasing triple

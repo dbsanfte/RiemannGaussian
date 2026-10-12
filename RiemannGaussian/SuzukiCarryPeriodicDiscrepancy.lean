@@ -162,7 +162,7 @@ theorem carry_product_one_spike {h : ℕ} (hh : 0 < h) (N : ℕ) :
       rw [Nat.add_mod, hp, Nat.mod_eq_of_lt (by omega : h < 2*h+1)]
       rw [show h+h = 2*h by omega, Nat.mod_eq_of_lt (by omega : 2*h < 2*h+1)]
     simp [hp, hs]
-    rw [if_neg (show h ≠ 2*h by omega), if_neg (show 2*h ≠ h by omega)]
+    rw [ite_eq_right (show h ≠ 2*h by omega), ite_eq_right (show 2*h ≠ h by omega)]
     norm_num
   · by_cases hn : N%(2*h+1) = 2*h
     · have hs : (N+h)%(2*h+1) = h-1 := by
@@ -171,8 +171,8 @@ theorem carry_product_one_spike {h : ℕ} (hh : 0 < h) (N : ℕ) :
           Nat.mod_self, zero_add, Nat.mod_mod]
         exact Nat.mod_eq_of_lt (by omega)
       simp [hn, hs]
-      rw [if_neg (show 2*h ≠ h by omega), if_neg (show h-1 ≠ h by omega),
-        if_neg (show h-1 ≠ 2*h by omega)]
+      rw [ite_eq_right (show 2*h ≠ h by omega), ite_eq_right (show h-1 ≠ h by omega),
+        ite_eq_right (show h-1 ≠ 2*h by omega)]
       norm_num
     · simp [hp, hn]
 
@@ -202,13 +202,13 @@ private theorem spike_prefix {h m : ℕ} (hh : 0 < h) (hm : m ≤ 2*h+1) :
   have hi : (∑ N ∈ Finset.range m, if N = h then (1 : ℝ) else 0) =
       if h < m then 1 else 0 := by
     by_cases hmem : h < m
-    · rw [if_pos hmem, Finset.sum_eq_single h]
+    · rw [ite_eq_left hmem, Finset.sum_eq_single h]
       · simp
       · intro N _ hne
         simp [hne]
       · intro hn
         exact False.elim (hn (Finset.mem_range.mpr hmem))
-    · rw [if_neg hmem]
+    · rw [ite_eq_right hmem]
       apply Finset.sum_eq_zero
       intro N hN
       have hne : N ≠ h := by have := Finset.mem_range.mp hN; omega
@@ -219,7 +219,7 @@ private theorem spike_prefix {h m : ℕ} (hh : 0 < h) (hm : m ≤ 2*h+1) :
 /-- Complete periods cancel exactly. -/
 theorem sum_zeroMean_period {h : ℕ} (hh : 0 < h) :
     (∑ N ∈ Finset.range (2*h+1), zeroMeanProduct (2*h+1) h N) = 0 := by
-  rw [spike_prefix hh le_rfl, if_pos (show h < 2*h+1 by omega),
+  rw [spike_prefix hh le_rfl, ite_eq_left (show h < 2*h+1 by omega),
     div_self (show ((2*h+1 : ℕ) : ℝ) ≠ 0 by positivity), sub_self]
 
 /-- This counterexample satisfies the strongest proposed bounded-partial-

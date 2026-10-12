@@ -430,11 +430,11 @@ theorem headCoefficient_eq_projected_head_log (U : ℕ) (f : ArithmeticFunction 
   apply Finset.sum_congr rfl
   intro a _
   by_cases ha : Squarefree a
-  · exact if_pos ha
+  · exact ite_eq_left ha
   · have hz : RoughSquarefreeBare.coefficient ∅ a n = 0 := by
       have h : ¬(Squarefree n ∧ (¬∃ p ∈ (∅ : Finset ℕ), p ∣ n) ∧ a ∣ n) :=
         fun h ↦ ha (h.1.squarefree_of_dvd h.2.2)
-      exact if_neg h
+      exact ite_eq_right h
     simp [ha, hz]
 
 private theorem moebius_weight_le (a : ℕ) : ‖((μ : ArithmeticFunction ℝ) a : ℂ)‖ ≤ 1 := by
@@ -556,8 +556,8 @@ theorem tendsto_nonsquarefree_of_budget (p : Polynomial ℂ) (y : ℝ)
 private theorem projected_bilinear_majorant (U V n : ℕ) :
     ‖squarefreePart (ZetaVaughanReduction.bilinear U V) n‖ ≤ zetaMoebiusLogMajorant n := by
   by_cases hn : Squarefree n
-  · simpa only [squarefreePart, if_pos hn] using ZetaVaughanReduction.norm_bilinear_le U V n
-  · simpa only [squarefreePart, if_neg hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
+  · simpa only [squarefreePart, ite_eq_left hn] using ZetaVaughanReduction.norm_bilinear_le U V n
+  · simpa only [squarefreePart, ite_eq_right hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n
 
 /-- The actual squarefree finite band keeps the original source for
 every cutoff schedule whose explicit product budget vanishes. -/

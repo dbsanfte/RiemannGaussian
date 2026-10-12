@@ -111,7 +111,7 @@ theorem cofactor_eq_indices (A : Finset ℕ) (h16 : ∀ p ∈ A, 16 ≤ p)
       subst U
       have he : middleWeight ∅ = fun _ => (1 : ℂ) := by ext z; simp [middleWeight]
       simp only [indexWeight,he,moment_one,
-        PowerSeries.coeff_one,if_neg hk,mul_zero,zero_mul]
+        PowerSeries.coeff_one,ite_eq_right hk,mul_zero,zero_mul]
 
 theorem subsetCharacter_eq_primeProduct {A : Finset ℕ} (hA : ∀ p ∈ A, p.Prime)
     {a : Index} (ha : a ∈ indices A) (xi : ℝ) :
@@ -161,7 +161,7 @@ private theorem subset_integrable_aux (r : ℕ) {U : Finset ℕ} (hU : U.Nonempt
     rw [norm_prod]
     calc
       _ ≤ ∏ _p ∈ U.erase q, (2 : ℝ) :=
-        Finset.prod_le_prod (fun _ _ => norm_nonneg _)
+        Finset.prod_le_prod₀ (fun _ _ => norm_nonneg _)
           (fun p _ => ZetaRieszMainFrequency.phase_le_two p (x xi))
       _ = _ := by simp
   apply ((hi q hq).mul_bdd hr.aestronglyMeasurable (Eventually.of_forall hb)).congr

@@ -106,7 +106,7 @@ theorem all_endpoint_defect_step {k s C : ℕ} (hk : 2 ≤ k) (hs : 1 ≤ s)
     obtain ⟨π, hcard, hπ⟩ := VinogradovShortPacket.exists_short_packet M (2 * k ^ 3) hMnum hR
     have hprod : M ^ (2 * k ^ 3) ≤ ∏ p ∈ π, p := by
       rw [← hcard, ← Finset.prod_const]
-      exact Finset.prod_le_prod (fun _ _ => Nat.zero_le _) (fun p hp => (hπ p hp).2.1.le)
+      exact Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _) (fun p hp => (hπ p hp).2.1.le)
     have h := moment_defect_step_of_packet hk hsize hM (by norm_num) π hπ
       (hbudget.trans_le hprod) hroot hMP hs hQ (Nat.cast_nonneg C) hd hdk hexp hJ
     have hc : 4 * π.card * k.factorial * 8 ^ (k ^ 2) = packetCoefficient k := by

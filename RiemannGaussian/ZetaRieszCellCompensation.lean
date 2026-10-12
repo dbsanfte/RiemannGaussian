@@ -202,7 +202,7 @@ theorem cell_budget {N : ℕ} {L t h y : ℝ}
     have hs' := mul_le_mul_of_nonneg_left hsc' (by norm_num : (0 : ℝ) ≤ 1/16000000)
     have hd : cellDebit N L t h y (fourLo t) (fourWidth t) ≤
         (1/16000000 : ℝ)*(Vp*φp*h) := by
-      convert hh' using 1 <;> first | rfl | (dsimp [cellDebit,Vp,φp]; ring)
+      convert hh' using 1 ; first | rfl | (dsimp [cellDebit,Vp,φp]; ring)
     exact (hd.trans hs').trans_eq (by ring)
   change (1/40000000 : ℝ)*Vm*φm*h ≤ _
   have he : (1/40000000 : ℝ)*Vm*φm*h = B/40000000 := by dsimp [B]; ring

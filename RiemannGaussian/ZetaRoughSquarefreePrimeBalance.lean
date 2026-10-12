@@ -62,7 +62,7 @@ theorem zetaRoughSquarefreeCoefficient_eq_prefix_add_prime (D : ℕ) (hD : 1 ≤
       refine ⟨And.left, fun hn ↦ ⟨hn, ?_⟩⟩
       exact fun hnS ↦ h ⟨n, hnS, dvd_rfl⟩
     simp only [zetaRoughSquarefreeCoefficient, zetaRoughSquarefreePrefixCoefficient,
-      if_neg h, zetaSquarefreeCoefficient, zetaMoebiusSievedPrimeCoefficient, if_pos hpair,
+      ite_eq_right h, zetaSquarefreeCoefficient, zetaMoebiusSievedPrimeCoefficient, ite_eq_left hpair,
       zetaRoughPrimeCoefficient, hp]
     exact zetaSquarefreeDistinctCoefficient_eq_prefix_add_prime D hD n
 
@@ -75,7 +75,7 @@ theorem zetaRoughSquarefreePrefixCoefficient_prime (D : ℕ) (hD : 1 ≤ D)
   have hz : zetaRoughSquarefreeCoefficient D S n = 0 := by
     simp [zetaRoughSquarefreeCoefficient, zetaSquarefreeCoefficient,
       zetaMoebiusSievedPrimeCoefficient, zetaMoebiusDistinctPrimeCoefficient, hn.primeFactors]
-  rw [hz, zetaRoughPrimeCoefficient, if_pos ⟨hn, hnS⟩] at h
+  rw [hz, zetaRoughPrimeCoefficient, ite_eq_left ⟨hn, hnS⟩] at h
   linear_combination -h
 
 /-- Every signed first-power intersection is retained in the exact
@@ -168,7 +168,7 @@ theorem exists_zetaRoughSquarefreePrefixFilter_bound (y : ℝ) (hy : 1 < |y|)
       exact hb p D N W (fun a ha ↦ (hS a (Finset.mem_powerset.mp hW ha)).1)
     _ = A * ∏ a ∈ S, (1 + w a) := by rw [Finset.prod_one_add, Finset.mul_sum]
     _ ≤ A * ∏ a ∈ S, (1 + 2 * w a) := mul_le_mul_of_nonneg_left
-      (Finset.prod_le_prod (fun a _ ↦ by linarith [hw a])
+      (Finset.prod_le_prod₀ (fun a _ ↦ by linarith [hw a])
         (fun a _ ↦ by linarith [hw a])) hA
     _ ≤ A * (Real.exp (2 * primeSquareWeightMass τ) * Real.exp (4 * Real.sqrt R)) :=
       mul_le_mul_of_nonneg_left

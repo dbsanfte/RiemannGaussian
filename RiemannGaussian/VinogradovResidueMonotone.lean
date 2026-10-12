@@ -46,12 +46,12 @@ theorem fibre_polynomial {a : Type*} [Fintype a] (m P q : ℕ) (hq : 0 < q)
     (fun x : Fin m → Fin P => tupleLabel m (positiveLabel hq P) x = c)
     (tupleFrequency m (fun x : Fin P => v (x.val + 1)))
     (targetWeight (tupleLabel m (positiveLabel hq P)) (fun _ => 1) c)
-    (by intro x hx; exact if_neg hx) theta
+    (by intro x hx; exact ite_eq_right hx) theta
   have hw : (fun x : BlockFibre m P q hq c =>
       targetWeight (tupleLabel m (positiveLabel hq P)) (fun _ => (1 : ℂ)) c x.val) =
         fun _ => 1 := by
     funext x
-    exact if_pos x.property
+    exact ite_eq_left x.property
   rw [hw] at he
   exact he
 

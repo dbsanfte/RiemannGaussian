@@ -89,7 +89,7 @@ theorem box_coefficient_lower {a h L : ℝ} (hh : 0 ≤ h) (hL : 0 < L)
       (logPrimes_order (by linarith) hq hr).ne
       (by linarith) (by linarith) (by linarith)
       (by nlinarith [Real.log_natCast_nonneg (p*(q*r))])
-  rw [he,Complex.ofReal_re,middleLayerAllowance,if_pos ⟨hs,by omega⟩,hk]
+  rw [he,Complex.ofReal_re,middleLayerAllowance,ite_eq_left ⟨hs,by omega⟩,hk]
   norm_num
   have ht : 0 ≤ Real.log n/L := div_nonneg (Real.log_natCast_nonneg _) hL.le
   nlinarith [mul_le_mul_of_nonneg_left hLhi ht]

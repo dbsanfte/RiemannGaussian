@@ -104,7 +104,7 @@ theorem integral_etaOverlapProfile_div_sq_pair (n : ℕ) :
           constructor <;> linarith [hx.1, hx.2]
         dsimp only
         rw [etaOverlapProfile_eq_on_nat_cell hcell]
-        simp only [show Even (2 * n + 2) from (even_two_mul n).add (by decide), if_pos,
+        simp only [show Even (2 * n + 2) from (even_two_mul n).add (by decide), ite_eq_left,
           Nat.cast_add, Nat.cast_mul, Nat.cast_ofNat, one_mul, sub_eq_add_neg]
       _ = _ := by
         rw [integral_affine_div_sq (by positivity : 0 < 2 * (n : ℝ) + 2)

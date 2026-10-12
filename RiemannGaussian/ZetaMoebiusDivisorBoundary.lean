@@ -93,7 +93,7 @@ theorem zetaMoebiusLogTailCoefficient_eq_fibres (D : ℕ) {P n : ℕ}
   have hca := (hcop.of_dvd_left (Nat.dvd_of_mem_divisors ha)).of_dvd_right
     (Nat.dvd_of_mem_divisors hd)
   by_cases hcut : D < a * d
-  · rw [if_pos hcut, if_pos hcut, log_nat_div had,
+  · rw [ite_eq_left hcut, ite_eq_left hcut, log_nat_div had,
       ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hca]
     push_cast
     ring
@@ -113,7 +113,7 @@ theorem zetaMoebiusLogDivisorFibre_complete (D P n : ℕ) {d : ℕ} (hd : D < d)
       intro a ha
       have ha0 := Nat.pos_of_mem_divisors ha
       have hd0 : 0 < d := by omega
-      rw [if_pos (hd.trans_le (by nlinarith)),
+      rw [ite_eq_left (hd.trans_le (by nlinarith)),
         Real.log_mul (x := (a : ℝ)) (by exact_mod_cast ha0.ne') (by exact_mod_cast hd0.ne')]
       push_cast
       ring
@@ -126,7 +126,7 @@ theorem zetaMoebiusLogDivisorFibre_empty (D P n d : ℕ) (hcut : P * d ≤ D) :
   intro a ha
   have haP := Nat.le_of_dvd (Nat.pos_of_ne_zero (Nat.mem_divisors.mp ha).2)
     (Nat.dvd_of_mem_divisors ha)
-  exact if_neg (not_lt.mpr ((Nat.mul_le_mul_right d haP).trans hcut))
+  exact ite_eq_right (not_lt.mpr ((Nat.mul_le_mul_right d haP).trans hcut))
 
 /-- The only possible nonzero fibres for a factor with multiple distinct
 primes lie across the actual divisor cutoff. -/
@@ -135,7 +135,7 @@ theorem zetaMoebiusLogDivisorFibre_eq_zero_outside {D P n d : ℕ}
     zetaMoebiusLogDivisorFibre D P n d = 0 := by
   by_cases hd : d ≤ D
   · exact zetaMoebiusLogDivisorFibre_empty _ _ _ _ (by omega)
-  · rw [zetaMoebiusLogDivisorFibre_complete D P n (by omega), if_neg hP,
+  · rw [zetaMoebiusLogDivisorFibre_complete D P n (by omega), ite_eq_right hP,
       ArithmeticFunction.vonMangoldt_eq_zero_iff.mpr hprime]
     simp
 
@@ -150,8 +150,8 @@ theorem zetaMoebiusLogTailCoefficient_eq_boundary (D : ℕ) {P n : ℕ}
   apply Finset.sum_congr rfl
   intro d _
   by_cases hd : d ≤ D ∧ D < P * d
-  · rw [if_pos hd]
-  · rw [if_neg hd, zetaMoebiusLogDivisorFibre_eq_zero_outside hP hprime hd, mul_zero]
+  · rw [ite_eq_left hd]
+  · rw [ite_eq_right hd, zetaMoebiusLogDivisorFibre_eq_zero_outside hP hprime hd, mul_zero]
 
 private theorem norm_moebius_le_one (d : ℕ) : ‖(μ d : ℂ)‖ ≤ 1 := by
   rw [Complex.norm_intCast]
@@ -171,7 +171,7 @@ theorem norm_zetaMoebiusLogDivisorFibre_le (D P : ℕ) {n d : ℕ} (hd : d ∈ n
       apply Finset.sum_le_sum
       intro a ha
       by_cases hcut : D < a * d
-      · rw [if_pos hcut, norm_mul, ← Complex.ofReal_sub, Complex.norm_real]
+      · rw [ite_eq_left hcut, norm_mul, ← Complex.ofReal_sub, Complex.norm_real]
         have had0 : (0 : ℝ) < (a : ℝ) * d := by
           exact_mod_cast Nat.mul_pos (Nat.pos_of_mem_divisors ha) (Nat.pos_of_mem_divisors hd)
         have hadle : (a : ℝ) * d ≤ (P : ℝ) * n := by
@@ -186,7 +186,7 @@ theorem norm_zetaMoebiusLogDivisorFibre_le (D P : ℕ) {n d : ℕ} (hd : d ∈ n
           _ ≤ 1 * (Real.log ((P : ℝ) * n) - Real.log ((a : ℝ) * d)) :=
             mul_le_mul_of_nonneg_right (norm_moebius_le_one a) (sub_nonneg.mpr hlog)
           _ ≤ _ := by linarith [log_product_nonneg a d]
-      · simpa only [if_neg hcut, norm_zero] using log_product_nonneg P n
+      · simpa only [ite_eq_right hcut, norm_zero] using log_product_nonneg P n
     _ = _ := by simp
 
 /-- The actual coefficient is bounded using only divisors crossing the

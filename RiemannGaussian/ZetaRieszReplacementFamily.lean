@@ -105,7 +105,7 @@ theorem actual_band_eq_replacement_add_remainder (L : ℝ) (P : Polynomial ℂ)
     unfold bandWeight zetaArithmeticBand
     apply Finset.sum_congr rfl
     intro n hn
-    rw [if_pos hn]
+    rw [ite_eq_left hn]
   rw [← hs, add_comm]
   exact (Finset.sum_sdiff (replacementBand_subset L N a b q)).symm
 

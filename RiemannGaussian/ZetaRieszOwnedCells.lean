@@ -50,7 +50,7 @@ the earlier three-prime choice to the whole squarefree composite carrier. -/
 theorem largestPrime_mem_of_two {m : ℕ} (hm : 2 ≤ m.primeFactors.card) :
     ZetaRieszPrimeEndpoint.largestPrime m ∈ m.primeFactors := by
   have h : m.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
-  rw [ZetaRieszPrimeEndpoint.largestPrime, dif_pos h]
+  rw [ZetaRieszPrimeEndpoint.largestPrime, dite_eq_left h]
   exact Finset.max'_mem _ _
 
 /-- Removing the canonical largest prime gives one unique owner cofactor. -/

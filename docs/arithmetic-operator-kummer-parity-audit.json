@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorKummerParityAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 173,
+    "theoremsIncludingGeneratedHelpers": 162,
+    "authoredNamespaceDeclarations": 55,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "unchangedMinimumNativeCacheUsed": true,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "all-power odd-prime Lucas two-digit criterion and one-carry witness; exact binary component, squarefree GCD and full prime-log incidence join",
+    "actualOffLineZeroResponse": "specified MARKED ordinary 2p channel only: actual -m_rho*2^(-rho), nonzero, no exposure; whole-GCD and simultaneous-prime source not inferred",
+    "densitySeparation": "density 2^(-s)/(s-1) removed with analytic germ at one; marked-channel source unchanged and cannot be paid to zero",
+    "collapseAudit": "entire moving-weight observation is an arbitrary-array base-prime incidence test; marked ordinary channel is exactly old-prime dilation; retained actual label-six prime five refutes free-weight bound",
+    "independentSignedEstimate": "none; freeze ONLY scalar-observation/marked-channel shortcut",
+    "endpointTransfer": "no open RH arithmetic premise discharged"
+  },
+  "scope": {
+    "splitMask": "0<k<n, k mod 2=0",
+    "rowDomain": "n even, n>=4",
+    "rawEmptyHeadAtTwo": 0,
+    "oddPrimeValuation": "1_(exists i,j>=0, n=p^i+p^j)",
+    "binaryValuation": "1_(exists j>=0, n=2^(j+1))",
+    "actualGcdSquarefree": true,
+    "oneCarryWitness": "(p-1)*p^(max(i,j)-1), proper EVEN split",
+    "distinctPrimeWitnessesAssumedCoincident": false,
+    "allProperPowersRetained": true,
+    "largePrimeValuation": "n<p^2: 1_(n=p+1 or n=2p)",
+    "nonleadingPowerSupport": "p^2<=n",
+    "supportIsNotAggregatePayment": true,
+    "exactFullPacket": "sum_p log(p)*sum_(n even, n>=4,p<=n,p prime,I(p,n)) w(n)",
+    "markedChannel": "n=2p, p ordinary odd prime, actual row p-valuation=1",
+    "markedEulerResponse": "2^(-s)*(-logDeriv zeta(s)-Q_proper(s)-log(2)*2^(-s))",
+    "EulerDomain": "Re(s)>1 only",
+    "markedActualZeroResidue": "-m_rho*2^(-rho)",
+    "residueDomain": "every actual nontrivial zero with Re(rho)>1/2, every multiplicity, no exposure",
+    "densityRemoval": "2^(-s)/(s-1)",
+    "wholeHeightAndCofactorPhaseRetained": true,
+    "wholeGcdNativeSourceInferred": false,
+    "twoPrimeSourceInferredFromLinearSource": false,
+    "simultaneousLargePrimeConstraint": "p>q>2, both divide same GCD, n<p^2,n<q^2 => n=p+1=2q,p=2q-1",
+    "classicClassificationClaimedNovel": false,
+    "countermodelsGrantedActualBinomialGammaData": false,
+    "nonlinearSimultaneousPrimeCorridorRuledOut": false,
+    "noGo": "observing the scalar GCD/marked dilation alone is not independent arithmetic information; the exact source-safe channel is old ordinary-prime dilation",
+    "remaining": "nonlinear actual zero-source gate for p=2q-1 plus higher-power intersections, or genuinely new prescribed signed Gamma/cutoff estimate; no scalar or separate-leg source inference"
+  },
+  "literature": {
+    "McTague2018": {
+      "url": "https://arxiv.org/html/1510.06696v5",
+      "access": "primary full text read; classical progression theorem guides exact Lean proof; no axioms imported"
+    },
+    "binaryComponent": "proved directly by binary scaling/Kummer and literal endpoint witnesses"
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "literalEvenRows": 255,
+    "ceiling": 512,
+    "rawEmptyHeadAtTwo": 0,
+    "exactAllPrimeValuationChecks": 13606,
+    "exactLargePrimeChecks": 12067,
+    "exactOneCarryWitnesses": 190,
+    "properPowerIncidencesRetained": 41,
+    "exactOrderedTwoLargePrimeConstraints": 12,
+    "exactRationalWholePacketLedgers": 16,
+    "rationalMasksAreNotActualHeightPhases": true,
+    "exactMarkedDilationChannels": 53,
+    "examples": [
+      {
+        "label": 4,
+        "literalGcd": 6,
+        "exactPrimeFactorization": {
+          "2": 1,
+          "3": 1
+        }
+      },
+      {
+        "label": 6,
+        "literalGcd": 15,
+        "exactPrimeFactorization": {
+          "3": 1,
+          "5": 1
+        }
+      },
+      {
+        "label": 8,
+        "literalGcd": 14,
+        "exactPrimeFactorization": {
+          "2": 1,
+          "7": 1
+        }
+      },
+      {
+        "label": 10,
+        "literalGcd": 15,
+        "exactPrimeFactorization": {
+          "3": 1,
+          "5": 1
+        }
+      },
+      {
+        "label": 30,
+        "literalGcd": 435,
+        "exactPrimeFactorization": {
+          "3": 1,
+          "5": 1,
+          "29": 1
+        }
+      },
+      {
+        "label": 64,
+        "literalGcd": 2,
+        "exactPrimeFactorization": {
+          "2": 1
+        }
+      },
+      {
+        "label": 128,
+        "literalGcd": 254,
+        "exactPrimeFactorization": {
+          "2": 1,
+          "127": 1
+        }
+      },
+      {
+        "label": 256,
+        "literalGcd": 2,
+        "exactPrimeFactorization": {
+          "2": 1
+        }
+      },
+      {
+        "label": 512,
+        "literalGcd": 2,
+        "exactPrimeFactorization": {
+          "2": 1
+        }
+      }
+    ],
+    "floatingMarkedSourceFactors": [
+      {
+        "candidateRealPart": 0.5,
+        "height": 54,
+        "markedDilationFactorNorm": 0.7071067811865476
+      },
+      {
+        "candidateRealPart": 0.5,
+        "height": 65,
+        "markedDilationFactorNorm": 0.7071067811865476
+      },
+      {
+        "candidateRealPart": 0.5,
+        "height": 100,
+        "markedDilationFactorNorm": 0.7071067811865476
+      },
+      {
+        "candidateRealPart": 0.625,
+        "height": 54,
+        "markedDilationFactorNorm": 0.6484197773255048
+      },
+      {
+        "candidateRealPart": 0.625,
+        "height": 65,
+        "markedDilationFactorNorm": 0.6484197773255048
+      },
+      {
+        "candidateRealPart": 0.625,
+        "height": 100,
+        "markedDilationFactorNorm": 0.6484197773255048
+      },
+      {
+        "candidateRealPart": 0.75,
+        "height": 54,
+        "markedDilationFactorNorm": 0.5946035575013605
+      },
+      {
+        "candidateRealPart": 0.75,
+        "height": 65,
+        "markedDilationFactorNorm": 0.5946035575013605
+      },
+      {
+        "candidateRealPart": 0.75,
+        "height": 100,
+        "markedDilationFactorNorm": 0.5946035575013605
+      },
+      {
+        "candidateRealPart": 0.875,
+        "height": 54,
+        "markedDilationFactorNorm": 0.5452538663326288
+      },
+      {
+        "candidateRealPart": 0.875,
+        "height": 65,
+        "markedDilationFactorNorm": 0.5452538663326288
+      },
+      {
+        "candidateRealPart": 0.875,
+        "height": 100,
+        "markedDilationFactorNorm": 0.5452538663326288
+      }
+    ],
+    "wholeGcdNativeSourceInferred": false,
+    "twoPrimeSourceInferredFromLinearSource": false,
+    "properPowerSupportIsNotAggregatePayment": true,
+    "newRHOrZeroExclusionClaimed": false
+  },
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-kummer-prefix-audit.json",
+    "all24PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "42bad88658b9419621b4766cd36814e22ef4304b19ec981c331f65f890314b57",
+        "current": "4af189eca6a3d59d40335ddf6a49ff534393cf3aa87936c7c3785541bac08882"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "04194462830a50319e7acf85826f1c3e56d07960102edf431793964597edb7b5",
+        "current": "8736fba317ce3470a9ac2c5482d3cef5e81220d431f60b6eda29e5fde21b7dba"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorKummerParityAudit.lean": "fbf7773d9bc10e6d162b985fa6c7d42d3929ad9217c65df13f1d4e6941bc0f17",
+    "scripts/probe_arithmetic_operator_kummer_parity.py": "54b98125e002c91d009e0d74b0172532c94c1870f34bc3576d6c68b455e8afb5",
+    "scripts/ArithmeticOperatorKummerMinimumAudit.lean": "a4d63cbdb2e6ecfd88b3095d270cac274e0a7073940411222edfee819387ac65",
+    "RiemannGaussian/ArithmeticOperatorGramAudit.lean": "326b31eeb50cde636af9dad3c5d7d23ec9dcac47f0f9953c5e64f443d595191b",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+    "RiemannGaussian/ZetaPrimeLogMoments.lean": "b5591348519602d11221d4d27fd043bd04c8b439d37f3bfc8498ea7245546887",
+    "RiemannGaussian/ZetaPrimePowerMoments.lean": "fade0dd05e6cc17c98888cf3cfbcd7c4320b6d2300c84d7dbba49b8d9097d0e9",
+    "RiemannGaussian/ZetaSignedPoleControl.lean": "9bc3c95456be9e771c2c0fa666556ed4c645117dab08a265c72e9bd28ff7f61b",
+    "RiemannGaussian/ZetaFiniteDirichlet.lean": "5e79ac38204ca04577c8aa96a2ca703090f991a609c7e105de577aafad69ff54",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Factorization.lean": "f7e4d90e1d3d74af322feb3731f98186b4f701c747d66d822bef8a799d6d5f38",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Dvd.lean": "0eb259d489c1d9db04106190d9d393e50692234893489dd90b913d749e44426a",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Digits/Defs.lean": "eda07bac05080fbab7767b0e96ed965ef6bba0c0d81780fbab8791ace17bc8ce",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Digits/Lemmas.lean": "dce190d7b0c0fde87e3e257b098ff5afb95ea0cef4ec9c0cc142f61d16a00066",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Squarefree.lean": "c4d421a3b9874809348fe23bc02eda4e380b9204f72ec9ea6bd16001f54cab91",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/Padics/PadicVal/Basic.lean": "80cb928e0813f114e974080802ec7fd906219783b9168bf043558d4bad6372e3",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean": "0eaa8af946dc26bf04adb966c84e808318e7ec61d050a8ce7c981d480e0c2ea1",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "4af189eca6a3d59d40335ddf6a49ff534393cf3aa87936c7c3785541bac08882",
+    "docs/arithmetic-operator-research.md": "8736fba317ce3470a9ac2c5482d3cef5e81220d431f60b6eda29e5fde21b7dba",
+    ".lake/arithmetic-operator-kummer-parity/check.log": "238216472db294ba06bfda0863508ca1045ce24e4548d217d9be48059dc16037",
+    ".lake/arithmetic-operator-kummer-parity/axioms.json": "20b880b7cd41034a03fff55201d6a283be637d74cef6081440949bc029bf6ee2",
+    ".lake/arithmetic-operator-kummer-parity/probe.json": "022b40de310836dfcf30d75074ea62e96f88837cd6b681154402549200bfe466",
+    ".lake/arithmetic-operator-kummer-parity/prior-pin-check-before-doc-update.json": "651c3c57ed02bf2577a0ed457b7e41dac024298d5e89d63eb844e01686972ac0"
+  }
+}

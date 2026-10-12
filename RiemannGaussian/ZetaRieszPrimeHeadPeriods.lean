@@ -67,7 +67,7 @@ private theorem prefix_delta {X d : ℕ} (hd : d∈Finset.Icc 1 X)
     · simp [h,Finset.mem_Icc]
   simp only [hs] at he
   simpa only [mul_ite,ite_mul,mul_one,one_mul,mul_zero,zero_mul,
-    Finset.sum_ite_eq',if_pos hd] using he.symm
+    Finset.sum_ite_eq',ite_eq_left hd] using he.symm
 
 private theorem length_eq_log (u : ℝ) (N : ℕ) :
     SquarefreeVaughanLogSource.length u N=log (physicalEndpoint u N) := by
@@ -143,8 +143,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hnot
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hnot (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 private theorem blockCost_extend (X Y : ℕ) (hXY : X≤Y) (g : ℕ→ℕ) (t : ℕ→ℝ) :
     blockCost (Finset.Icc 1 Y) g (fun k => if k≤X then t k else 0)=
@@ -160,8 +160,8 @@ private theorem blockCost_extend (X Y : ℕ) (hXY : X≤Y) (g : ℕ→ℕ) (t : 
       obtain ⟨hk,hg⟩ := Finset.mem_filter.mp hk
       have hx : ¬k≤X := fun hx => hn
         (Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨(Finset.mem_Icc.mp hk).1,hx⟩,hg⟩)
-      simp only [if_neg hx])]
-    exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp (Finset.mem_filter.mp hk).1).2)
+      simp only [ite_eq_right hx])]
+    exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp (Finset.mem_filter.mp hk).1).2)
   simp only [blockCost,hb]
   symm
   apply Finset.sum_subset (Finset.image_subset_image hK)

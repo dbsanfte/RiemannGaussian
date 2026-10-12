@@ -83,7 +83,7 @@ private theorem owner_data {k n : ℕ} (hk : 2 ≤ k) (hs : Squarefree n)
     omega
   have hmax q (hq : q ∈ n.primeFactors) : q ≤ p := by
     dsimp [p,ZetaRieszPrimeEndpoint.largestPrime]
-    rw [dif_pos (Finset.card_pos.mp (by omega : 0 < n.primeFactors.card))]
+    rw [dite_eq_left (Finset.card_pos.mp (by omega : 0 < n.primeFactors.card))]
     exact Finset.le_max' _ q hq
   exact ⟨hpp,he,ha,hcard,hp,hmax,hnot⟩
 
@@ -300,12 +300,12 @@ private theorem positive_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : 0 < (SquarefreeVaughanLogSource.coefficient L n).re
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart (-1) A L y N n = 0 := by
       simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
         -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
     rw [hz,add_zero]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,one_mul,max_eq_right (le_of_not_gt hp),mul_zero,zero_mul]
 
 private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
@@ -316,11 +316,11 @@ private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : (SquarefreeVaughanLogSource.coefficient L n).re < 0
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart 1 A L y N n = 0 := by
       simp only [signedPart,one_mul,max_eq_right hp.le,mul_zero,zero_mul]
     rw [hz,zero_add]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
       -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
 
@@ -536,18 +536,18 @@ theorem sum_fixed_parts (E : Finset ℕ) (f : ℕ → ℝ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hc : 3 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55
-  · rw [if_pos hc]
+  · rw [ite_eq_left hc]
     rw [Finset.sum_eq_single (n.primeFactors.card-1)]
-    · rw [if_pos (by omega)]
+    · rw [ite_eq_left (by omega)]
     · intro k _ hk
-      exact if_neg (by omega)
+      exact ite_eq_right (by omega)
     · intro hn
       exact False.elim (hn (Finset.mem_Icc.mpr (by omega)))
-  · rw [if_neg hc]
+  · rw [ite_eq_right hc]
     apply Finset.sum_eq_zero
     intro k hk
     have hb := Finset.mem_Icc.mp hk
-    exact if_neg (by omega)
+    exact ite_eq_right (by omega)
 
 /-- A single signed estimate for EVERY core label at counts 3..55,
 including the complete four-prime supply. All masks, allocation and phase

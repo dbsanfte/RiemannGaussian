@@ -78,8 +78,8 @@ theorem pairedEtaCompletedMoebiusQuotientShell_eq_odd_sub_half
   apply Finset.sum_congr rfl
   intro q _
   by_cases hq : q ≤ M / (D + 1)
-  · simp only [if_pos hq, pairedEtaCompletedMoebiusQuotientBlock_eq_odd_sub_half]
-  · simp only [if_neg hq, mul_zero, sub_zero]
+  · simp only [ite_eq_left hq, pairedEtaCompletedMoebiusQuotientBlock_eq_odd_sub_half]
+  · simp only [ite_eq_right hq, mul_zero, sub_zero]
 
 /-- The odd quotient prefix retains all of its complete fibres. -/
 def pairedEtaCompletedMoebiusOddQuotientAggregate (rho : NontrivialZetaZero) (Q M : ℕ) : ℂ :=

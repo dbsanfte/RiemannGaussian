@@ -273,7 +273,7 @@ theorem sieveCost_le_cubic (S : Finset ℕ) (N : ℕ)
       ZetaRieszCubicSieveCost.cubicCost N := by
   apply le_trans _ (ZetaRieszCubicSieveCost.intersectionCost_cubic_bound S N hS)
   unfold ZetaRieszPrimeWeightedSieve.sieveCost ZetaRieszCubicSieveCost.intersectionCost
-  apply Finset.prod_le_prod
+  apply Finset.prod_le_prod₀
   · intro p _
     linarith [primeSquareCorrectedWeight_nonneg (3/4) p]
   · intro p _

@@ -46,7 +46,7 @@ theorem separatedSelectedBoundaryHeatResidueWindow_eq_kernel_sum
   apply Finset.sum_congr rfl
   intro rho hrho
   rw [suzukiChebyshevLaplaceBoundaryHeatResidue]
-  rw [if_pos]
+  rw [ite_eq_left]
   exact
     selectedLaplaceZeroCoordinate_re_lt_zero_of_mem
       (mem_separatedSelectedZetaZeroWindow.mp hrho).1
@@ -110,7 +110,7 @@ theorem tendsto_separatedSelectedBoundaryHeatResidueWindow
       filter_upwards [eventually_mem_separatedSelectedZetaZeroWindow
         rho hupper] with n hn
       dsimp only [f]
-      rw [if_pos hn]
+      rw [ite_eq_left hn]
     · have hnotMem : ∀ n : ℕ,
           rho ∉ separatedSelectedZetaZeroWindow n := by
         intro n hmem
@@ -120,9 +120,9 @@ theorem tendsto_separatedSelectedBoundaryHeatResidueWindow
           suzukiChebyshevLaplaceBoundaryHeatResidue x tau rho = 0 := by
         rw [suzukiChebyshevLaplaceBoundaryHeatResidue_eq_riemannXi,
           riemannXiUpperHyperbolicBoundaryHeatResidue,
-          zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+          zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
         norm_num
-      simp only [f, hnotMem, if_false, hresidue]
+      simp only [f, hnotMem, ite_false, hresidue]
       exact tendsto_const_nhds
   have hbound : ∀ᶠ n : ℕ in atTop, ∀ rho : NontrivialZetaZero,
       ‖f n rho‖ ≤
@@ -144,12 +144,12 @@ theorem tendsto_separatedSelectedBoundaryHeatResidueWindow
   rw [tsum_eq_sum (s := separatedSelectedZetaZeroWindow n) (by
     intro rho hnot
     dsimp only [f]
-    rw [if_neg hnot])]
+    rw [ite_eq_right hnot])]
   unfold separatedSelectedBoundaryHeatResidueWindow
   apply Finset.sum_congr rfl
   intro rho hrho
   dsimp only [f]
-  rw [if_pos hrho]
+  rw [ite_eq_left hrho]
 
 /-- The finite Cauchy--Green identity expressed using the separated selected
 residue-window sum. -/

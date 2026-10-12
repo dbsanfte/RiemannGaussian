@@ -173,13 +173,13 @@ theorem masked_hyperbola (S : Finset ℕ) (X : ℕ) (hS : S ⊆ Finset.Icc 1 X)
       intro a ha
       apply Finset.sum_congr rfl
       intro db hdb
-      rw [(Nat.mem_divisorsAntidiagonal.mp hdb).1,if_pos ha]
+      rw [(Nat.mem_divisorsAntidiagonal.mp hdb).1,ite_eq_left ha]
     _ = _ := by
       apply Finset.sum_subset hS
       intro a _ hnot
       apply Finset.sum_eq_zero
       intro db hdb
-      rw [(Nat.mem_divisorsAntidiagonal.mp hdb).1,if_neg hnot]
+      rw [(Nat.mem_divisorsAntidiagonal.mp hdb).1,ite_eq_right hnot]
 
 /-- The actual joint moment/crossing aggregate is one signed bilinear
 sum over `a=d*b`. Prime selections, owner weights and phases continue to

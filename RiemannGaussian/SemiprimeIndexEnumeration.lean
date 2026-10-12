@@ -255,11 +255,11 @@ theorem mem_bandInterval {N s L : ℕ} (hN : 0<N) (basis : ShortRelationReport)
   unfold bandInterval
   split
   · rename_i hnegative
-    rw [if_pos hnegative] at hdet
+    rw [ite_eq_left hnegative] at hdet
     rw [mem_positiveLinearInterval hn,hdet]
     simp only [zero_add]
   · rename_i hnegative
-    rw [if_neg hnegative] at hdet
+    rw [ite_eq_right hnegative] at hdet
     rw [mem_positiveLinearInterval hn,hdet]
     simp only [zero_add]
     constructor <;> intro h <;> constructor <;> nlinarith [h.1,h.2]
@@ -363,9 +363,9 @@ theorem enumerateCoefficients_counts (N s L : ℕ) :
 theorem integer_extrema_width (x : ℤ) : maxInteger 0 x-minInteger 0 x=|x| := by
   unfold maxInteger minInteger
   by_cases hx : 0≤x
-  · rw [if_pos hx,if_pos hx,abs_of_nonneg hx]
+  · rw [ite_eq_left hx,ite_eq_left hx,abs_of_nonneg hx]
     ring
-  · rw [if_neg hx,if_neg hx,abs_of_nonpos (by omega)]
+  · rw [ite_eq_right hx,ite_eq_right hx,abs_of_nonpos (by omega)]
     ring
 
 /-- Exact determinant width of the original closed integer rectangle. -/
@@ -704,9 +704,9 @@ theorem shortRelationLoop_predecessor_bounds {T r0 r1 c0 c1 : ℕ}
   | h r1 ih =>
     dsimp only
     by_cases hs : r1≤T
-    · rw [shortRelationLoop,dif_pos hs]
+    · rw [shortRelationLoop,dite_eq_left hs]
       exact ⟨hc,le_rfl⟩
-    · rw [shortRelationLoop,dif_neg hs]
+    · rw [shortRelationLoop,dite_eq_right hs]
       dsimp only
       have hquot : 0<r0/r1 := Nat.div_pos horder.le (by omega)
       have hc' : c1≤c0+(r0/r1)*c1 := by nlinarith

@@ -31,7 +31,7 @@ theorem eventually_forall_of_all_selections {α : Type*} [Inhabited α] (Q : ℕ
   intro a
   by_contra ha
   have hex : ∃ a, ¬ Q N a := ⟨a, ha⟩
-  exact (Classical.choose_spec hex) (by simpa only [f, dif_pos hex] using hN)
+  exact (Classical.choose_spec hex) (by simpa only [f, dite_eq_left hex] using hN)
 
 /-- An arbitrary moving infinite mask of the actual physical upper tail.
 The complete coefficient and integer labels remain unchanged on the mask. -/

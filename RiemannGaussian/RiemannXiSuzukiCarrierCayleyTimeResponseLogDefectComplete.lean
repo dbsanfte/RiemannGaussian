@@ -75,13 +75,13 @@ theorem hasDerivAt_zetaUpperSelectedVerticalLogDefectSummand
     unfold zetaUpperSelectedVerticalLogDefectSummand
       zetaUpperVerticalLogDefectDerivativeSummand
       zetaUpperBlaschkeSelectedLogDerivativeSummand
-    simp only [if_pos hupper]
+    simp only [ite_eq_left hupper]
     exact hasDerivAt_zetaUpperVerticalLogDefectSummand
       rho hy.le hupper hradial
   · unfold zetaUpperSelectedVerticalLogDefectSummand
       zetaUpperVerticalLogDefectDerivativeSummand
       zetaUpperBlaschkeSelectedLogDerivativeSummand
-    simp only [if_neg hupper, mul_zero, zero_re]
+    simp only [ite_eq_right hupper, mul_zero, zero_re]
     exact hasDerivAt_const (x := y) (c := (0 : ℝ))
 
 /-- The complete boundary density gives a summable height-independent
@@ -137,12 +137,12 @@ theorem zetaUpperSelectedVerticalLogDefectSummand_eq_hyperbolic
       rw [← norm_pos_iff]
       exact (half_pos hdelta).trans_le hsep
     unfold zetaUpperSelectedVerticalLogDefectSummand
-    rw [if_pos hupper]
+    rw [ite_eq_left hupper]
     exact zetaUpperVerticalLogDefectSummand_eq_hyperbolic
       rho hy hupper hne
   · unfold zetaUpperSelectedVerticalLogDefectSummand
       zetaUpperHyperbolicLogDefectSummand
-    rw [if_neg hupper, if_neg hupper]
+    rw [ite_eq_right hupper, ite_eq_right hupper]
 
 /-- The complete selected vertical log-defect series is summable at every
 point of the uniform collar. -/
@@ -335,13 +335,13 @@ theorem zetaUpperVerticalLogDefectDerivativeSummand_nonneg
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · unfold zetaUpperVerticalLogDefectDerivativeSummand
       zetaUpperBlaschkeSelectedLogDerivativeSummand
-    rw [if_pos hupper]
+    rw [ite_eq_left hupper]
     exact mul_nonneg (by norm_num)
       (re_neg_I_mul_zetaUpperBlaschkeLogDerivativeSummand_approach_pos
         hdelta hgap hy hySmall rho hupper).le
   · unfold zetaUpperVerticalLogDefectDerivativeSummand
       zetaUpperBlaschkeSelectedLogDerivativeSummand
-    simp only [if_neg hupper, mul_zero, zero_re, le_refl]
+    simp only [ite_eq_right hupper, mul_zero, zero_re, le_refl]
 
 /-- One genuine upper zero contributes a strictly positive complete height
 response in the collar. -/
@@ -356,7 +356,7 @@ theorem zetaUpperVerticalLogDefectDerivativeSummand_pos
     0 < zetaUpperVerticalLogDefectDerivativeSummand x y rho := by
   unfold zetaUpperVerticalLogDefectDerivativeSummand
     zetaUpperBlaschkeSelectedLogDerivativeSummand
-  rw [if_pos hupper]
+  rw [ite_eq_left hupper]
   exact mul_pos (by norm_num)
     (re_neg_I_mul_zetaUpperBlaschkeLogDerivativeSummand_approach_pos
       hdelta hgap hy hySmall rho hupper)
@@ -398,7 +398,7 @@ theorem riemannXiUpperVerticalLogDefectDerivativeTotal_eq_zero_of_rh
         rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
     unfold zetaUpperVerticalLogDefectDerivativeSummand
       zetaUpperBlaschkeSelectedLogDerivativeSummand
-    rw [if_neg (by linarith : ¬0 < (zetaSpectralCoordinate rho.1).im)]
+    rw [ite_eq_right (by linarith : ¬0 < (zetaSpectralCoordinate rho.1).im)]
     simp
   unfold riemannXiUpperVerticalLogDefectDerivativeTotal
   rw [hzero]

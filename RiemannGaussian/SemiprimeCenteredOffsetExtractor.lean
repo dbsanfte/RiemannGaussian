@@ -127,10 +127,10 @@ theorem residuePacket_center_choice {N m j : ℕ} {w : FamilyPacket}
   simp only [List.mem_cons,List.not_mem_nil,or_false] at hw
   rcases hw with rfl|rfl
   · refine ⟨false,?_⟩
-    simpa only [CenterChoice,centerA,centerB,Bool.not_false,Bool.false_eq_true,if_false,if_true]
+    simpa only [CenterChoice,centerA,centerB,Bool.not_false,Bool.false_eq_true,ite_false,ite_true]
       using publicShift_midpoint N m j (liftRow N m j (publicInverse m j) v.1 v.2)
   · refine ⟨true,?_⟩
-    simpa only [CenterChoice,centerA,centerB,Bool.not_true,Bool.false_eq_true,if_false,if_true]
+    simpa only [CenterChoice,centerA,centerB,Bool.not_true,Bool.false_eq_true,ite_false,ite_true]
       using reflectedShift_midpoint N m j (liftRow N m j (publicInverse m j) v.1 v.2)
 
 theorem publicPacket_center_choice {N m : ℕ} {w : FamilyPacket}

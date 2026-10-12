@@ -8,21 +8,33 @@ arithmetic bound remains open. The global reflected Gaussian Gram offers
 a second complete-zero-set interface whose arithmetic vanishing is also
 unproved. See the [pivot and concrete target](gaussian-suzuki-pivot.md).
 
-The published integer-carry branch now includes exact prime-power lag
-correlations, a source-scale Fejer low-sector saving, diagonal/density
-cancellation by phase codes, and their exact scaled Mellin limit. Its
-cofinal source transfer is conditional on a nonzero continuum determinant;
-existence of a working code at every campaign height remains open. The
-periodic/SBP audit proves that paying the fully joined rows separately by
-norms is source-divergent for every fixed source-retaining code. It does
-not rule out signed cancellation across different primes or lags. See the
-[negative checkpoint](gaussian-suzuki-pivot.md#periodic-remainder-payment-negative-checkpoint-2026-10-05).
+The integer-carry branch includes exact prime-power lag correlations,
+diagonal/density cancellation by phase codes and their scaled Mellin limit.
+The all-jet theorem proves that some fixed phase code detects every source
+in the original near-one campaign strip, `19999/20000<=beta<1`; the specific
+fourth-order exceptional equation remains a separate question. The joined carry statistic is still a twisted Chebyshev
+test whose independent arithmetic estimate is open. Rowwise periodic/SBP
+payment is source-divergent and is not a route to that estimate.
+See the [source-detector closure](suzuki-carry-collapse.md) and the
+[arithmetic-operator audit](arithmetic-operator-research.md).
 
-The Riesz branch is [frozen at its terminal reduction](zeta-riesz-terminal.md):
+The active research tests coupled integer operators against exact source,
+pole and countermodel gates before seeking an inequality. All eight Tier-1
+families have visited prototypes; none is exhausted. The latest native
+Kummer support and divisor-exchange identities give scoped obstructions,
+not an RH bound. A stronger unconditional cubic-Gauss input has been
+identified, with its exact native coefficient and model-source bridges
+still required.
+
+The Riesz branch retains its [exact terminal reduction](zeta-riesz-terminal.md):
 target-strip nonvanishing is equivalent to strip-wide prime non-coherence
 and absence of the persistent factorial transform of the actual Chebyshev
-error. No all-height premise has been proved. Finite-height radius coverage
-is maintained separately and is not all-height arithmetic progress.
+error. The [pinned OpenAI baseline](zeta-riesz-quasi-rh-discharge.md) now
+discharges this restricted endpoint in the ordinary Lean 4.34.1 root. It
+excludes `Re(s)>7/8` at every height and supplies the coupled geometric
+bound. Full RH still needs `1/2<Re(rho)<=7/8`; the independent native
+carrier floor/ceiling remain open. Native finite-height coverage is
+maintained separately.
 
 ## Archived Riesz direction and checked results
 
@@ -43,9 +55,12 @@ correlation credit, retaining the full negative credit and all low orders.
 It improves the quantitative bound on existing coverage. At uncovered
 heights the full analytic radius need not exceed the source radius, and
 Lean proves the square budget nonsummable at a nonzero source radius.
-The sufficient independent cofinal `399/5000` bound remains open. Its new
-transfer theorem handles every exposed multiplicity, so proving that bound
-would make a separate multiplicity ceiling unnecessary for this endpoint.
+The imported OpenAI baseline supplies a geometric bound for the complete
+joined quantity at every campaign height through
+`ZetaQuasiRHOpenAI.exists_coupled_geometric_bound`. The independent native
+derivation of a cofinal `399/5000` bound remains open. The transfer theorem
+handles every exposed multiplicity, so such a native bound would make a
+separate multiplicity ceiling unnecessary for this endpoint.
 The earlier independent whole-carrier ceiling remains an available open route.
 
 The current arithmetic objective is the [joined physical floor](zeta-riesz-joined-physical.md)

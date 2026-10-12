@@ -47,10 +47,10 @@ theorem xi_log_one : logDeriv riemannXi 1 =
     filter_upwards [(Complex.isOpen_re_gt 0).mem_nhds (show 0 < (1 : ℂ).re by norm_num)] with s hs
     exact xi_factor hs
   rw [(logDeriv_congr_nhds he).eq_of_nhds,
-    logDeriv_mul (f := fun s : ℂ => -s * Complex.Gammaℝ s) (g := riemannZeta₁) (1 : ℂ) (by simp [Complex.Gammaℝ_one]) (by simp)
+    logDeriv_fun_mul (f := fun s : ℂ => -s * Complex.Gammaℝ s) (g := riemannZeta₁) (1 : ℂ) (by simp [Complex.Gammaℝ_one]) (by simp)
       ((differentiableAt_id.neg).mul (differentiableAt_Gammaℝ_of_re_pos (by norm_num)))
       (differentiable_riemannZeta₁ 1),
-    logDeriv_mul (f := fun s : ℂ => -s) (g := Complex.Gammaℝ) (1 : ℂ) (by norm_num) (by simp [Complex.Gammaℝ_one])
+    logDeriv_fun_mul (f := fun s : ℂ => -s) (g := Complex.Gammaℝ) (1 : ℂ) (by norm_num) (by simp [Complex.Gammaℝ_one])
       (by fun_prop) (differentiableAt_Gammaℝ_of_re_pos (by norm_num)),
     logDeriv_Gammaℝ (by norm_num)]
   rw [Complex.digamma_one_half]

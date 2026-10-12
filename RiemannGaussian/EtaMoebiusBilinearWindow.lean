@@ -68,8 +68,8 @@ private theorem sum_window_prefix_pairs (A L : ℕ) (g : ℕ → ℕ → ℂ) :
     apply Finset.sum_congr rfl
     intro n _
     by_cases hn : n ≤ A + t
-    · simp only [hn, true_and, if_true]
-    · simp only [hn, false_and, if_false, Finset.sum_const_zero]
+    · simp only [hn, true_and, ite_true]
+    · simp only [hn, false_and, ite_false, Finset.sum_const_zero]
   calc
     _ = ∑ t ∈ Finset.range L, ∑ n ∈ Finset.Icc 1 (A + L), ∑ m ∈ Finset.Icc 1 (A + L),
         if n ≤ A + t ∧ m ≤ A + t then g n m else 0 := Finset.sum_congr rfl hp

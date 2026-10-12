@@ -118,10 +118,10 @@ theorem suzukiXiRealAxisCarrierDensity_eq_arithmetic
   by_cases hE : suzukiXiEValue (x : ℂ) = 0
   · rw [suzukiXiRealAxisCarrierDensity_eq_quarter_of_E_eq_zero x hE]
     unfold suzukiXiRealAxisArithmeticCarrierDensity
-    rw [if_pos hE]
+    rw [ite_eq_left hE]
   · rw [suzukiXiRealAxisCarrierDensity_eq_ratio_of_E_ne_zero x hE]
     unfold suzukiXiRealAxisArithmeticCarrierDensity
-    rw [if_neg hE]
+    rw [ite_eq_right hE]
 
 /-- The literal carrier density is Borel measurable. -/
 theorem measurable_suzukiXiRealAxisCarrierDensity :

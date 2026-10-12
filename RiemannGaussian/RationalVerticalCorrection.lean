@@ -112,11 +112,11 @@ private theorem profile_le_center_add_tail {σ t b : ℝ} (hσ : 0 ≤ σ) (hσ1
     profile σ (t + b * u) ≤ 8 * σ / t ^ 2 +
       if |t| / (2 * |b|) < |u| then profile σ 0 else 0 := by
   by_cases hu : |t| / (2 * |b|) < |u|
-  · rw [if_pos hu]
+  · rw [ite_eq_left hu]
     have hc := profile_le_zero hσ hσ1 (t + b * u)
     have hp : 0 ≤ 8 * σ / t ^ 2 := by positivity
     linarith
-  rw [if_neg hu, add_zero]
+  rw [ite_eq_right hu, add_zero]
   have hbu : |b * u| ≤ |t| / 2 := by
     rw [abs_mul]
     have h := mul_le_mul_of_nonneg_left (le_of_not_gt hu) (abs_nonneg b)

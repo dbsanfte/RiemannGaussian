@@ -110,13 +110,13 @@ private theorem clipped_shift_eq (x y : ℝ) :
     max (-(x+y)) 0 = max (-x) 0-(if x < 0 then y else 0)+
       (if x < 0 then max (x+y) 0 else max (-(x+y)) 0) := by
   by_cases hx : x < 0
-  · simp only [hx,if_true,max_eq_left (by linarith : 0 ≤ -x)]
+  · simp only [hx,ite_true,max_eq_left (by linarith : 0 ≤ -x)]
     by_cases hxy : 0 ≤ x+y
     · rw [max_eq_left hxy,max_eq_right (by linarith : -(x+y) ≤ 0)]
       ring
     · rw [max_eq_right (le_of_not_ge hxy),max_eq_left (by linarith : 0 ≤ -(x+y))]
       ring
-  · simp only [hx,if_false,max_eq_right (by linarith : -x ≤ 0)]
+  · simp only [hx,ite_false,max_eq_right (by linarith : -x ≤ 0)]
     ring
 
 /-- An EXACT savings identity for any signed aggregate and any direction.
@@ -219,10 +219,10 @@ theorem crossingCost_eq_zero_of_margin (K : Finset ℕ) (g : ℕ → ℕ)
   intro c hc
   have hb := abs_le.mp (h c hc)
   by_cases ht : blockTotal K g t c < 0
-  · rw [if_pos ht,max_eq_right]
+  · rw [ite_eq_left ht,max_eq_right]
     · rw [abs_of_neg ht] at hb
       linarith only [hb.2]
-  · rw [if_neg ht,max_eq_right]
+  · rw [ite_eq_right ht,max_eq_right]
     · rw [abs_of_nonneg (le_of_not_gt ht)] at hb
       linarith only [hb.1]
 

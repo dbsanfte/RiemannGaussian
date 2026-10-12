@@ -46,16 +46,16 @@ private theorem odd_prime_harmonic_nonsummable :
   intro n
   simp only [Set.indicator_apply, Set.mem_ofPred_eq]
   by_cases hp : n.Prime
-  · rw [if_pos hp]
+  · rw [ite_eq_left hp]
     rcases hp.eq_two_or_odd' with rfl | hodd
     · norm_num [show ¬Odd (2 : ℕ) by decide]
-    · rw [if_pos (show n.Prime ∧ Odd n from ⟨hp, hodd⟩)]
+    · rw [ite_eq_left (show n.Prime ∧ Odd n from ⟨hp, hodd⟩)]
       have hn1 : (1 : ℝ) < n := by exact_mod_cast hp.one_lt
       have hb : (1 : ℝ) / n ≤ 1 / ((n : ℝ) - 1) :=
         one_div_le_one_div_of_le (by linarith) (by linarith)
       exact hb.trans (le_add_of_nonneg_right (by split_ifs <;> positivity))
-  · rw [if_neg hp]
-    rw [if_neg (show ¬(n.Prime ∧ Odd n) from fun h ↦ hp h.1), zero_add]
+  · rw [ite_eq_right hp]
+    rw [ite_eq_right (show ¬(n.Prime ∧ Odd n) from fun h ↦ hp h.1), zero_add]
     split_ifs <;> positivity
 
 /-- The odd-prime harmonic normalizer diverges by the checked divergence of prime reciprocals. -/

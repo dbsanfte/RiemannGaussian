@@ -312,12 +312,12 @@ private theorem positive_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : 0 < (SquarefreeVaughanLogSource.coefficient L n).re
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart (-1) A L y N n = 0 := by
       simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
         -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
     rw [hz,add_zero]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,one_mul,max_eq_right (le_of_not_gt hp),mul_zero,zero_mul]
 
 private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
@@ -328,11 +328,11 @@ private theorem negative_part_sum_eq (A D : Finset ℕ) (L y : ℝ) (N : ℕ) :
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : (SquarefreeVaughanLogSource.coefficient L n).re < 0
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart 1 A L y N n = 0 := by
       simp only [signedPart,one_mul,max_eq_right hp.le,mul_zero,zero_mul]
     rw [hz,zero_add]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
       -(SquarefreeVaughanLogSource.coefficient L n).re ≤ 0),mul_zero,zero_mul]
 
@@ -664,7 +664,7 @@ private theorem paid_parts (E : Finset ℕ) (f : ℕ → ℂ) (N : ℕ) (L : ℝ
   · simp [h6]
   by_cases h4 : n.primeFactors.card = 4
   · simp [h4]
-  simp only [h3,h5,h6,h4,if_false,false_or,false_and,or_false,zero_add,add_zero]
+  simp only [h3,h5,h6,h4,ite_false,false_or,false_and,or_false,zero_add,add_zero]
 
 open ZetaRieszThreeSignCoverFloor (tripleRestSpent nontriple_rest_filter_eq
   tripleRestSpent_eq eventually_core_full_floor_with_triples_rejoined)

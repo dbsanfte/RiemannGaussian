@@ -226,10 +226,10 @@ theorem clipped_prime_sum_eq_signed_moments (P : Finset ℕ) (w : ℕ → ℂ) (
   apply Finset.sum_congr rfl
   intro p hp
   by_cases h : log p < H
-  · rw [if_pos h,max_eq_right (by linarith : 0 ≤ H-log p)]
+  · rw [ite_eq_left h,max_eq_right (by linarith : 0 ≤ H-log p)]
     push_cast
     ring
-  · rw [if_neg h,max_eq_left (by linarith [le_of_not_gt h] : H-log p ≤ 0),
+  · rw [ite_eq_right h,max_eq_left (by linarith [le_of_not_gt h] : H-log p ≤ 0),
       Complex.ofReal_zero,mul_zero]
 
 /-- Join the full original paired response, INCLUDING its other hinge,
@@ -747,7 +747,7 @@ theorem genuine_hinge_orbit_disjoint {u : ℝ} {N K n e : ℕ}
   rcases Finset.mem_union.mp hpaid with hpaid | hpaid
   · unfold cancelledOrbitDivisors at hpaid
     dsimp only at hpaid
-    rw [if_pos ⟨hb.1,by omega⟩] at hpaid
+    rw [ite_eq_left ⟨hb.1,by omega⟩] at hpaid
     obtain ⟨f,hf,hmatch⟩ := Finset.mem_biUnion.mp hpaid
     have hf' := (Finset.mem_filter.mp hf).1
     have hgeom := (Finset.mem_filter.mp hf).2
@@ -756,7 +756,7 @@ theorem genuine_hinge_orbit_disjoint {u : ℝ} {N K n e : ℕ}
     exact hbad hgeom.2.2.1
   · unfold ZetaRieszCrossingOrbitCancellation.affineDivisors at hpaid
     dsimp only at hpaid
-    rw [if_pos ⟨hb.1,by omega⟩] at hpaid
+    rw [ite_eq_left ⟨hb.1,by omega⟩] at hpaid
     obtain ⟨f,hf,hmatch⟩ := Finset.mem_biUnion.mp hpaid
     have hf' := (Finset.mem_filter.mp hf).1
     have hgeom := (Finset.mem_filter.mp hf).2

@@ -33,7 +33,7 @@ theorem modular_product_value (modulus x y : List Bool) :
 theorem reduced_one_value (modulus : List Bool) :
     (bitValue (divideBits [true] modulus).remainder : ZMod (bitValue modulus))=1 := by
   rw [(divideBits_correct _ _).2,ZMod.natCast_mod]
-  simp only [bitValue,bitNat,if_true,Nat.mul_zero,Nat.add_zero,Nat.cast_one]
+  simp only [bitValue,bitNat,ite_true,Nat.mul_zero,Nat.add_zero,Nat.cast_one]
 
 /-- One scalar constant-coefficient extension of the original product. -/
 theorem geometric_constant_succ {R : Type*} [CommRing R] (alpha : R) (i : ℕ) :
@@ -134,7 +134,7 @@ theorem geometricInitLoop_exact {modulus : List Bool} (hN : 0<bitValue modulus)
       rw [hi] at ht
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       refine ⟨ht.1,ht.2.1,?_⟩
       change _::(geometricInitLoop modulus alpha nextPower.division.remainder
         nextConstant.division.remainder decrement.result.bits).powers.map _=_
@@ -158,7 +158,7 @@ theorem geometricInitLoop_exact {modulus : List Bool} (hN : 0<bitValue modulus)
         | true => exact False.elim (hs hb)
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_neg hs,hn,List.range_zero,List.map_nil,Nat.add_zero]
+      simp only [dite_eq_right hs,hn,List.range_zero,List.map_nil,Nat.add_zero]
       exact ⟨hpower,hc,trivial⟩
 
 /-- A failed full counter scan means zero, including padded zero words. -/
@@ -214,7 +214,7 @@ theorem geometricInitLoop_cost_width {W : ℕ} {modulus : List Bool}
         nlinarith only [hscan,hr,hsub,hmax,hnegCost,hconstCost,hpowerCost,hW]
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_pos hs,List.length_cons]
+      simp only [dite_eq_left hs,List.length_cons]
       refine ⟨?_,ht.2.1,ht.2.2.1,?_,?_,?_⟩
       · change (nonzeroBits remaining).clock+bitCost decrement.result+negative.clock+
           nextConstant.clock+nextPower.clock+
@@ -238,7 +238,7 @@ theorem geometricInitLoop_cost_width {W : ℕ} {modulus : List Bool}
     · have hn : n=0 := by have hz := counter_zero_of_clear hs; omega
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_neg hs,hn,List.length_nil]
+      simp only [dite_eq_right hs,hn,List.length_nil]
       refine ⟨?_,hp,hc,trivial,trivial,?_⟩
       · simp only [Nat.zero_add,Nat.one_mul]
         nlinarith only [hscan,hr,hW]
@@ -492,7 +492,7 @@ theorem coefficientRunBits_exact {modulus one top terminal alpha : List Bool}
     refine ⟨(coefficientFrameBits modulus one top terminal power previous).coefficient.division.remainder::coefficients,?_,?_⟩
     · rw [coefficientRunBits]
       dsimp only
-      rw [if_pos hframe.1]
+      rw [ite_eq_left hframe.1]
       simp only [hout,Option.map_some]
     · rw [List.map_cons,hframe.2,he,List.length_cons,List.range_succ_eq_map,
         List.map_cons,List.map_map]
@@ -536,7 +536,7 @@ theorem coefficientRunBits_cost_width {W : ℕ} {modulus : List Bool}
     rw [coefficientRunBits]
     dsimp only
     by_cases hgate : frame.unit.value=true
-    · rw [if_pos hgate]
+    · rw [ite_eq_left hgate]
       dsimp only
       refine ⟨?_,?_,?_⟩
       · change frame.clock+(coefficientRunBits modulus one top terminal frame.coefficient.division.remainder powers).clock+8≤_
@@ -566,7 +566,7 @@ theorem coefficientRunBits_cost_width {W : ℕ} {modulus : List Bool}
           · subst word
             exact hf.2
           · exact hh.2 word htail
-    · rw [if_neg hgate]
+    · rw [ite_eq_right hgate]
       dsimp only
       refine ⟨?_,by simp only [List.length_cons,List.length_nil]; omega,?_⟩
       · have hframeCost : frame.clock≤6000*(W+1)^3 := hf.1
@@ -608,7 +608,7 @@ theorem geometricInitLoop_canonical {modulus : List Bool} (hN : 0<bitValue modul
         decrement.result.bits hnextPower hnextConstant rfl
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       refine ⟨ht.1,ht.2.1,?_⟩
       intro word hw
       rcases List.mem_cons.mp hw with hsame|htail
@@ -617,7 +617,7 @@ theorem geometricInitLoop_canonical {modulus : List Bool} (hN : 0<bitValue modul
       · exact ht.2.2 word htail
     · rw [geometricInitLoop]
       dsimp only
-      simp only [dif_neg hs]
+      simp only [dite_eq_right hs]
       exact ⟨hp,hc,by intro word hw; cases hw⟩
 
 /-- Full paid modular updates preserve exact physical state widths. -/
@@ -642,11 +642,11 @@ theorem geometricInitLoop_width_exact {modulus : List Bool} (hN : 0<bitValue mod
         decrement.result.bits (modMulBits_width hN) (modMulBits_width hN) rfl
       rw [geometricInitLoop]
       dsimp only
-      simp only [dif_pos hs]
+      simp only [dite_eq_left hs]
       exact ht
     · rw [geometricInitLoop]
       dsimp only
-      simp only [dif_neg hs]
+      simp only [dite_eq_right hs]
       exact ⟨hp,hc⟩
 
 /-- Entire actual coefficient source, with one initial normalization. -/

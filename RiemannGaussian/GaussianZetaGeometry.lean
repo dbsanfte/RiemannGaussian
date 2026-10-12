@@ -513,7 +513,7 @@ theorem eventually_maximalZetaPacket_add_externalSum_negative
             (zetaSpectralCoordinate ρ.1).im
             (zetaSpectralCoordinate σ.1.1).re
             (zetaSpectralCoordinate σ.1.1).im) := by
-    convert hrelativeAll.subtype (fun σ => σ ∉ targetSet) using 1 <;> rfl
+    convert hrelativeAll.subtype (fun σ => σ ∉ targetSet) using 1; rfl
   simpa only [targetSet] using
     (eventually_offAxisPacketContribution_add_tsum_weightedSingle_negative_at_fixedCenter
       (ι := {σ : NontrivialZetaZero // σ ∉ targetSet})

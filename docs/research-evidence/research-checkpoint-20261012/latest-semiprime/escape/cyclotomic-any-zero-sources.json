@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-08",
+  "report": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+    "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+    "lines": 270
+  },
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+      "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-sources.json",
+      "sha256": "6f0a79e44848d4fd93e42d9fabcc152ba344d6bf76641a92c5f5652bcf1c059a"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/review/hensel-fourier-independent-review.json",
+      "sha256": "3a4d4b293290c0a1d7f900c37296ed69f36766ae1db5decd648d88b0ae6a6f19"
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+      "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082"
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information-sources.json",
+      "sha256": "b119a66a95a36e18b58b6f7b2bdf7d31f288139e07cb759717e3b6ee6e0c3d75"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/mask-norm-gcd-information-independent-review.json",
+      "sha256": "2bc94749848f3eb0d6f769eac48ee2b3c09bd9ad74205564c7af6a1a454ee51f"
+    },
+    {
+      "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+      "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0"
+    },
+    {
+      "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support.md",
+      "sha256": "b48a1419c82689eff91bed7ed09a5d4486c6fee7ab01367909c9879be6b3181a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientCentering.lean",
+      "sha256": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25"
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+      "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813"
+    }
+  ],
+  "scope": "Classical actual-family high auxiliary Frobenius order; scarce public cyclic field factors; orthogonal-selector, universally correct nondegenerate linear ANY-merger, and complete-common-axis bounded-degree payload obstructions. Exact source-specific carrier Norm(U\u2212x) preserves ANY with nearlinear carrier acquisition, but original complete long scalar remains unpaid. No arbitrary scalar complexity claim or new native proof.",
+  "additional_deletion": "O(M^5.990), below retained current soft M^5.994 loss; ord_m(P),ord_m(Q)>ceil(M^.96) at every first-K candidate.",
+  "primary_integer_multiplication": {
+    "url": "https://annals.math.princeton.edu/2021/193-2/p04",
+    "freshly_verified_utc": "2026-10-08",
+    "statement": "Official primary abstract gives an unconditional O(n log n) bit algorithm on binary multitape Turing machines. Only that general multiplication result is used for the explicitly derived packed polynomial product tree."
+  },
+  "previous_mask_norm_not_reproved": "Frozen I2/I6 are context for the new ANY repair. All new obstruction arguments are factor counting, kernel covering and degree-D component root counts."
+}

@@ -261,8 +261,8 @@ theorem coreRow_add_overflow (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     · simp [rowAtom,hz]
     have hc := row_mem_core_iff j hj hu hU hL hg hd hz
     by_cases hk : (p*(b*d)).primeFactors.card < dyadicPrimeCount j
-    · rw [if_pos (hc.mpr hk),if_neg (by omega),add_zero]
-    · rw [if_neg (fun h => hk (hc.mp h)),if_pos (by omega),zero_add]
+    · rw [ite_eq_left (hc.mpr hk),ite_eq_right (by omega),add_zero]
+    · rw [ite_eq_right (fun h => hk (hc.mp h)),ite_eq_left (by omega),zero_add]
   rw [hrows]
   simp only [rowAtom]
   ring
@@ -526,20 +526,20 @@ theorem sum_maskedRows_eq_partial (B : Finset (ℕ×ℕ)) (M X : ℕ×ℕ → �
     intro d hd
     by_cases hs : sieve (pb.1*pb.2).primeFactors d=0
     · simp [rowAtom,hs]
-    rw [if_pos hs,rowAtom_eq_incidenceWeight A y (hg pb hpb) hd hs]
+    rw [ite_eq_left hs,rowAtom_eq_incidenceWeight A y (hg pb hpb) hd hs]
   rw [hrows,sum_rows_eq_incidences B M X hg f,sum_incidences_eq_fibers]
   rw [Complex.re_sum,Finset.sum_filter]
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hk : χ n
-  · simp only [f,if_pos hk]
+  · simp only [f,ite_eq_left hk]
     have he : ZetaRieszPrimeEndpoint.largestPrime n*(n/ZetaRieszPrimeEndpoint.largestPrime n)=n := by
       obtain ⟨v,hv,hnv⟩ := Finset.mem_image.mp hn
       have ho := incidence_owner hg hv
       rw [← hnv,← ho.2.2]
       simpa only [mul_comm v.2.1 v.2.2] using ho.2.1
     exact sum_incidenceWeight_eq_partial A N n L y _ he
-  · simp only [f,if_neg hk,Finset.sum_const_zero]
+  · simp only [f,ite_eq_right hk,Finset.sum_const_zero]
 
 /-- The literal high-count row sum is the original factorial kernel
 times a partial divisor coefficient, on its original product labels.
@@ -972,8 +972,8 @@ theorem coreConvolution_eq_remaining_rows (B : Finset (ℕ×ℕ)) (M X : ℕ×�
         apply Finset.sum_congr rfl
         intro d _
         by_cases hk : pb.1*(pb.2*d) ∈ coreBand u N (dyadicPrimeCount j)
-        · simp only [N] at hk ⊢; simp only [if_pos hk]
-        · simp only [N] at hk ⊢; simp only [if_neg hk]
+        · simp only [N] at hk ⊢; simp only [ite_eq_left hk]
+        · simp only [N] at hk ⊢; simp only [ite_eq_right hk]
       · congr 1
         apply Finset.sum_congr
         · ext n; simp [S,N]
@@ -1208,8 +1208,8 @@ theorem coreRow_add_overflow_of_geometry (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     · simp [rowAtom,hz]
     have hc := row_mem_core_iff_of_geometry j hj hu hU hL hg hd hz
     by_cases hk : (p*(b*d)).primeFactors.card < dyadicPrimeCount j
-    · rw [if_pos (hc.mpr hk),if_neg (by omega),add_zero]
-    · rw [if_neg (fun h => hk (hc.mp h)),if_pos (by omega),zero_add]
+    · rw [ite_eq_left (hc.mpr hk),ite_eq_right (by omega),add_zero]
+    · rw [ite_eq_right (fun h => hk (hc.mp h)),ite_eq_left (by omega),zero_add]
   rw [hrows]
   simp only [rowAtom]
   ring
@@ -1256,20 +1256,20 @@ theorem sum_maskedRows_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M X : ℕ
     intro d hd
     by_cases hs : sieve (pb.1*pb.2).primeFactors d=0
     · simp [rowAtom,hs]
-    rw [if_pos hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
+    rw [ite_eq_left hs,rowAtom_eq_incidenceWeight_of_geometry A y (hg pb hpb) hd hs]
   rw [hrows,sum_rows_eq_incidences B M X hg f,sum_incidences_eq_fibers]
   rw [Complex.re_sum,Finset.sum_filter]
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hk : χ n
-  · simp only [f,if_pos hk]
+  · simp only [f,ite_eq_left hk]
     have he : ZetaRieszPrimeEndpoint.largestPrime n*(n/ZetaRieszPrimeEndpoint.largestPrime n)=n := by
       obtain ⟨v,hv,hnv⟩ := Finset.mem_image.mp hn
       have ho := incidence_owner hg hv
       rw [← hnv,← ho.2.2]
       simpa only [mul_comm v.2.1 v.2.2] using ho.2.1
     exact sum_incidenceWeight_eq_partial A N n L y _ he
-  · simp only [f,if_neg hk,Finset.sum_const_zero]
+  · simp only [f,ite_eq_right hk,Finset.sum_const_zero]
 
 theorem sum_overflow_eq_partial_of_geometry (B : Finset (ℕ×ℕ)) (M X : ℕ×ℕ → ℕ)
     (u y : ℝ) (j : ℕ) (ℒ : ℝ)

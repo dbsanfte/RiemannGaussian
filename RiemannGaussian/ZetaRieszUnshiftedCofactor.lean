@@ -91,7 +91,7 @@ theorem orderResponse_bound (T : Finset ℕ)
     obtain ⟨hs,ha1,hp⟩ := hT a ha
     have he : boundaryCoefficient 0 L a = (VaughanLogAverage.riesz L a : ℂ) := by
       unfold boundaryCoefficient
-      rw [if_pos ⟨hs,by omega,hp,by simpa using hs.ne_zero⟩]
+      rw [ite_eq_left ⟨hs,by omega,hp,by simpa using hs.ne_zero⟩]
     rw [allocationKernel_eq hs ha1,mul_left_comm,norm_mul,Complex.norm_real,
       Real.norm_eq_abs,abs_of_nonneg (share_nonneg N j a)]
     apply (mul_le_of_le_one_left (norm_nonneg _) (share_le_one hs ha1 N j)).trans

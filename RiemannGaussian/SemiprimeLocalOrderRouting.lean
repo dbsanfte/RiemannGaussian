@@ -282,7 +282,7 @@ theorem refineBase_semiprime {p q B k : ℕ} (hp : p.Prime) (hq : q.Prime)
     (hlarge : (2*B)^2<orderOf (ZMod.unitOfCoprime k hc)) :
     GoodRoute p q B (refineBase (p*q) B k) := by
   let g := ZMod.unitOfCoprime k hc
-  rw [refineBase, dif_pos hc]
+  rw [refineBase, dite_eq_left hc]
   change GoodRoute p q B
     (match recoverShort g (2*B) with
     | some d => .factor d
@@ -299,10 +299,10 @@ theorem refineBase_semiprime {p q B k : ℕ} (hp : p.Prime) (hq : q.Prime)
     have horiginal := failed_original_short_forces_long hp hq hpq g
       (by omega) hlarge hs
     by_cases hraw : g^(p*q-1)=1
-    · rw [if_pos hraw]
+    · rw [ite_eq_left hraw]
       exact ⟨hc, hraw, horiginal, SemiprimeCommonOrder.kernel_global_order_common
         hp hq hpq g hraw⟩
-    · rw [if_neg hraw]
+    · rw [ite_eq_right hraw]
       cases hprojection : SemiprimeStagedSeed.checkedProjection g B with
       | some d => exact SemiprimeStagedSeed.checkedProjection_sound g hprojection
       | none =>

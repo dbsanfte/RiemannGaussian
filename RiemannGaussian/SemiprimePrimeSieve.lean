@@ -180,17 +180,17 @@ theorem firstGap_eq_gapSpec (candidate count : ℕ) (products : List ℕ)
       have hord := List.pairwise_cons.mp hordered
       rw [firstGap]
       by_cases hy : y<candidate
-      · rw [if_pos hy,firstGap_eq_gapSpec candidate (count+1) ys hord.2]
+      · rw [ite_eq_left hy,firstGap_eq_gapSpec candidate (count+1) ys hord.2]
         exact (gapSpec_skip_below hy).symm
-      · rw [if_neg hy]
+      · rw [ite_eq_right hy]
         by_cases he : y=candidate
-        · rw [if_pos he,firstGap_eq_gapSpec (candidate+1) count ys hord.2]
+        · rw [ite_eq_left he,firstGap_eq_gapSpec (candidate+1) count ys hord.2]
           subst y
           unfold gapSpec
           rw [List.range'_succ,List.find?_cons]
           simp only [List.mem_cons_self,not_true_eq_false,decide_false]
           exact (gapSpec_skip_below (Nat.lt_succ_self candidate)).symm
-        · rw [if_neg he]
+        · rw [ite_eq_right he]
           have hn : candidate∉y::ys := by
             intro hm
             rcases List.mem_cons.mp hm with hm|hm
@@ -387,7 +387,7 @@ theorem compareProductBits_correct (a b c d : List Bool) :
       bitValue a*bitValue b≤bitValue c*bitValue d := by
   have hs : (subBits (mulBits c d).bits (mulBits a b).bits false).borrow=true ↔
       bitValue c*bitValue d<bitValue a*bitValue b := by
-    simpa only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero,mulBits_correct] using
+    simpa only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero,mulBits_correct] using
       subBits_borrow_iff (mulBits c d).bits (mulBits a b).bits false
   have hf : (subBits (mulBits c d).bits (mulBits a b).bits false).borrow=false ↔
       bitValue a*bitValue b≤bitValue c*bitValue d := by

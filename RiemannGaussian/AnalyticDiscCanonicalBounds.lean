@@ -76,7 +76,7 @@ theorem divisor_sphere_eq_zero (hf : AnalyticOnNhd ℂ f (closedBall 0 R))
     rw [han.meromorphicOn.divisor_apply hz, ho]
     rfl
   · change (if MeromorphicOn f (sphere 0 R) ∧ z ∈ sphere 0 R then _ else 0) = 0
-    rw [if_neg (fun h ↦ hz h.2)]
+    rw [ite_eq_right (fun h ↦ hz h.2)]
 
 /-- Removing the entire interior divisor preserves the boundary norm
 exactly. -/

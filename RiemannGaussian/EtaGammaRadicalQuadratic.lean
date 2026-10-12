@@ -67,7 +67,7 @@ private theorem norm_gcd_factor_le_one (rho : NontrivialZetaZero) {g : ℕ} (hg 
     have he : (-2 * rho.1).re = -2 * rho.1.re := by simp [Complex.mul_re]
     rw [he]
     linarith [NontrivialZetaZero.zero_lt_re rho]
-  exact mul_le_one₀ (by nlinarith [norm_nonneg (μ g : ℂ)]) (by positivity) hp
+  exact (fun {a b : ℝ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (by nlinarith [norm_nonneg (μ g : ℂ)]) (by positivity) hp
 
 private theorem norm_scaled_radicalTail_le (rho : NontrivialZetaZero)
     {A : ℝ} (hA : 0 < A) {U : ℕ} (hU : 8 * A ≤ (U : ℝ) ^ 2)

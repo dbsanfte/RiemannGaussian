@@ -124,6 +124,7 @@ theorem integrable_leadingCurrent_fullTwoHeat_prod_of_le_volume
       (pairedEtaTopPrefixFiniteEnergyFactoredAdjacentMomentKernel rho N z.1 : ℂ) *
       pairedEtaFullTwoHeatKernel a h phi psi z.1.1 z.1.2 z.2)
       (((pairedEtaFiniteLogMeasure (N + 2)).prod (pairedEtaFiniteLogMeasure (N + 2))).prod ν) := by
+  have : SigmaFinite ν := Measure.sigmaFinite_of_le volume hν
   obtain ⟨hhead, hadj⟩ := integrable_leadingCurrent_fullTwoHeat_prod rho N ha hh hphi hpsi
   exact ⟨Integrable.mono_measure hhead (Measure.prod_mono le_rfl hν),
     Integrable.mono_measure hadj (Measure.prod_mono le_rfl hν)⟩

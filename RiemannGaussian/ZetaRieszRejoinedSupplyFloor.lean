@@ -252,7 +252,7 @@ theorem eventually_joined_floor_with_growing_counts {u y : ℝ} (hu : 1/2 < u)
     Finset.filter_eq_self.mpr hhigh
   dsimp only at hb
   rw [hfilter] at hb
-  simp only [Finset.sum_congr rfl (fun n hn => if_pos (hhigh n hn))] at hb
+  simp only [Finset.sum_congr rfl (fun n hn => ite_eq_left (hhigh n hn))] at hb
   change u^(N+1)*(W+G) ≤ ((u : ℂ)^(N+1)*∑ n ∈ H, f n).re at hb
   rw [← Complex.ofReal_pow,Complex.re_ofReal_mul] at hb
   change u^(N+1)*((∑ n ∈ S\(Ys ∪ Ts ∪ B), f n).re+

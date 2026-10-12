@@ -443,7 +443,7 @@ theorem centralCost_le_radialGrowth {E u L : ℝ} (hE : 0 ≤ E) (hu : 0 ≤ u)
       unfold primeCost jointCost
       apply Finset.sum_le_sum
       intro p hp
-      simpa only [rotate,ite_mul,one_mul,zero_mul,Finset.sum_ite_eq,hp,if_true] using hone p hp
+      simpa only [rotate,ite_mul,one_mul,zero_mul,Finset.sum_ite_eq,hp,ite_true] using hone p hp
     exact hs.trans (Finset.sum_le_sum_of_subset_of_nonneg hP
       (fun p _ _ => by dsimp [f,radial]; positivity))
   have hrad p : (∑ j ∈ Finset.range (4*N), f j p) ≤

@@ -62,7 +62,7 @@ theorem summable_card_divisors_sq_mul_rpow_neg {p : ℝ} (hp : 1 < p) :
   rw [LSeries.norm_term_eq]
   by_cases hn : n = 0
   · simp [hn]
-  · simp only [if_neg hn, Complex.norm_real, Real.norm_of_nonneg (sq_nonneg _),
+  · simp only [ite_eq_right hn, Complex.norm_real, Real.norm_of_nonneg (sq_nonneg _),
       Complex.ofReal_re, Real.rpow_neg (Nat.cast_nonneg n), div_eq_mul_inv]
 
 /-- The genuine summable divisor-square Dirichlet mass, available as a finite constant whenever its exponent is greater than one. -/

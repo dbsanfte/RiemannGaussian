@@ -66,7 +66,7 @@ theorem logMask_prime (D : ℕ) {p m : ℕ} (hp : p.Prime) (hm : 0 < m)
   have hd0 : (d : ℝ) ≠ 0 := by exact_mod_cast (Nat.pos_of_mem_divisors hd).ne'
   have hp0 : (p : ℝ) ≠ 0 := by exact_mod_cast hp.ne_zero
   by_cases h : d ≤ D / p
-  · simp only [if_pos h, Nat.cast_mul, Real.log_mul hp0 hd0, Complex.ofReal_add]
+  · simp only [ite_eq_left h, Nat.cast_mul, Real.log_mul hp0 hd0, Complex.ofReal_add]
     ring
   · simp [h]
 

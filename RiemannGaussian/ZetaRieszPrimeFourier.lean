@@ -27,7 +27,7 @@ theorem sum_moebius_eq_zero {n : ℕ} (h1 : n ≠ 1) :
   have h := congrArg (fun f : ArithmeticFunction ℂ => f n)
     (ArithmeticFunction.coe_moebius_mul_coe_zeta (R := ℂ))
   simpa only [ArithmeticFunction.coe_mul_zeta_apply, ArithmeticFunction.intCoe_apply,
-    ArithmeticFunction.one_apply, if_neg h1] using h
+    ArithmeticFunction.one_apply, ite_eq_right h1] using h
 
 /-- The complete squarefree composite measure also cancels its signed
 logarithmic moment. Prime powers are excluded by actual arithmetic support. -/
@@ -79,8 +79,8 @@ private theorem featureArithmetic_multiplicative (s : ℂ) :
   rw [ArithmeticFunction.IsMultiplicative.iff_ne_zero]
   refine ⟨by simp [featureArithmetic, zetaPrimeFeature], ?_⟩
   intro m n hm hn _hcop
-  simp only [featureArithmetic, ArithmeticFunction.coe_mk, if_neg hm, if_neg hn,
-    if_neg (Nat.mul_ne_zero hm hn)]
+  simp only [featureArithmetic, ArithmeticFunction.coe_mk, ite_eq_right hm, ite_eq_right hn,
+    ite_eq_right (Nat.mul_ne_zero hm hn)]
   exact CoprimeEulerPhase.feature_mul s (Nat.pos_of_ne_zero hm) (Nat.pos_of_ne_zero hn)
 
 /-- The full divisor Fourier character factors exactly over the prime
@@ -95,13 +95,13 @@ theorem divisorCharacter_eq_primeProduct {n : ℕ} (hn : Squarefree n) (xi : ℝ
     apply Finset.prod_congr rfl
     intro p hp
     simp only [featureArithmetic, ArithmeticFunction.coe_mk,
-      if_neg (Nat.prime_of_mem_primeFactors hp).ne_zero]
+      ite_eq_right (Nat.prime_of_mem_primeFactors hp).ne_zero]
   rw [hl] at h
   rw [h, finiteCharacter]
   apply Finset.sum_congr rfl
   intro d hd
   simp only [featureArithmetic, ArithmeticFunction.coe_mk,
-    if_neg (Nat.pos_of_mem_divisors hd).ne']
+    ite_eq_right (Nat.pos_of_mem_divisors hd).ne']
   congr 1
   unfold zetaPrimeFeature
   congr 1
@@ -169,7 +169,7 @@ theorem coefficient_eq_primePair_integral (L : ℝ) (n : ℕ) :
     · by_cases h1 : n = 1
       · subst n
         simp [SquarefreeVaughanLogSource.coefficient]
-      · rw [if_pos ⟨hn, h1, hp⟩, SquarefreeVaughanLogSource.coefficient, if_pos ⟨hn, hp⟩]
+      · rw [ite_eq_left ⟨hn, h1, hp⟩, SquarefreeVaughanLogSource.coefficient, ite_eq_left ⟨hn, hp⟩]
         push_cast
         rw [riesz_eq_primePair_integral L hn h1 hp]
         ring
@@ -208,9 +208,9 @@ theorem sum_original_eq_primePair_integral (T : Finset ℕ) (f : ℕ → ℂ) (L
   intro n _hn
   rw [coefficient_eq_primePair_integral]
   by_cases h : Squarefree n ∧ n ≠ 1 ∧ ¬ n.Prime
-  · rw [if_pos h, if_pos h, integral_const_mul]
+  · rw [ite_eq_left h, ite_eq_left h, integral_const_mul]
     ring
-  · rw [if_neg h, if_neg h, zero_mul]
+  · rw [ite_eq_right h, ite_eq_right h, zero_mul]
 
 /-- The original factorial-filtered band is exactly the signed
 prime-factor integral. The physical length and base order stay fixed. -/

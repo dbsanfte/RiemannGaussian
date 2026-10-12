@@ -134,8 +134,8 @@ theorem tendsto_actual_band_sub_adaptiveComposite (P : Polynomial ℂ) (y : ℝ)
         adaptiveCompositeResponse P N y (SquarefreeVaughanLogSource.length u N) u))
       atTop (nhds 0) := by
   by_cases h : u < Real.exp (-(1 / 2 : ℝ))
-  · simpa only [adaptiveCompositeResponse, if_pos h] using tendsto_actual_band_sub_compositeResidual P y hu h
-  · simpa only [adaptiveCompositeResponse, if_neg h] using
+  · simpa only [adaptiveCompositeResponse, ite_eq_left h] using tendsto_actual_band_sub_compositeResidual P y hu h
+  · simpa only [adaptiveCompositeResponse, ite_eq_right h] using
       ZetaRieszSmoothCofactor.tendsto_actual_band_sub_optimizedRoughResponse P y hu hu1
 
 /-- The exact original hypothetical-zero normalization on the adaptive

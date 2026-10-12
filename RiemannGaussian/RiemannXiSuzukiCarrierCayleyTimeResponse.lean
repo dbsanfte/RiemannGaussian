@@ -83,9 +83,9 @@ theorem hasDerivAt_suzukiXiUpperRestrictedSpectralPWindow_time
   apply HasDerivAt.fun_sum
   intro rho _hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     exact hasDerivAt_zetaSuzukiSpectralPSummand_time t z rho
-  · simp only [if_neg hupper]
+  · simp only [ite_eq_right hupper]
     exact hasDerivAt_const (x := t) (c := (0 : ℂ))
 
 /-- Time differentiation passes through every finite lower restricted
@@ -100,9 +100,9 @@ theorem hasDerivAt_suzukiXiLowerRestrictedSpectralPWindow_time
   apply HasDerivAt.fun_sum
   intro rho _hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     exact hasDerivAt_zetaSuzukiSpectralPSummand_time t z rho
-  · simp only [if_neg hlower]
+  · simp only [ite_eq_right hlower]
     exact hasDerivAt_const (x := t) (c := (0 : ℂ))
 
 /-- The finite signed off-axis Suzuki response is the upper restricted
@@ -164,9 +164,9 @@ theorem suzukiXiUpperRestrictedSpectralPTimeDerivativeWindow_zero_time
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     rw [zetaSuzukiSpectralPTimeDerivativeSummand_zero_time]
-  · simp only [if_neg hupper, mul_zero]
+  · simp only [ite_eq_right hupper, mul_zero]
 
 /-- The initial lower restricted `P_t` velocity is `-i` times the finite
 lower Cauchy divisor window. -/
@@ -180,9 +180,9 @@ theorem suzukiXiLowerRestrictedSpectralPTimeDerivativeWindow_zero_time
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     rw [zetaSuzukiSpectralPTimeDerivativeSummand_zero_time]
-  · simp only [if_neg hlower, mul_zero]
+  · simp only [ite_eq_right hlower, mul_zero]
 
 /-- On a nonnegative symmetric window, the finite Blaschke logarithmic
 derivative is the upper Cauchy part minus the lower Cauchy part. -/

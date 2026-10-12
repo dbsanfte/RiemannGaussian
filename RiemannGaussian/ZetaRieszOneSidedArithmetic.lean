@@ -66,7 +66,7 @@ theorem phaseCost_le_antichain {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
 theorem phaseCost_eq_zero_of_aligned {L y : ℝ} {n : ℕ} (hn : LinearClass L n)
     (hphase : 0 ≤ linearCoefficient L n * Real.cos (y * Real.log n)) :
     phaseCost L y n = 0 := by
-  rw [phaseCost, if_pos hn, max_eq_left (by nlinarith)]
+  rw [phaseCost, ite_eq_left hn, max_eq_left (by nlinarith)]
 
 /-- Below the four-prime radial sign change, all nonpositive cosines are free in the lower bound. -/
 theorem four_phaseCost_zero_below {L y : ℝ} {n : ℕ} (hL : 0 < L)
@@ -103,10 +103,10 @@ theorem four_phaseCost_le_quarter {L : ℝ} (hL : 0 < L) (y : ℝ) {n : ℕ}
   have hA : |linearCoefficient L n| ≤ (1 / 4 : ℝ) * middleLayerAllowance L n := by
     rw [linearCoefficient_four hn hk, abs_mul, abs_of_nonneg ht]
     apply (mul_le_mul_of_nonneg_left hgap ht).trans_eq
-    rw [middleLayerAllowance, if_pos ⟨hn.1, by omega⟩, hk]
+    rw [middleLayerAllowance, ite_eq_left ⟨hn.1, by omega⟩, hk]
     norm_num
     ring
-  rw [phaseCost, if_pos hn]
+  rw [phaseCost, ite_eq_left hn]
   apply max_le (by positivity [middleLayerAllowance_nonneg hL n])
   calc
     _ ≤ |linearCoefficient L n * Real.cos (y * Real.log n)| := by
@@ -236,13 +236,13 @@ theorem budget_le_antichain_sub_four {u : ℝ} (hu : 0 ≤ u) (y : ℝ) (j : ℕ
       weight A N n * B n -
         (if FourSavingClass L n then (3 / 4 : ℝ) * (weight A N n * B n) else 0) := by
     by_cases hn : FourSavingClass L n
-    · rw [if_pos hn]
+    · rw [ite_eq_left hn]
       have h := mul_le_mul_of_nonneg_left
         (four_phaseCost_le_quarter hL y hn.1 hn.2.1 hn.2.2.1 hn.2.2.2)
         (weight_nonneg A N n)
       dsimp only [B]
       nlinarith
-    · rw [if_neg hn, sub_zero]
+    · rw [ite_eq_right hn, sub_zero]
       exact mul_le_mul_of_nonneg_left (phaseCost_le_antichain hL y n) (weight_nonneg A N n)
   have hs := Finset.sum_le_sum (s := S) (fun n _ => hp n)
   rw [Finset.sum_sub_distrib] at hs

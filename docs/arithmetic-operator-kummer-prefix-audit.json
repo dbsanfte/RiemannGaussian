@@ -1,0 +1,212 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorKummerPrefixAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 105,
+    "theoremsIncludingGeneratedHelpers": 97,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "unchangedMinimumDependencyCompiledIntoLocalCache": true,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "all nonempty literal prefixes: LCM quotient, full sharp valuation with actual power/Lucas witness, exact complete Mangoldt divisor tail; empty/unit/end-passed heads explicit",
+    "actualOffLineZeroResponse": "fixed positive prefix kills logarithmic source; proportional n/3 prefix retains every actual zero multiplicity with factor 1+2^(-rho), nonzero for Re(rho)>0",
+    "densitySeparation": "analytic density germ at one; centered actual source unchanged and cannot be norm-paid or analytically regularized at a genuine right-half zero",
+    "collapseAudit": "whole moving-mask join is exactly a scalar Mangoldt divisor kernel; same incidence join holds for any complex array; retained actual prime delta tests rule out free outer-weight bound; controls not granted actual binomial/Gamma data",
+    "independentSignedEstimate": "none; scoped prefix-observation shortcut closed instead of refinement",
+    "endpointTransfer": "no open RH arithmetic premise discharged"
+  },
+  "scope": {
+    "prefix": "gcd choose(n,k), 1<=k<=H",
+    "exactQuotient": "n/gcd(n,lcm(1,...,H)) for 1<=H<=n",
+    "exactValuation": "max(v_p(n)-floor(log_p H),0)",
+    "literalPowerWitness": "p^min(v_p(n),floor(log_p H))",
+    "distinctPrimeWitnessesAssumedCoincident": false,
+    "exactLogTail": "sum_(d|n,d>H) Lambda(d)",
+    "everyPrimePowerRetained": true,
+    "emptyPrefixGcd": "0",
+    "unitEndpointGcd": "1",
+    "proportionalCutoff": "sum_(d|n,d>floor(n/J)) f(d)=sum_(e|n,e<J) f(n/e), n>0,J>0",
+    "exactThirdPrefixAllLabels": "Lambda(n)+1_(2|n)*Lambda(n/2)-log(2)*1_(n=2)",
+    "EulerDomain": "Re(s)>1 only",
+    "fixedResponse": "-zeta_prime(s)-zeta(s)*sum_(1<=d<=H) Lambda(d)*d^(-s)",
+    "fixedSourceBlindnessAtAllActualZerosProved": true,
+    "proportionalResponse": "(1+2^(-s))*(-logDeriv zeta(s))-log(2)*2^(-s)",
+    "actualAllMultiplicityResidue": "-m_rho*(1+2^(-rho))",
+    "nonzeroMultiplierDomain": "Re(rho)>0",
+    "quantitativeMultiplierLower": "1-exp(-Re(s)*log(2))",
+    "exposureRequiredForResidue": false,
+    "nativeCutoffAsymptoticInferred": false,
+    "wholeHeightAndCofactorPhaseRetained": true,
+    "classicIdentityClaimedNovel": false,
+    "countermodelsGrantedActualBinomialGammaData": false,
+    "nonprefixCorridorsRuledOut": false,
+    "newCoupledSignedEstimatesRuledOut": false,
+    "noGo": "prefix observation alone either annihilates source (fixed cutoff) or retains the old scalar Mangoldt/cofactor source (proportional example); exact identity supplies no independent signed cancellation",
+    "remaining": "non-prefix corridors excluding power witnesses, simultaneous different-prime constraints or a genuinely new prescribed coupled arithmetic estimate with actual source gate"
+  },
+  "literature": {
+    "JorisOestreicherSteinig1985": {
+      "url": "https://www.sciencedirect.com/science/article/pii/0022314X85900137",
+      "access": "publisher text unavailable (403); exact prefix formula proved directly, not imported"
+    },
+    "McTague2018": {
+      "url": "https://arxiv.org/html/1510.06696v5",
+      "access": "primary text read; references consecutive sets and gives DIFFERENT progression/digit-sum theorem; no axioms imported"
+    }
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "integerRows": 256,
+    "exactPrefixesIncludingUnitEndpoint": 33152,
+    "allProperPowersRetained": true,
+    "exactLogPrimeBasisTailChecks": 33152,
+    "exactRelativeCutoffCofactorChecks": 2012,
+    "symbolicRationalMovingMaskLedgers": 16,
+    "rationalMasksAreNotActualHeightPhases": true,
+    "floatingCandidateSourceFactors": [
+      {
+        "height": 54,
+        "candidateRealPart": 0.5,
+        "multiplierNorm": 1.6921266835965465,
+        "provedLowerBoundTarget": 0.2928932188134524
+      },
+      {
+        "height": 54,
+        "candidateRealPart": 0.625,
+        "multiplierNorm": 1.6341949509867533,
+        "provedLowerBoundTarget": 0.3515802226744952
+      },
+      {
+        "height": 54,
+        "candidateRealPart": 0.75,
+        "multiplierNorm": 1.581120282009539,
+        "provedLowerBoundTarget": 0.4053964424986395
+      },
+      {
+        "height": 54,
+        "candidateRealPart": 0.875,
+        "multiplierNorm": 1.5324960584310192,
+        "provedLowerBoundTarget": 0.45474613366737116
+      },
+      {
+        "height": 65,
+        "candidateRealPart": 0.5,
+        "multiplierNorm": 1.4751884345708597,
+        "provedLowerBoundTarget": 0.2928932188134524
+      },
+      {
+        "height": 65,
+        "candidateRealPart": 0.625,
+        "multiplierNorm": 1.4284638052483234,
+        "provedLowerBoundTarget": 0.3515802226744952
+      },
+      {
+        "height": 65,
+        "candidateRealPart": 0.75,
+        "multiplierNorm": 1.386416784439278,
+        "provedLowerBoundTarget": 0.4053964424986395
+      },
+      {
+        "height": 65,
+        "candidateRealPart": 0.875,
+        "multiplierNorm": 1.3485950260161899,
+        "provedLowerBoundTarget": 0.45474613366737116
+      },
+      {
+        "height": 100,
+        "candidateRealPart": 0.5,
+        "multiplierNorm": 1.6988564899729637,
+        "provedLowerBoundTarget": 0.2928932188134524
+      },
+      {
+        "height": 100,
+        "candidateRealPart": 0.625,
+        "multiplierNorm": 1.6405851929990567,
+        "provedLowerBoundTarget": 0.3515802226744952
+      },
+      {
+        "height": 100,
+        "candidateRealPart": 0.75,
+        "multiplierNorm": 1.5871771033896043,
+        "provedLowerBoundTarget": 0.4053964424986395
+      },
+      {
+        "height": 100,
+        "candidateRealPart": 0.875,
+        "multiplierNorm": 1.5382266750046383,
+        "provedLowerBoundTarget": 0.45474613366737116
+      }
+    ],
+    "newZeroAsymptoticOrRHClaimed": false,
+    "scope": "all literal nonempty prefixes; log GCD equals truncated full Mangoldt divisor sum"
+  },
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-kummer-minimum-audit.json",
+    "all20PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "00e1748ecfe64cfe569c095e2c8140f9e07f3cf92700f116715efa0722a92d73",
+        "current": "42bad88658b9419621b4766cd36814e22ef4304b19ec981c331f65f890314b57"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "8de5f08cdb869c5a12e9f89169c3e4891a08bdab62339fef2598825f12beae96",
+        "current": "04194462830a50319e7acf85826f1c3e56d07960102edf431793964597edb7b5"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorKummerPrefixAudit.lean": "4110863b9d054d4a095c7b0dcb79187847a8a9162f13a28cd107e804c9b3dc56",
+    "scripts/probe_arithmetic_operator_kummer_prefix.py": "1a4ee4ce28dd51fc9ca21ee243d3cb74f7adc82007580a90cd398adfa0c2858d",
+    "scripts/ArithmeticOperatorKummerMinimumAudit.lean": "a4d63cbdb2e6ecfd88b3095d270cac274e0a7073940411222edfee819387ac65",
+    "RiemannGaussian/ArithmeticOperatorGramAudit.lean": "326b31eeb50cde636af9dad3c5d7d23ec9dcac47f0f9953c5e64f443d595191b",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+    "RiemannGaussian/ZetaPrimeLogMoments.lean": "b5591348519602d11221d4d27fd043bd04c8b439d37f3bfc8498ea7245546887",
+    "RiemannGaussian/ZetaSignedPoleControl.lean": "9bc3c95456be9e771c2c0fa666556ed4c645117dab08a265c72e9bd28ff7f61b",
+    "RiemannGaussian/ZetaFiniteDirichlet.lean": "5e79ac38204ca04577c8aa96a2ca703090f991a609c7e105de577aafad69ff54",
+    "RiemannGaussian/ZetaPrimeGram.lean": "dd8077f2d8bd04227f9aec2f313c5a032d612910d709caf2e8d5bd7ce5ccbe96",
+    "RiemannGaussian/ZetaPrimeMomentEnvelope.lean": "fa365028df97a9587baad8cafd84f787df047d9330ff4e9b183b1a475a7fe07e",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Basic.lean": "3abe93f2b0d22bf844405a917c97a6677a02d39df76429280df4b5ad0dfc6b0d",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Factorization/Basic.lean": "fbab02352450a903c8bd690dfbae471d2c1a834ff077ef474317fa4f9c192edb",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/Chebyshev.lean": "074796f7737b6d08e00f07240e4436349e99a9e033cfc4128b96327bdcff8625",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean": "0eaa8af946dc26bf04adb966c84e808318e7ec61d050a8ce7c981d480e0c2ea1",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "42bad88658b9419621b4766cd36814e22ef4304b19ec981c331f65f890314b57",
+    "docs/arithmetic-operator-research.md": "04194462830a50319e7acf85826f1c3e56d07960102edf431793964597edb7b5",
+    ".lake/arithmetic-operator-kummer-prefix/check.log": "785e4ca4448becf411aa915e0498667b2dce69b0dfde10b3cecf67ef89c46dd9",
+    ".lake/arithmetic-operator-kummer-prefix/axioms.json": "f39d1ad29e978750ea4008251a41de26558250e598a58a59c6a0349803ebf57b",
+    ".lake/arithmetic-operator-kummer-prefix/probe.json": "f121170fa8274d57d2a99e45729f371f843301fc4eeb8fe38d992bbcaf0797cf",
+    ".lake/arithmetic-operator-kummer-prefix/prior-pin-check-before-doc-update.json": "67fd0b9b41c90b446f362262c51ec5f9b15c977006c5b759acca851fc2325bf7"
+  }
+}

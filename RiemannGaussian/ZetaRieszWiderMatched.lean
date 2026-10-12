@@ -50,14 +50,14 @@ theorem eventually_uniform_finite_phase (rho : NontrivialZetaZero)
     filter_upwards [eventually_ge_atTop 2] with N hN
     change completionOrder N (k N)
     by_cases hf : completionOrder N (f N)
-    · simpa only [k, if_pos hf] using hf
-    · simpa only [k, if_neg hf] using completionOrder_half N hN
+    · simpa only [k, ite_eq_left hf] using hf
+    · simpa only [k, ite_eq_right hf] using completionOrder_half N hN
   have h := ((tendsto_wider_weighted_finite rho hrho hexposed huh k hk).add_const
     (analyticZetaZeroMultiplicity rho : ℂ)).norm
   simp only [neg_add_cancel, norm_zero] at h
   filter_upwards [h.eventually (eventually_lt_nhds hε)] with N hN
   intro hf
-  simpa only [weightedFinite, k, if_pos hf] using hN.le
+  simpa only [weightedFinite, k, ite_eq_left hf] using hN.le
 
 
 

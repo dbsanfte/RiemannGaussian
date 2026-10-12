@@ -39,11 +39,11 @@ def pairedEtaMoebiusTrialHeadCoordinate (d : ℕ) (t : ℝ) : ℝ :=
 theorem pairedEtaTranslatedColour_eq_head_ite {a t : ℝ} (ha : 0 ≤ a) (ht : t ≤ Real.log 2) :
     pairedEtaTranslatedColour a t = if a < t then 1 else 0 := by
   by_cases hat : a < t
-  · rw [if_pos hat, pairedEtaTranslatedColour, pairedEtaLogIndicator_eq_cellColour (n := 0)]
+  · rw [ite_eq_left hat, pairedEtaTranslatedColour, pairedEtaLogIndicator_eq_cellColour (n := 0)]
     · simp [pairedEtaLogCellColour]
     · simp only [pairedEtaLogCell, Nat.cast_zero, zero_add, Real.log_one, mem_Ioc]
       constructor <;> linarith
-  · rw [if_neg hat, pairedEtaTranslatedColour, pairedEtaLogIndicator_eq_zero_of_nonpos (by linarith)]
+  · rw [ite_eq_right hat, pairedEtaTranslatedColour, pairedEtaLogIndicator_eq_zero_of_nonpos (by linarith)]
 
 private theorem gridPoint_lt_iff_floor {d : ℕ} (j : Fin d) (t : ℝ) :
     pairedEtaMoebiusTrialGridPoint d (j.1 + 1) < t ↔

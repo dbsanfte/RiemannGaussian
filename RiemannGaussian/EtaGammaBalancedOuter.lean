@@ -56,7 +56,7 @@ theorem norm_unitBand_le_one (L n : ℕ) : ‖unitBand L n‖ ≤ 1 := by
 /-- The added coefficients vanish on the entire unchanged prefix. -/
 theorem unitBand_apply_of_le {L n : ℕ} (hn : n ≤ L) : unitBand L n = 0 := by
   change (if L < n ∧ n ≤ 2 * L then (1 : ℂ) else 0) = 0
-  rw [if_neg (by omega)]
+  rw [ite_eq_right (by omega)]
 
 /-- The mathematically specified outer coefficients keep the full original prefix. -/
 def balancedOuter (L : ℕ) : ArithmeticFunction ℂ :=
@@ -67,7 +67,7 @@ theorem balancedOuter_apply_of_le {L n : ℕ} (hn : n ≤ L) : balancedOuter L n
   change shortMoebius L n + (balancingConstant L : ℂ) * unitBand L n = _
   rw [unitBand_apply_of_le hn, mul_zero, add_zero]
   change (if n ≤ L then (μ n : ℂ) else 0) = _
-  rw [if_pos hn]
+  rw [ite_eq_left hn]
 
 /-- The complete harmonic moment of the short factor is the original real harmonic prefix. -/
 theorem harmonic_short (L : ℕ) :
@@ -78,14 +78,14 @@ theorem harmonic_short (L : ℕ) :
     have hn1 := (Finset.mem_Icc.mp hmem).1
     have hLn : ¬ n ≤ L := by simp only [Finset.mem_Icc] at hn; omega
     change (if n ≤ L then (μ n : ℂ) else 0) / _ = 0
-    rw [if_neg hLn, zero_div])
+    rw [ite_eq_right hLn, zero_div])
   rw [← he]
   unfold moebiusHarmonicPrefix
   push_cast
   apply Finset.sum_congr rfl
   intro n hn
   change (if n ≤ L then (μ n : ℂ) else 0) / (n : ℂ) = _
-  rw [if_pos (Finset.mem_Icc.mp hn).2]
+  rw [ite_eq_left (Finset.mem_Icc.mp hn).2]
 
 /-- The added arithmetic interval has exactly its positive harmonic mass. -/
 theorem harmonic_unitBand (L : ℕ) :
@@ -98,14 +98,14 @@ theorem harmonic_unitBand (L : ℕ) :
     intro n _ hn
     have hh : ¬ (L < n ∧ n ≤ 2 * L) := by simpa only [Finset.mem_Ioc] using hn
     change (if L < n ∧ n ≤ 2 * L then (1 : ℂ) else 0) / _ = 0
-    rw [if_neg hh, zero_div])
+    rw [ite_eq_right hh, zero_div])
   rw [← he]
   unfold harmonicBlock
   push_cast
   apply Finset.sum_congr rfl
   intro n hn
   change (if L < n ∧ n ≤ 2 * L then (1 : ℂ) else 0) / _ = _
-  rw [if_pos (Finset.mem_Ioc.mp hn)]
+  rw [ite_eq_left (Finset.mem_Ioc.mp hn)]
 
 /-- The actual balanced outer coefficients annihilate their entire harmonic moment exactly. -/
 theorem harmonic_balancedOuter_eq_zero {L : ℕ} (hL : 1 ≤ L) :
@@ -157,7 +157,7 @@ theorem hasSum_unitBand_gamma (rho : NontrivialZetaZero) (A : ℝ) (L : ℕ) :
     intro n hn
     have hh : ¬ (L < n + 1 ∧ n + 1 ≤ 2 * L) := by simp only [Finset.mem_Ico] at hn; omega
     change (if L < n + 1 ∧ n + 1 ≤ 2 * L then (1 : ℂ) else 0) * _ = 0
-    rw [if_neg hh, zero_mul]
+    rw [ite_eq_right hh, zero_mul]
   have hs : HasSum (fun n : ℕ ↦ unitBand L (n + 1) * gammaCarrier rho A (n + 1))
       (∑ n ∈ Finset.Ico L (2 * L), unitBand L (n + 1) * gammaCarrier rho A (n + 1)) :=
     hasSum_sum_of_ne_finset_zero hf
@@ -176,7 +176,7 @@ theorem hasSum_unitBand_gamma (rho : NontrivialZetaZero) (A : ℝ) (L : ℕ) :
   · intro n hn
     have hh : L < n + 1 ∧ n + 1 ≤ 2 * L := by have := Finset.mem_Ico.mp hn; omega
     change (if L < n + 1 ∧ n + 1 ≤ 2 * L then (1 : ℂ) else 0) * _ = _
-    rw [if_pos hh, one_mul]
+    rw [ite_eq_left hh, one_mul]
 
 /-- The added interval has a small explicit allowance at the actual zero. -/
 theorem norm_unitBandLow_le (rho : NontrivialZetaZero) {A : ℝ} (hA : 0 < A) (L : ℕ) :

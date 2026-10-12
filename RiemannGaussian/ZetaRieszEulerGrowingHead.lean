@@ -42,8 +42,8 @@ theorem norm_headCoefficient_le (S T : Finset ℕ) {s : ℂ} {sigma : ℝ} (hs :
   unfold headCoefficient headCoefficientCeiling
   simp only [norm_mul, norm_prod, norm_neg]
   apply mul_le_mul
-  · exact Finset.prod_le_prod (fun _ _ => norm_nonneg _) (fun p _hp => hb p)
-  · exact Finset.prod_le_prod (fun _ _ => norm_nonneg _) (fun p _hp =>
+  · exact Finset.prod_le_prod₀ (fun _ _ => norm_nonneg _) (fun p _hp => hb p)
+  · exact Finset.prod_le_prod₀ (fun _ _ => norm_nonneg _) (fun p _hp =>
       (norm_add_le _ _).trans (by simpa only [norm_one] using add_le_add le_rfl (hb p)))
   · positivity
   · positivity
@@ -176,7 +176,7 @@ theorem head_product_le_three_pow_card (S : Finset ℕ) {sigma : ℝ} (hsigma : 
     (∏ p ∈ S, (1 + 2 * Real.exp (-sigma * Real.log p))) ≤ (3 : ℝ) ^ S.card := by
   calc
     _ ≤ ∏ _p ∈ S, (3 : ℝ) := by
-      apply Finset.prod_le_prod (fun _ _ => by positivity)
+      apply Finset.prod_le_prod₀ (fun _ _ => by positivity)
       intro p _hp
       have hp : Real.exp (-sigma * Real.log p) ≤ 1 :=
         Real.exp_le_one_iff.mpr (mul_nonpos_of_nonpos_of_nonneg (neg_nonpos.mpr hsigma)

@@ -130,7 +130,7 @@ theorem coefficient_saturated_prime {p a : ℕ} (hp : p.Prime) (hpa : ¬p ∣ a)
     SquarefreeVaughanLogSource.coefficient L (p*a) =
       ((Real.log (p*a : ℕ)/L *
         kernel a.primeFactors (fun q => Real.log q) (L-Real.log p) : ℝ) : ℂ) := by
-  rw [SquarefreeVaughanLogSource.coefficient, if_pos hn,
+  rw [SquarefreeVaughanLogSource.coefficient, ite_eq_left hn,
     ZetaSquarefreeRieszWindows.riesz_prime_mul L hp hpa,
     ZetaRieszFixedCofactor.riesz_eq_zero_of_saturated ha ha1 hap hL,
     kernel_primeFactors ha]

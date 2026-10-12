@@ -154,15 +154,15 @@ theorem zetaUpperReflectedPairGaussianSummand_eq_boundaryHeatResidue
     zetaUpperReflectedPairGaussianSummand x tau rho =
       riemannXiUpperHyperbolicBoundaryHeatResidue x tau rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperReflectedPairGaussianSummand, if_pos hupper,
+  · rw [zetaUpperReflectedPairGaussianSummand, ite_eq_left hupper,
       riemannXiUpperHyperbolicBoundaryHeatResidue,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper,
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper,
       reflectedPairGaussianKernel_conjugatePartner]
     push_cast
     ring
-  · rw [zetaUpperReflectedPairGaussianSummand, if_neg hupper,
+  · rw [zetaUpperReflectedPairGaussianSummand, ite_eq_right hupper,
       riemannXiUpperHyperbolicBoundaryHeatResidue,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
     rfl
 
 /-- The complete matched reflected-pair statistic is summable at positive
@@ -248,9 +248,9 @@ theorem zetaUpperBoundaryGaussianTransverseWeight_nonneg
     (tau : ℝ) (rho : NontrivialZetaZero) :
     0 ≤ zetaUpperBoundaryGaussianTransverseWeight tau rho := by
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBoundaryGaussianTransverseWeight, if_pos hupper]
+  · rw [zetaUpperBoundaryGaussianTransverseWeight, ite_eq_left hupper]
     positivity
-  · rw [zetaUpperBoundaryGaussianTransverseWeight, if_neg hupper]
+  · rw [zetaUpperBoundaryGaussianTransverseWeight, ite_eq_right hupper]
 
 /-- The zeta-indexed half-Gaussian feature whose squared norm is one boundary
 heat summand. -/
@@ -270,12 +270,12 @@ theorem normSq_zetaUpperBoundaryGaussianFeature
     Real.mul_self_sqrt
       (zetaUpperBoundaryGaussianTransverseWeight_nonneg tau rho)]
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · rw [zetaUpperBoundaryGaussianTransverseWeight, if_pos hupper,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper,
+  · rw [zetaUpperBoundaryGaussianTransverseWeight, ite_eq_left hupper,
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper,
       boundaryHeatKernel_eq_transverse_mul_normSq_halfGaussian]
     ring
-  · rw [zetaUpperBoundaryGaussianTransverseWeight, if_neg hupper,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+  · rw [zetaUpperBoundaryGaussianTransverseWeight, ite_eq_right hupper,
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
     simp
 
 /-- The boundary Gaussian feature is square-summable at every positive

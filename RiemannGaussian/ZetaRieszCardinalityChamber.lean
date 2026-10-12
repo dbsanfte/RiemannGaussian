@@ -75,7 +75,7 @@ theorem kernel_chamber {ι : Type*} [DecidableEq ι] (S : Finset ι)
       if j ≤ m then (-1 : ℝ)^j*((S.card.choose j : ℝ)*d-
         (incidence S.card j : ℝ)*(∑ i ∈ S, x i)) else 0 := by
     by_cases h : j ≤ m
-    · rw [if_pos h]
+    · rw [ite_eq_left h]
       have hf (A : Finset ι) (hA : A ∈ S.powersetCard j) :
           (-1 : ℝ)^A.card*max 0 (d-∑ i ∈ A, x i) =
           (-1 : ℝ)^j*(d-∑ i ∈ A, x i) := by
@@ -84,7 +84,7 @@ theorem kernel_chamber {ι : Type*} [DecidableEq ι] (S : Finset ι)
       rw [Finset.sum_congr rfl hf, ← Finset.mul_sum, Finset.sum_sub_distrib,
         sum_subsets_sum_all]
       simp [Finset.sum_const, nsmul_eq_mul]
-    · rw [if_neg h]
+    · rw [ite_eq_right h]
       apply Finset.sum_eq_zero
       intro A hA
       have ha := Finset.mem_powersetCard.mp hA

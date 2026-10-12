@@ -105,27 +105,27 @@ theorem marked_allocation_cons {ι : Type*} [DecidableEq ι] (S : Finset ι) (p 
       have hdp : d p = 0 := by
         by_contra h
         exact hp (hdm.2 p h)
-      simp only [addRightEmbedding_apply, Pi.add_apply, if_true, hdp, zero_add]
+      simp only [addRightEmbedding_apply, Pi.add_apply, ite_true, hdp, zero_add]
       split_ifs with hE
       · unfold allocationWeight
         rw [Nat.multinomial_cons, Finset.prod_cons]
-        simp only [Pi.add_apply, if_true, hdp, zero_add]
+        simp only [Pi.add_apply, ite_true, hdp, zero_add]
         have hsum : (∑ q ∈ S, (d q + if q = p then b.1 else 0)) = b.2 := by
-          simpa only [Finset.sum_add_distrib, Finset.sum_ite_eq', hp, if_false, add_zero] using hdm.1
+          simpa only [Finset.sum_add_distrib, Finset.sum_ite_eq', hp, ite_false, add_zero] using hdm.1
         have hm : Nat.multinomial S (d + fun q => if q = p then b.1 else 0) = Nat.multinomial S d := by
           apply Nat.multinomial_congr
           intro q hq
-          simp only [Pi.add_apply, if_neg (ne_of_mem_of_not_mem hq hp), add_zero]
+          simp only [Pi.add_apply, ite_eq_right (ne_of_mem_of_not_mem hq hp), add_zero]
         have hprod : (∏ q ∈ S, x q ^ (d q + if q = p then b.1 else 0)) = ∏ q ∈ S, x q ^ d q := by
           apply Finset.prod_congr rfl
           intro q hq
-          rw [if_neg (ne_of_mem_of_not_mem hq hp), add_zero]
+          rw [ite_eq_right (ne_of_mem_of_not_mem hq hp), add_zero]
         rw [hsum, hbM, hm, hprod, Nat.cast_mul]
         ring
       · rfl
     _ = _ := by
       by_cases hE : E b.1
-      · simp only [if_pos hE, ← Finset.mul_sum]
+      · simp only [ite_eq_left hE, ← Finset.mul_sum]
         congr 1
         exact (Finset.sum_pow_eq_sum_piAntidiag S x b.2).symm
       · simp [hE]

@@ -212,7 +212,7 @@ theorem positiveMoments_map {R S : Type*} [CommRing R] [CommRing S]
   · subst r
     rw [PowerSeries.coeff_map]
     simp [positiveMoments]
-  · simp only [PowerSeries.coeff_map,positiveMoments,PowerSeries.coeff_mk,if_neg hr,map_pow]
+  · simp only [PowerSeries.coeff_map,positiveMoments,PowerSeries.coeff_mk,ite_eq_right hr,map_pow]
 
 /-- The centered grid sum contains EVERY original normalized label. -/
 theorem original_grid_labelled {N : ℕ} (g : (ZMod N)ˣ) (m w J : ℕ) :
@@ -222,7 +222,7 @@ theorem original_grid_labelled {N : ℕ} (g : (ZMod N)ˣ) (m w J : ℕ) :
   simp only [centredGridSeries,PowerSeries.coeff_mk,map_sum,positiveMoments]
   by_cases hr : r=0
   · simp [hr]
-  · simp only [if_neg hr,gridMoment,Finset.sum_product]
+  · simp only [ite_eq_right hr,gridMoment,Finset.sum_product]
 
 /-- Original normalized grid points are units before ANY reduction. -/
 theorem original_point_unit {N : ℕ} (g : (ZMod N)ˣ) (m w j k : ℕ) :

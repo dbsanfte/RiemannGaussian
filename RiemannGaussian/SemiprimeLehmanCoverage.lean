@@ -412,7 +412,7 @@ theorem recoverWeighted_succeeds {p q a b : ℕ} (hp : p.Prime) (hq : q.Prime)
   have hqProper : SemiprimeGroupSelection.ProperDivisor (p*q) q := by
     exact ⟨hq.one_lt, by nlinarith [hp.one_lt], dvd_mul_left q p⟩
   unfold recoverWeighted
-  rw [if_pos hs, discriminantRoot_weighted]
+  rw [ite_eq_left hs, discriminantRoot_weighted]
   by_cases hh : b*p ≤ a*q
   · rw [Nat.max_eq_left hh]
     exact ⟨q, by simp [SemiprimeGroupSelection.checkedSignal, hgp, hqProper.1, hqProper.2.1]⟩
@@ -560,7 +560,7 @@ theorem factorByCover_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
     ∃ d, factorByCover (p*q) B = some d := by
   by_cases hsmall : B < 4
   · obtain ⟨d, hd⟩ := trial_scan_semiprime hp hq
-    exact ⟨d, by simpa only [factorByCover, if_pos hsmall] using hd⟩
+    exact ⟨d, by simpa only [factorByCover, ite_eq_left hsmall] using hd⟩
   · have hB : 4 ≤ B := by omega
     by_cases hsquare : (p*q).sqrt^2 = p*q
     · have hn : 4 ≤ p*q := by nlinarith [hp.two_le, hq.two_le]
@@ -577,7 +577,7 @@ theorem factorByCover_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
         exact hsquare hs
       have hqB := SemiprimeGroupCoverage.larger_factor_above_prefix hB hpq hlower
       cases hc : SemiprimeGroupSelection.checkedSignal (p*q) (SemiprimeGroupCoverage.prefixProduct B) with
-      | some d => exact ⟨d, by simp only [factorByCover, if_neg hsmall, if_neg hsquare, hc]⟩
+      | some d => exact ⟨d, by simp only [factorByCover, ite_eq_right hsmall, ite_eq_right hsquare, hc]⟩
       | none =>
         have hpB : B^2 < p := by
           by_contra hn
@@ -598,7 +598,7 @@ theorem factorByCover_semiprime {p q B : ℕ} (hp : p.Prime) (hq : q.Prime)
             (SemiprimeGroupCoverage.prime_not_dvd_factorial_above hq _ hqB)
           exact hpc.mul_left hqc
         obtain ⟨d, hd⟩ := factorAfterPrefix_succeeds hp hq hstrict (by omega) hbudget hclear
-        exact ⟨d, by simpa only [factorByCover, if_neg hsmall, if_neg hsquare, hc] using hd⟩
+        exact ⟨d, by simpa only [factorByCover, ite_eq_right hsmall, ite_eq_right hsquare, hc] using hd⟩
 
 private theorem sixth_bound_exists (N : ℕ) : ∃ B : ℕ, N ≤ B^6 :=
   ⟨N+1, (Nat.le_succ N).trans (Nat.le_pow (by decide : 0 < 6))⟩

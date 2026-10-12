@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCrossUnitCancellation.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 44,
+    "theoremsIncludingGeneratedHelpers": 37,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "focusedDependencyCacheReused": "scripts/ArithmeticOperatorLucasUnitAudit.lean",
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "complete signed paired row equals final unit endpoint plus native p/q quotient crossings; both actual upper-digit residues retained",
+    "actualOffLineZeroResponse": "failed: the literal balanced ordinary-prime pair packet is source-normalized o(1) for every beta>1/2, uniformly over moving height and bounded outside masks; no nonlinear zero-source inference",
+    "densitySeparation": "density is also source-small at beta=1; no useful source remains to center",
+    "collapseAudit": "not a route to refine after actual source-gate failure; free/smooth/generalized controls not granted actual binomial data; internal masks explicitly outside theorem",
+    "independentSignedEstimate": "exact cancellation bound proved but source-blind; no independent RH input",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "rows": "D positive odd with p and q actual primes dividing D",
+    "allPositivePairPrimePowerLengthsRetained": true,
+    "bothUpperDigitFactorsRetained": true,
+    "unitEndpointRetained": true,
+    "exactCrossings": "i<D/2, p divides 2i+1 or q divides 2i+1",
+    "characterParity": "chi(-1)*eta(-1)=-1; actual quadratic p=3 mod 4, q=1 mod 4",
+    "finiteNormBound": "1/D+2/p+2/q",
+    "terminalPacket": "ordinary prime pairs only, p and q in [2^J,2^(J+1)), with actual Lambda(p)Lambda(q)*(pq)^(-iy)",
+    "outsideMaskBound": "norm<=1; arbitrary complex and moving with J",
+    "heightsMayMove": true,
+    "terminalNormBound": "20*(J+1)^2*2^J",
+    "sourceNormalization": "(4^J)^(-beta), every beta>1/2",
+    "sourceLimit": "0",
+    "nonzeroSourceLimitRefuted": true,
+    "terminalProperPowerPopulationClaimed": false,
+    "internalFactorialOrPhaseMasksPaid": false,
+    "sameParitySourceGateClosed": false,
+    "globalMatrixPSDClaimed": false,
+    "controlsGrantedActualBinomialGammaMangoldtData": false,
+    "noGo": "Complete opposite-parity bounded outside-mask packet kills the sought off-line source along with density; stop this scoped detector.",
+    "remaining": "same-parity coupled rows and prescribed inside-row weights, requiring actual source and independent estimate gates"
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "arithmetic": "integer Lucas upper digits, native quotient sweeps, exact rational traces",
+    "maxPrime": 251,
+    "ordinaryPrimeCount": 53,
+    "checks": {
+      "ordinaryPairs": 1378,
+      "oppositeParityChecks": 696,
+      "directIntegerRows": 45,
+      "properPowerRows": 74,
+      "properPowerDirectRows": 20
+    },
+    "sameParityTraceSigns": {
+      "positive": 386,
+      "zero": 62,
+      "negative": 234
+    },
+    "negativeSameParityExample": {
+      "p": 19,
+      "q": 7,
+      "trace": "-13/133"
+    },
+    "internalMaskCounterexample": {
+      "p": 59,
+      "q": 41,
+      "unmasked": "8/2419",
+      "boundedInternalMaskTrace": "36/59",
+      "outsideMaskEnvelope": "201/2419"
+    },
+    "floatingHeightSamplesAreNotZeroSourceProofs": true,
+    "finiteHeightSamples": [
+      {
+        "J": 2,
+        "height": 54,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.35792246492341856,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 720
+      },
+      {
+        "J": 2,
+        "height": 65,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.35792246492341856,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 720
+      },
+      {
+        "J": 2,
+        "height": 100,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.3579224649234185,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 720
+      },
+      {
+        "J": 3,
+        "height": 54,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.17204139690137726,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 2560
+      },
+      {
+        "J": 3,
+        "height": 65,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.17204139690137726,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 2560
+      },
+      {
+        "J": 3,
+        "height": 100,
+        "ordinaryPrimes": 2,
+        "oppositeNorm": 0.17204139690137726,
+        "sameParityNorm": 0.0,
+        "oppositeCertifiedEnvelope": 2560
+      },
+      {
+        "J": 4,
+        "height": 54,
+        "ordinaryPrimes": 5,
+        "oppositeNorm": 0.05861123020612978,
+        "sameParityNorm": 0.1695675232209912,
+        "oppositeCertifiedEnvelope": 8000
+      },
+      {
+        "J": 4,
+        "height": 65,
+        "ordinaryPrimes": 5,
+        "oppositeNorm": 0.1433728622743358,
+        "sameParityNorm": 3.8898742669257906,
+        "oppositeCertifiedEnvelope": 8000
+      },
+      {
+        "J": 4,
+        "height": 100,
+        "ordinaryPrimes": 5,
+        "oppositeNorm": 0.10052417881083636,
+        "sameParityNorm": 3.2570973568539956,
+        "oppositeCertifiedEnvelope": 8000
+      },
+      {
+        "J": 5,
+        "height": 54,
+        "ordinaryPrimes": 7,
+        "oppositeNorm": 0.06965415685856907,
+        "sameParityNorm": 5.92222736790299,
+        "oppositeCertifiedEnvelope": 23040
+      },
+      {
+        "J": 5,
+        "height": 65,
+        "ordinaryPrimes": 7,
+        "oppositeNorm": 0.08682748083602305,
+        "sameParityNorm": 4.084148787875098,
+        "oppositeCertifiedEnvelope": 23040
+      },
+      {
+        "J": 5,
+        "height": 100,
+        "ordinaryPrimes": 7,
+        "oppositeNorm": 0.12465696842684368,
+        "sameParityNorm": 3.60543456187664,
+        "oppositeCertifiedEnvelope": 23040
+      },
+      {
+        "J": 6,
+        "height": 54,
+        "ordinaryPrimes": 13,
+        "oppositeNorm": 0.12787094083277825,
+        "sameParityNorm": 5.957195804964567,
+        "oppositeCertifiedEnvelope": 62720
+      },
+      {
+        "J": 6,
+        "height": 65,
+        "ordinaryPrimes": 13,
+        "oppositeNorm": 0.05086369130621819,
+        "sameParityNorm": 7.387194698391051,
+        "oppositeCertifiedEnvelope": 62720
+      },
+      {
+        "J": 6,
+        "height": 100,
+        "ordinaryPrimes": 13,
+        "oppositeNorm": 0.13032964489521276,
+        "sameParityNorm": 2.1727690258686976,
+        "oppositeCertifiedEnvelope": 62720
+      },
+      {
+        "J": 7,
+        "height": 54,
+        "ordinaryPrimes": 23,
+        "oppositeNorm": 0.1378899816969091,
+        "sameParityNorm": 10.098134266943154,
+        "oppositeCertifiedEnvelope": 163840
+      },
+      {
+        "J": 7,
+        "height": 65,
+        "ordinaryPrimes": 23,
+        "oppositeNorm": 0.10875458340467832,
+        "sameParityNorm": 5.841355333108772,
+        "oppositeCertifiedEnvelope": 163840
+      },
+      {
+        "J": 7,
+        "height": 100,
+        "ordinaryPrimes": 23,
+        "oppositeNorm": 0.06350160990441128,
+        "sameParityNorm": 6.338063738114847,
+        "oppositeCertifiedEnvelope": 163840
+      }
+    ],
+    "finiteMatrixPSDOrAsymptoticClaim": false,
+    "sameParitySourceGateOpen": true,
+    "leanScope": "complete opposite-parity rows, all common prime-power lengths; balanced terminal packet over ordinary prime pairs and bounded OUTSIDE masks only"
+  },
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-cross-unit-audit.json",
+    "all18PriorPinsMatchedBeforeDocsChanged": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "afcd74bf3a57e94142f2895513e1f77e2ddc472a472a5858cae31b1633a7e756",
+        "current": "e315304301deca1bcad1279648a5bdd31411fe06a3d34ec152bd84fbca299a22"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "27f332cb69fd3a2852b584157a66095fe68f723d1499f8a02f08b537cbe35384",
+        "current": "36eabc3168abb3ac96a5dd4978c8e4c01ff51c8ef76a94b5cbc999fe57615dbe"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorCrossUnitCancellation.lean": "e0b522d4c22f882dc1c4bf84b69ec79d0ae7f02ddcebb142799f0ba12da7f9a7",
+    "scripts/probe_arithmetic_operator_cross_cancellation.py": "09b834c5de41567ec9ae0a8a00cd3c1f4ee3d26de04bb17d1b18e7f36278edb4",
+    "scripts/ArithmeticOperatorLucasUnitAudit.lean": "c1bc0b5677a89f8a6d05225ed601ecad861c33ffa9db093035a7b7135b6bda23",
+    "RiemannGaussian/ArithmeticOperatorFloorInverseAudit.lean": "65eec48dc303c0d57e8e854596e9d71d9c4d862b21ccba8ba673c2a4e3e79383",
+    "RiemannGaussian/SuzukiCarryCorrelation.lean": "b3b24f12111b2132e3b20c47f852de5a1c07be68f1c323f61b265ba4f8b5206b",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/DirichletCharacter/Bounds.lean": "45e06e70aba5284faf091ed18a01cbf65135df0d511f3a7de5dbedc9aa68069c",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": "24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/ZModChar.lean": "900e4a4f324135a0e29994b9d95605fa10bea14c5ab34b510d1d356a80c4aeaa",
+    "AGENTS.md": "e315304301deca1bcad1279648a5bdd31411fe06a3d34ec152bd84fbca299a22",
+    "docs/arithmetic-operator-research.md": "36eabc3168abb3ac96a5dd4978c8e4c01ff51c8ef76a94b5cbc999fe57615dbe",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".lake/arithmetic-operator-cross-cancellation/check.log": "750983cbcf917be8da81c9dbbc029fec1b209ff34d6a5a79e291c2a679c1f422",
+    ".lake/arithmetic-operator-cross-cancellation/axioms.json": "e735ecba545e3cc840ced76e86da68a24a5359e530d924f28a4dde70c4ae4ef5",
+    ".lake/arithmetic-operator-cross-cancellation/probe.json": "6a5ae1266872a46d4b4fc1447375e49cd79bb600d8a0c3e85e86ff923fbccee4",
+    ".lake/arithmetic-operator-cross-cancellation/prior-pin-check-before-doc-update.json": "0b4b8c04a4c80061414ff067ada1b9dcc0565de74fe598f01236e2c1c8746bcb"
+  }
+}

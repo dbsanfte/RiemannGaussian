@@ -52,7 +52,7 @@ theorem sum_Icc_gcd_sq_div_row_le_harmonic_sq {T d : ℕ} (hd : d ∈ Finset.Icc
       have h := Finset.single_le_sum (f := fun g : ℕ ↦
         ((g : ℝ) ^ 2 / d) * (if g ∣ e then 1 / (e : ℝ) else 0))
         (fun g _ ↦ by split_ifs <;> positivity) hgm
-      simpa only [if_pos (Nat.gcd_dvd_right d e), div_eq_mul_inv, one_mul, mul_inv, mul_assoc] using h
+      simpa only [ite_eq_left (Nat.gcd_dvd_right d e), div_eq_mul_inv, one_mul, mul_inv, mul_assoc] using h
     _ = ∑ g ∈ d.divisors, ((g : ℝ) ^ 2 / d) *
         ∑ e ∈ Finset.Icc 1 T, if g ∣ e then 1 / (e : ℝ) else 0 := by
       rw [Finset.sum_comm]

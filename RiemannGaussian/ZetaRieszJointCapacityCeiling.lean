@@ -56,8 +56,8 @@ theorem interior_supply_coefficient_nonpos {M : ℕ} {L lo hi t h b y : ℝ}
       have hl := (div_le_iff₀ ht).mp hhi
       nlinarith only [hh,hl]
     exact ZetaRieszFivePrimeCells.cell_products_coefficient_nonpos ht.le hL ho hqp hsat hthree
-      (by simpa only [ZetaRieszJointPrimeCells.supplyCell,if_pos hp] using hn)
-  · simp only [ZetaRieszJointPrimeCells.supplyCell,if_neg hp,Finset.notMem_empty] at hn
+      (by simpa only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_left hp] using hn)
+  · simp only [ZetaRieszJointPrimeCells.supplyCell,ite_eq_right hp,Finset.notMem_empty] at hn
 
 /-- Independent component ceilings combine without duplicating either
 population. The entire remaining signed sum appears exactly once. -/
@@ -195,7 +195,7 @@ theorem eventually_five_core_ceiling (B : ZetaRieszCapacityCover.Box) {u h b lo 
       exact ⟨ht'.1.le,ht'.2⟩) hphase hfloor
   change (∑ n ∈ S, f y n).re ≤ _
   have hsum := hey.symm.le.trans (add_le_add (le_refl (∑ n ∈ S\D, f y n).re) hupper)
-  convert hsum using 1 <;> first | rfl | (dsimp only [C]; ring)
+  convert hsum using 1 ; first | rfl | (dsimp only [C]; ring)
 
 end
 end RiemannGaussian.ZetaRieszJointCapacityCeiling

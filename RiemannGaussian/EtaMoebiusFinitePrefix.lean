@@ -60,7 +60,7 @@ theorem pairedEtaUnpairedDirichletPrefix_eq_paired_add_endpoint (M : â„•) (s : â
     conv_lhs => rw [he]
     rw [pairedEtaUnpairedDirichletPrefix_odd]
     have ho : Odd M := Nat.odd_iff.mpr hM
-    rw [if_pos ho]
+    rw [ite_eq_left ho]
     congr 2
     exact_mod_cast he.symm
 

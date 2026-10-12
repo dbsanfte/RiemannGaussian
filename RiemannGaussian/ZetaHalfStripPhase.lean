@@ -79,7 +79,7 @@ theorem zetaPhase_halfStripCanonicalSource_add_primeWork_le {a ω : ℕ → ℝ}
         (neg_logDeriv_add_halfStripCanonicalSource_le rho hrho hx hx1) (ha k)
       dsimp only [T, halfStripCanonicalSource]
       linarith
-    · simp only [if_neg hn, add_zero]
+    · simp only [ite_eq_right hn, add_zero]
       have h := mul_le_mul_of_nonneg_left
         (neg_logDeriv_re_le_adaptive_exactPole (ω n * rho.1.im) hx hx1) (ha n)
       linarith

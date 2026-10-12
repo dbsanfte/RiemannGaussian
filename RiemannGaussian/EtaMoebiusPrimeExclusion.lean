@@ -134,9 +134,8 @@ theorem pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero
   have hm : Tendsto (fun v ↦ (pairedEtaMoebiusPrimeMixedCubicCorrelation rho p v).re) atTop (𝓝 0) := by
     convert Complex.continuous_re.continuousAt.tendsto.comp
       (pairedEtaMoebiusPrimeMixedCubicCorrelation_tendsto_zero rho hrho hp hodd) using 1
-    · ext v
-      rfl
-    · rfl
+    ext v
+    rfl
   have hz := (hm.const_mul 2).sub hu
   simp only [mul_zero, sub_zero] at hz
   convert hz using 1

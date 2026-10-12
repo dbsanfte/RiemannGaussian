@@ -9,7 +9,7 @@
   const sourceURL = n => {
     if (!n.source) return null;
     if (!n.source.project) return n.source.url;
-    if (release) return `${data.repository}/blob/${release.revision}/${n.source.path}#L${n.source.line}`;
+    if (release) return `${data.repository}/blob/${data.sourceRevision || release.revision}/${n.source.path}#L${n.source.line}`;
     return `source.html?path=${encodeURIComponent(n.source.path)}#L${n.source.line}`;
   };
   const repoURL = path => `${data.repository}/blob/${release ? release.revision : "main"}/${path}`;

@@ -153,7 +153,7 @@ theorem recoverKnownOrder_of_long {p q B m : ℕ} (hp : p.Prime) (hq : q.Prime)
   have he := sumCandidate_of_sum hpq.le (sumSignal_eq_sum hp.one_lt hq.one_lt hd hs)
   have hg : (p*q).gcd p=p := Nat.gcd_eq_right (dvd_mul_right p q)
   unfold recoverKnownOrder
-  rw [he,checkedSignal,hg,if_pos]
+  rw [he,checkedSignal,hg,ite_eq_left]
   exact ⟨hp.one_lt,by nlinarith [hp.pos,hq.one_lt]⟩
 
 /-- The public successor exponent cannot annihilate both long coprime channels. -/
@@ -648,7 +648,7 @@ keeps numerical short-source reductions out of the wrapper proof. -/
 theorem refineLong_eq_of_scan {N B k d : ℕ} (hc : k.Coprime N)
     (hs : scanPowers (projectedUnit (ZMod.unitOfCoprime k hc) B) B=some d) :
     refineLong N B k=.factor d := by
-  simp only [refineLong,dif_pos hc,hs]
+  simp only [refineLong,dite_eq_left hc,hs]
 
 /-- The public long handler either factors or retains its original
 certificate plus the newly proved coprimality facts and failed sources. -/
@@ -661,7 +661,7 @@ theorem refineLong_good {p q B k : ℕ} (hp : p.Prime) (hq : q.Prime)
   have hcore := projected_core g hdata
   have hpq := core_distinct hB h hcore
   unfold refineLong
-  rw [dif_pos hc]
+  rw [dite_eq_left hc]
   dsimp only
   cases hs : scanPowers h B with
   | some d => exact scanPowers_sound h hs
@@ -780,7 +780,7 @@ theorem transportCandidate_complete {N d : ℕ} {trace : SemiprimeKernelDescent.
     have hg : (p*q).gcd d=d := Nat.gcd_eq_right hd.2.2
     have hproper : 1<d ∧ d<p*q := ⟨hd.1,hd.2.1⟩
     refine ⟨d,?_,hd⟩
-    simp only [transportCandidate,checkedSignal,hg,if_pos hproper]
+    simp only [transportCandidate,checkedSignal,hg,ite_eq_left hproper]
   | @child p q R g h primes route trace hp hq hgood hchild ih =>
     obtain ⟨f,hf,hproper⟩ := ih hd
     obtain ⟨f',hf',hproper'⟩ :=

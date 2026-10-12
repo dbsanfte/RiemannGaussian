@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorFareyWalkAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "allDeclarationsIncludingPrivateAndGeneratedChecked": true,
+    "declarations": 157,
+    "theoremsIncludingGeneratedHelpers": 125,
+    "namespaceLinterRuns": 60,
+    "namespaces": [
+      {
+        "theoremsIncludingGeneratedHelpers": 41,
+        "namespaceLinters": 15,
+        "namespace": "RiemannGaussian.ArithmeticOperatorFareyWalkAudit",
+        "declarations": 57
+      },
+      {
+        "theoremsIncludingGeneratedHelpers": 27,
+        "namespaceLinters": 15,
+        "namespace": "RiemannGaussian.ArithmeticOperatorFareyFourierAudit",
+        "declarations": 32
+      },
+      {
+        "theoremsIncludingGeneratedHelpers": 20,
+        "namespaceLinters": 15,
+        "namespace": "RiemannGaussian.ArithmeticOperatorOrderedGapGeometry",
+        "declarations": 22
+      },
+      {
+        "theoremsIncludingGeneratedHelpers": 37,
+        "namespaceLinters": 15,
+        "namespace": "RiemannGaussian.ArithmeticOperatorOrderedGapAudit",
+        "declarations": 46
+      }
+    ],
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "stageStatus": {
+    "exactFiniteNativeIdentity": "proved",
+    "genuineActualZeroResponse": "proved for complete native triple increments, every analytic multiplicity",
+    "densityPoleSeparation": "proved as an analytic germ without deleting any zero source",
+    "collapseAudit": "identity-only finite-word class collapses to one signed inverse-Mobius kernel",
+    "independentSignedEstimate": "not supplied; stop this class",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "nativeTriplesDerivedFromActualReducedFractionAdjacency": true,
+    "successor": "N-((N+q)%r)=floor((N+q)/r)*r-q",
+    "inverseExact": true,
+    "terminalMiddleDenominatorOneExplicitlyDeleted": true,
+    "nativeTripleCount": "sum_(q<=N) phi(q)-1 for N>0",
+    "nativeTripleIncrement": "phi(n)*n^(-iy)-delta_(n=1)",
+    "convergentEulerResponse": "zeta(s+iy-1)/zeta(s+iy)-1 on Re(s)>2 only",
+    "allActualZeroMultiplicitiesRetained": true,
+    "nativeCutoffZeroAsymptoticClaimed": false,
+    "cyclicWalkDistinctFromNonwrappingTriple": true,
+    "wholeWordPullbackIncludesAllComplexMasksAndPhases": true,
+    "arbitraryFiniteOrGrowingWordLengthIncluded": true,
+    "uniformFreeInverseArrayBoundIffWholeJoinedKernelZero": true,
+    "controlsGrantedActualAdjacencyOrGammaCompatibility": false,
+    "prescribedSignedOrbitOrCoupledPrimeEstimatesExhausted": false,
+    "noGo": "At every cutoff and any finite or growing word length, the unrestricted native word-mask and pair-mask classes coincide exactly. Recurrence alone adds no new signed constraint on the inverse coefficients; an independently proved constrained orbit/prime estimate remains new input.",
+    "unrestrictedNativePairAndWordMaskClassesCoincideExactly": true
+  },
+  "regression": {
+    "scope": "finite native recurrence and signed whole-word Mobius regression",
+    "arithmetic": "exact integers and fractions; no floating point",
+    "maxCutoff": 40,
+    "nativeAdjacentPairCases": 6979,
+    "nativeThreeFractionCases": 6939,
+    "signedJoinedWordCases": 640,
+    "wordLengths": [
+      0,
+      1,
+      3,
+      9
+    ],
+    "signedMasks": 4,
+    "checksPassed": true,
+    "asymptoticArithmeticEstimate": false,
+    "proofInput": false
+  },
+  "compatibilityFix": {
+    "file": "RiemannGaussian/ArithmeticOperatorFareyFourierAudit.lean",
+    "theorem": "response_density_zero",
+    "statementChanged": false,
+    "fix": "Replace obsolete extra convert/funext branches by convert ht using 1 followed by simp, satisfying the native sequence-focus linter.",
+    "beforeThisAgentFixSha256": "f3ab28d0e434915adfa8afe09e44523b0269dd3f4e35bde7cd4b129f2ac318aa",
+    "currentSha256": "2d8e3545ed4aa3cfd2a81a6824e04f3271403e64252a015b54f504bdf66bbe11"
+  },
+  "historicalAudit": {
+    "path": "docs/arithmetic-operator-audit.json",
+    "preserved": true,
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "modules": 86,
+    "currentSourcePinMismatches": 43,
+    "fullNativeReauditPerformed": false
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorFareyWalkAudit.lean": "ac31a2734690ee4211fff600a0ae7309cb215786f54905b4451ff683a64ab5b5",
+    "scripts/probe_arithmetic_operator_farey_walk.py": "cdfac4cdf47b78dd7ef0c2553d99c7cdcd1f7937f675a42e003f8fc2e3adb0e7",
+    "RiemannGaussian/ArithmeticOperatorFareyFourierAudit.lean": "2d8e3545ed4aa3cfd2a81a6824e04f3271403e64252a015b54f504bdf66bbe11",
+    "RiemannGaussian/ArithmeticOperatorOrderedGapGeometry.lean": "67337a8e0b2d52b2a046409b6808edaeed4b4cd52801cf296ef3b9640cadbd1d",
+    "RiemannGaussian/ArithmeticOperatorOrderedGapAudit.lean": "f8f504f00e61413fe44fef281141cb7caad723cc8b652485574cf65774a9c0a2",
+    "docs/arithmetic-operator-research.md": "19708909c02810a9df0d928ee914c12a9d96ed6425573cfcd504eb2a97a4bb43",
+    "AGENTS.md": "3cc6e3bb96063c97e148a8d2228fcf326dd98d07df98e4f2f00a592fbcf8bc2e",
+    "docs/arithmetic-operator-audit.json": "ae6d247e2e8d74e455b81f7209541546aec6dddb0f5f3817af1862721de28853",
+    ".lake/arithmetic-operator-native-walk/axioms.json": "1cda05bcc7e4ac91308f19fb6938aec3b334b215cdb3140fa52de6385649e45c",
+    ".lake/arithmetic-operator-native-walk/check.log": "c85390bdd82d08d1caf3f8c4d183974484ebc8f2aada50b7e26f768aebb25ca0",
+    ".lake/arithmetic-operator-native-walk/dependency-build.log": "8287c7406af044bf39ab77d1b3e063cf65255071d35f41200b1e12a957ef3fbd",
+    ".lake/arithmetic-operator-native-walk/probe.json": "da29d81a6595a1a20186c052f24ca4a16a53998d3a7579e0b6de16412d952606",
+    ".lake/arithmetic-operator-native-walk/farey-fourier-before.sha256": "52f45492eb49f43ce57587b9d285739d49fed29bfd47bf720b3e03c8dfe21a2f",
+    ".lake/arithmetic-operator-native-walk/historical-pin-comparison.json": "de290a632e87406ac0a055f20eefd7e90de06d1bf68c9a3ffe3bd87f6f26b2b6"
+  }
+}

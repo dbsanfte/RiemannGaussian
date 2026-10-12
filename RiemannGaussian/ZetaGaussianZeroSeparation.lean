@@ -107,7 +107,7 @@ theorem compensated_lower {q t : ℝ} (hq : 1 ≤ q) (ρ : NontrivialZetaZero)
       (nearPoisson_lower hη hcenter ρ hn)
   have hreserve := mul_nonneg (factor_bounds hq).1 hp
   simp only [compensated, nearSource, nearRestrict, show ‖center (shift q) t - ρ.1‖ <
-    halfWidth 9 (shift q) from hn, if_true, Complex.mul_re, Complex.natCast_re,
+    halfWidth 9 (shift q) from hn, ite_true, Complex.mul_re, Complex.natCast_re,
     Complex.natCast_im, zero_mul, sub_zero]
   change 80000 * q * (analyticZetaZeroMultiplicity ρ : ℝ) ≤
     (analyticZetaZeroMultiplicity ρ : ℝ) * _ + factor 9 (gaussianScale q) (shift q) * _

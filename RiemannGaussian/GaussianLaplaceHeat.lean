@@ -53,7 +53,7 @@ theorem norm_gaussianLaplaceHeatJoint (f : ℝ → ℂ) (a tau sigma y u : ℝ) 
 
 /-- Absolute integrability holds on the full product as soon as the
 original signal is integrable on the chosen real Laplace line. -/
-theorem integrable_gaussianLaplaceHeatJoint {μ : Measure ℝ}
+theorem integrable_gaussianLaplaceHeatJoint {μ : Measure ℝ} [SFinite μ]
     {f : ℝ → ℂ} {sigma tau : ℝ} (htau : 0 < tau)
     (hf : Integrable (fun u => f u * Complex.exp (-(sigma : ℂ) * (u : ℂ))) μ)
     (a : ℝ) :

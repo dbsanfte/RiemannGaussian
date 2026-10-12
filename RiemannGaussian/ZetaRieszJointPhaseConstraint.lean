@@ -50,7 +50,7 @@ theorem sum_signCharacter_zero {F P : Finset ℕ} (h : (F∩P).Nonempty) :
   rw [← Finset.prod_one_add]
   obtain ⟨p,hp⟩ := h
   obtain ⟨hpF,hpP⟩ := Finset.mem_inter.mp hp
-  exact Finset.prod_eq_zero hpF (by simp only [if_pos hpP]; norm_num)
+  exact Finset.prod_eq_zero hpF (by simp only [ite_eq_left hpP]; norm_num)
 
 /-- ALL signed amplitudes are joined before averaging. No count price,
 norm, absolute moment or density replacement is introduced. -/
@@ -92,7 +92,7 @@ private theorem central_not_head_owner {u : ℝ} {j n p : ℕ}
   have hhi := (mem_restLabels.mp (mem_centralLabels.mp hn).1).2
   have hlo := (ZetaRieszSmallTagNativeFloor.owners_data howner).2.2.1
   have hmax : p≤largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   have hlog := log_le_log
     (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos : (0 : ℝ)<p)
@@ -156,9 +156,9 @@ theorem head_pair_sign_one {u : ℝ} {j p q : ℕ} {V : Finset ℕ}
   unfold signCharacter
   exact Finset.prod_eq_one (fun r hr => by
     rcases Finset.mem_insert.mp hr with hr | hr
-    · subst r; rw [if_neg hpV]
+    · subst r; rw [ite_eq_right hpV]
     · have hrq := Finset.mem_singleton.mp hr
-      subst r; rw [if_neg hqV])
+      subst r; rw [ite_eq_right hqV])
 
 /-- Keep the height-zero amplitudes of the actual original central main.
 Some sign assignment has joint value no larger than MINUS the SAME head.

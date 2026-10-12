@@ -49,7 +49,7 @@ def primeBin (N p : ℕ) : ℕ :=
 theorem primeBin_bounds (N : ℕ) {p : ℕ} (hp : binHead N<log p) :
     binHead N*(2 : ℝ)^(primeBin N p)<log p ∧
       log p≤2*(binHead N*(2 : ℝ)^(primeBin N p)) := by
-  simp only [primeBin,dif_pos hp]
+  simp only [primeBin,dite_eq_left hp]
   exact (Classical.choose_spec (exists_unique_log_shell (binHead_pos N) hp)).1
 
 /-- All occupied bins of the cofactor above the exact small-prime head.
@@ -813,7 +813,7 @@ theorem sum_pattern_partition (D I : Finset ℕ) (h : ℕ) (g : ℕ→Finset ℕ
   rw [Finset.sum_eq_single_of_mem (g a) hm]
   · simp only [ite_true]
   · intro K _ hne
-    simp only [if_neg (Ne.symm hne)]
+    simp only [ite_eq_right (Ne.symm hne)]
 
 /-- Reindex whole owner fibres onto their original integer labels. This
 identity is used inside the signed pattern estimate, not a completion. -/
@@ -1290,12 +1290,12 @@ private theorem family_positive_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : 0<(SquarefreeVaughanLogSource.coefficient L n).re
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart (-1) (A n) L y N n=0 := by
       simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
         -(SquarefreeVaughanLogSource.coefficient L n).re≤0),mul_zero,zero_mul]
     rw [hz,add_zero]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,one_mul,max_eq_right (le_of_not_gt hp),mul_zero,zero_mul]
 
 private theorem family_negative_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
@@ -1307,11 +1307,11 @@ private theorem family_negative_part_sum (A : ℕ→Finset ℕ) (D : Finset ℕ)
   apply Finset.sum_congr rfl
   intro n _
   by_cases hp : (SquarefreeVaughanLogSource.coefficient L n).re<0
-  · rw [if_pos hp,← signedPart_add]
+  · rw [ite_eq_left hp,← signedPart_add]
     have hz : signedPart 1 (A n) L y N n=0 := by
       simp only [signedPart,one_mul,max_eq_right hp.le,mul_zero,zero_mul]
     rw [hz,zero_add]
-  · rw [if_neg hp]
+  · rw [ite_eq_right hp]
     simp only [signedPart,neg_one_mul,max_eq_right (by linarith :
       -(SquarefreeVaughanLogSource.coefficient L n).re≤0),mul_zero,zero_mul]
 

@@ -103,7 +103,7 @@ def centeredSixCost (L y : ℝ) (n : ℕ) : ℝ :=
 theorem centeredSixCost_le_reflected {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) :
     centeredSixCost L y n ≤ ZetaRieszSixPrimeReflection.reflectedSixCost L y n := by
   by_cases ho : (outerPrimes (Real.log n-L) n).card = 1
-  · simp only [centeredSixCost,if_pos ho,ZetaRieszSixPrimeReflection.reflectedSixCost]
+  · simp only [centeredSixCost,ite_eq_left ho,ZetaRieszSixPrimeReflection.reflectedSixCost]
     have h := mul_le_mul_of_nonneg_right
       (mul_le_mul_of_nonneg_left (min_le_left (3*Real.log n.minFac)
         (4*|2*(Real.log n-L)-Real.log (activePart (Real.log n-L) n)|))
@@ -112,7 +112,7 @@ theorem centeredSixCost_le_reflected {L : ℝ} (hL : 0 < L) (y : ℝ) (n : ℕ) 
         (le_max_right (-Real.cos (y*Real.log n)) 0))
     dsimp only [ZetaRieszSixPrimeReflection.twoOuterCost]
     nlinarith only [h]
-  · simp only [centeredSixCost,if_neg ho,le_refl]
+  · simp only [centeredSixCost,ite_eq_right ho,le_refl]
 
 /-- The literal atom keeps every favorable observation; only its adverse
 part is charged, now with the exact midpoint cancellation included. -/
@@ -132,7 +132,7 @@ theorem residual_centered_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L
       (4*|2*(Real.log n-L)-Real.log (activePart (Real.log n-L) n)|)
     have hc0 : 0 ≤ c := by dsimp [c]; positivity [Real.log_natCast_nonneg n,Real.log_natCast_nonneg n.minFac]
     have hcn : 0 ≤ centeredSixCost L y n := by
-      simp only [centeredSixCost,if_pos ho₁]
+      simp only [centeredSixCost,ite_eq_left ho₁]
       exact mul_nonneg hc0 (add_nonneg (le_max_right _ _) (le_max_right _ _))
     have he : |(residualCoefficient A L N n*zetaPrimeLogKernel N (3/2+Complex.I*y) n).re| ≤
         weight A N n*centeredSixCost L y n := by
@@ -145,7 +145,7 @@ theorem residual_centered_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L
         · simp only [abs_of_nonneg hp,max_eq_left hp,max_eq_right (neg_nonpos.mpr hp),add_zero]
         · have hp' := le_of_not_ge hp
           simp only [abs_of_nonpos hp',max_eq_right hp',max_eq_left (neg_nonneg.mpr hp'),zero_add]
-      simpa only [centeredSixCost,if_pos ho₁,habs,mul_assoc] using h
+      simpa only [centeredSixCost,ite_eq_left ho₁,habs,mul_assoc] using h
     dsimp only
     have hd := mul_nonneg (weight_nonneg A N n) hcn
     have bounds := abs_le.mp he
@@ -155,7 +155,7 @@ theorem residual_centered_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L
     · have hv' := le_of_not_ge hv
       rw [max_eq_right hv',min_eq_left hv']
       constructor <;> linarith only [bounds.1,hd]
-  · simpa only [centeredSixCost,if_neg ho₁] using
+  · simpa only [centeredSixCost,ite_eq_right ho₁] using
       ZetaRieszSixPrimeReflection.residual_reflected_retained_bounds A hL y N hs hc hD ho
 
 open ZetaRieszParityPacket ZetaRieszAnnulusJoint

@@ -65,7 +65,7 @@ theorem packet_budget {k d P : ℕ} {M : ℝ} (hk : 2 ≤ k) (hd : d ≤ k)
       _ ≤ M ^ (k ^ 3) := pow_le_pow_right₀ hM (packet_exponent_le hk hd)
       _ < _ := by
         rw [← hcard, ← Finset.prod_const]
-        exact Finset.prod_lt_prod_of_nonempty (fun _ _ => by linarith) hπ hne
+        exact Finset.prod_lt_prod_of_nonempty₀ (fun _ _ => by linarith) hπ hne
   rw [← Nat.cast_prod] at hh
   exact_mod_cast hh
 

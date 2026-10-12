@@ -116,7 +116,7 @@ lemma Non_ge_weighted :
     by_cases b : D.m z = 2
     · simp [b]
     have c3 : 3 ≤ D.m z := by omega
-    rw [if_neg a, if_neg b, if_pos c3]; norm_num
+    rw [ite_eq_right a, ite_eq_right b, ite_eq_left c3]; norm_num
     exact_mod_cast c3
   have := Finset.sum_le_sum key
   rw [Nat.cast_sum]

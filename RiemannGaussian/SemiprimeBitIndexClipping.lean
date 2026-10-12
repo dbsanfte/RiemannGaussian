@@ -77,12 +77,12 @@ words, including cancellation and either sign representation of zero. -/
 theorem addSignedBits_value (left right : SignedWord) :
     (addSignedBits left right).word.value=left.value+right.value := by
   have ha := addBits_correct left.magnitude right.magnitude false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at ha
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at ha
   have hb := subBits_borrow_iff left.magnitude right.magnitude false
-  simp only [bitNat,Bool.false_eq_true,if_false,Nat.add_zero] at hb
+  simp only [bitNat,Bool.false_eq_true,ite_false,Nat.add_zero] at hb
   by_cases hs : left.negative=right.negative
   · unfold addSignedBits
-    rw [if_pos hs]
+    rw [ite_eq_left hs]
     dsimp only [SignedWord.value]
     rw [ha]
     rw [←hs]
@@ -95,7 +95,7 @@ theorem addSignedBits_value (left right : SignedWord) :
       have hv : ((bitValue left.magnitude : ℤ)+(bitValue right.magnitude-bitValue left.magnitude : ℕ))=
           bitValue right.magnitude := by omega
       unfold addSignedBits
-      rw [if_neg hs,if_pos hc]
+      rw [ite_eq_right hs,ite_eq_left hc]
       dsimp only [SignedWord.value]
       rw [hd]
       cases hn : left.negative <;> cases hm : right.negative <;>
@@ -109,7 +109,7 @@ theorem addSignedBits_value (left right : SignedWord) :
       have hv : ((bitValue right.magnitude : ℤ)+(bitValue left.magnitude-bitValue right.magnitude : ℕ))=
           bitValue left.magnitude := by omega
       unfold addSignedBits
-      rw [if_neg hs,if_neg hc]
+      rw [ite_eq_right hs,ite_eq_right hc]
       dsimp only [SignedWord.value]
       rw [hd]
       cases hn : left.negative <;> cases hm : right.negative <;>
@@ -263,7 +263,7 @@ theorem divideBits_all_width (xs ys : List Bool) :
   by_cases hb : (nonzeroBits ys).nonzero=true
   · have hw := divideBits_widths (xs:=xs) ((nonzeroBits_correct ys).mp hb)
     exact ⟨hw.2.le,hw.1.le.trans (Nat.le_max_right _ _)⟩
-  · simp only [divideBits,if_neg hb,List.length_nil]
+  · simp only [divideBits,ite_eq_right hb,List.length_nil]
     exact ⟨Nat.zero_le _,Nat.le_max_left _ _⟩
 
 /-- The arithmetic correction for negative floor division by a positive
@@ -276,11 +276,11 @@ theorem negative_nat_floor (n d : ℕ) (hd : 0<d) :
     exact_mod_cast (Nat.mod_add_div n d).symm
   have hr : ((n%d : ℕ) : ℤ)<d := by exact_mod_cast Nat.mod_lt n hd
   by_cases hz : n%d=0
-  · rw [if_pos hz,Int.ediv_eq_iff_of_pos hD]
+  · rw [ite_eq_left hz,Int.ediv_eq_iff_of_pos hD]
     simp only [hz,Nat.cast_zero,zero_add] at he
     constructor <;> nlinarith
   · have hp : (0 : ℤ)<((n%d : ℕ) : ℤ) := by exact_mod_cast (show 0<n%d by omega)
-    rw [if_neg hz,Int.ediv_eq_iff_of_pos hD]
+    rw [ite_eq_right hz,Int.ediv_eq_iff_of_pos hD]
     simp only [Nat.cast_add,Nat.cast_one]
     constructor <;> nlinarith
 
@@ -319,7 +319,7 @@ theorem floorSignedBits_value (numerator : SignedWord) (denominator : List Bool)
   have hq := (divideBits_correct numerator.magnitude denominator).1
   have hr := (divideBits_correct numerator.magnitude denominator).2
   have hi := addBits_correct (divideBits numerator.magnitude denominator).quotient [true] false
-  simp only [bitValue,bitNat,if_true,Bool.false_eq_true,if_false,
+  simp only [bitValue,bitNat,ite_true,Bool.false_eq_true,ite_false,
     Nat.mul_zero,Nat.add_zero] at hi
   cases hn : numerator.negative
   · simp only [floorSignedBits,SignedWord.value,hn,Bool.false_and,Bool.false_eq_true,reduceIte]
@@ -331,13 +331,13 @@ theorem floorSignedBits_value (numerator : SignedWord) (denominator : List Bool)
           (hr.trans hR)
         simp only [floorSignedBits,SignedWord.value,hn,hd,hz,Bool.true_and,Bool.and_false,
           Bool.false_eq_true,reduceIte]
-        rw [hq,negative_nat_floor _ _ hD,if_pos hR]
+        rw [hq,negative_nat_floor _ _ hD,ite_eq_left hR]
       · have hp : 0<bitValue (divideBits numerator.magnitude denominator).remainder := by
           rw [hr]
           omega
         have hz := (nonzeroBits_correct _).mpr hp
         simp only [floorSignedBits,SignedWord.value,hn,hd,hz,Bool.true_and,reduceIte]
-        rw [hi,hq,negative_nat_floor _ _ hD,if_neg hR]
+        rw [hi,hq,negative_nat_floor _ _ hD,ite_eq_right hR]
     · have hzero : bitValue denominator=0 := by omega
       have hd := (nonzeroBits_false_iff denominator).mpr hzero
       simp only [floorSignedBits,SignedWord.value,hn,hd,Bool.and_false,Bool.false_and,
@@ -563,44 +563,44 @@ theorem linearIntervalBits_value (offset step lower upper : SignedWord) (initial
   · have hmag := (nonzeroBits_correct _).mp hn
     by_cases hs : step.negative=true
     · have hstep : step.value= -(bitValue step.magnitude : ℤ) := by
-        simp only [SignedWord.value,if_pos hs]
+        simp only [SignedWord.value,ite_eq_left hs]
       have hnegative : step.value<0 := by rw [hstep]; omega
       have hnotpositive : ¬0<step.value := by omega
       unfold linearIntervalBits
-      rw [if_pos hn,if_pos hs]
+      rw [ite_eq_left hn,ite_eq_left hs]
       dsimp only
       rw [intersectIntervalsBits_value,positiveLinearBits_value,
         negateWord_value,negateWord_value,negateWord_value]
       unfold linearInterval
-      rw [if_neg hnotpositive,if_pos hnegative,hstep,neg_neg]
+      rw [ite_eq_right hnotpositive,ite_eq_left hnegative,hstep,neg_neg]
     · have hstep : step.value=(bitValue step.magnitude : ℤ) := by
-        simp only [SignedWord.value,if_neg hs]
+        simp only [SignedWord.value,ite_eq_right hs]
       have hpositive : 0<step.value := by rw [hstep]; exact_mod_cast hmag
       unfold linearIntervalBits
-      rw [if_pos hn,if_neg hs]
+      rw [ite_eq_left hn,ite_eq_right hs]
       dsimp only
       rw [intersectIntervalsBits_value,positiveLinearBits_value]
       unfold linearInterval
-      rw [if_pos hpositive,hstep]
+      rw [ite_eq_left hpositive,hstep]
   · have hzero := (nonzeroBits_false_iff _).mp (Bool.eq_false_of_not_eq_true hn)
     have hstep : step.value=0 := by simp [SignedWord.value,hzero]
     by_cases hi : lower.value≤offset.value ∧ offset.value≤upper.value
     · have hc : ((leSignedBits lower offset).le && (leSignedBits offset upper).le)=true :=
         (Bool.and_eq_true _ _).mpr ⟨(leSignedBits_exact _ _).mpr hi.1,(leSignedBits_exact _ _).mpr hi.2⟩
       unfold linearIntervalBits
-      rw [if_neg hn]
+      rw [ite_eq_right hn]
       dsimp only
-      rw [if_pos hc]
-      simp only [linearInterval,hstep,lt_self_iff_false,if_false,if_pos hi]
+      rw [ite_eq_left hc]
+      simp only [linearInterval,hstep,lt_self_iff_false,ite_false,ite_eq_left hi]
     · have hc : ¬((leSignedBits lower offset).le && (leSignedBits offset upper).le)=true := by
         intro h
         obtain ⟨h0,h1⟩ := (Bool.and_eq_true _ _).mp h
         exact hi ⟨(leSignedBits_exact _ _).mp h0,(leSignedBits_exact _ _).mp h1⟩
       unfold linearIntervalBits
-      rw [if_neg hn]
+      rw [ite_eq_right hn]
       dsimp only
-      rw [if_neg hc,emptyWordInterval_value]
-      simp only [linearInterval,hstep,lt_self_iff_false,if_false,if_neg hi]
+      rw [ite_eq_right hc,emptyWordInterval_value]
+      simp only [linearInterval,hstep,lt_self_iff_false,ite_false,ite_eq_right hi]
 
 /-- Exact inclusive membership in the original clipped line, including
 empty bounds and every constant-coordinate branch. This is a specification

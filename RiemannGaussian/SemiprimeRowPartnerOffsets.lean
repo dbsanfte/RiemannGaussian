@@ -163,8 +163,8 @@ theorem publicPacket_partner_root_zero_or_unit {N m : ℕ} (hm : 0<m) (hcover : 
     exact isUnit_of_mul_isUnit_right h
   have hur := packetRoot_coefficient (m:=m) u true htUnit
   have hvr := packetRoot_coefficient (m:=m) v false hva
-  simp only [packetScale,if_true] at hur
-  simp only [packetScale,Bool.false_eq_true,if_false] at hvr
+  simp only [packetScale,ite_true] at hur
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hvr
   have ha' : (v.original.a : ZMod N)=(s : ZMod N)*(u.original.t : ZMod N) := by
     rw [ha,Int.cast_mul]
   have he : (v.original.a : ZMod N)*
@@ -229,7 +229,7 @@ theorem publicPacket_partner_axis_zero_or_unit {N m : ℕ} (hm : 0<m) (hcover : 
     unfold partnerDelta
     push_cast
     rw [hc,Int.cast_mul] at hvr ⊢
-    cases minus <;> simp only [Bool.false_eq_true,if_false,if_true,Int.cast_neg] at hvr ⊢
+    cases minus <;> simp only [Bool.false_eq_true,ite_false,ite_true,Int.cast_neg] at hvr ⊢
     · linear_combination hvr-(s : ZMod N)*hur
     · linear_combination hvr-(s : ZMod N)*hur
   have hd := publicPacket_partner_delta_zero_or_unit hm hcover hn hu hv s hs ha ht

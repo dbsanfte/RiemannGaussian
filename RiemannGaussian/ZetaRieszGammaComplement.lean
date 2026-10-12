@@ -67,7 +67,7 @@ theorem selection_eq_continuous {u : ℝ} {N K n : ℕ}
       have hlo := Nat.minFac_le_of_dvd (Nat.prime_of_mem_primeFactors hq).two_le
         (Nat.dvd_of_mem_primeFactors hq)
       have hhi : q ≤ ZetaRieszPrimeEndpoint.largestPrime n := by
-        rw [ZetaRieszPrimeEndpoint.largestPrime,dif_pos ⟨q,hq⟩]
+        rw [ZetaRieszPrimeEndpoint.largestPrime,dite_eq_left ⟨q,hq⟩]
         exact Finset.le_max' _ _ hq
       rw [← he] at hlo
       exact Finset.mem_singleton.mpr (le_antisymm hhi hlo)
@@ -80,7 +80,7 @@ theorem selection_eq_continuous {u : ℝ} {N K n : ℕ}
     rw [he] at hprime
     rw [hprime.primeFactors,Finset.card_singleton] at hc
     omega
-  rw [ZetaRieszLeastBoundary.selection,if_pos hn,
+  rw [ZetaRieszLeastBoundary.selection,ite_eq_left hn,
     ← ZetaRieszJointOwnerTransfer.markedWeight_largest]
   exact markedWeight_eq_continuous hs hn1 hp hpr
     (Real.log_lt_log (by exact_mod_cast hprime.pos) (by exact_mod_cast hlt)) N

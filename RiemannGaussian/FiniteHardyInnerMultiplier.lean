@@ -113,8 +113,10 @@ theorem lowerRootInnerBoundaryLpLinearMap_norm
       eLpNorm_congr_ae (lowerRootInnerBoundaryLpLinearMap_ae p f)
     _ = eLpNorm f 2 volume := by
       apply eLpNorm_congr_norm_ae
-      exact Filter.Eventually.of_forall fun x => by
-        simp
+      · exact (lowerRootInnerBoundaryValue_mul_memLp p (Lp.memLp f)).aestronglyMeasurable
+      · exact (Lp.memLp f).aestronglyMeasurable
+      · exact Filter.Eventually.of_forall fun x => by
+          simp
 
 /-- The finite residual inner function acts isometrically on the genuine
 Hardy boundary ambient space. -/

@@ -333,7 +333,7 @@ theorem cofactor_two_primes {p q : ℕ} (hpq : p < q) (hq : 16 ≤ q)
     htp,htq,ZetaRieszMarkedEuler.coeff_leg,quotient_singleton_moment hq hs hk]
   have he : quotient ∅ xi = fun _ => (1 : ℂ) := by ext z; simp [quotient]
   rw [he,moment_one]
-  simp only [PowerSeries.coeff_one,if_neg (Nat.ne_of_gt hk),mul_zero,add_zero]
+  simp only [PowerSeries.coeff_one,ite_eq_right (Nat.ne_of_gt hk),mul_zero,add_zero]
   unfold twoPrimeWeight twoPrimeCharacter
   ring
 

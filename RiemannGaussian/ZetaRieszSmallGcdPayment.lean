@@ -62,7 +62,7 @@ theorem large_common_factor_mass (X N : ℕ) (S : Finset ℕ) (hX : 0 < X)
       have hgm : Nat.gcd n m ∈ G := Finset.mem_filter.mpr
         ⟨Finset.mem_Icc.mpr ⟨hgp,
           (Nat.le_of_dvd hnp (Nat.gcd_dvd_left n m)).trans (Finset.mem_Icc.mp (hS hn)).2⟩,hl⟩
-      simpa only [z,if_pos (Nat.gcd_dvd_left n m),if_pos (Nat.gcd_dvd_right n m)] using
+      simpa only [z,ite_eq_left (Nat.gcd_dvd_left n m),ite_eq_left (Nat.gcd_dvd_right n m)] using
         Finset.single_le_sum (fun g (_ : g ∈ G) => mul_nonneg (hz g n) (hz g m)) hgm
     · exact Finset.sum_nonneg (fun g _ => mul_nonneg (hz g n) (hz g m))
   have hrows : (∑ n ∈ S,∑ m ∈ S,∑ g ∈ G,z g n*z g m) =
@@ -183,10 +183,10 @@ theorem maskedSharedEnergy_bound (X N : ℕ) (S : Finset ℕ) (w f : ℕ → ℝ
       apply Finset.sum_le_sum
       intro m hm
       by_cases hg : (N : ℝ)/4096 < log (Nat.gcd n m)
-      · by_cases hM : M n m <;> simp only [hg,hM,and_true,and_false,if_true,if_false]
+      · by_cases hM : M n m <;> simp only [hg,hM,and_true,and_false,ite_true,ite_false]
         · exact le_rfl
         · positivity
-      · simp only [hg,false_and,if_false,le_refl]
+      · simp only [hg,false_and,ite_false,le_refl]
 
   have hlog : 0 ≤ 1+log X := by
     have hX1 : (1 : ℝ) ≤ X := by exact_mod_cast hX
@@ -340,9 +340,9 @@ theorem maskedSharedEnergy_eq_gram (X N : ℕ) (S : Finset ℕ)
   intro m _
   unfold ZetaRieszAntiphaseCredit.cutoffGram
   by_cases h : (N : ℝ)/4096 < log (Nat.gcd n m) ∧ M n m
-  · simp only [if_pos h,Finset.mul_sum]
+  · simp only [ite_eq_left h,Finset.mul_sum]
     exact Finset.sum_congr rfl (fun _ _ => by ring)
-  · simp only [if_neg h,zero_div,Finset.sum_const_zero]
+  · simp only [ite_eq_right h,zero_div,Finset.sum_const_zero]
 
 /-- Exactly the actual still-unpaid correlations below the tighter
 shared-factor threshold. ALL other original pair signs remain. -/

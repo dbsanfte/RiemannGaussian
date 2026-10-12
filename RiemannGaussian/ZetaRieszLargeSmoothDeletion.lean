@@ -44,10 +44,10 @@ theorem previousBand_subset (u : ℝ) (N : ℕ) : previousBand u N ⊆ zetaPrime
   intro n hn
   have hold : n ∈ ZetaRieszSmoothCofactor.optimizedRoughBand u N := by
     by_cases h : u < Real.exp (-(1 / 2 : ℝ))
-    · rw [previousBand, if_pos h] at hn
+    · rw [previousBand, ite_eq_left h] at hn
       exact ZetaRieszPhysicalPrefixDeletion.prefixResidualBand_subset u N
         (Finset.mem_sdiff.mp hn).1
-    · simpa only [previousBand, if_neg h] using hn
+    · simpa only [previousBand, ite_eq_right h] using hn
   exact ZetaRieszSmoothCofactor.optimizedReducedBand_subset u N
     (ZetaRieszSmoothCofactor.optimizedRoughBand_support hold).1
 
@@ -157,8 +157,8 @@ theorem tendsto_actual_band_sub_adaptiveSmooth (P : Polynomial ℂ) (y : ℝ)
         adaptiveSmoothResponse P N y (SquarefreeVaughanLogSource.length u N) u))
       atTop (nhds 0) := by
   by_cases h : 2 * u ^ 2 < 1
-  · simpa only [adaptiveSmoothResponse, if_pos h] using tendsto_actual_band_sub_largeSmoothResidual P y hu h
-  · simpa only [adaptiveSmoothResponse, if_neg h] using
+  · simpa only [adaptiveSmoothResponse, ite_eq_left h] using tendsto_actual_band_sub_largeSmoothResidual P y hu h
+  · simpa only [adaptiveSmoothResponse, ite_eq_right h] using
       ZetaRieszCompositeDeletion.tendsto_actual_band_sub_adaptiveComposite P y hu hu1
 
 /-- The exact original hypothetical-zero normalization on the adaptive

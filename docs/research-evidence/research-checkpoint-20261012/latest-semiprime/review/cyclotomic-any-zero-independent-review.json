@@ -1,0 +1,301 @@
+{
+  "schema": "independent-classical-cyclotomic-any-zero-review-v1",
+  "reviewer": "/root/long_norm_review",
+  "created_utc": "2026-10-08T17:45:01.769109+00:00",
+  "status": "PASS",
+  "report": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+    "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+    "matches": true
+  },
+  "report_lines": 270,
+  "manifest": {
+    "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json",
+    "sha256": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+    "matches": true
+  },
+  "check_count": 39,
+  "pin_count": 15,
+  "pin_mismatches": 0,
+  "required_corrections": [],
+  "checks": [
+    {
+      "id": "frozen_final_bytes",
+      "status": "PASS",
+      "detail": "Final 270-line report and 13-source manifest independently read; all 15 pins match preserved current authorities."
+    },
+    {
+      "id": "same_actual_supply",
+      "status": "PASS",
+      "detail": "Retains the current 1b3e901b Hensel majority, prime-period and non-Teichmuller conditions; new deletion is on original supply."
+    },
+    {
+      "id": "correct_actual_selector",
+      "status": "PASS",
+      "detail": "Uses the actual first-K prime-menu selector and folded predecessor gap mass, not a chosen hidden modulus or arbitrary rectangle."
+    },
+    {
+      "id": "all_candidate_union",
+      "status": "PASS",
+      "detail": "Deletion is over every candidate before N-adaptive selection; no seed-axis factor added."
+    },
+    {
+      "id": "small_order_classes",
+      "status": "PASS",
+      "detail": "Possible orders divide m−1; counting roots of X^d−1 yields at most F*tau(m−1) exceptional nonzero classes."
+    },
+    {
+      "id": "elementary_divisor_bound",
+      "status": "PASS",
+      "detail": "Displayed small/large-prime factor argument proves tau(n)<=Cepsilon n^epsilon, including uniform finite constants for small primes."
+    },
+    {
+      "id": "exceptional_prime_count",
+      "status": "PASS",
+      "detail": "Each class supplies O(M²) factor-bin integers; F=M^.96 and epsilon=.01 give O(M^2.97) exceptional p per m."
+    },
+    {
+      "id": "exceptional_pair_mass",
+      "status": "PASS",
+      "detail": "Multiplying selector Q width O(M²(G+1)) and summing gap mass O(K_*M) gives O(M^5.990), both factor orientations included."
+    },
+    {
+      "id": "joint_majority",
+      "status": "PASS",
+      "detail": "New5.990 is strictly below earlier soft5.994; union on original supply retains Ω(M⁶/log²M) actual pairs."
+    },
+    {
+      "id": "non_teich_retained",
+      "status": "PASS",
+      "detail": "Additional order thinning does not disturb p^(m−1)≠1 modm² or ord_m²(p)=m ord_m(p)."
+    },
+    {
+      "id": "cyclotomic_separability",
+      "status": "PASS",
+      "detail": "p≠m makes all four cyclic carrier polynomials separable, so their local algebras are products of fields."
+    },
+    {
+      "id": "frobenius_factor_counts",
+      "status": "PASS",
+      "detail": "Primitive m roots have orbit length f, primitive m² roots mf; counts t,t,1+t,1+2t are exact."
+    },
+    {
+      "id": "scarce_component_slots",
+      "status": "PASS",
+      "detail": "f>ceilM^.96 and m~M imply t=O(M^.04), despite carrier vector dimensions m or m²."
+    },
+    {
+      "id": "orthogonal_selectors",
+      "status": "PASS",
+      "detail": "Nonzero orthogonal idempotents in products of fields have disjoint nonempty component supports; at most one selector per component."
+    },
+    {
+      "id": "embedding_scope",
+      "status": "PASS",
+      "detail": "An injective unital R-linear algebra embedding R^J would remain injective in each squarefree CRT component and force J nonzero local selectors."
+    },
+    {
+      "id": "linear_kernel_zero_set",
+      "status": "PASS",
+      "detail": "A fixed homogeneous linear map has norm zero iff at least one local component map vanishes; nonzero norm baseline excludes identically-zero components."
+    },
+    {
+      "id": "hyperplane_cover",
+      "status": "PASS",
+      "detail": "With t<p, J>=2, proper kernel intersections have ≤p^(J−2) points and cannot cover a coordinate hyperplane of p^(J−1) points."
+    },
+    {
+      "id": "different_coordinates_different_components",
+      "status": "PASS",
+      "detail": "A nonzero linear map whose kernel contains a coordinate hyperplane has exactly that kernel; distinct coordinate hyperplanes require distinct components."
+    },
+    {
+      "id": "J_one_case",
+      "status": "PASS",
+      "detail": "J=1 is correctly separated; no unwarranted J<p hypothesis appears."
+    },
+    {
+      "id": "one_way_degenerate_exception",
+      "status": "PASS",
+      "detail": "One-way ANY semantics with J>t forces local norm blindness; report correctly does not equate this with globally saturated gcd N."
+    },
+    {
+      "id": "source_independent_separator_open",
+      "status": "PASS",
+      "detail": "A locally blind but asymmetric CRT query could reveal a factor; its independent paid acquisition and coverage remain outside the nondegenerate theorem."
+    },
+    {
+      "id": "common_curve_affine_payload",
+      "status": "PASS",
+      "detail": "Fixed linear residual merger on w_j(x)=Y_j−x gives A−xB; each nonzero field component has at most one base-field root."
+    },
+    {
+      "id": "affine_component_degeneracy",
+      "status": "PASS",
+      "detail": "An identically-zero component makes the entire local norm identically zero; nondegenerate baseline excludes it."
+    },
+    {
+      "id": "bounded_polynomial_payload",
+      "status": "PASS",
+      "detail": "For V(X) degreeD with some nonzero norm value, every component polynomial is nonzero and contributes at mostD base-field roots."
+    },
+    {
+      "id": "degree_capacity",
+      "status": "PASS",
+      "detail": "Norm zero count≤tD implies D≥d/t=Ω(M^.96) to cover d=Ωm actual distinct targets."
+    },
+    {
+      "id": "actual_targets_separate",
+      "status": "PASS",
+      "detail": "Uses separately reviewed original q1/top-bit local support and normalized-current injection; one is not substituted for the other."
+    },
+    {
+      "id": "complete_period_source_faithful",
+      "status": "PASS",
+      "detail": "Alpha and gamma generate the same local prime-order group, and every actual Y_j is a gamma power, so each target occurs on the complete baby period."
+    },
+    {
+      "id": "nonzero_axis_baseline",
+      "status": "PASS",
+      "detail": "R_p>d ensures an exact ANY test on the complete period has an all-nonzero residual point."
+    },
+    {
+      "id": "prefix_boundary",
+      "status": "PASS",
+      "detail": "No d-hit count inside a lengthTheta(m²) prefix is assumed; fixed-prefix obstruction requires independently established >tD hits."
+    },
+    {
+      "id": "variable_origin_boundary",
+      "status": "PASS",
+      "detail": "Different row-specific baby origins are expressly not replaced by a common x."
+    },
+    {
+      "id": "source_specific_companion_norm",
+      "status": "PASS",
+      "detail": "For monic H_Y, companion characteristic polynomial gives Norm(U−x)=(-1)^J H_Y(x)=product(Y_j−x) over every commutative ring."
+    },
+    {
+      "id": "no_distinctness_or_unit_needed_for_norm",
+      "status": "PASS",
+      "detail": "Positive carrier identity is valid with repeated targets, nonunits and zero divisors; no interpolation denominator is introduced."
+    },
+    {
+      "id": "nearlinear_product_tree",
+      "status": "PASS",
+      "detail": "Packed residue polynomial multiplication with coefficient digit width exceeding degree*N² bound plus fast binary multiplication yields soft O(JlogN) carrier acquisition."
+    },
+    {
+      "id": "primary_integer_algorithm",
+      "status": "PASS",
+      "detail": "Freshly opened official Annals primary statement verifies unconditional O(nlogn) binary multitape multiplication; only this input-independent algorithm is used."
+    },
+    {
+      "id": "idempotent_dense_array_cost",
+      "status": "PASS",
+      "detail": "Optional Lagrange selectors require unit differences and their full dense J-by-J array is not granted free."
+    },
+    {
+      "id": "original_long_query_unpaid",
+      "status": "PASS",
+      "detail": "Source carrier repairs ANY but still leaves product_i H_Y(u rho^i), variable origins and source cocycle acquisition unpaid."
+    },
+    {
+      "id": "extension_splitting",
+      "status": "PASS",
+      "detail": "Degreeh scalar extension splits an orbit of lengthn into gcd(n,h) components; t*h capacity and h≥J/t follow."
+    },
+    {
+      "id": "explicit_extension_output_scope",
+      "status": "PASS",
+      "detail": "Ω(Jh) is only the contract writing J dense h-coordinate field entries, not a lower bound on sparse/implicit extensions or scalar circuits."
+    },
+    {
+      "id": "native_and_goal_scope",
+      "status": "PASS",
+      "detail": "All new results remain classical; no source edits, backend tests, complete clock, proper recovery or guaranteed sixth-rate algorithm is asserted."
+    }
+  ],
+  "pins": [
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-obstruction.md",
+      "sha256": "c5fd5414a78efe44c0b23524ba811de90008e6d2ffb46df87219185c3a7a7328",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-any-zero-frontier-20261008/escape/cyclotomic-any-zero-sources.json",
+      "sha256": "244c03d030e42c56a571f594718b6d8e6eb28cbd2acc49292dc265140d96e092",
+      "matches": true
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-acquisition-obstruction.md",
+      "sha256": "3ccf1d782e9dc622bb4a3d61e39a99f4f6b9e5bb91025de1f819046c76995934",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/hensel-fourier-sources.json",
+      "sha256": "6f0a79e44848d4fd93e42d9fabcc152ba344d6bf76641a92c5f5652bcf1c059a",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/review/hensel-fourier-independent-review.json",
+      "sha256": "3a4d4b293290c0a1d7f900c37296ed69f36766ae1db5decd648d88b0ae6a6f19",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information.md",
+      "sha256": "f56488e5c742f7d65952c77d2fd28eddb60875f5dcde978df9de2313865dd082",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-hensel-spectrum-20261008/mask-norm-gcd-information-sources.json",
+      "sha256": "b119a66a95a36e18b58b6f7b2bdf7d31f288139e07cb759717e3b6ee6e0c3d75",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/escape/mask-norm-gcd-information-independent-review.json",
+      "sha256": "2bc94749848f3eb0d6f769eac48ee2b3c09bd9ad74205564c7af6a1a454ee51f",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-prime-menu-20261008/prime-menu-obstruction.md",
+      "sha256": "491d84da5d8433b871ce4e61c6d1f7233c4b6b5dd90cfee273af29eefd0c28f0",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-local-root-frontier-20261008/local-root-support.md",
+      "sha256": "b48a1419c82689eff91bed7ed09a5d4486c6fee7ab01367909c9879be6b3181a",
+      "matches": true
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "matches": true
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+      "matches": true
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientCentering.lean",
+      "sha256": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+      "matches": true
+    },
+    {
+      "path": "/tmp/semiprime-implicit-followup-20261008/integer-multiplication-2021.pdf",
+      "sha256": "7acbf5bea9dd45a2fca79d8b4673df6b8329ba8ad039831a40b44ae70944f813",
+      "matches": true
+    }
+  ],
+  "scope_verdict": "PASS for new actual-family high auxiliary Frobenius-order thinning, scarce public cyclic component counts, universal nondegenerate linear ANY-merger impossibility and source-specific complete-common-axis degree capacity, with exact paid near-linear source carrier acquisition but unpaid original long scalar query. Local degeneracy, incomplete prefixes, variable origins, sparse/implicit algorithms, proper factor coverage and universal lower bounds are expressly outside.",
+  "classical_only": true,
+  "new_lean_claim": false,
+  "original_long_scalar_nearlinear_acquired": false,
+  "full_goal_complete": false,
+  "frozen_bytes_unchanged_by_reviewer": true
+}

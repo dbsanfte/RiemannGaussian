@@ -25,7 +25,7 @@ open PrimeNewtonThree
 theorem primeAtom_norm_le_half {s : ℂ} (hs : 1<s.re) (p : ℕ) :
     ‖primeAtom s p‖ ≤ (1/2 : ℝ) := by
   by_cases hp : p.Prime
-  · rw [primeAtom, if_pos hp, norm_zetaPrimeFeature, zetaPrimeExpWeight]
+  · rw [primeAtom, ite_eq_left hp, norm_zetaPrimeFeature, zetaPrimeExpWeight]
     have hp2 : (2 : ℝ) ≤ p := by exact_mod_cast hp.two_le
     have hl := Real.log_le_log (by norm_num : (0 : ℝ)<2) hp2
     calc
@@ -98,7 +98,7 @@ theorem generating_eq_exp_primeSeries {z s : ℂ} (hz : ‖z‖ ≤ 1) (hs : 1<s
     apply hi.congr_fun
     intro p
     by_cases hpp : p.Prime
-    · simp only [Set.mulIndicator_apply, Set.mem_ofPred_eq, f, primeAtom, if_pos hpp,
+    · simp only [Set.mulIndicator_apply, Set.mem_ofPred_eq, f, primeAtom, ite_eq_left hpp,
         DirichletDyadicBlocks.feature_eq_cpow s hpp.pos]
     · simp [f, primeAtom, hpp]
   rw [he, neg_neg]

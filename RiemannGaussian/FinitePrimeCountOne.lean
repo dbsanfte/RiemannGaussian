@@ -24,12 +24,12 @@ noncomputable section
 private theorem prod_bool (S : Finset ℕ) (b : ℕ → Prop) [DecidablePred b] :
     (∏ p ∈ S, if b p then (1 : ℂ) else 0) = if ∀ p ∈ S, b p then 1 else 0 := by
   by_cases h : ∀ p ∈ S, b p
-  · rw [if_pos h]
-    exact Finset.prod_eq_one (fun p hp ↦ if_pos (h p hp))
-  · rw [if_neg h]
+  · rw [ite_eq_left h]
+    exact Finset.prod_eq_one (fun p hp ↦ ite_eq_left (h p hp))
+  · rw [ite_eq_right h]
     push Not at h
     obtain ⟨p, hp, hb⟩ := h
-    exact Finset.prod_eq_zero hp (if_neg hb)
+    exact Finset.prod_eq_zero hp (ite_eq_right hb)
 
 /-- The full signed first-power inclusion-exclusion is exactly
 avoidance of every selected prime, for arbitrary complex physical weights. -/
@@ -79,7 +79,7 @@ theorem primeCountOneTransform_indicator (S : Finset ℕ) (hS : ∀ p ∈ S, p.P
       if (S.filter (fun p ↦ p ∣ n)).card = 1 then F n else 0 := by
   unfold primeCountOneTransform
   rw [← primePairSieve_eq_signed_patterns S hS F n, primeAvoidance_eq_signed_subsets S hS F n]
-  simp only [Finset.prod_empty, one_dvd, if_true]
+  simp only [Finset.prod_empty, one_dvd, ite_true]
   have hz : (S.filter (fun p ↦ p ∣ n)).card = 0 ↔ ¬∃ p ∈ S, p ∣ n := by
     simp [Finset.card_eq_zero, Finset.filter_eq_empty_iff]
   by_cases h : (S.filter (fun p ↦ p ∣ n)).card = 0
@@ -124,7 +124,7 @@ theorem norm_primeCountOneTransform_le (F : Finset ℕ → ℂ) (S : Finset ℕ)
   let B := ∏ p ∈ S, (1 + 2 * w p)
   have hB : 1 ≤ B := by
     change 1 ≤ ∏ p ∈ S, (1 + 2 * w p)
-    exact Finset.one_le_prod (fun p _ ↦ by linarith [hw p])
+    exact Finset.one_le_prod₀ (fun p _ ↦ by linarith [hw p])
   have hbase : ‖F ∅‖ ≤ A * B := by
     have h0 : ‖F ∅‖ ≤ A := by simpa using hF ∅ (Finset.empty_subset S)
     exact h0.trans
@@ -156,7 +156,7 @@ theorem norm_primeCountOneTransform_le (F : Finset ℕ → ℂ) (S : Finset ℕ)
         rw [norm_mul, norm_pow, norm_neg, norm_one, one_pow, one_mul]
         exact hF U (Finset.mem_powerset.mp hU)
       _ = A * ∏ p ∈ S, (1 + w p) := by rw [Finset.prod_one_add, Finset.mul_sum]
-      _ ≤ _ := mul_le_mul_of_nonneg_left (Finset.prod_le_prod
+      _ ≤ _ := mul_le_mul_of_nonneg_left (Finset.prod_le_prod₀
         (fun p _ ↦ by linarith [hw p]) (fun p _ ↦ by linarith [hw p])) hA
   unfold primeCountOneTransform
   apply (norm_sub_le _ _).trans

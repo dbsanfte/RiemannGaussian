@@ -33,12 +33,12 @@ theorem moebiusGaussianCutoffAtom_eq_reflected (a tau : ℝ) (n : ℕ) (v : ℝ)
   simp only [indicator_apply, mem_Iic]
   by_cases h : Real.log (n + 1 : ℝ) ≤ a + v
   · have h' : Real.log (n + 1 : ℝ) - v ≤ a := by linarith
-    simp only [h, h', if_true, gaussianMoebiusSummand, moebiusCutoffGaussian, Nat.cast_add, Nat.cast_one]
+    simp only [h, h', ite_true, gaussianMoebiusSummand, moebiusCutoffGaussian, Nat.cast_add, Nat.cast_one]
     rw [mul_comm]
     congr 2
     ring
   · have h' : ¬ Real.log (n + 1 : ℝ) - v ≤ a := by linarith
-    simp only [h, h', if_false, mul_zero]
+    simp only [h, h', ite_false, mul_zero]
 
 /-- Every actual Gaussian cutoff atom is integrable, including its sharp integer endpoint. -/
 theorem integrable_moebiusGaussianCutoffAtom {tau : ℝ} (htau : 0 < tau) (a : ℝ) (n : ℕ) :

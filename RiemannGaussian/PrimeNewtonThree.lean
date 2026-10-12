@@ -72,7 +72,7 @@ def primeSeries (s : ℂ) : ℂ := ∑' p, primeAtom s p
 theorem primeAtom_pow (s : ℂ) (p k : ℕ) (hk : k ≠ 0) :
     primeAtom s p ^ k = primeAtom ((k : ℂ)*s) p := by
   by_cases hp : p.Prime
-  · simp only [primeAtom, if_pos hp, zetaPrimeFeature]
+  · simp only [primeAtom, ite_eq_left hp, zetaPrimeFeature]
     rw [← Complex.exp_nat_mul]
     congr 1
     ring

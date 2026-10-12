@@ -92,7 +92,7 @@ theorem coefficient_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
   have hb := mul_le_mul_of_nonneg_left hh
     (div_nonneg (Real.log_natCast_nonneg n) hL.le)
   refine ⟨?_,?_⟩
-  · simp only [SquarefreeVaughanLogSource.coefficient,if_pos (And.intro hs hnp),Complex.ofReal_re]
+  · simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left (And.intro hs hnp),Complex.ofReal_re]
     rw [show -Real.log n*VaughanLogAverage.riesz L n/L =
       -(Real.log n/L)*VaughanLogAverage.riesz L n by ring]
     nlinarith only [hb]
@@ -194,7 +194,7 @@ theorem residual_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
     max v 0-weight A N n*floorCost L y n ≤ v ∧
       v ≤ min v 0+weight A N n*ceilingCost L y n := by
   by_cases ho : 1 ≤ (outerPrimes (Real.log n-L) n).card
-  · simpa only [floorCost,ceilingCost,if_pos ho] using
+  · simpa only [floorCost,ceilingCost,ite_eq_left ho] using
       ZetaRieszSixPrimeSecondReflection.residual_retained_bounds A hL y N hs hc hD ho
   · have hsmall (p : ℕ) (hp : p ∈ n.primeFactors) : Real.log p ≤ Real.log n-L := by
       by_contra hpD
@@ -202,7 +202,7 @@ theorem residual_retained_bounds (A : Finset ℕ) {L : ℝ} (hL : 0 < L)
         Finset.mem_filter.mpr ⟨hp,(lt_of_not_ge hpD).le⟩
       have hh := Finset.card_pos.mpr (show (outerPrimes (Real.log n-L) n).Nonempty from ⟨p,hm⟩)
       omega
-    simpa only [floorCost,ceilingCost,if_neg ho] using
+    simpa only [floorCost,ceilingCost,ite_eq_right ho] using
       residual_small_retained_bounds A hL y N hs hc hsmall hcut
 
 open Filter Topology ZetaRieszParityPacket ZetaRieszAnnulusJoint

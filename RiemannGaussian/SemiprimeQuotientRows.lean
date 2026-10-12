@@ -145,7 +145,7 @@ theorem euclidShort_divisions_pow (k S r₀ r₁ x y : ℕ) (negative : Bool)
           omega
         have ht := ih (r₀%r₁) (r₁%(r₀%r₁)) (x+r₀/r₁*y)
           (y+r₁/(r₀%r₁)*(x+r₀/r₁*y)) (!(!negative)) hsmall
-        rw [euclidShort,if_neg hstop,euclidShort,if_neg hnext]
+        rw [euclidShort,ite_eq_right hstop,euclidShort,ite_eq_right hnext]
         dsimp only
         omega
 
@@ -599,7 +599,7 @@ theorem integerRoots_complete {a L C p : ℤ} (ha : a≠0)
     rw [hd,pow_two,Int.sqrt_eq,Int.natCast_natAbs]
   have hden : 2*a≠0 := mul_ne_zero (by decide) ha
   unfold integerRoots
-  rw [if_neg hn,hs]
+  rw [ite_eq_right hn,hs]
   by_cases hsign : 0≤2*a*p+L
   · rw [abs_of_nonneg hsign]
     have he : (-L+(2*a*p+L))/(2*a)=p := by

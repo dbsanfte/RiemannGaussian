@@ -92,7 +92,7 @@ theorem exists_actual_band_sharp_prime_pairs (P : Polynomial ℂ) (N : ℕ) (t :
     unfold bandWeight zetaArithmeticBand
     apply Finset.sum_congr rfl
     intro n hn
-    rw [if_pos hn]
+    rw [ite_eq_left hn]
   rw [he] at hbound
   exact ⟨E, hE, hmax, hbound⟩
 

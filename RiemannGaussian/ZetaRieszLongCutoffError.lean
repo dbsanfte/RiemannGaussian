@@ -38,7 +38,7 @@ private theorem corrected_mark_le {d : ℕ} (hd : Squarefree d) :
     nlinarith [log_natCast_nonneg p]
   calc
     _ ≤ ∏ p ∈ d.primeFactors, (2 : ℝ)*zetaPrimeExpWeight (3/4) p := by
-      apply Finset.prod_le_prod (fun p _ => primeSquareCorrectedWeight_nonneg _ _)
+      apply Finset.prod_le_prod₀ (fun p _ => primeSquareCorrectedWeight_nonneg _ _)
       intro p _
       unfold primeSquareCorrectedWeight
       have hp0 : 0 ≤ zetaPrimeExpWeight (3/4) p := (exp_pos _).le
@@ -442,7 +442,7 @@ theorem squarefree_profile_reference_error {X R : ℕ}
       ∑ d ∈ Finset.Icc 1 R, f d*(if d ∣ n then (μ d : ℝ) else 0) else 0) =
       ∑ D ∈ Finset.Icc 1 R, (f D-f (D+1))*(if Squarefree n then sharp D n else 0) := by
     by_cases hs : Squarefree n
-    · simp only [hs,if_true]
+    · simp only [hs,ite_true]
       exact ZetaRieszSignedCutoffEnergy.abel_profile R f _ hf
     · simp [hs]
   have hj : (∑ n ∈ Finset.Icc 1 X, q n*(if Squarefree n then
@@ -571,7 +571,7 @@ private theorem riesz_eq_hinge_profile (c : ℝ) {n : ℕ} (hn : 0 < n) :
   have hdl : log d ≤ c := by simpa only [log_exp] using log_le_log hd0 hdx
   rw [max_eq_right (sub_nonneg.mpr hdl)]
   by_cases hdn : d ∣ n
-  · simp only [hdn,if_true,log_div (exp_pos c).ne' hd0.ne',log_exp]
+  · simp only [hdn,ite_true,log_div (exp_pos c).ne' hd0.ne',log_exp]
     ring
   · simp [hdn]
 
@@ -750,7 +750,7 @@ theorem literal_squarefree_reference_error {u : ℝ} (hu : 1/2 ≤ u)
       have hl := Finset.le_sup (f := id) ha
       dsimp [X] at hl
       omega
-    exact if_neg hn
+    exact ite_eq_right hn
   have hleft : (∑ n ∈ Finset.Icc 1 X, q n*(if Squarefree n then
       ∑ d ∈ Finset.Icc 1 R, f d*(if d ∣ n then (μ d : ℝ) else 0) else 0)) =
       ∑ n ∈ Finset.Icc 1 X, w n*VaughanLogAverage.riesz c n := by
@@ -758,9 +758,9 @@ theorem literal_squarefree_reference_error {u : ℝ} (hu : 1/2 ≤ u)
     intro n hn
     have hbn := hb n
     by_cases hs : Squarefree n
-    · simp only [hs,if_true] at hbn ⊢
+    · simp only [hs,ite_true] at hbn ⊢
       rw [hbn,← riesz_eq_hinge_profile c (Finset.mem_Icc.mp hn).1]
-    · simp only [hs,if_false] at hbn ⊢
+    · simp only [hs,ite_false] at hbn ⊢
       rw [← hbn,zero_mul,mul_zero]
   have hsum : (∑ n ∈ Finset.Icc 1 X, q n*(if Squarefree n then 1 else 0)) =
       ∑ n ∈ Finset.Icc 1 X, w n := by
@@ -1012,7 +1012,7 @@ private theorem rough_mark_error (S : Finset ℕ) (hS : ∀ p ∈ S, p.Prime)
       simp only [zero_mul,sub_self,norm_zero]
       positivity
   · rw [RoughSquarefreeCounting.markedCount_eq_zero_of_not_squarefree S hd,
-      RoughSquarefreeCounting.markedDensity,if_neg hd]
+      RoughSquarefreeCounting.markedDensity,ite_eq_right hd]
     simp only [zero_mul,sub_self,norm_zero]
     positivity
 
@@ -1030,20 +1030,20 @@ theorem rough_count_eq_marks (S : Finset ℕ) (X D : ℕ) :
   have he n : ((ZetaRieszUnsignedDivisorError.sieve S n*sharp D n : ℝ) : ℂ)=
       ∑ d ∈ Finset.Icc 1 D, (μ d : ℂ)*RoughSquarefreeBare.coefficient S d n := by
     by_cases hs : Squarefree n ∧ ¬∃ p ∈ S, p ∣ n
-    · rw [ZetaRieszUnsignedDivisorError.sieve,if_pos hs,one_mul,sharp,Complex.ofReal_sum]
+    · rw [ZetaRieszUnsignedDivisorError.sieve,ite_eq_left hs,one_mul,sharp,Complex.ofReal_sum]
       apply Finset.sum_congr rfl
       intro d _
       by_cases hd : d ∣ n
-      · rw [if_pos hd,RoughSquarefreeBare.coefficient,if_pos ⟨hs.1,hs.2,hd⟩,mul_one]
+      · rw [ite_eq_left hd,RoughSquarefreeBare.coefficient,ite_eq_left ⟨hs.1,hs.2,hd⟩,mul_one]
         norm_cast
-      · rw [if_neg hd,RoughSquarefreeBare.coefficient,if_neg (by tauto),mul_zero]
+      · rw [ite_eq_right hd,RoughSquarefreeBare.coefficient,ite_eq_right (by tauto),mul_zero]
         rfl
     · have hd d : ¬(Squarefree n ∧ (¬∃ p ∈ S, p ∣ n) ∧ d ∣ n) :=
         fun h => hs ⟨h.1,h.2.1⟩
-      rw [ZetaRieszUnsignedDivisorError.sieve,if_neg hs,zero_mul,Complex.ofReal_zero]
+      rw [ZetaRieszUnsignedDivisorError.sieve,ite_eq_right hs,zero_mul,Complex.ofReal_zero]
       symm
       exact Finset.sum_eq_zero (fun d _ => by
-        rw [RoughSquarefreeBare.coefficient,if_neg (hd d),mul_zero])
+        rw [RoughSquarefreeBare.coefficient,ite_eq_right (hd d),mul_zero])
   rw [Complex.ofReal_sum]
   simp_rw [he]
   rw [Finset.sum_comm]
@@ -1127,9 +1127,9 @@ private theorem markedCount_norm_le (S : Finset ℕ) (d X : ℕ) :
       apply Finset.sum_le_sum
       intro n _
       by_cases hd : d ∣ n
-      · simp only [hd,if_true,RoughSquarefreeBare.coefficient]
+      · simp only [hd,ite_true,RoughSquarefreeBare.coefficient]
         split_ifs <;> simp
-      · simp only [hd,if_false,RoughSquarefreeBare.coefficient,
+      · simp only [hd,ite_false,RoughSquarefreeBare.coefficient,
           and_false,norm_zero,le_refl]
     _ = _ := by
       rw [← Finset.sum_filter]
@@ -1407,8 +1407,8 @@ theorem beforeSquares_rough_eq_literal (A B : Finset ℕ)
     ZetaRieszUnsignedDivisorError.sieve
   simp only [rough_rows_iff B hB S hS hpS]
   by_cases hs : Squarefree a ∧ ¬∃ q ∈ S, q ∣ a
-  · simp only [hs,not_false_eq_true,if_true,true_and,mul_one]
-  · simp only [hs,if_false,false_and,mul_zero]
+  · simp only [hs,not_false_eq_true,ite_true,true_and,mul_one]
+  · simp only [hs,ite_false,false_and,mul_zero]
 
 /-- The translated hinge estimate applies to the literal rough
 subpopulation of the original core. All owner/count/phase/allocation
@@ -1459,7 +1459,7 @@ theorem literal_rough_reference_error {u : ℝ} (hu : 1/2 ≤ u)
       have hl := Finset.le_sup (f := id) ha
       dsimp [X] at hl
       omega
-    exact if_neg hn
+    exact ite_eq_right hn
   have hleft : (∑ n ∈ Finset.Icc 1 X, q n*ZetaRieszUnsignedDivisorError.sieve S n*
       (∑ d ∈ Finset.Icc 1 R, f d*(if d ∣ n then (μ d : ℝ) else 0))) =
       ∑ n ∈ Finset.Icc 1 X, w n*VaughanLogAverage.riesz c n := by
@@ -1724,8 +1724,8 @@ theorem raw_rough_eq_literal (A B : Finset ℕ)
   unfold ZetaRieszJointPrimeEnergy.maskedWeight ZetaRieszUnsignedDivisorError.sieve
   simp only [owner_rough_rows_iff B hB S hS hpS]
   by_cases hs : Squarefree a ∧ ¬∃ q ∈ insert p S, q ∣ a
-  · simp only [hs,not_false_eq_true,if_true,true_and,mul_one]
-  · simp only [hs,if_false,false_and,mul_zero]
+  · simp only [hs,not_false_eq_true,ite_true,true_and,mul_one]
+  · simp only [hs,ite_false,false_and,mul_zero]
 
 /-- An estimate on the actual translated owner column without charging
 repeated-owner holes as adjacent variation. The owner-dependent density
@@ -1781,7 +1781,7 @@ theorem literal_raw_rough_reference_error {u : ℝ} (hu : 1/2 ≤ u)
       have hl := Finset.le_sup (f := id) ha
       dsimp [X] at hl
       omega
-    exact if_neg hn
+    exact ite_eq_right hn
   have hleft : (∑ n ∈ Finset.Icc 1 X, q n*ZetaRieszUnsignedDivisorError.sieve (insert p S) n*
       (∑ d ∈ Finset.Icc 1 R, f d*(if d ∣ n then (μ d : ℝ) else 0))) =
       ∑ n ∈ Finset.Icc 1 X, w n*VaughanLogAverage.riesz c n := by

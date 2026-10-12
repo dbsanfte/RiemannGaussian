@@ -289,7 +289,7 @@ theorem eventually_supply_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) :
         ((logPrimes (start N h v ij.1 ij.2.1 ij.2.2 a) h).card : ℝ) := by
       have hs := start_bounds hh hi hj hk hv hw a
       exact hcount _ (by linarith) (by linarith)
-    have hp := Finset.prod_le_prod (s := (Finset.univ : Finset (Fin 4)))
+    have hp := Finset.prod_le_prod₀ (s := (Finset.univ : Finset (Fin 4)))
       (fun a _ => by positivity : ∀ a ∈ (Finset.univ : Finset (Fin 4)),
         0 ≤ c*Real.exp (start N h v ij.1 ij.2.1 ij.2.2 a)/((N : ℝ)+1))
       (fun a _ => he a)
@@ -539,7 +539,7 @@ private theorem coverProducts_card_upper {N i j : ℕ} {η : ℝ}
       (6*Real.log 4)^3*Real.exp 5*Real.exp (2*(N : ℝ))/((N : ℝ)+1)^3 := by
   have hc : ((coverProducts N η i j).card : ℝ) ≤
       ((coverTuples N η i j).card : ℝ) := by exact_mod_cast Finset.card_image_le
-  have hp := Finset.prod_le_prod (s := (Finset.univ : Finset (Fin 3)))
+  have hp := Finset.prod_le_prod₀ (s := (Finset.univ : Finset (Fin 3)))
     (fun a _ => Nat.cast_nonneg (α := ℝ) ((logPrimes (coverStart N η i j a) (coverWidth a)).card))
     (fun a _ => interval_card_upper_uniform (show 1 ≤ N by omega)
       (coverStart_bounds hη hηu hN hi hj a).1 (by unfold coverWidth; split_ifs <;> norm_num))

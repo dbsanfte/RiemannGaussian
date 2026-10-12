@@ -132,13 +132,13 @@ theorem eventually_tuple_reciprocal_bounds {ι : Type*} [Fintype ι] [DecidableE
   have ha0 (i : ι) : 0 < a i := by nlinarith [ha i]
   rw [← Finset.prod_univ_sum (fun i => logPrimes (a i) h) (fun (_ : ι) (p : ℕ) => (p : ℝ)⁻¹)]
   constructor
-  · apply Finset.prod_le_prod
+  · apply Finset.prod_le_prod₀
     · intro i _
       exact div_nonneg (mul_nonneg (sub_nonneg.mpr hεu)
         (sub_nonneg.mpr (Real.exp_le_one_iff.mpr (by linarith)))) (by linarith [ha0 i])
     · intro i _
       exact (hN (a i) (ha i)).1
-  · apply Finset.prod_le_prod
+  · apply Finset.prod_le_prod₀
     · intro i _
       exact Finset.sum_nonneg (fun p _ => inv_nonneg.mpr (Nat.cast_nonneg p))
     · intro i _

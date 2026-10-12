@@ -240,13 +240,13 @@ private theorem integrableOn_upperLaplaceSummand_mul
       refine hscaled.congr ?_
       filter_upwards with s
       unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-      simp only [if_pos hrho, if_pos hsigma, map_mul]
+      simp only [ite_eq_left hrho, ite_eq_left hsigma, map_mul]
       ring
     · unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-      simp only [if_pos hrho, if_neg hsigma, map_mul, mul_zero]
+      simp only [ite_eq_left hrho, ite_eq_right hsigma, map_mul, mul_zero]
       exact integrableOn_zero
   · unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-    simp only [if_neg hrho, map_zero, zero_mul]
+    simp only [ite_eq_right hrho, map_zero, zero_mul]
     exact integrableOn_zero
 
 private theorem integrableOn_lowerLaplaceSummand_mul
@@ -271,13 +271,13 @@ private theorem integrableOn_lowerLaplaceSummand_mul
       refine hscaled.congr ?_
       filter_upwards with s
       unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-      simp only [if_pos hrho, if_pos hsigma, map_mul]
+      simp only [ite_eq_left hrho, ite_eq_left hsigma, map_mul]
       ring
     · unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-      simp only [if_pos hrho, if_neg hsigma, map_mul, mul_zero]
+      simp only [ite_eq_left hrho, ite_eq_right hsigma, map_mul, mul_zero]
       exact integrableOn_zero
   · unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-    simp only [if_neg hrho, map_zero, zero_mul]
+    simp only [ite_eq_right hrho, map_zero, zero_mul]
     exact integrableOn_zero
 
 private theorem integral_upperLaplaceSummand_mul
@@ -297,7 +297,7 @@ private theorem integral_upperLaplaceSummand_mul
       else 0 := by
   by_cases hrho : 0 < (zetaSpectralCoordinate rho.1).im
   · by_cases hsigma : 0 < (zetaSpectralCoordinate sigma.1).im
-    · simp only [if_pos hrho, if_pos hsigma]
+    · simp only [ite_eq_left hrho, ite_eq_left hsigma]
       calc
         (∫ s : ℝ in Ioi 0,
             conj (suzukiXiCarrierCayleyUpperLaplaceSummand c rho s) *
@@ -312,7 +312,7 @@ private theorem integral_upperLaplaceSummand_mul
           apply MeasureTheory.integral_congr_ae
           filter_upwards with s
           unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-          simp only [if_pos hrho, if_pos hsigma, map_mul]
+          simp only [ite_eq_left hrho, ite_eq_left hsigma, map_mul]
           ring
         _ = (conj (suzukiXiCarrierCayleyOffAxisWeightedCoefficient c rho) *
               suzukiXiCarrierCayleyOffAxisWeightedCoefficient c sigma) *
@@ -323,13 +323,13 @@ private theorem integral_upperLaplaceSummand_mul
                   (zetaSpectralCoordinate sigma.1) s) := by
           rw [MeasureTheory.integral_const_mul]
         _ = _ := by rw [integral_conj_suzukiXiCarrierUpperLaplaceFeature_mul hrho hsigma]
-    · simp only [if_pos hrho, if_neg hsigma]
+    · simp only [ite_eq_left hrho, ite_eq_right hsigma]
       unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-      simp only [if_pos hrho, if_neg hsigma, map_mul, mul_zero,
+      simp only [ite_eq_left hrho, ite_eq_right hsigma, map_mul, mul_zero,
         MeasureTheory.integral_zero]
-  · simp only [if_neg hrho]
+  · simp only [ite_eq_right hrho]
     unfold suzukiXiCarrierCayleyUpperLaplaceSummand
-    simp only [if_neg hrho, map_zero, zero_mul,
+    simp only [ite_eq_right hrho, map_zero, zero_mul,
       MeasureTheory.integral_zero]
 
 private theorem integral_lowerLaplaceSummand_mul
@@ -349,7 +349,7 @@ private theorem integral_lowerLaplaceSummand_mul
       else 0 := by
   by_cases hrho : (zetaSpectralCoordinate rho.1).im < 0
   · by_cases hsigma : (zetaSpectralCoordinate sigma.1).im < 0
-    · simp only [if_pos hrho, if_pos hsigma]
+    · simp only [ite_eq_left hrho, ite_eq_left hsigma]
       calc
         (∫ s : ℝ in Ioi 0,
             conj (suzukiXiCarrierCayleyLowerLaplaceSummand c rho s) *
@@ -364,7 +364,7 @@ private theorem integral_lowerLaplaceSummand_mul
           apply MeasureTheory.integral_congr_ae
           filter_upwards with s
           unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-          simp only [if_pos hrho, if_pos hsigma, map_mul]
+          simp only [ite_eq_left hrho, ite_eq_left hsigma, map_mul]
           ring
         _ = (conj (suzukiXiCarrierCayleyOffAxisWeightedCoefficient c rho) *
               suzukiXiCarrierCayleyOffAxisWeightedCoefficient c sigma) *
@@ -375,13 +375,13 @@ private theorem integral_lowerLaplaceSummand_mul
                   (zetaSpectralCoordinate sigma.1) s) := by
           rw [MeasureTheory.integral_const_mul]
         _ = _ := by rw [integral_conj_suzukiXiCarrierLowerLaplaceFeature_mul hrho hsigma]
-    · simp only [if_pos hrho, if_neg hsigma]
+    · simp only [ite_eq_left hrho, ite_eq_right hsigma]
       unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-      simp only [if_pos hrho, if_neg hsigma, map_mul, mul_zero,
+      simp only [ite_eq_left hrho, ite_eq_right hsigma, map_mul, mul_zero,
         MeasureTheory.integral_zero]
-  · simp only [if_neg hrho]
+  · simp only [ite_eq_right hrho]
     unfold suzukiXiCarrierCayleyLowerLaplaceSummand
-    simp only [if_neg hrho, map_zero, zero_mul,
+    simp only [ite_eq_right hrho, map_zero, zero_mul,
       MeasureTheory.integral_zero]
 
 private theorem integral_upperLaplaceSynthesis_normSq
@@ -468,13 +468,13 @@ private theorem spectralGram_eq_laplace
           ¬(zetaSpectralCoordinate sigma.1).im < 0 :=
         not_lt.mpr hsigmaUpper.le
       simp only [suzukiXiCarrierCayleyOffAxisSpectralKernel,
-        if_pos hrhoUpper, if_pos hsigmaUpper, if_neg hrhoNotLower,
-        if_neg hsigmaNotLower, add_zero]
+        ite_eq_left hrhoUpper, ite_eq_left hsigmaUpper, ite_eq_right hrhoNotLower,
+        ite_eq_right hsigmaNotLower, add_zero]
     · have hsigmaLower : (zetaSpectralCoordinate sigma.1).im < 0 :=
         lt_of_le_of_ne (not_lt.mp hsigmaUpper) (hoffAxis sigma hsigma)
       simp only [suzukiXiCarrierCayleyOffAxisSpectralKernel,
-        if_pos hrhoUpper, if_neg hsigmaUpper, if_neg hrhoNotLower,
-        if_pos hsigmaLower, mul_zero, zero_add]
+        ite_eq_left hrhoUpper, ite_eq_right hsigmaUpper, ite_eq_right hrhoNotLower,
+        ite_eq_left hsigmaLower, mul_zero, zero_add]
   · have hrhoLower : (zetaSpectralCoordinate rho.1).im < 0 :=
       lt_of_le_of_ne (not_lt.mp hrhoUpper) (hoffAxis rho hrho)
     by_cases hsigmaUpper : 0 < (zetaSpectralCoordinate sigma.1).im
@@ -482,13 +482,13 @@ private theorem spectralGram_eq_laplace
           ¬(zetaSpectralCoordinate sigma.1).im < 0 :=
         not_lt.mpr hsigmaUpper.le
       simp only [suzukiXiCarrierCayleyOffAxisSpectralKernel,
-        if_neg hrhoUpper, if_pos hsigmaUpper, if_pos hrhoLower,
-        if_neg hsigmaNotLower, mul_zero, add_zero]
+        ite_eq_right hrhoUpper, ite_eq_left hsigmaUpper, ite_eq_left hrhoLower,
+        ite_eq_right hsigmaNotLower, mul_zero, add_zero]
     · have hsigmaLower : (zetaSpectralCoordinate sigma.1).im < 0 :=
         lt_of_le_of_ne (not_lt.mp hsigmaUpper) (hoffAxis sigma hsigma)
       simp only [suzukiXiCarrierCayleyOffAxisSpectralKernel,
-        if_neg hrhoUpper, if_neg hsigmaUpper, if_pos hrhoLower,
-        if_pos hsigmaLower, zero_add]
+        ite_eq_right hrhoUpper, ite_eq_right hsigmaUpper, ite_eq_left hrhoLower,
+        ite_eq_left hsigmaLower, zero_add]
 
 private theorem integrableOn_upperLaplaceSynthesis_normSq
     (c : NontrivialZetaZero →₀ ℂ) :

@@ -80,7 +80,7 @@ private theorem prime_low_eq_divided (rho : NontrivialZetaZero)
     omega
   rw [pairedEtaCompletedMoebiusTerm_eq_completed_prefix,
     pairedEtaCompletedMoebiusTerm_eq_completed_prefix,
-    moebius_prime_mul_eq_not_dvd hp, if_neg hcop, Int.cast_neg,
+    moebius_prime_mul_eq_not_dvd hp, ite_eq_right hcop, Int.cast_neg,
     Nat.cast_mul, Complex.natCast_mul_natCast_cpow, Nat.div_div_eq_div_mul]
   ring
 
@@ -184,7 +184,7 @@ private theorem sum_large_prime_dvd {u n : ℕ} (hu : 1 ≤ u)
     (∑ p ∈ pairedEtaMoebiusLargePrimeFamily u, if p ∣ n then z else 0) =
       if pairedEtaMoebiusHasLargePrime u n then z else 0 := by
   by_cases h : pairedEtaMoebiusHasLargePrime u n
-  · rw [if_pos h]
+  · rw [ite_eq_left h]
     obtain ⟨p, hp, hpn⟩ := h
     calc
       _ = if p ∣ n then z else 0 := by
@@ -195,8 +195,8 @@ private theorem sum_large_prime_dvd {u n : ℕ} (hu : 1 ≤ u)
           simp [hqn]
         · intro hnot
           exact (hnot hp).elim
-      _ = z := if_pos hpn
-  · rw [if_neg h]
+      _ = z := ite_eq_left hpn
+  · rw [ite_eq_right h]
     apply Finset.sum_eq_zero
     intro p hp
     have hpn : ¬p ∣ n := fun hd ↦ h ⟨p, hp, hd⟩

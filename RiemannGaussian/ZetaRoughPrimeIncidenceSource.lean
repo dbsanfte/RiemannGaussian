@@ -226,8 +226,8 @@ theorem norm_smallPart_le (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) (
   have hmark (a : ℕ) := norm_normalized_sum_zetaArithmetic_cubic_product_le
     (fibreCoefficient D S a) (fun n ↦ by
       by_cases hn : a ∣ n
-      · simpa only [fibreCoefficient, if_pos hn] using norm_zetaRoughSquarefreeCoefficient_le D S n
-      · simpa only [fibreCoefficient, if_neg hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n)
+      · simpa only [fibreCoefficient, ite_eq_left hn] using norm_zetaRoughSquarefreeCoefficient_le D S n
+      · simpa only [fibreCoefficient, ite_eq_right hn, norm_zero] using zetaMoebiusLogMajorant_nonneg n)
     p N rho.1.im hu hu1 (Finset.Iic (D ^ 3)) (fun _ hn ↦ Finset.mem_Iic.mp hn)
   rw [smallPart, sum_compensated_eq, mul_sub, Finset.mul_sum (cutoffPrimes D S)]
   apply (norm_sub_le _ _).trans
@@ -294,14 +294,14 @@ theorem hasSum_balanced (p : Polynomial ℂ) (D N : ℕ) (hD : 1 ≤ D)
   have he : (∑ n ∈ Finset.Iic (D ^ 3), if n ≤ D ^ 3 then
       compensatedCoefficient D S n * zetaPrimeFilterKernel p N s n else 0) =
         ∑ n ∈ Finset.Iic (D ^ 3), compensatedCoefficient D S n * zetaPrimeFilterKernel p N s n :=
-    Finset.sum_congr rfl (fun n hn ↦ if_pos (Finset.mem_Iic.mp hn))
+    Finset.sum_congr rfl (fun n hn ↦ ite_eq_left (Finset.mem_Iic.mp hn))
   rw [he] at hsmall
   apply ((hasSum_compensated p D N hD S hS hs).sub hsmall).congr_fun
   intro n
   by_cases hn : n ≤ D ^ 3
   · simp [hn, balancedCoefficient, Nat.not_lt.mpr hn]
   · have hp := compensatedCoefficient_partition D hD S hS n
-    simp only [if_neg hn, zero_add] at hp
+    simp only [ite_eq_right hn, zero_add] at hp
     simp [hn, hp]
 
 /-- The actual source-normalized balanced response. It keeps the

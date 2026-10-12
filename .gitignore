@@ -1,3 +1,4 @@
-/.lake
+.lake/
 /Scratch.lean
+/scripts/*.olean
 __pycache__/

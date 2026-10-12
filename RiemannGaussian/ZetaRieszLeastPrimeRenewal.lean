@@ -73,7 +73,7 @@ theorem renewalHinge_eq_riesz {a : ℕ} (ha : Squarefree a) (z : ℝ) :
     · subst a
       simp [renewalHinge, VaughanLogAverage.riesz]
     · obtain ⟨_, hc, _, hlt⟩ := minFac_child ha ha1
-      rw [renewalHinge, if_neg ha.ne_zero, if_neg ha1,
+      rw [renewalHinge, ite_eq_right ha.ne_zero, ite_eq_right ha1,
         ih _ hlt hc, ih _ hlt hc, ← riesz_minFac z ha ha1]
 
 /-- The first renewal step of the literal discrepancy retains the

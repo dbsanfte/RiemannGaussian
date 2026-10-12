@@ -84,14 +84,14 @@ private theorem wide_boundary_atom (p a k : ℕ) (y : ℝ) {L : ℝ} (hL : 0 ≤
     have hk := upper_atom_le (fun n => L < Real.log n) k y L
       (q := 27 / 55) (σ := 1 + 1 / 262144) (by norm_num) (by norm_num)
       (fun _ hn => hn.le) a
-    rw [if_pos (lt_of_not_ge haL)] at hk
+    rw [ite_eq_left (lt_of_not_ge haL)] at hk
     have hw : zetaPrimeExpWeight (1 + 1 / 262144) a =
         (a : ℝ) ^ (-(1 + 1 / 262144 : ℝ)) := by
       rw [zetaPrimeExpWeight, Real.rpow_def_of_pos ha0]
       congr 1
       ring
     rw [hw] at hk
-    rw [boundaryCoefficient, if_pos ha, norm_mul, Complex.norm_real, Real.norm_eq_abs]
+    rw [boundaryCoefficient, ite_eq_left ha, norm_mul, Complex.norm_real, Real.norm_eq_abs]
     calc
       _ ≤ (L * (a.divisors.card : ℝ) ^ 2) *
           (((27 / 55 : ℝ)⁻¹ ^ k *
@@ -100,7 +100,7 @@ private theorem wide_boundary_atom (p a k : ℕ) (y : ℝ) {L : ℝ} (hL : 0 ≤
         mul_le_mul ((abs_riesz_le hL a).trans (mul_le_mul_of_nonneg_left hc hL))
           hk (norm_nonneg _) (by positivity)
       _ = _ := by ring
-  · simp only [boundaryCoefficient, if_neg ha, zero_mul, norm_zero]
+  · simp only [boundaryCoefficient, ite_eq_right ha, zero_mul, norm_zero]
     positivity
 
 private theorem wide_boundary_response (p k : ℕ) (y : ℝ) {L : ℝ} (hL : 0 ≤ L) :

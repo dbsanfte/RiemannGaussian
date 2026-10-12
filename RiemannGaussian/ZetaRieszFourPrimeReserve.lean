@@ -236,7 +236,7 @@ theorem negativeAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 4)
     have hmax (p : ℕ) (hp : p ∈ n.primeFactors) : Real.log p ≤ Real.log (largestPrime n) := by
       have hn : n.primeFactors.Nonempty := ⟨p,hp⟩
       have hle : p ≤ largestPrime n := by
-        rw [largestPrime,dif_pos hn]
+        rw [largestPrime,dite_eq_left hn]
         exact Finset.le_max' _ _ hp
       exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
         (by exact_mod_cast hle)
@@ -244,8 +244,8 @@ theorem negativeAllowance_eq {n : ℕ} (hc : n.primeFactors.card = 4)
     rw [clipped_sum_eq_excess hs L] at he
     have hnp : ¬n.Prime := by intro h; rw [h.primeFactors,Finset.card_singleton] at hc; omega
     have hgood : Squarefree n ∧ ¬n.Prime := ⟨hs,hnp⟩
-    simp only [negativeAllowance,if_pos hs,SquarefreeVaughanLogSource.coefficient,
-      if_pos hgood,Complex.ofReal_re]
+    simp only [negativeAllowance,ite_eq_left hs,SquarefreeVaughanLogSource.coefficient,
+      ite_eq_left hgood,Complex.ofReal_re]
     rw [show -(-Real.log n*VaughanLogAverage.riesz L n/L) =
       (Real.log n/L)*VaughanLogAverage.riesz L n by ring,
       ← mul_zero (Real.log n/L),← mul_max_of_nonneg _ _

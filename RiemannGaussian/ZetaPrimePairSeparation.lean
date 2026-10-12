@@ -132,7 +132,7 @@ two-term value; its support restriction does not alter that coefficient. -/
 theorem zetaDistinctPrimePairCoefficient_two_prime_powers {p q a b : ℕ}
     (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q) (ha : 0 < a) (hb : 0 < b) :
     zetaDistinctPrimePairCoefficient (p ^ a * q ^ b) = 2 * Real.log p * Real.log q := by
-  rw [zetaDistinctPrimePairCoefficient, if_neg (not_primePow_product hp hq hpq ha hb)]
+  rw [zetaDistinctPrimePairCoefficient, ite_eq_right (not_primePow_product hp hq hpq ha hb)]
   exact zetaPrimePairArithmetic_two_prime_powers hp hq hpq ha hb
 
 /-- Product size and logarithmic separation retain the full

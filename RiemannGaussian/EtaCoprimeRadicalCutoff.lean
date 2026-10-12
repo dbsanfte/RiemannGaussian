@@ -123,7 +123,7 @@ private theorem coefficient_eq_subsetCoefficient (g L V : ℕ) {n : ℕ} (hn : 1
   · intro x hx hx0
     have hc : x.1 * x.2 ∣ n ∧ x.1.Coprime x.2 ∧ g.Coprime x.1 ∧ g.Coprime x.2 := by
       by_contra hc
-      exact hx0 (if_neg hc)
+      exact hx0 (ite_eq_right hc)
     exact Finset.mem_product.mpr
       ⟨Finset.mem_powerset.mpr (primeFactors_subset_eligible (by omega)
         (dvd_of_mul_right_dvd hc.1) hc.2.2.1),
@@ -151,7 +151,7 @@ private theorem coefficient_eq_subsetCoefficient (g L V : ℕ) {n : ℕ} (hn : 1
     have hT := Finset.mem_powerset.mp hT
     have hc : Disjoint q.1 q.2 ∧ (∏ p ∈ q.1, p) ≤ L ∧ (∏ p ∈ q.2, p) ≤ V := by
       by_contra hc
-      exact hq0 (if_neg hc)
+      exact hq0 (ite_eq_right hc)
     have hRp (p : ℕ) (hp : p ∈ q.1) : p.Prime := prime_of_eligible (hR hp)
     have hTp (p : ℕ) (hp : p ∈ q.2) : p.Prime := prime_of_eligible (hT hp)
     have hRpF := Nat.primeFactors_prod hRp
@@ -162,19 +162,19 @@ private theorem coefficient_eq_subsetCoefficient (g L V : ℕ) {n : ℕ} (hn : 1
     refine ⟨(∏ p ∈ q.1, p, ∏ p ∈ q.2, p), Finset.mem_product.mpr
       ⟨Finset.mem_Icc.mpr ⟨prod_eligible_pos hR, hc.2.1⟩,
        Finset.mem_Icc.mpr ⟨prod_eligible_pos hT, hc.2.2⟩⟩, ?_, Prod.ext hRpF hTpF⟩
-    rw [if_pos ⟨prod_pair_dvd hR hT hc.1, hab,
+    rw [ite_eq_left ⟨prod_pair_dvd hR hT hc.1, hab,
       coprime_prod_eligible hR, coprime_prod_eligible hT⟩,
       sign_prod_primes hRp, sign_prod_primes hTp]
-    simpa only [if_pos hc] using hq0
+    simpa only [ite_eq_left hc] using hq0
   · intro x hx hx0
     obtain ⟨hxa, hxb⟩ := Finset.mem_product.mp hx
     have hc : x.1 * x.2 ∣ n ∧ x.1.Coprime x.2 ∧ g.Coprime x.1 ∧ g.Coprime x.2 := by
       by_contra hc
-      exact hx0 (if_neg hc)
-    rw [if_pos hc] at hx0 ⊢
+      exact hx0 (ite_eq_right hc)
+    rw [ite_eq_left hc] at hx0 ⊢
     have ha := ArithmeticFunction.moebius_ne_zero_iff_squarefree.mp (left_ne_zero_of_mul hx0)
     have hb := ArithmeticFunction.moebius_ne_zero_iff_squarefree.mp (right_ne_zero_of_mul hx0)
-    rw [if_pos ⟨hc.2.1.disjoint_primeFactors,
+    rw [ite_eq_left ⟨hc.2.1.disjoint_primeFactors,
       by simpa only [Nat.prod_primeFactors_of_squarefree ha] using (Finset.mem_Icc.mp hxa).2,
       by simpa only [Nat.prod_primeFactors_of_squarefree hb] using (Finset.mem_Icc.mp hxb).2⟩]
     conv_lhs => rw [← Nat.prod_primeFactors_of_squarefree ha, ← Nat.prod_primeFactors_of_squarefree hb]
@@ -260,7 +260,7 @@ theorem abs_coefficient_le_cutoffs (g L V n : ℕ) :
       intro b _
       split_ifs
       · rw [abs_mul]
-        exact mul_le_one₀ (ArithmeticFunction.abs_moebius_le_one (n := a))
+        exact (fun {a b : ℤ} (ha : a ≤ 1) (hb₀ : 0 ≤ b) (hb : b ≤ 1) => (mul_le_of_le_one_left hb₀ ha).trans hb) (ArithmeticFunction.abs_moebius_le_one (n := a))
           (abs_nonneg _) (ArithmeticFunction.abs_moebius_le_one (n := b))
       · norm_num
     _ = _ := by simp [Nat.card_Icc]

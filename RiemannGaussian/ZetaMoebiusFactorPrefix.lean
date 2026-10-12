@@ -47,7 +47,7 @@ theorem zetaMoebiusLogDivisorFibre_eq_affine (D : ℕ) {P n d : ℕ}
   apply Finset.sum_congr rfl
   intro a ha
   by_cases hcut : D < a * d
-  · rw [if_pos hcut, if_pos hcut, if_pos hcut,
+  · rw [ite_eq_left hcut, ite_eq_left hcut, ite_eq_left hcut,
       Real.log_mul (x := (P : ℝ)) (y := (n : ℝ))
         (by exact_mod_cast hP.ne') (by exact_mod_cast hn0.ne'),
       Real.log_mul (x := (a : ℝ)) (y := (d : ℝ))
@@ -104,7 +104,7 @@ theorem zetaMoebiusFactorCoefficient_eq_convolutions (D : ℕ) {P : ℕ}
   · subst n
     simp [zetaMoebiusFactorCoefficient, zetaMoebiusLogTailCoefficient]
   by_cases hcop : P.Coprime n
-  · rw [zetaMoebiusFactorCoefficient, if_pos hcop,
+  · rw [zetaMoebiusFactorCoefficient, ite_eq_left hcop,
       zetaMoebiusLogTailCoefficient_eq_fibres D hcop]
     apply Finset.sum_congr rfl
     intro d hd
@@ -113,18 +113,18 @@ theorem zetaMoebiusFactorCoefficient_eq_convolutions (D : ℕ) {P : ℕ}
     have hr0 : 0 < n / d := Nat.div_pos (Nat.le_of_dvd (Nat.pos_of_ne_zero hn) hdn) hd0
     have hcd := hcop.of_dvd_right hdn
     have hcr := hcop.of_dvd_right (Nat.div_dvd_of_dvd hdn)
-    have hZ : zetaCoprimeCoefficient P (n / d) = 1 := if_pos ⟨hr0.ne', hcr⟩
+    have hZ : zetaCoprimeCoefficient P (n / d) = 1 := ite_eq_left ⟨hr0.ne', hcr⟩
     simp only [zetaCoprimeLogCoefficient, hZ, one_mul, mul_one]
     by_cases hcut : d ≤ D
     · rw [zetaMoebiusLogDivisorFibre_eq_affine D hP hd]
       have hcut' : d ≤ D ∧ P.Coprime d := ⟨hcut, hcd⟩
-      simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, if_pos hcut']
+      simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, ite_eq_left hcut']
       ring
     · rw [(zetaMoebiusFactorPrefix_support D P (by omega)).1,
         (zetaMoebiusFactorPrefix_support D P (by omega)).2,
         zetaMoebiusLogDivisorFibre_eq_zero_outside hP1 hmix (by omega)]
       simp
-  · rw [zetaMoebiusFactorCoefficient, if_neg hcop]
+  · rw [zetaMoebiusFactorCoefficient, ite_eq_right hcop]
     symm
     apply Finset.sum_eq_zero
     intro d hd
@@ -184,13 +184,13 @@ theorem norm_zetaMoebiusFactorPrefix_le (D P d : ℕ) :
     ‖zetaMoebiusFactorSlope D P d‖ ≤ P.divisors.card ∧
       ‖zetaMoebiusFactorIntercept D P d‖ ≤ (P.divisors.card : ℝ) * Real.log P := by
   by_cases hcut : d ≤ D ∧ P.Coprime d
-  · simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, if_pos hcut, norm_mul]
+  · simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, ite_eq_left hcut, norm_mul]
     constructor
     · exact (mul_le_mul_of_nonneg_right (norm_moebius_le_one d) (norm_nonneg _)).trans
         (by simpa only [one_mul] using norm_zetaMoebiusFibreSlope_le D P d)
     · exact (mul_le_mul_of_nonneg_right (norm_moebius_le_one d) (norm_nonneg _)).trans
         (by simpa only [one_mul] using norm_zetaMoebiusFibreIntercept_le D P d)
-  · simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, if_neg hcut, norm_zero]
+  · simp only [zetaMoebiusFactorSlope, zetaMoebiusFactorIntercept, ite_eq_right hcut, norm_zero]
     exact ⟨by positivity, mul_nonneg (by positivity) (Real.log_natCast_nonneg P)⟩
 
 end

@@ -129,7 +129,7 @@ theorem window_fibre_polynomial {p m d P r : ℕ} (hp : 0 < p) (hr : 1 ≤ r)
     (targetWeight (tupleLabel m (positiveLabel (pow_pos hp r) P)) (fun _ => 1) c.val) ?_ theta
   intro x hx
   unfold targetWeight
-  apply if_neg
+  apply ite_eq_right
   intro he
   apply hx
   intro i j hij

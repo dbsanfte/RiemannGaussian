@@ -62,7 +62,7 @@ theorem pairedEtaHeatCommutatorKernel_eq_halfTilt_commutator (sigma h t u : ℝ)
   by_cases ht : 0 < t
   · by_cases hu : 0 < u
     · simp only [pairedEtaHeatCommutatorKernel, pairedEtaHalfTiltWindow, Set.indicator_apply,
-        mem_prod, mem_Ioi, ht, hu, and_self, if_true, pairedEtaHeatCommutatorKernelCore]
+        mem_prod, mem_Ioi, ht, hu, and_self, ite_true, pairedEtaHeatCommutatorKernelCore]
       rw [show -sigma * (t + u) / 2 = -sigma * t / 2 + -sigma * u / 2 by ring, Real.exp_add]
       ring
     · simp [pairedEtaHeatCommutatorKernel, pairedEtaHalfTiltWindow, ht, hu]

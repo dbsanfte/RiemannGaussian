@@ -107,7 +107,8 @@ continuously through every zeta zero in the window. -/
 theorem local_posLog_bound (k : ℕ) (hk : 1 ≤ k) {t : ℝ} (ht : 2 ≤ |t|) {s : ℂ}
     (hlo : line k ≤ s.re) (hhi : s.re ≤ 3 / 2) (hwindow : |s.im - t| ≤ 1) :
     Real.posLog ‖riemannZeta s‖ ≤ profile k t + 14 := by
-  have h := Real.posLog_le_posLog (norm_nonneg _) (local_norm_bound k hk ht hlo hhi hwindow)
+  have h := Real.posLog_le_posLog (neg_one_lt_zero.le.trans (norm_nonneg _))
+    (local_norm_bound k hk ht hlo hhi hwindow)
   have he : Real.posLog (Real.exp (profile k t + 14)) = profile k t + 14 := by
     rw [Real.posLog_eq_log (by
       rw [abs_of_pos (Real.exp_pos _)]

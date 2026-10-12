@@ -54,7 +54,7 @@ theorem rest_prime_log_le {u : ℝ} {j n p : ℕ} (hn : n∈restLabels u j)
   have hln : 0<log n := by linarith only [ht,hN]
   have howner := (div_lt_iff₀ hln).mp (rest_owner_share_lt hn)
   have hmax : p≤largestPrime n := by
-    rw [largestPrime,dif_pos (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
+    rw [largestPrime,dite_eq_left (show n.primeFactors.Nonempty from ⟨p,hp⟩)]
     exact Finset.le_max' _ _ hp
   have hl : log p≤log (largestPrime n) := log_le_log
     (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos) (by exact_mod_cast hmax)
@@ -212,7 +212,7 @@ theorem sum_step (u y : ℝ) (j : ℕ) (p : Fin 5→ℝ) (q : Fin 6→ℝ) (a : 
     simp only [hp.primeFactors,Finset.card_singleton] at hh
     omega
   simp only [unallocatedWeight,SquarefreeVaughanLogSource.coefficient,
-    if_pos (And.intro (hs n (hd hn)) hnp)]
+    ite_eq_left (And.intro (hs n (hd hn)) hnp)]
   push_cast
   ring
 
@@ -230,8 +230,8 @@ private theorem sum_extend (X Y : ℕ) (hXY : X≤Y) (t : ℕ→ℝ) :
     intro k hk hnot
     have hlo := (Finset.mem_Icc.mp hk).1
     have hx : ¬k≤X := fun hx => hnot (Finset.mem_Icc.mpr ⟨hlo,hx⟩)
-    simp only [if_neg hx])]
-  exact Finset.sum_congr rfl (fun k hk => if_pos (Finset.mem_Icc.mp hk).2)
+    simp only [ite_eq_right hx])]
+  exact Finset.sum_congr rfl (fun k hk => ite_eq_left (Finset.mem_Icc.mp hk).2)
 
 /-- The allocation payment is actually spent in the full floor. No
 allocation price, countwise allowance or head norm remains in its main. -/

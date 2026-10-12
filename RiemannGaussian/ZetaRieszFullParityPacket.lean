@@ -116,7 +116,7 @@ theorem fullParityBox_count_le {n : ℕ} (h : FullParityBox n) : n.primeFactors.
 
 theorem fullParitySelection_eq_zero_of_large_count {u : ℝ} {N K n : ℕ}
     (hc : 40 ≤ n.primeFactors.card) : fullParitySelection u N K n = 0 := by
-  apply if_neg
+  apply ite_eq_right
   intro hn
   have h := fullParityBox_count_le (Finset.mem_filter.mp hn).2.1
   omega

@@ -46,13 +46,13 @@ theorem zetaRightHalfQuadraticWindowCoefficient_support (rho : NontrivialZetaZer
   have ha : zetaMoebiusSievedPrimeCoefficient
       (zetaMoebiusGeometricCutoff (zetaMoebiusHeadGrowth (3 / 2 - rho.1.re)) N)
       (zetaRightHalfQuadraticPrimeSieve rho N) n ≠ 0 := by
-    simpa only [zetaRightHalfQuadraticWindowCoefficient, zetaLogWindowCoefficient, if_pos hw] using hn
+    simpa only [zetaRightHalfQuadraticWindowCoefficient, zetaLogWindowCoefficient, ite_eq_left hw] using hn
   have hS : ¬∃ P ∈ zetaRightHalfQuadraticPrimeSieve rho N, P ∣ n := by
     by_contra h
     simp [zetaMoebiusSievedPrimeCoefficient, h] at ha
   have hd : zetaMoebiusDistinctPrimeCoefficient
       (zetaMoebiusGeometricCutoff (zetaMoebiusHeadGrowth (3 / 2 - rho.1.re)) N) n ≠ 0 := by
-    simpa only [zetaMoebiusSievedPrimeCoefficient, if_pos hS] using ha
+    simpa only [zetaMoebiusSievedPrimeCoefficient, ite_eq_left hS] using ha
   refine ⟨hw, zetaLogWindow_gt_moebiusCutoff_sq rho hN hw,
     (zetaMoebiusDistinctPrimeCoefficient_support _ n hd).2, ?_⟩
   have hc : ¬2 ≤ ((zetaRightHalfPrimePatternPrimes rho N).filter (fun p ↦ p ∣ n)).card := by

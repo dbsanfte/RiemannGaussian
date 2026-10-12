@@ -110,7 +110,7 @@ theorem remainder_le_majorant {q : ℝ} (hq : 1 ≤ q) (m : ℕ) :
         zetaProperPrimePowerCoefficient m * zetaPrimeExpWeight 1 m := by
     by_cases hp : m.Prime
     · simp [hp, zetaProperPrimePowerCoefficient]
-    · simp only [hp, if_false, zetaProperPrimePowerCoefficient]
+    · simp only [hp, ite_false, zetaProperPrimePowerCoefficient]
       have hw : GaussianFermiZeroPair.window (gaussianScale q) (Real.log m) ≤ 1 := by
         unfold GaussianFermiZeroPair.window
         exact Real.exp_le_one_iff.mpr (by nlinarith [sq_nonneg (Real.log m)])

@@ -122,7 +122,7 @@ theorem norm_primeSquareMultipleTransform_le (F : ℕ → ℂ) (W Q : Finset ℕ
   have hW0 := Finset.prod_pos (fun p hp ↦ (hW p hp).pos)
   have hp : zetaPrimeExpWeight σ (∏ p ∈ W, p) ≤ ∏ p ∈ W, primeSquareCorrectedWeight σ p := by
     rw [zetaPrimeExpWeight_prod W (fun p hp ↦ (hW p hp).pos)]
-    apply Finset.prod_le_prod
+    apply Finset.prod_le_prod₀
     · intro p _
       exact (Real.exp_pos _).le
     · intro p _

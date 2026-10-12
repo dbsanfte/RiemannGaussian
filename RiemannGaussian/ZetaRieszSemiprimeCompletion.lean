@@ -51,7 +51,7 @@ theorem hasSum_pairLift {a : ℕ} (ha : 0 < a) (L : ℝ) (P : Polynomial ℂ) (N
   intro p
   by_cases hp : p.Prime
   · simp only [Function.comp_apply, pairLift, dvd_mul_right, Nat.mul_div_cancel_left _ ha,
-      hp, and_self, if_true, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
+      hp, and_self, ite_true, Complex.ofReal_div, Complex.ofReal_mul, Complex.ofReal_neg]
     ring
   · simp [Function.comp_apply, pairLift, Nat.mul_div_cancel_left _ ha, hp]
 
@@ -118,7 +118,7 @@ theorem norm_integerCoefficient_le_majorant (A : Finset ℕ) (K n : ℕ)
     apply Finset.sum_congr rfl
     intro a _
     by_cases ha : a ∣ n ∧ (n / a).Prime
-    · simp only [if_pos ha, Complex.ofReal_div, Complex.ofReal_neg, Complex.ofReal_mul]
+    · simp only [ite_eq_left ha, Complex.ofReal_div, Complex.ofReal_neg, Complex.ofReal_mul]
       ring
     · simp [ha]
   have hm0 : 0 ≤ ∑ a ∈ A.filter (fun a => a ∣ n ∧ (n / a).Prime), Real.log a :=
@@ -174,7 +174,7 @@ theorem tendsto_completed_integer_filter_sub_band (A : ℕ → Finset ℕ)
   filter_upwards [eventually_two_head_logs_le_length hu hu1] with N hN
   have he : b N = integerCoefficient (SquarefreeVaughanLogSource.length u N) (A N) := by
     funext n
-    simp only [b, if_pos hN]
+    simp only [b, ite_eq_left hN]
   rw [he]
 
 /-- The completed cofactor bound now holds on the ORIGINAL finite
@@ -303,10 +303,10 @@ theorem actual_pair_band_sub_completed_eq_prefix (A : Finset ℕ) (P : Polynomia
   intro p hp
   by_cases hband : a * p ∈ zetaPrimeLogBand N
   · by_cases hpX : p ≤ (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2
-    · simp only [if_pos hband, if_pos hpX, sub_mul]
+    · simp only [ite_eq_left hband, ite_eq_left hpX, sub_mul]
     · have hz := semiprime_completion_error_eq_zero_above (hA a ha).1
         (Nat.mem_primesLE.mp hp).2 (hA a ha).2 (lt_of_not_ge hpX)
-      simp only [if_pos hband, if_neg hpX, ← sub_mul, hz, zero_mul]
+      simp only [ite_eq_left hband, ite_eq_right hpX, ← sub_mul, hz, zero_mul]
   · simp [hband]
 
 end

@@ -320,8 +320,9 @@ theorem coefficient_five_upper_gap {n P Q : ℕ} (hs : Squarefree n)
   have hb := riesz_five_upper_gap hs hc hP hmax hQ hnext hLlo hLhi
   have hnp : ¬n.Prime := by intro h; rw [h.primeFactors,Finset.card_singleton] at hc; omega
   have hgood : Squarefree n ∧ ¬n.Prime := ⟨hs,hnp⟩
-  simp only [SquarefreeVaughanLogSource.coefficient,if_pos hgood,Complex.ofReal_re]
-  convert mul_le_mul_of_nonneg_left hb (div_nonneg (Real.log_natCast_nonneg n) hL.le) using 1 <;> first | rfl | ring
+  simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hgood,Complex.ofReal_re]
+  convert mul_le_mul_of_nonneg_left hb (div_nonneg (Real.log_natCast_nonneg n) hL.le) using 1
+  first | rfl | ring
 
 /-- Canonical largest and second-largest factors discharge the ordering
 premises. The original nonsquarefree coefficient is still exactly zero. -/
@@ -333,12 +334,12 @@ theorem actual_five_upper_gap {n : ℕ} (hc : n.primeFactors.card = 5)
   by_cases hs : Squarefree n
   · have hn : n.primeFactors.Nonempty := Finset.card_pos.mp (by omega)
     have hP : largestPrime n ∈ n.primeFactors := by
-      rw [largestPrime,dif_pos hn]
+      rw [largestPrime,dite_eq_left hn]
       exact Finset.max'_mem _ _
     have hmax (a p : ℕ) (hp : p ∈ a.primeFactors) : Real.log p ≤ Real.log (largestPrime a) := by
       have ha : a.primeFactors.Nonempty := ⟨p,hp⟩
       have hm : p ≤ largestPrime a := by
-        rw [largestPrime,dif_pos ha]
+        rw [largestPrime,dite_eq_left ha]
         exact Finset.le_max' _ _ hp
       exact Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
         (by exact_mod_cast hm)
@@ -351,7 +352,7 @@ theorem actual_five_upper_gap {n : ℕ} (hc : n.primeFactors.card = 5)
       rw [hquot,hfa,Finset.card_erase_of_mem hP,hc]
     have hQ := largestPrime_mem_of_four hac
     exact coefficient_five_upper_gap hs hc hP (hmax n) hQ (hmax _) hL hLlo hLhi
-  · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,if_false,Complex.zero_re]
+  · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,ite_false,Complex.zero_re]
     exact mul_nonneg (div_nonneg (Real.log_natCast_nonneg n) hL.le) (le_max_left _ _)
 
 /-- Failure of either largest-prime gap makes the entire five-prime
@@ -418,10 +419,11 @@ theorem coefficient_five_le_three_least {n : ℕ} (hc : n.primeFactors.card = 5)
       have hh := (neg_le_abs (VaughanLogAverage.riesz L n)).trans hr
       nlinarith only [hh]
     have hgood : Squarefree n ∧ ¬n.Prime := ⟨hs,hnp⟩
-    simp only [SquarefreeVaughanLogSource.coefficient,if_pos hgood,Complex.ofReal_re]
+    simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hgood,Complex.ofReal_re]
     convert mul_le_mul_of_nonneg_left hb (div_nonneg (Real.log_natCast_nonneg n) hL.le)
-      using 1 <;> first | rfl | ring
-  · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,if_false,Complex.zero_re]
+      using 1
+    first | rfl | ring
+  · simp only [SquarefreeVaughanLogSource.coefficient,hs,false_and,ite_false,Complex.zero_re]
     exact mul_nonneg (div_nonneg (Real.log_natCast_nonneg n) hL.le)
       (mul_nonneg (by norm_num) (Real.log_natCast_nonneg n.minFac))
 

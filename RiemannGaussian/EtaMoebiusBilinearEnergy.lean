@@ -64,8 +64,8 @@ private theorem highProductPrefix_eq_divided (rho : NontrivialZetaZero) (D M : �
       apply Finset.sum_congr rfl
       intro d _
       by_cases hd : D < d
-      · simp only [if_pos hd, pairedEtaUnpairedDirichletPrefix, Finset.mul_sum]
-      · simp only [if_neg hd, Finset.sum_const_zero]
+      · simp only [ite_eq_left hd, pairedEtaUnpairedDirichletPrefix, Finset.mul_sum]
+      · simp only [ite_eq_right hd, Finset.sum_const_zero]
     _ = _ := by rw [← Finset.sum_filter, he]
 
 /-- The original high-divisor aggregate is exactly the completed partial Dirichlet sum of the fixed alternating product coefficients, at every physical cutoff. -/

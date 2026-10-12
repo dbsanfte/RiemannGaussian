@@ -58,8 +58,8 @@ theorem euclidFrames_expand (r₀ r₁ x y : ℕ) (negative : Bool) :
       euclidPairs r₀ r₁ x y negative := by
   rw [euclidFrames,euclidPairs]
   by_cases h : r₁=0
-  · simp only [if_pos h,List.flatMap_nil]
-  · simp only [if_neg h,List.flatMap_cons,expandFrame,frameQuotient,List.cons_append]
+  · simp only [ite_eq_left h,List.flatMap_nil]
+  · simp only [ite_eq_right h,List.flatMap_cons,expandFrame,frameQuotient,List.cons_append]
     rw [euclidFrames_expand]
 termination_by r₁
 decreasing_by exact Nat.mod_lt _ (by omega)
@@ -72,10 +72,10 @@ theorem euclidPairs_length_eq_frameSum {r₀ r₁ x y : ℕ} (negative : Bool)
       ((euclidFrames r₀ r₁ x y negative).map frameQuotient).sum := by
   rw [euclidPairs,euclidFrames]
   by_cases h : r₁=0
-  · simp only [if_pos h,List.length_nil,List.map_nil,List.sum_nil]
+  · simp only [ite_eq_left h,List.length_nil,List.map_nil,List.sum_nil]
   · have hp : 0<r₁ := by omega
     have hq := Nat.div_pos horder.le hp
-    simp only [if_neg h,List.length_cons,List.length_append,List.length_map,
+    simp only [ite_eq_right h,List.length_cons,List.length_append,List.length_map,
       List.length_range,List.map_cons,List.sum_cons,frameQuotient]
     rw [euclidPairs_length_eq_frameSum (!negative) (Nat.mod_lt _ hp)]
     omega
@@ -90,9 +90,9 @@ theorem euclidFrames_fit {m r₀ r₁ x y : ℕ} {negative : Bool}
       f.larger*f.currentWeight+f.smaller*f.priorWeight=m := by
   rw [euclidFrames] at hf
   by_cases h : r₁=0
-  · simp only [if_pos h,List.not_mem_nil] at hf
+  · simp only [ite_eq_left h,List.not_mem_nil] at hf
   · have hp : 0<r₁ := by omega
-    rw [if_neg h,List.mem_cons] at hf
+    rw [ite_eq_right h,List.mem_cons] at hf
     rcases hf with rfl|hf
     · exact ⟨hp,hy,horder,hdet⟩
     · have hq := Nat.div_pos horder.le hp
@@ -122,9 +122,9 @@ theorem euclidFrames_remainder_bound {r₀ r₁ x y : ℕ} {negative : Bool}
     0<f.smaller ∧ f.smaller≤r₁ := by
   rw [euclidFrames] at hf
   by_cases h : r₁=0
-  · simp only [if_pos h,List.not_mem_nil] at hf
+  · simp only [ite_eq_left h,List.not_mem_nil] at hf
   · have hp : 0<r₁ := by omega
-    rw [if_neg h,List.mem_cons] at hf
+    rw [ite_eq_right h,List.mem_cons] at hf
     rcases hf with rfl|hf
     · exact ⟨hp,le_refl _⟩
     · have ht := euclidFrames_remainder_bound hf
@@ -137,10 +137,10 @@ theorem euclidFrames_strict (r₀ r₁ x y : ℕ) (negative : Bool) :
     (euclidFrames r₀ r₁ x y negative).Pairwise (fun f g => g.smaller<f.smaller) := by
   rw [euclidFrames]
   by_cases h : r₁=0
-  · simp only [if_pos h]
+  · simp only [ite_eq_left h]
     exact List.Pairwise.nil
   · have hp : 0<r₁ := by omega
-    rw [if_neg h,List.pairwise_cons]
+    rw [ite_eq_right h,List.pairwise_cons]
     refine ⟨?_,euclidFrames_strict _ _ _ _ _⟩
     intro f hf
     exact (euclidFrames_remainder_bound hf).2.trans_lt (Nat.mod_lt _ hp)
@@ -225,9 +225,9 @@ theorem publicChargeTags_nodup (N m : ℕ) : (publicChargeTags N m).Nodup := by
   constructor
   · intro j _
     by_cases hj : j.Coprime m
-    · rw [if_pos hj]
+    · rw [ite_eq_left hj]
       exact euclidFrameCharges_nodup j _ _ _ _ _
-    · simp only [if_neg hj,List.nodup_nil]
+    · simp only [ite_eq_right hj,List.nodup_nil]
   · apply List.nodup_range.imp
     intro a b hne tag ha hb
     dsimp only at ha hb
@@ -255,9 +255,9 @@ theorem publicPackets_length_two_charges {N m : ℕ} (hm : 0<m) :
   apply length_flatMap_mul
   intro j
   by_cases hj : j.Coprime m
-  · rw [if_pos hj,if_pos hj,residueChargeTags_length hm]
+  · rw [ite_eq_left hj,ite_eq_left hj,residueChargeTags_length hm]
     exact length_flatMap_const _ 2 (by intro v; rfl) _
-  · simp only [if_neg hj,List.length_nil,Nat.mul_zero]
+  · simp only [ite_eq_right hj,List.length_nil,Nat.mul_zero]
 
 /-- Every retained current frame is still an actual original public vector. -/
 theorem residueFrames_current_mem {N m j : ℕ} {f : EuclidFrame}
@@ -439,7 +439,7 @@ theorem publicChargeTag_allowed {N m : ℕ} (hm : 0<m) {tag : ChargeTag}
   obtain ⟨j,hjm,ht⟩ := List.mem_flatMap.mp ht
   change tag∈(if j.Coprime m then residueChargeTags N m j else []) at ht
   by_cases hj : j.Coprime m
-  · rw [if_pos hj] at ht
+  · rw [ite_eq_left hj] at ht
     obtain ⟨f,hf,ht⟩ := List.mem_flatMap.mp ht
     obtain ⟨k,hk,rfl⟩ := List.mem_map.mp ht
     have hkq := List.mem_range.mp hk
@@ -461,7 +461,7 @@ theorem publicChargeTag_allowed {N m : ℕ} (hm : 0<m) {tag : ChargeTag}
     have hjfiber : j∈squareFiber N m f.negative f.smaller f.currentWeight :=
       squareFiber_mem_iff.mpr ⟨List.mem_range.mp hjm,residueFrame_square_eq hm hj hf⟩
     exact Finset.mem_biUnion.mpr ⟨_,hbase,Finset.mem_image.mpr ⟨j,hjfiber,rfl⟩⟩
-  · simp only [if_neg hj,List.not_mem_nil] at ht
+  · simp only [ite_eq_right hj,List.not_mem_nil] at ht
 
 theorem chargeTriples_card_le (m : ℕ) :
     (chargeTriples m).card≤m*(Nat.log2 m+1)^2 :=

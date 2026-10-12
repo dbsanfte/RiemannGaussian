@@ -445,11 +445,11 @@ theorem exists_literal_joined_bounds :
   let B' := fun n j => if hn : n ∈ S then B n hn j else 0
   have hcoef' n (hn : n ∈ S) j (hj : j ≤ N+1) :
       0 ≤ B' n j ∧ B' n j ≤ ((N+1).choose j : ℝ)*log n^(N+1-j) := by
-    simpa only [B',dif_pos hn] using hcoef n hn j hj
+    simpa only [B',dite_eq_left hn] using hcoef n hn j hj
   have hid' n (hn : n ∈ S) p (hp : p ∈ P) :
       (1-boundedShare A N (p*n))*log (p*n : ℕ)^(N+1) =
         ∑ j ∈ Finset.range (N+2), B' n j*log p^j := by
-    simpa only [B',dif_pos hn] using
+    simpa only [B',dite_eq_left hn] using
       hid n hn p (Finset.mem_filter.mp hp).2 (hPA hp) (hcop n hn p hp)
   let w := fun j (n : ℕ) => exp (-log n/2)*B' n j/(n : ℝ)
   let V := fun j => exp (-log M/2)*((N+1).choose j : ℝ)*log (2*M : ℕ)^(N+1-j)

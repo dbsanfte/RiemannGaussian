@@ -413,6 +413,30 @@ private theorem density_tail_bound {s : ℂ} (hs : 0 < s.re) (g : ℝ → ℝ)
   exact (mul_le_mul_of_nonneg_left (hb _ (Real.exp_pos t)) (Real.exp_pos _).le).trans_eq
     (by ring)
 
+/-- Exact literal tail, available for stronger accumulation-point bounds. -/
+theorem B_sub_prefix_eq_tail {s : ℂ} (hs : 0 < s.re) (N : ℕ) :
+    B s-(∑ n ∈ Finset.range N, polynomialCell (bPolynomial (n+1)) s n) =
+      ∫ t in Iic (Real.log (edge N)),
+        Complex.exp (s*t)*(quadraticDensity (Real.exp t) : ℂ) := by
+  have he := integral_sub_prefix_cells (integrable_B hs) (fun t ht => by
+    have hx : 6 ≤ Real.exp t := by
+      have h := (Real.log_lt_iff_lt_exp (by norm_num : (0 : ℝ) < 12)).mp ht
+      linarith
+    simp [quadraticDensity, moment_zero_above _ hx]) N
+  simpa only [B, integral_B_cell hs] using he
+
+/-- Exact quartic tail with the same literal cell endpoints. -/
+theorem C_sub_prefix_eq_tail {s : ℂ} (hs : 0 < s.re) (N : ℕ) :
+    C s-(∑ n ∈ Finset.range N, polynomialCell (cPolynomial (n+1)) s n) =
+      ∫ t in Iic (Real.log (edge N)),
+        Complex.exp (s*t)*(quarticDensity (Real.exp t) : ℂ) := by
+  have he := integral_sub_prefix_cells (integrable_C hs) (fun t ht => by
+    have hx : 6 ≤ Real.exp t := by
+      have h := (Real.log_lt_iff_lt_exp (by norm_num : (0 : ℝ) < 12)).mp ht
+      linarith
+    simp [quarticDensity, moment_zero_above _ hx]) N
+  simpa only [C, integral_C_cell hs] using he
+
 /-- Explicit certified truncation error for the elementary quadratic series. -/
 theorem B_prefix_error {s : ℂ} (hs : 0 < s.re) (N : ℕ) :
     ‖B s-∑ n ∈ Finset.range N, polynomialCell (bPolynomial (n+1)) s n‖ ≤

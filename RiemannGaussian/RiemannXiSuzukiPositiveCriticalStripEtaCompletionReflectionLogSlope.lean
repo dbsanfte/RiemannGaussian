@@ -58,7 +58,7 @@ theorem logDeriv_pairedEtaCompletedLaplaceAmplitude
     subst s
     norm_num at hspos
   unfold pairedEtaCompletedLaplaceAmplitude
-  rw [logDeriv_mul (f := pairedEtaXiCompletionFactor)
+  rw [logDeriv_fun_mul (f := pairedEtaXiCompletionFactor)
     (g := fun z : ℂ => z) s
     (pairedEtaXiCompletionFactor_ne_zero hspos hslt) hs0
     (differentiableAt_pairedEtaXiCompletionFactor hspos hslt)
@@ -87,7 +87,7 @@ theorem logDeriv_pairedEtaLaplaceReflectionMultiplier_eq_sum
       (fun z : ℂ => pairedEtaCompletedLaplaceAmplitude (1 - z)) s :=
     hpartnerDiff.comp s hsubDiff
   unfold pairedEtaLaplaceReflectionMultiplier
-  rw [logDeriv_div s hsAmp hpartnerAmp hsDiff hcompDiff]
+  rw [logDeriv_fun_div s hsAmp hpartnerAmp hsDiff hcompDiff]
   have hcomp :
       logDeriv (fun z : ℂ => pairedEtaCompletedLaplaceAmplitude (1 - z)) s =
         -logDeriv pairedEtaCompletedLaplaceAmplitude (1 - s) := by

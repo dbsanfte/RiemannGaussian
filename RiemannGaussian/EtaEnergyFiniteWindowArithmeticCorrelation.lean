@@ -48,15 +48,14 @@ theorem hasDerivAt_pairedEtaCenteredMomentEndpointPolynomial
         (hasDerivAt_const (x := t) (c := s⁻¹))
   | succ k ih =>
       have hu : HasDerivAt (fun x : ℝ => ((x - a : ℝ) : ℂ)) 1 t := by
-        convert ((hasDerivAt_id t).sub_const a).ofReal_comp using 1 <;> simp
+        convert ((hasDerivAt_id t).sub_const a).ofReal_comp using 1
+        simp
       have hpow := hu.pow (k + 1)
       have hfirst := hpow.div_const s
       have hsecond :=
         (ih t).const_mul (((k + 1 : ℕ) : ℂ) / s)
       convert hfirst.add hsecond using 1
       · rfl
-      · funext x
-        rfl
       · simp only [pairedEtaCenteredMomentEndpointPolynomial,
           Nat.add_sub_cancel, mul_one]
         field_simp [hs]
@@ -84,8 +83,6 @@ theorem hasDerivAt_pairedEtaCenteredMomentEndpointPrimitive
     (hasDerivAt_pairedEtaCenteredMomentEndpointPolynomial k hs a t)
   convert hmul using 1
   · rfl
-  · funext x
-    rfl
   · simp [Function.comp_apply, neg_mul]
     ring
 

@@ -53,9 +53,8 @@ theorem pairedEtaWeightedMomentDivisorPhysicalMeanSquare_le_parity
       have hM : (0 : ℝ) < (A + n : ℕ) := by exact_mod_cast (show 1 ≤ A + n by omega)
       convert pairedEtaWeightedMomentDivisorFamily_physical_sq_le rho hk w
         (show T ≤ A + n by omega) ⟨Real.log_le_log hM (by linarith), le_rfl⟩ using 1
-      · rfl
-      · dsimp [B, E]
-        ring
+      dsimp [B, E]
+      ring
     _ = 2 * ‖pairedEtaMomentDivisorAmplitude rho k‖ ^ 2 *
         ((∑ n ∈ Finset.range L, ‖pairedEtaWeightedDivisorParityFamily w (A + n) T‖ ^ 2) / L) +
       B * ((∑ n ∈ Finset.range L, 1 / ((A + n : ℕ) : ℝ) ^ 2) / L) := by

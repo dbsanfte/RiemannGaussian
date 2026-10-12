@@ -97,12 +97,12 @@ theorem signedHeatScalarIntegral_eq_sign (x : ℝ) :
     rw [hbase]
     unfold realSpectralSign
     rcases lt_or_gt_of_ne hx with hxneg | hxpos
-    · rw [if_neg (not_lt.mpr hxneg.le), if_pos hxneg,
+    · rw [ite_eq_right (not_lt.mpr hxneg.le), ite_eq_left hxneg,
         abs_of_neg hxneg]
       have hsqrt : Real.sqrt Real.pi ≠ 0 :=
         ne_of_gt (Real.sqrt_pos.2 Real.pi_pos)
       field_simp
-    · rw [if_pos hxpos, abs_of_pos hxpos]
+    · rw [ite_eq_left hxpos, abs_of_pos hxpos]
       have hsqrt : Real.sqrt Real.pi ≠ 0 :=
         ne_of_gt (Real.sqrt_pos.2 Real.pi_pos)
       field_simp
@@ -397,7 +397,7 @@ theorem tendsto_scalarHeat_atTop (x : ℝ) :
         (neg_lt_zero.mpr hxSq) tendsto_id
       exact h.congr' (Eventually.of_forall fun u ↦ by
         simp only [id_eq, mul_comm, neg_mul, mul_neg])
-    rw [if_neg hx]
+    rw [ite_eq_right hx]
     have hExp := Real.tendsto_exp_atBot.comp hlinear
     change Tendsto (fun u : ℝ ↦ Real.exp (-u * x ^ 2)) atTop
       (nhds 0) at hExp

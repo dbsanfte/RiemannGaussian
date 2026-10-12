@@ -586,7 +586,7 @@ theorem eventually_owner_core_ceiling {u h b lo hi : ℝ} {M : ℕ}
       exact ⟨ht'.1.le,ht'.2⟩) hphase hfloor
   change (∑ n ∈ S, f y n).re ≤ _
   have hsum := hey.symm.le.trans (add_le_add (le_refl (∑ n ∈ S\D, f y n).re) hupper)
-  convert hsum using 1 <;> first | rfl | (dsimp only [C]; ring)
+  convert hsum using 1 ; first | rfl | (dsimp only [C]; ring)
 
 end
 end RiemannGaussian.ZetaRieszFiveOwnerBoxes

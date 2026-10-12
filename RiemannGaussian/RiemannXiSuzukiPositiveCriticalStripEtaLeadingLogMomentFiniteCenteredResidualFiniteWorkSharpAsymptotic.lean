@@ -103,9 +103,8 @@ private theorem tendsto_oddEndpoint_div_succ_cpow_one_aux (s : ℂ) :
         (((2 * (N + 1) + 1 : ℕ) : ℝ) : ℂ))) atTop (nhds 1) := by
     have hc := Complex.continuous_ofReal.tendsto 1 |>.comp hratioReal
     convert hc using 1
-    · funext N
-      simp only [Function.comp_apply, ofReal_div, ofReal_natCast]
-    · norm_num
+    funext N
+    simp only [Function.comp_apply, ofReal_div, ofReal_natCast]
   simpa only [Complex.one_cpow] using
     hratioComplex.cpow tendsto_const_nhds Complex.one_mem_slitPlane
 
@@ -615,9 +614,8 @@ private theorem tendsto_scaled_lowerFinitePrefixWorkTerm_zero_aux
       atTop (nhds 0) := by
     have hc := Complex.continuous_ofReal.tendsto 0 |>.comp hscaleReal
     convert hc using 1
-    · funext N
-      simp only [Function.comp_apply, ofReal_mul, ofReal_pow]
-    · norm_num
+    funext N
+    simp only [Function.comp_apply, ofReal_mul, ofReal_pow]
   have hcoupled := tendsto_succ_lowerPhaseWeightedCoupledMoment_aux rho hrho j
   have hprod := hscaleComplex.mul hcoupled
   have hweighted := Filter.Tendsto.const_mul
@@ -697,9 +695,8 @@ private theorem tendsto_scaled_topFinitePrefixWorkTerm_aux
     have hc := Complex.continuous_ofReal.tendsto 2 |>.comp
       tendsto_oddEndpoint_mul_shiftIncrement_two_aux
     convert hc using 1
-    · funext N
-      simp only [Function.comp_apply, ofReal_mul]
-    · norm_num
+    funext N
+    simp only [Function.comp_apply, ofReal_mul]
   have hcoupled := tendsto_succ_lowerPhaseWeightedCoupledMoment_aux rho hrho k
   have hprod := hscaleComplex.mul hcoupled
   have hweighted := Filter.Tendsto.const_mul

@@ -211,8 +211,8 @@ theorem selected_moment_bound {k J : ℕ} {omega : ℝ}
         (order k J) hk hs hsMax (by omega) hr hcap
         (selectedCoefficient_pos (by omega) homega J) homega homegaHalf
         (selectedDefect_bounds hk J).2 hdepth hroot hsupply hsource P hP
-      simpa only [order_succ, selectedCoefficient, selectedDefect, if_pos hj, selectedStep] using hh
-    · simpa only [order_succ, selectedCoefficient, selectedDefect, if_neg hj] using
+      simpa only [order_succ, selectedCoefficient, selectedDefect, ite_eq_left hj, selectedStep] using hh
+    · simpa only [order_succ, selectedCoefficient, selectedDefect, ite_eq_right hj] using
         raise_moment_bound hP (hsource P hP)
 
 end

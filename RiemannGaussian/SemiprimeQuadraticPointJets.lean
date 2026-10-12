@@ -99,7 +99,7 @@ theorem jetY_affine {N m : ℕ} (w : FamilyPacket)
   have hx := pointX_coefficient w hu
   have hy := jetY_coefficient (N:=N) w hu
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   unfold pointResidual at hy
   push_cast at hy
   have hprod : (w.original.a : ZMod (m^2))*
@@ -121,7 +121,7 @@ theorem publicPacket_auxiliary_conic {N m : ℕ} (hm : 0<m) {w : FamilyPacket}
   push_cast at hz
   have hx := pointX_coefficient w hu
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   have hprod : (w.original.a : ZMod (m^2))^2*
       ((2*packetRoot (m^2) m w false)^2-16*(N : ZMod (m^2))*jetX m w)=0 := by
     unfold jetX
@@ -166,7 +166,7 @@ theorem publicPacket_auxiliary_tangent {N m : ℕ} (hm : 0<m) {w : FamilyPacket}
   push_cast at hz
   have hx := pointX_coefficient w hu
   have hr := packetRoot_coefficient (m:=m) w false hu
-  simp only [packetScale,Bool.false_eq_true,if_false] at hr
+  simp only [packetScale,Bool.false_eq_true,ite_false] at hr
   have hprod : (w.original.a : ZMod (m^2))*
       ((w.residue : ZMod (m^2))*(2*packetRoot (m^2) m w false)-
         2*(w.residue : ZMod (m^2))^2-2*(N : ZMod (m^2))*jetX m w)=0 := by

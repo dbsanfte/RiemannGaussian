@@ -42,14 +42,14 @@ theorem prime_incidence_second_moment (P : Finset ℕ)
     have hq0 : (0 : ℝ) < q := by exact_mod_cast (hP q hq).pos
     by_cases hpq : p=q
     · subst q
-      rw [Nat.gcd_self,if_pos rfl]
+      rw [Nat.gcd_self,ite_eq_left rfl]
       have hid : (p : ℝ)/((p : ℝ)*p) = 1/(p : ℝ) := by field_simp
       rw [hid]
       nlinarith [sq_nonneg (1/(p : ℝ))]
     · have hg : Nat.gcd p q = 1 :=
         ((hP p hp).coprime_iff_not_dvd.mpr
           (fun h => hpq ((Nat.prime_dvd_prime_iff_eq (hP p hp) (hP q hq)).mp h))).gcd_eq_one
-      rw [hg,if_neg hpq]
+      rw [hg,ite_eq_right hpq]
       simp only [Nat.cast_one,add_zero]
       field_simp
       norm_num
@@ -81,7 +81,7 @@ theorem prime_incidence_second_moment (P : Finset ℕ)
       · simp only [sq,Finset.mul_sum,mul_comm]
       · apply Finset.sum_congr rfl
         intro p hp
-        simp only [Finset.sum_ite_eq,if_pos hp]
+        simp only [Finset.sum_ite_eq,ite_eq_left hp]
 
 /-- The all-integer count budget follows with the literal prime set. -/
 theorem prime_count_second_moment (X : ℕ) :

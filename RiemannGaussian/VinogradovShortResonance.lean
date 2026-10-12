@@ -246,11 +246,11 @@ theorem polynomial_bound (k : ℕ) (hk : 12 ≤ k)
     ‖∑ b : Fin M, ∑ c ∈ B, polynomialPhase k t z ((b.val + 1 : ℕ) : ℝ) c‖ ≤
       2 * (M : ℝ) ^ (2 - saving k) := by
   by_cases hk48 : 48 ≤ k
-  · rw [saving, if_pos hk48]
+  · rw [saving, ite_eq_left hk48]
     exact polynomial_bound_of_defect k hk ((3 * k + 1) * k) le_rfl (by nlinarith)
       M hM (by nlinarith) _ _ (VinogradovShortMoment.moment_three_bound (by omega) M hM)
       (three_ratio k hk48) t z htlo hthi hzlo hzhi B hB
-  · rw [saving, if_neg hk48]
+  · rw [saving, ite_eq_right hk48]
     exact polynomial_bound_of_defect k hk ((4 * k + 1) * k) (by nlinarith) (by nlinarith)
       M hM hrM _ _ (VinogradovShortMoment.moment_four_bound (by omega) M hM)
       (four_ratio k hk) t z htlo hthi hzlo hzhi B hB

@@ -109,7 +109,7 @@ theorem signed_bin_bounds {κ ι : Type*} (T : Finset κ) (S : κ → Finset ι)
         (∑ i∈S b,max 0 (D-x b i)))) ≤
       (∑ b∈T,if odd b then -lo b else hi b) := by
   constructor <;> apply Finset.sum_le_sum <;> intro b hbt <;>
-    cases odd b <;> simp only [Bool.false_eq_true,if_false,if_true] <;>
+    cases odd b <;> simp only [Bool.false_eq_true,ite_false,ite_true] <;>
     have hh := hb b hbt <;> linarith only [hh.1,hh.2]
 
 end RiemannGaussian.ZetaRieszSubsetMomentBounds

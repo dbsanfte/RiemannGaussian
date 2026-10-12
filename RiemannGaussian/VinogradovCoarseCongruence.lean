@@ -208,7 +208,7 @@ theorem coarse_anisotropic_card_le {p k a m : ℕ} [Fact p.Prime] (hkp : k < p)
   apply Nat.mul_le_mul_right
   calc
     (∏ i, (T i).card) ≤ ∏ i, p ^ (m - e i) := by
-      apply Finset.prod_le_prod (fun _ _ => Nat.zero_le _)
+      apply Finset.prod_le_prod₀ (fun _ _ => Nat.zero_le _)
       intro i hi
       exact VinogradovAnisotropicCongruence.prime_power_class_card_le (p := p) (he i) (target i)
     _ = p ^ (∑ i, (m - e i)) := Finset.prod_pow_eq_pow_sum _ _ _

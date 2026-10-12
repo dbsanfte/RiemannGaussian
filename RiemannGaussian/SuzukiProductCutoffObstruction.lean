@@ -133,7 +133,7 @@ theorem suzukiTopBandInteraction_le_productCutoffRemainder (K : ℕ) :
         ∑ i ∈ Finset.range j, suzukiPrimeWeight (K + i + 1) := by
       apply Finset.sum_congr rfl
       intro i _
-      rw [if_neg (not_le.mpr (by
+      rw [ite_eq_right (not_le.mpr (by
         simpa only [show K + 1 + i + 2 = K + i + 3 by omega] using
           suzukiTopBand_product_gt_cutoff K i j))]
       congr 1

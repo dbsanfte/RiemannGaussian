@@ -114,7 +114,7 @@ theorem coefficient_eq_active {L : ℝ} {n : ℕ} (hn : Squarefree n)
   rw [sub_sub_cancel,ZetaRieszReflectedLinear.moebius_eq_primeCount hn] at hr
   simp only [Int.cast_pow,Int.cast_neg,Int.cast_one] at hr
   have hsupport : Squarefree n ∧ ¬ n.Prime := ⟨hn,hnp⟩
-  simp only [SquarefreeVaughanLogSource.coefficient,if_pos hsupport,Complex.ofReal_re]
+  simp only [SquarefreeVaughanLogSource.coefficient,ite_eq_left hsupport,Complex.ofReal_re]
   rw [hr,riesz_eq_active (Real.log n-L) hn]
   ring
 
@@ -248,7 +248,7 @@ theorem coefficient_activeAllowance_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
   · have hs : Squarefree n ∧ 5 ≤ n.primeFactors.card := ⟨hn,hc⟩
     by_cases ho : 3 ≤ (outerPrimes (Real.log n-L) n).card
     · rw [coefficient_eq_zero_of_three_outer hn hc hD ho]
-      simp only [activeAllowance,if_pos hs,activeCapacity,if_pos ho,Nat.cast_zero,
+      simp only [activeAllowance,ite_eq_left hs,activeCapacity,ite_eq_left ho,Nat.cast_zero,
         mul_zero,Complex.zero_re,neg_zero,le_refl,and_self]
     · have ha := active_count_ge_two hn hc hD
       have h := coefficient_active_bounds hL hn (by omega) ha
@@ -257,10 +257,10 @@ theorem coefficient_activeAllowance_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
         have := count_split (Real.log n-L) n
         omega
       rw [he] at h
-      simpa only [activeAllowance,if_pos hs,activeCapacity,if_neg ho,ite_true,
+      simpa only [activeAllowance,ite_eq_left hs,activeCapacity,ite_eq_right ho,ite_true,
         ite_false,show ¬ (1 : ℕ) = 0 by omega] using h
   · simp only [activeAllowance,SquarefreeVaughanLogSource.coefficient,hn,false_and,
-      if_false,Complex.zero_re,neg_zero,le_refl,and_self]
+      ite_false,Complex.zero_re,neg_zero,le_refl,and_self]
 
 /-- One reflected large prime improves both seven-prime coefficient
 costs from the previous interval [-5,10] to [-4,6]. -/
@@ -313,10 +313,10 @@ private theorem coefficient_previous_bounds {L : ℝ} (hL : 0 < L) {n : ℕ}
     -previousAllowance L n 0 ≤ (SquarefreeVaughanLogSource.coefficient L n).re ∧
       (SquarefreeVaughanLogSource.coefficient L n).re ≤ previousAllowance L n 1 := by
   by_cases he : n.primeFactors.card%2 = 0
-  · simpa only [previousAllowance,if_pos he] using
+  · simpa only [previousAllowance,ite_eq_left he] using
       ZetaRieszComplementWindow.coefficient_allowance_bounds hL hc he hcut
   · have ho : n.primeFactors.card%2 = 1 := by omega
-    simpa only [previousAllowance,if_neg he] using
+    simpa only [previousAllowance,ite_eq_right he] using
       ZetaRieszIntersectingWindow.coefficient_allowance_bounds hL hc ho hcut
 
 /-- A pointwise intersection of two proved intervals for the same
@@ -371,12 +371,12 @@ theorem costs_le_previous (L y : ℝ) (n : ℕ) :
   have h₀ := allowance_le_previous L n 0
   have h₁ := allowance_le_previous L n 1
   by_cases he : n.primeFactors.card%2 = 0
-  · simp only [previousAllowance,if_pos he] at h₀ h₁
-    simp only [if_pos he,floorCost,ceilingCost,ZetaRieszComplementWindow.floorCost,
+  · simp only [previousAllowance,ite_eq_left he] at h₀ h₁
+    simp only [ite_eq_left he,floorCost,ceilingCost,ZetaRieszComplementWindow.floorCost,
       ZetaRieszComplementWindow.ceilingCost]
     constructor <;> gcongr
-  · simp only [previousAllowance,if_neg he] at h₀ h₁
-    simp only [if_neg he,floorCost,ceilingCost,ZetaRieszIntersectingWindow.floorCost,
+  · simp only [previousAllowance,ite_eq_right he] at h₀ h₁
+    simp only [ite_eq_right he,floorCost,ceilingCost,ZetaRieszIntersectingWindow.floorCost,
       ZetaRieszIntersectingWindow.ceilingCost]
     constructor <;> gcongr
 
@@ -463,7 +463,7 @@ theorem core_residual_eq_zero_of_three_outer {u : ℝ} (hu : 1/2 ≤ u) {N K n :
     residualCoefficient (intermediatePrimes u N) (SquarefreeVaughanLogSource.length u N) N n = 0 := by
   by_cases hs : Squarefree n
   · exact core_coefficient_eq_zero hu hN hn hs hc ho
-  · simp only [residualCoefficient,SquarefreeVaughanLogSource.coefficient,hs,false_and,if_false,mul_zero]
+  · simp only [residualCoefficient,SquarefreeVaughanLogSource.coefficient,hs,false_and,ite_false,mul_zero]
 
 /-- Every nonzero high-count label left in any actual core rest has at
 most two reflected large primes. No prime-density claim is used. -/

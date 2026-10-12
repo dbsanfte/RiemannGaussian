@@ -79,7 +79,7 @@ the closed support requested for the inverse representative. -/
 def supportKernel (s d : ℝ) : ℝ := if s ≤ d then 1 else 0
 
 theorem supportKernel_eq_zero {s d : ℝ} (h : d < s) : supportKernel s d = 0 :=
-  if_neg (not_le.mpr h)
+  ite_eq_right (not_le.mpr h)
 
 theorem integral_supportKernel {s z : ℝ} (hs : 0 < s) (hz : 0 < z) :
     (∫ d : ℝ in Ioi 0, Complex.exp (-(z : ℂ)*d)*(supportKernel s d : ℝ)) =

@@ -107,8 +107,8 @@ theorem norm_cube_mass_lt :
   have h3 := norm_cube_mass_summable
   have hs : Summable (fun ρ : NontrivialZetaZero =>
       (analyticZetaZeroMultiplicity ρ : ℝ)*gap ‖(ρ.1 : ℂ)‖) := by
-    convert ((h2.mul_left (13/1000 : ℝ)).add (h4.mul_left (250/13 : ℝ))).sub h3 using 1 <;>
-      first | rfl | (ext ρ; dsimp [gap]; ring)
+    convert ((h2.mul_left (13/1000 : ℝ)).add (h4.mul_left (250/13 : ℝ))).sub h3 using 1
+    first | rfl | (ext ρ; dsimp [gap]; ring)
   have he : (∑' ρ : NontrivialZetaZero,
       (analyticZetaZeroMultiplicity ρ : ℝ)*gap ‖(ρ.1 : ℂ)‖) =
       (13/1000)*(∑' ρ : NontrivialZetaZero, (analyticZetaZeroMultiplicity ρ : ℝ)/‖(ρ.1 : ℂ)‖^2) +

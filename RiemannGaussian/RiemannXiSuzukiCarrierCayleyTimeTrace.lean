@@ -205,8 +205,8 @@ private theorem upperSynthesis_offAxisPart
   intro rho hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · have hne : (zetaSpectralCoordinate rho.1).im ≠ 0 := ne_of_gt hupper
-    simp only [if_pos hupper, if_pos hne]
-  · simp only [if_neg hupper, ite_self]
+    simp only [ite_eq_left hupper, ite_eq_left hne]
+  · simp only [ite_eq_right hupper, ite_self]
 
 private theorem lowerSynthesis_offAxisPart
     (c : NontrivialZetaZero →₀ ℂ) (s : ℝ) :
@@ -223,8 +223,8 @@ private theorem lowerSynthesis_offAxisPart
   intro rho hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
   · have hne : (zetaSpectralCoordinate rho.1).im ≠ 0 := ne_of_lt hlower
-    simp only [if_pos hlower, if_pos hne]
-  · simp only [if_neg hlower, ite_self]
+    simp only [ite_eq_left hlower, ite_eq_left hne]
+  · simp only [ite_eq_right hlower, ite_self]
 
 private def upperCoordinateLinearMap
     (rho : NontrivialZetaZero) (s : ℝ) : ℂ →ₗ[ℂ] ℂ where
@@ -237,13 +237,13 @@ private def upperCoordinateLinearMap
     else 0
   map_add' c d := by
     by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-    · simp only [if_pos hupper, mul_add, add_mul]
-    · simp only [if_neg hupper, add_zero]
+    · simp only [ite_eq_left hupper, mul_add, add_mul]
+    · simp only [ite_eq_right hupper, add_zero]
   map_smul' c d := by
     by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-    · simp only [if_pos hupper, RingHom.id_apply, smul_eq_mul]
+    · simp only [ite_eq_left hupper, RingHom.id_apply, smul_eq_mul]
       ring
-    · simp only [if_neg hupper, RingHom.id_apply, smul_zero]
+    · simp only [ite_eq_right hupper, RingHom.id_apply, smul_zero]
 
 private def lowerCoordinateLinearMap
     (rho : NontrivialZetaZero) (s : ℝ) : ℂ →ₗ[ℂ] ℂ where
@@ -256,13 +256,13 @@ private def lowerCoordinateLinearMap
     else 0
   map_add' c d := by
     by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-    · simp only [if_pos hlower, mul_add, add_mul]
-    · simp only [if_neg hlower, add_zero]
+    · simp only [ite_eq_left hlower, mul_add, add_mul]
+    · simp only [ite_eq_right hlower, add_zero]
   map_smul' c d := by
     by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-    · simp only [if_pos hlower, RingHom.id_apply, smul_eq_mul]
+    · simp only [ite_eq_left hlower, RingHom.id_apply, smul_eq_mul]
       ring
-    · simp only [if_neg hlower, RingHom.id_apply, smul_zero]
+    · simp only [ite_eq_right hlower, RingHom.id_apply, smul_zero]
 
 private def upperSynthesisLinearMap (s : ℝ) :
     (NontrivialZetaZero →₀ ℂ) →ₗ[ℂ] ℂ :=
@@ -348,11 +348,11 @@ theorem suzukiXiCarrierCayleyUpperTimeTraceWindow_eq_sum
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     unfold suzukiXiCarrierUpperLaplaceFeature
     simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
     ring
-  · simp only [if_neg hupper]
+  · simp only [ite_eq_right hupper]
 
 /-- The lower Cayley time trace is the finite sum of the normalized,
 Cayley-weighted Suzuki coefficients over precisely the lower off-axis
@@ -370,11 +370,11 @@ theorem suzukiXiCarrierCayleyLowerTimeTraceWindow_eq_sum
   apply Finset.sum_congr rfl
   intro rho _hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     unfold suzukiXiCarrierLowerLaplaceFeature
     simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
     ring
-  · simp only [if_neg hlower]
+  · simp only [ite_eq_right hlower]
 
 /-- Every finite upper Laplace synthesis is exactly a backward shifted-time
 trace difference. -/
@@ -389,12 +389,12 @@ theorem suzukiXiCarrierCayleyUpperLaplaceSynthesis_window_eq_timeTraceDifference
   apply Finset.sum_congr rfl
   intro rho hrho
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
-  · simp only [if_pos hupper]
+  · simp only [ite_eq_left hupper]
     rw [suzukiXiCarrierCayleyTimeCoefficient_mul_upperLaplaceFeature]
     unfold suzukiXiCarrierUpperLaplaceFeature
     simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
     ring
-  · simp only [if_neg hupper, sub_zero]
+  · simp only [ite_eq_right hupper, sub_zero]
 
 /-- Every finite lower Laplace synthesis is exactly a forward shifted-time
 trace difference. -/
@@ -409,12 +409,12 @@ theorem suzukiXiCarrierCayleyLowerLaplaceSynthesis_window_eq_timeTraceDifference
   apply Finset.sum_congr rfl
   intro rho hrho
   by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
-  · simp only [if_pos hlower]
+  · simp only [ite_eq_left hlower]
     rw [suzukiXiCarrierCayleyTimeCoefficient_mul_lowerLaplaceFeature]
     unfold suzukiXiCarrierLowerLaplaceFeature
     simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
     ring
-  · simp only [if_neg hlower, sub_zero]
+  · simp only [ite_eq_right hlower, sub_zero]
 
 private theorem upperTailSynthesis_eq_timeTraceDifference
     (t T U s : ℝ) :

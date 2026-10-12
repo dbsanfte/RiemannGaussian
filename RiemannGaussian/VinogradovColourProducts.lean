@@ -34,10 +34,10 @@ theorem tuple_targetWeight {ι κ : Type*} (m : ℕ) (label : ι → κ)
   simp only [targetWeight, tupleLabel, funext_iff]
   by_cases hc : ∀ j, label (x j) = c j
   · simp [hc]
-  · rw [if_neg hc]
+  · rw [ite_eq_right hc]
     obtain ⟨j, hj⟩ := not_forall.mp hc
     symm
-    exact Finset.prod_eq_zero (Finset.mem_univ j) (if_neg hj)
+    exact Finset.prod_eq_zero (Finset.mem_univ j) (ite_eq_right hj)
 
 /-- A fixed complete tuple colour has exactly the product of its
 original single-variable residue polynomials. -/
@@ -95,7 +95,7 @@ theorem good_tuple_class_polynomial {ι κ a : Type*} [Fintype ι] [Fintype a]
     (tupleFrequency m v) (targetWeight (tupleLabel m label) (fun _ => 1) c) ?_ theta
   intro x hx
   unfold targetWeight
-  apply if_neg
+  apply ite_eq_right
   intro he
   exact hx (he.symm ▸ hc)
 

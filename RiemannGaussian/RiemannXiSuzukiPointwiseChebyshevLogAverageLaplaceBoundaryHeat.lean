@@ -107,18 +107,18 @@ theorem suzukiChebyshevLaplaceBoundaryHeatResidue_eq_riemannXi
   by_cases hp : (suzukiChebyshevLaplaceZeroCoordinate rho).re < 0
   · have hupper :=
       (suzukiChebyshevLaplaceZeroCoordinate_re_neg_iff_upper rho).mp hp
-    rw [suzukiChebyshevLaplaceBoundaryHeatResidue, if_pos hp,
+    rw [suzukiChebyshevLaplaceBoundaryHeatResidue, ite_eq_left hp,
       riemannXiUpperHyperbolicBoundaryHeatResidue,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_pos hupper,
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_left hupper,
       suzukiChebyshevLaplaceBoundaryHeatKernel_zeroCoordinate]
     push_cast
     ring
   · have hupper : ¬0 < (zetaSpectralCoordinate rho.1).im :=
       fun h => hp
         ((suzukiChebyshevLaplaceZeroCoordinate_re_neg_iff_upper rho).mpr h)
-    rw [suzukiChebyshevLaplaceBoundaryHeatResidue, if_neg hp,
+    rw [suzukiChebyshevLaplaceBoundaryHeatResidue, ite_eq_right hp,
       riemannXiUpperHyperbolicBoundaryHeatResidue,
-      zetaUpperHyperbolicBoundaryHeatSummand, if_neg hupper]
+      zetaUpperHyperbolicBoundaryHeatSummand, ite_eq_right hupper]
     norm_num
 
 /-- The complete shifted arithmetic boundary residue series sums to the
@@ -154,7 +154,7 @@ theorem tendsto_suzukiChebyshevLaplaceBoundaryHeatKernel_mul_poleCleared
   have hlimit := hconst.mul
     (tendsto_suzukiChebyshevLaplaceZeroCoordinate_mul_poleClearedContinuation
       rho)
-  simpa only [suzukiChebyshevLaplaceBoundaryHeatResidue, if_pos hp] using
+  simpa only [suzukiChebyshevLaplaceBoundaryHeatResidue, ite_eq_left hp] using
     hlimit
 
 /-- The shifted boundary heat kernel is everywhere real differentiable. -/

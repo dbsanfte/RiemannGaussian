@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorKummerMaximumAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 115,
+    "theoremsIncludingGeneratedHelpers": 104,
+    "authoredNamespaceDeclarations": 113,
+    "authoredNamespaceTheoremsIncludingGeneratedHelpers": 102,
+    "onDemandImportedDefinitionCompanions": [
+      "RiemannGaussian.ZetaPrimeMomentChebyshev.errorMoment.eq_1",
+      "RiemannGaussian.ArithmeticOperatorKummerCutoff.binomialCarry.eq_1"
+    ],
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "proved for every split, all positive integer denominators, and a common witness for every order at each actual prime",
+    "actualOffLineZeroResponse": "every exposed right-half zero retains its exact analytic multiplicity, with explicit |y|>=1 premise",
+    "densitySeparation": "existing actual Chebyshev-error density/proper-power payment reused; exact divisor endpoint paid geometrically",
+    "collapseAudit": "proved arbitrary-weight prefix minus divisor endpoint; source convergence iff original ordinary-prime moments; all-free-weight bounds false at every X>2",
+    "independentSignedEstimate": "not supplied; stop the all-split-maximum-alone class",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "orderwiseMaximum": "1_(0<d<=N+1 and d does not divide N+1)",
+    "positiveCaseWitness": "k=d-1",
+    "commonPrimePowerWitness": "k=p^(Nat.log p (N+1))-1",
+    "actualBinomialValuationMaximumAttained": true,
+    "commonWitnessAcrossDifferentPrimesClaimed": false,
+    "fullBinomialRowLCMTheoremClaimed": false,
+    "everyPrimePowerAndComplexPhaseRetained": true,
+    "wholeMaximumJoin": "twisted Mangoldt prefix minus actual twisted divisor endpoint",
+    "untwistedActualJoin": "psi(X)-log(X)",
+    "explicitEndpointNormBound": "log(X)",
+    "endpointAnalyticHalfPlane": "Re z>-1",
+    "endpointSourceGeometricFactor": "(4u/5)^k, 0<=u<1, constants may depend on fixed y",
+    "maximalRowSourceCriterionIffOrdinaryPrimeMomentCriterion": true,
+    "reverseZeroIdentificationRequiresExposure": false,
+    "allSourceMultiplicitiesRetained": true,
+    "lowOrderDiscarded": false,
+    "controlsGrantedActualBinomialGammaOrMangoldtData": false,
+    "differentPrimeConstrainedChoiceOrSignedEstimatesExhausted": false,
+    "historicalNoveltyClaimed": false,
+    "noGo": "All-split maxima alone reconstruct the existing Chebyshev prefix up to a paid divisor endpoint. They supply no independent arithmetic non-coherence or signed bound."
+  },
+  "regression": {
+    "scope": "exact finite all-split maxima, common prime-power witness and joined endpoints",
+    "arithmetic": "integers and symbolic prime logarithms; no floating point",
+    "maxRow": 128,
+    "rowMaximumCases": 9546,
+    "commonPrimePowerWitnessCases": 12551,
+    "actualBinomialValuationCases": 191378,
+    "signedArbitraryWeightJoins": 387,
+    "symbolicActualPrimePowerCases": 3311,
+    "checksPassed": true,
+    "asymptoticArithmeticEstimate": false,
+    "proofInput": false,
+    "fullRowLCMFormalClaim": false
+  },
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/0906.2295",
+      "role": "classical binomial-row maximum phenomenon; no theorem imported as an axiom; full row-LCM theorem not claimed"
+    }
+  ],
+  "sourcePins": {
+    "scripts/ArithmeticOperatorKummerMaximumAudit.lean": "45c23efd03e547ef752717b61e7704b20841bb382752bf2e935824528a68363d",
+    "scripts/probe_arithmetic_operator_kummer_maximum.py": "e4f2b4dab18543cad5761ca98ab140f7999fd99833a79caecd4d8ad8eb18363f",
+    "RiemannGaussian/ArithmeticOperatorKummerCutoff.lean": "32df8867fa00fae9888226cc780053b8c0905c5fda52cec26a2b5ec37ae8d21e",
+    "RiemannGaussian/ZetaPrimeMomentChebyshev.lean": "1634c6d9b35c57ca80f3f899a8389d17c1b4156981c663ea9e355cac632f6f1b",
+    "RiemannGaussian/ZetaPrimeMomentCoherence.lean": "e0211cffca83f55b960753708fec85f84062e104a7af938643a18ceda685d240",
+    "RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean": "0d1e1a3f4187226fea623f5a770113a0d5c8d98ace7d2aab72a4c77e8d622fa7",
+    "RiemannGaussian/SignedLaplaceMoments.lean": "a592fbcc195bda56748985690dbb1e2b77fe990cd009edd4cc03c2e04b0ecc82",
+    "docs/arithmetic-operator-research.md": "87a4961c4dbc2477727a4afbc6469710f15ef60b0e1b391f68d401d9abf8737a",
+    "AGENTS.md": "74c16dcd886c8e5bbf31a4da0cd963cfbc7dddd746dba602d14f6a87cf6421dc",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".lake/arithmetic-operator-kummer-maximum/check.log": "af6e47770e062a386f2775578527f7f9ca6a22999c370f3515e011deabe2cacd",
+    ".lake/arithmetic-operator-kummer-maximum/axioms.json": "2f698f651407be110bdf3e842c45192e18a3faaea81b50fd2286ecd2a5e24204",
+    ".lake/arithmetic-operator-kummer-maximum/probe.json": "4f564ec2240cc25b58e9ec5e6e0b12d053bf7ed52d225de1be3927d427743187"
+  }
+}

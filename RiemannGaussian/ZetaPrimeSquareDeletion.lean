@@ -80,12 +80,12 @@ theorem norm_zetaPrimeSquareLeakageCoefficient_le (D : ℕ) (hD : 1 ≤ D) (S Q 
       obtain ⟨p, hp, hpn⟩ := h.2
       exact (Nat.squarefree_iff_prime_squarefree.mp hn.squarefree p (hQ p hp))
         (by simpa only [pow_two] using hpn)
-    rw [zetaPrimeSquareLeakageCoefficient, primeSquareSurvivorMask, if_pos h, one_mul]
+    rw [zetaPrimeSquareLeakageCoefficient, primeSquareSurvivorMask, ite_eq_left h, one_mul]
     apply (norm_sub_le _ _).trans
     apply add_le_add _ (norm_zetaMoebiusTailPrimePowerCoefficient_le D hD n)
     rw [Complex.norm_real, Real.norm_of_nonneg (ArithmeticFunction.vonMangoldt_nonneg),
-      zetaProperPrimePowerCoefficient, if_neg hn]
-  · simpa only [zetaPrimeSquareLeakageCoefficient, primeSquareSurvivorMask, if_neg h,
+      zetaProperPrimePowerCoefficient, ite_eq_right hn]
+  · simpa only [zetaPrimeSquareLeakageCoefficient, primeSquareSurvivorMask, ite_eq_right h,
       zero_mul, norm_zero] using zetaPrimeSquareLeakageMajorant_nonneg n
 
 /-- The entire leakage majorant has genuine convergence strictly

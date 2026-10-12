@@ -78,14 +78,14 @@ theorem pairedEtaUnpairedMoment_endpoint_sub_parity_eq
   simp only [Nat.choose_self, Nat.cast_one, one_mul, Nat.sub_self, pow_zero]
   unfold pairedEtaMomentCenterLower
   by_cases ho : Odd M
-  · rw [if_pos ho, if_pos ho]
+  · rw [ite_eq_left ho, ite_eq_left ho]
     have hsign : pairedEtaDirichletSign M = 1 := by
-      simp only [pairedEtaDirichletSign, if_neg (Nat.not_even_iff_odd.mpr ho)]
+      simp only [pairedEtaDirichletSign, ite_eq_right (Nat.not_even_iff_odd.mpr ho)]
     rw [hsign, Int.cast_one]
     ring
-  · rw [if_neg ho, if_neg ho]
+  · rw [ite_eq_right ho, ite_eq_right ho]
     have hsign : pairedEtaDirichletSign M = -1 := by
-      simp only [pairedEtaDirichletSign, if_pos (Nat.not_odd_iff_even.mp ho)]
+      simp only [pairedEtaDirichletSign, ite_eq_left (Nat.not_odd_iff_even.mp ho)]
     rw [hsign, Int.cast_neg, Int.cast_one]
     ring
 

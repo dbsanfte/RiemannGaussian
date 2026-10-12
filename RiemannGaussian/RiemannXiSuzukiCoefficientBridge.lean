@@ -49,7 +49,7 @@ theorem suzukiSpectralScrewCoefficient_of_ne_zero
     (t : ℝ) {alpha : ℂ} (halpha : alpha ≠ 0) :
     suzukiSpectralScrewCoefficient t alpha =
       (spectralScrewExponential t alpha - 1) / alpha := by
-  rw [suzukiSpectralScrewCoefficient, if_neg halpha]
+  rw [suzukiSpectralScrewCoefficient, ite_eq_right halpha]
 
 /-- Multiplying by the spectral frequency and adding one recovers the raw
 screw exponential, including at zero frequency. -/

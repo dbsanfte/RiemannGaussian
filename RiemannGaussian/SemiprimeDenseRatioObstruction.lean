@@ -212,7 +212,7 @@ theorem dense_leading_bound {N m j t : ℕ} (hm : 0<m) (negative : Bool) :
     |(denseRow N m j t negative).a|≤(m : ℤ) := by
   have hr : (representative N m j t : ℤ)<m := by exact_mod_cast Nat.mod_lt _ hm
   have hr₀ : (0 : ℤ)≤representative N m j t := by positivity
-  cases negative <;> simp only [denseRow,liftRow,if_false,if_true,Bool.false_eq_true,
+  cases negative <;> simp only [denseRow,liftRow,ite_false,ite_true,Bool.false_eq_true,
     sub_zero] <;> apply abs_le.mpr <;> omega
 
 /-- The actual uncentered cached coefficient has magnitude at most 2*m^2. -/

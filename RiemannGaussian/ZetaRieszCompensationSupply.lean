@@ -277,7 +277,7 @@ theorem eventually_products_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) :
     apply hcounts i
     · dsimp [start]; split_ifs <;> linarith
     · dsimp [start]; split_ifs <;> linarith
-  have hprod := Finset.prod_le_prod
+  have hprod := Finset.prod_le_prod₀
     (s := (Finset.univ : Finset (Fin 5)))
     (fun i _ => div_nonneg (mul_nonneg (hc i).le (Real.exp_pos _).le) (by positivity))
     (fun i _ => hj i)

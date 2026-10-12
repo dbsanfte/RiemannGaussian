@@ -2,8 +2,36 @@
   "schemaVersion": 1,
   "repository": "https://github.com/dbsanfte/RiemannGaussian",
   "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/",
+  "vendoredSourceRoots": {
+    "OAI": "vendor/openai-quasi-rh",
+    "RellichKondrachov": "vendor/openai-quasi-rh",
+    "PrimeNumberTheoremAnd": "vendor/openai-quasi-rh"
+  },
   "defaultEndpoint": "explicit-band",
   "endpoints": [
+    {
+      "id": "openai-quasi-rh",
+      "label": "OpenAI 7/8 baseline · unconditional frozen Riesz discharge",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "quasiRHExternalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeMomentTerminalDischargeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExternalJoinedBoundTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "quasiRHExternalScope"
+      ],
+      "documentation": "docs/zeta-riesz-quasi-rh-discharge.md"
+    },
     {
       "id": "positive-five-joint-payment",
       "label": "Joint payment · fixed positive-five sector across a full period",
@@ -4320,7 +4348,8 @@
         "ZetaRough",
         "ZetaSieved",
         "ZetaSquarefree",
-        "ZetaRiesz"
+        "ZetaRiesz",
+        "ArithmeticOperator"
       ]
     },
     {
@@ -4378,6 +4407,7 @@
     }
   ],
   "moduleFamilies": {
+    "ZetaQuasiRHOpenAI": "arithmetic",
     "ZetaHardyPhase": "foundations",
     "ZetaLowZeroDisc": "foundations",
     "ZetaLowZeroSamples": "numerics",
@@ -5273,6 +5303,24 @@
     "SemiprimeSeedMomentPrefixRigidity": "semiprime",
     "SemiprimeSeedMomentPoleRetention": "semiprime",
     "SemiprimeSeedMomentPeriodGapObstruction": "semiprime",
+    "SemiprimeSparseBlockPeriodObstruction": "semiprime",
+    "SemiprimeSeedDetectorResidueObstruction": "semiprime",
+    "SemiprimeRowSpecificDetectorObstruction": "semiprime",
+    "SemiprimeBalancedAcquisitionObstruction": "semiprime",
+    "SemiprimeScatteredColumnObstruction": "semiprime",
+    "SemiprimeCauchyAcquisitionObstruction": "semiprime",
+    "SemiprimeNormCancellationObstruction": "semiprime",
+    "SemiprimeOffsetCarryObstruction": "semiprime",
+    "SemiprimeShiftedNormAcquisitionObstruction": "semiprime",
+    "SemiprimeSeedEnergyAcquisitionObstruction": "semiprime",
+    "SemiprimeSignedMomentAcquisitionObstruction": "semiprime",
+    "SemiprimeIsolatedRowAcquisitionObstruction": "semiprime",
+    "SemiprimeMaskAcquisitionObstruction": "semiprime",
+    "SemiprimePartnerAcquisitionObstruction": "semiprime",
+    "SemiprimeDistinctAcquisitionObstruction": "semiprime",
+    "SemiprimeCenteredAcquisitionObstruction": "semiprime",
+    "SemiprimeFullEuclidAcquisitionObstruction": "semiprime",
+    "SemiprimeChargedAcquisitionObstruction": "semiprime",
     "SemiprimeBitInverse": "semiprime",
     "SemiprimeIndexLattice": "semiprime",
     "SemiprimeIndexEnumeration": "semiprime",
@@ -5367,7 +5415,8 @@
     "SuzukiIntegerCarryMellinAudit": "suzuki",
     "SuzukiIntegerCarry": "suzuki",
     "SuzukiJoinedExcursionAudit": "suzuki",
-    "ZetaTwistedChebyshev": "euler"
+    "ZetaTwistedChebyshev": "euler",
+    "ZetaQuasiRHProbeCalibration": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

@@ -103,7 +103,7 @@ theorem share_eq_binomial_sum (A : Finset ℕ) (N : ℕ) {n : ℕ}
     ring
   have hln : 0 < Real.log n := Real.log_pos (by exact_mod_cast hn1)
   by_cases hel : p ∈ A ∧ eligibleCofactor p (n/p)
-  · simp only [if_pos hel, Finset.sum_div]
+  · simp only [ite_eq_left hel, Finset.sum_div]
     apply Finset.sum_congr rfl
     intro k hk
     have hkM : k ≤ N+1 := by have := unpaid_orders_submajority N k hk; omega
@@ -124,7 +124,7 @@ theorem share_small_of_selected_primes_balanced (A : Finset ℕ) (N : ℕ) {n : 
       apply Finset.sum_le_sum
       intro p hp
       by_cases hel : p ∈ A ∧ eligibleCofactor p (n/p)
-      · rw [if_pos hel]
+      · rw [ite_eq_left hel]
         have hpp := Nat.prime_of_mem_primeFactors hp
         have hpd := Nat.dvd_of_mem_primeFactors hp
         have hlog : Real.log (n/p:ℕ) = Real.log n-Real.log p := by
@@ -138,7 +138,7 @@ theorem share_small_of_selected_primes_balanced (A : Finset ℕ) (N : ℕ) {n : 
         · apply (div_le_one hln).mpr
           rw [hlog]
           linarith [Real.log_natCast_nonneg p]
-      · rw [if_neg hel]
+      · rw [ite_eq_right hel]
         exact (Real.exp_pos _).le
     _ = _ := by simp
 
@@ -166,10 +166,10 @@ theorem norm_assigned_balanced_le (A : Finset ℕ) {L : ℝ} (hL : 0 < L) (N : �
     have hshare : allocationShare A N n ≤ 4*((N:ℝ)+1)*Real.exp (-(N:ℝ)/64) := by
       nlinarith [Real.exp_pos (-(N:ℝ)/64)]
     rw [assignedCoefficient, norm_mul, Complex.norm_real, Real.norm_eq_abs,
-      abs_of_nonneg (boundedShare_bounds A N n).1, boundedShare, if_pos hn]
+      abs_of_nonneg (boundedShare_bounds A N n).1, boundedShare, ite_eq_left hn]
     exact mul_le_mul hshare (SquarefreeVaughanLogSource.norm_coefficient_le hL n)
       (norm_nonneg _) (by positivity)
-  · simp only [assignedCoefficient, boundedShare, if_neg hn, Complex.ofReal_zero, zero_mul, norm_zero]
+  · simp only [assignedCoefficient, boundedShare, ite_eq_right hn, Complex.ofReal_zero, zero_mul, norm_zero]
     exact mul_nonneg (by positivity) (zetaMoebiusLogMajorant_nonneg n)
 
 /-- The complete selected balanced companion sum has a uniform source-normalized geometric allowance, including its order factor. -/

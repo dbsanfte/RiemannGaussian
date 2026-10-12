@@ -77,7 +77,7 @@ private theorem product_bounds (a : ℕ → ℝ)
     0 ≤ ∏ p ∈ n.primeFactors, a p ∧
       (∏ p ∈ n.primeFactors, a p) ≤ 1 :=
   ⟨Finset.prod_nonneg (fun p hp => (ha p (Nat.prime_of_mem_primeFactors hp)).1),
-    Finset.prod_le_one (fun p hp => (ha p (Nat.prime_of_mem_primeFactors hp)).1)
+    Finset.prod_le_one₀ (fun p hp => (ha p (Nat.prime_of_mem_primeFactors hp)).1)
       (fun p hp => (ha p (Nat.prime_of_mem_primeFactors hp)).2)⟩
 
 private theorem complementary_product_bound (a : ℕ → ℝ)
@@ -96,7 +96,7 @@ private theorem complementary_product_bound (a : ℕ → ℝ)
     have := ha q hq
     constructor <;> linarith
   have hpa : (∏ q ∈ n.primeFactors, a q) ≤ a p := by
-    have ht := Finset.prod_le_one
+    have ht := Finset.prod_le_one₀
       (s := n.primeFactors.erase p) (f := a)
       (fun q hq => (ha q (Nat.prime_of_mem_primeFactors
         (Finset.mem_of_mem_erase hq))).1)
@@ -105,7 +105,7 @@ private theorem complementary_product_bound (a : ℕ → ℝ)
     rw [← Finset.mul_prod_erase _ _ hp]
     exact (mul_le_mul_of_nonneg_left ht hap.1).trans_eq (mul_one _)
   have hpb : (∏ q ∈ n.primeFactors, (1-a q)) ≤ 1-a p := by
-    have ht := Finset.prod_le_one
+    have ht := Finset.prod_le_one₀
       (s := n.primeFactors.erase p) (f := fun q => 1-a q)
       (fun q hq => (hb q (Nat.prime_of_mem_primeFactors
         (Finset.mem_of_mem_erase hq))).1)
@@ -118,7 +118,7 @@ private theorem complementary_product_bound (a : ℕ → ℝ)
     rw [weighted_apply a hn, abs_mul, abs_of_nonneg (product_bounds a ha n).1]
     exact mul_le_of_le_one_left (product_bounds a ha n).1
       (by exact_mod_cast ArithmeticFunction.abs_moebius_le_one (n := n))
-  simp only [if_neg h1, add_zero]
+  simp only [ite_eq_right h1, add_zero]
   linarith
 
 private theorem integer_rounding_bound {M n : ℕ} (hn : 0 < n) :
@@ -231,7 +231,7 @@ private theorem rough_mark_product (S : Finset ℕ)
   have hr : RoughSquarefreeCounting.markedDensity S n =
       ((∑ W ∈ S.powerset, (-1 : ℝ)^W.card *
         SquarefreeCounting.density (n.primeFactors ∪ W) : ℝ) : ℂ) := by
-    rw [RoughSquarefreeCounting.markedDensity, if_pos hn, Complex.ofReal_sum]
+    rw [RoughSquarefreeCounting.markedDensity, ite_eq_left hn, Complex.ofReal_sum]
     exact Finset.sum_congr rfl (fun W _ => by push_cast; rfl)
   rw [hr]
   congr 1
@@ -275,7 +275,7 @@ theorem rough_coefficient_eq (S : Finset ℕ)
             apply Finset.prod_congr rfl
             intro p hp
             have hpS : p ∉ S := fun hh => hhit ⟨p,hh,Nat.dvd_of_mem_primeFactors hp⟩
-            simp only [if_neg hpS, div_eq_mul_inv]
+            simp only [ite_eq_right hpS, div_eq_mul_inv]
           _ = _ := by
             rw [Finset.prod_mul_distrib, ← Nat.cast_prod,
               Nat.prod_primeFactors_of_squarefree hsf]
@@ -329,9 +329,9 @@ theorem densityPrefix_signed_bound (D : ℕ) :
     apply Finset.sum_congr rfl
     intro n _
     by_cases hn : Squarefree n
-    · rw [RoughSquarefreeCounting.markedDensity, if_pos hn]
+    · rw [RoughSquarefreeCounting.markedDensity, ite_eq_left hn]
       simp
-    · simp only [RoughSquarefreeCounting.markedDensity, if_neg hn, mul_zero,
+    · simp only [RoughSquarefreeCounting.markedDensity, ite_eq_right hn, mul_zero,
         Complex.zero_re]
       have hm : (μ n : ℝ) = 0 := by
         exact_mod_cast ArithmeticFunction.moebius_eq_zero_of_not_squarefree hn

@@ -93,7 +93,7 @@ theorem norm_primeProduct_le_prime_count (n : ℕ) (xi : ℝ) :
     _ = ∏ p ∈ n.primeFactors, 2 * |Real.sin (xi * Real.log p / 2)| := by
       rw [Finset.prod_mul_distrib, Finset.prod_const]
     _ ≤ ∏ p ∈ n.primeFactors, |xi| * Real.log p := by
-      apply Finset.prod_le_prod (fun _ _ => by positivity)
+      apply Finset.prod_le_prod₀ (fun _ _ => by positivity)
       intro p _
       have h := mul_le_mul_of_nonneg_left (Real.abs_sin_le_abs (x := xi * Real.log p / 2))
         (by norm_num : (0 : ℝ) ≤ 2)
@@ -350,7 +350,7 @@ theorem prime_log_product_le {n : ℕ} (hn : Squarefree n) :
     (∏ p ∈ n.primeFactors, Real.log p) ≤ (Real.log n) ^ n.primeFactors.card := by
   calc
     _ ≤ ∏ _p ∈ n.primeFactors, Real.log n := by
-      apply Finset.prod_le_prod (fun p _ => Real.log_natCast_nonneg p)
+      apply Finset.prod_le_prod₀ (fun p _ => Real.log_natCast_nonneg p)
       intro p hp
       apply Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)
       exact_mod_cast Nat.le_of_dvd (Nat.pos_of_ne_zero hn.ne_zero) (Nat.dvd_of_mem_primeFactors hp)

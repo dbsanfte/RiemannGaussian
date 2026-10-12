@@ -54,7 +54,7 @@ theorem zetaSquarefreeDivisibilityPrefixCoefficient_eq_indicator (D : ℕ)
     zetaSquarefreeDivisibilityPrefixCoefficient D W n =
       if (∏ p ∈ W, p) ∣ n then zetaSquarefreeDivisibilityPrefixCoefficient D ∅ n else 0 := by
   by_cases hn : Squarefree n
-  · simp only [zetaSquarefreeDivisibilityPrefixCoefficient, hn, if_true, Finset.prod_empty]
+  · simp only [zetaSquarefreeDivisibilityPrefixCoefficient, hn, ite_true, Finset.prod_empty]
     exact zetaDivisibilityPrefixCoefficient_eq_indicator D _ n
   · simp [zetaSquarefreeDivisibilityPrefixCoefficient, hn]
 
@@ -155,7 +155,7 @@ theorem exists_zetaSquarefreeDivisibilityPrefixFilter_bound (y : ℝ) (hy : 1 < 
   have hw : zetaPrimeExpWeight τ (∏ a ∈ W, a) ≤
       ∏ a ∈ W, primeSquareCorrectedWeight τ a := by
     rw [zetaPrimeExpWeight_prod W (fun a ha ↦ (hW a ha).pos)]
-    apply Finset.prod_le_prod (fun a _ ↦ (Real.exp_pos _).le)
+    apply Finset.prod_le_prod₀ (fun a _ ↦ (Real.exp_pos _).le)
     intro a _
     change zetaPrimeExpWeight τ a ≤
       zetaPrimeExpWeight τ a * (1 + zetaPrimeExpWeight τ a)

@@ -37,7 +37,7 @@ private theorem amplitude_le_window {n : ℕ} (hn : n ≠ 0) {t h : ℝ}
   have hm := mul_le_mul_of_nonneg_right hr (inv_nonneg.mpr hnR.le)
   unfold amplitude
   rw [he]
-  convert hm using 1 <;> first | rfl | ring
+  convert hm using 1 ; first | rfl | ring
 
 /-- Either directed phase cost is controlled without replacing the
 original cosine by its absolute value. The numerical mass premise is the

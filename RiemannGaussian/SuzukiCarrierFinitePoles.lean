@@ -71,9 +71,9 @@ theorem analyticAt_suzukiXiMixedCarrierLocalNumerator
     (rho sigma : NontrivialZetaZero) (c : ℂ) :
     AnalyticAt ℂ (suzukiXiMixedCarrierLocalNumerator rho sigma c) c := by
   by_cases hc : riemannXiSpectral c = 0
-  · simp only [suzukiXiMixedCarrierLocalNumerator, dif_pos hc]
+  · simp only [suzukiXiMixedCarrierLocalNumerator, dite_eq_left hc]
     exact (Classical.choose_spec (exists_xi_node_numerator rho sigma hc)).1
-  · simp only [suzukiXiMixedCarrierLocalNumerator, dif_neg hc]
+  · simp only [suzukiXiMixedCarrierLocalNumerator, dite_eq_right hc]
     exact analyticAt_suzukiXiMixedCarrierPoleNumerator rho sigma hc
 
 /-- The actual mixed channel has its full punctured model at every
@@ -84,9 +84,9 @@ theorem suzukiXiMixedCarrierChannel_eventually_eq_local_model
     suzukiXiMixedCarrierChannel rho sigma =ᶠ[𝓝[≠] c] fun z =>
       suzukiXiMixedCarrierLocalNumerator rho sigma c z / (z - c) ^ suzukiXiMixedCarrierLocalOrder c := by
   by_cases hc : riemannXiSpectral c = 0
-  · simp only [suzukiXiMixedCarrierLocalNumerator, suzukiXiMixedCarrierLocalOrder, dif_pos hc, if_pos hc]
+  · simp only [suzukiXiMixedCarrierLocalNumerator, suzukiXiMixedCarrierLocalOrder, dite_eq_left hc, ite_eq_left hc]
     exact (Classical.choose_spec (exists_xi_node_numerator rho sigma hc)).2.2
-  · simp only [suzukiXiMixedCarrierLocalNumerator, suzukiXiMixedCarrierLocalOrder, dif_neg hc, if_neg hc]
+  · simp only [suzukiXiMixedCarrierLocalNumerator, suzukiXiMixedCarrierLocalOrder, dite_eq_right hc, ite_eq_right hc]
     filter_upwards [suzukiXiZeroCarrier_eventually_eq_power_pole c] with z hz
     unfold suzukiXiMixedCarrierChannel suzukiXiMixedCarrierPoleNumerator
     rw [hz]
@@ -103,9 +103,9 @@ mixed coefficient, including the inverse analytic multiplicity. -/
 theorem suzukiXiMixedCarrierLocalResidue_at_xi_node
     (rho sigma : NontrivialZetaZero) {c : ℂ} (hc : riemannXiSpectral c = 0) :
     suzukiXiMixedCarrierLocalResidue rho sigma c = suzukiXiMixedXiNodeResidue rho sigma c := by
-  simp only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, if_pos hc,
-    poleTaylorResidue, one_ne_zero, if_false, Nat.sub_self, iteratedDeriv_zero,
-    Nat.factorial_zero, Nat.cast_one, div_one, suzukiXiMixedCarrierLocalNumerator, dif_pos hc]
+  simp only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, ite_eq_left hc,
+    poleTaylorResidue, one_ne_zero, ite_false, Nat.sub_self, iteratedDeriv_zero,
+    Nat.factorial_zero, Nat.cast_one, div_one, suzukiXiMixedCarrierLocalNumerator, dite_eq_left hc]
   exact (Classical.choose_spec (exists_xi_node_numerator rho sigma hc)).2.1
 
 /-- At a genuine carrier pole the complete residue is the previously
@@ -114,9 +114,9 @@ theorem suzukiXiMixedCarrierLocalResidue_at_E_pole
     (rho sigma : NontrivialZetaZero) {c : ℂ}
     (hE : suzukiXiEValue c = 0) (hxi : riemannXiSpectral c ≠ 0) :
     suzukiXiMixedCarrierLocalResidue rho sigma c = suzukiXiMixedCarrierPoleResidue rho sigma c := by
-  simp only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, if_neg hxi,
-    suzukiXiMixedCarrierLocalNumerator, dif_neg hxi, poleTaylorResidue,
-    if_neg (Nat.ne_of_gt (analyticOrderNatAt_suzukiXiEValue_pos hE)), suzukiXiMixedCarrierPoleResidue]
+  simp only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder, ite_eq_right hxi,
+    suzukiXiMixedCarrierLocalNumerator, dite_eq_right hxi, poleTaylorResidue,
+    ite_eq_right (Nat.ne_of_gt (analyticOrderNatAt_suzukiXiEValue_pos hE)), suzukiXiMixedCarrierPoleResidue]
 
 /-- Regular non-xi points have zero coefficient in the finite residue
 sum, so including them cannot create a spurious source. -/
@@ -128,7 +128,7 @@ theorem suzukiXiMixedCarrierLocalResidue_eq_zero_of_regular
     simp only [analyticOrderNatAt, (analyticAt_suzukiXiEValue c).analyticOrderAt_eq_zero.mpr hE,
       ENat.toNat_zero]
   simp only [suzukiXiMixedCarrierLocalResidue, suzukiXiMixedCarrierLocalOrder,
-    if_neg hxi, ho, poleTaylorResidue, if_true]
+    ite_eq_right hxi, ho, poleTaylorResidue, ite_true]
 
 /-- The potential singular set for the actual channel, keeping xi nodes
 as well as all zeros of the genuine de Branges denominator. -/

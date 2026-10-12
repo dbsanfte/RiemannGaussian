@@ -115,7 +115,7 @@ theorem joined_convolution_cancel_endpoints (v : ℕ → ℂ) (M K : ℕ)
       ring
     rw [show M-k+1 = M+1-k by omega, hc]
     by_cases hk0 : 0 < k
-    · simp only [if_pos hk0]
+    · simp only [ite_eq_left hk0]
       ring
     · have he : k = 0 := by omega
       subst k

@@ -40,11 +40,11 @@ theorem remaining_nonzero_mem_paired (u : ℝ) (N n : ℕ)
   have ha' := (mem_intermediatePrimes u N a).mp ha
   have hpX : n / a < (ZetaVaughanCutoffBudget.linearDampedCutoff u N + 2) ^ 2 := by
     by_contra h
-    exact hterm (if_neg h)
-  rw [if_pos hpX] at hterm
+    exact hterm (ite_eq_right h)
+  rw [ite_eq_left hpX] at hterm
   have hd : a ∣ n ∧ (n / a).Prime := by
     by_contra h
-    exact hterm (if_neg h)
+    exact hterm (ite_eq_right h)
   have he : a * (n / a) = n := Nat.mul_div_cancel' hd.1
   have hpN : N ^ 2 < n / a := by
     by_contra h

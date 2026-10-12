@@ -43,7 +43,7 @@ theorem eventually_norm_many_extreme_sum_le (S : ℕ → Finset ℕ) (P : Polyno
     apply Finset.sum_congr rfl
     intro n _
     by_cases hs : Squarefree n
-    · simp only [hs, if_true]
+    · simp only [hs, ite_true]
     · simp [SquarefreeVaughanLogSource.coefficient, hs]
   rw [he]
   apply ZetaArithmeticLogWindow.norm_upper_sum_le
@@ -100,7 +100,7 @@ theorem exists_eventually_extreme_class_bound {u : ℝ} (hu : 0 < u) (hu1 : u < 
     apply Finset.sum_congr rfl
     intro n _
     by_cases hs : Squarefree n
-    · simp only [hs, if_true]
+    · simp only [hs, ite_true]
     · simp [SquarefreeVaughanLogSource.coefficient, hs]
   rw [he]
   apply ZetaArithmeticLogWindow.norm_upper_sum_le

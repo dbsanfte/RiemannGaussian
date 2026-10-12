@@ -56,7 +56,7 @@ theorem residual_atom_total_riesz (A : Finset ℕ) (L y scale : ℝ) (N : ℕ)
       _ = exp (-log n/2)/exp (log n) := exp_sub _ _
       _ = _ := by rw [exp_log hnR]
   rw [ZetaRieszManyBinPhaseAudit.re_residual_atom,
-    SquarefreeVaughanLogSource.coefficient,if_pos ⟨hn,hnp⟩]
+    SquarefreeVaughanLogSource.coefficient,ite_eq_left ⟨hn,hnp⟩]
   simp only [Complex.ofReal_re]
   simp only [primeWeight,one_mul,Nat.cast_one,log_one,zero_add,pow_succ,he]
   ring

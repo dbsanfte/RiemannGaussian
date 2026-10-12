@@ -183,7 +183,7 @@ theorem originalPair_boundary_norm_add {u : ℝ} (hu : 1/2≤u)
     split_ifs <;> positivity
   have hr : rawAmount u N p q=w*(L-log p) := by
     unfold rawAmount w
-    rw [if_pos hqp]
+    rw [ite_eq_left hqp]
     ring
   have he := native_boundary_reinforces_head hu hU hN hp hq hqp hw y
   rw [originalPair,hr]

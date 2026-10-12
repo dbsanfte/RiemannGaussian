@@ -90,7 +90,7 @@ theorem zetaPhase_return_ceiling_constraint (ha : ∀ n, 0 ≤ a n) (hs : Summab
     by_cases hij : i = j
     · subst j
       simp [zetaPhaseKernel_zero, A]
-    · rw [if_neg hij]
+    · rw [ite_eq_right hij]
       have hne : i.val ≠ j.val := fun h ↦ hij (Fin.ext h)
       by_cases hle : i.val ≤ j.val
       · have h := hB (j.val - i.val) (by omega) (by omega)

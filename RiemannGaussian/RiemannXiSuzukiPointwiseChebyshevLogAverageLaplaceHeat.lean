@@ -231,10 +231,10 @@ theorem suzukiChebyshevLaplaceUpperHyperbolicHeatResidue_eq_riemannXi
   by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
   · rw [suzukiChebyshevLaplaceUpperHyperbolicHeatResidue,
       suzukiChebyshevLaplaceUpperHyperbolicHeatWeight,
-      riemannXiUpperHyperbolicHeatResidue, if_pos hupper, if_pos hupper]
+      riemannXiUpperHyperbolicHeatResidue, ite_eq_left hupper, ite_eq_left hupper]
   · rw [suzukiChebyshevLaplaceUpperHyperbolicHeatResidue,
       suzukiChebyshevLaplaceUpperHyperbolicHeatWeight,
-      riemannXiUpperHyperbolicHeatResidue, if_neg hupper, if_neg hupper,
+      riemannXiUpperHyperbolicHeatResidue, ite_eq_right hupper, ite_eq_right hupper,
       zero_mul]
 
 /-- Every arithmetic heat coefficient is obtained as the genuine local

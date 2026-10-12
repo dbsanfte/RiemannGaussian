@@ -27,7 +27,7 @@ open ZetaRieszAllowancePrimeBoxes ZetaRieszAllowanceGrowth
 theorem balanced_selection_zero (u : ℝ) (N K : ℕ) {n : ℕ}
     (hbal : ∀ p ∈ n.primeFactors, Real.log p ≤ Real.log n/2) :
     fullParitySelection u N K n = 0 := by
-  apply if_neg
+  apply ite_eq_right
   intro hn
   have hb := (Finset.mem_filter.mp hn).2.1
   have hp := hbal (largestPrime n) hb.largest_mem
@@ -110,7 +110,7 @@ private theorem subfamily_le_restAllowance {u : ℝ} (hu : 0 ≤ u) (y : ℝ) (j
     (Finset.sum_le_sum_of_subset_of_nonneg (fun n hn => (hT n hn).1) ?_)
   · apply Finset.sum_congr rfl
     intro n hn
-    rw [(hT n hn).2.1, sub_zero, one_mul, phaseCost, if_neg (hT n hn).2.2]
+    rw [(hT n hn).2.1, sub_zero, one_mul, phaseCost, ite_eq_right (hT n hn).2.2]
   · intro n _ _
     exact mul_nonneg (sub_nonneg.mpr (fullParitySelection_bounds u _ _ n).2)
       (mul_nonneg (weight_nonneg _ _ _) (phaseCost_nonneg

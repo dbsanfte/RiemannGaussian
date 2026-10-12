@@ -86,7 +86,7 @@ theorem divisor_riemannXi_sphere_xiCanonicalRadius_eq_zero (n : ℕ) :
         (sphere 0 (xiCanonicalRadius n)) ∧
         z ∈ sphere 0 (xiCanonicalRadius n) then
           (meromorphicOrderAt riemannXi z).untop₀ else 0) = 0
-    rw [if_neg (fun h => hz h.2)]
+    rw [ite_eq_right (fun h => hz h.2)]
 
 theorem meromorphicOrderAt_riemannXi_ne_top (z : ℂ) :
     meromorphicOrderAt riemannXi z ≠ ⊤ := by
@@ -500,7 +500,7 @@ lemma logDeriv_finprod_zpow_apply_of_finite
         logDeriv (fun w ↦ ∏ i ∈ hd.toFinset, (F i ^ d i) w) z := by
       rw [h₀, Finset.prod_fn]
     _ = ∑ i ∈ hd.toFinset, logDeriv (F i ^ d i) z :=
-      logDeriv_prod (fun i hi ↦ zpow_ne_zero _ (hFne i (by simpa using hi)))
+      logDeriv_fun_prod (fun i hi ↦ zpow_ne_zero _ (hFne i (by simpa using hi)))
         (fun i hi ↦ (hFdiff i (by simpa using hi)).zpow
           (.inl (hFne i (by simpa using hi))))
     _ = ∑ i ∈ hd.toFinset, d i • logDeriv (F i) z := by
@@ -540,7 +540,7 @@ lemma logDeriv_canonicalFactor_eq
   rw [show Complex.canonicalFactor R i =
       fun w ↦ ((R : ℂ) ^ 2 - (starRingEnd ℂ i) * w) /
         ((R : ℂ) * (w - i)) by rfl]
-  rw [logDeriv_div z hnum hden (by fun_prop) (by fun_prop)]
+  rw [logDeriv_fun_div z hnum hden (by fun_prop) (by fun_prop)]
   simp only [logDeriv_apply]
   rw [hnumderiv, hdenderiv]
   field_simp [hR.ne', hzi]
@@ -734,7 +734,7 @@ theorem logDeriv_riemannXi_eq_residual_sub_canonical_sum
     dsimp [P]
     exact logDeriv_finprod_zpow_apply_of_finite hdFinite
       (fun i hi => hfactorNe hi) (fun i hi => hfactorDiff hi)
-  have hmul := logDeriv_mul (f := P) (g := riemannXi) z
+  have hmul := logDeriv_fun_mul (f := P) (g := riemannXi) z
     hPne hxi hPAnalytic.differentiableAt (differentiable_riemannXi z)
   have hlog : logDeriv g z = logDeriv P z + logDeriv riemannXi z := by
     rw [(logDeriv_congr_nhds hfactorEq).self_of_nhds]

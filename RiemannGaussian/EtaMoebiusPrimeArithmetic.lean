@@ -21,7 +21,7 @@ private theorem sum_even_complementary_divisor (l : ℕ) (f : ℕ → ℝ) :
     (∑ p ∈ l.divisorsAntidiagonal, if Even p.2 then f p.1 else 0) =
       if Even l then ∑ d ∈ (l / 2).divisors, f d else 0 := by
   by_cases hl : Even l
-  · rw [if_pos hl]
+  · rw [ite_eq_left hl]
     obtain ⟨r, rfl⟩ := even_iff_two_dvd.mp hl
     by_cases hr : r = 0
     · subst r
@@ -54,7 +54,7 @@ private theorem sum_even_complementary_divisor (l : ℕ) (f : ℕ → ℝ) :
         · exact Prod.ext rfl he.symm
       · intro p _
         rfl
-  · rw [if_neg hl]
+  · rw [ite_eq_right hl]
     apply Finset.sum_eq_zero
     intro p hp
     have he : ¬ Even p.2 := by

@@ -234,7 +234,7 @@ theorem core_interior_mem_fullBand (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
       Real.log p < (13/20 : ℝ)*Real.log n := by
     have hne : n.primeFactors.Nonempty := ⟨p,hp⟩
     have hple : p ≤ largestPrime n := by
-      rw [largestPrime, dif_pos hne]
+      rw [largestPrime, dite_eq_left hne]
       exact Finset.le_max' _ _ hp
     have hlog : Real.log p ≤ Real.log (largestPrime n) :=
       Real.log_le_log (by exact_mod_cast (Nat.prime_of_mem_primeFactors hp).pos)

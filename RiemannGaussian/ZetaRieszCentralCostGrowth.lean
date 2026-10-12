@@ -157,7 +157,7 @@ theorem primeCost_shell_le {E V D : ℝ} (hE : 0 ≤ E) (hV : 0 ≤ V) (hD : 0 �
     unfold primeCost jointCost
     apply Finset.sum_le_sum
     intro p hp
-    simpa only [rotate,ite_mul,one_mul,zero_mul,Finset.sum_ite_eq,hp,if_true] using hone p hp
+    simpa only [rotate,ite_mul,one_mul,zero_mul,Finset.sum_ite_eq,hp,ite_true] using hone p hp
   have hsub : P ⊆ (Finset.Icc 1 R).filter Nat.Prime := by
     intro p hp
     exact Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨(hP p hp).1.pos,(hP p hp).2.1⟩,(hP p hp).1⟩

@@ -65,7 +65,7 @@ theorem pairedEtaInverseRegionCoefficient_coherentBand (B K n : ℕ) :
         obtain ⟨j, hj, hjn⟩ := Finset.mem_image.mp hn
         apply Finset.mem_filter.mpr
         exact ⟨Finset.mem_image.mpr ⟨j, hj, Prod.ext hjn rfl⟩, by simp⟩
-    rw [pairedEtaInverseRegionCoefficient, hf, if_pos hn]
+    rw [pairedEtaInverseRegionCoefficient, hf, ite_eq_left hn]
     norm_num
   · have hf : (pairedEtaInverseCoherentBand B K).filter (fun p ↦ p.1 * p.2 = n) = ∅ := by
       apply Finset.filter_eq_empty_iff.mpr
@@ -73,7 +73,7 @@ theorem pairedEtaInverseRegionCoefficient_coherentBand (B K n : ℕ) :
       apply hn
       obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp hp
       exact Finset.mem_image.mpr ⟨j, hj, by simpa only [mul_one] using heq⟩
-    rw [pairedEtaInverseRegionCoefficient, hf, Finset.sum_empty, if_neg hn]
+    rw [pairedEtaInverseRegionCoefficient, hf, Finset.sum_empty, ite_eq_right hn]
 
 /-- The literal signed product coefficients have energy exactly the number of coherent inverse divisors. -/
 theorem sum_sq_pairedEtaInverseRegionCoefficient_coherentBand (B K : ℕ) :

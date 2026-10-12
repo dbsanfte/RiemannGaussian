@@ -366,7 +366,7 @@ private theorem prime_profile_endpoint (A : Finset ℕ) (X : ℕ) (P : ℕ → F
   · have hl : L < Real.log (R+1 : ℕ) := by
       simpa only [Real.log_exp,Nat.cast_add,Nat.cast_one] using
         Real.log_lt_log (Real.exp_pos L) hR
-    rw [primeProfile,if_pos ha]
+    rw [primeProfile,ite_eq_left ha]
     have hz : (∑ p ∈ P a, ZetaRieszGlobalPrimePeriod.signedPrimeWeight A L N y a p*
         (max 0 (L-Real.log (R+1 : ℕ))-max 0 (L-Real.log p-Real.log (R+1 : ℕ)))) = 0 := by
       apply Finset.sum_eq_zero
@@ -376,7 +376,7 @@ private theorem prime_profile_endpoint (A : Finset ℕ) (X : ℕ) (P : ℕ → F
         max_eq_left (by linarith : L-Real.log p-Real.log (R+1 : ℕ) ≤ 0)]
       ring
     rw [hz,mul_zero]
-  · simp only [primeProfile,if_neg ha]
+  · simp only [primeProfile,ite_eq_right ha]
 
 private theorem literal_profile_eq (A S : Finset ℕ) (X : ℕ) (P : ℕ → Finset ℕ)
     (L : ℝ) (N : ℕ) (y : ℝ) (R : ℕ) (hR : Real.exp L < R+1)
@@ -426,7 +426,7 @@ private theorem literal_profile_eq (A S : Finset ℕ) (X : ℕ) (P : ℕ → Fin
         (Nat.pos_of_ne_zero (hSF a ha).1.ne_zero)]
     _ = _ := by
       rw [hmu]
-      simp only [primeProfile,if_pos haX,Finset.mul_sum,Finset.sum_mul]
+      simp only [primeProfile,ite_eq_left haX,Finset.mul_sum,Finset.sum_mul]
       rw [Finset.sum_comm]
       apply Finset.sum_congr rfl
       intro d _

@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "baseCommit": "24444671cee3bf643ff1307909b961a329372a9e",
+  "goalActive": true,
+  "localOnly": true,
+  "rootRegistered": false,
+  "publicationRun": false,
+  "broaderChecksRun": false,
+  "newIndependentSourceSensitiveArithmeticEstimateProved": false,
+  "newRHOrZeroExclusionClaimed": false,
+  "tierOneFamiliesVisited": 8,
+  "tierOneFamiliesExhausted": 0,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlibRevision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "validation": {
+    "command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCrossUnitPsdAudit.lean",
+    "passed": true,
+    "warningsFatal": true,
+    "namespaceLinterRuns": 15,
+    "allLocalDeclarationsByModuleProvenance": true,
+    "privateAndGeneratedHelpersChecked": true,
+    "declarations": 26,
+    "theoremsIncludingGeneratedHelpers": 23,
+    "onlyStandardAxioms": true,
+    "allowedAxioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "focusedDependencyCompiled": "scripts/ArithmeticOperatorCrossUnitCancellation.lean",
+    "importedDependenciesIndividuallyRelinted": false,
+    "fullNativeRootOrHistoricalReaudit": false
+  },
+  "stageStatus": {
+    "exactFiniteIntegerIdentity": "proved actual complete prime-square trace one, total product phase, symmetric native kernel and exact diagonal-deletion ledger",
+    "actualOffLineZeroResponse": "distinct-prime nonlinear response remains unproved; no source inferred from linear prime moments or finite covariance samples",
+    "densitySeparation": "not developed for this rejected unrestricted positivity shortcut",
+    "collapseAudit": "original phased PSD false at every fixed nonzero height beyond every head; complete diagonal deletion plus unrestricted real positivity forces whole joined real packet zero; conjugate phase changes arithmetic",
+    "independentSignedEstimate": "none; audited positivity shortcuts stop before heavy estimation",
+    "endpointTransfer": "none"
+  },
+  "scope": {
+    "indices": "actual ordinary primes; a single prime test already obstructs any larger unrestricted principal population containing it",
+    "diagonalRow": "complete choose(p^2-1,k), k<p^2; actual quadratic square trace one",
+    "unitEndpointRetained": true,
+    "fullActualMangoldtLegsAndProductPhaseRetained": true,
+    "diagonalReal": "log(p)^2*cos(2*y*log p)",
+    "negativeTests": "every fixed y!=0, beyond every head, via existing unconditional actual prime-window theorem",
+    "actualZeroHeightsCovered": true,
+    "exposureSimplicityOrRightmostRequired": false,
+    "unitDiagonalSchurDampingRescueRefuted": true,
+    "exactDiagonalLedger": true,
+    "zeroDiagonalPositivity": "any symmetric complex kernel, all coefficient vectors on permitted finite populations; two tests force every permitted real coefficient zero",
+    "entireOffDiagonalRealPacketThenZero": true,
+    "productPhaseToConjugateSubstitutionRefutedBeyondEveryHead": true,
+    "untwistedGlobalPSDGatesClosed": false,
+    "nonzeroDiagonalRepairsRuledOut": false,
+    "growingProjectionsRuledOut": false,
+    "prescribedSignedPacketsRuledOut": false,
+    "summedDiagonalRepairCostSuperSourceClaimed": false,
+    "actualDistinctPrimeZeroSourceGateClosed": false,
+    "terminalAllProperPowerPopulationOrRHClaimed": false,
+    "controlsGrantedBinomialGammaMangoldtOrActualPrimeWindowData": false,
+    "noGo": "Reject unrestricted PSD with original product-phase diagonal; complete deletion makes unrestricted positivity source-blind; conjugating the phase changes the packet.",
+    "remaining": "Actual same-parity distinct-prime source response and an independent signed/spectral estimate; source-safe nonzero diagonal repairs or prescribed packets remain possible."
+  },
+  "regression": {
+    "checksPassed": true,
+    "proofInput": false,
+    "exactArithmetic": "actual integer binomial rows and rational quadratic component ledgers",
+    "exactSquareRowDiagonals": 53,
+    "directIntegerSquareRows": 10,
+    "exactSymbolicQuadraticLedgers": 12,
+    "symbolicPhasesAreNotActualHeightPhases": true,
+    "actualHeightRetainedByLean": true,
+    "floatingHeightSamples": [
+      {
+        "height": 54,
+        "negativeDiagonalCount": 25,
+        "firstExamples": [
+          {
+            "prime": 5,
+            "diagonalReal": -1.329756395171029
+          },
+          {
+            "prime": 7,
+            "diagonalReal": -3.584196414593621
+          },
+          {
+            "prime": 17,
+            "diagonalReal": -2.511661724002397
+          }
+        ]
+      },
+      {
+        "height": 65,
+        "negativeDiagonalCount": 28,
+        "firstExamples": [
+          {
+            "prime": 3,
+            "diagonalReal": -0.14792281506411376
+          },
+          {
+            "prime": 5,
+            "diagonalReal": -0.7926991795411413
+          },
+          {
+            "prime": 7,
+            "diagonalReal": -0.265261612709761
+          }
+        ]
+      },
+      {
+        "height": 100,
+        "negativeDiagonalCount": 26,
+        "firstExamples": [
+          {
+            "prime": 11,
+            "diagonalReal": -2.686626814716212
+          },
+          {
+            "prime": 13,
+            "diagonalReal": -4.0364147902160115
+          },
+          {
+            "prime": 19,
+            "diagonalReal": -1.3883197527100375
+          }
+        ]
+      }
+    ],
+    "floatingSameParityTwoVectorSamples": [
+      {
+        "p": 53,
+        "q": 29,
+        "sameParity": true,
+        "exactTrace": "-536/1537",
+        "height": 54,
+        "zeroDiagonalPlusReal": -8.627611294324964,
+        "zeroDiagonalMinusReal": 8.627611294324964
+      },
+      {
+        "p": 61,
+        "q": 17,
+        "sameParity": true,
+        "exactTrace": "216/1037",
+        "height": 54,
+        "zeroDiagonalPlusReal": -2.06494736189928,
+        "zeroDiagonalMinusReal": 2.06494736189928
+      },
+      {
+        "p": 19,
+        "q": 7,
+        "sameParity": true,
+        "exactTrace": "-13/133",
+        "height": 54,
+        "zeroDiagonalPlusReal": -1.1009477509133825,
+        "zeroDiagonalMinusReal": 1.1009477509133825
+      }
+    ],
+    "floatingSamplesAreNotZeroOrAsymptoticProofs": true,
+    "unphasedGlobalPSDClaimed": false,
+    "distinctPrimeSourceResponseEstablished": false,
+    "nativeIntegerPrimeIndexedPhasedPSDGates": "whole unit-diagonal PSD false beyond every head; complete diagonal deletion plus unrestricted positivity forces the whole joined real part to zero",
+    "changedDiagonalOrPrescribedSignedPacketsClosed": false
+  },
+  "literature": [
+    {
+      "primaryURL": "https://arxiv.org/pdf/math/0403422",
+      "checked": "Theorem 1, factorial-character interval class",
+      "scopeMatchesCoupledRows": false,
+      "estimateOrRHTransferImported": false
+    },
+    {
+      "primaryURL": "https://web.maths.unsw.edu.au/~igorshparlinski/CharSumProjects.pdf",
+      "checked": "Problem 24, different additive double binomial sum N<p",
+      "scopeMatchesCoupledRows": false,
+      "estimateOrRHTransferImported": false
+    },
+    {
+      "primaryURL": "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.927.pdf",
+      "checked": "Introduction and Theorem 1.1; binomial means two-term polynomial",
+      "scopeMatchesCoupledRows": false,
+      "estimateOrRHTransferImported": false
+    }
+  ],
+  "historicalSourceDrift": {
+    "checkpoint": "docs/arithmetic-operator-cross-cancellation-audit.json",
+    "all16PriorPinsMatchedBeforeDocsChanged": true,
+    "priorPinsAlsoMatchedAfterFocusedDependencyCacheBuild": true,
+    "pinsRefreshed": false,
+    "mismatchesAfterCurrentDocumentationUpdate": [
+      {
+        "path": "AGENTS.md",
+        "pinned": "e315304301deca1bcad1279648a5bdd31411fe06a3d34ec152bd84fbca299a22",
+        "current": "bc1e142802ed8d889b2c92c0db76d8a7c7bdbe46c8cfe5e3e95b21fd5f521410"
+      },
+      {
+        "path": "docs/arithmetic-operator-research.md",
+        "pinned": "36eabc3168abb3ac96a5dd4978c8e4c01ff51c8ef76a94b5cbc999fe57615dbe",
+        "current": "f1e73d370b6295eb27d93e6c0e4f2f9e4967eeb00e20292ede7cac4d75791cad"
+      }
+    ]
+  },
+  "sourcePins": {
+    "scripts/ArithmeticOperatorCrossUnitPsdAudit.lean": "8ddceaa4699257f9fc5f2aafd230ab18a917835844a8fd2810649502313eaacb",
+    "scripts/probe_arithmetic_operator_cross_psd.py": "e05ea9bfa57dbd55ad8ead88c6482be27f7a0a30be14e8113a8cd1a979240392",
+    "scripts/ArithmeticOperatorCrossUnitCancellation.lean": "e0b522d4c22f882dc1c4bf84b69ec79d0ae7f02ddcebb142799f0ba12da7f9a7",
+    "scripts/probe_arithmetic_operator_cross_cancellation.py": "09b834c5de41567ec9ae0a8a00cd3c1f4ee3d26de04bb17d1b18e7f36278edb4",
+    "scripts/ArithmeticOperatorLucasUnitAudit.lean": "c1bc0b5677a89f8a6d05225ed601ecad861c33ffa9db093035a7b7135b6bda23",
+    "RiemannGaussian/ArithmeticOperatorTwistedBulkAudit.lean": "ae2b5d47b82a3a60668a148151f9262820d75f40f4c9506a572e46d8d758d74e",
+    "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe",
+    "RiemannGaussian/ArithmeticOperatorGcdAudit.lean": "e72351f18fa46011458c8c67269df84e232ed2e3d4d67bb4f6b255d9265980f5",
+    "RiemannGaussian/ZetaPrimeWindow.lean": "1630174ee0412c8890a96b3350583a1e314d1bbd42c6161aa579986532f24d4f",
+    ".lake/packages/mathlib/Mathlib/Data/Nat/Choose/Lucas.lean": "3398242fcfa0ae2c52dfb15a1d3bbfc219f25d5b0e0b6f97c3e1aa6963090674",
+    ".lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticChar/Basic.lean": "d0a5eb315197f57508bbb1b9d606dac1e76fdd85f295c420e914454ab41f0314",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "AGENTS.md": "bc1e142802ed8d889b2c92c0db76d8a7c7bdbe46c8cfe5e3e95b21fd5f521410",
+    "docs/arithmetic-operator-research.md": "f1e73d370b6295eb27d93e6c0e4f2f9e4967eeb00e20292ede7cac4d75791cad",
+    ".lake/arithmetic-operator-cross-psd/check.log": "06386fc33f1c710046f2f92f7a68b427f5ae9f177226c97d55ab120d7df48de3",
+    ".lake/arithmetic-operator-cross-psd/axioms.json": "0e53fdb9d90b817afa2aad68856f4defeb7b06fcda85f646fc0ab528e251eafd",
+    ".lake/arithmetic-operator-cross-psd/probe.json": "59d7029e8a194ab7a1e1f10dfe921a993b724478469b46ef28031b69c0195d4c",
+    ".lake/arithmetic-operator-cross-psd/prior-pin-check-before-doc-update.json": "40abe2da868226c80a3ad64acf937e5689affb205a69ebc6cde6696711d81f74",
+    ".lake/arithmetic-operator-cross-cancellation/local-cache.log": "750983cbcf917be8da81c9dbbc029fec1b209ff34d6a5a79e291c2a679c1f422"
+  }
+}

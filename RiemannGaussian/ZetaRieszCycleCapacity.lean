@@ -124,7 +124,7 @@ theorem cycleSaving_ge_ray_budget {z w v : ℂ}
     have hsaving : ZetaRieszCycleCore.cycleSaving (A • z) (B • w) (C • v) =
         (D⁻¹ * (A * B * C)) * (ZetaRieszCycleCore.area w v +
           ZetaRieszCycleCore.area v z + ZetaRieszCycleCore.area z w) := by
-      rw [ZetaRieszCycleCore.cycleSaving, ZetaRieszCycleCore.cycleScale, if_pos hscaled]
+      rw [ZetaRieszCycleCore.cycleSaving, ZetaRieszCycleCore.cycleScale, ite_eq_left hscaled]
       simp only [area_smul, norm_smul, Real.norm_of_nonneg hA, Real.norm_of_nonneg hB,
         Real.norm_of_nonneg hC, hz, hw, hv, mul_one]
       dsimp [D]

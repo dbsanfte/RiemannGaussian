@@ -81,8 +81,8 @@ theorem complete_sub_rough (u y : ℝ) (N : ℕ) (hN : 21 ≤ N) :
   apply Finset.sum_congr rfl
   intro n _hn
   by_cases hm : Real.log n.minFac ≤ (N : ℝ)/110
-  · simp only [hm,not_true_eq_false,if_false,sub_zero,headAtom,if_true]
-  · simp only [hm,not_false_eq_true,if_true,sub_self,headAtom,if_false]
+  · simp only [hm,not_true_eq_false,ite_false,sub_zero,headAtom,ite_true]
+  · simp only [hm,not_false_eq_true,ite_true,sub_self,headAtom,ite_false]
 
 /-- Every genuine finite prime selection gives the same exact
 arithmetic-to-Fourier identity, with all original marked coefficients. -/
@@ -108,7 +108,7 @@ theorem sum_atoms_eq_integral (A : Finset ℕ) (hA : ∀ p ∈ A, p.Prime)
     omega
   rw [← ZetaRieszMarkedEuler.marked_atom_eq_integral hs (validLabel_one_lt ⟨hs,hc⟩) hnp
     N _ (SquarefreeVaughanLogSource.length_pos u N),atom,markedCoefficient,
-    if_pos (show validLabel n from ⟨hs,hc⟩)]
+    ite_eq_left (show validLabel n from ⟨hs,hc⟩)]
   change (markedMass N n : ℂ)*_*_ = _
   unfold markedMass
   ring

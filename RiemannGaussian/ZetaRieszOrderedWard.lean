@@ -119,7 +119,7 @@ theorem neg_logDeriv_quotient (Q : Finset ℕ) (h16 : ∀ p ∈ Q, 16 ≤ p)
       (local_denominators (h16 p hp) hs xi).1).differentiableAt
   have hn (p : ℕ) (hp : p ∈ Q) : f p s ≠ 0 :=
     div_ne_zero (local_denominators (h16 p hp) hs xi).2 (local_denominators (h16 p hp) hs xi).1
-  have hl := logDeriv_prod hn hd
+  have hl := logDeriv_fun_prod hn hd
   have he : (fun z => ∏ p ∈ Q, f p z) = quotient Q xi := rfl
   rw [he] at hl
   rw [hl,← Finset.sum_neg_distrib]

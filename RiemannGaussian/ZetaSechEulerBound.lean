@@ -111,7 +111,7 @@ theorem positiveLog_le (k : ℕ) (hk : 1 ≤ k) (y : ℝ) :
   have he : riemannZeta s = (s + 1) / (s - 1) * regularized s := by
     rw [regularized_eq hs1]
     field_simp [sub_ne_zero.mpr hs1, add_one_ne_zero hσ]
-  have hreg := Real.posLog_le_posLog (norm_nonneg _)
+  have hreg := Real.posLog_le_posLog (neg_one_lt_zero.le.trans (norm_nonneg _))
     (ZetaEulerLogProfile.regularized_le_exp_profile k hk hs)
   rw [Real.posLog_apply (x := Real.exp (ZetaEulerLogProfile.profile k s.im)), Real.log_exp,
     max_eq_right (by linarith [ZetaEulerLogProfile.profile_ge_six k s.im]), him] at hreg
@@ -151,11 +151,11 @@ private theorem correction_le_center_add_tail (k : ℕ) (hk : 1 ≤ k)
     correction k (t + a * u) ≤ 8 / t ^ 2 +
       if |t| / (2 * |a|) < |u| then correction k 0 else 0 := by
   by_cases hu : |t| / (2 * |a|) < |u|
-  · rw [if_pos hu]
+  · rw [ite_eq_left hu]
     have hc := correction_le_zero k hk (t + a * u)
     have hp : 0 ≤ 8 / t ^ 2 := by positivity
     linarith
-  rw [if_neg hu, add_zero]
+  rw [ite_eq_right hu, add_zero]
   have hau : |a * u| ≤ |t| / 2 := by
     rw [abs_mul]
     have h := mul_le_mul_of_nonneg_left (le_of_not_gt hu) (abs_nonneg a)

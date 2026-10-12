@@ -515,8 +515,8 @@ theorem recoverInterval_succeeds_of_proper_hit {p q L b k : ℕ}
     obtain ⟨d, hd⟩ := hd
     refine ⟨d, ?_⟩
     simp only [recoverInterval, hz, ZMod.val_zero, Nat.gcd_zero_right]
-    rw [if_neg (by omega)]
-    simp only [ite_true, dif_pos hu, he]
+    rw [ite_eq_right (by omega)]
+    simp only [ite_true, dite_eq_left hu, he]
     exact hd
   · have hzQ : ZMod.castHom (dvd_mul_left q p) (ZMod q)
         (intervalProduct (alpha : ZMod (p*q)) (x : ZMod (p*q)) L) ≠ 0 := by
@@ -526,7 +526,7 @@ theorem recoverInterval_succeeds_of_proper_hit {p q L b k : ℕ}
     refine ⟨p, ?_⟩
     unfold recoverInterval
     dsimp only
-    rw [hg, if_pos]
+    rw [hg, ite_eq_left]
     exact ⟨hp.one_lt, by have hh := hq.one_lt; nlinarith [hp.pos]⟩
 
 /-- After the public prefix and short-period certificates, at least one

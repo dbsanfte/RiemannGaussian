@@ -53,9 +53,9 @@ private theorem norm_removed_atom_le (a : ℕ → ℂ)
   have hw : 0 ≤ zetaMoebiusLogMajorant n * zetaPrimeExpWeight (17 / 16) n :=
     mul_nonneg (zetaMoebiusLogMajorant_nonneg n) (Real.exp_pos _).le
   by_cases hn : n ∈ zetaLogWindow N
-  · simp only [zetaLogWindowCoefficient, if_pos hn, sub_self, norm_zero]
+  · simp only [zetaLogWindowCoefficient, ite_eq_left hn, sub_self, norm_zero]
     exact mul_nonneg (by positivity) hw
-  · simp only [zetaLogWindowCoefficient, if_neg hn, zero_mul, sub_zero, norm_mul]
+  · simp only [zetaLogWindowCoefficient, ite_eq_right hn, zero_mul, sub_zero, norm_mul]
     by_cases hl : Real.log n ≤ (2 / 5 : ℝ) * N
     · have hb := mul_le_mul (ha n)
         (norm_zetaPrimeLogKernel_le_lower_window N k n y hl)

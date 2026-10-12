@@ -182,9 +182,7 @@ theorem tendsto_pairedEtaLowerMomentGeometricPhaseNormalizedPrefixCoherenceSq
     finiteGeometricPhaseCoherenceSq
   convert hquot.congr'
     (Filter.Eventually.of_forall fun _ ↦ rfl) using 1
-  · funext n
-    rfl
-  · simp [pow_two]
+  simp [pow_two]
 
 /-- For one same-layer zero pair, the literal normalized-prefix coherence
 inherits the exact phase-gap bound up to any positive asymptotic slack. -/

@@ -194,7 +194,7 @@ theorem eventually_five_cell_upper {h α β : ℝ}
           (logPrimes (t-Real.log m) h).image (fun p => m*p)),
       residualCoefficient A L N n*zetaPrimeLogKernel N (3/2+Complex.I*(Real.pi/t : ℝ)) n).re := by
     apply hpaid.trans
-    convert hlow using 1 <;> first | rfl | (simp only [B]; ring)
+    convert hlow using 1 ; first | rfl | (simp only [B]; ring)
   have hupper := ceiling_of_calibrated_floor _ A N L t h y (Real.pi/t) _
     (fun n hn => cell_products_coefficient_nonpos ht0.le hL horder hqp hsat htriple hn)
     (by
@@ -332,7 +332,7 @@ theorem eventually_four_core_ceiling {u h δ : ℝ}
       (Finset.mem_filter.mp hn).2.2.2.2.2.1⟩) hfloor
   change (∑ n ∈ S, f y n).re ≤ _
   have hsum := hey.symm.le.trans (add_le_add (le_refl (∑ n ∈ S\Q, f y n).re) hupper)
-  convert hsum using 1 <;> first | rfl | (dsimp only [D,C]; ring)
+  convert hsum using 1 ; first | rfl | (dsimp only [D,C]; ring)
 
 /-- The complete positive-mass calibration costs less than one tenth of
 one percent, uniformly on every admissible logarithmic cell. -/
